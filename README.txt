@@ -1,5 +1,5 @@
 SHIFT English Lab
-Version 1.3.0
+The current website version is shown on the home, guide, and voice preview pages.
 
 Get started
 1. Extract the entire ZIP before opening the site.

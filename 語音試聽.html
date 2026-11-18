@@ -1,41 +1,131 @@
 <!doctype html>
 <html lang="en">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SHIFT | Voice Preview</title>
+<title>Compare the listening voices | SHIFT English Lab</title>
 <style>
-:root{color-scheme:light;--ink:#15342a;--muted:#587064;--line:#d8e5d9;--paper:#f3f6ec}
-*{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,sans-serif}
-main{max-width:860px;margin:auto;padding:38px 22px 62px}
-a{color:#1c654d} h1{font-size:clamp(30px,6vw,48px);line-height:1.15;margin:.44em 0}
-.kicker{font-size:12px;font-weight:750;letter-spacing:.18em;color:var(--muted);margin-top:2em}
-.lede,.note{color:var(--muted)} h2{margin:1.8em 0 .45em;font-size:24px}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-article{background:#fff;border:1px solid var(--line);border-radius:13px;padding:15px 17px}
-article h3{margin:0 0 8px;font-size:17px} audio{vertical-align:middle;width:100%;height:38px}
-blockquote{margin:10px 0 16px;border-left:3px solid #84a590;padding-left:14px;color:#476253}
-.note{font-size:14px} @media(max-width:620px){.grid{grid-template-columns:1fr}}
+:root{color-scheme:light;--ink:#17382d;--dim:#4d6557;--line:#d9e3d6;--paper:#f3f6ed;--deep:#245742}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,sans-serif}
+main{max-width:1120px;margin:auto;padding:28px clamp(14px,4vw,44px) 48px}
+a{color:#21593f;text-underline-offset:3px}a:focus-visible,audio:focus-visible{outline:3px solid #34755b;outline-offset:3px}
+.back{display:inline-block;padding:8px 0}
+header{margin:18px 0 24px;padding:clamp(16px,4vw,36px);border-radius:20px;background:#e4eddc;border:1px solid #d5e3d3}
+.eyebrow,.region{font-size:12px;letter-spacing:.11em;text-transform:uppercase;font-weight:750;color:var(--deep);margin:0}
+h1{font-size:clamp(29px,6vw,50px);line-height:1.12;margin:.25em 0 .35em}
+.lede{margin:0;max-width:64ch;color:var(--dim)}.jump{margin-top:13px;display:inline-block;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.voice{border:1px solid var(--line);border-radius:16px;background:#fff;padding:16px;min-width:0}
+.voice:target{outline:3px solid #397255;outline-offset:2px}
+.voice-top{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.clip-duration{color:var(--dim);font-size:13px;white-space:nowrap}
+h2{margin:3px 0 9px;font-size:clamp(17px,2.4vw,22px);line-height:1.25;overflow-wrap:anywhere}
+.speakers{margin-bottom:10px;display:grid;gap:2px;color:var(--dim);font-size:14px}
+.speaker strong{color:var(--ink);padding-right:.18em}.speaker small{font-size:inherit}
+audio{display:block;width:100%;height:42px}.note{margin:20px 0 0;color:var(--dim);font-size:14px}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}}
 </style>
+</head>
+<body>
 <main>
-<a href="index.html">← Back to practice home</a>
-<div class="kicker">SHIFT ENGLISH LAB　/　V1.2.1</div>
+<a class="back" href="index.html">← Back to practice home</a>
+<header>
+<p class="eyebrow">SHIFT ENGLISH LAB / AZURE SPEECH<span data-site-version></span></p>
 <h1>Compare the listening voices</h1>
-<p class="lede">The same script, with updated character voices and pauses. All clips are included with the site and can be played offline.</p>
-<h2>Original vs. updated: arranging a trial delivery</h2>
-<div class="grid">
-<article><h3>Original · 1.0.0</h3><audio controls preload="none" src="audio/preview/original-t01-g032.mp3" aria-label="Original trial-delivery conversation"></audio></article>
-<article><h3>Updated · American + British English</h3><audio controls preload="none" src="audio/t01-g032.mp3" aria-label="Updated trial-delivery conversation"></audio></article>
-</div>
-<h2>One passage, four accents</h2>
-<blockquote lang="en">Good morning. The customer service team will meet in the conference room at ten thirty. Please bring a copy of the updated schedule.</blockquote>
-<div class="grid">
-<article><h3>American English · US</h3><audio controls preload="none" src="audio/preview/us.mp3" aria-label="American English sample"></audio></article>
-<article><h3>British English · UK</h3><audio controls preload="none" src="audio/preview/uk.mp3" aria-label="British English sample"></audio></article>
-<article><h3>Indian English · IN</h3><audio controls preload="none" src="audio/preview/in.mp3" aria-label="Indian English sample"></audio></article>
-<article><h3>Australian English · AU</h3><audio controls preload="none" src="audio/preview/au.mp3" aria-label="Australian English sample"></audio></article>
-</div>
-<p class="note">The updated clips use neural speech synthesis, not human recordings. Accent labels describe the selected model voices. They do not represent official ETS recordings, pacing or accent proportions.</p>
+<p class="lede">Hear all 14 English accents used in the current listening tests. Each clip pairs a female and a male voice from the same accent, using a different short question-and-response item from the practice bank.</p>
+<a class="jump" href="#indian-english">Jump to Indian English ↓</a>
+</header>
+<section class="grid" aria-label="English accent samples">
+<article class="voice" data-locale="en-US" data-group="t02-g024">
+ <div class="voice-top"><p class="region">United States</p><span class="clip-duration">~16s</span></div>
+ <h2>American English</h2>
+ <div class="speakers"><span class="speaker"><strong>Question</strong> Guy <small>(male)</small></span><span class="speaker"><strong>Responses</strong> Jenny <small>(female)</small></span></div>
+ <audio controls preload="none" src="audio/preview/azure/en-us.mp3" aria-label="American English: question and responses"></audio>
+</article>
+<article class="voice" data-locale="en-GB" data-group="t02-g011">
+ <div class="voice-top"><p class="region">United Kingdom</p><span class="clip-duration">~14s</span></div>
+ <h2>British English</h2>
+ <div class="speakers"><span class="speaker"><strong>Question</strong> Ryan <small>(male)</small></span><span class="speaker"><strong>Responses</strong> Sonia <small>(female)</small></span></div>
+ <audio controls preload="none" src="audio/preview/azure/en-gb.mp3" aria-label="British English: question and responses"></audio>
+</article>
+<article class="voice" data-locale="en-CA" data-group="t03-g007">
+ <div class="voice-top"><p class="region">Canada</p><span class="clip-duration">~16s</span></div>
+ <h2>Canadian English</h2>
+ <div class="speakers"><span class="speaker"><strong>Question</strong> Clara <small>(female)</small></span><span class="speaker"><strong>Responses</strong> Liam <small>(male)</small></span></div>
+ <audio controls preload="none" src="audio/preview/azure/en-ca.mp3" aria-label="Canadian English: question and responses"></audio>
+</article>
+<article class="voice" data-locale="en-AU" data-group="t01-g018">
+ <div class="voice-top"><p class="region">Australia</p><span class="clip-duration">~14s</span></div>
+ <h2>Australian English</h2>
+ <div class="speakers"><span class="speaker"><strong>Question</strong> Natasha <small>(female)</small></span><span class="speaker"><strong>Responses</strong> William <small>(male)</small></span></div>
+ <audio controls preload="none" src="audio/preview/azure/en-au.mp3" aria-label="Australian English: question and responses"></audio>
+</article>
+<article class="voice" id="indian-english" data-locale="en-IN" data-group="t01-g019">
+ <div class="voice-top"><p class="region">India</p><span class="clip-duration">~17s</span></div>
+ <h2>Indian English</h2>
+ <div class="speakers"><span class="speaker"><strong>Question</strong> Neerja <small>(female)</small></span><span class="speaker"><strong>Responses</strong> Prabhat <small>(male)</small></span></div>
+ <audio controls preload="none" src="audio/preview/azure/en-in.mp3" aria-label="Indian English: question and responses"></audio>
+</article>
+<article class="voice" data-locale="en-HK" data-group="t03-g010">
+ <div class="voice-top"><p class="region">Hong Kong</p><span class="clip-duration">~16s</span></div>
+ <h2>Hong Kong English</h2>
+ <div class="speakers"><span class="speaker"><strong>Question</strong> Sam <small>(male)</small></span><span class="speaker"><strong>Responses</strong> Yan <small>(female)</small></span></div>
+ <audio controls preload="none" src="audio/preview/azure/en-hk.mp3" aria-label="Hong Kong English: question and responses"></audio>
+</article>
+<article class="voice" data-locale="en-SG" data-group="t01-g021">
+ <div class="voice-top"><p class="region">Singapore</p><span class="clip-duration">~17s</span></div>
+ <h2>Singaporean English</h2>
+ <div class="speakers"><span class="speaker"><strong>Question</strong> Luna <small>(female)</small></span><span class="speaker"><strong>Responses</strong> Wayne <small>(male)</small></span></div>
+ <audio controls preload="none" src="audio/preview/azure/en-sg.mp3" aria-label="Singaporean English: question and responses"></audio>
+</article>
+<article class="voice" data-locale="en-PH" data-group="t01-g022">
+ <div class="voice-top"><p class="region">Philippines</p><span class="clip-duration">~15s</span></div>
+ <h2>Philippine English</h2>
+ <div class="speakers"><span class="speaker"><strong>Question</strong> Rosa <small>(female)</small></span><span class="speaker"><strong>Responses</strong> James <small>(male)</small></span></div>
+ <audio controls preload="none" src="audio/preview/azure/en-ph.mp3" aria-label="Philippine English: question and responses"></audio>
+</article>
+<article class="voice" data-locale="en-NZ" data-group="t03-g013">
+ <div class="voice-top"><p class="region">New Zealand</p><span class="clip-duration">~16s</span></div>
+ <h2>New Zealand English</h2>
+ <div class="speakers"><span class="speaker"><strong>Question</strong> Molly <small>(female)</small></span><span class="speaker"><strong>Responses</strong> Mitchell <small>(male)</small></span></div>
+ <audio controls preload="none" src="audio/preview/azure/en-nz.mp3" aria-label="New Zealand English: question and responses"></audio>
+</article>
+<article class="voice" data-locale="en-IE" data-group="t01-g024">
+ <div class="voice-top"><p class="region">Ireland</p><span class="clip-duration">~16s</span></div>
+ <h2>Irish English</h2>
+ <div class="speakers"><span class="speaker"><strong>Question</strong> Emily <small>(female)</small></span><span class="speaker"><strong>Responses</strong> Connor <small>(male)</small></span></div>
+ <audio controls preload="none" src="audio/preview/azure/en-ie.mp3" aria-label="Irish English: question and responses"></audio>
+</article>
+<article class="voice" data-locale="en-KE" data-group="t02-g020">
+ <div class="voice-top"><p class="region">Kenya</p><span class="clip-duration">~16s</span></div>
+ <h2>Kenyan English</h2>
+ <div class="speakers"><span class="speaker"><strong>Question</strong> Chilemba <small>(male)</small></span><span class="speaker"><strong>Responses</strong> Asilia <small>(female)</small></span></div>
+ <audio controls preload="none" src="audio/preview/azure/en-ke.mp3" aria-label="Kenyan English: question and responses"></audio>
+</article>
+<article class="voice" data-locale="en-NG" data-group="t01-g012">
+ <div class="voice-top"><p class="region">Nigeria</p><span class="clip-duration">~15s</span></div>
+ <h2>Nigerian English</h2>
+ <div class="speakers"><span class="speaker"><strong>Question</strong> Ezinne <small>(female)</small></span><span class="speaker"><strong>Responses</strong> Abeo <small>(male)</small></span></div>
+ <audio controls preload="none" src="audio/preview/azure/en-ng.mp3" aria-label="Nigerian English: question and responses"></audio>
+</article>
+<article class="voice" data-locale="en-TZ" data-group="t02-g008">
+ <div class="voice-top"><p class="region">Tanzania</p><span class="clip-duration">~15s</span></div>
+ <h2>Tanzanian English</h2>
+ <div class="speakers"><span class="speaker"><strong>Question</strong> Elimu <small>(male)</small></span><span class="speaker"><strong>Responses</strong> Imani <small>(female)</small></span></div>
+ <audio controls preload="none" src="audio/preview/azure/en-tz.mp3" aria-label="Tanzanian English: question and responses"></audio>
+</article>
+<article class="voice" data-locale="en-ZA" data-group="t01-g028">
+ <div class="voice-top"><p class="region">South Africa</p><span class="clip-duration">~16s</span></div>
+ <h2>South African English</h2>
+ <div class="speakers"><span class="speaker"><strong>Question</strong> Leah <small>(female)</small></span><span class="speaker"><strong>Responses</strong> Luke <small>(male)</small></span></div>
+ <audio controls preload="none" src="audio/preview/azure/en-za.mp3" aria-label="South African English: question and responses"></audio>
+</article>
+</section>
+<p class="note">These are synthetic Azure voices, not human recordings or official ETS material. The samples use different scripts; no answers are shown.</p>
 </main>
-<script>document.addEventListener('play',e=>{if(e.target.tagName==='AUDIO')document.querySelectorAll('audio').forEach(a=>{if(a!==e.target)a.pause()})},true)</script>
+<script>document.addEventListener('play',event=>{if(event.target instanceof HTMLAudioElement)for(const player of document.querySelectorAll('audio'))if(player!==event.target&&!player.paused)player.pause()},true)</script>
+<script src="data/catalog.js?v=1.3.1"></script>
+<script src="assets/release-label.js?v=1.3.1"></script>
+</body>
 </html>
