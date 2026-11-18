@@ -28,4 +28,4 @@ The interface and test content are in English. Traditional Chinese is reserved f
 - [ETS sample test and listening script](https://www.kr.ets.org/pdfs/toeic/toeic-listening-reading-sample-test.pdf)
 - [TOEIC Taiwan: test content](https://www.toeic.com.tw/toeic/listening-reading/about/content/)
 
-SHIFT uses original illustrations and neural speech. Its accent mix is a practice design, not an official TOEIC accent distribution.
+SHIFT uses original illustrations and neural speech. New mock tests mix 14 Azure English accents across passages, with female and male voices per accent. Its accent mix is a practice design, not an official TOEIC accent distribution.

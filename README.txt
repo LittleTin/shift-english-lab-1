@@ -1,5 +1,5 @@
 SHIFT English Lab
-Version 1.2.1
+Version 1.3.0
 
 Get started
 1. Extract the entire ZIP before opening the site.
@@ -12,6 +12,9 @@ Get started
 
 This release contains three original 200-question tests, covering listening
 and reading. Practice can focus on one accent without mixing in another.
+Each new mock test mixes 14 Azure English accent labels across passages,
+with female and male voices per accent. Formal cues and directions retain
+the existing recordings. Tests already in progress retain their prior audio.
 The bundled neural audio is not an ETS recording. Mock test scores are
 practice results, not official TOEIC scaled scores.
 
