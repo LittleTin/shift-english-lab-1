@@ -91,7 +91,7 @@ def exam(root,filename,durations,allow_no_plan):
         if g[gid]['part']>=3:
             check([x.get('questionId') for x in f if x['role'] in ('question','question-cue') or (x['role']=='cue' and x.get('questionId'))]==nums,f'{gid}: missing or misplaced spoken stems')
         if 'direction' in roles:
-            check(roles['direction']==1 and f[0]['role']=='direction',f'{gid}: bad part direction')
+            check(roles['direction']==1 and next((t for t in f if t['role']!='intro'),{}).get('role')=='direction',f'{gid}: bad part direction')
             direction_parts.append(g[gid]['part'])
     check(direction_parts==[1,2,3,4],f'{filename.name}: incorrect section directions')
     check(abs(lengths-2700)<.25,f'{filename.name}: formal listening is {lengths:.3f}s (expected 2700)')

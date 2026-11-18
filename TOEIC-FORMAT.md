@@ -1,6 +1,6 @@
 # SHIFT Mock Test Format
 
-SHIFT uses original practice questions, not ETS questions or recordings. It follows the published TOEIC Listening & Reading structure. Scores are practice accuracy, not official scaled scores; difficulty equivalence is not claimed.
+SHIFT uses original practice questions, not ETS questions or recordings. It follows the published TOEIC Listening & Reading structure. Completed full formal tests show both raw counts and a clearly unofficial estimate on the TOEIC scale (5–495 per section, 10–990 total). ETS uses test-form-specific conversion tables, so our estimate is not an official score and does not claim equivalent difficulty.
 
 | Section | Part | Format | Questions per test |
 |---|---:|---|---|
@@ -15,8 +15,8 @@ SHIFT uses original practice questions, not ETS questions or recordings. It foll
 ## Taking a test
 
 - Formal listening plays each group once, in sequence, without replay, pausing, scrubbing, or speed changes. Parts 1–2 show answer letters rather than the spoken choices. Parts 3–4 show all three questions together and play the question stems. Any required graphic appears with the group.
-- Original directions, playback, spoken stems, and timed answer windows make up the listening section. The 45-minute timeline is SHIFT's own arrangement, not the precise timetable of an ETS recording.
-- Reading allows navigation between groups but cannot return to Listening. Scores and explanations appear only after submission.
+- New formal sessions begin with a listening overview, Part 1 directions, and an unscored original photograph example. Each new Part begins with spoken directions; a closing cue marks the transition to Reading. The opening, section directions, numbers and question stems use clear American English narration. Parts 1–2 use American English; Parts 3–4 deliberately retain all 14 English accents, more than the four accents used by TOEIC. The 45-minute timeline is SHIFT's own arrangement, not the precise timetable of an ETS recording.
+- Reading allows navigation between groups but cannot return to Listening. Scores and explanations appear only after submission, for correct, incorrect, and unanswered items.
 - Separate practice permits replay, pause, and speed changes. Choosing a specific accent selects only groups whose speakers all match that locale. It does not change the mixed mock tests.
 - Study records continue under the same site origin and browser profile. Use Data & Settings to export a backup before changing browser, device, or URL.
 
@@ -28,4 +28,4 @@ The interface and test content are in English. Traditional Chinese is reserved f
 - [ETS sample test and listening script](https://www.kr.ets.org/pdfs/toeic/toeic-listening-reading-sample-test.pdf)
 - [TOEIC Taiwan: test content](https://www.toeic.com.tw/toeic/listening-reading/about/content/)
 
-SHIFT uses original illustrations and neural speech. New mock tests mix 14 Azure English accents across passages, with female and male voices per accent. Its accent mix is a practice design, not an official TOEIC accent distribution.
+SHIFT uses original illustrations and neural speech. The scenario-based conversations and talks retain 14 Azure English accents. Full 14-accent practice remains available independently of formal mode. Its accent mix is a practice design, not an official TOEIC accent distribution.

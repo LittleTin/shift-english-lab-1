@@ -8,13 +8,15 @@ Get started
 3. Choose grouped practice or a full mock test. Listening takes about
    45 minutes, with one play per group. Reading allows 75 minutes.
 4. Answers, transcripts, and Traditional Chinese explanations are
-   available only in the answer review after submission.
+   available for every item only in the answer review after submission.
+   Complete formal tests also show a clearly unofficial score estimate.
 
 This release contains three original 200-question tests, covering listening
 and reading. Practice can focus on one accent without mixing in another.
-Each new mock test mixes 14 Azure English accent labels across passages,
-with female and male voices per accent. Formal cues and directions retain
-the existing recordings. Tests already in progress retain their prior audio.
+Formal listening starts with directions and an unscored photograph example.
+Part 1 and 2 and test narration use clear American English. Part 3 and 4
+retain all 14 Azure English accents, as does regular listening practice.
+Tests already in progress retain their prior audio.
 The bundled neural audio is not an ETS recording. Mock test scores are
 practice results, not official TOEIC scaled scores.
 

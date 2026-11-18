@@ -12800,15 +12800,37 @@
     "timing": "Original practice pacing; not an ETS recording or official timing specification.",
     "frames": [
       {
-        "src": "audio/formal/directions-01.mp3",
-        "start": 0.25,
-        "end": 21.47246,
-        "duration": 21.22246,
+        "src": "audio/formal-v2/narrator-01.mp3",
+        "start": 0.5,
+        "end": 16.628,
+        "duration": 16.128,
+        "kind": "audio",
+        "role": "intro",
+        "part": 1,
+        "groupId": "t03-g001",
+        "at": 0.0
+      },
+      {
+        "src": "audio/formal-v2/narrator-01.mp3",
+        "start": 17.128,
+        "end": 30.64,
+        "duration": 13.512,
         "kind": "audio",
         "role": "direction",
         "part": 1,
         "groupId": "t03-g001",
-        "at": 0.0
+        "at": 16.128
+      },
+      {
+        "src": "audio/formal-v2/narrator-03.mp3",
+        "start": 0.5,
+        "end": 32.732,
+        "duration": 32.232,
+        "kind": "audio",
+        "role": "example",
+        "part": 1,
+        "groupId": "t03-g001",
+        "at": 29.64
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -12819,27 +12841,35 @@
         "role": "cue",
         "part": 1,
         "groupId": "t03-g001",
-        "at": 21.22246
+        "at": 61.872
       },
       {
-        "src": "audio/azure-v1/test-03-01.mp3",
+        "src": "audio/formal-v2/test-03-01.mp3",
         "start": 0.5,
-        "end": 20.108,
-        "duration": 19.608,
+        "end": 19.628,
+        "duration": 19.128,
         "kind": "audio",
         "role": "passage",
         "part": 1,
         "groupId": "t03-g001",
-        "at": 21.98717
+        "at": 62.63671,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 1,
         "groupId": "t03-g001",
         "questionId": "t03-q001",
-        "at": 41.59517
+        "at": 81.76471
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -12850,27 +12880,35 @@
         "role": "cue",
         "part": 1,
         "groupId": "t03-g002",
-        "at": 46.10528
+        "at": 85.86012
       },
       {
-        "src": "audio/azure-v1/test-03-01.mp3",
-        "start": 20.608,
-        "end": 37.936,
-        "duration": 17.328,
+        "src": "audio/formal-v2/test-03-01.mp3",
+        "start": 20.128,
+        "end": 38.776,
+        "duration": 18.648,
         "kind": "audio",
         "role": "passage",
         "part": 1,
         "groupId": "t03-g002",
-        "at": 46.94482
+        "at": 86.69966,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 1,
         "groupId": "t03-g002",
         "questionId": "t03-q002",
-        "at": 64.27282
+        "at": 105.34766
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -12881,27 +12919,35 @@
         "role": "cue",
         "part": 1,
         "groupId": "t03-g003",
-        "at": 68.78293
+        "at": 109.44307
       },
       {
-        "src": "audio/azure-v1/test-03-01.mp3",
-        "start": 38.436,
-        "end": 58.02,
-        "duration": 19.584,
+        "src": "audio/formal-v2/test-03-01.mp3",
+        "start": 39.276,
+        "end": 58.476,
+        "duration": 19.2,
         "kind": "audio",
         "role": "passage",
         "part": 1,
         "groupId": "t03-g003",
-        "at": 69.61351
+        "at": 110.27365,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 1,
         "groupId": "t03-g003",
         "questionId": "t03-q003",
-        "at": 89.19751
+        "at": 129.47365
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -12912,27 +12958,35 @@
         "role": "cue",
         "part": 1,
         "groupId": "t03-g004",
-        "at": 93.70762
+        "at": 133.56906
       },
       {
-        "src": "audio/azure-v1/test-03-02.mp3",
+        "src": "audio/formal-v2/test-03-02.mp3",
         "start": 0.5,
-        "end": 17.924,
-        "duration": 17.424,
+        "end": 20.06,
+        "duration": 19.56,
         "kind": "audio",
         "role": "passage",
         "part": 1,
         "groupId": "t03-g004",
-        "at": 94.50999
+        "at": 134.37143,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 1,
         "groupId": "t03-g004",
         "questionId": "t03-q004",
-        "at": 111.93399
+        "at": 153.93143
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -12943,27 +12997,35 @@
         "role": "cue",
         "part": 1,
         "groupId": "t03-g005",
-        "at": 116.4441
+        "at": 158.02684
       },
       {
-        "src": "audio/azure-v1/test-03-02.mp3",
-        "start": 18.424,
-        "end": 36.352,
+        "src": "audio/formal-v2/test-03-02.mp3",
+        "start": 20.56,
+        "end": 38.488,
         "duration": 17.928,
         "kind": "audio",
         "role": "passage",
         "part": 1,
         "groupId": "t03-g005",
-        "at": 117.33835
+        "at": 158.92109,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 1,
         "groupId": "t03-g005",
         "questionId": "t03-q005",
-        "at": 135.26635
+        "at": 176.84909
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -12974,38 +13036,46 @@
         "role": "cue",
         "part": 1,
         "groupId": "t03-g006",
-        "at": 139.77646
+        "at": 180.9445
       },
       {
-        "src": "audio/azure-v1/test-03-02.mp3",
-        "start": 36.852,
-        "end": 56.556,
-        "duration": 19.704,
+        "src": "audio/formal-v2/test-03-02.mp3",
+        "start": 38.988,
+        "end": 58.908,
+        "duration": 19.92,
         "kind": "audio",
         "role": "passage",
         "part": 1,
         "groupId": "t03-g006",
-        "at": 140.66367
+        "at": 181.83171,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 1,
         "groupId": "t03-g006",
         "questionId": "t03-q006",
-        "at": 160.36767
+        "at": 201.75171
       },
       {
-        "src": "audio/formal/directions-01.mp3",
-        "start": 21.72246,
-        "end": 32.69371,
-        "duration": 10.97125,
+        "src": "audio/formal-v2/narrator-01.mp3",
+        "start": 31.14,
+        "end": 45.684,
+        "duration": 14.544,
         "kind": "audio",
         "role": "direction",
         "part": 2,
         "groupId": "t03-g007",
-        "at": 164.87778
+        "at": 205.84712
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13016,27 +13086,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g007",
-        "at": 175.84903
+        "at": 220.39112
       },
       {
-        "src": "audio/azure-v1/test-03-03.mp3",
+        "src": "audio/formal-v2/test-03-03.mp3",
         "start": 0.5,
-        "end": 16.028,
-        "duration": 15.528,
+        "end": 16.724,
+        "duration": 16.224,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g007",
-        "at": 176.72441
+        "at": 221.2665,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          },
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g007",
         "questionId": "t03-q007",
-        "at": 192.25241
+        "at": 237.4905
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13047,27 +13131,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g008",
-        "at": 196.76252
+        "at": 241.58591
       },
       {
-        "src": "audio/azure-v1/test-03-03.mp3",
-        "start": 16.528,
-        "end": 33.904,
+        "src": "audio/formal-v2/test-03-03.mp3",
+        "start": 17.224,
+        "end": 34.6,
         "duration": 17.376,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g008",
-        "at": 197.58652
+        "at": 242.40991,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g008",
         "questionId": "t03-q008",
-        "at": 214.96252
+        "at": 259.78591
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13078,27 +13176,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g009",
-        "at": 219.47263
+        "at": 263.88132
       },
       {
-        "src": "audio/azure-v1/test-03-03.mp3",
-        "start": 34.404,
-        "end": 51.468,
-        "duration": 17.064,
+        "src": "audio/formal-v2/test-03-03.mp3",
+        "start": 35.1,
+        "end": 51.852,
+        "duration": 16.752,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g009",
-        "at": 220.29859
+        "at": 264.70728,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          },
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g009",
         "questionId": "t03-q009",
-        "at": 237.36259
+        "at": 281.45928
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13109,27 +13221,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g010",
-        "at": 241.8727
+        "at": 285.55469
       },
       {
-        "src": "audio/azure-v1/test-03-04.mp3",
+        "src": "audio/formal-v2/test-03-04.mp3",
         "start": 0.5,
-        "end": 16.94,
-        "duration": 16.44,
+        "end": 16.052,
+        "duration": 15.552,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g010",
-        "at": 242.69853
+        "at": 286.38052,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g010",
         "questionId": "t03-q010",
-        "at": 259.13853
+        "at": 301.93252
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13140,27 +13266,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g011",
-        "at": 263.64864
+        "at": 306.02793
       },
       {
-        "src": "audio/azure-v1/test-03-04.mp3",
-        "start": 17.44,
-        "end": 34.792,
-        "duration": 17.352,
+        "src": "audio/formal-v2/test-03-04.mp3",
+        "start": 16.552,
+        "end": 32.944,
+        "duration": 16.392,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g011",
-        "at": 264.59752
+        "at": 306.97681,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          },
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g011",
         "questionId": "t03-q011",
-        "at": 281.94952
+        "at": 323.36881
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13171,27 +13311,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g012",
-        "at": 286.45963
+        "at": 327.46422
       },
       {
-        "src": "audio/azure-v1/test-03-04.mp3",
-        "start": 35.292,
-        "end": 53.772,
-        "duration": 18.48,
+        "src": "audio/formal-v2/test-03-04.mp3",
+        "start": 33.444,
+        "end": 51.564,
+        "duration": 18.12,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g012",
-        "at": 287.40305
+        "at": 328.40764,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g012",
         "questionId": "t03-q012",
-        "at": 305.88305
+        "at": 346.52764
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13202,27 +13356,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g013",
-        "at": 310.39316
+        "at": 350.62305
       },
       {
-        "src": "audio/azure-v1/test-03-05.mp3",
+        "src": "audio/formal-v2/test-03-05.mp3",
         "start": 0.5,
-        "end": 16.796,
-        "duration": 16.296,
+        "end": 16.148,
+        "duration": 15.648,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g013",
-        "at": 311.47491
+        "at": 351.7048,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          },
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g013",
         "questionId": "t03-q013",
-        "at": 327.77091
+        "at": 367.3528
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13233,27 +13401,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g014",
-        "at": 332.28102
+        "at": 371.44821
       },
       {
-        "src": "audio/azure-v1/test-03-05.mp3",
-        "start": 17.296,
-        "end": 34.72,
-        "duration": 17.424,
+        "src": "audio/formal-v2/test-03-05.mp3",
+        "start": 16.648,
+        "end": 33.016,
+        "duration": 16.368,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g014",
-        "at": 333.28485
+        "at": 372.45204,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g014",
         "questionId": "t03-q014",
-        "at": 350.70885
+        "at": 388.82004
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13264,27 +13446,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g015",
-        "at": 355.21896
+        "at": 392.91545
       },
       {
-        "src": "audio/azure-v1/test-03-05.mp3",
-        "start": 35.22,
-        "end": 52.428,
-        "duration": 17.208,
+        "src": "audio/formal-v2/test-03-05.mp3",
+        "start": 33.516,
+        "end": 50.94,
+        "duration": 17.424,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g015",
-        "at": 356.21596
+        "at": 393.91245,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          },
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g015",
         "questionId": "t03-q015",
-        "at": 373.42396
+        "at": 411.33645
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13295,27 +13491,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g016",
-        "at": 377.93407
+        "at": 415.43186
       },
       {
-        "src": "audio/azure-v1/test-03-06.mp3",
+        "src": "audio/formal-v2/test-03-06.mp3",
         "start": 0.5,
-        "end": 17.444,
-        "duration": 16.944,
+        "end": 18.14,
+        "duration": 17.64,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g016",
-        "at": 378.97111
+        "at": 416.4689,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g016",
         "questionId": "t03-q016",
-        "at": 395.91511
+        "at": 434.1089
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13326,27 +13536,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g017",
-        "at": 400.42522
+        "at": 438.20431
       },
       {
-        "src": "audio/azure-v1/test-03-06.mp3",
-        "start": 17.944,
-        "end": 35.32,
-        "duration": 17.376,
+        "src": "audio/formal-v2/test-03-06.mp3",
+        "start": 18.64,
+        "end": 36.304,
+        "duration": 17.664,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g017",
-        "at": 401.52297
+        "at": 439.30206,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          },
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g017",
         "questionId": "t03-q017",
-        "at": 418.89897
+        "at": 456.96606
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13357,27 +13581,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g018",
-        "at": 423.40908
+        "at": 461.06147
       },
       {
-        "src": "audio/azure-v1/test-03-06.mp3",
-        "start": 35.82,
-        "end": 53.7,
-        "duration": 17.88,
+        "src": "audio/formal-v2/test-03-06.mp3",
+        "start": 36.804,
+        "end": 54.972,
+        "duration": 18.168,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g018",
-        "at": 424.38466
+        "at": 462.03705,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g018",
         "questionId": "t03-q018",
-        "at": 442.26466
+        "at": 480.20505
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13388,10 +13626,10 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g019",
-        "at": 446.77477
+        "at": 484.30046
       },
       {
-        "src": "audio/azure-v1/test-03-07.mp3",
+        "src": "audio/formal-v2/test-03-07.mp3",
         "start": 0.5,
         "end": 17.084,
         "duration": 16.584,
@@ -13399,16 +13637,30 @@
         "role": "passage",
         "part": 2,
         "groupId": "t03-g019",
-        "at": 447.82452
+        "at": 485.35021,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          },
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g019",
         "questionId": "t03-q019",
-        "at": 464.40852
+        "at": 501.93421
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13419,27 +13671,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g020",
-        "at": 468.91863
+        "at": 506.02962
       },
       {
-        "src": "audio/azure-v1/test-03-07.mp3",
+        "src": "audio/formal-v2/test-03-07.mp3",
         "start": 17.584,
-        "end": 33.856,
-        "duration": 16.272,
+        "end": 35.56,
+        "duration": 17.976,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g020",
-        "at": 469.88655
+        "at": 506.99754,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g020",
         "questionId": "t03-q020",
-        "at": 486.15855
+        "at": 524.97354
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13450,27 +13716,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g021",
-        "at": 490.66866
+        "at": 529.06895
       },
       {
-        "src": "audio/azure-v1/test-03-07.mp3",
-        "start": 34.356,
-        "end": 50.148,
-        "duration": 15.792,
+        "src": "audio/formal-v2/test-03-07.mp3",
+        "start": 36.06,
+        "end": 52.716,
+        "duration": 16.656,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g021",
-        "at": 491.78112
+        "at": 530.18141,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          },
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g021",
         "questionId": "t03-q021",
-        "at": 507.57312
+        "at": 546.83741
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13481,27 +13761,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g022",
-        "at": 512.08323
+        "at": 550.93282
       },
       {
-        "src": "audio/azure-v1/test-03-08.mp3",
+        "src": "audio/formal-v2/test-03-08.mp3",
         "start": 0.5,
-        "end": 16.388,
-        "duration": 15.888,
+        "end": 16.652,
+        "duration": 16.152,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g022",
-        "at": 513.19344
+        "at": 552.04303,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g022",
         "questionId": "t03-q022",
-        "at": 529.08144
+        "at": 568.19503
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13512,27 +13806,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g023",
-        "at": 533.59155
+        "at": 572.29044
       },
       {
-        "src": "audio/azure-v1/test-03-08.mp3",
-        "start": 16.888,
-        "end": 36.544,
-        "duration": 19.656,
+        "src": "audio/formal-v2/test-03-08.mp3",
+        "start": 17.152,
+        "end": 35.824,
+        "duration": 18.672,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g023",
-        "at": 534.78072
+        "at": 573.47961,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          },
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g023",
         "questionId": "t03-q023",
-        "at": 554.43672
+        "at": 592.15161
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13543,27 +13851,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g024",
-        "at": 558.94683
+        "at": 596.24702
       },
       {
-        "src": "audio/azure-v1/test-03-08.mp3",
-        "start": 37.044,
-        "end": 55.044,
-        "duration": 18.0,
+        "src": "audio/formal-v2/test-03-08.mp3",
+        "start": 36.324,
+        "end": 53.316,
+        "duration": 16.992,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g024",
-        "at": 560.13045
+        "at": 597.43064,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g024",
         "questionId": "t03-q024",
-        "at": 578.13045
+        "at": 614.42264
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13574,27 +13896,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g025",
-        "at": 582.64056
+        "at": 618.51805
       },
       {
-        "src": "audio/azure-v1/test-03-09.mp3",
+        "src": "audio/formal-v2/test-03-09.mp3",
         "start": 0.5,
-        "end": 18.62,
-        "duration": 18.12,
+        "end": 17.18,
+        "duration": 16.68,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g025",
-        "at": 583.82394
+        "at": 619.70143,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          },
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g025",
         "questionId": "t03-q025",
-        "at": 601.94394
+        "at": 636.38143
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13605,27 +13941,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g026",
-        "at": 606.45405
+        "at": 640.47684
       },
       {
-        "src": "audio/azure-v1/test-03-09.mp3",
-        "start": 19.12,
-        "end": 35.968,
-        "duration": 16.848,
+        "src": "audio/formal-v2/test-03-09.mp3",
+        "start": 17.68,
+        "end": 34.216,
+        "duration": 16.536,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g026",
-        "at": 607.63626
+        "at": 641.65905,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g026",
         "questionId": "t03-q026",
-        "at": 624.48426
+        "at": 658.19505
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13636,27 +13986,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g027",
-        "at": 628.99437
+        "at": 662.29046
       },
       {
-        "src": "audio/azure-v1/test-03-09.mp3",
-        "start": 36.468,
-        "end": 53.604,
-        "duration": 17.136,
+        "src": "audio/formal-v2/test-03-09.mp3",
+        "start": 34.716,
+        "end": 51.684,
+        "duration": 16.968,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g027",
-        "at": 630.21045
+        "at": 663.50654,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          },
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g027",
         "questionId": "t03-q027",
-        "at": 647.34645
+        "at": 680.47454
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13667,27 +14031,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g028",
-        "at": 651.85656
+        "at": 684.56995
       },
       {
-        "src": "audio/azure-v1/test-03-10.mp3",
+        "src": "audio/formal-v2/test-03-10.mp3",
         "start": 0.5,
-        "end": 18.836,
-        "duration": 18.336,
+        "end": 17.804,
+        "duration": 17.304,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g028",
-        "at": 652.97827
+        "at": 685.69166,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g028",
         "questionId": "t03-q028",
-        "at": 671.31427
+        "at": 702.99566
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13698,27 +14076,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g029",
-        "at": 675.82438
+        "at": 707.09107
       },
       {
-        "src": "audio/azure-v1/test-03-10.mp3",
-        "start": 19.336,
-        "end": 36.352,
-        "duration": 17.016,
+        "src": "audio/formal-v2/test-03-10.mp3",
+        "start": 18.304,
+        "end": 35.44,
+        "duration": 17.136,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g029",
-        "at": 676.96359
+        "at": 708.23028,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          },
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g029",
         "questionId": "t03-q029",
-        "at": 693.97959
+        "at": 725.36628
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13729,27 +14121,41 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g030",
-        "at": 698.4897
+        "at": 729.46169
       },
       {
-        "src": "audio/azure-v1/test-03-10.mp3",
-        "start": 36.852,
-        "end": 54.036,
-        "duration": 17.184,
+        "src": "audio/formal-v2/test-03-10.mp3",
+        "start": 35.94,
+        "end": 53.508,
+        "duration": 17.568,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g030",
-        "at": 699.3807
+        "at": 730.35269,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g030",
         "questionId": "t03-q030",
-        "at": 716.5647
+        "at": 747.92069
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13760,38 +14166,52 @@
         "role": "cue",
         "part": 2,
         "groupId": "t03-g031",
-        "at": 721.07481
+        "at": 752.0161
       },
       {
-        "src": "audio/azure-v1/test-03-11.mp3",
+        "src": "audio/formal-v2/test-03-11.mp3",
         "start": 0.5,
-        "end": 17.804,
-        "duration": 17.304,
+        "end": 17.756,
+        "duration": 17.256,
         "kind": "audio",
         "role": "passage",
         "part": 2,
         "groupId": "t03-g031",
-        "at": 722.16531
+        "at": 753.1066,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          },
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          }
+        ]
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 4.51011,
+        "duration": 4.09541,
         "part": 2,
         "groupId": "t03-g031",
         "questionId": "t03-q031",
-        "at": 739.46931
+        "at": 770.3626
       },
       {
-        "src": "audio/formal/directions-01.mp3",
-        "start": 32.94371,
-        "end": 50.69896,
-        "duration": 17.75525,
+        "src": "audio/formal-v2/narrator-02.mp3",
+        "start": 0.5,
+        "end": 15.908,
+        "duration": 15.408,
         "kind": "audio",
         "role": "direction",
         "part": 3,
         "groupId": "t03-g032",
-        "at": 743.97942
+        "at": 774.45801
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13802,7 +14222,7 @@
         "role": "cue",
         "part": 3,
         "groupId": "t03-g032",
-        "at": 761.73467
+        "at": 789.86601
       },
       {
         "src": "audio/azure-v1/test-03-12.mp3",
@@ -13813,7 +14233,21 @@
         "role": "passage",
         "part": 3,
         "groupId": "t03-g032",
-        "at": 765.63221
+        "at": 793.76355,
+        "speakers": [
+          {
+            "speaker": "F1",
+            "locale": "en-ZA",
+            "role": "female",
+            "modelVoice": "en-ZA-LeahNeural"
+          },
+          {
+            "speaker": "M1",
+            "locale": "en-ZA",
+            "role": "male",
+            "modelVoice": "en-ZA-LukeNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13825,16 +14259,16 @@
         "part": 3,
         "groupId": "t03-g032",
         "questionId": "t03-q032",
-        "at": 812.67221
+        "at": 840.80355
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g032",
         "questionId": "t03-q032",
-        "at": 815.594
+        "at": 843.72534
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13846,16 +14280,16 @@
         "part": 3,
         "groupId": "t03-g032",
         "questionId": "t03-q033",
-        "at": 822.81018
+        "at": 850.278
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g032",
         "questionId": "t03-q033",
-        "at": 826.01743
+        "at": 853.48525
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13867,16 +14301,16 @@
         "part": 3,
         "groupId": "t03-g032",
         "questionId": "t03-q034",
-        "at": 833.23361
+        "at": 860.03791
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g032",
         "questionId": "t03-q034",
-        "at": 836.35178
+        "at": 863.15608
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13887,7 +14321,7 @@
         "role": "cue",
         "part": 3,
         "groupId": "t03-g033",
-        "at": 843.56796
+        "at": 869.70874
       },
       {
         "src": "audio/azure-v1/test-03-13.mp3",
@@ -13898,7 +14332,21 @@
         "role": "passage",
         "part": 3,
         "groupId": "t03-g033",
-        "at": 847.63975
+        "at": 873.78053,
+        "speakers": [
+          {
+            "speaker": "M1",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "F1",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13910,16 +14358,16 @@
         "part": 3,
         "groupId": "t03-g033",
         "questionId": "t03-q035",
-        "at": 895.11175
+        "at": 921.25253
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g033",
         "questionId": "t03-q035",
-        "at": 898.235
+        "at": 924.37578
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13931,16 +14379,16 @@
         "part": 3,
         "groupId": "t03-g033",
         "questionId": "t03-q036",
-        "at": 905.45118
+        "at": 930.92844
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g033",
         "questionId": "t03-q036",
-        "at": 908.49168
+        "at": 933.96894
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13952,16 +14400,16 @@
         "part": 3,
         "groupId": "t03-g033",
         "questionId": "t03-q037",
-        "at": 915.70786
+        "at": 940.5216
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g033",
         "questionId": "t03-q037",
-        "at": 918.01753
+        "at": 942.83127
       },
       {
         "src": "audio/formal/test-03-cues-01.mp3",
@@ -13972,7 +14420,7 @@
         "role": "cue",
         "part": 3,
         "groupId": "t03-g034",
-        "at": 925.23371
+        "at": 949.38393
       },
       {
         "src": "audio/azure-v1/test-03-14.mp3",
@@ -13983,7 +14431,27 @@
         "role": "passage",
         "part": 3,
         "groupId": "t03-g034",
-        "at": 928.81213
+        "at": 952.96235,
+        "speakers": [
+          {
+            "speaker": "F1",
+            "locale": "en-GB",
+            "role": "female",
+            "modelVoice": "en-GB-SoniaNeural"
+          },
+          {
+            "speaker": "M1",
+            "locale": "en-GB",
+            "role": "male",
+            "modelVoice": "en-GB-RyanNeural"
+          },
+          {
+            "speaker": "M2",
+            "locale": "en-GB",
+            "role": "male",
+            "modelVoice": "en-GB-AlfieNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-02.mp3",
@@ -13995,16 +14463,16 @@
         "part": 3,
         "groupId": "t03-g034",
         "questionId": "t03-q038",
-        "at": 977.10013
+        "at": 1001.25035
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g034",
         "questionId": "t03-q038",
-        "at": 980.80409
+        "at": 1004.95431
       },
       {
         "src": "audio/formal/test-03-cues-02.mp3",
@@ -14016,16 +14484,16 @@
         "part": 3,
         "groupId": "t03-g034",
         "questionId": "t03-q039",
-        "at": 988.02027
+        "at": 1011.50697
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g034",
         "questionId": "t03-q039",
-        "at": 990.21639
+        "at": 1013.70309
       },
       {
         "src": "audio/formal/test-03-cues-02.mp3",
@@ -14037,16 +14505,16 @@
         "part": 3,
         "groupId": "t03-g034",
         "questionId": "t03-q040",
-        "at": 997.43257
+        "at": 1020.25575
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g034",
         "questionId": "t03-q040",
-        "at": 1000.17928
+        "at": 1023.00246
       },
       {
         "src": "audio/formal/test-03-cues-02.mp3",
@@ -14057,7 +14525,7 @@
         "role": "cue",
         "part": 3,
         "groupId": "t03-g035",
-        "at": 1007.39546
+        "at": 1029.55512
       },
       {
         "src": "audio/azure-v1/test-03-15.mp3",
@@ -14068,7 +14536,21 @@
         "role": "passage",
         "part": 3,
         "groupId": "t03-g035",
-        "at": 1011.21842
+        "at": 1033.37808,
+        "speakers": [
+          {
+            "speaker": "M1",
+            "locale": "en-CA",
+            "role": "male",
+            "modelVoice": "en-CA-LiamNeural"
+          },
+          {
+            "speaker": "F1",
+            "locale": "en-CA",
+            "role": "female",
+            "modelVoice": "en-CA-ClaraNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-02.mp3",
@@ -14080,16 +14562,16 @@
         "part": 3,
         "groupId": "t03-g035",
         "questionId": "t03-q041",
-        "at": 1058.97842
+        "at": 1081.13808
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g035",
         "questionId": "t03-q041",
-        "at": 1061.36192
+        "at": 1083.52158
       },
       {
         "src": "audio/formal/test-03-cues-02.mp3",
@@ -14101,16 +14583,16 @@
         "part": 3,
         "groupId": "t03-g035",
         "questionId": "t03-q042",
-        "at": 1068.5781
+        "at": 1090.07424
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 9.82898,
         "part": 3,
         "groupId": "t03-g035",
         "questionId": "t03-q042",
-        "at": 1072.45402
+        "at": 1093.95016
       },
       {
         "src": "audio/formal/test-03-cues-02.mp3",
@@ -14122,16 +14604,16 @@
         "part": 3,
         "groupId": "t03-g035",
         "questionId": "t03-q043",
-        "at": 1079.6702
+        "at": 1103.77914
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g035",
         "questionId": "t03-q043",
-        "at": 1083.40487
+        "at": 1107.51381
       },
       {
         "src": "audio/formal/test-03-cues-02.mp3",
@@ -14142,7 +14624,7 @@
         "role": "cue",
         "part": 3,
         "groupId": "t03-g036",
-        "at": 1090.62105
+        "at": 1114.06647
       },
       {
         "src": "audio/azure-v1/test-03-16.mp3",
@@ -14153,7 +14635,21 @@
         "role": "passage",
         "part": 3,
         "groupId": "t03-g036",
-        "at": 1094.5868
+        "at": 1118.03222,
+        "speakers": [
+          {
+            "speaker": "F1",
+            "locale": "en-AU",
+            "role": "female",
+            "modelVoice": "en-AU-NatashaNeural"
+          },
+          {
+            "speaker": "M1",
+            "locale": "en-AU",
+            "role": "male",
+            "modelVoice": "en-AU-WilliamNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-02.mp3",
@@ -14165,16 +14661,16 @@
         "part": 3,
         "groupId": "t03-g036",
         "questionId": "t03-q044",
-        "at": 1138.8188
+        "at": 1162.26422
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g036",
         "questionId": "t03-q044",
-        "at": 1142.33305
+        "at": 1165.77847
       },
       {
         "src": "audio/formal/test-03-cues-02.mp3",
@@ -14186,16 +14682,16 @@
         "part": 3,
         "groupId": "t03-g036",
         "questionId": "t03-q045",
-        "at": 1149.54923
+        "at": 1172.33113
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g036",
         "questionId": "t03-q045",
-        "at": 1152.98515
+        "at": 1175.76705
       },
       {
         "src": "audio/formal/test-03-cues-02.mp3",
@@ -14207,16 +14703,16 @@
         "part": 3,
         "groupId": "t03-g036",
         "questionId": "t03-q046",
-        "at": 1160.20133
+        "at": 1182.31971
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g036",
         "questionId": "t03-q046",
-        "at": 1164.37879
+        "at": 1186.49717
       },
       {
         "src": "audio/formal/test-03-cues-02.mp3",
@@ -14227,7 +14723,7 @@
         "role": "cue",
         "part": 3,
         "groupId": "t03-g037",
-        "at": 1171.59497
+        "at": 1193.04983
       },
       {
         "src": "audio/azure-v1/test-03-17.mp3",
@@ -14238,7 +14734,21 @@
         "role": "passage",
         "part": 3,
         "groupId": "t03-g037",
-        "at": 1175.56584
+        "at": 1197.0207,
+        "speakers": [
+          {
+            "speaker": "M1",
+            "locale": "en-IN",
+            "role": "male",
+            "modelVoice": "en-IN-PrabhatNeural"
+          },
+          {
+            "speaker": "F1",
+            "locale": "en-IN",
+            "role": "female",
+            "modelVoice": "en-IN-NeerjaNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-02.mp3",
@@ -14250,16 +14760,16 @@
         "part": 3,
         "groupId": "t03-g037",
         "questionId": "t03-q047",
-        "at": 1230.09384
+        "at": 1251.5487
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g037",
         "questionId": "t03-q047",
-        "at": 1233.74442
+        "at": 1255.19928
       },
       {
         "src": "audio/formal/test-03-cues-02.mp3",
@@ -14271,16 +14781,16 @@
         "part": 3,
         "groupId": "t03-g037",
         "questionId": "t03-q048",
-        "at": 1240.9606
+        "at": 1261.75194
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g037",
         "questionId": "t03-q048",
-        "at": 1243.29293
+        "at": 1264.08427
       },
       {
         "src": "audio/formal/test-03-cues-02.mp3",
@@ -14292,16 +14802,16 @@
         "part": 3,
         "groupId": "t03-g037",
         "questionId": "t03-q049",
-        "at": 1250.50911
+        "at": 1270.63693
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g037",
         "questionId": "t03-q049",
-        "at": 1253.15465
+        "at": 1273.28247
       },
       {
         "src": "audio/formal/test-03-cues-02.mp3",
@@ -14312,7 +14822,7 @@
         "role": "cue",
         "part": 3,
         "groupId": "t03-g038",
-        "at": 1260.37083
+        "at": 1279.83513
       },
       {
         "src": "audio/azure-v1/test-03-18.mp3",
@@ -14323,7 +14833,21 @@
         "role": "passage",
         "part": 3,
         "groupId": "t03-g038",
-        "at": 1263.97325
+        "at": 1283.43755,
+        "speakers": [
+          {
+            "speaker": "F1",
+            "locale": "en-HK",
+            "role": "female",
+            "modelVoice": "en-HK-YanNeural"
+          },
+          {
+            "speaker": "M1",
+            "locale": "en-HK",
+            "role": "male",
+            "modelVoice": "en-HK-SamNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-02.mp3",
@@ -14335,16 +14859,16 @@
         "part": 3,
         "groupId": "t03-g038",
         "questionId": "t03-q050",
-        "at": 1316.77325
+        "at": 1336.23755
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g038",
         "questionId": "t03-q050",
-        "at": 1319.33942
+        "at": 1338.80372
       },
       {
         "src": "audio/formal/test-03-cues-02.mp3",
@@ -14356,16 +14880,16 @@
         "part": 3,
         "groupId": "t03-g038",
         "questionId": "t03-q051",
-        "at": 1326.5556
+        "at": 1345.35638
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g038",
         "questionId": "t03-q051",
-        "at": 1330.19123
+        "at": 1348.99201
       },
       {
         "src": "audio/formal/test-03-cues-02.mp3",
@@ -14377,16 +14901,16 @@
         "part": 3,
         "groupId": "t03-g038",
         "questionId": "t03-q052",
-        "at": 1337.40741
+        "at": 1355.54467
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g038",
         "questionId": "t03-q052",
-        "at": 1341.73233
+        "at": 1359.86959
       },
       {
         "src": "audio/formal/test-03-cues-03.mp3",
@@ -14397,7 +14921,7 @@
         "role": "cue",
         "part": 3,
         "groupId": "t03-g039",
-        "at": 1348.94851
+        "at": 1366.42225
       },
       {
         "src": "audio/azure-v1/test-03-19.mp3",
@@ -14408,7 +14932,27 @@
         "role": "passage",
         "part": 3,
         "groupId": "t03-g039",
-        "at": 1352.87134
+        "at": 1370.34508,
+        "speakers": [
+          {
+            "speaker": "F1",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          },
+          {
+            "speaker": "M1",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "F2",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-AriaNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-03.mp3",
@@ -14420,16 +14964,16 @@
         "part": 3,
         "groupId": "t03-g039",
         "questionId": "t03-q053",
-        "at": 1404.56734
+        "at": 1422.04108
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g039",
         "questionId": "t03-q053",
-        "at": 1407.41267
+        "at": 1424.88641
       },
       {
         "src": "audio/formal/test-03-cues-03.mp3",
@@ -14441,16 +14985,16 @@
         "part": 3,
         "groupId": "t03-g039",
         "questionId": "t03-q054",
-        "at": 1414.62885
+        "at": 1431.43907
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g039",
         "questionId": "t03-q054",
-        "at": 1417.20431
+        "at": 1434.01453
       },
       {
         "src": "audio/formal/test-03-cues-03.mp3",
@@ -14462,16 +15006,16 @@
         "part": 3,
         "groupId": "t03-g039",
         "questionId": "t03-q055",
-        "at": 1424.42049
+        "at": 1440.56719
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g039",
         "questionId": "t03-q055",
-        "at": 1428.6557
+        "at": 1444.8024
       },
       {
         "src": "audio/formal/test-03-cues-03.mp3",
@@ -14482,7 +15026,7 @@
         "role": "cue",
         "part": 3,
         "groupId": "t03-g040",
-        "at": 1435.87188
+        "at": 1451.35506
       },
       {
         "src": "audio/azure-v1/test-03-20.mp3",
@@ -14493,7 +15037,21 @@
         "role": "passage",
         "part": 3,
         "groupId": "t03-g040",
-        "at": 1439.77605
+        "at": 1455.25923,
+        "speakers": [
+          {
+            "speaker": "M1",
+            "locale": "en-SG",
+            "role": "male",
+            "modelVoice": "en-SG-WayneNeural"
+          },
+          {
+            "speaker": "F1",
+            "locale": "en-SG",
+            "role": "female",
+            "modelVoice": "en-SG-LunaNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-03.mp3",
@@ -14505,16 +15063,16 @@
         "part": 3,
         "groupId": "t03-g040",
         "questionId": "t03-q056",
-        "at": 1492.43205
+        "at": 1507.91523
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g040",
         "questionId": "t03-q056",
-        "at": 1496.17005
+        "at": 1511.65323
       },
       {
         "src": "audio/formal/test-03-cues-03.mp3",
@@ -14526,16 +15084,16 @@
         "part": 3,
         "groupId": "t03-g040",
         "questionId": "t03-q057",
-        "at": 1503.38623
+        "at": 1518.20589
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 9.82898,
         "part": 3,
         "groupId": "t03-g040",
         "questionId": "t03-q057",
-        "at": 1507.47844
+        "at": 1522.2981
       },
       {
         "src": "audio/formal/test-03-cues-03.mp3",
@@ -14547,16 +15105,16 @@
         "part": 3,
         "groupId": "t03-g040",
         "questionId": "t03-q058",
-        "at": 1514.69462
+        "at": 1532.12708
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g040",
         "questionId": "t03-q058",
-        "at": 1518.05424
+        "at": 1535.4867
       },
       {
         "src": "audio/formal/test-03-cues-03.mp3",
@@ -14567,7 +15125,7 @@
         "role": "cue",
         "part": 3,
         "groupId": "t03-g041",
-        "at": 1525.27042
+        "at": 1542.03936
       },
       {
         "src": "audio/azure-v1/test-03-21.mp3",
@@ -14578,7 +15136,21 @@
         "role": "passage",
         "part": 3,
         "groupId": "t03-g041",
-        "at": 1529.28367
+        "at": 1546.05261,
+        "speakers": [
+          {
+            "speaker": "F1",
+            "locale": "en-PH",
+            "role": "female",
+            "modelVoice": "en-PH-RosaNeural"
+          },
+          {
+            "speaker": "M1",
+            "locale": "en-PH",
+            "role": "male",
+            "modelVoice": "en-PH-JamesNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-03.mp3",
@@ -14590,16 +15162,16 @@
         "part": 3,
         "groupId": "t03-g041",
         "questionId": "t03-q059",
-        "at": 1576.97167
+        "at": 1593.74061
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g041",
         "questionId": "t03-q059",
-        "at": 1580.12284
+        "at": 1596.89178
       },
       {
         "src": "audio/formal/test-03-cues-03.mp3",
@@ -14611,16 +15183,16 @@
         "part": 3,
         "groupId": "t03-g041",
         "questionId": "t03-q060",
-        "at": 1587.33902
+        "at": 1603.44444
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g041",
         "questionId": "t03-q060",
-        "at": 1590.07019
+        "at": 1606.17561
       },
       {
         "src": "audio/formal/test-03-cues-03.mp3",
@@ -14632,16 +15204,16 @@
         "part": 3,
         "groupId": "t03-g041",
         "questionId": "t03-q061",
-        "at": 1597.28637
+        "at": 1612.72827
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g041",
         "questionId": "t03-q061",
-        "at": 1601.04741
+        "at": 1616.48931
       },
       {
         "src": "audio/formal/test-03-cues-03.mp3",
@@ -14652,7 +15224,7 @@
         "role": "cue",
         "part": 3,
         "groupId": "t03-g042",
-        "at": 1608.26359
+        "at": 1623.04197
       },
       {
         "src": "audio/azure-v1/test-03-22.mp3",
@@ -14663,7 +15235,21 @@
         "role": "passage",
         "part": 3,
         "groupId": "t03-g042",
-        "at": 1612.27692
+        "at": 1627.0553,
+        "speakers": [
+          {
+            "speaker": "M1",
+            "locale": "en-NZ",
+            "role": "male",
+            "modelVoice": "en-NZ-MitchellNeural"
+          },
+          {
+            "speaker": "F1",
+            "locale": "en-NZ",
+            "role": "female",
+            "modelVoice": "en-NZ-MollyNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-03.mp3",
@@ -14675,16 +15261,16 @@
         "part": 3,
         "groupId": "t03-g042",
         "questionId": "t03-q062",
-        "at": 1663.85292
+        "at": 1678.6313
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g042",
         "questionId": "t03-q062",
-        "at": 1667.71275
+        "at": 1682.49113
       },
       {
         "src": "audio/formal/test-03-cues-03.mp3",
@@ -14696,16 +15282,16 @@
         "part": 3,
         "groupId": "t03-g042",
         "questionId": "t03-q063",
-        "at": 1674.92893
+        "at": 1689.04379
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g042",
         "questionId": "t03-q063",
-        "at": 1677.78464
+        "at": 1691.8995
       },
       {
         "src": "audio/formal/test-03-cues-03.mp3",
@@ -14717,16 +15303,16 @@
         "part": 3,
         "groupId": "t03-g042",
         "questionId": "t03-q064",
-        "at": 1685.00082
+        "at": 1698.45216
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g042",
         "questionId": "t03-q064",
-        "at": 1688.58615
+        "at": 1702.03749
       },
       {
         "src": "audio/formal/test-03-cues-03.mp3",
@@ -14737,7 +15323,7 @@
         "role": "cue",
         "part": 3,
         "groupId": "t03-g043",
-        "at": 1695.80233
+        "at": 1708.59015
       },
       {
         "src": "audio/azure-v1/test-03-23.mp3",
@@ -14748,7 +15334,21 @@
         "role": "passage",
         "part": 3,
         "groupId": "t03-g043",
-        "at": 1699.92325
+        "at": 1712.71107,
+        "speakers": [
+          {
+            "speaker": "F1",
+            "locale": "en-IE",
+            "role": "female",
+            "modelVoice": "en-IE-EmilyNeural"
+          },
+          {
+            "speaker": "M1",
+            "locale": "en-IE",
+            "role": "male",
+            "modelVoice": "en-IE-ConnorNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-03.mp3",
@@ -14760,16 +15360,16 @@
         "part": 3,
         "groupId": "t03-g043",
         "questionId": "t03-q065",
-        "at": 1752.21925
+        "at": 1765.00707
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g043",
         "questionId": "t03-q065",
-        "at": 1756.00158
+        "at": 1768.7894
       },
       {
         "src": "audio/formal/test-03-cues-04.mp3",
@@ -14781,16 +15381,16 @@
         "part": 3,
         "groupId": "t03-g043",
         "questionId": "t03-q066",
-        "at": 1763.21776
+        "at": 1775.34206
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g043",
         "questionId": "t03-q066",
-        "at": 1766.70068
+        "at": 1778.82498
       },
       {
         "src": "audio/formal/test-03-cues-04.mp3",
@@ -14802,16 +15402,16 @@
         "part": 3,
         "groupId": "t03-g043",
         "questionId": "t03-q067",
-        "at": 1773.91686
+        "at": 1785.37764
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g043",
         "questionId": "t03-q067",
-        "at": 1776.9819
+        "at": 1788.44268
       },
       {
         "src": "audio/formal/test-03-cues-04.mp3",
@@ -14822,7 +15422,7 @@
         "role": "cue",
         "part": 3,
         "groupId": "t03-g044",
-        "at": 1784.19808
+        "at": 1794.99534
       },
       {
         "src": "audio/azure-v1/test-03-24.mp3",
@@ -14833,7 +15433,21 @@
         "role": "passage",
         "part": 3,
         "groupId": "t03-g044",
-        "at": 1788.02458
+        "at": 1798.82184,
+        "speakers": [
+          {
+            "speaker": "M1",
+            "locale": "en-KE",
+            "role": "male",
+            "modelVoice": "en-KE-ChilembaNeural"
+          },
+          {
+            "speaker": "F1",
+            "locale": "en-KE",
+            "role": "female",
+            "modelVoice": "en-KE-AsiliaNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-04.mp3",
@@ -14845,16 +15459,16 @@
         "part": 3,
         "groupId": "t03-g044",
         "questionId": "t03-q068",
-        "at": 1837.41658
+        "at": 1848.21384
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g044",
         "questionId": "t03-q068",
-        "at": 1840.95691
+        "at": 1851.75417
       },
       {
         "src": "audio/formal/test-03-cues-04.mp3",
@@ -14866,16 +15480,16 @@
         "part": 3,
         "groupId": "t03-g044",
         "questionId": "t03-q069",
-        "at": 1848.17309
+        "at": 1858.30683
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g044",
         "questionId": "t03-q069",
-        "at": 1852.23855
+        "at": 1862.37229
       },
       {
         "src": "audio/formal/test-03-cues-04.mp3",
@@ -14887,27 +15501,27 @@
         "part": 3,
         "groupId": "t03-g044",
         "questionId": "t03-q070",
-        "at": 1859.45473
+        "at": 1868.92495
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 3,
         "groupId": "t03-g044",
         "questionId": "t03-q070",
-        "at": 1862.47781
+        "at": 1871.94803
       },
       {
-        "src": "audio/formal/directions-01.mp3",
-        "start": 50.94896,
-        "end": 67.48587,
-        "duration": 16.53692,
+        "src": "audio/formal-v2/narrator-02.mp3",
+        "start": 16.408,
+        "end": 31.384,
+        "duration": 14.976,
         "kind": "audio",
         "role": "direction",
         "part": 4,
         "groupId": "t03-g045",
-        "at": 1869.69399
+        "at": 1878.50069
       },
       {
         "src": "audio/formal/test-03-cues-04.mp3",
@@ -14918,7 +15532,7 @@
         "role": "cue",
         "part": 4,
         "groupId": "t03-g045",
-        "at": 1886.23091
+        "at": 1893.47669
       },
       {
         "src": "audio/azure-v1/test-03-25.mp3",
@@ -14929,7 +15543,15 @@
         "role": "passage",
         "part": 4,
         "groupId": "t03-g045",
-        "at": 1889.63908
+        "at": 1896.88486,
+        "speakers": [
+          {
+            "speaker": "F1",
+            "locale": "en-NG",
+            "role": "female",
+            "modelVoice": "en-NG-EzinneNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-04.mp3",
@@ -14941,16 +15563,16 @@
         "part": 4,
         "groupId": "t03-g045",
         "questionId": "t03-q071",
-        "at": 1936.51108
+        "at": 1943.75686
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g045",
         "questionId": "t03-q071",
-        "at": 1940.50341
+        "at": 1947.74919
       },
       {
         "src": "audio/formal/test-03-cues-04.mp3",
@@ -14962,16 +15584,16 @@
         "part": 4,
         "groupId": "t03-g045",
         "questionId": "t03-q072",
-        "at": 1947.71959
+        "at": 1954.30185
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g045",
         "questionId": "t03-q072",
-        "at": 1950.6953
+        "at": 1957.27756
       },
       {
         "src": "audio/formal/test-03-cues-04.mp3",
@@ -14983,16 +15605,16 @@
         "part": 4,
         "groupId": "t03-g045",
         "questionId": "t03-q073",
-        "at": 1957.91148
+        "at": 1963.83022
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g045",
         "questionId": "t03-q073",
-        "at": 1961.26802
+        "at": 1967.18676
       },
       {
         "src": "audio/formal/test-03-cues-04.mp3",
@@ -15003,7 +15625,7 @@
         "role": "cue",
         "part": 4,
         "groupId": "t03-g046",
-        "at": 1968.4842
+        "at": 1973.73942
       },
       {
         "src": "audio/azure-v1/test-03-26.mp3",
@@ -15014,7 +15636,15 @@
         "role": "passage",
         "part": 4,
         "groupId": "t03-g046",
-        "at": 1972.03207
+        "at": 1977.28729,
+        "speakers": [
+          {
+            "speaker": "M1",
+            "locale": "en-TZ",
+            "role": "male",
+            "modelVoice": "en-TZ-ElimuNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-04.mp3",
@@ -15026,16 +15656,16 @@
         "part": 4,
         "groupId": "t03-g046",
         "questionId": "t03-q074",
-        "at": 2013.60007
+        "at": 2018.85529
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g046",
         "questionId": "t03-q074",
-        "at": 2016.30361
+        "at": 2021.55883
       },
       {
         "src": "audio/formal/test-03-cues-04.mp3",
@@ -15047,16 +15677,16 @@
         "part": 4,
         "groupId": "t03-g046",
         "questionId": "t03-q075",
-        "at": 2023.51979
+        "at": 2028.11149
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g046",
         "questionId": "t03-q075",
-        "at": 2026.27279
+        "at": 2030.86449
       },
       {
         "src": "audio/formal/test-03-cues-04.mp3",
@@ -15068,16 +15698,16 @@
         "part": 4,
         "groupId": "t03-g046",
         "questionId": "t03-q076",
-        "at": 2033.48897
+        "at": 2037.41715
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g046",
         "questionId": "t03-q076",
-        "at": 2036.6928
+        "at": 2040.62098
       },
       {
         "src": "audio/formal/test-03-cues-04.mp3",
@@ -15088,7 +15718,7 @@
         "role": "cue",
         "part": 4,
         "groupId": "t03-g047",
-        "at": 2043.90898
+        "at": 2047.17364
       },
       {
         "src": "audio/azure-v1/test-03-27.mp3",
@@ -15099,7 +15729,15 @@
         "role": "passage",
         "part": 4,
         "groupId": "t03-g047",
-        "at": 2047.50744
+        "at": 2050.7721,
+        "speakers": [
+          {
+            "speaker": "F1",
+            "locale": "en-ZA",
+            "role": "female",
+            "modelVoice": "en-ZA-LeahNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-04.mp3",
@@ -15111,16 +15749,16 @@
         "part": 4,
         "groupId": "t03-g047",
         "questionId": "t03-q077",
-        "at": 2089.96344
+        "at": 2093.2281
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g047",
         "questionId": "t03-q077",
-        "at": 2094.37811
+        "at": 2097.64277
       },
       {
         "src": "audio/formal/test-03-cues-04.mp3",
@@ -15132,16 +15770,16 @@
         "part": 4,
         "groupId": "t03-g047",
         "questionId": "t03-q078",
-        "at": 2101.59429
+        "at": 2104.19543
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g047",
         "questionId": "t03-q078",
-        "at": 2105.36079
+        "at": 2107.96193
       },
       {
         "src": "audio/formal/test-03-cues-04.mp3",
@@ -15153,16 +15791,16 @@
         "part": 4,
         "groupId": "t03-g047",
         "questionId": "t03-q079",
-        "at": 2112.57697
+        "at": 2114.51459
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g047",
         "questionId": "t03-q079",
-        "at": 2115.51247
+        "at": 2117.45009
       },
       {
         "src": "audio/formal/test-03-cues-04.mp3",
@@ -15173,7 +15811,7 @@
         "role": "cue",
         "part": 4,
         "groupId": "t03-g048",
-        "at": 2122.72865
+        "at": 2124.00275
       },
       {
         "src": "audio/azure-v1/test-03-28.mp3",
@@ -15184,7 +15822,15 @@
         "role": "passage",
         "part": 4,
         "groupId": "t03-g048",
-        "at": 2125.63673
+        "at": 2126.91083,
+        "speakers": [
+          {
+            "speaker": "M1",
+            "locale": "en-GB",
+            "role": "male",
+            "modelVoice": "en-GB-RyanNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-05.mp3",
@@ -15196,16 +15842,16 @@
         "part": 4,
         "groupId": "t03-g048",
         "questionId": "t03-q080",
-        "at": 2170.97273
+        "at": 2172.24683
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g048",
         "questionId": "t03-q080",
-        "at": 2173.45098
+        "at": 2174.72508
       },
       {
         "src": "audio/formal/test-03-cues-05.mp3",
@@ -15217,16 +15863,16 @@
         "part": 4,
         "groupId": "t03-g048",
         "questionId": "t03-q081",
-        "at": 2180.66716
+        "at": 2181.27774
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g048",
         "questionId": "t03-q081",
-        "at": 2184.18004
+        "at": 2184.79062
       },
       {
         "src": "audio/formal/test-03-cues-05.mp3",
@@ -15238,16 +15884,16 @@
         "part": 4,
         "groupId": "t03-g048",
         "questionId": "t03-q082",
-        "at": 2191.39622
+        "at": 2191.34328
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g048",
         "questionId": "t03-q082",
-        "at": 2195.27222
+        "at": 2195.21928
       },
       {
         "src": "audio/formal/test-03-cues-05.mp3",
@@ -15258,7 +15904,7 @@
         "role": "cue",
         "part": 4,
         "groupId": "t03-g049",
-        "at": 2202.4884
+        "at": 2201.77194
       },
       {
         "src": "audio/azure-v1/test-03-29.mp3",
@@ -15269,7 +15915,15 @@
         "role": "passage",
         "part": 4,
         "groupId": "t03-g049",
-        "at": 2205.64669
+        "at": 2204.93023,
+        "speakers": [
+          {
+            "speaker": "F1",
+            "locale": "en-CA",
+            "role": "female",
+            "modelVoice": "en-CA-ClaraNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-05.mp3",
@@ -15281,16 +15935,16 @@
         "part": 4,
         "groupId": "t03-g049",
         "questionId": "t03-q083",
-        "at": 2251.05469
+        "at": 2250.33823
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g049",
         "questionId": "t03-q083",
-        "at": 2254.1389
+        "at": 2253.42244
       },
       {
         "src": "audio/formal/test-03-cues-05.mp3",
@@ -15302,16 +15956,16 @@
         "part": 4,
         "groupId": "t03-g049",
         "questionId": "t03-q084",
-        "at": 2261.35508
+        "at": 2259.9751
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g049",
         "questionId": "t03-q084",
-        "at": 2265.0567
+        "at": 2263.67672
       },
       {
         "src": "audio/formal/test-03-cues-05.mp3",
@@ -15323,16 +15977,16 @@
         "part": 4,
         "groupId": "t03-g049",
         "questionId": "t03-q085",
-        "at": 2272.27288
+        "at": 2270.22938
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g049",
         "questionId": "t03-q085",
-        "at": 2275.36392
+        "at": 2273.32042
       },
       {
         "src": "audio/formal/test-03-cues-05.mp3",
@@ -15343,7 +15997,7 @@
         "role": "cue",
         "part": 4,
         "groupId": "t03-g050",
-        "at": 2282.5801
+        "at": 2279.87308
       },
       {
         "src": "audio/azure-v1/test-03-30.mp3",
@@ -15354,7 +16008,15 @@
         "role": "passage",
         "part": 4,
         "groupId": "t03-g050",
-        "at": 2285.73668
+        "at": 2283.02966,
+        "speakers": [
+          {
+            "speaker": "M1",
+            "locale": "en-AU",
+            "role": "male",
+            "modelVoice": "en-AU-WilliamNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-05.mp3",
@@ -15366,16 +16028,16 @@
         "part": 4,
         "groupId": "t03-g050",
         "questionId": "t03-q086",
-        "at": 2325.07268
+        "at": 2322.36566
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g050",
         "questionId": "t03-q086",
-        "at": 2328.13235
+        "at": 2325.42533
       },
       {
         "src": "audio/formal/test-03-cues-05.mp3",
@@ -15387,16 +16049,16 @@
         "part": 4,
         "groupId": "t03-g050",
         "questionId": "t03-q087",
-        "at": 2335.34853
+        "at": 2331.97799
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 9.82898,
         "part": 4,
         "groupId": "t03-g050",
         "questionId": "t03-q087",
-        "at": 2339.05661
+        "at": 2335.68607
       },
       {
         "src": "audio/formal/test-03-cues-05.mp3",
@@ -15408,16 +16070,16 @@
         "part": 4,
         "groupId": "t03-g050",
         "questionId": "t03-q088",
-        "at": 2346.27279
+        "at": 2345.51505
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g050",
         "questionId": "t03-q088",
-        "at": 2350.26592
+        "at": 2349.50818
       },
       {
         "src": "audio/formal/test-03-cues-05.mp3",
@@ -15428,7 +16090,7 @@
         "role": "cue",
         "part": 4,
         "groupId": "t03-g051",
-        "at": 2357.4821
+        "at": 2356.06084
       },
       {
         "src": "audio/azure-v1/test-03-31.mp3",
@@ -15439,7 +16101,15 @@
         "role": "passage",
         "part": 4,
         "groupId": "t03-g051",
-        "at": 2360.79035
+        "at": 2359.36909,
+        "speakers": [
+          {
+            "speaker": "F1",
+            "locale": "en-IN",
+            "role": "female",
+            "modelVoice": "en-IN-NeerjaNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-05.mp3",
@@ -15451,16 +16121,16 @@
         "part": 4,
         "groupId": "t03-g051",
         "questionId": "t03-q089",
-        "at": 2412.46235
+        "at": 2411.04109
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g051",
         "questionId": "t03-q089",
-        "at": 2415.94856
+        "at": 2414.5273
       },
       {
         "src": "audio/formal/test-03-cues-05.mp3",
@@ -15472,16 +16142,16 @@
         "part": 4,
         "groupId": "t03-g051",
         "questionId": "t03-q090",
-        "at": 2423.16474
+        "at": 2421.07996
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g051",
         "questionId": "t03-q090",
-        "at": 2426.59716
+        "at": 2424.51238
       },
       {
         "src": "audio/formal/test-03-cues-05.mp3",
@@ -15493,16 +16163,16 @@
         "part": 4,
         "groupId": "t03-g051",
         "questionId": "t03-q091",
-        "at": 2433.81334
+        "at": 2431.06504
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g051",
         "questionId": "t03-q091",
-        "at": 2437.55859
+        "at": 2434.81029
       },
       {
         "src": "audio/formal/test-03-cues-05.mp3",
@@ -15513,7 +16183,7 @@
         "role": "cue",
         "part": 4,
         "groupId": "t03-g052",
-        "at": 2444.77477
+        "at": 2441.36295
       },
       {
         "src": "audio/azure-v1/test-03-32.mp3",
@@ -15524,7 +16194,15 @@
         "role": "passage",
         "part": 4,
         "groupId": "t03-g052",
-        "at": 2448.08256
+        "at": 2444.67074,
+        "speakers": [
+          {
+            "speaker": "M1",
+            "locale": "en-HK",
+            "role": "male",
+            "modelVoice": "en-HK-SamNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-05.mp3",
@@ -15536,16 +16214,16 @@
         "part": 4,
         "groupId": "t03-g052",
         "questionId": "t03-q092",
-        "at": 2496.27456
+        "at": 2492.86274
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g052",
         "questionId": "t03-q092",
-        "at": 2499.8241
+        "at": 2496.41228
       },
       {
         "src": "audio/formal/test-03-cues-05.mp3",
@@ -15557,16 +16235,16 @@
         "part": 4,
         "groupId": "t03-g052",
         "questionId": "t03-q093",
-        "at": 2507.04028
+        "at": 2502.96494
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g052",
         "questionId": "t03-q093",
-        "at": 2509.88461
+        "at": 2505.80927
       },
       {
         "src": "audio/formal/test-03-cues-05.mp3",
@@ -15578,16 +16256,16 @@
         "part": 4,
         "groupId": "t03-g052",
         "questionId": "t03-q094",
-        "at": 2517.10079
+        "at": 2512.36193
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g052",
         "questionId": "t03-q094",
-        "at": 2519.97804
+        "at": 2515.23918
       },
       {
         "src": "audio/formal/test-03-cues-06.mp3",
@@ -15598,7 +16276,7 @@
         "role": "cue",
         "part": 4,
         "groupId": "t03-g053",
-        "at": 2527.19422
+        "at": 2521.79184
       },
       {
         "src": "audio/azure-v1/test-03-33.mp3",
@@ -15609,7 +16287,15 @@
         "role": "passage",
         "part": 4,
         "groupId": "t03-g053",
-        "at": 2530.57801
+        "at": 2525.17563,
+        "speakers": [
+          {
+            "speaker": "F1",
+            "locale": "en-SG",
+            "role": "female",
+            "modelVoice": "en-SG-LunaNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-06.mp3",
@@ -15621,16 +16307,16 @@
         "part": 4,
         "groupId": "t03-g053",
         "questionId": "t03-q095",
-        "at": 2581.48201
+        "at": 2576.07963
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g053",
         "questionId": "t03-q095",
-        "at": 2585.48518
+        "at": 2580.0828
       },
       {
         "src": "audio/formal/test-03-cues-06.mp3",
@@ -15642,16 +16328,16 @@
         "part": 4,
         "groupId": "t03-g053",
         "questionId": "t03-q096",
-        "at": 2592.70136
+        "at": 2586.63546
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g053",
         "questionId": "t03-q096",
-        "at": 2596.59565
+        "at": 2590.52975
       },
       {
         "src": "audio/formal/test-03-cues-06.mp3",
@@ -15663,16 +16349,16 @@
         "part": 4,
         "groupId": "t03-g053",
         "questionId": "t03-q097",
-        "at": 2603.81183
+        "at": 2597.08241
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g053",
         "questionId": "t03-q097",
-        "at": 2606.85879
+        "at": 2600.12937
       },
       {
         "src": "audio/formal/test-03-cues-06.mp3",
@@ -15683,7 +16369,7 @@
         "role": "cue",
         "part": 4,
         "groupId": "t03-g054",
-        "at": 2614.07497
+        "at": 2606.68203
       },
       {
         "src": "audio/azure-v1/test-03-34.mp3",
@@ -15694,7 +16380,15 @@
         "role": "passage",
         "part": 4,
         "groupId": "t03-g054",
-        "at": 2617.46005
+        "at": 2610.06711,
+        "speakers": [
+          {
+            "speaker": "M1",
+            "locale": "en-PH",
+            "role": "male",
+            "modelVoice": "en-PH-JamesNeural"
+          }
+        ]
       },
       {
         "src": "audio/formal/test-03-cues-06.mp3",
@@ -15706,16 +16400,16 @@
         "part": 4,
         "groupId": "t03-g054",
         "questionId": "t03-q098",
-        "at": 2667.52405
+        "at": 2660.13111
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g054",
         "questionId": "t03-q098",
-        "at": 2670.37247
+        "at": 2662.97953
       },
       {
         "src": "audio/formal/test-03-cues-06.mp3",
@@ -15727,16 +16421,16 @@
         "part": 4,
         "groupId": "t03-g054",
         "questionId": "t03-q099",
-        "at": 2677.58865
+        "at": 2669.53219
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.21618,
+        "duration": 6.55266,
         "part": 4,
         "groupId": "t03-g054",
         "questionId": "t03-q099",
-        "at": 2681.58698
+        "at": 2673.53052
       },
       {
         "src": "audio/formal/test-03-cues-06.mp3",
@@ -15748,19 +16442,30 @@
         "part": 4,
         "groupId": "t03-g054",
         "questionId": "t03-q100",
-        "at": 2688.80316
+        "at": 2680.08318
       },
       {
         "kind": "silence",
         "role": "answer",
-        "duration": 7.2164699999999495,
+        "duration": 6.5524499999998485,
         "part": 4,
         "groupId": "t03-g054",
         "questionId": "t03-q100",
-        "at": 2692.78353
+        "at": 2684.06355
+      },
+      {
+        "src": "audio/formal-v2/narrator-03.mp3",
+        "start": 33.232,
+        "end": 42.616,
+        "duration": 9.384,
+        "kind": "audio",
+        "role": "closing",
+        "part": 4,
+        "groupId": "t03-g054",
+        "at": 2690.616
       }
     ],
-    "audioEdition": "azure-1"
+    "audioEdition": "toeic-1"
   },
   "previousListeningPlan": {
     "schemaVersion": 1,
@@ -18729,5 +19434,2976 @@
         "at": 2689.32178
       }
     ]
+  },
+  "alternateListeningPlans": {
+    "azure-1": {
+      "schemaVersion": 1,
+      "testId": "test-03",
+      "duration": 2700,
+      "timing": "Original practice pacing; not an ETS recording or official timing specification.",
+      "frames": [
+        {
+          "src": "audio/formal/directions-01.mp3",
+          "start": 0.25,
+          "end": 21.47246,
+          "duration": 21.22246,
+          "kind": "audio",
+          "role": "direction",
+          "part": 1,
+          "groupId": "t03-g001",
+          "at": 0.0
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 0.25,
+          "end": 1.01471,
+          "duration": 0.76471,
+          "kind": "audio",
+          "role": "cue",
+          "part": 1,
+          "groupId": "t03-g001",
+          "at": 21.22246
+        },
+        {
+          "src": "audio/azure-v1/test-03-01.mp3",
+          "start": 0.5,
+          "end": 20.108,
+          "duration": 19.608,
+          "kind": "audio",
+          "role": "passage",
+          "part": 1,
+          "groupId": "t03-g001",
+          "at": 21.98717
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 1,
+          "groupId": "t03-g001",
+          "questionId": "t03-q001",
+          "at": 41.59517
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 1.26471,
+          "end": 2.10425,
+          "duration": 0.83954,
+          "kind": "audio",
+          "role": "cue",
+          "part": 1,
+          "groupId": "t03-g002",
+          "at": 46.10528
+        },
+        {
+          "src": "audio/azure-v1/test-03-01.mp3",
+          "start": 20.608,
+          "end": 37.936,
+          "duration": 17.328,
+          "kind": "audio",
+          "role": "passage",
+          "part": 1,
+          "groupId": "t03-g002",
+          "at": 46.94482
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 1,
+          "groupId": "t03-g002",
+          "questionId": "t03-q002",
+          "at": 64.27282
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 2.35425,
+          "end": 3.18483,
+          "duration": 0.83058,
+          "kind": "audio",
+          "role": "cue",
+          "part": 1,
+          "groupId": "t03-g003",
+          "at": 68.78293
+        },
+        {
+          "src": "audio/azure-v1/test-03-01.mp3",
+          "start": 38.436,
+          "end": 58.02,
+          "duration": 19.584,
+          "kind": "audio",
+          "role": "passage",
+          "part": 1,
+          "groupId": "t03-g003",
+          "at": 69.61351
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 1,
+          "groupId": "t03-g003",
+          "questionId": "t03-q003",
+          "at": 89.19751
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 3.43483,
+          "end": 4.23721,
+          "duration": 0.80237,
+          "kind": "audio",
+          "role": "cue",
+          "part": 1,
+          "groupId": "t03-g004",
+          "at": 93.70762
+        },
+        {
+          "src": "audio/azure-v1/test-03-02.mp3",
+          "start": 0.5,
+          "end": 17.924,
+          "duration": 17.424,
+          "kind": "audio",
+          "role": "passage",
+          "part": 1,
+          "groupId": "t03-g004",
+          "at": 94.50999
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 1,
+          "groupId": "t03-g004",
+          "questionId": "t03-q004",
+          "at": 111.93399
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 4.48721,
+          "end": 5.38146,
+          "duration": 0.89425,
+          "kind": "audio",
+          "role": "cue",
+          "part": 1,
+          "groupId": "t03-g005",
+          "at": 116.4441
+        },
+        {
+          "src": "audio/azure-v1/test-03-02.mp3",
+          "start": 18.424,
+          "end": 36.352,
+          "duration": 17.928,
+          "kind": "audio",
+          "role": "passage",
+          "part": 1,
+          "groupId": "t03-g005",
+          "at": 117.33835
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 1,
+          "groupId": "t03-g005",
+          "questionId": "t03-q005",
+          "at": 135.26635
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 5.63146,
+          "end": 6.51867,
+          "duration": 0.88721,
+          "kind": "audio",
+          "role": "cue",
+          "part": 1,
+          "groupId": "t03-g006",
+          "at": 139.77646
+        },
+        {
+          "src": "audio/azure-v1/test-03-02.mp3",
+          "start": 36.852,
+          "end": 56.556,
+          "duration": 19.704,
+          "kind": "audio",
+          "role": "passage",
+          "part": 1,
+          "groupId": "t03-g006",
+          "at": 140.66367
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 1,
+          "groupId": "t03-g006",
+          "questionId": "t03-q006",
+          "at": 160.36767
+        },
+        {
+          "src": "audio/formal/directions-01.mp3",
+          "start": 21.72246,
+          "end": 32.69371,
+          "duration": 10.97125,
+          "kind": "audio",
+          "role": "direction",
+          "part": 2,
+          "groupId": "t03-g007",
+          "at": 164.87778
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 6.76867,
+          "end": 7.64404,
+          "duration": 0.87538,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g007",
+          "at": 175.84903
+        },
+        {
+          "src": "audio/azure-v1/test-03-03.mp3",
+          "start": 0.5,
+          "end": 16.028,
+          "duration": 15.528,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g007",
+          "at": 176.72441
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g007",
+          "questionId": "t03-q007",
+          "at": 192.25241
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 7.89404,
+          "end": 8.71804,
+          "duration": 0.824,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g008",
+          "at": 196.76252
+        },
+        {
+          "src": "audio/azure-v1/test-03-03.mp3",
+          "start": 16.528,
+          "end": 33.904,
+          "duration": 17.376,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g008",
+          "at": 197.58652
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g008",
+          "questionId": "t03-q008",
+          "at": 214.96252
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 8.96804,
+          "end": 9.794,
+          "duration": 0.82596,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g009",
+          "at": 219.47263
+        },
+        {
+          "src": "audio/azure-v1/test-03-03.mp3",
+          "start": 34.404,
+          "end": 51.468,
+          "duration": 17.064,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g009",
+          "at": 220.29859
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g009",
+          "questionId": "t03-q009",
+          "at": 237.36259
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 10.044,
+          "end": 10.86983,
+          "duration": 0.82583,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g010",
+          "at": 241.8727
+        },
+        {
+          "src": "audio/azure-v1/test-03-04.mp3",
+          "start": 0.5,
+          "end": 16.94,
+          "duration": 16.44,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g010",
+          "at": 242.69853
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g010",
+          "questionId": "t03-q010",
+          "at": 259.13853
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 11.11983,
+          "end": 12.06871,
+          "duration": 0.94888,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g011",
+          "at": 263.64864
+        },
+        {
+          "src": "audio/azure-v1/test-03-04.mp3",
+          "start": 17.44,
+          "end": 34.792,
+          "duration": 17.352,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g011",
+          "at": 264.59752
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g011",
+          "questionId": "t03-q011",
+          "at": 281.94952
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 12.31871,
+          "end": 13.26212,
+          "duration": 0.94342,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g012",
+          "at": 286.45963
+        },
+        {
+          "src": "audio/azure-v1/test-03-04.mp3",
+          "start": 35.292,
+          "end": 53.772,
+          "duration": 18.48,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g012",
+          "at": 287.40305
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g012",
+          "questionId": "t03-q012",
+          "at": 305.88305
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 13.51212,
+          "end": 14.59388,
+          "duration": 1.08175,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g013",
+          "at": 310.39316
+        },
+        {
+          "src": "audio/azure-v1/test-03-05.mp3",
+          "start": 0.5,
+          "end": 16.796,
+          "duration": 16.296,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g013",
+          "at": 311.47491
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g013",
+          "questionId": "t03-q013",
+          "at": 327.77091
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 14.84388,
+          "end": 15.84771,
+          "duration": 1.00383,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g014",
+          "at": 332.28102
+        },
+        {
+          "src": "audio/azure-v1/test-03-05.mp3",
+          "start": 17.296,
+          "end": 34.72,
+          "duration": 17.424,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g014",
+          "at": 333.28485
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g014",
+          "questionId": "t03-q014",
+          "at": 350.70885
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 16.09771,
+          "end": 17.09471,
+          "duration": 0.997,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g015",
+          "at": 355.21896
+        },
+        {
+          "src": "audio/azure-v1/test-03-05.mp3",
+          "start": 35.22,
+          "end": 52.428,
+          "duration": 17.208,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g015",
+          "at": 356.21596
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g015",
+          "questionId": "t03-q015",
+          "at": 373.42396
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 17.34471,
+          "end": 18.38175,
+          "duration": 1.03704,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g016",
+          "at": 377.93407
+        },
+        {
+          "src": "audio/azure-v1/test-03-06.mp3",
+          "start": 0.5,
+          "end": 17.444,
+          "duration": 16.944,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g016",
+          "at": 378.97111
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g016",
+          "questionId": "t03-q016",
+          "at": 395.91511
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 18.63175,
+          "end": 19.7295,
+          "duration": 1.09775,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g017",
+          "at": 400.42522
+        },
+        {
+          "src": "audio/azure-v1/test-03-06.mp3",
+          "start": 17.944,
+          "end": 35.32,
+          "duration": 17.376,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g017",
+          "at": 401.52297
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g017",
+          "questionId": "t03-q017",
+          "at": 418.89897
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 19.9795,
+          "end": 20.95508,
+          "duration": 0.97558,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g018",
+          "at": 423.40908
+        },
+        {
+          "src": "audio/azure-v1/test-03-06.mp3",
+          "start": 35.82,
+          "end": 53.7,
+          "duration": 17.88,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g018",
+          "at": 424.38466
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g018",
+          "questionId": "t03-q018",
+          "at": 442.26466
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 21.20508,
+          "end": 22.25483,
+          "duration": 1.04975,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g019",
+          "at": 446.77477
+        },
+        {
+          "src": "audio/azure-v1/test-03-07.mp3",
+          "start": 0.5,
+          "end": 17.084,
+          "duration": 16.584,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g019",
+          "at": 447.82452
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g019",
+          "questionId": "t03-q019",
+          "at": 464.40852
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 22.50483,
+          "end": 23.47275,
+          "duration": 0.96792,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g020",
+          "at": 468.91863
+        },
+        {
+          "src": "audio/azure-v1/test-03-07.mp3",
+          "start": 17.584,
+          "end": 33.856,
+          "duration": 16.272,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g020",
+          "at": 469.88655
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g020",
+          "questionId": "t03-q020",
+          "at": 486.15855
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 23.72275,
+          "end": 24.83521,
+          "duration": 1.11246,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g021",
+          "at": 490.66866
+        },
+        {
+          "src": "audio/azure-v1/test-03-07.mp3",
+          "start": 34.356,
+          "end": 50.148,
+          "duration": 15.792,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g021",
+          "at": 491.78112
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g021",
+          "questionId": "t03-q021",
+          "at": 507.57312
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 25.08521,
+          "end": 26.19542,
+          "duration": 1.11021,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g022",
+          "at": 512.08323
+        },
+        {
+          "src": "audio/azure-v1/test-03-08.mp3",
+          "start": 0.5,
+          "end": 16.388,
+          "duration": 15.888,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g022",
+          "at": 513.19344
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g022",
+          "questionId": "t03-q022",
+          "at": 529.08144
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 26.44542,
+          "end": 27.63458,
+          "duration": 1.18917,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g023",
+          "at": 533.59155
+        },
+        {
+          "src": "audio/azure-v1/test-03-08.mp3",
+          "start": 16.888,
+          "end": 36.544,
+          "duration": 19.656,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g023",
+          "at": 534.78072
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g023",
+          "questionId": "t03-q023",
+          "at": 554.43672
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 27.88458,
+          "end": 29.06821,
+          "duration": 1.18362,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g024",
+          "at": 558.94683
+        },
+        {
+          "src": "audio/azure-v1/test-03-08.mp3",
+          "start": 37.044,
+          "end": 55.044,
+          "duration": 18.0,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g024",
+          "at": 560.13045
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g024",
+          "questionId": "t03-q024",
+          "at": 578.13045
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 29.31821,
+          "end": 30.50158,
+          "duration": 1.18338,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g025",
+          "at": 582.64056
+        },
+        {
+          "src": "audio/azure-v1/test-03-09.mp3",
+          "start": 0.5,
+          "end": 18.62,
+          "duration": 18.12,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g025",
+          "at": 583.82394
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g025",
+          "questionId": "t03-q025",
+          "at": 601.94394
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 30.75158,
+          "end": 31.93379,
+          "duration": 1.18221,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g026",
+          "at": 606.45405
+        },
+        {
+          "src": "audio/azure-v1/test-03-09.mp3",
+          "start": 19.12,
+          "end": 35.968,
+          "duration": 16.848,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g026",
+          "at": 607.63626
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g026",
+          "questionId": "t03-q026",
+          "at": 624.48426
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 32.18379,
+          "end": 33.39988,
+          "duration": 1.21608,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g027",
+          "at": 628.99437
+        },
+        {
+          "src": "audio/azure-v1/test-03-09.mp3",
+          "start": 36.468,
+          "end": 53.604,
+          "duration": 17.136,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g027",
+          "at": 630.21045
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g027",
+          "questionId": "t03-q027",
+          "at": 647.34645
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 33.64988,
+          "end": 34.77158,
+          "duration": 1.12171,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g028",
+          "at": 651.85656
+        },
+        {
+          "src": "audio/azure-v1/test-03-10.mp3",
+          "start": 0.5,
+          "end": 18.836,
+          "duration": 18.336,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g028",
+          "at": 652.97827
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g028",
+          "questionId": "t03-q028",
+          "at": 671.31427
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 35.02158,
+          "end": 36.16079,
+          "duration": 1.13921,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g029",
+          "at": 675.82438
+        },
+        {
+          "src": "audio/azure-v1/test-03-10.mp3",
+          "start": 19.336,
+          "end": 36.352,
+          "duration": 17.016,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g029",
+          "at": 676.96359
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g029",
+          "questionId": "t03-q029",
+          "at": 693.97959
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 36.41079,
+          "end": 37.30179,
+          "duration": 0.891,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g030",
+          "at": 698.4897
+        },
+        {
+          "src": "audio/azure-v1/test-03-10.mp3",
+          "start": 36.852,
+          "end": 54.036,
+          "duration": 17.184,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g030",
+          "at": 699.3807
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g030",
+          "questionId": "t03-q030",
+          "at": 716.5647
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 37.55179,
+          "end": 38.64229,
+          "duration": 1.0905,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g031",
+          "at": 721.07481
+        },
+        {
+          "src": "audio/azure-v1/test-03-11.mp3",
+          "start": 0.5,
+          "end": 17.804,
+          "duration": 17.304,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g031",
+          "at": 722.16531
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.51011,
+          "part": 2,
+          "groupId": "t03-g031",
+          "questionId": "t03-q031",
+          "at": 739.46931
+        },
+        {
+          "src": "audio/formal/directions-01.mp3",
+          "start": 32.94371,
+          "end": 50.69896,
+          "duration": 17.75525,
+          "kind": "audio",
+          "role": "direction",
+          "part": 3,
+          "groupId": "t03-g032",
+          "at": 743.97942
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 38.89229,
+          "end": 42.78983,
+          "duration": 3.89754,
+          "kind": "audio",
+          "role": "cue",
+          "part": 3,
+          "groupId": "t03-g032",
+          "at": 761.73467
+        },
+        {
+          "src": "audio/azure-v1/test-03-12.mp3",
+          "start": 0.5,
+          "end": 47.54,
+          "duration": 47.04,
+          "kind": "audio",
+          "role": "passage",
+          "part": 3,
+          "groupId": "t03-g032",
+          "at": 765.63221
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 43.03983,
+          "end": 45.96162,
+          "duration": 2.92179,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g032",
+          "questionId": "t03-q032",
+          "at": 812.67221
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g032",
+          "questionId": "t03-q032",
+          "at": 815.594
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 46.21162,
+          "end": 49.41887,
+          "duration": 3.20725,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g032",
+          "questionId": "t03-q033",
+          "at": 822.81018
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g032",
+          "questionId": "t03-q033",
+          "at": 826.01743
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 49.66887,
+          "end": 52.78704,
+          "duration": 3.11817,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g032",
+          "questionId": "t03-q034",
+          "at": 833.23361
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g032",
+          "questionId": "t03-q034",
+          "at": 836.35178
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 53.03704,
+          "end": 57.10883,
+          "duration": 4.07179,
+          "kind": "audio",
+          "role": "cue",
+          "part": 3,
+          "groupId": "t03-g033",
+          "at": 843.56796
+        },
+        {
+          "src": "audio/azure-v1/test-03-13.mp3",
+          "start": 0.5,
+          "end": 47.972,
+          "duration": 47.472,
+          "kind": "audio",
+          "role": "passage",
+          "part": 3,
+          "groupId": "t03-g033",
+          "at": 847.63975
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 57.35883,
+          "end": 60.48208,
+          "duration": 3.12325,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g033",
+          "questionId": "t03-q035",
+          "at": 895.11175
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g033",
+          "questionId": "t03-q035",
+          "at": 898.235
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 60.73208,
+          "end": 63.77258,
+          "duration": 3.0405,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g033",
+          "questionId": "t03-q036",
+          "at": 905.45118
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g033",
+          "questionId": "t03-q036",
+          "at": 908.49168
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 64.02258,
+          "end": 66.33225,
+          "duration": 2.30967,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g033",
+          "questionId": "t03-q037",
+          "at": 915.70786
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g033",
+          "questionId": "t03-q037",
+          "at": 918.01753
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 66.58225,
+          "end": 70.16067,
+          "duration": 3.57842,
+          "kind": "audio",
+          "role": "cue",
+          "part": 3,
+          "groupId": "t03-g034",
+          "at": 925.23371
+        },
+        {
+          "src": "audio/azure-v1/test-03-14.mp3",
+          "start": 0.5,
+          "end": 48.788,
+          "duration": 48.288,
+          "kind": "audio",
+          "role": "passage",
+          "part": 3,
+          "groupId": "t03-g034",
+          "at": 928.81213
+        },
+        {
+          "src": "audio/formal/test-03-cues-02.mp3",
+          "start": 0.25,
+          "end": 3.95396,
+          "duration": 3.70396,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g034",
+          "questionId": "t03-q038",
+          "at": 977.10013
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g034",
+          "questionId": "t03-q038",
+          "at": 980.80409
+        },
+        {
+          "src": "audio/formal/test-03-cues-02.mp3",
+          "start": 4.20396,
+          "end": 6.40008,
+          "duration": 2.19612,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g034",
+          "questionId": "t03-q039",
+          "at": 988.02027
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g034",
+          "questionId": "t03-q039",
+          "at": 990.21639
+        },
+        {
+          "src": "audio/formal/test-03-cues-02.mp3",
+          "start": 6.65008,
+          "end": 9.39679,
+          "duration": 2.74671,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g034",
+          "questionId": "t03-q040",
+          "at": 997.43257
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g034",
+          "questionId": "t03-q040",
+          "at": 1000.17928
+        },
+        {
+          "src": "audio/formal/test-03-cues-02.mp3",
+          "start": 9.64679,
+          "end": 13.46975,
+          "duration": 3.82296,
+          "kind": "audio",
+          "role": "cue",
+          "part": 3,
+          "groupId": "t03-g035",
+          "at": 1007.39546
+        },
+        {
+          "src": "audio/azure-v1/test-03-15.mp3",
+          "start": 0.5,
+          "end": 48.26,
+          "duration": 47.76,
+          "kind": "audio",
+          "role": "passage",
+          "part": 3,
+          "groupId": "t03-g035",
+          "at": 1011.21842
+        },
+        {
+          "src": "audio/formal/test-03-cues-02.mp3",
+          "start": 13.71975,
+          "end": 16.10325,
+          "duration": 2.3835,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g035",
+          "questionId": "t03-q041",
+          "at": 1058.97842
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g035",
+          "questionId": "t03-q041",
+          "at": 1061.36192
+        },
+        {
+          "src": "audio/formal/test-03-cues-02.mp3",
+          "start": 16.35325,
+          "end": 20.22917,
+          "duration": 3.87592,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g035",
+          "questionId": "t03-q042",
+          "at": 1068.5781
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g035",
+          "questionId": "t03-q042",
+          "at": 1072.45402
+        },
+        {
+          "src": "audio/formal/test-03-cues-02.mp3",
+          "start": 20.47917,
+          "end": 24.21383,
+          "duration": 3.73467,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g035",
+          "questionId": "t03-q043",
+          "at": 1079.6702
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g035",
+          "questionId": "t03-q043",
+          "at": 1083.40487
+        },
+        {
+          "src": "audio/formal/test-03-cues-02.mp3",
+          "start": 24.46383,
+          "end": 28.42958,
+          "duration": 3.96575,
+          "kind": "audio",
+          "role": "cue",
+          "part": 3,
+          "groupId": "t03-g036",
+          "at": 1090.62105
+        },
+        {
+          "src": "audio/azure-v1/test-03-16.mp3",
+          "start": 0.5,
+          "end": 44.732,
+          "duration": 44.232,
+          "kind": "audio",
+          "role": "passage",
+          "part": 3,
+          "groupId": "t03-g036",
+          "at": 1094.5868
+        },
+        {
+          "src": "audio/formal/test-03-cues-02.mp3",
+          "start": 28.67958,
+          "end": 32.19383,
+          "duration": 3.51425,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g036",
+          "questionId": "t03-q044",
+          "at": 1138.8188
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g036",
+          "questionId": "t03-q044",
+          "at": 1142.33305
+        },
+        {
+          "src": "audio/formal/test-03-cues-02.mp3",
+          "start": 32.44383,
+          "end": 35.87975,
+          "duration": 3.43592,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g036",
+          "questionId": "t03-q045",
+          "at": 1149.54923
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g036",
+          "questionId": "t03-q045",
+          "at": 1152.98515
+        },
+        {
+          "src": "audio/formal/test-03-cues-02.mp3",
+          "start": 36.12975,
+          "end": 40.30721,
+          "duration": 4.17746,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g036",
+          "questionId": "t03-q046",
+          "at": 1160.20133
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g036",
+          "questionId": "t03-q046",
+          "at": 1164.37879
+        },
+        {
+          "src": "audio/formal/test-03-cues-02.mp3",
+          "start": 40.55721,
+          "end": 44.52808,
+          "duration": 3.97087,
+          "kind": "audio",
+          "role": "cue",
+          "part": 3,
+          "groupId": "t03-g037",
+          "at": 1171.59497
+        },
+        {
+          "src": "audio/azure-v1/test-03-17.mp3",
+          "start": 0.5,
+          "end": 55.028,
+          "duration": 54.528,
+          "kind": "audio",
+          "role": "passage",
+          "part": 3,
+          "groupId": "t03-g037",
+          "at": 1175.56584
+        },
+        {
+          "src": "audio/formal/test-03-cues-02.mp3",
+          "start": 44.77808,
+          "end": 48.42867,
+          "duration": 3.65058,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g037",
+          "questionId": "t03-q047",
+          "at": 1230.09384
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g037",
+          "questionId": "t03-q047",
+          "at": 1233.74442
+        },
+        {
+          "src": "audio/formal/test-03-cues-02.mp3",
+          "start": 48.67867,
+          "end": 51.011,
+          "duration": 2.33233,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g037",
+          "questionId": "t03-q048",
+          "at": 1240.9606
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g037",
+          "questionId": "t03-q048",
+          "at": 1243.29293
+        },
+        {
+          "src": "audio/formal/test-03-cues-02.mp3",
+          "start": 51.261,
+          "end": 53.90654,
+          "duration": 2.64554,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g037",
+          "questionId": "t03-q049",
+          "at": 1250.50911
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g037",
+          "questionId": "t03-q049",
+          "at": 1253.15465
+        },
+        {
+          "src": "audio/formal/test-03-cues-02.mp3",
+          "start": 54.15654,
+          "end": 57.75896,
+          "duration": 3.60242,
+          "kind": "audio",
+          "role": "cue",
+          "part": 3,
+          "groupId": "t03-g038",
+          "at": 1260.37083
+        },
+        {
+          "src": "audio/azure-v1/test-03-18.mp3",
+          "start": 0.5,
+          "end": 53.3,
+          "duration": 52.8,
+          "kind": "audio",
+          "role": "passage",
+          "part": 3,
+          "groupId": "t03-g038",
+          "at": 1263.97325
+        },
+        {
+          "src": "audio/formal/test-03-cues-02.mp3",
+          "start": 58.00896,
+          "end": 60.57512,
+          "duration": 2.56617,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g038",
+          "questionId": "t03-q050",
+          "at": 1316.77325
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g038",
+          "questionId": "t03-q050",
+          "at": 1319.33942
+        },
+        {
+          "src": "audio/formal/test-03-cues-02.mp3",
+          "start": 60.82512,
+          "end": 64.46075,
+          "duration": 3.63563,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g038",
+          "questionId": "t03-q051",
+          "at": 1326.5556
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g038",
+          "questionId": "t03-q051",
+          "at": 1330.19123
+        },
+        {
+          "src": "audio/formal/test-03-cues-02.mp3",
+          "start": 64.71075,
+          "end": 69.03567,
+          "duration": 4.32492,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g038",
+          "questionId": "t03-q052",
+          "at": 1337.40741
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g038",
+          "questionId": "t03-q052",
+          "at": 1341.73233
+        },
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 0.25,
+          "end": 4.17283,
+          "duration": 3.92283,
+          "kind": "audio",
+          "role": "cue",
+          "part": 3,
+          "groupId": "t03-g039",
+          "at": 1348.94851
+        },
+        {
+          "src": "audio/azure-v1/test-03-19.mp3",
+          "start": 0.5,
+          "end": 52.196,
+          "duration": 51.696,
+          "kind": "audio",
+          "role": "passage",
+          "part": 3,
+          "groupId": "t03-g039",
+          "at": 1352.87134
+        },
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 4.42283,
+          "end": 7.26817,
+          "duration": 2.84533,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g039",
+          "questionId": "t03-q053",
+          "at": 1404.56734
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g039",
+          "questionId": "t03-q053",
+          "at": 1407.41267
+        },
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 7.51817,
+          "end": 10.09362,
+          "duration": 2.57546,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g039",
+          "questionId": "t03-q054",
+          "at": 1414.62885
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g039",
+          "questionId": "t03-q054",
+          "at": 1417.20431
+        },
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 10.34362,
+          "end": 14.57883,
+          "duration": 4.23521,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g039",
+          "questionId": "t03-q055",
+          "at": 1424.42049
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g039",
+          "questionId": "t03-q055",
+          "at": 1428.6557
+        },
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 14.82883,
+          "end": 18.733,
+          "duration": 3.90417,
+          "kind": "audio",
+          "role": "cue",
+          "part": 3,
+          "groupId": "t03-g040",
+          "at": 1435.87188
+        },
+        {
+          "src": "audio/azure-v1/test-03-20.mp3",
+          "start": 0.5,
+          "end": 53.156,
+          "duration": 52.656,
+          "kind": "audio",
+          "role": "passage",
+          "part": 3,
+          "groupId": "t03-g040",
+          "at": 1439.77605
+        },
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 18.983,
+          "end": 22.721,
+          "duration": 3.738,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g040",
+          "questionId": "t03-q056",
+          "at": 1492.43205
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g040",
+          "questionId": "t03-q056",
+          "at": 1496.17005
+        },
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 22.971,
+          "end": 27.06321,
+          "duration": 4.09221,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g040",
+          "questionId": "t03-q057",
+          "at": 1503.38623
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g040",
+          "questionId": "t03-q057",
+          "at": 1507.47844
+        },
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 27.31321,
+          "end": 30.67283,
+          "duration": 3.35962,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g040",
+          "questionId": "t03-q058",
+          "at": 1514.69462
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g040",
+          "questionId": "t03-q058",
+          "at": 1518.05424
+        },
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 30.92283,
+          "end": 34.93608,
+          "duration": 4.01325,
+          "kind": "audio",
+          "role": "cue",
+          "part": 3,
+          "groupId": "t03-g041",
+          "at": 1525.27042
+        },
+        {
+          "src": "audio/azure-v1/test-03-21.mp3",
+          "start": 0.5,
+          "end": 48.188,
+          "duration": 47.688,
+          "kind": "audio",
+          "role": "passage",
+          "part": 3,
+          "groupId": "t03-g041",
+          "at": 1529.28367
+        },
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 35.18608,
+          "end": 38.33725,
+          "duration": 3.15117,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g041",
+          "questionId": "t03-q059",
+          "at": 1576.97167
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g041",
+          "questionId": "t03-q059",
+          "at": 1580.12284
+        },
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 38.58725,
+          "end": 41.31842,
+          "duration": 2.73117,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g041",
+          "questionId": "t03-q060",
+          "at": 1587.33902
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g041",
+          "questionId": "t03-q060",
+          "at": 1590.07019
+        },
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 41.56842,
+          "end": 45.32946,
+          "duration": 3.76104,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g041",
+          "questionId": "t03-q061",
+          "at": 1597.28637
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g041",
+          "questionId": "t03-q061",
+          "at": 1601.04741
+        },
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 45.57946,
+          "end": 49.59279,
+          "duration": 4.01333,
+          "kind": "audio",
+          "role": "cue",
+          "part": 3,
+          "groupId": "t03-g042",
+          "at": 1608.26359
+        },
+        {
+          "src": "audio/azure-v1/test-03-22.mp3",
+          "start": 0.5,
+          "end": 52.076,
+          "duration": 51.576,
+          "kind": "audio",
+          "role": "passage",
+          "part": 3,
+          "groupId": "t03-g042",
+          "at": 1612.27692
+        },
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 49.84279,
+          "end": 53.70262,
+          "duration": 3.85983,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g042",
+          "questionId": "t03-q062",
+          "at": 1663.85292
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g042",
+          "questionId": "t03-q062",
+          "at": 1667.71275
+        },
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 53.95262,
+          "end": 56.80833,
+          "duration": 2.85571,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g042",
+          "questionId": "t03-q063",
+          "at": 1674.92893
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g042",
+          "questionId": "t03-q063",
+          "at": 1677.78464
+        },
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 57.05833,
+          "end": 60.64367,
+          "duration": 3.58533,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g042",
+          "questionId": "t03-q064",
+          "at": 1685.00082
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g042",
+          "questionId": "t03-q064",
+          "at": 1688.58615
+        },
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 60.89367,
+          "end": 65.01458,
+          "duration": 4.12092,
+          "kind": "audio",
+          "role": "cue",
+          "part": 3,
+          "groupId": "t03-g043",
+          "at": 1695.80233
+        },
+        {
+          "src": "audio/azure-v1/test-03-23.mp3",
+          "start": 0.5,
+          "end": 52.796,
+          "duration": 52.296,
+          "kind": "audio",
+          "role": "passage",
+          "part": 3,
+          "groupId": "t03-g043",
+          "at": 1699.92325
+        },
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 65.26458,
+          "end": 69.04692,
+          "duration": 3.78233,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g043",
+          "questionId": "t03-q065",
+          "at": 1752.21925
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g043",
+          "questionId": "t03-q065",
+          "at": 1756.00158
+        },
+        {
+          "src": "audio/formal/test-03-cues-04.mp3",
+          "start": 0.25,
+          "end": 3.73292,
+          "duration": 3.48292,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g043",
+          "questionId": "t03-q066",
+          "at": 1763.21776
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g043",
+          "questionId": "t03-q066",
+          "at": 1766.70068
+        },
+        {
+          "src": "audio/formal/test-03-cues-04.mp3",
+          "start": 3.98292,
+          "end": 7.04796,
+          "duration": 3.06504,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g043",
+          "questionId": "t03-q067",
+          "at": 1773.91686
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g043",
+          "questionId": "t03-q067",
+          "at": 1776.9819
+        },
+        {
+          "src": "audio/formal/test-03-cues-04.mp3",
+          "start": 7.29796,
+          "end": 11.12446,
+          "duration": 3.8265,
+          "kind": "audio",
+          "role": "cue",
+          "part": 3,
+          "groupId": "t03-g044",
+          "at": 1784.19808
+        },
+        {
+          "src": "audio/azure-v1/test-03-24.mp3",
+          "start": 0.5,
+          "end": 49.892,
+          "duration": 49.392,
+          "kind": "audio",
+          "role": "passage",
+          "part": 3,
+          "groupId": "t03-g044",
+          "at": 1788.02458
+        },
+        {
+          "src": "audio/formal/test-03-cues-04.mp3",
+          "start": 11.37446,
+          "end": 14.91479,
+          "duration": 3.54033,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g044",
+          "questionId": "t03-q068",
+          "at": 1837.41658
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g044",
+          "questionId": "t03-q068",
+          "at": 1840.95691
+        },
+        {
+          "src": "audio/formal/test-03-cues-04.mp3",
+          "start": 15.16479,
+          "end": 19.23025,
+          "duration": 4.06546,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g044",
+          "questionId": "t03-q069",
+          "at": 1848.17309
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g044",
+          "questionId": "t03-q069",
+          "at": 1852.23855
+        },
+        {
+          "src": "audio/formal/test-03-cues-04.mp3",
+          "start": 19.48025,
+          "end": 22.50333,
+          "duration": 3.02308,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g044",
+          "questionId": "t03-q070",
+          "at": 1859.45473
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 3,
+          "groupId": "t03-g044",
+          "questionId": "t03-q070",
+          "at": 1862.47781
+        },
+        {
+          "src": "audio/formal/directions-01.mp3",
+          "start": 50.94896,
+          "end": 67.48587,
+          "duration": 16.53692,
+          "kind": "audio",
+          "role": "direction",
+          "part": 4,
+          "groupId": "t03-g045",
+          "at": 1869.69399
+        },
+        {
+          "src": "audio/formal/test-03-cues-04.mp3",
+          "start": 22.75333,
+          "end": 26.1615,
+          "duration": 3.40817,
+          "kind": "audio",
+          "role": "cue",
+          "part": 4,
+          "groupId": "t03-g045",
+          "at": 1886.23091
+        },
+        {
+          "src": "audio/azure-v1/test-03-25.mp3",
+          "start": 0.5,
+          "end": 47.372,
+          "duration": 46.872,
+          "kind": "audio",
+          "role": "passage",
+          "part": 4,
+          "groupId": "t03-g045",
+          "at": 1889.63908
+        },
+        {
+          "src": "audio/formal/test-03-cues-04.mp3",
+          "start": 26.4115,
+          "end": 30.40383,
+          "duration": 3.99233,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g045",
+          "questionId": "t03-q071",
+          "at": 1936.51108
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g045",
+          "questionId": "t03-q071",
+          "at": 1940.50341
+        },
+        {
+          "src": "audio/formal/test-03-cues-04.mp3",
+          "start": 30.65383,
+          "end": 33.62954,
+          "duration": 2.97571,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g045",
+          "questionId": "t03-q072",
+          "at": 1947.71959
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g045",
+          "questionId": "t03-q072",
+          "at": 1950.6953
+        },
+        {
+          "src": "audio/formal/test-03-cues-04.mp3",
+          "start": 33.87954,
+          "end": 37.23608,
+          "duration": 3.35654,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g045",
+          "questionId": "t03-q073",
+          "at": 1957.91148
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g045",
+          "questionId": "t03-q073",
+          "at": 1961.26802
+        },
+        {
+          "src": "audio/formal/test-03-cues-04.mp3",
+          "start": 37.48608,
+          "end": 41.03396,
+          "duration": 3.54787,
+          "kind": "audio",
+          "role": "cue",
+          "part": 4,
+          "groupId": "t03-g046",
+          "at": 1968.4842
+        },
+        {
+          "src": "audio/azure-v1/test-03-26.mp3",
+          "start": 0.5,
+          "end": 42.068,
+          "duration": 41.568,
+          "kind": "audio",
+          "role": "passage",
+          "part": 4,
+          "groupId": "t03-g046",
+          "at": 1972.03207
+        },
+        {
+          "src": "audio/formal/test-03-cues-04.mp3",
+          "start": 41.28396,
+          "end": 43.9875,
+          "duration": 2.70354,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g046",
+          "questionId": "t03-q074",
+          "at": 2013.60007
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g046",
+          "questionId": "t03-q074",
+          "at": 2016.30361
+        },
+        {
+          "src": "audio/formal/test-03-cues-04.mp3",
+          "start": 44.2375,
+          "end": 46.9905,
+          "duration": 2.753,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g046",
+          "questionId": "t03-q075",
+          "at": 2023.51979
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g046",
+          "questionId": "t03-q075",
+          "at": 2026.27279
+        },
+        {
+          "src": "audio/formal/test-03-cues-04.mp3",
+          "start": 47.2405,
+          "end": 50.44433,
+          "duration": 3.20383,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g046",
+          "questionId": "t03-q076",
+          "at": 2033.48897
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g046",
+          "questionId": "t03-q076",
+          "at": 2036.6928
+        },
+        {
+          "src": "audio/formal/test-03-cues-04.mp3",
+          "start": 50.69433,
+          "end": 54.29279,
+          "duration": 3.59846,
+          "kind": "audio",
+          "role": "cue",
+          "part": 4,
+          "groupId": "t03-g047",
+          "at": 2043.90898
+        },
+        {
+          "src": "audio/azure-v1/test-03-27.mp3",
+          "start": 0.5,
+          "end": 42.956,
+          "duration": 42.456,
+          "kind": "audio",
+          "role": "passage",
+          "part": 4,
+          "groupId": "t03-g047",
+          "at": 2047.50744
+        },
+        {
+          "src": "audio/formal/test-03-cues-04.mp3",
+          "start": 54.54279,
+          "end": 58.95746,
+          "duration": 4.41467,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g047",
+          "questionId": "t03-q077",
+          "at": 2089.96344
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g047",
+          "questionId": "t03-q077",
+          "at": 2094.37811
+        },
+        {
+          "src": "audio/formal/test-03-cues-04.mp3",
+          "start": 59.20746,
+          "end": 62.97396,
+          "duration": 3.7665,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g047",
+          "questionId": "t03-q078",
+          "at": 2101.59429
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g047",
+          "questionId": "t03-q078",
+          "at": 2105.36079
+        },
+        {
+          "src": "audio/formal/test-03-cues-04.mp3",
+          "start": 63.22396,
+          "end": 66.15946,
+          "duration": 2.9355,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g047",
+          "questionId": "t03-q079",
+          "at": 2112.57697
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g047",
+          "questionId": "t03-q079",
+          "at": 2115.51247
+        },
+        {
+          "src": "audio/formal/test-03-cues-04.mp3",
+          "start": 66.40946,
+          "end": 69.31754,
+          "duration": 2.90808,
+          "kind": "audio",
+          "role": "cue",
+          "part": 4,
+          "groupId": "t03-g048",
+          "at": 2122.72865
+        },
+        {
+          "src": "audio/azure-v1/test-03-28.mp3",
+          "start": 0.5,
+          "end": 45.836,
+          "duration": 45.336,
+          "kind": "audio",
+          "role": "passage",
+          "part": 4,
+          "groupId": "t03-g048",
+          "at": 2125.63673
+        },
+        {
+          "src": "audio/formal/test-03-cues-05.mp3",
+          "start": 0.25,
+          "end": 2.72825,
+          "duration": 2.47825,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g048",
+          "questionId": "t03-q080",
+          "at": 2170.97273
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g048",
+          "questionId": "t03-q080",
+          "at": 2173.45098
+        },
+        {
+          "src": "audio/formal/test-03-cues-05.mp3",
+          "start": 2.97825,
+          "end": 6.49113,
+          "duration": 3.51288,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g048",
+          "questionId": "t03-q081",
+          "at": 2180.66716
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g048",
+          "questionId": "t03-q081",
+          "at": 2184.18004
+        },
+        {
+          "src": "audio/formal/test-03-cues-05.mp3",
+          "start": 6.74113,
+          "end": 10.61712,
+          "duration": 3.876,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g048",
+          "questionId": "t03-q082",
+          "at": 2191.39622
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g048",
+          "questionId": "t03-q082",
+          "at": 2195.27222
+        },
+        {
+          "src": "audio/formal/test-03-cues-05.mp3",
+          "start": 10.86712,
+          "end": 14.02542,
+          "duration": 3.15829,
+          "kind": "audio",
+          "role": "cue",
+          "part": 4,
+          "groupId": "t03-g049",
+          "at": 2202.4884
+        },
+        {
+          "src": "audio/azure-v1/test-03-29.mp3",
+          "start": 0.5,
+          "end": 45.908,
+          "duration": 45.408,
+          "kind": "audio",
+          "role": "passage",
+          "part": 4,
+          "groupId": "t03-g049",
+          "at": 2205.64669
+        },
+        {
+          "src": "audio/formal/test-03-cues-05.mp3",
+          "start": 14.27542,
+          "end": 17.35963,
+          "duration": 3.08421,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g049",
+          "questionId": "t03-q083",
+          "at": 2251.05469
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g049",
+          "questionId": "t03-q083",
+          "at": 2254.1389
+        },
+        {
+          "src": "audio/formal/test-03-cues-05.mp3",
+          "start": 17.60963,
+          "end": 21.31125,
+          "duration": 3.70162,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g049",
+          "questionId": "t03-q084",
+          "at": 2261.35508
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g049",
+          "questionId": "t03-q084",
+          "at": 2265.0567
+        },
+        {
+          "src": "audio/formal/test-03-cues-05.mp3",
+          "start": 21.56125,
+          "end": 24.65229,
+          "duration": 3.09104,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g049",
+          "questionId": "t03-q085",
+          "at": 2272.27288
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g049",
+          "questionId": "t03-q085",
+          "at": 2275.36392
+        },
+        {
+          "src": "audio/formal/test-03-cues-05.mp3",
+          "start": 24.90229,
+          "end": 28.05888,
+          "duration": 3.15658,
+          "kind": "audio",
+          "role": "cue",
+          "part": 4,
+          "groupId": "t03-g050",
+          "at": 2282.5801
+        },
+        {
+          "src": "audio/azure-v1/test-03-30.mp3",
+          "start": 0.5,
+          "end": 39.836,
+          "duration": 39.336,
+          "kind": "audio",
+          "role": "passage",
+          "part": 4,
+          "groupId": "t03-g050",
+          "at": 2285.73668
+        },
+        {
+          "src": "audio/formal/test-03-cues-05.mp3",
+          "start": 28.30888,
+          "end": 31.36854,
+          "duration": 3.05967,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g050",
+          "questionId": "t03-q086",
+          "at": 2325.07268
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g050",
+          "questionId": "t03-q086",
+          "at": 2328.13235
+        },
+        {
+          "src": "audio/formal/test-03-cues-05.mp3",
+          "start": 31.61854,
+          "end": 35.32662,
+          "duration": 3.70808,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g050",
+          "questionId": "t03-q087",
+          "at": 2335.34853
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g050",
+          "questionId": "t03-q087",
+          "at": 2339.05661
+        },
+        {
+          "src": "audio/formal/test-03-cues-05.mp3",
+          "start": 35.57662,
+          "end": 39.56975,
+          "duration": 3.99313,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g050",
+          "questionId": "t03-q088",
+          "at": 2346.27279
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g050",
+          "questionId": "t03-q088",
+          "at": 2350.26592
+        },
+        {
+          "src": "audio/formal/test-03-cues-05.mp3",
+          "start": 39.81975,
+          "end": 43.128,
+          "duration": 3.30825,
+          "kind": "audio",
+          "role": "cue",
+          "part": 4,
+          "groupId": "t03-g051",
+          "at": 2357.4821
+        },
+        {
+          "src": "audio/azure-v1/test-03-31.mp3",
+          "start": 0.5,
+          "end": 52.172,
+          "duration": 51.672,
+          "kind": "audio",
+          "role": "passage",
+          "part": 4,
+          "groupId": "t03-g051",
+          "at": 2360.79035
+        },
+        {
+          "src": "audio/formal/test-03-cues-05.mp3",
+          "start": 43.378,
+          "end": 46.86421,
+          "duration": 3.48621,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g051",
+          "questionId": "t03-q089",
+          "at": 2412.46235
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g051",
+          "questionId": "t03-q089",
+          "at": 2415.94856
+        },
+        {
+          "src": "audio/formal/test-03-cues-05.mp3",
+          "start": 47.11421,
+          "end": 50.54662,
+          "duration": 3.43242,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g051",
+          "questionId": "t03-q090",
+          "at": 2423.16474
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g051",
+          "questionId": "t03-q090",
+          "at": 2426.59716
+        },
+        {
+          "src": "audio/formal/test-03-cues-05.mp3",
+          "start": 50.79662,
+          "end": 54.54187,
+          "duration": 3.74525,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g051",
+          "questionId": "t03-q091",
+          "at": 2433.81334
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g051",
+          "questionId": "t03-q091",
+          "at": 2437.55859
+        },
+        {
+          "src": "audio/formal/test-03-cues-05.mp3",
+          "start": 54.79187,
+          "end": 58.09967,
+          "duration": 3.30779,
+          "kind": "audio",
+          "role": "cue",
+          "part": 4,
+          "groupId": "t03-g052",
+          "at": 2444.77477
+        },
+        {
+          "src": "audio/azure-v1/test-03-32.mp3",
+          "start": 0.5,
+          "end": 48.692,
+          "duration": 48.192,
+          "kind": "audio",
+          "role": "passage",
+          "part": 4,
+          "groupId": "t03-g052",
+          "at": 2448.08256
+        },
+        {
+          "src": "audio/formal/test-03-cues-05.mp3",
+          "start": 58.34967,
+          "end": 61.89921,
+          "duration": 3.54954,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g052",
+          "questionId": "t03-q092",
+          "at": 2496.27456
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g052",
+          "questionId": "t03-q092",
+          "at": 2499.8241
+        },
+        {
+          "src": "audio/formal/test-03-cues-05.mp3",
+          "start": 62.14921,
+          "end": 64.99354,
+          "duration": 2.84433,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g052",
+          "questionId": "t03-q093",
+          "at": 2507.04028
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g052",
+          "questionId": "t03-q093",
+          "at": 2509.88461
+        },
+        {
+          "src": "audio/formal/test-03-cues-05.mp3",
+          "start": 65.24354,
+          "end": 68.12079,
+          "duration": 2.87725,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g052",
+          "questionId": "t03-q094",
+          "at": 2517.10079
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g052",
+          "questionId": "t03-q094",
+          "at": 2519.97804
+        },
+        {
+          "src": "audio/formal/test-03-cues-06.mp3",
+          "start": 0.25,
+          "end": 3.63379,
+          "duration": 3.38379,
+          "kind": "audio",
+          "role": "cue",
+          "part": 4,
+          "groupId": "t03-g053",
+          "at": 2527.19422
+        },
+        {
+          "src": "audio/azure-v1/test-03-33.mp3",
+          "start": 0.5,
+          "end": 51.404,
+          "duration": 50.904,
+          "kind": "audio",
+          "role": "passage",
+          "part": 4,
+          "groupId": "t03-g053",
+          "at": 2530.57801
+        },
+        {
+          "src": "audio/formal/test-03-cues-06.mp3",
+          "start": 3.88379,
+          "end": 7.88696,
+          "duration": 4.00317,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g053",
+          "questionId": "t03-q095",
+          "at": 2581.48201
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g053",
+          "questionId": "t03-q095",
+          "at": 2585.48518
+        },
+        {
+          "src": "audio/formal/test-03-cues-06.mp3",
+          "start": 8.13696,
+          "end": 12.03125,
+          "duration": 3.89429,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g053",
+          "questionId": "t03-q096",
+          "at": 2592.70136
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g053",
+          "questionId": "t03-q096",
+          "at": 2596.59565
+        },
+        {
+          "src": "audio/formal/test-03-cues-06.mp3",
+          "start": 12.28125,
+          "end": 15.32821,
+          "duration": 3.04696,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g053",
+          "questionId": "t03-q097",
+          "at": 2603.81183
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g053",
+          "questionId": "t03-q097",
+          "at": 2606.85879
+        },
+        {
+          "src": "audio/formal/test-03-cues-06.mp3",
+          "start": 15.57821,
+          "end": 18.96329,
+          "duration": 3.38508,
+          "kind": "audio",
+          "role": "cue",
+          "part": 4,
+          "groupId": "t03-g054",
+          "at": 2614.07497
+        },
+        {
+          "src": "audio/azure-v1/test-03-34.mp3",
+          "start": 0.5,
+          "end": 50.564,
+          "duration": 50.064,
+          "kind": "audio",
+          "role": "passage",
+          "part": 4,
+          "groupId": "t03-g054",
+          "at": 2617.46005
+        },
+        {
+          "src": "audio/formal/test-03-cues-06.mp3",
+          "start": 19.21329,
+          "end": 22.06171,
+          "duration": 2.84842,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g054",
+          "questionId": "t03-q098",
+          "at": 2667.52405
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g054",
+          "questionId": "t03-q098",
+          "at": 2670.37247
+        },
+        {
+          "src": "audio/formal/test-03-cues-06.mp3",
+          "start": 22.31171,
+          "end": 26.31004,
+          "duration": 3.99833,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g054",
+          "questionId": "t03-q099",
+          "at": 2677.58865
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.21618,
+          "part": 4,
+          "groupId": "t03-g054",
+          "questionId": "t03-q099",
+          "at": 2681.58698
+        },
+        {
+          "src": "audio/formal/test-03-cues-06.mp3",
+          "start": 26.56004,
+          "end": 30.54042,
+          "duration": 3.98037,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g054",
+          "questionId": "t03-q100",
+          "at": 2688.80316
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 7.2164699999999495,
+          "part": 4,
+          "groupId": "t03-g054",
+          "questionId": "t03-q100",
+          "at": 2692.78353
+        }
+      ],
+      "audioEdition": "azure-1"
+    }
   }
 }
