@@ -1,37 +1,34 @@
-SHIFT English Lab｜職場英語練習室
-本機版 1.2.0
+SHIFT English Lab
+Version 1.2.1
 
-開始使用
-1. 將 ZIP「全部解壓縮」，不要在壓縮檔內直接開網頁。
-2. 保持整個資料夾結構，雙擊 index.html，以桌面 Chrome 或 Edge 開啟。
-3. 可選閱讀、聽力分組練習，或開啟一整回正式模考。正式模考聽力約 45 分鐘，每組一次、依序播放；閱讀 75 分鐘，可跳題。
-4. 交卷前不顯示正誤、翻譯、逐字稿或解析；交卷後顯示 100 分制成績與錯題清單。
-5. 點選錯題查看完整繁中解析、選項理由、逐字稿、證據與詞彙。
+Get started
+1. Extract the entire ZIP before opening the site.
+2. Open index.html in Chrome or Edge, or visit the hosted site:
+   https://littletin.github.io/shift-english-lab-1/
+3. Choose grouped practice or a full mock test. Listening takes about
+   45 minutes, with one play per group. Reading allows 75 minutes.
+4. Answers, transcripts, and Traditional Chinese explanations are
+   available only in the answer review after submission.
 
-已包含
-3 回各 200 題，共 600 題原創練習：閱讀 300 題、聽力 300 題。
-Part 1 使用情境插圖；每回 54 個聽力題組，隨包附帶離線神經合成語音，包含美式、英式、印度與澳洲英語。
-這些音檔不是人員實錄；不代表正式多益語速、難度或口音配比。
-「分類練習」的指定口音只選該題組所有聲線皆屬同一地區的聽力；題量不足不混入其他口音。
-先打開「語音試聽.html」，可以直接比較原版與新版同一段對話，或單獨聽各種口音。
-內容不是 ETS 官方試題，成績是練習正確率，不換算多益官方分數。
-一般練習不需要網路、帳號、Python 或資料庫伺服器。
+This release contains three original 200-question tests, covering listening
+and reading. Practice can focus on one accent without mixing in another.
+The bundled neural audio is not an ETS recording. Mock test scores are
+practice results, not official TOEIC scaled scores.
 
-保存紀錄
-作答、錯題、收藏、筆記和未完成進度儲存在目前瀏覽器。
-更新版本時請維持同一網址、同一瀏覽器設定檔，不必清除網站資料。
-請使用一般視窗，並定期到「資料管理」匯出備份。
-移動資料夾、更換瀏覽器、清除網站資料或更新版本前，請先備份。
-音檔、圖片及發布者加入的題庫須隨整個網站資料夾一起保留。
+Study history
+Answers, wrong answers, bookmarks, notes, and unfinished sessions are
+stored in your browser. Updating the same site does not require clearing
+site data. Refreshing the same tab returns to an active quiz; it does not
+replay a consumed formal listening group. Before changing browsers,
+devices, or the site URL, export a backup from Data & Settings.
 
-文件位置
-使用說明.html           操作、交卷、錯題複習、備份與手機使用方式
-TOEIC-FORMAT.md         正式測驗題數、聽力與閱讀規則及來源
-AUTHORING.md            題庫格式及不修改 HTML 的擴充方法
-data/example-pack.json  可修改的題庫格式範例
-tools/add_pack.py       題庫驗證與轉檔工具（發布者需 Python 3.9 以上）
+For authors
+TOEIC-FORMAT.md      Mock test structure and playback rules
+AUTHORING.md         Question-pack schema and publishing workflow
+data/example-pack.json  Sample question pack
+tools/add_pack.py    Pack validator and publisher
+tools/validate_exam.py  Built-in exam structure and audio timeline checks
 
-手機或網站部署
-將整個資料夾上傳到靜態網站主機，再用手機瀏覽器開啟。
-請一併上傳 data、audio、assets，不要只上傳 index.html。
-手機與電腦的作答紀錄不會自動同步，可利用匯出／匯入備份移轉。
+The website is static. Keep index.html, assets/, data/, and audio/ together.
+No server, model, account, or Python installation is needed to practice with
+the extracted desktop version.

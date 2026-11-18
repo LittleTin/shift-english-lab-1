@@ -11,3 +11,6 @@
 .group-questions{min-width:0;display:flex;flex-direction:column;gap:20px}.grouped-question{min-width:0}.grouped-question .question-text{font-size:1.12rem}.group-note{width:100%;min-height:100px;box-sizing:border-box}.formal-audio{display:flex;flex-wrap:wrap;align-items:center;gap:14px}.formal-audio .hint{flex-basis:100%;margin:0}.formal-audio strong{flex:1;min-width:160px}.quiz-grid>.passage-panel{align-self:start}.group-questions .quiz-footer{flex-wrap:wrap;gap:12px}@media(max-width:780px){.group-questions{gap:14px}.group-questions .quiz-footer .btn-row{flex-wrap:wrap}.quiz-grid>.passage-panel{position:static}}
 
 .group-navigator{grid-template-columns:repeat(auto-fill,minmax(84px,1fr))}.group-navigator .nav-q{height:auto;min-height:58px;padding:8px;font-size:13px}.group-navigator small{display:block;font-weight:400;margin-top:3px}
+
+/* Keep longer English filter values readable on narrow screens. */
+@media(max-width:520px){.filters{grid-template-columns:1fr}}

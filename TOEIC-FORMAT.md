@@ -1,29 +1,31 @@
-# SHIFT 正式模考規格
+# SHIFT Mock Test Format
 
-SHIFT 的題目是原創練習題，不是 ETS 考題或官方錄音。模考依 TOEIC Listening & Reading 公開結構設計，成績為本網站答對題數／正確率，不是官方量尺分數，也不保證難度等值。
+SHIFT uses original practice questions, not ETS questions or recordings. It follows the published TOEIC Listening & Reading structure. Scores are practice accuracy, not official scaled scores; difficulty equivalence is not claimed.
 
-| 區段 | Part | 題型 | 每回題數／題組 |
+| Section | Part | Format | Questions per test |
 |---|---:|---|---|
-| 聽力，約 45 分鐘 | 1 | 圖片描述 | 6 張情境圖片，各 1 題、4 個聽到的選項 |
-| | 2 | 應答 | 25 題，各 3 個聽到的應答 |
-| | 3 | 對話 | 13 組，各 3 題，共 39 題 |
-| | 4 | 獨白 | 10 組，各 3 題，共 30 題 |
-| 閱讀，75 分鐘 | 5 | 句子填空 | 30 題 |
-| | 6 | 段落填空 | 4 組，各 4 題，共 16 題 |
-| | 7 | 閱讀理解 | 單篇 29 題；2 組雙篇與 3 組三篇，各 5 題，共 25 題 |
+| Listening, about 45 minutes | 1 | Photographs / scene descriptions | 6, four spoken statements each |
+| | 2 | Question–response | 25, three spoken responses each |
+| | 3 | Conversations | 39, 13 groups of three |
+| | 4 | Short talks | 30, 10 groups of three |
+| Reading, 75 minutes | 5 | Incomplete sentences | 30 |
+| | 6 | Text completion | 16, four groups of four |
+| | 7 | Reading comprehension | 29 single-passage questions; 25 multiple-passage questions, in groups of five |
 
-## 作答流程
+## Taking a test
 
-- 從首頁選定 Test 並開啟正式模考，依指示開始聽力。每個題組播放一次，不提供重播、快轉、暫停或倍速；Part 1/2 只顯示答案代號，Part 3/4 共用一段音訊並在同一頁顯示 3 題與選項。有圖表的題組會一起顯示圖表。
-- 聽力錄音、原創英文導引、題目朗讀及作答停頓依序播放。以本網站的 45 分鐘模考計時安排，不是 ETS 的實際錄音或逐秒間隔。網頁模擬採依序播放、不回退重聽；不同於紙本的翻頁、填寫答案卡。
-- 聽力與閱讀分開計時；閱讀可自行跳題，但不可返回聽力。完成交卷後才看分數、錯題、解析和逐字稿。
-- 分類練習可暫停、重播與調整速度。共用同一題組的問題放在同一頁；換到別組時停止舊音訊並重置新組。「指定口音」只納入所有聲線同屬該地區、沒有混合其他口音的聽力題組；不足設定題數時不補入其他口音。正式模考不受篩選影響。
-- 1.1.0 原有紀錄使用同一個瀏覽器資料庫。網站更新時使用同一網址與瀏覽器設定檔，正常不必匯入備份；換瀏覽器、裝置、網址或清除網站資料時，請先到「資料管理」匯出備份。舊模考保留舊版計時，正式流程適用於新開始的模考。
+- Formal listening plays each group once, in sequence, without replay, pausing, scrubbing, or speed changes. Parts 1–2 show answer letters rather than the spoken choices. Parts 3–4 show all three questions together and play the question stems. Any required graphic appears with the group.
+- Original directions, playback, spoken stems, and timed answer windows make up the listening section. The 45-minute timeline is SHIFT's own arrangement, not the precise timetable of an ETS recording.
+- Reading allows navigation between groups but cannot return to Listening. Scores and explanations appear only after submission.
+- Separate practice permits replay, pause, and speed changes. Choosing a specific accent selects only groups whose speakers all match that locale. It does not change the mixed mock tests.
+- Study records continue under the same site origin and browser profile. Use Data & Settings to export a backup before changing browser, device, or URL.
 
-## 官方格式來源
+The interface and test content are in English. Traditional Chinese is reserved for translations and explanations on the answer review page.
 
-- [ETS TOEIC Listening & Reading：內容與時間](https://www.ets.org/toeic/about/listening-reading.html)
-- [ETS Listening & Reading 正式樣題與聽力逐字稿](https://www.kr.ets.org/pdfs/toeic/toeic-listening-reading-sample-test.pdf)
-- [台灣 TOEIC 測驗內容](https://www.toeic.com.tw/toeic/listening-reading/about/content/)
+## Official references
 
-SHIFT 使用自行產製的神經語音與情境圖，並非人員實錄或官方照片。美式、英式、印度及澳洲英語的使用與配置為本站練習設計，不代表官方口音比例。
+- [ETS TOEIC Listening & Reading: content and timing](https://www.ets.org/toeic/about/listening-reading.html)
+- [ETS sample test and listening script](https://www.kr.ets.org/pdfs/toeic/toeic-listening-reading-sample-test.pdf)
+- [TOEIC Taiwan: test content](https://www.toeic.com.tw/toeic/listening-reading/about/content/)
+
+SHIFT uses original illustrations and neural speech. Its accent mix is a practice design, not an official TOEIC accent distribution.

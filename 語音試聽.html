@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SHIFT｜聽力改版試聽</title>
+<title>SHIFT | Voice Preview</title>
 <style>
 :root{color-scheme:light;--ink:#15342a;--muted:#587064;--line:#d8e5d9;--paper:#f3f6ec}
 *{box-sizing:border-box}
@@ -18,24 +18,24 @@ blockquote{margin:10px 0 16px;border-left:3px solid #84a590;padding-left:14px;co
 .note{font-size:14px} @media(max-width:620px){.grid{grid-template-columns:1fr}}
 </style>
 <main>
-<a href="index.html">← 回練習首頁</a>
-<div class="kicker">SHIFT ENGLISH LAB　/　V1.1.0</div>
-<h1>聽力改版試聽</h1>
-<p class="lede">同一段題組保留原文，重做兩個角色的聲線及停頓。以下皆為隨包音檔，可離線播放。</p>
-<h2>原版 vs. 新版：試產交貨安排</h2>
+<a href="index.html">← Back to practice home</a>
+<div class="kicker">SHIFT ENGLISH LAB　/　V1.2.1</div>
+<h1>Compare the listening voices</h1>
+<p class="lede">The same script, with updated character voices and pauses. All clips are included with the site and can be played offline.</p>
+<h2>Original vs. updated: arranging a trial delivery</h2>
 <div class="grid">
-<article><h3>原版 · 1.0.0</h3><audio controls preload="none" src="audio/preview/original-t01-g032.mp3" aria-label="原版試產交貨安排"></audio></article>
-<article><h3>新版 · 美式＋英式</h3><audio controls preload="none" src="audio/t01-g032.mp3" aria-label="新版試產交貨安排"></audio></article>
+<article><h3>Original · 1.0.0</h3><audio controls preload="none" src="audio/preview/original-t01-g032.mp3" aria-label="Original trial-delivery conversation"></audio></article>
+<article><h3>Updated · American + British English</h3><audio controls preload="none" src="audio/t01-g032.mp3" aria-label="Updated trial-delivery conversation"></audio></article>
 </div>
-<h2>同一句，四種口音</h2>
+<h2>One passage, four accents</h2>
 <blockquote lang="en">Good morning. The customer service team will meet in the conference room at ten thirty. Please bring a copy of the updated schedule.</blockquote>
 <div class="grid">
-<article><h3>美式英語 · US</h3><audio controls preload="none" src="audio/preview/us.mp3" aria-label="美式英語範例"></audio></article>
-<article><h3>英式英語 · UK</h3><audio controls preload="none" src="audio/preview/uk.mp3" aria-label="英式英語範例"></audio></article>
-<article><h3>印度英語 · IN</h3><audio controls preload="none" src="audio/preview/in.mp3" aria-label="印度英語範例"></audio></article>
-<article><h3>澳洲英語 · AU</h3><audio controls preload="none" src="audio/preview/au.mp3" aria-label="澳洲英語範例"></audio></article>
+<article><h3>American English · US</h3><audio controls preload="none" src="audio/preview/us.mp3" aria-label="American English sample"></audio></article>
+<article><h3>British English · UK</h3><audio controls preload="none" src="audio/preview/uk.mp3" aria-label="British English sample"></audio></article>
+<article><h3>Indian English · IN</h3><audio controls preload="none" src="audio/preview/in.mp3" aria-label="Indian English sample"></audio></article>
+<article><h3>Australian English · AU</h3><audio controls preload="none" src="audio/preview/au.mp3" aria-label="Australian English sample"></audio></article>
 </div>
-<p class="note">新版為神經合成語音，不是人員實錄。口音依所選模型聲線標示，不代表 ETS 官方錄音、語速或口音配比。</p>
+<p class="note">The updated clips use neural speech synthesis, not human recordings. Accent labels describe the selected model voices. They do not represent official ETS recordings, pacing or accent proportions.</p>
 </main>
 <script>document.addEventListener('play',e=>{if(e.target.tagName==='AUDIO')document.querySelectorAll('audio').forEach(a=>{if(a!==e.target)a.pause()})},true)</script>
 </html>
