@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "testId": "custom-001",
+  "title": "我的擴充題庫",
+  "groups": [],
+  "questions": [{
+    "id": "custom-001-q001", "testId": "custom-001", "number": 1,
+    "part": 5, "groupId": null, "topic": "manufacturing", "difficulty": "foundation",
+    "tags": ["delivery", "prepositions"],
+    "prompt": "Please send the revised delivery schedule _____ Friday.",
+    "promptZh": "請在星期五以前寄出修訂後的交貨時程。",
+    "options": [
+      {"id":"A","text":"by","zh":"不晚於、在……以前","whyZh":"by Friday 表示星期五是最後期限，符合寄出時程的要求。"},
+      {"id":"B","text":"during","zh":"在……期間","whyZh":"during 通常接一段期間；此處要表達星期五的截止期限。"},
+      {"id":"C","text":"since","zh":"自從","whyZh":"since 表示某個過去起點延續至今，不適用於這個未來交付要求。"},
+      {"id":"D","text":"among","zh":"在……之間","whyZh":"among 表示群體之間，不能用來表示星期五的截止期限。"}
+    ],
+    "answer": "A",
+    "explanationZh": "本句要求對方最晚在星期五寄出修訂後的交貨時程，因此使用表示截止期限的 by。",
+    "evidence": "send ... by Friday",
+    "vocabulary": [{"term":"delivery schedule","zh":"交貨時程","note":"列出預計交付日期的安排；本題要求提供修訂後的版本。"}]
+  }]
+}

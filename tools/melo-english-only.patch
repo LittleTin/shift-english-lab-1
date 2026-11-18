@@ -1,0 +1,57 @@
+diff --git a/melo/text/__init__.py b/melo/text/__init__.py
+index 6e482be..5b37e7a 100644
+--- a/melo/text/__init__.py
++++ b/melo/text/__init__.py
+@@ -21,15 +21,6 @@ def cleaned_text_to_sequence(cleaned_text, tones, language, symbol_to_id=None):
+ 
+ 
+ def get_bert(norm_text, word2ph, language, device):
+-    from .chinese_bert import get_bert_feature as zh_bert
+-    from .english_bert import get_bert_feature as en_bert
+-    from .japanese_bert import get_bert_feature as jp_bert
+-    from .chinese_mix import get_bert_feature as zh_mix_en_bert
+-    from .spanish_bert import get_bert_feature as sp_bert
+-    from .french_bert import get_bert_feature as fr_bert
+-    from .korean import get_bert_feature as kr_bert
+-
+-    lang_bert_func_map = {"ZH": zh_bert, "EN": en_bert, "JP": jp_bert, 'ZH_MIX_EN': zh_mix_en_bert, 
+-                          'FR': fr_bert, 'SP': sp_bert, 'ES': sp_bert, "KR": kr_bert}
+-    bert = lang_bert_func_map[language](norm_text, word2ph, device)
+-    return bert
++    assert language == "EN"
++    from .english_bert import get_bert_feature
++    return get_bert_feature(norm_text, word2ph, device)
+diff --git a/melo/text/cleaner.py b/melo/text/cleaner.py
+index fdf2609..80166d2 100644
+--- a/melo/text/cleaner.py
++++ b/melo/text/cleaner.py
+@@ -1,9 +1,7 @@
+-from . import chinese, japanese, english, chinese_mix, korean, french, spanish
++from . import english
+ from . import cleaned_text_to_sequence
+ import copy
+-
+-language_module_map = {"ZH": chinese, "JP": japanese, "EN": english, 'ZH_MIX_EN': chinese_mix, 'KR': korean,
+-                    'FR': french, 'SP': spanish, 'ES': spanish}
++language_module_map={"EN":english}
+ 
+ 
+ def clean_text(text, language):
+diff --git a/melo/text/english.py b/melo/text/english.py
+index d1152fe..9e13d43 100644
+--- a/melo/text/english.py
++++ b/melo/text/english.py
+@@ -8,7 +8,12 @@ from . import symbols
+ from .english_utils.abbreviations import expand_abbreviations
+ from .english_utils.time_norm import expand_time_english
+ from .english_utils.number_norm import normalize_numbers
+-from .japanese import distribute_phone
++def distribute_phone(n_phone, n_word):
++    phones_per_word = [0] * n_word
++    for task in range(n_phone):
++        min_index = phones_per_word.index(min(phones_per_word))
++        phones_per_word[min_index] += 1
++    return phones_per_word
+ 
+ from transformers import AutoTokenizer
+ 
