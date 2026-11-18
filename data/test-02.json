@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "testId": "test-02",
-  "revision": 1,
+  "revision": 2,
   "groups": [
     {
       "id": "t02-g001",
@@ -1073,7 +1073,9 @@
           "locale": "en-US",
           "role": "male"
         }
-      ]
+      ],
+      "image": "assets/graphics/t02-g032.svg",
+      "imageAlt": "Component Lab Bench Directory; Flammability: Bench A; Contact resistance: Bench B; Heat cycling: Bench C; Housing dimensions: Bench D"
     },
     {
       "id": "t02-g033",
@@ -1717,7 +1719,9 @@
           "locale": "en-US",
           "role": "female"
         }
-      ]
+      ],
+      "image": "assets/graphics/t02-g049.svg",
+      "imageAlt": "Friday Collection Window Labels; 11:00 a.m.: Maple; 12:00 p.m.: Oak; 4:00 p.m.: Cedar; 4:30 p.m.: Pine"
     },
     {
       "id": "t02-g050",
@@ -1995,8 +1999,8 @@
       "title": "Production results and review",
       "titleZh": "生產結果與檢討",
       "topic": "manufacturing",
-      "passage": "DOCUMENT 1 — Initial test results, Monday\nLot A: 200 units tested; 190 passed immediately; 8 sent for rework; 2 marked for scrap.\nLot B: 100 units tested; 96 passed immediately; 3 sent for rework; 1 marked for scrap.\nFor this report, first-pass yield means the number that passed immediately divided by the number tested, expressed as a percentage. Reworked units are not counted as first-pass successes.\n\nDOCUMENT 2 — Quality update, Tuesday\nAll eight reworked units from Lot A passed the repeat test. The two scrap units remain excluded from shipment. Lot B’s rework is still in progress.\n\nDOCUMENT 3 — Manager’s note\nPlease compare first-pass performance, not only the final number accepted. Rework uses extra time even when it succeeds. Connector alignment was the most frequent reason for rework on Monday; the process team will check the fixture before changing the assembly instructions. The results do not yet establish that the fixture caused the problem.",
-      "passageZh": "文件一——星期一初測結果\nA 批：測試 200 台；190 台立即通過；8 台送重工；2 台標為報廢。\nB 批：測試 100 台；96 台立即通過；3 台送重工；1 台標為報廢。\n本報告的一次通過率定義為立即通過數除以受測數，再換算百分比。重工品不計入首次通過數。\n\n文件二——星期二品質更新\nA 批八台重工品全部通過複測，兩台報廢品仍不得出貨。B 批重工仍在進行。\n\n文件三——主管備註\n請比較首次測試表現，不要只看最後可接受數量。即使重工成功也會耗用額外時間。星期一最常見的重工原因是連接器對位；製程團隊會先檢查治具，再變更組裝指導書。目前結果尚不能證明治具就是問題原因。"
+      "passage": "DOCUMENT 1 — Initial test results, Monday\nLot A: 200 units tested; 190 passed immediately; 8 sent for rework; 2 marked for scrap.\nLot B: 100 units tested; 96 passed immediately; 3 sent for rework; 1 marked for scrap.\nFor this report, first-pass yield means the number that passed immediately divided by the number tested, expressed as a percentage. Reworked units are not counted as first-pass successes.\n\nTuesday follow-up (same test report)\nAll eight reworked units from Lot A passed the repeat test. The two scrap units remain excluded from shipment. Lot B’s rework is still in progress.\n\nDOCUMENT 2 — Manager’s note\nPlease compare first-pass performance, not only the final number accepted. Rework uses extra time even when it succeeds. Connector alignment was the most frequent reason for rework on Monday; the process team will check the fixture before changing the assembly instructions. The results do not yet establish that the fixture caused the problem.",
+      "passageZh": "文件一——星期一初測結果\nA 批：測試 200 台；190 台立即通過；8 台送重工；2 台標為報廢。\nB 批：測試 100 台；96 台立即通過；3 台送重工；1 台標為報廢。\n本報告的一次通過率定義為立即通過數除以受測數，再換算百分比。重工品不計入首次通過數。\n\n星期二追蹤更新（同一測試報告）\nA 批八台重工品全部通過複測，兩台報廢品仍不得出貨。B 批重工仍在進行。\n\n文件二——主管備註\n請比較首次測試表現，不要只看最後可接受數量。即使重工成功也會耗用額外時間。星期一最常見的重工原因是連接器對位；製程團隊會先檢查治具，再變更組裝指導書。目前結果尚不能證明治具就是問題原因。"
     },
     {
       "id": "t02-r-p7-12",
@@ -2005,8 +2009,8 @@
       "title": "Choosing a train",
       "titleZh": "選擇火車班次",
       "topic": "daily",
-      "passage": "DOCUMENT 1 — Tuesday trains from Eastford to Milltown\nTrain A: departs 8:00 a.m.; arrives 9:15 a.m.; seats available.\nTrain B: departs 8:30 a.m.; arrives 10:20 a.m.; seats available.\nTrain C: departs 9:00 a.m.; arrives 10:05 a.m.; fully booked.\nTrain D: departs 9:35 a.m.; arrives 11:00 a.m.; seats available.\n\nDOCUMENT 2 — Message from Priya\nI cannot leave Eastford before 8:15 a.m. My appointment is near Milltown station, and I must arrive at the station no later than 10:30. Please reserve a train that meets both conditions. I do not want to rely on a waiting list.\n\nDOCUMENT 3 — Booking reply\nI reserved the only available train that fits your times. The fare is NT$180. You may cancel without a fee until thirty minutes before departure; later cancellations are not refundable. Your ticket is attached. Please arrive at the platform at least ten minutes before the train leaves.",
-      "passageZh": "文件一——星期二 Eastford 至 Milltown 班次\nA 車：08:00 出發，09:15 抵達，仍有座位。\nB 車：08:30 出發，10:20 抵達，仍有座位。\nC 車：09:00 出發，10:05 抵達，已客滿。\nD 車：09:35 出發，11:00 抵達，仍有座位。\n\n文件二——Priya 的訊息\n我不能在上午八點十五分前離開 Eastford。約定地點靠近 Milltown 車站，但我最遲必須十點半抵達車站。請訂同時符合兩條件的班次，我不想靠候補。\n\n文件三——訂票回覆\n已訂好唯一符合時間且有座位的班次，票價新臺幣一百八十元。發車前三十分鐘以前可免費取消；之後取消不退款。車票已附上，請至少提前十分鐘到月台。"
+      "passage": "DOCUMENT 1 — Tuesday trains from Eastford to Milltown\nTrain A: departs 8:00 a.m.; arrives 9:15 a.m.; seats available.\nTrain B: departs 8:30 a.m.; arrives 10:20 a.m.; seats available.\nTrain C: departs 9:00 a.m.; arrives 10:05 a.m.; fully booked.\nTrain D: departs 9:35 a.m.; arrives 11:00 a.m.; seats available.\n\nDOCUMENT 2 — Booking email thread: Priya’s request\nI cannot leave Eastford before 8:15 a.m. My appointment is near Milltown station, and I must arrive at the station no later than 10:30. Please reserve a train that meets both conditions. I do not want to rely on a waiting list.\n\nBooking agent’s reply\nI reserved the only available train that fits your times. The fare is NT$180. You may cancel without a fee until thirty minutes before departure; later cancellations are not refundable. Your ticket is attached. Please arrive at the platform at least ten minutes before the train leaves.",
+      "passageZh": "文件一——星期二 Eastford 至 Milltown 班次\nA 車：08:00 出發，09:15 抵達，仍有座位。\nB 車：08:30 出發，10:20 抵達，仍有座位。\nC 車：09:00 出發，10:05 抵達，已客滿。\nD 車：09:35 出發，11:00 抵達，仍有座位。\n\n文件二——訂票往返郵件：Priya 的請求\n我不能在上午八點十五分前離開 Eastford。約定地點靠近 Milltown 車站，但我最遲必須十點半抵達車站。請訂同時符合兩條件的班次，我不想靠候補。\n\n訂票人員回覆\n已訂好唯一符合時間且有座位的班次，票價新臺幣一百八十元。發車前三十分鐘以前可免費取消；之後取消不退款。車票已附上，請至少提前十分鐘到月台。"
     },
     {
       "id": "t02-r-p7-13",
@@ -2015,8 +2019,8 @@
       "title": "Workshop quote and invoice",
       "titleZh": "工作坊報價與帳單",
       "topic": "business",
-      "passage": "DOCUMENT 1 — Workshop quotation\nTraining fee: NT$750 per participant. Groups of ten or more receive a 10% discount on training fees. Room rental is a fixed NT$2,000 and is not discounted. All figures are final charges; no further tax or service fee will be added. A deposit of NT$3,000 is deducted from the final amount due.\n\nDOCUMENT 2 — Booking confirmation\nThank you for confirming twelve participants for the communication workshop on July 9. We have received your NT$3,000 deposit. No additional participants have been added.\n\nDOCUMENT 3 — Invoice received\nTraining: 12 × NT$750 = NT$9,000\nRoom rental: NT$2,000\nLess deposit: NT$3,000\nBalance due: NT$8,000\n\nDOCUMENT 4 — Organizer’s email\nThe participant count and deposit are correct, but the invoice appears to omit the discount in your quotation. Please send a corrected invoice before we arrange the balance payment.",
-      "passageZh": "文件一——工作坊報價\n訓練費每人新臺幣七百五十元。十人以上團體的訓練費享九折。場租固定兩千元，不打折。所有數字皆為最終費用，不另加稅或服務費。三千元訂金會自最後應付金額扣除。\n\n文件二——訂位確認\n感謝確認七月九日溝通工作坊共十二人參加。已收到三千元訂金，沒有追加參加者。\n\n文件三——收到的帳單\n訓練費：12 × 750 = 9,000 元\n場租：2,000 元\n扣除訂金：3,000 元\n應付餘額：8,000 元\n\n文件四——主辦人電子郵件\n參加人數及訂金正確，但帳單似乎漏掉報價中的折扣。請寄更正帳單，我們再安排支付餘額。"
+      "passage": "DOCUMENT 1 — Workshop quotation\nTraining fee: NT$750 per participant. Groups of ten or more receive a 10% discount on training fees. Room rental is a fixed NT$2,000 and is not discounted. All figures are final charges; no further tax or service fee will be added. A deposit of NT$3,000 is deducted from the final amount due.\n\nDOCUMENT 2 — Booking confirmation and billing statement\nThank you for confirming twelve participants for the communication workshop on July 9. We have received your NT$3,000 deposit. No additional participants have been added.\n\nBilling statement\nTraining: 12 × NT$750 = NT$9,000\nRoom rental: NT$2,000\nLess deposit: NT$3,000\nBalance due: NT$8,000\n\nDOCUMENT 3 — Organizer’s email\nThe participant count and deposit are correct, but the invoice appears to omit the discount in your quotation. Please send a corrected invoice before we arrange the balance payment.",
+      "passageZh": "文件一——工作坊報價\n訓練費每人新臺幣七百五十元。十人以上團體的訓練費享九折。場租固定兩千元，不打折。所有數字皆為最終費用，不另加稅或服務費。三千元訂金會自最後應付金額扣除。\n\n文件二——訂位確認及帳單\n感謝確認七月九日溝通工作坊共十二人參加。已收到三千元訂金，沒有追加參加者。\n\n帳單明細\n訓練費：12 × 750 = 9,000 元\n場租：2,000 元\n扣除訂金：3,000 元\n應付餘額：8,000 元\n\n文件三——主辦人電子郵件\n參加人數及訂金正確，但帳單似乎漏掉報價中的折扣。請寄更正帳單，我們再安排支付餘額。"
     },
     {
       "id": "t02-r-p7-14",
@@ -3528,7 +3532,7 @@
       "revision": 1
     },
     {
-      "id": "t02-q033",
+      "id": "t02-q033-v2",
       "testId": "test-02",
       "number": 33,
       "part": 3,
@@ -3536,39 +3540,40 @@
       "topic": "technology",
       "difficulty": "intermediate",
       "tags": [
-        "alternative component"
+        "technology",
+        "graphic-inference"
       ],
-      "prompt": "What has not been verified?",
-      "promptZh": "哪一項尚未驗證？",
+      "prompt": "Look at the graphic. Which bench should receive the five samples?",
+      "promptZh": "請看圖表。五件樣品應送到哪個測試工作台？",
       "options": [
         {
           "id": "A",
-          "text": "The part dimensions.",
-          "zh": "零件尺寸。",
-          "whyZh": "男方已說 Its dimensions match，表示尺寸吻合。"
+          "text": "Bench A",
+          "zh": "A 工作台",
+          "whyZh": "A 工作台做阻燃測試。"
         },
         {
           "id": "B",
-          "text": "The number of database entries.",
-          "zh": "資料庫項目數量。",
-          "whyZh": "對話沒有提出查核項目數量的需求。"
+          "text": "Bench B",
+          "zh": "B 工作台",
+          "whyZh": "B 工作台測量接觸電阻，正是尚未確認的項目。"
         },
         {
           "id": "C",
-          "text": "The name of the laboratory.",
-          "zh": "實驗室名稱。",
-          "whyZh": "沒有提到實驗室名稱不明。"
+          "text": "Bench C",
+          "zh": "C 工作台",
+          "whyZh": "C 工作台做溫度循環測試。"
         },
         {
           "id": "D",
-          "text": "The contact resistance.",
-          "zh": "接觸電阻。",
-          "whyZh": "男方明確說尚未檢查 contact resistance。"
+          "text": "Bench D",
+          "zh": "D 工作台",
+          "whyZh": "D 工作台測量外殼尺寸；對話說尺寸已吻合。"
         }
       ],
-      "answer": "D",
-      "explanationZh": "男方明確說尚未檢查 contact resistance。",
-      "evidence": "we have not checked the contact resistance yet",
+      "answer": "B",
+      "explanationZh": "樣品是為了補做接觸電阻測試；圖表中這項測試對應 B 工作台。",
+      "evidence": "“We have not checked the contact resistance yet.” → Contact resistance: Bench B.",
       "vocabulary": [
         {
           "term": "alternative component",
@@ -3581,7 +3586,7 @@
           "note": "keep an order on hold 指暫不繼續處理訂單。"
         }
       ],
-      "revision": 1
+      "revision": 2
     },
     {
       "id": "t02-q034",
@@ -6440,7 +6445,7 @@
       "revision": 1
     },
     {
-      "id": "t02-q085",
+      "id": "t02-q085-v2",
       "testId": "test-02",
       "number": 85,
       "part": 4,
@@ -6448,39 +6453,40 @@
       "topic": "manufacturing",
       "difficulty": "intermediate",
       "tags": [
-        "inventory count"
+        "manufacturing",
+        "graphic-inference"
       ],
-      "prompt": "When will normal material collection resume?",
-      "promptZh": "正常領料何時恢復？",
+      "prompt": "Look at the graphic. Which counter label matches the time normal material collection resumes?",
+      "promptZh": "請看圖表。哪個櫃台標示對應正常領料恢復的時間？",
       "options": [
         {
           "id": "A",
-          "text": "At four thirty in the afternoon.",
-          "zh": "下午四點半。",
-          "whyZh": "最後一句給出恢復時間。"
+          "text": "Maple",
+          "zh": "Maple",
+          "whyZh": "Maple 對應上午十一點。"
         },
         {
           "id": "B",
-          "text": "At eleven in the morning.",
-          "zh": "上午十一點。",
-          "whyZh": "十一點是申請截止，不是恢復領料。"
+          "text": "Oak",
+          "zh": "Oak",
+          "whyZh": "Oak 對應中午十二點。"
         },
         {
           "id": "C",
-          "text": "At noon.",
-          "zh": "中午。",
-          "whyZh": "中午是限制處理期間的開始。"
+          "text": "Cedar",
+          "zh": "Cedar",
+          "whyZh": "Cedar 對應下午四點。"
         },
         {
           "id": "D",
-          "text": "At four in the morning.",
-          "zh": "凌晨四點。",
-          "whyZh": "沒有凌晨安排。"
+          "text": "Pine",
+          "zh": "Pine",
+          "whyZh": "Pine 對應下午四點半。"
         }
       ],
-      "answer": "A",
-      "explanationZh": "最後一句給出恢復時間。",
-      "evidence": "Normal material collection will resume at four thirty.",
+      "answer": "D",
+      "explanationZh": "廣播通知下午四點半恢復正常領料，圖表中下午四點半對應 Pine。",
+      "evidence": "“Normal material collection will resume at four thirty.” → 4:30 p.m.: Pine.",
       "vocabulary": [
         {
           "term": "inventory count",
@@ -6493,7 +6499,7 @@
           "note": "表示暫停後重新開始。"
         }
       ],
-      "revision": 1
+      "revision": 2
     },
     {
       "id": "t02-q086",
@@ -12805,5 +12811,3087 @@
       ],
       "revision": 1
     }
-  ]
+  ],
+  "legacyQuestions": [
+    {
+      "id": "t02-q033",
+      "testId": "test-02",
+      "number": 33,
+      "part": 3,
+      "groupId": "t02-g032",
+      "topic": "technology",
+      "difficulty": "intermediate",
+      "tags": [
+        "alternative component"
+      ],
+      "prompt": "What has not been verified?",
+      "promptZh": "哪一項尚未驗證？",
+      "options": [
+        {
+          "id": "A",
+          "text": "The part dimensions.",
+          "zh": "零件尺寸。",
+          "whyZh": "男方已說 Its dimensions match，表示尺寸吻合。"
+        },
+        {
+          "id": "B",
+          "text": "The number of database entries.",
+          "zh": "資料庫項目數量。",
+          "whyZh": "對話沒有提出查核項目數量的需求。"
+        },
+        {
+          "id": "C",
+          "text": "The name of the laboratory.",
+          "zh": "實驗室名稱。",
+          "whyZh": "沒有提到實驗室名稱不明。"
+        },
+        {
+          "id": "D",
+          "text": "The contact resistance.",
+          "zh": "接觸電阻。",
+          "whyZh": "男方明確說尚未檢查 contact resistance。"
+        }
+      ],
+      "answer": "D",
+      "explanationZh": "男方明確說尚未檢查 contact resistance。",
+      "evidence": "we have not checked the contact resistance yet",
+      "vocabulary": [
+        {
+          "term": "alternative component",
+          "zh": "替代零件",
+          "note": "可供替換的零件；本題仍須先驗證特定性能。"
+        },
+        {
+          "term": "on hold",
+          "zh": "暫緩",
+          "note": "keep an order on hold 指暫不繼續處理訂單。"
+        }
+      ],
+      "revision": 1
+    },
+    {
+      "id": "t02-q085",
+      "testId": "test-02",
+      "number": 85,
+      "part": 4,
+      "groupId": "t02-g049",
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "inventory count"
+      ],
+      "prompt": "When will normal material collection resume?",
+      "promptZh": "正常領料何時恢復？",
+      "options": [
+        {
+          "id": "A",
+          "text": "At four thirty in the afternoon.",
+          "zh": "下午四點半。",
+          "whyZh": "最後一句給出恢復時間。"
+        },
+        {
+          "id": "B",
+          "text": "At eleven in the morning.",
+          "zh": "上午十一點。",
+          "whyZh": "十一點是申請截止，不是恢復領料。"
+        },
+        {
+          "id": "C",
+          "text": "At noon.",
+          "zh": "中午。",
+          "whyZh": "中午是限制處理期間的開始。"
+        },
+        {
+          "id": "D",
+          "text": "At four in the morning.",
+          "zh": "凌晨四點。",
+          "whyZh": "沒有凌晨安排。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "最後一句給出恢復時間。",
+      "evidence": "Normal material collection will resume at four thirty.",
+      "vocabulary": [
+        {
+          "term": "inventory count",
+          "zh": "盤點",
+          "note": "實際核對庫存品項與數量的作業。"
+        },
+        {
+          "term": "resume",
+          "zh": "恢復",
+          "note": "表示暫停後重新開始。"
+        }
+      ],
+      "revision": 1
+    }
+  ],
+  "listeningPlan": {
+    "schemaVersion": 1,
+    "testId": "test-02",
+    "duration": 2700,
+    "timing": "Original practice pacing; not an ETS recording or official timing specification.",
+    "frames": [
+      {
+        "src": "audio/formal/directions-01.mp3",
+        "start": 0.25,
+        "end": 21.47246,
+        "duration": 21.22246,
+        "kind": "audio",
+        "role": "direction",
+        "part": 1,
+        "groupId": "t02-g001",
+        "at": 0
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 0.25,
+        "end": 1.01471,
+        "duration": 0.76471,
+        "kind": "audio",
+        "role": "cue",
+        "part": 1,
+        "groupId": "t02-g001",
+        "at": 21.22246
+      },
+      {
+        "src": "audio/t02-g001.mp3",
+        "start": 0,
+        "end": 10.44,
+        "duration": 10.44,
+        "kind": "audio",
+        "role": "passage",
+        "part": 1,
+        "groupId": "t02-g001",
+        "at": 21.98717
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 1,
+        "groupId": "t02-g001",
+        "questionId": "t02-q001",
+        "at": 32.42717
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 1.26471,
+        "end": 2.10425,
+        "duration": 0.83954,
+        "kind": "audio",
+        "role": "cue",
+        "part": 1,
+        "groupId": "t02-g002",
+        "at": 43.72308
+      },
+      {
+        "src": "audio/t02-g002.mp3",
+        "start": 0,
+        "end": 11.784,
+        "duration": 11.784,
+        "kind": "audio",
+        "role": "passage",
+        "part": 1,
+        "groupId": "t02-g002",
+        "at": 44.56262
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 1,
+        "groupId": "t02-g002",
+        "questionId": "t02-q002",
+        "at": 56.34662
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 2.35425,
+        "end": 3.18483,
+        "duration": 0.83058,
+        "kind": "audio",
+        "role": "cue",
+        "part": 1,
+        "groupId": "t02-g003",
+        "at": 67.64253
+      },
+      {
+        "src": "audio/t02-g003.mp3",
+        "start": 0,
+        "end": 11.28,
+        "duration": 11.28,
+        "kind": "audio",
+        "role": "passage",
+        "part": 1,
+        "groupId": "t02-g003",
+        "at": 68.47311
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 1,
+        "groupId": "t02-g003",
+        "questionId": "t02-q003",
+        "at": 79.75311
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 3.43483,
+        "end": 4.23721,
+        "duration": 0.80237,
+        "kind": "audio",
+        "role": "cue",
+        "part": 1,
+        "groupId": "t02-g004",
+        "at": 91.04902
+      },
+      {
+        "src": "audio/t02-g004.mp3",
+        "start": 0,
+        "end": 11.64,
+        "duration": 11.64,
+        "kind": "audio",
+        "role": "passage",
+        "part": 1,
+        "groupId": "t02-g004",
+        "at": 91.85139
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 1,
+        "groupId": "t02-g004",
+        "questionId": "t02-q004",
+        "at": 103.49139
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 4.48721,
+        "end": 5.38146,
+        "duration": 0.89425,
+        "kind": "audio",
+        "role": "cue",
+        "part": 1,
+        "groupId": "t02-g005",
+        "at": 114.7873
+      },
+      {
+        "src": "audio/t02-g005.mp3",
+        "start": 0,
+        "end": 10.368,
+        "duration": 10.368,
+        "kind": "audio",
+        "role": "passage",
+        "part": 1,
+        "groupId": "t02-g005",
+        "at": 115.68155
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 1,
+        "groupId": "t02-g005",
+        "questionId": "t02-q005",
+        "at": 126.04955
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 5.63146,
+        "end": 6.51867,
+        "duration": 0.88721,
+        "kind": "audio",
+        "role": "cue",
+        "part": 1,
+        "groupId": "t02-g006",
+        "at": 137.34546
+      },
+      {
+        "src": "audio/t02-g006.mp3",
+        "start": 0,
+        "end": 11.568,
+        "duration": 11.568,
+        "kind": "audio",
+        "role": "passage",
+        "part": 1,
+        "groupId": "t02-g006",
+        "at": 138.23267
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 1,
+        "groupId": "t02-g006",
+        "questionId": "t02-q006",
+        "at": 149.80067
+      },
+      {
+        "src": "audio/formal/directions-01.mp3",
+        "start": 21.72246,
+        "end": 32.69371,
+        "duration": 10.97125,
+        "kind": "audio",
+        "role": "direction",
+        "part": 2,
+        "groupId": "t02-g007",
+        "at": 161.09658
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 6.76867,
+        "end": 7.64404,
+        "duration": 0.87538,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g007",
+        "at": 172.06783
+      },
+      {
+        "src": "audio/t02-g007.mp3",
+        "start": 0,
+        "end": 9.936,
+        "duration": 9.936,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g007",
+        "at": 172.94321
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g007",
+        "questionId": "t02-q007",
+        "at": 182.87921
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 7.89404,
+        "end": 8.71804,
+        "duration": 0.824,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g008",
+        "at": 194.17512
+      },
+      {
+        "src": "audio/t02-g008.mp3",
+        "start": 0,
+        "end": 9.288,
+        "duration": 9.288,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g008",
+        "at": 194.99912
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g008",
+        "questionId": "t02-q008",
+        "at": 204.28712
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 8.96804,
+        "end": 9.794,
+        "duration": 0.82596,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g009",
+        "at": 215.58303
+      },
+      {
+        "src": "audio/t02-g009.mp3",
+        "start": 0,
+        "end": 11.184,
+        "duration": 11.184,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g009",
+        "at": 216.40899
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g009",
+        "questionId": "t02-q009",
+        "at": 227.59299
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 10.044,
+        "end": 10.86983,
+        "duration": 0.82583,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g010",
+        "at": 238.8889
+      },
+      {
+        "src": "audio/t02-g010.mp3",
+        "start": 0,
+        "end": 9.984,
+        "duration": 9.984,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g010",
+        "at": 239.71473
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g010",
+        "questionId": "t02-q010",
+        "at": 249.69873
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 11.11983,
+        "end": 12.06871,
+        "duration": 0.94888,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g011",
+        "at": 260.99464
+      },
+      {
+        "src": "audio/t02-g011.mp3",
+        "start": 0,
+        "end": 10.368,
+        "duration": 10.368,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g011",
+        "at": 261.94352
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g011",
+        "questionId": "t02-q011",
+        "at": 272.31152
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 12.31871,
+        "end": 13.26212,
+        "duration": 0.94342,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g012",
+        "at": 283.60743
+      },
+      {
+        "src": "audio/t02-g012.mp3",
+        "start": 0,
+        "end": 10.32,
+        "duration": 10.32,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g012",
+        "at": 284.55085
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g012",
+        "questionId": "t02-q012",
+        "at": 294.87085
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 13.51212,
+        "end": 14.59388,
+        "duration": 1.08175,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g013",
+        "at": 306.16676
+      },
+      {
+        "src": "audio/t02-g013.mp3",
+        "start": 0,
+        "end": 10.416,
+        "duration": 10.416,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g013",
+        "at": 307.24851
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g013",
+        "questionId": "t02-q013",
+        "at": 317.66451
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 14.84388,
+        "end": 15.84771,
+        "duration": 1.00383,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g014",
+        "at": 328.96042
+      },
+      {
+        "src": "audio/t02-g014.mp3",
+        "start": 0,
+        "end": 10.824,
+        "duration": 10.824,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g014",
+        "at": 329.96425
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g014",
+        "questionId": "t02-q014",
+        "at": 340.78825
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 16.09771,
+        "end": 17.09471,
+        "duration": 0.997,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g015",
+        "at": 352.08416
+      },
+      {
+        "src": "audio/t02-g015.mp3",
+        "start": 0,
+        "end": 11.208,
+        "duration": 11.208,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g015",
+        "at": 353.08116
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g015",
+        "questionId": "t02-q015",
+        "at": 364.28916
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 17.34471,
+        "end": 18.38175,
+        "duration": 1.03704,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g016",
+        "at": 375.58507
+      },
+      {
+        "src": "audio/t02-g016.mp3",
+        "start": 0,
+        "end": 10.416,
+        "duration": 10.416,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g016",
+        "at": 376.62211
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g016",
+        "questionId": "t02-q016",
+        "at": 387.03811
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 18.63175,
+        "end": 19.7295,
+        "duration": 1.09775,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g017",
+        "at": 398.33402
+      },
+      {
+        "src": "audio/t02-g017.mp3",
+        "start": 0,
+        "end": 11.328,
+        "duration": 11.328,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g017",
+        "at": 399.43177
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g017",
+        "questionId": "t02-q017",
+        "at": 410.75977
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 19.9795,
+        "end": 20.95508,
+        "duration": 0.97558,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g018",
+        "at": 422.05568
+      },
+      {
+        "src": "audio/t02-g018.mp3",
+        "start": 0,
+        "end": 10.44,
+        "duration": 10.44,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g018",
+        "at": 423.03126
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g018",
+        "questionId": "t02-q018",
+        "at": 433.47126
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 21.20508,
+        "end": 22.25483,
+        "duration": 1.04975,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g019",
+        "at": 444.76717
+      },
+      {
+        "src": "audio/t02-g019.mp3",
+        "start": 0,
+        "end": 10.488,
+        "duration": 10.488,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g019",
+        "at": 445.81692
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g019",
+        "questionId": "t02-q019",
+        "at": 456.30492
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 22.50483,
+        "end": 23.47275,
+        "duration": 0.96792,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g020",
+        "at": 467.60083
+      },
+      {
+        "src": "audio/t02-g020.mp3",
+        "start": 0,
+        "end": 10.608,
+        "duration": 10.608,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g020",
+        "at": 468.56875
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g020",
+        "questionId": "t02-q020",
+        "at": 479.17675
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 23.72275,
+        "end": 24.83521,
+        "duration": 1.11246,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g021",
+        "at": 490.47266
+      },
+      {
+        "src": "audio/t02-g021.mp3",
+        "start": 0,
+        "end": 10.848,
+        "duration": 10.848,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g021",
+        "at": 491.58512
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g021",
+        "questionId": "t02-q021",
+        "at": 502.43312
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 25.08521,
+        "end": 26.19542,
+        "duration": 1.11021,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g022",
+        "at": 513.72903
+      },
+      {
+        "src": "audio/t02-g022.mp3",
+        "start": 0,
+        "end": 12.048,
+        "duration": 12.048,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g022",
+        "at": 514.83924
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g022",
+        "questionId": "t02-q022",
+        "at": 526.88724
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 26.44542,
+        "end": 27.63458,
+        "duration": 1.18917,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g023",
+        "at": 538.18315
+      },
+      {
+        "src": "audio/t02-g023.mp3",
+        "start": 0,
+        "end": 11.712,
+        "duration": 11.712,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g023",
+        "at": 539.37232
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g023",
+        "questionId": "t02-q023",
+        "at": 551.08432
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 27.88458,
+        "end": 29.06821,
+        "duration": 1.18362,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g024",
+        "at": 562.38023
+      },
+      {
+        "src": "audio/t02-g024.mp3",
+        "start": 0,
+        "end": 10.296,
+        "duration": 10.296,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g024",
+        "at": 563.56385
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g024",
+        "questionId": "t02-q024",
+        "at": 573.85985
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 29.31821,
+        "end": 30.50158,
+        "duration": 1.18338,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g025",
+        "at": 585.15576
+      },
+      {
+        "src": "audio/t02-g025.mp3",
+        "start": 0,
+        "end": 11.016,
+        "duration": 11.016,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g025",
+        "at": 586.33914
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g025",
+        "questionId": "t02-q025",
+        "at": 597.35514
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 30.75158,
+        "end": 31.93379,
+        "duration": 1.18221,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g026",
+        "at": 608.65105
+      },
+      {
+        "src": "audio/t02-g026.mp3",
+        "start": 0,
+        "end": 10.728,
+        "duration": 10.728,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g026",
+        "at": 609.83326
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g026",
+        "questionId": "t02-q026",
+        "at": 620.56126
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 32.18379,
+        "end": 33.39988,
+        "duration": 1.21608,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g027",
+        "at": 631.85717
+      },
+      {
+        "src": "audio/t02-g027.mp3",
+        "start": 0,
+        "end": 12.288,
+        "duration": 12.288,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g027",
+        "at": 633.07325
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g027",
+        "questionId": "t02-q027",
+        "at": 645.36125
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 33.64988,
+        "end": 34.77158,
+        "duration": 1.12171,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g028",
+        "at": 656.65716
+      },
+      {
+        "src": "audio/t02-g028.mp3",
+        "start": 0,
+        "end": 10.776,
+        "duration": 10.776,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g028",
+        "at": 657.77887
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g028",
+        "questionId": "t02-q028",
+        "at": 668.55487
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 35.02158,
+        "end": 36.16079,
+        "duration": 1.13921,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g029",
+        "at": 679.85078
+      },
+      {
+        "src": "audio/t02-g029.mp3",
+        "start": 0,
+        "end": 11.136,
+        "duration": 11.136,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g029",
+        "at": 680.98999
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g029",
+        "questionId": "t02-q029",
+        "at": 692.12599
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 36.41079,
+        "end": 37.30179,
+        "duration": 0.891,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g030",
+        "at": 703.4219
+      },
+      {
+        "src": "audio/t02-g030.mp3",
+        "start": 0,
+        "end": 10.68,
+        "duration": 10.68,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g030",
+        "at": 704.3129
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g030",
+        "questionId": "t02-q030",
+        "at": 714.9929
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 37.55179,
+        "end": 38.64229,
+        "duration": 1.0905,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g031",
+        "at": 726.28881
+      },
+      {
+        "src": "audio/t02-g031.mp3",
+        "start": 0,
+        "end": 9.624,
+        "duration": 9.624,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g031",
+        "at": 727.37931
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.29591,
+        "part": 2,
+        "groupId": "t02-g031",
+        "questionId": "t02-q031",
+        "at": 737.00331
+      },
+      {
+        "src": "audio/formal/directions-01.mp3",
+        "start": 32.94371,
+        "end": 50.69896,
+        "duration": 17.75525,
+        "kind": "audio",
+        "role": "direction",
+        "part": 3,
+        "groupId": "t02-g032",
+        "at": 748.29922
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 38.89229,
+        "end": 42.78983,
+        "duration": 3.89754,
+        "kind": "audio",
+        "role": "cue",
+        "part": 3,
+        "groupId": "t02-g032",
+        "at": 766.05447
+      },
+      {
+        "src": "audio/t02-g032.mp3",
+        "start": 0,
+        "end": 23.52,
+        "duration": 23.52,
+        "kind": "audio",
+        "role": "passage",
+        "part": 3,
+        "groupId": "t02-g032",
+        "at": 769.95201
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 43.03983,
+        "end": 46.86458,
+        "duration": 3.82475,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g032",
+        "questionId": "t02-q032",
+        "at": 793.47201
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g032",
+        "questionId": "t02-q032",
+        "at": 797.29676
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 47.11458,
+        "end": 51.79833,
+        "duration": 4.68375,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g032",
+        "questionId": "t02-q033-v2",
+        "at": 811.59267
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g032",
+        "questionId": "t02-q033-v2",
+        "at": 816.27642
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 52.04833,
+        "end": 54.63454,
+        "duration": 2.58621,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g032",
+        "questionId": "t02-q034",
+        "at": 830.57233
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g032",
+        "questionId": "t02-q034",
+        "at": 833.15854
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 54.88454,
+        "end": 58.95633,
+        "duration": 4.07179,
+        "kind": "audio",
+        "role": "cue",
+        "part": 3,
+        "groupId": "t02-g033",
+        "at": 847.45445
+      },
+      {
+        "src": "audio/t02-g033.mp3",
+        "start": 0,
+        "end": 27.672,
+        "duration": 27.672,
+        "kind": "audio",
+        "role": "passage",
+        "part": 3,
+        "groupId": "t02-g033",
+        "at": 851.52624
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 59.20633,
+        "end": 61.955,
+        "duration": 2.74867,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g033",
+        "questionId": "t02-q035",
+        "at": 879.19824
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g033",
+        "questionId": "t02-q035",
+        "at": 881.94691
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 62.205,
+        "end": 65.10329,
+        "duration": 2.89829,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g033",
+        "questionId": "t02-q036",
+        "at": 896.24282
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g033",
+        "questionId": "t02-q036",
+        "at": 899.14111
+      },
+      {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 65.35329,
+        "end": 68.61713,
+        "duration": 3.26383,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g033",
+        "questionId": "t02-q037",
+        "at": 913.43702
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g033",
+        "questionId": "t02-q037",
+        "at": 916.70085
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 0.25,
+        "end": 3.82842,
+        "duration": 3.57842,
+        "kind": "audio",
+        "role": "cue",
+        "part": 3,
+        "groupId": "t02-g034",
+        "at": 930.99676
+      },
+      {
+        "src": "audio/t02-g034.mp3",
+        "start": 0,
+        "end": 26.52,
+        "duration": 26.52,
+        "kind": "audio",
+        "role": "passage",
+        "part": 3,
+        "groupId": "t02-g034",
+        "at": 934.57518
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 4.07842,
+        "end": 7.31479,
+        "duration": 3.23637,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g034",
+        "questionId": "t02-q038",
+        "at": 961.09518
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g034",
+        "questionId": "t02-q038",
+        "at": 964.33155
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 7.56479,
+        "end": 10.40592,
+        "duration": 2.84112,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g034",
+        "questionId": "t02-q039",
+        "at": 978.62746
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g034",
+        "questionId": "t02-q039",
+        "at": 981.46858
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 10.65592,
+        "end": 13.03071,
+        "duration": 2.37479,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g034",
+        "questionId": "t02-q040",
+        "at": 995.76449
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g034",
+        "questionId": "t02-q040",
+        "at": 998.13928
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 13.28071,
+        "end": 17.10367,
+        "duration": 3.82296,
+        "kind": "audio",
+        "role": "cue",
+        "part": 3,
+        "groupId": "t02-g035",
+        "at": 1012.43519
+      },
+      {
+        "src": "audio/t02-g035.mp3",
+        "start": 0,
+        "end": 25.176,
+        "duration": 25.176,
+        "kind": "audio",
+        "role": "passage",
+        "part": 3,
+        "groupId": "t02-g035",
+        "at": 1016.25815
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 17.35367,
+        "end": 20.049,
+        "duration": 2.69533,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g035",
+        "questionId": "t02-q041",
+        "at": 1041.43415
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g035",
+        "questionId": "t02-q041",
+        "at": 1044.12948
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 20.299,
+        "end": 22.94004,
+        "duration": 2.64104,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g035",
+        "questionId": "t02-q042",
+        "at": 1058.42539
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g035",
+        "questionId": "t02-q042",
+        "at": 1061.06643
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 23.19004,
+        "end": 26.37358,
+        "duration": 3.18354,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g035",
+        "questionId": "t02-q043",
+        "at": 1075.36234
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g035",
+        "questionId": "t02-q043",
+        "at": 1078.54588
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 26.62358,
+        "end": 30.58933,
+        "duration": 3.96575,
+        "kind": "audio",
+        "role": "cue",
+        "part": 3,
+        "groupId": "t02-g036",
+        "at": 1092.84179
+      },
+      {
+        "src": "audio/t02-g036.mp3",
+        "start": 0,
+        "end": 26.016,
+        "duration": 26.016,
+        "kind": "audio",
+        "role": "passage",
+        "part": 3,
+        "groupId": "t02-g036",
+        "at": 1096.80754
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 30.83933,
+        "end": 35.06158,
+        "duration": 4.22225,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g036",
+        "questionId": "t02-q044",
+        "at": 1122.82354
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g036",
+        "questionId": "t02-q044",
+        "at": 1127.04579
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 35.31158,
+        "end": 38.40979,
+        "duration": 3.09821,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g036",
+        "questionId": "t02-q045",
+        "at": 1141.3417
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g036",
+        "questionId": "t02-q045",
+        "at": 1144.43991
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 38.65979,
+        "end": 42.12375,
+        "duration": 3.46396,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g036",
+        "questionId": "t02-q046",
+        "at": 1158.73582
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g036",
+        "questionId": "t02-q046",
+        "at": 1162.19978
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 42.37375,
+        "end": 46.34463,
+        "duration": 3.97087,
+        "kind": "audio",
+        "role": "cue",
+        "part": 3,
+        "groupId": "t02-g037",
+        "at": 1176.49569
+      },
+      {
+        "src": "audio/t02-g037.mp3",
+        "start": 0,
+        "end": 24.624,
+        "duration": 24.624,
+        "kind": "audio",
+        "role": "passage",
+        "part": 3,
+        "groupId": "t02-g037",
+        "at": 1180.46656
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 46.59463,
+        "end": 49.66029,
+        "duration": 3.06567,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g037",
+        "questionId": "t02-q047",
+        "at": 1205.09056
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g037",
+        "questionId": "t02-q047",
+        "at": 1208.15623
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 49.91029,
+        "end": 53.19325,
+        "duration": 3.28296,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g037",
+        "questionId": "t02-q048",
+        "at": 1222.45214
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g037",
+        "questionId": "t02-q048",
+        "at": 1225.7351
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 53.44325,
+        "end": 55.9515,
+        "duration": 2.50825,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g037",
+        "questionId": "t02-q049",
+        "at": 1240.03101
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g037",
+        "questionId": "t02-q049",
+        "at": 1242.53926
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 56.2015,
+        "end": 59.80392,
+        "duration": 3.60242,
+        "kind": "audio",
+        "role": "cue",
+        "part": 3,
+        "groupId": "t02-g038",
+        "at": 1256.83517
+      },
+      {
+        "src": "audio/t02-g038.mp3",
+        "start": 0,
+        "end": 27.408,
+        "duration": 27.408,
+        "kind": "audio",
+        "role": "passage",
+        "part": 3,
+        "groupId": "t02-g038",
+        "at": 1260.43759
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 60.05392,
+        "end": 64.24658,
+        "duration": 4.19267,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g038",
+        "questionId": "t02-q050",
+        "at": 1287.84559
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g038",
+        "questionId": "t02-q050",
+        "at": 1292.03826
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 64.49658,
+        "end": 68.12496,
+        "duration": 3.62838,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g038",
+        "questionId": "t02-q051",
+        "at": 1306.33417
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g038",
+        "questionId": "t02-q051",
+        "at": 1309.96255
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 0.25,
+        "end": 3.77787,
+        "duration": 3.52787,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g038",
+        "questionId": "t02-q052",
+        "at": 1324.25846
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g038",
+        "questionId": "t02-q052",
+        "at": 1327.78633
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 4.02787,
+        "end": 7.95071,
+        "duration": 3.92283,
+        "kind": "audio",
+        "role": "cue",
+        "part": 3,
+        "groupId": "t02-g039",
+        "at": 1342.08224
+      },
+      {
+        "src": "audio/t02-g039.mp3",
+        "start": 0,
+        "end": 27.264,
+        "duration": 27.264,
+        "kind": "audio",
+        "role": "passage",
+        "part": 3,
+        "groupId": "t02-g039",
+        "at": 1346.00507
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 8.20071,
+        "end": 11.02587,
+        "duration": 2.82517,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g039",
+        "questionId": "t02-q053",
+        "at": 1373.26907
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g039",
+        "questionId": "t02-q053",
+        "at": 1376.09424
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 11.27587,
+        "end": 14.84479,
+        "duration": 3.56892,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g039",
+        "questionId": "t02-q054",
+        "at": 1390.39015
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g039",
+        "questionId": "t02-q054",
+        "at": 1393.95907
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 15.09479,
+        "end": 18.29113,
+        "duration": 3.19633,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g039",
+        "questionId": "t02-q055",
+        "at": 1408.25498
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g039",
+        "questionId": "t02-q055",
+        "at": 1411.45131
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 18.54113,
+        "end": 22.44529,
+        "duration": 3.90417,
+        "kind": "audio",
+        "role": "cue",
+        "part": 3,
+        "groupId": "t02-g040",
+        "at": 1425.74722
+      },
+      {
+        "src": "audio/t02-g040.mp3",
+        "start": 0,
+        "end": 25.056,
+        "duration": 25.056,
+        "kind": "audio",
+        "role": "passage",
+        "part": 3,
+        "groupId": "t02-g040",
+        "at": 1429.65139
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 22.69529,
+        "end": 25.7735,
+        "duration": 3.07821,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g040",
+        "questionId": "t02-q056",
+        "at": 1454.70739
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g040",
+        "questionId": "t02-q056",
+        "at": 1457.7856
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 26.0235,
+        "end": 28.86075,
+        "duration": 2.83725,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g040",
+        "questionId": "t02-q057",
+        "at": 1472.08151
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g040",
+        "questionId": "t02-q057",
+        "at": 1474.91876
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 29.11075,
+        "end": 32.48858,
+        "duration": 3.37783,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g040",
+        "questionId": "t02-q058",
+        "at": 1489.21467
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g040",
+        "questionId": "t02-q058",
+        "at": 1492.5925
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 32.73858,
+        "end": 36.75183,
+        "duration": 4.01325,
+        "kind": "audio",
+        "role": "cue",
+        "part": 3,
+        "groupId": "t02-g041",
+        "at": 1506.88841
+      },
+      {
+        "src": "audio/t02-g041.mp3",
+        "start": 0,
+        "end": 22.392,
+        "duration": 22.392,
+        "kind": "audio",
+        "role": "passage",
+        "part": 3,
+        "groupId": "t02-g041",
+        "at": 1510.90166
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 37.00183,
+        "end": 40.07113,
+        "duration": 3.06929,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g041",
+        "questionId": "t02-q059",
+        "at": 1533.29366
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g041",
+        "questionId": "t02-q059",
+        "at": 1536.36295
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 40.32113,
+        "end": 43.07754,
+        "duration": 2.75642,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g041",
+        "questionId": "t02-q060",
+        "at": 1550.65886
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g041",
+        "questionId": "t02-q060",
+        "at": 1553.41528
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 43.32754,
+        "end": 45.75937,
+        "duration": 2.43183,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g041",
+        "questionId": "t02-q061",
+        "at": 1567.71119
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g041",
+        "questionId": "t02-q061",
+        "at": 1570.14302
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 46.00937,
+        "end": 50.02271,
+        "duration": 4.01333,
+        "kind": "audio",
+        "role": "cue",
+        "part": 3,
+        "groupId": "t02-g042",
+        "at": 1584.43893
+      },
+      {
+        "src": "audio/t02-g042.mp3",
+        "start": 0,
+        "end": 22.488,
+        "duration": 22.488,
+        "kind": "audio",
+        "role": "passage",
+        "part": 3,
+        "groupId": "t02-g042",
+        "at": 1588.45226
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 50.27271,
+        "end": 54.2205,
+        "duration": 3.94779,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g042",
+        "questionId": "t02-q062",
+        "at": 1610.94026
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g042",
+        "questionId": "t02-q062",
+        "at": 1614.88805
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 54.4705,
+        "end": 57.37225,
+        "duration": 2.90175,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g042",
+        "questionId": "t02-q063",
+        "at": 1629.18396
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g042",
+        "questionId": "t02-q063",
+        "at": 1632.08571
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 57.62225,
+        "end": 60.11688,
+        "duration": 2.49463,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g042",
+        "questionId": "t02-q064",
+        "at": 1646.38162
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g042",
+        "questionId": "t02-q064",
+        "at": 1648.87625
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 60.36688,
+        "end": 64.48779,
+        "duration": 4.12092,
+        "kind": "audio",
+        "role": "cue",
+        "part": 3,
+        "groupId": "t02-g043",
+        "at": 1663.17216
+      },
+      {
+        "src": "audio/t02-g043.mp3",
+        "start": 0,
+        "end": 26.088,
+        "duration": 26.088,
+        "kind": "audio",
+        "role": "passage",
+        "part": 3,
+        "groupId": "t02-g043",
+        "at": 1667.29308
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 64.73779,
+        "end": 68.00825,
+        "duration": 3.27046,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g043",
+        "questionId": "t02-q065",
+        "at": 1693.38108
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g043",
+        "questionId": "t02-q065",
+        "at": 1696.65154
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 0.25,
+        "end": 3.493,
+        "duration": 3.243,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g043",
+        "questionId": "t02-q066",
+        "at": 1710.94745
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g043",
+        "questionId": "t02-q066",
+        "at": 1714.19045
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 3.743,
+        "end": 6.67333,
+        "duration": 2.93033,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g043",
+        "questionId": "t02-q067",
+        "at": 1728.48636
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g043",
+        "questionId": "t02-q067",
+        "at": 1731.41669
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 6.92333,
+        "end": 10.74983,
+        "duration": 3.8265,
+        "kind": "audio",
+        "role": "cue",
+        "part": 3,
+        "groupId": "t02-g044",
+        "at": 1745.7126
+      },
+      {
+        "src": "audio/t02-g044.mp3",
+        "start": 0,
+        "end": 24.504,
+        "duration": 24.504,
+        "kind": "audio",
+        "role": "passage",
+        "part": 3,
+        "groupId": "t02-g044",
+        "at": 1749.5391
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 10.99983,
+        "end": 13.46879,
+        "duration": 2.46896,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g044",
+        "questionId": "t02-q068",
+        "at": 1774.0431
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g044",
+        "questionId": "t02-q068",
+        "at": 1776.51206
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 13.71879,
+        "end": 17.42221,
+        "duration": 3.70342,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g044",
+        "questionId": "t02-q069",
+        "at": 1790.80797
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g044",
+        "questionId": "t02-q069",
+        "at": 1794.51139
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 17.67221,
+        "end": 21.54892,
+        "duration": 3.87671,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g044",
+        "questionId": "t02-q070",
+        "at": 1808.8073
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 3,
+        "groupId": "t02-g044",
+        "questionId": "t02-q070",
+        "at": 1812.68401
+      },
+      {
+        "src": "audio/formal/directions-01.mp3",
+        "start": 50.94896,
+        "end": 67.48587,
+        "duration": 16.53692,
+        "kind": "audio",
+        "role": "direction",
+        "part": 4,
+        "groupId": "t02-g045",
+        "at": 1826.97992
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 21.79892,
+        "end": 25.20708,
+        "duration": 3.40817,
+        "kind": "audio",
+        "role": "cue",
+        "part": 4,
+        "groupId": "t02-g045",
+        "at": 1843.51684
+      },
+      {
+        "src": "audio/t02-g045.mp3",
+        "start": 0,
+        "end": 26.784,
+        "duration": 26.784,
+        "kind": "audio",
+        "role": "passage",
+        "part": 4,
+        "groupId": "t02-g045",
+        "at": 1846.92501
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 25.45708,
+        "end": 28.23242,
+        "duration": 2.77533,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q071",
+        "at": 1873.70901
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q071",
+        "at": 1876.48434
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 28.48242,
+        "end": 31.23904,
+        "duration": 2.75663,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q072",
+        "at": 1890.78025
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q072",
+        "at": 1893.53688
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 31.48904,
+        "end": 34.94821,
+        "duration": 3.45917,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q073",
+        "at": 1907.83279
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q073",
+        "at": 1911.29196
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 35.19821,
+        "end": 38.74608,
+        "duration": 3.54787,
+        "kind": "audio",
+        "role": "cue",
+        "part": 4,
+        "groupId": "t02-g046",
+        "at": 1925.58787
+      },
+      {
+        "src": "audio/t02-g046.mp3",
+        "start": 0,
+        "end": 29.328,
+        "duration": 29.328,
+        "kind": "audio",
+        "role": "passage",
+        "part": 4,
+        "groupId": "t02-g046",
+        "at": 1929.13574
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 38.99608,
+        "end": 42.13054,
+        "duration": 3.13446,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g046",
+        "questionId": "t02-q074",
+        "at": 1958.46374
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g046",
+        "questionId": "t02-q074",
+        "at": 1961.5982
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 42.38054,
+        "end": 46.044,
+        "duration": 3.66346,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g046",
+        "questionId": "t02-q075",
+        "at": 1975.89411
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g046",
+        "questionId": "t02-q075",
+        "at": 1979.55757
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 46.294,
+        "end": 50.55525,
+        "duration": 4.26125,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g046",
+        "questionId": "t02-q076",
+        "at": 1993.85348
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g046",
+        "questionId": "t02-q076",
+        "at": 1998.11473
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 50.80525,
+        "end": 54.40371,
+        "duration": 3.59846,
+        "kind": "audio",
+        "role": "cue",
+        "part": 4,
+        "groupId": "t02-g047",
+        "at": 2012.41064
+      },
+      {
+        "src": "audio/t02-g047.mp3",
+        "start": 0,
+        "end": 29.04,
+        "duration": 29.04,
+        "kind": "audio",
+        "role": "passage",
+        "part": 4,
+        "groupId": "t02-g047",
+        "at": 2016.0091
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 54.65371,
+        "end": 57.52925,
+        "duration": 2.87554,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g047",
+        "questionId": "t02-q077",
+        "at": 2045.0491
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g047",
+        "questionId": "t02-q077",
+        "at": 2047.92464
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 57.77925,
+        "end": 60.70742,
+        "duration": 2.92817,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g047",
+        "questionId": "t02-q078",
+        "at": 2062.22055
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g047",
+        "questionId": "t02-q078",
+        "at": 2065.14872
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 60.95742,
+        "end": 64.48046,
+        "duration": 3.52304,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g047",
+        "questionId": "t02-q079",
+        "at": 2079.44463
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g047",
+        "questionId": "t02-q079",
+        "at": 2082.96767
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 64.73046,
+        "end": 67.63854,
+        "duration": 2.90808,
+        "kind": "audio",
+        "role": "cue",
+        "part": 4,
+        "groupId": "t02-g048",
+        "at": 2097.26358
+      },
+      {
+        "src": "audio/t02-g048.mp3",
+        "start": 0,
+        "end": 28.704,
+        "duration": 28.704,
+        "kind": "audio",
+        "role": "passage",
+        "part": 4,
+        "groupId": "t02-g048",
+        "at": 2100.17166
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 67.88854,
+        "end": 70.10896,
+        "duration": 2.22042,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g048",
+        "questionId": "t02-q080",
+        "at": 2128.87566
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g048",
+        "questionId": "t02-q080",
+        "at": 2131.09608
+      },
+      {
+        "src": "audio/formal/test-02-cues-05.mp3",
+        "start": 0.25,
+        "end": 3.67575,
+        "duration": 3.42575,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g048",
+        "questionId": "t02-q081",
+        "at": 2145.39199
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g048",
+        "questionId": "t02-q081",
+        "at": 2148.81774
+      },
+      {
+        "src": "audio/formal/test-02-cues-05.mp3",
+        "start": 3.92575,
+        "end": 7.11358,
+        "duration": 3.18783,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g048",
+        "questionId": "t02-q082",
+        "at": 2163.11365
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g048",
+        "questionId": "t02-q082",
+        "at": 2166.30148
+      },
+      {
+        "src": "audio/formal/test-02-cues-05.mp3",
+        "start": 7.36358,
+        "end": 10.52187,
+        "duration": 3.15829,
+        "kind": "audio",
+        "role": "cue",
+        "part": 4,
+        "groupId": "t02-g049",
+        "at": 2180.59739
+      },
+      {
+        "src": "audio/t02-g049.mp3",
+        "start": 0,
+        "end": 27.432,
+        "duration": 27.432,
+        "kind": "audio",
+        "role": "passage",
+        "part": 4,
+        "groupId": "t02-g049",
+        "at": 2183.75568
+      },
+      {
+        "src": "audio/formal/test-02-cues-05.mp3",
+        "start": 10.77187,
+        "end": 14.29254,
+        "duration": 3.52067,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g049",
+        "questionId": "t02-q083",
+        "at": 2211.18768
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g049",
+        "questionId": "t02-q083",
+        "at": 2214.70835
+      },
+      {
+        "src": "audio/formal/test-02-cues-05.mp3",
+        "start": 14.54254,
+        "end": 17.31217,
+        "duration": 2.76963,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g049",
+        "questionId": "t02-q084",
+        "at": 2229.00426
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g049",
+        "questionId": "t02-q084",
+        "at": 2231.77389
+      },
+      {
+        "src": "audio/formal/test-02-cues-05.mp3",
+        "start": 17.56217,
+        "end": 24.37687,
+        "duration": 6.81471,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g049",
+        "questionId": "t02-q085-v2",
+        "at": 2246.0698
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g049",
+        "questionId": "t02-q085-v2",
+        "at": 2252.88451
+      },
+      {
+        "src": "audio/formal/test-02-cues-05.mp3",
+        "start": 24.62687,
+        "end": 27.78346,
+        "duration": 3.15658,
+        "kind": "audio",
+        "role": "cue",
+        "part": 4,
+        "groupId": "t02-g050",
+        "at": 2267.18042
+      },
+      {
+        "src": "audio/t02-g050.mp3",
+        "start": 0,
+        "end": 31.296,
+        "duration": 31.296,
+        "kind": "audio",
+        "role": "passage",
+        "part": 4,
+        "groupId": "t02-g050",
+        "at": 2270.337
+      },
+      {
+        "src": "audio/formal/test-02-cues-05.mp3",
+        "start": 28.03346,
+        "end": 32.00583,
+        "duration": 3.97237,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g050",
+        "questionId": "t02-q086",
+        "at": 2301.633
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g050",
+        "questionId": "t02-q086",
+        "at": 2305.60537
+      },
+      {
+        "src": "audio/formal/test-02-cues-05.mp3",
+        "start": 32.25583,
+        "end": 35.46417,
+        "duration": 3.20833,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g050",
+        "questionId": "t02-q087",
+        "at": 2319.90128
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g050",
+        "questionId": "t02-q087",
+        "at": 2323.10961
+      },
+      {
+        "src": "audio/formal/test-02-cues-05.mp3",
+        "start": 35.71417,
+        "end": 39.26863,
+        "duration": 3.55446,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g050",
+        "questionId": "t02-q088",
+        "at": 2337.40552
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g050",
+        "questionId": "t02-q088",
+        "at": 2340.95998
+      },
+      {
+        "src": "audio/formal/test-02-cues-05.mp3",
+        "start": 39.51863,
+        "end": 42.82688,
+        "duration": 3.30825,
+        "kind": "audio",
+        "role": "cue",
+        "part": 4,
+        "groupId": "t02-g051",
+        "at": 2355.25589
+      },
+      {
+        "src": "audio/t02-g051.mp3",
+        "start": 0,
+        "end": 27.792,
+        "duration": 27.792,
+        "kind": "audio",
+        "role": "passage",
+        "part": 4,
+        "groupId": "t02-g051",
+        "at": 2358.56414
+      },
+      {
+        "src": "audio/formal/test-02-cues-05.mp3",
+        "start": 43.07688,
+        "end": 45.54888,
+        "duration": 2.472,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g051",
+        "questionId": "t02-q089",
+        "at": 2386.35614
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g051",
+        "questionId": "t02-q089",
+        "at": 2388.82814
+      },
+      {
+        "src": "audio/formal/test-02-cues-05.mp3",
+        "start": 45.79888,
+        "end": 47.91958,
+        "duration": 2.12071,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g051",
+        "questionId": "t02-q090",
+        "at": 2403.12405
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g051",
+        "questionId": "t02-q090",
+        "at": 2405.24476
+      },
+      {
+        "src": "audio/formal/test-02-cues-05.mp3",
+        "start": 48.16958,
+        "end": 51.07858,
+        "duration": 2.909,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g051",
+        "questionId": "t02-q091",
+        "at": 2419.54067
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g051",
+        "questionId": "t02-q091",
+        "at": 2422.44967
+      },
+      {
+        "src": "audio/formal/test-02-cues-05.mp3",
+        "start": 51.32858,
+        "end": 54.63638,
+        "duration": 3.30779,
+        "kind": "audio",
+        "role": "cue",
+        "part": 4,
+        "groupId": "t02-g052",
+        "at": 2436.74558
+      },
+      {
+        "src": "audio/t02-g052.mp3",
+        "start": 0,
+        "end": 31.104,
+        "duration": 31.104,
+        "kind": "audio",
+        "role": "passage",
+        "part": 4,
+        "groupId": "t02-g052",
+        "at": 2440.05337
+      },
+      {
+        "src": "audio/formal/test-02-cues-05.mp3",
+        "start": 54.88638,
+        "end": 57.99508,
+        "duration": 3.10871,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g052",
+        "questionId": "t02-q092",
+        "at": 2471.15737
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g052",
+        "questionId": "t02-q092",
+        "at": 2474.26608
+      },
+      {
+        "src": "audio/formal/test-02-cues-05.mp3",
+        "start": 58.24508,
+        "end": 61.58446,
+        "duration": 3.33937,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g052",
+        "questionId": "t02-q093",
+        "at": 2488.56199
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g052",
+        "questionId": "t02-q093",
+        "at": 2491.90136
+      },
+      {
+        "src": "audio/formal/test-02-cues-05.mp3",
+        "start": 61.83446,
+        "end": 64.87117,
+        "duration": 3.03671,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g052",
+        "questionId": "t02-q094",
+        "at": 2506.19727
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g052",
+        "questionId": "t02-q094",
+        "at": 2509.23398
+      },
+      {
+        "src": "audio/formal/test-02-cues-05.mp3",
+        "start": 65.12117,
+        "end": 68.50496,
+        "duration": 3.38379,
+        "kind": "audio",
+        "role": "cue",
+        "part": 4,
+        "groupId": "t02-g053",
+        "at": 2523.52989
+      },
+      {
+        "src": "audio/t02-g053.mp3",
+        "start": 0,
+        "end": 27.072,
+        "duration": 27.072,
+        "kind": "audio",
+        "role": "passage",
+        "part": 4,
+        "groupId": "t02-g053",
+        "at": 2526.91368
+      },
+      {
+        "src": "audio/formal/test-02-cues-06.mp3",
+        "start": 0.25,
+        "end": 3.4795,
+        "duration": 3.2295,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g053",
+        "questionId": "t02-q095",
+        "at": 2553.98568
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g053",
+        "questionId": "t02-q095",
+        "at": 2557.21518
+      },
+      {
+        "src": "audio/formal/test-02-cues-06.mp3",
+        "start": 3.7295,
+        "end": 7.68508,
+        "duration": 3.95558,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g053",
+        "questionId": "t02-q096",
+        "at": 2571.51109
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g053",
+        "questionId": "t02-q096",
+        "at": 2575.46667
+      },
+      {
+        "src": "audio/formal/test-02-cues-06.mp3",
+        "start": 7.93508,
+        "end": 12.01238,
+        "duration": 4.07729,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g053",
+        "questionId": "t02-q097",
+        "at": 2589.76258
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g053",
+        "questionId": "t02-q097",
+        "at": 2593.83987
+      },
+      {
+        "src": "audio/formal/test-02-cues-06.mp3",
+        "start": 12.26238,
+        "end": 15.64746,
+        "duration": 3.38508,
+        "kind": "audio",
+        "role": "cue",
+        "part": 4,
+        "groupId": "t02-g054",
+        "at": 2608.13578
+      },
+      {
+        "src": "audio/t02-g054.mp3",
+        "start": 0,
+        "end": 34.776,
+        "duration": 34.776,
+        "kind": "audio",
+        "role": "passage",
+        "part": 4,
+        "groupId": "t02-g054",
+        "at": 2611.52086
+      },
+      {
+        "src": "audio/formal/test-02-cues-06.mp3",
+        "start": 15.89746,
+        "end": 18.78912,
+        "duration": 2.89167,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g054",
+        "questionId": "t02-q098",
+        "at": 2646.29686
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g054",
+        "questionId": "t02-q098",
+        "at": 2649.18853
+      },
+      {
+        "src": "audio/formal/test-02-cues-06.mp3",
+        "start": 19.03912,
+        "end": 23.27604,
+        "duration": 4.23692,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g054",
+        "questionId": "t02-q099",
+        "at": 2663.48444
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g054",
+        "questionId": "t02-q099",
+        "at": 2667.72136
+      },
+      {
+        "src": "audio/formal/test-02-cues-06.mp3",
+        "start": 23.52604,
+        "end": 27.21246,
+        "duration": 3.68642,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g054",
+        "questionId": "t02-q100",
+        "at": 2682.01727
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.296309999999899,
+        "part": 4,
+        "groupId": "t02-g054",
+        "questionId": "t02-q100",
+        "at": 2685.70369
+      }
+    ]
+  }
 }

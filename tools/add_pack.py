@@ -16,7 +16,7 @@ import tempfile
 
 LIMIT_BYTES = 20 * 1024 * 1024
 LIMIT_QUESTIONS = 5000
-BUILTIN_IDS = {'test-01', 'test-02'}
+BUILTIN_IDS = {'test-01', 'test-02', 'test-03'}
 FORBIDDEN_KEYS = {'__proto__', 'prototype', 'constructor'}
 ID_PATTERN = re.compile(r'[A-Za-z0-9][A-Za-z0-9._:-]{0,95}\Z')
 PACK_ID_PATTERN = re.compile(r'[A-Za-z0-9][A-Za-z0-9_-]{0,63}\Z')
@@ -370,7 +370,7 @@ def main(argv=None):
         pack['subtitle'] = text(args.subtitle, '--subtitle')
     candidate_ids = validate_pack(pack, root)
     pack_id = pack['testId']
-    require(pack_id not in BUILTIN_IDS, '工具保留內建 test-01／test-02，請使用新的 testId。')
+    require(pack_id not in BUILTIN_IDS, '工具保留內建 test-01／test-02／test-03，請使用新的 testId。')
     catalog, catalog_path = load_catalog(root)
     matches = [entry for entry in catalog['tests'] if entry['id'].casefold() == pack_id.casefold()]
     old_entry = matches[0] if matches else None
