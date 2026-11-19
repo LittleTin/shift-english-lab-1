@@ -1,0 +1,820 @@
+{
+  "status": "local-proposal-not-published",
+  "baseRef": "696704b+Q098–100+Q053–055",
+  "priorDeploymentRef": "043b91761f63062708d70f7cda3a6b2046cd4cf9",
+  "oldGroupSha256": "3a0fc9d6e6f9c982994fbacd119e46628e40cf229bcd0800af865ed14733bba5",
+  "oldGroupId": "t01-g046",
+  "newGroup": {
+    "id": "t01-g046-r2",
+    "testId": "test-01",
+    "part": 4,
+    "title": "Switching booking apps without stopping service",
+    "titleZh": "不中斷服務地切換預約系統",
+    "topic": "technology",
+    "passage": "Our new booking app rolls out Monday. Green on the tracker means your test arrived. Wait for IT approval before choosing a slot. Monday teams need a spare computer for the full twenty minutes. Remote teams must reserve loan computers by Friday. Other approved teams switch Wednesday. We’re changing tyres while the bus keeps moving. The old app works on computers not being updated. If your working computer fails, the service desk takes new bookings. Only your team can finish bookings already open.",
+    "passageZh": "我們的新預約系統從星期一開始上線。進度表顯示綠色，只代表收到了你們的測試。選時段前，要先等資訊部門核准。安排在星期一切換的團隊，整整二十分鐘都要有一台備用電腦。遠端團隊要借電腦，最晚要在星期五預約。其他已獲核准的團隊改在星期三切換。這就像公車還在開，我們就得換輪胎。沒有在更新的電腦仍可使用舊系統。如果手邊正在用的電腦故障，服務櫃檯可以接手新的預約。已經開始處理的預約，只有你們自己的團隊能完成。",
+    "audioScript": "Our new booking app rolls out Monday. Green on the tracker means your test arrived. Wait for IT approval before choosing a slot. Monday teams need a spare computer for the full twenty minutes. Remote teams must reserve loan computers by Friday. Other approved teams switch Wednesday. We’re changing tyres while the bus keeps moving. The old app works on computers not being updated. If your working computer fails, the service desk takes new bookings. Only your team can finish bookings already open.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Our new booking app rolls out Monday. Green on the tracker means your test arrived. Wait for IT approval before choosing a slot. Monday teams need a spare computer for the full twenty minutes. Remote teams must reserve loan computers by Friday. Other approved teams switch Wednesday. We’re changing tyres while the bus keeps moving. The old app works on computers not being updated. If your working computer fails, the service desk takes new bookings. Only your team can finish bookings already open."
+      }
+    ],
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-AU",
+        "role": "female",
+        "modelVoice": "en-AU-NatashaNeural"
+      }
+    ],
+    "audio": "audio/exams/test-01/groups/t01-g046-r2/passage.wav",
+    "audioStart": 0,
+    "audioEnd": 37.7875,
+    "duration": 37.7875
+  },
+  "oldQuestionSha256": {
+    "74": "abc48f4dbb7a35d508d29cb691240060aa6837e91a3c39e16158e3836afcd725",
+    "75": "0675e7fcdcbb6cdcb71b37305a21d1e15354fb42b3ab427450f09435fda22671",
+    "76": "992c1136eafbd040a9f6a9b59797a00626e826eb9ff01e523154dee9c6480f91"
+  },
+  "newQuestions": [
+    {
+      "id": "t01-q074-r2",
+      "testId": "test-01",
+      "number": 74,
+      "part": 4,
+      "groupId": "t01-g046-r2",
+      "topic": "technology",
+      "difficulty": "advanced",
+      "tags": [
+        "technology",
+        "workplace",
+        "inference"
+      ],
+      "prompt": "Which remote team can switch on Monday?",
+      "promptZh": "哪個遠端團隊可以在星期一切換系統？",
+      "options": [
+        {
+          "id": "A",
+          "text": "An approved team that reserved a fifteen-minute Monday loan on Friday.",
+          "zh": "已獲核准，星期五預約星期一借用電腦十五分鐘的團隊。",
+          "whyZh": "已核准且預約及時，但借用時間不到所需的二十分鐘。"
+        },
+        {
+          "id": "B",
+          "text": "An approved team that reserved a twenty-five-minute Monday loan on Friday.",
+          "zh": "已獲核准，星期五預約星期一借用電腦二十五分鐘的團隊。",
+          "whyZh": "已獲核准，星期五已預約借用，二十五分鐘也涵蓋完整的二十分鐘。"
+        },
+        {
+          "id": "C",
+          "text": "A team with no IT approval, a green tracker and a twenty-five-minute Monday loan reserved Friday.",
+          "zh": "尚未獲資訊部門核准，但進度表顯示綠色，且星期五已預約星期一借用電腦二十五分鐘的團隊。",
+          "whyZh": "綠色只表示已收到測試，不能當作資訊部門核准。"
+        },
+        {
+          "id": "D",
+          "text": "An approved team that first reserves its twenty-five-minute Monday loan on Saturday.",
+          "zh": "已獲核准，但到星期六才首次預約星期一借用電腦二十五分鐘的團隊。",
+          "whyZh": "雖然已核准且可借足二十分鐘，但星期六才預約已錯過星期五的期限。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "已獲核准，星期五已預約借用，二十五分鐘也涵蓋完整的二十分鐘。",
+      "evidence": "Wait for IT approval before choosing a slot. Monday teams need a spare computer for the full twenty minutes. Remote teams must reserve loan computers by Friday.",
+      "vocabulary": [
+        {
+          "term": "roll out",
+          "zh": "開始上線、分批推出",
+          "note": "此處指將新系統引進工作流程，不是一次停掉舊服務。"
+        },
+        {
+          "term": "reserve",
+          "zh": "預約",
+          "note": "reserve a loan computer 指先預約一台可借用的電腦。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t01-q075-r2",
+      "testId": "test-01",
+      "number": 75,
+      "part": 4,
+      "groupId": "t01-g046-r2",
+      "topic": "technology",
+      "difficulty": "advanced",
+      "tags": [
+        "technology",
+        "workplace",
+        "inference"
+      ],
+      "prompt": "Both computers are ready to update. What does the bus comparison suggest?",
+      "promptZh": "兩台電腦都已準備好更新。講者用行駛中的公車作比喻，暗示應怎麼做？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Update both at once, then reopen bookings after twenty minutes.",
+          "zh": "同時更新兩台，二十分鐘後再開放預約。",
+          "whyZh": "同時更新會中斷預約服務，不符合「車繼續開」的比喻。"
+        },
+        {
+          "id": "B",
+          "text": "Use both computers to take bookings and put off the change indefinitely.",
+          "zh": "兩台都照常處理預約，無限期推遲系統切換。",
+          "whyZh": "公車繼續開，但輪胎仍要換；比喻不是說永遠不更新。"
+        },
+        {
+          "id": "C",
+          "text": "Update both and send all bookings, including unfinished ones, to the service desk.",
+          "zh": "同時更新兩台，把所有預約連同未完成的都交給服務櫃檯。",
+          "whyZh": "服務櫃檯可接新的預約，未完成的只能由原團隊處理；這也不是正常切換的不中斷做法。"
+        },
+        {
+          "id": "D",
+          "text": "Update one while the other keeps taking bookings, then switch roles when the first works.",
+          "zh": "一台更新時，另一台照常接受預約；第一台恢復可用後，再交換兩台的工作。",
+          "whyZh": "「換輪胎」是切換系統，「公車繼續開」是維持預約服務。未更新的電腦仍可用舊系統，因此可分開更新與接單。"
+        }
+      ],
+      "answer": "D",
+      "explanationZh": "「換輪胎」是切換系統，「公車繼續開」是維持預約服務。未更新的電腦仍可用舊系統，因此可分開更新與接單。",
+      "evidence": "We’re changing tyres while the bus keeps moving. The old app works on computers not being updated.",
+      "vocabulary": [
+        {
+          "term": "change tyres while the bus keeps moving",
+          "zh": "一邊維持運作，一邊做系統變更",
+          "note": "講者以誇張的公車比喻形容不中斷服務的系統切換；不是要求真的維修車輛。"
+        },
+        {
+          "term": "switch roles",
+          "zh": "交換工作",
+          "note": "讓已完成更新的電腦接手預約，再更新另一台。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t01-q076-r2",
+      "testId": "test-01",
+      "number": 76,
+      "part": 4,
+      "groupId": "t01-g046-r2",
+      "topic": "technology",
+      "difficulty": "advanced",
+      "tags": [
+        "technology",
+        "workplace",
+        "inference"
+      ],
+      "prompt": "The tracker is green. IT hasn’t approved the team. Its computer fails mid-booking with a new caller waiting. What should it do?",
+      "promptZh": "進度表顯示綠色，但資訊部門尚未核准這個團隊更新。電腦故障時，有一筆預約正在處理，也有一位新來電者在等候。團隊應該怎麼做？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wait for IT approval to update, keep the open booking with the team, and send the new caller to the service desk.",
+          "zh": "等資訊部門核准後再更新，由原團隊接續處理已開啟的預約，並把新來電轉給服務櫃檯。",
+          "whyZh": "綠色只表示收到了測試，不能先更新。故障時，新預約交給服務櫃檯，已開始的預約仍由原團隊接續。"
+        },
+        {
+          "id": "B",
+          "text": "Update now, keep the open booking with the team, and send the new caller to the service desk.",
+          "zh": "立即更新，由原團隊接續處理已開啟的預約，並把新來電轉給服務櫃檯。",
+          "whyZh": "預約分流正確，但綠色不代表資訊部門已核准；電腦故障也不能取代核准。"
+        },
+        {
+          "id": "C",
+          "text": "Wait for IT approval to update, send the open booking to the service desk, and handle the new caller yourself.",
+          "zh": "等資訊部門核准後再更新，把已開啟的預約轉給服務櫃檯，由原團隊接新來電。",
+          "whyZh": "等待核准是對的，但分流做反了：服務櫃檯只接新預約，已開啟的預約只能由原團隊處理。"
+        },
+        {
+          "id": "D",
+          "text": "Wait for IT approval to update and let the service desk take both bookings for now.",
+          "zh": "等資訊部門核准後再更新，暫時把兩筆預約都交給服務櫃檯。",
+          "whyZh": "等待核准是對的，但服務櫃檯無法完成原團隊已開啟的預約。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "綠色只表示收到了測試，不能先更新。故障時，新預約交給服務櫃檯，已開始的預約仍由原團隊接續。",
+      "evidence": "Green on the tracker means your test arrived. Wait for IT approval before choosing a slot. | If your working computer fails, the service desk takes new bookings. Only your team can finish bookings already open.",
+      "vocabulary": [
+        {
+          "term": "an open booking",
+          "zh": "已開始但未完成的預約",
+          "note": "open 可指一筆仍在處理、尚未結案的案件。"
+        },
+        {
+          "term": "IT approval",
+          "zh": "資訊部門核准",
+          "note": "收到測試資料與核准更新是不同的階段。"
+        }
+      ],
+      "revision": 2
+    }
+  ],
+  "oldListeningPlanSha256": "3860acbef7d3940ca000aceb0e1e82fa4b51fd47b44f38cc70f6aa68117abe21",
+  "newListeningPlanSha256": "6afeec735fe80940a21dbe4b653cebfb71d4a09c10811287c1ac7ca5654fa4e8",
+  "formalFrameOps": [
+    {
+      "index": 206,
+      "beforeSha256": "0239bb91f532aa32dab849733533243a83b15ea9c0ae3196760b6099768dbb1b",
+      "updates": {
+        "duration": 8.06944
+      }
+    },
+    {
+      "index": 207,
+      "beforeSha256": "c6214e6ddbc694fbaf37b41760d7d08db42375b83596df696908535593c61dbc",
+      "updates": {
+        "at": 1933.38522
+      }
+    },
+    {
+      "index": 208,
+      "beforeSha256": "b8b57cdfd86c64418d7c3602decc42918d7d75fb64e9581b341e99b53d614810",
+      "updates": {
+        "duration": 8.06944,
+        "at": 1936.49643
+      }
+    },
+    {
+      "index": 209,
+      "beforeSha256": "c0f13d14fae386f031a9a2e289b17c7ca19eb8864e5ed5f9e1fb8e3ca78bfb48",
+      "updates": {
+        "at": 1944.56587
+      }
+    },
+    {
+      "index": 210,
+      "beforeSha256": "b8902e7844040d34d0c208daebf476af4d8ac2152f797864325d30233b9b2c09",
+      "updates": {
+        "duration": 8.06944,
+        "at": 1948.31454
+      }
+    },
+    {
+      "index": 211,
+      "beforeSha256": "2553a002ccc2e7f2653b5b79524beb23c71df603ffa2d99687bee4fd2e97a1d3",
+      "updates": {
+        "groupId": "t01-g046-r2",
+        "at": 1956.38398
+      }
+    },
+    {
+      "index": 212,
+      "beforeSha256": "ea99f2c3cb67d1a67ccff92a28cc042708b1e675a491e37f1444149ed5c2af8e",
+      "updates": {
+        "src": "audio/exams/test-01/groups/t01-g046-r2/passage.wav",
+        "start": 0,
+        "end": 37.7875,
+        "duration": 37.7875,
+        "groupId": "t01-g046-r2",
+        "at": 1959.93185
+      }
+    },
+    {
+      "index": 213,
+      "beforeSha256": "056b7f95155725694b5655ba4b741927e14b5ea1a7e42d1c895d6cec0af63414",
+      "updates": {
+        "src": "audio/exams/test-01/questions/Q074/formal-stem-r2.wav",
+        "start": 0,
+        "end": 4.975,
+        "duration": 4.975,
+        "groupId": "t01-g046-r2",
+        "questionId": "t01-q074-r2",
+        "at": 1997.71935
+      }
+    },
+    {
+      "index": 214,
+      "beforeSha256": "42c61b655358f6288f71733aad1f6a094c1860766a5c025293976caceb1d690c",
+      "updates": {
+        "duration": 8.06944,
+        "groupId": "t01-g046-r2",
+        "questionId": "t01-q074-r2",
+        "at": 2002.69435
+      }
+    },
+    {
+      "index": 215,
+      "beforeSha256": "0d34fc587bc60ded133e5132e34dfec4d63be84bb17ddd90978fb9e8415cfa1f",
+      "updates": {
+        "src": "audio/exams/test-01/questions/Q075/formal-stem-r2.wav",
+        "start": 0,
+        "end": 8.025,
+        "duration": 8.025,
+        "groupId": "t01-g046-r2",
+        "questionId": "t01-q075-r2",
+        "at": 2010.76379
+      }
+    },
+    {
+      "index": 216,
+      "beforeSha256": "91d9a38cfe382cf10a1af1ee008f44e77aa496eaf769c8fa97768827e8c3ceaa",
+      "updates": {
+        "duration": 8.06944,
+        "groupId": "t01-g046-r2",
+        "questionId": "t01-q075-r2",
+        "at": 2018.78879
+      }
+    },
+    {
+      "index": 217,
+      "beforeSha256": "b505b553050a1e47de59747b79cd69c80fe0f7c726bac5023c3021e90e8870b2",
+      "updates": {
+        "src": "audio/exams/test-01/questions/Q076/formal-stem-r2.wav",
+        "start": 0,
+        "end": 12.3375,
+        "duration": 12.3375,
+        "groupId": "t01-g046-r2",
+        "questionId": "t01-q076-r2",
+        "at": 2026.85823
+      }
+    },
+    {
+      "index": 218,
+      "beforeSha256": "c5b3dde3ed911ad5c0dcad3104b6ec3b17377bac9faa44cad44e9aeae2e30d80",
+      "updates": {
+        "duration": 8.06944,
+        "groupId": "t01-g046-r2",
+        "questionId": "t01-q076-r2",
+        "at": 2039.19573
+      }
+    },
+    {
+      "index": 219,
+      "beforeSha256": "2bacf1ab047fa96942d4ed67386a92e7cb50d49ed5a98370b58de39232610023",
+      "updates": {
+        "at": 2047.26517
+      }
+    },
+    {
+      "index": 220,
+      "beforeSha256": "dbe70e61f7f5fbeedaee088e82b45590c2ecd7b9aee037b2adccede71d11947d",
+      "updates": {
+        "at": 2050.86363
+      }
+    },
+    {
+      "index": 221,
+      "beforeSha256": "7b332dc5495255d936fbfef1da1ffe531fe92c82c558b29828a4514f475d1da0",
+      "updates": {
+        "at": 2095.50363
+      }
+    },
+    {
+      "index": 222,
+      "beforeSha256": "90cb8f28cae39376ad4d0d0c0e6546ad6db74d80d5d6c0c0ddf7c8740a4303ed",
+      "updates": {
+        "duration": 8.06944,
+        "at": 2099.94213
+      }
+    },
+    {
+      "index": 223,
+      "beforeSha256": "325e14c4ef4376799061efb32c398382a2db2e51103942962616912904282170",
+      "updates": {
+        "at": 2108.01157
+      }
+    },
+    {
+      "index": 224,
+      "beforeSha256": "c3d691027750f32b88194d908ad4864f5460c3e1c1376c0556b99f22ca4aada6",
+      "updates": {
+        "duration": 8.06945,
+        "at": 2111.21874
+      }
+    },
+    {
+      "index": 225,
+      "beforeSha256": "b07c4b7dc59c788af3101e7600276c1aee7828b1bf5ddb300ea3767aa655c357",
+      "updates": {
+        "at": 2119.28819
+      }
+    },
+    {
+      "index": 226,
+      "beforeSha256": "c021535411ee383fe362eecdac40dec961842ab99c64a131d9165402376dd21e",
+      "updates": {
+        "duration": 8.06945,
+        "at": 2123.76336
+      }
+    },
+    {
+      "index": 227,
+      "beforeSha256": "71d570d064045ab4d63a3ed442fc777282eaf63922b1d289a1847d00781ca626",
+      "updates": {
+        "at": 2131.83281
+      }
+    },
+    {
+      "index": 228,
+      "beforeSha256": "d52dda8059d9f26d2c0b68d37d1911844a30ac1fc64d1156a130673e7ba4eba2",
+      "updates": {
+        "at": 2134.74089
+      }
+    },
+    {
+      "index": 229,
+      "beforeSha256": "d583d81e9b1c26e4b957f5313bcec3eaaab9d278cd81870b8dca6ee4c9c42441",
+      "updates": {
+        "at": 2174.60489
+      }
+    },
+    {
+      "index": 230,
+      "beforeSha256": "53f14c9f2046bc2c01f985ba0c4cca9c355a8a2d8ba7b258a79bfa2dbee894cb",
+      "updates": {
+        "duration": 8.06945,
+        "at": 2177.49339
+      }
+    },
+    {
+      "index": 231,
+      "beforeSha256": "28d7392b40618b6dc913d18c1e8db0f7606ad38a4b86199bb43caa1095b39741",
+      "updates": {
+        "at": 2185.56284
+      }
+    },
+    {
+      "index": 232,
+      "beforeSha256": "60b9b39ecc27810706bdf907ef86d69fb31397b4245cb3952d2ea7d72a26844b",
+      "updates": {
+        "duration": 8.06945,
+        "at": 2189.53851
+      }
+    },
+    {
+      "index": 233,
+      "beforeSha256": "385099c8e1bae55d54b4a7712f0ec48309e17f641147d9fae871e9d7fe231d4b",
+      "updates": {
+        "at": 2197.60796
+      }
+    },
+    {
+      "index": 234,
+      "beforeSha256": "0a9835e507ddc3552ea24e3feaee8ebdc779e0e7cce26995ee4f9dbb3b4c039a",
+      "updates": {
+        "duration": 8.06945,
+        "at": 2201.67783
+      }
+    },
+    {
+      "index": 235,
+      "beforeSha256": "053f1ab3ca93e7148fb9ff8002398e7396ec5ac5a310c77b44c3d3dd355990b3",
+      "updates": {
+        "at": 2209.74728
+      }
+    },
+    {
+      "index": 236,
+      "beforeSha256": "9fbe1a0359061064c14834474bb91bd4b5b1f5d05d4b07ef9c8271394afae88e",
+      "updates": {
+        "at": 2212.90557
+      }
+    },
+    {
+      "index": 237,
+      "beforeSha256": "932ae781ac41a43a2e5fa55596ae62c1000204378836647644af09d58836aa7a",
+      "updates": {
+        "at": 2252.88957
+      }
+    },
+    {
+      "index": 238,
+      "beforeSha256": "530b75c177ee9dda18846769023a5118b8d473ab64786271f6be99611073ed8c",
+      "updates": {
+        "at": 2259.9002
+      }
+    },
+    {
+      "index": 239,
+      "beforeSha256": "fc8765718756b99e7b04d045e36d08826c9868e133a4b0a4ff47940fb84f917c",
+      "updates": {
+        "at": 2272.87584
+      }
+    },
+    {
+      "index": 240,
+      "beforeSha256": "495c9d5a025732b43dd1b746c4e2f83a1b4808243ebf41bb91c518ae19d9ebcd",
+      "updates": {
+        "at": 2276.11497
+      }
+    },
+    {
+      "index": 241,
+      "beforeSha256": "5938abb8c5535190ee5034b6287d719eae1a5c4cb83142a1612ea9063ff498f6",
+      "updates": {
+        "at": 2284.69064
+      }
+    },
+    {
+      "index": 242,
+      "beforeSha256": "73e548845eb5751c7203b765340a7d60fedc3d9cce118c012d2da942856ee412",
+      "updates": {
+        "at": 2289.19106
+      }
+    },
+    {
+      "index": 243,
+      "beforeSha256": "11d8374aaa50ff1d8b54734078883e7d6b0cf5d7d47ea2d3fd9e791e9ebbf220",
+      "updates": {
+        "at": 2297.76673
+      }
+    },
+    {
+      "index": 244,
+      "beforeSha256": "23ba349744c440809a19ac5eba5c167eb7fc7dd20e662744d5d8320722fd5059",
+      "updates": {
+        "at": 2300.92331
+      }
+    },
+    {
+      "index": 245,
+      "beforeSha256": "85390cd34668cd676ad85126553fed3ad6ad3139b063627df8caa0dd8fc2f492",
+      "updates": {
+        "at": 2342.87531
+      }
+    },
+    {
+      "index": 246,
+      "beforeSha256": "cb0ede9fd297832031c7b1e0868c42fdf83e25268ba220fda80938186acdcd54",
+      "updates": {
+        "duration": 8.06946,
+        "at": 2346.59614
+      }
+    },
+    {
+      "index": 247,
+      "beforeSha256": "5b48274b333a48956fbc620179e441a03937117c73a73cc904d25aee4eafc1fc",
+      "updates": {
+        "at": 2354.6656
+      }
+    },
+    {
+      "index": 248,
+      "beforeSha256": "a3921fe2d3d7a0b069d75f09542fa9f9d5eebdf8080d69db938456493c0a8f62",
+      "updates": {
+        "duration": 8.06946,
+        "at": 2358.2766
+      }
+    },
+    {
+      "index": 249,
+      "beforeSha256": "735bf7b5c5b7dd8b6569cdfe4bc0632a4c87775cff41d58fa2b32417a4c36fd8",
+      "updates": {
+        "at": 2366.34606
+      }
+    },
+    {
+      "index": 250,
+      "beforeSha256": "bf39c067ab24a51232641d35f264964089723384844c8da1cf4b3995b0300cca",
+      "updates": {
+        "duration": 8.06946,
+        "at": 2370.23785
+      }
+    },
+    {
+      "index": 251,
+      "beforeSha256": "86c6ae13bfe6d18eb884e3975c3f854d7fc6abe931c04168d6d49d7db9e8f8ef",
+      "updates": {
+        "at": 2378.30731
+      }
+    },
+    {
+      "index": 252,
+      "beforeSha256": "226b587cc7f413a2f899a80996a9ed62fe44f1f8eb5b2229fd6fc28e72091607",
+      "updates": {
+        "at": 2381.61556
+      }
+    },
+    {
+      "index": 253,
+      "beforeSha256": "c608ae03e9d660c8f2637bf609d176faa3bcb2f55e2a77fa35d288d52b7eb5c3",
+      "updates": {
+        "at": 2419.07956
+      }
+    },
+    {
+      "index": 254,
+      "beforeSha256": "3b92d50948d1400487a7c53db5397b4247036b26f5405d9d802ccd8f3bc76ad4",
+      "updates": {
+        "duration": 8.06946,
+        "at": 2423.75927
+      }
+    },
+    {
+      "index": 255,
+      "beforeSha256": "1aecef84fcfd2159f301768fb4b07ae0298ba519ab25f499aab2f166a6817da4",
+      "updates": {
+        "at": 2431.82873
+      }
+    },
+    {
+      "index": 256,
+      "beforeSha256": "a59a2047b0f865e002c2e1861d4117e273640e97684556cd4051495c0a103714",
+      "updates": {
+        "duration": 8.06946,
+        "at": 2434.28219
+      }
+    },
+    {
+      "index": 257,
+      "beforeSha256": "92a77503ac061db2fce38e39be26fa8882fab549709225713a2e06f568e24e7c",
+      "updates": {
+        "at": 2442.35165
+      }
+    },
+    {
+      "index": 258,
+      "beforeSha256": "9fcfa7e5855c9cc6c95a1a2cbaa04df96e41c4176dadf403c63b3930fcfa0e1b",
+      "updates": {
+        "duration": 8.06946,
+        "at": 2446.25711
+      }
+    },
+    {
+      "index": 259,
+      "beforeSha256": "09fa1de83b563b7c8dfe6e7f34ace0acf8fbd8b10ee83d9243ddd03ca940ce55",
+      "updates": {
+        "at": 2454.32657
+      }
+    },
+    {
+      "index": 260,
+      "beforeSha256": "24ee4a3b628ca1d9d83e274fac4ff92383eedafbb1fe5a9e9b33b5a3971e919c",
+      "updates": {
+        "at": 2457.63436
+      }
+    },
+    {
+      "index": 261,
+      "beforeSha256": "e747fb4a7cea5660c58e942000857443538e4a68efdab31c1463afe472e1d500",
+      "updates": {
+        "at": 2498.36236
+      }
+    },
+    {
+      "index": 262,
+      "beforeSha256": "36b36d7d33a508f4ed7887f9026e533b3f472d2ee47efb6f782053ac51c0f7d4",
+      "updates": {
+        "duration": 8.06946,
+        "at": 2502.21378
+      }
+    },
+    {
+      "index": 263,
+      "beforeSha256": "fbc0866f1a7d426a6a450c9fa4360e587e66c2ba03d251d0097c1e7e829a87af",
+      "updates": {
+        "at": 2510.28324
+      }
+    },
+    {
+      "index": 264,
+      "beforeSha256": "4316332e939b817dd4b17279ff46ce2bb8ad243be8c735c84cb6109a21e65881",
+      "updates": {
+        "duration": 8.06946,
+        "at": 2514.90691
+      }
+    },
+    {
+      "index": 265,
+      "beforeSha256": "23f50eef4c9bb748f71a550a57410fca9623f66cfe4a6e33fa67e50e7075224f",
+      "updates": {
+        "at": 2522.97637
+      }
+    },
+    {
+      "index": 266,
+      "beforeSha256": "2c7a879945ccdc9fa39cf4c07fdf167431d597baba515c64d59d54cf9618f62a",
+      "updates": {
+        "duration": 8.06946,
+        "at": 2526.40837
+      }
+    },
+    {
+      "index": 267,
+      "beforeSha256": "9e9a742b8f6fa5b42210224b025ac40e45b812fd8d5837aca4433ca6bf51d373",
+      "updates": {
+        "at": 2534.47783
+      }
+    },
+    {
+      "index": 268,
+      "beforeSha256": "484ebc856c6b8a60786ee11b5d5578de0ddc1ad39501410e15d8c956e9311bc5",
+      "updates": {
+        "at": 2537.86162
+      }
+    },
+    {
+      "index": 269,
+      "beforeSha256": "b190c9d939d343357f1f03b3f693b32b8332381904ed0ea66eecf6d47fc71846",
+      "updates": {
+        "at": 2571.72562
+      }
+    },
+    {
+      "index": 270,
+      "beforeSha256": "a0305d3d8a7d5da1ea5b91ab85bf6f6a55f61ef2c2d6596e1f94dc65b9363bdc",
+      "updates": {
+        "duration": 8.06946,
+        "at": 2575.71125
+      }
+    },
+    {
+      "index": 271,
+      "beforeSha256": "094ea0ae0ffbf3eba83c4fe1addbf188505a997ca7ab1c4dcd4703019a04495c",
+      "updates": {
+        "at": 2583.78071
+      }
+    },
+    {
+      "index": 272,
+      "beforeSha256": "39e518caeaad2b70a6664023fbeb7b3dfc4ae28c621c3bce9d00efc582baf16e",
+      "updates": {
+        "duration": 8.06946,
+        "at": 2587.38
+      }
+    },
+    {
+      "index": 273,
+      "beforeSha256": "d9784db61d72a0644de0a3964eef8d2adde438411885497ff8c3bb5b00d5943e",
+      "updates": {
+        "at": 2595.44946
+      }
+    },
+    {
+      "index": 274,
+      "beforeSha256": "b72a32361e9756b6b338c38aaf29d0459a6f51d3393f40c1d17697db17bf3530",
+      "updates": {
+        "duration": 8.06946,
+        "at": 2600.25292
+      }
+    },
+    {
+      "index": 275,
+      "beforeSha256": "d848fead935921e1f37a8e99cd787a9f250b0706baa3e8dbd220f59ec13dc9bd",
+      "updates": {
+        "at": 2608.32238
+      }
+    },
+    {
+      "index": 276,
+      "beforeSha256": "71008c716371c0999dc46692b029524eb094152e39ff03f30cc75d45b1652053",
+      "updates": {
+        "at": 2611.70746
+      }
+    },
+    {
+      "index": 277,
+      "beforeSha256": "25843aa22acd561b88f32432c2d15348105b41e346fc897e03c2a74dca0f7419",
+      "updates": {
+        "at": 2648.91996
+      }
+    },
+    {
+      "index": 278,
+      "beforeSha256": "9673446e7a94e69403bfefdfcc1a15b401507da0738912c94b70f89b52f195bd",
+      "updates": {
+        "duration": 8.06946,
+        "at": 2654.68246
+      }
+    },
+    {
+      "index": 279,
+      "beforeSha256": "03e419c6ea9b63820057643f519f1deabb64e5ccf55c8c0676135dde5e318006",
+      "updates": {
+        "at": 2662.75192
+      }
+    },
+    {
+      "index": 280,
+      "beforeSha256": "9880984554725e2e6d3c7a788d4f104e46c636e43c9d6458796c841c12b68edc",
+      "updates": {
+        "duration": 8.06946,
+        "at": 2667.67692
+      }
+    },
+    {
+      "index": 281,
+      "beforeSha256": "78f2d7dbc41b6c446a528b86ea0e82045e59566da3d30bc9f771141776de6cdc",
+      "updates": {
+        "at": 2675.74638
+      }
+    },
+    {
+      "index": 282,
+      "beforeSha256": "92616697e1bc6c6d41f0f9a38cb5cbd15400e93cfe3141415f5649d407bdea83",
+      "updates": {
+        "duration": 8.06962,
+        "at": 2682.54638
+      }
+    }
+  ],
+  "priorAudioGuards": {
+    "audio/formal/test-01-cues-04.mp3": "818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0",
+    "audio/azure-v1/test-01-26.mp3": "1b00171aa1837d661eb9c58ef3eb748d8f56be1415ecd45e546ebaa7e24ad017"
+  }
+}

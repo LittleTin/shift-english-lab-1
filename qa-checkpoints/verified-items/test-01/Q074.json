@@ -1,0 +1,183 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "editorial": "Separate blinded solve of exact final English found B/D/A and judged all three advanced; revised Q076 now applies nonlocal tracker/authorization and booking handoff gates. All answers, distractors and bilingual explanations checked.",
+    "audio": "On exact retained WAVs, strongest unprompted model recovered full shared speech and all numbered stems exactly. Independent model recovered Q074/Q075 stems exactly and operative timing, restrictions and routing in the speech and Q076 scenario; its old app→old of/older and caller→color/collar phonetic substitutions supply no plausible alternate meaning in context. Accept the combined offline evidence, not two word-for-word transcripts. Original Q074–076 cue remains bound to its immutable predecessor range/SHA.",
+    "timing": "Formal remains 2700.000 seconds. Only 27 ordinary Part4 answer pauses absorb growth, minimum 8.06944 seconds. All three g049 graphic pauses and every Part3 frame including Q054 stay unchanged as appropriate, archived plans unaffected. Offline item verification only; real browser, prior-session and release gates separate."
+  },
+  "activeQuestion": {
+    "id": "t01-q074-r2",
+    "testId": "test-01",
+    "number": 74,
+    "part": 4,
+    "groupId": "t01-g046-r2",
+    "topic": "technology",
+    "difficulty": "advanced",
+    "tags": [
+      "technology",
+      "workplace",
+      "inference"
+    ],
+    "prompt": "Which remote team can switch on Monday?",
+    "promptZh": "哪個遠端團隊可以在星期一切換系統？",
+    "options": [
+      {
+        "id": "A",
+        "text": "An approved team that reserved a fifteen-minute Monday loan on Friday.",
+        "zh": "已獲核准，星期五預約星期一借用電腦十五分鐘的團隊。",
+        "whyZh": "已核准且預約及時，但借用時間不到所需的二十分鐘。"
+      },
+      {
+        "id": "B",
+        "text": "An approved team that reserved a twenty-five-minute Monday loan on Friday.",
+        "zh": "已獲核准，星期五預約星期一借用電腦二十五分鐘的團隊。",
+        "whyZh": "已獲核准，星期五已預約借用，二十五分鐘也涵蓋完整的二十分鐘。"
+      },
+      {
+        "id": "C",
+        "text": "A team with no IT approval, a green tracker and a twenty-five-minute Monday loan reserved Friday.",
+        "zh": "尚未獲資訊部門核准，但進度表顯示綠色，且星期五已預約星期一借用電腦二十五分鐘的團隊。",
+        "whyZh": "綠色只表示已收到測試，不能當作資訊部門核准。"
+      },
+      {
+        "id": "D",
+        "text": "An approved team that first reserves its twenty-five-minute Monday loan on Saturday.",
+        "zh": "已獲核准，但到星期六才首次預約星期一借用電腦二十五分鐘的團隊。",
+        "whyZh": "雖然已核准且可借足二十分鐘，但星期六才預約已錯過星期五的期限。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "已獲核准，星期五已預約借用，二十五分鐘也涵蓋完整的二十分鐘。",
+    "evidence": "Wait for IT approval before choosing a slot. Monday teams need a spare computer for the full twenty minutes. Remote teams must reserve loan computers by Friday.",
+    "vocabulary": [
+      {
+        "term": "roll out",
+        "zh": "開始上線、分批推出",
+        "note": "此處指將新系統引進工作流程，不是一次停掉舊服務。"
+      },
+      {
+        "term": "reserve",
+        "zh": "預約",
+        "note": "reserve a loan computer 指先預約一台可借用的電腦。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t01-q074",
+    "testId": "test-01",
+    "number": 74,
+    "part": 4,
+    "groupId": "t01-g046",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "main_idea"
+    ],
+    "prompt": "What change is being announced?",
+    "promptZh": "公告宣布什麼變更？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The removal of all passwords.",
+        "zh": "移除所有密碼。",
+        "whyZh": "公告說仍然使用 usual password，沒有取消密碼。"
+      },
+      {
+        "id": "B",
+        "text": "An additional verification step for signing in.",
+        "zh": "登入時增加一道驗證步驟。",
+        "whyZh": "除了原本密碼，還需手機驗證器產生的碼，因此是增加驗證步驟，而非取消密碼。"
+      },
+      {
+        "id": "C",
+        "text": "The closure of the supplier portal.",
+        "zh": "關閉供應商入口網站。",
+        "whyZh": "入口網站繼續運作，只改變登入要求。"
+      },
+      {
+        "id": "D",
+        "text": "A new public customer website.",
+        "zh": "新的公開客戶網站。",
+        "whyZh": "對象是既有供應商入口網站，不是發布新公共網站。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "除了原本密碼，還需手機驗證器產生的碼，因此是增加驗證步驟，而非取消密碼。",
+    "evidence": "we will enable two-step sign-in for the supplier portal.",
+    "vocabulary": [
+      {
+        "term": "two-step sign-in",
+        "zh": "兩步驟登入",
+        "note": "本情境結合原密碼與驗證器產生的碼。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g046-r2",
+    "testId": "test-01",
+    "part": 4,
+    "title": "Switching booking apps without stopping service",
+    "titleZh": "不中斷服務地切換預約系統",
+    "topic": "technology",
+    "passage": "Our new booking app rolls out Monday. Green on the tracker means your test arrived. Wait for IT approval before choosing a slot. Monday teams need a spare computer for the full twenty minutes. Remote teams must reserve loan computers by Friday. Other approved teams switch Wednesday. We’re changing tyres while the bus keeps moving. The old app works on computers not being updated. If your working computer fails, the service desk takes new bookings. Only your team can finish bookings already open.",
+    "passageZh": "我們的新預約系統從星期一開始上線。進度表顯示綠色，只代表收到了你們的測試。選時段前，要先等資訊部門核准。安排在星期一切換的團隊，整整二十分鐘都要有一台備用電腦。遠端團隊要借電腦，最晚要在星期五預約。其他已獲核准的團隊改在星期三切換。這就像公車還在開，我們就得換輪胎。沒有在更新的電腦仍可使用舊系統。如果手邊正在用的電腦故障，服務櫃檯可以接手新的預約。已經開始處理的預約，只有你們自己的團隊能完成。",
+    "audioScript": "Our new booking app rolls out Monday. Green on the tracker means your test arrived. Wait for IT approval before choosing a slot. Monday teams need a spare computer for the full twenty minutes. Remote teams must reserve loan computers by Friday. Other approved teams switch Wednesday. We’re changing tyres while the bus keeps moving. The old app works on computers not being updated. If your working computer fails, the service desk takes new bookings. Only your team can finish bookings already open.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Our new booking app rolls out Monday. Green on the tracker means your test arrived. Wait for IT approval before choosing a slot. Monday teams need a spare computer for the full twenty minutes. Remote teams must reserve loan computers by Friday. Other approved teams switch Wednesday. We’re changing tyres while the bus keeps moving. The old app works on computers not being updated. If your working computer fails, the service desk takes new bookings. Only your team can finish bookings already open."
+      }
+    ],
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-AU",
+        "role": "female",
+        "modelVoice": "en-AU-NatashaNeural"
+      }
+    ],
+    "audio": "audio/exams/test-01/groups/t01-g046-r2/passage.wav",
+    "audioStart": 0,
+    "audioEnd": 37.7875,
+    "duration": 37.7875
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-01-cues-04.mp3",
+      "start": 41.60942,
+      "end": 45.15729,
+      "assetSha256": "818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0",
+      "speech": "Questions 74 through 76. Listen to the talk."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/exams/test-01/groups/t01-g046-r2/passage.wav",
+      "start": 0,
+      "end": 37.7875,
+      "assetSha256": "e3afb6bfc6d0c2d8137e9fad97c795a4a657b8bdabf66773f10118391ced1695",
+      "speech": "Our new booking app rolls out Monday. Green on the tracker means your test arrived. Wait for IT approval before choosing a slot. Monday teams need a spare computer for the full twenty minutes. Remote teams must reserve loan computers by Friday. Other approved teams switch Wednesday. We’re changing tyres while the bus keeps moving. The old app works on computers not being updated. If your working computer fails, the service desk takes new bookings. Only your team can finish bookings already open."
+    },
+    {
+      "mode": "question",
+      "path": "audio/exams/test-01/questions/Q074/formal-stem-r2.wav",
+      "start": 0,
+      "end": 4.975,
+      "assetSha256": "d22da16406ae7cdf58866ae265fb363fb2d7af2dd54a7a240115035c7195bebe",
+      "speech": "Number 74. Which remote team can switch on Monday?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/exams/test-01/groups/t01-g046-r2/passage.wav",
+      "start": 0,
+      "end": 37.7875,
+      "assetSha256": "e3afb6bfc6d0c2d8137e9fad97c795a4a657b8bdabf66773f10118391ced1695",
+      "speech": "Our new booking app rolls out Monday. Green on the tracker means your test arrived. Wait for IT approval before choosing a slot. Monday teams need a spare computer for the full twenty minutes. Remote teams must reserve loan computers by Friday. Other approved teams switch Wednesday. We’re changing tyres while the bus keeps moving. The old app works on computers not being updated. If your working computer fails, the service desk takes new bookings. Only your team can finish bookings already open."
+    }
+  ],
+  "imageSha256": null
+}
