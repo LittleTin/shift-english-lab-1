@@ -1,0 +1,52 @@
+{
+  "id": "t04-q123",
+  "testId": "test-04",
+  "number": 123,
+  "part": 5,
+  "groupId": null,
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "business",
+    "conditional-scope"
+  ],
+  "prompt": "Staff may enter to collect tools with a supervisor, but a contractor whose permit lists inspection as the only authorized task may not collect tools, ___ a supervisor is present.",
+  "promptZh": "有主管陪同時，內部員工可以進去取工具，但許可證只准進行檢查的承包人員，___有主管在場，也不能取工具。",
+  "options": [
+    {
+      "id": "A",
+      "text": "unless",
+      "zh": "除非",
+      "whyZh": "這會把有主管在場變成承包人員可取工具的例外，但許可證只准進行檢查。"
+    },
+    {
+      "id": "B",
+      "text": "as long as",
+      "zh": "只要",
+      "whyZh": "這會把主管在場當成禁止取工具的條件；真正的限制是許可證只列檢查，不取決於主管是否在場。"
+    },
+    {
+      "id": "C",
+      "text": "even if",
+      "zh": "即使",
+      "whyZh": "凸顯對內部員工有效的主管陪同條件，不能擴大承包人員的工作許可。主管在場也不能讓承包人員取工具。"
+    },
+    {
+      "id": "D",
+      "text": "only if",
+      "zh": "只有在……時",
+      "whyZh": "這會把主管在場變成禁止取工具的必要條件；題意是有無主管都不能改變許可範圍。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "凸顯對內部員工有效的主管陪同條件，不能擴大承包人員的工作許可。主管在場也不能讓承包人員取工具。",
+  "evidence": "Staff may enter to collect tools with a supervisor, but a contractor whose permit lists inspection as the only authorized task may not collect tools, even if a supervisor is present.",
+  "vocabulary": [
+    {
+      "term": "even if",
+      "zh": "即使",
+      "note": "讓步連接詞，表示假設情況成立也不改變主要結果。"
+    }
+  ],
+  "revision": 1
+}
