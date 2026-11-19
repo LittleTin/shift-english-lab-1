@@ -1,0 +1,52 @@
+{
+  "id": "t04-q183",
+  "testId": "test-04",
+  "part": 7,
+  "number": 183,
+  "revision": 1,
+  "topic": "business",
+  "groupId": "t04-r-p7-10",
+  "difficulty": "intermediate",
+  "tags": [
+    "triple-document",
+    "business"
+  ],
+  "prompt": "Why does the delivery instruction still name Perry Lane?",
+  "promptZh": "為什麼配送指示仍寫 Perry 巷？",
+  "answer": "D",
+  "options": [
+    {
+      "id": "A",
+      "text": "The designer accepted the address change but selected the wrong paper.",
+      "zh": "設計人員接受改地址，但選錯紙。",
+      "whyZh": "文中沒說設計人員接受更改，也沒發生用紙問題。"
+    },
+    {
+      "id": "B",
+      "text": "Approval was sent after the 16:00 departure.",
+      "zh": "核可信是在 16:00 出車後才送出。",
+      "whyZh": "Jo 在 10:12 回覆，早於出車。"
+    },
+    {
+      "id": "C",
+      "text": "The 13:25 message reinstated a delivery address that Jo had already changed.",
+      "zh": "13:25 的訊息把 Jo 已改過的地址又改了回去。",
+      "whyZh": "Jo 從未向出貨組提出地址更改。"
+    },
+    {
+      "id": "D",
+      "text": "Jo mentioned the new room to a designer but did not send Dispatch the required update.",
+      "zh": "Jo 只跟設計人員提到新活動室，沒有按規定通知出貨組。",
+      "whyZh": "確認單要求在開印前通知出貨組；提到新地點不等於變更配送資料。"
+    }
+  ],
+  "explanationZh": "確認單要求在開印前通知出貨組；提到新地點不等於變更配送資料。",
+  "evidence": "Document 1 · Print order confirmation\nNorthline Press | Order NP-604\nPrint run: 240 table cards. Paper: ivory.\nDelivery: Front desk, 16 Perry Lane.\nWe will not start the run until you approve the proof. Proof approval confirms the content and layout only. To change the delivery address, email Dispatch with the order number before the run starts.\nA collection request can be recorded later than an address change, provided the completed cartons have not left our premises.\n\nDocument 2 · Proof reply\nTuesday, 10:12\nTo: Proof desk\nThe card names and placement on the proof look right. Please approve that version for print. I mentioned the new function room to the designer yesterday, but the confirmation still lists Perry Lane. I have not emailed Dispatch.\nJo\n\nDocument 3 · Dispatch update\nTuesday, 13:25\nNP-604 went into production at 11:40. We received no address-change request before that. The cartons are due to leave for Perry Lane at 16:00. We cannot change the delivery address once a run starts. If you prefer to collect this order, email us by 15:30 so we can keep the cartons at our collection counter.\nPerry Lane staff have told us they cannot accept your order today. Please do not let the driver attempt delivery there if you can arrange collection.",
+  "vocabulary": [
+    {
+      "term": "dispatch",
+      "zh": "出貨組",
+      "note": "管理印件出貨、配送或改為自取的單位。"
+    }
+  ]
+}

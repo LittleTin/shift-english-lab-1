@@ -1,0 +1,52 @@
+{
+  "id": "t04-q184",
+  "testId": "test-04",
+  "part": 7,
+  "number": 184,
+  "revision": 1,
+  "topic": "business",
+  "groupId": "t04-r-p7-10",
+  "difficulty": "intermediate",
+  "tags": [
+    "triple-document",
+    "business"
+  ],
+  "prompt": "Which event made the delivery address too late to change?",
+  "promptZh": "哪一件事發生後，就來不及改配送地址？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "Jo’s message to the designer the day before",
+      "zh": "Jo 前一天和設計人員說話",
+      "whyZh": "那不是變更地址的正式流程或期限。"
+    },
+    {
+      "id": "B",
+      "text": "The print run started at 11:40.",
+      "zh": "11:40 開始印刷。",
+      "whyZh": "派送地址的截止點是開印；自取另有截至 15:30 的安排。"
+    },
+    {
+      "id": "C",
+      "text": "The cartons were scheduled for 16:00.",
+      "zh": "紙箱原訂 16:00 出車。",
+      "whyZh": "這是配送時間；地址早在開印時就不能更改。"
+    },
+    {
+      "id": "D",
+      "text": "The collection deadline is 15:30.",
+      "zh": "自取申請截止時間是 15:30。",
+      "whyZh": "自取與改配送地址採不同截止點。"
+    }
+  ],
+  "explanationZh": "派送地址的截止點是開印；自取另有截至 15:30 的安排。",
+  "evidence": "Document 1 · Print order confirmation\nNorthline Press | Order NP-604\nPrint run: 240 table cards. Paper: ivory.\nDelivery: Front desk, 16 Perry Lane.\nWe will not start the run until you approve the proof. Proof approval confirms the content and layout only. To change the delivery address, email Dispatch with the order number before the run starts.\nA collection request can be recorded later than an address change, provided the completed cartons have not left our premises.\n\nDocument 3 · Dispatch update\nTuesday, 13:25\nNP-604 went into production at 11:40. We received no address-change request before that. The cartons are due to leave for Perry Lane at 16:00. We cannot change the delivery address once a run starts. If you prefer to collect this order, email us by 15:30 so we can keep the cartons at our collection counter.\nPerry Lane staff have told us they cannot accept your order today. Please do not let the driver attempt delivery there if you can arrange collection.",
+  "vocabulary": [
+    {
+      "term": "go into production",
+      "zh": "開始製作",
+      "note": "這裡指訂單已經開始印刷。"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "t04-q182",
+  "testId": "test-04",
+  "part": 7,
+  "number": 182,
+  "revision": 1,
+  "topic": "business",
+  "groupId": "t04-r-p7-10",
+  "difficulty": "intermediate",
+  "tags": [
+    "triple-document",
+    "business"
+  ],
+  "prompt": "What did Jo’s 10:12 message authorize?",
+  "promptZh": "Jo 在 10:12 的訊息授權了哪件事？",
+  "answer": "A",
+  "options": [
+    {
+      "id": "A",
+      "text": "Printing the proof version without changing the delivery instruction",
+      "zh": "用已核可的打樣版本印刷，仍不更動配送指示",
+      "whyZh": "訊息核可姓名與版面，地址須另寄信給出貨組才能更改。"
+    },
+    {
+      "id": "B",
+      "text": "Printing only after the driver confirms the new address",
+      "zh": "等司機確認新地址才印刷",
+      "whyZh": "Jo 沒把地址改動設為印刷條件，且尚未聯絡出貨組。"
+    },
+    {
+      "id": "C",
+      "text": "Picking up the cards at the collection counter",
+      "zh": "到取件櫃檯領桌卡",
+      "whyZh": "這封信只寄打樣台核可樣稿，不是改為自取的申請。"
+    },
+    {
+      "id": "D",
+      "text": "Changing the paper and the number of cards",
+      "zh": "改用另一種紙張並變更數量",
+      "whyZh": "Jo 核可姓名與版面，沒有改紙或改印量。"
+    }
+  ],
+  "explanationZh": "訊息核可姓名與版面，地址須另寄信給出貨組才能更改。",
+  "evidence": "Document 1 · Print order confirmation\nNorthline Press | Order NP-604\nPrint run: 240 table cards. Paper: ivory.\nDelivery: Front desk, 16 Perry Lane.\nWe will not start the run until you approve the proof. Proof approval confirms the content and layout only. To change the delivery address, email Dispatch with the order number before the run starts.\nA collection request can be recorded later than an address change, provided the completed cartons have not left our premises.\n\nDocument 2 · Proof reply\nTuesday, 10:12\nTo: Proof desk\nThe card names and placement on the proof look right. Please approve that version for print. I mentioned the new function room to the designer yesterday, but the confirmation still lists Perry Lane. I have not emailed Dispatch.\nJo",
+  "vocabulary": [
+    {
+      "term": "approve a proof",
+      "zh": "核可印刷打樣",
+      "note": "確認可依打樣所示版本印製。"
+    }
+  ]
+}

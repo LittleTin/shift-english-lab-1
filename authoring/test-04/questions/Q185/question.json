@@ -1,0 +1,52 @@
+{
+  "id": "t04-q185",
+  "testId": "test-04",
+  "part": 7,
+  "number": 185,
+  "revision": 1,
+  "topic": "business",
+  "groupId": "t04-r-p7-10",
+  "difficulty": "advanced",
+  "tags": [
+    "triple-document",
+    "business"
+  ],
+  "prompt": "At 14:45, Jo wants to prevent a failed delivery without changing the approved print run. What should Jo do?",
+  "promptZh": "14:45 時，Jo 想避免配送失敗，又不希望更動已核准的印件。Jo 應該怎麼做？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "Send Dispatch a new address now and ask the driver to skip Perry Lane.",
+      "zh": "現在寄新地址給出貨組，請司機不要去 Perry 巷。",
+      "whyZh": "開印後已不能改配送地址。"
+    },
+    {
+      "id": "B",
+      "text": "Tell the designer to stop printing and submit a new proof for the new room.",
+      "zh": "請設計人員停止印刷，為新活動室重新提交打樣。",
+      "whyZh": "題目要求不更動印件；重新拋出打樣既不必要，也不解決出貨安排。"
+    },
+    {
+      "id": "C",
+      "text": "Email Dispatch before 15:30 with NP-604 and request collection instead of delivery.",
+      "zh": "於 15:30 前寄信給出貨組，附 NP-604 並申請改成自取。",
+      "whyZh": "地址更改窗口已過，但還在通知所列的自取窗口內；改自取可避開無人收件，不必改印件。"
+    },
+    {
+      "id": "D",
+      "text": "Wait until the driver leaves and request collection at the counter.",
+      "zh": "等司機出車後，再到櫃檯要求改自取。",
+      "whyZh": "紙箱離廠後不能留在取件櫃檯，且會錯過 15:30 的申請期限。"
+    }
+  ],
+  "explanationZh": "地址更改窗口已過，但還在通知所列的自取窗口內；改自取可避開無人收件，不必改印件。",
+  "evidence": "Document 1 · Print order confirmation\nNorthline Press | Order NP-604\nPrint run: 240 table cards. Paper: ivory.\nDelivery: Front desk, 16 Perry Lane.\nWe will not start the run until you approve the proof. Proof approval confirms the content and layout only. To change the delivery address, email Dispatch with the order number before the run starts.\nA collection request can be recorded later than an address change, provided the completed cartons have not left our premises.\n\nDocument 2 · Proof reply\nTuesday, 10:12\nTo: Proof desk\nThe card names and placement on the proof look right. Please approve that version for print. I mentioned the new function room to the designer yesterday, but the confirmation still lists Perry Lane. I have not emailed Dispatch.\nJo\n\nDocument 3 · Dispatch update\nTuesday, 13:25\nNP-604 went into production at 11:40. We received no address-change request before that. The cartons are due to leave for Perry Lane at 16:00. We cannot change the delivery address once a run starts. If you prefer to collect this order, email us by 15:30 so we can keep the cartons at our collection counter.\nPerry Lane staff have told us they cannot accept your order today. Please do not let the driver attempt delivery there if you can arrange collection.",
+  "vocabulary": [
+    {
+      "term": "arrange collection",
+      "zh": "安排自行領取",
+      "note": "先通知出貨人不要配送，改把貨品留供取件。"
+    }
+  ]
+}

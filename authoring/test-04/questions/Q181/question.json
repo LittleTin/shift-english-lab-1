@@ -1,0 +1,52 @@
+{
+  "id": "t04-q181",
+  "testId": "test-04",
+  "part": 7,
+  "number": 181,
+  "revision": 1,
+  "topic": "business",
+  "groupId": "t04-r-p7-10",
+  "difficulty": "foundation",
+  "tags": [
+    "triple-document",
+    "business"
+  ],
+  "prompt": "How many table cards are on the order?",
+  "promptZh": "這張訂單有幾張桌卡？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "16",
+      "zh": "16 張",
+      "whyZh": "16 是 Perry 巷的門牌，不是印量。"
+    },
+    {
+      "id": "B",
+      "text": "60",
+      "zh": "60 張",
+      "whyZh": "訂單沒有列 60 張。"
+    },
+    {
+      "id": "C",
+      "text": "240",
+      "zh": "240 張",
+      "whyZh": "確認單明列印量 240 張。"
+    },
+    {
+      "id": "D",
+      "text": "604",
+      "zh": "604 張",
+      "whyZh": "604 是訂單編號的一部分，不是張數。"
+    }
+  ],
+  "explanationZh": "確認單明列印量 240 張。",
+  "evidence": "Document 1 · Print order confirmation\nNorthline Press | Order NP-604\nPrint run: 240 table cards. Paper: ivory.\nDelivery: Front desk, 16 Perry Lane.\nWe will not start the run until you approve the proof. Proof approval confirms the content and layout only. To change the delivery address, email Dispatch with the order number before the run starts.\nA collection request can be recorded later than an address change, provided the completed cartons have not left our premises.",
+  "vocabulary": [
+    {
+      "term": "print run",
+      "zh": "一次印刷的批次或印量",
+      "note": "這裡指同一版本一起印製的桌卡。"
+    }
+  ]
+}
