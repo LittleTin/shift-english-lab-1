@@ -1,0 +1,163 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "B: drilling next door makes sound-setting differences hard to hear, prompting relocation; room capacity and large screen not discussed, upload successful. Dialogue matches in both identical modes including names, next-door drilling, empty training room until noon and charging cables. Untruncated contiguous stem cue bank confirms literal Number in all three, including 38 and 40 where standalone ASR dropped the word.",
+  "activeQuestion": {
+    "id": "t03-q038",
+    "testId": "test-03",
+    "number": 38,
+    "part": 3,
+    "groupId": "t03-g034",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "detail"
+    ],
+    "prompt": "Why are the speakers moving the demonstration?",
+    "promptZh": "為什麼要更換展示地點？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The room is too small for the display.",
+        "zh": "房間太小，容不下展示。",
+        "whyZh": "沒有提到空間不足。"
+      },
+      {
+        "id": "B",
+        "text": "Nearby construction is making noise.",
+        "zh": "附近施工造成噪音。",
+        "whyZh": "隔壁鑽孔會妨礙客戶聽出音效差異。"
+      },
+      {
+        "id": "C",
+        "text": "The customers requested a larger screen.",
+        "zh": "客戶要求更大螢幕。",
+        "whyZh": "展示商品是喇叭，未要求螢幕。"
+      },
+      {
+        "id": "D",
+        "text": "The speakers cannot connect to the internet.",
+        "zh": "說話者無法連上網路。",
+        "whyZh": "音軌已上傳，沒有連線故障。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "隔壁鑽孔會妨礙客戶聽出音效差異。",
+    "evidence": "Customers won't hear the difference between the two sound settings.",
+    "vocabulary": [
+      {
+        "term": "demonstration",
+        "zh": "展示／示範",
+        "note": "此處指向客戶示範產品音效。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g034",
+    "testId": "test-03",
+    "part": 3,
+    "title": "A quieter demonstration",
+    "titleZh": "安靜的產品展示",
+    "topic": "technology",
+    "passage": "F1: Before the customers arrive, let's test the portable speaker in this conference room. Leon, did you upload the demonstration tracks?\nM1: Yes, Priya, but the construction crew has started drilling next door. Customers won't hear the difference between the two sound settings.\nM2: The training room at the other end of the hall is empty until noon. I can move the display stands there.\nF1: Thanks, Omar. The invitation says this room, though, and some visitors may come straight upstairs.\nM1: I'll stay here to direct them. We should also tell reception about the change.\nM2: I'll call reception as soon as the stands are in place. Priya, could you bring the charging cables? The speakers are only half charged.",
+    "passageZh": "女（Priya）：客戶到之前，先在這間會議室測試可攜式喇叭。Leon，你上傳展示音軌了嗎？\n男一（Leon）：上傳了，但隔壁施工人員開始鑽孔。客戶會聽不出兩種音效設定的差別。\n男二（Omar）：走廊另一端的訓練室到中午都沒人用。我可以把展示架搬過去。\n女：謝謝你，Omar。不過邀請函寫這間，有些訪客可能直接上樓。\n男一：我留在這裡引導他們。也應該通知接待處。\n男二：展示架擺好後我就打給接待處。Priya，請帶充電線，喇叭只剩一半電量。",
+    "audioScript": "Before the customers arrive, let's test the portable speaker in this conference room. Leon, did you upload the demonstration tracks?\nYes, Priya, but the construction crew has started drilling next door. Customers won't hear the difference between the two sound settings.\nThe training room at the other end of the hall is empty until noon. I can move the display stands there.\nThanks, Omar. The invitation says this room, though, and some visitors may come straight upstairs.\nI'll stay here to direct them. We should also tell reception about the change.\nI'll call reception as soon as the stands are in place. Priya, could you bring the charging cables? The speakers are only half charged.",
+    "turns": [
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "Before the customers arrive, let's test the portable speaker in this conference room. Leon, did you upload the demonstration tracks?"
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "Yes, Priya, but the construction crew has started drilling next door. Customers won't hear the difference between the two sound settings."
+      },
+      {
+        "voice": "male",
+        "speaker": "M2",
+        "text": "The training room at the other end of the hall is empty until noon. I can move the display stands there."
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "Thanks, Omar. The invitation says this room, though, and some visitors may come straight upstairs."
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "I'll stay here to direct them. We should also tell reception about the change."
+      },
+      {
+        "voice": "male",
+        "speaker": "M2",
+        "text": "I'll call reception as soon as the stands are in place. Priya, could you bring the charging cables? The speakers are only half charged."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-14.mp3",
+    "duration": 48.288,
+    "audioStart": 0.5,
+    "audioEnd": 48.788,
+    "audioSpeakers": [
+      {
+        "speaker": "F1",
+        "locale": "en-GB",
+        "role": "female",
+        "modelVoice": "en-GB-SoniaNeural"
+      },
+      {
+        "speaker": "M1",
+        "locale": "en-GB",
+        "role": "male",
+        "modelVoice": "en-GB-RyanNeural"
+      },
+      {
+        "speaker": "M2",
+        "locale": "en-GB",
+        "role": "male",
+        "modelVoice": "en-GB-AlfieNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "start": 66.58225,
+      "end": 70.16067,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Questions 38-40. Listen to the conversation."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-03-14.mp3",
+      "start": 0.5,
+      "end": 48.788,
+      "assetSha256": "6a880dac356428844017bf73498cbbc0e70b23a48aefbf11ff778f727d59280a",
+      "speech": "Before the customers arrive, let's test the portable speaker in this conference room. Leon, did you upload the demonstration tracks? Yes, Priya, but the construction crew has started drilling next door. Customers won't hear the difference between the two sound settings. The training room at the other end of the hall is empty until noon. I can move the display stands there. Thanks, Omar, the invitation says this room, though, and some visitors may come straight upstairs. I'll stay here to direct them. We should also tell reception about the change. I'll call reception as soon as the stands are in place. Priya, could you bring the charging cables? The speakers are only half-charged."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-14.mp3",
+      "start": 0.5,
+      "end": 48.788,
+      "assetSha256": "6a880dac356428844017bf73498cbbc0e70b23a48aefbf11ff778f727d59280a",
+      "speech": "Before the customers arrive, let's test the portable speaker in this conference room. Leon, did you upload the demonstration tracks? Yes, Priya, but the construction crew has started drilling next door. Customers won't hear the difference between the two sound settings. The training room at the other end of the hall is empty until noon. I can move the display stands there. Thanks, Omar, the invitation says this room, though, and some visitors may come straight upstairs. I'll stay here to direct them. We should also tell reception about the change. I'll call reception as soon as the stands are in place. Priya, could you bring the charging cables? The speakers are only half-charged."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-03-cues-02.mp3",
+      "start": 0.25,
+      "end": 3.95396,
+      "assetSha256": "836ec550b6871728201b644a35f4f41899534a150b2ba6e6323d1aea349f7f9e",
+      "speech": "38. Why are the speakers moving the demonstration?",
+      "retries": {
+        "Q038-retry-0-0.85": "38. Why are the speakers moving the demonstration?",
+        "Q038-retry-0-1.15": "38. Why are the speakers moving the demonstration?",
+        "Q038-retry-0-1": "38. Why are the speakers moving the demonstration?"
+      }
+    }
+  ]
+}

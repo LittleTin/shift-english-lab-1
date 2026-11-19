@@ -1,0 +1,162 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "D: preparing photos for an exhibition, a reception, and curatorial labels indicates gallery/museum rather than shipping, repairs or shipbuilding, despite the maritime subject. Both delivery modes share exact asset/range. Questions and group cue agree; 1968 not 1978, printer at three, boat names, and female speaker’s responsibility confirmed. The full decode says inside picture, but independent normal-rate focused clip recovered unsigned picture in context; other focused rates still say inside. Sound uncertainty on this word resolved by the normal-rate focused corroboration rather than treated as a change.",
+  "activeQuestion": {
+    "id": "t03-q035",
+    "testId": "test-03",
+    "number": 35,
+    "part": 3,
+    "groupId": "t03-g033",
+    "topic": "daily",
+    "difficulty": "advanced",
+    "tags": [
+      "daily",
+      "inference"
+    ],
+    "prompt": "Where do the speakers most likely work?",
+    "promptZh": "說話者最可能在哪裡工作？",
+    "options": [
+      {
+        "id": "A",
+        "text": "At a shipping company",
+        "zh": "航運公司",
+        "whyZh": "港口和船名是展覽主題，不是運輸業務。"
+      },
+      {
+        "id": "B",
+        "text": "At a camera repair shop",
+        "zh": "相機維修店",
+        "whyZh": "沒有修理相機，只有策展和標籤。"
+      },
+      {
+        "id": "C",
+        "text": "At a boat factory",
+        "zh": "造船廠",
+        "whyZh": "船名需要校對，但沒有製造船隻。"
+      },
+      {
+        "id": "D",
+        "text": "At a museum or gallery",
+        "zh": "博物館或藝廊",
+        "whyZh": "照片展覽、開幕招待會與標籤印製符合展覽機構。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "照片展覽、開幕招待會與標籤印製符合展覽機構。",
+    "evidence": "the photographs for our harbor exhibition have arrived",
+    "vocabulary": [
+      {
+        "term": "unsigned",
+        "zh": "未署名的",
+        "note": "指作品未有作者簽名。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g033",
+    "testId": "test-03",
+    "part": 3,
+    "title": "Exhibition labels",
+    "titleZh": "展覽標籤",
+    "topic": "daily",
+    "passage": "M1: Maya, the photographs for our harbor exhibition have arrived, but the labels still show the dates we copied from the old catalog.\nF1: Didn't the photographer's daughter send us corrections yesterday? I've been arranging the opening reception and haven't checked my messages.\nM1: She did. Two pictures were taken in nineteen sixty-eight, not nineteen seventy-eight. I've marked those changes in the shared file.\nF1: Good catch. The printer collects the file at three, so there's still time. Could you check the spelling of the boat names as well?\nM1: Of course. Shall I contact her about the unsigned picture?\nF1: No, I'll handle that. Please concentrate on the labels so we don't miss the printing deadline.",
+    "passageZh": "男：Maya，港口展的照片到了，但標籤還是從舊目錄抄來的日期。\n女：攝影師的女兒不是昨天寄了更正嗎？我一直忙著安排開幕招待會，還沒看訊息。\n男：寄了。有兩張是1968年拍攝，不是1978年。我已在共用檔標出修改。\n女：幸好你發現了。印刷商三點來取檔，還有時間。也請檢查船名拼字好嗎？\n男：當然。我要向她詢問那張未署名的照片嗎？\n女：不用，我來處理。請專心處理標籤，以免錯過印刷期限。",
+    "audioScript": "Maya, the photographs for our harbor exhibition have arrived, but the labels still show the dates we copied from the old catalog.\nDidn't the photographer's daughter send us corrections yesterday? I've been arranging the opening reception and haven't checked my messages.\nShe did. Two pictures were taken in nineteen sixty-eight, not nineteen seventy-eight. I've marked those changes in the shared file.\nGood catch. The printer collects the file at three, so there's still time. Could you check the spelling of the boat names as well?\nOf course. Shall I contact her about the unsigned picture?\nNo, I'll handle that. Please concentrate on the labels so we don't miss the printing deadline.",
+    "turns": [
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "Maya, the photographs for our harbor exhibition have arrived, but the labels still show the dates we copied from the old catalog."
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "Didn't the photographer's daughter send us corrections yesterday? I've been arranging the opening reception and haven't checked my messages."
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "She did. Two pictures were taken in nineteen sixty-eight, not nineteen seventy-eight. I've marked those changes in the shared file."
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "Good catch. The printer collects the file at three, so there's still time. Could you check the spelling of the boat names as well?"
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "Of course. Shall I contact her about the unsigned picture?"
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "No, I'll handle that. Please concentrate on the labels so we don't miss the printing deadline."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-13.mp3",
+    "duration": 47.472,
+    "audioStart": 0.5,
+    "audioEnd": 47.972,
+    "audioSpeakers": [
+      {
+        "speaker": "M1",
+        "locale": "en-US",
+        "role": "male",
+        "modelVoice": "en-US-GuyNeural"
+      },
+      {
+        "speaker": "F1",
+        "locale": "en-US",
+        "role": "female",
+        "modelVoice": "en-US-JennyNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "start": 53.03704,
+      "end": 57.10883,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Questions 35 through 37, listen to the conversation."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-03-13.mp3",
+      "start": 0.5,
+      "end": 47.972,
+      "assetSha256": "fde1b5831c130b5dad0dc9e4ea04fb88ee748fada014ebd91e647b339f5cd0cd",
+      "speech": "Maya, the photographs for our harbor exhibition have arrived, but the labels still show the dates we copied from the old catalog. Didn't the photographer's daughter send us corrections yesterday? I've been arranging the opening reception and haven't checked my messages. She did. Two pictures were taken in 1968, not 1978. I've marked those changes in the shared file. Good catch. The printer collects the file at three, so there's still time. Could you check the spelling of the boat names as well? Of course. Shall I contact her about the inside picture? No, I'll handle that. Please concentrate on the labels so we don't miss the printing deadline. [BLANK_AUDIO]",
+      "retries": {
+        "t03-g033-passage-retry-35.0-0.85": "Of course. Shall I contact her about the inside picture? No, I'll handle that. Please concentrate on the..",
+        "t03-g033-passage-retry-35.0-1.15": "Of course. Shall I contact her about the inside picture? No, I'll handle that. Please concentrate on the-",
+        "t03-g033-passage-retry-35.0-1": "Of course. Shall I contact her about the unsigned picture? No, I'll handle that. Please concentrate on the list."
+      }
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-13.mp3",
+      "start": 0.5,
+      "end": 47.972,
+      "assetSha256": "fde1b5831c130b5dad0dc9e4ea04fb88ee748fada014ebd91e647b339f5cd0cd",
+      "speech": "Maya, the photographs for our harbor exhibition have arrived, but the labels still show the dates we copied from the old catalog. Didn't the photographer's daughter send us corrections yesterday? I've been arranging the opening reception and haven't checked my messages. She did. Two pictures were taken in 1968, not 1978. I've marked those changes in the shared file. Good catch. The printer collects the file at three, so there's still time. Could you check the spelling of the boat names as well? Of course. Shall I contact her about the inside picture? No, I'll handle that. Please concentrate on the labels so we don't miss the printing deadline. [BLANK_AUDIO]",
+      "retries": {
+        "t03-g033-passage-retry-35.0-0.85": "Of course. Shall I contact her about the inside picture? No, I'll handle that. Please concentrate on the..",
+        "t03-g033-passage-retry-35.0-1.15": "Of course. Shall I contact her about the inside picture? No, I'll handle that. Please concentrate on the-",
+        "t03-g033-passage-retry-35.0-1": "Of course. Shall I contact her about the unsigned picture? No, I'll handle that. Please concentrate on the list."
+      }
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "start": 57.35883,
+      "end": 60.48208,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 35, where do the speakers most likely work?"
+    }
+  ]
+}
