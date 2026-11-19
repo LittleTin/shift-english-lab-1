@@ -1,0 +1,109 @@
+{
+  "method": "Local Whisper base.en unprompted word mode (-sow -ml 1 -ojf), complete original MP3 source. Word timing interpolated, not acoustic boundaries; scores are model token possibilities. No alternative model or same-phrase speaker comparison available.",
+  "holds": [
+    {
+      "questions": [
+        56,
+        57,
+        58
+      ],
+      "groupId": "t03-g040",
+      "role": "passage",
+      "path": "audio/azure-v1/test-03-20.mp3",
+      "start": 0.5,
+      "end": 53.156,
+      "assetSha256": "87ab6cfed3277949cccd5a01c450e794082ce7bcffbd1d81ce270a53dd24e099",
+      "observations": [
+        {
+          "expected": "chart",
+          "observed": "chat.",
+          "wordSourceEstimate": [
+            12.24,
+            12.6
+          ],
+          "ASRTokenProbabilities": [
+            0.673656,
+            0.964433
+          ]
+        }
+      ],
+      "decision": "remain hold; lexical expectation not corroborated; no audio error proven"
+    },
+    {
+      "questions": [
+        84
+      ],
+      "groupId": "t03-g049",
+      "role": "question",
+      "path": "audio/formal/test-03-cues-05.mp3",
+      "start": 17.60963,
+      "end": 21.31125,
+      "assetSha256": "e214e1b90a2ba28dbf7cec4dab788d958b222f259cd036ee91ac81860ea792e1",
+      "observations": [
+        {
+          "expected": "returned",
+          "observed": "return",
+          "wordSourceEstimate": [
+            20.22,
+            20.63
+          ],
+          "ASRTokenProbabilities": [
+            0.880586
+          ]
+        }
+      ],
+      "decision": "remain hold; lexical expectation not corroborated; no audio error proven"
+    },
+    {
+      "questions": [
+        95,
+        96,
+        97
+      ],
+      "groupId": "t03-g053",
+      "role": "passage",
+      "path": "audio/azure-v1/test-03-33.mp3",
+      "start": 0.5,
+      "end": 51.404,
+      "assetSha256": "fc6a39c797bbfd6de0d48016855bc51d6a1a30fcaa784b379d27bc77da05cf26",
+      "observations": [
+        {
+          "expected": "Chen",
+          "observed": "Chang.",
+          "wordSourceEstimate": [
+            1.99,
+            3.84
+          ],
+          "ASRTokenProbabilities": [
+            0.685234,
+            0.715215
+          ]
+        },
+        {
+          "expected": "sent",
+          "observed": "send",
+          "wordSourceEstimate": [
+            18.62,
+            18.86
+          ],
+          "ASRTokenProbabilities": [
+            0.805273
+          ]
+        },
+        {
+          "expected": "instead",
+          "observed": "state.",
+          "wordSourceEstimate": [
+            29.48,
+            29.82
+          ],
+          "ASRTokenProbabilities": [
+            0.907414,
+            0.995114
+          ]
+        }
+      ],
+      "decision": "remain hold; lexical expectation not corroborated; no audio error proven"
+    }
+  ]
+}

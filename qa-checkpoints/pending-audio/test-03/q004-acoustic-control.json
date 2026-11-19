@@ -1,0 +1,19 @@
+{
+  "question": "t03-q004",
+  "practice": {
+    "path": "audio/azure-v1/test-03-02.mp3",
+    "assetSha256": "444de90014c8ace28b810abd1ca062889a77fe2512dbc3f46d4aea4bf4a37a35",
+    "start": 0.5,
+    "end": 17.924,
+    "speaker": "en-ZA-LukeNeural"
+  },
+  "formal": {
+    "path": "audio/formal-v2/test-03-02.mp3",
+    "start": 0.5,
+    "end": 20.06,
+    "speaker": "en-US-GuyNeural"
+  },
+  "method": "Searched existing authored clips for independently established same-speaker table/chairs/chase. Scanned RMS, low- and high-frequency energy, and zero crossings in 20 ms windows of the full PCM source, comparing control phrase 'behind the people' in option C and 'from a wall' in A against 'around a/the table' in D. No independent same-voice chair/chase or matched table article phrase found. Article waveform has a short voiced transition before the table onset, but nasal/d release, possible lenition of the dental, and coarticulation make the transition non-diagnostic. Different-voice formal clip not a valid same-voice lexical template. Conclusion needs independent listening or replacement, not another equivalent transcript.",
+  "decision": "hold",
+  "next": "When authorized Azure Speech F0 is available, regenerate the existing en-ZA Luke practice script from exact current A–D including B 'The chairs have been piled in a corner.' and D 'Everyone is standing around a table.' Retain current official formal recording if its separate verification stays valid. Replace only this practice item through an explicit per-question path/range (not byte-patching/re-encoding a shared MP3); preserve unchanged neighboring assets. Revalidate order, final consonants, a/the distinction, exact source SHA, natural pauses, image, canonical English and zh. Do not rewrite wording solely to match a transcript."
+}

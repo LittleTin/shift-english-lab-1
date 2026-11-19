@@ -1,0 +1,177 @@
+{
+  "method": "Full original MP3 source, local Whisper base.en, unprompted -sow -ml 1 -ojf. Word timestamps are estimates, not acoustic boundaries. Captures include original neighboring speech and only logged excerpts are attributed to rows.",
+  "approved": [
+    19,
+    20
+  ],
+  "holds": [
+    2,
+    4,
+    11,
+    17
+  ],
+  "sourceObservations": {
+    "002-practice": {
+      "path": "audio/azure-v1/test-03-01.mp3",
+      "start": 20.608,
+      "end": 37.936,
+      "assetSha256": "8f78b5a19e22b5329e8b5aef750272bc91cfd8aae5cebb7a022d69f7837b25ef",
+      "expected": "cup",
+      "observations": [
+        {
+          "word": "cop",
+          "wordSourceRange": [
+            34.24,
+            35.03
+          ],
+          "tokenProbabilities": [
+            0.912201
+          ]
+        }
+      ],
+      "sourceWordTranscript": "The counter is covered with plates B. Both people are behind the counter  C. A customer is washing a window D. A cop is resting on the counter"
+    },
+    "004-practice": {
+      "path": "audio/azure-v1/test-03-02.mp3",
+      "start": 0.5,
+      "end": 17.924,
+      "assetSha256": "444de90014c8ace28b810abd1ca062889a77fe2512dbc3f46d4aea4bf4a37a35",
+      "expected": "chairs",
+      "observations": [
+        {
+          "word": "chase",
+          "wordSourceRange": [
+            6.14,
+            6.21
+          ],
+          "tokenProbabilities": [
+            0.606924
+          ]
+        }
+      ],
+      "sourceWordTranscript": "A. A chart is being removed from a wall. B. The chase has been piled in a corner. C. A line graph is displayed behind the people. D. Everyone is standing around the table. A."
+    },
+    "011-passage": {
+      "path": "audio/formal-v2/test-03-04.mp3",
+      "start": 16.552,
+      "end": 32.944,
+      "assetSha256": "ccc4f69355ad9910e235e518c1c1d676daaa8c97172468421cdc046e984a5b95",
+      "expected": "at two",
+      "observations": [
+        {
+          "word": "booked",
+          "wordSourceRange": [
+            26.28,
+            27.0
+          ],
+          "tokenProbabilities": [
+            0.997522
+          ]
+        },
+        {
+          "word": "too.",
+          "wordSourceRange": [
+            27.24,
+            28.0
+          ],
+          "tokenProbabilities": [
+            0.911174,
+            0.985015
+          ]
+        }
+      ],
+      "sourceWordTranscript": "we keep the conference room for another hour? A. It is on the fourth floor. B. A sales team has it booked it too.  C. I enjoyed the conference."
+    },
+    "017-practice": {
+      "path": "audio/azure-v1/test-03-06.mp3",
+      "start": 17.944,
+      "end": 35.32,
+      "assetSha256": "00789143d5747f6c8f9dd5f8ff692997e5b4ca3095743e233e607e3a96122699",
+      "expected": "seats, Elena",
+      "observations": [
+        {
+          "word": "sits",
+          "wordSourceRange": [
+            24.51,
+            25.59
+          ],
+          "tokenProbabilities": [
+            0.612708
+          ]
+        },
+        {
+          "word": "Talena",
+          "wordSourceRange": [
+            32.1,
+            32.87
+          ],
+          "tokenProbabilities": [
+            0.0297964,
+            0.935961
+          ]
+        }
+      ],
+      "sourceWordTranscript": "are leading the client meeting, are you not? A. The meeting room sits twelve. B. They are our largest client.  C. Actually, Talena will be taking my place."
+    },
+    "019-passage": {
+      "path": "audio/formal-v2/test-03-07.mp3",
+      "start": 0.5,
+      "end": 17.084,
+      "assetSha256": "562475e7b5ac748b67203d1b3be40ecdfbc689adb8b54f49e6f29a460665f7b2",
+      "expected": "lift",
+      "observations": [
+        {
+          "word": "lift",
+          "wordSourceRange": [
+            1.74,
+            2.12
+          ],
+          "tokenProbabilities": [
+            0.655808
+          ]
+        }
+      ],
+      "sourceWordTranscript": "do you expect the lift to be working again? A. The technician said before 5. B. I work on the top floor. C. It carries up to 8 people. Why"
+    },
+    "019-practice": {
+      "path": "audio/azure-v1/test-03-07.mp3",
+      "start": 0.5,
+      "end": 17.084,
+      "assetSha256": "42e4260cf430886f15c784570a175290a7c7de7444b92ba80e561a72afa9f173",
+      "expected": "lift",
+      "observations": [
+        {
+          "word": "lift",
+          "wordSourceRange": [
+            1.56,
+            1.91
+          ],
+          "tokenProbabilities": [
+            0.706827
+          ]
+        }
+      ],
+      "sourceWordTranscript": "do you expect the lift to be working again? A. The technician said before five. B. I work on the top floor. C. It carries up to eight people."
+    },
+    "020-passage": {
+      "path": "audio/formal-v2/test-03-07.mp3",
+      "start": 17.584,
+      "end": 35.56,
+      "assetSha256": "562475e7b5ac748b67203d1b3be40ecdfbc689adb8b54f49e6f29a460665f7b2",
+      "expected": "serves",
+      "observations": [
+        {
+          "word": "serves",
+          "wordSourceRange": [
+            27.77,
+            28.21
+          ],
+          "tokenProbabilities": [
+            0.893972
+          ]
+        }
+      ],
+      "sourceWordTranscript": "we not discuss the proposal over lunch? A. A lunch menu is included. B. The cafeteria serves lunch until 2.  C. That works, provided we are back by 1. How did"
+    }
+  }
+}

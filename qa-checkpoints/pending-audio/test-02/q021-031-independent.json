@@ -1,0 +1,346 @@
+{
+  "commit": "06eccf78fde375b674d01bba7141aa5cff54c895",
+  "packSha256": "dd9b42242b14c96999e2e6621f1b15850a7156dbc4271cd1b4ecff31ed83e090",
+  "sourceHashesIncludingCue": {
+    "audio/azure-v1/test-02-07.mp3": "23f6adf5f8140aad1c3ce855836b0800bd919ed4a24d73816a6875f99d770e84",
+    "audio/azure-v1/test-02-08.mp3": "4eb13d16f28be215f8f99a9ef44624559deb25e0518f97e451148fbdb659bc72",
+    "audio/azure-v1/test-02-09.mp3": "d307280b603c03190d7c585982915fc4507df752f199cda54406966552f96f1e",
+    "audio/azure-v1/test-02-11.mp3": "5e2bacd5d2e55ba239a41ba4f929e3364756da750a406995a403d8d6b05268ea",
+    "audio/formal-v2/test-02-07.mp3": "ee6016360ee74abc8a44404ef756702455fa08a4afc148e242676cb99e465c27",
+    "audio/formal-v2/test-02-08.mp3": "ad1303499752f5bd4f9bdfb48c155e432ea2b83c3741ad7e378820cdb5c6a62e",
+    "audio/formal-v2/test-02-09.mp3": "7d5e1ad5865af07862d094713fd460948b65b3b35a71f63af0075f2d5e28959c",
+    "audio/formal-v2/test-02-11.mp3": "f6b001264d614f907a6fa8a672c74cd5cae2f92e25549df6291999be2bf4ccf3",
+    "audio/formal/test-02-cues-01.mp3": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8"
+  },
+  "items": [
+    {
+      "number": 21,
+      "key": "C",
+      "expectedScript": "Did the connector supplier confirm the shipping date?\nA. The connection is wireless.\nB. Shipping boxes are brown.\nC. They promised to confirm it this afternoon.",
+      "originalAuditAudio": [
+        {
+          "mode": "cue",
+          "path": "audio/formal/test-02-cues-01.mp3",
+          "start": 23.72275,
+          "end": 24.83521,
+          "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+          "speech": "Number 21."
+        },
+        {
+          "mode": "passage",
+          "path": "audio/formal-v2/test-02-07.mp3",
+          "start": 33.636,
+          "end": 50.628,
+          "assetSha256": "ee6016360ee74abc8a44404ef756702455fa08a4afc148e242676cb99e465c27",
+          "speech": "Did the connector supplier confirm the shipping date? A. The connection is wireless. B. Shipping boxes are brown. C. They promise to confirm it this afternoon."
+        },
+        {
+          "mode": "practice",
+          "path": "audio/azure-v1/test-02-07.mp3",
+          "start": 34.692,
+          "end": 50.892,
+          "assetSha256": "23f6adf5f8140aad1c3ce855836b0800bd919ed4a24d73816a6875f99d770e84",
+          "speech": "Did the connector supplier confirm the shipping date? A. The connection is wireless. B. Shipping boxes are brown. C. They promised to confirm it this afternoon."
+        }
+      ],
+      "editorialRewrites": null,
+      "status": "exact-formal-hold",
+      "detail": "Formal stem and all choices in order; full bank plus five bounded unprompted target checks decode promise, not promised. Practice clause says promised and previous exact practice stem says shipping date. Loss of final /t/ before to may reflect connected speech, not proof of changed source. Key C remains unique and time is exact."
+    },
+    {
+      "number": 22,
+      "key": "C",
+      "expectedScript": "Please use the updated engineering change order.\nA. The engineer ordered coffee.\nB. It changes color in sunlight.\nC. All right, I will replace the old copy.",
+      "originalAuditAudio": [
+        {
+          "mode": "cue",
+          "path": "audio/formal/test-02-cues-01.mp3",
+          "start": 25.08521,
+          "end": 26.19542,
+          "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+          "speech": "Number 22."
+        },
+        {
+          "mode": "passage",
+          "path": "audio/formal-v2/test-02-08.mp3",
+          "start": 0.5,
+          "end": 17.9,
+          "assetSha256": "ad1303499752f5bd4f9bdfb48c155e432ea2b83c3741ad7e378820cdb5c6a62e",
+          "speech": "Please use the updated engineering change order. A. The engineer ordered coffee. B. It changes color in sunlight. C. All right, I will replace the old copy."
+        },
+        {
+          "mode": "practice",
+          "path": "audio/azure-v1/test-02-08.mp3",
+          "start": 0.5,
+          "end": 18.044,
+          "assetSha256": "4eb13d16f28be215f8f99a9ef44624559deb25e0518f97e451148fbdb659bc72",
+          "speech": "Please use the updated engineering change order. A. The engineer ordered coffee. B. It changes color in sunlight. C. All right, I will replace the old copy."
+        }
+      ],
+      "editorialRewrites": null,
+      "status": "audio-resolved-ready",
+      "detail": "Practice whole-item/whole-bank coffee is a recognizer carryover from A, resolved through three independent unprompted re-extractions of C (0.90×, 1.0×, 1.16×), all exact copy; same-voice A-vs-C audio independently verifies /f/ sustained frication vs /p/ stop closure/release. Formal exact isolated transcription was already positive, including B in sunlight. Unique C."
+    },
+    {
+      "number": 27,
+      "key": "A",
+      "expectedScript": "Where can I collect the package if I miss the delivery?\nA. At the service counter on Pine Street.\nB. It arrived earlier than usual.\nC. The collector likes stamps.",
+      "originalAuditAudio": [
+        {
+          "mode": "cue",
+          "path": "audio/formal/test-02-cues-01.mp3",
+          "start": 32.18379,
+          "end": 33.39988,
+          "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+          "speech": "Number 27."
+        },
+        {
+          "mode": "passage",
+          "path": "audio/formal-v2/test-02-09.mp3",
+          "start": 34.86,
+          "end": 51.876,
+          "assetSha256": "7d5e1ad5865af07862d094713fd460948b65b3b35a71f63af0075f2d5e28959c",
+          "speech": "Where can I collect the package if I miss the delivery?\n A. At the service counter on Pine Street.\n B. It arrived earlier than usual.\n C. The collector-like stamps."
+        },
+        {
+          "mode": "practice",
+          "path": "audio/azure-v1/test-02-09.mp3",
+          "start": 32.652,
+          "end": 49.716,
+          "assetSha256": "d307280b603c03190d7c585982915fc4507df752f199cda54406966552f96f1e",
+          "speech": "Where can I collect the package if I miss the delivery?\n A. At the service counter on Pine Street.\n B. It arrived earlier than usual.\n C. The collector likes stamps."
+        }
+      ],
+      "editorialRewrites": null,
+      "status": "exact-formal-hold",
+      "detail": "Formal full bank and most targeted variants still segment collector-like stamps or collector like stamps. 0.86× BC retry recovers likes but renders stamps as standing; no unprompted transcript recovers all words together. Could be s/st boundary assimilation, not verified wrong speech. Practice exact. Key A remains unique."
+    },
+    {
+      "number": 31,
+      "key": "B",
+      "expectedScript": "The screen is still blank.\nA. I filled in the blank on the form.\nB. Let us check the input source.\nC. The presentation was last year.",
+      "originalAuditAudio": [
+        {
+          "mode": "cue",
+          "path": "audio/formal/test-02-cues-01.mp3",
+          "start": 37.55179,
+          "end": 38.64229,
+          "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+          "speech": "Number 31."
+        },
+        {
+          "mode": "passage",
+          "path": "audio/formal-v2/test-02-11.mp3",
+          "start": 0.5,
+          "end": 16.22,
+          "assetSha256": "f6b001264d614f907a6fa8a672c74cd5cae2f92e25549df6291999be2bf4ccf3",
+          "speech": "The screen is still blank.\n A. I filled in the blank on the form.\n B. Let us check the input source.\n C. The presentation was last year."
+        },
+        {
+          "mode": "practice",
+          "path": "audio/azure-v1/test-02-11.mp3",
+          "start": 0.5,
+          "end": 16.58,
+          "assetSha256": "5e2bacd5d2e55ba239a41ba4f929e3364756da750a406995a403d8d6b05268ea",
+          "speech": "The screen is still black.\n A. I filled in the blank on the form.\n B. Let us check the input source.\n C. The presentation was last year."
+        }
+      ],
+      "editorialRewrites": null,
+      "status": "exact-practice-hold",
+      "detail": "Practice bank/full/first-stem/adjacent-A trials all black; same source clearly has blank on the form in option A. Formal prompt blank and all options exact. Male and female blank realizations are not same-voice comparisons. Preserve hold without assuming the speaker actually substituted the word; B remains uniquely best."
+    }
+  ],
+  "unpromptedBankDecoder": "Whisper base.en -ml 1 -sow -ojf with exact commit media",
+  "retryParameters": [
+    [
+      [
+        "q021-formal-c-slow",
+        "formal-v2",
+        7,
+        44.0,
+        6.628,
+        0.86
+      ],
+      [
+        "q022-practice-c-tail",
+        "azure-v1",
+        8,
+        13.8,
+        4.244,
+        1.0
+      ],
+      [
+        "q027-formal-bc-slow",
+        "formal-v2",
+        9,
+        43.3,
+        8.576,
+        0.86
+      ],
+      [
+        "q031-practice-whole-fast",
+        "azure-v1",
+        11,
+        0,
+        16.58,
+        1.12
+      ],
+      [
+        "q021-formal-bc-fast",
+        "formal-v2",
+        7,
+        43.1,
+        7.528,
+        1.17
+      ],
+      [
+        "q022-practice-c-fast",
+        "azure-v1",
+        8,
+        13.5,
+        4.544,
+        1.16
+      ],
+      [
+        "q027-formal-c",
+        "formal-v2",
+        9,
+        47.4,
+        4.476,
+        1.0
+      ],
+      [
+        "q031-practice-a-next-slow",
+        "azure-v1",
+        11,
+        0,
+        7.0,
+        0.86
+      ],
+      [
+        "q027-formal-c-fast",
+        "formal-v2",
+        9,
+        47.07,
+        4.806,
+        1.14
+      ],
+      [
+        "q031-practice-stem",
+        "azure-v1",
+        11,
+        0.3,
+        2.7,
+        1.03
+      ],
+      [
+        "q021-formal-c-exact",
+        "formal-v2",
+        7,
+        47.02,
+        3.608,
+        1.0
+      ],
+      [
+        "q022-practice-c-label",
+        "azure-v1",
+        8,
+        12.65,
+        5.394,
+        0.9
+      ]
+    ],
+    [
+      [
+        "q027-formal-all-slow",
+        "formal-v2",
+        9,
+        34.6,
+        17.46,
+        0.93
+      ],
+      [
+        "q027-formal-bc-fast",
+        "formal-v2",
+        9,
+        42.72,
+        9.156,
+        1.08
+      ],
+      [
+        "q027-formal-bc-mid",
+        "formal-v2",
+        9,
+        40.52,
+        11.356,
+        0.97
+      ],
+      [
+        "q021-formal-bc-mid",
+        "formal-v2",
+        7,
+        41.57,
+        9.058,
+        0.98
+      ],
+      [
+        "q021-formal-all-mid",
+        "formal-v2",
+        7,
+        33.44,
+        17.188,
+        1.035
+      ]
+    ]
+  ],
+  "unpromptedRetryTranscripts": {
+    "retry-q021-formal-all-mid.json": " Did the connector supplier confirm the shipping date? A. The connection is wireless. B. Shipping boxes are brown. C. They promise to confirm it this afternoon.",
+    "retry-q021-formal-bc-fast.json": " Shipping boxes are brown. C. They promise to confirm it this afternoon.  [BLANK_AUDIO]",
+    "retry-q021-formal-bc-mid.json": " B. Shipping boxes are brown. C. They promise to confirm it this afternoon.",
+    "retry-q021-formal-c-exact.json": "They promise to confirm it this afternoon.",
+    "retry-q021-formal-c-slow.json": " or brown. See. They promise to confirm it this afternoon.",
+    "retry-q022-practice-c-fast.json": "All right, I will replace the old copy.",
+    "retry-q022-practice-c-label.json": "See. Alright, I will replace the old copy.",
+    "retry-q022-practice-c-tail.json": " All right, I will replace the old copy.",
+    "retry-q027-formal-all-slow.json": " Where can I collect the package if I miss the delivery? A. At the service counter on Pine Street B. It arrived earlier than usual C. The collector-like stamp",
+    "retry-q027-formal-bc-fast.json": " B. It arrived earlier than usual. C. The collector-like stamps.  [BLANK_AUDIO]",
+    "retry-q027-formal-bc-mid.json": " Service counter on Pine Street. B. It arrived earlier than usual. C. The collector-like stamps.",
+    "retry-q027-formal-bc-slow.json": " B. It arrived earlier than usual. C. The collector likes standing.",
+    "retry-q027-formal-c-fast.json": " C. The collector like stamps.",
+    "retry-q027-formal-c.json": " C. The collector-like stamps.",
+    "retry-q031-practice-a-next-slow.json": " The screen is still black. A. I filled in the blank.",
+    "retry-q031-practice-stem.json": "The screen is still black.",
+    "retry-q031-practice-whole-fast.json": " The screen is still black. A. I filled in the blank on the form. B. Let us check the input source. C. The presentation was last year.  The original connection."
+  },
+  "q022AcousticComparison": {
+    "comparison": "Q022 same female en-TZ-ImaniNeural; both words occur within exact practice source at 0.5–18.044s",
+    "source": "audio/azure-v1/test-02-08.mp3",
+    "sourceSha256": "4eb13d16f28be215f8f99a9ef44624559deb25e0518f97e451148fbdb659bc72",
+    "A_coffee_continuousFrication": {
+      "window_s": [
+        6.84,
+        6.96
+      ],
+      "rms": 717.306,
+      "powerAbove2kFraction": 0.8609
+    },
+    "C_copy_stopClosure": {
+      "window_s": [
+        16.65,
+        16.69
+      ],
+      "rms": 23.799,
+      "powerAbove2kFraction": 0.0341
+    },
+    "C_copy_releaseBurst": {
+      "window_s": [
+        16.69,
+        16.73
+      ],
+      "rms": 451.922,
+      "powerAbove2kFraction": 0.6447
+    },
+    "comparisonInterpretation": "A coffee has a sustained high-band fricative between vowels, whereas C copy has a near-silent stop closure followed by a short release burst. Preference is based on same-voice contrast plus unprompted target-clause positive redecodes, not on acoustic features alone."
+  },
+  "methodLimit": "Local ASR and numerically compared wave features only. Unresolved strings are verification holds, not proof audio is wrong. No raw audio transmitted or repo changes."
+}

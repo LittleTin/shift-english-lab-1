@@ -1,0 +1,310 @@
+{
+  "commit": "06eccf78fde375b674d01bba7141aa5cff54c895",
+  "packSha256": "dd9b42242b14c96999e2e6621f1b15850a7156dbc4271cd1b4ecff31ed83e090",
+  "scope": "Test 02 Q007–009 / Q013–014 / Q016 / Q019, exact stage; Q027 practice same-voice control only",
+  "items": [
+    {
+      "number": 7,
+      "status": "exact-practice-hold",
+      "notes": [
+        "Full unprompted word bank practice 'torque range'; formal 'torque wrench'. Contexted practice retry still 'torque range'. Unique B (next Thursday)."
+      ],
+      "answer": "B",
+      "verificationSources": {
+        "formal": {
+          "wordsArtifact": "bank-audio-formal-v2-test-02-03.json",
+          "src": "audio/formal-v2/test-02-03.mp3",
+          "start": 0.5,
+          "end": 16.628,
+          "sha256": "2551d9a3425fbe342acecc65989ffe2432e4cc4037a9ceefdb66406672d8ad52"
+        },
+        "practice": {
+          "wordsArtifact": "bank-audio-azure-v1-test-02-03.json",
+          "src": "audio/azure-v1/test-02-03.mp3",
+          "start": 0.5,
+          "end": 15.956,
+          "sha256": "4a4f444b97d3e77ff91a68c2299681d032d35500cae67f921e2d2dadf57c68e4"
+        }
+      }
+    },
+    {
+      "number": 8,
+      "status": "exact-practice-hold",
+      "notes": [
+        "Formal full bank gives 'Ask May, the design lead'; pronunciation is consistent with intended proper name Mei, not a proof of its spelling. Practice full bank and additional retry 'Ask me the design lead'; separately cannot distinguish intended name from first person. Unique C (design lead)."
+      ],
+      "answer": "C",
+      "verificationSources": {
+        "formal": {
+          "wordsArtifact": "bank-audio-formal-v2-test-02-03.json",
+          "src": "audio/formal-v2/test-02-03.mp3",
+          "start": 17.128,
+          "end": 32.656,
+          "sha256": "2551d9a3425fbe342acecc65989ffe2432e4cc4037a9ceefdb66406672d8ad52"
+        },
+        "practice": {
+          "wordsArtifact": "bank-audio-azure-v1-test-02-03.json",
+          "src": "audio/azure-v1/test-02-03.mp3",
+          "start": 16.456,
+          "end": 31.816,
+          "sha256": "4a4f444b97d3e77ff91a68c2299681d032d35500cae67f921e2d2dadf57c68e4"
+        }
+      }
+    },
+    {
+      "number": 9,
+      "status": "exact-both-hold",
+      "notes": [
+        "Both mode full-bank and context rates give 'internet', rather than source intranet. This distinction matters to workplace meaning even if option C remains the only submission-route response. Do not infer actual source corruption or change text just to match ASR."
+      ],
+      "answer": "C",
+      "verificationSources": {
+        "formal": {
+          "wordsArtifact": "bank-audio-formal-v2-test-02-03.json",
+          "src": "audio/formal-v2/test-02-03.mp3",
+          "start": 33.156,
+          "end": 49.26,
+          "sha256": "2551d9a3425fbe342acecc65989ffe2432e4cc4037a9ceefdb66406672d8ad52"
+        },
+        "practice": {
+          "wordsArtifact": "bank-audio-azure-v1-test-02-03.json",
+          "src": "audio/azure-v1/test-02-03.mp3",
+          "start": 32.316,
+          "end": 48.996,
+          "sha256": "4a4f444b97d3e77ff91a68c2299681d032d35500cae67f921e2d2dadf57c68e4"
+        }
+      }
+    },
+    {
+      "number": 13,
+      "status": "audio-resolved-editorial-hold",
+      "notes": [
+        "Whole practice unprompted word-level decoder says A, B, C; Q13 B↔Q27 B same voice normalized waveform coefficient 0.98863; correct within-letter controls also near identical, cross-letter all ≤0.25116. Original C wording opens with a direct refusal ('No') but concerns past replies, leaving a pragmatically plausible refusal. Selected best remains A; clean the competing distractor."
+      ],
+      "answer": "A",
+      "verificationSources": {
+        "formal": {
+          "wordsArtifact": "bank-audio-formal-v2-test-02-05.json",
+          "src": "audio/formal-v2/test-02-05.mp3",
+          "start": 0.5,
+          "end": 17.9,
+          "sha256": "c7b7fc1976b4ae94a7727516098eada098fb02f3aa3015e20ea6b2d182ba3ab9"
+        },
+        "practice": {
+          "wordsArtifact": "bank-audio-azure-v1-test-02-05.json",
+          "src": "audio/azure-v1/test-02-05.mp3",
+          "start": 0.5,
+          "end": 17.996,
+          "sha256": "46cd00e07960a7e43925b982177460df43950d92d80c814bdfdcb12862f8bdbf"
+        }
+      }
+    },
+    {
+      "number": 14,
+      "status": "exact-practice-and-editorial-hold",
+      "notes": [
+        "Both actual bank and contexted practice decode 'a new model'; formal bank says 'a newer model'. Editorial distractor B 'Yes, the factory is expected' is unnatural/wrong-context; repair it. Replace C with a natural but off-point audit related statement if re-recording to avoid the unresolved comparative. Key A."
+      ],
+      "answer": "A",
+      "verificationSources": {
+        "formal": {
+          "wordsArtifact": "bank-audio-formal-v2-test-02-05.json",
+          "src": "audio/formal-v2/test-02-05.mp3",
+          "start": 18.4,
+          "end": 34.888,
+          "sha256": "c7b7fc1976b4ae94a7727516098eada098fb02f3aa3015e20ea6b2d182ba3ab9"
+        },
+        "practice": {
+          "wordsArtifact": "bank-audio-azure-v1-test-02-05.json",
+          "src": "audio/azure-v1/test-02-05.mp3",
+          "start": 18.496,
+          "end": 36.472,
+          "sha256": "46cd00e07960a7e43925b982177460df43950d92d80c814bdfdcb12862f8bdbf"
+        }
+      }
+    },
+    {
+      "number": 16,
+      "status": "audio-matches-editorial-hold",
+      "notes": [
+        "Both banks match original item and choice order. 'At the installation dinner' is a conspicuously implausible response in a firmware-version dialogue; revise to a normal schedule statement that still does not answer which version. Key B."
+      ],
+      "answer": "B",
+      "verificationSources": {
+        "formal": {
+          "wordsArtifact": "bank-audio-formal-v2-test-02-06.json",
+          "src": "audio/formal-v2/test-02-06.mp3",
+          "start": 0.5,
+          "end": 17.06,
+          "sha256": "ac26ea4dd5b9d5dc3ee9c947c77d49d98b88b3eca21f2abac194c217c460553e"
+        },
+        "practice": {
+          "wordsArtifact": "bank-audio-azure-v1-test-02-06.json",
+          "src": "audio/azure-v1/test-02-06.mp3",
+          "start": 0.5,
+          "end": 18.428,
+          "sha256": "c8b6d5ddf2cd18dc4b40063efccbe0dece355af41f1f12f4c573f18164303769"
+        }
+      }
+    },
+    {
+      "number": 19,
+      "status": "audio-resolved-editorial-hold",
+      "notes": [
+        "Both complete bank decodes give 'Will you attend…' and contextual practice rerun at 0.96× independently produces the same. Partial isolated earlier ASR and the 1.06× contextual retry said Would; positive results from exact source in context support audio alignment. 'I bought a new supplier' is unnatural in routine scheduling/procurement; replace with natural off-point meeting info. Key B."
+      ],
+      "answer": "B",
+      "verificationSources": {
+        "formal": {
+          "wordsArtifact": "bank-audio-formal-v2-test-02-07.json",
+          "src": "audio/formal-v2/test-02-07.mp3",
+          "start": 0.5,
+          "end": 16.604,
+          "sha256": "ee6016360ee74abc8a44404ef756702455fa08a4afc148e242676cb99e465c27"
+        },
+        "practice": {
+          "wordsArtifact": "bank-audio-azure-v1-test-02-07.json",
+          "src": "audio/azure-v1/test-02-07.mp3",
+          "start": 0.5,
+          "end": 17.636,
+          "sha256": "23f6adf5f8140aad1c3ce855836b0800bd919ed4a24d73816a6875f99d770e84"
+        }
+      }
+    }
+  ],
+  "fullBankDecoder": "Existing local Whisper base.en -ml 1 -sow -ojf, no prompting",
+  "pairedControl": "q013-same-voice-label-match.json",
+  "sourceManifest": "sources.json",
+  "retryParameters": "retry-parameters.json",
+  "contextRetries": {
+    "retry-q007-context.json": " When is the torque range due for calibration? A. On the second shelf. B.",
+    "retry-q008-context.json": " b) three printed copies c) ask me the design lead  [BLANK_AUDIO]",
+    "retry-q009-formal-context.json": " b. The new machine is quieter. c. Use the equipment portal on the internet.",
+    "retry-q009-practice-context.json": " b. The new machine is quieter. c. Use the equipment portal on the internet.",
+    "retry-q014-context.json": " b) yes the factory is expected c) it is a new model  [BLANK_AUDIO]",
+    "retry-q019-context-a.json": " Will you attend the supplier meeting in person? A. The person is very tall. B. I will join by video.",
+    "retry-q019-context-b.json": " Would you attend a supplier meeting in person? A. The person is very tall. B. I will join by video instead. C. I bought a new supplier."
+  },
+  "f0OnlyUnappliedEditProposals": [
+    {
+      "number": 8,
+      "questionId": "t02-q008",
+      "groupId": "t02-g008",
+      "slot": "C",
+      "expectedOld": "Ask Mei, the design lead.",
+      "text": "The design lead can sign off on it.",
+      "zh": "設計負責人可以核准。",
+      "whyZh": "問題問誰可以核准修訂後的圖面；回應明確指出設計負責人有權核准。",
+      "modesToRegenerate": [
+        "formal",
+        "practice"
+      ],
+      "keyBeforeAfter": "C"
+    },
+    {
+      "number": 9,
+      "questionId": "t02-q009",
+      "groupId": "t02-g009",
+      "slot": "C",
+      "expectedOld": "Use the equipment portal on the intranet.",
+      "text": "Use our internal equipment portal.",
+      "zh": "請用我們的內部設備入口網站。",
+      "whyZh": "問題問從哪裡提交維修申請；回應明確指出使用內部入口網站。",
+      "modesToRegenerate": [
+        "formal",
+        "practice"
+      ],
+      "keyBeforeAfter": "C"
+    },
+    {
+      "number": 13,
+      "questionId": "t02-q013",
+      "groupId": "t02-g013",
+      "slot": "C",
+      "expectedOld": "No, I have not replied to him before.",
+      "text": "I will update the delivery address.",
+      "zh": "我會更新送貨地址。",
+      "whyZh": "說的是更新送貨地址，未回答能否在回信中附上發票。",
+      "modesToRegenerate": [
+        "formal",
+        "practice"
+      ],
+      "keyBeforeAfter": "A"
+    },
+    {
+      "number": 14,
+      "questionId": "t02-q014",
+      "groupId": "t02-g014",
+      "slot": "B",
+      "expectedOld": "Yes, the factory is expected.",
+      "text": "The previous audit report is in the shared folder.",
+      "zh": "上一份稽核報告在共用資料夾裡。",
+      "whyZh": "說的是上一份報告存放位置，沒有回應稽核人員提早到達的消息。",
+      "modesToRegenerate": [
+        "formal",
+        "practice"
+      ],
+      "keyBeforeAfter": "A"
+    },
+    {
+      "number": 14,
+      "questionId": "t02-q014",
+      "groupId": "t02-g014",
+      "slot": "C",
+      "expectedOld": "It is a newer model.",
+      "text": "The checklist was revised last week.",
+      "zh": "檢查表上週修訂過。",
+      "whyZh": "說的是檢查表的修訂時間，不是回應稽核人員提早到達的消息。",
+      "modesToRegenerate": [
+        "formal",
+        "practice"
+      ],
+      "keyBeforeAfter": "A"
+    },
+    {
+      "number": 16,
+      "questionId": "t02-q016",
+      "groupId": "t02-g016",
+      "slot": "A",
+      "expectedOld": "At the installation dinner.",
+      "text": "The installation is scheduled for Tuesday.",
+      "zh": "安裝安排在星期二。",
+      "whyZh": "說明何時安裝，沒有指明應安裝哪個版本。",
+      "modesToRegenerate": [
+        "formal",
+        "practice"
+      ],
+      "keyBeforeAfter": "B"
+    },
+    {
+      "number": 19,
+      "questionId": "t02-q019",
+      "groupId": "t02-g019",
+      "slot": "C",
+      "expectedOld": "I bought a new supplier.",
+      "text": "The supplier updated the meeting agenda.",
+      "zh": "供應商更新了會議議程。",
+      "whyZh": "議程更新不回答是否親自出席。",
+      "modesToRegenerate": [
+        "formal",
+        "practice"
+      ],
+      "keyBeforeAfter": "B"
+    }
+  ],
+  "f0OnlyUnappliedRerenderProposals": [
+    {
+      "number": 7,
+      "kind": "same-script-re-record",
+      "expectedOld": "When is the torque wrench due for calibration?",
+      "text": "When is the torque wrench due for calibration?",
+      "modesToRegenerate": [
+        "practice"
+      ],
+      "fallbackBothModesText": "When does the torque wrench need to be calibrated?",
+      "zh": "這支扭力扳手何時需要校正？",
+      "notes": "Try short exact practice prompt regeneration using the already-authorized practice voice/profile. If audibility remains uncertain and rewording is needed, synchronize both modes and study history. Do not select range based on ASR."
+    }
+  ],
+  "releaseGuard": "Editorial drafts are not passes. If regeneration is elected, authorized owner Azure Speech F0 only, no charge. Budget actual text before batching; preserve voices for each mode, stable playback plan logic, backward-compatible original question/media editions, and original keys except for separately documented answer-order repairs. Update English audioScript, option payloads, turn text, traditional Chinese transcripts/why, revision/IDs/history, segment ranges/references, manifest, formal 2700-second timing and app integration together. Re-run actual clipped and full-context audio checks. No synthesis/writes/push performed by this audit."
+}

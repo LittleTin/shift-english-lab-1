@@ -1,0 +1,167 @@
+[
+  {
+    "number": 74,
+    "id": "t01-q074",
+    "groupId": "t01-g046",
+    "status": "HOLD",
+    "answer": "B",
+    "textEvidence": "New code supplements existing password",
+    "translationAndDistractors": "checked",
+    "frames": [
+      {
+        "name": "formal-passage-212",
+        "role": "passage",
+        "src": "audio/azure-v1/test-01-26.mp3",
+        "start": 0.5,
+        "end": 39.524,
+        "sha256": "1b00171aa1837d661eb9c58ef3eb748d8f56be1415ecd45e546ebaa7e24ad017",
+        "observed": "This is a message from the IT service desk.\n On Thursday evening, we will enable two-step sign-in for the supplier portal.\n You will still use your usual password, but you will also need a code from the authenticator application on your phone.\n Staff who use shared factory tablets should contact us before Thursday, so we can arrange an approved alternative.\n Do not share an authentication code with a colleague or include it in a support ticket.\n Instructions are available on the Internet.\n We are holding a 15-minute set-up session at 11 tomorrow in Training Room 2."
+      },
+      {
+        "name": "formal-question-213",
+        "role": "question",
+        "src": "audio/formal/test-01-cues-04.mp3",
+        "start": 45.40729,
+        "end": 48.12079,
+        "sha256": "818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0",
+        "observed": "Number 74, what change is being announced?"
+      },
+      {
+        "name": "practice-046",
+        "role": "practice",
+        "src": "audio/azure-v1/test-01-26.mp3",
+        "start": 0.5,
+        "end": 39.524,
+        "sha256": "1b00171aa1837d661eb9c58ef3eb748d8f56be1415ecd45e546ebaa7e24ad017",
+        "observed": "This is a message from the IT service desk.\n On Thursday evening, we will enable two-step sign-in for the supplier portal.\n You will still use your usual password, but you will also need a code from the authenticator application on your phone.\n Staff who use shared factory tablets should contact us before Thursday, so we can arrange an approved alternative.\n Do not share an authentication code with a colleague or include it in a support ticket.\n Instructions are available on the Internet.\n We are holding a 15-minute set-up session at 11 tomorrow in Training Room 2."
+      }
+    ],
+    "holdReason": "Same source for formal and practice. Repeat with same 8-beam model kept discrepant Internet vs intranet.",
+    "retriage": {
+      "method": "New unprompted word-level full original MP3 including the 0.5s file pre-roll, 16k mono FFmpeg, Whisper base.en -ml 1 -sow -ojf. Not identical to prior exact range retry, but still same acoustic model.",
+      "asset": "audio/azure-v1/test-01-26.mp3",
+      "sha256": "1b00171aa1837d661eb9c58ef3eb748d8f56be1415ecd45e546ebaa7e24ad017",
+      "formalAndPracticeRange": [
+        0.5,
+        39.524
+      ],
+      "observed": "Instructions are available on the Internet.",
+      "approxAsrWordSourceSeconds": [
+        32.19,
+        33.2
+      ],
+      "referenceSearch": "Corpus three Azure exams contains no distinct en-AU NatashaNeural example of either Internet or intranet. Same talk Training and alternative as /tr/ and /t/ place references, and Test03 g008 trainer; first-order 25ms LPC across original ambiguous term and training does not establish rhoticity under differing stress and vowel context. Actual word has ended before approximate ASR endpoint. Other voice intranet and internet files do not establish same-voice pronunciation. Pending human or independently validated decoder.",
+      "whyHold": "Intranet/Internet differ in meaning. No proof wrong audio; no sufficient positive confirmation. All three keys independently intact in audio (extra sign-in code, contact IT first, setup guidance); shared group remains held."
+    }
+  },
+  {
+    "number": 75,
+    "id": "t01-q075",
+    "groupId": "t01-g046",
+    "status": "HOLD",
+    "answer": "B",
+    "textEvidence": "Contact service desk before Thursday; sharing code or filing it prohibited",
+    "translationAndDistractors": "checked",
+    "frames": [
+      {
+        "name": "formal-passage-212",
+        "role": "passage",
+        "src": "audio/azure-v1/test-01-26.mp3",
+        "start": 0.5,
+        "end": 39.524,
+        "sha256": "1b00171aa1837d661eb9c58ef3eb748d8f56be1415ecd45e546ebaa7e24ad017",
+        "observed": "This is a message from the IT service desk.\n On Thursday evening, we will enable two-step sign-in for the supplier portal.\n You will still use your usual password, but you will also need a code from the authenticator application on your phone.\n Staff who use shared factory tablets should contact us before Thursday, so we can arrange an approved alternative.\n Do not share an authentication code with a colleague or include it in a support ticket.\n Instructions are available on the Internet.\n We are holding a 15-minute set-up session at 11 tomorrow in Training Room 2."
+      },
+      {
+        "name": "formal-question-215",
+        "role": "question",
+        "src": "audio/formal/test-01-cues-04.mp3",
+        "start": 48.37079,
+        "end": 52.74792,
+        "sha256": "818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0",
+        "observed": "Number 75, what should employees using shared factory tablets do?"
+      },
+      {
+        "name": "practice-046",
+        "role": "practice",
+        "src": "audio/azure-v1/test-01-26.mp3",
+        "start": 0.5,
+        "end": 39.524,
+        "sha256": "1b00171aa1837d661eb9c58ef3eb748d8f56be1415ecd45e546ebaa7e24ad017",
+        "observed": "This is a message from the IT service desk.\n On Thursday evening, we will enable two-step sign-in for the supplier portal.\n You will still use your usual password, but you will also need a code from the authenticator application on your phone.\n Staff who use shared factory tablets should contact us before Thursday, so we can arrange an approved alternative.\n Do not share an authentication code with a colleague or include it in a support ticket.\n Instructions are available on the Internet.\n We are holding a 15-minute set-up session at 11 tomorrow in Training Room 2."
+      }
+    ],
+    "holdReason": "Same source for formal and practice. Repeat with same 8-beam model kept discrepant Internet vs intranet.",
+    "retriage": {
+      "method": "New unprompted word-level full original MP3 including the 0.5s file pre-roll, 16k mono FFmpeg, Whisper base.en -ml 1 -sow -ojf. Not identical to prior exact range retry, but still same acoustic model.",
+      "asset": "audio/azure-v1/test-01-26.mp3",
+      "sha256": "1b00171aa1837d661eb9c58ef3eb748d8f56be1415ecd45e546ebaa7e24ad017",
+      "formalAndPracticeRange": [
+        0.5,
+        39.524
+      ],
+      "observed": "Instructions are available on the Internet.",
+      "approxAsrWordSourceSeconds": [
+        32.19,
+        33.2
+      ],
+      "referenceSearch": "Corpus three Azure exams contains no distinct en-AU NatashaNeural example of either Internet or intranet. Same talk Training and alternative as /tr/ and /t/ place references, and Test03 g008 trainer; first-order 25ms LPC across original ambiguous term and training does not establish rhoticity under differing stress and vowel context. Actual word has ended before approximate ASR endpoint. Other voice intranet and internet files do not establish same-voice pronunciation. Pending human or independently validated decoder.",
+      "whyHold": "Intranet/Internet differ in meaning. No proof wrong audio; no sufficient positive confirmation. All three keys independently intact in audio (extra sign-in code, contact IT first, setup guidance); shared group remains held."
+    }
+  },
+  {
+    "number": 76,
+    "id": "t01-q076-r2",
+    "groupId": "t01-g046",
+    "status": "HOLD",
+    "answer": "A",
+    "textEvidence": "New login setup session",
+    "translationAndDistractors": "checked",
+    "frames": [
+      {
+        "name": "formal-passage-212",
+        "role": "passage",
+        "src": "audio/azure-v1/test-01-26.mp3",
+        "start": 0.5,
+        "end": 39.524,
+        "sha256": "1b00171aa1837d661eb9c58ef3eb748d8f56be1415ecd45e546ebaa7e24ad017",
+        "observed": "This is a message from the IT service desk.\n On Thursday evening, we will enable two-step sign-in for the supplier portal.\n You will still use your usual password, but you will also need a code from the authenticator application on your phone.\n Staff who use shared factory tablets should contact us before Thursday, so we can arrange an approved alternative.\n Do not share an authentication code with a colleague or include it in a support ticket.\n Instructions are available on the Internet.\n We are holding a 15-minute set-up session at 11 tomorrow in Training Room 2."
+      },
+      {
+        "name": "formal-question-217",
+        "role": "question",
+        "src": "audio/formal/test-01-cues-04.mp3",
+        "start": 52.99792,
+        "end": 56.3405,
+        "sha256": "818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0",
+        "observed": "Number 76. What is the purpose of tomorrow's session?"
+      },
+      {
+        "name": "practice-046",
+        "role": "practice",
+        "src": "audio/azure-v1/test-01-26.mp3",
+        "start": 0.5,
+        "end": 39.524,
+        "sha256": "1b00171aa1837d661eb9c58ef3eb748d8f56be1415ecd45e546ebaa7e24ad017",
+        "observed": "This is a message from the IT service desk.\n On Thursday evening, we will enable two-step sign-in for the supplier portal.\n You will still use your usual password, but you will also need a code from the authenticator application on your phone.\n Staff who use shared factory tablets should contact us before Thursday, so we can arrange an approved alternative.\n Do not share an authentication code with a colleague or include it in a support ticket.\n Instructions are available on the Internet.\n We are holding a 15-minute set-up session at 11 tomorrow in Training Room 2."
+      }
+    ],
+    "holdReason": "Same source for formal and practice. Repeat with same 8-beam model kept discrepant Internet vs intranet.",
+    "retriage": {
+      "method": "New unprompted word-level full original MP3 including the 0.5s file pre-roll, 16k mono FFmpeg, Whisper base.en -ml 1 -sow -ojf. Not identical to prior exact range retry, but still same acoustic model.",
+      "asset": "audio/azure-v1/test-01-26.mp3",
+      "sha256": "1b00171aa1837d661eb9c58ef3eb748d8f56be1415ecd45e546ebaa7e24ad017",
+      "formalAndPracticeRange": [
+        0.5,
+        39.524
+      ],
+      "observed": "Instructions are available on the Internet.",
+      "approxAsrWordSourceSeconds": [
+        32.19,
+        33.2
+      ],
+      "referenceSearch": "Corpus three Azure exams contains no distinct en-AU NatashaNeural example of either Internet or intranet. Same talk Training and alternative as /tr/ and /t/ place references, and Test03 g008 trainer; first-order 25ms LPC across original ambiguous term and training does not establish rhoticity under differing stress and vowel context. Actual word has ended before approximate ASR endpoint. Other voice intranet and internet files do not establish same-voice pronunciation. Pending human or independently validated decoder.",
+      "whyHold": "Intranet/Internet differ in meaning. No proof wrong audio; no sufficient positive confirmation. All three keys independently intact in audio (extra sign-in code, contact IT first, setup guidance); shared group remains held."
+    }
+  }
+]
