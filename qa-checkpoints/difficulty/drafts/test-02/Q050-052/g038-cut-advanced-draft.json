@@ -1,0 +1,554 @@
+{
+  "status": "prospective-advanced-draft-no-synthesis-or-verification",
+  "testId": "test-02",
+  "part": 3,
+  "replacesGroupId": "t02-g038",
+  "proposedGroupId": "t02-g038-r2",
+  "group": {
+    "title": "A reliability test with a controlled handoff",
+    "titleZh": "具交接規範的可靠度測試",
+    "topic": "technology",
+    "turns": [
+      {
+        "speaker": "Woman",
+        "role": "female",
+        "text": "All twelve samples need a single run. The customer’s report needs the chamber log and a post-run inspection that only my team can sign.",
+        "zh": "十二個樣品都要在同一次測試中完成。給客戶的報告必須包含試驗箱紀錄，以及測試結束後的檢查結果；該結果只有我們團隊能簽核。"
+      },
+      {
+        "speaker": "Man",
+        "role": "male",
+        "text": "On Wednesday, only the small chamber is free. It holds eight. The large chamber holds sixteen and is free Friday morning or afternoon. I can hold a slot before approval.",
+        "zh": "星期三只有小試驗箱有空，可以放八個樣品。大試驗箱能放十六個樣品，星期五上午或下午都有空。計畫還沒簽核，也可以先保留時段。"
+      },
+      {
+        "speaker": "Woman",
+        "role": "female",
+        "text": "Our technician can load only after noon. Only our engineer can sign the plan, and she works remotely.",
+        "zh": "我們的技術員只能在中午過後放入樣品。只有我們的工程師能簽核計畫，而且她是遠端上班。"
+      },
+      {
+        "speaker": "Man",
+        "role": "male",
+        "text": "The desk checks signed plans before admitting samples. There’s no signal beyond it. The chamber sends its log to your manager when it stops.",
+        "zh": "櫃檯要先確認已簽核的計畫，才能讓樣品進場。櫃檯再往裡面就沒有訊號。試驗箱停止運轉時，會自動把紀錄傳給你們的經理。"
+      }
+    ],
+    "audioScript": "All twelve samples need a single run. The customer’s report needs the chamber log and a post-run inspection that only my team can sign.\nOn Wednesday, only the small chamber is free. It holds eight. The large chamber holds sixteen and is free Friday morning or afternoon. I can hold a slot before approval.\nOur technician can load only after noon. Only our engineer can sign the plan, and she works remotely.\nThe desk checks signed plans before admitting samples. There’s no signal beyond it. The chamber sends its log to your manager when it stops.",
+    "voices": [
+      {
+        "speaker": "female",
+        "locale": "en-US",
+        "role": "female",
+        "modelVoice": "en-US-JennyNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-US",
+        "role": "male",
+        "modelVoice": "en-US-GuyNeural"
+      }
+    ],
+    "image": null
+  },
+  "questions": [
+    {
+      "number": 50,
+      "proposedId": "t02-q050-r2",
+      "difficulty": "advanced",
+      "prompt": "Which booking would let the team run the entire batch?",
+      "promptZh": "哪個預約方案能讓團隊在同一次測試中處理整批樣品？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Book the small chamber on Wednesday and divide the batch.",
+          "zh": "預約星期三的小試驗箱，把樣品分批測試。",
+          "whyZh": "小試驗箱只放得下八個樣品。分批雖然放得下，卻違反十二個樣品必須在同一次測試中完成的要求。"
+        },
+        {
+          "id": "B",
+          "text": "Book the large chamber on Friday morning and load it as booked.",
+          "zh": "預約星期五上午的大試驗箱，按預約時間放入樣品。",
+          "whyZh": "大試驗箱能容納整批，但技術員中午過後才能放入樣品，無法在上午按時開始。"
+        },
+        {
+          "id": "C",
+          "text": "Book the large chamber on Friday afternoon and keep the batch together.",
+          "zh": "預約星期五下午的大試驗箱，整批樣品一起測試。",
+          "whyZh": "大試驗箱星期五下午有空，容量適合整批，技術員也能在中午後放入樣品，三項條件都符合。"
+        },
+        {
+          "id": "D",
+          "text": "Book the large chamber on Wednesday and load it after noon.",
+          "zh": "預約星期三的大試驗箱，中午過後放入樣品。",
+          "whyZh": "下午符合技術員的時間，但大試驗箱到星期五才有空。"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "大試驗箱星期五下午有空，容量適合整批，技術員也能在中午後放入樣品，三項條件都符合。",
+      "reasonEn": "Combine the same-run capacity requirement, chamber availability, and technician loading constraint; no advance-signoff or reporting answer is revealed.",
+      "vocabulary": [
+        {
+          "term": "single run",
+          "zh": "單次測試",
+          "note": "指所有樣品同時經歷一個測試循環。"
+        },
+        {
+          "term": "load",
+          "zh": "放入；裝載",
+          "note": "此情境指將樣品放入試驗箱。"
+        }
+      ]
+    },
+    {
+      "number": 51,
+      "proposedId": "t02-q051-r2",
+      "difficulty": "advanced",
+      "prompt": "How should the woman arrange approval and entry?",
+      "promptZh": "女子應該如何安排計畫簽核與樣品進場？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hold a slot, bring the samples inside, then call the engineer.",
+          "zh": "先保留時段，把樣品帶進去，再打電話給工程師。",
+          "whyZh": "可以先保留時段，但樣品進場前就要查驗簽核；進去之後又沒有訊號，這個順序不可行。"
+        },
+        {
+          "id": "B",
+          "text": "Hold a slot, get the engineer’s signature while still outside, and show it at the desk before taking in the samples.",
+          "zh": "先保留時段，在外面取得工程師簽核，帶樣品進去前在櫃檯出示。",
+          "whyZh": "保留時段不必先簽核；趁還有訊號，聯絡唯一有簽核權的工程師，再於樣品進場前出示文件。"
+        },
+        {
+          "id": "C",
+          "text": "Hold a slot and ask the desk to sign the plan before the samples enter.",
+          "zh": "先保留時段，再請櫃檯在樣品進場前簽核計畫。",
+          "whyZh": "這個順序看似可行，但櫃檯只負責查驗，只有工程師能簽核。"
+        },
+        {
+          "id": "D",
+          "text": "Have the engineer sign remotely, take the samples inside, and show the plan on the way out.",
+          "zh": "請工程師遠端簽核，先把樣品帶進去，出來時再出示計畫。",
+          "whyZh": "簽核人正確，但出示的時間不對。櫃檯必須在讓樣品入場前完成確認。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "保留時段不必先簽核；趁還有訊號，聯絡唯一有簽核權的工程師，再於樣品進場前出示文件。",
+      "reasonEn": "Integrate slot-hold permission, signature authority, signal boundary and the desk’s pre-admission gate. Choices name no chamber or booking time.",
+      "vocabulary": [
+        {
+          "term": "hold a slot",
+          "zh": "保留一個時段",
+          "note": "可先保留名額，不代表檢查或簽核已完成。"
+        },
+        {
+          "term": "admit",
+          "zh": "准許進入",
+          "note": "此處是准許攜帶樣品入場。"
+        }
+      ]
+    },
+    {
+      "number": 52,
+      "proposedId": "t02-q052-r2",
+      "difficulty": "advanced",
+      "prompt": "If the run ends on a day when no one on her team is working, what can happen that day?",
+      "promptZh": "假如測試結束當天，她的團隊沒有人上班，當天會如何處理？",
+      "options": [
+        {
+          "id": "A",
+          "text": "The manager can get the chamber log, but the customer’s report must wait.",
+          "zh": "經理可以收到試驗箱紀錄，但給客戶的報告仍須等待。",
+          "whyZh": "紀錄會在試驗箱停止時自動傳給經理；給客戶的報告還需要測試後的檢查結果，只有該團隊能簽核；團隊當天無人上班，因此報告須等簽核後才可交付。"
+        },
+        {
+          "id": "B",
+          "text": "The customer can get the report once the chamber sends its log.",
+          "zh": "試驗箱送出紀錄後，客戶就能收到報告。",
+          "whyZh": "紀錄只是報告的一部分。只有紀錄，沒有測試後經該團隊簽核的檢查結果，仍不能交付完整報告。"
+        },
+        {
+          "id": "C",
+          "text": "The manager cannot receive anything until the team signs the inspection.",
+          "zh": "團隊簽核檢查結果以前，經理不會收到任何資料。",
+          "whyZh": "試驗箱會自動送出紀錄，不需要團隊先簽核。需要等待的是完整的客戶報告。"
+        },
+        {
+          "id": "D",
+          "text": "The chamber sends the log directly to the customer while the manager waits for the inspection.",
+          "zh": "試驗箱直接把紀錄傳給客戶，經理則等待檢查結果。",
+          "whyZh": "對話指定自動收件人為經理，不是客戶；也沒有允許先把不完整的報告交給客戶。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "紀錄會在試驗箱停止時自動傳給經理；給客戶的報告還需要測試後的檢查結果，只有該團隊能簽核；團隊當天無人上班，因此報告須等簽核後才可交付。",
+      "reasonEn": "Integrate autonomous internal logging versus the two required inputs for a customer deliverable (including inspection only after the test), then apply the team-absent scenario. Options imply nothing about loading or booking.",
+      "vocabulary": [
+        {
+          "term": "chamber log",
+          "zh": "試驗箱紀錄",
+          "note": "試驗箱自動保存並傳送的運作資料。"
+        },
+        {
+          "term": "inspection",
+          "zh": "檢查",
+          "note": "指試驗結束後的樣品檢查，此處須由指定團隊簽核。"
+        }
+      ]
+    }
+  ],
+  "original": {
+    "oldGroup": {
+      "id": "t02-g038",
+      "testId": "test-02",
+      "part": 3,
+      "title": "Rescheduling a reliability test",
+      "titleZh": "調整可靠度測試",
+      "topic": "technology",
+      "passage": "Woman: We need the reliability chamber for three days, starting Wednesday. Is it available?\nMan: Another team has booked it through Thursday. You could begin Friday morning, or use the smaller chamber on Wednesday.\nWoman: The smaller one cannot hold all twelve samples. Let us choose Friday, and I will notify the project manager about the revised completion date.\nMan: I will reserve the larger chamber for you. Please bring the test plan when you check in.",
+      "passageZh": "女：我們從星期三開始需要使用可靠度試驗箱三天。有空檔嗎？\n男：另一個團隊已預約到星期四。你們可以星期五早上開始，或星期三用比較小的試驗箱。\n女：小的那台放不下全部十二個樣品。我們選星期五，我會通知專案經理修改後的完成日期。\n男：我會替你預約較大的試驗箱。登記使用時請帶測試計畫。",
+      "audioScript": "We need the reliability chamber for three days, starting Wednesday. Is it available?\nAnother team has booked it through Thursday. You could begin Friday morning, or use the smaller chamber on Wednesday.\nThe smaller one cannot hold all twelve samples. Let us choose Friday, and I will notify the project manager about the revised completion date.\nI will reserve the larger chamber for you. Please bring the test plan when you check in.",
+      "turns": [
+        {
+          "voice": "female",
+          "text": "We need the reliability chamber for three days, starting Wednesday. Is it available?"
+        },
+        {
+          "voice": "male",
+          "text": "Another team has booked it through Thursday. You could begin Friday morning, or use the smaller chamber on Wednesday."
+        },
+        {
+          "voice": "female",
+          "text": "The smaller one cannot hold all twelve samples. Let us choose Friday, and I will notify the project manager about the revised completion date."
+        },
+        {
+          "voice": "male",
+          "text": "I will reserve the larger chamber for you. Please bring the test plan when you check in."
+        }
+      ],
+      "audio": "audio/azure-v1/test-02-16.mp3",
+      "duration": 30.888,
+      "audioSpeakers": [
+        {
+          "speaker": "female",
+          "locale": "en-US",
+          "role": "female",
+          "modelVoice": "en-US-JennyNeural"
+        },
+        {
+          "speaker": "male",
+          "locale": "en-US",
+          "role": "male",
+          "modelVoice": "en-US-GuyNeural"
+        }
+      ],
+      "audioStart": 0.5,
+      "audioEnd": 31.388
+    },
+    "oldQuestions": [
+      {
+        "id": "t02-q050",
+        "testId": "test-02",
+        "number": 50,
+        "part": 3,
+        "groupId": "t02-g038",
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "reserve"
+        ],
+        "prompt": "Why is the requested chamber unavailable on Wednesday?",
+        "promptZh": "星期三為何無法使用所需試驗箱？",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is being moved to a new building.",
+            "zh": "設備要搬到新大樓。",
+            "whyZh": "對話未提搬遷。"
+          },
+          {
+            "id": "B",
+            "text": "The test plan was rejected.",
+            "zh": "測試計畫被否決。",
+            "whyZh": "計畫只被要求帶來，沒有被否決。"
+          },
+          {
+            "id": "C",
+            "text": "Another team has already booked it.",
+            "zh": "另一個團隊已預約。",
+            "whyZh": "男方說其他團隊的預約持續到星期四。"
+          },
+          {
+            "id": "D",
+            "text": "The laboratory is closed all week.",
+            "zh": "實驗室整週關閉。",
+            "whyZh": "星期三仍有小試驗箱、星期五有大試驗箱可用。"
+          }
+        ],
+        "answer": "C",
+        "explanationZh": "男方說其他團隊的預約持續到星期四。",
+        "evidence": "Another team has booked it through Thursday.",
+        "vocabulary": [
+          {
+            "term": "reserve",
+            "zh": "預約；保留",
+            "note": "本題指預約設備使用時段。"
+          },
+          {
+            "term": "reliability test",
+            "zh": "可靠度測試",
+            "note": "在指定條件下評估產品持續運作等表現，具體條件由測試計畫定義。"
+          }
+        ],
+        "revision": 1
+      },
+      {
+        "id": "t02-q051",
+        "testId": "test-02",
+        "number": 51,
+        "part": 3,
+        "groupId": "t02-g038",
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "reserve"
+        ],
+        "prompt": "Why does the woman reject the smaller chamber?",
+        "promptZh": "女方為何不用較小的試驗箱？",
+        "options": [
+          {
+            "id": "A",
+            "text": "It is too expensive to rent.",
+            "zh": "租用費太高。",
+            "whyZh": "沒有討論費用。"
+          },
+          {
+            "id": "B",
+            "text": "It cannot fit all of the samples.",
+            "zh": "它放不下全部樣品。",
+            "whyZh": "女方明說放不下全部十二個樣品。"
+          },
+          {
+            "id": "C",
+            "text": "It is located outside the country.",
+            "zh": "它位於國外。",
+            "whyZh": "沒有國外設備資訊。"
+          },
+          {
+            "id": "D",
+            "text": "It has already failed calibration.",
+            "zh": "它已校正不合格。",
+            "whyZh": "對話未提校正失敗。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "女方明說放不下全部十二個樣品。",
+        "evidence": "The smaller one cannot hold all twelve samples.",
+        "vocabulary": [
+          {
+            "term": "reserve",
+            "zh": "預約；保留",
+            "note": "本題指預約設備使用時段。"
+          },
+          {
+            "term": "reliability test",
+            "zh": "可靠度測試",
+            "note": "在指定條件下評估產品持續運作等表現，具體條件由測試計畫定義。"
+          }
+        ],
+        "revision": 1
+      },
+      {
+        "id": "t02-q052",
+        "testId": "test-02",
+        "number": 52,
+        "part": 3,
+        "groupId": "t02-g038",
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "reserve"
+        ],
+        "prompt": "What must the woman bring when using the chamber?",
+        "promptZh": "女方使用設備時必須帶什麼？",
+        "options": [
+          {
+            "id": "A",
+            "text": "A shipping label.",
+            "zh": "出貨標籤。",
+            "whyZh": "對話未要求出貨標籤。"
+          },
+          {
+            "id": "B",
+            "text": "The test plan.",
+            "zh": "測試計畫。",
+            "whyZh": "男方最後要求登記使用時帶測試計畫。"
+          },
+          {
+            "id": "C",
+            "text": "A visitor's passport.",
+            "zh": "訪客護照。",
+            "whyZh": "沒有護照要求。"
+          },
+          {
+            "id": "D",
+            "text": "A replacement motor.",
+            "zh": "替換馬達。",
+            "whyZh": "設備可預約使用，沒有維修馬達需求。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "男方最後要求登記使用時帶測試計畫。",
+        "evidence": "Please bring the test plan when you check in.",
+        "vocabulary": [
+          {
+            "term": "reserve",
+            "zh": "預約；保留",
+            "note": "本題指預約設備使用時段。"
+          },
+          {
+            "term": "reliability test",
+            "zh": "可靠度測試",
+            "note": "在指定條件下評估產品持續運作等表現，具體條件由測試計畫定義。"
+          }
+        ],
+        "revision": 1
+      }
+    ],
+    "oldFormalFrames": [
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 56.2015,
+        "end": 59.80392,
+        "duration": 3.60242,
+        "kind": "audio",
+        "role": "cue",
+        "part": 3,
+        "groupId": "t02-g038",
+        "at": 1338.07632
+      },
+      {
+        "src": "audio/azure-v1/test-02-16.mp3",
+        "start": 0.5,
+        "end": 31.388,
+        "duration": 30.888,
+        "kind": "audio",
+        "role": "passage",
+        "part": 3,
+        "groupId": "t02-g038",
+        "at": 1341.67874,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          },
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          }
+        ]
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 60.05392,
+        "end": 64.24658,
+        "duration": 4.19267,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g038",
+        "questionId": "t02-q050",
+        "at": 1372.56674
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 3,
+        "groupId": "t02-g038",
+        "questionId": "t02-q050",
+        "at": 1376.75941
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 64.49658,
+        "end": 68.12496,
+        "duration": 3.62838,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g038",
+        "questionId": "t02-q051",
+        "at": 1388.04352
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 3,
+        "groupId": "t02-g038",
+        "questionId": "t02-q051",
+        "at": 1391.6719
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 0.25,
+        "end": 3.77787,
+        "duration": 3.52787,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g038",
+        "questionId": "t02-q052",
+        "at": 1402.95601
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 3,
+        "groupId": "t02-g038",
+        "questionId": "t02-q052",
+        "at": 1406.48388
+      }
+    ],
+    "groupSha256": "8faae8ed1d52e2c8fbffb1cf0b410f6f1ae2470d9c766a876aa4c6436722643c",
+    "questionsSha256": {
+      "50": "e522c9983a1e8b04b169032c9785d461f0d8cd41ec41c87d8c3ffcaf10e0ab5b",
+      "51": "9df2efd260d7ab129aee650d009335b3e45077b96cbcaeab8bfc1712fb0cdf67",
+      "52": "4b0abab5e1a87346799ea0d7664db9475c8d3ded79dfb42c9ad95f41453dc431"
+    },
+    "activePlanSha256": "e93ef9fe0d1ebd66f94bcdd0a262488f5f4bbb27800b51a7590c6e6856cdafff",
+    "checkpointRef": "qa-checkpoints/pending-audio/test-02/advanced-drafts/g038-old-guard.json"
+  },
+  "timing": {
+    "newDialogueWords": 96,
+    "oldPassageSeconds": 30.888,
+    "oldNumberedStemSeconds": [
+      4.19267,
+      3.62838,
+      3.52787
+    ],
+    "oldAnswerSeconds": [
+      11.28411,
+      11.28411,
+      11.28411
+    ],
+    "spokenStemInputs": [
+      "Number 50. Which booking would let the team run the entire batch?",
+      "Number 51. How should the woman arrange approval and entry?",
+      "Number 52. If the run ends on a day when no one on her team is working, what can happen that day?"
+    ],
+    "note": "Estimate words only; actual audio not synthesized. At 175–185 WPM raw speech ~31–34 s before turn pauses; maintain natural pacing; measure exact assets and use Part3-local retiming only if required, preserving answer and Part4 boundaries. Retain and verify unchanged generic cue range."
+  },
+  "independentGates": [
+    "Blind-solve all three without keys and admit advanced only if §1.1 holds for each item.",
+    "Keep exact previously verified originals active, with records, audio, and scoring and the prior immutable snapshot untouched. Do not replace any of the three until the full g038-r2 / q050–052-r2 group clears editorial, both audio modes, and history continuity.",
+    "Rerender four turns in preserved en-US female and male roles, and three numbered formal stems after author approval; candidate cannot displace existing verified group yet.",
+    "Validate both formal and practice mode associations, unchanged numbered cue, published 2700-second plan, archival resume and target browser."
+  ]
+}

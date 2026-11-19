@@ -1,7 +1,7 @@
 {
   "status": "verified-item-not-published",
   "scope": "listening",
-  "checks": "C accepts the updated engineering change order and replaces the old copy; A echoes engineer/order but refers to coffee, B echoes change but refers to color. Original independently blind-selected C. Exact clip re-review: initial practice ASR coffee in C resolved by three unprompted local decodes of actual C plus same-voice stop/fricative contrast against A. English and zh-TW remain aligned. Not browser/runtime tests.",
+  "checks": "Blind C: replace the old copy to follow the request to use the revised engineering-change document. A misreads order as ordering food; B misreads change as discoloration. Traditional Chinese prompt, all options and rationales agree. Whisper small.en practice exact prompt and A/B/C, formal whole recognizer near-exact except B in/and. Both base.en and small.en on the unchanged formal B slice (clip +9.4s to +11.8s) read “It changes color in sunlight”. Vosk independently corroborates C “All right, I will replace the old copy” in both, the cue Number 22, and all option meanings/order. Alright vs All right is spelling. This verifies exact offline source/content, not live playback or publishing.",
   "activeQuestion": {
     "id": "t02-q022",
     "testId": "test-02",
@@ -111,35 +111,5 @@
       "assetSha256": "4eb13d16f28be215f8f99a9ef44624559deb25e0518f97e451148fbdb659bc72",
       "speech": "Please use the updated engineering change order. A. The engineer ordered coffee. B. It changes color in sunlight. C. All right, I will replace the old copy."
     }
-  ],
-  "additionalAudioEvidence": {
-    "comparison": "Q022 same female en-TZ-ImaniNeural; both words occur within exact practice source at 0.5–18.044s",
-    "source": "audio/azure-v1/test-02-08.mp3",
-    "sourceSha256": "4eb13d16f28be215f8f99a9ef44624559deb25e0518f97e451148fbdb659bc72",
-    "A_coffee_continuousFrication": {
-      "window_s": [
-        6.84,
-        6.96
-      ],
-      "rms": 717.306,
-      "powerAbove2kFraction": 0.8609
-    },
-    "C_copy_stopClosure": {
-      "window_s": [
-        16.65,
-        16.69
-      ],
-      "rms": 23.799,
-      "powerAbove2kFraction": 0.0341
-    },
-    "C_copy_releaseBurst": {
-      "window_s": [
-        16.69,
-        16.73
-      ],
-      "rms": 451.922,
-      "powerAbove2kFraction": 0.6447
-    },
-    "comparisonInterpretation": "A coffee has a sustained high-band fricative between vowels, whereas C copy has a near-silent stop closure followed by a short release burst. Preference is based on same-voice contrast plus unprompted target-clause positive redecodes, not on acoustic features alone."
-  }
+  ]
 }

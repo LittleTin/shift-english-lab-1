@@ -1,0 +1,115 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Blind C: promise to confirm later implies the shipment date is not confirmed now. A mistakes connector for the connection; B switches from date to packaging color. Traditional Chinese prompt, all options and rationales agree. Whisper small.en complete exact prompt and A/B/C in both modes; Vosk independently recognizes C “They promised to confirm it this afternoon” in both, the formal cue Number 21, and order. This verifies exact offline source/content, not live playback or publishing.",
+  "activeQuestion": {
+    "id": "t02-q021",
+    "testId": "test-02",
+    "number": 21,
+    "part": 2,
+    "groupId": "t02-g021",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "The connection is wireless.",
+        "zh": "這個連線是無線的。",
+        "whyZh": "問題是零件供應商的出貨日期，並非連線方式。"
+      },
+      {
+        "id": "B",
+        "text": "Shipping boxes are brown.",
+        "zh": "運輸紙箱是棕色的。",
+        "whyZh": "紙箱顏色與日期確認無關。"
+      },
+      {
+        "id": "C",
+        "text": "They promised to confirm it this afternoon.",
+        "zh": "他們答應今天下午確認。",
+        "whyZh": "說明確認仍待完成以及預定回覆時間。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "說明確認仍待完成以及預定回覆時間。",
+    "evidence": "Did the connector supplier confirm the shipping date?",
+    "vocabulary": [
+      {
+        "term": "confirm",
+        "zh": "確認",
+        "note": "confirm a shipping date 指明確確認預定出貨日期。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g021",
+    "testId": "test-02",
+    "part": 2,
+    "title": "Connector shipment",
+    "titleZh": "連接器出貨",
+    "topic": "technology",
+    "passage": "Did the connector supplier confirm the shipping date?\nA. The connection is wireless.\nB. Shipping boxes are brown.\nC. They promised to confirm it this afternoon.",
+    "passageZh": "連接器供應商有確認出貨日期嗎？\nA. 這個連線是無線的。\nB. 運輸紙箱是棕色的。\nC. 他們答應今天下午確認。",
+    "audioScript": "Did the connector supplier confirm the shipping date?\nA. The connection is wireless.\nB. Shipping boxes are brown.\nC. They promised to confirm it this afternoon.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Did the connector supplier confirm the shipping date?"
+      },
+      {
+        "voice": "female",
+        "text": "A. The connection is wireless. B. Shipping boxes are brown. C. They promised to confirm it this afternoon."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-07.mp3",
+    "duration": 16.2,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-NG",
+        "role": "male",
+        "modelVoice": "en-NG-AbeoNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-NG",
+        "role": "female",
+        "modelVoice": "en-NG-EzinneNeural"
+      }
+    ],
+    "audioStart": 34.692,
+    "audioEnd": 50.892
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "start": 23.72275,
+      "end": 24.83521,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "Number 21."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-02-07.mp3",
+      "start": 33.636,
+      "end": 50.628,
+      "assetSha256": "ee6016360ee74abc8a44404ef756702455fa08a4afc148e242676cb99e465c27",
+      "speech": "Did the connector supplier confirm the shipping date? A. The connection is wireless. B. Shipping boxes are brown. C. They promised to confirm it this afternoon."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-02-07.mp3",
+      "start": 34.692,
+      "end": 50.892,
+      "assetSha256": "23f6adf5f8140aad1c3ce855836b0800bd919ed4a24d73816a6875f99d770e84",
+      "speech": "Did the connector supplier confirm the shipping date? A. The connection is wireless. B. Shipping boxes are brown. C. They promised to confirm it this afternoon."
+    }
+  ]
+}

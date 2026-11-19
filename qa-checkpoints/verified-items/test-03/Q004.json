@@ -1,0 +1,120 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Exact Git-matched original scene visually inspected: a white wall-mounted board at left carries a green line graph behind meeting attendees. A: nobody is removing it; B: no piled chairs; D: the seated people are not all standing. C is unique. English, Taiwanese Mandarin and all explanations checked.",
+    "audio": "Whisper small.en independently transcribed exact A/B/C/D bodies and order in each scheduled rendition, including both “around a table” excerpts. Vosk heard the complete positive C in both and confirmed the contrast in D; its practice “the table” substitution for the unstressed article is non-material and is not positive evidence of a defect. Cue recognized as Number four.",
+    "association": "Guards: committed assembled Test03 after Q095–097 overlay; formal speakers [{'speaker': 'male', 'locale': 'en-US', 'role': 'male', 'modelVoice': 'en-US-GuyNeural'}], practice speakers [{'speaker': 'male', 'locale': 'en-ZA', 'role': 'male', 'modelVoice': 'en-ZA-LukeNeural'}]; exact original playback intervals and numbered cues SHA-matched, unchanged 2700-second frame plan. No browser/publish approval."
+  },
+  "activeQuestion": {
+    "id": "t03-q004",
+    "testId": "test-03",
+    "number": 4,
+    "part": 1,
+    "groupId": "t03-g004",
+    "topic": "business",
+    "difficulty": "foundation",
+    "tags": [
+      "business",
+      "photo_description"
+    ],
+    "prompt": "Look at the picture and choose the statement that best describes it.",
+    "promptZh": "請看圖片，選出最符合畫面的敘述。",
+    "options": [
+      {
+        "id": "A",
+        "text": "A chart is being removed from a wall.",
+        "zh": "一張圖表正從牆上被取下。",
+        "whyZh": "沒有人碰觸牆面圖表。"
+      },
+      {
+        "id": "B",
+        "text": "The chairs have been piled in a corner.",
+        "zh": "椅子被堆在角落。",
+        "whyZh": "與會者坐在座位上，沒有椅子堆。"
+      },
+      {
+        "id": "C",
+        "text": "A line graph is displayed behind the people.",
+        "zh": "人們後方展示著折線圖。",
+        "whyZh": "畫面左上方的白色看板上有綠色折線。"
+      },
+      {
+        "id": "D",
+        "text": "Everyone is standing around a table.",
+        "zh": "所有人都站在桌子周圍。",
+        "whyZh": "畫面人物坐著而非全體站立。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "畫面左上方的白色看板上有綠色折線。",
+    "evidence": "A line graph is displayed behind the people.",
+    "vocabulary": [
+      {
+        "term": "line graph",
+        "zh": "折線圖",
+        "note": "A line graph is displayed behind the people."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g004",
+    "testId": "test-03",
+    "part": 1,
+    "title": "Meeting room display",
+    "titleZh": "會議室的展示圖",
+    "topic": "business",
+    "passage": "A. A chart is being removed from a wall. B. The chairs have been piled in a corner. C. A line graph is displayed behind the people. D. Everyone is standing around a table.",
+    "passageZh": "A. 一張圖表正從牆上被取下。\nB. 椅子被堆在角落。\nC. 人們後方展示著折線圖。\nD. 所有人都站在桌子周圍。",
+    "audioScript": "A. A chart is being removed from a wall. B. The chairs have been piled in a corner. C. A line graph is displayed behind the people. D. Everyone is standing around a table.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "A. A chart is being removed from a wall. B. The chairs have been piled in a corner. C. A line graph is displayed behind the people. D. Everyone is standing around a table."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-02.mp3",
+    "duration": 17.424,
+    "imageScene": "meeting",
+    "image": "assets/scenes/meeting.svg",
+    "imageAlt": "Original practice illustration, question 4",
+    "audioStart": 0.5,
+    "audioEnd": 17.924,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-ZA",
+        "role": "male",
+        "modelVoice": "en-ZA-LukeNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "mode": "cue",
+      "start": 3.43483,
+      "end": 4.23721,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 4."
+    },
+    {
+      "path": "audio/formal-v2/test-03-02.mp3",
+      "mode": "passage",
+      "start": 0.5,
+      "end": 20.06,
+      "assetSha256": "6a0ddb6ba963c3230af399e582cbf24597be33b37fd54128561ed2b0fdaeb1a1",
+      "speech": "A. A chart is being removed from a wall. B. The chairs have been piled in a corner. C. A line graph is displayed behind the people. D. Everyone is standing around a table."
+    },
+    {
+      "path": "audio/azure-v1/test-03-02.mp3",
+      "mode": "practice",
+      "start": 0.5,
+      "end": 17.924,
+      "assetSha256": "444de90014c8ace28b810abd1ca062889a77fe2512dbc3f46d4aea4bf4a37a35",
+      "speech": "A. A chart is being removed from a wall. B. The chairs have been piled in a corner. C. A line graph is displayed behind the people. D. Everyone is standing around a table."
+    }
+  ],
+  "imageSha256": "26f7f7aa1725eb81deb0707bdcc255cfb0f778f1bd00a659fbc2ed82ff593a12"
+}

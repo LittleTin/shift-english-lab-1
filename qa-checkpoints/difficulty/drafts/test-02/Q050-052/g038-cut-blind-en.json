@@ -1,0 +1,52 @@
+{
+  "turns": [
+    {
+      "speaker": "Woman",
+      "text": "All twelve samples need a single run. The customer’s report needs the chamber log and a post-run inspection that only my team can sign."
+    },
+    {
+      "speaker": "Man",
+      "text": "On Wednesday, only the small chamber is free. It holds eight. The large chamber holds sixteen and is free Friday morning or afternoon. I can hold a slot before approval."
+    },
+    {
+      "speaker": "Woman",
+      "text": "Our technician can load only after noon. Only our engineer can sign the plan, and she works remotely."
+    },
+    {
+      "speaker": "Man",
+      "text": "The desk checks signed plans before admitting samples. There’s no signal beyond it. The chamber sends its log to your manager when it stops."
+    }
+  ],
+  "questions": [
+    {
+      "number": 50,
+      "prompt": "Which booking would let the team run the entire batch?",
+      "options": [
+        "Book the small chamber on Wednesday and divide the batch.",
+        "Book the large chamber on Friday morning and load it as booked.",
+        "Book the large chamber on Friday afternoon and keep the batch together.",
+        "Book the large chamber on Wednesday and load it after noon."
+      ]
+    },
+    {
+      "number": 51,
+      "prompt": "How should the woman arrange approval and entry?",
+      "options": [
+        "Hold a slot, bring the samples inside, then call the engineer.",
+        "Hold a slot, get the engineer’s signature while still outside, and show it at the desk before taking in the samples.",
+        "Hold a slot and ask the desk to sign the plan before the samples enter.",
+        "Have the engineer sign remotely, take the samples inside, and show the plan on the way out."
+      ]
+    },
+    {
+      "number": 52,
+      "prompt": "If the run ends on a day when no one on her team is working, what can happen that day?",
+      "options": [
+        "The manager can get the chamber log, but the customer’s report must wait.",
+        "The customer can get the report once the chamber sends its log.",
+        "The manager cannot receive anything until the team signs the inspection.",
+        "The chamber sends the log directly to the customer while the manager waits for the inspection."
+      ]
+    }
+  ]
+}
