@@ -1,0 +1,162 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Ben says recording is twelve minutes longer than a usual episode, practical examples worth retaining. No cancellation, focus issue or sound-quality concern. Actual same-range formal/practice dialogue and numbered stem match. Initial last-phrase ASR mismatch resolved by 0.90× and 1.12× full-clip variants and independent original-rate isolated tail, which all identify before we publish; names Ben/Rosa, 12 minutes, Friday, two episodes and permission order confirmed.",
+  "activeQuestion": {
+    "id": "t03-q053",
+    "testId": "test-03",
+    "number": 53,
+    "part": 3,
+    "groupId": "t03-g039",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "detail"
+    ],
+    "prompt": "What concern does Ben raise?",
+    "promptZh": "Ben提出什麼疑慮？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The guest has canceled an interview.",
+        "zh": "來賓取消訪談。",
+        "whyZh": "訪談已錄好。"
+      },
+      {
+        "id": "B",
+        "text": "Some photographs are out of focus.",
+        "zh": "部分照片失焦。",
+        "whyZh": "照片尚待選擇，沒有品質問題。"
+      },
+      {
+        "id": "C",
+        "text": "The recording has poor sound quality.",
+        "zh": "錄音品質不佳。",
+        "whyZh": "問題是長度，不是音質。"
+      },
+      {
+        "id": "D",
+        "text": "The interview is too long for one episode.",
+        "zh": "訪談超過通常一集的長度。",
+        "whyZh": "錄音比平時一集長十二分鐘，但 Ben 不想刪掉實用例子。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "錄音比平時一集長十二分鐘，但 Ben 不想刪掉實用例子。",
+    "evidence": "the recording is twelve minutes longer than our usual episode",
+    "vocabulary": [
+      {
+        "term": "episode",
+        "zh": "一集節目",
+        "note": "把一段長訪談分成兩集播出。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g039",
+    "testId": "test-03",
+    "part": 3,
+    "title": "Planning a podcast",
+    "titleZh": "規劃廣播節目",
+    "topic": "technology",
+    "passage": "F1: Our first customer podcast goes out on Friday. Ben, is the interview with the urban gardener ready?\nM1: Almost. The guest gave excellent advice, but the recording is twelve minutes longer than our usual episode. I don't want to cut the practical examples.\nF2: Could we divide it into two episodes? The section about balcony plants stands on its own, and we haven't scheduled next week's guest yet.\nF1: That's a useful solution, Rosa. Ben, can you create a short introduction for each half?\nM1: Yes. I'll send both edits tomorrow morning. Rosa, could you choose photographs for the episode pages?\nF2: Certainly. I took some at the guest's garden. I'll check that she approves them before we publish.",
+    "passageZh": "女一：第一集客戶播客星期五上線。Ben，都市園藝師的訪談好了嗎？\n男：快好了。來賓提供了很好的建議，但錄音比通常一集多十二分鐘。我不想刪實用例子。\n女二（Rosa）：能分成兩集嗎？陽台植物的部分可以獨立，而且還沒排下週的來賓。\n女一：這辦法不錯，Rosa。Ben，可以替兩半各製作短引言嗎？\n男：可以，明早寄兩份剪輯。Rosa，請挑選節目網頁用的照片。\n女二：當然，我在來賓的花園拍了一些，發布前會先徵得她同意。",
+    "audioScript": "Our first customer podcast goes out on Friday. Ben, is the interview with the urban gardener ready?\nAlmost. The guest gave excellent advice, but the recording is twelve minutes longer than our usual episode. I don't want to cut the practical examples.\nCould we divide it into two episodes? The section about balcony plants stands on its own, and we haven't scheduled next week's guest yet.\nThat's a useful solution, Rosa. Ben, can you create a short introduction for each half?\nYes. I'll send both edits tomorrow morning. Rosa, could you choose photographs for the episode pages?\nCertainly. I took some at the guest's garden. I'll check that she approves them before we publish.",
+    "turns": [
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "Our first customer podcast goes out on Friday. Ben, is the interview with the urban gardener ready?"
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "Almost. The guest gave excellent advice, but the recording is twelve minutes longer than our usual episode. I don't want to cut the practical examples."
+      },
+      {
+        "voice": "female",
+        "speaker": "F2",
+        "text": "Could we divide it into two episodes? The section about balcony plants stands on its own, and we haven't scheduled next week's guest yet."
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "That's a useful solution, Rosa. Ben, can you create a short introduction for each half?"
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "Yes. I'll send both edits tomorrow morning. Rosa, could you choose photographs for the episode pages?"
+      },
+      {
+        "voice": "female",
+        "speaker": "F2",
+        "text": "Certainly. I took some at the guest's garden. I'll check that she approves them before we publish."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-19.mp3",
+    "duration": 51.696,
+    "audioStart": 0.5,
+    "audioEnd": 52.196,
+    "audioSpeakers": [
+      {
+        "speaker": "F1",
+        "locale": "en-US",
+        "role": "female",
+        "modelVoice": "en-US-JennyNeural"
+      },
+      {
+        "speaker": "M1",
+        "locale": "en-US",
+        "role": "male",
+        "modelVoice": "en-US-GuyNeural"
+      },
+      {
+        "speaker": "F2",
+        "locale": "en-US",
+        "role": "female",
+        "modelVoice": "en-US-AriaNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-03.mp3",
+      "start": 0.25,
+      "end": 4.17283,
+      "assetSha256": "cb55c1d3ed563f9e894d7f953440e40eb230ebb03ac85980a8d5c62c9e92888a",
+      "speech": "Questions 53 through 55, listen to the conversation."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-03-cues-03.mp3",
+      "start": 4.42283,
+      "end": 7.26817,
+      "assetSha256": "cb55c1d3ed563f9e894d7f953440e40eb230ebb03ac85980a8d5c62c9e92888a",
+      "speech": "Number 53, what concern does Ben raise?"
+    },
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-03-19.mp3",
+      "start": 0.5,
+      "end": 52.196,
+      "assetSha256": "b9a96ded06d93cb213a7b7b3a0a3919c89d3c1e64ad123e3b9682036688f7a6f",
+      "speech": "Our first customer podcast goes out on Friday. Ben, is the interview with the Urban Gardener ready? Almost. The guest gave excellent advice, but the recording is 12 minutes longer than our usual episode. I don't want to cut the practical examples. Could we divide it into two episodes? The section about balcony plants stands on its own, and we haven't scheduled next week's guest yet. That's a useful solution, Rosa. Ben, can you create a short introduction for each half? Yes. I'll send both edits tomorrow morning. Rosa, could you choose photographs for the episode pages? Certainly. I took some at the guest's garden. I'll check that she approves them before or republish. [BLANK_AUDIO]"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-19.mp3",
+      "start": 0.5,
+      "end": 52.196,
+      "assetSha256": "b9a96ded06d93cb213a7b7b3a0a3919c89d3c1e64ad123e3b9682036688f7a6f",
+      "speech": "Our first customer podcast goes out on Friday. Ben, is the interview with the Urban Gardener ready? Almost. The guest gave excellent advice, but the recording is 12 minutes longer than our usual episode. I don't want to cut the practical examples. Could we divide it into two episodes? The section about balcony plants stands on its own, and we haven't scheduled next week's guest yet. That's a useful solution, Rosa. Ben, can you create a short introduction for each half? Yes. I'll send both edits tomorrow morning. Rosa, could you choose photographs for the episode pages? Certainly. I took some at the guest's garden. I'll check that she approves them before or republish. [BLANK_AUDIO]"
+    }
+  ],
+  "audioCorroboration": {
+    "t03-g039.rate0.90": "Our first customer podcast goes out on Friday. Ben, is the interview with the Urban Gardener ready? Almost. The guest gave excellent advice, but the recording is 12 minutes longer than our usual episode. I don't want to cut the practical examples. Could we divide it into two episodes? The section about balcony plants stands on its own, and we haven't scheduled next week's guest yet. That's a useful solution, Rosa. Ben, can you create a short introduction for each half? Yes. I'll send both edits tomorrow morning. Rosa, could you choose photographs for the episode pages? Certainly. I took some at the guest's garden. I'll check that she approves them before we publish. You",
+    "t03-g039.rate1.12": "Our first customer podcast goes out on Friday. Ben, is the interview with the Urban Gardener ready? Almost. The guest gave excellent advice, but the recording is 12 minutes longer than our usual episode. I don't want to cut the practical examples. Could we divide it into two episodes? The section about balcony plants stands on its own, and we haven't scheduled next week's guest yet. That's a useful solution, Rosa. Ben, can you create a short introduction for each half? Yes. I'll send both edits tomorrow morning. Rosa, could you choose photographs for the episode pages? Certainly. I took some at the guest's garden. I'll check that she approves them before we publish."
+  }
+}

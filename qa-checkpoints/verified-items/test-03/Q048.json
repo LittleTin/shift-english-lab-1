@@ -1,0 +1,152 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Painters left equipment in corridor; woman will ask them to clear it. Notice updated rather than removed; front steps and small signs not cleared. Actual same-range formal/practice dialogue and numbered question stem agree; gender roles, weekdays/three steps, and source wording intact.",
+  "activeQuestion": {
+    "id": "t03-q048",
+    "testId": "test-03",
+    "number": 48,
+    "part": 3,
+    "groupId": "t03-g037",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "detail"
+    ],
+    "prompt": "What needs to be removed?",
+    "promptZh": "什麼東西需要移開？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Painting equipment",
+        "zh": "油漆設備",
+        "whyZh": "女子會請油漆工清掉走廊設備。"
+      },
+      {
+        "id": "B",
+        "text": "Interview notices",
+        "zh": "面試通知",
+        "whyZh": "電子郵件需要更新，但未要求移走公告。"
+      },
+      {
+        "id": "C",
+        "text": "Steps at the front doors",
+        "zh": "正門階梯",
+        "whyZh": "改引導走側門，不是拆階梯。"
+      },
+      {
+        "id": "D",
+        "text": "Small street signs",
+        "zh": "小型路牌",
+        "whyZh": "路牌小是需要地圖的原因，未要求移除。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "女子會請油漆工清掉走廊設備。",
+    "evidence": "painters have left equipment in the corridor",
+    "vocabulary": [
+      {
+        "term": "step-free access",
+        "zh": "無階梯通道",
+        "note": "讓不方便使用階梯的人進出。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g037",
+    "testId": "test-03",
+    "part": 3,
+    "title": "An accessible entrance",
+    "titleZh": "無障礙入口",
+    "topic": "business",
+    "passage": "M1: We have twenty applicants coming for interviews on Thursday. Could you confirm that the side entrance will be available? One applicant has asked about step-free access.\nF1: The entrance itself is open, but painters have left equipment in the corridor. I'll ask them to clear it this afternoon.\nM1: Thank you. The invitation currently directs everyone through the front doors, which have three steps.\nF1: We should include a simple map showing the side entrance. That would help delivery drivers too, since the street signs are small.\nM1: I'll update the interview email, but I don't have a suitable map.\nF1: Facilities made one last month. I'll send you the file after I speak with the painters.",
+    "passageZh": "男：星期四有二十位應徵者來面試。請確認側門能使用好嗎？一位應徵者詢問免走階梯的通道。\n女：入口是開放的，但油漆工在走廊放了設備。我今天下午請他們移開。\n男：謝謝。目前邀請函引導大家走有三階階梯的正門。\n女：應附上標示側門的簡單地圖。街道路牌很小，這也能幫到送貨司機。\n男：我會更新面試信，但沒有合適的地圖。\n女：設施管理部上個月做了一份。我跟油漆工談完就寄給你。",
+    "audioScript": "We have twenty applicants coming for interviews on Thursday. Could you confirm that the side entrance will be available? One applicant has asked about step-free access.\nThe entrance itself is open, but painters have left equipment in the corridor. I'll ask them to clear it this afternoon.\nThank you. The invitation currently directs everyone through the front doors, which have three steps.\nWe should include a simple map showing the side entrance. That would help delivery drivers too, since the street signs are small.\nI'll update the interview email, but I don't have a suitable map.\nFacilities made one last month. I'll send you the file after I speak with the painters.",
+    "turns": [
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "We have twenty applicants coming for interviews on Thursday. Could you confirm that the side entrance will be available? One applicant has asked about step-free access."
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "The entrance itself is open, but painters have left equipment in the corridor. I'll ask them to clear it this afternoon."
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "Thank you. The invitation currently directs everyone through the front doors, which have three steps."
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "We should include a simple map showing the side entrance. That would help delivery drivers too, since the street signs are small."
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "I'll update the interview email, but I don't have a suitable map."
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "Facilities made one last month. I'll send you the file after I speak with the painters."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-17.mp3",
+    "duration": 54.528,
+    "audioStart": 0.5,
+    "audioEnd": 55.028,
+    "audioSpeakers": [
+      {
+        "speaker": "M1",
+        "locale": "en-IN",
+        "role": "male",
+        "modelVoice": "en-IN-PrabhatNeural"
+      },
+      {
+        "speaker": "F1",
+        "locale": "en-IN",
+        "role": "female",
+        "modelVoice": "en-IN-NeerjaNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-02.mp3",
+      "start": 40.55721,
+      "end": 44.52808,
+      "assetSha256": "836ec550b6871728201b644a35f4f41899534a150b2ba6e6323d1aea349f7f9e",
+      "speech": "Questions 47 through 49, listen to the conversation."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-03-cues-02.mp3",
+      "start": 48.67867,
+      "end": 51.011,
+      "assetSha256": "836ec550b6871728201b644a35f4f41899534a150b2ba6e6323d1aea349f7f9e",
+      "speech": "Number 48, what needs to be removed?"
+    },
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-03-17.mp3",
+      "start": 0.5,
+      "end": 55.028,
+      "assetSha256": "2559dd2f07e0cd11230a82119baeaf76772955a29ebb471628729778e8448f3a",
+      "speech": "We have 20 applicants coming for interviews on Thursday. Could you confirm that the side entrance will be available? One applicant has asked about step-free access. The entrance itself is open, but painters have left equipment in the corridor. I'll ask them to clear it this afternoon. Thank you. The invitation currently directs everyone through the front doors which have three steps. We should include a simple map showing the side entrance. That would help delivery drivers too, since the street signs are small. I'll update the interview email, but I don't have a suitable map. Facilities made one last month. I'll send you the file after I speak with the painters."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-17.mp3",
+      "start": 0.5,
+      "end": 55.028,
+      "assetSha256": "2559dd2f07e0cd11230a82119baeaf76772955a29ebb471628729778e8448f3a",
+      "speech": "We have 20 applicants coming for interviews on Thursday. Could you confirm that the side entrance will be available? One applicant has asked about step-free access. The entrance itself is open, but painters have left equipment in the corridor. I'll ask them to clear it this afternoon. Thank you. The invitation currently directs everyone through the front doors which have three steps. We should include a simple map showing the side entrance. That would help delivery drivers too, since the street signs are small. I'll update the interview email, but I don't have a suitable map. Facilities made one last month. I'll send you the file after I speak with the painters."
+    }
+  ]
+}

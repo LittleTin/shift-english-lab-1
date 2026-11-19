@@ -1,0 +1,204 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Sides requested because one applicant asked about step-free access. Delivery driver only benefits from map, no main-door repaint claim or lobby prohibition. New option states inquiry exactly. Actual conversation and numbered question match, and do not constrain an explicitly stated access need beyond inquiry. Printed C clarified with same key and no audio changes; new ID/archive indicated for English option.",
+  "activeQuestion": {
+    "id": "t03-q047-r2",
+    "testId": "test-03",
+    "number": 47,
+    "part": 3,
+    "groupId": "t03-g037",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "detail"
+    ],
+    "prompt": "Why does the man ask about the side entrance?",
+    "promptZh": "男子為何詢問側門？",
+    "options": [
+      {
+        "id": "A",
+        "text": "He is expecting a large delivery.",
+        "zh": "他在等大型貨物。",
+        "whyZh": "送貨司機只是地圖的額外受益者。"
+      },
+      {
+        "id": "B",
+        "text": "The main doors have been repainted.",
+        "zh": "正門已重新上漆。",
+        "whyZh": "油漆設備在走廊，未說正門上漆。"
+      },
+      {
+        "id": "C",
+        "text": "An interview applicant asked about step-free access.",
+        "zh": "有一位應徵者詢問有沒有無階梯通道。",
+        "whyZh": "男子為應徵者確認無階梯通道。"
+      },
+      {
+        "id": "D",
+        "text": "Visitors are not permitted in the lobby.",
+        "zh": "訪客不能進大廳。",
+        "whyZh": "沒有大廳禁令。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "男子為應徵者確認無階梯通道。",
+    "evidence": "One applicant has asked about step-free access.",
+    "vocabulary": [
+      {
+        "term": "step-free access",
+        "zh": "無階梯通道",
+        "note": "讓不方便使用階梯的人進出。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t03-g037",
+    "testId": "test-03",
+    "part": 3,
+    "title": "An accessible entrance",
+    "titleZh": "無障礙入口",
+    "topic": "business",
+    "passage": "M1: We have twenty applicants coming for interviews on Thursday. Could you confirm that the side entrance will be available? One applicant has asked about step-free access.\nF1: The entrance itself is open, but painters have left equipment in the corridor. I'll ask them to clear it this afternoon.\nM1: Thank you. The invitation currently directs everyone through the front doors, which have three steps.\nF1: We should include a simple map showing the side entrance. That would help delivery drivers too, since the street signs are small.\nM1: I'll update the interview email, but I don't have a suitable map.\nF1: Facilities made one last month. I'll send you the file after I speak with the painters.",
+    "passageZh": "男：星期四有二十位應徵者來面試。請確認側門能使用好嗎？一位應徵者詢問免走階梯的通道。\n女：入口是開放的，但油漆工在走廊放了設備。我今天下午請他們移開。\n男：謝謝。目前邀請函引導大家走有三階階梯的正門。\n女：應附上標示側門的簡單地圖。街道路牌很小，這也能幫到送貨司機。\n男：我會更新面試信，但沒有合適的地圖。\n女：設施管理部上個月做了一份。我跟油漆工談完就寄給你。",
+    "audioScript": "We have twenty applicants coming for interviews on Thursday. Could you confirm that the side entrance will be available? One applicant has asked about step-free access.\nThe entrance itself is open, but painters have left equipment in the corridor. I'll ask them to clear it this afternoon.\nThank you. The invitation currently directs everyone through the front doors, which have three steps.\nWe should include a simple map showing the side entrance. That would help delivery drivers too, since the street signs are small.\nI'll update the interview email, but I don't have a suitable map.\nFacilities made one last month. I'll send you the file after I speak with the painters.",
+    "turns": [
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "We have twenty applicants coming for interviews on Thursday. Could you confirm that the side entrance will be available? One applicant has asked about step-free access."
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "The entrance itself is open, but painters have left equipment in the corridor. I'll ask them to clear it this afternoon."
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "Thank you. The invitation currently directs everyone through the front doors, which have three steps."
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "We should include a simple map showing the side entrance. That would help delivery drivers too, since the street signs are small."
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "I'll update the interview email, but I don't have a suitable map."
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "Facilities made one last month. I'll send you the file after I speak with the painters."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-17.mp3",
+    "duration": 54.528,
+    "audioStart": 0.5,
+    "audioEnd": 55.028,
+    "audioSpeakers": [
+      {
+        "speaker": "M1",
+        "locale": "en-IN",
+        "role": "male",
+        "modelVoice": "en-IN-PrabhatNeural"
+      },
+      {
+        "speaker": "F1",
+        "locale": "en-IN",
+        "role": "female",
+        "modelVoice": "en-IN-NeerjaNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-02.mp3",
+      "start": 40.55721,
+      "end": 44.52808,
+      "assetSha256": "836ec550b6871728201b644a35f4f41899534a150b2ba6e6323d1aea349f7f9e",
+      "speech": "Questions 47 through 49, listen to the conversation."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-03-cues-02.mp3",
+      "start": 44.77808,
+      "end": 48.42867,
+      "assetSha256": "836ec550b6871728201b644a35f4f41899534a150b2ba6e6323d1aea349f7f9e",
+      "speech": "Number 47, why does the man ask about the side entrance?"
+    },
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-03-17.mp3",
+      "start": 0.5,
+      "end": 55.028,
+      "assetSha256": "2559dd2f07e0cd11230a82119baeaf76772955a29ebb471628729778e8448f3a",
+      "speech": "We have 20 applicants coming for interviews on Thursday. Could you confirm that the side entrance will be available? One applicant has asked about step-free access. The entrance itself is open, but painters have left equipment in the corridor. I'll ask them to clear it this afternoon. Thank you. The invitation currently directs everyone through the front doors which have three steps. We should include a simple map showing the side entrance. That would help delivery drivers too, since the street signs are small. I'll update the interview email, but I don't have a suitable map. Facilities made one last month. I'll send you the file after I speak with the painters."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-17.mp3",
+      "start": 0.5,
+      "end": 55.028,
+      "assetSha256": "2559dd2f07e0cd11230a82119baeaf76772955a29ebb471628729778e8448f3a",
+      "speech": "We have 20 applicants coming for interviews on Thursday. Could you confirm that the side entrance will be available? One applicant has asked about step-free access. The entrance itself is open, but painters have left equipment in the corridor. I'll ask them to clear it this afternoon. Thank you. The invitation currently directs everyone through the front doors which have three steps. We should include a simple map showing the side entrance. That would help delivery drivers too, since the street signs are small. I'll update the interview email, but I don't have a suitable map. Facilities made one last month. I'll send you the file after I speak with the painters."
+    }
+  ],
+  "originalQuestion": {
+    "id": "t03-q047",
+    "testId": "test-03",
+    "number": 47,
+    "part": 3,
+    "groupId": "t03-g037",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "detail"
+    ],
+    "prompt": "Why does the man ask about the side entrance?",
+    "promptZh": "男子為何詢問側門？",
+    "options": [
+      {
+        "id": "A",
+        "text": "He is expecting a large delivery.",
+        "zh": "他在等大型貨物。",
+        "whyZh": "送貨司機只是地圖的額外受益者。"
+      },
+      {
+        "id": "B",
+        "text": "The main doors have been repainted.",
+        "zh": "正門剛重新油漆。",
+        "whyZh": "油漆設備在走廊，未說正門上漆。"
+      },
+      {
+        "id": "C",
+        "text": "An interview applicant needs step-free access.",
+        "zh": "面試者需要不用走階梯的通道。",
+        "whyZh": "男子為應徵者確認無階梯通道。"
+      },
+      {
+        "id": "D",
+        "text": "Visitors are not permitted in the lobby.",
+        "zh": "訪客不能進大廳。",
+        "whyZh": "沒有大廳禁令。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "男子為應徵者確認無階梯通道。",
+    "evidence": "One applicant has asked about step-free access.",
+    "vocabulary": [
+      {
+        "term": "step-free access",
+        "zh": "無階梯通道",
+        "note": "讓不方便使用階梯的人進出。"
+      }
+    ],
+    "revision": 1
+  }
+}

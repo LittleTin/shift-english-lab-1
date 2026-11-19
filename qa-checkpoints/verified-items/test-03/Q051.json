@@ -1,0 +1,156 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Thicker divider still fits existing boxes, preserving machine setup. Cost rises slightly; no reuse claim; sample test required. Actual same-range dialogue and question stem agree. Lexical tail next week’s shipment corroborated on two pitch-preserving alternate-rate decodes; no effect on key. Three complaints, six jars, route and setup maintained.",
+  "activeQuestion": {
+    "id": "t03-q051",
+    "testId": "test-03",
+    "number": 51,
+    "part": 3,
+    "groupId": "t03-g038",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "detail"
+    ],
+    "prompt": "Why is the proposed divider convenient?",
+    "promptZh": "建議的隔板為何方便？",
+    "options": [
+      {
+        "id": "A",
+        "text": "It can be reused by customers.",
+        "zh": "客戶可以重複使用。",
+        "whyZh": "未提重複使用。"
+      },
+      {
+        "id": "B",
+        "text": "It is cheaper than the current divider.",
+        "zh": "比原隔板便宜。",
+        "whyZh": "男子說成本略高。"
+      },
+      {
+        "id": "C",
+        "text": "It does not require changing the box size.",
+        "zh": "不必更改箱子尺寸。",
+        "whyZh": "可以放入原箱，不必改包裝機設定。"
+      },
+      {
+        "id": "D",
+        "text": "It eliminates the need for testing.",
+        "zh": "不必再做測試。",
+        "whyZh": "兩人明確安排樣品測試。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "可以放入原箱，不必改包裝機設定。",
+    "evidence": "it would fit our current boxes",
+    "vocabulary": [
+      {
+        "term": "divider",
+        "zh": "隔板",
+        "note": "置於包裝箱內，避免物品碰撞或晃動。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g038",
+    "testId": "test-03",
+    "part": 3,
+    "title": "Revising a package",
+    "titleZh": "修改包裝",
+    "topic": "manufacturing",
+    "passage": "F1: We've received three complaints that the glass jars moved around inside their shipping boxes. None broke, but we shouldn't wait until that happens.\nM1: The supplier recommends a thicker cardboard divider. It costs a little more, although it would fit our current boxes.\nF1: Keeping the same box size matters. Our packing machine is already set up for it. Can we test a sample before placing a large order?\nM1: A sample is arriving tomorrow. I'll pack six jars and send them through the normal delivery route to our warehouse.\nF1: Good. Ask the warehouse team to photograph the contents before removing them.\nM1: I'll do that. If the test goes well, we can introduce the dividers with next week's shipment.",
+    "passageZh": "女：我們收到三件客訴，玻璃罐在運送箱內晃動。沒有破裂，但不應等到破了才處理。\n男：供應商建議用較厚的紙板隔板。成本略高，但可放進現在的箱子。\n女：維持箱子尺寸很重要，包裝機已按此設定。大量訂購前能先測樣品嗎？\n男：樣品明天到。我會包六罐，循平常配送路線寄到倉庫。\n女：很好，請倉庫人員在取出物品之前拍攝內容物。\n男：我會辦。如果測試順利，下週出貨就可採用。",
+    "audioScript": "We've received three complaints that the glass jars moved around inside their shipping boxes. None broke, but we shouldn't wait until that happens.\nThe supplier recommends a thicker cardboard divider. It costs a little more, although it would fit our current boxes.\nKeeping the same box size matters. Our packing machine is already set up for it. Can we test a sample before placing a large order?\nA sample is arriving tomorrow. I'll pack six jars and send them through the normal delivery route to our warehouse.\nGood. Ask the warehouse team to photograph the contents before removing them.\nI'll do that. If the test goes well, we can introduce the dividers with next week's shipment.",
+    "turns": [
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "We've received three complaints that the glass jars moved around inside their shipping boxes. None broke, but we shouldn't wait until that happens."
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "The supplier recommends a thicker cardboard divider. It costs a little more, although it would fit our current boxes."
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "Keeping the same box size matters. Our packing machine is already set up for it. Can we test a sample before placing a large order?"
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "A sample is arriving tomorrow. I'll pack six jars and send them through the normal delivery route to our warehouse."
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "Good. Ask the warehouse team to photograph the contents before removing them."
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "I'll do that. If the test goes well, we can introduce the dividers with next week's shipment."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-18.mp3",
+    "duration": 52.8,
+    "audioStart": 0.5,
+    "audioEnd": 53.3,
+    "audioSpeakers": [
+      {
+        "speaker": "F1",
+        "locale": "en-HK",
+        "role": "female",
+        "modelVoice": "en-HK-YanNeural"
+      },
+      {
+        "speaker": "M1",
+        "locale": "en-HK",
+        "role": "male",
+        "modelVoice": "en-HK-SamNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-02.mp3",
+      "start": 54.15654,
+      "end": 57.75896,
+      "assetSha256": "836ec550b6871728201b644a35f4f41899534a150b2ba6e6323d1aea349f7f9e",
+      "speech": "Questions 50 through 52, listen to the conversation."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-03-cues-02.mp3",
+      "start": 60.82512,
+      "end": 64.46075,
+      "assetSha256": "836ec550b6871728201b644a35f4f41899534a150b2ba6e6323d1aea349f7f9e",
+      "speech": "Number 51, why is the proposed divider convenient?"
+    },
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-03-18.mp3",
+      "start": 0.5,
+      "end": 53.3,
+      "assetSha256": "d4cc99784ae62c41aff7c20f03b1bf80338979fa1d80f4080606ea64b7685558",
+      "speech": "we've received three complaints that the glass jars moved around inside their shipping boxes. None broke, but we shouldn't wait until that happens. The supplier recommends a thicker cardboard divider. It costs a little more, although it would fit our current boxes. Keeping the same box size matters. Our packing machine is already set up for it. Can we test a sample before placing a large order? A sample is arriving tomorrow. I'll pack six jars and send them through the normal delivery route to our warehouse. Good. Ask the warehouse team to photograph the contents before removing them. I'll do that. If the test goes well, we can introduce the dividers with next week shipment."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-18.mp3",
+      "start": 0.5,
+      "end": 53.3,
+      "assetSha256": "d4cc99784ae62c41aff7c20f03b1bf80338979fa1d80f4080606ea64b7685558",
+      "speech": "we've received three complaints that the glass jars moved around inside their shipping boxes. None broke, but we shouldn't wait until that happens. The supplier recommends a thicker cardboard divider. It costs a little more, although it would fit our current boxes. Keeping the same box size matters. Our packing machine is already set up for it. Can we test a sample before placing a large order? A sample is arriving tomorrow. I'll pack six jars and send them through the normal delivery route to our warehouse. Good. Ask the warehouse team to photograph the contents before removing them. I'll do that. If the test goes well, we can introduce the dividers with next week shipment."
+    }
+  ],
+  "audioCorroboration": {
+    "t03-g038.rate0.90": "We've received three complaints that the glass jars moved around inside their shipping boxes. None broke, but we shouldn't wait until that happens. The supplier recommends a thicker cardboard divider. It costs a little more, although it would fit our current boxes. Keeping the same box size matters. Our packing machine is already set up for it. Can we test a sample before placing a large order? A sample is arriving tomorrow. I'll pack six jars and send them through the normal delivery route to our warehouse. Good. Ask the warehouse team to photograph the contents before removing them. I'll do that. If the test goes well, we can introduce the dividers with next week's shipment. [BLANK_AUDIO]",
+    "t03-g038.rate1.12": "We've received three complaints that the glass jars moved around inside their shipping boxes. None broke, but we shouldn't wait until that happens. The supplier recommends a thicker cardboard divider. It costs a little more, although it would fit our current boxes. Keeping the same box size matters. Our packing machine is already set up for it. Can we test a sample before placing a large order? A sample is arriving tomorrow. I'll pack six jars and send them through the normal delivery route to our warehouse. Good. Ask the warehouse team to photograph the contents before removing them. I'll do that. If the test goes well, we can introduce the dividers with next week's shipment."
+  }
+}

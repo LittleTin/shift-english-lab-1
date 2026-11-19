@@ -1,0 +1,152 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Man promises refund of today’s fee; no extension or buy-a-bike offer. Helmet is tomorrow’s hold, not today’s refund. Actual dialogue in identical formal/practice range matches complete text (18 and 20 number typography only). Actual bank confirms correct group and numbered question stem. Guarded changes affect only zh.",
+  "activeQuestion": {
+    "id": "t03-q045",
+    "testId": "test-03",
+    "number": 45,
+    "part": 3,
+    "groupId": "t03-g036",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "detail"
+    ],
+    "prompt": "What does the man offer for today's rental?",
+    "promptZh": "男子如何處理今天的租借？",
+    "options": [
+      {
+        "id": "A",
+        "text": "An additional hour of use",
+        "zh": "多一小時使用時間",
+        "whyZh": "他提出退錢，不是延長。"
+      },
+      {
+        "id": "B",
+        "text": "A full return of the fee",
+        "zh": "全額退還當天租金",
+        "whyZh": "男子直接承諾退回今天租金。"
+      },
+      {
+        "id": "C",
+        "text": "A replacement helmet",
+        "zh": "更換安全帽",
+        "whyZh": "安全帽是明天要預留的物品。"
+      },
+      {
+        "id": "D",
+        "text": "A discount on a bicycle purchase",
+        "zh": "購車折扣",
+        "whyZh": "沒有買車安排。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "男子直接承諾退回今天租金。",
+    "evidence": "I'll refund today's rental fee.",
+    "vocabulary": [
+      {
+        "term": "refund",
+        "zh": "退還款項",
+        "note": "退還今日已付租金。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g036",
+    "testId": "test-03",
+    "part": 3,
+    "title": "Returning a rental bicycle",
+    "titleZh": "歸還租借自行車",
+    "topic": "daily",
+    "passage": "F1: I'm returning bicycle number eighteen. I booked it for the whole afternoon, but the rear tire lost air after about twenty minutes.\nM1: I'm sorry about that. Did you have to walk all the way back? We could have sent our recovery van if you'd called.\nF1: Fortunately, I was near the riverside cafe, so it wasn't far. I would still like to ride along the coast tomorrow.\nM1: I'll refund today's rental fee. For tomorrow, I can reserve a different bicycle and have our mechanic check it before you arrive.\nF1: That would be great. Could you keep a helmet for me too?\nM1: Certainly. I'll put both items aside under your name, and you can collect them after nine.",
+    "passageZh": "女：我來還十八號自行車。我預約了整個下午，但後輪騎了約二十分鐘就漏氣。\n男：真抱歉。你是一路走回來的嗎？如果你當時有打電話，我們原本可以派救援車。\n女：幸好我在河邊咖啡館附近，並不遠。我明天仍想沿海騎車。\n男：今天的租金我會退還。明天可以預留另一輛，並請技師在你到之前檢查。\n女：太好了，也可以幫我留安全帽嗎？\n男：當然，兩樣都會用你的名字預留，九點後可以領取。",
+    "audioScript": "I'm returning bicycle number eighteen. I booked it for the whole afternoon, but the rear tire lost air after about twenty minutes.\nI'm sorry about that. Did you have to walk all the way back? We could have sent our recovery van if you'd called.\nFortunately, I was near the riverside cafe, so it wasn't far. I would still like to ride along the coast tomorrow.\nI'll refund today's rental fee. For tomorrow, I can reserve a different bicycle and have our mechanic check it before you arrive.\nThat would be great. Could you keep a helmet for me too?\nCertainly. I'll put both items aside under your name, and you can collect them after nine.",
+    "turns": [
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "I'm returning bicycle number eighteen. I booked it for the whole afternoon, but the rear tire lost air after about twenty minutes."
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "I'm sorry about that. Did you have to walk all the way back? We could have sent our recovery van if you'd called."
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "Fortunately, I was near the riverside cafe, so it wasn't far. I would still like to ride along the coast tomorrow."
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "I'll refund today's rental fee. For tomorrow, I can reserve a different bicycle and have our mechanic check it before you arrive."
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "That would be great. Could you keep a helmet for me too?"
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "Certainly. I'll put both items aside under your name, and you can collect them after nine."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-16.mp3",
+    "duration": 44.232,
+    "audioStart": 0.5,
+    "audioEnd": 44.732,
+    "audioSpeakers": [
+      {
+        "speaker": "F1",
+        "locale": "en-AU",
+        "role": "female",
+        "modelVoice": "en-AU-NatashaNeural"
+      },
+      {
+        "speaker": "M1",
+        "locale": "en-AU",
+        "role": "male",
+        "modelVoice": "en-AU-WilliamNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-02.mp3",
+      "start": 24.46383,
+      "end": 28.42958,
+      "assetSha256": "836ec550b6871728201b644a35f4f41899534a150b2ba6e6323d1aea349f7f9e",
+      "speech": "Questions 44 through 46, listen to the conversation."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-03-cues-02.mp3",
+      "start": 32.44383,
+      "end": 35.87975,
+      "assetSha256": "836ec550b6871728201b644a35f4f41899534a150b2ba6e6323d1aea349f7f9e",
+      "speech": "Number 45, what does the man offer for today's rental?"
+    },
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-03-16.mp3",
+      "start": 0.5,
+      "end": 44.732,
+      "assetSha256": "1eee45501484135d1ae41ab0f0f7eaec4541bef586b0e3b5e00c5ea9a550c055",
+      "speech": "I'm returning bicycle number 18. I booked it for the whole afternoon, but the rear tire lost air after about 20 minutes. I'm sorry about that. Did you have to walk all the way back? We could have sent our recovery van if you'd called. Fortunately, I was near the Riverside Cafe, so it wasn't far. I would still like to ride along the coast tomorrow. I'll refund today's rental fee. For tomorrow, I can reserve a different bicycle and have our mechanic check it before you arrive. That would be great. Could you keep a helmet for me too? Certainly. I'll put both items aside under your name, and you can collect them after nine."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-16.mp3",
+      "start": 0.5,
+      "end": 44.732,
+      "assetSha256": "1eee45501484135d1ae41ab0f0f7eaec4541bef586b0e3b5e00c5ea9a550c055",
+      "speech": "I'm returning bicycle number 18. I booked it for the whole afternoon, but the rear tire lost air after about 20 minutes. I'm sorry about that. Did you have to walk all the way back? We could have sent our recovery van if you'd called. Fortunately, I was near the Riverside Cafe, so it wasn't far. I would still like to ride along the coast tomorrow. I'll refund today's rental fee. For tomorrow, I can reserve a different bicycle and have our mechanic check it before you arrive. That would be great. Could you keep a helmet for me too? Certainly. I'll put both items aside under your name, and you can collect them after nine."
+    }
+  ]
+}
