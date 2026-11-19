@@ -1,0 +1,67 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "Only ‘before’ can introduce the finite clause ‘production continues’ and sequence inspection before production. The other options require a nominal complement here. Clarified the Chinese rationale and classifier; all choices verified.",
+  "activeQuestion": {
+    "id": "t01-q132",
+    "testId": "test-01",
+    "number": 132,
+    "part": 6,
+    "groupId": "t01-r-p6-01",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension"
+    ],
+    "prompt": "Choose the best word or sentence for blank [132].",
+    "promptZh": "請選出最適合填入空格 [132] 的字詞或句子。",
+    "options": [
+      {
+        "text": "during",
+        "zh": "在……期間",
+        "whyZh": "during 後接名詞，不能接此完整子句。",
+        "id": "A"
+      },
+      {
+        "text": "before",
+        "zh": "之前",
+        "whyZh": "前五個模組須在繼續生產之前接受檢查；before 可接 production continues 這個完整子句。",
+        "id": "B"
+      },
+      {
+        "text": "despite",
+        "zh": "儘管",
+        "whyZh": "despite 不能直接接 production continues 完整子句。",
+        "id": "C"
+      },
+      {
+        "text": "because of",
+        "zh": "因為",
+        "whyZh": "because of 後接名詞片語，不接 production continues。",
+        "id": "D"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "前五個模組須在繼續生產之前接受檢查；before 可接 production continues 這個完整子句。",
+    "evidence": "The first five units must be inspected ... production continues.",
+    "vocabulary": [
+      {
+        "term": "pilot build",
+        "zh": "試產",
+        "note": "以少量組裝驗證製程與作業方式。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p6-01",
+    "testId": "test-01",
+    "part": 6,
+    "title": "Pilot-build instructions",
+    "titleZh": "試產作業通知",
+    "topic": "manufacturing",
+    "passage": "To: Pilot-build team\nSubject: Sensor module trial\n\nWe will assemble fifty sensor modules on Tuesday. Before work begins, please [131] ____ that your workstation has revision C of the work instruction. The updated document contains a clearer photograph of the cable connection.\n\nThe first five units must be inspected [132] ____ production continues. Quality staff will check connector orientation and record the results. [133] ____\n\nPlease keep any rejected parts in the red tray rather than returning them to stock. This will prevent their [134] ____ reuse. Contact the shift leader if a step is unclear.",
+    "passageZh": "收件者：試產團隊\n主旨：感測器模組試作\n\n我們將在星期二組裝五十個感測器模組。開工前，請 [131] ____ 你的工作站備有 C 版作業指導書。更新的文件包含更清楚的纜線連接照片。\n\n前五個模組必須在繼續生產 [132] ____ 接受檢查。品管人員會檢查連接器方向並記錄結果。[133] ____\n\n請將不合格零件留在紅色托盤中，不要放回庫存。這能防止這些零件在 [134] ____ 情況下被再次使用。如果不清楚某個步驟，請聯絡當班組長。"
+  }
+}
