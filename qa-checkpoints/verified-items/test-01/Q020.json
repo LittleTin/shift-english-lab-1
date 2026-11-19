@@ -1,0 +1,113 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Only C names Daniel as the replacement presenter; A is a flight date and B the forecast scope. Both recordings match the exact stem and choices, ignoring punctuation, and the zh-TW glosses/rationales are faithful.",
+  "activeQuestion": {
+    "id": "t01-q020",
+    "testId": "test-01",
+    "number": 20,
+    "part": 2,
+    "groupId": "t01-g020",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "person"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "Her flight leaves on Tuesday.",
+        "zh": "她的班機星期二出發。",
+        "whyZh": "Mina 的出發時間沒有指出誰接替她報告。"
+      },
+      {
+        "id": "B",
+        "text": "The report covers the next quarter.",
+        "zh": "這份報告涵蓋下一季。",
+        "whyZh": "報告期間不是報告者身分。"
+      },
+      {
+        "id": "C",
+        "text": "I've asked Daniel to take her place.",
+        "zh": "我已請 Daniel 代替她。",
+        "whyZh": "Who 問代報告的人；take her place 表示代替 Mina，故直接指出 Daniel。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "Who 問代報告的人；take her place 表示代替 Mina，故直接指出 Daniel。",
+    "evidence": "Who will present the sales forecast while Mina is away?",
+    "vocabulary": [
+      {
+        "term": "sales forecast",
+        "zh": "銷售預測",
+        "note": "對未來銷售量或金額的估計。"
+      },
+      {
+        "term": "take someone's place",
+        "zh": "代替某人",
+        "note": "接替對方執行工作。"
+      }
+    ],
+    "revision": 1
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-01-07.mp3",
+      "start": 34.284,
+      "end": 52.044,
+      "assetSha256": "a02338f9af055329cee2dcbcdf9242ea8fb6c2fd4e03f3718b7c7b799bec1121",
+      "speech": "Who will present the sales forecast while Mina is away?\n A. Her flight leaves on Tuesday.\n B. The report covers the next quarter.\n C. I've asked Daniel to take her place."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-07.mp3",
+      "start": 31.908,
+      "end": 51.228,
+      "assetSha256": "2202527c3ad9e36901e3308070bc390b86cbb46496c3656a65cd333053cee5ac",
+      "speech": "Who will present the sales forecast while Mina is away?\n A. Her flight leaves on Tuesday\n B. The report covers the next quarter\n C. I've asked Daniel to take her place"
+    }
+  ],
+  "group": {
+    "id": "t01-g020",
+    "testId": "test-01",
+    "part": 2,
+    "title": "Covering a presentation",
+    "titleZh": "代為簡報",
+    "topic": "business",
+    "passage": "Who will present the sales forecast while Mina is away?\nA. Her flight leaves on Tuesday. B. The report covers the next quarter. C. I've asked Daniel to take her place.",
+    "passageZh": "Mina 不在時，誰會報告銷售預測？\nA. 她的班機星期二出發。\nB. 這份報告涵蓋下一季。\nC. 我已請 Daniel 代替她。",
+    "audioScript": "Who will present the sales forecast while Mina is away?\nA. Her flight leaves on Tuesday. B. The report covers the next quarter. C. I've asked Daniel to take her place.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Who will present the sales forecast while Mina is away?"
+      },
+      {
+        "voice": "male",
+        "text": "A. Her flight leaves on Tuesday. B. The report covers the next quarter. C. I've asked Daniel to take her place."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-07.mp3",
+    "duration": 19.32,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-HK",
+        "role": "female",
+        "modelVoice": "en-HK-YanNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-HK",
+        "role": "male",
+        "modelVoice": "en-HK-SamNeural"
+      }
+    ],
+    "audioStart": 31.908,
+    "audioEnd": 51.228
+  }
+}
