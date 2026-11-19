@@ -1,0 +1,142 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "依訂購時使用的電話號碼查詢；相片證件是另一項身分確認要求。 正式題號、口述題幹與兩模式的對話範圍均核對；英中題意和各選項解析已校對。",
+  "activeQuestion": {
+    "id": "t02-q063",
+    "testId": "test-02",
+    "number": 63,
+    "part": 3,
+    "groupId": "t02-g042",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "pickup"
+    ],
+    "prompt": "How will the man look up the order?",
+    "promptZh": "男方會如何查訂單？",
+    "options": [
+      {
+        "id": "A",
+        "text": "By the phone number used when ordering.",
+        "zh": "用訂購時的電話號碼。",
+        "whyZh": "店員明確提出此查詢方式。"
+      },
+      {
+        "id": "B",
+        "text": "By the color of the lamp.",
+        "zh": "依桌燈顏色。",
+        "whyZh": "對話沒有提桌燈顏色可用來查單。"
+      },
+      {
+        "id": "C",
+        "text": "By yesterday's weather.",
+        "zh": "依昨天的天氣。",
+        "whyZh": "與訂單查詢無關。"
+      },
+      {
+        "id": "D",
+        "text": "By a notebook page number.",
+        "zh": "依筆記本頁碼。",
+        "whyZh": "筆記本是商品，不是查單依據。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "店員明確提出此查詢方式。",
+    "evidence": "search by the phone number used for the order",
+    "vocabulary": [
+      {
+        "term": "pickup",
+        "zh": "取貨",
+        "note": "ready for pickup 表示商品已可前往領取。"
+      },
+      {
+        "term": "notification",
+        "zh": "通知",
+        "note": "本題指商品到店後另行發送的訊息。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g042",
+    "testId": "test-02",
+    "part": 3,
+    "title": "Collecting an online purchase",
+    "titleZh": "領取網購商品",
+    "topic": "daily",
+    "passage": "Woman: I received a message saying my order is ready for pickup, but I cannot find the confirmation number.\nMan: I can search by the phone number used for the order. Could you also show a photo ID?\nWoman: Sure. I ordered a desk lamp and a notebook. Is everything here?\nMan: The lamp is here. The notebook will arrive tomorrow, and we will send a separate notification.",
+    "passageZh": "女：我收到訂單可以取貨的訊息，但找不到確認編號。\n男：我可以用訂購時的電話號碼搜尋。也請出示附照片的證件，可以嗎？\n女：可以。我訂了桌燈和筆記本。東西都到了嗎？\n男：桌燈到了。筆記本明天會到，我們會另外發通知。",
+    "audioScript": "I received a message saying my order is ready for pickup, but I cannot find the confirmation number.\nI can search by the phone number used for the order. Could you also show a photo ID?\nSure. I ordered a desk lamp and a notebook. Is everything here?\nThe lamp is here. The notebook will arrive tomorrow, and we will send a separate notification.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "I received a message saying my order is ready for pickup, but I cannot find the confirmation number."
+      },
+      {
+        "voice": "male",
+        "text": "I can search by the phone number used for the order. Could you also show a photo ID?"
+      },
+      {
+        "voice": "female",
+        "text": "Sure. I ordered a desk lamp and a notebook. Is everything here?"
+      },
+      {
+        "voice": "male",
+        "text": "The lamp is here. The notebook will arrive tomorrow, and we will send a separate notification."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-19.mp3",
+    "duration": 30.12,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-IN",
+        "role": "female",
+        "modelVoice": "en-IN-NeerjaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-IN",
+        "role": "male",
+        "modelVoice": "en-IN-PrabhatNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 30.62
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-02-cues-03.mp3",
+      "mode": "cue",
+      "start": 46.00937,
+      "end": 50.02271,
+      "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+      "speech": "Questions 62 through 64. Listen to the conversation."
+    },
+    {
+      "path": "audio/azure-v1/test-02-19.mp3",
+      "mode": "passage",
+      "start": 0.5,
+      "end": 30.62,
+      "assetSha256": "1ae03408daad01e297cec6cc556e957a84d9b35e21944fec0c0b78ec2ddd7ea0",
+      "speech": "I received a message saying my order is ready for pick-up, but I cannot find the confirmation number. I can search by the phone number used for the order. Could you also show a photo ID? Sure. I ordered a desk lamp and a notebook. Is everything here? The lamp is here. The notebook will arrive tomorrow and we will send a separate notification."
+    },
+    {
+      "path": "audio/formal/test-02-cues-03.mp3",
+      "mode": "question",
+      "start": 54.4705,
+      "end": 57.37225,
+      "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+      "speech": "Number 63. How will the man look up the order?"
+    },
+    {
+      "path": "audio/azure-v1/test-02-19.mp3",
+      "mode": "practice",
+      "start": 0.5,
+      "end": 30.62,
+      "assetSha256": "1ae03408daad01e297cec6cc556e957a84d9b35e21944fec0c0b78ec2ddd7ea0",
+      "speech": "I received a message saying my order is ready for pick-up, but I cannot find the confirmation number. I can search by the phone number used for the order. Could you also show a photo ID? Sure. I ordered a desk lamp and a notebook. Is everything here? The lamp is here. The notebook will arrive tomorrow and we will send a separate notification."
+    }
+  ]
+}

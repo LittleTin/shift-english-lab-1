@@ -1,0 +1,142 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "只有一位客人不能吃花生；不是米飯、水果或冷食限制。 正式題號、口述題幹與兩模式的對話範圍均核對；英中題意和各選項解析已校對。",
+  "activeQuestion": {
+    "id": "t02-q060",
+    "testId": "test-02",
+    "number": 60,
+    "part": 3,
+    "groupId": "t02-g041",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "set menu"
+    ],
+    "prompt": "What food restriction is mentioned?",
+    "promptZh": "提到哪項飲食限制？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Everyone must avoid rice.",
+        "zh": "所有人都不能吃米飯。",
+        "whyZh": "對話沒有米飯限制。"
+      },
+      {
+        "id": "B",
+        "text": "Two guests cannot eat fruit.",
+        "zh": "兩位客人不能吃水果。",
+        "whyZh": "沒有水果限制或兩位受限的資訊。"
+      },
+      {
+        "id": "C",
+        "text": "The group wants only cold food.",
+        "zh": "這群人只想吃冷食。",
+        "whyZh": "沒有冷食要求。"
+      },
+      {
+        "id": "D",
+        "text": "One guest cannot eat peanuts.",
+        "zh": "一位客人不能吃花生。",
+        "whyZh": "男方說有一位客人不能吃花生，並要求把這項限制告知廚房。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "男方說有一位客人不能吃花生，並要求把這項限制告知廚房。",
+    "evidence": "One guest cannot eat peanuts",
+    "vocabulary": [
+      {
+        "term": "set menu",
+        "zh": "套餐",
+        "note": "由餐廳組合的一套菜色。"
+      },
+      {
+        "term": "under a name",
+        "zh": "登記在某人名下",
+        "note": "訂位時常以姓名查詢紀錄。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g041",
+    "testId": "test-02",
+    "part": 3,
+    "title": "Changing a lunch reservation",
+    "titleZh": "調整午餐訂位",
+    "topic": "daily",
+    "passage": "Man: I booked a table for six at noon, but two colleagues cannot come. Could you change it to four people?\nWoman: Certainly. Would you still like the set menu, or would you prefer to order individually?\nMan: We will keep the set menu. One guest cannot eat peanuts, so please let the kitchen know.\nWoman: I will note that. Your revised reservation is for four at noon, under Mr. Lin.",
+    "passageZh": "男：我訂了中午六人桌，但兩位同事不能來。可以改成四位嗎？\n女：當然。你們還要套餐，還是各自點餐？\n男：我們維持套餐。有一位客人不能吃花生，請通知廚房。\n女：我會註記。修改後是 Lin 先生名下，中午四位。",
+    "audioScript": "I booked a table for six at noon, but two colleagues cannot come. Could you change it to four people?\nCertainly. Would you still like the set menu, or would you prefer to order individually?\nWe will keep the set menu. One guest cannot eat peanuts, so please let the kitchen know.\nI will note that. Your revised reservation is for four at noon, under Mr. Lin.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "I booked a table for six at noon, but two colleagues cannot come. Could you change it to four people?"
+      },
+      {
+        "voice": "female",
+        "text": "Certainly. Would you still like the set menu, or would you prefer to order individually?"
+      },
+      {
+        "voice": "male",
+        "text": "We will keep the set menu. One guest cannot eat peanuts, so please let the kitchen know."
+      },
+      {
+        "voice": "female",
+        "text": "I will note that. Your revised reservation is for four at noon, under Mr. Lin."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-18.mp3",
+    "duration": 26.472,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-AU",
+        "role": "male",
+        "modelVoice": "en-AU-WilliamNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-AU",
+        "role": "female",
+        "modelVoice": "en-AU-NatashaNeural"
+      }
+    ],
+    "audioStart": 30.064,
+    "audioEnd": 56.536
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-02-cues-03.mp3",
+      "mode": "cue",
+      "start": 32.73858,
+      "end": 36.75183,
+      "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+      "speech": "Questions 59 through 61. Listen to the conversation."
+    },
+    {
+      "path": "audio/azure-v1/test-02-18.mp3",
+      "mode": "passage",
+      "start": 30.064,
+      "end": 56.536,
+      "assetSha256": "97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806",
+      "speech": "I booked a table for six at noon, but two colleagues cannot come. Could you change it to four people? Certainly. Would you still like the set menu, or would you prefer to order individually? We will keep the set menu. One guest cannot eat peanuts, so please let the kitchen know. I will note that. Your revised reservation is for four at noon, under Mr. Lin. [BLANK_AUDIO]"
+    },
+    {
+      "path": "audio/formal/test-02-cues-03.mp3",
+      "mode": "question",
+      "start": 40.32113,
+      "end": 43.07754,
+      "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+      "speech": "60. What food restriction is mentioned"
+    },
+    {
+      "path": "audio/azure-v1/test-02-18.mp3",
+      "mode": "practice",
+      "start": 30.064,
+      "end": 56.536,
+      "assetSha256": "97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806",
+      "speech": "I booked a table for six at noon, but two colleagues cannot come. Could you change it to four people? Certainly. Would you still like the set menu, or would you prefer to order individually? We will keep the set menu. One guest cannot eat peanuts, so please let the kitchen know. I will note that. Your revised reservation is for four at noon, under Mr. Lin. [BLANK_AUDIO]"
+    }
+  ]
+}

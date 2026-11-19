@@ -1,0 +1,146 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "保留工廠導覽；簡報改先寄投影片，問答移至午餐後。 正式題號、口述題幹與兩模式的對話範圍均核對；英中題意和各選項解析已校對。",
+  "activeQuestion": {
+    "id": "t02-q066",
+    "testId": "test-02",
+    "number": 66,
+    "part": 3,
+    "groupId": "t02-g043",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "in advance"
+    ],
+    "prompt": "What will the speakers keep in the schedule?",
+    "promptZh": "兩人會保留哪項行程？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The original morning presentation.",
+        "zh": "原本的上午簡報。",
+        "whyZh": "簡報改成提前寄出投影片。"
+      },
+      {
+        "id": "B",
+        "text": "An eight o'clock airport pickup.",
+        "zh": "八點機場接送。",
+        "whyZh": "飛機改十點抵達，沒有保留八點接送。"
+      },
+      {
+        "id": "C",
+        "text": "The factory tour.",
+        "zh": "工廠導覽。",
+        "whyZh": "女方提出保留客戶特別要求的導覽。"
+      },
+      {
+        "id": "D",
+        "text": "A question session before lunch.",
+        "zh": "午餐前的問答。",
+        "whyZh": "問答明確改到午餐後。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "女方提出保留客戶特別要求的導覽。",
+    "evidence": "Let us keep the tour",
+    "vocabulary": [
+      {
+        "term": "in advance",
+        "zh": "事先；提前",
+        "note": "send slides in advance 指在活動前先寄出簡報。"
+      },
+      {
+        "term": "assembly line",
+        "zh": "組裝線",
+        "note": "以工作站或步驟安排產品組裝的生產線。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g043",
+    "testId": "test-02",
+    "part": 3,
+    "title": "A client visit agenda",
+    "titleZh": "客戶來訪議程",
+    "topic": "business",
+    "passage": "Man: The client's flight now arrives at ten instead of eight. We will not have time for both the factory tour and the morning presentation.\nWoman: The client asked specifically to see the assembly line. Let us keep the tour and send the presentation slides in advance.\nMan: All right. I will move the question session to after lunch. Can you update the visitor badges?\nWoman: Yes. Please send me the final list of names before three today.",
+    "passageZh": "男：客戶班機現在改為十點抵達，而不是八點。我們來不及同時安排工廠導覽和上午簡報。\n女：客戶特別要求看組裝線。我們保留導覽，並提前寄出簡報。\n男：好。我會把問答時段改到午餐後。你可以更新訪客證嗎？\n女：可以。請在今天三點前寄給我最終名單。",
+    "audioScript": "The client's flight now arrives at ten instead of eight. We will not have time for both the factory tour and the morning presentation.\nThe client asked specifically to see the assembly line. Let us keep the tour and send the presentation slides in advance.\nAll right. I will move the question session to after lunch. Can you update the visitor badges?\nYes. Please send me the final list of names before three today.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "The client's flight now arrives at ten instead of eight. We will not have time for both the factory tour and the morning presentation."
+      },
+      {
+        "voice": "female",
+        "text": "The client asked specifically to see the assembly line. Let us keep the tour and send the presentation slides in advance."
+      },
+      {
+        "voice": "male",
+        "text": "All right. I will move the question session to after lunch. Can you update the visitor badges?"
+      },
+      {
+        "voice": "female",
+        "text": "Yes. Please send me the final list of names before three today."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-20.mp3",
+    "duration": 32.736,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-HK",
+        "role": "male",
+        "modelVoice": "en-HK-SamNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-HK",
+        "role": "female",
+        "modelVoice": "en-HK-YanNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 33.236
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-02-cues-03.mp3",
+      "mode": "cue",
+      "start": 60.36688,
+      "end": 64.48779,
+      "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+      "speech": "Questions 65 through 67, listen to the conversation."
+    },
+    {
+      "path": "audio/azure-v1/test-02-20.mp3",
+      "mode": "passage",
+      "start": 0.5,
+      "end": 33.236,
+      "assetSha256": "656eeba61403cf941bfb69bccdb51d7b5848a1f0dc94d77c2daa24c1cabada1c",
+      "speech": "The clients flight now arrives at 10 instead of 8. We will not have time for both the factory tour and the morning presentation. The client asks specifically to see the assembly line. Let us keep the tour and send the presentation slides in advance. All right. I will move the question session to after lunch. Can you update the visitor badges? Yes. Please send me the final list of names before 3 today."
+    },
+    {
+      "path": "audio/formal/test-02-cues-04.mp3",
+      "mode": "question",
+      "start": 0.25,
+      "end": 3.493,
+      "assetSha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+      "speech": "Number 66. What will the speakers keep in the schedule?"
+    },
+    {
+      "path": "audio/azure-v1/test-02-20.mp3",
+      "mode": "practice",
+      "start": 0.5,
+      "end": 33.236,
+      "assetSha256": "656eeba61403cf941bfb69bccdb51d7b5848a1f0dc94d77c2daa24c1cabada1c",
+      "speech": "The clients flight now arrives at 10 instead of 8. We will not have time for both the factory tour and the morning presentation. The client asks specifically to see the assembly line. Let us keep the tour and send the presentation slides in advance. All right. I will move the question session to after lunch. Can you update the visitor badges? Yes. Please send me the final list of names before 3 today."
+    }
+  ],
+  "audioCorroboration": {
+    "positive-isolated-1.13-rate": " The client asked specifically to see the assembly line. Let us keep the tour and send the presentation slides to the center.",
+    "note": "Actual original audible clause independently decoded in isolated pitch-preserving retry; earlier ASR tense interpretation retained above."
+  }
+}
