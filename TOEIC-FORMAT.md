@@ -14,7 +14,7 @@ SHIFT uses original practice questions, not ETS questions or recordings. It foll
 
 ## Taking a test
 
-- Formal listening plays each group once, in sequence, without replay, pausing, scrubbing, or speed changes. Parts 1–2 show answer letters rather than the spoken choices. Parts 3–4 show all three questions together and play the question stems. Any required graphic appears with the group.
+- Formal listening plays each group once, in sequence, without replay, scrubbing, or speed changes. Tab switching pauses the listening timer and resumes playback at the same position on return when the browser permits it. If automatic playback is blocked, select Resume Listening. Parts 1–2 show answer letters rather than the spoken choices. Parts 3–4 show all three questions together and play the question stems. Any required graphic appears with the group.
 - New formal sessions begin with a listening overview, Part 1 directions, and an unscored original photograph example. Each new Part begins with spoken directions; a closing cue marks the transition to Reading. The opening, section directions, numbers and question stems use clear American English narration. Parts 1–2 use American English; Parts 3–4 deliberately retain all 14 English accents, more than the four accents used by TOEIC. The 45-minute timeline is SHIFT's own arrangement, not the precise timetable of an ETS recording.
 - Reading allows navigation between groups but cannot return to Listening. Scores and explanations appear only after submission, for correct, incorrect, and unanswered items.
 - Separate practice permits replay, pause, and speed changes. Choosing a specific accent selects only groups whose speakers all match that locale. It does not change the mixed mock tests.
