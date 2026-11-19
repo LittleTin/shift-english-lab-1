@@ -1,0 +1,509 @@
+{
+  "status": "offline-verified-structurally-validated-not-published",
+  "inputPackSha256": "e2f16364b5caf92accc78aef024ca4ea96e95e161ac7b1dd2af9cc00e5600f84",
+  "authPlanSha256": "66026d38dea46536dbb1517b8367a2b153f1762502b5e1ec590e5d2a3f53a731",
+  "draftSha256": "beb2ce90e84c5301e90a34edcbc4da385feecb4173219248b7ddc4748466179c",
+  "outputPackSha256": "99aa14be06345ba96632a03ea5fb278ba8220f9999d8114fa9ab974fec38a8af",
+  "oldGroupId": "t02-g040",
+  "oldGroupSha256": "86da444c90f76ae6576920b423b8f1af12ec1c7ca91cf3bff58c2fa3c1110996",
+  "oldQuestionsSha256": {
+    "t02-q056": "c2f5566deb4172dc63405f4a60047ffa9e90ed9ca0eefc9ac60e0aba6bd3a8e2",
+    "t02-q057": "95b2786fffc51a7b4a77baac12762c37274a128f3f58412ad30ee7e3a93e12b7",
+    "t02-q058": "64cf64c02c1e5f750ff52f8d8e317cf98ed4793042f99c3daacd7e3eec302788"
+  },
+  "newGroup": {
+    "id": "t02-g040-r2",
+    "testId": "test-02",
+    "part": 3,
+    "title": "A room change around a meeting",
+    "titleZh": "配合會議安排換房",
+    "topic": "daily",
+    "passage": "Woman: The street noise kept me awake. My online meeting is at two this afternoon. Then I’ll be out until five.\nMan: A quieter room will be ready at three. Our workroom is open from one to three.\nWoman: I’ll move. I’ll leave both bags here, but I need the red one when I return.\nMan: Tag each bag you want moved. Your new key is at reception until five, then at the night desk.",
+    "passageZh": "女：街上的噪音害我睡不著。今天下午兩點有線上會議，之後我會出門，到五點才回來。\n男：比較安靜的房間三點會準備好。我們的工作室一點到三點開放。\n女：那我換房。兩件行李都先放這裡，不過我回來時需要紅色那件。\n男：需要搬到新房間的行李，請各掛一張標籤。新房卡五點前在接待櫃檯，之後到夜間櫃檯領。",
+    "audioScript": "The street noise kept me awake. My online meeting is at two this afternoon. Then I’ll be out until five.\nA quieter room will be ready at three. Our workroom is open from one to three.\nI’ll move. I’ll leave both bags here, but I need the red one when I return.\nTag each bag you want moved. Your new key is at reception until five, then at the night desk.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "The street noise kept me awake. My online meeting is at two this afternoon. Then I’ll be out until five."
+      },
+      {
+        "voice": "male",
+        "text": "A quieter room will be ready at three. Our workroom is open from one to three."
+      },
+      {
+        "voice": "female",
+        "text": "I’ll move. I’ll leave both bags here, but I need the red one when I return."
+      },
+      {
+        "voice": "male",
+        "text": "Tag each bag you want moved. Your new key is at reception until five, then at the night desk."
+      }
+    ],
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-CA",
+        "role": "female",
+        "modelVoice": "en-CA-ClaraNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-CA",
+        "role": "male",
+        "modelVoice": "en-CA-LiamNeural"
+      }
+    ],
+    "audio": "audio/exams/test-02/groups/t02-g040-r2/passage.wav",
+    "audioStart": 0,
+    "audioEnd": 27.5625,
+    "duration": 27.5625
+  },
+  "newQuestions": [
+    {
+      "id": "t02-q056-r2",
+      "testId": "test-02",
+      "number": 56,
+      "part": 3,
+      "groupId": "t02-g040-r2",
+      "topic": "daily",
+      "difficulty": "intermediate",
+      "tags": [
+        "daily",
+        "listening-inference"
+      ],
+      "prompt": "Where can she take her call before moving rooms?",
+      "promptZh": "她換房前可以在哪裡開線上會議？",
+      "options": [
+        {
+          "id": "A",
+          "text": "In the quieter room.",
+          "zh": "在比較安靜的新房間。",
+          "whyZh": "新房間三點才準備好，來不及用來開兩點的會議。"
+        },
+        {
+          "id": "B",
+          "text": "In the hotel workroom.",
+          "zh": "在飯店的工作室。",
+          "whyZh": "她兩點開線上會議，工作室一點到三點開放；新房間那時還沒準備好。"
+        },
+        {
+          "id": "C",
+          "text": "At the night desk.",
+          "zh": "在夜間櫃檯。",
+          "whyZh": "夜間櫃檯是五點後領房卡的地方，不是工作室。"
+        },
+        {
+          "id": "D",
+          "text": "Outside the hotel after five.",
+          "zh": "五點後在飯店外。",
+          "whyZh": "她兩點就要開會，而且原定五點會回到飯店。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "她兩點開線上會議，工作室一點到三點開放；新房間那時還沒準備好。",
+      "evidence": "The street noise kept me awake. My online meeting is at two this afternoon. Then I’ll be out until five. | A quieter room will be ready at three. Our workroom is open from one to three.",
+      "vocabulary": [
+        {
+          "term": "workroom",
+          "zh": "工作室",
+          "note": "這裡指飯店提供給住客使用的工作空間。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t02-q057-r2",
+      "testId": "test-02",
+      "number": 57,
+      "part": 3,
+      "groupId": "t02-g040-r2",
+      "topic": "daily",
+      "difficulty": "intermediate",
+      "tags": [
+        "daily",
+        "listening-inference"
+      ],
+      "prompt": "She tags only her blue bag. What will staff move?",
+      "promptZh": "她只在藍色行李上掛標籤。飯店人員會搬哪一件？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Both bags, because she is changing rooms.",
+          "zh": "兩件都搬，因為她要換房。",
+          "whyZh": "換房不代表兩件都要搬，只有掛標籤的行李會被搬。"
+        },
+        {
+          "id": "B",
+          "text": "Only the red bag, because she will need it later.",
+          "zh": "只搬紅色那件，因為她稍後需要。",
+          "whyZh": "她回來時需要紅色行李，但未掛搬運標籤。"
+        },
+        {
+          "id": "C",
+          "text": "Only the blue bag, leaving the red one where she left it.",
+          "zh": "只搬藍色那件，把紅色那件留在原處。",
+          "whyZh": "她說兩件都放在櫃檯；依照每件要搬的行李都須掛標籤的規則，只有藍色那件會搬。"
+        },
+        {
+          "id": "D",
+          "text": "Neither bag, unless she collects the key first.",
+          "zh": "兩件都不搬，除非她先領房卡。",
+          "whyZh": "是否搬行李取決於行李標籤，沒有要求先領房卡。"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "她說兩件都放在櫃檯；依照每件要搬的行李都須掛標籤的規則，只有藍色那件會搬。",
+      "evidence": "I’ll move. I’ll leave both bags here, but I need the red one when I return. | Tag each bag you want moved. Your new key is at reception until five, then at the night desk.",
+      "vocabulary": [
+        {
+          "term": "tag",
+          "zh": "掛上標籤",
+          "note": "動詞，這裡是用標籤指定哪些行李要搬。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t02-q058-r2",
+      "testId": "test-02",
+      "number": 58,
+      "part": 3,
+      "groupId": "t02-g040-r2",
+      "topic": "daily",
+      "difficulty": "intermediate",
+      "tags": [
+        "daily",
+        "listening-inference"
+      ],
+      "prompt": "She returns half an hour late. Where should she get her new key?",
+      "promptZh": "如果她比原定晚半小時回來，應去哪裡拿新房卡？",
+      "options": [
+        {
+          "id": "A",
+          "text": "At the workroom door.",
+          "zh": "在工作室門口。",
+          "whyZh": "工作室是開會的替代地點，不是領房卡的櫃檯。"
+        },
+        {
+          "id": "B",
+          "text": "At reception.",
+          "zh": "在接待櫃檯。",
+          "whyZh": "接待櫃檯只在五點前提供新房卡。"
+        },
+        {
+          "id": "C",
+          "text": "In her original room.",
+          "zh": "在原來的房間。",
+          "whyZh": "飯店說房卡在櫃檯，不在原房。"
+        },
+        {
+          "id": "D",
+          "text": "At the night desk.",
+          "zh": "在夜間櫃檯。",
+          "whyZh": "原定五點回來，晚半小時就是五點半；五點後在夜間櫃檯領取。"
+        }
+      ],
+      "answer": "D",
+      "explanationZh": "原定五點回來，晚半小時就是五點半；五點後在夜間櫃檯領取。",
+      "evidence": "The street noise kept me awake. My online meeting is at two this afternoon. Then I’ll be out until five. | Tag each bag you want moved. Your new key is at reception until five, then at the night desk.",
+      "vocabulary": [
+        {
+          "term": "reception",
+          "zh": "接待櫃檯",
+          "note": "飯店辦理住客接待與領房卡的櫃檯。"
+        }
+      ],
+      "revision": 2
+    }
+  ],
+  "frameIndexes": [
+    162,
+    170
+  ],
+  "oldFramesSha256": "563ba0861c7b5e65879bf7080366f4af32db4f44d5d5618998dd7ae29b52a4fc",
+  "newFrames": [
+    {
+      "src": "audio/formal/test-02-cues-03.mp3",
+      "start": 18.54113,
+      "end": 22.44529,
+      "duration": 3.90417,
+      "kind": "audio",
+      "role": "cue",
+      "part": 3,
+      "groupId": "t02-g040-r2",
+      "at": 1495.66157
+    },
+    {
+      "src": "audio/exams/test-02/groups/t02-g040-r2/passage.wav",
+      "start": 0,
+      "end": 27.5625,
+      "duration": 27.5625,
+      "kind": "audio",
+      "role": "passage",
+      "part": 3,
+      "groupId": "t02-g040-r2",
+      "at": 1499.56574,
+      "speakers": [
+        {
+          "speaker": "female",
+          "locale": "en-CA",
+          "role": "female",
+          "modelVoice": "en-CA-ClaraNeural"
+        },
+        {
+          "speaker": "male",
+          "locale": "en-CA",
+          "role": "male",
+          "modelVoice": "en-CA-LiamNeural"
+        }
+      ]
+    },
+    {
+      "src": "audio/exams/test-02/questions/Q056/formal-stem-r2.wav",
+      "start": 0,
+      "end": 5.425,
+      "duration": 5.425,
+      "kind": "audio",
+      "role": "question",
+      "part": 3,
+      "groupId": "t02-g040-r2",
+      "questionId": "t02-q056-r2",
+      "at": 1527.12824
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 8.54904,
+      "part": 3,
+      "groupId": "t02-g040-r2",
+      "questionId": "t02-q056-r2",
+      "at": 1532.55324
+    },
+    {
+      "src": "audio/exams/test-02/questions/Q057/formal-stem-r2.wav",
+      "start": 0,
+      "end": 6.6875,
+      "duration": 6.6875,
+      "kind": "audio",
+      "role": "question",
+      "part": 3,
+      "groupId": "t02-g040-r2",
+      "questionId": "t02-q057-r2",
+      "at": 1541.10228
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 8.54904,
+      "part": 3,
+      "groupId": "t02-g040-r2",
+      "questionId": "t02-q057-r2",
+      "at": 1547.78978
+    },
+    {
+      "src": "audio/exams/test-02/questions/Q058/formal-stem-r2.wav",
+      "start": 0,
+      "end": 6.8875,
+      "duration": 6.8875,
+      "kind": "audio",
+      "role": "question",
+      "part": 3,
+      "groupId": "t02-g040-r2",
+      "questionId": "t02-q058-r2",
+      "at": 1556.33882
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 8.54904,
+      "part": 3,
+      "groupId": "t02-g040-r2",
+      "questionId": "t02-q058-r2",
+      "at": 1563.22632
+    }
+  ],
+  "newAudio": {
+    "audio/exams/test-02/groups/t02-g040-r2/passage.wav": {
+      "name": "test02-g040-shared-medium-candidate",
+      "inputCharacters": 350,
+      "samples": 661500,
+      "seconds": 27.5625,
+      "bytes": 1323044,
+      "sha256": "cb8e46de56194a94132bec77c1120077cba0581a0b268722b16a81e75c9308ca",
+      "status": "rendered-candidate-not-validated",
+      "exactInputs": [
+        {
+          "voice": "en-CA-ClaraNeural",
+          "locale": "en-CA",
+          "text": "The street noise kept me awake. My online meeting is at two this afternoon. Then I’ll be out until five.",
+          "afterMs": 150
+        },
+        {
+          "voice": "en-CA-LiamNeural",
+          "locale": "en-CA",
+          "text": "A quieter room will be ready at three. Our workroom is open from one to three.",
+          "afterMs": 150
+        },
+        {
+          "voice": "en-CA-ClaraNeural",
+          "locale": "en-CA",
+          "text": "I’ll move. I’ll leave both bags here, but I need the red one when I return.",
+          "afterMs": 150
+        },
+        {
+          "voice": "en-CA-LiamNeural",
+          "locale": "en-CA",
+          "text": "Tag each bag you want moved. Your new key is at reception until five, then at the night desk."
+        }
+      ]
+    },
+    "audio/exams/test-02/questions/Q056/formal-stem-r2.wav": {
+      "name": "test02-q056-stem-medium-candidate",
+      "inputCharacters": 59,
+      "samples": 130200,
+      "seconds": 5.425,
+      "bytes": 260444,
+      "sha256": "cdcbc616edd4147b6a2cdea1766ecbee3ffd6c6744c1ab67e4198820f7f0b5f4",
+      "status": "rendered-candidate-not-validated",
+      "exactInputs": [
+        {
+          "voice": "en-US-JennyNeural",
+          "locale": "en-US",
+          "text": "Number 56. Where can she take her call before moving rooms?"
+        }
+      ]
+    },
+    "audio/exams/test-02/questions/Q057/formal-stem-r2.wav": {
+      "name": "test02-q057-stem-medium-candidate",
+      "inputCharacters": 60,
+      "samples": 160500,
+      "seconds": 6.6875,
+      "bytes": 321044,
+      "sha256": "c22e6817423b7a9c5c96d8dcc1b7a743db902b2709b3cc4dcdc9d68dee59543e",
+      "status": "rendered-candidate-not-validated",
+      "exactInputs": [
+        {
+          "voice": "en-US-JennyNeural",
+          "locale": "en-US",
+          "text": "Number 57. She tags only her blue bag. What will staff move?"
+        }
+      ]
+    },
+    "audio/exams/test-02/questions/Q058/formal-stem-r2.wav": {
+      "name": "test02-q058-stem-medium-candidate",
+      "inputCharacters": 75,
+      "samples": 165300,
+      "seconds": 6.8875,
+      "bytes": 330644,
+      "sha256": "39e7ef8d8a078c26a1b6e2ae69e149e92fdd62407d2b46bcd5f19c4c1d26fbee",
+      "status": "rendered-candidate-not-validated",
+      "exactInputs": [
+        {
+          "voice": "en-US-JennyNeural",
+          "locale": "en-US",
+          "text": "Number 58. She returns half an hour late. Where should she get her new key?"
+        }
+      ]
+    }
+  },
+  "oldAudio": [
+    {
+      "src": "audio/formal/test-02-cues-03.mp3",
+      "start": 18.54113,
+      "end": 22.44529,
+      "duration": 3.90417,
+      "kind": "audio",
+      "role": "cue",
+      "part": 3,
+      "groupId": "t02-g040",
+      "at": 1495.66157,
+      "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d"
+    },
+    {
+      "src": "audio/azure-v1/test-02-18.mp3",
+      "start": 0.5,
+      "end": 29.564,
+      "duration": 29.064,
+      "kind": "audio",
+      "role": "passage",
+      "part": 3,
+      "groupId": "t02-g040",
+      "at": 1499.56574,
+      "speakers": [
+        {
+          "speaker": "female",
+          "locale": "en-CA",
+          "role": "female",
+          "modelVoice": "en-CA-ClaraNeural"
+        },
+        {
+          "speaker": "male",
+          "locale": "en-CA",
+          "role": "male",
+          "modelVoice": "en-CA-LiamNeural"
+        }
+      ],
+      "assetSha256": "97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806"
+    },
+    {
+      "src": "audio/formal/test-02-cues-03.mp3",
+      "start": 22.69529,
+      "end": 25.7735,
+      "duration": 3.07821,
+      "kind": "audio",
+      "role": "question",
+      "part": 3,
+      "groupId": "t02-g040",
+      "questionId": "t02-q056",
+      "at": 1528.62974,
+      "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d"
+    },
+    {
+      "src": "audio/formal/test-02-cues-03.mp3",
+      "start": 26.0235,
+      "end": 28.86075,
+      "duration": 2.83725,
+      "kind": "audio",
+      "role": "question",
+      "part": 3,
+      "groupId": "t02-g040",
+      "questionId": "t02-q057",
+      "at": 1542.99206,
+      "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d"
+    },
+    {
+      "src": "audio/formal/test-02-cues-03.mp3",
+      "start": 29.11075,
+      "end": 32.48858,
+      "duration": 3.37783,
+      "kind": "audio",
+      "role": "question",
+      "part": 3,
+      "groupId": "t02-g040",
+      "questionId": "t02-q058",
+      "at": 1557.11342,
+      "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d"
+    }
+  ],
+  "windows": [
+    8.54904,
+    8.54904,
+    8.54904
+  ],
+  "timingConcern": null,
+  "donorWindows": {},
+  "borrowedSeconds": 0.0,
+  "sourceBoundary": [
+    1495.66157,
+    1571.77536
+  ],
+  "offlineSpeechEvidenceSha256": {
+    "hashes.txt": "b7cb5aab6a3e7937b3183447f49c05abcf74ca9b7aa81e4a38e99808a6e22858",
+    "vosk-test02-g040-shared-medium-candidate.log": "86ecca27d854d0542f0e6ee7dce37cdf96e1a1c85c66682e6714fb33c0509d3c",
+    "test02-g040-shared-medium-candidate.wav.txt": "454cab103c96d7ab7b10bb1443c409cb4327b6c3fb52de7497356b718c336c4a",
+    "test02-q056-stem-medium-candidate.wav.txt": "eb460928860e1f578b25f3cd778e954619dddbb72bb42292db4920c810b9340b",
+    "test02-q057-stem-medium-candidate.wav.txt": "a57a8d2ea45e60121118ae7cef769939cf1ab913c30b3fb2cac07a827779a454",
+    "test02-q058-stem-medium-candidate.wav.txt": "f41b60a322d8f9620e4b40314787528f2f7a887a7a4c0583593f0b5ec784aa0e",
+    "independentBlindTextReview": "d14102cd4751d472cf8726a09b272a430868bf47b5d620c524e9bb0fb19c6fa7"
+  }
+}

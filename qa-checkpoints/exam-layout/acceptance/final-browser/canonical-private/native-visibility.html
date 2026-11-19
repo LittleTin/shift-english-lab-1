@@ -1,0 +1,35 @@
+<!doctype html><meta charset="utf-8"><title>SHIFT refresh checkpoint trace</title>
+<button id="capture">Capture current, then reload app frame</button>
+<button id="check">Read after reload or resume</button>
+<pre id="visibilityLog"></pre><pre id="before"></pre><pre id="after"></pre><iframe title="App under trace" src="../index.html" style="width:960px;height:850px;border:0"></iframe>
+<script>
+const frame=document.querySelector('iframe');
+function durable(){return new Promise((resolve,reject)=>{
+ const req=indexedDB.open('shift-english-lab-v1',1);
+ req.onerror=()=>reject(req.error);req.onsuccess=()=>{const db=req.result;
+ const read=db.transaction('kv','readonly').objectStore('kv').get('state');
+ read.onsuccess=()=>{resolve(read.result);db.close()};read.onerror=()=>reject(read.error);
+ };});}
+async function sample(){
+ const a=frame.contentDocument.getElementById('audio-player');
+ const native=a&&{time:a.currentTime,src:a.getAttribute('src'),paused:a.paused,visible:frame.contentDocument.visibilityState};
+ const s=(await durable()).active;
+ return {native,index:s?.index,points:s?.audioUsed,journal:frame.contentWindow.sessionStorage.getItem('shift-formal-listening-refresh-v1')};
+}
+capture.onclick=async()=>{before.textContent=JSON.stringify(await sample());frame.contentWindow.location.reload()};
+const events=[];
+function log(type,x){
+ if(x.points)x.points=Object.entries(x.points).slice(-2);
+ events.push({name:type,timer:frame.contentDocument.querySelector('#timer')?.textContent,x});
+ visibilityLog.textContent=JSON.stringify(events);
+}
+document.addEventListener('visibilitychange',()=>{
+ const v=document.visibilityState;
+ const a=frame.contentDocument.getElementById('audio-player');
+ events.push({name:'top:'+v,child:frame.contentDocument.visibilityState,paused:a?.paused,src:a?.getAttribute('src'),timer:frame.contentDocument.querySelector('#timer')?.textContent});
+ visibilityLog.textContent=JSON.stringify(events);
+ sample().then(x=>log(v,x));
+ if(v==='hidden')setTimeout(()=>sample().then(x=>log('hidden+1.2sec',x)),1200);
+});
+check.onclick=async()=>after.textContent=JSON.stringify(await sample());
+</script>

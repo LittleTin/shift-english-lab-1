@@ -1,8 +1,73 @@
 {
   "status": "verified-item-not-published",
   "scope": "listening",
-  "checks": "交通噪音讓她無法入睡；她本來就面對街道，未提沒床，會議仍照常。 正式題號、口述題幹與兩模式的對話範圍均核對；英中題意和各選項解析已校對。",
+  "checks": {
+    "content": "Independent blind English solve and Traditional Chinese alignment; Compare the call time with room readiness and the workroom hours.",
+    "audio": "Offline independent speech clearance for new exact authoritative passage and numbered stem; waveform and role/locale receipts bound to mode, SHA and range. Original cue remains byte/range identical to the independently verified record.",
+    "association": "Work-tree historical records remain exact in reserve sidecar; verified new IDs; formally unchanged outside bounded timing scope; no browser, publication or human listening claims.",
+    "offlineSpeechEvidenceSha256": {
+      "hashes.txt": "b7cb5aab6a3e7937b3183447f49c05abcf74ca9b7aa81e4a38e99808a6e22858",
+      "vosk-test02-g040-shared-medium-candidate.log": "86ecca27d854d0542f0e6ee7dce37cdf96e1a1c85c66682e6714fb33c0509d3c",
+      "test02-g040-shared-medium-candidate.wav.txt": "454cab103c96d7ab7b10bb1443c409cb4327b6c3fb52de7497356b718c336c4a",
+      "test02-q056-stem-medium-candidate.wav.txt": "eb460928860e1f578b25f3cd778e954619dddbb72bb42292db4920c810b9340b",
+      "test02-q057-stem-medium-candidate.wav.txt": "a57a8d2ea45e60121118ae7cef769939cf1ab913c30b3fb2cac07a827779a454",
+      "test02-q058-stem-medium-candidate.wav.txt": "f41b60a322d8f9620e4b40314787528f2f7a887a7a4c0583593f0b5ec784aa0e",
+      "independentBlindTextReview": "d14102cd4751d472cf8726a09b272a430868bf47b5d620c524e9bb0fb19c6fa7"
+    }
+  },
   "activeQuestion": {
+    "id": "t02-q056-r2",
+    "testId": "test-02",
+    "number": 56,
+    "part": 3,
+    "groupId": "t02-g040-r2",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "listening-inference"
+    ],
+    "prompt": "Where can she take her call before moving rooms?",
+    "promptZh": "她換房前可以在哪裡開線上會議？",
+    "options": [
+      {
+        "id": "A",
+        "text": "In the quieter room.",
+        "zh": "在比較安靜的新房間。",
+        "whyZh": "新房間三點才準備好，來不及用來開兩點的會議。"
+      },
+      {
+        "id": "B",
+        "text": "In the hotel workroom.",
+        "zh": "在飯店的工作室。",
+        "whyZh": "她兩點開線上會議，工作室一點到三點開放；新房間那時還沒準備好。"
+      },
+      {
+        "id": "C",
+        "text": "At the night desk.",
+        "zh": "在夜間櫃檯。",
+        "whyZh": "夜間櫃檯是五點後領房卡的地方，不是工作室。"
+      },
+      {
+        "id": "D",
+        "text": "Outside the hotel after five.",
+        "zh": "五點後在飯店外。",
+        "whyZh": "她兩點就要開會，而且原定五點會回到飯店。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "她兩點開線上會議，工作室一點到三點開放；新房間那時還沒準備好。",
+    "evidence": "The street noise kept me awake. My online meeting is at two this afternoon. Then I’ll be out until five. | A quieter room will be ready at three. Our workroom is open from one to three.",
+    "vocabulary": [
+      {
+        "term": "workroom",
+        "zh": "工作室",
+        "note": "這裡指飯店提供給住客使用的工作空間。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t02-q056",
     "testId": "test-02",
     "number": 56,
@@ -59,35 +124,33 @@
     "revision": 1
   },
   "group": {
-    "id": "t02-g040",
+    "id": "t02-g040-r2",
     "testId": "test-02",
     "part": 3,
-    "title": "A hotel room change",
-    "titleZh": "更換飯店房間",
+    "title": "A room change around a meeting",
+    "titleZh": "配合會議安排換房",
     "topic": "daily",
-    "passage": "Woman: My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?\nMan: We have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon.\nWoman: That works. I will be at a conference until five. Can I leave my luggage with you now?\nMan: Of course. We can move it to the new room once the room is ready. Please collect your new key when you return.",
-    "passageZh": "女：我的房間面向街道，交通噪音讓我睡不著。有比較安靜的房間嗎？\n男：我們有一間面向中庭的房間，但房務要到今天下午兩點才會整理好。\n女：可以。我會參加會議到五點。現在能把行李寄放在你們這裡嗎？\n男：當然。新房間準備好後，我們可以把行李搬過去。回來時請領取新房卡。",
-    "audioScript": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?\nWe have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon.\nThat works. I will be at a conference until five. Can I leave my luggage with you now?\nOf course. We can move it to the new room once the room is ready. Please collect your new key when you return.",
+    "passage": "Woman: The street noise kept me awake. My online meeting is at two this afternoon. Then I’ll be out until five.\nMan: A quieter room will be ready at three. Our workroom is open from one to three.\nWoman: I’ll move. I’ll leave both bags here, but I need the red one when I return.\nMan: Tag each bag you want moved. Your new key is at reception until five, then at the night desk.",
+    "passageZh": "女：街上的噪音害我睡不著。今天下午兩點有線上會議，之後我會出門，到五點才回來。\n男：比較安靜的房間三點會準備好。我們的工作室一點到三點開放。\n女：那我換房。兩件行李都先放這裡，不過我回來時需要紅色那件。\n男：需要搬到新房間的行李，請各掛一張標籤。新房卡五點前在接待櫃檯，之後到夜間櫃檯領。",
+    "audioScript": "The street noise kept me awake. My online meeting is at two this afternoon. Then I’ll be out until five.\nA quieter room will be ready at three. Our workroom is open from one to three.\nI’ll move. I’ll leave both bags here, but I need the red one when I return.\nTag each bag you want moved. Your new key is at reception until five, then at the night desk.",
     "turns": [
       {
         "voice": "female",
-        "text": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?"
+        "text": "The street noise kept me awake. My online meeting is at two this afternoon. Then I’ll be out until five."
       },
       {
         "voice": "male",
-        "text": "We have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon."
+        "text": "A quieter room will be ready at three. Our workroom is open from one to three."
       },
       {
         "voice": "female",
-        "text": "That works. I will be at a conference until five. Can I leave my luggage with you now?"
+        "text": "I’ll move. I’ll leave both bags here, but I need the red one when I return."
       },
       {
         "voice": "male",
-        "text": "Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+        "text": "Tag each bag you want moved. Your new key is at reception until five, then at the night desk."
       }
     ],
-    "audio": "audio/azure-v1/test-02-18.mp3",
-    "duration": 29.064,
     "audioSpeakers": [
       {
         "speaker": "female",
@@ -102,41 +165,44 @@
         "modelVoice": "en-CA-LiamNeural"
       }
     ],
-    "audioStart": 0.5,
-    "audioEnd": 29.564
+    "audio": "audio/exams/test-02/groups/t02-g040-r2/passage.wav",
+    "audioStart": 0,
+    "audioEnd": 27.5625,
+    "duration": 27.5625
   },
   "audio": [
     {
-      "path": "audio/formal/test-02-cues-03.mp3",
       "mode": "cue",
+      "path": "audio/formal/test-02-cues-03.mp3",
       "start": 18.54113,
       "end": 22.44529,
       "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
       "speech": "Questions 56-58. Listen to the conversation."
     },
     {
-      "path": "audio/azure-v1/test-02-18.mp3",
       "mode": "passage",
-      "start": 0.5,
-      "end": 29.564,
-      "assetSha256": "97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806",
-      "speech": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available? We have a room facing the courtyard, but housekeeping will not finish preparing it until 2 this afternoon. That works. I will be at a conference until 5. Can I leave my luggage with you now? Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+      "path": "audio/exams/test-02/groups/t02-g040-r2/passage.wav",
+      "start": 0,
+      "end": 27.5625,
+      "assetSha256": "cb8e46de56194a94132bec77c1120077cba0581a0b268722b16a81e75c9308ca",
+      "speech": "The street noise kept me awake. My online meeting is at two this afternoon. Then I’ll be out until five.\nA quieter room will be ready at three. Our workroom is open from one to three.\nI’ll move. I’ll leave both bags here, but I need the red one when I return.\nTag each bag you want moved. Your new key is at reception until five, then at the night desk."
     },
     {
-      "path": "audio/formal/test-02-cues-03.mp3",
       "mode": "question",
-      "start": 22.69529,
-      "end": 25.7735,
-      "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
-      "speech": "Number 56. Why does the woman want another room?"
+      "path": "audio/exams/test-02/questions/Q056/formal-stem-r2.wav",
+      "start": 0,
+      "end": 5.425,
+      "assetSha256": "cdcbc616edd4147b6a2cdea1766ecbee3ffd6c6744c1ab67e4198820f7f0b5f4",
+      "speech": "Number 56. Where can she take her call before moving rooms?"
     },
     {
-      "path": "audio/azure-v1/test-02-18.mp3",
       "mode": "practice",
-      "start": 0.5,
-      "end": 29.564,
-      "assetSha256": "97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806",
-      "speech": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available? We have a room facing the courtyard, but housekeeping will not finish preparing it until 2 this afternoon. That works. I will be at a conference until 5. Can I leave my luggage with you now? Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+      "path": "audio/exams/test-02/groups/t02-g040-r2/passage.wav",
+      "start": 0,
+      "end": 27.5625,
+      "assetSha256": "cb8e46de56194a94132bec77c1120077cba0581a0b268722b16a81e75c9308ca",
+      "speech": "The street noise kept me awake. My online meeting is at two this afternoon. Then I’ll be out until five.\nA quieter room will be ready at three. Our workroom is open from one to three.\nI’ll move. I’ll leave both bags here, but I need the red one when I return.\nTag each bag you want moved. Your new key is at reception until five, then at the night desk."
     }
-  ]
+  ],
+  "imageSha256": null
 }

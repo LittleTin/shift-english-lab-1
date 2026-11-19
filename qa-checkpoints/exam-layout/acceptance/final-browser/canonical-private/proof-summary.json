@@ -1,0 +1,45 @@
+{
+  "scope": "private native managed Chromium canonical-content preflight, not final release or physical mobile",
+  "prior": {
+    "deployedCommit": "043b91761f63062708d70f7cda3a6b2046cd4cf9",
+    "version": "1.4.1",
+    "observedFrom": "2026-11-19T02:11:52Z",
+    "observedUntilExclusive": "2026-11-19T11:23:35Z",
+    "actualEndUnknown": true,
+    "archiveManifestSha256": "c4da3f479708e8da3fe615238a5595e2c70dc787a83a430a57f9f626fc2a8cac",
+    "archiveFileCount": 304,
+    "archiveSnapshotScripts": 3,
+    "deployedSourceSha256": {
+      "index.html": "f3dffe8c6fc41343e4928011b0e2b69307e0544460eba6d377b6ac7b2aba0ca8",
+      "assets/app.js": "def77e063b6e98d727725439454d79d4c24901f6ad94863f3f383398b620c879",
+      "data/catalog.js": "dda4fab464c517029935e41469ae2512d90ae8c177f3af1c9c711137fd2a7232",
+      "data/test-01.json": "3e13a67918349a8298f0de04f66c377d85ef8ee684ba690d81d2ec65cafb4f1e",
+      "data/test-02.json": "dd9b42242b14c96999e2e6621f1b15850a7156dbc4271cd1b4ecff31ed83e090",
+      "data/test-03.json": "849c26f1b903d3f89fbe88e39294caeb2386da2a1f8c2f7e4769b2e40a0d849d"
+    }
+  },
+  "candidateFixtureReceiptSha256": "4dcb9c66bcd6d2de16fa273da64e6ae37b74d15a9e11564d0a1aaf0b35262057",
+  "actualBrowserExactBytes": {
+    "index.html": "aab38395011f0ef90e3fdf17185609cbc57dd18a89ef0146fffcdd0e921c333f",
+    "assets/app.js": "b6f4ecc565af54428dc70d8784884c5a905910a6aac85ea806a37523a6f7d4b2",
+    "assets/style.css": "6f51add42916fb3339aea9c8a1011cd8a9cc2db772c205be135c49acbae03fec",
+    "data/catalog.js": "2d05a5211fab8f3f5d5a9cf5fcb391938ce8d07cd81d91ddfea03df5dc8347c8",
+    "data/test-01.js": "6ee53e55314ebbc6b0c20aefcb98c26a6baf5128d08c3c4e4c596a993f363eaf",
+    "data/test-01.json": "111112ee8ff3a87ab9b628da7c1ee0ac171d16de69af15fde44a0b9be4ec432b",
+    "data/test-02.js": "5f63b62d9ec4f1a21bf3d86fa9c01ffe36a4f93005ee0c5507eee7cafec10712",
+    "data/test-02.json": "e2f16364b5caf92accc78aef024ca4ea96e95e161ac7b1dd2af9cc00e5600f84",
+    "data/test-03.js": "cf7beab9a94efae2e18fb16751a9ae8240ca8ff172c7f4eaf7ecfc498bd7cf7b",
+    "data/test-03.json": "a15a24ae9d9adaf5b04e9e866a5d1e041b08cebefc8a67f4640514b91a8acdff"
+  },
+  "actualBrowserExactMediaRange206": [
+    "current WAV",
+    "prior MP3"
+  ],
+  "disposition": {
+    "desktopChromium": "PASS for scoped native playback, old/current paths, pause on native hide, retained state, actual download and byte checks",
+    "viewport390": "PASS standard desktop narrow CSS overflow regression (375 usable/client and scroll)",
+    "physicalMobile": "NOT RUN",
+    "fullDuration": "NOT RUN",
+    "stableFinalRelease": "NOT RUN (difficulty pending)"
+  }
+}

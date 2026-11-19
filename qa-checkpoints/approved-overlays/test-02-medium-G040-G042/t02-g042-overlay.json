@@ -1,0 +1,614 @@
+{
+  "status": "offline-verified-structurally-validated-not-published",
+  "inputPackSha256": "e2f16364b5caf92accc78aef024ca4ea96e95e161ac7b1dd2af9cc00e5600f84",
+  "authPlanSha256": "66026d38dea46536dbb1517b8367a2b153f1762502b5e1ec590e5d2a3f53a731",
+  "draftSha256": "e36f8723ccd4c9f5dccefcae597323940a6b741545979294c9f7a2c83041ec84",
+  "outputPackSha256": "4a4d73d714ea25cee0b59d1b547d0ab8b4511d6ff53b865cc394e7db720ede00",
+  "oldGroupId": "t02-g042",
+  "oldGroupSha256": "d66d53c920b0fefbe7683fc2ba56e92f7de8b6280a296876728cf73c5fe27341",
+  "oldQuestionsSha256": {
+    "t02-q062": "e2c35d7fae15b6136ce6ca0e23f6b0c57a4269cc87b4ee90d46739499302cad1",
+    "t02-q063": "b959a81409e9a403bcd117235852b0594455e4ba62d80b01335aa4f0b4105c04",
+    "t02-q064": "5934f3da07ec8023690fe1f8131da46949d67748efbed85b7e9558c19ca0e2e3"
+  },
+  "newGroup": {
+    "id": "t02-g042-r2",
+    "testId": "test-02",
+    "part": 3,
+    "title": "A visit to the pickup counter",
+    "titleZh": "到取貨櫃檯領商品",
+    "topic": "daily",
+    "passage": "Woman: I got a pickup message for my order. I need the lamp tonight, but I’ve lost the order number.\nMan: We can search by the order’s phone number. To collect anything, show photo ID matching the name on the order.\nWoman: That’s my number, but the order is in my brother’s name. Are my lamp and notebook both ready?\nMan: The lamp is here. The notebook arrives tomorrow. We text for each item and hold it through Saturday.",
+    "passageZh": "女：我收到了訂單的取貨通知。今晚需要桌燈，但我找不到訂單編號。\n男：可以用訂單留下的電話號碼查詢。取貨時須出示與訂單姓名相符的附照證件。\n女：電話是我的，但訂單是我哥哥的名字。桌燈和筆記本都能取了嗎？\n男：桌燈到了。筆記本明天到。我們會對每件商品分別發簡訊，並保留到星期六。",
+    "audioScript": "I got a pickup message for my order. I need the lamp tonight, but I’ve lost the order number.\nWe can search by the order’s phone number. To collect anything, show photo ID matching the name on the order.\nThat’s my number, but the order is in my brother’s name. Are my lamp and notebook both ready?\nThe lamp is here. The notebook arrives tomorrow. We text for each item and hold it through Saturday.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "I got a pickup message for my order. I need the lamp tonight, but I’ve lost the order number."
+      },
+      {
+        "voice": "male",
+        "text": "We can search by the order’s phone number. To collect anything, show photo ID matching the name on the order."
+      },
+      {
+        "voice": "female",
+        "text": "That’s my number, but the order is in my brother’s name. Are my lamp and notebook both ready?"
+      },
+      {
+        "voice": "male",
+        "text": "The lamp is here. The notebook arrives tomorrow. We text for each item and hold it through Saturday."
+      }
+    ],
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-IN",
+        "role": "female",
+        "modelVoice": "en-IN-NeerjaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-IN",
+        "role": "male",
+        "modelVoice": "en-IN-PrabhatNeural"
+      }
+    ],
+    "audio": "audio/exams/test-02/groups/t02-g042-r2/passage.wav",
+    "audioStart": 0,
+    "audioEnd": 33.5,
+    "duration": 33.5
+  },
+  "newQuestions": [
+    {
+      "id": "t02-q062-r2",
+      "testId": "test-02",
+      "number": 62,
+      "part": 3,
+      "groupId": "t02-g042-r2",
+      "topic": "daily",
+      "difficulty": "intermediate",
+      "tags": [
+        "daily",
+        "listening-inference"
+      ],
+      "prompt": "What does this pickup message mean for her order?",
+      "promptZh": "這則取貨通知對她的訂單代表什麼？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Both items can be collected in one trip today.",
+          "zh": "兩件今天就能一次取完。",
+          "whyZh": "筆記本要明天才到，不代表整筆訂單都可取。"
+        },
+        {
+          "id": "B",
+          "text": "Only the notebook is ready now.",
+          "zh": "現在只有筆記本可取。",
+          "whyZh": "先到的是桌燈，筆記本還沒到。"
+        },
+        {
+          "id": "C",
+          "text": "The shop will wait to release the lamp until the notebook arrives.",
+          "zh": "店家會等筆記本到了才交付桌燈。",
+          "whyZh": "通知逐件發送，不要求等齊才領。"
+        },
+        {
+          "id": "D",
+          "text": "The lamp is ready, and the notebook will have its own notice.",
+          "zh": "桌燈可取，筆記本會有另一則通知。",
+          "whyZh": "她只收到一則通知，而目前只有桌燈到貨；店家按商品分別通知。"
+        }
+      ],
+      "answer": "D",
+      "explanationZh": "她只收到一則通知，而目前只有桌燈到貨；店家按商品分別通知。",
+      "evidence": "I got a pickup message for my order. I need the lamp tonight, but I’ve lost the order number. | That’s my number, but the order is in my brother’s name. Are my lamp and notebook both ready? | The lamp is here. The notebook arrives tomorrow. We text for each item and hold it through Saturday.",
+      "vocabulary": [
+        {
+          "term": "pickup notice",
+          "zh": "取貨通知",
+          "note": "告知商品可取貨；本店規則是按單品分開通知。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t02-q063-r2",
+      "testId": "test-02",
+      "number": 63,
+      "part": 3,
+      "groupId": "t02-g042-r2",
+      "topic": "daily",
+      "difficulty": "intermediate",
+      "tags": [
+        "daily",
+        "listening-inference"
+      ],
+      "prompt": "Why might finding the order still not let her collect it?",
+      "promptZh": "就算查得到訂單，為什麼她可能仍不能取貨？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Her phone number can find it, but her ID name may not match the order.",
+          "zh": "她的電話能查到訂單，但她的證件姓名可能與訂單不符。",
+          "whyZh": "查詢可用電話，但取貨要核對姓名；電話是她的，訂單卻在哥哥名下。"
+        },
+        {
+          "id": "B",
+          "text": "The shop can search only by confirmation number.",
+          "zh": "店家只能用確認編號查詢。",
+          "whyZh": "店員明確說可以用訂單上的電話查詢。"
+        },
+        {
+          "id": "C",
+          "text": "Having the phone number means both items must be released together.",
+          "zh": "提供電話後就必須兩件一起領。",
+          "whyZh": "電話只用來查單，不改變逐件領取的規則。"
+        },
+        {
+          "id": "D",
+          "text": "The shop holds only orders paid for by phone.",
+          "zh": "店家只保留用電話付款的訂單。",
+          "whyZh": "對話沒有用電話付款這個條件。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "查詢可用電話，但取貨要核對姓名；電話是她的，訂單卻在哥哥名下。",
+      "evidence": "We can search by the order’s phone number. To collect anything, show photo ID matching the name on the order. | That’s my number, but the order is in my brother’s name. Are my lamp and notebook both ready?",
+      "vocabulary": [
+        {
+          "term": "match",
+          "zh": "相符",
+          "note": "指出示的姓名必須與訂單姓名相同。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t02-q064-r2",
+      "testId": "test-02",
+      "number": 64,
+      "part": 3,
+      "groupId": "t02-g042-r2",
+      "topic": "daily",
+      "difficulty": "intermediate",
+      "tags": [
+        "daily",
+        "listening-inference"
+      ],
+      "prompt": "Her brother can come today and Saturday. What should he do?",
+      "promptZh": "她哥哥今天和星期六都能來。他應該怎麼做？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wait and collect both items on Saturday.",
+          "zh": "等到星期六一次領兩件。",
+          "whyZh": "兩件雖可保留到星期六，但她今晚需要桌燈。"
+        },
+        {
+          "id": "B",
+          "text": "Have her collect the lamp with only her phone today; he comes Saturday.",
+          "zh": "今天讓她只帶電話來取桌燈，他星期六再來。",
+          "whyZh": "電話可以查詢，但取貨仍要出示姓名相符的證件。"
+        },
+        {
+          "id": "C",
+          "text": "Bring matching ID for the lamp today; collect the notebook Saturday after its notice.",
+          "zh": "今天帶姓名相符的證件領桌燈；收到筆記本通知後，星期六再來領。",
+          "whyZh": "哥哥可出示與訂單相符的證件，先滿足今晚的桌燈需求；筆記本另行通知後可保留到星期六。"
+        },
+        {
+          "id": "D",
+          "text": "Collect both today, using the same pickup message for the notebook.",
+          "zh": "今天用同一則簡訊把兩件都領走。",
+          "whyZh": "筆記本明天才到，今天不能領；它也會有自己的通知。"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "哥哥可出示與訂單相符的證件，先滿足今晚的桌燈需求；筆記本另行通知後可保留到星期六。",
+      "evidence": "I got a pickup message for my order. I need the lamp tonight, but I’ve lost the order number. | We can search by the order’s phone number. To collect anything, show photo ID matching the name on the order. | That’s my number, but the order is in my brother’s name. Are my lamp and notebook both ready? | The lamp is here. The notebook arrives tomorrow. We text for each item and hold it through Saturday.",
+      "vocabulary": [
+        {
+          "term": "through Saturday",
+          "zh": "直到星期六為止，含當天",
+          "note": "through 在這裡表示星期六當天仍可領取。"
+        }
+      ],
+      "revision": 2
+    }
+  ],
+  "frameIndexes": [
+    178,
+    194
+  ],
+  "oldFramesSha256": "fac16dffe6dbe6a4f47e7253de75a6338b5640bc72391f9b45bf46b97737a7c7",
+  "newFrames": [
+    {
+      "src": "audio/formal/test-02-cues-03.mp3",
+      "start": 46.00937,
+      "end": 50.02271,
+      "duration": 4.01333,
+      "kind": "audio",
+      "role": "cue",
+      "part": 3,
+      "groupId": "t02-g042-r2",
+      "at": 1644.37048
+    },
+    {
+      "src": "audio/exams/test-02/groups/t02-g042-r2/passage.wav",
+      "start": 0,
+      "end": 33.5,
+      "duration": 33.5,
+      "kind": "audio",
+      "role": "passage",
+      "part": 3,
+      "groupId": "t02-g042-r2",
+      "at": 1648.38381,
+      "speakers": [
+        {
+          "speaker": "female",
+          "locale": "en-IN",
+          "role": "female",
+          "modelVoice": "en-IN-NeerjaNeural"
+        },
+        {
+          "speaker": "male",
+          "locale": "en-IN",
+          "role": "male",
+          "modelVoice": "en-IN-PrabhatNeural"
+        }
+      ]
+    },
+    {
+      "src": "audio/exams/test-02/questions/Q062/formal-stem-r2.wav",
+      "start": 0,
+      "end": 5.2125,
+      "duration": 5.2125,
+      "kind": "audio",
+      "role": "question",
+      "part": 3,
+      "groupId": "t02-g042-r2",
+      "questionId": "t02-q062-r2",
+      "at": 1681.88381
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 8.0,
+      "part": 3,
+      "groupId": "t02-g042-r2",
+      "questionId": "t02-q062-r2",
+      "at": 1687.09631
+    },
+    {
+      "src": "audio/exams/test-02/questions/Q063/formal-stem-r2.wav",
+      "start": 0,
+      "end": 5.75,
+      "duration": 5.75,
+      "kind": "audio",
+      "role": "question",
+      "part": 3,
+      "groupId": "t02-g042-r2",
+      "questionId": "t02-q063-r2",
+      "at": 1695.09631
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 8.0,
+      "part": 3,
+      "groupId": "t02-g042-r2",
+      "questionId": "t02-q063-r2",
+      "at": 1700.84631
+    },
+    {
+      "src": "audio/exams/test-02/questions/Q064/formal-stem-r2.wav",
+      "start": 0,
+      "end": 6.8125,
+      "duration": 6.8125,
+      "kind": "audio",
+      "role": "question",
+      "part": 3,
+      "groupId": "t02-g042-r2",
+      "questionId": "t02-q064-r2",
+      "at": 1708.84631
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 8.0,
+      "part": 3,
+      "groupId": "t02-g042-r2",
+      "questionId": "t02-q064-r2",
+      "at": 1715.65881
+    },
+    {
+      "src": "audio/formal/test-02-cues-03.mp3",
+      "start": 60.36688,
+      "end": 64.48779,
+      "duration": 4.12092,
+      "kind": "audio",
+      "role": "cue",
+      "part": 3,
+      "groupId": "t02-g043",
+      "at": 1723.65881
+    },
+    {
+      "src": "audio/azure-v1/test-02-20.mp3",
+      "start": 0.5,
+      "end": 33.236,
+      "duration": 32.736,
+      "kind": "audio",
+      "role": "passage",
+      "part": 3,
+      "groupId": "t02-g043",
+      "at": 1727.77973,
+      "speakers": [
+        {
+          "speaker": "male",
+          "locale": "en-HK",
+          "role": "male",
+          "modelVoice": "en-HK-SamNeural"
+        },
+        {
+          "speaker": "female",
+          "locale": "en-HK",
+          "role": "female",
+          "modelVoice": "en-HK-YanNeural"
+        }
+      ]
+    },
+    {
+      "src": "audio/formal/test-02-cues-03.mp3",
+      "start": 64.73779,
+      "end": 68.00825,
+      "duration": 3.27046,
+      "kind": "audio",
+      "role": "question",
+      "part": 3,
+      "groupId": "t02-g043",
+      "questionId": "t02-q065",
+      "at": 1760.51573
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 10.63127,
+      "part": 3,
+      "groupId": "t02-g043",
+      "questionId": "t02-q065",
+      "at": 1763.78619
+    },
+    {
+      "src": "audio/formal/test-02-cues-04.mp3",
+      "start": 0.25,
+      "end": 3.493,
+      "duration": 3.243,
+      "kind": "audio",
+      "role": "question",
+      "part": 3,
+      "groupId": "t02-g043",
+      "questionId": "t02-q066",
+      "at": 1774.41746
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 10.63128,
+      "part": 3,
+      "groupId": "t02-g043",
+      "questionId": "t02-q066",
+      "at": 1777.66046
+    },
+    {
+      "src": "audio/formal/test-02-cues-04.mp3",
+      "start": 3.743,
+      "end": 6.67333,
+      "duration": 2.93033,
+      "kind": "audio",
+      "role": "question",
+      "part": 3,
+      "groupId": "t02-g043",
+      "questionId": "t02-q067",
+      "at": 1788.29174
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 10.63128,
+      "part": 3,
+      "groupId": "t02-g043",
+      "questionId": "t02-q067",
+      "at": 1791.22207
+    }
+  ],
+  "newAudio": {
+    "audio/exams/test-02/groups/t02-g042-r2/passage.wav": {
+      "name": "test02-g042-shared-medium-candidate",
+      "inputCharacters": 395,
+      "samples": 804000,
+      "seconds": 33.5,
+      "bytes": 1608044,
+      "sha256": "b38cec66f2489ad19ab908de975fe4ad0039e6aab17c28c7e58cb7e224cb5399",
+      "status": "rendered-candidate-not-validated",
+      "exactInputs": [
+        {
+          "voice": "en-IN-NeerjaNeural",
+          "locale": "en-IN",
+          "text": "I got a pickup message for my order. I need the lamp tonight, but I’ve lost the order number.",
+          "afterMs": 150
+        },
+        {
+          "voice": "en-IN-PrabhatNeural",
+          "locale": "en-IN",
+          "text": "We can search by the order’s phone number. To collect anything, show photo ID matching the name on the order.",
+          "afterMs": 150
+        },
+        {
+          "voice": "en-IN-NeerjaNeural",
+          "locale": "en-IN",
+          "text": "That’s my number, but the order is in my brother’s name. Are my lamp and notebook both ready?",
+          "afterMs": 150
+        },
+        {
+          "voice": "en-IN-PrabhatNeural",
+          "locale": "en-IN",
+          "text": "The lamp is here. The notebook arrives tomorrow. We text for each item and hold it through Saturday."
+        }
+      ]
+    },
+    "audio/exams/test-02/questions/Q062/formal-stem-r2.wav": {
+      "name": "test02-q062-stem-medium-candidate",
+      "inputCharacters": 60,
+      "samples": 125100,
+      "seconds": 5.2125,
+      "bytes": 250244,
+      "sha256": "3af5e5d3421a0c2eeed5ff9f7b21f9973b399dfdb1c88cfd4e370db9000b9d79",
+      "status": "rendered-candidate-not-validated",
+      "exactInputs": [
+        {
+          "voice": "en-US-JennyNeural",
+          "locale": "en-US",
+          "text": "Number 62. What does this pickup message mean for her order?"
+        }
+      ]
+    },
+    "audio/exams/test-02/questions/Q063/formal-stem-r2.wav": {
+      "name": "test02-q063-stem-medium-candidate",
+      "inputCharacters": 68,
+      "samples": 138000,
+      "seconds": 5.75,
+      "bytes": 276044,
+      "sha256": "84c87759ad111bfe5b152ed19e779cc14f61019181c360be58bf8ea94231e0fa",
+      "status": "rendered-candidate-not-validated",
+      "exactInputs": [
+        {
+          "voice": "en-US-JennyNeural",
+          "locale": "en-US",
+          "text": "Number 63. Why might finding the order still not let her collect it?"
+        }
+      ]
+    },
+    "audio/exams/test-02/questions/Q064/formal-stem-r2.wav": {
+      "name": "test02-q064-stem-medium-candidate",
+      "inputCharacters": 70,
+      "samples": 163500,
+      "seconds": 6.8125,
+      "bytes": 327044,
+      "sha256": "e9c1004dccb0f14c6f669c860e5bee3ffab89c9114f3c3b5001afa262201056a",
+      "status": "rendered-candidate-not-validated",
+      "exactInputs": [
+        {
+          "voice": "en-US-JennyNeural",
+          "locale": "en-US",
+          "text": "Number 64. Her brother can come today and Saturday. What should he do?"
+        }
+      ]
+    }
+  },
+  "oldAudio": [
+    {
+      "src": "audio/formal/test-02-cues-03.mp3",
+      "start": 46.00937,
+      "end": 50.02271,
+      "duration": 4.01333,
+      "kind": "audio",
+      "role": "cue",
+      "part": 3,
+      "groupId": "t02-g042",
+      "at": 1644.37048,
+      "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d"
+    },
+    {
+      "src": "audio/azure-v1/test-02-19.mp3",
+      "start": 0.5,
+      "end": 30.62,
+      "duration": 30.12,
+      "kind": "audio",
+      "role": "passage",
+      "part": 3,
+      "groupId": "t02-g042",
+      "at": 1648.38381,
+      "speakers": [
+        {
+          "speaker": "female",
+          "locale": "en-IN",
+          "role": "female",
+          "modelVoice": "en-IN-NeerjaNeural"
+        },
+        {
+          "speaker": "male",
+          "locale": "en-IN",
+          "role": "male",
+          "modelVoice": "en-IN-PrabhatNeural"
+        }
+      ],
+      "assetSha256": "1ae03408daad01e297cec6cc556e957a84d9b35e21944fec0c0b78ec2ddd7ea0"
+    },
+    {
+      "src": "audio/formal/test-02-cues-03.mp3",
+      "start": 50.27271,
+      "end": 54.2205,
+      "duration": 3.94779,
+      "kind": "audio",
+      "role": "question",
+      "part": 3,
+      "groupId": "t02-g042",
+      "questionId": "t02-q062",
+      "at": 1678.50381,
+      "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d"
+    },
+    {
+      "src": "audio/formal/test-02-cues-03.mp3",
+      "start": 54.4705,
+      "end": 57.37225,
+      "duration": 2.90175,
+      "kind": "audio",
+      "role": "question",
+      "part": 3,
+      "groupId": "t02-g042",
+      "questionId": "t02-q063",
+      "at": 1693.73571,
+      "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d"
+    },
+    {
+      "src": "audio/formal/test-02-cues-03.mp3",
+      "start": 57.62225,
+      "end": 60.11688,
+      "duration": 2.49463,
+      "kind": "audio",
+      "role": "question",
+      "part": 3,
+      "groupId": "t02-g042",
+      "questionId": "t02-q064",
+      "at": 1707.92157,
+      "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d"
+    }
+  ],
+  "windows": [
+    8.0,
+    8.0,
+    8.0
+  ],
+  "timingConcern": null,
+  "donorWindows": {
+    "t02-q065": 10.63127,
+    "t02-q066": 10.63128,
+    "t02-q067": 10.63128
+  },
+  "borrowedSeconds": 1.9585,
+  "sourceBoundary": [
+    1644.37048,
+    1801.85335
+  ],
+  "offlineSpeechEvidenceSha256": {
+    "hashes.txt": "b7cb5aab6a3e7937b3183447f49c05abcf74ca9b7aa81e4a38e99808a6e22858",
+    "vosk-test02-g042-shared-medium-candidate.log": "d5e3d97bb8cb8a69bfb0e88760dae80bd7b2324020a4f7b102ddb595d1b995e1",
+    "test02-g042-shared-medium-candidate.wav.txt": "650dea14f3622e2dba06242c3a197a0f243fc10a024be64b83b7487b59e7ee3e",
+    "test02-q062-stem-medium-candidate.wav.txt": "2052609bb53495b75c4026ba84402285c5de3655561dc7b848c232c7de53ee75",
+    "test02-q063-stem-medium-candidate.wav.txt": "084d51b60b3a8229a60012dbc13b7b624d98e7e452f5390b11367decf4930765",
+    "test02-q064-stem-medium-candidate.wav.txt": "9335ff07c1c368ecd75112fa8eca47e9352c982e3138413dcf7d415c9841389e",
+    "vosk-focus-small.log": "507513fd51ab76a6c86ff7e428991d9f7c26955535338ceaef5b893f0465f792",
+    "vosk-focus-and-retained.log": "571f39ddc555d773331ab60a10e2b25ef4765549029993168b0c135443a02788",
+    "independentBlindTextReview": "d14102cd4751d472cf8726a09b272a430868bf47b5d620c524e9bb0fb19c6fa7"
+  }
+}
