@@ -1,0 +1,57 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "C: each is singular and the photos will be displayed next month; alternatives fail agreement, temporal framing or passive construction.",
+  "activeQuestion": {
+    "id": "t03-q118",
+    "testId": "test-03",
+    "number": 118,
+    "part": 5,
+    "groupId": null,
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "grammar"
+    ],
+    "prompt": "Each of the winning photographs ____ displayed in the lobby next month.",
+    "promptZh": "每張得獎照片下個月都會在大廳展出。（英文空格測試未來式被動語態。）",
+    "options": [
+      {
+        "id": "A",
+        "text": "are being",
+        "zh": "正被",
+        "whyZh": "Each 為單數主詞，不能用 are。"
+      },
+      {
+        "id": "B",
+        "text": "have been",
+        "zh": "已經被",
+        "whyZh": "have 是複數形式，與 Each of ... 的單數主詞不一致；本句也指下個月才會展示。"
+      },
+      {
+        "id": "C",
+        "text": "will be",
+        "zh": "將被",
+        "whyZh": "will be displayed 為未來被動，符合照片被展示。"
+      },
+      {
+        "id": "D",
+        "text": "will have",
+        "zh": "將已（will have 為完成式助動詞）",
+        "whyZh": "後接 displayed 時缺少被動助動詞 been。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "will be displayed 為未來被動，符合照片被展示。",
+    "evidence": "Each of the winning photographs will be displayed in the lobby next month.",
+    "vocabulary": [
+      {
+        "term": "display",
+        "zh": "展示",
+        "note": "可用被動式描述展品。"
+      }
+    ],
+    "revision": 1
+  }
+}
