@@ -1,0 +1,804 @@
+{
+  "status": "local-proposal-not-published",
+  "baseRef": "7b3e6b75",
+  "priorDeploymentRef": "043b91761f63062708d70f7cda3a6b2046cd4cf9",
+  "oldGroupSha256": "aaa4db128f498830f9f17085799510f398f0eff6c5a505394c3c3387c9b52a38",
+  "oldGroupId": "t03-g053",
+  "newGroup": {
+    "id": "t03-g053-r2",
+    "testId": "test-03",
+    "part": 4,
+    "title": "A restaurant follow-up call",
+    "titleZh": "餐廳的確認電話",
+    "topic": "business",
+    "passage": "F1: Hello, this is Grace from the Cedar Kitchen about Saturday's lunch. The elevator to the upstairs room is out of service. For your presentation, we can set up a screen in the garden room instead. You can get there without using stairs.\n\nWe can refrigerate your cake if the kitchen staff get it before eleven. Your friend plans to arrive at eleven thirty. She may need to keep the cake with her until serving time.\n\nWe can put food and drinks on separate bills. Individual bills are not available. Tell me which bill should go to your office.",
+    "passageZh": "您好，我是 Cedar Kitchen 的 Grace，來電確認星期六的午餐。通往樓上房間的電梯停用了。配合你們的簡報，我們可以改在花園廳設置螢幕，到那裡不用走樓梯。\n\n如果廚房人員在十一點前收到蛋糕，我們可以幫你們冷藏。你的朋友預計十一點半抵達。她可能得先把蛋糕留在身邊，等要上桌時再拿出來。\n\n餐點和飲料可以分開結帳，但不能為每位客人分別開帳單。請告訴我哪一張帳單要寄給你們公司。",
+    "audioScript": "Hello, this is Grace from the Cedar Kitchen about Saturday's lunch. The elevator to the upstairs room is out of service. For your presentation, we can set up a screen in the garden room instead. You can get there without using stairs.\n\nWe can refrigerate your cake if the kitchen staff get it before eleven. Your friend plans to arrive at eleven thirty. She may need to keep the cake with her until serving time.\n\nWe can put food and drinks on separate bills. Individual bills are not available. Tell me which bill should go to your office.",
+    "turns": [
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "Hello, this is Grace from the Cedar Kitchen about Saturday's lunch. The elevator to the upstairs room is out of service. For your presentation, we can set up a screen in the garden room instead. You can get there without using stairs.\n\nWe can refrigerate your cake if the kitchen staff get it before eleven. Your friend plans to arrive at eleven thirty. She may need to keep the cake with her until serving time.\n\nWe can put food and drinks on separate bills. Individual bills are not available. Tell me which bill should go to your office."
+      }
+    ],
+    "audioSpeakers": [
+      {
+        "speaker": "F1",
+        "locale": "en-SG",
+        "role": "female",
+        "modelVoice": "en-SG-LunaNeural"
+      }
+    ],
+    "audio": "audio/exams/test-03/groups/t03-g053-r2/passage.wav",
+    "audioStart": 0,
+    "audioEnd": 40.3125,
+    "duration": 40.3125
+  },
+  "oldQuestionSha256": {
+    "95": "6608a4843403b00128b485712d35de5d50779c953a0cfc8d1c9362dcae4b0cec",
+    "96": "16136419bea33440dddc24429723447ebdc6ba7c11d05f785b1064dff6e10930",
+    "97": "eb24c89de07d7be08347ac1322cbc550a480224b84ad198971637a33cc3e4cc6"
+  },
+  "newQuestions": [
+    {
+      "id": "t03-q095-r2",
+      "testId": "test-03",
+      "number": 95,
+      "part": 4,
+      "groupId": "t03-g053-r2",
+      "topic": "business",
+      "difficulty": "intermediate",
+      "tags": [
+        "business",
+        "restaurant",
+        "context"
+      ],
+      "prompt": "What would let the group keep its slide show while making the lunch accessible without stairs?",
+      "promptZh": "哪個安排能保留投影片簡報，也讓無法走樓梯的人參加午餐？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Replacing the slide show with a talk",
+          "zh": "改成口頭報告，不播投影片",
+          "whyZh": "花園包廂可以架設投影幕，因此不用放棄播放投影片。"
+        },
+        {
+          "id": "B",
+          "text": "Moving the lunch and slide show to the garden room",
+          "zh": "把午餐和投影片簡報都改到花園包廂",
+          "whyZh": "樓上包廂的電梯暫停使用；花園包廂不必走樓梯，也能架設投影幕，所以既可用餐，也能保留投影片簡報。"
+        },
+        {
+          "id": "C",
+          "text": "Asking the kitchen to change the menu",
+          "zh": "請廚房更改菜單",
+          "whyZh": "兩間包廂的菜單相同；要改的是用餐地點，而不是餐點。"
+        },
+        {
+          "id": "D",
+          "text": "Using the lift after the meal",
+          "zh": "餐後再使用電梯",
+          "whyZh": "電梯將暫停使用，沒有說用完餐後就能恢復。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "樓上包廂的電梯暫停使用；花園包廂不必走樓梯，也能架設投影幕，所以既可用餐，也能保留投影片簡報。",
+      "evidence": "The lift to that room will be out of service. If anyone needs step-free access, we can set up a screen in the garden room instead.",
+      "vocabulary": [
+        {
+          "term": "step-free access",
+          "zh": "無階梯通行",
+          "note": "表示前往該處不必走樓梯。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t03-q096-r2",
+      "testId": "test-03",
+      "number": 96,
+      "part": 4,
+      "groupId": "t03-g053-r2",
+      "topic": "business",
+      "difficulty": "intermediate",
+      "tags": [
+        "business",
+        "restaurant",
+        "context"
+      ],
+      "prompt": "What would allow the restaurant to refrigerate the cake?",
+      "promptZh": "怎麼做才能請餐廳代為冷藏蛋糕？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Serving the cake before the meal",
+          "zh": "在用餐前先上蛋糕",
+          "whyZh": "用餐或吃蛋糕的時間不影響廚房收件；廚房只在十一點前收。"
+        },
+        {
+          "id": "B",
+          "text": "Having the friend hand the cake to staff at 11:30",
+          "zh": "請朋友在上午 11 點半把蛋糕交給廚房人員",
+          "whyZh": "上午 11 點半已超過廚房上午 11 點的收件截止時間。"
+        },
+        {
+          "id": "C",
+          "text": "Moving the lunch to a later time",
+          "zh": "延後午餐時間",
+          "whyZh": "延後用餐不會延後廚房收蛋糕的時間。"
+        },
+        {
+          "id": "D",
+          "text": "Having the friend deliver the cake at 10:50",
+          "zh": "請朋友在上午 10 點 50 分送蛋糕來",
+          "whyZh": "上午 10 點 50 分比原定抵達時間早，也在廚房上午 11 點的收件截止前，所以可以交給廚房冷藏。"
+        }
+      ],
+      "answer": "D",
+      "explanationZh": "上午 10 點 50 分比原定抵達時間早，也在廚房上午 11 點的收件截止前，所以可以交給廚房冷藏。",
+      "evidence": "the kitchen staff can only take it in before eleven. Your friend is due at eleven thirty.",
+      "vocabulary": [
+        {
+          "term": "be due at",
+          "zh": "預計在某個時間抵達",
+          "note": "這裡指原先安排的抵達時間，不是廚房收件截止時間。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t03-q097-r2",
+      "testId": "test-03",
+      "number": 97,
+      "part": 4,
+      "groupId": "t03-g053-r2",
+      "topic": "business",
+      "difficulty": "intermediate",
+      "tags": [
+        "business",
+        "restaurant",
+        "context"
+      ],
+      "prompt": "The office is paying for food only. Which billing request meets the office’s requirement and can be fulfilled by the restaurant?",
+      "promptZh": "公司只支付餐點費用。哪項帳單安排既符合公司的要求，也是餐廳能做到的？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Send one bill for all the food to the office.",
+          "zh": "把所有餐點併成一張帳單寄給公司。",
+          "whyZh": "餐廳能按餐點和飲料分開結帳，因此可把全體餐點列在同一張帳單上寄給公司，不包含飲料。"
+        },
+        {
+          "id": "B",
+          "text": "Send a separate food bill for each guest to the office.",
+          "zh": "每位來賓的餐點各開一張帳單寄給公司。",
+          "whyZh": "餐廳能依費用類別分帳，但不能替每位來賓分開開帳單。"
+        },
+        {
+          "id": "C",
+          "text": "Combine food and drinks on a single bill for the office.",
+          "zh": "把餐點與飲料列在同一張帳單寄給公司。",
+          "whyZh": "即便能合併，公司也只支付餐點，合併會讓帳單包含公司不負擔的費用。"
+        },
+        {
+          "id": "D",
+          "text": "Send the drinks bill to the office and let guests pay for food individually.",
+          "zh": "把飲料帳單寄給公司，並讓來賓各自支付餐點。",
+          "whyZh": "顛倒了公司負擔的費用，而且餐廳不能按人分成多張帳單。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "餐廳能按餐點和飲料分開結帳，因此可把全體餐點列在同一張帳單上寄給公司，不包含飲料。",
+      "evidence": "we can put food on one bill and drinks on another, but we can’t bill guests individually. Tell me which of those two bills should go to your office.",
+      "vocabulary": [
+        {
+          "term": "bill someone individually",
+          "zh": "個別向某人開帳單",
+          "note": "bill 可當動詞，表示向某人開帳單；這裡區分按費用種類與按來賓分帳。"
+        }
+      ],
+      "revision": 2
+    }
+  ],
+  "oldListeningPlanSha256": "8b4c278753f6e1ac2154202544daf307a3de197ee3f5ee4c0ff8d1e7279d4659",
+  "newListeningPlanSha256": "d15464d8ee3bfdb21eae5f8487c4a10908d8d40e964f95cf3bdf57088c054528",
+  "formalFrameOps": [
+    {
+      "index": 206,
+      "beforeSha256": "87697834a2a171c273752a482e299808ccc1c64452b19729b56e7d2efc4cf659",
+      "updates": {
+        "duration": 6.50389
+      }
+    },
+    {
+      "index": 207,
+      "beforeSha256": "ddefdb4dcae322729c4fa0d2cdd86f6e2aa18a1d9dacf3731bf3a28675e3b8f2",
+      "updates": {
+        "at": 1954.25308
+      }
+    },
+    {
+      "index": 208,
+      "beforeSha256": "f204fec437aef9caf2b111a30686d16eddb583c69168f6061182002a12bf3b10",
+      "updates": {
+        "duration": 6.50389,
+        "at": 1957.22879
+      }
+    },
+    {
+      "index": 209,
+      "beforeSha256": "959164bc530fd4b71b9eead5f0cc4acf11f4cf4d3569875d363fc3d6eaaa572e",
+      "updates": {
+        "at": 1963.73268
+      }
+    },
+    {
+      "index": 210,
+      "beforeSha256": "7f5279a4fa432c7cbd8baf0bb1960bf1f7a8e52efcd8094a635dd27fc0bdc88e",
+      "updates": {
+        "duration": 6.50389,
+        "at": 1967.08922
+      }
+    },
+    {
+      "index": 211,
+      "beforeSha256": "48e872470621a51af78a1a3ba3389a95288987585f8cb4593489b8dd3eed07f8",
+      "updates": {
+        "at": 1973.59311
+      }
+    },
+    {
+      "index": 212,
+      "beforeSha256": "ed1af72c6af25b7e427b5f25c4f74f73b153f2128f02c5f93c1d5fd716bbb705",
+      "updates": {
+        "at": 1977.14098
+      }
+    },
+    {
+      "index": 213,
+      "beforeSha256": "671507e376d8b1c09d318c81431519b84a79c7332c849539b5d8ac9db3ae97ee",
+      "updates": {
+        "at": 2018.70898
+      }
+    },
+    {
+      "index": 214,
+      "beforeSha256": "90b8eea428dab96fe41d8222cb397b222b1950c7da8e0491a5e278734176b0e2",
+      "updates": {
+        "duration": 6.50389,
+        "at": 2021.41252
+      }
+    },
+    {
+      "index": 215,
+      "beforeSha256": "89cb3e95862f1087dce1000080f6021498a94662d2ae0137e93d7c2262053b2a",
+      "updates": {
+        "at": 2027.91641
+      }
+    },
+    {
+      "index": 216,
+      "beforeSha256": "adef57c120e754b2925556de34028236c500462574ce0098463fc8192720a48e",
+      "updates": {
+        "duration": 6.5039,
+        "at": 2030.66941
+      }
+    },
+    {
+      "index": 217,
+      "beforeSha256": "e02635687fabf53b6e6e0f92d5a1413f9012e1b33b6c4657337e0e00669b363c",
+      "updates": {
+        "at": 2037.17331
+      }
+    },
+    {
+      "index": 218,
+      "beforeSha256": "0242a22ced05c0ee03118d61ee5272470d4487b346b23d0421157cce39748c33",
+      "updates": {
+        "duration": 6.5039,
+        "at": 2040.37714
+      }
+    },
+    {
+      "index": 219,
+      "beforeSha256": "c8409f0a11e4f6e578e0d296360afed08b557a50514802ca18962924cd0dabc0",
+      "updates": {
+        "at": 2046.88104
+      }
+    },
+    {
+      "index": 220,
+      "beforeSha256": "97a07b83bd82c7a776f62e91a8937336412ae39d44c250f345b7329de999446d",
+      "updates": {
+        "at": 2050.4795
+      }
+    },
+    {
+      "index": 221,
+      "beforeSha256": "c70507d4703f041f5584be5b65f2f3a4ef3b17b14684a1d3907456b4d9e3b393",
+      "updates": {
+        "at": 2092.9355
+      }
+    },
+    {
+      "index": 222,
+      "beforeSha256": "6f80338cb315a256069590a3bc54d8487684c26e238c07732a74f53a321b1d93",
+      "updates": {
+        "duration": 6.5039,
+        "at": 2097.35017
+      }
+    },
+    {
+      "index": 223,
+      "beforeSha256": "7a9289271ebc435917f1aa0a39d970028200901df0a9c01400af0193ab4cecd4",
+      "updates": {
+        "at": 2103.85407
+      }
+    },
+    {
+      "index": 224,
+      "beforeSha256": "f05ba02e8dfee3a5939ed248ff5407a0d22012f70b0fad869fd4436a86706c5a",
+      "updates": {
+        "duration": 6.5039,
+        "at": 2107.62057
+      }
+    },
+    {
+      "index": 225,
+      "beforeSha256": "0766358084af32a239800a270699e73404550b4356815b205dd4ca119eababe5",
+      "updates": {
+        "at": 2114.12447
+      }
+    },
+    {
+      "index": 226,
+      "beforeSha256": "b74a25619f26e6ce30fb71d2e0c7a3fbab20734f7d19c41dbc887bf676ca15d0",
+      "updates": {
+        "duration": 6.5039,
+        "at": 2117.05997
+      }
+    },
+    {
+      "index": 227,
+      "beforeSha256": "516b670e78ad2bbc34fcf70af0eeefb77aaaf93f6406e4651bf73f9ee30ec6c9",
+      "updates": {
+        "at": 2123.56387
+      }
+    },
+    {
+      "index": 228,
+      "beforeSha256": "665cad161e6e8f329bb0880e8fa4fabcefd5a4cb99f6f0c5c3f5ec5fa3186ff5",
+      "updates": {
+        "at": 2126.47195
+      }
+    },
+    {
+      "index": 229,
+      "beforeSha256": "cf24d04e2c65bc561af4fce879fa6b6b020de57b8fa75a07441b844503130855",
+      "updates": {
+        "at": 2171.80795
+      }
+    },
+    {
+      "index": 230,
+      "beforeSha256": "976e244166255314f44fdad8b5898c757441b17375d1b7d51c716a78a6fa2ee2",
+      "updates": {
+        "duration": 6.5039,
+        "at": 2174.2862
+      }
+    },
+    {
+      "index": 231,
+      "beforeSha256": "662a7a88889cdddf6838a42519f5f8dba1719e3a2b67599c339ae4504b317d4d",
+      "updates": {
+        "at": 2180.7901
+      }
+    },
+    {
+      "index": 232,
+      "beforeSha256": "6492283f1e40ffd402b3a4f1f476185c18bd3eecee8b9e92c4c21e56a8576d12",
+      "updates": {
+        "duration": 6.5039,
+        "at": 2184.30298
+      }
+    },
+    {
+      "index": 233,
+      "beforeSha256": "9d8ec4e64a3ec7c1e6fe9f05cbccf813c23fd097007dbd17372d302b83a39124",
+      "updates": {
+        "at": 2190.80688
+      }
+    },
+    {
+      "index": 234,
+      "beforeSha256": "8f2ba77480a484fd9d2108a44009a035ffd378b41bf4b6c851626dfddc93a704",
+      "updates": {
+        "duration": 6.5039,
+        "at": 2194.68288
+      }
+    },
+    {
+      "index": 235,
+      "beforeSha256": "f6520b6d1209cb43984ce1278be9c1088e8dbb56c98f708612145f9566e5849d",
+      "updates": {
+        "at": 2201.18678
+      }
+    },
+    {
+      "index": 236,
+      "beforeSha256": "d75b00764f43e86bdfb6b50f59cbb43e60f9b8e6c211d2ba7adc072d6ed6a0a1",
+      "updates": {
+        "at": 2204.34507
+      }
+    },
+    {
+      "index": 237,
+      "beforeSha256": "58e6bd77d74a8bcc185489054d78a391508a595c1323edebf57147986f84e79e",
+      "updates": {
+        "at": 2249.75307
+      }
+    },
+    {
+      "index": 238,
+      "beforeSha256": "3cf16cd618450f6379f525de720f4b552574d84be22ceaafc366e7ed61f94be6",
+      "updates": {
+        "duration": 6.5039,
+        "at": 2252.83728
+      }
+    },
+    {
+      "index": 239,
+      "beforeSha256": "891486a59d32239d931cc3d1dfc08dfc6085534c000267af39296f3ecdfc5d11",
+      "updates": {
+        "at": 2259.34118
+      }
+    },
+    {
+      "index": 240,
+      "beforeSha256": "bdb5c00cb7ba76a01ef1f1f28d80d98e5c50cb3a760362e9ee4aab08ce2a5857",
+      "updates": {
+        "duration": 6.5039,
+        "at": 2263.0428
+      }
+    },
+    {
+      "index": 241,
+      "beforeSha256": "71602fad450948aad3431abce6f9ca97a2894c2d0c8ae301a16eb880c99d3069",
+      "updates": {
+        "at": 2269.5467
+      }
+    },
+    {
+      "index": 242,
+      "beforeSha256": "92bf813370e217156efecd0e6b9925b46419bd0a8649dfcb2610607bee35df7f",
+      "updates": {
+        "duration": 6.5039,
+        "at": 2272.63774
+      }
+    },
+    {
+      "index": 243,
+      "beforeSha256": "315b176d2f7014845a3130dc01a00c0fbf6aadaf2378798cd44936066774d67e",
+      "updates": {
+        "at": 2279.14164
+      }
+    },
+    {
+      "index": 244,
+      "beforeSha256": "a873ef5fa7ecc01076018dfd15cf1ea19e0b71142a1fd8ebe56e5ba46d35850c",
+      "updates": {
+        "at": 2282.29822
+      }
+    },
+    {
+      "index": 245,
+      "beforeSha256": "b16e8102161169aa44549d30210e9114a56ec7c74d532d091b313abe9b2cb731",
+      "updates": {
+        "at": 2321.63422
+      }
+    },
+    {
+      "index": 246,
+      "beforeSha256": "b1bc42824f3bac7bbc2e8edcdc76eb3be24f105a5516c529988e2bbf961febef",
+      "updates": {
+        "duration": 6.5039,
+        "at": 2324.69389
+      }
+    },
+    {
+      "index": 247,
+      "beforeSha256": "9d2bdbae6e0863d542ff1a4b8531856c72a97d92598ee2266e70cc8d69270706",
+      "updates": {
+        "at": 2331.19779
+      }
+    },
+    {
+      "index": 248,
+      "beforeSha256": "4ee253b6ed6e331af471c908c87a5346e048f49d31100b918e0cc0755f1a19ac",
+      "updates": {
+        "at": 2334.90587
+      }
+    },
+    {
+      "index": 249,
+      "beforeSha256": "cddde97f6c0c4b9a7634c9baba87ddf8a59f225daa9bc9afbd2c9dfd1ede2c92",
+      "updates": {
+        "at": 2344.73485
+      }
+    },
+    {
+      "index": 250,
+      "beforeSha256": "45d01e36291aa7ad492773374b2370e3a8a4e2c461a84c831abad2532a52b7f8",
+      "updates": {
+        "duration": 6.5039,
+        "at": 2348.72798
+      }
+    },
+    {
+      "index": 251,
+      "beforeSha256": "f0f1164737b3f62355c5dbdbc3e732c3781708ea158d7d854f7623520ae67f5a",
+      "updates": {
+        "at": 2355.23188
+      }
+    },
+    {
+      "index": 252,
+      "beforeSha256": "39f8258ea70a1fb49749fec155df2404ad5f5564d623d474564946a7317d426b",
+      "updates": {
+        "at": 2358.54013
+      }
+    },
+    {
+      "index": 253,
+      "beforeSha256": "c18546a83d0500d4887e7fd44f391440b6498e0d9e99a09383853b79af9915af",
+      "updates": {
+        "at": 2410.21213
+      }
+    },
+    {
+      "index": 254,
+      "beforeSha256": "d3c29994e2e2c2dbb93e77806de8f7892d04d1936904a63cca86f8913f3ab369",
+      "updates": {
+        "duration": 6.5039,
+        "at": 2413.69834
+      }
+    },
+    {
+      "index": 255,
+      "beforeSha256": "f9b5acc0d4214e82555e654e2017ecd73bab2a765a779e3be44f183c4ce6ee51",
+      "updates": {
+        "at": 2420.20224
+      }
+    },
+    {
+      "index": 256,
+      "beforeSha256": "6af7bc249d7cee49cd3e47743ba0667689c93d03e0b11ff3d9af8b5713307d6a",
+      "updates": {
+        "duration": 6.5039,
+        "at": 2423.63466
+      }
+    },
+    {
+      "index": 257,
+      "beforeSha256": "0fb9d7451f8c000f32ff7d1b2c76ee596ceedcd8f9a9f60a0ad58366f921d119",
+      "updates": {
+        "at": 2430.13856
+      }
+    },
+    {
+      "index": 258,
+      "beforeSha256": "5fd5333b7b7b07bc8b924a14324e5d28b9ffdd0f5f2270eb8be96a01081a20c7",
+      "updates": {
+        "duration": 6.5039,
+        "at": 2433.88381
+      }
+    },
+    {
+      "index": 259,
+      "beforeSha256": "525597164dd42e6c91cf41914855f6006d057a12e8e2eb8d1281f14b0ee36439",
+      "updates": {
+        "at": 2440.38771
+      }
+    },
+    {
+      "index": 260,
+      "beforeSha256": "f44a5951193558b3bcd33093dc944f6489b550543a34882232f4da287bf2845c",
+      "updates": {
+        "at": 2443.6955
+      }
+    },
+    {
+      "index": 261,
+      "beforeSha256": "38fdbfae67717423f4fe79afc4e8ae7900f37227000785d70247fb1523f9d1b1",
+      "updates": {
+        "at": 2491.8875
+      }
+    },
+    {
+      "index": 262,
+      "beforeSha256": "310a9c22fd92b8efbc7da9356480bd9cade04fe958f7abb39d4c0a53e309e3ed",
+      "updates": {
+        "duration": 6.5039,
+        "at": 2495.43704
+      }
+    },
+    {
+      "index": 263,
+      "beforeSha256": "bfc9b71a8e50abff11cbecb31c07ccc86451be7f85f6bebbf58908adf44fbb7f",
+      "updates": {
+        "at": 2501.94094
+      }
+    },
+    {
+      "index": 264,
+      "beforeSha256": "ce71daffde5b8c0bfe87c259dbe0464252f7dcbd6ec58c66fe9f2e79d68bdb46",
+      "updates": {
+        "duration": 6.5039,
+        "at": 2504.78527
+      }
+    },
+    {
+      "index": 265,
+      "beforeSha256": "f902f0c25f73f67ca0be9badd4ab98e9d4f7832b849618be322fcfdfc399a97e",
+      "updates": {
+        "at": 2511.28917
+      }
+    },
+    {
+      "index": 266,
+      "beforeSha256": "dbd81f081238c7085f4cc342a86a03b0beac1ad47204795ab83e9abaefef2a96",
+      "updates": {
+        "duration": 6.5039,
+        "at": 2514.16642
+      }
+    },
+    {
+      "index": 267,
+      "beforeSha256": "18219ce6b660b526f0655670049ffa6eb312a5e47a5bc64d1981f3e3043bf649",
+      "updates": {
+        "groupId": "t03-g053-r2",
+        "at": 2520.67032
+      }
+    },
+    {
+      "index": 268,
+      "beforeSha256": "7c335bb73109325120b38a4ee622f136ca48e91fd1e94e1bc2e3db38d30deb27",
+      "updates": {
+        "src": "audio/exams/test-03/groups/t03-g053-r2/passage.wav",
+        "start": 0,
+        "end": 40.3125,
+        "duration": 40.3125,
+        "groupId": "t03-g053-r2",
+        "at": 2524.05411
+      }
+    },
+    {
+      "index": 269,
+      "beforeSha256": "62f0148c9a130e1e2bcb22503059bf929cdccd6a4063271adedde1c877c98ce1",
+      "updates": {
+        "src": "audio/exams/test-03/questions/Q095/formal-stem-r2.wav",
+        "start": 0,
+        "end": 7.2875,
+        "duration": 7.2875,
+        "groupId": "t03-g053-r2",
+        "questionId": "t03-q095-r2",
+        "at": 2564.36661
+      }
+    },
+    {
+      "index": 270,
+      "beforeSha256": "1d5847de6298fde8ec9d7e17f5368cf7620c9ce09a68edc1a6c307dc940c8311",
+      "updates": {
+        "duration": 6.5039,
+        "groupId": "t03-g053-r2",
+        "questionId": "t03-q095-r2",
+        "at": 2571.65411
+      }
+    },
+    {
+      "index": 271,
+      "beforeSha256": "e347e072f256d81c20433316f4769656418119ea3901ed2bf4cf68e3f3b3d5b3",
+      "updates": {
+        "src": "audio/exams/test-03/questions/Q096/formal-stem-r2.wav",
+        "start": 0,
+        "end": 5.575,
+        "duration": 5.575,
+        "groupId": "t03-g053-r2",
+        "questionId": "t03-q096-r2",
+        "at": 2578.15801
+      }
+    },
+    {
+      "index": 272,
+      "beforeSha256": "81d4a8619404b7e915599abea59f7afb35433a5a86ba023c1d44355fc3ca8b27",
+      "updates": {
+        "duration": 6.5039,
+        "groupId": "t03-g053-r2",
+        "questionId": "t03-q096-r2",
+        "at": 2583.73301
+      }
+    },
+    {
+      "index": 273,
+      "beforeSha256": "894b25005061886a9ac8721aafdf3cc16d904abe0b8645fa58bf38d7103cc3c4",
+      "updates": {
+        "src": "audio/exams/test-03/questions/Q097/formal-stem-r2.wav",
+        "start": 0,
+        "end": 10.0875,
+        "duration": 10.0875,
+        "groupId": "t03-g053-r2",
+        "questionId": "t03-q097-r2",
+        "at": 2590.23691
+      }
+    },
+    {
+      "index": 274,
+      "beforeSha256": "5ba83b22b749d8cb6f5d81e07e90c1462197d4379eb74787416a0cb57a43472b",
+      "updates": {
+        "duration": 6.5039,
+        "groupId": "t03-g053-r2",
+        "questionId": "t03-q097-r2",
+        "at": 2600.32441
+      }
+    },
+    {
+      "index": 275,
+      "beforeSha256": "845f4bc1a02a79c3e15968c4fb785468a9c5d7572415e55461fa6ab512c5fe55",
+      "updates": {
+        "at": 2606.82831
+      }
+    },
+    {
+      "index": 276,
+      "beforeSha256": "42806036da4aa12e01f8d5a5ba761f66eeff98bf66b964a8d2ae1701425fcd47",
+      "updates": {
+        "at": 2610.21339
+      }
+    },
+    {
+      "index": 277,
+      "beforeSha256": "a95bf2c34054e534b9d5716b00bb8a78be87cb076f30223a3c6aff47192254ba",
+      "updates": {
+        "at": 2660.27739
+      }
+    },
+    {
+      "index": 278,
+      "beforeSha256": "609e75c91c066b37888af779a34c376e99a4186d13390b83d49e0ab2cdecb458",
+      "updates": {
+        "duration": 6.5039,
+        "at": 2663.12581
+      }
+    },
+    {
+      "index": 279,
+      "beforeSha256": "6ad86485623c7614583bbcf2b6805bfe17a862d94dd17d437fcb53ab8d3b1d86",
+      "updates": {
+        "at": 2669.62971
+      }
+    },
+    {
+      "index": 280,
+      "beforeSha256": "7c7de81695c51621672ac3f3c6eb249afbf25a83d6a6549e7583122e72883f7d",
+      "updates": {
+        "duration": 6.5039,
+        "at": 2673.62804
+      }
+    },
+    {
+      "index": 281,
+      "beforeSha256": "43a511af87661b2bf754fe0a078d85d2c97bb841bc9f54e7248af349b2e9ad23",
+      "updates": {
+        "at": 2680.13194
+      }
+    },
+    {
+      "index": 282,
+      "beforeSha256": "f12831b4f32bafbc9b41aec1b1c252ecfe0b2127724f3c4eae01da917ca4ea28",
+      "updates": {
+        "duration": 6.50369,
+        "at": 2684.11231
+      }
+    }
+  ]
+}

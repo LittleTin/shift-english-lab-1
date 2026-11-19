@@ -1,0 +1,515 @@
+{
+  "status": "item-verified-offline-not-published",
+  "testId": "test-02",
+  "sourceRef": "7b3e6b75de634152aaa7b3cdce0354514e3f68a7",
+  "oldListeningPlanSha256": "f3fff062ff29d86385b2dbb9aa992518d4130bba47bd1038210d5576e6737a36",
+  "units": {
+    "13": {
+      "oldGroupId": "t02-g013",
+      "oldGroupSha256": "5708285fb119631a088bf23a310c2612b4656452274e29b319af6d6e317554cb",
+      "oldQuestionSha256": "3ec0473ce5c019ad025b0f4dcae81f4a2c604705993883ee83cff9024977eb73",
+      "newQuestion": {
+        "id": "t02-q013-r2",
+        "testId": "test-02",
+        "number": 13,
+        "part": 2,
+        "groupId": "t02-g013-r2",
+        "topic": "business",
+        "difficulty": "intermediate",
+        "tags": [
+          "question-response"
+        ],
+        "prompt": "Listen and choose the best response.",
+        "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+        "options": [
+          {
+            "id": "A",
+            "text": "Certainly, I will send the PDF.",
+            "zh": "當然，我會寄出 PDF 檔。",
+            "whyZh": "這是請求附檔，承諾傳送 PDF 是合適回應。"
+          },
+          {
+            "id": "B",
+            "text": "It was issued on Friday.",
+            "zh": "那張發票是星期五開立的。",
+            "whyZh": "這只說明發票何時開立，沒有回應能否在回信時附上發票。"
+          },
+          {
+            "id": "C",
+            "text": "I'll update the delivery address.",
+            "zh": "我會更新送貨地址。",
+            "whyZh": "這是在說更新送貨地址，未回應能否在回信時附上發票。"
+          }
+        ],
+        "answer": "A",
+        "explanationZh": "這是請求附檔，承諾傳送 PDF 是合適回應。",
+        "evidence": "Could you attach the invoice to your reply?",
+        "vocabulary": [
+          {
+            "term": "attach",
+            "zh": "附加；附上",
+            "note": "attach a file to an email 指把檔案作為電子郵件附件。"
+          }
+        ],
+        "revision": 2
+      },
+      "newGroup": {
+        "id": "t02-g013-r2",
+        "testId": "test-02",
+        "part": 2,
+        "title": "Invoice attachment",
+        "titleZh": "發票附件",
+        "topic": "business",
+        "passage": "Could you attach the invoice to your reply?\nA. Certainly, I will send the PDF.\nB. It was issued on Friday.\nC. I'll update the delivery address.",
+        "passageZh": "你可以回信時附上發票嗎？\nA. 當然，我會寄出 PDF 檔。\nB. 那張發票是星期五開立的。\nC. 我會更新送貨地址。",
+        "audioScript": "Could you attach the invoice to your reply?\nA. Certainly, I will send the PDF.\nB. It was issued on Friday.\nC. I'll update the delivery address.",
+        "turns": [
+          {
+            "voice": "male",
+            "text": "Could you attach the invoice to your reply?"
+          },
+          {
+            "voice": "female",
+            "text": "A. Certainly, I will send the PDF. B. It was issued on Friday. C. I'll update the delivery address."
+          }
+        ],
+        "audio": "audio/exams/test-02/groups/t02-g013-r2/practice-passage.wav",
+        "duration": 14.1725,
+        "audioSpeakers": [
+          {
+            "speaker": "male",
+            "role": "male",
+            "locale": "en-AU",
+            "modelVoice": "en-AU-WilliamNeural"
+          },
+          {
+            "speaker": "female",
+            "role": "female",
+            "locale": "en-AU",
+            "modelVoice": "en-AU-NatashaNeural"
+          }
+        ],
+        "audioStart": 0,
+        "audioEnd": 14.1725
+      },
+      "assets": {
+        "formal": {
+          "sourceFile": "t02-g013-formal.wav",
+          "path": "audio/exams/test-02/groups/t02-g013-r2/formal-passage.wav",
+          "sha256": "1fa6e5c678f725f54024554f379cc324a33d17c3f0d2faee9af08715fcf0b266",
+          "samples": 333840,
+          "hz": 24000,
+          "seconds": 13.91,
+          "speech": "Could you attach the invoice to your reply?\nA. Certainly, I will send the PDF.\nB. It was issued on Friday.\nC. I'll update the delivery address.",
+          "speakers": [
+            {
+              "speaker": "male",
+              "role": "male",
+              "locale": "en-US",
+              "modelVoice": "en-US-GuyNeural"
+            },
+            {
+              "speaker": "female",
+              "role": "female",
+              "locale": "en-US",
+              "modelVoice": "en-US-JennyNeural"
+            }
+          ],
+          "oldSource": {
+            "file": "audio/formal-v2/test-02-05.mp3",
+            "start": 0.5,
+            "end": 17.9,
+            "sha256": "c7b7fc1976b4ae94a7727516098eada098fb02f3aa3015e20ea6b2d182ba3ab9",
+            "role": "passage",
+            "timelineAt": 379.60672,
+            "questionId": null,
+            "voices": [
+              {
+                "speaker": "male",
+                "locale": "en-US",
+                "role": "male",
+                "modelVoice": "en-US-GuyNeural"
+              },
+              {
+                "speaker": "female",
+                "locale": "en-US",
+                "role": "female",
+                "modelVoice": "en-US-JennyNeural"
+              }
+            ]
+          }
+        },
+        "practice": {
+          "sourceFile": "t02-g013-practice.wav",
+          "path": "audio/exams/test-02/groups/t02-g013-r2/practice-passage.wav",
+          "sha256": "f9f3d4b4701dac03f8fb3d3f0afdfbe13980fbc507a3e8bbcae854e608b90ec6",
+          "samples": 340140,
+          "hz": 24000,
+          "seconds": 14.1725,
+          "speech": "Could you attach the invoice to your reply?\nA. Certainly, I will send the PDF.\nB. It was issued on Friday.\nC. I'll update the delivery address.",
+          "speakers": [
+            {
+              "speaker": "male",
+              "role": "male",
+              "locale": "en-AU",
+              "modelVoice": "en-AU-WilliamNeural"
+            },
+            {
+              "speaker": "female",
+              "role": "female",
+              "locale": "en-AU",
+              "modelVoice": "en-AU-NatashaNeural"
+            }
+          ],
+          "oldSource": {
+            "file": "audio/azure-v1/test-02-05.mp3",
+            "start": 0.5,
+            "end": 17.996,
+            "sha256": "46cd00e07960a7e43925b982177460df43950d92d80c814bdfdcb12862f8bdbf"
+          }
+        }
+      },
+      "cueSha256": "40855ec4596e341485d639e56055f03e92b319490cbccbb3559e1e2a973c26fe",
+      "answerSha256": "b296c567af86454441f9196e6f5dc804fc1c08bb34eeef5340fb9e26ab5ef4d3",
+      "passageSha256": "b2b03464949ce822c71ef3a43fda026835edd40c3ff3db46daef74cd4eff608a"
+    },
+    "14": {
+      "oldGroupId": "t02-g014",
+      "oldGroupSha256": "01500f931bc5dbc58bfd81564a8a9c81d5ec04ca04a0d3ed0af3ed40d8741851",
+      "oldQuestionSha256": "2593d57c14e063699343ec008d796253ece0c2d7e7a26044e9ea63241f206dc4",
+      "newQuestion": {
+        "id": "t02-q014-r2",
+        "testId": "test-02",
+        "number": 14,
+        "part": 2,
+        "groupId": "t02-g014-r2",
+        "topic": "manufacturing",
+        "difficulty": "intermediate",
+        "tags": [
+          "question-response"
+        ],
+        "prompt": "Listen and choose the best response.",
+        "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+        "options": [
+          {
+            "id": "A",
+            "text": "I will meet her at reception.",
+            "zh": "我會到接待處迎接她。",
+            "whyZh": "對提早抵達的消息，安排迎接是合理的後續行動。"
+          },
+          {
+            "id": "B",
+            "text": "The previous audit report is in the shared folder.",
+            "zh": "上一份稽核報告在共用資料夾裡。",
+            "whyZh": "這只交代上一份報告的存放位置，未回應稽核人員提早抵達的消息。"
+          },
+          {
+            "id": "C",
+            "text": "It is a newer model.",
+            "zh": "這是較新的型號。",
+            "whyZh": "型號新舊與訪客抵達無關。"
+          }
+        ],
+        "answer": "A",
+        "explanationZh": "對提早抵達的消息，安排迎接是合理的後續行動。",
+        "evidence": "The auditor has arrived earlier than expected.",
+        "vocabulary": [
+          {
+            "term": "earlier than expected",
+            "zh": "比預期早",
+            "note": "用來比較實際時間與原先預定或預估時間。"
+          }
+        ],
+        "revision": 2
+      },
+      "newGroup": {
+        "id": "t02-g014-r2",
+        "testId": "test-02",
+        "part": 2,
+        "title": "Auditor arrival",
+        "titleZh": "稽核人員抵達",
+        "topic": "manufacturing",
+        "passage": "The auditor has arrived earlier than expected.\nA. I will meet her at reception.\nB. The previous audit report is in the shared folder.\nC. It is a newer model.",
+        "passageZh": "稽核人員比預期早到了。\nA. 我會到接待處迎接她。\nB. 上一份稽核報告在共用資料夾裡。\nC. 這是較新的型號。",
+        "audioScript": "The auditor has arrived earlier than expected.\nA. I will meet her at reception.\nB. The previous audit report is in the shared folder.\nC. It is a newer model.",
+        "turns": [
+          {
+            "voice": "male",
+            "text": "The auditor has arrived earlier than expected."
+          },
+          {
+            "voice": "female",
+            "text": "A. I will meet her at reception. B. The previous audit report is in the shared folder. C. It is a newer model."
+          }
+        ],
+        "audio": "audio/exams/test-02/groups/t02-g014-r2/practice-passage.wav",
+        "duration": 16.4475,
+        "audioSpeakers": [
+          {
+            "speaker": "male",
+            "role": "male",
+            "locale": "en-IN",
+            "modelVoice": "en-IN-PrabhatNeural"
+          },
+          {
+            "speaker": "female",
+            "role": "female",
+            "locale": "en-IN",
+            "modelVoice": "en-IN-NeerjaNeural"
+          }
+        ],
+        "audioStart": 0,
+        "audioEnd": 16.4475
+      },
+      "assets": {
+        "formal": {
+          "sourceFile": "t02-g014-formal.wav",
+          "path": "audio/exams/test-02/groups/t02-g014-r2/formal-passage.wav",
+          "sha256": "bee7772a1af9a9743594330ae4e567863ac64308e1239ca0c85ae6a7983af325",
+          "samples": 338640,
+          "hz": 24000,
+          "seconds": 14.11,
+          "speech": "The auditor has arrived earlier than expected.\nA. I will meet her at reception.\nB. The previous audit report is in the shared folder.\nC. It is a newer model.",
+          "speakers": [
+            {
+              "speaker": "male",
+              "role": "male",
+              "locale": "en-US",
+              "modelVoice": "en-US-GuyNeural"
+            },
+            {
+              "speaker": "female",
+              "role": "female",
+              "locale": "en-US",
+              "modelVoice": "en-US-JennyNeural"
+            }
+          ],
+          "oldSource": {
+            "file": "audio/formal-v2/test-02-05.mp3",
+            "start": 18.4,
+            "end": 34.888,
+            "sha256": "c7b7fc1976b4ae94a7727516098eada098fb02f3aa3015e20ea6b2d182ba3ab9",
+            "role": "passage",
+            "timelineAt": 405.06312,
+            "questionId": null,
+            "voices": [
+              {
+                "speaker": "male",
+                "locale": "en-US",
+                "role": "male",
+                "modelVoice": "en-US-GuyNeural"
+              },
+              {
+                "speaker": "female",
+                "locale": "en-US",
+                "role": "female",
+                "modelVoice": "en-US-JennyNeural"
+              }
+            ]
+          }
+        },
+        "practice": {
+          "sourceFile": "t02-g014-practice.wav",
+          "path": "audio/exams/test-02/groups/t02-g014-r2/practice-passage.wav",
+          "sha256": "26f067f9130680123ffd1690f53fbc1feb258fee9581b117ccf07fb0de5517e2",
+          "samples": 394740,
+          "hz": 24000,
+          "seconds": 16.4475,
+          "speech": "The auditor has arrived earlier than expected.\nA. I will meet her at reception.\nB. The previous audit report is in the shared folder.\nC. It is a newer model.",
+          "speakers": [
+            {
+              "speaker": "male",
+              "role": "male",
+              "locale": "en-IN",
+              "modelVoice": "en-IN-PrabhatNeural"
+            },
+            {
+              "speaker": "female",
+              "role": "female",
+              "locale": "en-IN",
+              "modelVoice": "en-IN-NeerjaNeural"
+            }
+          ],
+          "oldSource": {
+            "file": "audio/azure-v1/test-02-05.mp3",
+            "start": 18.496,
+            "end": 36.472,
+            "sha256": "46cd00e07960a7e43925b982177460df43950d92d80c814bdfdcb12862f8bdbf"
+          }
+        }
+      },
+      "cueSha256": "242ff58abaa957f89fed23f1852f1d43d47c9ffc5f80b5201e9466bb4cfd2bbe",
+      "answerSha256": "b6a9834131847eee6aefe4812adcb2e52e29ee4047485ae6e98450eb188c948c",
+      "passageSha256": "fc9c8b22cbea43d37a11283364255ff0f76836017f64a325765f962ac43f7c41"
+    },
+    "16": {
+      "oldGroupId": "t02-g016",
+      "oldGroupSha256": "fce8e8ca117367b3bb564e03490a4a64b2508d3f85fadccf35648e934008a0f0",
+      "oldQuestionSha256": "698471ef258f39f0759573581a0b44f0c321c5fdf7c0018e5376ef2a3b1452d5",
+      "newQuestion": {
+        "id": "t02-q016-r2",
+        "testId": "test-02",
+        "number": 16,
+        "part": 2,
+        "groupId": "t02-g016-r2",
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "question-response"
+        ],
+        "prompt": "Listen and choose the best response.",
+        "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+        "options": [
+          {
+            "id": "A",
+            "text": "The installation is scheduled for Tuesday.",
+            "zh": "安裝安排在星期二。",
+            "whyZh": "這只說明何時安裝，未指明該安裝哪個韌體版本。"
+          },
+          {
+            "id": "B",
+            "text": "Use the one listed in the release note.",
+            "zh": "使用發行說明列出的版本。",
+            "whyZh": "回答應採用哪個版本的判定依據。"
+          },
+          {
+            "id": "C",
+            "text": "The update takes about ten minutes.",
+            "zh": "更新大約要花十分鐘。",
+            "whyZh": "這只說明更新所需的時間，沒有指出該安裝哪個韌體版本。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "回答應採用哪個版本的判定依據。",
+        "evidence": "Which firmware version should we install?",
+        "vocabulary": [
+          {
+            "term": "release note",
+            "zh": "發行說明",
+            "note": "記錄軟體或韌體版本變更與使用資訊的文件。"
+          }
+        ],
+        "revision": 2
+      },
+      "newGroup": {
+        "id": "t02-g016-r2",
+        "testId": "test-02",
+        "part": 2,
+        "title": "Firmware version",
+        "titleZh": "韌體版本",
+        "topic": "technology",
+        "passage": "Which firmware version should we install?\nA. The installation is scheduled for Tuesday.\nB. Use the one listed in the release note.\nC. The update takes about ten minutes.",
+        "passageZh": "我們應該安裝哪個韌體版本？\nA. 安裝安排在星期二。\nB. 使用發行說明列出的版本。\nC. 更新大約要花十分鐘。",
+        "audioScript": "Which firmware version should we install?\nA. The installation is scheduled for Tuesday.\nB. Use the one listed in the release note.\nC. The update takes about ten minutes.",
+        "turns": [
+          {
+            "voice": "male",
+            "text": "Which firmware version should we install?"
+          },
+          {
+            "voice": "female",
+            "text": "A. The installation is scheduled for Tuesday. B. Use the one listed in the release note. C. The update takes about ten minutes."
+          }
+        ],
+        "audio": "audio/exams/test-02/groups/t02-g016-r2/practice-passage.wav",
+        "duration": 15.9225,
+        "audioSpeakers": [
+          {
+            "speaker": "male",
+            "role": "male",
+            "locale": "en-SG",
+            "modelVoice": "en-SG-WayneNeural"
+          },
+          {
+            "speaker": "female",
+            "role": "female",
+            "locale": "en-SG",
+            "modelVoice": "en-SG-LunaNeural"
+          }
+        ],
+        "audioStart": 0,
+        "audioEnd": 15.9225
+      },
+      "assets": {
+        "formal": {
+          "sourceFile": "t02-g016-formal.wav",
+          "path": "audio/exams/test-02/groups/t02-g016-r2/formal-passage.wav",
+          "sha256": "934746cc761d44289907734dda83bbc8194ccbcd6d65fbe2a0ef59c4b65d0ae7",
+          "samples": 350640,
+          "hz": 24000,
+          "seconds": 14.61,
+          "speech": "Which firmware version should we install?\nA. The installation is scheduled for Tuesday.\nB. Use the one listed in the release note.\nC. The update takes about ten minutes.",
+          "speakers": [
+            {
+              "speaker": "male",
+              "role": "male",
+              "locale": "en-US",
+              "modelVoice": "en-US-GuyNeural"
+            },
+            {
+              "speaker": "female",
+              "role": "female",
+              "locale": "en-US",
+              "modelVoice": "en-US-JennyNeural"
+            }
+          ],
+          "oldSource": {
+            "file": "audio/formal-v2/test-02-06.mp3",
+            "start": 0.5,
+            "end": 17.06,
+            "sha256": "ac26ea4dd5b9d5dc3ee9c947c77d49d98b88b3eca21f2abac194c217c460553e",
+            "role": "passage",
+            "timelineAt": 454.9943,
+            "questionId": null,
+            "voices": [
+              {
+                "speaker": "male",
+                "locale": "en-US",
+                "role": "male",
+                "modelVoice": "en-US-GuyNeural"
+              },
+              {
+                "speaker": "female",
+                "locale": "en-US",
+                "role": "female",
+                "modelVoice": "en-US-JennyNeural"
+              }
+            ]
+          }
+        },
+        "practice": {
+          "sourceFile": "t02-g016-practice.wav",
+          "path": "audio/exams/test-02/groups/t02-g016-r2/practice-passage.wav",
+          "sha256": "c3db05e67b1117c13d6532d69173ced2d0de661d665611699313677eee90f101",
+          "samples": 382140,
+          "hz": 24000,
+          "seconds": 15.9225,
+          "speech": "Which firmware version should we install?\nA. The installation is scheduled for Tuesday.\nB. Use the one listed in the release note.\nC. The update takes about ten minutes.",
+          "speakers": [
+            {
+              "speaker": "male",
+              "role": "male",
+              "locale": "en-SG",
+              "modelVoice": "en-SG-WayneNeural"
+            },
+            {
+              "speaker": "female",
+              "role": "female",
+              "locale": "en-SG",
+              "modelVoice": "en-SG-LunaNeural"
+            }
+          ],
+          "oldSource": {
+            "file": "audio/azure-v1/test-02-06.mp3",
+            "start": 0.5,
+            "end": 18.428,
+            "sha256": "c8b6d5ddf2cd18dc4b40063efccbe0dece355af41f1f12f4c573f18164303769"
+          }
+        }
+      },
+      "cueSha256": "f3ffd904c683a55c7e600ea24fe4da1c581d21b04b75658361ee9ce5adaa441a",
+      "answerSha256": "dc4fe7fd9689fb76a9f39344d1b4e314e44d97074d7975b930a61855b5139bf1",
+      "passageSha256": "ae1b651c7775537544d6729e2aa78785ebb05b9e478d17496f05b3b97b21eb70"
+    }
+  }
+}

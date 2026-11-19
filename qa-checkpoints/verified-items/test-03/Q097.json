@@ -1,0 +1,171 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "editorial": "Independent text-only solves found B/D/A; final compact-clear removes redundant details, preserves all answer-bearing clauses and leaves stems, options and keys unchanged. Bilingual compact passage matches the final script.",
+    "audio": "On exact retained passage SHA: unprompted Whisper small recovered full script exactly; independent Vosk recovered all material clauses including presentation, no stairs, before eleven, eleven thirty and the food/drink versus individual billing distinction; its only reported word error was instead→in state, exact in Whisper. Each original numbered stem was corroborated by both engines.",
+    "timing": "Full 2700.000 seconds, exact shared practice and formal passage, individual stem, 29 ordinary Part4 pauses reduced slightly, minimum 6.50369 s; graphic answer duration unchanged. This is offline item verification, not final browser compatibility."
+  },
+  "activeQuestion": {
+    "id": "t03-q097-r2",
+    "testId": "test-03",
+    "number": 97,
+    "part": 4,
+    "groupId": "t03-g053-r2",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "restaurant",
+      "context"
+    ],
+    "prompt": "The office is paying for food only. Which billing request meets the office’s requirement and can be fulfilled by the restaurant?",
+    "promptZh": "公司只支付餐點費用。哪項帳單安排既符合公司的要求，也是餐廳能做到的？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Send one bill for all the food to the office.",
+        "zh": "把所有餐點併成一張帳單寄給公司。",
+        "whyZh": "餐廳能按餐點和飲料分開結帳，因此可把全體餐點列在同一張帳單上寄給公司，不包含飲料。"
+      },
+      {
+        "id": "B",
+        "text": "Send a separate food bill for each guest to the office.",
+        "zh": "每位來賓的餐點各開一張帳單寄給公司。",
+        "whyZh": "餐廳能依費用類別分帳，但不能替每位來賓分開開帳單。"
+      },
+      {
+        "id": "C",
+        "text": "Combine food and drinks on a single bill for the office.",
+        "zh": "把餐點與飲料列在同一張帳單寄給公司。",
+        "whyZh": "即便能合併，公司也只支付餐點，合併會讓帳單包含公司不負擔的費用。"
+      },
+      {
+        "id": "D",
+        "text": "Send the drinks bill to the office and let guests pay for food individually.",
+        "zh": "把飲料帳單寄給公司，並讓來賓各自支付餐點。",
+        "whyZh": "顛倒了公司負擔的費用，而且餐廳不能按人分成多張帳單。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "餐廳能按餐點和飲料分開結帳，因此可把全體餐點列在同一張帳單上寄給公司，不包含飲料。",
+    "evidence": "we can put food on one bill and drinks on another, but we can’t bill guests individually. Tell me which of those two bills should go to your office.",
+    "vocabulary": [
+      {
+        "term": "bill someone individually",
+        "zh": "個別向某人開帳單",
+        "note": "bill 可當動詞，表示向某人開帳單；這裡區分按費用種類與按來賓分帳。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t03-q097",
+    "testId": "test-03",
+    "number": 97,
+    "part": 4,
+    "groupId": "t03-g053",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "detail"
+    ],
+    "prompt": "What does the speaker say about payment?",
+    "promptZh": "講者如何說明付款？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The full amount is overdue.",
+        "zh": "全款已逾期。",
+        "whyZh": "沒有欠款，反而不用現在付。"
+      },
+      {
+        "id": "B",
+        "text": "A second deposit must be paid today.",
+        "zh": "今天必須補第二筆訂金。",
+        "whyZh": "現有訂金已足夠。"
+      },
+      {
+        "id": "C",
+        "text": "The salad requires an extra fee.",
+        "zh": "沙拉需加價。",
+        "whyZh": "替代菜與原菜同價。"
+      },
+      {
+        "id": "D",
+        "text": "No additional payment is currently required.",
+        "zh": "目前不需額外付款。",
+        "whyZh": "原訂金仍有效，無需此刻再付。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "原訂金仍有效，無需此刻再付。",
+    "evidence": "You don't need to pay anything now; your existing deposit still covers the booking.",
+    "vocabulary": [
+      {
+        "term": "substitution",
+        "zh": "替代選項",
+        "note": "以沙拉替換原先無法提供的前菜。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g053-r2",
+    "testId": "test-03",
+    "part": 4,
+    "title": "A restaurant follow-up call",
+    "titleZh": "餐廳的確認電話",
+    "topic": "business",
+    "passage": "F1: Hello, this is Grace from the Cedar Kitchen about Saturday's lunch. The elevator to the upstairs room is out of service. For your presentation, we can set up a screen in the garden room instead. You can get there without using stairs.\n\nWe can refrigerate your cake if the kitchen staff get it before eleven. Your friend plans to arrive at eleven thirty. She may need to keep the cake with her until serving time.\n\nWe can put food and drinks on separate bills. Individual bills are not available. Tell me which bill should go to your office.",
+    "passageZh": "您好，我是 Cedar Kitchen 的 Grace，來電確認星期六的午餐。通往樓上房間的電梯停用了。配合你們的簡報，我們可以改在花園廳設置螢幕，到那裡不用走樓梯。\n\n如果廚房人員在十一點前收到蛋糕，我們可以幫你們冷藏。你的朋友預計十一點半抵達。她可能得先把蛋糕留在身邊，等要上桌時再拿出來。\n\n餐點和飲料可以分開結帳，但不能為每位客人分別開帳單。請告訴我哪一張帳單要寄給你們公司。",
+    "audioScript": "Hello, this is Grace from the Cedar Kitchen about Saturday's lunch. The elevator to the upstairs room is out of service. For your presentation, we can set up a screen in the garden room instead. You can get there without using stairs.\n\nWe can refrigerate your cake if the kitchen staff get it before eleven. Your friend plans to arrive at eleven thirty. She may need to keep the cake with her until serving time.\n\nWe can put food and drinks on separate bills. Individual bills are not available. Tell me which bill should go to your office.",
+    "turns": [
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "Hello, this is Grace from the Cedar Kitchen about Saturday's lunch. The elevator to the upstairs room is out of service. For your presentation, we can set up a screen in the garden room instead. You can get there without using stairs.\n\nWe can refrigerate your cake if the kitchen staff get it before eleven. Your friend plans to arrive at eleven thirty. She may need to keep the cake with her until serving time.\n\nWe can put food and drinks on separate bills. Individual bills are not available. Tell me which bill should go to your office."
+      }
+    ],
+    "audioSpeakers": [
+      {
+        "speaker": "F1",
+        "locale": "en-SG",
+        "role": "female",
+        "modelVoice": "en-SG-LunaNeural"
+      }
+    ],
+    "audio": "audio/exams/test-03/groups/t03-g053-r2/passage.wav",
+    "audioStart": 0,
+    "audioEnd": 40.3125,
+    "duration": 40.3125
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/exams/test-03/groups/t03-g053-r2/passage.wav",
+      "start": 0,
+      "end": 40.3125,
+      "assetSha256": "ccfdfeffd1be8e88b2ccb7f2ee2f00a3c034d5a59f364288bcc7904586777c11",
+      "speech": "Hello, this is Grace from the Cedar Kitchen about Saturday's lunch. The elevator to the upstairs room is out of service. For your presentation, we can set up a screen in the garden room instead. You can get there without using stairs.\n\nWe can refrigerate your cake if the kitchen staff get it before eleven. Your friend plans to arrive at eleven thirty. She may need to keep the cake with her until serving time.\n\nWe can put food and drinks on separate bills. Individual bills are not available. Tell me which bill should go to your office."
+    },
+    {
+      "mode": "question",
+      "path": "audio/exams/test-03/questions/Q097/formal-stem-r2.wav",
+      "start": 0,
+      "end": 10.0875,
+      "assetSha256": "3db709a9b0b076fe253b1c8da53175f0f120af80ffb263f4686dadd16c606cd0",
+      "speech": "Number 97. The office is paying for food only. Which billing request meets the office’s requirement and can be fulfilled by the restaurant?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/exams/test-03/groups/t03-g053-r2/passage.wav",
+      "start": 0,
+      "end": 40.3125,
+      "assetSha256": "ccfdfeffd1be8e88b2ccb7f2ee2f00a3c034d5a59f364288bcc7904586777c11",
+      "speech": "Hello, this is Grace from the Cedar Kitchen about Saturday's lunch. The elevator to the upstairs room is out of service. For your presentation, we can set up a screen in the garden room instead. You can get there without using stairs.\n\nWe can refrigerate your cake if the kitchen staff get it before eleven. Your friend plans to arrive at eleven thirty. She may need to keep the cake with her until serving time.\n\nWe can put food and drinks on separate bills. Individual bills are not available. Tell me which bill should go to your office."
+    }
+  ],
+  "imageSha256": null
+}

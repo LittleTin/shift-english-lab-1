@@ -1,0 +1,157 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Interpret the pragmatic next action of an unexpectedly early arrival; meeting the visitor naturally follows, whereas the relevant-sounding prior audit report does not address the arrival. Correct key unchanged across revisions. Edited EN and zh-TW responses and per-choice rationales based on guarded editorial records.",
+    "audio": "Whisper small.en exact A/B/C and bodies in both modes. Independent Vosk corroborated relevant meanings and comparative “newer” in “newer model”.",
+    "association": "Exact SHA-bound formal and practice WAVs, separate throughout with original accent and roles per mode, dialogue keyed to the same written options. Kept original number cue audio and scored answer window; exact offline structural/timing validation only."
+  },
+  "activeQuestion": {
+    "id": "t02-q014-r2",
+    "testId": "test-02",
+    "number": 14,
+    "part": 2,
+    "groupId": "t02-g014-r2",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "I will meet her at reception.",
+        "zh": "我會到接待處迎接她。",
+        "whyZh": "對提早抵達的消息，安排迎接是合理的後續行動。"
+      },
+      {
+        "id": "B",
+        "text": "The previous audit report is in the shared folder.",
+        "zh": "上一份稽核報告在共用資料夾裡。",
+        "whyZh": "這只交代上一份報告的存放位置，未回應稽核人員提早抵達的消息。"
+      },
+      {
+        "id": "C",
+        "text": "It is a newer model.",
+        "zh": "這是較新的型號。",
+        "whyZh": "型號新舊與訪客抵達無關。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "對提早抵達的消息，安排迎接是合理的後續行動。",
+    "evidence": "The auditor has arrived earlier than expected.",
+    "vocabulary": [
+      {
+        "term": "earlier than expected",
+        "zh": "比預期早",
+        "note": "用來比較實際時間與原先預定或預估時間。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t02-q014",
+    "testId": "test-02",
+    "number": 14,
+    "part": 2,
+    "groupId": "t02-g014",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "I will meet her at reception.",
+        "zh": "我會到接待處迎接她。",
+        "whyZh": "對提早抵達的消息，安排迎接是合理的後續行動。"
+      },
+      {
+        "id": "B",
+        "text": "Yes, the factory is expected.",
+        "zh": "是的，工廠被預期。",
+        "whyZh": "句意不完整，也沒有回應稽核人員抵達的消息。"
+      },
+      {
+        "id": "C",
+        "text": "It is a newer model.",
+        "zh": "這是較新的型號。",
+        "whyZh": "型號新舊與訪客抵達無關。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "對提早抵達的消息，安排迎接是合理的後續行動。",
+    "evidence": "The auditor has arrived earlier than expected.",
+    "vocabulary": [
+      {
+        "term": "earlier than expected",
+        "zh": "比預期早",
+        "note": "用來比較實際時間與原先預定或預估時間。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g014-r2",
+    "testId": "test-02",
+    "part": 2,
+    "title": "Auditor arrival",
+    "titleZh": "稽核人員抵達",
+    "topic": "manufacturing",
+    "passage": "The auditor has arrived earlier than expected.\nA. I will meet her at reception.\nB. The previous audit report is in the shared folder.\nC. It is a newer model.",
+    "passageZh": "稽核人員比預期早到了。\nA. 我會到接待處迎接她。\nB. 上一份稽核報告在共用資料夾裡。\nC. 這是較新的型號。",
+    "audioScript": "The auditor has arrived earlier than expected.\nA. I will meet her at reception.\nB. The previous audit report is in the shared folder.\nC. It is a newer model.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "The auditor has arrived earlier than expected."
+      },
+      {
+        "voice": "female",
+        "text": "A. I will meet her at reception. B. The previous audit report is in the shared folder. C. It is a newer model."
+      }
+    ],
+    "audio": "audio/exams/test-02/groups/t02-g014-r2/practice-passage.wav",
+    "duration": 16.4475,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "role": "male",
+        "locale": "en-IN",
+        "modelVoice": "en-IN-PrabhatNeural"
+      },
+      {
+        "speaker": "female",
+        "role": "female",
+        "locale": "en-IN",
+        "modelVoice": "en-IN-NeerjaNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 16.4475
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/exams/test-02/groups/t02-g014-r2/formal-passage.wav",
+      "start": 0,
+      "end": 14.11,
+      "assetSha256": "bee7772a1af9a9743594330ae4e567863ac64308e1239ca0c85ae6a7983af325",
+      "speech": "The auditor has arrived earlier than expected.\nA. I will meet her at reception.\nB. The previous audit report is in the shared folder.\nC. It is a newer model."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/exams/test-02/groups/t02-g014-r2/practice-passage.wav",
+      "start": 0,
+      "end": 16.4475,
+      "assetSha256": "26f067f9130680123ffd1690f53fbc1feb258fee9581b117ccf07fb0de5517e2",
+      "speech": "The auditor has arrived earlier than expected.\nA. I will meet her at reception.\nB. The previous audit report is in the shared folder.\nC. It is a newer model."
+    }
+  ],
+  "imageSha256": null
+}

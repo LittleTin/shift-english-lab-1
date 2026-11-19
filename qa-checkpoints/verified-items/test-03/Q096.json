@@ -1,0 +1,171 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "editorial": "Independent text-only solves found B/D/A; final compact-clear removes redundant details, preserves all answer-bearing clauses and leaves stems, options and keys unchanged. Bilingual compact passage matches the final script.",
+    "audio": "On exact retained passage SHA: unprompted Whisper small recovered full script exactly; independent Vosk recovered all material clauses including presentation, no stairs, before eleven, eleven thirty and the food/drink versus individual billing distinction; its only reported word error was instead→in state, exact in Whisper. Each original numbered stem was corroborated by both engines.",
+    "timing": "Full 2700.000 seconds, exact shared practice and formal passage, individual stem, 29 ordinary Part4 pauses reduced slightly, minimum 6.50369 s; graphic answer duration unchanged. This is offline item verification, not final browser compatibility."
+  },
+  "activeQuestion": {
+    "id": "t03-q096-r2",
+    "testId": "test-03",
+    "number": 96,
+    "part": 4,
+    "groupId": "t03-g053-r2",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "restaurant",
+      "context"
+    ],
+    "prompt": "What would allow the restaurant to refrigerate the cake?",
+    "promptZh": "怎麼做才能請餐廳代為冷藏蛋糕？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Serving the cake before the meal",
+        "zh": "在用餐前先上蛋糕",
+        "whyZh": "用餐或吃蛋糕的時間不影響廚房收件；廚房只在十一點前收。"
+      },
+      {
+        "id": "B",
+        "text": "Having the friend hand the cake to staff at 11:30",
+        "zh": "請朋友在上午 11 點半把蛋糕交給廚房人員",
+        "whyZh": "上午 11 點半已超過廚房上午 11 點的收件截止時間。"
+      },
+      {
+        "id": "C",
+        "text": "Moving the lunch to a later time",
+        "zh": "延後午餐時間",
+        "whyZh": "延後用餐不會延後廚房收蛋糕的時間。"
+      },
+      {
+        "id": "D",
+        "text": "Having the friend deliver the cake at 10:50",
+        "zh": "請朋友在上午 10 點 50 分送蛋糕來",
+        "whyZh": "上午 10 點 50 分比原定抵達時間早，也在廚房上午 11 點的收件截止前，所以可以交給廚房冷藏。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "上午 10 點 50 分比原定抵達時間早，也在廚房上午 11 點的收件截止前，所以可以交給廚房冷藏。",
+    "evidence": "the kitchen staff can only take it in before eleven. Your friend is due at eleven thirty.",
+    "vocabulary": [
+      {
+        "term": "be due at",
+        "zh": "預計在某個時間抵達",
+        "note": "這裡指原先安排的抵達時間，不是廚房收件截止時間。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t03-q096",
+    "testId": "test-03",
+    "number": 96,
+    "part": 4,
+    "groupId": "t03-g053",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "detail"
+    ],
+    "prompt": "What information is needed by Monday evening?",
+    "promptZh": "星期一晚上前需要什麼資訊？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The number of vegetarian meals",
+        "zh": "素食餐數量",
+        "whyZh": "要提早確認以便廚房訂食材。"
+      },
+      {
+        "id": "B",
+        "text": "The table length",
+        "zh": "桌子長度",
+        "whyZh": "餐廳已安排長桌，不需提供尺寸。"
+      },
+      {
+        "id": "C",
+        "text": "The guests' arrival city",
+        "zh": "客人抵達的城市",
+        "whyZh": "沒有交通資訊要求。"
+      },
+      {
+        "id": "D",
+        "text": "The name of a new supplier",
+        "zh": "新供應商名稱",
+        "whyZh": "客人不需要找食材供應商。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "要提早確認以便廚房訂食材。",
+    "evidence": "the final number of vegetarian meals",
+    "vocabulary": [
+      {
+        "term": "substitution",
+        "zh": "替代選項",
+        "note": "以沙拉替換原先無法提供的前菜。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g053-r2",
+    "testId": "test-03",
+    "part": 4,
+    "title": "A restaurant follow-up call",
+    "titleZh": "餐廳的確認電話",
+    "topic": "business",
+    "passage": "F1: Hello, this is Grace from the Cedar Kitchen about Saturday's lunch. The elevator to the upstairs room is out of service. For your presentation, we can set up a screen in the garden room instead. You can get there without using stairs.\n\nWe can refrigerate your cake if the kitchen staff get it before eleven. Your friend plans to arrive at eleven thirty. She may need to keep the cake with her until serving time.\n\nWe can put food and drinks on separate bills. Individual bills are not available. Tell me which bill should go to your office.",
+    "passageZh": "您好，我是 Cedar Kitchen 的 Grace，來電確認星期六的午餐。通往樓上房間的電梯停用了。配合你們的簡報，我們可以改在花園廳設置螢幕，到那裡不用走樓梯。\n\n如果廚房人員在十一點前收到蛋糕，我們可以幫你們冷藏。你的朋友預計十一點半抵達。她可能得先把蛋糕留在身邊，等要上桌時再拿出來。\n\n餐點和飲料可以分開結帳，但不能為每位客人分別開帳單。請告訴我哪一張帳單要寄給你們公司。",
+    "audioScript": "Hello, this is Grace from the Cedar Kitchen about Saturday's lunch. The elevator to the upstairs room is out of service. For your presentation, we can set up a screen in the garden room instead. You can get there without using stairs.\n\nWe can refrigerate your cake if the kitchen staff get it before eleven. Your friend plans to arrive at eleven thirty. She may need to keep the cake with her until serving time.\n\nWe can put food and drinks on separate bills. Individual bills are not available. Tell me which bill should go to your office.",
+    "turns": [
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "Hello, this is Grace from the Cedar Kitchen about Saturday's lunch. The elevator to the upstairs room is out of service. For your presentation, we can set up a screen in the garden room instead. You can get there without using stairs.\n\nWe can refrigerate your cake if the kitchen staff get it before eleven. Your friend plans to arrive at eleven thirty. She may need to keep the cake with her until serving time.\n\nWe can put food and drinks on separate bills. Individual bills are not available. Tell me which bill should go to your office."
+      }
+    ],
+    "audioSpeakers": [
+      {
+        "speaker": "F1",
+        "locale": "en-SG",
+        "role": "female",
+        "modelVoice": "en-SG-LunaNeural"
+      }
+    ],
+    "audio": "audio/exams/test-03/groups/t03-g053-r2/passage.wav",
+    "audioStart": 0,
+    "audioEnd": 40.3125,
+    "duration": 40.3125
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/exams/test-03/groups/t03-g053-r2/passage.wav",
+      "start": 0,
+      "end": 40.3125,
+      "assetSha256": "ccfdfeffd1be8e88b2ccb7f2ee2f00a3c034d5a59f364288bcc7904586777c11",
+      "speech": "Hello, this is Grace from the Cedar Kitchen about Saturday's lunch. The elevator to the upstairs room is out of service. For your presentation, we can set up a screen in the garden room instead. You can get there without using stairs.\n\nWe can refrigerate your cake if the kitchen staff get it before eleven. Your friend plans to arrive at eleven thirty. She may need to keep the cake with her until serving time.\n\nWe can put food and drinks on separate bills. Individual bills are not available. Tell me which bill should go to your office."
+    },
+    {
+      "mode": "question",
+      "path": "audio/exams/test-03/questions/Q096/formal-stem-r2.wav",
+      "start": 0,
+      "end": 5.575,
+      "assetSha256": "7a6ec89da5a55a60306a0519fbb1a615a2a2c9c5200a392a6c89f57d045a29e7",
+      "speech": "Number 96. What would allow the restaurant to refrigerate the cake?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/exams/test-03/groups/t03-g053-r2/passage.wav",
+      "start": 0,
+      "end": 40.3125,
+      "assetSha256": "ccfdfeffd1be8e88b2ccb7f2ee2f00a3c034d5a59f364288bcc7904586777c11",
+      "speech": "Hello, this is Grace from the Cedar Kitchen about Saturday's lunch. The elevator to the upstairs room is out of service. For your presentation, we can set up a screen in the garden room instead. You can get there without using stairs.\n\nWe can refrigerate your cake if the kitchen staff get it before eleven. Your friend plans to arrive at eleven thirty. She may need to keep the cake with her until serving time.\n\nWe can put food and drinks on separate bills. Individual bills are not available. Tell me which bill should go to your office."
+    }
+  ],
+  "imageSha256": null
+}
