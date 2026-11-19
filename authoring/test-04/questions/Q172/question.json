@@ -1,0 +1,52 @@
+{
+  "id": "t04-q172",
+  "testId": "test-04",
+  "part": 7,
+  "number": 172,
+  "revision": 1,
+  "groupId": "t04-r-p7-07",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "single-document",
+    "business"
+  ],
+  "prompt": "A panel member avoiding soy sees an orange dot on cup MB. What should the score sheet show?",
+  "promptZh": "一位不吃大豆的小組成員在 MB 杯上看到橘色圓點。評分表應如何填？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "A zero for MB and no entries for the other drinks",
+      "zh": "MB 填零分，其餘飲料都不填",
+      "whyZh": "未試飲不等於零分；其他可試飲的飲料仍可照常評分。"
+    },
+    {
+      "id": "B",
+      "text": "The product name instead of MB, followed by a score",
+      "zh": "用品名取代 MB，後面填分數",
+      "whyZh": "評分只用代碼，且須跳過含大豆的 MB。"
+    },
+    {
+      "id": "C",
+      "text": "“Not tasted” for MB, while the other drinks can still receive scores",
+      "zh": "MB 標「未試飲」，其餘飲料仍可評分",
+      "whyZh": "橘點表示含大豆，須跳過 MB 並註記；不是取消整場試飲。"
+    },
+    {
+      "id": "D",
+      "text": "A request for a fresh MB cup before the member records any scores",
+      "zh": "要求換一杯 MB，再開始打分",
+      "whyZh": "換杯是用於杯貼掉落；同代碼的樣品仍含大豆。"
+    }
+  ],
+  "explanationZh": "橘點表示含大豆，須跳過 MB 並註記；不是取消整場試飲。",
+  "evidence": "The tasting team compares three drinks without seeing the brand names. Use only the two-letter codes printed on the cup stickers when recording scores. The product names remain in a sealed envelope until every panel member has finished scoring. | An orange dot on a sticker means the drink contains soy. Panel members avoiding soy should skip that sample but can score the others. Mark “not tasted” for any skipped cup; do not enter a numeric score.",
+  "vocabulary": [
+    {
+      "term": "not tasted",
+      "zh": "未試飲",
+      "note": "表示未品嚐，因此不填分數。"
+    }
+  ]
+}
