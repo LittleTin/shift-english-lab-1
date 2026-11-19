@@ -1,0 +1,146 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "C: agreement conditional on returning by one directly responds to the lunch discussion proposal; A mentions a menu and B gives service hours. Unprompted full formal-source word context confirms “The cafeteria serves lunch until 2”; practice already corroborated exact printed option. All prompts/options/cues and answers fine. Taiwanese Mandarin option C and group translation corrected to make one o’clock inclusive. Full original MP3 source, local Whisper base.en, unprompted -sow -ml 1 -ojf. Word timestamps are estimates, not acoustic boundaries. Captures include original neighboring speech and only logged excerpts are attributed to rows.",
+  "activeQuestion": {
+    "id": "t03-q020",
+    "testId": "test-03",
+    "number": 20,
+    "part": 2,
+    "groupId": "t03-g020",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "question_response"
+    ],
+    "prompt": "Why do we not discuss the proposal over lunch?",
+    "promptZh": "我們何不吃午餐時討論提案？",
+    "options": [
+      {
+        "id": "A",
+        "text": "A lunch menu is included.",
+        "zh": "附有午餐菜單。",
+        "whyZh": "沒有接受或拒絕邀請。"
+      },
+      {
+        "id": "B",
+        "text": "The cafeteria serves lunch until two.",
+        "zh": "員工餐廳供應午餐到兩點。",
+        "whyZh": "只描述供餐時間，沒有回應共同討論的提議。"
+      },
+      {
+        "id": "C",
+        "text": "That works, provided we are back by one.",
+        "zh": "可以，只要我們最晚一點回來。",
+        "whyZh": "接受午餐討論的建議並提出時間條件。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "接受午餐討論的建議並提出時間條件。",
+    "evidence": "That works, provided we are back by one.",
+    "vocabulary": [
+      {
+        "term": "provided",
+        "zh": "只要",
+        "note": "That works, provided we are back by one."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g020",
+    "testId": "test-03",
+    "part": 2,
+    "title": "Lunch invitation",
+    "titleZh": "午餐邀請",
+    "topic": "business",
+    "passage": "Why do we not discuss the proposal over lunch? A. A lunch menu is included. B. The cafeteria serves lunch until two. C. That works, provided we are back by one.",
+    "passageZh": "我們何不吃午餐時討論提案？\nA. 附有午餐菜單。\nB. 員工餐廳供應午餐到兩點。\nC. 可以，只要我們最晚一點回來。",
+    "audioScript": "Why do we not discuss the proposal over lunch? A. A lunch menu is included. B. The cafeteria serves lunch until two. C. That works, provided we are back by one.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Why do we not discuss the proposal over lunch?"
+      },
+      {
+        "voice": "female",
+        "text": "A. A lunch menu is included. B. The cafeteria serves lunch until two. C. That works, provided we are back by one."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-07.mp3",
+    "duration": 16.272,
+    "audioStart": 17.584,
+    "audioEnd": 33.856,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-GB",
+        "role": "male",
+        "modelVoice": "en-GB-RyanNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-GB",
+        "role": "female",
+        "modelVoice": "en-GB-SoniaNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "start": 22.50483,
+      "end": 23.47275,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "20.",
+      "continuousCueEvidence": {
+        "start": 11.11983,
+        "end": 23.47275,
+        "speech": "Number 11, number 12, number 13, number 14, number 15, number 16, number 17, number 18, number 19, number 20."
+      }
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-03-07.mp3",
+      "start": 17.584,
+      "end": 35.56,
+      "assetSha256": "562475e7b5ac748b67203d1b3be40ecdfbc689adb8b54f49e6f29a460665f7b2",
+      "speech": "Why do we not discuss the proposal over lunch? A. A lunch menu is included. B. The cafeteria service lunch until 2. C. That works, provided we are back by 1.",
+      "retries": {
+        "020-passage-retry-0.85": "b. The cafeteria surf's lunch until 2. c.",
+        "020-passage-retry-1.15": "b. The cafeteria's search lunch until 2. c.",
+        "020-passage-retry-1": "b. The cafeteria's search lunch until 2. c."
+      },
+      "wholeSourceObserved": {
+        "path": "audio/formal-v2/test-03-07.mp3",
+        "start": 17.584,
+        "end": 35.56,
+        "assetSha256": "562475e7b5ac748b67203d1b3be40ecdfbc689adb8b54f49e6f29a460665f7b2",
+        "expected": "serves",
+        "observations": [
+          {
+            "word": "serves",
+            "wordSourceRange": [
+              27.77,
+              28.21
+            ],
+            "tokenProbabilities": [
+              0.893972
+            ]
+          }
+        ],
+        "sourceWordTranscript": "we not discuss the proposal over lunch? A. A lunch menu is included. B. The cafeteria serves lunch until 2.  C. That works, provided we are back by 1. How did"
+      }
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-07.mp3",
+      "start": 17.584,
+      "end": 33.856,
+      "assetSha256": "42e4260cf430886f15c784570a175290a7c7de7444b92ba80e561a72afa9f173",
+      "speech": "Why do we not discuss the proposal over lunch? A. A lunch menu is included. B. The cafeteria serves lunch until 2. C. That works, provided we are back by one."
+    }
+  ]
+}

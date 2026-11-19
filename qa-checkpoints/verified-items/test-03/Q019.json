@@ -1,0 +1,168 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "A: the technician expects the lift back in service before five; B locates the speaker’s workplace and C gives lift capacity. Both independently decoded full-source containers now say “the lift to be working again,” correcting isolated ASR “left”. The two actual scheduled ranges independently decode to byte-identical mono PCM WAV. Both mode content and all three printed explanations verified. Full original MP3 source, local Whisper base.en, unprompted -sow -ml 1 -ojf. Word timestamps are estimates, not acoustic boundaries. Captures include original neighboring speech and only logged excerpts are attributed to rows.",
+  "activeQuestion": {
+    "id": "t03-q019",
+    "testId": "test-03",
+    "number": 19,
+    "part": 2,
+    "groupId": "t03-g019",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "question_response"
+    ],
+    "prompt": "When do you expect the lift to be working again?",
+    "promptZh": "你預計電梯什麼時候能恢復運作？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The technician said before five.",
+        "zh": "技師說五點以前。",
+        "whyZh": "明確回答預期恢復時間。"
+      },
+      {
+        "id": "B",
+        "text": "I work on the top floor.",
+        "zh": "我在頂樓工作。",
+        "whyZh": "working 的字面干擾，非電梯修復時間。"
+      },
+      {
+        "id": "C",
+        "text": "It carries up to eight people.",
+        "zh": "它最多可載八人。",
+        "whyZh": "提供載客量而非時間。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "明確回答預期恢復時間。",
+    "evidence": "The technician said before five.",
+    "vocabulary": [
+      {
+        "term": "technician",
+        "zh": "技師",
+        "note": "The technician said before five."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g019",
+    "testId": "test-03",
+    "part": 2,
+    "title": "Repair deadline",
+    "titleZh": "維修期限",
+    "topic": "daily",
+    "passage": "When do you expect the lift to be working again? A. The technician said before five. B. I work on the top floor. C. It carries up to eight people.",
+    "passageZh": "你預計電梯什麼時候能恢復運作？\nA. 技師說五點以前。\nB. 我在頂樓工作。\nC. 它最多可載八人。",
+    "audioScript": "When do you expect the lift to be working again? A. The technician said before five. B. I work on the top floor. C. It carries up to eight people.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "When do you expect the lift to be working again?"
+      },
+      {
+        "voice": "male",
+        "text": "A. The technician said before five. B. I work on the top floor. C. It carries up to eight people."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-07.mp3",
+    "duration": 16.584,
+    "audioStart": 0.5,
+    "audioEnd": 17.084,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-US",
+        "role": "female",
+        "modelVoice": "en-US-JennyNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-US",
+        "role": "male",
+        "modelVoice": "en-US-GuyNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "start": 21.20508,
+      "end": 22.25483,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 19.",
+      "continuousCueEvidence": {
+        "start": 11.11983,
+        "end": 23.47275,
+        "speech": "Number 11, number 12, number 13, number 14, number 15, number 16, number 17, number 18, number 19, number 20."
+      }
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-03-07.mp3",
+      "start": 0.5,
+      "end": 17.084,
+      "assetSha256": "562475e7b5ac748b67203d1b3be40ecdfbc689adb8b54f49e6f29a460665f7b2",
+      "speech": "When do you expect the left to be working again? A. The technician said before five. B. I work on the top floor. C. It carries up to eight people.",
+      "retries": {
+        "019-passage-retry-0.85": "When do you expect the left to be working again? A",
+        "019-passage-retry-1.15": "When do you expect the left to be working again?",
+        "019-passage-retry-1": "When do you expect the left to be working again?"
+      },
+      "wholeSourceObserved": {
+        "path": "audio/formal-v2/test-03-07.mp3",
+        "start": 0.5,
+        "end": 17.084,
+        "assetSha256": "562475e7b5ac748b67203d1b3be40ecdfbc689adb8b54f49e6f29a460665f7b2",
+        "expected": "lift",
+        "observations": [
+          {
+            "word": "lift",
+            "wordSourceRange": [
+              1.74,
+              2.12
+            ],
+            "tokenProbabilities": [
+              0.655808
+            ]
+          }
+        ],
+        "sourceWordTranscript": "do you expect the lift to be working again? A. The technician said before 5. B. I work on the top floor. C. It carries up to 8 people. Why"
+      },
+      "exactScheduledClipPcmSha256": "01e6469b96884fb35e2519dafd3576da04a977dd81522eb74def92745360c1c7"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-07.mp3",
+      "start": 0.5,
+      "end": 17.084,
+      "assetSha256": "42e4260cf430886f15c784570a175290a7c7de7444b92ba80e561a72afa9f173",
+      "speech": "When do you expect the left to be working again? A. The technician said before five. B. I work on the top floor. C. It carries up to eight people.",
+      "wholeSourceObserved": {
+        "path": "audio/azure-v1/test-03-07.mp3",
+        "start": 0.5,
+        "end": 17.084,
+        "assetSha256": "42e4260cf430886f15c784570a175290a7c7de7444b92ba80e561a72afa9f173",
+        "expected": "lift",
+        "observations": [
+          {
+            "word": "lift",
+            "wordSourceRange": [
+              1.56,
+              1.91
+            ],
+            "tokenProbabilities": [
+              0.706827
+            ]
+          }
+        ],
+        "sourceWordTranscript": "do you expect the lift to be working again? A. The technician said before five. B. I work on the top floor. C. It carries up to eight people."
+      },
+      "exactScheduledClipPcmSha256": "01e6469b96884fb35e2519dafd3576da04a977dd81522eb74def92745360c1c7"
+    }
+  ]
+}
