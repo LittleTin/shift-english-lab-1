@@ -7,6 +7,79 @@ from tempfile import TemporaryDirectory
 EXAMS=tuple(f'test-{n:02}' for n in range(1,4))
 MEDIA={'audio','image','archivedImage','src'}
 KIND='replace-whole-reading-group-by-exact-old-scope'
+SINGLE_KIND='replace-standalone-part-5-by-exact-old-scope'
+PENDING='saved-pending-replacement'
+ADOPTED='reserved-inactive-in-work-candidate'
+
+def splice_part5(repo,ref,packs,index,candidates,old_equal,retained,splices):
+    rows=index.get('standalone',[])
+    need(isinstance(rows,list),'standalone reserve index must be an array')
+    seen=set()
+    for entry in rows:
+        need(isinstance(entry,dict) and set(entry)=={'sourceTest','number','path','status'},
+             'invalid standalone reserve index row')
+        t,n,status=entry['sourceTest'],entry['number'],entry['status']
+        need(t in EXAMS and type(n) is int and 101<=n<=130
+             and status in (PENDING,ADOPTED),'invalid standalone Part 5 scope')
+        key=(t,n)
+        need(key not in seen,'duplicate standalone reserve')
+        seen.add(key)
+        name=f'Q{n:03}'
+        prefix=f'question-reserve/{t}/{name}'
+        mp=prefix+'/manifest.json'
+        vp=prefix+'/verification.json'
+        qp=prefix+'/question.json'
+        ep=f'qa-checkpoints/verified-items/{t}/{name}.json'
+        need(entry['path']==mp.removeprefix('question-reserve/'),'standalone reserve index path mismatch')
+        m=repo.row(ref,mp)
+        fixed={'status':status,'sourceStillActive':status==PENDING, 'sourceTest':t,'sourceQuestionNumber':n,
+               'sourceEvidencePath':ep,'media':[],'format':'standalone-text-only-part-5','notActiveHere':True}
+        need(all(k in m and type(m[k]) is type(v) and m[k]==v for k,v in fixed.items()),'standalone reserve manifest mismatch')
+        prior=m['sourceCommit']
+        raw=repo.read(prior,ep)
+        need(repo.git('rev-parse',f'{prior}:{ep}').decode().strip()==m['sourceEvidenceGitBlob']
+             and hashlib.sha256(raw).hexdigest()==m['sourceEvidenceSha256']
+             and raw==repo.read(ref,vp),'standalone original verification lost provenance')
+        check=strict(raw); old=check['activeQuestion']
+        need(check.get('status')=='verified-item-not-published' and check.get('scope')=='reading'
+             and check.get('group') is None and old==repo.row(ref,qp)
+             and (old['testId'],old['number'],old['part'],old.get('groupId'))==(t,n,5,None)
+             and not list(media(old)) and type(old['revision']) is int
+             and (old['id'],old['revision'],old['answer'])==
+                 (m['sourceQuestionId'],m['sourceQuestionRevision'],m['sourceAnswer']),
+             'standalone old question identity or archive mismatch')
+        if status==PENDING:
+            need(key not in candidates and 'replacementQuestionId' not in m,'inconsistent pending standalone reserve')
+            continue
+        need(key in candidates,'missing standalone reconstruction')
+        r=candidates.pop(key)
+        qid=m['replacementQuestionId']
+        need(type(r.get('questionNumber')) is int
+             and (r['questionNumber'],r['previousReserve'],r['replacementEvidence'],r['sourceQuestionId'],r['newQuestionId'])==
+                 (n,mp,ep,old['id'],qid),'standalone recipe scope drift')
+        questions=packs[t]['questions']; pos=n-1
+        current=questions[pos]
+        need(sum(q.get('number')==n for q in questions)==1
+             and (current['testId'],current['number'],current['part'],current.get('groupId'))==(t,n,5,None)
+             and old_equal(f'{t}/{name}',current,old),'stale or unordered standalone baseline')
+        current_evidence=repo.row(ref,ep); q=current_evidence['activeQuestion']
+        need(current_evidence.get('status')=='verified-item-not-published' and current_evidence.get('scope')=='reading'
+             and current_evidence.get('group') is None and bool(current_evidence.get('checks'))
+             and current_evidence.get('originalQuestion')==old
+             and current_evidence.get('retiredSourceReference')==vp,
+             'standalone replacement verification link mismatch')
+        stem=lambda u: ' '.join(u['prompt'].split()).casefold()
+        need((q['testId'],q['number'],q['part'],q.get('groupId'),q['id'],q['revision'])==(t,n,5,None,qid,old['revision']+1)
+             and type(q['revision']) is int and isinstance(qid,str) and re.fullmatch(r'[a-z0-9-]+',qid)
+             and qid not in (current['id'],old['id']) and not list(media(q)) and stem(q)!=stem(old)
+             and dig(q)==r['questionCanonicalSha256'],'standalone replacement identity/digest mismatch')
+        questions[pos]=q
+        for f in (mp,vp,qp):retained[f]=repo.read(ref,f)
+        splices.append({'testId':t,'numbers':[n],'oldGroupId':None,'newGroupId':None,
+                        'reservedManifest':mp,'oldIds':[old['id']],
+                        'supersededBaselineIds':[current['id']],'newIds':[qid]})
+    need(not candidates,'unmatched standalone reconstruction')
+
 def need(ok,msg):
     if not ok: raise ValueError(msg)
 def dump(x):
@@ -50,10 +123,17 @@ def rotate(repo,ref,baseline,index,exact_old_overrides=None):
     need(set(baseline)==set(EXAMS),'baseline must contain all three packs')
     packs=copy.deepcopy(baseline); retained={}; splices=[]; retired_legacy={t:set() for t in EXAMS}; extra_retired_ids=set()
     dirs=repo.git('ls-tree','-r','--name-only',ref,'qa-checkpoints/reconstructions').decode().splitlines()
-    candidates={}
+    candidates={}; standalone_candidates={}
     for p in dirs:
         match=re.fullmatch(r'qa-checkpoints/reconstructions/(test-0[1-3])/([a-z0-9-]+)\.json',p)
         r=repo.row(ref,p)
+        if r.get('kind')==SINGLE_KIND:
+            one=re.fullmatch(r'qa-checkpoints/reconstructions/(test-0[1-3])/Q(1[012][0-9]|130)\.json',p)
+            need(one and r.get('notPublished') is True,'bad standalone recipe scope '+p)
+            key=(one[1],int(one[2]))
+            need(key not in standalone_candidates,'duplicate standalone recipe')
+            standalone_candidates[key]=r
+            continue
         if r.get('kind')!=KIND:continue
         need(match and r.get('sourceGroupId')==match[2] and r.get('notPublished') is True,'bad scope '+p)
         candidates[(match[1],match[2])]=r
@@ -138,6 +218,7 @@ def rotate(repo,ref,baseline,index,exact_old_overrides=None):
         retained[prefix+'/group.json']=repo.read(ref,prefix+'/group.json')
         splices.append({'testId':t,'numbers':nums,'oldGroupId':gid,'newGroupId':ng,'reservedManifest':mp,'oldIds':[v['questionId'] for v in m['questions']],'newIds':[q['id'] for q in replacements]})
     need(not candidates,'unmatched reconstruction')
+    splice_part5(repo,ref,packs,index,standalone_candidates,old_equal,retained,splices)
     need(not overrides,'unused baseline override: '+','.join(overrides))
     active=set()
     all_retired={q['id'] for p in baseline.values() for q in p.get('legacyQuestions',[])}|extra_retired_ids
@@ -152,7 +233,7 @@ def rotate(repo,ref,baseline,index,exact_old_overrides=None):
         active|=ids
         need(set(media(p))==set(media(baseline[t])),f'{t}: media route drift')
         need(p.get('legacyQuestions',[])==[q for q in baseline[t].get('legacyQuestions',[]) if q['id'] not in retired_legacy[t]] and p['listeningPlan']==baseline[t]['listeningPlan'],f'{t}: historical route or listening plan drift')
-    need(not active&{qid for row in splices for qid in row['oldIds']},'retired ID remains active')
+    need(not active&{qid for row in splices for qid in row['oldIds']+row.get('supersededBaselineIds',[])},'retired ID remains active')
     return packs,splices,retained
 
 def check_site_and_ledger(repo,base,ref,site,ledger,splices):
