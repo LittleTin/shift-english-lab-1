@@ -1,0 +1,57 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "Only ‘unique to that unit’ supports traceability and the explicit never-shared restriction. ‘unrelated’ defeats the identification purpose, ‘identical’ equates different categories, and ‘common’ contradicts nonsharing. The Chinese stem preserves both unit assignment and nonsharing; all glosses and rationales checked.",
+  "activeQuestion": {
+    "id": "t01-q122",
+    "testId": "test-01",
+    "number": 122,
+    "part": 5,
+    "groupId": null,
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "grammar"
+    ],
+    "prompt": "For traceability, each unit receives a serial number that is ____ to that unit and never shared with another.",
+    "promptZh": "為了便於追溯，每台設備都會獲配一組____該設備、絕不與其他設備共用的序號。",
+    "options": [
+      {
+        "text": "unrelated",
+        "zh": "無關的",
+        "whyZh": "unrelated to 表示與該設備無關，不能達成逐台識別追溯。",
+        "id": "A"
+      },
+      {
+        "text": "identical",
+        "zh": "相同的",
+        "whyZh": "identical to that unit 會把序號與設備本身等同，也不表示單台獨有。",
+        "id": "B"
+      },
+      {
+        "text": "unique",
+        "zh": "專屬於",
+        "whyZh": "be unique to 表示某對象獨有，並與不共用的描述一致。",
+        "id": "C"
+      },
+      {
+        "text": "common",
+        "zh": "共用的",
+        "whyZh": "common to 表示多個對象共有，與 never shared 矛盾。",
+        "id": "D"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "be unique to 表示某對象獨有，並與不共用的描述一致。",
+    "evidence": "a serial number that is unique to that unit and never shared with another",
+    "vocabulary": [
+      {
+        "term": "traceability",
+        "zh": "可追溯性",
+        "note": "能透過紀錄追查產品、材料或作業歷程。"
+      }
+    ],
+    "revision": 1
+  }
+}
