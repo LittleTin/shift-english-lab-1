@@ -1,0 +1,115 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "audio": "Both actual audio editions match all four choices in order after punctuation/case normalization.",
+    "imageQuestionAndZh": "A riderless bicycle stands beside a tree. No riding uphill, ceiling suspension, truck loading or cutting. The unique key, zh-TW stem and all options/rationales match."
+  },
+  "activeQuestion": {
+    "id": "t01-q006",
+    "testId": "test-01",
+    "number": 6,
+    "part": 1,
+    "groupId": "t01-g006",
+    "topic": "daily",
+    "difficulty": "foundation",
+    "tags": [
+      "daily",
+      "photo_description"
+    ],
+    "prompt": "Look at the picture and choose the statement that best describes it.",
+    "promptZh": "請看圖片，選出最符合畫面的敘述。",
+    "options": [
+      {
+        "id": "A",
+        "text": "A cyclist is riding up a hill.",
+        "zh": "一名自行車騎士正騎車上坡。",
+        "whyZh": "自行車是停放狀態，沒有騎士正在上坡。"
+      },
+      {
+        "id": "B",
+        "text": "A bicycle is parked next to a tree.",
+        "zh": "一輛自行車停在樹旁。",
+        "whyZh": "畫面呈現自行車停放於樹旁；parked 描述靜止的停放狀態，next to 描述相鄰位置。"
+      },
+      {
+        "id": "C",
+        "text": "A bicycle is hanging from a ceiling.",
+        "zh": "一輛自行車吊在天花板上。",
+        "whyZh": "自行車停在樹旁的地面，不是懸吊於室內天花板。"
+      },
+      {
+        "id": "D",
+        "text": "A tree is being cut down beside a truck.",
+        "zh": "一棵樹正在卡車旁被砍倒。",
+        "whyZh": "圖中沒有砍樹作業，也不是以卡車為主體的場景。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "畫面呈現自行車停放於樹旁；parked 描述靜止的停放狀態，next to 描述相鄰位置。",
+    "evidence": "A bicycle is parked next to a tree.",
+    "vocabulary": [
+      {
+        "term": "parked",
+        "zh": "停放著的",
+        "note": "表示車輛已停妥的狀態。"
+      },
+      {
+        "term": "next to",
+        "zh": "在……旁邊",
+        "note": "用於描述兩個物件相鄰。"
+      }
+    ],
+    "revision": 1
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-01-03.mp3",
+      "start": 0.5,
+      "end": 19.82,
+      "assetSha256": "dae8ab62c26bc90912756a6bbca8aef70c3b1b5dbc5ae8250d8e42faf7ad12f1",
+      "speech": "A. A cyclist is riding up a hill.\n B. A bicycle is parked next to a tree.\n C. A bicycle is hanging from a ceiling.\n D. A tree is being cut down beside a truck."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-03.mp3",
+      "start": 0.5,
+      "end": 20.732,
+      "assetSha256": "afe6a1ec980196216810980a58e273e9228d2b27356d70078f0e2bb888e4569b",
+      "speech": "A. A cyclist is riding up a hill.\n B. A bicycle is parked next to a tree.\n C. A bicycle is hanging from a ceiling.\n D. A tree is being cut down beside a truck."
+    }
+  ],
+  "group": {
+    "id": "t01-g006",
+    "testId": "test-01",
+    "part": 1,
+    "title": "A parked bicycle",
+    "titleZh": "停放的自行車",
+    "topic": "daily",
+    "passage": "A. A cyclist is riding up a hill. B. A bicycle is parked next to a tree. C. A bicycle is hanging from a ceiling. D. A tree is being cut down beside a truck.",
+    "passageZh": "A. 一名自行車騎士正騎車上坡。\nB. 一輛自行車停在樹旁。\nC. 一輛自行車吊在天花板上。\nD. 一棵樹正在卡車旁被砍倒。",
+    "audioScript": "A. A cyclist is riding up a hill. B. A bicycle is parked next to a tree. C. A bicycle is hanging from a ceiling. D. A tree is being cut down beside a truck.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "A. A cyclist is riding up a hill. B. A bicycle is parked next to a tree. C. A bicycle is hanging from a ceiling. D. A tree is being cut down beside a truck."
+      }
+    ],
+    "imageScene": "bicycle",
+    "audio": "audio/azure-v1/test-01-03.mp3",
+    "duration": 20.232,
+    "image": "assets/scenes/bicycle.svg",
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-HK",
+        "role": "female",
+        "modelVoice": "en-HK-YanNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 20.732
+  },
+  "imageSha256": "7f66f43b13b8e6cce8b1ad1868e6a0b53a194470498c68c72be43e2f86d09ad8"
+}
