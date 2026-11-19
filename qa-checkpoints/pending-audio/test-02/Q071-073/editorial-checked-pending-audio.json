@@ -1,0 +1,637 @@
+{
+  "status": "editorial-reviewed-still-held-no-synthesis-and-no-audio-approval",
+  "scope": "whole-held-graphic-free-Test02-Part4-Q071-073",
+  "baselineCommit": "8b45475885b83062f4a50a7f6589bf9757b71792",
+  "rawPack": {
+    "path": "data/test-02.json",
+    "sha256": "dd9b42242b14c96999e2e6621f1b15850a7156dbc4271cd1b4ecff31ed83e090",
+    "gitBlobSha1": "a4e1f2d423ff0099c6caa69ca9eeff0a20d397ce"
+  },
+  "oldGroupGuard": {
+    "id": "t02-g045",
+    "canonicalSha256": "034b3ae8d76d0eb41493b0cd2407eb383b03553679e7ff193d00bd6f09bfd28f",
+    "audio": {
+      "path": "audio/azure-v1/test-02-22.mp3",
+      "sha256": "9d53180853af9771c175446fdce1fd0bbc4ba52004742fb80f624e33baa21610",
+      "gitBlobSha1": "ffd9c6f5e10fc9c066d5adb04326993921525814"
+    },
+    "practiceRange": [
+      0.5,
+      31.316
+    ],
+    "voice": [
+      {
+        "speaker": "female",
+        "locale": "en-PH",
+        "role": "female",
+        "modelVoice": "en-PH-RosaNeural"
+      }
+    ]
+  },
+  "oldQuestions": [
+    {
+      "number": 71,
+      "id": "t02-q071",
+      "revision": 1,
+      "answer": "C",
+      "canonicalSha256": "f0c4622975aa0a314c2a98f2643bd1bc59c43192ee7849c4840b74f6c18ce720"
+    },
+    {
+      "number": 72,
+      "id": "t02-q072",
+      "revision": 1,
+      "answer": "C",
+      "canonicalSha256": "6134e3448c36308326a3915dc5a98c440bba0d044e40f665d3b7fded21a59399"
+    },
+    {
+      "number": 73,
+      "id": "t02-q073",
+      "revision": 1,
+      "answer": "B",
+      "canonicalSha256": "e672b1db56e1950d0930883257808627eb185d44da1bb022262ebfb59c836842"
+    }
+  ],
+  "existingHold": {
+    "path": "qa-checkpoints/pending-audio/test-02/q071-073-q077-079.json",
+    "sha256": "0cba33aac06d5df76e9622afeb05985afe02ab483560dd57fb6c5b4a2052a542",
+    "gitBlobSha1": "d38a2f57eaf3bf48e40d76af3de08a52d4904b10"
+  },
+  "holdInventory": {
+    "path": "qa-checkpoints/pending-audio/inventory-0605/test-02-04.json",
+    "sha256": "8019eca9c45c6fe50abcf2e85ff352b8d600bfd5f6608c381aa3815745acca2e",
+    "gitBlobSha1": "e33aaaa3926ad16589692cdaa5604e4ef926a1f4"
+  },
+  "oldRecordedMediaConforms": null,
+  "oldOfficial": {
+    "audioEdition": "toeic-1",
+    "duration": 2700,
+    "groupFrameArraySha256Canonical": "80e452d9edb51e898d97a63e0b7a5b6211269c2803f6230d771158bf724e9d3a",
+    "frames": [
+      {
+        "src": "audio/formal-v2/narrator-02.mp3",
+        "start": 16.408,
+        "end": 31.384,
+        "duration": 14.976,
+        "kind": "audio",
+        "role": "direction",
+        "part": 4,
+        "groupId": "t02-g045",
+        "at": 1880.54127
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 21.79892,
+        "end": 25.20708,
+        "duration": 3.40817,
+        "kind": "audio",
+        "role": "cue",
+        "part": 4,
+        "groupId": "t02-g045",
+        "at": 1895.51727
+      },
+      {
+        "src": "audio/azure-v1/test-02-22.mp3",
+        "start": 0.5,
+        "end": 31.316,
+        "duration": 30.816,
+        "kind": "audio",
+        "role": "passage",
+        "part": 4,
+        "groupId": "t02-g045",
+        "at": 1898.92544,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-PH",
+            "role": "female",
+            "modelVoice": "en-PH-RosaNeural"
+          }
+        ]
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 25.45708,
+        "end": 28.23242,
+        "duration": 2.77533,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q071",
+        "at": 1929.74144
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q071",
+        "at": 1932.51677
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 28.48242,
+        "end": 31.23904,
+        "duration": 2.75663,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q072",
+        "at": 1943.80088
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q072",
+        "at": 1946.55751
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 31.48904,
+        "end": 34.94821,
+        "duration": 3.45917,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q073",
+        "at": 1957.84162
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q073",
+        "at": 1961.30079
+      }
+    ],
+    "resources": [
+      {
+        "path": "audio/azure-v1/test-02-22.mp3",
+        "sha256": "9d53180853af9771c175446fdce1fd0bbc4ba52004742fb80f624e33baa21610",
+        "gitBlobSha1": "ffd9c6f5e10fc9c066d5adb04326993921525814"
+      },
+      {
+        "path": "audio/formal-v2/narrator-02.mp3",
+        "sha256": "000f8c613a6bbc765516c11a020fc3298c92e9dfc7695110e68b0eab8aba0a63",
+        "gitBlobSha1": "74e829940b327e618061ffbe02562d40ee201144"
+      },
+      {
+        "path": "audio/formal/test-02-cues-04.mp3",
+        "sha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+        "gitBlobSha1": "156d99bfdf54d863fd98463417a43e0eb6573cec"
+      }
+    ]
+  },
+  "oldPrevious": {
+    "audioEdition": null,
+    "duration": 2700,
+    "groupFrameArraySha256Canonical": "d1a90dae84cf975be1043e5b18e52243a330dfe9bc06cc1fa4a95e7f936ac366",
+    "frames": [
+      {
+        "src": "audio/formal/directions-01.mp3",
+        "start": 50.94896,
+        "end": 67.48587,
+        "duration": 16.53692,
+        "kind": "audio",
+        "role": "direction",
+        "part": 4,
+        "groupId": "t02-g045",
+        "at": 1826.97992
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 21.79892,
+        "end": 25.20708,
+        "duration": 3.40817,
+        "kind": "audio",
+        "role": "cue",
+        "part": 4,
+        "groupId": "t02-g045",
+        "at": 1843.51684
+      },
+      {
+        "src": "audio/t02-g045.mp3",
+        "start": 0,
+        "end": 26.784,
+        "duration": 26.784,
+        "kind": "audio",
+        "role": "passage",
+        "part": 4,
+        "groupId": "t02-g045",
+        "at": 1846.92501
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 25.45708,
+        "end": 28.23242,
+        "duration": 2.77533,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q071",
+        "at": 1873.70901
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q071",
+        "at": 1876.48434
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 28.48242,
+        "end": 31.23904,
+        "duration": 2.75663,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q072",
+        "at": 1890.78025
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q072",
+        "at": 1893.53688
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 31.48904,
+        "end": 34.94821,
+        "duration": 3.45917,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q073",
+        "at": 1907.83279
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 14.29591,
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q073",
+        "at": 1911.29196
+      }
+    ],
+    "resources": [
+      {
+        "path": "audio/formal/directions-01.mp3",
+        "sha256": "b3b9090be490cc2669bc3d58450d1e256075192db52c452110a97d108765447a",
+        "gitBlobSha1": "dbe28a021a0732f532de113f5ab09b81ce7a6a32"
+      },
+      {
+        "path": "audio/formal/test-02-cues-04.mp3",
+        "sha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+        "gitBlobSha1": "156d99bfdf54d863fd98463417a43e0eb6573cec"
+      },
+      {
+        "path": "audio/t02-g045.mp3",
+        "sha256": "8ba32dac9364307e71cb9f631672118d6661a39da1335892561b3eaeeca0170a",
+        "gitBlobSha1": "1e73ad7f00ddecdb0a8b4688d0a61ba2a359b869"
+      }
+    ]
+  },
+  "oldAlternate": {
+    "azure-1": {
+      "audioEdition": "azure-1",
+      "duration": 2700,
+      "groupFrameArraySha256Canonical": "56654846549c84200d2fbb2a9fba3f4409c85bb98d0e232010ad980df85390a5",
+      "frames": [
+        {
+          "src": "audio/formal/directions-01.mp3",
+          "start": 50.94896,
+          "end": 67.48587,
+          "duration": 16.53692,
+          "kind": "audio",
+          "role": "direction",
+          "part": 4,
+          "groupId": "t02-g045",
+          "at": 1890.36872
+        },
+        {
+          "src": "audio/formal/test-02-cues-04.mp3",
+          "start": 21.79892,
+          "end": 25.20708,
+          "duration": 3.40817,
+          "kind": "audio",
+          "role": "cue",
+          "part": 4,
+          "groupId": "t02-g045",
+          "at": 1906.90564
+        },
+        {
+          "src": "audio/azure-v1/test-02-22.mp3",
+          "start": 0.5,
+          "end": 31.316,
+          "duration": 30.816,
+          "kind": "audio",
+          "role": "passage",
+          "part": 4,
+          "groupId": "t02-g045",
+          "at": 1910.31381
+        },
+        {
+          "src": "audio/formal/test-02-cues-04.mp3",
+          "start": 25.45708,
+          "end": 28.23242,
+          "duration": 2.77533,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t02-g045",
+          "questionId": "t02-q071",
+          "at": 1941.12981
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 11.40535,
+          "part": 4,
+          "groupId": "t02-g045",
+          "questionId": "t02-q071",
+          "at": 1943.90514
+        },
+        {
+          "src": "audio/formal/test-02-cues-04.mp3",
+          "start": 28.48242,
+          "end": 31.23904,
+          "duration": 2.75663,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t02-g045",
+          "questionId": "t02-q072",
+          "at": 1955.31049
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 11.40535,
+          "part": 4,
+          "groupId": "t02-g045",
+          "questionId": "t02-q072",
+          "at": 1958.06712
+        },
+        {
+          "src": "audio/formal/test-02-cues-04.mp3",
+          "start": 31.48904,
+          "end": 34.94821,
+          "duration": 3.45917,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t02-g045",
+          "questionId": "t02-q073",
+          "at": 1969.47247
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 11.40535,
+          "part": 4,
+          "groupId": "t02-g045",
+          "questionId": "t02-q073",
+          "at": 1972.93164
+        }
+      ],
+      "resources": [
+        {
+          "path": "audio/azure-v1/test-02-22.mp3",
+          "sha256": "9d53180853af9771c175446fdce1fd0bbc4ba52004742fb80f624e33baa21610",
+          "gitBlobSha1": "ffd9c6f5e10fc9c066d5adb04326993921525814"
+        },
+        {
+          "path": "audio/formal/directions-01.mp3",
+          "sha256": "b3b9090be490cc2669bc3d58450d1e256075192db52c452110a97d108765447a",
+          "gitBlobSha1": "dbe28a021a0732f532de113f5ab09b81ce7a6a32"
+        },
+        {
+          "path": "audio/formal/test-02-cues-04.mp3",
+          "sha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+          "gitBlobSha1": "156d99bfdf54d863fd98463417a43e0eb6573cec"
+        }
+      ]
+    }
+  },
+  "newDraftGroup": {
+    "id": "t02-g045-r2",
+    "testId": "test-02",
+    "part": 4,
+    "title": "Packaging line shift briefing",
+    "titleZh": "包裝線班前說明",
+    "topic": "manufacturing",
+    "passage": "Before the morning shift starts, here’s the plan for the packaging line. The printer at station two is being serviced until ten. The printer at station one can print carton labels, but only the printer at station two can print the small labels for individual units. Use station one for this morning’s cartons. If you run out of the small labels already printed for your own batch, set the remaining units aside until station two reopens. Don’t borrow labels from another batch, even when the product is the same. The courier’s morning run leaves at eleven sharp. Put closed cartons with a signed inspection card on the pickup shelf. If your carton is ready but the inspector hasn’t signed its card yet, leave it on the workbench. It can go on the afternoon run if the inspector signs the card in time.",
+    "passageZh": "早班開始前，先說明今天包裝線的安排。二號工作站的印表機維修到上午十點。一號工作站的印表機能印外箱標籤，但單件產品用的小標籤只有二號工作站的印表機能印。今天上午的外箱標籤請到一號工作站列印。如果用完為自己這批產品預先印好的小標籤，請先把剩下的產品放在一旁，等二號工作站恢復運作。即使產品相同，也不可以借用其他批次的標籤。快遞上午這趟準時十一點出發。外箱封好且檢驗卡已簽名後，才能移到取件架上。如果外箱已備妥，但檢驗員還沒簽卡，請先把它留在工作台上。如果檢驗員及時簽了卡，下午那趟就可以寄出。",
+    "audioScript": "Before the morning shift starts, here’s the plan for the packaging line. The printer at station two is being serviced until ten. The printer at station one can print carton labels, but only the printer at station two can print the small labels for individual units. Use station one for this morning’s cartons. If you run out of the small labels already printed for your own batch, set the remaining units aside until station two reopens. Don’t borrow labels from another batch, even when the product is the same. The courier’s morning run leaves at eleven sharp. Put closed cartons with a signed inspection card on the pickup shelf. If your carton is ready but the inspector hasn’t signed its card yet, leave it on the workbench. It can go on the afternoon run if the inspector signs the card in time.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Before the morning shift starts, here’s the plan for the packaging line. The printer at station two is being serviced until ten. The printer at station one can print carton labels, but only the printer at station two can print the small labels for individual units. Use station one for this morning’s cartons. If you run out of the small labels already printed for your own batch, set the remaining units aside until station two reopens. Don’t borrow labels from another batch, even when the product is the same. The courier’s morning run leaves at eleven sharp. Put closed cartons with a signed inspection card on the pickup shelf. If your carton is ready but the inspector hasn’t signed its card yet, leave it on the workbench. It can go on the afternoon run if the inspector signs the card in time."
+      }
+    ],
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-PH",
+        "role": "female",
+        "modelVoice": "en-PH-RosaNeural"
+      }
+    ]
+  },
+  "draftActiveQuestions": [
+    {
+      "id": "t02-q071-r2",
+      "testId": "test-02",
+      "groupId": "t02-g045-r2",
+      "part": 4,
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "manufacturing",
+        "shift briefing",
+        "packaging"
+      ],
+      "number": 71,
+      "revision": 2,
+      "prompt": "A crew has enough small labels for its own batch, but no carton labels. What should the crew do to keep labeling work moving before ten?",
+      "promptZh": "某個班組有足夠的小標籤供自己這批產品使用，但沒有外箱標籤。要在上午十點前繼續貼標作業，班組該怎麼做？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Print both kinds of label at station two.",
+          "zh": "在二號工作站印出兩種標籤。",
+          "whyZh": "二號印表機維修到十點，十點前不能用。"
+        },
+        {
+          "id": "B",
+          "text": "Use the existing small labels and print the carton labels at station one.",
+          "zh": "使用現有的小標籤，並在一號工作站列印外箱標籤。",
+          "whyZh": "這批已有足夠的小標籤；一號印表機仍可印外箱標籤，所以不用等二號維修完成。"
+        },
+        {
+          "id": "C",
+          "text": "Print more small labels at station one and wait for carton labels.",
+          "zh": "在一號工作站多印一些小標籤，再等外箱標籤。",
+          "whyZh": "一號印表機不能印單件用的小標籤；能印的是外箱標籤。"
+        },
+        {
+          "id": "D",
+          "text": "Wait until station two reopens before printing the carton labels.",
+          "zh": "等二號工作站恢復運作後再印外箱標籤。",
+          "whyZh": "外箱標籤在一號就能印，不需要等二號。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "這批已有足夠的小標籤；一號印表機仍可印外箱標籤，所以不用等二號維修完成。",
+      "evidence": "The printer at station two is being serviced until ten. […] Use station one for this morning’s cartons.",
+      "vocabulary": [
+        {
+          "term": "be serviced",
+          "zh": "進行維修保養",
+          "note": "用於設備，表示正在接受檢修或保養。"
+        }
+      ],
+      "difficultyWhy": "Connect the current printer outage with two different label formats, then apply the distinction to a batch that already has unit labels."
+    },
+    {
+      "id": "t02-q072-r2",
+      "testId": "test-02",
+      "groupId": "t02-g045-r2",
+      "part": 4,
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "manufacturing",
+        "shift briefing",
+        "packaging"
+      ],
+      "number": 72,
+      "revision": 2,
+      "prompt": "At nine thirty, a crew has small labels for only half its batch. It can see unused labels for the same product at the next station. What should the crew do to label as many units as the rules allow before ten?",
+      "promptZh": "上午九點半，某班組的小標籤只夠貼這批產品的一半，旁邊的工作站則有同種產品尚未用掉的標籤。班組該怎麼做，才能在上午十點前依規定盡可能多貼一些產品？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Finish labeling with the other batch’s labels.",
+          "zh": "用另一批的標籤把剩下的產品貼完。",
+          "whyZh": "即使產品相同，也不得借用其他批次的標籤。"
+        },
+        {
+          "id": "B",
+          "text": "Put carton labels on the rest of the units.",
+          "zh": "用外箱標籤貼在剩下的單件產品上。",
+          "whyZh": "外箱標籤和單件標籤用途不同，不能互相替代。"
+        },
+        {
+          "id": "C",
+          "text": "Wait until ten before applying any labels to the batch.",
+          "zh": "等到十點後，再開始為整批產品貼標。",
+          "whyZh": "班組已有部分本批的正確標籤，不必等到十點才開始貼標。"
+        },
+        {
+          "id": "D",
+          "text": "Label some units now and set the rest aside until it can print its own labels.",
+          "zh": "先貼好部分產品，其餘暫放，直到可以重印本批的標籤。",
+          "whyZh": "已有的本批標籤可先用；二號印表機恢復前，剩下未貼標的產品須先暫放，不能借用他批標籤。"
+        }
+      ],
+      "answer": "D",
+      "explanationZh": "已有的本批標籤可先用；二號印表機恢復前，剩下未貼標的產品須先暫放，不能借用他批標籤。",
+      "evidence": "If you run out of the small labels already printed for your own batch, set the remaining units aside until station two reopens. Don’t borrow labels from another batch, even when the product is the same.",
+      "vocabulary": [
+        {
+          "term": "batch",
+          "zh": "批次",
+          "note": "同一組生產或處理的產品。型號相同的產品仍可能屬於不同批次。"
+        }
+      ],
+      "difficultyWhy": "Distinguish the immediately workable half of the batch from the held half and apply batch-specific traceability to nearby matching but unusable stock."
+    },
+    {
+      "id": "t02-q073-r2",
+      "testId": "test-02",
+      "groupId": "t02-g045-r2",
+      "part": 4,
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "manufacturing",
+        "shift briefing",
+        "packaging"
+      ],
+      "number": 73,
+      "revision": 2,
+      "prompt": "A carton is closed at ten fifty, but the inspector will not sign its card until eleven fifteen. What should the crew plan?",
+      "promptZh": "一個外箱在上午十點五十分封好，但檢驗員要到十一點十五分才會簽檢驗卡。班組該怎麼安排？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Leave the carton on the workbench now and send it in the afternoon after the card is signed.",
+          "zh": "先把外箱留在工作台上，等檢驗卡簽好後安排下午寄出。",
+          "whyZh": "上午快遞十一點就出發，檢驗卡當時還沒簽好。先留在工作台，十一點十五分完成簽卡後才符合下午寄出的條件。"
+        },
+        {
+          "id": "B",
+          "text": "Put the carton on the pickup shelf now so it makes the morning run.",
+          "zh": "現在就把外箱放上取件架，趕上上午這趟快遞。",
+          "whyZh": "封箱之外還需要檢驗員簽卡；不能提前把外箱放上取件架。"
+        },
+        {
+          "id": "C",
+          "text": "Wait for the signature, then send the carton with the morning courier.",
+          "zh": "等到簽名後再交給上午這趟快遞。",
+          "whyZh": "上午十一點已出發，十一點十五分才簽完會錯過。"
+        },
+        {
+          "id": "D",
+          "text": "Hold the carton until tomorrow even if its card is signed today.",
+          "zh": "即使今天就簽好了，也把外箱留到明天再寄。",
+          "whyZh": "上午沒趕上不代表必須等到明天；講者說若及時簽卡，仍可趕上下午那趟。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "上午快遞十一點就出發，檢驗卡當時還沒簽好。先留在工作台，十一點十五分完成簽卡後才符合下午寄出的條件。",
+      "evidence": "The courier’s morning run leaves at eleven sharp. […] It can go on the afternoon run if the inspector signs the card in time.",
+      "vocabulary": [
+        {
+          "term": "workbench",
+          "zh": "工作台",
+          "note": "用來操作、組裝或檢查產品的桌面，有別於出貨暫放的取件架。"
+        }
+      ],
+      "difficultyWhy": "Combine the mandatory signed card, exact morning departure and conditional afternoon eligibility to select the viable handoff window."
+    }
+  ],
+  "spokenWordCount": 142,
+  "blindInputSha256": "a3e6325585c6d3bd6d096f22b977d7d0c44e57a49ffa35be7d3d2364ee8cc9cd",
+  "groupQuestionsForExamAudio": [
+    "Number 71. A crew has enough small labels for its own batch, but no carton labels. What should the crew do to keep labeling work moving before ten?",
+    "Number 72. At nine thirty, a crew has small labels for only half its batch. It can see unused labels for the same product at the next station. What should the crew do to label as many units as the rules allow before ten?",
+    "Number 73. A carton is closed at ten fifty, but the inspector will not sign its card until eleven fifteen. What should the crew plan?"
+  ],
+  "optionsInOfficialAudio": false,
+  "practiceSpokenQuestion": null,
+  "note": "Earlier hold item metadata calls practice Part 3; pinned group, inventory and formal frames all say Part 4. Treat as Part 4 shared-passage practice with written question.",
+  "adopted": false,
+  "audioVerified": false,
+  "ttsStarted": false
+}

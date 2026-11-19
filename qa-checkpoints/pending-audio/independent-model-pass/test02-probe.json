@@ -1,0 +1,425 @@
+{
+  "test": "test-02",
+  "pinnedStage": "9047812299d67c6a69b4b5e7cb39c8544b180651",
+  "recognizer": "system FFmpeg libpocketsphinx with unmodified upstream CMUSphinx data",
+  "modelSourceCommit": "f20ff1b7a5db64c5e892a798479e20df86e79a35",
+  "independentAudioOnlyNotAnApproval": true,
+  "entries": [
+    {
+      "number": 5,
+      "questionId": "t02-q005",
+      "groupId": "t02-g005",
+      "status": "approved-audio-control",
+      "priorQuestionedTokens": [],
+      "windows": [
+        {
+          "role": "passage",
+          "source": "audio/formal-v2/test-02-02.mp3",
+          "start": 19.504,
+          "end": 37.432,
+          "sha256": "8ada77076dff7788062c8e279eeca8d84e817be1c3f7f65ad40f5f30468d796f",
+          "unpromptedUtterances": [
+            "hey",
+            "two people are walking along a path",
+            "b",
+            "two people are rowing about",
+            "c",
+            "a person is melinda line",
+            "d.",
+            "the group is sitting inside a bass"
+          ]
+        },
+        {
+          "role": "practice",
+          "source": "audio/azure-v1/test-02-02.mp3",
+          "start": 21.064,
+          "end": 40.36,
+          "sha256": "f9a9b86a12b4736133ffd8f8c7f76efd0cfb99ac517efe0e1d9503e92894e038",
+          "unpromptedUtterances": [
+            "a",
+            "two people are walking along a car",
+            "the",
+            "two people are throwing a boat",
+            "c",
+            "a person is going to lower",
+            "e.",
+            "the group is fishing inside a box"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "questionId": "t02-q006",
+      "groupId": "t02-g006",
+      "status": "approved-audio-control",
+      "priorQuestionedTokens": [],
+      "windows": [
+        {
+          "role": "passage",
+          "source": "audio/formal-v2/test-02-02.mp3",
+          "start": 37.932,
+          "end": 56.436,
+          "sha256": "8ada77076dff7788062c8e279eeca8d84e817be1c3f7f65ad40f5f30468d796f",
+          "unpromptedUtterances": [
+            "hey",
+            "the driver is changing a tire",
+            "b",
+            "that is being watched",
+            "c",
+            "several people are boarding a train",
+            "d.",
+            "the driver is carrying a box beside a van"
+          ]
+        },
+        {
+          "role": "practice",
+          "source": "audio/azure-v1/test-02-02.mp3",
+          "start": 40.86,
+          "end": 59.268,
+          "sha256": "f9a9b86a12b4736133ffd8f8c7f76efd0cfb99ac517efe0e1d9503e92894e038",
+          "unpromptedUtterances": [
+            "eight",
+            "and that i just didn't attack",
+            "the",
+            "money is being watched",
+            "c",
+            "several people at one direction",
+            "d.",
+            "i'd say that he's carrying a box the segment on"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "questionId": "t02-q007",
+      "groupId": "t02-g007",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-02-01.json",
+          "torque wrench vs range",
+          "practice"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-02-03.mp3",
+          "start": 0.5,
+          "end": 15.956,
+          "sha256": "4a4f444b97d3e77ff91a68c2299681d032d35500cae67f921e2d2dadf57c68e4",
+          "unpromptedUtterances": [
+            "when is it took wish you focus edition",
+            "a",
+            "on the second shelf",
+            "the",
+            "next is the according to the table",
+            "c",
+            "the hand that is due"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/formal-v2/test-02-03.mp3",
+          "start": 0.5,
+          "end": 16.628,
+          "sha256": "2551d9a3425fbe342acecc65989ffe2432e4cc4037a9ceefdb66406672d8ad52",
+          "unpromptedUtterances": [
+            "what is that for grinch do for calibration",
+            "hey",
+            "on the second self",
+            "b",
+            "next thursday according to its label",
+            "c",
+            "the handle is below"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "questionId": "t02-q013",
+      "groupId": "t02-g013",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-02-01.json",
+          "C may read as a valid refusal; practice B-label/V",
+          "both-distinct"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-02-05.mp3",
+          "start": 0.5,
+          "end": 17.996,
+          "sha256": "46cd00e07960a7e43925b982177460df43950d92d80c814bdfdcb12862f8bdbf",
+          "unpromptedUtterances": [
+            "could you attach the invoice to your reply",
+            "at a",
+            "secondly i will send a p d f",
+            "the",
+            "it is beside the station",
+            "c",
+            "neither i have not replied to him the fall"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/formal-v2/test-02-05.mp3",
+          "start": 0.5,
+          "end": 17.9,
+          "sha256": "c7b7fc1976b4ae94a7727516098eada098fb02f3aa3015e20ea6b2d182ba3ab9",
+          "unpromptedUtterances": [
+            "could you attach the invoice to your reply",
+            "lol",
+            "certainly i will send the t d after",
+            "b",
+            "it is beside the station",
+            "c",
+            "now i have not reply to him before"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 41,
+      "questionId": "t02-q041",
+      "groupId": "t02-g035",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-02-03.json",
+          "R8/R9 vs A8/A9; cartons; relabel; Q041 depends on part codes",
+          "shared-passage"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-02-13.mp3",
+          "start": 29.536,
+          "end": 59.368,
+          "sha256": "8c45e69db8ea8138ea2468257f59611b70c44335e26b900881d87caabff31474",
+          "unpromptedUtterances": [
+            "did but good on the scottish as much about it what do you get inside out what i'm i",
+            "i asked all the shipment",
+            "thank you",
+            "to to cut them is and i'm not loading area",
+            "we need to come get it goes with the packing east",
+            "this is correct",
+            "did it opened that may have used them open to it",
+            "it does to get trained he stood before deciding",
+            "do not to do anything on to quickly as approved the connection"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/azure-v1/test-02-13.mp3",
+          "start": 29.536,
+          "end": 59.368,
+          "sha256": "8c45e69db8ea8138ea2468257f59611b70c44335e26b900881d87caabff31474",
+          "unpromptedUtterances": [
+            "did but good on the scottish as much about it what do you get inside out what i'm i",
+            "i asked all the shipment",
+            "thank you",
+            "to to cut them is and i'm not loading area",
+            "we need to come get it goes with the packing east",
+            "this is correct",
+            "did it opened that may have used them open to it",
+            "it does to get trained he stood before deciding",
+            "do not to do anything on to quickly as approved the connection"
+          ]
+        },
+        {
+          "role": "formalStem",
+          "source": "audio/formal/test-02-cues-02.mp3",
+          "start": 17.35367,
+          "end": 20.049,
+          "sha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+          "unpromptedUtterances": [
+            "number forty one one problem was discovered"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 49,
+      "questionId": "t02-q049",
+      "groupId": "t02-g037",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-02-03.json",
+          "and/in before manager approval; write/right homophone not itself a defect",
+          "shared-passage"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-02-15.mp3",
+          "start": 0.5,
+          "end": 30.164,
+          "sha256": "1cf4466d71a4869d2199e46b143447906faf2d265c83fb5d922c189a726a4854",
+          "unpromptedUtterances": [
+            "i didn't open the budget for that but i cannot up vote that in addition to post",
+            "is this a bit down",
+            "the seventies and i mean",
+            "yeah but come on to a heavy be on the axes",
+            "the duty since he moved to this project",
+            "yes this week",
+            "my manager asked me to get it would be for the review meeting",
+            "please send me the full than a week in your many disapproval",
+            "i attended christ that excess and administrators"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/azure-v1/test-02-15.mp3",
+          "start": 0.5,
+          "end": 30.164,
+          "sha256": "1cf4466d71a4869d2199e46b143447906faf2d265c83fb5d922c189a726a4854",
+          "unpromptedUtterances": [
+            "i didn't open the budget for that but i cannot up vote that in addition to post",
+            "is this a bit down",
+            "the seventies and i mean",
+            "yeah but come on to a heavy be on the axes",
+            "the duty since he moved to this project",
+            "yes this week",
+            "my manager asked me to get it would be for the review meeting",
+            "please send me the full than a week in your many disapproval",
+            "i attended christ that excess and administrators"
+          ]
+        },
+        {
+          "role": "formalStem",
+          "source": "audio/formal/test-02-cues-02.mp3",
+          "start": 53.44325,
+          "end": 55.9515,
+          "sha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+          "unpromptedUtterances": [
+            "number forty nine what should the mantra fight"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 59,
+      "questionId": "t02-q059",
+      "groupId": "t02-g041",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-02-04.json",
+          "Q059 change does/changed does; preserve verified Q060/Q061 siblings",
+          "formal-stem"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-02-18.mp3",
+          "start": 30.064,
+          "end": 56.536,
+          "sha256": "97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806",
+          "unpromptedUtterances": [
+            "i booked a table for six and then the two colleagues cannot come",
+            "could you change it to four people",
+            "secondly",
+            "which is still like the set menu or would you perfect all of it individually",
+            "we will keep the set menu",
+            "one gets can ah the peanuts sir please let the kitchen not",
+            "i won that that",
+            "your advice reservation is the full at noon on to mr lane"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/azure-v1/test-02-18.mp3",
+          "start": 30.064,
+          "end": 56.536,
+          "sha256": "97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806",
+          "unpromptedUtterances": [
+            "i booked a table for six and then the two colleagues cannot come",
+            "could you change it to four people",
+            "secondly",
+            "which is still like the set menu or would you perfect all of it individually",
+            "we will keep the set menu",
+            "one gets can ah the peanuts sir please let the kitchen not",
+            "i won that that",
+            "your advice reservation is the full at noon on to mr lane"
+          ]
+        },
+        {
+          "role": "formalStem",
+          "source": "audio/formal/test-02-cues-03.mp3",
+          "start": 37.00183,
+          "end": 40.07113,
+          "sha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+          "unpromptedUtterances": [
+            "number fifty nine when changed as the man request"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 84,
+      "questionId": "t02-q084",
+      "groupId": "t02-g049",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-02-04.json",
+          "urgent/agent, cartons/cut-ins, Normal/No more; Q085 visual Pine separately verified",
+          "shared-passage"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-02-26.mp3",
+          "start": 0.5,
+          "end": 30.86,
+          "sha256": "4597fce50a6581f52fcc8fb701c5070572754014d2703736162d64d19889d57a",
+          "unpromptedUtterances": [
+            "the way also conduct it's good that eventually count on friday afternoon",
+            "nineteen adequately get full friday's production mostly just i didn't mean the morning",
+            "between you and on full or the edge and sixty eight daddy issues with the handle it",
+            "teeny guess it as an orgasm to confound quantities into a house staff",
+            "his counsellor the captain's academe to the quantity on their labels on this this city's them east",
+            "no mama to net connection with resume not flip it c"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/azure-v1/test-02-26.mp3",
+          "start": 0.5,
+          "end": 30.86,
+          "sha256": "4597fce50a6581f52fcc8fb701c5070572754014d2703736162d64d19889d57a",
+          "unpromptedUtterances": [
+            "the way also conduct it's good that eventually count on friday afternoon",
+            "nineteen adequately get full friday's production mostly just i didn't mean the morning",
+            "between you and on full or the edge and sixty eight daddy issues with the handle it",
+            "teeny guess it as an orgasm to confound quantities into a house staff",
+            "his counsellor the captain's academe to the quantity on their labels on this this city's them east",
+            "no mama to net connection with resume not flip it c"
+          ]
+        },
+        {
+          "role": "formalStem",
+          "source": "audio/formal/test-02-cues-05.mp3",
+          "start": 14.54254,
+          "end": 17.31217,
+          "sha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+          "unpromptedUtterances": [
+            "number eighty four which a team leaders are range"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,422 @@
+{
+  "test": "test-03",
+  "pinnedStage": "9047812299d67c6a69b4b5e7cb39c8544b180651",
+  "recognizer": "system FFmpeg libpocketsphinx with unmodified upstream CMUSphinx data",
+  "modelSourceCommit": "f20ff1b7a5db64c5e892a798479e20df86e79a35",
+  "independentAudioOnlyNotAnApproval": true,
+  "entries": [
+    {
+      "number": 1,
+      "questionId": "t03-q001",
+      "groupId": "t03-g001",
+      "status": "approved-audio-control",
+      "priorQuestionedTokens": [],
+      "windows": [
+        {
+          "role": "passage",
+          "source": "audio/formal-v2/test-03-01.mp3",
+          "start": 0.5,
+          "end": 19.628,
+          "sha256": "8a21ae045c9366b4ed5ed42612bacebff65b86e000b60833249b01fd528cb4f2",
+          "unpromptedUtterances": [
+            "hey",
+            "books and then stepped on the floor",
+            "b",
+            "several rows of bugs are ranged on a shelf",
+            "c",
+            "the bookcases being carried out side",
+            "d.",
+            "a person is seated beside a plant"
+          ]
+        },
+        {
+          "role": "practice",
+          "source": "audio/azure-v1/test-03-01.mp3",
+          "start": 0.5,
+          "end": 20.108,
+          "sha256": "8f78b5a19e22b5329e8b5aef750272bc91cfd8aae5cebb7a022d69f7837b25ef",
+          "unpromptedUtterances": [
+            "eight",
+            "books have been stepped on the floor",
+            "the",
+            "said there are those of books at a store that shelf",
+            "c",
+            "i booked it is deemed headed outside",
+            "the",
+            "by sunday seated beside that plant"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "questionId": "t03-q005",
+      "groupId": "t03-g005",
+      "status": "approved-audio-control",
+      "priorQuestionedTokens": [],
+      "windows": [
+        {
+          "role": "passage",
+          "source": "audio/formal-v2/test-03-02.mp3",
+          "start": 20.56,
+          "end": 38.488,
+          "sha256": "6a0ddb6ba963c3230af399e582cbf24597be33b37fd54128561ed2b0fdaeb1a1",
+          "unpromptedUtterances": [
+            "hey",
+            "the path friends between two trees",
+            "b",
+            "the trees are being trend",
+            "c",
+            "two people are resting on a bench",
+            "d.",
+            "a vehicle is parked under a tree"
+          ]
+        },
+        {
+          "role": "practice",
+          "source": "audio/azure-v1/test-03-02.mp3",
+          "start": 18.424,
+          "end": 36.352,
+          "sha256": "444de90014c8ace28b810abd1ca062889a77fe2512dbc3f46d4aea4bf4a37a35",
+          "unpromptedUtterances": [
+            "hey",
+            "the path friends between two trees",
+            "b",
+            "the trees are being trend",
+            "c",
+            "two people are resting on a bench",
+            "d.",
+            "a vehicle is parked under a tree"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "questionId": "t03-q006",
+      "groupId": "t03-g006",
+      "status": "approved-audio-control",
+      "priorQuestionedTokens": [],
+      "windows": [
+        {
+          "role": "passage",
+          "source": "audio/formal-v2/test-03-02.mp3",
+          "start": 38.988,
+          "end": 58.908,
+          "sha256": "6a0ddb6ba963c3230af399e582cbf24597be33b37fd54128561ed2b0fdaeb1a1",
+          "unpromptedUtterances": [
+            "a",
+            "several workers are letting a table",
+            "the",
+            "the equipment is stored beneath the table",
+            "c",
+            "all window has been covered by a cartoon",
+            "the",
+            "a piece of equipment is all the work surface"
+          ]
+        },
+        {
+          "role": "practice",
+          "source": "audio/azure-v1/test-03-02.mp3",
+          "start": 36.852,
+          "end": 56.556,
+          "sha256": "444de90014c8ace28b810abd1ca062889a77fe2512dbc3f46d4aea4bf4a37a35",
+          "unpromptedUtterances": [
+            "annie",
+            "several workers are lifting the table",
+            "the",
+            "the equipment is stored beneath the table",
+            "c",
+            "a window has been covered by a cousin",
+            "d.",
+            "a piece of equipment is on the works a face"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "questionId": "t03-q002",
+      "groupId": "t03-g002",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-03-01.json",
+          "cup/cop in correct D",
+          "practice"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-03-01.mp3",
+          "start": 20.608,
+          "end": 37.936,
+          "sha256": "8f78b5a19e22b5329e8b5aef750272bc91cfd8aae5cebb7a022d69f7837b25ef",
+          "unpromptedUtterances": [
+            "eight",
+            "they got guys go but with kids",
+            "the",
+            "what people out behind the comp",
+            "c",
+            "because the mice washing the window",
+            "d.",
+            "the cop is resting on the comp"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/formal-v2/test-03-01.mp3",
+          "start": 20.128,
+          "end": 38.776,
+          "sha256": "8a21ae045c9366b4ed5ed42612bacebff65b86e000b60833249b01fd528cb4f2",
+          "unpromptedUtterances": [
+            "a",
+            "the counter is covered with plates",
+            "the",
+            "both people are behind the counter",
+            "c",
+            "the customer is watching a window",
+            "the",
+            "a cop is resting on the counter"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "questionId": "t03-q003",
+      "groupId": "t03-g003",
+      "status": "approved-audio-control",
+      "priorQuestionedTokens": [],
+      "windows": [
+        {
+          "role": "passage",
+          "source": "audio/formal-v2/test-03-01.mp3",
+          "start": 39.276,
+          "end": 58.476,
+          "sha256": "8a21ae045c9366b4ed5ed42612bacebff65b86e000b60833249b01fd528cb4f2",
+          "unpromptedUtterances": [
+            "hey",
+            "two pieces of luggage are beside events",
+            "b",
+            "passengers are boarding an aircraft",
+            "c",
+            "the waiting area is completely empty",
+            "d.",
+            "such cases have been placed on a bench"
+          ]
+        },
+        {
+          "role": "practice",
+          "source": "audio/azure-v1/test-03-01.mp3",
+          "start": 38.436,
+          "end": 58.02,
+          "sha256": "8f78b5a19e22b5329e8b5aef750272bc91cfd8aae5cebb7a022d69f7837b25ef",
+          "unpromptedUtterances": [
+            "eight",
+            "two pieces of land it and he said that banks",
+            "the",
+            "ascendant and bleeding and aircraft",
+            "c",
+            "their way to date yet he's competed empty",
+            "the",
+            "sent it does have the pace than against"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "questionId": "t03-q004",
+      "groupId": "t03-g004",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-03-01.json",
+          "a/the table; chairs separately corroborated",
+          "practice"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-03-02.mp3",
+          "start": 0.5,
+          "end": 17.924,
+          "sha256": "444de90014c8ace28b810abd1ca062889a77fe2512dbc3f46d4aea4bf4a37a35",
+          "unpromptedUtterances": [
+            "they",
+            "but that is due to move from all",
+            "b",
+            "bitches sitting by the corner",
+            "c",
+            "and then got his thus began the people",
+            "the",
+            "everyone is standing on the table"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/formal-v2/test-03-02.mp3",
+          "start": 0.5,
+          "end": 20.06,
+          "sha256": "6a0ddb6ba963c3230af399e582cbf24597be33b37fd54128561ed2b0fdaeb1a1",
+          "unpromptedUtterances": [
+            "a",
+            "the charges being removed from all wall",
+            "the",
+            "that shares have been piled in a corner",
+            "c",
+            "on line graph is this plague behind the people",
+            "the",
+            "everyone is standing around the table"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "questionId": "t03-q019",
+      "groupId": "t03-g019",
+      "status": "approved-audio-control",
+      "priorQuestionedTokens": [],
+      "windows": [
+        {
+          "role": "passage",
+          "source": "audio/formal-v2/test-03-07.mp3",
+          "start": 0.5,
+          "end": 17.084,
+          "sha256": "562475e7b5ac748b67203d1b3be40ecdfbc689adb8b54f49e6f29a460665f7b2",
+          "unpromptedUtterances": [
+            "when do you expect the left to be working again",
+            "a",
+            "the technician said before five",
+            "the",
+            "i work on the top floor",
+            "c",
+            "it carries up to the people"
+          ]
+        },
+        {
+          "role": "practice",
+          "source": "audio/azure-v1/test-03-07.mp3",
+          "start": 0.5,
+          "end": 17.084,
+          "sha256": "42e4260cf430886f15c784570a175290a7c7de7444b92ba80e561a72afa9f173",
+          "unpromptedUtterances": [
+            "when do you expect the left to be working again",
+            "a",
+            "the technician said before five",
+            "the",
+            "i work on the top floor",
+            "c",
+            "it carries up to the people"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "questionId": "t03-q020",
+      "groupId": "t03-g020",
+      "status": "approved-audio-control",
+      "priorQuestionedTokens": [],
+      "windows": [
+        {
+          "role": "passage",
+          "source": "audio/formal-v2/test-03-07.mp3",
+          "start": 17.584,
+          "end": 35.56,
+          "sha256": "562475e7b5ac748b67203d1b3be40ecdfbc689adb8b54f49e6f29a460665f7b2",
+          "unpromptedUtterances": [
+            "why do we not discuss the proposal over lunch",
+            "hey",
+            "lunch menu is included",
+            "b",
+            "the cafeteria serves lunch and tell tale",
+            "c",
+            "that works provided we're back by wine"
+          ]
+        },
+        {
+          "role": "practice",
+          "source": "audio/azure-v1/test-03-07.mp3",
+          "start": 17.584,
+          "end": 33.856,
+          "sha256": "42e4260cf430886f15c784570a175290a7c7de7444b92ba80e561a72afa9f173",
+          "unpromptedUtterances": [
+            "why do we know discuss the proposal over lunch",
+            "any",
+            "lunch menu he seemed to date",
+            "b",
+            "the cafeteria sense lunch until two",
+            "c",
+            "that flax provided we are back by won"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 84,
+      "questionId": "t03-q084",
+      "groupId": "t03-g049",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-03-02.json",
+          "Q084 returned/return; preserve verified Q083/Q085 siblings",
+          "formal-stem"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-03-29.mp3",
+          "start": 0.5,
+          "end": 45.908,
+          "sha256": "a7593b11bf1bf3f37fa47acd5ed4fe027453248fd3f60b4a87a40447959e4d11",
+          "unpromptedUtterances": [
+            "welcome to your first shift at westfield distribution",
+            "before we go on to the warehouse floor please put your personal belongings in the locker is behind you",
+            "your locker number is printed on the back of your identification card",
+            "today you'll work with an experience colleague rather than operate equipment alone",
+            "the first task is checking returned kids against the accompanying forms",
+            "do not send damage products directly back to the shelves even when the customer has marked the packages on opensframe:1410 pts:541135  pts_time:33.820937",
+            "put them in the inspection area with the yellow tag",
+            "at eleven will meet in the training room for a demonstration of the inventory scanners",
+            "if you finish the returns early ask your colleague to show you the emergency exits"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/azure-v1/test-03-29.mp3",
+          "start": 0.5,
+          "end": 45.908,
+          "sha256": "a7593b11bf1bf3f37fa47acd5ed4fe027453248fd3f60b4a87a40447959e4d11",
+          "unpromptedUtterances": [
+            "welcome to your first shift at westfield distribution",
+            "before we go on to the warehouse floor please put your personal belongings in the locker is behind you",
+            "your locker number is printed on the back of your identification card",
+            "today you'll work with an experience colleague rather than operate equipment alone",
+            "the first task is checking returned kids against the accompanying forms",
+            "do not send damage products directly back to the shelves even when the customer has marked the packages on opensframe:1410 pts:541135  pts_time:33.820937",
+            "put them in the inspection area with the yellow tag",
+            "at eleven will meet in the training room for a demonstration of the inventory scanners",
+            "if you finish the returns early ask your colleague to show you the emergency exits"
+          ]
+        },
+        {
+          "role": "formalStem",
+          "source": "audio/formal/test-03-cues-05.mp3",
+          "start": 17.60963,
+          "end": 21.31125,
+          "sha256": "e214e1b90a2ba28dbf7cec4dab788d958b222f259cd036ee91ac81860ea792e1",
+          "unpromptedUtterances": [
+            "number eighty four which should be done with damage return products"
+          ]
+        }
+      ]
+    }
+  ]
+}

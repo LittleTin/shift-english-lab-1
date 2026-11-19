@@ -1,0 +1,232 @@
+{
+  "test": "test-01",
+  "pinnedStage": "9047812299d67c6a69b4b5e7cb39c8544b180651",
+  "recognizer": "system FFmpeg libpocketsphinx with unmodified upstream CMUSphinx data",
+  "modelSourceCommit": "f20ff1b7a5db64c5e892a798479e20df86e79a35",
+  "independentAudioOnlyNotAnApproval": true,
+  "entries": [
+    {
+      "number": 10,
+      "questionId": "t01-q010",
+      "groupId": "t01-g010",
+      "status": "approved-audio-control",
+      "priorQuestionedTokens": [],
+      "windows": [
+        {
+          "role": "passage",
+          "source": "audio/formal-v2/test-01-04.mp3",
+          "start": 17.68,
+          "end": 34.744,
+          "sha256": "9fd72acced442be137ad8f96b34565a633dd9fb050d94ca63bbea198412002ab",
+          "unpromptedUtterances": [
+            "should we inspect the shit man today or tomorrow",
+            "a",
+            "they shifted by air",
+            "the",
+            "let's do it before the loading dock closes today",
+            "c",
+            "each card that has a label"
+          ]
+        },
+        {
+          "role": "practice",
+          "source": "audio/azure-v1/test-01-04.mp3",
+          "start": 18.304,
+          "end": 35.152,
+          "sha256": "2ee133d0509c83d25ced4b3fea10b0c934a539de3c6d9d55d01763396ef610fa",
+          "unpromptedUtterances": [
+            "should be inspected shit man today or tomorrow",
+            "a",
+            "they shifted by air",
+            "b",
+            "let's do it before the loading dock closes today",
+            "c",
+            "each card that has a label"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "questionId": "t01-q011",
+      "groupId": "t01-g011",
+      "status": "approved-audio-control",
+      "priorQuestionedTokens": [],
+      "windows": [
+        {
+          "role": "passage",
+          "source": "audio/formal-v2/test-01-04.mp3",
+          "start": 35.244,
+          "end": 52.38,
+          "sha256": "9fd72acced442be137ad8f96b34565a633dd9fb050d94ca63bbea198412002ab",
+          "unpromptedUtterances": [
+            "have you uploaded the defect but as yet",
+            "a",
+            "not yet the wireless connection is down",
+            "the",
+            "only two units failed",
+            "c",
+            "they preferred the glossy finish"
+          ]
+        },
+        {
+          "role": "practice",
+          "source": "audio/azure-v1/test-01-04.mp3",
+          "start": 35.652,
+          "end": 52.284,
+          "sha256": "2ee133d0509c83d25ced4b3fea10b0c934a539de3c6d9d55d01763396ef610fa",
+          "unpromptedUtterances": [
+            "have you added a big effect glitches yet",
+            "it",
+            "not shipped to the wireless connection is known",
+            "the",
+            "one way to you it's fair that",
+            "c",
+            "they prefer the glossy finish"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "questionId": "t01-q012",
+      "groupId": "t01-g012",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-01-01.json",
+          "thermal vs thermo",
+          "practice"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-01-05.mp3",
+          "start": 0.5,
+          "end": 15.524,
+          "sha256": "77868489b0ca7be46ec912952ff1f2b92d9bfbe12474f4b38cfc7dbe077613c2",
+          "unpromptedUtterances": [
+            "how long that it cannot say could take",
+            "a",
+            "you give 'em in touch him",
+            "the",
+            "the temperature stays stable",
+            "c",
+            "roughly forty minutes"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/formal-v2/test-01-05.mp3",
+          "start": 0.5,
+          "end": 16.412,
+          "sha256": "99302315dff7321edf06c8c2cbb32b49b071eb4e2d8be4ae745a7c7b2ea185ff",
+          "unpromptedUtterances": [
+            "how long does the thermal cycle take",
+            "a",
+            "in the environmental chamber",
+            "the",
+            "the temperature stays stable",
+            "c",
+            "roughly forty minutes"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "questionId": "t01-q027",
+      "groupId": "t01-g027",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-01-01.json",
+          "A server rack vs saver arc",
+          "practice"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-01-10.mp3",
+          "start": 0.5,
+          "end": 18.428,
+          "sha256": "43d71007b9330cbdf7226536d5d86dcb4e65df19e000a7460c59c01f6e628efc",
+          "unpromptedUtterances": [
+            "that is somebody said to it and she acted a demonstration",
+            "it",
+            "this cruise be said this about ah",
+            "the",
+            "set to me by movie to fight that",
+            "c",
+            "i'd be mustered to do to the client"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/formal-v2/test-01-10.mp3",
+          "start": 0.5,
+          "end": 18.908,
+          "sha256": "fba7fccbc4561be7416da1b7fcd85e927c64058ae0bac64d058be88884de2e5b",
+          "unpromptedUtterances": [
+            "can the server restart wait until after the demonstration",
+            "a",
+            "the screen is beside the server rack",
+            "the",
+            "certainly all that to five thirty",
+            "c",
+            "i demonstrated it to the client"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "questionId": "t01-q031",
+      "groupId": "t01-g031",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-01-01.json",
+          "team vs teen dinner",
+          "formal-passage"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-01-11.mp3",
+          "start": 18.856,
+          "end": 36.136,
+          "sha256": "0fcb0ae0f4a294f95759ddfa5bbdf1966f2090ce55b8164b0ffe158272fd2480",
+          "unpromptedUtterances": [
+            "i won't be able to attend the team dinner",
+            "hey",
+            "thanks for letting me know i'll update the reservation",
+            "b",
+            "the tables have already been cleaned",
+            "c",
+            "it's usually serve with rice"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/formal-v2/test-01-11.mp3",
+          "start": 19.168,
+          "end": 37.12,
+          "sha256": "3c059a7da573244d682f073b07988b6a0af28a3d490d68b20450f3ecc86cd6d6",
+          "unpromptedUtterances": [
+            "i will be able to attend the team dinner",
+            "a",
+            "thanks for letting me know i'll update the reservation",
+            "the",
+            "the tables have already been cleaned",
+            "c",
+            "it's usually serve with rice"
+          ]
+        }
+      ]
+    }
+  ]
+}
