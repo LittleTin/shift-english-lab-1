@@ -1,0 +1,67 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "Only the adjective ‘accidental’ expresses inadvertent reuse while modifying the noun ‘reuse’. The noun and adverb alternatives do not fill this role. Adjusted the Chinese passage so the keyed gloss reads idiomatically; all distractors and rationales checked.",
+  "activeQuestion": {
+    "id": "t01-q134",
+    "testId": "test-01",
+    "number": 134,
+    "part": 6,
+    "groupId": "t01-r-p6-01",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension"
+    ],
+    "prompt": "Choose the best word or sentence for blank [134].",
+    "promptZh": "請選出最適合填入空格 [134] 的字詞或句子。",
+    "options": [
+      {
+        "text": "accident",
+        "zh": "意外（名詞）",
+        "whyZh": "accident reuse 不是表達誤用的標準搭配。",
+        "id": "A"
+      },
+      {
+        "text": "accidental",
+        "zh": "無意的；非故意的",
+        "whyZh": "隔離不合格零件的目的是防止無意間再次使用，形容詞修飾 reuse。",
+        "id": "B"
+      },
+      {
+        "text": "accidents",
+        "zh": "多起意外",
+        "whyZh": "複數名詞不適合在此修飾 reuse。",
+        "id": "C"
+      },
+      {
+        "text": "accidentally",
+        "zh": "意外地",
+        "whyZh": "此處 reuse 是名詞，前面需要形容詞 accidental。",
+        "id": "D"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "隔離不合格零件的目的是防止無意間再次使用，形容詞修飾 reuse。",
+    "evidence": "keep any rejected parts in the red tray rather than returning them to stock",
+    "vocabulary": [
+      {
+        "term": "rejected parts",
+        "zh": "不合格零件",
+        "note": "因檢驗未通過而被隔離的零件。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p6-01",
+    "testId": "test-01",
+    "part": 6,
+    "title": "Pilot-build instructions",
+    "titleZh": "試產作業通知",
+    "topic": "manufacturing",
+    "passage": "To: Pilot-build team\nSubject: Sensor module trial\n\nWe will assemble fifty sensor modules on Tuesday. Before work begins, please [131] ____ that your workstation has revision C of the work instruction. The updated document contains a clearer photograph of the cable connection.\n\nThe first five units must be inspected [132] ____ production continues. Quality staff will check connector orientation and record the results. [133] ____\n\nPlease keep any rejected parts in the red tray rather than returning them to stock. This will prevent their [134] ____ reuse. Contact the shift leader if a step is unclear.",
+    "passageZh": "收件者：試產團隊\n主旨：感測器模組試作\n\n我們將在星期二組裝五十個感測器模組。開工前，請 [131] ____ 你的工作站備有 C 版作業指導書。更新的文件包含更清楚的纜線連接照片。\n\n前五個模組必須在繼續生產 [132] ____ 接受檢查。品管人員會檢查連接器方向並記錄結果。[133] ____\n\n請將不合格零件留在紅色托盤中，不要放回庫存。這能防止這些零件在 [134] ____ 情況下被再次使用。如果不清楚某個步驟，請聯絡當班組長。"
+  }
+}
