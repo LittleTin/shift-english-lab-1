@@ -1,12 +1,70 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": {
-    "key": "D",
-    "checks": "Approval status explicit unchanged. Link maintenance may change references; new revisions move to Atlas, old-server write is removed. zh option scope and all reasons match.",
-    "id": "t02-q149-r2"
-  },
+  "checks": "Apply the disqualifying same-day reference score alongside the next pickup and the contract barring resealing a prior trip’s batch. Independently blind-solved and checked against the English text, Traditional Chinese translation, rationale, distractors and sibling items.",
   "activeQuestion": {
+    "id": "t02-q149-r3",
+    "testId": "test-02",
+    "number": 149,
+    "part": 7,
+    "groupId": "t02-r-p7-01-r2",
+    "topic": "technology",
+    "difficulty": "advanced",
+    "tags": [
+      "technology",
+      "reading-comprehension"
+    ],
+    "prompt": "Suppose Green scores 97 tomorrow and the 10:00 slot is still available. What should the team do with the customer’s order?",
+    "promptZh": "假設 Green 明天只得 97 分，且上午 10:00 仍可預約。團隊該如何處理客戶的訂單？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Use this morning’s Green results and send tomorrow’s panels at noon.",
+        "zh": "使用今天上午 Green 的結果，明天中午出貨。",
+        "whyZh": "只採計明天的結果；即使今天有 99 分，也不能算明天達標。"
+      },
+      {
+        "id": "B",
+        "text": "Hold the sealed pilot set for Thursday and move the inspection to the next shift.",
+        "zh": "把目前封好的試產載板留到週四，並延到下一班再檢測。",
+        "whyZh": "原載板是為明天的取貨封存；客戶要求為當次取貨封存，也不允許把同一批拆封重封。"
+      },
+      {
+        "id": "C",
+        "text": "Use the 10:00 slot to approve Green based on an engineer’s signature alone.",
+        "zh": "使用上午 10:00 的時段，只憑工程師的簽名核准 Green。",
+        "whyZh": "親自簽核與至少 98 分缺一不可；97 分不符規定。"
+      },
+      {
+        "id": "D",
+        "text": "Prepare replacement panels for the next specified pickup opportunity.",
+        "zh": "另準備一批載板，等已知的下一個取貨機會。",
+        "whyZh": "97 分低於門檻，現在這批不能動用舊結果或單靠簽核趕上中午；客戶週四再來，須另準備一批載板供週四檢測、完成規定封存並取貨。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "97 分低於門檻，現在這批不能動用舊結果或單靠簽核趕上中午；客戶週四再來，須另準備一批載板供週四檢測、完成規定封存並取貨。",
+    "evidence": "tomorrow’s result, not today’s, is the one that counts […] The driver’s next trip is on Thursday […] reopening and resealing the same panels for a later trip is not allowed",
+    "vocabulary": [
+      {
+        "term": "reopen and reseal",
+        "zh": "拆封後重新封好",
+        "note": "本文規定不能把原本為某次取貨封好的載板拆封重封，再留待另一次取貨。"
+      }
+    ],
+    "revision": 3
+  },
+  "group": {
+    "id": "t02-r-p7-01-r2",
+    "testId": "test-02",
+    "part": 7,
+    "title": "Sharing the inspection station during tomorrow’s chip-substrate pilot",
+    "titleZh": "明天晶片載板試產的檢測站共用安排",
+    "topic": "technology",
+    "passage": "Subject: Sharing the inspection station during tomorrow’s chip-substrate pilot\n\nHi team,\n\nFrom 8:30 to 9:45, the station will run the reference panel, a sample with known marks. The process engineer will check the score during the 9:45 to 10:00 handover. Neither the reference run nor the handover can be booked for pilot work. The station is available for booking from 10:00 to 11:30; that is the only bookable slot with a process engineer on duty. It is available again from 1:00 to 2:30, but only the training technician will be there. Either a production run or a training run takes the full 90 minutes.\n\nOf the two programs, Blue works with the old camera mount and Green with the new one. For tomorrow’s pickup, the pilot panels are already sealed inside carriers that fit only the new camera mount. Transferring the panels into carriers for the old mount would break those seals. We can use the reference results to clear a program for production only if that program scored at least 98 on the reference panel AND an engineer signs off in person before the run begins. The reference panel itself can be mounted either way. This morning Green scored 99; tomorrow’s result, not today’s, is the one that counts.\n\nThe customer’s driver leaves at noon whether we have inspection results or not. The driver’s next trip is on Thursday. The customer accepts only unopened panels sealed for that specific trip. Under the customer’s agreement, reopening and resealing the same panels for a later trip is not allowed. Training uses spare panels and doesn’t need a reference score or an engineer, but the training technician needs the station to herself. She offered to “keep the afternoon warm for us.” I’ve added her booking in pencil, not in the green ink we use for customer commitments.\n\nThanks,\nRina",
+    "passageZh": "主旨：明天晶片載板試產的檢測站共用安排\n\n各位好：\n\n明天上午 8:30 至 9:45，檢測站會用帶有已知標記的參考載板做測試。上午 9:45 至 10:00 是交接時段，製程工程師會在這段時間核對分數。參考測試和交接時段都不能預約試產檢測。上午 10:00 至 11:30 是唯一可預約、且有製程工程師值班的時段。下午 1:00 至 2:30 也可以預約，但到時只有負責訓練的技術員在場。無論是生產檢測或訓練，都需要完整的 90 分鐘。\n\n兩套程式中，Blue 適用於舊款相機座，Green 適用於新款相機座。為了讓客戶明天取貨，試產載板已封存在只能裝到新款相機座上的載具內。若將載板換到適用舊款相機座的載具，就會破壞封條。只有在所用程式對參考載板的檢測分數達到至少 98 分，而且工程師在生產檢測開始前親自簽核，才能依參考測試結果核准該程式用於生產。參考載板本身則可裝到任一款相機座。今天上午 Green 得了 99 分，但採計的是明天的成績，不是今天的。\n\n不論檢測結果是否出爐，客戶的司機中午都會離開。司機下次來是週四。客戶只收專為當次取貨封好的載板，而且不能拆封。依照與客戶的協議，不得將同一批載板拆封再重新封好，留到以後取貨。訓練使用備用載板，不必看參考測試成績，也不需要工程師，但技術員要獨占檢測站。她說可以幫忙「讓下午不至於冷下來」。我先用鉛筆記下她的預約，沒用我們記錄對客戶承諾時用的綠色筆。\n\n謝謝，\nRina"
+  },
+  "originalQuestion": {
     "id": "t02-q149-r2",
     "testId": "test-02",
     "number": 149,
@@ -63,71 +121,6 @@
     ],
     "revision": 2
   },
-  "group": {
-    "id": "t02-r-p7-01",
-    "testId": "test-02",
-    "part": 7,
-    "title": "Design-file migration",
-    "titleZh": "設計檔案移轉",
-    "topic": "technology",
-    "passage": "Engineering file migration\n\nThe design archive will move to the Atlas server on June 3. From that date, the old server will allow viewing and downloading only; all new revisions must be saved on Atlas. Existing project folder names will be preserved.\n\nEngineers should check their active projects on Atlas by June 10 and report missing files to the migration team. Do not create replacement folders before reporting a problem, as this may lead to duplicates.\n\nThe old server will remain available until June 30. Links in internal documents may still point to the old location, so please update them when you revise a document. The migration does not change any drawing’s approval status.",
-    "passageZh": "工程檔案移轉\n\n設計檔案庫將於六月三日搬到 Atlas 伺服器。從當天起，舊伺服器只能查看與下載，所有新修訂版本都必須存到 Atlas。原有專案資料夾名稱會保留。\n\n工程師最遲應在六月十日檢查 Atlas 上進行中的專案，若有缺檔，請向移轉團隊回報。回報前不要自行建立替代資料夾，以免造成重複。\n\n舊伺服器會保留至六月三十日。內部文件連結可能仍指向舊位置，因此修訂文件時請一併更新連結。此次移轉不會改變任何圖面的核准狀態。"
-  },
-  "originalQuestion": {
-    "id": "t02-q149",
-    "testId": "test-02",
-    "number": 149,
-    "part": 7,
-    "groupId": "t02-r-p7-01",
-    "topic": "technology",
-    "difficulty": "intermediate",
-    "tags": [
-      "technology",
-      "reading-comprehension"
-    ],
-    "prompt": "What remains unchanged by the migration?",
-    "promptZh": "此次移轉不改變什麼？",
-    "options": [
-      {
-        "text": "All internal document links automatically",
-        "zh": "所有內部連結自動保持有效",
-        "whyZh": "部分連結仍指舊位置，需人工更新。",
-        "id": "A"
-      },
-      {
-        "text": "The location where new revisions are saved",
-        "zh": "新版本儲存位置",
-        "whyZh": "新版本位置改為 Atlas。",
-        "id": "B"
-      },
-      {
-        "text": "Write access on the old server",
-        "zh": "舊伺服器的寫入權限",
-        "whyZh": "六月三日起只允許查看與下載。",
-        "id": "C"
-      },
-      {
-        "text": "The approval status of drawings",
-        "zh": "圖面的核准狀態",
-        "whyZh": "最後一句明確說核准狀態不變。",
-        "id": "D"
-      }
-    ],
-    "answer": "D",
-    "explanationZh": "最後一句明確說核准狀態不變。",
-    "evidence": "The migration does not change any drawing’s approval status.",
-    "vocabulary": [
-      {
-        "term": "archive",
-        "zh": "檔案庫",
-        "note": "集中保存專案文件的儲存區。"
-      },
-      {
-        "term": "approval status",
-        "zh": "核准狀態",
-        "note": "文件目前是否已完成規定的審核。"
-      }
-    ],
-    "revision": 1
-  }
+  "retiredSourceReference": "question-reserve/test-02/t02-r-p7-01/questions/Q149/verification.json",
+  "priorDeployedHistoryReference": "qa-checkpoints/reconstructions/history/test-02/t02-r-p7-01.json"
 }
