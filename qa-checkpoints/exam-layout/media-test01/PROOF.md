@@ -1,0 +1,3 @@
+# Local proof, not release acceptance
+
+At this checkpoint the migration built an overlay for Test 01. Current structural validation passed: 200 items, 54 listening groups, 284 frames and 2,700.000 seconds. All 238 generated native-rate 16-bit WAVs passed extraction read-back comparison; the independent proof checked every clip hash and WAV header, four decoded source-window examples, 8 relocated pictures and 97 retained old paths. No authored question or scoring changes are included in this checkpoint. Do not publish the overlay as a site. The generated media are not part of this commit. Browser playback/seek/resume, the final unified editable layout and Tests 02–03 remain to be verified.
