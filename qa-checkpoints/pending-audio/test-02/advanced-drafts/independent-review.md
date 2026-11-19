@@ -1,0 +1,17 @@
+# Independent EN-only review (no prior keys or audio read)
+
+g032 source `46e6e7b03ff0cd0ee7daf60598fad8f0313dc608ab89069bd78ac29ac9059117`; g038 source `145b1b5b41357cea7bd9245e1d4a2fbb986497a87d9230dd35edadc10032efd5`. Chose answers from the turns and English option order alone, except for the exact chart needed for Q033. Stage 5ae438b and local SVG are byte-identical (SHA-256 `c2e6040d2faba6142673c5d900f2645662dda28e9f0cc1bf14935561edc8d4d3`). Graphic lists A flammability, B contact resistance, C heat cycling, D housing dimensions.
+
+## g032 Q032–034: A / B / C (with Q034 time fix)
+
+- **Q032 A.** Materials already issued and connector not required until final assembly, so keep Wednesday housing work. Standard connector cannot arrive until next month; the alternative cannot be approved before Friday's report, too late for Thursday final assembly. The other choices contradict one or both timelines. Several dispersed cues; defensible advanced planning inference.
+- **Q033 B.** “How much its contacts resist an electrical current” is contact resistance, Bench B. Dimensional match is an existing fact, not the lab request, so Bench D is a real contextual trap. The test-to-bench step is short and A/C have no corresponding spoken cue. This is better classified upper-intermediate if all items in a high-only group must require multi-constraint reasoning; a chart lookup alone does not guarantee advanced. To strengthen, make the question pick a bench and specific workflow/stage from four plausible pairings, or introduce another real spoken lab option that would be contraindicated by one earlier rule. Do not change the chart bytes if preserving the image is part of the task.
+- **Q034 C intended, conditionally unique.** Reporting at 3 p.m. follows the Friday noon dispatch; approval can then happen that day, and weekend closure pushes the earliest order transmission to Monday. **Required clarity:** change “at three on Friday” to “at three in the afternoon on Friday” (spoken, and align bilingual script). Without explicit p.m., an early Friday 3 a.m. report technically supports A. The stem avoids guaranteeing a Monday actual send, correctly saying “not before Monday.” Strong temporal integration after correction.
+
+## g038 Q050–052: C / B / A
+
+- **Q050 C.** Twelve samples in one run exclude eight-capacity Wednesday; larger unit is unavailable through Thursday; Friday nine misses noon technician check-in; Friday one can fit after noon, with the supplied assumption about timely approval. Unique. Advanced coordination of capacity, same run, and availability.
+- **Q051 B.** Reserve first, then engineer approval outside (no signal in loading room), then signed-plan verification by desk before entering with samples. Other sequences either cross the access gate unsigned, assume the wrong approver, or require a call where it cannot be made. Unique. Several rules distributed across the early conversation.
+- **Q052 A.** Manager receives chamber data when test stops, but without the team's exclusive signed sample inspection while off, customer reporting must wait. Other options conflate receiving data with reporting, or invent alternate signatory authority. Unique. Medium-to-advanced: integrates recipient, two prerequisites and timing; “manager can review” permissive, not a claim that the manager is necessarily at work.
+
+No keys viewed, no live records touched, no audio created or heard. Logical script/graphic review only; real cast, timing, clarity, chart rendering and listening acceptance remain unchecked.

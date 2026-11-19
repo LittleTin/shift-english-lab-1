@@ -1,0 +1,60 @@
+{
+  "turns": [
+    {
+      "speaker": "Woman",
+      "text": "We need a chamber for three days, starting Wednesday if possible. All twelve samples must go through the same run."
+    },
+    {
+      "speaker": "Man",
+      "text": "The small chamber’s free Wednesday, but it holds eight. The large one holds sixteen and is booked through Thursday. I can offer a three-day slot starting Friday, either at nine in the morning or at one in the afternoon."
+    },
+    {
+      "speaker": "Woman",
+      "text": "Our technician can’t check in before noon Friday and has to be there for loading. I can call the engineer from noon, but there’s no phone signal in the loading room."
+    },
+    {
+      "speaker": "Man",
+      "text": "I can hold a slot now. Only the engineer can sign the plan, and the person at the loading-room desk has to see it before letting anyone in with samples."
+    },
+    {
+      "speaker": "Woman",
+      "text": "The customer can see a report only when the project manager has both the chamber data and a signed inspection of the samples. Only our team can sign that inspection."
+    },
+    {
+      "speaker": "Man",
+      "text": "The system sends the data straight to the manager when the test stops. On your days off the samples can stay inside, but no one else will inspect them."
+    }
+  ],
+  "questions": [
+    {
+      "number": 50,
+      "prompt": "Assuming the plan can be approved in time, which booking should the woman request for the test?",
+      "options": [
+        "The smaller chamber on Wednesday, using two separate runs.",
+        "The larger chamber on Friday at nine.",
+        "The larger chamber on Friday at one.",
+        "The larger chamber on Thursday after the technician checks in."
+      ]
+    },
+    {
+      "number": 51,
+      "prompt": "Which sequence best avoids a delay at the loading room?",
+      "options": [
+        "Enter with the samples, then phone the engineer before loading.",
+        "Hold the slot, obtain the engineer’s approval outside the room, and show the signed plan before entering with the samples.",
+        "Wait outside until the person at the desk approves the plan, then load the samples.",
+        "Hold the slot, show the unsigned draft at the entrance, and obtain approval after the samples are inside."
+      ]
+    },
+    {
+      "number": 52,
+      "prompt": "If the test finishes while the woman’s team is off, what can happen that day?",
+      "options": [
+        "The manager can review the data, but the customer’s report cannot yet be released.",
+        "The customer can receive the report based on the chamber data alone.",
+        "The manager must wait for the inspection before receiving any chamber data.",
+        "Another team can sign the inspection so the customer gets the report."
+      ]
+    }
+  ]
+}
