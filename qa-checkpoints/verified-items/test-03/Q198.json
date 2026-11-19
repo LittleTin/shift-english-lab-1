@@ -1,0 +1,73 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": {
+    "key": "B",
+    "checks": "Company website and Nov 4–10 inclusive both required for free standard shipping. A Nov 12 after end, C other retailer excluded, D Nov 1 prelaunch. zh date precision and channel match.",
+    "id": "t03-q198"
+  },
+  "activeQuestion": {
+    "id": "t03-q198",
+    "testId": "test-03",
+    "number": 198,
+    "part": 7,
+    "groupId": "t03-g073",
+    "topic": "technology",
+    "difficulty": "advanced",
+    "tags": [
+      "technology",
+      "reading-comprehension",
+      "triple"
+    ],
+    "prompt": "Which customer qualifies for the launch shipping promotion?",
+    "promptZh": "哪位顧客符合上市期間的標準運送免運優惠？",
+    "options": [
+      {
+        "text": "A customer ordering from the website on November 12",
+        "zh": "十一月十二日在官網訂購者",
+        "whyZh": "已超過十一月十日期限。",
+        "id": "A"
+      },
+      {
+        "text": "A customer ordering from the company website on November 8",
+        "zh": "十一月八日在公司網站訂購者",
+        "whyZh": "同時符合官方網站與十一月四日至十日期間。",
+        "id": "B"
+      },
+      {
+        "text": "A customer buying from a local retailer on November 6",
+        "zh": "十一月六日在當地零售商購買者",
+        "whyZh": "其他零售商不適用。",
+        "id": "C"
+      },
+      {
+        "text": "A customer buying before the launch on November 1",
+        "zh": "十一月一日上市前購買者",
+        "whyZh": "不在活動日期內。",
+        "id": "D"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "同時符合官方網站與十一月四日至十日期間。",
+    "evidence": "company website from November 4 through November 10",
+    "vocabulary": [
+      {
+        "term": "promotion",
+        "zh": "促銷活動",
+        "note": "本題閱讀重點詞彙。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g073",
+    "testId": "test-03",
+    "part": 7,
+    "title": "Correcting a product launch announcement",
+    "titleZh": "修正產品上市公告",
+    "topic": "technology",
+    "passage": "DOCUMENT 1 — PRODUCT BRIEF: AEROLITE DESK FAN\nLaunch date: November 4\nRetail price: $58\nColours: white and charcoal\nThe AeroLite has three speeds and a rechargeable battery providing up to eight hours of operation at the lowest speed. A charging cable is included; a wall adapter is sold separately. The fan is intended for indoor use. The removable front grille can be washed after detaching it from the motor housing. The motor housing must never be immersed in water.\nLaunch promotion: orders placed on the company website from November 4 through November 10 receive free standard shipping. This offer does not apply to purchases through other retailers.\n\nDOCUMENT 2 — DRAFT NEWSLETTER\nSubject: Stay cool anywhere with AeroLite!\nOur new $58 desk fan arrives November 4 in white and charcoal. Enjoy eight hours of battery life at any speed, then recharge using the included wall adapter. Take it to the office or the beach! For effortless cleaning, simply place the entire fan in water. Buy from any retailer during launch week and shipping is on us.\n\nDOCUMENT 3 — EMAIL\nFrom: Product Manager Sonia Ellis\nTo: Marketing Editor Ben Ross\nSubject: Please hold the AeroLite newsletter\nBen, the colours, price, and release date are correct, but several other claims in the draft conflict with the approved brief. Please correct the battery description, package contents, intended use, cleaning instructions, and shipping promotion. The cleaning statement is especially important: it could lead customers to damage the product. Do not send the newsletter until I have approved the revised version. We can keep the scheduled send date if you return the corrected draft by 2 p.m. today.",
+    "passageZh": "文件一：AeroLite 桌扇產品簡介\n上市日十一月四日，售價 $58，白色及炭灰色。\n三段風速，可充電電池在最低速最長運轉八小時。附充電線，插座式電源轉接器另售。限室內使用。前護網可從馬達外殼上拆下清洗；馬達外殼絕不可浸水。\n上市優惠：在十一月四日至十日（含兩日）於公司網站下單，免標準運費；向其他零售商購買則不適用。\n\n文件二：電子報草稿\n主旨：用 AeroLite 隨處享受涼爽！\n售價 $58 的新桌扇十一月四日推出，白色及炭灰色。任一風速都享八小時續航，再用內附插座式電源轉接器充電。帶去辦公室或海灘吧！清潔只要把整台放入水中。上市週向任何零售商購買都由我們付運費。\n\n文件三：郵件\n產品經理 Sonia Ellis 寄給行銷編輯 Ben Ross。\n主旨：請暫緩 AeroLite 電子報。\n顏色、價格和上市日期正確，但其他幾項敘述與核准簡介不符。請修正電池描述、包裝內容、使用場所、清潔方式及運費優惠。清潔敘述尤其重要，可能讓顧客損壞產品。我核准新版前不要寄送。若今天最遲於下午兩點交回修訂稿，就可以維持預定寄送日期。",
+    "passageType": "triple"
+  }
+}
