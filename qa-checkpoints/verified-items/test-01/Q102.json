@@ -1,8 +1,60 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "Only replacement can serve as the noun modifier in ‘a replacement power connector’. The base and third-person verb forms do not fit; ‘replacing it’ has its own object and cannot be placed here. The zh-TW stem retains the revised BOM, and the four glosses and rationales distinguish those forms.",
+  "checks": "Connect physical fit and identical fastening without inferring the unchecked electrical qualification. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t01-q102-r2",
+    "testId": "test-01",
+    "number": 102,
+    "part": 5,
+    "groupId": null,
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "grammar"
+    ],
+    "prompt": "The new connector fits the opening and uses the same mounting screws as the old one. Its voltage rating has not yet been checked, however. The engineer can say that the new connector is ____ with the housing, but cannot yet recommend it for use on the board.",
+    "promptZh": "新接頭可以裝進開孔，也使用與舊款相同的固定螺絲，但額定電壓尚未確認。工程師可以說新接頭與外殼____，但目前還不能建議將它用在電路板上。",
+    "options": [
+      {
+        "id": "A",
+        "text": "mechanically compatible",
+        "zh": "在機構上相容",
+        "whyZh": "開孔和固定螺絲都吻合，足以就外殼的機構安裝作出判斷，不代表接頭已通過電氣確認。"
+      },
+      {
+        "id": "B",
+        "text": "electrically qualified",
+        "zh": "已通過電氣驗證",
+        "whyZh": "額定電壓還沒確認；安裝尺寸吻合不等於已做完電氣驗證。"
+      },
+      {
+        "id": "C",
+        "text": "jointly packaged",
+        "zh": "一起包裝",
+        "whyZh": "文中給了安裝條件，沒有說新接頭和外殼包在一起。"
+      },
+      {
+        "id": "D",
+        "text": "permanently bonded",
+        "zh": "永久黏合",
+        "whyZh": "文中說以螺絲固定，並未說接頭與外殼永久黏在一起。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "開孔和固定螺絲都吻合，足以就外殼的機構安裝作出判斷，不代表接頭已通過電氣確認。",
+    "evidence": "The new connector fits the opening and uses the same mounting screws as the old one. Its voltage rating has not yet been checked, however. The engineer can say that the new connector is ____ with the housing, but cannot yet recommend it for use on the board.",
+    "vocabulary": [
+      {
+        "term": "mechanically compatible",
+        "zh": "在機構上相容",
+        "note": "指實體尺寸、開孔和固定方式可以配合，但不代表已確認電氣額定值。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t01-q102",
     "testId": "test-01",
     "number": 102,
@@ -53,5 +105,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-01/Q102/verification.json"
 }

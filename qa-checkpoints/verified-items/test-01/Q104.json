@@ -1,8 +1,60 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "Allow + person + to-infinitive uniquely requires ‘to align’; aligning, aligned, and the noun alignment cannot complete this sentence before the sensor. The zh-TW stem preserves fixture, technicians, and no removal of the housing, and all translational glosses and rationales match.",
+  "checks": "Track the limits of a single camera and the person-led sequence; distinguish shared reporting from simultaneous collection. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t01-q104-r2",
+    "testId": "test-01",
+    "number": 104,
+    "part": 5,
+    "groupId": null,
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "grammar"
+    ],
+    "prompt": "The fixture holds the panel steady, but its single camera sees only the side that faces up. The operator saves the first image, turns the panel over, and then scans it again. The two sides are therefore checked ____, even though both images go into the same report.",
+    "promptZh": "治具可固定面板，但唯一的相機只能拍到朝上的一面。作業員先儲存第一張影像，將面板翻面，再掃描一次。因此，即使兩張影像都會放入同一份報告，面板兩面仍是____檢查。",
+    "options": [
+      {
+        "id": "A",
+        "text": "simultaneously",
+        "zh": "同時",
+        "whyZh": "一台相機只能拍到朝上的一面；要先存檔、再翻面掃描，不能同時檢查。"
+      },
+      {
+        "id": "B",
+        "text": "sequentially",
+        "zh": "依序",
+        "whyZh": "相機一次只能看到一面；兩次掃描必須一前一後進行。放進同一份報告不代表同時掃描。"
+      },
+      {
+        "id": "C",
+        "text": "randomly",
+        "zh": "隨機",
+        "whyZh": "作業員按照先掃描、再翻面的固定流程操作，並非隨機抽查。"
+      },
+      {
+        "id": "D",
+        "text": "on different panels",
+        "zh": "分別在不同面板上",
+        "whyZh": "作業員翻面的是同一塊面板；兩張影像分別來自這一塊面板的正反面。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "相機一次只能看到一面；兩次掃描必須一前一後進行。放進同一份報告不代表同時掃描。",
+    "evidence": "The fixture holds the panel steady, but its single camera sees only the side that faces up. The operator saves the first image, turns the panel over, and then scans it again. The two sides are therefore checked ____, even though both images go into the same report.",
+    "vocabulary": [
+      {
+        "term": "sequentially",
+        "zh": "依序",
+        "note": "依序進行；本題兩個面依先後拍攝，之後才合併到一份報告中。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t01-q104",
     "testId": "test-01",
     "number": 104,
@@ -53,5 +105,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-01/Q104/verification.json"
 }
