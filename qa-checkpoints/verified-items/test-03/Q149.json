@@ -1,0 +1,126 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": {
+    "key": "C",
+    "checks": "Offline stock count helps unreliable wireless in storage, not lack of space, forgotten passwords or label printing. Candidate English/zh use unreliable rather than weak; retain old ID mapping.",
+    "id": "t03-q149"
+  },
+  "activeQuestion": {
+    "id": "t03-q149-r2",
+    "testId": "test-03",
+    "number": 149,
+    "part": 7,
+    "groupId": "t03-g060",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "reading-comprehension",
+      "single"
+    ],
+    "prompt": "What problem does the new feature address?",
+    "promptZh": "新功能解決什麼問題？",
+    "options": [
+      {
+        "text": "Insufficient space for inventory",
+        "zh": "庫存空間不足",
+        "whyZh": "地下室問題是網路訊號而非空間。",
+        "id": "A"
+      },
+      {
+        "text": "Employees forgetting passwords",
+        "zh": "員工忘記密碼",
+        "whyZh": "文中指出不用改密碼，非更新目標。",
+        "id": "B"
+      },
+      {
+        "text": "Unreliable wireless reception in storage areas",
+        "zh": "儲藏區的無線訊號不穩",
+        "whyZh": "離線盤點可因應地下室網路不可靠的情況。",
+        "id": "C"
+      },
+      {
+        "text": "Slow printing of item labels",
+        "zh": "品項標籤列印緩慢",
+        "whyZh": "信中沒有列印功能。",
+        "id": "D"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "離線盤點可因應地下室網路不可靠的情況。",
+    "evidence": "count stock without a network connection ... where the wireless signal is unreliable",
+    "vocabulary": [
+      {
+        "term": "unreliable",
+        "zh": "不可靠的",
+        "note": "本題閱讀重點詞彙。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t03-g060",
+    "testId": "test-03",
+    "part": 7,
+    "title": "Inventory software message",
+    "titleZh": "庫存軟體訊息",
+    "topic": "technology",
+    "passage": "To: Branch supervisors\nFrom: Lila Chen, Systems Support\nSubject: StockView mobile update\n\nVersion 4.2 of StockView will be available Monday. It allows employees to count stock without a network connection and upload the results later. This should be particularly helpful in our basement storage areas, where the wireless signal is unreliable.\n\nPlease install the update on one tablet per branch initially. Use that tablet for Monday's closing count, then compare its totals with your paper record. Send any discrepancies to me by 10 a.m. Tuesday, including the item code and tablet model. Do not update the remaining tablets until I send a confirmation email. The desktop version is unaffected, and no changes to employee passwords are required. A five-minute demonstration is attached; it explains how to identify counts that have not yet been uploaded.",
+    "passageZh": "收件者：各分店主管\n寄件者：系統支援 Lila Chen\n主旨：StockView 行動版更新\n\nStockView 4.2 版將於星期一推出，可讓員工在沒有網路時盤點，稍後再上傳結果。地下室儲藏區的無線訊號不穩，這項功能尤其有幫助。\n\n一開始請每家分店只更新一台平板。使用該平板進行星期一閉店盤點，再與紙本紀錄核對。若有差異，請最遲於星期二上午十點寄信告知我，附上品項代碼及平板型號。收到我的確認信前，不要更新其他平板。桌面版不受影響，員工也不必更改密碼。附件為五分鐘示範，說明如何辨識尚未上傳的盤點資料。",
+    "passageType": "single"
+  },
+  "originalQuestion": {
+    "id": "t03-q149",
+    "testId": "test-03",
+    "number": 149,
+    "part": 7,
+    "groupId": "t03-g060",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "reading-comprehension",
+      "single"
+    ],
+    "prompt": "What problem does the new feature address?",
+    "promptZh": "新功能解決什麼問題？",
+    "options": [
+      {
+        "text": "Insufficient space for inventory",
+        "zh": "庫存空間不足",
+        "whyZh": "地下室問題是網路訊號而非空間。",
+        "id": "A"
+      },
+      {
+        "text": "Employees forgetting passwords",
+        "zh": "員工忘記密碼",
+        "whyZh": "文中指出不用改密碼，非更新目標。",
+        "id": "B"
+      },
+      {
+        "text": "Weak wireless reception in storage areas",
+        "zh": "儲藏區無線訊號微弱",
+        "whyZh": "離線盤點可因應地下室網路不可靠的情況。",
+        "id": "C"
+      },
+      {
+        "text": "Slow printing of item labels",
+        "zh": "品項標籤列印緩慢",
+        "whyZh": "信中沒有列印功能。",
+        "id": "D"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "離線盤點可因應地下室網路不可靠的情況。",
+    "evidence": "count stock without a network connection ... where the wireless signal is unreliable",
+    "vocabulary": [
+      {
+        "term": "unreliable",
+        "zh": "不可靠的",
+        "note": "本題閱讀重點詞彙。"
+      }
+    ],
+    "revision": 1
+  }
+}

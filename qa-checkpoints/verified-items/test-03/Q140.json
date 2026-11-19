@@ -1,0 +1,71 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": {
+    "key": "A",
+    "checks": "Fictional card data specifically enables exploring payment screens with no personal financial data. No bank contact, real payment or existing reservation required; corrected Chinese removes unsupported attachment.",
+    "id": "t03-q140"
+  },
+  "activeQuestion": {
+    "id": "t03-q140",
+    "testId": "test-03",
+    "number": 140,
+    "part": 6,
+    "groupId": "t03-g057",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "text-completion"
+    ],
+    "prompt": "Choose the best word or sentence for blank [140].",
+    "promptZh": "請選出最適合填入空格 [140] 的字詞或句子。",
+    "options": [
+      {
+        "id": "A",
+        "text": "A set of fictional card details is included for testing.",
+        "zh": "另有一組虛構的付款卡資料供測試。",
+        "whyZh": "提供虛構的付款卡資料，可讓測試者不用輸入個人財務資訊就能操作付款畫面，正好承接後句。"
+      },
+      {
+        "id": "B",
+        "text": "You should contact your bank before using the link.",
+        "zh": "使用連結前應聯絡銀行。",
+        "whyZh": "測試不使用真實財務資料，無此需求。"
+      },
+      {
+        "id": "C",
+        "text": "Please pay the full fare for every test booking.",
+        "zh": "請支付每次測試訂位的全額票價。",
+        "whyZh": "與不建立真實訂位及不輸入財務資料矛盾。"
+      },
+      {
+        "id": "D",
+        "text": "Only customers with existing reservations may participate.",
+        "zh": "只有已有訂位的顧客可參加。",
+        "whyZh": "未提此資格限制，且不解釋下一句付款測試。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "提供虛構的付款卡資料，可讓測試者不用輸入個人財務資訊就能操作付款畫面，正好承接後句。",
+    "evidence": "fictional card details ... without entering personal financial information",
+    "vocabulary": [
+      {
+        "term": "fictional",
+        "zh": "虛構的",
+        "note": "非真實資料，可用於測試。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g057",
+    "testId": "test-03",
+    "part": 6,
+    "title": "Website preview invitation",
+    "titleZh": "網站預覽邀請",
+    "topic": "technology",
+    "passage": "To: Customer advisory panel\nFrom: Nadia Flores, Digital Services\nSubject: Preview our redesigned website\n\nThank you for agreeing to test the redesigned Alder Travel website. Your feedback will help us identify confusing instructions before the site is [139] ____ to the public next month. A private preview link will be sent to you on Wednesday, with a list of tasks to complete.\n\nPlease use the sample customer details provided in the instructions rather than your own information. The preview site is not connected to our reservation database, so any bookings you make there will not create real reservations. [140] ____ This will allow you to explore the payment screens without entering personal financial information.\n\nAfter completing the tasks, please fill out the online questionnaire. We are particularly interested in [141] ____ easily you can compare different travel dates. You do not need to report minor spelling errors, as our editorial team is already reviewing the text. We would appreciate receiving your responses by Friday afternoon so that the development team has sufficient time to [142] ____ the suggested improvements.",
+    "passageZh": "收件者：顧客諮詢小組\n寄件者：數位服務部 Nadia Flores\n主旨：預覽改版網站\n\n感謝您同意測試 Alder Travel 改版網站。在網站下個月向大眾 [139] ____ 前，您的回饋將協助我們找出不清楚的說明。週三將寄送非公開的預覽連結，以及一份待完成的任務清單。\n\n請使用說明提供的範例顧客資料，不要使用個人資料。預覽網站未連接訂位資料庫，因此不會產生真實訂位。[140] ____ 這樣您可探索付款畫面，而不必輸入個人財務資訊。\n\n完成任務後請填寫線上問卷。我們特別想了解，比較不同的出遊日期有 [141] ____ 容易。不必回報小拼字錯誤，因為編輯團隊已在審查文字。我們希望最遲於星期五下午收到回覆，讓開發團隊有充足時間 [142] ____ 建議的改進措施。"
+  }
+}

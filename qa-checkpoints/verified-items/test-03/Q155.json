@@ -1,0 +1,73 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": {
+    "key": "D",
+    "checks": "Omar recommends trying independent weekly collection route in extended trial, not full rollout, ending pickups or replacing good crates. zh wording keeps separate route and economic test.",
+    "id": "t03-q155"
+  },
+  "activeQuestion": {
+    "id": "t03-q155",
+    "testId": "test-03",
+    "number": 155,
+    "part": 7,
+    "groupId": "t03-g062",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension",
+      "single"
+    ],
+    "prompt": "What does Omar propose doing next?",
+    "promptZh": "Omar 建議下一步做什麼？",
+    "options": [
+      {
+        "text": "Immediately supplying every depot with crates",
+        "zh": "立刻為所有站點供應貨箱",
+        "whyZh": "他明確反對此時全面採用。",
+        "id": "A"
+      },
+      {
+        "text": "Ending all collection services",
+        "zh": "終止所有回收服務",
+        "whyZh": "他要測試回收路線，而非終止。",
+        "id": "B"
+      },
+      {
+        "text": "Replacing all crates used in May",
+        "zh": "更換五月使用的全部貨箱",
+        "whyZh": "現有貨箱不需更換。",
+        "id": "C"
+      },
+      {
+        "text": "Testing a dedicated collection route",
+        "zh": "測試專用回收路線",
+        "whyZh": "建議延長試用並測試每週獨立回收路線。",
+        "id": "D"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "建議延長試用並測試每週獨立回收路線。",
+    "evidence": "We should test a separate weekly collection route",
+    "vocabulary": [
+      {
+        "term": "offset",
+        "zh": "抵消",
+        "note": "本題閱讀重點詞彙。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g062",
+    "testId": "test-03",
+    "part": 7,
+    "title": "Packaging pilot report",
+    "titleZh": "包裝試用報告",
+    "topic": "manufacturing",
+    "passage": "INTERNAL REPORT: RETURNABLE CRATES\nPrepared by Omar Vale, Distribution Manager — June 12\n\nDuring May, our western depot used reusable crates for deliveries to six independent grocery stores. The other depots continued using cardboard boxes. We wanted to learn whether reusable packaging could reduce damage without slowing deliveries.\n\nDamaged-item claims at the western depot fell from 18 in April to 7 in May. However, drivers spent an average of twelve additional minutes at each store collecting empty crates. Two stores lacked space to keep empties between deliveries, so they returned them through a nearby partner store.\n\nI recommend extending the trial for two months rather than ordering crates for every depot now. We should test a separate weekly collection route and measure whether its cost offsets the savings from fewer damaged products. The crates themselves remained in good condition; replacing them is not currently necessary. Store managers were generally supportive but asked for a clearer collection schedule.",
+    "passageZh": "內部報告：可歸還再用的貨箱\n配送經理 Omar Vale，六月十二日\n\n五月，西區配送站對六家獨立雜貨店改用可重複使用貨箱；其他站仍用紙箱。目的是了解能否減少損壞，又不拖慢配送。\n\n西區的商品損壞索賠從四月十八件降為五月七件。但司機在每家店收回空箱平均多花十二分鐘。兩家店沒有空間暫存空箱，因此透過附近合作店歸還。\n\n我建議試用再延長兩個月，而非立即為所有站點訂貨箱。我們應測試獨立的每週回收路線，衡量成本是否抵消減少損壞帶來的節省。貨箱本身狀況良好，目前不需更換。店長們大致支持，但希望回收時間表更清楚。",
+    "passageType": "single"
+  }
+}

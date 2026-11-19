@@ -1,0 +1,73 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": {
+    "key": "D",
+    "checks": "Unsafe high wind triggers alternative date or full refund; no experience required, light rain continues, four weeks meets booking rule. zh and reasons accurate.",
+    "id": "t03-q152"
+  },
+  "activeQuestion": {
+    "id": "t03-q152",
+    "testId": "test-03",
+    "number": 152,
+    "part": 7,
+    "groupId": "t03-g061",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "reading-comprehension",
+      "single"
+    ],
+    "prompt": "Under what circumstance can a group receive a full refund?",
+    "promptZh": "何種情況下團體可取得全額退款？",
+    "options": [
+      {
+        "text": "A participant lacks gardening experience",
+        "zh": "有人缺乏園藝經驗",
+        "whyZh": "不需要園藝經驗。",
+        "id": "A"
+      },
+      {
+        "text": "Light rain is forecast",
+        "zh": "預報有小雨",
+        "whyZh": "小雨時照常進行。",
+        "id": "B"
+      },
+      {
+        "text": "The group books four weeks in advance",
+        "zh": "團體提前四週預訂",
+        "whyZh": "這符合期限，但不是退款原因。",
+        "id": "C"
+      },
+      {
+        "text": "Dangerous wind prevents the activity",
+        "zh": "危險的強風導致活動無法進行",
+        "whyZh": "強風造成不安全時可選改期或全額退款。",
+        "id": "D"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "強風造成不安全時可選改期或全額退款。",
+    "evidence": "if high winds make the orchard unsafe ... a full refund",
+    "vocabulary": [
+      {
+        "term": "pruning",
+        "zh": "修剪",
+        "note": "本題閱讀重點詞彙。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g061",
+    "testId": "test-03",
+    "part": 7,
+    "title": "Community orchard advertisement",
+    "titleZh": "社區果園廣告",
+    "topic": "daily",
+    "passage": "A DIFFERENT KIND OF TEAM DAY\nGreen Lane Orchard welcomes workplace groups\n\nTrade the meeting room for a morning outdoors. Our half-day program combines a guided orchard walk with a seasonal task such as pruning young trees or preparing fruit baskets for a local food bank. No gardening experience is needed. Trained staff provide tools, gloves, and a safety briefing.\n\nGroups of 8–20 may book on Wednesdays or Fridays from March through October. The fee is $35 per person and includes a simple lunch. Bookings must be made at least three weeks ahead. Please tell us about dietary requirements when booking, not on arrival.\n\nWe work in light rain, but if high winds make the orchard unsafe, we will offer an alternative date or a full refund. Participants should bring waterproof shoes; ordinary office shoes are unsuitable for the uneven paths. To request available dates, contact teams@greenlane.example.",
+    "passageZh": "不一樣的團隊日\nGreen Lane 果園歡迎企業團體\n\n走出會議室，到戶外度過一個上午。半日活動包含果園導覽與季節性工作，例如修剪幼樹，或替當地食物銀行準備水果籃。不需要園藝經驗，受訓人員會提供工具、手套與安全說明。\n\n三月至十月的星期三或五，可接受八至二十人的團體預約。每人 $35，含簡餐，須至少提前三週預訂。飲食需求請於預訂時告知，不要等到抵達才提出。\n\n小雨時活動照常；若強風吹襲使果園不安全，將提供改期或全額退款。參加者應帶防水鞋，一般上班穿的鞋不適合凹凸不平的小徑。如想查詢可預約的日期，請聯絡 teams@greenlane.example。",
+    "passageType": "single"
+  }
+}
