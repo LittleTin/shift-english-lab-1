@@ -1,13 +1,66 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": {
-    "number": 178,
-    "key": "C",
-    "reason": "Birch upstairs lift unavailable April 8–12, including April 10; Alex needs step-free access. Birch has 24 seats, movable tables and included projector.",
-    "evidence": "The lift ... out of service from April 8 through April 12. / April 10 workshop"
-  },
+  "checks": "Combine named authorization, distinct receipt deadlines, the visibly verifiable closure and next-morning handoff rules. Independent B/D/A/C/B blind solve and bilingual matching; whole revised group uses exact original work graphic.",
   "activeQuestion": {
+    "id": "t03-q178-r2",
+    "testId": "test-03",
+    "number": 178,
+    "part": 7,
+    "groupId": "t03-g069-r2",
+    "topic": "business",
+    "difficulty": "advanced",
+    "tags": [
+      "business",
+      "reading-comprehension",
+      "double"
+    ],
+    "prompt": "Which plan will let Sam collect the confidential list at 8:30 a.m. on April 10?",
+    "promptZh": "哪個方案能讓 Sam 在四月十日上午八點半領到機密名單？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mark a tamper-evident envelope with CE-410 and “Hold for named pickup,” and email reception to authorize Sam by 4 p.m. on April 9.",
+        "zh": "以可辨識是否拆封的信封，標上 CE-410 和「保留供指定人員領取」，並最遲於四月九日下午四點寄出 Sam 的代領授權。",
+        "whyZh": "四月九日下午四點十五分的送件仍在收件時間內；正確的信封及標示可讓文件保管過夜。及時授權後，Sam 可在四月十日上午八點半出示證件代領。"
+      },
+      {
+        "id": "B",
+        "text": "Use the correct marked envelope, but email reception to authorize Sam when the parcel arrives at 4:15 p.m. on April 9.",
+        "zh": "使用符合規定並有標示的信封，但等包裹四月九日下午四點十五分送到後，再寄出 Sam 的代領授權。",
+        "whyZh": "包裹來得及收件，但代領授權最遲須於下午四點寄出。兩個截止時間不同。"
+      },
+      {
+        "id": "C",
+        "text": "Authorize Sam on time and send the list in a sealed tamper-evident envelope marked only CE-410.",
+        "zh": "及時辦理 Sam 的代領授權，並以只標有 CE-410 的可辨識是否拆封的信封密封寄送名單。",
+        "whyZh": "授權、信封及預訂編號都符合規定，但文件要保管過夜，還須標明「保留供指定人員領取」。"
+      },
+      {
+        "id": "D",
+        "text": "Use the correct marked envelope and ask Sam to show photo ID without authorizing a substitute.",
+        "zh": "使用符合規定並有標示的信封，請 Sam 出示附照片的證件，但不另行辦理代領授權。",
+        "whyZh": "有證件不等於有代領資格。登記的預訂聯絡人是 Alex，Sam 必須事先獲得授權。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "四月九日下午四點十五分的送件仍在收件時間內；正確的信封及標示可讓文件保管過夜。及時授權後，Sam 可在四月十日上午八點半出示證件代領。",
+    "evidence": "The delivery desk accepts parcels until 4:30 p.m. / Confidential parcels are held overnight only in a tamper-evident envelope / email reception by 4 p.m. on the day before pickup / at 4:15 p.m. on April 9 / The booking reference is CE-410 / Sam Torres must collect the list at 8:30 a.m. and can show photo ID.",
+    "vocabulary": [
+      {
+        "term": "tamper-evident",
+        "zh": "可辨識是否拆封的",
+        "note": "一旦被打開，信封或封條會留下可見痕跡。"
+      },
+      {
+        "term": "authorized substitute",
+        "zh": "授權的代領人",
+        "note": "在期限內由預訂聯絡人指定，並出示證件。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t03-q178",
     "testId": "test-03",
     "number": 178,
@@ -61,18 +114,20 @@
     "revision": 1
   },
   "group": {
-    "id": "t03-g069",
+    "id": "t03-g069-r2",
     "testId": "test-03",
     "part": 7,
     "title": "Training room booking",
     "titleZh": "訓練教室預訂",
     "topic": "business",
-    "passage": "DOCUMENT 1 — CEDAR MEETING CENTRE: ROOM GUIDE\nAll room rates cover one half-day, up to four hours. Wireless internet, a projector, and drinking water are included. Catering is charged separately. Rooms can be rearranged on request, except the fixed-seat Auditorium.\n\nWillow: capacity 12; $160; ground floor; movable tables.\nBirch: capacity 24; $240; first floor; movable tables.\nMaple: capacity 36; $310; ground floor; movable tables.\nAuditorium: capacity 60; $380; first floor; fixed theatre seating.\n\nGround-floor rooms have direct step-free access from the car park. The lift to the first floor will be out of service from April 8 through April 12. Reservations may be cancelled without charge until seven calendar days before the event. Later cancellation incurs the full room fee.\n\nDOCUMENT 2 — EMAIL\nTo: Cedar Meeting Centre\nFrom: Alex Moreno, Solis Training\nDate: March 27\nSubject: April 10 workshop\n\nPlease reserve a room for 20 participants from 9 a.m. to noon on April 10. We need to arrange tables into four small discussion groups. One participant uses a wheelchair, so step-free access is essential. Please choose the lowest-priced room that meets these requirements. We will bring our own refreshments and do not need catering. Could you confirm whether a projector is included? Our facilitator will arrive thirty minutes early; please let me know if that would affect the price.",
-    "passageZh": "文件一：Cedar 會議中心教室指南\n費用以半日計，最多四小時，含無線網路、投影機及飲水。餐飲另計。除固定座位的禮堂外，可依需求重新配置。\nWillow：十二人，$160，地面層，桌子可移動。\nBirch：二十四人，$240，地面層的上一層，桌子可移動。\nMaple：三十六人，$310，地面層，桌子可移動。\nAuditorium：六十人，$380，地面層的上一層，固定式劇院座椅。\n地面層的教室可從停車場直接進入，沿途沒有階梯。通往上一層的電梯自四月八日至十二日停用。至少提前七個日曆日取消預訂不收費；不足七天則收取全額場地費。\n\n文件二：電子郵件\n收件者：Cedar 會議中心\n寄件者：Solis Training 的 Alex Moreno\n日期：三月二十七日\n主旨：四月十日工作坊\n請預訂四月十日上午九點至中午十二點供二十人使用的教室。我們需將桌子分成四組討論。有一名參加者使用輪椅，無階梯動線不可少。請選符合條件的最低價教室。我們自備茶點，不需餐飲。請確認是否含投影機。帶領人員會提前三十分鐘到場，請告知是否影響價格。",
+    "passage": "DOCUMENT 1 — CEDAR MEETING CENTRE: ROOM GUIDE\nAll room rates cover one half-day, up to four hours. Wireless internet, a projector, and drinking water are included. Catering is charged separately. Rooms can be rearranged on request, except the fixed-seat Auditorium.\n\nWillow: capacity 12; $160; ground floor; movable tables.\nBirch: capacity 24; $240; first floor; movable tables.\nMaple: capacity 36; $310; ground floor; movable tables.\nAuditorium: capacity 60; $380; first floor; fixed theatre seating.\n\nGround-floor rooms have direct step-free access from the car park. The lift to the first floor will be out of service from April 8 through April 12. Reservations may be cancelled without charge until seven calendar days before the event. Later cancellation incurs the full room fee.\n\nWorkshop arrangements\n• A half-day runs from the start of setup to the end of the required ten-minute room reset, and is limited to four consecutive hours. An extension fee applies after that.\n• The projector shows pictures only. For room sound, use the room’s basic audio lead if the laptop has a headphone socket, or an HDMI audio splitter if needed. The splitter is free but must be reserved at least two calendar days before the event. Same-day technician support costs extra.\n• The delivery desk accepts parcels until 4:30 p.m. Confidential parcels are held overnight only in a tamper-evident envelope marked with the booking reference and “Hold for named pickup.” Reception opens at 8:15 a.m. for pickup by the named contact or an authorized substitute. The substitute must show photo ID; email reception by 4 p.m. on the day before pickup to name one.\n• For a late change, transfer to an available date within 30 calendar days after the original event date. Provide the new date by 5 p.m. two calendar days before the original event. We charge the normal rate for the replacement date only.\n\nDOCUMENT 2 — EMAIL\nTo: Cedar Meeting Centre\nFrom: Alex Moreno, Solis Training\nDate: March 27\nSubject: April 10 workshop\n\nPlease reserve a room for 20 participants from 9 a.m. to noon on April 10. We need to arrange tables into four small discussion groups. One participant uses a wheelchair, so step-free access is essential. Please choose the lowest-priced room that meets these requirements. We will bring our own refreshments and do not need catering. Could you confirm whether a projector is included? Our facilitator will arrive thirty minutes early; please let me know if that would affect the price.\n\nA few practical details:\n• Our laptop has HDMI but no headphone socket. Please arrange a free way to play clips with sound.\n• A courier will deliver our confidential attendance list at 4:15 p.m. on April 9. The booking reference is CE-410; I am the named contact and arrive at 9 a.m. Sam Torres must collect the list at 8:30 a.m. and can show photo ID. We can still change the packing instructions or email reception.\n• On April 8 at 4:30 p.m., we will decide whether to postpone. Until then, keep our booking. You confirmed April 29 and May 17 are both available. We want to avoid paying for two dates.\n• The facilitator needs the full thirty minutes before 9 a.m. for setup. We want a private debrief in the room immediately after the workshop, lasting up to 45 minutes. We can shorten it to avoid an extension fee.",
+    "passageZh": "文件一：Cedar 會議中心教室指南\n費用以半日計，最多四小時，含無線網路、投影機及飲水。餐飲另計。除固定座位的禮堂外，可依需求重新配置。\nWillow：十二人，$160，地面層，桌子可移動。\nBirch：二十四人，$240，地面層的上一層，桌子可移動。\nMaple：三十六人，$310，地面層，桌子可移動。\nAuditorium：六十人，$380，地面層的上一層，固定式劇院座椅。\n地面層的教室可從停車場直接進入，沿途沒有階梯。通往上一層的電梯自四月八日至十二日停用。至少提前七個日曆日取消預訂不收費；不足七天則收取全額場地費。\n\n工作坊相關安排\n• 半日方案涵蓋整段專用場地時間，從進場布置到完成必須預留的十分鐘場地復原為止，最多連續四小時。超時另收延長費。\n• 投影機只顯示畫面。要把聲音送到場內喇叭，可將基本音源線接到筆電的耳機孔；若筆電只有 HDMI，可借用 HDMI 音訊分離器。音訊分離器免費，但最遲須於活動前兩個日曆日預約。如需當天的技術人員支援，須另付費。\n• 收件櫃檯收件至下午四點半。機密文件須裝入可辨識是否拆封的信封，並標示預訂編號和「保留供指定人員領取」，才會保管過夜。接待櫃檯自上午八點十五分起，可交件給預訂登記的聯絡人，或出示附照片證件的授權代領人。若需授權代領，最遲須於領取前一天下午四點寄電子郵件至接待櫃檯。\n• 若臨時改期，可在原活動日後三十個日曆日內改訂尚有空位的日期，會議中心不收原場次的場地費。使用這項安排，最遲須於原活動日前兩個日曆日的下午五點提供新日期。改訂的場次仍按一般費率計費。\n\n文件二：電子郵件\n收件者：Cedar 會議中心\n寄件者：Solis Training 的 Alex Moreno\n日期：三月二十七日\n主旨：四月十日工作坊\n請預訂四月十日上午九點至中午十二點供二十人使用的教室。我們需將桌子分成四組討論。有一名參加者使用輪椅，無階梯動線不可少。請選符合條件的最低價教室。我們自備茶點，不需餐飲。請確認是否含投影機。帶領人員會提前三十分鐘到場，請告知是否影響價格。\n\n另有幾項安排：\n• 我們的筆電有 HDMI，但沒有耳機孔。請安排免費的方式播放有聲影片。\n• 快遞會在四月九日下午四點十五分送來機密的簽到名單。預訂編號是 CE-410，登記的聯絡人是我。我上午九點才會到，因此 Sam Torres 須在上午八點半代為領取。Sam 可出示附照片的證件。我們還來得及更改包裝指示或寄電子郵件給接待櫃檯。\n• 我們會在四月八日下午四點半決定是否延期；在此之前請保留原場次。貴中心已確認四月二十九日和五月十七日都有空位。我們希望不必同時支付兩場的費用。\n• 帶領人員須保留上午九點前完整的三十分鐘進行布置。工作坊一結束，我們想在預訂的教室內進行最多四十五分鐘的內部檢討會議。如有必要，可以縮短檢討會議以免另付延長費。",
     "passageType": "double",
     "image": "assets/graphics/t03-g069-room-guide.svg",
     "imageAlt": "Cedar Meeting Centre room guide. The same data appear in Document 1 below.",
     "imageCaption": "Document 1: Room rates, layouts, and step-free access."
   },
-  "imageSha256": "a1b4f915b2635ca9f7161da6665f77627669f2ddf9059e4387ccfde1f76d9264"
+  "imageSha256": "a1b4f915b2635ca9f7161da6665f77627669f2ddf9059e4387ccfde1f76d9264",
+  "retiredSourceReference": "question-reserve/test-03/t03-g069/questions/Q178/verification.json",
+  "priorDeployedHistoryReference": "qa-checkpoints/reconstructions/history/test-03/t03-g069.json"
 }
