@@ -1,0 +1,83 @@
+{
+  "status": "unapproved-candidate-timing-only",
+  "changes": [
+    {
+      "role": "passage",
+      "questionId": null,
+      "priorSeconds": 35.808,
+      "candidateSeconds": 37.2125
+    },
+    {
+      "role": "question",
+      "questionId": "t01-q098",
+      "priorSeconds": 3.32867,
+      "candidateSeconds": 5.7625
+    },
+    {
+      "role": "question",
+      "questionId": "t01-q099",
+      "priorSeconds": 4.52658,
+      "candidateSeconds": 6.0875
+    },
+    {
+      "role": "question",
+      "questionId": "t01-q100",
+      "priorSeconds": 4.30858,
+      "candidateSeconds": 6.8
+    }
+  ],
+  "assets": {
+    "test01-q098-100-passage-candidate.wav": {
+      "samples": 893100,
+      "hz": 24000,
+      "duration": 37.2125,
+      "sha256": "55e8e0abae7ddc01fdc95128a9674b16578f59cdf0ced6947650e3e4d070fa68"
+    },
+    "test01-q100-formal-stem.wav": {
+      "samples": 163200,
+      "hz": 24000,
+      "duration": 6.8,
+      "sha256": "1f5ccdddde6ad77545c616ddb7eef1ea2a1b827f6eede8fbe6161f502ffffffd"
+    },
+    "test01-q98-formal-stem.wav": {
+      "samples": 138300,
+      "hz": 24000,
+      "duration": 5.7625,
+      "sha256": "398d75ff90824efb0a8b6b2b7265edaf4cbb438b3d7413d26275b16ea8428cd7"
+    },
+    "test01-q99-formal-stem.wav": {
+      "samples": 146100,
+      "hz": 24000,
+      "duration": 6.0875,
+      "sha256": "734566f8b2a9fe6b4de041e02c35691b63087ab5113180e8cb3ab7cc4918b7e5"
+    }
+  },
+  "minimumPart4AnswerSeconds": 8.53691,
+  "pauseReductionTotalSeconds": 7.89067,
+  "formalDurationSeconds": 2700,
+  "numberOfAnswerSlots": 100,
+  "totalFrames": 284,
+  "numberOfAdjustedPart4Pauses": 30,
+  "pinnedRef": "1112ffb97e63592b65c852f0ba5880b293f6e20d",
+  "audioEvidence": {
+    "service": "Owner-authorized Azure Speech F0, standard voices; authenticated voice listing and four actual outputs succeeded",
+    "totalSubmittedSpokenUnicodeChars": 812,
+    "passageVoice": "en-NG-EzinneNeural",
+    "stemVoice": "en-US-JennyNeural",
+    "exactReviewedTextMatched": true,
+    "localDecode": "4/4 valid full PCM WAV; no cache or secrets in Git",
+    "initialSecondRecognizer": "Uneven PocketSphinx corroboration; not sufficient for verification. Retain the hold and independently confirm actual words, including can't in Q100 and key facts in passage.",
+    "whisperBase": {
+      "method": "Whisper.cpp v1.8.3 base.en unprompted against exact local WAV",
+      "passage": "Recognized central order rules and 10:30 approval, 3:00 closure, 3:30 arrival, and exception requiring approval; courier, first van, staffed, and hat remain disputed in transcript.",
+      "stems": "Q098 and Q100 recognized exactly apart from number and punctuation typography; Q099 van rendered as ban. More evidence is needed before approval."
+    }
+  },
+  "notApproved": [
+    "No auditory acceptance",
+    "No practice/formal integration",
+    "No browser acceptance",
+    "No prior version changes",
+    "No release"
+  ]
+}

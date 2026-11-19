@@ -1,0 +1,299 @@
+{
+  "status": "held-prospective-only-no-azure-call-no-render-no-audio-verification-no-ledger-promotion",
+  "ref": "1112ffb97e63592b65c852f0ba5880b293f6e20d",
+  "candidateSource": {
+    "path": "qa-checkpoints/pending-audio/test-03/Q095-097/editorial-checked-pending-audio.json",
+    "gitBlobSha1": "e20ecba867f9e184296e32e0653df62172fd7a97",
+    "sha256": "257c80c47fd2a2f7fe5198cb15575a4bac6ff7fc885224961a2f5dff1d381f1f"
+  },
+  "oldGuards": {
+    "pack": {
+      "path": "data/test-03.json",
+      "sha256": "849c26f1b903d3f89fbe88e39294caeb2386da2a1f8c2f7e4769b2e40a0d849d",
+      "gitBlob": "9f999dcdc5f1defd6ce471cd4e77f0547f39d645"
+    },
+    "sourceGroup": "t03-g053",
+    "groupCanonicalSha256": "aaa4db128f498830f9f17085799510f398f0eff6c5a505394c3c3387c9b52a38",
+    "questionNumbers": [
+      95,
+      96,
+      97
+    ],
+    "questionIds": [
+      "t03-q095",
+      "t03-q096",
+      "t03-q097"
+    ],
+    "keys": [
+      "C",
+      "A",
+      "D"
+    ],
+    "questionCanonicalSha256": [
+      "6608a4843403b00128b485712d35de5d50779c953a0cfc8d1c9362dcae4b0cec",
+      "16136419bea33440dddc24429723447ebdc6ba7c11d05f785b1064dff6e10930",
+      "eb24c89de07d7be08347ac1322cbc550a480224b84ad198971637a33cc3e4cc6"
+    ],
+    "oldPracticeSource": {
+      "src": "audio/azure-v1/test-03-33.mp3",
+      "start": 0.5,
+      "end": 51.404
+    },
+    "activeFormalPlan": {
+      "audioEdition": "toeic-1",
+      "duration": 2700,
+      "allGroupFrames": [
+        {
+          "src": "audio/formal/test-03-cues-06.mp3",
+          "start": 0.25,
+          "end": 3.63379,
+          "duration": 3.38379,
+          "kind": "audio",
+          "role": "cue",
+          "part": 4,
+          "groupId": "t03-g053",
+          "at": 2521.79184
+        },
+        {
+          "src": "audio/azure-v1/test-03-33.mp3",
+          "start": 0.5,
+          "end": 51.404,
+          "duration": 50.904,
+          "kind": "audio",
+          "role": "passage",
+          "part": 4,
+          "groupId": "t03-g053",
+          "at": 2525.17563,
+          "speakers": [
+            {
+              "speaker": "F1",
+              "locale": "en-SG",
+              "role": "female",
+              "modelVoice": "en-SG-LunaNeural"
+            }
+          ]
+        },
+        {
+          "src": "audio/formal/test-03-cues-06.mp3",
+          "start": 3.88379,
+          "end": 7.88696,
+          "duration": 4.00317,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g053",
+          "questionId": "t03-q095",
+          "at": 2576.07963
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 6.55266,
+          "part": 4,
+          "groupId": "t03-g053",
+          "questionId": "t03-q095",
+          "at": 2580.0828
+        },
+        {
+          "src": "audio/formal/test-03-cues-06.mp3",
+          "start": 8.13696,
+          "end": 12.03125,
+          "duration": 3.89429,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g053",
+          "questionId": "t03-q096",
+          "at": 2586.63546
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 6.55266,
+          "part": 4,
+          "groupId": "t03-g053",
+          "questionId": "t03-q096",
+          "at": 2590.52975
+        },
+        {
+          "src": "audio/formal/test-03-cues-06.mp3",
+          "start": 12.28125,
+          "end": 15.32821,
+          "duration": 3.04696,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t03-g053",
+          "questionId": "t03-q097",
+          "at": 2597.08241
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 6.55266,
+          "part": 4,
+          "groupId": "t03-g053",
+          "questionId": "t03-q097",
+          "at": 2600.12937
+        }
+      ],
+      "groupFramesCanonicalSha256": "96babc32034bea4e21abb45d94fd3594c97e9a95b232957402817bdbf3df4f54",
+      "priorUntouchedFrame": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 6.55266,
+        "part": 4,
+        "groupId": "t03-g052",
+        "questionId": "t03-q094",
+        "at": 2515.23918
+      },
+      "nextUntouchedFrame": {
+        "src": "audio/formal/test-03-cues-06.mp3",
+        "start": 15.57821,
+        "end": 18.96329,
+        "duration": 3.38508,
+        "kind": "audio",
+        "role": "cue",
+        "part": 4,
+        "groupId": "t03-g054",
+        "at": 2606.68203
+      }
+    },
+    "physicalAssets": [
+      {
+        "path": "audio/formal/test-03-cues-06.mp3",
+        "sha256": "9f430340924f58a6fbfd974ab72cd67e7547780096cc11b1b677776d4a444d60",
+        "gitBlob": "9d70c883bd13471cab93beb4d53786155b048aff"
+      },
+      {
+        "path": "audio/azure-v1/test-03-33.mp3",
+        "sha256": "fc6a39c797bbfd6de0d48016855bc51d6a1a30fcaa784b379d27bc77da05cf26",
+        "gitBlob": "561e88169f7113dd9702904a30504fb6784d2682"
+      }
+    ],
+    "oldHold": {
+      "path": "qa-checkpoints/pending-audio/test-03/q095-097.json",
+      "sha256": "5f0d9b9cf78a29ed7e001df74095fccd942ca5024888d510b4d33e450f40f356",
+      "gitBlob": "472456e71d9a93e44771804d4af757e3ba16afa9"
+    }
+  },
+  "newRenderInputs": {
+    "newGroupId": "t03-g053-r2",
+    "sharedPassage": {
+      "text": "Good afternoon. This is Grace from the Cedar Kitchen, calling about your Saturday lunch. You wanted the upstairs room so your team could run a short slide show. The lift to that room will be out of service. If anyone needs step-free access, we can set up a screen in the garden room instead. Both rooms have the same menu.\n\nI see that you’re bringing a cake. We can keep it in the fridge, but the kitchen staff can only take it in before eleven. Your friend is due at eleven thirty. If she can’t come earlier, please ask her to keep the cake with her until you’re ready to serve it.\n\nOne more thing: we can put food on one bill and drinks on another, but we can’t bill guests individually. Tell me which of those two bills should go to your office.",
+      "voice": {
+        "speaker": "F1",
+        "locale": "en-SG",
+        "role": "female",
+        "modelVoice": "en-SG-LunaNeural"
+      },
+      "unicodeChars": 748,
+      "modes": [
+        "formal",
+        "practice"
+      ],
+      "preferredDraftPath": "test-03/groups/t03-g053-r2/audio/passage.wav"
+    },
+    "numberedFormalStems": [
+      {
+        "questionId": "t03-q095-r2",
+        "speech": "Number 95. What would let the group keep its slide show while making the lunch accessible without stairs?",
+        "locale": "en-US",
+        "suggestedF0Voice": "en-US-JennyNeural",
+        "unicodeChars": 105,
+        "preferredDraftPath": "test-03/questions/Q095/audio/formal-stem.wav"
+      },
+      {
+        "questionId": "t03-q096-r2",
+        "speech": "Number 96. What would allow the restaurant to refrigerate the cake?",
+        "locale": "en-US",
+        "suggestedF0Voice": "en-US-JennyNeural",
+        "unicodeChars": 67,
+        "preferredDraftPath": "test-03/questions/Q096/audio/formal-stem.wav"
+      },
+      {
+        "questionId": "t03-q097-r2",
+        "speech": "Number 97. The office is paying for food only. Which billing request meets the office’s requirement and can be fulfilled by the restaurant?",
+        "locale": "en-US",
+        "suggestedF0Voice": "en-US-JennyNeural",
+        "unicodeChars": 139,
+        "preferredDraftPath": "test-03/questions/Q097/audio/formal-stem.wav"
+      }
+    ],
+    "stemVoiceBasis": {
+      "historicalOriginalVoice": "Not encoded in formal question frames; do not claim historical exact voice identity. Historical committed tool that produces old-path cue banks uses female standard-US Kokoro af_heart, not an authorized new engine.",
+      "newAzureVoiceProposal": "en-US-JennyNeural",
+      "committedAzurePracticeReference": [
+        "t01-g001",
+        "t01-g015",
+        "t01-g029"
+      ],
+      "status": "proposed standard-US female continuity, provider availability unconfirmed"
+    },
+    "genericCue": {
+      "oldExactWindow": {
+        "src": "audio/formal/test-03-cues-06.mp3",
+        "start": 0.25,
+        "end": 3.63379,
+        "duration": 3.38379,
+        "kind": "audio",
+        "role": "cue",
+        "part": 4,
+        "groupId": "t03-g053",
+        "at": 2521.79184
+      },
+      "reuseOnlyAfterExactListening": "Qualify the already-existing cue independently. No need to rerender the cue merely because group ID changed; it announces same numbered scope.",
+      "newF0TextIfVerifiedOldCannotBeRetained": "Questions 95 through 97. Listen to the talk."
+    },
+    "plannedBaseSpeechUnicodeChars": 1059
+  },
+  "scopeTiming": {
+    "oldGroupStart": 2521.79184,
+    "oldGroupEndAndNextCueStart": 2606.68203,
+    "closingFrame": {
+      "src": "audio/formal-v2/narrator-03.mp3",
+      "start": 33.232,
+      "end": 42.616,
+      "duration": 9.384,
+      "kind": "audio",
+      "role": "closing",
+      "part": 4,
+      "groupId": "t03-g054",
+      "at": 2690.616
+    },
+    "oldProjectedSpeechInGroupSeconds": 65.23221000000001,
+    "oldAnswerTimeInGroupSeconds": 19.657980000000002,
+    "oldReplaceableSpeechDurationWithCueReused": 61.848420000000004,
+    "newDurations": "Unknown until render. Calculate exact measured group delta and recompute affected timing using measured decoded PCM/ranges. Do not hide overrun by truncating audio or eliminating answer time; require full 2700 s and browser report."
+  },
+  "independentEditorialRead": {
+    "keys": [
+      "B",
+      "D",
+      "A"
+    ],
+    "levelPerItem": [
+      "intermediate",
+      "intermediate",
+      "intermediate"
+    ],
+    "rationales": [
+      "Garden room is both step-free and capable of screen setup.",
+      "10:50 beats the 11:00 handoff deadline; 11:30 does not.",
+      "The restaurant can split by cost category and issue one food-only bill to office, but cannot bill each guest; drinks are excluded."
+    ],
+    "notClaimed": [
+      "one fully advanced unit",
+      "human audio approval",
+      "audio synthesis",
+      "live provider availability",
+      "durations",
+      "browser-run success"
+    ]
+  },
+  "preservation": [
+    "Do not edit shared old cue bank (it also serves t03-g054, Q098–100), old talk, or past attempt IDs/keys. Use immutable new media scopes and snapshot old plan and references.",
+    "Retain original numbered scope and mapping; use the same new talk asset/range for formal and practice, no stem audio in practice.",
+    "Confirm allowance for Azure F0 and all voices; then verify actual timing, spoken cutoff, roles, numbers, and exact uncut English/zh correspondence, both playback modes and browser resume before promoting."
+  ]
+}
