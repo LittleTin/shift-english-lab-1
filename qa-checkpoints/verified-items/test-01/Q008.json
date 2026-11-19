@@ -1,0 +1,113 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Only B supplies the location of spare connectors beside the test bench; A supplies a delivery deadline, C a quantity. Actual versions confirm all words and order (12/twelve is transcript formatting). Clarified the inclusive Friday deadline in both Traditional Chinese copies.",
+  "activeQuestion": {
+    "id": "t01-q008",
+    "testId": "test-01",
+    "number": 8,
+    "part": 2,
+    "groupId": "t01-g008",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "location"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "They should arrive by Friday.",
+        "zh": "它們應該最晚在星期五送達。",
+        "whyZh": "這是到貨時間，沒有回答現有備品存放在哪裡。"
+      },
+      {
+        "id": "B",
+        "text": "In the blue bin beside the test bench.",
+        "zh": "在測試工作檯旁的藍色收納箱裡。",
+        "whyZh": "Where 問存放位置；回應指出藍色箱子與其所在位置。"
+      },
+      {
+        "id": "C",
+        "text": "We need twelve for each unit.",
+        "zh": "每台需要十二個。",
+        "whyZh": "這是使用數量，不是存放地點。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "Where 問存放位置；回應指出藍色箱子與其所在位置。",
+    "evidence": "Where do we keep the spare connectors?",
+    "vocabulary": [
+      {
+        "term": "spare",
+        "zh": "備用的",
+        "note": "spare parts 指供替換或維修使用的零件。"
+      },
+      {
+        "term": "test bench",
+        "zh": "測試工作檯",
+        "note": "用於裝配或測試的作業平台。"
+      }
+    ],
+    "revision": 1
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-01-03.mp3",
+      "start": 37.908,
+      "end": 54.444,
+      "assetSha256": "dae8ab62c26bc90912756a6bbca8aef70c3b1b5dbc5ae8250d8e42faf7ad12f1",
+      "speech": "Where do we keep the spare connectors?\n A. They should arrive by Friday.\n B. In the blue bin beside the test bench.\n C. We need 12 for each unit."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-03.mp3",
+      "start": 39.756,
+      "end": 56.004,
+      "assetSha256": "afe6a1ec980196216810980a58e273e9228d2b27356d70078f0e2bb888e4569b",
+      "speech": "Where do we keep the spare connectors?\n A. They should arrive by Friday.\n B. In the blue bin beside the test bench.\n C. We need 12 for each unit."
+    }
+  ],
+  "group": {
+    "id": "t01-g008",
+    "testId": "test-01",
+    "part": 2,
+    "title": "Spare connectors",
+    "titleZh": "備用連接器",
+    "topic": "manufacturing",
+    "passage": "Where do we keep the spare connectors?\nA. They should arrive by Friday. B. In the blue bin beside the test bench. C. We need twelve for each unit.",
+    "passageZh": "我們把備用連接器放在哪裡？\nA. 它們應該最晚在星期五送達。\nB. 在測試工作檯旁的藍色收納箱裡。\nC. 每台需要十二個。",
+    "audioScript": "Where do we keep the spare connectors?\nA. They should arrive by Friday. B. In the blue bin beside the test bench. C. We need twelve for each unit.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Where do we keep the spare connectors?"
+      },
+      {
+        "voice": "male",
+        "text": "A. They should arrive by Friday. B. In the blue bin beside the test bench. C. We need twelve for each unit."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-03.mp3",
+    "duration": 16.248,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-PH",
+        "role": "female",
+        "modelVoice": "en-PH-RosaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-PH",
+        "role": "male",
+        "modelVoice": "en-PH-JamesNeural"
+      }
+    ],
+    "audioStart": 39.756,
+    "audioEnd": 56.004
+  }
+}
