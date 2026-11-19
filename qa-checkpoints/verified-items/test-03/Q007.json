@@ -1,0 +1,116 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Both versions ask courier which entrance. Loading bay side door answers location, not package recipient or arrival time. Exact cues and zh.",
+  "activeQuestion": {
+    "id": "t03-q007",
+    "testId": "test-03",
+    "number": 7,
+    "part": 2,
+    "groupId": "t03-g007",
+    "topic": "business",
+    "difficulty": "foundation",
+    "tags": [
+      "business",
+      "question_response"
+    ],
+    "prompt": "Which entrance should the courier use?",
+    "promptZh": "快遞員應該使用哪個入口？",
+    "options": [
+      {
+        "id": "A",
+        "text": "A package for the director.",
+        "zh": "一件給主管的包裹。",
+        "whyZh": "指出包裹收件人，沒有回答入口。"
+      },
+      {
+        "id": "B",
+        "text": "It arrived before lunch.",
+        "zh": "它在午餐前到了。",
+        "whyZh": "回答到貨時間，並非應使用的入口。"
+      },
+      {
+        "id": "C",
+        "text": "The side door next to the loading bay.",
+        "zh": "卸貨區旁的側門。",
+        "whyZh": "問入口位置，側門及卸貨區提供明確位置。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "問入口位置，側門及卸貨區提供明確位置。",
+    "evidence": "The side door next to the loading bay.",
+    "vocabulary": [
+      {
+        "term": "loading bay",
+        "zh": "卸貨區",
+        "note": "The side door next to the loading bay."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g007",
+    "testId": "test-03",
+    "part": 2,
+    "title": "Delivery entrance",
+    "titleZh": "送貨入口",
+    "topic": "business",
+    "passage": "Which entrance should the courier use? A. A package for the director. B. It arrived before lunch. C. The side door next to the loading bay.",
+    "passageZh": "快遞員應該使用哪個入口？\nA. 一件給主管的包裹。\nB. 它在午餐前到了。\nC. 卸貨區旁的側門。",
+    "audioScript": "Which entrance should the courier use? A. A package for the director. B. It arrived before lunch. C. The side door next to the loading bay.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Which entrance should the courier use?"
+      },
+      {
+        "voice": "male",
+        "text": "A. A package for the director. B. It arrived before lunch. C. The side door next to the loading bay."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-03.mp3",
+    "duration": 15.528,
+    "audioStart": 0.5,
+    "audioEnd": 16.028,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-CA",
+        "role": "female",
+        "modelVoice": "en-CA-ClaraNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-CA",
+        "role": "male",
+        "modelVoice": "en-CA-LiamNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "mode": "cue",
+      "start": 6.76867,
+      "end": 7.64404,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 7."
+    },
+    {
+      "path": "audio/formal-v2/test-03-03.mp3",
+      "mode": "passage",
+      "start": 0.5,
+      "end": 16.724,
+      "assetSha256": "486820d511f60c5d9a1f7799a5ae0b9be48fcc7e6e4b1c5c08ee722704382a04",
+      "speech": "Which entrance should the courier use? A. A package for the director. B. It arrived before lunch. C. The side door next to the loading bay."
+    },
+    {
+      "path": "audio/azure-v1/test-03-03.mp3",
+      "mode": "practice",
+      "start": 0.5,
+      "end": 16.028,
+      "assetSha256": "d6c918d57b9d67cc7dd653dd5e062af46241d0e67e694a9b3f7e332c43b58d7b",
+      "speech": "Which entrance should the courier use? A. A package for the director. B. It arrived before lunch. C. The side door next to the loading bay."
+    }
+  ]
+}

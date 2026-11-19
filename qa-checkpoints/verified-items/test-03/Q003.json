@@ -1,0 +1,125 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Two bags on ground in front of bench, not on seat; two people seated, no boarding; aircraft silhouette not boarding activity. Exact practice; formal B article supported at 1.15× (base ASR in aircraft), formal suitcases independently present at base rate. Neither article form changes the key.",
+  "activeQuestion": {
+    "id": "t03-q003",
+    "testId": "test-03",
+    "number": 3,
+    "part": 1,
+    "groupId": "t03-g003",
+    "topic": "daily",
+    "difficulty": "foundation",
+    "tags": [
+      "daily",
+      "photo_description"
+    ],
+    "prompt": "Look at the picture and choose the statement that best describes it.",
+    "promptZh": "請看圖片，選出最符合畫面的敘述。",
+    "options": [
+      {
+        "id": "A",
+        "text": "Two pieces of luggage are beside a bench.",
+        "zh": "兩件行李放在長椅旁。",
+        "whyZh": "長椅前方可見兩件有拉桿的行李。"
+      },
+      {
+        "id": "B",
+        "text": "Passengers are boarding an aircraft.",
+        "zh": "乘客正在登機。",
+        "whyZh": "人物坐在候機長椅上，沒有登機。"
+      },
+      {
+        "id": "C",
+        "text": "The waiting area is completely empty.",
+        "zh": "候機區完全沒有人。",
+        "whyZh": "長椅上有兩位乘客。"
+      },
+      {
+        "id": "D",
+        "text": "Suitcases have been placed on a bench.",
+        "zh": "行李箱被放在長椅上。",
+        "whyZh": "行李箱在地面而非座面上。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "長椅前方可見兩件有拉桿的行李。",
+    "evidence": "Two pieces of luggage are beside a bench.",
+    "vocabulary": [
+      {
+        "term": "luggage",
+        "zh": "行李",
+        "note": "Two pieces of luggage are beside a bench."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g003",
+    "testId": "test-03",
+    "part": 1,
+    "title": "Waiting area",
+    "titleZh": "候機區",
+    "topic": "daily",
+    "passage": "A. Two pieces of luggage are beside a bench. B. Passengers are boarding an aircraft. C. The waiting area is completely empty. D. Suitcases have been placed on a bench.",
+    "passageZh": "A. 兩件行李放在長椅旁。\nB. 乘客正在登機。\nC. 候機區完全沒有人。\nD. 行李箱被放在長椅上。",
+    "audioScript": "A. Two pieces of luggage are beside a bench. B. Passengers are boarding an aircraft. C. The waiting area is completely empty. D. Suitcases have been placed on a bench.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "A. Two pieces of luggage are beside a bench. B. Passengers are boarding an aircraft. C. The waiting area is completely empty. D. Suitcases have been placed on a bench."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-01.mp3",
+    "duration": 19.584,
+    "imageScene": "airport",
+    "image": "assets/scenes/airport.svg",
+    "imageAlt": "Original practice illustration, question 3",
+    "audioStart": 38.436,
+    "audioEnd": 58.02,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-TZ",
+        "role": "female",
+        "modelVoice": "en-TZ-ImaniNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "mode": "cue",
+      "start": 2.35425,
+      "end": 3.18483,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 3."
+    },
+    {
+      "path": "audio/formal-v2/test-03-01.mp3",
+      "mode": "passage",
+      "start": 39.276,
+      "end": 58.476,
+      "assetSha256": "8a21ae045c9366b4ed5ed42612bacebff65b86e000b60833249b01fd528cb4f2",
+      "speech": "A. Two pieces of luggage are beside a bench. B. Passengers are boarding in aircraft. C. The waiting area is completely empty. D. Suitcases have been placed on a bench."
+    },
+    {
+      "path": "audio/azure-v1/test-03-01.mp3",
+      "mode": "practice",
+      "start": 38.436,
+      "end": 58.02,
+      "assetSha256": "8f78b5a19e22b5329e8b5aef750272bc91cfd8aae5cebb7a022d69f7837b25ef",
+      "speech": "A. Two pieces of luggage are beside a bench. B. Passengers are boarding an aircraft. C. The waiting area is completely empty. D. Suitcases have been placed on a bench."
+    }
+  ],
+  "imageSha256": "1a806a7bcc7497c4a1ba179ef6a1330d69032feafd968513de6ea8d25007bac4",
+  "audioCorroboration": {
+    "Q003 formal option B": {
+      "alternateASR": {
+        "0.86": "A. Two pieces of luggage are beside a bench. B. Passengers are boarding in aircraft. C. The waiting area is completely empty. D. Suitcases have been placed on a bench.",
+        "1.15": "A. Two pieces of luggage are beside a bench. B. Passengers are boarding an aircraft. C. The waiting area is completely empty. D. Succases have been placed on a bench."
+      },
+      "result": "1.15× decode supports an aircraft; original-speed decode supports the remainder including suitcases."
+    }
+  }
+}

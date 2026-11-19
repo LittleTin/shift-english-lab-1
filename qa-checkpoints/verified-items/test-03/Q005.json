@@ -1,0 +1,116 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Path visibly runs between two trees, no trimmers, vehicle or bench; two figures walking. Both audio versions and cue exact, zh aligned.",
+  "activeQuestion": {
+    "id": "t03-q005",
+    "testId": "test-03",
+    "number": 5,
+    "part": 1,
+    "groupId": "t03-g005",
+    "topic": "daily",
+    "difficulty": "foundation",
+    "tags": [
+      "daily",
+      "photo_description"
+    ],
+    "prompt": "Look at the picture and choose the statement that best describes it.",
+    "promptZh": "請看圖片，選出最符合畫面的敘述。",
+    "options": [
+      {
+        "id": "A",
+        "text": "The path runs between two trees.",
+        "zh": "步道穿過兩棵樹之間。",
+        "whyZh": "左右各有一棵樹，中間是步道。"
+      },
+      {
+        "id": "B",
+        "text": "The trees are being trimmed.",
+        "zh": "樹木正在被修剪。",
+        "whyZh": "沒有人拿修剪工具或接觸樹木。"
+      },
+      {
+        "id": "C",
+        "text": "Two people are resting on a bench.",
+        "zh": "兩個人在長椅上休息。",
+        "whyZh": "兩人正在走路，畫面沒有長椅。"
+      },
+      {
+        "id": "D",
+        "text": "A vehicle is parked under a tree.",
+        "zh": "一輛車停在樹下。",
+        "whyZh": "畫面沒有車輛。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "左右各有一棵樹，中間是步道。",
+    "evidence": "The path runs between two trees.",
+    "vocabulary": [
+      {
+        "term": "path",
+        "zh": "步道",
+        "note": "The path runs between two trees."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g005",
+    "testId": "test-03",
+    "part": 1,
+    "title": "Along a path",
+    "titleZh": "沿著步道",
+    "topic": "daily",
+    "passage": "A. The path runs between two trees. B. The trees are being trimmed. C. Two people are resting on a bench. D. A vehicle is parked under a tree.",
+    "passageZh": "A. 步道穿過兩棵樹之間。\nB. 樹木正在被修剪。\nC. 兩個人在長椅上休息。\nD. 一輛車停在樹下。",
+    "audioScript": "A. The path runs between two trees. B. The trees are being trimmed. C. Two people are resting on a bench. D. A vehicle is parked under a tree.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "A. The path runs between two trees. B. The trees are being trimmed. C. Two people are resting on a bench. D. A vehicle is parked under a tree."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-02.mp3",
+    "duration": 17.928,
+    "imageScene": "park",
+    "image": "assets/scenes/park.svg",
+    "imageAlt": "Original practice illustration, question 5",
+    "audioStart": 18.424,
+    "audioEnd": 36.352,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-US",
+        "role": "female",
+        "modelVoice": "en-US-JennyNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "mode": "cue",
+      "start": 4.48721,
+      "end": 5.38146,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 5."
+    },
+    {
+      "path": "audio/formal-v2/test-03-02.mp3",
+      "mode": "passage",
+      "start": 20.56,
+      "end": 38.488,
+      "assetSha256": "6a0ddb6ba963c3230af399e582cbf24597be33b37fd54128561ed2b0fdaeb1a1",
+      "speech": "A. The path runs between two trees. B. The trees are being trimmed. C. Two people are resting on a bench. D. A vehicle is parked under a tree."
+    },
+    {
+      "path": "audio/azure-v1/test-03-02.mp3",
+      "mode": "practice",
+      "start": 18.424,
+      "end": 36.352,
+      "assetSha256": "444de90014c8ace28b810abd1ca062889a77fe2512dbc3f46d4aea4bf4a37a35",
+      "speech": "A. The path runs between two trees. B. The trees are being trimmed. C. Two people are resting on a bench. D. A vehicle is parked under a tree."
+    }
+  ],
+  "imageSha256": "e77bf858939f6b05f40b8d74ec58a24fa098701bcfd607dcb3c2e92bc9951916"
+}

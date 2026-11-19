@@ -1,0 +1,116 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Why copier is off requires reason; jamming this morning answers, unlike requested copy count or switch location. Formal/practice and cue match; 20 vs Twenty orthography only. zh and rationales preserve meaning.",
+  "activeQuestion": {
+    "id": "t03-q010",
+    "testId": "test-03",
+    "number": 10,
+    "part": 2,
+    "groupId": "t03-g010",
+    "topic": "technology",
+    "difficulty": "foundation",
+    "tags": [
+      "technology",
+      "question_response"
+    ],
+    "prompt": "Why is the copier switched off?",
+    "promptZh": "為什麼影印機關閉了？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Twenty copies, please.",
+        "zh": "請給我二十份。",
+        "whyZh": "回答份數，沒有解釋關機原因。"
+      },
+      {
+        "id": "B",
+        "text": "It kept jamming this morning.",
+        "zh": "它今天早上一直卡紙。",
+        "whyZh": "卡紙是關機的合理原因。"
+      },
+      {
+        "id": "C",
+        "text": "The switch is on the left.",
+        "zh": "開關在左邊。",
+        "whyZh": "指出開關位置，沒有回答 why。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "卡紙是關機的合理原因。",
+    "evidence": "It kept jamming this morning.",
+    "vocabulary": [
+      {
+        "term": "jam",
+        "zh": "卡紙",
+        "note": "It kept jamming this morning."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g010",
+    "testId": "test-03",
+    "part": 2,
+    "title": "Broken copier",
+    "titleZh": "影印機故障",
+    "topic": "technology",
+    "passage": "Why is the copier switched off? A. Twenty copies, please. B. It kept jamming this morning. C. The switch is on the left.",
+    "passageZh": "為什麼影印機關閉了？\nA. 請給我二十份。\nB. 它今天早上一直卡紙。\nC. 開關在左邊。",
+    "audioScript": "Why is the copier switched off? A. Twenty copies, please. B. It kept jamming this morning. C. The switch is on the left.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Why is the copier switched off?"
+      },
+      {
+        "voice": "female",
+        "text": "A. Twenty copies, please. B. It kept jamming this morning. C. The switch is on the left."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-04.mp3",
+    "duration": 16.44,
+    "audioStart": 0.5,
+    "audioEnd": 16.94,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-HK",
+        "role": "male",
+        "modelVoice": "en-HK-SamNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-HK",
+        "role": "female",
+        "modelVoice": "en-HK-YanNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "mode": "cue",
+      "start": 10.044,
+      "end": 10.86983,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 10."
+    },
+    {
+      "path": "audio/formal-v2/test-03-04.mp3",
+      "mode": "passage",
+      "start": 0.5,
+      "end": 16.052,
+      "assetSha256": "ccc4f69355ad9910e235e518c1c1d676daaa8c97172468421cdc046e984a5b95",
+      "speech": "Why is the copier switched off? A. Twenty copies, please. B. It kept jamming this morning. C. The switch is on the left."
+    },
+    {
+      "path": "audio/azure-v1/test-03-04.mp3",
+      "mode": "practice",
+      "start": 0.5,
+      "end": 16.94,
+      "assetSha256": "4356353a4d4a32e341d747574f7913823dd3389332e64ca344f1603b70d5e065",
+      "speech": "Why is the copier switched off? A. 20 copies, please. B. It kept jamming this morning. C. The switch is on the left."
+    }
+  ]
+}

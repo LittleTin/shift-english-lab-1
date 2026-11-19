@@ -1,0 +1,116 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Three visible shelf rows; no floor piles or carried case; person standing even near a plant. Both versions actual options and formal cue agree; zh explanations match.",
+  "activeQuestion": {
+    "id": "t03-q001",
+    "testId": "test-03",
+    "number": 1,
+    "part": 1,
+    "groupId": "t03-g001",
+    "topic": "daily",
+    "difficulty": "foundation",
+    "tags": [
+      "daily",
+      "photo_description"
+    ],
+    "prompt": "Look at the picture and choose the statement that best describes it.",
+    "promptZh": "請看圖片，選出最符合畫面的敘述。",
+    "options": [
+      {
+        "id": "A",
+        "text": "Books have been stacked on the floor.",
+        "zh": "書本被堆在地板上。",
+        "whyZh": "地上沒有書堆；書都在書架上。"
+      },
+      {
+        "id": "B",
+        "text": "Several rows of books are arranged on a shelf.",
+        "zh": "數排書本排列在書架上。",
+        "whyZh": "畫面右側的三層書架上整齊排列著書本。"
+      },
+      {
+        "id": "C",
+        "text": "A bookcase is being carried outside.",
+        "zh": "有人正把書架搬到外面。",
+        "whyZh": "書架直立不動，人員沒有搬運書架。"
+      },
+      {
+        "id": "D",
+        "text": "A person is seated beside a plant.",
+        "zh": "一個人坐在植物旁。",
+        "whyZh": "人物站立伸手，並未坐下。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "畫面右側的三層書架上整齊排列著書本。",
+    "evidence": "Several rows of books are arranged on a shelf.",
+    "vocabulary": [
+      {
+        "term": "arranged",
+        "zh": "排列",
+        "note": "Several rows of books are arranged on a shelf."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g001",
+    "testId": "test-03",
+    "part": 1,
+    "title": "Shelved books",
+    "titleZh": "書架上的書",
+    "topic": "daily",
+    "passage": "A. Books have been stacked on the floor. B. Several rows of books are arranged on a shelf. C. A bookcase is being carried outside. D. A person is seated beside a plant.",
+    "passageZh": "A. 書本被堆在地板上。\nB. 數排書本排列在書架上。\nC. 有人正把書架搬到外面。\nD. 一個人坐在植物旁。",
+    "audioScript": "A. Books have been stacked on the floor. B. Several rows of books are arranged on a shelf. C. A bookcase is being carried outside. D. A person is seated beside a plant.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "A. Books have been stacked on the floor. B. Several rows of books are arranged on a shelf. C. A bookcase is being carried outside. D. A person is seated beside a plant."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-01.mp3",
+    "duration": 19.608,
+    "imageScene": "bookstore",
+    "image": "assets/scenes/bookstore.svg",
+    "imageAlt": "Original practice illustration, question 1",
+    "audioStart": 0.5,
+    "audioEnd": 20.108,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-KE",
+        "role": "female",
+        "modelVoice": "en-KE-AsiliaNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "mode": "cue",
+      "start": 0.25,
+      "end": 1.01471,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 1."
+    },
+    {
+      "path": "audio/formal-v2/test-03-01.mp3",
+      "mode": "passage",
+      "start": 0.5,
+      "end": 19.628,
+      "assetSha256": "8a21ae045c9366b4ed5ed42612bacebff65b86e000b60833249b01fd528cb4f2",
+      "speech": "A. Books have been stacked on the floor. B. Several rows of books are arranged on a shelf. C. A bookcase is being carried outside. D. A person is seated beside a plant."
+    },
+    {
+      "path": "audio/azure-v1/test-03-01.mp3",
+      "mode": "practice",
+      "start": 0.5,
+      "end": 20.108,
+      "assetSha256": "8f78b5a19e22b5329e8b5aef750272bc91cfd8aae5cebb7a022d69f7837b25ef",
+      "speech": "A. Books have been stacked on the floor B. Several rows of books are arranged on a shelf C. A bookcase is being carried outside D. A person is seated beside a plant"
+    }
+  ],
+  "imageSha256": "26811c9ef310f980b703567939df1cca62b6271856f51947dcb6875a8b8666a6"
+}

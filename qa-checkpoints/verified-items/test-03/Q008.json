@@ -1,0 +1,142 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Both versions ask whether moved to Thursday; Yes and unavailable Wed answer, not daily use or file movement. B letter confirmed by matching independent same-speaker waveform. zh rationale precise after narrow guard; no audio issue.",
+  "activeQuestion": {
+    "id": "t03-q008",
+    "testId": "test-03",
+    "number": 8,
+    "part": 2,
+    "groupId": "t03-g008",
+    "topic": "technology",
+    "difficulty": "foundation",
+    "tags": [
+      "technology",
+      "question_response"
+    ],
+    "prompt": "Has the software training been moved to Thursday?",
+    "promptZh": "軟體訓練已經改到星期四了嗎？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes, the trainer is unavailable on Wednesday.",
+        "zh": "是的，講師星期三無法出席。",
+        "whyZh": "用 Yes 確認訓練已改到星期四，並補充講師星期三無法出席。"
+      },
+      {
+        "id": "B",
+        "text": "I use it every day.",
+        "zh": "我每天都使用它。",
+        "whyZh": "談使用頻率而非訓練改期。"
+      },
+      {
+        "id": "C",
+        "text": "Move the files into that folder.",
+        "zh": "把檔案移到那個資料夾。",
+        "whyZh": "move 是字面搬移檔案，沒有回應時間更改。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "用 Yes 確認訓練已改到星期四，並補充講師星期三無法出席。",
+    "evidence": "Yes, the trainer is unavailable on Wednesday.",
+    "vocabulary": [
+      {
+        "term": "unavailable",
+        "zh": "無法出席的",
+        "note": "Yes, the trainer is unavailable on Wednesday."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g008",
+    "testId": "test-03",
+    "part": 2,
+    "title": "Training date",
+    "titleZh": "訓練日期",
+    "topic": "technology",
+    "passage": "Has the software training been moved to Thursday? A. Yes, the trainer is unavailable on Wednesday. B. I use it every day. C. Move the files into that folder.",
+    "passageZh": "軟體訓練已經改到星期四了嗎？\nA. 是的，講師星期三無法出席。\nB. 我每天都使用它。\nC. 把檔案移到那個資料夾。",
+    "audioScript": "Has the software training been moved to Thursday? A. Yes, the trainer is unavailable on Wednesday. B. I use it every day. C. Move the files into that folder.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Has the software training been moved to Thursday?"
+      },
+      {
+        "voice": "female",
+        "text": "A. Yes, the trainer is unavailable on Wednesday. B. I use it every day. C. Move the files into that folder."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-03.mp3",
+    "duration": 17.376,
+    "audioStart": 16.528,
+    "audioEnd": 33.904,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-AU",
+        "role": "male",
+        "modelVoice": "en-AU-WilliamNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-AU",
+        "role": "female",
+        "modelVoice": "en-AU-NatashaNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "mode": "cue",
+      "start": 7.89404,
+      "end": 8.71804,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 8."
+    },
+    {
+      "path": "audio/formal-v2/test-03-03.mp3",
+      "mode": "passage",
+      "start": 17.224,
+      "end": 34.6,
+      "assetSha256": "486820d511f60c5d9a1f7799a5ae0b9be48fcc7e6e4b1c5c08ee722704382a04",
+      "speech": "Has the software training been moved to Thursday? A. Yes, the trainer is unavailable on Wednesday. B. I use it every day. C. Move the files into that folder."
+    },
+    {
+      "path": "audio/azure-v1/test-03-03.mp3",
+      "mode": "practice",
+      "start": 16.528,
+      "end": 33.904,
+      "assetSha256": "d6c918d57b9d67cc7dd653dd5e062af46241d0e67e694a9b3f7e332c43b58d7b",
+      "speech": "Has the software training been moved to Thursday? A) Yes, the trainer is unavailable on Wednesday. V) I use it every day. C) Move the files into that folder."
+    }
+  ],
+  "audioCorroboration": {
+    "Q008 practice option B": {
+      "targetLocalSec": [
+        8.903,
+        9.198
+      ],
+      "referenceGroup": "t03-g022",
+      "referencePath": "audio/azure-v1/test-03-08.mp3",
+      "referenceAudioRangeSec": [
+        0.5,
+        16.388
+      ],
+      "referenceBSampleSearchSec": [
+        7.66,
+        8.06
+      ],
+      "referenceSourceSha256": "5ad4166812ea2f061981b166042388c7bf8b2a29733e2d413d47940909d6837a",
+      "referenceASR": "Should I return this visitor badge now? A. Please leave it in the box by the exit. B. The visitor arrived early. C. It is your first visit.",
+      "normalizedCorrelations": {
+        "A": 0.3120107,
+        "B": 0.9881401,
+        "C": 0.2177288
+      },
+      "result": "Verified B waveform matches the independently recognized B from same response speaker, confirming B not V. 0.90× decode also says B. No broader Q022 verification claimed."
+    }
+  }
+}

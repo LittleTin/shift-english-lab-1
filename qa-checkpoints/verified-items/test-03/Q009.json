@@ -1,0 +1,142 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Both versions ask who approves travel expenses; department manager answers person, not train fare or deadline. Formal B label matches confirmed same-speaker B. zh A gloss and transcript require same pronoun resolution; no audio issue.",
+  "activeQuestion": {
+    "id": "t03-q009",
+    "testId": "test-03",
+    "number": 9,
+    "part": 2,
+    "groupId": "t03-g009",
+    "topic": "business",
+    "difficulty": "foundation",
+    "tags": [
+      "business",
+      "question_response"
+    ],
+    "prompt": "Who can approve my travel expenses?",
+    "promptZh": "誰可以核准我的差旅費用？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Your department manager handles those.",
+        "zh": "這類差旅費用由你的部門經理負責處理。",
+        "whyZh": "部門經理明確回答核准負責人。"
+      },
+      {
+        "id": "B",
+        "text": "The train was quite expensive.",
+        "zh": "火車費用相當昂貴。",
+        "whyZh": "只是 expensive 與 expenses 音義相關，沒有指出人員。"
+      },
+      {
+        "id": "C",
+        "text": "By the end of the month.",
+        "zh": "在月底以前。",
+        "whyZh": "回答期限而非誰可核准。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "部門經理明確回答核准負責人。",
+    "evidence": "Your department manager handles those.",
+    "vocabulary": [
+      {
+        "term": "approve",
+        "zh": "核准",
+        "note": "Your department manager handles those."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g009",
+    "testId": "test-03",
+    "part": 2,
+    "title": "Expense claim",
+    "titleZh": "費用核銷",
+    "topic": "business",
+    "passage": "Who can approve my travel expenses? A. Your department manager handles those. B. The train was quite expensive. C. By the end of the month.",
+    "passageZh": "誰可以核准我的差旅費用？\nA. 這類差旅費用由你的部門經理負責處理。\nB. 火車費用相當昂貴。\nC. 在月底以前。",
+    "audioScript": "Who can approve my travel expenses? A. Your department manager handles those. B. The train was quite expensive. C. By the end of the month.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Who can approve my travel expenses?"
+      },
+      {
+        "voice": "male",
+        "text": "A. Your department manager handles those. B. The train was quite expensive. C. By the end of the month."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-03.mp3",
+    "duration": 17.064,
+    "audioStart": 34.404,
+    "audioEnd": 51.468,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-IN",
+        "role": "female",
+        "modelVoice": "en-IN-NeerjaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-IN",
+        "role": "male",
+        "modelVoice": "en-IN-PrabhatNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "mode": "cue",
+      "start": 8.96804,
+      "end": 9.794,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 9."
+    },
+    {
+      "path": "audio/formal-v2/test-03-03.mp3",
+      "mode": "passage",
+      "start": 35.1,
+      "end": 51.852,
+      "assetSha256": "486820d511f60c5d9a1f7799a5ae0b9be48fcc7e6e4b1c5c08ee722704382a04",
+      "speech": "Who can approve my travel expenses? A. Your department manager handles those. V. The train was quite expensive. C. By the end of the month."
+    },
+    {
+      "path": "audio/azure-v1/test-03-03.mp3",
+      "mode": "practice",
+      "start": 34.404,
+      "end": 51.468,
+      "assetSha256": "d6c918d57b9d67cc7dd653dd5e062af46241d0e67e694a9b3f7e332c43b58d7b",
+      "speech": "Who can approve my travel expenses? A. Your department manager handles those. B. The train was quite expensive. C. By the end of the month."
+    }
+  ],
+  "audioCorroboration": {
+    "Q009 formal option B": {
+      "targetLocalSec": [
+        8.47,
+        8.83
+      ],
+      "referenceGroup": "t03-g007",
+      "referencePath": "audio/formal-v2/test-03-03.mp3",
+      "referenceAudioRangeSec": [
+        0.5,
+        16.724
+      ],
+      "referenceBSampleSearchSec": [
+        7.45,
+        7.91
+      ],
+      "referenceSourceSha256": "486820d511f60c5d9a1f7799a5ae0b9be48fcc7e6e4b1c5c08ee722704382a04",
+      "referenceASR": "Which entrance should the courier use? A. A package for the director. B. It arrived before lunch. C. The side door next to the loading bay.",
+      "normalizedCorrelations": {
+        "A": 0.1605367,
+        "B": 0.9809059,
+        "C": 0.1445085
+      },
+      "result": "High waveform agreement with unambiguous same-speaker B—not V—confirms order."
+    }
+  }
+}
