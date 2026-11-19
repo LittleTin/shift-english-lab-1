@@ -1,0 +1,121 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "D: Automatic billing explicitly removed to allow more testing. Shared availability, existing appointments, and rollback remain in scope. Identical formal and practice range matches the original scheduling-app talk; 50 volunteers, one week, no immediate full release, existing appointments visible, move back anytime, automatic billing postponed, help article and 4 o’clock deadline. Cue and numbered stems match; trailing [BLANK_AUDIO] is segmentation.",
+  "activeQuestion": {
+    "id": "t03-q093",
+    "testId": "test-03",
+    "number": 93,
+    "part": 4,
+    "groupId": "t03-g052",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "detail"
+    ],
+    "prompt": "Which feature has been postponed?",
+    "promptZh": "哪項功能被延後？",
+    "options": [
+      {
+        "id": "A",
+        "text": "A shared availability view",
+        "zh": "共用空檔檢視",
+        "whyZh": "這正是新版主要功能。"
+      },
+      {
+        "id": "B",
+        "text": "Access to existing appointments",
+        "zh": "存取現有預約",
+        "whyZh": "既有預約仍能看見。"
+      },
+      {
+        "id": "C",
+        "text": "The option to use the previous version",
+        "zh": "切回舊版本",
+        "whyZh": "隨時能切回舊版。"
+      },
+      {
+        "id": "D",
+        "text": "Automatic billing",
+        "zh": "自動計費",
+        "whyZh": "需更多測試，因此從這一版移除。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "需更多測試，因此從這一版移除。",
+    "evidence": "removed the proposed automatic billing feature from this release",
+    "vocabulary": [
+      {
+        "term": "availability",
+        "zh": "可預約空檔",
+        "note": "共享檢視顯示員工日程中的空閒時間。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g052",
+    "testId": "test-03",
+    "part": 4,
+    "title": "A software release briefing",
+    "titleZh": "軟體發布簡報",
+    "topic": "technology",
+    "passage": "M1: Thank you for joining the release briefing. The new version of our scheduling application is ready, but we will not make it available to every customer today. First, fifty volunteer businesses will use it for one week while our support team monitors any problems. Their existing appointments will remain visible, and they can switch back to the previous version at any time. The main change is a shared availability view, which lets several staff members compare their calendars without opening separate windows. We have removed the proposed automatic billing feature from this release because it needs more testing. After the briefing, please review the customer help article and report any unclear instructions to the documentation team by four o'clock.",
+    "passageZh": "謝謝參加發布簡報。新版排程應用程式已就緒，但今天不會向所有客戶開放。先開放給五十家自願參加的商家試用一週，由客服團隊追蹤問題。既有預約仍可見，隨時可切回舊版。主要改變是共用空檔檢視，多名員工不必開不同視窗就能比較行事曆。原先規劃的自動計費功能需要更多測試，所以這一版不會推出。簡報後請讀客戶說明文章，最晚四點把不清楚的說明回報給文件團隊。",
+    "audioScript": "Thank you for joining the release briefing. The new version of our scheduling application is ready, but we will not make it available to every customer today. First, fifty volunteer businesses will use it for one week while our support team monitors any problems. Their existing appointments will remain visible, and they can switch back to the previous version at any time. The main change is a shared availability view, which lets several staff members compare their calendars without opening separate windows. We have removed the proposed automatic billing feature from this release because it needs more testing. After the briefing, please review the customer help article and report any unclear instructions to the documentation team by four o'clock.",
+    "turns": [
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "Thank you for joining the release briefing. The new version of our scheduling application is ready, but we will not make it available to every customer today. First, fifty volunteer businesses will use it for one week while our support team monitors any problems. Their existing appointments will remain visible, and they can switch back to the previous version at any time. The main change is a shared availability view, which lets several staff members compare their calendars without opening separate windows. We have removed the proposed automatic billing feature from this release because it needs more testing. After the briefing, please review the customer help article and report any unclear instructions to the documentation team by four o'clock."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-32.mp3",
+    "duration": 48.192,
+    "audioStart": 0.5,
+    "audioEnd": 48.692,
+    "audioSpeakers": [
+      {
+        "speaker": "M1",
+        "locale": "en-HK",
+        "role": "male",
+        "modelVoice": "en-HK-SamNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-05.mp3",
+      "start": 54.79187,
+      "end": 58.09967,
+      "assetSha256": "e214e1b90a2ba28dbf7cec4dab788d958b222f259cd036ee91ac81860ea792e1",
+      "speech": "Questions 92-94. Listen to the talk."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-03-32.mp3",
+      "start": 0.5,
+      "end": 48.692,
+      "assetSha256": "3190a449bec3821b62adb28d280c35f14b61f075b276d375411f37f4361af3fe",
+      "speech": "Thank you for joining the release briefing. The new version of our scheduling application is ready, but we will not make it available to every customer today. First, 50 volunteer businesses will use it for one week while our support team monitors any problems. Their existing appointments will remain visible, and they can switch back to the previous version at any time. The main change is a shared availability view, which lets several staff members compare their calendars without opening separate windows. We have removed the proposed automatic billing feature from this release because it needs more testing. After the briefing, please review the customer help article and report any unclear instructions to the documentation team by 4 o'clock. [BLANK_AUDIO]"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-32.mp3",
+      "start": 0.5,
+      "end": 48.692,
+      "assetSha256": "3190a449bec3821b62adb28d280c35f14b61f075b276d375411f37f4361af3fe",
+      "speech": "Thank you for joining the release briefing. The new version of our scheduling application is ready, but we will not make it available to every customer today. First, 50 volunteer businesses will use it for one week while our support team monitors any problems. Their existing appointments will remain visible, and they can switch back to the previous version at any time. The main change is a shared availability view, which lets several staff members compare their calendars without opening separate windows. We have removed the proposed automatic billing feature from this release because it needs more testing. After the briefing, please review the customer help article and report any unclear instructions to the documentation team by 4 o'clock. [BLANK_AUDIO]"
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-03-cues-05.mp3",
+      "start": 62.14921,
+      "end": 64.99354,
+      "assetSha256": "e214e1b90a2ba28dbf7cec4dab788d958b222f259cd036ee91ac81860ea792e1",
+      "speech": "Number 93, which feature has been postponed."
+    }
+  ]
+}
