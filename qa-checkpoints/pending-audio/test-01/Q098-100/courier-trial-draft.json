@@ -1,0 +1,191 @@
+{
+  "status": "editorial-only-hold-no-audio-no-checkpoint",
+  "testId": "test-01",
+  "part": 4,
+  "replacesGroupId": "t01-g054",
+  "proposedGroupId": "t01-g054-r2",
+  "group": {
+    "title": "The courier trial",
+    "titleZh": "試行送貨安排",
+    "topic": "business",
+    "voice": {
+      "speaker": "female",
+      "locale": "en-NG",
+      "modelVoice": "en-NG-EzinneNeural"
+    },
+    "script": "A quick update on our courier trial. An ordinary order can go in the afternoon van only if a supervisor approves it before noon and the van reaches the receiving desk while it is still open. Approved safety-critical orders can go in the morning van instead. The driver can leave those at the staffed gate if the desk is closed. If an ordinary order misses either requirement, hold it until tomorrow. The ordinary gasket order was approved at ten thirty, but its desk closes at three. The afternoon van gets there at three thirty. We can't pull a rabbit out of a hat.",
+    "scriptZh": "簡短更新一下試行中的送貨安排。一般訂單只有在主管中午前核准，且貨車抵達收貨櫃台時櫃台仍然開放，才能搭下午的貨車。已核准且攸關安全的訂單則可改搭上午的貨車。如果櫃台關了，司機可把這類貨物交給有值班人員的大門。一般訂單若有任一條件沒達成，就留到明天。這筆一般墊片訂單在十點半獲得核准，但收貨櫃台三點關閉。下午的貨車三點半才到。這種情況，我們臨時可變不出什麼奇招。"
+  },
+  "questions": [
+    {
+      "number": 98,
+      "proposedId": "t01-q098-r2",
+      "difficulty": "intermediate",
+      "prompt": "What should happen to the gasket order under the current schedule?",
+      "promptZh": "依目前的時程，這筆墊片訂單應如何處理？",
+      "answer": "D",
+      "options": [
+        {
+          "id": "A",
+          "text": "Send it on the afternoon van and ask the driver to use the gate.",
+          "zh": "用下午的貨車送出，請司機走大門收貨。",
+          "whyZh": "大門代收是給符合安全例外的貨物，不能補救一般訂單的櫃台關閉問題。"
+        },
+        {
+          "id": "B",
+          "text": "Send it on the morning van because it was approved before noon.",
+          "zh": "因為它在中午前已獲核准，所以用上午的貨車送出。",
+          "whyZh": "提早核准並未讓一般訂單取得上午班資格。"
+        },
+        {
+          "id": "C",
+          "text": "Send it on the afternoon van because approval is the only condition it must meet.",
+          "zh": "用下午的貨車送出，因為獲得核准是唯一條件。",
+          "whyZh": "除了核准，還須在櫃台開放時抵達。"
+        },
+        {
+          "id": "D",
+          "text": "Hold it until the next day.",
+          "zh": "把它留到隔天。",
+          "whyZh": "一般訂單須同時符合兩項條件。十點半核准符合第一項，但三點半抵達晚於櫃台三點關閉，因此應延後。"
+        }
+      ],
+      "evidence": "Ordinary order + approval at 10:30 + 3:30 arrival after 3:00 closure + hold until tomorrow if either requirement fails.",
+      "vocabulary": [
+        [
+          "receiving desk",
+          "收貨櫃台",
+          "指負責簽收貨物的櫃台。"
+        ],
+        [
+          "hold it until tomorrow",
+          "把它留到明天",
+          "hold 在這裡是暫不安排出貨。"
+        ]
+      ],
+      "explanationZh": "一般訂單須同時符合兩項條件。十點半核准符合第一項，但三點半抵達晚於櫃台三點關閉，因此應延後。"
+    },
+    {
+      "number": 99,
+      "proposedId": "t01-q099-r2",
+      "difficulty": "intermediate",
+      "prompt": "Which shipment is eligible for the morning van under these rules?",
+      "promptZh": "依這些規定，哪一筆貨物符合搭上午班車的資格？",
+      "answer": "B",
+      "options": [
+        {
+          "id": "A",
+          "text": "An ordinary filter order approved before noon, with an open receiving desk.",
+          "zh": "一筆中午前核准、收貨櫃台也有開的一般濾芯訂單。",
+          "whyZh": "即使符合一般訂單的條件，安排的仍是下午班，不是上午班。"
+        },
+        {
+          "id": "B",
+          "text": "An approved safety-critical order whose receiving desk is closed, with staff at the gate.",
+          "zh": "一筆已核准且攸關安全的訂單；收貨櫃台關了，但大門有人值班。",
+          "whyZh": "已核准且攸關安全的訂單符合上午班例外。櫃台關閉時，司機可以交給大門值班人員。"
+        },
+        {
+          "id": "C",
+          "text": "A safety-critical order that has not been approved, with staff at the gate.",
+          "zh": "一筆尚未核准、但攸關安全的訂單；大門有人值班。",
+          "whyZh": "大門值班人員可以代收，卻不能取代事前核准。"
+        },
+        {
+          "id": "D",
+          "text": "An ordinary order with a closed receiving desk and enough space on the morning van.",
+          "zh": "一筆收貨櫃台已關閉的一般訂單；上午班車還有空位。",
+          "whyZh": "貨車有空位並不是上午班例外條件，這筆一般訂單不能搭上午班。"
+        }
+      ],
+      "evidence": "The morning exception requires an already-approved safety-critical shipment; the staffed gate substitutes for a closed desk, not for approval or eligibility.",
+      "vocabulary": [
+        [
+          "safety-critical",
+          "攸關安全的",
+          "指涉及安全、不能視為一般貨物的訂單。"
+        ],
+        [
+          "staffed gate",
+          "有值班人員的大門",
+          "staffed 表示有人值班，可依規定簽收特定貨物。"
+        ]
+      ],
+      "explanationZh": "已核准且攸關安全的訂單符合上午班例外。櫃台關閉時，司機可以交給大門值班人員。"
+    },
+    {
+      "number": 100,
+      "proposedId": "t01-q100-r2",
+      "difficulty": "intermediate",
+      "prompt": "What does the speaker most likely mean by “We can't pull a rabbit out of a hat”?",
+      "promptZh": "說話者說「We can't pull a rabbit out of a hat」最可能是什麼意思？",
+      "answer": "C",
+      "options": [
+        {
+          "id": "A",
+          "text": "They should ask the supervisor to approve a second order as a backup.",
+          "zh": "他們應請主管再核准一筆備用訂單。",
+          "whyZh": "現有訂單已獲核准；另提一筆訂單無法解決時間衝突。"
+        },
+        {
+          "id": "B",
+          "text": "The driver should check whether the gate can take every order after closing.",
+          "zh": "司機應確認櫃台關閉後，大門能否收下所有訂單。",
+          "whyZh": "講者剛說明大門替代方案只適用於安全例外，不是在提出讓所有訂單改走大門。"
+        },
+        {
+          "id": "C",
+          "text": "They cannot improvise a last-minute way around the delivery rules.",
+          "zh": "他們不能臨時想個變通辦法，繞過送貨規則。",
+          "whyZh": "魔術表演從帽子變出兔子是出乎意料的橋段。這裡用否定式呼應櫃台與貨車時程的衝突，帶點幽默地說沒有臨時奇招可繞過規則。"
+        },
+        {
+          "id": "D",
+          "text": "The courier trial should end before the next delivery.",
+          "zh": "應在下一次送貨前結束這項試行。",
+          "whyZh": "講者只說明這筆訂單不能臨時通融，沒有要求停止整項試行。"
+        }
+      ],
+      "evidence": "A joking magic metaphor follows a real scheduling conflict and a strict ordinary-order fallback; the speaker rejects a magical workaround, not the entire trial.",
+      "vocabulary": [
+        [
+          "pull a rabbit out of a hat",
+          "突然想出令人意外的解法",
+          "借用魔術師從帽中變出兔子的畫面；此處否定式帶幽默地說沒有奇招。"
+        ]
+      ],
+      "explanationZh": "魔術表演從帽子變出兔子是出乎意料的橋段。這裡用否定式呼應櫃台與貨車時程的衝突，帶點幽默地說沒有臨時奇招可繞過規則。"
+    }
+  ],
+  "integrationNotes": [
+    "Keep three numbered Part 4 questions as one group and original group/media/items recoverable for existing work. Check proposed revision IDs are unused before adoption.",
+    "New work requires Azure Speech F0 access and quota verification, one shared passage and three separately voiced formal question narrations, no rendering in this review.",
+    "Recheck actual raw speech/roles/order/key evidence, exact cue/answer ranges, original histories, updated asset links and formal 2700-second timeline before checkpoints. If new clip durations do not fit, rebuild/validate the timeline rather than cropping speech."
+  ],
+  "baseline": {
+    "commit": "32e87875b1929b0b96bfed5c1fc13510a43c78a6",
+    "oldSource": {
+      "asset": "audio/azure-v1/test-01-34.mp3",
+      "sha256": "98f429b1909be596dcbc815eccf9ebbc80ca4a4d8e98a0ba304c3d22303f2076",
+      "start": 0.5,
+      "end": 36.308,
+      "mode": "formal and practice shared passage"
+    },
+    "replacedKeys": [
+      "A",
+      "C",
+      "B"
+    ]
+  },
+  "plannedSpokenEnglishChars": 777,
+  "editorialReview": {
+    "scope": "Independent text-only blind-style solve, no audio",
+    "keys": [
+      "D",
+      "B",
+      "C"
+    ],
+    "disposition": "Q099 now tests a separate shipment instead of reversing Q098; neither requires answers to other questions. Whole group intermediate, not advanced.",
+    "remaining": "Reconfirm revised stem against actual formal narration and confirm speaker/time/passage in both modes."
+  }
+}
