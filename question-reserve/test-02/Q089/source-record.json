@@ -1,0 +1,330 @@
+{
+  "status": "retired-pre-release-content-source-only-not-runtime",
+  "originalId": "t02-q089",
+  "question": {
+    "id": "t02-q089",
+    "testId": "test-02",
+    "number": 89,
+    "part": 4,
+    "groupId": "t02-g051",
+    "topic": "daily",
+    "difficulty": "foundation",
+    "tags": [
+      "tire pressure"
+    ],
+    "prompt": "What is the workshop about?",
+    "promptZh": "工作坊主題是什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Training for a professional car race.",
+        "zh": "專業汽車競賽訓練。",
+        "whyZh": "活動是自行車保養，不是汽車賽事。"
+      },
+      {
+        "id": "B",
+        "text": "Basic bicycle maintenance.",
+        "zh": "基本自行車保養。",
+        "whyZh": "內容包含胎壓、座椅調整與判斷維修需求。"
+      },
+      {
+        "id": "C",
+        "text": "Building a community website.",
+        "zh": "架設社區網站。",
+        "whyZh": "網站只用於報名。"
+      },
+      {
+        "id": "D",
+        "text": "Buying insurance for overseas travel.",
+        "zh": "購買海外旅遊保險。",
+        "whyZh": "與活動內容無關。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "工作坊教授自行車基礎保養，包括檢查胎壓、調整座椅和判斷何時須交由專業人員維修。",
+    "evidence": "a bicycle maintenance workshop",
+    "vocabulary": [
+      {
+        "term": "tire pressure",
+        "zh": "胎壓",
+        "note": "輪胎內的氣壓。"
+      },
+      {
+        "term": "participant",
+        "zh": "參加者",
+        "note": "參與活動或課程的人。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g051",
+    "testId": "test-02",
+    "part": 4,
+    "title": "Community bicycle workshop",
+    "titleZh": "社區自行車工作坊",
+    "topic": "daily",
+    "passage": "The community center will host a bicycle maintenance workshop this Sunday from ten until noon. Participants will learn to check tire pressure, adjust a seat, and identify when professional repairs are needed. Bring your own bicycle if possible. Tools will be provided, so there is no need to buy any in advance. Registration is free, but space is limited to twelve participants. Please register through the center's website by Friday. Children under twelve must attend with an adult.",
+    "passageZh": "社區中心將在本星期日上午十點至中午舉辦自行車保養工作坊。參加者會學習檢查胎壓、調整座椅，以及辨識何時需要專業維修。可以的話請帶自己的自行車。現場會提供工具，不必事先購買。報名免費，但限十二位。請最晚在星期五透過中心網站報名。未滿十二歲的兒童必須由成人陪同。",
+    "audioScript": "The community center will host a bicycle maintenance workshop this Sunday from ten until noon. Participants will learn to check tire pressure, adjust a seat, and identify when professional repairs are needed. Bring your own bicycle if possible. Tools will be provided, so there is no need to buy any in advance. Registration is free, but space is limited to twelve participants. Please register through the center's website by Friday. Children under twelve must attend with an adult.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "The community center will host a bicycle maintenance workshop this Sunday from ten until noon. Participants will learn to check tire pressure, adjust a seat, and identify when professional repairs are needed. Bring your own bicycle if possible. Tools will be provided, so there is no need to buy any in advance. Registration is free, but space is limited to twelve participants. Please register through the center's website by Friday. Children under twelve must attend with an adult."
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/c2/c266860ed24e02d59b916b7add2bd455908781c49f2ba2a3d5a8725387ac88fe.ogg",
+    "duration": 34.272,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-ZA",
+        "role": "female",
+        "modelVoice": "en-ZA-LeahNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 34.772
+  },
+  "originalFormalFrames": [
+    {
+      "src": "audio/opus-hq56-96-v2/66/66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148.ogg",
+      "start": 39.51863,
+      "end": 42.82688,
+      "duration": 3.30825,
+      "kind": "audio",
+      "role": "cue",
+      "part": 4,
+      "groupId": "t02-g051",
+      "at": 2374.06997
+    },
+    {
+      "src": "audio/opus-hq56-96-v2/c2/c266860ed24e02d59b916b7add2bd455908781c49f2ba2a3d5a8725387ac88fe.ogg",
+      "start": 0.5,
+      "end": 34.772,
+      "duration": 34.272,
+      "kind": "audio",
+      "role": "passage",
+      "part": 4,
+      "groupId": "t02-g051",
+      "at": 2377.37822,
+      "speakers": [
+        {
+          "speaker": "female",
+          "locale": "en-ZA",
+          "role": "female",
+          "modelVoice": "en-ZA-LeahNeural"
+        }
+      ]
+    },
+    {
+      "src": "audio/opus-hq56-96-v2/66/66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148.ogg",
+      "start": 43.07688,
+      "end": 45.54888,
+      "duration": 2.472,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t02-g051",
+      "questionId": "t02-q089",
+      "at": 2411.65022
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 11.28411,
+      "part": 4,
+      "groupId": "t02-g051",
+      "questionId": "t02-q089",
+      "at": 2414.12222
+    },
+    {
+      "src": "audio/opus-hq56-96-v2/66/66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148.ogg",
+      "start": 45.79888,
+      "end": 47.91958,
+      "duration": 2.12071,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t02-g051",
+      "questionId": "t02-q090",
+      "at": 2425.40633
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 11.28411,
+      "part": 4,
+      "groupId": "t02-g051",
+      "questionId": "t02-q090",
+      "at": 2427.52704
+    },
+    {
+      "src": "audio/opus-hq56-96-v2/66/66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148.ogg",
+      "start": 48.16958,
+      "end": 51.07858,
+      "duration": 2.909,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t02-g051",
+      "questionId": "t02-q091",
+      "at": 2438.81115
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 11.28411,
+      "part": 4,
+      "groupId": "t02-g051",
+      "questionId": "t02-q091",
+      "at": 2441.72015
+    }
+  ],
+  "originalVerifiedRecords": {
+    "verified-items": {
+      "sha256": "eb87bd4e06d38c8f9d1be0af948f98cf6875cf0033589f5256d8ccb280404bfc",
+      "snapshot": {
+        "status": "verified-item-not-published",
+        "scope": "listening",
+        "checks": "Basic bicycle maintenance, not racing, building a website or travel insurance. Exact group cue and individual spoken number/stem match written English; exact byte-identical formal/practice passage ASR matches after number formatting.",
+        "activeQuestion": {
+          "id": "t02-q089",
+          "testId": "test-02",
+          "number": 89,
+          "part": 4,
+          "groupId": "t02-g051",
+          "topic": "daily",
+          "difficulty": "foundation",
+          "tags": [
+            "tire pressure"
+          ],
+          "prompt": "What is the workshop about?",
+          "promptZh": "工作坊主題是什麼？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Training for a professional car race.",
+              "zh": "專業汽車競賽訓練。",
+              "whyZh": "活動是自行車保養，不是汽車賽事。"
+            },
+            {
+              "id": "B",
+              "text": "Basic bicycle maintenance.",
+              "zh": "基本自行車保養。",
+              "whyZh": "內容包含胎壓、座椅調整與判斷維修需求。"
+            },
+            {
+              "id": "C",
+              "text": "Building a community website.",
+              "zh": "架設社區網站。",
+              "whyZh": "網站只用於報名。"
+            },
+            {
+              "id": "D",
+              "text": "Buying insurance for overseas travel.",
+              "zh": "購買海外旅遊保險。",
+              "whyZh": "與活動內容無關。"
+            }
+          ],
+          "answer": "B",
+          "explanationZh": "工作坊教授自行車基礎保養，包括檢查胎壓、調整座椅和判斷何時須交由專業人員維修。",
+          "evidence": "a bicycle maintenance workshop",
+          "vocabulary": [
+            {
+              "term": "tire pressure",
+              "zh": "胎壓",
+              "note": "輪胎內的氣壓。"
+            },
+            {
+              "term": "participant",
+              "zh": "參加者",
+              "note": "參與活動或課程的人。"
+            }
+          ],
+          "revision": 1
+        },
+        "group": {
+          "id": "t02-g051",
+          "testId": "test-02",
+          "part": 4,
+          "title": "Community bicycle workshop",
+          "titleZh": "社區自行車工作坊",
+          "topic": "daily",
+          "passage": "The community center will host a bicycle maintenance workshop this Sunday from ten until noon. Participants will learn to check tire pressure, adjust a seat, and identify when professional repairs are needed. Bring your own bicycle if possible. Tools will be provided, so there is no need to buy any in advance. Registration is free, but space is limited to twelve participants. Please register through the center's website by Friday. Children under twelve must attend with an adult.",
+          "passageZh": "社區中心將在本星期日上午十點至中午舉辦自行車保養工作坊。參加者會學習檢查胎壓、調整座椅，以及辨識何時需要專業維修。可以的話請帶自己的自行車。現場會提供工具，不必事先購買。報名免費，但限十二位。請最晚在星期五透過中心網站報名。未滿十二歲的兒童必須由成人陪同。",
+          "audioScript": "The community center will host a bicycle maintenance workshop this Sunday from ten until noon. Participants will learn to check tire pressure, adjust a seat, and identify when professional repairs are needed. Bring your own bicycle if possible. Tools will be provided, so there is no need to buy any in advance. Registration is free, but space is limited to twelve participants. Please register through the center's website by Friday. Children under twelve must attend with an adult.",
+          "turns": [
+            {
+              "voice": "female",
+              "text": "The community center will host a bicycle maintenance workshop this Sunday from ten until noon. Participants will learn to check tire pressure, adjust a seat, and identify when professional repairs are needed. Bring your own bicycle if possible. Tools will be provided, so there is no need to buy any in advance. Registration is free, but space is limited to twelve participants. Please register through the center's website by Friday. Children under twelve must attend with an adult."
+            }
+          ],
+          "audio": "audio/azure-v1/test-02-28.mp3",
+          "duration": 34.272,
+          "audioSpeakers": [
+            {
+              "speaker": "female",
+              "locale": "en-ZA",
+              "role": "female",
+              "modelVoice": "en-ZA-LeahNeural"
+            }
+          ],
+          "audioStart": 0.5,
+          "audioEnd": 34.772
+        },
+        "audio": [
+          {
+            "path": "audio/formal/test-02-cues-05.mp3",
+            "mode": "cue",
+            "start": 39.51863,
+            "end": 42.82688,
+            "assetSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+            "speech": "Questions 89-91. Listen to the talk."
+          },
+          {
+            "path": "audio/azure-v1/test-02-28.mp3",
+            "mode": "passage",
+            "start": 0.5,
+            "end": 34.772,
+            "assetSha256": "c266860ed24e02d59b916b7add2bd455908781c49f2ba2a3d5a8725387ac88fe",
+            "speech": "The Community Center will host a bicycle maintenance workshop this Sunday from 10 until noon.\n Participants will learn to check tire pressure, adjust a seat, and identify when professional\n repairs are needed. Bring your own bicycle if possible. Tools will be provided, so there is no\n need to buy any in advance. Registration is free, but space is limited to 12 participants.\n Please register through the center's website by Friday. Children under 12 must attend with an adult."
+          },
+          {
+            "path": "audio/formal/test-02-cues-05.mp3",
+            "mode": "question",
+            "start": 43.07688,
+            "end": 45.54888,
+            "assetSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+            "speech": "Number 89. What is the workshop about?"
+          },
+          {
+            "path": "audio/azure-v1/test-02-28.mp3",
+            "mode": "practice",
+            "start": 0.5,
+            "end": 34.772,
+            "assetSha256": "c266860ed24e02d59b916b7add2bd455908781c49f2ba2a3d5a8725387ac88fe",
+            "speech": "The Community Center will host a bicycle maintenance workshop this Sunday from 10 until noon.\n Participants will learn to check tire pressure, adjust a seat, and identify when professional\n repairs are needed. Bring your own bicycle if possible. Tools will be provided, so there is no\n need to buy any in advance. Registration is free, but space is limited to 12 participants.\n Please register through the center's website by Friday. Children under 12 must attend with an adult."
+          }
+        ]
+      }
+    },
+    "difficulty": {
+      "sha256": "a315c1c6b5e7dc816e7fa563dc7a75b8aa69440978b45e2f02fe90e7f5dfc55e",
+      "snapshot": {
+        "status": "difficulty-reviewed-not-published",
+        "testId": "test-02",
+        "number": 89,
+        "questionId": "t02-q089",
+        "revision": 1,
+        "sourceQuestionSha256": "5d1bf2ae477e02fa6436321f81752c81207fc2538677a62e250fa32098a9a6c3",
+        "sourceGroupSha256": "5f9da51e3f465cceeff423efa599f2c2743aa0b731bffcbd2d4ba85c38924c42",
+        "fromDifficulty": "foundation",
+        "toDifficulty": "foundation",
+        "reason": "The opening explicitly identifies the event as a bicycle maintenance workshop.",
+        "provenance": "Difficulty checked against the exact verified content and essential evidence; no modification to listening script or audio."
+      }
+    }
+  },
+  "notForPreReleaseCompatibility": true
+}

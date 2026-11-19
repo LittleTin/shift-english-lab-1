@@ -1,0 +1,204 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Independent final text adjudication, EN/ZH options, complete rationale and one correct answer. Infer possible read-only scope from folder opens successfully, upload fails, and server verified running.",
+    "audio": "Exact retained verified cue, spoken prompt, shared passage and practice sources; byte/range/role matched against raw and actual Opus receipts. Only bilingual options and active question identity revised, not any spoken word.",
+    "association": "Exact active final question/group and own verified audio rows. No browser or publication claim.",
+    "scopeApprovalSha256": "0978483f5a257fa3ea435bbe630dcd276e2fb79a526d0701ef5655a19d13d0e0"
+  },
+  "activeQuestion": {
+    "id": "t02-q048-r2",
+    "testId": "test-02",
+    "number": 48,
+    "part": 3,
+    "groupId": "t02-g037",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "read-only access"
+    ],
+    "prompt": "What does the woman suggest may be the cause?",
+    "promptZh": "女方認為可能的原因是什麼？",
+    "options": [
+      {
+        "text": "The server is working, but his account can open files without adding them.",
+        "zh": "伺服器正常，但他的帳號可查看檔案、不能新增檔案。",
+        "whyZh": "他開得了資料夾卻不能上傳，且伺服器運作中，符合只有讀取權限。",
+        "id": "A"
+      },
+      {
+        "text": "His account can add files, but the server outage prevents it for now.",
+        "zh": "他的帳號可以新增檔案，但伺服器停機暫時擋住上傳。",
+        "whyZh": "女方明說伺服器正常，沒有說帳號已具備寫入權限。",
+        "id": "B"
+      },
+      {
+        "text": "His account cannot view the folder, but it can submit the report.",
+        "zh": "他的帳號不能查看資料夾，但可以提交報告。",
+        "whyZh": "實際症狀相反：可以開啟資料夾，卻不能上傳。",
+        "id": "C"
+      },
+      {
+        "text": "The server is online, but the folder already contains the approved report.",
+        "zh": "伺服器正常，但資料夾裡已經有核准過的那份報告。",
+        "whyZh": "對話只提到經理請他加入報告，沒有說報告已存在。",
+        "id": "D"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "他開得了資料夾卻不能上傳，且伺服器運作中，符合只有讀取權限。",
+    "evidence": "I can open the project folder, but I cannot upload the validation report. Is the server down? ... The server is running. Your account may have read-only access.",
+    "vocabulary": [
+      {
+        "term": "read-only access",
+        "zh": "唯讀權限",
+        "note": "可讀取但不能修改或新增內容的權限。"
+      },
+      {
+        "term": "write access",
+        "zh": "寫入權限",
+        "note": "允許新增或修改資料的權限。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t02-q048",
+    "testId": "test-02",
+    "number": 48,
+    "part": 3,
+    "groupId": "t02-g037",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "read-only access"
+    ],
+    "prompt": "What does the woman suggest may be the cause?",
+    "promptZh": "女方認為可能的原因是什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The account only allows reading.",
+        "zh": "帳號只有讀取權限。",
+        "whyZh": "她提出 read-only access 作為可能原因，尚待管理員處理。"
+      },
+      {
+        "id": "B",
+        "text": "The server has stopped operating.",
+        "zh": "伺服器停止運作。",
+        "whyZh": "女方明確說伺服器正在運作。"
+      },
+      {
+        "id": "C",
+        "text": "The report was printed incorrectly.",
+        "zh": "報告列印錯誤。",
+        "whyZh": "問題是上傳權限，未討論列印。"
+      },
+      {
+        "id": "D",
+        "text": "The project has been canceled.",
+        "zh": "專案被取消。",
+        "whyZh": "男方剛加入專案，沒有取消資訊。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "她提出 read-only access 作為可能原因，尚待管理員處理。",
+    "evidence": "Your account may have read-only access.",
+    "vocabulary": [
+      {
+        "term": "read-only access",
+        "zh": "唯讀權限",
+        "note": "可讀取但不能修改或新增內容的權限。"
+      },
+      {
+        "term": "write access",
+        "zh": "寫入權限",
+        "note": "允許新增或修改資料的權限。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g037",
+    "testId": "test-02",
+    "part": 3,
+    "title": "Checking an access permission",
+    "titleZh": "確認存取權限",
+    "topic": "technology",
+    "passage": "Man: I can open the project folder, but I cannot upload the validation report. Is the server down?\nWoman: The server is running. Your account may have read-only access. Have you just joined this project?\nMan: Yes, this week. My manager asked me to add the report before the review meeting.\nWoman: Please send me two things: the folder name and a copy of your manager's approval. I can request write access from the administrator.",
+    "passageZh": "男：我能開啟專案資料夾，但無法上傳驗證報告。伺服器當機了嗎？\n女：伺服器正在運作。你的帳號可能只有唯讀權限。你剛加入這個專案嗎？\n男：是，這個星期。主管要我在審查會議前加入報告。\n女：請寄給我兩樣東西：資料夾名稱和一份主管的核准紀錄。我可以向管理員申請寫入權限。",
+    "audioScript": "I can open the project folder, but I cannot upload the validation report. Is the server down?\nThe server is running. Your account may have read-only access. Have you just joined this project?\nYes, this week. My manager asked me to add the report before the review meeting.\nPlease send me two things: the folder name and a copy of your manager's approval. I can request write access from the administrator.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "I can open the project folder, but I cannot upload the validation report. Is the server down?"
+      },
+      {
+        "voice": "female",
+        "text": "The server is running. Your account may have read-only access. Have you just joined this project?"
+      },
+      {
+        "voice": "male",
+        "text": "Yes, this week. My manager asked me to add the report before the review meeting."
+      },
+      {
+        "voice": "female",
+        "text": "Please send me two things: the folder name and a copy of your manager's approval. I can request write access from the administrator."
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/77/779e61d9e7e9ff67f50b1b0cc187006e1fbfa0d24eb7412bec9613bc95dcb1aa.ogg",
+    "duration": 29.575,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-ZA",
+        "role": "male",
+        "modelVoice": "en-ZA-LukeNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-ZA",
+        "role": "female",
+        "modelVoice": "en-ZA-LeahNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 29.575
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/50/50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c.ogg",
+      "start": 42.37375,
+      "end": 46.34463,
+      "assetSha256": "19842d0041efa6f4353bec808e2e6efff114e0ab1554dda82a51d99f72629dd5",
+      "speech": "Questions 47 through 49. Listen to the conversation."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/opus-hq56-96-v2/77/779e61d9e7e9ff67f50b1b0cc187006e1fbfa0d24eb7412bec9613bc95dcb1aa.ogg",
+      "start": 0,
+      "end": 29.575,
+      "assetSha256": "b48a90fe2b2045648855208bd3b2341206beff68eeed4cf4827bd421ae1b0123",
+      "speech": "I can open the project folder, but I cannot upload the validation report. Is the server down?\nThe server is running. Your account may have read-only access. Have you just joined this project?\nYes, this week. My manager asked me to add the report before the review meeting.\nPlease send me two things: the folder name and a copy of your manager's approval. I can request write access from the administrator."
+    },
+    {
+      "mode": "question",
+      "path": "audio/opus-hq56-96-v2/50/50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c.ogg",
+      "start": 49.91029,
+      "end": 53.19325,
+      "assetSha256": "19842d0041efa6f4353bec808e2e6efff114e0ab1554dda82a51d99f72629dd5",
+      "speech": "Number 48. What does the woman suggest may be the cause?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/opus-hq56-96-v2/77/779e61d9e7e9ff67f50b1b0cc187006e1fbfa0d24eb7412bec9613bc95dcb1aa.ogg",
+      "start": 0,
+      "end": 29.575,
+      "assetSha256": "b48a90fe2b2045648855208bd3b2341206beff68eeed4cf4827bd421ae1b0123",
+      "speech": "I can open the project folder, but I cannot upload the validation report. Is the server down?\nThe server is running. Your account may have read-only access. Have you just joined this project?\nYes, this week. My manager asked me to add the report before the review meeting.\nPlease send me two things: the folder name and a copy of your manager's approval. I can request write access from the administrator."
+    }
+  ],
+  "imageSha256": null
+}

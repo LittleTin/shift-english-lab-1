@@ -1,0 +1,268 @@
+{
+  "status": "exact-private-1.5.0-native-chromium-scope-verified-not-published",
+  "bindingInputSha256": "dbb8dd51f188519577c8d91faf2f2e89ffabb8bcbcc1ba4c6f33e0cf7b32b0d3",
+  "independentlyBoundRows": 600,
+  "coreServedWebContentSha256": {
+    "index.html": "a43d28d16a1be5618321b9c4e52b46e29edfe6071b3eb0871913e590d48fd1a8",
+    "assets/app.js": "1ffef4f55769e60f8193755bfa5a1c70e88bef26abb0067c26c5f0dede18d949",
+    "assets/style.css": "6f51add42916fb3339aea9c8a1011cd8a9cc2db772c205be135c49acbae03fec",
+    "data/catalog.js": "530298db87ffb649e506ec27037654730b6ef2ca997648c97bc0dcdda3ec66e0",
+    "data/test-01.json": "de728b6f9d8b3e32d647d5a560c458468ae66f7d129166c4b76dbaff8a50c4c4",
+    "data/test-01.js": "4e70f8dfda117af975cc079094d500d4f0850161604fdadc1ada71b1a918d38f",
+    "data/test-02.json": "a615c4ea295e70a230cfaa25a739685460fd0ea0b0419146b832f1237587ebed",
+    "data/test-02.js": "35c4d1b0cba93f163e72a8eb69b16d8c0b83c443baae29ca6e9b64c42f6e1faa",
+    "data/test-03.json": "d477847934580b3c20d83b4f99ea73da1589ac843a35c91deaeb6d11bd95007d",
+    "data/test-03.js": "96f9bda0d8b72df74269f52ba444c0c969d430d16011220c6cff0364b26666d7"
+  },
+  "privateBrowser": {
+    "platform": "Linux managed native Chromium",
+    "desktop": {
+      "clientWidth": 1165,
+      "scrollWidth": 1165
+    },
+    "responsive": {
+      "mode": "real 390 CSS px same-origin viewport inside Chromium frame, keyboard drawer navigation and real locator clicks; not device touch emulation",
+      "innerWidth": 390,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "responsiveMediaQuery": true
+    },
+    "physicalSafariAndroidTested": false
+  },
+  "catalog": {
+    "version": "1.5.0",
+    "builtInTests": 3,
+    "readingPerTest": 100,
+    "listeningPerTest": 100,
+    "officialCatalogPaths": [
+      "data/test-01.js",
+      "data/test-02.js",
+      "data/test-03.js"
+    ]
+  },
+  "nativeReviews": [
+    {
+      "id": "t01-q101-r3",
+      "exam": "test-01",
+      "number": 101,
+      "approvedDifficulty": "intermediate",
+      "desktop": true,
+      "responsiveViewport": true,
+      "preSubmitLeakCount": 0,
+      "afterSelectingBeforeSubmitLeakCount": 0,
+      "zhStem": 1,
+      "zhOptions": 4,
+      "rationales": 4
+    },
+    {
+      "id": "t01-q001-r2",
+      "exam": "test-01",
+      "number": 1,
+      "approvedDifficulty": "foundation",
+      "desktop": true,
+      "responsiveViewport": true,
+      "preSubmitLeakCount": 0,
+      "afterSelectingBeforeSubmitLeakCount": 0,
+      "zhStem": 1,
+      "zhOptions": 4,
+      "rationales": 4
+    },
+    {
+      "id": "t02-q101-r2",
+      "exam": "test-02",
+      "number": 101,
+      "approvedDifficulty": "intermediate",
+      "desktop": true,
+      "responsiveViewport": true,
+      "preSubmitLeakCount": 0,
+      "afterSelectingBeforeSubmitLeakCount": 0,
+      "zhStem": 1,
+      "zhOptions": 4,
+      "rationales": 4
+    },
+    {
+      "id": "t02-q001",
+      "exam": "test-02",
+      "number": 1,
+      "approvedDifficulty": "foundation",
+      "desktop": true,
+      "responsiveViewport": true,
+      "preSubmitLeakCount": 0,
+      "afterSelectingBeforeSubmitLeakCount": 0,
+      "zhStem": 1,
+      "zhOptions": 4,
+      "rationales": 4
+    },
+    {
+      "id": "t03-q101",
+      "exam": "test-03",
+      "number": 101,
+      "approvedDifficulty": "foundation",
+      "desktop": true,
+      "responsiveViewport": true,
+      "preSubmitLeakCount": 0,
+      "afterSelectingBeforeSubmitLeakCount": 0,
+      "zhStem": 1,
+      "zhOptions": 4,
+      "rationales": 4
+    },
+    {
+      "id": "t03-q001",
+      "exam": "test-03",
+      "number": 1,
+      "approvedDifficulty": "foundation",
+      "desktop": true,
+      "responsiveViewport": true,
+      "preSubmitLeakCount": 0,
+      "afterSelectingBeforeSubmitLeakCount": 0,
+      "zhStem": 1,
+      "zhOptions": 4,
+      "rationales": 4
+    }
+  ],
+  "practiceDifficultyScopes": [
+    {
+      "section": "reading",
+      "tier": "foundation",
+      "count": 20,
+      "allMatchedIndependentLabels": true,
+      "responsive": true,
+      "examples": [
+        "test-03 Q119",
+        "test-02 Q196–199"
+      ]
+    },
+    {
+      "section": "reading",
+      "tier": "intermediate",
+      "count": 22,
+      "allMatchedIndependentLabels": true,
+      "examples": [
+        "test-02 Q106",
+        "test-03 Q124",
+        "test-01 Q150–151"
+      ]
+    },
+    {
+      "section": "reading",
+      "tier": "advanced",
+      "count": 16,
+      "allMatchedIndependentLabels": true,
+      "examples": [
+        "test-03 Q176–179"
+      ]
+    },
+    {
+      "section": "listening",
+      "tier": "foundation",
+      "count": 20,
+      "allMatchedIndependentLabels": true,
+      "examples": [
+        "test-03 Q005/Q029",
+        "test-01 Q003/Q008"
+      ]
+    },
+    {
+      "section": "listening",
+      "tier": "intermediate",
+      "count": 20,
+      "allMatchedIndependentLabels": true,
+      "examples": [
+        "test-01 Q018/Q080–081",
+        "test-03 Q018"
+      ]
+    },
+    {
+      "section": "listening",
+      "tier": "advanced",
+      "count": 12,
+      "allMatchedIndependentLabels": true,
+      "examples": [
+        "test-01 Q050/Q074–076"
+      ]
+    }
+  ],
+  "privateRange": {
+    "mime": "audio/ogg",
+    "servedFileIdentitiesMatched": 10,
+    "cases": [
+      {
+        "test": "test-01",
+        "sourceWindowSec": [
+          37.908,
+          54.444
+        ],
+        "exact206Cases": 3,
+        "beyondEOF": 416
+      },
+      {
+        "test": "test-02",
+        "sourceWindowSec": [
+          0.5,
+          17.228
+        ],
+        "exact206Cases": 3,
+        "beyondEOF": 416
+      },
+      {
+        "test": "test-03",
+        "sourceWindowSec": [
+          35.1,
+          51.852
+        ],
+        "exact206Cases": 3,
+        "beyondEOF": 416
+      }
+    ]
+  },
+  "nativeFormal": {
+    "test": "test-01",
+    "question": "t01-q001-r2",
+    "codec": "Ogg Opus",
+    "refresh": {
+      "sameSource": true,
+      "nativeBeforeSec": 6.256098,
+      "nativeAfterSec": 6.45499,
+      "durableOldOffset": 3.877171,
+      "durableNewOffset": 5.800363
+    },
+    "tabVisibility": {
+      "topAndIframeActuallyHidden": true,
+      "timer": "44:40",
+      "pausedDetachedBySeconds": 1.2,
+      "sameSourceOnReturn": true,
+      "sourceStartSeconds": 17.128,
+      "frame": 1,
+      "savedOffsetSeconds": 3.558296,
+      "nativeBeforeSec": 20.685257,
+      "nativeAfterSec": 20.784597
+    }
+  },
+  "accent": {
+    "version": "1.5.0",
+    "opusSources": 14,
+    "oneNativeSamplePlayed": true,
+    "observedDurationSeconds": 15.9425
+  },
+  "guide": {
+    "privateBrowserObservedVersion": "1.5.0",
+    "authoringLinkPresent": true,
+    "browserObservationOfLinkDestination": "not verified: browser was unable to observe markdown download destination",
+    "deploymentGuideVariantNativeNotTested": true
+  },
+  "imports": {
+    "officialCatalogServedMatched": true,
+    "namespaceRegression": "4/4 VM unit tests for exact same app SHA per assembly",
+    "genuineNewPackBothPools": "earlier scoped candidate tested via repo add_pack.py; private synthetic test-04, not repeated on exact 1.5.0"
+  },
+  "notClaimed": [
+    "physical iOS/Android",
+    "device touch emulation",
+    "full 45-minute uninterrupted browser run",
+    "exact final standalone Playwright run (OS denied independent Chromium socket at launch; real tests above used managed Chrome)",
+    "full portable script group-integrity result on final stage",
+    "production Pages MIME/Range",
+    "deployment guide variant",
+    "author Git lock or publication"
+  ]
+}

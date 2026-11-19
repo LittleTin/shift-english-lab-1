@@ -1,0 +1,2 @@
+# Test02 final15 exact work transfer
+Scope only: 15 approved independent verification/difficulty rows, their original source-side reserve, four added HQ Ogg Opus stems and deterministic replay. Apply only to the exact input SHA in scoped-replay.json. The four referenced audio paths are relative to the transfer root; replay verifies actual bytes. The output is generated locally on demand; no compiled active JSON or JS is here, no WAV, and no prerelease compatibility payload is loaded or shipped. The browser, exam lock, and live publication are separate and not represented.

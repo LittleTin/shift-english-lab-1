@@ -1,0 +1,204 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Independent final text adjudication, EN/ZH options, complete rationale and one correct answer. Identify two unchanged distinct dimensions of the restaurant booking while headcount and dietary note change.",
+    "audio": "Exact retained verified cue, spoken prompt, shared passage and practice sources; byte/range/role matched against raw and actual Opus receipts. Only bilingual options and active question identity revised, not any spoken word.",
+    "association": "Exact active final question/group and own verified audio rows. No browser or publication claim.",
+    "scopeApprovalSha256": "0978483f5a257fa3ea435bbe630dcd276e2fb79a526d0701ef5655a19d13d0e0"
+  },
+  "activeQuestion": {
+    "id": "t02-q061-r2",
+    "testId": "test-02",
+    "number": 61,
+    "part": 3,
+    "groupId": "t02-g041",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "set menu"
+    ],
+    "prompt": "What will remain the same?",
+    "promptZh": "哪一項維持不變？",
+    "options": [
+      {
+        "text": "The set menu stays, but the restaurant moves the booking to dinner.",
+        "zh": "維持套餐，但餐廳把訂位改到晚餐。",
+        "whyZh": "保留套餐沒錯，但仍是中午訂位，沒有改到晚餐。",
+        "id": "A"
+      },
+      {
+        "text": "The reservation stays at noon, but everyone orders separately.",
+        "zh": "仍在中午用餐，但改成由各人單點。",
+        "whyZh": "用餐時間沒變，男方也明確表示維持套餐。",
+        "id": "B"
+      },
+      {
+        "text": "The noon booking time and the set menu both stay in place.",
+        "zh": "中午的訂位時間與套餐都維持不變。",
+        "whyZh": "原本及修改後都訂中午，男方也選擇維持套餐。",
+        "id": "C"
+      },
+      {
+        "text": "The booking remains at noon and the restaurant omits all dietary notes.",
+        "zh": "仍維持中午訂位，餐廳不加任何飲食備註。",
+        "whyZh": "時間維持不變，但餐廳會註記有一位客人不能吃花生。",
+        "id": "D"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "原本及修改後都訂中午，男方也選擇維持套餐。",
+    "evidence": "We will keep the set menu. ... Your revised reservation is for four at noon, under Mr. Lin.",
+    "vocabulary": [
+      {
+        "term": "set menu",
+        "zh": "套餐",
+        "note": "由餐廳組合的一套菜色。"
+      },
+      {
+        "term": "under a name",
+        "zh": "登記在某人名下",
+        "note": "訂位時常以姓名查詢紀錄。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t02-q061",
+    "testId": "test-02",
+    "number": 61,
+    "part": 3,
+    "groupId": "t02-g041",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "set menu"
+    ],
+    "prompt": "What will remain the same?",
+    "promptZh": "哪一項維持不變？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The original number of guests.",
+        "zh": "原本用餐人數。",
+        "whyZh": "六人已改成四人。"
+      },
+      {
+        "id": "B",
+        "text": "An evening booking time.",
+        "zh": "晚上的訂位時間。",
+        "whyZh": "原先就是中午，沒有晚間訂位。"
+      },
+      {
+        "id": "C",
+        "text": "The set menu.",
+        "zh": "套餐。",
+        "whyZh": "男方明說會維持 set menu。"
+      },
+      {
+        "id": "D",
+        "text": "The absence of dietary notes.",
+        "zh": "沒有任何飲食註記。",
+        "whyZh": "現在會加入不能吃花生的註記。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "男方明說會維持 set menu。",
+    "evidence": "We will keep the set menu.",
+    "vocabulary": [
+      {
+        "term": "set menu",
+        "zh": "套餐",
+        "note": "由餐廳組合的一套菜色。"
+      },
+      {
+        "term": "under a name",
+        "zh": "登記在某人名下",
+        "note": "訂位時常以姓名查詢紀錄。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g041",
+    "testId": "test-02",
+    "part": 3,
+    "title": "Changing a lunch reservation",
+    "titleZh": "調整午餐訂位",
+    "topic": "daily",
+    "passage": "Man: I booked a table for six at noon, but two colleagues cannot come. Could you change it to four people?\nWoman: Certainly. Would you still like the set menu, or would you prefer to order individually?\nMan: We will keep the set menu. One guest cannot eat peanuts, so please let the kitchen know.\nWoman: I will note that. Your revised reservation is for four at noon, under Mr. Lin.",
+    "passageZh": "男：我訂了中午六人桌，但兩位同事不能來。可以改成四位嗎？\n女：當然。你們還要套餐，還是各自點餐？\n男：我們維持套餐。有一位客人不能吃花生，請通知廚房。\n女：我會註記。修改後是 Lin 先生名下，中午四位。",
+    "audioScript": "I booked a table for six at noon, but two colleagues cannot come. Could you change it to four people?\nCertainly. Would you still like the set menu, or would you prefer to order individually?\nWe will keep the set menu. One guest cannot eat peanuts, so please let the kitchen know.\nI will note that. Your revised reservation is for four at noon, under Mr. Lin.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "I booked a table for six at noon, but two colleagues cannot come. Could you change it to four people?"
+      },
+      {
+        "voice": "female",
+        "text": "Certainly. Would you still like the set menu, or would you prefer to order individually?"
+      },
+      {
+        "voice": "male",
+        "text": "We will keep the set menu. One guest cannot eat peanuts, so please let the kitchen know."
+      },
+      {
+        "voice": "female",
+        "text": "I will note that. Your revised reservation is for four at noon, under Mr. Lin."
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/97/97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806.ogg",
+    "duration": 26.472,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-AU",
+        "role": "male",
+        "modelVoice": "en-AU-WilliamNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-AU",
+        "role": "female",
+        "modelVoice": "en-AU-NatashaNeural"
+      }
+    ],
+    "audioStart": 30.064,
+    "audioEnd": 56.536
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/79/79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d.ogg",
+      "start": 32.73858,
+      "end": 36.75183,
+      "assetSha256": "0cc2825c2157ae55d45124e7d33561c573c3f35054722a3eecbb29071cf72a3d",
+      "speech": "Questions 59 through 61. Listen to the conversation."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/opus-hq56-96-v2/97/97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806.ogg",
+      "start": 30.064,
+      "end": 56.536,
+      "assetSha256": "55f11df3b68f05712697916d25323327ab966bc4a101b44869a0399200f14a5d",
+      "speech": "I booked a table for six at noon, but two colleagues cannot come. Could you change it to four people?\nCertainly. Would you still like the set menu, or would you prefer to order individually?\nWe will keep the set menu. One guest cannot eat peanuts, so please let the kitchen know.\nI will note that. Your revised reservation is for four at noon, under Mr. Lin."
+    },
+    {
+      "mode": "question",
+      "path": "audio/opus-hq56-96-v2/79/79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d.ogg",
+      "start": 43.32754,
+      "end": 45.75937,
+      "assetSha256": "0cc2825c2157ae55d45124e7d33561c573c3f35054722a3eecbb29071cf72a3d",
+      "speech": "Number 61. What will remain the same?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/opus-hq56-96-v2/97/97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806.ogg",
+      "start": 30.064,
+      "end": 56.536,
+      "assetSha256": "55f11df3b68f05712697916d25323327ab966bc4a101b44869a0399200f14a5d",
+      "speech": "I booked a table for six at noon, but two colleagues cannot come. Could you change it to four people?\nCertainly. Would you still like the set menu, or would you prefer to order individually?\nWe will keep the set menu. One guest cannot eat peanuts, so please let the kitchen know.\nI will note that. Your revised reservation is for four at noon, under Mr. Lin."
+    }
+  ],
+  "imageSha256": null
+}

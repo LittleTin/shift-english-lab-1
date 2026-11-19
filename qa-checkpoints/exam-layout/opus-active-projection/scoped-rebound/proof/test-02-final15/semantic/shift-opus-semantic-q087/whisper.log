@@ -1,0 +1,74 @@
+whisper_init_from_file_with_params_no_state: loading model from '/tmp/shift-azure-qa-model/small.en.bin'
+whisper_init_with_params_no_state: use gpu    = 1
+whisper_init_with_params_no_state: flash attn = 1
+whisper_init_with_params_no_state: gpu_device = 0
+whisper_init_with_params_no_state: dtw        = 0
+whisper_init_with_params_no_state: devices    = 1
+whisper_init_with_params_no_state: backends   = 1
+whisper_model_load: loading model
+whisper_model_load: n_vocab       = 51864
+whisper_model_load: n_audio_ctx   = 1500
+whisper_model_load: n_audio_state = 768
+whisper_model_load: n_audio_head  = 12
+whisper_model_load: n_audio_layer = 12
+whisper_model_load: n_text_ctx    = 448
+whisper_model_load: n_text_state  = 768
+whisper_model_load: n_text_head   = 12
+whisper_model_load: n_text_layer  = 12
+whisper_model_load: n_mels        = 80
+whisper_model_load: ftype         = 1
+whisper_model_load: qntvr         = 0
+whisper_model_load: type          = 3 (small)
+whisper_model_load: adding 1607 extra tokens
+whisper_model_load: n_langs       = 99
+whisper_model_load:          CPU total size =   487.00 MB
+whisper_model_load: model size    =  487.00 MB
+whisper_backend_init_gpu: device 0: CPU (type: 0)
+whisper_backend_init_gpu: no GPU found
+whisper_init_state: kv self size  =   18.87 MB
+whisper_init_state: kv cross size =   56.62 MB
+whisper_init_state: kv pad  size  =    4.72 MB
+whisper_init_state: compute buffer (conv)   =   22.42 MB
+whisper_init_state: compute buffer (encode) =   33.85 MB
+whisper_init_state: compute buffer (cross)  =    6.20 MB
+whisper_init_state: compute buffer (decode) =   97.28 MB
+
+system_info: n_threads = 2 / 9 | WHISPER : COREML = 0 | OPENVINO = 0 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | OPENMP = 1 | REPACK = 1 | 
+
+main: processing 'question.wav' (51333 samples, 3.2 sec), 2 threads, 1 processors, 5 beams + best of 5, lang = en, task = transcribe, timestamps = 1 ...
+
+
+[00:00:00.000 --> 00:00:03.340]   Number 87, which item should staff not request?
+output_txt: saving output to 'question.wav.txt'
+
+system_info: n_threads = 2 / 9 | WHISPER : COREML = 0 | OPENVINO = 0 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | OPENMP = 1 | REPACK = 1 | 
+
+main: processing 'cue.wav' (50505 samples, 3.2 sec), 2 threads, 1 processors, 5 beams + best of 5, lang = en, task = transcribe, timestamps = 1 ...
+
+
+[00:00:00.000 --> 00:00:02.120]   Questions 86 through 88.
+[00:00:02.120 --> 00:00:03.320]   Listen to the talk.
+output_txt: saving output to 'cue.wav.txt'
+
+system_info: n_threads = 2 / 9 | WHISPER : COREML = 0 | OPENVINO = 0 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | OPENMP = 1 | REPACK = 1 | 
+
+main: processing 'passage.wav' (506496 samples, 31.7 sec), 2 threads, 1 processors, 5 beams + best of 5, lang = en, task = transcribe, timestamps = 1 ...
+
+
+[00:00:00.000 --> 00:00:08.000]   Starting next week, all technical support cases must include the device serial number, software version, and steps taken before the problem occurred.
+[00:00:08.000 --> 00:00:14.000]   This will help the engineering team investigate without repeatedly requesting basic information.
+[00:00:14.000 --> 00:00:17.000]   Do not ask customers to send passwords.
+[00:00:17.000 --> 00:00:23.000]   For cases involving unexpected shutdowns, also request the event log if it can be exported safely.
+[00:00:23.000 --> 00:00:26.000]   The new form is on the support portal.
+[00:00:27.000 --> 00:00:30.440]   A 15-minute walkthrough will be held online this Thursday at 10.
+output_txt: saving output to 'passage.wav.txt'
+
+whisper_print_timings:     load time =  1768.13 ms
+whisper_print_timings:     fallbacks =   0 p /   0 h
+whisper_print_timings:      mel time =   190.16 ms
+whisper_print_timings:   sample time =   540.82 ms /   647 runs (     0.84 ms per run)
+whisper_print_timings:   encode time = 49629.92 ms /     4 runs ( 12407.48 ms per run)
+whisper_print_timings:   decode time =   748.34 ms /     5 runs (   149.67 ms per run)
+whisper_print_timings:   batchd time =  9916.48 ms /   626 runs (    15.84 ms per run)
+whisper_print_timings:   prompt time =     0.00 ms /     1 runs (     0.00 ms per run)
+whisper_print_timings:    total time = 63669.34 ms

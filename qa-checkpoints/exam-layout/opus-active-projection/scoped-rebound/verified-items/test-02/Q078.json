@@ -1,0 +1,186 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Independent final text adjudication, EN/ZH options, complete rationale and one correct answer. Interpret a batch-level hold vs item appearance and contrast earlier batch clearance.",
+    "audio": "Exact retained verified cue, spoken prompt, shared passage and practice sources; byte/range/role matched against raw and actual Opus receipts. Only bilingual options and active question identity revised, not any spoken word.",
+    "association": "Exact active final question/group and own verified audio rows. No browser or publication claim.",
+    "scopeApprovalSha256": "0978483f5a257fa3ea435bbe630dcd276e2fb79a526d0701ef5655a19d13d0e0"
+  },
+  "activeQuestion": {
+    "id": "t02-q078-r2",
+    "testId": "test-02",
+    "number": 78,
+    "part": 4,
+    "groupId": "t02-g047",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "incoming inspection"
+    ],
+    "prompt": "Which material may still be used?",
+    "promptZh": "哪批材料仍可使用？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Any individual cover without visible scratches, even from the held batch.",
+        "zh": "任何沒有明顯刮痕的外蓋，即使來自已停用的批次也可以。",
+        "whyZh": "管理的是整個受影響批次，不是只擋肉眼看得出刮痕的外蓋。"
+      },
+      {
+        "id": "B",
+        "text": "Covers from the earlier cleared batch; a clean-looking cover from the held lot still stays out.",
+        "zh": "可用先前通過檢驗的那批外蓋；已停用批次的外蓋即使看來沒傷也不能用。",
+        "whyZh": "前一批經檢驗通過可用；受影響的批次即使單件外觀無傷也不能投產。"
+      },
+      {
+        "id": "C",
+        "text": "Covers from the current batch once Purchasing schedules replacement delivery.",
+        "zh": "採購排定替換品交貨時程後，就可使用這次到貨的外蓋。",
+        "whyZh": "排定替換品交貨並不會解禁原本被停用的批次。"
+      },
+      {
+        "id": "D",
+        "text": "Both batches, provided the supplier submits a report by Tuesday.",
+        "zh": "只要供應商週二前提交報告，兩批都能用。",
+        "whyZh": "週二是供應商改善報告期限，不是兩批共同的放行期限。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "前一批經檢驗通過可用；受影響的批次即使單件外觀無傷也不能投產。",
+    "evidence": "The affected batch has been placed on hold and will not enter production. | The earlier batch passed inspection and can still be used.",
+    "vocabulary": [
+      {
+        "term": "incoming inspection",
+        "zh": "進料檢驗",
+        "note": "對到貨材料或零件進行的檢查。"
+      },
+      {
+        "term": "corrective action",
+        "zh": "矯正措施",
+        "note": "針對已發生問題的原因採取措施；本題要求供應商提交報告。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t02-q078",
+    "testId": "test-02",
+    "number": 78,
+    "part": 4,
+    "groupId": "t02-g047",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "incoming inspection"
+    ],
+    "prompt": "Which material may still be used?",
+    "promptZh": "哪批材料仍可使用？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Every cover delivered this week.",
+        "zh": "本週到貨的所有上蓋。",
+        "whyZh": "本週受影響批次已暫停使用。"
+      },
+      {
+        "id": "B",
+        "text": "The earlier batch that passed inspection.",
+        "zh": "先前檢驗合格的批次。",
+        "whyZh": "講者把受影響批次與先前合格批次分開處理。"
+      },
+      {
+        "id": "C",
+        "text": "The scratched covers without further checks.",
+        "zh": "有刮痕的上蓋，不需再確認。",
+        "whyZh": "受影響批次不會投入生產。"
+      },
+      {
+        "id": "D",
+        "text": "Only products already returned by customers.",
+        "zh": "只有客戶退回品。",
+        "whyZh": "沒有客退品可用的資訊。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "講者把受影響批次與先前合格批次分開處理。",
+    "evidence": "The earlier batch passed inspection and can still be used.",
+    "vocabulary": [
+      {
+        "term": "incoming inspection",
+        "zh": "進料檢驗",
+        "note": "對到貨材料或零件進行的檢查。"
+      },
+      {
+        "term": "corrective action",
+        "zh": "矯正措施",
+        "note": "針對已發生問題的原因採取措施；本題要求供應商提交報告。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g047",
+    "testId": "test-02",
+    "part": 4,
+    "title": "A supplier quality update",
+    "titleZh": "供應商品質更新",
+    "topic": "manufacturing",
+    "passage": "Our incoming inspection team found scratches on some of the aluminum covers delivered this week. The affected batch has been placed on hold and will not enter production. We have asked the supplier to examine the protective packaging and send a corrective action report by Tuesday. The earlier batch passed inspection and can still be used. Purchasing will coordinate replacement covers once the supplier confirms the delivery schedule. Please report any similar damage through the quality portal.",
+    "passageZh": "進料檢驗團隊在本週交付的部分鋁製上蓋上發現刮痕。受影響批次已暫停使用，不會投入生產。我們已要求供應商檢查保護包裝，並最遲在星期二提供矯正措施報告。較早的批次檢驗合格，仍可使用。供應商確認交期後，採購會協調替換上蓋。若發現類似損傷，請透過品質入口網站回報。",
+    "audioScript": "Our incoming inspection team found scratches on some of the aluminum covers delivered this week. The affected batch has been placed on hold and will not enter production. We have asked the supplier to examine the protective packaging and send a corrective action report by Tuesday. The earlier batch passed inspection and can still be used. Purchasing will coordinate replacement covers once the supplier confirms the delivery schedule. Please report any similar damage through the quality portal.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Our incoming inspection team found scratches on some of the aluminum covers delivered this week. The affected batch has been placed on hold and will not enter production. We have asked the supplier to examine the protective packaging and send a corrective action report by Tuesday. The earlier batch passed inspection and can still be used. Purchasing will coordinate replacement covers once the supplier confirms the delivery schedule. Please report any similar damage through the quality portal."
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/af/afc5694920388f8fe28ca9c1d94e7cbb5a752061fcc5c04e25b95a302f2762bf.ogg",
+    "duration": 33.264,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-IE",
+        "role": "female",
+        "modelVoice": "en-IE-EmilyNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 33.764
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/7a/7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe.ogg",
+      "start": 50.80525,
+      "end": 54.40371,
+      "assetSha256": "e66a88e84467932c0c9493f7c7ae999faec581414366e4a4a34be8bf0081cf66",
+      "speech": "Questions 77 through 79. Listen to the talk."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/opus-hq56-96-v2/af/afc5694920388f8fe28ca9c1d94e7cbb5a752061fcc5c04e25b95a302f2762bf.ogg",
+      "start": 0.5,
+      "end": 33.764,
+      "assetSha256": "adfa053f5daa7f5eae790f014de62140de6651813acef94bae147728c76797ec",
+      "speech": "Our incoming inspection team found scratches on some of the aluminum covers delivered this week. The affected batch has been placed on hold and will not enter production. We have asked the supplier to examine the protective packaging and send a corrective action report by Tuesday. The earlier batch passed inspection and can still be used. Purchasing will coordinate replacement covers once the supplier confirms the delivery schedule. Please report any similar damage through the quality portal."
+    },
+    {
+      "mode": "question",
+      "path": "audio/opus-hq56-96-v2/7a/7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe.ogg",
+      "start": 57.77925,
+      "end": 60.70742,
+      "assetSha256": "e66a88e84467932c0c9493f7c7ae999faec581414366e4a4a34be8bf0081cf66",
+      "speech": "Number 78. Which material may still be used?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/opus-hq56-96-v2/af/afc5694920388f8fe28ca9c1d94e7cbb5a752061fcc5c04e25b95a302f2762bf.ogg",
+      "start": 0.5,
+      "end": 33.764,
+      "assetSha256": "adfa053f5daa7f5eae790f014de62140de6651813acef94bae147728c76797ec",
+      "speech": "Our incoming inspection team found scratches on some of the aluminum covers delivered this week. The affected batch has been placed on hold and will not enter production. We have asked the supplier to examine the protective packaging and send a corrective action report by Tuesday. The earlier batch passed inspection and can still be used. Purchasing will coordinate replacement covers once the supplier confirms the delivery schedule. Please report any similar damage through the quality portal."
+    }
+  ],
+  "imageSha256": null
+}

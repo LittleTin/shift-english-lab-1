@@ -1,0 +1,372 @@
+{
+  "status": "retired-pre-release-content-source-only-not-runtime",
+  "originalId": "t02-q035",
+  "question": {
+    "id": "t02-q035",
+    "testId": "test-02",
+    "number": 35,
+    "part": 3,
+    "groupId": "t02-g033",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "error log"
+    ],
+    "prompt": "What happened after the update?",
+    "promptZh": "更新後發生什麼事？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The spare unit was shipped to a customer.",
+        "zh": "備用機寄給了客戶。",
+        "whyZh": "備用機被用來比較舊版運作，沒有提到寄送。"
+      },
+      {
+        "id": "B",
+        "text": "Several demonstration units stopped responding.",
+        "zh": "幾台展示機停止回應。",
+        "whyZh": "男方說三台展示機在韌體更新後停止回應。"
+      },
+      {
+        "id": "C",
+        "text": "All error logs disappeared.",
+        "zh": "所有錯誤紀錄消失。",
+        "whyZh": "女方要求匯出紀錄，沒有說紀錄消失。"
+      },
+      {
+        "id": "D",
+        "text": "The customer canceled the demonstration.",
+        "zh": "客戶取消了展示。",
+        "whyZh": "展示仍排在明天早上。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "男方說三台展示機在韌體更新後停止回應。",
+    "evidence": "Three demonstration units stopped responding",
+    "vocabulary": [
+      {
+        "term": "error log",
+        "zh": "錯誤紀錄",
+        "note": "記錄錯誤事件與狀態，協助除錯。"
+      },
+      {
+        "term": "reproduce an issue",
+        "zh": "重現問題",
+        "note": "在可控制的條件下再次觸發相同問題。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g033",
+    "testId": "test-02",
+    "part": 3,
+    "title": "A failed firmware update",
+    "titleZh": "韌體更新失敗",
+    "topic": "technology",
+    "passage": "Man: Three demonstration units stopped responding after yesterday's firmware update. The older version still works on the spare unit.\nWoman: Before we change anything, can you export the error logs? The software team needs them to reproduce the issue.\nMan: Yes. Should I restore the earlier version afterward? We have a customer demonstration tomorrow morning.\nWoman: Yes, once the logs are saved. Keep one failed unit unchanged for further investigation.",
+    "passageZh": "男：三台展示機在昨天更新韌體後停止回應。備用機上的舊版仍可正常運作。\n女：在改動任何東西之前，你可以匯出錯誤紀錄嗎？軟體團隊需要它們來重現問題。\n男：可以。之後我該恢復舊版嗎？明天早上有客戶展示。\n女：要，等紀錄保存好之後再恢復。留一台故障機保持原狀，以便進一步調查。",
+    "audioScript": "Three demonstration units stopped responding after yesterday's firmware update. The older version still works on the spare unit.\nBefore we change anything, can you export the error logs? The software team needs them to reproduce the issue.\nYes. Should I restore the earlier version afterward? We have a customer demonstration tomorrow morning.\nYes, once the logs are saved. Keep one failed unit unchanged for further investigation.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Three demonstration units stopped responding after yesterday's firmware update. The older version still works on the spare unit."
+      },
+      {
+        "voice": "female",
+        "text": "Before we change anything, can you export the error logs? The software team needs them to reproduce the issue."
+      },
+      {
+        "voice": "male",
+        "text": "Yes. Should I restore the earlier version afterward? We have a customer demonstration tomorrow morning."
+      },
+      {
+        "voice": "female",
+        "text": "Yes, once the logs are saved. Keep one failed unit unchanged for further investigation."
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/19/1996b1a56db685597c6742f14dd818fe835424a3a17465853fb4104b3ff8604b.ogg",
+    "duration": 33.624,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-IE",
+        "role": "male",
+        "modelVoice": "en-IE-ConnorNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-IE",
+        "role": "female",
+        "modelVoice": "en-IE-EmilyNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 34.124
+  },
+  "originalFormalFrames": [
+    {
+      "src": "audio/opus-hq56-96-v2/10/1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8.ogg",
+      "start": 54.88454,
+      "end": 58.95633,
+      "duration": 4.07179,
+      "kind": "audio",
+      "role": "cue",
+      "part": 3,
+      "groupId": "t02-g033",
+      "at": 952.2486
+    },
+    {
+      "src": "audio/opus-hq56-96-v2/19/1996b1a56db685597c6742f14dd818fe835424a3a17465853fb4104b3ff8604b.ogg",
+      "start": 0.5,
+      "end": 34.124,
+      "duration": 33.624,
+      "kind": "audio",
+      "role": "passage",
+      "part": 3,
+      "groupId": "t02-g033",
+      "at": 956.32039,
+      "speakers": [
+        {
+          "speaker": "male",
+          "locale": "en-IE",
+          "role": "male",
+          "modelVoice": "en-IE-ConnorNeural"
+        },
+        {
+          "speaker": "female",
+          "locale": "en-IE",
+          "role": "female",
+          "modelVoice": "en-IE-EmilyNeural"
+        }
+      ]
+    },
+    {
+      "src": "audio/opus-hq56-96-v2/10/1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8.ogg",
+      "start": 59.20633,
+      "end": 61.955,
+      "duration": 2.74867,
+      "kind": "audio",
+      "role": "question",
+      "part": 3,
+      "groupId": "t02-g033",
+      "questionId": "t02-q035",
+      "at": 989.94439
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 11.28411,
+      "part": 3,
+      "groupId": "t02-g033",
+      "questionId": "t02-q035",
+      "at": 992.69306
+    },
+    {
+      "src": "audio/opus-hq56-96-v2/10/1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8.ogg",
+      "start": 62.205,
+      "end": 65.10329,
+      "duration": 2.89829,
+      "kind": "audio",
+      "role": "question",
+      "part": 3,
+      "groupId": "t02-g033",
+      "questionId": "t02-q036",
+      "at": 1003.97717
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 11.28411,
+      "part": 3,
+      "groupId": "t02-g033",
+      "questionId": "t02-q036",
+      "at": 1006.87546
+    },
+    {
+      "src": "audio/opus-hq56-96-v2/10/1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8.ogg",
+      "start": 65.35329,
+      "end": 68.61713,
+      "duration": 3.26383,
+      "kind": "audio",
+      "role": "question",
+      "part": 3,
+      "groupId": "t02-g033",
+      "questionId": "t02-q037",
+      "at": 1018.15957
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 11.28411,
+      "part": 3,
+      "groupId": "t02-g033",
+      "questionId": "t02-q037",
+      "at": 1021.4234
+    }
+  ],
+  "originalVerifiedRecords": {
+    "verified-items": {
+      "sha256": "e571dd44b85e963c7b8866472b5f019cfa3ac97ea081577f0d4d841f4fdceb4f",
+      "snapshot": {
+        "status": "verified-item-not-published",
+        "scope": "listening",
+        "checks": "三台展示機停止回應；備用機舊版可運作，仍要匯出紀錄、準備隔天展示。 正式題號、口述題幹與兩模式的對話範圍均核對；英中題意和各選項解析已校對。",
+        "activeQuestion": {
+          "id": "t02-q035",
+          "testId": "test-02",
+          "number": 35,
+          "part": 3,
+          "groupId": "t02-g033",
+          "topic": "technology",
+          "difficulty": "intermediate",
+          "tags": [
+            "error log"
+          ],
+          "prompt": "What happened after the update?",
+          "promptZh": "更新後發生什麼事？",
+          "options": [
+            {
+              "id": "A",
+              "text": "The spare unit was shipped to a customer.",
+              "zh": "備用機寄給了客戶。",
+              "whyZh": "備用機被用來比較舊版運作，沒有提到寄送。"
+            },
+            {
+              "id": "B",
+              "text": "Several demonstration units stopped responding.",
+              "zh": "幾台展示機停止回應。",
+              "whyZh": "男方說三台展示機在韌體更新後停止回應。"
+            },
+            {
+              "id": "C",
+              "text": "All error logs disappeared.",
+              "zh": "所有錯誤紀錄消失。",
+              "whyZh": "女方要求匯出紀錄，沒有說紀錄消失。"
+            },
+            {
+              "id": "D",
+              "text": "The customer canceled the demonstration.",
+              "zh": "客戶取消了展示。",
+              "whyZh": "展示仍排在明天早上。"
+            }
+          ],
+          "answer": "B",
+          "explanationZh": "男方說三台展示機在韌體更新後停止回應。",
+          "evidence": "Three demonstration units stopped responding",
+          "vocabulary": [
+            {
+              "term": "error log",
+              "zh": "錯誤紀錄",
+              "note": "記錄錯誤事件與狀態，協助除錯。"
+            },
+            {
+              "term": "reproduce an issue",
+              "zh": "重現問題",
+              "note": "在可控制的條件下再次觸發相同問題。"
+            }
+          ],
+          "revision": 1
+        },
+        "group": {
+          "id": "t02-g033",
+          "testId": "test-02",
+          "part": 3,
+          "title": "A failed firmware update",
+          "titleZh": "韌體更新失敗",
+          "topic": "technology",
+          "passage": "Man: Three demonstration units stopped responding after yesterday's firmware update. The older version still works on the spare unit.\nWoman: Before we change anything, can you export the error logs? The software team needs them to reproduce the issue.\nMan: Yes. Should I restore the earlier version afterward? We have a customer demonstration tomorrow morning.\nWoman: Yes, once the logs are saved. Keep one failed unit unchanged for further investigation.",
+          "passageZh": "男：三台展示機在昨天更新韌體後停止回應。備用機上的舊版仍可正常運作。\n女：在改動任何東西之前，你可以匯出錯誤紀錄嗎？軟體團隊需要它們來重現問題。\n男：可以。之後我該恢復舊版嗎？明天早上有客戶展示。\n女：要，等紀錄保存好之後再恢復。留一台故障機保持原狀，以便進一步調查。",
+          "audioScript": "Three demonstration units stopped responding after yesterday's firmware update. The older version still works on the spare unit.\nBefore we change anything, can you export the error logs? The software team needs them to reproduce the issue.\nYes. Should I restore the earlier version afterward? We have a customer demonstration tomorrow morning.\nYes, once the logs are saved. Keep one failed unit unchanged for further investigation.",
+          "turns": [
+            {
+              "voice": "male",
+              "text": "Three demonstration units stopped responding after yesterday's firmware update. The older version still works on the spare unit."
+            },
+            {
+              "voice": "female",
+              "text": "Before we change anything, can you export the error logs? The software team needs them to reproduce the issue."
+            },
+            {
+              "voice": "male",
+              "text": "Yes. Should I restore the earlier version afterward? We have a customer demonstration tomorrow morning."
+            },
+            {
+              "voice": "female",
+              "text": "Yes, once the logs are saved. Keep one failed unit unchanged for further investigation."
+            }
+          ],
+          "audio": "audio/azure-v1/test-02-12.mp3",
+          "duration": 33.624,
+          "audioSpeakers": [
+            {
+              "speaker": "male",
+              "locale": "en-IE",
+              "role": "male",
+              "modelVoice": "en-IE-ConnorNeural"
+            },
+            {
+              "speaker": "female",
+              "locale": "en-IE",
+              "role": "female",
+              "modelVoice": "en-IE-EmilyNeural"
+            }
+          ],
+          "audioStart": 0.5,
+          "audioEnd": 34.124
+        },
+        "audio": [
+          {
+            "path": "audio/formal/test-02-cues-01.mp3",
+            "mode": "cue",
+            "start": 54.88454,
+            "end": 58.95633,
+            "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+            "speech": "Questions 35 through 37. Listen to the conversation."
+          },
+          {
+            "path": "audio/azure-v1/test-02-12.mp3",
+            "mode": "passage",
+            "start": 0.5,
+            "end": 34.124,
+            "assetSha256": "1996b1a56db685597c6742f14dd818fe835424a3a17465853fb4104b3ff8604b",
+            "speech": "Three demonstration units stopped responding after yesterday's firmware update. The older version still works on the spare unit. Before we change anything, can you export the error logs? The software team needs them to reproduce the issue. Yes. Should I restore the earlier version afterward? We have a customer demonstration tomorrow morning. Yes, once the logs are saved. Keep one failed unit unchanged for further investigation. [BLANK_AUDIO]"
+          },
+          {
+            "path": "audio/formal/test-02-cues-01.mp3",
+            "mode": "question",
+            "start": 59.20633,
+            "end": 61.955,
+            "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+            "speech": "Number 35, what happened after the update?"
+          },
+          {
+            "path": "audio/azure-v1/test-02-12.mp3",
+            "mode": "practice",
+            "start": 0.5,
+            "end": 34.124,
+            "assetSha256": "1996b1a56db685597c6742f14dd818fe835424a3a17465853fb4104b3ff8604b",
+            "speech": "Three demonstration units stopped responding after yesterday's firmware update. The older version still works on the spare unit. Before we change anything, can you export the error logs? The software team needs them to reproduce the issue. Yes. Should I restore the earlier version afterward? We have a customer demonstration tomorrow morning. Yes, once the logs are saved. Keep one failed unit unchanged for further investigation. [BLANK_AUDIO]"
+          }
+        ]
+      }
+    },
+    "difficulty": {
+      "sha256": "5e4345e3988be81ff1730ba037e779e4b0b61c7f777bf632eba0eb0f8b5c9e88",
+      "snapshot": {
+        "status": "difficulty-reviewed-not-published",
+        "testId": "test-02",
+        "number": 35,
+        "questionId": "t02-q035",
+        "revision": 1,
+        "sourceQuestionSha256": "1579adb6ab62132bb0e77fb99fcf8485bc71427c30b6ed6239b3fd2ff4dea06a",
+        "sourceGroupSha256": "4083ba19c52f12328caa09b44626d878c08e67bbebec3ad1202e13291e655579",
+        "fromDifficulty": "intermediate",
+        "toDifficulty": "foundation",
+        "reason": "Opening sentence explicitly reports three demonstration units stopped responding after update.",
+        "provenance": "Independent §1.1 audit of the verified active item and cited cue, passage, or figure where required; canonical scope verified at d934abf."
+      }
+    }
+  },
+  "notForPreReleaseCompatibility": true
+}

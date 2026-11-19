@@ -1,0 +1,204 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Independent final text adjudication, EN/ZH options, complete rationale and one correct answer. Separate correct packing data and suspected template from formal Quality approval before relabeling.",
+    "audio": "Exact retained verified cue, spoken prompt, shared passage and practice sources; byte/range/role matched against raw and actual Opus receipts. Only bilingual options and active question identity revised, not any spoken word.",
+    "association": "Exact active final question/group and own verified audio rows. No browser or publication claim.",
+    "scopeApprovalSha256": "0978483f5a257fa3ea435bbe630dcd276e2fb79a526d0701ef5655a19d13d0e0"
+  },
+  "activeQuestion": {
+    "id": "t02-q043-r2",
+    "testId": "test-02",
+    "number": 43,
+    "part": 3,
+    "groupId": "t02-g035",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "packing list"
+    ],
+    "prompt": "What is required before relabeling?",
+    "promptZh": "重貼標籤前需要什麼？",
+    "options": [
+      {
+        "text": "Treat the correct packing list as approval and start relabeling.",
+        "zh": "把正確的裝箱清單視為核准，開始重貼標籤。",
+        "whyZh": "裝箱清單正確不等於品管已核准更正。",
+        "id": "A"
+      },
+      {
+        "text": "Check the print history and relabel as soon as an old template is found.",
+        "zh": "查明列印紀錄後，一發現用過舊版型就重貼。",
+        "whyZh": "即使查到舊版型，重貼前仍須取得品管核准。",
+        "id": "B"
+      },
+      {
+        "text": "Relabel to match the packing list and tell quality afterward.",
+        "zh": "先依裝箱清單重貼，之後再通知品管。",
+        "whyZh": "品管核准必須在重貼之前，不是事後通知。",
+        "id": "C"
+      },
+      {
+        "text": "Have quality approve the correction even though the packing list is already right.",
+        "zh": "即使裝箱清單本來就正確，仍要先由品管核准更正。",
+        "whyZh": "清單正確可用於確認差異，但重貼前仍需由品管核准更正。",
+        "id": "D"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "清單正確可用於確認差異，但重貼前仍需由品管核准更正。",
+    "evidence": "The list is correct. The label printer may have used an old template. ... Do not relabel anything until the quality team approves the correction.",
+    "vocabulary": [
+      {
+        "term": "packing list",
+        "zh": "裝箱單",
+        "note": "列示包裝內貨物與數量的文件。"
+      },
+      {
+        "term": "holding area",
+        "zh": "暫存區",
+        "note": "在等待確認或處置期間暫時放置物品的區域。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t02-q043",
+    "testId": "test-02",
+    "number": 43,
+    "part": 3,
+    "groupId": "t02-g035",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "packing list"
+    ],
+    "prompt": "What is required before relabeling?",
+    "promptZh": "重貼標籤前需要什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "A new purchase order from the customer.",
+        "zh": "客戶的新採購單。",
+        "whyZh": "本題所需的是品質部門核准，不是新採購單。"
+      },
+      {
+        "id": "B",
+        "text": "A larger holding area.",
+        "zh": "更大的暫存區。",
+        "whyZh": "已指定現有暫存區，沒有擴大區域要求。"
+      },
+      {
+        "id": "C",
+        "text": "A different product model.",
+        "zh": "不同的產品型號。",
+        "whyZh": "處理的是標籤更正，未要求更換產品。"
+      },
+      {
+        "id": "D",
+        "text": "Approval from quality.",
+        "zh": "品質部門核准。",
+        "whyZh": "女方要求品質部門核准更正後才能重貼。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "女方要求品質部門核准更正後才能重貼。",
+    "evidence": "Do not relabel anything until the quality team approves the correction.",
+    "vocabulary": [
+      {
+        "term": "packing list",
+        "zh": "裝箱單",
+        "note": "列示包裝內貨物與數量的文件。"
+      },
+      {
+        "term": "holding area",
+        "zh": "暫存區",
+        "note": "在等待確認或處置期間暫時放置物品的區域。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g035",
+    "testId": "test-02",
+    "part": 3,
+    "title": "Investigating a label mismatch",
+    "titleZh": "調查標籤不符",
+    "topic": "manufacturing",
+    "passage": "Man: The shipping box labels show the letter R, then the number eight. The units inside show the letter R, then the number nine. I have stopped the shipment.\nWoman: Keep the boxes in the marked holding area. Compare the labels with the packing list.\nMan: The list is correct. The label printer may have used an old template.\nWoman: Let’s check the print history. Do not relabel anything until the quality team approves the correction.",
+    "passageZh": "男：出貨紙箱上的標籤先顯示字母 R，再顯示數字 8。箱內產品的標示則是字母 R，接著是數字 9。我已停止出貨。\n女：把紙箱留在有標示的暫存區。請比對標籤與裝箱單。\n男：裝箱單沒錯。印表機可能用了舊版標籤樣板。\n女：先查列印紀錄。品管部門核准更正之前，不要重貼任何標籤。",
+    "audioScript": "The shipping box labels show the letter R, then the number eight. The units inside show the letter R, then the number nine. I have stopped the shipment.\nKeep the boxes in the marked holding area. Compare the labels with the packing list.\nThe list is correct. The label printer may have used an old template.\nLet’s check the print history. Do not relabel anything until the quality team approves the correction.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "The shipping box labels show the letter R, then the number eight. The units inside show the letter R, then the number nine. I have stopped the shipment."
+      },
+      {
+        "voice": "female",
+        "text": "Keep the boxes in the marked holding area. Compare the labels with the packing list."
+      },
+      {
+        "voice": "male",
+        "text": "The list is correct. The label printer may have used an old template."
+      },
+      {
+        "voice": "female",
+        "text": "Let’s check the print history. Do not relabel anything until the quality team approves the correction."
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/13/13da2bf68d9bf8fbcd3858fa3ceaeeaa4e16659b7b7cf719e777fb39965f59c8.ogg",
+    "duration": 28.6375,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-NG",
+        "role": "male",
+        "modelVoice": "en-NG-AbeoNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-NG",
+        "role": "female",
+        "modelVoice": "en-NG-EzinneNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 28.6375
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/50/50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c.ogg",
+      "start": 13.28071,
+      "end": 17.10367,
+      "assetSha256": "19842d0041efa6f4353bec808e2e6efff114e0ab1554dda82a51d99f72629dd5",
+      "speech": "Questions 41 through 43. Listen to the conversation."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/opus-hq56-96-v2/13/13da2bf68d9bf8fbcd3858fa3ceaeeaa4e16659b7b7cf719e777fb39965f59c8.ogg",
+      "start": 0,
+      "end": 28.6375,
+      "assetSha256": "db8894f9450338dcd0802c8be1c0d99f7d4846bdd606ce80c422a66cfca624dd",
+      "speech": "The shipping box labels show the letter R, then the number eight. The units inside show the letter R, then the number nine. I have stopped the shipment.\nKeep the boxes in the marked holding area. Compare the labels with the packing list.\nThe list is correct. The label printer may have used an old template.\nLet’s check the print history. Do not relabel anything until the quality team approves the correction."
+    },
+    {
+      "mode": "question",
+      "path": "audio/opus-hq56-96-v2/50/50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c.ogg",
+      "start": 23.19004,
+      "end": 26.37358,
+      "assetSha256": "19842d0041efa6f4353bec808e2e6efff114e0ab1554dda82a51d99f72629dd5",
+      "speech": "Number 43. What is required before relabeling?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/opus-hq56-96-v2/13/13da2bf68d9bf8fbcd3858fa3ceaeeaa4e16659b7b7cf719e777fb39965f59c8.ogg",
+      "start": 0,
+      "end": 28.6375,
+      "assetSha256": "db8894f9450338dcd0802c8be1c0d99f7d4846bdd606ce80c422a66cfca624dd",
+      "speech": "The shipping box labels show the letter R, then the number eight. The units inside show the letter R, then the number nine. I have stopped the shipment.\nKeep the boxes in the marked holding area. Compare the labels with the packing list.\nThe list is correct. The label printer may have used an old template.\nLet’s check the print history. Do not relabel anything until the quality team approves the correction."
+    }
+  ],
+  "imageSha256": null
+}

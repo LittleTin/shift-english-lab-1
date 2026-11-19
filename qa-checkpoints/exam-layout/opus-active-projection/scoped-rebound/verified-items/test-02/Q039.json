@@ -1,0 +1,204 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Independent final text adjudication, EN/ZH options, complete rationale and one correct answer. Distinguish inspection from delayed assembly by independent fixture requirement.",
+    "audio": "Exact retained verified cue, spoken prompt, shared passage and practice sources; byte/range/role matched against raw and actual Opus receipts. Only bilingual options and active question identity revised, not any spoken word.",
+    "association": "Exact active final question/group and own verified audio rows. No browser or publication claim.",
+    "scopeApprovalSha256": "0978483f5a257fa3ea435bbe630dcd276e2fb79a526d0701ef5655a19d13d0e0"
+  },
+  "activeQuestion": {
+    "id": "t02-q039-r2",
+    "testId": "test-02",
+    "number": 39,
+    "part": 3,
+    "groupId": "t02-g034",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "pilot build"
+    ],
+    "prompt": "What can the team do on Monday?",
+    "promptZh": "團隊星期一可以做什麼？",
+    "options": [
+      {
+        "text": "Inspect the housings only after the new fixture is checked.",
+        "zh": "等新治具檢查完才檢查外殼。",
+        "whyZh": "檢查外殼不需治具，星期一即可進行。",
+        "id": "A"
+      },
+      {
+        "text": "Inspect the housings and assemble the full batch that day.",
+        "zh": "當天檢查外殼並完成整批組裝。",
+        "whyZh": "外殼可先檢查，但星期一治具還沒準備好，不能完成整批組裝。",
+        "id": "B"
+      },
+      {
+        "text": "Inspect the housings without the fixture and leave assembly for later.",
+        "zh": "不用治具先檢查外殼，組裝留待之後。",
+        "whyZh": "外殼檢查不依賴治具，可先進行；組裝要等治具準備好且完成檢查。",
+        "id": "C"
+      },
+      {
+        "text": "Inspect the housings using the new fixture as soon as it arrives that day.",
+        "zh": "當天治具一到就用它檢查外殼。",
+        "whyZh": "治具星期二才會準備好；外殼檢查也不需要它。",
+        "id": "D"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "外殼檢查不依賴治具，可先進行；組裝要等治具準備好且完成檢查。",
+    "evidence": "Can the team start with the housing inspection on Monday? That does not require the fixture. ... Assembly can move to Wednesday, after the fixture has been checked.",
+    "vocabulary": [
+      {
+        "term": "pilot build",
+        "zh": "試產",
+        "note": "正式量產前的小批次製作，用於驗證設計與製程準備。"
+      },
+      {
+        "term": "fixture",
+        "zh": "治具",
+        "note": "本題用於組裝的定位或輔助工具。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t02-q039",
+    "testId": "test-02",
+    "number": 39,
+    "part": 3,
+    "groupId": "t02-g034",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "pilot build"
+    ],
+    "prompt": "What can the team do on Monday?",
+    "promptZh": "團隊星期一可以做什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Complete all assembly work.",
+        "zh": "完成全部組裝。",
+        "whyZh": "組裝已改為星期三。"
+      },
+      {
+        "id": "B",
+        "text": "Deliver the finished units.",
+        "zh": "交付完成的產品。",
+        "whyZh": "產品尚未組裝，沒有星期一出貨安排。"
+      },
+      {
+        "id": "C",
+        "text": "Inspect the housings.",
+        "zh": "檢驗外殼。",
+        "whyZh": "男方提出先進行不需治具的外殼檢驗，女方同意。"
+      },
+      {
+        "id": "D",
+        "text": "Test the finished fixture.",
+        "zh": "測試完成的治具。",
+        "whyZh": "治具星期二才備妥，不可能星期一測試完成品。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "男方提出先進行不需治具的外殼檢驗，女方同意。",
+    "evidence": "start with the housing inspection on Monday",
+    "vocabulary": [
+      {
+        "term": "pilot build",
+        "zh": "試產",
+        "note": "正式量產前的小批次製作，用於驗證設計與製程準備。"
+      },
+      {
+        "term": "fixture",
+        "zh": "治具",
+        "note": "本題用於組裝的定位或輔助工具。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g034",
+    "testId": "test-02",
+    "part": 3,
+    "title": "Revising the pilot build",
+    "titleZh": "調整試產安排",
+    "topic": "manufacturing",
+    "passage": "Woman: We planned to assemble two hundred units in Monday's pilot build, but the new fixture will not be ready until Tuesday.\nMan: Can the team start with the housing inspection on Monday? That does not require the fixture.\nWoman: Yes. Assembly can move to Wednesday, after the fixture has been checked. I will update the schedule this afternoon.\nMan: Please also tell purchasing that the material delivery date can stay the same.",
+    "passageZh": "女：我們原本計畫星期一試產組裝兩百台，但新治具要到星期二才會完成。\n男：團隊星期一能先做外殼檢驗嗎？那不需要治具。\n女：可以。治具檢查完成後，組裝可移到星期三。我今天下午會更新排程。\n男：也請通知採購，物料交貨日期可以維持不變。",
+    "audioScript": "We planned to assemble two hundred units in Monday's pilot build, but the new fixture will not be ready until Tuesday.\nCan the team start with the housing inspection on Monday? That does not require the fixture.\nYes. Assembly can move to Wednesday, after the fixture has been checked. I will update the schedule this afternoon.\nPlease also tell purchasing that the material delivery date can stay the same.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "We planned to assemble two hundred units in Monday's pilot build, but the new fixture will not be ready until Tuesday."
+      },
+      {
+        "voice": "male",
+        "text": "Can the team start with the housing inspection on Monday? That does not require the fixture."
+      },
+      {
+        "voice": "female",
+        "text": "Yes. Assembly can move to Wednesday, after the fixture has been checked. I will update the schedule this afternoon."
+      },
+      {
+        "voice": "male",
+        "text": "Please also tell purchasing that the material delivery date can stay the same."
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/8c/8c45e69db8ea8138ea2468257f59611b70c44335e26b900881d87caabff31474.ogg",
+    "duration": 28.536,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-KE",
+        "role": "female",
+        "modelVoice": "en-KE-AsiliaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-KE",
+        "role": "male",
+        "modelVoice": "en-KE-ChilembaNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 29.036
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/50/50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c.ogg",
+      "start": 0.25,
+      "end": 3.82842,
+      "assetSha256": "19842d0041efa6f4353bec808e2e6efff114e0ab1554dda82a51d99f72629dd5",
+      "speech": "Questions 38 through 40. Listen to the conversation."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/opus-hq56-96-v2/8c/8c45e69db8ea8138ea2468257f59611b70c44335e26b900881d87caabff31474.ogg",
+      "start": 0.5,
+      "end": 29.036,
+      "assetSha256": "f8fd38040eb0c077af2be5a8f120ec5dccbd014a3a18fbbbc6a8f1b7acf0d5f8",
+      "speech": "We planned to assemble two hundred units in Monday's pilot build, but the new fixture will not be ready until Tuesday.\nCan the team start with the housing inspection on Monday? That does not require the fixture.\nYes. Assembly can move to Wednesday, after the fixture has been checked. I will update the schedule this afternoon.\nPlease also tell purchasing that the material delivery date can stay the same."
+    },
+    {
+      "mode": "question",
+      "path": "audio/opus-hq56-96-v2/50/50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c.ogg",
+      "start": 7.56479,
+      "end": 10.40592,
+      "assetSha256": "19842d0041efa6f4353bec808e2e6efff114e0ab1554dda82a51d99f72629dd5",
+      "speech": "Number 39. What can the team do on Monday?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/opus-hq56-96-v2/8c/8c45e69db8ea8138ea2468257f59611b70c44335e26b900881d87caabff31474.ogg",
+      "start": 0.5,
+      "end": 29.036,
+      "assetSha256": "f8fd38040eb0c077af2be5a8f120ec5dccbd014a3a18fbbbc6a8f1b7acf0d5f8",
+      "speech": "We planned to assemble two hundred units in Monday's pilot build, but the new fixture will not be ready until Tuesday.\nCan the team start with the housing inspection on Monday? That does not require the fixture.\nYes. Assembly can move to Wednesday, after the fixture has been checked. I will update the schedule this afternoon.\nPlease also tell purchasing that the material delivery date can stay the same."
+    }
+  ],
+  "imageSha256": null
+}

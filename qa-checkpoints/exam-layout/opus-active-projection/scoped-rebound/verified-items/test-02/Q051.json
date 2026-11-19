@@ -1,0 +1,199 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Independent final text adjudication, EN/ZH options, complete rationale and one correct answer. Apply full sample capacity and unchanged three-day measurement need to the moved start and expected finish.",
+    "audio": "New independently decoded exact final Opus numbered stem; raw receipt and final bytes separately guarded; retained cue/passage unchanged.",
+    "association": "Exact active final question/group and own verified audio rows. No browser or publication claim.",
+    "scopeApprovalSha256": "0978483f5a257fa3ea435bbe630dcd276e2fb79a526d0701ef5655a19d13d0e0"
+  },
+  "activeQuestion": {
+    "id": "t02-q051-r3",
+    "testId": "test-02",
+    "number": 51,
+    "part": 3,
+    "groupId": "t02-g038",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "reserve"
+    ],
+    "prompt": "If all samples must be tested together, why would the original completion date change?",
+    "promptZh": "如果所有樣品必須一起測試，為什麼原定完成日期會變？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The team plans to add more samples.",
+        "zh": "團隊打算增加樣品。",
+        "whyZh": "樣品數量仍是十二件。"
+      },
+      {
+        "id": "B",
+        "text": "The test plan must be rewritten at check-in.",
+        "zh": "報到時要重寫測試計畫。",
+        "whyZh": "報到時只須帶測試計畫。"
+      },
+      {
+        "id": "C",
+        "text": "The smaller chamber needs extra setup.",
+        "zh": "小測試箱需要額外設定。",
+        "whyZh": "小測試箱的問題是容量不足，不是設定時間。"
+      },
+      {
+        "id": "D",
+        "text": "The full test cannot start on the originally requested day.",
+        "zh": "全數樣品無法在原本要求的那天開始測試。",
+        "whyZh": "原訂週三開始、測三天；容量足夠的測試箱週五才能用，因此完工日期得往後排。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "原訂週三開始、測三天；容量足夠的測試箱週五才能用，因此完工日期得往後排。",
+    "evidence": "We need the reliability chamber for three days, starting Wednesday. Is it available? | Another team has booked it through Thursday. You could begin Friday morning, or use the smaller chamber on Wednesday. | The smaller one cannot hold all twelve samples. Let us choose Friday, and I will notify the project manager about the revised completion date.",
+    "vocabulary": [
+      {
+        "term": "completion date",
+        "zh": "完成日期",
+        "note": "指預計結束整項工作或測試的日期。"
+      }
+    ],
+    "revision": 3
+  },
+  "originalQuestion": {
+    "id": "t02-q051-r2",
+    "testId": "test-02",
+    "number": 51,
+    "part": 3,
+    "groupId": "t02-g038",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "reserve"
+    ],
+    "prompt": "Why does the woman reject the smaller chamber?",
+    "promptZh": "女方為何不用較小的試驗箱？",
+    "options": [
+      {
+        "id": "A",
+        "text": "It is too expensive to rent.",
+        "zh": "租用費太高。",
+        "whyZh": "沒有討論費用。"
+      },
+      {
+        "id": "B",
+        "text": "It cannot fit all of the samples.",
+        "zh": "它放不下全部樣品。",
+        "whyZh": "女方明說放不下全部十二個樣品。"
+      },
+      {
+        "id": "C",
+        "text": "It is in a different laboratory.",
+        "zh": "它在另一間實驗室。",
+        "whyZh": "女方拒絕的是容量不足，並未提到試驗箱所在位置。"
+      },
+      {
+        "id": "D",
+        "text": "It has already failed calibration.",
+        "zh": "校正結果不合格。",
+        "whyZh": "對話未提校正失敗。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "女方明說放不下全部十二個樣品。",
+    "evidence": "The smaller one cannot hold all twelve samples.",
+    "vocabulary": [
+      {
+        "term": "reserve",
+        "zh": "預約；保留",
+        "note": "本題指預約設備使用時段。"
+      },
+      {
+        "term": "reliability test",
+        "zh": "可靠度測試",
+        "note": "在指定條件下評估產品持續運作等表現，具體條件由測試計畫定義。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t02-g038",
+    "testId": "test-02",
+    "part": 3,
+    "title": "Rescheduling a reliability test",
+    "titleZh": "調整可靠度測試",
+    "topic": "technology",
+    "passage": "Woman: We need the reliability chamber for three days, starting Wednesday. Is it available?\nMan: Another team has booked it through Thursday. You could begin Friday morning, or use the smaller chamber on Wednesday.\nWoman: The smaller one cannot hold all twelve samples. Let us choose Friday, and I will notify the project manager about the revised completion date.\nMan: I will reserve the larger chamber for you. Please bring the test plan when you check in.",
+    "passageZh": "女：我們從星期三開始需要使用可靠度試驗箱三天。有空檔嗎？\n男：另一個團隊已預約到星期四，包含星期四當天。你們可以星期五早上開始，或星期三用比較小的試驗箱。\n女：小的那台放不下全部十二個樣品。我們選星期五，我會通知專案經理修改後的完成日期。\n男：我會替你預約較大的試驗箱。登記使用時請帶測試計畫。",
+    "audioScript": "We need the reliability chamber for three days, starting Wednesday. Is it available?\nAnother team has booked it through Thursday. You could begin Friday morning, or use the smaller chamber on Wednesday.\nThe smaller one cannot hold all twelve samples. Let us choose Friday, and I will notify the project manager about the revised completion date.\nI will reserve the larger chamber for you. Please bring the test plan when you check in.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "We need the reliability chamber for three days, starting Wednesday. Is it available?"
+      },
+      {
+        "voice": "male",
+        "text": "Another team has booked it through Thursday. You could begin Friday morning, or use the smaller chamber on Wednesday."
+      },
+      {
+        "voice": "female",
+        "text": "The smaller one cannot hold all twelve samples. Let us choose Friday, and I will notify the project manager about the revised completion date."
+      },
+      {
+        "voice": "male",
+        "text": "I will reserve the larger chamber for you. Please bring the test plan when you check in."
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/25/2586dbecbf4afdfb30951aa05797e06952eb86d7d2fba094541d787d22408815.ogg",
+    "duration": 30.888,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-US",
+        "role": "female",
+        "modelVoice": "en-US-JennyNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-US",
+        "role": "male",
+        "modelVoice": "en-US-GuyNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 31.388
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/50/50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c.ogg",
+      "start": 56.2015,
+      "end": 59.80392,
+      "assetSha256": "19842d0041efa6f4353bec808e2e6efff114e0ab1554dda82a51d99f72629dd5",
+      "speech": "Questions 50 through 52. Listen to the conversation."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/opus-hq56-96-v2/25/2586dbecbf4afdfb30951aa05797e06952eb86d7d2fba094541d787d22408815.ogg",
+      "start": 0.5,
+      "end": 31.388,
+      "assetSha256": "9275ad69e5aa526ca78f44c8e35122434ee9920dc63983d5f17ffd19fa126fe5",
+      "speech": "We need the reliability chamber for three days, starting Wednesday. Is it available?\nAnother team has booked it through Thursday. You could begin Friday morning, or use the smaller chamber on Wednesday.\nThe smaller one cannot hold all twelve samples. Let us choose Friday, and I will notify the project manager about the revised completion date.\nI will reserve the larger chamber for you. Please bring the test plan when you check in."
+    },
+    {
+      "mode": "question",
+      "path": "audio/exams/test-02/questions/Q051/formal-stem-medium-16354fcfea46.ogg",
+      "start": 0,
+      "end": 7.5,
+      "assetSha256": "2357c8a40629ec42a51f99fb4e991808cc9aa14e1ef55dc10a7a9624a9d92c4d",
+      "speech": "Number 51. If all samples must be tested together, why would the original completion date change?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/opus-hq56-96-v2/25/2586dbecbf4afdfb30951aa05797e06952eb86d7d2fba094541d787d22408815.ogg",
+      "start": 0.5,
+      "end": 31.388,
+      "assetSha256": "9275ad69e5aa526ca78f44c8e35122434ee9920dc63983d5f17ffd19fa126fe5",
+      "speech": "We need the reliability chamber for three days, starting Wednesday. Is it available?\nAnother team has booked it through Thursday. You could begin Friday morning, or use the smaller chamber on Wednesday.\nThe smaller one cannot hold all twelve samples. Let us choose Friday, and I will notify the project manager about the revised completion date.\nI will reserve the larger chamber for you. Please bring the test plan when you check in."
+    }
+  ],
+  "imageSha256": null
+}

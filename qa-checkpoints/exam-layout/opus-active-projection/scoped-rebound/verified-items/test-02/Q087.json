@@ -1,0 +1,186 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Independent final text adjudication, EN/ZH options, complete rationale and one correct answer. Distinguish unconditional password prohibition, conditional safely exportable shutdown log, and always required case information.",
+    "audio": "Exact retained verified cue, spoken prompt, shared passage and practice sources; byte/range/role matched against raw and actual Opus receipts. Only bilingual options and active question identity revised, not any spoken word.",
+    "association": "Exact active final question/group and own verified audio rows. No browser or publication claim.",
+    "scopeApprovalSha256": "0978483f5a257fa3ea435bbe630dcd276e2fb79a526d0701ef5655a19d13d0e0"
+  },
+  "activeQuestion": {
+    "id": "t02-q087-r2",
+    "testId": "test-02",
+    "number": 87,
+    "part": 4,
+    "groupId": "t02-g050",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "support case"
+    ],
+    "prompt": "Which item should staff not request?",
+    "promptZh": "工作人員不應索取哪一項？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Do not request passwords for ordinary cases, but ask for them after an unexpected shutdown.",
+        "zh": "一般案件不要索取密碼，但發生意外關機時可要求提供。",
+        "whyZh": "禁止索取密碼沒有例外；意外關機時可有條件要求的是事件記錄。"
+      },
+      {
+        "id": "B",
+        "text": "Never request event logs, even when an unexpected shutdown log can be exported safely.",
+        "zh": "一律不要索取事件記錄，即使意外關機的記錄可以安全匯出。",
+        "whyZh": "意外關機而且能安全匯出時，應另外要求事件記錄。"
+      },
+      {
+        "id": "C",
+        "text": "Never request passwords; for an unexpected shutdown, request the event log if it can be exported safely.",
+        "zh": "一律不可索取密碼；遇到非預期關機，若事件記錄能安全匯出，就請客戶提供。",
+        "whyZh": "密碼一律不能要求；事件記錄不像密碼，在意外關機且能安全匯出時要另外收集。"
+      },
+      {
+        "id": "D",
+        "text": "Do not request serial numbers if a shutdown log is available.",
+        "zh": "可取得關機記錄時，不要再要求序號。",
+        "whyZh": "裝置序號是每件案件都要有的基本資料，不因另有事件記錄而省略。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "密碼一律不能要求；事件記錄不像密碼，在意外關機且能安全匯出時要另外收集。",
+    "evidence": "Starting next week, all technical support cases must include the device serial number, software version, and steps taken before the problem occurred. | Do not ask customers to send passwords. | For cases involving unexpected shutdowns, also request the event log if it can be exported safely.",
+    "vocabulary": [
+      {
+        "term": "support case",
+        "zh": "支援案件",
+        "note": "用來追蹤使用者問題與處理過程的紀錄。"
+      },
+      {
+        "term": "walkthrough",
+        "zh": "操作導覽",
+        "note": "逐步說明如何使用系統或完成流程。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t02-q087",
+    "testId": "test-02",
+    "number": 87,
+    "part": 4,
+    "groupId": "t02-g050",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "support case"
+    ],
+    "prompt": "Which item should staff not request?",
+    "promptZh": "工作人員不應索取哪一項？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The device serial number.",
+        "zh": "裝置序號。",
+        "whyZh": "序號是必填資料。"
+      },
+      {
+        "id": "B",
+        "text": "The software version.",
+        "zh": "軟體版本。",
+        "whyZh": "版本是必填資料。"
+      },
+      {
+        "id": "C",
+        "text": "Customer passwords.",
+        "zh": "客戶密碼。",
+        "whyZh": "通知明確說不得要求客戶提供密碼。"
+      },
+      {
+        "id": "D",
+        "text": "Steps taken before the problem.",
+        "zh": "問題前的操作步驟。",
+        "whyZh": "這些步驟也是必填資料。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "通知明確說不得要求客戶提供密碼；其他三項都是案件必填資料。",
+    "evidence": "Do not ask customers to send passwords.",
+    "vocabulary": [
+      {
+        "term": "support case",
+        "zh": "支援案件",
+        "note": "用來追蹤使用者問題與處理過程的紀錄。"
+      },
+      {
+        "term": "walkthrough",
+        "zh": "操作導覽",
+        "note": "逐步說明如何使用系統或完成流程。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g050",
+    "testId": "test-02",
+    "part": 4,
+    "title": "Customer support handover",
+    "titleZh": "客服交接說明",
+    "topic": "technology",
+    "passage": "Starting next week, all technical support cases must include the device serial number, software version, and steps taken before the problem occurred. This will help the engineering team investigate without repeatedly requesting basic information. Do not ask customers to send passwords. For cases involving unexpected shutdowns, also request the event log if it can be exported safely. The new form is on the support portal. A fifteen-minute walkthrough will be held online this Thursday at ten.",
+    "passageZh": "從下週開始，所有技術支援案件都必須包含裝置序號、軟體版本，以及問題發生前的操作步驟。這能幫助工程團隊調查，避免反覆索取基本資訊。請勿要求客戶寄送密碼。涉及非預期關機的案件，如果能安全匯出，也請索取事件紀錄。新表單放在支援入口網站。本星期四十點會在線上進行十五分鐘的操作導覽。",
+    "audioScript": "Starting next week, all technical support cases must include the device serial number, software version, and steps taken before the problem occurred. This will help the engineering team investigate without repeatedly requesting basic information. Do not ask customers to send passwords. For cases involving unexpected shutdowns, also request the event log if it can be exported safely. The new form is on the support portal. A fifteen-minute walkthrough will be held online this Thursday at ten.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Starting next week, all technical support cases must include the device serial number, software version, and steps taken before the problem occurred. This will help the engineering team investigate without repeatedly requesting basic information. Do not ask customers to send passwords. For cases involving unexpected shutdowns, also request the event log if it can be exported safely. The new form is on the support portal. A fifteen-minute walkthrough will be held online this Thursday at ten."
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/89/893be19a3f18558707c69459c99f33aed47ed6a1bf5e8d79e63899ba1c597d5b.ogg",
+    "duration": 31.656,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-TZ",
+        "role": "male",
+        "modelVoice": "en-TZ-ElimuNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 32.156
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/66/66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148.ogg",
+      "start": 24.62687,
+      "end": 27.78346,
+      "assetSha256": "c85e5bf03145ab3f75db2a4afef0293aba8fd1eb8332ab61b806fd5dc9cd11b6",
+      "speech": "Questions 86 through 88. Listen to the talk."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/opus-hq56-96-v2/89/893be19a3f18558707c69459c99f33aed47ed6a1bf5e8d79e63899ba1c597d5b.ogg",
+      "start": 0.5,
+      "end": 32.156,
+      "assetSha256": "a6ac18599b075b7587948d0bc86d141e8be31c9667aca147697a458c7be5a768",
+      "speech": "Starting next week, all technical support cases must include the device serial number, software version, and steps taken before the problem occurred. This will help the engineering team investigate without repeatedly requesting basic information. Do not ask customers to send passwords. For cases involving unexpected shutdowns, also request the event log if it can be exported safely. The new form is on the support portal. A fifteen-minute walkthrough will be held online this Thursday at ten."
+    },
+    {
+      "mode": "question",
+      "path": "audio/opus-hq56-96-v2/66/66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148.ogg",
+      "start": 32.25583,
+      "end": 35.46417,
+      "assetSha256": "c85e5bf03145ab3f75db2a4afef0293aba8fd1eb8332ab61b806fd5dc9cd11b6",
+      "speech": "Number 87. Which item should staff not request?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/opus-hq56-96-v2/89/893be19a3f18558707c69459c99f33aed47ed6a1bf5e8d79e63899ba1c597d5b.ogg",
+      "start": 0.5,
+      "end": 32.156,
+      "assetSha256": "a6ac18599b075b7587948d0bc86d141e8be31c9667aca147697a458c7be5a768",
+      "speech": "Starting next week, all technical support cases must include the device serial number, software version, and steps taken before the problem occurred. This will help the engineering team investigate without repeatedly requesting basic information. Do not ask customers to send passwords. For cases involving unexpected shutdowns, also request the event log if it can be exported safely. The new form is on the support portal. A fifteen-minute walkthrough will be held online this Thursday at ten."
+    }
+  ],
+  "imageSha256": null
+}

@@ -1,0 +1,204 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Independent final text adjudication, EN/ZH options, complete rationale and one correct answer. Resolve which list is needed by following the immediately preceding updated visitor badges request.",
+    "audio": "Exact retained verified cue, spoken prompt, shared passage and practice sources; byte/range/role matched against raw and actual Opus receipts. Only bilingual options and active question identity revised, not any spoken word.",
+    "association": "Exact active final question/group and own verified audio rows. No browser or publication claim.",
+    "scopeApprovalSha256": "0978483f5a257fa3ea435bbe630dcd276e2fb79a526d0701ef5655a19d13d0e0"
+  },
+  "activeQuestion": {
+    "id": "t02-q067-r2",
+    "testId": "test-02",
+    "number": 67,
+    "part": 3,
+    "groupId": "t02-g043",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "in advance"
+    ],
+    "prompt": "What does the woman need by three?",
+    "promptZh": "女方三點前需要什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The names of staff assigned to guide the tour.",
+        "zh": "負責導覽的工作人員名單。",
+        "whyZh": "她接下來負責更新訪客識別證，不是安排導覽人員。"
+      },
+      {
+        "id": "B",
+        "text": "The final visitor list, so she can update the badges.",
+        "zh": "最後確認的訪客名單，方便她更新訪客識別證。",
+        "whyZh": "對方先請她更新訪客識別證，她答應後請對方三點前給最後確認的名單。"
+      },
+      {
+        "id": "C",
+        "text": "The list of people who will lead the question session.",
+        "zh": "負責帶領問答的人員名單。",
+        "whyZh": "問答會移到午餐後；她要的名單是為了更新訪客識別證。"
+      },
+      {
+        "id": "D",
+        "text": "The client’s contact list for sending the advance slides.",
+        "zh": "用來先寄送簡報投影片的客戶聯絡名單。",
+        "whyZh": "雖然會先寄投影片，但她是在答應更新訪客識別證後才要求名單。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "對方先請她更新訪客識別證，她答應後請對方三點前給最後確認的名單。",
+    "evidence": "Can you update the visitor badges? | Yes. Please send me the final list of names before three today.",
+    "vocabulary": [
+      {
+        "term": "in advance",
+        "zh": "事先；提前",
+        "note": "send slides in advance 指在活動前先寄出簡報。"
+      },
+      {
+        "term": "assembly line",
+        "zh": "組裝線",
+        "note": "以工作站或步驟安排產品組裝的生產線。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t02-q067",
+    "testId": "test-02",
+    "number": 67,
+    "part": 3,
+    "groupId": "t02-g043",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "in advance"
+    ],
+    "prompt": "What does the woman need by three?",
+    "promptZh": "女方三點前需要什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The lunch bill.",
+        "zh": "午餐帳單。",
+        "whyZh": "未要求帳單。"
+      },
+      {
+        "id": "B",
+        "text": "The final visitor name list.",
+        "zh": "最終訪客名單。",
+        "whyZh": "她需要此名單來更新訪客證。"
+      },
+      {
+        "id": "C",
+        "text": "The client's product samples.",
+        "zh": "客戶產品樣品。",
+        "whyZh": "未提收取樣品。"
+      },
+      {
+        "id": "D",
+        "text": "A printed factory map.",
+        "zh": "紙本工廠地圖。",
+        "whyZh": "未要求地圖。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "她需要此名單來更新訪客證。",
+    "evidence": "send me the final list of names before three today",
+    "vocabulary": [
+      {
+        "term": "in advance",
+        "zh": "事先；提前",
+        "note": "send slides in advance 指在活動前先寄出簡報。"
+      },
+      {
+        "term": "assembly line",
+        "zh": "組裝線",
+        "note": "以工作站或步驟安排產品組裝的生產線。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g043",
+    "testId": "test-02",
+    "part": 3,
+    "title": "A client visit agenda",
+    "titleZh": "客戶來訪議程",
+    "topic": "business",
+    "passage": "Man: The client's flight now arrives at ten instead of eight. We will not have time for both the factory tour and the morning presentation.\nWoman: The client asked specifically to see the assembly line. Let us keep the tour and send the presentation slides in advance.\nMan: All right. I will move the question session to after lunch. Can you update the visitor badges?\nWoman: Yes. Please send me the final list of names before three today.",
+    "passageZh": "男：客戶班機現在改為十點抵達，而不是八點。我們來不及同時安排工廠導覽和上午簡報。\n女：客戶特別要求看組裝線。我們保留導覽，並提前寄出簡報。\n男：好。我會把問答時段改到午餐後。你可以更新訪客證嗎？\n女：可以。請在今天三點前寄給我最終名單。",
+    "audioScript": "The client's flight now arrives at ten instead of eight. We will not have time for both the factory tour and the morning presentation.\nThe client asked specifically to see the assembly line. Let us keep the tour and send the presentation slides in advance.\nAll right. I will move the question session to after lunch. Can you update the visitor badges?\nYes. Please send me the final list of names before three today.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "The client's flight now arrives at ten instead of eight. We will not have time for both the factory tour and the morning presentation."
+      },
+      {
+        "voice": "female",
+        "text": "The client asked specifically to see the assembly line. Let us keep the tour and send the presentation slides in advance."
+      },
+      {
+        "voice": "male",
+        "text": "All right. I will move the question session to after lunch. Can you update the visitor badges?"
+      },
+      {
+        "voice": "female",
+        "text": "Yes. Please send me the final list of names before three today."
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/65/656eeba61403cf941bfb69bccdb51d7b5848a1f0dc94d77c2daa24c1cabada1c.ogg",
+    "duration": 32.736,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-HK",
+        "role": "male",
+        "modelVoice": "en-HK-SamNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-HK",
+        "role": "female",
+        "modelVoice": "en-HK-YanNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 33.236
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/79/79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d.ogg",
+      "start": 60.36688,
+      "end": 64.48779,
+      "assetSha256": "0cc2825c2157ae55d45124e7d33561c573c3f35054722a3eecbb29071cf72a3d",
+      "speech": "Questions 65 through 67. Listen to the conversation."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/opus-hq56-96-v2/65/656eeba61403cf941bfb69bccdb51d7b5848a1f0dc94d77c2daa24c1cabada1c.ogg",
+      "start": 0.5,
+      "end": 33.236,
+      "assetSha256": "0705b3fd9adfc4e5ea9e261d4b3158b034de664b5affb602b40c0fc16ba48695",
+      "speech": "The client's flight now arrives at ten instead of eight. We will not have time for both the factory tour and the morning presentation.\nThe client asked specifically to see the assembly line. Let us keep the tour and send the presentation slides in advance.\nAll right. I will move the question session to after lunch. Can you update the visitor badges?\nYes. Please send me the final list of names before three today."
+    },
+    {
+      "mode": "question",
+      "path": "audio/opus-hq56-96-v2/7a/7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe.ogg",
+      "start": 3.743,
+      "end": 6.67333,
+      "assetSha256": "e66a88e84467932c0c9493f7c7ae999faec581414366e4a4a34be8bf0081cf66",
+      "speech": "Number 67. What does the woman need by three?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/opus-hq56-96-v2/65/656eeba61403cf941bfb69bccdb51d7b5848a1f0dc94d77c2daa24c1cabada1c.ogg",
+      "start": 0.5,
+      "end": 33.236,
+      "assetSha256": "0705b3fd9adfc4e5ea9e261d4b3158b034de664b5affb602b40c0fc16ba48695",
+      "speech": "The client's flight now arrives at ten instead of eight. We will not have time for both the factory tour and the morning presentation.\nThe client asked specifically to see the assembly line. Let us keep the tour and send the presentation slides in advance.\nAll right. I will move the question session to after lunch. Can you update the visitor badges?\nYes. Please send me the final list of names before three today."
+    }
+  ],
+  "imageSha256": null
+}

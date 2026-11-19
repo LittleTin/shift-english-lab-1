@@ -1,0 +1,1913 @@
+{
+  "status": "qualified-offline-work-replay-not-a-browser-gate-or-release-lock",
+  "inputPackSha256": "492638b02c7f8fbf5da9ecc7b296443fa717d2750e1ec19dda41b9984c22dfea",
+  "outputPackSha256": "a615c4ea295e70a230cfaa25a739685460fd0ea0b0419146b832f1237587ebed",
+  "newQuestions": {
+    "35": {
+      "beforeSha256": "1579adb6ab62132bb0e77fb99fcf8485bc71427c30b6ed6239b3fd2ff4dea06a",
+      "active": {
+        "id": "t02-q035-r2",
+        "testId": "test-02",
+        "number": 35,
+        "part": 3,
+        "groupId": "t02-g033",
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "error log"
+        ],
+        "prompt": "Why is the older version worth keeping for tomorrow?",
+        "promptZh": "為什麼值得保留舊版供明天使用？",
+        "options": [
+          {
+            "id": "A",
+            "text": "It automatically saves the error logs.",
+            "zh": "它會自動儲存錯誤記錄。",
+            "whyZh": "錯誤記錄須先另外匯出。"
+          },
+          {
+            "id": "B",
+            "text": "It showed the same problem on the spare unit.",
+            "zh": "它在備用機上出現相同問題。",
+            "whyZh": "備用機上的舊版仍能運作。"
+          },
+          {
+            "id": "C",
+            "text": "It provides a working fallback for the customer demo.",
+            "zh": "它能為客戶展示提供可用的備案。",
+            "whyZh": "更新後展示機故障，但備用機上的舊版可用，隔天早上的展示可用舊版當備案。"
+          },
+          {
+            "id": "D",
+            "text": "It lets the team skip the investigation.",
+            "zh": "它能讓團隊省去調查。",
+            "whyZh": "還要留一台故障機供後續調查。"
+          }
+        ],
+        "answer": "C",
+        "explanationZh": "更新後展示機故障，但備用機上的舊版可用，隔天早上的展示可用舊版當備案。",
+        "evidence": "Three demonstration units stopped responding after yesterday's firmware update. The older version still works on the spare unit. | Yes. Should I restore the earlier version afterward? We have a customer demonstration tomorrow morning. | Yes, once the logs are saved. Keep one failed unit unchanged for further investigation.",
+        "vocabulary": [
+          {
+            "term": "fallback",
+            "zh": "備案",
+            "note": "原做法失效時可採用的替代方案。"
+          }
+        ],
+        "revision": 2
+      }
+    },
+    "36": {
+      "beforeSha256": "2a33e55b5aa0f665ca2445fef137879513d7d6736a400748f982832d49ea99ed",
+      "active": {
+        "id": "t02-q036-r2",
+        "testId": "test-02",
+        "number": 36,
+        "part": 3,
+        "groupId": "t02-g033",
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "error log"
+        ],
+        "prompt": "An engineer wants to restore a unit now. What would that risk losing?",
+        "promptZh": "工程師想立刻還原其中一台機器。這樣可能失去什麼？",
+        "options": [
+          {
+            "id": "A",
+            "text": "Evidence the software team needs to recreate the failure.",
+            "zh": "軟體團隊重現故障所需的證據。",
+            "whyZh": "要先匯出錯誤記錄給軟體團隊重現問題；未儲存即還原，可能會失去這些證據。"
+          },
+          {
+            "id": "B",
+            "text": "The older version that works on the spare unit.",
+            "zh": "備用機上仍可運作的舊版。",
+            "whyZh": "備用機已有可用舊版，還原一台故障機不會改變備用機。"
+          },
+          {
+            "id": "C",
+            "text": "The customer’s reservation for tomorrow.",
+            "zh": "客戶明天的預約。",
+            "whyZh": "對話未說還原會取消展示。"
+          },
+          {
+            "id": "D",
+            "text": "The ability to keep any other unit unchanged.",
+            "zh": "保留其他機器狀態不變的機會。",
+            "whyZh": "留一台不動是另一項要求，還原某台不代表其他台也一定會被改動。"
+          }
+        ],
+        "answer": "A",
+        "explanationZh": "要先匯出錯誤記錄給軟體團隊重現問題；未儲存即還原，可能會失去這些證據。",
+        "evidence": "Three demonstration units stopped responding after yesterday's firmware update. The older version still works on the spare unit. | Before we change anything, can you export the error logs? The software team needs them to reproduce the issue. | Yes, once the logs are saved. Keep one failed unit unchanged for further investigation.",
+        "vocabulary": [
+          {
+            "term": "restore",
+            "zh": "還原",
+            "note": "把設備或軟體恢復到原先的版本或狀態。"
+          }
+        ],
+        "revision": 2
+      }
+    },
+    "37": {
+      "beforeSha256": "ba3889ca16170ddbbf020df932854336010777be97fda31f27734cc6aceef496",
+      "active": {
+        "id": "t02-q037-r2",
+        "testId": "test-02",
+        "number": 37,
+        "part": 3,
+        "groupId": "t02-g033",
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "error log"
+        ],
+        "prompt": "What should happen to one failed unit?",
+        "promptZh": "其中一台故障機應如何處理？",
+        "options": [
+          {
+            "id": "A",
+            "text": "Leave it as it failed for investigation, even if the others are restored after logging.",
+            "zh": "即使記錄儲存後還原其他機器，也讓這一台保持故障狀態供調查。",
+            "whyZh": "即使其他故障機在記錄存好後可以還原，這台仍原樣保留給軟體團隊調查。"
+          },
+          {
+            "id": "B",
+            "text": "Restore it before exporting logs, then reserve it for investigation.",
+            "zh": "先還原這台再匯出記錄，之後留它調查。",
+            "whyZh": "變更前須先匯出記錄；被保留的這台還不能先還原。"
+          },
+          {
+            "id": "C",
+            "text": "Keep it unchanged only until the logs are exported, then restore it as well.",
+            "zh": "只保留到記錄匯出為止，之後也把這台還原。",
+            "whyZh": "保留故障機是為了後續調查，並非只留到記錄儲存完。"
+          },
+          {
+            "id": "D",
+            "text": "Repair it immediately and keep the working spare unchanged instead.",
+            "zh": "立刻修好這台，改保留可用備用機不動。",
+            "whyZh": "應保留的是故障機，不是原本就能用的備用機。"
+          }
+        ],
+        "answer": "A",
+        "explanationZh": "即使其他故障機在記錄存好後可以還原，這台仍原樣保留給軟體團隊調查。",
+        "evidence": "Before we change anything, can you export the error logs? | Yes, once the logs are saved. Keep one failed unit unchanged for further investigation.",
+        "vocabulary": [
+          {
+            "term": "error log",
+            "zh": "錯誤紀錄",
+            "note": "記錄錯誤事件與狀態，協助除錯。"
+          },
+          {
+            "term": "reproduce an issue",
+            "zh": "重現問題",
+            "note": "在可控制的條件下再次觸發相同問題。"
+          }
+        ],
+        "revision": 2
+      }
+    },
+    "39": {
+      "beforeSha256": "010ff94b00a5530e629763a2d6164824923dcd0b6fe12b8cc1e4a7130dd1cd16",
+      "active": {
+        "id": "t02-q039-r2",
+        "testId": "test-02",
+        "number": 39,
+        "part": 3,
+        "groupId": "t02-g034",
+        "topic": "manufacturing",
+        "difficulty": "intermediate",
+        "tags": [
+          "pilot build"
+        ],
+        "prompt": "What can the team do on Monday?",
+        "promptZh": "團隊星期一可以做什麼？",
+        "options": [
+          {
+            "text": "Inspect the housings only after the new fixture is checked.",
+            "zh": "等新治具檢查完才檢查外殼。",
+            "whyZh": "檢查外殼不需治具，星期一即可進行。",
+            "id": "A"
+          },
+          {
+            "text": "Inspect the housings and assemble the full batch that day.",
+            "zh": "當天檢查外殼並完成整批組裝。",
+            "whyZh": "外殼可先檢查，但星期一治具還沒準備好，不能完成整批組裝。",
+            "id": "B"
+          },
+          {
+            "text": "Inspect the housings without the fixture and leave assembly for later.",
+            "zh": "不用治具先檢查外殼，組裝留待之後。",
+            "whyZh": "外殼檢查不依賴治具，可先進行；組裝要等治具準備好且完成檢查。",
+            "id": "C"
+          },
+          {
+            "text": "Inspect the housings using the new fixture as soon as it arrives that day.",
+            "zh": "當天治具一到就用它檢查外殼。",
+            "whyZh": "治具星期二才會準備好；外殼檢查也不需要它。",
+            "id": "D"
+          }
+        ],
+        "answer": "C",
+        "explanationZh": "外殼檢查不依賴治具，可先進行；組裝要等治具準備好且完成檢查。",
+        "evidence": "Can the team start with the housing inspection on Monday? That does not require the fixture. ... Assembly can move to Wednesday, after the fixture has been checked.",
+        "vocabulary": [
+          {
+            "term": "pilot build",
+            "zh": "試產",
+            "note": "正式量產前的小批次製作，用於驗證設計與製程準備。"
+          },
+          {
+            "term": "fixture",
+            "zh": "治具",
+            "note": "本題用於組裝的定位或輔助工具。"
+          }
+        ],
+        "revision": 2
+      }
+    },
+    "43": {
+      "beforeSha256": "06ea43a0b6bab6695cb06e172c1d629d892f67fd5a1494eb1552873167699061",
+      "active": {
+        "id": "t02-q043-r2",
+        "testId": "test-02",
+        "number": 43,
+        "part": 3,
+        "groupId": "t02-g035",
+        "topic": "manufacturing",
+        "difficulty": "intermediate",
+        "tags": [
+          "packing list"
+        ],
+        "prompt": "What is required before relabeling?",
+        "promptZh": "重貼標籤前需要什麼？",
+        "options": [
+          {
+            "text": "Treat the correct packing list as approval and start relabeling.",
+            "zh": "把正確的裝箱清單視為核准，開始重貼標籤。",
+            "whyZh": "裝箱清單正確不等於品管已核准更正。",
+            "id": "A"
+          },
+          {
+            "text": "Check the print history and relabel as soon as an old template is found.",
+            "zh": "查明列印紀錄後，一發現用過舊版型就重貼。",
+            "whyZh": "即使查到舊版型，重貼前仍須取得品管核准。",
+            "id": "B"
+          },
+          {
+            "text": "Relabel to match the packing list and tell quality afterward.",
+            "zh": "先依裝箱清單重貼，之後再通知品管。",
+            "whyZh": "品管核准必須在重貼之前，不是事後通知。",
+            "id": "C"
+          },
+          {
+            "text": "Have quality approve the correction even though the packing list is already right.",
+            "zh": "即使裝箱清單本來就正確，仍要先由品管核准更正。",
+            "whyZh": "清單正確可用於確認差異，但重貼前仍需由品管核准更正。",
+            "id": "D"
+          }
+        ],
+        "answer": "D",
+        "explanationZh": "清單正確可用於確認差異，但重貼前仍需由品管核准更正。",
+        "evidence": "The list is correct. The label printer may have used an old template. ... Do not relabel anything until the quality team approves the correction.",
+        "vocabulary": [
+          {
+            "term": "packing list",
+            "zh": "裝箱單",
+            "note": "列示包裝內貨物與數量的文件。"
+          },
+          {
+            "term": "holding area",
+            "zh": "暫存區",
+            "note": "在等待確認或處置期間暫時放置物品的區域。"
+          }
+        ],
+        "revision": 2
+      }
+    },
+    "48": {
+      "beforeSha256": "803950e7770d1ac69f96b455c3b519b416fc25003baf3d0b21d28e6cbebd09ba",
+      "active": {
+        "id": "t02-q048-r2",
+        "testId": "test-02",
+        "number": 48,
+        "part": 3,
+        "groupId": "t02-g037",
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "read-only access"
+        ],
+        "prompt": "What does the woman suggest may be the cause?",
+        "promptZh": "女方認為可能的原因是什麼？",
+        "options": [
+          {
+            "text": "The server is working, but his account can open files without adding them.",
+            "zh": "伺服器正常，但他的帳號可查看檔案、不能新增檔案。",
+            "whyZh": "他開得了資料夾卻不能上傳，且伺服器運作中，符合只有讀取權限。",
+            "id": "A"
+          },
+          {
+            "text": "His account can add files, but the server outage prevents it for now.",
+            "zh": "他的帳號可以新增檔案，但伺服器停機暫時擋住上傳。",
+            "whyZh": "女方明說伺服器正常，沒有說帳號已具備寫入權限。",
+            "id": "B"
+          },
+          {
+            "text": "His account cannot view the folder, but it can submit the report.",
+            "zh": "他的帳號不能查看資料夾，但可以提交報告。",
+            "whyZh": "實際症狀相反：可以開啟資料夾，卻不能上傳。",
+            "id": "C"
+          },
+          {
+            "text": "The server is online, but the folder already contains the approved report.",
+            "zh": "伺服器正常，但資料夾裡已經有核准過的那份報告。",
+            "whyZh": "對話只提到經理請他加入報告，沒有說報告已存在。",
+            "id": "D"
+          }
+        ],
+        "answer": "A",
+        "explanationZh": "他開得了資料夾卻不能上傳，且伺服器運作中，符合只有讀取權限。",
+        "evidence": "I can open the project folder, but I cannot upload the validation report. Is the server down? ... The server is running. Your account may have read-only access.",
+        "vocabulary": [
+          {
+            "term": "read-only access",
+            "zh": "唯讀權限",
+            "note": "可讀取但不能修改或新增內容的權限。"
+          },
+          {
+            "term": "write access",
+            "zh": "寫入權限",
+            "note": "允許新增或修改資料的權限。"
+          }
+        ],
+        "revision": 2
+      }
+    },
+    "50": {
+      "beforeSha256": "e522c9983a1e8b04b169032c9785d461f0d8cd41ec41c87d8c3ffcaf10e0ab5b",
+      "active": {
+        "id": "t02-q050-r2",
+        "testId": "test-02",
+        "number": 50,
+        "part": 3,
+        "groupId": "t02-g038",
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "reserve"
+        ],
+        "prompt": "What is the main trade-off between the two chamber options?",
+        "promptZh": "兩種測試箱方案主要要取捨什麼？",
+        "options": [
+          {
+            "id": "A",
+            "text": "Bringing fewer samples or running a shorter test.",
+            "zh": "少帶一些樣品，或縮短測試時間。",
+            "whyZh": "兩種方案都沒有提到縮短原定測試時間。"
+          },
+          {
+            "id": "B",
+            "text": "Testing sooner or fitting all the samples.",
+            "zh": "提早開始測試，或容納所有樣品。",
+            "whyZh": "小測試箱週三就能用，但裝不下全部十二件樣品；大測試箱能容納全數，但要等到週五。"
+          },
+          {
+            "id": "C",
+            "text": "Starting on Friday or getting more time in the same chamber.",
+            "zh": "週五開始，或延長同一台測試箱的使用時間。",
+            "whyZh": "提早開始必須改用小測試箱，不是延長同一台的使用時間。"
+          },
+          {
+            "id": "D",
+            "text": "Keeping the chamber available or changing the test plan.",
+            "zh": "維持測試箱可用，或修改測試計畫。",
+            "whyZh": "對話比較的是容量與可用時間，沒有說要修改計畫。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "小測試箱週三就能用，但裝不下全部十二件樣品；大測試箱能容納全數，但要等到週五。",
+        "evidence": "Another team has booked it through Thursday. You could begin Friday morning, or use the smaller chamber on Wednesday. | The smaller one cannot hold all twelve samples. Let us choose Friday, and I will notify the project manager about the revised completion date.",
+        "vocabulary": [
+          {
+            "term": "trade-off",
+            "zh": "取捨",
+            "note": "選擇一項好處時，必須放棄另一項好處。"
+          }
+        ],
+        "revision": 2
+      }
+    },
+    "51": {
+      "beforeSha256": "32b4bfafc22aa2f382fd6119745c74fa1d77851d7313eb639d39f8504e05732e",
+      "active": {
+        "id": "t02-q051-r3",
+        "testId": "test-02",
+        "number": 51,
+        "part": 3,
+        "groupId": "t02-g038",
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "reserve"
+        ],
+        "prompt": "If all samples must be tested together, why would the original completion date change?",
+        "promptZh": "如果所有樣品必須一起測試，為什麼原定完成日期會變？",
+        "options": [
+          {
+            "id": "A",
+            "text": "The team plans to add more samples.",
+            "zh": "團隊打算增加樣品。",
+            "whyZh": "樣品數量仍是十二件。"
+          },
+          {
+            "id": "B",
+            "text": "The test plan must be rewritten at check-in.",
+            "zh": "報到時要重寫測試計畫。",
+            "whyZh": "報到時只須帶測試計畫。"
+          },
+          {
+            "id": "C",
+            "text": "The smaller chamber needs extra setup.",
+            "zh": "小測試箱需要額外設定。",
+            "whyZh": "小測試箱的問題是容量不足，不是設定時間。"
+          },
+          {
+            "id": "D",
+            "text": "The full test cannot start on the originally requested day.",
+            "zh": "全數樣品無法在原本要求的那天開始測試。",
+            "whyZh": "原訂週三開始、測三天；容量足夠的測試箱週五才能用，因此完工日期得往後排。"
+          }
+        ],
+        "answer": "D",
+        "explanationZh": "原訂週三開始、測三天；容量足夠的測試箱週五才能用，因此完工日期得往後排。",
+        "evidence": "We need the reliability chamber for three days, starting Wednesday. Is it available? | Another team has booked it through Thursday. You could begin Friday morning, or use the smaller chamber on Wednesday. | The smaller one cannot hold all twelve samples. Let us choose Friday, and I will notify the project manager about the revised completion date.",
+        "vocabulary": [
+          {
+            "term": "completion date",
+            "zh": "完成日期",
+            "note": "指預計結束整項工作或測試的日期。"
+          }
+        ],
+        "revision": 3
+      }
+    },
+    "61": {
+      "beforeSha256": "f22e1179b49e59cedad48ade9f58506ecb1bf961a7f133aa66e3a398eae76a0e",
+      "active": {
+        "id": "t02-q061-r2",
+        "testId": "test-02",
+        "number": 61,
+        "part": 3,
+        "groupId": "t02-g041",
+        "topic": "daily",
+        "difficulty": "intermediate",
+        "tags": [
+          "set menu"
+        ],
+        "prompt": "What will remain the same?",
+        "promptZh": "哪一項維持不變？",
+        "options": [
+          {
+            "text": "The set menu stays, but the restaurant moves the booking to dinner.",
+            "zh": "維持套餐，但餐廳把訂位改到晚餐。",
+            "whyZh": "保留套餐沒錯，但仍是中午訂位，沒有改到晚餐。",
+            "id": "A"
+          },
+          {
+            "text": "The reservation stays at noon, but everyone orders separately.",
+            "zh": "仍在中午用餐，但改成由各人單點。",
+            "whyZh": "用餐時間沒變，男方也明確表示維持套餐。",
+            "id": "B"
+          },
+          {
+            "text": "The noon booking time and the set menu both stay in place.",
+            "zh": "中午的訂位時間與套餐都維持不變。",
+            "whyZh": "原本及修改後都訂中午，男方也選擇維持套餐。",
+            "id": "C"
+          },
+          {
+            "text": "The booking remains at noon and the restaurant omits all dietary notes.",
+            "zh": "仍維持中午訂位，餐廳不加任何飲食備註。",
+            "whyZh": "時間維持不變，但餐廳會註記有一位客人不能吃花生。",
+            "id": "D"
+          }
+        ],
+        "answer": "C",
+        "explanationZh": "原本及修改後都訂中午，男方也選擇維持套餐。",
+        "evidence": "We will keep the set menu. ... Your revised reservation is for four at noon, under Mr. Lin.",
+        "vocabulary": [
+          {
+            "term": "set menu",
+            "zh": "套餐",
+            "note": "由餐廳組合的一套菜色。"
+          },
+          {
+            "term": "under a name",
+            "zh": "登記在某人名下",
+            "note": "訂位時常以姓名查詢紀錄。"
+          }
+        ],
+        "revision": 2
+      }
+    },
+    "66": {
+      "beforeSha256": "a500a5fbe7f9f1859a7fba62cb4702a2192d240f93e21fe618d101137fbd2dca",
+      "active": {
+        "id": "t02-q066-r2",
+        "testId": "test-02",
+        "number": 66,
+        "part": 3,
+        "groupId": "t02-g043",
+        "topic": "business",
+        "difficulty": "intermediate",
+        "tags": [
+          "in advance"
+        ],
+        "prompt": "What will the speakers keep in the schedule?",
+        "promptZh": "兩人會保留哪項行程？",
+        "options": [
+          {
+            "text": "Keep the live morning presentation, and replace the line tour with slides.",
+            "zh": "保留上午現場簡報，用投影片取代產線參觀。",
+            "whyZh": "客戶指定看產線，保留的是參觀；提前寄送的是簡報投影片。",
+            "id": "A"
+          },
+          {
+            "text": "Keep only the slides in the visit agenda and drop the in-person tour.",
+            "zh": "參訪行程只保留投影片，取消實地參觀。",
+            "whyZh": "他們要保留產線實地參觀，不是只提供投影片。",
+            "id": "B"
+          },
+          {
+            "text": "Keep the assembly-line tour and send the presentation slides ahead of the visit.",
+            "zh": "保留產線參觀，並在參訪前寄出簡報投影片。",
+            "whyZh": "客戶特別想看產線，所以保留參觀；原本要做的簡報則改為事先寄送投影片。",
+            "id": "C"
+          },
+          {
+            "text": "Keep the assembly-line tour but hold the question session before lunch.",
+            "zh": "保留產線參觀，但把問答排在午餐前。",
+            "whyZh": "保留產線參觀沒錯，但問答移到午餐後，不是午餐前。",
+            "id": "D"
+          }
+        ],
+        "answer": "C",
+        "explanationZh": "客戶特別想看產線，所以保留參觀；原本要做的簡報則改為事先寄送投影片。",
+        "evidence": "The client asked specifically to see the assembly line. Let us keep the tour and send the presentation slides in advance. ... I will move the question session to after lunch.",
+        "vocabulary": [
+          {
+            "term": "in advance",
+            "zh": "事先；提前",
+            "note": "send slides in advance 指在活動前先寄出簡報。"
+          },
+          {
+            "term": "assembly line",
+            "zh": "組裝線",
+            "note": "以工作站或步驟安排產品組裝的生產線。"
+          }
+        ],
+        "revision": 2
+      }
+    },
+    "67": {
+      "beforeSha256": "c8cadacf80abfa891044b7863fe110763ff19e0dcb5e267a782429a43e9752de",
+      "active": {
+        "id": "t02-q067-r2",
+        "testId": "test-02",
+        "number": 67,
+        "part": 3,
+        "groupId": "t02-g043",
+        "topic": "business",
+        "difficulty": "intermediate",
+        "tags": [
+          "in advance"
+        ],
+        "prompt": "What does the woman need by three?",
+        "promptZh": "女方三點前需要什麼？",
+        "options": [
+          {
+            "id": "A",
+            "text": "The names of staff assigned to guide the tour.",
+            "zh": "負責導覽的工作人員名單。",
+            "whyZh": "她接下來負責更新訪客識別證，不是安排導覽人員。"
+          },
+          {
+            "id": "B",
+            "text": "The final visitor list, so she can update the badges.",
+            "zh": "最後確認的訪客名單，方便她更新訪客識別證。",
+            "whyZh": "對方先請她更新訪客識別證，她答應後請對方三點前給最後確認的名單。"
+          },
+          {
+            "id": "C",
+            "text": "The list of people who will lead the question session.",
+            "zh": "負責帶領問答的人員名單。",
+            "whyZh": "問答會移到午餐後；她要的名單是為了更新訪客識別證。"
+          },
+          {
+            "id": "D",
+            "text": "The client’s contact list for sending the advance slides.",
+            "zh": "用來先寄送簡報投影片的客戶聯絡名單。",
+            "whyZh": "雖然會先寄投影片，但她是在答應更新訪客識別證後才要求名單。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "對方先請她更新訪客識別證，她答應後請對方三點前給最後確認的名單。",
+        "evidence": "Can you update the visitor badges? | Yes. Please send me the final list of names before three today.",
+        "vocabulary": [
+          {
+            "term": "in advance",
+            "zh": "事先；提前",
+            "note": "send slides in advance 指在活動前先寄出簡報。"
+          },
+          {
+            "term": "assembly line",
+            "zh": "組裝線",
+            "note": "以工作站或步驟安排產品組裝的生產線。"
+          }
+        ],
+        "revision": 2
+      }
+    },
+    "78": {
+      "beforeSha256": "0111fa48fd0ab33d7075220f05e5e5ed0d3de89cdb834f5d24773f60fddc8736",
+      "active": {
+        "id": "t02-q078-r2",
+        "testId": "test-02",
+        "number": 78,
+        "part": 4,
+        "groupId": "t02-g047",
+        "topic": "manufacturing",
+        "difficulty": "intermediate",
+        "tags": [
+          "incoming inspection"
+        ],
+        "prompt": "Which material may still be used?",
+        "promptZh": "哪批材料仍可使用？",
+        "options": [
+          {
+            "id": "A",
+            "text": "Any individual cover without visible scratches, even from the held batch.",
+            "zh": "任何沒有明顯刮痕的外蓋，即使來自已停用的批次也可以。",
+            "whyZh": "管理的是整個受影響批次，不是只擋肉眼看得出刮痕的外蓋。"
+          },
+          {
+            "id": "B",
+            "text": "Covers from the earlier cleared batch; a clean-looking cover from the held lot still stays out.",
+            "zh": "可用先前通過檢驗的那批外蓋；已停用批次的外蓋即使看來沒傷也不能用。",
+            "whyZh": "前一批經檢驗通過可用；受影響的批次即使單件外觀無傷也不能投產。"
+          },
+          {
+            "id": "C",
+            "text": "Covers from the current batch once Purchasing schedules replacement delivery.",
+            "zh": "採購排定替換品交貨時程後，就可使用這次到貨的外蓋。",
+            "whyZh": "排定替換品交貨並不會解禁原本被停用的批次。"
+          },
+          {
+            "id": "D",
+            "text": "Both batches, provided the supplier submits a report by Tuesday.",
+            "zh": "只要供應商週二前提交報告，兩批都能用。",
+            "whyZh": "週二是供應商改善報告期限，不是兩批共同的放行期限。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "前一批經檢驗通過可用；受影響的批次即使單件外觀無傷也不能投產。",
+        "evidence": "The affected batch has been placed on hold and will not enter production. | The earlier batch passed inspection and can still be used.",
+        "vocabulary": [
+          {
+            "term": "incoming inspection",
+            "zh": "進料檢驗",
+            "note": "對到貨材料或零件進行的檢查。"
+          },
+          {
+            "term": "corrective action",
+            "zh": "矯正措施",
+            "note": "針對已發生問題的原因採取措施；本題要求供應商提交報告。"
+          }
+        ],
+        "revision": 2
+      }
+    },
+    "84": {
+      "beforeSha256": "0a8f8024c8cf24b016a80ecf54b6db5aec57eb4790a8ef288015f05fc04c9009",
+      "active": {
+        "id": "t02-q084-r2",
+        "testId": "test-02",
+        "number": 84,
+        "part": 4,
+        "groupId": "t02-g049",
+        "topic": "manufacturing",
+        "difficulty": "intermediate",
+        "tags": [
+          "inventory count"
+        ],
+        "prompt": "What should team leaders arrange?",
+        "promptZh": "各組主管應安排什麼？",
+        "options": [
+          {
+            "id": "A",
+            "text": "Assign each requester to check separately; use the label even if a seal is damaged.",
+            "zh": "請每位提出需求的人各自核對；封條損壞仍以箱標為準。",
+            "whyZh": "只須安排一名代表核對，且封條受損時不能直接採用箱標數量。"
+          },
+          {
+            "id": "B",
+            "text": "Send one representative to check with warehouse staff; use the label count only when the seal is intact.",
+            "zh": "安排一位代表和庫房核對；只有封條完好才採用箱標數量。",
+            "whyZh": "組長指定一人與庫房核對。封條完整的箱子可用標示數量，封條受損者不可直接照箱標。"
+          },
+          {
+            "id": "C",
+            "text": "Assign one representative to check with warehouse staff; use all label counts, including boxes with broken seals.",
+            "zh": "安排一位代表和庫房核對；所有箱子都照箱標，包括封條破損的箱子。",
+            "whyZh": "人員分工正確，但不能把破損封條的箱標直接當成正確數量。"
+          },
+          {
+            "id": "D",
+            "text": "Send separate representatives for each box and verify only counts that already match their labels.",
+            "zh": "每箱各派一位代表，只核對與箱標已相符的數量。",
+            "whyZh": "不是每箱各派人；也不能把核對範圍限於看似相符的箱標。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "組長指定一人與庫房核對。封條完整的箱子可用標示數量，封條受損者不可直接照箱標。",
+        "evidence": "From noon to four, we will handle safety emergencies only. | Team leaders should assign one person to confirm quantities with warehouse staff. | For sealed boxes, use the quantity on the label unless the seal is damaged.",
+        "vocabulary": [
+          {
+            "term": "inventory count",
+            "zh": "盤點",
+            "note": "實際核對庫存品項與數量的作業。"
+          },
+          {
+            "term": "resume",
+            "zh": "恢復",
+            "note": "表示暫停後重新開始。"
+          }
+        ],
+        "revision": 2
+      }
+    },
+    "87": {
+      "beforeSha256": "577db3fc16b36d5edd32f553b2dbd22ae5e43dbbebb9f3c2782147b124e017ac",
+      "active": {
+        "id": "t02-q087-r2",
+        "testId": "test-02",
+        "number": 87,
+        "part": 4,
+        "groupId": "t02-g050",
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "support case"
+        ],
+        "prompt": "Which item should staff not request?",
+        "promptZh": "工作人員不應索取哪一項？",
+        "options": [
+          {
+            "id": "A",
+            "text": "Do not request passwords for ordinary cases, but ask for them after an unexpected shutdown.",
+            "zh": "一般案件不要索取密碼，但發生意外關機時可要求提供。",
+            "whyZh": "禁止索取密碼沒有例外；意外關機時可有條件要求的是事件記錄。"
+          },
+          {
+            "id": "B",
+            "text": "Never request event logs, even when an unexpected shutdown log can be exported safely.",
+            "zh": "一律不要索取事件記錄，即使意外關機的記錄可以安全匯出。",
+            "whyZh": "意外關機而且能安全匯出時，應另外要求事件記錄。"
+          },
+          {
+            "id": "C",
+            "text": "Never request passwords; for an unexpected shutdown, request the event log if it can be exported safely.",
+            "zh": "一律不可索取密碼；遇到非預期關機，若事件記錄能安全匯出，就請客戶提供。",
+            "whyZh": "密碼一律不能要求；事件記錄不像密碼，在意外關機且能安全匯出時要另外收集。"
+          },
+          {
+            "id": "D",
+            "text": "Do not request serial numbers if a shutdown log is available.",
+            "zh": "可取得關機記錄時，不要再要求序號。",
+            "whyZh": "裝置序號是每件案件都要有的基本資料，不因另有事件記錄而省略。"
+          }
+        ],
+        "answer": "C",
+        "explanationZh": "密碼一律不能要求；事件記錄不像密碼，在意外關機且能安全匯出時要另外收集。",
+        "evidence": "Starting next week, all technical support cases must include the device serial number, software version, and steps taken before the problem occurred. | Do not ask customers to send passwords. | For cases involving unexpected shutdowns, also request the event log if it can be exported safely.",
+        "vocabulary": [
+          {
+            "term": "support case",
+            "zh": "支援案件",
+            "note": "用來追蹤使用者問題與處理過程的紀錄。"
+          },
+          {
+            "term": "walkthrough",
+            "zh": "操作導覽",
+            "note": "逐步說明如何使用系統或完成流程。"
+          }
+        ],
+        "revision": 2
+      }
+    },
+    "89": {
+      "beforeSha256": "5d1bf2ae477e02fa6436321f81752c81207fc2538677a62e250fa32098a9a6c3",
+      "active": {
+        "id": "t02-q089-r2",
+        "testId": "test-02",
+        "number": 89,
+        "part": 4,
+        "groupId": "t02-g051",
+        "topic": "daily",
+        "difficulty": "intermediate",
+        "tags": [
+          "tire pressure"
+        ],
+        "prompt": "What is the workshop about?",
+        "promptZh": "工作坊主題是什麼？",
+        "options": [
+          {
+            "id": "A",
+            "text": "Bicycle maintenance, including replacing damaged parts without outside help.",
+            "zh": "單車保養，包括不求助就能自行更換受損零件。",
+            "whyZh": "課程教辨識何時需專業維修，不是教大家自己替換受損零件。"
+          },
+          {
+            "id": "B",
+            "text": "Basic bicycle checks and adjustments, plus deciding when a repair needs an expert.",
+            "zh": "單車基本檢查與調整，也學習何時要找專業人士維修。",
+            "whyZh": "課程結合胎壓、座椅調整等基本動作，也教判斷何時應找專業人士。"
+          },
+          {
+            "id": "C",
+            "text": "Bicycle maintenance, mainly choosing and buying a complete toolkit.",
+            "zh": "單車保養，重點是選購整套工具。",
+            "whyZh": "中心提供工具，不要求事前選購，也沒說課程以買工具為主。"
+          },
+          {
+            "id": "D",
+            "text": "Bicycle maintenance, with professionals completing every repair on site.",
+            "zh": "單車保養，由專業人士在現場完成所有維修。",
+            "whyZh": "課程教如何判斷需不需要專業修理，未承諾由專業人士在現場完成所有維修。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "課程結合胎壓、座椅調整等基本動作，也教判斷何時應找專業人士。",
+        "evidence": "Participants will learn to check tire pressure, adjust a seat, and identify when professional repairs are needed. | Tools will be provided, so there is no need to buy any in advance.",
+        "vocabulary": [
+          {
+            "term": "tire pressure",
+            "zh": "胎壓",
+            "note": "輪胎內的氣壓。"
+          },
+          {
+            "term": "participant",
+            "zh": "參加者",
+            "note": "參與活動或課程的人。"
+          }
+        ],
+        "revision": 2
+      }
+    }
+  },
+  "labelOnly": [
+    {
+      "number": 7,
+      "beforeSha256": "0779be0894b46d1d56723d5f3db6972f308958db872647b5678e3904b9bafc24",
+      "level": "foundation"
+    },
+    {
+      "number": 8,
+      "beforeSha256": "86b1ae6670c3f55ffbdcf31e375f4f390405326b76034e51e21cdfa5b9245318",
+      "level": "foundation"
+    },
+    {
+      "number": 9,
+      "beforeSha256": "dfe8fa2ea0471d60df1ba9d5ee6638ccf6201dc3f37c2284aba2b3030c4fa72d",
+      "level": "foundation"
+    },
+    {
+      "number": 10,
+      "beforeSha256": "545a083efef76fb5c7b18182c205498e37e0a6825bda18d05bf76d3a9a37d32f",
+      "level": "foundation"
+    },
+    {
+      "number": 12,
+      "beforeSha256": "87bbc59a68f3db71daba9699c0ec738c9271a67c5ce853104cb6b5c8765ba211",
+      "level": "foundation"
+    },
+    {
+      "number": 15,
+      "beforeSha256": "24db5e41363e740e72e3ef9e73b4d74d0403952df0e0ff390e41ba060ab85d9d",
+      "level": "foundation"
+    },
+    {
+      "number": 17,
+      "beforeSha256": "1ccb9a3938f94074c60a84cce1220acd5c9a405657c28be94b54cfab817c0452",
+      "level": "foundation"
+    },
+    {
+      "number": 22,
+      "beforeSha256": "0b186c3034a2850617e7a8e00d9ea2c4cca00b01b563c10ca7d87cc81d78b1f9",
+      "level": "foundation"
+    },
+    {
+      "number": 23,
+      "beforeSha256": "469aa8a74cf427a41fb9285be3f32a37a581e217c8d44354783c81c2fe7e4e10",
+      "level": "foundation"
+    },
+    {
+      "number": 26,
+      "beforeSha256": "90e443f5eef78bb666bef7743afd4a11fffae6d3c1ed8636a87a4a5e1c65ac08",
+      "level": "intermediate"
+    },
+    {
+      "number": 27,
+      "beforeSha256": "97bd4816f415194b6df4ff751591a2b45c394fc601bf701f3b3552077a9ad2a6",
+      "level": "foundation"
+    },
+    {
+      "number": 30,
+      "beforeSha256": "03bdf36efd3fa74f13309eab48b0581c06747190bf6fb0a30b948d1a7d99084b",
+      "level": "foundation"
+    },
+    {
+      "number": 31,
+      "beforeSha256": "a54df54739cae27edcaf2a4da92ab11da669879826e39f5adeb7159aa8d947a7",
+      "level": "foundation"
+    },
+    {
+      "number": 33,
+      "beforeSha256": "0a0d53ffc10cdf8556dfa1954522c58baffdbe25dd16aef0015adbf665136007",
+      "level": "advanced"
+    },
+    {
+      "number": 34,
+      "beforeSha256": "498ed398f040811ce4825526166b8d1d9affa9a3235316a28e02fc5b9a3aca4c",
+      "level": "foundation"
+    },
+    {
+      "number": 40,
+      "beforeSha256": "96345bd50fbe6854789c03c8f30090e93b795aa6da186ec64d0bc20a59a65b1d",
+      "level": "foundation"
+    },
+    {
+      "number": 42,
+      "beforeSha256": "02245614615034d38abcc5ba792efd3852174c8c1e1d0508d07c1e2301ea6b36",
+      "level": "foundation"
+    },
+    {
+      "number": 46,
+      "beforeSha256": "762b925a5623cf7f4ec7f0b66303519bd6ae4a0d8d5dd4410d4b851517eda701",
+      "level": "foundation"
+    },
+    {
+      "number": 47,
+      "beforeSha256": "23d5bba06997679aabb1dbbfab2994bb1bfde143e86de0433f6483dba781c4a2",
+      "level": "foundation"
+    },
+    {
+      "number": 49,
+      "beforeSha256": "26f021d76546fabe2b7f93ba6b00483aa0c90aaf3774e10ee4a0fdddff08ac6a",
+      "level": "foundation"
+    },
+    {
+      "number": 52,
+      "beforeSha256": "4b0abab5e1a87346799ea0d7664db9475c8d3ded79dfb42c9ad95f41453dc431",
+      "level": "foundation"
+    },
+    {
+      "number": 53,
+      "beforeSha256": "c10cfc0118249fcdacafc470c59b8646ceb6dc9365df4b4ae81e0582fffe7646",
+      "level": "foundation"
+    },
+    {
+      "number": 55,
+      "beforeSha256": "043b87f6354846b1454d9598f1a467c14cd7c33378e5e287e0b57907c8edcbc5",
+      "level": "foundation"
+    },
+    {
+      "number": 59,
+      "beforeSha256": "b742f1a123025c87fd1b4812d751525116701dbbe894229fe46101fcf0264c22",
+      "level": "foundation"
+    },
+    {
+      "number": 60,
+      "beforeSha256": "bb72ebd38b74ae5b65c75b5bd42b1984797c925a05ae1bb7de71b2a24d712ac7",
+      "level": "foundation"
+    },
+    {
+      "number": 68,
+      "beforeSha256": "4350ceff2f37498f6da501acd37951824f3683832a786c7f65d6d65b8894bc27",
+      "level": "foundation"
+    },
+    {
+      "number": 69,
+      "beforeSha256": "623df1f0f1f2221259e1ed723ad97304f353d06c16e3f545fd6266add1262657",
+      "level": "foundation"
+    },
+    {
+      "number": 77,
+      "beforeSha256": "f237419dee02913340e30ed5b5135f1ae9874c0ed26449db1c6c913e437452df",
+      "level": "foundation"
+    },
+    {
+      "number": 79,
+      "beforeSha256": "a2e897ee7ea9e58f0b540f8628d79e9bb10d6451e0f38bb0e678dc5225505a7a",
+      "level": "foundation"
+    },
+    {
+      "number": 80,
+      "beforeSha256": "a3cc354bd85f61f1b33377952eb4e03af201223ab4e7a715964a4a13b65ddd39",
+      "level": "foundation"
+    },
+    {
+      "number": 81,
+      "beforeSha256": "88ad9210000dc778c086f5d01951f887352864189ee345f37dba3aeec3c1ff7b",
+      "level": "foundation"
+    },
+    {
+      "number": 82,
+      "beforeSha256": "ced0e00219a22d695c77d35ddf3d8e0ffe57acd9933c4252843383295dca5b04",
+      "level": "foundation"
+    },
+    {
+      "number": 83,
+      "beforeSha256": "a6ebd3b18dd35944a01af6ac412d9abd928b16ddde7c91b1e0910a2da5d6cbf5",
+      "level": "foundation"
+    },
+    {
+      "number": 86,
+      "beforeSha256": "2038557d0c5fe9069e97c7689b69d1223614d3724fe44158a89cf31ce07a45fd",
+      "level": "foundation"
+    },
+    {
+      "number": 92,
+      "beforeSha256": "afc06885f8a87456c7f907cc664c8d72f4c00fd2fb9cbcbe23cc5ff9a2ded559",
+      "level": "foundation"
+    },
+    {
+      "number": 93,
+      "beforeSha256": "50b96a0cc9ae96b2de54bf18f36ea1e468cee030765a46c39caa1db94486359b",
+      "level": "foundation"
+    },
+    {
+      "number": 98,
+      "beforeSha256": "08e74894eb449542c06613ddbb25d6d13032f50c04fb1dfd949c8f80731352d0",
+      "level": "foundation"
+    },
+    {
+      "number": 100,
+      "beforeSha256": "4b384ca24418269c3e635c36adbc0c86affbd213869cb6d3ea66d0d6c5a03dc5",
+      "level": "foundation"
+    },
+    {
+      "number": 125,
+      "beforeSha256": "521f93ddf1e1a63f06257265b520ebf3f2900ee502897cdaaad4969bbb3a386d",
+      "level": "foundation"
+    },
+    {
+      "number": 126,
+      "beforeSha256": "c026a45c39e7fc72354dcc75623bc3561da7f62e5ad39f3656f7679ffed86ea0",
+      "level": "foundation"
+    },
+    {
+      "number": 127,
+      "beforeSha256": "e0f09006e07736489051555c5a1d06736c2a65a6a86d1a5f89db9043e9b65055",
+      "level": "foundation"
+    },
+    {
+      "number": 128,
+      "beforeSha256": "d4301016dee6216ee5573e03eb7dda1e95ba1f4ad1fc77ceead3f23ce6e36e9b",
+      "level": "foundation"
+    },
+    {
+      "number": 129,
+      "beforeSha256": "a315627974cd777f764c89141ecdc46ec51eec7e2351a2e2ceec19e46fba38d0",
+      "level": "intermediate"
+    },
+    {
+      "number": 130,
+      "beforeSha256": "4cdd2e368fa402110c88288af5afec090826b959d0f63f1cfc0744b4d26b8413",
+      "level": "foundation"
+    },
+    {
+      "number": 131,
+      "beforeSha256": "2f56a80f3a28411f454d9434a8a0a10b8c5ccfe57a0c9a5a76aaa847f1a19869",
+      "level": "foundation"
+    },
+    {
+      "number": 134,
+      "beforeSha256": "205d0a4cd0d28848ec7be71a733f5f47cab10ef67ecf91e648f8ffd37cbf4451",
+      "level": "foundation"
+    },
+    {
+      "number": 135,
+      "beforeSha256": "3c15d4560248e119a00a38584c03d541ca4e1d4f7aedea6b7e69d0fc678f2d3c",
+      "level": "foundation"
+    },
+    {
+      "number": 137,
+      "beforeSha256": "ce691d2681c3cfa150727c463d0b1fb6e6f01174f09fbd5964a77c998e965509",
+      "level": "foundation"
+    },
+    {
+      "number": 138,
+      "beforeSha256": "b45f929c554548bc2c67329eae0667e9a842329648e5112182bf7869a94815d3",
+      "level": "foundation"
+    },
+    {
+      "number": 139,
+      "beforeSha256": "021c89a96bb05400e0249f67c0569803c923f877cdc20e42e280bbb5f7666b85",
+      "level": "foundation"
+    },
+    {
+      "number": 140,
+      "beforeSha256": "22e5c4e53ded899ae2815a21a993a7f137e48072df7e068b2c3dc911521438dc",
+      "level": "foundation"
+    },
+    {
+      "number": 142,
+      "beforeSha256": "b0900b0053bb00b2ad12107d6d53d35baa79771875ed8b0be32ce44dfc84f071",
+      "level": "foundation"
+    },
+    {
+      "number": 143,
+      "beforeSha256": "8ef64893fd8df7c4a6db81bec4407b45a40cc2746ec36b5517fcf3609e0b7a30",
+      "level": "foundation"
+    },
+    {
+      "number": 144,
+      "beforeSha256": "2e956fe541972de134bd174d633c31441a6674249e074da6a3a0d52f8d9124be",
+      "level": "foundation"
+    },
+    {
+      "number": 146,
+      "beforeSha256": "dd29be3caf17c067ea0b34608b6b101303415b9957641d10cb0f9f07bf2d5587",
+      "level": "foundation"
+    },
+    {
+      "number": 150,
+      "beforeSha256": "d956f1fac282694da5b4c41df386d1699f31a01b9b91d3f22a1d1976b047023c",
+      "level": "foundation"
+    },
+    {
+      "number": 151,
+      "beforeSha256": "86a17aeb5e61d576e5f4601cec6ebff6157603ba832489ddbe126f3bbfede3a0",
+      "level": "foundation"
+    },
+    {
+      "number": 152,
+      "beforeSha256": "bdd95037d3bc47804dcf38ba904ad92e861bc94925c6357edbe18e2b9fbbdb07",
+      "level": "foundation"
+    },
+    {
+      "number": 153,
+      "beforeSha256": "ae111b79e8db7d9fd65cd46f464a7df9dea14b9cb765b9bcaa7d372d654b980f",
+      "level": "foundation"
+    },
+    {
+      "number": 154,
+      "beforeSha256": "6aa860950a85285db37de0a3cf1568f02feea51ff1f039de35f1d9f862e4fab1",
+      "level": "foundation"
+    },
+    {
+      "number": 155,
+      "beforeSha256": "f327e764739f6471706736b45704959a620ee88e310ae8578d048513ab027391",
+      "level": "foundation"
+    },
+    {
+      "number": 156,
+      "beforeSha256": "ed08228d5512e7db746a829c48da36070fdbc585fdbcb97bfa575c97b7a0a8c6",
+      "level": "foundation"
+    },
+    {
+      "number": 161,
+      "beforeSha256": "fcfb2056bd2f7c5237d6f79505bacc3565225e346b08b2babb2ac902de1e906f",
+      "level": "foundation"
+    },
+    {
+      "number": 165,
+      "beforeSha256": "ecb88927c4be9291f8fc5af1540a71ee5a191df15768e78626d334300e4c44b2",
+      "level": "foundation"
+    },
+    {
+      "number": 166,
+      "beforeSha256": "b83ae66a30c4180ba4c54f1225854bdcd9907cfc8ce0ab2449538bfafb781ef6",
+      "level": "foundation"
+    },
+    {
+      "number": 168,
+      "beforeSha256": "166bd6b537e23c7ddca27e5b3febbae04dda7df5227801b761dca4241b556025",
+      "level": "foundation"
+    },
+    {
+      "number": 169,
+      "beforeSha256": "7c998d53cf9169ddd5c3fd22e7773784ad0ca64b1243e8f7f9a6c4cc3b38c6a1",
+      "level": "foundation"
+    },
+    {
+      "number": 170,
+      "beforeSha256": "5cefd6e877982a7c1f2a61099c8e31657003110b4ef65ddfcb5c78fb6ac19110",
+      "level": "foundation"
+    },
+    {
+      "number": 175,
+      "beforeSha256": "5fbb48fb9b2017ee70679bc447af65c77d6834de44c910ebf67f56844377d0da",
+      "level": "foundation"
+    },
+    {
+      "number": 179,
+      "beforeSha256": "f2b014486186b4ec23b7b7fdd7a4fc8f400dc5751cabdd62d780fc8be94559eb",
+      "level": "foundation"
+    },
+    {
+      "number": 181,
+      "beforeSha256": "e20b040f9e5390f7910454b54ef3c1bfd48da6a005970412f6cad88776f36ceb",
+      "level": "advanced"
+    },
+    {
+      "number": 183,
+      "beforeSha256": "99b85c0b7f4076b7fe00c6cb2ffd37e710c2f2d03f6e318081291f2dd0ceda12",
+      "level": "advanced"
+    },
+    {
+      "number": 184,
+      "beforeSha256": "e1fef5ef3c60ef82b790d50d2ed83f74ce2bcf215a5e4ff546bb8270258e34e0",
+      "level": "advanced"
+    },
+    {
+      "number": 185,
+      "beforeSha256": "55c0904693ce4051524554cc2676cebbe1a553c5fd903a79a3bf27e620e76142",
+      "level": "advanced"
+    },
+    {
+      "number": 187,
+      "beforeSha256": "f5b6ab154aff9d466333bffab4fd2d3274a71b5dc05c4a6116fb78d2dcafc487",
+      "level": "foundation"
+    },
+    {
+      "number": 188,
+      "beforeSha256": "a464220bed40dc0f3ff740d7c9d30384d07afff0a5075f256f93103b817d87c8",
+      "level": "advanced"
+    },
+    {
+      "number": 189,
+      "beforeSha256": "8f659040d34b2c769e7d0d1ec14ae1e68f90cd4214cd41a6dea2b0459135fd58",
+      "level": "advanced"
+    },
+    {
+      "number": 190,
+      "beforeSha256": "bf57f18e24a0e59c044c835238231bd70f1e90dcd15eefb9df8bbd501d0e2da9",
+      "level": "foundation"
+    },
+    {
+      "number": 191,
+      "beforeSha256": "a291f024486fb430f3355602fe86d540e1cbf4de597fe9a1d2fad3641065701d",
+      "level": "foundation"
+    },
+    {
+      "number": 192,
+      "beforeSha256": "b56e1f0764fb0d2a8af3ddeb02fbbfa976d547b5c35dd57fc1c37305446d8a7e",
+      "level": "foundation"
+    },
+    {
+      "number": 193,
+      "beforeSha256": "00fcaf518db83acf73b3eee20a3fba4852bc38ecbcac73939e458d7e27c53b5d",
+      "level": "foundation"
+    },
+    {
+      "number": 195,
+      "beforeSha256": "6c757f72b11e32c4fd4552b1145fba8f1c948c0428feaf4e54b67f61feb10c78",
+      "level": "foundation"
+    },
+    {
+      "number": 196,
+      "beforeSha256": "bc0da851dd2a2c4e7f3a6aa2ab32c149c9dc49b1869d0e79dba7ddfdbde54823",
+      "level": "foundation"
+    },
+    {
+      "number": 197,
+      "beforeSha256": "60c521822ecc951b8e409ff0546a00ee934d2e6b4d6a9bea62f4a7ae0a55ae83",
+      "level": "foundation"
+    },
+    {
+      "number": 198,
+      "beforeSha256": "9e3ae4a83e93c6eeafc4f70d87f9d5cece345a5c6d1090122820b0ceb8a8bde3",
+      "level": "foundation"
+    },
+    {
+      "number": 199,
+      "beforeSha256": "d29e9aed7024cdaa890d994ae3b49c75fac6d8a6153ebb4cc283804f271b37ab",
+      "level": "foundation"
+    },
+    {
+      "number": 200,
+      "beforeSha256": "bf17c98fee3368925916a8dde0a92f54833b2f755b8d6e6fff64fb819e1472f0",
+      "level": "foundation"
+    }
+  ],
+  "frames": [
+    {
+      "index": 108,
+      "beforeSha256": "52290dbc0273e71fe5e7bde5eab730a30cea75c0ab5ec5b0c6a705cfd6d70686",
+      "active": {
+        "src": "audio/exams/test-02/questions/Q035/formal-stem-medium-9879e9044b0a.ogg",
+        "start": 0,
+        "end": 5.3875,
+        "duration": 5.3875,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g033",
+        "questionId": "t02-q035-r2",
+        "at": 989.94439
+      }
+    },
+    {
+      "index": 109,
+      "beforeSha256": "e321b7d1243abbbda25ccfa416a7351496af6f6a378e92dc009f865a482e26b8",
+      "active": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 7.71384,
+        "part": 3,
+        "groupId": "t02-g033",
+        "questionId": "t02-q035-r2",
+        "at": 995.33189
+      }
+    },
+    {
+      "index": 110,
+      "beforeSha256": "21d00c6a7e4352c301f27eb1a719bea2c1bace7e428072f3a4524ff0070ee3d8",
+      "active": {
+        "src": "audio/exams/test-02/questions/Q036/formal-stem-medium-0b2e286d0434.ogg",
+        "start": 0,
+        "end": 7.4,
+        "duration": 7.4,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g033",
+        "questionId": "t02-q036-r2",
+        "at": 1003.04573
+      }
+    },
+    {
+      "index": 111,
+      "beforeSha256": "7ec31495addc8290536c6c9a8624dd6ce3aa1b3769f5cf7fee8266080bd679f0",
+      "active": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 7.71384,
+        "part": 3,
+        "groupId": "t02-g033",
+        "questionId": "t02-q036-r2",
+        "at": 1010.44573
+      }
+    },
+    {
+      "index": 112,
+      "beforeSha256": "3259c2eaec78e4bc0d26cbbd6a629393eb52c2caef65b44147d9c2bd83b6fca4",
+      "active": {
+        "src": "audio/opus-hq56-96-v2/10/1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8.ogg",
+        "start": 65.35329,
+        "end": 68.61713,
+        "duration": 3.26383,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g033",
+        "questionId": "t02-q037-r2",
+        "at": 1018.15957
+      }
+    },
+    {
+      "index": 113,
+      "beforeSha256": "82e1f4c6269db1326dfaf492545d874102b0eacd6bd308b69a4d3fb7836d2080",
+      "active": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 3,
+        "groupId": "t02-g033",
+        "questionId": "t02-q037-r2",
+        "at": 1021.4234
+      }
+    },
+    {
+      "index": 118,
+      "beforeSha256": "e280663a28a07dc0b73052bff75de97e1fcb24f147b54a20cefee189eb616614",
+      "active": {
+        "src": "audio/opus-hq56-96-v2/50/50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c.ogg",
+        "start": 7.56479,
+        "end": 10.40592,
+        "duration": 2.84112,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g034",
+        "questionId": "t02-q039-r2",
+        "at": 1079.34241
+      }
+    },
+    {
+      "index": 119,
+      "beforeSha256": "96ff9bbdeffa334c88053c9aebd5618b8d8c394c110f115437faae983440f2b2",
+      "active": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 3,
+        "groupId": "t02-g034",
+        "questionId": "t02-q039-r2",
+        "at": 1082.18353
+      }
+    },
+    {
+      "index": 128,
+      "beforeSha256": "e5f97d2974b46a8713957d105930a893082a946b45bda8333eae9cc3558afb38",
+      "active": {
+        "src": "audio/opus-hq56-96-v2/50/50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c.ogg",
+        "start": 23.19004,
+        "end": 26.37358,
+        "duration": 3.18354,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g035",
+        "questionId": "t02-q043-r2",
+        "at": 1168.28793
+      }
+    },
+    {
+      "index": 129,
+      "beforeSha256": "dbe333141c772ebc1d3d180b8e95d726c09132c83aeb2f47069d91a90220cf4a",
+      "active": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.68227,
+        "part": 3,
+        "groupId": "t02-g035",
+        "questionId": "t02-q043-r2",
+        "at": 1171.47147
+      }
+    },
+    {
+      "index": 142,
+      "beforeSha256": "d066060e8582638b70c6be4200701d07073a34256b6f4078a4b86a6d4871f022",
+      "active": {
+        "src": "audio/opus-hq56-96-v2/50/50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c.ogg",
+        "start": 49.91029,
+        "end": 53.19325,
+        "duration": 3.28296,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g037",
+        "questionId": "t02-q048-r2",
+        "at": 1309.65756
+      }
+    },
+    {
+      "index": 143,
+      "beforeSha256": "0070b7bd1190f10799d84ea438414b7b31a7711184ac033368f4f57f0003381d",
+      "active": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.31378,
+        "part": 3,
+        "groupId": "t02-g037",
+        "questionId": "t02-q048-r2",
+        "at": 1312.94052
+      }
+    },
+    {
+      "index": 148,
+      "beforeSha256": "835e0ec807344d13daa58391b0216e08c472372d1866c639fc40e90597cc6b5a",
+      "active": {
+        "src": "audio/exams/test-02/questions/Q050/formal-stem-medium-09bf5e1b2d54.ogg",
+        "start": 0,
+        "end": 5.5375,
+        "duration": 5.5375,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g038",
+        "questionId": "t02-q050-r2",
+        "at": 1372.56674
+      }
+    },
+    {
+      "index": 149,
+      "beforeSha256": "1146018bcd13ed42485ee8cac7a6897b42d9b1535e81c5673e1a96e08f29865f",
+      "active": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 8.67588,
+        "part": 3,
+        "groupId": "t02-g038",
+        "questionId": "t02-q050-r2",
+        "at": 1378.10424
+      }
+    },
+    {
+      "index": 150,
+      "beforeSha256": "de7085366740de57eb7bde59203b297114affafa233022efe8565f371655204e",
+      "active": {
+        "src": "audio/exams/test-02/questions/Q051/formal-stem-medium-16354fcfea46.ogg",
+        "start": 0,
+        "end": 7.5,
+        "duration": 7.5,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g038",
+        "questionId": "t02-q051-r3",
+        "at": 1386.78012
+      }
+    },
+    {
+      "index": 151,
+      "beforeSha256": "4c9bc541dab198c4535ebe6f0490a1a91445d5f266ddaa5dce10637208db475f",
+      "active": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 8.67589,
+        "part": 3,
+        "groupId": "t02-g038",
+        "questionId": "t02-q051-r3",
+        "at": 1394.28012
+      }
+    },
+    {
+      "index": 176,
+      "beforeSha256": "cea8cdb8dba5f98b9263b4330085c5e83365e76c28d191fd365465f9ce5259f0",
+      "active": {
+        "src": "audio/opus-hq56-96-v2/79/79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d.ogg",
+        "start": 43.32754,
+        "end": 45.75937,
+        "duration": 2.43183,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g041",
+        "questionId": "t02-q061-r2",
+        "at": 1630.65454
+      }
+    },
+    {
+      "index": 177,
+      "beforeSha256": "8094b98cdaa682b576ea3a51b7d292a9889dce031947900f26ee0875fb4ca8f8",
+      "active": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 3,
+        "groupId": "t02-g041",
+        "questionId": "t02-q061-r2",
+        "at": 1633.08637
+      }
+    },
+    {
+      "index": 190,
+      "beforeSha256": "f2bfe9f7ebbee8ab6a523a03f88d94bb2c8a28c7b53168ff7297b561b99136e8",
+      "active": {
+        "src": "audio/opus-hq56-96-v2/7a/7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe.ogg",
+        "start": 0.25,
+        "end": 3.493,
+        "duration": 3.243,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g043",
+        "questionId": "t02-q066-r2",
+        "at": 1774.41746
+      }
+    },
+    {
+      "index": 191,
+      "beforeSha256": "750856e9e6ce144417f07ed153126c6cb12c0a10c65decc2475ed48407663b95",
+      "active": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 10.63128,
+        "part": 3,
+        "groupId": "t02-g043",
+        "questionId": "t02-q066-r2",
+        "at": 1777.66046
+      }
+    },
+    {
+      "index": 192,
+      "beforeSha256": "553fb6e59517eebfccde127f031183d0011274ffbbf9a3831d7c2a915c92e64f",
+      "active": {
+        "src": "audio/opus-hq56-96-v2/7a/7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe.ogg",
+        "start": 3.743,
+        "end": 6.67333,
+        "duration": 2.93033,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g043",
+        "questionId": "t02-q067-r2",
+        "at": 1788.29174
+      }
+    },
+    {
+      "index": 193,
+      "beforeSha256": "413bcfc6166f7facf2ef859db1149e8a30773e07162f4bf03a9effe7f3fd69a3",
+      "active": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 10.63128,
+        "part": 3,
+        "groupId": "t02-g043",
+        "questionId": "t02-q067-r2",
+        "at": 1791.22207
+      }
+    },
+    {
+      "index": 223,
+      "beforeSha256": "67eb07c936b66ed101bebbc6d8493a54cf18248bcef01eaab2b0a690d7649411",
+      "active": {
+        "src": "audio/opus-hq56-96-v2/7a/7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe.ogg",
+        "start": 57.77925,
+        "end": 60.70742,
+        "duration": 2.92817,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g047",
+        "questionId": "t02-q078-r2",
+        "at": 2118.53728
+      }
+    },
+    {
+      "index": 224,
+      "beforeSha256": "57175950321dd9c400d5c581a3bcc3e99afd8f77e89db2adfb97327ff96466f9",
+      "active": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 8.36433,
+        "part": 4,
+        "groupId": "t02-g047",
+        "questionId": "t02-q078-r2",
+        "at": 2121.46545
+      }
+    },
+    {
+      "index": 239,
+      "beforeSha256": "4496175c5133c5ce0ab63919444852ef41434251f8a5d737a6e20d6c9e36a0c4",
+      "active": {
+        "src": "audio/opus-hq56-96-v2/66/66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148.ogg",
+        "start": 14.54254,
+        "end": 17.31217,
+        "duration": 2.76963,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g049",
+        "questionId": "t02-q084-r2",
+        "at": 2256.60154
+      }
+    },
+    {
+      "index": 240,
+      "beforeSha256": "ff5793cfac97f8c4cd1244ed469d5a56bbea3997919b98b227e9f4f84a2d04dc",
+      "active": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.55786,
+        "part": 4,
+        "groupId": "t02-g049",
+        "questionId": "t02-q084-r2",
+        "at": 2259.37117
+      }
+    },
+    {
+      "index": 247,
+      "beforeSha256": "08ecf2fd29d28a98ca4f9e93279c3c017a15cc951626edf6d98b6c3787b9873a",
+      "active": {
+        "src": "audio/opus-hq56-96-v2/66/66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148.ogg",
+        "start": 32.25583,
+        "end": 35.46417,
+        "duration": 3.20833,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g050",
+        "questionId": "t02-q087-r2",
+        "at": 2344.73896
+      }
+    },
+    {
+      "index": 248,
+      "beforeSha256": "c2ca738097240963fea9a981fc3aad5db52c0a4f953b2bdd02334ac0dda527a7",
+      "active": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 4,
+        "groupId": "t02-g050",
+        "questionId": "t02-q087-r2",
+        "at": 2347.94729
+      }
+    },
+    {
+      "index": 253,
+      "beforeSha256": "ad1c7667abc25035772c09f45a78d0fb897b1fb9844fe303c4f3eeade5dec455",
+      "active": {
+        "src": "audio/opus-hq56-96-v2/66/66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148.ogg",
+        "start": 43.07688,
+        "end": 45.54888,
+        "duration": 2.472,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g051",
+        "questionId": "t02-q089-r2",
+        "at": 2411.65022
+      }
+    },
+    {
+      "index": 254,
+      "beforeSha256": "28bb34718482d4a7c16873568e762fa93afad27ef0d8dd32cb39d185f31b0e22",
+      "active": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 4,
+        "groupId": "t02-g051",
+        "questionId": "t02-q089-r2",
+        "at": 2414.12222
+      }
+    }
+  ],
+  "newOpus": {
+    "35": {
+      "question": 35,
+      "exactTurns": [
+        {
+          "voice": "en-US-JennyNeural",
+          "locale": "en-US",
+          "text": "Number 35. Why is the older version worth keeping for tomorrow?"
+        }
+      ],
+      "inputReceipt": {
+        "name": "test02-q035-stem-medium-r2",
+        "inputCharacters": 63,
+        "samples": 129300,
+        "seconds": 5.3875,
+        "bytes": 258644,
+        "sha256": "9879e9044b0a77c5135b040fc5da02acd3ca62705b174461aa87eefefb84125a",
+        "status": "rendered-candidate-not-validated"
+      },
+      "opusSha256": "ae048985f1ab7c775a58004f40d975f11566b2e6375f3093263753723307d45a",
+      "sourcePcmSha256": "ca7bcf23322075d18d0dd265cd38cf0ccec9dea0f971944a8e5530bf5447d67f",
+      "decodedPcmSha256": "6cb7f79fff0db881d628747c32830035c67c0af4ae73d7fcfce83bb20b9de3e9",
+      "sampleCount": 258600,
+      "opusPreSkip": 312,
+      "opusFinalGranule": 258912,
+      "oggPages": 8,
+      "durationSeconds": 5.3875,
+      "start": 0,
+      "end": 5.3875,
+      "assetBytes": 31206,
+      "mime": "audio/ogg",
+      "correlation": 0.9965578741771011,
+      "codec": "Ogg Opus 48kHz; constrained VBR 56k; no raw files staged",
+      "planReceiptSha256": "8e191c410d75a52bb89c19b731a1f8b0ea1fd6e1f9fdace160605361bc5d7db2",
+      "text": "Number 35. Why is the older version worth keeping for tomorrow?",
+      "path": "audio/exams/test-02/questions/Q035/formal-stem-medium-9879e9044b0a.ogg",
+      "encodedSha256": "ae048985f1ab7c775a58004f40d975f11566b2e6375f3093263753723307d45a",
+      "decodedSamples": 258600
+    },
+    "36": {
+      "question": 36,
+      "exactTurns": [
+        {
+          "voice": "en-US-JennyNeural",
+          "locale": "en-US",
+          "text": "Number 36. An engineer wants to restore a unit now. What would that risk losing?"
+        }
+      ],
+      "inputReceipt": {
+        "name": "test02-q036-stem-medium-r2",
+        "inputCharacters": 80,
+        "samples": 177600,
+        "seconds": 7.4,
+        "bytes": 355244,
+        "sha256": "0b2e286d04342343f1935bbe3a13b24de240c72317cd04402a1c37cea3fec735",
+        "status": "rendered-candidate-not-validated"
+      },
+      "opusSha256": "71150c332dfd16a2b61917fd427dded67c7f92c85fa082b2ea4895d9da954201",
+      "sourcePcmSha256": "38f604bf1fa98260b608350f53d2d948f0206c806507b3ada6c3571abe2701b5",
+      "decodedPcmSha256": "c791478dc67d4082ddca56dab20fed37814caa4e0518fd86ed3d14f8a87acf92",
+      "sampleCount": 355200,
+      "opusPreSkip": 312,
+      "opusFinalGranule": 355512,
+      "oggPages": 10,
+      "durationSeconds": 7.4,
+      "start": 0,
+      "end": 7.4,
+      "assetBytes": 43540,
+      "mime": "audio/ogg",
+      "correlation": 0.994995319773965,
+      "codec": "Ogg Opus 48kHz; constrained VBR 56k; no raw files staged",
+      "planReceiptSha256": "8e191c410d75a52bb89c19b731a1f8b0ea1fd6e1f9fdace160605361bc5d7db2",
+      "text": "Number 36. An engineer wants to restore a unit now. What would that risk losing?",
+      "path": "audio/exams/test-02/questions/Q036/formal-stem-medium-0b2e286d0434.ogg",
+      "encodedSha256": "71150c332dfd16a2b61917fd427dded67c7f92c85fa082b2ea4895d9da954201",
+      "decodedSamples": 355200
+    },
+    "50": {
+      "question": 50,
+      "exactTurns": [
+        {
+          "voice": "en-US-JennyNeural",
+          "locale": "en-US",
+          "text": "Number 50. What is the main trade-off between the two chamber options?"
+        }
+      ],
+      "inputReceipt": {
+        "name": "test02-q050-stem-medium-r2",
+        "inputCharacters": 70,
+        "samples": 132900,
+        "seconds": 5.5375,
+        "bytes": 265844,
+        "sha256": "09bf5e1b2d54653b1491fa85f80240751bb09c845fe491fafbf0f1e152d5772a",
+        "status": "rendered-candidate-not-validated"
+      },
+      "opusSha256": "5c093deffa921cecd5ad9f6a81a81f0a9a4b18c4da40af583738ece7aef00e5b",
+      "sourcePcmSha256": "2813d988bf2c07d4bceea6f89366977afb9d93b3a80bf18ef0340e08119959e9",
+      "decodedPcmSha256": "06ff8b03e92e37a1c3ff85d6a2126a4439cd97a3a83d98daabd4edb3baf08d56",
+      "sampleCount": 265800,
+      "opusPreSkip": 312,
+      "opusFinalGranule": 266112,
+      "oggPages": 8,
+      "durationSeconds": 5.5375,
+      "start": 0,
+      "end": 5.5375,
+      "assetBytes": 34425,
+      "mime": "audio/ogg",
+      "correlation": 0.9951436847073383,
+      "codec": "Ogg Opus 48kHz; constrained VBR 56k; no raw files staged",
+      "planReceiptSha256": "8cc471efe8abc67f9415f07a723d69dc78269a90daaa1515bd15ba802aaa1bfe",
+      "text": "Number 50. What is the main trade-off between the two chamber options?",
+      "path": "audio/exams/test-02/questions/Q050/formal-stem-medium-09bf5e1b2d54.ogg",
+      "encodedSha256": "5c093deffa921cecd5ad9f6a81a81f0a9a4b18c4da40af583738ece7aef00e5b",
+      "decodedSamples": 265800
+    },
+    "51": {
+      "question": 51,
+      "exactTurns": [
+        {
+          "voice": "en-US-JennyNeural",
+          "locale": "en-US",
+          "text": "Number 51. If all samples must be tested together, why would the original completion date change?"
+        }
+      ],
+      "inputReceipt": {
+        "name": "test02-q051-stem-medium-r2",
+        "inputCharacters": 97,
+        "samples": 180000,
+        "seconds": 7.5,
+        "bytes": 360044,
+        "sha256": "16354fcfea4650d07f8e21ceb09e57da15854568b343ffa54db6fdd6ed8aa0ac",
+        "status": "rendered-candidate-not-validated"
+      },
+      "opusSha256": "2357c8a40629ec42a51f99fb4e991808cc9aa14e1ef55dc10a7a9624a9d92c4d",
+      "sourcePcmSha256": "327e563d0f9d2c0f8b823cda3856cbf41fc4b50b4ca163bbab7813635ac64eb3",
+      "decodedPcmSha256": "76a607ba31de16f270b9e253868830af6dca0aa8d297396f4eef66abcc8a01e4",
+      "sampleCount": 360000,
+      "opusPreSkip": 312,
+      "opusFinalGranule": 360312,
+      "oggPages": 10,
+      "durationSeconds": 7.5,
+      "start": 0,
+      "end": 7.5,
+      "assetBytes": 47285,
+      "mime": "audio/ogg",
+      "correlation": 0.9943807917296855,
+      "codec": "Ogg Opus 48kHz; constrained VBR 56k; no raw files staged",
+      "planReceiptSha256": "8cc471efe8abc67f9415f07a723d69dc78269a90daaa1515bd15ba802aaa1bfe",
+      "text": "Number 51. If all samples must be tested together, why would the original completion date change?",
+      "path": "audio/exams/test-02/questions/Q051/formal-stem-medium-16354fcfea46.ogg",
+      "encodedSha256": "2357c8a40629ec42a51f99fb4e991808cc9aa14e1ef55dc10a7a9624a9d92c4d",
+      "decodedSamples": 360000
+    }
+  },
+  "outputTimingSha256": "a541c59848585c5c7b9b03fff06a41c57adff8ff22f2c0d48c122435c2b0a5c3",
+  "chartFrames": {
+    "102": "0c8435f26f3171494952e6e529352595ad455a4546acc0197ab99577b4962923",
+    "103": "9db5650f2d09f813e8417f92503f4c63a99a873a86788396f4b89cd4f3cbc8a2",
+    "241": "53f7393bd9e2f79da3d08147ff5e3750f4b946b7160f1e332f41cc42000f554e",
+    "242": "80122063f0473726f0dcebfb6916d0529f9393e907b7c364d1d0bea355209963"
+  },
+  "scope": [
+    "15 revised active question identities, pending branch adoption",
+    "all 200 exact reviewed difficulty labels",
+    "4 new HQ Opus only",
+    "no pre-release history runtime import"
+  ]
+}

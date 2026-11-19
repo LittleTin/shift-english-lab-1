@@ -1,0 +1,188 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Independent final text adjudication, EN/ZH options, complete rationale and one correct answer. Combine one representative working with warehouse and correct conditional label policy for intact vs damaged seals.",
+    "audio": "Exact retained verified cue, spoken prompt, shared passage and practice sources; byte/range/role matched against raw and actual Opus receipts. Only bilingual options and active question identity revised, not any spoken word.",
+    "association": "Exact active final question/group and own verified audio rows. No browser or publication claim.",
+    "scopeApprovalSha256": "0978483f5a257fa3ea435bbe630dcd276e2fb79a526d0701ef5655a19d13d0e0"
+  },
+  "activeQuestion": {
+    "id": "t02-q084-r2",
+    "testId": "test-02",
+    "number": 84,
+    "part": 4,
+    "groupId": "t02-g049",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "inventory count"
+    ],
+    "prompt": "What should team leaders arrange?",
+    "promptZh": "各組主管應安排什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Assign each requester to check separately; use the label even if a seal is damaged.",
+        "zh": "請每位提出需求的人各自核對；封條損壞仍以箱標為準。",
+        "whyZh": "只須安排一名代表核對，且封條受損時不能直接採用箱標數量。"
+      },
+      {
+        "id": "B",
+        "text": "Send one representative to check with warehouse staff; use the label count only when the seal is intact.",
+        "zh": "安排一位代表和庫房核對；只有封條完好才採用箱標數量。",
+        "whyZh": "組長指定一人與庫房核對。封條完整的箱子可用標示數量，封條受損者不可直接照箱標。"
+      },
+      {
+        "id": "C",
+        "text": "Assign one representative to check with warehouse staff; use all label counts, including boxes with broken seals.",
+        "zh": "安排一位代表和庫房核對；所有箱子都照箱標，包括封條破損的箱子。",
+        "whyZh": "人員分工正確，但不能把破損封條的箱標直接當成正確數量。"
+      },
+      {
+        "id": "D",
+        "text": "Send separate representatives for each box and verify only counts that already match their labels.",
+        "zh": "每箱各派一位代表，只核對與箱標已相符的數量。",
+        "whyZh": "不是每箱各派人；也不能把核對範圍限於看似相符的箱標。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "組長指定一人與庫房核對。封條完整的箱子可用標示數量，封條受損者不可直接照箱標。",
+    "evidence": "From noon to four, we will handle safety emergencies only. | Team leaders should assign one person to confirm quantities with warehouse staff. | For sealed boxes, use the quantity on the label unless the seal is damaged.",
+    "vocabulary": [
+      {
+        "term": "inventory count",
+        "zh": "盤點",
+        "note": "實際核對庫存品項與數量的作業。"
+      },
+      {
+        "term": "resume",
+        "zh": "恢復",
+        "note": "表示暫停後重新開始。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t02-q084",
+    "testId": "test-02",
+    "number": 84,
+    "part": 4,
+    "groupId": "t02-g049",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "inventory count"
+    ],
+    "prompt": "What should team leaders arrange?",
+    "promptZh": "各組主管應安排什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "A customer tour during the count.",
+        "zh": "盤點期間的客戶導覽。",
+        "whyZh": "未安排客戶參觀。"
+      },
+      {
+        "id": "B",
+        "text": "A person to verify quantities with warehouse staff.",
+        "zh": "一人與倉庫人員核對數量。",
+        "whyZh": "通知要求各組指定一人協助核對。"
+      },
+      {
+        "id": "C",
+        "text": "Replacement of every carton label.",
+        "zh": "更換所有紙箱標籤。",
+        "whyZh": "標籤是盤點參考，不是全部更換。"
+      },
+      {
+        "id": "D",
+        "text": "An extra shift at the airport.",
+        "zh": "機場額外班次。",
+        "whyZh": "與倉庫盤點無關。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "通知要求各組指定一人協助核對。",
+    "evidence": "assign one person to confirm quantities with warehouse staff",
+    "vocabulary": [
+      {
+        "term": "inventory count",
+        "zh": "盤點",
+        "note": "實際核對庫存品項與數量的作業。"
+      },
+      {
+        "term": "resume",
+        "zh": "恢復",
+        "note": "表示暫停後重新開始。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g049",
+    "testId": "test-02",
+    "part": 4,
+    "title": "Inventory counting notice",
+    "titleZh": "盤點通知",
+    "topic": "manufacturing",
+    "passage": "The warehouse will conduct its quarterly inventory count on Friday afternoon. Material requests needed for Friday's production must reach us by eleven in the morning. From noon to four, we will handle safety emergencies only. Team leaders should assign one person to confirm quantities with warehouse staff. For sealed boxes, use the quantity on the label unless the seal is damaged. Regular material pickup starts again at four thirty in the afternoon.",
+    "passageZh": "倉庫將在星期五下午進行季度盤點。星期五生產所需的領料申請必須在上午十一點前送達。中午到下午四點，只處理緊急安全事件。各組主管應指派一人與倉庫人員核對數量。有封條的紙箱，若封條未破損，請依標籤上的數量盤點。下午四點半恢復正常領料。",
+    "audioScript": "The warehouse will conduct its quarterly inventory count on Friday afternoon. Material requests needed for Friday's production must reach us by eleven in the morning. From noon to four, we will handle safety emergencies only. Team leaders should assign one person to confirm quantities with warehouse staff. For sealed boxes, use the quantity on the label unless the seal is damaged. Regular material pickup starts again at four thirty in the afternoon.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "The warehouse will conduct its quarterly inventory count on Friday afternoon. Material requests needed for Friday's production must reach us by eleven in the morning. From noon to four, we will handle safety emergencies only. Team leaders should assign one person to confirm quantities with warehouse staff. For sealed boxes, use the quantity on the label unless the seal is damaged. Regular material pickup starts again at four thirty in the afternoon."
+      }
+    ],
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-NG",
+        "role": "female",
+        "modelVoice": "en-NG-EzinneNeural"
+      }
+    ],
+    "image": "assets/graphics/t02-g049.svg",
+    "imageAlt": "Friday Collection Window Labels; 11:00 a.m.: Maple; 12:00 p.m.: Oak; 4:00 p.m.: Cedar; 4:30 p.m.: Pine",
+    "audio": "audio/opus-hq56-96-v2/9f/9f09b98a195d5227bfc2a515a164522b3f17d2447fff289732d67cb3d11adb64.ogg",
+    "audioStart": 0,
+    "audioEnd": 29.8125,
+    "duration": 29.8125
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/66/66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148.ogg",
+      "start": 7.36358,
+      "end": 10.52187,
+      "assetSha256": "c85e5bf03145ab3f75db2a4afef0293aba8fd1eb8332ab61b806fd5dc9cd11b6",
+      "speech": "Questions 83 through 85. Listen to the talk."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/opus-hq56-96-v2/9f/9f09b98a195d5227bfc2a515a164522b3f17d2447fff289732d67cb3d11adb64.ogg",
+      "start": 0,
+      "end": 29.8125,
+      "assetSha256": "29dc5619499696024094c781b65b58557b2ad0259203d4c1586ec8c7ebf32aa3",
+      "speech": "The warehouse will conduct its quarterly inventory count on Friday afternoon. Material requests needed for Friday's production must reach us by eleven in the morning. From noon to four, we will handle safety emergencies only. Team leaders should assign one person to confirm quantities with warehouse staff. For sealed boxes, use the quantity on the label unless the seal is damaged. Regular material pickup starts again at four thirty in the afternoon."
+    },
+    {
+      "mode": "question",
+      "path": "audio/opus-hq56-96-v2/66/66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148.ogg",
+      "start": 14.54254,
+      "end": 17.31217,
+      "assetSha256": "c85e5bf03145ab3f75db2a4afef0293aba8fd1eb8332ab61b806fd5dc9cd11b6",
+      "speech": "Number 84. What should team leaders arrange?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/opus-hq56-96-v2/9f/9f09b98a195d5227bfc2a515a164522b3f17d2447fff289732d67cb3d11adb64.ogg",
+      "start": 0,
+      "end": 29.8125,
+      "assetSha256": "29dc5619499696024094c781b65b58557b2ad0259203d4c1586ec8c7ebf32aa3",
+      "speech": "The warehouse will conduct its quarterly inventory count on Friday afternoon. Material requests needed for Friday's production must reach us by eleven in the morning. From noon to four, we will handle safety emergencies only. Team leaders should assign one person to confirm quantities with warehouse staff. For sealed boxes, use the quantity on the label unless the seal is damaged. Regular material pickup starts again at four thirty in the afternoon."
+    }
+  ],
+  "imageSha256": "f773479b5ca6a4ffd7836895dc197dea32b2d009d8ad06ddefe3958d9e4a8984"
+}

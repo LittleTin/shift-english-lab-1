@@ -1,0 +1,204 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Independent final text adjudication, EN/ZH options, complete rationale and one correct answer. Apply both save-before-change rule and specific exception to keep one failed unit unchanged.",
+    "audio": "Exact retained verified cue, spoken prompt, shared passage and practice sources; byte/range/role matched against raw and actual Opus receipts. Only bilingual options and active question identity revised, not any spoken word.",
+    "association": "Exact active final question/group and own verified audio rows. No browser or publication claim.",
+    "scopeApprovalSha256": "0978483f5a257fa3ea435bbe630dcd276e2fb79a526d0701ef5655a19d13d0e0"
+  },
+  "activeQuestion": {
+    "id": "t02-q037-r2",
+    "testId": "test-02",
+    "number": 37,
+    "part": 3,
+    "groupId": "t02-g033",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "error log"
+    ],
+    "prompt": "What should happen to one failed unit?",
+    "promptZh": "其中一台故障機應如何處理？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Leave it as it failed for investigation, even if the others are restored after logging.",
+        "zh": "即使記錄儲存後還原其他機器，也讓這一台保持故障狀態供調查。",
+        "whyZh": "即使其他故障機在記錄存好後可以還原，這台仍原樣保留給軟體團隊調查。"
+      },
+      {
+        "id": "B",
+        "text": "Restore it before exporting logs, then reserve it for investigation.",
+        "zh": "先還原這台再匯出記錄，之後留它調查。",
+        "whyZh": "變更前須先匯出記錄；被保留的這台還不能先還原。"
+      },
+      {
+        "id": "C",
+        "text": "Keep it unchanged only until the logs are exported, then restore it as well.",
+        "zh": "只保留到記錄匯出為止，之後也把這台還原。",
+        "whyZh": "保留故障機是為了後續調查，並非只留到記錄儲存完。"
+      },
+      {
+        "id": "D",
+        "text": "Repair it immediately and keep the working spare unchanged instead.",
+        "zh": "立刻修好這台，改保留可用備用機不動。",
+        "whyZh": "應保留的是故障機，不是原本就能用的備用機。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "即使其他故障機在記錄存好後可以還原，這台仍原樣保留給軟體團隊調查。",
+    "evidence": "Before we change anything, can you export the error logs? | Yes, once the logs are saved. Keep one failed unit unchanged for further investigation.",
+    "vocabulary": [
+      {
+        "term": "error log",
+        "zh": "錯誤紀錄",
+        "note": "記錄錯誤事件與狀態，協助除錯。"
+      },
+      {
+        "term": "reproduce an issue",
+        "zh": "重現問題",
+        "note": "在可控制的條件下再次觸發相同問題。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t02-q037",
+    "testId": "test-02",
+    "number": 37,
+    "part": 3,
+    "groupId": "t02-g033",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "error log"
+    ],
+    "prompt": "What should happen to one failed unit?",
+    "promptZh": "其中一台故障機應如何處理？",
+    "options": [
+      {
+        "id": "A",
+        "text": "It should remain unchanged for investigation.",
+        "zh": "保持原狀供調查。",
+        "whyZh": "女方要求保留一台故障機，不做版本恢復。"
+      },
+      {
+        "id": "B",
+        "text": "It should be discarded immediately.",
+        "zh": "立即丟棄。",
+        "whyZh": "保留調查與丟棄相反。"
+      },
+      {
+        "id": "C",
+        "text": "It should be sold at a discount.",
+        "zh": "折價出售。",
+        "whyZh": "對話沒有出售安排。"
+      },
+      {
+        "id": "D",
+        "text": "It should be used as a packaging sample.",
+        "zh": "用作包裝樣品。",
+        "whyZh": "未提及包裝用途。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "女方要求保留一台故障機，不做版本恢復。",
+    "evidence": "Keep one failed unit unchanged for further investigation.",
+    "vocabulary": [
+      {
+        "term": "error log",
+        "zh": "錯誤紀錄",
+        "note": "記錄錯誤事件與狀態，協助除錯。"
+      },
+      {
+        "term": "reproduce an issue",
+        "zh": "重現問題",
+        "note": "在可控制的條件下再次觸發相同問題。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g033",
+    "testId": "test-02",
+    "part": 3,
+    "title": "A failed firmware update",
+    "titleZh": "韌體更新失敗",
+    "topic": "technology",
+    "passage": "Man: Three demonstration units stopped responding after yesterday's firmware update. The older version still works on the spare unit.\nWoman: Before we change anything, can you export the error logs? The software team needs them to reproduce the issue.\nMan: Yes. Should I restore the earlier version afterward? We have a customer demonstration tomorrow morning.\nWoman: Yes, once the logs are saved. Keep one failed unit unchanged for further investigation.",
+    "passageZh": "男：三台展示機在昨天更新韌體後停止回應。備用機上的舊版仍可正常運作。\n女：在改動任何東西之前，你可以匯出錯誤紀錄嗎？軟體團隊需要它們來重現問題。\n男：可以。之後我該恢復舊版嗎？明天早上有客戶展示。\n女：要，等紀錄保存好之後再恢復。留一台故障機保持原狀，以便進一步調查。",
+    "audioScript": "Three demonstration units stopped responding after yesterday's firmware update. The older version still works on the spare unit.\nBefore we change anything, can you export the error logs? The software team needs them to reproduce the issue.\nYes. Should I restore the earlier version afterward? We have a customer demonstration tomorrow morning.\nYes, once the logs are saved. Keep one failed unit unchanged for further investigation.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Three demonstration units stopped responding after yesterday's firmware update. The older version still works on the spare unit."
+      },
+      {
+        "voice": "female",
+        "text": "Before we change anything, can you export the error logs? The software team needs them to reproduce the issue."
+      },
+      {
+        "voice": "male",
+        "text": "Yes. Should I restore the earlier version afterward? We have a customer demonstration tomorrow morning."
+      },
+      {
+        "voice": "female",
+        "text": "Yes, once the logs are saved. Keep one failed unit unchanged for further investigation."
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/19/1996b1a56db685597c6742f14dd818fe835424a3a17465853fb4104b3ff8604b.ogg",
+    "duration": 33.624,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-IE",
+        "role": "male",
+        "modelVoice": "en-IE-ConnorNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-IE",
+        "role": "female",
+        "modelVoice": "en-IE-EmilyNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 34.124
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/10/1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8.ogg",
+      "start": 54.88454,
+      "end": 58.95633,
+      "assetSha256": "981ad144c3c0a68c14d09adeaff54c77ffb03aaf7ffe8c9e759a8da458ac8596",
+      "speech": "Questions 35 through 37. Listen to the conversation."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/opus-hq56-96-v2/19/1996b1a56db685597c6742f14dd818fe835424a3a17465853fb4104b3ff8604b.ogg",
+      "start": 0.5,
+      "end": 34.124,
+      "assetSha256": "7d52ce3eeeff7a1663f4135a687f09cfaef5fbe78fc2dc0017f4b97772072eb9",
+      "speech": "Three demonstration units stopped responding after yesterday's firmware update. The older version still works on the spare unit.\nBefore we change anything, can you export the error logs? The software team needs them to reproduce the issue.\nYes. Should I restore the earlier version afterward? We have a customer demonstration tomorrow morning.\nYes, once the logs are saved. Keep one failed unit unchanged for further investigation."
+    },
+    {
+      "mode": "question",
+      "path": "audio/opus-hq56-96-v2/10/1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8.ogg",
+      "start": 65.35329,
+      "end": 68.61713,
+      "assetSha256": "981ad144c3c0a68c14d09adeaff54c77ffb03aaf7ffe8c9e759a8da458ac8596",
+      "speech": "Number 37. What should happen to one failed unit?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/opus-hq56-96-v2/19/1996b1a56db685597c6742f14dd818fe835424a3a17465853fb4104b3ff8604b.ogg",
+      "start": 0.5,
+      "end": 34.124,
+      "assetSha256": "7d52ce3eeeff7a1663f4135a687f09cfaef5fbe78fc2dc0017f4b97772072eb9",
+      "speech": "Three demonstration units stopped responding after yesterday's firmware update. The older version still works on the spare unit.\nBefore we change anything, can you export the error logs? The software team needs them to reproduce the issue.\nYes. Should I restore the earlier version afterward? We have a customer demonstration tomorrow morning.\nYes, once the logs are saved. Keep one failed unit unchanged for further investigation."
+    }
+  ],
+  "imageSha256": null
+}
