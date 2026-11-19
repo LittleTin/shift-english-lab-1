@@ -1,0 +1,129 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "A: Customer explicitly requests a process for distributing future revisions to every station and removing obsolete copies, not expanding stations, listing damage, or re-quoting. Both languages reviewed against three documents, all choices reviewed.",
+  "activeQuestion": {
+    "id": "t02-q199-r2",
+    "testId": "test-02",
+    "number": 199,
+    "part": 7,
+    "groupId": "t02-r-p7-15",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension"
+    ],
+    "prompt": "What additional information does the customer request?",
+    "promptZh": "客戶還要求什麼資訊？",
+    "options": [
+      {
+        "text": "A method for distributing future revisions and withdrawing obsolete copies",
+        "zh": "一套發放後續新版並回收失效副本的方法。",
+        "whyZh": "客戶要求一套可重複執行的文件管制方法，而不只是一次移除舊版。",
+        "id": "A"
+      },
+      {
+        "text": "An increase in the number of packing stations",
+        "zh": "增加包裝站數量",
+        "whyZh": "要求的是文件管制方式，非擴充站點。",
+        "id": "B"
+      },
+      {
+        "text": "A list of damaged products from the sample check",
+        "zh": "抽查中發現受損的產品清單。",
+        "whyZh": "抽查沒有發現損傷，回覆也未要求此名單。",
+        "id": "C"
+      },
+      {
+        "text": "A new quotation for all future shipments",
+        "zh": "所有未來出貨的新報價",
+        "whyZh": "客戶回覆只要求說明文件管制流程，未要求重新報價。",
+        "id": "D"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "客戶要求一套可重複執行的文件管制方法，而不只是一次移除舊版。",
+    "evidence": "explain how future revisions will reach every station and how obsolete copies will be withdrawn",
+    "vocabulary": [
+      {
+        "term": "obsolete",
+        "zh": "已失效的；已作廢的",
+        "note": "文件已由新版本取代，不可再當作現行作業依據。"
+      },
+      {
+        "term": "corrective action",
+        "zh": "矯正措施",
+        "note": "針對已發現問題採取的改善行動。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t02-r-p7-15",
+    "testId": "test-02",
+    "part": 7,
+    "title": "Supplier-audit follow-up",
+    "titleZh": "供應商稽核追蹤",
+    "topic": "manufacturing",
+    "passage": "DOCUMENT 1 — Audit observation\nAt the packing station, two operators were using revision 2 of the packing instruction although revision 3 had been released a week earlier. The old copies were unmarked, so the operators could not tell that they were obsolete. No product damage was found during the sample check. The supplier must correct the document-control issue and provide evidence by December 12.\n\nDOCUMENT 2 — Supplier action plan\nBy December 8, we will remove revision 2 from all packing stations and replace it with revision 3. On December 9, the supervisor will brief every packing operator and record attendance. By December 11, Quality will check every station and photograph the current instructions. We will submit the photos and training record together.\n\nDOCUMENT 3 — Customer reply\nThe plan addresses the immediate issue. Please also explain how future revisions will reach every station and how obsolete copies will be withdrawn. We need a repeatable control method, not only a one-time cleanup. The December 12 evidence deadline remains unchanged.",
+    "passageZh": "文件一——稽核發現事項\n包裝站有兩名作業員仍使用第二版包裝指導書，但第三版早在一週前就已發布。舊版副本沒有失效標示，因此作業員無法辨識它們已失效。抽查沒有發現產品損傷。供應商必須改善文件管制問題，並最遲於十二月十二日提供佐證資料。\n\n文件二——供應商行動計畫\n最遲於十二月八日會從所有包裝站移除第二版，換成第三版。十二月九日，主管會向所有包裝作業員說明，並登記出席情形。品管最遲於十二月十一日會檢查每個站點，並拍下各站使用的現行版指導書。我們會一起提交照片及訓練紀錄。\n\n文件三——客戶回覆\n這項計畫能處理眼前的問題。也請說明日後如何將新版發放到各站，以及如何回收失效副本。我們需要可重複執行的管制方法，不只是一次性整理。佐證資料的提交期限仍為十二月十二日。"
+  },
+  "originalQuestion": {
+    "id": "t02-q199",
+    "testId": "test-02",
+    "number": 199,
+    "part": 7,
+    "groupId": "t02-r-p7-15",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension"
+    ],
+    "prompt": "What additional information does the customer request?",
+    "promptZh": "客戶還要求什麼資訊？",
+    "options": [
+      {
+        "text": "A method for distributing future revisions and withdrawing obsolete copies",
+        "zh": "未來新版本發送及舊副本撤回的方法",
+        "whyZh": "客戶希望有持續可重複的管制，而非只清一次。",
+        "id": "A"
+      },
+      {
+        "text": "An increase in the number of packing stations",
+        "zh": "增加包裝站數量",
+        "whyZh": "要求的是文件管制方式，非擴充站點。",
+        "id": "B"
+      },
+      {
+        "text": "A list of damaged products from the sample check",
+        "zh": "抽查損壞產品名單",
+        "whyZh": "抽查沒有發現損傷，回覆也未要求此名單。",
+        "id": "C"
+      },
+      {
+        "text": "A new quotation for all future shipments",
+        "zh": "所有未來出貨的新報價",
+        "whyZh": "往返信件沒有價格議題。",
+        "id": "D"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "客戶希望有持續可重複的管制，而非只清一次。",
+    "evidence": "explain how future revisions will reach every station and how obsolete copies will be withdrawn",
+    "vocabulary": [
+      {
+        "term": "obsolete",
+        "zh": "過時的；已失效的",
+        "note": "已被有效新版本取代的文件狀態。"
+      },
+      {
+        "term": "corrective action",
+        "zh": "矯正措施",
+        "note": "針對已發現問題採取的改善行動。"
+      }
+    ],
+    "revision": 1
+  }
+}

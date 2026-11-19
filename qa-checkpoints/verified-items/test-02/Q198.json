@@ -1,0 +1,129 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "A: December 9 is the only task designated `On`; replacement is due by the 8th, inspection/photos by the 11th, and deadline not extended. Both languages reviewed against three documents, all choices reviewed.",
+  "activeQuestion": {
+    "id": "t02-q198-r2",
+    "testId": "test-02",
+    "number": 198,
+    "part": 7,
+    "groupId": "t02-r-p7-15",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension"
+    ],
+    "prompt": "Which task does the supplier specifically schedule for December 9?",
+    "promptZh": "供應商明確將哪項工作安排在十二月九日？",
+    "options": [
+      {
+        "text": "Brief packing operators and record attendance",
+        "zh": "向包裝作業員說明並登記出席情形。",
+        "whyZh": "計畫明定 12 月 9 日由主管向所有包裝作業員說明，並登記出席情形。",
+        "id": "A"
+      },
+      {
+        "text": "Release revision 2 for new production",
+        "zh": "發布第二版，供新投產批次使用。",
+        "whyZh": "計畫是移除第二版，不是重新啟用。",
+        "id": "B"
+      },
+      {
+        "text": "Submit the final evidence after an extension",
+        "zh": "延長期限後再提交最終佐證資料。",
+        "whyZh": "客戶沒有展延期限，仍須最遲於 12 月 12 日提交佐證資料。",
+        "id": "C"
+      },
+      {
+        "text": "Verify every station and photograph the current instructions",
+        "zh": "檢查每個站點並拍攝現行版指導書",
+        "whyZh": "這是品管最遲於 12 月 11 日完成的工作，12 月 9 日指定的是主管說明並登記出席。",
+        "id": "D"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "計畫明定 12 月 9 日由主管向所有包裝作業員說明，並登記出席情形。",
+    "evidence": "On December 9, the supervisor will brief every packing operator and record attendance.",
+    "vocabulary": [
+      {
+        "term": "obsolete",
+        "zh": "已失效的；已作廢的",
+        "note": "文件已由新版本取代，不可再當作現行作業依據。"
+      },
+      {
+        "term": "corrective action",
+        "zh": "矯正措施",
+        "note": "針對已發現問題採取的改善行動。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t02-r-p7-15",
+    "testId": "test-02",
+    "part": 7,
+    "title": "Supplier-audit follow-up",
+    "titleZh": "供應商稽核追蹤",
+    "topic": "manufacturing",
+    "passage": "DOCUMENT 1 — Audit observation\nAt the packing station, two operators were using revision 2 of the packing instruction although revision 3 had been released a week earlier. The old copies were unmarked, so the operators could not tell that they were obsolete. No product damage was found during the sample check. The supplier must correct the document-control issue and provide evidence by December 12.\n\nDOCUMENT 2 — Supplier action plan\nBy December 8, we will remove revision 2 from all packing stations and replace it with revision 3. On December 9, the supervisor will brief every packing operator and record attendance. By December 11, Quality will check every station and photograph the current instructions. We will submit the photos and training record together.\n\nDOCUMENT 3 — Customer reply\nThe plan addresses the immediate issue. Please also explain how future revisions will reach every station and how obsolete copies will be withdrawn. We need a repeatable control method, not only a one-time cleanup. The December 12 evidence deadline remains unchanged.",
+    "passageZh": "文件一——稽核發現事項\n包裝站有兩名作業員仍使用第二版包裝指導書，但第三版早在一週前就已發布。舊版副本沒有失效標示，因此作業員無法辨識它們已失效。抽查沒有發現產品損傷。供應商必須改善文件管制問題，並最遲於十二月十二日提供佐證資料。\n\n文件二——供應商行動計畫\n最遲於十二月八日會從所有包裝站移除第二版，換成第三版。十二月九日，主管會向所有包裝作業員說明，並登記出席情形。品管最遲於十二月十一日會檢查每個站點，並拍下各站使用的現行版指導書。我們會一起提交照片及訓練紀錄。\n\n文件三——客戶回覆\n這項計畫能處理眼前的問題。也請說明日後如何將新版發放到各站，以及如何回收失效副本。我們需要可重複執行的管制方法，不只是一次性整理。佐證資料的提交期限仍為十二月十二日。"
+  },
+  "originalQuestion": {
+    "id": "t02-q198",
+    "testId": "test-02",
+    "number": 198,
+    "part": 7,
+    "groupId": "t02-r-p7-15",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension"
+    ],
+    "prompt": "What is planned for December 9?",
+    "promptZh": "十二月九日預定做什麼？",
+    "options": [
+      {
+        "text": "Brief packing operators and record attendance",
+        "zh": "向包裝作業員說明並記錄出席",
+        "whyZh": "行動計畫將這項工作安排於九日。",
+        "id": "A"
+      },
+      {
+        "text": "Release revision 2 for new production",
+        "zh": "重新發行第二版供新生產",
+        "whyZh": "計畫是移除第二版，不是重新啟用。",
+        "id": "B"
+      },
+      {
+        "text": "Submit the final evidence after an extension",
+        "zh": "展延後提交最終證據",
+        "whyZh": "沒有展延，證據仍於十二日前提交。",
+        "id": "C"
+      },
+      {
+        "text": "Cancel all packing operations permanently",
+        "zh": "永久取消包裝作業",
+        "whyZh": "沒有停業或取消全部包裝的安排。",
+        "id": "D"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "行動計畫將這項工作安排於九日。",
+    "evidence": "On December 9, the supervisor will brief every packing operator and record attendance.",
+    "vocabulary": [
+      {
+        "term": "obsolete",
+        "zh": "過時的；已失效的",
+        "note": "已被有效新版本取代的文件狀態。"
+      },
+      {
+        "term": "corrective action",
+        "zh": "矯正措施",
+        "note": "針對已發現問題採取的改善行動。"
+      }
+    ],
+    "revision": 1
+  }
+}
