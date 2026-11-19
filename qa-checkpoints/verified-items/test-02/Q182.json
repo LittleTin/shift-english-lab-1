@@ -1,8 +1,79 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "B: Train C is fully booked; Priya declines relying on standby. Both English source and zh-TW, four choices and their explanations checked.",
+  "checks": "Independently solved the revised hypothetical using the exact two documents and previously verified timetable graphic. Original deadline yields B only. New 11:15 permits B and D; D is later and arrives 11:00, exactly 30 minutes after original 10:30. A uses the new limit as arrival; B is earlier; C has no bookable seat. English/Traditional Chinese wording and every rationale checked. Original Q182 key B preserved for historical records; the hypothetical does not reveal the existing booking or nearby cancellation answers.",
   "activeQuestion": {
+    "id": "t02-q182-r2",
+    "testId": "test-02",
+    "number": 182,
+    "part": 7,
+    "groupId": "t02-r-p7-12",
+    "topic": "daily",
+    "difficulty": "advanced",
+    "tags": [
+      "daily",
+      "reading-comprehension"
+    ],
+    "prompt": "Priya can now arrive as late as 11:15 a.m., but her other travel requirements remain unchanged. If she wants the latest possible departure, which train should she choose, and when would it arrive relative to her original arrival deadline?",
+    "promptZh": "Priya 現在最遲可在上午十一點十五分抵達，但其他搭車條件不變。如果她想搭最晚出發的班次，應選哪一班？該班車的抵達時間和她原本的最晚抵達時間相差多久？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Train D; 45 minutes after her original deadline.",
+        "zh": "D 車；比原本的最晚抵達時間晚四十五分鐘。",
+        "whyZh": "D 車是最晚出發且符合條件的班次，但十一點抵達只比原本的十點半晚三十分鐘。晚四十五分鐘的是新的最晚抵達時間，不是 D 車的到站時間。"
+      },
+      {
+        "id": "B",
+        "text": "Train B; 10 minutes before her original deadline.",
+        "zh": "B 車；比原本的最晚抵達時間早十分鐘。",
+        "whyZh": "B 車十點二十分抵達，確實比原本的十點半早十分鐘。不過 B 車八點半就出發，比同樣符合新條件的 D 車早。"
+      },
+      {
+        "id": "C",
+        "text": "Train C; 25 minutes before her original deadline.",
+        "zh": "C 車；比原本的最晚抵達時間早二十五分鐘。",
+        "whyZh": "C 車十點零五分抵達，確實比原本的十點半早二十五分鐘，但已客滿，而 Priya 不願依賴候補。"
+      },
+      {
+        "id": "D",
+        "text": "Train D; 30 minutes after her original deadline.",
+        "zh": "D 車；比原本的最晚抵達時間晚三十分鐘。",
+        "whyZh": "D 車有座位，九點三十五分出發、十一點抵達，符合不得早於八點十五分出發及最遲十一點十五分抵達的條件。它比也符合條件的 B 車晚出發；十一點比原本的十點半晚三十分鐘。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "原郵件規定不能早於八點十五分出發、也不接受候補；新情境只把最晚抵達時間改為十一點十五分。A 車太早出發，C 車已客滿，B、D 車都符合；D 車九點三十五分出發較晚，十一點抵達則比原本的十點半晚三十分鐘。",
+    "evidence": "Document 2: no Eastford departure before 8:15, original station-arrival deadline 10:30, no waiting list; revised hypothetical deadline 11:15. Document 1: A leaves 8:00, B available at 8:30→10:20, C fully booked at 9:00→10:05, D available at 9:35→11:00. D is the later eligible departure and reaches Milltown 30 minutes after 10:30.",
+    "vocabulary": [
+      {
+        "term": "fully booked",
+        "zh": "已客滿",
+        "note": "可預訂座位均已訂滿。"
+      },
+      {
+        "term": "refundable",
+        "zh": "可退款的",
+        "note": "符合條件時可以退還款項。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t02-r-p7-12",
+    "testId": "test-02",
+    "part": 7,
+    "title": "Choosing a train",
+    "titleZh": "選擇火車班次",
+    "topic": "daily",
+    "passage": "DOCUMENT 1 — Tuesday trains from Eastford to Milltown\nTrain A: departs 8:00 a.m.; arrives 9:15 a.m.; seats available.\nTrain B: departs 8:30 a.m.; arrives 10:20 a.m.; seats available.\nTrain C: departs 9:00 a.m.; arrives 10:05 a.m.; fully booked.\nTrain D: departs 9:35 a.m.; arrives 11:00 a.m.; seats available.\n\nDOCUMENT 2 — Booking email thread: Priya’s request\nI cannot leave Eastford before 8:15 a.m. My appointment is near Milltown station, and I must arrive at the station no later than 10:30. Please reserve a train that meets both conditions. I do not want to rely on a waiting list.\n\nBooking agent’s reply\nI reserved the only available train that fits your times. The fare is NT$180. You may cancel without a fee until thirty minutes before departure; later cancellations are not refundable. Your ticket is attached. Please arrive at the platform at least ten minutes before the train leaves.",
+    "passageZh": "文件一——星期二 Eastford 至 Milltown 班次\nA 車：08:00 出發，09:15 抵達，仍有座位。\nB 車：08:30 出發，10:20 抵達，仍有座位。\nC 車：09:00 出發，10:05 抵達，已客滿。\nD 車：09:35 出發，11:00 抵達，仍有座位。\n\n文件二——訂票往返郵件：Priya 的請求\n我不能在上午八點十五分前離開 Eastford。我有約，地點靠近 Milltown 車站，但我最遲必須十點半抵達車站。請訂同時符合兩條件的班次，我不想靠候補。\n\n訂票人員回覆\n已訂好唯一符合時間且有座位的班次，票價新臺幣一百八十元。最遲於發車前三十分鐘取消，不收手續費；逾期取消則不退款。車票已附上，請至少提前十分鐘到月台。",
+    "image": "assets/graphics/t02-r-p7-12.svg",
+    "imageAlt": "Tuesday train timetable from Eastford to Milltown, including departure time, arrival time and seat availability.",
+    "imageCaption": "Document 1: Tuesday trains from Eastford to Milltown."
+  },
+  "imageSha256": "b5fb639ad0b9aa2319758a3ad365d38d8402053d8d911da95d6873287ba79e3f",
+  "originalQuestion": {
     "id": "t02-q182",
     "testId": "test-02",
     "number": 182,
@@ -58,19 +129,5 @@
       }
     ],
     "revision": 1
-  },
-  "group": {
-    "id": "t02-r-p7-12",
-    "testId": "test-02",
-    "part": 7,
-    "title": "Choosing a train",
-    "titleZh": "選擇火車班次",
-    "topic": "daily",
-    "passage": "DOCUMENT 1 — Tuesday trains from Eastford to Milltown\nTrain A: departs 8:00 a.m.; arrives 9:15 a.m.; seats available.\nTrain B: departs 8:30 a.m.; arrives 10:20 a.m.; seats available.\nTrain C: departs 9:00 a.m.; arrives 10:05 a.m.; fully booked.\nTrain D: departs 9:35 a.m.; arrives 11:00 a.m.; seats available.\n\nDOCUMENT 2 — Booking email thread: Priya’s request\nI cannot leave Eastford before 8:15 a.m. My appointment is near Milltown station, and I must arrive at the station no later than 10:30. Please reserve a train that meets both conditions. I do not want to rely on a waiting list.\n\nBooking agent’s reply\nI reserved the only available train that fits your times. The fare is NT$180. You may cancel without a fee until thirty minutes before departure; later cancellations are not refundable. Your ticket is attached. Please arrive at the platform at least ten minutes before the train leaves.",
-    "passageZh": "文件一——星期二 Eastford 至 Milltown 班次\nA 車：08:00 出發，09:15 抵達，仍有座位。\nB 車：08:30 出發，10:20 抵達，仍有座位。\nC 車：09:00 出發，10:05 抵達，已客滿。\nD 車：09:35 出發，11:00 抵達，仍有座位。\n\n文件二——訂票往返郵件：Priya 的請求\n我不能在上午八點十五分前離開 Eastford。我有約，地點靠近 Milltown 車站，但我最遲必須十點半抵達車站。請訂同時符合兩條件的班次，我不想靠候補。\n\n訂票人員回覆\n已訂好唯一符合時間且有座位的班次，票價新臺幣一百八十元。最遲於發車前三十分鐘取消，不收手續費；逾期取消則不退款。車票已附上，請至少提前十分鐘到月台。",
-    "image": "assets/graphics/t02-r-p7-12.svg",
-    "imageAlt": "Tuesday train timetable from Eastford to Milltown, including departure time, arrival time and seat availability.",
-    "imageCaption": "Document 1: Tuesday trains from Eastford to Milltown."
-  },
-  "imageSha256": "b5fb639ad0b9aa2319758a3ad365d38d8402053d8d911da95d6873287ba79e3f"
+  }
 }
