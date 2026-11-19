@@ -1,0 +1,163 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "audio": "Offline ASR transcribed both actual clips independently. Every choice matched the script and order after normalizing whitespace.",
+    "imageQuestionKeyAndRationales": "The revised illustration shows a cup between a customer and a worker at the counter. A alone describes the action; there is no washing, carrying a chair, or placement under a table. The zh-TW stem, glosses and rationales preserve those distinctions."
+  },
+  "activeQuestion": {
+    "id": "t01-q003-r2",
+    "testId": "test-01",
+    "number": 3,
+    "part": 1,
+    "groupId": "t01-g003",
+    "topic": "daily",
+    "difficulty": "foundation",
+    "tags": [
+      "daily",
+      "photo_description"
+    ],
+    "prompt": "Look at the picture and choose the statement that best describes it.",
+    "promptZh": "請看圖片，選出最符合畫面的敘述。",
+    "options": [
+      {
+        "id": "A",
+        "text": "A cup is being handed to a customer.",
+        "zh": "一個杯子正被遞給顧客。",
+        "whyZh": "服務人員正把杯子交給顧客；被動進行式 is being handed 精確描述正在發生的交付動作。"
+      },
+      {
+        "id": "B",
+        "text": "A customer is washing cups in a sink.",
+        "zh": "一名顧客正在水槽洗杯子。",
+        "whyZh": "顧客在接杯子，沒有在水槽清洗杯子。"
+      },
+      {
+        "id": "C",
+        "text": "A worker is carrying a chair outdoors.",
+        "zh": "一名工作人員正把椅子搬到戶外。",
+        "whyZh": "畫面主體在櫃檯交付飲品，沒有搬椅子的動作。"
+      },
+      {
+        "id": "D",
+        "text": "A cup has been placed beneath a table.",
+        "zh": "一個杯子已被放到桌子下方。",
+        "whyZh": "杯子正在兩人之間傳遞，並非放在桌下。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "服務人員正把杯子交給顧客；被動進行式 is being handed 精確描述正在發生的交付動作。",
+    "evidence": "A cup is being handed to a customer.",
+    "vocabulary": [
+      {
+        "term": "hand something to someone",
+        "zh": "把某物遞給某人",
+        "note": "hand 在此是動詞，表示親手交付。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t01-q003",
+    "testId": "test-01",
+    "number": 3,
+    "part": 1,
+    "groupId": "t01-g003",
+    "topic": "daily",
+    "difficulty": "foundation",
+    "tags": [
+      "daily",
+      "photo_description"
+    ],
+    "prompt": "Look at the picture and choose the statement that best describes it.",
+    "promptZh": "請看圖片，選出最符合畫面的敘述。",
+    "options": [
+      {
+        "id": "A",
+        "text": "A cup is being handed to a customer.",
+        "zh": "一個杯子正被遞給顧客。",
+        "whyZh": "服務人員正把杯子交給顧客；被動進行式 is being handed 精確描述正在發生的交付動作。"
+      },
+      {
+        "id": "B",
+        "text": "A customer is washing cups in a sink.",
+        "zh": "一名顧客正在水槽洗杯子。",
+        "whyZh": "顧客在接杯子，沒有在水槽清洗杯子。"
+      },
+      {
+        "id": "C",
+        "text": "A worker is carrying a chair outdoors.",
+        "zh": "一名工作人員正把椅子搬到戶外。",
+        "whyZh": "畫面主體在櫃檯交付飲品，沒有搬椅子的動作。"
+      },
+      {
+        "id": "D",
+        "text": "A cup has been placed beneath a table.",
+        "zh": "一個杯子已被放到桌子下方。",
+        "whyZh": "杯子正在兩人之間傳遞，並非放在桌下。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "服務人員正把杯子交給顧客；被動進行式 is being handed 精確描述正在發生的交付動作。",
+    "evidence": "A cup is being handed to a customer.",
+    "vocabulary": [
+      {
+        "term": "hand something to someone",
+        "zh": "把某物遞給某人",
+        "note": "hand 在此是動詞，表示親手交付。"
+      }
+    ],
+    "revision": 1,
+    "archivedImage": "assets/scenes/cafe.svg"
+  },
+  "group": {
+    "id": "t01-g003",
+    "testId": "test-01",
+    "part": 1,
+    "title": "At the café counter",
+    "titleZh": "咖啡店櫃檯",
+    "topic": "daily",
+    "passage": "A. A cup is being handed to a customer. B. A customer is washing cups in a sink. C. A worker is carrying a chair outdoors. D. A cup has been placed beneath a table.",
+    "passageZh": "A. 一個杯子正被遞給顧客。\nB. 一名顧客正在水槽洗杯子。\nC. 一名工作人員正把椅子搬到戶外。\nD. 一個杯子已被放到桌子下方。",
+    "audioScript": "A. A cup is being handed to a customer. B. A customer is washing cups in a sink. C. A worker is carrying a chair outdoors. D. A cup has been placed beneath a table.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "A. A cup is being handed to a customer. B. A customer is washing cups in a sink. C. A worker is carrying a chair outdoors. D. A cup has been placed beneath a table."
+      }
+    ],
+    "imageScene": "cafe",
+    "audio": "audio/azure-v1/test-01-01.mp3",
+    "duration": 19.56,
+    "image": "assets/scenes/cafe-handoff-r2.svg",
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-CA",
+        "role": "female",
+        "modelVoice": "en-CA-ClaraNeural"
+      }
+    ],
+    "audioStart": 37.788,
+    "audioEnd": 57.348
+  },
+  "imageSha256": "e189fec28aff104411714e51079b621188767e839c3d3af25743749cafd02c3b",
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-01-01.mp3",
+      "from": 40.596,
+      "to": 59.868,
+      "assetSha256": "7ee1ae0ee4ea1abe66eaee4aa2d5988462a9b96026be63617f4d5ba268025251",
+      "speech": "A. A cup is being handed to a customer. B. A customer is washing cups in a sink. C. A worker is carrying a chair outdoors. D. A cup has been placed beneath a table."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-01.mp3",
+      "from": 37.788,
+      "to": 57.348,
+      "assetSha256": "0793147e0ad47e0a35953cf8b483dc724bda8ebd60864ab26d0f393acb6592a1",
+      "speech": "A. A cup is being handed to a customer. B. A customer is washing cups in a sink. C. A worker is carrying a chair outdoors. D. A cup has been placed beneath a table."
+    }
+  ]
+}
