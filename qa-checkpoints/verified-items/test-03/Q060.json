@@ -1,0 +1,157 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "A: The file must be under 5 MB. Resize the high-quality image and try again, instead of changing its date or supplying a print or note. Shared actual range matches in both modes: missing taxi receipt, strictly under five megabytes, resize/reupload, no need to re-enter expenses, manager approval by tomorrow afternoon. Group cue and three printed question stems match; #60 was displayed as a label in standalone transcript and examined in longer excerpt.",
+  "activeQuestion": {
+    "id": "t03-q060",
+    "testId": "test-03",
+    "number": 60,
+    "part": 3,
+    "groupId": "t03-g041",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "detail"
+    ],
+    "prompt": "What should the woman do to the image?",
+    "promptZh": "女子應如何處理圖片？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reduce its file size",
+        "zh": "縮小檔案大小",
+        "whyZh": "每個上傳檔案必須小於 5 MB，應縮小圖片再重傳。"
+      },
+      {
+        "id": "B",
+        "text": "Print it in color",
+        "zh": "彩色列印",
+        "whyZh": "系統接受電子圖檔，不需列印。"
+      },
+      {
+        "id": "C",
+        "text": "Remove the date from it",
+        "zh": "移除日期",
+        "whyZh": "沒有日期錯誤問題。"
+      },
+      {
+        "id": "D",
+        "text": "Replace it with a handwritten note",
+        "zh": "以手寫說明取代",
+        "whyZh": "仍需收據圖片，不能只用說明。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "每個上傳檔案必須小於 5 MB，應縮小圖片再重傳。",
+    "evidence": "Resize the image and upload it again.",
+    "vocabulary": [
+      {
+        "term": "reimbursement",
+        "zh": "費用報銷",
+        "note": "公司退還員工代付的工作費用。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g041",
+    "testId": "test-03",
+    "part": 3,
+    "title": "Fixing a missing receipt",
+    "titleZh": "補登收據",
+    "topic": "business",
+    "passage": "F1: My expense claim was returned because a taxi receipt is missing. I uploaded a photograph from my phone, so I'm not sure what happened.\nM1: The new system accepts image files, but each upload must be under five megabytes. Did you see a confirmation message?\nF1: I don't remember one. The photograph was very large because I used the highest camera setting.\nM1: That probably explains it. Resize the image and upload it again. You don't need to enter the other expenses a second time.\nF1: Will I still receive reimbursement this month?\nM1: Yes, provided your manager approves the corrected claim by tomorrow afternoon. I'll send her a reminder once the receipt appears.",
+    "passageZh": "女：我的費用申請因缺計程車收據被退回。我用手機上傳了照片，不知道怎麼了。\n男：新系統收圖片檔，但每個上傳檔案必須小於 5 MB。有看到確認訊息嗎？\n女：不記得。因為用了相機最高畫質，照片很大。\n男：大概就是原因。縮小再上傳，不必重新輸入其他費用。\n女：這個月還能收到報銷款嗎？\n男：可以，只要主管最晚在明天下午核准更正後的申請。收據出現後我會提醒她。",
+    "audioScript": "My expense claim was returned because a taxi receipt is missing. I uploaded a photograph from my phone, so I'm not sure what happened.\nThe new system accepts image files, but each upload must be under five megabytes. Did you see a confirmation message?\nI don't remember one. The photograph was very large because I used the highest camera setting.\nThat probably explains it. Resize the image and upload it again. You don't need to enter the other expenses a second time.\nWill I still receive reimbursement this month?\nYes, provided your manager approves the corrected claim by tomorrow afternoon. I'll send her a reminder once the receipt appears.",
+    "turns": [
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "My expense claim was returned because a taxi receipt is missing. I uploaded a photograph from my phone, so I'm not sure what happened."
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "The new system accepts image files, but each upload must be under five megabytes. Did you see a confirmation message?"
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "I don't remember one. The photograph was very large because I used the highest camera setting."
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "That probably explains it. Resize the image and upload it again. You don't need to enter the other expenses a second time."
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "Will I still receive reimbursement this month?"
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "Yes, provided your manager approves the corrected claim by tomorrow afternoon. I'll send her a reminder once the receipt appears."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-21.mp3",
+    "duration": 47.688,
+    "audioStart": 0.5,
+    "audioEnd": 48.188,
+    "audioSpeakers": [
+      {
+        "speaker": "F1",
+        "locale": "en-PH",
+        "role": "female",
+        "modelVoice": "en-PH-RosaNeural"
+      },
+      {
+        "speaker": "M1",
+        "locale": "en-PH",
+        "role": "male",
+        "modelVoice": "en-PH-JamesNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-03.mp3",
+      "start": 30.92283,
+      "end": 34.93608,
+      "assetSha256": "cb55c1d3ed563f9e894d7f953440e40eb230ebb03ac85980a8d5c62c9e92888a",
+      "speech": "Questions 59 through 61. Listen to the conversation."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-03-21.mp3",
+      "start": 0.5,
+      "end": 48.188,
+      "assetSha256": "1020cb0f9b44629f06f9093c9815a0363559e0d8861c4d48b283c26b1a94c33c",
+      "speech": "My expense claim was returned because a taxi receipt is missing. I uploaded a photograph from my phone, so I'm not sure what happened. The new system accepts image files, but each upload must be under five megabytes. Did you see a confirmation message? I don't remember one. The photograph was very large because I used the highest camera setting. That probably explains it. Resize the image and upload it again. You don't need to enter the other expenses a second time. Will I still receive reimbursement this month? Yes, provided your manager approves the corrected claim by tomorrow afternoon. I'll send her a reminder once the receipt appears."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-21.mp3",
+      "start": 0.5,
+      "end": 48.188,
+      "assetSha256": "1020cb0f9b44629f06f9093c9815a0363559e0d8861c4d48b283c26b1a94c33c",
+      "speech": "My expense claim was returned because a taxi receipt is missing. I uploaded a photograph from my phone, so I'm not sure what happened. The new system accepts image files, but each upload must be under five megabytes. Did you see a confirmation message? I don't remember one. The photograph was very large because I used the highest camera setting. That probably explains it. Resize the image and upload it again. You don't need to enter the other expenses a second time. Will I still receive reimbursement this month? Yes, provided your manager approves the corrected claim by tomorrow afternoon. I'll send her a reminder once the receipt appears."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-03-cues-03.mp3",
+      "start": 38.58725,
+      "end": 41.31842,
+      "assetSha256": "cb55c1d3ed563f9e894d7f953440e40eb230ebb03ac85980a8d5c62c9e92888a",
+      "speech": "#60 What should the woman do to the image?",
+      "continuousNumberEvidence": {
+        "start": 18.983,
+        "end": 45.32946,
+        "speech": "Number 56, what type of seating do the participants need? Number 57, look at the graphic, which room will the man reserve? Number 58, why does the man request early access? Questions 59 through 61, listen to the conversation. Number 59, why was the expense claim returned? Number 60, what should the woman do to the image? Number 61, what is required for reimbursement this month?"
+      }
+    }
+  ]
+}

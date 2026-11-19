@@ -1,0 +1,152 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "A: Notify organizer in advance if either participant has a food allergy. Equipment is supplied, and no kitchen or buying information is requested. Shared actual range matches both modes: beginner allowed, Saturday 1 spot, Sunday 4 spots, ends five, food allergy must be reported. Formal group cue and all stems/numbers match.",
+  "activeQuestion": {
+    "id": "t03-q064",
+    "testId": "test-03",
+    "number": 64,
+    "part": 3,
+    "groupId": "t03-g042",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "detail"
+    ],
+    "prompt": "What should participants report in advance?",
+    "promptZh": "參與者應事先告知什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Any food allergies",
+        "zh": "食物過敏",
+        "whyZh": "最後要求預先告知食物過敏情況。"
+      },
+      {
+        "id": "B",
+        "text": "Their preferred equipment brands",
+        "zh": "偏好的設備品牌",
+        "whyZh": "設備全部提供，未問品牌。"
+      },
+      {
+        "id": "C",
+        "text": "The size of their kitchen",
+        "zh": "廚房大小",
+        "whyZh": "課程在教室，無關家中廚房。"
+      },
+      {
+        "id": "D",
+        "text": "How much bread they will purchase",
+        "zh": "要購買多少麵包",
+        "whyZh": "沒有購買數量要求。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "最後要求預先告知食物過敏情況。",
+    "evidence": "tell us in advance if either of you has a food allergy",
+    "vocabulary": [
+      {
+        "term": "food allergy",
+        "zh": "食物過敏",
+        "note": "上烹飪課前應告知的飲食安全資訊。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g042",
+    "testId": "test-03",
+    "part": 3,
+    "title": "A bakery reservation",
+    "titleZh": "預訂烘焙課程",
+    "topic": "daily",
+    "passage": "M1: I'd like to book Saturday's bread-making class for my sister and me. The website says that beginners are welcome, but she has never baked anything.\nF1: That's perfectly fine. The instructor demonstrates each stage before participants try it. The only difficulty is that Saturday now has just one place left.\nM1: We really want to attend together. Is there another class soon?\nF1: We have the same course on Sunday afternoon, with four places available. It finishes at five, and you take home the bread you make.\nM1: Sunday works. Do we need to bring equipment?\nF1: No, everything is supplied. Just wear closed shoes and tell us in advance if either of you has a food allergy.",
+    "passageZh": "男：我想跟我姊妹一起報名星期六的麵包製作課。網站說歡迎初學者，但她完全沒烤過東西。\n女：沒關係，老師會先示範每一階段再讓學員做。唯一問題是星期六只剩一個名額。\n男：我們很想一起上。有近期其他課嗎？\n女：星期日下午有相同課程，還有四個名額，五點結束，可以把做的麵包帶回家。\n男：星期日可以。需要帶設備嗎？\n女：不用，全部提供。請穿包住腳趾的鞋子；如果你們其中一人有食物過敏，請事先告知。",
+    "audioScript": "I'd like to book Saturday's bread-making class for my sister and me. The website says that beginners are welcome, but she has never baked anything.\nThat's perfectly fine. The instructor demonstrates each stage before participants try it. The only difficulty is that Saturday now has just one place left.\nWe really want to attend together. Is there another class soon?\nWe have the same course on Sunday afternoon, with four places available. It finishes at five, and you take home the bread you make.\nSunday works. Do we need to bring equipment?\nNo, everything is supplied. Just wear closed shoes and tell us in advance if either of you has a food allergy.",
+    "turns": [
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "I'd like to book Saturday's bread-making class for my sister and me. The website says that beginners are welcome, but she has never baked anything."
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "That's perfectly fine. The instructor demonstrates each stage before participants try it. The only difficulty is that Saturday now has just one place left."
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "We really want to attend together. Is there another class soon?"
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "We have the same course on Sunday afternoon, with four places available. It finishes at five, and you take home the bread you make."
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "Sunday works. Do we need to bring equipment?"
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "No, everything is supplied. Just wear closed shoes and tell us in advance if either of you has a food allergy."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-22.mp3",
+    "duration": 51.576,
+    "audioStart": 0.5,
+    "audioEnd": 52.076,
+    "audioSpeakers": [
+      {
+        "speaker": "M1",
+        "locale": "en-NZ",
+        "role": "male",
+        "modelVoice": "en-NZ-MitchellNeural"
+      },
+      {
+        "speaker": "F1",
+        "locale": "en-NZ",
+        "role": "female",
+        "modelVoice": "en-NZ-MollyNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-03.mp3",
+      "start": 45.57946,
+      "end": 49.59279,
+      "assetSha256": "cb55c1d3ed563f9e894d7f953440e40eb230ebb03ac85980a8d5c62c9e92888a",
+      "speech": "Questions 62 through 64. Listen to the conversation."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-03-22.mp3",
+      "start": 0.5,
+      "end": 52.076,
+      "assetSha256": "4bc2014c589901cf63f237387a3b149a4c3b88bb4fc6c418e39e1f6cb5e16328",
+      "speech": "I'd like to book Saturday's bread-making class for my sister and me. The website says that beginners are welcome, but she has never baked anything. That's perfectly fine. The instructor demonstrates each stage before participants try it. The only difficulty is that Saturday now has just one place left. We really want to attend together. Is there another class soon? We have the same course on Sunday afternoon, with four places available. It finishes at five, and you take home the bread you make. Sunday works. Do we need to bring equipment? No, everything is supplied. Just wear closed shoes and tell us in advance if either of you has a food allergy."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-22.mp3",
+      "start": 0.5,
+      "end": 52.076,
+      "assetSha256": "4bc2014c589901cf63f237387a3b149a4c3b88bb4fc6c418e39e1f6cb5e16328",
+      "speech": "I'd like to book Saturday's bread-making class for my sister and me. The website says that beginners are welcome, but she has never baked anything. That's perfectly fine. The instructor demonstrates each stage before participants try it. The only difficulty is that Saturday now has just one place left. We really want to attend together. Is there another class soon? We have the same course on Sunday afternoon, with four places available. It finishes at five, and you take home the bread you make. Sunday works. Do we need to bring equipment? No, everything is supplied. Just wear closed shoes and tell us in advance if either of you has a food allergy."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-03-cues-03.mp3",
+      "start": 57.05833,
+      "end": 60.64367,
+      "assetSha256": "cb55c1d3ed563f9e894d7f953440e40eb230ebb03ac85980a8d5c62c9e92888a",
+      "speech": "Number 64. What should participants report in advance?"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "D: Record both temperature readings for the next shift, rather than costs, arrival time, or adhesive expiration. Shared actual range matches both modes: line 3 display 40, handheld 22, contractor at 2, record both, check loose connection before ordering. Formal group cue and all stems/numbers agree. Number formatting (e.g. #66 in standalone) is typography.",
+  "activeQuestion": {
+    "id": "t03-q066",
+    "testId": "test-03",
+    "number": 66,
+    "part": 3,
+    "groupId": "t03-g043",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "detail"
+    ],
+    "prompt": "What does the man ask the woman to record?",
+    "promptZh": "男子要女子記錄什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The cost of a new sensor",
+        "zh": "新感測器成本",
+        "whyZh": "尚未訂購，無價格。"
+      },
+      {
+        "id": "B",
+        "text": "The contractor's arrival time",
+        "zh": "承包商到場時間",
+        "whyZh": "已排兩點，但要求記錄的是溫度。"
+      },
+      {
+        "id": "C",
+        "text": "The adhesive's expiration date",
+        "zh": "黏著劑有效期限",
+        "whyZh": "只提黏著劑正常溫度範圍。"
+      },
+      {
+        "id": "D",
+        "text": "The two temperature readings",
+        "zh": "兩個溫度讀數",
+        "whyZh": "交班紀錄需同時列出兩值，讓下一班了解差異。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "交班紀錄需同時列出兩值，讓下一班了解差異。",
+    "evidence": "record both readings in the shift log",
+    "vocabulary": [
+      {
+        "term": "rule out",
+        "zh": "排除",
+        "note": "先檢查某原因，確認不是它造成故障。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g043",
+    "testId": "test-03",
+    "part": 3,
+    "title": "Inspecting a sensor",
+    "titleZh": "檢查感測器",
+    "topic": "manufacturing",
+    "passage": "F1: The temperature display on line three shows forty degrees, but the room doesn't feel warm. Should we stop production?\nM1: Let's compare it with the handheld thermometer first. We replaced that wall sensor last week, and its cable may have come loose.\nF1: The handheld unit reads twenty-two. That's within the normal range for the adhesive.\nM1: Then production can continue while I inspect the connection. Please record both readings in the shift log so the next team understands the difference.\nF1: All right. The maintenance contractor is scheduled to visit at two. Shall I ask him to bring a replacement sensor?\nM1: Not yet. I want to rule out a loose connection before we order another part. I'll call you once I've checked it.",
+    "passageZh": "女：三號線溫度顯示四十度，但室內感覺不熱，要停產嗎？\n男：先跟手持溫度計比較。牆上感測器上週才換過，可能接線鬆了。\n女：手持式顯示二十二度，在黏著劑正常範圍內。\n男：那我檢查接線時可以繼續生產。請在交班紀錄寫下兩個數值，讓下一班了解差異。\n女：好。維修承包商兩點要來，要請他帶備用感測器嗎？\n男：先不用，訂零件前要先排除接線鬆脫。我檢查完會打給你。",
+    "audioScript": "The temperature display on line three shows forty degrees, but the room doesn't feel warm. Should we stop production?\nLet's compare it with the handheld thermometer first. We replaced that wall sensor last week, and its cable may have come loose.\nThe handheld unit reads twenty-two. That's within the normal range for the adhesive.\nThen production can continue while I inspect the connection. Please record both readings in the shift log so the next team understands the difference.\nAll right. The maintenance contractor is scheduled to visit at two. Shall I ask him to bring a replacement sensor?\nNot yet. I want to rule out a loose connection before we order another part. I'll call you once I've checked it.",
+    "turns": [
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "The temperature display on line three shows forty degrees, but the room doesn't feel warm. Should we stop production?"
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "Let's compare it with the handheld thermometer first. We replaced that wall sensor last week, and its cable may have come loose."
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "The handheld unit reads twenty-two. That's within the normal range for the adhesive."
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "Then production can continue while I inspect the connection. Please record both readings in the shift log so the next team understands the difference."
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "All right. The maintenance contractor is scheduled to visit at two. Shall I ask him to bring a replacement sensor?"
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "Not yet. I want to rule out a loose connection before we order another part. I'll call you once I've checked it."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-23.mp3",
+    "duration": 52.296,
+    "audioStart": 0.5,
+    "audioEnd": 52.796,
+    "audioSpeakers": [
+      {
+        "speaker": "F1",
+        "locale": "en-IE",
+        "role": "female",
+        "modelVoice": "en-IE-EmilyNeural"
+      },
+      {
+        "speaker": "M1",
+        "locale": "en-IE",
+        "role": "male",
+        "modelVoice": "en-IE-ConnorNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-03.mp3",
+      "start": 60.89367,
+      "end": 65.01458,
+      "assetSha256": "cb55c1d3ed563f9e894d7f953440e40eb230ebb03ac85980a8d5c62c9e92888a",
+      "speech": "Questions 65 through 67, listen to the conversation."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-03-23.mp3",
+      "start": 0.5,
+      "end": 52.796,
+      "assetSha256": "0a036d725aa4ebaabb97d37edd6a4e6f319862957df509f072d97f1bb951d432",
+      "speech": "The temperature display on line 3 shows 40 degrees, but the room doesn't feel warm. Should we stop production? Let's compare it with the handheld thermometer first. We replaced that wall sensor last week, and its cable may have come loose. The handheld unit reads 22. That's within the normal range for the adhesive. Then production can continue while I inspect the connection. Please record both readings in the shift log so the next team understands the difference. Alright. The maintenance contractor is scheduled to visit at 2. Shall I ask him to bring a replacement sensor? Not yet. I want to rule out a loose connection before we order another part. I'll call you once I've checked it."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-23.mp3",
+      "start": 0.5,
+      "end": 52.796,
+      "assetSha256": "0a036d725aa4ebaabb97d37edd6a4e6f319862957df509f072d97f1bb951d432",
+      "speech": "The temperature display on line 3 shows 40 degrees, but the room doesn't feel warm. Should we stop production? Let's compare it with the handheld thermometer first. We replaced that wall sensor last week, and its cable may have come loose. The handheld unit reads 22. That's within the normal range for the adhesive. Then production can continue while I inspect the connection. Please record both readings in the shift log so the next team understands the difference. Alright. The maintenance contractor is scheduled to visit at 2. Shall I ask him to bring a replacement sensor? Not yet. I want to rule out a loose connection before we order another part. I'll call you once I've checked it."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-03-cues-04.mp3",
+      "start": 0.25,
+      "end": 3.73292,
+      "assetSha256": "f5db73b2aab14a49b3a6ba3408fbf600098cfa5626160ea7dd95a13b9bf6404b",
+      "speech": "#66. What does the man ask the woman to record?",
+      "continuousNumberEvidence": {
+        "start": 0.25,
+        "end": 7.04796,
+        "speech": "Number 66, what does the man ask the woman to record? Number 67, why does the man say not yet?"
+      }
+    }
+  ]
+}
