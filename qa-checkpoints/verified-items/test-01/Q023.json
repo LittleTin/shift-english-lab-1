@@ -1,0 +1,113 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Only A confirms the original reservation for six and explains two cancellations. Closing time and table material do not answer the question. Actual formal/practice audio agree, allowing canceled/cancelled spelling. Both language versions and rationales checked.",
+  "activeQuestion": {
+    "id": "t01-q023",
+    "testId": "test-01",
+    "number": 23,
+    "part": 2,
+    "groupId": "t01-g023",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "negative_question"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes, but two guests just canceled.",
+        "zh": "是的，不過有兩位客人剛取消。",
+        "whyZh": "這是確認原先預約的否定問句；Yes 確認原本訂六位，再說明人數減少的變化。"
+      },
+      {
+        "id": "B",
+        "text": "We close at ten tonight.",
+        "zh": "我們今晚十點打烊。",
+        "whyZh": "打烊時間沒有回答原本的六人預約。"
+      },
+      {
+        "id": "C",
+        "text": "The table is made of wood.",
+        "zh": "桌子是木製的。",
+        "whyZh": "table 在此指餐廳訂位，桌子的材質與預約人數無關。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "這是確認原先預約的否定問句；Yes 確認原本訂六位，再說明人數減少的變化。",
+    "evidence": "Didn't you reserve a table for six?",
+    "vocabulary": [
+      {
+        "term": "reserve",
+        "zh": "預訂",
+        "note": "安排事先保留座位或服務。"
+      },
+      {
+        "term": "cancel",
+        "zh": "取消",
+        "note": "這裡是客人取消出席。"
+      }
+    ],
+    "revision": 1
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-01-08.mp3",
+      "start": 33.636,
+      "end": 49.908,
+      "assetSha256": "9b0ebb8456f362c9234578465db6642a04f4d5f1563201416321a912205b196e",
+      "speech": "Didn't you reserve a table for six?\n A. Yes, but two guests just cancelled.\n B. We close at ten tonight.\n C. The table is made of wood."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-08.mp3",
+      "start": 33.468,
+      "end": 50.532,
+      "assetSha256": "3d6388349928581a1cb283eb87c200677560b0423906968674115c2a8a4b23a9",
+      "speech": "Didn't you reserve a table for six?\n A. Yes, but two guests just cancelled.\n B. We close at ten tonight.\n C. The table is made of wood."
+    }
+  ],
+  "group": {
+    "id": "t01-g023",
+    "testId": "test-01",
+    "part": 2,
+    "title": "A changed dinner party",
+    "titleZh": "用餐人數變動",
+    "topic": "daily",
+    "passage": "Didn't you reserve a table for six?\nA. Yes, but two guests just canceled. B. We close at ten tonight. C. The table is made of wood.",
+    "passageZh": "你不是預訂了六人桌嗎？\nA. 是的，不過有兩位客人剛取消。\nB. 我們今晚十點打烊。\nC. 桌子是木製的。",
+    "audioScript": "Didn't you reserve a table for six?\nA. Yes, but two guests just canceled. B. We close at ten tonight. C. The table is made of wood.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Didn't you reserve a table for six?"
+      },
+      {
+        "voice": "male",
+        "text": "A. Yes, but two guests just canceled. B. We close at ten tonight. C. The table is made of wood."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-08.mp3",
+    "duration": 17.064,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-NZ",
+        "role": "female",
+        "modelVoice": "en-NZ-MollyNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-NZ",
+        "role": "male",
+        "modelVoice": "en-NZ-MitchellNeural"
+      }
+    ],
+    "audioStart": 33.468,
+    "audioEnd": 50.532
+  }
+}
