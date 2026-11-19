@@ -1,0 +1,223 @@
+{
+  "status": "exact-item-verified-offline-not-published",
+  "testId": "test-01",
+  "oldPlanSha256": "d7ae2c5b0023395b55d18c4a04a31eaf67791d0e82e91412143d86bd61d60d1f",
+  "groups": {
+    "t01-g053": {
+      "oldGroupSha256": "64254b8f05b4ffe355b96d01d85bb05d463974215d2881c23ba7c6245f4f82dd",
+      "oldQuestionSha256": {
+        "t01-q095": "d0e7eca905cd5fa1ee4575f2968436996f6a2f2914f95ca5ad98a904e1a85619",
+        "t01-q096": "c4e99376ea58d4d4751a34366386ec2616a0930502d8f9535d84a2525960656b",
+        "t01-q097": "b5d9b6e1b81e019aae8969aaf4cb6de13b2229f9e7b89a5360d2e6bf6c9e6796"
+      },
+      "newGroup": {
+        "id": "t01-g053-r2",
+        "testId": "test-01",
+        "part": 4,
+        "title": "Museum admission and audio guides",
+        "titleZh": "博物館門票與語音導覽",
+        "topic": "daily",
+        "passage": "Welcome to the Harbor History Museum. Regular admission includes the permanent collection and today's guided tour at two thirty. The photography exhibition upstairs needs its own ticket, sold at the information desk. To borrow a free audio guide, leave a photo ID with the attendant. You'll get your ID back after returning the guide. Put bulky luggage in the lockers by the entrance. The museum closes at six. The photography exhibition stops admitting visitors at five.",
+        "passageZh": "歡迎來到 Harbor History Museum。一般門票包含常設展，以及今天兩點半的導覽。樓上的攝影特展須另購門票，可在服務台購買。若要免費借用語音導覽機，請把附照片的身分證明文件留給服務人員。歸還導覽機後即可領回證件。大件行李請放在入口旁的置物櫃。博物館六點閉館。攝影特展最後入場時間是五點。",
+        "audioScript": "Welcome to the Harbor History Museum. Regular admission includes the permanent collection and today's guided tour at two thirty. The photography exhibition upstairs needs its own ticket, sold at the information desk. To borrow a free audio guide, leave a photo ID with the attendant. You'll get your ID back after returning the guide. Put bulky luggage in the lockers by the entrance. The museum closes at six. The photography exhibition stops admitting visitors at five.",
+        "turns": [
+          {
+            "voice": "male",
+            "text": "Welcome to the Harbor History Museum. Regular admission includes the permanent collection and today's guided tour at two thirty. The photography exhibition upstairs needs its own ticket, sold at the information desk. To borrow a free audio guide, leave a photo ID with the attendant. You'll get your ID back after returning the guide. Put bulky luggage in the lockers by the entrance. The museum closes at six. The photography exhibition stops admitting visitors at five."
+          }
+        ],
+        "audio": "audio/exams/test-01/groups/t01-g053-r2/passage.wav",
+        "duration": 31.175,
+        "audioSpeakers": [
+          {
+            "speaker": "male",
+            "locale": "en-KE",
+            "role": "male",
+            "modelVoice": "en-KE-ChilembaNeural"
+          }
+        ],
+        "audioStart": 0,
+        "audioEnd": 31.175
+      },
+      "newQuestions": [
+        {
+          "id": "t01-q095",
+          "testId": "test-01",
+          "number": 95,
+          "part": 4,
+          "groupId": "t01-g053-r2",
+          "topic": "daily",
+          "difficulty": "intermediate",
+          "tags": [
+            "daily",
+            "included_service"
+          ],
+          "prompt": "What is included in a regular admission ticket?",
+          "promptZh": "一般門票包含下列哪一項？",
+          "options": [
+            {
+              "id": "A",
+              "text": "A photography-exhibition ticket.",
+              "zh": "攝影特展門票。",
+              "whyZh": "攝影特展 requires a separate ticket，不在一般票內。"
+            },
+            {
+              "id": "B",
+              "text": "A meal in the museum restaurant.",
+              "zh": "博物館餐廳的一餐。",
+              "whyZh": "沒有提到餐飲包含在門票內。"
+            },
+            {
+              "id": "C",
+              "text": "A free printed photograph.",
+              "zh": "一張免費沖印照片。",
+              "whyZh": "photography 指展覽主題，未提供免費沖印。"
+            },
+            {
+              "id": "D",
+              "text": "The guided tour at two thirty.",
+              "zh": "兩點半的導覽。",
+              "whyZh": "公告說一般門票包含常設展與今天兩點半導覽；攝影特展另購票。"
+            }
+          ],
+          "answer": "D",
+          "explanationZh": "公告說一般門票包含常設展與今天兩點半導覽；攝影特展另購票。",
+          "evidence": "Regular admission includes the permanent collection and today's guided tour at two thirty.",
+          "vocabulary": [
+            {
+              "term": "permanent collection",
+              "zh": "常設收藏展",
+              "note": "長期展示館藏的展覽內容。"
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "id": "t01-q096",
+          "testId": "test-01",
+          "number": 96,
+          "part": 4,
+          "groupId": "t01-g053-r2",
+          "topic": "daily",
+          "difficulty": "intermediate",
+          "tags": [
+            "daily",
+            "requirement"
+          ],
+          "prompt": "What is required to borrow an audio guide?",
+          "promptZh": "借用語音導覽機需要什麼？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Buying a photography-exhibition ticket.",
+              "zh": "購買攝影特展門票。",
+              "whyZh": "特展購票與借用導覽機是分開事項。"
+            },
+            {
+              "id": "B",
+              "text": "Leaving a photo ID with the attendant.",
+              "zh": "把附照片證件留給服務人員。",
+              "whyZh": "免費借用的條件是暫留 photo ID；歸還導覽機後再取回證件。"
+            },
+            {
+              "id": "C",
+              "text": "Paying an hourly rental fee.",
+              "zh": "支付每小時租金。",
+              "whyZh": "公告說 free of charge，沒有按時計費。"
+            },
+            {
+              "id": "D",
+              "text": "Arriving after the museum closes.",
+              "zh": "閉館後抵達。",
+              "whyZh": "借用服務在參觀期間使用，沒有閉館後辦理的規則。"
+            }
+          ],
+          "answer": "B",
+          "explanationZh": "免費借用的條件是暫留 photo ID；歸還導覽機後再取回證件。",
+          "evidence": "To borrow a free audio guide, leave a photo ID with the attendant.",
+          "vocabulary": [
+            {
+              "term": "photo ID",
+              "zh": "附照片身分證明文件",
+              "note": "能以照片核對持有人身分的證件。"
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "id": "t01-q097",
+          "testId": "test-01",
+          "number": 97,
+          "part": 4,
+          "groupId": "t01-g053-r2",
+          "topic": "daily",
+          "difficulty": "intermediate",
+          "tags": [
+            "daily",
+            "time"
+          ],
+          "prompt": "What is the last admission time for the photography exhibition?",
+          "promptZh": "攝影特展最後入場時間是幾點？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Two thirty.",
+              "zh": "兩點半。",
+              "whyZh": "兩點半是導覽開始時間。"
+            },
+            {
+              "id": "B",
+              "text": "Six o'clock.",
+              "zh": "六點。",
+              "whyZh": "六點是博物館閉館時間，不是特展最後入場時間。"
+            },
+            {
+              "id": "C",
+              "text": "Five o'clock.",
+              "zh": "五點。",
+              "whyZh": "公告區分博物館六點閉館與特展五點最後入場；題目問的是後者。"
+            },
+            {
+              "id": "D",
+              "text": "Seven thirty.",
+              "zh": "七點半。",
+              "whyZh": "公告沒有七點半，且晚於閉館時間。"
+            }
+          ],
+          "answer": "C",
+          "explanationZh": "公告區分博物館六點閉館與特展五點最後入場；題目問的是後者。",
+          "evidence": "The museum closes at six. The photography exhibition stops admitting visitors at five.",
+          "vocabulary": [
+            {
+              "term": "last admission",
+              "zh": "最後入場",
+              "note": "遊客可開始進入展場的最晚時間，可能早於閉館。"
+            }
+          ],
+          "revision": 1
+        }
+      ],
+      "oldFrameSha256": [
+        "ea57cdb27f005f73f3f76cddc237882e4950d52bb6b5b9f7478c2198217c11a7",
+        "ac75cde76cebc691c4af1233a372b21235a97a2a79e3f87331c84de3b5607ddd",
+        "20a2fe8220850d4bc4d7b732526f68daf43e9696d04dbdc4a1b97f24423605b7",
+        "01babdcd271e6fab35877bd700cc2a24367662036f9183805ae8ce58dac0f935",
+        "8471795d5cbfe5f15bb7e33060502ea7eeaf777558f4d16797c30d41e548fc56",
+        "dc530ab9a060bdf6941eb60cc4ecd0e1798525d99b5bb0784d801460cefc867d",
+        "d0daa8be15c5f588f3cc2ff9d3c12ca22d73c0173800b099348699a914089226",
+        "f70d72c5068988d6b8b1cafc5d838d3e354b1bd09d0a009e55e7bbb595965e2b"
+      ],
+      "oldSources": {
+        "audio/azure-v1/test-01-33.mp3": "1cb122e5342163330fd1fb1c4c7394f6944de93c4ce1dd43b42b2960fbac75ec",
+        "audio/formal/test-01-cues-06.mp3": "2337fe71d1c63145b612d550acc785e0342b6af6749661ea7ae3434b17cbba4d"
+      },
+      "newShared": {
+        "path": "audio/exams/test-01/groups/t01-g053-r2/passage.wav",
+        "sha256": "9c0714528272082ff4097af2c8607048cdb678a1343d0a3e46b50ad67a5a9fd4",
+        "samples": 748200,
+        "seconds": 31.175
+      }
+    }
+  },
+  "newPlanSha256": "d043595752dab7937b7e765695589809307d3a23bb01290b72cdf1f1c7179731"
+}

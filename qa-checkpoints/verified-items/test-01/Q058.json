@@ -1,0 +1,203 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "audio": "Unprompted Whisper small.en recognized all authored words across the six turns, including booking time, itemized taxi receipt, lack of payment date, attach file to existing claim, do not start another one and I will review it this afternoon. Independent Vosk lgraph confirms booking time, payment-date omission, the itemized receipt, existing claim and explicit I will review; its orthographic/subword variants in otherwise intelligible turns are not taken as exact evidence by themselves. Both modes use the same sample-bound validated dialogue, not counted as independent observations. Original matched numbered group cue and stem are reused, recognized by independent lgraph decoder.",
+    "content": "Follow the direct last instruction to attach the file to the existing claim and not open another. Exact original EN/ZH item meaning and key preserved; any excerpt/analysis changes are matched to actual repaired dialogue.",
+    "association": "Same question and answer identifiers, distinct repaired shared group asset r2, source media and old attempts immutable. Group-local gain goes to own three answer pauses only; unaffected frame data exact. Not native browser acceptance."
+  },
+  "activeQuestion": {
+    "id": "t01-q058",
+    "testId": "test-01",
+    "number": 58,
+    "part": 3,
+    "groupId": "t01-g040-r2",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "next_action"
+    ],
+    "prompt": "What should the woman do next?",
+    "promptZh": "女子接下來應該做什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Start a new reimbursement claim.",
+        "zh": "建立新的費用申請。",
+        "whyZh": "男子明確說 Do not start another one，不要另開一份申請。"
+      },
+      {
+        "id": "B",
+        "text": "Ask the driver to refund the fare.",
+        "zh": "請司機退還車資。",
+        "whyZh": "目的是補齊核銷文件，不是退款。"
+      },
+      {
+        "id": "C",
+        "text": "Attach the receipt to her existing claim.",
+        "zh": "把收據附到原本的申請。",
+        "whyZh": "男子說要把檔案附在原申請上，並明確表示不要另開新申請。"
+      },
+      {
+        "id": "D",
+        "text": "Change the date of the taxi booking.",
+        "zh": "更改叫車預約日期。",
+        "whyZh": "已完成的行程不需更改預約日期；需要的是正確收據。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "男子說要把檔案附在原申請上，並明確表示不要另開新申請。",
+    "evidence": "Great. Attach that file to your existing claim. Do not start another one. I will review it this afternoon.",
+    "vocabulary": [
+      {
+        "term": "existing claim",
+        "zh": "現有申請",
+        "note": "已經提交、目前需補件的核銷案件。"
+      }
+    ],
+    "revision": 1
+  },
+  "originalQuestion": {
+    "id": "t01-q058",
+    "testId": "test-01",
+    "number": 58,
+    "part": 3,
+    "groupId": "t01-g040",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "next_action"
+    ],
+    "prompt": "What should the woman do next?",
+    "promptZh": "女子接下來應該做什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Start a new reimbursement claim.",
+        "zh": "建立新的費用申請。",
+        "whyZh": "男子用 rather than starting a new one 明確排除此做法。"
+      },
+      {
+        "id": "B",
+        "text": "Ask the driver to refund the fare.",
+        "zh": "請司機退還車資。",
+        "whyZh": "目的是補齊核銷文件，不是退款。"
+      },
+      {
+        "id": "C",
+        "text": "Attach the receipt to her existing claim.",
+        "zh": "把收據附到原本的申請。",
+        "whyZh": "男子明確要求 attach ... to the existing claim，並特別說不要另開新申請。"
+      },
+      {
+        "id": "D",
+        "text": "Change the date of the taxi booking.",
+        "zh": "更改叫車預約日期。",
+        "whyZh": "已完成的行程不需更改預約日期；需要的是正確收據。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "男子明確要求 attach ... to the existing claim，並特別說不要另開新申請。",
+    "evidence": "Attach that file to the existing claim rather than starting a new one.",
+    "vocabulary": [
+      {
+        "term": "existing claim",
+        "zh": "現有申請",
+        "note": "已經提交、目前需補件的核銷案件。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g040-r2",
+    "testId": "test-01",
+    "part": 3,
+    "title": "Correcting an expense claim",
+    "titleZh": "修正費用申請",
+    "topic": "business",
+    "passage": "Woman: My travel reimbursement was returned because the taxi receipt doesn't show the payment date.\nMan: Do you still have the booking confirmation?\nWoman: Yes, but it only shows the booking time.\nMan: Check the taxi app. You can usually download an itemized receipt after the trip.\nWoman: I found it. It has the date, fare, and company registration number.\nMan: Great. Attach that file to your existing claim. Do not start another one. I will review it this afternoon.",
+    "passageZh": "女：我的差旅費申請被退回，因為計程車收據沒有顯示付款日期。\n男：你還留著預訂確認信嗎？\n女：有，但那只顯示預約時間。\n男：看看計程車應用程式。行程結束後通常可以下載明細收據。\n女：我找到了。上面有日期、車資和公司登記號碼。\n男：很好。把那個檔案附在你原本的申請上。不要另開新申請。我今天下午會審查。",
+    "audioScript": "My travel reimbursement was returned because the taxi receipt doesn't show the payment date.\nDo you still have the booking confirmation?\nYes, but it only shows the booking time.\nCheck the taxi app. You can usually download an itemized receipt after the trip.\nI found it. It has the date, fare, and company registration number.\nGreat. Attach that file to your existing claim. Do not start another one. I will review it this afternoon.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "My travel reimbursement was returned because the taxi receipt doesn't show the payment date."
+      },
+      {
+        "voice": "male",
+        "text": "Do you still have the booking confirmation?"
+      },
+      {
+        "voice": "female",
+        "text": "Yes, but it only shows the booking time."
+      },
+      {
+        "voice": "male",
+        "text": "Check the taxi app. You can usually download an itemized receipt after the trip."
+      },
+      {
+        "voice": "female",
+        "text": "I found it. It has the date, fare, and company registration number."
+      },
+      {
+        "voice": "male",
+        "text": "Great. Attach that file to your existing claim. Do not start another one. I will review it this afternoon."
+      }
+    ],
+    "audio": "audio/exams/test-01/groups/t01-g040-r2/passage.wav",
+    "duration": 33.4625,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-NG",
+        "role": "female",
+        "modelVoice": "en-NG-EzinneNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-NG",
+        "role": "male",
+        "modelVoice": "en-NG-AbeoNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 33.4625
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-01-cues-03.mp3",
+      "start": 21.09092,
+      "end": 24.99508,
+      "assetSha256": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196",
+      "speech": "Questions 56 through 58. Listen to the conversation."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/exams/test-01/groups/t01-g040-r2/passage.wav",
+      "start": 0,
+      "end": 33.4625,
+      "assetSha256": "99a68c5d850ab0971a061914cac9d6e2be3b6d1a353982707b870688088bb63c",
+      "speech": "My travel reimbursement was returned because the taxi receipt doesn't show the payment date.\nDo you still have the booking confirmation?\nYes, but it only shows the booking time.\nCheck the taxi app. You can usually download an itemized receipt after the trip.\nI found it. It has the date, fare, and company registration number.\nGreat. Attach that file to your existing claim. Do not start another one. I will review it this afternoon."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-01-cues-03.mp3",
+      "start": 33.28988,
+      "end": 35.90308,
+      "assetSha256": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196",
+      "speech": "Number 58. What should the woman do next?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/exams/test-01/groups/t01-g040-r2/passage.wav",
+      "start": 0,
+      "end": 33.4625,
+      "assetSha256": "99a68c5d850ab0971a061914cac9d6e2be3b6d1a353982707b870688088bb63c",
+      "speech": "My travel reimbursement was returned because the taxi receipt doesn't show the payment date.\nDo you still have the booking confirmation?\nYes, but it only shows the booking time.\nCheck the taxi app. You can usually download an itemized receipt after the trip.\nI found it. It has the date, fare, and company registration number.\nGreat. Attach that file to your existing claim. Do not start another one. I will review it this afternoon."
+    }
+  ],
+  "imageSha256": null
+}

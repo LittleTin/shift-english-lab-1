@@ -1,0 +1,203 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "audio": "Unprompted Whisper base.en recovered the full six-turn exact passage up to punctuation, including inactive sessions first, all licenses in use, do not restart due to running simulations, trial model-size limitation and the notification promise. Whisper small.en corroborated the material phrases before its process was interrupted. Independent Vosk lgraph corroborates all substantive constraints including exact repaired ‘inactive sessions first’ and the final promise. Both modes use the same sample-bound validated dialogue, not counted as independent observations. Original matched numbered group cue and stem are reused, recognized by independent lgraph decoder.",
+    "content": "The first speaker quotes the direct problem: every floating license is currently in use. Exact original EN/ZH item meaning and key preserved; any excerpt/analysis changes are matched to actual repaired dialogue.",
+    "association": "Same question and answer identifiers, distinct repaired shared group asset r2, source media and old attempts immutable. Group-local gain goes to own three answer pauses only; unaffected frame data exact. Not native browser acceptance."
+  },
+  "activeQuestion": {
+    "id": "t01-q065",
+    "testId": "test-01",
+    "number": 65,
+    "part": 3,
+    "groupId": "t01-g043-r2",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "cause"
+    ],
+    "prompt": "Why can the man not start the software?",
+    "promptZh": "男子為什麼無法啟動軟體？",
+    "options": [
+      {
+        "id": "A",
+        "text": "He has forgotten his password.",
+        "zh": "他忘記密碼。",
+        "whyZh": "對話沒有登入密碼問題。"
+      },
+      {
+        "id": "B",
+        "text": "The software has not been installed.",
+        "zh": "軟體尚未安裝。",
+        "whyZh": "他已能看到授權不足訊息，問題不在未安裝。"
+      },
+      {
+        "id": "C",
+        "text": "His model file has been deleted.",
+        "zh": "他的模型檔案已刪除。",
+        "whyZh": "模型大小只影響試用版適用性，沒有檔案遺失。"
+      },
+      {
+        "id": "D",
+        "text": "All available licenses are in use.",
+        "zh": "所有可用授權都被占用了。",
+        "whyZh": "軟體訊息直接指出 all the floating licenses are in use，沒有顯示帳號或密碼錯誤。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "軟體訊息直接指出 all the floating licenses are in use，沒有顯示帳號或密碼錯誤。",
+    "evidence": "all the floating licenses are in use.",
+    "vocabulary": [
+      {
+        "term": "floating license",
+        "zh": "浮動授權",
+        "note": "由共用授權池分配、限制同時使用數量的軟體授權。"
+      }
+    ],
+    "revision": 1
+  },
+  "originalQuestion": {
+    "id": "t01-q065",
+    "testId": "test-01",
+    "number": 65,
+    "part": 3,
+    "groupId": "t01-g043",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "cause"
+    ],
+    "prompt": "Why can the man not start the software?",
+    "promptZh": "男子為什麼無法啟動軟體？",
+    "options": [
+      {
+        "id": "A",
+        "text": "He has forgotten his password.",
+        "zh": "他忘記密碼。",
+        "whyZh": "對話沒有登入密碼問題。"
+      },
+      {
+        "id": "B",
+        "text": "The software has not been installed.",
+        "zh": "軟體尚未安裝。",
+        "whyZh": "他已能看到授權不足訊息，問題不在未安裝。"
+      },
+      {
+        "id": "C",
+        "text": "His model file has been deleted.",
+        "zh": "他的模型檔案已刪除。",
+        "whyZh": "模型大小只影響試用版適用性，沒有檔案遺失。"
+      },
+      {
+        "id": "D",
+        "text": "All available licenses are in use.",
+        "zh": "所有可用授權都被占用了。",
+        "whyZh": "軟體訊息直接指出 all the floating licenses are in use，沒有顯示帳號或密碼錯誤。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "軟體訊息直接指出 all the floating licenses are in use，沒有顯示帳號或密碼錯誤。",
+    "evidence": "all the floating licenses are in use.",
+    "vocabulary": [
+      {
+        "term": "floating license",
+        "zh": "浮動授權",
+        "note": "由共用授權池分配、限制同時使用數量的軟體授權。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g043-r2",
+    "testId": "test-01",
+    "part": 3,
+    "title": "A floating-license shortage",
+    "titleZh": "浮動授權不足",
+    "topic": "technology",
+    "passage": "Man: I can't start the simulation software. A message says all the floating licenses are in use.\nWoman: Two computers in the training room may still be holding licenses from yesterday's class.\nMan: Should I restart the license server?\nWoman: Please don't. That would interrupt active simulations. I'll ask the trainer to close the inactive sessions first.\nMan: If that doesn't free a license, can I use the trial version?\nWoman: It doesn't support our model size. Let me resolve the license issue, and I'll message you when a seat becomes available.",
+    "passageZh": "男：我無法啟動模擬軟體。訊息說所有浮動授權都在使用中。\n女：訓練教室的兩台電腦可能還占著昨天上課使用的授權。\n男：我應該重新啟動授權伺服器嗎？\n女：請不要。那會中斷正在執行的模擬。我會先請講師關閉閒置的工作階段。\n男：如果這樣還是沒有空出授權，我可以用試用版嗎？\n女：試用版不支援我們的模型大小。讓我處理授權問題，有名額可用時就傳訊息給你。",
+    "audioScript": "I can't start the simulation software. A message says all the floating licenses are in use.\nTwo computers in the training room may still be holding licenses from yesterday's class.\nShould I restart the license server?\nPlease don't. That would interrupt active simulations. I'll ask the trainer to close the inactive sessions first.\nIf that doesn't free a license, can I use the trial version?\nIt doesn't support our model size. Let me resolve the license issue, and I'll message you when a seat becomes available.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "I can't start the simulation software. A message says all the floating licenses are in use."
+      },
+      {
+        "voice": "female",
+        "text": "Two computers in the training room may still be holding licenses from yesterday's class."
+      },
+      {
+        "voice": "male",
+        "text": "Should I restart the license server?"
+      },
+      {
+        "voice": "female",
+        "text": "Please don't. That would interrupt active simulations. I'll ask the trainer to close the inactive sessions first."
+      },
+      {
+        "voice": "male",
+        "text": "If that doesn't free a license, can I use the trial version?"
+      },
+      {
+        "voice": "female",
+        "text": "It doesn't support our model size. Let me resolve the license issue, and I'll message you when a seat becomes available."
+      }
+    ],
+    "audio": "audio/exams/test-01/groups/t01-g043-r2/passage.wav",
+    "duration": 35.65,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-US",
+        "role": "male",
+        "modelVoice": "en-US-GuyNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-US",
+        "role": "female",
+        "modelVoice": "en-US-JennyNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 35.65
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-01-cues-03.mp3",
+      "start": 64.50717,
+      "end": 68.62808,
+      "assetSha256": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196",
+      "speech": "Questions 65 through 67. Listen to the conversation."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/exams/test-01/groups/t01-g043-r2/passage.wav",
+      "start": 0,
+      "end": 35.65,
+      "assetSha256": "2adb0b4b8c658121bbd03475ffe8ad9b5362776478db1c7f936ed17fd804989e",
+      "speech": "I can't start the simulation software. A message says all the floating licenses are in use.\nTwo computers in the training room may still be holding licenses from yesterday's class.\nShould I restart the license server?\nPlease don't. That would interrupt active simulations. I'll ask the trainer to close the inactive sessions first.\nIf that doesn't free a license, can I use the trial version?\nIt doesn't support our model size. Let me resolve the license issue, and I'll message you when a seat becomes available."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-01-cues-04.mp3",
+      "start": 0.25,
+      "end": 3.51512,
+      "assetSha256": "818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0",
+      "speech": "Number 65. Why can the man not start the software?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/exams/test-01/groups/t01-g043-r2/passage.wav",
+      "start": 0,
+      "end": 35.65,
+      "assetSha256": "2adb0b4b8c658121bbd03475ffe8ad9b5362776478db1c7f936ed17fd804989e",
+      "speech": "I can't start the simulation software. A message says all the floating licenses are in use.\nTwo computers in the training room may still be holding licenses from yesterday's class.\nShould I restart the license server?\nPlease don't. That would interrupt active simulations. I'll ask the trainer to close the inactive sessions first.\nIf that doesn't free a license, can I use the trial version?\nIt doesn't support our model size. Let me resolve the license issue, and I'll message you when a seat becomes available."
+    }
+  ],
+  "imageSha256": null
+}

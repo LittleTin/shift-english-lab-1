@@ -1,0 +1,193 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Keys and original written/visual scope preserved, refreshed only supporting audio quotation when rephrased. Traditional Chinese and answer support aligned.",
+    "audio": "Unprompted Whisper small exact whole input, including “Connect each unit to its charger tonight”. Independent full/focused speech evidence supports charging cable, connect each unit tonight and demonstration mode, under-development lock and backup/record. Individual Vosk “judge” for charger is phonetic nonsense in the explicit power/preparation context, not another operational action; do not claim a second exact whole-reading pass.",
+    "retained": "Original numbered stem and cue stay at exact verified media ranges. Primary offline exact retained stem/cue and secondary cross-evidence (not all verbatim).",
+    "association": "One identical new WAV per group for both formal/practice, exact phase/range hashes checked, 2700 s with unchanged Q085-v2 absolute stem and answer interval. Browser/history not claimed.",
+    "offlineSpeechEvidenceSha256": {
+      "wholeWhisper": "6d61238a9e92a03f6d8bdd85febe8fa73e247c1fddc6522b99aba30681165af8",
+      "independentFull": "cec88133f7e951040bb25ca3323d1e89817080a9abd714570305290b6f5946fa",
+      "independentG048FocusedSmall": "f765d4394220bc76f9d1bcdc966fae4abb3c01ae36211529fb82be025e0b0a3d",
+      "independentG048FocusedGraph": "22d09c65ad70ae9a9ddb9ce9454ce3249e920deb00573901c03428a56970ff90",
+      "retainedScope": "8d015e5c929ecba13022f2fde7150dfbbc27ccb08dcd5d63e1682912e137519d"
+    }
+  },
+  "activeQuestion": {
+    "id": "t02-q081",
+    "testId": "test-02",
+    "number": 81,
+    "part": 4,
+    "groupId": "t02-g048",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "demonstration mode"
+    ],
+    "prompt": "Why should the settings menu remain locked?",
+    "promptZh": "設定選單為何應保持鎖定？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Visitors cannot read English.",
+        "zh": "訪客看不懂英文。",
+        "whyZh": "未提訪客語言能力。"
+      },
+      {
+        "id": "B",
+        "text": "The batteries have been removed.",
+        "zh": "電池被移除了。",
+        "whyZh": "機器要充電，沒有移除電池的資訊。"
+      },
+      {
+        "id": "C",
+        "text": "The feedback forms have already been completed.",
+        "zh": "回饋表已填完。",
+        "whyZh": "明天才展示，未說表單已完成。"
+      },
+      {
+        "id": "D",
+        "text": "Some functions are still being developed.",
+        "zh": "部分功能仍在開發。",
+        "whyZh": "講者直接用 because 說明鎖定原因。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "講者直接用 because 說明鎖定原因。",
+    "evidence": "because some functions are still under development",
+    "vocabulary": [
+      {
+        "term": "demonstration mode",
+        "zh": "展示模式",
+        "note": "供展示用途的運作設定；本題限制部分功能。"
+      },
+      {
+        "term": "under development",
+        "zh": "開發中",
+        "note": "表示尚在開發階段。"
+      }
+    ],
+    "revision": 1
+  },
+  "originalQuestion": {
+    "id": "t02-q081",
+    "testId": "test-02",
+    "number": 81,
+    "part": 4,
+    "groupId": "t02-g048",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "demonstration mode"
+    ],
+    "prompt": "Why should the settings menu remain locked?",
+    "promptZh": "設定選單為何應保持鎖定？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Visitors cannot read English.",
+        "zh": "訪客看不懂英文。",
+        "whyZh": "未提訪客語言能力。"
+      },
+      {
+        "id": "B",
+        "text": "The batteries have been removed.",
+        "zh": "電池被移除了。",
+        "whyZh": "機器要充電，沒有移除電池的資訊。"
+      },
+      {
+        "id": "C",
+        "text": "The feedback forms have already been completed.",
+        "zh": "回饋表已填完。",
+        "whyZh": "明天才展示，未說表單已完成。"
+      },
+      {
+        "id": "D",
+        "text": "Some functions are still being developed.",
+        "zh": "部分功能仍在開發。",
+        "whyZh": "講者直接用 because 說明鎖定原因。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "講者直接用 because 說明鎖定原因。",
+    "evidence": "because some functions are still under development",
+    "vocabulary": [
+      {
+        "term": "demonstration mode",
+        "zh": "展示模式",
+        "note": "供展示用途的運作設定；本題限制部分功能。"
+      },
+      {
+        "term": "under development",
+        "zh": "開發中",
+        "note": "表示尚在開發階段。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g048",
+    "testId": "test-02",
+    "part": 4,
+    "title": "Prototype demonstration instructions",
+    "titleZh": "樣機展示說明",
+    "topic": "technology",
+    "passage": "Thank you for helping with tomorrow's product demonstration. Each table will have one prototype, one charging cable, and one feedback form. Connect each unit to its charger tonight and check that demonstration mode is on. Visitors may try the touch controls, but the settings menu should remain locked because some functions are still under development. If a unit freezes, use the backup unit at the reception table and record the event. We want detailed feedback rather than estimates of when the product will ship.",
+    "passageZh": "感謝各位協助明天的產品展示。每張桌子會有一台樣機、一條充電線和一份回饋表。請今晚把每台機器接上充電器，並確認展示模式已開啟。訪客可試用觸控操作，但設定選單應保持鎖定，因為部分功能仍在開發。如果機器當機，請使用接待桌上的備用機，並記錄事件。我們希望收集詳細回饋，而不是估計產品何時出貨。",
+    "audioScript": "Thank you for helping with tomorrow's product demonstration. Each table will have one prototype, one charging cable, and one feedback form. Connect each unit to its charger tonight and check that demonstration mode is on. Visitors may try the touch controls, but the settings menu should remain locked because some functions are still under development. If a unit freezes, use the backup unit at the reception table and record the event. We want detailed feedback rather than estimates of when the product will ship.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Thank you for helping with tomorrow's product demonstration. Each table will have one prototype, one charging cable, and one feedback form. Connect each unit to its charger tonight and check that demonstration mode is on. Visitors may try the touch controls, but the settings menu should remain locked because some functions are still under development. If a unit freezes, use the backup unit at the reception table and record the event. We want detailed feedback rather than estimates of when the product will ship."
+      }
+    ],
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-KE",
+        "role": "male",
+        "modelVoice": "en-KE-ChilembaNeural"
+      }
+    ],
+    "audio": "audio/exams/test-02/groups/t02-g048/passage-r2.wav",
+    "audioStart": 0,
+    "audioEnd": 30.6125,
+    "duration": 30.6125
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-04.mp3",
+      "start": 64.73046,
+      "end": 67.63854,
+      "assetSha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+      "speech": "Questions 80 through 82. Listen to the talk."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/exams/test-02/groups/t02-g048/passage-r2.wav",
+      "start": 0,
+      "end": 30.6125,
+      "assetSha256": "46be4482a8f70e9661ab2611e8faca98a6fecb21a614f72b7f7639caf2c47a9e",
+      "speech": "Thank you for helping with tomorrow's product demonstration. Each table will have one prototype, one charging cable, and one feedback form. Connect each unit to its charger tonight and check that demonstration mode is on. Visitors may try the touch controls, but the settings menu should remain locked because some functions are still under development. If a unit freezes, use the backup unit at the reception table and record the event. We want detailed feedback rather than estimates of when the product will ship."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-02-cues-05.mp3",
+      "start": 0.25,
+      "end": 3.67575,
+      "assetSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+      "speech": "Number 81. Why should the settings menu remain locked?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/exams/test-02/groups/t02-g048/passage-r2.wav",
+      "start": 0,
+      "end": 30.6125,
+      "assetSha256": "46be4482a8f70e9661ab2611e8faca98a6fecb21a614f72b7f7639caf2c47a9e",
+      "speech": "Thank you for helping with tomorrow's product demonstration. Each table will have one prototype, one charging cable, and one feedback form. Connect each unit to its charger tonight and check that demonstration mode is on. Visitors may try the touch controls, but the settings menu should remain locked because some functions are still under development. If a unit freezes, use the backup unit at the reception table and record the event. We want detailed feedback rather than estimates of when the product will ship."
+    }
+  ],
+  "imageSha256": null
+}

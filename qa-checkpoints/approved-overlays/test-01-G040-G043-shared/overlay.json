@@ -1,0 +1,492 @@
+{
+  "status": "exact-item-verified-offline-not-published",
+  "testId": "test-01",
+  "requires": "G098→G039→G046→G038 exact source pack and any preceding explicitly composed overlays",
+  "oldPlanSha256": "9d7c75d64ef53824b0bcfbebedf15db14bfe98e947d86d251831ee884eef2f8c",
+  "groups": {
+    "t01-g040": {
+      "oldGroupSha256": "5fc1b34c7f5c8c5535288baf6a5dc518d884a5a29377ff224dde93867942c217",
+      "oldQuestionSha256": {
+        "t01-q056": "36c25c5d58d7845f50b94a7747468e4d9eddb671876004bf076dfd8ca6d6ebaf",
+        "t01-q057": "f55c8afc6eb9011b03ebed8fd9fc36edd042222626ba20c6fdaabd0df44ad279",
+        "t01-q058": "e366f18034f04be2415b0b89bbd9060a0862092c80b59fd31cba4b61022012af"
+      },
+      "newGroup": {
+        "id": "t01-g040-r2",
+        "testId": "test-01",
+        "part": 3,
+        "title": "Correcting an expense claim",
+        "titleZh": "修正費用申請",
+        "topic": "business",
+        "passage": "Woman: My travel reimbursement was returned because the taxi receipt doesn't show the payment date.\nMan: Do you still have the booking confirmation?\nWoman: Yes, but it only shows the booking time.\nMan: Check the taxi app. You can usually download an itemized receipt after the trip.\nWoman: I found it. It has the date, fare, and company registration number.\nMan: Great. Attach that file to your existing claim. Do not start another one. I will review it this afternoon.",
+        "passageZh": "女：我的差旅費申請被退回，因為計程車收據沒有顯示付款日期。\n男：你還留著預訂確認信嗎？\n女：有，但那只顯示預約時間。\n男：看看計程車應用程式。行程結束後通常可以下載明細收據。\n女：我找到了。上面有日期、車資和公司登記號碼。\n男：很好。把那個檔案附在你原本的申請上。不要另開新申請。我今天下午會審查。",
+        "audioScript": "My travel reimbursement was returned because the taxi receipt doesn't show the payment date.\nDo you still have the booking confirmation?\nYes, but it only shows the booking time.\nCheck the taxi app. You can usually download an itemized receipt after the trip.\nI found it. It has the date, fare, and company registration number.\nGreat. Attach that file to your existing claim. Do not start another one. I will review it this afternoon.",
+        "turns": [
+          {
+            "voice": "female",
+            "text": "My travel reimbursement was returned because the taxi receipt doesn't show the payment date."
+          },
+          {
+            "voice": "male",
+            "text": "Do you still have the booking confirmation?"
+          },
+          {
+            "voice": "female",
+            "text": "Yes, but it only shows the booking time."
+          },
+          {
+            "voice": "male",
+            "text": "Check the taxi app. You can usually download an itemized receipt after the trip."
+          },
+          {
+            "voice": "female",
+            "text": "I found it. It has the date, fare, and company registration number."
+          },
+          {
+            "voice": "male",
+            "text": "Great. Attach that file to your existing claim. Do not start another one. I will review it this afternoon."
+          }
+        ],
+        "audio": "audio/exams/test-01/groups/t01-g040-r2/passage.wav",
+        "duration": 33.4625,
+        "audioSpeakers": [
+          {
+            "speaker": "female",
+            "locale": "en-NG",
+            "role": "female",
+            "modelVoice": "en-NG-EzinneNeural"
+          },
+          {
+            "speaker": "male",
+            "locale": "en-NG",
+            "role": "male",
+            "modelVoice": "en-NG-AbeoNeural"
+          }
+        ],
+        "audioStart": 0,
+        "audioEnd": 33.4625
+      },
+      "newQuestions": [
+        {
+          "id": "t01-q056",
+          "testId": "test-01",
+          "number": 56,
+          "part": 3,
+          "groupId": "t01-g040-r2",
+          "topic": "business",
+          "difficulty": "intermediate",
+          "tags": [
+            "business",
+            "reason"
+          ],
+          "prompt": "Why was the reimbursement request returned?",
+          "promptZh": "費用申請為什麼被退回？",
+          "options": [
+            {
+              "id": "A",
+              "text": "A receipt lacked the payment date.",
+              "zh": "收據缺少付款日期。",
+              "whyZh": "女子第一句明說退件原因是計程車收據沒有 payment date；不是因為費用過高。"
+            },
+            {
+              "id": "B",
+              "text": "The taxi fare exceeded the budget.",
+              "zh": "計程車費超出預算。",
+              "whyZh": "沒有提到車資超過限制。"
+            },
+            {
+              "id": "C",
+              "text": "The business trip was canceled.",
+              "zh": "出差已取消。",
+              "whyZh": "行程已發生，女子正在申請費用。"
+            },
+            {
+              "id": "D",
+              "text": "The employee submitted two claims.",
+              "zh": "員工送出兩份申請。",
+              "whyZh": "男子提醒不要另開新單，並不表示女子已重複申請。"
+            }
+          ],
+          "answer": "A",
+          "explanationZh": "女子第一句明說退件原因是計程車收據沒有 payment date；不是因為費用過高。",
+          "evidence": "the taxi receipt doesn't show the payment date.",
+          "vocabulary": [
+            {
+              "term": "reimbursement",
+              "zh": "費用核銷；報銷",
+              "note": "公司償還員工代墊的合規費用。"
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "id": "t01-q057",
+          "testId": "test-01",
+          "number": 57,
+          "part": 3,
+          "groupId": "t01-g040-r2",
+          "topic": "business",
+          "difficulty": "intermediate",
+          "tags": [
+            "business",
+            "source"
+          ],
+          "prompt": "Where does the woman find the required receipt?",
+          "promptZh": "女子在哪裡找到所需收據？",
+          "options": [
+            {
+              "id": "A",
+              "text": "In a printed airline ticket.",
+              "zh": "在紙本機票裡。",
+              "whyZh": "對話沒有提到航空公司文件。"
+            },
+            {
+              "id": "B",
+              "text": "In the taxi application.",
+              "zh": "在計程車應用程式裡。",
+              "whyZh": "男子建議查計程車 app，女子隨即說找到含日期、車資和登記號碼的收據。"
+            },
+            {
+              "id": "C",
+              "text": "At the hotel reception desk.",
+              "zh": "在旅館接待櫃檯。",
+              "whyZh": "計程車收據來自 app，沒有旅館櫃檯介入。"
+            },
+            {
+              "id": "D",
+              "text": "On the original booking confirmation.",
+              "zh": "在原本的預訂確認信上。",
+              "whyZh": "女子已說確認信只顯示預約時間，無法提供所需付款資料。"
+            }
+          ],
+          "answer": "B",
+          "explanationZh": "男子建議查計程車 app，女子隨即說找到含日期、車資和登記號碼的收據。",
+          "evidence": "Check the taxi app.",
+          "vocabulary": [
+            {
+              "term": "itemized receipt",
+              "zh": "明細收據",
+              "note": "列出交易日期與各項費用等詳細資訊的收據。"
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "id": "t01-q058",
+          "testId": "test-01",
+          "number": 58,
+          "part": 3,
+          "groupId": "t01-g040-r2",
+          "topic": "business",
+          "difficulty": "intermediate",
+          "tags": [
+            "business",
+            "next_action"
+          ],
+          "prompt": "What should the woman do next?",
+          "promptZh": "女子接下來應該做什麼？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Start a new reimbursement claim.",
+              "zh": "建立新的費用申請。",
+              "whyZh": "男子明確說 Do not start another one，不要另開一份申請。"
+            },
+            {
+              "id": "B",
+              "text": "Ask the driver to refund the fare.",
+              "zh": "請司機退還車資。",
+              "whyZh": "目的是補齊核銷文件，不是退款。"
+            },
+            {
+              "id": "C",
+              "text": "Attach the receipt to her existing claim.",
+              "zh": "把收據附到原本的申請。",
+              "whyZh": "男子說要把檔案附在原申請上，並明確表示不要另開新申請。"
+            },
+            {
+              "id": "D",
+              "text": "Change the date of the taxi booking.",
+              "zh": "更改叫車預約日期。",
+              "whyZh": "已完成的行程不需更改預約日期；需要的是正確收據。"
+            }
+          ],
+          "answer": "C",
+          "explanationZh": "男子說要把檔案附在原申請上，並明確表示不要另開新申請。",
+          "evidence": "Great. Attach that file to your existing claim. Do not start another one. I will review it this afternoon.",
+          "vocabulary": [
+            {
+              "term": "existing claim",
+              "zh": "現有申請",
+              "note": "已經提交、目前需補件的核銷案件。"
+            }
+          ],
+          "revision": 1
+        }
+      ],
+      "oldFrameSha256": [
+        "ae2bec01b441028476129487f312335b78568736ff6848b28a26e5b33a1ccb2b",
+        "40fd336d2f3ffd852594feb3a2e118a8192e63347a2f6d185ec42e06bd7d3481",
+        "4853e2e663c84b677eeb423a7b26a060530fe1058c0d7ef2b573e8786653b120",
+        "bad740580412d42cc91a6a15145cda6a4708d1530976f07bcda94197a0819c01",
+        "939aca2aa337f8ebd3d1f946d81f7266894d74451a01c64f8ccb5bb1f1ca49cf",
+        "ae097c931d5831209464c1a48fc154e6490b2e41eda3d1128d40fdd7f4b51102",
+        "e238b2419c9c82015c7c806b0f17a4e7d5db916e03718dd04af6f5fa2c5c9c4f",
+        "8faac63f4f30932d7ce45f9e2f7a2dcd1e0c1cf3adc439055da242e69525bf7d"
+      ],
+      "oldSources": {
+        "audio/formal/test-01-cues-03.mp3": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196",
+        "audio/azure-v1/test-01-20.mp3": "1181828246ee1e732d2aec3d12d602d188fe87286781f7e9b498eb1674b8602b"
+      },
+      "newShared": {
+        "path": "audio/exams/test-01/groups/t01-g040-r2/passage.wav",
+        "sha256": "99a68c5d850ab0971a061914cac9d6e2be3b6d1a353982707b870688088bb63c",
+        "samples": 803100,
+        "seconds": 33.4625
+      }
+    },
+    "t01-g043": {
+      "oldGroupSha256": "68cc1d33b39317b957f69c3a644e1e767d1696b8cf6a44cd6ab4392cd78ac090",
+      "oldQuestionSha256": {
+        "t01-q065": "3a22bf43da941c518c56d84b21e2de1a556602c0d27fb0f8fd666fc1b282b127",
+        "t01-q066": "2f6391ea7a5618faff61550f74a75024988f75d3460e3b3c9aaf7a2ba10be914",
+        "t01-q067": "47cf16cb1344ce0a3f0fcdd8fbf16b61db57c9515f7a1327b11c57788dfdf719"
+      },
+      "newGroup": {
+        "id": "t01-g043-r2",
+        "testId": "test-01",
+        "part": 3,
+        "title": "A floating-license shortage",
+        "titleZh": "浮動授權不足",
+        "topic": "technology",
+        "passage": "Man: I can't start the simulation software. A message says all the floating licenses are in use.\nWoman: Two computers in the training room may still be holding licenses from yesterday's class.\nMan: Should I restart the license server?\nWoman: Please don't. That would interrupt active simulations. I'll ask the trainer to close the inactive sessions first.\nMan: If that doesn't free a license, can I use the trial version?\nWoman: It doesn't support our model size. Let me resolve the license issue, and I'll message you when a seat becomes available.",
+        "passageZh": "男：我無法啟動模擬軟體。訊息說所有浮動授權都在使用中。\n女：訓練教室的兩台電腦可能還占著昨天上課使用的授權。\n男：我應該重新啟動授權伺服器嗎？\n女：請不要。那會中斷正在執行的模擬。我會先請講師關閉閒置的工作階段。\n男：如果這樣還是沒有空出授權，我可以用試用版嗎？\n女：試用版不支援我們的模型大小。讓我處理授權問題，有名額可用時就傳訊息給你。",
+        "audioScript": "I can't start the simulation software. A message says all the floating licenses are in use.\nTwo computers in the training room may still be holding licenses from yesterday's class.\nShould I restart the license server?\nPlease don't. That would interrupt active simulations. I'll ask the trainer to close the inactive sessions first.\nIf that doesn't free a license, can I use the trial version?\nIt doesn't support our model size. Let me resolve the license issue, and I'll message you when a seat becomes available.",
+        "turns": [
+          {
+            "voice": "male",
+            "text": "I can't start the simulation software. A message says all the floating licenses are in use."
+          },
+          {
+            "voice": "female",
+            "text": "Two computers in the training room may still be holding licenses from yesterday's class."
+          },
+          {
+            "voice": "male",
+            "text": "Should I restart the license server?"
+          },
+          {
+            "voice": "female",
+            "text": "Please don't. That would interrupt active simulations. I'll ask the trainer to close the inactive sessions first."
+          },
+          {
+            "voice": "male",
+            "text": "If that doesn't free a license, can I use the trial version?"
+          },
+          {
+            "voice": "female",
+            "text": "It doesn't support our model size. Let me resolve the license issue, and I'll message you when a seat becomes available."
+          }
+        ],
+        "audio": "audio/exams/test-01/groups/t01-g043-r2/passage.wav",
+        "duration": 35.65,
+        "audioSpeakers": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ],
+        "audioStart": 0,
+        "audioEnd": 35.65
+      },
+      "newQuestions": [
+        {
+          "id": "t01-q065",
+          "testId": "test-01",
+          "number": 65,
+          "part": 3,
+          "groupId": "t01-g043-r2",
+          "topic": "technology",
+          "difficulty": "intermediate",
+          "tags": [
+            "technology",
+            "cause"
+          ],
+          "prompt": "Why can the man not start the software?",
+          "promptZh": "男子為什麼無法啟動軟體？",
+          "options": [
+            {
+              "id": "A",
+              "text": "He has forgotten his password.",
+              "zh": "他忘記密碼。",
+              "whyZh": "對話沒有登入密碼問題。"
+            },
+            {
+              "id": "B",
+              "text": "The software has not been installed.",
+              "zh": "軟體尚未安裝。",
+              "whyZh": "他已能看到授權不足訊息，問題不在未安裝。"
+            },
+            {
+              "id": "C",
+              "text": "His model file has been deleted.",
+              "zh": "他的模型檔案已刪除。",
+              "whyZh": "模型大小只影響試用版適用性，沒有檔案遺失。"
+            },
+            {
+              "id": "D",
+              "text": "All available licenses are in use.",
+              "zh": "所有可用授權都被占用了。",
+              "whyZh": "軟體訊息直接指出 all the floating licenses are in use，沒有顯示帳號或密碼錯誤。"
+            }
+          ],
+          "answer": "D",
+          "explanationZh": "軟體訊息直接指出 all the floating licenses are in use，沒有顯示帳號或密碼錯誤。",
+          "evidence": "all the floating licenses are in use.",
+          "vocabulary": [
+            {
+              "term": "floating license",
+              "zh": "浮動授權",
+              "note": "由共用授權池分配、限制同時使用數量的軟體授權。"
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "id": "t01-q066",
+          "testId": "test-01",
+          "number": 66,
+          "part": 3,
+          "groupId": "t01-g043-r2",
+          "topic": "technology",
+          "difficulty": "intermediate",
+          "tags": [
+            "technology",
+            "reason"
+          ],
+          "prompt": "Why does the woman advise against restarting the server?",
+          "promptZh": "女子為什麼不建議重新啟動伺服器？",
+          "options": [
+            {
+              "id": "A",
+              "text": "It would enlarge the model files.",
+              "zh": "它會使模型檔案變大。",
+              "whyZh": "重啟與模型大小無此對話所述關係；模型大小是試用版限制。"
+            },
+            {
+              "id": "B",
+              "text": "The server is being delivered tomorrow.",
+              "zh": "伺服器明天才會送達。",
+              "whyZh": "現有伺服器正在管理授權，沒有新機交貨情節。"
+            },
+            {
+              "id": "C",
+              "text": "It would renew the software contract.",
+              "zh": "它會續約軟體合約。",
+              "whyZh": "對話沒有合約續約內容。"
+            },
+            {
+              "id": "D",
+              "text": "It would disrupt simulations that are running.",
+              "zh": "它會中斷正在執行的模擬。",
+              "whyZh": "女子用 That would interrupt active simulations 說明重啟的影響；應先釋出閒置授權。"
+            }
+          ],
+          "answer": "D",
+          "explanationZh": "女子用 That would interrupt active simulations 說明重啟的影響；應先釋出閒置授權。",
+          "evidence": "That would interrupt active simulations.",
+          "vocabulary": [
+            {
+              "term": "interrupt",
+              "zh": "中斷",
+              "note": "使正在執行的工作停止或受影響。"
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "id": "t01-q067",
+          "testId": "test-01",
+          "number": 67,
+          "part": 3,
+          "groupId": "t01-g043-r2",
+          "topic": "technology",
+          "difficulty": "intermediate",
+          "tags": [
+            "technology",
+            "next_action"
+          ],
+          "prompt": "What will the woman do first?",
+          "promptZh": "女子首先會做什麼？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Install the trial version for the man.",
+              "zh": "替男子安裝試用版。",
+              "whyZh": "女子已指出試用版不支援他們的模型大小。"
+            },
+            {
+              "id": "B",
+              "text": "Delete the current simulation results.",
+              "zh": "刪除現有模擬結果。",
+              "whyZh": "沒有要求刪除結果，且重點是釋出未用授權。"
+            },
+            {
+              "id": "C",
+              "text": "Ask the trainer to close unused sessions.",
+              "zh": "請講師關閉未使用的工作階段。",
+              "whyZh": "女子明確說先請講師關閉閒置 sessions，以嘗試釋放授權，再通知男子。"
+            },
+            {
+              "id": "D",
+              "text": "Restart every workstation immediately.",
+              "zh": "立即重啟所有工作站。",
+              "whyZh": "女子選擇關閉閒置階段，不是全面重啟。"
+            }
+          ],
+          "answer": "C",
+          "explanationZh": "女子明確說先請講師關閉閒置 sessions，以嘗試釋放授權，再通知男子。",
+          "evidence": "I'll ask the trainer to close the inactive sessions first.",
+          "vocabulary": [
+            {
+              "term": "free a license",
+              "zh": "釋放一個授權名額",
+              "note": "結束不再使用的軟體階段，讓他人取得授權。"
+            }
+          ],
+          "revision": 1
+        }
+      ],
+      "oldFrameSha256": [
+        "63f2568dc58494464d54a6e9939da91c420d5a72bcf46408ae4a6bceabc984fc",
+        "251a5e4bf3ddbe048a6684635e7bd2fd612d3406b090ecca2abddc7a433a5053",
+        "25d5e0b36a5abea6aa3c1b6f23c2a57fc0513ab60213035cf40a32c143d07ace",
+        "f354680b094d6050fa8109201c024011ba42bec36671092bbe710bd35b6a47d9",
+        "46172c58b280036ae6f7c4b63cbcbbf1885583470f2a902c25cb82006807642c",
+        "2f771609b3f453950cdaa4a07ca21c7aed1b8e89ee9330f5bcc695277744be77",
+        "c1bd5a695bf898d66e32f8264e86c7527b0ec414fce9caa2df3b217bbb172fd4",
+        "7e277f1fbbafd828a1b635e5277341dfed92c6d785c7d2e2febddeacd10e7e07"
+      ],
+      "oldSources": {
+        "audio/formal/test-01-cues-03.mp3": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196",
+        "audio/formal/test-01-cues-04.mp3": "818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0",
+        "audio/azure-v1/test-01-23.mp3": "b042994ee61657165e5416208d8885760019bf614f86db3ba4c4e7bfc11ef16c"
+      },
+      "newShared": {
+        "path": "audio/exams/test-01/groups/t01-g043-r2/passage.wav",
+        "sha256": "2adb0b4b8c658121bbd03475ffe8ad9b5362776478db1c7f936ed17fd804989e",
+        "samples": 855600,
+        "seconds": 35.65
+      }
+    }
+  },
+  "newPlanSha256": "d7ae2c5b0023395b55d18c4a04a31eaf67791d0e82e91412143d86bd61d60d1f"
+}

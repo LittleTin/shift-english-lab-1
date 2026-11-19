@@ -1,0 +1,647 @@
+{
+  "t02-g048": {
+    "oldGroup": {
+      "id": "t02-g048",
+      "testId": "test-02",
+      "part": 4,
+      "title": "Prototype demonstration instructions",
+      "titleZh": "樣機展示說明",
+      "topic": "technology",
+      "passage": "Thank you for helping with tomorrow's product demonstration. Each table will have a prototype, a charging cable, and a feedback form. Please charge the units tonight and check that the demonstration mode is enabled. Visitors may try the touch controls, but the settings menu should remain locked because some functions are still under development. If a unit freezes, use the spare at the reception table and record the event. We want detailed feedback rather than estimates of when the product will ship.",
+      "passageZh": "感謝各位協助明天的產品展示。每張桌子會有一台樣機、一條充電線和一份回饋表。請今晚替機器充電，並確認已啟用展示模式。訪客可試用觸控操作，但設定選單應保持鎖定，因為部分功能仍在開發。如果機器當機，請使用接待桌上的備用機，並記錄事件。我們希望收集詳細回饋，而不是估計產品何時出貨。",
+      "audioScript": "Thank you for helping with tomorrow's product demonstration. Each table will have a prototype, a charging cable, and a feedback form. Please charge the units tonight and check that the demonstration mode is enabled. Visitors may try the touch controls, but the settings menu should remain locked because some functions are still under development. If a unit freezes, use the spare at the reception table and record the event. We want detailed feedback rather than estimates of when the product will ship.",
+      "turns": [
+        {
+          "voice": "male",
+          "text": "Thank you for helping with tomorrow's product demonstration. Each table will have a prototype, a charging cable, and a feedback form. Please charge the units tonight and check that the demonstration mode is enabled. Visitors may try the touch controls, but the settings menu should remain locked because some functions are still under development. If a unit freezes, use the spare at the reception table and record the event. We want detailed feedback rather than estimates of when the product will ship."
+        }
+      ],
+      "audio": "audio/azure-v1/test-02-25.mp3",
+      "duration": 30.0,
+      "audioSpeakers": [
+        {
+          "speaker": "male",
+          "locale": "en-KE",
+          "role": "male",
+          "modelVoice": "en-KE-ChilembaNeural"
+        }
+      ],
+      "audioStart": 0.5,
+      "audioEnd": 30.5
+    },
+    "oldQuestions": [
+      {
+        "id": "t02-q080",
+        "testId": "test-02",
+        "number": 80,
+        "part": 4,
+        "groupId": "t02-g048",
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "demonstration mode"
+        ],
+        "prompt": "What should staff do tonight?",
+        "promptZh": "工作人員今晚應做什麼？",
+        "options": [
+          {
+            "id": "A",
+            "text": "Charge the units and check demonstration mode.",
+            "zh": "充電並確認展示模式。",
+            "whyZh": "這兩項是講者指定今晚完成的準備。"
+          },
+          {
+            "id": "B",
+            "text": "Ship all prototypes to customers.",
+            "zh": "把所有樣機寄給客戶。",
+            "whyZh": "明天要現場展示，不是出貨。"
+          },
+          {
+            "id": "C",
+            "text": "Remove every feedback form.",
+            "zh": "移除所有回饋表。",
+            "whyZh": "活動目的正是收集詳細回饋。"
+          },
+          {
+            "id": "D",
+            "text": "Unlock all development settings.",
+            "zh": "解鎖所有開發設定。",
+            "whyZh": "設定選單應保持鎖定。"
+          }
+        ],
+        "answer": "A",
+        "explanationZh": "這兩項是講者指定今晚完成的準備。",
+        "evidence": "charge the units tonight and check that the demonstration mode is enabled",
+        "vocabulary": [
+          {
+            "term": "demonstration mode",
+            "zh": "展示模式",
+            "note": "供展示用途的運作設定；本題限制部分功能。"
+          },
+          {
+            "term": "under development",
+            "zh": "開發中",
+            "note": "表示尚在開發階段。"
+          }
+        ],
+        "revision": 1
+      },
+      {
+        "id": "t02-q081",
+        "testId": "test-02",
+        "number": 81,
+        "part": 4,
+        "groupId": "t02-g048",
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "demonstration mode"
+        ],
+        "prompt": "Why should the settings menu remain locked?",
+        "promptZh": "設定選單為何應保持鎖定？",
+        "options": [
+          {
+            "id": "A",
+            "text": "Visitors cannot read English.",
+            "zh": "訪客看不懂英文。",
+            "whyZh": "未提訪客語言能力。"
+          },
+          {
+            "id": "B",
+            "text": "The batteries have been removed.",
+            "zh": "電池被移除了。",
+            "whyZh": "機器要充電，沒有移除電池的資訊。"
+          },
+          {
+            "id": "C",
+            "text": "The feedback forms have already been completed.",
+            "zh": "回饋表已填完。",
+            "whyZh": "明天才展示，未說表單已完成。"
+          },
+          {
+            "id": "D",
+            "text": "Some functions are still being developed.",
+            "zh": "部分功能仍在開發。",
+            "whyZh": "講者直接用 because 說明鎖定原因。"
+          }
+        ],
+        "answer": "D",
+        "explanationZh": "講者直接用 because 說明鎖定原因。",
+        "evidence": "because some functions are still under development",
+        "vocabulary": [
+          {
+            "term": "demonstration mode",
+            "zh": "展示模式",
+            "note": "供展示用途的運作設定；本題限制部分功能。"
+          },
+          {
+            "term": "under development",
+            "zh": "開發中",
+            "note": "表示尚在開發階段。"
+          }
+        ],
+        "revision": 1
+      },
+      {
+        "id": "t02-q082",
+        "testId": "test-02",
+        "number": 82,
+        "part": 4,
+        "groupId": "t02-g048",
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "demonstration mode"
+        ],
+        "prompt": "What should staff do if a unit freezes?",
+        "promptZh": "機器當機時應怎麼做？",
+        "options": [
+          {
+            "id": "A",
+            "text": "Promise a shipping date to the visitor.",
+            "zh": "向訪客承諾出貨日期。",
+            "whyZh": "講者反而不希望估算出貨時間。"
+          },
+          {
+            "id": "B",
+            "text": "Cancel every demonstration immediately.",
+            "zh": "立刻取消所有展示。",
+            "whyZh": "有備用機方案，沒有全面取消。"
+          },
+          {
+            "id": "C",
+            "text": "Use a spare and record what happened.",
+            "zh": "使用備用機並記錄事件。",
+            "whyZh": "指示包含換備用機及記錄事件兩步。"
+          },
+          {
+            "id": "D",
+            "text": "Ask the visitor to repair the hardware.",
+            "zh": "請訪客修理硬體。",
+            "whyZh": "沒有要求訪客維修。"
+          }
+        ],
+        "answer": "C",
+        "explanationZh": "指示包含換備用機及記錄事件兩步。",
+        "evidence": "use the spare at the reception table and record the event",
+        "vocabulary": [
+          {
+            "term": "demonstration mode",
+            "zh": "展示模式",
+            "note": "供展示用途的運作設定；本題限制部分功能。"
+          },
+          {
+            "term": "under development",
+            "zh": "開發中",
+            "note": "表示尚在開發階段。"
+          }
+        ],
+        "revision": 1
+      }
+    ],
+    "oldFrames": [
+      [
+        227,
+        {
+          "src": "audio/formal/test-02-cues-04.mp3",
+          "start": 64.73046,
+          "end": 67.63854,
+          "duration": 2.90808,
+          "kind": "audio",
+          "role": "cue",
+          "part": 4,
+          "groupId": "t02-g048",
+          "at": 2141.71715
+        }
+      ],
+      [
+        228,
+        {
+          "src": "audio/exams/test-02/groups/t02-g048/passage-r2.wav",
+          "start": 0,
+          "end": 30.6125,
+          "duration": 30.6125,
+          "kind": "audio",
+          "role": "passage",
+          "part": 4,
+          "groupId": "t02-g048",
+          "at": 2144.62523,
+          "speakers": [
+            {
+              "speaker": "male",
+              "locale": "en-KE",
+              "role": "male",
+              "modelVoice": "en-KE-ChilembaNeural"
+            }
+          ]
+        }
+      ],
+      [
+        229,
+        {
+          "src": "audio/formal/test-02-cues-04.mp3",
+          "start": 67.88854,
+          "end": 70.10896,
+          "duration": 2.22042,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t02-g048",
+          "questionId": "t02-q080",
+          "at": 2175.23773
+        }
+      ],
+      [
+        230,
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 8.16017,
+          "part": 4,
+          "groupId": "t02-g048",
+          "questionId": "t02-q080",
+          "at": 2177.45815
+        }
+      ],
+      [
+        231,
+        {
+          "src": "audio/formal/test-02-cues-05.mp3",
+          "start": 0.25,
+          "end": 3.67575,
+          "duration": 3.42575,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t02-g048",
+          "questionId": "t02-q081",
+          "at": 2185.61832
+        }
+      ],
+      [
+        232,
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 8.16016,
+          "part": 4,
+          "groupId": "t02-g048",
+          "questionId": "t02-q081",
+          "at": 2189.04407
+        }
+      ],
+      [
+        233,
+        {
+          "src": "audio/formal/test-02-cues-05.mp3",
+          "start": 3.92575,
+          "end": 7.11358,
+          "duration": 3.18783,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t02-g048",
+          "questionId": "t02-q082",
+          "at": 2197.20423
+        }
+      ],
+      [
+        234,
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 8.16016,
+          "part": 4,
+          "groupId": "t02-g048",
+          "questionId": "t02-q082",
+          "at": 2200.39206
+        }
+      ]
+    ],
+    "oldPlanEdition": "toeic-1"
+  },
+  "t02-g049": {
+    "oldGroup": {
+      "id": "t02-g049",
+      "testId": "test-02",
+      "part": 4,
+      "title": "Inventory counting notice",
+      "titleZh": "盤點通知",
+      "topic": "manufacturing",
+      "passage": "The warehouse will conduct its quarterly inventory count on Friday afternoon. Material requests needed for Friday's production must reach us by eleven in the morning. Between noon and four, only urgent safety-related issues will be handled. Team leaders should assign one person to confirm quantities with warehouse staff. Please count sealed cartons according to the quantity on their labels unless the seal is damaged. Normal material collection will resume at four thirty.",
+      "passageZh": "倉庫將在星期五下午進行季度盤點。星期五生產所需的領料申請必須在上午十一點前送達。中午到四點之間，只處理緊急安全相關事項。各組主管應指派一人與倉庫人員核對數量。封箱紙箱請依標籤數量盤點，除非封條破損。正常領料會在四點半恢復。",
+      "audioScript": "The warehouse will conduct its quarterly inventory count on Friday afternoon. Material requests needed for Friday's production must reach us by eleven in the morning. Between noon and four, only urgent safety-related issues will be handled. Team leaders should assign one person to confirm quantities with warehouse staff. Please count sealed cartons according to the quantity on their labels unless the seal is damaged. Normal material collection will resume at four thirty.",
+      "turns": [
+        {
+          "voice": "female",
+          "text": "The warehouse will conduct its quarterly inventory count on Friday afternoon. Material requests needed for Friday's production must reach us by eleven in the morning. Between noon and four, only urgent safety-related issues will be handled. Team leaders should assign one person to confirm quantities with warehouse staff. Please count sealed cartons according to the quantity on their labels unless the seal is damaged. Normal material collection will resume at four thirty."
+        }
+      ],
+      "audio": "audio/azure-v1/test-02-26.mp3",
+      "duration": 30.36,
+      "audioSpeakers": [
+        {
+          "speaker": "female",
+          "locale": "en-NG",
+          "role": "female",
+          "modelVoice": "en-NG-EzinneNeural"
+        }
+      ],
+      "image": "assets/graphics/t02-g049.svg",
+      "imageAlt": "Friday Collection Window Labels; 11:00 a.m.: Maple; 12:00 p.m.: Oak; 4:00 p.m.: Cedar; 4:30 p.m.: Pine",
+      "audioStart": 0.5,
+      "audioEnd": 30.86
+    },
+    "oldQuestions": [
+      {
+        "id": "t02-q083",
+        "testId": "test-02",
+        "number": 83,
+        "part": 4,
+        "groupId": "t02-g049",
+        "topic": "manufacturing",
+        "difficulty": "intermediate",
+        "tags": [
+          "inventory count"
+        ],
+        "prompt": "When must production material requests arrive?",
+        "promptZh": "生產領料申請何時前必須送達？",
+        "options": [
+          {
+            "id": "A",
+            "text": "At four thirty on Thursday.",
+            "zh": "星期四四點半。",
+            "whyZh": "四點半是星期五恢復領料，不是星期四截止。"
+          },
+          {
+            "id": "B",
+            "text": "By eleven on Friday morning.",
+            "zh": "星期五上午十一點前。",
+            "whyZh": "通知直接列明領料申請截止時間。"
+          },
+          {
+            "id": "C",
+            "text": "By midnight on Saturday.",
+            "zh": "星期六午夜前。",
+            "whyZh": "未提此時間。"
+          },
+          {
+            "id": "D",
+            "text": "Only after the inventory count ends.",
+            "zh": "只能盤點結束後。",
+            "whyZh": "生產需求要先在上午十一點前提出。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "通知直接列明領料申請截止時間。",
+        "evidence": "must reach us by eleven in the morning",
+        "vocabulary": [
+          {
+            "term": "inventory count",
+            "zh": "盤點",
+            "note": "實際核對庫存品項與數量的作業。"
+          },
+          {
+            "term": "resume",
+            "zh": "恢復",
+            "note": "表示暫停後重新開始。"
+          }
+        ],
+        "revision": 1
+      },
+      {
+        "id": "t02-q084",
+        "testId": "test-02",
+        "number": 84,
+        "part": 4,
+        "groupId": "t02-g049",
+        "topic": "manufacturing",
+        "difficulty": "intermediate",
+        "tags": [
+          "inventory count"
+        ],
+        "prompt": "What should team leaders arrange?",
+        "promptZh": "各組主管應安排什麼？",
+        "options": [
+          {
+            "id": "A",
+            "text": "A customer tour during the count.",
+            "zh": "盤點期間的客戶導覽。",
+            "whyZh": "未安排客戶參觀。"
+          },
+          {
+            "id": "B",
+            "text": "A person to verify quantities with warehouse staff.",
+            "zh": "一人與倉庫人員核對數量。",
+            "whyZh": "通知要求各組指定一人協助核對。"
+          },
+          {
+            "id": "C",
+            "text": "Replacement of every carton label.",
+            "zh": "更換所有紙箱標籤。",
+            "whyZh": "標籤是盤點參考，不是全部更換。"
+          },
+          {
+            "id": "D",
+            "text": "An extra shift at the airport.",
+            "zh": "機場額外班次。",
+            "whyZh": "與倉庫盤點無關。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "通知要求各組指定一人協助核對。",
+        "evidence": "assign one person to confirm quantities with warehouse staff",
+        "vocabulary": [
+          {
+            "term": "inventory count",
+            "zh": "盤點",
+            "note": "實際核對庫存品項與數量的作業。"
+          },
+          {
+            "term": "resume",
+            "zh": "恢復",
+            "note": "表示暫停後重新開始。"
+          }
+        ],
+        "revision": 1
+      },
+      {
+        "id": "t02-q085-v2",
+        "testId": "test-02",
+        "number": 85,
+        "part": 4,
+        "groupId": "t02-g049",
+        "topic": "manufacturing",
+        "difficulty": "intermediate",
+        "tags": [
+          "manufacturing",
+          "graphic-inference"
+        ],
+        "prompt": "Look at the graphic. Which counter label matches the time normal material collection resumes?",
+        "promptZh": "請看圖表。哪個櫃台標示對應正常領料恢復的時間？",
+        "options": [
+          {
+            "id": "A",
+            "text": "Maple",
+            "zh": "Maple",
+            "whyZh": "Maple 對應上午十一點。"
+          },
+          {
+            "id": "B",
+            "text": "Oak",
+            "zh": "Oak",
+            "whyZh": "Oak 對應中午十二點。"
+          },
+          {
+            "id": "C",
+            "text": "Cedar",
+            "zh": "Cedar",
+            "whyZh": "Cedar 對應下午四點。"
+          },
+          {
+            "id": "D",
+            "text": "Pine",
+            "zh": "Pine",
+            "whyZh": "Pine 對應下午四點半。"
+          }
+        ],
+        "answer": "D",
+        "explanationZh": "廣播通知下午四點半恢復正常領料，圖表中下午四點半對應 Pine。",
+        "evidence": "“Normal material collection will resume at four thirty.” → 4:30 p.m.: Pine.",
+        "vocabulary": [
+          {
+            "term": "inventory count",
+            "zh": "盤點",
+            "note": "實際核對庫存品項與數量的作業。"
+          },
+          {
+            "term": "resume",
+            "zh": "恢復",
+            "note": "表示暫停後重新開始。"
+          }
+        ],
+        "revision": 2
+      }
+    ],
+    "oldFrames": [
+      [
+        235,
+        {
+          "src": "audio/formal/test-02-cues-05.mp3",
+          "start": 7.36358,
+          "end": 10.52187,
+          "duration": 3.15829,
+          "kind": "audio",
+          "role": "cue",
+          "part": 4,
+          "groupId": "t02-g049",
+          "at": 2208.55222
+        }
+      ],
+      [
+        236,
+        {
+          "src": "audio/exams/test-02/groups/t02-g049/passage-r2.wav",
+          "start": 0,
+          "end": 29.8125,
+          "duration": 29.8125,
+          "kind": "audio",
+          "role": "passage",
+          "part": 4,
+          "groupId": "t02-g049",
+          "at": 2211.71051,
+          "speakers": [
+            {
+              "speaker": "female",
+              "locale": "en-NG",
+              "role": "female",
+              "modelVoice": "en-NG-EzinneNeural"
+            }
+          ]
+        }
+      ],
+      [
+        237,
+        {
+          "src": "audio/formal/test-02-cues-05.mp3",
+          "start": 10.77187,
+          "end": 14.29254,
+          "duration": 3.52067,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t02-g049",
+          "questionId": "t02-q083",
+          "at": 2241.52301
+        }
+      ],
+      [
+        238,
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 11.55786,
+          "part": 4,
+          "groupId": "t02-g049",
+          "questionId": "t02-q083",
+          "at": 2245.04368
+        }
+      ],
+      [
+        239,
+        {
+          "src": "audio/formal/test-02-cues-05.mp3",
+          "start": 14.54254,
+          "end": 17.31217,
+          "duration": 2.76963,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t02-g049",
+          "questionId": "t02-q084",
+          "at": 2256.60154
+        }
+      ],
+      [
+        240,
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 11.55786,
+          "part": 4,
+          "groupId": "t02-g049",
+          "questionId": "t02-q084",
+          "at": 2259.37117
+        }
+      ],
+      [
+        241,
+        {
+          "src": "audio/formal/test-02-cues-05.mp3",
+          "start": 17.56217,
+          "end": 24.37687,
+          "duration": 6.81471,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t02-g049",
+          "questionId": "t02-q085-v2",
+          "at": 2270.92903
+        }
+      ],
+      [
+        242,
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 16.92616,
+          "part": 4,
+          "groupId": "t02-g049",
+          "questionId": "t02-q085-v2",
+          "at": 2277.74374
+        }
+      ]
+    ],
+    "oldPlanEdition": "toeic-1"
+  }
+}

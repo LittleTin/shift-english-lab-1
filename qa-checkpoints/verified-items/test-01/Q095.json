@@ -1,0 +1,177 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "audio": "Actual revised en-KE-ChilembaNeural source matched: whole Whisper small.en exact guided tour at 2:30, independently restored as full key phrase in unprompted Vosk 0.22-lgraph rank #5 on focused 1.90–7.50 seconds at tempo 0.82; lgraph whole and small recover free audio guide/photo ID; lgraph whole identifies the museum closes at six and photography exhibition stops admitting visitors at five, while Whisper also retrieves both times and units but parses 'admitting' as 'at meeting'. Old generic talk cue and three numbered stems pass independent original checks and exact SHA/range rebinding. Both modes use the same sample-bound validated talk, not counted as independent observations. Original matched numbered group cue and stem are reused, recognized by independent lgraph decoder.",
+    "content": "Retrieve the included guided tour from the direct statement of ordinary ticket benefits; the photography exhibition is explicitly separate. Original English questions, bilingual choices, and exact keyed IDs are preserved; Q095 Chinese narrows no longer to an activity; new evidence matches repaired talk. No graphic applies.",
+    "association": "Same question and answer identifiers, distinct repaired shared group asset r2, source media and old attempts immutable. Group-local gain goes to own three answer pauses only; unaffected frame data exact. Not native browser acceptance."
+  },
+  "activeQuestion": {
+    "id": "t01-q095",
+    "testId": "test-01",
+    "number": 95,
+    "part": 4,
+    "groupId": "t01-g053-r2",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "included_service"
+    ],
+    "prompt": "What is included in a regular admission ticket?",
+    "promptZh": "一般門票包含下列哪一項？",
+    "options": [
+      {
+        "id": "A",
+        "text": "A photography-exhibition ticket.",
+        "zh": "攝影特展門票。",
+        "whyZh": "攝影特展 requires a separate ticket，不在一般票內。"
+      },
+      {
+        "id": "B",
+        "text": "A meal in the museum restaurant.",
+        "zh": "博物館餐廳的一餐。",
+        "whyZh": "沒有提到餐飲包含在門票內。"
+      },
+      {
+        "id": "C",
+        "text": "A free printed photograph.",
+        "zh": "一張免費沖印照片。",
+        "whyZh": "photography 指展覽主題，未提供免費沖印。"
+      },
+      {
+        "id": "D",
+        "text": "The guided tour at two thirty.",
+        "zh": "兩點半的導覽。",
+        "whyZh": "公告說一般門票包含常設展與今天兩點半導覽；攝影特展另購票。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "公告說一般門票包含常設展與今天兩點半導覽；攝影特展另購票。",
+    "evidence": "Regular admission includes the permanent collection and today's guided tour at two thirty.",
+    "vocabulary": [
+      {
+        "term": "permanent collection",
+        "zh": "常設收藏展",
+        "note": "長期展示館藏的展覽內容。"
+      }
+    ],
+    "revision": 1
+  },
+  "originalQuestion": {
+    "id": "t01-q095",
+    "testId": "test-01",
+    "number": 95,
+    "part": 4,
+    "groupId": "t01-g053",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "included_service"
+    ],
+    "prompt": "What is included in a regular admission ticket?",
+    "promptZh": "一般門票包含哪項活動？",
+    "options": [
+      {
+        "id": "A",
+        "text": "A photography-exhibition ticket.",
+        "zh": "攝影特展門票。",
+        "whyZh": "攝影特展 requires a separate ticket，不在一般票內。"
+      },
+      {
+        "id": "B",
+        "text": "A meal in the museum restaurant.",
+        "zh": "博物館餐廳的一餐。",
+        "whyZh": "沒有提到餐飲包含在門票內。"
+      },
+      {
+        "id": "C",
+        "text": "A free printed photograph.",
+        "zh": "一張免費沖印照片。",
+        "whyZh": "photography 指展覽主題，未提供免費沖印。"
+      },
+      {
+        "id": "D",
+        "text": "The guided tour at two thirty.",
+        "zh": "兩點半的導覽。",
+        "whyZh": "公告說一般門票包含常設展與今天兩點半導覽；攝影特展另購票。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "公告說一般門票包含常設展與今天兩點半導覽；攝影特展另購票。",
+    "evidence": "Your admission ticket includes access to our permanent collection and today's guided tour at two thirty.",
+    "vocabulary": [
+      {
+        "term": "permanent collection",
+        "zh": "常設收藏展",
+        "note": "長期展示館藏的展覽內容。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g053-r2",
+    "testId": "test-01",
+    "part": 4,
+    "title": "Museum admission and audio guides",
+    "titleZh": "博物館門票與語音導覽",
+    "topic": "daily",
+    "passage": "Welcome to the Harbor History Museum. Regular admission includes the permanent collection and today's guided tour at two thirty. The photography exhibition upstairs needs its own ticket, sold at the information desk. To borrow a free audio guide, leave a photo ID with the attendant. You'll get your ID back after returning the guide. Put bulky luggage in the lockers by the entrance. The museum closes at six. The photography exhibition stops admitting visitors at five.",
+    "passageZh": "歡迎來到 Harbor History Museum。一般門票包含常設展，以及今天兩點半的導覽。樓上的攝影特展須另購門票，可在服務台購買。若要免費借用語音導覽機，請把附照片的身分證明文件留給服務人員。歸還導覽機後即可領回證件。大件行李請放在入口旁的置物櫃。博物館六點閉館。攝影特展最後入場時間是五點。",
+    "audioScript": "Welcome to the Harbor History Museum. Regular admission includes the permanent collection and today's guided tour at two thirty. The photography exhibition upstairs needs its own ticket, sold at the information desk. To borrow a free audio guide, leave a photo ID with the attendant. You'll get your ID back after returning the guide. Put bulky luggage in the lockers by the entrance. The museum closes at six. The photography exhibition stops admitting visitors at five.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Welcome to the Harbor History Museum. Regular admission includes the permanent collection and today's guided tour at two thirty. The photography exhibition upstairs needs its own ticket, sold at the information desk. To borrow a free audio guide, leave a photo ID with the attendant. You'll get your ID back after returning the guide. Put bulky luggage in the lockers by the entrance. The museum closes at six. The photography exhibition stops admitting visitors at five."
+      }
+    ],
+    "audio": "audio/exams/test-01/groups/t01-g053-r2/passage.wav",
+    "duration": 31.175,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-KE",
+        "role": "male",
+        "modelVoice": "en-KE-ChilembaNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 31.175
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-01-cues-06.mp3",
+      "start": 16.46487,
+      "end": 19.84867,
+      "assetSha256": "2337fe71d1c63145b612d550acc785e0342b6af6749661ea7ae3434b17cbba4d",
+      "speech": "Questions 95 through 97. Listen to the talk."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/exams/test-01/groups/t01-g053-r2/passage.wav",
+      "start": 0,
+      "end": 31.175,
+      "assetSha256": "9c0714528272082ff4097af2c8607048cdb678a1343d0a3e46b50ad67a5a9fd4",
+      "speech": "Welcome to the Harbor History Museum. Regular admission includes the permanent collection and today's guided tour at two thirty. The photography exhibition upstairs needs its own ticket, sold at the information desk. To borrow a free audio guide, leave a photo ID with the attendant. You'll get your ID back after returning the guide. Put bulky luggage in the lockers by the entrance. The museum closes at six. The photography exhibition stops admitting visitors at five."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-01-cues-06.mp3",
+      "start": 20.09867,
+      "end": 24.08429,
+      "assetSha256": "2337fe71d1c63145b612d550acc785e0342b6af6749661ea7ae3434b17cbba4d",
+      "speech": "Number 95. What is included in a regular admission ticket?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/exams/test-01/groups/t01-g053-r2/passage.wav",
+      "start": 0,
+      "end": 31.175,
+      "assetSha256": "9c0714528272082ff4097af2c8607048cdb678a1343d0a3e46b50ad67a5a9fd4",
+      "speech": "Welcome to the Harbor History Museum. Regular admission includes the permanent collection and today's guided tour at two thirty. The photography exhibition upstairs needs its own ticket, sold at the information desk. To borrow a free audio guide, leave a photo ID with the attendant. You'll get your ID back after returning the guide. Put bulky luggage in the lockers by the entrance. The museum closes at six. The photography exhibition stops admitting visitors at five."
+    }
+  ],
+  "imageSha256": null
+}
