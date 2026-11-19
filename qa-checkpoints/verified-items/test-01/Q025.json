@@ -1,0 +1,113 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Only B identifies the taxi stand outside the east exit. Duration and a forgotten ticket do not give a location. Both audio clips agree, ignoring capitalization and punctuation; all zh-TW material checked.",
+  "activeQuestion": {
+    "id": "t01-q025",
+    "testId": "test-01",
+    "number": 25,
+    "part": 2,
+    "groupId": "t01-g025",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "location"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "It took about half an hour.",
+        "zh": "大約花了半小時。",
+        "whyZh": "行程時長沒有指出搭車位置。"
+      },
+      {
+        "id": "B",
+        "text": "There's a taxi stand outside the east exit.",
+        "zh": "東出口外有計程車招呼站。",
+        "whyZh": "where to catch a taxi 問可搭車地點；東出口外的招呼站直接滿足需求。"
+      },
+      {
+        "id": "C",
+        "text": "I left my ticket at home.",
+        "zh": "我把票留在家裡了。",
+        "whyZh": "票放在哪裡與尋找計程車招呼站無關。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "where to catch a taxi 問可搭車地點；東出口外的招呼站直接滿足需求。",
+    "evidence": "Could you tell me where to catch a taxi?",
+    "vocabulary": [
+      {
+        "term": "taxi stand",
+        "zh": "計程車招呼站",
+        "note": "計程車排班載客的指定地點。"
+      },
+      {
+        "term": "exit",
+        "zh": "出口",
+        "note": "此處用方位 east 辨識出口。"
+      }
+    ],
+    "revision": 1
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-01-09.mp3",
+      "start": 16.888,
+      "end": 33.64,
+      "assetSha256": "b7b5f071a7aa321bb8250a34a39c989ed16c8576c7bfbb8481d6939b09ccdc9a",
+      "speech": "Could you tell me where to catch a taxi?\n A. It took about half an hour.\n B. There's a taxi stand outside the East exit.\n C. I left my ticket at home."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-09.mp3",
+      "start": 16.936,
+      "end": 33.28,
+      "assetSha256": "65d735892de7a8de23f34053088a1768b9638d4d8da535e0d20de75814ab0288",
+      "speech": "Could you tell me where to catch a taxi?\n A. It took about half an hour.\n B. There's a taxi stand outside the east exit.\n C. I left my ticket at home."
+    }
+  ],
+  "group": {
+    "id": "t01-g025",
+    "testId": "test-01",
+    "part": 2,
+    "title": "Finding a taxi",
+    "titleZh": "找計程車",
+    "topic": "daily",
+    "passage": "Could you tell me where to catch a taxi?\nA. It took about half an hour. B. There's a taxi stand outside the east exit. C. I left my ticket at home.",
+    "passageZh": "你可以告訴我在哪裡搭計程車嗎？\nA. 大約花了半小時。\nB. 東出口外有計程車招呼站。\nC. 我把票留在家裡了。",
+    "audioScript": "Could you tell me where to catch a taxi?\nA. It took about half an hour. B. There's a taxi stand outside the east exit. C. I left my ticket at home.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Could you tell me where to catch a taxi?"
+      },
+      {
+        "voice": "male",
+        "text": "A. It took about half an hour. B. There's a taxi stand outside the east exit. C. I left my ticket at home."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-09.mp3",
+    "duration": 16.344,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-KE",
+        "role": "female",
+        "modelVoice": "en-KE-AsiliaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-KE",
+        "role": "male",
+        "modelVoice": "en-KE-ChilembaNeural"
+      }
+    ],
+    "audioStart": 16.936,
+    "audioEnd": 33.28
+  }
+}
