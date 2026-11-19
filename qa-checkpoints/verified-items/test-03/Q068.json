@@ -1,0 +1,168 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "A: The first page is incomplete because the founder quotation source is unconfirmed. The printer did not lose the layout, the scholarship continues, and the founder’s naming preference is not discussed. Formal and practice use the same hashed range. The focused 0.85× recording excerpt recovered founder exactly after full ASR “found-up”; all other core content (opening page, source unverified, tomorrow morning deadline, tonight train, scholarship draft) and identities/roles match. Longer cue decode recovered literal Number 70 where standalone typed only 70. The separate 0.85× printer-deadline excerpt also removed the full transcript’s spurious “the” at the clause boundary, confirming “by tomorrow morning, so that could be tight.”",
+  "activeQuestion": {
+    "id": "t03-q068",
+    "testId": "test-03",
+    "number": 68,
+    "part": 3,
+    "groupId": "t03-g044",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "detail"
+    ],
+    "prompt": "What is delaying completion of the report?",
+    "promptZh": "什麼使報告無法完成？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The source of a quotation is unconfirmed.",
+        "zh": "一段引言的來源未確認。",
+        "whyZh": "首頁要放創辦人引言，但出處查不到。"
+      },
+      {
+        "id": "B",
+        "text": "The printer has lost the layout.",
+        "zh": "印刷商遺失版面。",
+        "whyZh": "版面已完成大部分，沒有遺失。"
+      },
+      {
+        "id": "C",
+        "text": "The scholarship program was canceled.",
+        "zh": "獎學金計畫取消。",
+        "whyZh": "計畫是年報主題，沒有取消。"
+      },
+      {
+        "id": "D",
+        "text": "The founder refuses to be named.",
+        "zh": "創辦人拒絕署名。",
+        "whyZh": "無法查證來源，未說創辦人反對。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "首頁要放創辦人引言，但出處查不到。",
+    "evidence": "I can't verify where it came from",
+    "vocabulary": [
+      {
+        "term": "verify",
+        "zh": "查證",
+        "note": "確認引言出處可靠。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g044",
+    "testId": "test-03",
+    "part": 3,
+    "title": "Finding a suitable quotation",
+    "titleZh": "尋找合適引言",
+    "topic": "business",
+    "passage": "M1: The annual report layout is finished except for the opening page. We planned to use a quotation from our founder, but I can't verify where it came from.\nF1: If we can't confirm the source, we shouldn't print it. What about a short statement from the current director instead?\nM1: She's traveling today. The printer needs our approval by tomorrow morning, so that could be tight.\nF1: Her assistant said she'll check email during her train journey this evening. Draft two sentences about this year's scholarship program and send them for approval.\nM1: Good idea. The program is the main subject of the report anyway.\nF1: Exactly. Leave space for her name below the statement, and keep the rest of the layout unchanged.",
+    "passageZh": "男：年報版面除了首頁都好了。本來想引用創辦人的話，但查不到出處。\n女：不能確認來源就不應刊印。不如改用現任主管的一小段聲明？\n男：她今天出差，印刷商明早就要核准，可能很趕。\n女：助理說她今晚搭火車時會查看電子郵件。寫兩句關於今年獎學金計畫的話，寄給她核准。\n男：好主意，這個計畫本來就是報告主題。\n女：沒錯，在聲明下方留空間寫她的名字，其餘版面保持不變。",
+    "audioScript": "The annual report layout is finished except for the opening page. We planned to use a quotation from our founder, but I can't verify where it came from.\nIf we can't confirm the source, we shouldn't print it. What about a short statement from the current director instead?\nShe's traveling today. The printer needs our approval by tomorrow morning, so that could be tight.\nHer assistant said she'll check email during her train journey this evening. Draft two sentences about this year's scholarship program and send them for approval.\nGood idea. The program is the main subject of the report anyway.\nExactly. Leave space for her name below the statement, and keep the rest of the layout unchanged.",
+    "turns": [
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "The annual report layout is finished except for the opening page. We planned to use a quotation from our founder, but I can't verify where it came from."
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "If we can't confirm the source, we shouldn't print it. What about a short statement from the current director instead?"
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "She's traveling today. The printer needs our approval by tomorrow morning, so that could be tight."
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "Her assistant said she'll check email during her train journey this evening. Draft two sentences about this year's scholarship program and send them for approval."
+      },
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "Good idea. The program is the main subject of the report anyway."
+      },
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "Exactly. Leave space for her name below the statement, and keep the rest of the layout unchanged."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-24.mp3",
+    "duration": 49.392,
+    "audioStart": 0.5,
+    "audioEnd": 49.892,
+    "audioSpeakers": [
+      {
+        "speaker": "M1",
+        "locale": "en-KE",
+        "role": "male",
+        "modelVoice": "en-KE-ChilembaNeural"
+      },
+      {
+        "speaker": "F1",
+        "locale": "en-KE",
+        "role": "female",
+        "modelVoice": "en-KE-AsiliaNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-04.mp3",
+      "start": 7.29796,
+      "end": 11.12446,
+      "assetSha256": "f5db73b2aab14a49b3a6ba3408fbf600098cfa5626160ea7dd95a13b9bf6404b",
+      "speech": "Questions 68 through 70. Listen to the conversation."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-03-24.mp3",
+      "start": 0.5,
+      "end": 49.892,
+      "assetSha256": "1f3e7a1401557f3b839068b9865615eb441c7b010c8cd07d6106dad38f948781",
+      "speech": "The annual report layout is finished except for the opening page. We planned to use a quotation from our found-up, but I can't verify where it came from. If we can't confirm the source, we shouldn't print it. What about a short statement from the current director instead? She's travelling today. The printer needs our approval by tomorrow morning, the so that could be tight. Her assistant said she'll check email during her train journey this evening. Draft two sentences about this year's scholarship program and send them for approval. Good idea. The program is the main subject of the report anyway. Exactly. Leave space for her name below the statement and keep the rest of the layout unchanged.",
+      "retries": {
+        "t03-g044-passage-retry-18.2-0.85": "She's traveling today. The printer needs our approval by tomorrow morning, so that could be tight. Her assistant said she'll check in.",
+        "t03-g044-passage-retry-18.2-1.15": "She's traveling today. The printer needs our approval by tomorrow morning, the soda could be tight. Her assistant said she'll check in.",
+        "t03-g044-passage-retry-18.2-1": "She's traveling today. The printer needs our approval by tomorrow morning, the so that could be tight. Her assistant said she'll check in.",
+        "t03-g044-passage-retry-2.5-0.85": "Opening page. We planned to use a quotation from our founder but I can't verify where it came from. If we can't confirm the source, we shouldn't print it.",
+        "t03-g044-passage-retry-2.5-1.15": "Opening page. We planned to use a quotation from our found app but I can't verify where it came from. If we can't confirm the source, we shouldn't print it.",
+        "t03-g044-passage-retry-2.5-1": "Opening page. We planned to use a quotation from our found app but I can't verify where it came from. If we can't confirm the source we shouldn't print it."
+      }
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-24.mp3",
+      "start": 0.5,
+      "end": 49.892,
+      "assetSha256": "1f3e7a1401557f3b839068b9865615eb441c7b010c8cd07d6106dad38f948781",
+      "speech": "The annual report layout is finished except for the opening page. We planned to use a quotation from our found-up, but I can't verify where it came from. If we can't confirm the source, we shouldn't print it. What about a short statement from the current director instead? She's travelling today. The printer needs our approval by tomorrow morning, the so that could be tight. Her assistant said she'll check email during her train journey this evening. Draft two sentences about this year's scholarship program and send them for approval. Good idea. The program is the main subject of the report anyway. Exactly. Leave space for her name below the statement and keep the rest of the layout unchanged.",
+      "retries": {
+        "t03-g044-passage-retry-18.2-0.85": "She's traveling today. The printer needs our approval by tomorrow morning, so that could be tight. Her assistant said she'll check in.",
+        "t03-g044-passage-retry-18.2-1.15": "She's traveling today. The printer needs our approval by tomorrow morning, the soda could be tight. Her assistant said she'll check in.",
+        "t03-g044-passage-retry-18.2-1": "She's traveling today. The printer needs our approval by tomorrow morning, the so that could be tight. Her assistant said she'll check in.",
+        "t03-g044-passage-retry-2.5-0.85": "Opening page. We planned to use a quotation from our founder but I can't verify where it came from. If we can't confirm the source, we shouldn't print it.",
+        "t03-g044-passage-retry-2.5-1.15": "Opening page. We planned to use a quotation from our found app but I can't verify where it came from. If we can't confirm the source, we shouldn't print it.",
+        "t03-g044-passage-retry-2.5-1": "Opening page. We planned to use a quotation from our found app but I can't verify where it came from. If we can't confirm the source we shouldn't print it."
+      }
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-03-cues-04.mp3",
+      "start": 11.37446,
+      "end": 14.91479,
+      "assetSha256": "f5db73b2aab14a49b3a6ba3408fbf600098cfa5626160ea7dd95a13b9bf6404b",
+      "speech": "Number 68. What is delaying completion of the report?"
+    }
+  ]
+}

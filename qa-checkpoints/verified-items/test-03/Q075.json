@@ -1,0 +1,121 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "C: Remain in main waiting area, not on platform six, a bus, or outside station. Formal and practice use exactly the same hashed range. Signal fault, eastern tracks, 10:15 Northbridge service, 20 min estimate, wait, do not go to platform 6, replacement travel at no additional booking fee, next update at 10:20 all align. North Bridge is orthographic spacing. Cue and three numbered stems match.",
+  "activeQuestion": {
+    "id": "t03-q075",
+    "testId": "test-03",
+    "number": 75,
+    "part": 4,
+    "groupId": "t03-g046",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "detail"
+    ],
+    "prompt": "What should passengers do now?",
+    "promptZh": "旅客現在應該做什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Proceed to platform six",
+        "zh": "前往第六號月台",
+        "whyZh": "講者特別要求不要照紙票前往第六號。"
+      },
+      {
+        "id": "B",
+        "text": "Board a replacement bus",
+        "zh": "搭接駁巴士",
+        "whyZh": "沒有宣布巴士。"
+      },
+      {
+        "id": "C",
+        "text": "Stay in the main waiting area",
+        "zh": "留在主要候車區",
+        "whyZh": "月台尚未指定，應留候車區等公告。"
+      },
+      {
+        "id": "D",
+        "text": "Leave the station immediately",
+        "zh": "立即離開車站",
+        "whyZh": "沒有疏散要求。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "月台尚未指定，應留候車區等公告。",
+    "evidence": "remain in the main waiting area",
+    "vocabulary": [
+      {
+        "term": "onward travel",
+        "zh": "後續行程",
+        "note": "錯過轉乘後繼續前往目的地的交通。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g046",
+    "testId": "test-03",
+    "part": 4,
+    "title": "Changes to a train service",
+    "titleZh": "列車服務異動",
+    "topic": "daily",
+    "passage": "M1: May I have your attention, please? Passengers for the ten-fifteen service to Northbridge should remain in the main waiting area. A signal fault has closed the eastern tracks, and our train is currently unable to enter the station. Engineers expect to restore the signals within twenty minutes, but we cannot yet confirm a departure platform. Please do not proceed to platform six, which is shown on printed tickets. The electronic boards will display the correct platform when one is assigned. If this delay causes you to miss a reserved connection, staff at the information desk can arrange onward travel without an additional booking fee. We will provide another update at ten-twenty.",
+    "passageZh": "請注意，搭乘十點十五分往Northbridge列車的旅客，請留在主要候車區。號誌故障造成東側軌道關閉，目前列車無法進站。工程師預計二十分鐘內修復，但目前仍無法確認出發月台。請勿前往紙本車票上的第六號月台。分配完成後，電子看板會顯示正確月台。若因此錯過已訂的轉乘，服務台人員可協助後續行程，不加收訂位費。我們十點二十分會再次公告。",
+    "audioScript": "May I have your attention, please? Passengers for the ten-fifteen service to Northbridge should remain in the main waiting area. A signal fault has closed the eastern tracks, and our train is currently unable to enter the station. Engineers expect to restore the signals within twenty minutes, but we cannot yet confirm a departure platform. Please do not proceed to platform six, which is shown on printed tickets. The electronic boards will display the correct platform when one is assigned. If this delay causes you to miss a reserved connection, staff at the information desk can arrange onward travel without an additional booking fee. We will provide another update at ten-twenty.",
+    "turns": [
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "May I have your attention, please? Passengers for the ten-fifteen service to Northbridge should remain in the main waiting area. A signal fault has closed the eastern tracks, and our train is currently unable to enter the station. Engineers expect to restore the signals within twenty minutes, but we cannot yet confirm a departure platform. Please do not proceed to platform six, which is shown on printed tickets. The electronic boards will display the correct platform when one is assigned. If this delay causes you to miss a reserved connection, staff at the information desk can arrange onward travel without an additional booking fee. We will provide another update at ten-twenty."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-26.mp3",
+    "duration": 41.568,
+    "audioStart": 0.5,
+    "audioEnd": 42.068,
+    "audioSpeakers": [
+      {
+        "speaker": "M1",
+        "locale": "en-TZ",
+        "role": "male",
+        "modelVoice": "en-TZ-ElimuNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-04.mp3",
+      "start": 37.48608,
+      "end": 41.03396,
+      "assetSha256": "f5db73b2aab14a49b3a6ba3408fbf600098cfa5626160ea7dd95a13b9bf6404b",
+      "speech": "Questions 74 through 76. Listen to the talk."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-03-26.mp3",
+      "start": 0.5,
+      "end": 42.068,
+      "assetSha256": "f659535eb0adfb86f8f60cf4446718b346c47e6f37fe1016d51d970b9e14dc10",
+      "speech": "May I have your attention, please? Passengers for the 1015 service to North Bridge should remain in the main waiting area. A signal fault has closed the eastern tracks, and our train is currently unable to enter the station. Engineers expect to restore the signals within 20 minutes, but we cannot yet confirm a departure platform. Please do not proceed to Platform 6, which is shown on printed tickets. The electronic boards will display the correct platform when one is assigned. If this delay causes you to miss a reserved connection, staff at the information desk can arrange onward travel without an additional booking fee. We will provide another update at 10.20."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-26.mp3",
+      "start": 0.5,
+      "end": 42.068,
+      "assetSha256": "f659535eb0adfb86f8f60cf4446718b346c47e6f37fe1016d51d970b9e14dc10",
+      "speech": "May I have your attention, please? Passengers for the 1015 service to North Bridge should remain in the main waiting area. A signal fault has closed the eastern tracks, and our train is currently unable to enter the station. Engineers expect to restore the signals within 20 minutes, but we cannot yet confirm a departure platform. Please do not proceed to Platform 6, which is shown on printed tickets. The electronic boards will display the correct platform when one is assigned. If this delay causes you to miss a reserved connection, staff at the information desk can arrange onward travel without an additional booking fee. We will provide another update at 10.20."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-03-cues-04.mp3",
+      "start": 44.2375,
+      "end": 46.9905,
+      "assetSha256": "f5db73b2aab14a49b3a6ba3408fbf600098cfa5626160ea7dd95a13b9bf6404b",
+      "speech": "Number 75, what should passengers do now?"
+    }
+  ]
+}
