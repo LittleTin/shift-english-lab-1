@@ -1,0 +1,113 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Only A answers yes and says the humidity test results are ready. Sample preference and outdoor warmth are nonanswers. Both actual audio clips and all zh-TW options match.",
+  "activeQuestion": {
+    "id": "t01-q028",
+    "testId": "test-01",
+    "number": 28,
+    "part": 2,
+    "groupId": "t01-g028",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "completion"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes, the results are ready to review.",
+        "zh": "是的，結果已可供審查。",
+        "whyZh": "Yes 確認測試完成，結果已備妥進一步支持已結束的狀態。"
+      },
+      {
+        "id": "B",
+        "text": "We prefer a smaller sample.",
+        "zh": "我們偏好較小的樣品。",
+        "whyZh": "樣品大小偏好與測試是否完成不同。"
+      },
+      {
+        "id": "C",
+        "text": "It feels warmer outside.",
+        "zh": "外面感覺比較暖。",
+        "whyZh": "室外溫度感受沒有說明濕度測試的進度。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "Yes 確認測試完成，結果已備妥進一步支持已結束的狀態。",
+    "evidence": "Has the humidity test finished?",
+    "vocabulary": [
+      {
+        "term": "humidity",
+        "zh": "濕度",
+        "note": "空氣中的水氣程度。"
+      },
+      {
+        "term": "review",
+        "zh": "審查；檢視",
+        "note": "此處指檢查測試結果。"
+      }
+    ],
+    "revision": 1
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-01-10.mp3",
+      "start": 19.408,
+      "end": 36.136,
+      "assetSha256": "fba7fccbc4561be7416da1b7fcd85e927c64058ae0bac64d058be88884de2e5b",
+      "speech": "Has the humidity test finished?\n A. Yes, the results are ready to review.\n B. We prefer a smaller sample.\n C. It feels warmer outside."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-10.mp3",
+      "start": 18.928,
+      "end": 34.648,
+      "assetSha256": "43d71007b9330cbdf7226536d5d86dcb4e65df19e000a7460c59c01f6e628efc",
+      "speech": "Has the humidity test finished?\n A. Yes, the results are ready to review.\n B. We prefer a smaller sample.\n C. It feels warmer outside."
+    }
+  ],
+  "group": {
+    "id": "t01-g028",
+    "testId": "test-01",
+    "part": 2,
+    "title": "Humidity-test completion",
+    "titleZh": "濕度測試完成",
+    "topic": "manufacturing",
+    "passage": "Has the humidity test finished?\nA. Yes, the results are ready to review. B. We prefer a smaller sample. C. It feels warmer outside.",
+    "passageZh": "濕度測試結束了嗎？\nA. 是的，結果已可供審查。\nB. 我們偏好較小的樣品。\nC. 外面感覺比較暖。",
+    "audioScript": "Has the humidity test finished?\nA. Yes, the results are ready to review. B. We prefer a smaller sample. C. It feels warmer outside.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Has the humidity test finished?"
+      },
+      {
+        "voice": "male",
+        "text": "A. Yes, the results are ready to review. B. We prefer a smaller sample. C. It feels warmer outside."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-10.mp3",
+    "duration": 15.72,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-ZA",
+        "role": "female",
+        "modelVoice": "en-ZA-LeahNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-ZA",
+        "role": "male",
+        "modelVoice": "en-ZA-LukeNeural"
+      }
+    ],
+    "audioStart": 18.928,
+    "audioEnd": 34.648
+  }
+}
