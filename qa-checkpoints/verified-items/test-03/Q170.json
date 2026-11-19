@@ -1,0 +1,74 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": {
+    "number": 170,
+    "key": "A",
+    "reason": "Deposits only for large private events, handled separately; notes were transferred successfully; higher-plan reminder comparison unstated, and basic includes online booking.",
+    "evidence": "we take deposits only for large private events and can handle those separately"
+  },
+  "activeQuestion": {
+    "id": "t03-q170",
+    "testId": "test-03",
+    "number": 170,
+    "part": 7,
+    "groupId": "t03-g067",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "reading-comprehension",
+      "single"
+    ],
+    "prompt": "Why did the restaurant retain the basic plan?",
+    "promptZh": "餐廳為何保留基本方案？",
+    "options": [
+      {
+        "text": "Its limited need for deposits could be managed separately",
+        "zh": "訂金需求有限，可另行處理",
+        "whyZh": "只對大型包場收訂金，無須為此升級。",
+        "id": "A"
+      },
+      {
+        "text": "Its customer notes could not be imported",
+        "zh": "無法匯入顧客備註",
+        "whyZh": "支援團隊已完成轉移。",
+        "id": "B"
+      },
+      {
+        "text": "The higher plan lacked reminders",
+        "zh": "進階方案沒有提醒功能",
+        "whyZh": "文章未如此比較。",
+        "id": "C"
+      },
+      {
+        "text": "It did not accept online reservations",
+        "zh": "不接受網路訂位",
+        "whyZh": "基本方案本身支援網路訂位；文章說留下來是因為餐廳只對大型包場收訂金，而且能另行處理。",
+        "id": "D"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "只對大型包場收訂金，無須為此升級。",
+    "evidence": "we take deposits only for large private events and can handle those separately",
+    "vocabulary": [
+      {
+        "term": "deposit",
+        "zh": "訂金",
+        "note": "本題閱讀重點詞彙。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g067",
+    "testId": "test-03",
+    "part": 7,
+    "title": "Reservation system service review",
+    "titleZh": "預約系統服務評論",
+    "topic": "technology",
+    "passage": "REVIEW: TABLEPATH FOR SMALL RESTAURANTS\nBy Ellis Park, owner of Juniper Kitchen\n\nWe switched to TablePath three months ago after losing several telephone reservations during a busy holiday weekend. The system has made it easier for our two front-desk employees to see the same booking calendar. Customers receive an automatic reminder the day before their visit, and missed reservations have noticeably decreased.\n\nSetup was straightforward, although importing our old customer notes took longer than expected. TablePath's support team responded quickly and transferred the notes at no extra charge. The basic subscription includes online bookings but not deposit collection; that requires the higher-priced plan. We stayed with the basic plan because we take deposits only for large private events and can handle those separately.\n\nMy main criticism is the printed seating chart. The text is too small, and there is no way to enlarge it. We now keep a tablet at the host station instead. For an independent restaurant needing simple reservation management, I would recommend TablePath, but businesses requiring detailed event-planning tools should look elsewhere.",
+    "passageZh": "評論：小型餐廳適用的 TablePath\nJuniper Kitchen 店主 Ellis Park\n\n三個月前，某個逢假日的忙碌週末漏登數筆電話訂位後，我們改用 TablePath。兩名接待員現在能輕鬆查看同一份訂位日曆。顧客來店前一天會收到自動提醒，訂位後未到場的情形明顯減少。\n\n設定簡單，但匯入舊顧客備註比預期久。支援團隊迅速回應，免費轉移備註。基本方案包含網路訂位，收取訂金則要較昂貴方案。我們只對大型包場收訂金，可另行處理，因此保留基本方案。\n\n主要缺點是列印座位表字太小，而且無法放大。現在我們改把平板放在接待台。需要簡單訂位管理的獨立餐廳，我會推薦；但需要詳細活動規劃工具的業者應找其他產品。",
+    "passageType": "single"
+  }
+}

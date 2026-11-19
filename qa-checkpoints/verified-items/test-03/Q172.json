@@ -1,0 +1,74 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": {
+    "number": 172,
+    "key": "D",
+    "reason": "Internal review of incomplete repair histories, explicitly not a complaint; equipment purchase and room location not the cause.",
+    "evidence": "our internal review of incomplete repair histories"
+  },
+  "activeQuestion": {
+    "id": "t03-q172",
+    "testId": "test-03",
+    "number": 172,
+    "part": 7,
+    "groupId": "t03-g068",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension",
+      "single"
+    ],
+    "prompt": "What prompted the revision of the inspection card?",
+    "promptZh": "什麼原因促成檢驗卡修訂？",
+    "options": [
+      {
+        "text": "The purchase of new assembly equipment",
+        "zh": "購買新組裝設備",
+        "whyZh": "未提採購設備。",
+        "id": "A"
+      },
+      {
+        "text": "A change in the training-room location",
+        "zh": "訓練室地點改變",
+        "whyZh": "訓練地點不是修訂原因。",
+        "id": "B"
+      },
+      {
+        "text": "A customer complaint about late delivery",
+        "zh": "顧客投訴延誤交貨",
+        "whyZh": "公告明確不是因客訴。",
+        "id": "C"
+      },
+      {
+        "text": "An internal finding of incomplete repair records",
+        "zh": "內部發現修復紀錄不完整",
+        "whyZh": "內部檢討發現修復紀錄不完整。",
+        "id": "D"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "內部檢討發現修復紀錄不完整。",
+    "evidence": "our internal review of incomplete repair histories",
+    "vocabulary": [
+      {
+        "term": "rework",
+        "zh": "返工",
+        "note": "本題閱讀重點詞彙。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g068",
+    "testId": "test-03",
+    "part": 7,
+    "title": "Production training announcement",
+    "titleZh": "生產訓練公告",
+    "topic": "manufacturing",
+    "passage": "TO: Assembly-line employees\nFROM: Quality Assurance\nSUBJECT: Training on revised inspection cards\n\n[1] From October 14, each completed unit must travel with a revised inspection card showing both the assembler's initials and the final inspector's stamp. The card has a new section for recording any rework, even when the unit passes its later inspection. The revision follows our internal review of incomplete repair histories; it is not a response to a customer complaint.\n\n[2] All assembly employees must attend one 45-minute session before the change takes effect. Sessions are offered at 8 a.m. and 3 p.m. on October 10 and 11 in Training Room B. Supervisors will assign sessions to maintain production coverage. Employees should not register individually.\n\n[3] Bring one unused card from your current supply. During the session, we will compare the old and new formats and practice completing the rework section. New cards will be delivered to line supervisors on October 12. Any old cards remaining on October 14 must be returned to Quality Assurance, not placed in the recycling bins. [4] Contractors working on assembly lines are included in this requirement.",
+    "passageZh": "收件者：組裝線員工\n寄件者：品保部\n主旨：新版檢驗卡訓練\n\n[1] 十月十四日起，每台完成的產品必須附新版檢驗卡，須填寫組裝人員的姓名縮寫，並加蓋最終檢驗人員的印章。新卡增設返工紀錄欄，即使後續檢驗通過，也要記錄返工。修訂是因內部檢討發現修復紀錄不完整，不是因客訴。\n\n[2] 所有組裝員須在新制實施前參加一堂四十五分鐘課程。十月十日及十一日上午八點、下午三點於 B 訓練室開課。主管將分派時段以維持產線運作，員工不應自行報名。\n\n[3] 請攜帶一張目前使用的空白卡。課堂會比較新舊版並練習填寫返工欄。新卡十月十二日交給產線主管。十月十四日仍剩下的舊卡須交回品保，不可放回收桶。[4] 組裝線承攬人員也適用此規定。",
+    "passageType": "single"
+  }
+}
