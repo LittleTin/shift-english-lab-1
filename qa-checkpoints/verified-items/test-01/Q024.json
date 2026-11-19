@@ -1,0 +1,113 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Only C supplies the reopening time, next Monday from the notice. Borrowing yesterday or giving a desk location does not answer when. Both actual audio clips agree and all zh-TW material checked.",
+  "activeQuestion": {
+    "id": "t01-q024",
+    "testId": "test-01",
+    "number": 24,
+    "part": 2,
+    "groupId": "t01-g024",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "time"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "I borrowed it yesterday.",
+        "zh": "我昨天借了它。",
+        "whyZh": "借書時間不是圖書館重新開放的時間。"
+      },
+      {
+        "id": "B",
+        "text": "At the desk near the window.",
+        "zh": "在窗邊的櫃檯。",
+        "whyZh": "這是位置，不是開放日期。"
+      },
+      {
+        "id": "C",
+        "text": "The notice says next Monday.",
+        "zh": "公告說是下星期一。",
+        "whyZh": "When 問時間；回應引用公告並給出重新開放的日期。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "When 問時間；回應引用公告並給出重新開放的日期。",
+    "evidence": "When will the renovated library reopen?",
+    "vocabulary": [
+      {
+        "term": "renovated",
+        "zh": "整修過的",
+        "note": "指建物經修繕或更新。"
+      },
+      {
+        "term": "reopen",
+        "zh": "重新開放",
+        "note": "暫停營業或使用後再度開啟。"
+      }
+    ],
+    "revision": 1
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-01-09.mp3",
+      "start": 0.5,
+      "end": 16.388,
+      "assetSha256": "b7b5f071a7aa321bb8250a34a39c989ed16c8576c7bfbb8481d6939b09ccdc9a",
+      "speech": "When will the renovated library reopen?\n A. I borrowed it yesterday.\n B. At the desk near the window.\n C. The notice says next Monday."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-09.mp3",
+      "start": 0.5,
+      "end": 16.436,
+      "assetSha256": "65d735892de7a8de23f34053088a1768b9638d4d8da535e0d20de75814ab0288",
+      "speech": "When will the renovated library reopen?\n A. I borrowed it yesterday.\n B. At the desk near the window.\n C. The notice says next Monday."
+    }
+  ],
+  "group": {
+    "id": "t01-g024",
+    "testId": "test-01",
+    "part": 2,
+    "title": "Library reopening",
+    "titleZh": "圖書館重新開放",
+    "topic": "daily",
+    "passage": "When will the renovated library reopen?\nA. I borrowed it yesterday. B. At the desk near the window. C. The notice says next Monday.",
+    "passageZh": "整修後的圖書館何時重新開放？\nA. 我昨天借了它。\nB. 在窗邊的櫃檯。\nC. 公告說是下星期一。",
+    "audioScript": "When will the renovated library reopen?\nA. I borrowed it yesterday. B. At the desk near the window. C. The notice says next Monday.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "When will the renovated library reopen?"
+      },
+      {
+        "voice": "male",
+        "text": "A. I borrowed it yesterday. B. At the desk near the window. C. The notice says next Monday."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-09.mp3",
+    "duration": 15.936,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-IE",
+        "role": "female",
+        "modelVoice": "en-IE-EmilyNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-IE",
+        "role": "male",
+        "modelVoice": "en-IE-ConnorNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 16.436
+  }
+}
