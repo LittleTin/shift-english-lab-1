@@ -1,12 +1,54 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": {
-    "key": "D",
-    "checks": "Accept means receive bids from contractors; except/access/exceed do not match bidding reception. zh tender vs bids and cutoff semantics corrected.",
-    "id": "t03-q129"
-  },
+  "checks": "Apply two distinct eligibility tests: the missed green-tag deadline excludes this repair trip, while the fixable condition separately excludes disposal. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t03-q129-r2",
+    "testId": "test-03",
+    "number": 129,
+    "part": 5,
+    "groupId": null,
+    "topic": "business",
+    "tags": [
+      "business",
+      "context"
+    ],
+    "vocabulary": [],
+    "difficulty": "intermediate",
+    "prompt": "The repair truck collects broken chairs every Thursday, provided their green tags were attached by 5 p.m. the previous day. A contractor makes a separate Friday disposal trip that takes only red-tagged chairs, and red tags are issued only for chairs assessed as beyond repair. A chair can be fixed, but its green tag cannot be attached until Thursday morning. The chair must therefore ____.",
+    "promptZh": "維修車每週四會來收走損壞的椅子，但椅子須在前一天下午 5 點前貼上綠標。承包商週五另有一趟報廢收運，只收貼有紅標的椅子；只有判定無法修理的椅子才會拿到紅標。有張椅子可以修，只是要到週四上午才能貼綠標。因此這張椅子必須____。",
+    "options": [
+      {
+        "id": "A",
+        "text": "be held for the next repair collection",
+        "zh": "保留到下次維修收運",
+        "whyZh": "週四上午才貼綠標，已超過週四收運的貼標期限；椅子可修，不符合週五報廢的條件，因此須等下次維修收運。"
+      },
+      {
+        "id": "B",
+        "text": "be added to the Thursday repair load",
+        "zh": "列入週四的維修車收運清單",
+        "whyZh": "週四上午雖可貼標，但截至週三下午 5 點並未貼，因此來不及列入週四批次。"
+      },
+      {
+        "id": "C",
+        "text": "be transferred to the Friday disposal list",
+        "zh": "轉列入週五的報廢收運清單",
+        "whyZh": "週五收運只收無法修理的椅子；錯過維修收運不會使仍可修的椅子符合報廢條件。"
+      },
+      {
+        "id": "D",
+        "text": "be returned to regular use",
+        "zh": "恢復正常使用",
+        "whyZh": "椅子可以修，不代表已修好；它仍待維修，不能直接恢復正常使用。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "週四上午才貼綠標，已超過週四收運的貼標期限；椅子可修，不符合週五報廢的條件，因此須等下次維修收運。",
+    "evidence": "The repair truck collects broken chairs every Thursday, provided their green tags were attached by 5 p.m. the previous day. A contractor makes a separate Friday disposal trip that takes only red-tagged chairs, and red tags are issued only for chairs assessed as beyond repair. A chair can be fixed, but its green tag cannot be attached until Thursday morning. The chair must therefore ____.",
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t03-q129",
     "testId": "test-03",
     "number": 129,
@@ -58,5 +100,5 @@
     ],
     "revision": 1
   },
-  "group": null
+  "retiredSourceReference": "question-reserve/test-03/Q129/verification.json"
 }

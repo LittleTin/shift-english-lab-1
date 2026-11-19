@@ -1,12 +1,54 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": {
-    "key": "D",
-    "checks": "Considerably as adverb of degree modifies reduced; considerate/considerable adjectives, consideration noun. zh quantity change, glosses and explanations accurate.",
-    "id": "t03-q124"
-  },
+  "checks": "Apply the customer’s chosen pickup mode to the observed partial inventory and distinguish delayed release from partial release or cancellation. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t03-q124-r2",
+    "testId": "test-03",
+    "number": 124,
+    "part": 5,
+    "groupId": null,
+    "topic": "technology",
+    "tags": [
+      "technology",
+      "context"
+    ],
+    "vocabulary": [],
+    "difficulty": "intermediate",
+    "prompt": "The portal lists orders as pending until it sends a collection notice. If the customer requests a single pickup, both cartons must be counted before any notice is sent; otherwise, a notice can go out for either carton. One of Jae’s two cartons has been counted, and he requested a single pickup. His order should ____.",
+    "promptZh": "入口網站在發出取貨通知前，會把訂單列為待處理。若顧客要求一次取貨，兩箱都完成清點後才能發出任何通知；否則，可以先為其中一箱發通知。Jae 的兩箱貨中已有一箱清點完畢，而他要求一次取貨。他的訂單應該____。",
+    "options": [
+      {
+        "id": "A",
+        "text": "remain pending until the second carton is counted",
+        "zh": "等第二箱清點完畢前，維持待處理",
+        "whyZh": "要求一次取貨時，必須等兩箱都清點完才能通知。現在只有一箱完成，因此整筆訂單仍在等待。"
+      },
+      {
+        "id": "B",
+        "text": "show one carton as ready to collect",
+        "zh": "顯示其中一箱可先取貨",
+        "whyZh": "只清點一箱即可通知的做法只適用未要求一次取貨的訂單；Jae 要求一次取貨。"
+      },
+      {
+        "id": "C",
+        "text": "be cancelled because one carton is missing",
+        "zh": "因少了一箱而取消",
+        "whyZh": "第二箱尚未清點，不代表遺失；規則要求等待清點，不是取消。"
+      },
+      {
+        "id": "D",
+        "text": "show both cartons as ready because one has been counted",
+        "zh": "因有一箱清點完畢，就顯示兩箱可取貨",
+        "whyZh": "清點一箱無法滿足兩箱都須清點的條件；不能提前標註整單可取貨。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "要求一次取貨時，必須等兩箱都清點完才能通知。現在只有一箱完成，因此整筆訂單仍在等待。",
+    "evidence": "The portal lists orders as pending until it sends a collection notice. If the customer requests a single pickup, both cartons must be counted before any notice is sent; otherwise, a notice can go out for either carton. One of Jae’s two cartons has been counted, and he requested a single pickup. His order should ____.",
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t03-q124",
     "testId": "test-03",
     "number": 124,
@@ -58,5 +100,5 @@
     ],
     "revision": 1
   },
-  "group": null
+  "retiredSourceReference": "question-reserve/test-03/Q124/verification.json"
 }

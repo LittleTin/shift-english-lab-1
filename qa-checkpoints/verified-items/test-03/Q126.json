@@ -1,12 +1,54 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": {
-    "key": "A",
-    "checks": "Additional adjective modifies examples in support of main argument. Adding does not mean extra examples, additionally adverb and addition noun are wrong. zh editor/author and all reasons accurate.",
-    "id": "t03-q126"
-  },
+  "checks": "Distinguish figures in charts from figures in the presenter’s notes, and express a condition on the latter rather than a cause or concession. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t03-q126-r2",
+    "testId": "test-03",
+    "number": 126,
+    "part": 5,
+    "groupId": null,
+    "topic": "business",
+    "tags": [
+      "business",
+      "context"
+    ],
+    "vocabulary": [],
+    "difficulty": "intermediate",
+    "prompt": "Both charts and the presenter’s notes include last quarter’s figures. The presenter can update the two charts tonight, but any figures mentioned in her notes will remain unchanged ____ she goes through the notes separately and replaces any out-of-date figures.",
+    "promptZh": "兩張圖表和簡報者的備忘稿都用了上一季的數字。簡報者今晚能更新兩張圖表，但她備忘稿中的數字仍不會變，____ 她另外逐一核對備忘稿，並換掉過時的數字。",
+    "options": [
+      {
+        "id": "A",
+        "text": "now that",
+        "zh": "既然",
+        "whyZh": "把她另外核對並換掉過時數字當成數字不變的理由，不合文意。"
+      },
+      {
+        "id": "B",
+        "text": "even when",
+        "zh": "即使在……時",
+        "whyZh": "even when 表示即使把備忘稿裡確實存在的舊數字換掉，稿中數字仍會保持不變；這與「換掉」矛盾。"
+      },
+      {
+        "id": "C",
+        "text": "unless",
+        "zh": "除非",
+        "whyZh": "unless 表示若不另外核對備忘稿並換掉過時的數字，單是更新圖表不會更新稿中的數字。"
+      },
+      {
+        "id": "D",
+        "text": "as if",
+        "zh": "好像",
+        "whyZh": "本句描述何時才有可能改變稿中的數字，不是說明不變看起來像什麼。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "unless 表示若不另外核對備忘稿並換掉過時的數字，單是更新圖表不會更新稿中的數字。",
+    "evidence": "Both charts and the presenter’s notes include last quarter’s figures. The presenter can update the two charts tonight, but any figures mentioned in her notes will remain unchanged ____ she goes through the notes separately and replaces any out-of-date figures.",
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t03-q126",
     "testId": "test-03",
     "number": 126,
@@ -58,5 +100,5 @@
     ],
     "revision": 1
   },
-  "group": null
+  "retiredSourceReference": "question-reserve/test-03/Q126/verification.json"
 }
