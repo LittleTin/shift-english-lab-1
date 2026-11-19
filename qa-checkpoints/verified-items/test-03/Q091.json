@@ -1,0 +1,121 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Contact speaker by Friday if interested in attending. Photos displayed next month—not required Friday; no fee or electronics course prerequisite. Actual G051, cue and stem exact; Friday is the final deadline (no exact hour). Guard translation in stem, group and C.",
+  "activeQuestion": {
+    "id": "t03-q091",
+    "testId": "test-03",
+    "number": 91,
+    "part": 4,
+    "groupId": "t03-g051",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "detail"
+    ],
+    "prompt": "What should interested employees do by Friday?",
+    "promptZh": "有興趣的員工最遲應在星期五做什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Submit photographs to a school",
+        "zh": "把照片交給學校",
+        "whyZh": "照片下月展示，但沒有星期五交圖要求。"
+      },
+      {
+        "id": "B",
+        "text": "Pay for a ceremony ticket",
+        "zh": "支付典禮票款",
+        "whyZh": "沒有要求付款。"
+      },
+      {
+        "id": "C",
+        "text": "Tell the speaker they want to attend",
+        "zh": "向講者表明自己有意出席",
+        "whyZh": "有意出席的員工應最遲於星期五聯絡講者。"
+      },
+      {
+        "id": "D",
+        "text": "Complete an electronics course",
+        "zh": "完成電子學課程",
+        "whyZh": "電子學是校園活動內容，非員工報名條件。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "有意出席的員工應最遲於星期五聯絡講者。",
+    "evidence": "please contact me by Friday",
+    "vocabulary": [
+      {
+        "term": "priority",
+        "zh": "優先權",
+        "note": "席位先提供符合特定條件的人。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g051",
+    "testId": "test-03",
+    "part": 4,
+    "title": "An award announcement",
+    "titleZh": "獎項公告",
+    "topic": "business",
+    "passage": "F1: Before we close today's staff meeting, I have some good news. The regional business council has selected our company for its community partnership award. The award recognizes the volunteer repair sessions that our technicians run at local schools, not our sales performance. Several schools wrote to the council describing how the sessions helped students understand electronics through practical activities. The presentation will take place at the civic center on June twelfth. We have been offered six seats at the ceremony, and priority will go to employees who took part in the school visits. If you would like to attend, please contact me by Friday. We'll also display photographs from the program in the reception area next month.",
+    "passageZh": "今天員工會議結束前有個好消息：地區商業協會選本公司獲頒社區合作獎。表揚的是技師在地方學校辦的志工維修活動，不是銷售表現。幾所學校寫信說明這些實作活動如何幫助學生理解電子學。頒獎六月十二日在市民中心舉行，有六個席位，優先給參加過校訪的員工。有意出席者請最遲於星期五聯絡我，下個月接待區也將展示活動照片。",
+    "audioScript": "Before we close today's staff meeting, I have some good news. The regional business council has selected our company for its community partnership award. The award recognizes the volunteer repair sessions that our technicians run at local schools, not our sales performance. Several schools wrote to the council describing how the sessions helped students understand electronics through practical activities. The presentation will take place at the civic center on June twelfth. We have been offered six seats at the ceremony, and priority will go to employees who took part in the school visits. If you would like to attend, please contact me by Friday. We'll also display photographs from the program in the reception area next month.",
+    "turns": [
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "Before we close today's staff meeting, I have some good news. The regional business council has selected our company for its community partnership award. The award recognizes the volunteer repair sessions that our technicians run at local schools, not our sales performance. Several schools wrote to the council describing how the sessions helped students understand electronics through practical activities. The presentation will take place at the civic center on June twelfth. We have been offered six seats at the ceremony, and priority will go to employees who took part in the school visits. If you would like to attend, please contact me by Friday. We'll also display photographs from the program in the reception area next month."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-31.mp3",
+    "duration": 51.672,
+    "audioStart": 0.5,
+    "audioEnd": 52.172,
+    "audioSpeakers": [
+      {
+        "speaker": "F1",
+        "locale": "en-IN",
+        "role": "female",
+        "modelVoice": "en-IN-NeerjaNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-05.mp3",
+      "start": 39.81975,
+      "end": 43.128,
+      "assetSha256": "e214e1b90a2ba28dbf7cec4dab788d958b222f259cd036ee91ac81860ea792e1",
+      "speech": "Questions 89 through 91, listen to the talk."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-03-cues-05.mp3",
+      "start": 50.79662,
+      "end": 54.54187,
+      "assetSha256": "e214e1b90a2ba28dbf7cec4dab788d958b222f259cd036ee91ac81860ea792e1",
+      "speech": "Number 91, what should interested employees do by Friday?"
+    },
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-03-31.mp3",
+      "start": 0.5,
+      "end": 52.172,
+      "assetSha256": "fd9c923e036a5082827e8aef8b306947400dfd06e5d12a744768666653bac1c0",
+      "speech": "Before we close today's staff meeting, I have some good news. The Regional Business Council has selected our company for its Community Partnership Award. The award recognizes the volunteer repair sessions that our technicians run at local schools, not our sales performance. Several schools wrote to the council describing how the sessions helped students understand electronics through practical activities. The presentation will take place at the Civic Center on June 12th. We have been offered six seats at the ceremony and priority will go to employees who took part in the school visits. If you would like to attend, please contact me by Friday. We'll also display photographs from the program in the reception area next month."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-31.mp3",
+      "start": 0.5,
+      "end": 52.172,
+      "assetSha256": "fd9c923e036a5082827e8aef8b306947400dfd06e5d12a744768666653bac1c0",
+      "speech": "Before we close today's staff meeting, I have some good news. The Regional Business Council has selected our company for its Community Partnership Award. The award recognizes the volunteer repair sessions that our technicians run at local schools, not our sales performance. Several schools wrote to the council describing how the sessions helped students understand electronics through practical activities. The presentation will take place at the Civic Center on June 12th. We have been offered six seats at the ceremony and priority will go to employees who took part in the school visits. If you would like to attend, please contact me by Friday. We'll also display photographs from the program in the reception area next month."
+    }
+  ]
+}

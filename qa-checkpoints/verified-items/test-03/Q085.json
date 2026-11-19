@@ -1,0 +1,121 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Inventory scanner demonstration at eleven in training room. No truck inspection, customer meeting or lunch. Actual G049 talk and this numbered stem/range cue match. ASR onto/on to orthography only. Shared zh first-shift / floor wording precision remains; no audio changes.",
+  "activeQuestion": {
+    "id": "t03-q085",
+    "testId": "test-03",
+    "number": 85,
+    "part": 4,
+    "groupId": "t03-g049",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "detail"
+    ],
+    "prompt": "What is scheduled for eleven o'clock?",
+    "promptZh": "十一點安排了什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "A delivery truck inspection",
+        "zh": "貨車檢查",
+        "whyZh": "只有退貨檢查，沒有十一點貨車任務。"
+      },
+      {
+        "id": "B",
+        "text": "A meeting with customers",
+        "zh": "顧客會議",
+        "whyZh": "沒有顧客會面。"
+      },
+      {
+        "id": "C",
+        "text": "A lunch break",
+        "zh": "午餐休息",
+        "whyZh": "十一點是訓練，不是休息。"
+      },
+      {
+        "id": "D",
+        "text": "A scanner demonstration",
+        "zh": "掃描器操作示範",
+        "whyZh": "在訓練室示範庫存掃描器。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "在訓練室示範庫存掃描器。",
+    "evidence": "a demonstration of the inventory scanners",
+    "vocabulary": [
+      {
+        "term": "inventory scanner",
+        "zh": "庫存掃描器",
+        "note": "掃描商品資訊以管理庫存的設備。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g049",
+    "testId": "test-03",
+    "part": 4,
+    "title": "Welcome to the warehouse team",
+    "titleZh": "倉庫新人說明",
+    "topic": "manufacturing",
+    "passage": "F1: Welcome to your first shift at Westfield Distribution. Before we go onto the warehouse floor, please put your personal belongings in the lockers behind you. Your locker number is printed on the back of your identification card. Today you'll work with an experienced colleague rather than operate equipment alone. The first task is checking returned goods against the accompanying forms. Do not send damaged products directly back to the shelves, even when the customer has marked the package as unopened. Put them in the inspection area with a yellow tag. At eleven, we'll meet in the training room for a demonstration of the inventory scanners. If you finish the returns early, ask your colleague to show you the emergency exits.",
+    "passageZh": "歡迎各位在 Westfield Distribution 開始第一個班次。進入倉庫作業區前，請把私人物品放在身後的置物櫃，櫃號印在識別證背面。今天要和資深同事一起做，不要獨自操作設備。第一項工作是比對退貨及隨附表格。損壞商品即使客戶標示未拆封，也不可直接放回貨架，要貼黃標籤放入檢驗區。十一點在訓練室示範庫存掃描器。如果提早完成退貨工作，請同事帶你認識緊急出口。",
+    "audioScript": "Welcome to your first shift at Westfield Distribution. Before we go onto the warehouse floor, please put your personal belongings in the lockers behind you. Your locker number is printed on the back of your identification card. Today you'll work with an experienced colleague rather than operate equipment alone. The first task is checking returned goods against the accompanying forms. Do not send damaged products directly back to the shelves, even when the customer has marked the package as unopened. Put them in the inspection area with a yellow tag. At eleven, we'll meet in the training room for a demonstration of the inventory scanners. If you finish the returns early, ask your colleague to show you the emergency exits.",
+    "turns": [
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "Welcome to your first shift at Westfield Distribution. Before we go onto the warehouse floor, please put your personal belongings in the lockers behind you. Your locker number is printed on the back of your identification card. Today you'll work with an experienced colleague rather than operate equipment alone. The first task is checking returned goods against the accompanying forms. Do not send damaged products directly back to the shelves, even when the customer has marked the package as unopened. Put them in the inspection area with a yellow tag. At eleven, we'll meet in the training room for a demonstration of the inventory scanners. If you finish the returns early, ask your colleague to show you the emergency exits."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-29.mp3",
+    "duration": 45.408,
+    "audioStart": 0.5,
+    "audioEnd": 45.908,
+    "audioSpeakers": [
+      {
+        "speaker": "F1",
+        "locale": "en-CA",
+        "role": "female",
+        "modelVoice": "en-CA-ClaraNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-05.mp3",
+      "start": 10.86712,
+      "end": 14.02542,
+      "assetSha256": "e214e1b90a2ba28dbf7cec4dab788d958b222f259cd036ee91ac81860ea792e1",
+      "speech": "Questions 83 through 85, listen to the talk."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-03-cues-05.mp3",
+      "start": 21.56125,
+      "end": 24.65229,
+      "assetSha256": "e214e1b90a2ba28dbf7cec4dab788d958b222f259cd036ee91ac81860ea792e1",
+      "speech": "Number 85, what is scheduled for 11 o'clock?"
+    },
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-03-29.mp3",
+      "start": 0.5,
+      "end": 45.908,
+      "assetSha256": "a7593b11bf1bf3f37fa47acd5ed4fe027453248fd3f60b4a87a40447959e4d11",
+      "speech": "Welcome to your first shift at Westfield Distribution. Before we go on to the warehouse floor, please put your personal belongings in the lockers behind you. Your locker number is printed on the back of your identification card. Today you'll work with an experienced colleague rather than operate equipment alone. The first task is checking returned goods against the accompanying forms. Do not send damaged products directly back to the shelves, even when the customer has marked the package as unopened. Put them in the inspection area with a yellow tag. At 11, we'll meet in the training room for a demonstration of the inventory scanners. If you finish the returns early, ask your colleague to show you the emergency exits."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-29.mp3",
+      "start": 0.5,
+      "end": 45.908,
+      "assetSha256": "a7593b11bf1bf3f37fa47acd5ed4fe027453248fd3f60b4a87a40447959e4d11",
+      "speech": "Welcome to your first shift at Westfield Distribution. Before we go on to the warehouse floor, please put your personal belongings in the lockers behind you. Your locker number is printed on the back of your identification card. Today you'll work with an experienced colleague rather than operate equipment alone. The first task is checking returned goods against the accompanying forms. Do not send damaged products directly back to the shelves, even when the customer has marked the package as unopened. Put them in the inspection area with a yellow tag. At 11, we'll meet in the training room for a demonstration of the inventory scanners. If you finish the returns early, ask your colleague to show you the emergency exits."
+    }
+  ]
+}

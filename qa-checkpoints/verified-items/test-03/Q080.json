@@ -1,0 +1,121 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Usual start customs house being filmed this morning; start former grain exchange across square and customs house on return. No unfamiliarity, storm or closed gallery. Actual G048 formal/practice identical source/range, all English wording matched; independently identified range cue 80–82 and actual numbered stem. Guard only zh option.",
+  "activeQuestion": {
+    "id": "t03-q080",
+    "testId": "test-03",
+    "number": 80,
+    "part": 4,
+    "groupId": "t03-g048",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "detail"
+    ],
+    "prompt": "Why has the tour route changed?",
+    "promptZh": "導覽路線為什麼改變？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Filming is taking place at the usual first stop.",
+        "zh": "原定第一站正在進行拍攝。",
+        "whyZh": "海關大樓有電視團隊拍攝，改回程再去。"
+      },
+      {
+        "id": "B",
+        "text": "The guide is unfamiliar with the customs house.",
+        "zh": "導遊不熟悉海關大樓。",
+        "whyZh": "導遊清楚介紹調整，未說不熟悉。"
+      },
+      {
+        "id": "C",
+        "text": "A storm damaged the square.",
+        "zh": "暴風雨損壞廣場。",
+        "whyZh": "石路不平不等於風災，沒有提風雨。"
+      },
+      {
+        "id": "D",
+        "text": "The art gallery is closed all day.",
+        "zh": "藝廊整天關閉。",
+        "whyZh": "導覽反而先進藝廊。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "海關大樓有電視團隊拍攝，改回程再去。",
+    "evidence": "a television crew is filming there this morning",
+    "vocabulary": [
+      {
+        "term": "footing",
+        "zh": "腳步／立足處",
+        "note": "watch your footing提醒小心地面，避免滑倒。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g048",
+    "testId": "test-03",
+    "part": 4,
+    "title": "Introducing a walking tour",
+    "titleZh": "步行導覽開場",
+    "topic": "daily",
+    "passage": "M1: Welcome to the Old Port architecture walk. I'm Daniel, your guide. Our route normally begins at the customs house, but a television crew is filming there this morning. We'll start instead at the former grain exchange across the square and visit the customs house on our way back. The walk takes about ninety minutes and includes several uneven stone paths, so please watch your footing. Although most buildings on the route now contain offices, the old exchange has become a public art gallery. We'll spend fifteen minutes inside to see how its original trading hall was preserved. Photography is welcome there, but please turn off your flash. If you need a restroom before we leave, there is one beside the ticket counter.",
+    "passageZh": "歡迎參加老港建築步行導覽，我是Daniel。平常先到海關大樓，但今天早上有電視團隊拍攝，所以改從廣場對面的舊穀物交易所開始，回程再去海關。導覽約九十分鐘，有些石路不平，請留意腳步。沿路大部分建築現為辦公室，舊交易所則成為公共藝廊。我們會在裡面停留十五分鐘，看看原交易大廳如何保存。可以拍照，但請關閃光燈。出發前如需洗手間，售票櫃檯旁有一間。",
+    "audioScript": "Welcome to the Old Port architecture walk. I'm Daniel, your guide. Our route normally begins at the customs house, but a television crew is filming there this morning. We'll start instead at the former grain exchange across the square and visit the customs house on our way back. The walk takes about ninety minutes and includes several uneven stone paths, so please watch your footing. Although most buildings on the route now contain offices, the old exchange has become a public art gallery. We'll spend fifteen minutes inside to see how its original trading hall was preserved. Photography is welcome there, but please turn off your flash. If you need a restroom before we leave, there is one beside the ticket counter.",
+    "turns": [
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "Welcome to the Old Port architecture walk. I'm Daniel, your guide. Our route normally begins at the customs house, but a television crew is filming there this morning. We'll start instead at the former grain exchange across the square and visit the customs house on our way back. The walk takes about ninety minutes and includes several uneven stone paths, so please watch your footing. Although most buildings on the route now contain offices, the old exchange has become a public art gallery. We'll spend fifteen minutes inside to see how its original trading hall was preserved. Photography is welcome there, but please turn off your flash. If you need a restroom before we leave, there is one beside the ticket counter."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-28.mp3",
+    "duration": 45.336,
+    "audioStart": 0.5,
+    "audioEnd": 45.836,
+    "audioSpeakers": [
+      {
+        "speaker": "M1",
+        "locale": "en-GB",
+        "role": "male",
+        "modelVoice": "en-GB-RyanNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-04.mp3",
+      "start": 66.40946,
+      "end": 69.31754,
+      "assetSha256": "f5db73b2aab14a49b3a6ba3408fbf600098cfa5626160ea7dd95a13b9bf6404b",
+      "speech": "Questions 80 through 82. Listen to the talk."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-03-cues-05.mp3",
+      "start": 0.25,
+      "end": 2.72825,
+      "assetSha256": "e214e1b90a2ba28dbf7cec4dab788d958b222f259cd036ee91ac81860ea792e1",
+      "speech": "Number 80, why has the tour route changed?"
+    },
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-03-28.mp3",
+      "start": 0.5,
+      "end": 45.836,
+      "assetSha256": "a5c8d367a83a65d7b359a784abcf5c1e2ad33a3a9c0c796d16730ba680770555",
+      "speech": "Welcome to the Old Port Architecture Walk. I'm Daniel, your guide. Our route normally begins at the customs house, but a television crew is filming there this morning. We'll start instead at the former grain exchange across the square and visit the customs house on our way back. The walk takes about 90 minutes and includes several uneven stone paths, so please watch your footing. Although most buildings on the route now contain offices, the old exchange has become a public art gallery. We'll spend 15 minutes inside to see how its original trading hall was preserved. Photography is welcome there, but please turn off your flash. If you need a restroom before we leave, there is one beside the ticket counter. [BLANK_AUDIO]"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-28.mp3",
+      "start": 0.5,
+      "end": 45.836,
+      "assetSha256": "a5c8d367a83a65d7b359a784abcf5c1e2ad33a3a9c0c796d16730ba680770555",
+      "speech": "Welcome to the Old Port Architecture Walk. I'm Daniel, your guide. Our route normally begins at the customs house, but a television crew is filming there this morning. We'll start instead at the former grain exchange across the square and visit the customs house on our way back. The walk takes about 90 minutes and includes several uneven stone paths, so please watch your footing. Although most buildings on the route now contain offices, the old exchange has become a public art gallery. We'll spend 15 minutes inside to see how its original trading hall was preserved. Photography is welcome there, but please turn off your flash. If you need a restroom before we leave, there is one beside the ticket counter. [BLANK_AUDIO]"
+    }
+  ]
+}

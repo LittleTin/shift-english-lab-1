@@ -1,0 +1,129 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Automatically receive class credit rather than cash, annual membership or replacement gear. Credit resolves cancelled eight o’clock booking. Original same-range talk, cue and numbered stem checked; final upstairs studio homophone recognized correctly in audio-only concatenation of opener and tail from same recording, with no supplied script. Main recorded 8 p.m. cancellation and single class credit exact. Chart visually checked; guards only zh/evidence.",
+  "activeQuestion": {
+    "id": "t03-q088",
+    "testId": "test-03",
+    "number": 88,
+    "part": 4,
+    "groupId": "t03-g050",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "detail"
+    ],
+    "prompt": "What will people booked into the canceled class receive?",
+    "promptZh": "已預約取消課程的人會收到什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Credit for another class",
+        "zh": "可抵用另一堂課的資格",
+        "whyZh": "預約這堂課的人會自動獲得可抵用另一堂課的資格，公告沒有說會退現金。"
+      },
+      {
+        "id": "B",
+        "text": "A cash payment at reception",
+        "zh": "在櫃檯領現金",
+        "whyZh": "未說現金退款。"
+      },
+      {
+        "id": "C",
+        "text": "A free annual membership",
+        "zh": "免費年費會員資格",
+        "whyZh": "只有單堂抵用，不是年費。"
+      },
+      {
+        "id": "D",
+        "text": "Replacement exercise equipment",
+        "zh": "替換運動設備",
+        "whyZh": "設備固定是取消原因，不是贈品。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "預約這堂課的人會自動獲得可抵用另一堂課的資格，公告沒有說會退現金。",
+    "evidence": "will receive a class credit automatically",
+    "vocabulary": [
+      {
+        "term": "class credit",
+        "zh": "課程抵用額度",
+        "note": "取消課程後可拿來抵用其他課。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g050",
+    "testId": "test-03",
+    "part": 4,
+    "title": "A revised fitness schedule",
+    "titleZh": "健身課表調整",
+    "topic": "daily",
+    "passage": "M1: This is a message for members attending evening classes at Riverside Fitness. Our upstairs studio will be closed for floor repairs this Thursday. Most classes will move to the ground-floor studio, but we cannot accommodate the final class because its equipment is fixed upstairs. Please look at the Thursday schedule in the app. The class starting at eight will therefore be canceled, and anyone who booked it will receive a class credit automatically. The two earlier classes will run at their usual times, though each will have fewer places than normal. If you no longer plan to attend, please cancel your reservation so another member can join. The upstairs studio is expected to reopen on Friday afternoon.",
+    "passageZh": "星期四晚間課表：晚上六點——伸展與平衡；晚上七點——初階舞蹈；晚上八點——室內飛輪。\n\n這則訊息給 Riverside Fitness 的晚間課程會員。樓上教室星期四修地板而關閉。大部分課程移到一樓，但最後一堂所需設備固定在樓上，無法移課。請看應用程式的星期四課表。八點開始的課將取消，預約者會自動獲得可抵用另一堂課的資格。前兩堂照常但名額較少。不來的人請取消預約，讓其他會員參加。樓上教室預計星期五下午重新開放。",
+    "audioScript": "This is a message for members attending evening classes at Riverside Fitness. Our upstairs studio will be closed for floor repairs this Thursday. Most classes will move to the ground-floor studio, but we cannot accommodate the final class because its equipment is fixed upstairs. Please look at the Thursday schedule in the app. The class starting at eight will therefore be canceled, and anyone who booked it will receive a class credit automatically. The two earlier classes will run at their usual times, though each will have fewer places than normal. If you no longer plan to attend, please cancel your reservation so another member can join. The upstairs studio is expected to reopen on Friday afternoon.",
+    "turns": [
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "This is a message for members attending evening classes at Riverside Fitness. Our upstairs studio will be closed for floor repairs this Thursday. Most classes will move to the ground-floor studio, but we cannot accommodate the final class because its equipment is fixed upstairs. Please look at the Thursday schedule in the app. The class starting at eight will therefore be canceled, and anyone who booked it will receive a class credit automatically. The two earlier classes will run at their usual times, though each will have fewer places than normal. If you no longer plan to attend, please cancel your reservation so another member can join. The upstairs studio is expected to reopen on Friday afternoon."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-30.mp3",
+    "duration": 39.336,
+    "graphicText": "THURSDAY EVENING CLASSES\n6:00 P.M. — Stretch and Balance\n7:00 P.M. — Beginner Dance\n8:00 P.M. — Indoor Cycling",
+    "image": "assets/graphics/t03-g050.svg",
+    "imageAlt": "THURSDAY EVENING CLASSES\n6:00 P.M. — Stretch and Balance\n7:00 P.M. — Beginner Dance\n8:00 P.M. — Indoor Cycling",
+    "audioStart": 0.5,
+    "audioEnd": 39.836,
+    "audioSpeakers": [
+      {
+        "speaker": "M1",
+        "locale": "en-AU",
+        "role": "male",
+        "modelVoice": "en-AU-WilliamNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-05.mp3",
+      "start": 24.90229,
+      "end": 28.05888,
+      "assetSha256": "e214e1b90a2ba28dbf7cec4dab788d958b222f259cd036ee91ac81860ea792e1",
+      "speech": "Questions 86 through 88, listen to the talk."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-03-cues-05.mp3",
+      "start": 35.57662,
+      "end": 39.56975,
+      "assetSha256": "e214e1b90a2ba28dbf7cec4dab788d958b222f259cd036ee91ac81860ea792e1",
+      "speech": "Number 88, what will people booked into the canceled class receive?"
+    },
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-03-30.mp3",
+      "start": 0.5,
+      "end": 39.836,
+      "assetSha256": "37ffc8bd1d29051a1599bebffe7c5f1c9a62d9fc8659e06cd93dc0dd30bb908e",
+      "speech": "This is a message for members attending evening classes at Riverside Fitness. Our upstairs studio will be closed for floor repairs this Thursday. Most classes will move to the ground floor studio, but we cannot accommodate the final class because its equipment is fixed upstairs. Please look at the Thursday schedule in the app. The class starting at 8 will therefore be cancelled, and anyone who booked it will receive a class credit automatically. The two earlier classes will run at their usual times, though each will have fewer places than normal. If you no longer plan to attend, please cancel your reservation so another member can join. The AppStairs Studio is expected to reopen on Friday afternoon."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-30.mp3",
+      "start": 0.5,
+      "end": 39.836,
+      "assetSha256": "37ffc8bd1d29051a1599bebffe7c5f1c9a62d9fc8659e06cd93dc0dd30bb908e",
+      "speech": "This is a message for members attending evening classes at Riverside Fitness. Our upstairs studio will be closed for floor repairs this Thursday. Most classes will move to the ground floor studio, but we cannot accommodate the final class because its equipment is fixed upstairs. Please look at the Thursday schedule in the app. The class starting at 8 will therefore be cancelled, and anyone who booked it will receive a class credit automatically. The two earlier classes will run at their usual times, though each will have fewer places than normal. If you no longer plan to attend, please cancel your reservation so another member can join. The AppStairs Studio is expected to reopen on Friday afternoon."
+    }
+  ],
+  "audioCorroboration": {
+    "t03-g050.rate0.90": "This is a message for members attending evening classes at Riverside Fitness. Our upstairs studio will be closed for floor repairs this Thursday. Most classes will move to the ground floor studio, but we cannot accommodate the final class because its equipment is fixed upstairs. Please look at the Thursday schedule in the app. The class starting at 8 will therefore be cancelled, and anyone who booked it will receive a class credit automatically. The two earlier classes will run at their usual times, though each will have fewer places than normal. If you no longer plan to attend, please cancel your reservation so another member can join. The AppStair Studio is expected to reopen on Friday afternoon.",
+    "t03-g050.rate1.12": "This is a message for members attending evening classes at Riverside Fitness. Our upstairs studio will be closed for floor repairs this Thursday. Most classes will move to the ground floor studio, but we cannot accommodate the final class because its equipment is fixed upstairs. Please look at the Thursday schedule in the app. The class starting at 8 will therefore be cancelled, and anyone who booked it will receive a class credit automatically. The two earlier classes will run at their usual times, though each will have fewer places than normal. If you no longer plan to attend, please cancel your reservation so another member can join. The AppStare studio is expected to reopen on Friday afternoon."
+  },
+  "imageSha256": "b42d2bd7201f11a74b04bdbf8393eec443005499307764b9c1ebfb4fd65dea62"
+}
