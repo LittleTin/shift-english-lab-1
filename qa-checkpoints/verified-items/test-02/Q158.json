@@ -1,0 +1,76 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": {
+    "key": "A",
+    "checks": "5 p.m. café closing plus one hour gives 6 p.m. pool building; 4 family end, 5 café close, 7 two hours later. Both language passages and explanation preserve hour relationship.",
+    "id": "t02-q158"
+  },
+  "activeQuestion": {
+    "id": "t02-q158",
+    "testId": "test-02",
+    "number": 158,
+    "part": 7,
+    "groupId": "t02-r-p7-04",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "reading-comprehension"
+    ],
+    "prompt": "At what time does the pool building close?",
+    "promptZh": "泳池大樓幾點關閉？",
+    "options": [
+      {
+        "text": "6 p.m.",
+        "zh": "下午六點",
+        "whyZh": "咖啡廳五點關閉，比大樓早一小時，所以大樓六點關閉。",
+        "id": "A"
+      },
+      {
+        "text": "4 p.m.",
+        "zh": "下午四點",
+        "whyZh": "四點是家庭時段結束，不是大樓關閉。",
+        "id": "B"
+      },
+      {
+        "text": "5 p.m.",
+        "zh": "下午五點",
+        "whyZh": "五點是咖啡廳關閉時間。",
+        "id": "C"
+      },
+      {
+        "text": "7 p.m.",
+        "zh": "晚上七點",
+        "whyZh": "比五點晚兩小時，與早一小時的說明不符。",
+        "id": "D"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "咖啡廳五點關閉，比大樓早一小時，所以大樓六點關閉。",
+    "evidence": "The café closes at 5 p.m., one hour before the pool building.",
+    "vocabulary": [
+      {
+        "term": "accompanied",
+        "zh": "有人陪同的",
+        "note": "與指定照護或同行者一起行動。"
+      },
+      {
+        "term": "maintenance",
+        "zh": "維護",
+        "note": "為保持設備狀態而進行的保養或作業。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-r-p7-04",
+    "testId": "test-02",
+    "part": 7,
+    "title": "Swimming-pool schedule",
+    "titleZh": "游泳池時段公告",
+    "topic": "daily",
+    "passage": "Westside Pool — Thursday schedule\n\nThe main pool is reserved for school lessons from 9 a.m. to 11 a.m. Public swimming begins at 11:15 a.m. The smaller teaching pool remains closed until 1 p.m. for filter maintenance.\n\nThe family session runs from 2 to 4 p.m. During this session, children under twelve must be accompanied in the water by an adult. Lane swimming resumes at 4:15 p.m.\n\nTickets are sold at the entrance; advance booking is not required for public swimming. Swim caps are available for purchase, but towels are not provided. The café closes at 5 p.m., one hour before the pool building.",
+    "passageZh": "Westside 游泳池——星期四時程\n\n主池上午九點至十一點保留給學校課程，十一點十五分開始開放一般游泳。較小的教學池因濾水設備維護，關閉至下午一點。\n\n家庭時段為下午兩點至四點。這段時間，十二歲以下兒童須由成人在水中陪同。四點十五分恢復泳道游泳。\n\n門口現場售票，一般游泳不需提前預約。現場可購買泳帽，但不提供毛巾。咖啡廳下午五點關閉，比泳池大樓早一小時。"
+  }
+}

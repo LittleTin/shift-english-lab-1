@@ -1,0 +1,125 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": {
+    "key": "B",
+    "checks": "Card statement can support missing-receipt explanation under discretionary approval; A contradicts reporting policy, C automatic approval conflicts, D contradicts requirement to explain expense. Correct zh removes credit-only restriction and uses consistent reimbursement terms.",
+    "id": "t02-q145-r2"
+  },
+  "activeQuestion": {
+    "id": "t02-q145-r2",
+    "testId": "test-02",
+    "number": 145,
+    "part": 6,
+    "groupId": "t02-r-p6-04",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "reading-comprehension"
+    ],
+    "prompt": "Choose the best word or sentence for blank [145].",
+    "promptZh": "請選出最適合填入空格 [145] 的字詞或句子。",
+    "options": [
+      {
+        "text": "The finance team no longer accepts expense reports.",
+        "zh": "財務團隊不再受理報銷單。",
+        "whyZh": "整篇是在要求按期限提交報告，並未停止受理。",
+        "id": "A"
+      },
+      {
+        "text": "A card statement may help support the explanation, but it does not guarantee approval.",
+        "zh": "刷卡交易明細可協助佐證這筆費用的說明，但不保證核准。",
+        "whyZh": "延續收據遺失後須補資料、且不自動核准的說明。",
+        "id": "B"
+      },
+      {
+        "text": "Every expense without a receipt will be paid automatically.",
+        "zh": "沒有收據的費用一律自動給付。",
+        "whyZh": "與前文明說不自動核准矛盾。",
+        "id": "C"
+      },
+      {
+        "text": "There is no need to explain the expense if a receipt is missing.",
+        "zh": "若收據遺失，就不必說明該筆費用。",
+        "whyZh": "前文明確說收據遺失時要填寫表單並說明該筆費用。",
+        "id": "D"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "延續收據遺失後須補資料、且不自動核准的說明。",
+    "evidence": "Approval is not automatic; the finance team may request additional information.",
+    "vocabulary": [
+      {
+        "term": "reimbursement",
+        "zh": "報銷；費用返還",
+        "note": "組織償付員工先代墊的核准費用。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t02-r-p6-04",
+    "testId": "test-02",
+    "part": 6,
+    "title": "Travel reimbursement reminder",
+    "titleZh": "差旅報銷提醒",
+    "topic": "business",
+    "passage": "To all travelling staff,\n\nPlease submit your expense report within ten days of returning from a business trip. Each claim must be [143] ____ by a receipt that shows the date, amount, and business name.\n\nIf a receipt is missing, complete the missing-receipt form and explain the expense. Approval is not automatic; the finance team may request [144] ____ information. [145] ____\n\nTo avoid delays, check that the total on your report matches the attached documents. Claims with missing details will be returned for correction rather than [146] ____ immediately.",
+    "passageZh": "各位出差同仁：\n\n請在出差返回後十天內提交差旅費報銷單。每筆申請都必須以一張列有日期、金額及商家名稱的收據來 [143] ____。\n\n若收據遺失，請填寫收據遺失表並說明費用。申請不會自動核准；財務團隊可能要求 [144] ____ 資訊。[145] ____\n\n為避免延誤，請確認報銷單總額與附件相符。資料不全的報銷申請會退回更正，不會立即 [146] ____。"
+  },
+  "originalQuestion": {
+    "id": "t02-q145",
+    "testId": "test-02",
+    "number": 145,
+    "part": 6,
+    "groupId": "t02-r-p6-04",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "reading-comprehension"
+    ],
+    "prompt": "Choose the best word or sentence for blank [145].",
+    "promptZh": "請選出最適合填入空格 [145] 的字詞或句子。",
+    "options": [
+      {
+        "text": "The finance team no longer accepts expense reports.",
+        "zh": "財務團隊不再接受費用報告。",
+        "whyZh": "整篇是在要求按期限提交報告，並未停止受理。",
+        "id": "A"
+      },
+      {
+        "text": "A card statement may help support the explanation, but it does not guarantee approval.",
+        "zh": "信用卡帳單可協助佐證說明，但不保證核准。",
+        "whyZh": "延續收據遺失後須補資料、且不自動核准的說明。",
+        "id": "B"
+      },
+      {
+        "text": "Every expense without a receipt will be paid automatically.",
+        "zh": "沒有收據的費用一律自動支付。",
+        "whyZh": "與前文明說不自動核准矛盾。",
+        "id": "C"
+      },
+      {
+        "text": "There is no need to explain why a receipt is missing.",
+        "zh": "收據遺失時不需任何說明。",
+        "whyZh": "前文要求填表並說明費用，不能跳過程序。",
+        "id": "D"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "延續收據遺失後須補資料、且不自動核准的說明。",
+    "evidence": "Approval is not automatic; the finance team may request additional information.",
+    "vocabulary": [
+      {
+        "term": "reimbursement",
+        "zh": "報銷；費用返還",
+        "note": "組織償付員工先代墊的核准費用。"
+      }
+    ],
+    "revision": 1,
+    "archivedPassage": "To all travelling staff,\n\nPlease submit your expense report within ten days of returning from a business trip. Each claim must be [143] ____ by a receipt that shows the date, amount, and business name.\n\nIf a receipt is missing, complete the missing-receipt form and explain the expense. Approval is not automatic; the finance team may request [144] ____ information. [145] ____\n\nTo avoid delays, check that the total on your report matches the attached documents. Reports with missing details will be returned for correction rather than [146] ____ immediately.",
+    "archivedPassageZh": "各位出差同仁：\n\n請在出差返回後十天內提交費用報告。每筆申請都必須 [143] ____ 一張顯示日期、金額及商家名稱的收據。\n\n若收據遺失，請填寫收據遺失表並說明費用。申請不會自動核准；財務團隊可能要求 [144] ____ 資訊。[145] ____\n\n為避免延誤，請確認報告總額與附件相符。缺少細節的報告會退回更正，不會立即 [146] ____。"
+  }
+}

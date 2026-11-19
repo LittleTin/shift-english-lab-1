@@ -1,0 +1,133 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": {
+    "key": "C",
+    "checks": "Exact instruction metadata: approving engineer name and expiry time, not incoming leader, holiday schedule, or previous shift end. zh and all reasons align.",
+    "id": "t02-q153-r2"
+  },
+  "activeQuestion": {
+    "id": "t02-q153-r2",
+    "testId": "test-02",
+    "number": 153,
+    "part": 7,
+    "groupId": "t02-r-p7-03",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension"
+    ],
+    "prompt": "What must accompany a temporary process instruction?",
+    "promptZh": "臨時製程指示必須附上什麼？",
+    "options": [
+      {
+        "text": "The name of the incoming shift leader",
+        "zh": "接班組長的姓名",
+        "whyZh": "必須記載的是核准該指示的工程師，不是接班組長。",
+        "id": "A"
+      },
+      {
+        "text": "The next month’s holiday schedule",
+        "zh": "下個月休假表",
+        "whyZh": "假期時程與此指示必填資料無關。",
+        "id": "B"
+      },
+      {
+        "text": "The approving engineer’s name and an expiry time",
+        "zh": "核准工程師姓名及到期時間",
+        "whyZh": "第一段明確列出兩項必要資訊。",
+        "id": "C"
+      },
+      {
+        "text": "The time when the previous shift ended",
+        "zh": "上一班結束的時間",
+        "whyZh": "臨時指示必填的是到期時間，不是班次結束時間。",
+        "id": "D"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "第一段明確列出兩項必要資訊。",
+    "evidence": "must include the name of the engineer who approved it and its expiry time",
+    "vocabulary": [
+      {
+        "term": "handover log",
+        "zh": "交接紀錄",
+        "note": "記載跨班次需要傳遞的作業資訊。"
+      },
+      {
+        "term": "expiry time",
+        "zh": "到期時間",
+        "note": "許可或指示停止有效的時點。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t02-r-p7-03",
+    "testId": "test-02",
+    "part": 7,
+    "title": "Shift handover procedure",
+    "titleZh": "班次交接程序",
+    "topic": "manufacturing",
+    "passage": "Assembly line handover\n\nAt the end of each shift, the outgoing team must update the electronic handover log. Record unfinished orders, equipment alarms, and any temporary process instructions. Each temporary instruction must include the name of the engineer who approved it and its expiry time.\n\nThe incoming leader must read the log before starting production and confirm receipt in the system. If an instruction has expired, pause the affected operation and contact the approving engineer. Do not assume that yesterday’s temporary permission still applies.\n\nUrgent safety issues must be reported immediately to the supervisor. Writing them in the log alone is not sufficient. The log supports communication; it does not replace an immediate alert.",
+    "passageZh": "組裝線交接\n\n每班結束時，交班團隊必須更新電子交接紀錄，記載未完成訂單、設備警報及任何臨時製程指示。每項臨時指示都必須包含核准工程師姓名及到期時間。\n\n接班組長必須在生產開始前閱讀紀錄，並於系統確認收訖。若指示已到期，應暫停受影響作業並聯絡核准工程師，不可假設昨天的臨時許可今天仍適用。\n\n緊急安全問題必須立即向主管回報，僅寫在交接紀錄中並不足夠。紀錄用來協助溝通，不能取代立即通報。"
+  },
+  "originalQuestion": {
+    "id": "t02-q153",
+    "testId": "test-02",
+    "number": 153,
+    "part": 7,
+    "groupId": "t02-r-p7-03",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension"
+    ],
+    "prompt": "What must accompany a temporary process instruction?",
+    "promptZh": "臨時製程指示必須附上什麼？",
+    "options": [
+      {
+        "text": "A complete list of all company employees",
+        "zh": "全公司員工名單",
+        "whyZh": "只要求核准工程師姓名，非全員名單。",
+        "id": "A"
+      },
+      {
+        "text": "The next month’s holiday schedule",
+        "zh": "下個月休假表",
+        "whyZh": "假期時程與此指示必填資料無關。",
+        "id": "B"
+      },
+      {
+        "text": "The approving engineer’s name and an expiry time",
+        "zh": "核准工程師姓名及到期時間",
+        "whyZh": "第一段明確列出兩項必要資訊。",
+        "id": "C"
+      },
+      {
+        "text": "The retail price of the finished product",
+        "zh": "成品零售價",
+        "whyZh": "交接程序沒有此要求。",
+        "id": "D"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "第一段明確列出兩項必要資訊。",
+    "evidence": "must include the name of the engineer who approved it and its expiry time",
+    "vocabulary": [
+      {
+        "term": "handover log",
+        "zh": "交接紀錄",
+        "note": "記載跨班次需要傳遞的作業資訊。"
+      },
+      {
+        "term": "expiry time",
+        "zh": "到期時間",
+        "note": "許可或指示停止有效的時點。"
+      }
+    ],
+    "revision": 1
+  }
+}
