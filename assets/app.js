@@ -1,6 +1,6 @@
 (function(){
 'use strict';
-const VERSION=window.SHIFT_CATALOG?.version||'';
+const VERSION=window.SHIFT_CATALOG?.releaseLabel||window.SHIFT_CATALOG?.version||'';
 const BACKUP_TIME_KEY='shift-english-last-export-v1';
 let lastExportAt=0;
 const NOTE_DRAFT_KEY='shift-english-note-draft-v1';
@@ -155,7 +155,39 @@ if(!opts.has(q.answer))throw new Error('Answer option does not exist:'+q.id);
 if(q.vocabulary&&!Array.isArray(q.vocabulary))throw new Error('Invalid vocabulary format');
 ids.add(q.id);numbers.add(q.number);
 }
+for(const plan of [p.listeningPlan,p.previousListeningPlan,...Object.values(p.alternateListeningPlans||{})]){
+ if(plan?.groupAudio!==undefined)validateContinuousAudio(plan,gs);
+}
 return p;
+}
+function validateContinuousAudio(plan,groups){
+ const map=plan.groupAudio,frames=plan.frames;
+ if(!map||typeof map!=='object'||Array.isArray(map)||!Array.isArray(frames)||!frames.length)
+  throw new Error('Invalid continuous formal-audio plan');
+ const totals=new Map(),answers=new Set();let last=null,cursor=0;
+ for(const f of frames){
+  if(!f||!groups.has(f.groupId)||groups.get(f.groupId).part>4||!Number.isFinite(f.duration)||f.duration<=0||
+     !Number.isFinite(f.at)||Math.abs(f.at-cursor)>.00005||!['audio','silence'].includes(f.kind))
+   throw new Error('Invalid continuous formal-audio timeline');
+  if(f.groupId!==last&&totals.has(f.groupId))throw new Error('Formal groups must be contiguous');
+  totals.set(f.groupId,(totals.get(f.groupId)||0)+f.duration);
+  if(f.role==='answer'){
+   if(f.kind!=='silence'||!safeId(f.questionId)||answers.has(f.questionId))
+    throw new Error('Formal answer windows need unique question IDs and silence');
+   answers.add(f.questionId);
+  }
+  cursor+=f.duration;last=f.groupId;
+ }
+ const sources=new Set();
+ if(Object.keys(map).length!==totals.size||Math.abs(plan.duration-2700)>.00005||!Number.isFinite(plan.duration)||
+    Math.abs(cursor-2700)>.00005||answers.size!==100)throw new Error('Continuous formal listening requires all groups, 100 answers, and 45 minutes');
+ for(const [id,duration] of totals){
+  const m=Object.hasOwn(map,id)&&map[id];
+  if(!m||!safeMedia(m.src)||!m.src.toLowerCase().endsWith('.ogg')||sources.has(m.src)||
+     !Number.isFinite(m.duration)||Math.abs(m.duration-duration)>.00005)
+   throw new Error('Invalid continuous formal-audio file for '+id);
+  sources.add(m.src);
+ }
 }
 function registerPack(p,official=false){
  validatePack(p);
@@ -188,7 +220,7 @@ async function loadTest(id){
  }
  const promise=new Promise((resolve,reject)=>{
   const script=document.createElement('script');
-  script.src=t.path+(location.protocol==='file:'?'':'?v='+encodeURIComponent(catalog.version||VERSION));
+  script.src=t.path+(location.protocol==='file:'?'':'?v='+encodeURIComponent(catalog.assetRevision||catalog.version||VERSION));
   script.onload=()=>{try{
    const p=(window.SHIFT_PACKS||[]).find(p=>p.testId===id);
    if(!p)throw new Error('The test-pack file has no content');
@@ -265,7 +297,13 @@ function recordAnswer(q,selected,sessionId,seconds){const id=sessionId+':'+q.id;
 
 let audioRun=0,formalRunning=false,formalElapsed=0,formalRole='',captureFormal=null,visibilityResume=null;
 const LISTENING_TAB_KEY='shift-formal-listening-refresh-v1';
-function frameSignature(f){return f&&JSON.stringify([f.kind,f.role,f.src||null,f.start??null,f.end??null,Number(f.duration)])}
+function frameSignature(f,g,s=state.active){
+ if(!f)return null;
+ const parts=[f.kind,f.role,f.src||null,f.start??null,f.end??null,Number(f.duration)];
+ const m=continuousGroupAudio(g,s);
+ if(m)parts.push(m.src,m.duration);
+ return JSON.stringify(parts);
+}
 function saveListeningTabPoint(){
  if(!formalRunning||route!=='quiz'||!listening()||!currentAudioGroup)return;
  captureFormal?.();
@@ -274,7 +312,7 @@ function saveListeningTabPoint(){
  const frames=groupFrames(g),f=frames[u.frame];if(!f)return;
  try{sessionStorage.setItem(LISTENING_TAB_KEY,JSON.stringify({
   id:s.id,startedAt:s.startedAt,version:s.contentVersion??null,edition:s.audioEdition,index:s.index,
-  question:s.questionIds[s.index],group:g.id,frame:u.frame,offset:u.offset,signature:frameSignature(f)
+  question:s.questionIds[s.index],group:g.id,frame:u.frame,offset:u.offset,signature:frameSignature(f,g,s)
  }))}catch{}
 }
 function restoreListeningTabPoint(s){
@@ -285,7 +323,7 @@ function restoreListeningTabPoint(s){
  if(g?.id!==x.group)return false;
  const frames=groupFrames(g),f=frames[x.frame],u=s.audioUsed?.[g.id]; 
  if(!u||u.status==='ended'||!Number.isSafeInteger(x.frame)||x.frame<0||!f||
-    x.signature!==frameSignature(f)||!Number.isFinite(x.offset)||x.offset<0||x.offset>Number(f.duration))return false;
+    x.signature!==frameSignature(f,g,s)||!Number.isFinite(x.offset)||x.offset<0||x.offset>Number(f.duration))return false;
  const old=resumePosition(u,frames);
  if(x.frame<old.frame||(x.frame===old.frame&&x.offset<=old.offset))return false;
  s.audioUsed[g.id]={...u,status:'interrupted',frame:x.frame,offset:x.offset};return true;
@@ -304,6 +342,10 @@ function formalPlan(g,s=state.active){
    p.alternateListeningPlans?.[s?.audioEdition]||p.previousListeningPlan||p.listeningPlan;
 }
 function groupFrames(g){return (formalPlan(g)?.frames||[]).filter(f=>f.groupId===g.id)}
+function continuousGroupAudio(g,s=state.active){
+ const map=g&&formalPlan(g,s)?.groupAudio;
+ return map&&Object.hasOwn(map,g.id)?map[g.id]:null;
+}
 function currentFormalStage(g,s=state.active){
  if(!g||!listening(s)||s.audioEdition!==FORMAL_EDITION)return '';
  if(formalRunning&&currentAudioGroup===g.id)return Object.hasOwn(FORMAL_STAGE_TITLES,formalRole)?formalRole:'';
@@ -350,7 +392,7 @@ function examSeconds(s,g=sessionGroup(questionByActive()?.groupId,s)){
 function groupReady(g){return state.active?.audioUsed?.[g?.id]?.status==='ended'}
 function stopAudio(){
  captureFormal?.();captureFormal=null;
- audioRun++;formalRunning=false;formalRole='';
+ audioRun++;cancelPracticePosition();formalRunning=false;formalRole='';
  const u=state.active?.audioUsed?.[currentAudioGroup];
  if(u?.status==='started'){u.status='interrupted';void persist()}
  player.pause();player.removeAttribute('src');player.load();player.playbackRate=1;currentAudioGroup=null;formalElapsed=0;
@@ -398,7 +440,7 @@ function audioCard(g){if(listening()&&route==='quiz'){const u=state.active.audio
 function explanation(q,selected){const correct=selected===q.answer;return '<div class="feedback '+(correct?'':'wrong')+'"><h3>'+icon(correct?'check':'info')+' '+(correct?'Correct. Keep going.':'Take another look at the key details.')+' Correct answer '+esc(q.answer)+'</h3><p>'+esc(q.explanationZh)+'</p></div>'+(q.evidence?'<div class="evidence">'+esc(q.evidence)+'</div>':'')+'<div class="rationales"><h4>Why is each option right or wrong?</h4>'+q.options.map(o=>'<div class="rationale"><b>'+o.id+'</b><div>'+esc(o.whyZh)+'</div></div>').join('')+'</div>'+((q.vocabulary||[]).length?'<div class="vocabulary"><h4>'+icon('leaf')+' Vocabulary to take with you</h4>'+q.vocabulary.map(v=>'<div class="word"><strong>'+esc(v.term)+'</strong><div>'+esc(v.zh)+'<small>'+esc(v.note||'')+'</small></div></div>').join('')+'</div>':'')}
 function audioAccentNote(g){const labels=ACCENTS;const tags=[...new Set((Array.isArray(g.audioSpeakers)?g.audioSpeakers:[]).map(s=>s?.locale).filter(v=>Object.hasOwn(labels,v)))];return tags.length?'<p class="hint">Accents in this group: '+tags.map(t=>labels[t]).join(', ')+'</p>':''}
 
-function syncAudioUI(){if(route!=='quiz'&&route!=='answer-review')return;const q=route==='answer-review'?Q.get(reviewDetail?.questionId):questionByActive(),g=q&&quizGroup(q.groupId),button=document.querySelector('.audio-play'),seek=document.getElementById('audio-seek'),label=document.getElementById('audio-time');if(!g)return;if(listening()&&route==='quiz'){syncFormalStage(g);const u=state.active.audioUsed?.[g.id];if(button)button.disabled=formalRunning||u?.status==='ended'||!groupFrames(g).length;if(label)label.textContent=time(formalRunning?formalElapsed:savedGroupElapsed(g,u))+' / '+time(groupSeconds(g));const next=document.querySelector('[data-action="next-question"]');if(next)next.disabled=!groupReady(g)||formalRunning;return}const active=currentAudioGroup===g.id;if(button){button.innerHTML=icon(active&&!player.paused?'pause':'play');button.setAttribute('aria-label',active&&!player.paused?'Pause Listening Audio':'Play Listening Audio')}if(seek)seek.value=active&&Number.isFinite(player.duration)&&player.duration?Math.round(Math.max(0,player.currentTime-mediaStart(g))/(Number.isFinite(g.audioEnd)?mediaDuration(g):player.duration)*1000):0;if(label)label.textContent=time(active?Math.max(0,player.currentTime-mediaStart(g)):0)+' / '+time(Number.isFinite(g.audioEnd)?mediaDuration(g):active&&Number.isFinite(player.duration)?player.duration:mediaDuration(g))}
+function syncAudioUI(){if(route!=='quiz'&&route!=='answer-review')return;const q=route==='answer-review'?Q.get(reviewDetail?.questionId):questionByActive(),g=q&&quizGroup(q.groupId),button=document.querySelector('.audio-play'),seek=document.getElementById('audio-seek'),label=document.getElementById('audio-time');if(!g)return;if(listening()&&route==='quiz'){syncFormalStage(g);const u=state.active.audioUsed?.[g.id];if(button)button.disabled=formalRunning||u?.status==='ended'||!groupFrames(g).length;if(label)label.textContent=time(formalRunning?formalElapsed:savedGroupElapsed(g,u))+' / '+time(groupSeconds(g));const next=document.querySelector('[data-action="next-question"]');if(next)next.disabled=!groupReady(g)||formalRunning;return}const active=currentAudioGroup===g.id;if(button){button.innerHTML=icon(active&&(!player.paused||practicePosition)?'pause':'play');button.setAttribute('aria-label',active&&(!player.paused||practicePosition)?'Pause Listening Audio':'Play Listening Audio')}if(seek)seek.value=active&&Number.isFinite(player.duration)&&player.duration?Math.round(Math.max(0,player.currentTime-mediaStart(g))/(Number.isFinite(g.audioEnd)?mediaDuration(g):player.duration)*1000):0;if(label)label.textContent=time(active?Math.max(0,player.currentTime-mediaStart(g)):0)+' / '+time(Number.isFinite(g.audioEnd)?mediaDuration(g):active&&Number.isFinite(player.duration)?player.duration:mediaDuration(g))}
 function audioFrame(f,token,offset,progress){
  return new Promise((resolve,reject)=>{
   const start=Number(f.start)||0,end=Number(f.end)||start+Number(f.duration),position=start+offset;
@@ -433,11 +475,63 @@ function audioFrame(f,token,offset,progress){
   }catch(e){finish(e)}
  });
 }
+// One file includes directions, speech and exact answer silence. The native clock drives
+// chapters/UI/journal; a chapter transition never restarts media or uses currentTime=.
+function playContinuousGroup(m,token,position,isResume,progress){
+ return new Promise((resolve,reject)=>{
+  const epsilon=.05;
+  let timer,settled=false,metadata=false;
+  const finish=error=>{
+   if(settled)return;
+   settled=true;clearInterval(timer);
+   for(const [event,handler] of events)player.removeEventListener(event,handler);
+   error?reject(error):resolve();
+  };
+  const validDuration=()=>Number.isFinite(player.duration)&&Math.abs(player.duration-m.duration)<=epsilon;
+  const check=()=>{
+   if(token!==audioRun)return finish();
+   if(!metadata||player.seeking||player.currentTime<position-.025)return;
+   progress(Math.min(m.duration,player.currentTime));
+  };
+  const loaded=()=>{
+   if(token!==audioRun)return finish();
+   if(!validDuration())return finish(new Error('Unexpected continuous group audio duration'));
+   metadata=true;check();
+  };
+  const ended=()=>{
+   check();
+   if(token!==audioRun)return finish();
+   if(!validDuration()||player.currentTime<m.duration-epsilon)return finish(new Error('Continuous group audio ended early'));
+   progress(m.duration);finish();
+  };
+  const paused=()=>{
+   check();if(token!==audioRun||!player.paused||player.ended)return;
+   if(player.currentTime<m.duration-epsilon)return finish(new Error('Audio was paused'));
+   // Browser end events can follow pause near the final sample. A genuine pause
+   // without a following ended event must not leave the session stuck.
+   setTimeout(()=>{if(!settled&&token===audioRun&&player.paused&&!player.ended)finish(new Error('Audio was paused'))},120);
+  };
+  const failed=()=>finish(new Error('Unable to load the continuous audio file'));
+  const events=[['loadedmetadata',loaded],['error',failed],['ended',ended],['pause',paused],['timeupdate',check]];
+  try{
+   for(const [event,handler] of events)player.addEventListener(event,handler);
+   player.src=m.src;player.load();player.playbackRate=1;
+   // Native media's default start is zero; only a persisted interruption may seek.
+   if(isResume&&position>0)player.currentTime=position;
+   // Some in-memory/cached element implementations already know metadata.
+   if(player.readyState>=1)loaded();
+   if(settled)return;
+   captureFormal=check;
+   timer=setInterval(check,25);
+   player.play().catch(finish);
+  }catch(e){finish(e)}
+ });
+}
 async function runFormalGroup(g){
  const s=state.active;
  if(!g||!listening(s)||route!=='quiz'||document.hidden||formalRunning||questionByActive()?.groupId!==g.id)return;
- const frames=groupFrames(g),prior=s.audioUsed?.[g.id];
- if(frames.some(f=>opusRequired(f.src))&&!opusPlayable()){notify(opusUnavailable);return;}
+ const frames=groupFrames(g),prior=s.audioUsed?.[g.id],continuous=continuousGroupAudio(g,s);
+ if((continuous||frames.some(f=>opusRequired(f.src)))&&!opusPlayable()){notify(opusUnavailable);return;}
  if(prior?.status==='ended'||!frames.length)return;
  stopAudio();
  const token=audioRun,{frame,offset}=resumePosition(prior,frames);
@@ -447,7 +541,24 @@ async function runFormalGroup(g){
  if(!s.listeningStartedAt)s.listeningStartedAt=now();
  void persist();render();
  try{
-  for(let i=frame;i<frames.length;i++){
+  if(continuous){
+   const starts=[0];for(const f of frames)starts.push(starts[starts.length-1]+f.duration);
+   const position=elapsed+offset;
+   const progress=cursor=>{
+    if(token!==audioRun)return;
+    const at=Math.max(formalElapsed,Math.min(continuous.duration,cursor));
+    let i=Math.min(u.frame,frames.length-1);
+    while(i+1<frames.length&&at>=starts[i+1])i++;
+    u.frame=i;u.offset=Math.max(0,Math.min(frames[i].duration,at-starts[i]));
+    formalElapsed=at;
+    if(formalRole!==frames[i].role){formalRole=frames[i].role;syncFormalStage(g);}
+    if(now()-savedAt>=2000){savedAt=now();void persist()}
+   };
+   if(position<continuous.duration-.000001)
+    await playContinuousGroup(continuous,token,position,!!prior,progress);
+   if(token!==audioRun)return;
+   captureFormal=null;formalElapsed=continuous.duration;u.frame=frames.length;u.offset=0;
+  }else for(let i=frame;i<frames.length;i++){
    if(token!==audioRun)return;
    const f=frames[i],duration=Number(f.duration),from=i===frame?offset:0;
    u.frame=i;u.offset=from;formalRole=f.role;syncFormalStage(g);
@@ -488,7 +599,101 @@ async function runFormalGroup(g){
   if(!document.hidden)notify('Listening paused. Select Resume Listening to try again.');
  }
 }
-async function playAudio(groupId){const g=quizGroup(groupId);if(listening()&&route==='quiz'){void runFormalGroup(g);return}if(!g?.audio){notify('No audio is available for this question.');return}if(opusRequired(g.audio)&&!opusPlayable()){notify(opusUnavailable);return}if(currentAudioGroup!==groupId){player.pause();player.src=g.audio;currentAudioGroup=groupId;player.load();player.currentTime=mediaStart(g)}if(!player.paused){player.pause()}else{try{if(Number.isFinite(g.audioEnd)&&(player.currentTime>=g.audioEnd-.03||player.currentTime<mediaStart(g)))player.currentTime=mediaStart(g);await player.play()}catch(e){notify('Audio cannot play. Extract the complete folder, then select Play again.')}}syncAudioUI()}
+const PRACTICE_SEEK_EPS=.014, PRACTICE_UNDERSHOOT=.004;
+let practicePosition=null;
+function practiceSrc(g){
+ const start=mediaStart(g),end=g.audioEnd;
+ return g.audio+(Number.isFinite(end)&&end>start?'#t='+start+','+end:'');
+}
+function cancelPracticePosition(){
+ const p=practicePosition;
+ practicePosition=null;
+ p?.cancel();
+}
+function beginPracticePosition(g,target,playAfter){
+ const playerSrc=practiceSrc(g),start=mediaStart(g),end=g.audioEnd;
+ const token=audioRun,id=g.id;
+ const current=()=>token===audioRun&&currentAudioGroup===id&&player.getAttribute('src')===playerSrc;
+ const atTarget=()=>player.readyState>=2&&!player.seeking&&player.currentTime>=target-PRACTICE_UNDERSHOOT&&player.currentTime<=target+PRACTICE_SEEK_EPS&&player.currentTime>=start-PRACTICE_UNDERSHOOT;
+ const change=player.getAttribute('src')!==playerSrc||player.error;
+ if(!change&&atTarget()){
+  if(playAfter)Promise.resolve(player.play()).catch(()=>{if(current())notify('Audio cannot play. Select Play again.')});
+  return;
+ }
+ const originalMute=player.muted;let finished=false,timer;
+ const state={cancel:()=>finish('cancel')};
+ practicePosition=state;
+ function finish(kind){
+  if(finished)return;finished=true;
+  clearTimeout(timer);
+  for(const [e,fn] of listeners)player.removeEventListener(e,fn);
+  if(practicePosition===state)practicePosition=null;
+  // Stop first: cancellation or failure must not unmute a stale decoded range.
+  if(kind!=='ready')player.pause();
+  if(kind==='fail'&&current()&&player.readyState>=1){
+   try{player.currentTime=target}catch(e){}
+  }
+  player.muted=originalMute;
+  if(kind==='fail'&&current())notify('Audio position was not confirmed. Select Play again to start from this question.');
+  if(kind!=='cancel')syncAudioUI();
+ }
+ function verify(){
+  if(!current()||finished||player.seeking||player.readyState<2)return;
+  if(atTarget()){finish('ready');return}
+  // A playing cursor that already moved past the request is not a safe start.
+  if(!player.paused&&player.currentTime>target+PRACTICE_SEEK_EPS)finish('fail');
+ }
+ function onMetadata(){
+  if(!current()||finished)return;
+  if(!atTarget()&&!player.seeking){try{player.currentTime=target}catch(e){finish('fail');return}}
+  verify();
+ }
+ const onError=()=>{if(current())finish('fail')};
+ const listeners=[['loadedmetadata',onMetadata],['seeked',verify],['loadeddata',verify],['canplay',verify],['playing',verify],['error',onError]];
+ try{
+  player.muted=true;
+  if(change){player.pause();player.src=playerSrc;player.load()}
+  for(const [e,fn] of listeners)player.addEventListener(e,fn);
+  // Set a default early; loadedmetadata repeats it if the browser discarded it.
+  try{player.currentTime=target}catch(e){if(player.readyState>=1)throw e}
+  timer=setTimeout(()=>finish('fail'),7000);
+  // Invoke native play in the user's gesture, but keep it silent until verified.
+  if(playAfter)Promise.resolve(player.play()).then(verify,()=>{if(current())finish('fail')});
+  verify();
+ }catch(e){finish('fail')}
+}
+async function playAudio(groupId){
+ const g=quizGroup(groupId);
+ if(listening()&&route==='quiz'){void runFormalGroup(g);return}
+ if(!g?.audio){notify('No audio is available for this question.');return}
+ if(opusRequired(g.audio)&&!opusPlayable()){notify(opusUnavailable);return}
+ if(practicePosition){cancelPracticePosition();syncAudioUI();return}
+ if(currentAudioGroup===groupId&&!player.paused){player.pause();syncAudioUI();return}
+ const changed=currentAudioGroup!==groupId||player.getAttribute('src')!==practiceSrc(g);
+ if(changed){player.pause();currentAudioGroup=groupId}
+ const start=mediaStart(g),end=g.audioEnd;
+ const target=changed||player.currentTime<start||Number.isFinite(end)&&player.currentTime>=end-.035?start:player.currentTime;
+ beginPracticePosition(g,target,true);
+ syncAudioUI();
+}
+function scrubPractice(g,value){
+ if(!g?.audio||currentAudioGroup!==g.id||!Number.isFinite(player.duration))return;
+ const start=mediaStart(g),limit=Number.isFinite(g.audioEnd)?g.audioEnd:player.duration;
+ const target=Math.min(Math.max(start,limit-.035),start+Math.min(1,Math.max(0,value/1000))*Math.max(0,limit-start));
+ const playing=!player.paused;
+ cancelPracticePosition();
+ beginPracticePosition(g,target,playing);
+ syncAudioUI();
+}
+function checkPracticeRange(){
+ if(formalRunning||listening()&&route==='quiz'||practicePosition||!currentAudioGroup||player.paused)return;
+ const g=quizGroup(currentAudioGroup);if(!g?.audio)return;
+ const at=player.currentTime, start=mediaStart(g), end=g.audioEnd;
+ if(at<start-PRACTICE_UNDERSHOOT||Number.isFinite(end)&&at>=end-.025){
+  player.pause();try{player.currentTime=start}catch(e){}syncAudioUI();
+ }
+}
+
 async function moveGroup(delta,automatic=false){const s=state.active,q=questionByActive();if(!s||!q)return;const qs=groupQuestions(q),indices=qs.map(x=>s.questionIds.indexOf(x.id)),start=Math.min(...indices),end=Math.max(...indices);if(listening(s)&&(delta<0||!groupReady(sessionGroup(q.groupId,s))||formalRunning))return;let target=delta>0?end+1:start-1;if(target<0||target>=s.questionIds.length)return;if(formal(s)&&s.examPhase==='reading'&&sessionQuestion(s.questionIds[target],s)?.part<5)return;if(listening(s)&&sessionQuestion(s.questionIds[target],s)?.part>=5)return enterReading();stopAudio();s.index=target;const targetQ=questionByActive();s.index=s.questionIds.indexOf(groupQuestions(targetQ)[0].id);activeTranscript=null;await persist();render();window.scrollTo({top:0,behavior:'instant'})}
 function moveQuestion(delta){return moveGroup(delta)}
 
@@ -517,15 +722,47 @@ const outcomes=sessionOutcomes(r),wrong=r.questionIds.filter(id=>outcomes.get(id
 let out='<section class="panel"><div class="result-header">'+icon('leaf')+'<p class="eyebrow">YOUR RESULTS</p><h1>Session complete. See what you learned.</h1><p>'+esc(displayEnglish(r.title))+' · '+new Date(r.finishedAt).toLocaleString('en-US')+'</p></div><div class="summary-grid"><div class="result-stat"><b>'+score+'<small style="font-size:14px"> points</small></b><span>Session score (out of 100)</span></div><div class="result-stat"><b>'+r.correct+'<small style="font-size:14px"> / '+r.total+'</small></b><span>Correct answers</span></div><div class="result-stat"><b>'+wrong.length+'<small style="font-size:14px"> questions</small></b><span>Questions to revisit</span></div></div><p class="hint" style="text-align:center">Score = Correct answers ÷ Total questions × 100.Unanswered items count as incorrect. This is not an official TOEIC scaled score.</p><div class="btn-row" style="justify-content:center;margin:23px 0">'+btn('Practice These Mistakes Again','review-result','primary',wrong.some(id=>Q.has(id))?'':'disabled')+btn('Back to Home','nav-home')+'</div></section><div class="section-heading"><h2>All Answers in This Session</h2><span>Review correct, incorrect, and unanswered questions after submission.</span></div>';
 out+=estimatedScoreCard(r);
 out+='<div class="record-list">'+r.questionIds.map(id=>{const q=Q.get(id),a=state.attempts.find(a=>a.id===r.id+':'+id);if(!q){const savedSelection=a?.selected??r.answers[id]??null;const savedKey=a?.correctAnswer;const savedOutcome=outcomes.get(id);const badge=typeof savedOutcome==='boolean'?(savedOutcome?'Correct':'Incorrect'):'Not recorded';return '<article class="record-card"><div class="record-title"><div class="badge-row"><span class="tag gray">Previous question version</span><span class="tag orange">'+esc(badge)+'</span></div><h3>'+esc(id)+'</h3>'+questionReference(id)+'<p>Your answer: '+esc(savedSelection||'Unanswered')+(savedKey?' · Original correct answer: '+esc(savedKey):'')+'</p><p class="hint">The old question content is no longer available. Your original result is unchanged.</p></div></article>';}return '<article class="record-card"><div class="record-title"><div class="badge-row"><span class="tag">Part '+q.part+'</span><span class="tag gray">'+esc(TOPICS[q.topic])+'</span><span class="tag orange">'+(a?.selected?(a.correct?'Correct · ':'Incorrect · ')+'Your answer '+esc(a.selected):'Unanswered')+'</span></div><h3>'+esc(q.prompt)+'</h3>'+questionReference(id)+'</div>'+btn('View Explanation '+icon('arrow'),'view-explanation','small','data-id="'+id+'" data-session="'+r.id+'" '+(!a?'disabled':''))+'</article>'}).join('')+'</div>';return out}
+function explanationQueue(id,sessionId){
+ const attempts=new Map();
+ let ids,returnTo;
+ if(sessionId){
+  const completed=state.sessions.find(s=>s.id===sessionId&&s.questionIds.includes(id));
+  if(!completed)return null;
+  ids=completed.questionIds;returnTo='result';
+  const prefix=completed.id+':';
+  for(const a of state.attempts)if(a.id===prefix+a.questionId)attempts.set(a.questionId,a);
+ }else{
+  ids=reviewListIds();returnTo='review';
+  for(const a of state.attempts)if(!a.correct)attempts.set(a.questionId,a);
+ }
+ const entries=ids.filter(qid=>Q.has(qid)&&attempts.has(qid)).map(qid=>({questionId:qid,attempt:attempts.get(qid)}));
+ const index=entries.findIndex(e=>e.questionId===id);
+ return index===-1?null:{...entries[index],entries,index,returnTo};
+}
+function openExplanation(detail,focus=false){
+ stopAudio();
+ reviewDetail=detail;route='answer-review';render();
+ if(focus)document.getElementById('review-heading')?.focus({preventScroll:true});
+ window.scrollTo(0,0);
+}
+function reviewAdvance(d){
+ if(d.index+1===d.entries.length)return '<p class="hint">This is the last question in this list.</p>';
+ return btn((d.returnTo==='review'?'Next Incorrect Question ':'Next Question ')+icon('arrow'),'next-explanation','primary');
+}
 function reviewDetailPage(){
 const d=reviewDetail,q=d&&Q.get(d.questionId);if(!q)return '<div class="empty"><h2>This question is unavailable</h2>'+btn('Back to Review List','nav-review','primary')+'</div>';const g=G.get(q.groupId),a=d.attempt,selected=a?.selected||null;
-let out='<div class="quiz-top"><div><p class="eyebrow">REVIEW AFTER SUBMISSION</p><h1 class="page-title" style="font-size:24px">Understand this question.</h1><p class="subtitle-small">Part '+q.part+' · '+PARTS[q.part]+' · Q'+q.number+' · Your response:'+(selected?'Choose '+esc(selected):'Unanswered')+'</p></div>'+btn(icon('back')+' Back to Results / Review','back-review','small')+'</div><div class="quiz-grid '+(!g?'single':'')+'">';
+let out='<div class="quiz-top"><div><p class="eyebrow">REVIEW AFTER SUBMISSION</p><h1 id="review-heading" class="page-title" tabindex="-1" style="font-size:24px">Understand this question.</h1><p class="subtitle-small">Part '+q.part+' · '+PARTS[q.part]+' · Q'+q.number+' · Your response:'+(selected?'Choose '+esc(selected):'Unanswered')+'</p></div>'+btn(icon('back')+' Back to Results / Review','back-review','small')+'</div><div class="quiz-grid '+(!g?'single':'')+'">';
 if(g){out+='<section class="passage-panel"><div class="panel-head"><span>'+icon(q.part<5?'headphones':'book')+' '+(q.part<5?'Audio & Transcript':'Original Text & Translation')+'</span></div><div class="panel-body">';if(g.image&&safeMedia(g.image))out+='<img class="scene-img" src="'+esc(g.image)+'" alt="Question illustration">';if(q.part<5)out+=audioCard(g)+audioAccentNote(g);else out+='<h2 class="passage-title">'+esc(displayEnglish(g.title,'Reading passage'))+'</h2>';out+='<div class="passage-scroll"><div class="passage-text">'+esc(g.passage)+'</div><div class="passage-text zh">'+esc(g.passageZh)+'</div></div></div></section>'}
-out+='<section class="question-panel"><div class="panel-head"><span>Correct answer '+esc(q.answer)+'</span><button class="icon-button '+(state.stars[q.id]?'starred':'')+'" data-action="star" data-id="'+q.id+'" aria-label="'+(state.stars[q.id]?'Unsave question':'Save question')+'">'+icon('star')+'</button></div><div class="panel-body">'+questionReference(q.id)+(a&&a.revision!==(q.revision||1)?'<div class="notice">This question has been updated. Your historical score is preserved; the current question and explanation are shown below.</div>':'')+'<h2 class="question-text">'+esc(q.prompt)+'</h2><p class="translation">'+esc(q.promptZh)+'</p><div class="options">'+q.options.map(o=>'<div class="option '+(o.id===q.answer?'correct':o.id===selected?'wrong':'')+'"><span class="option-letter">'+o.id+'</span><span class="option-text">'+esc(o.text)+'<span class="option-zh">'+esc(o.zh)+'</span></span>'+(o.id===q.answer?'<span class="option-check">'+icon('check')+'</span>':'')+'</div>').join('')+'</div>'+explanation(q,selected)+'<details class="note-box" open><summary>'+icon('note')+' My Notes</summary><textarea id="question-note" data-id="'+q.id+'" maxlength="20000" placeholder="Write down what you learned from this question…" aria-label="Question notes">'+esc(state.notes[q.id]||'')+'</textarea><div class="word-count" id="note-save-status">'+esc(noteStatusText(q.id))+'</div></details><div class="btn-row" style="margin-top:20px">'+btn('Try This Group Again','open-question','primary','data-id="'+q.id+'"')+btn('Back to Results / Review','back-review')+'</div></div></section></div>';return out}
-function listPage(){const review=route==='review';let ids=review?Object.keys(state.stats).filter(id=>listFilter==='all'?state.stats[id].needsReview:listFilter==='history'?state.stats[id].wrong>0:state.stats[id].needsReview&&state.stats[id].due<=now()):Object.keys(state.stars).filter(id=>state.stars[id]);ids=ids.filter(matchesListSearch);ids.sort((a,b)=>(state.stats[b]?.lastAt||0)-(state.stats[a]?.lastAt||0));let out=heading(review?'Make unfamiliar questions familiar.':'Keep questions worth revisiting.',review?'Incorrect answers are added automatically. Two consecutive correct attempts remove a question from the review queue.':'Your saved questions, notes, and topics to revisit.',review?'REVIEW & REMEMBER':'YOUR SAVED QUESTIONS');out+='<div class="list-toolbar"><div class="btn-row"><input id="list-search" placeholder="Search questions, UUIDs or notes" aria-label="Search questions" value="'+esc(listSearch)+'">'+(review?'<select id="review-filter" aria-label="Review filter"><option value="all" '+(listFilter==='all'?'selected':'')+'>Questions to review</option><option value="due" '+(listFilter==='due'?'selected':'')+'>Due today</option><option value="history" '+(listFilter==='history'?'selected':'')+'>All past mistakes</option></select>':'')+'</div>'+btn('Start Review '+icon('arrow'),'start-list','primary',ids.length?'':'disabled')+'</div>';if(!ids.length)return out+'<section class="panel empty">'+icon(review?'review':'star')+'<h2>'+(review?'No mistakes match these filters':'No saved questions yet')+'</h2><p>'+(review?'Incorrect answers appear here after submission. Change the filter to see all past mistakes.':'Select the star while practicing to save a question and its notes.')+'</p>'+btn('Go to Practice','nav-practice','primary')+'</section>';out+='<div class="record-list">'+ids.slice(0,listLimit).map(id=>{const q=Q.get(id),st=state.stats[id];return '<article class="record-card"><div class="record-title"><div class="badge-row"><span class="tag">Part '+q.part+'</span><span class="tag gray">'+TOPICS[q.topic]+'</span>'+(st?.wrong?'<span class="tag orange">Incorrect attempts: '+st.wrong+' times</span>':'')+'</div><h3>'+esc(q.prompt)+'</h3>'+questionReference(id)+(state.notes[id]?'<p class="note-preview">'+icon('note')+' '+esc(state.notes[id])+'</p>':'')+'</div>'+btn((review?'View Explanation ':'practice session ')+icon('arrow'),review?'view-explanation':'open-question','small','data-id="'+id+'"')+'</article>'}).join('')+'</div>';if(ids.length>listLimit)out+='<div style="text-align:center;margin-top:22px">'+btn('Show More ('+(ids.length-listLimit)+')','more-list')+'</div>';out+='<p class="hint">Total: '+ids.length+' questions. Original passages and audio remain available, and new attempts are added to your history.</p>';return out}
+out+='<section class="question-panel"><div class="panel-head"><span>Correct answer '+esc(q.answer)+'</span><button class="icon-button '+(state.stars[q.id]?'starred':'')+'" data-action="star" data-id="'+q.id+'" aria-label="'+(state.stars[q.id]?'Unsave question':'Save question')+'">'+icon('star')+'</button></div><div class="panel-body">'+questionReference(q.id)+(a&&a.revision!==(q.revision||1)?'<div class="notice">This question has been updated. Your historical score is preserved; the current question and explanation are shown below.</div>':'')+'<h2 class="question-text">'+esc(q.prompt)+'</h2><p class="translation">'+esc(q.promptZh)+'</p><div class="options">'+q.options.map(o=>'<div class="option '+(o.id===q.answer?'correct':o.id===selected?'wrong':'')+'"><span class="option-letter">'+o.id+'</span><span class="option-text">'+esc(o.text)+'<span class="option-zh">'+esc(o.zh)+'</span></span>'+(o.id===q.answer?'<span class="option-check">'+icon('check')+'</span>':'')+'</div>').join('')+'</div>'+explanation(q,selected)+'<details class="note-box" open><summary>'+icon('note')+' My Notes</summary><textarea id="question-note" data-id="'+q.id+'" maxlength="20000" placeholder="Write down what you learned from this question…" aria-label="Question notes">'+esc(state.notes[q.id]||'')+'</textarea><div class="word-count" id="note-save-status">'+esc(noteStatusText(q.id))+'</div></details><div class="btn-row" style="margin-top:20px">'+reviewAdvance(d)+btn('Try This Group Again','open-question','','data-id="'+q.id+'"')+btn('Back to Results / Review','back-review')+'</div></div></section></div>';return out}
+function reviewListIds(review=true){
+ const cutoff=now();
+ const ids=review?Object.keys(state.stats).filter(id=>listFilter==='history'?state.stats[id].wrong>0:state.stats[id].needsReview&&(listFilter!=='due'||state.stats[id].due<=cutoff)):Object.keys(state.stars).filter(id=>state.stars[id]);
+ return ids.filter(matchesListSearch).sort((a,b)=>(state.stats[b]?.lastAt||0)-(state.stats[a]?.lastAt||0));
+}
+function listPage(){const review=route==='review',ids=reviewListIds(review);let out=heading(review?'Make unfamiliar questions familiar.':'Keep questions worth revisiting.',review?'Incorrect answers are added automatically. Two consecutive correct attempts remove a question from the review queue.':'Your saved questions, notes, and topics to revisit.',review?'REVIEW & REMEMBER':'YOUR SAVED QUESTIONS');out+='<div class="list-toolbar"><div class="btn-row"><input id="list-search" placeholder="Search questions, UUIDs or notes" aria-label="Search questions" value="'+esc(listSearch)+'">'+(review?'<select id="review-filter" aria-label="Review filter"><option value="all" '+(listFilter==='all'?'selected':'')+'>Questions to review</option><option value="due" '+(listFilter==='due'?'selected':'')+'>Due today</option><option value="history" '+(listFilter==='history'?'selected':'')+'>All past mistakes</option></select>':'')+'</div>'+btn('Start Review '+icon('arrow'),'start-list','primary',ids.length?'':'disabled')+'</div>';if(!ids.length)return out+'<section class="panel empty">'+icon(review?'review':'star')+'<h2>'+(review?'No mistakes match these filters':'No saved questions yet')+'</h2><p>'+(review?'Incorrect answers appear here after submission. Change the filter to see all past mistakes.':'Select the star while practicing to save a question and its notes.')+'</p>'+btn('Go to Practice','nav-practice','primary')+'</section>';out+='<div class="record-list">'+ids.slice(0,listLimit).map(id=>{const q=Q.get(id),st=state.stats[id];return '<article class="record-card"><div class="record-title"><div class="badge-row"><span class="tag">Part '+q.part+'</span><span class="tag gray">'+TOPICS[q.topic]+'</span>'+(st?.wrong?'<span class="tag orange">Incorrect attempts: '+st.wrong+' times</span>':'')+'</div><h3>'+esc(q.prompt)+'</h3>'+questionReference(id)+(state.notes[id]?'<p class="note-preview">'+icon('note')+' '+esc(state.notes[id])+'</p>':'')+'</div>'+btn((review?'View Explanation ':'practice session ')+icon('arrow'),review?'view-explanation':'open-question','small','data-id="'+id+'"')+'</article>'}).join('')+'</div>';if(ids.length>listLimit)out+='<div style="text-align:center;margin-top:22px">'+btn('Show More ('+(ids.length-listLimit)+')','more-list')+'</div>';out+='<p class="hint">Total: '+ids.length+' questions. Original passages and audio remain available, and new attempts are added to your history.</p>';return out}
 function statsPage(){const s=statsSummary();let out=heading('See your progress grow.','Use your answer history to understand practice volume, accuracy, and areas to improve.','YOUR PROGRESS');out+='<div class="stats-grid">'+[['book',fmt(s.attempts),'Total attempts','times'],['target',s.accuracy===null?'—':s.accuracy,'Overall accuracy',s.accuracy===null?'':'%'],['review',fmt(s.wrongIds.length),'Questions to review','questions'],['check',fmt(state.sessions.length),'Completed sessions','times']].map(([i,v,l,u])=>'<div class="stat"><div class="stat-icon">'+icon(i)+'</div><div><div class="stat-value">'+v+'<small>'+u+'</small></div><div class="stat-label">'+l+'</div></div></div>').join('')+'</div>';out+='<div class="data-grid"><section class="panel"><h2>Accuracy by question type</h2><div class="metric-bars">'+Object.entries(PARTS).map(([id,name])=>metric('Part '+id,state.attempts.filter(a=>a.part===Number(id)))).join('')+'</div></section><section class="panel"><h2>Accuracy by topic</h2><div class="metric-bars">'+Object.entries(TOPICS).map(([id,name])=>metric(name,state.attempts.filter(a=>a.topic===id))).join('')+'</div><p class="hint">Repeating a question counts as a new attempt. These metrics track learning progress, not official TOEIC scores.</p></section></div><div class="section-heading"><h2>Recent Completed Sessions</h2><span>'+state.sessions.length+' records</span></div>';if(!state.sessions.length)out+='<section class="panel empty"><p>Complete your first session to see your history here.</p>'+btn('Start Practicing','nav-practice','primary')+'</section>';else out+='<div class="record-list">'+state.sessions.slice().reverse().slice(0,30).map(r=>'<article class="record-card"><div><h3>'+esc(displayEnglish(r.title))+'</h3><p>'+new Date(r.finishedAt).toLocaleString('en-US')+' · '+r.correct+' / '+r.total+' correct answers</p></div>'+btn('View Results','open-result','small','data-id="'+r.id+'"')+'</article>').join('')+'</div>';return out}
 function metric(label,arr){const c=arr.filter(a=>a.correct).length,pct=arr.length?Math.round(c/arr.length*100):0;return '<div class="metric-line"><span>'+esc(label)+'</span><div class="metric-track"><div class="metric-fill" style="width:'+pct+'%"></div></div><span class="metric-right">'+(arr.length?pct+'% · '+arr.length:'Not answered yet')+'</span></div>'}
-function dataPage(){const total=allTests().reduce((n,t)=>n+t.reading+t.listening,0);return heading('Take your progress with you.','Back up your records, import new packs, and adjust your reading preferences.','DATA & PREFERENCES')+'<div class="data-grid"><section class="panel"><h2>'+icon('download')+' Learning Record Backup</h2><p>Export answers, mistakes, saved questions, notes, and unfinished sessions. Make a backup before moving folders, changing devices, or updating the app.</p><div class="btn-row">'+btn('Export Backup','export-backup','primary')+btn('Import Backup','import-backup')+'</div><p class="hint">Last export:'+(lastBackupTime()?new Date(lastBackupTime()).toLocaleString('en-US'):'Not exported yet')+'</p></section><section class="panel"><h2>'+icon('upload')+' Add Test Packs</h2><p>Add questions by selecting a compatible JSON test pack. Built-in audio is stored in the audio folder; additional audio must also be placed in the website folder.</p><div class="btn-row">'+btn('Import JSON Test Pack','import-pack','primary')+'<a class="btn" href="data/example-pack.json" download>Download Example Format</a></div><p class="hint">Currently: '+allTests().length+' test packs · '+fmt(total)+' questions.</p></section><section class="panel"><h2>'+icon('settings')+' Reading Preferences</h2><div class="field"><label for="font-scale">Text size</label><select id="font-scale"><option value="1" '+(state.settings.fontScale===1?'selected':'')+'>Standard</option><option value="1.1" '+(state.settings.fontScale===1.1?'selected':'')+'>Larger by 10%</option><option value="1.2" '+(state.settings.fontScale===1.2?'selected':'')+'>Larger by 20%</option></select></div><p class="hint">All practice sessions hide correctness, answers, translations, and explanations until submission.</p></section><section class="panel"><h2>'+icon('shield')+' Local Storage Status</h2><p><strong>'+(storageMode==='indexeddb'?'IndexedDB · Saving available':storageMode==='localstorage'?'localStorage · Backup storage available':'Temporary mode · Permanent storage unavailable')+'</strong></p><p>Records belong to this browser profile and website address. They do not sync automatically. Private browsing, clearing site data, or moving folders may make existing records inaccessible.</p><p class="hint">No account is required, and answer records are not uploaded automatically.</p></section></div><section class="panel" style="margin-top:20px"><h2>What is included?</h2><ul class="inline-list"><li>3 original tests: 300 Reading and 300 Listening questions. Traditional Chinese translations and explanations are shown only on answer explanation pages.</li><li>Part 1 uses original illustrations. Listening uses bundled offline synthetic speech.</li><li>Formal tests use a roughly 45-minute single-play Listening sequence, followed by 75 minutes of Reading. Practice mode allows replay.</li><li>This is practice material, not official questions, calibrated difficulty, or an official TOEIC score conversion.</li></ul><div class="btn-row"><a class="btn small" href="使用說明.html" target="_blank" rel="noopener">Open User Guide</a>'+btn('Clear Learning Records','reset-progress','danger small')+'</div></section>'}
+function dataPage(){const total=allTests().reduce((n,t)=>n+t.reading+t.listening,0);return heading('Take your progress with you.','Back up your records, import new packs, and adjust your reading preferences.','DATA & PREFERENCES')+'<div class="data-grid"><section class="panel"><h2>'+icon('download')+' Learning Record Backup</h2><p>Export answers, mistakes, saved questions, notes, and unfinished sessions. Make a backup before moving folders, changing devices, or updating the app.</p><div class="btn-row">'+btn('Export Backup','export-backup','primary')+btn('Import Backup','import-backup')+'</div><p class="hint">Last export:'+(lastBackupTime()?new Date(lastBackupTime()).toLocaleString('en-US'):'Not exported yet')+'</p></section><section class="panel"><h2>'+icon('upload')+' Add Test Packs</h2><p>Add questions by selecting a compatible JSON test pack. Built-in audio is stored in the audio folder; additional audio must also be placed in the website folder.</p><div class="btn-row">'+btn('Import JSON Test Pack','import-pack','primary')+'<a class="btn" href="data/example-pack.json" download>Download Example Format</a></div><p class="hint">Currently: '+allTests().length+' test packs · '+fmt(total)+' questions.</p></section><section class="panel"><h2>'+icon('settings')+' Reading Preferences</h2><div class="field"><label for="font-scale">Text size</label><select id="font-scale"><option value="1" '+(state.settings.fontScale===1?'selected':'')+'>Standard</option><option value="1.1" '+(state.settings.fontScale===1.1?'selected':'')+'>Larger by 10%</option><option value="1.2" '+(state.settings.fontScale===1.2?'selected':'')+'>Larger by 20%</option></select></div><p class="hint">All practice sessions hide correctness, answers, translations, and explanations until submission.</p></section><section class="panel"><h2>'+icon('shield')+' Local Storage Status</h2><p><strong>'+(storageMode==='indexeddb'?'IndexedDB · Saving available':storageMode==='localstorage'?'localStorage · Backup storage available':'Temporary mode · Permanent storage unavailable')+'</strong></p><p>Records belong to this browser profile and website address. They do not sync automatically. Private browsing, clearing site data, or moving folders may make existing records inaccessible.</p><p class="hint">No account is required, and answer records are not uploaded automatically.</p></section></div><section class="panel" style="margin-top:20px"><h2>What is included?</h2><ul class="inline-list"><li>3 original tests: 300 Reading and 300 Listening questions. Traditional Chinese translations and explanations are shown only on answer explanation pages.</li><li>Part 1 uses original AI-generated photographs. Listening uses bundled offline synthetic speech.</li><li>Formal tests use a roughly 45-minute single-play Listening sequence, followed by 75 minutes of Reading. Practice mode allows replay.</li><li>This is practice material, not official questions, calibrated difficulty, or an official TOEIC score conversion.</li></ul><div class="btn-row"><a class="btn small" href="使用說明.html" target="_blank" rel="noopener">Open User Guide</a><a class="btn small" href="question-debug.html" target="_blank" rel="noopener">Question Debug</a>'+btn('Clear Learning Records','reset-progress','danger small')+'</div></section>'}
 function downloadJson(name,obj){const blob=new Blob([JSON.stringify(obj,null,2)],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000)}
 function lastBackupTime(){let stored=0;try{stored=Number(localStorage.getItem(BACKUP_TIME_KEY))||0}catch(e){}return Math.max(state.lastBackup||0,lastExportAt,stored>=0&&stored<8640000000000000?stored:0)}
 async function backupSnapshot(){
@@ -565,16 +802,32 @@ const qs=ids.map(id=>Q.get(id)).filter(Boolean);
 if(!qs.length){notify(kind==='result'?'There are no available incorrect questions to review in this session.':'No questions match these filters. Try changing your selection.');return}
 await startSession(groupedSelection(qs,40),kind==='result'?'Review This Session':route==='favorites'?'Saved Question Practice':'Review Mistakes');
 }
-async function action(name,el){if(name==='copy-question-uuid')return copyQuestionUuid(el);if(name.startsWith('nav-'))return navigate(name.slice(4));if(name==='menu'){mobileNav=true;render();return}if(name==='menu-close'){mobileNav=false;render();return}if(name==='close-modal'){closeModal();return}if(name==='quick-reading')return startFiltered({section:'reading',part:'all',topic:'all',difficulty:'all',count:20,unseen:false,accent:'all'});if(name==='quick-listening')return startFiltered({section:'listening',part:'all',topic:'all',difficulty:'all',count:20,unseen:false,accent:'all'});if(name==='topic'){filters.topic=el.dataset.topic;filters.section='all';filters.part='all';return navigate('practice')}if(name==='start-filtered')return startFiltered();if(name==='resume')return resume();if(name==='test-pick'){const id=el.dataset.test;modal('<h2>Choose a practice mode</h2><p>Section practice is graded after submission, not while answering. You can leave and resume later.</p><div class="btn-row">'+btn('Reading 100 questions','test-reading','primary','data-test="'+id+'"')+btn('Listening 100 questions','test-listening','primary','data-test="'+id+'"')+btn('Cancel','close-modal')+'</div>');return}if(['test-reading','test-listening','test-exam'].includes(name)){const id=el.dataset.test;closeModal();await loadTest(id);const qs=allQuestions().filter(q=>q.testId===id&&(name==='test-reading'?q.part>4:name==='test-listening'?q.part<5:true)).sort((a,b)=>a.number-b.number);const t=allTests().find(t=>t.id===id);const title=t.title+(name==='test-reading'?' · Reading':name==='test-listening'?' · Listening':' · Full Test');if(name==='test-exam'){const pack=state.importedPacks.find(p=>p.testId===id)||(window.SHIFT_PACKS||[]).find(p=>p.testId===id);if(!pack?.listeningPlan?.frames?.length){notify('This pack has no formal-listening plan. Choose Section Practice.');return}confirmBox('Start a Formal Test','The listening sequence lasts about 45 minutes. The first playback opens with the listening directions and an unscored example. Audio plays once, in order, without skipping or replay. Switching tabs pauses listening and its timer; return to continue or select Resume Listening if needed. Each group advances automatically after playback and answer time. Reading lasts 75 minutes, with free navigation among reading groups. This is an independently created practice test, not an ETS official test.',()=>startSession(qs,title,'exam'),'Start Test')}else return startSession(qs,title);return}if(name==='answer'){const s=state.active,q=sessionQuestion(el.dataset.question,s)||questionByActive();if(!q||!s||!groupQuestions().some(x=>x.id===q.id)||!q.options.some(o=>o.id===el.dataset.option))return;s.answers[q.id]=el.dataset.option;await persist();render();return}if(name==='submit-answer')return submitAnswer();if(name==='next-question'){return moveGroup(1)}if(name==='prev-question'){return moveGroup(-1)}if(name==='finish-session')return finishSession();if(name==='question-grid'){questionGrid();return}if(name==='jump'){const s=state.active;if(s){const index=Number(el.dataset.index);if(listening(s)||(formal(s)&&sessionQuestion(s.questionIds[index],s)?.part<5))return;closeModal();stopAudio();s.index=index;s.index=s.questionIds.indexOf(groupQuestions()[0].id);persist();render();window.scrollTo(0,0)}return}if(name==='finish-from-modal'){closeModal();return finishSession()}if(name==='star'){const id=el.dataset.id;state.stars[id]=!state.stars[id];await persist();render();notify(state.stars[id]?'Question saved.':'Question removed from saved items.');return}if(name==='toggle-translation'){state.settings.translation=!state.settings.translation;await persist();render();return}if(name==='transcript'){const q=questionByActive(),revealed=state.active?.mode==='practice'&&!!state.active?.submitted?.[q?.id];activeTranscript=!(activeTranscript===null?revealed:activeTranscript);render();return}if(name==='play-audio')return playAudio(el.dataset.group);if(name==='view-explanation'){await loadAll();const id=el.dataset.id;const completed=el.dataset.session&&state.sessions.find(s=>s.id===el.dataset.session&&s.questionIds.includes(id));const a=el.dataset.session?(completed?state.attempts.find(a=>a.id===completed.id+':'+id):null):state.attempts.slice().reverse().find(a=>a.questionId===id&&!a.correct);if(!a){notify('There is no submitted answer record available for this question.');return}stopAudio();reviewDetail={questionId:id,attempt:a,returnTo:route==='result'?'result':'review'};route='answer-review';render();window.scrollTo(0,0);return}if(name==='back-review'){stopAudio();route=reviewDetail?.returnTo||'review';render();window.scrollTo(0,0);return}if(name==='open-question'){await loadAll();const q=Q.get(el.dataset.id);if(q)return startSession(relatedQuestions(q),'Group Review');return}if(name==='start-list')return beginReview('list');if(name==='review-result')return beginReview('result');if(name==='more-list'){listLimit+=40;render();return}if(name==='open-result'){await loadAll();lastResult=state.sessions.find(s=>s.id===el.dataset.id);route='result';render();window.scrollTo(0,0);return}if(name==='export-backup')return exportBackup();if(name==='import-backup'){document.getElementById('backup-input').click();return}if(name==='import-pack'){await loadAll();document.getElementById('pack-input').click();return}if(name==='reset-progress'){confirmBox('Clear your learning records?','This removes local answers, mistakes, saved questions, notes, and unfinished progress. Imported packs are kept. Export a backup before clearing anything.',async()=>{const imported=state.importedPacks;state={formatVersion:1,settings:{fontScale:1,translation:false},attempts:[],stats:{},stars:{},notes:{},sessions:[],active:null,importedPacks:imported,lastBackup:null};clearNoteDraft();lastResult=null;await persist();render();notify('Learning records cleared.')},'Confirm Clear')}}
+async function action(name,el){if(name==='copy-question-uuid')return copyQuestionUuid(el);if(name.startsWith('nav-'))return navigate(name.slice(4));if(name==='menu'){mobileNav=true;render();return}if(name==='menu-close'){mobileNav=false;render();return}if(name==='close-modal'){closeModal();return}if(name==='quick-reading')return startFiltered({section:'reading',part:'all',topic:'all',difficulty:'all',count:20,unseen:false,accent:'all'});if(name==='quick-listening')return startFiltered({section:'listening',part:'all',topic:'all',difficulty:'all',count:20,unseen:false,accent:'all'});if(name==='topic'){filters.topic=el.dataset.topic;filters.section='all';filters.part='all';return navigate('practice')}if(name==='start-filtered')return startFiltered();if(name==='resume')return resume();if(name==='test-pick'){const id=el.dataset.test;modal('<h2>Choose a practice mode</h2><p>Section practice is graded after submission, not while answering. You can leave and resume later.</p><div class="btn-row">'+btn('Reading 100 questions','test-reading','primary','data-test="'+id+'"')+btn('Listening 100 questions','test-listening','primary','data-test="'+id+'"')+btn('Cancel','close-modal')+'</div>');return}if(['test-reading','test-listening','test-exam'].includes(name)){const id=el.dataset.test;closeModal();await loadTest(id);const qs=allQuestions().filter(q=>q.testId===id&&(name==='test-reading'?q.part>4:name==='test-listening'?q.part<5:true)).sort((a,b)=>a.number-b.number);const t=allTests().find(t=>t.id===id);const title=t.title+(name==='test-reading'?' · Reading':name==='test-listening'?' · Listening':' · Full Test');if(name==='test-exam'){const pack=state.importedPacks.find(p=>p.testId===id)||(window.SHIFT_PACKS||[]).find(p=>p.testId===id);if(!pack?.listeningPlan?.frames?.length){notify('This pack has no formal-listening plan. Choose Section Practice.');return}confirmBox('Start a Formal Test','The listening sequence lasts about 45 minutes. The first playback opens with the listening directions and an unscored example. Audio plays once, in order, without skipping or replay. Switching tabs pauses listening and its timer; return to continue or select Resume Listening if needed. Each group advances automatically after playback and answer time. Reading lasts 75 minutes, with free navigation among reading groups. This is an independently created practice test, not an ETS official test.',()=>startSession(qs,title,'exam'),'Start Test')}else return startSession(qs,title);return}if(name==='answer'){const s=state.active,q=sessionQuestion(el.dataset.question,s)||questionByActive();if(!q||!s||!groupQuestions().some(x=>x.id===q.id)||!q.options.some(o=>o.id===el.dataset.option))return;s.answers[q.id]=el.dataset.option;await persist();render();return}if(name==='submit-answer')return submitAnswer();if(name==='next-question'){return moveGroup(1)}if(name==='prev-question'){return moveGroup(-1)}if(name==='finish-session')return finishSession();if(name==='question-grid'){questionGrid();return}if(name==='jump'){const s=state.active;if(s){const index=Number(el.dataset.index);if(listening(s)||(formal(s)&&sessionQuestion(s.questionIds[index],s)?.part<5))return;closeModal();stopAudio();s.index=index;s.index=s.questionIds.indexOf(groupQuestions()[0].id);persist();render();window.scrollTo(0,0)}return}if(name==='finish-from-modal'){closeModal();return finishSession()}if(name==='star'){const id=el.dataset.id;state.stars[id]=!state.stars[id];await persist();render();notify(state.stars[id]?'Question saved.':'Question removed from saved items.');return}if(name==='toggle-translation'){state.settings.translation=!state.settings.translation;await persist();render();return}if(name==='transcript'){const q=questionByActive(),revealed=state.active?.mode==='practice'&&!!state.active?.submitted?.[q?.id];activeTranscript=!(activeTranscript===null?revealed:activeTranscript);render();return}if(name==='play-audio')return playAudio(el.dataset.group);if(name==='view-explanation'){
+ clearTimeout(searchTimeout);
+ await loadAll();
+ const detail=explanationQueue(el.dataset.id,el.dataset.session);
+ if(!detail){notify('There is no submitted answer record available for this question.');return}
+ openExplanation(detail);return
+}if(name==='next-explanation'){
+ const d=reviewDetail;
+ if(route!=='answer-review'||!d||!d.entries[d.index+1])return;
+ openExplanation({...d,...d.entries[d.index+1],index:d.index+1},true);return
+}if(name==='back-review'){
+ stopAudio();route=reviewDetail?.returnTo||'review';reviewDetail=null;render();window.scrollTo(0,0);return
+}if(name==='open-question'){await loadAll();const q=Q.get(el.dataset.id);if(q)return startSession(relatedQuestions(q),'Group Review');return}if(name==='start-list')return beginReview('list');if(name==='review-result')return beginReview('result');if(name==='more-list'){listLimit+=40;render();return}if(name==='open-result'){await loadAll();lastResult=state.sessions.find(s=>s.id===el.dataset.id);route='result';render();window.scrollTo(0,0);return}if(name==='export-backup')return exportBackup();if(name==='import-backup'){document.getElementById('backup-input').click();return}if(name==='import-pack'){await loadAll();document.getElementById('pack-input').click();return}if(name==='reset-progress'){confirmBox('Clear your learning records?','This removes local answers, mistakes, saved questions, notes, and unfinished progress. Imported packs are kept. Export a backup before clearing anything.',async()=>{const imported=state.importedPacks;state={formatVersion:1,settings:{fontScale:1,translation:false},attempts:[],stats:{},stars:{},notes:{},sessions:[],active:null,importedPacks:imported,lastBackup:null};clearNoteDraft();lastResult=null;await persist();render();notify('Learning records cleared.')},'Confirm Clear')}}
 document.addEventListener('click',e=>{const el=e.target.closest('[data-action]');if(!el||el.disabled)return;e.preventDefault();withBusy(()=>action(el.dataset.action,el))});
 document.addEventListener('change',e=>{const el=e.target;withBusy(async()=>{if(el.id==='filter-section'){filters.section=el.value;filters.part='all';if(el.value==='reading')filters.accent='all';render()}else if(el.id==='filter-accent'){filters.accent=el.value;if(el.value!=='all'){filters.section='listening';if(Number(filters.part)>4)filters.part='all'}render()}else if(el.id==='filter-part'){filters.part=el.value;if(Number(el.value)>4)filters.accent='all';if(el.value!=='all')filters.section=Number(el.value)>4?'reading':'listening';render()}else if(el.id==='filter-topic')filters.topic=el.value;else if(el.id==='filter-difficulty')filters.difficulty=el.value;else if(el.id==='filter-count')filters.count=Number(el.value);else if(el.id==='filter-unseen')filters.unseen=el.checked;else if(el.id==='review-filter'){listFilter=el.value;listLimit=40;render()}else if(el.id==='font-scale'){state.settings.fontScale=Number(el.value);await persist();render()}else if(el.id==='default-translation'){state.settings.translation=el.checked;await persist()}else if(el.id==='audio-speed'&&!listening()){player.playbackRate=Number(el.value)}else if(el.id==='backup-input'){const f=el.files[0];el.value='';if(f)await importBackup(f)}else if(el.id==='pack-input'){const f=el.files[0];el.value='';if(f)await importPack(f)}})});
 let searchTimeout;
-document.addEventListener('input',e=>{const el=e.target;if(el.id==='question-note'||el.classList.contains('group-note')){saveNoteInput(el.dataset.id,el.value)}else if(el.id==='audio-seek'&&!listening()&&Number.isFinite(player.duration)){const g=quizGroup(currentAudioGroup);player.currentTime=mediaStart(g)+Number(el.value)/1000*(Number.isFinite(g?.audioEnd)?mediaDuration(g):player.duration);syncAudioUI()}else if(el.id==='list-search'){listSearch=el.value;clearTimeout(searchTimeout);searchTimeout=setTimeout(()=>{const pos=el.selectionStart;render();const input=document.getElementById('list-search');input?.focus();input?.setSelectionRange(pos,pos)},300)}});
+document.addEventListener('input',e=>{const el=e.target;if(el.id==='question-note'||el.classList.contains('group-note')){saveNoteInput(el.dataset.id,el.value)}else if(el.id==='audio-seek'&&!listening()&&Number.isFinite(player.duration)){scrubPractice(quizGroup(currentAudioGroup),Number(el.value))}else if(el.id==='list-search'){listSearch=el.value;clearTimeout(searchTimeout);searchTimeout=setTimeout(()=>{const pos=el.selectionStart;render();const input=document.getElementById('list-search');input?.focus();input?.setSelectionRange(pos,pos)},300)}});
 document.addEventListener('keydown',e=>{if(route!=='quiz'||document.getElementById('modal').open||e.target.closest('.copy-question-uuid')||/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)||e.ctrlKey||e.metaKey||e.altKey)return;const card=e.target.closest('.grouped-question'),q=card?sessionQuestion(card.dataset.questionId):questionByActive();if(!q)return;const letter=e.key.toUpperCase();if(['A','B','C','D'].includes(letter)&&q.options.some(o=>o.id===letter)){const el=document.querySelector('[data-question="'+q.id+'"][data-option="'+letter+'"]');if(el&&!el.disabled){e.preventDefault();el.click()}}else if(e.key==='Enter'){const el=document.querySelector('[data-action="submit-answer"], [data-action="next-question"], [data-action="finish-session"]');if(el&&!el.disabled){e.preventDefault();el.click()}}});
-setInterval(()=>{if(formalRunning||!currentAudioGroup||player.paused)return;const g=quizGroup(currentAudioGroup);if(Number.isFinite(g?.audioEnd)&&player.currentTime>=g.audioEnd-.025){player.pause();player.currentTime=mediaStart(g);syncAudioUI()}},25);
+setInterval(checkPracticeRange,15);
+for(const e of ['timeupdate','seeked','playing'])player.addEventListener(e,checkPracticeRange);
 document.addEventListener('visibilitychange',()=>{
  if(document.hidden){
-  if(!formalRunning)return;
+  if(!formalRunning){
+   if(route==='answer-review'||route==='quiz'&&!listening()){cancelPracticePosition();player.pause();syncAudioUI()}
+   return
+  }
   saveListeningTabPoint();
   visibilityResume={sessionId:state.active?.id,groupId:currentAudioGroup};
   stopAudio();
