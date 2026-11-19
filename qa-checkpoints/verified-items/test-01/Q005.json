@@ -1,0 +1,110 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "audio": "Both actual audio editions match all four choices in order after punctuation/case normalization.",
+    "imageQuestionAndZh": "Travelers are seated next to luggage. There is no luggage loading, seat removal or repair. The unique key, zh-TW stem and all options/rationales match."
+  },
+  "activeQuestion": {
+    "id": "t01-q005",
+    "testId": "test-01",
+    "number": 5,
+    "part": 1,
+    "groupId": "t01-g005",
+    "topic": "daily",
+    "difficulty": "foundation",
+    "tags": [
+      "daily",
+      "photo_description"
+    ],
+    "prompt": "Look at the picture and choose the statement that best describes it.",
+    "promptZh": "請看圖片，選出最符合畫面的敘述。",
+    "options": [
+      {
+        "id": "A",
+        "text": "Travelers are lifting luggage onto an aircraft.",
+        "zh": "旅客正把行李搬上飛機。",
+        "whyZh": "畫面是室內等候情境，沒有登機或把行李抬上飛機的動作。"
+      },
+      {
+        "id": "B",
+        "text": "Some travelers are waiting beside their luggage.",
+        "zh": "一些旅客正在行李旁等候。",
+        "whyZh": "畫面可見旅客、座位與行李；旅客在行李旁等候是直接可觀察到的描述。"
+      },
+      {
+        "id": "C",
+        "text": "All the seats are being removed from the terminal.",
+        "zh": "航廈內所有座椅都正在被搬走。",
+        "whyZh": "座椅留在原處，圖中沒有搬走座椅的動作。"
+      },
+      {
+        "id": "D",
+        "text": "A suitcase is being repaired on a workbench.",
+        "zh": "一個行李箱正在工作檯上維修。",
+        "whyZh": "行李在旅客旁，沒有工作檯或維修行為。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "畫面可見旅客、座位與行李；旅客在行李旁等候是直接可觀察到的描述。",
+    "evidence": "Some travelers are waiting beside their luggage.",
+    "vocabulary": [
+      {
+        "term": "luggage",
+        "zh": "行李",
+        "note": "不可數名詞；可用 a piece of luggage 表示一件行李。"
+      }
+    ],
+    "revision": 1
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-01-02.mp3",
+      "start": 21.472,
+      "end": 42.112,
+      "assetSha256": "c6e650afe0082cf3d0c0623482249a9b53c172420b7a016c9e919d2db01c66d3",
+      "speech": "A. Travelers are lifting luggage onto an aircraft.\n B. Some travelers are waiting beside their luggage.\n C. All the seats are being removed from the terminal.\n D. A suitcase is being repaired on a workbench."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-02.mp3",
+      "start": 22.048,
+      "end": 44.848,
+      "assetSha256": "b81fce2c2dec644470bd6a5c8a722a18eb4d43ca8b7017679879946f0b19f1eb",
+      "speech": "A. Travelers are lifting luggage onto an aircraft.\n B. Some travelers are waiting beside their luggage.\n C. All the seats are being removed from the terminal.\n D. A suitcase is being repaired on a workbench."
+    }
+  ],
+  "group": {
+    "id": "t01-g005",
+    "testId": "test-01",
+    "part": 1,
+    "title": "Waiting to travel",
+    "titleZh": "等候出發",
+    "topic": "daily",
+    "passage": "A. Travelers are lifting luggage onto an aircraft. B. Some travelers are waiting beside their luggage. C. All the seats are being removed from the terminal. D. A suitcase is being repaired on a workbench.",
+    "passageZh": "A. 旅客正把行李搬上飛機。\nB. 一些旅客正在行李旁等候。\nC. 航廈內所有座椅都正在被搬走。\nD. 一個行李箱正在工作檯上維修。",
+    "audioScript": "A. Travelers are lifting luggage onto an aircraft. B. Some travelers are waiting beside their luggage. C. All the seats are being removed from the terminal. D. A suitcase is being repaired on a workbench.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "A. Travelers are lifting luggage onto an aircraft. B. Some travelers are waiting beside their luggage. C. All the seats are being removed from the terminal. D. A suitcase is being repaired on a workbench."
+      }
+    ],
+    "imageScene": "airport",
+    "audio": "audio/azure-v1/test-01-02.mp3",
+    "duration": 22.8,
+    "image": "assets/scenes/airport.svg",
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-IN",
+        "role": "female",
+        "modelVoice": "en-IN-NeerjaNeural"
+      }
+    ],
+    "audioStart": 22.048,
+    "audioEnd": 44.848
+  },
+  "imageSha256": "1a806a7bcc7497c4a1ba179ef6a1330d69032feafd968513de6ea8d25007bac4"
+}
