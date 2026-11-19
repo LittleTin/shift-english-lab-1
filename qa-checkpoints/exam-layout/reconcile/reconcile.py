@@ -104,13 +104,13 @@ def pair_number(q,test,n,base):
     if not q.get('evidence'):raise ValueError('missing source evidence')
     return q
 
-def want_audio(pack, q, group):
+def want_audio(pack, q, group, has_cue=False):
     base=next(x for x in pack['questions'] if x['number']==q['number'])
     frames=[f for f in pack['listeningPlan']['frames'] if f.get('groupId')==group['id'] and f.get('kind')=='audio']
     req={}
-    for role in ('passage','question'):
+    for role in (('cue','passage','question') if has_cue else ('passage','question')):
         if role=='question' and q['part']<3:continue
-        hits=[f for f in frames if f.get('role')==role and (role=='passage' or f.get('questionId') in (q['id'],base['id']))]
+        hits=[f for f in frames if f.get('role')==role and (role!='question' or f.get('questionId') in (q['id'],base['id']))]
         if len(hits)!=1:raise ValueError(f'need one formal {role} for this item (got {len(hits)})')
         req[role]=(hits[0]['src'],hits[0]['start'],hits[0]['end'])
     req['practice']=(group['audio'],group['audioStart'],group['audioEnd'])
@@ -233,7 +233,9 @@ def run(site, ledger, decisions):
                         raise ValueError('reviewed picture hash does not match candidate path')
                     media['image']={'path':g['image'],'sha256':got}
                 if q['part']<=4:
-                    media['audio']=check_audio(rec,want_audio(pack,q,g),verify)
+                    rows=rec.get('audio')
+                    has_cue=isinstance(rows,list) and any(isinstance(row,dict) and row.get('mode')=='cue' for row in rows)
+                    media['audio']=check_audio(rec,want_audio(pack,q,g,has_cue=has_cue),verify)
                 if media:report['verifiedMedia'][str(n)]=media
                 report['verifiedItems'][str(n)]={'id':q['id'],'questionSha256':dig(q),'evidenceSha256':dig(rec),'groupSha256':dig(g) if g else None}
                 report['accepted'].append(n)

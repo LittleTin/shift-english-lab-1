@@ -44,6 +44,22 @@ class Gate(unittest.TestCase):
         self.assertIn('test-01/t01-r-p6-02',r['unusedDecisions'])
         self.assertEqual(p,{})
 
+    def test_supplied_cue_is_verified_against_exact_source(self):
+        pack=m.strict(SITE/'data/test-01.json')
+        q=next(q for q in pack['questions'] if q['number']==1)
+        g=next(g for g in pack['groups'] if g['id']==q['groupId'])
+        req=m.want_audio(pack,q,g,has_cue=True)
+        self.assertIn('cue',req)
+        self.assertNotIn('cue',m.want_audio(pack,q,g))
+        dig=lambda p,k:m.file_sha(m.rel(SITE,p,k))
+        rows=[dict(mode=k,path=src,start=start,end=end,assetSha256=dig(src,'audio'))
+              for k,(src,start,end) in req.items()]
+        self.assertIn('cue',m.check_audio({'audio':rows},req,dig))
+        cue=next(r for r in rows if r['mode']=='cue')
+        cue['start']+=0.01
+        with self.assertRaisesRegex(ValueError,'range'):
+            m.check_audio({'audio':rows},req,dig)
+
     def test_wrong_audio_asset_digest_fails(self):
         actual=m.strict(LEDGER/'test-01/Q003.json')
         r=actual['audio'][0]

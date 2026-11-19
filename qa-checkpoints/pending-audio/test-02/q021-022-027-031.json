@@ -1,0 +1,240 @@
+{
+  "status": "pending-audio-confirmation-not-verified",
+  "items": [
+    {
+      "number": 21,
+      "id": "t02-q021",
+      "blindKey": "C",
+      "authoredKey": "C",
+      "reason": "C postpones confirmation to this afternoon; wireless and box color do not address shipping date.",
+      "expectedScript": "Did the connector supplier confirm the shipping date?\nA. The connection is wireless.\nB. Shipping boxes are brown.\nC. They promised to confirm it this afternoon.",
+      "audio": [
+        {
+          "number": 21,
+          "mode": "formal-cue",
+          "path": "audio/formal/test-02-cues-01.mp3",
+          "start": 23.72275,
+          "end": 24.83521,
+          "sourceSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+          "observed": "Number 21.",
+          "allTranscripts": [
+            "Number 21. Number 21.",
+            "Number 21."
+          ],
+          "contentMatch": true
+        },
+        {
+          "number": 21,
+          "mode": "formal-passage",
+          "path": "audio/formal-v2/test-02-07.mp3",
+          "start": 33.636,
+          "end": 50.628,
+          "sourceSha256": "ee6016360ee74abc8a44404ef756702455fa08a4afc148e242676cb99e465c27",
+          "observed": "Did the connector supplier confirm the shipping date? A. The connection is wireless. B. Shipping boxes are brown. C. They promise to confirm it this afternoon.",
+          "allTranscripts": [
+            "Did the connector supplier confirm the shipping date? A. The connection is wireless. B. Shipping boxes are brown. C. They promise to confirm it this afternoon."
+          ],
+          "contentMatch": false
+        },
+        {
+          "number": 21,
+          "mode": "practice-passage",
+          "path": "audio/azure-v1/test-02-07.mp3",
+          "start": 34.692,
+          "end": 50.892,
+          "sourceSha256": "23f6adf5f8140aad1c3ce855836b0800bd919ed4a24d73816a6875f99d770e84",
+          "observed": "Did the connector supplier confirm the shipping date? A. The connection is wireless. B. Shipping boxes are brown. C. They promised to confirm it this afternoon.",
+          "allTranscripts": [
+            "Did the connector supplier confirm the shipping date? A. The connection is wireless. B. Shipping boxes are brown. C. They promised to confirm it this afternoon."
+          ],
+          "contentMatch": true
+        }
+      ],
+      "holds": [
+        "formal-passage: ASR differs from authored wording; audio may still be correct, independent recheck needed"
+      ],
+      "guardedZhEdits": [],
+      "targetedRecheck": {
+        "number": 21,
+        "mode": "formal-passage",
+        "path": "audio/formal-v2/test-02-07.mp3",
+        "start": 47.136,
+        "end": 50.628,
+        "sourceSha256": "ee6016360ee74abc8a44404ef756702455fa08a4afc148e242676cb99e465c27",
+        "observed": "They promise to confirm it this afternoon.",
+        "method": "exact same wave minus initial 13.5 seconds, no prompt; same model alternate context"
+      }
+    },
+    {
+      "number": 22,
+      "id": "t02-q022",
+      "blindKey": "C",
+      "authoredKey": "C",
+      "reason": "C accepts the updated engineering change order and replaces the old copy; A echoes engineer/order but refers to coffee, B echoes change but refers to color.",
+      "expectedScript": "Please use the updated engineering change order.\nA. The engineer ordered coffee.\nB. It changes color in sunlight.\nC. All right, I will replace the old copy.",
+      "audio": [
+        {
+          "number": 22,
+          "mode": "formal-cue",
+          "path": "audio/formal/test-02-cues-01.mp3",
+          "start": 25.08521,
+          "end": 26.19542,
+          "sourceSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+          "observed": "Number 22.",
+          "allTranscripts": [
+            "Number 22."
+          ],
+          "contentMatch": true
+        },
+        {
+          "number": 22,
+          "mode": "formal-passage",
+          "path": "audio/formal-v2/test-02-08.mp3",
+          "start": 0.5,
+          "end": 17.9,
+          "sourceSha256": "ad1303499752f5bd4f9bdfb48c155e432ea2b83c3741ad7e378820cdb5c6a62e",
+          "observed": "Please use the updated engineering change order. A. The engineer ordered coffee. B. It changes color in sunlight. C. All right, I will replace the old copy.",
+          "allTranscripts": [
+            "Please use the updated engineering change order. A. The engineer ordered coffee. B. It changes color in sunlight. C. All right, I will replace the old copy."
+          ],
+          "contentMatch": true
+        },
+        {
+          "number": 22,
+          "mode": "practice-passage",
+          "path": "audio/azure-v1/test-02-08.mp3",
+          "start": 0.5,
+          "end": 18.044,
+          "sourceSha256": "4eb13d16f28be215f8f99a9ef44624559deb25e0518f97e451148fbdb659bc72",
+          "observed": "Please use the updated engineering change order. A. The engineer ordered coffee. B. It changes color in sunlight. C. All right, I will replace the old coffee.",
+          "allTranscripts": [
+            "Please use the updated engineering change order. A. The engineer ordered coffee. B. It changes color in sunlight. C. All right, I will replace the old coffee."
+          ],
+          "contentMatch": false
+        }
+      ],
+      "holds": [
+        "practice-passage: ASR differs from authored wording; audio may still be correct, independent recheck needed"
+      ],
+      "guardedZhEdits": [],
+      "targetedRecheck": {
+        "number": 22,
+        "mode": "practice-passage",
+        "path": "audio/azure-v1/test-02-08.mp3",
+        "start": 14.0,
+        "end": 18.044,
+        "sourceSha256": "4eb13d16f28be215f8f99a9ef44624559deb25e0518f97e451148fbdb659bc72",
+        "observed": "Alright, I will replace the old copy.\n [BLANK_AUDIO]",
+        "method": "exact same wave minus initial 13.5 seconds, no prompt; same model alternate context"
+      }
+    },
+    {
+      "number": 27,
+      "id": "t02-q027",
+      "blindKey": "A",
+      "authoredKey": "A",
+      "reason": "A gives a named service counter as a location; earlier delivery concerns timing, collector concerns hobbies.",
+      "expectedScript": "Where can I collect the package if I miss the delivery?\nA. At the service counter on Pine Street.\nB. It arrived earlier than usual.\nC. The collector likes stamps.",
+      "audio": [
+        {
+          "number": 27,
+          "mode": "formal-cue",
+          "path": "audio/formal/test-02-cues-01.mp3",
+          "start": 32.18379,
+          "end": 33.39988,
+          "sourceSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+          "observed": "Number 27.",
+          "allTranscripts": [
+            "Number 27."
+          ],
+          "contentMatch": true
+        },
+        {
+          "number": 27,
+          "mode": "formal-passage",
+          "path": "audio/formal-v2/test-02-09.mp3",
+          "start": 34.86,
+          "end": 51.876,
+          "sourceSha256": "7d5e1ad5865af07862d094713fd460948b65b3b35a71f63af0075f2d5e28959c",
+          "observed": "Where can I collect the package if I miss the delivery?\n A. At the service counter on Pine Street.\n B. It arrived earlier than usual.\n C. The collector-like stamps.",
+          "allTranscripts": [
+            "Where can I collect the package if I miss the delivery?\n A. At the service counter on Pine Street.\n B. It arrived earlier than usual.\n C. The collector-like stamps."
+          ],
+          "contentMatch": false
+        },
+        {
+          "number": 27,
+          "mode": "practice-passage",
+          "path": "audio/azure-v1/test-02-09.mp3",
+          "start": 32.652,
+          "end": 49.716,
+          "sourceSha256": "d307280b603c03190d7c585982915fc4507df752f199cda54406966552f96f1e",
+          "observed": "Where can I collect the package if I miss the delivery?\n A. At the service counter on Pine Street.\n B. It arrived earlier than usual.\n C. The collector likes stamps.",
+          "allTranscripts": [
+            "Where can I collect the package if I miss the delivery?\n A. At the service counter on Pine Street.\n B. It arrived earlier than usual.\n C. The collector likes stamps."
+          ],
+          "contentMatch": true
+        }
+      ],
+      "holds": [
+        "formal-passage: ASR differs from authored wording; audio may still be correct, independent recheck needed"
+      ],
+      "guardedZhEdits": [],
+      "targetedRecheck": null
+    },
+    {
+      "number": 31,
+      "id": "t02-q031",
+      "blindKey": "B",
+      "authoredKey": "B",
+      "reason": "B proposes checking the screen input source; form blank and a past presentation do not resolve current screen issue.",
+      "expectedScript": "The screen is still blank.\nA. I filled in the blank on the form.\nB. Let us check the input source.\nC. The presentation was last year.",
+      "audio": [
+        {
+          "number": 31,
+          "mode": "formal-cue",
+          "path": "audio/formal/test-02-cues-01.mp3",
+          "start": 37.55179,
+          "end": 38.64229,
+          "sourceSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+          "observed": "Number 31.",
+          "allTranscripts": [
+            "Number 31."
+          ],
+          "contentMatch": true
+        },
+        {
+          "number": 31,
+          "mode": "formal-passage",
+          "path": "audio/formal-v2/test-02-11.mp3",
+          "start": 0.5,
+          "end": 16.22,
+          "sourceSha256": "f6b001264d614f907a6fa8a672c74cd5cae2f92e25549df6291999be2bf4ccf3",
+          "observed": "The screen is still blank.\n A. I filled in the blank on the form.\n B. Let us check the input source.\n C. The presentation was last year.",
+          "allTranscripts": [
+            "The screen is still blank.\n A. I filled in the blank on the form.\n B. Let us check the input source.\n C. The presentation was last year."
+          ],
+          "contentMatch": true
+        },
+        {
+          "number": 31,
+          "mode": "practice-passage",
+          "path": "audio/azure-v1/test-02-11.mp3",
+          "start": 0.5,
+          "end": 16.58,
+          "sourceSha256": "5e2bacd5d2e55ba239a41ba4f929e3364756da750a406995a403d8d6b05268ea",
+          "observed": "The screen is still black.\n A. I filled in the blank on the form.\n B. Let us check the input source.\n C. The presentation was last year.",
+          "allTranscripts": [
+            "The screen is still black.\n A. I filled in the blank on the form.\n B. Let us check the input source.\n C. The presentation was last year."
+          ],
+          "contentMatch": false
+        }
+      ],
+      "holds": [
+        "practice-passage: ASR differs from authored wording; audio may still be correct, independent recheck needed"
+      ],
+      "guardedZhEdits": [],
+      "targetedRecheck": null
+    }
+  ]
+}

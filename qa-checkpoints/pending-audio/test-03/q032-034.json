@@ -1,0 +1,196 @@
+{
+  "status": "pending-audio-confirmation-not-verified",
+  "items": [
+    {
+      "number": 32,
+      "id": "t03-q032",
+      "groupId": "t03-g032",
+      "blindAnswer": "B",
+      "status": "hold",
+      "reason": "B: stain after rain and checking roof/drain indicate possible water damage; second office only sets budget, arriving clients only affect route, and the desk itself is undamaged.",
+      "audioReview": "Dialogue full decode heard blocked rain and cleaning the train for drain. Focused 0.85/1.00/1.15× retries hear block train and cleaning the train; independent word evidence remains missing, and practice uses identical asset. Cues, rain stain, roof check, budget and photographic request all agree. No audio defect established.",
+      "audio": [
+        {
+          "mode": "cue",
+          "path": "audio/formal/test-03-cues-01.mp3",
+          "start": 38.89229,
+          "end": 42.78983,
+          "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+          "speech": "Questions 32 through 34. Listen to the conversation."
+        },
+        {
+          "mode": "passage",
+          "path": "audio/azure-v1/test-03-12.mp3",
+          "start": 0.5,
+          "end": 47.54,
+          "assetSha256": "75ebb83dacc7b205c938d9c89ce7fe15821c996c9356467c102f33e8231d2daf",
+          "speech": "Thanks for coming out so quickly. The stain above our reception desk appeared after last night's rain. We are opening a second office next month, so an expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes a blocked rain causes water to collect around a perfectly sound roof. The building manager mentioned leaves in the gutters. Can you get upstairs while our clients are arriving? Certainly. I'll use the service staircase, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you find. I'll need to show the manager why the work was necessary.",
+          "retries": {
+            "t03-g032-passage-retry-10.0-0.85": "An expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes a block train causes water to collect around a perfectly sound roof. The building many...",
+            "t03-g032-passage-retry-10.0-1.15": "An expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes the block train causes water to collect around a perfectly sound roof. The building many...",
+            "t03-g032-passage-retry-10.0-1": "An expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes a block train causes water to collect around a perfectly sound roof. The building many years ago.",
+            "t03-g032-passage-retry-29.2-0.85": "Certainly. I'll use the service staircase, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you want.",
+            "t03-g032-passage-retry-29.2-1.15": "Certainly. I'll use the service tank case, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you want.",
+            "t03-g032-passage-retry-29.2-1": "Certainly. I'll use the service staircase, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you need."
+          }
+        },
+        {
+          "mode": "practice",
+          "path": "audio/azure-v1/test-03-12.mp3",
+          "start": 0.5,
+          "end": 47.54,
+          "assetSha256": "75ebb83dacc7b205c938d9c89ce7fe15821c996c9356467c102f33e8231d2daf",
+          "speech": "Thanks for coming out so quickly. The stain above our reception desk appeared after last night's rain. We are opening a second office next month, so an expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes a blocked rain causes water to collect around a perfectly sound roof. The building manager mentioned leaves in the gutters. Can you get upstairs while our clients are arriving? Certainly. I'll use the service staircase, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you find. I'll need to show the manager why the work was necessary.",
+          "retries": {
+            "t03-g032-passage-retry-10.0-0.85": "An expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes a block train causes water to collect around a perfectly sound roof. The building many...",
+            "t03-g032-passage-retry-10.0-1.15": "An expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes the block train causes water to collect around a perfectly sound roof. The building many...",
+            "t03-g032-passage-retry-10.0-1": "An expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes a block train causes water to collect around a perfectly sound roof. The building many years ago.",
+            "t03-g032-passage-retry-29.2-0.85": "Certainly. I'll use the service staircase, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you want.",
+            "t03-g032-passage-retry-29.2-1.15": "Certainly. I'll use the service tank case, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you want.",
+            "t03-g032-passage-retry-29.2-1": "Certainly. I'll use the service staircase, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you need."
+          }
+        },
+        {
+          "mode": "question",
+          "path": "audio/formal/test-03-cues-01.mp3",
+          "start": 43.03983,
+          "end": 45.96162,
+          "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+          "speech": "Number 32. What problem is being discussed?"
+        }
+      ],
+      "zhCorrections": [
+        {
+          "path": "options.D.whyZh",
+          "old": "污漬位於桌子上方，沒有提到搬家損壞。",
+          "new": "污漬在接待桌上方，沒有提到桌子搬運受損。"
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "id": "t03-q033",
+      "groupId": "t03-g032",
+      "blindAnswer": "C",
+      "status": "hold",
+      "reason": "C: clearing the drain might avoid replacing the roof. The opening is next month, visits have not been canceled, and the manager has not committed to pay.",
+      "audioReview": "Dialogue full decode heard blocked rain and cleaning the train for drain. Focused 0.85/1.00/1.15× retries hear block train and cleaning the train; independent word evidence remains missing, and practice uses identical asset. Cues, rain stain, roof check, budget and photographic request all agree. No audio defect established.",
+      "audio": [
+        {
+          "mode": "cue",
+          "path": "audio/formal/test-03-cues-01.mp3",
+          "start": 38.89229,
+          "end": 42.78983,
+          "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+          "speech": "Questions 32 through 34. Listen to the conversation."
+        },
+        {
+          "mode": "passage",
+          "path": "audio/azure-v1/test-03-12.mp3",
+          "start": 0.5,
+          "end": 47.54,
+          "assetSha256": "75ebb83dacc7b205c938d9c89ce7fe15821c996c9356467c102f33e8231d2daf",
+          "speech": "Thanks for coming out so quickly. The stain above our reception desk appeared after last night's rain. We are opening a second office next month, so an expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes a blocked rain causes water to collect around a perfectly sound roof. The building manager mentioned leaves in the gutters. Can you get upstairs while our clients are arriving? Certainly. I'll use the service staircase, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you find. I'll need to show the manager why the work was necessary.",
+          "retries": {
+            "t03-g032-passage-retry-10.0-0.85": "An expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes a block train causes water to collect around a perfectly sound roof. The building many...",
+            "t03-g032-passage-retry-10.0-1.15": "An expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes the block train causes water to collect around a perfectly sound roof. The building many...",
+            "t03-g032-passage-retry-10.0-1": "An expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes a block train causes water to collect around a perfectly sound roof. The building many years ago.",
+            "t03-g032-passage-retry-29.2-0.85": "Certainly. I'll use the service staircase, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you want.",
+            "t03-g032-passage-retry-29.2-1.15": "Certainly. I'll use the service tank case, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you want.",
+            "t03-g032-passage-retry-29.2-1": "Certainly. I'll use the service staircase, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you need."
+          }
+        },
+        {
+          "mode": "practice",
+          "path": "audio/azure-v1/test-03-12.mp3",
+          "start": 0.5,
+          "end": 47.54,
+          "assetSha256": "75ebb83dacc7b205c938d9c89ce7fe15821c996c9356467c102f33e8231d2daf",
+          "speech": "Thanks for coming out so quickly. The stain above our reception desk appeared after last night's rain. We are opening a second office next month, so an expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes a blocked rain causes water to collect around a perfectly sound roof. The building manager mentioned leaves in the gutters. Can you get upstairs while our clients are arriving? Certainly. I'll use the service staircase, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you find. I'll need to show the manager why the work was necessary.",
+          "retries": {
+            "t03-g032-passage-retry-10.0-0.85": "An expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes a block train causes water to collect around a perfectly sound roof. The building many...",
+            "t03-g032-passage-retry-10.0-1.15": "An expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes the block train causes water to collect around a perfectly sound roof. The building many...",
+            "t03-g032-passage-retry-10.0-1": "An expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes a block train causes water to collect around a perfectly sound roof. The building many years ago.",
+            "t03-g032-passage-retry-29.2-0.85": "Certainly. I'll use the service staircase, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you want.",
+            "t03-g032-passage-retry-29.2-1.15": "Certainly. I'll use the service tank case, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you want.",
+            "t03-g032-passage-retry-29.2-1": "Certainly. I'll use the service staircase, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you need."
+          }
+        },
+        {
+          "mode": "question",
+          "path": "audio/formal/test-03-cues-01.mp3",
+          "start": 46.21162,
+          "end": 49.41887,
+          "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+          "speech": "Number 33. Why does the woman say that's a relief?"
+        }
+      ],
+      "zhCorrections": [
+        {
+          "path": "options.C.zh",
+          "old": "可能不必昂貴地更換屋頂。",
+          "new": "可能不必花大錢換屋頂。"
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "id": "t03-q034",
+      "groupId": "t03-g032",
+      "blindAnswer": "A",
+      "status": "hold",
+      "reason": "A: explicitly asks for photographic evidence for the manager; no desk move or preparation of new office; technician takes the service stair, not the lobby.",
+      "audioReview": "Dialogue full decode heard blocked rain and cleaning the train for drain. Focused 0.85/1.00/1.15× retries hear block train and cleaning the train; independent word evidence remains missing, and practice uses identical asset. Cues, rain stain, roof check, budget and photographic request all agree. No audio defect established.",
+      "audio": [
+        {
+          "mode": "cue",
+          "path": "audio/formal/test-03-cues-01.mp3",
+          "start": 38.89229,
+          "end": 42.78983,
+          "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+          "speech": "Questions 32 through 34. Listen to the conversation."
+        },
+        {
+          "mode": "passage",
+          "path": "audio/azure-v1/test-03-12.mp3",
+          "start": 0.5,
+          "end": 47.54,
+          "assetSha256": "75ebb83dacc7b205c938d9c89ce7fe15821c996c9356467c102f33e8231d2daf",
+          "speech": "Thanks for coming out so quickly. The stain above our reception desk appeared after last night's rain. We are opening a second office next month, so an expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes a blocked rain causes water to collect around a perfectly sound roof. The building manager mentioned leaves in the gutters. Can you get upstairs while our clients are arriving? Certainly. I'll use the service staircase, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you find. I'll need to show the manager why the work was necessary.",
+          "retries": {
+            "t03-g032-passage-retry-10.0-0.85": "An expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes a block train causes water to collect around a perfectly sound roof. The building many...",
+            "t03-g032-passage-retry-10.0-1.15": "An expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes the block train causes water to collect around a perfectly sound roof. The building many...",
+            "t03-g032-passage-retry-10.0-1": "An expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes a block train causes water to collect around a perfectly sound roof. The building many years ago.",
+            "t03-g032-passage-retry-29.2-0.85": "Certainly. I'll use the service staircase, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you want.",
+            "t03-g032-passage-retry-29.2-1.15": "Certainly. I'll use the service tank case, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you want.",
+            "t03-g032-passage-retry-29.2-1": "Certainly. I'll use the service staircase, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you need."
+          }
+        },
+        {
+          "mode": "practice",
+          "path": "audio/azure-v1/test-03-12.mp3",
+          "start": 0.5,
+          "end": 47.54,
+          "assetSha256": "75ebb83dacc7b205c938d9c89ce7fe15821c996c9356467c102f33e8231d2daf",
+          "speech": "Thanks for coming out so quickly. The stain above our reception desk appeared after last night's rain. We are opening a second office next month, so an expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes a blocked rain causes water to collect around a perfectly sound roof. The building manager mentioned leaves in the gutters. Can you get upstairs while our clients are arriving? Certainly. I'll use the service staircase, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you find. I'll need to show the manager why the work was necessary.",
+          "retries": {
+            "t03-g032-passage-retry-10.0-0.85": "An expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes a block train causes water to collect around a perfectly sound roof. The building many...",
+            "t03-g032-passage-retry-10.0-1.15": "An expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes the block train causes water to collect around a perfectly sound roof. The building many...",
+            "t03-g032-passage-retry-10.0-1": "An expensive repair here would be difficult. Let me check the roof before we discuss replacing anything. Sometimes a block train causes water to collect around a perfectly sound roof. The building many years ago.",
+            "t03-g032-passage-retry-29.2-0.85": "Certainly. I'll use the service staircase, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you want.",
+            "t03-g032-passage-retry-29.2-1.15": "Certainly. I'll use the service tank case, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you want.",
+            "t03-g032-passage-retry-29.2-1": "Certainly. I'll use the service staircase, not the lobby. If cleaning the train solves the problem, you won't need a new roof. That's a relief. Please photograph whatever you need."
+          }
+        },
+        {
+          "mode": "question",
+          "path": "audio/formal/test-03-cues-01.mp3",
+          "start": 49.66887,
+          "end": 52.78704,
+          "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+          "speech": "Number 34. What does the woman ask the man to do?"
+        }
+      ]
+    }
+  ]
+}

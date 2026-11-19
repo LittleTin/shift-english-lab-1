@@ -1,0 +1,203 @@
+{
+  "status": "pending-audio-confirmation-not-verified",
+  "items": [
+    {
+      "number": 11,
+      "id": "t03-q011",
+      "groupId": "t03-g011",
+      "blindAnswer": "B",
+      "reason": "B: the existing two-o’clock booking answers the extension request indirectly; A only locates the room and C only comments on the conference.",
+      "status": "hold",
+      "audioReview": "Formal B yields ‘has it booked it too’; 0.85/1.00x isolated retries same, 1.15x ‘booked a 2’. Practice B clearly yields ‘booked at 2’. Formal reduced preposition not yet independently resolved; exact timing remains meaningful. No recording defect asserted.",
+      "audio": [
+        {
+          "mode": "cue",
+          "path": "audio/formal/test-03-cues-01.mp3",
+          "start": 11.11983,
+          "end": 12.06871,
+          "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+          "speech": "Number 11.",
+          "continuousCueEvidence": {
+            "start": 11.11983,
+            "end": 23.47275,
+            "speech": "Number 11, number 12, number 13, number 14, number 15, number 16, number 17, number 18, number 19, number 20."
+          }
+        },
+        {
+          "mode": "passage",
+          "path": "audio/formal-v2/test-03-04.mp3",
+          "start": 16.552,
+          "end": 32.944,
+          "assetSha256": "ccc4f69355ad9910e235e518c1c1d676daaa8c97172468421cdc046e984a5b95",
+          "speech": "Could we keep the conference room for another hour? A. It is on the fourth floor. B. A sales team has it booked it too. C. I enjoyed the conference.",
+          "retries": {
+            "011-passage-retry-0.85": "b) A sales team has it booked it too [BLANK_AUDIO]",
+            "011-passage-retry-1.15": "B. A sales team has it booked a 2.",
+            "011-passage-retry-1": "b) A sales team has it booked it too [BLANK_AUDIO]"
+          }
+        },
+        {
+          "mode": "practice",
+          "path": "audio/azure-v1/test-03-04.mp3",
+          "start": 17.44,
+          "end": 34.792,
+          "assetSha256": "4356353a4d4a32e341d747574f7913823dd3389332e64ca344f1603b70d5e065",
+          "speech": "Could we keep the conference room for another hour? A. It is on the fourth floor. B. A sales team has it booked at 2. C. I enjoyed the conference."
+        }
+      ],
+      "requiredZhPolish": {
+        "option": "B",
+        "old": "銷售團隊兩點已經預訂了。",
+        "new": "有個業務團隊已預訂兩點使用這間會議室。",
+        "updateTogether": [
+          "question.options.zh",
+          "group.passageZh"
+        ]
+      }
+    },
+    {
+      "number": 17,
+      "id": "t03-q017",
+      "groupId": "t03-g017",
+      "blindAnswer": "C",
+      "reason": "C: Elena will replace the speaker as meeting lead; A gives room capacity and B describes how large the client is.",
+      "status": "hold",
+      "audioReview": "Formal passage aligns. In practice raw transcript, ‘sits’ instead of ‘seats’ and ‘Talena’ instead of ‘Elena’; alternatives and sound ambiguity checked. Exact practice pronunciation is not yet established. No recording defect asserted.",
+      "audio": [
+        {
+          "mode": "cue",
+          "path": "audio/formal/test-03-cues-01.mp3",
+          "start": 18.63175,
+          "end": 19.7295,
+          "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+          "speech": "Number 17.",
+          "continuousCueEvidence": {
+            "start": 11.11983,
+            "end": 23.47275,
+            "speech": "Number 11, number 12, number 13, number 14, number 15, number 16, number 17, number 18, number 19, number 20."
+          }
+        },
+        {
+          "mode": "passage",
+          "path": "audio/formal-v2/test-03-06.mp3",
+          "start": 18.64,
+          "end": 36.304,
+          "assetSha256": "eeeabe98e86e44f0c9eb8c8c80315e2417ea573351fd4064b73595ccd67bf6d7",
+          "speech": "You are leading the client meeting, are you not? A. The meeting room seats 12. B. They are our largest client. C. Actually, Elena will be taking my place."
+        },
+        {
+          "mode": "practice",
+          "path": "audio/azure-v1/test-03-06.mp3",
+          "start": 17.944,
+          "end": 35.32,
+          "assetSha256": "00789143d5747f6c8f9dd5f8ff692997e5b4ca3095743e233e607e3a96122699",
+          "speech": "You are leading the client meeting, are you not? A. The meeting room sits 12. B. They are our largest client. C. Actually, Talena will be taking my place.",
+          "retries": {
+            "017-practice-retry-0.85": "You are leading the client meeting, are you not? A. The meeting room sits twelve. B. They are our largest client. C. Actually, Phalena will be taking my place.",
+            "017-practice-retry-final-0.85": "See, actually, TALENA will be taking my place. [BLANK_AUDIO]",
+            "017-practice-retry-final-1": "See, actually Talena will be taking my place. You"
+          }
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "id": "t03-q019",
+      "groupId": "t03-g019",
+      "blindAnswer": "A",
+      "reason": "A: the technician expects the lift back in service before five; B locates the speaker’s workplace and C gives lift capacity.",
+      "status": "hold",
+      "audioReview": "Both modes' resampled full-clip WAVs are byte-identical (SHA-256 01e6469b96884fb35e2519dafd3576da04a977dd81522eb74def92745360c1c7). Both say ‘left’ according to this ASR; three isolated formal rates also return ‘left’. All responses match, but the noun is not corroborated. No recording defect established.",
+      "audio": [
+        {
+          "mode": "cue",
+          "path": "audio/formal/test-03-cues-01.mp3",
+          "start": 21.20508,
+          "end": 22.25483,
+          "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+          "speech": "Number 19.",
+          "continuousCueEvidence": {
+            "start": 11.11983,
+            "end": 23.47275,
+            "speech": "Number 11, number 12, number 13, number 14, number 15, number 16, number 17, number 18, number 19, number 20."
+          }
+        },
+        {
+          "mode": "passage",
+          "path": "audio/formal-v2/test-03-07.mp3",
+          "start": 0.5,
+          "end": 17.084,
+          "assetSha256": "562475e7b5ac748b67203d1b3be40ecdfbc689adb8b54f49e6f29a460665f7b2",
+          "speech": "When do you expect the left to be working again? A. The technician said before five. B. I work on the top floor. C. It carries up to eight people.",
+          "retries": {
+            "019-passage-retry-0.85": "When do you expect the left to be working again? A",
+            "019-passage-retry-1.15": "When do you expect the left to be working again?",
+            "019-passage-retry-1": "When do you expect the left to be working again?"
+          }
+        },
+        {
+          "mode": "practice",
+          "path": "audio/azure-v1/test-03-07.mp3",
+          "start": 0.5,
+          "end": 17.084,
+          "assetSha256": "42e4260cf430886f15c784570a175290a7c7de7444b92ba80e561a72afa9f173",
+          "speech": "When do you expect the left to be working again? A. The technician said before five. B. I work on the top floor. C. It carries up to eight people."
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "id": "t03-q020",
+      "groupId": "t03-g020",
+      "blindAnswer": "C",
+      "reason": "C: agreement conditional on returning by one directly responds to the lunch discussion proposal; A mentions a menu and B gives service hours.",
+      "status": "hold",
+      "audioReview": "Formal B raw ‘service lunch’; isolated retries ‘surf’s’ or ‘search’ for serves. Practice clearly reads ‘serves’ and both modes’ C returns by one. Formal pronunciation remains unresolved; no recording defect established.",
+      "audio": [
+        {
+          "mode": "cue",
+          "path": "audio/formal/test-03-cues-01.mp3",
+          "start": 22.50483,
+          "end": 23.47275,
+          "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+          "speech": "20.",
+          "continuousCueEvidence": {
+            "start": 11.11983,
+            "end": 23.47275,
+            "speech": "Number 11, number 12, number 13, number 14, number 15, number 16, number 17, number 18, number 19, number 20."
+          }
+        },
+        {
+          "mode": "passage",
+          "path": "audio/formal-v2/test-03-07.mp3",
+          "start": 17.584,
+          "end": 35.56,
+          "assetSha256": "562475e7b5ac748b67203d1b3be40ecdfbc689adb8b54f49e6f29a460665f7b2",
+          "speech": "Why do we not discuss the proposal over lunch? A. A lunch menu is included. B. The cafeteria service lunch until 2. C. That works, provided we are back by 1.",
+          "retries": {
+            "020-passage-retry-0.85": "b. The cafeteria surf's lunch until 2. c.",
+            "020-passage-retry-1.15": "b. The cafeteria's search lunch until 2. c.",
+            "020-passage-retry-1": "b. The cafeteria's search lunch until 2. c."
+          }
+        },
+        {
+          "mode": "practice",
+          "path": "audio/azure-v1/test-03-07.mp3",
+          "start": 17.584,
+          "end": 33.856,
+          "assetSha256": "42e4260cf430886f15c784570a175290a7c7de7444b92ba80e561a72afa9f173",
+          "speech": "Why do we not discuss the proposal over lunch? A. A lunch menu is included. B. The cafeteria serves lunch until 2. C. That works, provided we are back by one."
+        }
+      ],
+      "requiredZhPolish": {
+        "option": "C",
+        "old": "可以，只要我們一點前回來。",
+        "new": "可以，只要我們最晚一點回來。",
+        "updateTogether": [
+          "question.options.zh",
+          "group.passageZh"
+        ]
+      }
+    }
+  ]
+}
