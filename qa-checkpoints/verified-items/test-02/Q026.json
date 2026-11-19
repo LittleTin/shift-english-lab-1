@@ -1,0 +1,115 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "A checks table availability before committing to the proposed changed time; B concerns a table’s material and C the literal meaning of move. Blind answer matched. All zh-TW text and option rationales reviewed; actual audio transcribed offline against exact ranges. Not runtime/browser testing.",
+  "activeQuestion": {
+    "id": "t02-q026",
+    "testId": "test-02",
+    "number": 26,
+    "part": 2,
+    "groupId": "t02-g026",
+    "topic": "daily",
+    "difficulty": "foundation",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "Let me check whether a table is available.",
+        "zh": "讓我確認是否還有空桌。",
+        "whyZh": "更改訂位需要確認該時段的空位，符合服務情境。"
+      },
+      {
+        "id": "B",
+        "text": "The table is made of wood.",
+        "zh": "桌子是木製的。",
+        "whyZh": "材質與訂位時間調整無關。"
+      },
+      {
+        "id": "C",
+        "text": "I moved here last year.",
+        "zh": "我去年搬來這裡。",
+        "whyZh": "move a reservation 指改時間，不是搬家。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "更改訂位需要確認該時段的空位，符合服務情境。",
+    "evidence": "Could we move our reservation to seven thirty?",
+    "vocabulary": [
+      {
+        "term": "reservation",
+        "zh": "預約；訂位",
+        "note": "本題指餐廳的桌位預約。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g026",
+    "testId": "test-02",
+    "part": 2,
+    "title": "Table reservation",
+    "titleZh": "餐廳訂位",
+    "topic": "daily",
+    "passage": "Could we move our reservation to seven thirty?\nA. Let me check whether a table is available.\nB. The table is made of wood.\nC. I moved here last year.",
+    "passageZh": "我們能把訂位改到七點半嗎？\nA. 讓我確認是否還有空桌。\nB. 桌子是木製的。\nC. 我去年搬來這裡。",
+    "audioScript": "Could we move our reservation to seven thirty?\nA. Let me check whether a table is available.\nB. The table is made of wood.\nC. I moved here last year.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Could we move our reservation to seven thirty?"
+      },
+      {
+        "voice": "female",
+        "text": "A. Let me check whether a table is available. B. The table is made of wood. C. I moved here last year."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-09.mp3",
+    "duration": 16.584,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-CA",
+        "role": "male",
+        "modelVoice": "en-CA-LiamNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-CA",
+        "role": "female",
+        "modelVoice": "en-CA-ClaraNeural"
+      }
+    ],
+    "audioStart": 15.568,
+    "audioEnd": 32.152
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "start": 30.75158,
+      "end": 31.93379,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "No. 26"
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-02-09.mp3",
+      "start": 17.776,
+      "end": 34.36,
+      "assetSha256": "7d5e1ad5865af07862d094713fd460948b65b3b35a71f63af0075f2d5e28959c",
+      "speech": "Could we move our reservation to 730?\n A. Let me check whether a table is available.\n B. The table is made of wood.\n C. I moved here last year."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-02-09.mp3",
+      "start": 15.568,
+      "end": 32.152,
+      "assetSha256": "d307280b603c03190d7c585982915fc4507df752f199cda54406966552f96f1e",
+      "speech": "Could we move our reservation to 730?\n A. Let me check whether a table is available.\n B. The table is made of wood.\n C. I moved here last year."
+    }
+  ]
+}

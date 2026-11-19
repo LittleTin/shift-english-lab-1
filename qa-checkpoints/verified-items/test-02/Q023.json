@@ -1,0 +1,115 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "C chooses tomorrow and gives unfinished testing as reason; A echoes prototype but cannot answer an either/or time request, B concerns the address, not return time. Blind answer matched. All zh-TW text and option rationales reviewed; actual audio transcribed offline against exact ranges. Not runtime/browser testing.",
+  "activeQuestion": {
+    "id": "t02-q023",
+    "testId": "test-02",
+    "number": 23,
+    "part": 2,
+    "groupId": "t02-g023",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes, it is a prototype.",
+        "zh": "是的，它是樣機。",
+        "whyZh": "這是選擇問句，單純確認物品種類無法回答歸還時間。"
+      },
+      {
+        "id": "B",
+        "text": "The return address is correct.",
+        "zh": "回郵地址是正確的。",
+        "whyZh": "問題問歸還日期，不是回郵地址。"
+      },
+      {
+        "id": "C",
+        "text": "Tomorrow is fine; testing is not finished yet.",
+        "zh": "明天可以；測試還沒完成。",
+        "whyZh": "選定明天並說明測試尚未結束，回應兩個時間選項。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "選定明天並說明測試尚未結束，回應兩個時間選項。",
+    "evidence": "Should I return the prototype today or tomorrow?",
+    "vocabulary": [
+      {
+        "term": "prototype",
+        "zh": "原型；樣機",
+        "note": "正式量產前，用來驗證設計或功能的樣品。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g023",
+    "testId": "test-02",
+    "part": 2,
+    "title": "Prototype return",
+    "titleZh": "樣機歸還",
+    "topic": "technology",
+    "passage": "Should I return the prototype today or tomorrow?\nA. Yes, it is a prototype.\nB. The return address is correct.\nC. Tomorrow is fine; testing is not finished yet.",
+    "passageZh": "我該今天還是明天歸還樣機？\nA. 是的，它是樣機。\nB. 回郵地址是正確的。\nC. 明天可以；測試還沒完成。",
+    "audioScript": "Should I return the prototype today or tomorrow?\nA. Yes, it is a prototype.\nB. The return address is correct.\nC. Tomorrow is fine; testing is not finished yet.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Should I return the prototype today or tomorrow?"
+      },
+      {
+        "voice": "female",
+        "text": "A. Yes, it is a prototype. B. The return address is correct. C. Tomorrow is fine; testing is not finished yet."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-08.mp3",
+    "duration": 18.384,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-ZA",
+        "role": "male",
+        "modelVoice": "en-ZA-LukeNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-ZA",
+        "role": "female",
+        "modelVoice": "en-ZA-LeahNeural"
+      }
+    ],
+    "audioStart": 18.544,
+    "audioEnd": 36.928
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "start": 26.44542,
+      "end": 27.63458,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "Number 23."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-02-08.mp3",
+      "start": 18.4,
+      "end": 36.256,
+      "assetSha256": "ad1303499752f5bd4f9bdfb48c155e432ea2b83c3741ad7e378820cdb5c6a62e",
+      "speech": "Should I return the prototype today or tomorrow? A. Yes, it is a prototype. B. The return address is correct. C. Tomorrow is fine, testing is not finished yet."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-02-08.mp3",
+      "start": 18.544,
+      "end": 36.928,
+      "assetSha256": "4eb13d16f28be215f8f99a9ef44624559deb25e0518f97e451148fbdb659bc72",
+      "speech": "Should I return the prototype today or tomorrow? A. Yes, it is a prototype. B. The return address is correct. C. Tomorrow is fine, testing is not finished yet."
+    }
+  ]
+}

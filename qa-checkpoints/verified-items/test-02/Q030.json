@@ -1,0 +1,115 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "B confirms renewal and states the condition regarding another reader’s reservation. Publication date and shelf location do not answer. Blind answer matched. All zh-TW text and option rationales reviewed; actual audio transcribed offline against exact ranges. Not runtime/browser testing.",
+  "activeQuestion": {
+    "id": "t02-q030",
+    "testId": "test-02",
+    "number": 30,
+    "part": 2,
+    "groupId": "t02-g030",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "It is a newly published book.",
+        "zh": "這是新出版的書。",
+        "whyZh": "出版時間不能回答續借方式。"
+      },
+      {
+        "id": "B",
+        "text": "Yes, unless another reader has reserved it.",
+        "zh": "可以，除非有其他讀者預約。",
+        "whyZh": "確認可線上續借，並說明例外條件。"
+      },
+      {
+        "id": "C",
+        "text": "The bookshelf is upstairs.",
+        "zh": "書架在樓上。",
+        "whyZh": "書架位置與線上續借無關。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "確認可線上續借，並說明例外條件。",
+    "evidence": "Can I renew this book online?",
+    "vocabulary": [
+      {
+        "term": "renew",
+        "zh": "續借；續期",
+        "note": "圖書館情境指延長借閱期限。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g030",
+    "testId": "test-02",
+    "part": 2,
+    "title": "Library extension",
+    "titleZh": "圖書館續借",
+    "topic": "daily",
+    "passage": "Can I renew this book online?\nA. It is a newly published book.\nB. Yes, unless another reader has reserved it.\nC. The bookshelf is upstairs.",
+    "passageZh": "我可以在線上續借這本書嗎？\nA. 這是新出版的書。\nB. 可以，除非有其他讀者預約。\nC. 書架在樓上。",
+    "audioScript": "Can I renew this book online?\nA. It is a newly published book.\nB. Yes, unless another reader has reserved it.\nC. The bookshelf is upstairs.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Can I renew this book online?"
+      },
+      {
+        "voice": "female",
+        "text": "A. It is a newly published book. B. Yes, unless another reader has reserved it. C. The bookshelf is upstairs."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-10.mp3",
+    "duration": 18.096,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-SG",
+        "role": "male",
+        "modelVoice": "en-SG-WayneNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-SG",
+        "role": "female",
+        "modelVoice": "en-SG-LunaNeural"
+      }
+    ],
+    "audioStart": 38.1,
+    "audioEnd": 56.196
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "start": 36.41079,
+      "end": 37.30179,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "Number 30."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-02-10.mp3",
+      "start": 35.508,
+      "end": 51.996,
+      "assetSha256": "383c387a8bda12a0357e6a16b0ef0bdc12e3f94c2a430fc95f4cf121a977b03a",
+      "speech": "Can I renew this book online?\n A. It is a newly published book.\n B. Yes, unless another reader has reserved it.\n C. The bookshelf is upstairs."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-02-10.mp3",
+      "start": 38.1,
+      "end": 56.196,
+      "assetSha256": "7f65e84264b6d7c5c2a721fd887d9cae9c5f4c762e39e8199d0de54c1cd44664",
+      "speech": "Can I renew this book online?\n A. It is a newly published book.\n B. Yes, unless another reader has reserved it.\n C. The bookshelf is upstairs."
+    }
+  ]
+}

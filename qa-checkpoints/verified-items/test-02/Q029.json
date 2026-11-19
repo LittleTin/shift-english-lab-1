@@ -1,0 +1,115 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "B’s Not at all grants permission and provides charger location. A is a different sense of charge; C is an exaggerated but unique word echo on moment, not a permission response. Blind answer matched. All zh-TW text and option rationales reviewed; actual audio transcribed offline against exact ranges. Not runtime/browser testing.",
+  "activeQuestion": {
+    "id": "t02-q029",
+    "testId": "test-02",
+    "number": 29,
+    "part": 2,
+    "groupId": "t02-g029",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "I charged the customer yesterday.",
+        "zh": "我昨天向客戶收費。",
+        "whyZh": "charger 指充電器，與向客戶收費無關。"
+      },
+      {
+        "id": "B",
+        "text": "Not at all; it is in my bag.",
+        "zh": "完全不介意；它在我的包包裡。",
+        "whyZh": "Do you mind 詢問是否介意；Not at all 表示允許借用。"
+      },
+      {
+        "id": "C",
+        "text": "The moment lasted three hours.",
+        "zh": "那一刻持續了三小時。",
+        "whyZh": "沒有回應是否可以借用充電器。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "Do you mind 詢問是否介意；Not at all 表示允許借用。",
+    "evidence": "Do you mind if I borrow your charger for a moment?",
+    "vocabulary": [
+      {
+        "term": "Do you mind if ...?",
+        "zh": "你介意我……嗎？",
+        "note": "禮貌徵求同意；Not at all 表示不介意。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g029",
+    "testId": "test-02",
+    "part": 2,
+    "title": "Borrowing a charger",
+    "titleZh": "借用充電器",
+    "topic": "daily",
+    "passage": "Do you mind if I borrow your charger for a moment?\nA. I charged the customer yesterday.\nB. Not at all; it is in my bag.\nC. The moment lasted three hours.",
+    "passageZh": "你介意我借用一下你的充電器嗎？\nA. 我昨天向客戶收費。\nB. 完全不介意；它在我的包包裡。\nC. 那一刻持續了三小時。",
+    "audioScript": "Do you mind if I borrow your charger for a moment?\nA. I charged the customer yesterday.\nB. Not at all; it is in my bag.\nC. The moment lasted three hours.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Do you mind if I borrow your charger for a moment?"
+      },
+      {
+        "voice": "female",
+        "text": "A. I charged the customer yesterday. B. Not at all; it is in my bag. C. The moment lasted three hours."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-10.mp3",
+    "duration": 18.096,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-HK",
+        "role": "male",
+        "modelVoice": "en-HK-SamNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-HK",
+        "role": "female",
+        "modelVoice": "en-HK-YanNeural"
+      }
+    ],
+    "audioStart": 19.504,
+    "audioEnd": 37.6
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "start": 35.02158,
+      "end": 36.16079,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "Number 29."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-02-10.mp3",
+      "start": 17.92,
+      "end": 35.008,
+      "assetSha256": "383c387a8bda12a0357e6a16b0ef0bdc12e3f94c2a430fc95f4cf121a977b03a",
+      "speech": "Do you mind if I borrow your charger for a moment?\n A. I charged the customer yesterday.\n B. Not at all, it is in my bag.\n C. The moment lasted three hours."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-02-10.mp3",
+      "start": 19.504,
+      "end": 37.6,
+      "assetSha256": "7f65e84264b6d7c5c2a721fd887d9cae9c5f4c762e39e8199d0de54c1cd44664",
+      "speech": "Do you mind if I borrow your charger for a moment?\n A. I charged the customer yesterday.\n B. Not at all, it is in my bag.\n C. The moment lasted three hours."
+    }
+  ]
+}

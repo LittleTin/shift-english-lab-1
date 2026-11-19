@@ -1,0 +1,115 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "B names platform six and gives crossing directions; airport busyness and leaving a bag at home do not answer which platform. Blind answer matched. All zh-TW text and option rationales reviewed; actual audio transcribed offline against exact ranges. Not runtime/browser testing.",
+  "activeQuestion": {
+    "id": "t02-q028",
+    "testId": "test-02",
+    "number": 28,
+    "part": 2,
+    "groupId": "t02-g028",
+    "topic": "daily",
+    "difficulty": "foundation",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "The airport is very busy.",
+        "zh": "機場很忙碌。",
+        "whyZh": "機場繁忙程度沒有回答列車月台。"
+      },
+      {
+        "id": "B",
+        "text": "Platform six, across the footbridge.",
+        "zh": "六號月台，在人行天橋另一邊。",
+        "whyZh": "提供月台號碼及方向，直接回答問題。"
+      },
+      {
+        "id": "C",
+        "text": "I left my bag at home.",
+        "zh": "我把包包忘在家裡。",
+        "whyZh": "leave from 指從某處發車，並非遺留物品。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "提供月台號碼及方向，直接回答問題。",
+    "evidence": "Which platform does the airport train leave from?",
+    "vocabulary": [
+      {
+        "term": "platform",
+        "zh": "月台",
+        "note": "搭乘列車時等待與上下車的區域。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g028",
+    "testId": "test-02",
+    "part": 2,
+    "title": "Train platform",
+    "titleZh": "列車月台",
+    "topic": "daily",
+    "passage": "Which platform does the airport train leave from?\nA. The airport is very busy.\nB. Platform six, across the footbridge.\nC. I left my bag at home.",
+    "passageZh": "機場列車從哪個月台發車？\nA. 機場很忙碌。\nB. 六號月台，在人行天橋另一邊。\nC. 我把包包忘在家裡。",
+    "audioScript": "Which platform does the airport train leave from?\nA. The airport is very busy.\nB. Platform six, across the footbridge.\nC. I left my bag at home.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Which platform does the airport train leave from?"
+      },
+      {
+        "voice": "female",
+        "text": "A. The airport is very busy. B. Platform six, across the footbridge. C. I left my bag at home."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-10.mp3",
+    "duration": 18.504,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-IN",
+        "role": "male",
+        "modelVoice": "en-IN-PrabhatNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-IN",
+        "role": "female",
+        "modelVoice": "en-IN-NeerjaNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 19.004
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "start": 33.64988,
+      "end": 34.77158,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "Number 28."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-02-10.mp3",
+      "start": 0.5,
+      "end": 17.42,
+      "assetSha256": "383c387a8bda12a0357e6a16b0ef0bdc12e3f94c2a430fc95f4cf121a977b03a",
+      "speech": "Which platform does the airport train leave from?\n A. The airport is very busy.\n B. Platform 6 across the footbridge.\n C. I left my bag at home."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-02-10.mp3",
+      "start": 0.5,
+      "end": 19.004,
+      "assetSha256": "7f65e84264b6d7c5c2a721fd887d9cae9c5f4c762e39e8199d0de54c1cd44664",
+      "speech": "Which platform does the airport train leave from?\n A. The airport is very busy.\n B. Platform 6 across the footbridge.\n C. I left my bag at home."
+    }
+  ]
+}

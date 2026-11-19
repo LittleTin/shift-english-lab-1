@@ -1,0 +1,116 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "A provides a time from the front desk; B plays on a different sense of check, C states an irrelevant facility. Blind answer matched. All zh-TW text and option rationales reviewed; actual audio transcribed offline against exact ranges. Not runtime/browser testing.",
+  "activeQuestion": {
+    "id": "t02-q024",
+    "testId": "test-02",
+    "number": 24,
+    "part": 2,
+    "groupId": "t02-g024",
+    "topic": "daily",
+    "difficulty": "foundation",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "The front desk said after three.",
+        "zh": "櫃檯說三點以後。",
+        "whyZh": "What time 問可以入住的時間；after three 表示三點過後可以辦理入住。"
+      },
+      {
+        "id": "B",
+        "text": "I checked the spelling.",
+        "zh": "我檢查過拼字。",
+        "whyZh": "check in 是辦理入住，與檢查拼字不同。"
+      },
+      {
+        "id": "C",
+        "text": "The hotel has a swimming pool.",
+        "zh": "飯店有游泳池。",
+        "whyZh": "設施資訊無法回答入住時間。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "What time 問可以入住的時間；after three 表示三點過後可以辦理入住。",
+    "evidence": "What time can we check in at the hotel?",
+    "vocabulary": [
+      {
+        "term": "check in",
+        "zh": "辦理入住；報到",
+        "note": "飯店情境指辦理入住手續。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g024",
+    "testId": "test-02",
+    "part": 2,
+    "title": "Hotel check-in",
+    "titleZh": "飯店入住",
+    "topic": "daily",
+    "passage": "What time can we check in at the hotel?\nA. The front desk said after three.\nB. I checked the spelling.\nC. The hotel has a swimming pool.",
+    "passageZh": "我們幾點可以辦理飯店入住？\nA. 櫃檯說三點以後。\nB. 我檢查過拼字。\nC. 飯店有游泳池。",
+    "audioScript": "What time can we check in at the hotel?\nA. The front desk said after three.\nB. I checked the spelling.\nC. The hotel has a swimming pool.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "What time can we check in at the hotel?"
+      },
+      {
+        "voice": "female",
+        "text": "A. The front desk said after three. B. I checked the spelling. C. The hotel has a swimming pool."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-08.mp3",
+    "duration": 15.936,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-US",
+        "role": "male",
+        "modelVoice": "en-US-GuyNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-US",
+        "role": "female",
+        "modelVoice": "en-US-JennyNeural"
+      }
+    ],
+    "audioStart": 37.428,
+    "audioEnd": 53.364
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "start": 27.88458,
+      "end": 29.06821,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "Number 24."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-02-08.mp3",
+      "start": 36.756,
+      "end": 52.692,
+      "assetSha256": "ad1303499752f5bd4f9bdfb48c155e432ea2b83c3741ad7e378820cdb5c6a62e",
+      "speech": "What time can we check in at the hotel?\n A. The front desk said after 3.\n B. I checked the spelling.\n C. The hotel has a swimming pool."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-02-08.mp3",
+      "start": 37.428,
+      "end": 53.364,
+      "assetSha256": "4eb13d16f28be215f8f99a9ef44624559deb25e0518f97e451148fbdb659bc72",
+      "speech": "What time can we check in at the hotel?\n A. The front desk said after 3.\n B. I checked the spelling.\n C. The hotel has a swimming pool.",
+      "sameExtractedPCMAsFormal": true
+    }
+  ]
+}
