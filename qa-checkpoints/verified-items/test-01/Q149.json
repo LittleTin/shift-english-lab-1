@@ -1,8 +1,70 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "The date required at the plant is September 12, not the September 18 pilot date or the other unsupported dates. Chinese passage now clearly treats September 12 as inclusive.",
+  "checks": "Combines the claim-ticket rule and earlier collection-desk cutoff to choose a viable time for an item that is already ready. Independently blind-solved and Traditional Chinese, choices, shared passage and non-spoiling sibling clues rechecked. Original remains immutable under question-reserve and separate historical snapshots.",
   "activeQuestion": {
+    "id": "t01-q149-r2",
+    "testId": "test-01",
+    "number": 149,
+    "part": 7,
+    "groupId": "t01-r-p7-01-r2",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "reading-comprehension"
+    ],
+    "prompt": "Dana has to leave before the repair is finished. The volunteer confirms the item will be ready by 3 p.m. Which arrangement will allow Dana's friend to collect it?",
+    "promptZh": "Dana 得在衣物修好前離開。志工確認最遲下午三點會修好。哪個安排能讓 Dana 的朋友代領衣物？",
+    "options": [
+      {
+        "text": "Give the friend the original claim ticket and have them arrive at 3:30 p.m.",
+        "zh": "把領取憑單正本交給朋友，請朋友下午三點半到。",
+        "whyZh": "三點半時衣物已修好，領取櫃檯仍開放；朋友也有代領所需的憑單正本。",
+        "id": "A"
+      },
+      {
+        "text": "Send the friend a photo of the ticket and have them arrive at 3:30 p.m.",
+        "zh": "把憑單照片傳給朋友，請朋友下午三點半到。",
+        "whyZh": "到達時間符合，但櫃檯不接受憑單照片；代領人須帶正本。",
+        "id": "B"
+      },
+      {
+        "text": "Give the friend the original ticket and have them arrive at 5 p.m.",
+        "zh": "把憑單正本交給朋友，請朋友下午五點到。",
+        "whyZh": "憑單正本有效，但領取櫃檯下午四點就關閉，即使圖書館本身仍開著也不能領取。",
+        "id": "C"
+      },
+      {
+        "text": "Have the friend arrive at 3:30 p.m. with only the number from the ticket.",
+        "zh": "請朋友下午三點半到，只提供憑單上的編號。",
+        "whyZh": "到達時間符合，但編號不能替代憑單正本。",
+        "id": "D"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "三點半時衣物已修好，領取櫃檯仍開放；朋友也有代領所需的憑單正本。",
+    "evidence": "Original physical ticket for proxy pickup; scenario ready by 3 p.m.; collection desk closes 4 p.m., not 6 p.m.",
+    "vocabulary": [
+      {
+        "term": "claim ticket",
+        "zh": "領取憑單",
+        "note": "憑單正本可用於領回先前留下的物品。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t01-r-p7-01-r2",
+    "testId": "test-01",
+    "part": 7,
+    "title": "Repair Day at Alder Library",
+    "titleZh": "阿爾德圖書館衣物修補日",
+    "topic": "daily",
+    "passage": "Repair Day at Alder Library\n\nOur volunteers can help with simple clothing repairs on Saturday. You must book a table session if you want a volunteer to sew your item. If you did not book, you can still join the drop-in line by the entrance. Volunteers at that desk will look at the damage and suggest what to do next, but they will not sew anything. Walk-in table sessions are available only if another visitor cancels.\n\nPlease bring your item clean and dry. We provide needles, basic thread and plain white buttons, but we do not stock decorative buttons. During a booked session, a volunteer can attach a button you bring if it fits the garment's buttonhole.\n\nIf your repair is not ready when you leave, the table volunteer will give you a numbered claim ticket. You may collect the item yourself or give the original ticket to someone who can pick it up for you. A photo of the ticket will not be accepted. The collection desk closes at 4 p.m. even though the library stays open until 6 p.m.",
+    "passageZh": "阿爾德圖書館衣物修補日\n\n星期六，志工可協助簡單修補衣物。若需要志工動手縫補，須預約修補桌時段。未預約的人仍可到入口排隊諮詢。志工會查看損壞情形並建議下一步，但不提供縫補服務。只有其他人取消預約時，才會開放現場預約修補桌。\n\n請帶來乾淨、乾燥的衣物。我們提供針、一般縫線和素白色鈕扣，但不提供裝飾鈕扣。預約時段內，如果自備的鈕扣能扣進衣物的扣眼，志工就能幫忙縫上。\n\n離開時如果衣物還沒修好，修補桌志工會給你一張有編號的領取憑單。你可以自行領取，也可將憑單正本交給他人代領。櫃檯不接受憑單照片。圖書館雖然開到下午六點，領取櫃檯仍在下午四點關閉。"
+  },
+  "originalQuestion": {
     "id": "t01-q149",
     "testId": "test-01",
     "number": 149,
@@ -59,14 +121,5 @@
     ],
     "revision": 1
   },
-  "group": {
-    "id": "t01-r-p7-01",
-    "testId": "test-01",
-    "part": 7,
-    "title": "A request for quotation",
-    "titleZh": "詢價信",
-    "topic": "manufacturing",
-    "passage": "To: Valley Components\nSubject: Quote for a pilot build\n\nWe need 240 locking connectors for a pilot build scheduled for September 18. Please quote both the unit price and freight to our Taoyuan plant. Your catalogue lists a minimum order of 500 pieces. Could you make an exception for this trial? If the trial passes, our expected monthly requirement will be 3,000 pieces.\n\nWe need the trial parts at the plant by September 12. Please state the delivery date in your reply rather than only the number of production days. A drawing of the required connector is attached.\n\nMira Wu, Purchasing",
-    "passageZh": "收件者：Valley Components\n主旨：試產用零件詢價\n\n我們需要 240 個鎖扣式連接器，用於九月十八日的試產。請分別報出單價及運到桃園工廠的運費。貴公司的型錄列出最低訂購量為 500 個，這次試作是否可以例外？若試產通過，預計每月需求為 3,000 個。\n\n試作零件最遲須在九月十二日送達工廠。回覆時請註明交貨日期，不要只寫生產天數。附件是所需連接器的圖面。\n\n採購部 Mira Wu"
-  }
+  "retiredSourceReference": "question-reserve/test-01/t01-r-p7-01/questions/Q149/verification.json"
 }
