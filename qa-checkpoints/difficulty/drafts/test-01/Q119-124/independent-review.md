@@ -1,0 +1,21 @@
+# Test01 Part5 Q119–124 independent review
+
+English-only source SHA-256: `b22a22171b1fa6313e3d647e611e6a77377df73ee2b232f03445f5c5e446f17b`. Blind answers recorded before opening the bilingual draft: **119 B, 120 C, 121 A, 122 D, 123 B, 124 C**.
+
+| Item | Evidence and difficulty | Blind verdict |
+|---|---|---|
+| 119 | The route permitted for calls stays primary before a future load-test event; `until` marks its endpoint. `as soon as` reverses the timing, `now that` treats the test as already passed, and `in case` sets up a contingency that does not explain the policy. | Medium on contrast/timing. Clarify that the backup is not **cleared for** video now, rather than categorically unable to carry it, since the latter makes later testing pointless without any described change. |
+| 120 | The same overall size and a material approval do not settle stability when tray geometry differs. The blank concerns removing the requirement for the separate check, not demonstrating or foreseeing it. | Unique C is the natural intended answer. Lower-end medium: `relocate` is implausible with `the need`, and `demonstrate`/`anticipate` fail to capture the specific scope contrast. Consider a closer distractor but not required if lower-end mix is desired. |
+| 121 | Inverted past condition (`Had the inspector arrived`) plus the contrast that the café remains shut calls for the unrealised completed outcome `would have reopened`. | Medium, unique. Prior plan is not a factual opening; the three alternatives either predict a real future result or assert an accomplished result. |
+| 122 | A batch number can describe many items; it cannot stand in for the number that identifies a unit. D is intended. A (`must not enter it in addition to the serial number`) could also express a per-return rule if the batch field is optional or for a different workflow; just knowing the form has both boxes does not itself exclude that. | Required clarity fix: explicitly say it is allowed to record both numbers in their own boxes, or required to do so. This simultaneously makes the A distractor plausible and confirms it is not prohibited. Remove possible ambiguity on `it` with `the batch number` if desired. Medium after explicit rule confirms identity and permissible addition. |
+| 123 | Thursday inspection alone does not satisfy the contract; the second check won't finish until Friday, so Thursday release is forbidden. A weakly denies obligation, not permission; C and D would allow release without both checks. | Unique B; lower-end medium because the answer maps an already-stated policy to two slightly separated time clues and distinguishes permission from obligation. |
+| 124 | Every seat was offered Monday, the reply period ended Friday, and timely acceptance holds the seat. Thus only rejected or unanswered allocations are available, not accepted, open or post-deadline offers. | Unique C; medium via time and reply-status distinctions. The successful choice's two statuses are separately supported. |
+
+## Bilingual readback
+
+The authored keys match all six blind keys. Recommended exact edits before adoption:
+
+- **119:** EN “The backup link has been cleared for payment traffic but not for video calls.” ZH「備援連線已獲准承載付款流量，但尚未獲准用於視訊通話。」Update A–C explanations to say「尚未通過負載測試／尚未核准」rather than「無法承載」. In the existing wording it is an outright technical incapacity, not an approval state.
+- **122:** EN “The repair form lets technicians record the batch and serial numbers in separate boxes. Because dozens of units share the same batch number, a repair technician must not use the batch number ____ the serial number when arranging a return for one unit.” ZH「維修單可用兩個欄位分別記錄批號與序號。由於數十件產品共用同一批號，辦理單件退回時，維修技術員不得以批號 ____ 序號。」A explanation should cite explicit allowance to record both in their own boxes.
+- **124 (necessary translation correction):** EN `only if` is a necessary condition. zh currently uses「只要……就……」, a sufficient condition. Use「今天，只有座位的邀請 ____，我們才會重新分配該座位；在期限內接受邀請的人都保有座位。」Alternative more natural context:「今天，只有在邀請 ____ 的情況下，我們才會重新分配對應的座位。」
+- **123 optional style:** Change prompt to「因此，這些樣品週四 ____ 放行供人取件。」and reduce translated options to「無須／不得／照理已經可以／或許仍可」instead of repeating 放行供人. Distinguish prohibition from lack of obligation in the choices/why; the existing key is not affected.

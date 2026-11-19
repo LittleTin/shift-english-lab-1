@@ -1,8 +1,60 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "‘Is complete’ expresses the finished state that triggers reopening. ‘Completion’ is a noun, ‘completely’ needs a word to modify, and ‘is completing’ gives the renovation an unintended active role. The zh-TW stem preserves the as-soon-as sequence; glosses and explanations checked.",
+  "checks": "Use inverted past conditional syntax and the explicitly contrasting current delay to select a counterfactual completed reopening. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t01-q121-r2",
+    "testId": "test-01",
+    "number": 121,
+    "part": 5,
+    "groupId": null,
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "P5",
+      "counterfactual-inversion",
+      "daily-context"
+    ],
+    "prompt": "The café was meant to reopen on Monday. Had the inspector arrived as scheduled on Friday, it ____ by now; instead, the owner is still waiting for permission to reopen.",
+    "promptZh": "咖啡館原定週一重新營業。如果稽查員當時在週五如期到場，店家現在 ____；但實際上，店主仍在等候復業許可。",
+    "options": [
+      {
+        "id": "A",
+        "text": "would have reopened",
+        "zh": "早就重新營業了",
+        "whyZh": "Had the inspector arrived 是與過去事實相反的倒裝條件句；by now 和仍在等許可表示原本應已發生、實際卻未發生的結果。"
+      },
+      {
+        "id": "B",
+        "text": "will have reopened",
+        "zh": "屆時將已重新營業",
+        "whyZh": "未來完成式把結果放在未來，不符合 by now 和目前仍未獲許可的描述。"
+      },
+      {
+        "id": "C",
+        "text": "had reopened",
+        "zh": "當時已經重新營業",
+        "whyZh": "過去完成式會把復業當作較早發生的事；主句需要 would 表示不實條件下的假設結果。"
+      },
+      {
+        "id": "D",
+        "text": "has reopened",
+        "zh": "現在已經重新營業",
+        "whyZh": "現在完成式把復業當成真實結果，和店主仍未獲許可矛盾。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "Had the inspector arrived 是與過去事實相反的倒裝條件句；by now 和仍在等許可表示原本應已發生、實際卻未發生的結果。",
+    "evidence": "The café was meant to reopen on Monday. Had the inspector arrived as scheduled on Friday, it ____ by now; instead, the owner is still waiting for permission to reopen.",
+    "vocabulary": [
+      {
+        "term": "would have reopened",
+        "zh": "早就重新營業了"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t01-q121",
     "testId": "test-01",
     "number": 121,
@@ -53,5 +105,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-01/Q121/verification.json"
 }

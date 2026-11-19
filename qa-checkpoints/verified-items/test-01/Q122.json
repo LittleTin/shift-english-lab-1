@@ -1,8 +1,60 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "Only ‘unique to that unit’ supports traceability and the explicit never-shared restriction. ‘unrelated’ defeats the identification purpose, ‘identical’ equates different categories, and ‘common’ contradicts nonsharing. The Chinese stem preserves both unit assignment and nonsharing; all glosses and rationales checked.",
+  "checks": "Interpret the individually unique serial as required, the shared batch number as no substitute, and recognize why storing both separately is permitted. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t01-q122-r2",
+    "testId": "test-01",
+    "number": 122,
+    "part": 5,
+    "groupId": null,
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "P5",
+      "prepositional-phrase",
+      "manufacturing-context"
+    ],
+    "prompt": "The repair form lets technicians record the batch and serial numbers in separate boxes. Because dozens of units share the same batch number, a repair technician must not use the batch number ____ the serial number when arranging a return for one unit.",
+    "promptZh": "維修單可用兩個欄位分別記錄批號與序號。由於數十件產品共用同一批號，辦理單件退回時，維修技術員不得以批號 ____ 序號。",
+    "options": [
+      {
+        "id": "A",
+        "text": "in addition to",
+        "zh": "作為……之外的補充",
+        "whyZh": "表單明確可用兩個獨立欄位分別記錄批號與序號；禁止的是拿共用批號替代單件序號，而不是兩者並記。"
+      },
+      {
+        "id": "B",
+        "text": "in response to",
+        "zh": "回應",
+        "whyZh": "序號不是需要回應的問題或要求；句子談的是兩種編號是否可以互相替代。"
+      },
+      {
+        "id": "C",
+        "text": "on behalf of",
+        "zh": "代表",
+        "whyZh": "這個片語通常指代表某人或機構，不表示用一個編號取代另一個。"
+      },
+      {
+        "id": "D",
+        "text": "in place of",
+        "zh": "取代",
+        "whyZh": "批號由多件產品共用，無法識別這一件；即使兩種編號可分欄記錄，也不得以批號代替個別序號。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "批號由多件產品共用，無法識別這一件；即使兩種編號可分欄記錄，也不得以批號代替個別序號。",
+    "evidence": "The repair form lets technicians record the batch and serial numbers in separate boxes. Because dozens of units share the same batch number, a repair technician must not use the batch number ____ the serial number when arranging a return for one unit.",
+    "vocabulary": [
+      {
+        "term": "in place of",
+        "zh": "取代"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t01-q122",
     "testId": "test-01",
     "number": 122,
@@ -53,5 +105,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-01/Q122/verification.json"
 }

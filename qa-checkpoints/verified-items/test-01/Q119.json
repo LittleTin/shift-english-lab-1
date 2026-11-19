@@ -1,8 +1,60 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "‘Will route’ uniquely supplies a finite main verb for the future condition. ‘has route’ lacks a participle, and ‘to route’ and ‘routing’ are nonfinite. Repositioned the zh-TW cloze to avoid doubling the route verb, and standardized networking terminology to 轉送.",
+  "checks": "Distinguish which traffic the backup link is approved for and interpret a successful load test as the endpoint of the temporary routing policy. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t01-q119-r2",
+    "testId": "test-01",
+    "number": 119,
+    "part": 5,
+    "groupId": null,
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "P5",
+      "temporal-conjunction",
+      "technology-context"
+    ],
+    "prompt": "The backup link has been cleared for payment traffic but not for video calls. IT will keep video calls on the primary link ____ the backup link has passed its video load test.",
+    "promptZh": "備援連線已獲准承載付款流量，但尚未獲准用於視訊通話。IT 部門仍會將視訊通話留在主要連線上，____ 備援連線通過視訊負載測試。",
+    "options": [
+      {
+        "id": "A",
+        "text": "as soon as",
+        "zh": "一……就",
+        "whyZh": "表示測試一通過，才開始將視訊通話留在主要連線上；但備援連線尚未獲准用於視訊，現在就要繼續使用主要連線。"
+      },
+      {
+        "id": "B",
+        "text": "until",
+        "zh": "直到",
+        "whyZh": "備援連線目前尚未獲准用於視訊；until 以通過視訊負載測試為界，在此之前仍使用主要連線。"
+      },
+      {
+        "id": "C",
+        "text": "now that",
+        "zh": "既然已經",
+        "whyZh": "表示既然測試已經通過，但備援連線尚未獲准用於視訊，負載測試仍待通過。"
+      },
+      {
+        "id": "D",
+        "text": "in case",
+        "zh": "以防",
+        "whyZh": "表示把視訊留在主要連線是為了防備測試通過這件事；真正要避免的是未驗證就改走備援。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "備援連線目前尚未獲准用於視訊；until 以通過視訊負載測試為界，在此之前仍使用主要連線。",
+    "evidence": "The backup link has been cleared for payment traffic but not for video calls. IT will keep video calls on the primary link ____ the backup link has passed its video load test.",
+    "vocabulary": [
+      {
+        "term": "until",
+        "zh": "直到"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t01-q119",
     "testId": "test-01",
     "number": 119,
@@ -53,5 +105,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-01/Q119/verification.json"
 }

@@ -1,8 +1,60 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "Present perfect continuing work plus the year as a starting point calls for ‘since’. ‘For’ takes a duration, ‘until’ marks an endpoint, and ‘during’ a bounded period rather than a start continuing to the present. Chinese accurately preserves ongoing supplier-quality work and year; all options and rationales checked.",
+  "checks": "Combine the staggered inspection and audit with a contract requiring all checks to finish and infer that Thursday collection is not allowed. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t01-q123-r2",
+    "testId": "test-01",
+    "number": 123,
+    "part": 5,
+    "groupId": null,
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "P5",
+      "modal-meaning",
+      "manufacturing-context"
+    ],
+    "prompt": "The buyer may inspect the first batch on Thursday, but the packaging audit will not be complete until Friday. The contract states that samples cannot leave the factory before both checks are complete, so they ____ released for collection on Thursday.",
+    "promptZh": "買方週四可以檢驗第一批產品，但包裝稽核要到週五才會完成。合約規定兩項檢查都完成後才能把樣品帶離工廠，因此，這些樣品週四 ____ 放行供人取件。",
+    "options": [
+      {
+        "id": "A",
+        "text": "do not have to be",
+        "zh": "無須",
+        "whyZh": "表示沒有必須放行的義務，不表示禁止放行；合約要求週四不能放行。"
+      },
+      {
+        "id": "B",
+        "text": "cannot be",
+        "zh": "不得",
+        "whyZh": "週四可做第一項檢驗，但第二項要到週五才完成；合約要求兩項都完成，因此週四不能放行供取件。"
+      },
+      {
+        "id": "C",
+        "text": "should already be",
+        "zh": "照理已經可以",
+        "whyZh": "這是對進度的正面推測，與兩項檢查週四無法都完成的明確時程衝突。"
+      },
+      {
+        "id": "D",
+        "text": "might still be",
+        "zh": "或許仍可",
+        "whyZh": "might 表示仍有可能；依已知稽核時程和合約，週四並不符合放行條件。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "週四可做第一項檢驗，但第二項要到週五才完成；合約要求兩項都完成，因此週四不能放行供取件。",
+    "evidence": "The buyer may inspect the first batch on Thursday, but the packaging audit will not be complete until Friday. The contract states that samples cannot leave the factory before both checks are complete, so they ____ released for collection on Thursday.",
+    "vocabulary": [
+      {
+        "term": "cannot be",
+        "zh": "不能放行供人"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t01-q123",
     "testId": "test-01",
     "number": 123,
@@ -53,5 +105,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-01/Q123/verification.json"
 }

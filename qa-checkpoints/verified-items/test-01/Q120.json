@@ -1,8 +1,60 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "‘Both English and Traditional Chinese’ requires the paired conjunction ‘and’ rather than nor, or, or but. The stem, four option glosses and explanations preserve this relation.",
+  "checks": "Combine the approved carton material with the changed tray geometry to decide whether a different assessment is still needed. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t01-q120-r2",
+    "testId": "test-01",
+    "number": 120,
+    "part": 5,
+    "groupId": null,
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "P5",
+      "verb-collocation",
+      "manufacturing-context"
+    ],
+    "prompt": "The new carton is the same size as the previous one, but its inner tray sits 4 millimetres lower. Supplier approval of the carton material therefore does not ____ the need to check that the product stays in place during shipping.",
+    "promptZh": "新紙箱和上一版一樣大，但內托低了 4 毫米。因此，即使供應商已核准紙箱材質，也不能 ____ 檢查產品在運送途中是否會移位的必要性。",
+    "options": [
+      {
+        "id": "A",
+        "text": "demonstrate",
+        "zh": "證明",
+        "whyZh": "材質核准並不是證明應檢驗運送固定性的證據；句子的重點是不可用一種核准取代另一種檢驗。"
+      },
+      {
+        "id": "B",
+        "text": "relocate",
+        "zh": "移置",
+        "whyZh": "relocate 指改變實體或作業所在位置，不能表達是否還需進行檢查。"
+      },
+      {
+        "id": "C",
+        "text": "eliminate",
+        "zh": "消除",
+        "whyZh": "外箱同尺寸、材質雖已核准，內托位置卻不同；材質核准不能免除運送固定性檢查。"
+      },
+      {
+        "id": "D",
+        "text": "anticipate",
+        "zh": "預見",
+        "whyZh": "材質核准本身不會「預見」未來需求；語境在區分兩項品質判定，而非說明能否事先預料。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "外箱同尺寸、材質雖已核准，內托位置卻不同；材質核准不能免除運送固定性檢查。",
+    "evidence": "The new carton is the same size as the previous one, but its inner tray sits 4 millimetres lower. Supplier approval of the carton material therefore does not ____ the need to check that the product stays in place during shipping.",
+    "vocabulary": [
+      {
+        "term": "eliminate",
+        "zh": "消除"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t01-q120",
     "testId": "test-01",
     "number": 120,
@@ -53,5 +105,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-01/Q120/verification.json"
 }

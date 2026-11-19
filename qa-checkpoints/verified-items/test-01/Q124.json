@@ -1,8 +1,60 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "‘Is required’ is the only correct structure and states that registration is mandatory. ‘Require’ is a bare verb, the noun ‘requirement’ needs a determiner, and ‘requiring’ gives registration an active role. Removed the duplicated 的 in the Chinese fill-in; remaining Traditional Chinese options and rationales checked.",
+  "checks": "Identify that only invitations left without a response when the prior reply window closed can qualify for reassignment now. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t01-q124-r2",
+    "testId": "test-01",
+    "number": 124,
+    "part": 5,
+    "groupId": null,
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "P5",
+      "deadline-inference",
+      "business-context"
+    ],
+    "prompt": "On Monday, we offered every seat in the seminar and gave invitees until Friday evening to accept or decline. The reply period is now over. Today we will reassign seats only if their invitations ____; everyone who accepted by the deadline keeps their seat.",
+    "promptZh": "週一，我們已向受邀者發出研討會所有座位的邀請，並請他們在週五晚上前回覆是否出席。回覆期限現已結束。今天，只有在邀請 ____ 的情況下，我們才會重新分配對應的座位；在期限內接受邀請的人都保有座位。",
+    "options": [
+      {
+        "id": "A",
+        "text": "were accepted before the deadline",
+        "zh": "在期限內獲接受",
+        "whyZh": "這些人已確認參加；句末明確保留他們的座位，不會重新分配。"
+      },
+      {
+        "id": "B",
+        "text": "are still open for a reply",
+        "zh": "仍可回覆",
+        "whyZh": "文中已說回覆期限結束，不能把這類邀請當作仍開放回覆。"
+      },
+      {
+        "id": "C",
+        "text": "were declined or left unanswered",
+        "zh": "遭婉拒或未收到回覆",
+        "whyZh": "接受邀請的人保有座位；回覆期限已結束，其餘邀請不是被婉拒，就是未收到回覆，這些座位可以重新分配。"
+      },
+      {
+        "id": "D",
+        "text": "were issued after the deadline",
+        "zh": "在期限過後才發出",
+        "whyZh": "所有邀請週一已發出，回覆期限是週五；沒有在期限後發出的邀請。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "接受邀請的人保有座位；回覆期限已結束，其餘邀請不是被婉拒，就是未收到回覆，這些座位可以重新分配。",
+    "evidence": "On Monday, we offered every seat in the seminar and gave invitees until Friday evening to accept or decline. The reply period is now over. Today we will reassign seats only if their invitations ____; everyone who accepted by the deadline keeps their seat.",
+    "vocabulary": [
+      {
+        "term": "were declined or left unanswered",
+        "zh": "遭婉拒或未收到回覆"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t01-q124",
     "testId": "test-01",
     "number": 124,
@@ -53,5 +105,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-01/Q124/verification.json"
 }
