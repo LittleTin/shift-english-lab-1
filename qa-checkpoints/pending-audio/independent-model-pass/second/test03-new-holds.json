@@ -1,0 +1,925 @@
+{
+  "test": "test-03",
+  "pinnedStage": "9047812299d67c6a69b4b5e7cb39c8544b180651",
+  "recognizer": "system FFmpeg libpocketsphinx with unmodified upstream CMUSphinx data",
+  "modelSourceCommit": "f20ff1b7a5db64c5e892a798479e20df86e79a35",
+  "independentAudioOnlyNotAnApproval": true,
+  "entries": [
+    {
+      "number": 1,
+      "questionId": "t03-q001",
+      "groupId": "t03-g001",
+      "status": "approved-audio-control",
+      "priorQuestionedTokens": [],
+      "windows": [
+        {
+          "role": "passage",
+          "source": "audio/formal-v2/test-03-01.mp3",
+          "start": 0.5,
+          "end": 19.628,
+          "sha256": "8a21ae045c9366b4ed5ed42612bacebff65b86e000b60833249b01fd528cb4f2",
+          "unpromptedUtterances": [
+            "hey",
+            "books and then stepped on the floor",
+            "b",
+            "several rows of bugs are ranged on a shelf",
+            "c",
+            "the bookcases being carried out side",
+            "d.",
+            "a person is seated beside a plant"
+          ]
+        },
+        {
+          "role": "practice",
+          "source": "audio/azure-v1/test-03-01.mp3",
+          "start": 0.5,
+          "end": 20.108,
+          "sha256": "8f78b5a19e22b5329e8b5aef750272bc91cfd8aae5cebb7a022d69f7837b25ef",
+          "unpromptedUtterances": [
+            "eight",
+            "books have been stepped on the floor",
+            "the",
+            "said there are those of books at a store that shelf",
+            "c",
+            "i booked it is deemed headed outside",
+            "the",
+            "by sunday seated beside that plant"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "questionId": "t03-q005",
+      "groupId": "t03-g005",
+      "status": "approved-audio-control",
+      "priorQuestionedTokens": [],
+      "windows": [
+        {
+          "role": "passage",
+          "source": "audio/formal-v2/test-03-02.mp3",
+          "start": 20.56,
+          "end": 38.488,
+          "sha256": "6a0ddb6ba963c3230af399e582cbf24597be33b37fd54128561ed2b0fdaeb1a1",
+          "unpromptedUtterances": [
+            "hey",
+            "the path friends between two trees",
+            "b",
+            "the trees are being trend",
+            "c",
+            "two people are resting on a bench",
+            "d.",
+            "a vehicle is parked under a tree"
+          ]
+        },
+        {
+          "role": "practice",
+          "source": "audio/azure-v1/test-03-02.mp3",
+          "start": 18.424,
+          "end": 36.352,
+          "sha256": "444de90014c8ace28b810abd1ca062889a77fe2512dbc3f46d4aea4bf4a37a35",
+          "unpromptedUtterances": [
+            "hey",
+            "the path friends between two trees",
+            "b",
+            "the trees are being trend",
+            "c",
+            "two people are resting on a bench",
+            "d.",
+            "a vehicle is parked under a tree"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "questionId": "t03-q006",
+      "groupId": "t03-g006",
+      "status": "approved-audio-control",
+      "priorQuestionedTokens": [],
+      "windows": [
+        {
+          "role": "passage",
+          "source": "audio/formal-v2/test-03-02.mp3",
+          "start": 38.988,
+          "end": 58.908,
+          "sha256": "6a0ddb6ba963c3230af399e582cbf24597be33b37fd54128561ed2b0fdaeb1a1",
+          "unpromptedUtterances": [
+            "a",
+            "several workers are letting a table",
+            "the",
+            "the equipment is stored beneath the table",
+            "c",
+            "all window has been covered by a cartoon",
+            "the",
+            "a piece of equipment is all the work surface"
+          ]
+        },
+        {
+          "role": "practice",
+          "source": "audio/azure-v1/test-03-02.mp3",
+          "start": 36.852,
+          "end": 56.556,
+          "sha256": "444de90014c8ace28b810abd1ca062889a77fe2512dbc3f46d4aea4bf4a37a35",
+          "unpromptedUtterances": [
+            "annie",
+            "several workers are lifting the table",
+            "the",
+            "the equipment is stored beneath the table",
+            "c",
+            "a window has been covered by a cousin",
+            "d.",
+            "a piece of equipment is on the works a face"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "questionId": "t03-q032",
+      "groupId": "t03-g032",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-03-02.json",
+          "drain/rain/train",
+          "shared-passage"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-03-12.mp3",
+          "start": 0.5,
+          "end": 47.54,
+          "sha256": "75ebb83dacc7b205c938d9c89ce7fe15821c996c9356467c102f33e8231d2daf",
+          "unpromptedUtterances": [
+            "dang smoke coming out so creepy",
+            "the stain above a reception desk up yet after last night's dream",
+            "we are opening a second office next month so inexpensive v p a heel would be difficult",
+            "it should the roof before we discuss what they see anything",
+            "sometimes a doctor in causes wanted to put it on the africa's uncle",
+            "the building many generations he's in the taxes",
+            "can you get that stays flat all kinds are arriving",
+            "so to me",
+            "i use the so the state is not the lobby",
+            "if given the train so the problem you won't need a new roof",
+            "that's a relief",
+            "peace photograph whatever you find",
+            "i need to show the many july the look was necessary"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/azure-v1/test-03-12.mp3",
+          "start": 0.5,
+          "end": 47.54,
+          "sha256": "75ebb83dacc7b205c938d9c89ce7fe15821c996c9356467c102f33e8231d2daf",
+          "unpromptedUtterances": [
+            "dang smoke coming out so creepy",
+            "the stain above a reception desk up yet after last night's dream",
+            "we are opening a second office next month so inexpensive v p a heel would be difficult",
+            "it should the roof before we discuss what they see anything",
+            "sometimes a doctor in causes wanted to put it on the africa's uncle",
+            "the building many generations he's in the taxes",
+            "can you get that stays flat all kinds are arriving",
+            "so to me",
+            "i use the so the state is not the lobby",
+            "if given the train so the problem you won't need a new roof",
+            "that's a relief",
+            "peace photograph whatever you find",
+            "i need to show the many july the look was necessary"
+          ]
+        },
+        {
+          "role": "formalStem",
+          "source": "audio/formal/test-03-cues-01.mp3",
+          "start": 43.03983,
+          "end": 45.96162,
+          "sha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+          "unpromptedUtterances": [
+            "number thirty two what problem is being discussed"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "questionId": "t03-q033",
+      "groupId": "t03-g032",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-03-02.json",
+          "drain/rain/train",
+          "shared-passage"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-03-12.mp3",
+          "start": 0.5,
+          "end": 47.54,
+          "sha256": "75ebb83dacc7b205c938d9c89ce7fe15821c996c9356467c102f33e8231d2daf",
+          "unpromptedUtterances": [
+            "dang smoke coming out so creepy",
+            "the stain above a reception desk up yet after last night's dream",
+            "we are opening a second office next month so inexpensive v p a heel would be difficult",
+            "it should the roof before we discuss what they see anything",
+            "sometimes a doctor in causes wanted to put it on the africa's uncle",
+            "the building many generations he's in the taxes",
+            "can you get that stays flat all kinds are arriving",
+            "so to me",
+            "i use the so the state is not the lobby",
+            "if given the train so the problem you won't need a new roof",
+            "that's a relief",
+            "peace photograph whatever you find",
+            "i need to show the many july the look was necessary"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/azure-v1/test-03-12.mp3",
+          "start": 0.5,
+          "end": 47.54,
+          "sha256": "75ebb83dacc7b205c938d9c89ce7fe15821c996c9356467c102f33e8231d2daf",
+          "unpromptedUtterances": [
+            "dang smoke coming out so creepy",
+            "the stain above a reception desk up yet after last night's dream",
+            "we are opening a second office next month so inexpensive v p a heel would be difficult",
+            "it should the roof before we discuss what they see anything",
+            "sometimes a doctor in causes wanted to put it on the africa's uncle",
+            "the building many generations he's in the taxes",
+            "can you get that stays flat all kinds are arriving",
+            "so to me",
+            "i use the so the state is not the lobby",
+            "if given the train so the problem you won't need a new roof",
+            "that's a relief",
+            "peace photograph whatever you find",
+            "i need to show the many july the look was necessary"
+          ]
+        },
+        {
+          "role": "formalStem",
+          "source": "audio/formal/test-03-cues-01.mp3",
+          "start": 46.21162,
+          "end": 49.41887,
+          "sha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+          "unpromptedUtterances": [
+            "number thirty three why does the woman say that's a relief"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "questionId": "t03-q034",
+      "groupId": "t03-g032",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-03-02.json",
+          "drain/rain/train",
+          "shared-passage"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-03-12.mp3",
+          "start": 0.5,
+          "end": 47.54,
+          "sha256": "75ebb83dacc7b205c938d9c89ce7fe15821c996c9356467c102f33e8231d2daf",
+          "unpromptedUtterances": [
+            "dang smoke coming out so creepy",
+            "the stain above a reception desk up yet after last night's dream",
+            "we are opening a second office next month so inexpensive v p a heel would be difficult",
+            "it should the roof before we discuss what they see anything",
+            "sometimes a doctor in causes wanted to put it on the africa's uncle",
+            "the building many generations he's in the taxes",
+            "can you get that stays flat all kinds are arriving",
+            "so to me",
+            "i use the so the state is not the lobby",
+            "if given the train so the problem you won't need a new roof",
+            "that's a relief",
+            "peace photograph whatever you find",
+            "i need to show the many july the look was necessary"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/azure-v1/test-03-12.mp3",
+          "start": 0.5,
+          "end": 47.54,
+          "sha256": "75ebb83dacc7b205c938d9c89ce7fe15821c996c9356467c102f33e8231d2daf",
+          "unpromptedUtterances": [
+            "dang smoke coming out so creepy",
+            "the stain above a reception desk up yet after last night's dream",
+            "we are opening a second office next month so inexpensive v p a heel would be difficult",
+            "it should the roof before we discuss what they see anything",
+            "sometimes a doctor in causes wanted to put it on the africa's uncle",
+            "the building many generations he's in the taxes",
+            "can you get that stays flat all kinds are arriving",
+            "so to me",
+            "i use the so the state is not the lobby",
+            "if given the train so the problem you won't need a new roof",
+            "that's a relief",
+            "peace photograph whatever you find",
+            "i need to show the many july the look was necessary"
+          ]
+        },
+        {
+          "role": "formalStem",
+          "source": "audio/formal/test-03-cues-01.mp3",
+          "start": 49.66887,
+          "end": 52.78704,
+          "sha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+          "unpromptedUtterances": [
+            "number thirty four which is the woman asked the man to deal"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 56,
+      "questionId": "t03-q056",
+      "groupId": "t03-g040",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-03-02.json",
+          "chart/chat; visual validated",
+          "shared-passage"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-03-20.mp3",
+          "start": 0.5,
+          "end": 53.156,
+          "sha256": "87ab6cfed3277949cccd5a01c450e794082ce7bcffbd1d81ce270a53dd24e099",
+          "unpromptedUtterances": [
+            "we're expecting twenty four people for the design would shop",
+            "we'll need tables for drawing so with you to spell room one work",
+            "here is the room tax",
+            "remember that the capacities in the second column as soon classroom seating we seem close tables",
+            "i'll budget east two hundred dollars for the d",
+            "the larger room would be comfortable but i don't think we can afford it",
+            "then their room that whole sexy people use your best choice",
+            "the project that is included in all the prices",
+            "excellent",
+            "the three so there's room for monday",
+            "we also need excess half an hour the chilly out the drawing materials",
+            "that one be a problem",
+            "i'm not in a petty arrival on the confirmation"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/azure-v1/test-03-20.mp3",
+          "start": 0.5,
+          "end": 53.156,
+          "sha256": "87ab6cfed3277949cccd5a01c450e794082ce7bcffbd1d81ce270a53dd24e099",
+          "unpromptedUtterances": [
+            "we're expecting twenty four people for the design would shop",
+            "we'll need tables for drawing so with you to spell room one work",
+            "here is the room tax",
+            "remember that the capacities in the second column as soon classroom seating we seem close tables",
+            "i'll budget east two hundred dollars for the d",
+            "the larger room would be comfortable but i don't think we can afford it",
+            "then their room that whole sexy people use your best choice",
+            "the project that is included in all the prices",
+            "excellent",
+            "the three so there's room for monday",
+            "we also need excess half an hour the chilly out the drawing materials",
+            "that one be a problem",
+            "i'm not in a petty arrival on the confirmation"
+          ]
+        },
+        {
+          "role": "formalStem",
+          "source": "audio/formal/test-03-cues-03.mp3",
+          "start": 18.983,
+          "end": 22.721,
+          "sha256": "cb55c1d3ed563f9e894d7f953440e40eb230ebb03ac85980a8d5c62c9e92888a",
+          "unpromptedUtterances": [
+            "number fifty six what type of seeming to the participants need"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 57,
+      "questionId": "t03-q057",
+      "groupId": "t03-g040",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-03-02.json",
+          "chart/chat; visual validated",
+          "shared-passage"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-03-20.mp3",
+          "start": 0.5,
+          "end": 53.156,
+          "sha256": "87ab6cfed3277949cccd5a01c450e794082ce7bcffbd1d81ce270a53dd24e099",
+          "unpromptedUtterances": [
+            "we're expecting twenty four people for the design would shop",
+            "we'll need tables for drawing so with you to spell room one work",
+            "here is the room tax",
+            "remember that the capacities in the second column as soon classroom seating we seem close tables",
+            "i'll budget east two hundred dollars for the d",
+            "the larger room would be comfortable but i don't think we can afford it",
+            "then their room that whole sexy people use your best choice",
+            "the project that is included in all the prices",
+            "excellent",
+            "the three so there's room for monday",
+            "we also need excess half an hour the chilly out the drawing materials",
+            "that one be a problem",
+            "i'm not in a petty arrival on the confirmation"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/azure-v1/test-03-20.mp3",
+          "start": 0.5,
+          "end": 53.156,
+          "sha256": "87ab6cfed3277949cccd5a01c450e794082ce7bcffbd1d81ce270a53dd24e099",
+          "unpromptedUtterances": [
+            "we're expecting twenty four people for the design would shop",
+            "we'll need tables for drawing so with you to spell room one work",
+            "here is the room tax",
+            "remember that the capacities in the second column as soon classroom seating we seem close tables",
+            "i'll budget east two hundred dollars for the d",
+            "the larger room would be comfortable but i don't think we can afford it",
+            "then their room that whole sexy people use your best choice",
+            "the project that is included in all the prices",
+            "excellent",
+            "the three so there's room for monday",
+            "we also need excess half an hour the chilly out the drawing materials",
+            "that one be a problem",
+            "i'm not in a petty arrival on the confirmation"
+          ]
+        },
+        {
+          "role": "formalStem",
+          "source": "audio/formal/test-03-cues-03.mp3",
+          "start": 22.971,
+          "end": 27.06321,
+          "sha256": "cb55c1d3ed563f9e894d7f953440e40eb230ebb03ac85980a8d5c62c9e92888a",
+          "unpromptedUtterances": [
+            "number fifty seven look at the graphic which room all the man reserve"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 58,
+      "questionId": "t03-q058",
+      "groupId": "t03-g040",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-03-02.json",
+          "chart/chat; visual validated",
+          "shared-passage"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-03-20.mp3",
+          "start": 0.5,
+          "end": 53.156,
+          "sha256": "87ab6cfed3277949cccd5a01c450e794082ce7bcffbd1d81ce270a53dd24e099",
+          "unpromptedUtterances": [
+            "we're expecting twenty four people for the design would shop",
+            "we'll need tables for drawing so with you to spell room one work",
+            "here is the room tax",
+            "remember that the capacities in the second column as soon classroom seating we seem close tables",
+            "i'll budget east two hundred dollars for the d",
+            "the larger room would be comfortable but i don't think we can afford it",
+            "then their room that whole sexy people use your best choice",
+            "the project that is included in all the prices",
+            "excellent",
+            "the three so there's room for monday",
+            "we also need excess half an hour the chilly out the drawing materials",
+            "that one be a problem",
+            "i'm not in a petty arrival on the confirmation"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/azure-v1/test-03-20.mp3",
+          "start": 0.5,
+          "end": 53.156,
+          "sha256": "87ab6cfed3277949cccd5a01c450e794082ce7bcffbd1d81ce270a53dd24e099",
+          "unpromptedUtterances": [
+            "we're expecting twenty four people for the design would shop",
+            "we'll need tables for drawing so with you to spell room one work",
+            "here is the room tax",
+            "remember that the capacities in the second column as soon classroom seating we seem close tables",
+            "i'll budget east two hundred dollars for the d",
+            "the larger room would be comfortable but i don't think we can afford it",
+            "then their room that whole sexy people use your best choice",
+            "the project that is included in all the prices",
+            "excellent",
+            "the three so there's room for monday",
+            "we also need excess half an hour the chilly out the drawing materials",
+            "that one be a problem",
+            "i'm not in a petty arrival on the confirmation"
+          ]
+        },
+        {
+          "role": "formalStem",
+          "source": "audio/formal/test-03-cues-03.mp3",
+          "start": 27.31321,
+          "end": 30.67283,
+          "sha256": "cb55c1d3ed563f9e894d7f953440e40eb230ebb03ac85980a8d5c62c9e92888a",
+          "unpromptedUtterances": [
+            "number fifty eight why does the man request early access"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 71,
+      "questionId": "t03-q071",
+      "groupId": "t03-g045",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-03-02.json",
+          "power saws/source; lockers separately corroborated",
+          "shared-passage"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-03-25.mp3",
+          "start": 0.5,
+          "end": 47.372,
+          "sha256": "95e920fcdedc5427c4e38c0fc6ee61b55b7b70a3ef8f377af5f72b900a33a30a",
+          "unpromptedUtterances": [
+            "good afternoon",
+            "the full idea what should the games i'd like to introduce they had received two connection",
+            "from next monday and go to m s can borrow hostile to us look up to seven days",
+            "the collection includes gives some ass and easy getting equipment but not that does on that cause cells",
+            "you can reset and i come home and just as you would a book",
+            "however tools must be connected from the ground philosophies discredit them the sense of these look nice",
+            "on the offense the seat is that man now we demonstrate see fuse and ask you to send the ending phone",
+            "to business took the only show you said that items from the connection after the workshop",
+            "he saved your questions about his ambitions on to them"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/azure-v1/test-03-25.mp3",
+          "start": 0.5,
+          "end": 47.372,
+          "sha256": "95e920fcdedc5427c4e38c0fc6ee61b55b7b70a3ef8f377af5f72b900a33a30a",
+          "unpromptedUtterances": [
+            "good afternoon",
+            "the full idea what should the games i'd like to introduce they had received two connection",
+            "from next monday and go to m s can borrow hostile to us look up to seven days",
+            "the collection includes gives some ass and easy getting equipment but not that does on that cause cells",
+            "you can reset and i come home and just as you would a book",
+            "however tools must be connected from the ground philosophies discredit them the sense of these look nice",
+            "on the offense the seat is that man now we demonstrate see fuse and ask you to send the ending phone",
+            "to business took the only show you said that items from the connection after the workshop",
+            "he saved your questions about his ambitions on to them"
+          ]
+        },
+        {
+          "role": "formalStem",
+          "source": "audio/formal/test-03-cues-04.mp3",
+          "start": 26.4115,
+          "end": 30.40383,
+          "sha256": "f5db73b2aab14a49b3a6ba3408fbf600098cfa5626160ea7dd95a13b9bf6404b",
+          "unpromptedUtterances": [
+            "number seventy one",
+            "what news service as the library introducing"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 72,
+      "questionId": "t03-q072",
+      "groupId": "t03-g045",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-03-02.json",
+          "power saws/source; lockers separately corroborated",
+          "shared-passage"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-03-25.mp3",
+          "start": 0.5,
+          "end": 47.372,
+          "sha256": "95e920fcdedc5427c4e38c0fc6ee61b55b7b70a3ef8f377af5f72b900a33a30a",
+          "unpromptedUtterances": [
+            "good afternoon",
+            "the full idea what should the games i'd like to introduce they had received two connection",
+            "from next monday and go to m s can borrow hostile to us look up to seven days",
+            "the collection includes gives some ass and easy getting equipment but not that does on that cause cells",
+            "you can reset and i come home and just as you would a book",
+            "however tools must be connected from the ground philosophies discredit them the sense of these look nice",
+            "on the offense the seat is that man now we demonstrate see fuse and ask you to send the ending phone",
+            "to business took the only show you said that items from the connection after the workshop",
+            "he saved your questions about his ambitions on to them"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/azure-v1/test-03-25.mp3",
+          "start": 0.5,
+          "end": 47.372,
+          "sha256": "95e920fcdedc5427c4e38c0fc6ee61b55b7b70a3ef8f377af5f72b900a33a30a",
+          "unpromptedUtterances": [
+            "good afternoon",
+            "the full idea what should the games i'd like to introduce they had received two connection",
+            "from next monday and go to m s can borrow hostile to us look up to seven days",
+            "the collection includes gives some ass and easy getting equipment but not that does on that cause cells",
+            "you can reset and i come home and just as you would a book",
+            "however tools must be connected from the ground philosophies discredit them the sense of these look nice",
+            "on the offense the seat is that man now we demonstrate see fuse and ask you to send the ending phone",
+            "to business took the only show you said that items from the connection after the workshop",
+            "he saved your questions about his ambitions on to them"
+          ]
+        },
+        {
+          "role": "formalStem",
+          "source": "audio/formal/test-03-cues-04.mp3",
+          "start": 30.65383,
+          "end": 33.62954,
+          "sha256": "f5db73b2aab14a49b3a6ba3408fbf600098cfa5626160ea7dd95a13b9bf6404b",
+          "unpromptedUtterances": [
+            "number seventy two where most borrowers collect tolls"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 73,
+      "questionId": "t03-q073",
+      "groupId": "t03-g045",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-03-02.json",
+          "power saws/source; lockers separately corroborated",
+          "shared-passage"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-03-25.mp3",
+          "start": 0.5,
+          "end": 47.372,
+          "sha256": "95e920fcdedc5427c4e38c0fc6ee61b55b7b70a3ef8f377af5f72b900a33a30a",
+          "unpromptedUtterances": [
+            "good afternoon",
+            "the full idea what should the games i'd like to introduce they had received two connection",
+            "from next monday and go to m s can borrow hostile to us look up to seven days",
+            "the collection includes gives some ass and easy getting equipment but not that does on that cause cells",
+            "you can reset and i come home and just as you would a book",
+            "however tools must be connected from the ground philosophies discredit them the sense of these look nice",
+            "on the offense the seat is that man now we demonstrate see fuse and ask you to send the ending phone",
+            "to business took the only show you said that items from the connection after the workshop",
+            "he saved your questions about his ambitions on to them"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/azure-v1/test-03-25.mp3",
+          "start": 0.5,
+          "end": 47.372,
+          "sha256": "95e920fcdedc5427c4e38c0fc6ee61b55b7b70a3ef8f377af5f72b900a33a30a",
+          "unpromptedUtterances": [
+            "good afternoon",
+            "the full idea what should the games i'd like to introduce they had received two connection",
+            "from next monday and go to m s can borrow hostile to us look up to seven days",
+            "the collection includes gives some ass and easy getting equipment but not that does on that cause cells",
+            "you can reset and i come home and just as you would a book",
+            "however tools must be connected from the ground philosophies discredit them the sense of these look nice",
+            "on the offense the seat is that man now we demonstrate see fuse and ask you to send the ending phone",
+            "to business took the only show you said that items from the connection after the workshop",
+            "he saved your questions about his ambitions on to them"
+          ]
+        },
+        {
+          "role": "formalStem",
+          "source": "audio/formal/test-03-cues-04.mp3",
+          "start": 33.87954,
+          "end": 37.23608,
+          "sha256": "f5db73b2aab14a49b3a6ba3408fbf600098cfa5626160ea7dd95a13b9bf6404b",
+          "unpromptedUtterances": [
+            "number seventy three what happened on a borrower's first visit"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 95,
+      "questionId": "t03-q095",
+      "groupId": "t03-g053",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-03-03.json",
+          "Chen/Chang, sent/send, instead/in state",
+          "shared-passage"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-03-33.mp3",
+          "start": 0.5,
+          "end": 51.404,
+          "sha256": "fc6a39c797bbfd6de0d48016855bc51d6a1a30fcaa784b379d27bc77da05cf26",
+          "unpromptedUtterances": [
+            "hello",
+            "the state chain",
+            "this is our media from the green table restaurant calling about your team's detail on wednesday",
+            "you're booking for fourteen people is com found and we can seek everyone had one long table as requested",
+            "there is one change to the menu i send you the mushrooms that say is an available because al supply us delivery frame:1196 pts:458959  pts_time:28.684938",
+            "the chef can offer roasted vegetables salads and the same pricing state",
+            "he set me know when that as substitution is acceptable",
+            "i also need the final number of vegetarian meals by monday evening rather than wednesday my name so the kitchen frame:1971 pts:756559  pts_time:47.284937",
+            "you don't need to pay anything now your existing to cause a steel covers the booking",
+            "and the full went to hearing from you"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/azure-v1/test-03-33.mp3",
+          "start": 0.5,
+          "end": 51.404,
+          "sha256": "fc6a39c797bbfd6de0d48016855bc51d6a1a30fcaa784b379d27bc77da05cf26",
+          "unpromptedUtterances": [
+            "hello",
+            "the state chain",
+            "this is our media from the green table restaurant calling about your team's detail on wednesday",
+            "you're booking for fourteen people is com found and we can seek everyone had one long table as requested",
+            "there is one change to the menu i send you the mushrooms that say is an available because al supply us delivery frame:1196 pts:458959  pts_time:28.684938",
+            "the chef can offer roasted vegetables salads and the same pricing state",
+            "he set me know when that as substitution is acceptable",
+            "i also need the final number of vegetarian meals by monday evening rather than wednesday my name so the kitchen frame:1971 pts:756559  pts_time:47.284937",
+            "you don't need to pay anything now your existing to cause a steel covers the booking",
+            "and the full went to hearing from you"
+          ]
+        },
+        {
+          "role": "formalStem",
+          "source": "audio/formal/test-03-cues-06.mp3",
+          "start": 3.88379,
+          "end": 7.88696,
+          "sha256": "9f430340924f58a6fbfd974ab72cd67e7547780096cc11b1b677776d4a444d60",
+          "unpromptedUtterances": [
+            "number ninety five why is the restaurant suggesting a menu change"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 96,
+      "questionId": "t03-q096",
+      "groupId": "t03-g053",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-03-03.json",
+          "Chen/Chang, sent/send, instead/in state",
+          "shared-passage"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-03-33.mp3",
+          "start": 0.5,
+          "end": 51.404,
+          "sha256": "fc6a39c797bbfd6de0d48016855bc51d6a1a30fcaa784b379d27bc77da05cf26",
+          "unpromptedUtterances": [
+            "hello",
+            "the state chain",
+            "this is our media from the green table restaurant calling about your team's detail on wednesday",
+            "you're booking for fourteen people is com found and we can seek everyone had one long table as requested",
+            "there is one change to the menu i send you the mushrooms that say is an available because al supply us delivery frame:1196 pts:458959  pts_time:28.684938",
+            "the chef can offer roasted vegetables salads and the same pricing state",
+            "he set me know when that as substitution is acceptable",
+            "i also need the final number of vegetarian meals by monday evening rather than wednesday my name so the kitchen frame:1971 pts:756559  pts_time:47.284937",
+            "you don't need to pay anything now your existing to cause a steel covers the booking",
+            "and the full went to hearing from you"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/azure-v1/test-03-33.mp3",
+          "start": 0.5,
+          "end": 51.404,
+          "sha256": "fc6a39c797bbfd6de0d48016855bc51d6a1a30fcaa784b379d27bc77da05cf26",
+          "unpromptedUtterances": [
+            "hello",
+            "the state chain",
+            "this is our media from the green table restaurant calling about your team's detail on wednesday",
+            "you're booking for fourteen people is com found and we can seek everyone had one long table as requested",
+            "there is one change to the menu i send you the mushrooms that say is an available because al supply us delivery frame:1196 pts:458959  pts_time:28.684938",
+            "the chef can offer roasted vegetables salads and the same pricing state",
+            "he set me know when that as substitution is acceptable",
+            "i also need the final number of vegetarian meals by monday evening rather than wednesday my name so the kitchen frame:1971 pts:756559  pts_time:47.284937",
+            "you don't need to pay anything now your existing to cause a steel covers the booking",
+            "and the full went to hearing from you"
+          ]
+        },
+        {
+          "role": "formalStem",
+          "source": "audio/formal/test-03-cues-06.mp3",
+          "start": 8.13696,
+          "end": 12.03125,
+          "sha256": "9f430340924f58a6fbfd974ab72cd67e7547780096cc11b1b677776d4a444d60",
+          "unpromptedUtterances": [
+            "number ninety six when information is needed by monday evening"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 97,
+      "questionId": "t03-q097",
+      "groupId": "t03-g053",
+      "status": "held-audio-under-independent-test",
+      "priorQuestionedTokens": [
+        [
+          "test-03-03.json",
+          "Chen/Chang, sent/send, instead/in state",
+          "shared-passage"
+        ]
+      ],
+      "windows": [
+        {
+          "role": "practicePassage",
+          "source": "audio/azure-v1/test-03-33.mp3",
+          "start": 0.5,
+          "end": 51.404,
+          "sha256": "fc6a39c797bbfd6de0d48016855bc51d6a1a30fcaa784b379d27bc77da05cf26",
+          "unpromptedUtterances": [
+            "hello",
+            "the state chain",
+            "this is our media from the green table restaurant calling about your team's detail on wednesday",
+            "you're booking for fourteen people is com found and we can seek everyone had one long table as requested",
+            "there is one change to the menu i send you the mushrooms that say is an available because al supply us delivery frame:1196 pts:458959  pts_time:28.684938",
+            "the chef can offer roasted vegetables salads and the same pricing state",
+            "he set me know when that as substitution is acceptable",
+            "i also need the final number of vegetarian meals by monday evening rather than wednesday my name so the kitchen frame:1971 pts:756559  pts_time:47.284937",
+            "you don't need to pay anything now your existing to cause a steel covers the booking",
+            "and the full went to hearing from you"
+          ]
+        },
+        {
+          "role": "formalPassage",
+          "source": "audio/azure-v1/test-03-33.mp3",
+          "start": 0.5,
+          "end": 51.404,
+          "sha256": "fc6a39c797bbfd6de0d48016855bc51d6a1a30fcaa784b379d27bc77da05cf26",
+          "unpromptedUtterances": [
+            "hello",
+            "the state chain",
+            "this is our media from the green table restaurant calling about your team's detail on wednesday",
+            "you're booking for fourteen people is com found and we can seek everyone had one long table as requested",
+            "there is one change to the menu i send you the mushrooms that say is an available because al supply us delivery frame:1196 pts:458959  pts_time:28.684938",
+            "the chef can offer roasted vegetables salads and the same pricing state",
+            "he set me know when that as substitution is acceptable",
+            "i also need the final number of vegetarian meals by monday evening rather than wednesday my name so the kitchen frame:1971 pts:756559  pts_time:47.284937",
+            "you don't need to pay anything now your existing to cause a steel covers the booking",
+            "and the full went to hearing from you"
+          ]
+        },
+        {
+          "role": "formalStem",
+          "source": "audio/formal/test-03-cues-06.mp3",
+          "start": 12.28125,
+          "end": 15.32821,
+          "sha256": "9f430340924f58a6fbfd974ab72cd67e7547780096cc11b1b677776d4a444d60",
+          "unpromptedUtterances": [
+            "number ninety seven which is the speaker say about payment"
+          ]
+        }
+      ]
+    }
+  ]
+}
