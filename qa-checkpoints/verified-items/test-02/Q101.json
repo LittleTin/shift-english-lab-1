@@ -1,8 +1,60 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "Plural results takes finite present indicate; indicates is singular, indication noun, indicating nonfinite. Chinese preserves that the revised heat sink lowers processor temperature, and all glosses/reasons align.",
+  "checks": "Distinguish ruling out a candidate fault from identifying it, after linking persistent failure in the original device to success in a spare using the same cables. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t02-q101-r2",
+    "testId": "test-02",
+    "number": 101,
+    "part": 5,
+    "groupId": null,
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "grammar"
+    ],
+    "prompt": "The lab checked the cables before retesting the scanner, but the fault persisted. A spare scanner of the same model then worked with the same cables, so the team could ____ the cables as the likely source of the fault.",
+    "promptZh": "實驗室檢查接線後重新測試掃描器，但故障仍在。接著，同型號的備用掃描器接上同一組線材卻能正常運作，因此團隊可以____「線材是最可能的故障來源」這項推測。",
+    "options": [
+      {
+        "id": "A",
+        "text": "pinpoint",
+        "zh": "確定",
+        "whyZh": "pinpoint 表示確定故障來源。但備用掃描器使用同一組線材仍能正常運作，這項測試並不支持線材最可能有問題的推測。"
+      },
+      {
+        "id": "B",
+        "text": "rule out",
+        "zh": "排除",
+        "whyZh": "原掃描器重新測試仍有故障，但同型號的備用掃描器使用同一組線材可正常運作。依這次比對，團隊可先排除線材是最可能的故障來源，但並不表示線材絕不可能出現間歇性故障。"
+      },
+      {
+        "id": "C",
+        "text": "reproduce",
+        "zh": "重現",
+        "whyZh": "可重現的是故障或症狀，不是線材；備用掃描器也沒有出現同一個故障。"
+      },
+      {
+        "id": "D",
+        "text": "make up for",
+        "zh": "彌補",
+        "whyZh": "兩次測試是在釐清故障來源，不是在補救線材不足。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "原掃描器重新測試仍有故障，但同型號的備用掃描器使用同一組線材可正常運作。依這次比對，團隊可先排除線材是最可能的故障來源，但並不表示線材絕不可能出現間歇性故障。",
+    "evidence": "the fault persisted […] A spare scanner of the same model then worked with the same cables",
+    "vocabulary": [
+      {
+        "term": "rule out",
+        "zh": "排除",
+        "note": "可用於診斷，表示根據現有證據排除某個原因或優先排查的方向。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t02-q101",
     "testId": "test-02",
     "number": 101,
@@ -53,5 +105,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-02/Q101/verification.json"
 }

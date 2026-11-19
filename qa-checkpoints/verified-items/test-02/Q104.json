@@ -1,8 +1,60 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "Of three alternatives + the most efficient marks highest efficiency. much does not directly mark this superlative, many requires count noun, mostly qualifies extent rather than selects best. Zh efficiency comparison correct. Current r2 D replacement and archive A key checked.",
+  "checks": "The inverted past-perfect condition and the explicit present inability jointly distinguish an unreal past result from a future prediction or an ability that actually existed. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t02-q104-r3",
+    "testId": "test-02",
+    "number": 104,
+    "part": 5,
+    "groupId": null,
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "grammar"
+    ],
+    "prompt": "The team can no longer check how the battery performed during the blackout because the backup logger was disconnected. Had the logger stayed connected, the team ____ the missing readings.",
+    "promptZh": "由於備用資料記錄器當時已斷開連線，團隊現在無法確認停電期間的電池表現。如果當時記錄器仍保持連線，團隊就____缺少的讀值。",
+    "options": [
+      {
+        "id": "A",
+        "text": "will be able to recover",
+        "zh": "將能找回",
+        "whyZh": "這會把結果寫成未來可能實現的能力，與文中現在已無法查到讀值相反。"
+      },
+      {
+        "id": "B",
+        "text": "was able to recover",
+        "zh": "當時成功找回",
+        "whyZh": "這指當時已實際找回，但記錄器已斷線，這些讀值並沒有找回。"
+      },
+      {
+        "id": "C",
+        "text": "would otherwise recover",
+        "zh": "否則就會找回",
+        "whyZh": "otherwise 會再引入另一個條件； recover 也沒有表達此處對已過去、未成真的結果所需的完成式。"
+      },
+      {
+        "id": "D",
+        "text": "would have been able to recover",
+        "zh": "本來就能找回",
+        "whyZh": "Had the logger stayed connected 等於 If the logger had stayed connected；它假設過去發生了不同的情況，所以用 would have been able to 表達未能實現的能力。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "Had the logger stayed connected 等於 If the logger had stayed connected；它假設過去發生了不同的情況，所以用 would have been able to 表達未能實現的能力。",
+    "evidence": "can no longer check […] Had the logger stayed connected",
+    "vocabulary": [
+      {
+        "term": "logger",
+        "zh": "資料記錄器",
+        "note": "自動擷取並儲存設備讀值的裝置。"
+      }
+    ],
+    "revision": 3
+  },
+  "originalQuestion": {
     "id": "t02-q104-r2",
     "testId": "test-02",
     "number": 104,
@@ -54,56 +106,5 @@
     ],
     "revision": 2
   },
-  "originalQuestion": {
-    "id": "t02-q104",
-    "testId": "test-02",
-    "number": 104,
-    "part": 5,
-    "groupId": null,
-    "topic": "technology",
-    "difficulty": "intermediate",
-    "tags": [
-      "technology",
-      "grammar"
-    ],
-    "prompt": "Of the three cooling designs tested, option B was the ____ efficient.",
-    "promptZh": "在受測的三種散熱設計中，B 方案的效率____。",
-    "options": [
-      {
-        "text": "most",
-        "zh": "最高",
-        "whyZh": "三者比較且前有 the，使用 most efficient 最高級。",
-        "id": "A"
-      },
-      {
-        "text": "much",
-        "zh": "多",
-        "whyZh": "much 不能直接與 efficient 組成此最高級。",
-        "id": "B"
-      },
-      {
-        "text": "many",
-        "zh": "許多",
-        "whyZh": "many 修飾可數名詞，不能修飾 efficient。",
-        "id": "C"
-      },
-      {
-        "text": "more",
-        "zh": "較高",
-        "whyZh": "more 是比較級，這裡應從三者選出最高程度。",
-        "id": "D"
-      }
-    ],
-    "answer": "A",
-    "explanationZh": "三者比較且前有 the，使用 most efficient 最高級。",
-    "evidence": "Of the three ... the most efficient",
-    "vocabulary": [
-      {
-        "term": "efficient",
-        "zh": "有效率的",
-        "note": "以較少資源達成所需結果。"
-      }
-    ],
-    "revision": 1
-  }
+  "retiredSourceReference": "question-reserve/test-02/Q104/verification.json"
 }

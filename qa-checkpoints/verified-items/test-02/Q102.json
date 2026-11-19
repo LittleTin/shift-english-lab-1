@@ -1,8 +1,60 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "Unless + engineer approves supplies a finite exception to do-not-substitute; because of, despite, during are prepositions unable to take this finite clause as written. zh uses 除非…否則 and all reasons preserve necessary approval.",
+  "checks": "Separate supplier availability from a formal permission gate; compare grammatical conditional and concessive options that imply opposing rules. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t02-q102-r2",
+    "testId": "test-02",
+    "number": 102,
+    "part": 5,
+    "groupId": null,
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "grammar"
+    ],
+    "prompt": "The supplier says it can deliver the substitute fasteners today. Production may use them ____ the signed change notice is filed before the first unit is assembled; with no notice on file, the fasteners must stay in stock even if approval was given by phone.",
+    "promptZh": "供應商表示今天可以交付替代扣件。產線可以使用這些扣件，____在組裝第一台之前，完成已簽署變更通知的歸檔；要是沒有歸檔，即使已取得電話核准，扣件也只能留在庫房。",
+    "options": [
+      {
+        "id": "A",
+        "text": "even if",
+        "zh": "即使",
+        "whyZh": "後文明示沒有歸檔就不能領用；even if 在這裡會把歸檔說成不影響使用許可，與規定相反。"
+      },
+      {
+        "id": "B",
+        "text": "unless",
+        "zh": "除非／若不",
+        "whyZh": "unless 會讓句意變成未歸檔時才可使用，正好顛倒規定。"
+      },
+      {
+        "id": "C",
+        "text": "provided that",
+        "zh": "前提是",
+        "whyZh": "供應商能交貨不等於產線可使用；必須在首台組裝前將已簽署的變更通知歸檔，才符合使用條件。"
+      },
+      {
+        "id": "D",
+        "text": "as though",
+        "zh": "彷彿",
+        "whyZh": "as though 引出假設情況，不能設定是否可使用替代扣件的正式條件。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "供應商能交貨不等於產線可使用；必須在首台組裝前將已簽署的變更通知歸檔，才符合使用條件。",
+    "evidence": "the signed change notice is filed before the first unit is assembled; with no notice on file, the fasteners must stay in stock",
+    "vocabulary": [
+      {
+        "term": "file",
+        "zh": "歸檔",
+        "note": "在正式紀錄中登錄並保存文件。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t02-q102",
     "testId": "test-02",
     "number": 102,
@@ -53,5 +105,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-02/Q102/verification.json"
 }
