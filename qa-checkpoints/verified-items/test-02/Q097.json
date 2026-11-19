@@ -1,0 +1,124 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "恢復供水後，若混濁未改善就聯絡管理室；不要因而停電梯、自換閥或等管理室關閉。 正式題號、口述題幹與兩模式的對話範圍均核對；英中題意和各選項解析已校對。",
+  "activeQuestion": {
+    "id": "t02-q097",
+    "testId": "test-02",
+    "number": 97,
+    "part": 4,
+    "groupId": "t02-g053",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "interrupted"
+    ],
+    "prompt": "What should residents do if cloudy water continues?",
+    "promptZh": "如果水持續混濁，住戶應怎麼做？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Stop using the elevators permanently.",
+        "zh": "永久停止使用電梯。",
+        "whyZh": "電梯與水質問題無關且正常運作。"
+      },
+      {
+        "id": "B",
+        "text": "Replace the main valve themselves.",
+        "zh": "自行更換主閥門。",
+        "whyZh": "閥門工程由承包商負責，住戶沒有此指示。"
+      },
+      {
+        "id": "C",
+        "text": "Wait until the office closes.",
+        "zh": "等管理室關閉。",
+        "whyZh": "管理室施工期間照常開放，應聯絡而非等待關閉。"
+      },
+      {
+        "id": "D",
+        "text": "Contact the building office.",
+        "zh": "聯絡管理室。",
+        "whyZh": "公告說問題持續時請聯絡管理室。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "公告說問題持續時請聯絡管理室。",
+    "evidence": "Contact the building office if the problem continues.",
+    "vocabulary": [
+      {
+        "term": "interrupted",
+        "zh": "中斷的",
+        "note": "本題指水服務暫時停止。"
+      },
+      {
+        "term": "contractor",
+        "zh": "承包商",
+        "note": "受託執行特定工程或工作的單位。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g053",
+    "testId": "test-02",
+    "part": 4,
+    "title": "An apartment water interruption",
+    "titleZh": "公寓停水通知",
+    "topic": "daily",
+    "passage": "Residents of Green Court, please note that water service will be interrupted on Tuesday from nine until eleven in the morning. A contractor will replace a valve in the main supply line. Please fill any containers you may need before nine. The elevators and electricity will operate normally. After service returns, let the cold water run briefly if it appears cloudy. Contact the building office if the problem continues. The office will remain open throughout the work.",
+    "passageZh": "Green Court 住戶請注意：星期二上午九點至十一點將暫停供水。承包商會更換主供水管線中的一個閥門。請在九點前裝好需要的用水。電梯與電力將正常運作。恢復供水後，若冷水看起來混濁，請先讓它短暫流一會兒。如果問題持續，請聯絡管理室。施工期間管理室照常開放。",
+    "audioScript": "Residents of Green Court, please note that water service will be interrupted on Tuesday from nine until eleven in the morning. A contractor will replace a valve in the main supply line. Please fill any containers you may need before nine. The elevators and electricity will operate normally. After service returns, let the cold water run briefly if it appears cloudy. Contact the building office if the problem continues. The office will remain open throughout the work.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Residents of Green Court, please note that water service will be interrupted on Tuesday from nine until eleven in the morning. A contractor will replace a valve in the main supply line. Please fill any containers you may need before nine. The elevators and electricity will operate normally. After service returns, let the cold water run briefly if it appears cloudy. Contact the building office if the problem continues. The office will remain open throughout the work."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-30.mp3",
+    "duration": 30.288,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-GB",
+        "role": "female",
+        "modelVoice": "en-GB-SoniaNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 30.788
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-02-cues-05.mp3",
+      "mode": "cue",
+      "start": 65.12117,
+      "end": 68.50496,
+      "assetSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+      "speech": "Questions 95-97, listen to the talk."
+    },
+    {
+      "path": "audio/azure-v1/test-02-30.mp3",
+      "mode": "passage",
+      "start": 0.5,
+      "end": 30.788,
+      "assetSha256": "e9eaf4ee553a1976998c5bf0c7ac95205921d8ed5ab164e1820efa45347b9959",
+      "speech": "Residents of Green Court, please note that water service will be interrupted on Tuesday from 9 until 11 in the morning. A contractor will replace a valve in the main supply line. Please fill any containers you may need before 9. The elevators and electricity will operate normally. After service returns, let the cold water run briefly if it appears cloudy. Contact the building office if the problem continues. The office will remain open throughout the work."
+    },
+    {
+      "path": "audio/formal/test-02-cues-06.mp3",
+      "mode": "question",
+      "start": 7.93508,
+      "end": 12.01238,
+      "assetSha256": "3c8400b6ebe89d387b2d6d7bf0ba1a5cf649939f3ffb9edd517ed3aa1d3ecccb",
+      "speech": "Number 97. What should residents do if cloudy water continues?"
+    },
+    {
+      "path": "audio/azure-v1/test-02-30.mp3",
+      "mode": "practice",
+      "start": 0.5,
+      "end": 30.788,
+      "assetSha256": "e9eaf4ee553a1976998c5bf0c7ac95205921d8ed5ab164e1820efa45347b9959",
+      "speech": "Residents of Green Court, please note that water service will be interrupted on Tuesday from 9 until 11 in the morning. A contractor will replace a valve in the main supply line. Please fill any containers you may need before 9. The elevators and electricity will operate normally. After service returns, let the cold water run briefly if it appears cloudy. Contact the building office if the problem continues. The office will remain open throughout the work."
+    }
+  ]
+}

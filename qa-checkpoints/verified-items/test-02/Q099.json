@@ -1,0 +1,129 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "課中下載大檔恐拖慢大家的訪客 Wi-Fi；不是無電、午餐後禁用筆電或取代報名。 正式題號、口述題幹與兩模式的對話範圍均核對；英中題意和各選項解析已校對。",
+  "activeQuestion": {
+    "id": "t02-q099",
+    "testId": "test-02",
+    "number": 99,
+    "part": 4,
+    "groupId": "t02-g054",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "troubleshooting"
+    ],
+    "prompt": "Why should the sample project be downloaded beforehand?",
+    "promptZh": "為何應事先下載範例專案？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Because there will be no electricity.",
+        "zh": "因為現場沒有電。",
+        "whyZh": "通知沒有停電資訊。"
+      },
+      {
+        "id": "B",
+        "text": "To avoid slowing the shared wireless connection.",
+        "zh": "避免拖慢共用無線連線。",
+        "whyZh": "講者說課程中下載大型檔案可能影響大家速度。"
+      },
+      {
+        "id": "C",
+        "text": "Because laptops cannot be used after lunch.",
+        "zh": "因為午餐後不能用筆電。",
+        "whyZh": "下午仍有練習，沒有禁用筆電。"
+      },
+      {
+        "id": "D",
+        "text": "To replace the registration process.",
+        "zh": "用來取代報名程序。",
+        "whyZh": "下載專案與報名是不同事項。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "講者說課程中下載大型檔案可能影響大家速度。",
+    "evidence": "downloading large files during the session could slow everyone down",
+    "vocabulary": [
+      {
+        "term": "troubleshooting",
+        "zh": "問題排除",
+        "note": "有系統地查找與處理問題的過程。"
+      },
+      {
+        "term": "relevant",
+        "zh": "相關的",
+        "note": "relevant examples 指與參加者問題有關的範例。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g054",
+    "testId": "test-02",
+    "part": 4,
+    "title": "A client workshop reminder",
+    "titleZh": "客戶工作坊提醒",
+    "topic": "business",
+    "passage": "This is a reminder for everyone attending Friday's customer workshop. We will meet in room five at nine, not in the auditorium as originally planned. Please bring a laptop with the sample project already downloaded. Guest wireless access will be available, but downloading large files during the session could slow everyone down. The morning will focus on setup, followed by troubleshooting exercises after lunch. Participants should submit their questions through the registration page by Thursday noon so that the trainer can prepare relevant examples.",
+    "passageZh": "提醒參加星期五客戶工作坊的各位：我們九點在五號教室集合，不是原本規劃的大禮堂。請攜帶已下載範例專案的筆電。現場提供訪客無線網路，但課程中下載大型檔案可能拖慢大家的連線。上午著重設定，午餐後進行問題排除練習。參加者最遲應在星期四中午透過報名頁面提交問題，讓講師準備相關範例。",
+    "audioScript": "This is a reminder for everyone attending Friday's customer workshop. We will meet in room five at nine, not in the auditorium as originally planned. Please bring a laptop with the sample project already downloaded. Guest wireless access will be available, but downloading large files during the session could slow everyone down. The morning will focus on setup, followed by troubleshooting exercises after lunch. Participants should submit their questions through the registration page by Thursday noon so that the trainer can prepare relevant examples.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "This is a reminder for everyone attending Friday's customer workshop. We will meet in room five at nine, not in the auditorium as originally planned. Please bring a laptop with the sample project already downloaded. Guest wireless access will be available, but downloading large files during the session could slow everyone down. The morning will focus on setup, followed by troubleshooting exercises after lunch. Participants should submit their questions through the registration page by Thursday noon so that the trainer can prepare relevant examples."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-31.mp3",
+    "duration": 32.064,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-CA",
+        "role": "male",
+        "modelVoice": "en-CA-LiamNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 32.564
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-02-cues-06.mp3",
+      "mode": "cue",
+      "start": 12.26238,
+      "end": 15.64746,
+      "assetSha256": "3c8400b6ebe89d387b2d6d7bf0ba1a5cf649939f3ffb9edd517ed3aa1d3ecccb",
+      "speech": "Questions 98 through 100. Listen to the talk."
+    },
+    {
+      "path": "audio/azure-v1/test-02-31.mp3",
+      "mode": "passage",
+      "start": 0.5,
+      "end": 32.564,
+      "assetSha256": "43a044961ea61cf351dc3a05fca80b24446811ef8db1c8622cd79c323f80680a",
+      "speech": "This is a reminder for everyone attending Friday's customer workshop. We will meet in room 5 at 9, not in the auditorium as originally planned. Please bring a laptop with the sample project already downloaded. Guest wireless access will be available, but downloading large files during the session could slow everyone down. The morning will focus on setup, followed by troubleshooting exercises after lunch. Participants should submit their questions through the registration page by Thursday Stay tuned so that the trainer can prepare relevant examples. [BLANK_AUDIO]"
+    },
+    {
+      "path": "audio/formal/test-02-cues-06.mp3",
+      "mode": "question",
+      "start": 19.03912,
+      "end": 23.27604,
+      "assetSha256": "3c8400b6ebe89d387b2d6d7bf0ba1a5cf649939f3ffb9edd517ed3aa1d3ecccb",
+      "speech": "Number 99. Why should the sample project be downloaded beforehand?"
+    },
+    {
+      "path": "audio/azure-v1/test-02-31.mp3",
+      "mode": "practice",
+      "start": 0.5,
+      "end": 32.564,
+      "assetSha256": "43a044961ea61cf351dc3a05fca80b24446811ef8db1c8622cd79c323f80680a",
+      "speech": "This is a reminder for everyone attending Friday's customer workshop. We will meet in room 5 at 9, not in the auditorium as originally planned. Please bring a laptop with the sample project already downloaded. Guest wireless access will be available, but downloading large files during the session could slow everyone down. The morning will focus on setup, followed by troubleshooting exercises after lunch. Participants should submit their questions through the registration page by Thursday Stay tuned so that the trainer can prepare relevant examples. [BLANK_AUDIO]"
+    }
+  ],
+  "audioCorroboration": {
+    "retry-q100-deadline-0.86": " for lunch. Participants should submit their questions through the registration page by Thursday noon so that the trainer can prepare relevant examples.",
+    "retry-q100-deadline-1.00": " for lunch. Participants should submit their questions through the registration page by Thursday noon so that the trainer can prepare relevant examples.",
+    "retry-q100-deadline-1.14": " for lunch. Participants should submit their questions through the registration page by Thursday noon so that the trainer can prepare relevant examples.  [BLANK_AUDIO]"
+  }
+}

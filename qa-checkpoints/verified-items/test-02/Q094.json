@@ -1,0 +1,129 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "咖啡廳下午四點關，比博物館早一小時；博物館下午五點關，兩點十五分是導覽開始。 正式題號、口述題幹與兩模式的對話範圍均核對；英中題意和各選項解析已校對。",
+  "activeQuestion": {
+    "id": "t02-q094",
+    "testId": "test-02",
+    "number": 94,
+    "part": 4,
+    "groupId": "t02-g052",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "permanent collection"
+    ],
+    "prompt": "At what time does the museum close?",
+    "promptZh": "博物館幾點關門？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Four in the afternoon.",
+        "zh": "下午四點。",
+        "whyZh": "四點是咖啡廳打烊時間。"
+      },
+      {
+        "id": "B",
+        "text": "Five in the afternoon.",
+        "zh": "下午五點。",
+        "whyZh": "咖啡廳四點關，比博物館早一小時，因此博物館五點關。"
+      },
+      {
+        "id": "C",
+        "text": "Two fifteen.",
+        "zh": "兩點十五分。",
+        "whyZh": "這是導覽開始時間。"
+      },
+      {
+        "id": "D",
+        "text": "Three in the afternoon.",
+        "zh": "下午三點。",
+        "whyZh": "由四點再加一小時才是博物館關門時間，不是三點。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "咖啡廳四點關，比博物館早一小時，因此博物館五點關。",
+    "evidence": "The cafe will close at four, one hour before the museum.",
+    "vocabulary": [
+      {
+        "term": "permanent collection",
+        "zh": "常設展藏品",
+        "note": "長期展示的館藏，與特展相對。"
+      },
+      {
+        "term": "admission",
+        "zh": "入場",
+        "note": "general admission ticket 指一般入場券。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g052",
+    "testId": "test-02",
+    "part": 4,
+    "title": "Museum entry announcement",
+    "titleZh": "博物館入場公告",
+    "topic": "daily",
+    "passage": "Welcome to the Harbor Museum. The special photography exhibition is on the second floor, while the permanent collection remains on the ground floor. Your general admission ticket includes both areas today. The guided tour of the photography exhibition begins at two fifteen beside the main staircase. Large bags must be left in the lockers near the entrance. You may take photographs without flash, except where a sign indicates otherwise. The cafe will close at four, one hour before the museum.",
+    "passageZh": "歡迎來到 Harbor 博物館。攝影特展位於二樓，常設展仍在一樓。今天的一般門票包含兩個展區。攝影展導覽於兩點十五分在主樓梯旁開始。大型包包必須寄放在入口附近的置物櫃。除另有標示之處外，可以拍照但不能使用閃光燈。咖啡廳四點打烊，比博物館早一小時。",
+    "audioScript": "Welcome to the Harbor Museum. The special photography exhibition is on the second floor, while the permanent collection remains on the ground floor. Your general admission ticket includes both areas today. The guided tour of the photography exhibition begins at two fifteen beside the main staircase. Large bags must be left in the lockers near the entrance. You may take photographs without flash, except where a sign indicates otherwise. The cafe will close at four, one hour before the museum.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Welcome to the Harbor Museum. The special photography exhibition is on the second floor, while the permanent collection remains on the ground floor. Your general admission ticket includes both areas today. The guided tour of the photography exhibition begins at two fifteen beside the main staircase. Large bags must be left in the lockers near the entrance. You may take photographs without flash, except where a sign indicates otherwise. The cafe will close at four, one hour before the museum."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-29.mp3",
+    "duration": 32.064,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-US",
+        "role": "male",
+        "modelVoice": "en-US-GuyNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 32.564
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-02-cues-05.mp3",
+      "mode": "cue",
+      "start": 51.32858,
+      "end": 54.63638,
+      "assetSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+      "speech": "Questions 92 through 94, listen to the talk."
+    },
+    {
+      "path": "audio/azure-v1/test-02-29.mp3",
+      "mode": "passage",
+      "start": 0.5,
+      "end": 32.564,
+      "assetSha256": "b1e8c9e173c8c19a47b8471d0681bba676f567ae0fb9bb60cb933e27209c882f",
+      "speech": "Welcome to the Harbor Museum. The special photography exhibition is on the second floor, while the permanent collection remains on the ground floor. Your general admission ticket includes both areas today. The guided tour of the photography exhibition begins at 215 beside the main staircase. Large bags must be left in the lockers near the entrance. You may take photographs without flash, except where a sign indicates otherwise. The Cathay will close at 4, 1 hour before the museum. [BLANK_AUDIO]"
+    },
+    {
+      "path": "audio/formal/test-02-cues-05.mp3",
+      "mode": "question",
+      "start": 61.83446,
+      "end": 64.87117,
+      "assetSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+      "speech": "Number 94, at what time does the museum close?"
+    },
+    {
+      "path": "audio/azure-v1/test-02-29.mp3",
+      "mode": "practice",
+      "start": 0.5,
+      "end": 32.564,
+      "assetSha256": "b1e8c9e173c8c19a47b8471d0681bba676f567ae0fb9bb60cb933e27209c882f",
+      "speech": "Welcome to the Harbor Museum. The special photography exhibition is on the second floor, while the permanent collection remains on the ground floor. Your general admission ticket includes both areas today. The guided tour of the photography exhibition begins at 215 beside the main staircase. Large bags must be left in the lockers near the entrance. You may take photographs without flash, except where a sign indicates otherwise. The Cathay will close at 4, 1 hour before the museum. [BLANK_AUDIO]"
+    }
+  ],
+  "audioCorroboration": {
+    "retry-q092-cafe-0.87": " The cafe will close at 4, 1 hour before the museum.",
+    "retry-q092-cafe-1.00": " The cafe will close at 4, 1 hour before the museum.  You",
+    "retry-q092-cafe-1.13": " The café will close at 4, 1 hour before the museum.  [BLANK_AUDIO]"
+  }
+}

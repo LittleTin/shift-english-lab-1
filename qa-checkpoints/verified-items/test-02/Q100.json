@@ -1,0 +1,179 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "最遲星期四中午在報名頁送出問題，並非交還筆電、完成星期五練習或取消網路權限。 正式題號、口述題幹與兩模式的對話範圍均核對；英中題意和各選項解析已校對。",
+  "activeQuestion": {
+    "id": "t02-q100",
+    "testId": "test-02",
+    "number": 100,
+    "part": 4,
+    "groupId": "t02-g054",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "troubleshooting"
+    ],
+    "prompt": "What should participants do by Thursday noon?",
+    "promptZh": "參加者最遲應在星期四中午完成什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Return their laptops to the trainer.",
+        "zh": "把筆電交還講師。",
+        "whyZh": "筆電是參加者要帶來使用的，未要求交還。"
+      },
+      {
+        "id": "B",
+        "text": "Submit their questions on the registration page.",
+        "zh": "在報名頁面提交問題。",
+        "whyZh": "講者要求參加者最遲在星期四中午透過報名頁面提交問題，讓講師能準備相關範例。"
+      },
+      {
+        "id": "C",
+        "text": "Complete all troubleshooting exercises.",
+        "zh": "完成全部問題排除練習。",
+        "whyZh": "練習在星期五午餐後進行。"
+      },
+      {
+        "id": "D",
+        "text": "Cancel their wireless access.",
+        "zh": "取消無線網路存取。",
+        "whyZh": "訪客無線網路會提供，沒有取消要求。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "講者要求參加者最遲在星期四中午透過報名頁面提交問題，讓講師能準備相關範例。",
+    "evidence": "submit their questions through the registration page by Thursday noon",
+    "vocabulary": [
+      {
+        "term": "troubleshooting",
+        "zh": "問題排除",
+        "note": "有系統地查找與處理問題的過程。"
+      },
+      {
+        "term": "relevant",
+        "zh": "相關的",
+        "note": "relevant examples 指與參加者問題有關的範例。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g054",
+    "testId": "test-02",
+    "part": 4,
+    "title": "A client workshop reminder",
+    "titleZh": "客戶工作坊提醒",
+    "topic": "business",
+    "passage": "This is a reminder for everyone attending Friday's customer workshop. We will meet in room five at nine, not in the auditorium as originally planned. Please bring a laptop with the sample project already downloaded. Guest wireless access will be available, but downloading large files during the session could slow everyone down. The morning will focus on setup, followed by troubleshooting exercises after lunch. Participants should submit their questions through the registration page by Thursday noon so that the trainer can prepare relevant examples.",
+    "passageZh": "提醒參加星期五客戶工作坊的各位：我們九點在五號教室集合，不是原本規劃的大禮堂。請攜帶已下載範例專案的筆電。現場提供訪客無線網路，但課程中下載大型檔案可能拖慢大家的連線。上午著重設定，午餐後進行問題排除練習。參加者最遲應在星期四中午透過報名頁面提交問題，讓講師準備相關範例。",
+    "audioScript": "This is a reminder for everyone attending Friday's customer workshop. We will meet in room five at nine, not in the auditorium as originally planned. Please bring a laptop with the sample project already downloaded. Guest wireless access will be available, but downloading large files during the session could slow everyone down. The morning will focus on setup, followed by troubleshooting exercises after lunch. Participants should submit their questions through the registration page by Thursday noon so that the trainer can prepare relevant examples.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "This is a reminder for everyone attending Friday's customer workshop. We will meet in room five at nine, not in the auditorium as originally planned. Please bring a laptop with the sample project already downloaded. Guest wireless access will be available, but downloading large files during the session could slow everyone down. The morning will focus on setup, followed by troubleshooting exercises after lunch. Participants should submit their questions through the registration page by Thursday noon so that the trainer can prepare relevant examples."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-31.mp3",
+    "duration": 32.064,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-CA",
+        "role": "male",
+        "modelVoice": "en-CA-LiamNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 32.564
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-02-cues-06.mp3",
+      "mode": "cue",
+      "start": 12.26238,
+      "end": 15.64746,
+      "assetSha256": "3c8400b6ebe89d387b2d6d7bf0ba1a5cf649939f3ffb9edd517ed3aa1d3ecccb",
+      "speech": "Questions 98 through 100. Listen to the talk."
+    },
+    {
+      "path": "audio/azure-v1/test-02-31.mp3",
+      "mode": "passage",
+      "start": 0.5,
+      "end": 32.564,
+      "assetSha256": "43a044961ea61cf351dc3a05fca80b24446811ef8db1c8622cd79c323f80680a",
+      "speech": "This is a reminder for everyone attending Friday's customer workshop. We will meet in room 5 at 9, not in the auditorium as originally planned. Please bring a laptop with the sample project already downloaded. Guest wireless access will be available, but downloading large files during the session could slow everyone down. The morning will focus on setup, followed by troubleshooting exercises after lunch. Participants should submit their questions through the registration page by Thursday Stay tuned so that the trainer can prepare relevant examples. [BLANK_AUDIO]"
+    },
+    {
+      "path": "audio/formal/test-02-cues-06.mp3",
+      "mode": "question",
+      "start": 23.52604,
+      "end": 27.21246,
+      "assetSha256": "3c8400b6ebe89d387b2d6d7bf0ba1a5cf649939f3ffb9edd517ed3aa1d3ecccb",
+      "speech": "Number 100. What should participants do by Thursday noon?"
+    },
+    {
+      "path": "audio/azure-v1/test-02-31.mp3",
+      "mode": "practice",
+      "start": 0.5,
+      "end": 32.564,
+      "assetSha256": "43a044961ea61cf351dc3a05fca80b24446811ef8db1c8622cd79c323f80680a",
+      "speech": "This is a reminder for everyone attending Friday's customer workshop. We will meet in room 5 at 9, not in the auditorium as originally planned. Please bring a laptop with the sample project already downloaded. Guest wireless access will be available, but downloading large files during the session could slow everyone down. The morning will focus on setup, followed by troubleshooting exercises after lunch. Participants should submit their questions through the registration page by Thursday Stay tuned so that the trainer can prepare relevant examples. [BLANK_AUDIO]"
+    }
+  ],
+  "audioCorroboration": {
+    "retry-q100-deadline-0.86": " for lunch. Participants should submit their questions through the registration page by Thursday noon so that the trainer can prepare relevant examples.",
+    "retry-q100-deadline-1.00": " for lunch. Participants should submit their questions through the registration page by Thursday noon so that the trainer can prepare relevant examples.",
+    "retry-q100-deadline-1.14": " for lunch. Participants should submit their questions through the registration page by Thursday noon so that the trainer can prepare relevant examples.  [BLANK_AUDIO]"
+  },
+  "readingTransition": {
+    "lastListeningAnswer": {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 11.284030000000202,
+      "part": 4,
+      "groupId": "t02-g054",
+      "questionId": "t02-q100",
+      "at": 2679.33197
+    },
+    "physicalClosingFrame": {
+      "src": "audio/formal-v2/narrator-03.mp3",
+      "start": 33.232,
+      "end": 42.616,
+      "duration": 9.384,
+      "kind": "audio",
+      "role": "closing",
+      "part": 4,
+      "groupId": "t02-g054",
+      "at": 2690.616
+    },
+    "decodedReadingTransition": {
+      "src": "audio/formal-v2/narrator-03.mp3",
+      "srcSha256": "3d48bf365e43344f05bdf00d862b20d2e1ecc060d9ecdf78ebd1b0e810c2f93c",
+      "startSec": 33.232,
+      "endSec": 42.616,
+      "atSec": 2690.616,
+      "segments": [
+        {
+          "text": "This is the end of the listening test.",
+          "startMs": 0,
+          "endMs": 2720
+        },
+        {
+          "text": "You will now begin the reading test.",
+          "startMs": 2720,
+          "endMs": 5520
+        },
+        {
+          "text": "You have 75 minutes for the reading section.",
+          "startMs": 5520,
+          "endMs": 8400
+        }
+      ]
+    },
+    "adjacentNoGapOrOverlap": true,
+    "authoredReadingStartSec": 2700,
+    "closingWordingCheck": "Closing explicitly ends listening, begins reading, and grants 75 minutes.",
+    "scopeLimit": "Validates authored timing and the actual spoken handoff, not the browser timer or UI state."
+  }
+}
