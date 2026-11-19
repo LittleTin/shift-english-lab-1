@@ -1,0 +1,113 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Only C supplies a mode of transportation. A is time and B ownership. Both real versions match the script apart from equivalent time transcription and punctuation; all zh-TW choices and rationales checked.",
+  "activeQuestion": {
+    "id": "t01-q022",
+    "testId": "test-01",
+    "number": 22,
+    "part": 2,
+    "groupId": "t01-g022",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "method"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "Around nine thirty.",
+        "zh": "大約九點半。",
+        "whyZh": "這是時間，無法回答交通方式。"
+      },
+      {
+        "id": "B",
+        "text": "It belongs to a software company.",
+        "zh": "它屬於一家軟體公司。",
+        "whyZh": "辦公室的所有者不是前往該地的方法。"
+      },
+      {
+        "id": "C",
+        "text": "I'm taking the train.",
+        "zh": "我要搭火車。",
+        "whyZh": "How are you getting to 問交通方式；taking the train 直接說明搭乘工具。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "How are you getting to 問交通方式；taking the train 直接說明搭乘工具。",
+    "evidence": "How are you getting to the client's office?",
+    "vocabulary": [
+      {
+        "term": "client",
+        "zh": "客戶",
+        "note": "接受專業服務或與公司交易的客戶。"
+      },
+      {
+        "term": "take the train",
+        "zh": "搭火車",
+        "note": "take 可搭配交通工具。"
+      }
+    ],
+    "revision": 1
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-01-08.mp3",
+      "start": 17.296,
+      "end": 33.136,
+      "assetSha256": "9b0ebb8456f362c9234578465db6642a04f4d5f1563201416321a912205b196e",
+      "speech": "How are you getting to the client's office?\n A. Around 9.30\n B. It belongs to a software company\n C. I'm taking the train"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-08.mp3",
+      "start": 17.8,
+      "end": 32.968,
+      "assetSha256": "3d6388349928581a1cb283eb87c200677560b0423906968674115c2a8a4b23a9",
+      "speech": "How are you getting to the client's office?\n A. Around 9.30\n B. It belongs to a software company.\n C. I'm taking the train."
+    }
+  ],
+  "group": {
+    "id": "t01-g022",
+    "testId": "test-01",
+    "part": 2,
+    "title": "Travel to a client",
+    "titleZh": "前往客戶公司",
+    "topic": "business",
+    "passage": "How are you getting to the client's office?\nA. Around nine thirty. B. It belongs to a software company. C. I'm taking the train.",
+    "passageZh": "你要怎麼去客戶的辦公室？\nA. 大約九點半。\nB. 它屬於一家軟體公司。\nC. 我要搭火車。",
+    "audioScript": "How are you getting to the client's office?\nA. Around nine thirty. B. It belongs to a software company. C. I'm taking the train.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "How are you getting to the client's office?"
+      },
+      {
+        "voice": "male",
+        "text": "A. Around nine thirty. B. It belongs to a software company. C. I'm taking the train."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-08.mp3",
+    "duration": 15.168,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-PH",
+        "role": "female",
+        "modelVoice": "en-PH-RosaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-PH",
+        "role": "male",
+        "modelVoice": "en-PH-JamesNeural"
+      }
+    ],
+    "audioStart": 17.8,
+    "audioEnd": 32.968
+  }
+}
