@@ -1,0 +1,113 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "A is the only assent and specifies email attachment for the updated board files; dimensions and working location do not answer the request. Actual spoken versions match after abbreviation and punctuation normalization; zh-TW choices and rationales checked.",
+  "activeQuestion": {
+    "id": "t01-q017",
+    "testId": "test-01",
+    "number": 17,
+    "part": 2,
+    "groupId": "t01-g017",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "request"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sure, I'll attach them to an email.",
+        "zh": "可以，我會把它們附在電子郵件裡。",
+        "whyZh": "Could you send 是請求；回應答應並提供寄送方式，them 指前述檔案。"
+      },
+      {
+        "id": "B",
+        "text": "The boards are two millimeters thick.",
+        "zh": "電路板厚兩毫米。",
+        "whyZh": "厚度規格沒有回應寄送檔案的請求。"
+      },
+      {
+        "id": "C",
+        "text": "She usually works from home.",
+        "zh": "她通常在家工作。",
+        "whyZh": "第三人的工作地點與所要求的檔案傳送無關。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "Could you send 是請求；回應答應並提供寄送方式，them 指前述檔案。",
+    "evidence": "Could you send me the revised circuit-board files?",
+    "vocabulary": [
+      {
+        "term": "revised",
+        "zh": "修訂過的",
+        "note": "表示內容已經更新。"
+      },
+      {
+        "term": "attach",
+        "zh": "附加；夾帶",
+        "note": "此處指把檔案作為電子郵件附件。"
+      }
+    ],
+    "revision": 1
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-01-06.mp3",
+      "start": 34.764,
+      "end": 52.38,
+      "assetSha256": "c7d56b6889d4b9c5648944a67b35734c297d8a51e741ba7882f273259a8b0476",
+      "speech": "Could you send me the revised circuit board files?\n A. Sure, I'll attach them to an email.\n B. The boards are 2 mm thick.\n C. She usually works from home."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-06.mp3",
+      "start": 34.572,
+      "end": 51.588,
+      "assetSha256": "2c659b8e6353faac248e5fa57bfa09c8161bfd3f5271480cbcf93fa19e631bec",
+      "speech": "Could you send me the revised circuit board files?\n A. Sure, I'll attach them to an email.\n B. The boards are 2 mm thick.\n C. She usually works from home."
+    }
+  ],
+  "group": {
+    "id": "t01-g017",
+    "testId": "test-01",
+    "part": 2,
+    "title": "Revised board files",
+    "titleZh": "新版電路板檔案",
+    "topic": "manufacturing",
+    "passage": "Could you send me the revised circuit-board files?\nA. Sure, I'll attach them to an email. B. The boards are two millimeters thick. C. She usually works from home.",
+    "passageZh": "你可以把修訂過的電路板檔案寄給我嗎？\nA. 可以，我會把它們附在電子郵件裡。\nB. 電路板厚兩毫米。\nC. 她通常在家工作。",
+    "audioScript": "Could you send me the revised circuit-board files?\nA. Sure, I'll attach them to an email. B. The boards are two millimeters thick. C. She usually works from home.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Could you send me the revised circuit-board files?"
+      },
+      {
+        "voice": "male",
+        "text": "A. Sure, I'll attach them to an email. B. The boards are two millimeters thick. C. She usually works from home."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-06.mp3",
+    "duration": 17.016,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-CA",
+        "role": "female",
+        "modelVoice": "en-CA-ClaraNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-CA",
+        "role": "male",
+        "modelVoice": "en-CA-LiamNeural"
+      }
+    ],
+    "audioStart": 34.572,
+    "audioEnd": 51.588
+  }
+}
