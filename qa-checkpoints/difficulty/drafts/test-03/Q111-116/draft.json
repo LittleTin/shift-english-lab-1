@@ -1,0 +1,367 @@
+{
+  "status": "draft-pending-independent-blind-review",
+  "testId": "test-03",
+  "sourceCommit": "5caabdb55aa0faca2ce7dc76bb33723c515a9c42",
+  "rows": [
+    {
+      "guard": {
+        "number": 111,
+        "id": "t03-q111",
+        "revision": 1,
+        "answer": "B",
+        "verifiedPath": "qa-checkpoints/verified-items/test-03/Q111.json",
+        "difficultyPath": "qa-checkpoints/difficulty/test-03/Q111.json",
+        "verifiedSha256": "6de4fa52ce46f33a615ee36b7f3aebda1a51c6570073ece0f1e40e7990dad8b2",
+        "difficultySha256": "9d97705f64fc65316a5c3433238ecb65dcee86bdc7e45299696e8f544538f13c",
+        "oldCanonicalSha256": "e18071c1bce6ff93c03f8ed272d6ce274f5bfbeb9a6f2243382f8b413c541bc8"
+      },
+      "question": {
+        "id": "t03-q111-r2",
+        "testId": "test-03",
+        "number": 111,
+        "part": 5,
+        "groupId": null,
+        "topic": "technology",
+        "tags": [
+          "technology",
+          "context"
+        ],
+        "vocabulary": [],
+        "difficulty": "intermediate",
+        "prompt": "At 9:05, the dashboard issued a warning about the backup line. By the time Chen opened the alert at 9:12, the controller ____ the line, so there was nothing left for him to switch off.",
+        "promptZh": "上午 9:05，儀表板針對備用線路發出警訊。到了上午 9:12，陳開啟警訊時，控制器____該線路，因此不需要他再關閉任何開關。",
+        "options": [
+          {
+            "id": "A",
+            "text": "would soon shut down",
+            "zh": "很快就會關閉",
+            "whyZh": "表示在當時之後才會切斷線路，與陳當時已無須關閉矛盾。"
+          },
+          {
+            "id": "B",
+            "text": "was still shutting down",
+            "zh": "仍在關閉",
+            "whyZh": "表示動作仍在進行；後文表示已無須再關閉，顯示關閉動作已完成。"
+          },
+          {
+            "id": "C",
+            "text": "had already shut down",
+            "zh": "早已關閉",
+            "whyZh": "警訊出現與陳打開警訊是先後的兩個時間點；後文顯示關閉在第二個過去時間點以前已完成，因此用過去完成式。"
+          },
+          {
+            "id": "D",
+            "text": "was expected to shut down",
+            "zh": "預計會關閉",
+            "whyZh": "預期關閉不能證明線路在陳查看時已關閉。"
+          }
+        ],
+        "answer": "C",
+        "explanationZh": "警訊出現與陳打開警訊是先後的兩個時間點；後文顯示關閉在第二個過去時間點以前已完成，因此用過去完成式。",
+        "evidence": "The clock reference is past and the second clause requires completed automatic shutdown rather than a forecast or in-progress activity.",
+        "revision": 2
+      },
+      "editorialDifficultyReason": "The clock reference is past and the second clause requires completed automatic shutdown rather than a forecast or in-progress activity."
+    },
+    {
+      "guard": {
+        "number": 112,
+        "id": "t03-q112",
+        "revision": 1,
+        "answer": "D",
+        "verifiedPath": "qa-checkpoints/verified-items/test-03/Q112.json",
+        "difficultyPath": "qa-checkpoints/difficulty/test-03/Q112.json",
+        "verifiedSha256": "9e142dc0a8e334e79a951d5612a6060ed2b183f8749077ac3b4fdf475cea0134",
+        "difficultySha256": "fae6e1f0b35965cd51ee53018587f69c2a97975ef1e33f99b6ffdacf8c5e433e",
+        "oldCanonicalSha256": "d642e9dab5b4fa90188908ed21dca9bc9ab59ed98e9aee026308b2fb523fbe68"
+      },
+      "question": {
+        "id": "t03-q112-r2",
+        "testId": "test-03",
+        "number": 112,
+        "part": 5,
+        "groupId": null,
+        "topic": "manufacturing",
+        "tags": [
+          "manufacturing",
+          "context"
+        ],
+        "vocabulary": [],
+        "difficulty": "intermediate",
+        "prompt": "Our current gasket supplier can cover only half the pilot order. We can still start all units on Monday, ____ the alternate supplier confirms that the remaining gaskets will arrive by Friday.",
+        "promptZh": "目前的墊圈供應商只能供應試產訂單所需數量的一半。我們仍可在週一開始生產所有產品，____備用供應商確認會在週五前交付其餘墊圈。",
+        "options": [
+          {
+            "id": "A",
+            "text": "even if",
+            "zh": "即使",
+            "whyZh": "即使備用供應商確認也能如期開工，沒有表達確認是一個必要的補足條件；「一半」讓補足缺料成為關鍵。"
+          },
+          {
+            "id": "B",
+            "text": "whether or not",
+            "zh": "無論是否",
+            "whyZh": "表示有無交貨確認都不影響全數開工，與現有供應量只夠一半矛盾。"
+          },
+          {
+            "id": "C",
+            "text": "unless",
+            "zh": "除非",
+            "whyZh": "會把確認交貨讀成阻止如期開工的條件，因果方向相反。"
+          },
+          {
+            "id": "D",
+            "text": "provided that",
+            "zh": "前提是",
+            "whyZh": "備用供應商若能確認及時補足缺料，所有產品才有足夠材料按期開工；provided that 表到達某結果的條件。"
+          }
+        ],
+        "answer": "D",
+        "explanationZh": "備用供應商若能確認及時補足缺料，所有產品才有足夠材料按期開工；provided that 表到達某結果的條件。",
+        "evidence": "Each connective can introduce the clause grammatically; the resource shortfall and the start of all units establish the positive condition.",
+        "revision": 2
+      },
+      "editorialDifficultyReason": "Each connective can introduce the clause grammatically; the resource shortfall and the start of all units establish the positive condition."
+    },
+    {
+      "guard": {
+        "number": 113,
+        "id": "t03-q113",
+        "revision": 1,
+        "answer": "D",
+        "verifiedPath": "qa-checkpoints/verified-items/test-03/Q113.json",
+        "difficultyPath": "qa-checkpoints/difficulty/test-03/Q113.json",
+        "verifiedSha256": "98a0c1568001286d8d4d66d9e0f1d4a88f064aae719db69c93fc5f93423fab4f",
+        "difficultySha256": "408399ecbbdfcc9c5b83e522adb318b388b8950927d6df533d3d8edefb1dc5d2",
+        "oldCanonicalSha256": "41d51f940c7b955fc6e718dcbb001a8541c5de72b98c48ae2aa43a11c484b69f"
+      },
+      "question": {
+        "id": "t03-q113-r2",
+        "testId": "test-03",
+        "number": 113,
+        "part": 5,
+        "groupId": null,
+        "topic": "daily",
+        "tags": [
+          "daily",
+          "context"
+        ],
+        "vocabulary": [],
+        "difficulty": "intermediate",
+        "prompt": "The community center cannot move the ceramics class to Saturday: all kilns are booked that day. It can, ____, lend participants a smaller room on Friday to finish shaping their work.",
+        "promptZh": "社區中心無法把陶藝課移到週六，因為當天的窯爐都已被預約。____，中心可在週五借一間較小的教室給學員，讓他們完成作品塑形。",
+        "options": [
+          {
+            "id": "A",
+            "text": "therefore",
+            "zh": "因此",
+            "whyZh": "週六的窯爐已被預約，不代表週五就有小教室可借；這不是前述情況的必然結果。"
+          },
+          {
+            "id": "B",
+            "text": "however",
+            "zh": "不過",
+            "whyZh": "課程本身不能移到週六，但中心仍能提供有限的替代協助；兩句形成轉折。"
+          },
+          {
+            "id": "C",
+            "text": "likewise",
+            "zh": "同樣地",
+            "whyZh": "前句說不能做，後句說還能做另一件事，不是兩項類似的行動。"
+          },
+          {
+            "id": "D",
+            "text": "otherwise",
+            "zh": "否則",
+            "whyZh": "表示不採取前述行動所造成的結果，但前一句陳述限制，並未指示必須先採取某個行動。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "課程本身不能移到週六，但中心仍能提供有限的替代協助；兩句形成轉折。",
+        "evidence": "Both the unavailable kiln-dependent session and the narrower no-kiln accommodation are needed; the second is a concession, not a causal consequence.",
+        "revision": 2
+      },
+      "editorialDifficultyReason": "Both the unavailable kiln-dependent session and the narrower no-kiln accommodation are needed; the second is a concession, not a causal consequence."
+    },
+    {
+      "guard": {
+        "number": 114,
+        "id": "t03-q114",
+        "revision": 1,
+        "answer": "A",
+        "verifiedPath": "qa-checkpoints/verified-items/test-03/Q114.json",
+        "difficultyPath": "qa-checkpoints/difficulty/test-03/Q114.json",
+        "verifiedSha256": "3634a7c0884df383d0158cf541f6e40aaa66cdda555ecac724c7ca427f892ed2",
+        "difficultySha256": "b140014360ae00f13bb25c5e8dac09b44b4456457aaf0a5ad6a8def839586049",
+        "oldCanonicalSha256": "868d14f4a79d8122c3e5979e137ac913c94afb5ccc34a4999dd2d376a2ed699e"
+      },
+      "question": {
+        "id": "t03-q114-r2",
+        "testId": "test-03",
+        "number": 114,
+        "part": 5,
+        "groupId": null,
+        "topic": "manufacturing",
+        "tags": [
+          "manufacturing",
+          "context"
+        ],
+        "vocabulary": [],
+        "difficulty": "intermediate",
+        "prompt": "For the pilot lot, each carton contains two labels, one for the carton and one for its inspection sheet. The two labels carry the same serial number, so replacing a damaged label with one from ____ carton would link the sheet to the wrong unit.",
+        "promptZh": "試產批次每箱附兩張標籤，一張貼在箱子上，另一張貼在該箱的檢驗單上。兩張標籤的序號相同，因此如果拿____箱的標籤替換破損標籤，就會讓檢驗單對應到錯誤的產品。",
+        "options": [
+          {
+            "id": "A",
+            "text": "another",
+            "zh": "另一",
+            "whyZh": "另一箱的標籤則用該箱自己的序號；混用會把檢驗單指向別的產品。"
+          },
+          {
+            "id": "B",
+            "text": "the same",
+            "zh": "同一",
+            "whyZh": "同一箱的兩張標籤序號一致，換用這一箱的另一張不會指向不同產品。"
+          },
+          {
+            "id": "C",
+            "text": "that particular",
+            "zh": "指定的那一",
+            "whyZh": "在這裡會指回標籤受損的那一箱；兩張標籤的序號一致，沒有更換對象。"
+          },
+          {
+            "id": "D",
+            "text": "any",
+            "zh": "任何一",
+            "whyZh": "範圍包含原本那一箱，但原箱的另一張標籤有相同序號，不一定會指向錯誤產品。"
+          }
+        ],
+        "answer": "A",
+        "explanationZh": "另一箱的標籤則用該箱自己的序號；混用會把檢驗單指向別的產品。",
+        "evidence": "The same-number rule only applies within a carton; the stated wrong-unit consequence requires a distinct carton, not the original or an unrestricted choice.",
+        "revision": 2
+      },
+      "editorialDifficultyReason": "The same-number rule only applies within a carton; the stated wrong-unit consequence requires a distinct carton, not the original or an unrestricted choice."
+    },
+    {
+      "guard": {
+        "number": 115,
+        "id": "t03-q115",
+        "revision": 1,
+        "answer": "D",
+        "verifiedPath": "qa-checkpoints/verified-items/test-03/Q115.json",
+        "difficultyPath": "qa-checkpoints/difficulty/test-03/Q115.json",
+        "verifiedSha256": "484518422fcf959bfbe78e610a7cc87769dfdbdaaa13c00db8c6f3249a430fae",
+        "difficultySha256": "9707ea3a86cdb345630e82ce1b55168dd697cdc33672d6a366796801c1a47ed2",
+        "oldCanonicalSha256": "7baf064bb040ab5092de223e364a018c1d11ce93378010554e53187eb86d0c9a"
+      },
+      "question": {
+        "id": "t03-q115-r2",
+        "testId": "test-03",
+        "number": 115,
+        "part": 5,
+        "groupId": null,
+        "topic": "technology",
+        "tags": [
+          "technology",
+          "context"
+        ],
+        "vocabulary": [],
+        "difficulty": "intermediate",
+        "prompt": "The help desk will keep the old portal available for viewing while records are moved. Users can still look up an existing request, but they should ____ adding notes there until the new portal opens; those notes will not be migrated.",
+        "promptZh": "服務台在移轉紀錄期間，仍會保留舊入口網站供查閱。使用者仍可查找既有申請，但新入口網站啟用前，請____在舊站新增備註；這段期間的備註不會移轉。",
+        "options": [
+          {
+            "id": "A",
+            "text": "carry on",
+            "zh": "繼續",
+            "whyZh": "若繼續在舊站加註，備註就無法隨紀錄移轉。"
+          },
+          {
+            "id": "B",
+            "text": "make a point of",
+            "zh": "特地",
+            "whyZh": "表示刻意做某事，反而會增添無法移轉的備註。"
+          },
+          {
+            "id": "C",
+            "text": "get used to",
+            "zh": "習慣",
+            "whyZh": "表示逐漸適應某個動作，但這裡要解決的是備註無法移轉，不是操作習慣。"
+          },
+          {
+            "id": "D",
+            "text": "hold off on",
+            "zh": "暫緩",
+            "whyZh": "hold off on + V-ing 表示暫緩某項行動；可以查閱但要等新站啟用才加註，避免備註遺失。"
+          }
+        ],
+        "answer": "D",
+        "explanationZh": "hold off on + V-ing 表示暫緩某項行動；可以查閱但要等新站啟用才加註，避免備註遺失。",
+        "evidence": "The existing portal supports finding rather than adding migrated information; the specified end point requires temporarily postponing additions.",
+        "revision": 2
+      },
+      "editorialDifficultyReason": "The existing portal supports finding rather than adding migrated information; the specified end point requires temporarily postponing additions."
+    },
+    {
+      "guard": {
+        "number": 116,
+        "id": "t03-q116",
+        "revision": 1,
+        "answer": "A",
+        "verifiedPath": "qa-checkpoints/verified-items/test-03/Q116.json",
+        "difficultyPath": "qa-checkpoints/difficulty/test-03/Q116.json",
+        "verifiedSha256": "8866c36e3dc63d53a403c1c44fd2e5a543d93a203dfaf36d2956164f66138a0c",
+        "difficultySha256": "dd6e6119e88e08b1f7944102d6cb80fbd8ebd568db9bf057d39c020f0d97d84d",
+        "oldCanonicalSha256": "0752b6a34ef91636b2a7657211a1b4d5bc1b9c70737f4aa40b9499e48c081e5e"
+      },
+      "question": {
+        "id": "t03-q116-r2",
+        "testId": "test-03",
+        "number": 116,
+        "part": 5,
+        "groupId": null,
+        "topic": "daily",
+        "tags": [
+          "daily",
+          "context"
+        ],
+        "vocabulary": [],
+        "difficulty": "intermediate",
+        "prompt": "The Friday evening train is sold out. The clerk can add us to a waiting list now, but that will not guarantee us seats. Of the two trains, if we need guaranteed seats for Friday, we ____ book the earlier one, which still has room.",
+        "promptZh": "週五晚間的列車已客滿。售票員現在可以幫我們登記候補，但不保證有座位。如果週五一定要有座位，這兩班車中，我們____訂提早一班的車票；那班還有空位。",
+        "options": [
+          {
+            "id": "A",
+            "text": "need not",
+            "zh": "不必",
+            "whyZh": "取消搭前一班的必要性，但留下的晚班候補並不保證有座。"
+          },
+          {
+            "id": "B",
+            "text": "will have to",
+            "zh": "就得",
+            "whyZh": "有座位是必要條件；較早的班次仍有空位，而晚班只能候補，因此在所列的兩個選擇之間就得改搭前一班。"
+          },
+          {
+            "id": "C",
+            "text": "might as well",
+            "zh": "不妨",
+            "whyZh": "表示與其選另一個方案，不如選這個，是建議的語氣，不像上下文要求一定有座位的必要性。"
+          },
+          {
+            "id": "D",
+            "text": "would rather not",
+            "zh": "寧可不",
+            "whyZh": "表示不願搭較早的車，但晚班候補無法滿足座位必要條件。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "有座位是必要條件；較早的班次仍有空位，而晚班只能候補，因此在所列的兩個選擇之間就得改搭前一班。",
+        "evidence": "The conditional expresses necessity, not a casual preference; waiting-list eligibility and the earlier remaining capacity must be interpreted together.",
+        "revision": 2
+      },
+      "editorialDifficultyReason": "The conditional expresses necessity, not a casual preference; waiting-list eligibility and the earlier remaining capacity must be interpreted together."
+    }
+  ]
+}

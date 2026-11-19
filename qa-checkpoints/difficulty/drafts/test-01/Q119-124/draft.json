@@ -1,0 +1,396 @@
+{
+  "status": "pending-independent-blind-review-not-adopted",
+  "sourceCommit": "5caabdb55aa0faca2ce7dc76bb33723c515a9c42",
+  "testId": "test-01",
+  "part": 5,
+  "topicPolicy": "preserve each old topic",
+  "preservation": "Old exact evidence remains reachable by pinned commit; archive originals before adoption. No shared group/media or live pack mutation.",
+  "guards": [
+    {
+      "number": 119,
+      "id": "t01-q119",
+      "revision": 1,
+      "key": "C",
+      "verifiedPath": "qa-checkpoints/verified-items/test-01/Q119.json",
+      "sourceGitBlobSha1": "d11712b67cd8b57577a65feba63e8a0cd1110973",
+      "sourceFileSha256": "55b55bba51ae0930936f731ffc3fb85f0588343d3ddb30b13f156953561c37f6",
+      "activeQuestionSha256Canonical": "40b27845b252eff4517b2ce7e639c2e7400732a7857fb26da4da1542bdb8dd96",
+      "difficultyPath": "qa-checkpoints/difficulty/test-01/Q119.json",
+      "difficultySha256": "69f1ee1d508bb5d2fe943a68f27e09b5f3f979b656f151c1e2cb8727f57b626e"
+    },
+    {
+      "number": 120,
+      "id": "t01-q120",
+      "revision": 1,
+      "key": "C",
+      "verifiedPath": "qa-checkpoints/verified-items/test-01/Q120.json",
+      "sourceGitBlobSha1": "216d7895e8e8aa9990b8d4574d8e6549f5ffc8f2",
+      "sourceFileSha256": "c5d94b15b7d7546c6c753326f084404250e73bc8b43f133d6727a56df8d31e12",
+      "activeQuestionSha256Canonical": "96c376037012c708f78caf32cf118c3a69bc903aaf544c845b1b8be0a60e94f6",
+      "difficultyPath": "qa-checkpoints/difficulty/test-01/Q120.json",
+      "difficultySha256": "9b55646135efe8cee77b110f9afb993817397a6f3d8da9821c68496ee738d578"
+    },
+    {
+      "number": 121,
+      "id": "t01-q121",
+      "revision": 1,
+      "key": "B",
+      "verifiedPath": "qa-checkpoints/verified-items/test-01/Q121.json",
+      "sourceGitBlobSha1": "241c447964991b2dc39721c662cf9b9ebae733ce",
+      "sourceFileSha256": "83915d621ad962a806083166401918d9d19836a443b5ddcb897c331941f59747",
+      "activeQuestionSha256Canonical": "99dafb5d53063cee45a51a5e2c9db9be93b42e1569710495da1281777b7c5eab",
+      "difficultyPath": "qa-checkpoints/difficulty/test-01/Q121.json",
+      "difficultySha256": "0e9a97723550d7b17dde227b61e2dee45e13eaf0a31479ec15ac5204cd0272d3"
+    },
+    {
+      "number": 122,
+      "id": "t01-q122",
+      "revision": 1,
+      "key": "C",
+      "verifiedPath": "qa-checkpoints/verified-items/test-01/Q122.json",
+      "sourceGitBlobSha1": "38a1a2da140209c848da984c9acda6fe2cf1e64e",
+      "sourceFileSha256": "0a1aae54cf1be56a019ccf799b81bfdbcfba3ee2bb6503f0884fbcbaa6d209e3",
+      "activeQuestionSha256Canonical": "4313e4f77af42ea085f68694baa3afd5bcd726357ffef38961e90afc0f54589e",
+      "difficultyPath": "qa-checkpoints/difficulty/test-01/Q122.json",
+      "difficultySha256": "a5f5602188c46e5a67e6887b9c21c008f8a9bdb249d0b376251b279b0f6de6e9"
+    },
+    {
+      "number": 123,
+      "id": "t01-q123",
+      "revision": 1,
+      "key": "D",
+      "verifiedPath": "qa-checkpoints/verified-items/test-01/Q123.json",
+      "sourceGitBlobSha1": "cabbde0ff6e92adda48b2cd569f980597407c38e",
+      "sourceFileSha256": "cb6c1b4f965f6c662818d29e5810b567b9019ed68faa72e1fdd514770c893a78",
+      "activeQuestionSha256Canonical": "2ab11f5f973bd4750e139e572685a198a38b4d82d27f38fa165a6dbba38454b7",
+      "difficultyPath": "qa-checkpoints/difficulty/test-01/Q123.json",
+      "difficultySha256": "43b118c17b4b2fd3c50f84c036f1ea15430d59f969deccee1ce4224472a79aed"
+    },
+    {
+      "number": 124,
+      "id": "t01-q124",
+      "revision": 1,
+      "key": "A",
+      "verifiedPath": "qa-checkpoints/verified-items/test-01/Q124.json",
+      "sourceGitBlobSha1": "a8be0700e5c184c1c05537b006adc1461d4a0621",
+      "sourceFileSha256": "9f0f7e583c90f481457609d38fbb553df16eaa8c0f6d8b52cff105e3e8553e25",
+      "activeQuestionSha256Canonical": "955efc071c54697ee4b3c660892a662baded0d3a0b696032be170154bb44cce4",
+      "difficultyPath": "qa-checkpoints/difficulty/test-01/Q124.json",
+      "difficultySha256": "baaccf04a1cc7dfea70f1bbc924267543469856be5ac39c9aa3ad6f9bcb5155a"
+    }
+  ],
+  "draftActiveQuestions": [
+    {
+      "id": "t01-q119-r2",
+      "testId": "test-01",
+      "number": 119,
+      "part": 5,
+      "groupId": null,
+      "topic": "technology",
+      "difficulty": "intermediate",
+      "tags": [
+        "P5",
+        "temporal-conjunction",
+        "technology-context"
+      ],
+      "prompt": "The backup link can carry payment traffic but not video calls. IT will keep video calls on the primary link ____ the backup link has passed its video load test.",
+      "promptZh": "備援連線可承載付款流量，但無法承載視訊通話。IT 部門仍會將視訊通話留在主要連線上，____ 備援連線通過視訊負載測試。",
+      "options": [
+        {
+          "id": "A",
+          "text": "as soon as",
+          "zh": "一……就",
+          "whyZh": "表示測試通過後才把視訊留在主要連線，與備援目前無法承載視訊的時序相反。"
+        },
+        {
+          "id": "B",
+          "text": "until",
+          "zh": "直到",
+          "whyZh": "目前只有主要連線能承載視訊；until 把備援通過視訊負載測試設為維持這項處置的終點。"
+        },
+        {
+          "id": "C",
+          "text": "now that",
+          "zh": "既然已經",
+          "whyZh": "表示測試已通過，與備援目前無法承載視訊、仍待測試通過的情境不符。"
+        },
+        {
+          "id": "D",
+          "text": "in case",
+          "zh": "以防",
+          "whyZh": "表示把視訊留在主要連線是為了防備測試通過這件事；真正要避免的是未驗證就改走備援。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "目前只有主要連線能承載視訊；until 把備援通過視訊負載測試設為維持這項處置的終點。",
+      "evidence": "The backup link can carry payment traffic but not video calls. IT will keep video calls on the primary link ____ the backup link has passed its video load test.",
+      "vocabulary": [
+        {
+          "term": "until",
+          "zh": "直到"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t01-q120-r2",
+      "testId": "test-01",
+      "number": 120,
+      "part": 5,
+      "groupId": null,
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "P5",
+        "verb-collocation",
+        "manufacturing-context"
+      ],
+      "prompt": "The new carton is the same size as the previous one, but its inner tray sits 4 millimetres lower. Supplier approval of the carton material therefore does not ____ the need to check that the product stays in place during shipping.",
+      "promptZh": "新紙箱和上一版一樣大，但內托低了 4 毫米。因此，即使供應商已核准紙箱材質，也不能 ____ 檢查產品在運送途中是否會移位的必要性。",
+      "options": [
+        {
+          "id": "A",
+          "text": "demonstrate",
+          "zh": "證明",
+          "whyZh": "材質核准並不是證明應檢驗運送固定性的證據；句子的重點是不可用一種核准取代另一種檢驗。"
+        },
+        {
+          "id": "B",
+          "text": "relocate",
+          "zh": "移置",
+          "whyZh": "relocate 指改變實體或作業所在位置，不能表達是否還需進行檢查。"
+        },
+        {
+          "id": "C",
+          "text": "eliminate",
+          "zh": "消除",
+          "whyZh": "外箱同尺寸、材質雖已核准，內托位置卻不同；材質核准不能免除運送固定性檢查。"
+        },
+        {
+          "id": "D",
+          "text": "anticipate",
+          "zh": "預見",
+          "whyZh": "材質核准本身不會「預見」未來需求；語境在區分兩項品質判定，而非說明能否事先預料。"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "外箱同尺寸、材質雖已核准，內托位置卻不同；材質核准不能免除運送固定性檢查。",
+      "evidence": "The new carton is the same size as the previous one, but its inner tray sits 4 millimetres lower. Supplier approval of the carton material therefore does not ____ the need to check that the product stays in place during shipping.",
+      "vocabulary": [
+        {
+          "term": "eliminate",
+          "zh": "消除"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t01-q121-r2",
+      "testId": "test-01",
+      "number": 121,
+      "part": 5,
+      "groupId": null,
+      "topic": "daily",
+      "difficulty": "intermediate",
+      "tags": [
+        "P5",
+        "counterfactual-inversion",
+        "daily-context"
+      ],
+      "prompt": "The café was meant to reopen on Monday. Had the inspector arrived as scheduled on Friday, it ____ by now; instead, the owner is still waiting for permission to reopen.",
+      "promptZh": "咖啡館原定週一重新營業。如果稽查員當時在週五如期到場，店家現在 ____；但實際上，店主仍在等候復業許可。",
+      "options": [
+        {
+          "id": "A",
+          "text": "would have reopened",
+          "zh": "早就重新營業了",
+          "whyZh": "Had the inspector arrived 是與過去事實相反的倒裝條件句；by now 和仍在等許可表示原本應已發生、實際卻未發生的結果。"
+        },
+        {
+          "id": "B",
+          "text": "will have reopened",
+          "zh": "屆時將已重新營業",
+          "whyZh": "未來完成式把結果放在未來，不符合 by now 和目前仍未獲許可的描述。"
+        },
+        {
+          "id": "C",
+          "text": "had reopened",
+          "zh": "當時已經重新營業",
+          "whyZh": "過去完成式會把復業當作較早發生的事；主句需要 would 表示不實條件下的假設結果。"
+        },
+        {
+          "id": "D",
+          "text": "has reopened",
+          "zh": "現在已經重新營業",
+          "whyZh": "現在完成式把復業當成真實結果，和店主仍未獲許可矛盾。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "Had the inspector arrived 是與過去事實相反的倒裝條件句；by now 和仍在等許可表示原本應已發生、實際卻未發生的結果。",
+      "evidence": "The café was meant to reopen on Monday. Had the inspector arrived as scheduled on Friday, it ____ by now; instead, the owner is still waiting for permission to reopen.",
+      "vocabulary": [
+        {
+          "term": "would have reopened",
+          "zh": "早就重新營業了"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t01-q122-r2",
+      "testId": "test-01",
+      "number": 122,
+      "part": 5,
+      "groupId": null,
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "P5",
+        "prepositional-phrase",
+        "manufacturing-context"
+      ],
+      "prompt": "The repair form has boxes for both a batch number and a serial number. Because dozens of units share the same batch number, a repair technician must not enter it ____ the serial number when arranging a return for one unit.",
+      "promptZh": "維修單上有批號和序號兩個欄位。由於數十件產品共用同一批號，在辦理單件退回時，維修技術員不得填寫批號來 ____ 序號。",
+      "options": [
+        {
+          "id": "A",
+          "text": "in addition to",
+          "zh": "作為……之外的補充",
+          "whyZh": "表格有兩個欄位，可以補填批號；限制的是不能拿共用批號替代單件序號。"
+        },
+        {
+          "id": "B",
+          "text": "in response to",
+          "zh": "回應",
+          "whyZh": "序號不是需要回應的問題或要求；句子談的是兩種編號是否可以互相替代。"
+        },
+        {
+          "id": "C",
+          "text": "on behalf of",
+          "zh": "代表",
+          "whyZh": "這個片語通常指代表某人或機構，不表示用一個編號取代另一個。"
+        },
+        {
+          "id": "D",
+          "text": "in place of",
+          "zh": "取代",
+          "whyZh": "批號由多件產品共用，無法識別這一件；即使表格有批號欄，仍不得拿它代替個別序號。"
+        }
+      ],
+      "answer": "D",
+      "explanationZh": "批號由多件產品共用，無法識別這一件；即使表格有批號欄，仍不得拿它代替個別序號。",
+      "evidence": "The repair form has boxes for both a batch number and a serial number. Because dozens of units share the same batch number, a repair technician must not enter it ____ the serial number when arranging a return for one unit.",
+      "vocabulary": [
+        {
+          "term": "in place of",
+          "zh": "取代"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t01-q123-r2",
+      "testId": "test-01",
+      "number": 123,
+      "part": 5,
+      "groupId": null,
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "P5",
+        "modal-meaning",
+        "manufacturing-context"
+      ],
+      "prompt": "The buyer may inspect the first batch on Thursday, but the packaging audit will not be complete until Friday. The contract states that samples cannot leave the factory before both checks are complete, so they ____ released for collection on Thursday.",
+      "promptZh": "買方週四可以檢驗第一批產品，但包裝稽核要到週五才會完成。合約規定兩項檢查都完成後才能把樣品帶離工廠，因此，週四 ____ 取走這些樣品。",
+      "options": [
+        {
+          "id": "A",
+          "text": "do not have to be",
+          "zh": "不必放行供人",
+          "whyZh": "表示沒有必須準備的義務，仍可以放行並取走；合約規則為尚不能放行，不只是沒有義務。"
+        },
+        {
+          "id": "B",
+          "text": "cannot be",
+          "zh": "不能放行供人",
+          "whyZh": "週四可做第一項檢驗，但第二項要到週五才完成；合約要求兩項都完成，因此週四不能放行供取件。"
+        },
+        {
+          "id": "C",
+          "text": "should already be",
+          "zh": "照理已經放行供人",
+          "whyZh": "這是對進度的正面推測，與兩項檢查週四無法都完成的明確時程衝突。"
+        },
+        {
+          "id": "D",
+          "text": "might still be",
+          "zh": "仍可能放行供人",
+          "whyZh": "might 表示仍有可能；依已知稽核時程和合約，週四並不符合放行條件。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "週四可做第一項檢驗，但第二項要到週五才完成；合約要求兩項都完成，因此週四不能放行供取件。",
+      "evidence": "The buyer may inspect the first batch on Thursday, but the packaging audit will not be complete until Friday. The contract states that samples cannot leave the factory before both checks are complete, so they ____ released for collection on Thursday.",
+      "vocabulary": [
+        {
+          "term": "cannot be",
+          "zh": "不能放行供人"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t01-q124-r2",
+      "testId": "test-01",
+      "number": 124,
+      "part": 5,
+      "groupId": null,
+      "topic": "business",
+      "difficulty": "intermediate",
+      "tags": [
+        "P5",
+        "deadline-inference",
+        "business-context"
+      ],
+      "prompt": "On Monday, we offered every seat in the seminar and gave invitees until Friday evening to accept or decline. The reply period is now over. Today we will reassign seats only if their invitations ____; everyone who accepted by the deadline keeps their seat.",
+      "promptZh": "週一，我們已向受邀者發出研討會所有座位的邀請，並請他們在週五晚上前回覆是否出席。回覆期限現已結束。今天，只要有座位的邀請 ____，我們就會重新分配該座位；在期限內接受邀請的人都保有座位。",
+      "options": [
+        {
+          "id": "A",
+          "text": "were accepted before the deadline",
+          "zh": "在期限內獲接受",
+          "whyZh": "這些人已確認參加；句末明確保留他們的座位，不會重新分配。"
+        },
+        {
+          "id": "B",
+          "text": "are still open for a reply",
+          "zh": "仍可回覆",
+          "whyZh": "文中已說回覆期限結束，不能把這類邀請當作仍開放回覆。"
+        },
+        {
+          "id": "C",
+          "text": "were declined or left unanswered",
+          "zh": "遭婉拒或未收到回覆",
+          "whyZh": "接受邀請的人保有座位；回覆期限已結束，其餘邀請不是被婉拒，就是未收到回覆，這些座位可以重新分配。"
+        },
+        {
+          "id": "D",
+          "text": "were issued after the deadline",
+          "zh": "在期限過後才發出",
+          "whyZh": "所有邀請週一已發出，回覆期限是週五；沒有在期限後發出的邀請。"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "接受邀請的人保有座位；回覆期限已結束，其餘邀請不是被婉拒，就是未收到回覆，這些座位可以重新分配。",
+      "evidence": "On Monday, we offered every seat in the seminar and gave invitees until Friday evening to accept or decline. The reply period is now over. Today we will reassign seats only if their invitations ____; everyone who accepted by the deadline keeps their seat.",
+      "vocabulary": [
+        {
+          "term": "were declined or left unanswered",
+          "zh": "遭婉拒或未收到回覆"
+        }
+      ],
+      "revision": 2
+    }
+  ]
+}

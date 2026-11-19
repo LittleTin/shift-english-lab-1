@@ -1,0 +1,422 @@
+{
+  "status": "local-draft-awaiting-independent-blind-review",
+  "sourceCommit": "5caabdb55aa0faca2ce7dc76bb33723c515a9c42",
+  "guards": [
+    {
+      "number": 101,
+      "id": "t02-q101",
+      "revision": 1,
+      "key": "D",
+      "topic": "technology",
+      "verifiedPath": "qa-checkpoints/verified-items/test-02/Q101.json",
+      "sourceFileSha256": "e3b43fffcafbbfa8238f16d5b440ebac5f91dfc8b85ff0063d18ada288f8aa06",
+      "sourceGitBlobSha1": "6ae83fc5497949639b36e7b57f1bd8d368de409f",
+      "activeQuestionSha256Canonical": "1e4c41eb7a8bd2de4a26bd1ae1344ea504d425965c2328bf330c80011f01e44e",
+      "difficultyPath": "qa-checkpoints/difficulty/test-02/Q101.json",
+      "difficultySha256": "dfdbf31a6b6b624e2df99e38d4a156cf7a228ac4e6783361412f4585cc529a37"
+    },
+    {
+      "number": 102,
+      "id": "t02-q102",
+      "revision": 1,
+      "key": "A",
+      "topic": "manufacturing",
+      "verifiedPath": "qa-checkpoints/verified-items/test-02/Q102.json",
+      "sourceFileSha256": "7f114ce5b4c155881c7f98bee6c23d3e17abb6045021714b352cb5ad706b0661",
+      "sourceGitBlobSha1": "5aeac865399a946e05078082d9994c6bb243306d",
+      "activeQuestionSha256Canonical": "e89984e5caac28ab986e798c0cb36b43cbd6b276d579d9ebf96196c005a1c537",
+      "difficultyPath": "qa-checkpoints/difficulty/test-02/Q102.json",
+      "difficultySha256": "cd719bc592ffaf088ec9bccd499e46e42a61252e99e902dd7d33e80c306e154b"
+    },
+    {
+      "number": 103,
+      "id": "t02-q103",
+      "revision": 1,
+      "key": "C",
+      "topic": "daily",
+      "verifiedPath": "qa-checkpoints/verified-items/test-02/Q103.json",
+      "sourceFileSha256": "3fb2327ef3859b7758482ff2f8bb6df9a3e0508d145cefa4fe39c285dbd8cc9d",
+      "sourceGitBlobSha1": "40ad295cd952b5e1e7aa7bb4f4f32da4718a39bc",
+      "activeQuestionSha256Canonical": "fd92bb9d40ab8fc44355f1c3f5bf1c790a65b35adc9602e835b9ec5dce535cbd",
+      "difficultyPath": "qa-checkpoints/difficulty/test-02/Q103.json",
+      "difficultySha256": "45caf307cf9fc9c63cc8bb248ab5879052165b95f3f176bb7f30943f7e51b780"
+    },
+    {
+      "number": 104,
+      "id": "t02-q104-r2",
+      "revision": 2,
+      "key": "A",
+      "topic": "technology",
+      "verifiedPath": "qa-checkpoints/verified-items/test-02/Q104.json",
+      "sourceFileSha256": "506a64c55089e262cc10376997060d0216abae97208b05e384d01dfc209290d0",
+      "sourceGitBlobSha1": "4aceabe18f2fd4924e97aebda9a01e23d4034ac8",
+      "activeQuestionSha256Canonical": "a03dba033a9caf4eb1338551b57070dda7b20e6abcdd0733dbe2877eba16f10c",
+      "difficultyPath": "qa-checkpoints/difficulty/test-02/Q104.json",
+      "difficultySha256": "d0b8f13dc1b553841a1d22172716bd9dd645fdd1e338e3a4cb06305189189f7f"
+    },
+    {
+      "number": 105,
+      "id": "t02-q105",
+      "revision": 1,
+      "key": "D",
+      "topic": "manufacturing",
+      "verifiedPath": "qa-checkpoints/verified-items/test-02/Q105.json",
+      "sourceFileSha256": "fd42344dd65521955629cc5cf9c0dc903e6b21734cf75c37be8c4b1c6febed36",
+      "sourceGitBlobSha1": "8855e55b6092928bb01a9295863b685a7adcde44",
+      "activeQuestionSha256Canonical": "99e9259936bc669382d048eba9b80f2f6f76e89c9f6ca73e30a33902684f3a7c",
+      "difficultyPath": "qa-checkpoints/difficulty/test-02/Q105.json",
+      "difficultySha256": "c86322f6d699e4912cd7a35c6b2094f66c2bda8557b56ff8a77ffa41d84b44c5"
+    },
+    {
+      "number": 106,
+      "id": "t02-q106-r2",
+      "revision": 2,
+      "key": "D",
+      "topic": "technology",
+      "verifiedPath": "qa-checkpoints/verified-items/test-02/Q106.json",
+      "sourceFileSha256": "9611c9b30678b8797591397a767f27e4a612f2620263632b827790704ad0bb3c",
+      "sourceGitBlobSha1": "e0e46ea12154f97ed4c39cb35d82ca1f7945338b",
+      "activeQuestionSha256Canonical": "f3e49e0f073bd88cc147c7a887b6a84d4227f3cdf16c36fcc98d0555b519e701",
+      "difficultyPath": "qa-checkpoints/difficulty/test-02/Q106.json",
+      "difficultySha256": "60f59f38d3cd26dafb8c7b362186f40f011c966ffe85898365e4d337e32bbb13"
+    }
+  ],
+  "draftRows": [
+    {
+      "number": 101,
+      "difficultyWhy": "Distinguish ruling out a candidate fault from identifying it, after linking persistent failure in the original device to success in a spare using the same cables.",
+      "draftActiveQuestion": {
+        "id": "t02-q101-r2",
+        "testId": "test-02",
+        "number": 101,
+        "part": 5,
+        "groupId": null,
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "technology",
+          "grammar"
+        ],
+        "prompt": "The lab checked the cables before retesting the scanner, but the fault persisted. A spare scanner of the same model then worked with the same cables, so the team could ____ the cables as the source of the fault.",
+        "promptZh": "實驗室檢查接線後重新測試掃描器，但故障仍在。接著，同型號的備用掃描器接上同一批線材卻能正常運作，因此團隊可以____線材是故障來源的可能性。",
+        "options": [
+          {
+            "id": "A",
+            "text": "pinpoint",
+            "zh": "認定為確切原因",
+            "whyZh": "備用掃描器沿用同一批線材仍能運作，不能據此認定線材就是故障來源。"
+          },
+          {
+            "id": "B",
+            "text": "rule out",
+            "zh": "排除",
+            "whyZh": "檢查接線後原掃描器仍故障，但相同線材可搭配同型號的備用掃描器正常使用，支持排除線材是故障來源。"
+          },
+          {
+            "id": "C",
+            "text": "reproduce",
+            "zh": "重現",
+            "whyZh": "可重現的是故障或症狀，不是線材；備用掃描器也沒有出現同一個故障。"
+          },
+          {
+            "id": "D",
+            "text": "make up for",
+            "zh": "彌補",
+            "whyZh": "兩次測試是在釐清故障來源，不是在補救線材不足。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "檢查接線後原掃描器仍故障，但相同線材可搭配同型號的備用掃描器正常使用，支持排除線材是故障來源。",
+        "evidence": "the fault persisted […] a spare scanner of the same model then worked with the same cables",
+        "vocabulary": [
+          {
+            "term": "rule out",
+            "zh": "排除",
+            "note": "在診斷中表示根據證據排除某個可能原因。"
+          }
+        ],
+        "revision": 2
+      }
+    },
+    {
+      "number": 102,
+      "difficultyWhy": "Separate supplier availability from a formal permission gate; compare grammatical conditional and concessive options that imply opposing rules.",
+      "draftActiveQuestion": {
+        "id": "t02-q102-r2",
+        "testId": "test-02",
+        "number": 102,
+        "part": 5,
+        "groupId": null,
+        "topic": "manufacturing",
+        "difficulty": "intermediate",
+        "tags": [
+          "manufacturing",
+          "grammar"
+        ],
+        "prompt": "The supplier says it can deliver the substitute fasteners today. Production may use them ____ the signed change notice is filed before the first unit is assembled; with no notice on file, the fasteners must stay in stock even if approval was given by phone.",
+        "promptZh": "供應商表示今天可以交付替代扣件。產線可以使用這些扣件，____在組裝第一台之前，完成已簽署變更通知的歸檔；要是沒有歸檔，即使已取得電話核准，扣件也只能留在庫房。",
+        "options": [
+          {
+            "id": "A",
+            "text": "even if",
+            "zh": "即使",
+            "whyZh": "後文明示沒有歸檔就不能領用；even if 在這裡會把歸檔說成不影響使用許可，與規定相反。"
+          },
+          {
+            "id": "B",
+            "text": "unless",
+            "zh": "除非／若不",
+            "whyZh": "unless 會讓句意變成未歸檔時才可使用，正好顛倒規定。"
+          },
+          {
+            "id": "C",
+            "text": "provided that",
+            "zh": "前提是",
+            "whyZh": "供應商能交貨不等於產線可使用；必須在首台組裝前將已簽署的變更通知歸檔，才符合使用條件。"
+          },
+          {
+            "id": "D",
+            "text": "as though",
+            "zh": "彷彿",
+            "whyZh": "as though 引出假設情況，不能設定是否可使用替代扣件的正式條件。"
+          }
+        ],
+        "answer": "C",
+        "explanationZh": "供應商能交貨不等於產線可使用；必須在首台組裝前將已簽署的變更通知歸檔，才符合使用條件。",
+        "evidence": "the signed change notice is filed before the first unit is assembled; with no notice on file, the fasteners must stay in stock",
+        "vocabulary": [
+          {
+            "term": "file",
+            "zh": "歸檔",
+            "note": "在正式紀錄中登錄並保存文件。"
+          }
+        ],
+        "revision": 2
+      }
+    },
+    {
+      "number": 103,
+      "difficultyWhy": "Use the relationship among the ticket price, the deposit and the remaining amount to distinguish a credit toward a purchase from a refund or additional fee.",
+      "draftActiveQuestion": {
+        "id": "t02-q103-r2",
+        "testId": "test-02",
+        "number": 103,
+        "part": 5,
+        "groupId": null,
+        "topic": "daily",
+        "difficulty": "intermediate",
+        "tags": [
+          "daily",
+          "grammar"
+        ],
+        "prompt": "A workshop ticket costs $40, and Inez paid $15 to hold her place. The receipt says that payment will be ____ the ticket price, so only $25 is due at check-in.",
+        "promptZh": "工作坊票價為 40 元，Inez 已先付 15 元保留名額。收據註明，這筆款項將____票價，因此報到時只需再付 25 元。",
+        "options": [
+          {
+            "id": "A",
+            "text": "credited toward",
+            "zh": "用於抵付",
+            "whyZh": "已付的 15 元算進 40 元票價，因此報到時只須付餘額 25 元。"
+          },
+          {
+            "id": "B",
+            "text": "added to",
+            "zh": "加到……上",
+            "whyZh": "如果 15 元加到原票價上，總費用會增加，而不是用這 15 元抵掉部分票款。"
+          },
+          {
+            "id": "C",
+            "text": "refunded before she pays",
+            "zh": "在她付款前退還",
+            "whyZh": "文中顯示保留名額的款項已抵票價，沒有說報到時會退回這筆款項。"
+          },
+          {
+            "id": "D",
+            "text": "charged separately from",
+            "zh": "另外計費，不包含在",
+            "whyZh": "若 15 元另計而不抵票價，原本的 40 元就不會因這筆付款而剩下 25 元。"
+          }
+        ],
+        "answer": "A",
+        "explanationZh": "已付的 15 元算進 40 元票價，因此報到時只須付餘額 25 元。",
+        "evidence": "costs $40 […] paid $15 […] so only $25 is due",
+        "vocabulary": [
+          {
+            "term": "credit toward",
+            "zh": "抵付",
+            "note": "把一筆已付款金額計入某筆應付費用。"
+          }
+        ],
+        "revision": 2
+      }
+    },
+    {
+      "number": 104,
+      "difficultyWhy": "The inverted past-perfect condition and the explicit present inability jointly distinguish an unreal past result from a future prediction or an ability that actually existed.",
+      "draftActiveQuestion": {
+        "id": "t02-q104-r3",
+        "testId": "test-02",
+        "number": 104,
+        "part": 5,
+        "groupId": null,
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "technology",
+          "grammar"
+        ],
+        "prompt": "The team can no longer check how the battery performed during the blackout because the backup logger was disconnected. Had the logger stayed connected, the team ____ the missing readings.",
+        "promptZh": "由於備用資料記錄器當時已斷開連線，團隊現在無法確認停電期間的電池表現。如果當時記錄器仍保持連線，團隊就____缺少的讀值。",
+        "options": [
+          {
+            "id": "A",
+            "text": "will be able to recover",
+            "zh": "將能找回",
+            "whyZh": "這會把結果寫成未來可能實現的能力，與文中現在已無法查到讀值相反。"
+          },
+          {
+            "id": "B",
+            "text": "was able to recover",
+            "zh": "當時成功找回",
+            "whyZh": "這指當時已實際找回，但記錄器已斷線，這些讀值並沒有找回。"
+          },
+          {
+            "id": "C",
+            "text": "would otherwise recover",
+            "zh": "否則就會找回",
+            "whyZh": "otherwise 會再引入另一個條件； recover 也沒有表達此處對已過去、未成真的結果所需的完成式。"
+          },
+          {
+            "id": "D",
+            "text": "would have been able to recover",
+            "zh": "本來就能找回",
+            "whyZh": "Had the logger stayed connected 等於 If the logger had stayed connected；它假設過去發生了不同的情況，所以用 would have been able to 表達未能實現的能力。"
+          }
+        ],
+        "answer": "D",
+        "explanationZh": "Had the logger stayed connected 等於 If the logger had stayed connected；它假設過去發生了不同的情況，所以用 would have been able to 表達未能實現的能力。",
+        "evidence": "can no longer check […] Had the logger stayed connected",
+        "vocabulary": [
+          {
+            "term": "logger",
+            "zh": "資料記錄器",
+            "note": "自動擷取並儲存設備讀值的裝置。"
+          }
+        ],
+        "revision": 3
+      }
+    },
+    {
+      "number": 105,
+      "difficultyWhy": "Distinguish reconciling discrepancies between two independently maintained sources from simply merging, duplicating or relabeling records.",
+      "draftActiveQuestion": {
+        "id": "t02-q105-r2",
+        "testId": "test-02",
+        "number": 105,
+        "part": 5,
+        "groupId": null,
+        "topic": "manufacturing",
+        "difficulty": "intermediate",
+        "tags": [
+          "manufacturing",
+          "grammar"
+        ],
+        "prompt": "The warehouse log and the packing slips show different counts for the same shipments. Before sending the figures to finance, please ____ the two sets of records without changing either original.",
+        "promptZh": "倉庫紀錄與裝箱單對同一批出貨列出的數量不同。在將數字交給財務部門前，請先____這兩套紀錄，不要更改任何一份原始資料。",
+        "options": [
+          {
+            "id": "A",
+            "text": "reconcile",
+            "zh": "逐筆核對差異",
+            "whyZh": "兩套紀錄的出貨數量不一致，應逐筆比對，查明差異並確認正確數字；不必修改原始文件。"
+          },
+          {
+            "id": "B",
+            "text": "consolidate",
+            "zh": "合併彙整",
+            "whyZh": "彙整資料能把紀錄放在一起，但無法單靠合併就解決同批貨的數量差異。"
+          },
+          {
+            "id": "C",
+            "text": "duplicate",
+            "zh": "複製",
+            "whyZh": "多做一份副本不會釐清哪個出貨數字正確。"
+          },
+          {
+            "id": "D",
+            "text": "reclassify",
+            "zh": "重新分類",
+            "whyZh": "重新分類會調整項目歸屬，但目前要釐清的是同批出貨數量不一致，而非分類有誤。"
+          }
+        ],
+        "answer": "A",
+        "explanationZh": "兩套紀錄的出貨數量不一致，應逐筆比對，查明差異並確認正確數字；不必修改原始文件。",
+        "evidence": "different counts for the same shipments […] without changing either original",
+        "vocabulary": [
+          {
+            "term": "reconcile records",
+            "zh": "核對紀錄",
+            "note": "比對不同來源的紀錄，找出不一致並說明差異。"
+          }
+        ],
+        "revision": 2
+      }
+    },
+    {
+      "number": 106,
+      "difficultyWhy": "Resolve whether a past action happened and whether it was necessary before choosing the modal; avoid mistaking an unnecessary completed action for a recommendation or an impossibility.",
+      "draftActiveQuestion": {
+        "id": "t02-q106-r3",
+        "testId": "test-02",
+        "number": 106,
+        "part": 5,
+        "groupId": null,
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "technology",
+          "grammar"
+        ],
+        "prompt": "Your log shows that you reinstalled the printer driver before calling support. The problem was only a paused print queue, so you ____ the driver.",
+        "promptZh": "你的紀錄顯示，你在聯絡客服前已重新安裝印表機驅動程式。不過問題只是列印佇列已暫停，所以你____驅動程式。",
+        "options": [
+          {
+            "id": "A",
+            "text": "could not have reinstalled",
+            "zh": "當時不可能重新安裝",
+            "whyZh": "紀錄顯示你確實重新安裝了驅動程式，不能說當時不可能重裝。"
+          },
+          {
+            "id": "B",
+            "text": "should have reinstalled",
+            "zh": "當時應該重新安裝",
+            "whyZh": "問題出在列印佇列暫停，不需要重裝；紀錄也顯示這個動作已經做了。"
+          },
+          {
+            "id": "C",
+            "text": "need not have reinstalled",
+            "zh": "當時其實不必重新安裝",
+            "whyZh": "句首確認你已實際重新安裝；但只須恢復列印佇列，所以以 need not have 表達做了卻沒有必要。"
+          },
+          {
+            "id": "D",
+            "text": "must have reinstalled",
+            "zh": "當時一定重新安裝了",
+            "whyZh": "這表示用線索推斷動作一定發生；這裡不是要從列印佇列故障推定你一定重裝，而是說重裝其實不必要。"
+          }
+        ],
+        "answer": "C",
+        "explanationZh": "句首確認你已實際重新安裝；但只須恢復列印佇列，所以以 need not have 表達做了卻沒有必要。",
+        "evidence": "Your log shows that you reinstalled […] only a paused print queue",
+        "vocabulary": [
+          {
+            "term": "print queue",
+            "zh": "列印佇列",
+            "note": "系統用來等候並安排列印工作的清單。"
+          }
+        ],
+        "revision": 3
+      }
+    }
+  ]
+}
