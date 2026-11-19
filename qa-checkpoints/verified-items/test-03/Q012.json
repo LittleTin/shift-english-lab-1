@@ -1,0 +1,121 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "A: comparing the two suppliers’ delivery dates is a relevant step to choose between them; B provides an order number and C describes a past delivery. Formal and practice prompt/choices align exactly, and contiguous formal cue bank confirms ‘Number twelve’ (isolated cue output only 12).",
+  "activeQuestion": {
+    "id": "t03-q012",
+    "testId": "test-03",
+    "number": 12,
+    "part": 2,
+    "groupId": "t03-g012",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "question_response"
+    ],
+    "prompt": "Would you rather order locally or from our usual supplier?",
+    "promptZh": "你想向本地廠商訂購，還是向我們慣用的供應商訂購？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Let us compare their delivery dates first.",
+        "zh": "我們先比較他們的交貨日期吧。",
+        "whyZh": "先比較交期以決定來源，合理回應選擇問題。"
+      },
+      {
+        "id": "B",
+        "text": "The order number is printed here.",
+        "zh": "訂單編號印在這裡。",
+        "whyZh": "給編號，沒有選擇供應來源。"
+      },
+      {
+        "id": "C",
+        "text": "Yes, it was delivered locally.",
+        "zh": "是的，它在本地送達。",
+        "whyZh": "選擇問句需要選項或相關回應，不是過去配送情況。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "先比較交期以決定來源，合理回應選擇問題。",
+    "evidence": "Let us compare their delivery dates first.",
+    "vocabulary": [
+      {
+        "term": "supplier",
+        "zh": "供應商",
+        "note": "Let us compare their delivery dates first."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g012",
+    "testId": "test-03",
+    "part": 2,
+    "title": "Supplier choice",
+    "titleZh": "供應商選擇",
+    "topic": "business",
+    "passage": "Would you rather order locally or from our usual supplier? A. Let us compare their delivery dates first. B. The order number is printed here. C. Yes, it was delivered locally.",
+    "passageZh": "你想向本地廠商訂購，還是向我們慣用的供應商訂購？\nA. 我們先比較他們的交貨日期吧。\nB. 訂單編號印在這裡。\nC. 是的，它在本地送達。",
+    "audioScript": "Would you rather order locally or from our usual supplier? A. Let us compare their delivery dates first. B. The order number is printed here. C. Yes, it was delivered locally.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Would you rather order locally or from our usual supplier?"
+      },
+      {
+        "voice": "female",
+        "text": "A. Let us compare their delivery dates first. B. The order number is printed here. C. Yes, it was delivered locally."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-04.mp3",
+    "duration": 18.48,
+    "audioStart": 35.292,
+    "audioEnd": 53.772,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-PH",
+        "role": "male",
+        "modelVoice": "en-PH-JamesNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-PH",
+        "role": "female",
+        "modelVoice": "en-PH-RosaNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "start": 12.31871,
+      "end": 13.26212,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "12.",
+      "continuousCueEvidence": {
+        "start": 11.11983,
+        "end": 23.47275,
+        "speech": "Number 11, number 12, number 13, number 14, number 15, number 16, number 17, number 18, number 19, number 20."
+      }
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-03-04.mp3",
+      "start": 33.444,
+      "end": 51.564,
+      "assetSha256": "ccc4f69355ad9910e235e518c1c1d676daaa8c97172468421cdc046e984a5b95",
+      "speech": "Would you rather order locally or from our usual supplier? A. Let us compare their delivery dates first. B. The order number is printed here. C. Yes, it was delivered locally."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-04.mp3",
+      "start": 35.292,
+      "end": 53.772,
+      "assetSha256": "4356353a4d4a32e341d747574f7913823dd3389332e64ca344f1603b70d5e065",
+      "speech": "Would you rather order locally or from our usual supplier? A. Let us compare their delivery dates first. B. The order number is printed here. C. Yes, it was delivered locally."
+    }
+  ]
+}

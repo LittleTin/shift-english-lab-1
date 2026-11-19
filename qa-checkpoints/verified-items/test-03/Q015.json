@@ -1,0 +1,121 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "C: the speaker has reviewed only the first section; A only reports sample size and B talks about the view from the location. Number two hundred and only the first section both align; punctuation differences only.",
+  "activeQuestion": {
+    "id": "t03-q015",
+    "testId": "test-03",
+    "number": 15,
+    "part": 2,
+    "groupId": "t03-g015",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "question_response"
+    ],
+    "prompt": "Have you had a chance to review the survey results?",
+    "promptZh": "你有時間審閱調查結果了嗎？",
+    "options": [
+      {
+        "id": "A",
+        "text": "They surveyed two hundred shoppers.",
+        "zh": "他們訪問了兩百名購物者。",
+        "whyZh": "只是樣本數，沒有交代是否審閱。"
+      },
+      {
+        "id": "B",
+        "text": "The view from here is excellent.",
+        "zh": "這裡的景色很好。",
+        "whyZh": "view 與 review 的聲音聯想，與審閱無關。"
+      },
+      {
+        "id": "C",
+        "text": "Only the first section, I am afraid.",
+        "zh": "恐怕只看了第一部分。",
+        "whyZh": "說明僅完成部分審閱，直接回應完成程度。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "說明僅完成部分審閱，直接回應完成程度。",
+    "evidence": "Only the first section, I am afraid.",
+    "vocabulary": [
+      {
+        "term": "section",
+        "zh": "部分",
+        "note": "Only the first section, I am afraid."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g015",
+    "testId": "test-03",
+    "part": 2,
+    "title": "Report review",
+    "titleZh": "報告審閱",
+    "topic": "business",
+    "passage": "Have you had a chance to review the survey results? A. They surveyed two hundred shoppers. B. The view from here is excellent. C. Only the first section, I am afraid.",
+    "passageZh": "你有時間審閱調查結果了嗎？\nA. 他們訪問了兩百名購物者。\nB. 這裡的景色很好。\nC. 恐怕只看了第一部分。",
+    "audioScript": "Have you had a chance to review the survey results? A. They surveyed two hundred shoppers. B. The view from here is excellent. C. Only the first section, I am afraid.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Have you had a chance to review the survey results?"
+      },
+      {
+        "voice": "male",
+        "text": "A. They surveyed two hundred shoppers. B. The view from here is excellent. C. Only the first section, I am afraid."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-05.mp3",
+    "duration": 17.208,
+    "audioStart": 35.22,
+    "audioEnd": 52.428,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-KE",
+        "role": "female",
+        "modelVoice": "en-KE-AsiliaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-KE",
+        "role": "male",
+        "modelVoice": "en-KE-ChilembaNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "start": 16.09771,
+      "end": 17.09471,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 15.",
+      "continuousCueEvidence": {
+        "start": 11.11983,
+        "end": 23.47275,
+        "speech": "Number 11, number 12, number 13, number 14, number 15, number 16, number 17, number 18, number 19, number 20."
+      }
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-03-05.mp3",
+      "start": 33.516,
+      "end": 50.94,
+      "assetSha256": "c6431aba65c7d9d83f37631d5235e8eae565cef484e516a64e176cdaab6f984f",
+      "speech": "Have you had a chance to review the survey results? A. They surveyed 200 shoppers. B. The view from here is excellent. C. Only the first section, I am afraid."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-05.mp3",
+      "start": 35.22,
+      "end": 52.428,
+      "assetSha256": "e612a6083cc04ef192e1a281d8594a1f55bdf49b0c87120ed5c8ca9b7bdebf43",
+      "speech": "Have you had a chance to review the survey results? A. They surveyed 200 shoppers. B. The view from here is excellent. C. Only the first section I am afraid."
+    }
+  ]
+}

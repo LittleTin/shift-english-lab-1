@@ -1,0 +1,121 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "A: just over thirty is the number already registered; B gives a departure location and C asks someone to sign. Formal and practice content align, including just over thirty so far; written numeral normalization is not an audio issue.",
+  "activeQuestion": {
+    "id": "t03-q013",
+    "testId": "test-03",
+    "number": 13,
+    "part": 2,
+    "groupId": "t03-g013",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "question_response"
+    ],
+    "prompt": "How many people signed up for the tour?",
+    "promptZh": "有多少人報名參觀？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Just over thirty so far.",
+        "zh": "目前稍微超過三十人。",
+        "whyZh": "提供人數並註明目前的報名狀態。"
+      },
+      {
+        "id": "B",
+        "text": "We leave from the lobby.",
+        "zh": "我們從大廳出發。",
+        "whyZh": "回答集合地點，不是人數。"
+      },
+      {
+        "id": "C",
+        "text": "Sign your name at the bottom.",
+        "zh": "在底部簽上名字。",
+        "whyZh": "sign 的字面聯想，不是報名人數。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "提供人數並註明目前的報名狀態。",
+    "evidence": "Just over thirty so far.",
+    "vocabulary": [
+      {
+        "term": "sign up",
+        "zh": "報名",
+        "note": "Just over thirty so far."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g013",
+    "testId": "test-03",
+    "part": 2,
+    "title": "Event attendance",
+    "titleZh": "活動出席",
+    "topic": "daily",
+    "passage": "How many people signed up for the tour? A. Just over thirty so far. B. We leave from the lobby. C. Sign your name at the bottom.",
+    "passageZh": "有多少人報名參觀？\nA. 目前稍微超過三十人。\nB. 我們從大廳出發。\nC. 在底部簽上名字。",
+    "audioScript": "How many people signed up for the tour? A. Just over thirty so far. B. We leave from the lobby. C. Sign your name at the bottom.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "How many people signed up for the tour?"
+      },
+      {
+        "voice": "male",
+        "text": "A. Just over thirty so far. B. We leave from the lobby. C. Sign your name at the bottom."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-05.mp3",
+    "duration": 16.296,
+    "audioStart": 0.5,
+    "audioEnd": 16.796,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-NZ",
+        "role": "female",
+        "modelVoice": "en-NZ-MollyNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-NZ",
+        "role": "male",
+        "modelVoice": "en-NZ-MitchellNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "start": 13.51212,
+      "end": 14.59388,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 13.",
+      "continuousCueEvidence": {
+        "start": 11.11983,
+        "end": 23.47275,
+        "speech": "Number 11, number 12, number 13, number 14, number 15, number 16, number 17, number 18, number 19, number 20."
+      }
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-03-05.mp3",
+      "start": 0.5,
+      "end": 16.148,
+      "assetSha256": "c6431aba65c7d9d83f37631d5235e8eae565cef484e516a64e176cdaab6f984f",
+      "speech": "How many people signed up for the tour? A. Just over 30 so far. B. We leave from the lobby. C. Sign your name at the bottom."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-05.mp3",
+      "start": 0.5,
+      "end": 16.796,
+      "assetSha256": "e612a6083cc04ef192e1a281d8594a1f55bdf49b0c87120ed5c8ca9b7bdebf43",
+      "speech": "How many people signed up for the tour? A. Just over 30 so far. B. We leave from the lobby. C. Sign your name at the bottom."
+    }
+  ]
+}

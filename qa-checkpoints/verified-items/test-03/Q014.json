@@ -1,0 +1,121 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "C: Priya in accounting is the person who received the original invoice; A gives an opinion about its amount and B describes an original payment plan. Both modes transcribe Priya and accounting; no semantic discrepancy.",
+  "activeQuestion": {
+    "id": "t03-q014",
+    "testId": "test-03",
+    "number": 14,
+    "part": 2,
+    "groupId": "t03-g014",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "question_response"
+    ],
+    "prompt": "Where did you put the original invoice?",
+    "promptZh": "你把發票正本放在哪裡？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The total looks correct.",
+        "zh": "總額看起來正確。",
+        "whyZh": "評論金額，沒有回答位置。"
+      },
+      {
+        "id": "B",
+        "text": "We originally planned to pay cash.",
+        "zh": "我們原本打算付現金。",
+        "whyZh": "originally 與 original 相似但未回答發票去向。"
+      },
+      {
+        "id": "C",
+        "text": "I gave it to Priya in accounting.",
+        "zh": "我交給會計部的 Priya 了。",
+        "whyZh": "指出文件交給誰，讓詢問者知道應向誰找。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "指出文件交給誰，讓詢問者知道應向誰找。",
+    "evidence": "I gave it to Priya in accounting.",
+    "vocabulary": [
+      {
+        "term": "invoice",
+        "zh": "發票",
+        "note": "I gave it to Priya in accounting."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g014",
+    "testId": "test-03",
+    "part": 2,
+    "title": "Invoice location",
+    "titleZh": "發票位置",
+    "topic": "business",
+    "passage": "Where did you put the original invoice? A. The total looks correct. B. We originally planned to pay cash. C. I gave it to Priya in accounting.",
+    "passageZh": "你把發票正本放在哪裡？\nA. 總額看起來正確。\nB. 我們原本打算付現金。\nC. 我交給會計部的 Priya 了。",
+    "audioScript": "Where did you put the original invoice? A. The total looks correct. B. We originally planned to pay cash. C. I gave it to Priya in accounting.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Where did you put the original invoice?"
+      },
+      {
+        "voice": "female",
+        "text": "A. The total looks correct. B. We originally planned to pay cash. C. I gave it to Priya in accounting."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-05.mp3",
+    "duration": 17.424,
+    "audioStart": 17.296,
+    "audioEnd": 34.72,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-IE",
+        "role": "male",
+        "modelVoice": "en-IE-ConnorNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-IE",
+        "role": "female",
+        "modelVoice": "en-IE-EmilyNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "start": 14.84388,
+      "end": 15.84771,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 14.",
+      "continuousCueEvidence": {
+        "start": 11.11983,
+        "end": 23.47275,
+        "speech": "Number 11, number 12, number 13, number 14, number 15, number 16, number 17, number 18, number 19, number 20."
+      }
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-03-05.mp3",
+      "start": 16.648,
+      "end": 33.016,
+      "assetSha256": "c6431aba65c7d9d83f37631d5235e8eae565cef484e516a64e176cdaab6f984f",
+      "speech": "Where did you put the original invoice? A. The total looks correct. B. We originally planned to pay cash. C. I gave it to Priya in accounting."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-05.mp3",
+      "start": 17.296,
+      "end": 34.72,
+      "assetSha256": "e612a6083cc04ef192e1a281d8594a1f55bdf49b0c87120ed5c8ca9b7bdebf43",
+      "speech": "Where did you put the original invoice? A. The total looks correct. B. We originally planned to pay cash. C. I gave it to Priya in accounting."
+    }
+  ]
+}

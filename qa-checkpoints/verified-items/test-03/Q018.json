@@ -1,0 +1,121 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "B: a bank statement showing the purchase is acceptable proof for an exchange; A locates a desk and C names the number of colors. Formal and practice understood the receipt jacket prompt and all three options, including bank statement showing the purchase.",
+  "activeQuestion": {
+    "id": "t03-q018",
+    "testId": "test-03",
+    "number": 18,
+    "part": 2,
+    "groupId": "t03-g018",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "question_response"
+    ],
+    "prompt": "Do I need the receipt to exchange this jacket?",
+    "promptZh": "換這件外套需要收據嗎？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The reception desk is downstairs.",
+        "zh": "接待櫃檯在樓下。",
+        "whyZh": "reception 與 receipt 無關，未回應換貨要求。"
+      },
+      {
+        "id": "B",
+        "text": "A bank statement showing the purchase will also work.",
+        "zh": "顯示這筆購買的銀行帳單也可以。",
+        "whyZh": "提供收據的替代購買證明，回應要求。"
+      },
+      {
+        "id": "C",
+        "text": "The jacket comes in three colors.",
+        "zh": "這款外套有三種顏色。",
+        "whyZh": "產品顏色不是換貨所需文件。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "提供收據的替代購買證明，回應要求。",
+    "evidence": "A bank statement showing the purchase will also work.",
+    "vocabulary": [
+      {
+        "term": "exchange",
+        "zh": "換貨",
+        "note": "A bank statement showing the purchase will also work."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g018",
+    "testId": "test-03",
+    "part": 2,
+    "title": "Return policy",
+    "titleZh": "退貨規則",
+    "topic": "daily",
+    "passage": "Do I need the receipt to exchange this jacket? A. The reception desk is downstairs. B. A bank statement showing the purchase will also work. C. The jacket comes in three colors.",
+    "passageZh": "換這件外套需要收據嗎？\nA. 接待櫃檯在樓下。\nB. 顯示這筆購買的銀行帳單也可以。\nC. 這款外套有三種顏色。",
+    "audioScript": "Do I need the receipt to exchange this jacket? A. The reception desk is downstairs. B. A bank statement showing the purchase will also work. C. The jacket comes in three colors.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Do I need the receipt to exchange this jacket?"
+      },
+      {
+        "voice": "female",
+        "text": "A. The reception desk is downstairs. B. A bank statement showing the purchase will also work. C. The jacket comes in three colors."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-06.mp3",
+    "duration": 17.88,
+    "audioStart": 35.82,
+    "audioEnd": 53.7,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-ZA",
+        "role": "male",
+        "modelVoice": "en-ZA-LukeNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-ZA",
+        "role": "female",
+        "modelVoice": "en-ZA-LeahNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "start": 19.9795,
+      "end": 20.95508,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 18",
+      "continuousCueEvidence": {
+        "start": 11.11983,
+        "end": 23.47275,
+        "speech": "Number 11, number 12, number 13, number 14, number 15, number 16, number 17, number 18, number 19, number 20."
+      }
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-03-06.mp3",
+      "start": 36.804,
+      "end": 54.972,
+      "assetSha256": "eeeabe98e86e44f0c9eb8c8c80315e2417ea573351fd4064b73595ccd67bf6d7",
+      "speech": "Do I need the receipt to exchange this jacket? A. The reception desk is downstairs. B. A bank statement showing the purchase will also work. C. The jacket comes in three colors."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-06.mp3",
+      "start": 35.82,
+      "end": 53.7,
+      "assetSha256": "00789143d5747f6c8f9dd5f8ff692997e5b4ca3095743e233e607e3a96122699",
+      "speech": "Do I need the receipt to exchange this jacket? A. The reception desk is downstairs. B. A bank statement showing the purchase will also work. C. The jacket comes in three colours."
+    }
+  ]
+}
