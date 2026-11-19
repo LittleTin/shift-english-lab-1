@@ -1,0 +1,76 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "C: B is the only available train departing at/after 08:15 and arriving by 10:30; C fits times but is sold out. Both English source and zh-TW, four choices and their explanations checked.",
+  "activeQuestion": {
+    "id": "t02-q181",
+    "testId": "test-02",
+    "number": 181,
+    "part": 7,
+    "groupId": "t02-r-p7-12",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "reading-comprehension"
+    ],
+    "prompt": "Which train was reserved for Priya?",
+    "promptZh": "替 Priya 訂了哪班車？",
+    "options": [
+      {
+        "text": "Train D",
+        "zh": "D 車",
+        "whyZh": "十一點抵達，超過十點半期限。",
+        "id": "A"
+      },
+      {
+        "text": "Train C",
+        "zh": "C 車",
+        "whyZh": "時間符合，但已客滿且 Priya 不願候補。",
+        "id": "B"
+      },
+      {
+        "text": "Train B",
+        "zh": "B 車",
+        "whyZh": "八點半出發符合不得早於八點十五分，十點二十分抵達符合十點半期限，且有位。",
+        "id": "C"
+      },
+      {
+        "text": "Train A",
+        "zh": "A 車",
+        "whyZh": "八點出發早於 Priya 可出發時間。",
+        "id": "D"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "八點半出發符合不得早於八點十五分，十點二十分抵達符合十點半期限，且有位。",
+    "evidence": "Train B: departs 8:30 a.m.; arrives 10:20 a.m.; seats available.",
+    "vocabulary": [
+      {
+        "term": "fully booked",
+        "zh": "已客滿",
+        "note": "可預訂座位均已訂滿。"
+      },
+      {
+        "term": "refundable",
+        "zh": "可退款的",
+        "note": "符合條件時可以退還款項。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-r-p7-12",
+    "testId": "test-02",
+    "part": 7,
+    "title": "Choosing a train",
+    "titleZh": "選擇火車班次",
+    "topic": "daily",
+    "passage": "DOCUMENT 1 — Tuesday trains from Eastford to Milltown\nTrain A: departs 8:00 a.m.; arrives 9:15 a.m.; seats available.\nTrain B: departs 8:30 a.m.; arrives 10:20 a.m.; seats available.\nTrain C: departs 9:00 a.m.; arrives 10:05 a.m.; fully booked.\nTrain D: departs 9:35 a.m.; arrives 11:00 a.m.; seats available.\n\nDOCUMENT 2 — Booking email thread: Priya’s request\nI cannot leave Eastford before 8:15 a.m. My appointment is near Milltown station, and I must arrive at the station no later than 10:30. Please reserve a train that meets both conditions. I do not want to rely on a waiting list.\n\nBooking agent’s reply\nI reserved the only available train that fits your times. The fare is NT$180. You may cancel without a fee until thirty minutes before departure; later cancellations are not refundable. Your ticket is attached. Please arrive at the platform at least ten minutes before the train leaves.",
+    "passageZh": "文件一——星期二 Eastford 至 Milltown 班次\nA 車：08:00 出發，09:15 抵達，仍有座位。\nB 車：08:30 出發，10:20 抵達，仍有座位。\nC 車：09:00 出發，10:05 抵達，已客滿。\nD 車：09:35 出發，11:00 抵達，仍有座位。\n\n文件二——訂票往返郵件：Priya 的請求\n我不能在上午八點十五分前離開 Eastford。我有約，地點靠近 Milltown 車站，但我最遲必須十點半抵達車站。請訂同時符合兩條件的班次，我不想靠候補。\n\n訂票人員回覆\n已訂好唯一符合時間且有座位的班次，票價新臺幣一百八十元。最遲於發車前三十分鐘取消，不收手續費；逾期取消則不退款。車票已附上，請至少提前十分鐘到月台。",
+    "image": "assets/graphics/t02-r-p7-12.svg",
+    "imageAlt": "Tuesday train timetable from Eastford to Milltown, including departure time, arrival time and seat availability.",
+    "imageCaption": "Document 1: Tuesday trains from Eastford to Milltown."
+  },
+  "imageSha256": "b5fb639ad0b9aa2319758a3ad365d38d8402053d8d911da95d6873287ba79e3f"
+}

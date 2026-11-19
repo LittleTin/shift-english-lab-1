@@ -1,0 +1,133 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "C: Document 2 calls for inspecting the fixture, but expressly says causation is unestablished. Both English source and zh-TW, four choices and their explanations checked.",
+  "activeQuestion": {
+    "id": "t02-q180-r2",
+    "testId": "test-02",
+    "number": 180,
+    "part": 7,
+    "groupId": "t02-r-p7-11",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension"
+    ],
+    "prompt": "What can be concluded about the fixture?",
+    "promptZh": "關於治具可以得出什麼結論？",
+    "options": [
+      {
+        "text": "It has already been replaced on every line",
+        "zh": "所有產線都已更換治具",
+        "whyZh": "文件只有檢查計畫，沒有完成更換。",
+        "id": "A"
+      },
+      {
+        "text": "It has already been ruled out as a possible cause",
+        "zh": "已排除治具為可能原因",
+        "whyZh": "製程團隊會檢查治具；目前既未認定治具是原因，也未排除它。",
+        "id": "B"
+      },
+      {
+        "text": "It will be investigated, but its role as the cause is not confirmed",
+        "zh": "製程團隊將檢查治具，但尚未確認它是否造成問題。",
+        "whyZh": "主管說先檢查治具，且目前結果尚未建立因果。",
+        "id": "C"
+      },
+      {
+        "text": "It has been proven to cause every failure",
+        "zh": "已證明造成所有失敗",
+        "whyZh": "現有結果尚未證實治具造成這個問題，更沒有證據顯示所有不良都由它引起。",
+        "id": "D"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "主管說先檢查治具，且目前結果尚未建立因果。",
+    "evidence": "The results do not yet establish that the fixture caused the problem.",
+    "vocabulary": [
+      {
+        "term": "first-pass yield",
+        "zh": "一次通過率",
+        "note": "本題明確定義為首次通過數除以受測數。"
+      },
+      {
+        "term": "rework",
+        "zh": "重工",
+        "note": "針對未符合要求的產品重新作業。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t02-r-p7-11",
+    "testId": "test-02",
+    "part": 7,
+    "title": "Production results and review",
+    "titleZh": "生產結果與檢討",
+    "topic": "manufacturing",
+    "passage": "DOCUMENT 1 — Initial test results, Monday\nLot A: 200 units tested; 190 passed immediately; 8 sent for rework; 2 marked for scrap.\nLot B: 100 units tested; 96 passed immediately; 3 sent for rework; 1 marked for scrap.\nFor this report, first-pass yield means the number that passed immediately divided by the number tested, expressed as a percentage. Reworked units are not counted as first-pass successes.\n\nTuesday follow-up (same test report)\nAll eight reworked units from Lot A passed the repeat test. The two scrap units remain excluded from shipment. Lot B’s rework is still in progress.\n\nDOCUMENT 2 — Manager’s note\nPlease compare first-pass performance, not only the final number accepted. Rework uses extra time even when it succeeds. Connector alignment was the most frequent reason for rework on Monday; the process team will check the fixture before changing the assembly instructions. The results do not yet establish that the fixture caused the problem.",
+    "passageZh": "文件一——星期一初測結果\nA 批：測試 200 台；190 台立即通過；8 台送重工；2 台標為報廢。\nB 批：測試 100 台；96 台立即通過；3 台送重工；1 台標為報廢。\n本報告的一次通過率定義為立即通過數除以受測數，再換算百分比。重工品不計入首次通過數。\n\n星期二追蹤更新（同一測試報告）\nA 批八台重工品全部通過複測，兩台報廢品仍不得出貨。B 批重工仍在進行。\n\n文件二——主管備註\n請比較首次測試表現，不要只看最終合格數量。即使重工成功也會耗用額外時間。星期一最常見的重工原因是連接器對位不良；製程團隊會先檢查治具，再變更組裝指導書。目前結果尚不能證明治具就是問題原因。",
+    "image": "assets/graphics/t02-r-p7-11.svg",
+    "imageAlt": "Initial test results for lots A and B, with counts tested, passed immediately, sent for rework, and marked for scrap.",
+    "imageCaption": "Document 1: Monday initial test results. ¹ Passed immediately."
+  },
+  "originalQuestion": {
+    "id": "t02-q180",
+    "testId": "test-02",
+    "number": 180,
+    "part": 7,
+    "groupId": "t02-r-p7-11",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension"
+    ],
+    "prompt": "What can be concluded about the fixture?",
+    "promptZh": "關於治具可以得出什麼結論？",
+    "options": [
+      {
+        "text": "It has already been replaced on every line",
+        "zh": "所有產線都已更換治具",
+        "whyZh": "文件只有檢查計畫，沒有完成更換。",
+        "id": "A"
+      },
+      {
+        "text": "It is unrelated to assembly by definition",
+        "zh": "依定義與組裝無關",
+        "whyZh": "文件將其列為調查對象，沒有排除相關性。",
+        "id": "B"
+      },
+      {
+        "text": "It will be investigated, but its role as the cause is not confirmed",
+        "zh": "將接受調查，但尚未確認是原因",
+        "whyZh": "主管說先檢查治具，且目前結果尚未建立因果。",
+        "id": "C"
+      },
+      {
+        "text": "It has been proven to cause every failure",
+        "zh": "已證明造成所有失敗",
+        "whyZh": "文件明確否定已確認治具為原因。",
+        "id": "D"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "主管說先檢查治具，且目前結果尚未建立因果。",
+    "evidence": "The results do not yet establish that the fixture caused the problem.",
+    "vocabulary": [
+      {
+        "term": "first-pass yield",
+        "zh": "一次通過率",
+        "note": "本題明確定義為首次通過數除以受測數。"
+      },
+      {
+        "term": "rework",
+        "zh": "重工",
+        "note": "針對未符合要求的產品重新作業。"
+      }
+    ],
+    "revision": 1
+  },
+  "imageSha256": "19ff795f209dc8b80aa3a1f6efb8a886034a6a012c7deaceb27ef2ae7ebd0f8f"
+}

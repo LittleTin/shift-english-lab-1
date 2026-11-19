@@ -1,0 +1,129 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "C: Organizer explicitly asks for corrected invoice before arranging balance payment. Both English source and zh-TW, four choices and their explanations checked.",
+  "activeQuestion": {
+    "id": "t02-q190-r2",
+    "testId": "test-02",
+    "number": 190,
+    "part": 7,
+    "groupId": "t02-r-p7-13",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "reading-comprehension"
+    ],
+    "prompt": "What does the organizer want the provider to do before payment?",
+    "promptZh": "主辦人希望業者在主辦方支付餘款前做什麼？",
+    "options": [
+      {
+        "text": "Increase the participant count",
+        "zh": "增加參加人數",
+        "whyZh": "人數正確，且確認沒有追加。",
+        "id": "A"
+      },
+      {
+        "text": "Return the deposit immediately",
+        "zh": "立即退回訂金",
+        "whyZh": "沒有取消活動或要求退訂金。",
+        "id": "B"
+      },
+      {
+        "text": "Send a corrected invoice",
+        "zh": "寄送更正後的帳單",
+        "whyZh": "主辦人在電子郵件中要求先收到更正後的帳單，再安排支付餘款。",
+        "id": "C"
+      },
+      {
+        "text": "Remove the room from the booking",
+        "zh": "取消場地預約",
+        "whyZh": "爭議是漏折扣，不是取消場地。",
+        "id": "D"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "主辦人在電子郵件中要求先收到更正後的帳單，再安排支付餘款。",
+    "evidence": "Please send a corrected invoice before we arrange the balance payment.",
+    "vocabulary": [
+      {
+        "term": "balance due",
+        "zh": "應付餘額",
+        "note": "扣除已付金額後仍需支付的款項。"
+      },
+      {
+        "term": "fixed charge",
+        "zh": "固定費用",
+        "note": "不因本題參加人數而改變的費用。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t02-r-p7-13",
+    "testId": "test-02",
+    "part": 7,
+    "title": "Workshop quote and invoice",
+    "titleZh": "工作坊報價與帳單",
+    "topic": "business",
+    "passage": "DOCUMENT 1 — Workshop quotation\nTraining fee: NT$750 per participant. Groups of ten or more receive a 10% discount on training fees. Room rental is a fixed NT$2,000 and is not discounted. No tax or service fee will be added to the quoted charges. A deposit of NT$3,000 is deducted from the final amount due.\n\nDOCUMENT 2 — Booking confirmation and billing statement\nThank you for confirming twelve participants for the communication workshop on July 9. We have received your NT$3,000 deposit. No additional participants have been added.\n\nBilling statement\nTraining: 12 × NT$750 = NT$9,000\nRoom rental: NT$2,000\nLess deposit: NT$3,000\nBalance due: NT$8,000\n\nDOCUMENT 3 — Organizer’s email\nThe participant count and deposit are correct, but the invoice appears to omit the discount in your quotation. Please send a corrected invoice before we arrange the balance payment.",
+    "passageZh": "文件一——工作坊報價\n訓練費每人新臺幣七百五十元。十人以上團體的訓練費享九折。場租固定兩千元，不打折。報價所列費用不另加稅或服務費。三千元訂金會自最後應付金額扣除。\n\n文件二——工作坊預約確認與帳單\n感謝確認七月九日溝通工作坊共十二人參加。已收到三千元訂金，沒有追加參加者。\n\n帳單明細\n訓練費：12 × 750 = 9,000 元\n場租：2,000 元\n扣除訂金：3,000 元\n應付餘額：8,000 元\n\n文件三——主辦人電子郵件\n參加人數及訂金正確，但帳單似乎漏列報價中的折扣。請寄送更正後的帳單，我們再安排支付餘額。"
+  },
+  "originalQuestion": {
+    "id": "t02-q190",
+    "testId": "test-02",
+    "number": 190,
+    "part": 7,
+    "groupId": "t02-r-p7-13",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "reading-comprehension"
+    ],
+    "prompt": "What does the organizer want the provider to do before payment?",
+    "promptZh": "主辦人希望供應方在付款前做什麼？",
+    "options": [
+      {
+        "text": "Increase the participant count",
+        "zh": "增加參加人數",
+        "whyZh": "人數正確，且確認沒有追加。",
+        "id": "A"
+      },
+      {
+        "text": "Return the deposit immediately",
+        "zh": "立即退回訂金",
+        "whyZh": "沒有取消活動或要求退訂金。",
+        "id": "B"
+      },
+      {
+        "text": "Issue a corrected invoice",
+        "zh": "開出更正帳單",
+        "whyZh": "電子郵件明確要求先寄更正帳單。",
+        "id": "C"
+      },
+      {
+        "text": "Remove the room from the booking",
+        "zh": "取消場地預約",
+        "whyZh": "爭議是漏折扣，不是取消場地。",
+        "id": "D"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "電子郵件明確要求先寄更正帳單。",
+    "evidence": "Please send a corrected invoice before we arrange the balance payment.",
+    "vocabulary": [
+      {
+        "term": "balance due",
+        "zh": "應付餘額",
+        "note": "扣除已付金額後仍需支付的款項。"
+      },
+      {
+        "term": "fixed charge",
+        "zh": "固定費用",
+        "note": "不因本題參加人數而改變的費用。"
+      }
+    ],
+    "revision": 1
+  }
+}

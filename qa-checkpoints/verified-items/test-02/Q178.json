@@ -1,0 +1,133 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "B: 96/100 = 96% for Lot B vs 190/200 = 95% for Lot A. Both English source and zh-TW, four choices and their explanations checked.",
+  "activeQuestion": {
+    "id": "t02-q178-r2",
+    "testId": "test-02",
+    "number": 178,
+    "part": 7,
+    "groupId": "t02-r-p7-11",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension"
+    ],
+    "prompt": "Which lot had the higher first-pass yield?",
+    "promptZh": "哪一批首次通過率較高？",
+    "options": [
+      {
+        "text": "Both lots, at 95.3 percent",
+        "zh": "兩批都是 95.3%",
+        "whyZh": "95.3% 約為兩批合計的 286÷300；分別計算為 95% 和 96%，兩批並不相同。",
+        "id": "A"
+      },
+      {
+        "text": "Lot B, at 96 percent",
+        "zh": "B 批，百分之九十六",
+        "whyZh": "A為190/200=95%，B為96/100=96%，所以B較高。",
+        "id": "B"
+      },
+      {
+        "text": "Lot A, at 99 percent",
+        "zh": "A 批，百分之九十九",
+        "whyZh": "99%是A重工後比例，並非首次通過率。",
+        "id": "C"
+      },
+      {
+        "text": "The rates cannot be calculated from the data",
+        "zh": "資料不足，無法計算",
+        "whyZh": "受測與首次通過數都已提供，可以計算。",
+        "id": "D"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "A為190/200=95%，B為96/100=96%，所以B較高。",
+    "evidence": "Lot A: 200 units tested; 190 passed immediately ... Lot B: 100 units tested; 96 passed immediately",
+    "vocabulary": [
+      {
+        "term": "first-pass yield",
+        "zh": "一次通過率",
+        "note": "本題明確定義為首次通過數除以受測數。"
+      },
+      {
+        "term": "rework",
+        "zh": "重工",
+        "note": "針對未符合要求的產品重新作業。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t02-r-p7-11",
+    "testId": "test-02",
+    "part": 7,
+    "title": "Production results and review",
+    "titleZh": "生產結果與檢討",
+    "topic": "manufacturing",
+    "passage": "DOCUMENT 1 — Initial test results, Monday\nLot A: 200 units tested; 190 passed immediately; 8 sent for rework; 2 marked for scrap.\nLot B: 100 units tested; 96 passed immediately; 3 sent for rework; 1 marked for scrap.\nFor this report, first-pass yield means the number that passed immediately divided by the number tested, expressed as a percentage. Reworked units are not counted as first-pass successes.\n\nTuesday follow-up (same test report)\nAll eight reworked units from Lot A passed the repeat test. The two scrap units remain excluded from shipment. Lot B’s rework is still in progress.\n\nDOCUMENT 2 — Manager’s note\nPlease compare first-pass performance, not only the final number accepted. Rework uses extra time even when it succeeds. Connector alignment was the most frequent reason for rework on Monday; the process team will check the fixture before changing the assembly instructions. The results do not yet establish that the fixture caused the problem.",
+    "passageZh": "文件一——星期一初測結果\nA 批：測試 200 台；190 台立即通過；8 台送重工；2 台標為報廢。\nB 批：測試 100 台；96 台立即通過；3 台送重工；1 台標為報廢。\n本報告的一次通過率定義為立即通過數除以受測數，再換算百分比。重工品不計入首次通過數。\n\n星期二追蹤更新（同一測試報告）\nA 批八台重工品全部通過複測，兩台報廢品仍不得出貨。B 批重工仍在進行。\n\n文件二——主管備註\n請比較首次測試表現，不要只看最終合格數量。即使重工成功也會耗用額外時間。星期一最常見的重工原因是連接器對位不良；製程團隊會先檢查治具，再變更組裝指導書。目前結果尚不能證明治具就是問題原因。",
+    "image": "assets/graphics/t02-r-p7-11.svg",
+    "imageAlt": "Initial test results for lots A and B, with counts tested, passed immediately, sent for rework, and marked for scrap.",
+    "imageCaption": "Document 1: Monday initial test results. ¹ Passed immediately."
+  },
+  "originalQuestion": {
+    "id": "t02-q178",
+    "testId": "test-02",
+    "number": 178,
+    "part": 7,
+    "groupId": "t02-r-p7-11",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension"
+    ],
+    "prompt": "Which lot had the higher first-pass yield?",
+    "promptZh": "哪一批首次通過率較高？",
+    "options": [
+      {
+        "text": "Both lots, at 100 percent",
+        "zh": "兩批都是百分之一百",
+        "whyZh": "兩批皆有初測未通過品。",
+        "id": "A"
+      },
+      {
+        "text": "Lot B, at 96 percent",
+        "zh": "B 批，百分之九十六",
+        "whyZh": "A為190/200=95%，B為96/100=96%，所以B較高。",
+        "id": "B"
+      },
+      {
+        "text": "Lot A, at 99 percent",
+        "zh": "A 批，百分之九十九",
+        "whyZh": "99%是A重工後比例，並非首次通過率。",
+        "id": "C"
+      },
+      {
+        "text": "The rates cannot be calculated from the data",
+        "zh": "資料不足，無法計算",
+        "whyZh": "受測與首次通過數都已提供，可以計算。",
+        "id": "D"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "A為190/200=95%，B為96/100=96%，所以B較高。",
+    "evidence": "Lot A: 200 units tested; 190 passed immediately ... Lot B: 100 units tested; 96 passed immediately",
+    "vocabulary": [
+      {
+        "term": "first-pass yield",
+        "zh": "一次通過率",
+        "note": "本題明確定義為首次通過數除以受測數。"
+      },
+      {
+        "term": "rework",
+        "zh": "重工",
+        "note": "針對未符合要求的產品重新作業。"
+      }
+    ],
+    "revision": 1
+  },
+  "imageSha256": "19ff795f209dc8b80aa3a1f6efb8a886034a6a012c7deaceb27ef2ae7ebd0f8f"
+}

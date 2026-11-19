@@ -1,0 +1,129 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "B: Dates are November 18 and 20; two calendar dates apart. Both English source and zh-TW, four choices and their explanations checked.",
+  "activeQuestion": {
+    "id": "t02-q194-r2",
+    "testId": "test-02",
+    "number": 194,
+    "part": 7,
+    "groupId": "t02-r-p7-14",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "reading-comprehension"
+    ],
+    "prompt": "How many days apart are the expected delivery date and the planned build date?",
+    "promptZh": "預計到貨日與預定生產日相隔幾天？",
+    "options": [
+      {
+        "text": "Twenty",
+        "zh": "二十天",
+        "whyZh": "二十是日期數字，不能直接當時間間隔。",
+        "id": "A"
+      },
+      {
+        "text": "Two",
+        "zh": "兩天",
+        "whyZh": "預計 11 月 18 日到貨，預定 11 月 20 日生產；兩個日期相差 2 天，不是問中間有幾個完整的工作天。",
+        "id": "B"
+      },
+      {
+        "text": "One",
+        "zh": "一天",
+        "whyZh": "十八日與二十日之間雖只有十九日這個日期，但從十八日到二十日相隔兩天。",
+        "id": "C"
+      },
+      {
+        "text": "Eight",
+        "zh": "八天",
+        "whyZh": "十二日是採購訊息日期，不是到貨日。",
+        "id": "D"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "預計 11 月 18 日到貨，預定 11 月 20 日生產；兩個日期相差 2 天，不是問中間有幾個完整的工作天。",
+    "evidence": "deliver ... on November 18 ... November 20 build",
+    "vocabulary": [
+      {
+        "term": "test pad",
+        "zh": "測試點焊墊",
+        "note": "電路板上供量測探針接觸的位置。"
+      },
+      {
+        "term": "engineering change notice",
+        "zh": "工程變更通知",
+        "note": "傳達設計或製造相關修訂與適用範圍的文件。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t02-r-p7-14",
+    "testId": "test-02",
+    "part": 7,
+    "title": "Board-revision transition",
+    "titleZh": "電路板版本轉換",
+    "topic": "technology",
+    "passage": "DOCUMENT 1 — Engineering change notice EC-46\nRevision F adds a labelled test pad to the controller board. Board dimensions, connector positions, and firmware remain unchanged. Revision F will replace revision E for new production beginning November 20. Existing revision E boards may still be used for service repairs after serial-number compatibility is checked. They must not be discarded solely because a new revision exists.\n\nDOCUMENT 2 — Purchasing message, November 12\nWe have 200 revision E boards in stock. Please move them to the service-stock location and identify them clearly. The supplier expects to deliver 100 revision F boards on November 18. Incoming inspection must accept those boards before they are issued to the November 20 build.\n\nDOCUMENT 3 — Production reply\nWe will use revision F for the new build. If the delivery is late or incoming inspection is not complete, we will inform planning and wait for instructions. We will not substitute revision E without written engineering approval.",
+    "passageZh": "文件一——工程變更通知 EC-46\nF 版在控制板上新增一個有標示的測試焊墊。板子尺寸、連接器位置及韌體保持不變。十一月二十日起，新投產批次使用 F 版取代 E 版。既有 E 版依序號確認相容性後仍可用於維修，不得僅因有新版就報廢。\n\n文件二——十一月十二日採購訊息\n庫存有兩百片 E 版。請把這批板子移到維修備品存放區，並清楚標示。供應商預計十一月十八日交付一百片 F 版。這批板子須先通過進料檢驗，才能發給十一月二十日的生產批次。\n\n文件三——生產部回覆\n新批次會使用 F 版。若交貨延誤或進料檢驗未完成，我們會通知生管並等待指示。未取得工程部門書面核准，不會改用 E 版。"
+  },
+  "originalQuestion": {
+    "id": "t02-q194",
+    "testId": "test-02",
+    "number": 194,
+    "part": 7,
+    "groupId": "t02-r-p7-14",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "reading-comprehension"
+    ],
+    "prompt": "If the new boards are delivered as expected, how many calendar days are available before the build date?",
+    "promptZh": "若新版板子依預期送達，距生產日有幾個日曆天？",
+    "options": [
+      {
+        "text": "Twenty",
+        "zh": "二十天",
+        "whyZh": "二十是日期數字，不能直接當時間間隔。",
+        "id": "A"
+      },
+      {
+        "text": "Two",
+        "zh": "兩天",
+        "whyZh": "十一月十八日到貨，二十日生產，相差兩天。",
+        "id": "B"
+      },
+      {
+        "text": "One",
+        "zh": "一天",
+        "whyZh": "十八到二十並非一天。",
+        "id": "C"
+      },
+      {
+        "text": "Eight",
+        "zh": "八天",
+        "whyZh": "十二日是採購訊息日期，不是到貨日。",
+        "id": "D"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "十一月十八日到貨，二十日生產，相差兩天。",
+    "evidence": "deliver ... on November 18 ... November 20 build",
+    "vocabulary": [
+      {
+        "term": "test pad",
+        "zh": "測試點焊墊",
+        "note": "電路板上供量測探針接觸的位置。"
+      },
+      {
+        "term": "engineering change notice",
+        "zh": "工程變更通知",
+        "note": "傳達設計或製造相關修訂與適用範圍的文件。"
+      }
+    ],
+    "revision": 1
+  }
+}
