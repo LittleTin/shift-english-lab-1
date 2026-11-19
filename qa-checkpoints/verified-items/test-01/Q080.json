@@ -1,0 +1,112 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Kitchen floor under repair; closure temporary Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+  "activeQuestion": {
+    "id": "t01-q080",
+    "testId": "test-01",
+    "number": 80,
+    "part": 4,
+    "groupId": "t01-g048",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "reason"
+    ],
+    "prompt": "Why is the Riverside shop closed?",
+    "promptZh": "Riverside 分店為什麼關閉？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Its kitchen floor is being repaired.",
+        "zh": "廚房地板正在維修。",
+        "whyZh": "語音訊息直接說 while the kitchen floor is being repaired，這是暫停營業的原因。"
+      },
+      {
+        "id": "B",
+        "text": "It has permanently moved to another city.",
+        "zh": "它已永久搬到另一個城市。",
+        "whyZh": "店家預計重新開門，temporary 表示不是永久搬遷。"
+      },
+      {
+        "id": "C",
+        "text": "The telephone system has failed.",
+        "zh": "電話系統故障。",
+        "whyZh": "這是正常電話錄音，並未宣布電話故障。"
+      },
+      {
+        "id": "D",
+        "text": "No online orders have been received.",
+        "zh": "沒有收到線上訂單。",
+        "whyZh": "線上訂單由另一分店處理，並非因沒有訂單而關店。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "語音訊息直接說 while the kitchen floor is being repaired，這是暫停營業的原因。",
+    "evidence": "while the kitchen floor is being repaired.",
+    "vocabulary": [
+      {
+        "term": "temporarily",
+        "zh": "暫時地",
+        "note": "表示關閉有時間限制，預期會恢復。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g048",
+    "testId": "test-01",
+    "part": 4,
+    "title": "A temporary café closure",
+    "titleZh": "咖啡店暫時停業",
+    "topic": "daily",
+    "passage": "Thank you for calling Cedar Corner Café. Our Riverside shop is temporarily closed while the kitchen floor is being repaired. We expect to reopen on Monday, September sixteenth. Until then, online orders will be prepared at our Market Street shop. If you selected Riverside pickup for an existing order, a staff member will contact you to arrange a new pickup location or a refund. Catering deliveries will continue as scheduled. For questions about an order, please leave your name, order number, and a telephone number after the tone. We will return your call during business hours.",
+    "passageZh": "感謝致電 Cedar Corner Café。我們的 Riverside 分店因廚房地板維修而暫時關閉，預計九月十六日星期一重新營業。在此之前，線上訂單會由 Market Street 分店製作。如果你現有的訂單選擇在 Riverside 取貨，工作人員會聯絡你安排新的取貨地點或退款。外燴配送仍照原定時程進行。若有訂單問題，請在提示音後留下姓名、訂單編號和電話號碼。我們會在營業時間回電。",
+    "audioScript": "Thank you for calling Cedar Corner Café. Our Riverside shop is temporarily closed while the kitchen floor is being repaired. We expect to reopen on Monday, September sixteenth. Until then, online orders will be prepared at our Market Street shop. If you selected Riverside pickup for an existing order, a staff member will contact you to arrange a new pickup location or a refund. Catering deliveries will continue as scheduled. For questions about an order, please leave your name, order number, and a telephone number after the tone. We will return your call during business hours.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Thank you for calling Cedar Corner Café. Our Riverside shop is temporarily closed while the kitchen floor is being repaired. We expect to reopen on Monday, September sixteenth. Until then, online orders will be prepared at our Market Street shop. If you selected Riverside pickup for an existing order, a staff member will contact you to arrange a new pickup location or a refund. Catering deliveries will continue as scheduled. For questions about an order, please leave your name, order number, and a telephone number after the tone. We will return your call during business hours."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-28.mp3",
+    "duration": 39.864,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-HK",
+        "role": "female",
+        "modelVoice": "en-HK-YanNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 40.364
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-01-28.mp3",
+      "start": 0.5,
+      "end": 40.364,
+      "assetSha256": "b4adac84a59ddd898a4333b34ce508a24fa52761a8981b5d3a257cd02a0160ef",
+      "speech": "Thank you for calling Cedar Corner Cafe. Our Riverside Shop is temporarily closed while the\n kitchen floor is being repaired. We expect to reopen on Monday, September 16. Until then,\n online orders will be prepared at our Market Street Shop. If you selected Riverside Pickup\n for an existing order, a staff member will contact you to arrange a new pickup location or a refund.\n Catering deliveries will continue as scheduled. For questions about an order,\n please leave your name, order number, and a telephone number after the tone.\n We will return your call during business hours."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-01-cues-05.mp3",
+      "start": 8.13325,
+      "end": 11.02175,
+      "assetSha256": "3f418aff5586579ce8a41216bf0ef58ba657fb6c0861dcf94dbb6c8fc5f267ee",
+      "speech": "Number 80, why is the Riverside shop closed?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-28.mp3",
+      "start": 0.5,
+      "end": 40.364,
+      "assetSha256": "b4adac84a59ddd898a4333b34ce508a24fa52761a8981b5d3a257cd02a0160ef",
+      "speech": "Thank you for calling Cedar Corner Cafe. Our Riverside Shop is temporarily closed while the\n kitchen floor is being repaired. We expect to reopen on Monday, September 16. Until then,\n online orders will be prepared at our Market Street Shop. If you selected Riverside Pickup\n for an existing order, a staff member will contact you to arrange a new pickup location or a refund.\n Catering deliveries will continue as scheduled. For questions about an order,\n please leave your name, order number, and a telephone number after the tone.\n We will return your call during business hours."
+    }
+  ]
+}

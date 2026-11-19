@@ -1,0 +1,112 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Questions at reception; opposite meeting room only serves refreshments Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+  "activeQuestion": {
+    "id": "t01-q079",
+    "testId": "test-01",
+    "number": 79,
+    "part": 4,
+    "groupId": "t01-g047",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "location"
+    ],
+    "prompt": "Where will visitors be able to ask questions after the tour?",
+    "promptZh": "導覽後，訪客可以在哪裡提問？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inside the cleanroom.",
+        "zh": "在無塵室內。",
+        "whyZh": "當天不能進入無塵室，因此不是問答地點。"
+      },
+      {
+        "id": "B",
+        "text": "On the surface-mount line.",
+        "zh": "在表面黏著產線上。",
+        "whyZh": "產線是導覽第一站，結束後問答在接待處。"
+      },
+      {
+        "id": "C",
+        "text": "In the meeting room across the hall.",
+        "zh": "在走廊對面的會議室。",
+        "whyZh": "會議室提供點心；正式提問地點另指定為接待處。"
+      },
+      {
+        "id": "D",
+        "text": "At reception.",
+        "zh": "在接待處。",
+        "whyZh": "公告把提問安排在 return to reception；走廊對面的會議室是供應點心的地點。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "公告把提問安排在 return to reception；走廊對面的會議室是供應點心的地點。",
+    "evidence": "we will return to reception for questions",
+    "vocabulary": [
+      {
+        "term": "surface-mount line",
+        "zh": "表面黏著產線",
+        "note": "將電子元件裝到電路板表面的生產線。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g047",
+    "testId": "test-01",
+    "part": 4,
+    "title": "An electronics factory tour",
+    "titleZh": "電子工廠導覽",
+    "topic": "manufacturing",
+    "passage": "Welcome to Northfield Electronics. Before we begin the factory tour, please place your phones and cameras in the lockers beside reception. Photography is not permitted in the production areas because customer designs are visible there. We will first visit the surface-mount line, then observe final inspection through the viewing windows. We cannot enter the cleanroom today while a new filter system is being tested. Your visitor badges must remain visible throughout the tour. Afterward, we will return to reception for questions, and refreshments will be served in the meeting room across the hall.",
+    "passageZh": "歡迎來到 Northfield Electronics。開始工廠導覽前，請把手機和相機放入接待櫃檯旁的置物櫃。由於產區內看得到客戶設計，生產區禁止拍照。我們會先參觀表面黏著產線，再透過觀景窗觀看最終檢驗。今天新的過濾系統正在測試，因此不能進入無塵室。整趟導覽期間，請讓訪客識別證保持可見。結束後我們會回到接待處接受提問，點心則在走廊對面的會議室供應。",
+    "audioScript": "Welcome to Northfield Electronics. Before we begin the factory tour, please place your phones and cameras in the lockers beside reception. Photography is not permitted in the production areas because customer designs are visible there. We will first visit the surface-mount line, then observe final inspection through the viewing windows. We cannot enter the cleanroom today while a new filter system is being tested. Your visitor badges must remain visible throughout the tour. Afterward, we will return to reception for questions, and refreshments will be served in the meeting room across the hall.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Welcome to Northfield Electronics. Before we begin the factory tour, please place your phones and cameras in the lockers beside reception. Photography is not permitted in the production areas because customer designs are visible there. We will first visit the surface-mount line, then observe final inspection through the viewing windows. We cannot enter the cleanroom today while a new filter system is being tested. Your visitor badges must remain visible throughout the tour. Afterward, we will return to reception for questions, and refreshments will be served in the meeting room across the hall."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-27.mp3",
+    "duration": 44.64,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-IN",
+        "role": "male",
+        "modelVoice": "en-IN-PrabhatNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 45.14
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-01-27.mp3",
+      "start": 0.5,
+      "end": 45.14,
+      "assetSha256": "91cce402f693f2b9f3b9dc28902ffe9d6cd91a426de00f93c40e226c6cbc4c68",
+      "speech": "Welcome to Northfield Electronics.\n Before we begin the factory tour, please place your phones and cameras in the lockers beside reception.\n Photography is not permitted in the production areas because customer designs are visible there.\n We will first visit the Surface Mount line, then observe final inspection through the viewing windows.\n We cannot enter the clean room today while a new filter system is being tested.\n Your visitor badges must remain visible throughout the tour.\n Afterward, we will return to reception for questions and refreshments will be served in the meeting room across the hall."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-01-cues-05.mp3",
+      "start": 0.25,
+      "end": 4.72517,
+      "assetSha256": "3f418aff5586579ce8a41216bf0ef58ba657fb6c0861dcf94dbb6c8fc5f267ee",
+      "speech": "Number 79, where will visitors be able to ask questions after the tour?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-27.mp3",
+      "start": 0.5,
+      "end": 45.14,
+      "assetSha256": "91cce402f693f2b9f3b9dc28902ffe9d6cd91a426de00f93c40e226c6cbc4c68",
+      "speech": "Welcome to Northfield Electronics.\n Before we begin the factory tour, please place your phones and cameras in the lockers beside reception.\n Photography is not permitted in the production areas because customer designs are visible there.\n We will first visit the Surface Mount line, then observe final inspection through the viewing windows.\n We cannot enter the clean room today while a new filter system is being tested.\n Your visitor badges must remain visible throughout the tour.\n Afterward, we will return to reception for questions and refreshments will be served in the meeting room across the hall."
+    }
+  ]
+}

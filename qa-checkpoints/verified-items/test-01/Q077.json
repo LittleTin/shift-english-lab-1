@@ -1,0 +1,112 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Customer designs visible; no lighting/ticket/locker issue Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+  "activeQuestion": {
+    "id": "t01-q077",
+    "testId": "test-01",
+    "number": 77,
+    "part": 4,
+    "groupId": "t01-g047",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reason"
+    ],
+    "prompt": "Why is photography prohibited in production areas?",
+    "promptZh": "為什麼生產區禁止拍照？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The lighting would damage cameras.",
+        "zh": "照明會損壞相機。",
+        "whyZh": "公告沒有說工廠照明會損壞設備。"
+      },
+      {
+        "id": "B",
+        "text": "Visitors have not purchased photo tickets.",
+        "zh": "訪客未購買拍照票。",
+        "whyZh": "沒有拍照付費票券，限制適用於生產區。"
+      },
+      {
+        "id": "C",
+        "text": "The lockers are not working.",
+        "zh": "置物櫃故障。",
+        "whyZh": "訪客被要求使用置物櫃，未提故障。"
+      },
+      {
+        "id": "D",
+        "text": "Customer designs can be seen there.",
+        "zh": "那裡看得到客戶設計。",
+        "whyZh": "說話者以 because customer designs are visible 說明限制原因，是避免拍到客戶設計資訊。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "說話者以 because customer designs are visible 說明限制原因，是避免拍到客戶設計資訊。",
+    "evidence": "because customer designs are visible there.",
+    "vocabulary": [
+      {
+        "term": "prohibited",
+        "zh": "禁止的",
+        "note": "與 not permitted 同義。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g047",
+    "testId": "test-01",
+    "part": 4,
+    "title": "An electronics factory tour",
+    "titleZh": "電子工廠導覽",
+    "topic": "manufacturing",
+    "passage": "Welcome to Northfield Electronics. Before we begin the factory tour, please place your phones and cameras in the lockers beside reception. Photography is not permitted in the production areas because customer designs are visible there. We will first visit the surface-mount line, then observe final inspection through the viewing windows. We cannot enter the cleanroom today while a new filter system is being tested. Your visitor badges must remain visible throughout the tour. Afterward, we will return to reception for questions, and refreshments will be served in the meeting room across the hall.",
+    "passageZh": "歡迎來到 Northfield Electronics。開始工廠導覽前，請把手機和相機放入接待櫃檯旁的置物櫃。由於產區內看得到客戶設計，生產區禁止拍照。我們會先參觀表面黏著產線，再透過觀景窗觀看最終檢驗。今天新的過濾系統正在測試，因此不能進入無塵室。整趟導覽期間，請讓訪客識別證保持可見。結束後我們會回到接待處接受提問，點心則在走廊對面的會議室供應。",
+    "audioScript": "Welcome to Northfield Electronics. Before we begin the factory tour, please place your phones and cameras in the lockers beside reception. Photography is not permitted in the production areas because customer designs are visible there. We will first visit the surface-mount line, then observe final inspection through the viewing windows. We cannot enter the cleanroom today while a new filter system is being tested. Your visitor badges must remain visible throughout the tour. Afterward, we will return to reception for questions, and refreshments will be served in the meeting room across the hall.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Welcome to Northfield Electronics. Before we begin the factory tour, please place your phones and cameras in the lockers beside reception. Photography is not permitted in the production areas because customer designs are visible there. We will first visit the surface-mount line, then observe final inspection through the viewing windows. We cannot enter the cleanroom today while a new filter system is being tested. Your visitor badges must remain visible throughout the tour. Afterward, we will return to reception for questions, and refreshments will be served in the meeting room across the hall."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-27.mp3",
+    "duration": 44.64,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-IN",
+        "role": "male",
+        "modelVoice": "en-IN-PrabhatNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 45.14
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-01-27.mp3",
+      "start": 0.5,
+      "end": 45.14,
+      "assetSha256": "91cce402f693f2b9f3b9dc28902ffe9d6cd91a426de00f93c40e226c6cbc4c68",
+      "speech": "Welcome to Northfield Electronics.\n Before we begin the factory tour, please place your phones and cameras in the lockers beside reception.\n Photography is not permitted in the production areas because customer designs are visible there.\n We will first visit the Surface Mount line, then observe final inspection through the viewing windows.\n We cannot enter the clean room today while a new filter system is being tested.\n Your visitor badges must remain visible throughout the tour.\n Afterward, we will return to reception for questions and refreshments will be served in the meeting room across the hall."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-01-cues-04.mp3",
+      "start": 60.43896,
+      "end": 64.87746,
+      "assetSha256": "818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0",
+      "speech": "Number 77. Why is photography prohibited in production areas?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-27.mp3",
+      "start": 0.5,
+      "end": 45.14,
+      "assetSha256": "91cce402f693f2b9f3b9dc28902ffe9d6cd91a426de00f93c40e226c6cbc4c68",
+      "speech": "Welcome to Northfield Electronics.\n Before we begin the factory tour, please place your phones and cameras in the lockers beside reception.\n Photography is not permitted in the production areas because customer designs are visible there.\n We will first visit the Surface Mount line, then observe final inspection through the viewing windows.\n We cannot enter the clean room today while a new filter system is being tested.\n Your visitor badges must remain visible throughout the tour.\n Afterward, we will return to reception for questions and refreshments will be served in the meeting room across the hall."
+    }
+  ]
+}
