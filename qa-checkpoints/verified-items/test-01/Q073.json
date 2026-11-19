@@ -1,0 +1,112 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "That afternoon the speaker will demonstrate a new data-entry screen beside Line One, not driving or replacing fixtures and not a marketing presentation. Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+  "activeQuestion": {
+    "id": "t01-q073",
+    "testId": "test-01",
+    "number": 73,
+    "part": 4,
+    "groupId": "t01-g045",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "activity"
+    ],
+    "prompt": "What will the speaker demonstrate that afternoon?",
+    "promptZh": "說話者當天下午會示範什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "How to drive a delivery vehicle.",
+        "zh": "如何駕駛送貨車輛。",
+        "whyZh": "公告沒有駕駛訓練。"
+      },
+      {
+        "id": "B",
+        "text": "How to replace every fixture.",
+        "zh": "如何更換所有治具。",
+        "whyZh": "治具未更換也需檢查，但示範內容是輸入畫面。"
+      },
+      {
+        "id": "C",
+        "text": "A new data-entry screen.",
+        "zh": "新的資料輸入畫面。",
+        "whyZh": "說話者要在下午休息時示範 new entry screen，與前文平板輸入序號的流程相連。"
+      },
+      {
+        "id": "D",
+        "text": "A customer's marketing presentation.",
+        "zh": "客戶的行銷簡報。",
+        "whyZh": "這是產線作業公告，沒有行銷簡報。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "說話者要在下午休息時示範 new entry screen，與前文平板輸入序號的流程相連。",
+    "evidence": "I will demonstrate the new entry screen beside Line One.",
+    "vocabulary": [
+      {
+        "term": "data entry",
+        "zh": "資料輸入",
+        "note": "把序號等資訊輸入系統的操作。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g045",
+    "testId": "test-01",
+    "part": 4,
+    "title": "First-unit inspection",
+    "titleZh": "換型後首件檢查",
+    "topic": "manufacturing",
+    "passage": "Good morning, team. Beginning tomorrow, the first unit produced after each model change must be checked by a quality inspector before the line returns to normal speed. This requirement applies even when the fixture has not been replaced. Place the unit on the yellow inspection shelf and enter its serial number in the tablet at the station. Please do not leave samples on the supervisor's desk. During today's afternoon break, I will demonstrate the new entry screen beside Line One. If the inspector is unavailable, keep the line paused and contact the quality desk.",
+    "passageZh": "各位早安。從明天開始，每次切換機種後生產的第一件產品，都必須經品質檢驗員確認，產線才能恢復正常速度。即使治具沒有更換，這項規定仍適用。請把產品放在黃色檢驗架上，並在工作站的平板輸入序號。請不要把樣品放在主管桌上。今天下午休息時間，我會在一號線旁示範新的輸入畫面。如果檢驗員無法到場，請維持停線並聯絡品質服務窗口。",
+    "audioScript": "Good morning, team. Beginning tomorrow, the first unit produced after each model change must be checked by a quality inspector before the line returns to normal speed. This requirement applies even when the fixture has not been replaced. Place the unit on the yellow inspection shelf and enter its serial number in the tablet at the station. Please do not leave samples on the supervisor's desk. During today's afternoon break, I will demonstrate the new entry screen beside Line One. If the inspector is unavailable, keep the line paused and contact the quality desk.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Good morning, team. Beginning tomorrow, the first unit produced after each model change must be checked by a quality inspector before the line returns to normal speed. This requirement applies even when the fixture has not been replaced. Place the unit on the yellow inspection shelf and enter its serial number in the tablet at the station. Please do not leave samples on the supervisor's desk. During today's afternoon break, I will demonstrate the new entry screen beside Line One. If the inspector is unavailable, keep the line paused and contact the quality desk."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-25.mp3",
+    "duration": 33.648,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-CA",
+        "role": "male",
+        "modelVoice": "en-CA-LiamNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 34.148
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-01-25.mp3",
+      "start": 0.5,
+      "end": 34.148,
+      "assetSha256": "ae519395678d8734bf5acbea53145a3723a8793b6016161d60a897e80616b3d9",
+      "speech": "Good morning, team!\n Beginning tomorrow, the first unit produced after each model change must be checked by a quality inspector before the line returns to normal speed.\n This requirement applies even when the fixture has not been replaced.\n Place the unit on the yellow inspection shelf and enter its serial number in the tablet at the station.\n Please do not leave samples on the supervisor's desk.\n During today's afternoon break, I will demonstrate the new entry screen beside Line 1.\n If the inspector is unavailable, keep the line paused and contact the quality desk."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-01-cues-04.mp3",
+      "start": 37.61075,
+      "end": 41.35942,
+      "assetSha256": "818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0",
+      "speech": "Number 73, what will the speaker demonstrate that afternoon?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-25.mp3",
+      "start": 0.5,
+      "end": 34.148,
+      "assetSha256": "ae519395678d8734bf5acbea53145a3723a8793b6016161d60a897e80616b3d9",
+      "speech": "Good morning, team!\n Beginning tomorrow, the first unit produced after each model change must be checked by a quality inspector before the line returns to normal speed.\n This requirement applies even when the fixture has not been replaced.\n Place the unit on the yellow inspection shelf and enter its serial number in the tablet at the station.\n Please do not leave samples on the supervisor's desk.\n During today's afternoon break, I will demonstrate the new entry screen beside Line 1.\n If the inspector is unavailable, keep the line paused and contact the quality desk."
+    }
+  ]
+}

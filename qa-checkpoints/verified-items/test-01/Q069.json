@@ -1,0 +1,138 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Drivers should arrive by 1:30; 1:00 is the shuttle departure. No noon deadline or delay until after 2:30. Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+  "activeQuestion": {
+    "id": "t01-q069",
+    "testId": "test-01",
+    "number": 69,
+    "part": 3,
+    "groupId": "t01-g044",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "time"
+    ],
+    "prompt": "When should people driving themselves arrive?",
+    "promptZh": "自行開車的人最遲要在幾點抵達？",
+    "options": [
+      {
+        "id": "A",
+        "text": "By noon.",
+        "zh": "最遲中午。",
+        "whyZh": "對話沒有要求中午抵達。"
+      },
+      {
+        "id": "B",
+        "text": "By one thirty.",
+        "zh": "最遲一點半。",
+        "whyZh": "女子分別說接駁車一點出發，自行前往者須 by one thirty 到中心；題目問的是後者。"
+      },
+      {
+        "id": "C",
+        "text": "At one o'clock sharp.",
+        "zh": "一點整。",
+        "whyZh": "一點是接駁車離開辦公室的時間，不是自行開車者的到場期限。"
+      },
+      {
+        "id": "D",
+        "text": "After two thirty.",
+        "zh": "兩點半以後。",
+        "whyZh": "這比指定的一點半期限晚了一小時以上。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "女子分別說接駁車一點出發，自行前往者須 by one thirty 到中心；題目問的是後者。",
+    "evidence": "please arrive at the center by one thirty.",
+    "vocabulary": [
+      {
+        "term": "by",
+        "zh": "不晚於；在……以前",
+        "note": "與時間連用時表示截止期限。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g044",
+    "testId": "test-01",
+    "part": 3,
+    "title": "Preparing for volunteer work",
+    "titleZh": "準備志工活動",
+    "topic": "business",
+    "passage": "Woman: Our company volunteers are scheduled to pack food parcels at the community center on Friday.\nMan: I saw the email. Are we meeting there directly?\nWoman: A shuttle will leave the office at one. If you drive yourself, please arrive at the center by one thirty.\nMan: Should we bring boxes or packing tape?\nWoman: The center supplies both. They only ask us to wear closed-toe shoes.\nMan: All right. I'll take the shuttle and remind my department about the footwear requirement.",
+    "passageZh": "女：我們公司的志工星期五預定到社區中心打包食物包裹。\n男：我看到郵件了。我們直接在那裡集合嗎？\n女：接駁車一點從辦公室出發。如果你自行開車，請最遲在一點半抵達社區中心。\n男：我們需要帶箱子或包裝膠帶嗎？\n女：中心會提供這兩樣。他們只要求我們穿包覆腳趾的鞋子。\n男：好。我會搭接駁車，也會提醒部門同事注意鞋子的要求。",
+    "audioScript": "Our company volunteers are scheduled to pack food parcels at the community center on Friday.\nI saw the email. Are we meeting there directly?\nA shuttle will leave the office at one. If you drive yourself, please arrive at the center by one thirty.\nShould we bring boxes or packing tape?\nThe center supplies both. They only ask us to wear closed-toe shoes.\nAll right. I'll take the shuttle and remind my department about the footwear requirement.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Our company volunteers are scheduled to pack food parcels at the community center on Friday."
+      },
+      {
+        "voice": "male",
+        "text": "I saw the email. Are we meeting there directly?"
+      },
+      {
+        "voice": "female",
+        "text": "A shuttle will leave the office at one. If you drive yourself, please arrive at the center by one thirty."
+      },
+      {
+        "voice": "male",
+        "text": "Should we bring boxes or packing tape?"
+      },
+      {
+        "voice": "female",
+        "text": "The center supplies both. They only ask us to wear closed-toe shoes."
+      },
+      {
+        "voice": "male",
+        "text": "All right. I'll take the shuttle and remind my department about the footwear requirement."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-24.mp3",
+    "duration": 32.976,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-GB",
+        "role": "female",
+        "modelVoice": "en-GB-SoniaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-GB",
+        "role": "male",
+        "modelVoice": "en-GB-RyanNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 33.476
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-01-24.mp3",
+      "start": 0.5,
+      "end": 33.476,
+      "assetSha256": "2955c6eeb6287151dd6f21d3594c4e4ae258c5081a55d6994fcc3c998ef59e6d",
+      "speech": "Our company volunteers are scheduled to pack food parcels at the community centre on Friday.\n I saw the email.\n Are we meeting there directly?\n A shuttle will leave the office at 1. If you drive yourself, please arrive at the centre by 1.30.\n Should we bring boxes or packing tape?\n The centre supplies both. They only ask us to wear closed-toe shoes.\n Alright. I'll take the shuttle and remind my department about the footwear requirement."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-01-cues-04.mp3",
+      "start": 18.30021,
+      "end": 21.89163,
+      "assetSha256": "818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0",
+      "speech": "Number 69. When should people driving themselves arrive?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-24.mp3",
+      "start": 0.5,
+      "end": 33.476,
+      "assetSha256": "2955c6eeb6287151dd6f21d3594c4e4ae258c5081a55d6994fcc3c998ef59e6d",
+      "speech": "Our company volunteers are scheduled to pack food parcels at the community centre on Friday.\n I saw the email.\n Are we meeting there directly?\n A shuttle will leave the office at 1. If you drive yourself, please arrive at the centre by 1.30.\n Should we bring boxes or packing tape?\n The centre supplies both. They only ask us to wear closed-toe shoes.\n Alright. I'll take the shuttle and remind my department about the footwear requirement."
+    }
+  ]
+}

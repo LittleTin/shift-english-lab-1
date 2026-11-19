@@ -1,0 +1,112 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Each switch to a different model triggers the first-unit inspection even if the fixture stayed, before resuming normal line speed—not weekly or after shipping. Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+  "activeQuestion": {
+    "id": "t01-q071",
+    "testId": "test-01",
+    "number": 71,
+    "part": 4,
+    "groupId": "t01-g045",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "condition"
+    ],
+    "prompt": "When is a first-unit inspection required?",
+    "promptZh": "何時需要首件檢查？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Only when a fixture is replaced.",
+        "zh": "只有更換治具時。",
+        "whyZh": "公告特別說治具沒有更換時也適用，only 限縮過度。"
+      },
+      {
+        "id": "B",
+        "text": "After each change to a different model.",
+        "zh": "每次切換到不同機種之後。",
+        "whyZh": "公告說 after each model change，且即使治具未更換仍適用，因此判斷條件是換機種。"
+      },
+      {
+        "id": "C",
+        "text": "Only at the end of the week.",
+        "zh": "只有每週結束時。",
+        "whyZh": "規定與每次機種切換有關，並非每週一次。"
+      },
+      {
+        "id": "D",
+        "text": "After the unit has been shipped.",
+        "zh": "產品出貨之後。",
+        "whyZh": "檢查必須在產線恢復正常速度前完成，遠早於出貨。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "公告說 after each model change，且即使治具未更換仍適用，因此判斷條件是換機種。",
+    "evidence": "the first unit produced after each model change must be checked by a quality inspector",
+    "vocabulary": [
+      {
+        "term": "first unit",
+        "zh": "首件產品",
+        "note": "此處指切換機種後生產的第一件。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g045",
+    "testId": "test-01",
+    "part": 4,
+    "title": "First-unit inspection",
+    "titleZh": "換型後首件檢查",
+    "topic": "manufacturing",
+    "passage": "Good morning, team. Beginning tomorrow, the first unit produced after each model change must be checked by a quality inspector before the line returns to normal speed. This requirement applies even when the fixture has not been replaced. Place the unit on the yellow inspection shelf and enter its serial number in the tablet at the station. Please do not leave samples on the supervisor's desk. During today's afternoon break, I will demonstrate the new entry screen beside Line One. If the inspector is unavailable, keep the line paused and contact the quality desk.",
+    "passageZh": "各位早安。從明天開始，每次切換機種後生產的第一件產品，都必須經品質檢驗員確認，產線才能恢復正常速度。即使治具沒有更換，這項規定仍適用。請把產品放在黃色檢驗架上，並在工作站的平板輸入序號。請不要把樣品放在主管桌上。今天下午休息時間，我會在一號線旁示範新的輸入畫面。如果檢驗員無法到場，請維持停線並聯絡品質服務窗口。",
+    "audioScript": "Good morning, team. Beginning tomorrow, the first unit produced after each model change must be checked by a quality inspector before the line returns to normal speed. This requirement applies even when the fixture has not been replaced. Place the unit on the yellow inspection shelf and enter its serial number in the tablet at the station. Please do not leave samples on the supervisor's desk. During today's afternoon break, I will demonstrate the new entry screen beside Line One. If the inspector is unavailable, keep the line paused and contact the quality desk.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Good morning, team. Beginning tomorrow, the first unit produced after each model change must be checked by a quality inspector before the line returns to normal speed. This requirement applies even when the fixture has not been replaced. Place the unit on the yellow inspection shelf and enter its serial number in the tablet at the station. Please do not leave samples on the supervisor's desk. During today's afternoon break, I will demonstrate the new entry screen beside Line One. If the inspector is unavailable, keep the line paused and contact the quality desk."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-25.mp3",
+    "duration": 33.648,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-CA",
+        "role": "male",
+        "modelVoice": "en-CA-LiamNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 34.148
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-01-25.mp3",
+      "start": 0.5,
+      "end": 34.148,
+      "assetSha256": "ae519395678d8734bf5acbea53145a3723a8793b6016161d60a897e80616b3d9",
+      "speech": "Good morning, team!\n Beginning tomorrow, the first unit produced after each model change must be checked by a quality inspector before the line returns to normal speed.\n This requirement applies even when the fixture has not been replaced.\n Place the unit on the yellow inspection shelf and enter its serial number in the tablet at the station.\n Please do not leave samples on the supervisor's desk.\n During today's afternoon break, I will demonstrate the new entry screen beside Line 1.\n If the inspector is unavailable, keep the line paused and contact the quality desk."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-01-cues-04.mp3",
+      "start": 30.22758,
+      "end": 33.99954,
+      "assetSha256": "818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0",
+      "speech": "Number 71. When is a first unit inspection required?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-25.mp3",
+      "start": 0.5,
+      "end": 34.148,
+      "assetSha256": "ae519395678d8734bf5acbea53145a3723a8793b6016161d60a897e80616b3d9",
+      "speech": "Good morning, team!\n Beginning tomorrow, the first unit produced after each model change must be checked by a quality inspector before the line returns to normal speed.\n This requirement applies even when the fixture has not been replaced.\n Place the unit on the yellow inspection shelf and enter its serial number in the tablet at the station.\n Please do not leave samples on the supervisor's desk.\n During today's afternoon break, I will demonstrate the new entry screen beside Line 1.\n If the inspector is unavailable, keep the line paused and contact the quality desk."
+    }
+  ]
+}

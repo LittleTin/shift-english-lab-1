@@ -1,0 +1,138 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Participants should bring their bicycles for practice. Tools are provided; the mailing list is for future notices and no replacement wheel is requested. Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+  "activeQuestion": {
+    "id": "t01-q063",
+    "testId": "test-01",
+    "number": 63,
+    "part": 3,
+    "groupId": "t01-g042",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "requirement"
+    ],
+    "prompt": "What should participants bring?",
+    "promptZh": "參加者應帶什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "A complete set of repair tools.",
+        "zh": "整套維修工具。",
+        "whyZh": "工具由活動方提供，不必自備。"
+      },
+      {
+        "id": "B",
+        "text": "Printed mailing lists.",
+        "zh": "列印的通知名單。",
+        "whyZh": "通知名單用於接收未來活動訊息，並非需攜帶物品。"
+      },
+      {
+        "id": "C",
+        "text": "A replacement wheel.",
+        "zh": "替換車輪。",
+        "whyZh": "本次不是換輪課程，也未要求自備車輪。"
+      },
+      {
+        "id": "D",
+        "text": "Their bicycles.",
+        "zh": "自己的自行車。",
+        "whyZh": "男子說工具會提供，並明確要求帶自行車以便練習煞車調整。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "男子說工具會提供，並明確要求帶自行車以便練習煞車調整。",
+    "evidence": "Please bring your bicycle",
+    "vocabulary": [
+      {
+        "term": "adjust the brakes",
+        "zh": "調整煞車",
+        "note": "改善煞車位置或作用狀態的操作。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g042",
+    "testId": "test-01",
+    "part": 3,
+    "title": "A bicycle workshop",
+    "titleZh": "自行車維修工作坊",
+    "topic": "daily",
+    "passage": "Woman: I'd like to register for Saturday's bicycle repair workshop. Is there still a place?\nMan: The morning session is full, but we added an afternoon session at two.\nWoman: That works. Do I need to bring my own tools?\nMan: Tools are provided. Please bring your bicycle, since you'll practice adjusting its brakes.\nWoman: Mine has a damaged tire as well. Will the instructor cover tire replacement?\nMan: The main lesson is brake adjustment. Tire replacement is covered in next month's workshop, and I can add you to the mailing list.",
+    "passageZh": "女：我想報名星期六的自行車維修工作坊，還有名額嗎？\n男：上午場已額滿，但我們新增了一場下午兩點的課。\n女：那個時間可以。我需要自己帶工具嗎？\n男：我們會提供工具。請帶你的自行車，因為你會練習調整煞車。\n女：我的車胎也壞了。講師會教換胎嗎？\n男：這次主要教煞車調整。換胎是下個月工作坊的內容，我可以把你加入通知名單。",
+    "audioScript": "I'd like to register for Saturday's bicycle repair workshop. Is there still a place?\nThe morning session is full, but we added an afternoon session at two.\nThat works. Do I need to bring my own tools?\nTools are provided. Please bring your bicycle, since you'll practice adjusting its brakes.\nMine has a damaged tire as well. Will the instructor cover tire replacement?\nThe main lesson is brake adjustment. Tire replacement is covered in next month's workshop, and I can add you to the mailing list.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "I'd like to register for Saturday's bicycle repair workshop. Is there still a place?"
+      },
+      {
+        "voice": "male",
+        "text": "The morning session is full, but we added an afternoon session at two."
+      },
+      {
+        "voice": "female",
+        "text": "That works. Do I need to bring my own tools?"
+      },
+      {
+        "voice": "male",
+        "text": "Tools are provided. Please bring your bicycle, since you'll practice adjusting its brakes."
+      },
+      {
+        "voice": "female",
+        "text": "Mine has a damaged tire as well. Will the instructor cover tire replacement?"
+      },
+      {
+        "voice": "male",
+        "text": "The main lesson is brake adjustment. Tire replacement is covered in next month's workshop, and I can add you to the mailing list."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-22.mp3",
+    "duration": 36.72,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-ZA",
+        "role": "female",
+        "modelVoice": "en-ZA-LeahNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-ZA",
+        "role": "male",
+        "modelVoice": "en-ZA-LukeNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 37.22
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-01-22.mp3",
+      "start": 0.5,
+      "end": 37.22,
+      "assetSha256": "e8a50097101a011212949c5964aa122cf96c00ff8222e94d017d1e4ae4c50a82",
+      "speech": "I'd like to register for Saturday's bicycle repair workshop.\n Is there still a place?\n The morning session is full, but we added an afternoon session at 2.\n That works.\n Do I need to bring my own tools?\n Tools are provided.\n Please bring your bicycle, since you'll practice adjusting its brakes.\n Mine has a damaged tire as well.\n Will the instructor cover tire replacement?\n The main lesson is brake adjustment.\n Tire replacement is covered in next month's workshop, and I can add you to the mailing list."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-01-cues-03.mp3",
+      "start": 58.09112,
+      "end": 60.78229,
+      "assetSha256": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196",
+      "speech": "Number 63. What should participants bring?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-22.mp3",
+      "start": 0.5,
+      "end": 37.22,
+      "assetSha256": "e8a50097101a011212949c5964aa122cf96c00ff8222e94d017d1e4ae4c50a82",
+      "speech": "I'd like to register for Saturday's bicycle repair workshop.\n Is there still a place?\n The morning session is full, but we added an afternoon session at 2.\n That works.\n Do I need to bring my own tools?\n Tools are provided.\n Please bring your bicycle, since you'll practice adjusting its brakes.\n Mine has a damaged tire as well.\n Will the instructor cover tire replacement?\n The main lesson is brake adjustment.\n Tire replacement is covered in next month's workshop, and I can add you to the mailing list."
+    }
+  ]
+}

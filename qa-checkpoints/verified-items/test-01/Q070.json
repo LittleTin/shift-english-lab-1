@@ -1,0 +1,138 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "He will remind his department about closed-toe shoes. Boxes and tape are supplied, and no parking permit is involved. Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+  "activeQuestion": {
+    "id": "t01-q070",
+    "testId": "test-01",
+    "number": 70,
+    "part": 3,
+    "groupId": "t01-g044",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "requirement"
+    ],
+    "prompt": "What requirement will the man remind his department about?",
+    "promptZh": "男子會提醒部門同事哪項要求？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bringing their own packing tape.",
+        "zh": "自備包裝膠帶。",
+        "whyZh": "中心會提供膠帶，不需要自備。"
+      },
+      {
+        "id": "B",
+        "text": "Wearing closed-toe shoes.",
+        "zh": "穿包覆腳趾的鞋子。",
+        "whyZh": "中心提供箱子與膠帶，只要求穿 closed-toe shoes；男子最後說要提醒鞋類規定。"
+      },
+      {
+        "id": "C",
+        "text": "Collecting empty boxes at the office.",
+        "zh": "在辦公室收集空箱子。",
+        "whyZh": "中心提供箱子，並未要求辦公室收集。"
+      },
+      {
+        "id": "D",
+        "text": "Paying for a parking permit.",
+        "zh": "付費購買停車許可。",
+        "whyZh": "沒有提到停車許可或費用。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "中心提供箱子與膠帶，只要求穿 closed-toe shoes；男子最後說要提醒鞋類規定。",
+    "evidence": "They only ask us to wear closed-toe shoes.",
+    "vocabulary": [
+      {
+        "term": "closed-toe shoes",
+        "zh": "包覆腳趾的鞋子",
+        "note": "與露趾涼鞋相對，常用於工作場所鞋類要求。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g044",
+    "testId": "test-01",
+    "part": 3,
+    "title": "Preparing for volunteer work",
+    "titleZh": "準備志工活動",
+    "topic": "business",
+    "passage": "Woman: Our company volunteers are scheduled to pack food parcels at the community center on Friday.\nMan: I saw the email. Are we meeting there directly?\nWoman: A shuttle will leave the office at one. If you drive yourself, please arrive at the center by one thirty.\nMan: Should we bring boxes or packing tape?\nWoman: The center supplies both. They only ask us to wear closed-toe shoes.\nMan: All right. I'll take the shuttle and remind my department about the footwear requirement.",
+    "passageZh": "女：我們公司的志工星期五預定到社區中心打包食物包裹。\n男：我看到郵件了。我們直接在那裡集合嗎？\n女：接駁車一點從辦公室出發。如果你自行開車，請最遲在一點半抵達社區中心。\n男：我們需要帶箱子或包裝膠帶嗎？\n女：中心會提供這兩樣。他們只要求我們穿包覆腳趾的鞋子。\n男：好。我會搭接駁車，也會提醒部門同事注意鞋子的要求。",
+    "audioScript": "Our company volunteers are scheduled to pack food parcels at the community center on Friday.\nI saw the email. Are we meeting there directly?\nA shuttle will leave the office at one. If you drive yourself, please arrive at the center by one thirty.\nShould we bring boxes or packing tape?\nThe center supplies both. They only ask us to wear closed-toe shoes.\nAll right. I'll take the shuttle and remind my department about the footwear requirement.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Our company volunteers are scheduled to pack food parcels at the community center on Friday."
+      },
+      {
+        "voice": "male",
+        "text": "I saw the email. Are we meeting there directly?"
+      },
+      {
+        "voice": "female",
+        "text": "A shuttle will leave the office at one. If you drive yourself, please arrive at the center by one thirty."
+      },
+      {
+        "voice": "male",
+        "text": "Should we bring boxes or packing tape?"
+      },
+      {
+        "voice": "female",
+        "text": "The center supplies both. They only ask us to wear closed-toe shoes."
+      },
+      {
+        "voice": "male",
+        "text": "All right. I'll take the shuttle and remind my department about the footwear requirement."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-24.mp3",
+    "duration": 32.976,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-GB",
+        "role": "female",
+        "modelVoice": "en-GB-SoniaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-GB",
+        "role": "male",
+        "modelVoice": "en-GB-RyanNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 33.476
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-01-24.mp3",
+      "start": 0.5,
+      "end": 33.476,
+      "assetSha256": "2955c6eeb6287151dd6f21d3594c4e4ae258c5081a55d6994fcc3c998ef59e6d",
+      "speech": "Our company volunteers are scheduled to pack food parcels at the community centre on Friday.\n I saw the email.\n Are we meeting there directly?\n A shuttle will leave the office at 1. If you drive yourself, please arrive at the centre by 1.30.\n Should we bring boxes or packing tape?\n The centre supplies both. They only ask us to wear closed-toe shoes.\n Alright. I'll take the shuttle and remind my department about the footwear requirement."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-01-cues-04.mp3",
+      "start": 22.14163,
+      "end": 26.31942,
+      "assetSha256": "818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0",
+      "speech": "Number 70 - What Requirement Will The Man Remind His Department About"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-24.mp3",
+      "start": 0.5,
+      "end": 33.476,
+      "assetSha256": "2955c6eeb6287151dd6f21d3594c4e4ae258c5081a55d6994fcc3c998ef59e6d",
+      "speech": "Our company volunteers are scheduled to pack food parcels at the community centre on Friday.\n I saw the email.\n Are we meeting there directly?\n A shuttle will leave the office at 1. If you drive yourself, please arrive at the centre by 1.30.\n Should we bring boxes or packing tape?\n The centre supplies both. They only ask us to wear closed-toe shoes.\n Alright. I'll take the shuttle and remind my department about the footwear requirement."
+    }
+  ]
+}
