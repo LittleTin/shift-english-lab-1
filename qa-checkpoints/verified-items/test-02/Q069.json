@@ -1,0 +1,142 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "機構團隊需確認線材間隙；並不是餐飲、財務或保全資料。 正式題號、口述題幹與兩模式的對話範圍均核對；英中題意和各選項解析已校對。",
+  "activeQuestion": {
+    "id": "t02-q069",
+    "testId": "test-02",
+    "number": 69,
+    "part": 3,
+    "groupId": "t02-g044",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "clearance"
+    ],
+    "prompt": "Which team needs to provide more information?",
+    "promptZh": "哪個團隊需要提供更多資訊？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The mechanical team.",
+        "zh": "機構團隊。",
+        "whyZh": "男方明確要求機構團隊確認線材間隙。"
+      },
+      {
+        "id": "B",
+        "text": "The catering team.",
+        "zh": "餐飲團隊。",
+        "whyZh": "與設計審查內容無關。"
+      },
+      {
+        "id": "C",
+        "text": "The finance team.",
+        "zh": "財務團隊。",
+        "whyZh": "本題缺的是機構確認，不是財務資料。"
+      },
+      {
+        "id": "D",
+        "text": "The security team.",
+        "zh": "保全團隊。",
+        "whyZh": "沒有安全管制資料需求。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "男方明確要求機構團隊確認線材間隙。",
+    "evidence": "the mechanical team's confirmation of the cable clearance",
+    "vocabulary": [
+      {
+        "term": "clearance",
+        "zh": "間隙；預留空間",
+        "note": "本題指線材與其他結構之間需要確認的空間。"
+      },
+      {
+        "term": "review package",
+        "zh": "審查資料包",
+        "note": "整合待審查資訊的文件集合。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g044",
+    "testId": "test-02",
+    "part": 3,
+    "title": "A design review checklist",
+    "titleZh": "設計審查清單",
+    "topic": "technology",
+    "passage": "Woman: I have added the battery temperature results to the review package. Is anything else missing?\nMan: We still need the mechanical team's confirmation of the cable clearance. The customer asked about it in the last meeting.\nWoman: I will ask them now. If the confirmation arrives today, can we keep tomorrow's review?\nMan: Yes. Otherwise, we should postpone the review rather than present an incomplete package.",
+    "passageZh": "女：我已把電池溫度測試結果加入審查資料。還缺什麼嗎？\n男：我們仍需要機構團隊確認線材間隙。客戶在上次會議問過這件事。\n女：我現在就去問。如果今天收到確認，我們能維持明天的審查嗎？\n男：可以。否則應該延後審查，避免提交不完整的資料。",
+    "audioScript": "I have added the battery temperature results to the review package. Is anything else missing?\nWe still need the mechanical team's confirmation of the cable clearance. The customer asked about it in the last meeting.\nI will ask them now. If the confirmation arrives today, can we keep tomorrow's review?\nYes. Otherwise, we should postpone the review rather than present an incomplete package.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "I have added the battery temperature results to the review package. Is anything else missing?"
+      },
+      {
+        "voice": "male",
+        "text": "We still need the mechanical team's confirmation of the cable clearance. The customer asked about it in the last meeting."
+      },
+      {
+        "voice": "female",
+        "text": "I will ask them now. If the confirmation arrives today, can we keep tomorrow's review?"
+      },
+      {
+        "voice": "male",
+        "text": "Yes. Otherwise, we should postpone the review rather than present an incomplete package."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-21.mp3",
+    "duration": 30.96,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-SG",
+        "role": "female",
+        "modelVoice": "en-SG-LunaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-SG",
+        "role": "male",
+        "modelVoice": "en-SG-WayneNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 31.46
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-02-cues-04.mp3",
+      "mode": "cue",
+      "start": 6.92333,
+      "end": 10.74983,
+      "assetSha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+      "speech": "Questions 68 through 70, listen to the conversation."
+    },
+    {
+      "path": "audio/azure-v1/test-02-21.mp3",
+      "mode": "passage",
+      "start": 0.5,
+      "end": 31.46,
+      "assetSha256": "b844c22b5ec40263ba820b8f820a7f943c0d5595697f00849adefa104f6733ea",
+      "speech": "I have added the battery temperature results to the review package. Is anything else missing? We still need the mechanical team's confirmation of the cable clearance. The customer asked about it in the last meeting. I will ask them now. If the confirmation arrives today, can we keep tomorrow's review? Yes. Otherwise, we should postpone the review rather than present an incomplete package."
+    },
+    {
+      "path": "audio/formal/test-02-cues-04.mp3",
+      "mode": "question",
+      "start": 13.71879,
+      "end": 17.42221,
+      "assetSha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+      "speech": "Number 69, which team needs to provide more information."
+    },
+    {
+      "path": "audio/azure-v1/test-02-21.mp3",
+      "mode": "practice",
+      "start": 0.5,
+      "end": 31.46,
+      "assetSha256": "b844c22b5ec40263ba820b8f820a7f943c0d5595697f00849adefa104f6733ea",
+      "speech": "I have added the battery temperature results to the review package. Is anything else missing? We still need the mechanical team's confirmation of the cable clearance. The customer asked about it in the last meeting. I will ask them now. If the confirmation arrives today, can we keep tomorrow's review? Yes. Otherwise, we should postpone the review rather than present an incomplete package."
+    }
+  ]
+}

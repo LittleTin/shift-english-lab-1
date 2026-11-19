@@ -1,0 +1,142 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "今天收到確認才保留明天審查；取消專案、刪結果或永久停止測試都不是條件。 正式題號、口述題幹與兩模式的對話範圍均核對；英中題意和各選項解析已校對。",
+  "activeQuestion": {
+    "id": "t02-q070",
+    "testId": "test-02",
+    "number": 70,
+    "part": 3,
+    "groupId": "t02-g044",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "clearance"
+    ],
+    "prompt": "Under what condition will tomorrow's review proceed?",
+    "promptZh": "什麼條件下明天的審查會照常進行？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The customer cancels the project.",
+        "zh": "客戶取消專案。",
+        "whyZh": "專案取消不是舉行審查的條件。"
+      },
+      {
+        "id": "B",
+        "text": "The battery results are removed.",
+        "zh": "移除電池測試結果。",
+        "whyZh": "已加入的結果是資料的一部分，未要求移除。"
+      },
+      {
+        "id": "C",
+        "text": "The mechanical team stops testing permanently.",
+        "zh": "機構團隊永久停止測試。",
+        "whyZh": "沒有這項條件。"
+      },
+      {
+        "id": "D",
+        "text": "The missing confirmation arrives today.",
+        "zh": "今天收到缺少的確認。",
+        "whyZh": "女方問此條件下是否保留審查，男方回答可以。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "女方問此條件下是否保留審查，男方回答可以。",
+    "evidence": "If the confirmation arrives today, can we keep tomorrow's review?",
+    "vocabulary": [
+      {
+        "term": "clearance",
+        "zh": "間隙；預留空間",
+        "note": "本題指線材與其他結構之間需要確認的空間。"
+      },
+      {
+        "term": "review package",
+        "zh": "審查資料包",
+        "note": "整合待審查資訊的文件集合。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g044",
+    "testId": "test-02",
+    "part": 3,
+    "title": "A design review checklist",
+    "titleZh": "設計審查清單",
+    "topic": "technology",
+    "passage": "Woman: I have added the battery temperature results to the review package. Is anything else missing?\nMan: We still need the mechanical team's confirmation of the cable clearance. The customer asked about it in the last meeting.\nWoman: I will ask them now. If the confirmation arrives today, can we keep tomorrow's review?\nMan: Yes. Otherwise, we should postpone the review rather than present an incomplete package.",
+    "passageZh": "女：我已把電池溫度測試結果加入審查資料。還缺什麼嗎？\n男：我們仍需要機構團隊確認線材間隙。客戶在上次會議問過這件事。\n女：我現在就去問。如果今天收到確認，我們能維持明天的審查嗎？\n男：可以。否則應該延後審查，避免提交不完整的資料。",
+    "audioScript": "I have added the battery temperature results to the review package. Is anything else missing?\nWe still need the mechanical team's confirmation of the cable clearance. The customer asked about it in the last meeting.\nI will ask them now. If the confirmation arrives today, can we keep tomorrow's review?\nYes. Otherwise, we should postpone the review rather than present an incomplete package.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "I have added the battery temperature results to the review package. Is anything else missing?"
+      },
+      {
+        "voice": "male",
+        "text": "We still need the mechanical team's confirmation of the cable clearance. The customer asked about it in the last meeting."
+      },
+      {
+        "voice": "female",
+        "text": "I will ask them now. If the confirmation arrives today, can we keep tomorrow's review?"
+      },
+      {
+        "voice": "male",
+        "text": "Yes. Otherwise, we should postpone the review rather than present an incomplete package."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-21.mp3",
+    "duration": 30.96,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-SG",
+        "role": "female",
+        "modelVoice": "en-SG-LunaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-SG",
+        "role": "male",
+        "modelVoice": "en-SG-WayneNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 31.46
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-02-cues-04.mp3",
+      "mode": "cue",
+      "start": 6.92333,
+      "end": 10.74983,
+      "assetSha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+      "speech": "Questions 68 through 70, listen to the conversation."
+    },
+    {
+      "path": "audio/azure-v1/test-02-21.mp3",
+      "mode": "passage",
+      "start": 0.5,
+      "end": 31.46,
+      "assetSha256": "b844c22b5ec40263ba820b8f820a7f943c0d5595697f00849adefa104f6733ea",
+      "speech": "I have added the battery temperature results to the review package. Is anything else missing? We still need the mechanical team's confirmation of the cable clearance. The customer asked about it in the last meeting. I will ask them now. If the confirmation arrives today, can we keep tomorrow's review? Yes. Otherwise, we should postpone the review rather than present an incomplete package."
+    },
+    {
+      "path": "audio/formal/test-02-cues-04.mp3",
+      "mode": "question",
+      "start": 17.67221,
+      "end": 21.54892,
+      "assetSha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+      "speech": "70. Under what condition will tomorrow's review proceed?"
+    },
+    {
+      "path": "audio/azure-v1/test-02-21.mp3",
+      "mode": "practice",
+      "start": 0.5,
+      "end": 31.46,
+      "assetSha256": "b844c22b5ec40263ba820b8f820a7f943c0d5595697f00849adefa104f6733ea",
+      "speech": "I have added the battery temperature results to the review package. Is anything else missing? We still need the mechanical team's confirmation of the cable clearance. The customer asked about it in the last meeting. I will ask them now. If the confirmation arrives today, can we keep tomorrow's review? Yes. Otherwise, we should postpone the review rather than present an incomplete package."
+    }
+  ]
+}
