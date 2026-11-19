@@ -1,0 +1,115 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "audio": "Both actual audio editions match all four choices in order after punctuation/case normalization.",
+    "imageQuestionAndZh": "The technician holds and examines a circuit board. No wall painting, tank, or chair stack. The unique key, zh-TW stem and all options/rationales match."
+  },
+  "activeQuestion": {
+    "id": "t01-q004",
+    "testId": "test-01",
+    "number": 4,
+    "part": 1,
+    "groupId": "t01-g004",
+    "topic": "technology",
+    "difficulty": "foundation",
+    "tags": [
+      "technology",
+      "photo_description"
+    ],
+    "prompt": "Look at the picture and choose the statement that best describes it.",
+    "promptZh": "請看圖片，選出最符合畫面的敘述。",
+    "options": [
+      {
+        "id": "A",
+        "text": "A technician is painting a laboratory wall.",
+        "zh": "一名技術人員正在粉刷實驗室牆面。",
+        "whyZh": "畫面是在檢查電路板，沒有刷牆工具或粉刷動作。"
+      },
+      {
+        "id": "B",
+        "text": "Some circuit boards are floating in a tank.",
+        "zh": "一些電路板漂浮在槽內。",
+        "whyZh": "圖中電路板被拿來檢視，沒有漂浮於液槽的情況。"
+      },
+      {
+        "id": "C",
+        "text": "A technician is examining a circuit board.",
+        "zh": "一名技術人員正在檢查電路板。",
+        "whyZh": "圖中技術人員正查看電路板；examining 表示仔細檢視，沒有推測量測結果或產品功能。"
+      },
+      {
+        "id": "D",
+        "text": "A technician is stacking chairs beside a door.",
+        "zh": "一名技術人員正在門旁堆疊椅子。",
+        "whyZh": "人物處理的是電路板，而不是椅子。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "圖中技術人員正查看電路板；examining 表示仔細檢視，沒有推測量測結果或產品功能。",
+    "evidence": "A technician is examining a circuit board.",
+    "vocabulary": [
+      {
+        "term": "circuit board",
+        "zh": "電路板",
+        "note": "安裝電子元件並提供電氣連接的板件。"
+      },
+      {
+        "term": "examine",
+        "zh": "仔細檢查",
+        "note": "只描述可見的檢視動作，不推測檢查是否合格。"
+      }
+    ],
+    "revision": 1
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-01-02.mp3",
+      "start": 0.5,
+      "end": 20.972,
+      "assetSha256": "c6e650afe0082cf3d0c0623482249a9b53c172420b7a016c9e919d2db01c66d3",
+      "speech": "A. A technician is painting a laboratory wall.\n B. Some circuit boards are floating in a tank.\n C. A technician is examining a circuit board.\n D. A technician is stacking chairs beside a door."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-02.mp3",
+      "start": 0.5,
+      "end": 21.548,
+      "assetSha256": "b81fce2c2dec644470bd6a5c8a722a18eb4d43ca8b7017679879946f0b19f1eb",
+      "speech": "A. A technician is painting a laboratory wall.\n B. Some circuit boards are floating in a tank.\n C. A technician is examining a circuit board.\n D. A technician is stacking chairs beside a door."
+    }
+  ],
+  "group": {
+    "id": "t01-g004",
+    "testId": "test-01",
+    "part": 1,
+    "title": "Inspecting a board",
+    "titleZh": "檢查電路板",
+    "topic": "technology",
+    "passage": "A. A technician is painting a laboratory wall. B. Some circuit boards are floating in a tank. C. A technician is examining a circuit board. D. A technician is stacking chairs beside a door.",
+    "passageZh": "A. 一名技術人員正在粉刷實驗室牆面。\nB. 一些電路板漂浮在槽內。\nC. 一名技術人員正在檢查電路板。\nD. 一名技術人員正在門旁堆疊椅子。",
+    "audioScript": "A. A technician is painting a laboratory wall. B. Some circuit boards are floating in a tank. C. A technician is examining a circuit board. D. A technician is stacking chairs beside a door.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "A. A technician is painting a laboratory wall. B. Some circuit boards are floating in a tank. C. A technician is examining a circuit board. D. A technician is stacking chairs beside a door."
+      }
+    ],
+    "imageScene": "laboratory",
+    "audio": "audio/azure-v1/test-01-02.mp3",
+    "duration": 21.048,
+    "image": "assets/scenes/laboratory.svg",
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-AU",
+        "role": "female",
+        "modelVoice": "en-AU-NatashaNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 21.548
+  },
+  "imageSha256": "5731c8b1e34b8dcbff4b3dbc865a5f1748f7b00d727674215fbdfda619329a6c"
+}
