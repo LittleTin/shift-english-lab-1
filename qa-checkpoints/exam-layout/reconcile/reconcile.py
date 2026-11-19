@@ -134,7 +134,7 @@ def check_audio(rec, required, verify):
         verified[mode]={'path':window[0],'start':str(lo),'end':str(hi),'sha256':expected}
     return verified
 
-def run(site, ledger, decisions):
+def run(site, ledger, decisions, baseline_packs=None):
     if not isinstance(decisions,dict):raise ValueError('Group decisions object required')
     reports={}
     packs={}
@@ -146,7 +146,7 @@ def run(site, ledger, decisions):
         if s not in hashcache:hashcache[s]=file_sha(v)
         return hashcache[s]
     for test in EXAMS:
-        pack=strict(site/'data'/f'{test}.json')
+        pack=(deepcopy(baseline_packs[test]) if baseline_packs is not None else strict(site/'data'/f'{test}.json'))
         report={'missing':[],'holds':[],'issues':[],'accepted':[],'groups':{},'verifiedMedia':{},'verifiedItems':{}}
         reports[test]=report
         errors=report['issues']
@@ -363,8 +363,30 @@ def main():
     x.add_argument('--validator',type=Path)
     x.add_argument('--overlays',type=Path,help='Parent containing test-01, test-02, test-03 migrated proofs')
     x.add_argument('--report',type=Path)
+    x.add_argument('--rotation-repo',type=Path,help='Local read-only Git repository for exact numbered reading rotations')
+    x.add_argument('--rotation-base',help='Full Git commit for exact site baseline packs')
+    x.add_argument('--rotation-evidence',help='Full Git commit for approved rotation evidence and archives')
+    x.add_argument('--rotation-overrides',type=Path,help='Explicit reviewed baseline-vs-authoring canonical digest pairs')
     ns=x.parse_args()
-    site=ns.site.resolve(); report,packs=run(site,ns.ledger,strict(ns.decisions) if ns.decisions else {})
+    site=ns.site.resolve()
+    base_packs=None
+    splices=[]
+    setup=(ns.rotation_repo,ns.rotation_base,ns.rotation_evidence)
+    if any(setup) or ns.rotation_overrides:
+        if not all(setup):x.error('Specify all three rotation inputs')
+        from rotation import Repo, rotate, check_site_and_ledger
+        repo=Repo(ns.rotation_repo)
+        if repo.git('rev-parse','--verify','--end-of-options',ns.rotation_base+'^{commit}').decode().strip()!=ns.rotation_base:
+            raise ValueError('Pin the full baseline commit')
+        base_packs,splices,_=rotate(repo,ns.rotation_evidence,
+            {t:repo.row(ns.rotation_base,f'data/{t}.json') for t in EXAMS},
+            repo.row(ns.rotation_evidence,'question-reserve/index.json'),
+            strict(ns.rotation_overrides) if ns.rotation_overrides else {})
+        check_site_and_ledger(repo,ns.rotation_base,ns.rotation_evidence,site,ns.ledger,splices)
+    report,packs=run(site,ns.ledger,strict(ns.decisions) if ns.decisions else {},base_packs)
+    if base_packs is not None:
+        report['offlineReadingRotations']={'base':ns.rotation_base,'evidence':ns.rotation_evidence,'splices':splices}
+
     report['releaseReady']=False
     difficulty_complete=False
     if ns.difficulty_ledger:
