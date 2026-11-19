@@ -1,0 +1,113 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Only B supplies a cause for the stoppage: a safety sensor needs replacing. A gives a shift start time, C an order. Both spoken recordings match apart from equivalent numeric notation; all zh-TW explanations checked.",
+  "activeQuestion": {
+    "id": "t01-q013",
+    "testId": "test-01",
+    "number": 13,
+    "part": 2,
+    "groupId": "t01-g013",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reason"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "The second shift starts at six.",
+        "zh": "第二班六點開始。",
+        "whyZh": "班別開始時間並未解釋設備為什麼停止。"
+      },
+      {
+        "id": "B",
+        "text": "A safety sensor needs replacing.",
+        "zh": "一個安全感測器需要更換。",
+        "whyZh": "Why 問原因；感測器需要更換能直接解釋停線。"
+      },
+      {
+        "id": "C",
+        "text": "We ordered two spare parts.",
+        "zh": "我們訂了兩個備用零件。",
+        "whyZh": "two 是與題目相同的數字，但只講採購數量，沒有交代停線原因。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "Why 問原因；感測器需要更換能直接解釋停線。",
+    "evidence": "Why has assembly line two stopped?",
+    "vocabulary": [
+      {
+        "term": "assembly line",
+        "zh": "組裝線",
+        "note": "依工序完成產品組裝的生產線。"
+      },
+      {
+        "term": "sensor",
+        "zh": "感測器",
+        "note": "安全系統中用來偵測狀態的元件。"
+      }
+    ],
+    "revision": 1
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-01-05.mp3",
+      "start": 16.912,
+      "end": 33.688,
+      "assetSha256": "99302315dff7321edf06c8c2cbb32b49b071eb4e2d8be4ae745a7c7b2ea185ff",
+      "speech": "Why has assembly line 2 stopped?\n A. The second shift starts at 6.\n B. A safety sensor needs replacing.\n C. We ordered two spare parts."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-05.mp3",
+      "start": 16.024,
+      "end": 32.296,
+      "assetSha256": "77868489b0ca7be46ec912952ff1f2b92d9bfbe12474f4b38cfc7dbe077613c2",
+      "speech": "Why has assembly line two stopped?\n A. The second shift starts at 6.\n B. A safety sensor needs replacing.\n C. We ordered two spare parts."
+    }
+  ],
+  "group": {
+    "id": "t01-g013",
+    "testId": "test-01",
+    "part": 2,
+    "title": "A stopped assembly line",
+    "titleZh": "組裝線停線",
+    "topic": "manufacturing",
+    "passage": "Why has assembly line two stopped?\nA. The second shift starts at six. B. A safety sensor needs replacing. C. We ordered two spare parts.",
+    "passageZh": "二號組裝線為什麼停下來了？\nA. 第二班六點開始。\nB. 一個安全感測器需要更換。\nC. 我們訂了兩個備用零件。",
+    "audioScript": "Why has assembly line two stopped?\nA. The second shift starts at six. B. A safety sensor needs replacing. C. We ordered two spare parts.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Why has assembly line two stopped?"
+      },
+      {
+        "voice": "male",
+        "text": "A. The second shift starts at six. B. A safety sensor needs replacing. C. We ordered two spare parts."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-05.mp3",
+    "duration": 16.272,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-TZ",
+        "role": "female",
+        "modelVoice": "en-TZ-ImaniNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-TZ",
+        "role": "male",
+        "modelVoice": "en-TZ-ElimuNeural"
+      }
+    ],
+    "audioStart": 16.024,
+    "audioEnd": 32.296
+  }
+}
