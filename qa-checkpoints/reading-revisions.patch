@@ -1,0 +1,315 @@
+--- a/data/test-02.json
++++ b/data/test-02.json
+@@ -10806,7 +10806,7 @@
+       "revision": 1
+     },
+     {
+-      "id": "t02-q162",
++      "id": "t02-q162-r2",
+       "testId": "test-02",
+       "number": 162,
+       "part": 7,
+@@ -10817,8 +10817,8 @@
+         "manufacturing",
+         "reading-comprehension"
+       ],
+-      "prompt": "What should production teams do before noon?",
+-      "promptZh": "生產團隊應在中午前做什麼？",
++      "prompt": "What should production teams do by noon?",
++      "promptZh": "生產團隊最遲應在中午完成什麼事？",
+       "options": [
+         {
+           "text": "Complete every inventory adjustment",
+@@ -10846,7 +10846,7 @@
+         }
+       ],
+       "answer": "D",
+-      "explanationZh": "一般出入庫午後暫停，所以通知要求提前領料。",
++      "explanationZh": "通知要求生產團隊最遲在中午領取下午要用的物料。",
+       "evidence": "Production teams should collect materials for the afternoon by noon.",
+       "vocabulary": [
+         {
+@@ -10860,7 +10860,7 @@
+           "note": "將庫存材料發給使用部門。"
+         }
+       ],
+-      "revision": 1
++      "revision": 2
+     },
+     {
+       "id": "t02-q163",
+@@ -12630,7 +12630,7 @@
+       "revision": 1
+     },
+     {
+-      "id": "t02-q194",
++      "id": "t02-q194-r2",
+       "testId": "test-02",
+       "number": 194,
+       "part": 7,
+@@ -12641,8 +12641,8 @@
+         "technology",
+         "reading-comprehension"
+       ],
+-      "prompt": "If the new boards are delivered as expected, how many calendar days are available before the build date?",
+-      "promptZh": "若新版板子依預期送達，距生產日有幾個日曆天？",
++      "prompt": "How many days apart are the expected delivery date and the planned build date?",
++      "promptZh": "預計到貨日與預定生產日相隔幾天？",
+       "options": [
+         {
+           "text": "Twenty",
+@@ -12670,7 +12670,7 @@
+         }
+       ],
+       "answer": "B",
+-      "explanationZh": "十一月十八日到貨，二十日生產，相差兩天。",
++      "explanationZh": "預計 11 月 18 日到貨，預定 11 月 20 日生產；兩個日期相差 2 天，不是問中間有幾個完整的工作天。",
+       "evidence": "deliver ... on November 18 ... November 20 build",
+       "vocabulary": [
+         {
+@@ -12684,7 +12684,7 @@
+           "note": "傳達設計或製造相關修訂與適用範圍的文件。"
+         }
+       ],
+-      "revision": 1
++      "revision": 2
+     },
+     {
+       "id": "t02-q195",
+@@ -13138,6 +13138,120 @@
+           "term": "resume",
+           "zh": "恢復",
+           "note": "表示暫停後重新開始。"
++        }
++      ],
++      "revision": 1
++    },
++    {
++      "id": "t02-q162",
++      "testId": "test-02",
++      "number": 162,
++      "part": 7,
++      "groupId": "t02-r-p7-06",
++      "topic": "manufacturing",
++      "difficulty": "intermediate",
++      "tags": [
++        "manufacturing",
++        "reading-comprehension"
++      ],
++      "prompt": "What should production teams do before noon?",
++      "promptZh": "生產團隊應在中午前做什麼？",
++      "options": [
++        {
++          "text": "Complete every inventory adjustment",
++          "zh": "完成所有庫存調整",
++          "whyZh": "調整要在盤點、複核差異之後，非中午前。",
++          "id": "A"
++        },
++        {
++          "text": "Discard damaged materials",
++          "zh": "丟棄受損材料",
++          "whyZh": "受損材料應另計，不是丟棄。",
++          "id": "B"
++        },
++        {
++          "text": "Close Warehouse B permanently",
++          "zh": "永久關閉 B 倉庫",
++          "whyZh": "只是下午的季度盤點，沒有永久關倉。",
++          "id": "C"
++        },
++        {
++          "text": "Collect materials needed for the afternoon",
++          "zh": "領取下午需要的材料",
++          "whyZh": "一般出入庫午後暫停，所以通知要求提前領料。",
++          "id": "D"
++        }
++      ],
++      "answer": "D",
++      "explanationZh": "一般出入庫午後暫停，所以通知要求提前領料。",
++      "evidence": "Production teams should collect materials for the afternoon by noon.",
++      "vocabulary": [
++        {
++          "term": "inventory adjustment",
++          "zh": "庫存調整",
++          "note": "查明差異後修正系統中的庫存紀錄。"
++        },
++        {
++          "term": "material issue",
++          "zh": "物料領用",
++          "note": "將庫存材料發給使用部門。"
++        }
++      ],
++      "revision": 1
++    },
++    {
++      "id": "t02-q194",
++      "testId": "test-02",
++      "number": 194,
++      "part": 7,
++      "groupId": "t02-r-p7-14",
++      "topic": "technology",
++      "difficulty": "intermediate",
++      "tags": [
++        "technology",
++        "reading-comprehension"
++      ],
++      "prompt": "If the new boards are delivered as expected, how many calendar days are available before the build date?",
++      "promptZh": "若新版板子依預期送達，距生產日有幾個日曆天？",
++      "options": [
++        {
++          "text": "Twenty",
++          "zh": "二十天",
++          "whyZh": "二十是日期數字，不能直接當時間間隔。",
++          "id": "A"
++        },
++        {
++          "text": "Two",
++          "zh": "兩天",
++          "whyZh": "十一月十八日到貨，二十日生產，相差兩天。",
++          "id": "B"
++        },
++        {
++          "text": "One",
++          "zh": "一天",
++          "whyZh": "十八到二十並非一天。",
++          "id": "C"
++        },
++        {
++          "text": "Eight",
++          "zh": "八天",
++          "whyZh": "十二日是採購訊息日期，不是到貨日。",
++          "id": "D"
++        }
++      ],
++      "answer": "B",
++      "explanationZh": "十一月十八日到貨，二十日生產，相差兩天。",
++      "evidence": "deliver ... on November 18 ... November 20 build",
++      "vocabulary": [
++        {
++          "term": "test pad",
++          "zh": "測試點焊墊",
++          "note": "電路板上供量測探針接觸的位置。"
++        },
++        {
++          "term": "engineering change notice",
++          "zh": "工程變更通知",
++          "note": "傳達設計或製造相關修訂與適用範圍的文件。"
+         }
+       ],
+       "revision": 1
+--- a/data/test-03.json
++++ b/data/test-03.json
+@@ -7955,7 +7955,7 @@
+       "revision": 1
+     },
+     {
+-      "id": "t03-q109",
++      "id": "t03-q109-r2",
+       "testId": "test-03",
+       "number": 109,
+       "part": 5,
+@@ -7966,8 +7966,8 @@
+         "business",
+         "grammar"
+       ],
+-      "prompt": "Only employees with security clearance are ____ to enter the archive room.",
+-      "promptZh": "只有取得安全許可的員工才____進入檔案室。",
++      "prompt": "Under the archive’s access policy, only employees with security clearance are ____ to enter the archive room.",
++      "promptZh": "依照檔案室的門禁規定，只有取得安全許可的員工才____進入檔案室。",
+       "options": [
+         {
+           "id": "A",
+@@ -7983,9 +7983,9 @@
+         },
+         {
+           "id": "C",
+-          "text": "available",
+-          "zh": "可用的",
+-          "whyZh": "此處談授權資格，不是人員有空。"
++          "text": "familiar",
++          "zh": "熟悉的",
++          "whyZh": "familiar 通常用 familiar with 表示熟悉某人或事，不用 familiar to enter 表示准入資格。"
+         },
+         {
+           "id": "D",
+@@ -7995,8 +7995,8 @@
+         }
+       ],
+       "answer": "A",
+-      "explanationZh": "eligible to enter 表示具備進入資格。",
+-      "evidence": "Only employees with security clearance are eligible to enter the archive room.",
++      "explanationZh": "題幹談的是門禁資格。eligible to enter 表示有資格進入，而非具備能力、熟悉程度或可能性。",
++      "evidence": "Under the archive’s access policy, only employees with security clearance are eligible to enter the archive room.",
+       "vocabulary": [
+         {
+           "term": "clearance",
+@@ -8004,7 +8004,7 @@
+           "note": "security clearance 指安全審查後的授權。"
+         }
+       ],
+-      "revision": 1
++      "revision": 2
+     },
+     {
+       "id": "t03-q110",
+@@ -22405,5 +22405,59 @@
+       ],
+       "audioEdition": "azure-1"
+     }
+-  }
++  },
++  "legacyQuestions": [
++    {
++      "id": "t03-q109",
++      "testId": "test-03",
++      "number": 109,
++      "part": 5,
++      "groupId": null,
++      "topic": "business",
++      "difficulty": "intermediate",
++      "tags": [
++        "business",
++        "grammar"
++      ],
++      "prompt": "Only employees with security clearance are ____ to enter the archive room.",
++      "promptZh": "只有取得安全許可的員工才____進入檔案室。",
++      "options": [
++        {
++          "id": "A",
++          "text": "eligible",
++          "zh": "符合資格的",
++          "whyZh": "eligible to enter 表示具備進入資格。"
++        },
++        {
++          "id": "B",
++          "text": "capable",
++          "zh": "有能力的",
++          "whyZh": "capable 通常接 of，不接 to enter。"
++        },
++        {
++          "id": "C",
++          "text": "available",
++          "zh": "可用的",
++          "whyZh": "此處談授權資格，不是人員有空。"
++        },
++        {
++          "id": "D",
++          "text": "probable",
++          "zh": "很可能的",
++          "whyZh": "probable 不能描述人獲准進入。"
++        }
++      ],
++      "answer": "A",
++      "explanationZh": "eligible to enter 表示具備進入資格。",
++      "evidence": "Only employees with security clearance are eligible to enter the archive room.",
++      "vocabulary": [
++        {
++          "term": "clearance",
++          "zh": "許可",
++          "note": "security clearance 指安全審查後的授權。"
++        }
++      ],
++      "revision": 1
++    }
++  ]
+ }
