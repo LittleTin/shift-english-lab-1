@@ -1,0 +1,734 @@
+{
+  "status": "historical review evidence only, not shipped, no pre-release compatibility",
+  "originalGroup": {
+    "id": "t02-g046",
+    "testId": "test-02",
+    "part": 4,
+    "title": "Scheduled network maintenance",
+    "titleZh": "預定網路維護",
+    "topic": "technology",
+    "passage": "This is a notice from the information technology team. The engineering file server will be unavailable this Saturday from nine in the morning until noon while we replace a storage controller. Please save your work and close all files on that server before eight forty-five. Email and the customer support website will remain available. After maintenance, reconnect using the same server address. If a project folder is missing, contact the help desk instead of creating a replacement folder.",
+    "passageZh": "這是資訊團隊的通知。工程檔案伺服器將在本星期六上午九點至中午暫停使用，以便更換儲存控制器。請在八點四十五分前保存工作，並關閉該伺服器上的所有檔案。電子郵件與客戶支援網站仍可使用。維護後請使用相同伺服器位址重新連線。如果找不到專案資料夾，請聯絡服務台，不要自行建立替代資料夾。",
+    "audioScript": "This is a notice from the information technology team. The engineering file server will be unavailable this Saturday from nine in the morning until noon while we replace a storage controller. Please save your work and close all files on that server before eight forty-five. Email and the customer support website will remain available. After maintenance, reconnect using the same server address. If a project folder is missing, contact the help desk instead of creating a replacement folder.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "This is a notice from the information technology team. The engineering file server will be unavailable this Saturday from nine in the morning until noon while we replace a storage controller. Please save your work and close all files on that server before eight forty-five. Email and the customer support website will remain available. After maintenance, reconnect using the same server address. If a project folder is missing, contact the help desk instead of creating a replacement folder."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-23.mp3",
+    "duration": 31.872,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-NZ",
+        "role": "male",
+        "modelVoice": "en-NZ-MitchellNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 32.372
+  },
+  "originalQuestions": [
+    {
+      "id": "t02-q074",
+      "testId": "test-02",
+      "number": 74,
+      "part": 4,
+      "groupId": "t02-g046",
+      "topic": "technology",
+      "difficulty": "intermediate",
+      "tags": [
+        "unavailable"
+      ],
+      "prompt": "Why will the server be unavailable?",
+      "promptZh": "伺服器為何暫停使用？",
+      "options": [
+        {
+          "id": "A",
+          "text": "A storage controller will be replaced.",
+          "zh": "要更換儲存控制器。",
+          "whyZh": "通知明確說維護目的是更換該元件。"
+        },
+        {
+          "id": "B",
+          "text": "The company is moving to another city.",
+          "zh": "公司搬到另一個城市。",
+          "whyZh": "未提搬遷。"
+        },
+        {
+          "id": "C",
+          "text": "All project files are being permanently deleted.",
+          "zh": "所有專案檔案將永久刪除。",
+          "whyZh": "沒有永久刪除安排。"
+        },
+        {
+          "id": "D",
+          "text": "A customer requested a new website design.",
+          "zh": "客戶要求網站改版。",
+          "whyZh": "客戶支援網站會照常運作，與此次原因不同。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "通知明確說維護目的是更換該元件。",
+      "evidence": "while we replace a storage controller",
+      "vocabulary": [
+        {
+          "term": "unavailable",
+          "zh": "無法使用的",
+          "note": "本題指服務在維護期間暫停。"
+        },
+        {
+          "term": "storage controller",
+          "zh": "儲存控制器",
+          "note": "管理儲存裝置存取的元件；本題要進行更換。"
+        }
+      ],
+      "revision": 1
+    },
+    {
+      "id": "t02-q075",
+      "testId": "test-02",
+      "number": 75,
+      "part": 4,
+      "groupId": "t02-g046",
+      "topic": "technology",
+      "difficulty": "intermediate",
+      "tags": [
+        "unavailable"
+      ],
+      "prompt": "By what time should users close their files?",
+      "promptZh": "使用者最晚應在幾點關閉檔案？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nine thirty in the morning.",
+          "zh": "上午九點半。",
+          "whyZh": "九點已開始停機，九點半不是通知中的時間。"
+        },
+        {
+          "id": "B",
+          "text": "Noon.",
+          "zh": "中午。",
+          "whyZh": "中午是預計維護結束時間。"
+        },
+        {
+          "id": "C",
+          "text": "Five in the afternoon.",
+          "zh": "下午五點。",
+          "whyZh": "通知沒有此時間。"
+        },
+        {
+          "id": "D",
+          "text": "Eight forty-five in the morning.",
+          "zh": "上午八點四十五分。",
+          "whyZh": "這是保存與關閉檔案的截止時間。"
+        }
+      ],
+      "answer": "D",
+      "explanationZh": "這是保存與關閉檔案的截止時間。",
+      "evidence": "before eight forty-five",
+      "vocabulary": [
+        {
+          "term": "unavailable",
+          "zh": "無法使用的",
+          "note": "本題指服務在維護期間暫停。"
+        },
+        {
+          "term": "storage controller",
+          "zh": "儲存控制器",
+          "note": "管理儲存裝置存取的元件；本題要進行更換。"
+        }
+      ],
+      "revision": 1
+    },
+    {
+      "id": "t02-q076",
+      "testId": "test-02",
+      "number": 76,
+      "part": 4,
+      "groupId": "t02-g046",
+      "topic": "technology",
+      "difficulty": "intermediate",
+      "tags": [
+        "unavailable"
+      ],
+      "prompt": "What should a user do if a folder is missing afterward?",
+      "promptZh": "維護後若資料夾不見，應怎麼做？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Immediately create a folder with the same name.",
+          "zh": "立刻建立同名資料夾。",
+          "whyZh": "這正是講者要求避免的做法。"
+        },
+        {
+          "id": "B",
+          "text": "Change the server's physical location.",
+          "zh": "改變伺服器實體位置。",
+          "whyZh": "一般使用者沒有被要求搬動設備。"
+        },
+        {
+          "id": "C",
+          "text": "Cancel the customer support website.",
+          "zh": "取消客戶支援網站。",
+          "whyZh": "網站不受這項維護影響。"
+        },
+        {
+          "id": "D",
+          "text": "Contact the help desk.",
+          "zh": "聯絡服務台。",
+          "whyZh": "通知要求聯絡服務台，不要自行建立替代資料夾。"
+        }
+      ],
+      "answer": "D",
+      "explanationZh": "通知要求聯絡服務台，不要自行建立替代資料夾。",
+      "evidence": "contact the help desk instead of creating a replacement folder",
+      "vocabulary": [
+        {
+          "term": "unavailable",
+          "zh": "無法使用的",
+          "note": "本題指服務在維護期間暫停。"
+        },
+        {
+          "term": "storage controller",
+          "zh": "儲存控制器",
+          "note": "管理儲存裝置存取的元件；本題要進行更換。"
+        }
+      ],
+      "revision": 1
+    }
+  ],
+  "originalFrames": [
+    {
+      "src": "audio/formal/test-02-cues-04.mp3",
+      "start": 35.19821,
+      "end": 38.74608,
+      "duration": 3.54787,
+      "kind": "audio",
+      "role": "cue",
+      "part": 4,
+      "groupId": "t02-g046",
+      "at": 1998.86294
+    },
+    {
+      "src": "audio/azure-v1/test-02-23.mp3",
+      "start": 0.5,
+      "end": 32.372,
+      "duration": 31.872,
+      "kind": "audio",
+      "role": "passage",
+      "part": 4,
+      "groupId": "t02-g046",
+      "at": 2002.41081,
+      "speakers": [
+        {
+          "speaker": "male",
+          "locale": "en-NZ",
+          "role": "male",
+          "modelVoice": "en-NZ-MitchellNeural"
+        }
+      ]
+    },
+    {
+      "src": "audio/formal/test-02-cues-04.mp3",
+      "start": 38.99608,
+      "end": 42.13054,
+      "duration": 3.13446,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t02-g046",
+      "questionId": "t02-q074",
+      "at": 2034.28281
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 8.36432,
+      "part": 4,
+      "groupId": "t02-g046",
+      "questionId": "t02-q074",
+      "at": 2037.41727
+    },
+    {
+      "src": "audio/formal/test-02-cues-04.mp3",
+      "start": 42.38054,
+      "end": 46.044,
+      "duration": 3.66346,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t02-g046",
+      "questionId": "t02-q075",
+      "at": 2045.78159
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 8.36432,
+      "part": 4,
+      "groupId": "t02-g046",
+      "questionId": "t02-q075",
+      "at": 2049.44505
+    },
+    {
+      "src": "audio/formal/test-02-cues-04.mp3",
+      "start": 46.294,
+      "end": 50.55525,
+      "duration": 4.26125,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t02-g046",
+      "questionId": "t02-q076",
+      "at": 2057.80937
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 8.36433,
+      "part": 4,
+      "groupId": "t02-g046",
+      "questionId": "t02-q076",
+      "at": 2062.07062
+    }
+  ],
+  "originalRecords": {
+    "74": {
+      "verified-items": {
+        "record": {
+          "status": "verified-item-not-published",
+          "scope": "listening",
+          "checks": "停機原因是更換儲存控制器，不是搬遷、刪除資料或網站改版。 正式題號、口述題幹與兩模式的對話範圍均核對；英中題意和各選項解析已校對。",
+          "activeQuestion": {
+            "id": "t02-q074",
+            "testId": "test-02",
+            "number": 74,
+            "part": 4,
+            "groupId": "t02-g046",
+            "topic": "technology",
+            "difficulty": "intermediate",
+            "tags": [
+              "unavailable"
+            ],
+            "prompt": "Why will the server be unavailable?",
+            "promptZh": "伺服器為何暫停使用？",
+            "options": [
+              {
+                "id": "A",
+                "text": "A storage controller will be replaced.",
+                "zh": "要更換儲存控制器。",
+                "whyZh": "通知明確說維護目的是更換該元件。"
+              },
+              {
+                "id": "B",
+                "text": "The company is moving to another city.",
+                "zh": "公司搬到另一個城市。",
+                "whyZh": "未提搬遷。"
+              },
+              {
+                "id": "C",
+                "text": "All project files are being permanently deleted.",
+                "zh": "所有專案檔案將永久刪除。",
+                "whyZh": "沒有永久刪除安排。"
+              },
+              {
+                "id": "D",
+                "text": "A customer requested a new website design.",
+                "zh": "客戶要求網站改版。",
+                "whyZh": "客戶支援網站會照常運作，與此次原因不同。"
+              }
+            ],
+            "answer": "A",
+            "explanationZh": "通知明確說維護目的是更換該元件。",
+            "evidence": "while we replace a storage controller",
+            "vocabulary": [
+              {
+                "term": "unavailable",
+                "zh": "無法使用的",
+                "note": "本題指服務在維護期間暫停。"
+              },
+              {
+                "term": "storage controller",
+                "zh": "儲存控制器",
+                "note": "管理儲存裝置存取的元件；本題要進行更換。"
+              }
+            ],
+            "revision": 1
+          },
+          "group": {
+            "id": "t02-g046",
+            "testId": "test-02",
+            "part": 4,
+            "title": "Scheduled network maintenance",
+            "titleZh": "預定網路維護",
+            "topic": "technology",
+            "passage": "This is a notice from the information technology team. The engineering file server will be unavailable this Saturday from nine in the morning until noon while we replace a storage controller. Please save your work and close all files on that server before eight forty-five. Email and the customer support website will remain available. After maintenance, reconnect using the same server address. If a project folder is missing, contact the help desk instead of creating a replacement folder.",
+            "passageZh": "這是資訊團隊的通知。工程檔案伺服器將在本星期六上午九點至中午暫停使用，以便更換儲存控制器。請在八點四十五分前保存工作，並關閉該伺服器上的所有檔案。電子郵件與客戶支援網站仍可使用。維護後請使用相同伺服器位址重新連線。如果找不到專案資料夾，請聯絡服務台，不要自行建立替代資料夾。",
+            "audioScript": "This is a notice from the information technology team. The engineering file server will be unavailable this Saturday from nine in the morning until noon while we replace a storage controller. Please save your work and close all files on that server before eight forty-five. Email and the customer support website will remain available. After maintenance, reconnect using the same server address. If a project folder is missing, contact the help desk instead of creating a replacement folder.",
+            "turns": [
+              {
+                "voice": "male",
+                "text": "This is a notice from the information technology team. The engineering file server will be unavailable this Saturday from nine in the morning until noon while we replace a storage controller. Please save your work and close all files on that server before eight forty-five. Email and the customer support website will remain available. After maintenance, reconnect using the same server address. If a project folder is missing, contact the help desk instead of creating a replacement folder."
+              }
+            ],
+            "audio": "audio/azure-v1/test-02-23.mp3",
+            "duration": 31.872,
+            "audioSpeakers": [
+              {
+                "speaker": "male",
+                "locale": "en-NZ",
+                "role": "male",
+                "modelVoice": "en-NZ-MitchellNeural"
+              }
+            ],
+            "audioStart": 0.5,
+            "audioEnd": 32.372
+          },
+          "audio": [
+            {
+              "path": "audio/formal/test-02-cues-04.mp3",
+              "mode": "cue",
+              "start": 35.19821,
+              "end": 38.74608,
+              "assetSha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+              "speech": "Questions 74 through 76. Listen to the talk."
+            },
+            {
+              "path": "audio/azure-v1/test-02-23.mp3",
+              "mode": "passage",
+              "start": 0.5,
+              "end": 32.372,
+              "assetSha256": "745adc5073bb1a90c6529b6eccd855aa209b20885506c6408561a8b02d911a28",
+              "speech": "This is a notice from the Information Technology team. The engineering file server will be unavailable this Saturday from 9 in the morning until noon while we replace a storage controller. Please save your work and close all files on that server before 8.45. Email and the customer support website will remain available. After maintenance, reconnect using the same server address. If a project folder is missing, contact the help desk instead of creating a replacement folder."
+            },
+            {
+              "path": "audio/formal/test-02-cues-04.mp3",
+              "mode": "question",
+              "start": 38.99608,
+              "end": 42.13054,
+              "assetSha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+              "speech": "Number 74, why will the server be unavailable?"
+            },
+            {
+              "path": "audio/azure-v1/test-02-23.mp3",
+              "mode": "practice",
+              "start": 0.5,
+              "end": 32.372,
+              "assetSha256": "745adc5073bb1a90c6529b6eccd855aa209b20885506c6408561a8b02d911a28",
+              "speech": "This is a notice from the Information Technology team. The engineering file server will be unavailable this Saturday from 9 in the morning until noon while we replace a storage controller. Please save your work and close all files on that server before 8.45. Email and the customer support website will remain available. After maintenance, reconnect using the same server address. If a project folder is missing, contact the help desk instead of creating a replacement folder."
+            }
+          ]
+        },
+        "sha256": "7744227e0d15e0a72333ad77dd3ab4f615c396d9eb4b84c880bbfa97edb880ff"
+      },
+      "difficulty": {
+        "record": {
+          "status": "difficulty-reviewed-not-published",
+          "testId": "test-02",
+          "number": 74,
+          "questionId": "t02-q074",
+          "revision": 1,
+          "sourceQuestionSha256": "e961d7d68f9e1b885a02928afc6630aaf76783b1b0dcb1809177bf079734cfa4",
+          "sourceGroupSha256": "96f2e5b40ec6ff43eafca14774037e71aa247ff4fb08e7805f0087cc6317e910",
+          "fromDifficulty": "intermediate",
+          "toDifficulty": "foundation",
+          "reason": "The maintenance notice gives the storage-controller replacement in the same sentence as the outage.",
+          "provenance": "Difficulty checked against the exact verified content and essential evidence; no modification to listening script or audio."
+        },
+        "sha256": "95dceef0f81369ebbce5bba729b948acf86a115c8ff13cc6ebbdbb9b2d4c2b19"
+      }
+    },
+    "75": {
+      "verified-items": {
+        "record": {
+          "status": "verified-item-not-published",
+          "scope": "listening",
+          "checks": "應在上午八點四十五分前儲存與關閉檔案；九點開始維護，正午結束。 正式題號、口述題幹與兩模式的對話範圍均核對；英中題意和各選項解析已校對。",
+          "activeQuestion": {
+            "id": "t02-q075",
+            "testId": "test-02",
+            "number": 75,
+            "part": 4,
+            "groupId": "t02-g046",
+            "topic": "technology",
+            "difficulty": "intermediate",
+            "tags": [
+              "unavailable"
+            ],
+            "prompt": "By what time should users close their files?",
+            "promptZh": "使用者最晚應在幾點關閉檔案？",
+            "options": [
+              {
+                "id": "A",
+                "text": "Nine thirty in the morning.",
+                "zh": "上午九點半。",
+                "whyZh": "九點已開始停機，九點半不是通知中的時間。"
+              },
+              {
+                "id": "B",
+                "text": "Noon.",
+                "zh": "中午。",
+                "whyZh": "中午是預計維護結束時間。"
+              },
+              {
+                "id": "C",
+                "text": "Five in the afternoon.",
+                "zh": "下午五點。",
+                "whyZh": "通知沒有此時間。"
+              },
+              {
+                "id": "D",
+                "text": "Eight forty-five in the morning.",
+                "zh": "上午八點四十五分。",
+                "whyZh": "這是保存與關閉檔案的截止時間。"
+              }
+            ],
+            "answer": "D",
+            "explanationZh": "這是保存與關閉檔案的截止時間。",
+            "evidence": "before eight forty-five",
+            "vocabulary": [
+              {
+                "term": "unavailable",
+                "zh": "無法使用的",
+                "note": "本題指服務在維護期間暫停。"
+              },
+              {
+                "term": "storage controller",
+                "zh": "儲存控制器",
+                "note": "管理儲存裝置存取的元件；本題要進行更換。"
+              }
+            ],
+            "revision": 1
+          },
+          "group": {
+            "id": "t02-g046",
+            "testId": "test-02",
+            "part": 4,
+            "title": "Scheduled network maintenance",
+            "titleZh": "預定網路維護",
+            "topic": "technology",
+            "passage": "This is a notice from the information technology team. The engineering file server will be unavailable this Saturday from nine in the morning until noon while we replace a storage controller. Please save your work and close all files on that server before eight forty-five. Email and the customer support website will remain available. After maintenance, reconnect using the same server address. If a project folder is missing, contact the help desk instead of creating a replacement folder.",
+            "passageZh": "這是資訊團隊的通知。工程檔案伺服器將在本星期六上午九點至中午暫停使用，以便更換儲存控制器。請在八點四十五分前保存工作，並關閉該伺服器上的所有檔案。電子郵件與客戶支援網站仍可使用。維護後請使用相同伺服器位址重新連線。如果找不到專案資料夾，請聯絡服務台，不要自行建立替代資料夾。",
+            "audioScript": "This is a notice from the information technology team. The engineering file server will be unavailable this Saturday from nine in the morning until noon while we replace a storage controller. Please save your work and close all files on that server before eight forty-five. Email and the customer support website will remain available. After maintenance, reconnect using the same server address. If a project folder is missing, contact the help desk instead of creating a replacement folder.",
+            "turns": [
+              {
+                "voice": "male",
+                "text": "This is a notice from the information technology team. The engineering file server will be unavailable this Saturday from nine in the morning until noon while we replace a storage controller. Please save your work and close all files on that server before eight forty-five. Email and the customer support website will remain available. After maintenance, reconnect using the same server address. If a project folder is missing, contact the help desk instead of creating a replacement folder."
+              }
+            ],
+            "audio": "audio/azure-v1/test-02-23.mp3",
+            "duration": 31.872,
+            "audioSpeakers": [
+              {
+                "speaker": "male",
+                "locale": "en-NZ",
+                "role": "male",
+                "modelVoice": "en-NZ-MitchellNeural"
+              }
+            ],
+            "audioStart": 0.5,
+            "audioEnd": 32.372
+          },
+          "audio": [
+            {
+              "path": "audio/formal/test-02-cues-04.mp3",
+              "mode": "cue",
+              "start": 35.19821,
+              "end": 38.74608,
+              "assetSha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+              "speech": "Questions 74 through 76. Listen to the talk."
+            },
+            {
+              "path": "audio/azure-v1/test-02-23.mp3",
+              "mode": "passage",
+              "start": 0.5,
+              "end": 32.372,
+              "assetSha256": "745adc5073bb1a90c6529b6eccd855aa209b20885506c6408561a8b02d911a28",
+              "speech": "This is a notice from the Information Technology team. The engineering file server will be unavailable this Saturday from 9 in the morning until noon while we replace a storage controller. Please save your work and close all files on that server before 8.45. Email and the customer support website will remain available. After maintenance, reconnect using the same server address. If a project folder is missing, contact the help desk instead of creating a replacement folder."
+            },
+            {
+              "path": "audio/formal/test-02-cues-04.mp3",
+              "mode": "question",
+              "start": 42.38054,
+              "end": 46.044,
+              "assetSha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+              "speech": "Number 75. By what time should users close their files?"
+            },
+            {
+              "path": "audio/azure-v1/test-02-23.mp3",
+              "mode": "practice",
+              "start": 0.5,
+              "end": 32.372,
+              "assetSha256": "745adc5073bb1a90c6529b6eccd855aa209b20885506c6408561a8b02d911a28",
+              "speech": "This is a notice from the Information Technology team. The engineering file server will be unavailable this Saturday from 9 in the morning until noon while we replace a storage controller. Please save your work and close all files on that server before 8.45. Email and the customer support website will remain available. After maintenance, reconnect using the same server address. If a project folder is missing, contact the help desk instead of creating a replacement folder."
+            }
+          ]
+        },
+        "sha256": "254327ace79fdddd9730b277d1421cffc1022d2e2188134a596d7d624a22d159"
+      },
+      "difficulty": {
+        "record": {
+          "status": "difficulty-reviewed-not-published",
+          "testId": "test-02",
+          "number": 75,
+          "questionId": "t02-q075",
+          "revision": 1,
+          "sourceQuestionSha256": "eb2ce4acebd47d050cb75b05648cd69f8757699906f28eb99a15cdb1fad96ec7",
+          "sourceGroupSha256": "96f2e5b40ec6ff43eafca14774037e71aa247ff4fb08e7805f0087cc6317e910",
+          "fromDifficulty": "intermediate",
+          "toDifficulty": "foundation",
+          "reason": "One stated deadline: save and close server files before 8:45 a.m.",
+          "provenance": "Difficulty checked against the exact verified content and essential evidence; no modification to listening script or audio."
+        },
+        "sha256": "b6db50715897965c7c1c452d535daf128502e5a8650680a8e603d41243489ef5"
+      }
+    },
+    "76": {
+      "verified-items": {
+        "record": {
+          "status": "verified-item-not-published",
+          "scope": "listening",
+          "checks": "維護後若資料夾不見，聯絡服務台，不自行重建；搬伺服器和關網站不是通知要求。 正式題號、口述題幹與兩模式的對話範圍均核對；英中題意和各選項解析已校對。",
+          "activeQuestion": {
+            "id": "t02-q076",
+            "testId": "test-02",
+            "number": 76,
+            "part": 4,
+            "groupId": "t02-g046",
+            "topic": "technology",
+            "difficulty": "intermediate",
+            "tags": [
+              "unavailable"
+            ],
+            "prompt": "What should a user do if a folder is missing afterward?",
+            "promptZh": "維護後若資料夾不見，應怎麼做？",
+            "options": [
+              {
+                "id": "A",
+                "text": "Immediately create a folder with the same name.",
+                "zh": "立刻建立同名資料夾。",
+                "whyZh": "這正是講者要求避免的做法。"
+              },
+              {
+                "id": "B",
+                "text": "Change the server's physical location.",
+                "zh": "改變伺服器實體位置。",
+                "whyZh": "一般使用者沒有被要求搬動設備。"
+              },
+              {
+                "id": "C",
+                "text": "Cancel the customer support website.",
+                "zh": "取消客戶支援網站。",
+                "whyZh": "網站不受這項維護影響。"
+              },
+              {
+                "id": "D",
+                "text": "Contact the help desk.",
+                "zh": "聯絡服務台。",
+                "whyZh": "通知要求聯絡服務台，不要自行建立替代資料夾。"
+              }
+            ],
+            "answer": "D",
+            "explanationZh": "通知要求聯絡服務台，不要自行建立替代資料夾。",
+            "evidence": "contact the help desk instead of creating a replacement folder",
+            "vocabulary": [
+              {
+                "term": "unavailable",
+                "zh": "無法使用的",
+                "note": "本題指服務在維護期間暫停。"
+              },
+              {
+                "term": "storage controller",
+                "zh": "儲存控制器",
+                "note": "管理儲存裝置存取的元件；本題要進行更換。"
+              }
+            ],
+            "revision": 1
+          },
+          "group": {
+            "id": "t02-g046",
+            "testId": "test-02",
+            "part": 4,
+            "title": "Scheduled network maintenance",
+            "titleZh": "預定網路維護",
+            "topic": "technology",
+            "passage": "This is a notice from the information technology team. The engineering file server will be unavailable this Saturday from nine in the morning until noon while we replace a storage controller. Please save your work and close all files on that server before eight forty-five. Email and the customer support website will remain available. After maintenance, reconnect using the same server address. If a project folder is missing, contact the help desk instead of creating a replacement folder.",
+            "passageZh": "這是資訊團隊的通知。工程檔案伺服器將在本星期六上午九點至中午暫停使用，以便更換儲存控制器。請在八點四十五分前保存工作，並關閉該伺服器上的所有檔案。電子郵件與客戶支援網站仍可使用。維護後請使用相同伺服器位址重新連線。如果找不到專案資料夾，請聯絡服務台，不要自行建立替代資料夾。",
+            "audioScript": "This is a notice from the information technology team. The engineering file server will be unavailable this Saturday from nine in the morning until noon while we replace a storage controller. Please save your work and close all files on that server before eight forty-five. Email and the customer support website will remain available. After maintenance, reconnect using the same server address. If a project folder is missing, contact the help desk instead of creating a replacement folder.",
+            "turns": [
+              {
+                "voice": "male",
+                "text": "This is a notice from the information technology team. The engineering file server will be unavailable this Saturday from nine in the morning until noon while we replace a storage controller. Please save your work and close all files on that server before eight forty-five. Email and the customer support website will remain available. After maintenance, reconnect using the same server address. If a project folder is missing, contact the help desk instead of creating a replacement folder."
+              }
+            ],
+            "audio": "audio/azure-v1/test-02-23.mp3",
+            "duration": 31.872,
+            "audioSpeakers": [
+              {
+                "speaker": "male",
+                "locale": "en-NZ",
+                "role": "male",
+                "modelVoice": "en-NZ-MitchellNeural"
+              }
+            ],
+            "audioStart": 0.5,
+            "audioEnd": 32.372
+          },
+          "audio": [
+            {
+              "path": "audio/formal/test-02-cues-04.mp3",
+              "mode": "cue",
+              "start": 35.19821,
+              "end": 38.74608,
+              "assetSha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+              "speech": "Questions 74 through 76. Listen to the talk."
+            },
+            {
+              "path": "audio/azure-v1/test-02-23.mp3",
+              "mode": "passage",
+              "start": 0.5,
+              "end": 32.372,
+              "assetSha256": "745adc5073bb1a90c6529b6eccd855aa209b20885506c6408561a8b02d911a28",
+              "speech": "This is a notice from the Information Technology team. The engineering file server will be unavailable this Saturday from 9 in the morning until noon while we replace a storage controller. Please save your work and close all files on that server before 8.45. Email and the customer support website will remain available. After maintenance, reconnect using the same server address. If a project folder is missing, contact the help desk instead of creating a replacement folder."
+            },
+            {
+              "path": "audio/formal/test-02-cues-04.mp3",
+              "mode": "question",
+              "start": 46.294,
+              "end": 50.55525,
+              "assetSha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+              "speech": "Number 76. What should a user do if a folder is missing afterward?"
+            },
+            {
+              "path": "audio/azure-v1/test-02-23.mp3",
+              "mode": "practice",
+              "start": 0.5,
+              "end": 32.372,
+              "assetSha256": "745adc5073bb1a90c6529b6eccd855aa209b20885506c6408561a8b02d911a28",
+              "speech": "This is a notice from the Information Technology team. The engineering file server will be unavailable this Saturday from 9 in the morning until noon while we replace a storage controller. Please save your work and close all files on that server before 8.45. Email and the customer support website will remain available. After maintenance, reconnect using the same server address. If a project folder is missing, contact the help desk instead of creating a replacement folder."
+            }
+          ]
+        },
+        "sha256": "9bd445d2c7d42635fc91cec2a782ece7f6dc1453bc263e677327321fe0343b84"
+      },
+      "difficulty": {
+        "record": {
+          "status": "difficulty-reviewed-not-published",
+          "testId": "test-02",
+          "number": 76,
+          "questionId": "t02-q076",
+          "revision": 1,
+          "sourceQuestionSha256": "97e1bd495d34679612056114db588d7d6a9df24c9072f9b06cd733ca0efd5538",
+          "sourceGroupSha256": "96f2e5b40ec6ff43eafca14774037e71aa247ff4fb08e7805f0087cc6317e910",
+          "fromDifficulty": "intermediate",
+          "toDifficulty": "foundation",
+          "reason": "One explicit conditional instruction directly says to contact the help desk if a folder is missing.",
+          "provenance": "Difficulty checked against the exact verified content and essential evidence; no modification to listening script or audio."
+        },
+        "sha256": "5483ff1a727ce0136c66f1b9d722867c90acfc5b4731bbe303a78b4728f880f9"
+      }
+    }
+  }
+}

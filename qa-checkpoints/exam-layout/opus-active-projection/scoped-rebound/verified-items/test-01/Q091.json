@@ -1,0 +1,228 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "activeQuestion": {
+    "id": "t01-q091-r2",
+    "testId": "test-01",
+    "number": 91,
+    "part": 4,
+    "groupId": "t01-g051-r2",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "shuttle",
+      "planning"
+    ],
+    "prompt": "What should riders do to avoid missing an evening train?",
+    "promptZh": "乘客怎麼安排才不易錯過晚間的火車？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Take an earlier shuttle to allow more time for the connection.",
+        "zh": "搭較早的接駁車，為轉乘多留一些時間。",
+        "whyZh": "接駁車照時出發不代表準時到站；晚間車程可能多十分鐘，而火車時刻不變，因此應先留足轉乘時間。"
+      },
+      {
+        "id": "B",
+        "text": "Keep the usual shuttle because it leaves on schedule.",
+        "zh": "照常搭原班次，因為接駁車依時刻發車。",
+        "whyZh": "公告保證的是發車依時刻，不是到站時間不變。"
+      },
+      {
+        "id": "C",
+        "text": "Take a later shuttle because the train will also run later.",
+        "zh": "搭較晚的接駁車，因為火車也會晚開。",
+        "whyZh": "公告明說火車時刻沒有改變。"
+      },
+      {
+        "id": "D",
+        "text": "Wait until after the fair because evening shuttles are cancelled.",
+        "zh": "等市集結束再離開，因為晚間接駁車取消了。",
+        "whyZh": "公告說晚間車仍照表發車，沒有取消。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "接駁車照時出發不代表準時到站；晚間車程可能多十分鐘，而火車時刻不變，因此應先留足轉乘時間。",
+    "evidence": "Evening departures stay on schedule, but rides may take ten minutes longer. Train times haven’t changed.",
+    "vocabulary": [
+      {
+        "term": "connection",
+        "zh": "轉乘",
+        "note": "指接駁車到站後轉搭下一段交通工具。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t01-q091",
+    "testId": "test-01",
+    "number": 91,
+    "part": 4,
+    "groupId": "t01-g051",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "inference"
+    ],
+    "prompt": "What should evening rush-hour passengers allow for?",
+    "promptZh": "晚間尖峰時段乘客應預留什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "A new fare for wheelchair users.",
+        "zh": "輪椅使用者的新票價。",
+        "whyZh": "公告只說臨時站有輪椅通行設施，未更改票價。"
+      },
+      {
+        "id": "B",
+        "text": "The cancellation of the last bus.",
+        "zh": "末班車取消。",
+        "whyZh": "首班與末班時間維持不變，沒有取消末班。"
+      },
+      {
+        "id": "C",
+        "text": "A potentially longer journey.",
+        "zh": "可能增加的車程時間。",
+        "whyZh": "公告說尖峰車程最多可能增加十分鐘；雖首末班不變，乘客仍應多留行車時間。"
+      },
+      {
+        "id": "D",
+        "text": "A twenty-minute walk from the library.",
+        "zh": "從圖書館步行二十分鐘。",
+        "whyZh": "步行距離約五分鐘；最多十分鐘是車程增加量。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "公告說尖峰車程最多可能增加十分鐘；雖首末班不變，乘客仍應多留行車時間。",
+    "evidence": "journeys may take up to ten minutes longer during the evening rush hour.",
+    "vocabulary": [
+      {
+        "term": "rush hour",
+        "zh": "交通尖峰時段",
+        "note": "通勤需求集中、路況較壅塞的時段。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g051-r2",
+    "testId": "test-01",
+    "part": 4,
+    "title": "A temporary river shuttle route",
+    "titleZh": "河岸接駁車臨時路線",
+    "topic": "daily",
+    "passage": "Friday’s river shuttle skips Market Street for the fair. The sports centre is closer, but its path has steps. Riverside Gate has a level path. Folded bikes can go on any shuttle. Other bikes need a trailer. The first shuttle has none; the next does. Evening departures stay on schedule, but rides may take ten minutes longer. Train times haven’t changed.",
+    "passageZh": "星期五市集期間，河岸接駁車不停靠市場街。運動中心較近，但沿路有階梯；河岸入口的路是平的。折疊後的自行車可搭任何一班；其他自行車需要拖車。首班車沒掛拖車，下一班有。傍晚仍照表發車，但車程可能多十分鐘。火車時刻維持不變。",
+    "audioScript": "Friday’s river shuttle skips Market Street for the fair. The sports centre is closer, but its path has steps. Riverside Gate has a level path. Folded bikes can go on any shuttle. Other bikes need a trailer. The first shuttle has none; the next does. Evening departures stay on schedule, but rides may take ten minutes longer. Train times haven’t changed.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Friday’s river shuttle skips Market Street for the fair. The sports centre is closer, but its path has steps. Riverside Gate has a level path. Folded bikes can go on any shuttle. Other bikes need a trailer. The first shuttle has none; the next does. Evening departures stay on schedule, but rides may take ten minutes longer. Train times haven’t changed."
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/14/14c9e520cb5587485b9a383c09d1d22352c2d1124ea8ce5964279c8523c3e0d4.ogg",
+    "duration": 27.59963,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-NZ",
+        "role": "male",
+        "modelVoice": "en-NZ-MitchellNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 27.59963
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/3f/3f418aff5586579ce8a41216bf0ef58ba657fb6c0861dcf94dbb6c8fc5f267ee.ogg",
+      "start": 54.10596,
+      "end": 57.41421,
+      "assetSha256": "8c10daad4496bd8f6ba93f81c29f5158e613b81bb80d4a3975ae06252dc8e4c1",
+      "speech": "Questions 89 through 91. Listen to the talk.",
+      "sourceAudioProvenance": {
+        "path": "audio/formal/test-01-cues-05.mp3",
+        "sha256": "3f418aff5586579ce8a41216bf0ef58ba657fb6c0861dcf94dbb6c8fc5f267ee",
+        "decodedSamples48k": 3336136,
+        "sourceCodec": "mp3",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": null
+      }
+    },
+    {
+      "mode": "passage",
+      "path": "audio/opus-hq56-96-v2/14/14c9e520cb5587485b9a383c09d1d22352c2d1124ea8ce5964279c8523c3e0d4.ogg",
+      "start": 0,
+      "end": 27.59963,
+      "assetSha256": "d1309672845657ccfb11dcda59a7bb7c76de8eece883c04de0b92af7008ad6e7",
+      "speech": "Friday’s river shuttle skips Market Street for the fair. The sports centre is closer, but its path has steps. Riverside Gate has a level path. Folded bikes can go on any shuttle. Other bikes need a trailer. The first shuttle has none; the next does. Evening departures stay on schedule, but rides may take ten minutes longer. Train times haven’t changed.",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-01/groups/t01-g051-r2/passage.wav",
+        "sha256": "14c9e520cb5587485b9a383c09d1d22352c2d1124ea8ce5964279c8523c3e0d4",
+        "decodedSamples48k": 1324782,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": null
+      }
+    },
+    {
+      "mode": "question",
+      "path": "audio/opus-hq56-96-v2/6e/6e561f297a0b6798100d3bf9a803b82c69715a81de27d0f32d2da48067cfa1c3.ogg",
+      "start": 0,
+      "end": 5.5625,
+      "assetSha256": "fa377c5962c87e9ea5a9da4d3179cf9952a74f047dfbd9cb4ab442d830a127b8",
+      "speech": "Number 91. What should riders do to avoid missing an evening train?",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-01/groups/t01-g051-r2/q091-r2.wav",
+        "sha256": "6e561f297a0b6798100d3bf9a803b82c69715a81de27d0f32d2da48067cfa1c3",
+        "decodedSamples48k": 267000,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": null
+      }
+    },
+    {
+      "mode": "practice",
+      "path": "audio/opus-hq56-96-v2/14/14c9e520cb5587485b9a383c09d1d22352c2d1124ea8ce5964279c8523c3e0d4.ogg",
+      "start": 0,
+      "end": 27.59963,
+      "assetSha256": "d1309672845657ccfb11dcda59a7bb7c76de8eece883c04de0b92af7008ad6e7",
+      "speech": "Friday’s river shuttle skips Market Street for the fair. The sports centre is closer, but its path has steps. Riverside Gate has a level path. Folded bikes can go on any shuttle. Other bikes need a trailer. The first shuttle has none; the next does. Evening departures stay on schedule, but rides may take ten minutes longer. Train times haven’t changed.",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-01/groups/t01-g051-r2/passage.wav",
+        "sha256": "14c9e520cb5587485b9a383c09d1d22352c2d1124ea8ce5964279c8523c3e0d4",
+        "decodedSamples48k": 1324782,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": null
+      }
+    }
+  ],
+  "imageSha256": null,
+  "checks": {
+    "content": "English and Traditional Chinese prompts, keys, alternatives and rationales reviewed. Active new IDs and exact original scoring and release snapshots retained independently.",
+    "audio": "Independent unprompted evidence tied to the original exact raw PCM and numbers. Strongest full capture and independent evidence reviewed, with discrepancy handling documented in source evidence.",
+    "association": "All four roles rechecked against exact local plan, simultaneous shared passage/practice uses one voice. 2700 seconds, unaffected earlier Part3/graphics unchanged. Raw QA only; re-encode and rebind for Opus release.",
+    "offlineSpeechEvidenceSha256": {
+      "evidence.md": "9777481c5edfdea6774dd62382c7caed8aeae69560f9438d772e70db0ffadd0e",
+      "retained-cue-hashes.txt": "49b55d35c37567ca253b4895f95bc9867575843ad20c623254125d21a891e742",
+      "vosk-retained-cues.log": "1f935eb325039100ca965e8f6f456d9332d122e663e13d1c6ebe7e248d777bc2",
+      "retained-cue-t01-g051.wav": "96f5cd1a940e15b3079abc03cc00977e7bbaa5f8bf431c9ea2eb7d1d072af9d4",
+      "test01-q091-stem-medium3.wav.txt": "d0c6082c1863e207bd6bd5f5913e433884a9c6a4ade62605a5cc63f155cb5a30",
+      "test01-g051-shared-medium3.wav.txt": "5d8a9fefe9779f780a950c7e319a9c0cf5c6d715996bac2c2de38666e23da7ac",
+      "vosk-test01-g051-shared-medium3.log": "e6f0ae96f256b43221d14c689112b9f8e1862475bcb16cce307f51e9106c9b94"
+    },
+    "codecProjection": "Both modes use the exact deterministic 48kHz Ogg Opus delivery bytes/ranges; raw hashes remain provenance. Source and decoded Opus samples match in duration; Ogg gapless pre-skip/final granule and unmodified timetable verified. Original semantic decision was made on the checked source clips."
+  }
+}

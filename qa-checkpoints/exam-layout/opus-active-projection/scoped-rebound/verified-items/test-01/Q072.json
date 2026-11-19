@@ -1,0 +1,230 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "activeQuestion": {
+    "id": "t01-q072-r2",
+    "testId": "test-01",
+    "number": 72,
+    "part": 4,
+    "groupId": "t01-g045",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "location"
+    ],
+    "prompt": "All inspectors are busy. What now?",
+    "promptZh": "檢驗員都在忙。接下來怎麼做？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Put it on the yellow shelf and return to normal speed.",
+        "zh": "把首件放上黃色層架，恢復正常速度。",
+        "whyZh": "沒有檢驗員時不可恢復運轉。"
+      },
+      {
+        "id": "B",
+        "text": "Leave it on the supervisor's desk and keep the line paused.",
+        "zh": "把首件放在主管桌上，產線保持暫停。",
+        "whyZh": "產線應暫停，但不得把樣品留在主管桌上。"
+      },
+      {
+        "id": "C",
+        "text": "Leave it at the production station and run the next batch normally.",
+        "zh": "把首件留在生產工位，照常生產下一批。",
+        "whyZh": "首件放置位置與未檢驗時的運轉安排都不符合規定。"
+      },
+      {
+        "id": "D",
+        "text": "Put it on the yellow shelf and keep the line paused.",
+        "zh": "把首件放上黃色檢驗層架，產線保持暫停。",
+        "whyZh": "首件應放在黃色檢驗層架；未有檢驗員時，產線仍需暫停並另外聯絡品管窗口。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "首件應放在黃色檢驗層架；未有檢驗員時，產線仍需暫停並另外聯絡品管窗口。",
+    "evidence": "Place the unit on the yellow inspection shelf and enter its serial number in the tablet at the station. If the inspector is unavailable, keep the line paused and contact the quality desk.",
+    "vocabulary": [
+      {
+        "term": "inspection shelf",
+        "zh": "檢驗層架",
+        "note": "擺放待品管檢查的零件。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t01-q072",
+    "testId": "test-01",
+    "number": 72,
+    "part": 4,
+    "groupId": "t01-g045",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "location"
+    ],
+    "prompt": "Where should the sample unit be placed?",
+    "promptZh": "樣品應放在哪裡？",
+    "options": [
+      {
+        "id": "A",
+        "text": "On the supervisor's desk.",
+        "zh": "主管桌上。",
+        "whyZh": "公告明確說不要把樣品留在主管桌上。"
+      },
+      {
+        "id": "B",
+        "text": "In the outgoing delivery truck.",
+        "zh": "準備出貨的貨車裡。",
+        "whyZh": "產品要先檢查，沒有要求直接裝車。"
+      },
+      {
+        "id": "C",
+        "text": "Under the loading fixture.",
+        "zh": "上料治具下方。",
+        "whyZh": "治具只出現在適用條件說明中，不是檢驗樣品存放區。"
+      },
+      {
+        "id": "D",
+        "text": "On the yellow inspection shelf.",
+        "zh": "黃色檢驗架上。",
+        "whyZh": "說話者直接指示 Place the unit on the yellow inspection shelf；主管桌是明確禁止的地點。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "說話者直接指示 Place the unit on the yellow inspection shelf；主管桌是明確禁止的地點。",
+    "evidence": "Place the unit on the yellow inspection shelf",
+    "vocabulary": [
+      {
+        "term": "inspection shelf",
+        "zh": "檢驗架",
+        "note": "暫放等待檢查產品的指定架位。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g045",
+    "testId": "test-01",
+    "part": 4,
+    "title": "First-unit inspection",
+    "titleZh": "換型後首件檢查",
+    "topic": "manufacturing",
+    "passage": "Good morning, team. Beginning tomorrow, the first unit produced after each model change must be checked by a quality inspector before the line returns to normal speed. This requirement applies even when the fixture has not been replaced. Place the unit on the yellow inspection shelf and enter its serial number in the tablet at the station. Please do not leave samples on the supervisor's desk. During today's afternoon break, I will demonstrate the new entry screen beside Line One. If the inspector is unavailable, keep the line paused and contact the quality desk.",
+    "passageZh": "各位早安。從明天開始，每次切換機種後生產的第一件產品，都必須經品質檢驗員確認，產線才能恢復正常速度。即使治具沒有更換，這項規定仍適用。請把產品放在黃色檢驗架上，並在工作站的平板輸入序號。請不要把樣品放在主管桌上。今天下午休息時間，我會在一號線旁示範新的輸入畫面。如果檢驗員無法到場，請維持停線並聯絡品質服務窗口。",
+    "audioScript": "Good morning, team. Beginning tomorrow, the first unit produced after each model change must be checked by a quality inspector before the line returns to normal speed. This requirement applies even when the fixture has not been replaced. Place the unit on the yellow inspection shelf and enter its serial number in the tablet at the station. Please do not leave samples on the supervisor's desk. During today's afternoon break, I will demonstrate the new entry screen beside Line One. If the inspector is unavailable, keep the line paused and contact the quality desk.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Good morning, team. Beginning tomorrow, the first unit produced after each model change must be checked by a quality inspector before the line returns to normal speed. This requirement applies even when the fixture has not been replaced. Place the unit on the yellow inspection shelf and enter its serial number in the tablet at the station. Please do not leave samples on the supervisor's desk. During today's afternoon break, I will demonstrate the new entry screen beside Line One. If the inspector is unavailable, keep the line paused and contact the quality desk."
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/ae/ae519395678d8734bf5acbea53145a3723a8793b6016161d60a897e80616b3d9.ogg",
+    "duration": 33.648,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-CA",
+        "role": "male",
+        "modelVoice": "en-CA-LiamNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 34.148
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/81/818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0.ogg",
+      "start": 26.56942,
+      "end": 29.97758,
+      "assetSha256": "635faed24add86996838f0381770ba8d0b11734a54b5ffe031913e45f4692b83",
+      "speech": "Questions 71 through 73. Listen to the talk.",
+      "sourceAudioProvenance": {
+        "path": "audio/formal/test-01-cues-04.mp3",
+        "sha256": "818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0",
+        "decodedSamples48k": 3294462,
+        "sourceCodec": "mp3",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": null
+      }
+    },
+    {
+      "mode": "passage",
+      "path": "audio/opus-hq56-96-v2/ae/ae519395678d8734bf5acbea53145a3723a8793b6016161d60a897e80616b3d9.ogg",
+      "start": 0.5,
+      "end": 34.148,
+      "assetSha256": "a9b2e35379d82e7cc99108ad97bacaf202cc27317662a663fee2986b835f2ac4",
+      "speech": "Good morning, team!\n Beginning tomorrow, the first unit produced after each model change must be checked by a quality inspector before the line returns to normal speed.\n This requirement applies even when the fixture has not been replaced.\n Place the unit on the yellow inspection shelf and enter its serial number in the tablet at the station.\n Please do not leave samples on the supervisor's desk.\n During today's afternoon break, I will demonstrate the new entry screen beside Line 1.\n If the inspector is unavailable, keep the line paused and contact the quality desk.",
+      "sourceAudioProvenance": {
+        "path": "audio/azure-v1/test-01-25.mp3",
+        "sha256": "ae519395678d8734bf5acbea53145a3723a8793b6016161d60a897e80616b3d9",
+        "decodedSamples48k": 1663104,
+        "sourceCodec": "mp3",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": null
+      }
+    },
+    {
+      "mode": "question",
+      "path": "audio/opus-hq56-96-v2/c5/c5c73ee52078f5e181ba835bc42d4e16ea1f7eb5feffdee06dcc9be7c6770daa.ogg",
+      "start": 0,
+      "end": 5.55,
+      "assetSha256": "2fa241c60503f8e4ab2cc880c0450b312bc7b4ba905e19ac8d46bbabd8e1903d",
+      "speech": "Number 72. All inspectors are busy. What now?",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-01/groups/t01-g045/q072-r2.wav",
+        "sha256": "c5c73ee52078f5e181ba835bc42d4e16ea1f7eb5feffdee06dcc9be7c6770daa",
+        "decodedSamples48k": 266400,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": null
+      }
+    },
+    {
+      "mode": "practice",
+      "path": "audio/opus-hq56-96-v2/ae/ae519395678d8734bf5acbea53145a3723a8793b6016161d60a897e80616b3d9.ogg",
+      "start": 0.5,
+      "end": 34.148,
+      "assetSha256": "a9b2e35379d82e7cc99108ad97bacaf202cc27317662a663fee2986b835f2ac4",
+      "speech": "Good morning, team!\n Beginning tomorrow, the first unit produced after each model change must be checked by a quality inspector before the line returns to normal speed.\n This requirement applies even when the fixture has not been replaced.\n Place the unit on the yellow inspection shelf and enter its serial number in the tablet at the station.\n Please do not leave samples on the supervisor's desk.\n During today's afternoon break, I will demonstrate the new entry screen beside Line 1.\n If the inspector is unavailable, keep the line paused and contact the quality desk.",
+      "sourceAudioProvenance": {
+        "path": "audio/azure-v1/test-01-25.mp3",
+        "sha256": "ae519395678d8734bf5acbea53145a3723a8793b6016161d60a897e80616b3d9",
+        "decodedSamples48k": 1663104,
+        "sourceCodec": "mp3",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": null
+      }
+    }
+  ],
+  "imageSha256": null,
+  "checks": {
+    "content": "New bilingual scenario, answer and full options checked; exact old question and scoring separately preserved.",
+    "audio": "Independent QA cleared the exact raw candidate used by this pack; previous rejected/held read not promoted. Existing talk, cue and practice are identical to verified originals.",
+    "association": "Exact four roles, preserves unrelated speech/skips, protected original graphics/advanced context and minimum 7.25 seconds. Production Opus independent qualification and rebinding still required.",
+    "offlineSpeechEvidenceSha256": {
+      "retainedTalkAndCueEvidence": "03930a642c9e67a0d11d7e1d3c25b41448220b1197c12a92bdbd4a023ab79c2b",
+      "retainedCueWhisper": "0a33a8e3429e8d5e5a568cec719c9b33726e062a42e62dd7ecb6219563cde061",
+      "retainedCueVosk": "acef0be982780e075ffb665d93d3519e3a891add9f315bb8fd3309943b1147f7",
+      "inputReceiptSha256": "8e11dd61a5acf623b44ad688c3c2ae630980d7a0b7b43095042b198a403ecfbd",
+      "exactSilenceOnlyProof": "7509bbc554d61b8f6d659450b8bacc9a40385827e5e229cf46acf5196ab5d56d",
+      "exact-samples.txt": "cb5af03bffab1a6bc7e96887493ad671e8c64865253f6ded44e1536411192e99",
+      "hashes.txt": "3bb6d671bba7205bd5860ae526ed2b453a9b9fc4d4e873effbde495bc006ba69",
+      "test01-q072-stem-medium3-short-alt.wav.txt": "5c3ffcc733cb0de55df0fc194584775206d9e5c0798fe92277d3cee0c5d8fefa",
+      "vosk.log": "13e3303fb92760b83281348d302db09b54cfc7748a09beb5cd83575897db9742",
+      "whisper.log": "5549dbca689a5884cfbce33f082781db217687ae7f9d724799484b898a4ad374"
+    },
+    "codecProjection": "Both modes use the exact deterministic 48kHz Ogg Opus delivery bytes/ranges; raw hashes remain provenance. Source and decoded Opus samples match in duration; Ogg gapless pre-skip/final granule and unmodified timetable verified. Original semantic decision was made on the checked source clips."
+  }
+}

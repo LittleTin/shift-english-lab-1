@@ -1,0 +1,235 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "activeQuestion": {
+    "id": "t01-q086-r3",
+    "testId": "test-01",
+    "number": 86,
+    "part": 4,
+    "groupId": "t01-g050-r2",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "workplace",
+      "listening-inference"
+    ],
+    "prompt": "A viewer wants to learn to reorder stock. Which session should they choose?",
+    "promptZh": "有位觀眾想學庫存補貨，應該選哪一場？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The alert-setting demo today.",
+        "zh": "今天的警示設定示範。",
+        "whyZh": "警示能提醒庫存不足，但不是下單補貨。"
+      },
+      {
+        "id": "B",
+        "text": "The weekly summary demo today.",
+        "zh": "今天的週報示範。",
+        "whyZh": "今天會教匯出週報，不會教下單。"
+      },
+      {
+        "id": "C",
+        "text": "Next month’s ordering session.",
+        "zh": "下個月的訂購功能場次。",
+        "whyZh": "補貨要重新下單，訂購功能下個月才會教。"
+      },
+      {
+        "id": "D",
+        "text": "Either of today’s demos.",
+        "zh": "今天的兩項示範都可以。",
+        "whyZh": "今天兩項示範都不教訂購。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "補貨要重新下單，訂購功能下個月才會教。",
+    "evidence": "Today we’ll set low-stock alerts and export a weekly summary. We’ll cover ordering next month.",
+    "vocabulary": [
+      {
+        "term": "reorder stock",
+        "zh": "補貨",
+        "note": "在這裡指再下單補充庫存，不只是設定低庫存提醒。"
+      }
+    ],
+    "revision": 3
+  },
+  "originalQuestion": {
+    "id": "t01-q086-r2",
+    "testId": "test-01",
+    "number": 86,
+    "part": 4,
+    "groupId": "t01-g050",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "main_idea"
+    ],
+    "prompt": "What is the main focus of today's webinar?",
+    "promptZh": "今天線上說明會的主要內容是什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Negotiating purchasing contracts.",
+        "zh": "協商採購合約。",
+        "whyZh": "採購模組是下個月主題，且沒有說是合約議價。"
+      },
+      {
+        "id": "B",
+        "text": "Stock alerts and weekly-summary exports.",
+        "zh": "庫存警示與每週摘要匯出。",
+        "whyZh": "主持人直接說 today's session focuses on 這兩項功能；採購模組延至下個月。"
+      },
+      {
+        "id": "C",
+        "text": "Repairing display hardware.",
+        "zh": "維修顯示器硬體。",
+        "whyZh": "畫面模糊的提醒是播放器設定，不是硬體維修課。"
+      },
+      {
+        "id": "D",
+        "text": "Uploading company records to the dashboard.",
+        "zh": "將公司紀錄上傳至儀表板。",
+        "whyZh": "主持人要求使用範例資料，不要上傳公司紀錄；本場重點是庫存警示和匯出摘要。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "主持人直接說 today's session focuses on 這兩項功能；採購模組延至下個月。",
+    "evidence": "Today's session focuses on setting stock alerts and exporting weekly summaries.",
+    "vocabulary": [
+      {
+        "term": "stock alert",
+        "zh": "庫存警示",
+        "note": "當庫存符合設定條件時發出的通知。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t01-g050-r2",
+    "testId": "test-01",
+    "part": 4,
+    "title": "An inventory webinar with a catch-up plan",
+    "titleZh": "庫存網路研討會與補課安排",
+    "topic": "technology",
+    "passage": "Today we’ll set low-stock alerts and export a weekly summary. We’ll cover ordering next month.\nIf you joined late, use the recording to catch up instead of asking us to repeat a step. Registered viewers get the recording tomorrow; guests can download the summary today.\nUse the practice file to follow along. If you only have company records, watch the demo without uploading anything.",
+    "passageZh": "今天會示範如何設定低庫存警示及匯出週報。下個月才會介紹訂購功能。\n如果你晚到，請用錄影補看，不用請我們重做步驟。已報名的觀眾明天會收到錄影；訪客今天可下載摘要。\n請用練習檔跟著操作。如果手邊只有公司資料，就只看示範，不要上傳任何檔案。",
+    "audioScript": "Today we’ll set low-stock alerts and export a weekly summary. We’ll cover ordering next month.\nIf you joined late, use the recording to catch up instead of asking us to repeat a step. Registered viewers get the recording tomorrow; guests can download the summary today.\nUse the practice file to follow along. If you only have company records, watch the demo without uploading anything.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Today we’ll set low-stock alerts and export a weekly summary. We’ll cover ordering next month."
+      },
+      {
+        "voice": "female",
+        "text": "If you joined late, use the recording to catch up instead of asking us to repeat a step. Registered viewers get the recording tomorrow; guests can download the summary today."
+      },
+      {
+        "voice": "female",
+        "text": "Use the practice file to follow along. If you only have company records, watch the demo without uploading anything."
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/4d/4d47738011d6c763b9a2533eee3e3b153066e3858e720899511cb2e01aad0956.ogg",
+    "duration": 27.075,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-PH",
+        "role": "female",
+        "modelVoice": "en-PH-RosaNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 27.075
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/3f/3f418aff5586579ce8a41216bf0ef58ba657fb6c0861dcf94dbb6c8fc5f267ee.ogg",
+      "start": 38.72575,
+      "end": 41.88233,
+      "assetSha256": "8c10daad4496bd8f6ba93f81c29f5158e613b81bb80d4a3975ae06252dc8e4c1",
+      "speech": "Questions 86 through 88. Listen to the talk.",
+      "sourceAudioProvenance": {
+        "path": "audio/formal/test-01-cues-05.mp3",
+        "sha256": "3f418aff5586579ce8a41216bf0ef58ba657fb6c0861dcf94dbb6c8fc5f267ee",
+        "decodedSamples48k": 3336136,
+        "sourceCodec": "mp3",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": null
+      }
+    },
+    {
+      "mode": "passage",
+      "path": "audio/opus-hq56-96-v2/4d/4d47738011d6c763b9a2533eee3e3b153066e3858e720899511cb2e01aad0956.ogg",
+      "start": 0,
+      "end": 27.075,
+      "assetSha256": "b895dc08eccf15e3024e6bc5c7678aff8b1d5c3b44cb721eb0a16291ffcdc0f6",
+      "speech": "Today we’ll set low-stock alerts and export a weekly summary. We’ll cover ordering next month.\nIf you joined late, use the recording to catch up instead of asking us to repeat a step. Registered viewers get the recording tomorrow; guests can download the summary today.\nUse the practice file to follow along. If you only have company records, watch the demo without uploading anything.",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-01/groups/t01-g050-r2/passage.wav",
+        "sha256": "4d47738011d6c763b9a2533eee3e3b153066e3858e720899511cb2e01aad0956",
+        "decodedSamples48k": 1299600,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": null
+      }
+    },
+    {
+      "mode": "question",
+      "path": "audio/opus-hq56-96-v2/5e/5e3c80aed2b4a07fd18870f0c60da619fba0af2960ed612374c9069622ae4be0.ogg",
+      "start": 0,
+      "end": 7.55,
+      "assetSha256": "e14ad02153fe4b14fc3f57dc9403c36489fe014b6ccba187c7b2222e21a6b860",
+      "speech": "Number 86. A viewer wants to learn to reorder stock. Which session should they choose?",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-01/groups/t01-g050-r2/q086-r3.wav",
+        "sha256": "5e3c80aed2b4a07fd18870f0c60da619fba0af2960ed612374c9069622ae4be0",
+        "decodedSamples48k": 362400,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": null
+      }
+    },
+    {
+      "mode": "practice",
+      "path": "audio/opus-hq56-96-v2/4d/4d47738011d6c763b9a2533eee3e3b153066e3858e720899511cb2e01aad0956.ogg",
+      "start": 0,
+      "end": 27.075,
+      "assetSha256": "b895dc08eccf15e3024e6bc5c7678aff8b1d5c3b44cb721eb0a16291ffcdc0f6",
+      "speech": "Today we’ll set low-stock alerts and export a weekly summary. We’ll cover ordering next month.\nIf you joined late, use the recording to catch up instead of asking us to repeat a step. Registered viewers get the recording tomorrow; guests can download the summary today.\nUse the practice file to follow along. If you only have company records, watch the demo without uploading anything.",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-01/groups/t01-g050-r2/passage.wav",
+        "sha256": "4d47738011d6c763b9a2533eee3e3b153066e3858e720899511cb2e01aad0956",
+        "decodedSamples48k": 1299600,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": null
+      }
+    }
+  ],
+  "imageSha256": null,
+  "checks": {
+    "content": "English and Traditional Chinese prompts, keys, alternatives and rationales reviewed. Active new IDs and exact original scoring and release snapshots retained independently.",
+    "audio": "Independent unprompted evidence tied to the original exact raw PCM and numbers. Strongest full capture and independent evidence reviewed, with discrepancy handling documented in source evidence.",
+    "association": "All four roles rechecked against exact local plan, simultaneous shared passage/practice uses one voice. 2700 seconds, unaffected earlier Part3/graphics unchanged. Raw QA only; re-encode and rebind for Opus release.",
+    "offlineSpeechEvidenceSha256": {
+      "evidence.md": "9777481c5edfdea6774dd62382c7caed8aeae69560f9438d772e70db0ffadd0e",
+      "retained-cue-hashes.txt": "49b55d35c37567ca253b4895f95bc9867575843ad20c623254125d21a891e742",
+      "vosk-retained-cues.log": "1f935eb325039100ca965e8f6f456d9332d122e663e13d1c6ebe7e248d777bc2",
+      "retained-cue-t01-g050.wav": "c1c087d6f9c751ad67b43a4c8dd9a335037caaf500d1f012acda8570e806874f",
+      "test01-q086-stem-medium3.wav.txt": "cb6ed53378cd8a8b74bb3d7d379b10c28f953ccf4ca382574b7338b1f4d09e43",
+      "test01-g050-shared-medium3.wav.txt": "6404886d11e814de47a173ef681604ba3469b28e4b9a5dd5b49e3678fcbb0764",
+      "vosk-test01-g050-shared-medium3.log": "b367eba401ca15c0b419974403bb8eeaf93839488b48f17d1fd441ce661be234"
+    },
+    "codecProjection": "Both modes use the exact deterministic 48kHz Ogg Opus delivery bytes/ranges; raw hashes remain provenance. Source and decoded Opus samples match in duration; Ogg gapless pre-skip/final granule and unmodified timetable verified. Original semantic decision was made on the checked source clips."
+  }
+}

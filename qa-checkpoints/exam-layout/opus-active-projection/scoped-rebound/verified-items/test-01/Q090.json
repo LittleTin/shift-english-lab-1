@@ -1,0 +1,228 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "activeQuestion": {
+    "id": "t01-q090-r2",
+    "testId": "test-01",
+    "number": 90,
+    "part": 4,
+    "groupId": "t01-g051-r2",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "shuttle",
+      "planning"
+    ],
+    "prompt": "What should a rider with a nonfolding bike do?",
+    "promptZh": "自行車不能折疊的騎士應該怎麼做？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carry the bike onto the first shuttle.",
+        "zh": "直接把自行車帶上首班車。",
+        "whyZh": "只有折疊後的自行車才能直接帶上車。"
+      },
+      {
+        "id": "B",
+        "text": "Ask the first driver to put it on the trailer.",
+        "zh": "請首班車司機把車放上拖車。",
+        "whyZh": "首班車沒有拖車，無法載這輛自行車。"
+      },
+      {
+        "id": "C",
+        "text": "Wait for the next shuttle and load it onto the trailer.",
+        "zh": "等下一班車，再把自行車放上拖車。",
+        "whyZh": "不能折疊的自行車必須用拖車載運；下一班車有拖車，首班則沒有。"
+      },
+      {
+        "id": "D",
+        "text": "Leave it at the stop because the shuttle service cannot carry it.",
+        "zh": "把自行車留在車站，因為接駁服務完全不能載運。",
+        "whyZh": "下一班車掛有拖車，可載不能折疊的自行車。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "不能折疊的自行車必須用拖車載運；下一班車有拖車，首班則沒有。",
+    "evidence": "Folded bikes can go on any shuttle. Other bikes need a trailer. The first shuttle has none; the next does.",
+    "vocabulary": [
+      {
+        "term": "trailer",
+        "zh": "拖車",
+        "note": "由接駁車拖掛，可載運不能直接帶上車的物品。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t01-q090",
+    "testId": "test-01",
+    "number": 90,
+    "part": 4,
+    "groupId": "t01-g051",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "location"
+    ],
+    "prompt": "Where is the temporary stop?",
+    "promptZh": "臨時站牌在哪裡？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inside City Library.",
+        "zh": "市立圖書館裡。",
+        "whyZh": "圖書館站暫停停靠，臨時站也不在建築內。"
+      },
+      {
+        "id": "B",
+        "text": "At the airport entrance.",
+        "zh": "機場入口。",
+        "whyZh": "公告沒有提及機場。"
+      },
+      {
+        "id": "C",
+        "text": "Outside the swimming pool on Oak Street.",
+        "zh": "Oak Street 游泳池外。",
+        "whyZh": "公告清楚指出臨時站位於 Oak Street 的泳池外，離圖書館約五分鐘步行距離。"
+      },
+      {
+        "id": "D",
+        "text": "Behind the Pine Avenue railway station.",
+        "zh": "Pine Avenue 火車站後方。",
+        "whyZh": "Pine Avenue 是施工道路，並未提到火車站。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "公告清楚指出臨時站位於 Oak Street 的泳池外，離圖書館約五分鐘步行距離。",
+    "evidence": "the temporary stop outside the swimming pool on Oak Street",
+    "vocabulary": [
+      {
+        "term": "temporary stop",
+        "zh": "臨時站",
+        "note": "在原站不能使用時替代服務的停靠位置。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g051-r2",
+    "testId": "test-01",
+    "part": 4,
+    "title": "A temporary river shuttle route",
+    "titleZh": "河岸接駁車臨時路線",
+    "topic": "daily",
+    "passage": "Friday’s river shuttle skips Market Street for the fair. The sports centre is closer, but its path has steps. Riverside Gate has a level path. Folded bikes can go on any shuttle. Other bikes need a trailer. The first shuttle has none; the next does. Evening departures stay on schedule, but rides may take ten minutes longer. Train times haven’t changed.",
+    "passageZh": "星期五市集期間，河岸接駁車不停靠市場街。運動中心較近，但沿路有階梯；河岸入口的路是平的。折疊後的自行車可搭任何一班；其他自行車需要拖車。首班車沒掛拖車，下一班有。傍晚仍照表發車，但車程可能多十分鐘。火車時刻維持不變。",
+    "audioScript": "Friday’s river shuttle skips Market Street for the fair. The sports centre is closer, but its path has steps. Riverside Gate has a level path. Folded bikes can go on any shuttle. Other bikes need a trailer. The first shuttle has none; the next does. Evening departures stay on schedule, but rides may take ten minutes longer. Train times haven’t changed.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Friday’s river shuttle skips Market Street for the fair. The sports centre is closer, but its path has steps. Riverside Gate has a level path. Folded bikes can go on any shuttle. Other bikes need a trailer. The first shuttle has none; the next does. Evening departures stay on schedule, but rides may take ten minutes longer. Train times haven’t changed."
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/14/14c9e520cb5587485b9a383c09d1d22352c2d1124ea8ce5964279c8523c3e0d4.ogg",
+    "duration": 27.59963,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-NZ",
+        "role": "male",
+        "modelVoice": "en-NZ-MitchellNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 27.59963
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/3f/3f418aff5586579ce8a41216bf0ef58ba657fb6c0861dcf94dbb6c8fc5f267ee.ogg",
+      "start": 54.10596,
+      "end": 57.41421,
+      "assetSha256": "8c10daad4496bd8f6ba93f81c29f5158e613b81bb80d4a3975ae06252dc8e4c1",
+      "speech": "Questions 89 through 91. Listen to the talk.",
+      "sourceAudioProvenance": {
+        "path": "audio/formal/test-01-cues-05.mp3",
+        "sha256": "3f418aff5586579ce8a41216bf0ef58ba657fb6c0861dcf94dbb6c8fc5f267ee",
+        "decodedSamples48k": 3336136,
+        "sourceCodec": "mp3",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": null
+      }
+    },
+    {
+      "mode": "passage",
+      "path": "audio/opus-hq56-96-v2/14/14c9e520cb5587485b9a383c09d1d22352c2d1124ea8ce5964279c8523c3e0d4.ogg",
+      "start": 0,
+      "end": 27.59963,
+      "assetSha256": "d1309672845657ccfb11dcda59a7bb7c76de8eece883c04de0b92af7008ad6e7",
+      "speech": "Friday’s river shuttle skips Market Street for the fair. The sports centre is closer, but its path has steps. Riverside Gate has a level path. Folded bikes can go on any shuttle. Other bikes need a trailer. The first shuttle has none; the next does. Evening departures stay on schedule, but rides may take ten minutes longer. Train times haven’t changed.",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-01/groups/t01-g051-r2/passage.wav",
+        "sha256": "14c9e520cb5587485b9a383c09d1d22352c2d1124ea8ce5964279c8523c3e0d4",
+        "decodedSamples48k": 1324782,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": null
+      }
+    },
+    {
+      "mode": "question",
+      "path": "audio/opus-hq56-96-v2/54/5437849a9927344bcde388eeea06fd119294c7dd14e8fa383379f7503cb00168.ogg",
+      "start": 0,
+      "end": 4.9375,
+      "assetSha256": "439b1c58a9894944498c8c04e491791fa3c1495c8eb9ec216fe7e34a4fe8ec6a",
+      "speech": "Number 90. What should a rider with a nonfolding bike do?",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-01/groups/t01-g051-r2/q090-r2.wav",
+        "sha256": "5437849a9927344bcde388eeea06fd119294c7dd14e8fa383379f7503cb00168",
+        "decodedSamples48k": 237000,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": null
+      }
+    },
+    {
+      "mode": "practice",
+      "path": "audio/opus-hq56-96-v2/14/14c9e520cb5587485b9a383c09d1d22352c2d1124ea8ce5964279c8523c3e0d4.ogg",
+      "start": 0,
+      "end": 27.59963,
+      "assetSha256": "d1309672845657ccfb11dcda59a7bb7c76de8eece883c04de0b92af7008ad6e7",
+      "speech": "Friday’s river shuttle skips Market Street for the fair. The sports centre is closer, but its path has steps. Riverside Gate has a level path. Folded bikes can go on any shuttle. Other bikes need a trailer. The first shuttle has none; the next does. Evening departures stay on schedule, but rides may take ten minutes longer. Train times haven’t changed.",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-01/groups/t01-g051-r2/passage.wav",
+        "sha256": "14c9e520cb5587485b9a383c09d1d22352c2d1124ea8ce5964279c8523c3e0d4",
+        "decodedSamples48k": 1324782,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": null
+      }
+    }
+  ],
+  "imageSha256": null,
+  "checks": {
+    "content": "English and Traditional Chinese prompts, keys, alternatives and rationales reviewed. Active new IDs and exact original scoring and release snapshots retained independently.",
+    "audio": "Independent unprompted evidence tied to the original exact raw PCM and numbers. Strongest full capture and independent evidence reviewed, with discrepancy handling documented in source evidence.",
+    "association": "All four roles rechecked against exact local plan, simultaneous shared passage/practice uses one voice. 2700 seconds, unaffected earlier Part3/graphics unchanged. Raw QA only; re-encode and rebind for Opus release.",
+    "offlineSpeechEvidenceSha256": {
+      "evidence.md": "9777481c5edfdea6774dd62382c7caed8aeae69560f9438d772e70db0ffadd0e",
+      "retained-cue-hashes.txt": "49b55d35c37567ca253b4895f95bc9867575843ad20c623254125d21a891e742",
+      "vosk-retained-cues.log": "1f935eb325039100ca965e8f6f456d9332d122e663e13d1c6ebe7e248d777bc2",
+      "retained-cue-t01-g051.wav": "96f5cd1a940e15b3079abc03cc00977e7bbaa5f8bf431c9ea2eb7d1d072af9d4",
+      "test01-q090-stem-medium3.wav.txt": "d7de0e36003c5e5abfd85848de47cdae7d5d9bc81ef33a8c11f6534c15f48132",
+      "test01-g051-shared-medium3.wav.txt": "5d8a9fefe9779f780a950c7e319a9c0cf5c6d715996bac2c2de38666e23da7ac",
+      "vosk-test01-g051-shared-medium3.log": "e6f0ae96f256b43221d14c689112b9f8e1862475bcb16cce307f51e9106c9b94"
+    },
+    "codecProjection": "Both modes use the exact deterministic 48kHz Ogg Opus delivery bytes/ranges; raw hashes remain provenance. Source and decoded Opus samples match in duration; Ogg gapless pre-skip/final granule and unmodified timetable verified. Original semantic decision was made on the checked source clips."
+  }
+}

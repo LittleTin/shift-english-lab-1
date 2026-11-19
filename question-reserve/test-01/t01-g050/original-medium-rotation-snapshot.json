@@ -1,0 +1,726 @@
+{
+  "group": {
+    "id": "t01-g050",
+    "testId": "test-01",
+    "part": 4,
+    "title": "An inventory-dashboard webinar",
+    "titleZh": "庫存儀表板線上說明會",
+    "topic": "technology",
+    "passage": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard. Today's session focuses on setting stock alerts and exporting weekly summaries. The purchasing module will be covered in a separate session next month. You can enter questions in the chat at any time, and we will answer them after the demonstration. If the screen looks blurry, choose a higher video quality in your player settings; there is no need to restart the application. A recording and a practice data file will be emailed to registered participants tomorrow. Please use the sample data rather than uploading confidential company records.",
+    "passageZh": "大家好，歡迎參加新版庫存儀表板的線上說明會。今天著重在設定庫存警示，以及匯出每週摘要。採購模組會在下個月另一場說明會介紹。各位隨時可以在聊天室輸入問題，我們會在示範後回答。如果畫面模糊，請在播放器設定選擇較高畫質，不需要重新啟動應用程式。錄影和練習資料檔會在明天以電子郵件寄給已報名者。請使用範例資料，不要上傳公司的機密紀錄。",
+    "audioScript": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard. Today's session focuses on setting stock alerts and exporting weekly summaries. The purchasing module will be covered in a separate session next month. You can enter questions in the chat at any time, and we will answer them after the demonstration. If the screen looks blurry, choose a higher video quality in your player settings; there is no need to restart the application. A recording and a practice data file will be emailed to registered participants tomorrow. Please use the sample data rather than uploading confidential company records.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard. Today's session focuses on setting stock alerts and exporting weekly summaries. The purchasing module will be covered in a separate session next month. You can enter questions in the chat at any time, and we will answer them after the demonstration. If the screen looks blurry, choose a higher video quality in your player settings; there is no need to restart the application. A recording and a practice data file will be emailed to registered participants tomorrow. Please use the sample data rather than uploading confidential company records."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-30.mp3",
+    "duration": 41.952,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-PH",
+        "role": "female",
+        "modelVoice": "en-PH-RosaNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 42.452
+  },
+  "questions": [
+    {
+      "id": "t01-q086-r2",
+      "testId": "test-01",
+      "number": 86,
+      "part": 4,
+      "groupId": "t01-g050",
+      "topic": "technology",
+      "difficulty": "intermediate",
+      "tags": [
+        "technology",
+        "main_idea"
+      ],
+      "prompt": "What is the main focus of today's webinar?",
+      "promptZh": "今天線上說明會的主要內容是什麼？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Negotiating purchasing contracts.",
+          "zh": "協商採購合約。",
+          "whyZh": "採購模組是下個月主題，且沒有說是合約議價。"
+        },
+        {
+          "id": "B",
+          "text": "Stock alerts and weekly-summary exports.",
+          "zh": "庫存警示與每週摘要匯出。",
+          "whyZh": "主持人直接說 today's session focuses on 這兩項功能；採購模組延至下個月。"
+        },
+        {
+          "id": "C",
+          "text": "Repairing display hardware.",
+          "zh": "維修顯示器硬體。",
+          "whyZh": "畫面模糊的提醒是播放器設定，不是硬體維修課。"
+        },
+        {
+          "id": "D",
+          "text": "Uploading company records to the dashboard.",
+          "zh": "將公司紀錄上傳至儀表板。",
+          "whyZh": "主持人要求使用範例資料，不要上傳公司紀錄；本場重點是庫存警示和匯出摘要。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "主持人直接說 today's session focuses on 這兩項功能；採購模組延至下個月。",
+      "evidence": "Today's session focuses on setting stock alerts and exporting weekly summaries.",
+      "vocabulary": [
+        {
+          "term": "stock alert",
+          "zh": "庫存警示",
+          "note": "當庫存符合設定條件時發出的通知。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t01-q087",
+      "testId": "test-01",
+      "number": 87,
+      "part": 4,
+      "groupId": "t01-g050",
+      "topic": "technology",
+      "difficulty": "intermediate",
+      "tags": [
+        "technology",
+        "time"
+      ],
+      "prompt": "When will participants' questions be answered?",
+      "promptZh": "參加者的問題會在何時獲得回答？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Only at next month's session.",
+          "zh": "只有在下個月說明會。",
+          "whyZh": "下個月討論採購模組，當天問題會在示範後回答。"
+        },
+        {
+          "id": "B",
+          "text": "Before anyone enters the webinar.",
+          "zh": "任何人進入說明會以前。",
+          "whyZh": "參加者在活動中提問，並非活動開始前已全部回答。"
+        },
+        {
+          "id": "C",
+          "text": "After the demonstration.",
+          "zh": "示範結束後。",
+          "whyZh": "可隨時輸入問題，但回答時點是 after the demonstration；輸入與回答時間不同。"
+        },
+        {
+          "id": "D",
+          "text": "Immediately each time a message appears.",
+          "zh": "每次訊息出現時立刻回答。",
+          "whyZh": "主持人明確安排示範後集中回答，未承諾即時逐則回答。"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "可隨時輸入問題，但回答時點是 after the demonstration；輸入與回答時間不同。",
+      "evidence": "we will answer them after the demonstration.",
+      "vocabulary": [
+        {
+          "term": "demonstration",
+          "zh": "示範",
+          "note": "現場展示功能操作的過程。"
+        }
+      ],
+      "revision": 1
+    },
+    {
+      "id": "t01-q088",
+      "testId": "test-01",
+      "number": 88,
+      "part": 4,
+      "groupId": "t01-g050",
+      "topic": "technology",
+      "difficulty": "intermediate",
+      "tags": [
+        "technology",
+        "detail"
+      ],
+      "prompt": "What will registered participants receive tomorrow?",
+      "promptZh": "已報名者明天會收到什麼？",
+      "options": [
+        {
+          "id": "A",
+          "text": "A recording and a practice data file.",
+          "zh": "活動錄影與練習資料檔。",
+          "whyZh": "主持人明說兩樣資料會在明天寄給已報名者；不包含機密公司紀錄。"
+        },
+        {
+          "id": "B",
+          "text": "A new computer and a monitor.",
+          "zh": "新電腦和顯示器。",
+          "whyZh": "活動提供電子資料，沒有發放硬體。"
+        },
+        {
+          "id": "C",
+          "text": "The company's confidential inventory records.",
+          "zh": "公司的機密庫存紀錄。",
+          "whyZh": "主持人要求使用範例資料，並避免上傳機密紀錄。"
+        },
+        {
+          "id": "D",
+          "text": "A purchasing contract to sign.",
+          "zh": "需要簽署的採購合約。",
+          "whyZh": "沒有寄送待簽合約的安排。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "主持人明說兩樣資料會在明天寄給已報名者；不包含機密公司紀錄。",
+      "evidence": "A recording and a practice data file will be emailed to registered participants tomorrow.",
+      "vocabulary": [
+        {
+          "term": "practice data",
+          "zh": "練習資料",
+          "note": "供操作練習使用，避免動用真實機密資料。"
+        }
+      ],
+      "revision": 1
+    }
+  ],
+  "frames": [
+    {
+      "src": "audio/formal/test-01-cues-05.mp3",
+      "start": 38.72575,
+      "end": 41.88233,
+      "duration": 3.15658,
+      "kind": "audio",
+      "role": "cue",
+      "part": 4,
+      "groupId": "t01-g050",
+      "at": 2297.76673
+    },
+    {
+      "src": "audio/azure-v1/test-01-30.mp3",
+      "start": 0.5,
+      "end": 42.452,
+      "duration": 41.952,
+      "kind": "audio",
+      "role": "passage",
+      "part": 4,
+      "groupId": "t01-g050",
+      "at": 2300.92331,
+      "speakers": [
+        {
+          "speaker": "female",
+          "locale": "en-PH",
+          "role": "female",
+          "modelVoice": "en-PH-RosaNeural"
+        }
+      ]
+    },
+    {
+      "src": "audio/formal/test-01-cues-05.mp3",
+      "start": 42.13233,
+      "end": 45.85317,
+      "duration": 3.72083,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t01-g050",
+      "questionId": "t01-q086-r2",
+      "at": 2342.87531
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 8.06946,
+      "part": 4,
+      "groupId": "t01-g050",
+      "questionId": "t01-q086-r2",
+      "at": 2346.59614
+    },
+    {
+      "src": "audio/formal/test-01-cues-05.mp3",
+      "start": 46.10317,
+      "end": 49.71417,
+      "duration": 3.611,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t01-g050",
+      "questionId": "t01-q087",
+      "at": 2354.6656
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 8.06946,
+      "part": 4,
+      "groupId": "t01-g050",
+      "questionId": "t01-q087",
+      "at": 2358.2766
+    },
+    {
+      "src": "audio/formal/test-01-cues-05.mp3",
+      "start": 49.96417,
+      "end": 53.85596,
+      "duration": 3.89179,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t01-g050",
+      "questionId": "t01-q088",
+      "at": 2366.34606
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 8.06946,
+      "part": 4,
+      "groupId": "t01-g050",
+      "questionId": "t01-q088",
+      "at": 2370.23785
+    }
+  ],
+  "exactOriginalRecords": {
+    "86": {
+      "verified": {
+        "status": "verified-item-not-published",
+        "scope": "listening",
+        "checks": "Stock alerts and weekly exports; purchasing separate; use sample data, no confidential upload Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+        "activeQuestion": {
+          "id": "t01-q086-r2",
+          "testId": "test-01",
+          "number": 86,
+          "part": 4,
+          "groupId": "t01-g050",
+          "topic": "technology",
+          "difficulty": "intermediate",
+          "tags": [
+            "technology",
+            "main_idea"
+          ],
+          "prompt": "What is the main focus of today's webinar?",
+          "promptZh": "今天線上說明會的主要內容是什麼？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Negotiating purchasing contracts.",
+              "zh": "協商採購合約。",
+              "whyZh": "採購模組是下個月主題，且沒有說是合約議價。"
+            },
+            {
+              "id": "B",
+              "text": "Stock alerts and weekly-summary exports.",
+              "zh": "庫存警示與每週摘要匯出。",
+              "whyZh": "主持人直接說 today's session focuses on 這兩項功能；採購模組延至下個月。"
+            },
+            {
+              "id": "C",
+              "text": "Repairing display hardware.",
+              "zh": "維修顯示器硬體。",
+              "whyZh": "畫面模糊的提醒是播放器設定，不是硬體維修課。"
+            },
+            {
+              "id": "D",
+              "text": "Uploading company records to the dashboard.",
+              "zh": "將公司紀錄上傳至儀表板。",
+              "whyZh": "主持人要求使用範例資料，不要上傳公司紀錄；本場重點是庫存警示和匯出摘要。"
+            }
+          ],
+          "answer": "B",
+          "explanationZh": "主持人直接說 today's session focuses on 這兩項功能；採購模組延至下個月。",
+          "evidence": "Today's session focuses on setting stock alerts and exporting weekly summaries.",
+          "vocabulary": [
+            {
+              "term": "stock alert",
+              "zh": "庫存警示",
+              "note": "當庫存符合設定條件時發出的通知。"
+            }
+          ],
+          "revision": 2
+        },
+        "group": {
+          "id": "t01-g050",
+          "testId": "test-01",
+          "part": 4,
+          "title": "An inventory-dashboard webinar",
+          "titleZh": "庫存儀表板線上說明會",
+          "topic": "technology",
+          "passage": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard. Today's session focuses on setting stock alerts and exporting weekly summaries. The purchasing module will be covered in a separate session next month. You can enter questions in the chat at any time, and we will answer them after the demonstration. If the screen looks blurry, choose a higher video quality in your player settings; there is no need to restart the application. A recording and a practice data file will be emailed to registered participants tomorrow. Please use the sample data rather than uploading confidential company records.",
+          "passageZh": "大家好，歡迎參加新版庫存儀表板的線上說明會。今天著重在設定庫存警示，以及匯出每週摘要。採購模組會在下個月另一場說明會介紹。各位隨時可以在聊天室輸入問題，我們會在示範後回答。如果畫面模糊，請在播放器設定選擇較高畫質，不需要重新啟動應用程式。錄影和練習資料檔會在明天以電子郵件寄給已報名者。請使用範例資料，不要上傳公司的機密紀錄。",
+          "audioScript": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard. Today's session focuses on setting stock alerts and exporting weekly summaries. The purchasing module will be covered in a separate session next month. You can enter questions in the chat at any time, and we will answer them after the demonstration. If the screen looks blurry, choose a higher video quality in your player settings; there is no need to restart the application. A recording and a practice data file will be emailed to registered participants tomorrow. Please use the sample data rather than uploading confidential company records.",
+          "turns": [
+            {
+              "voice": "female",
+              "text": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard. Today's session focuses on setting stock alerts and exporting weekly summaries. The purchasing module will be covered in a separate session next month. You can enter questions in the chat at any time, and we will answer them after the demonstration. If the screen looks blurry, choose a higher video quality in your player settings; there is no need to restart the application. A recording and a practice data file will be emailed to registered participants tomorrow. Please use the sample data rather than uploading confidential company records."
+            }
+          ],
+          "audio": "audio/azure-v1/test-01-30.mp3",
+          "duration": 41.952,
+          "audioSpeakers": [
+            {
+              "speaker": "female",
+              "locale": "en-PH",
+              "role": "female",
+              "modelVoice": "en-PH-RosaNeural"
+            }
+          ],
+          "audioStart": 0.5,
+          "audioEnd": 42.452
+        },
+        "audio": [
+          {
+            "mode": "passage",
+            "path": "audio/azure-v1/test-01-30.mp3",
+            "start": 0.5,
+            "end": 42.452,
+            "assetSha256": "562f7d66e4074607481b4c67f4b51d8b710e2d11e1c86cc4c0f5714bccf1f19a",
+            "speech": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard.\n Today's session focuses on setting stock alerts and exporting weekly summaries.\n The purchasing module will be covered in a separate session next month.\n You can enter questions in the chat at any time, and we will answer them after the demonstration.\n If the screen looks blurry, choose a higher video quality in your player settings, there\n is no need to restart the application.\n A recording and a practice data file will be emailed to registered participants tomorrow.\n Please use the sample data rather than uploading confidential company records.\n [BLANK_AUDIO]"
+          },
+          {
+            "mode": "question",
+            "path": "audio/formal/test-01-cues-05.mp3",
+            "start": 42.13233,
+            "end": 45.85317,
+            "assetSha256": "3f418aff5586579ce8a41216bf0ef58ba657fb6c0861dcf94dbb6c8fc5f267ee",
+            "speech": "Number 86. What is the main focus of today's webinar?"
+          },
+          {
+            "mode": "practice",
+            "path": "audio/azure-v1/test-01-30.mp3",
+            "start": 0.5,
+            "end": 42.452,
+            "assetSha256": "562f7d66e4074607481b4c67f4b51d8b710e2d11e1c86cc4c0f5714bccf1f19a",
+            "speech": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard.\n Today's session focuses on setting stock alerts and exporting weekly summaries.\n The purchasing module will be covered in a separate session next month.\n You can enter questions in the chat at any time, and we will answer them after the demonstration.\n If the screen looks blurry, choose a higher video quality in your player settings, there\n is no need to restart the application.\n A recording and a practice data file will be emailed to registered participants tomorrow.\n Please use the sample data rather than uploading confidential company records.\n [BLANK_AUDIO]"
+          }
+        ],
+        "originalQuestion": {
+          "id": "t01-q086",
+          "testId": "test-01",
+          "number": 86,
+          "part": 4,
+          "groupId": "t01-g050",
+          "topic": "technology",
+          "difficulty": "intermediate",
+          "tags": [
+            "technology",
+            "main_idea"
+          ],
+          "prompt": "What is the main focus of today's webinar?",
+          "promptZh": "今天線上說明會的主要內容是什麼？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Negotiating purchasing contracts.",
+              "zh": "協商採購合約。",
+              "whyZh": "採購模組是下個月主題，且沒有說是合約議價。"
+            },
+            {
+              "id": "B",
+              "text": "Stock alerts and weekly-summary exports.",
+              "zh": "庫存警示與每週摘要匯出。",
+              "whyZh": "主持人直接說 today's session focuses on 這兩項功能；採購模組延至下個月。"
+            },
+            {
+              "id": "C",
+              "text": "Repairing display hardware.",
+              "zh": "維修顯示器硬體。",
+              "whyZh": "畫面模糊的提醒是播放器設定，不是硬體維修課。"
+            },
+            {
+              "id": "D",
+              "text": "Designing a factory building.",
+              "zh": "設計工廠建築。",
+              "whyZh": "活動介紹軟體儀表板，沒有建築設計。"
+            }
+          ],
+          "answer": "B",
+          "explanationZh": "主持人直接說 today's session focuses on 這兩項功能；採購模組延至下個月。",
+          "evidence": "Today's session focuses on setting stock alerts and exporting weekly summaries.",
+          "vocabulary": [
+            {
+              "term": "stock alert",
+              "zh": "庫存警示",
+              "note": "當庫存符合設定條件時發出的通知。"
+            }
+          ],
+          "revision": 1
+        }
+      },
+      "verifiedSha256": "c390251c5006f768dc285fce26c744dfd9b8915290df49073f9184dd1190cbaf",
+      "difficulty": {
+        "status": "difficulty-reviewed-not-published",
+        "testId": "test-01",
+        "number": 86,
+        "questionId": "t01-q086-r2",
+        "revision": 2,
+        "sourceQuestionSha256": "542fc7ee044a46378d84329ddd17fb141e9e8fd5c47842589b00fe10b0bb7833",
+        "sourceGroupSha256": "3e78f951dd98644df75bbeac1fbc1de62f97c03efc91cbd3789ceff270ddbf08",
+        "fromDifficulty": "intermediate",
+        "toDifficulty": "foundation",
+        "reason": "The webinar focus directly states the two components in one opening sentence.",
+        "provenance": "Difficulty checked against the exact verified content and essential evidence; no modification to listening script or audio."
+      },
+      "difficultySha256": "90ddc1e0eb7935f8ca6b589ebddf476709a2eb20e50b7714e3ee03e198b24131"
+    },
+    "87": {
+      "verified": {
+        "status": "verified-item-not-published",
+        "scope": "listening",
+        "checks": "Questions anytime but answered after demo Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+        "activeQuestion": {
+          "id": "t01-q087",
+          "testId": "test-01",
+          "number": 87,
+          "part": 4,
+          "groupId": "t01-g050",
+          "topic": "technology",
+          "difficulty": "intermediate",
+          "tags": [
+            "technology",
+            "time"
+          ],
+          "prompt": "When will participants' questions be answered?",
+          "promptZh": "參加者的問題會在何時獲得回答？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Only at next month's session.",
+              "zh": "只有在下個月說明會。",
+              "whyZh": "下個月討論採購模組，當天問題會在示範後回答。"
+            },
+            {
+              "id": "B",
+              "text": "Before anyone enters the webinar.",
+              "zh": "任何人進入說明會以前。",
+              "whyZh": "參加者在活動中提問，並非活動開始前已全部回答。"
+            },
+            {
+              "id": "C",
+              "text": "After the demonstration.",
+              "zh": "示範結束後。",
+              "whyZh": "可隨時輸入問題，但回答時點是 after the demonstration；輸入與回答時間不同。"
+            },
+            {
+              "id": "D",
+              "text": "Immediately each time a message appears.",
+              "zh": "每次訊息出現時立刻回答。",
+              "whyZh": "主持人明確安排示範後集中回答，未承諾即時逐則回答。"
+            }
+          ],
+          "answer": "C",
+          "explanationZh": "可隨時輸入問題，但回答時點是 after the demonstration；輸入與回答時間不同。",
+          "evidence": "we will answer them after the demonstration.",
+          "vocabulary": [
+            {
+              "term": "demonstration",
+              "zh": "示範",
+              "note": "現場展示功能操作的過程。"
+            }
+          ],
+          "revision": 1
+        },
+        "group": {
+          "id": "t01-g050",
+          "testId": "test-01",
+          "part": 4,
+          "title": "An inventory-dashboard webinar",
+          "titleZh": "庫存儀表板線上說明會",
+          "topic": "technology",
+          "passage": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard. Today's session focuses on setting stock alerts and exporting weekly summaries. The purchasing module will be covered in a separate session next month. You can enter questions in the chat at any time, and we will answer them after the demonstration. If the screen looks blurry, choose a higher video quality in your player settings; there is no need to restart the application. A recording and a practice data file will be emailed to registered participants tomorrow. Please use the sample data rather than uploading confidential company records.",
+          "passageZh": "大家好，歡迎參加新版庫存儀表板的線上說明會。今天著重在設定庫存警示，以及匯出每週摘要。採購模組會在下個月另一場說明會介紹。各位隨時可以在聊天室輸入問題，我們會在示範後回答。如果畫面模糊，請在播放器設定選擇較高畫質，不需要重新啟動應用程式。錄影和練習資料檔會在明天以電子郵件寄給已報名者。請使用範例資料，不要上傳公司的機密紀錄。",
+          "audioScript": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard. Today's session focuses on setting stock alerts and exporting weekly summaries. The purchasing module will be covered in a separate session next month. You can enter questions in the chat at any time, and we will answer them after the demonstration. If the screen looks blurry, choose a higher video quality in your player settings; there is no need to restart the application. A recording and a practice data file will be emailed to registered participants tomorrow. Please use the sample data rather than uploading confidential company records.",
+          "turns": [
+            {
+              "voice": "female",
+              "text": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard. Today's session focuses on setting stock alerts and exporting weekly summaries. The purchasing module will be covered in a separate session next month. You can enter questions in the chat at any time, and we will answer them after the demonstration. If the screen looks blurry, choose a higher video quality in your player settings; there is no need to restart the application. A recording and a practice data file will be emailed to registered participants tomorrow. Please use the sample data rather than uploading confidential company records."
+            }
+          ],
+          "audio": "audio/azure-v1/test-01-30.mp3",
+          "duration": 41.952,
+          "audioSpeakers": [
+            {
+              "speaker": "female",
+              "locale": "en-PH",
+              "role": "female",
+              "modelVoice": "en-PH-RosaNeural"
+            }
+          ],
+          "audioStart": 0.5,
+          "audioEnd": 42.452
+        },
+        "audio": [
+          {
+            "mode": "passage",
+            "path": "audio/azure-v1/test-01-30.mp3",
+            "start": 0.5,
+            "end": 42.452,
+            "assetSha256": "562f7d66e4074607481b4c67f4b51d8b710e2d11e1c86cc4c0f5714bccf1f19a",
+            "speech": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard.\n Today's session focuses on setting stock alerts and exporting weekly summaries.\n The purchasing module will be covered in a separate session next month.\n You can enter questions in the chat at any time, and we will answer them after the demonstration.\n If the screen looks blurry, choose a higher video quality in your player settings, there\n is no need to restart the application.\n A recording and a practice data file will be emailed to registered participants tomorrow.\n Please use the sample data rather than uploading confidential company records.\n [BLANK_AUDIO]"
+          },
+          {
+            "mode": "question",
+            "path": "audio/formal/test-01-cues-05.mp3",
+            "start": 46.10317,
+            "end": 49.71417,
+            "assetSha256": "3f418aff5586579ce8a41216bf0ef58ba657fb6c0861dcf94dbb6c8fc5f267ee",
+            "speech": "Number 87. When will participants' questions be answered?"
+          },
+          {
+            "mode": "practice",
+            "path": "audio/azure-v1/test-01-30.mp3",
+            "start": 0.5,
+            "end": 42.452,
+            "assetSha256": "562f7d66e4074607481b4c67f4b51d8b710e2d11e1c86cc4c0f5714bccf1f19a",
+            "speech": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard.\n Today's session focuses on setting stock alerts and exporting weekly summaries.\n The purchasing module will be covered in a separate session next month.\n You can enter questions in the chat at any time, and we will answer them after the demonstration.\n If the screen looks blurry, choose a higher video quality in your player settings, there\n is no need to restart the application.\n A recording and a practice data file will be emailed to registered participants tomorrow.\n Please use the sample data rather than uploading confidential company records.\n [BLANK_AUDIO]"
+          }
+        ]
+      },
+      "verifiedSha256": "75da4c50b10df6fe5f5e2881ca1e1b321e31fd3797c65addfcaf194bd8b8649b",
+      "difficulty": {
+        "status": "difficulty-reviewed-not-published",
+        "testId": "test-01",
+        "number": 87,
+        "questionId": "t01-q087",
+        "revision": 1,
+        "sourceQuestionSha256": "ba960d529b96f1f119b0f589a35cc46be633e0f1a6d30d03cb6e46b28b8dbea5",
+        "sourceGroupSha256": "3e78f951dd98644df75bbeac1fbc1de62f97c03efc91cbd3789ceff270ddbf08",
+        "fromDifficulty": "intermediate",
+        "toDifficulty": "foundation",
+        "reason": "Questions are explicitly scheduled to be answered after the demonstration.",
+        "provenance": "Difficulty checked against the exact verified content and essential evidence; no modification to listening script or audio."
+      },
+      "difficultySha256": "2c011a3d327ae6ad43347b63d93f2a34324ab0533227dfec6ebbe7124ac8e340"
+    },
+    "88": {
+      "verified": {
+        "status": "verified-item-not-published",
+        "scope": "listening",
+        "checks": "Recording and practice data tomorrow Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+        "activeQuestion": {
+          "id": "t01-q088",
+          "testId": "test-01",
+          "number": 88,
+          "part": 4,
+          "groupId": "t01-g050",
+          "topic": "technology",
+          "difficulty": "intermediate",
+          "tags": [
+            "technology",
+            "detail"
+          ],
+          "prompt": "What will registered participants receive tomorrow?",
+          "promptZh": "已報名者明天會收到什麼？",
+          "options": [
+            {
+              "id": "A",
+              "text": "A recording and a practice data file.",
+              "zh": "活動錄影與練習資料檔。",
+              "whyZh": "主持人明說兩樣資料會在明天寄給已報名者；不包含機密公司紀錄。"
+            },
+            {
+              "id": "B",
+              "text": "A new computer and a monitor.",
+              "zh": "新電腦和顯示器。",
+              "whyZh": "活動提供電子資料，沒有發放硬體。"
+            },
+            {
+              "id": "C",
+              "text": "The company's confidential inventory records.",
+              "zh": "公司的機密庫存紀錄。",
+              "whyZh": "主持人要求使用範例資料，並避免上傳機密紀錄。"
+            },
+            {
+              "id": "D",
+              "text": "A purchasing contract to sign.",
+              "zh": "需要簽署的採購合約。",
+              "whyZh": "沒有寄送待簽合約的安排。"
+            }
+          ],
+          "answer": "A",
+          "explanationZh": "主持人明說兩樣資料會在明天寄給已報名者；不包含機密公司紀錄。",
+          "evidence": "A recording and a practice data file will be emailed to registered participants tomorrow.",
+          "vocabulary": [
+            {
+              "term": "practice data",
+              "zh": "練習資料",
+              "note": "供操作練習使用，避免動用真實機密資料。"
+            }
+          ],
+          "revision": 1
+        },
+        "group": {
+          "id": "t01-g050",
+          "testId": "test-01",
+          "part": 4,
+          "title": "An inventory-dashboard webinar",
+          "titleZh": "庫存儀表板線上說明會",
+          "topic": "technology",
+          "passage": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard. Today's session focuses on setting stock alerts and exporting weekly summaries. The purchasing module will be covered in a separate session next month. You can enter questions in the chat at any time, and we will answer them after the demonstration. If the screen looks blurry, choose a higher video quality in your player settings; there is no need to restart the application. A recording and a practice data file will be emailed to registered participants tomorrow. Please use the sample data rather than uploading confidential company records.",
+          "passageZh": "大家好，歡迎參加新版庫存儀表板的線上說明會。今天著重在設定庫存警示，以及匯出每週摘要。採購模組會在下個月另一場說明會介紹。各位隨時可以在聊天室輸入問題，我們會在示範後回答。如果畫面模糊，請在播放器設定選擇較高畫質，不需要重新啟動應用程式。錄影和練習資料檔會在明天以電子郵件寄給已報名者。請使用範例資料，不要上傳公司的機密紀錄。",
+          "audioScript": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard. Today's session focuses on setting stock alerts and exporting weekly summaries. The purchasing module will be covered in a separate session next month. You can enter questions in the chat at any time, and we will answer them after the demonstration. If the screen looks blurry, choose a higher video quality in your player settings; there is no need to restart the application. A recording and a practice data file will be emailed to registered participants tomorrow. Please use the sample data rather than uploading confidential company records.",
+          "turns": [
+            {
+              "voice": "female",
+              "text": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard. Today's session focuses on setting stock alerts and exporting weekly summaries. The purchasing module will be covered in a separate session next month. You can enter questions in the chat at any time, and we will answer them after the demonstration. If the screen looks blurry, choose a higher video quality in your player settings; there is no need to restart the application. A recording and a practice data file will be emailed to registered participants tomorrow. Please use the sample data rather than uploading confidential company records."
+            }
+          ],
+          "audio": "audio/azure-v1/test-01-30.mp3",
+          "duration": 41.952,
+          "audioSpeakers": [
+            {
+              "speaker": "female",
+              "locale": "en-PH",
+              "role": "female",
+              "modelVoice": "en-PH-RosaNeural"
+            }
+          ],
+          "audioStart": 0.5,
+          "audioEnd": 42.452
+        },
+        "audio": [
+          {
+            "mode": "passage",
+            "path": "audio/azure-v1/test-01-30.mp3",
+            "start": 0.5,
+            "end": 42.452,
+            "assetSha256": "562f7d66e4074607481b4c67f4b51d8b710e2d11e1c86cc4c0f5714bccf1f19a",
+            "speech": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard.\n Today's session focuses on setting stock alerts and exporting weekly summaries.\n The purchasing module will be covered in a separate session next month.\n You can enter questions in the chat at any time, and we will answer them after the demonstration.\n If the screen looks blurry, choose a higher video quality in your player settings, there\n is no need to restart the application.\n A recording and a practice data file will be emailed to registered participants tomorrow.\n Please use the sample data rather than uploading confidential company records.\n [BLANK_AUDIO]"
+          },
+          {
+            "mode": "question",
+            "path": "audio/formal/test-01-cues-05.mp3",
+            "start": 49.96417,
+            "end": 53.85596,
+            "assetSha256": "3f418aff5586579ce8a41216bf0ef58ba657fb6c0861dcf94dbb6c8fc5f267ee",
+            "speech": "Number 88, what will registered participants receive tomorrow?"
+          },
+          {
+            "mode": "practice",
+            "path": "audio/azure-v1/test-01-30.mp3",
+            "start": 0.5,
+            "end": 42.452,
+            "assetSha256": "562f7d66e4074607481b4c67f4b51d8b710e2d11e1c86cc4c0f5714bccf1f19a",
+            "speech": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard.\n Today's session focuses on setting stock alerts and exporting weekly summaries.\n The purchasing module will be covered in a separate session next month.\n You can enter questions in the chat at any time, and we will answer them after the demonstration.\n If the screen looks blurry, choose a higher video quality in your player settings, there\n is no need to restart the application.\n A recording and a practice data file will be emailed to registered participants tomorrow.\n Please use the sample data rather than uploading confidential company records.\n [BLANK_AUDIO]"
+          }
+        ]
+      },
+      "verifiedSha256": "330f79d304939fa35a04b2e4bf6980662800b6b2952c4a95ea8f70349c1f2d24",
+      "difficulty": {
+        "status": "difficulty-reviewed-not-published",
+        "testId": "test-01",
+        "number": 88,
+        "questionId": "t01-q088",
+        "revision": 1,
+        "sourceQuestionSha256": "48818310f59bbcdef01d7d749d5daf896fa7f04b0f9c849f1b69cc5030baffd1",
+        "sourceGroupSha256": "3e78f951dd98644df75bbeac1fbc1de62f97c03efc91cbd3789ceff270ddbf08",
+        "fromDifficulty": "intermediate",
+        "toDifficulty": "foundation",
+        "reason": "The email items and timing are explicitly stated in one clause.",
+        "provenance": "Difficulty checked against the exact verified content and essential evidence; no modification to listening script or audio."
+      },
+      "difficultySha256": "d62f335ff042b7e462f64db9b4cc328f67099793877a11321c9afdd4f2ecd348"
+    }
+  },
+  "draftSha256": "003b2c81c68b15040d7ba172f48130c3bd18d8133d5ef474a79c9348173bda57"
+}

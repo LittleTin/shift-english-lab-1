@@ -1,0 +1,257 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "activeQuestion": {
+    "id": "t01-q065-r2",
+    "testId": "test-01",
+    "number": 65,
+    "part": 3,
+    "groupId": "t01-g043-r2",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "cause"
+    ],
+    "prompt": "Why suspect a license shortage?",
+    "promptZh": "為什麼懷疑是授權席次不足？",
+    "options": [
+      {
+        "id": "A",
+        "text": "All seats are in use, and two classroom computers may still be using seats from yesterday.",
+        "zh": "所有授權都在使用中，兩台教室電腦可能還占用著昨天的授權。",
+        "whyZh": "錯誤訊息說浮動授權已全數占用，對話又指出昨天課程的電腦可能仍占用授權。這符合席次不足，不表示軟體安裝有問題。"
+      },
+      {
+        "id": "B",
+        "text": "The installer says both training computers need a newer driver.",
+        "zh": "安裝程式說兩部訓練室電腦都需要更新驅動程式。",
+        "whyZh": "沒有提到驅動程式或安裝檢查。"
+      },
+      {
+        "id": "C",
+        "text": "The simulation reports an error after opening the trial version.",
+        "zh": "試用版開啟後，模擬程式回報錯誤。",
+        "whyZh": "試用版尚未開啟，是稍後才提出的備案。"
+      },
+      {
+        "id": "D",
+        "text": "The school network rejects the trainer's login after every class.",
+        "zh": "學校網路在每次下課後都會拒絕講師登入。",
+        "whyZh": "對話說電腦可能還占用授權，沒有登入錯誤。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "訊息說授權全數在使用；教室電腦可能占著昨天下課後沒釋出的授權。兩個線索都指向沒有空位，而非軟體裝錯。",
+    "evidence": "A message says all the floating licenses are in use. Two computers in the training room may still be holding licenses from yesterday's class.",
+    "vocabulary": [
+      {
+        "term": "floating license",
+        "zh": "浮動授權",
+        "note": "由多台電腦共用的授權席次。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t01-q065",
+    "testId": "test-01",
+    "number": 65,
+    "part": 3,
+    "groupId": "t01-g043-r2",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "cause"
+    ],
+    "prompt": "Why can the man not start the software?",
+    "promptZh": "男子為什麼無法啟動軟體？",
+    "options": [
+      {
+        "id": "A",
+        "text": "He has forgotten his password.",
+        "zh": "他忘記密碼。",
+        "whyZh": "對話沒有登入密碼問題。"
+      },
+      {
+        "id": "B",
+        "text": "The software has not been installed.",
+        "zh": "軟體尚未安裝。",
+        "whyZh": "他已能看到授權不足訊息，問題不在未安裝。"
+      },
+      {
+        "id": "C",
+        "text": "His model file has been deleted.",
+        "zh": "他的模型檔案已刪除。",
+        "whyZh": "模型大小只影響試用版適用性，沒有檔案遺失。"
+      },
+      {
+        "id": "D",
+        "text": "All available licenses are in use.",
+        "zh": "所有可用授權都被占用了。",
+        "whyZh": "軟體訊息直接指出 all the floating licenses are in use，沒有顯示帳號或密碼錯誤。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "軟體訊息直接指出 all the floating licenses are in use，沒有顯示帳號或密碼錯誤。",
+    "evidence": "all the floating licenses are in use.",
+    "vocabulary": [
+      {
+        "term": "floating license",
+        "zh": "浮動授權",
+        "note": "由共用授權池分配、限制同時使用數量的軟體授權。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g043-r2",
+    "testId": "test-01",
+    "part": 3,
+    "title": "A floating-license shortage",
+    "titleZh": "浮動授權不足",
+    "topic": "technology",
+    "passage": "Man: I can't start the simulation software. A message says all the floating licenses are in use.\nWoman: Two computers in the training room may still be holding licenses from yesterday's class.\nMan: Should I restart the license server?\nWoman: Please don't. That would interrupt active simulations. I'll ask the trainer to close the inactive sessions first.\nMan: If that doesn't free a license, can I use the trial version?\nWoman: It doesn't support our model size. Let me resolve the license issue, and I'll message you when a seat becomes available.",
+    "passageZh": "男：我無法啟動模擬軟體。訊息說所有浮動授權都在使用中。\n女：訓練教室的兩台電腦可能還占著昨天上課使用的授權。\n男：我應該重新啟動授權伺服器嗎？\n女：請不要。那會中斷正在執行的模擬。我會先請講師關閉閒置的工作階段。\n男：如果這樣還是沒有空出授權，我可以用試用版嗎？\n女：試用版不支援我們的模型大小。讓我處理授權問題，有名額可用時就傳訊息給你。",
+    "audioScript": "I can't start the simulation software. A message says all the floating licenses are in use.\nTwo computers in the training room may still be holding licenses from yesterday's class.\nShould I restart the license server?\nPlease don't. That would interrupt active simulations. I'll ask the trainer to close the inactive sessions first.\nIf that doesn't free a license, can I use the trial version?\nIt doesn't support our model size. Let me resolve the license issue, and I'll message you when a seat becomes available.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "I can't start the simulation software. A message says all the floating licenses are in use."
+      },
+      {
+        "voice": "female",
+        "text": "Two computers in the training room may still be holding licenses from yesterday's class."
+      },
+      {
+        "voice": "male",
+        "text": "Should I restart the license server?"
+      },
+      {
+        "voice": "female",
+        "text": "Please don't. That would interrupt active simulations. I'll ask the trainer to close the inactive sessions first."
+      },
+      {
+        "voice": "male",
+        "text": "If that doesn't free a license, can I use the trial version?"
+      },
+      {
+        "voice": "female",
+        "text": "It doesn't support our model size. Let me resolve the license issue, and I'll message you when a seat becomes available."
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/2a/2adb0b4b8c658121bbd03475ffe8ad9b5362776478db1c7f936ed17fd804989e.ogg",
+    "duration": 35.65,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-US",
+        "role": "male",
+        "modelVoice": "en-US-GuyNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-US",
+        "role": "female",
+        "modelVoice": "en-US-JennyNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 35.65
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/42/429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196.ogg",
+      "start": 64.50717,
+      "end": 68.62808,
+      "assetSha256": "266628869efa612fba240b39a0a3a8cf58d728f8c36588a536fc0fe708634447",
+      "speech": "Questions 65 through 67. Listen to the conversation.",
+      "sourceAudioProvenance": {
+        "path": "audio/formal/test-01-cues-03.mp3",
+        "sha256": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196",
+        "decodedSamples48k": 3308638,
+        "sourceCodec": "mp3",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": null
+      }
+    },
+    {
+      "mode": "passage",
+      "path": "audio/opus-hq56-96-v2/2a/2adb0b4b8c658121bbd03475ffe8ad9b5362776478db1c7f936ed17fd804989e.ogg",
+      "start": 0,
+      "end": 35.65,
+      "assetSha256": "bac8756300c3710487e3f4727b4dbc7103a245d01b2b4d0d6f33c97bc99ca125",
+      "speech": "I can't start the simulation software. A message says all the floating licenses are in use.\nTwo computers in the training room may still be holding licenses from yesterday's class.\nShould I restart the license server?\nPlease don't. That would interrupt active simulations. I'll ask the trainer to close the inactive sessions first.\nIf that doesn't free a license, can I use the trial version?\nIt doesn't support our model size. Let me resolve the license issue, and I'll message you when a seat becomes available.",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-01/groups/t01-g043-r2/passage.wav",
+        "sha256": "2adb0b4b8c658121bbd03475ffe8ad9b5362776478db1c7f936ed17fd804989e",
+        "decodedSamples48k": 1711200,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": null
+      }
+    },
+    {
+      "mode": "question",
+      "path": "audio/opus-hq56-96-v2/fa/fab932508bfdac592055f4ba0cb237e1b57c91fdebe9aec86725191c1d6113e9.ogg",
+      "start": 0,
+      "end": 4.475,
+      "assetSha256": "a43735c1a2e007681020650acd0783ea6fa80ff93124ac7ac3e19971f1acf087",
+      "speech": "Number 65. Why suspect a license shortage?",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-01/groups/t01-g043-r2/q065-r2.wav",
+        "sha256": "fab932508bfdac592055f4ba0cb237e1b57c91fdebe9aec86725191c1d6113e9",
+        "decodedSamples48k": 214800,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": null
+      }
+    },
+    {
+      "mode": "practice",
+      "path": "audio/opus-hq56-96-v2/2a/2adb0b4b8c658121bbd03475ffe8ad9b5362776478db1c7f936ed17fd804989e.ogg",
+      "start": 0,
+      "end": 35.65,
+      "assetSha256": "bac8756300c3710487e3f4727b4dbc7103a245d01b2b4d0d6f33c97bc99ca125",
+      "speech": "I can't start the simulation software. A message says all the floating licenses are in use.\nTwo computers in the training room may still be holding licenses from yesterday's class.\nShould I restart the license server?\nPlease don't. That would interrupt active simulations. I'll ask the trainer to close the inactive sessions first.\nIf that doesn't free a license, can I use the trial version?\nIt doesn't support our model size. Let me resolve the license issue, and I'll message you when a seat becomes available.",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-01/groups/t01-g043-r2/passage.wav",
+        "sha256": "2adb0b4b8c658121bbd03475ffe8ad9b5362776478db1c7f936ed17fd804989e",
+        "decodedSamples48k": 1711200,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": null
+      }
+    }
+  ],
+  "imageSha256": null,
+  "checks": {
+    "content": "New bilingual scenario, answer and full options checked; exact old question and scoring separately preserved.",
+    "audio": "Independent QA cleared the exact raw candidate used by this pack; previous rejected/held read not promoted. Existing talk, cue and practice are identical to verified originals.",
+    "association": "Exact four roles, preserves unrelated speech/skips, protected original graphics/advanced context and minimum 7.25 seconds. Production Opus independent qualification and rebinding still required.",
+    "offlineSpeechEvidenceSha256": {
+      "retainedTalkAndCueEvidence": "03930a642c9e67a0d11d7e1d3c25b41448220b1197c12a92bdbd4a023ab79c2b",
+      "inputReceiptSha256": "6ffd603f358c31d4c6967015099b28f474fa1d749e528f7676cf6e0ef93a3bb6",
+      "exactSilenceOnlyProof": "b5ad6e70e0935f81a645930ffdb54c45564e81971e742158c88fe24ce40cffe2",
+      "evidence.md": "0ded5dbea98096e8714f446ccd5f1d58302887cfbabd4aa7b306098890978551",
+      "exact-derivative-guards.txt": "a04c622c0163e5f76ee7e1ec5e4fed35547842db16959788ebb393fe9febb2e6",
+      "hashes.txt": "17c5f679ffbc2f6037a256b43b4a210421b042974ebe68020b464110aafd4e91",
+      "test01-q065-stem-medium3-short.wav.txt": "7ce866d33c09d68f037b9af21d16badedb5fd26ecc1b9de35b86532ff5db15d6",
+      "test01-q067-stem-medium3-short.wav.txt": "10e8293873d4a5ae524cdbc3b8bdca32b27609815a8f6d0ac07d92f220cdb742",
+      "test01-q072-stem-medium3-short.wav.txt": "c4d20cfbe7c75f17bc960b2fb36f78c35c4c3527285e07d232274d4fd1b190a1",
+      "vosk.log": "3d92f3cc667c26b838c2ac3648e8fdc3ab8e77339b59f6a367df201531614186",
+      "whisper.log": "734cd9c6443961f01338967d71c2bc746e33a5c052f354eecee5db35e2c1ed4b"
+    },
+    "codecProjection": "Both modes use the exact deterministic 48kHz Ogg Opus delivery bytes/ranges; raw hashes remain provenance. Source and decoded Opus samples match in duration; Ogg gapless pre-skip/final granule and unmodified timetable verified. Original semantic decision was made on the checked source clips."
+  }
+}

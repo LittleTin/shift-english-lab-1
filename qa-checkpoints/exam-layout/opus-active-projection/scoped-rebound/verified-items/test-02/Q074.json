@@ -1,0 +1,239 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Independent blind solved A/C/D; bilingual scope and intermediate reasoning. Apply the 8:45 file closure to a proposed 8:50 edit and distinguish backup from 9:00 shutdown.",
+    "audio": "Independently cleared exact raw F0 and final decoded Opus, checked against immutable per-role SHA/range. Raw Q076 lgraph is→has gone is a benign tense difference, not competing operational content. Retained exact 35.19821–38.74608 cue independently checked.",
+    "sourceEvidenceSha256": {
+      "test02-g046-shared-medium3.wav.txt": "87cf72bb8ce4be81d0ff8a42cc20ed352ef7b508043c786de21e368d64567843",
+      "test02-q074-stem-medium3.wav.txt": "f38e2ed107fdea2ea4b965114de7204ae70cb5c9250eb3c5522abdd203151a55",
+      "test02-q075-stem-medium3.wav.txt": "dfada13ecb21107ce5affcc9b14b4615eeb77663cdcbea5ec2097839465c2f5e",
+      "test02-q076-stem-medium3.wav.txt": "870ac637ef00fb084c762db4f204d57ecd3a09c044309ffa97a141d74230dbb9",
+      "vosk-test02-q075-stem-medium3.log": "903791c81b5c8c647d7152a7aac95f7ccd823e185a0f095c79d06f1487652cb1",
+      "vosk-retained-cues.log": "1f935eb325039100ca965e8f6f456d9332d122e663e13d1c6ebe7e248d777bc2"
+    },
+    "actualFinalOpusEvidenceSha256": "4852886783b81562a67af6a322b00ce1026296dc4985157edb4b3e0d963e9b96",
+    "timing": "G046 original start/end held; 7.71798/7.71799/8.0s; all frames outside identical, chart and advanced unchanged. Not browser or deployment acceptance.",
+    "codecProjection": "Both modes use the exact deterministic 48kHz Ogg Opus delivery bytes/ranges; raw hashes remain provenance. Source and decoded Opus samples match in duration; Ogg gapless pre-skip/final granule and unmodified timetable verified. Original semantic decision was made on the checked source clips."
+  },
+  "activeQuestion": {
+    "id": "t02-q074-r2",
+    "testId": "test-02",
+    "number": 74,
+    "part": 4,
+    "groupId": "t02-g046-r2",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "workplace",
+      "listening-inference"
+    ],
+    "prompt": "Why shouldn’t staff edit shared files at eight fifty?",
+    "promptZh": "為什麼員工不應該在八點五十分編輯共用檔案？",
+    "options": [
+      {
+        "id": "A",
+        "text": "To leave time to back up the shared files.",
+        "zh": "留時間備份共用檔案。",
+        "whyZh": "八點四十五分前關閉共用檔案，讓團隊在九點停機前有時間完成備份。"
+      },
+      {
+        "id": "B",
+        "text": "To move the support website to the same server.",
+        "zh": "把客服網站搬到同一台伺服器。",
+        "whyZh": "客服網站照常運作，沒有提到搬遷。"
+      },
+      {
+        "id": "C",
+        "text": "To give staff time to reconnect.",
+        "zh": "讓員工有時間重新連線。",
+        "whyZh": "重新連線要等到恢復使用通知後。"
+      },
+      {
+        "id": "D",
+        "text": "To check which project folders are missing.",
+        "zh": "檢查哪些專案資料夾不見了。",
+        "whyZh": "找不到個別資料夾是恢復後的處理事項。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "八點四十五分前關閉共用檔案，讓團隊在九點停機前有時間完成備份。",
+    "evidence": "Saturday’s file server shutdown starts at nine. Close shared files by eight forty-five for the final backup.",
+    "vocabulary": [
+      {
+        "term": "final backup",
+        "zh": "最後一次備份",
+        "note": "停機前做最後一份資料副本。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t02-q074",
+    "testId": "test-02",
+    "number": 74,
+    "part": 4,
+    "groupId": "t02-g046",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "unavailable"
+    ],
+    "prompt": "Why will the server be unavailable?",
+    "promptZh": "伺服器為何暫停使用？",
+    "options": [
+      {
+        "id": "A",
+        "text": "A storage controller will be replaced.",
+        "zh": "要更換儲存控制器。",
+        "whyZh": "通知明確說維護目的是更換該元件。"
+      },
+      {
+        "id": "B",
+        "text": "The company is moving to another city.",
+        "zh": "公司搬到另一個城市。",
+        "whyZh": "未提搬遷。"
+      },
+      {
+        "id": "C",
+        "text": "All project files are being permanently deleted.",
+        "zh": "所有專案檔案將永久刪除。",
+        "whyZh": "沒有永久刪除安排。"
+      },
+      {
+        "id": "D",
+        "text": "A customer requested a new website design.",
+        "zh": "客戶要求網站改版。",
+        "whyZh": "客戶支援網站會照常運作，與此次原因不同。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "通知明確說維護目的是更換該元件。",
+    "evidence": "while we replace a storage controller",
+    "vocabulary": [
+      {
+        "term": "unavailable",
+        "zh": "無法使用的",
+        "note": "本題指服務在維護期間暫停。"
+      },
+      {
+        "term": "storage controller",
+        "zh": "儲存控制器",
+        "note": "管理儲存裝置存取的元件；本題要進行更換。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g046-r2",
+    "testId": "test-02",
+    "part": 4,
+    "title": "Working around a file server shutdown",
+    "titleZh": "檔案伺服器停機期間的工作安排",
+    "topic": "technology",
+    "passage": "Saturday’s file server shutdown starts at nine. Close shared files by eight forty-five for the final backup.\nNeed a drawing during the outage? Save it locally first. The support site stays online.\nReconnect after the all-clear. Missing just one folder? Tell the help desk its name. Don’t recreate it.",
+    "passageZh": "星期六上午九點，檔案伺服器會停機。請在八點四十五分前關閉共用檔案，以便做最後一次備份。\n停機期間需要用到圖面嗎？請先存一份在本機。客服網站會照常運作。\n收到恢復使用通知後再重新連線。只有一個資料夾不見了嗎？請把它的名稱告訴服務台，不要自行重建。",
+    "audioScript": "Saturday’s file server shutdown starts at nine. Close shared files by eight forty-five for the final backup.\nNeed a drawing during the outage? Save it locally first. The support site stays online.\nReconnect after the all-clear. Missing just one folder? Tell the help desk its name. Don’t recreate it.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Saturday’s file server shutdown starts at nine. Close shared files by eight forty-five for the final backup."
+      },
+      {
+        "voice": "male",
+        "text": "Need a drawing during the outage? Save it locally first. The support site stays online."
+      },
+      {
+        "voice": "male",
+        "text": "Reconnect after the all-clear. Missing just one folder? Tell the help desk its name. Don’t recreate it."
+      }
+    ],
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-NZ",
+        "role": "male",
+        "modelVoice": "en-NZ-MitchellNeural"
+      }
+    ],
+    "audio": "audio/exams/test-02/groups/t02-g046-r2/passage.ogg",
+    "audioStart": 0,
+    "audioEnd": 25.138166666666667,
+    "duration": 25.13817
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/7a/7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe.ogg",
+      "start": 35.19821,
+      "end": 38.74608,
+      "assetSha256": "e66a88e84467932c0c9493f7c7ae999faec581414366e4a4a34be8bf0081cf66",
+      "speech": "Questions 74 through 76. Listen to the talk.",
+      "sourceAudioProvenance": {
+        "path": "audio/formal/test-02-cues-04.mp3",
+        "sha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+        "decodedSamples48k": 3379630,
+        "sourceCodec": "mp3",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": null
+      }
+    },
+    {
+      "mode": "passage",
+      "path": "audio/exams/test-02/groups/t02-g046-r2/passage.ogg",
+      "start": 0,
+      "end": 25.138166666666667,
+      "assetSha256": "79aed2bfd747fbe609f3bbbc383e1ffcada8604f441c29ac84f5b3ca28652770",
+      "speech": "Saturday’s file server shutdown starts at nine. Close shared files by eight forty-five for the final backup.\nNeed a drawing during the outage? Save it locally first. The support site stays online.\nReconnect after the all-clear. Missing just one folder? Tell the help desk its name. Don’t recreate it.",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-02/groups/t02-g046-r2/passage.ogg",
+        "sha256": "79aed2bfd747fbe609f3bbbc383e1ffcada8604f441c29ac84f5b3ca28652770",
+        "decodedSamples48k": 1206632,
+        "sourceCodec": "opus",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": "b1d6fcd290a38e4e80fe1ddb5a68be80b5cb76bedd04d7bcf7724d7b9d71d4a3"
+      }
+    },
+    {
+      "mode": "question",
+      "path": "audio/exams/test-02/questions/Q074/formal-stem-r2.ogg",
+      "start": 0,
+      "end": 5.6625,
+      "assetSha256": "c1cff4e3b840eb4244536d177b5772ec2985fd51711237376be7079b1009f50d",
+      "speech": "Number 74. Why shouldn’t staff edit shared files at eight fifty?",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-02/questions/Q074/formal-stem-r2.ogg",
+        "sha256": "c1cff4e3b840eb4244536d177b5772ec2985fd51711237376be7079b1009f50d",
+        "decodedSamples48k": 271800,
+        "sourceCodec": "opus",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": "65d69f8447ab3d2fd85020e53ac07fa86b1b07362372a6c5cb5d80b5d3939dbe"
+      }
+    },
+    {
+      "mode": "practice",
+      "path": "audio/exams/test-02/groups/t02-g046-r2/passage.ogg",
+      "start": 0,
+      "end": 25.138166666666667,
+      "assetSha256": "79aed2bfd747fbe609f3bbbc383e1ffcada8604f441c29ac84f5b3ca28652770",
+      "speech": "Saturday’s file server shutdown starts at nine. Close shared files by eight forty-five for the final backup.\nNeed a drawing during the outage? Save it locally first. The support site stays online.\nReconnect after the all-clear. Missing just one folder? Tell the help desk its name. Don’t recreate it.",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-02/groups/t02-g046-r2/passage.ogg",
+        "sha256": "79aed2bfd747fbe609f3bbbc383e1ffcada8604f441c29ac84f5b3ca28652770",
+        "decodedSamples48k": 1206632,
+        "sourceCodec": "opus",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null,
+        "originalRenderSha256": "b1d6fcd290a38e4e80fe1ddb5a68be80b5cb76bedd04d7bcf7724d7b9d71d4a3"
+      }
+    }
+  ],
+  "imageSha256": null
+}
