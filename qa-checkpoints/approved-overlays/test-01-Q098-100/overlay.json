@@ -1,0 +1,818 @@
+{
+  "status": "local-proposal-not-published",
+  "baseRef": "287a9952",
+  "priorDeploymentRef": "043b91761f63062708d70f7cda3a6b2046cd4cf9",
+  "oldGroupSha256": "b158349af49fa273985337c3345bd1c06a6a08d4e651eef791afead0e379e576",
+  "oldGroupId": "t01-g054",
+  "newGroup": {
+    "id": "t01-g054-r2",
+    "testId": "test-01",
+    "part": 4,
+    "title": "The courier trial",
+    "titleZh": "試行送貨安排",
+    "topic": "business",
+    "passage": "A quick update on our courier trial. An ordinary order can go in the afternoon van only if a supervisor approves it before noon and the van reaches the receiving desk while it is still open. Approved safety-critical orders can go in the morning van instead. The driver can leave those at the staffed gate if the desk is closed. If an ordinary order misses either requirement, hold it until tomorrow. The ordinary gasket order was approved at ten thirty, but its desk closes at three. The afternoon van gets there at three thirty. We can't pull a rabbit out of a hat.",
+    "passageZh": "簡短更新一下試行中的送貨安排。一般訂單只有在主管中午前核准，且貨車抵達收貨櫃台時櫃台仍然開放，才能搭下午的貨車。已核准且攸關安全的訂單則可改搭上午的貨車。如果櫃台關了，司機可把這類貨物交給有值班人員的大門。一般訂單若有任一條件沒達成，就留到明天。這筆一般墊片訂單在十點半獲得核准，但收貨櫃台三點關閉。下午的貨車三點半才到。這種情況，我們臨時可變不出什麼奇招。",
+    "audioScript": "A quick update on our courier trial. An ordinary order can go in the afternoon van only if a supervisor approves it before noon and the van reaches the receiving desk while it is still open. Approved safety-critical orders can go in the morning van instead. The driver can leave those at the staffed gate if the desk is closed. If an ordinary order misses either requirement, hold it until tomorrow. The ordinary gasket order was approved at ten thirty, but its desk closes at three. The afternoon van gets there at three thirty. We can't pull a rabbit out of a hat.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "A quick update on our courier trial. An ordinary order can go in the afternoon van only if a supervisor approves it before noon and the van reaches the receiving desk while it is still open. Approved safety-critical orders can go in the morning van instead. The driver can leave those at the staffed gate if the desk is closed. If an ordinary order misses either requirement, hold it until tomorrow. The ordinary gasket order was approved at ten thirty, but its desk closes at three. The afternoon van gets there at three thirty. We can't pull a rabbit out of a hat."
+      }
+    ],
+    "audio": "audio/exams/test-01/groups/t01-g054-r2/passage.wav",
+    "duration": 37.2125,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-NG",
+        "modelVoice": "en-NG-EzinneNeural",
+        "role": "female"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 37.2125
+  },
+  "oldQuestionSha256": {
+    "98": "4b20749232519dca5fae28c4c8092de6c99b73a22999cfe74c3d198d68a9b6c9",
+    "99": "a417686d554f175e358ae382bda15f5269ef39823364abfab7c6f8568ec96dc1",
+    "100": "527f8bf03314a2fe3c32c2764d67fcac6363d91f73cca86d5300701c02d3c213"
+  },
+  "newQuestions": [
+    {
+      "id": "t01-q098-r2",
+      "testId": "test-01",
+      "number": 98,
+      "part": 4,
+      "groupId": "t01-g054-r2",
+      "topic": "business",
+      "difficulty": "intermediate",
+      "tags": [
+        "business",
+        "purpose"
+      ],
+      "prompt": "What should happen to the gasket order under the current schedule?",
+      "promptZh": "依目前的時程，這筆墊片訂單應如何處理？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Send it on the afternoon van and ask the driver to use the gate.",
+          "zh": "用下午的貨車送出，請司機走大門收貨。",
+          "whyZh": "大門代收是給符合安全例外的貨物，不能補救一般訂單的櫃台關閉問題。"
+        },
+        {
+          "id": "B",
+          "text": "Send it on the morning van because it was approved before noon.",
+          "zh": "因為它在中午前已獲核准，所以用上午的貨車送出。",
+          "whyZh": "提早核准並未讓一般訂單取得上午班資格。"
+        },
+        {
+          "id": "C",
+          "text": "Send it on the afternoon van because approval is the only condition it must meet.",
+          "zh": "用下午的貨車送出，因為獲得核准是唯一條件。",
+          "whyZh": "除了核准，還須在櫃台開放時抵達。"
+        },
+        {
+          "id": "D",
+          "text": "Hold it until the next day.",
+          "zh": "把它留到隔天。",
+          "whyZh": "一般訂單須同時符合兩項條件。十點半核准符合第一項，但三點半抵達晚於櫃台三點關閉，因此應延後。"
+        }
+      ],
+      "answer": "D",
+      "explanationZh": "一般訂單須同時符合兩項條件。十點半核准符合第一項，但三點半抵達晚於櫃台三點關閉，因此應延後。",
+      "evidence": "Ordinary order + approval at 10:30 + 3:30 arrival after 3:00 closure + hold until tomorrow if either requirement fails.",
+      "vocabulary": [
+        {
+          "term": "receiving desk",
+          "zh": "收貨櫃台",
+          "note": "指負責簽收貨物的櫃台。"
+        },
+        {
+          "term": "hold it until tomorrow",
+          "zh": "把它留到明天",
+          "note": "hold 在這裡是暫不安排出貨。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t01-q099-r2",
+      "testId": "test-01",
+      "number": 99,
+      "part": 4,
+      "groupId": "t01-g054-r2",
+      "topic": "business",
+      "difficulty": "intermediate",
+      "tags": [
+        "business",
+        "deadline"
+      ],
+      "prompt": "Which shipment is allowed to leave in the morning?",
+      "promptZh": "依短講的規定，哪一筆貨物可以在上午送出？",
+      "options": [
+        {
+          "id": "A",
+          "text": "An ordinary filter order approved before noon, with an open receiving desk.",
+          "zh": "一筆中午前核准、收貨櫃台也有開的一般濾芯訂單。",
+          "whyZh": "即使符合一般訂單的條件，安排的仍是下午班，不是上午班。"
+        },
+        {
+          "id": "B",
+          "text": "An approved safety-critical order whose receiving desk is closed, with staff at the gate.",
+          "zh": "一筆已核准且攸關安全的訂單；收貨櫃台關了，但大門有人值班。",
+          "whyZh": "已核准且攸關安全的訂單符合上午班例外。櫃台關閉時，司機可以交給大門值班人員。"
+        },
+        {
+          "id": "C",
+          "text": "A safety-critical order that has not been approved, with staff at the gate.",
+          "zh": "一筆尚未核准、但攸關安全的訂單；大門有人值班。",
+          "whyZh": "大門值班人員可以代收，卻不能取代事前核准。"
+        },
+        {
+          "id": "D",
+          "text": "An ordinary order with a closed receiving desk and enough space on the morning van.",
+          "zh": "一筆收貨櫃台已關閉的一般訂單；上午班車還有空位。",
+          "whyZh": "貨車有空位並不是上午班例外條件，這筆一般訂單不能搭上午班。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "已核准且攸關安全的訂單符合上午班例外。櫃台關閉時，司機可以交給大門值班人員。",
+      "evidence": "The morning exception requires an already-approved safety-critical shipment; the staffed gate substitutes for a closed desk, not for approval or eligibility.",
+      "vocabulary": [
+        {
+          "term": "safety-critical",
+          "zh": "攸關安全的",
+          "note": "指涉及安全、不能視為一般貨物的訂單。"
+        },
+        {
+          "term": "staffed gate",
+          "zh": "有值班人員的大門",
+          "note": "staffed 表示有人值班，可依規定簽收特定貨物。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t01-q100-r2",
+      "testId": "test-01",
+      "number": 100,
+      "part": 4,
+      "groupId": "t01-g054-r2",
+      "topic": "business",
+      "difficulty": "intermediate",
+      "tags": [
+        "business",
+        "exception"
+      ],
+      "prompt": "What does the speaker most likely mean by “We can't pull a rabbit out of a hat”?",
+      "promptZh": "說話者說「We can't pull a rabbit out of a hat」最可能是什麼意思？",
+      "options": [
+        {
+          "id": "A",
+          "text": "They should ask the supervisor to approve a second order as a backup.",
+          "zh": "他們應請主管再核准一筆備用訂單。",
+          "whyZh": "現有訂單已獲核准；另提一筆訂單無法解決時間衝突。"
+        },
+        {
+          "id": "B",
+          "text": "The driver should check whether the gate can take every order after closing.",
+          "zh": "司機應確認櫃台關閉後，大門能否收下所有訂單。",
+          "whyZh": "講者剛說明大門替代方案只適用於安全例外，不是在提出讓所有訂單改走大門。"
+        },
+        {
+          "id": "C",
+          "text": "They cannot improvise a last-minute way around the delivery rules.",
+          "zh": "他們不能臨時想個變通辦法，繞過送貨規則。",
+          "whyZh": "魔術表演從帽子變出兔子是出乎意料的橋段。這裡用否定式呼應櫃台與貨車時程的衝突，帶點幽默地說沒有臨時奇招可繞過規則。"
+        },
+        {
+          "id": "D",
+          "text": "The courier trial should end before the next delivery.",
+          "zh": "應在下一次送貨前結束這項試行。",
+          "whyZh": "講者只說明這筆訂單不能臨時通融，沒有要求停止整項試行。"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "魔術表演從帽子變出兔子是出乎意料的橋段。這裡用否定式呼應櫃台與貨車時程的衝突，帶點幽默地說沒有臨時奇招可繞過規則。",
+      "evidence": "A joking magic metaphor follows a real scheduling conflict and a strict ordinary-order fallback; the speaker rejects a magical workaround, not the entire trial.",
+      "vocabulary": [
+        {
+          "term": "pull a rabbit out of a hat",
+          "zh": "突然想出令人意外的解法",
+          "note": "借用魔術師從帽中變出兔子的畫面；此處否定式帶幽默地說沒有奇招。"
+        }
+      ],
+      "revision": 2
+    }
+  ],
+  "oldListeningPlanSha256": "b8d12885a129573e46b0424bb33f43753620f783d505d2f4d4154fa209fdf21f",
+  "newListeningPlanSha256": "4fcec57865de92b619d33dea6d9fd25b8e4f9b90be2eced7eaf8c75c50e00e32",
+  "formalFrameOps": [
+    {
+      "index": 206,
+      "beforeSha256": "e511ff330d4f0830b996f7b50ba20107c50a6c608f7ec66947ee5e5f255541c0",
+      "updates": {
+        "duration": 8.57566
+      }
+    },
+    {
+      "index": 207,
+      "beforeSha256": "287a375a51cc6a39a067bc57f1d06b99c0d341a1af5d043320da5a4900789d41",
+      "updates": {
+        "at": 1933.89144
+      }
+    },
+    {
+      "index": 208,
+      "beforeSha256": "bed8a1b7fef89a30faeff8981a8b1c83dd8daf3a8260b123af82222ea4f23cbe",
+      "updates": {
+        "duration": 8.57566,
+        "at": 1937.00265
+      }
+    },
+    {
+      "index": 209,
+      "beforeSha256": "557e5525ec73591c2f05e1923f5ab0c2e7c5f141937c5004c96e4886ffaf4b75",
+      "updates": {
+        "at": 1945.57831
+      }
+    },
+    {
+      "index": 210,
+      "beforeSha256": "c1dfbb3bfe39a5cfb07f59ce22db7e36a3481313a3bb82c647c5902c58a6d7ab",
+      "updates": {
+        "duration": 8.57566,
+        "at": 1949.32698
+      }
+    },
+    {
+      "index": 211,
+      "beforeSha256": "54b4d7eeb6f1fdb1851b5c52c27d42f5492cc88f0c7bcf6eb9ee1eb75582d558",
+      "updates": {
+        "at": 1957.90264
+      }
+    },
+    {
+      "index": 212,
+      "beforeSha256": "f20080a4e07e15fcf73ab5b60f11747c08474772cadd6095ac948b6282b0652f",
+      "updates": {
+        "at": 1961.45051
+      }
+    },
+    {
+      "index": 213,
+      "beforeSha256": "4d16bd2a686f889b887d297e59bbd746ce3716d16d440e5085a213cf3fd645d6",
+      "updates": {
+        "at": 2000.47451
+      }
+    },
+    {
+      "index": 214,
+      "beforeSha256": "599b21d849a055a223a297521881c11d79bd6dfbd5c9478c628d945a587eaf0f",
+      "updates": {
+        "duration": 8.57566,
+        "at": 2003.18801
+      }
+    },
+    {
+      "index": 215,
+      "beforeSha256": "2318e6b73f6bb8fcd812f381209cdc71e9b02ec91d3d1ec6040ff7561dee82b4",
+      "updates": {
+        "at": 2011.76367
+      }
+    },
+    {
+      "index": 216,
+      "beforeSha256": "91c0f662e3561175bca423007f60c571139c7a069c86b928f7ecb05ea3c03da2",
+      "updates": {
+        "duration": 8.57566,
+        "at": 2016.1408
+      }
+    },
+    {
+      "index": 217,
+      "beforeSha256": "bbb9bf709f94b7af32767a819eb8c77d30ecdd8b50854cd6e5cae9eb8ffc9ddc",
+      "updates": {
+        "at": 2024.71646
+      }
+    },
+    {
+      "index": 218,
+      "beforeSha256": "f4ef4027b4a7ddf5be5345713d6a3fbece8d18aeff6942aceab2abacfd35b70d",
+      "updates": {
+        "duration": 8.57566,
+        "at": 2028.05904
+      }
+    },
+    {
+      "index": 219,
+      "beforeSha256": "39591a4c88d101ec228eb673f7b65def05a814de1bd86238a9e121e071deaea1",
+      "updates": {
+        "at": 2036.6347
+      }
+    },
+    {
+      "index": 220,
+      "beforeSha256": "ee93943d321fdbbeb9fd74c0a119c2c649fc66107cbe9138efdaf5f0e12c50b5",
+      "updates": {
+        "at": 2040.23316
+      }
+    },
+    {
+      "index": 221,
+      "beforeSha256": "73dc6fc282f9f2babe12e2b1472849746f425db02280be3fe18bb9da36db533b",
+      "updates": {
+        "at": 2084.87316
+      }
+    },
+    {
+      "index": 222,
+      "beforeSha256": "4cda917fef87fdcdb8d498ecaf5579dfd0c1d928ae0675079bd472576f8d95c1",
+      "updates": {
+        "duration": 8.57566,
+        "at": 2089.31166
+      }
+    },
+    {
+      "index": 223,
+      "beforeSha256": "0c1d0089296458715acf458f3dbb246e4126107d0c7cf6eeb2e6e7271c75a4b4",
+      "updates": {
+        "at": 2097.88732
+      }
+    },
+    {
+      "index": 224,
+      "beforeSha256": "f7b516f411f286a11399626857c55aeb88ff60610c340df2e1caef4cb8aa6d25",
+      "updates": {
+        "duration": 8.57567,
+        "at": 2101.09449
+      }
+    },
+    {
+      "index": 225,
+      "beforeSha256": "6b9920d90b2c18b1b54eb9cc25b198953f68e8ef360207347981f7a410cd03cd",
+      "updates": {
+        "at": 2109.67016
+      }
+    },
+    {
+      "index": 226,
+      "beforeSha256": "7cadcf98b92e5de74bfa3c5bb78e22398a48135e78f9784ad7ed7ce0c97958fb",
+      "updates": {
+        "duration": 8.57567,
+        "at": 2114.14533
+      }
+    },
+    {
+      "index": 227,
+      "beforeSha256": "bb17f0a6c1b3714a94afab596f60846c0056b618ef593bb6935f3785011f8154",
+      "updates": {
+        "at": 2122.721
+      }
+    },
+    {
+      "index": 228,
+      "beforeSha256": "c6ea9346bf43b392b6c7380657ed6f2cf591bbbbb717ecf5310e5f06040d88f6",
+      "updates": {
+        "at": 2125.62908
+      }
+    },
+    {
+      "index": 229,
+      "beforeSha256": "8c7605a5df95ab5170b1541ea1877497f0e3deb6dd777e0b6d7715b0b3087568",
+      "updates": {
+        "at": 2165.49308
+      }
+    },
+    {
+      "index": 230,
+      "beforeSha256": "3e0dfef74c238d91099c8b4acffe63e6ae2134bbadaeb0d832b2955140b74e46",
+      "updates": {
+        "duration": 8.57567,
+        "at": 2168.38158
+      }
+    },
+    {
+      "index": 231,
+      "beforeSha256": "ba035b2838d463b25f8f041927e31388fa7d75b0d18aa5f5adec8e1b3b4e4497",
+      "updates": {
+        "at": 2176.95725
+      }
+    },
+    {
+      "index": 232,
+      "beforeSha256": "a0b9ed68544bb0a48c02ddbb1ba37023421743d31ce107d857bf3ebc053abc56",
+      "updates": {
+        "duration": 8.57567,
+        "at": 2180.93292
+      }
+    },
+    {
+      "index": 233,
+      "beforeSha256": "59d725e02b369c1169f1bb126b361ac53299830d7e554bdf36857c46630f0135",
+      "updates": {
+        "at": 2189.50859
+      }
+    },
+    {
+      "index": 234,
+      "beforeSha256": "78e9c1497134dca4e52bfe4385363c9818ad05c600ebf14a35c0db4954018854",
+      "updates": {
+        "duration": 8.57567,
+        "at": 2193.57846
+      }
+    },
+    {
+      "index": 235,
+      "beforeSha256": "0d6d54d1c337856f0d15dd08524075c3d80a293a5f4f22af3fee672a1d3be8e9",
+      "updates": {
+        "at": 2202.15413
+      }
+    },
+    {
+      "index": 236,
+      "beforeSha256": "b78254a68649e24c0dce02296aa38b714e4f4e42e713d77f2d7534ea15ae461b",
+      "updates": {
+        "at": 2205.31242
+      }
+    },
+    {
+      "index": 237,
+      "beforeSha256": "125a21d79803c55c9b2aebc164794b938c244e9585b0f7e8386316a14185772a",
+      "updates": {
+        "at": 2245.29642
+      }
+    },
+    {
+      "index": 238,
+      "beforeSha256": "a7bb1c40af651c96225575b2635ff497fc71b8f4e4058da19504e3c35d17b3e9",
+      "updates": {
+        "duration": 12.97564,
+        "at": 2252.30705
+      }
+    },
+    {
+      "index": 239,
+      "beforeSha256": "f5c0b8ca8fd8ed5002e9de45b838baefe44e3333571077726c0e369c578294b8",
+      "updates": {
+        "at": 2265.28269
+      }
+    },
+    {
+      "index": 240,
+      "beforeSha256": "f4058912433542d8a3a10e4463d764c73b99cf2e7e09f785f2a68bdf2f71528d",
+      "updates": {
+        "duration": 8.57567,
+        "at": 2268.52182
+      }
+    },
+    {
+      "index": 241,
+      "beforeSha256": "5a182ca52af0997ddfa63e2d6fe4b12db239cf284d1247192bc430eb7a4f2408",
+      "updates": {
+        "at": 2277.09749
+      }
+    },
+    {
+      "index": 242,
+      "beforeSha256": "6fb1e96fb795113c33db6006c6bc63db149d55ee4797f93a7599b7de37379d33",
+      "updates": {
+        "duration": 8.57567,
+        "at": 2281.59791
+      }
+    },
+    {
+      "index": 243,
+      "beforeSha256": "8586a618c887de2d268fe67f6b418534e2e807fc813fe617acf9e9b1b1ef4a7c",
+      "updates": {
+        "at": 2290.17358
+      }
+    },
+    {
+      "index": 244,
+      "beforeSha256": "b783c27dff394c6acf03914c8cc420804777afa8632f24d5c41dfb54fa268b38",
+      "updates": {
+        "at": 2293.33016
+      }
+    },
+    {
+      "index": 245,
+      "beforeSha256": "f43f8910a8c4fdfb857f828477c279ce8630a1ef1dcc472961829680e11db9a7",
+      "updates": {
+        "at": 2335.28216
+      }
+    },
+    {
+      "index": 246,
+      "beforeSha256": "93cd3364dea376ffa4c4440f56778b59d52c63721ee99b13ca19cd29b020c1d2",
+      "updates": {
+        "duration": 8.57567,
+        "at": 2339.00299
+      }
+    },
+    {
+      "index": 247,
+      "beforeSha256": "db53d4919b6373e3a00750221aec93d628db1f37745a0cf38e040556bdd207f6",
+      "updates": {
+        "at": 2347.57866
+      }
+    },
+    {
+      "index": 248,
+      "beforeSha256": "2534e225063aaf3867ea213fd294034c00ac1fa630c1f726550b54aaa7c6b3a2",
+      "updates": {
+        "duration": 8.57567,
+        "at": 2351.18966
+      }
+    },
+    {
+      "index": 249,
+      "beforeSha256": "4fbbe3ce2ed936af56c8a445b35ce233191b1cc29b17284416e5afbcdcb28965",
+      "updates": {
+        "at": 2359.76533
+      }
+    },
+    {
+      "index": 250,
+      "beforeSha256": "a38a3f0ac5732c0bc1e8f2772a0740f0a6ebaa5e762fe7360eed0035dba810b9",
+      "updates": {
+        "duration": 8.57567,
+        "at": 2363.65712
+      }
+    },
+    {
+      "index": 251,
+      "beforeSha256": "d0e8963617428902e4103759ab5fa3857775f80581e595330a78fcea3509f029",
+      "updates": {
+        "at": 2372.23279
+      }
+    },
+    {
+      "index": 252,
+      "beforeSha256": "1506850bb94db5209fa063eac1f25ad5b22db189e0c21d3b44dea6e40be75b3e",
+      "updates": {
+        "at": 2375.54104
+      }
+    },
+    {
+      "index": 253,
+      "beforeSha256": "397019a47e8cad71158fe62bb8555fd2d83c24be99d24242773da56dc7c301dd",
+      "updates": {
+        "at": 2413.00504
+      }
+    },
+    {
+      "index": 254,
+      "beforeSha256": "f5afdab584981020a544bb57f84c3ff8a8390fe5f01a0c86441fe765e89cabb8",
+      "updates": {
+        "duration": 8.57567,
+        "at": 2417.68475
+      }
+    },
+    {
+      "index": 255,
+      "beforeSha256": "d7478af0cf10ce70a088c957e3e298a428058fcd6ca8b529fa54df28452e4ec5",
+      "updates": {
+        "at": 2426.26042
+      }
+    },
+    {
+      "index": 256,
+      "beforeSha256": "a1aba800eb759bb456c7389aba5afd3e6407b1eac98835fec2bca177ce510907",
+      "updates": {
+        "duration": 8.57567,
+        "at": 2428.71388
+      }
+    },
+    {
+      "index": 257,
+      "beforeSha256": "e94cc9f03bb7d2a3770b5f206eee4cac946180f689e710302fa9407d49e25fb1",
+      "updates": {
+        "at": 2437.28955
+      }
+    },
+    {
+      "index": 258,
+      "beforeSha256": "dc404ca96e128d2b6fa311327375c03c7b782687d8695ec55edf1c86f5eb1ee8",
+      "updates": {
+        "duration": 8.57567,
+        "at": 2441.19501
+      }
+    },
+    {
+      "index": 259,
+      "beforeSha256": "80c06ed29133359d4fa923de88609a2d1278501a02148082738ab2dcf667c68f",
+      "updates": {
+        "at": 2449.77068
+      }
+    },
+    {
+      "index": 260,
+      "beforeSha256": "bbf4c21316b093570dbf442aa45abf9dc9fe2215e01bfe669493b5cb0a6dd853",
+      "updates": {
+        "at": 2453.07847
+      }
+    },
+    {
+      "index": 261,
+      "beforeSha256": "04988f4b25645fcace6bbf707a878329b5a6fede22101baefe4659eee5100e4c",
+      "updates": {
+        "at": 2493.80647
+      }
+    },
+    {
+      "index": 262,
+      "beforeSha256": "c46437f29b07a531f36662af32d31e44084277712663c498ab8073ca52e8b1ca",
+      "updates": {
+        "duration": 8.57567,
+        "at": 2497.65789
+      }
+    },
+    {
+      "index": 263,
+      "beforeSha256": "dfa1077b5349d75e94183a4b14906ffb10793f1f9d2b5a62b5b0b1236677446e",
+      "updates": {
+        "at": 2506.23356
+      }
+    },
+    {
+      "index": 264,
+      "beforeSha256": "314c07ab23bf428a7f17be76be1cb6fc9f92ee8667ffd0ae06e177094a333c1d",
+      "updates": {
+        "duration": 8.57567,
+        "at": 2510.85723
+      }
+    },
+    {
+      "index": 265,
+      "beforeSha256": "f3da1746a05beeeefd53f73f9bb8a2d17f65442ebb1fec03bf3e6b142f8433d4",
+      "updates": {
+        "at": 2519.4329
+      }
+    },
+    {
+      "index": 266,
+      "beforeSha256": "be9398619123cd7faf4c071703b509ba58dac6ebea56ec7f59af0a4e93ecffee",
+      "updates": {
+        "duration": 8.57567,
+        "at": 2522.8649
+      }
+    },
+    {
+      "index": 267,
+      "beforeSha256": "cc2044dd52028dcac0edbcfa61e60926869eb032168da347e8a81fa5a7521a0c",
+      "updates": {
+        "at": 2531.44057
+      }
+    },
+    {
+      "index": 268,
+      "beforeSha256": "1136204efec4fb5c8f3fbdf005130fa7f2c1552e5ed99bdb70b774dc53ede501",
+      "updates": {
+        "at": 2534.82436
+      }
+    },
+    {
+      "index": 269,
+      "beforeSha256": "c57e172479a4c2a5d9de79917693be75c1a088e98b6e7eb2d72c5d000f2fcaf2",
+      "updates": {
+        "at": 2568.68836
+      }
+    },
+    {
+      "index": 270,
+      "beforeSha256": "e18975e3c56ab1c35f0654109b4053bdb769e54aa35dc5b89da10791b5c0bbf9",
+      "updates": {
+        "duration": 8.57567,
+        "at": 2572.67399
+      }
+    },
+    {
+      "index": 271,
+      "beforeSha256": "a61649c087c5bead6f20f936941e83aa55bf218e5200f7b9cfa9970f5eca5e87",
+      "updates": {
+        "at": 2581.24966
+      }
+    },
+    {
+      "index": 272,
+      "beforeSha256": "33212f70d769d9078771449fd79765c9a7fcc88f6b3803e1fa0d3e460626efac",
+      "updates": {
+        "duration": 8.57567,
+        "at": 2584.84895
+      }
+    },
+    {
+      "index": 273,
+      "beforeSha256": "8802d3e789e75c38235b7c1cac74b8c7d6eef32180cc1d9cdcb0f6eb8d8802c3",
+      "updates": {
+        "at": 2593.42462
+      }
+    },
+    {
+      "index": 274,
+      "beforeSha256": "9ef156edcc7458182637471a7964742070ff552fbcd143871d5d07a6a74083b1",
+      "updates": {
+        "duration": 8.57567,
+        "at": 2598.22808
+      }
+    },
+    {
+      "index": 275,
+      "beforeSha256": "1167fe65e53a9ff6fe6b862a8f33e3a6f36628783ae5842a6bb7a442994c8c35",
+      "updates": {
+        "groupId": "t01-g054-r2",
+        "at": 2606.80375
+      }
+    },
+    {
+      "index": 276,
+      "beforeSha256": "06458c3a5331ef070a683de129bbe67cc0db4dd8925632dd556706f4d87f8dce",
+      "updates": {
+        "src": "audio/exams/test-01/groups/t01-g054-r2/passage.wav",
+        "start": 0,
+        "end": 37.2125,
+        "duration": 37.2125,
+        "groupId": "t01-g054-r2",
+        "at": 2610.18883
+      }
+    },
+    {
+      "index": 277,
+      "beforeSha256": "8a8efc5dde626dfe64fccf79de3dda22294be448bf2efa1f5b40fc7482d73b78",
+      "updates": {
+        "src": "audio/exams/test-01/questions/Q098/formal-stem-r2.wav",
+        "start": 0,
+        "end": 5.7625,
+        "duration": 5.7625,
+        "groupId": "t01-g054-r2",
+        "questionId": "t01-q098-r2",
+        "at": 2647.40133
+      }
+    },
+    {
+      "index": 278,
+      "beforeSha256": "bb1985701d1a694abf1b145742c7aa417c4d20306d89524a26283da1603e91e2",
+      "updates": {
+        "duration": 8.57567,
+        "groupId": "t01-g054-r2",
+        "questionId": "t01-q098-r2",
+        "at": 2653.16383
+      }
+    },
+    {
+      "index": 279,
+      "beforeSha256": "50f199e5f506c4daf6587039dc5d066432922502c9d15dbbeeca0326c38f96a3",
+      "updates": {
+        "src": "audio/exams/test-01/questions/Q099/formal-stem-r2.wav",
+        "start": 0,
+        "end": 4.925,
+        "duration": 4.925,
+        "groupId": "t01-g054-r2",
+        "questionId": "t01-q099-r2",
+        "at": 2661.7395
+      }
+    },
+    {
+      "index": 280,
+      "beforeSha256": "16ff3486d1513da1fe04fbc38ae840dd673199f676a784de6cafe58dff69ae8c",
+      "updates": {
+        "duration": 8.57567,
+        "groupId": "t01-g054-r2",
+        "questionId": "t01-q099-r2",
+        "at": 2666.6645
+      }
+    },
+    {
+      "index": 281,
+      "beforeSha256": "9cde449e06c14f9e8da95d26948a18c42a296e4161c11c5ec33c706b9f5b1881",
+      "updates": {
+        "src": "audio/exams/test-01/questions/Q100/formal-stem-r2.wav",
+        "start": 0,
+        "end": 6.8,
+        "duration": 6.8,
+        "groupId": "t01-g054-r2",
+        "questionId": "t01-q100-r2",
+        "at": 2675.24017
+      }
+    },
+    {
+      "index": 282,
+      "beforeSha256": "8f0d4a5a45a16ccfc6a49271f0722f5543015d2b73e6d6abc9cca8a73b3f1eb0",
+      "updates": {
+        "duration": 8.57583,
+        "groupId": "t01-g054-r2",
+        "questionId": "t01-q100-r2",
+        "at": 2682.04017
+      }
+    },
+    {
+      "index": 283,
+      "beforeSha256": "2516b3ab70b2d655f781cc0c5f71d4520293f9a5d8f6c90d88cbb780fb2246bd",
+      "updates": {
+        "groupId": "t01-g054-r2"
+      }
+    }
+  ]
+}

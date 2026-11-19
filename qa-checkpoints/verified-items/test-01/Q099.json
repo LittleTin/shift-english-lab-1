@@ -1,0 +1,175 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Draft’s independent blind-style editorial review keys D/B/C; Q099 clarified prompt only, options and answer B unchanged. Reviewed exact bilingual stem, answer, options, rationale and level.",
+    "audio": "Unprompted Whisper small.en recovered entire passage except hat vs hut; independent Vosk recovered exact closing idiom. Both key-bearing logic and contextual idiom corroborated on same exact bytes. Whisper small.en exact; Vosk matched every key-bearing term but rendered is as as. The prior van/ban ambiguity is removed.",
+    "association": "Exact same SHA-bound sample interval in formal and practice; separate exact numbered stem matched. Offline timing/structure only; final device/browser and current-vs-prior session tests are independent release gates.",
+    "retainedIntro": "Unprompted Whisper small.en and Vosk each matched exact formal source range 33.23704–36.62212: Questions 98 through 100. Listen to the talk."
+  },
+  "activeQuestion": {
+    "id": "t01-q099-r2",
+    "testId": "test-01",
+    "number": 99,
+    "part": 4,
+    "groupId": "t01-g054-r2",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "deadline"
+    ],
+    "prompt": "Which shipment is allowed to leave in the morning?",
+    "promptZh": "依短講的規定，哪一筆貨物可以在上午送出？",
+    "options": [
+      {
+        "id": "A",
+        "text": "An ordinary filter order approved before noon, with an open receiving desk.",
+        "zh": "一筆中午前核准、收貨櫃台也有開的一般濾芯訂單。",
+        "whyZh": "即使符合一般訂單的條件，安排的仍是下午班，不是上午班。"
+      },
+      {
+        "id": "B",
+        "text": "An approved safety-critical order whose receiving desk is closed, with staff at the gate.",
+        "zh": "一筆已核准且攸關安全的訂單；收貨櫃台關了，但大門有人值班。",
+        "whyZh": "已核准且攸關安全的訂單符合上午班例外。櫃台關閉時，司機可以交給大門值班人員。"
+      },
+      {
+        "id": "C",
+        "text": "A safety-critical order that has not been approved, with staff at the gate.",
+        "zh": "一筆尚未核准、但攸關安全的訂單；大門有人值班。",
+        "whyZh": "大門值班人員可以代收，卻不能取代事前核准。"
+      },
+      {
+        "id": "D",
+        "text": "An ordinary order with a closed receiving desk and enough space on the morning van.",
+        "zh": "一筆收貨櫃台已關閉的一般訂單；上午班車還有空位。",
+        "whyZh": "貨車有空位並不是上午班例外條件，這筆一般訂單不能搭上午班。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "已核准且攸關安全的訂單符合上午班例外。櫃台關閉時，司機可以交給大門值班人員。",
+    "evidence": "The morning exception requires an already-approved safety-critical shipment; the staffed gate substitutes for a closed desk, not for approval or eligibility.",
+    "vocabulary": [
+      {
+        "term": "safety-critical",
+        "zh": "攸關安全的",
+        "note": "指涉及安全、不能視為一般貨物的訂單。"
+      },
+      {
+        "term": "staffed gate",
+        "zh": "有值班人員的大門",
+        "note": "staffed 表示有人值班，可依規定簽收特定貨物。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t01-q099",
+    "testId": "test-01",
+    "number": 99,
+    "part": 4,
+    "groupId": "t01-g054",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "deadline"
+    ],
+    "prompt": "By when should requests arrive for the weekly combined order?",
+    "promptZh": "要納入每週統一訂單，申請最晚應何時送達？",
+    "options": [
+      {
+        "id": "A",
+        "text": "By Friday evening.",
+        "zh": "星期五晚上以前。",
+        "whyZh": "公告的週期以星期三收件與下單，沒有星期五期限。"
+      },
+      {
+        "id": "B",
+        "text": "After Wednesday afternoon.",
+        "zh": "星期三下午之後。",
+        "whyZh": "當天下午已下統一訂單，申請需在中午前收到。"
+      },
+      {
+        "id": "C",
+        "text": "By noon on Wednesday.",
+        "zh": "星期三中午以前。",
+        "whyZh": "採購團隊彙整 received by noon on Wednesday 的需求，再於當天下午下單；收件與下單時點不同。"
+      },
+      {
+        "id": "D",
+        "text": "At any time after the monthly meeting.",
+        "zh": "每月會議後任何時間。",
+        "whyZh": "沒有月會作為期限條件。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "採購團隊彙整 received by noon on Wednesday 的需求，再於當天下午下單；收件與下單時點不同。",
+    "evidence": "orders received by noon on Wednesday",
+    "vocabulary": [
+      {
+        "term": "combine orders",
+        "zh": "彙整訂單",
+        "note": "將多個部門需求合併成一次採購。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g054-r2",
+    "testId": "test-01",
+    "part": 4,
+    "title": "The courier trial",
+    "titleZh": "試行送貨安排",
+    "topic": "business",
+    "passage": "A quick update on our courier trial. An ordinary order can go in the afternoon van only if a supervisor approves it before noon and the van reaches the receiving desk while it is still open. Approved safety-critical orders can go in the morning van instead. The driver can leave those at the staffed gate if the desk is closed. If an ordinary order misses either requirement, hold it until tomorrow. The ordinary gasket order was approved at ten thirty, but its desk closes at three. The afternoon van gets there at three thirty. We can't pull a rabbit out of a hat.",
+    "passageZh": "簡短更新一下試行中的送貨安排。一般訂單只有在主管中午前核准，且貨車抵達收貨櫃台時櫃台仍然開放，才能搭下午的貨車。已核准且攸關安全的訂單則可改搭上午的貨車。如果櫃台關了，司機可把這類貨物交給有值班人員的大門。一般訂單若有任一條件沒達成，就留到明天。這筆一般墊片訂單在十點半獲得核准，但收貨櫃台三點關閉。下午的貨車三點半才到。這種情況，我們臨時可變不出什麼奇招。",
+    "audioScript": "A quick update on our courier trial. An ordinary order can go in the afternoon van only if a supervisor approves it before noon and the van reaches the receiving desk while it is still open. Approved safety-critical orders can go in the morning van instead. The driver can leave those at the staffed gate if the desk is closed. If an ordinary order misses either requirement, hold it until tomorrow. The ordinary gasket order was approved at ten thirty, but its desk closes at three. The afternoon van gets there at three thirty. We can't pull a rabbit out of a hat.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "A quick update on our courier trial. An ordinary order can go in the afternoon van only if a supervisor approves it before noon and the van reaches the receiving desk while it is still open. Approved safety-critical orders can go in the morning van instead. The driver can leave those at the staffed gate if the desk is closed. If an ordinary order misses either requirement, hold it until tomorrow. The ordinary gasket order was approved at ten thirty, but its desk closes at three. The afternoon van gets there at three thirty. We can't pull a rabbit out of a hat."
+      }
+    ],
+    "audio": "audio/exams/test-01/groups/t01-g054-r2/passage.wav",
+    "duration": 37.2125,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-NG",
+        "modelVoice": "en-NG-EzinneNeural",
+        "role": "female"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 37.2125
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/exams/test-01/groups/t01-g054-r2/passage.wav",
+      "start": 0,
+      "end": 37.2125,
+      "assetSha256": "55e8e0abae7ddc01fdc95128a9674b16578f59cdf0ced6947650e3e4d070fa68",
+      "speech": "A quick update on our courier trial. An ordinary order can go in the afternoon van only if a supervisor approves it before noon and the van reaches the receiving desk while it is still open. Approved safety-critical orders can go in the morning van instead. The driver can leave those at the staffed gate if the desk is closed. If an ordinary order misses either requirement, hold it until tomorrow. The ordinary gasket order was approved at ten thirty, but its desk closes at three. The afternoon van gets there at three thirty. We can't pull a rabbit out of a hat."
+    },
+    {
+      "mode": "question",
+      "path": "audio/exams/test-01/questions/Q099/formal-stem-r2.wav",
+      "start": 0,
+      "end": 4.925,
+      "assetSha256": "3e49a6ed7841109515b4afd0638d51f37a042e3fbd166ccdc0272b8302a11b77",
+      "speech": "Number 99. Which shipment is allowed to leave in the morning?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/exams/test-01/groups/t01-g054-r2/passage.wav",
+      "start": 0,
+      "end": 37.2125,
+      "assetSha256": "55e8e0abae7ddc01fdc95128a9674b16578f59cdf0ced6947650e3e4d070fa68",
+      "speech": "A quick update on our courier trial. An ordinary order can go in the afternoon van only if a supervisor approves it before noon and the van reaches the receiving desk while it is still open. Approved safety-critical orders can go in the morning van instead. The driver can leave those at the staffed gate if the desk is closed. If an ordinary order misses either requirement, hold it until tomorrow. The ordinary gasket order was approved at ten thirty, but its desk closes at three. The afternoon van gets there at three thirty. We can't pull a rabbit out of a hat."
+    }
+  ],
+  "imageSha256": null
+}

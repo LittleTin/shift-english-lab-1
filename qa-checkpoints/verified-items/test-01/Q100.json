@@ -1,0 +1,170 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Draft’s independent blind-style editorial review keys D/B/C; Q099 clarified prompt only, options and answer B unchanged. Reviewed exact bilingual stem, answer, options, rationale and level.",
+    "audio": "Unprompted Whisper small.en recovered entire passage except hat vs hut; independent Vosk recovered exact closing idiom. Both key-bearing logic and contextual idiom corroborated on same exact bytes. Q098, Q100 exact with Whisper base.en and Vosk.",
+    "association": "Exact same SHA-bound sample interval in formal and practice; separate exact numbered stem matched. Offline timing/structure only; final device/browser and current-vs-prior session tests are independent release gates.",
+    "retainedIntro": "Unprompted Whisper small.en and Vosk each matched exact formal source range 33.23704–36.62212: Questions 98 through 100. Listen to the talk."
+  },
+  "activeQuestion": {
+    "id": "t01-q100-r2",
+    "testId": "test-01",
+    "number": 100,
+    "part": 4,
+    "groupId": "t01-g054-r2",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "exception"
+    ],
+    "prompt": "What does the speaker most likely mean by “We can't pull a rabbit out of a hat”?",
+    "promptZh": "說話者說「We can't pull a rabbit out of a hat」最可能是什麼意思？",
+    "options": [
+      {
+        "id": "A",
+        "text": "They should ask the supervisor to approve a second order as a backup.",
+        "zh": "他們應請主管再核准一筆備用訂單。",
+        "whyZh": "現有訂單已獲核准；另提一筆訂單無法解決時間衝突。"
+      },
+      {
+        "id": "B",
+        "text": "The driver should check whether the gate can take every order after closing.",
+        "zh": "司機應確認櫃台關閉後，大門能否收下所有訂單。",
+        "whyZh": "講者剛說明大門替代方案只適用於安全例外，不是在提出讓所有訂單改走大門。"
+      },
+      {
+        "id": "C",
+        "text": "They cannot improvise a last-minute way around the delivery rules.",
+        "zh": "他們不能臨時想個變通辦法，繞過送貨規則。",
+        "whyZh": "魔術表演從帽子變出兔子是出乎意料的橋段。這裡用否定式呼應櫃台與貨車時程的衝突，帶點幽默地說沒有臨時奇招可繞過規則。"
+      },
+      {
+        "id": "D",
+        "text": "The courier trial should end before the next delivery.",
+        "zh": "應在下一次送貨前結束這項試行。",
+        "whyZh": "講者只說明這筆訂單不能臨時通融，沒有要求停止整項試行。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "魔術表演從帽子變出兔子是出乎意料的橋段。這裡用否定式呼應櫃台與貨車時程的衝突，帶點幽默地說沒有臨時奇招可繞過規則。",
+    "evidence": "A joking magic metaphor follows a real scheduling conflict and a strict ordinary-order fallback; the speaker rejects a magical workaround, not the entire trial.",
+    "vocabulary": [
+      {
+        "term": "pull a rabbit out of a hat",
+        "zh": "突然想出令人意外的解法",
+        "note": "借用魔術師從帽中變出兔子的畫面；此處否定式帶幽默地說沒有奇招。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t01-q100",
+    "testId": "test-01",
+    "number": 100,
+    "part": 4,
+    "groupId": "t01-g054",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "exception"
+    ],
+    "prompt": "How should an urgent safety-equipment request be handled?",
+    "promptZh": "緊急安全設備需求應如何處理？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Wait for the next weekly order.",
+        "zh": "等待下一次每週訂單。",
+        "whyZh": "rather than waiting 明確表示不要等待例行訂單。"
+      },
+      {
+        "id": "B",
+        "text": "Call the purchasing team immediately.",
+        "zh": "立即致電採購團隊。",
+        "whyZh": "緊急安全需求是例外，公告要求立刻打給採購，不必等每週合單，也沒有授權自行向供應商寄單。"
+      },
+      {
+        "id": "C",
+        "text": "Email the supplier directly.",
+        "zh": "直接寄信給供應商。",
+        "whyZh": "新制度不處理直接供應商郵件；緊急例外指定的是聯絡採購團隊。"
+      },
+      {
+        "id": "D",
+        "text": "Remove it from the purchasing records.",
+        "zh": "把它從採購紀錄中移除。",
+        "whyZh": "例外只改處理速度與聯絡方式，沒有要求刪除紀錄。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "緊急安全需求是例外，公告要求立刻打給採購，不必等每週合單，也沒有授權自行向供應商寄單。",
+    "evidence": "call the purchasing team immediately rather than waiting for the weekly order.",
+    "vocabulary": [
+      {
+        "term": "exception",
+        "zh": "例外",
+        "note": "不同於一般每週彙整流程的特殊情形。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g054-r2",
+    "testId": "test-01",
+    "part": 4,
+    "title": "The courier trial",
+    "titleZh": "試行送貨安排",
+    "topic": "business",
+    "passage": "A quick update on our courier trial. An ordinary order can go in the afternoon van only if a supervisor approves it before noon and the van reaches the receiving desk while it is still open. Approved safety-critical orders can go in the morning van instead. The driver can leave those at the staffed gate if the desk is closed. If an ordinary order misses either requirement, hold it until tomorrow. The ordinary gasket order was approved at ten thirty, but its desk closes at three. The afternoon van gets there at three thirty. We can't pull a rabbit out of a hat.",
+    "passageZh": "簡短更新一下試行中的送貨安排。一般訂單只有在主管中午前核准，且貨車抵達收貨櫃台時櫃台仍然開放，才能搭下午的貨車。已核准且攸關安全的訂單則可改搭上午的貨車。如果櫃台關了，司機可把這類貨物交給有值班人員的大門。一般訂單若有任一條件沒達成，就留到明天。這筆一般墊片訂單在十點半獲得核准，但收貨櫃台三點關閉。下午的貨車三點半才到。這種情況，我們臨時可變不出什麼奇招。",
+    "audioScript": "A quick update on our courier trial. An ordinary order can go in the afternoon van only if a supervisor approves it before noon and the van reaches the receiving desk while it is still open. Approved safety-critical orders can go in the morning van instead. The driver can leave those at the staffed gate if the desk is closed. If an ordinary order misses either requirement, hold it until tomorrow. The ordinary gasket order was approved at ten thirty, but its desk closes at three. The afternoon van gets there at three thirty. We can't pull a rabbit out of a hat.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "A quick update on our courier trial. An ordinary order can go in the afternoon van only if a supervisor approves it before noon and the van reaches the receiving desk while it is still open. Approved safety-critical orders can go in the morning van instead. The driver can leave those at the staffed gate if the desk is closed. If an ordinary order misses either requirement, hold it until tomorrow. The ordinary gasket order was approved at ten thirty, but its desk closes at three. The afternoon van gets there at three thirty. We can't pull a rabbit out of a hat."
+      }
+    ],
+    "audio": "audio/exams/test-01/groups/t01-g054-r2/passage.wav",
+    "duration": 37.2125,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-NG",
+        "modelVoice": "en-NG-EzinneNeural",
+        "role": "female"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 37.2125
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/exams/test-01/groups/t01-g054-r2/passage.wav",
+      "start": 0,
+      "end": 37.2125,
+      "assetSha256": "55e8e0abae7ddc01fdc95128a9674b16578f59cdf0ced6947650e3e4d070fa68",
+      "speech": "A quick update on our courier trial. An ordinary order can go in the afternoon van only if a supervisor approves it before noon and the van reaches the receiving desk while it is still open. Approved safety-critical orders can go in the morning van instead. The driver can leave those at the staffed gate if the desk is closed. If an ordinary order misses either requirement, hold it until tomorrow. The ordinary gasket order was approved at ten thirty, but its desk closes at three. The afternoon van gets there at three thirty. We can't pull a rabbit out of a hat."
+    },
+    {
+      "mode": "question",
+      "path": "audio/exams/test-01/questions/Q100/formal-stem-r2.wav",
+      "start": 0,
+      "end": 6.8,
+      "assetSha256": "1f5ccdddde6ad77545c616ddb7eef1ea2a1b827f6eede8fbe6161f502ffffffd",
+      "speech": "Number 100. What does the speaker most likely mean by “We can't pull a rabbit out of a hat”?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/exams/test-01/groups/t01-g054-r2/passage.wav",
+      "start": 0,
+      "end": 37.2125,
+      "assetSha256": "55e8e0abae7ddc01fdc95128a9674b16578f59cdf0ced6947650e3e4d070fa68",
+      "speech": "A quick update on our courier trial. An ordinary order can go in the afternoon van only if a supervisor approves it before noon and the van reaches the receiving desk while it is still open. Approved safety-critical orders can go in the morning van instead. The driver can leave those at the staffed gate if the desk is closed. If an ordinary order misses either requirement, hold it until tomorrow. The ordinary gasket order was approved at ten thirty, but its desk closes at three. The afternoon van gets there at three thirty. We can't pull a rabbit out of a hat."
+    }
+  ],
+  "imageSha256": null
+}
