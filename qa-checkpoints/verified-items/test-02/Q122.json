@@ -1,8 +1,60 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "Receive the parcel is the correct delivery act. Achieve is for goals; belong requires to and denotes ownership; occur is intransitive. Zh-TW and all explanations accurate.",
+  "checks": "Keep the two packages distinct, combine the chilled parcel’s authorised recipients with customer absence and the reception deadline, and avoid extending opt-in across categories. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t02-q122-r2",
+    "testId": "test-02",
+    "number": 122,
+    "part": 5,
+    "groupId": null,
+    "topic": "daily",
+    "tags": [
+      "daily",
+      "context"
+    ],
+    "vocabulary": [
+      {
+        "term": "opt in",
+        "zh": "主動選擇加入或同意",
+        "note": "opt in 表示主動勾選或同意某安排；對照 opt out，主動退出或不適用。"
+      }
+    ],
+    "difficulty": "intermediate",
+    "prompt": "Customers who opt in may have room-temperature groceries left in the lobby. Chilled parcels must go to the customer or a receptionist, who accepts them until 4 p.m. Mika has opted in. The courier arrives at 4:15 p.m. with a bag of dry groceries and a chilled parcel, but Mika is not home. The courier should ____.",
+    "promptZh": "事先同意的顧客可讓快遞員把常溫食品留在大廳。冷藏包裹必須交給顧客本人或接待人員，接待人員只收件到下午四點。Mika 已事先同意。快遞員下午四點十五分帶著一袋常溫食品和一件冷藏包裹抵達，但 Mika 不在家。快遞員應該____。",
+    "options": [
+      {
+        "id": "A",
+        "text": "leave both packages in the lobby",
+        "zh": "把兩件物品都留在大廳",
+        "whyZh": "同意只適用常溫食品；冷藏包裹不能留在大廳。"
+      },
+      {
+        "id": "B",
+        "text": "leave the dry groceries in the lobby and give the chilled parcel to reception",
+        "zh": "把常溫食品留在大廳，冷藏包裹交給接待人員",
+        "whyZh": "常溫食品可以留置，但快遞到達時已過接待人員收件的截止時間。"
+      },
+      {
+        "id": "C",
+        "text": "leave the dry groceries in the lobby without handing over the chilled parcel on this visit",
+        "zh": "把常溫食品留在大廳，這一趟不交付冷藏包裹",
+        "whyZh": "Mika 同意先留常溫食品，但現在她不在家，接待人員也已停止收件，因此冷藏包裹此時無法交付。"
+      },
+      {
+        "id": "D",
+        "text": "give both packages to reception because the customer is out",
+        "zh": "因顧客不在家，把兩件物品都交給接待人員",
+        "whyZh": "接待人員四點後不再收冷藏包裹；常溫食品則可依顧客事先同意留在大廳。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "Mika 同意先留常溫食品，但現在她不在家，接待人員也已停止收件，因此冷藏包裹此時無法交付。",
+    "evidence": "Customers who opt in may have room-temperature groceries left in the lobby. Chilled parcels must go to the customer or a receptionist, who accepts them until 4 p.m. Mika has opted in. The courier arrives at 4:15 p.m. with a bag of dry groceries and a chilled parcel, but Mika is not home. The courier should ____.",
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t02-q122",
     "testId": "test-02",
     "number": 122,
@@ -53,5 +105,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-02/Q122/verification.json"
 }

@@ -1,8 +1,60 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "herself is an emphatic reflexive referring to she, contrasting with standalone hers, nominative she and nonreflexive her. Full revised sentence confirms she checked schedule before distribution; adjust two zh gloss/rationale fields. Archived original B key distinct from current r2.",
+  "checks": "Distinguish advance awareness from advance written permission by mapping the Wednesday work to the Tuesday and Thursday events. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t02-q114-r3",
+    "testId": "test-02",
+    "number": 114,
+    "part": 5,
+    "groupId": null,
+    "topic": "business",
+    "tags": [
+      "business",
+      "context"
+    ],
+    "vocabulary": [
+      {
+        "term": "substitute A for B",
+        "zh": "用 A 代替 B",
+        "note": "A 是用來取代 B 的事物。被動式 A is substituted for B 仍保留同樣的方向。"
+      }
+    ],
+    "difficulty": "intermediate",
+    "prompt": "The contract requires written approval before any extra work starts. The client was told about the work on Tuesday but signed the approval on Thursday. For the hours the team worked on Wednesday, the notification cannot ____ the required approval.",
+    "promptZh": "合約規定，開始任何額外工作前須先取得書面核准。客戶週二獲知這件事，但週四才簽核。對於團隊週三已投入的工時，通知不能 ____ 規定須取得的核准。",
+    "options": [
+      {
+        "id": "A",
+        "text": "be substituted for",
+        "zh": "代替",
+        "whyZh": "週二雖已通知，但直到週四才有書面核准。週三開工前沒有核准，所以先前通知不能當作核准。"
+      },
+      {
+        "id": "B",
+        "text": "be distinguished from",
+        "zh": "與……區分",
+        "whyZh": "週二通知與週四簽核是兩件不同的事，且日期不同，並非無法區分。"
+      },
+      {
+        "id": "C",
+        "text": "be dated earlier than",
+        "zh": "註記的日期早於",
+        "whyZh": "通知是週二發出的，簽核是在週四，因此通知的日期確實較早。主句的 cannot 不能用於這項時序。"
+      },
+      {
+        "id": "D",
+        "text": "be filed alongside",
+        "zh": "與……一起歸檔",
+        "whyZh": "合約限制的是何時開始工作，並未禁止兩份文件一併歸檔。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "週二雖已通知，但直到週四才有書面核准。週三開工前沒有核准，所以先前通知不能當作核准。",
+    "evidence": "The contract requires written approval before any extra work starts. The client was told about the work on Tuesday but signed the approval on Thursday. For the hours the team worked on Wednesday, the notification cannot ____ the required approval.",
+    "revision": 3
+  },
+  "originalQuestion": {
     "id": "t02-q114-r2",
     "testId": "test-02",
     "number": 114,
@@ -54,56 +106,5 @@
     ],
     "revision": 2
   },
-  "originalQuestion": {
-    "id": "t02-q114",
-    "testId": "test-02",
-    "number": 114,
-    "part": 5,
-    "groupId": null,
-    "topic": "business",
-    "difficulty": "intermediate",
-    "tags": [
-      "business",
-      "grammar"
-    ],
-    "prompt": "The project leader checked the revised schedule ____ before distributing it.",
-    "promptZh": "專案負責人在發出修訂時程前，____先確認過。",
-    "options": [
-      {
-        "text": "hers",
-        "zh": "她的東西",
-        "whyZh": "hers 是所有格代名詞，不能修飾檢查動作表示親自。",
-        "id": "A"
-      },
-      {
-        "text": "herself",
-        "zh": "親自",
-        "whyZh": "herself 在此強調負責人本人親自檢查。",
-        "id": "B"
-      },
-      {
-        "text": "she",
-        "zh": "她（主格）",
-        "whyZh": "she 會形成沒有連接詞的另一主詞，結構不合。",
-        "id": "C"
-      },
-      {
-        "text": "her",
-        "zh": "她；她的",
-        "whyZh": "此處已有 schedule 作受詞，her 不能表達親自。",
-        "id": "D"
-      }
-    ],
-    "answer": "B",
-    "explanationZh": "herself 在此強調負責人本人親自檢查。",
-    "evidence": "checked the revised schedule herself",
-    "vocabulary": [
-      {
-        "term": "distribute",
-        "zh": "發送；分發",
-        "note": "將文件交給多位收件者。"
-      }
-    ],
-    "revision": 1
-  }
+  "retiredSourceReference": "question-reserve/test-02/Q114/verification.json"
 }

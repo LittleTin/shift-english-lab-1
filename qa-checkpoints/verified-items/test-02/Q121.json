@@ -1,8 +1,60 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "After \"is\" and before \"than\", lower is the comparative of magnitude. Lowest/fewest are superlatives, fewer counts discrete things rather than quantifying consumption. Zh-TW keeps idle power and the previous model.",
+  "checks": "Keep a second variable constant while comparing modes; distinguish isolating the mode from isolating display power. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t02-q121-r2",
+    "testId": "test-02",
+    "number": 121,
+    "part": 5,
+    "groupId": null,
+    "topic": "technology",
+    "tags": [
+      "technology",
+      "context"
+    ],
+    "vocabulary": [
+      {
+        "term": "due to",
+        "zh": "由……造成的",
+        "note": "表示原因；若要判斷當中的單一因素，須盡量讓其他條件一致。"
+      }
+    ],
+    "difficulty": "intermediate",
+    "prompt": "With the display on, the controller’s power use is higher in its faster mode. Switching the display off lowers its power use in either mode. In one trial the lab recorded the faster mode with the display on and the slower mode with the display off. To show a difference due to mode alone, the lab should compare readings taken ____.",
+    "promptZh": "顯示器開啟時，控制器在較快模式下耗電較高。關閉顯示器後，兩種模式的耗電都會各自降低。在一次試驗中，實驗室測量較快模式時開著顯示器，測量較慢模式時則關著。為了單獨看出模式造成的差異，實驗室應比較____測得的數值。",
+    "options": [
+      {
+        "id": "A",
+        "text": "at the same display setting",
+        "zh": "在相同顯示器設定下",
+        "whyZh": "顯示器也影響耗電。如果比較兩種速度模式時固定顯示設定，就不會將開關顯示器的影響混入比較。"
+      },
+      {
+        "id": "B",
+        "text": "with the display off only in faster mode",
+        "zh": "只在較快模式關閉顯示器時",
+        "whyZh": "若只有較快模式關閉顯示器，同時改變了速度和顯示設定，無法分出是哪一項造成差異。"
+      },
+      {
+        "id": "C",
+        "text": "before and after switching off the display in one mode",
+        "zh": "在同一模式切換顯示器前後",
+        "whyZh": "同一模式下比較開關前後，只能看出顯示器的影響，不能比較兩種速度模式。"
+      },
+      {
+        "id": "D",
+        "text": "with the display on only in slower mode",
+        "zh": "只在較慢模式開啟顯示器時",
+        "whyZh": "若只有較慢模式開啟顯示器，兩項因素都改變了，無法單獨判斷速度模式的影響。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "顯示器也影響耗電。如果比較兩種速度模式時固定顯示設定，就不會將開關顯示器的影響混入比較。",
+    "evidence": "With the display on, the controller’s power use is higher in its faster mode. Switching the display off lowers its power use in either mode. In one trial the lab recorded the faster mode with the display on and the slower mode with the display off. To show a difference due to mode alone, the lab should compare readings taken ____.",
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t02-q121",
     "testId": "test-02",
     "number": 121,
@@ -53,5 +105,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-02/Q121/verification.json"
 }
