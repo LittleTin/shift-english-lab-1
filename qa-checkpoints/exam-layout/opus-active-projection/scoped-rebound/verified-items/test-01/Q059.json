@@ -1,0 +1,249 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "activeQuestion": {
+    "id": "t01-q059-r2",
+    "testId": "test-01",
+    "number": 59,
+    "part": 3,
+    "groupId": "t01-g041",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "purpose"
+    ],
+    "prompt": "What still needs attention before the model change?",
+    "promptZh": "換型前還有什麼需要處理？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The process engineer still needs to install the new fixture.",
+        "zh": "製程工程師還需要安裝新治具。",
+        "whyZh": "新治具已安裝。"
+      },
+      {
+        "id": "B",
+        "text": "Operators need practice with the new fixture and smaller housing.",
+        "zh": "操作員需要練習用新治具裝載較小的外殼。",
+        "whyZh": "治具已裝好，但操作員還沒練習裝入新款較小外殼；問題是人員操作熟練度，不是硬體安裝。"
+      },
+      {
+        "id": "C",
+        "text": "The team needs to find another line for the compact model.",
+        "zh": "團隊必須另找產線來生產小型機種。",
+        "whyZh": "對話明確指定第三線換型。"
+      },
+      {
+        "id": "D",
+        "text": "Operators need to redesign the housing before it can be loaded.",
+        "zh": "操作員需要重新設計外殼才裝得進去。",
+        "whyZh": "外殼較小，需要練習，但沒有重新設計的要求。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "治具已裝好，但操作員還沒練習裝入新款較小外殼；問題是人員操作熟練度，不是硬體安裝。",
+    "evidence": "Yes, but the operators haven't practiced loading the smaller housing yet.",
+    "vocabulary": [
+      {
+        "term": "fixture",
+        "zh": "治具",
+        "note": "固定和定位工件的工具。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t01-q059",
+    "testId": "test-01",
+    "number": 59,
+    "part": 3,
+    "groupId": "t01-g041",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "purpose"
+    ],
+    "prompt": "What will the operators practice?",
+    "promptZh": "操作員要練習什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Driving a delivery truck.",
+        "zh": "駕駛貨車。",
+        "whyZh": "內容是產線操作訓練，不是運輸訓練。"
+      },
+      {
+        "id": "B",
+        "text": "Loading a smaller housing into a fixture.",
+        "zh": "把較小外殼放入治具。",
+        "whyZh": "女子說操作員還沒練習 loading the smaller housing，因此換線前訓練要補足這個操作。"
+      },
+      {
+        "id": "C",
+        "text": "Writing a software installation guide.",
+        "zh": "編寫軟體安裝手冊。",
+        "whyZh": "對話沒有軟體安裝內容。"
+      },
+      {
+        "id": "D",
+        "text": "Counting finished products in storage.",
+        "zh": "盤點倉庫成品。",
+        "whyZh": "成品庫存只用於說明訓練件不能混入，並非訓練主題。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "女子說操作員還沒練習 loading the smaller housing，因此換線前訓練要補足這個操作。",
+    "evidence": "the operators haven't practiced loading the smaller housing yet.",
+    "vocabulary": [
+      {
+        "term": "fixture",
+        "zh": "治具",
+        "note": "在加工或組裝時定位與固定工件的器具。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g041",
+    "testId": "test-01",
+    "part": 3,
+    "title": "Training before a model change",
+    "titleZh": "換線前的操作訓練",
+    "topic": "manufacturing",
+    "passage": "Man: We're switching Line Three to the compact model tomorrow. Has the new fixture been installed?\nWoman: Yes, but the operators haven't practiced loading the smaller housing yet.\nMan: Then we should run a short training session before the first shift begins.\nWoman: The process engineer is available at seven fifteen. We can use the first five housings for practice.\nMan: Please mark those as training pieces so they don't enter finished-goods inventory.\nWoman: I'll do that, and I'll place the updated loading instructions beside the fixture.",
+    "passageZh": "男：我們明天要把三號線換成小型機種。新治具裝好了嗎？\n女：好了，但操作員還沒練習過放入較小的外殼。\n男：那我們應該在第一班開始前辦一場簡短訓練。\n女：製程工程師七點十五分有空。我們可以用前五個外殼來練習。\n男：請把那些標示為訓練用品，以免它們進入成品庫存。\n女：我會處理，也會把更新的上料說明放在治具旁。",
+    "audioScript": "We're switching Line Three to the compact model tomorrow. Has the new fixture been installed?\nYes, but the operators haven't practiced loading the smaller housing yet.\nThen we should run a short training session before the first shift begins.\nThe process engineer is available at seven fifteen. We can use the first five housings for practice.\nPlease mark those as training pieces so they don't enter finished-goods inventory.\nI'll do that, and I'll place the updated loading instructions beside the fixture.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "We're switching Line Three to the compact model tomorrow. Has the new fixture been installed?"
+      },
+      {
+        "voice": "female",
+        "text": "Yes, but the operators haven't practiced loading the smaller housing yet."
+      },
+      {
+        "voice": "male",
+        "text": "Then we should run a short training session before the first shift begins."
+      },
+      {
+        "voice": "female",
+        "text": "The process engineer is available at seven fifteen. We can use the first five housings for practice."
+      },
+      {
+        "voice": "male",
+        "text": "Please mark those as training pieces so they don't enter finished-goods inventory."
+      },
+      {
+        "voice": "female",
+        "text": "I'll do that, and I'll place the updated loading instructions beside the fixture."
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/a8/a8c5faf626ba3bb5015140ff8887c4d59bfc26b98b1d9698fb84405eb9d2395a.ogg",
+    "duration": 35.904,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-TZ",
+        "role": "male",
+        "modelVoice": "en-TZ-ElimuNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-TZ",
+        "role": "female",
+        "modelVoice": "en-TZ-ImaniNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 36.404
+  },
+  "imageSha256": null,
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/42/429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196.ogg",
+      "start": 36.15308,
+      "end": 40.16633,
+      "assetSha256": "266628869efa612fba240b39a0a3a8cf58d728f8c36588a536fc0fe708634447",
+      "speech": "Questions 59 through 61, listen to the conversation.",
+      "sourceAudioProvenance": {
+        "path": "audio/formal/test-01-cues-03.mp3",
+        "sha256": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196",
+        "decodedSamples48k": 3308638,
+        "sourceCodec": "mp3",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    },
+    {
+      "mode": "passage",
+      "path": "audio/opus-hq56-96-v2/a8/a8c5faf626ba3bb5015140ff8887c4d59bfc26b98b1d9698fb84405eb9d2395a.ogg",
+      "start": 0.5,
+      "end": 36.404,
+      "assetSha256": "c9749bd291f55c002368d6eb5d53a489880ea0774b50753fe79715854d684cb7",
+      "speech": "We are switching Line 3 to the compact model tomorrow.\n Has the new fixture been installed?\n Yes, but the operators haven't practiced loading the smaller housing yet.\n Then we should run a short training session before the fast shift begins.\n The process engineer is available at 7.15.\n We can use the fast 5 housings for practice.\n Please mark those as training pieces so they don't enter finished goods in Ventory.\n I'll do that and I'll place the updated loading instructions beside the fixture.",
+      "sourceAudioProvenance": {
+        "path": "audio/azure-v1/test-01-21.mp3",
+        "sha256": "a8c5faf626ba3bb5015140ff8887c4d59bfc26b98b1d9698fb84405eb9d2395a",
+        "decodedSamples48k": 1771392,
+        "sourceCodec": "mp3",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    },
+    {
+      "mode": "question",
+      "path": "audio/opus-hq56-96-v2/1e/1ea869db59ba2809d3578b8348e1839df23bb4523a2bf8a5d9f4642136ba6640.ogg",
+      "start": 0,
+      "end": 5.35,
+      "assetSha256": "0e49e65c26a68cfc732289f16e65bcbfd9524ea16b1696b7d4bf2cdcbb487f79",
+      "speech": "Number 59. What still needs attention before the model change?",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-01/groups/t01-g041/q059-r2-1ea869db59ba.wav",
+        "sha256": "1ea869db59ba2809d3578b8348e1839df23bb4523a2bf8a5d9f4642136ba6640",
+        "decodedSamples48k": 256800,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    },
+    {
+      "mode": "practice",
+      "path": "audio/opus-hq56-96-v2/a8/a8c5faf626ba3bb5015140ff8887c4d59bfc26b98b1d9698fb84405eb9d2395a.ogg",
+      "start": 0.5,
+      "end": 36.404,
+      "assetSha256": "c9749bd291f55c002368d6eb5d53a489880ea0774b50753fe79715854d684cb7",
+      "speech": "We are switching Line 3 to the compact model tomorrow.\n Has the new fixture been installed?\n Yes, but the operators haven't practiced loading the smaller housing yet.\n Then we should run a short training session before the fast shift begins.\n The process engineer is available at 7.15.\n We can use the fast 5 housings for practice.\n Please mark those as training pieces so they don't enter finished goods in Ventory.\n I'll do that and I'll place the updated loading instructions beside the fixture.",
+      "sourceAudioProvenance": {
+        "path": "audio/azure-v1/test-01-21.mp3",
+        "sha256": "a8c5faf626ba3bb5015140ff8887c4d59bfc26b98b1d9698fb84405eb9d2395a",
+        "decodedSamples48k": 1771392,
+        "sourceCodec": "mp3",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    }
+  ],
+  "checks": {
+    "content": "New bilingual prompt/options/evidence preserve original release history. The original key is reserved, not rescored. New direct decision follows two contextual facts or contrast.",
+    "audio": "Both unprompted full Whisper/Vosk exact numbered stem.",
+    "retained": "Original cue and talk confirmed at exact source/ranges by offline QA; original practice unchanged and bound through original verified record.",
+    "association": "Exact four roles and original group, preserved protected graphic, 2700 seconds, 7.25 local and other touched waits >=7.5. Browser/publication not claimed.",
+    "offlineSpeechEvidenceSha256": {
+      "test01-q059-stem-medium2.wav.txt": "d1abfac5fd9dc55a189abae536426db438fff8d165e8dc70966f09fd8f000fba",
+      "retained-guards.txt": "06b3fecc7101388fc0c846f331aee49952bcb5f5642033df563be072689a5144",
+      "evidence.md": "cdd1d2bd675fcb18389a4e957129a1fd7789c4ece2e9ebab9ed2468cc767e45f",
+      "whisper-retained.log": "3c0ea4a5d4f86e055ccb5408e9f7a2a1659fe7024d85cd516d53dc01a7ef0b19",
+      "vosk-retained.log": "f5069f0874f84ae55a511db2dee7b5d0744030491879c859cabc122b851a1324",
+      "vosk-test01-q059-stem-medium2.log": "ee72d9e88e2064b80deecfd7875b0de7895cb4cba3566be8e99080d71bd9a17e"
+    },
+    "codecProjection": "Both modes use the exact deterministic 48kHz Ogg Opus delivery bytes/ranges; raw hashes remain provenance. Source and decoded Opus samples match in duration; Ogg gapless pre-skip/final granule and unmodified timetable verified. Original semantic decision was made on the checked source clips."
+  }
+}

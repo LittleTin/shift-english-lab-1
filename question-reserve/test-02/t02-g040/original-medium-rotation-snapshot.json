@@ -1,0 +1,1559 @@
+{
+  "Q056.json": {
+    "status": "historical-original-not-current-or-promoted",
+    "question": {
+      "id": "t02-q056",
+      "testId": "test-02",
+      "number": 56,
+      "part": 3,
+      "groupId": "t02-g040",
+      "topic": "daily",
+      "difficulty": "intermediate",
+      "tags": [
+        "courtyard"
+      ],
+      "prompt": "Why does the woman want another room?",
+      "promptZh": "女方為何想換房間？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Her room has no bed.",
+          "zh": "房間沒有床。",
+          "whyZh": "未提缺少床。"
+        },
+        {
+          "id": "B",
+          "text": "She wants a view of the street.",
+          "zh": "她想要街景。",
+          "whyZh": "原房已面向街道，她正想避開噪音。"
+        },
+        {
+          "id": "C",
+          "text": "Traffic noise disturbed her sleep.",
+          "zh": "交通噪音干擾睡眠。",
+          "whyZh": "她明確說街道噪音讓她睡不著。"
+        },
+        {
+          "id": "D",
+          "text": "Her conference was canceled.",
+          "zh": "會議被取消。",
+          "whyZh": "她仍計畫參加會議到五點。"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "她明確說街道噪音讓她睡不著。",
+      "evidence": "the traffic noise kept me awake",
+      "vocabulary": [
+        {
+          "term": "courtyard",
+          "zh": "中庭",
+          "note": "建築物內側或周圍圍起來的露天空間。"
+        },
+        {
+          "term": "housekeeping",
+          "zh": "房務",
+          "note": "飯店中負責客房清潔與整理的服務。"
+        }
+      ],
+      "revision": 1
+    },
+    "authority": {
+      "verified-items": {
+        "record": {
+          "status": "verified-item-not-published",
+          "scope": "listening",
+          "checks": "交通噪音讓她無法入睡；她本來就面對街道，未提沒床，會議仍照常。 正式題號、口述題幹與兩模式的對話範圍均核對；英中題意和各選項解析已校對。",
+          "activeQuestion": {
+            "id": "t02-q056",
+            "testId": "test-02",
+            "number": 56,
+            "part": 3,
+            "groupId": "t02-g040",
+            "topic": "daily",
+            "difficulty": "intermediate",
+            "tags": [
+              "courtyard"
+            ],
+            "prompt": "Why does the woman want another room?",
+            "promptZh": "女方為何想換房間？",
+            "options": [
+              {
+                "id": "A",
+                "text": "Her room has no bed.",
+                "zh": "房間沒有床。",
+                "whyZh": "未提缺少床。"
+              },
+              {
+                "id": "B",
+                "text": "She wants a view of the street.",
+                "zh": "她想要街景。",
+                "whyZh": "原房已面向街道，她正想避開噪音。"
+              },
+              {
+                "id": "C",
+                "text": "Traffic noise disturbed her sleep.",
+                "zh": "交通噪音干擾睡眠。",
+                "whyZh": "她明確說街道噪音讓她睡不著。"
+              },
+              {
+                "id": "D",
+                "text": "Her conference was canceled.",
+                "zh": "會議被取消。",
+                "whyZh": "她仍計畫參加會議到五點。"
+              }
+            ],
+            "answer": "C",
+            "explanationZh": "她明確說街道噪音讓她睡不著。",
+            "evidence": "the traffic noise kept me awake",
+            "vocabulary": [
+              {
+                "term": "courtyard",
+                "zh": "中庭",
+                "note": "建築物內側或周圍圍起來的露天空間。"
+              },
+              {
+                "term": "housekeeping",
+                "zh": "房務",
+                "note": "飯店中負責客房清潔與整理的服務。"
+              }
+            ],
+            "revision": 1
+          },
+          "group": {
+            "id": "t02-g040",
+            "testId": "test-02",
+            "part": 3,
+            "title": "A hotel room change",
+            "titleZh": "更換飯店房間",
+            "topic": "daily",
+            "passage": "Woman: My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?\nMan: We have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon.\nWoman: That works. I will be at a conference until five. Can I leave my luggage with you now?\nMan: Of course. We can move it to the new room once the room is ready. Please collect your new key when you return.",
+            "passageZh": "女：我的房間面向街道，交通噪音讓我睡不著。有比較安靜的房間嗎？\n男：我們有一間面向中庭的房間，但房務要到今天下午兩點才會整理好。\n女：可以。我會參加會議到五點。現在能把行李寄放在你們這裡嗎？\n男：當然。新房間準備好後，我們可以把行李搬過去。回來時請領取新房卡。",
+            "audioScript": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?\nWe have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon.\nThat works. I will be at a conference until five. Can I leave my luggage with you now?\nOf course. We can move it to the new room once the room is ready. Please collect your new key when you return.",
+            "turns": [
+              {
+                "voice": "female",
+                "text": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?"
+              },
+              {
+                "voice": "male",
+                "text": "We have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon."
+              },
+              {
+                "voice": "female",
+                "text": "That works. I will be at a conference until five. Can I leave my luggage with you now?"
+              },
+              {
+                "voice": "male",
+                "text": "Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+              }
+            ],
+            "audio": "audio/azure-v1/test-02-18.mp3",
+            "duration": 29.064,
+            "audioSpeakers": [
+              {
+                "speaker": "female",
+                "locale": "en-CA",
+                "role": "female",
+                "modelVoice": "en-CA-ClaraNeural"
+              },
+              {
+                "speaker": "male",
+                "locale": "en-CA",
+                "role": "male",
+                "modelVoice": "en-CA-LiamNeural"
+              }
+            ],
+            "audioStart": 0.5,
+            "audioEnd": 29.564
+          },
+          "audio": [
+            {
+              "path": "audio/formal/test-02-cues-03.mp3",
+              "mode": "cue",
+              "start": 18.54113,
+              "end": 22.44529,
+              "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+              "speech": "Questions 56-58. Listen to the conversation."
+            },
+            {
+              "path": "audio/azure-v1/test-02-18.mp3",
+              "mode": "passage",
+              "start": 0.5,
+              "end": 29.564,
+              "assetSha256": "97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806",
+              "speech": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available? We have a room facing the courtyard, but housekeeping will not finish preparing it until 2 this afternoon. That works. I will be at a conference until 5. Can I leave my luggage with you now? Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+            },
+            {
+              "path": "audio/formal/test-02-cues-03.mp3",
+              "mode": "question",
+              "start": 22.69529,
+              "end": 25.7735,
+              "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+              "speech": "Number 56. Why does the woman want another room?"
+            },
+            {
+              "path": "audio/azure-v1/test-02-18.mp3",
+              "mode": "practice",
+              "start": 0.5,
+              "end": 29.564,
+              "assetSha256": "97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806",
+              "speech": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available? We have a room facing the courtyard, but housekeeping will not finish preparing it until 2 this afternoon. That works. I will be at a conference until 5. Can I leave my luggage with you now? Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+            }
+          ]
+        },
+        "sha256": "995280ea0e97c757d96d809fc30a0cdfafd592952de7ca9dac4209b60b41e475"
+      },
+      "difficulty": {
+        "record": {
+          "status": "difficulty-reviewed-not-published",
+          "testId": "test-02",
+          "number": 56,
+          "questionId": "t02-q056",
+          "revision": 1,
+          "sourceQuestionSha256": "c2f5566deb4172dc63405f4a60047ffa9e90ed9ca0eefc9ac60e0aba6bd3a8e2",
+          "sourceGroupSha256": "86da444c90f76ae6576920b423b8f1af12ec1c7ca91cf3bff58c2fa3c1110996",
+          "fromDifficulty": "intermediate",
+          "toDifficulty": "foundation",
+          "reason": "Clearly given in the opening: street traffic kept her awake.",
+          "provenance": "Independent §1.1 audit of the verified active item and cited cue, passage, or figure where required; canonical scope verified at d934abf."
+        },
+        "sha256": "ff73edbbb781737fdff4a10b2a746f1ba322263df9912a96e54af5f24e52d708"
+      }
+    }
+  },
+  "Q057.json": {
+    "status": "historical-original-not-current-or-promoted",
+    "question": {
+      "id": "t02-q057",
+      "testId": "test-02",
+      "number": 57,
+      "part": 3,
+      "groupId": "t02-g040",
+      "topic": "daily",
+      "difficulty": "intermediate",
+      "tags": [
+        "courtyard"
+      ],
+      "prompt": "When will the new room be ready?",
+      "promptZh": "新房間何時準備好？",
+      "options": [
+        {
+          "id": "A",
+          "text": "At five in the morning.",
+          "zh": "清晨五點。",
+          "whyZh": "五點是她會議結束的下午時間，並非清晨。"
+        },
+        {
+          "id": "B",
+          "text": "At two in the afternoon.",
+          "zh": "下午兩點。",
+          "whyZh": "房務預計下午兩點整理完成。"
+        },
+        {
+          "id": "C",
+          "text": "At noon tomorrow.",
+          "zh": "明天中午。",
+          "whyZh": "對話說今天下午兩點。"
+        },
+        {
+          "id": "D",
+          "text": "Immediately.",
+          "zh": "立刻。",
+          "whyZh": "目前尚未整理好，需等到兩點。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "房務預計下午兩點整理完成。",
+      "evidence": "until two this afternoon",
+      "vocabulary": [
+        {
+          "term": "courtyard",
+          "zh": "中庭",
+          "note": "建築物內側或周圍圍起來的露天空間。"
+        },
+        {
+          "term": "housekeeping",
+          "zh": "房務",
+          "note": "飯店中負責客房清潔與整理的服務。"
+        }
+      ],
+      "revision": 1
+    },
+    "authority": {
+      "verified-items": {
+        "record": {
+          "status": "verified-item-not-published",
+          "scope": "listening",
+          "checks": "房務今天下午兩點才完成，不是清晨五點、明天中午或立刻。 正式題號、口述題幹與兩模式的對話範圍均核對；英中題意和各選項解析已校對。",
+          "activeQuestion": {
+            "id": "t02-q057",
+            "testId": "test-02",
+            "number": 57,
+            "part": 3,
+            "groupId": "t02-g040",
+            "topic": "daily",
+            "difficulty": "intermediate",
+            "tags": [
+              "courtyard"
+            ],
+            "prompt": "When will the new room be ready?",
+            "promptZh": "新房間何時準備好？",
+            "options": [
+              {
+                "id": "A",
+                "text": "At five in the morning.",
+                "zh": "清晨五點。",
+                "whyZh": "五點是她會議結束的下午時間，並非清晨。"
+              },
+              {
+                "id": "B",
+                "text": "At two in the afternoon.",
+                "zh": "下午兩點。",
+                "whyZh": "房務預計下午兩點整理完成。"
+              },
+              {
+                "id": "C",
+                "text": "At noon tomorrow.",
+                "zh": "明天中午。",
+                "whyZh": "對話說今天下午兩點。"
+              },
+              {
+                "id": "D",
+                "text": "Immediately.",
+                "zh": "立刻。",
+                "whyZh": "目前尚未整理好，需等到兩點。"
+              }
+            ],
+            "answer": "B",
+            "explanationZh": "房務預計下午兩點整理完成。",
+            "evidence": "until two this afternoon",
+            "vocabulary": [
+              {
+                "term": "courtyard",
+                "zh": "中庭",
+                "note": "建築物內側或周圍圍起來的露天空間。"
+              },
+              {
+                "term": "housekeeping",
+                "zh": "房務",
+                "note": "飯店中負責客房清潔與整理的服務。"
+              }
+            ],
+            "revision": 1
+          },
+          "group": {
+            "id": "t02-g040",
+            "testId": "test-02",
+            "part": 3,
+            "title": "A hotel room change",
+            "titleZh": "更換飯店房間",
+            "topic": "daily",
+            "passage": "Woman: My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?\nMan: We have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon.\nWoman: That works. I will be at a conference until five. Can I leave my luggage with you now?\nMan: Of course. We can move it to the new room once the room is ready. Please collect your new key when you return.",
+            "passageZh": "女：我的房間面向街道，交通噪音讓我睡不著。有比較安靜的房間嗎？\n男：我們有一間面向中庭的房間，但房務要到今天下午兩點才會整理好。\n女：可以。我會參加會議到五點。現在能把行李寄放在你們這裡嗎？\n男：當然。新房間準備好後，我們可以把行李搬過去。回來時請領取新房卡。",
+            "audioScript": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?\nWe have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon.\nThat works. I will be at a conference until five. Can I leave my luggage with you now?\nOf course. We can move it to the new room once the room is ready. Please collect your new key when you return.",
+            "turns": [
+              {
+                "voice": "female",
+                "text": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?"
+              },
+              {
+                "voice": "male",
+                "text": "We have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon."
+              },
+              {
+                "voice": "female",
+                "text": "That works. I will be at a conference until five. Can I leave my luggage with you now?"
+              },
+              {
+                "voice": "male",
+                "text": "Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+              }
+            ],
+            "audio": "audio/azure-v1/test-02-18.mp3",
+            "duration": 29.064,
+            "audioSpeakers": [
+              {
+                "speaker": "female",
+                "locale": "en-CA",
+                "role": "female",
+                "modelVoice": "en-CA-ClaraNeural"
+              },
+              {
+                "speaker": "male",
+                "locale": "en-CA",
+                "role": "male",
+                "modelVoice": "en-CA-LiamNeural"
+              }
+            ],
+            "audioStart": 0.5,
+            "audioEnd": 29.564
+          },
+          "audio": [
+            {
+              "path": "audio/formal/test-02-cues-03.mp3",
+              "mode": "cue",
+              "start": 18.54113,
+              "end": 22.44529,
+              "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+              "speech": "Questions 56-58. Listen to the conversation."
+            },
+            {
+              "path": "audio/azure-v1/test-02-18.mp3",
+              "mode": "passage",
+              "start": 0.5,
+              "end": 29.564,
+              "assetSha256": "97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806",
+              "speech": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available? We have a room facing the courtyard, but housekeeping will not finish preparing it until 2 this afternoon. That works. I will be at a conference until 5. Can I leave my luggage with you now? Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+            },
+            {
+              "path": "audio/formal/test-02-cues-03.mp3",
+              "mode": "question",
+              "start": 26.0235,
+              "end": 28.86075,
+              "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+              "speech": "Number 57. When will the new room be ready?"
+            },
+            {
+              "path": "audio/azure-v1/test-02-18.mp3",
+              "mode": "practice",
+              "start": 0.5,
+              "end": 29.564,
+              "assetSha256": "97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806",
+              "speech": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available? We have a room facing the courtyard, but housekeeping will not finish preparing it until 2 this afternoon. That works. I will be at a conference until 5. Can I leave my luggage with you now? Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+            }
+          ]
+        },
+        "sha256": "93a38ac55dcc3b929b8a99e4ffb3364c63df54382ae1b903c781b90852f13520"
+      },
+      "difficulty": {
+        "record": {
+          "status": "difficulty-reviewed-not-published",
+          "testId": "test-02",
+          "number": 57,
+          "questionId": "t02-q057",
+          "revision": 1,
+          "sourceQuestionSha256": "95b2786fffc51a7b4a77baac12762c37274a128f3f58412ad30ee7e3a93e12b7",
+          "sourceGroupSha256": "86da444c90f76ae6576920b423b8f1af12ec1c7ca91cf3bff58c2fa3c1110996",
+          "fromDifficulty": "intermediate",
+          "toDifficulty": "foundation",
+          "reason": "Explicit room-ready time two in the afternoon; five belongs to her conference and is not supplied as five p.m. among choices.",
+          "provenance": "Independent §1.1 audit of the verified active item and cited cue, passage, or figure where required; canonical scope verified at d934abf."
+        },
+        "sha256": "1f1460e51baf40c9ec93072bd272de42bd501b39737ea5785cb02014d408174a"
+      }
+    }
+  },
+  "Q058.json": {
+    "status": "historical-original-not-current-or-promoted",
+    "question": {
+      "id": "t02-q058",
+      "testId": "test-02",
+      "number": 58,
+      "part": 3,
+      "groupId": "t02-g040",
+      "topic": "daily",
+      "difficulty": "intermediate",
+      "tags": [
+        "courtyard"
+      ],
+      "prompt": "What will the hotel staff do with her luggage?",
+      "promptZh": "飯店人員會如何處理她的行李？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Move it to the new room when it is ready.",
+          "zh": "新房準備好後搬進去。",
+          "whyZh": "男方提出在房間整理好後幫忙搬行李。"
+        },
+        {
+          "id": "B",
+          "text": "Send it to the conference center.",
+          "zh": "寄到會議中心。",
+          "whyZh": "行李安排是搬入新房，不是送到會議場地。"
+        },
+        {
+          "id": "C",
+          "text": "Leave it outside on the street.",
+          "zh": "放在街上。",
+          "whyZh": "飯店接受寄放，沒有放街上的安排。"
+        },
+        {
+          "id": "D",
+          "text": "Return it to the airport.",
+          "zh": "送回機場。",
+          "whyZh": "對話未提機場。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "男方提出在房間整理好後幫忙搬行李。",
+      "evidence": "move it to the new room once the room is ready",
+      "vocabulary": [
+        {
+          "term": "courtyard",
+          "zh": "中庭",
+          "note": "建築物內側或周圍圍起來的露天空間。"
+        },
+        {
+          "term": "housekeeping",
+          "zh": "房務",
+          "note": "飯店中負責客房清潔與整理的服務。"
+        }
+      ],
+      "revision": 1
+    },
+    "authority": {
+      "verified-items": {
+        "record": {
+          "status": "verified-item-not-published",
+          "scope": "listening",
+          "checks": "房間整理好後搬入新房，沒有送到會議中心、街上或機場。 正式題號、口述題幹與兩模式的對話範圍均核對；英中題意和各選項解析已校對。",
+          "activeQuestion": {
+            "id": "t02-q058",
+            "testId": "test-02",
+            "number": 58,
+            "part": 3,
+            "groupId": "t02-g040",
+            "topic": "daily",
+            "difficulty": "intermediate",
+            "tags": [
+              "courtyard"
+            ],
+            "prompt": "What will the hotel staff do with her luggage?",
+            "promptZh": "飯店人員會如何處理她的行李？",
+            "options": [
+              {
+                "id": "A",
+                "text": "Move it to the new room when it is ready.",
+                "zh": "新房準備好後搬進去。",
+                "whyZh": "男方提出在房間整理好後幫忙搬行李。"
+              },
+              {
+                "id": "B",
+                "text": "Send it to the conference center.",
+                "zh": "寄到會議中心。",
+                "whyZh": "行李安排是搬入新房，不是送到會議場地。"
+              },
+              {
+                "id": "C",
+                "text": "Leave it outside on the street.",
+                "zh": "放在街上。",
+                "whyZh": "飯店接受寄放，沒有放街上的安排。"
+              },
+              {
+                "id": "D",
+                "text": "Return it to the airport.",
+                "zh": "送回機場。",
+                "whyZh": "對話未提機場。"
+              }
+            ],
+            "answer": "A",
+            "explanationZh": "男方提出在房間整理好後幫忙搬行李。",
+            "evidence": "move it to the new room once the room is ready",
+            "vocabulary": [
+              {
+                "term": "courtyard",
+                "zh": "中庭",
+                "note": "建築物內側或周圍圍起來的露天空間。"
+              },
+              {
+                "term": "housekeeping",
+                "zh": "房務",
+                "note": "飯店中負責客房清潔與整理的服務。"
+              }
+            ],
+            "revision": 1
+          },
+          "group": {
+            "id": "t02-g040",
+            "testId": "test-02",
+            "part": 3,
+            "title": "A hotel room change",
+            "titleZh": "更換飯店房間",
+            "topic": "daily",
+            "passage": "Woman: My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?\nMan: We have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon.\nWoman: That works. I will be at a conference until five. Can I leave my luggage with you now?\nMan: Of course. We can move it to the new room once the room is ready. Please collect your new key when you return.",
+            "passageZh": "女：我的房間面向街道，交通噪音讓我睡不著。有比較安靜的房間嗎？\n男：我們有一間面向中庭的房間，但房務要到今天下午兩點才會整理好。\n女：可以。我會參加會議到五點。現在能把行李寄放在你們這裡嗎？\n男：當然。新房間準備好後，我們可以把行李搬過去。回來時請領取新房卡。",
+            "audioScript": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?\nWe have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon.\nThat works. I will be at a conference until five. Can I leave my luggage with you now?\nOf course. We can move it to the new room once the room is ready. Please collect your new key when you return.",
+            "turns": [
+              {
+                "voice": "female",
+                "text": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?"
+              },
+              {
+                "voice": "male",
+                "text": "We have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon."
+              },
+              {
+                "voice": "female",
+                "text": "That works. I will be at a conference until five. Can I leave my luggage with you now?"
+              },
+              {
+                "voice": "male",
+                "text": "Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+              }
+            ],
+            "audio": "audio/azure-v1/test-02-18.mp3",
+            "duration": 29.064,
+            "audioSpeakers": [
+              {
+                "speaker": "female",
+                "locale": "en-CA",
+                "role": "female",
+                "modelVoice": "en-CA-ClaraNeural"
+              },
+              {
+                "speaker": "male",
+                "locale": "en-CA",
+                "role": "male",
+                "modelVoice": "en-CA-LiamNeural"
+              }
+            ],
+            "audioStart": 0.5,
+            "audioEnd": 29.564
+          },
+          "audio": [
+            {
+              "path": "audio/formal/test-02-cues-03.mp3",
+              "mode": "cue",
+              "start": 18.54113,
+              "end": 22.44529,
+              "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+              "speech": "Questions 56-58. Listen to the conversation."
+            },
+            {
+              "path": "audio/azure-v1/test-02-18.mp3",
+              "mode": "passage",
+              "start": 0.5,
+              "end": 29.564,
+              "assetSha256": "97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806",
+              "speech": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available? We have a room facing the courtyard, but housekeeping will not finish preparing it until 2 this afternoon. That works. I will be at a conference until 5. Can I leave my luggage with you now? Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+            },
+            {
+              "path": "audio/formal/test-02-cues-03.mp3",
+              "mode": "question",
+              "start": 29.11075,
+              "end": 32.48858,
+              "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+              "speech": "Number 58, what will the hotel staff do with her luggage?"
+            },
+            {
+              "path": "audio/azure-v1/test-02-18.mp3",
+              "mode": "practice",
+              "start": 0.5,
+              "end": 29.564,
+              "assetSha256": "97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806",
+              "speech": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available? We have a room facing the courtyard, but housekeeping will not finish preparing it until 2 this afternoon. That works. I will be at a conference until 5. Can I leave my luggage with you now? Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+            }
+          ]
+        },
+        "sha256": "8c0cd3fb4bd23c465e1404bf8612c82f4447c3a85099ffdc7f1703ecdb154bfb"
+      },
+      "difficulty": {
+        "record": {
+          "status": "difficulty-reviewed-not-published",
+          "testId": "test-02",
+          "number": 58,
+          "questionId": "t02-q058",
+          "revision": 1,
+          "sourceQuestionSha256": "64cf64c02c1e5f750ff52f8d8e317cf98ed4793042f99c3daacd7e3eec302788",
+          "sourceGroupSha256": "86da444c90f76ae6576920b423b8f1af12ec1c7ca91cf3bff58c2fa3c1110996",
+          "fromDifficulty": "intermediate",
+          "toDifficulty": "foundation",
+          "reason": "Staff explicitly says they will move luggage when the room is ready; not inferred from a policy.",
+          "provenance": "Independent §1.1 audit of the verified active item and cited cue, passage, or figure where required; canonical scope verified at d934abf."
+        },
+        "sha256": "3c96154db89db2c3ca633db9b5ee72b9f2f997c22fb0c610bb152eeeacaa314a"
+      }
+    }
+  },
+  "original-group-and-playback.json": {
+    "status": "archive before future replacement; source and score identities untouched now",
+    "originalGroup": {
+      "id": "t02-g040",
+      "testId": "test-02",
+      "part": 3,
+      "title": "A hotel room change",
+      "titleZh": "更換飯店房間",
+      "topic": "daily",
+      "passage": "Woman: My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?\nMan: We have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon.\nWoman: That works. I will be at a conference until five. Can I leave my luggage with you now?\nMan: Of course. We can move it to the new room once the room is ready. Please collect your new key when you return.",
+      "passageZh": "女：我的房間面向街道，交通噪音讓我睡不著。有比較安靜的房間嗎？\n男：我們有一間面向中庭的房間，但房務要到今天下午兩點才會整理好。\n女：可以。我會參加會議到五點。現在能把行李寄放在你們這裡嗎？\n男：當然。新房間準備好後，我們可以把行李搬過去。回來時請領取新房卡。",
+      "audioScript": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?\nWe have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon.\nThat works. I will be at a conference until five. Can I leave my luggage with you now?\nOf course. We can move it to the new room once the room is ready. Please collect your new key when you return.",
+      "turns": [
+        {
+          "voice": "female",
+          "text": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?"
+        },
+        {
+          "voice": "male",
+          "text": "We have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon."
+        },
+        {
+          "voice": "female",
+          "text": "That works. I will be at a conference until five. Can I leave my luggage with you now?"
+        },
+        {
+          "voice": "male",
+          "text": "Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+        }
+      ],
+      "audio": "audio/azure-v1/test-02-18.mp3",
+      "duration": 29.064,
+      "audioSpeakers": [
+        {
+          "speaker": "female",
+          "locale": "en-CA",
+          "role": "female",
+          "modelVoice": "en-CA-ClaraNeural"
+        },
+        {
+          "speaker": "male",
+          "locale": "en-CA",
+          "role": "male",
+          "modelVoice": "en-CA-LiamNeural"
+        }
+      ],
+      "audioStart": 0.5,
+      "audioEnd": 29.564
+    },
+    "originalQuestions": [
+      {
+        "id": "t02-q056",
+        "testId": "test-02",
+        "number": 56,
+        "part": 3,
+        "groupId": "t02-g040",
+        "topic": "daily",
+        "difficulty": "intermediate",
+        "tags": [
+          "courtyard"
+        ],
+        "prompt": "Why does the woman want another room?",
+        "promptZh": "女方為何想換房間？",
+        "options": [
+          {
+            "id": "A",
+            "text": "Her room has no bed.",
+            "zh": "房間沒有床。",
+            "whyZh": "未提缺少床。"
+          },
+          {
+            "id": "B",
+            "text": "She wants a view of the street.",
+            "zh": "她想要街景。",
+            "whyZh": "原房已面向街道，她正想避開噪音。"
+          },
+          {
+            "id": "C",
+            "text": "Traffic noise disturbed her sleep.",
+            "zh": "交通噪音干擾睡眠。",
+            "whyZh": "她明確說街道噪音讓她睡不著。"
+          },
+          {
+            "id": "D",
+            "text": "Her conference was canceled.",
+            "zh": "會議被取消。",
+            "whyZh": "她仍計畫參加會議到五點。"
+          }
+        ],
+        "answer": "C",
+        "explanationZh": "她明確說街道噪音讓她睡不著。",
+        "evidence": "the traffic noise kept me awake",
+        "vocabulary": [
+          {
+            "term": "courtyard",
+            "zh": "中庭",
+            "note": "建築物內側或周圍圍起來的露天空間。"
+          },
+          {
+            "term": "housekeeping",
+            "zh": "房務",
+            "note": "飯店中負責客房清潔與整理的服務。"
+          }
+        ],
+        "revision": 1
+      },
+      {
+        "id": "t02-q057",
+        "testId": "test-02",
+        "number": 57,
+        "part": 3,
+        "groupId": "t02-g040",
+        "topic": "daily",
+        "difficulty": "intermediate",
+        "tags": [
+          "courtyard"
+        ],
+        "prompt": "When will the new room be ready?",
+        "promptZh": "新房間何時準備好？",
+        "options": [
+          {
+            "id": "A",
+            "text": "At five in the morning.",
+            "zh": "清晨五點。",
+            "whyZh": "五點是她會議結束的下午時間，並非清晨。"
+          },
+          {
+            "id": "B",
+            "text": "At two in the afternoon.",
+            "zh": "下午兩點。",
+            "whyZh": "房務預計下午兩點整理完成。"
+          },
+          {
+            "id": "C",
+            "text": "At noon tomorrow.",
+            "zh": "明天中午。",
+            "whyZh": "對話說今天下午兩點。"
+          },
+          {
+            "id": "D",
+            "text": "Immediately.",
+            "zh": "立刻。",
+            "whyZh": "目前尚未整理好，需等到兩點。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "房務預計下午兩點整理完成。",
+        "evidence": "until two this afternoon",
+        "vocabulary": [
+          {
+            "term": "courtyard",
+            "zh": "中庭",
+            "note": "建築物內側或周圍圍起來的露天空間。"
+          },
+          {
+            "term": "housekeeping",
+            "zh": "房務",
+            "note": "飯店中負責客房清潔與整理的服務。"
+          }
+        ],
+        "revision": 1
+      },
+      {
+        "id": "t02-q058",
+        "testId": "test-02",
+        "number": 58,
+        "part": 3,
+        "groupId": "t02-g040",
+        "topic": "daily",
+        "difficulty": "intermediate",
+        "tags": [
+          "courtyard"
+        ],
+        "prompt": "What will the hotel staff do with her luggage?",
+        "promptZh": "飯店人員會如何處理她的行李？",
+        "options": [
+          {
+            "id": "A",
+            "text": "Move it to the new room when it is ready.",
+            "zh": "新房準備好後搬進去。",
+            "whyZh": "男方提出在房間整理好後幫忙搬行李。"
+          },
+          {
+            "id": "B",
+            "text": "Send it to the conference center.",
+            "zh": "寄到會議中心。",
+            "whyZh": "行李安排是搬入新房，不是送到會議場地。"
+          },
+          {
+            "id": "C",
+            "text": "Leave it outside on the street.",
+            "zh": "放在街上。",
+            "whyZh": "飯店接受寄放，沒有放街上的安排。"
+          },
+          {
+            "id": "D",
+            "text": "Return it to the airport.",
+            "zh": "送回機場。",
+            "whyZh": "對話未提機場。"
+          }
+        ],
+        "answer": "A",
+        "explanationZh": "男方提出在房間整理好後幫忙搬行李。",
+        "evidence": "move it to the new room once the room is ready",
+        "vocabulary": [
+          {
+            "term": "courtyard",
+            "zh": "中庭",
+            "note": "建築物內側或周圍圍起來的露天空間。"
+          },
+          {
+            "term": "housekeeping",
+            "zh": "房務",
+            "note": "飯店中負責客房清潔與整理的服務。"
+          }
+        ],
+        "revision": 1
+      }
+    ],
+    "originalFormalFrames": [
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 18.54113,
+        "end": 22.44529,
+        "duration": 3.90417,
+        "kind": "audio",
+        "role": "cue",
+        "part": 3,
+        "groupId": "t02-g040",
+        "at": 1495.66157
+      },
+      {
+        "src": "audio/azure-v1/test-02-18.mp3",
+        "start": 0.5,
+        "end": 29.564,
+        "duration": 29.064,
+        "kind": "audio",
+        "role": "passage",
+        "part": 3,
+        "groupId": "t02-g040",
+        "at": 1499.56574,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-CA",
+            "role": "female",
+            "modelVoice": "en-CA-ClaraNeural"
+          },
+          {
+            "speaker": "male",
+            "locale": "en-CA",
+            "role": "male",
+            "modelVoice": "en-CA-LiamNeural"
+          }
+        ]
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 22.69529,
+        "end": 25.7735,
+        "duration": 3.07821,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g040",
+        "questionId": "t02-q056",
+        "at": 1528.62974
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 3,
+        "groupId": "t02-g040",
+        "questionId": "t02-q056",
+        "at": 1531.70795
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 26.0235,
+        "end": 28.86075,
+        "duration": 2.83725,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g040",
+        "questionId": "t02-q057",
+        "at": 1542.99206
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 3,
+        "groupId": "t02-g040",
+        "questionId": "t02-q057",
+        "at": 1545.82931
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 29.11075,
+        "end": 32.48858,
+        "duration": 3.37783,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g040",
+        "questionId": "t02-q058",
+        "at": 1557.11342
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 3,
+        "groupId": "t02-g040",
+        "questionId": "t02-q058",
+        "at": 1560.49125
+      }
+    ],
+    "originalAssetGuards": [
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 18.54113,
+        "end": 22.44529,
+        "duration": 3.90417,
+        "kind": "audio",
+        "role": "cue",
+        "part": 3,
+        "groupId": "t02-g040",
+        "at": 1495.66157,
+        "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d"
+      },
+      {
+        "src": "audio/azure-v1/test-02-18.mp3",
+        "start": 0.5,
+        "end": 29.564,
+        "duration": 29.064,
+        "kind": "audio",
+        "role": "passage",
+        "part": 3,
+        "groupId": "t02-g040",
+        "at": 1499.56574,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-CA",
+            "role": "female",
+            "modelVoice": "en-CA-ClaraNeural"
+          },
+          {
+            "speaker": "male",
+            "locale": "en-CA",
+            "role": "male",
+            "modelVoice": "en-CA-LiamNeural"
+          }
+        ],
+        "assetSha256": "97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806"
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 22.69529,
+        "end": 25.7735,
+        "duration": 3.07821,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g040",
+        "questionId": "t02-q056",
+        "at": 1528.62974,
+        "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d"
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 26.0235,
+        "end": 28.86075,
+        "duration": 2.83725,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g040",
+        "questionId": "t02-q057",
+        "at": 1542.99206,
+        "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d"
+      },
+      {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "start": 29.11075,
+        "end": 32.48858,
+        "duration": 3.37783,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g040",
+        "questionId": "t02-q058",
+        "at": 1557.11342,
+        "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d"
+      }
+    ],
+    "originalVerifiedAndDifficultyRecords": {
+      "56": {
+        "verified-items": {
+          "record": {
+            "status": "verified-item-not-published",
+            "scope": "listening",
+            "checks": "交通噪音讓她無法入睡；她本來就面對街道，未提沒床，會議仍照常。 正式題號、口述題幹與兩模式的對話範圍均核對；英中題意和各選項解析已校對。",
+            "activeQuestion": {
+              "id": "t02-q056",
+              "testId": "test-02",
+              "number": 56,
+              "part": 3,
+              "groupId": "t02-g040",
+              "topic": "daily",
+              "difficulty": "intermediate",
+              "tags": [
+                "courtyard"
+              ],
+              "prompt": "Why does the woman want another room?",
+              "promptZh": "女方為何想換房間？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "Her room has no bed.",
+                  "zh": "房間沒有床。",
+                  "whyZh": "未提缺少床。"
+                },
+                {
+                  "id": "B",
+                  "text": "She wants a view of the street.",
+                  "zh": "她想要街景。",
+                  "whyZh": "原房已面向街道，她正想避開噪音。"
+                },
+                {
+                  "id": "C",
+                  "text": "Traffic noise disturbed her sleep.",
+                  "zh": "交通噪音干擾睡眠。",
+                  "whyZh": "她明確說街道噪音讓她睡不著。"
+                },
+                {
+                  "id": "D",
+                  "text": "Her conference was canceled.",
+                  "zh": "會議被取消。",
+                  "whyZh": "她仍計畫參加會議到五點。"
+                }
+              ],
+              "answer": "C",
+              "explanationZh": "她明確說街道噪音讓她睡不著。",
+              "evidence": "the traffic noise kept me awake",
+              "vocabulary": [
+                {
+                  "term": "courtyard",
+                  "zh": "中庭",
+                  "note": "建築物內側或周圍圍起來的露天空間。"
+                },
+                {
+                  "term": "housekeeping",
+                  "zh": "房務",
+                  "note": "飯店中負責客房清潔與整理的服務。"
+                }
+              ],
+              "revision": 1
+            },
+            "group": {
+              "id": "t02-g040",
+              "testId": "test-02",
+              "part": 3,
+              "title": "A hotel room change",
+              "titleZh": "更換飯店房間",
+              "topic": "daily",
+              "passage": "Woman: My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?\nMan: We have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon.\nWoman: That works. I will be at a conference until five. Can I leave my luggage with you now?\nMan: Of course. We can move it to the new room once the room is ready. Please collect your new key when you return.",
+              "passageZh": "女：我的房間面向街道，交通噪音讓我睡不著。有比較安靜的房間嗎？\n男：我們有一間面向中庭的房間，但房務要到今天下午兩點才會整理好。\n女：可以。我會參加會議到五點。現在能把行李寄放在你們這裡嗎？\n男：當然。新房間準備好後，我們可以把行李搬過去。回來時請領取新房卡。",
+              "audioScript": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?\nWe have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon.\nThat works. I will be at a conference until five. Can I leave my luggage with you now?\nOf course. We can move it to the new room once the room is ready. Please collect your new key when you return.",
+              "turns": [
+                {
+                  "voice": "female",
+                  "text": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?"
+                },
+                {
+                  "voice": "male",
+                  "text": "We have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon."
+                },
+                {
+                  "voice": "female",
+                  "text": "That works. I will be at a conference until five. Can I leave my luggage with you now?"
+                },
+                {
+                  "voice": "male",
+                  "text": "Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+                }
+              ],
+              "audio": "audio/azure-v1/test-02-18.mp3",
+              "duration": 29.064,
+              "audioSpeakers": [
+                {
+                  "speaker": "female",
+                  "locale": "en-CA",
+                  "role": "female",
+                  "modelVoice": "en-CA-ClaraNeural"
+                },
+                {
+                  "speaker": "male",
+                  "locale": "en-CA",
+                  "role": "male",
+                  "modelVoice": "en-CA-LiamNeural"
+                }
+              ],
+              "audioStart": 0.5,
+              "audioEnd": 29.564
+            },
+            "audio": [
+              {
+                "path": "audio/formal/test-02-cues-03.mp3",
+                "mode": "cue",
+                "start": 18.54113,
+                "end": 22.44529,
+                "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+                "speech": "Questions 56-58. Listen to the conversation."
+              },
+              {
+                "path": "audio/azure-v1/test-02-18.mp3",
+                "mode": "passage",
+                "start": 0.5,
+                "end": 29.564,
+                "assetSha256": "97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806",
+                "speech": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available? We have a room facing the courtyard, but housekeeping will not finish preparing it until 2 this afternoon. That works. I will be at a conference until 5. Can I leave my luggage with you now? Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+              },
+              {
+                "path": "audio/formal/test-02-cues-03.mp3",
+                "mode": "question",
+                "start": 22.69529,
+                "end": 25.7735,
+                "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+                "speech": "Number 56. Why does the woman want another room?"
+              },
+              {
+                "path": "audio/azure-v1/test-02-18.mp3",
+                "mode": "practice",
+                "start": 0.5,
+                "end": 29.564,
+                "assetSha256": "97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806",
+                "speech": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available? We have a room facing the courtyard, but housekeeping will not finish preparing it until 2 this afternoon. That works. I will be at a conference until 5. Can I leave my luggage with you now? Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+              }
+            ]
+          },
+          "sha256": "995280ea0e97c757d96d809fc30a0cdfafd592952de7ca9dac4209b60b41e475"
+        },
+        "difficulty": {
+          "record": {
+            "status": "difficulty-reviewed-not-published",
+            "testId": "test-02",
+            "number": 56,
+            "questionId": "t02-q056",
+            "revision": 1,
+            "sourceQuestionSha256": "c2f5566deb4172dc63405f4a60047ffa9e90ed9ca0eefc9ac60e0aba6bd3a8e2",
+            "sourceGroupSha256": "86da444c90f76ae6576920b423b8f1af12ec1c7ca91cf3bff58c2fa3c1110996",
+            "fromDifficulty": "intermediate",
+            "toDifficulty": "foundation",
+            "reason": "Clearly given in the opening: street traffic kept her awake.",
+            "provenance": "Independent §1.1 audit of the verified active item and cited cue, passage, or figure where required; canonical scope verified at d934abf."
+          },
+          "sha256": "ff73edbbb781737fdff4a10b2a746f1ba322263df9912a96e54af5f24e52d708"
+        }
+      },
+      "57": {
+        "verified-items": {
+          "record": {
+            "status": "verified-item-not-published",
+            "scope": "listening",
+            "checks": "房務今天下午兩點才完成，不是清晨五點、明天中午或立刻。 正式題號、口述題幹與兩模式的對話範圍均核對；英中題意和各選項解析已校對。",
+            "activeQuestion": {
+              "id": "t02-q057",
+              "testId": "test-02",
+              "number": 57,
+              "part": 3,
+              "groupId": "t02-g040",
+              "topic": "daily",
+              "difficulty": "intermediate",
+              "tags": [
+                "courtyard"
+              ],
+              "prompt": "When will the new room be ready?",
+              "promptZh": "新房間何時準備好？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "At five in the morning.",
+                  "zh": "清晨五點。",
+                  "whyZh": "五點是她會議結束的下午時間，並非清晨。"
+                },
+                {
+                  "id": "B",
+                  "text": "At two in the afternoon.",
+                  "zh": "下午兩點。",
+                  "whyZh": "房務預計下午兩點整理完成。"
+                },
+                {
+                  "id": "C",
+                  "text": "At noon tomorrow.",
+                  "zh": "明天中午。",
+                  "whyZh": "對話說今天下午兩點。"
+                },
+                {
+                  "id": "D",
+                  "text": "Immediately.",
+                  "zh": "立刻。",
+                  "whyZh": "目前尚未整理好，需等到兩點。"
+                }
+              ],
+              "answer": "B",
+              "explanationZh": "房務預計下午兩點整理完成。",
+              "evidence": "until two this afternoon",
+              "vocabulary": [
+                {
+                  "term": "courtyard",
+                  "zh": "中庭",
+                  "note": "建築物內側或周圍圍起來的露天空間。"
+                },
+                {
+                  "term": "housekeeping",
+                  "zh": "房務",
+                  "note": "飯店中負責客房清潔與整理的服務。"
+                }
+              ],
+              "revision": 1
+            },
+            "group": {
+              "id": "t02-g040",
+              "testId": "test-02",
+              "part": 3,
+              "title": "A hotel room change",
+              "titleZh": "更換飯店房間",
+              "topic": "daily",
+              "passage": "Woman: My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?\nMan: We have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon.\nWoman: That works. I will be at a conference until five. Can I leave my luggage with you now?\nMan: Of course. We can move it to the new room once the room is ready. Please collect your new key when you return.",
+              "passageZh": "女：我的房間面向街道，交通噪音讓我睡不著。有比較安靜的房間嗎？\n男：我們有一間面向中庭的房間，但房務要到今天下午兩點才會整理好。\n女：可以。我會參加會議到五點。現在能把行李寄放在你們這裡嗎？\n男：當然。新房間準備好後，我們可以把行李搬過去。回來時請領取新房卡。",
+              "audioScript": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?\nWe have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon.\nThat works. I will be at a conference until five. Can I leave my luggage with you now?\nOf course. We can move it to the new room once the room is ready. Please collect your new key when you return.",
+              "turns": [
+                {
+                  "voice": "female",
+                  "text": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?"
+                },
+                {
+                  "voice": "male",
+                  "text": "We have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon."
+                },
+                {
+                  "voice": "female",
+                  "text": "That works. I will be at a conference until five. Can I leave my luggage with you now?"
+                },
+                {
+                  "voice": "male",
+                  "text": "Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+                }
+              ],
+              "audio": "audio/azure-v1/test-02-18.mp3",
+              "duration": 29.064,
+              "audioSpeakers": [
+                {
+                  "speaker": "female",
+                  "locale": "en-CA",
+                  "role": "female",
+                  "modelVoice": "en-CA-ClaraNeural"
+                },
+                {
+                  "speaker": "male",
+                  "locale": "en-CA",
+                  "role": "male",
+                  "modelVoice": "en-CA-LiamNeural"
+                }
+              ],
+              "audioStart": 0.5,
+              "audioEnd": 29.564
+            },
+            "audio": [
+              {
+                "path": "audio/formal/test-02-cues-03.mp3",
+                "mode": "cue",
+                "start": 18.54113,
+                "end": 22.44529,
+                "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+                "speech": "Questions 56-58. Listen to the conversation."
+              },
+              {
+                "path": "audio/azure-v1/test-02-18.mp3",
+                "mode": "passage",
+                "start": 0.5,
+                "end": 29.564,
+                "assetSha256": "97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806",
+                "speech": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available? We have a room facing the courtyard, but housekeeping will not finish preparing it until 2 this afternoon. That works. I will be at a conference until 5. Can I leave my luggage with you now? Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+              },
+              {
+                "path": "audio/formal/test-02-cues-03.mp3",
+                "mode": "question",
+                "start": 26.0235,
+                "end": 28.86075,
+                "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+                "speech": "Number 57. When will the new room be ready?"
+              },
+              {
+                "path": "audio/azure-v1/test-02-18.mp3",
+                "mode": "practice",
+                "start": 0.5,
+                "end": 29.564,
+                "assetSha256": "97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806",
+                "speech": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available? We have a room facing the courtyard, but housekeeping will not finish preparing it until 2 this afternoon. That works. I will be at a conference until 5. Can I leave my luggage with you now? Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+              }
+            ]
+          },
+          "sha256": "93a38ac55dcc3b929b8a99e4ffb3364c63df54382ae1b903c781b90852f13520"
+        },
+        "difficulty": {
+          "record": {
+            "status": "difficulty-reviewed-not-published",
+            "testId": "test-02",
+            "number": 57,
+            "questionId": "t02-q057",
+            "revision": 1,
+            "sourceQuestionSha256": "95b2786fffc51a7b4a77baac12762c37274a128f3f58412ad30ee7e3a93e12b7",
+            "sourceGroupSha256": "86da444c90f76ae6576920b423b8f1af12ec1c7ca91cf3bff58c2fa3c1110996",
+            "fromDifficulty": "intermediate",
+            "toDifficulty": "foundation",
+            "reason": "Explicit room-ready time two in the afternoon; five belongs to her conference and is not supplied as five p.m. among choices.",
+            "provenance": "Independent §1.1 audit of the verified active item and cited cue, passage, or figure where required; canonical scope verified at d934abf."
+          },
+          "sha256": "1f1460e51baf40c9ec93072bd272de42bd501b39737ea5785cb02014d408174a"
+        }
+      },
+      "58": {
+        "verified-items": {
+          "record": {
+            "status": "verified-item-not-published",
+            "scope": "listening",
+            "checks": "房間整理好後搬入新房，沒有送到會議中心、街上或機場。 正式題號、口述題幹與兩模式的對話範圍均核對；英中題意和各選項解析已校對。",
+            "activeQuestion": {
+              "id": "t02-q058",
+              "testId": "test-02",
+              "number": 58,
+              "part": 3,
+              "groupId": "t02-g040",
+              "topic": "daily",
+              "difficulty": "intermediate",
+              "tags": [
+                "courtyard"
+              ],
+              "prompt": "What will the hotel staff do with her luggage?",
+              "promptZh": "飯店人員會如何處理她的行李？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "Move it to the new room when it is ready.",
+                  "zh": "新房準備好後搬進去。",
+                  "whyZh": "男方提出在房間整理好後幫忙搬行李。"
+                },
+                {
+                  "id": "B",
+                  "text": "Send it to the conference center.",
+                  "zh": "寄到會議中心。",
+                  "whyZh": "行李安排是搬入新房，不是送到會議場地。"
+                },
+                {
+                  "id": "C",
+                  "text": "Leave it outside on the street.",
+                  "zh": "放在街上。",
+                  "whyZh": "飯店接受寄放，沒有放街上的安排。"
+                },
+                {
+                  "id": "D",
+                  "text": "Return it to the airport.",
+                  "zh": "送回機場。",
+                  "whyZh": "對話未提機場。"
+                }
+              ],
+              "answer": "A",
+              "explanationZh": "男方提出在房間整理好後幫忙搬行李。",
+              "evidence": "move it to the new room once the room is ready",
+              "vocabulary": [
+                {
+                  "term": "courtyard",
+                  "zh": "中庭",
+                  "note": "建築物內側或周圍圍起來的露天空間。"
+                },
+                {
+                  "term": "housekeeping",
+                  "zh": "房務",
+                  "note": "飯店中負責客房清潔與整理的服務。"
+                }
+              ],
+              "revision": 1
+            },
+            "group": {
+              "id": "t02-g040",
+              "testId": "test-02",
+              "part": 3,
+              "title": "A hotel room change",
+              "titleZh": "更換飯店房間",
+              "topic": "daily",
+              "passage": "Woman: My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?\nMan: We have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon.\nWoman: That works. I will be at a conference until five. Can I leave my luggage with you now?\nMan: Of course. We can move it to the new room once the room is ready. Please collect your new key when you return.",
+              "passageZh": "女：我的房間面向街道，交通噪音讓我睡不著。有比較安靜的房間嗎？\n男：我們有一間面向中庭的房間，但房務要到今天下午兩點才會整理好。\n女：可以。我會參加會議到五點。現在能把行李寄放在你們這裡嗎？\n男：當然。新房間準備好後，我們可以把行李搬過去。回來時請領取新房卡。",
+              "audioScript": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?\nWe have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon.\nThat works. I will be at a conference until five. Can I leave my luggage with you now?\nOf course. We can move it to the new room once the room is ready. Please collect your new key when you return.",
+              "turns": [
+                {
+                  "voice": "female",
+                  "text": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available?"
+                },
+                {
+                  "voice": "male",
+                  "text": "We have a room facing the courtyard, but housekeeping will not finish preparing it until two this afternoon."
+                },
+                {
+                  "voice": "female",
+                  "text": "That works. I will be at a conference until five. Can I leave my luggage with you now?"
+                },
+                {
+                  "voice": "male",
+                  "text": "Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+                }
+              ],
+              "audio": "audio/azure-v1/test-02-18.mp3",
+              "duration": 29.064,
+              "audioSpeakers": [
+                {
+                  "speaker": "female",
+                  "locale": "en-CA",
+                  "role": "female",
+                  "modelVoice": "en-CA-ClaraNeural"
+                },
+                {
+                  "speaker": "male",
+                  "locale": "en-CA",
+                  "role": "male",
+                  "modelVoice": "en-CA-LiamNeural"
+                }
+              ],
+              "audioStart": 0.5,
+              "audioEnd": 29.564
+            },
+            "audio": [
+              {
+                "path": "audio/formal/test-02-cues-03.mp3",
+                "mode": "cue",
+                "start": 18.54113,
+                "end": 22.44529,
+                "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+                "speech": "Questions 56-58. Listen to the conversation."
+              },
+              {
+                "path": "audio/azure-v1/test-02-18.mp3",
+                "mode": "passage",
+                "start": 0.5,
+                "end": 29.564,
+                "assetSha256": "97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806",
+                "speech": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available? We have a room facing the courtyard, but housekeeping will not finish preparing it until 2 this afternoon. That works. I will be at a conference until 5. Can I leave my luggage with you now? Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+              },
+              {
+                "path": "audio/formal/test-02-cues-03.mp3",
+                "mode": "question",
+                "start": 29.11075,
+                "end": 32.48858,
+                "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+                "speech": "Number 58, what will the hotel staff do with her luggage?"
+              },
+              {
+                "path": "audio/azure-v1/test-02-18.mp3",
+                "mode": "practice",
+                "start": 0.5,
+                "end": 29.564,
+                "assetSha256": "97fa1c42998a281e772cb6f522bfd15b4cdbe2728df8b929bd43527419fc9806",
+                "speech": "My room faces the street, and the traffic noise kept me awake. Is there a quieter room available? We have a room facing the courtyard, but housekeeping will not finish preparing it until 2 this afternoon. That works. I will be at a conference until 5. Can I leave my luggage with you now? Of course. We can move it to the new room once the room is ready. Please collect your new key when you return."
+              }
+            ]
+          },
+          "sha256": "8c0cd3fb4bd23c465e1404bf8612c82f4447c3a85099ffdc7f1703ecdb154bfb"
+        },
+        "difficulty": {
+          "record": {
+            "status": "difficulty-reviewed-not-published",
+            "testId": "test-02",
+            "number": 58,
+            "questionId": "t02-q058",
+            "revision": 1,
+            "sourceQuestionSha256": "64cf64c02c1e5f750ff52f8d8e317cf98ed4793042f99c3daacd7e3eec302788",
+            "sourceGroupSha256": "86da444c90f76ae6576920b423b8f1af12ec1c7ca91cf3bff58c2fa3c1110996",
+            "fromDifficulty": "intermediate",
+            "toDifficulty": "foundation",
+            "reason": "Staff explicitly says they will move luggage when the room is ready; not inferred from a policy.",
+            "provenance": "Independent §1.1 audit of the verified active item and cited cue, passage, or figure where required; canonical scope verified at d934abf."
+          },
+          "sha256": "3c96154db89db2c3ca633db9b5ee72b9f2f997c22fb0c610bb152eeeacaa314a"
+        }
+      }
+    }
+  }
+}

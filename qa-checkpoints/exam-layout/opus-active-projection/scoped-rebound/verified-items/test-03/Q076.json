@@ -1,0 +1,220 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "audio": "Full unprompted small.en and independent Vosk corroborate the signal closure, no departure platform, disregard platform six and wait/check boards, booked missed connection from this delay and no extra charge. Non-key Northbridge proper-name phonetics in independent decode do not change these decisions. Earlier exact numbered Jenny recordings for Q074–076 and the original cue independently verified; all three earlier WAVs and the new compact shared WAV receipt/RIFF/SHA checked. Preserved exact original numeric group cue and shared actual verified talk in both modes; not counted as two independent recordings.",
+    "content": "Apply the two spoken conditions separately to concrete cases: existing booked travel AND causal loss from this train’s delay. Three distractors each lack a condition. Checked bilingual why/choices against recorded talk and exact stem. No graphic in this scope.",
+    "association": "Same slot and archived answer key, new numbered stem and question/group identity; unchanged surrounding sections, chart frames and original reserve; no publication or browser acceptance.",
+    "codecProjection": "Both modes use the exact deterministic 48kHz Ogg Opus delivery bytes/ranges; raw hashes remain provenance. Source and decoded Opus samples match in duration; Ogg gapless pre-skip/final granule and unmodified timetable verified. Original semantic decision was made on the checked source clips."
+  },
+  "activeQuestion": {
+    "id": "t03-q076-r2",
+    "testId": "test-03",
+    "number": 76,
+    "part": 4,
+    "groupId": "t03-g046-medium-r2",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "detail"
+    ],
+    "prompt": "Which traveler qualifies for a replacement booking at no charge?",
+    "promptZh": "哪位旅客符合免費重新安排訂位的資格？",
+    "options": [
+      {
+        "id": "A",
+        "text": "A traveler who will miss a booked transfer because this train is late.",
+        "zh": "因本班車晚點而將錯過已預訂轉乘的旅客。",
+        "whyZh": "已有預訂，而且錯過的原因是本班車延誤，符合兩項條件。"
+      },
+      {
+        "id": "B",
+        "text": "A traveler who wants to book a transfer for the first time.",
+        "zh": "想第一次訂轉乘班次的旅客。",
+        "whyZh": "沒有已預訂的轉乘，也就不是補救已錯過的訂位。"
+      },
+      {
+        "id": "C",
+        "text": "A traveler who missed a booked transfer before this delay began.",
+        "zh": "在本班延誤發生以前就已錯過訂好轉乘的旅客。",
+        "whyZh": "即使已訂位，錯過不是這次延誤造成的。"
+      },
+      {
+        "id": "D",
+        "text": "A traveler who would rather change a booked transfer they can still catch.",
+        "zh": "仍趕得上已訂好的轉乘，但想換班次的旅客。",
+        "whyZh": "這位旅客沒有因本班車延誤錯過轉乘。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "旅客須原本就訂好轉乘，且是因本班車延誤才錯過。A 選項旅客的轉乘已預訂，即將因本班車晚點而錯過，因此可申請免收額外訂位費的安排。",
+    "evidence": "If this delay causes you to miss a reserved connection, staff at the information desk can arrange onward travel without an additional booking fee.",
+    "vocabulary": [
+      {
+        "term": "departure platform",
+        "zh": "出發月台",
+        "note": "列車出發的月台；這班車尚未確認。"
+      },
+      {
+        "term": "booked connection",
+        "zh": "已預訂的轉乘",
+        "note": "已事先預訂、銜接本班列車的後續交通。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t03-q076",
+    "testId": "test-03",
+    "number": 76,
+    "part": 4,
+    "groupId": "t03-g046",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "detail"
+    ],
+    "prompt": "What can the information desk arrange?",
+    "promptZh": "服務台能安排什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Further travel for people who miss connections",
+        "zh": "為錯過轉乘者安排後續行程",
+        "whyZh": "因延誤錯過預訂轉乘，可不加收訂位費安排後續交通。"
+      },
+      {
+        "id": "B",
+        "text": "Free hotel rooms for all passengers",
+        "zh": "提供所有旅客免費旅館",
+        "whyZh": "公告只談後續交通，不含旅館。"
+      },
+      {
+        "id": "C",
+        "text": "Refunds for all printed tickets",
+        "zh": "退還所有紙票費用",
+        "whyZh": "紙票月台可能不正確，不代表全面退款。"
+      },
+      {
+        "id": "D",
+        "text": "Tours of the signal control room",
+        "zh": "參觀號誌控制室",
+        "whyZh": "工程師修復號誌，不提供參觀。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "因延誤錯過預訂轉乘，可不加收訂位費安排後續交通。",
+    "evidence": "arrange onward travel without an additional booking fee",
+    "vocabulary": [
+      {
+        "term": "onward travel",
+        "zh": "後續行程",
+        "note": "錯過轉乘後繼續前往目的地的交通。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g046-medium-r2",
+    "testId": "test-03",
+    "part": 4,
+    "title": "Changes to a train service",
+    "titleZh": "列車服務異動",
+    "topic": "daily",
+    "passage": "M1: Passengers for the ten fifteen train to Northbridge, please stay in the main waiting area. A signal fault has closed the eastern tracks. No departure platform is confirmed. Do not go to platform six, even if your ticket says to. Check the electronic boards instead. If this delay makes you miss a booked connection, the information desk can arrange your onward trip at no extra charge. Our next update is at ten twenty.",
+    "passageZh": "搭乘十點十五分前往北橋的旅客，請留在主要候車區。號誌故障已造成東側軌道封閉。出發月台尚未確認。即使車票上寫著第六月台，也請不要前往，改看電子看板。如果這次延誤讓您錯過已預訂的轉乘，服務台可免費為您安排後續行程。下次更新在十點二十分。",
+    "audioScript": "Passengers for the ten fifteen train to Northbridge, please stay in the main waiting area. A signal fault has closed the eastern tracks. No departure platform is confirmed. Do not go to platform six, even if your ticket says to. Check the electronic boards instead. If this delay makes you miss a booked connection, the information desk can arrange your onward trip at no extra charge. Our next update is at ten twenty.",
+    "turns": [
+      {
+        "voice": "male",
+        "speaker": "M1",
+        "text": "Passengers for the ten fifteen train to Northbridge, please stay in the main waiting area. A signal fault has closed the eastern tracks. No departure platform is confirmed. Do not go to platform six, even if your ticket says to. Check the electronic boards instead. If this delay makes you miss a booked connection, the information desk can arrange your onward trip at no extra charge. Our next update is at ten twenty."
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/b1/b1eb454551a18d8e702cf1a680a2039be7bb7f1efe8314bf2d9e062717d0c557.ogg",
+    "duration": 27.85,
+    "audioStart": 0,
+    "audioEnd": 27.85,
+    "audioSpeakers": [
+      {
+        "speaker": "M1",
+        "locale": "en-TZ",
+        "role": "male",
+        "modelVoice": "en-TZ-ElimuNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/f5/f5db73b2aab14a49b3a6ba3408fbf600098cfa5626160ea7dd95a13b9bf6404b.ogg",
+      "start": 37.48608,
+      "end": 41.03396,
+      "speech": "Questions 74 through 76. Listen to the talk.",
+      "assetSha256": "7c39fe164a50f11cf340f586f8970f09580ee6126aa9c066082d50a10ec5afc6",
+      "sourceAudioProvenance": {
+        "path": "audio/formal/test-03-cues-04.mp3",
+        "sha256": "f5db73b2aab14a49b3a6ba3408fbf600098cfa5626160ea7dd95a13b9bf6404b",
+        "decodedSamples48k": 3341642,
+        "sourceCodec": "mp3",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    },
+    {
+      "mode": "passage",
+      "path": "audio/opus-hq56-96-v2/b1/b1eb454551a18d8e702cf1a680a2039be7bb7f1efe8314bf2d9e062717d0c557.ogg",
+      "start": 0,
+      "end": 27.85,
+      "speech": "Passengers for the ten fifteen train to Northbridge, please stay in the main waiting area. A signal fault has closed the eastern tracks. No departure platform is confirmed. Do not go to platform six, even if your ticket says to. Check the electronic boards instead. If this delay makes you miss a booked connection, the information desk can arrange your onward trip at no extra charge. Our next update is at ten twenty.",
+      "assetSha256": "0f25bf17a3b7998b637ac1645bddf0bfd904cb0c89906bc84400d4069943a926",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-03/groups/t03-g046-medium-r2/passage.wav",
+        "sha256": "b1eb454551a18d8e702cf1a680a2039be7bb7f1efe8314bf2d9e062717d0c557",
+        "decodedSamples48k": 1336800,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    },
+    {
+      "mode": "question",
+      "path": "audio/opus-hq56-96-v2/e4/e47f17eb5a1ea389e8c16defa6d66a91ec7b93a9674ce2014d4caabaa3eeeb90.ogg",
+      "start": 0,
+      "end": 6.475,
+      "speech": "Number 76. Which traveler qualifies for a replacement booking at no charge?",
+      "assetSha256": "12a68439e6acb713712a85335c3d2b3c4fd6bd136e88affa574ce2df45daf9a0",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-03/questions/Q076/formal-stem-medium-r2.wav",
+        "sha256": "e47f17eb5a1ea389e8c16defa6d66a91ec7b93a9674ce2014d4caabaa3eeeb90",
+        "decodedSamples48k": 310800,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    },
+    {
+      "mode": "practice",
+      "path": "audio/opus-hq56-96-v2/b1/b1eb454551a18d8e702cf1a680a2039be7bb7f1efe8314bf2d9e062717d0c557.ogg",
+      "start": 0,
+      "end": 27.85,
+      "speech": "Passengers for the ten fifteen train to Northbridge, please stay in the main waiting area. A signal fault has closed the eastern tracks. No departure platform is confirmed. Do not go to platform six, even if your ticket says to. Check the electronic boards instead. If this delay makes you miss a booked connection, the information desk can arrange your onward trip at no extra charge. Our next update is at ten twenty.",
+      "assetSha256": "0f25bf17a3b7998b637ac1645bddf0bfd904cb0c89906bc84400d4069943a926",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-03/groups/t03-g046-medium-r2/passage.wav",
+        "sha256": "b1eb454551a18d8e702cf1a680a2039be7bb7f1efe8314bf2d9e062717d0c557",
+        "decodedSamples48k": 1336800,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    }
+  ],
+  "imageSha256": null
+}

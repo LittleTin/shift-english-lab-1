@@ -1,0 +1,247 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Independent blind English solve and Traditional Chinese alignment; Coordinate collection today and Saturday using ID policy, individualized notices, and the immediate need.",
+    "audio": "Offline independent speech clearance for new exact authoritative passage and numbered stem; waveform and role/locale receipts bound to mode, SHA and range. Original cue remains byte/range identical to the independently verified record.",
+    "association": "Work-tree historical records remain exact in reserve sidecar; verified new IDs; formally unchanged outside bounded timing scope; no browser, publication or human listening claims.",
+    "offlineSpeechEvidenceSha256": {
+      "hashes.txt": "b7cb5aab6a3e7937b3183447f49c05abcf74ca9b7aa81e4a38e99808a6e22858",
+      "vosk-test02-g042-shared-medium-candidate.log": "d5e3d97bb8cb8a69bfb0e88760dae80bd7b2324020a4f7b102ddb595d1b995e1",
+      "test02-g042-shared-medium-candidate.wav.txt": "650dea14f3622e2dba06242c3a197a0f243fc10a024be64b83b7487b59e7ee3e",
+      "test02-q062-stem-medium-candidate.wav.txt": "2052609bb53495b75c4026ba84402285c5de3655561dc7b848c232c7de53ee75",
+      "test02-q063-stem-medium-candidate.wav.txt": "084d51b60b3a8229a60012dbc13b7b624d98e7e452f5390b11367decf4930765",
+      "test02-q064-stem-medium-candidate.wav.txt": "9335ff07c1c368ecd75112fa8eca47e9352c982e3138413dcf7d415c9841389e",
+      "vosk-focus-small.log": "507513fd51ab76a6c86ff7e428991d9f7c26955535338ceaef5b893f0465f792",
+      "vosk-focus-and-retained.log": "571f39ddc555d773331ab60a10e2b25ef4765549029993168b0c135443a02788",
+      "independentBlindTextReview": "d14102cd4751d472cf8726a09b272a430868bf47b5d620c524e9bb0fb19c6fa7"
+    },
+    "codecProjection": "Both modes use the exact deterministic 48kHz Ogg Opus delivery bytes/ranges; raw hashes remain provenance. Source and decoded Opus samples match in duration; Ogg gapless pre-skip/final granule and unmodified timetable verified. Original semantic decision was made on the checked source clips."
+  },
+  "activeQuestion": {
+    "id": "t02-q064-r2",
+    "testId": "test-02",
+    "number": 64,
+    "part": 3,
+    "groupId": "t02-g042-r2",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "listening-inference"
+    ],
+    "prompt": "Her brother can come today and Saturday. What should he do?",
+    "promptZh": "她哥哥今天和星期六都能來。他應該怎麼做？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Wait and collect both items on Saturday.",
+        "zh": "等到星期六一次領兩件。",
+        "whyZh": "兩件雖可保留到星期六，但她今晚需要桌燈。"
+      },
+      {
+        "id": "B",
+        "text": "Have her collect the lamp with only her phone today; he comes Saturday.",
+        "zh": "今天讓她只帶電話來取桌燈，他星期六再來。",
+        "whyZh": "電話可以查詢，但取貨仍要出示姓名相符的證件。"
+      },
+      {
+        "id": "C",
+        "text": "Bring matching ID for the lamp today; collect the notebook Saturday after its notice.",
+        "zh": "今天帶姓名相符的證件領桌燈；收到筆記本通知後，星期六再來領。",
+        "whyZh": "哥哥可出示與訂單相符的證件，先滿足今晚的桌燈需求；筆記本另行通知後可保留到星期六。"
+      },
+      {
+        "id": "D",
+        "text": "Collect both today, using the same pickup message for the notebook.",
+        "zh": "今天用同一則簡訊把兩件都領走。",
+        "whyZh": "筆記本明天才到，今天不能領；它也會有自己的通知。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "哥哥可出示與訂單相符的證件，先滿足今晚的桌燈需求；筆記本另行通知後可保留到星期六。",
+    "evidence": "I got a pickup message for my order. I need the lamp tonight, but I’ve lost the order number. | We can search by the order’s phone number. To collect anything, show photo ID matching the name on the order. | That’s my number, but the order is in my brother’s name. Are my lamp and notebook both ready? | The lamp is here. The notebook arrives tomorrow. We text for each item and hold it through Saturday.",
+    "vocabulary": [
+      {
+        "term": "through Saturday",
+        "zh": "直到星期六為止，含當天",
+        "note": "through 在這裡表示星期六當天仍可領取。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t02-q064",
+    "testId": "test-02",
+    "number": 64,
+    "part": 3,
+    "groupId": "t02-g042",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "pickup"
+    ],
+    "prompt": "What will happen tomorrow?",
+    "promptZh": "明天會發生什麼事？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The notebook will arrive.",
+        "zh": "筆記本會到貨。",
+        "whyZh": "最後一句明說筆記本明天到貨。"
+      },
+      {
+        "id": "B",
+        "text": "The store will close permanently.",
+        "zh": "店家永久歇業。",
+        "whyZh": "沒有歇業資訊。"
+      },
+      {
+        "id": "C",
+        "text": "The lamp will be returned to the supplier.",
+        "zh": "桌燈會退回供應商。",
+        "whyZh": "桌燈已可領取，未提退回。"
+      },
+      {
+        "id": "D",
+        "text": "The woman must place a new order.",
+        "zh": "女方必須重新訂購。",
+        "whyZh": "原訂單仍有效，不需要重下單。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "最後一句明說筆記本明天到貨。",
+    "evidence": "The notebook will arrive tomorrow",
+    "vocabulary": [
+      {
+        "term": "pickup",
+        "zh": "取貨",
+        "note": "ready for pickup 表示商品已可前往領取。"
+      },
+      {
+        "term": "notification",
+        "zh": "通知",
+        "note": "本題指商品到店後另行發送的訊息。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g042-r2",
+    "testId": "test-02",
+    "part": 3,
+    "title": "A visit to the pickup counter",
+    "titleZh": "到取貨櫃檯領商品",
+    "topic": "daily",
+    "passage": "Woman: I got a pickup message for my order. I need the lamp tonight, but I’ve lost the order number.\nMan: We can search by the order’s phone number. To collect anything, show photo ID matching the name on the order.\nWoman: That’s my number, but the order is in my brother’s name. Are my lamp and notebook both ready?\nMan: The lamp is here. The notebook arrives tomorrow. We text for each item and hold it through Saturday.",
+    "passageZh": "女：我收到了訂單的取貨通知。今晚需要桌燈，但我找不到訂單編號。\n男：可以用訂單留下的電話號碼查詢。取貨時須出示與訂單姓名相符的附照證件。\n女：電話是我的，但訂單是我哥哥的名字。桌燈和筆記本都能取了嗎？\n男：桌燈到了。筆記本明天到。我們會對每件商品分別發簡訊，並保留到星期六。",
+    "audioScript": "I got a pickup message for my order. I need the lamp tonight, but I’ve lost the order number.\nWe can search by the order’s phone number. To collect anything, show photo ID matching the name on the order.\nThat’s my number, but the order is in my brother’s name. Are my lamp and notebook both ready?\nThe lamp is here. The notebook arrives tomorrow. We text for each item and hold it through Saturday.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "I got a pickup message for my order. I need the lamp tonight, but I’ve lost the order number."
+      },
+      {
+        "voice": "male",
+        "text": "We can search by the order’s phone number. To collect anything, show photo ID matching the name on the order."
+      },
+      {
+        "voice": "female",
+        "text": "That’s my number, but the order is in my brother’s name. Are my lamp and notebook both ready?"
+      },
+      {
+        "voice": "male",
+        "text": "The lamp is here. The notebook arrives tomorrow. We text for each item and hold it through Saturday."
+      }
+    ],
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-IN",
+        "role": "female",
+        "modelVoice": "en-IN-NeerjaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-IN",
+        "role": "male",
+        "modelVoice": "en-IN-PrabhatNeural"
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/b3/b38cec66f2489ad19ab908de975fe4ad0039e6aab17c28c7e58cb7e224cb5399.ogg",
+    "audioStart": 0,
+    "audioEnd": 33.5,
+    "duration": 33.5
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/79/79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d.ogg",
+      "start": 46.00937,
+      "end": 50.02271,
+      "assetSha256": "0cc2825c2157ae55d45124e7d33561c573c3f35054722a3eecbb29071cf72a3d",
+      "speech": "Questions 62 through 64. Listen to the conversation.",
+      "sourceAudioProvenance": {
+        "path": "audio/formal/test-02-cues-03.mp3",
+        "sha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+        "decodedSamples48k": 3278796,
+        "sourceCodec": "mp3",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    },
+    {
+      "mode": "passage",
+      "path": "audio/opus-hq56-96-v2/b3/b38cec66f2489ad19ab908de975fe4ad0039e6aab17c28c7e58cb7e224cb5399.ogg",
+      "start": 0,
+      "end": 33.5,
+      "assetSha256": "dc34dbf3402a1adcb7660b17b701bd0e69bd0544e7056a69ced198ca2384a50a",
+      "speech": "I got a pickup message for my order. I need the lamp tonight, but I’ve lost the order number.\nWe can search by the order’s phone number. To collect anything, show photo ID matching the name on the order.\nThat’s my number, but the order is in my brother’s name. Are my lamp and notebook both ready?\nThe lamp is here. The notebook arrives tomorrow. We text for each item and hold it through Saturday.",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-02/groups/t02-g042-r2/passage.wav",
+        "sha256": "b38cec66f2489ad19ab908de975fe4ad0039e6aab17c28c7e58cb7e224cb5399",
+        "decodedSamples48k": 1608000,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    },
+    {
+      "mode": "question",
+      "path": "audio/opus-hq56-96-v2/e9/e9c1004dccb0f14c6f669c860e5bee3ffab89c9114f3c3b5001afa262201056a.ogg",
+      "start": 0,
+      "end": 6.8125,
+      "assetSha256": "5db2db58cee9667eb28d80880181cf9aa8bf4ce42f3323c60f81fab6b9934d85",
+      "speech": "Number 64. Her brother can come today and Saturday. What should he do?",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-02/questions/Q064/formal-stem-r2.wav",
+        "sha256": "e9c1004dccb0f14c6f669c860e5bee3ffab89c9114f3c3b5001afa262201056a",
+        "decodedSamples48k": 327000,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    },
+    {
+      "mode": "practice",
+      "path": "audio/opus-hq56-96-v2/b3/b38cec66f2489ad19ab908de975fe4ad0039e6aab17c28c7e58cb7e224cb5399.ogg",
+      "start": 0,
+      "end": 33.5,
+      "assetSha256": "dc34dbf3402a1adcb7660b17b701bd0e69bd0544e7056a69ced198ca2384a50a",
+      "speech": "I got a pickup message for my order. I need the lamp tonight, but I’ve lost the order number.\nWe can search by the order’s phone number. To collect anything, show photo ID matching the name on the order.\nThat’s my number, but the order is in my brother’s name. Are my lamp and notebook both ready?\nThe lamp is here. The notebook arrives tomorrow. We text for each item and hold it through Saturday.",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-02/groups/t02-g042-r2/passage.wav",
+        "sha256": "b38cec66f2489ad19ab908de975fe4ad0039e6aab17c28c7e58cb7e224cb5399",
+        "decodedSamples48k": 1608000,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    }
+  ],
+  "imageSha256": null
+}

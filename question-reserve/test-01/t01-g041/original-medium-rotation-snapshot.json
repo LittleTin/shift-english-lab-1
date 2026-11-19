@@ -1,0 +1,857 @@
+{
+  "guard": {
+    "exactPredecessorPackSha256": "a21541e40b09d91c0f96079974a3bdfacb2cc19f6f8d4cc5f29b9bd6f41589de",
+    "predecessorPlanSha256": "883f6b7d0d9d82f8be43e453709c8011bc08e9c64ee6b5e3a7a54ea4f7188ce9",
+    "oldGroup": {
+      "id": "t01-g041",
+      "testId": "test-01",
+      "part": 3,
+      "title": "Training before a model change",
+      "titleZh": "換線前的操作訓練",
+      "topic": "manufacturing",
+      "passage": "Man: We're switching Line Three to the compact model tomorrow. Has the new fixture been installed?\nWoman: Yes, but the operators haven't practiced loading the smaller housing yet.\nMan: Then we should run a short training session before the first shift begins.\nWoman: The process engineer is available at seven fifteen. We can use the first five housings for practice.\nMan: Please mark those as training pieces so they don't enter finished-goods inventory.\nWoman: I'll do that, and I'll place the updated loading instructions beside the fixture.",
+      "passageZh": "男：我們明天要把三號線換成小型機種。新治具裝好了嗎？\n女：好了，但操作員還沒練習過放入較小的外殼。\n男：那我們應該在第一班開始前辦一場簡短訓練。\n女：製程工程師七點十五分有空。我們可以用前五個外殼來練習。\n男：請把那些標示為訓練用品，以免它們進入成品庫存。\n女：我會處理，也會把更新的上料說明放在治具旁。",
+      "audioScript": "We're switching Line Three to the compact model tomorrow. Has the new fixture been installed?\nYes, but the operators haven't practiced loading the smaller housing yet.\nThen we should run a short training session before the first shift begins.\nThe process engineer is available at seven fifteen. We can use the first five housings for practice.\nPlease mark those as training pieces so they don't enter finished-goods inventory.\nI'll do that, and I'll place the updated loading instructions beside the fixture.",
+      "turns": [
+        {
+          "voice": "male",
+          "text": "We're switching Line Three to the compact model tomorrow. Has the new fixture been installed?"
+        },
+        {
+          "voice": "female",
+          "text": "Yes, but the operators haven't practiced loading the smaller housing yet."
+        },
+        {
+          "voice": "male",
+          "text": "Then we should run a short training session before the first shift begins."
+        },
+        {
+          "voice": "female",
+          "text": "The process engineer is available at seven fifteen. We can use the first five housings for practice."
+        },
+        {
+          "voice": "male",
+          "text": "Please mark those as training pieces so they don't enter finished-goods inventory."
+        },
+        {
+          "voice": "female",
+          "text": "I'll do that, and I'll place the updated loading instructions beside the fixture."
+        }
+      ],
+      "audio": "audio/azure-v1/test-01-21.mp3",
+      "duration": 35.904,
+      "audioSpeakers": [
+        {
+          "speaker": "male",
+          "locale": "en-TZ",
+          "role": "male",
+          "modelVoice": "en-TZ-ElimuNeural"
+        },
+        {
+          "speaker": "female",
+          "locale": "en-TZ",
+          "role": "female",
+          "modelVoice": "en-TZ-ImaniNeural"
+        }
+      ],
+      "audioStart": 0.5,
+      "audioEnd": 36.404
+    },
+    "oldGroupCanonicalSha256": "bcc2486da496caf922360d8a790e205b136bd777494cc8793fd601e245d88231",
+    "oldQuestions": [
+      {
+        "id": "t01-q059",
+        "testId": "test-01",
+        "number": 59,
+        "part": 3,
+        "groupId": "t01-g041",
+        "topic": "manufacturing",
+        "difficulty": "intermediate",
+        "tags": [
+          "manufacturing",
+          "purpose"
+        ],
+        "prompt": "What will the operators practice?",
+        "promptZh": "操作員要練習什麼？",
+        "options": [
+          {
+            "id": "A",
+            "text": "Driving a delivery truck.",
+            "zh": "駕駛貨車。",
+            "whyZh": "內容是產線操作訓練，不是運輸訓練。"
+          },
+          {
+            "id": "B",
+            "text": "Loading a smaller housing into a fixture.",
+            "zh": "把較小外殼放入治具。",
+            "whyZh": "女子說操作員還沒練習 loading the smaller housing，因此換線前訓練要補足這個操作。"
+          },
+          {
+            "id": "C",
+            "text": "Writing a software installation guide.",
+            "zh": "編寫軟體安裝手冊。",
+            "whyZh": "對話沒有軟體安裝內容。"
+          },
+          {
+            "id": "D",
+            "text": "Counting finished products in storage.",
+            "zh": "盤點倉庫成品。",
+            "whyZh": "成品庫存只用於說明訓練件不能混入，並非訓練主題。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "女子說操作員還沒練習 loading the smaller housing，因此換線前訓練要補足這個操作。",
+        "evidence": "the operators haven't practiced loading the smaller housing yet.",
+        "vocabulary": [
+          {
+            "term": "fixture",
+            "zh": "治具",
+            "note": "在加工或組裝時定位與固定工件的器具。"
+          }
+        ],
+        "revision": 1
+      },
+      {
+        "id": "t01-q060",
+        "testId": "test-01",
+        "number": 60,
+        "part": 3,
+        "groupId": "t01-g041",
+        "topic": "manufacturing",
+        "difficulty": "intermediate",
+        "tags": [
+          "manufacturing",
+          "time"
+        ],
+        "prompt": "When is the process engineer available?",
+        "promptZh": "製程工程師何時有空？",
+        "options": [
+          {
+            "id": "A",
+            "text": "At seven fifteen.",
+            "zh": "七點十五分。",
+            "whyZh": "女子直接提供 at seven fifteen 作為可安排訓練的時間。"
+          },
+          {
+            "id": "B",
+            "text": "At six thirty.",
+            "zh": "六點半。",
+            "whyZh": "對話沒有六點半這個時間。"
+          },
+          {
+            "id": "C",
+            "text": "At eight forty-five.",
+            "zh": "八點四十五分。",
+            "whyZh": "這不是女子提供的可用時段。"
+          },
+          {
+            "id": "D",
+            "text": "At noon.",
+            "zh": "中午。",
+            "whyZh": "訓練安排在第一班前，工程師指定的時間是七點十五分。"
+          }
+        ],
+        "answer": "A",
+        "explanationZh": "女子直接提供 at seven fifteen 作為可安排訓練的時間。",
+        "evidence": "The process engineer is available at seven fifteen.",
+        "vocabulary": [
+          {
+            "term": "process engineer",
+            "zh": "製程工程師",
+            "note": "負責生產方法、流程與操作條件的工程師。"
+          }
+        ],
+        "revision": 1
+      },
+      {
+        "id": "t01-q061",
+        "testId": "test-01",
+        "number": 61,
+        "part": 3,
+        "groupId": "t01-g041",
+        "topic": "manufacturing",
+        "difficulty": "intermediate",
+        "tags": [
+          "manufacturing",
+          "purpose"
+        ],
+        "prompt": "Why must the practice housings be marked?",
+        "promptZh": "練習用外殼為什麼必須標示？",
+        "options": [
+          {
+            "id": "A",
+            "text": "To keep them out of finished-goods inventory.",
+            "zh": "避免它們混入成品庫存。",
+            "whyZh": "男子直接用 so they do not enter ... 說明目的：區分訓練件與可交付成品。"
+          },
+          {
+            "id": "B",
+            "text": "To identify the delivery driver.",
+            "zh": "辨認送貨司機。",
+            "whyZh": "標示對象是訓練外殼，與司機身分無關。"
+          },
+          {
+            "id": "C",
+            "text": "To increase their selling price.",
+            "zh": "提高它們的售價。",
+            "whyZh": "訓練件不應作為正常成品入庫，沒有提到售價。"
+          },
+          {
+            "id": "D",
+            "text": "To record the fixture's weight.",
+            "zh": "記錄治具重量。",
+            "whyZh": "對話沒有秤重要求；標記是為防止訓練件混料。"
+          }
+        ],
+        "answer": "A",
+        "explanationZh": "男子直接用 so they do not enter ... 說明目的：區分訓練件與可交付成品。",
+        "evidence": "so they don't enter finished-goods inventory.",
+        "vocabulary": [
+          {
+            "term": "finished-goods inventory",
+            "zh": "成品庫存",
+            "note": "已完成生產並按成品管理的存貨。"
+          }
+        ],
+        "revision": 1
+      }
+    ],
+    "oldKeys": {
+      "59": "B",
+      "60": "A",
+      "61": "A"
+    },
+    "oldAssetsSha256": {
+      "audio/formal/test-01-cues-03.mp3": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196",
+      "audio/azure-v1/test-01-21.mp3": "a8c5faf626ba3bb5015140ff8887c4d59bfc26b98b1d9698fb84405eb9d2395a"
+    },
+    "oldFormalFrames": [
+      {
+        "index": 170,
+        "frame": {
+          "src": "audio/formal/test-01-cues-03.mp3",
+          "start": 36.15308,
+          "end": 40.16633,
+          "duration": 4.01325,
+          "kind": "audio",
+          "role": "cue",
+          "part": 3,
+          "groupId": "t01-g041",
+          "at": 1574.61726
+        },
+        "canonicalSha256": "6769bc92615a3f8f701bab06abe879a59d213373e15135539d44756b9102f4a6"
+      },
+      {
+        "index": 171,
+        "frame": {
+          "src": "audio/azure-v1/test-01-21.mp3",
+          "start": 0.5,
+          "end": 36.404,
+          "duration": 35.904,
+          "kind": "audio",
+          "role": "passage",
+          "part": 3,
+          "groupId": "t01-g041",
+          "at": 1578.63051,
+          "speakers": [
+            {
+              "speaker": "male",
+              "locale": "en-TZ",
+              "role": "male",
+              "modelVoice": "en-TZ-ElimuNeural"
+            },
+            {
+              "speaker": "female",
+              "locale": "en-TZ",
+              "role": "female",
+              "modelVoice": "en-TZ-ImaniNeural"
+            }
+          ]
+        },
+        "canonicalSha256": "7a04b2b0ceee934c2032922f582c78525af80c4e2f686ccbebb91f3e393f1e75"
+      },
+      {
+        "index": 172,
+        "frame": {
+          "src": "audio/formal/test-01-cues-03.mp3",
+          "start": 40.41633,
+          "end": 43.29271,
+          "duration": 2.87637,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t01-g041",
+          "questionId": "t01-q059",
+          "at": 1614.53451
+        },
+        "canonicalSha256": "8e4ab2a672532701c183f0c42ec3aa75acb5bf80d4df5eb8e11fb5a6fcf412d9"
+      },
+      {
+        "index": 173,
+        "frame": {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 8.0575,
+          "part": 3,
+          "groupId": "t01-g041",
+          "questionId": "t01-q059",
+          "at": 1617.41088
+        },
+        "canonicalSha256": "a8ce090bbf95943afa96236238fbb4ea4a47e21f8a3ca66dbd867e0d4765d483"
+      },
+      {
+        "index": 174,
+        "frame": {
+          "src": "audio/formal/test-01-cues-03.mp3",
+          "start": 43.54271,
+          "end": 46.70204,
+          "duration": 3.15933,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t01-g041",
+          "questionId": "t01-q060",
+          "at": 1625.46838
+        },
+        "canonicalSha256": "90fd0b24888f1dfc663b8e63f46d71153851737ca2c157da87f19058b7799c6f"
+      },
+      {
+        "index": 175,
+        "frame": {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 8.0575,
+          "part": 3,
+          "groupId": "t01-g041",
+          "questionId": "t01-q060",
+          "at": 1628.62771
+        },
+        "canonicalSha256": "6c09661563c68749e0c31efa339a5d4921f645f0f9c787e0879d0c73e2fcab7a"
+      },
+      {
+        "index": 176,
+        "frame": {
+          "src": "audio/formal/test-01-cues-03.mp3",
+          "start": 46.95204,
+          "end": 50.41529,
+          "duration": 3.46325,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t01-g041",
+          "questionId": "t01-q061",
+          "at": 1636.68521
+        },
+        "canonicalSha256": "a7b8a904b23b4b61555464152ecdeded1bd86b7a790bc0f59b0dfb3b74ed7765"
+      },
+      {
+        "index": 177,
+        "frame": {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 8.0575,
+          "part": 3,
+          "groupId": "t01-g041",
+          "questionId": "t01-q061",
+          "at": 1640.14846
+        },
+        "canonicalSha256": "3d9f8ab97a5b44572fd3cf861d4d1db4e4ec33a8ef8fff53aeadc5b68415a886"
+      }
+    ],
+    "verifiedAndDifficultyRecords": {
+      "59": {
+        "verified": {
+          "status": "verified-item-not-published",
+          "scope": "listening",
+          "checks": "Operators practice loading smaller housing into fixture; coordinated before first shift. Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+          "activeQuestion": {
+            "id": "t01-q059",
+            "testId": "test-01",
+            "number": 59,
+            "part": 3,
+            "groupId": "t01-g041",
+            "topic": "manufacturing",
+            "difficulty": "intermediate",
+            "tags": [
+              "manufacturing",
+              "purpose"
+            ],
+            "prompt": "What will the operators practice?",
+            "promptZh": "操作員要練習什麼？",
+            "options": [
+              {
+                "id": "A",
+                "text": "Driving a delivery truck.",
+                "zh": "駕駛貨車。",
+                "whyZh": "內容是產線操作訓練，不是運輸訓練。"
+              },
+              {
+                "id": "B",
+                "text": "Loading a smaller housing into a fixture.",
+                "zh": "把較小外殼放入治具。",
+                "whyZh": "女子說操作員還沒練習 loading the smaller housing，因此換線前訓練要補足這個操作。"
+              },
+              {
+                "id": "C",
+                "text": "Writing a software installation guide.",
+                "zh": "編寫軟體安裝手冊。",
+                "whyZh": "對話沒有軟體安裝內容。"
+              },
+              {
+                "id": "D",
+                "text": "Counting finished products in storage.",
+                "zh": "盤點倉庫成品。",
+                "whyZh": "成品庫存只用於說明訓練件不能混入，並非訓練主題。"
+              }
+            ],
+            "answer": "B",
+            "explanationZh": "女子說操作員還沒練習 loading the smaller housing，因此換線前訓練要補足這個操作。",
+            "evidence": "the operators haven't practiced loading the smaller housing yet.",
+            "vocabulary": [
+              {
+                "term": "fixture",
+                "zh": "治具",
+                "note": "在加工或組裝時定位與固定工件的器具。"
+              }
+            ],
+            "revision": 1
+          },
+          "group": {
+            "id": "t01-g041",
+            "testId": "test-01",
+            "part": 3,
+            "title": "Training before a model change",
+            "titleZh": "換線前的操作訓練",
+            "topic": "manufacturing",
+            "passage": "Man: We're switching Line Three to the compact model tomorrow. Has the new fixture been installed?\nWoman: Yes, but the operators haven't practiced loading the smaller housing yet.\nMan: Then we should run a short training session before the first shift begins.\nWoman: The process engineer is available at seven fifteen. We can use the first five housings for practice.\nMan: Please mark those as training pieces so they don't enter finished-goods inventory.\nWoman: I'll do that, and I'll place the updated loading instructions beside the fixture.",
+            "passageZh": "男：我們明天要把三號線換成小型機種。新治具裝好了嗎？\n女：好了，但操作員還沒練習過放入較小的外殼。\n男：那我們應該在第一班開始前辦一場簡短訓練。\n女：製程工程師七點十五分有空。我們可以用前五個外殼來練習。\n男：請把那些標示為訓練用品，以免它們進入成品庫存。\n女：我會處理，也會把更新的上料說明放在治具旁。",
+            "audioScript": "We're switching Line Three to the compact model tomorrow. Has the new fixture been installed?\nYes, but the operators haven't practiced loading the smaller housing yet.\nThen we should run a short training session before the first shift begins.\nThe process engineer is available at seven fifteen. We can use the first five housings for practice.\nPlease mark those as training pieces so they don't enter finished-goods inventory.\nI'll do that, and I'll place the updated loading instructions beside the fixture.",
+            "turns": [
+              {
+                "voice": "male",
+                "text": "We're switching Line Three to the compact model tomorrow. Has the new fixture been installed?"
+              },
+              {
+                "voice": "female",
+                "text": "Yes, but the operators haven't practiced loading the smaller housing yet."
+              },
+              {
+                "voice": "male",
+                "text": "Then we should run a short training session before the first shift begins."
+              },
+              {
+                "voice": "female",
+                "text": "The process engineer is available at seven fifteen. We can use the first five housings for practice."
+              },
+              {
+                "voice": "male",
+                "text": "Please mark those as training pieces so they don't enter finished-goods inventory."
+              },
+              {
+                "voice": "female",
+                "text": "I'll do that, and I'll place the updated loading instructions beside the fixture."
+              }
+            ],
+            "audio": "audio/azure-v1/test-01-21.mp3",
+            "duration": 35.904,
+            "audioSpeakers": [
+              {
+                "speaker": "male",
+                "locale": "en-TZ",
+                "role": "male",
+                "modelVoice": "en-TZ-ElimuNeural"
+              },
+              {
+                "speaker": "female",
+                "locale": "en-TZ",
+                "role": "female",
+                "modelVoice": "en-TZ-ImaniNeural"
+              }
+            ],
+            "audioStart": 0.5,
+            "audioEnd": 36.404
+          },
+          "audio": [
+            {
+              "mode": "cue",
+              "path": "audio/formal/test-01-cues-03.mp3",
+              "start": 36.15308,
+              "end": 40.16633,
+              "assetSha256": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196",
+              "speech": "Questions 59 through 61, listen to the conversation."
+            },
+            {
+              "mode": "passage",
+              "path": "audio/azure-v1/test-01-21.mp3",
+              "start": 0.5,
+              "end": 36.404,
+              "assetSha256": "a8c5faf626ba3bb5015140ff8887c4d59bfc26b98b1d9698fb84405eb9d2395a",
+              "speech": "We are switching Line 3 to the compact model tomorrow.\n Has the new fixture been installed?\n Yes, but the operators haven't practiced loading the smaller housing yet.\n Then we should run a short training session before the fast shift begins.\n The process engineer is available at 7.15.\n We can use the fast 5 housings for practice.\n Please mark those as training pieces so they don't enter finished goods in Ventory.\n I'll do that and I'll place the updated loading instructions beside the fixture."
+            },
+            {
+              "mode": "question",
+              "path": "audio/formal/test-01-cues-03.mp3",
+              "start": 40.41633,
+              "end": 43.29271,
+              "assetSha256": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196",
+              "speech": "Number 59, What Will The Operators Practice?"
+            },
+            {
+              "mode": "practice",
+              "path": "audio/azure-v1/test-01-21.mp3",
+              "start": 0.5,
+              "end": 36.404,
+              "assetSha256": "a8c5faf626ba3bb5015140ff8887c4d59bfc26b98b1d9698fb84405eb9d2395a",
+              "speech": "We are switching Line 3 to the compact model tomorrow.\n Has the new fixture been installed?\n Yes, but the operators haven't practiced loading the smaller housing yet.\n Then we should run a short training session before the fast shift begins.\n The process engineer is available at 7.15.\n We can use the fast 5 housings for practice.\n Please mark those as training pieces so they don't enter finished goods in Ventory.\n I'll do that and I'll place the updated loading instructions beside the fixture."
+            }
+          ],
+          "audioCorroboration": "Whole unprompted word-level original says finished goods inventory (29.070–30.000 approximate ASR seconds) and other dialogue all aligns. 1.16× alternate true-source crops beginning 10.000 and 22.000 sec recover 'before the first shift begins' and 'the first five housings for practice' respectively. Earlier ASR uses fast for first. Dates/hours and formal human-language stems align."
+        },
+        "difficulty": {
+          "status": "difficulty-reviewed-not-published",
+          "testId": "test-01",
+          "number": 59,
+          "questionId": "t01-q059",
+          "revision": 1,
+          "sourceQuestionSha256": "b2f866da779bc1342f1cb0b85ea33be3afc6139b01f7a1ffdafebd83ad157cb3",
+          "sourceGroupSha256": "bcc2486da496caf922360d8a790e205b136bd777494cc8793fd601e245d88231",
+          "fromDifficulty": "intermediate",
+          "toDifficulty": "foundation",
+          "reason": "Direct local statement: operators have not practiced loading the smaller housing; no competing task is named.",
+          "provenance": "Difficulty checked against the exact verified content and essential evidence; no modification to listening script or audio."
+        },
+        "verifiedSha256": "42f020ac9833878b3baf555db3fb627c43c4a76a81b893ba84a85a5df3730603",
+        "difficultySha256": "bf7ff24a9b22517607f1d45f909b8f899616be92e6f02096be0e35b6d9128ae6"
+      },
+      "60": {
+        "verified": {
+          "status": "verified-item-not-published",
+          "scope": "listening",
+          "checks": "Engineer available seven fifteen; first five units may be used for practice. Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+          "activeQuestion": {
+            "id": "t01-q060",
+            "testId": "test-01",
+            "number": 60,
+            "part": 3,
+            "groupId": "t01-g041",
+            "topic": "manufacturing",
+            "difficulty": "intermediate",
+            "tags": [
+              "manufacturing",
+              "time"
+            ],
+            "prompt": "When is the process engineer available?",
+            "promptZh": "製程工程師何時有空？",
+            "options": [
+              {
+                "id": "A",
+                "text": "At seven fifteen.",
+                "zh": "七點十五分。",
+                "whyZh": "女子直接提供 at seven fifteen 作為可安排訓練的時間。"
+              },
+              {
+                "id": "B",
+                "text": "At six thirty.",
+                "zh": "六點半。",
+                "whyZh": "對話沒有六點半這個時間。"
+              },
+              {
+                "id": "C",
+                "text": "At eight forty-five.",
+                "zh": "八點四十五分。",
+                "whyZh": "這不是女子提供的可用時段。"
+              },
+              {
+                "id": "D",
+                "text": "At noon.",
+                "zh": "中午。",
+                "whyZh": "訓練安排在第一班前，工程師指定的時間是七點十五分。"
+              }
+            ],
+            "answer": "A",
+            "explanationZh": "女子直接提供 at seven fifteen 作為可安排訓練的時間。",
+            "evidence": "The process engineer is available at seven fifteen.",
+            "vocabulary": [
+              {
+                "term": "process engineer",
+                "zh": "製程工程師",
+                "note": "負責生產方法、流程與操作條件的工程師。"
+              }
+            ],
+            "revision": 1
+          },
+          "group": {
+            "id": "t01-g041",
+            "testId": "test-01",
+            "part": 3,
+            "title": "Training before a model change",
+            "titleZh": "換線前的操作訓練",
+            "topic": "manufacturing",
+            "passage": "Man: We're switching Line Three to the compact model tomorrow. Has the new fixture been installed?\nWoman: Yes, but the operators haven't practiced loading the smaller housing yet.\nMan: Then we should run a short training session before the first shift begins.\nWoman: The process engineer is available at seven fifteen. We can use the first five housings for practice.\nMan: Please mark those as training pieces so they don't enter finished-goods inventory.\nWoman: I'll do that, and I'll place the updated loading instructions beside the fixture.",
+            "passageZh": "男：我們明天要把三號線換成小型機種。新治具裝好了嗎？\n女：好了，但操作員還沒練習過放入較小的外殼。\n男：那我們應該在第一班開始前辦一場簡短訓練。\n女：製程工程師七點十五分有空。我們可以用前五個外殼來練習。\n男：請把那些標示為訓練用品，以免它們進入成品庫存。\n女：我會處理，也會把更新的上料說明放在治具旁。",
+            "audioScript": "We're switching Line Three to the compact model tomorrow. Has the new fixture been installed?\nYes, but the operators haven't practiced loading the smaller housing yet.\nThen we should run a short training session before the first shift begins.\nThe process engineer is available at seven fifteen. We can use the first five housings for practice.\nPlease mark those as training pieces so they don't enter finished-goods inventory.\nI'll do that, and I'll place the updated loading instructions beside the fixture.",
+            "turns": [
+              {
+                "voice": "male",
+                "text": "We're switching Line Three to the compact model tomorrow. Has the new fixture been installed?"
+              },
+              {
+                "voice": "female",
+                "text": "Yes, but the operators haven't practiced loading the smaller housing yet."
+              },
+              {
+                "voice": "male",
+                "text": "Then we should run a short training session before the first shift begins."
+              },
+              {
+                "voice": "female",
+                "text": "The process engineer is available at seven fifteen. We can use the first five housings for practice."
+              },
+              {
+                "voice": "male",
+                "text": "Please mark those as training pieces so they don't enter finished-goods inventory."
+              },
+              {
+                "voice": "female",
+                "text": "I'll do that, and I'll place the updated loading instructions beside the fixture."
+              }
+            ],
+            "audio": "audio/azure-v1/test-01-21.mp3",
+            "duration": 35.904,
+            "audioSpeakers": [
+              {
+                "speaker": "male",
+                "locale": "en-TZ",
+                "role": "male",
+                "modelVoice": "en-TZ-ElimuNeural"
+              },
+              {
+                "speaker": "female",
+                "locale": "en-TZ",
+                "role": "female",
+                "modelVoice": "en-TZ-ImaniNeural"
+              }
+            ],
+            "audioStart": 0.5,
+            "audioEnd": 36.404
+          },
+          "audio": [
+            {
+              "mode": "cue",
+              "path": "audio/formal/test-01-cues-03.mp3",
+              "start": 36.15308,
+              "end": 40.16633,
+              "assetSha256": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196",
+              "speech": "Questions 59 through 61, listen to the conversation."
+            },
+            {
+              "mode": "passage",
+              "path": "audio/azure-v1/test-01-21.mp3",
+              "start": 0.5,
+              "end": 36.404,
+              "assetSha256": "a8c5faf626ba3bb5015140ff8887c4d59bfc26b98b1d9698fb84405eb9d2395a",
+              "speech": "We are switching Line 3 to the compact model tomorrow.\n Has the new fixture been installed?\n Yes, but the operators haven't practiced loading the smaller housing yet.\n Then we should run a short training session before the fast shift begins.\n The process engineer is available at 7.15.\n We can use the fast 5 housings for practice.\n Please mark those as training pieces so they don't enter finished goods in Ventory.\n I'll do that and I'll place the updated loading instructions beside the fixture."
+            },
+            {
+              "mode": "question",
+              "path": "audio/formal/test-01-cues-03.mp3",
+              "start": 43.54271,
+              "end": 46.70204,
+              "assetSha256": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196",
+              "speech": "Number 60, when is the process engineer available?"
+            },
+            {
+              "mode": "practice",
+              "path": "audio/azure-v1/test-01-21.mp3",
+              "start": 0.5,
+              "end": 36.404,
+              "assetSha256": "a8c5faf626ba3bb5015140ff8887c4d59bfc26b98b1d9698fb84405eb9d2395a",
+              "speech": "We are switching Line 3 to the compact model tomorrow.\n Has the new fixture been installed?\n Yes, but the operators haven't practiced loading the smaller housing yet.\n Then we should run a short training session before the fast shift begins.\n The process engineer is available at 7.15.\n We can use the fast 5 housings for practice.\n Please mark those as training pieces so they don't enter finished goods in Ventory.\n I'll do that and I'll place the updated loading instructions beside the fixture."
+            }
+          ],
+          "audioCorroboration": "Whole unprompted word-level original says finished goods inventory (29.070–30.000 approximate ASR seconds) and other dialogue all aligns. 1.16× alternate true-source crops beginning 10.000 and 22.000 sec recover 'before the first shift begins' and 'the first five housings for practice' respectively. Earlier ASR uses fast for first. Dates/hours and formal human-language stems align."
+        },
+        "difficulty": {
+          "status": "difficulty-reviewed-not-published",
+          "testId": "test-01",
+          "number": 60,
+          "questionId": "t01-q060",
+          "revision": 1,
+          "sourceQuestionSha256": "431a7dca3b82ea0fa08f28e83ad27761c620710e29a69befaab3ad07a5aed6d9",
+          "sourceGroupSha256": "bcc2486da496caf922360d8a790e205b136bd777494cc8793fd601e245d88231",
+          "fromDifficulty": "intermediate",
+          "toDifficulty": "foundation",
+          "reason": "The process engineer’s seven-fifteen availability is stated explicitly.",
+          "provenance": "Difficulty checked against the exact verified content and essential evidence; no modification to listening script or audio."
+        },
+        "verifiedSha256": "619ea39ba47c8ca45ce4f9c88e0a8036103e8cc2949a93ff4739358dce1bf846",
+        "difficultySha256": "8f0665998e8fd23c61f2e248e7fde2cbc114dd0307f82968831161f6a1a86ca5"
+      },
+      "61": {
+        "verified": {
+          "status": "verified-item-not-published",
+          "scope": "listening",
+          "checks": "Mark training pieces so they do not enter finished-goods inventory. Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+          "activeQuestion": {
+            "id": "t01-q061",
+            "testId": "test-01",
+            "number": 61,
+            "part": 3,
+            "groupId": "t01-g041",
+            "topic": "manufacturing",
+            "difficulty": "intermediate",
+            "tags": [
+              "manufacturing",
+              "purpose"
+            ],
+            "prompt": "Why must the practice housings be marked?",
+            "promptZh": "練習用外殼為什麼必須標示？",
+            "options": [
+              {
+                "id": "A",
+                "text": "To keep them out of finished-goods inventory.",
+                "zh": "避免它們混入成品庫存。",
+                "whyZh": "男子直接用 so they do not enter ... 說明目的：區分訓練件與可交付成品。"
+              },
+              {
+                "id": "B",
+                "text": "To identify the delivery driver.",
+                "zh": "辨認送貨司機。",
+                "whyZh": "標示對象是訓練外殼，與司機身分無關。"
+              },
+              {
+                "id": "C",
+                "text": "To increase their selling price.",
+                "zh": "提高它們的售價。",
+                "whyZh": "訓練件不應作為正常成品入庫，沒有提到售價。"
+              },
+              {
+                "id": "D",
+                "text": "To record the fixture's weight.",
+                "zh": "記錄治具重量。",
+                "whyZh": "對話沒有秤重要求；標記是為防止訓練件混料。"
+              }
+            ],
+            "answer": "A",
+            "explanationZh": "男子直接用 so they do not enter ... 說明目的：區分訓練件與可交付成品。",
+            "evidence": "so they don't enter finished-goods inventory.",
+            "vocabulary": [
+              {
+                "term": "finished-goods inventory",
+                "zh": "成品庫存",
+                "note": "已完成生產並按成品管理的存貨。"
+              }
+            ],
+            "revision": 1
+          },
+          "group": {
+            "id": "t01-g041",
+            "testId": "test-01",
+            "part": 3,
+            "title": "Training before a model change",
+            "titleZh": "換線前的操作訓練",
+            "topic": "manufacturing",
+            "passage": "Man: We're switching Line Three to the compact model tomorrow. Has the new fixture been installed?\nWoman: Yes, but the operators haven't practiced loading the smaller housing yet.\nMan: Then we should run a short training session before the first shift begins.\nWoman: The process engineer is available at seven fifteen. We can use the first five housings for practice.\nMan: Please mark those as training pieces so they don't enter finished-goods inventory.\nWoman: I'll do that, and I'll place the updated loading instructions beside the fixture.",
+            "passageZh": "男：我們明天要把三號線換成小型機種。新治具裝好了嗎？\n女：好了，但操作員還沒練習過放入較小的外殼。\n男：那我們應該在第一班開始前辦一場簡短訓練。\n女：製程工程師七點十五分有空。我們可以用前五個外殼來練習。\n男：請把那些標示為訓練用品，以免它們進入成品庫存。\n女：我會處理，也會把更新的上料說明放在治具旁。",
+            "audioScript": "We're switching Line Three to the compact model tomorrow. Has the new fixture been installed?\nYes, but the operators haven't practiced loading the smaller housing yet.\nThen we should run a short training session before the first shift begins.\nThe process engineer is available at seven fifteen. We can use the first five housings for practice.\nPlease mark those as training pieces so they don't enter finished-goods inventory.\nI'll do that, and I'll place the updated loading instructions beside the fixture.",
+            "turns": [
+              {
+                "voice": "male",
+                "text": "We're switching Line Three to the compact model tomorrow. Has the new fixture been installed?"
+              },
+              {
+                "voice": "female",
+                "text": "Yes, but the operators haven't practiced loading the smaller housing yet."
+              },
+              {
+                "voice": "male",
+                "text": "Then we should run a short training session before the first shift begins."
+              },
+              {
+                "voice": "female",
+                "text": "The process engineer is available at seven fifteen. We can use the first five housings for practice."
+              },
+              {
+                "voice": "male",
+                "text": "Please mark those as training pieces so they don't enter finished-goods inventory."
+              },
+              {
+                "voice": "female",
+                "text": "I'll do that, and I'll place the updated loading instructions beside the fixture."
+              }
+            ],
+            "audio": "audio/azure-v1/test-01-21.mp3",
+            "duration": 35.904,
+            "audioSpeakers": [
+              {
+                "speaker": "male",
+                "locale": "en-TZ",
+                "role": "male",
+                "modelVoice": "en-TZ-ElimuNeural"
+              },
+              {
+                "speaker": "female",
+                "locale": "en-TZ",
+                "role": "female",
+                "modelVoice": "en-TZ-ImaniNeural"
+              }
+            ],
+            "audioStart": 0.5,
+            "audioEnd": 36.404
+          },
+          "audio": [
+            {
+              "mode": "cue",
+              "path": "audio/formal/test-01-cues-03.mp3",
+              "start": 36.15308,
+              "end": 40.16633,
+              "assetSha256": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196",
+              "speech": "Questions 59 through 61, listen to the conversation."
+            },
+            {
+              "mode": "passage",
+              "path": "audio/azure-v1/test-01-21.mp3",
+              "start": 0.5,
+              "end": 36.404,
+              "assetSha256": "a8c5faf626ba3bb5015140ff8887c4d59bfc26b98b1d9698fb84405eb9d2395a",
+              "speech": "We are switching Line 3 to the compact model tomorrow.\n Has the new fixture been installed?\n Yes, but the operators haven't practiced loading the smaller housing yet.\n Then we should run a short training session before the fast shift begins.\n The process engineer is available at 7.15.\n We can use the fast 5 housings for practice.\n Please mark those as training pieces so they don't enter finished goods in Ventory.\n I'll do that and I'll place the updated loading instructions beside the fixture."
+            },
+            {
+              "mode": "question",
+              "path": "audio/formal/test-01-cues-03.mp3",
+              "start": 46.95204,
+              "end": 50.41529,
+              "assetSha256": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196",
+              "speech": "Number 61. Why must the practice housings be marked?"
+            },
+            {
+              "mode": "practice",
+              "path": "audio/azure-v1/test-01-21.mp3",
+              "start": 0.5,
+              "end": 36.404,
+              "assetSha256": "a8c5faf626ba3bb5015140ff8887c4d59bfc26b98b1d9698fb84405eb9d2395a",
+              "speech": "We are switching Line 3 to the compact model tomorrow.\n Has the new fixture been installed?\n Yes, but the operators haven't practiced loading the smaller housing yet.\n Then we should run a short training session before the fast shift begins.\n The process engineer is available at 7.15.\n We can use the fast 5 housings for practice.\n Please mark those as training pieces so they don't enter finished goods in Ventory.\n I'll do that and I'll place the updated loading instructions beside the fixture."
+            }
+          ],
+          "audioCorroboration": "Whole unprompted word-level original says finished goods inventory (29.070–30.000 approximate ASR seconds) and other dialogue all aligns. 1.16× alternate true-source crops beginning 10.000 and 22.000 sec recover 'before the first shift begins' and 'the first five housings for practice' respectively. Earlier ASR uses fast for first. Dates/hours and formal human-language stems align."
+        },
+        "difficulty": {
+          "status": "difficulty-reviewed-not-published",
+          "testId": "test-01",
+          "number": 61,
+          "questionId": "t01-q061",
+          "revision": 1,
+          "sourceQuestionSha256": "9ec4a7ae68d55bc602a41bdb54099fbe72d10d406170f1843ed2b48dc0cdb1c7",
+          "sourceGroupSha256": "bcc2486da496caf922360d8a790e205b136bd777494cc8793fd601e245d88231",
+          "fromDifficulty": "intermediate",
+          "toDifficulty": "foundation",
+          "reason": "The final instruction supplies the purpose of marking pieces: keep them out of finished-goods inventory.",
+          "provenance": "Difficulty checked against the exact verified content and essential evidence; no modification to listening script or audio."
+        },
+        "verifiedSha256": "41491a39e4802c44b2276957a82519e2dbee7124c28bd4f08cf18b435745294d",
+        "difficultySha256": "c58c61f5f9c0ea3398ba04d36a91f35b1bf951fce41848167a0d525c620cadcc"
+      }
+    }
+  },
+  "draftSha256": "15f71350060acc6fd42d54ca402a892a96a89e35cb8aea11a1e701c6e47d0d6e"
+}

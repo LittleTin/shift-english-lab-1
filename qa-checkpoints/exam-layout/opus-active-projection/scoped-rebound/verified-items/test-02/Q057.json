@@ -1,0 +1,245 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Independent blind English solve and Traditional Chinese alignment; Apply a per-bag tagging rule to the specific pair, distinguishing which bag is tagged from which bag is needed later.",
+    "audio": "Offline independent speech clearance for new exact authoritative passage and numbered stem; waveform and role/locale receipts bound to mode, SHA and range. Original cue remains byte/range identical to the independently verified record.",
+    "association": "Work-tree historical records remain exact in reserve sidecar; verified new IDs; formally unchanged outside bounded timing scope; no browser, publication or human listening claims.",
+    "offlineSpeechEvidenceSha256": {
+      "hashes.txt": "b7cb5aab6a3e7937b3183447f49c05abcf74ca9b7aa81e4a38e99808a6e22858",
+      "vosk-test02-g040-shared-medium-candidate.log": "86ecca27d854d0542f0e6ee7dce37cdf96e1a1c85c66682e6714fb33c0509d3c",
+      "test02-g040-shared-medium-candidate.wav.txt": "454cab103c96d7ab7b10bb1443c409cb4327b6c3fb52de7497356b718c336c4a",
+      "test02-q056-stem-medium-candidate.wav.txt": "eb460928860e1f578b25f3cd778e954619dddbb72bb42292db4920c810b9340b",
+      "test02-q057-stem-medium-candidate.wav.txt": "a57a8d2ea45e60121118ae7cef769939cf1ab913c30b3fb2cac07a827779a454",
+      "test02-q058-stem-medium-candidate.wav.txt": "f41b60a322d8f9620e4b40314787528f2f7a887a7a4c0583593f0b5ec784aa0e",
+      "independentBlindTextReview": "d14102cd4751d472cf8726a09b272a430868bf47b5d620c524e9bb0fb19c6fa7"
+    },
+    "codecProjection": "Both modes use the exact deterministic 48kHz Ogg Opus delivery bytes/ranges; raw hashes remain provenance. Source and decoded Opus samples match in duration; Ogg gapless pre-skip/final granule and unmodified timetable verified. Original semantic decision was made on the checked source clips."
+  },
+  "activeQuestion": {
+    "id": "t02-q057-r2",
+    "testId": "test-02",
+    "number": 57,
+    "part": 3,
+    "groupId": "t02-g040-r2",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "listening-inference"
+    ],
+    "prompt": "She tags only her blue bag. What will staff move?",
+    "promptZh": "她只在藍色行李上掛標籤。飯店人員會搬哪一件？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both bags, because she is changing rooms.",
+        "zh": "兩件都搬，因為她要換房。",
+        "whyZh": "換房不代表兩件都要搬，只有掛標籤的行李會被搬。"
+      },
+      {
+        "id": "B",
+        "text": "Only the red bag, because she will need it later.",
+        "zh": "只搬紅色那件，因為她稍後需要。",
+        "whyZh": "她回來時需要紅色行李，但未掛搬運標籤。"
+      },
+      {
+        "id": "C",
+        "text": "Only the blue bag, leaving the red one where she left it.",
+        "zh": "只搬藍色那件，把紅色那件留在原處。",
+        "whyZh": "她說兩件都放在櫃檯；依照每件要搬的行李都須掛標籤的規則，只有藍色那件會搬。"
+      },
+      {
+        "id": "D",
+        "text": "Neither bag, unless she collects the key first.",
+        "zh": "兩件都不搬，除非她先領房卡。",
+        "whyZh": "是否搬行李取決於行李標籤，沒有要求先領房卡。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "她說兩件都放在櫃檯；依照每件要搬的行李都須掛標籤的規則，只有藍色那件會搬。",
+    "evidence": "I’ll move. I’ll leave both bags here, but I need the red one when I return. | Tag each bag you want moved. Your new key is at reception until five, then at the night desk.",
+    "vocabulary": [
+      {
+        "term": "tag",
+        "zh": "掛上標籤",
+        "note": "動詞，這裡是用標籤指定哪些行李要搬。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t02-q057",
+    "testId": "test-02",
+    "number": 57,
+    "part": 3,
+    "groupId": "t02-g040",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "courtyard"
+    ],
+    "prompt": "When will the new room be ready?",
+    "promptZh": "新房間何時準備好？",
+    "options": [
+      {
+        "id": "A",
+        "text": "At five in the morning.",
+        "zh": "清晨五點。",
+        "whyZh": "五點是她會議結束的下午時間，並非清晨。"
+      },
+      {
+        "id": "B",
+        "text": "At two in the afternoon.",
+        "zh": "下午兩點。",
+        "whyZh": "房務預計下午兩點整理完成。"
+      },
+      {
+        "id": "C",
+        "text": "At noon tomorrow.",
+        "zh": "明天中午。",
+        "whyZh": "對話說今天下午兩點。"
+      },
+      {
+        "id": "D",
+        "text": "Immediately.",
+        "zh": "立刻。",
+        "whyZh": "目前尚未整理好，需等到兩點。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "房務預計下午兩點整理完成。",
+    "evidence": "until two this afternoon",
+    "vocabulary": [
+      {
+        "term": "courtyard",
+        "zh": "中庭",
+        "note": "建築物內側或周圍圍起來的露天空間。"
+      },
+      {
+        "term": "housekeeping",
+        "zh": "房務",
+        "note": "飯店中負責客房清潔與整理的服務。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g040-r2",
+    "testId": "test-02",
+    "part": 3,
+    "title": "A room change around a meeting",
+    "titleZh": "配合會議安排換房",
+    "topic": "daily",
+    "passage": "Woman: The street noise kept me awake. My online meeting is at two this afternoon. Then I’ll be out until five.\nMan: A quieter room will be ready at three. Our workroom is open from one to three.\nWoman: I’ll move. I’ll leave both bags here, but I need the red one when I return.\nMan: Tag each bag you want moved. Your new key is at reception until five, then at the night desk.",
+    "passageZh": "女：街上的噪音害我睡不著。今天下午兩點有線上會議，之後我會出門，到五點才回來。\n男：比較安靜的房間三點會準備好。我們的工作室一點到三點開放。\n女：那我換房。兩件行李都先放這裡，不過我回來時需要紅色那件。\n男：需要搬到新房間的行李，請各掛一張標籤。新房卡五點前在接待櫃檯，之後到夜間櫃檯領。",
+    "audioScript": "The street noise kept me awake. My online meeting is at two this afternoon. Then I’ll be out until five.\nA quieter room will be ready at three. Our workroom is open from one to three.\nI’ll move. I’ll leave both bags here, but I need the red one when I return.\nTag each bag you want moved. Your new key is at reception until five, then at the night desk.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "The street noise kept me awake. My online meeting is at two this afternoon. Then I’ll be out until five."
+      },
+      {
+        "voice": "male",
+        "text": "A quieter room will be ready at three. Our workroom is open from one to three."
+      },
+      {
+        "voice": "female",
+        "text": "I’ll move. I’ll leave both bags here, but I need the red one when I return."
+      },
+      {
+        "voice": "male",
+        "text": "Tag each bag you want moved. Your new key is at reception until five, then at the night desk."
+      }
+    ],
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-CA",
+        "role": "female",
+        "modelVoice": "en-CA-ClaraNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-CA",
+        "role": "male",
+        "modelVoice": "en-CA-LiamNeural"
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/cb/cb8e46de56194a94132bec77c1120077cba0581a0b268722b16a81e75c9308ca.ogg",
+    "audioStart": 0,
+    "audioEnd": 27.5625,
+    "duration": 27.5625
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/79/79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d.ogg",
+      "start": 18.54113,
+      "end": 22.44529,
+      "assetSha256": "0cc2825c2157ae55d45124e7d33561c573c3f35054722a3eecbb29071cf72a3d",
+      "speech": "Questions 56-58. Listen to the conversation.",
+      "sourceAudioProvenance": {
+        "path": "audio/formal/test-02-cues-03.mp3",
+        "sha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+        "decodedSamples48k": 3278796,
+        "sourceCodec": "mp3",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    },
+    {
+      "mode": "passage",
+      "path": "audio/opus-hq56-96-v2/cb/cb8e46de56194a94132bec77c1120077cba0581a0b268722b16a81e75c9308ca.ogg",
+      "start": 0,
+      "end": 27.5625,
+      "assetSha256": "109f0690a4d10f75a69bcf60b87a8d19d2149a3555443c16c0dcfd5bd9567d09",
+      "speech": "The street noise kept me awake. My online meeting is at two this afternoon. Then I’ll be out until five.\nA quieter room will be ready at three. Our workroom is open from one to three.\nI’ll move. I’ll leave both bags here, but I need the red one when I return.\nTag each bag you want moved. Your new key is at reception until five, then at the night desk.",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-02/groups/t02-g040-r2/passage.wav",
+        "sha256": "cb8e46de56194a94132bec77c1120077cba0581a0b268722b16a81e75c9308ca",
+        "decodedSamples48k": 1323000,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    },
+    {
+      "mode": "question",
+      "path": "audio/opus-hq56-96-v2/c2/c22e6817423b7a9c5c96d8dcc1b7a743db902b2709b3cc4dcdc9d68dee59543e.ogg",
+      "start": 0,
+      "end": 6.6875,
+      "assetSha256": "bf3caa353518b142a64afd0d04c26e78c7ab6d0668032f735155edda75b7e589",
+      "speech": "Number 57. She tags only her blue bag. What will staff move?",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-02/questions/Q057/formal-stem-r2.wav",
+        "sha256": "c22e6817423b7a9c5c96d8dcc1b7a743db902b2709b3cc4dcdc9d68dee59543e",
+        "decodedSamples48k": 321000,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    },
+    {
+      "mode": "practice",
+      "path": "audio/opus-hq56-96-v2/cb/cb8e46de56194a94132bec77c1120077cba0581a0b268722b16a81e75c9308ca.ogg",
+      "start": 0,
+      "end": 27.5625,
+      "assetSha256": "109f0690a4d10f75a69bcf60b87a8d19d2149a3555443c16c0dcfd5bd9567d09",
+      "speech": "The street noise kept me awake. My online meeting is at two this afternoon. Then I’ll be out until five.\nA quieter room will be ready at three. Our workroom is open from one to three.\nI’ll move. I’ll leave both bags here, but I need the red one when I return.\nTag each bag you want moved. Your new key is at reception until five, then at the night desk.",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-02/groups/t02-g040-r2/passage.wav",
+        "sha256": "cb8e46de56194a94132bec77c1120077cba0581a0b268722b16a81e75c9308ca",
+        "decodedSamples48k": 1323000,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    }
+  ],
+  "imageSha256": null
+}

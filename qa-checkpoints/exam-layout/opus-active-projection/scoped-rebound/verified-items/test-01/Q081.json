@@ -1,0 +1,222 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "activeQuestion": {
+    "id": "t01-q081-r2",
+    "testId": "test-01",
+    "number": 81,
+    "part": 4,
+    "groupId": "t01-g048-r2",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "event-policy"
+    ],
+    "prompt": "It is raining. Where will a volunteer check a plant's label?",
+    "promptZh": "下雨時，志工會在哪裡檢查植物標籤？",
+    "options": [
+      {
+        "id": "A",
+        "text": "At the garden gate.",
+        "zh": "在花園大門。",
+        "whyZh": "下雨時改走體育館入口，不用花園大門。"
+      },
+      {
+        "id": "B",
+        "text": "At the gardening club.",
+        "zh": "在園藝社。",
+        "whyZh": "園藝社接收剩餘植物，不負責現場入場檢查。"
+      },
+      {
+        "id": "C",
+        "text": "At the return table.",
+        "zh": "在退還桌。",
+        "whyZh": "志工桌保管貼有退還標籤的植物，入場檢查是在開放的入口。"
+      },
+      {
+        "id": "D",
+        "text": "At the gym door.",
+        "zh": "在體育館入口。",
+        "whyZh": "下雨時開放的是體育館入口；志工在開放的入口檢查標籤。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "下雨時開放的是體育館入口；志工在開放的入口檢查標籤。",
+    "evidence": "In rain use the gym door; volunteers check labels at the open entrance.",
+    "vocabulary": [
+      {
+        "term": "instead of",
+        "zh": "而不是；改用",
+        "note": "用來表示以一個選項取代另一個選項。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t01-q081",
+    "testId": "test-01",
+    "number": 81,
+    "part": 4,
+    "groupId": "t01-g048",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "location"
+    ],
+    "prompt": "Where will online orders be prepared during the closure?",
+    "promptZh": "暫停營業期間，線上訂單會在哪裡製作？",
+    "options": [
+      {
+        "id": "A",
+        "text": "At customers' homes.",
+        "zh": "在顧客家中。",
+        "whyZh": "沒有到府製作服務的說法。"
+      },
+      {
+        "id": "B",
+        "text": "At the Market Street shop.",
+        "zh": "在 Market Street 分店。",
+        "whyZh": "訊息明確指定線上訂單由 Market Street 分店製作，並另外處理原 Riverside 取貨安排。"
+      },
+      {
+        "id": "C",
+        "text": "In the Riverside kitchen.",
+        "zh": "在 Riverside 廚房。",
+        "whyZh": "該分店廚房地板維修中，訂單已轉由另一分店製作。"
+      },
+      {
+        "id": "D",
+        "text": "At a warehouse outside the city.",
+        "zh": "在城外倉庫。",
+        "whyZh": "公告只有兩間分店，沒有城外倉庫。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "訊息明確指定線上訂單由 Market Street 分店製作，並另外處理原 Riverside 取貨安排。",
+    "evidence": "online orders will be prepared at our Market Street shop.",
+    "vocabulary": [
+      {
+        "term": "pickup location",
+        "zh": "取貨地點",
+        "note": "顧客前往領取已訂商品的地點。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g048-r2",
+    "testId": "test-01",
+    "part": 4,
+    "title": "A community plant swap",
+    "titleZh": "社區植物交換會",
+    "topic": "daily",
+    "passage": "Bring up to three labelled plants, but no glass pots. Two eligible plants earn early entry; everyone else enters at eleven. In rain, use the gym door, not the garden gate. Volunteers check labels at the open entrance. At twelve noon, volunteers send unclaimed plants to the library's gardening club. Plants with a return tag stay at the volunteer table. Give a volunteer your name before leaving to get that tag.",
+    "passageZh": "最多可帶三盆貼好標籤的植物，但不收玻璃盆。帶兩盆合格植物才可提早入場，其他人十一點入場。下雨時不要走花園大門，請改走體育館入口。志工會在開放的入口檢查標籤。中午十二點，志工會把沒被領走的植物送到圖書館的園藝社。有退還標籤的植物會留在志工桌。請在離開前向志工告知你的名字，才能取得這張標籤。",
+    "audioScript": "Bring up to three labelled plants, but no glass pots. Two eligible plants earn early entry; everyone else enters at eleven. In rain, use the gym door, not the garden gate. Volunteers check labels at the open entrance. At twelve noon, volunteers send unclaimed plants to the library's gardening club. Plants with a return tag stay at the volunteer table. Give a volunteer your name before leaving to get that tag.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Bring up to three labelled plants, but no glass pots. Two eligible plants earn early entry; everyone else enters at eleven. In rain, use the gym door, not the garden gate. Volunteers check labels at the open entrance. At twelve noon, volunteers send unclaimed plants to the library's gardening club. Plants with a return tag stay at the volunteer table. Give a volunteer your name before leaving to get that tag."
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/07/07a2526175540a867926ae7d20403b1f32507fa737da63142c177fafc8cfad83.ogg",
+    "duration": 30.59096,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-HK",
+        "role": "female",
+        "modelVoice": "en-HK-YanNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 30.59096
+  },
+  "imageSha256": null,
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/3f/3f418aff5586579ce8a41216bf0ef58ba657fb6c0861dcf94dbb6c8fc5f267ee.ogg",
+      "start": 4.97517,
+      "end": 7.88325,
+      "assetSha256": "8c10daad4496bd8f6ba93f81c29f5158e613b81bb80d4a3975ae06252dc8e4c1",
+      "speech": "Questions 80 through 82. Listen to the talk.",
+      "sourceAudioProvenance": {
+        "path": "audio/formal/test-01-cues-05.mp3",
+        "sha256": "3f418aff5586579ce8a41216bf0ef58ba657fb6c0861dcf94dbb6c8fc5f267ee",
+        "decodedSamples48k": 3336136,
+        "sourceCodec": "mp3",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    },
+    {
+      "mode": "passage",
+      "path": "audio/opus-hq56-96-v2/07/07a2526175540a867926ae7d20403b1f32507fa737da63142c177fafc8cfad83.ogg",
+      "start": 0,
+      "end": 30.59096,
+      "assetSha256": "003ee2ccc6073dafc392606100ceb4942482da310937dcd69bacb18eec038ba5",
+      "speech": "Bring up to three labelled plants, but no glass pots. Two eligible plants earn early entry; everyone else enters at eleven. In rain, use the gym door, not the garden gate. Volunteers check labels at the open entrance. At twelve noon, volunteers send unclaimed plants to the library's gardening club. Plants with a return tag stay at the volunteer table. Give a volunteer your name before leaving to get that tag.",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-01/groups/t01-g048-r2/passage.wav",
+        "sha256": "07a2526175540a867926ae7d20403b1f32507fa737da63142c177fafc8cfad83",
+        "decodedSamples48k": 1468366,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    },
+    {
+      "mode": "question",
+      "path": "audio/opus-hq56-96-v2/f4/f480ad12dfa07cb0ad297c983fd8b2dfdfcabff968c6bef1f55c4e254161d009.ogg",
+      "start": 0,
+      "end": 6.55,
+      "assetSha256": "7eab7bfeb4c5e425d3962e621563ca1cd25586c27d794843ad710c2bee151d57",
+      "speech": "Number 81. It is raining. Where will a volunteer check a plant's label?",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-01/groups/t01-g048-r2/q081.wav",
+        "sha256": "f480ad12dfa07cb0ad297c983fd8b2dfdfcabff968c6bef1f55c4e254161d009",
+        "decodedSamples48k": 314400,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    },
+    {
+      "mode": "practice",
+      "path": "audio/opus-hq56-96-v2/07/07a2526175540a867926ae7d20403b1f32507fa737da63142c177fafc8cfad83.ogg",
+      "start": 0,
+      "end": 30.59096,
+      "assetSha256": "003ee2ccc6073dafc392606100ceb4942482da310937dcd69bacb18eec038ba5",
+      "speech": "Bring up to three labelled plants, but no glass pots. Two eligible plants earn early entry; everyone else enters at eleven. In rain, use the gym door, not the garden gate. Volunteers check labels at the open entrance. At twelve noon, volunteers send unclaimed plants to the library's gardening club. Plants with a return tag stay at the volunteer table. Give a volunteer your name before leaving to get that tag.",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-01/groups/t01-g048-r2/passage.wav",
+        "sha256": "07a2526175540a867926ae7d20403b1f32507fa737da63142c177fafc8cfad83",
+        "decodedSamples48k": 1468366,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    }
+  ],
+  "checks": {
+    "content": "English/Traditional Chinese content and all option rationales aligned, independent contextual decisions. Previous immutable café questions and original scoring retained in history; never silently rescore.",
+    "audio": "Unprompted stored strongest plus independent Vosk agree on actual repaired shared candidate: explicit twelve noon, library gardening club, eligibility, weather/alternate door and label checks, return tag and give name. Q082 repaired exact, approved Q080/Q081 unchanged; exact cue range retained and old proof linked.",
+    "association": "All four source windows exact, both passage and practice deliberately share identical one-speaker clip, correct new numbered stem; no clipping, 2700 seconds and protected Part3 exact. WAV binding is candidate-only; Opus requires rebind and verification.",
+    "offlineSpeechEvidenceSha256": {
+      "shift-azure-qa-1140-plant/evidence.md": "33467f086d7f199bc79ca4f9812bbfb3b06a8db5aa48406341450cf9ed5fc598",
+      "shift-azure-qa-1140-plant/test01-g048-shared-plant-repair.wav.txt": "412132873a6047db0f21a514c7829401db52ce1dd02cffc005ab79999d5338e2",
+      "shift-azure-qa-1140-plant/vosk-test01-g048-shared-plant-repair.log": "bafd3beb3755488e3fe20b3bf5e0342a68aafeab1624fcd120326152d62884f8",
+      "shift-azure-qa-1130-medium/test01-q081-stem-medium-candidate.wav.txt": "331fd63413d03677e0314c76a7c5d6722ddbdb7165d9e0fd75b3efec0441dd53",
+      "shift-t01-g048-plant-repair-1140/cue-qa/t01-g048-cue.wav.txt": "2fe53da20576eff2f2c9d35236fe0505a5d0a1154b908ae4d32a13d82044eb58",
+      "shift-t01-g048-plant-repair-1140/cue-qa/vosk.log": "6a5c0c1807eccc8c73a6181a12383c1e47d1f89786b6060ff346f63402ecde7e"
+    },
+    "codecProjection": "Both modes use the exact deterministic 48kHz Ogg Opus delivery bytes/ranges; raw hashes remain provenance. Source and decoded Opus samples match in duration; Ogg gapless pre-skip/final granule and unmodified timetable verified. Original semantic decision was made on the checked source clips."
+  }
+}

@@ -1,0 +1,678 @@
+{
+  "group": {
+    "id": "t01-g048",
+    "testId": "test-01",
+    "part": 4,
+    "title": "A temporary café closure",
+    "titleZh": "咖啡店暫時停業",
+    "topic": "daily",
+    "passage": "Thank you for calling Cedar Corner Café. Our Riverside shop is temporarily closed while the kitchen floor is being repaired. We expect to reopen on Monday, September sixteenth. Until then, online orders will be prepared at our Market Street shop. If you selected Riverside pickup for an existing order, a staff member will contact you to arrange a new pickup location or a refund. Catering deliveries will continue as scheduled. For questions about an order, please leave your name, order number, and a telephone number after the tone. We will return your call during business hours.",
+    "passageZh": "感謝致電 Cedar Corner Café。我們的 Riverside 分店因廚房地板維修而暫時關閉，預計九月十六日星期一重新營業。在此之前，線上訂單會由 Market Street 分店製作。如果你現有的訂單選擇在 Riverside 取貨，工作人員會聯絡你安排新的取貨地點或退款。外燴配送仍照原定時程進行。若有訂單問題，請在提示音後留下姓名、訂單編號和電話號碼。我們會在營業時間回電。",
+    "audioScript": "Thank you for calling Cedar Corner Café. Our Riverside shop is temporarily closed while the kitchen floor is being repaired. We expect to reopen on Monday, September sixteenth. Until then, online orders will be prepared at our Market Street shop. If you selected Riverside pickup for an existing order, a staff member will contact you to arrange a new pickup location or a refund. Catering deliveries will continue as scheduled. For questions about an order, please leave your name, order number, and a telephone number after the tone. We will return your call during business hours.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Thank you for calling Cedar Corner Café. Our Riverside shop is temporarily closed while the kitchen floor is being repaired. We expect to reopen on Monday, September sixteenth. Until then, online orders will be prepared at our Market Street shop. If you selected Riverside pickup for an existing order, a staff member will contact you to arrange a new pickup location or a refund. Catering deliveries will continue as scheduled. For questions about an order, please leave your name, order number, and a telephone number after the tone. We will return your call during business hours."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-28.mp3",
+    "duration": 39.864,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-HK",
+        "role": "female",
+        "modelVoice": "en-HK-YanNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 40.364
+  },
+  "questions": {
+    "80": {
+      "id": "t01-q080",
+      "testId": "test-01",
+      "number": 80,
+      "part": 4,
+      "groupId": "t01-g048",
+      "topic": "daily",
+      "difficulty": "intermediate",
+      "tags": [
+        "daily",
+        "reason"
+      ],
+      "prompt": "Why is the Riverside shop closed?",
+      "promptZh": "Riverside 分店為什麼關閉？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Its kitchen floor is being repaired.",
+          "zh": "廚房地板正在維修。",
+          "whyZh": "語音訊息直接說 while the kitchen floor is being repaired，這是暫停營業的原因。"
+        },
+        {
+          "id": "B",
+          "text": "It has permanently moved to another city.",
+          "zh": "它已永久搬到另一個城市。",
+          "whyZh": "店家預計重新開門，temporary 表示不是永久搬遷。"
+        },
+        {
+          "id": "C",
+          "text": "The telephone system has failed.",
+          "zh": "電話系統故障。",
+          "whyZh": "這是正常電話錄音，並未宣布電話故障。"
+        },
+        {
+          "id": "D",
+          "text": "No online orders have been received.",
+          "zh": "沒有收到線上訂單。",
+          "whyZh": "線上訂單由另一分店處理，並非因沒有訂單而關店。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "語音訊息直接說 while the kitchen floor is being repaired，這是暫停營業的原因。",
+      "evidence": "while the kitchen floor is being repaired.",
+      "vocabulary": [
+        {
+          "term": "temporarily",
+          "zh": "暫時地",
+          "note": "表示關閉有時間限制，預期會恢復。"
+        }
+      ],
+      "revision": 1
+    },
+    "81": {
+      "id": "t01-q081",
+      "testId": "test-01",
+      "number": 81,
+      "part": 4,
+      "groupId": "t01-g048",
+      "topic": "daily",
+      "difficulty": "intermediate",
+      "tags": [
+        "daily",
+        "location"
+      ],
+      "prompt": "Where will online orders be prepared during the closure?",
+      "promptZh": "暫停營業期間，線上訂單會在哪裡製作？",
+      "options": [
+        {
+          "id": "A",
+          "text": "At customers' homes.",
+          "zh": "在顧客家中。",
+          "whyZh": "沒有到府製作服務的說法。"
+        },
+        {
+          "id": "B",
+          "text": "At the Market Street shop.",
+          "zh": "在 Market Street 分店。",
+          "whyZh": "訊息明確指定線上訂單由 Market Street 分店製作，並另外處理原 Riverside 取貨安排。"
+        },
+        {
+          "id": "C",
+          "text": "In the Riverside kitchen.",
+          "zh": "在 Riverside 廚房。",
+          "whyZh": "該分店廚房地板維修中，訂單已轉由另一分店製作。"
+        },
+        {
+          "id": "D",
+          "text": "At a warehouse outside the city.",
+          "zh": "在城外倉庫。",
+          "whyZh": "公告只有兩間分店，沒有城外倉庫。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "訊息明確指定線上訂單由 Market Street 分店製作，並另外處理原 Riverside 取貨安排。",
+      "evidence": "online orders will be prepared at our Market Street shop.",
+      "vocabulary": [
+        {
+          "term": "pickup location",
+          "zh": "取貨地點",
+          "note": "顧客前往領取已訂商品的地點。"
+        }
+      ],
+      "revision": 1
+    },
+    "82": {
+      "id": "t01-q082",
+      "testId": "test-01",
+      "number": 82,
+      "part": 4,
+      "groupId": "t01-g048",
+      "topic": "daily",
+      "difficulty": "intermediate",
+      "tags": [
+        "daily",
+        "unchanged_service"
+      ],
+      "prompt": "Which service will continue on its original schedule?",
+      "promptZh": "哪項服務會依原定時程繼續？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dining inside the Riverside shop.",
+          "zh": "在 Riverside 分店內用。",
+          "whyZh": "分店暫時關閉，無法維持原內用服務。"
+        },
+        {
+          "id": "B",
+          "text": "All Riverside pickups without changes.",
+          "zh": "所有 Riverside 取貨都完全不變。",
+          "whyZh": "已選 Riverside 取貨的客人會被聯絡改地點或退款。"
+        },
+        {
+          "id": "C",
+          "text": "Catering deliveries.",
+          "zh": "外燴配送。",
+          "whyZh": "訊息直接說 Catering deliveries will continue as scheduled；部分取貨安排才需要變更。"
+        },
+        {
+          "id": "D",
+          "text": "Kitchen-floor repairs at both shops.",
+          "zh": "兩間分店的廚房地板維修。",
+          "whyZh": "只提到 Riverside 維修，且維修不是所問的對客配送服務。"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "訊息直接說 Catering deliveries will continue as scheduled；部分取貨安排才需要變更。",
+      "evidence": "Catering deliveries will continue as scheduled.",
+      "vocabulary": [
+        {
+          "term": "as scheduled",
+          "zh": "依原定時程",
+          "note": "表示安排沒有更動。"
+        }
+      ],
+      "revision": 1
+    }
+  },
+  "officialOriginalRecords": {
+    "80": {
+      "verified": {
+        "status": "verified-item-not-published",
+        "scope": "listening",
+        "checks": "Kitchen floor under repair; closure temporary Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+        "activeQuestion": {
+          "id": "t01-q080",
+          "testId": "test-01",
+          "number": 80,
+          "part": 4,
+          "groupId": "t01-g048",
+          "topic": "daily",
+          "difficulty": "intermediate",
+          "tags": [
+            "daily",
+            "reason"
+          ],
+          "prompt": "Why is the Riverside shop closed?",
+          "promptZh": "Riverside 分店為什麼關閉？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Its kitchen floor is being repaired.",
+              "zh": "廚房地板正在維修。",
+              "whyZh": "語音訊息直接說 while the kitchen floor is being repaired，這是暫停營業的原因。"
+            },
+            {
+              "id": "B",
+              "text": "It has permanently moved to another city.",
+              "zh": "它已永久搬到另一個城市。",
+              "whyZh": "店家預計重新開門，temporary 表示不是永久搬遷。"
+            },
+            {
+              "id": "C",
+              "text": "The telephone system has failed.",
+              "zh": "電話系統故障。",
+              "whyZh": "這是正常電話錄音，並未宣布電話故障。"
+            },
+            {
+              "id": "D",
+              "text": "No online orders have been received.",
+              "zh": "沒有收到線上訂單。",
+              "whyZh": "線上訂單由另一分店處理，並非因沒有訂單而關店。"
+            }
+          ],
+          "answer": "A",
+          "explanationZh": "語音訊息直接說 while the kitchen floor is being repaired，這是暫停營業的原因。",
+          "evidence": "while the kitchen floor is being repaired.",
+          "vocabulary": [
+            {
+              "term": "temporarily",
+              "zh": "暫時地",
+              "note": "表示關閉有時間限制，預期會恢復。"
+            }
+          ],
+          "revision": 1
+        },
+        "group": {
+          "id": "t01-g048",
+          "testId": "test-01",
+          "part": 4,
+          "title": "A temporary café closure",
+          "titleZh": "咖啡店暫時停業",
+          "topic": "daily",
+          "passage": "Thank you for calling Cedar Corner Café. Our Riverside shop is temporarily closed while the kitchen floor is being repaired. We expect to reopen on Monday, September sixteenth. Until then, online orders will be prepared at our Market Street shop. If you selected Riverside pickup for an existing order, a staff member will contact you to arrange a new pickup location or a refund. Catering deliveries will continue as scheduled. For questions about an order, please leave your name, order number, and a telephone number after the tone. We will return your call during business hours.",
+          "passageZh": "感謝致電 Cedar Corner Café。我們的 Riverside 分店因廚房地板維修而暫時關閉，預計九月十六日星期一重新營業。在此之前，線上訂單會由 Market Street 分店製作。如果你現有的訂單選擇在 Riverside 取貨，工作人員會聯絡你安排新的取貨地點或退款。外燴配送仍照原定時程進行。若有訂單問題，請在提示音後留下姓名、訂單編號和電話號碼。我們會在營業時間回電。",
+          "audioScript": "Thank you for calling Cedar Corner Café. Our Riverside shop is temporarily closed while the kitchen floor is being repaired. We expect to reopen on Monday, September sixteenth. Until then, online orders will be prepared at our Market Street shop. If you selected Riverside pickup for an existing order, a staff member will contact you to arrange a new pickup location or a refund. Catering deliveries will continue as scheduled. For questions about an order, please leave your name, order number, and a telephone number after the tone. We will return your call during business hours.",
+          "turns": [
+            {
+              "voice": "female",
+              "text": "Thank you for calling Cedar Corner Café. Our Riverside shop is temporarily closed while the kitchen floor is being repaired. We expect to reopen on Monday, September sixteenth. Until then, online orders will be prepared at our Market Street shop. If you selected Riverside pickup for an existing order, a staff member will contact you to arrange a new pickup location or a refund. Catering deliveries will continue as scheduled. For questions about an order, please leave your name, order number, and a telephone number after the tone. We will return your call during business hours."
+            }
+          ],
+          "audio": "audio/azure-v1/test-01-28.mp3",
+          "duration": 39.864,
+          "audioSpeakers": [
+            {
+              "speaker": "female",
+              "locale": "en-HK",
+              "role": "female",
+              "modelVoice": "en-HK-YanNeural"
+            }
+          ],
+          "audioStart": 0.5,
+          "audioEnd": 40.364
+        },
+        "audio": [
+          {
+            "mode": "passage",
+            "path": "audio/azure-v1/test-01-28.mp3",
+            "start": 0.5,
+            "end": 40.364,
+            "assetSha256": "b4adac84a59ddd898a4333b34ce508a24fa52761a8981b5d3a257cd02a0160ef",
+            "speech": "Thank you for calling Cedar Corner Cafe. Our Riverside Shop is temporarily closed while the\n kitchen floor is being repaired. We expect to reopen on Monday, September 16. Until then,\n online orders will be prepared at our Market Street Shop. If you selected Riverside Pickup\n for an existing order, a staff member will contact you to arrange a new pickup location or a refund.\n Catering deliveries will continue as scheduled. For questions about an order,\n please leave your name, order number, and a telephone number after the tone.\n We will return your call during business hours."
+          },
+          {
+            "mode": "question",
+            "path": "audio/formal/test-01-cues-05.mp3",
+            "start": 8.13325,
+            "end": 11.02175,
+            "assetSha256": "3f418aff5586579ce8a41216bf0ef58ba657fb6c0861dcf94dbb6c8fc5f267ee",
+            "speech": "Number 80, why is the Riverside shop closed?"
+          },
+          {
+            "mode": "practice",
+            "path": "audio/azure-v1/test-01-28.mp3",
+            "start": 0.5,
+            "end": 40.364,
+            "assetSha256": "b4adac84a59ddd898a4333b34ce508a24fa52761a8981b5d3a257cd02a0160ef",
+            "speech": "Thank you for calling Cedar Corner Cafe. Our Riverside Shop is temporarily closed while the\n kitchen floor is being repaired. We expect to reopen on Monday, September 16. Until then,\n online orders will be prepared at our Market Street Shop. If you selected Riverside Pickup\n for an existing order, a staff member will contact you to arrange a new pickup location or a refund.\n Catering deliveries will continue as scheduled. For questions about an order,\n please leave your name, order number, and a telephone number after the tone.\n We will return your call during business hours."
+          }
+        ]
+      },
+      "verifiedSha256": "c7dd06bbddf385a84c96c7844cab1762aadb648497fd437863049fa7e9e18cd8",
+      "difficulty": {
+        "status": "difficulty-reviewed-not-published",
+        "testId": "test-01",
+        "number": 80,
+        "questionId": "t01-q080",
+        "revision": 1,
+        "sourceQuestionSha256": "4de80223e62053f9c6e4f1b555a96be264f95ef9c3ee1e3480dd38973479917c",
+        "sourceGroupSha256": "bd7cb1ed8cfbaa7b7c5afa3019a41fe2cc8601f206a2af6f382f21d2ca0c4f69",
+        "fromDifficulty": "intermediate",
+        "toDifficulty": "foundation",
+        "reason": "One direct clause says the Riverside kitchen floor is being repaired.",
+        "provenance": "Difficulty checked against the exact verified content and essential evidence; no modification to listening script or audio."
+      },
+      "difficultySha256": "c92c59bafcf44de8899ef4241eb960a4f10db6af2156e5e8ad0c186447652dda"
+    },
+    "81": {
+      "verified": {
+        "status": "verified-item-not-published",
+        "scope": "listening",
+        "checks": "Market Street takes online orders Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+        "activeQuestion": {
+          "id": "t01-q081",
+          "testId": "test-01",
+          "number": 81,
+          "part": 4,
+          "groupId": "t01-g048",
+          "topic": "daily",
+          "difficulty": "intermediate",
+          "tags": [
+            "daily",
+            "location"
+          ],
+          "prompt": "Where will online orders be prepared during the closure?",
+          "promptZh": "暫停營業期間，線上訂單會在哪裡製作？",
+          "options": [
+            {
+              "id": "A",
+              "text": "At customers' homes.",
+              "zh": "在顧客家中。",
+              "whyZh": "沒有到府製作服務的說法。"
+            },
+            {
+              "id": "B",
+              "text": "At the Market Street shop.",
+              "zh": "在 Market Street 分店。",
+              "whyZh": "訊息明確指定線上訂單由 Market Street 分店製作，並另外處理原 Riverside 取貨安排。"
+            },
+            {
+              "id": "C",
+              "text": "In the Riverside kitchen.",
+              "zh": "在 Riverside 廚房。",
+              "whyZh": "該分店廚房地板維修中，訂單已轉由另一分店製作。"
+            },
+            {
+              "id": "D",
+              "text": "At a warehouse outside the city.",
+              "zh": "在城外倉庫。",
+              "whyZh": "公告只有兩間分店，沒有城外倉庫。"
+            }
+          ],
+          "answer": "B",
+          "explanationZh": "訊息明確指定線上訂單由 Market Street 分店製作，並另外處理原 Riverside 取貨安排。",
+          "evidence": "online orders will be prepared at our Market Street shop.",
+          "vocabulary": [
+            {
+              "term": "pickup location",
+              "zh": "取貨地點",
+              "note": "顧客前往領取已訂商品的地點。"
+            }
+          ],
+          "revision": 1
+        },
+        "group": {
+          "id": "t01-g048",
+          "testId": "test-01",
+          "part": 4,
+          "title": "A temporary café closure",
+          "titleZh": "咖啡店暫時停業",
+          "topic": "daily",
+          "passage": "Thank you for calling Cedar Corner Café. Our Riverside shop is temporarily closed while the kitchen floor is being repaired. We expect to reopen on Monday, September sixteenth. Until then, online orders will be prepared at our Market Street shop. If you selected Riverside pickup for an existing order, a staff member will contact you to arrange a new pickup location or a refund. Catering deliveries will continue as scheduled. For questions about an order, please leave your name, order number, and a telephone number after the tone. We will return your call during business hours.",
+          "passageZh": "感謝致電 Cedar Corner Café。我們的 Riverside 分店因廚房地板維修而暫時關閉，預計九月十六日星期一重新營業。在此之前，線上訂單會由 Market Street 分店製作。如果你現有的訂單選擇在 Riverside 取貨，工作人員會聯絡你安排新的取貨地點或退款。外燴配送仍照原定時程進行。若有訂單問題，請在提示音後留下姓名、訂單編號和電話號碼。我們會在營業時間回電。",
+          "audioScript": "Thank you for calling Cedar Corner Café. Our Riverside shop is temporarily closed while the kitchen floor is being repaired. We expect to reopen on Monday, September sixteenth. Until then, online orders will be prepared at our Market Street shop. If you selected Riverside pickup for an existing order, a staff member will contact you to arrange a new pickup location or a refund. Catering deliveries will continue as scheduled. For questions about an order, please leave your name, order number, and a telephone number after the tone. We will return your call during business hours.",
+          "turns": [
+            {
+              "voice": "female",
+              "text": "Thank you for calling Cedar Corner Café. Our Riverside shop is temporarily closed while the kitchen floor is being repaired. We expect to reopen on Monday, September sixteenth. Until then, online orders will be prepared at our Market Street shop. If you selected Riverside pickup for an existing order, a staff member will contact you to arrange a new pickup location or a refund. Catering deliveries will continue as scheduled. For questions about an order, please leave your name, order number, and a telephone number after the tone. We will return your call during business hours."
+            }
+          ],
+          "audio": "audio/azure-v1/test-01-28.mp3",
+          "duration": 39.864,
+          "audioSpeakers": [
+            {
+              "speaker": "female",
+              "locale": "en-HK",
+              "role": "female",
+              "modelVoice": "en-HK-YanNeural"
+            }
+          ],
+          "audioStart": 0.5,
+          "audioEnd": 40.364
+        },
+        "audio": [
+          {
+            "mode": "passage",
+            "path": "audio/azure-v1/test-01-28.mp3",
+            "start": 0.5,
+            "end": 40.364,
+            "assetSha256": "b4adac84a59ddd898a4333b34ce508a24fa52761a8981b5d3a257cd02a0160ef",
+            "speech": "Thank you for calling Cedar Corner Cafe. Our Riverside Shop is temporarily closed while the\n kitchen floor is being repaired. We expect to reopen on Monday, September 16. Until then,\n online orders will be prepared at our Market Street Shop. If you selected Riverside Pickup\n for an existing order, a staff member will contact you to arrange a new pickup location or a refund.\n Catering deliveries will continue as scheduled. For questions about an order,\n please leave your name, order number, and a telephone number after the tone.\n We will return your call during business hours."
+          },
+          {
+            "mode": "question",
+            "path": "audio/formal/test-01-cues-05.mp3",
+            "start": 11.27175,
+            "end": 15.24742,
+            "assetSha256": "3f418aff5586579ce8a41216bf0ef58ba657fb6c0861dcf94dbb6c8fc5f267ee",
+            "speech": "Number 81, where will online orders be prepared during the closure?"
+          },
+          {
+            "mode": "practice",
+            "path": "audio/azure-v1/test-01-28.mp3",
+            "start": 0.5,
+            "end": 40.364,
+            "assetSha256": "b4adac84a59ddd898a4333b34ce508a24fa52761a8981b5d3a257cd02a0160ef",
+            "speech": "Thank you for calling Cedar Corner Cafe. Our Riverside Shop is temporarily closed while the\n kitchen floor is being repaired. We expect to reopen on Monday, September 16. Until then,\n online orders will be prepared at our Market Street Shop. If you selected Riverside Pickup\n for an existing order, a staff member will contact you to arrange a new pickup location or a refund.\n Catering deliveries will continue as scheduled. For questions about an order,\n please leave your name, order number, and a telephone number after the tone.\n We will return your call during business hours."
+          }
+        ]
+      },
+      "verifiedSha256": "b4ea3ac470233e476e46d28f8e7a9217a71bf621fc97540d8e1b5a21d002dee6",
+      "difficulty": {
+        "status": "difficulty-reviewed-not-published",
+        "testId": "test-01",
+        "number": 81,
+        "questionId": "t01-q081",
+        "revision": 1,
+        "sourceQuestionSha256": "12af43433607918f7230597e25c589fefda80f5498efd5e29fae6bbde6bfb519",
+        "sourceGroupSha256": "bd7cb1ed8cfbaa7b7c5afa3019a41fe2cc8601f206a2af6f382f21d2ca0c4f69",
+        "fromDifficulty": "intermediate",
+        "toDifficulty": "foundation",
+        "reason": "Market Street is directly named as the temporary location for preparation.",
+        "provenance": "Difficulty checked against the exact verified content and essential evidence; no modification to listening script or audio."
+      },
+      "difficultySha256": "e29883ff95471f6383eee357add1090bcbc101e328e5dcd7172a71eb294a7e9e"
+    },
+    "82": {
+      "verified": {
+        "status": "verified-item-not-published",
+        "scope": "listening",
+        "checks": "Catering deliveries continue original schedule; pickup may change/refund Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+        "activeQuestion": {
+          "id": "t01-q082",
+          "testId": "test-01",
+          "number": 82,
+          "part": 4,
+          "groupId": "t01-g048",
+          "topic": "daily",
+          "difficulty": "intermediate",
+          "tags": [
+            "daily",
+            "unchanged_service"
+          ],
+          "prompt": "Which service will continue on its original schedule?",
+          "promptZh": "哪項服務會依原定時程繼續？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Dining inside the Riverside shop.",
+              "zh": "在 Riverside 分店內用。",
+              "whyZh": "分店暫時關閉，無法維持原內用服務。"
+            },
+            {
+              "id": "B",
+              "text": "All Riverside pickups without changes.",
+              "zh": "所有 Riverside 取貨都完全不變。",
+              "whyZh": "已選 Riverside 取貨的客人會被聯絡改地點或退款。"
+            },
+            {
+              "id": "C",
+              "text": "Catering deliveries.",
+              "zh": "外燴配送。",
+              "whyZh": "訊息直接說 Catering deliveries will continue as scheduled；部分取貨安排才需要變更。"
+            },
+            {
+              "id": "D",
+              "text": "Kitchen-floor repairs at both shops.",
+              "zh": "兩間分店的廚房地板維修。",
+              "whyZh": "只提到 Riverside 維修，且維修不是所問的對客配送服務。"
+            }
+          ],
+          "answer": "C",
+          "explanationZh": "訊息直接說 Catering deliveries will continue as scheduled；部分取貨安排才需要變更。",
+          "evidence": "Catering deliveries will continue as scheduled.",
+          "vocabulary": [
+            {
+              "term": "as scheduled",
+              "zh": "依原定時程",
+              "note": "表示安排沒有更動。"
+            }
+          ],
+          "revision": 1
+        },
+        "group": {
+          "id": "t01-g048",
+          "testId": "test-01",
+          "part": 4,
+          "title": "A temporary café closure",
+          "titleZh": "咖啡店暫時停業",
+          "topic": "daily",
+          "passage": "Thank you for calling Cedar Corner Café. Our Riverside shop is temporarily closed while the kitchen floor is being repaired. We expect to reopen on Monday, September sixteenth. Until then, online orders will be prepared at our Market Street shop. If you selected Riverside pickup for an existing order, a staff member will contact you to arrange a new pickup location or a refund. Catering deliveries will continue as scheduled. For questions about an order, please leave your name, order number, and a telephone number after the tone. We will return your call during business hours.",
+          "passageZh": "感謝致電 Cedar Corner Café。我們的 Riverside 分店因廚房地板維修而暫時關閉，預計九月十六日星期一重新營業。在此之前，線上訂單會由 Market Street 分店製作。如果你現有的訂單選擇在 Riverside 取貨，工作人員會聯絡你安排新的取貨地點或退款。外燴配送仍照原定時程進行。若有訂單問題，請在提示音後留下姓名、訂單編號和電話號碼。我們會在營業時間回電。",
+          "audioScript": "Thank you for calling Cedar Corner Café. Our Riverside shop is temporarily closed while the kitchen floor is being repaired. We expect to reopen on Monday, September sixteenth. Until then, online orders will be prepared at our Market Street shop. If you selected Riverside pickup for an existing order, a staff member will contact you to arrange a new pickup location or a refund. Catering deliveries will continue as scheduled. For questions about an order, please leave your name, order number, and a telephone number after the tone. We will return your call during business hours.",
+          "turns": [
+            {
+              "voice": "female",
+              "text": "Thank you for calling Cedar Corner Café. Our Riverside shop is temporarily closed while the kitchen floor is being repaired. We expect to reopen on Monday, September sixteenth. Until then, online orders will be prepared at our Market Street shop. If you selected Riverside pickup for an existing order, a staff member will contact you to arrange a new pickup location or a refund. Catering deliveries will continue as scheduled. For questions about an order, please leave your name, order number, and a telephone number after the tone. We will return your call during business hours."
+            }
+          ],
+          "audio": "audio/azure-v1/test-01-28.mp3",
+          "duration": 39.864,
+          "audioSpeakers": [
+            {
+              "speaker": "female",
+              "locale": "en-HK",
+              "role": "female",
+              "modelVoice": "en-HK-YanNeural"
+            }
+          ],
+          "audioStart": 0.5,
+          "audioEnd": 40.364
+        },
+        "audio": [
+          {
+            "mode": "passage",
+            "path": "audio/azure-v1/test-01-28.mp3",
+            "start": 0.5,
+            "end": 40.364,
+            "assetSha256": "b4adac84a59ddd898a4333b34ce508a24fa52761a8981b5d3a257cd02a0160ef",
+            "speech": "Thank you for calling Cedar Corner Cafe. Our Riverside Shop is temporarily closed while the\n kitchen floor is being repaired. We expect to reopen on Monday, September 16. Until then,\n online orders will be prepared at our Market Street Shop. If you selected Riverside Pickup\n for an existing order, a staff member will contact you to arrange a new pickup location or a refund.\n Catering deliveries will continue as scheduled. For questions about an order,\n please leave your name, order number, and a telephone number after the tone.\n We will return your call during business hours."
+          },
+          {
+            "mode": "question",
+            "path": "audio/formal/test-01-cues-05.mp3",
+            "start": 15.49742,
+            "end": 19.56729,
+            "assetSha256": "3f418aff5586579ce8a41216bf0ef58ba657fb6c0861dcf94dbb6c8fc5f267ee",
+            "speech": "Number 82, which service will continue on its original schedule."
+          },
+          {
+            "mode": "practice",
+            "path": "audio/azure-v1/test-01-28.mp3",
+            "start": 0.5,
+            "end": 40.364,
+            "assetSha256": "b4adac84a59ddd898a4333b34ce508a24fa52761a8981b5d3a257cd02a0160ef",
+            "speech": "Thank you for calling Cedar Corner Cafe. Our Riverside Shop is temporarily closed while the\n kitchen floor is being repaired. We expect to reopen on Monday, September 16. Until then,\n online orders will be prepared at our Market Street Shop. If you selected Riverside Pickup\n for an existing order, a staff member will contact you to arrange a new pickup location or a refund.\n Catering deliveries will continue as scheduled. For questions about an order,\n please leave your name, order number, and a telephone number after the tone.\n We will return your call during business hours."
+          }
+        ]
+      },
+      "verifiedSha256": "713f24618705fcfdb6760a3ba90abb5ea4642d71c57a622a759e864d297a5184",
+      "difficulty": {
+        "status": "difficulty-reviewed-not-published",
+        "testId": "test-01",
+        "number": 82,
+        "questionId": "t01-q082",
+        "revision": 1,
+        "sourceQuestionSha256": "ee6aef9bdd4f8df02f312c94095144e50c5ffd91ff5f049aaab752f7d74dfc52",
+        "sourceGroupSha256": "bd7cb1ed8cfbaa7b7c5afa3019a41fe2cc8601f206a2af6f382f21d2ca0c4f69",
+        "fromDifficulty": "intermediate",
+        "toDifficulty": "foundation",
+        "reason": "Catering deliveries continuing as scheduled is stated explicitly.",
+        "provenance": "Difficulty checked against the exact verified content and essential evidence; no modification to listening script or audio."
+      },
+      "difficultySha256": "fcc3f9eb484b1d020b9cef77b3c0876bc11f0c47cec07541a708a436db7d92a6"
+    }
+  },
+  "formalFrames": [
+    {
+      "src": "audio/formal/test-01-cues-05.mp3",
+      "start": 4.97517,
+      "end": 7.88325,
+      "duration": 2.90808,
+      "kind": "audio",
+      "role": "cue",
+      "part": 4,
+      "groupId": "t01-g048",
+      "at": 2131.83281
+    },
+    {
+      "src": "audio/azure-v1/test-01-28.mp3",
+      "start": 0.5,
+      "end": 40.364,
+      "duration": 39.864,
+      "kind": "audio",
+      "role": "passage",
+      "part": 4,
+      "groupId": "t01-g048",
+      "at": 2134.74089,
+      "speakers": [
+        {
+          "speaker": "female",
+          "locale": "en-HK",
+          "role": "female",
+          "modelVoice": "en-HK-YanNeural"
+        }
+      ]
+    },
+    {
+      "src": "audio/formal/test-01-cues-05.mp3",
+      "start": 8.13325,
+      "end": 11.02175,
+      "duration": 2.8885,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t01-g048",
+      "questionId": "t01-q080",
+      "at": 2174.60489
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 8.06945,
+      "part": 4,
+      "groupId": "t01-g048",
+      "questionId": "t01-q080",
+      "at": 2177.49339
+    },
+    {
+      "src": "audio/formal/test-01-cues-05.mp3",
+      "start": 11.27175,
+      "end": 15.24742,
+      "duration": 3.97567,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t01-g048",
+      "questionId": "t01-q081",
+      "at": 2185.56284
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 8.06945,
+      "part": 4,
+      "groupId": "t01-g048",
+      "questionId": "t01-q081",
+      "at": 2189.53851
+    },
+    {
+      "src": "audio/formal/test-01-cues-05.mp3",
+      "start": 15.49742,
+      "end": 19.56729,
+      "duration": 4.06987,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t01-g048",
+      "questionId": "t01-q082",
+      "at": 2197.60796
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 8.06945,
+      "part": 4,
+      "groupId": "t01-g048",
+      "questionId": "t01-q082",
+      "at": 2201.67783
+    }
+  ],
+  "originalAssets": {
+    "audio/azure-v1/test-01-28.mp3": "b4adac84a59ddd898a4333b34ce508a24fa52761a8981b5d3a257cd02a0160ef",
+    "audio/formal/test-01-cues-05.mp3": "3f418aff5586579ce8a41216bf0ef58ba657fb6c0861dcf94dbb6c8fc5f267ee"
+  },
+  "oldPlanEdition": "toeic-1"
+}

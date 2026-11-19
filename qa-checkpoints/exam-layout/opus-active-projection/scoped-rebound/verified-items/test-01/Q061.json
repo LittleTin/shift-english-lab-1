@@ -1,0 +1,249 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "activeQuestion": {
+    "id": "t01-q061-r2",
+    "testId": "test-01",
+    "number": 61,
+    "part": 3,
+    "groupId": "t01-g041",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "purpose"
+    ],
+    "prompt": "Unmarked housings reached finished goods. What should staff check?",
+    "promptZh": "未標記的外殼混入成品。員工應查核什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Whether any were among the pieces set aside for practice.",
+        "zh": "這些外殼是否有用於練習的零件。",
+        "whyZh": "最初五件外殼用於訓練，應標記以免列入成品。若發現未標記的外殼，需先確認是否混入練習件。"
+      },
+      {
+        "id": "B",
+        "text": "Whether the housings were assigned to the first order.",
+        "zh": "這些外殼是否分配給第一筆訂單。",
+        "whyZh": "先確認是否為不能列入成品的練習件。"
+      },
+      {
+        "id": "C",
+        "text": "Whether the old fixture has been removed from storage.",
+        "zh": "舊治具是否已從倉庫移出。",
+        "whyZh": "問題是在成品中是否混入練習件，不是舊治具所在。"
+      },
+      {
+        "id": "D",
+        "text": "Whether the process engineer has placed new instructions by the fixture.",
+        "zh": "製程工程師是否把新操作指示放在治具旁。",
+        "whyZh": "對話由女方放置指示；指示位置也不能查明這些外殼是不是練習件。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "最初五件外殼用於訓練，應標記以免列入成品。若發現未標記的外殼，需先確認是否混入練習件。",
+    "evidence": "We can use the first five housings for practice. Please mark those as training pieces so they don't enter finished-goods inventory.",
+    "vocabulary": [
+      {
+        "term": "finished-goods inventory",
+        "zh": "成品庫存",
+        "note": "已完成、可供出貨的產品存量。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t01-q061",
+    "testId": "test-01",
+    "number": 61,
+    "part": 3,
+    "groupId": "t01-g041",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "purpose"
+    ],
+    "prompt": "Why must the practice housings be marked?",
+    "promptZh": "練習用外殼為什麼必須標示？",
+    "options": [
+      {
+        "id": "A",
+        "text": "To keep them out of finished-goods inventory.",
+        "zh": "避免它們混入成品庫存。",
+        "whyZh": "男子直接用 so they do not enter ... 說明目的：區分訓練件與可交付成品。"
+      },
+      {
+        "id": "B",
+        "text": "To identify the delivery driver.",
+        "zh": "辨認送貨司機。",
+        "whyZh": "標示對象是訓練外殼，與司機身分無關。"
+      },
+      {
+        "id": "C",
+        "text": "To increase their selling price.",
+        "zh": "提高它們的售價。",
+        "whyZh": "訓練件不應作為正常成品入庫，沒有提到售價。"
+      },
+      {
+        "id": "D",
+        "text": "To record the fixture's weight.",
+        "zh": "記錄治具重量。",
+        "whyZh": "對話沒有秤重要求；標記是為防止訓練件混料。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "男子直接用 so they do not enter ... 說明目的：區分訓練件與可交付成品。",
+    "evidence": "so they don't enter finished-goods inventory.",
+    "vocabulary": [
+      {
+        "term": "finished-goods inventory",
+        "zh": "成品庫存",
+        "note": "已完成生產並按成品管理的存貨。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g041",
+    "testId": "test-01",
+    "part": 3,
+    "title": "Training before a model change",
+    "titleZh": "換線前的操作訓練",
+    "topic": "manufacturing",
+    "passage": "Man: We're switching Line Three to the compact model tomorrow. Has the new fixture been installed?\nWoman: Yes, but the operators haven't practiced loading the smaller housing yet.\nMan: Then we should run a short training session before the first shift begins.\nWoman: The process engineer is available at seven fifteen. We can use the first five housings for practice.\nMan: Please mark those as training pieces so they don't enter finished-goods inventory.\nWoman: I'll do that, and I'll place the updated loading instructions beside the fixture.",
+    "passageZh": "男：我們明天要把三號線換成小型機種。新治具裝好了嗎？\n女：好了，但操作員還沒練習過放入較小的外殼。\n男：那我們應該在第一班開始前辦一場簡短訓練。\n女：製程工程師七點十五分有空。我們可以用前五個外殼來練習。\n男：請把那些標示為訓練用品，以免它們進入成品庫存。\n女：我會處理，也會把更新的上料說明放在治具旁。",
+    "audioScript": "We're switching Line Three to the compact model tomorrow. Has the new fixture been installed?\nYes, but the operators haven't practiced loading the smaller housing yet.\nThen we should run a short training session before the first shift begins.\nThe process engineer is available at seven fifteen. We can use the first five housings for practice.\nPlease mark those as training pieces so they don't enter finished-goods inventory.\nI'll do that, and I'll place the updated loading instructions beside the fixture.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "We're switching Line Three to the compact model tomorrow. Has the new fixture been installed?"
+      },
+      {
+        "voice": "female",
+        "text": "Yes, but the operators haven't practiced loading the smaller housing yet."
+      },
+      {
+        "voice": "male",
+        "text": "Then we should run a short training session before the first shift begins."
+      },
+      {
+        "voice": "female",
+        "text": "The process engineer is available at seven fifteen. We can use the first five housings for practice."
+      },
+      {
+        "voice": "male",
+        "text": "Please mark those as training pieces so they don't enter finished-goods inventory."
+      },
+      {
+        "voice": "female",
+        "text": "I'll do that, and I'll place the updated loading instructions beside the fixture."
+      }
+    ],
+    "audio": "audio/opus-hq56-96-v2/a8/a8c5faf626ba3bb5015140ff8887c4d59bfc26b98b1d9698fb84405eb9d2395a.ogg",
+    "duration": 35.904,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-TZ",
+        "role": "male",
+        "modelVoice": "en-TZ-ElimuNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-TZ",
+        "role": "female",
+        "modelVoice": "en-TZ-ImaniNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 36.404
+  },
+  "imageSha256": null,
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/opus-hq56-96-v2/42/429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196.ogg",
+      "start": 36.15308,
+      "end": 40.16633,
+      "assetSha256": "266628869efa612fba240b39a0a3a8cf58d728f8c36588a536fc0fe708634447",
+      "speech": "Questions 59 through 61, listen to the conversation.",
+      "sourceAudioProvenance": {
+        "path": "audio/formal/test-01-cues-03.mp3",
+        "sha256": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196",
+        "decodedSamples48k": 3308638,
+        "sourceCodec": "mp3",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    },
+    {
+      "mode": "passage",
+      "path": "audio/opus-hq56-96-v2/a8/a8c5faf626ba3bb5015140ff8887c4d59bfc26b98b1d9698fb84405eb9d2395a.ogg",
+      "start": 0.5,
+      "end": 36.404,
+      "assetSha256": "c9749bd291f55c002368d6eb5d53a489880ea0774b50753fe79715854d684cb7",
+      "speech": "We are switching Line 3 to the compact model tomorrow.\n Has the new fixture been installed?\n Yes, but the operators haven't practiced loading the smaller housing yet.\n Then we should run a short training session before the fast shift begins.\n The process engineer is available at 7.15.\n We can use the fast 5 housings for practice.\n Please mark those as training pieces so they don't enter finished goods in Ventory.\n I'll do that and I'll place the updated loading instructions beside the fixture.",
+      "sourceAudioProvenance": {
+        "path": "audio/azure-v1/test-01-21.mp3",
+        "sha256": "a8c5faf626ba3bb5015140ff8887c4d59bfc26b98b1d9698fb84405eb9d2395a",
+        "decodedSamples48k": 1771392,
+        "sourceCodec": "mp3",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    },
+    {
+      "mode": "question",
+      "path": "audio/opus-hq56-96-v2/b7/b7352184082a4fe7c1f7bfb2d7b16444e38f0fe7ef682a41945dde15ef8a14f7.ogg",
+      "start": 0,
+      "end": 7.2625,
+      "assetSha256": "c069be1b5592dec18d9e4bc060d76e6dbf6956b5914086a25996c841c3f23458",
+      "speech": "Number 61. Unmarked housings reached finished goods. What should staff check?",
+      "sourceAudioProvenance": {
+        "path": "audio/exams/test-01/groups/t01-g041/q061-r2-b7352184082a.wav",
+        "sha256": "b7352184082a4fe7c1f7bfb2d7b16444e38f0fe7ef682a41945dde15ef8a14f7",
+        "decodedSamples48k": 348600,
+        "sourceCodec": "pcm_s16le",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    },
+    {
+      "mode": "practice",
+      "path": "audio/opus-hq56-96-v2/a8/a8c5faf626ba3bb5015140ff8887c4d59bfc26b98b1d9698fb84405eb9d2395a.ogg",
+      "start": 0.5,
+      "end": 36.404,
+      "assetSha256": "c9749bd291f55c002368d6eb5d53a489880ea0774b50753fe79715854d684cb7",
+      "speech": "We are switching Line 3 to the compact model tomorrow.\n Has the new fixture been installed?\n Yes, but the operators haven't practiced loading the smaller housing yet.\n Then we should run a short training session before the fast shift begins.\n The process engineer is available at 7.15.\n We can use the fast 5 housings for practice.\n Please mark those as training pieces so they don't enter finished goods in Ventory.\n I'll do that and I'll place the updated loading instructions beside the fixture.",
+      "sourceAudioProvenance": {
+        "path": "audio/azure-v1/test-01-21.mp3",
+        "sha256": "a8c5faf626ba3bb5015140ff8887c4d59bfc26b98b1d9698fb84405eb9d2395a",
+        "decodedSamples48k": 1771392,
+        "sourceCodec": "mp3",
+        "deliveryCodec": "opus",
+        "preSkipSamples": 312,
+        "sourceEvidencePcm16kMonoSha256": null
+      }
+    }
+  ],
+  "checks": {
+    "content": "New bilingual prompt/options/evidence preserve original release history. The original key is reserved, not rescored. New direct decision follows two contextual facts or contrast.",
+    "audio": "Whisper exact numbered stem; independent Vosk verifies number, unmarked housings, reached finished goods and staff check, with phonetic “she had” for “should”. No competing rationale.",
+    "retained": "Original cue and talk confirmed at exact source/ranges by offline QA; original practice unchanged and bound through original verified record.",
+    "association": "Exact four roles and original group, preserved protected graphic, 2700 seconds, 7.25 local and other touched waits >=7.5. Browser/publication not claimed.",
+    "offlineSpeechEvidenceSha256": {
+      "test01-q061-stem-medium2.wav.txt": "7db2ad3522638e5fef9ccaae4862be7c9b30ec0fa1cd4b15961826d22a877438",
+      "retained-guards.txt": "06b3fecc7101388fc0c846f331aee49952bcb5f5642033df563be072689a5144",
+      "evidence.md": "cdd1d2bd675fcb18389a4e957129a1fd7789c4ece2e9ebab9ed2468cc767e45f",
+      "whisper-retained.log": "3c0ea4a5d4f86e055ccb5408e9f7a2a1659fe7024d85cd516d53dc01a7ef0b19",
+      "vosk-retained.log": "f5069f0874f84ae55a511db2dee7b5d0744030491879c859cabc122b851a1324",
+      "vosk-test01-q059-stem-medium2.log": "ee72d9e88e2064b80deecfd7875b0de7895cb4cba3566be8e99080d71bd9a17e"
+    },
+    "codecProjection": "Both modes use the exact deterministic 48kHz Ogg Opus delivery bytes/ranges; raw hashes remain provenance. Source and decoded Opus samples match in duration; Ogg gapless pre-skip/final granule and unmodified timetable verified. Original semantic decision was made on the checked source clips."
+  }
+}
