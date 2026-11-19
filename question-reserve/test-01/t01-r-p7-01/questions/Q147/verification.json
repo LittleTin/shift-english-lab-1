@@ -1,0 +1,72 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "The email asks for a 240-connector pilot-order quote, freight, and an exception. Address change, test failure, and cancellation are unsupported. Bilingual options and rationales match.",
+  "activeQuestion": {
+    "id": "t01-q147",
+    "testId": "test-01",
+    "number": 147,
+    "part": 7,
+    "groupId": "t01-r-p7-01",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension"
+    ],
+    "prompt": "Why is Mira contacting Valley Components?",
+    "promptZh": "Mira 聯絡 Valley Components 的主要目的為何？",
+    "options": [
+      {
+        "text": "To obtain a quote for a small trial order",
+        "zh": "取得一筆小量試作訂單的報價",
+        "whyZh": "信中要求 240 個試產零件的單價與運費，並詢問最低量例外。",
+        "id": "A"
+      },
+      {
+        "text": "To request a revised factory address",
+        "zh": "要求更改工廠地址",
+        "whyZh": "信中指定桃園工廠，沒有要求更改地址。",
+        "id": "B"
+      },
+      {
+        "text": "To report a failed connector test",
+        "zh": "回報連接器測試失敗",
+        "whyZh": "試產尚未進行，沒有測試失敗的結果。",
+        "id": "C"
+      },
+      {
+        "text": "To cancel a monthly contract",
+        "zh": "取消月度合約",
+        "whyZh": "每月 3,000 個僅是試產成功後的預估，沒有已簽合約被取消。",
+        "id": "D"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "信中要求 240 個試產零件的單價與運費，並詢問最低量例外。",
+    "evidence": "Please quote both the unit price and freight to our Taoyuan plant.",
+    "vocabulary": [
+      {
+        "term": "minimum order quantity",
+        "zh": "最低訂購量",
+        "note": "供應商通常接受的最小訂購數量，簡稱 MOQ。"
+      },
+      {
+        "term": "freight",
+        "zh": "運費；貨運",
+        "note": "本信要求與單價分開報出的運送費用。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p7-01",
+    "testId": "test-01",
+    "part": 7,
+    "title": "A request for quotation",
+    "titleZh": "詢價信",
+    "topic": "manufacturing",
+    "passage": "To: Valley Components\nSubject: Quote for a pilot build\n\nWe need 240 locking connectors for a pilot build scheduled for September 18. Please quote both the unit price and freight to our Taoyuan plant. Your catalogue lists a minimum order of 500 pieces. Could you make an exception for this trial? If the trial passes, our expected monthly requirement will be 3,000 pieces.\n\nWe need the trial parts at the plant by September 12. Please state the delivery date in your reply rather than only the number of production days. A drawing of the required connector is attached.\n\nMira Wu, Purchasing",
+    "passageZh": "收件者：Valley Components\n主旨：試產用零件詢價\n\n我們需要 240 個鎖扣式連接器，用於九月十八日的試產。請分別報出單價及運到桃園工廠的運費。貴公司的型錄列出最低訂購量為 500 個，這次試作是否可以例外？若試產通過，預計每月需求為 3,000 個。\n\n試作零件最遲須在九月十二日送達工廠。回覆時請註明交貨日期，不要只寫生產天數。附件是所需連接器的圖面。\n\n採購部 Mira Wu"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "t02-q162-r2",
+  "testId": "test-02",
+  "number": 162,
+  "part": 7,
+  "groupId": "t02-r-p7-06",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "What should production teams do by noon?",
+  "promptZh": "生產團隊最遲應在中午完成什麼事？",
+  "options": [
+    {
+      "text": "Complete every inventory adjustment",
+      "zh": "完成所有庫存調整",
+      "whyZh": "通知未要求在中午前完成庫存調整；如有盤點差異，應先記錄並複核，再調整庫存。",
+      "id": "A"
+    },
+    {
+      "text": "Discard damaged materials",
+      "zh": "丟棄受損材料",
+      "whyZh": "受損材料應另計，不是丟棄。",
+      "id": "B"
+    },
+    {
+      "text": "Start the physical stock count",
+      "zh": "開始實際盤點",
+      "whyZh": "盤點於下午一點開始；最遲在中午應完成的是領料，不是開始盤點。",
+      "id": "C"
+    },
+    {
+      "text": "Collect materials needed for the afternoon",
+      "zh": "領取下午需要的材料",
+      "whyZh": "通知要求生產團隊最遲在中午領取下午要用的物料。",
+      "id": "D"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "通知要求生產團隊最遲在中午領取下午要用的物料。",
+  "evidence": "Production teams should collect materials for the afternoon by noon.",
+  "vocabulary": [
+    {
+      "term": "inventory adjustment",
+      "zh": "庫存調整",
+      "note": "查明差異後修正系統中的庫存紀錄。"
+    },
+    {
+      "term": "material issue",
+      "zh": "物料領用",
+      "note": "將庫存材料發給使用部門。"
+    }
+  ],
+  "revision": 2
+}

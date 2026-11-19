@@ -1,0 +1,57 @@
+{
+  "id": "t01-q151",
+  "testId": "test-01",
+  "number": 151,
+  "part": 7,
+  "groupId": "t01-r-p7-02",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "technology",
+    "reading-comprehension"
+  ],
+  "prompt": "Why should users export their configuration?",
+  "promptZh": "為何使用者應匯出設定？",
+  "options": [
+    {
+      "text": "To prepare for a possible rollback",
+      "zh": "以備需要回復舊版",
+      "whyZh": "文件明說若需要 rollback，就必須有匯出檔案。",
+      "id": "A"
+    },
+    {
+      "text": "To avoid all device restarts",
+      "zh": "避免設備發生任何重啟",
+      "whyZh": "更新仍會重啟兩次，匯出無法免除。",
+      "id": "B"
+    },
+    {
+      "text": "To register for a new warranty",
+      "zh": "登記新的保固",
+      "whyZh": "文件沒有要求或提供保固登記。",
+      "id": "C"
+    },
+    {
+      "text": "To increase wireless coverage",
+      "zh": "增加無線涵蓋範圍",
+      "whyZh": "此更新不改變無線範圍，匯出設定也沒有此作用。",
+      "id": "D"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "文件明說若需要 rollback，就必須有匯出檔案。",
+  "evidence": "the exported file is required if a rollback becomes necessary",
+  "vocabulary": [
+    {
+      "term": "rollback",
+      "zh": "回復舊版",
+      "note": "出現問題時回到先前軟體版本或狀態。"
+    },
+    {
+      "term": "configuration",
+      "zh": "設定",
+      "note": "設備運作參數與選項。"
+    }
+  ],
+  "revision": 1
+}

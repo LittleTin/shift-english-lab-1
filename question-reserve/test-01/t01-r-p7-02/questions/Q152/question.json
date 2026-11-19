@@ -1,0 +1,57 @@
+{
+  "id": "t01-q152",
+  "testId": "test-01",
+  "number": 152,
+  "part": 7,
+  "groupId": "t01-r-p7-02",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "technology",
+    "reading-comprehension"
+  ],
+  "prompt": "What should a user do if installation takes twenty minutes?",
+  "promptZh": "若安裝持續二十分鐘，使用者應怎麼做？",
+  "options": [
+    {
+      "text": "Install version 4.2 on a revision A unit",
+      "zh": "在 A 版設備安裝 4.2",
+      "whyZh": "這不處理安裝逾時，且違反硬體適用規定。",
+      "id": "A"
+    },
+    {
+      "text": "Disconnect and reconnect power several times",
+      "zh": "反覆拔除再接回電源",
+      "whyZh": "文件明確要求不要反覆切斷電源。",
+      "id": "B"
+    },
+    {
+      "text": "Contact technical support",
+      "zh": "聯絡技術支援",
+      "whyZh": "二十分鐘超過十五分鐘門檻，文件指示聯絡支援。",
+      "id": "C"
+    },
+    {
+      "text": "Delete the exported configuration immediately",
+      "zh": "立即刪除匯出的設定",
+      "whyZh": "回復舊版可能需要該檔案，不應刪除。",
+      "id": "D"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "二十分鐘超過十五分鐘門檻，文件指示聯絡支援。",
+  "evidence": "If it exceeds fifteen minutes, contact technical support",
+  "vocabulary": [
+    {
+      "term": "rollback",
+      "zh": "回復舊版",
+      "note": "出現問題時回到先前軟體版本或狀態。"
+    },
+    {
+      "term": "configuration",
+      "zh": "設定",
+      "note": "設備運作參數與選項。"
+    }
+  ],
+  "revision": 1
+}

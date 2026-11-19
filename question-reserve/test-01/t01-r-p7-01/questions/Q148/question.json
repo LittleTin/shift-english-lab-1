@@ -1,0 +1,57 @@
+{
+  "id": "t01-q148",
+  "testId": "test-01",
+  "number": 148,
+  "part": 7,
+  "groupId": "t01-r-p7-01",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "What exception does Mira request?",
+  "promptZh": "Mira 希望取得哪一項例外？",
+  "options": [
+    {
+      "text": "Free transport for every future order",
+      "zh": "往後所有訂單免運",
+      "whyZh": "信中要求運費報價，未要求免運。",
+      "id": "A"
+    },
+    {
+      "text": "A payment deadline after the pilot build",
+      "zh": "付款期限訂在試產之後",
+      "whyZh": "信中沒有討論付款期限。",
+      "id": "B"
+    },
+    {
+      "text": "An order below the listed minimum quantity",
+      "zh": "低於型錄最低訂購量的訂單",
+      "whyZh": "需要 240 個，但型錄最低量為 500 個，因此請求小量例外。",
+      "id": "C"
+    },
+    {
+      "text": "A trial without an engineering drawing",
+      "zh": "不提供工程圖面的試作",
+      "whyZh": "信中明確表示圖面已附上。",
+      "id": "D"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "需要 240 個，但型錄最低量為 500 個，因此請求小量例外。",
+  "evidence": "Your catalogue lists a minimum order of 500 pieces. Could you make an exception for this trial?",
+  "vocabulary": [
+    {
+      "term": "minimum order quantity",
+      "zh": "最低訂購量",
+      "note": "供應商通常接受的最小訂購數量，簡稱 MOQ。"
+    },
+    {
+      "term": "freight",
+      "zh": "運費；貨運",
+      "note": "本信要求與單價分開報出的運送費用。"
+    }
+  ],
+  "revision": 1
+}

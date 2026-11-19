@@ -1,0 +1,57 @@
+{
+  "id": "t02-q164-r2",
+  "testId": "test-02",
+  "number": 164,
+  "part": 7,
+  "groupId": "t02-r-p7-06",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "How should damaged stock be treated?",
+  "promptZh": "受損庫存應如何處理？",
+  "options": [
+    {
+      "text": "Combine it with undamaged stock in a single count",
+      "zh": "和未受損的庫存合併計數",
+      "whyZh": "公告要求受損庫存另行計數，不能和未受損庫存合計。",
+      "id": "A"
+    },
+    {
+      "text": "Count it separately",
+      "zh": "分開計數",
+      "whyZh": "公告最後一句明確指定另行計數。",
+      "id": "B"
+    },
+    {
+      "text": "Exclude it from all counts",
+      "zh": "全部不列入盤點",
+      "whyZh": "通知明說不可省略。",
+      "id": "C"
+    },
+    {
+      "text": "Automatically adjust its quantity to zero",
+      "zh": "自動把數量改成零",
+      "whyZh": "任何調整前都要先查核差異，未授權直接歸零。",
+      "id": "D"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "公告最後一句明確指定另行計數。",
+  "evidence": "Damaged stock must be counted separately rather than omitted.",
+  "vocabulary": [
+    {
+      "term": "inventory adjustment",
+      "zh": "庫存調整",
+      "note": "查明差異後修正系統中的庫存紀錄。"
+    },
+    {
+      "term": "material issue",
+      "zh": "物料領用",
+      "note": "將庫存材料發給使用部門。"
+    }
+  ],
+  "revision": 2
+}

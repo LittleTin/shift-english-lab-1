@@ -1,0 +1,72 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "A sofa requires bulky-waste pickup. The cardboard shelf, leaving furniture in the room, and daily cleaners are not valid options. Both language versions checked.",
+  "activeQuestion": {
+    "id": "t01-q166",
+    "testId": "test-01",
+    "number": 166,
+    "part": 7,
+    "groupId": "t01-r-p7-07",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "reading-comprehension"
+    ],
+    "prompt": "What should a resident do to dispose of an old sofa?",
+    "promptZh": "住戶若要丟棄舊沙發，應怎麼做？",
+    "options": [
+      {
+        "text": "Put it on the cardboard shelf",
+        "zh": "放在紙箱架上",
+        "whyZh": "紙箱架供壓平紙箱使用，不收家具。",
+        "id": "A"
+      },
+      {
+        "text": "Leave it in the recycling room at any time",
+        "zh": "任何時間放進回收室",
+        "whyZh": "公告明確禁止把家具留在回收室。",
+        "id": "B"
+      },
+      {
+        "text": "Ask the morning cleaner to carry it away",
+        "zh": "請早班清潔人員搬走",
+        "whyZh": "公告提供的處理方式是預約清運，不是交給日常清潔人員。",
+        "id": "C"
+      },
+      {
+        "text": "Book a bulky-waste pickup with management",
+        "zh": "向管理室預約大型廢棄物清運",
+        "whyZh": "沙發屬家具，須預約大型清運。",
+        "id": "D"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "沙發屬家具，須預約大型清運。",
+    "evidence": "These items require a bulky-waste collection appointment with the management office.",
+    "vocabulary": [
+      {
+        "term": "flatten",
+        "zh": "壓平",
+        "note": "讓紙箱變平以減少占用空間。"
+      },
+      {
+        "term": "bulky waste",
+        "zh": "大型廢棄物",
+        "note": "家具等體積大、需另外處理的物品。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p7-07",
+    "testId": "test-01",
+    "part": 7,
+    "title": "Apartment recycling update",
+    "titleZh": "公寓回收措施更新",
+    "topic": "daily",
+    "passage": "Notice to residents\n\nStarting July 1, the recycling room will open from 7 a.m. to 9 p.m. Cardboard boxes must be flattened and placed on the shelf along the left wall. Please rinse glass and plastic containers before putting them in the labelled bins.\n\nDo not leave furniture or electrical appliances in the room. These items require a bulky-waste collection appointment with the management office. The service is available on the first and third Wednesdays of each month.\n\nThe room will be cleaned every morning between 8:30 and 9:00. Please use it outside that half-hour period, even though the general opening hours begin earlier.",
+    "passageZh": "住戶通知\n\n七月一日起，回收室開放時間為上午七點至晚上九點。紙箱必須壓平，放到左牆旁的架子上。玻璃與塑膠容器請先沖洗，再放進有標示的桶內。\n\n請勿把家具或電器留在室內。這些物品需要向管理室預約大型廢棄物清運，每月第一及第三個星期三提供服務。\n\n回收室每天上午八點半至九點清潔。雖然一般開放時間較早開始，仍請避開這半小時使用。"
+  }
+}

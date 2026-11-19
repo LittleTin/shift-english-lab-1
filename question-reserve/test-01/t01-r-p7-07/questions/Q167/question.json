@@ -1,0 +1,57 @@
+{
+  "id": "t01-q167",
+  "testId": "test-01",
+  "number": 167,
+  "part": 7,
+  "groupId": "t01-r-p7-07",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "daily",
+    "reading-comprehension"
+  ],
+  "prompt": "At which time may a resident use the room?",
+  "promptZh": "下列哪個時間可以使用回收室？",
+  "options": [
+    {
+      "text": "8:45 a.m.",
+      "zh": "上午八點四十五分",
+      "whyZh": "落在八點半至九點的清潔暫停時段。",
+      "id": "A"
+    },
+    {
+      "text": "7:45 a.m.",
+      "zh": "上午七點四十五分",
+      "whyZh": "已在七點開放之後，且尚未進入八點半至九點的清潔時段。",
+      "id": "B"
+    },
+    {
+      "text": "6:45 a.m.",
+      "zh": "上午六點四十五分",
+      "whyZh": "尚未到七點開放時間。",
+      "id": "C"
+    },
+    {
+      "text": "9:15 p.m.",
+      "zh": "晚上九點十五分",
+      "whyZh": "超過晚上九點關閉時間。",
+      "id": "D"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "已在七點開放之後，且尚未進入八點半至九點的清潔時段。",
+  "evidence": "open from 7 a.m. to 9 p.m. ... cleaned every morning between 8:30 and 9:00",
+  "vocabulary": [
+    {
+      "term": "flatten",
+      "zh": "壓平",
+      "note": "讓紙箱變平以減少占用空間。"
+    },
+    {
+      "term": "bulky waste",
+      "zh": "大型廢棄物",
+      "note": "家具等體積大、需另外處理的物品。"
+    }
+  ],
+  "revision": 1
+}

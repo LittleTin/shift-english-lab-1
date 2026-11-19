@@ -1,0 +1,72 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "A 20-minute interruption exceeds the stated 15-minute limit for contacting support. The other options misapply hardware eligibility, restart or rollback instructions.",
+  "activeQuestion": {
+    "id": "t01-q152",
+    "testId": "test-01",
+    "number": 152,
+    "part": 7,
+    "groupId": "t01-r-p7-02",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "reading-comprehension"
+    ],
+    "prompt": "What should a user do if installation takes twenty minutes?",
+    "promptZh": "若安裝持續二十分鐘，使用者應怎麼做？",
+    "options": [
+      {
+        "text": "Install version 4.2 on a revision A unit",
+        "zh": "在 A 版設備安裝 4.2",
+        "whyZh": "這不處理安裝逾時，且違反硬體適用規定。",
+        "id": "A"
+      },
+      {
+        "text": "Disconnect and reconnect power several times",
+        "zh": "反覆拔除再接回電源",
+        "whyZh": "文件明確要求不要反覆切斷電源。",
+        "id": "B"
+      },
+      {
+        "text": "Contact technical support",
+        "zh": "聯絡技術支援",
+        "whyZh": "二十分鐘超過十五分鐘門檻，文件指示聯絡支援。",
+        "id": "C"
+      },
+      {
+        "text": "Delete the exported configuration immediately",
+        "zh": "立即刪除匯出的設定",
+        "whyZh": "回復舊版可能需要該檔案，不應刪除。",
+        "id": "D"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "二十分鐘超過十五分鐘門檻，文件指示聯絡支援。",
+    "evidence": "If it exceeds fifteen minutes, contact technical support",
+    "vocabulary": [
+      {
+        "term": "rollback",
+        "zh": "回復舊版",
+        "note": "出現問題時回到先前軟體版本或狀態。"
+      },
+      {
+        "term": "configuration",
+        "zh": "設定",
+        "note": "設備運作參數與選項。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p7-02",
+    "testId": "test-01",
+    "part": 7,
+    "title": "Gateway firmware notice",
+    "titleZh": "閘道器韌體通知",
+    "topic": "technology",
+    "passage": "Release note: Gateway firmware 4.2\n\nVersion 4.2 improves recovery after a brief loss of network connection. It does not change the device’s wireless range. The update is approved for hardware revisions B and C only. Revision A units must remain on version 3.8.\n\nBefore installation, export the current configuration. The update preserves normal settings, but the exported file is required if a rollback becomes necessary. The gateway will restart twice; keep power connected until the green status light remains on. Installation normally takes six minutes. If it exceeds fifteen minutes, contact technical support instead of repeatedly disconnecting power.",
+    "passageZh": "發行說明：閘道器韌體 4.2\n\n4.2 版改善網路短暫斷線後的恢復能力，不改變設備的無線涵蓋範圍。此更新僅核准用於 B、C 硬體版本；A 版設備必須維持 3.8 版韌體。\n\n安裝前請匯出目前設定。更新會保留一般設定，但若必須回復舊版，就需要匯出的檔案。閘道器會重新啟動兩次；請保持供電，直到綠色狀態燈持續亮起。安裝通常需要六分鐘。如果超過十五分鐘，請聯絡技術支援，不要反覆切斷電源。"
+  }
+}
