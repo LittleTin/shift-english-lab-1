@@ -1,0 +1,89 @@
+{
+  "status": "unrecorded-passage-only-candidate-no-approval",
+  "scope": "Test01 Q065–067, current held source t01-g043",
+  "keys": [
+    "D",
+    "D",
+    "C"
+  ],
+  "retainedDialogueVoices": [
+    {
+      "speaker": "male",
+      "locale": "en-US",
+      "role": "male",
+      "modelVoice": "en-US-GuyNeural"
+    },
+    {
+      "speaker": "female",
+      "locale": "en-US",
+      "role": "female",
+      "modelVoice": "en-US-JennyNeural"
+    }
+  ],
+  "candidateTurns": [
+    {
+      "voice": "male",
+      "text": "I can't start the simulation software. A message says all the floating licenses are in use."
+    },
+    {
+      "voice": "female",
+      "text": "Two computers in the training room may still be holding licenses from yesterday's class."
+    },
+    {
+      "voice": "male",
+      "text": "Should I restart the license server?"
+    },
+    {
+      "voice": "female",
+      "text": "Please don't. That would interrupt active simulations. I'll ask the trainer to close the inactive sessions first."
+    },
+    {
+      "voice": "male",
+      "text": "If that doesn't free a license, can I use the trial version?"
+    },
+    {
+      "voice": "female",
+      "text": "It doesn't support our model size. Let me resolve the license issue, and I'll message you when a seat becomes available."
+    }
+  ],
+  "zhChangedPhrase": "我會先請教練關閉目前沒有在使用的工作階段。",
+  "formal": {
+    "path": "audio/azure-v1/test-01-23.mp3",
+    "start": 0.5,
+    "end": 38.06,
+    "sha256": "b042994ee61657165e5416208d8885760019bf614f86db3ba4c4e7bfc11ef16c"
+  },
+  "practice": {
+    "path": "audio/azure-v1/test-01-23.mp3",
+    "start": 0.5,
+    "end": 38.06,
+    "sha256": "b042994ee61657165e5416208d8885760019bf614f86db3ba4c4e7bfc11ef16c"
+  },
+  "retainedNumberCue": {
+    "path": "audio/formal/test-01-cues-03.mp3",
+    "start": 64.50717,
+    "end": 68.62808,
+    "sha256": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196"
+  },
+  "retainedStems": {
+    "t01-q065": {
+      "path": "audio/formal/test-01-cues-04.mp3",
+      "start": 0.25,
+      "end": 3.51512,
+      "sha256": "818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0"
+    },
+    "t01-q066": {
+      "path": "audio/formal/test-01-cues-04.mp3",
+      "start": 3.76512,
+      "end": 8.10471,
+      "sha256": "818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0"
+    },
+    "t01-q067": {
+      "path": "audio/formal/test-01-cues-04.mp3",
+      "start": 8.35471,
+      "end": 11.10933,
+      "sha256": "818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0"
+    }
+  },
+  "audioEvidence": "Full unprompted Vosk and full/focused small support all licenses in use, prohibition against interrupting active simulations, trainer closure first and trial model-size constraint. Small exact unused; focused Vosk nonprompted alternatives only news. Earlier independent uncertainty included in use, so the key qualifier remains unresolved in independent evidence. Reuse only untouched exact cues/stems after fresh asset/mapping QA; proposed replacement remains a hold."
+}
