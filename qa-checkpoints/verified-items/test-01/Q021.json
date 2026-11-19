@@ -1,0 +1,113 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Only A gives repainting as the reason the lot is closed; the time and location answers do not explain why. Both actual clips agree, allowing numeral formatting. All zh-TW choices and rationales checked.",
+  "activeQuestion": {
+    "id": "t01-q021",
+    "testId": "test-01",
+    "number": 21,
+    "part": 2,
+    "groupId": "t01-g021",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "reason"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "They're repainting the lines.",
+        "zh": "他們正在重新畫停車格線。",
+        "whyZh": "重新畫線是停車場暫停開放的合理直接原因，回答 Why。"
+      },
+      {
+        "id": "B",
+        "text": "You can park after five.",
+        "zh": "五點後可以停車。",
+        "whyZh": "這提供可停車時間，並沒有說明關閉原因。"
+      },
+      {
+        "id": "C",
+        "text": "It's the closest one to the office.",
+        "zh": "它是離辦公室最近的一個。",
+        "whyZh": "位置遠近與關閉的原因不同。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "重新畫線是停車場暫停開放的合理直接原因，回答 Why。",
+    "evidence": "Why is the north parking lot closed?",
+    "vocabulary": [
+      {
+        "term": "parking lot",
+        "zh": "停車場",
+        "note": "美式英語常用說法。"
+      },
+      {
+        "term": "repaint",
+        "zh": "重新油漆；重畫",
+        "note": "此處指重新畫停車格線。"
+      }
+    ],
+    "revision": 1
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-01-08.mp3",
+      "start": 0.5,
+      "end": 16.796,
+      "assetSha256": "9b0ebb8456f362c9234578465db6642a04f4d5f1563201416321a912205b196e",
+      "speech": "Why is the North parking lot closed?\n A. They're repainting the lines.\n B. You can park after 5.\n C. It's the closest one to the office."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-08.mp3",
+      "start": 0.5,
+      "end": 17.3,
+      "assetSha256": "3d6388349928581a1cb283eb87c200677560b0423906968674115c2a8a4b23a9",
+      "speech": "Why is the north parking lot closed?\n A. They're repainting the lines.\n B. You can park after five.\n C. It's the closest one to the office."
+    }
+  ],
+  "group": {
+    "id": "t01-g021",
+    "testId": "test-01",
+    "part": 2,
+    "title": "Parking-lot closure",
+    "titleZh": "停車場關閉",
+    "topic": "daily",
+    "passage": "Why is the north parking lot closed?\nA. They're repainting the lines. B. You can park after five. C. It's the closest one to the office.",
+    "passageZh": "北側停車場為什麼關閉？\nA. 他們正在重新畫停車格線。\nB. 五點後可以停車。\nC. 它是離辦公室最近的一個。",
+    "audioScript": "Why is the north parking lot closed?\nA. They're repainting the lines. B. You can park after five. C. It's the closest one to the office.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Why is the north parking lot closed?"
+      },
+      {
+        "voice": "male",
+        "text": "A. They're repainting the lines. B. You can park after five. C. It's the closest one to the office."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-08.mp3",
+    "duration": 16.8,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-SG",
+        "role": "female",
+        "modelVoice": "en-SG-LunaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-SG",
+        "role": "male",
+        "modelVoice": "en-SG-WayneNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 17.3
+  }
+}
