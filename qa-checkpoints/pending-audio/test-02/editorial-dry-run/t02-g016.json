@@ -1,0 +1,202 @@
+{
+  "group": "t02-g016",
+  "questions": [
+    16
+  ],
+  "oldQuestionAndKeys": [
+    {
+      "number": 16,
+      "id": "t02-q016",
+      "revision": 1,
+      "answer": "B"
+    }
+  ],
+  "checkpointStatus": "hold",
+  "proof": "Semantically revised response turn in each physical mode",
+  "ledgerEditorialChecks": "installation timing not firmware version; B identifies release note; C unrelated weight",
+  "idPolicy": {
+    "old": "t02-q016",
+    "proposedNew": "t02-q016-r2",
+    "dependentPlanRefs": [
+      "formal question frame where applicable",
+      "answer marker",
+      "all actual review/practice frame or history lookups"
+    ],
+    "reason": "A scored spoken option changed; preserve original attempt identity/key and old content rather than silently reinterpret."
+  },
+  "guardedEdits": [
+    {
+      "entity": "t02-g016",
+      "path": [
+        "passage"
+      ],
+      "old": "Which firmware version should we install?\nA. At the installation dinner.\nB. Use the one listed in the release note.\nC. The package weighs two kilograms.",
+      "new": "Which firmware version should we install?\nA. The installation is scheduled for Tuesday.\nB. Use the one listed in the release note.\nC. The package weighs two kilograms."
+    },
+    {
+      "entity": "t02-g016",
+      "path": [
+        "audioScript"
+      ],
+      "old": "Which firmware version should we install?\nA. At the installation dinner.\nB. Use the one listed in the release note.\nC. The package weighs two kilograms.",
+      "new": "Which firmware version should we install?\nA. The installation is scheduled for Tuesday.\nB. Use the one listed in the release note.\nC. The package weighs two kilograms."
+    },
+    {
+      "entity": "t02-g016",
+      "path": [
+        "turns",
+        1,
+        "text"
+      ],
+      "old": "A. At the installation dinner. B. Use the one listed in the release note. C. The package weighs two kilograms.",
+      "new": "A. The installation is scheduled for Tuesday. B. Use the one listed in the release note. C. The package weighs two kilograms."
+    },
+    {
+      "entity": "t02-g016",
+      "path": [
+        "passageZh"
+      ],
+      "old": "我們應該安裝哪個韌體版本？\nA. 在安裝晚宴上。\nB. 使用發行說明列出的版本。\nC. 包裹重兩公斤。",
+      "new": "我們應該安裝哪個韌體版本？\nA. 安裝安排在星期二。\nB. 使用發行說明列出的版本。\nC. 包裹重兩公斤。"
+    },
+    {
+      "entity": "t02-q016",
+      "path": [
+        "options",
+        0,
+        "text"
+      ],
+      "old": "At the installation dinner.",
+      "new": "The installation is scheduled for Tuesday."
+    },
+    {
+      "entity": "t02-q016",
+      "path": [
+        "options",
+        0,
+        "zh"
+      ],
+      "old": "在安裝晚宴上。",
+      "new": "安裝安排在星期二。"
+    },
+    {
+      "entity": "t02-q016",
+      "path": [
+        "options",
+        0,
+        "whyZh"
+      ],
+      "old": "這不是合理的版本資訊或回應。",
+      "new": "這只說明何時安裝，未指明該安裝哪個韌體版本。"
+    },
+    {
+      "entity": "t02-q016",
+      "path": [
+        "revision"
+      ],
+      "old": 1,
+      "new": 2
+    }
+  ],
+  "voicesAndExactReplacementInputs": [
+    {
+      "mode": "formal",
+      "sourceAssetGuard": {
+        "file": "audio/formal-v2/test-02-06.mp3",
+        "start": 0.5,
+        "end": 17.06,
+        "sha256": "ac26ea4dd5b9d5dc3ee9c947c77d49d98b88b3eca21f2abac194c217c460553e",
+        "role": "passage",
+        "timelineAt": 454.9943,
+        "questionId": null,
+        "voices": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "role": "male",
+          "voice": "en-US-GuyNeural",
+          "locale": "en-US",
+          "text": "Which firmware version should we install?",
+          "chars": 41
+        },
+        {
+          "role": "female",
+          "voice": "en-US-JennyNeural",
+          "locale": "en-US",
+          "text": "A. The installation is scheduled for Tuesday. B. Use the one listed in the release note. C. The package weighs two kilograms.",
+          "chars": 125
+        }
+      ],
+      "fullChars": 166,
+      "possibleMinimumTurnIndexes": [
+        1
+      ]
+    },
+    {
+      "mode": "practice",
+      "sourceAssetGuard": {
+        "file": "audio/azure-v1/test-02-06.mp3",
+        "start": 0.5,
+        "end": 18.428,
+        "sha256": "c8b6d5ddf2cd18dc4b40063efccbe0dece355af41f1f12f4c573f18164303769"
+      },
+      "turns": [
+        {
+          "role": "male",
+          "voice": "en-SG-WayneNeural",
+          "locale": "en-SG",
+          "text": "Which firmware version should we install?",
+          "chars": 41
+        },
+        {
+          "role": "female",
+          "voice": "en-SG-LunaNeural",
+          "locale": "en-SG",
+          "text": "A. The installation is scheduled for Tuesday. B. Use the one listed in the release note. C. The package weighs two kilograms.",
+          "chars": 125
+        }
+      ],
+      "fullChars": 166,
+      "possibleMinimumTurnIndexes": [
+        1
+      ]
+    }
+  ],
+  "untouchedCueGuards": [
+    {
+      "file": "audio/formal/test-02-cues-01.mp3",
+      "start": 17.34471,
+      "end": 18.38175,
+      "sha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "role": "cue",
+      "timelineAt": 453.95726,
+      "questionId": null,
+      "voices": null
+    }
+  ],
+  "untouchedStemGuards": [],
+  "practiceGuard": {
+    "file": "audio/azure-v1/test-02-06.mp3",
+    "start": 0.5,
+    "end": 18.428,
+    "sha256": "c8b6d5ddf2cd18dc4b40063efccbe0dece355af41f1f12f4c573f18164303769"
+  },
+  "keepOriginalAllReferencedAssetBytes": true,
+  "conditionalNotes": [
+    "New assets written beside content-addressed or approved per-question/per-group locations, never mutate existing shared banks.",
+    "Classify splicability only after waveform and listening; if durations differ use verified exact timing integration and acceptance."
+  ]
+}

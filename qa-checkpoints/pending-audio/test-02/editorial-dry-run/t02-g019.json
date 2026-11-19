@@ -1,0 +1,204 @@
+{
+  "group": "t02-g019",
+  "questions": [
+    19
+  ],
+  "oldQuestionAndKeys": [
+    {
+      "number": 19,
+      "id": "t02-q019",
+      "revision": 1,
+      "answer": "B"
+    }
+  ],
+  "checkpointStatus": "hold",
+  "proof": "Re-render full practice item unless independent evidence confirms Will; formal may retain known-matched male prompt.",
+  "ledgerEditorialChecks": "B explains video instead; A confuses in person with person; C changes subject to meeting agenda.",
+  "idPolicy": {
+    "old": "t02-q019",
+    "proposedNew": "t02-q019-r2",
+    "dependentPlanRefs": [
+      "formal question frame where applicable",
+      "answer marker",
+      "all actual review/practice frame or history lookups"
+    ],
+    "reason": "A scored spoken option changed; preserve original attempt identity/key and old content rather than silently reinterpret."
+  },
+  "guardedEdits": [
+    {
+      "entity": "t02-g019",
+      "path": [
+        "passage"
+      ],
+      "old": "Will you attend the supplier meeting in person?\nA. The person is very tall.\nB. I will join by video instead.\nC. I bought a new supplier.",
+      "new": "Will you attend the supplier meeting in person?\nA. The person is very tall.\nB. I will join by video instead.\nC. The supplier updated the meeting agenda."
+    },
+    {
+      "entity": "t02-g019",
+      "path": [
+        "audioScript"
+      ],
+      "old": "Will you attend the supplier meeting in person?\nA. The person is very tall.\nB. I will join by video instead.\nC. I bought a new supplier.",
+      "new": "Will you attend the supplier meeting in person?\nA. The person is very tall.\nB. I will join by video instead.\nC. The supplier updated the meeting agenda."
+    },
+    {
+      "entity": "t02-g019",
+      "path": [
+        "turns",
+        1,
+        "text"
+      ],
+      "old": "A. The person is very tall. B. I will join by video instead. C. I bought a new supplier.",
+      "new": "A. The person is very tall. B. I will join by video instead. C. The supplier updated the meeting agenda."
+    },
+    {
+      "entity": "t02-g019",
+      "path": [
+        "passageZh"
+      ],
+      "old": "你會親自到場參加供應商會議嗎？\nA. 那個人很高。\nB. 我會改用視訊參加。\nC. 我買了一個新供應商。",
+      "new": "你會親自到場參加供應商會議嗎？\nA. 那個人很高。\nB. 我會改用視訊參加。\nC. 供應商更新了會議議程。"
+    },
+    {
+      "entity": "t02-q019",
+      "path": [
+        "options",
+        2,
+        "text"
+      ],
+      "old": "I bought a new supplier.",
+      "new": "The supplier updated the meeting agenda."
+    },
+    {
+      "entity": "t02-q019",
+      "path": [
+        "options",
+        2,
+        "zh"
+      ],
+      "old": "我買了一個新供應商。",
+      "new": "供應商更新了會議議程。"
+    },
+    {
+      "entity": "t02-q019",
+      "path": [
+        "options",
+        2,
+        "whyZh"
+      ],
+      "old": "句意不符合參加會議的情境。",
+      "new": "更新議程與是否親自出席無關。"
+    },
+    {
+      "entity": "t02-q019",
+      "path": [
+        "revision"
+      ],
+      "old": 1,
+      "new": 2
+    }
+  ],
+  "voicesAndExactReplacementInputs": [
+    {
+      "mode": "formal",
+      "sourceAssetGuard": {
+        "file": "audio/formal-v2/test-02-07.mp3",
+        "start": 0.5,
+        "end": 16.604,
+        "sha256": "ee6016360ee74abc8a44404ef756702455fa08a4afc148e242676cb99e465c27",
+        "role": "passage",
+        "timelineAt": 529.84309,
+        "questionId": null,
+        "voices": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "role": "male",
+          "voice": "en-US-GuyNeural",
+          "locale": "en-US",
+          "text": "Will you attend the supplier meeting in person?",
+          "chars": 47
+        },
+        {
+          "role": "female",
+          "voice": "en-US-JennyNeural",
+          "locale": "en-US",
+          "text": "A. The person is very tall. B. I will join by video instead. C. The supplier updated the meeting agenda.",
+          "chars": 104
+        }
+      ],
+      "fullChars": 151,
+      "possibleMinimumTurnIndexes": [
+        0,
+        1
+      ]
+    },
+    {
+      "mode": "practice",
+      "sourceAssetGuard": {
+        "file": "audio/azure-v1/test-02-07.mp3",
+        "start": 0.5,
+        "end": 17.636,
+        "sha256": "23f6adf5f8140aad1c3ce855836b0800bd919ed4a24d73816a6875f99d770e84"
+      },
+      "turns": [
+        {
+          "role": "male",
+          "voice": "en-IE-ConnorNeural",
+          "locale": "en-IE",
+          "text": "Will you attend the supplier meeting in person?",
+          "chars": 47
+        },
+        {
+          "role": "female",
+          "voice": "en-IE-EmilyNeural",
+          "locale": "en-IE",
+          "text": "A. The person is very tall. B. I will join by video instead. C. The supplier updated the meeting agenda.",
+          "chars": 104
+        }
+      ],
+      "fullChars": 151,
+      "possibleMinimumTurnIndexes": [
+        0,
+        1
+      ]
+    }
+  ],
+  "untouchedCueGuards": [
+    {
+      "file": "audio/formal/test-02-cues-01.mp3",
+      "start": 21.20508,
+      "end": 22.25483,
+      "sha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "role": "cue",
+      "timelineAt": 528.79334,
+      "questionId": null,
+      "voices": null
+    }
+  ],
+  "untouchedStemGuards": [],
+  "practiceGuard": {
+    "file": "audio/azure-v1/test-02-07.mp3",
+    "start": 0.5,
+    "end": 17.636,
+    "sha256": "23f6adf5f8140aad1c3ce855836b0800bd919ed4a24d73816a6875f99d770e84"
+  },
+  "keepOriginalAllReferencedAssetBytes": true,
+  "conditionalNotes": [
+    "New assets written beside content-addressed or approved per-question/per-group locations, never mutate existing shared banks.",
+    "Classify splicability only after waveform and listening; if durations differ use verified exact timing integration and acceptance."
+  ]
+}

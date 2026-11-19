@@ -1,0 +1,202 @@
+{
+  "group": "t02-g013",
+  "questions": [
+    13
+  ],
+  "oldQuestionAndKeys": [
+    {
+      "number": 13,
+      "id": "t02-q013",
+      "revision": 1,
+      "answer": "A"
+    }
+  ],
+  "checkpointStatus": "hold",
+  "proof": "Semantically revised response turn in each physical mode",
+  "ledgerEditorialChecks": "attach PDF as requested; B gives location; C switches task to updating delivery address",
+  "idPolicy": {
+    "old": "t02-q013",
+    "proposedNew": "t02-q013-r2",
+    "dependentPlanRefs": [
+      "formal question frame where applicable",
+      "answer marker",
+      "all actual review/practice frame or history lookups"
+    ],
+    "reason": "A scored spoken option changed; preserve original attempt identity/key and old content rather than silently reinterpret."
+  },
+  "guardedEdits": [
+    {
+      "entity": "t02-g013",
+      "path": [
+        "passage"
+      ],
+      "old": "Could you attach the invoice to your reply?\nA. Certainly, I will send the PDF.\nB. It is beside the station.\nC. No, I have not replied to him before.",
+      "new": "Could you attach the invoice to your reply?\nA. Certainly, I will send the PDF.\nB. It is beside the station.\nC. I'll update the delivery address."
+    },
+    {
+      "entity": "t02-g013",
+      "path": [
+        "audioScript"
+      ],
+      "old": "Could you attach the invoice to your reply?\nA. Certainly, I will send the PDF.\nB. It is beside the station.\nC. No, I have not replied to him before.",
+      "new": "Could you attach the invoice to your reply?\nA. Certainly, I will send the PDF.\nB. It is beside the station.\nC. I'll update the delivery address."
+    },
+    {
+      "entity": "t02-g013",
+      "path": [
+        "turns",
+        1,
+        "text"
+      ],
+      "old": "A. Certainly, I will send the PDF. B. It is beside the station. C. No, I have not replied to him before.",
+      "new": "A. Certainly, I will send the PDF. B. It is beside the station. C. I'll update the delivery address."
+    },
+    {
+      "entity": "t02-g013",
+      "path": [
+        "passageZh"
+      ],
+      "old": "你可以回信時附上發票嗎？\nA. 當然，我會寄出 PDF 檔。\nB. 它在車站旁邊。\nC. 沒有，我以前沒回過他的信。",
+      "new": "你可以回信時附上發票嗎？\nA. 當然，我會寄出 PDF 檔。\nB. 它在車站旁邊。\nC. 我會更新送貨地址。"
+    },
+    {
+      "entity": "t02-q013",
+      "path": [
+        "options",
+        2,
+        "text"
+      ],
+      "old": "No, I have not replied to him before.",
+      "new": "I'll update the delivery address."
+    },
+    {
+      "entity": "t02-q013",
+      "path": [
+        "options",
+        2,
+        "zh"
+      ],
+      "old": "沒有，我以前沒回過他的信。",
+      "new": "我會更新送貨地址。"
+    },
+    {
+      "entity": "t02-q013",
+      "path": [
+        "options",
+        2,
+        "whyZh"
+      ],
+      "old": "是否曾回信不是這次要求附檔的重點。",
+      "new": "這是在說更新送貨地址，未回應能否在回信時附上發票。"
+    },
+    {
+      "entity": "t02-q013",
+      "path": [
+        "revision"
+      ],
+      "old": 1,
+      "new": 2
+    }
+  ],
+  "voicesAndExactReplacementInputs": [
+    {
+      "mode": "formal",
+      "sourceAssetGuard": {
+        "file": "audio/formal-v2/test-02-05.mp3",
+        "start": 0.5,
+        "end": 17.9,
+        "sha256": "c7b7fc1976b4ae94a7727516098eada098fb02f3aa3015e20ea6b2d182ba3ab9",
+        "role": "passage",
+        "timelineAt": 379.60672,
+        "questionId": null,
+        "voices": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "role": "male",
+          "voice": "en-US-GuyNeural",
+          "locale": "en-US",
+          "text": "Could you attach the invoice to your reply?",
+          "chars": 43
+        },
+        {
+          "role": "female",
+          "voice": "en-US-JennyNeural",
+          "locale": "en-US",
+          "text": "A. Certainly, I will send the PDF. B. It is beside the station. C. I'll update the delivery address.",
+          "chars": 100
+        }
+      ],
+      "fullChars": 143,
+      "possibleMinimumTurnIndexes": [
+        1
+      ]
+    },
+    {
+      "mode": "practice",
+      "sourceAssetGuard": {
+        "file": "audio/azure-v1/test-02-05.mp3",
+        "start": 0.5,
+        "end": 17.996,
+        "sha256": "46cd00e07960a7e43925b982177460df43950d92d80c814bdfdcb12862f8bdbf"
+      },
+      "turns": [
+        {
+          "role": "male",
+          "voice": "en-AU-WilliamNeural",
+          "locale": "en-AU",
+          "text": "Could you attach the invoice to your reply?",
+          "chars": 43
+        },
+        {
+          "role": "female",
+          "voice": "en-AU-NatashaNeural",
+          "locale": "en-AU",
+          "text": "A. Certainly, I will send the PDF. B. It is beside the station. C. I'll update the delivery address.",
+          "chars": 100
+        }
+      ],
+      "fullChars": 143,
+      "possibleMinimumTurnIndexes": [
+        1
+      ]
+    }
+  ],
+  "untouchedCueGuards": [
+    {
+      "file": "audio/formal/test-02-cues-01.mp3",
+      "start": 13.51212,
+      "end": 14.59388,
+      "sha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "role": "cue",
+      "timelineAt": 378.52497,
+      "questionId": null,
+      "voices": null
+    }
+  ],
+  "untouchedStemGuards": [],
+  "practiceGuard": {
+    "file": "audio/azure-v1/test-02-05.mp3",
+    "start": 0.5,
+    "end": 17.996,
+    "sha256": "46cd00e07960a7e43925b982177460df43950d92d80c814bdfdcb12862f8bdbf"
+  },
+  "keepOriginalAllReferencedAssetBytes": true,
+  "conditionalNotes": [
+    "New assets written beside content-addressed or approved per-question/per-group locations, never mutate existing shared banks.",
+    "Classify splicability only after waveform and listening; if durations differ use verified exact timing integration and acceptance."
+  ]
+}

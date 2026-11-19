@@ -1,0 +1,202 @@
+{
+  "group": "t02-g014",
+  "questions": [
+    14
+  ],
+  "oldQuestionAndKeys": [
+    {
+      "number": 14,
+      "id": "t02-q014",
+      "revision": 1,
+      "answer": "A"
+    }
+  ],
+  "checkpointStatus": "hold",
+  "proof": "Semantically revised response turn in each physical mode",
+  "ledgerEditorialChecks": "old audit report location does not acknowledge or respond to early arrival; A offers reception; C discusses model recency",
+  "idPolicy": {
+    "old": "t02-q014",
+    "proposedNew": "t02-q014-r2",
+    "dependentPlanRefs": [
+      "formal question frame where applicable",
+      "answer marker",
+      "all actual review/practice frame or history lookups"
+    ],
+    "reason": "A scored spoken option changed; preserve original attempt identity/key and old content rather than silently reinterpret."
+  },
+  "guardedEdits": [
+    {
+      "entity": "t02-g014",
+      "path": [
+        "passage"
+      ],
+      "old": "The auditor has arrived earlier than expected.\nA. I will meet her at reception.\nB. Yes, the factory is expected.\nC. It is a newer model.",
+      "new": "The auditor has arrived earlier than expected.\nA. I will meet her at reception.\nB. The previous audit report is in the shared folder.\nC. It is a newer model."
+    },
+    {
+      "entity": "t02-g014",
+      "path": [
+        "audioScript"
+      ],
+      "old": "The auditor has arrived earlier than expected.\nA. I will meet her at reception.\nB. Yes, the factory is expected.\nC. It is a newer model.",
+      "new": "The auditor has arrived earlier than expected.\nA. I will meet her at reception.\nB. The previous audit report is in the shared folder.\nC. It is a newer model."
+    },
+    {
+      "entity": "t02-g014",
+      "path": [
+        "turns",
+        1,
+        "text"
+      ],
+      "old": "A. I will meet her at reception. B. Yes, the factory is expected. C. It is a newer model.",
+      "new": "A. I will meet her at reception. B. The previous audit report is in the shared folder. C. It is a newer model."
+    },
+    {
+      "entity": "t02-g014",
+      "path": [
+        "passageZh"
+      ],
+      "old": "稽核人員比預期早到了。\nA. 我會到接待處迎接她。\nB. 是的，工廠被預期。\nC. 這是較新的型號。",
+      "new": "稽核人員比預期早到了。\nA. 我會到接待處迎接她。\nB. 上一份稽核報告在共用資料夾裡。\nC. 這是較新的型號。"
+    },
+    {
+      "entity": "t02-q014",
+      "path": [
+        "options",
+        1,
+        "text"
+      ],
+      "old": "Yes, the factory is expected.",
+      "new": "The previous audit report is in the shared folder."
+    },
+    {
+      "entity": "t02-q014",
+      "path": [
+        "options",
+        1,
+        "zh"
+      ],
+      "old": "是的，工廠被預期。",
+      "new": "上一份稽核報告在共用資料夾裡。"
+    },
+    {
+      "entity": "t02-q014",
+      "path": [
+        "options",
+        1,
+        "whyZh"
+      ],
+      "old": "句意不完整，也沒有回應稽核人員抵達的消息。",
+      "new": "這只交代上一份報告的存放位置，未回應稽核人員提早抵達的消息。"
+    },
+    {
+      "entity": "t02-q014",
+      "path": [
+        "revision"
+      ],
+      "old": 1,
+      "new": 2
+    }
+  ],
+  "voicesAndExactReplacementInputs": [
+    {
+      "mode": "formal",
+      "sourceAssetGuard": {
+        "file": "audio/formal-v2/test-02-05.mp3",
+        "start": 18.4,
+        "end": 34.888,
+        "sha256": "c7b7fc1976b4ae94a7727516098eada098fb02f3aa3015e20ea6b2d182ba3ab9",
+        "role": "passage",
+        "timelineAt": 405.06312,
+        "questionId": null,
+        "voices": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "role": "male",
+          "voice": "en-US-GuyNeural",
+          "locale": "en-US",
+          "text": "The auditor has arrived earlier than expected.",
+          "chars": 46
+        },
+        {
+          "role": "female",
+          "voice": "en-US-JennyNeural",
+          "locale": "en-US",
+          "text": "A. I will meet her at reception. B. The previous audit report is in the shared folder. C. It is a newer model.",
+          "chars": 110
+        }
+      ],
+      "fullChars": 156,
+      "possibleMinimumTurnIndexes": [
+        1
+      ]
+    },
+    {
+      "mode": "practice",
+      "sourceAssetGuard": {
+        "file": "audio/azure-v1/test-02-05.mp3",
+        "start": 18.496,
+        "end": 36.472,
+        "sha256": "46cd00e07960a7e43925b982177460df43950d92d80c814bdfdcb12862f8bdbf"
+      },
+      "turns": [
+        {
+          "role": "male",
+          "voice": "en-IN-PrabhatNeural",
+          "locale": "en-IN",
+          "text": "The auditor has arrived earlier than expected.",
+          "chars": 46
+        },
+        {
+          "role": "female",
+          "voice": "en-IN-NeerjaNeural",
+          "locale": "en-IN",
+          "text": "A. I will meet her at reception. B. The previous audit report is in the shared folder. C. It is a newer model.",
+          "chars": 110
+        }
+      ],
+      "fullChars": 156,
+      "possibleMinimumTurnIndexes": [
+        1
+      ]
+    }
+  ],
+  "untouchedCueGuards": [
+    {
+      "file": "audio/formal/test-02-cues-01.mp3",
+      "start": 14.84388,
+      "end": 15.84771,
+      "sha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "role": "cue",
+      "timelineAt": 404.05929,
+      "questionId": null,
+      "voices": null
+    }
+  ],
+  "untouchedStemGuards": [],
+  "practiceGuard": {
+    "file": "audio/azure-v1/test-02-05.mp3",
+    "start": 18.496,
+    "end": 36.472,
+    "sha256": "46cd00e07960a7e43925b982177460df43950d92d80c814bdfdcb12862f8bdbf"
+  },
+  "keepOriginalAllReferencedAssetBytes": true,
+  "conditionalNotes": [
+    "New assets written beside content-addressed or approved per-question/per-group locations, never mutate existing shared banks.",
+    "Classify splicability only after waveform and listening; if durations differ use verified exact timing integration and acceptance."
+  ]
+}

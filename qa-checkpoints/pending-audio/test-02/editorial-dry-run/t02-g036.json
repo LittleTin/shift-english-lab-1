@@ -1,0 +1,241 @@
+{
+  "group": "t02-g036",
+  "questions": [
+    44,
+    45,
+    46
+  ],
+  "oldQuestionAndKeys": [
+    {
+      "number": 44,
+      "id": "t02-q044",
+      "revision": 1,
+      "answer": "D"
+    },
+    {
+      "number": 45,
+      "id": "t02-q045",
+      "revision": 1,
+      "answer": "C"
+    },
+    {
+      "number": 46,
+      "id": "t02-q046",
+      "revision": 1,
+      "answer": "B"
+    }
+  ],
+  "checkpointStatus": "hold",
+  "proof": "Prefer complete shared dialogue with all original wording except corrected first turn; verify Q045 separate spoken stem using independent evidence or if confirmed defective, separately replace standard-American stem without changing wording/key. A bare snippet is not a verified whole passage.",
+  "ledgerEditorialChecks": "Q044 D only: 600 units per month; 1000 is original quote, 3000/100 unstated. Q045 C plain vs printed cartons; Q046 B by tomorrow afternoon.",
+  "idPolicy": {
+    "recommended": "Retain stable IDs (unchanged written stems, options and keys; corrected supporting premise); issue content revision and preserve original audio/translation/result separately. If governance classifies the corrected shared passage as material to item identity, use successor IDs and immutable result mapping, never auto-regrade."
+  },
+  "guardedEdits": [
+    {
+      "entity": "t02-g036",
+      "path": [
+        "passage"
+      ],
+      "old": "Woman: Your quotation assumes one thousand units a month. Our forecast is only six hundred for the first quarter.\nMan: I can revise the unit price for that volume. Will you still use the same enclosure and packaging?\nWoman: The enclosure is unchanged, but we want plain cartons instead of printed ones. Please show the packaging cost separately.\nMan: Certainly. I will email a revised quotation by tomorrow afternoon.",
+      "new": "Woman: Your quotation assumes one thousand units a month. Our forecast is only six hundred units per month for the first quarter.\nMan: I can revise the unit price for that volume. Will you still use the same enclosure and packaging?\nWoman: The enclosure is unchanged, but we want plain cartons instead of printed ones. Please show the packaging cost separately.\nMan: Certainly. I will email a revised quotation by tomorrow afternoon."
+    },
+    {
+      "entity": "t02-g036",
+      "path": [
+        "audioScript"
+      ],
+      "old": "Your quotation assumes one thousand units a month. Our forecast is only six hundred for the first quarter.\nI can revise the unit price for that volume. Will you still use the same enclosure and packaging?\nThe enclosure is unchanged, but we want plain cartons instead of printed ones. Please show the packaging cost separately.\nCertainly. I will email a revised quotation by tomorrow afternoon.",
+      "new": "Your quotation assumes one thousand units a month. Our forecast is only six hundred units per month for the first quarter.\nI can revise the unit price for that volume. Will you still use the same enclosure and packaging?\nThe enclosure is unchanged, but we want plain cartons instead of printed ones. Please show the packaging cost separately.\nCertainly. I will email a revised quotation by tomorrow afternoon."
+    },
+    {
+      "entity": "t02-g036",
+      "path": [
+        "turns",
+        0,
+        "text"
+      ],
+      "old": "Your quotation assumes one thousand units a month. Our forecast is only six hundred for the first quarter.",
+      "new": "Your quotation assumes one thousand units a month. Our forecast is only six hundred units per month for the first quarter."
+    },
+    {
+      "entity": "t02-g036",
+      "path": [
+        "passageZh"
+      ],
+      "old": "女：你們的報價假設每月一千台。我們第一季的預測只有每月六百台。\n男：我可以依那個數量修改單價。外殼和包裝仍使用相同的嗎？\n女：外殼不變，但我們要用素面紙箱代替印刷紙箱。請把包裝費用分開列出。\n男：當然。我明天下午前會寄出修訂報價。",
+      "new": "女：你們的報價假設每月一千台。我們預估第一季每月只有六百台。\n男：我可以依那個數量修改單價。外殼和包裝仍使用相同的嗎？\n女：外殼不變，但我們要用素面紙箱代替印刷紙箱。請把包裝費用分開列出。\n男：當然。我最遲會在明天下午寄出修訂報價。"
+    },
+    {
+      "entity": "t02-q044",
+      "path": [
+        "evidence"
+      ],
+      "old": "Our forecast is only six hundred for the first quarter.",
+      "new": "Our forecast is only six hundred units per month for the first quarter."
+    },
+    {
+      "entity": "t02-q044",
+      "path": [
+        "explanationZh"
+      ],
+      "old": "女方表示第一季每月預測六百台。",
+      "new": "女方明說第一季預估每月只有六百台；每月一千台是原報價的假設。"
+    },
+    {
+      "entity": "t02-q044",
+      "path": [
+        "options",
+        3,
+        "whyZh"
+      ],
+      "old": "女方表示第一季每月預測六百台。",
+      "new": "女方明說第一季預估每月只有六百台。"
+    },
+    {
+      "entity": "t02-q046",
+      "path": [
+        "options",
+        1,
+        "zh"
+      ],
+      "old": "明天下午前。",
+      "new": "最遲明天下午。"
+    },
+    {
+      "entity": "t02-q046",
+      "path": [
+        "options",
+        1,
+        "whyZh"
+      ],
+      "old": "最後一句直接給出期限。",
+      "new": "男方承諾最遲會在明天下午以電子郵件寄出修訂報價。"
+    },
+    {
+      "entity": "t02-q046",
+      "path": [
+        "explanationZh"
+      ],
+      "old": "最後一句直接給出期限。",
+      "new": "男方承諾最遲會在明天下午以電子郵件寄出修訂報價。"
+    }
+  ],
+  "voicesAndExactReplacementInputs": [
+    {
+      "mode": "shared formal/practice",
+      "sourceAssetGuard": {
+        "file": "audio/azure-v1/test-02-14.mp3",
+        "start": 0.5,
+        "end": 30.476,
+        "sha256": "c7e1d9df3818415f157a25210ab0f5e47620b3e20b28c4ffa57e4f9463fff0a0",
+        "role": "passage",
+        "timelineAt": 1187.11949,
+        "questionId": null,
+        "voices": [
+          {
+            "speaker": "female",
+            "locale": "en-TZ",
+            "role": "female",
+            "modelVoice": "en-TZ-ImaniNeural"
+          },
+          {
+            "speaker": "male",
+            "locale": "en-TZ",
+            "role": "male",
+            "modelVoice": "en-TZ-ElimuNeural"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "role": "female",
+          "voice": "en-TZ-ImaniNeural",
+          "locale": "en-TZ",
+          "text": "Your quotation assumes one thousand units a month. Our forecast is only six hundred units per month for the first quarter.",
+          "chars": 122
+        },
+        {
+          "role": "male",
+          "voice": "en-TZ-ElimuNeural",
+          "locale": "en-TZ",
+          "text": "I can revise the unit price for that volume. Will you still use the same enclosure and packaging?",
+          "chars": 97
+        },
+        {
+          "role": "female",
+          "voice": "en-TZ-ImaniNeural",
+          "locale": "en-TZ",
+          "text": "The enclosure is unchanged, but we want plain cartons instead of printed ones. Please show the packaging cost separately.",
+          "chars": 121
+        },
+        {
+          "role": "male",
+          "voice": "en-TZ-ElimuNeural",
+          "locale": "en-TZ",
+          "text": "Certainly. I will email a revised quotation by tomorrow afternoon.",
+          "chars": 66
+        }
+      ],
+      "fullChars": 406,
+      "possibleMinimumTurnIndexes": [
+        0
+      ]
+    }
+  ],
+  "untouchedCueGuards": [
+    {
+      "file": "audio/formal/test-02-cues-02.mp3",
+      "start": 26.62358,
+      "end": 30.58933,
+      "sha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+      "role": "cue",
+      "timelineAt": 1183.15374,
+      "questionId": null,
+      "voices": null
+    }
+  ],
+  "untouchedStemGuards": [
+    {
+      "file": "audio/formal/test-02-cues-02.mp3",
+      "start": 30.83933,
+      "end": 35.06158,
+      "sha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+      "role": "question",
+      "timelineAt": 1217.09549,
+      "questionId": "t02-q044",
+      "voices": null
+    },
+    {
+      "file": "audio/formal/test-02-cues-02.mp3",
+      "start": 35.31158,
+      "end": 38.40979,
+      "sha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+      "role": "question",
+      "timelineAt": 1232.60185,
+      "questionId": "t02-q045",
+      "voices": null
+    },
+    {
+      "file": "audio/formal/test-02-cues-02.mp3",
+      "start": 38.65979,
+      "end": 42.12375,
+      "sha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+      "role": "question",
+      "timelineAt": 1246.98417,
+      "questionId": "t02-q046",
+      "voices": null
+    }
+  ],
+  "practiceGuard": {
+    "file": "audio/azure-v1/test-02-14.mp3",
+    "start": 0.5,
+    "end": 30.476,
+    "sha256": "c7e1d9df3818415f157a25210ab0f5e47620b3e20b28c4ffa57e4f9463fff0a0"
+  },
+  "keepOriginalAllReferencedAssetBytes": true,
+  "conditionalNotes": [
+    "New assets written beside content-addressed or approved per-question/per-group locations, never mutate existing shared banks.",
+    "Classify splicability only after waveform and listening; if durations differ use verified exact timing integration and acceptance."
+  ]
+}
