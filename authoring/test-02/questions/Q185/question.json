@@ -1,0 +1,57 @@
+{
+  "id": "t02-q185-r3",
+  "testId": "test-02",
+  "number": 185,
+  "part": 7,
+  "groupId": "t02-r-p7-12",
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "daily",
+    "reading-comprehension"
+  ],
+  "prompt": "What will happen if Priya cancels at 8:10 a.m.?",
+  "promptZh": "若 Priya 上午八點十分取消，會怎麼樣？",
+  "options": [
+    {
+      "text": "The booked train’s departure will be delayed",
+      "zh": "所訂班次將延後發車",
+      "whyZh": "訂票回覆不曾說個別取消會延後發車；逾時取消的後果是不予退款。",
+      "id": "A"
+    },
+    {
+      "text": "She will receive NT$180 automatically",
+      "zh": "她會自動收到一百八十元退款",
+      "whyZh": "已過免費取消期限，依回覆規則不予退款。",
+      "id": "B"
+    },
+    {
+      "text": "She will be moved to Train C automatically",
+      "zh": "她會自動改搭 C 車",
+      "whyZh": "文件沒有自動改班規則，且 C 車客滿。",
+      "id": "C"
+    },
+    {
+      "text": "The ticket will not be refunded",
+      "zh": "車票不退款",
+      "whyZh": "八點十分已晚於八點的免費取消期限，適用不退款規則。",
+      "id": "D"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "八點十分已晚於八點的免費取消期限，適用不退款規則。",
+  "evidence": "later cancellations are not refundable",
+  "vocabulary": [
+    {
+      "term": "fully booked",
+      "zh": "已客滿",
+      "note": "可預訂座位均已訂滿。"
+    },
+    {
+      "term": "refundable",
+      "zh": "可退款的",
+      "note": "符合條件時可以退還款項。"
+    }
+  ],
+  "revision": 3
+}

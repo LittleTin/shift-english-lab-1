@@ -1,0 +1,51 @@
+{
+  "id": "t01-q016",
+  "testId": "test-01",
+  "number": 16,
+  "part": 2,
+  "groupId": "t01-g016",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "location"
+  ],
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽題目，選出最合適的回應。",
+  "options": [
+    {
+      "id": "A",
+      "text": "About twenty minutes.",
+      "zh": "大約二十分鐘。",
+      "whyZh": "這是時間長度，不是入口位置。"
+    },
+    {
+      "id": "B",
+      "text": "They visited last month.",
+      "zh": "他們上個月來訪過。",
+      "whyZh": "過去來訪時間沒有說明現在應使用的入口。"
+    },
+    {
+      "id": "C",
+      "text": "The one next to the gowning area.",
+      "zh": "更衣區旁邊那個入口。",
+      "whyZh": "Which entrance 要求指出某個入口；the one 代替 entrance，並以更衣區作位置辨識。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "Which entrance 要求指出某個入口；the one 代替 entrance，並以更衣區作位置辨識。",
+  "evidence": "Which entrance should cleanroom visitors use?",
+  "vocabulary": [
+    {
+      "term": "cleanroom",
+      "zh": "無塵室",
+      "note": "控制空氣粒子及作業環境的區域。"
+    },
+    {
+      "term": "gowning area",
+      "zh": "穿戴無塵衣的更衣區",
+      "note": "進入受控區域前換裝的場所。"
+    }
+  ],
+  "revision": 1
+}

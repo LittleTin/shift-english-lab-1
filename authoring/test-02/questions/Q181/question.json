@@ -1,0 +1,57 @@
+{
+  "id": "t02-q181",
+  "testId": "test-02",
+  "number": 181,
+  "part": 7,
+  "groupId": "t02-r-p7-12",
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "daily",
+    "reading-comprehension"
+  ],
+  "prompt": "Which train was reserved for Priya?",
+  "promptZh": "替 Priya 訂了哪班車？",
+  "options": [
+    {
+      "text": "Train D",
+      "zh": "D 車",
+      "whyZh": "十一點抵達，超過十點半期限。",
+      "id": "A"
+    },
+    {
+      "text": "Train C",
+      "zh": "C 車",
+      "whyZh": "時間符合，但已客滿且 Priya 不願候補。",
+      "id": "B"
+    },
+    {
+      "text": "Train B",
+      "zh": "B 車",
+      "whyZh": "八點半出發符合不得早於八點十五分，十點二十分抵達符合十點半期限，且有位。",
+      "id": "C"
+    },
+    {
+      "text": "Train A",
+      "zh": "A 車",
+      "whyZh": "八點出發早於 Priya 可出發時間。",
+      "id": "D"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "八點半出發符合不得早於八點十五分，十點二十分抵達符合十點半期限，且有位。",
+  "evidence": "Train B: departs 8:30 a.m.; arrives 10:20 a.m.; seats available.",
+  "vocabulary": [
+    {
+      "term": "fully booked",
+      "zh": "已客滿",
+      "note": "可預訂座位均已訂滿。"
+    },
+    {
+      "term": "refundable",
+      "zh": "可退款的",
+      "note": "符合條件時可以退還款項。"
+    }
+  ],
+  "revision": 1
+}

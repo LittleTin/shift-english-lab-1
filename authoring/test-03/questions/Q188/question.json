@@ -1,0 +1,53 @@
+{
+  "id": "t03-q188",
+  "testId": "test-03",
+  "number": 188,
+  "part": 7,
+  "groupId": "t03-g071",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "business",
+    "reading-comprehension",
+    "triple"
+  ],
+  "prompt": "At approximately what time should Dana reach the venue using the suitable train and a taxi?",
+  "promptZh": "搭適合班次再轉計程車，Dana 約幾點到會場？",
+  "options": [
+    {
+      "text": "10:25 a.m.",
+      "zh": "上午十點二十五分",
+      "whyZh": "E18 十點抵達，計程車約二十五分鐘。",
+      "id": "A"
+    },
+    {
+      "text": "10:50 a.m.",
+      "zh": "上午十點五十分",
+      "whyZh": "這是搭公車而非計程車所需時間。",
+      "id": "B"
+    },
+    {
+      "text": "9:30 a.m.",
+      "zh": "上午九點半",
+      "whyZh": "上午 9:30 是搭 E12 再轉計程車的估計時間，但 E12 在上午 7:10 出發，早於 Dana 能出發的時間。",
+      "id": "C"
+    },
+    {
+      "text": "11:35 a.m.",
+      "zh": "上午十一點三十五分",
+      "whyZh": "這是較晚 E24 的到場時間，不符合條件。",
+      "id": "D"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "E18 十點抵達，計程車約二十五分鐘。",
+  "evidence": "E18 ... arrives 10:00 / A taxi ... 25 minutes",
+  "vocabulary": [
+    {
+      "term": "itinerary",
+      "zh": "行程",
+      "note": "本題閱讀重點詞彙。"
+    }
+  ],
+  "revision": 1
+}

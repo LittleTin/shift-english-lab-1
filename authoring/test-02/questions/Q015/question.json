@@ -1,0 +1,45 @@
+{
+  "id": "t02-q015",
+  "testId": "test-02",
+  "number": 15,
+  "part": 2,
+  "groupId": "t02-g015",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "question-response"
+  ],
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+  "options": [
+    {
+      "id": "A",
+      "text": "Yes, it says five hundred pieces.",
+      "zh": "有，上面寫五百個。",
+      "whyZh": "直接確認有最低數量並指出報價中的數字。"
+    },
+    {
+      "id": "B",
+      "text": "The minimum temperature was low.",
+      "zh": "最低溫度很低。",
+      "whyZh": "minimum 雖重複出現，這裡問的是訂購量而非溫度。"
+    },
+    {
+      "id": "C",
+      "text": "We ordered lunch already.",
+      "zh": "我們已經點午餐了。",
+      "whyZh": "order 在此指採購，不是點餐。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "直接確認有最低數量並指出報價中的數字。",
+  "evidence": "Does this quotation include a minimum order quantity?",
+  "vocabulary": [
+    {
+      "term": "minimum order quantity",
+      "zh": "最低訂購量",
+      "note": "報價或供貨條件中要求的一次最低訂購數量，常縮寫為 MOQ。"
+    }
+  ],
+  "revision": 1
+}

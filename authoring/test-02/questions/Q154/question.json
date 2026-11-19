@@ -1,0 +1,57 @@
+{
+  "id": "t02-q154-r2",
+  "testId": "test-02",
+  "number": 154,
+  "part": 7,
+  "groupId": "t02-r-p7-03",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "What should the incoming leader do with an expired instruction?",
+  "promptZh": "接班組長遇到已過期指示應怎麼做？",
+  "options": [
+    {
+      "text": "Pause the affected operation and contact the approving engineer",
+      "zh": "暫停受影響的作業，並聯絡核准該指示的工程師",
+      "whyZh": "臨時指示一旦到期，須暫停受影響的作業，並聯絡當初核准該指示的工程師。",
+      "id": "A"
+    },
+    {
+      "text": "Extend the expiry time without approval",
+      "zh": "自行延長有效時間",
+      "whyZh": "文件沒有授權組長自行延長。",
+      "id": "B"
+    },
+    {
+      "text": "Continue because the previous shift used it",
+      "zh": "因上一班用過而繼續使用",
+      "whyZh": "文件明確說不可假設昨天許可仍適用。",
+      "id": "C"
+    },
+    {
+      "text": "Record the expiry in the log and wait until the next handover",
+      "zh": "在紀錄中註明已到期，等下次交班再處理",
+      "whyZh": "程序要求立即暫停受影響作業並聯絡核准工程師，不是等待交班。",
+      "id": "D"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "臨時指示一旦到期，須暫停受影響的作業，並聯絡當初核准該指示的工程師。",
+  "evidence": "If an instruction has expired, pause the affected operation and contact the approving engineer.",
+  "vocabulary": [
+    {
+      "term": "handover log",
+      "zh": "交接紀錄",
+      "note": "記載跨班次需要傳遞的作業資訊。"
+    },
+    {
+      "term": "expiry time",
+      "zh": "到期時間",
+      "note": "許可或指示停止有效的時點。"
+    }
+  ],
+  "revision": 2
+}

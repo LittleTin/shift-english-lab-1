@@ -1,0 +1,57 @@
+{
+  "id": "t03-q075-r2",
+  "testId": "test-03",
+  "number": 75,
+  "part": 4,
+  "groupId": "t03-g046-medium-r2",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "daily",
+    "detail"
+  ],
+  "prompt": "What should passengers do until a platform is assigned?",
+  "promptZh": "月台尚未指定前，旅客應該怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Wait at platform six and check the electronic boards.",
+      "zh": "到六號月台等候並看電子看板。",
+      "whyZh": "六號月台是紙票顯示的舊資訊，公告要求不要前往。"
+    },
+    {
+      "id": "B",
+      "text": "Stay in the waiting area but follow the paper ticket.",
+      "zh": "留在候車區，但之後依照紙票指示。",
+      "whyZh": "候車區正確，應以電子看板而非紙票為準。"
+    },
+    {
+      "id": "C",
+      "text": "Stay in the main waiting area and check the electronic boards.",
+      "zh": "留在主要候車區，留意電子看板。",
+      "whyZh": "公告要求先留在候車區，月台確定時再看電子看板的更新。"
+    },
+    {
+      "id": "D",
+      "text": "Leave the station and return for the next announcement.",
+      "zh": "先離開車站，下次公告時再回來。",
+      "whyZh": "公告要求留在候車區，沒有請旅客先離站。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "公告要求先留在候車區，月台確定時再看電子看板的更新。",
+  "evidence": "should remain in the main waiting area | The electronic boards will display the correct platform when one is assigned.",
+  "vocabulary": [
+    {
+      "term": "departure platform",
+      "zh": "出發月台",
+      "note": "列車出發的月台；這班車尚未確認。"
+    },
+    {
+      "term": "booked connection",
+      "zh": "已預訂的轉乘",
+      "note": "已事先預訂、銜接本班列車的後續交通。"
+    }
+  ],
+  "revision": 2
+}

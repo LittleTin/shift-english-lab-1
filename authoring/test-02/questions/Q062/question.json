@@ -1,0 +1,52 @@
+{
+  "id": "t02-q062-r2",
+  "testId": "test-02",
+  "number": 62,
+  "part": 3,
+  "groupId": "t02-g042-r2",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "daily",
+    "listening-inference"
+  ],
+  "prompt": "What does this pickup message mean for her order?",
+  "promptZh": "這則取貨通知對她的訂單代表什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Both items can be collected in one trip today.",
+      "zh": "兩件今天就能一次取完。",
+      "whyZh": "筆記本要明天才到，不代表整筆訂單都可取。"
+    },
+    {
+      "id": "B",
+      "text": "Only the notebook is ready now.",
+      "zh": "現在只有筆記本可取。",
+      "whyZh": "先到的是桌燈，筆記本還沒到。"
+    },
+    {
+      "id": "C",
+      "text": "The shop will wait to release the lamp until the notebook arrives.",
+      "zh": "店家會等筆記本到了才交付桌燈。",
+      "whyZh": "通知逐件發送，不要求等齊才領。"
+    },
+    {
+      "id": "D",
+      "text": "The lamp is ready, and the notebook will have its own notice.",
+      "zh": "桌燈可取，筆記本會有另一則通知。",
+      "whyZh": "她只收到一則通知，而目前只有桌燈到貨；店家按商品分別通知。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "她只收到一則通知，而目前只有桌燈到貨；店家按商品分別通知。",
+  "evidence": "I got a pickup message for my order. I need the lamp tonight, but I’ve lost the order number. | That’s my number, but the order is in my brother’s name. Are my lamp and notebook both ready? | The lamp is here. The notebook arrives tomorrow. We text for each item and hold it through Saturday.",
+  "vocabulary": [
+    {
+      "term": "pickup notice",
+      "zh": "取貨通知",
+      "note": "告知商品可取貨；本店規則是按單品分開通知。"
+    }
+  ],
+  "revision": 2
+}

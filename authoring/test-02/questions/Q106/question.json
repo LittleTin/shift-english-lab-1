@@ -1,0 +1,52 @@
+{
+  "id": "t02-q106-r3",
+  "testId": "test-02",
+  "number": 106,
+  "part": 5,
+  "groupId": null,
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "technology",
+    "grammar"
+  ],
+  "prompt": "Your log shows that you reinstalled the printer driver before calling support. The problem was only a paused print queue, so you ____ the driver.",
+  "promptZh": "你的紀錄顯示，你在聯絡客服前已重新安裝印表機驅動程式。不過問題只是列印佇列已暫停，所以你____驅動程式。",
+  "options": [
+    {
+      "id": "A",
+      "text": "could not have reinstalled",
+      "zh": "當時不可能重新安裝",
+      "whyZh": "紀錄顯示你確實重新安裝了驅動程式，不能說當時不可能重裝。"
+    },
+    {
+      "id": "B",
+      "text": "should have reinstalled",
+      "zh": "當時應該重新安裝",
+      "whyZh": "問題出在列印佇列暫停，不需要重裝；紀錄也顯示這個動作已經做了。"
+    },
+    {
+      "id": "C",
+      "text": "need not have reinstalled",
+      "zh": "當時其實不必重新安裝",
+      "whyZh": "句首確認你已實際重新安裝；但只須恢復列印佇列，所以以 need not have 表達做了卻沒有必要。"
+    },
+    {
+      "id": "D",
+      "text": "must have reinstalled",
+      "zh": "當時一定重新安裝了",
+      "whyZh": "這表示用線索推斷動作一定發生；這裡不是要從列印佇列故障推定你一定重裝，而是說重裝其實不必要。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "句首確認你已實際重新安裝；但只須恢復列印佇列，所以以 need not have 表達做了卻沒有必要。",
+  "evidence": "Your log shows that you reinstalled […] only a paused print queue",
+  "vocabulary": [
+    {
+      "term": "print queue",
+      "zh": "列印佇列",
+      "note": "系統用來等候並安排列印工作的清單。"
+    }
+  ],
+  "revision": 3
+}

@@ -1,0 +1,53 @@
+{
+  "id": "t02-q112-r2",
+  "testId": "test-02",
+  "number": 112,
+  "part": 5,
+  "groupId": null,
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "technology",
+    "sentence-completion",
+    "context"
+  ],
+  "prompt": "Version 2 of the monitoring software was not installed on this device until noon. The device generated the warning locally at 9 a.m., while version 1 was still running, so version 2 ____ the morning warning.",
+  "promptZh": "這部裝置到中午才安裝第 2 版監控軟體。上午 9 點，裝置仍執行第 1 版，並在本機產生了警告。因此，上午的警告____由第 2 版引發。",
+  "options": [
+    {
+      "id": "A",
+      "text": "might have triggered",
+      "zh": "可能是",
+      "whyZh": "第 2 版安裝時間晚於當時的警告，不能視為那次警告的可能來源。"
+    },
+    {
+      "id": "B",
+      "text": "must have triggered",
+      "zh": "一定是",
+      "whyZh": "當時執行的是第 1 版；不能據此斷定尚未安裝的第 2 版引發警告。"
+    },
+    {
+      "id": "C",
+      "text": "could not have triggered",
+      "zh": "不可能是",
+      "whyZh": "上午 9 點的警告由這部裝置在本機產生；當時仍執行第 1 版，第 2 版中午才安裝，因此不可能由第 2 版引發。"
+    },
+    {
+      "id": "D",
+      "text": "should have triggered",
+      "zh": "照理說應該是",
+      "whyZh": "此處不是依設計預測當時應出現的警告，而是依已知時間排除不可能的原因。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "上午 9 點的警告由這部裝置在本機產生；當時仍執行第 1 版，第 2 版中午才安裝，因此不可能由第 2 版引發。",
+  "evidence": "not installed on this device until noon […] generated the warning locally at 9 a.m., while version 1 was still running",
+  "vocabulary": [
+    {
+      "term": "monitoring software",
+      "zh": "監控軟體",
+      "note": "持續追蹤設備狀態的程式，可在偵測到異常時發出警告。"
+    }
+  ],
+  "revision": 2
+}

@@ -1,0 +1,56 @@
+{
+  "id": "t02-q037-r2",
+  "testId": "test-02",
+  "number": 37,
+  "part": 3,
+  "groupId": "t02-g033",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "error log"
+  ],
+  "prompt": "What should happen to one failed unit?",
+  "promptZh": "其中一台故障機應如何處理？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Leave it as it failed for investigation, even if the others are restored after logging.",
+      "zh": "即使記錄儲存後還原其他機器，也讓這一台保持故障狀態供調查。",
+      "whyZh": "即使其他故障機在記錄存好後可以還原，這台仍原樣保留給軟體團隊調查。"
+    },
+    {
+      "id": "B",
+      "text": "Restore it before exporting logs, then reserve it for investigation.",
+      "zh": "先還原這台再匯出記錄，之後留它調查。",
+      "whyZh": "變更前須先匯出記錄；被保留的這台還不能先還原。"
+    },
+    {
+      "id": "C",
+      "text": "Keep it unchanged only until the logs are exported, then restore it as well.",
+      "zh": "只保留到記錄匯出為止，之後也把這台還原。",
+      "whyZh": "保留故障機是為了後續調查，並非只留到記錄儲存完。"
+    },
+    {
+      "id": "D",
+      "text": "Repair it immediately and keep the working spare unchanged instead.",
+      "zh": "立刻修好這台，改保留可用備用機不動。",
+      "whyZh": "應保留的是故障機，不是原本就能用的備用機。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "即使其他故障機在記錄存好後可以還原，這台仍原樣保留給軟體團隊調查。",
+  "evidence": "Before we change anything, can you export the error logs? | Yes, once the logs are saved. Keep one failed unit unchanged for further investigation.",
+  "vocabulary": [
+    {
+      "term": "error log",
+      "zh": "錯誤紀錄",
+      "note": "記錄錯誤事件與狀態，協助除錯。"
+    },
+    {
+      "term": "reproduce an issue",
+      "zh": "重現問題",
+      "note": "在可控制的條件下再次觸發相同問題。"
+    }
+  ],
+  "revision": 2
+}

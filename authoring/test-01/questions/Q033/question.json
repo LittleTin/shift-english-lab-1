@@ -1,0 +1,52 @@
+{
+  "id": "t01-q033",
+  "testId": "test-01",
+  "number": 33,
+  "part": 3,
+  "groupId": "t01-g032",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "quantity"
+  ],
+  "prompt": "How many completed units are needed for the first test?",
+  "promptZh": "第一次測試需要幾片完整成品？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Twenty.",
+      "zh": "二十片。",
+      "whyZh": "對話沒有提出二十片的測試需求。"
+    },
+    {
+      "id": "B",
+      "text": "One hundred.",
+      "zh": "一百片。",
+      "whyZh": "一百片並非對話中指定的第一批數量。"
+    },
+    {
+      "id": "C",
+      "text": "Forty.",
+      "zh": "四十片。",
+      "whyZh": "女子明確說驗證團隊需要 forty complete units；兩百片是整張訂單數量，不能混淆。"
+    },
+    {
+      "id": "D",
+      "text": "Two hundred.",
+      "zh": "兩百片。",
+      "whyZh": "兩百片是原本預定星期五交付的全部數量；急需測試的只有四十片。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "女子明確說驗證團隊需要 forty complete units；兩百片是整張訂單數量，不能混淆。",
+  "evidence": "Our validation team needs forty complete units",
+  "vocabulary": [
+    {
+      "term": "validation",
+      "zh": "驗證",
+      "note": "以測試確認產品符合預定要求。"
+    }
+  ],
+  "revision": 1
+}

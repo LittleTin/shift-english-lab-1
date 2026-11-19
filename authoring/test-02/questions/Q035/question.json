@@ -1,0 +1,51 @@
+{
+  "id": "t02-q035-r2",
+  "testId": "test-02",
+  "number": 35,
+  "part": 3,
+  "groupId": "t02-g033",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "error log"
+  ],
+  "prompt": "Why is the older version worth keeping for tomorrow?",
+  "promptZh": "為什麼值得保留舊版供明天使用？",
+  "options": [
+    {
+      "id": "A",
+      "text": "It automatically saves the error logs.",
+      "zh": "它會自動儲存錯誤記錄。",
+      "whyZh": "錯誤記錄須先另外匯出。"
+    },
+    {
+      "id": "B",
+      "text": "It showed the same problem on the spare unit.",
+      "zh": "它在備用機上出現相同問題。",
+      "whyZh": "備用機上的舊版仍能運作。"
+    },
+    {
+      "id": "C",
+      "text": "It provides a working fallback for the customer demo.",
+      "zh": "它能為客戶展示提供可用的備案。",
+      "whyZh": "更新後展示機故障，但備用機上的舊版可用，隔天早上的展示可用舊版當備案。"
+    },
+    {
+      "id": "D",
+      "text": "It lets the team skip the investigation.",
+      "zh": "它能讓團隊省去調查。",
+      "whyZh": "還要留一台故障機供後續調查。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "更新後展示機故障，但備用機上的舊版可用，隔天早上的展示可用舊版當備案。",
+  "evidence": "Three demonstration units stopped responding after yesterday's firmware update. The older version still works on the spare unit. | Yes. Should I restore the earlier version afterward? We have a customer demonstration tomorrow morning. | Yes, once the logs are saved. Keep one failed unit unchanged for further investigation.",
+  "vocabulary": [
+    {
+      "term": "fallback",
+      "zh": "備案",
+      "note": "原做法失效時可採用的替代方案。"
+    }
+  ],
+  "revision": 2
+}

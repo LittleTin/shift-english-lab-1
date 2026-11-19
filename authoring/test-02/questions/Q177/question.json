@@ -1,0 +1,57 @@
+{
+  "id": "t02-q177-r2",
+  "testId": "test-02",
+  "number": 177,
+  "part": 7,
+  "groupId": "t02-r-p7-11",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "How many Lot A units were accepted in total after the repeat test?",
+  "promptZh": "複測完成後，A 批共有多少台合格？",
+  "options": [
+    {
+      "text": "200",
+      "zh": "兩百台",
+      "whyZh": "兩台報廢品仍不得出貨。",
+      "id": "A"
+    },
+    {
+      "text": "190",
+      "zh": "一百九十台",
+      "whyZh": "只計入初次通過，漏掉八台複測通過。",
+      "id": "B"
+    },
+    {
+      "text": "198",
+      "zh": "一百九十八台",
+      "whyZh": "初次通過190台，加上重工後通過8台，共198台。",
+      "id": "C"
+    },
+    {
+      "text": "192",
+      "zh": "一百九十二台",
+      "whyZh": "不能把兩台報廢品加進通過數。",
+      "id": "D"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "初次通過190台，加上重工後通過8台，共198台。",
+  "evidence": "All eight reworked units from Lot A passed the repeat test.",
+  "vocabulary": [
+    {
+      "term": "first-pass yield",
+      "zh": "一次通過率",
+      "note": "本題明確定義為首次通過數除以受測數。"
+    },
+    {
+      "term": "rework",
+      "zh": "重工",
+      "note": "針對未符合要求的產品重新作業。"
+    }
+  ],
+  "revision": 2
+}

@@ -1,0 +1,63 @@
+{
+  "role": "nativeBrowserAcceptance",
+  "deployManifestSha256": "5ef70b79517ef896fd6ec8e15aee4c0fddd9e214d1b92fa21fb666758f176071",
+  "rendezvousSha256": "4d927bf0154278a4503fa8d957325c690905bf9fb5b1c78a98948f3212b0155f",
+  "trace": {
+    "signal": "HELD_WAITING_ACTUAL_FINAL_NATIVE_MATRIX",
+    "expectedExactInput": {
+      "artifactRole": "native-matrix-input.json",
+      "sha256": "dbb8dd51f188519577c8d91faf2f2e89ffabb8bcbcc1ba4c6f33e0cf7b32b0d3"
+    },
+    "sameBrowserCriticalArtifactsInDeploy": true,
+    "sameHTMLTagAndAttributeTreeForHelp": true,
+    "helpDiff": {
+      "path": "使用說明.html",
+      "before": "81913a2be4046b230c581a08c62ff32e8fc8efcc0fc386072d6342e0f5b218b4",
+      "after": "ad94618584fc4a5f842c3a2fc1a51695cd32258f623e91a1a565341c462fc674",
+      "kind": "help-only-difference-no-behavior"
+    },
+    "mustExplicitlyCheck": "Actual current site/native browser matrix, exact device/engine capabilities without overclaiming, same version, responsive review/listening/return, real publish-scope Doc/help line link if retested; source identity pinned."
+  },
+  "nativeProofSha256": "b3aeac177bd2a028cfc1643f392c00ede3a6880ca5df704a07f2644910d5eaa4",
+  "nativeCompletionProofSha256": "bf3eaaee5414aae443d4d88694482ba867737d4d3bc3ff4641b81ea6307d5f88",
+  "actualBrowserChecks": {
+    "bilingualNoEarlyReveal": {
+      "status": "pass",
+      "proof": "Native: six exact ID/exam/difficulty rows, zero before submission; after submission four translated choices and rationales each."
+    },
+    "currentOpusNativePlaybackAndRanges": {
+      "status": "pass",
+      "proof": "Native playback and three exact byte-range 206 plus EOF416 per three exams; audio/ogg."
+    },
+    "currentVersionParity": {
+      "status": "pass",
+      "proof": "Identical version 1.5.0 runtime core and content across both native seals and exact deployment file inventory."
+    },
+    "currentVersionResume": {
+      "status": "pass",
+      "proof": "Native: formal Opus same URL and offset advancement after reload and actual hidden-tab pause/resume."
+    },
+    "currentVersionScoreAndHistory": {
+      "status": "pass",
+      "proof": "Supplement: 1/100 after actual reload, 100 rows, original answer keys independently matched and synthetic note persisted."
+    },
+    "currentWholeGroupIntegrity": {
+      "status": "pass",
+      "proof": "Supplement: eight shared group IDs independently re-expanded from all 600 canonical rows; exact 16 reading and 12 listening."
+    },
+    "responsiveLayoutAndNavigation": {
+      "status": "pass",
+      "proof": "Native 390 CSS px and desktop Chromium; no horizontal overflow, responsive navigation."
+    }
+  },
+  "notClaimed": [
+    "physical iOS/Android",
+    "device touch emulation",
+    "full 45-minute uninterrupted browser run",
+    "exact final standalone Playwright run (OS denied independent Chromium socket at launch; real tests above used managed Chrome)",
+    "full portable script group-integrity result on final stage",
+    "production Pages MIME/Range",
+    "deployment guide variant",
+    "author Git lock or publication"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "t03-q071-r2",
+  "testId": "test-03",
+  "number": 71,
+  "part": 4,
+  "groupId": "t03-g045-r2",
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "daily",
+    "listening-comprehension",
+    "talk"
+  ],
+  "prompt": "Which power-tool loan follows the rules?",
+  "promptZh": "下列哪一種電動工具借用方式符合規定？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A borrower new to the model attends the leader's noon demonstration and completes the desk check and loan record.",
+      "zh": "一位沒用過該型號的借用人參加負責人中午的示範，並在服務台完成工具檢查與借用登記。",
+      "whyZh": "沒用過同一型號就必須參加示範，檢查和登記也不能省略。"
+    },
+    {
+      "id": "B",
+      "text": "At ten, a borrower recognizes the case but has never used the model. The tool is checked and logged, and the borrower skips the demonstration.",
+      "zh": "十點時，一位借用人認得工具盒，但沒用過該型號。工具經過檢查與登記後，這位借用人直接省略示範。",
+      "whyZh": "認得工具盒不等於用過同一型號；完成服務台流程也不能免除示範。"
+    },
+    {
+      "id": "C",
+      "text": "At ten, a desk volunteer demonstrates a power tool and records the loan without checking the tool separately.",
+      "zh": "十點時，服務台志工示範一件電動工具並登記借用，但沒有另外檢查工具。",
+      "whyZh": "應由工作坊負責人於中午示範，且工具仍需另外檢查。"
+    },
+    {
+      "id": "D",
+      "text": "At noon, a borrower treats the leader's demonstration as the tool check and takes the tool after it is logged.",
+      "zh": "中午時，一位借用人把負責人的示範當成工具檢查，登記後就把工具借走。",
+      "whyZh": "示範與工具檢查是兩個步驟；有示範及登記不代表可以不檢查。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "沒用過同一型號就必須參加示範，檢查和登記也不能省略。",
+  "evidence": "Desk staff check tools and log loans. | The workshop leader demonstrates power tools at noon. | Skip only for exact models you've used; ignore case labels.",
+  "vocabulary": [
+    {
+      "term": "powered tool",
+      "zh": "電動工具",
+      "note": "此處指需由工作坊負責人示範的電動工具。"
+    },
+    {
+      "term": "log a loan",
+      "zh": "登記借用",
+      "note": "log 在此指留下借用紀錄，不是登入帳號。"
+    }
+  ],
+  "revision": 2
+}

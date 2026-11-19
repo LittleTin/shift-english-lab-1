@@ -1,0 +1,53 @@
+{
+  "id": "t01-q091-r2",
+  "testId": "test-01",
+  "number": 91,
+  "part": 4,
+  "groupId": "t01-g051-r2",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "daily",
+    "shuttle",
+    "planning"
+  ],
+  "prompt": "What should riders do to avoid missing an evening train?",
+  "promptZh": "乘客怎麼安排才不易錯過晚間的火車？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Take an earlier shuttle to allow more time for the connection.",
+      "zh": "搭較早的接駁車，為轉乘多留一些時間。",
+      "whyZh": "接駁車照時出發不代表準時到站；晚間車程可能多十分鐘，而火車時刻不變，因此應先留足轉乘時間。"
+    },
+    {
+      "id": "B",
+      "text": "Keep the usual shuttle because it leaves on schedule.",
+      "zh": "照常搭原班次，因為接駁車依時刻發車。",
+      "whyZh": "公告保證的是發車依時刻，不是到站時間不變。"
+    },
+    {
+      "id": "C",
+      "text": "Take a later shuttle because the train will also run later.",
+      "zh": "搭較晚的接駁車，因為火車也會晚開。",
+      "whyZh": "公告明說火車時刻沒有改變。"
+    },
+    {
+      "id": "D",
+      "text": "Wait until after the fair because evening shuttles are cancelled.",
+      "zh": "等市集結束再離開，因為晚間接駁車取消了。",
+      "whyZh": "公告說晚間車仍照表發車，沒有取消。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "接駁車照時出發不代表準時到站；晚間車程可能多十分鐘，而火車時刻不變，因此應先留足轉乘時間。",
+  "evidence": "Evening departures stay on schedule, but rides may take ten minutes longer. Train times haven’t changed.",
+  "vocabulary": [
+    {
+      "term": "connection",
+      "zh": "轉乘",
+      "note": "指接駁車到站後轉搭下一段交通工具。"
+    }
+  ],
+  "revision": 2
+}

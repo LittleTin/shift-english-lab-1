@@ -1,0 +1,57 @@
+{
+  "id": "t01-q184",
+  "testId": "test-01",
+  "number": 184,
+  "part": 7,
+  "groupId": "t01-r-p7-12",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "After the laboratory receives its requested quantity, how many sensors from the first delivery remain in stock?",
+  "promptZh": "實驗室領取申請數量後，第一批還剩多少個在庫？",
+  "options": [
+    {
+      "text": "60",
+      "zh": "六十個",
+      "whyZh": "六十是領用前第一批總數。",
+      "id": "A"
+    },
+    {
+      "text": "20",
+      "zh": "二十個",
+      "whyZh": "第一批六十個減去實驗室申請的四十個，剩二十個。",
+      "id": "B"
+    },
+    {
+      "text": "40",
+      "zh": "四十個",
+      "whyZh": "四十是領用數量，不是剩餘量。",
+      "id": "C"
+    },
+    {
+      "text": "80",
+      "zh": "八十個",
+      "whyZh": "八十不是第一批六十減四十的結果。",
+      "id": "D"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "第一批六十個減去實驗室申請的四十個，剩二十個。",
+  "evidence": "each carton contains twenty sensors ... first forty sensors",
+  "vocabulary": [
+    {
+      "term": "split shipment",
+      "zh": "分批出貨",
+      "note": "一筆訂單拆成不同批次運送。"
+    },
+    {
+      "term": "controlled stock area",
+      "zh": "受控庫存區",
+      "note": "依既定規則管理存放與領用的區域。"
+    }
+  ],
+  "revision": 1
+}

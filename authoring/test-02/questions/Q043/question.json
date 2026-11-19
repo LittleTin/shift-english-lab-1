@@ -1,0 +1,56 @@
+{
+  "id": "t02-q043-r2",
+  "testId": "test-02",
+  "number": 43,
+  "part": 3,
+  "groupId": "t02-g035",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "packing list"
+  ],
+  "prompt": "What is required before relabeling?",
+  "promptZh": "重貼標籤前需要什麼？",
+  "options": [
+    {
+      "text": "Treat the correct packing list as approval and start relabeling.",
+      "zh": "把正確的裝箱清單視為核准，開始重貼標籤。",
+      "whyZh": "裝箱清單正確不等於品管已核准更正。",
+      "id": "A"
+    },
+    {
+      "text": "Check the print history and relabel as soon as an old template is found.",
+      "zh": "查明列印紀錄後，一發現用過舊版型就重貼。",
+      "whyZh": "即使查到舊版型，重貼前仍須取得品管核准。",
+      "id": "B"
+    },
+    {
+      "text": "Relabel to match the packing list and tell quality afterward.",
+      "zh": "先依裝箱清單重貼，之後再通知品管。",
+      "whyZh": "品管核准必須在重貼之前，不是事後通知。",
+      "id": "C"
+    },
+    {
+      "text": "Have quality approve the correction even though the packing list is already right.",
+      "zh": "即使裝箱清單本來就正確，仍要先由品管核准更正。",
+      "whyZh": "清單正確可用於確認差異，但重貼前仍需由品管核准更正。",
+      "id": "D"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "清單正確可用於確認差異，但重貼前仍需由品管核准更正。",
+  "evidence": "The list is correct. The label printer may have used an old template. ... Do not relabel anything until the quality team approves the correction.",
+  "vocabulary": [
+    {
+      "term": "packing list",
+      "zh": "裝箱單",
+      "note": "列示包裝內貨物與數量的文件。"
+    },
+    {
+      "term": "holding area",
+      "zh": "暫存區",
+      "note": "在等待確認或處置期間暫時放置物品的區域。"
+    }
+  ],
+  "revision": 2
+}

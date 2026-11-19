@@ -1,0 +1,56 @@
+{
+  "id": "t02-q040",
+  "testId": "test-02",
+  "number": 40,
+  "part": 3,
+  "groupId": "t02-g034",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "pilot build"
+  ],
+  "prompt": "What will remain unchanged?",
+  "promptZh": "哪件事維持不變？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The assembly date.",
+      "zh": "組裝日期。",
+      "whyZh": "組裝從星期一改到星期三。"
+    },
+    {
+      "id": "B",
+      "text": "The fixture completion date of Monday.",
+      "zh": "治具星期一完成的日期。",
+      "whyZh": "對話說治具星期二才完成。"
+    },
+    {
+      "id": "C",
+      "text": "The material delivery date.",
+      "zh": "物料交貨日期。",
+      "whyZh": "最後明確說物料交期 can stay the same。"
+    },
+    {
+      "id": "D",
+      "text": "The published production schedule.",
+      "zh": "已發布的生產排程。",
+      "whyZh": "女方說下午會更新排程。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "最後明確說物料交期 can stay the same。",
+  "evidence": "the material delivery date can stay the same",
+  "vocabulary": [
+    {
+      "term": "pilot build",
+      "zh": "試產",
+      "note": "正式量產前的小批次製作，用於驗證設計與製程準備。"
+    },
+    {
+      "term": "fixture",
+      "zh": "治具",
+      "note": "本題用於組裝的定位或輔助工具。"
+    }
+  ],
+  "revision": 1
+}

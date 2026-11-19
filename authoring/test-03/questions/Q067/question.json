@@ -1,0 +1,52 @@
+{
+  "id": "t03-q067",
+  "testId": "test-03",
+  "number": 67,
+  "part": 3,
+  "groupId": "t03-g043",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "intent"
+  ],
+  "prompt": "Why does the man say, \"Not yet\"?",
+  "promptZh": "男子為何說「先不用」？",
+  "options": [
+    {
+      "id": "A",
+      "text": "He wants to stop production first.",
+      "zh": "他想先停產。",
+      "whyZh": "手持讀數正常，因此可繼續生產。"
+    },
+    {
+      "id": "B",
+      "text": "He has already ordered a sensor.",
+      "zh": "他已訂感測器。",
+      "whyZh": "尚未決定訂新零件。"
+    },
+    {
+      "id": "C",
+      "text": "He wants to check a simpler cause first.",
+      "zh": "他想先檢查較簡單的原因。",
+      "whyZh": "他要先排除接線鬆動，避免不必要地更換感測器。"
+    },
+    {
+      "id": "D",
+      "text": "He is waiting for a new contractor.",
+      "zh": "他在等新承包商。",
+      "whyZh": "有既定承包商來訪，沒有更換承包商。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "他要先排除接線鬆動，避免不必要地更換感測器。",
+  "evidence": "I want to rule out a loose connection before we order another part.",
+  "vocabulary": [
+    {
+      "term": "rule out",
+      "zh": "排除",
+      "note": "先檢查某原因，確認不是它造成故障。"
+    }
+  ],
+  "revision": 1
+}

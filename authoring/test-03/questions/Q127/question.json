@@ -1,0 +1,52 @@
+{
+  "id": "t03-q127-r2",
+  "testId": "test-03",
+  "number": 127,
+  "part": 5,
+  "groupId": null,
+  "topic": "technology",
+  "tags": [
+    "technology",
+    "context"
+  ],
+  "vocabulary": [
+    {
+      "term": "staggered",
+      "zh": "錯開的",
+      "note": "本題兩段停機維修時間前後接續，並未同時占用兩條檢測線。"
+    }
+  ],
+  "difficulty": "intermediate",
+  "prompt": "At least one inspection line must keep running. A sensor must be fitted to Line 1 before noon, and a guard must be installed on Line 2 after its last batch finishes at 11:30. Each job takes twenty minutes with its line stopped. If the supervisor takes Line 1 offline at 11:20 and Line 2 offline at 11:40, the maintenance periods will be ____.",
+  "promptZh": "至少須維持一條檢測線運轉。第 1 線須在中午前裝好感測器，第 2 線則要在上午 11:30 跑完最後一批後才能安裝防護罩。每項作業都需要讓各自的檢測線停機二十分鐘。如果主管讓第 1 線於上午 11:20 停機、第 2 線於上午 11:40 停機，兩段維修時間將會____。",
+  "options": [
+    {
+      "id": "A",
+      "text": "extended",
+      "zh": "延長",
+      "whyZh": "每項作業仍為二十分鐘；調整起始時間不會延長單一作業。"
+    },
+    {
+      "id": "B",
+      "text": "reversed",
+      "zh": "顛倒順序",
+      "whyZh": "第 1 線於上午 11:20 先開始維修，第 2 線於上午 11:40 才開始；兩項維修的順序沒有顛倒。"
+    },
+    {
+      "id": "C",
+      "text": "overlapping",
+      "zh": "重疊",
+      "whyZh": "第 1 線從 11:20 維修到 11:40，正好在第 2 線開始時結束，不會同時停機。"
+    },
+    {
+      "id": "D",
+      "text": "staggered",
+      "zh": "錯開",
+      "whyZh": "第 1 線 11:20 到 11:40，且在中午前完成；第 2 線 11:40 到中午，符合最後一批結束後才能施工的條件。兩段維修接續而不重疊。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "第 1 線 11:20 到 11:40，且在中午前完成；第 2 線 11:40 到中午，符合最後一批結束後才能施工的條件。兩段維修接續而不重疊。",
+  "evidence": "At least one inspection line must keep running. A sensor must be fitted to Line 1 before noon, and a guard must be installed on Line 2 after its last batch finishes at 11:30. Each job takes twenty minutes with its line stopped. If the supervisor takes Line 1 offline at 11:20 and Line 2 offline at 11:40, the maintenance periods will be ____.",
+  "revision": 2
+}

@@ -1,0 +1,52 @@
+{
+  "id": "t01-q092-r2",
+  "testId": "test-01",
+  "number": 92,
+  "part": 4,
+  "groupId": "t01-g052",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "technology",
+    "requirement"
+  ],
+  "prompt": "What information must accompany a booking request?",
+  "promptZh": "預約申請必須附上什麼資訊？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A marketing photograph and a sales price.",
+      "zh": "行銷照片與售價。",
+      "whyZh": "安全判斷需要的是重量與治具圖面，不是行銷資訊。"
+    },
+    {
+      "id": "B",
+      "text": "Product weight and a fixture drawing.",
+      "zh": "產品重量與治具圖面。",
+      "whyZh": "這兩項資訊供工程師判斷測試配置安全性；公告說缺少它們會退回申請。"
+    },
+    {
+      "id": "C",
+      "text": "A battery safety checklist and a preferred test date.",
+      "zh": "電池安全檢查表與偏好的測試日期。",
+      "whyZh": "安全檢查表是電池樣品進實驗室的前置條件；預約必附的是產品重量與治具圖面。"
+    },
+    {
+      "id": "D",
+      "text": "Only the operator's name.",
+      "zh": "只需操作員姓名。",
+      "whyZh": "只給姓名無法滿足明確要求的兩項技術資訊。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "這兩項資訊供工程師判斷測試配置安全性；公告說缺少它們會退回申請。",
+  "evidence": "include the product weight and the fixture drawing",
+  "vocabulary": [
+    {
+      "term": "reliability laboratory",
+      "zh": "可靠度實驗室",
+      "note": "進行振動等測試，以評估產品在使用或環境條件下表現的場所。"
+    }
+  ],
+  "revision": 2
+}

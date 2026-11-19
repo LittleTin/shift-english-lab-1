@@ -1,0 +1,52 @@
+{
+  "id": "t01-q032",
+  "testId": "test-01",
+  "number": 32,
+  "part": 3,
+  "groupId": "t01-g032",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "reason"
+  ],
+  "prompt": "What is causing a delay in the full order?",
+  "promptZh": "什麼原因導致整批訂單無法如期交貨？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The purchase order was canceled.",
+      "zh": "採購單已取消。",
+      "whyZh": "女子要求沿用同一張採購單，並沒有取消訂單。"
+    },
+    {
+      "id": "B",
+      "text": "The vibration equipment is broken.",
+      "zh": "振動測試設備故障。",
+      "whyZh": "對話只說星期三需要做振動測試，未提到設備故障。"
+    },
+    {
+      "id": "C",
+      "text": "Some connectors have not arrived.",
+      "zh": "部分連接器尚未到貨。",
+      "whyZh": "男子說板子已備妥，但帶鎖連接器要到星期一才到廠，因此缺料使整批交貨延後。"
+    },
+    {
+      "id": "D",
+      "text": "The boards failed a quality inspection.",
+      "zh": "電路板未通過品質檢驗。",
+      "whyZh": "男子說板子已經備妥，問題是連接器到貨，不是板子檢驗失敗。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "男子說板子已備妥，但帶鎖連接器要到星期一才到廠，因此缺料使整批交貨延後。",
+  "evidence": "the locking connectors won't reach our factory until Monday.",
+  "vocabulary": [
+    {
+      "term": "locking connector",
+      "zh": "帶鎖連接器",
+      "note": "具有扣鎖機構的連接器。"
+    }
+  ],
+  "revision": 1
+}

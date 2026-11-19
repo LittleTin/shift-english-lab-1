@@ -1,0 +1,57 @@
+{
+  "id": "t01-q004",
+  "testId": "test-01",
+  "number": 4,
+  "part": 1,
+  "groupId": "t01-g004",
+  "topic": "technology",
+  "difficulty": "foundation",
+  "tags": [
+    "technology",
+    "photo_description"
+  ],
+  "prompt": "Look at the picture and choose the statement that best describes it.",
+  "promptZh": "請看圖片，選出最符合畫面的敘述。",
+  "options": [
+    {
+      "id": "A",
+      "text": "A technician is painting a laboratory wall.",
+      "zh": "一名技術人員正在粉刷實驗室牆面。",
+      "whyZh": "畫面是在檢查電路板，沒有刷牆工具或粉刷動作。"
+    },
+    {
+      "id": "B",
+      "text": "Some circuit boards are floating in a tank.",
+      "zh": "一些電路板漂浮在槽內。",
+      "whyZh": "圖中電路板被拿來檢視，沒有漂浮於液槽的情況。"
+    },
+    {
+      "id": "C",
+      "text": "A technician is examining a circuit board.",
+      "zh": "一名技術人員正在檢查電路板。",
+      "whyZh": "圖中技術人員正查看電路板；examining 表示仔細檢視，沒有推測量測結果或產品功能。"
+    },
+    {
+      "id": "D",
+      "text": "A technician is stacking chairs beside a door.",
+      "zh": "一名技術人員正在門旁堆疊椅子。",
+      "whyZh": "人物處理的是電路板，而不是椅子。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "圖中技術人員正查看電路板；examining 表示仔細檢視，沒有推測量測結果或產品功能。",
+  "evidence": "A technician is examining a circuit board.",
+  "vocabulary": [
+    {
+      "term": "circuit board",
+      "zh": "電路板",
+      "note": "安裝電子元件並提供電氣連接的板件。"
+    },
+    {
+      "term": "examine",
+      "zh": "仔細檢查",
+      "note": "只描述可見的檢視動作，不推測檢查是否合格。"
+    }
+  ],
+  "revision": 1
+}

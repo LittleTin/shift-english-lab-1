@@ -1,0 +1,57 @@
+{
+  "id": "t01-q182",
+  "testId": "test-01",
+  "number": 182,
+  "part": 7,
+  "groupId": "t01-r-p7-12",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "Where was the first shipment delivered?",
+  "promptZh": "第一批送到哪裡？",
+  "options": [
+    {
+      "text": "North Plant reception",
+      "zh": "North Plant 接待處",
+      "whyZh": "採購單指定接待處，收貨訊息也確認接待處收下。",
+      "id": "A"
+    },
+    {
+      "text": "To the supplier’s quality department",
+      "zh": "供應商品管部",
+      "whyZh": "文件描述的是送達客戶接待處，不是供應商品管部。",
+      "id": "B"
+    },
+    {
+      "text": "Directly to the laboratory",
+      "zh": "直接送到實驗室",
+      "whyZh": "採購單明說實驗室不是核准收貨地點。",
+      "id": "C"
+    },
+    {
+      "text": "To an off-site repair center",
+      "zh": "外部維修中心",
+      "whyZh": "三份文件沒有維修中心的安排。",
+      "id": "D"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "採購單指定接待處，收貨訊息也確認接待處收下。",
+  "evidence": "Reception accepted three cartons at 2:20 p.m.",
+  "vocabulary": [
+    {
+      "term": "split shipment",
+      "zh": "分批出貨",
+      "note": "一筆訂單拆成不同批次運送。"
+    },
+    {
+      "term": "controlled stock area",
+      "zh": "受控庫存區",
+      "note": "依既定規則管理存放與領用的區域。"
+    }
+  ],
+  "revision": 1
+}

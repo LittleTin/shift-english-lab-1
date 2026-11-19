@@ -1,0 +1,57 @@
+{
+  "id": "t02-q179",
+  "testId": "test-02",
+  "number": 179,
+  "part": 7,
+  "groupId": "t02-r-p7-11",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "Why does the manager emphasize first-pass performance?",
+  "promptZh": "主管為何強調首次測試表現？",
+  "options": [
+    {
+      "text": "Reworked units can never be shipped",
+      "zh": "重工品永遠不能出貨",
+      "whyZh": "A 批八台重工品已通過複測；文件只排除兩台報廢品，沒有說重工品一律不得出貨。",
+      "id": "A"
+    },
+    {
+      "text": "Successful rework still consumes extra time",
+      "zh": "即使重工成功仍耗用額外時間",
+      "whyZh": "主管備註明確說明不能只看最終合格數的原因。",
+      "id": "B"
+    },
+    {
+      "text": "Lot B has already completed all rework",
+      "zh": "B批已完成全部重工",
+      "whyZh": "品質更新說B批仍在重工。",
+      "id": "C"
+    },
+    {
+      "text": "The total number tested is unknown",
+      "zh": "不知道受測總量",
+      "whyZh": "文件已列A200、B100。",
+      "id": "D"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "主管備註明確說明不能只看最終合格數的原因。",
+  "evidence": "Rework uses extra time even when it succeeds.",
+  "vocabulary": [
+    {
+      "term": "first-pass yield",
+      "zh": "一次通過率",
+      "note": "本題明確定義為首次通過數除以受測數。"
+    },
+    {
+      "term": "rework",
+      "zh": "重工",
+      "note": "針對未符合要求的產品重新作業。"
+    }
+  ],
+  "revision": 1
+}

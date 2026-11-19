@@ -1,0 +1,52 @@
+{
+  "id": "t01-q112",
+  "testId": "test-01",
+  "number": 112,
+  "part": 5,
+  "groupId": null,
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "grammar"
+  ],
+  "prompt": "We cannot release the batch until the quality manager ____ the inspection report.",
+  "promptZh": "在品管經理____檢驗報告之前，我們不能放行這批貨。",
+  "options": [
+    {
+      "text": "approval",
+      "zh": "核准（名詞）",
+      "whyZh": "此處缺少子句的動詞，名詞 approval 無法充當述語。",
+      "id": "A"
+    },
+    {
+      "text": "will approve",
+      "zh": "將核准",
+      "whyZh": "此處 until 時間子句以現在式表示未來，不用 will。",
+      "id": "B"
+    },
+    {
+      "text": "approves",
+      "zh": "核准",
+      "whyZh": "until 引導未來時間子句時使用現在式，manager 為單數。",
+      "id": "C"
+    },
+    {
+      "text": "approve",
+      "zh": "核准（原形）",
+      "whyZh": "主詞 the quality manager 是第三人稱單數，需加 s。",
+      "id": "D"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "until 引導未來時間子句時使用現在式，manager 為單數。",
+  "evidence": "until the quality manager approves",
+  "vocabulary": [
+    {
+      "term": "release a batch",
+      "zh": "放行一批產品",
+      "note": "完成規定審核後允許該批產品進入下一階段。"
+    }
+  ],
+  "revision": 1
+}

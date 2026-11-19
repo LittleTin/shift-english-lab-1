@@ -1,0 +1,52 @@
+{
+  "id": "t01-q127-r2",
+  "testId": "test-01",
+  "number": 127,
+  "part": 5,
+  "groupId": null,
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "technology",
+    "grammar"
+  ],
+  "prompt": "The firmware update extends battery life in standby, but the device still uses the same amount of power while taking measurements. Customers who leave their units switched off between readings are therefore ____ to notice much improvement.",
+  "promptZh": "新版韌體可延長待機時的電池續航，但裝置在量測時的耗電量不變。因此，兩次讀值之間都會關機的客戶____察覺有多大改善。",
+  "options": [
+    {
+      "id": "A",
+      "text": "certain",
+      "zh": "一定會",
+      "whyZh": "關機時並未使用待機模式，量測時耗電量也不變，無法保證這類客戶會察覺改善。"
+    },
+    {
+      "id": "B",
+      "text": "entitled",
+      "zh": "有權",
+      "whyZh": "這裡在預測實際使用感受，不是在說客戶依法或依約享有什麼權利。"
+    },
+    {
+      "id": "C",
+      "text": "unlikely",
+      "zh": "不太可能",
+      "whyZh": "這類客戶不使用有改善的待機模式，而量測的耗電量不變，所以不太可能感受到明顯改善。"
+    },
+    {
+      "id": "D",
+      "text": "expected",
+      "zh": "預期會",
+      "whyZh": "新版只改善待機耗電；這類使用者在兩次量測之間會直接關機，因此不應預期他們會察覺明顯改善。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "這類客戶不使用有改善的待機模式，而量測的耗電量不變，所以不太可能感受到明顯改善。",
+  "evidence": "The firmware update extends battery life in standby, but the device still uses the same amount of power while taking measurements. Customers who leave their units switched off between readings are therefore ____ to notice much improvement.",
+  "vocabulary": [
+    {
+      "term": "unlikely",
+      "zh": "不太可能",
+      "note": "be unlikely to 表示不太可能發生；這類客戶在量測間直接關機，不會用到新版改善的待機模式。"
+    }
+  ],
+  "revision": 2
+}

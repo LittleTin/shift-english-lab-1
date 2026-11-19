@@ -1,0 +1,52 @@
+{
+  "id": "t02-q064-r2",
+  "testId": "test-02",
+  "number": 64,
+  "part": 3,
+  "groupId": "t02-g042-r2",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "daily",
+    "listening-inference"
+  ],
+  "prompt": "Her brother can come today and Saturday. What should he do?",
+  "promptZh": "她哥哥今天和星期六都能來。他應該怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Wait and collect both items on Saturday.",
+      "zh": "等到星期六一次領兩件。",
+      "whyZh": "兩件雖可保留到星期六，但她今晚需要桌燈。"
+    },
+    {
+      "id": "B",
+      "text": "Have her collect the lamp with only her phone today; he comes Saturday.",
+      "zh": "今天讓她只帶電話來取桌燈，他星期六再來。",
+      "whyZh": "電話可以查詢，但取貨仍要出示姓名相符的證件。"
+    },
+    {
+      "id": "C",
+      "text": "Bring matching ID for the lamp today; collect the notebook Saturday after its notice.",
+      "zh": "今天帶姓名相符的證件領桌燈；收到筆記本通知後，星期六再來領。",
+      "whyZh": "哥哥可出示與訂單相符的證件，先滿足今晚的桌燈需求；筆記本另行通知後可保留到星期六。"
+    },
+    {
+      "id": "D",
+      "text": "Collect both today, using the same pickup message for the notebook.",
+      "zh": "今天用同一則簡訊把兩件都領走。",
+      "whyZh": "筆記本明天才到，今天不能領；它也會有自己的通知。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "哥哥可出示與訂單相符的證件，先滿足今晚的桌燈需求；筆記本另行通知後可保留到星期六。",
+  "evidence": "I got a pickup message for my order. I need the lamp tonight, but I’ve lost the order number. | We can search by the order’s phone number. To collect anything, show photo ID matching the name on the order. | That’s my number, but the order is in my brother’s name. Are my lamp and notebook both ready? | The lamp is here. The notebook arrives tomorrow. We text for each item and hold it through Saturday.",
+  "vocabulary": [
+    {
+      "term": "through Saturday",
+      "zh": "直到星期六為止，含當天",
+      "note": "through 在這裡表示星期六當天仍可領取。"
+    }
+  ],
+  "revision": 2
+}

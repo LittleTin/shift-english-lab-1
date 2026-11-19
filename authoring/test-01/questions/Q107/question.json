@@ -1,0 +1,52 @@
+{
+  "id": "t01-q107-r2",
+  "testId": "test-01",
+  "number": 107,
+  "part": 5,
+  "groupId": null,
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "technology",
+    "grammar"
+  ],
+  "prompt": "The lab network was down for an hour. Staff could still record and review measurements on the instruments, but no file appeared in the shared folder until the connection returned. The outage therefore prevented staff from ____ the results, not from collecting them.",
+  "promptZh": "實驗室網路中斷了一小時。員工仍能在儀器上記錄和查閱量測結果，但要等連線恢復後，共用資料夾才出現檔案。因此，網路中斷使員工無法____結果，而不是無法取得結果。",
+  "options": [
+    {
+      "id": "A",
+      "text": "capturing",
+      "zh": "擷取",
+      "whyZh": "儀器仍能擷取資料；問題出在中斷時共用資料夾收不到檔案。"
+    },
+    {
+      "id": "B",
+      "text": "measuring",
+      "zh": "量測",
+      "whyZh": "量測作業仍可進行，且儀器仍能記錄結果。"
+    },
+    {
+      "id": "C",
+      "text": "uploading",
+      "zh": "上傳",
+      "whyZh": "儀器仍可取得並記錄結果，但檔案直到連線恢復後才出現在共用資料夾，表示中斷阻礙了上傳。"
+    },
+    {
+      "id": "D",
+      "text": "checking",
+      "zh": "查核",
+      "whyZh": "員工仍能在儀器上查閱量測結果；無法進行的是將結果傳到共用資料夾。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "儀器仍可取得並記錄結果，但檔案直到連線恢復後才出現在共用資料夾，表示中斷阻礙了上傳。",
+  "evidence": "The lab network was down for an hour. Staff could still record and review measurements on the instruments, but no file appeared in the shared folder until the connection returned. The outage therefore prevented staff from ____ the results, not from collecting them.",
+  "vocabulary": [
+    {
+      "term": "uploading",
+      "zh": "上傳",
+      "note": "指將本機檔案傳送到網路上的位置；本題量測可在本機繼續，但網路中斷時無法把結果送到共用位置。"
+    }
+  ],
+  "revision": 2
+}

@@ -1,0 +1,52 @@
+{
+  "id": "t02-q123-r2",
+  "testId": "test-02",
+  "number": 123,
+  "part": 5,
+  "groupId": null,
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "grammar"
+  ],
+  "prompt": "The equipment may be restarted only after all protective covers ____ in place.",
+  "promptZh": "只有在所有保護蓋＿＿就定位後，才能重新啟動設備。",
+  "options": [
+    {
+      "text": "is",
+      "zh": "已（單數）",
+      "whyZh": "covers 是複數，不能使用 is。",
+      "id": "A"
+    },
+    {
+      "text": "being",
+      "zh": "正在",
+      "whyZh": "after 子句缺少限定動詞，being 無法單獨構成。",
+      "id": "B"
+    },
+    {
+      "text": "are",
+      "zh": "已；與 in place 搭配表示就定位",
+      "whyZh": "covers 是複數，are in place 表示已放置於正確位置。",
+      "id": "C"
+    },
+    {
+      "text": "to be",
+      "zh": "將成為；是不定詞",
+      "whyZh": "此處需要完整時間子句的限定動詞，不能用 to be。",
+      "id": "D"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "covers 是複數，are in place 表示已放置於正確位置。",
+  "evidence": "all protective covers are in place",
+  "vocabulary": [
+    {
+      "term": "protective cover",
+      "zh": "保護蓋",
+      "note": "隔離或遮蔽設備特定部位的護罩。"
+    }
+  ],
+  "revision": 2
+}

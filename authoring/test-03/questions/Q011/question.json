@@ -1,0 +1,46 @@
+{
+  "id": "t03-q011",
+  "testId": "test-03",
+  "number": 11,
+  "part": 2,
+  "groupId": "t03-g011",
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "business",
+    "question_response"
+  ],
+  "prompt": "Could we keep the conference room for another hour?",
+  "promptZh": "我們能再使用會議室一小時嗎？",
+  "options": [
+    {
+      "id": "A",
+      "text": "It is on the fourth floor.",
+      "zh": "它在四樓。",
+      "whyZh": "回答位置，未回應延長使用的請求。"
+    },
+    {
+      "id": "B",
+      "text": "A sales team has it booked at two.",
+      "zh": "銷售團隊兩點已經預訂了。",
+      "whyZh": "提出後續預約的限制，間接回答是否能延長。"
+    },
+    {
+      "id": "C",
+      "text": "I enjoyed the conference.",
+      "zh": "我很喜歡這次研討會。",
+      "whyZh": "談感受，與會議室延長使用無關。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "提出後續預約的限制，間接回答是否能延長。",
+  "evidence": "A sales team has it booked at two.",
+  "vocabulary": [
+    {
+      "term": "booked",
+      "zh": "已預訂的",
+      "note": "A sales team has it booked at two."
+    }
+  ],
+  "revision": 1
+}

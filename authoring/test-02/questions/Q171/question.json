@@ -1,0 +1,52 @@
+{
+  "id": "t02-q171-r3",
+  "testId": "test-02",
+  "number": 171,
+  "part": 7,
+  "groupId": "t02-r-p7-09-r2",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "business",
+    "reading-comprehension"
+  ],
+  "prompt": "A session currently booked for 11 a.m. can be moved to a later time if needed. It needs a step-free room, and remote clients must be able to see the product on the table. What should the organizer do?",
+  "promptZh": "原定上午 11 點的展示必要時可以改到較晚時段。展示需要一間無階梯可達的房間，遠端客戶也必須能看到展示桌上的產品。主辦人應採取什麼做法？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Keep Harbor because remote clients can receive both picture and sound.",
+      "zh": "保留 Harbor，因為遠端客戶能收到畫面與聲音。",
+      "whyZh": "Harbor 雖能傳送畫面與聲音，但從電梯到室門有三級階梯，不符無階梯的需求。"
+    },
+    {
+      "id": "B",
+      "text": "Use Grove at 11 a.m. and take the portable camera from that room.",
+      "zh": "上午 11 點使用 Grove，取用該室的可攜式攝影機。",
+      "whyZh": "Grove 無階梯可達，但可攜式攝影機要下午一點後才可使用；上午 11 點沒有攝影機。"
+    },
+    {
+      "id": "C",
+      "text": "Use Shore at 11 a.m. and show the product on its demonstration table.",
+      "zh": "上午 11 點使用 Shore，把產品放在展示桌上展示。",
+      "whyZh": "Shore 無階梯可達，也能傳送影音，但攝影機固定朝向講台，拍不到展示桌。"
+    },
+    {
+      "id": "D",
+      "text": "Ask for a slot after 1 p.m. in Grove so a portable camera can be used.",
+      "zh": "詢問能否改到下午 1 點後使用 Grove，以便使用可攜式攝影機。",
+      "whyZh": "Grove 無階梯可達。展示可以調整時段；若改到下午 1 點後使用 Grove，就能把可攜式攝影機對準展示桌，讓遠端客戶看到產品。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "Grove 無階梯可達。展示可以調整時段；若改到下午 1 點後使用 Grove，就能把可攜式攝影機對準展示桌，讓遠端客戶看到產品。",
+  "evidence": "Grove and Shore are both accessible without steps. […] a portable camera that can be aimed at the demonstration table will be available there after 1 p.m. […] It cannot show a product on the demonstration table.",
+  "vocabulary": [
+    {
+      "term": "portable camera",
+      "zh": "可攜式攝影機",
+      "note": "在本文指下午可在 Grove 使用，與 Shore 固定朝向講台的攝影機不同。"
+    }
+  ],
+  "revision": 3
+}

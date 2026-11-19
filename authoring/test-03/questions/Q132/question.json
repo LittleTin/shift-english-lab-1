@@ -1,0 +1,52 @@
+{
+  "id": "t03-q132",
+  "testId": "test-03",
+  "number": 132,
+  "part": 6,
+  "groupId": "t03-g055",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "business",
+    "text-completion"
+  ],
+  "prompt": "Choose the best word or sentence for blank [132].",
+  "promptZh": "請選出最適合填入空格 [132] 的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "Customers can return purchases without a receipt.",
+      "zh": "顧客可無收據退貨。",
+      "whyZh": "此處是運輸箱回收單據，非消費者退貨。"
+    },
+    {
+      "id": "B",
+      "text": "Our stores will be closed during the collection.",
+      "zh": "回收期間門市將暫停營業。",
+      "whyZh": "沒有停業安排，也不能承接下一句的 it。"
+    },
+    {
+      "id": "C",
+      "text": "The old labels should therefore be removed.",
+      "zh": "因此應移除舊標籤。",
+      "whyZh": "司機須掃描標籤；移除會妨礙作業。"
+    },
+    {
+      "id": "D",
+      "text": "You will receive this receipt by email immediately.",
+      "zh": "您會立即透過電子郵件收到這張收據。",
+      "whyZh": "承接 digital receipt，也使下一句離站前核對 it 有明確對象。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "承接 digital receipt，也使下一句離站前核對 it 有明確對象。",
+  "evidence": "digital receipt ... You will receive this receipt ... check it",
+  "vocabulary": [
+    {
+      "term": "digital receipt",
+      "zh": "電子收據",
+      "note": "以電子方式提供的收件證明。"
+    }
+  ],
+  "revision": 1
+}

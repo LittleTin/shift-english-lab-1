@@ -1,0 +1,52 @@
+{
+  "id": "t01-q061-r2",
+  "testId": "test-01",
+  "number": 61,
+  "part": 3,
+  "groupId": "t01-g041",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "purpose"
+  ],
+  "prompt": "Unmarked housings reached finished goods. What should staff check?",
+  "promptZh": "未標記的外殼混入成品。員工應查核什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Whether any were among the pieces set aside for practice.",
+      "zh": "這些外殼是否有用於練習的零件。",
+      "whyZh": "最初五件外殼用於訓練，應標記以免列入成品。若發現未標記的外殼，需先確認是否混入練習件。"
+    },
+    {
+      "id": "B",
+      "text": "Whether the housings were assigned to the first order.",
+      "zh": "這些外殼是否分配給第一筆訂單。",
+      "whyZh": "先確認是否為不能列入成品的練習件。"
+    },
+    {
+      "id": "C",
+      "text": "Whether the old fixture has been removed from storage.",
+      "zh": "舊治具是否已從倉庫移出。",
+      "whyZh": "問題是在成品中是否混入練習件，不是舊治具所在。"
+    },
+    {
+      "id": "D",
+      "text": "Whether the process engineer has placed new instructions by the fixture.",
+      "zh": "製程工程師是否把新操作指示放在治具旁。",
+      "whyZh": "對話由女方放置指示；指示位置也不能查明這些外殼是不是練習件。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "最初五件外殼用於訓練，應標記以免列入成品。若發現未標記的外殼，需先確認是否混入練習件。",
+  "evidence": "We can use the first five housings for practice. Please mark those as training pieces so they don't enter finished-goods inventory.",
+  "vocabulary": [
+    {
+      "term": "finished-goods inventory",
+      "zh": "成品庫存",
+      "note": "已完成、可供出貨的產品存量。"
+    }
+  ],
+  "revision": 2
+}

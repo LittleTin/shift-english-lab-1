@@ -1,0 +1,57 @@
+{
+  "id": "t01-q177",
+  "testId": "test-01",
+  "number": 177,
+  "part": 7,
+  "groupId": "t01-r-p7-11",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "What must the customer provide before manufacturing begins?",
+  "promptZh": "製造開始前，客戶必須提供什麼？",
+  "options": [
+    {
+      "text": "A signed revision D drawing",
+      "zh": "簽核的 D 版圖面",
+      "whyZh": "工程要求與供應商回覆都要求先取得簽核圖面。",
+      "id": "A"
+    },
+    {
+      "text": "An order for 500 samples",
+      "zh": "五百個樣品訂單",
+      "whyZh": "供應商同意這次三十個不受最低量限制。",
+      "id": "B"
+    },
+    {
+      "text": "An authorization for mass production",
+      "zh": "量產授權",
+      "whyZh": "文件明確說此次樣品不代表量產授權。",
+      "id": "C"
+    },
+    {
+      "text": "A request for painted surfaces",
+      "zh": "上漆表面的要求",
+      "whyZh": "需求是未上漆，並未要求改成上漆。",
+      "id": "D"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "工程要求與供應商回覆都要求先取得簽核圖面。",
+  "evidence": "Manufacturing may begin only after we send the signed revision D drawing.",
+  "vocabulary": [
+    {
+      "term": "evaluation sample",
+      "zh": "評估樣品",
+      "note": "供驗證、比較或審查用的少量樣品。"
+    },
+    {
+      "term": "signed drawing",
+      "zh": "簽核圖面",
+      "note": "已經授權人員簽核確認的圖面。"
+    }
+  ],
+  "revision": 1
+}

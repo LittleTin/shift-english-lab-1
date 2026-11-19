@@ -1,0 +1,52 @@
+{
+  "id": "t02-q173-r3",
+  "testId": "test-02",
+  "number": 173,
+  "part": 7,
+  "groupId": "t02-r-p7-09-r2",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "business",
+    "reading-comprehension"
+  ],
+  "prompt": "A session is booked for 2 p.m. The lead cannot arrive until 2:20, and the booking app is not working. What can keep the room reservation?",
+  "promptZh": "一場展示預約在下午 2 點開始。負責人得等到 2:20 才能到場，預約應用程式也無法使用。如何保留房間預約？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The lead checks in at the panel immediately after arriving.",
+      "zh": "負責人抵達後立刻使用門外面板報到。",
+      "whyZh": "面板確實可用，但下午 2:20 已超過開場後十分鐘的報到期限。"
+    },
+    {
+      "id": "B",
+      "text": "The listed co-host uses the panel at 2:07.",
+      "zh": "已登記的共同主持人在下午 2:07 使用面板報到。",
+      "whyZh": "已登記的共同主持人可以代為報到。應用程式無法使用時，可改用門外面板，而 2:07 在十分鐘期限內。"
+    },
+    {
+      "id": "C",
+      "text": "An unlisted colleague opens the client’s meeting link at 2:05.",
+      "zh": "未登記為共同主持人的同事在下午 2:05 開啟客戶的會議連結。",
+      "whyZh": "只有負責人或已登記的共同主持人能報到；開啟會議連結也不等於報到。"
+    },
+    {
+      "id": "D",
+      "text": "The listed co-host lets clients into the room before 2:10 without marking it as in use.",
+      "zh": "已登記的共同主持人於下午 2:10 前讓客戶進門，但未將房間標記為使用中。",
+      "whyZh": "雖是有資格代辦的人，但只讓客戶進門並不算報到。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "已登記的共同主持人可以代為報到。應用程式無法使用時，可改用門外面板，而 2:07 在十分鐘期限內。",
+  "evidence": "a colleague who is already listed as a co-host […] ten minutes after the reserved start […] can use the panel outside the room instead",
+  "vocabulary": [
+    {
+      "term": "co-host",
+      "zh": "共同主持人",
+      "note": "本文限定已在預約內登記的人，並非在場的任何同事。"
+    }
+  ],
+  "revision": 3
+}

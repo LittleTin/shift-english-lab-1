@@ -1,0 +1,52 @@
+{
+  "id": "t02-q172-r3",
+  "testId": "test-02",
+  "number": 172,
+  "part": 7,
+  "groupId": "t02-r-p7-09-r2",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "business",
+    "reading-comprehension"
+  ],
+  "prompt": "A visiting technician has a vendor confirmation email and will bring a personal laptop, but has just agreed to pick up a spare camera from the site’s storeroom. What should the technician arrange before arriving?",
+  "promptZh": "一名外部技術人員已有供應商確認信，也會自備筆電，但剛答應順道在本公司庫房領取一台備用攝影機。到場前應做什麼安排？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Obtain the camera collection reference and go to the service entrance.",
+      "zh": "取得攝影機領取編號，並前往服務入口。",
+      "whyZh": "雖有確認信且自備筆電，技術人員仍有庫房領取任務；須先取得攝影機的領取編號，再走服務入口。"
+    },
+    {
+      "id": "B",
+      "text": "Keep the vendor confirmation and use the lobby to enter with the laptop.",
+      "zh": "保留供應商確認信，帶著筆電從大廳入口進入。",
+      "whyZh": "若自備設備且不用到庫房領取物品，才走大廳；這位技術人員仍須領攝影機。"
+    },
+    {
+      "id": "C",
+      "text": "Ask for a delivery note and use the loading dock to bring the laptop in.",
+      "zh": "索取送貨單，再從卸貨區帶筆電進場。",
+      "whyZh": "卸貨區的送貨單方式只適用於不會留下參與展示的送貨司機；這裡是技術人員要領設備。"
+    },
+    {
+      "id": "D",
+      "text": "Go to the lobby with the vendor confirmation and have the desk issue the collection reference.",
+      "zh": "持供應商確認信到大廳，請櫃檯核發設備領取編號。",
+      "whyZh": "大廳櫃檯不核發領取編號；供應商確認信也不能取代領取編號。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "雖有確認信且自備筆電，技術人員仍有庫房領取任務；須先取得攝影機的領取編號，再走服務入口。",
+  "evidence": "if they are collecting any demonstration equipment from our storeroom […] If they need nothing from the storeroom and are bringing their own equipment",
+  "vocabulary": [
+    {
+      "term": "collection reference",
+      "zh": "領取編號",
+      "note": "確認設備領取安排的編號，不等同供應商確認信上的訪客資料。"
+    }
+  ],
+  "revision": 3
+}

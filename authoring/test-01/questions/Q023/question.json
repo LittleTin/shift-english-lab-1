@@ -1,0 +1,51 @@
+{
+  "id": "t01-q023",
+  "testId": "test-01",
+  "number": 23,
+  "part": 2,
+  "groupId": "t01-g023",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "daily",
+    "negative_question"
+  ],
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽題目，選出最合適的回應。",
+  "options": [
+    {
+      "id": "A",
+      "text": "Yes, but two guests just canceled.",
+      "zh": "是的，不過有兩位客人剛取消。",
+      "whyZh": "這是確認原先預約的否定問句；Yes 確認原本訂六位，再說明人數減少的變化。"
+    },
+    {
+      "id": "B",
+      "text": "We close at ten tonight.",
+      "zh": "我們今晚十點打烊。",
+      "whyZh": "打烊時間沒有回答原本的六人預約。"
+    },
+    {
+      "id": "C",
+      "text": "The table is made of wood.",
+      "zh": "桌子是木製的。",
+      "whyZh": "table 在此指餐廳訂位，桌子的材質與預約人數無關。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "這是確認原先預約的否定問句；Yes 確認原本訂六位，再說明人數減少的變化。",
+  "evidence": "Didn't you reserve a table for six?",
+  "vocabulary": [
+    {
+      "term": "reserve",
+      "zh": "預訂",
+      "note": "安排事先保留座位或服務。"
+    },
+    {
+      "term": "cancel",
+      "zh": "取消",
+      "note": "這裡是客人取消出席。"
+    }
+  ],
+  "revision": 1
+}

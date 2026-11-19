@@ -1,0 +1,51 @@
+{
+  "id": "t01-q027-r2",
+  "testId": "test-01",
+  "number": 27,
+  "part": 2,
+  "groupId": "t01-g027-r2",
+  "topic": "technology",
+  "difficulty": "foundation",
+  "tags": [
+    "technology",
+    "request"
+  ],
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽題目，選出最合適的回應。",
+  "options": [
+    {
+      "id": "A",
+      "text": "The screen is beside the server rack.",
+      "zh": "螢幕在伺服器機櫃旁。",
+      "whyZh": "設備位置無法回應時程能否延後。"
+    },
+    {
+      "id": "B",
+      "text": "Yes, I'll reschedule it for half past five.",
+      "zh": "可以，我會把時間改到五點半。",
+      "whyZh": "問題請求延後重啟伺服器；回答先同意，再將重啟改到五點半。"
+    },
+    {
+      "id": "C",
+      "text": "I demonstrated it to the client.",
+      "zh": "我已向客戶展示過它。",
+      "whyZh": "這只提到過去的展示，沒有回答是否可延後重啟。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "問題請求延後重啟伺服器；回答先同意，再將重啟改到五點半。",
+  "evidence": "Could we reboot the server after the demonstration?",
+  "vocabulary": [
+    {
+      "term": "reboot",
+      "zh": "重新啟動",
+      "note": "在這裡是動詞，指讓伺服器重新開機。"
+    },
+    {
+      "term": "half past five",
+      "zh": "五點半",
+      "note": "half past + 小時表示該時的三十分。"
+    }
+  ],
+  "revision": 2
+}

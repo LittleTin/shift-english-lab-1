@@ -1,0 +1,52 @@
+{
+  "id": "t03-q065",
+  "testId": "test-03",
+  "number": 65,
+  "part": 3,
+  "groupId": "t03-g043",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "detail"
+  ],
+  "prompt": "What is unusual about the temperature display?",
+  "promptZh": "溫度顯示有什麼異常？",
+  "options": [
+    {
+      "id": "A",
+      "text": "It shows no reading at all.",
+      "zh": "完全沒有讀數。",
+      "whyZh": "顯示四十度，不是空白。"
+    },
+    {
+      "id": "B",
+      "text": "It is much higher than another measurement.",
+      "zh": "比另一個測量結果高很多。",
+      "whyZh": "牆上四十度，手持式二十二度，兩者不符。"
+    },
+    {
+      "id": "C",
+      "text": "It changes automatically every hour.",
+      "zh": "每小時自動改變。",
+      "whyZh": "沒有週期變化的敘述。"
+    },
+    {
+      "id": "D",
+      "text": "It is installed outside the building.",
+      "zh": "裝在建築外。",
+      "whyZh": "對話指生產線牆上感測器。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "牆上四十度，手持式二十二度，兩者不符。",
+  "evidence": "shows forty degrees, but the room doesn't feel warm",
+  "vocabulary": [
+    {
+      "term": "rule out",
+      "zh": "排除",
+      "note": "先檢查某原因，確認不是它造成故障。"
+    }
+  ],
+  "revision": 1
+}

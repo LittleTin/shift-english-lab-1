@@ -1,0 +1,52 @@
+{
+  "id": "t01-q086-r3",
+  "testId": "test-01",
+  "number": 86,
+  "part": 4,
+  "groupId": "t01-g050-r2",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "workplace",
+    "listening-inference"
+  ],
+  "prompt": "A viewer wants to learn to reorder stock. Which session should they choose?",
+  "promptZh": "有位觀眾想學庫存補貨，應該選哪一場？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The alert-setting demo today.",
+      "zh": "今天的警示設定示範。",
+      "whyZh": "警示能提醒庫存不足，但不是下單補貨。"
+    },
+    {
+      "id": "B",
+      "text": "The weekly summary demo today.",
+      "zh": "今天的週報示範。",
+      "whyZh": "今天會教匯出週報，不會教下單。"
+    },
+    {
+      "id": "C",
+      "text": "Next month’s ordering session.",
+      "zh": "下個月的訂購功能場次。",
+      "whyZh": "補貨要重新下單，訂購功能下個月才會教。"
+    },
+    {
+      "id": "D",
+      "text": "Either of today’s demos.",
+      "zh": "今天的兩項示範都可以。",
+      "whyZh": "今天兩項示範都不教訂購。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "補貨要重新下單，訂購功能下個月才會教。",
+  "evidence": "Today we’ll set low-stock alerts and export a weekly summary. We’ll cover ordering next month.",
+  "vocabulary": [
+    {
+      "term": "reorder stock",
+      "zh": "補貨",
+      "note": "在這裡指再下單補充庫存，不只是設定低庫存提醒。"
+    }
+  ],
+  "revision": 3
+}

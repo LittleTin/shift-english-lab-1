@@ -1,0 +1,56 @@
+{
+  "id": "t02-q084-r2",
+  "testId": "test-02",
+  "number": 84,
+  "part": 4,
+  "groupId": "t02-g049",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "inventory count"
+  ],
+  "prompt": "What should team leaders arrange?",
+  "promptZh": "各組主管應安排什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Assign each requester to check separately; use the label even if a seal is damaged.",
+      "zh": "請每位提出需求的人各自核對；封條損壞仍以箱標為準。",
+      "whyZh": "只須安排一名代表核對，且封條受損時不能直接採用箱標數量。"
+    },
+    {
+      "id": "B",
+      "text": "Send one representative to check with warehouse staff; use the label count only when the seal is intact.",
+      "zh": "安排一位代表和庫房核對；只有封條完好才採用箱標數量。",
+      "whyZh": "組長指定一人與庫房核對。封條完整的箱子可用標示數量，封條受損者不可直接照箱標。"
+    },
+    {
+      "id": "C",
+      "text": "Assign one representative to check with warehouse staff; use all label counts, including boxes with broken seals.",
+      "zh": "安排一位代表和庫房核對；所有箱子都照箱標，包括封條破損的箱子。",
+      "whyZh": "人員分工正確，但不能把破損封條的箱標直接當成正確數量。"
+    },
+    {
+      "id": "D",
+      "text": "Send separate representatives for each box and verify only counts that already match their labels.",
+      "zh": "每箱各派一位代表，只核對與箱標已相符的數量。",
+      "whyZh": "不是每箱各派人；也不能把核對範圍限於看似相符的箱標。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "組長指定一人與庫房核對。封條完整的箱子可用標示數量，封條受損者不可直接照箱標。",
+  "evidence": "From noon to four, we will handle safety emergencies only. | Team leaders should assign one person to confirm quantities with warehouse staff. | For sealed boxes, use the quantity on the label unless the seal is damaged.",
+  "vocabulary": [
+    {
+      "term": "inventory count",
+      "zh": "盤點",
+      "note": "實際核對庫存品項與數量的作業。"
+    },
+    {
+      "term": "resume",
+      "zh": "恢復",
+      "note": "表示暫停後重新開始。"
+    }
+  ],
+  "revision": 2
+}

@@ -1,0 +1,57 @@
+{
+  "id": "t02-q186",
+  "testId": "test-02",
+  "number": 186,
+  "part": 7,
+  "groupId": "t02-r-p7-13",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "business",
+    "reading-comprehension"
+  ],
+  "prompt": "Why does the group qualify for a discount?",
+  "promptZh": "此團體為何符合折扣資格？",
+  "options": [
+    {
+      "text": "It has paid the entire invoice already",
+      "zh": "已付清整張帳單",
+      "whyZh": "只付了三千訂金，餘款尚未支付。",
+      "id": "A"
+    },
+    {
+      "text": "It has at least ten participants",
+      "zh": "至少有十人參加",
+      "whyZh": "確認十二人，達到報價十人以上的門檻。",
+      "id": "B"
+    },
+    {
+      "text": "It rented two separate rooms",
+      "zh": "租了兩間獨立教室",
+      "whyZh": "文件只列固定場租，沒有兩間教室。",
+      "id": "C"
+    },
+    {
+      "text": "It booked after July 9",
+      "zh": "在七月九日後才訂位",
+      "whyZh": "七月九日是活動日，非折扣條件。",
+      "id": "D"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "確認十二人，達到報價十人以上的門檻。",
+  "evidence": "Groups of ten or more receive a 10% discount ... twelve participants",
+  "vocabulary": [
+    {
+      "term": "balance due",
+      "zh": "應付餘額",
+      "note": "扣除已付金額後仍需支付的款項。"
+    },
+    {
+      "term": "fixed charge",
+      "zh": "固定費用",
+      "note": "不因本題參加人數而改變的費用。"
+    }
+  ],
+  "revision": 1
+}

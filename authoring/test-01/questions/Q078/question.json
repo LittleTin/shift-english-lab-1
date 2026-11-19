@@ -1,0 +1,52 @@
+{
+  "id": "t01-q078",
+  "testId": "test-01",
+  "number": 78,
+  "part": 4,
+  "groupId": "t01-g047",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "reason"
+  ],
+  "prompt": "Why will the group not enter the cleanroom?",
+  "promptZh": "參訪團為什麼不能進入無塵室？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A new filter system is being tested.",
+      "zh": "新的過濾系統正在測試。",
+      "whyZh": "公告直接以 while a new filter system is being tested 解釋當天不能進入。"
+    },
+    {
+      "id": "B",
+      "text": "The factory has no cleanroom.",
+      "zh": "這間工廠沒有無塵室。",
+      "whyZh": "工廠有無塵室，只是當天不能進入。"
+    },
+    {
+      "id": "C",
+      "text": "All visitor badges have expired.",
+      "zh": "所有訪客識別證都已到期。",
+      "whyZh": "公告要求識別證保持可見，未說已過期。"
+    },
+    {
+      "id": "D",
+      "text": "Final inspection has been canceled.",
+      "zh": "最終檢驗已取消。",
+      "whyZh": "導覽仍會透過觀景窗觀看最終檢驗。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "公告直接以 while a new filter system is being tested 解釋當天不能進入。",
+  "evidence": "We cannot enter the cleanroom today while a new filter system is being tested.",
+  "vocabulary": [
+    {
+      "term": "filter system",
+      "zh": "過濾系統",
+      "note": "此處指無塵室環境控制所使用的過濾設備。"
+    }
+  ],
+  "revision": 1
+}

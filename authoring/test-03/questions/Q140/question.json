@@ -1,0 +1,52 @@
+{
+  "id": "t03-q140",
+  "testId": "test-03",
+  "number": 140,
+  "part": 6,
+  "groupId": "t03-g057",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "technology",
+    "text-completion"
+  ],
+  "prompt": "Choose the best word or sentence for blank [140].",
+  "promptZh": "請選出最適合填入空格 [140] 的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "A set of fictional card details is included for testing.",
+      "zh": "另有一組虛構的付款卡資料供測試。",
+      "whyZh": "提供虛構的付款卡資料，可讓測試者不用輸入個人財務資訊就能操作付款畫面，正好承接後句。"
+    },
+    {
+      "id": "B",
+      "text": "You should contact your bank before using the link.",
+      "zh": "使用連結前應聯絡銀行。",
+      "whyZh": "測試不使用真實財務資料，無此需求。"
+    },
+    {
+      "id": "C",
+      "text": "Please pay the full fare for every test booking.",
+      "zh": "請支付每次測試訂位的全額票價。",
+      "whyZh": "與不建立真實訂位及不輸入財務資料矛盾。"
+    },
+    {
+      "id": "D",
+      "text": "Only customers with existing reservations may participate.",
+      "zh": "只有已有訂位的顧客可參加。",
+      "whyZh": "未提此資格限制，且不解釋下一句付款測試。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "提供虛構的付款卡資料，可讓測試者不用輸入個人財務資訊就能操作付款畫面，正好承接後句。",
+  "evidence": "fictional card details ... without entering personal financial information",
+  "vocabulary": [
+    {
+      "term": "fictional",
+      "zh": "虛構的",
+      "note": "非真實資料，可用於測試。"
+    }
+  ],
+  "revision": 1
+}

@@ -1,0 +1,52 @@
+{
+  "id": "t03-q059",
+  "testId": "test-03",
+  "number": 59,
+  "part": 3,
+  "groupId": "t03-g041",
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "business",
+    "detail"
+  ],
+  "prompt": "Why was the expense claim returned?",
+  "promptZh": "費用申請為什麼被退回？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The manager rejected the trip.",
+      "zh": "主管不同意出差。",
+      "whyZh": "主管尚待核准更正申請，不是拒絕出差。"
+    },
+    {
+      "id": "B",
+      "text": "The taxi fare exceeded a limit.",
+      "zh": "計程車費超過上限。",
+      "whyZh": "小於 5 MB 是上傳檔案的限制，不是車資上限。"
+    },
+    {
+      "id": "C",
+      "text": "A required receipt was absent.",
+      "zh": "缺少必要收據。",
+      "whyZh": "女子開頭說缺計程車收據而遭退回。"
+    },
+    {
+      "id": "D",
+      "text": "The employee used an outdated form.",
+      "zh": "員工用了舊表格。",
+      "whyZh": "問題是系統未收到收據圖片，不是表格版本。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "女子開頭說缺計程車收據而遭退回。",
+  "evidence": "a taxi receipt is missing",
+  "vocabulary": [
+    {
+      "term": "reimbursement",
+      "zh": "費用報銷",
+      "note": "公司退還員工代付的工作費用。"
+    }
+  ],
+  "revision": 1
+}

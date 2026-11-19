@@ -1,0 +1,57 @@
+{
+  "id": "t02-q193",
+  "testId": "test-02",
+  "number": 193,
+  "part": 7,
+  "groupId": "t02-r-p7-14",
+  "topic": "technology",
+  "difficulty": "foundation",
+  "tags": [
+    "technology",
+    "reading-comprehension"
+  ],
+  "prompt": "What must occur before the new boards are issued to production?",
+  "promptZh": "新版板子發給產線前必須完成什麼？",
+  "options": [
+    {
+      "text": "Disposal of every revision E board",
+      "zh": "報廢全部 E 版",
+      "whyZh": "工程通知明確禁止因改版而直接報廢。",
+      "id": "A"
+    },
+    {
+      "text": "Acceptance by incoming inspection",
+      "zh": "通過進料檢驗",
+      "whyZh": "採購訊息將進料驗收列為發料前條件。",
+      "id": "B"
+    },
+    {
+      "text": "Installation of entirely new firmware",
+      "zh": "安裝完全不同的韌體",
+      "whyZh": "變更通知說韌體不變。",
+      "id": "C"
+    },
+    {
+      "text": "A change to the board dimensions",
+      "zh": "改變板子尺寸",
+      "whyZh": "尺寸不變，並無此要求。",
+      "id": "D"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "採購訊息將進料驗收列為發料前條件。",
+  "evidence": "Incoming inspection must accept those boards before they are issued",
+  "vocabulary": [
+    {
+      "term": "test pad",
+      "zh": "測試點焊墊",
+      "note": "電路板上供量測探針接觸的位置。"
+    },
+    {
+      "term": "engineering change notice",
+      "zh": "工程變更通知",
+      "note": "傳達設計或製造相關修訂與適用範圍的文件。"
+    }
+  ],
+  "revision": 1
+}

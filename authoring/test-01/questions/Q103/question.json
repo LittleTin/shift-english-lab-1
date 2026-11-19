@@ -1,0 +1,52 @@
+{
+  "id": "t01-q103-r2",
+  "testId": "test-01",
+  "number": 103,
+  "part": 5,
+  "groupId": null,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "business",
+    "grammar"
+  ],
+  "prompt": "Purchasing accepts quotations until Friday noon. It automatically acknowledges every message, but it includes only quotations that arrive by the deadline in the price comparison. A supplier who receives a receipt for a quotation sent on Friday afternoon should treat that quotation as ____ the comparison.",
+  "promptZh": "採購部門收件至週五中午止。系統會自動回覆每封訊息，但只有期限內收到的報價才會納入比價。供應商在週五下午寄出報價並收到收件通知後，應把該報價視為____比價。",
+  "options": [
+    {
+      "id": "A",
+      "text": "entered in",
+      "zh": "已登錄至",
+      "whyZh": "自動發出收件通知並不代表已登錄比價；下午寄出又已超過截止時間。"
+    },
+    {
+      "id": "B",
+      "text": "eligible for",
+      "zh": "符合資格參與",
+      "whyZh": "截止時間是週五中午，下午寄出的報價已不符合參與條件。"
+    },
+    {
+      "id": "C",
+      "text": "prioritized in",
+      "zh": "優先納入",
+      "whyZh": "沒有優先處理的資訊；只有期限內收到的報價才會比價。"
+    },
+    {
+      "id": "D",
+      "text": "excluded from",
+      "zh": "未納入",
+      "whyZh": "收件通知只表示系統收到訊息。報價在週五中午後寄出，已過比價截止時間。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "收件通知只表示系統收到訊息。報價在週五中午後寄出，已過比價截止時間。",
+  "evidence": "Purchasing accepts quotations until Friday noon. It automatically acknowledges every message, but it includes only quotations that arrive by the deadline in the price comparison. A supplier who receives a receipt for a quotation sent on Friday afternoon should treat that quotation as ____ the comparison.",
+  "vocabulary": [
+    {
+      "term": "excluded from",
+      "zh": "未納入",
+      "note": "在採購流程中指未列入某項作業範圍；收到自動回覆不等於被納入比價。"
+    }
+  ],
+  "revision": 2
+}

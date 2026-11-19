@@ -1,0 +1,58 @@
+{
+  "id": "t01-q050-r2",
+  "testId": "test-01",
+  "number": 50,
+  "part": 3,
+  "groupId": "t01-g038-r2",
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "workplace",
+    "listening-comprehension",
+    "conversation"
+  ],
+  "prompt": "Which move fits the time available?",
+  "promptZh": "哪個搬運安排符合可用時段？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Start using the public elevator at ten oh five.",
+      "zh": "十點零五分開始使用客用電梯搬運。",
+      "whyZh": "客用電梯載得動展示櫃，但十點起須留給需要無階梯動線的訪客。"
+    },
+    {
+      "id": "B",
+      "text": "Start using the freight elevator at ten thirty-five.",
+      "zh": "十點三十五分開始使用貨梯搬運。",
+      "whyZh": "貨梯十點半起可用；十點三十五分開始，到十點五十五分剛好二十分鐘，兩位搬運人員都還在。客用電梯十點後須留作無階梯動線。"
+    },
+    {
+      "id": "C",
+      "text": "Start using the freight elevator at ten fifty.",
+      "zh": "十點五十分開始使用貨梯搬運。",
+      "whyZh": "貨梯雖已空出，但預留二十分鐘會到十一點十分；其中一位搬運人員十一點必須離開。"
+    },
+    {
+      "id": "D",
+      "text": "Start using the freight elevator at ten ten.",
+      "zh": "十點十分開始使用貨梯搬運。",
+      "whyZh": "貨梯到十點半才能用，十點十分太早。"
+    }
+  ],
+  "answer": "B",
+  "evidence": "Keep the public elevator free from ten. It’s our only step-free route upstairs. | The freight elevator is free at ten thirty. We need both movers for twenty minutes; one leaves at eleven. Office first?",
+  "explanationZh": "貨梯十點半起可用；十點三十五分開始，到十點五十五分剛好二十分鐘，兩位搬運人員都還在。客用電梯十點後須留作無階梯動線。",
+  "revision": 2,
+  "vocabulary": [
+    {
+      "term": "step-free",
+      "zh": "無階梯的",
+      "note": "指不必走樓梯即可通行的動線。"
+    },
+    {
+      "term": "freight elevator",
+      "zh": "貨梯",
+      "note": "英式英語的 lift 相當於 elevator；freight elevator 指載貨用電梯。"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "t02-q010",
+  "testId": "test-02",
+  "number": 10,
+  "part": 2,
+  "groupId": "t02-g010",
+  "topic": "technology",
+  "difficulty": "foundation",
+  "tags": [
+    "question-response"
+  ],
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+  "options": [
+    {
+      "id": "A",
+      "text": "The meeting room is on the left.",
+      "zh": "會議室在左邊。",
+      "whyZh": "layout 在此指電路板佈局，回答會議室方向不合題意。"
+    },
+    {
+      "id": "B",
+      "text": "Yes, I would like some lunch.",
+      "zh": "好，我想吃點午餐。",
+      "whyZh": "問題不是邀請用餐，而是確認檢查是否完成。"
+    },
+    {
+      "id": "C",
+      "text": "Not yet; I will review it after lunch.",
+      "zh": "還沒；我午餐後會檢查。",
+      "whyZh": "Not yet 回答目前尚未完成，並交代下一步。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "Not yet 回答目前尚未完成，並交代下一步。",
+  "evidence": "Have you checked the board layout yet?",
+  "vocabulary": [
+    {
+      "term": "board layout",
+      "zh": "電路板佈局",
+      "note": "指元件與線路的配置；check 表示檢查其設計。"
+    }
+  ],
+  "revision": 1
+}

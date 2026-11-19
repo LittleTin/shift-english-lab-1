@@ -1,0 +1,52 @@
+{
+  "id": "t03-q111-r2",
+  "testId": "test-03",
+  "number": 111,
+  "part": 5,
+  "groupId": null,
+  "topic": "technology",
+  "tags": [
+    "technology",
+    "context"
+  ],
+  "vocabulary": [
+    {
+      "term": "By the time",
+      "zh": "到……時",
+      "note": "搭配過去發生的時間點，指出當時另一件事已經完成；本題是陳先生打開警示前，控制器就已關閉線路。"
+    }
+  ],
+  "difficulty": "intermediate",
+  "prompt": "At 9:05, the dashboard issued a warning about the backup line. By the time Chen opened the alert at 9:12, the controller ____ the line, so there was nothing left for him to switch off.",
+  "promptZh": "上午 9:05，儀表板針對備用線路發出警訊。到了上午 9:12，陳打開警訊通知時，控制器____該線路，因此他不必再手動關閉該線路。",
+  "options": [
+    {
+      "id": "A",
+      "text": "would soon shut down",
+      "zh": "很快就會關閉",
+      "whyZh": "表示在當時之後才會切斷線路，與陳當時已無須關閉矛盾。"
+    },
+    {
+      "id": "B",
+      "text": "was still shutting down",
+      "zh": "仍在關閉",
+      "whyZh": "表示動作仍在進行；後文表示已無須再關閉，顯示關閉動作已完成。"
+    },
+    {
+      "id": "C",
+      "text": "had already shut down",
+      "zh": "早已關閉",
+      "whyZh": "警訊出現與陳打開警訊是先後的兩個時間點；後文顯示關閉在第二個過去時間點以前已完成，因此用過去完成式。"
+    },
+    {
+      "id": "D",
+      "text": "was expected to shut down",
+      "zh": "預計會關閉",
+      "whyZh": "預期關閉不能證明線路在陳查看時已關閉。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "警訊出現與陳打開警訊是先後的兩個時間點；後文顯示關閉在第二個過去時間點以前已完成，因此用過去完成式。",
+  "evidence": "The clock reference is past and the second clause requires completed automatic shutdown rather than a forecast or in-progress activity.",
+  "revision": 2
+}

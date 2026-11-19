@@ -1,0 +1,52 @@
+{
+  "id": "t01-q149-r2",
+  "testId": "test-01",
+  "number": 149,
+  "part": 7,
+  "groupId": "t01-r-p7-01-r2",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "daily",
+    "reading-comprehension"
+  ],
+  "prompt": "Dana has to leave before the repair is finished. The volunteer confirms the item will be ready by 3 p.m. Which arrangement will allow Dana's friend to collect it?",
+  "promptZh": "Dana 得在衣物修好前離開。志工確認最遲下午三點會修好。哪個安排能讓 Dana 的朋友代領衣物？",
+  "options": [
+    {
+      "text": "Give the friend the original claim ticket and have them arrive at 3:30 p.m.",
+      "zh": "把領取憑單正本交給朋友，請朋友下午三點半到。",
+      "whyZh": "三點半時衣物已修好，領取櫃檯仍開放；朋友也有代領所需的憑單正本。",
+      "id": "A"
+    },
+    {
+      "text": "Send the friend a photo of the ticket and have them arrive at 3:30 p.m.",
+      "zh": "把憑單照片傳給朋友，請朋友下午三點半到。",
+      "whyZh": "到達時間符合，但櫃檯不接受憑單照片；代領人須帶正本。",
+      "id": "B"
+    },
+    {
+      "text": "Give the friend the original ticket and have them arrive at 5 p.m.",
+      "zh": "把憑單正本交給朋友，請朋友下午五點到。",
+      "whyZh": "憑單正本有效，但領取櫃檯下午四點就關閉，即使圖書館本身仍開著也不能領取。",
+      "id": "C"
+    },
+    {
+      "text": "Have the friend arrive at 3:30 p.m. with only the number from the ticket.",
+      "zh": "請朋友下午三點半到，只提供憑單上的編號。",
+      "whyZh": "到達時間符合，但編號不能替代憑單正本。",
+      "id": "D"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "三點半時衣物已修好，領取櫃檯仍開放；朋友也有代領所需的憑單正本。",
+  "evidence": "Original physical ticket for proxy pickup; scenario ready by 3 p.m.; collection desk closes 4 p.m., not 6 p.m.",
+  "vocabulary": [
+    {
+      "term": "claim ticket",
+      "zh": "領取憑單",
+      "note": "憑單正本可用於領回先前留下的物品。"
+    }
+  ],
+  "revision": 2
+}

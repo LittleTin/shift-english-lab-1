@@ -1,0 +1,52 @@
+{
+  "id": "t01-q059-r2",
+  "testId": "test-01",
+  "number": 59,
+  "part": 3,
+  "groupId": "t01-g041",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "purpose"
+  ],
+  "prompt": "What still needs attention before the model change?",
+  "promptZh": "換型前還有什麼需要處理？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The process engineer still needs to install the new fixture.",
+      "zh": "製程工程師還需要安裝新治具。",
+      "whyZh": "新治具已安裝。"
+    },
+    {
+      "id": "B",
+      "text": "Operators need practice with the new fixture and smaller housing.",
+      "zh": "操作員需要練習用新治具裝載較小的外殼。",
+      "whyZh": "治具已裝好，但操作員還沒練習裝入新款較小外殼；問題是人員操作熟練度，不是硬體安裝。"
+    },
+    {
+      "id": "C",
+      "text": "The team needs to find another line for the compact model.",
+      "zh": "團隊必須另找產線來生產小型機種。",
+      "whyZh": "對話明確指定第三線換型。"
+    },
+    {
+      "id": "D",
+      "text": "Operators need to redesign the housing before it can be loaded.",
+      "zh": "操作員需要重新設計外殼才裝得進去。",
+      "whyZh": "外殼較小，需要練習，但沒有重新設計的要求。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "治具已裝好，但操作員還沒練習裝入新款較小外殼；問題是人員操作熟練度，不是硬體安裝。",
+  "evidence": "Yes, but the operators haven't practiced loading the smaller housing yet.",
+  "vocabulary": [
+    {
+      "term": "fixture",
+      "zh": "治具",
+      "note": "固定和定位工件的工具。"
+    }
+  ],
+  "revision": 2
+}

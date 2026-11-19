@@ -1,0 +1,53 @@
+{
+  "id": "t03-q182",
+  "testId": "test-03",
+  "number": 182,
+  "part": 7,
+  "groupId": "t03-g070",
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "business",
+    "reading-comprehension",
+    "double"
+  ],
+  "prompt": "What is wrong with the delivery?",
+  "promptZh": "交貨出了什麼問題？",
+  "options": [
+    {
+      "text": "The order was sent to another address",
+      "zh": "寄錯地址",
+      "whyZh": "中心已收貨，僅要求補件標註二樓。",
+      "id": "A"
+    },
+    {
+      "text": "The shipment arrived after noon",
+      "zh": "貨物中午後才到",
+      "whyZh": "十點二十分到，符合要求。",
+      "id": "B"
+    },
+    {
+      "text": "Four clamps are missing",
+      "zh": "少了四個夾座",
+      "whyZh": "訂十二個，只收到八個。",
+      "id": "C"
+    },
+    {
+      "text": "Four lamps are defective",
+      "zh": "四盞燈故障",
+      "whyZh": "十二盞燈都正常。",
+      "id": "D"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "訂十二個，只收到八個。",
+  "evidence": "only eight C2 clamps ... send the remaining four",
+  "vocabulary": [
+    {
+      "term": "shortage",
+      "zh": "短缺",
+      "note": "本題閱讀重點詞彙。"
+    }
+  ],
+  "revision": 1
+}

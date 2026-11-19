@@ -1,0 +1,58 @@
+{
+  "id": "t01-q052-r2",
+  "testId": "test-01",
+  "number": 52,
+  "part": 3,
+  "groupId": "t01-g038-r2",
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "workplace",
+    "listening-comprehension",
+    "conversation"
+  ],
+  "prompt": "Facilities clears the display, but the public elevator is out of service. What should reception tell a visitor who needs step-free access?",
+  "promptZh": "設施管理組已核准展示設備，但客用電梯暫停使用。接待櫃檯應如何回覆需要無階梯通行的訪客？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Facilities must inspect the display again before you can go upstairs.",
+      "zh": "你上樓前，設施管理組必須再檢查一次展示設備。",
+      "whyZh": "展示設備已獲核准，問題在無階梯上樓動線中斷，不是檢查尚未完成。"
+    },
+    {
+      "id": "B",
+      "text": "The display is cleared, but you’ll need to wait until the public elevator is back in service.",
+      "zh": "展示設備已獲核准，但你需要等客用電梯恢復服務後才能上樓。",
+      "whyZh": "展示設備已獲核准，不必重做安全檢查；但客用電梯是唯一的無階梯上樓動線。電梯暫停使用時，仍無法讓需要這條動線的訪客上樓，必須等電梯恢復服務。"
+    },
+    {
+      "id": "C",
+      "text": "You can use the freight elevator while the public elevator is out of service.",
+      "zh": "客用電梯暫停使用時，你可以改搭貨梯。",
+      "whyZh": "客用電梯是唯一的無階梯路線，不能把貨梯當成替代方案。"
+    },
+    {
+      "id": "D",
+      "text": "You can go upstairs if the booking screen says the room is available.",
+      "zh": "只要預約畫面顯示展示間可用，你就能上樓。",
+      "whyZh": "預約畫面只顯示房間是否被預約，不能證明無階梯動線可用。"
+    }
+  ],
+  "answer": "B",
+  "evidence": "Keep the public elevator free from ten. It’s our only step-free route upstairs. | The screen shows bookings. Reception needs Facilities clearance before admitting visitors to see displays.",
+  "explanationZh": "展示設備已獲核准，不必重做安全檢查；但客用電梯是唯一的無階梯上樓動線。電梯暫停使用時，仍無法讓需要這條動線的訪客上樓，必須等電梯恢復服務。",
+  "revision": 2,
+  "vocabulary": [
+    {
+      "term": "out of service",
+      "zh": "暫停使用",
+      "note": "設備目前不提供服務；不表示一定故障，也沒有交代恢復時間。"
+    },
+    {
+      "term": "clear",
+      "zh": "核准；確認可以放行",
+      "note": "此處是確認通電設備符合安全要求，不是把設備移開。"
+    }
+  ]
+}

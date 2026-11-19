@@ -1,0 +1,51 @@
+{
+  "id": "t02-q051-r3",
+  "testId": "test-02",
+  "number": 51,
+  "part": 3,
+  "groupId": "t02-g038",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "reserve"
+  ],
+  "prompt": "If all samples must be tested together, why would the original completion date change?",
+  "promptZh": "如果所有樣品必須一起測試，為什麼原定完成日期會變？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The team plans to add more samples.",
+      "zh": "團隊打算增加樣品。",
+      "whyZh": "樣品數量仍是十二件。"
+    },
+    {
+      "id": "B",
+      "text": "The test plan must be rewritten at check-in.",
+      "zh": "報到時要重寫測試計畫。",
+      "whyZh": "報到時只須帶測試計畫。"
+    },
+    {
+      "id": "C",
+      "text": "The smaller chamber needs extra setup.",
+      "zh": "小測試箱需要額外設定。",
+      "whyZh": "小測試箱的問題是容量不足，不是設定時間。"
+    },
+    {
+      "id": "D",
+      "text": "The full test cannot start on the originally requested day.",
+      "zh": "全數樣品無法在原本要求的那天開始測試。",
+      "whyZh": "原訂週三開始、測三天；容量足夠的測試箱週五才能用，因此完工日期得往後排。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "原訂週三開始、測三天；容量足夠的測試箱週五才能用，因此完工日期得往後排。",
+  "evidence": "We need the reliability chamber for three days, starting Wednesday. Is it available? | Another team has booked it through Thursday. You could begin Friday morning, or use the smaller chamber on Wednesday. | The smaller one cannot hold all twelve samples. Let us choose Friday, and I will notify the project manager about the revised completion date.",
+  "vocabulary": [
+    {
+      "term": "completion date",
+      "zh": "完成日期",
+      "note": "指預計結束整項工作或測試的日期。"
+    }
+  ],
+  "revision": 3
+}

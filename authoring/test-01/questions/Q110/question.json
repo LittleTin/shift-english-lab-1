@@ -1,0 +1,52 @@
+{
+  "id": "t01-q110",
+  "testId": "test-01",
+  "number": 110,
+  "part": 5,
+  "groupId": null,
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "grammar"
+  ],
+  "prompt": "Please keep the loading dock clear while the replacement compressor is ____.",
+  "promptZh": "更換用的壓縮機在____時，請保持裝卸區暢通。",
+  "options": [
+    {
+      "text": "delivery",
+      "zh": "運送（名詞）",
+      "whyZh": "is delivery 無法表達壓縮機正在被運送的動作。",
+      "id": "A"
+    },
+    {
+      "text": "being delivered",
+      "zh": "正在被運送",
+      "whyZh": "is being delivered 為現在進行式被動語態，壓縮機是被運送的對象。",
+      "id": "B"
+    },
+    {
+      "text": "delivering",
+      "zh": "運送中",
+      "whyZh": "compressor 不會自行運送其他物品，此處需要被動語態。",
+      "id": "C"
+    },
+    {
+      "text": "deliver",
+      "zh": "運送",
+      "whyZh": "is 後不能直接接動詞原形 deliver。",
+      "id": "D"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "is being delivered 為現在進行式被動語態，壓縮機是被運送的對象。",
+  "evidence": "the replacement compressor is being delivered",
+  "vocabulary": [
+    {
+      "term": "loading dock",
+      "zh": "裝卸區",
+      "note": "貨物上卸車的位置。"
+    }
+  ],
+  "revision": 1
+}

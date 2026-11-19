@@ -1,0 +1,57 @@
+{
+  "id": "t01-q001-r2",
+  "testId": "test-01",
+  "number": 1,
+  "part": 1,
+  "groupId": "t01-g001",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "photo_description"
+  ],
+  "prompt": "Look at the picture and choose the statement that best describes it.",
+  "promptZh": "請看圖片，選出最符合畫面的敘述。",
+  "options": [
+    {
+      "id": "A",
+      "text": "A worker is pushing a cart loaded with boxes.",
+      "zh": "一名工作人員正推著載有紙箱的推車。",
+      "whyZh": "畫面可見人員推動載有紙箱的推車；動作 pushing 與載貨狀態 loaded with boxes 都符合圖片。"
+    },
+    {
+      "id": "B",
+      "text": "A worker is opening a box on the floor.",
+      "zh": "一名工作人員正在地板上打開紙箱。",
+      "whyZh": "畫面中的主要動作是推車，並非蹲下或彎身拆開地板上的紙箱。"
+    },
+    {
+      "id": "C",
+      "text": "Some boxes are hanging from the ceiling.",
+      "zh": "一些紙箱懸掛在天花板上。",
+      "whyZh": "紙箱放在推車上，沒有懸掛於天花板。"
+    },
+    {
+      "id": "D",
+      "text": "A worker is sitting on an empty cart.",
+      "zh": "一名工作人員坐在空推車上。",
+      "whyZh": "人員正在推車，且推車載有箱子；sitting 與 empty 都不符合。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "畫面可見人員推動載有紙箱的推車；動作 pushing 與載貨狀態 loaded with boxes 都符合圖片。",
+  "evidence": "A worker is pushing a cart loaded with boxes.",
+  "vocabulary": [
+    {
+      "term": "loaded with",
+      "zh": "裝載著",
+      "note": "用來描述推車上載有物品。"
+    },
+    {
+      "term": "cart",
+      "zh": "推車",
+      "note": "倉庫內以人力推動的搬運工具。"
+    }
+  ],
+  "revision": 2
+}

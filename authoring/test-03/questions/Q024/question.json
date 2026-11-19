@@ -1,0 +1,46 @@
+{
+  "id": "t03-q024",
+  "testId": "test-03",
+  "number": 24,
+  "part": 2,
+  "groupId": "t03-g024",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "question_response"
+  ],
+  "prompt": "Are there any replacement filters in the storeroom?",
+  "promptZh": "儲藏室裡有替換濾網嗎？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The room was repainted last week.",
+      "zh": "房間上週重新油漆了。",
+      "whyZh": "房間裝修與濾網庫存無關。"
+    },
+    {
+      "id": "B",
+      "text": "I used the last one yesterday.",
+      "zh": "我昨天用掉最後一個了。",
+      "whyZh": "間接表示目前沒有剩餘濾網。"
+    },
+    {
+      "id": "C",
+      "text": "Replace them every six months.",
+      "zh": "每六個月更換一次。",
+      "whyZh": "提供更換週期，不回答現在是否有庫存。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "間接表示目前沒有剩餘濾網。",
+  "evidence": "I used the last one yesterday.",
+  "vocabulary": [
+    {
+      "term": "replacement filter",
+      "zh": "替換濾網",
+      "note": "I used the last one yesterday."
+    }
+  ],
+  "revision": 1
+}

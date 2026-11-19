@@ -1,0 +1,56 @@
+{
+  "id": "t02-q039-r2",
+  "testId": "test-02",
+  "number": 39,
+  "part": 3,
+  "groupId": "t02-g034",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "pilot build"
+  ],
+  "prompt": "What can the team do on Monday?",
+  "promptZh": "團隊星期一可以做什麼？",
+  "options": [
+    {
+      "text": "Inspect the housings only after the new fixture is checked.",
+      "zh": "等新治具檢查完才檢查外殼。",
+      "whyZh": "檢查外殼不需治具，星期一即可進行。",
+      "id": "A"
+    },
+    {
+      "text": "Inspect the housings and assemble the full batch that day.",
+      "zh": "當天檢查外殼並完成整批組裝。",
+      "whyZh": "外殼可先檢查，但星期一治具還沒準備好，不能完成整批組裝。",
+      "id": "B"
+    },
+    {
+      "text": "Inspect the housings without the fixture and leave assembly for later.",
+      "zh": "不用治具先檢查外殼，組裝留待之後。",
+      "whyZh": "外殼檢查不依賴治具，可先進行；組裝要等治具準備好且完成檢查。",
+      "id": "C"
+    },
+    {
+      "text": "Inspect the housings using the new fixture as soon as it arrives that day.",
+      "zh": "當天治具一到就用它檢查外殼。",
+      "whyZh": "治具星期二才會準備好；外殼檢查也不需要它。",
+      "id": "D"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "外殼檢查不依賴治具，可先進行；組裝要等治具準備好且完成檢查。",
+  "evidence": "Can the team start with the housing inspection on Monday? That does not require the fixture. ... Assembly can move to Wednesday, after the fixture has been checked.",
+  "vocabulary": [
+    {
+      "term": "pilot build",
+      "zh": "試產",
+      "note": "正式量產前的小批次製作，用於驗證設計與製程準備。"
+    },
+    {
+      "term": "fixture",
+      "zh": "治具",
+      "note": "本題用於組裝的定位或輔助工具。"
+    }
+  ],
+  "revision": 2
+}

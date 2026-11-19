@@ -1,0 +1,53 @@
+{
+  "id": "t02-q107-r3",
+  "testId": "test-02",
+  "number": 107,
+  "part": 5,
+  "groupId": null,
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "sentence-completion",
+    "context"
+  ],
+  "prompt": "The new pouch costs more per unit, but it cuts the time the packing line spends clearing jams. If the resulting labor savings are large enough to ____ the price increase, the total cost per shipment will not rise.",
+  "promptZh": "新款包裝袋的單價較高，但包裝線花在排除卡料的時間會減少。如果因此節省的人力成本足以____單價上漲的影響，每批出貨的總成本就不會增加。",
+  "options": [
+    {
+      "id": "A",
+      "text": "reflect",
+      "zh": "反映",
+      "whyZh": "單價增加和排除卡料所省下的人力成本是兩筆不同的成本；後者並非只是呈現前者。"
+    },
+    {
+      "id": "B",
+      "text": "offset",
+      "zh": "抵銷",
+      "whyZh": "人力成本降幅若足以抵銷包裝袋漲價增加的成本，每批出貨的總成本就不會上升。"
+    },
+    {
+      "id": "C",
+      "text": "extend",
+      "zh": "延長",
+      "whyZh": "比較的是兩筆金額，不是延長漲價持續的時間。"
+    },
+    {
+      "id": "D",
+      "text": "trigger",
+      "zh": "引發",
+      "whyZh": "新款袋的單價本來就較高；節省人力並不是漲價的原因。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "人力成本降幅若足以抵銷包裝袋漲價增加的成本，每批出貨的總成本就不會上升。",
+  "evidence": "The new pouch costs more per unit, but it cuts the time the packing line spends clearing jams. If the resulting labor savings are large enough to ____ the price increase, the total cost per shipment will not rise.",
+  "vocabulary": [
+    {
+      "term": "clear a jam",
+      "zh": "排除卡料",
+      "note": "用於生產線或設備，指清除堵住進料路徑的材料，讓設備恢復運轉。"
+    }
+  ],
+  "revision": 3
+}

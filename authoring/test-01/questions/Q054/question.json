@@ -1,0 +1,57 @@
+{
+  "id": "t01-q054-r3",
+  "testId": "test-01",
+  "number": 54,
+  "part": 3,
+  "groupId": "t01-g039-r2",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "technology",
+    "graphic-inference"
+  ],
+  "prompt": "Look at the graphic. Which fan model will the speakers test at two o'clock?",
+  "promptZh": "請看圖表。兩位說話者兩點要測試哪一款風扇？",
+  "options": [
+    {
+      "id": "A",
+      "text": "AV-12",
+      "zh": "AV-12",
+      "whyZh": "圖表中的 AV-12 來自 A 供應商，這款樣品趕不上兩點的測試。"
+    },
+    {
+      "id": "B",
+      "text": "AV-21",
+      "zh": "AV-21",
+      "whyZh": "B 供應商的樣品已到收貨處且附卡扣；圖表把 B 供應商對應到 AV-21。"
+    },
+    {
+      "id": "C",
+      "text": "AV-28",
+      "zh": "AV-28",
+      "whyZh": "AV-28 對應 C 供應商，不是女子最後選定的 B 供應商。"
+    },
+    {
+      "id": "D",
+      "text": "AV-36",
+      "zh": "AV-36",
+      "whyZh": "AV-36 對應 D 供應商；樣品雖已到，但缺少安裝時需要的卡扣。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "B 供應商的樣品已到收貨處且附卡扣；圖表把 B 供應商對應到 AV-21。",
+  "evidence": "What about the replacement fan? Supplier A can deliver this afternoon, but not before our two o'clock test. Supplier D's sample is here, but it came without the clips we need. | Supplier B's sample is at the receiving desk, and the clips are in the box. Let's test that one. I'll collect it. Can you mark the first reading as invalid? Leave the worksheet open so we can add the new reading after the test. | Graphic: Fan Evaluation Roster; Supplier A: AV-12; Supplier B: AV-21; Supplier C: AV-28; Supplier D: AV-36",
+  "vocabulary": [
+    {
+      "term": "clip",
+      "zh": "卡扣",
+      "note": "用來固定零件的扣件；測試樣品必須附有安裝時所需的卡扣。"
+    },
+    {
+      "term": "receiving desk",
+      "zh": "收貨處",
+      "note": "收取企業或工坊物料的地方；B 供應商的風扇樣品可在此領取。"
+    }
+  ],
+  "revision": 3
+}

@@ -1,0 +1,52 @@
+{
+  "id": "t01-q133",
+  "testId": "test-01",
+  "number": 133,
+  "part": 6,
+  "groupId": "t01-r-p6-01",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "Choose the best word or sentence for blank [133].",
+  "promptZh": "請選出最適合填入空格 [133] 的字詞或句子。",
+  "options": [
+    {
+      "text": "All fifty units have already been shipped to the customer.",
+      "zh": "五十台都已出貨給客戶。",
+      "whyZh": "與將在星期二組裝的未來計畫矛盾。",
+      "id": "A"
+    },
+    {
+      "text": "Do not start the remaining units until Quality gives approval.",
+      "zh": "品管核准前，請勿開始製作其餘產品。",
+      "whyZh": "承接前五台的檢查，清楚說明後續生產須等待核准。",
+      "id": "B"
+    },
+    {
+      "text": "The red trays should be returned to the cafeteria after lunch.",
+      "zh": "午餐後應把紅色托盤送回餐廳。",
+      "whyZh": "後文紅色托盤用於隔離不合格零件，與餐廳用途無關。",
+      "id": "C"
+    },
+    {
+      "text": "The cable connection will be omitted from every module.",
+      "zh": "每個模組都會省略纜線連接。",
+      "whyZh": "前文提供纜線連接照片與方向檢查，並未取消連接步驟。",
+      "id": "D"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "承接前五台的檢查，清楚說明後續生產須等待核准。",
+  "evidence": "The first five units must be inspected ... Quality staff will check connector orientation",
+  "vocabulary": [
+    {
+      "term": "pilot build",
+      "zh": "試產",
+      "note": "以少量組裝驗證製程與作業方式。"
+    }
+  ],
+  "revision": 1
+}

@@ -1,0 +1,52 @@
+{
+  "id": "t01-q038",
+  "testId": "test-01",
+  "number": 38,
+  "part": 3,
+  "groupId": "t01-g034",
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "business",
+    "reason"
+  ],
+  "prompt": "Why must the presentation move?",
+  "promptZh": "簡報為什麼必須換地點？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The client canceled the appointment.",
+      "zh": "客戶取消了會面。",
+      "whyZh": "簡報仍將舉行，只是更換場地。"
+    },
+    {
+      "id": "B",
+      "text": "Room B is being painted.",
+      "zh": "B 室正在油漆。",
+      "whyZh": "對話提到的是投影機故障，沒有粉刷工程。"
+    },
+    {
+      "id": "C",
+      "text": "A projector is not working.",
+      "zh": "投影機無法使用。",
+      "whyZh": "女子第一句說 B 室的投影機無法開機，而維修人員十一點才到，趕不上十點簡報。"
+    },
+    {
+      "id": "D",
+      "text": "The visitors requested a later start.",
+      "zh": "來賓要求延後開始。",
+      "whyZh": "對話沒有提及來賓更改時間。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "女子第一句說 B 室的投影機無法開機，而維修人員十一點才到，趕不上十點簡報。",
+  "evidence": "The projector in Conference Room B won't turn on",
+  "vocabulary": [
+    {
+      "term": "turn on",
+      "zh": "開啟電源",
+      "note": "此處指設備能否開機。"
+    }
+  ],
+  "revision": 1
+}

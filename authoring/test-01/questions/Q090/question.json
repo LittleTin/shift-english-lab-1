@@ -1,0 +1,53 @@
+{
+  "id": "t01-q090-r2",
+  "testId": "test-01",
+  "number": 90,
+  "part": 4,
+  "groupId": "t01-g051-r2",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "daily",
+    "shuttle",
+    "planning"
+  ],
+  "prompt": "What should a rider with a nonfolding bike do?",
+  "promptZh": "自行車不能折疊的騎士應該怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Carry the bike onto the first shuttle.",
+      "zh": "直接把自行車帶上首班車。",
+      "whyZh": "只有折疊後的自行車才能直接帶上車。"
+    },
+    {
+      "id": "B",
+      "text": "Ask the first driver to put it on the trailer.",
+      "zh": "請首班車司機把車放上拖車。",
+      "whyZh": "首班車沒有拖車，無法載這輛自行車。"
+    },
+    {
+      "id": "C",
+      "text": "Wait for the next shuttle and load it onto the trailer.",
+      "zh": "等下一班車，再把自行車放上拖車。",
+      "whyZh": "不能折疊的自行車必須用拖車載運；下一班車有拖車，首班則沒有。"
+    },
+    {
+      "id": "D",
+      "text": "Leave it at the stop because the shuttle service cannot carry it.",
+      "zh": "把自行車留在車站，因為接駁服務完全不能載運。",
+      "whyZh": "下一班車掛有拖車，可載不能折疊的自行車。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "不能折疊的自行車必須用拖車載運；下一班車有拖車，首班則沒有。",
+  "evidence": "Folded bikes can go on any shuttle. Other bikes need a trailer. The first shuttle has none; the next does.",
+  "vocabulary": [
+    {
+      "term": "trailer",
+      "zh": "拖車",
+      "note": "由接駁車拖掛，可載運不能直接帶上車的物品。"
+    }
+  ],
+  "revision": 2
+}

@@ -1,0 +1,52 @@
+{
+  "id": "t01-q071",
+  "testId": "test-01",
+  "number": 71,
+  "part": 4,
+  "groupId": "t01-g045",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "condition"
+  ],
+  "prompt": "When is a first-unit inspection required?",
+  "promptZh": "何時需要首件檢查？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Only when a fixture is replaced.",
+      "zh": "只有更換治具時。",
+      "whyZh": "公告特別說治具沒有更換時也適用，only 限縮過度。"
+    },
+    {
+      "id": "B",
+      "text": "After each change to a different model.",
+      "zh": "每次切換到不同機種之後。",
+      "whyZh": "公告說 after each model change，且即使治具未更換仍適用，因此判斷條件是換機種。"
+    },
+    {
+      "id": "C",
+      "text": "Only at the end of the week.",
+      "zh": "只有每週結束時。",
+      "whyZh": "規定與每次機種切換有關，並非每週一次。"
+    },
+    {
+      "id": "D",
+      "text": "After the unit has been shipped.",
+      "zh": "產品出貨之後。",
+      "whyZh": "檢查必須在產線恢復正常速度前完成，遠早於出貨。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "公告說 after each model change，且即使治具未更換仍適用，因此判斷條件是換機種。",
+  "evidence": "the first unit produced after each model change must be checked by a quality inspector",
+  "vocabulary": [
+    {
+      "term": "first unit",
+      "zh": "首件產品",
+      "note": "此處指切換機種後生產的第一件。"
+    }
+  ],
+  "revision": 1
+}

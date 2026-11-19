@@ -1,0 +1,57 @@
+{
+  "id": "t01-q160-r2",
+  "testId": "test-01",
+  "number": 160,
+  "part": 7,
+  "groupId": "t01-r-p7-05-r2",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "A staff member finishes using a borrowed stand at 3:40 and now needs to return it. Which plan follows the notice?",
+  "promptZh": "有位員工下午 3:40 用完借來的展示架，現在要歸還。下列哪個做法符合通知？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Put the gray stand in the showroom cabinet and take the compatibility card home.",
+      "zh": "把灰色展示架放進展示間的櫃子，將相容性清單帶回家。",
+      "whyZh": "櫃子用來收放藍色展示架；灰色應歸還到展示間辦公室，且清單要留在盒內。"
+    },
+    {
+      "id": "B",
+      "text": "Hand the gray stand to the showroom office before 4:30, with the card in its case.",
+      "zh": "下午 4:30 前把灰色展示架交給展示間辦公室，並將清單留在盒內。",
+      "whyZh": "工坊已關門，但展示間辦公室在下午 4:30 前仍收件；歸還時紙本清單須放在盒內。"
+    },
+    {
+      "id": "C",
+      "text": "Deliver the gray stand to the model shop at 4:00 and submit another borrowing slip.",
+      "zh": "下午 4:00 把灰色展示架送到工坊，並再交一張借用單。",
+      "whyZh": "工坊下午 3:30 就關門，而且通知並未要求歸還時再交借用單。"
+    },
+    {
+      "id": "D",
+      "text": "Return the stand to the showroom office now and put the card back the next morning.",
+      "zh": "現在把展示架還給展示間辦公室，隔天早上才把清單放回盒內。",
+      "whyZh": "地點正確，但通知要求歸還展示架的當下就把清單留在盒內，不能隔天才補。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "工坊已關門，但展示間辦公室在下午 4:30 前仍收件；歸還時紙本清單須放在盒內。",
+  "evidence": "the showroom office accepts returns of gray stands already on loan until 4:30 […] leave the printed compatibility card in the gray stand’s case on return",
+  "vocabulary": [
+    {
+      "term": "on loan",
+      "zh": "已借出",
+      "note": "說明物品目前借給他人、尚未還回；本題指已借出的灰色展示架可交由展示間辦公室收回。"
+    },
+    {
+      "term": "on return",
+      "zh": "歸還時",
+      "note": "歸還物品當下要做的事；本題要求同時將紙本相容性清單留在盒內。"
+    }
+  ],
+  "revision": 2
+}

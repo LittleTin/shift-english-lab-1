@@ -1,0 +1,48 @@
+{
+  "format": "shift-post-qa-receipt-v1",
+  "examId": "test-01",
+  "release": "1.5.0",
+  "inventorySha256": "aa7225a7696bd0a563581b07fb386a50584a6b7612056d3deb2f9bcf285ccca1",
+  "gates": {
+    "itemContent": {
+      "status": "pass",
+      "artifact": "itemContent.json",
+      "sha256": "cf2fdfa28461cf2b2e7c39faec9bf5f6c22b68965b4fb804f82d1d933943bb45"
+    },
+    "independentReReview": {
+      "status": "pass",
+      "artifact": "independentReReview.json",
+      "sha256": "bf96c03a311b48e8e0ecc77cd63d7d6b707f878d6ee05c910c1c45226c84843d"
+    },
+    "difficultyDistribution": {
+      "status": "pass",
+      "artifact": "difficultyDistribution.json",
+      "sha256": "85e40b51e429afb7ec6e8c7edba305b576a91d4dbd571fa99db8f43f1cb9759e"
+    },
+    "authoringRoundtrip": {
+      "status": "pass",
+      "artifact": "authoringRoundtrip.json",
+      "sha256": "72426dc7b72b362ea24df614c37009c96cb3822ba7e6a5edc3f28f5ff64e2c22"
+    },
+    "opusPlaybackAndRanges": {
+      "status": "pass",
+      "artifact": "opusPlaybackAndRanges.json",
+      "sha256": "ca9668b37c410ffb488039e8f62fc65b0c3b4459c3bb11e74be11fa42d2e4754"
+    },
+    "versionParity": {
+      "status": "pass",
+      "artifact": "versionParity.json",
+      "sha256": "fcde52df0b712ef2cd0c2880e3b66db7107608894e71ed8656c60d1b2b695158"
+    },
+    "releaseSize": {
+      "status": "pass",
+      "artifact": "releaseSize.json",
+      "sha256": "c6fbf07592de683b9aecbf93629f686efd06d6db04e0ac3b69b3c1edfc4e19f8"
+    },
+    "nativeBrowserAcceptance": {
+      "status": "pass",
+      "artifact": "nativeBrowserAcceptance.json",
+      "sha256": "2d8ab384ca9bbcad34fbe6513710783daea1075562a93dad4713d1682945aff8"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "t02-q176",
+  "testId": "test-02",
+  "number": 176,
+  "part": 7,
+  "groupId": "t02-r-p7-11",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "What was Lot A’s first-pass yield?",
+  "promptZh": "A 批的一次通過率為多少？",
+  "options": [
+    {
+      "text": "96 percent",
+      "zh": "百分之九十六",
+      "whyZh": "這是 B 批的 96÷100，不是 A 批。",
+      "id": "A"
+    },
+    {
+      "text": "95 percent",
+      "zh": "百分之九十五",
+      "whyZh": "依題目公式，190÷200×100%=95%。",
+      "id": "B"
+    },
+    {
+      "text": "100 percent",
+      "zh": "百分之一百",
+      "whyZh": "A 批有十台初測未通過，並非全數首次通過。",
+      "id": "C"
+    },
+    {
+      "text": "99 percent",
+      "zh": "百分之九十九",
+      "whyZh": "198÷200 是重工後可接受比例，不能算首次通過率。",
+      "id": "D"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "依題目公式，190÷200×100%=95%。",
+  "evidence": "Lot A: 200 units tested; 190 passed immediately",
+  "vocabulary": [
+    {
+      "term": "first-pass yield",
+      "zh": "一次通過率",
+      "note": "本題明確定義為首次通過數除以受測數。"
+    },
+    {
+      "term": "rework",
+      "zh": "重工",
+      "note": "針對未符合要求的產品重新作業。"
+    }
+  ],
+  "revision": 1
+}

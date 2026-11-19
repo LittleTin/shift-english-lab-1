@@ -1,0 +1,57 @@
+{
+  "id": "t02-q152",
+  "testId": "test-02",
+  "number": 152,
+  "part": 7,
+  "groupId": "t02-r-p7-02",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "What does the offer say about the preliminary test report?",
+  "promptZh": "方案如何說明初步測試報告？",
+  "options": [
+    {
+      "text": "It is available only after an annual contract is signed",
+      "zh": "必須簽年度合約後才可取得",
+      "whyZh": "文件只說可依需求取得，未提年度合約。",
+      "id": "A"
+    },
+    {
+      "text": "It guarantees shipment of commercial orders in five days",
+      "zh": "它保證商業訂單五天出貨",
+      "whyZh": "評估樣品通常在五個工作天內出倉；正式訂單的標準交期是確認訂單後四週，並非報告提供的保證。",
+      "id": "B"
+    },
+    {
+      "text": "It is not the final production specification",
+      "zh": "它不是最終量產規格",
+      "whyZh": "文件明確提醒不可視為最終規格。",
+      "id": "C"
+    },
+    {
+      "text": "It will replace all dimensional drawings permanently",
+      "zh": "它將永久取代尺寸圖",
+      "whyZh": "尺寸圖與報告是不同文件，沒有取代關係。",
+      "id": "D"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "文件明確提醒不可視為最終規格。",
+  "evidence": "the preliminary report should not be treated as a final specification",
+  "vocabulary": [
+    {
+      "term": "preliminary",
+      "zh": "初步的",
+      "note": "尚未完成最終確認或發布。"
+    },
+    {
+      "term": "intended application",
+      "zh": "預定用途",
+      "note": "計畫將零件用於何種設備或情境。"
+    }
+  ],
+  "revision": 1
+}

@@ -1,0 +1,57 @@
+{
+  "id": "t02-q153-r2",
+  "testId": "test-02",
+  "number": 153,
+  "part": 7,
+  "groupId": "t02-r-p7-03",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "What must accompany a temporary process instruction?",
+  "promptZh": "臨時製程指示必須附上什麼？",
+  "options": [
+    {
+      "text": "The name of the incoming shift leader",
+      "zh": "接班組長的姓名",
+      "whyZh": "必須記載的是核准該指示的工程師，不是接班組長。",
+      "id": "A"
+    },
+    {
+      "text": "The next month’s holiday schedule",
+      "zh": "下個月休假表",
+      "whyZh": "假期時程與此指示必填資料無關。",
+      "id": "B"
+    },
+    {
+      "text": "The approving engineer’s name and an expiry time",
+      "zh": "核准工程師姓名及到期時間",
+      "whyZh": "第一段明確列出兩項必要資訊。",
+      "id": "C"
+    },
+    {
+      "text": "The time when the previous shift ended",
+      "zh": "上一班結束的時間",
+      "whyZh": "臨時指示必填的是到期時間，不是班次結束時間。",
+      "id": "D"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "第一段明確列出兩項必要資訊。",
+  "evidence": "must include the name of the engineer who approved it and its expiry time",
+  "vocabulary": [
+    {
+      "term": "handover log",
+      "zh": "交接紀錄",
+      "note": "記載跨班次需要傳遞的作業資訊。"
+    },
+    {
+      "term": "expiry time",
+      "zh": "到期時間",
+      "note": "許可或指示停止有效的時點。"
+    }
+  ],
+  "revision": 2
+}

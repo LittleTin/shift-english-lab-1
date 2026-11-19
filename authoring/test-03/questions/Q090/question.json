@@ -1,0 +1,63 @@
+{
+  "id": "t03-q090-r3",
+  "testId": "test-03",
+  "number": 90,
+  "part": 4,
+  "groupId": "t03-g051-medium-r2",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "business",
+    "paraphrase",
+    "inference"
+  ],
+  "prompt": "Two employees request seats. Who is in the priority group?",
+  "promptZh": "兩名員工申請席位。哪一位屬於優先對象？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The employee arranging the reception display who never visited a school.",
+      "zh": "負責接待區展板但沒參與校訪的員工。",
+      "whyZh": "接待區展覽不是校訪，不能因此獲得優先。"
+    },
+    {
+      "id": "B",
+      "text": "The employee who helped run a repair session at a school.",
+      "zh": "曾到學校協助維修活動的員工。",
+      "whyZh": "這位同仁實際參與校訪，符合優先條件，並不代表保證取得席位。"
+    },
+    {
+      "id": "C",
+      "text": "The employee who placed the most electronics orders.",
+      "zh": "下最多電子產品訂單的員工。",
+      "whyZh": "優先不看訂單或業績。"
+    },
+    {
+      "id": "D",
+      "text": "The employee who plans to volunteer at a future school visit.",
+      "zh": "預計參加日後校訪的員工。",
+      "whyZh": "尚未參加，不符合曾參與校訪的條件。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "六個席位先給參與過校訪的同仁；幫忙準備接待區的人若沒去校訪，不屬於優先對象。",
+  "evidence": "Six seats; priority will go to employees who took part in the school visits.",
+  "vocabulary": [
+    {
+      "term": "hands-on activities",
+      "zh": "動手實作活動",
+      "note": "親自操作而不只是聽講。"
+    },
+    {
+      "term": "get priority",
+      "zh": "有優先權",
+      "note": "本公告指參與過校訪的員工優先獲得席位。"
+    },
+    {
+      "term": "in reception",
+      "zh": "在接待區",
+      "note": "指展示計畫照片的位置，不是典禮場地。"
+    }
+  ],
+  "revision": 3
+}

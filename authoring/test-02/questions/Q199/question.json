@@ -1,0 +1,57 @@
+{
+  "id": "t02-q199-r2",
+  "testId": "test-02",
+  "number": 199,
+  "part": 7,
+  "groupId": "t02-r-p7-15",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "What additional information does the customer request?",
+  "promptZh": "客戶還要求什麼資訊？",
+  "options": [
+    {
+      "text": "A method for distributing future revisions and withdrawing obsolete copies",
+      "zh": "一套發放後續新版並回收失效副本的方法。",
+      "whyZh": "客戶要求一套可重複執行的文件管制方法，而不只是一次移除舊版。",
+      "id": "A"
+    },
+    {
+      "text": "An increase in the number of packing stations",
+      "zh": "增加包裝站數量",
+      "whyZh": "要求的是文件管制方式，非擴充站點。",
+      "id": "B"
+    },
+    {
+      "text": "A list of damaged products from the sample check",
+      "zh": "抽查中發現受損的產品清單。",
+      "whyZh": "抽查沒有發現損傷，回覆也未要求此名單。",
+      "id": "C"
+    },
+    {
+      "text": "A new quotation for all future shipments",
+      "zh": "所有未來出貨的新報價",
+      "whyZh": "客戶回覆只要求說明文件管制流程，未要求重新報價。",
+      "id": "D"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "客戶要求一套可重複執行的文件管制方法，而不只是一次移除舊版。",
+  "evidence": "explain how future revisions will reach every station and how obsolete copies will be withdrawn",
+  "vocabulary": [
+    {
+      "term": "obsolete",
+      "zh": "已失效的；已作廢的",
+      "note": "文件已由新版本取代，不可再當作現行作業依據。"
+    },
+    {
+      "term": "corrective action",
+      "zh": "矯正措施",
+      "note": "針對已發現問題採取的改善行動。"
+    }
+  ],
+  "revision": 2
+}

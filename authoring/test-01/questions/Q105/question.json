@@ -1,0 +1,52 @@
+{
+  "id": "t01-q105-r2",
+  "testId": "test-01",
+  "number": 105,
+  "part": 5,
+  "groupId": null,
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "technology",
+    "grammar"
+  ],
+  "prompt": "The chamber's reference thermometer read 60 °C. Using the same sample and settings for each run, the prototype sensor reported 63 °C three times in a row. Its readings were ____, but they did not agree with the reference.",
+  "promptZh": "測試箱的參考溫度計顯示 60 °C。每次都使用相同樣品和設定，原型感測器連續三次都讀出 63 °C。這些讀值____，但和參考溫度不一致。",
+  "options": [
+    {
+      "id": "A",
+      "text": "accurate",
+      "zh": "準確",
+      "whyZh": "三次都比參考溫度高 3 °C；每次讀值都一樣不代表讀值符合參考值。"
+    },
+    {
+      "id": "B",
+      "text": "variable",
+      "zh": "彼此不同",
+      "whyZh": "三次在相同條件下都讀出 63 °C，沒有忽高忽低。"
+    },
+    {
+      "id": "C",
+      "text": "incomplete",
+      "zh": "不完整",
+      "whyZh": "文中記載三次都取得讀值，沒有說哪一次缺資料。"
+    },
+    {
+      "id": "D",
+      "text": "repeatable",
+      "zh": "可重複取得",
+      "whyZh": "相同樣品和設定下三次都得到 63 °C，顯示結果可重複取得；但和參考溫度 60 °C 不一致，這是另一件事。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "相同樣品和設定下三次都得到 63 °C，顯示結果可重複取得；但和參考溫度 60 °C 不一致，這是另一件事。",
+  "evidence": "The chamber's reference thermometer read 60 °C. Using the same sample and settings for each run, the prototype sensor reported 63 °C three times in a row. Its readings were ____, but they did not agree with the reference.",
+  "vocabulary": [
+    {
+      "term": "repeatable",
+      "zh": "可重複取得",
+      "note": "在相同樣品與設定下能反覆得到相近結果；可重複不等於符合參考值。"
+    }
+  ],
+  "revision": 2
+}

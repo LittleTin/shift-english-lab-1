@@ -1,0 +1,57 @@
+{
+  "id": "t02-q195",
+  "testId": "test-02",
+  "number": 195,
+  "part": 7,
+  "groupId": "t02-r-p7-14",
+  "topic": "technology",
+  "difficulty": "foundation",
+  "tags": [
+    "technology",
+    "reading-comprehension"
+  ],
+  "prompt": "What will production do if inspection is unfinished?",
+  "promptZh": "若進料檢驗尚未完成，生產部會如何？",
+  "options": [
+    {
+      "text": "Declare the new boards accepted without testing",
+      "zh": "未經檢驗就宣布新版電路板驗收合格",
+      "whyZh": "與必須完成進料檢驗的要求矛盾。",
+      "id": "A"
+    },
+    {
+      "text": "Use revision E automatically",
+      "zh": "自動改用 E 版",
+      "whyZh": "回覆說沒有工程書面核准不會改用 E。",
+      "id": "B"
+    },
+    {
+      "text": "Notify planning and wait for instructions",
+      "zh": "通知生管並等待指示",
+      "whyZh": "生產回覆明確採此做法，不自行替代。",
+      "id": "C"
+    },
+    {
+      "text": "Change the delivery date in the supplier’s system",
+      "zh": "修改供應商系統交期",
+      "whyZh": "生產部的回覆沒有說會進入供應商系統修改交期；只說會通知生管並等待指示。",
+      "id": "D"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "生產回覆明確採此做法，不自行替代。",
+  "evidence": "we will inform planning and wait for instructions",
+  "vocabulary": [
+    {
+      "term": "test pad",
+      "zh": "測試點焊墊",
+      "note": "電路板上供量測探針接觸的位置。"
+    },
+    {
+      "term": "engineering change notice",
+      "zh": "工程變更通知",
+      "note": "傳達設計或製造相關修訂與適用範圍的文件。"
+    }
+  ],
+  "revision": 1
+}

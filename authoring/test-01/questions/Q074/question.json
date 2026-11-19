@@ -1,0 +1,58 @@
+{
+  "id": "t01-q074-r2",
+  "testId": "test-01",
+  "number": 74,
+  "part": 4,
+  "groupId": "t01-g046-r2",
+  "topic": "technology",
+  "difficulty": "advanced",
+  "tags": [
+    "technology",
+    "workplace",
+    "inference"
+  ],
+  "prompt": "Which remote team can switch on Monday?",
+  "promptZh": "哪個遠端團隊可以在星期一切換系統？",
+  "options": [
+    {
+      "id": "A",
+      "text": "An approved team that reserved a fifteen-minute Monday loan on Friday.",
+      "zh": "已獲核准，星期五預約星期一借用電腦十五分鐘的團隊。",
+      "whyZh": "已核准且預約及時，但借用時間不到所需的二十分鐘。"
+    },
+    {
+      "id": "B",
+      "text": "An approved team that reserved a twenty-five-minute Monday loan on Friday.",
+      "zh": "已獲核准，星期五預約星期一借用電腦二十五分鐘的團隊。",
+      "whyZh": "已獲核准，星期五已預約借用，二十五分鐘也涵蓋完整的二十分鐘。"
+    },
+    {
+      "id": "C",
+      "text": "A team with no IT approval, a green tracker and a twenty-five-minute Monday loan reserved Friday.",
+      "zh": "尚未獲資訊部門核准，但進度表顯示綠色，且星期五已預約星期一借用電腦二十五分鐘的團隊。",
+      "whyZh": "綠色只表示已收到測試，不能當作資訊部門核准。"
+    },
+    {
+      "id": "D",
+      "text": "An approved team that first reserves its twenty-five-minute Monday loan on Saturday.",
+      "zh": "已獲核准，但到星期六才首次預約星期一借用電腦二十五分鐘的團隊。",
+      "whyZh": "雖然已核准且可借足二十分鐘，但星期六才預約已錯過星期五的期限。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "已獲核准，星期五已預約借用，二十五分鐘也涵蓋完整的二十分鐘。",
+  "evidence": "Wait for IT approval before choosing a slot. Monday teams need a spare computer for the full twenty minutes. Remote teams must reserve loan computers by Friday.",
+  "vocabulary": [
+    {
+      "term": "roll out",
+      "zh": "開始上線、分批推出",
+      "note": "此處指將新系統引進工作流程，不是一次停掉舊服務。"
+    },
+    {
+      "term": "reserve",
+      "zh": "預約",
+      "note": "reserve a loan computer 指先預約一台可借用的電腦。"
+    }
+  ],
+  "revision": 2
+}

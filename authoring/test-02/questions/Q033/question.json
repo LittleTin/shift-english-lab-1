@@ -1,0 +1,57 @@
+{
+  "id": "t02-q033-v2",
+  "testId": "test-02",
+  "number": 33,
+  "part": 3,
+  "groupId": "t02-g032",
+  "topic": "technology",
+  "difficulty": "advanced",
+  "tags": [
+    "technology",
+    "graphic-inference"
+  ],
+  "prompt": "Look at the graphic. Which bench should receive the five samples?",
+  "promptZh": "請看圖表。五件樣品應送到哪個測試工作台？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Bench A",
+      "zh": "A 工作台",
+      "whyZh": "A 工作台做阻燃測試。"
+    },
+    {
+      "id": "B",
+      "text": "Bench B",
+      "zh": "B 工作台",
+      "whyZh": "B 工作台測量接觸電阻，正是尚未確認的項目。"
+    },
+    {
+      "id": "C",
+      "text": "Bench C",
+      "zh": "C 工作台",
+      "whyZh": "C 工作台做溫度循環測試。"
+    },
+    {
+      "id": "D",
+      "text": "Bench D",
+      "zh": "D 工作台",
+      "whyZh": "D 工作台測量外殼尺寸；對話說尺寸已吻合。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "樣品是為了補做接觸電阻測試；圖表中這項測試對應 B 工作台。",
+  "evidence": "“We have not checked the contact resistance yet.” → Contact resistance: Bench B.",
+  "vocabulary": [
+    {
+      "term": "alternative component",
+      "zh": "替代零件",
+      "note": "可供替換的零件；本題仍須先驗證特定性能。"
+    },
+    {
+      "term": "on hold",
+      "zh": "暫緩",
+      "note": "keep an order on hold 指暫不繼續處理訂單。"
+    }
+  ],
+  "revision": 2
+}

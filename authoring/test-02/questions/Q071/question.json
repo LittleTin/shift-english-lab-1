@@ -1,0 +1,59 @@
+{
+  "number": 71,
+  "id": "t02-q071-r2",
+  "groupId": "t02-g045-r2",
+  "revision": 2,
+  "testId": "test-02",
+  "part": 4,
+  "topic": "manufacturing",
+  "difficulty": "advanced",
+  "prompt": "One worker attended but hasn’t signed. The other missed the briefing. How can both contribute now?",
+  "promptZh": "一位員工參加了說明會，卻還沒簽名；另一位錯過說明會。現在怎麼安排，兩人都能立即做事？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Have both workers assemble if they sign the record now.",
+      "zh": "讓兩人現在都簽名，再一起組裝。",
+      "whyZh": "簽名不能取代參加說明會。錯過說明會的人仍不能組裝。"
+    },
+    {
+      "id": "B",
+      "text": "Let the worker who attended start assembly now and send the other to label boxes.",
+      "zh": "讓參加說明會的人立刻組裝，另一人去貼標。",
+      "whyZh": "錯過說明會的人確實可貼標，但參加過的人也要先簽名才能組裝。"
+    },
+    {
+      "id": "C",
+      "text": "Have the worker who attended sign, then assemble; send the other to label boxes.",
+      "zh": "讓參加說明會的人先簽名再組裝，另一人去貼標。",
+      "whyZh": "組裝需要同時參加說明會並簽名；已參加的人補簽後可組裝，錯過的人可在等待下一場時替已封箱的產品貼標。"
+    },
+    {
+      "id": "D",
+      "text": "Have both workers wait until the next briefing before doing any work.",
+      "zh": "兩人都等到下一場說明會後才開始工作。",
+      "whyZh": "已參加的人可以先簽名；錯過的人也可貼標，不必兩人都停止工作。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "組裝需要同時參加說明會並簽名；已參加的人補簽後可組裝，錯過的人可在等待下一場時替已封箱的產品貼標。",
+  "evidence": "To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session.",
+  "vocabulary": [
+    {
+      "term": "briefing",
+      "zh": "工作說明會",
+      "note": "正式作業前的簡短說明或訓練。"
+    },
+    {
+      "term": "attend",
+      "zh": "參加",
+      "note": "此處指參加說明會，不只是事後簽名。"
+    }
+  ],
+  "difficultyWhy": "Combine independent worker attendance states, the additional sign-off gate, and the permissible interim activity. Do not infer approval from attendance alone.",
+  "tags": [
+    "manufacturing",
+    "training",
+    "inference"
+  ]
+}

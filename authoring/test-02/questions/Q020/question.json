@@ -1,0 +1,45 @@
+{
+  "id": "t02-q020",
+  "testId": "test-02",
+  "number": 20,
+  "part": 2,
+  "groupId": "t02-g020",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "question-response"
+  ],
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+  "options": [
+    {
+      "id": "A",
+      "text": "The release button is red.",
+      "zh": "釋放按鈕是紅色的。",
+      "whyZh": "released 在此指採購單發出，不是機械按鈕。"
+    },
+    {
+      "id": "B",
+      "text": "I prefer ordering tea.",
+      "zh": "我比較喜歡點茶。",
+      "whyZh": "purchase order 是採購單，與飲料喜好不同。"
+    },
+    {
+      "id": "C",
+      "text": "It is still waiting for finance approval.",
+      "zh": "它還在等財務部核准。",
+      "whyZh": "尚待核准表示尚未發出，是合理的間接否定回答。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "尚待核准表示尚未發出，是合理的間接否定回答。",
+  "evidence": "Has the purchase order been released?",
+  "vocabulary": [
+    {
+      "term": "purchase order",
+      "zh": "採購單",
+      "note": "買方向供應商發出的訂購文件，常縮寫為 PO。"
+    }
+  ],
+  "revision": 1
+}

@@ -1,0 +1,56 @@
+{
+  "id": "t02-q087-r2",
+  "testId": "test-02",
+  "number": 87,
+  "part": 4,
+  "groupId": "t02-g050",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "support case"
+  ],
+  "prompt": "Which item should staff not request?",
+  "promptZh": "工作人員不應索取哪一項？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Do not request passwords for ordinary cases, but ask for them after an unexpected shutdown.",
+      "zh": "一般案件不要索取密碼，但發生意外關機時可要求提供。",
+      "whyZh": "禁止索取密碼沒有例外；意外關機時可有條件要求的是事件記錄。"
+    },
+    {
+      "id": "B",
+      "text": "Never request event logs, even when an unexpected shutdown log can be exported safely.",
+      "zh": "一律不要索取事件記錄，即使意外關機的記錄可以安全匯出。",
+      "whyZh": "意外關機而且能安全匯出時，應另外要求事件記錄。"
+    },
+    {
+      "id": "C",
+      "text": "Never request passwords; for an unexpected shutdown, request the event log if it can be exported safely.",
+      "zh": "一律不可索取密碼；遇到非預期關機，若事件記錄能安全匯出，就請客戶提供。",
+      "whyZh": "密碼一律不能要求；事件記錄不像密碼，在意外關機且能安全匯出時要另外收集。"
+    },
+    {
+      "id": "D",
+      "text": "Do not request serial numbers if a shutdown log is available.",
+      "zh": "可取得關機記錄時，不要再要求序號。",
+      "whyZh": "裝置序號是每件案件都要有的基本資料，不因另有事件記錄而省略。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "密碼一律不能要求；事件記錄不像密碼，在意外關機且能安全匯出時要另外收集。",
+  "evidence": "Starting next week, all technical support cases must include the device serial number, software version, and steps taken before the problem occurred. | Do not ask customers to send passwords. | For cases involving unexpected shutdowns, also request the event log if it can be exported safely.",
+  "vocabulary": [
+    {
+      "term": "support case",
+      "zh": "支援案件",
+      "note": "用來追蹤使用者問題與處理過程的紀錄。"
+    },
+    {
+      "term": "walkthrough",
+      "zh": "操作導覽",
+      "note": "逐步說明如何使用系統或完成流程。"
+    }
+  ],
+  "revision": 2
+}

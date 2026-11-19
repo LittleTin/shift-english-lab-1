@@ -1,0 +1,57 @@
+{
+  "id": "t02-q155-r2",
+  "testId": "test-02",
+  "number": 155,
+  "part": 7,
+  "groupId": "t02-r-p7-03",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "Why is entering an urgent safety issue in the log insufficient?",
+  "promptZh": "為何只把緊急安全問題寫進紀錄仍不夠？",
+  "options": [
+    {
+      "text": "The incoming shift leader must approve the report first",
+      "zh": "通報前須先取得接班組長核准",
+      "whyZh": "規定是立即向主管通報，沒有等待接班組長核准的步驟。",
+      "id": "A"
+    },
+    {
+      "text": "Only customer complaints may be logged",
+      "zh": "紀錄只能寫客訴",
+      "whyZh": "文件列出未完成訂單、警報及臨時指示等內容。",
+      "id": "B"
+    },
+    {
+      "text": "The report must be entered in a separate safety log",
+      "zh": "通報須寫進另一份安全紀錄",
+      "whyZh": "文件要求立即通報主管，未要求另填安全紀錄。",
+      "id": "C"
+    },
+    {
+      "text": "The supervisor must also be alerted immediately",
+      "zh": "還必須立即通知主管",
+      "whyZh": "緊急安全問題必須立即通知主管，不能只寫在紀錄裡等別人查看。",
+      "id": "D"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "緊急安全問題必須立即通知主管，不能只寫在紀錄裡等別人查看。",
+  "evidence": "Urgent safety issues must be reported immediately to the supervisor.",
+  "vocabulary": [
+    {
+      "term": "handover log",
+      "zh": "交接紀錄",
+      "note": "記載跨班次需要傳遞的作業資訊。"
+    },
+    {
+      "term": "expiry time",
+      "zh": "到期時間",
+      "note": "許可或指示停止有效的時點。"
+    }
+  ],
+  "revision": 2
+}

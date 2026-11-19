@@ -1,0 +1,57 @@
+{
+  "id": "t03-q074-r2",
+  "testId": "test-03",
+  "number": 74,
+  "part": 4,
+  "groupId": "t03-g046-medium-r2",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "daily",
+    "detail"
+  ],
+  "prompt": "Why is the platform on the paper ticket unreliable?",
+  "promptZh": "為什麼不能依照紙票上的月台資訊？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Engineers have repaired the signals ahead of schedule.",
+      "zh": "工程師已提早修好號誌。",
+      "whyZh": "公告只說預期修復，並未表示已完成。"
+    },
+    {
+      "id": "B",
+      "text": "The track closure has left the departure platform undecided.",
+      "zh": "軌道關閉，出發月台尚未確定。",
+      "whyZh": "號誌故障使軌道關閉；目前列車無法進站且新月台未定，不能依紙票前往。"
+    },
+    {
+      "id": "C",
+      "text": "Staff have confirmed that the train will leave from platform six.",
+      "zh": "站方已確認列車將從六號月台出發。",
+      "whyZh": "公告明確要求不要前往紙票上的六號月台。"
+    },
+    {
+      "id": "D",
+      "text": "Passengers must exchange paper tickets for new ones.",
+      "zh": "旅客必須換發紙票。",
+      "whyZh": "指示是看電子看板，並未要求換票。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "號誌故障使軌道關閉；目前列車無法進站且新月台未定，不能依紙票前往。",
+  "evidence": "A signal fault has closed the eastern tracks | we cannot yet confirm a departure platform | Please do not proceed to platform six, which is shown on printed tickets.",
+  "vocabulary": [
+    {
+      "term": "departure platform",
+      "zh": "出發月台",
+      "note": "列車出發的月台；這班車尚未確認。"
+    },
+    {
+      "term": "booked connection",
+      "zh": "已預訂的轉乘",
+      "note": "已事先預訂、銜接本班列車的後續交通。"
+    }
+  ],
+  "revision": 2
+}

@@ -1,0 +1,52 @@
+{
+  "id": "t01-q072-r2",
+  "testId": "test-01",
+  "number": 72,
+  "part": 4,
+  "groupId": "t01-g045",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "location"
+  ],
+  "prompt": "All inspectors are busy. What now?",
+  "promptZh": "檢驗員都在忙。接下來怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Put it on the yellow shelf and return to normal speed.",
+      "zh": "把首件放上黃色層架，恢復正常速度。",
+      "whyZh": "沒有檢驗員時不可恢復運轉。"
+    },
+    {
+      "id": "B",
+      "text": "Leave it on the supervisor's desk and keep the line paused.",
+      "zh": "把首件放在主管桌上，產線保持暫停。",
+      "whyZh": "產線應暫停，但不得把樣品留在主管桌上。"
+    },
+    {
+      "id": "C",
+      "text": "Leave it at the production station and run the next batch normally.",
+      "zh": "把首件留在生產工位，照常生產下一批。",
+      "whyZh": "首件放置位置與未檢驗時的運轉安排都不符合規定。"
+    },
+    {
+      "id": "D",
+      "text": "Put it on the yellow shelf and keep the line paused.",
+      "zh": "把首件放上黃色檢驗層架，產線保持暫停。",
+      "whyZh": "首件應放在黃色檢驗層架；未有檢驗員時，產線仍需暫停並另外聯絡品管窗口。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "首件應放在黃色檢驗層架；未有檢驗員時，產線仍需暫停並另外聯絡品管窗口。",
+  "evidence": "Place the unit on the yellow inspection shelf and enter its serial number in the tablet at the station. If the inspector is unavailable, keep the line paused and contact the quality desk.",
+  "vocabulary": [
+    {
+      "term": "inspection shelf",
+      "zh": "檢驗層架",
+      "note": "擺放待品管檢查的零件。"
+    }
+  ],
+  "revision": 2
+}

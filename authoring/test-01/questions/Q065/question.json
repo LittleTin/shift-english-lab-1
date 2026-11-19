@@ -1,0 +1,52 @@
+{
+  "id": "t01-q065-r2",
+  "testId": "test-01",
+  "number": 65,
+  "part": 3,
+  "groupId": "t01-g043-r2",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "technology",
+    "cause"
+  ],
+  "prompt": "Why suspect a license shortage?",
+  "promptZh": "為什麼懷疑是授權席次不足？",
+  "options": [
+    {
+      "id": "A",
+      "text": "All seats are in use, and two classroom computers may still be using seats from yesterday.",
+      "zh": "所有授權都在使用中，兩台教室電腦可能還占用著昨天的授權。",
+      "whyZh": "錯誤訊息說浮動授權已全數占用，對話又指出昨天課程的電腦可能仍占用授權。這符合席次不足，不表示軟體安裝有問題。"
+    },
+    {
+      "id": "B",
+      "text": "The installer says both training computers need a newer driver.",
+      "zh": "安裝程式說兩部訓練室電腦都需要更新驅動程式。",
+      "whyZh": "沒有提到驅動程式或安裝檢查。"
+    },
+    {
+      "id": "C",
+      "text": "The simulation reports an error after opening the trial version.",
+      "zh": "試用版開啟後，模擬程式回報錯誤。",
+      "whyZh": "試用版尚未開啟，是稍後才提出的備案。"
+    },
+    {
+      "id": "D",
+      "text": "The school network rejects the trainer's login after every class.",
+      "zh": "學校網路在每次下課後都會拒絕講師登入。",
+      "whyZh": "對話說電腦可能還占用授權，沒有登入錯誤。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "訊息說授權全數在使用；教室電腦可能占著昨天下課後沒釋出的授權。兩個線索都指向沒有空位，而非軟體裝錯。",
+  "evidence": "A message says all the floating licenses are in use. Two computers in the training room may still be holding licenses from yesterday's class.",
+  "vocabulary": [
+    {
+      "term": "floating license",
+      "zh": "浮動授權",
+      "note": "由多台電腦共用的授權席次。"
+    }
+  ],
+  "revision": 2
+}

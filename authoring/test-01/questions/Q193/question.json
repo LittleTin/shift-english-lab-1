@@ -1,0 +1,57 @@
+{
+  "id": "t01-q193",
+  "testId": "test-01",
+  "number": 193,
+  "part": 7,
+  "groupId": "t01-r-p7-14",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "technology",
+    "reading-comprehension"
+  ],
+  "prompt": "Why can Nina still submit the quotation on time?",
+  "promptZh": "為何 Nina 仍可準時交件？",
+  "options": [
+    {
+      "text": "The portal remains online and she can obtain the file in advance",
+      "zh": "入口網站仍上線，且她能提前取得檔案",
+      "whyZh": "需結合通知的服務範圍與對話中提前下載的處理。",
+      "id": "A"
+    },
+    {
+      "text": "The deadline has been extended to midnight",
+      "zh": "期限已延到午夜",
+      "whyZh": "對話仍明確說晚上十一點，沒有延長。",
+      "id": "B"
+    },
+    {
+      "text": "VPN access bypasses the outage",
+      "zh": "VPN 可繞過磁碟停機",
+      "whyZh": "通知明確說 VPN 不能讓離線磁碟變可用。",
+      "id": "C"
+    },
+    {
+      "text": "The shared drive will reopen before 11 p.m.",
+      "zh": "共用磁碟會在十一點前恢復",
+      "whyZh": "公告維護至十一點半，晚於截止時間。",
+      "id": "D"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "需結合通知的服務範圍與對話中提前下載的處理。",
+  "evidence": "The portal is not included in the outage. ... Copy the final PDF to your laptop now.",
+  "vocabulary": [
+    {
+      "term": "read-only mode",
+      "zh": "唯讀模式",
+      "note": "可以查看資料，但不能變更資料。"
+    },
+    {
+      "term": "version conflict",
+      "zh": "版本衝突",
+      "note": "不同副本的變更無法直接視為同一最新版本。"
+    }
+  ],
+  "revision": 1
+}

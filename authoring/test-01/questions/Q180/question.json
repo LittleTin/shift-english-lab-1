@@ -1,0 +1,57 @@
+{
+  "id": "t01-q180-r2",
+  "testId": "test-01",
+  "number": 180,
+  "part": 7,
+  "groupId": "t01-r-p7-11",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "Why does the supplier ask about the finish?",
+  "promptZh": "供應商為何再次詢問表面處理？",
+  "options": [
+    {
+      "text": "To explain that revision C was always painted",
+      "zh": "說明 C 版一向有上漆",
+      "whyZh": "文件一明說 C 版未上漆。",
+      "id": "A"
+    },
+    {
+      "text": "To confirm that the samples should remain unpainted, as quoted",
+      "zh": "確認樣品仍按報價維持不上漆",
+      "whyZh": "文件一要求樣品不上漆；供應商也說上漆不在報價內，因此請客戶確認仍維持不上漆。",
+      "id": "B"
+    },
+    {
+      "text": "To refuse all sample quantities below 500",
+      "zh": "拒絕所有少於五百個的樣品量",
+      "whyZh": "供應商已同意本次三十個例外。",
+      "id": "C"
+    },
+    {
+      "text": "To request permission to change the mounting holes",
+      "zh": "要求更改安裝孔的許可",
+      "whyZh": "表面處理與安裝孔變更是不同事項。",
+      "id": "D"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "文件一要求樣品不上漆；供應商也說上漆不在報價內，因此請客戶確認仍維持不上漆。",
+  "evidence": "Painting would add two production days, but it is not included in this quote.",
+  "vocabulary": [
+    {
+      "term": "evaluation sample",
+      "zh": "評估樣品",
+      "note": "供驗證、比較或審查用的少量樣品。"
+    },
+    {
+      "term": "signed drawing",
+      "zh": "簽核圖面",
+      "note": "已經授權人員簽核確認的圖面。"
+    }
+  ],
+  "revision": 2
+}

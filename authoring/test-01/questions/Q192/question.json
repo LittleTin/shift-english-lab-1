@@ -1,0 +1,57 @@
+{
+  "id": "t01-q192",
+  "testId": "test-01",
+  "number": 192,
+  "part": 7,
+  "groupId": "t01-r-p7-14",
+  "topic": "technology",
+  "difficulty": "foundation",
+  "tags": [
+    "technology",
+    "reading-comprehension"
+  ],
+  "prompt": "What should Nina do before the outage?",
+  "promptZh": "Nina 應在停機前做什麼？",
+  "options": [
+    {
+      "text": "Create a new quotation from memory",
+      "zh": "憑記憶重做報價",
+      "whyZh": "Owen 要求保留已核准版本，並未要求重做。",
+      "id": "A"
+    },
+    {
+      "text": "Wait until 11:30 p.m. to retrieve the file",
+      "zh": "等十一點半再取檔",
+      "whyZh": "這會超過晚上十一點的提交期限。",
+      "id": "B"
+    },
+    {
+      "text": "Download the approved PDF to her laptop",
+      "zh": "將核准 PDF 下載到筆電",
+      "whyZh": "這樣磁碟離線後仍可把既有核准檔上傳至正常的入口網站。",
+      "id": "C"
+    },
+    {
+      "text": "Ask the customer to replace its VPN hardware",
+      "zh": "要求客戶更換 VPN 硬體",
+      "whyZh": "問題是內部共用磁碟停機，與客戶硬體無關。",
+      "id": "D"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "這樣磁碟離線後仍可把既有核准檔上傳至正常的入口網站。",
+  "evidence": "Copy the final PDF to your laptop now.",
+  "vocabulary": [
+    {
+      "term": "read-only mode",
+      "zh": "唯讀模式",
+      "note": "可以查看資料，但不能變更資料。"
+    },
+    {
+      "term": "version conflict",
+      "zh": "版本衝突",
+      "note": "不同副本的變更無法直接視為同一最新版本。"
+    }
+  ],
+  "revision": 1
+}

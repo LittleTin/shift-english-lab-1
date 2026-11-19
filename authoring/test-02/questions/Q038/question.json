@@ -1,0 +1,56 @@
+{
+  "id": "t02-q038",
+  "testId": "test-02",
+  "number": 38,
+  "part": 3,
+  "groupId": "t02-g034",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "pilot build"
+  ],
+  "prompt": "Why must the assembly schedule change?",
+  "promptZh": "為何必須調整組裝排程？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The housing inspection failed.",
+      "zh": "外殼檢驗失敗。",
+      "whyZh": "外殼檢驗尚待星期一進行，沒有失敗結果。"
+    },
+    {
+      "id": "B",
+      "text": "The customer doubled the order.",
+      "zh": "客戶把訂單加倍。",
+      "whyZh": "只提原定兩百台，沒有加倍訂單。"
+    },
+    {
+      "id": "C",
+      "text": "Materials were sent to the wrong factory.",
+      "zh": "物料寄錯工廠。",
+      "whyZh": "未提寄錯；物料交期維持不變。"
+    },
+    {
+      "id": "D",
+      "text": "A fixture will not be ready in time.",
+      "zh": "治具無法及時備妥。",
+      "whyZh": "原定星期一組裝，但治具星期二才完成。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "原定星期一組裝，但治具星期二才完成。",
+  "evidence": "the new fixture will not be ready until Tuesday",
+  "vocabulary": [
+    {
+      "term": "pilot build",
+      "zh": "試產",
+      "note": "正式量產前的小批次製作，用於驗證設計與製程準備。"
+    },
+    {
+      "term": "fixture",
+      "zh": "治具",
+      "note": "本題用於組裝的定位或輔助工具。"
+    }
+  ],
+  "revision": 1
+}

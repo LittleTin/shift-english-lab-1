@@ -1,0 +1,56 @@
+{
+  "id": "t02-q048-r2",
+  "testId": "test-02",
+  "number": 48,
+  "part": 3,
+  "groupId": "t02-g037",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "read-only access"
+  ],
+  "prompt": "What does the woman suggest may be the cause?",
+  "promptZh": "女方認為可能的原因是什麼？",
+  "options": [
+    {
+      "text": "The server is working, but his account can open files without adding them.",
+      "zh": "伺服器正常，但他的帳號可查看檔案、不能新增檔案。",
+      "whyZh": "他開得了資料夾卻不能上傳，且伺服器運作中，符合只有讀取權限。",
+      "id": "A"
+    },
+    {
+      "text": "His account can add files, but the server outage prevents it for now.",
+      "zh": "他的帳號可以新增檔案，但伺服器停機暫時擋住上傳。",
+      "whyZh": "女方明說伺服器正常，沒有說帳號已具備寫入權限。",
+      "id": "B"
+    },
+    {
+      "text": "His account cannot view the folder, but it can submit the report.",
+      "zh": "他的帳號不能查看資料夾，但可以提交報告。",
+      "whyZh": "實際症狀相反：可以開啟資料夾，卻不能上傳。",
+      "id": "C"
+    },
+    {
+      "text": "The server is online, but the folder already contains the approved report.",
+      "zh": "伺服器正常，但資料夾裡已經有核准過的那份報告。",
+      "whyZh": "對話只提到經理請他加入報告，沒有說報告已存在。",
+      "id": "D"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "他開得了資料夾卻不能上傳，且伺服器運作中，符合只有讀取權限。",
+  "evidence": "I can open the project folder, but I cannot upload the validation report. Is the server down? ... The server is running. Your account may have read-only access.",
+  "vocabulary": [
+    {
+      "term": "read-only access",
+      "zh": "唯讀權限",
+      "note": "可讀取但不能修改或新增內容的權限。"
+    },
+    {
+      "term": "write access",
+      "zh": "寫入權限",
+      "note": "允許新增或修改資料的權限。"
+    }
+  ],
+  "revision": 2
+}

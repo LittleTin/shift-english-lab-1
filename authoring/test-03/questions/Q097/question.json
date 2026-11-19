@@ -1,0 +1,53 @@
+{
+  "id": "t03-q097-r2",
+  "testId": "test-03",
+  "number": 97,
+  "part": 4,
+  "groupId": "t03-g053-r2",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "business",
+    "restaurant",
+    "context"
+  ],
+  "prompt": "The office is paying for food only. Which billing request meets the office’s requirement and can be fulfilled by the restaurant?",
+  "promptZh": "公司只支付餐點費用。哪項帳單安排既符合公司的要求，也是餐廳能做到的？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Send one bill for all the food to the office.",
+      "zh": "把所有餐點併成一張帳單寄給公司。",
+      "whyZh": "餐廳能按餐點和飲料分開結帳，因此可把全體餐點列在同一張帳單上寄給公司，不包含飲料。"
+    },
+    {
+      "id": "B",
+      "text": "Send a separate food bill for each guest to the office.",
+      "zh": "每位來賓的餐點各開一張帳單寄給公司。",
+      "whyZh": "餐廳能依費用類別分帳，但不能替每位來賓分開開帳單。"
+    },
+    {
+      "id": "C",
+      "text": "Combine food and drinks on a single bill for the office.",
+      "zh": "把餐點與飲料列在同一張帳單寄給公司。",
+      "whyZh": "即便能合併，公司也只支付餐點，合併會讓帳單包含公司不負擔的費用。"
+    },
+    {
+      "id": "D",
+      "text": "Send the drinks bill to the office and let guests pay for food individually.",
+      "zh": "把飲料帳單寄給公司，並讓來賓各自支付餐點。",
+      "whyZh": "顛倒了公司負擔的費用，而且餐廳不能按人分成多張帳單。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "餐廳能按餐點和飲料分開結帳，因此可把全體餐點列在同一張帳單上寄給公司，不包含飲料。",
+  "evidence": "we can put food on one bill and drinks on another, but we can’t bill guests individually. Tell me which of those two bills should go to your office.",
+  "vocabulary": [
+    {
+      "term": "bill someone individually",
+      "zh": "個別向某人開帳單",
+      "note": "bill 可當動詞，表示向某人開帳單；這裡區分按費用種類與按來賓分帳。"
+    }
+  ],
+  "revision": 2
+}

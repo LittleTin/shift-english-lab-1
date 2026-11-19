@@ -1,0 +1,52 @@
+{
+  "id": "t02-q075-r2",
+  "testId": "test-02",
+  "number": 75,
+  "part": 4,
+  "groupId": "t02-g046-r2",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "workplace",
+    "listening-inference"
+  ],
+  "prompt": "How can an engineer use a drawing during the outage?",
+  "promptZh": "工程師在停機期間要怎麼使用圖面？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Leave the shared drawing open.",
+      "zh": "讓共用圖面維持開啟。",
+      "whyZh": "共用檔案八點四十五分前就要關閉。"
+    },
+    {
+      "id": "B",
+      "text": "Download the drawing from the support website.",
+      "zh": "從客服網站下載圖面。",
+      "whyZh": "網站雖仍然可用，但沒有提供工程檔案的依據。"
+    },
+    {
+      "id": "C",
+      "text": "Make a local copy before the file deadline.",
+      "zh": "在關檔期限前把圖面存一份到工作電腦。",
+      "whyZh": "停機時無法從伺服器讀取；要事先存到本機，再按時關閉共用檔案。"
+    },
+    {
+      "id": "D",
+      "text": "Reconnect at nine and open the shared drawing.",
+      "zh": "九點重新連線並打開共用圖面。",
+      "whyZh": "九點開始停機；沒收到恢復通知前不要重連。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "停機時無法從伺服器讀取；要事先存到本機，再按時關閉共用檔案。",
+  "evidence": "Saturday’s file server shutdown starts at nine. Close shared files by eight forty-five for the final backup. | Need a drawing during the outage? Save it locally first. The support site stays online. | Reconnect after the all-clear. Missing just one folder? Tell the help desk its name. Don’t recreate it.",
+  "vocabulary": [
+    {
+      "term": "local copy",
+      "zh": "本機副本",
+      "note": "存放在自己的工作電腦，不需連到檔案伺服器即可讀取。"
+    }
+  ],
+  "revision": 2
+}

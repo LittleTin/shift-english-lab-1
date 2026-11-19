@@ -1,0 +1,52 @@
+{
+  "id": "t01-q035",
+  "testId": "test-01",
+  "number": 35,
+  "part": 3,
+  "groupId": "t01-g033",
+  "topic": "technology",
+  "difficulty": "foundation",
+  "tags": [
+    "technology",
+    "problem"
+  ],
+  "prompt": "What problem does the man report?",
+  "promptZh": "男子反映什麼問題？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The camera disconnects when recording starts.",
+      "zh": "開始錄影時，相機會斷線。",
+      "whyZh": "第一句指出從預覽切換到錄影時 loses its connection；問題是連線中斷。"
+    },
+    {
+      "id": "B",
+      "text": "All workstations have lost power.",
+      "zh": "所有工作站都斷電了。",
+      "whyZh": "最新工作站仍能正常錄影，並非全體斷電。"
+    },
+    {
+      "id": "C",
+      "text": "The saved profiles have disappeared.",
+      "zh": "儲存的設定檔已消失。",
+      "whyZh": "男子只是詢問更新會不會清除設定，沒有說已經遺失。"
+    },
+    {
+      "id": "D",
+      "text": "The download link is missing.",
+      "zh": "下載連結不見了。",
+      "whyZh": "女子說連結已放入工單，並沒有連結遺失的問題。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "第一句指出從預覽切換到錄影時 loses its connection；問題是連線中斷。",
+  "evidence": "The inspection camera loses its connection whenever we switch from preview mode to recording.",
+  "vocabulary": [
+    {
+      "term": "preview mode",
+      "zh": "預覽模式",
+      "note": "在正式錄製前即時查看影像的模式。"
+    }
+  ],
+  "revision": 1
+}

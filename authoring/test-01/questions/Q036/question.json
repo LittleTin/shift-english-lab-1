@@ -1,0 +1,52 @@
+{
+  "id": "t01-q036",
+  "testId": "test-01",
+  "number": 36,
+  "part": 3,
+  "groupId": "t01-g033",
+  "topic": "technology",
+  "difficulty": "foundation",
+  "tags": [
+    "technology",
+    "detail"
+  ],
+  "prompt": "Which computers experience the problem?",
+  "promptZh": "哪些電腦發生這個問題？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The ones using an older driver.",
+      "zh": "使用較舊驅動程式的電腦。",
+      "whyZh": "男子限定問題只出現在 running the older driver 的兩台電腦，最新工作站正常。"
+    },
+    {
+      "id": "B",
+      "text": "Only the newest workstation.",
+      "zh": "只有最新的工作站。",
+      "whyZh": "男子明確說最新工作站錄影正常。"
+    },
+    {
+      "id": "C",
+      "text": "Every computer in the laboratory.",
+      "zh": "實驗室裡所有電腦。",
+      "whyZh": "Only with the two computers 排除所有電腦都故障的說法。"
+    },
+    {
+      "id": "D",
+      "text": "Computers without a capture application.",
+      "zh": "未安裝擷取程式的電腦。",
+      "whyZh": "問題發生於切換預覽與錄影，對話沒有說未安裝擷取程式。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "男子限定問題只出現在 running the older driver 的兩台電腦，最新工作站正常。",
+  "evidence": "Only with the two computers running the older driver.",
+  "vocabulary": [
+    {
+      "term": "driver",
+      "zh": "驅動程式",
+      "note": "使作業系統與硬體互動的軟體。"
+    }
+  ],
+  "revision": 1
+}

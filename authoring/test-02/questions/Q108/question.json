@@ -1,0 +1,53 @@
+{
+  "id": "t02-q108-r2",
+  "testId": "test-02",
+  "number": 108,
+  "part": 5,
+  "groupId": null,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "daily",
+    "sentence-completion",
+    "context"
+  ],
+  "prompt": "The library charges for reservations canceled on the day of a workshop, but there is no charge when the library itself changes the time. Your reservation was moved by the library. You can cancel it without a fee ____ you do so on the day of the workshop.",
+  "promptZh": "工作坊當天取消預約通常要付費，但若是由圖書館自行更改時間，就不收費。圖書館已更改你的預約時間，____你在工作坊當天取消，也不需付費。",
+  "options": [
+    {
+      "id": "A",
+      "text": "only if",
+      "zh": "只有在……才",
+      "whyZh": "當天取消並非免付費的必要條件；免收費是因為時間由圖書館更改。"
+    },
+    {
+      "id": "B",
+      "text": "as soon as",
+      "zh": "一……就",
+      "whyZh": "這裡不是說取消一發生就觸發某個新的安排，而是說連平常應收費的時點也適用例外。"
+    },
+    {
+      "id": "C",
+      "text": "instead of",
+      "zh": "而不是",
+      "whyZh": "此處並不是選擇另一種行動來取代當天取消；當天取消本身就是例外涵蓋的情況。"
+    },
+    {
+      "id": "D",
+      "text": "even if",
+      "zh": "即使",
+      "whyZh": "同日取消通常要付費，但這次是圖書館改期，因此即使當天取消也不收費。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "同日取消通常要付費，但這次是圖書館改期，因此即使當天取消也不收費。",
+  "evidence": "The library charges for reservations canceled on the day of a workshop, but there is no charge when the library itself changes the time. Your reservation was moved by the library. You can cancel it without a fee ____ you do so on the day of the workshop.",
+  "vocabulary": [
+    {
+      "term": "reservation",
+      "zh": "預約",
+      "note": "在活動情境中指事先保留的名額，不限於餐廳訂位或住宿訂房。"
+    }
+  ],
+  "revision": 2
+}

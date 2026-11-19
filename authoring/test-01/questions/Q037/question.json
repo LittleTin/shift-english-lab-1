@@ -1,0 +1,52 @@
+{
+  "id": "t01-q037",
+  "testId": "test-01",
+  "number": 37,
+  "part": 3,
+  "groupId": "t01-g033",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "technology",
+    "sequence"
+  ],
+  "prompt": "What should the man do before installing the update?",
+  "promptZh": "安裝更新前，男子應該先做什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Close the capture application.",
+      "zh": "關閉影像擷取程式。",
+      "whyZh": "女子說更新會保留設定檔，但要求 close the capture application first，明確指出更新前步驟。"
+    },
+    {
+      "id": "B",
+      "text": "Delete all camera profiles.",
+      "zh": "刪除所有相機設定檔。",
+      "whyZh": "女子說設定會保留，並未要求刪除。"
+    },
+    {
+      "id": "C",
+      "text": "Replace the inspection camera.",
+      "zh": "更換檢測相機。",
+      "whyZh": "目前建議是先更新驅動程式，不是換硬體。"
+    },
+    {
+      "id": "D",
+      "text": "Change the firmware first.",
+      "zh": "先更換韌體。",
+      "whyZh": "女子要求在更動韌體之前先安裝驅動程式，因此順序相反。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "女子說更新會保留設定檔，但要求 close the capture application first，明確指出更新前步驟。",
+  "evidence": "close the capture application first.",
+  "vocabulary": [
+    {
+      "term": "capture application",
+      "zh": "影像擷取程式",
+      "note": "控制相機取像或錄影的軟體。"
+    }
+  ],
+  "revision": 1
+}

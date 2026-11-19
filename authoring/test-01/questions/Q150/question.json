@@ -1,0 +1,57 @@
+{
+  "id": "t01-q150-r2",
+  "testId": "test-01",
+  "number": 150,
+  "part": 7,
+  "groupId": "t01-r-p7-02-r2",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "technology",
+    "reading-comprehension"
+  ],
+  "prompt": "A visitor wants to capture a useful comparison before resetting the activity. Which action should the visitor take?",
+  "promptZh": "參觀者想先取得有助於比較的讀數，再重設裝置。應該怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Press the silver button and write down the two displayed readings.",
+      "zh": "按銀色按鈕，再記下兩個顯示器的讀數。",
+      "whyZh": "銀色按鈕會把參考時間改成船上的當地時間，因而失去比較依據。"
+    },
+    {
+      "id": "B",
+      "text": "Press the blue button while one display shows the reference time and the other shows the ship’s local time.",
+      "zh": "在一個顯示器顯示參考時間、另一個顯示船上當地時間時，按藍色按鈕。",
+      "whyZh": "藍色按鈕會在尚未重設時，同時記錄兩個所需的讀數。"
+    },
+    {
+      "id": "C",
+      "text": "Copy the ship’s local reading now and the reference reading a few minutes later.",
+      "zh": "先抄下船上的當地時間，幾分鐘後再抄下參考時間。",
+      "whyZh": "兩個時間必須是同一時刻的讀數，不能隔幾分鐘才記錄另一個。"
+    },
+    {
+      "id": "D",
+      "text": "Press the blue button only after the silver button has made the two times the same.",
+      "zh": "先按銀色按鈕讓兩個時間一致，再按藍色按鈕。",
+      "whyZh": "同時記錄還不夠，必須有一個顯示器仍顯示參考時間，兩個讀數才可比較。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "必須同時記錄參考地點與船所在位置的時間。藍色按鈕能一次記下這兩個讀數；銀色按鈕則會把參考地點的時間改掉。",
+  "evidence": "Paragraph 1: compare different reference places at same moment + blue logs both, silver overwrites the reference output.",
+  "vocabulary": [
+    {
+      "term": "reading",
+      "zh": "讀數",
+      "note": "儀器在某一時刻顯示的值。"
+    },
+    {
+      "term": "reference place",
+      "zh": "參考地點",
+      "note": "位置已知、在比較時作為基準的地點。"
+    }
+  ],
+  "revision": 2
+}

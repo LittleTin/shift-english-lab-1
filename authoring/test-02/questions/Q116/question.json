@@ -1,0 +1,52 @@
+{
+  "id": "t02-q116-r2",
+  "testId": "test-02",
+  "number": 116,
+  "part": 5,
+  "groupId": null,
+  "topic": "manufacturing",
+  "tags": [
+    "manufacturing",
+    "context"
+  ],
+  "vocabulary": [
+    {
+      "term": "off-site archive",
+      "zh": "外部檔案庫",
+      "note": "off-site 表示不在目前廠區，不代表已銷毀或不再保留紀錄。"
+    }
+  ],
+  "difficulty": "intermediate",
+  "prompt": "The factory moves paper inspection records to the off-site archive only after the scans have been verified and all corrective actions for that batch are closed. Batch 18’s scans have been verified. The inspector closed a labeling issue yesterday, but a separate measurement issue for Batch 18 is still open. The factory should ____.",
+  "promptZh": "工廠只有在掃描檔已驗證，且該批次所有矯正措施都已結案時，才會把紙本檢驗紀錄移到外部檔案庫。第 18 批的掃描檔已驗證。檢驗員昨天結案了一項標籤問題，但第 18 批另一項量測問題仍未結案。工廠應該____。",
+  "options": [
+    {
+      "id": "A",
+      "text": "move the paper records to the archive now that one issue is closed",
+      "zh": "其中一項問題已結案，現在就把紙本移到外部檔案庫",
+      "whyZh": "仍有量測問題未結案；規定要求該批全部矯正措施結案。"
+    },
+    {
+      "id": "B",
+      "text": "scan the paper records again to resolve the measurement issue",
+      "zh": "重新掃描紙本，以結束量測問題",
+      "whyZh": "掃描檔已驗證；重新掃描不能視為結清量測問題。"
+    },
+    {
+      "id": "C",
+      "text": "keep the paper records on site until the measurement issue is closed",
+      "zh": "在量測問題結案前，繼續將紙本留在廠內",
+      "whyZh": "掃描檔已驗證，但量測問題仍未結案；兩項要求都滿足才能移到外部檔案庫。"
+    },
+    {
+      "id": "D",
+      "text": "send the records to the archive because the scans passed verification",
+      "zh": "因掃描檔已通過驗證，把紙本送到外部檔案庫",
+      "whyZh": "驗證只是移檔的其中一項條件；目前仍有矯正措施未結案。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "掃描檔已驗證，但量測問題仍未結案；兩項要求都滿足才能移到外部檔案庫。",
+  "evidence": "The factory moves paper inspection records to the off-site archive only after the scans have been verified and all corrective actions for that batch are closed. Batch 18’s scans have been verified. The inspector closed a labeling issue yesterday, but a separate measurement issue for Batch 18 is still open. The factory should ____.",
+  "revision": 2
+}

@@ -1,0 +1,57 @@
+{
+  "id": "t02-q189-r2",
+  "testId": "test-02",
+  "number": 189,
+  "part": 7,
+  "groupId": "t02-r-p7-13",
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "business",
+    "reading-comprehension"
+  ],
+  "prompt": "What is the correct balance after the deposit is deducted?",
+  "promptZh": "扣除訂金後正確應付餘額為多少？",
+  "options": [
+    {
+      "text": "NT$6,900",
+      "zh": "新臺幣六千九百元",
+      "whyZh": "這相當於連場租也打折，但場租不可折扣。",
+      "id": "A"
+    },
+    {
+      "text": "NT$7,100",
+      "zh": "新臺幣七千一百元",
+      "whyZh": "訓練費8,100＋場租2,000－訂金3,000＝7,100。",
+      "id": "B"
+    },
+    {
+      "text": "NT$10,100",
+      "zh": "新臺幣一萬零一百元",
+      "whyZh": "這是折扣後總費用，尚未扣掉已付三千訂金。",
+      "id": "C"
+    },
+    {
+      "text": "NT$8,000",
+      "zh": "新臺幣八千元",
+      "whyZh": "此為漏掉900元折扣的錯誤帳單餘額。",
+      "id": "D"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "訓練費8,100＋場租2,000－訂金3,000＝7,100。",
+  "evidence": "12 × NT$750 = NT$9,000 ... a 10% discount on training fees ... Room rental is a fixed NT$2,000 ... A deposit of NT$3,000 is deducted",
+  "vocabulary": [
+    {
+      "term": "balance due",
+      "zh": "應付餘額",
+      "note": "扣除已付金額後仍需支付的款項。"
+    },
+    {
+      "term": "fixed charge",
+      "zh": "固定費用",
+      "note": "不因本題參加人數而改變的費用。"
+    }
+  ],
+  "revision": 2
+}

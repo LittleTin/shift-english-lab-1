@@ -1,0 +1,56 @@
+{
+  "id": "t02-q078-r2",
+  "testId": "test-02",
+  "number": 78,
+  "part": 4,
+  "groupId": "t02-g047",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "incoming inspection"
+  ],
+  "prompt": "Which material may still be used?",
+  "promptZh": "哪批材料仍可使用？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Any individual cover without visible scratches, even from the held batch.",
+      "zh": "任何沒有明顯刮痕的外蓋，即使來自已停用的批次也可以。",
+      "whyZh": "管理的是整個受影響批次，不是只擋肉眼看得出刮痕的外蓋。"
+    },
+    {
+      "id": "B",
+      "text": "Covers from the earlier cleared batch; a clean-looking cover from the held lot still stays out.",
+      "zh": "可用先前通過檢驗的那批外蓋；已停用批次的外蓋即使看來沒傷也不能用。",
+      "whyZh": "前一批經檢驗通過可用；受影響的批次即使單件外觀無傷也不能投產。"
+    },
+    {
+      "id": "C",
+      "text": "Covers from the current batch once Purchasing schedules replacement delivery.",
+      "zh": "採購排定替換品交貨時程後，就可使用這次到貨的外蓋。",
+      "whyZh": "排定替換品交貨並不會解禁原本被停用的批次。"
+    },
+    {
+      "id": "D",
+      "text": "Both batches, provided the supplier submits a report by Tuesday.",
+      "zh": "只要供應商週二前提交報告，兩批都能用。",
+      "whyZh": "週二是供應商改善報告期限，不是兩批共同的放行期限。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "前一批經檢驗通過可用；受影響的批次即使單件外觀無傷也不能投產。",
+  "evidence": "The affected batch has been placed on hold and will not enter production. | The earlier batch passed inspection and can still be used.",
+  "vocabulary": [
+    {
+      "term": "incoming inspection",
+      "zh": "進料檢驗",
+      "note": "對到貨材料或零件進行的檢查。"
+    },
+    {
+      "term": "corrective action",
+      "zh": "矯正措施",
+      "note": "針對已發生問題的原因採取措施；本題要求供應商提交報告。"
+    }
+  ],
+  "revision": 2
+}

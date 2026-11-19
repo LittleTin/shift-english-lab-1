@@ -1,0 +1,52 @@
+{
+  "id": "t02-q120-r2",
+  "testId": "test-02",
+  "number": 120,
+  "part": 5,
+  "groupId": null,
+  "topic": "business",
+  "tags": [
+    "business",
+    "context"
+  ],
+  "vocabulary": [
+    {
+      "term": "provisional",
+      "zh": "暫定的；尚待確認的",
+      "note": "可先供參考，但不等於已正式確認。"
+    }
+  ],
+  "difficulty": "intermediate",
+  "prompt": "Suppliers without a confirmed delivery date can send estimates that are labelled provisional. Planning accepts estimates regardless of whether they are confirmed, but only confirmed dates may appear on the final purchase order. We can use the supplier’s estimate for planning, ____ it cannot yet go on the purchase order.",
+  "promptZh": "供應商尚未確認交貨日期時，可以送交標註為暫定的預估日期。規劃時不論日期是否已確認都可參考，但正式採購單只能填已確認的日期。我們可以用供應商的預估日期來規劃，____ 它目前還不能填入採購單。",
+  "options": [
+    {
+      "id": "A",
+      "text": "so",
+      "zh": "所以",
+      "whyZh": "可供規劃並不是不得填入採購單的原因；能否填入取決於確認狀態。"
+    },
+    {
+      "id": "B",
+      "text": "unless",
+      "zh": "除非",
+      "whyZh": "unless 把不得填入採購單誤當成不可用於規劃的例外；前文已說未確認也可供規劃。"
+    },
+    {
+      "id": "C",
+      "text": "given that",
+      "zh": "鑑於",
+      "whyZh": "能否供規劃與是否可以填採購單各有規則；規劃並不以排除採購單為前提。"
+    },
+    {
+      "id": "D",
+      "text": "even though",
+      "zh": "儘管",
+      "whyZh": "even though 對比同一個預估日期可用於內部規劃，卻尚未符合填入正式採購單的條件。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "even though 對比同一個預估日期可用於內部規劃，卻尚未符合填入正式採購單的條件。",
+  "evidence": "Suppliers without a confirmed delivery date can send estimates that are labelled provisional. Planning accepts estimates regardless of whether they are confirmed, but only confirmed dates may appear on the final purchase order. We can use the supplier’s estimate for planning, ____ it cannot yet go on the purchase order.",
+  "revision": 2
+}

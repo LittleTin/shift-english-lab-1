@@ -1,0 +1,51 @@
+{
+  "id": "t01-q010",
+  "testId": "test-01",
+  "number": 10,
+  "part": 2,
+  "groupId": "t01-g010",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "choice_question"
+  ],
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽題目，選出最合適的回應。",
+  "options": [
+    {
+      "id": "A",
+      "text": "They shipped it by air.",
+      "zh": "他們用空運寄送。",
+      "whyZh": "運輸方式沒有回答檢驗要在哪一天進行。"
+    },
+    {
+      "id": "B",
+      "text": "Let's do it before the loading dock closes today.",
+      "zh": "我們今天在卸貨碼頭關閉前檢查吧。",
+      "whyZh": "這是今天或明天的選擇問句；回應選擇今天，並提出具體時限。"
+    },
+    {
+      "id": "C",
+      "text": "Each carton has a label.",
+      "zh": "每個紙箱都有標籤。",
+      "whyZh": "紙箱標示狀態無法回應日期選擇。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "這是今天或明天的選擇問句；回應選擇今天，並提出具體時限。",
+  "evidence": "Should we inspect this shipment today or tomorrow?",
+  "vocabulary": [
+    {
+      "term": "inspect",
+      "zh": "檢查；檢驗",
+      "note": "檢視貨物是否符合要求。"
+    },
+    {
+      "term": "loading dock",
+      "zh": "裝卸貨碼頭",
+      "note": "倉庫供貨車裝卸貨的區域。"
+    }
+  ],
+  "revision": 1
+}

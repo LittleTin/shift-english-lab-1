@@ -1,0 +1,52 @@
+{
+  "id": "t01-q049-r3",
+  "testId": "test-01",
+  "number": 49,
+  "part": 3,
+  "groupId": "t01-g037-r2",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "daily",
+    "detail"
+  ],
+  "prompt": "Which luggage plan avoids a charge?",
+  "promptZh": "哪項行李安排不需付費？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Leave it in his room after checkout and collect it at five.",
+      "zh": "退房後把行李留在客房，傍晚五點取回。",
+      "whyZh": "旅館提供的退房後方案是寄放室，不是把行李留在客房。"
+    },
+    {
+      "id": "B",
+      "text": "Use the luggage room by reception and collect it at five.",
+      "zh": "放在櫃檯旁的行李室，五點領取。",
+      "whyZh": "櫃檯旁有行李寄放室，退房後可以寄放；傍晚五點在免費期限六點前。"
+    },
+    {
+      "id": "C",
+      "text": "Use the luggage room by reception and collect it at seven.",
+      "zh": "放在櫃檯旁的行李室，七點領取。",
+      "whyZh": "七點已超過免費期限。"
+    },
+    {
+      "id": "D",
+      "text": "Put it in the key locker and collect it at five.",
+      "zh": "放進鑰匙櫃，傍晚五點取回。",
+      "whyZh": "鑰匙櫃不是行李寄放室。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "退房後可把行李放在櫃檯旁的行李室，晚上六點前免費，五點領取符合兩項條件。",
+  "evidence": "The luggage room is beside reception, and there is no charge until six in the evening.",
+  "vocabulary": [
+    {
+      "term": "luggage room",
+      "zh": "行李寄放室",
+      "note": "旅客退房後可暫時寄放行李。"
+    }
+  ],
+  "revision": 3
+}

@@ -1,0 +1,52 @@
+{
+  "id": "t01-q041-r2",
+  "testId": "test-01",
+  "number": 41,
+  "part": 3,
+  "groupId": "t01-g035-r2",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "cause"
+  ],
+  "prompt": "What contributed to the sample damage?",
+  "promptZh": "什麼因素造成樣品受損？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The shipping labels were unreadable.",
+      "zh": "出貨標籤無法辨識。",
+      "whyZh": "女子說標籤是正確的，標籤不是產品移位的原因。"
+    },
+    {
+      "id": "B",
+      "text": "The old inserts left too much space.",
+      "zh": "舊內襯留下太多空間。",
+      "whyZh": "舊版內襯在小型機種周圍留有空隙，產品因而在箱內移位；這與外箱完好並不衝突。"
+    },
+    {
+      "id": "C",
+      "text": "The new inserts were too heavy.",
+      "zh": "新內襯太重。",
+      "whyZh": "包裝站當時使用舊版，沒有使用新內襯的重量問題。"
+    },
+    {
+      "id": "D",
+      "text": "The cartons were left outdoors.",
+      "zh": "紙箱被放在戶外。",
+      "whyZh": "對話沒有提到戶外存放；損傷出現在跌落測試。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "舊版內襯在小型機種周圍留有空隙，產品因而在箱內移位；這與外箱完好並不衝突。",
+  "evidence": "The packing station still used the old inserts. They leave a gap around the smaller model.",
+  "vocabulary": [
+    {
+      "term": "foam insert",
+      "zh": "泡棉內襯",
+      "note": "填補包裝內部空間、固定及保護產品的材料。"
+    }
+  ],
+  "revision": 2
+}

@@ -1,0 +1,52 @@
+{
+  "id": "t01-q067-r2",
+  "testId": "test-01",
+  "number": 67,
+  "part": 3,
+  "groupId": "t01-g043-r2",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "technology",
+    "next_action"
+  ],
+  "prompt": "What if no seat opens?",
+  "promptZh": "若沒有空出的授權席次，該怎麼辦？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Use the trial because it accepts the same model size.",
+      "zh": "使用試用版，因為它支援同樣大小的模型。",
+      "whyZh": "女方明說試用版不支援該模型大小。"
+    },
+    {
+      "id": "B",
+      "text": "Ask the trainer to open another copy of the current model.",
+      "zh": "請講師再開啟一份目前的模型。",
+      "whyZh": "這不能解決沒有授權席次的問題。"
+    },
+    {
+      "id": "C",
+      "text": "Wait for a message instead of running his model in the trial.",
+      "zh": "等通知，不要用試用版執行目前的模型。",
+      "whyZh": "試用版不支援目前的模型大小；女方會處理授權問題並在有席次時通知，故應等通知。"
+    },
+    {
+      "id": "D",
+      "text": "Change the model size himself and tell the woman to stop looking.",
+      "zh": "自行改小模型，請女方不用再處理。",
+      "whyZh": "沒有要求他改動模型；女方已表示會處理並通知。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "試用版不支援目前的模型大小；女方會處理授權問題並在有席次時通知，故應等通知。",
+  "evidence": "It doesn't support our model size. Let me resolve the license issue, and I'll message you when a seat becomes available.",
+  "vocabulary": [
+    {
+      "term": "trial version",
+      "zh": "試用版",
+      "note": "可試用但功能或容量可能受限的版本。"
+    }
+  ],
+  "revision": 2
+}

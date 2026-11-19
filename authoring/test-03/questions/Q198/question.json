@@ -1,0 +1,53 @@
+{
+  "id": "t03-q198",
+  "testId": "test-03",
+  "number": 198,
+  "part": 7,
+  "groupId": "t03-g073",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "technology",
+    "reading-comprehension",
+    "triple"
+  ],
+  "prompt": "Which customer qualifies for the launch shipping promotion?",
+  "promptZh": "哪位顧客符合上市期間的標準運送免運優惠？",
+  "options": [
+    {
+      "text": "A customer ordering from the website on November 12",
+      "zh": "十一月十二日在官網訂購者",
+      "whyZh": "已超過十一月十日期限。",
+      "id": "A"
+    },
+    {
+      "text": "A customer ordering from the company website on November 8",
+      "zh": "十一月八日在公司網站訂購者",
+      "whyZh": "同時符合官方網站與十一月四日至十日期間。",
+      "id": "B"
+    },
+    {
+      "text": "A customer buying from a local retailer on November 6",
+      "zh": "十一月六日在當地零售商購買者",
+      "whyZh": "其他零售商不適用。",
+      "id": "C"
+    },
+    {
+      "text": "A customer buying before the launch on November 1",
+      "zh": "十一月一日上市前購買者",
+      "whyZh": "不在活動日期內。",
+      "id": "D"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "同時符合官方網站與十一月四日至十日期間。",
+  "evidence": "company website from November 4 through November 10",
+  "vocabulary": [
+    {
+      "term": "promotion",
+      "zh": "促銷活動",
+      "note": "本題閱讀重點詞彙。"
+    }
+  ],
+  "revision": 1
+}

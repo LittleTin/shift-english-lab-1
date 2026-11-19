@@ -1,0 +1,57 @@
+{
+  "id": "t02-q085-v2",
+  "testId": "test-02",
+  "number": 85,
+  "part": 4,
+  "groupId": "t02-g049",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "graphic-inference"
+  ],
+  "prompt": "Look at the graphic. Which counter label matches the time normal material collection resumes?",
+  "promptZh": "請看圖表。哪個櫃台標示對應正常領料恢復的時間？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Maple",
+      "zh": "Maple",
+      "whyZh": "Maple 對應上午十一點。"
+    },
+    {
+      "id": "B",
+      "text": "Oak",
+      "zh": "Oak",
+      "whyZh": "Oak 對應中午十二點。"
+    },
+    {
+      "id": "C",
+      "text": "Cedar",
+      "zh": "Cedar",
+      "whyZh": "Cedar 對應下午四點。"
+    },
+    {
+      "id": "D",
+      "text": "Pine",
+      "zh": "Pine",
+      "whyZh": "Pine 對應下午四點半。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "廣播通知下午四點半恢復正常領料，圖表中下午四點半對應 Pine。",
+  "evidence": "“Regular material pickup starts again at four thirty in the afternoon.” → 4:30 p.m.: Pine.",
+  "vocabulary": [
+    {
+      "term": "inventory count",
+      "zh": "盤點",
+      "note": "實際核對庫存品項與數量的作業。"
+    },
+    {
+      "term": "resume",
+      "zh": "恢復",
+      "note": "表示暫停後重新開始。"
+    }
+  ],
+  "revision": 2
+}

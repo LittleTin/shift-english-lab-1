@@ -1,0 +1,57 @@
+{
+  "id": "t03-q076-r2",
+  "testId": "test-03",
+  "number": 76,
+  "part": 4,
+  "groupId": "t03-g046-medium-r2",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "daily",
+    "detail"
+  ],
+  "prompt": "Which traveler qualifies for a replacement booking at no charge?",
+  "promptZh": "哪位旅客符合免費重新安排訂位的資格？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A traveler who will miss a booked transfer because this train is late.",
+      "zh": "因本班車晚點而將錯過已預訂轉乘的旅客。",
+      "whyZh": "已有預訂，而且錯過的原因是本班車延誤，符合兩項條件。"
+    },
+    {
+      "id": "B",
+      "text": "A traveler who wants to book a transfer for the first time.",
+      "zh": "想第一次訂轉乘班次的旅客。",
+      "whyZh": "沒有已預訂的轉乘，也就不是補救已錯過的訂位。"
+    },
+    {
+      "id": "C",
+      "text": "A traveler who missed a booked transfer before this delay began.",
+      "zh": "在本班延誤發生以前就已錯過訂好轉乘的旅客。",
+      "whyZh": "即使已訂位，錯過不是這次延誤造成的。"
+    },
+    {
+      "id": "D",
+      "text": "A traveler who would rather change a booked transfer they can still catch.",
+      "zh": "仍趕得上已訂好的轉乘，但想換班次的旅客。",
+      "whyZh": "這位旅客沒有因本班車延誤錯過轉乘。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "旅客須原本就訂好轉乘，且是因本班車延誤才錯過。A 選項旅客的轉乘已預訂，即將因本班車晚點而錯過，因此可申請免收額外訂位費的安排。",
+  "evidence": "If this delay causes you to miss a reserved connection, staff at the information desk can arrange onward travel without an additional booking fee.",
+  "vocabulary": [
+    {
+      "term": "departure platform",
+      "zh": "出發月台",
+      "note": "列車出發的月台；這班車尚未確認。"
+    },
+    {
+      "term": "booked connection",
+      "zh": "已預訂的轉乘",
+      "note": "已事先預訂、銜接本班列車的後續交通。"
+    }
+  ],
+  "revision": 2
+}

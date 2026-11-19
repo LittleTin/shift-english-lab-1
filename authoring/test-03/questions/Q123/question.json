@@ -1,0 +1,52 @@
+{
+  "id": "t03-q123-r2",
+  "testId": "test-03",
+  "number": 123,
+  "part": 5,
+  "groupId": null,
+  "topic": "manufacturing",
+  "tags": [
+    "manufacturing",
+    "context"
+  ],
+  "vocabulary": [
+    {
+      "term": "jig",
+      "zh": "治具",
+      "note": "製造現場可用來定位或引導加工的工具；本題是本班可繼續使用舊治具，下一班則須換用新治具。"
+    }
+  ],
+  "difficulty": "intermediate",
+  "prompt": "The old jig leaves a faint mark, but measurements show no damage. Production may use it for the rest of this shift, ____ the next shift must switch to the new jig once the maintenance crew has fitted it.",
+  "promptZh": "舊治具會留下淺痕，但量測顯示沒有造成損傷。本班剩餘時間可繼續使用，____，下一班在維修人員裝好新治具後，就必須切換。",
+  "options": [
+    {
+      "id": "A",
+      "text": "because",
+      "zh": "因為",
+      "whyZh": "下一班切換並不是本班暫准繼續使用的原因；前文的量測結果才支持暫准使用。"
+    },
+    {
+      "id": "B",
+      "text": "as though",
+      "zh": "彷彿",
+      "whyZh": "下一班切換是真實要求，不是看起來像要切換的假設。"
+    },
+    {
+      "id": "C",
+      "text": "whereas",
+      "zh": "然而",
+      "whyZh": "whereas 對照兩個班別：本班獲准暫用舊治具，下一班在新治具就位後則必須換用。"
+    },
+    {
+      "id": "D",
+      "text": "so that",
+      "zh": "以便",
+      "whyZh": "本班繼續使用舊治具不是為了促成下一班換用新治具；兩者是不同時段的規則。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "whereas 對照兩個班別：本班獲准暫用舊治具，下一班在新治具就位後則必須換用。",
+  "evidence": "The old jig leaves a faint mark, but measurements show no damage. Production may use it for the rest of this shift, ____ the next shift must switch to the new jig once the maintenance crew has fitted it.",
+  "revision": 2
+}

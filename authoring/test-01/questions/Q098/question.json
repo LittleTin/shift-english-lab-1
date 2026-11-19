@@ -1,0 +1,57 @@
+{
+  "id": "t01-q098-r2",
+  "testId": "test-01",
+  "number": 98,
+  "part": 4,
+  "groupId": "t01-g054-r2",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "business",
+    "purpose"
+  ],
+  "prompt": "What should happen to the gasket order under the current schedule?",
+  "promptZh": "依目前的時程，這筆墊片訂單應如何處理？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Send it on the afternoon van and ask the driver to use the gate.",
+      "zh": "用下午的貨車送出，請司機走大門收貨。",
+      "whyZh": "大門代收是給符合安全例外的貨物，不能補救一般訂單的櫃台關閉問題。"
+    },
+    {
+      "id": "B",
+      "text": "Send it on the morning van because it was approved before noon.",
+      "zh": "因為它在中午前已獲核准，所以用上午的貨車送出。",
+      "whyZh": "提早核准並未讓一般訂單取得上午班資格。"
+    },
+    {
+      "id": "C",
+      "text": "Send it on the afternoon van because approval is the only condition it must meet.",
+      "zh": "用下午的貨車送出，因為獲得核准是唯一條件。",
+      "whyZh": "除了核准，還須在櫃台開放時抵達。"
+    },
+    {
+      "id": "D",
+      "text": "Hold it until the next day.",
+      "zh": "把它留到隔天。",
+      "whyZh": "一般訂單須同時符合兩項條件。十點半核准符合第一項，但三點半抵達晚於櫃台三點關閉，因此應延後。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "一般訂單須同時符合兩項條件。十點半核准符合第一項，但三點半抵達晚於櫃台三點關閉，因此應延後。",
+  "evidence": "Ordinary order + approval at 10:30 + 3:30 arrival after 3:00 closure + hold until tomorrow if either requirement fails.",
+  "vocabulary": [
+    {
+      "term": "receiving desk",
+      "zh": "收貨櫃台",
+      "note": "指負責簽收貨物的櫃台。"
+    },
+    {
+      "term": "hold it until tomorrow",
+      "zh": "把它留到明天",
+      "note": "hold 在這裡是暫不安排出貨。"
+    }
+  ],
+  "revision": 2
+}

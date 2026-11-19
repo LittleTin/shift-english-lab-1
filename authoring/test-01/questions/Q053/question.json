@@ -1,0 +1,57 @@
+{
+  "id": "t01-q053-r2",
+  "testId": "test-01",
+  "number": 53,
+  "part": 3,
+  "groupId": "t01-g039-r2",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "technology",
+    "problem"
+  ],
+  "prompt": "Why won't the speakers use the first reading in their comparison?",
+  "promptZh": "為什麼說話者不把第一次的讀值拿來比較？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The probe cable kept the cover from closing.",
+      "zh": "探頭的線讓上蓋無法完全關好。",
+      "whyZh": "探頭線卡在上蓋下方，而只有上蓋完全關閉的測試讀值才能拿來比較。"
+    },
+    {
+      "id": "B",
+      "text": "The reading was taken after a fan was replaced.",
+      "zh": "讀到這個數值之前已經更換風扇。",
+      "whyZh": "對話沒有說先換了風扇才量得第一筆讀值。兩人在討論接下來要測試哪一款風扇；判斷讀值無效的原因是當時沒有封好外蓋。"
+    },
+    {
+      "id": "C",
+      "text": "The temperature was below the sensor's range.",
+      "zh": "溫度低於感測器的量測範圍。",
+      "whyZh": "對話沒有說七十度超出感測器的量測範圍；不採用讀值的原因在於上蓋沒有關好。"
+    },
+    {
+      "id": "D",
+      "text": "The worksheet had been closed before the reading was entered.",
+      "zh": "輸入讀值前，工作表就已關閉。",
+      "whyZh": "女子請男子把工作表保持開啟，並不是因為工作表已關閉才捨棄該讀值。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "探頭線卡在上蓋下方，而只有上蓋完全關閉的測試讀值才能拿來比較。",
+  "evidence": "I was about to report seventy degrees, but the cover wasn't quite shut. The probe cable was caught under it. | Leave that reading out of the comparison. We have to test with the cover fully closed. I've got a thinner cable that will fit the opening.",
+  "vocabulary": [
+    {
+      "term": "probe cable",
+      "zh": "探頭線",
+      "note": "連接測量探頭的線；本題它卡住了上蓋。"
+    },
+    {
+      "term": "reading",
+      "zh": "讀值",
+      "note": "儀器量出的數值；只有符合測試條件的讀值才能比較。"
+    }
+  ],
+  "revision": 2
+}

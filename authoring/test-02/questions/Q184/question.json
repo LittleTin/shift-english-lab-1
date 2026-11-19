@@ -1,0 +1,57 @@
+{
+  "id": "t02-q184",
+  "testId": "test-02",
+  "number": 184,
+  "part": 7,
+  "groupId": "t02-r-p7-12",
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "daily",
+    "reading-comprehension"
+  ],
+  "prompt": "By what time should Priya reach the platform?",
+  "promptZh": "Priya 應最晚幾點到月台？",
+  "options": [
+    {
+      "text": "9:00 a.m.",
+      "zh": "上午九點",
+      "whyZh": "這是 C 車出發時間，B 車已離開。",
+      "id": "A"
+    },
+    {
+      "text": "10:10 a.m.",
+      "zh": "上午十點十分",
+      "whyZh": "所訂班次八點半就已發車，上午十點十分遠晚於應到月台的時間。",
+      "id": "B"
+    },
+    {
+      "text": "8:20 a.m.",
+      "zh": "上午八點二十分",
+      "whyZh": "八點半發車，至少提前十分鐘到月台。",
+      "id": "C"
+    },
+    {
+      "text": "8:30 a.m.",
+      "zh": "上午八點半",
+      "whyZh": "等到發車時才到不符合提前十分鐘的要求。",
+      "id": "D"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "八點半發車，至少提前十分鐘到月台。",
+  "evidence": "Please arrive at the platform at least ten minutes before the train leaves.",
+  "vocabulary": [
+    {
+      "term": "fully booked",
+      "zh": "已客滿",
+      "note": "可預訂座位均已訂滿。"
+    },
+    {
+      "term": "refundable",
+      "zh": "可退款的",
+      "note": "符合條件時可以退還款項。"
+    }
+  ],
+  "revision": 1
+}

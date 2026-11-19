@@ -1,0 +1,53 @@
+{
+  "id": "t03-q192",
+  "testId": "test-03",
+  "number": 192,
+  "part": 7,
+  "groupId": "t03-g072",
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "business",
+    "reading-comprehension",
+    "triple"
+  ],
+  "prompt": "How much should the association request after the officer’s correction?",
+  "promptZh": "依承辦人的要求，協會應申請多少？",
+  "options": [
+    {
+      "text": "$1,680",
+      "zh": "一千六百八十元",
+      "whyZh": "從總預算 1,800 元扣除不符合補助資格的志工午餐費 120 元，應申請 1,680 元。",
+      "id": "A"
+    },
+    {
+      "text": "$2,000",
+      "zh": "兩千元",
+      "whyZh": "這是上限，不是本案合資格預算。",
+      "id": "B"
+    },
+    {
+      "text": "$1,800",
+      "zh": "一千八百元",
+      "whyZh": "包含不合資格食物費。",
+      "id": "C"
+    },
+    {
+      "text": "$1,620",
+      "zh": "一千六百二十元",
+      "whyZh": "這是錯扣工具租賃一百八十元，工具租賃可補助。",
+      "id": "D"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "從總預算 1,800 元扣除不符合補助資格的志工午餐費 120 元，應申請 1,680 元。",
+  "evidence": "not food / volunteer lunch $120. Total: $1,800 / exclude the ineligible budget item",
+  "vocabulary": [
+    {
+      "term": "exclude",
+      "zh": "排除",
+      "note": "本題閱讀重點詞彙。"
+    }
+  ],
+  "revision": 1
+}

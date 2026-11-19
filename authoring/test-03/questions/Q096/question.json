@@ -1,0 +1,53 @@
+{
+  "id": "t03-q096-r2",
+  "testId": "test-03",
+  "number": 96,
+  "part": 4,
+  "groupId": "t03-g053-r2",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "business",
+    "restaurant",
+    "context"
+  ],
+  "prompt": "What would allow the restaurant to refrigerate the cake?",
+  "promptZh": "怎麼做才能請餐廳代為冷藏蛋糕？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Serving the cake before the meal",
+      "zh": "在用餐前先上蛋糕",
+      "whyZh": "用餐或吃蛋糕的時間不影響廚房收件；廚房只在十一點前收。"
+    },
+    {
+      "id": "B",
+      "text": "Having the friend hand the cake to staff at 11:30",
+      "zh": "請朋友在上午 11 點半把蛋糕交給廚房人員",
+      "whyZh": "上午 11 點半已超過廚房上午 11 點的收件截止時間。"
+    },
+    {
+      "id": "C",
+      "text": "Moving the lunch to a later time",
+      "zh": "延後午餐時間",
+      "whyZh": "延後用餐不會延後廚房收蛋糕的時間。"
+    },
+    {
+      "id": "D",
+      "text": "Having the friend deliver the cake at 10:50",
+      "zh": "請朋友在上午 10 點 50 分送蛋糕來",
+      "whyZh": "上午 10 點 50 分比原定抵達時間早，也在廚房上午 11 點的收件截止前，所以可以交給廚房冷藏。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "上午 10 點 50 分比原定抵達時間早，也在廚房上午 11 點的收件截止前，所以可以交給廚房冷藏。",
+  "evidence": "the kitchen staff can only take it in before eleven. Your friend is due at eleven thirty.",
+  "vocabulary": [
+    {
+      "term": "be due at",
+      "zh": "預計在某個時間抵達",
+      "note": "這裡指原先安排的抵達時間，不是廚房收件截止時間。"
+    }
+  ],
+  "revision": 2
+}

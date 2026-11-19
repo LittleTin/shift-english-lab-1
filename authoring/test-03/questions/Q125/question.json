@@ -1,0 +1,52 @@
+{
+  "id": "t03-q125-r2",
+  "testId": "test-03",
+  "number": 125,
+  "part": 5,
+  "groupId": null,
+  "topic": "daily",
+  "tags": [
+    "daily",
+    "context"
+  ],
+  "vocabulary": [
+    {
+      "term": "accessibility passes",
+      "zh": "無障礙通行證",
+      "note": "持這類通行證的人從西站上接駁車；持一般票券的人則從東站上同一輛車。"
+    }
+  ],
+  "difficulty": "intermediate",
+  "prompt": "While the road is closed, visitors with accessibility passes can board the shuttle at the west stop, while visitors with ordinary tickets join the same shuttle at the east stop. Regular buses will not serve either stop until noon. A visitor with an ordinary ticket and an appointment at 11:45 should ____.",
+  "promptZh": "道路封閉期間，持無障礙通行證的訪客可在西站搭乘接駁車，持一般票券的訪客則在東站搭乘同一輛接駁車。一般公車要到中午才會停靠這兩站。持一般票券、約在上午 11:45 的訪客應該____。",
+  "options": [
+    {
+      "id": "A",
+      "text": "catch the regular bus from the west stop",
+      "zh": "到西站搭一般公車",
+      "whyZh": "一般公車要到中午才恢復停靠，而預約時間是上午 11:45。"
+    },
+    {
+      "id": "B",
+      "text": "board the shuttle at the east stop",
+      "zh": "到東站搭接駁車",
+      "whyZh": "持一般票券須到東站搭接駁車；預約在中午前，不能等一般公車恢復停靠。"
+    },
+    {
+      "id": "C",
+      "text": "board the shuttle at the west stop",
+      "zh": "到西站搭接駁車",
+      "whyZh": "接駁車雖然是正確的交通方式，但西站是持無障礙通行證的訪客上車處，一般票券須到東站。"
+    },
+    {
+      "id": "D",
+      "text": "board the east-stop shuttle after 11:45",
+      "zh": "上午 11:45 過後再到東站搭接駁車",
+      "whyZh": "東站接駁車符合票種，但要在上午 11:45 到場，不能等到預約時間過後才上車。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "持一般票券須到東站搭接駁車；預約在中午前，不能等一般公車恢復停靠。",
+  "evidence": "While the road is closed, visitors with accessibility passes can board the shuttle at the west stop, while visitors with ordinary tickets join the same shuttle at the east stop. Regular buses will not serve either stop until noon. A visitor with an ordinary ticket and an appointment at 11:45 should ____.",
+  "revision": 2
+}

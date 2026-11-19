@@ -1,0 +1,52 @@
+{
+  "id": "t02-q149-r3",
+  "testId": "test-02",
+  "number": 149,
+  "part": 7,
+  "groupId": "t02-r-p7-01-r2",
+  "topic": "technology",
+  "difficulty": "advanced",
+  "tags": [
+    "technology",
+    "reading-comprehension"
+  ],
+  "prompt": "Suppose Green scores 97 tomorrow and the 10:00 slot is still available. What should the team do with the customer’s order?",
+  "promptZh": "假設 Green 明天只得 97 分，且上午 10:00 仍可預約。團隊該如何處理客戶的訂單？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Use this morning’s Green results and send tomorrow’s panels at noon.",
+      "zh": "使用今天上午 Green 的結果，明天中午出貨。",
+      "whyZh": "只採計明天的結果；即使今天有 99 分，也不能算明天達標。"
+    },
+    {
+      "id": "B",
+      "text": "Hold the sealed pilot set for Thursday and move the inspection to the next shift.",
+      "zh": "把目前封好的試產載板留到週四，並延到下一班再檢測。",
+      "whyZh": "原載板是為明天的取貨封存；客戶要求為當次取貨封存，也不允許把同一批拆封重封。"
+    },
+    {
+      "id": "C",
+      "text": "Use the 10:00 slot to approve Green based on an engineer’s signature alone.",
+      "zh": "使用上午 10:00 的時段，只憑工程師的簽名核准 Green。",
+      "whyZh": "親自簽核與至少 98 分缺一不可；97 分不符規定。"
+    },
+    {
+      "id": "D",
+      "text": "Prepare replacement panels for the next specified pickup opportunity.",
+      "zh": "另準備一批載板，等已知的下一個取貨機會。",
+      "whyZh": "97 分低於門檻，現在這批不能動用舊結果或單靠簽核趕上中午；客戶週四再來，須另準備一批載板供週四檢測、完成規定封存並取貨。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "97 分低於門檻，現在這批不能動用舊結果或單靠簽核趕上中午；客戶週四再來，須另準備一批載板供週四檢測、完成規定封存並取貨。",
+  "evidence": "tomorrow’s result, not today’s, is the one that counts […] The driver’s next trip is on Thursday […] reopening and resealing the same panels for a later trip is not allowed",
+  "vocabulary": [
+    {
+      "term": "reopen and reseal",
+      "zh": "拆封後重新封好",
+      "note": "本文規定不能把原本為某次取貨封好的載板拆封重封，再留待另一次取貨。"
+    }
+  ],
+  "revision": 3
+}

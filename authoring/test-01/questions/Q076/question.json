@@ -1,0 +1,58 @@
+{
+  "id": "t01-q076-r2",
+  "testId": "test-01",
+  "number": 76,
+  "part": 4,
+  "groupId": "t01-g046-r2",
+  "topic": "technology",
+  "difficulty": "advanced",
+  "tags": [
+    "technology",
+    "workplace",
+    "inference"
+  ],
+  "prompt": "The tracker is green. IT hasn’t approved the team. Its computer fails mid-booking with a new caller waiting. What should it do?",
+  "promptZh": "進度表顯示綠色，但資訊部門尚未核准這個團隊更新。電腦故障時，有一筆預約正在處理，也有一位新來電者在等候。團隊應該怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Wait for IT approval to update, keep the open booking with the team, and send the new caller to the service desk.",
+      "zh": "等資訊部門核准後再更新，由原團隊接續處理已開啟的預約，並把新來電轉給服務櫃檯。",
+      "whyZh": "綠色只表示收到了測試，不能先更新。故障時，新預約交給服務櫃檯，已開始的預約仍由原團隊接續。"
+    },
+    {
+      "id": "B",
+      "text": "Update now, keep the open booking with the team, and send the new caller to the service desk.",
+      "zh": "立即更新，由原團隊接續處理已開啟的預約，並把新來電轉給服務櫃檯。",
+      "whyZh": "預約分流正確，但綠色不代表資訊部門已核准；電腦故障也不能取代核准。"
+    },
+    {
+      "id": "C",
+      "text": "Wait for IT approval to update, send the open booking to the service desk, and handle the new caller yourself.",
+      "zh": "等資訊部門核准後再更新，把已開啟的預約轉給服務櫃檯，由原團隊接新來電。",
+      "whyZh": "等待核准是對的，但分流做反了：服務櫃檯只接新預約，已開啟的預約只能由原團隊處理。"
+    },
+    {
+      "id": "D",
+      "text": "Wait for IT approval to update and let the service desk take both bookings for now.",
+      "zh": "等資訊部門核准後再更新，暫時把兩筆預約都交給服務櫃檯。",
+      "whyZh": "等待核准是對的，但服務櫃檯無法完成原團隊已開啟的預約。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "綠色只表示收到了測試，不能先更新。故障時，新預約交給服務櫃檯，已開始的預約仍由原團隊接續。",
+  "evidence": "Green on the tracker means your test arrived. Wait for IT approval before choosing a slot. | If your working computer fails, the service desk takes new bookings. Only your team can finish bookings already open.",
+  "vocabulary": [
+    {
+      "term": "an open booking",
+      "zh": "已開始但未完成的預約",
+      "note": "open 可指一筆仍在處理、尚未結案的案件。"
+    },
+    {
+      "term": "IT approval",
+      "zh": "資訊部門核准",
+      "note": "收到測試資料與核准更新是不同的階段。"
+    }
+  ],
+  "revision": 2
+}

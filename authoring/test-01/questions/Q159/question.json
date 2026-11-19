@@ -1,0 +1,57 @@
+{
+  "id": "t01-q159-r2",
+  "testId": "test-01",
+  "number": 159,
+  "part": 7,
+  "groupId": "t01-r-p7-05-r2",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "Marta plans to show a visitor how the controller gets power. What does she need to arrange before collecting a stand at 11:15?",
+  "promptZh": "Marta 想向訪客示範如何為控制器供電。若她計畫上午 11:15 領取展示架，事前需要做什麼安排？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Have the model shop receive the borrowing slip by 11:00, then collect the gray stand.",
+      "zh": "讓工坊最遲於上午 11:00 收到借用單，再領取灰色展示架。",
+      "whyZh": "灰色展示架能示範如何供電。上午 11:15 在領取時段內，但工坊須最遲於 11:00 收到借用單。"
+    },
+    {
+      "id": "B",
+      "text": "Ask the showroom office to sign the slip, then collect the gray stand.",
+      "zh": "請展示間辦公室簽借用單，再領取灰色展示架。",
+      "whyZh": "選對了展示架，但展示間辦公室不能代替工坊簽借用單。"
+    },
+    {
+      "id": "C",
+      "text": "Take the blue stand from the showroom cabinet because it has a cable opening.",
+      "zh": "從展示間的櫃子拿藍色展示架，因為它有穿線孔。",
+      "whyZh": "藍色展示架的穿線孔只能展示線材路徑，並無可運作的零件，不能示範供電。"
+    },
+    {
+      "id": "D",
+      "text": "Have the model shop receive the slip for the gray stand when she arrives at 11:15.",
+      "zh": "上午 11:15 抵達時再讓工坊收灰色展示架的借用單。",
+      "whyZh": "上午 11:15 還可領取展示架，但已超過工坊收借用單的 11:00 期限。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "灰色展示架能示範如何供電。上午 11:15 在領取時段內，但工坊須最遲於 11:00 收到借用單。",
+  "evidence": "The gray stand has a working USB port […] If the model shop has not received a borrowing slip by 11:00, keep the stand there",
+  "vocabulary": [
+    {
+      "term": "working",
+      "zh": "可運作的",
+      "note": "working 修飾裝置或零件時表示能正常運作；灰色展示架的 USB 連接埠可實際用於供電示範。"
+    },
+    {
+      "term": "borrowing slip",
+      "zh": "借用單",
+      "note": "借用設備時提交的表單；本題必須讓模型工坊在最遲於上午 11:00 收到。"
+    }
+  ],
+  "revision": 2
+}

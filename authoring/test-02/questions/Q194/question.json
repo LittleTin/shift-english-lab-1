@@ -1,0 +1,57 @@
+{
+  "id": "t02-q194-r2",
+  "testId": "test-02",
+  "number": 194,
+  "part": 7,
+  "groupId": "t02-r-p7-14",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "technology",
+    "reading-comprehension"
+  ],
+  "prompt": "How many days apart are the expected delivery date and the planned build date?",
+  "promptZh": "預計到貨日與預定生產日相隔幾天？",
+  "options": [
+    {
+      "text": "Twenty",
+      "zh": "二十天",
+      "whyZh": "二十是日期數字，不能直接當時間間隔。",
+      "id": "A"
+    },
+    {
+      "text": "Two",
+      "zh": "兩天",
+      "whyZh": "預計 11 月 18 日到貨，預定 11 月 20 日生產；兩個日期相差 2 天，不是問中間有幾個完整的工作天。",
+      "id": "B"
+    },
+    {
+      "text": "One",
+      "zh": "一天",
+      "whyZh": "十八日與二十日之間雖只有十九日這個日期，但從十八日到二十日相隔兩天。",
+      "id": "C"
+    },
+    {
+      "text": "Eight",
+      "zh": "八天",
+      "whyZh": "十二日是採購訊息日期，不是到貨日。",
+      "id": "D"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "預計 11 月 18 日到貨，預定 11 月 20 日生產；兩個日期相差 2 天，不是問中間有幾個完整的工作天。",
+  "evidence": "deliver ... on November 18 ... November 20 build",
+  "vocabulary": [
+    {
+      "term": "test pad",
+      "zh": "測試點焊墊",
+      "note": "電路板上供量測探針接觸的位置。"
+    },
+    {
+      "term": "engineering change notice",
+      "zh": "工程變更通知",
+      "note": "傳達設計或製造相關修訂與適用範圍的文件。"
+    }
+  ],
+  "revision": 2
+}

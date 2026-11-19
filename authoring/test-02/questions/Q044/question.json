@@ -1,0 +1,56 @@
+{
+  "id": "t02-q044-r2",
+  "testId": "test-02",
+  "number": 44,
+  "part": 3,
+  "groupId": "t02-g036-r2",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "forecast"
+  ],
+  "prompt": "What monthly quantity does the woman expect initially?",
+  "promptZh": "女方預期初期每月的數量是多少？",
+  "options": [
+    {
+      "id": "A",
+      "text": "One thousand units.",
+      "zh": "一千台。",
+      "whyZh": "這是原報價假設，女方正在修正它。"
+    },
+    {
+      "id": "B",
+      "text": "Three thousand units.",
+      "zh": "三千台。",
+      "whyZh": "對話未提出三千台的月需求。"
+    },
+    {
+      "id": "C",
+      "text": "One hundred units.",
+      "zh": "一百台。",
+      "whyZh": "對話未提出一百台的數量。"
+    },
+    {
+      "id": "D",
+      "text": "Six hundred units.",
+      "zh": "六百台。",
+      "whyZh": "女方明說第一季預估每月只有六百台。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "女方明說第一季預估每月只有六百台；每月一千台是原報價的假設。",
+  "evidence": "Our forecast is only six hundred units per month for the first quarter.",
+  "vocabulary": [
+    {
+      "term": "forecast",
+      "zh": "預測",
+      "note": "本題是預估需求量，不等於已確認的採購訂單。"
+    },
+    {
+      "term": "unit price",
+      "zh": "單價",
+      "note": "每一單位產品的價格。"
+    }
+  ],
+  "revision": 2
+}

@@ -1,0 +1,57 @@
+{
+  "id": "t01-q167-r2",
+  "testId": "test-01",
+  "number": 167,
+  "part": 7,
+  "groupId": "t01-r-p7-07-r2",
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "daily",
+    "reading-comprehension"
+  ],
+  "prompt": "Why does the stage manager object to adding Friday’s two counts and calling the result “a larger audience”?",
+  "promptZh": "舞台監督為什麼反對把上週五的兩個數字加起來，就說「觀眾變多了」？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The theatre counted written questions only after the director answered them, so the total would miss the unanswered slips.",
+      "zh": "劇場只統計導演已回答的書面問題，加總會漏掉未回答的紙條。",
+      "whyZh": "文章明說，不論日後是否會獲答，紙條都另外計入。"
+    },
+    {
+      "id": "B",
+      "text": "Adding the two counts would be valid only if the director answered the written questions inside the hall.",
+      "zh": "只有導演在大廳內回答書面問題時，才可以把兩個數字相加。",
+      "whyZh": "改變回答問題的地點，並不會把問題數變成不重複的觀眾人數。"
+    },
+    {
+      "id": "C",
+      "text": "Each slip had already been included among the answers given aloud in the hall.",
+      "zh": "每張紙條先前都已算進在大廳當面回答的問題。",
+      "whyZh": "現場回答的問題和紙條是分開計數的；文章沒有說每張紙條都和現場提問重複。"
+    },
+    {
+      "id": "D",
+      "text": "One count is for questions answered aloud and the other for slips submitted; neither tells how many different people attended.",
+      "zh": "一個數字算當面回答的問題，另一個算收到的紙條；兩者都不能告訴我們實際有多少位不同的觀眾到場。",
+      "whyZh": "兩者衡量的是不同的提問活動，不是不重複的人數，也不能直接拿來比較各場的到場人數。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "原先統計的是現場回答了幾個問題，不是到場人數。新統計則包含所有收到的紙條，不論後來有沒有回答。兩種紀錄都不顯示有多少位不同的觀眾參與，因此加總不能證明觀眾變多。",
+  "evidence": "Final paragraph: live answers tallied as usual; all slips separately counted regardless of answer; stage manager rejects attendance inference.",
+  "vocabulary": [
+    {
+      "term": "tally",
+      "zh": "計數",
+      "note": "把項目逐一記下並計算總數。"
+    },
+    {
+      "term": "count",
+      "zh": "統計數字",
+      "note": "本題要先辨認各個數字究竟在統計什麼。"
+    }
+  ],
+  "revision": 2
+}

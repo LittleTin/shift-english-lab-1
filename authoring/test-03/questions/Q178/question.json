@@ -1,0 +1,58 @@
+{
+  "id": "t03-q178-r2",
+  "testId": "test-03",
+  "number": 178,
+  "part": 7,
+  "groupId": "t03-g069-r2",
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "business",
+    "reading-comprehension",
+    "double"
+  ],
+  "prompt": "Which plan will let Sam collect the confidential list at 8:30 a.m. on April 10?",
+  "promptZh": "哪個方案能讓 Sam 在四月十日上午八點半領到機密名單？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Mark a tamper-evident envelope with CE-410 and “Hold for named pickup,” and email reception to authorize Sam by 4 p.m. on April 9.",
+      "zh": "以可辨識是否拆封的信封，標上 CE-410 和「保留供指定人員領取」，並最遲於四月九日下午四點寄出 Sam 的代領授權。",
+      "whyZh": "四月九日下午四點十五分的送件仍在收件時間內；正確的信封及標示可讓文件保管過夜。及時授權後，Sam 可在四月十日上午八點半出示證件代領。"
+    },
+    {
+      "id": "B",
+      "text": "Use the correct marked envelope, but email reception to authorize Sam when the parcel arrives at 4:15 p.m. on April 9.",
+      "zh": "使用符合規定並有標示的信封，但等包裹四月九日下午四點十五分送到後，再寄出 Sam 的代領授權。",
+      "whyZh": "包裹來得及收件，但代領授權最遲須於下午四點寄出。兩個截止時間不同。"
+    },
+    {
+      "id": "C",
+      "text": "Authorize Sam on time and send the list in a sealed tamper-evident envelope marked only CE-410.",
+      "zh": "及時辦理 Sam 的代領授權，並以只標有 CE-410 的可辨識是否拆封的信封密封寄送名單。",
+      "whyZh": "授權、信封及預訂編號都符合規定，但文件要保管過夜，還須標明「保留供指定人員領取」。"
+    },
+    {
+      "id": "D",
+      "text": "Use the correct marked envelope and ask Sam to show photo ID without authorizing a substitute.",
+      "zh": "使用符合規定並有標示的信封，請 Sam 出示附照片的證件，但不另行辦理代領授權。",
+      "whyZh": "有證件不等於有代領資格。登記的預訂聯絡人是 Alex，Sam 必須事先獲得授權。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "四月九日下午四點十五分的送件仍在收件時間內；正確的信封及標示可讓文件保管過夜。及時授權後，Sam 可在四月十日上午八點半出示證件代領。",
+  "evidence": "The delivery desk accepts parcels until 4:30 p.m. / Confidential parcels are held overnight only in a tamper-evident envelope / email reception by 4 p.m. on the day before pickup / at 4:15 p.m. on April 9 / The booking reference is CE-410 / Sam Torres must collect the list at 8:30 a.m. and can show photo ID.",
+  "vocabulary": [
+    {
+      "term": "tamper-evident",
+      "zh": "可辨識是否拆封的",
+      "note": "一旦被打開，信封或封條會留下可見痕跡。"
+    },
+    {
+      "term": "authorized substitute",
+      "zh": "授權的代領人",
+      "note": "在期限內由預訂聯絡人指定，並出示證件。"
+    }
+  ],
+  "revision": 2
+}

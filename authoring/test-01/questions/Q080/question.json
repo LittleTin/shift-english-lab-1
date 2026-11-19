@@ -1,0 +1,52 @@
+{
+  "id": "t01-q080-r2",
+  "testId": "test-01",
+  "number": 80,
+  "part": 4,
+  "groupId": "t01-g048-r2",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "daily",
+    "event-policy"
+  ],
+  "prompt": "A donor brings two labelled plants, one in glass. Without changing pots, when can they enter?",
+  "promptZh": "捐贈者帶了兩盆貼好標籤的植物，其中一盆用玻璃盆。不換盆的話，何時可以入場？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Enter early with both plants.",
+      "zh": "帶兩盆一起提早入場。",
+      "whyZh": "玻璃盆不收，只有另外一盆符合規定，不到提早入場所需的兩盆。"
+    },
+    {
+      "id": "B",
+      "text": "Enter at eleven with the eligible plant.",
+      "zh": "十一點帶合格的那盆入場。",
+      "whyZh": "兩盆雖然都有標籤，但其中一盆用玻璃盆，不算合格；只有一盆就要等十一點入場。"
+    },
+    {
+      "id": "C",
+      "text": "Wait until noon and leave both plants at the volunteer table.",
+      "zh": "等到中午，把兩盆都留在志工桌。",
+      "whyZh": "中午的規定是處理沒被領走的植物，不會讓玻璃盆變成合格。"
+    },
+    {
+      "id": "D",
+      "text": "Enter early after showing that both plants have labels.",
+      "zh": "證明兩盆都有標籤後提早入場。",
+      "whyZh": "有標籤只是其中一項條件，仍不收玻璃盆。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "兩盆雖然都有標籤，但其中一盆用玻璃盆，不算合格；只有一盆就要等十一點入場。",
+  "evidence": "No glass pots; two eligible plants for early entry; other visitors enter at eleven.",
+  "vocabulary": [
+    {
+      "term": "eligible",
+      "zh": "符合資格的",
+      "note": "同時符合活動所列條件，而不是只貼了標籤。"
+    }
+  ],
+  "revision": 2
+}

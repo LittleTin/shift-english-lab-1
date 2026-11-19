@@ -1,0 +1,57 @@
+{
+  "id": "t02-q180-r2",
+  "testId": "test-02",
+  "number": 180,
+  "part": 7,
+  "groupId": "t02-r-p7-11",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "What can be concluded about the fixture?",
+  "promptZh": "關於治具可以得出什麼結論？",
+  "options": [
+    {
+      "text": "It has already been replaced on every line",
+      "zh": "所有產線都已更換治具",
+      "whyZh": "文件只有檢查計畫，沒有完成更換。",
+      "id": "A"
+    },
+    {
+      "text": "It has already been ruled out as a possible cause",
+      "zh": "已排除治具為可能原因",
+      "whyZh": "製程團隊會檢查治具；目前既未認定治具是原因，也未排除它。",
+      "id": "B"
+    },
+    {
+      "text": "It will be investigated, but its role as the cause is not confirmed",
+      "zh": "製程團隊將檢查治具，但尚未確認它是否造成問題。",
+      "whyZh": "主管說先檢查治具，且目前結果尚未建立因果。",
+      "id": "C"
+    },
+    {
+      "text": "It has been proven to cause every failure",
+      "zh": "已證明造成所有失敗",
+      "whyZh": "現有結果尚未證實治具造成這個問題，更沒有證據顯示所有不良都由它引起。",
+      "id": "D"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "主管說先檢查治具，且目前結果尚未建立因果。",
+  "evidence": "The results do not yet establish that the fixture caused the problem.",
+  "vocabulary": [
+    {
+      "term": "first-pass yield",
+      "zh": "一次通過率",
+      "note": "本題明確定義為首次通過數除以受測數。"
+    },
+    {
+      "term": "rework",
+      "zh": "重工",
+      "note": "針對未符合要求的產品重新作業。"
+    }
+  ],
+  "revision": 2
+}

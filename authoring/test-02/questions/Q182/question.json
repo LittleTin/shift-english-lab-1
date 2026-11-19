@@ -1,0 +1,57 @@
+{
+  "id": "t02-q182-r2",
+  "testId": "test-02",
+  "number": 182,
+  "part": 7,
+  "groupId": "t02-r-p7-12",
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "daily",
+    "reading-comprehension"
+  ],
+  "prompt": "Priya can now arrive as late as 11:15 a.m., but her other travel requirements remain unchanged. If she wants the latest possible departure, which train should she choose, and when would it arrive relative to her original arrival deadline?",
+  "promptZh": "Priya 現在最遲可在上午十一點十五分抵達，但其他搭車條件不變。如果她想搭最晚出發的班次，應選哪一班？該班車的抵達時間和她原本的最晚抵達時間相差多久？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Train D; 45 minutes after her original deadline.",
+      "zh": "D 車；比原本的最晚抵達時間晚四十五分鐘。",
+      "whyZh": "D 車是最晚出發且符合條件的班次，但十一點抵達只比原本的十點半晚三十分鐘。晚四十五分鐘的是新的最晚抵達時間，不是 D 車的到站時間。"
+    },
+    {
+      "id": "B",
+      "text": "Train B; 10 minutes before her original deadline.",
+      "zh": "B 車；比原本的最晚抵達時間早十分鐘。",
+      "whyZh": "B 車十點二十分抵達，確實比原本的十點半早十分鐘。不過 B 車八點半就出發，比同樣符合新條件的 D 車早。"
+    },
+    {
+      "id": "C",
+      "text": "Train C; 25 minutes before her original deadline.",
+      "zh": "C 車；比原本的最晚抵達時間早二十五分鐘。",
+      "whyZh": "C 車十點零五分抵達，確實比原本的十點半早二十五分鐘，但已客滿，而 Priya 不願依賴候補。"
+    },
+    {
+      "id": "D",
+      "text": "Train D; 30 minutes after her original deadline.",
+      "zh": "D 車；比原本的最晚抵達時間晚三十分鐘。",
+      "whyZh": "D 車有座位，九點三十五分出發、十一點抵達，符合不得早於八點十五分出發及最遲十一點十五分抵達的條件。它比也符合條件的 B 車晚出發；十一點比原本的十點半晚三十分鐘。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "原郵件規定不能早於八點十五分出發、也不接受候補；新情境只把最晚抵達時間改為十一點十五分。A 車太早出發，C 車已客滿，B、D 車都符合；D 車九點三十五分出發較晚，十一點抵達則比原本的十點半晚三十分鐘。",
+  "evidence": "Document 2: no Eastford departure before 8:15, original station-arrival deadline 10:30, no waiting list; revised hypothetical deadline 11:15. Document 1: A leaves 8:00, B available at 8:30→10:20, C fully booked at 9:00→10:05, D available at 9:35→11:00. D is the later eligible departure and reaches Milltown 30 minutes after 10:30.",
+  "vocabulary": [
+    {
+      "term": "fully booked",
+      "zh": "已客滿",
+      "note": "可預訂座位均已訂滿。"
+    },
+    {
+      "term": "refundable",
+      "zh": "可退款的",
+      "note": "符合條件時可以退還款項。"
+    }
+  ],
+  "revision": 2
+}

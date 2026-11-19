@@ -1,0 +1,52 @@
+{
+  "id": "t01-q042-r2",
+  "testId": "test-01",
+  "number": 42,
+  "part": 3,
+  "groupId": "t01-g035-r2",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "condition"
+  ],
+  "prompt": "When may packing of the model resume?",
+  "promptZh": "這個機種何時可以恢復包裝？",
+  "options": [
+    {
+      "id": "A",
+      "text": "After the new inserts arrive.",
+      "zh": "新內襯到貨之後。",
+      "whyZh": "stop packing ... until 表示在新內襯到貨以前暫停；到貨是恢復包裝的前提。"
+    },
+    {
+      "id": "B",
+      "text": "As soon as the labels are reprinted.",
+      "zh": "標籤重印後立刻。",
+      "whyZh": "標籤本來就正確，沒有要求重印。"
+    },
+    {
+      "id": "C",
+      "text": "After a larger model is designed.",
+      "zh": "設計出更大機種之後。",
+      "whyZh": "對話在處理小型機種包裝，沒有要求改設計更大產品。"
+    },
+    {
+      "id": "D",
+      "text": "When the outer cartons are painted.",
+      "zh": "外箱上漆之後。",
+      "whyZh": "沒有外箱上漆作業，改善重點是泡棉內襯。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "stop packing ... until 表示在新內襯到貨以前暫停；到貨是恢復包裝的前提。",
+  "evidence": "Do not pack that model again until the new inserts arrive.",
+  "vocabulary": [
+    {
+      "term": "resume",
+      "zh": "恢復",
+      "note": "暫停後重新開始某項作業。"
+    }
+  ],
+  "revision": 2
+}

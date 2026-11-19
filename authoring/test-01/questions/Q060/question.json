@@ -1,0 +1,52 @@
+{
+  "id": "t01-q060-r2",
+  "testId": "test-01",
+  "number": 60,
+  "part": 3,
+  "groupId": "t01-g041",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "time"
+  ],
+  "prompt": "Which training plan fits the schedule?",
+  "promptZh": "哪個訓練安排符合時程？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Meet the engineer at seven fifteen and practise after the shift begins.",
+      "zh": "七點十五分與工程師會合，等第一班開始後再練習。",
+      "whyZh": "第一班開始後才練不符合要求。"
+    },
+    {
+      "id": "B",
+      "text": "Practise during the first production run and consult the engineer afterward.",
+      "zh": "正式生產第一批時練習，事後再請教工程師。",
+      "whyZh": "這把訓練延後到第一班開工後。"
+    },
+    {
+      "id": "C",
+      "text": "Start the engineer-led practice at seven instead of seven fifteen.",
+      "zh": "把由工程師帶領的練習提前到七點。",
+      "whyZh": "工程師七點十五分才有空。"
+    },
+    {
+      "id": "D",
+      "text": "Meet the engineer at seven fifteen and practise before the shift.",
+      "zh": "七點十五分與工程師會合，在第一班開始前練習。",
+      "whyZh": "訓練要在第一班開始前進行，製程工程師七點十五分有空，兩項條件都要符合。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "訓練要在第一班開始前進行，製程工程師七點十五分有空，兩項條件都要符合。",
+  "evidence": "Then we should run a short training session before the first shift begins. The process engineer is available at seven fifteen.",
+  "vocabulary": [
+    {
+      "term": "shift",
+      "zh": "班次",
+      "note": "員工排定的工作時段。"
+    }
+  ],
+  "revision": 2
+}

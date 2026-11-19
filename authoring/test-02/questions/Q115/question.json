@@ -1,0 +1,52 @@
+{
+  "id": "t02-q115-r2",
+  "testId": "test-02",
+  "number": 115,
+  "part": 5,
+  "groupId": null,
+  "topic": "manufacturing",
+  "tags": [
+    "manufacturing",
+    "context"
+  ],
+  "vocabulary": [
+    {
+      "term": "by the time",
+      "zh": "到……的時候",
+      "note": "搭配過去時間點時，可用過去完成式描述在那之前已完成的另一件事。"
+    }
+  ],
+  "difficulty": "intermediate",
+  "prompt": "The night shift disconnected the damaged pump but left it in place. The day shift arrived at six to prepare the pump bay. By the time the replacement was delivered at seven, the day shift ____ the old pump, so the installers could lower the replacement straight into the empty bay.",
+  "promptZh": "夜班已把故障泵浦的接頭拆開，但泵浦仍留在原位。日班六點到場整理泵浦安裝區。替換品七點送達時，日班____舊泵浦，所以安裝人員能把替換品直接放入空出的安裝區。",
+  "options": [
+    {
+      "id": "A",
+      "text": "was about to remove",
+      "zh": "正要拆走",
+      "whyZh": "七點才準備拆除，安裝區就不可能已經空出來。"
+    },
+    {
+      "id": "B",
+      "text": "had already removed",
+      "zh": "已經拆走",
+      "whyZh": "夜班只拆接頭，日班在替換品送達前已拆走舊泵浦，才能立即把替換品放入空出的安裝區。"
+    },
+    {
+      "id": "C",
+      "text": "was still removing",
+      "zh": "仍在拆除",
+      "whyZh": "拆除仍在進行，無法讓安裝人員直接把替換品放進空出的安裝區。"
+    },
+    {
+      "id": "D",
+      "text": "had only disconnected",
+      "zh": "只拆開接頭",
+      "whyZh": "這只是夜班完成的工作，故障泵浦仍留在原位，無法直接放入替換品。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "夜班只拆接頭，日班在替換品送達前已拆走舊泵浦，才能立即把替換品放入空出的安裝區。",
+  "evidence": "The night shift disconnected the damaged pump but left it in place. The day shift arrived at six to prepare the pump bay. By the time the replacement was delivered at seven, the day shift ____ the old pump, so the installers could lower the replacement straight into the empty bay.",
+  "revision": 2
+}

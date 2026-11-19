@@ -1,0 +1,51 @@
+{
+  "id": "t01-q013",
+  "testId": "test-01",
+  "number": 13,
+  "part": 2,
+  "groupId": "t01-g013",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "reason"
+  ],
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽題目，選出最合適的回應。",
+  "options": [
+    {
+      "id": "A",
+      "text": "The second shift starts at six.",
+      "zh": "第二班六點開始。",
+      "whyZh": "班別開始時間並未解釋設備為什麼停止。"
+    },
+    {
+      "id": "B",
+      "text": "A safety sensor needs replacing.",
+      "zh": "一個安全感測器需要更換。",
+      "whyZh": "Why 問原因；感測器需要更換能直接解釋停線。"
+    },
+    {
+      "id": "C",
+      "text": "We ordered two spare parts.",
+      "zh": "我們訂了兩個備用零件。",
+      "whyZh": "two 是與題目相同的數字，但只講採購數量，沒有交代停線原因。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "Why 問原因；感測器需要更換能直接解釋停線。",
+  "evidence": "Why has assembly line two stopped?",
+  "vocabulary": [
+    {
+      "term": "assembly line",
+      "zh": "組裝線",
+      "note": "依工序完成產品組裝的生產線。"
+    },
+    {
+      "term": "sensor",
+      "zh": "感測器",
+      "note": "安全系統中用來偵測狀態的元件。"
+    }
+  ],
+  "revision": 1
+}

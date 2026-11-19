@@ -1,0 +1,57 @@
+{
+  "id": "t01-q181",
+  "testId": "test-01",
+  "number": 181,
+  "part": 7,
+  "groupId": "t01-r-p7-12",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "How many sensors were ordered in total?",
+  "promptZh": "訂單總共訂購多少個感測器？",
+  "options": [
+    {
+      "text": "20",
+      "zh": "二十個",
+      "whyZh": "二十是每箱數量。",
+      "id": "A"
+    },
+    {
+      "text": "60",
+      "zh": "六十個",
+      "whyZh": "六十是單次出貨數量，非整筆訂單總量。",
+      "id": "B"
+    },
+    {
+      "text": "120",
+      "zh": "一百二十個",
+      "whyZh": "採購單列總量一百二十個，六十只是第一批。",
+      "id": "C"
+    },
+    {
+      "text": "40",
+      "zh": "四十個",
+      "whyZh": "四十是實驗室申請先領的數量。",
+      "id": "D"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "採購單列總量一百二十個，六十只是第一批。",
+  "evidence": "Order S318: 120 temperature sensors",
+  "vocabulary": [
+    {
+      "term": "split shipment",
+      "zh": "分批出貨",
+      "note": "一筆訂單拆成不同批次運送。"
+    },
+    {
+      "term": "controlled stock area",
+      "zh": "受控庫存區",
+      "note": "依既定規則管理存放與領用的區域。"
+    }
+  ],
+  "revision": 1
+}

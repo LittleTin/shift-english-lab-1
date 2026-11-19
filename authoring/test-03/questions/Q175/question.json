@@ -1,0 +1,53 @@
+{
+  "id": "t03-q175",
+  "testId": "test-03",
+  "number": 175,
+  "part": 7,
+  "groupId": "t03-g068",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension",
+    "single"
+  ],
+  "prompt": "In which position marked [1], [2], [3], and [4] does the following sentence best belong? “Returning these cards will help us account for all unused stock.”",
+  "promptZh": "下列句子最適合放在 [1]、[2]、[3]、[4] 哪個位置？「交回這些卡片將有助我們清點所有未使用的舊卡。」",
+  "options": [
+    {
+      "id": "A",
+      "text": "Position [1]",
+      "zh": "位置 [1]",
+      "whyZh": "尚未介紹任何卡片，these cards 缺少指涉對象。"
+    },
+    {
+      "id": "B",
+      "text": "Position [2]",
+      "zh": "位置 [2]",
+      "whyZh": "上一段談修訂原因，尚未提出交回舊卡的要求。"
+    },
+    {
+      "id": "C",
+      "text": "Position [3]",
+      "zh": "位置 [3]",
+      "whyZh": "此處前文是課程排班，插入交回卡片的理由會中斷訓練流程。"
+    },
+    {
+      "id": "D",
+      "text": "Position [4]",
+      "zh": "位置 [4]",
+      "whyZh": "緊接交回剩餘舊卡的指示，these cards 有清楚指涉，並說明清點存量的理由。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "these cards 承接前句須交回品保部的剩餘舊卡，補充交回的理由，因此放在 [4] 最順。",
+  "evidence": "Any old cards remaining on October 14 must be returned to Quality Assurance, not placed in the recycling bins. [4]",
+  "vocabulary": [
+    {
+      "term": "account for",
+      "zh": "清點、交代數量",
+      "note": "此處指確認剩餘卡片的數量與去向。"
+    }
+  ],
+  "revision": 1
+}

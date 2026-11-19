@@ -1,0 +1,57 @@
+{
+  "id": "t02-q190-r2",
+  "testId": "test-02",
+  "number": 190,
+  "part": 7,
+  "groupId": "t02-r-p7-13",
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "business",
+    "reading-comprehension"
+  ],
+  "prompt": "What does the organizer want the provider to do before payment?",
+  "promptZh": "主辦人希望業者在主辦方支付餘款前做什麼？",
+  "options": [
+    {
+      "text": "Increase the participant count",
+      "zh": "增加參加人數",
+      "whyZh": "人數正確，且確認沒有追加。",
+      "id": "A"
+    },
+    {
+      "text": "Return the deposit immediately",
+      "zh": "立即退回訂金",
+      "whyZh": "沒有取消活動或要求退訂金。",
+      "id": "B"
+    },
+    {
+      "text": "Send a corrected invoice",
+      "zh": "寄送更正後的帳單",
+      "whyZh": "主辦人在電子郵件中要求先收到更正後的帳單，再安排支付餘款。",
+      "id": "C"
+    },
+    {
+      "text": "Remove the room from the booking",
+      "zh": "取消場地預約",
+      "whyZh": "爭議是漏折扣，不是取消場地。",
+      "id": "D"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "主辦人在電子郵件中要求先收到更正後的帳單，再安排支付餘款。",
+  "evidence": "Please send a corrected invoice before we arrange the balance payment.",
+  "vocabulary": [
+    {
+      "term": "balance due",
+      "zh": "應付餘額",
+      "note": "扣除已付金額後仍需支付的款項。"
+    },
+    {
+      "term": "fixed charge",
+      "zh": "固定費用",
+      "note": "不因本題參加人數而改變的費用。"
+    }
+  ],
+  "revision": 2
+}

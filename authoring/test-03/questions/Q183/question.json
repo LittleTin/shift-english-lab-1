@@ -1,0 +1,53 @@
+{
+  "id": "t03-q183-r2",
+  "testId": "test-03",
+  "number": 183,
+  "part": 7,
+  "groupId": "t03-g070",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "business",
+    "reading-comprehension",
+    "double"
+  ],
+  "prompt": "What is the total price of the missing items, based on the order confirmation?",
+  "promptZh": "依訂單確認單，缺少的商品總價是多少？",
+  "options": [
+    {
+      "text": "$28",
+      "zh": "二十八元",
+      "whyZh": "這是運費，非缺件金額。",
+      "id": "A"
+    },
+    {
+      "text": "$36",
+      "zh": "三十六元",
+      "whyZh": "每個夾座 9 元，共少了 4 個：4 × 9 = 36 元。",
+      "id": "B"
+    },
+    {
+      "text": "$168",
+      "zh": "一百六十八元",
+      "whyZh": "這是四盞燈的價格，但缺的是夾座。",
+      "id": "C"
+    },
+    {
+      "text": "$108",
+      "zh": "一百零八元",
+      "whyZh": "這是全部十二個夾座的金額。",
+      "id": "D"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "每個夾座 9 元，共少了 4 個：4 × 9 = 36 元。",
+  "evidence": "12 clamp bases ... at $9 each / remaining four",
+  "vocabulary": [
+    {
+      "term": "invoiced value",
+      "zh": "帳列金額",
+      "note": "本題閱讀重點詞彙。"
+    }
+  ],
+  "revision": 2
+}

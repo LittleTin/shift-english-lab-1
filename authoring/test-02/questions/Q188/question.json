@@ -1,0 +1,57 @@
+{
+  "id": "t02-q188",
+  "testId": "test-02",
+  "number": 188,
+  "part": 7,
+  "groupId": "t02-r-p7-13",
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "business",
+    "reading-comprehension"
+  ],
+  "prompt": "What should the corrected training charge be?",
+  "promptZh": "更正後的訓練費應為多少？",
+  "options": [
+    {
+      "text": "NT$9,000",
+      "zh": "新臺幣九千元",
+      "whyZh": "這是尚未打折的原額。",
+      "id": "A"
+    },
+    {
+      "text": "NT$1,800",
+      "zh": "新臺幣一千八百元",
+      "whyZh": "這是把兩千場租打九折，但場租不打折。",
+      "id": "B"
+    },
+    {
+      "text": "NT$7,100",
+      "zh": "新臺幣七千一百元",
+      "whyZh": "這是加場租扣訂金後的最終餘額，不是訓練費。",
+      "id": "C"
+    },
+    {
+      "text": "NT$8,100",
+      "zh": "新臺幣八千一百元",
+      "whyZh": "十二人×750=9,000，九折為8,100。",
+      "id": "D"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "十二人×750=9,000，九折為8,100。",
+  "evidence": "Training: 12 × NT$750 = NT$9,000 ... a 10% discount on training fees",
+  "vocabulary": [
+    {
+      "term": "balance due",
+      "zh": "應付餘額",
+      "note": "扣除已付金額後仍需支付的款項。"
+    },
+    {
+      "term": "fixed charge",
+      "zh": "固定費用",
+      "note": "不因本題參加人數而改變的費用。"
+    }
+  ],
+  "revision": 1
+}

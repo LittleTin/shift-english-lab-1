@@ -1,0 +1,52 @@
+{
+  "id": "t01-q056",
+  "testId": "test-01",
+  "number": 56,
+  "part": 3,
+  "groupId": "t01-g040-r2",
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "business",
+    "reason"
+  ],
+  "prompt": "Why was the reimbursement request returned?",
+  "promptZh": "費用申請為什麼被退回？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A receipt lacked the payment date.",
+      "zh": "收據缺少付款日期。",
+      "whyZh": "女子第一句明說退件原因是計程車收據沒有 payment date；不是因為費用過高。"
+    },
+    {
+      "id": "B",
+      "text": "The taxi fare exceeded the budget.",
+      "zh": "計程車費超出預算。",
+      "whyZh": "沒有提到車資超過限制。"
+    },
+    {
+      "id": "C",
+      "text": "The business trip was canceled.",
+      "zh": "出差已取消。",
+      "whyZh": "行程已發生，女子正在申請費用。"
+    },
+    {
+      "id": "D",
+      "text": "The employee submitted two claims.",
+      "zh": "員工送出兩份申請。",
+      "whyZh": "男子提醒不要另開新單，並不表示女子已重複申請。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "女子第一句明說退件原因是計程車收據沒有 payment date；不是因為費用過高。",
+  "evidence": "the taxi receipt doesn't show the payment date.",
+  "vocabulary": [
+    {
+      "term": "reimbursement",
+      "zh": "費用核銷；報銷",
+      "note": "公司償還員工代墊的合規費用。"
+    }
+  ],
+  "revision": 1
+}

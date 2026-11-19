@@ -1,0 +1,46 @@
+{
+  "id": "t03-q028",
+  "testId": "test-03",
+  "number": 28,
+  "part": 2,
+  "groupId": "t03-g028",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "question_response"
+  ],
+  "prompt": "There should have been twelve chairs in this shipment.",
+  "promptZh": "這批貨應該有十二張椅子才對。",
+  "options": [
+    {
+      "id": "A",
+      "text": "I will check whether the other two were sent separately.",
+      "zh": "我會確認另外兩張是否分開寄送。",
+      "whyZh": "辨識數量短缺的隱含問題，提出具體查詢行動。"
+    },
+    {
+      "id": "B",
+      "text": "They are comfortable to sit on.",
+      "zh": "坐起來很舒服。",
+      "whyZh": "評論舒適度，沒有處理數量問題。"
+    },
+    {
+      "id": "C",
+      "text": "The chairperson is away today.",
+      "zh": "主席今天不在。",
+      "whyZh": "chairperson 與 chairs 含同字根，但主題不同。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "辨識數量短缺的隱含問題，提出具體查詢行動。",
+  "evidence": "I will check whether the other two were sent separately.",
+  "vocabulary": [
+    {
+      "term": "separately",
+      "zh": "分開地",
+      "note": "I will check whether the other two were sent separately."
+    }
+  ],
+  "revision": 1
+}

@@ -1,0 +1,56 @@
+{
+  "id": "t02-q041",
+  "testId": "test-02",
+  "number": 41,
+  "part": 3,
+  "groupId": "t02-g035",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "packing list"
+  ],
+  "prompt": "What problem was discovered?",
+  "promptZh": "發現了什麼問題？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The packing list is missing.",
+      "zh": "裝箱單遺失。",
+      "whyZh": "男方已查看並說裝箱單正確。"
+    },
+    {
+      "id": "B",
+      "text": "The carton labels identify the wrong model.",
+      "zh": "紙箱標籤標示了錯誤型號。",
+      "whyZh": "箱外是 R8，箱內產品是 R9，型號不一致。"
+    },
+    {
+      "id": "C",
+      "text": "The units do not power on.",
+      "zh": "機器無法開機。",
+      "whyZh": "對話沒有討論產品功能故障。"
+    },
+    {
+      "id": "D",
+      "text": "The carrier arrived at the wrong address.",
+      "zh": "承運商到錯地址。",
+      "whyZh": "沒有提到承運商地址問題。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "箱外是 R8，箱內產品是 R9，型號不一致。",
+  "evidence": "The shipping box labels show the letter R, then the number eight. The units inside show the letter R, then the number nine.",
+  "vocabulary": [
+    {
+      "term": "packing list",
+      "zh": "裝箱單",
+      "note": "列示包裝內貨物與數量的文件。"
+    },
+    {
+      "term": "holding area",
+      "zh": "暫存區",
+      "note": "在等待確認或處置期間暫時放置物品的區域。"
+    }
+  ],
+  "revision": 1
+}

@@ -1,0 +1,58 @@
+{
+  "id": "t03-q073-r2",
+  "testId": "test-03",
+  "number": 73,
+  "part": 4,
+  "groupId": "t03-g045-r2",
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "daily",
+    "listening-comprehension",
+    "talk"
+  ],
+  "prompt": "A tool with a damaged cable is due Sunday at five p.m. What avoids a late fee?",
+  "promptZh": "一件電線受損的工具星期日下午五點到期。怎麼做才不會被收逾期費？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Submit an online damage report before five and return the tool in the courtyard on Sunday.",
+      "zh": "五點前上網提交損壞通報，星期日在中庭歸還工具。",
+      "whyZh": "通報時間符合，但電線受損的工具不能在中庭歸還。"
+    },
+    {
+      "id": "B",
+      "text": "Submit an online damage report before five and hand the tool to a staff member at the desk on Monday.",
+      "zh": "五點前上網提交損壞通報，星期一把工具親手交給服務台人員。",
+      "whyZh": "五點前上網通報。電線受損不能在中庭歸還，服務台又到星期一才重新開放，所以重新開放時親手交還就符合免收逾期費的條件。"
+    },
+    {
+      "id": "C",
+      "text": "Hand it to the desk on Monday and submit the damage report at the same time.",
+      "zh": "星期一把工具交給服務台，同時提交損壞通報。",
+      "whyZh": "歸還方式正確，但星期一才通報已晚於星期日下午五點，不符合免收逾期費的要件。"
+    },
+    {
+      "id": "D",
+      "text": "Tell someone at the courtyard on Sunday, then leave the tool by the closed desk that afternoon.",
+      "zh": "星期日在中庭口頭告知他人，當天下午把工具留在關閉的服務台旁。",
+      "whyZh": "在中庭口頭告知不能取代上網通報，把工具留在服務台旁也不是服務台重新開放時親手交還。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "五點前上網通報。電線受損不能在中庭歸還，服務台又到星期一才重新開放，所以重新開放時親手交還就符合免收逾期費的條件。",
+  "evidence": "Sunday: courtyard open, desk closed until Monday. | Damaged cable? Don't return it in the courtyard. | Report damage online before it's due. | Hand it in when the desk reopens. Do both to avoid late fees.",
+  "vocabulary": [
+    {
+      "term": "report damage",
+      "zh": "通報損壞",
+      "note": "此處是上網通報，不能以口頭通知替代。"
+    },
+    {
+      "term": "late fee",
+      "zh": "逾期費",
+      "note": "逾期費有條件免除，不等於可任意延後歸還。"
+    }
+  ],
+  "revision": 2
+}

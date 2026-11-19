@@ -1,0 +1,51 @@
+{
+  "id": "t02-q036-r2",
+  "testId": "test-02",
+  "number": 36,
+  "part": 3,
+  "groupId": "t02-g033",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "error log"
+  ],
+  "prompt": "An engineer wants to restore a unit now. What would that risk losing?",
+  "promptZh": "工程師想立刻還原其中一台機器。這樣可能失去什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Evidence the software team needs to recreate the failure.",
+      "zh": "軟體團隊重現故障所需的證據。",
+      "whyZh": "要先匯出錯誤記錄給軟體團隊重現問題；未儲存即還原，可能會失去這些證據。"
+    },
+    {
+      "id": "B",
+      "text": "The older version that works on the spare unit.",
+      "zh": "備用機上仍可運作的舊版。",
+      "whyZh": "備用機已有可用舊版，還原一台故障機不會改變備用機。"
+    },
+    {
+      "id": "C",
+      "text": "The customer’s reservation for tomorrow.",
+      "zh": "客戶明天的預約。",
+      "whyZh": "對話未說還原會取消展示。"
+    },
+    {
+      "id": "D",
+      "text": "The ability to keep any other unit unchanged.",
+      "zh": "保留其他機器狀態不變的機會。",
+      "whyZh": "留一台不動是另一項要求，還原某台不代表其他台也一定會被改動。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "要先匯出錯誤記錄給軟體團隊重現問題；未儲存即還原，可能會失去這些證據。",
+  "evidence": "Three demonstration units stopped responding after yesterday's firmware update. The older version still works on the spare unit. | Before we change anything, can you export the error logs? The software team needs them to reproduce the issue. | Yes, once the logs are saved. Keep one failed unit unchanged for further investigation.",
+  "vocabulary": [
+    {
+      "term": "restore",
+      "zh": "還原",
+      "note": "把設備或軟體恢復到原先的版本或狀態。"
+    }
+  ],
+  "revision": 2
+}

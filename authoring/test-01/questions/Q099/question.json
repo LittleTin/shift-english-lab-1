@@ -1,0 +1,57 @@
+{
+  "id": "t01-q099-r2",
+  "testId": "test-01",
+  "number": 99,
+  "part": 4,
+  "groupId": "t01-g054-r2",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "business",
+    "deadline"
+  ],
+  "prompt": "Which shipment is allowed to leave in the morning?",
+  "promptZh": "依短講的規定，哪一筆貨物可以在上午送出？",
+  "options": [
+    {
+      "id": "A",
+      "text": "An ordinary filter order approved before noon, with an open receiving desk.",
+      "zh": "一筆中午前核准、收貨櫃台也有開的一般濾芯訂單。",
+      "whyZh": "即使符合一般訂單的條件，安排的仍是下午班，不是上午班。"
+    },
+    {
+      "id": "B",
+      "text": "An approved safety-critical order whose receiving desk is closed, with staff at the gate.",
+      "zh": "一筆已核准且攸關安全的訂單；收貨櫃台關了，但大門有人值班。",
+      "whyZh": "已核准且攸關安全的訂單符合上午班例外。櫃台關閉時，司機可以交給大門值班人員。"
+    },
+    {
+      "id": "C",
+      "text": "A safety-critical order that has not been approved, with staff at the gate.",
+      "zh": "一筆尚未核准、但攸關安全的訂單；大門有人值班。",
+      "whyZh": "大門值班人員可以代收，卻不能取代事前核准。"
+    },
+    {
+      "id": "D",
+      "text": "An ordinary order with a closed receiving desk and enough space on the morning van.",
+      "zh": "一筆收貨櫃台已關閉的一般訂單；上午班車還有空位。",
+      "whyZh": "貨車有空位並不是上午班例外條件，這筆一般訂單不能搭上午班。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "已核准且攸關安全的訂單符合上午班例外。櫃台關閉時，司機可以交給大門值班人員。",
+  "evidence": "The morning exception requires an already-approved safety-critical shipment; the staffed gate substitutes for a closed desk, not for approval or eligibility.",
+  "vocabulary": [
+    {
+      "term": "safety-critical",
+      "zh": "攸關安全的",
+      "note": "指涉及安全、不能視為一般貨物的訂單。"
+    },
+    {
+      "term": "staffed gate",
+      "zh": "有值班人員的大門",
+      "note": "staffed 表示有人值班，可依規定簽收特定貨物。"
+    }
+  ],
+  "revision": 2
+}

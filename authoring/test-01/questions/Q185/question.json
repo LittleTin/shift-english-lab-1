@@ -1,0 +1,57 @@
+{
+  "id": "t01-q185",
+  "testId": "test-01",
+  "number": 185,
+  "part": 7,
+  "groupId": "t01-r-p7-12",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "What is scheduled to happen on September 8?",
+  "promptZh": "九月八日預定發生什麼事？",
+  "options": [
+    {
+      "text": "The order price will be increased",
+      "zh": "訂單價格將提高",
+      "whyZh": "出貨通知說總價不變。",
+      "id": "A"
+    },
+    {
+      "text": "The second shipment will leave the supplier’s warehouse",
+      "zh": "第二批將離開供應商倉庫",
+      "whyZh": "出貨通知寫明剩餘六十個將於九月八日出倉，未說當天到貨。",
+      "id": "B"
+    },
+    {
+      "text": "The second shipment is guaranteed to arrive at the plant",
+      "zh": "第二批保證當天到廠",
+      "whyZh": "文件提供的是出倉日期，不是到貨保證。",
+      "id": "C"
+    },
+    {
+      "text": "The laboratory will return forty sensors",
+      "zh": "實驗室將退回四十個",
+      "whyZh": "文件沒有退回安排。",
+      "id": "D"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "出貨通知寫明剩餘六十個將於九月八日出倉，未說當天到貨。",
+  "evidence": "The remaining 60 will leave our warehouse on September 8.",
+  "vocabulary": [
+    {
+      "term": "split shipment",
+      "zh": "分批出貨",
+      "note": "一筆訂單拆成不同批次運送。"
+    },
+    {
+      "term": "controlled stock area",
+      "zh": "受控庫存區",
+      "note": "依既定規則管理存放與領用的區域。"
+    }
+  ],
+  "revision": 1
+}

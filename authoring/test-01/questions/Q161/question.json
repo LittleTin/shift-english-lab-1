@@ -1,0 +1,57 @@
+{
+  "id": "t01-q161-r2",
+  "testId": "test-01",
+  "number": 161,
+  "part": 7,
+  "groupId": "t01-r-p7-05-r2",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "A customer wants official confirmation that a cable not shown on the card is supported. What should the sales team do?",
+  "promptZh": "有客戶希望得到正式確認，想知道清單上沒列出的線材是否受支援。業務團隊應該怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Tell the customer that a cable missing from the card will not work.",
+      "zh": "告訴客戶，沒列在清單上的線材一定不能用。",
+      "whyZh": "清單只列原型實際測過的線材；未列出不代表不能用。"
+    },
+    {
+      "id": "B",
+      "text": "Check the engineering office’s product specifications instead of relying on the card.",
+      "zh": "查閱工程部門發布的產品規格，不要只依賴這份清單。",
+      "whyZh": "原型相容性清單記錄實際做過的測試，不等於正式產品規格。要確認正式支援情況，應查工程部門另行發布的規格。"
+    },
+    {
+      "id": "C",
+      "text": "Send a copy of the card as the current product specification.",
+      "zh": "將這份清單寄給客戶，當作現行產品規格。",
+      "whyZh": "原型測試清單與正式產品規格用途不同；不能用測試清單代替正式規格。"
+    },
+    {
+      "id": "D",
+      "text": "Test whether the cable fits the blue stand’s opening and confirm support if it fits.",
+      "zh": "檢查線材能否穿過藍色展示架的開孔；只要穿得過就確認支援。",
+      "whyZh": "藍色展示架只展示外型和走線位置；線材可穿過開孔，不代表電氣功能相容或正式支援。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "原型相容性清單記錄實際做過的測試，不等於正式產品規格。要確認正式支援情況，應查工程部門另行發布的規格。",
+  "evidence": "The card lists the cables actually tested with the prototype. The engineering office issues official product specifications separately.",
+  "vocabulary": [
+    {
+      "term": "compatibility",
+      "zh": "相容性",
+      "note": "表示不同設備、配件等能否搭配使用；本題的原型測試清單不等於正式支援範圍。"
+    },
+    {
+      "term": "specification",
+      "zh": "規格",
+      "note": "正式定義產品特性或要求的文件；本題要確認線材支援情況，應查工程部門發布的產品規格。"
+    }
+  ],
+  "revision": 2
+}

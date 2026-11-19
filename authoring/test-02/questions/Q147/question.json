@@ -1,0 +1,52 @@
+{
+  "id": "t02-q147-r3",
+  "testId": "test-02",
+  "number": 147,
+  "part": 7,
+  "groupId": "t02-r-p7-01-r2",
+  "topic": "technology",
+  "difficulty": "advanced",
+  "tags": [
+    "technology",
+    "reading-comprehension"
+  ],
+  "prompt": "If Green scores 98 tomorrow, which plan meets the customer’s pickup and inspection requirements?",
+  "promptZh": "假設 Green 明天得到 98 分，哪個方案符合客戶的取貨與檢測要求？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Run Green at 10:00 after the engineer signs off in person at 9:55.",
+      "zh": "上午 9:55 由工程師親自簽核後，10:00 以 Green 進行檢測。",
+      "whyZh": "Green 與新款相機座相容，且明天的 98 分達標。工程師可在交接時先親自簽核；10:00 開始檢測，90 分鐘後於 11:30 完成，早於司機中午離開。"
+    },
+    {
+      "id": "B",
+      "text": "Run Green at 8:30 using the engineer’s sign-off from today.",
+      "zh": "沿用工程師今天的簽核，上午 8:30 以 Green 進行檢測。",
+      "whyZh": "上午 8:30 正在做參考測試，不能做試產檢測；今天的簽核也不能代替明天的測試結果及親自簽核。"
+    },
+    {
+      "id": "C",
+      "text": "Run Blue at 10:00 after transferring the pilot panels to carriers that fit the old mount.",
+      "zh": "把試產載板換到適用舊款相機座的載具，上午 10:00 以 Blue 進行檢測。",
+      "whyZh": "把載板換到適用舊款相機座的載具會破壞封條，違反客戶只收未拆封載板的條件。"
+    },
+    {
+      "id": "D",
+      "text": "Run Green at 1:00, using the engineer’s earlier signature.",
+      "zh": "沿用工程師稍早的簽名，下午 1:00 以 Green 進行檢測。",
+      "whyZh": "即使事先有簽名，下午才開始檢測也趕不上司機中午取貨。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "Green 與新款相機座相容，且明天的 98 分達標。工程師可在交接時先親自簽核；10:00 開始檢測，90 分鐘後於 11:30 完成，早於司機中午離開。",
+  "evidence": "The process engineer will check the score during the 9:45 to 10:00 handover. […] The station is available for booking from 10:00 to 11:30 […] that program scored at least 98 on the reference panel AND an engineer signs off in person before the run begins. […] The customer’s driver leaves at noon",
+  "vocabulary": [
+    {
+      "term": "sign off in person",
+      "zh": "親自簽核",
+      "note": "表示正式核准；此處指工程師本人在檢測開始前完成簽核。"
+    }
+  ],
+  "revision": 3
+}

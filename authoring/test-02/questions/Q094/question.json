@@ -1,0 +1,56 @@
+{
+  "id": "t02-q094",
+  "testId": "test-02",
+  "number": 94,
+  "part": 4,
+  "groupId": "t02-g052",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "permanent collection"
+  ],
+  "prompt": "At what time does the museum close?",
+  "promptZh": "博物館幾點關門？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Four in the afternoon.",
+      "zh": "下午四點。",
+      "whyZh": "四點是咖啡廳打烊時間。"
+    },
+    {
+      "id": "B",
+      "text": "Five in the afternoon.",
+      "zh": "下午五點。",
+      "whyZh": "咖啡廳四點關，比博物館早一小時，因此博物館五點關。"
+    },
+    {
+      "id": "C",
+      "text": "Two fifteen.",
+      "zh": "兩點十五分。",
+      "whyZh": "這是導覽開始時間。"
+    },
+    {
+      "id": "D",
+      "text": "Three in the afternoon.",
+      "zh": "下午三點。",
+      "whyZh": "由四點再加一小時才是博物館關門時間，不是三點。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "咖啡廳四點關，比博物館早一小時，因此博物館五點關。",
+  "evidence": "The cafe will close at four, one hour before the museum.",
+  "vocabulary": [
+    {
+      "term": "permanent collection",
+      "zh": "常設展藏品",
+      "note": "長期展示的館藏，與特展相對。"
+    },
+    {
+      "term": "admission",
+      "zh": "入場",
+      "note": "general admission ticket 指一般入場券。"
+    }
+  ],
+  "revision": 1
+}

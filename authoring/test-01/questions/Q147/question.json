@@ -1,0 +1,52 @@
+{
+  "id": "t01-q147-r2",
+  "testId": "test-01",
+  "number": 147,
+  "part": 7,
+  "groupId": "t01-r-p7-01-r2",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "daily",
+    "reading-comprehension"
+  ],
+  "prompt": "Robin arrives without a table booking, and no one has canceled. Robin wants advice right away and would still like a volunteer to sew the item if a session opens later. Which plan fits both goals?",
+  "promptZh": "Robin 到場時沒有預約修補桌，也還沒有人取消預約。Robin 想立刻獲得建議，如果稍後有空出的時段，也希望請志工縫補。哪個做法符合這兩個目標？",
+  "options": [
+    {
+      "text": "Ask for advice at the entrance now, then book a table session if someone cancels.",
+      "zh": "先到入口諮詢；若有人取消，再預約修補桌時段。",
+      "whyZh": "入口諮詢不用預約；要讓志工動手縫補，則得等有人取消，再預約空出的時段。",
+      "id": "A"
+    },
+    {
+      "text": "Ask for advice at the entrance now, then ask the same volunteer to sew the item there.",
+      "zh": "先到入口諮詢，再請同一名志工在入口縫補。",
+      "whyZh": "現在可以在入口取得建議，但諮詢桌不提供縫補。",
+      "id": "B"
+    },
+    {
+      "text": "Take an available table session now and get repair advice there.",
+      "zh": "現在就取得一個修補桌時段，再到修補桌請教。",
+      "whyZh": "修補桌確實能提供縫補，但沒有現成時段；只有他人取消才會釋出。",
+      "id": "C"
+    },
+    {
+      "text": "Wait for a cancellation before asking any volunteer for advice.",
+      "zh": "先等有人取消，再向志工尋求建議。",
+      "whyZh": "等候取消適用於預約縫補，不適用於諮詢；這也無法讓 Robin 立刻得到建議。",
+      "id": "D"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "入口諮詢不用預約；要讓志工動手縫補，則得等有人取消，再預約空出的時段。",
+  "evidence": "Entrance desk offers immediate advice without booking but no sewing. Sewing is limited to booked table sessions; walk-in availability is cancellation-only.",
+  "vocabulary": [
+    {
+      "term": "drop-in line",
+      "zh": "現場排隊諮詢",
+      "note": "不用事先預約即可排隊；此處僅提供查看和建議。"
+    }
+  ],
+  "revision": 2
+}

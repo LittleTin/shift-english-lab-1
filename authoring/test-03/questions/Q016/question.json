@@ -1,0 +1,46 @@
+{
+  "id": "t03-q016",
+  "testId": "test-03",
+  "number": 16,
+  "part": 2,
+  "groupId": "t03-g016",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "daily",
+    "question_response"
+  ],
+  "prompt": "Is the exhibition hall within walking distance?",
+  "promptZh": "展覽館在步行可到的距離內嗎？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The exhibition ends tomorrow.",
+      "zh": "展覽明天結束。",
+      "whyZh": "說明展期而非距離。"
+    },
+    {
+      "id": "B",
+      "text": "About ten minutes along the river.",
+      "zh": "沿河走大約十分鐘。",
+      "whyZh": "提供短程步行時間與路線，等於肯定回答。"
+    },
+    {
+      "id": "C",
+      "text": "The walking tour costs fifteen dollars.",
+      "zh": "步行導覽費用是十五元。",
+      "whyZh": "回答導覽費用，沒有說明展覽館距離。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "提供短程步行時間與路線，等於肯定回答。",
+  "evidence": "About ten minutes along the river.",
+  "vocabulary": [
+    {
+      "term": "within walking distance",
+      "zh": "步行可達",
+      "note": "About ten minutes along the river."
+    }
+  ],
+  "revision": 1
+}

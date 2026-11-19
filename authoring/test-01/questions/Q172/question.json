@@ -1,0 +1,57 @@
+{
+  "id": "t01-q172",
+  "testId": "test-01",
+  "number": 172,
+  "part": 7,
+  "groupId": "t01-r-p7-09",
+  "topic": "daily",
+  "difficulty": "foundation",
+  "tags": [
+    "daily",
+    "reading-comprehension"
+  ],
+  "prompt": "When is delivery free?",
+  "promptZh": "何種情況免運？",
+  "options": [
+    {
+      "text": "When any vegetarian set is ordered",
+      "zh": "只要有訂購素食套餐",
+      "whyZh": "素食餐同價，與免運條件無關。",
+      "id": "A"
+    },
+    {
+      "text": "When the order is placed after 10:45 a.m.",
+      "zh": "十點四十五分後訂購時",
+      "whyZh": "10:45 是更改數量或餐點的截止時間；是否免運取決於份數與送達地址。",
+      "id": "B"
+    },
+    {
+      "text": "When at least ten sets go to a single address",
+      "zh": "至少十份送到同一地址時",
+      "whyZh": "免運須同時符合十份以上及單一地址。",
+      "id": "C"
+    },
+    {
+      "text": "When customers request evening delivery",
+      "zh": "要求晚間外送時",
+      "whyZh": "店家不提供晚間外送。",
+      "id": "D"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "免運須同時符合十份以上及單一地址。",
+  "evidence": "Delivery is free for orders of ten sets or more to one address.",
+  "vocabulary": [
+    {
+      "term": "designate",
+      "zh": "指定",
+      "note": "指派特定人員負責某項工作。"
+    },
+    {
+      "term": "incur a fee",
+      "zh": "產生費用",
+      "note": "因使用服務或符合某條件而需付費。"
+    }
+  ],
+  "revision": 1
+}

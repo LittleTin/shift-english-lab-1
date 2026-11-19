@@ -1,0 +1,57 @@
+{
+  "id": "t02-q163-r2",
+  "testId": "test-02",
+  "number": 163,
+  "part": 7,
+  "groupId": "t02-r-p7-06-r2",
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "daily",
+    "reading-comprehension"
+  ],
+  "prompt": "Which version could the museum display now under both of the curator’s rules?",
+  "promptZh": "按照策展人的兩項規則，博物館現在可以採用哪一種展示方式？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Show “BOAT PINS” and state as a museum finding that the tin held biscuits, citing the recording.",
+      "zh": "呈現「BOAT PINS」原文，並引用錄音，將「鐵盒曾裝餅乾」寫成博物館的研究結論。",
+      "whyZh": "保留原文字樣符合第一項，但錄音只提到分享食物，沒辨認這個鐵盒，也沒證實盒裡是餅乾。"
+    },
+    {
+      "id": "B",
+      "text": "Show “BISCUITS” instead of “BOAT PINS” and identify the biscuit story as Ada’s recollection.",
+      "zh": "以「BISCUITS」取代「BOAT PINS」，並把餅乾故事註明為艾達的回憶。",
+      "whyZh": "標明回憶來源符合第二項，但拿掉文物原文違反第一項。"
+    },
+    {
+      "id": "C",
+      "text": "Show “BOAT PINS” and report that the two former workers both identified the tin as a food container.",
+      "zh": "呈現「BOAT PINS」原文，並寫兩名昔日員工均確認這個鐵盒是裝食物的容器。",
+      "whyZh": "另一名員工的錄音沒有辨認容器，不能把談話改寫為兩人都確認同一個鐵盒。"
+    },
+    {
+      "id": "D",
+      "text": "Show “BOAT PINS” and explain that Ada recalled the tin being used for biscuits.",
+      "zh": "呈現「BOAT PINS」原文，並說明艾達回憶這個鐵盒曾用來裝餅乾。",
+      "whyZh": "照錄原文，並把用途清楚歸於親歷者的回憶，而不是把它寫成已獲獨立來源佐證的結論。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "錄音沒有指認同一個鐵盒，無法佐證館方結論。策展人仍可保留文物上的原文，並註明餅乾是艾達的回憶；兩項規則都能遵守。",
+  "evidence": "Paragraphs 1 and 2: recording did not identify the tin; original-object wording stays; a museum finding needs independent corroboration about the same object and claim.",
+  "vocabulary": [
+    {
+      "term": "firsthand recollection",
+      "zh": "親歷者的回憶",
+      "note": "由當事人敘述自己記得的事情。"
+    },
+    {
+      "term": "independent source",
+      "zh": "獨立來源",
+      "note": "不是轉述同一人說法的證據來源。"
+    }
+  ],
+  "revision": 2
+}

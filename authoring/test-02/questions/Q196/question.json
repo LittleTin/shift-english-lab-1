@@ -1,0 +1,57 @@
+{
+  "id": "t02-q196",
+  "testId": "test-02",
+  "number": 196,
+  "part": 7,
+  "groupId": "t02-r-p7-15",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "What problem was found during the audit?",
+  "promptZh": "稽核發現哪個問題？",
+  "options": [
+    {
+      "text": "No employees were present at the packing station",
+      "zh": "稽核時，包裝站沒有任何員工在場。",
+      "whyZh": "稽核見到兩名作業員。",
+      "id": "A"
+    },
+    {
+      "text": "The supplier had never issued any packing instructions",
+      "zh": "供應商從未發布任何包裝作業指導書。",
+      "whyZh": "已有第二及第三版，問題是版本管制。",
+      "id": "B"
+    },
+    {
+      "text": "Every inspected product was damaged",
+      "zh": "每件受查產品都損壞",
+      "whyZh": "抽查沒有發現產品損傷。",
+      "id": "C"
+    },
+    {
+      "text": "Operators were using an outdated packing instruction",
+      "zh": "作業員仍在使用已失效的包裝作業指導書。",
+      "whyZh": "兩名作業員仍在使用第二版包裝作業指導書，但第三版早在一週前就已發布。",
+      "id": "D"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "兩名作業員仍在使用第二版包裝作業指導書，但第三版早在一週前就已發布。",
+  "evidence": "two operators were using revision 2 ... although revision 3 had been released",
+  "vocabulary": [
+    {
+      "term": "obsolete",
+      "zh": "已失效的；已作廢的",
+      "note": "文件已由新版本取代，不可再當作現行作業依據。"
+    },
+    {
+      "term": "corrective action",
+      "zh": "矯正措施",
+      "note": "針對已發現問題採取的改善行動。"
+    }
+  ],
+  "revision": 1
+}

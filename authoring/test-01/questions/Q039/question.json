@@ -1,0 +1,52 @@
+{
+  "id": "t01-q039",
+  "testId": "test-01",
+  "number": 39,
+  "part": 3,
+  "groupId": "t01-g034",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "business",
+    "inference"
+  ],
+  "prompt": "Why is Room D unsuitable?",
+  "promptZh": "D 會議室為什麼不合適？",
+  "options": [
+    {
+      "id": "A",
+      "text": "It is unavailable until noon.",
+      "zh": "它中午前都無法使用。",
+      "whyZh": "free until noon 描述的是三樓訓練教室，不是 D 室。"
+    },
+    {
+      "id": "B",
+      "text": "It has no projector.",
+      "zh": "它沒有投影機。",
+      "whyZh": "男子明確說 D 室有一台能用的投影機。"
+    },
+    {
+      "id": "C",
+      "text": "It cannot seat everyone.",
+      "zh": "它無法容納所有人。",
+      "whyZh": "D 室只能坐八人，而出席者有十二人，容量不足。"
+    },
+    {
+      "id": "D",
+      "text": "It is on another company campus.",
+      "zh": "它在公司的另一個園區。",
+      "whyZh": "對話沒有說 D 室在不同園區。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "D 室只能坐八人，而出席者有十二人，容量不足。",
+  "evidence": "it only seats eight.",
+  "vocabulary": [
+    {
+      "term": "seat",
+      "zh": "可容納……人就坐",
+      "note": "此處為動詞，表示座位容量。"
+    }
+  ],
+  "revision": 1
+}

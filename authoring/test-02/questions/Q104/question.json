@@ -1,0 +1,52 @@
+{
+  "id": "t02-q104-r3",
+  "testId": "test-02",
+  "number": 104,
+  "part": 5,
+  "groupId": null,
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "technology",
+    "grammar"
+  ],
+  "prompt": "The team can no longer check how the battery performed during the blackout because the backup logger was disconnected. Had the logger stayed connected, the team ____ the missing readings.",
+  "promptZh": "由於備用資料記錄器當時已斷開連線，團隊現在無法確認停電期間的電池表現。如果當時記錄器仍保持連線，團隊就____缺少的讀值。",
+  "options": [
+    {
+      "id": "A",
+      "text": "will be able to recover",
+      "zh": "將能找回",
+      "whyZh": "這會把結果寫成未來可能實現的能力，與文中現在已無法查到讀值相反。"
+    },
+    {
+      "id": "B",
+      "text": "was able to recover",
+      "zh": "當時成功找回",
+      "whyZh": "這指當時已實際找回，但記錄器已斷線，這些讀值並沒有找回。"
+    },
+    {
+      "id": "C",
+      "text": "would otherwise recover",
+      "zh": "否則就會找回",
+      "whyZh": "otherwise 會再引入另一個條件； recover 也沒有表達此處對已過去、未成真的結果所需的完成式。"
+    },
+    {
+      "id": "D",
+      "text": "would have been able to recover",
+      "zh": "本來就能找回",
+      "whyZh": "Had the logger stayed connected 等於 If the logger had stayed connected；它假設過去發生了不同的情況，所以用 would have been able to 表達未能實現的能力。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "Had the logger stayed connected 等於 If the logger had stayed connected；它假設過去發生了不同的情況，所以用 would have been able to 表達未能實現的能力。",
+  "evidence": "can no longer check […] Had the logger stayed connected",
+  "vocabulary": [
+    {
+      "term": "logger",
+      "zh": "資料記錄器",
+      "note": "自動擷取並儲存設備讀值的裝置。"
+    }
+  ],
+  "revision": 3
+}

@@ -1,0 +1,53 @@
+{
+  "id": "t03-q151-r2",
+  "testId": "test-03",
+  "number": 151,
+  "part": 7,
+  "groupId": "t03-g061-r2",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "daily",
+    "notice",
+    "context"
+  ],
+  "prompt": "Three colleagues are bringing one torn bag. Two want to work on it together, and the third only wants to watch. What should they arrange?",
+  "promptZh": "三位同事會帶一個破掉的袋子來。兩人想一起修袋子，第三人只想旁觀。他們應如何安排？",
+  "options": [
+    {
+      "id": "A",
+      "text": "One table booking and one visitor pass",
+      "zh": "預約一張工作桌和一張旁觀通行證。",
+      "whyZh": "一件物品可預約一張桌，供兩人一起修理；第三人只想看，可另外預約旁觀通行證。"
+    },
+    {
+      "id": "B",
+      "text": "Two table bookings and no visitor pass",
+      "zh": "預約兩張工作桌，不用旁觀通行證。",
+      "whyZh": "同一組須帶兩件不同的待修物品才能預約兩張工作桌；他們只有一件。"
+    },
+    {
+      "id": "C",
+      "text": "Three visitor passes and no table booking",
+      "zh": "預約三張旁觀通行證，不預約工作桌。",
+      "whyZh": "通行證只能進旁觀區，不能在桌邊參與修理；其中兩人想動手。"
+    },
+    {
+      "id": "D",
+      "text": "One table booking for all three colleagues",
+      "zh": "預約一張工作桌，讓三位同事一起使用。",
+      "whyZh": "一張工作桌最多兩人，包含帶物品來的人，因此不能三人一起使用。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "一件物品可預約一張桌，供兩人一起修理；第三人只想看，可另外預約旁觀通行證。",
+  "evidence": "Each table booking covers one item and up to two people […] a third person wants to learn by watching, they can reserve a separate visitor pass.",
+  "vocabulary": [
+    {
+      "term": "visitor pass",
+      "zh": "旁觀通行證",
+      "note": "可進旁觀區觀看修理，但不能加入工作桌邊的修理作業。"
+    }
+  ],
+  "revision": 2
+}

@@ -1,0 +1,45 @@
+{
+  "id": "t02-q022",
+  "testId": "test-02",
+  "number": 22,
+  "part": 2,
+  "groupId": "t02-g022",
+  "topic": "technology",
+  "difficulty": "foundation",
+  "tags": [
+    "question-response"
+  ],
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+  "options": [
+    {
+      "id": "A",
+      "text": "The engineer ordered coffee.",
+      "zh": "那位工程師點了咖啡。",
+      "whyZh": "engineering change order 是文件名稱，不能解讀成工程師點餐。"
+    },
+    {
+      "id": "B",
+      "text": "It changes color in sunlight.",
+      "zh": "它在陽光下會變色。",
+      "whyZh": "顏色改變與工程變更文件版本無關。"
+    },
+    {
+      "id": "C",
+      "text": "All right, I will replace the old copy.",
+      "zh": "好的，我會替換舊版。",
+      "whyZh": "使用新版的直接做法是替換舊版文件。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "使用新版的直接做法是替換舊版文件。",
+  "evidence": "Please use the updated engineering change order.",
+  "vocabulary": [
+    {
+      "term": "engineering change order",
+      "zh": "工程變更單",
+      "note": "記錄並管理工程設計變更的文件；實際名稱與核准流程依組織而異。"
+    }
+  ],
+  "revision": 1
+}

@@ -1,0 +1,52 @@
+{
+  "id": "t02-q076-r2",
+  "testId": "test-02",
+  "number": 76,
+  "part": 4,
+  "groupId": "t02-g046-r2",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "workplace",
+    "listening-inference"
+  ],
+  "prompt": "Other projects open after restart, but one is gone. What should the user do?",
+  "promptZh": "系統恢復後，其他專案都打得開，卻少了一個。使用者該怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Ask whether the server is still offline.",
+      "zh": "去問伺服器是否還在離線狀態。",
+      "whyZh": "已收到恢復通知，也打得開其他資料夾。"
+    },
+    {
+      "id": "B",
+      "text": "Create another folder with the project name.",
+      "zh": "用相同的專案名稱新建一個資料夾。",
+      "whyZh": "明確交代不要建同名資料夾。"
+    },
+    {
+      "id": "C",
+      "text": "Upload a copy of the project to the support website.",
+      "zh": "把專案副本上傳到客服網站。",
+      "whyZh": "客服網站沒有被指定用來補傳遺失的專案資料。"
+    },
+    {
+      "id": "D",
+      "text": "Report the specific folder name to the help desk.",
+      "zh": "向服務台回報找不到的資料夾名稱。",
+      "whyZh": "這是單一資料夾遺失，不是整台伺服器離線。把該資料夾的名稱回報服務台，不要自己重建。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "這是單一資料夾遺失，不是整台伺服器離線。把該資料夾的名稱回報服務台，不要自己重建。",
+  "evidence": "Reconnect after the all-clear. Missing just one folder? Tell the help desk its name. Don’t recreate it.",
+  "vocabulary": [
+    {
+      "term": "all-clear",
+      "zh": "恢復使用通知",
+      "note": "表示維護完成，可以重新連線的通知。"
+    }
+  ],
+  "revision": 2
+}

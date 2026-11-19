@@ -1,0 +1,56 @@
+{
+  "id": "t02-q042",
+  "testId": "test-02",
+  "number": 42,
+  "part": 3,
+  "groupId": "t02-g035",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "packing list"
+  ],
+  "prompt": "What has the man already done?",
+  "promptZh": "男方已經做了什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Stopped the shipment.",
+      "zh": "暫停出貨。",
+      "whyZh": "他在開頭明說已停止出貨。"
+    },
+    {
+      "id": "B",
+      "text": "Reprinted every label.",
+      "zh": "重印所有標籤。",
+      "whyZh": "對話只說要查列印紀錄，且核准前不得重貼，沒有說已重印全部標籤。"
+    },
+    {
+      "id": "C",
+      "text": "Discarded the old printer.",
+      "zh": "丟棄舊印表機。",
+      "whyZh": "印表機僅被懷疑用了舊模板，沒有被丟棄。"
+    },
+    {
+      "id": "D",
+      "text": "Changed the customer order.",
+      "zh": "修改客戶訂單。",
+      "whyZh": "對話沒有修改訂單。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "他在開頭明說已停止出貨。",
+  "evidence": "I have stopped the shipment.",
+  "vocabulary": [
+    {
+      "term": "packing list",
+      "zh": "裝箱單",
+      "note": "列示包裝內貨物與數量的文件。"
+    },
+    {
+      "term": "holding area",
+      "zh": "暫存區",
+      "note": "在等待確認或處置期間暫時放置物品的區域。"
+    }
+  ],
+  "revision": 1
+}

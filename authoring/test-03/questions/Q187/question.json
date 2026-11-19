@@ -1,0 +1,53 @@
+{
+  "id": "t03-q187",
+  "testId": "test-03",
+  "number": 187,
+  "part": 7,
+  "groupId": "t03-g071",
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "business",
+    "reading-comprehension",
+    "triple"
+  ],
+  "prompt": "Which ticket should the assistant book to satisfy all stated requirements?",
+  "promptZh": "助理應訂哪張票才符合所有條件？",
+  "options": [
+    {
+      "text": "E24 flexible, $64",
+      "zh": "E24 彈性票 $64",
+      "whyZh": "抵達車站十一點十分，已晚於測試。",
+      "id": "A"
+    },
+    {
+      "text": "E12 standard, $46",
+      "zh": "E12 標準票 $46",
+      "whyZh": "出發早於八點，且不能改班次。",
+      "id": "B"
+    },
+    {
+      "text": "E18 standard, $52",
+      "zh": "E18 標準票 $52",
+      "whyZh": "時間符合，但無法改班次，不符需求。",
+      "id": "C"
+    },
+    {
+      "text": "E18 flexible, $70",
+      "zh": "E18 彈性票 $70",
+      "whyZh": "E18 於上午 8:20 出發，10:00 到站，搭約 25 分鐘的計程車可在 10:30 前到會場。$70 的彈性票可更改班次，且不超過 $75 的報銷上限。",
+      "id": "D"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "E18 於上午 8:20 出發，10:00 到站，搭約 25 分鐘的計程車可在 10:30 前到會場。$70 的彈性票可更改班次，且不超過 $75 的報銷上限。",
+  "evidence": "E18 ... 08:20 ... 10:00 ... flexible fare $70 / cannot leave before eight / change trains",
+  "vocabulary": [
+    {
+      "term": "flexible fare",
+      "zh": "彈性票價",
+      "note": "本題閱讀重點詞彙。"
+    }
+  ],
+  "revision": 1
+}

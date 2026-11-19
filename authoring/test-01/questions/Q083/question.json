@@ -1,0 +1,52 @@
+{
+  "id": "t01-q083-v2",
+  "testId": "test-01",
+  "number": 83,
+  "part": 4,
+  "groupId": "t01-g049",
+  "topic": "manufacturing",
+  "difficulty": "advanced",
+  "tags": [
+    "manufacturing",
+    "graphic-inference"
+  ],
+  "prompt": "Look at the graphic. Which check-in zone should drivers delivering electronic components use next week?",
+  "promptZh": "請看圖表。下週運送電子零件的司機應到哪個報到區？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The blue zone",
+      "zh": "藍色區",
+      "whyZh": "藍色是第一號裝卸區。"
+    },
+    {
+      "id": "B",
+      "text": "The green zone",
+      "zh": "綠色區",
+      "whyZh": "綠色是第二號裝卸區，保留給成品出貨。"
+    },
+    {
+      "id": "C",
+      "text": "The red zone",
+      "zh": "紅色區",
+      "whyZh": "紅色是第三號裝卸區。"
+    },
+    {
+      "id": "D",
+      "text": "The yellow zone",
+      "zh": "黃色區",
+      "whyZh": "黃色對應新的第四號裝卸區。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "廣播改為使用四號裝卸區；圖表將四號裝卸區配到黃色報到區。",
+  "evidence": "“Trucks carrying electronic components must use Dock Four instead of Dock Two.” → Dock Four: Yellow.",
+  "vocabulary": [
+    {
+      "term": "electronic component",
+      "zh": "電子零件",
+      "note": "構成電子設備的個別元件。"
+    }
+  ],
+  "revision": 2
+}

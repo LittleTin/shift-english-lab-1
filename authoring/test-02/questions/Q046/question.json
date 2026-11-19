@@ -1,0 +1,56 @@
+{
+  "id": "t02-q046",
+  "testId": "test-02",
+  "number": 46,
+  "part": 3,
+  "groupId": "t02-g036-r2",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "forecast"
+  ],
+  "prompt": "When will the revised quotation be sent?",
+  "promptZh": "修訂報價何時會寄出？",
+  "options": [
+    {
+      "id": "A",
+      "text": "At the end of the first quarter.",
+      "zh": "第一季結束時。",
+      "whyZh": "第一季是需求預測期間，不是報價寄送期限。"
+    },
+    {
+      "id": "B",
+      "text": "By tomorrow afternoon.",
+      "zh": "最遲明天下午。",
+      "whyZh": "男方承諾最遲會在明天下午以電子郵件寄出修訂報價。"
+    },
+    {
+      "id": "C",
+      "text": "After one thousand units are ordered.",
+      "zh": "訂購一千台後。",
+      "whyZh": "沒有這項寄送條件。"
+    },
+    {
+      "id": "D",
+      "text": "In six months.",
+      "zh": "六個月後。",
+      "whyZh": "six hundred 是數量，不能解讀成六個月。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "男方承諾最遲會在明天下午以電子郵件寄出修訂報價。",
+  "evidence": "by tomorrow afternoon",
+  "vocabulary": [
+    {
+      "term": "forecast",
+      "zh": "預測",
+      "note": "本題是預估需求量，不等於已確認的採購訂單。"
+    },
+    {
+      "term": "unit price",
+      "zh": "單價",
+      "note": "每一單位產品的價格。"
+    }
+  ],
+  "revision": 1
+}

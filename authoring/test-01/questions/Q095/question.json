@@ -1,0 +1,52 @@
+{
+  "id": "t01-q095",
+  "testId": "test-01",
+  "number": 95,
+  "part": 4,
+  "groupId": "t01-g053-r2",
+  "topic": "daily",
+  "difficulty": "foundation",
+  "tags": [
+    "daily",
+    "included_service"
+  ],
+  "prompt": "What is included in a regular admission ticket?",
+  "promptZh": "一般門票包含下列哪一項？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A photography-exhibition ticket.",
+      "zh": "攝影特展門票。",
+      "whyZh": "攝影特展 requires a separate ticket，不在一般票內。"
+    },
+    {
+      "id": "B",
+      "text": "A meal in the museum restaurant.",
+      "zh": "博物館餐廳的一餐。",
+      "whyZh": "沒有提到餐飲包含在門票內。"
+    },
+    {
+      "id": "C",
+      "text": "A free printed photograph.",
+      "zh": "一張免費沖印照片。",
+      "whyZh": "photography 指展覽主題，未提供免費沖印。"
+    },
+    {
+      "id": "D",
+      "text": "The guided tour at two thirty.",
+      "zh": "兩點半的導覽。",
+      "whyZh": "公告說一般門票包含常設展與今天兩點半導覽；攝影特展另購票。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "公告說一般門票包含常設展與今天兩點半導覽；攝影特展另購票。",
+  "evidence": "Regular admission includes the permanent collection and today's guided tour at two thirty.",
+  "vocabulary": [
+    {
+      "term": "permanent collection",
+      "zh": "常設收藏展",
+      "note": "長期展示館藏的展覽內容。"
+    }
+  ],
+  "revision": 1
+}

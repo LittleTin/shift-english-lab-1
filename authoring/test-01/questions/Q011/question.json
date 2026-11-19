@@ -1,0 +1,51 @@
+{
+  "id": "t01-q011",
+  "testId": "test-01",
+  "number": 11,
+  "part": 2,
+  "groupId": "t01-g011",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "completion"
+  ],
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽題目，選出最合適的回應。",
+  "options": [
+    {
+      "id": "A",
+      "text": "Not yet; the wireless connection is down.",
+      "zh": "還沒；無線網路連線中斷了。",
+      "whyZh": "Have you ... yet 問是否已完成；not yet 明確否定，並解釋因網路中斷而尚未上傳。"
+    },
+    {
+      "id": "B",
+      "text": "Only two units failed.",
+      "zh": "只有兩台未通過。",
+      "whyZh": "不良數量沒有回答照片是否已上傳。"
+    },
+    {
+      "id": "C",
+      "text": "They prefer the glossy finish.",
+      "zh": "他們比較喜歡亮面處理。",
+      "whyZh": "外觀表面偏好與上傳缺陷照片無關。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "Have you ... yet 問是否已完成；not yet 明確否定，並解釋因網路中斷而尚未上傳。",
+  "evidence": "Have you uploaded the defect photos yet?",
+  "vocabulary": [
+    {
+      "term": "defect",
+      "zh": "缺陷",
+      "note": "產品不符合要求的問題。"
+    },
+    {
+      "term": "be down",
+      "zh": "中斷；無法運作",
+      "note": "描述網路或系統暫時無法使用。"
+    }
+  ],
+  "revision": 1
+}

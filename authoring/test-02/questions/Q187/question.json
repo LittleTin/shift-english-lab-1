@@ -1,0 +1,57 @@
+{
+  "id": "t02-q187-r2",
+  "testId": "test-02",
+  "number": 187,
+  "part": 7,
+  "groupId": "t02-r-p7-13",
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "business",
+    "reading-comprehension"
+  ],
+  "prompt": "Which charge should receive the 10% discount?",
+  "promptZh": "哪一項費用應打九折？",
+  "options": [
+    {
+      "text": "An additional tax charge",
+      "zh": "額外稅額",
+      "whyZh": "報價明確不再加稅，也無此折扣對象。",
+      "id": "A"
+    },
+    {
+      "text": "The training fee only",
+      "zh": "只有訓練費",
+      "whyZh": "報價明確將折扣限於訓練費，排除場租。",
+      "id": "B"
+    },
+    {
+      "text": "The deposit only",
+      "zh": "只有訂金",
+      "whyZh": "訂金是先付金額，不是應折扣的費用。",
+      "id": "C"
+    },
+    {
+      "text": "Both training and room rental",
+      "zh": "訓練費及場租",
+      "whyZh": "場租明確不打折。",
+      "id": "D"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "報價明確將折扣限於訓練費，排除場租。",
+  "evidence": "receive a 10% discount on training fees. Room rental ... is not discounted.",
+  "vocabulary": [
+    {
+      "term": "balance due",
+      "zh": "應付餘額",
+      "note": "扣除已付金額後仍需支付的款項。"
+    },
+    {
+      "term": "fixed charge",
+      "zh": "固定費用",
+      "note": "不因本題參加人數而改變的費用。"
+    }
+  ],
+  "revision": 2
+}

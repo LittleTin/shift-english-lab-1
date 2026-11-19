@@ -1,0 +1,53 @@
+{
+  "id": "t03-q179-r2",
+  "testId": "test-03",
+  "number": 179,
+  "part": 7,
+  "groupId": "t03-g069-r2",
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "business",
+    "reading-comprehension",
+    "double"
+  ],
+  "prompt": "If Alex learns at 4:30 p.m. on April 8 that the workshop must be postponed, which action avoids a room charge for April 10 and follows the centre’s terms?",
+  "promptZh": "如果 Alex 在四月八日下午四點半得知工作坊必須延期，哪項做法符合會議中心條款，又能免付四月十日場次的場地費？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Cancel the reservation at 4:30 p.m. on April 8 without giving a replacement date.",
+      "zh": "四月八日下午四點半直接取消，不提供替代日期。",
+      "whyZh": "此時距四月十日只剩兩個日曆日，已超過提前七個日曆日免費取消的期限，會收取原場次的全額場地費。"
+    },
+    {
+      "id": "B",
+      "text": "Request a transfer to April 29 at 5:15 p.m. on April 8.",
+      "zh": "四月八日下午五點十五分申請改訂四月二十九日。",
+      "whyZh": "四月二十九日符合改期範圍且有空位，但免收原場次費用的申請最遲須在四月八日下午五點提出。"
+    },
+    {
+      "id": "C",
+      "text": "Request a transfer to April 29 as soon as the decision is made.",
+      "zh": "一確定延期，就立即申請改訂四月二十九日。",
+      "whyZh": "四月八日下午四點半尚未到改期截止時間；四月二十九日已有空位，距原活動日十九天，符合三十天內的限制。原場次不收費，新場次仍按一般費率計費。"
+    },
+    {
+      "id": "D",
+      "text": "Request a transfer to May 17 as soon as the decision is made.",
+      "zh": "一確定延期，就立即申請改訂五月十七日。",
+      "whyZh": "申請時間符合期限，但五月十七日距四月十日三十七天，超過三十個日曆日，不能用這項免收原場次費用的安排。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "四月八日下午四點半尚未到改期截止時間；四月二十九日已有空位，距原活動日十九天，符合三十天內的限制。原場次不收費，新場次仍按一般費率計費。",
+  "evidence": "Reservations may be cancelled without charge until seven calendar days before the event. / an available date within 30 calendar days after the original event date / by 5 p.m. two calendar days before the original event. / On April 8 at 4:30 p.m. / April 29 and May 17 are both available",
+  "vocabulary": [
+    {
+      "term": "transfer the booking",
+      "zh": "將預訂改期",
+      "note": "保留活動的預訂，但更改日期；與取消原場次不同。"
+    }
+  ],
+  "revision": 2
+}

@@ -1,0 +1,52 @@
+{
+  "id": "t02-q105-r2",
+  "testId": "test-02",
+  "number": 105,
+  "part": 5,
+  "groupId": null,
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "grammar"
+  ],
+  "prompt": "The warehouse log and the packing slips show different counts for the same shipments. Finance needs one confirmed count for each shipment. Before sending the figures, please ____ the two sets of records without changing either original.",
+  "promptZh": "倉庫紀錄與裝箱單對同一批出貨列出的數量不同。財務部門需要每批出貨一個經核實的數量。請先____這兩套紀錄再將數字送出，且不要修改任一份原始文件。",
+  "options": [
+    {
+      "id": "A",
+      "text": "reconcile",
+      "zh": "逐筆核對差異",
+      "whyZh": "每批出貨都只能提交一個經核實的數量，因此須逐筆比對兩套紀錄並查明差異，且保留原始文件不變。"
+    },
+    {
+      "id": "B",
+      "text": "consolidate",
+      "zh": "合併彙整",
+      "whyZh": "合併只是把數字彙整到同一處，不能釐清哪個數字正確，因此無法單靠彙整提供每批出貨經核實的數量。"
+    },
+    {
+      "id": "C",
+      "text": "duplicate",
+      "zh": "複製",
+      "whyZh": "多做一份副本不會釐清哪個出貨數字正確。"
+    },
+    {
+      "id": "D",
+      "text": "reclassify",
+      "zh": "重新分類",
+      "whyZh": "重新分類會調整項目歸屬，但目前要釐清的是同批出貨數量不一致，而非分類有誤。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "每批出貨都只能提交一個經核實的數量，因此須逐筆比對兩套紀錄並查明差異，且保留原始文件不變。",
+  "evidence": "different counts for the same shipments […] Finance needs one confirmed count for each shipment […] without changing either original",
+  "vocabulary": [
+    {
+      "term": "reconcile records",
+      "zh": "核對紀錄",
+      "note": "比對不同來源的紀錄，找出不一致並說明差異。"
+    }
+  ],
+  "revision": 2
+}

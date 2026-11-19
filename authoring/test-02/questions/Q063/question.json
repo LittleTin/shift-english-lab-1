@@ -1,0 +1,52 @@
+{
+  "id": "t02-q063-r2",
+  "testId": "test-02",
+  "number": 63,
+  "part": 3,
+  "groupId": "t02-g042-r2",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "daily",
+    "listening-inference"
+  ],
+  "prompt": "Why might finding the order still not let her collect it?",
+  "promptZh": "就算查得到訂單，為什麼她可能仍不能取貨？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Her phone number can find it, but her ID name may not match the order.",
+      "zh": "她的電話能查到訂單，但她的證件姓名可能與訂單不符。",
+      "whyZh": "查詢可用電話，但取貨要核對姓名；電話是她的，訂單卻在哥哥名下。"
+    },
+    {
+      "id": "B",
+      "text": "The shop can search only by confirmation number.",
+      "zh": "店家只能用確認編號查詢。",
+      "whyZh": "店員明確說可以用訂單上的電話查詢。"
+    },
+    {
+      "id": "C",
+      "text": "Having the phone number means both items must be released together.",
+      "zh": "提供電話後就必須兩件一起領。",
+      "whyZh": "電話只用來查單，不改變逐件領取的規則。"
+    },
+    {
+      "id": "D",
+      "text": "The shop holds only orders paid for by phone.",
+      "zh": "店家只保留用電話付款的訂單。",
+      "whyZh": "對話沒有用電話付款這個條件。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "查詢可用電話，但取貨要核對姓名；電話是她的，訂單卻在哥哥名下。",
+  "evidence": "We can search by the order’s phone number. To collect anything, show photo ID matching the name on the order. | That’s my number, but the order is in my brother’s name. Are my lamp and notebook both ready?",
+  "vocabulary": [
+    {
+      "term": "match",
+      "zh": "相符",
+      "note": "指出示的姓名必須與訂單姓名相同。"
+    }
+  ],
+  "revision": 2
+}

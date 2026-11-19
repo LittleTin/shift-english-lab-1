@@ -1,0 +1,56 @@
+{
+  "id": "t02-q047",
+  "testId": "test-02",
+  "number": 47,
+  "part": 3,
+  "groupId": "t02-g037",
+  "topic": "technology",
+  "difficulty": "foundation",
+  "tags": [
+    "read-only access"
+  ],
+  "prompt": "What is the man unable to do?",
+  "promptZh": "男方無法做什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Upload a report.",
+      "zh": "上傳報告。",
+      "whyZh": "他能開資料夾，卻不能上傳驗證報告。"
+    },
+    {
+      "id": "B",
+      "text": "Open the project folder.",
+      "zh": "開啟專案資料夾。",
+      "whyZh": "他明確說 I can open the project folder。"
+    },
+    {
+      "id": "C",
+      "text": "Attend the review meeting.",
+      "zh": "參加審查會議。",
+      "whyZh": "沒有表示不能參加會議。"
+    },
+    {
+      "id": "D",
+      "text": "Contact his manager.",
+      "zh": "聯絡主管。",
+      "whyZh": "主管已交付工作，沒有聯絡困難的資訊。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "他能開資料夾，卻不能上傳驗證報告。",
+  "evidence": "I cannot upload the validation report.",
+  "vocabulary": [
+    {
+      "term": "read-only access",
+      "zh": "唯讀權限",
+      "note": "可讀取但不能修改或新增內容的權限。"
+    },
+    {
+      "term": "write access",
+      "zh": "寫入權限",
+      "note": "允許新增或修改資料的權限。"
+    }
+  ],
+  "revision": 1
+}

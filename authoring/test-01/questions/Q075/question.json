@@ -1,0 +1,58 @@
+{
+  "id": "t01-q075-r2",
+  "testId": "test-01",
+  "number": 75,
+  "part": 4,
+  "groupId": "t01-g046-r2",
+  "topic": "technology",
+  "difficulty": "advanced",
+  "tags": [
+    "technology",
+    "workplace",
+    "inference"
+  ],
+  "prompt": "Both computers are ready to update. What does the bus comparison suggest?",
+  "promptZh": "兩台電腦都已準備好更新。講者用行駛中的公車作比喻，暗示應怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Update both at once, then reopen bookings after twenty minutes.",
+      "zh": "同時更新兩台，二十分鐘後再開放預約。",
+      "whyZh": "同時更新會中斷預約服務，不符合「車繼續開」的比喻。"
+    },
+    {
+      "id": "B",
+      "text": "Use both computers to take bookings and put off the change indefinitely.",
+      "zh": "兩台都照常處理預約，無限期推遲系統切換。",
+      "whyZh": "公車繼續開，但輪胎仍要換；比喻不是說永遠不更新。"
+    },
+    {
+      "id": "C",
+      "text": "Update both and send all bookings, including unfinished ones, to the service desk.",
+      "zh": "同時更新兩台，把所有預約連同未完成的都交給服務櫃檯。",
+      "whyZh": "服務櫃檯可接新的預約，未完成的只能由原團隊處理；這也不是正常切換的不中斷做法。"
+    },
+    {
+      "id": "D",
+      "text": "Update one while the other keeps taking bookings, then switch roles when the first works.",
+      "zh": "一台更新時，另一台照常接受預約；第一台恢復可用後，再交換兩台的工作。",
+      "whyZh": "「換輪胎」是切換系統，「公車繼續開」是維持預約服務。未更新的電腦仍可用舊系統，因此可分開更新與接單。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "「換輪胎」是切換系統，「公車繼續開」是維持預約服務。未更新的電腦仍可用舊系統，因此可分開更新與接單。",
+  "evidence": "We’re changing tyres while the bus keeps moving. The old app works on computers not being updated.",
+  "vocabulary": [
+    {
+      "term": "change tyres while the bus keeps moving",
+      "zh": "一邊維持運作，一邊做系統變更",
+      "note": "講者以誇張的公車比喻形容不中斷服務的系統切換；不是要求真的維修車輛。"
+    },
+    {
+      "term": "switch roles",
+      "zh": "交換工作",
+      "note": "讓已完成更新的電腦接手預約，再更新另一台。"
+    }
+  ],
+  "revision": 2
+}

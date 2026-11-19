@@ -1,0 +1,58 @@
+{
+  "id": "t03-q180-r3",
+  "testId": "test-03",
+  "number": 180,
+  "part": 7,
+  "groupId": "t03-g069-r2",
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "business",
+    "reading-comprehension",
+    "double"
+  ],
+  "prompt": "Which schedule allows the longest private debrief while keeping the full setup and workshop within one half-day booking?",
+  "promptZh": "哪個時程能讓內部檢討會議盡量開久一點，同時在一個半日方案內保留完整布置和工作坊？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Set up from 8:30 a.m., debrief until 12:30 p.m., and then reset the room.",
+      "zh": "上午八點半開始布置，檢討會議開到中午十二點半，再進行場地復原。",
+      "whyZh": "場地復原須算入專用場地時間。加上十分鐘後到十二點四十分，自八點半起共四小時十分鐘。"
+    },
+    {
+      "id": "B",
+      "text": "Set up from 8:30 a.m., debrief until 12:20 p.m., and then reset the room.",
+      "zh": "上午八點半開始布置，檢討會議開到中午十二點二十分，再進行場地復原。",
+      "whyZh": "八點半開始布置，場地租用最晚至十二點半。預留十分鐘復原，所以檢討會議從中午到十二點二十分最長可進行二十分鐘。"
+    },
+    {
+      "id": "C",
+      "text": "Set up from 8:40 a.m., debrief until 12:30 p.m., and then reset the room.",
+      "zh": "上午八點四十分開始布置，檢討會議開到中午十二點半，再進行場地復原。",
+      "whyZh": "總租用時間雖是四小時，但九點前只剩二十分鐘可布置，少於要求的三十分鐘。"
+    },
+    {
+      "id": "D",
+      "text": "Set up from 8:30 a.m., debrief until 12:10 p.m., and then reset the room.",
+      "zh": "上午八點半開始布置，檢討會議開到中午十二點十分，再進行場地復原。",
+      "whyZh": "此時程不會超時，但只開十分鐘；仍可多開十分鐘再開始復原，不符合「盡量延長」的要求。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "八點半開始布置，場地租用最晚至十二點半。預留十分鐘復原，所以檢討會議從中午到十二點二十分最長可進行二十分鐘。",
+  "evidence": "from the start of setup to the end of the required ten-minute room reset / limited to four consecutive hours / from 9 a.m. to noon on April 10 / needs the full thirty minutes before 9 a.m. for setup / immediately after the workshop, lasting up to 45 minutes.",
+  "vocabulary": [
+    {
+      "term": "room reset",
+      "zh": "場地復原",
+      "note": "活動後把桌椅等恢復原狀；本題算在租用時間內。"
+    },
+    {
+      "term": "debrief",
+      "zh": "事後檢討會議",
+      "note": "活動結束後由團隊回顧情況的會議。"
+    }
+  ],
+  "revision": 3
+}

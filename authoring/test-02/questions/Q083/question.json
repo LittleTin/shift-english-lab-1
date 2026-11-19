@@ -1,0 +1,56 @@
+{
+  "id": "t02-q083",
+  "testId": "test-02",
+  "number": 83,
+  "part": 4,
+  "groupId": "t02-g049",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "inventory count"
+  ],
+  "prompt": "When must production material requests arrive?",
+  "promptZh": "生產領料申請何時前必須送達？",
+  "options": [
+    {
+      "id": "A",
+      "text": "At four thirty on Thursday.",
+      "zh": "星期四四點半。",
+      "whyZh": "四點半是星期五恢復領料，不是星期四截止。"
+    },
+    {
+      "id": "B",
+      "text": "By eleven on Friday morning.",
+      "zh": "星期五上午十一點前。",
+      "whyZh": "通知直接列明領料申請截止時間。"
+    },
+    {
+      "id": "C",
+      "text": "By midnight on Saturday.",
+      "zh": "星期六午夜前。",
+      "whyZh": "未提此時間。"
+    },
+    {
+      "id": "D",
+      "text": "Only after the inventory count ends.",
+      "zh": "只能盤點結束後。",
+      "whyZh": "生產需求要先在上午十一點前提出。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "通知直接列明領料申請截止時間。",
+  "evidence": "must reach us by eleven in the morning",
+  "vocabulary": [
+    {
+      "term": "inventory count",
+      "zh": "盤點",
+      "note": "實際核對庫存品項與數量的作業。"
+    },
+    {
+      "term": "resume",
+      "zh": "恢復",
+      "note": "表示暫停後重新開始。"
+    }
+  ],
+  "revision": 1
+}
