@@ -1,0 +1,72 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "Confirmed two nights: Oct 3–4 and Oct 4–5. Checkout date 5 is not five nights. Three calendar dates span two nights, and one night is inconsistent.",
+  "activeQuestion": {
+    "id": "t01-q196",
+    "testId": "test-01",
+    "number": 196,
+    "part": 7,
+    "groupId": "t01-r-p7-15",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "reading-comprehension"
+    ],
+    "prompt": "How many nights did Dana reserve?",
+    "promptZh": "Dana 預訂幾晚住宿？",
+    "options": [
+      {
+        "text": "Five",
+        "zh": "五晚",
+        "whyZh": "五是退房日期，不是夜數。",
+        "id": "A"
+      },
+      {
+        "text": "Two",
+        "zh": "兩晚",
+        "whyZh": "確認信列十月三日入住、五日退房，且明寫兩晚。",
+        "id": "B"
+      },
+      {
+        "text": "Three",
+        "zh": "三晚",
+        "whyZh": "從十月三日入住到五日退房跨三個日曆日期，但只住兩晚。",
+        "id": "C"
+      },
+      {
+        "text": "One",
+        "zh": "一晚",
+        "whyZh": "日期跨度與確認信都顯示兩晚。",
+        "id": "D"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "確認信列十月三日入住、五日退房，且明寫兩晚。",
+    "evidence": "Two nights, breakfast included.",
+    "vocabulary": [
+      {
+        "term": "late checkout",
+        "zh": "延遲退房",
+        "note": "超過一般退房期限仍保留客房的安排。"
+      },
+      {
+        "term": "complimentary luggage storage",
+        "zh": "免費行李寄放",
+        "note": "退房後仍可暫存行李，與保留客房不同。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p7-15",
+    "testId": "test-01",
+    "part": 7,
+    "title": "A business trip schedule",
+    "titleZh": "商務差旅行程",
+    "topic": "business",
+    "passage": "DOCUMENT 1 — Hotel confirmation\nGuest: Dana Lin. Check-in: October 3. Check-out: October 5 by 11 a.m. Two nights, breakfast included. Luggage storage after checkout is complimentary. A late checkout until 1 p.m. costs NT$800 and must be requested in advance.\n\nDOCUMENT 2 — Client meeting schedule, October 5\n12:30 p.m.: Working lunch at Green Table, opposite the hotel.\n1:30–3:00 p.m.: Product planning meeting at the client’s office, a ten-minute walk from the restaurant.\nPlease bring the printed sample labels. No projector is needed.\n\nDOCUMENT 3 — Dana’s message to a colleague\nMy train leaves at 5 p.m., and I want to avoid extra hotel charges. I will check out before the standard deadline and leave my suitcase at the hotel. After the meeting, I’ll collect it and take a taxi to the station. I have already packed the labels.",
+    "passageZh": "文件一——飯店訂房確認\n住客：Dana Lin。十月三日入住，十月五日最遲於上午十一點退房。共兩晚，含早餐。退房後免費寄放行李。延遲至下午一點退房需加收新臺幣八百元，且須事先申請。\n\n文件二——十月五日客戶會議時程\n12:30：在飯店對面的 Green Table 進行工作午餐。\n13:30–15:00：客戶辦公室產品規劃會議，從餐廳步行十分鐘可達。\n請帶印好的樣品標籤，不需要投影機。\n\n文件三——Dana 給同事的訊息\n我的火車下午五點發車，我想避免額外飯店費用。我會在一般期限前退房，把行李箱留在飯店。會議後再取行李，搭計程車到車站。我已把標籤收進行李裡了。"
+  }
+}

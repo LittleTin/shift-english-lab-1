@@ -1,0 +1,72 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "10:20 precedes 10:30 and 10:40 precedes 10:45. Changing selections allowed. Drinks separate, delivery noon–12:30, no evening delivery. Fix shared cutoff language; question reasons/choices correct.",
+  "activeQuestion": {
+    "id": "t01-q173",
+    "testId": "test-01",
+    "number": 173,
+    "part": 7,
+    "groupId": "t01-r-p7-09",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "reading-comprehension"
+    ],
+    "prompt": "What may a customer do at 10:40 a.m. after ordering at 10:20?",
+    "promptZh": "顧客十點二十分下單後，十點四十分仍可以做什麼？",
+    "options": [
+      {
+        "text": "Insist that drinks be included free of charge",
+        "zh": "要求免費附飲料",
+        "whyZh": "飲料須另行訂購，沒有免費附贈規則。",
+        "id": "A"
+      },
+      {
+        "text": "Demand delivery before 11 a.m.",
+        "zh": "要求十一點前送達",
+        "whyZh": "公告配送時段為十二點至十二點半。",
+        "id": "B"
+      },
+      {
+        "text": "Order an evening meal through this service",
+        "zh": "透過此服務訂晚餐",
+        "whyZh": "店家明確不提供晚間外送。",
+        "id": "C"
+      },
+      {
+        "text": "Change a meal selection",
+        "zh": "更改餐點選擇",
+        "whyZh": "十點四十分仍在十點四十五分的變更期限前。",
+        "id": "D"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "十點四十分仍在十點四十五分的變更期限前。",
+    "evidence": "Changes to the quantity or meal selection can be made until 10:45 a.m.",
+    "vocabulary": [
+      {
+        "term": "designate",
+        "zh": "指定",
+        "note": "指派特定人員負責某項工作。"
+      },
+      {
+        "term": "incur a fee",
+        "zh": "產生費用",
+        "note": "因使用服務或符合某條件而需付費。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p7-09",
+    "testId": "test-01",
+    "part": 7,
+    "title": "Lunch-order service",
+    "titleZh": "午餐預訂服務",
+    "topic": "daily",
+    "passage": "Cedar Kitchen — Office lunch orders\n\nOrders placed by 10:30 a.m. are delivered between noon and 12:30 p.m. Our standard set includes a main dish, rice, and seasonal vegetables. A vegetarian set is available at the same price. Drinks are ordered separately.\n\nDelivery is free for orders of ten sets or more to one address. Smaller orders incur a delivery fee of NT$60. Please designate one person to receive and check the entire order.\n\nChanges to the quantity or meal selection can be made until 10:45 a.m. After that time, the kitchen starts packing and cannot accept changes. We do not offer evening delivery.",
+    "passageZh": "Cedar Kitchen——辦公室午餐訂購\n\n最遲於上午十點半下單，將於中午十二點至下午十二點半送達。標準套餐包含主菜、飯及時令蔬菜，也有同價的素食套餐。飲料須另行訂購。\n\n十份以上送至同一地址免運，未達十份收取新臺幣六十元運費。請指定一人接收並核對整筆訂單。\n\n更改數量或餐點選擇的截止時間為上午十點四十五分；之後廚房開始裝餐，無法接受更改。我們不提供晚間外送。"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "3×20=60 received, less 40 to lab =20. Other 60 is total before lab, 40 lab, 80 impossible from first batch. zh stem/options/reasons adequate.",
+  "activeQuestion": {
+    "id": "t01-q184",
+    "testId": "test-01",
+    "number": 184,
+    "part": 7,
+    "groupId": "t01-r-p7-12",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension"
+    ],
+    "prompt": "After the laboratory receives its requested quantity, how many sensors from the first delivery remain in stock?",
+    "promptZh": "實驗室領取申請數量後，第一批還剩多少個在庫？",
+    "options": [
+      {
+        "text": "60",
+        "zh": "六十個",
+        "whyZh": "六十是領用前第一批總數。",
+        "id": "A"
+      },
+      {
+        "text": "20",
+        "zh": "二十個",
+        "whyZh": "第一批六十個減去實驗室申請的四十個，剩二十個。",
+        "id": "B"
+      },
+      {
+        "text": "40",
+        "zh": "四十個",
+        "whyZh": "四十是領用數量，不是剩餘量。",
+        "id": "C"
+      },
+      {
+        "text": "80",
+        "zh": "八十個",
+        "whyZh": "八十不是第一批六十減四十的結果。",
+        "id": "D"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "第一批六十個減去實驗室申請的四十個，剩二十個。",
+    "evidence": "each carton contains twenty sensors ... first forty sensors",
+    "vocabulary": [
+      {
+        "term": "split shipment",
+        "zh": "分批出貨",
+        "note": "一筆訂單拆成不同批次運送。"
+      },
+      {
+        "term": "controlled stock area",
+        "zh": "受控庫存區",
+        "note": "依既定規則管理存放與領用的區域。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p7-12",
+    "testId": "test-01",
+    "part": 7,
+    "title": "A split sensor shipment",
+    "titleZh": "感測器分批出貨",
+    "topic": "manufacturing",
+    "passage": "DOCUMENT 1 — Purchase order summary\nOrder S318: 120 temperature sensors, packed 20 per carton. Deliver to North Plant reception. The laboratory is not an authorized delivery point.\n\nDOCUMENT 2 — Dispatch notice, September 5\nWe shipped 60 sensors today in three cartons. The remaining 60 will leave our warehouse on September 8. The split shipment does not change your total order price. Tracking for the first shipment shows delivery expected on September 6.\n\nDOCUMENT 3 — Internal message, September 6, 3:10 p.m.\nReception accepted three cartons at 2:20 p.m. We checked the contents: each carton contains twenty sensors, with no visible damage. The laboratory has requested the first forty sensors for tomorrow’s tests. Please keep the remaining sensors from this delivery in the controlled stock area until needed.\n— Receiving team",
+    "passageZh": "文件一——採購單摘要\nS318 訂單：一百二十個溫度感測器，每箱二十個。請送至 North Plant 接待處；實驗室不是核准的收貨地點。\n\n文件二——九月五日出貨通知\n今天已以三箱寄出六十個感測器。其餘六十個將於九月八日離開倉庫。分批出貨不改變訂單總價。第一批物流追蹤顯示預計九月六日送達。\n\n文件三——九月六日下午三點十分內部訊息\n接待處於下午兩點二十分收下三箱。已核對內容，每箱二十個感測器，外觀沒有損傷。實驗室申請先領四十個供明天測試。請將本次到貨剩餘的感測器放在受控庫存區，待需要時再使用。\n——收貨團隊"
+  }
+}

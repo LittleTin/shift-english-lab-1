@@ -1,0 +1,72 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "Fee waiver requires both ≥10 and one address. Vegetarian same price unrelated; 10:45 change cutoff unrelated to waiver; no evening delivery. A zh polishing; other glosses/reasons aligned.",
+  "activeQuestion": {
+    "id": "t01-q172",
+    "testId": "test-01",
+    "number": 172,
+    "part": 7,
+    "groupId": "t01-r-p7-09",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "reading-comprehension"
+    ],
+    "prompt": "When is delivery free?",
+    "promptZh": "何種情況免運？",
+    "options": [
+      {
+        "text": "When any vegetarian set is ordered",
+        "zh": "只要有訂購素食套餐",
+        "whyZh": "素食餐同價，與免運條件無關。",
+        "id": "A"
+      },
+      {
+        "text": "When the order is placed after 10:45 a.m.",
+        "zh": "十點四十五分後訂購時",
+        "whyZh": "10:45 是更改數量或餐點的截止時間；是否免運取決於份數與送達地址。",
+        "id": "B"
+      },
+      {
+        "text": "When at least ten sets go to a single address",
+        "zh": "至少十份送到同一地址時",
+        "whyZh": "免運須同時符合十份以上及單一地址。",
+        "id": "C"
+      },
+      {
+        "text": "When customers request evening delivery",
+        "zh": "要求晚間外送時",
+        "whyZh": "店家不提供晚間外送。",
+        "id": "D"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "免運須同時符合十份以上及單一地址。",
+    "evidence": "Delivery is free for orders of ten sets or more to one address.",
+    "vocabulary": [
+      {
+        "term": "designate",
+        "zh": "指定",
+        "note": "指派特定人員負責某項工作。"
+      },
+      {
+        "term": "incur a fee",
+        "zh": "產生費用",
+        "note": "因使用服務或符合某條件而需付費。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p7-09",
+    "testId": "test-01",
+    "part": 7,
+    "title": "Lunch-order service",
+    "titleZh": "午餐預訂服務",
+    "topic": "daily",
+    "passage": "Cedar Kitchen — Office lunch orders\n\nOrders placed by 10:30 a.m. are delivered between noon and 12:30 p.m. Our standard set includes a main dish, rice, and seasonal vegetables. A vegetarian set is available at the same price. Drinks are ordered separately.\n\nDelivery is free for orders of ten sets or more to one address. Smaller orders incur a delivery fee of NT$60. Please designate one person to receive and check the entire order.\n\nChanges to the quantity or meal selection can be made until 10:45 a.m. After that time, the kitchen starts packing and cannot accept changes. We do not offer evening delivery.",
+    "passageZh": "Cedar Kitchen——辦公室午餐訂購\n\n最遲於上午十點半下單，將於中午十二點至下午十二點半送達。標準套餐包含主菜、飯及時令蔬菜，也有同價的素食套餐。飲料須另行訂購。\n\n十份以上送至同一地址免運，未達十份收取新臺幣六十元運費。請指定一人接收並核對整筆訂單。\n\n更改數量或餐點選擇的截止時間為上午十點四十五分；之後廚房開始裝餐，無法接受更改。我們不提供晚間外送。"
+  }
+}

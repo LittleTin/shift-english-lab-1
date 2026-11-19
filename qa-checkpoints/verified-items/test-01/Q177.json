@@ -1,0 +1,72 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "Production only after signed rev D drawing; 500 minimum waived, samples not mass authorization, painting not requested. zh translation and reasons correct.",
+  "activeQuestion": {
+    "id": "t01-q177",
+    "testId": "test-01",
+    "number": 177,
+    "part": 7,
+    "groupId": "t01-r-p7-11",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension"
+    ],
+    "prompt": "What must the customer provide before manufacturing begins?",
+    "promptZh": "製造開始前，客戶必須提供什麼？",
+    "options": [
+      {
+        "text": "A signed revision D drawing",
+        "zh": "簽核的 D 版圖面",
+        "whyZh": "工程要求與供應商回覆都要求先取得簽核圖面。",
+        "id": "A"
+      },
+      {
+        "text": "An order for 500 samples",
+        "zh": "五百個樣品訂單",
+        "whyZh": "供應商同意這次三十個不受最低量限制。",
+        "id": "B"
+      },
+      {
+        "text": "An authorization for mass production",
+        "zh": "量產授權",
+        "whyZh": "文件明確說此次樣品不代表量產授權。",
+        "id": "C"
+      },
+      {
+        "text": "A request for painted surfaces",
+        "zh": "上漆表面的要求",
+        "whyZh": "需求是未上漆，並未要求改成上漆。",
+        "id": "D"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "工程要求與供應商回覆都要求先取得簽核圖面。",
+    "evidence": "Manufacturing may begin only after we send the signed revision D drawing.",
+    "vocabulary": [
+      {
+        "term": "evaluation sample",
+        "zh": "評估樣品",
+        "note": "供驗證、比較或審查用的少量樣品。"
+      },
+      {
+        "term": "signed drawing",
+        "zh": "簽核圖面",
+        "note": "已經授權人員簽核確認的圖面。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p7-11",
+    "testId": "test-01",
+    "part": 7,
+    "title": "Enclosure change and supplier reply",
+    "titleZh": "外殼變更與供應商回覆",
+    "topic": "manufacturing",
+    "passage": "DOCUMENT 1 — Engineering request, August 5\nPlease quote thirty revision D enclosure samples for arrival by August 22. The vent width changes from 2.0 mm to 2.5 mm; the overall dimensions and mounting holes remain unchanged. Use the same unpainted finish as revision C. Manufacturing may begin only after we send the signed revision D drawing. These are evaluation samples, not authorization for mass production.\n\nDOCUMENT 2 — Supplier reply, August 6\nWe can make the thirty samples without applying our usual 500-piece minimum. To have them ready for collection on August 20, we must receive your signed drawing by August 13. Transport to your site takes one day. Painting would add two production days, but it is not included in this quote. Please confirm that the unpainted finish is still required.",
+    "passageZh": "文件一——八月五日工程需求\n請提供三十個 D 版外殼樣品的報價，最遲須於八月二十二日送達。通風孔寬度由 2.0 mm 改為 2.5 mm；整體尺寸與安裝孔維持不變。表面處理沿用 C 版的未上漆形式。必須收到我們簽核的 D 版圖面後才能開始製造。這些是評估樣品，並非量產授權。\n\n文件二——八月六日供應商回覆\n這三十個樣品可不受平時五百個的最低訂購量限制。若要在八月二十日備妥供取件，我們最遲須於八月十三日收到簽核圖面。運到貴公司需要一天。上漆會增加兩個生產日，但本報價未包含上漆。請確認仍需要未上漆表面。"
+  }
+}

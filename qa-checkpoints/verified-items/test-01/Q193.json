@@ -1,0 +1,72 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "Combine portal unaffected with copying PDF before shutdown. Deadline unchanged, VPN cannot access outage drive, 11:30 restoration later than deadline.",
+  "activeQuestion": {
+    "id": "t01-q193",
+    "testId": "test-01",
+    "number": 193,
+    "part": 7,
+    "groupId": "t01-r-p7-14",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "reading-comprehension"
+    ],
+    "prompt": "Why can Nina still submit the quotation on time?",
+    "promptZh": "為何 Nina 仍可準時交件？",
+    "options": [
+      {
+        "text": "The portal remains online and she can obtain the file in advance",
+        "zh": "入口網站仍上線，且她能提前取得檔案",
+        "whyZh": "需結合通知的服務範圍與對話中提前下載的處理。",
+        "id": "A"
+      },
+      {
+        "text": "The deadline has been extended to midnight",
+        "zh": "期限已延到午夜",
+        "whyZh": "對話仍明確說晚上十一點，沒有延長。",
+        "id": "B"
+      },
+      {
+        "text": "VPN access bypasses the outage",
+        "zh": "VPN 可繞過磁碟停機",
+        "whyZh": "通知明確說 VPN 不能讓離線磁碟變可用。",
+        "id": "C"
+      },
+      {
+        "text": "The shared drive will reopen before 11 p.m.",
+        "zh": "共用磁碟會在十一點前恢復",
+        "whyZh": "公告維護至十一點半，晚於截止時間。",
+        "id": "D"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "需結合通知的服務範圍與對話中提前下載的處理。",
+    "evidence": "The portal is not included in the outage. ... Copy the final PDF to your laptop now.",
+    "vocabulary": [
+      {
+        "term": "read-only mode",
+        "zh": "唯讀模式",
+        "note": "可以查看資料，但不能變更資料。"
+      },
+      {
+        "term": "version conflict",
+        "zh": "版本衝突",
+        "note": "不同副本的變更無法直接視為同一最新版本。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p7-14",
+    "testId": "test-01",
+    "part": 7,
+    "title": "Shared-drive maintenance",
+    "titleZh": "共用磁碟維護",
+    "topic": "technology",
+    "passage": "DOCUMENT 1 — IT notice\nThe shared drive will be offline on Sunday from 10 p.m. to 11:30 p.m. while storage hardware is replaced. Email, the customer portal, and VPN login will remain available. A working VPN connection will not make the shared drive accessible during the outage.\nDownload any files you need before 9:45 p.m. Avoid editing local copies of shared spreadsheets during the outage; conflicting versions may result. The drive will reopen in read-only mode first, and IT will announce when normal editing is restored.\n\nDOCUMENT 2 — Team chat, Sunday 8:40 p.m.\nNina: I must upload the approved quotation to the customer portal by 11 p.m. The final PDF is on the shared drive. Can I still meet the deadline?\nOwen: Yes. Copy the final PDF to your laptop now. The portal is not included in the outage. Do not modify the PDF; the customer must receive the approved version.",
+    "passageZh": "文件一——資訊部通知\n星期日晚上十點至十一點半，因更換儲存硬體，共用磁碟將離線。電子郵件、客戶入口網站及 VPN 登入仍可使用。維護期間，即使 VPN 連線正常，也無法存取共用磁碟。\n請在晚上九點四十五分前下載需要的檔案。維護期間避免編輯共用試算表的本機副本，否則可能產生版本衝突。磁碟會先以唯讀模式恢復，資訊部會另外公告何時恢復正常編輯。\n\n文件二——星期日晚上八點四十分團隊對話\nNina：我最遲須在晚上十一點把已核准報價上傳到客戶入口網站。最終 PDF 在共用磁碟，我還能趕上期限嗎？\nOwen：可以，現在就把最終 PDF 複製到筆電。入口網站不在停機範圍內。不要修改 PDF，客戶必須收到核准版本。"
+  }
+}
