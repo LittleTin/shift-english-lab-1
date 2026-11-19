@@ -1,0 +1,164 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Weight and fixture drawing required for bookings; battery checklist distinct Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+  "activeQuestion": {
+    "id": "t01-q092-r2",
+    "testId": "test-01",
+    "number": 92,
+    "part": 4,
+    "groupId": "t01-g052",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "requirement"
+    ],
+    "prompt": "What information must accompany a booking request?",
+    "promptZh": "預約申請必須附上什麼資訊？",
+    "options": [
+      {
+        "id": "A",
+        "text": "A marketing photograph and a sales price.",
+        "zh": "行銷照片與售價。",
+        "whyZh": "安全判斷需要的是重量與治具圖面，不是行銷資訊。"
+      },
+      {
+        "id": "B",
+        "text": "Product weight and a fixture drawing.",
+        "zh": "產品重量與治具圖面。",
+        "whyZh": "這兩項資訊供工程師判斷測試配置安全性；公告說缺少它們會退回申請。"
+      },
+      {
+        "id": "C",
+        "text": "A battery safety checklist and a preferred test date.",
+        "zh": "電池安全檢查表與偏好的測試日期。",
+        "whyZh": "安全檢查表是電池樣品進實驗室的前置條件；預約必附的是產品重量與治具圖面。"
+      },
+      {
+        "id": "D",
+        "text": "Only the operator's name.",
+        "zh": "只需操作員姓名。",
+        "whyZh": "只給姓名無法滿足明確要求的兩項技術資訊。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "這兩項資訊供工程師判斷測試配置安全性；公告說缺少它們會退回申請。",
+    "evidence": "include the product weight and the fixture drawing",
+    "vocabulary": [
+      {
+        "term": "reliability laboratory",
+        "zh": "可靠度實驗室",
+        "note": "進行振動等測試，以評估產品在使用或環境條件下表現的場所。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t01-g052",
+    "testId": "test-01",
+    "part": 4,
+    "title": "Booking reliability tests",
+    "titleZh": "預約可靠度測試",
+    "topic": "technology",
+    "passage": "This announcement is for staff using the reliability laboratory. We have added a second vibration test machine, but all tests still require a booking. When submitting a request, include the product weight and the fixture drawing so the laboratory engineer can check whether the setup is safe. Bookings without these details will be returned. Do not bring battery-powered samples into the lab until their safety checklist has been approved. The new machine will be demonstrated on Wednesday at three. Attendance at that demonstration does not replace the separate operator training required before independent use.",
+    "passageZh": "這份公告給使用可靠度實驗室的同仁。我們新增了第二台振動測試機，但所有測試仍須預約。提交申請時，請附產品重量與治具圖面，讓實驗室工程師確認配置是否安全。缺少這些資訊的預約會被退回。電池供電樣品的安全檢查表核准之前，不得將其帶進實驗室。新機器將在星期三三點進行示範。參加這場示範不能取代獨立操作前必須完成的操作員訓練。",
+    "audioScript": "This announcement is for staff using the reliability laboratory. We have added a second vibration test machine, but all tests still require a booking. When submitting a request, include the product weight and the fixture drawing so the laboratory engineer can check whether the setup is safe. Bookings without these details will be returned. Do not bring battery-powered samples into the lab until their safety checklist has been approved. The new machine will be demonstrated on Wednesday at three. Attendance at that demonstration does not replace the separate operator training required before independent use.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "This announcement is for staff using the reliability laboratory. We have added a second vibration test machine, but all tests still require a booking. When submitting a request, include the product weight and the fixture drawing so the laboratory engineer can check whether the setup is safe. Bookings without these details will be returned. Do not bring battery-powered samples into the lab until their safety checklist has been approved. The new machine will be demonstrated on Wednesday at three. Attendance at that demonstration does not replace the separate operator training required before independent use."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-32.mp3",
+    "duration": 40.728,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-IE",
+        "role": "female",
+        "modelVoice": "en-IE-EmilyNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 41.228
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-01-32.mp3",
+      "start": 0.5,
+      "end": 41.228,
+      "assetSha256": "163e56e8cedc149b3b3c8615e585e367e0a6d460e257de861d3d2b3570d78920",
+      "speech": "This announcement is for staff using the Reliability Laboratory.\n We have added a second vibration test machine, but all tests still require a booking.\n When submitting a request, include the product weight and the fixture drawing\n so the laboratory engineer can check whether the setup is safe.\n Bookings without these details will be returned.\n Do not bring battery-powered samples into the lab until their safety checklist has been approved.\n The new machine will be demonstrated on Wednesday at 3.\n Attendance at that demonstration does not replace the separate operator training required before independent use."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-01-cues-06.mp3",
+      "start": 3.80779,
+      "end": 7.65921,
+      "assetSha256": "2337fe71d1c63145b612d550acc785e0342b6af6749661ea7ae3434b17cbba4d",
+      "speech": "Number 92. What information must accompany a booking request?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-32.mp3",
+      "start": 0.5,
+      "end": 41.228,
+      "assetSha256": "163e56e8cedc149b3b3c8615e585e367e0a6d460e257de861d3d2b3570d78920",
+      "speech": "This announcement is for staff using the Reliability Laboratory.\n We have added a second vibration test machine, but all tests still require a booking.\n When submitting a request, include the product weight and the fixture drawing\n so the laboratory engineer can check whether the setup is safe.\n Bookings without these details will be returned.\n Do not bring battery-powered samples into the lab until their safety checklist has been approved.\n The new machine will be demonstrated on Wednesday at 3.\n Attendance at that demonstration does not replace the separate operator training required before independent use."
+    }
+  ],
+  "originalQuestion": {
+    "id": "t01-q092",
+    "testId": "test-01",
+    "number": 92,
+    "part": 4,
+    "groupId": "t01-g052",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "requirement"
+    ],
+    "prompt": "What information must accompany a booking request?",
+    "promptZh": "預約申請必須附上什麼資訊？",
+    "options": [
+      {
+        "id": "A",
+        "text": "A marketing photograph and a sales price.",
+        "zh": "行銷照片與售價。",
+        "whyZh": "安全判斷需要的是重量與治具圖面，不是行銷資訊。"
+      },
+      {
+        "id": "B",
+        "text": "Product weight and a fixture drawing.",
+        "zh": "產品重量與治具圖面。",
+        "whyZh": "這兩項資訊供工程師判斷測試配置安全性；公告說缺少它們會退回申請。"
+      },
+      {
+        "id": "C",
+        "text": "A hotel reservation and travel itinerary.",
+        "zh": "旅館訂房與行程。",
+        "whyZh": "這是實驗室設備預約，沒有差旅資料要求。"
+      },
+      {
+        "id": "D",
+        "text": "Only the operator's name.",
+        "zh": "只需操作員姓名。",
+        "whyZh": "只給姓名無法滿足明確要求的兩項技術資訊。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "這兩項資訊供工程師判斷測試配置安全性；公告說缺少它們會退回申請。",
+    "evidence": "include the product weight and the fixture drawing",
+    "vocabulary": [
+      {
+        "term": "reliability laboratory",
+        "zh": "可靠度實驗室",
+        "note": "進行振動等測試，以評估產品在使用或環境條件下表現的場所。"
+      }
+    ],
+    "revision": 1
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Recording and practice data tomorrow Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+  "activeQuestion": {
+    "id": "t01-q088",
+    "testId": "test-01",
+    "number": 88,
+    "part": 4,
+    "groupId": "t01-g050",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "detail"
+    ],
+    "prompt": "What will registered participants receive tomorrow?",
+    "promptZh": "已報名者明天會收到什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "A recording and a practice data file.",
+        "zh": "活動錄影與練習資料檔。",
+        "whyZh": "主持人明說兩樣資料會在明天寄給已報名者；不包含機密公司紀錄。"
+      },
+      {
+        "id": "B",
+        "text": "A new computer and a monitor.",
+        "zh": "新電腦和顯示器。",
+        "whyZh": "活動提供電子資料，沒有發放硬體。"
+      },
+      {
+        "id": "C",
+        "text": "The company's confidential inventory records.",
+        "zh": "公司的機密庫存紀錄。",
+        "whyZh": "主持人要求使用範例資料，並避免上傳機密紀錄。"
+      },
+      {
+        "id": "D",
+        "text": "A purchasing contract to sign.",
+        "zh": "需要簽署的採購合約。",
+        "whyZh": "沒有寄送待簽合約的安排。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "主持人明說兩樣資料會在明天寄給已報名者；不包含機密公司紀錄。",
+    "evidence": "A recording and a practice data file will be emailed to registered participants tomorrow.",
+    "vocabulary": [
+      {
+        "term": "practice data",
+        "zh": "練習資料",
+        "note": "供操作練習使用，避免動用真實機密資料。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g050",
+    "testId": "test-01",
+    "part": 4,
+    "title": "An inventory-dashboard webinar",
+    "titleZh": "庫存儀表板線上說明會",
+    "topic": "technology",
+    "passage": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard. Today's session focuses on setting stock alerts and exporting weekly summaries. The purchasing module will be covered in a separate session next month. You can enter questions in the chat at any time, and we will answer them after the demonstration. If the screen looks blurry, choose a higher video quality in your player settings; there is no need to restart the application. A recording and a practice data file will be emailed to registered participants tomorrow. Please use the sample data rather than uploading confidential company records.",
+    "passageZh": "大家好，歡迎參加新版庫存儀表板的線上說明會。今天著重在設定庫存警示，以及匯出每週摘要。採購模組會在下個月另一場說明會介紹。各位隨時可以在聊天室輸入問題，我們會在示範後回答。如果畫面模糊，請在播放器設定選擇較高畫質，不需要重新啟動應用程式。錄影和練習資料檔會在明天以電子郵件寄給已報名者。請使用範例資料，不要上傳公司的機密紀錄。",
+    "audioScript": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard. Today's session focuses on setting stock alerts and exporting weekly summaries. The purchasing module will be covered in a separate session next month. You can enter questions in the chat at any time, and we will answer them after the demonstration. If the screen looks blurry, choose a higher video quality in your player settings; there is no need to restart the application. A recording and a practice data file will be emailed to registered participants tomorrow. Please use the sample data rather than uploading confidential company records.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard. Today's session focuses on setting stock alerts and exporting weekly summaries. The purchasing module will be covered in a separate session next month. You can enter questions in the chat at any time, and we will answer them after the demonstration. If the screen looks blurry, choose a higher video quality in your player settings; there is no need to restart the application. A recording and a practice data file will be emailed to registered participants tomorrow. Please use the sample data rather than uploading confidential company records."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-30.mp3",
+    "duration": 41.952,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-PH",
+        "role": "female",
+        "modelVoice": "en-PH-RosaNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 42.452
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-01-30.mp3",
+      "start": 0.5,
+      "end": 42.452,
+      "assetSha256": "562f7d66e4074607481b4c67f4b51d8b710e2d11e1c86cc4c0f5714bccf1f19a",
+      "speech": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard.\n Today's session focuses on setting stock alerts and exporting weekly summaries.\n The purchasing module will be covered in a separate session next month.\n You can enter questions in the chat at any time, and we will answer them after the demonstration.\n If the screen looks blurry, choose a higher video quality in your player settings, there\n is no need to restart the application.\n A recording and a practice data file will be emailed to registered participants tomorrow.\n Please use the sample data rather than uploading confidential company records.\n [BLANK_AUDIO]"
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-01-cues-05.mp3",
+      "start": 49.96417,
+      "end": 53.85596,
+      "assetSha256": "3f418aff5586579ce8a41216bf0ef58ba657fb6c0861dcf94dbb6c8fc5f267ee",
+      "speech": "Number 88, what will registered participants receive tomorrow?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-30.mp3",
+      "start": 0.5,
+      "end": 42.452,
+      "assetSha256": "562f7d66e4074607481b4c67f4b51d8b710e2d11e1c86cc4c0f5714bccf1f19a",
+      "speech": "Hello, everyone, and welcome to this webinar on our updated inventory dashboard.\n Today's session focuses on setting stock alerts and exporting weekly summaries.\n The purchasing module will be covered in a separate session next month.\n You can enter questions in the chat at any time, and we will answer them after the demonstration.\n If the screen looks blurry, choose a higher video quality in your player settings, there\n is no need to restart the application.\n A recording and a practice data file will be emailed to registered participants tomorrow.\n Please use the sample data rather than uploading confidential company records.\n [BLANK_AUDIO]"
+    }
+  ]
+}

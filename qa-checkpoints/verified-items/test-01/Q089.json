@@ -1,0 +1,112 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Roadwork Pine Avenue, not library closure or loss of service Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+  "activeQuestion": {
+    "id": "t01-q089",
+    "testId": "test-01",
+    "number": 89,
+    "part": 4,
+    "groupId": "t01-g051",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "reason"
+    ],
+    "prompt": "Why is the City Library stop temporarily unavailable?",
+    "promptZh": "市立圖書館站為什麼暫時無法使用？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The library has permanently closed.",
+        "zh": "圖書館已永久關閉。",
+        "whyZh": "變更是道路施工造成，沒有圖書館永久歇業。"
+      },
+      {
+        "id": "B",
+        "text": "All bus drivers are attending training.",
+        "zh": "所有司機都在受訓。",
+        "whyZh": "路線仍營運，只改停臨時站，並未提司機訓練。"
+      },
+      {
+        "id": "C",
+        "text": "The swimming pool is being demolished.",
+        "zh": "游泳池正在拆除。",
+        "whyZh": "游泳池外正是臨時站地點，沒有拆除消息。"
+      },
+      {
+        "id": "D",
+        "text": "Roadwork is taking place nearby.",
+        "zh": "附近正在進行道路工程。",
+        "whyZh": "公告開頭以 Because of roadwork on Pine Avenue 交代改站原因。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "公告開頭以 Because of roadwork on Pine Avenue 交代改站原因。",
+    "evidence": "Because of roadwork on Pine Avenue",
+    "vocabulary": [
+      {
+        "term": "roadwork",
+        "zh": "道路工程",
+        "note": "道路施工或維修作業。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g051",
+    "testId": "test-01",
+    "part": 4,
+    "title": "A temporary bus-stop change",
+    "titleZh": "公車站暫時調整",
+    "topic": "daily",
+    "passage": "This is a service announcement for Route Twelve passengers. Because of roadwork on Pine Avenue, buses will not stop at City Library from Tuesday through Friday. During that period, please use the temporary stop outside the swimming pool on Oak Street, about a five-minute walk from the library. The first and last departure times will remain unchanged. However, journeys may take up to ten minutes longer during the evening rush hour. Wheelchair access is available at the temporary stop. We apologize for the inconvenience and expect normal service to resume on Saturday.",
+    "passageZh": "這是給十二號路線乘客的服務公告。由於 Pine Avenue 道路施工，星期二至星期五公車不會停靠市立圖書館。這段期間，請改到 Oak Street 游泳池外的臨時站牌，從圖書館步行約五分鐘可達。首班與末班發車時間維持不變。不過晚間尖峰的車程可能會增加最多十分鐘。臨時站設有輪椅通行設施。造成不便敬請見諒，預計星期六恢復正常服務。",
+    "audioScript": "This is a service announcement for Route Twelve passengers. Because of roadwork on Pine Avenue, buses will not stop at City Library from Tuesday through Friday. During that period, please use the temporary stop outside the swimming pool on Oak Street, about a five-minute walk from the library. The first and last departure times will remain unchanged. However, journeys may take up to ten minutes longer during the evening rush hour. Wheelchair access is available at the temporary stop. We apologize for the inconvenience and expect normal service to resume on Saturday.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "This is a service announcement for Route Twelve passengers. Because of roadwork on Pine Avenue, buses will not stop at City Library from Tuesday through Friday. During that period, please use the temporary stop outside the swimming pool on Oak Street, about a five-minute walk from the library. The first and last departure times will remain unchanged. However, journeys may take up to ten minutes longer during the evening rush hour. Wheelchair access is available at the temporary stop. We apologize for the inconvenience and expect normal service to resume on Saturday."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-31.mp3",
+    "duration": 37.464,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-NZ",
+        "role": "male",
+        "modelVoice": "en-NZ-MitchellNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 37.964
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-01-31.mp3",
+      "start": 0.5,
+      "end": 37.964,
+      "assetSha256": "c09d75c5d834114f2fdc1e85a7a1c3eeab97c102809bdf7035c85f67bc966587",
+      "speech": "This is a service announcement for Route 12 passengers.\n Because of road work on Pine Avenue, buses will not stop at City Library from Tuesday through Friday.\n During that period, please use the temporary stop outside the swimming pool on Oak Street,\n about a five-minute walk from the library.\n The first and last departure times will remain unchanged.\n However, journeys may take up to 10 minutes longer during the evening rush hour.\n Wheelchair access is available at the temporary stop.\n We apologise for the inconvenience and expect normal service to resume on Saturday."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-01-cues-05.mp3",
+      "start": 57.66421,
+      "end": 62.34392,
+      "assetSha256": "3f418aff5586579ce8a41216bf0ef58ba657fb6c0861dcf94dbb6c8fc5f267ee",
+      "speech": "Number 89.\n Why is the City Library stopped temporarily unavailable?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-31.mp3",
+      "start": 0.5,
+      "end": 37.964,
+      "assetSha256": "c09d75c5d834114f2fdc1e85a7a1c3eeab97c102809bdf7035c85f67bc966587",
+      "speech": "This is a service announcement for Route 12 passengers.\n Because of road work on Pine Avenue, buses will not stop at City Library from Tuesday through Friday.\n During that period, please use the temporary stop outside the swimming pool on Oak Street,\n about a five-minute walk from the library.\n The first and last departure times will remain unchanged.\n However, journeys may take up to 10 minutes longer during the evening rush hour.\n Wheelchair access is available at the temporary stop.\n We apologise for the inconvenience and expect normal service to resume on Saturday."
+    }
+  ]
+}
