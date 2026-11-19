@@ -1,0 +1,205 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Phrasing-only revision: he cannot upload, the system may grant only read access, and the folder name and a copy of the manager’s approval are both explicitly requested. Exact prompts, options, answer and original score semantics preserved. Traditional Chinese reviewed.",
+    "audio": "Exact candidate new source: unprompted Whisper small.en recovers all M/F/M/F G037 turns. Independent Vosk confirms the upload prohibition, possible read-only rights, recently joined and two things, and normal-speed 20.400–25.940 s focused Vosk confirms 'folder name and a copy' with approximate manager possessive. Full Vosk weakly rendered the conjunction; it is not presented as an exact full transcript. Scoped low/high pitch alternation and written role metadata support two-speaker order, not exact identity verification by pitch. Existing unchanged stem exact in prior scoped review and current Vosk.",
+    "retainedIntro": "Unchanged generic cue from exact original source range matches both prior local Whisper and Vosk.",
+    "association": "Actual WAV and original cue/stem MP3 asset hashes and exact time ranges bound below. Practice and formal same shared WAV, not independent observations. Unrelated formal frames, previous/alternate plan and legacy arrays, new local boundaries, 100 silence frames and total 2700s checked offline. Browser and session acceptance are separate release gates.",
+    "newAudioEvidenceSha256": "09578d27ee6233e558aef91c23cbd3893b50742647939478de2cb2b399993962"
+  },
+  "activeQuestion": {
+    "id": "t02-q047",
+    "testId": "test-02",
+    "number": 47,
+    "part": 3,
+    "groupId": "t02-g037",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "read-only access"
+    ],
+    "prompt": "What is the man unable to do?",
+    "promptZh": "男方無法做什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Upload a report.",
+        "zh": "上傳報告。",
+        "whyZh": "他能開資料夾，卻不能上傳驗證報告。"
+      },
+      {
+        "id": "B",
+        "text": "Open the project folder.",
+        "zh": "開啟專案資料夾。",
+        "whyZh": "他明確說 I can open the project folder。"
+      },
+      {
+        "id": "C",
+        "text": "Attend the review meeting.",
+        "zh": "參加審查會議。",
+        "whyZh": "沒有表示不能參加會議。"
+      },
+      {
+        "id": "D",
+        "text": "Contact his manager.",
+        "zh": "聯絡主管。",
+        "whyZh": "主管已交付工作，沒有聯絡困難的資訊。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "他能開資料夾，卻不能上傳驗證報告。",
+    "evidence": "I cannot upload the validation report.",
+    "vocabulary": [
+      {
+        "term": "read-only access",
+        "zh": "唯讀權限",
+        "note": "可讀取但不能修改或新增內容的權限。"
+      },
+      {
+        "term": "write access",
+        "zh": "寫入權限",
+        "note": "允許新增或修改資料的權限。"
+      }
+    ],
+    "revision": 1
+  },
+  "originalQuestion": {
+    "id": "t02-q047",
+    "testId": "test-02",
+    "number": 47,
+    "part": 3,
+    "groupId": "t02-g037",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "read-only access"
+    ],
+    "prompt": "What is the man unable to do?",
+    "promptZh": "男方無法做什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Upload a report.",
+        "zh": "上傳報告。",
+        "whyZh": "他能開資料夾，卻不能上傳驗證報告。"
+      },
+      {
+        "id": "B",
+        "text": "Open the project folder.",
+        "zh": "開啟專案資料夾。",
+        "whyZh": "他明確說 I can open the project folder。"
+      },
+      {
+        "id": "C",
+        "text": "Attend the review meeting.",
+        "zh": "參加審查會議。",
+        "whyZh": "沒有表示不能參加會議。"
+      },
+      {
+        "id": "D",
+        "text": "Contact his manager.",
+        "zh": "聯絡主管。",
+        "whyZh": "主管已交付工作，沒有聯絡困難的資訊。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "他能開資料夾，卻不能上傳驗證報告。",
+    "evidence": "I cannot upload the validation report.",
+    "vocabulary": [
+      {
+        "term": "read-only access",
+        "zh": "唯讀權限",
+        "note": "可讀取但不能修改或新增內容的權限。"
+      },
+      {
+        "term": "write access",
+        "zh": "寫入權限",
+        "note": "允許新增或修改資料的權限。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g037",
+    "testId": "test-02",
+    "part": 3,
+    "title": "Checking an access permission",
+    "titleZh": "確認存取權限",
+    "topic": "technology",
+    "passage": "Man: I can open the project folder, but I cannot upload the validation report. Is the server down?\nWoman: The server is running. Your account may have read-only access. Have you just joined this project?\nMan: Yes, this week. My manager asked me to add the report before the review meeting.\nWoman: Please send me two things: the folder name and a copy of your manager's approval. I can request write access from the administrator.",
+    "passageZh": "男：我能開啟專案資料夾，但無法上傳驗證報告。伺服器當機了嗎？\n女：伺服器正在運作。你的帳號可能只有唯讀權限。你剛加入這個專案嗎？\n男：是，這個星期。主管要我在審查會議前加入報告。\n女：請寄給我兩樣東西：資料夾名稱和一份主管的核准紀錄。我可以向管理員申請寫入權限。",
+    "audioScript": "I can open the project folder, but I cannot upload the validation report. Is the server down?\nThe server is running. Your account may have read-only access. Have you just joined this project?\nYes, this week. My manager asked me to add the report before the review meeting.\nPlease send me two things: the folder name and a copy of your manager's approval. I can request write access from the administrator.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "I can open the project folder, but I cannot upload the validation report. Is the server down?"
+      },
+      {
+        "voice": "female",
+        "text": "The server is running. Your account may have read-only access. Have you just joined this project?"
+      },
+      {
+        "voice": "male",
+        "text": "Yes, this week. My manager asked me to add the report before the review meeting."
+      },
+      {
+        "voice": "female",
+        "text": "Please send me two things: the folder name and a copy of your manager's approval. I can request write access from the administrator."
+      }
+    ],
+    "audio": "audio/exams/test-02/groups/t02-g037/passage-r2.wav",
+    "duration": 29.575,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-ZA",
+        "role": "male",
+        "modelVoice": "en-ZA-LukeNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-ZA",
+        "role": "female",
+        "modelVoice": "en-ZA-LeahNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 29.575
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-02.mp3",
+      "start": 42.37375,
+      "end": 46.34463,
+      "assetSha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+      "speech": "Questions 47 through 49. Listen to the conversation."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/exams/test-02/groups/t02-g037/passage-r2.wav",
+      "start": 0,
+      "end": 29.575,
+      "assetSha256": "779e61d9e7e9ff67f50b1b0cc187006e1fbfa0d24eb7412bec9613bc95dcb1aa",
+      "speech": "I can open the project folder, but I cannot upload the validation report. Is the server down?\nThe server is running. Your account may have read-only access. Have you just joined this project?\nYes, this week. My manager asked me to add the report before the review meeting.\nPlease send me two things: the folder name and a copy of your manager's approval. I can request write access from the administrator."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-02-cues-02.mp3",
+      "start": 46.59463,
+      "end": 49.66029,
+      "assetSha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+      "speech": "Number 47. What is the man unable to do?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/exams/test-02/groups/t02-g037/passage-r2.wav",
+      "start": 0,
+      "end": 29.575,
+      "assetSha256": "779e61d9e7e9ff67f50b1b0cc187006e1fbfa0d24eb7412bec9613bc95dcb1aa",
+      "speech": "I can open the project folder, but I cannot upload the validation report. Is the server down?\nThe server is running. Your account may have read-only access. Have you just joined this project?\nYes, this week. My manager asked me to add the report before the review meeting.\nPlease send me two things: the folder name and a copy of your manager's approval. I can request write access from the administrator."
+    }
+  ],
+  "imageSha256": null
+}

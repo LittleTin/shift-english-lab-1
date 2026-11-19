@@ -25,6 +25,15 @@ class RenderTests(unittest.TestCase):
         self.assertEqual(valid.count('interpret-as="characters"'),3)
         with self.assertRaises(ValueError):
             speech({**a,'text':'A. First. C. Second. B. Third.','optionCount':3})
+    def test_bounded_pause_at_original_punctuation(self):
+        t={**a,'text':'A. First. B. Second. C. Actually, Elena will be taking my place.','optionCount':3,
+           'exactPauseAfter':{'phrase':'Actually,','ms':185}}
+        a1=speech(t)
+        self.assertIn('Actually,<break time="185ms"/> Elena', a1)
+        with self.assertRaises(ValueError):
+            speech({**t,'exactPauseAfter':{'phrase':'Elena','ms':185}})
+        with self.assertRaises(ValueError):
+            speech({**t,'exactPauseAfter':{'phrase':'Actually,','ms':900}})
     def test_plan_guard(self):
         p={'status':'editorial-ready-f0-candidate','items':[{'name':'safe-name','turns':[a]}]}
         self.assertEqual(len(prepare(p)),1)

@@ -1,0 +1,402 @@
+{
+  "status": "structural-overlay-not-published-evidence-gate-independent",
+  "gitSource": "42f2eb741be2ac29f33cfebb4a54ae4dfdd60886",
+  "oldListeningPlanSha256": "f993b36948e7a37786348833f69a747778eb1c786d03908923160bb39c5f8461",
+  "newListeningPlanSha256": "f2159b323f968a846d9ff993ecd7f033dec171e5d15ba14fe582eda26da8f533",
+  "inputPackRawSha256": "9ec5c813dda01db241e4d21d81d3c025947d6f19a6c7f5a5007a9d8dfbb5c232",
+  "oldMediaSha256": {
+    "audio/azure-v1/test-02-15.mp3": "1cf4466d71a4869d2199e46b143447906faf2d265c83fb5d922c189a726a4854",
+    "audio/formal/test-02-cues-02.mp3": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c"
+  },
+  "newAudioGuards": {
+    "audio/exams/test-02/groups/t02-g037/passage-r2.wav": {
+      "path": "audio/exams/test-02/groups/t02-g037/passage-r2.wav",
+      "sha256": "779e61d9e7e9ff67f50b1b0cc187006e1fbfa0d24eb7412bec9613bc95dcb1aa",
+      "frames": 709800,
+      "sampleRate": 24000
+    }
+  },
+  "units": [
+    {
+      "groupId": "t02-g037",
+      "oldGroupSha256": "07d9eb22783dd1b935a9f26834431a92dfee2dd4fbcab2ae1141015fa4e0b630",
+      "oldQuestionSha256": {
+        "t02-q047": "23d5bba06997679aabb1dbbfab2994bb1bfde143e86de0433f6483dba781c4a2",
+        "t02-q048": "803950e7770d1ac69f96b455c3b519b416fc25003baf3d0b21d28e6cbebd09ba",
+        "t02-q049": "928c4b913c091fa4ee08a70fc8e8d8e8bb082543e6099552e9374184e1af1dc0"
+      },
+      "newGroup": {
+        "id": "t02-g037",
+        "testId": "test-02",
+        "part": 3,
+        "title": "Checking an access permission",
+        "titleZh": "確認存取權限",
+        "topic": "technology",
+        "passage": "Man: I can open the project folder, but I cannot upload the validation report. Is the server down?\nWoman: The server is running. Your account may have read-only access. Have you just joined this project?\nMan: Yes, this week. My manager asked me to add the report before the review meeting.\nWoman: Please send me two things: the folder name and a copy of your manager's approval. I can request write access from the administrator.",
+        "passageZh": "男：我能開啟專案資料夾，但無法上傳驗證報告。伺服器當機了嗎？\n女：伺服器正在運作。你的帳號可能只有唯讀權限。你剛加入這個專案嗎？\n男：是，這個星期。主管要我在審查會議前加入報告。\n女：請寄給我兩樣東西：資料夾名稱和一份主管的核准紀錄。我可以向管理員申請寫入權限。",
+        "audioScript": "I can open the project folder, but I cannot upload the validation report. Is the server down?\nThe server is running. Your account may have read-only access. Have you just joined this project?\nYes, this week. My manager asked me to add the report before the review meeting.\nPlease send me two things: the folder name and a copy of your manager's approval. I can request write access from the administrator.",
+        "turns": [
+          {
+            "voice": "male",
+            "text": "I can open the project folder, but I cannot upload the validation report. Is the server down?"
+          },
+          {
+            "voice": "female",
+            "text": "The server is running. Your account may have read-only access. Have you just joined this project?"
+          },
+          {
+            "voice": "male",
+            "text": "Yes, this week. My manager asked me to add the report before the review meeting."
+          },
+          {
+            "voice": "female",
+            "text": "Please send me two things: the folder name and a copy of your manager's approval. I can request write access from the administrator."
+          }
+        ],
+        "audio": "audio/exams/test-02/groups/t02-g037/passage-r2.wav",
+        "duration": 29.575,
+        "audioSpeakers": [
+          {
+            "speaker": "male",
+            "locale": "en-ZA",
+            "role": "male",
+            "modelVoice": "en-ZA-LukeNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-ZA",
+            "role": "female",
+            "modelVoice": "en-ZA-LeahNeural"
+          }
+        ],
+        "audioStart": 0,
+        "audioEnd": 29.575
+      },
+      "newQuestions": [
+        {
+          "id": "t02-q047",
+          "testId": "test-02",
+          "number": 47,
+          "part": 3,
+          "groupId": "t02-g037",
+          "topic": "technology",
+          "difficulty": "intermediate",
+          "tags": [
+            "read-only access"
+          ],
+          "prompt": "What is the man unable to do?",
+          "promptZh": "男方無法做什麼？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Upload a report.",
+              "zh": "上傳報告。",
+              "whyZh": "他能開資料夾，卻不能上傳驗證報告。"
+            },
+            {
+              "id": "B",
+              "text": "Open the project folder.",
+              "zh": "開啟專案資料夾。",
+              "whyZh": "他明確說 I can open the project folder。"
+            },
+            {
+              "id": "C",
+              "text": "Attend the review meeting.",
+              "zh": "參加審查會議。",
+              "whyZh": "沒有表示不能參加會議。"
+            },
+            {
+              "id": "D",
+              "text": "Contact his manager.",
+              "zh": "聯絡主管。",
+              "whyZh": "主管已交付工作，沒有聯絡困難的資訊。"
+            }
+          ],
+          "answer": "A",
+          "explanationZh": "他能開資料夾，卻不能上傳驗證報告。",
+          "evidence": "I cannot upload the validation report.",
+          "vocabulary": [
+            {
+              "term": "read-only access",
+              "zh": "唯讀權限",
+              "note": "可讀取但不能修改或新增內容的權限。"
+            },
+            {
+              "term": "write access",
+              "zh": "寫入權限",
+              "note": "允許新增或修改資料的權限。"
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "id": "t02-q048",
+          "testId": "test-02",
+          "number": 48,
+          "part": 3,
+          "groupId": "t02-g037",
+          "topic": "technology",
+          "difficulty": "intermediate",
+          "tags": [
+            "read-only access"
+          ],
+          "prompt": "What does the woman suggest may be the cause?",
+          "promptZh": "女方認為可能的原因是什麼？",
+          "options": [
+            {
+              "id": "A",
+              "text": "The account only allows reading.",
+              "zh": "帳號只有讀取權限。",
+              "whyZh": "她提出 read-only access 作為可能原因，尚待管理員處理。"
+            },
+            {
+              "id": "B",
+              "text": "The server has stopped operating.",
+              "zh": "伺服器停止運作。",
+              "whyZh": "女方明確說伺服器正在運作。"
+            },
+            {
+              "id": "C",
+              "text": "The report was printed incorrectly.",
+              "zh": "報告列印錯誤。",
+              "whyZh": "問題是上傳權限，未討論列印。"
+            },
+            {
+              "id": "D",
+              "text": "The project has been canceled.",
+              "zh": "專案被取消。",
+              "whyZh": "男方剛加入專案，沒有取消資訊。"
+            }
+          ],
+          "answer": "A",
+          "explanationZh": "她提出 read-only access 作為可能原因，尚待管理員處理。",
+          "evidence": "Your account may have read-only access.",
+          "vocabulary": [
+            {
+              "term": "read-only access",
+              "zh": "唯讀權限",
+              "note": "可讀取但不能修改或新增內容的權限。"
+            },
+            {
+              "term": "write access",
+              "zh": "寫入權限",
+              "note": "允許新增或修改資料的權限。"
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "id": "t02-q049",
+          "testId": "test-02",
+          "number": 49,
+          "part": 3,
+          "groupId": "t02-g037",
+          "topic": "technology",
+          "difficulty": "intermediate",
+          "tags": [
+            "read-only access"
+          ],
+          "prompt": "What should the man provide?",
+          "promptZh": "男方應提供什麼？",
+          "options": [
+            {
+              "id": "A",
+              "text": "His personal password.",
+              "zh": "他的個人密碼。",
+              "whyZh": "對話沒有要求密碼。"
+            },
+            {
+              "id": "B",
+              "text": "A printed copy of every project file.",
+              "zh": "每個專案檔案的紙本。",
+              "whyZh": "只需要資料夾名稱與核准，沒有列印全部檔案。"
+            },
+            {
+              "id": "C",
+              "text": "The customer's shipping address.",
+              "zh": "客戶的收貨地址。",
+              "whyZh": "與存取權限申請無關。"
+            },
+            {
+              "id": "D",
+              "text": "The folder name and managerial approval.",
+              "zh": "資料夾名稱與主管核准。",
+              "whyZh": "女方明確要求兩樣資料：資料夾名稱與一份主管的核准紀錄。這兩樣用來申請寫入權限。"
+            }
+          ],
+          "answer": "D",
+          "explanationZh": "女方明確要求兩樣資料：資料夾名稱與一份主管的核准紀錄。這兩樣用來申請寫入權限。",
+          "evidence": "Please send me two things: the folder name and a copy of your manager's approval.",
+          "vocabulary": [
+            {
+              "term": "read-only access",
+              "zh": "唯讀權限",
+              "note": "可讀取但不能修改或新增內容的權限。"
+            },
+            {
+              "term": "write access",
+              "zh": "寫入權限",
+              "note": "允許新增或修改資料的權限。"
+            }
+          ],
+          "revision": 1
+        }
+      ],
+      "timingProof": {
+        "status": "timing-candidate-not-sound-or-browser-acceptance",
+        "testId": "test-02",
+        "groupId": "t02-g037",
+        "firstSec": 1261.73224,
+        "endSec": 1338.07632,
+        "changedFormalIndices": [
+          139
+        ],
+        "answerSeconds": [
+          11.31378,
+          11.31378,
+          11.31377
+        ],
+        "formalSeconds": 2700
+      },
+      "receipt": {
+        "name": "test02-g037-shared",
+        "inputCharacters": 402,
+        "samples": 709800,
+        "seconds": 29.575,
+        "bytes": 1419644,
+        "sha256": "779e61d9e7e9ff67f50b1b0cc187006e1fbfa0d24eb7412bec9613bc95dcb1aa",
+        "status": "rendered-candidate-not-validated"
+      },
+      "oldWindows": {
+        "shared": {
+          "path": "audio/azure-v1/test-02-15.mp3",
+          "sha256": "1cf4466d71a4869d2199e46b143447906faf2d265c83fb5d922c189a726a4854",
+          "start": 0.5,
+          "end": 30.164
+        },
+        "cueAndStem": [
+          {
+            "src": "audio/formal/test-02-cues-02.mp3",
+            "start": 42.37375,
+            "end": 46.34463,
+            "duration": 3.97087,
+            "kind": "audio",
+            "role": "cue",
+            "part": 3,
+            "groupId": "t02-g037",
+            "at": 1261.73224,
+            "assetSha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+            "requiredSpeech": "Questions 47 through 49. Listen to the conversation.",
+            "evalClipSha256": "e92621025e42e42330ea7e95b54988044665f0e69cc4c2da446b4b46f278676e",
+            "independentNotes": "Unprompted Whisper small.en and Vosk both match wording and numbers."
+          },
+          {
+            "src": "audio/formal/test-02-cues-02.mp3",
+            "start": 46.59463,
+            "end": 49.66029,
+            "duration": 3.06567,
+            "kind": "audio",
+            "role": "question",
+            "part": 3,
+            "groupId": "t02-g037",
+            "questionId": "t02-q047",
+            "at": 1295.36711,
+            "assetSha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+            "requiredSpeech": "Number 47. What is the man unable to do?",
+            "evalClipSha256": "112a835fa565df4bd04ee35301c5efb462ed704dd797d220b1f75994b224abaa",
+            "independentNotes": "Unprompted local Vosk matches words; retain exact hash and map."
+          },
+          {
+            "src": "audio/formal/test-02-cues-02.mp3",
+            "start": 49.91029,
+            "end": 53.19325,
+            "duration": 3.28296,
+            "kind": "audio",
+            "role": "question",
+            "part": 3,
+            "groupId": "t02-g037",
+            "questionId": "t02-q048",
+            "at": 1309.71689,
+            "assetSha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+            "requiredSpeech": "Number 48. What does the woman suggest may be the cause?",
+            "evalClipSha256": "3b71c92e703b4b5bf7949da4dd4c400bac2a8ba9cfdf554b52eda5ac3ef110d2",
+            "independentNotes": "Unprompted Vosk segments “may be” as “maybe”; not verified as a meaningful alternative. Exact prior source range stays guarded. Compare actual words independently before acceptance."
+          },
+          {
+            "src": "audio/formal/test-02-cues-02.mp3",
+            "start": 53.44325,
+            "end": 55.9515,
+            "duration": 2.50825,
+            "kind": "audio",
+            "role": "question",
+            "part": 3,
+            "groupId": "t02-g037",
+            "questionId": "t02-q049",
+            "at": 1324.28396,
+            "assetSha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+            "requiredSpeech": "Number 49. What should the man provide?",
+            "evalClipSha256": "95cfb705ee4cbbd93d0c48eb74560a7eba9709c1cb4120e6df293b573ba316a8",
+            "independentNotes": "Unprompted local Vosk matches words; retain exact hash and map."
+          }
+        ]
+      }
+    }
+  ],
+  "formalFrameOps": [
+    {
+      "index": 139,
+      "beforeSha256": "a36ee6c9cf98b4d13c6f9216d79a91466957e1caaf2e859deb5bd88191baecb4",
+      "updates": {
+        "src": "audio/exams/test-02/groups/t02-g037/passage-r2.wav",
+        "start": 0,
+        "end": 29.575,
+        "duration": 29.575
+      }
+    },
+    {
+      "index": 140,
+      "beforeSha256": "4d88d1c3661635b6f709732c3231088ce8a21c62770741b9d2aaa8efccc50128",
+      "updates": {
+        "at": 1295.27811
+      }
+    },
+    {
+      "index": 141,
+      "beforeSha256": "712a40cd7d75dd3e4ed16c4c4c3e60397a458da9b6a9b69be1fc858899033c6e",
+      "updates": {
+        "duration": 11.31378,
+        "at": 1298.34378
+      }
+    },
+    {
+      "index": 142,
+      "beforeSha256": "b5ca7550de606e2a8ad0cb03711d2a6fe9ea6600a0effb8ff6e27575ab5ce5a0",
+      "updates": {
+        "at": 1309.65756
+      }
+    },
+    {
+      "index": 143,
+      "beforeSha256": "193090feb31beaa60e1e211074751500b7d30dfcb3fa5c2984e268e8c9811b13",
+      "updates": {
+        "duration": 11.31378,
+        "at": 1312.94052
+      }
+    },
+    {
+      "index": 144,
+      "beforeSha256": "b8f1b890e679bf4a0569645119d05a65ee687a2b143f34d89ed4b3c3d20a66c6",
+      "updates": {
+        "at": 1324.2543
+      }
+    },
+    {
+      "index": 145,
+      "beforeSha256": "55aa68fcc85ca63af3e82796d3dc24a53332b3ffff863fe93096e1e183a381b6",
+      "updates": {
+        "duration": 11.31377,
+        "at": 1326.76255
+      }
+    }
+  ]
+}

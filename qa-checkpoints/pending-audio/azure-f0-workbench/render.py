@@ -29,6 +29,19 @@ def speech(turn):
     match = VOICE.fullmatch(name) if isinstance(name, str) else None
     require(match is not None and match[1] == turn.get('locale'), 'Invalid standard voice/locale pair')
     require(isinstance(text, str) and 0 < len(text.strip()) <= 2_500, 'Empty or oversized turn')
+    pause = turn.get('exactPauseAfter')
+    if pause is not None:
+        require(isinstance(pause, dict), 'Invalid interior pause')
+        phrase, milliseconds = pause.get('phrase'), pause.get('ms')
+        require(isinstance(phrase, str) and 1 <= len(phrase) <= 80 and
+                phrase[-1] in ',;:' and text.count(phrase) == 1 and
+                type(milliseconds) is int and 75 <= milliseconds <= 300,
+                'Interior pause must bind one existing punctuation boundary')
+    def inner(fragment):
+        if pause is None or phrase not in fragment:
+            return escape(fragment)
+        lead, exact, tail = fragment.partition(phrase)
+        return escape(lead+exact)+f'<break time="{milliseconds}ms"/>'+escape(tail)
     option_count = turn.get('optionCount', 0)
     require(type(option_count) is int and option_count in (0, 3, 4), 'Invalid option count')
     if option_count:
@@ -36,10 +49,12 @@ def speech(turn):
         require(parts[0] == '' and parts[1::2] == list('ABCD'[:option_count])
                 and all(v.strip() for v in parts[2::2]), 'Expected exact ordered option letters')
         body = '<break time="550ms"/>'.join(
-            f'<say-as interpret-as="characters">{letter}</say-as><break time="170ms"/>{escape(line.strip())}'
+            f'<say-as interpret-as="characters">{letter}</say-as><break time="170ms"/>{inner(line.strip())}'
             for letter, line in zip(parts[1::2], parts[2::2]))
     else:
-        body = escape(text.strip())
+        body = inner(text.strip())
+    if pause is not None:
+        require(body.count(f'<break time="{milliseconds}ms"/>') == 1, 'Pause not placed exactly once')
     tail = turn.get('afterMs', 0)
     require(type(tail) is int and 0 <= tail <= 750, 'Invalid tail pause')
     if tail:
