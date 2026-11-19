@@ -1,0 +1,109 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "otherwise describes possible consequence of not saving locally, not simultaneous meanwhile, comparison in contrast or similarity similarly. Chinese wording preserves possibility and network failure. r2 B key and historical B preserved.",
+  "activeQuestion": {
+    "id": "t02-q117-r2",
+    "testId": "test-02",
+    "number": 117,
+    "part": 5,
+    "groupId": null,
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "grammar"
+    ],
+    "prompt": "Please save a local copy now; ____, you may have no copy to open when the network goes down.",
+    "promptZh": "請現在存一份本機副本；＿＿，網路中斷時你可能連一份可開啟的副本都沒有。",
+    "options": [
+      {
+        "text": "meanwhile",
+        "zh": "同時",
+        "whyZh": "meanwhile 表同時發生，不能清楚表達不存檔的後果。",
+        "id": "A"
+      },
+      {
+        "text": "otherwise",
+        "zh": "否則",
+        "whyZh": "otherwise 表示若不遵照前述保存建議，便可能發生的結果。",
+        "id": "B"
+      },
+      {
+        "text": "in contrast",
+        "zh": "相較之下",
+        "whyZh": "前句建議保存副本，後句是不照做的可能後果，並非比較兩種情況。",
+        "id": "C"
+      },
+      {
+        "text": "similarly",
+        "zh": "同樣地",
+        "whyZh": "前後不是相似情況，而是未採取措施的後果。",
+        "id": "D"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "otherwise 表示若不遵照前述保存建議，便可能發生的結果。",
+    "evidence": "Please save a local copy now; otherwise, you may have no copy to open when the network goes down.",
+    "vocabulary": [
+      {
+        "term": "network outage",
+        "zh": "網路中斷",
+        "note": "網路服務暫時不可用的期間。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t02-q117",
+    "testId": "test-02",
+    "number": 117,
+    "part": 5,
+    "groupId": null,
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "grammar"
+    ],
+    "prompt": "Please save a local copy now; ____, you may lose access during the network outage.",
+    "promptZh": "請現在存一份本機副本；____，網路中斷時你可能無法取得資料。",
+    "options": [
+      {
+        "text": "meanwhile",
+        "zh": "同時",
+        "whyZh": "meanwhile 表同時發生，不能清楚表達不存檔的後果。",
+        "id": "A"
+      },
+      {
+        "text": "otherwise",
+        "zh": "否則",
+        "whyZh": "otherwise 表示若不遵照前述保存建議，便可能發生的結果。",
+        "id": "B"
+      },
+      {
+        "text": "nevertheless",
+        "zh": "然而",
+        "whyZh": "此處不是即使存檔仍無法取得的讓步，而是未存檔的條件結果。",
+        "id": "C"
+      },
+      {
+        "text": "similarly",
+        "zh": "同樣地",
+        "whyZh": "前後不是相似情況，而是未採取措施的後果。",
+        "id": "D"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "otherwise 表示若不遵照前述保存建議，便可能發生的結果。",
+    "evidence": "save a local copy now; otherwise, you may lose access",
+    "vocabulary": [
+      {
+        "term": "network outage",
+        "zh": "網路中斷",
+        "note": "網路服務暫時不可用的期間。"
+      }
+    ],
+    "revision": 1
+  }
+}
