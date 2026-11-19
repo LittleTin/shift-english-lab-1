@@ -45,7 +45,8 @@ function practiceRange(g){
  if(!g||!safeAsset(g.audio,'audio'))return null;
  const start=Number.isFinite(g.audioStart)&&g.audioStart>=0?g.audioStart:0;
  const end=Number.isFinite(g.audioEnd)&&g.audioEnd>start?g.audioEnd:null;
- return {url:g.audio,start,end,label:'Practice / Review: original audio'};
+ const isolated=g.audio===`audio/practice-groups/${g.testId}/${g.id}.ogg`&&start===0&&end===g.duration;
+ return {url:g.audio,start,end,label:isolated?'Practice / Review: complete group file (from 0 seconds)':'Practice / Review: original audio'};
 }
 function inspectRanges(q,g,p){
  const out=[];
@@ -63,25 +64,23 @@ function inspectRanges(q,g,p){
  }
  return out;
 }
-function addAudio(root,r){
- const row=el('section','','inspect-source'),label=el('strong',r.label);
- const span=el('p',r.end===null?'Original full track':r.start.toFixed(3)+' s to '+r.end.toFixed(3)+' s','hint');
- const reveal=el('button','Load playback range','btn small');reveal.type='button';
- row.append(label,span,el('code',r.url),el('br'),href(r.url,'Open original audio file'),el('br'),reveal);
- reveal.addEventListener('click',()=>{
-  const audio=el('audio');audio.controls=true;audio.preload='metadata';audio.setAttribute('aria-label',r.label);
-  audio.addEventListener('loadedmetadata',()=>{if(r.start>0&&audio.currentTime<r.start-.015)audio.currentTime=r.start},{once:true});
-  audio.addEventListener('play',()=>{
-   for(const other of result.querySelectorAll('audio'))if(other!==audio)other.pause();
-   if(audio.currentTime<r.start-.015||(r.end!==null&&audio.currentTime>=r.end))audio.currentTime=r.start;
-  });
-  if(r.end!==null)audio.addEventListener('timeupdate',()=>{
-   if(audio.currentTime>=r.end&&!audio.paused){audio.pause();audio.currentTime=r.end;}
-  });
-  audio.src=r.url+(r.end===null?'':'#t='+r.start+','+r.end);
-  reveal.replaceWith(audio);
- });
- root.append(row);
+function audioSource(root,r){
+ const row=el('div','','inspect-source');
+ row.append(el('strong',r.label),el('p',r.end===null?'Original full track':r.start.toFixed(3)+' s to '+r.end.toFixed(3)+' s','hint'),el('code',r.url),el('br'),href(r.url,'Open original audio file'));
+ root.append(row)
+}
+function addPlayers(card,uuid,g,p){
+ const row=el('div','','debug-meta');
+ for(const [mode,label,available] of [
+  ['practice','Open Practice Player',practiceRange(g)],
+  ['exam','Open Formal Test Player',g&&p.listeningPlan?.frames?.some(f=>f.groupId===g.id)]
+ ]){
+  if(!available)continue;
+  const a=el('a',label,'btn primary');
+  a.href='index.html?'+new URLSearchParams({diagnostic:uuid,mode}).toString();
+  row.append(a);
+ }
+ if(row.firstChild)card.append(el('h3','Reproduce playback with the site player'),row,el('p','Opens the actual exam or practice player at this group. No answers or progress are saved. The file links below are only for inspecting the source.','hint'));
 }
 function show(found){
  const {q,g,p,uuid,title,testNumber}=found;
@@ -107,7 +106,7 @@ function show(found){
  for(const o of q.options)if(o.whyZh)details.append(el('p',o.id+'. '+o.whyZh));
  card.append(details);
  const audio=inspectRanges(q,g,p);
- if(audio.length){card.append(el('h3','Original audio files and playback ranges'));for(const row of audio)addAudio(card,row);}
+ if(audio.length){addPlayers(card,uuid,g,p);card.append(el('h3','Original audio files and playback ranges'));for(const row of audio)audioSource(card,row);}
  result.replaceChildren(card);head.focus({preventScroll:true});
 }
 function clearResult(){

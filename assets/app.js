@@ -23,6 +23,11 @@ const catalog=window.SHIFT_CATALOG||{tests:[]};
 const officialEntry=id=>catalog.tests.find(t=>t.id===id);
 const officialPacks=new Map(), unavailableCustom=new Set();
 const app=document.getElementById('app');
+const launchParams=new URLSearchParams(location.search);
+const diagnostic=launchParams.has('diagnostic');
+const diagnosticUuid=(launchParams.get('diagnostic')||'').trim().toLowerCase();
+const diagnosticMode=launchParams.get('mode');
+const diagnosticBack='question-debug.html'+(/^[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}$/.test(diagnosticUuid)?'?uuid='+encodeURIComponent(diagnosticUuid):'');
 const player=document.getElementById('audio-player');
 const opusPlayable=()=>Boolean(player.canPlayType('audio/ogg; codecs="opus"')||player.canPlayType('audio/ogg'));
 const opusRequired=p=>typeof p==='string'&&p.endsWith('.ogg');
@@ -108,14 +113,14 @@ if(r.active&&(s.active?.reservedPackConflict===true||r.active.testIds.some(id=>b
 return r}
 
 async function initStorage(){try{db=await new Promise((resolve,reject)=>{const req=indexedDB.open('shift-english-lab-v1',1);req.onupgradeneeded=()=>req.result.createObjectStore('kv');req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);req.onblocked=()=>reject(new Error('The database is in use by another tab'))});const stored=await new Promise((resolve,reject)=>{const r=db.transaction('kv').objectStore('kv').get('state');r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error)});if(stored)state=normalizeState(stored);storageMode='indexeddb';db.onversionchange=()=>{db.close();storageMode='memory';notify('Storage has changed. Export a backup and reopen the app.')};await persist();return}catch(e){console.warn('IndexedDB unavailable',e)}try{localStorage.setItem('shift-probe','1');localStorage.removeItem('shift-probe');const raw=localStorage.getItem('shift-english-lab-v1');if(raw)state=normalizeState(JSON.parse(raw));storageMode='localstorage'}catch(e){storageMode='memory'}}
-function persist(){if(storageMode==='loading'||storageMode==='memory')return Promise.resolve();const snapshot=JSON.stringify(state);saveQueue=saveQueue.catch(()=>{}).then(()=>new Promise((resolve,reject)=>{if(storageMode==='indexeddb'&&db){const tx=db.transaction('kv','readwrite');tx.objectStore('kv').put(JSON.parse(snapshot),'state');tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error||new Error('Saving was interrupted'))}else{try{localStorage.setItem('shift-english-lab-v1',snapshot);resolve()}catch(e){reject(e)}}})).catch(e=>{console.error(e);storageMode='memory';notify('The browser cannot save records. Export a backup from Data & Settings.');updateStorageBadge()});return saveQueue}
+function persist(){if(diagnostic)return Promise.resolve();if(storageMode==='loading'||storageMode==='memory')return Promise.resolve();const snapshot=JSON.stringify(state);saveQueue=saveQueue.catch(()=>{}).then(()=>new Promise((resolve,reject)=>{if(storageMode==='indexeddb'&&db){const tx=db.transaction('kv','readwrite');tx.objectStore('kv').put(JSON.parse(snapshot),'state');tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error||new Error('Saving was interrupted'))}else{try{localStorage.setItem('shift-english-lab-v1',snapshot);resolve()}catch(e){reject(e)}}})).catch(e=>{console.error(e);storageMode='memory';notify('The browser cannot save records. Export a backup from Data & Settings.');updateStorageBadge()});return saveQueue}
 function readNoteDraft(){try{const raw=localStorage.getItem(NOTE_DRAFT_KEY);return raw?JSON.parse(raw):null}catch(e){return null}}
 function removeNoteDraft(token){try{if(readNoteDraft()?.token===token)localStorage.removeItem(NOTE_DRAFT_KEY)}catch(e){}}
 function noteStatusText(id){return noteStatuses.get(id)||(storageMode==='memory'?'Temporary storage only. Please export a backup.':state.notes[id]?'Saved in this browser':'Changes are saved automatically in this browser')}
 function setNoteStatus(id,text){noteStatuses.set(id,text);const el=document.getElementById('note-save-status'),input=document.getElementById('question-note');if(el&&input?.dataset.id===id)el.textContent=text;const grouped=document.querySelector('[data-note-status="'+id+'"]');if(grouped)grouped.textContent=text}
 function clearNoteDraft(){noteGeneration++;noteTokens.clear();noteStatuses.clear();state.noteDraftEpoch=uid();try{localStorage.removeItem(NOTE_DRAFT_KEY)}catch(e){}}
 function saveNoteInput(id,text){
-if(!safeId(id))return;
+if(diagnostic||!safeId(id))return;
 const token=uid(),generation=noteGeneration,draft={version:1,token,epoch:state.noteDraftEpoch||'initial',questionId:id,text:String(text).slice(0,20000),at:now()};
 state.notes[id]=draft.text;noteTokens.set(id,token);let cached=false;
 try{localStorage.setItem(NOTE_DRAFT_KEY,JSON.stringify(draft));cached=true}catch(e){}
@@ -251,7 +256,12 @@ function shuffle(arr){const a=arr.slice();for(let i=a.length-1;i>0;i--){const j=
 function topicIcon(t){return {technology:'chip',manufacturing:'factory',business:'briefcase',daily:'coffee'}[t]||'book'}
 function heading(title,sub,eyebrow='YOUR LEARNING SPACE'){return '<div class="page-heading"><div><p class="eyebrow">'+esc(eyebrow)+'</p><h1 class="page-title">'+esc(title)+'</h1><p class="page-sub">'+esc(sub)+'</p></div><span class="date-label">'+new Intl.DateTimeFormat('en-US',{month:'long',day:'numeric',weekday:'long'}).format(new Date())+'</span></div>'}
 function btn(text,action,cls='',extra=''){return '<button class="btn '+cls+'" data-action="'+action+'" '+extra+'>'+text+'</button>'}
-function shell(content){const s=statsSummary();const nav=[['home','home','Practice Home'],['practice','book','Practice by Topic'],['review','review','Review Mistakes',s.wrongIds.length],['favorites','star','Saved Questions',s.stars],['stats','chart','Learning History'],['data','folder','Data & Settings']];const title={home:'Practice Home',practice:'Practice by Topic',review:'Review Mistakes',favorites:'Saved Questions',stats:'Learning History',data:'Data & Settings',quiz:'Practice in Progress',result:'Results','answer-review':'Answer Explanation'}[route];app.innerHTML='<div class="layout"><div class="mobile-overlay '+(mobileNav?'open':'')+'" data-action="menu-close"></div><aside class="sidebar '+(mobileNav?'open':'')+'"><a href="#" class="brand" data-action="nav-home"><span class="brand-symbol">S<span>↗</span></span><span><span class="brand-name">SHIFT</span><span class="brand-sub" style="display:block">ENGLISH LAB</span></span></a><div class="nav-label">MY PRACTICE SPACE</div><nav aria-label="Main navigation">'+nav.map(([r,i,t,c])=>'<button class="nav-item '+(route===r?'active':'')+'" data-action="nav-'+r+'" '+(route===r?'aria-current="page"':'')+'>'+icon(i)+'<span>'+t+'</span>'+(c?'<span class="nav-count">'+c+'</span>':'')+'</button>').join('')+'</nav><div class="sidebar-bottom"><span class="local-dot"></span>Keep practicing offline<p>Technology · Manufacturing · Everyday Life<br>Build your English, one question at a time.</p><p>VERSION '+esc(VERSION)+'</p></div></aside><div class="workspace"><header class="topbar"><div class="breadcrumbs"><button class="mobile-menu" data-action="menu" aria-label="Open menu">'+icon('menu')+'</button><span>Learning Space /</span><strong>'+title+'</strong></div><div class="top-actions"><span class="status-pill '+(storageMode==='memory'?'warn':'')+'" id="storage-badge">'+icon(storageMode==='memory'?'info':'shield')+(storageMode==='memory'?'Temporary storage · Back up now':'Records saved locally')+'</span><span class="tiny-profile" aria-label="Local learner">Me</span></div></header>'+(storageMode==='memory'?'<div class="storage-alert">This browser cannot save your data. Export your learning records from Data & Settings before leaving.</div>':'')+'<main class="main" id="main">'+content+'<footer class="footer-note"><span>Original English practice content · Not ETS official questions or score assessment</span><span>SHIFT ENGLISH LAB · VERSION '+esc(VERSION)+'</span></footer></main></div></div>';document.documentElement.style.setProperty('--text-scale',state.settings.fontScale||1)}
+function shell(content){
+ if(diagnostic){
+  app.innerHTML='<div class="workspace" data-playback-diagnostic><header class="topbar"><a class="btn small" href="'+diagnosticBack+'">'+icon('back')+' Question Debug</a><span class="status-pill">Diagnostic · No records saved</span></header><main class="main" id="main">'+content+'</main></div>';
+  return
+ }
+ const s=statsSummary();const nav=[['home','home','Practice Home'],['practice','book','Practice by Topic'],['review','review','Review Mistakes',s.wrongIds.length],['favorites','star','Saved Questions',s.stars],['stats','chart','Learning History'],['data','folder','Data & Settings']];const title={home:'Practice Home',practice:'Practice by Topic',review:'Review Mistakes',favorites:'Saved Questions',stats:'Learning History',data:'Data & Settings',quiz:'Practice in Progress',result:'Results','answer-review':'Answer Explanation'}[route];app.innerHTML='<div class="layout"><div class="mobile-overlay '+(mobileNav?'open':'')+'" data-action="menu-close"></div><aside class="sidebar '+(mobileNav?'open':'')+'"><a href="#" class="brand" data-action="nav-home"><span class="brand-symbol">S<span>↗</span></span><span><span class="brand-name">SHIFT</span><span class="brand-sub" style="display:block">ENGLISH LAB</span></span></a><div class="nav-label">MY PRACTICE SPACE</div><nav aria-label="Main navigation">'+nav.map(([r,i,t,c])=>'<button class="nav-item '+(route===r?'active':'')+'" data-action="nav-'+r+'" '+(route===r?'aria-current="page"':'')+'>'+icon(i)+'<span>'+t+'</span>'+(c?'<span class="nav-count">'+c+'</span>':'')+'</button>').join('')+'</nav><div class="sidebar-bottom"><span class="local-dot"></span>Keep practicing offline<p>Technology · Manufacturing · Everyday Life<br>Build your English, one question at a time.</p><p>VERSION '+esc(VERSION)+'</p></div></aside><div class="workspace"><header class="topbar"><div class="breadcrumbs"><button class="mobile-menu" data-action="menu" aria-label="Open menu">'+icon('menu')+'</button><span>Learning Space /</span><strong>'+title+'</strong></div><div class="top-actions"><span class="status-pill '+(storageMode==='memory'?'warn':'')+'" id="storage-badge">'+icon(storageMode==='memory'?'info':'shield')+(storageMode==='memory'?'Temporary storage · Back up now':'Records saved locally')+'</span><span class="tiny-profile" aria-label="Local learner">Me</span></div></header>'+(storageMode==='memory'?'<div class="storage-alert">This browser cannot save your data. Export your learning records from Data & Settings before leaving.</div>':'')+'<main class="main" id="main">'+content+'<footer class="footer-note"><span>Original English practice content · Not ETS official questions or score assessment</span><span>SHIFT ENGLISH LAB · VERSION '+esc(VERSION)+'</span></footer></main></div></div>';document.documentElement.style.setProperty('--text-scale',state.settings.fontScale||1)}
 function heroArt(){return '<svg viewBox="0 0 260 200" aria-hidden="true"><circle cx="138" cy="94" r="75" fill="#dfe8cc"/><path d="M22 163h207" stroke="#a4b391" stroke-width="1.5"/><g transform="rotate(-9 112 100)"><rect x="57" y="49" width="110" height="124" rx="8" fill="#46664b"/><rect x="63" y="43" width="110" height="124" rx="7" fill="#fafbf1" stroke="#a5b693"/><path d="M81 69h64M81 80h44M81 111h64M81 122h56M81 133h44" stroke="#bdc9aa" stroke-width="4" stroke-linecap="round"/><rect x="81" y="91" width="29" height="9" rx="3" fill="#ddac7a"/><path d="m131 92 5 5 10-12" fill="none" stroke="#5b8052" stroke-width="3" stroke-linecap="round"/></g><rect x="164" y="115" width="53" height="47" rx="10" fill="#cca47b"/><path d="M217 126h7a10 10 0 0 1 0 20h-7" fill="none" stroke="#cca47b" stroke-width="6"/><path d="M181 106c-10-11 8-13 0-25M197 104c-9-10 9-14 0-25" stroke="#9dab89" fill="none" stroke-width="2" stroke-linecap="round"/><path d="m201 41 4 9 10 2-8 7 1 10-8-5-9 4 2-10-7-7 10-1z" fill="#e8bd80"/><path d="m33 86 8 8m-8 0 8-8" stroke="#8ca47d" stroke-width="2"/></svg>'}
 function homePage(){const s=statsSummary(),total=allTests().reduce((a,t)=>a+t.reading+t.listening,0);let out=heading('A little English, every day.','From the workplace to everyday life, make every practice session count.','A LITTLE PRACTICE, EVERY DAY');out+='<section class="hero"><div><span class="tag">'+icon('leaf')+' Focused practice · Around 20 questions</span><h2>Start small.<br>Make progress today.</h2><p>Focus on your answers first. See your score and explanations after submission.</p><div class="btn-row">'+btn('Start Reading Practice '+icon('arrow'),'quick-reading','primary')+btn(icon('headphones')+' Listening Practice','quick-listening')+'<a class="btn" href="語音試聽.html?v='+encodeURIComponent(VERSION)+'">Compare Listening Voices</a></div></div><div class="hero-art">'+heroArt()+'</div></section>';if(state.active)out+='<div class="notice"><strong>You have an unfinished'+(state.active.mode==='exam'?'timed test':'practice session')+': </strong>'+esc(displayEnglish(state.active.title))+' · Answered '+Object.keys(state.active.answers).length+' / '+state.active.questionIds.length+' questions '+btn('Resume Practice '+icon('arrow'),'resume','small')+'</div>';out+='<div class="stats-grid">'+[['book',fmt(total),'Available questions','questions'],['check',fmt(s.unique),'Questions practiced','questions'],['target',s.accuracy===null?'—':s.accuracy,'Overall accuracy',s.accuracy===null?'':'%'],['review',fmt(s.wrongIds.length),'Questions to review','questions']].map(([i,v,l,u])=>'<div class="stat"><div class="stat-icon">'+icon(i)+'</div><div><div class="stat-value">'+v+'<small>'+u+'</small></div><div class="stat-label">'+l+'</div></div></div>').join('')+'</div><div class="home-columns"><section><div class="section-heading"><h2>Choose a test and start practicing</h2><span>'+allTests().length+' original tests</span></div><div class="test-list">';out+=allTests().map((t,i)=>'<article class="test-card"><div class="test-card-top"><div class="test-number">SET<b>'+String(i+1).padStart(2,'0')+'</b></div><div><h3>'+esc(displayEnglish(t.title,'Custom test pack'))+'</h3><p>'+esc(displayEnglish(t.subtitle,'Custom practice material'))+'</p></div></div><div class="test-card-footer"><div class="test-meta"><span>'+icon('book')+' Reading '+t.reading+'</span><span>'+icon('headphones')+' Listening '+t.listening+'</span></div><div class="btn-row">'+btn('Section Practice','test-pick','small','data-test="'+esc(t.id)+'"')+btn('Full Test '+icon('arrow'),'test-exam','primary small','data-test="'+esc(t.id)+'"')+'</div></div></article>').join('');out+='</div></section><aside class="home-side"><div><div class="section-heading"><h2>Review is progress, too</h2></div><div class="review-card"><div class="stat-icon">'+icon('review')+'</div><h3>'+(s.wrongIds.length?'There are '+s.wrongIds.length+' questions ready for another try':'Turn mistakes into learning notes')+'</h3><p>'+(s.wrongIds.length?'Revisit confusing points, read the option explanations, and try again.':'Incorrect answers are collected here automatically. Understanding matters more than memorizing.')+'</p>'+btn('Open Review List '+icon('arrow'),'nav-review')+'</div></div><div class="mini-card"><h3>'+icon('shield')+' Your learning stays on your device</h3><p>No login needed. Practice offline and export backups to take your progress to another device.</p></div></aside></div><div class="section-heading"><h2>Start with a familiar setting</h2>'+btn('All Topics '+icon('arrow'),'nav-practice','ghost small')+'</div><div class="topics-row">'+Object.entries(TOPICS).map(([id,label])=>'<button class="topic-card" data-action="topic" data-topic="'+id+'">'+icon(topicIcon(id))+'<b>'+label+'</b><small>'+({technology:'Specifications · Testing · Development',manufacturing:'Quality · Delivery · Production',business:'Meetings · Email · Collaboration',daily:'Transport · Dining · Travel'}[id])+'</small></button>').join('')+'</div>';return out}
 function selectOptions(map,value,allLabel='All'){return '<option value="all" '+(value==='all'?'selected':'')+'>'+allLabel+'</option>'+Object.entries(map).map(([k,v])=>'<option value="'+esc(k)+'" '+(String(value)===k?'selected':'')+'>'+esc(v)+'</option>').join('')}
@@ -260,9 +270,9 @@ function accentMatches(q,accent){if(accent==='all')return true;const speakers=G.
 function practicePage(){return heading('Practice at your own pace.','Choose a question type, topic, and difficulty. Related questions stay together.','PRACTICE BY TOPIC')+'<section class="panel"><h2>Set up this practice session</h2><div class="filters"><div class="field"><label for="filter-section">Practice section</label><select id="filter-section">'+selectOptions({reading:'Reading Practice',listening:'Listening Practice'},filters.section,'Reading + Listening')+'</select></div><div class="field"><label for="filter-part">Question type</label><select id="filter-part">'+selectOptions(Object.fromEntries(Object.entries(PARTS).map(([k,v])=>[k,'Part '+k+' · '+v])),filters.part,'All question types')+'</select></div><div class="field"><label for="filter-accent">Listening accent focus</label><select id="filter-accent">'+selectOptions(ACCENTS,filters.accent,'Any accent (including mixed)')+'</select></div><div class="field"><label for="filter-topic">Topic</label><select id="filter-topic">'+selectOptions(TOPICS,filters.topic,'All topics')+'</select></div><div class="field"><label for="filter-difficulty">Difficulty</label><select id="filter-difficulty">'+selectOptions(DIFFICULTY,filters.difficulty,'All difficulties')+'</select></div><div class="field"><label for="filter-count">Target question count</label><select id="filter-count">'+[10,20,40,100].map(n=>'<option value="'+n+'" '+(filters.count===n?'selected':'')+'>'+n+' questions approximately</option>').join('')+'</select></div></div><label class="check-row"><input type="checkbox" id="filter-unseen" '+(filters.unseen?'checked':'')+'>Prioritize questions not yet answered</label><p class="hint">Passages and conversations are selected as complete groups, so the question count may vary. If a topic or difficulty does not apply to every question in a group, that group is skipped. Prioritizing unanswered questions tries new groups first without splitting them. An accent filter includes only groups whose voices all have that accent label. Mixed and unlabeled groups are excluded; a shortfall is shown rather than filled with other accents. Labels describe synthetic voice models, not official accent certification. Submit the session to see your score and explanations.</p><div class="btn-row" style="margin-top:24px">'+btn('Start This Practice '+icon('arrow'),'start-filtered','primary')+'</div></section><div class="topics-row">'+Object.entries(TOPICS).map(([id,label])=>'<button class="topic-card" data-action="topic" data-topic="'+id+'">'+icon(topicIcon(id))+'<b>'+label+'</b><small>Choose this topic</small></button>').join('')+'</div>'}
 async function withBusy(fn){if(busy)return;busy=true;try{await fn()}catch(e){console.error(e);notify(e.message||'Something went wrong. Please try again.')}finally{busy=false}}
 async function navigate(dest){if(route==='quiz'||route==='answer-review'){stopAudio();await persist()}mobileNav=false;route=dest;activeTranscript=null;listLimit=40;if(['review','favorites','stats'].includes(dest)){shell('<div class="loading">Loading your learning records…</div>');await loadAll()}render();window.scrollTo({top:0,behavior:'instant'})}
-function render(){try{if(route==='quiz'&&state.active)sessionStorage.setItem('shift-last-quiz',state.active.id);else sessionStorage.removeItem('shift-last-quiz')}catch(e){}if(route==='home')shell(homePage());else if(route==='practice')shell(practicePage());else if(route==='review'||route==='favorites')shell(listPage());else if(route==='stats')shell(statsPage());else if(route==='data')shell(dataPage());else if(route==='quiz')shell(quizPage());else if(route==='result')shell(resultPage());else if(route==='answer-review')shell(reviewDetailPage());syncAudioUI()}
+function render(){if(!diagnostic)try{if(route==='quiz'&&state.active)sessionStorage.setItem('shift-last-quiz',state.active.id);else sessionStorage.removeItem('shift-last-quiz')}catch(e){}if(route==='home')shell(homePage());else if(route==='practice')shell(practicePage());else if(route==='review'||route==='favorites')shell(listPage());else if(route==='stats')shell(statsPage());else if(route==='data')shell(dataPage());else if(route==='quiz')shell(quizPage());else if(route==='result')shell(resultPage());else if(route==='answer-review')shell(reviewDetailPage());syncAudioUI()}
 function groupedSelection(pool,count){const units=new Map();for(const q of pool){const key=q.groupId||q.id;if(!units.has(key))units.set(key,[]);units.get(key).push(q)}const chosen=[];for(const unit of shuffle([...units.values()])){if(chosen.length>=count)break;const qs=unit[0].groupId?relatedQuestions(unit[0]).map(q=>unit.find(x=>x.number===q.number)||q):unit;chosen.push(...qs)}return chosen}
-function startSession(questions,title,mode='practice'){if(!questions.length){notify('No questions match these filters. Try changing your selection.');return}const begin=async()=>{const unique=[...new Map(questions.map(q=>[q.id,q])).values()];resumeEnv=null;state.active={id:'session-'+uid(),contentVersion:contentVersion(),title,mode,questionIds:unique.map(q=>q.id),testIds:[...new Set(unique.map(q=>q.testId))],index:0,answers:{},submitted:{},startedAt:now(),deadline:mode==='exam'?now()+120*60000:null,examVersion:mode==='exam'?2:1,audioEdition:FORMAL_EDITION,examPhase:'listening',sectionDeadline:null,listeningStartedAt:null,audioUsed:{}};await persist();route='quiz';currentQuestionStart=now();activeTranscript=null;stopAudio();render();window.scrollTo({top:0,behavior:'instant'})};if(state.active){confirmBox('Start a new practice session?','You have an unfinished session. Starting a new one replaces that unfinished progress. Submitted answers and notes are kept.',begin,'Start New Session')}else return begin()}
+function startSession(questions,title,mode='practice',startId=null){if(!questions.length){notify('No questions match these filters. Try changing your selection.');return}const begin=async()=>{const unique=[...new Map(questions.map(q=>[q.id,q])).values()];resumeEnv=null;state.active={id:'session-'+uid(),contentVersion:contentVersion(),title,mode,questionIds:unique.map(q=>q.id),testIds:[...new Set(unique.map(q=>q.testId))],index:Math.max(0,unique.findIndex(q=>q.id===startId)),answers:{},submitted:{},startedAt:now(),deadline:mode==='exam'?now()+120*60000:null,examVersion:mode==='exam'?2:1,audioEdition:FORMAL_EDITION,examPhase:'listening',sectionDeadline:null,listeningStartedAt:null,audioUsed:{}};await persist();route='quiz';currentQuestionStart=now();activeTranscript=null;stopAudio();render();window.scrollTo({top:0,behavior:'instant'})};if(state.active){confirmBox('Start a new practice session?','You have an unfinished session. Starting a new one replaces that unfinished progress. Submitted answers and notes are kept.',begin,'Start New Session')}else return begin()}
 function filteredGroupSelection(questions,f,getGroup=key=>G.get(key),hasAttempt=id=>!!state.stats[id]){
  const bucket=new Map();
  for(const q of questions){
@@ -305,7 +315,7 @@ function frameSignature(f,g,s=state.active){
  return JSON.stringify(parts);
 }
 function saveListeningTabPoint(){
- if(!formalRunning||route!=='quiz'||!listening()||!currentAudioGroup)return;
+ if(diagnostic||!formalRunning||route!=='quiz'||!listening()||!currentAudioGroup)return;
  captureFormal?.();
  const s=state.active,g=sessionGroup(currentAudioGroup,s),u=s.audioUsed?.[currentAudioGroup];
  if(!g||u?.status!=='started')return;
@@ -477,13 +487,15 @@ function audioFrame(f,token,offset,progress){
 }
 // One file includes directions, speech and exact answer silence. The native clock drives
 // chapters/UI/journal; a chapter transition never restarts media or uses currentTime=.
+let continuousVisibility=null;
 function playContinuousGroup(m,token,position,isResume,progress){
  return new Promise((resolve,reject)=>{
   const epsilon=.05;
-  let timer,settled=false,metadata=false;
+  let timer,settled=false,metadata=false,suspended=false,playEpoch=0,handover;
   const finish=error=>{
    if(settled)return;
-   settled=true;clearInterval(timer);
+   settled=true;playEpoch++;clearInterval(timer);
+   if(continuousVisibility===handover)continuousVisibility=null;
    for(const [event,handler] of events)player.removeEventListener(event,handler);
    error?reject(error):resolve();
   };
@@ -505,14 +517,30 @@ function playContinuousGroup(m,token,position,isResume,progress){
    progress(m.duration);finish();
   };
   const paused=()=>{
-   check();if(token!==audioRun||!player.paused||player.ended)return;
+   check();if(token!==audioRun||!player.paused||player.ended||suspended||document.hidden)return;
    if(player.currentTime<m.duration-epsilon)return finish(new Error('Audio was paused'));
    // Browser end events can follow pause near the final sample. A genuine pause
    // without a following ended event must not leave the session stuck.
-   setTimeout(()=>{if(!settled&&token===audioRun&&player.paused&&!player.ended)finish(new Error('Audio was paused'))},120);
+   setTimeout(()=>{if(!settled&&token===audioRun&&player.paused&&!player.ended&&!suspended&&!document.hidden)finish(new Error('Audio was paused'))},120);
   };
   const failed=()=>finish(new Error('Unable to load the continuous audio file'));
   const events=[['loadedmetadata',loaded],['error',failed],['ended',ended],['pause',paused],['timeupdate',check]];
+  const play=()=>{
+   const turn=++playEpoch;
+   const failedPlay=e=>{if(!settled&&token===audioRun&&turn===playEpoch&&!suspended&&!document.hidden)finish(e)};
+   try{Promise.resolve(player.play()).catch(failedPlay)}catch(e){failedPlay(e)}
+  };
+  handover={
+   token,
+   suspend(){
+    if(settled||token!==audioRun||suspended)return;
+    suspended=true;playEpoch++;check();player.pause();
+   },
+   resume(){
+    if(settled||token!==audioRun||!suspended||document.hidden)return;
+    suspended=false;player.playbackRate=1;play();
+   }
+  };
   try{
    for(const [event,handler] of events)player.addEventListener(event,handler);
    player.src=m.src;player.load();player.playbackRate=1;
@@ -521,9 +549,9 @@ function playContinuousGroup(m,token,position,isResume,progress){
    // Some in-memory/cached element implementations already know metadata.
    if(player.readyState>=1)loaded();
    if(settled)return;
-   captureFormal=check;
+   captureFormal=check;continuousVisibility=handover;
    timer=setInterval(check,25);
-   player.play().catch(finish);
+   if(document.hidden)handover.suspend();else play();
   }catch(e){finish(e)}
  });
 }
@@ -601,7 +629,12 @@ async function runFormalGroup(g){
 }
 const PRACTICE_SEEK_EPS=.014, PRACTICE_UNDERSHOOT=.004;
 let practicePosition=null;
+function standalonePractice(g){
+ return !!g&&g.audio===`audio/practice-groups/${g.testId}/${g.id}.ogg`&&safeMedia(g.audio)&&
+  g.audioStart===0&&Number.isFinite(g.duration)&&g.duration>0&&g.audioEnd===g.duration;
+}
 function practiceSrc(g){
+ if(standalonePractice(g))return g.audio;
  const start=mediaStart(g),end=g.audioEnd;
  return g.audio+(Number.isFinite(end)&&end>start?'#t='+start+','+end:'');
 }
@@ -662,6 +695,21 @@ function beginPracticePosition(g,target,playAfter){
   verify();
  }catch(e){finish('fail')}
 }
+function playStandalonePractice(g){
+ const token=audioRun,src=g.audio,group=g.id;
+ const current=()=>token===audioRun&&currentAudioGroup===group&&player.getAttribute('src')===src;
+ const failed=()=>{if(current())notify('Audio cannot play. Select Play again.')};
+ try{
+  if(!current()||player.ended||player.error||player.currentTime>=g.duration){
+   player.pause();
+   player.src=src;player.load();
+  }
+  // A different or completed native file begins at zero without an explicit seek.
+  // A user pause or scrub within the same file retains that intentional position.
+  Promise.resolve(player.play()).catch(failed);
+ }catch(e){failed()}
+ syncAudioUI();
+}
 async function playAudio(groupId){
  const g=quizGroup(groupId);
  if(listening()&&route==='quiz'){void runFormalGroup(g);return}
@@ -671,6 +719,7 @@ async function playAudio(groupId){
  if(currentAudioGroup===groupId&&!player.paused){player.pause();syncAudioUI();return}
  const changed=currentAudioGroup!==groupId||player.getAttribute('src')!==practiceSrc(g);
  if(changed){player.pause();currentAudioGroup=groupId}
+ if(standalonePractice(g)){playStandalonePractice(g);return}
  const start=mediaStart(g),end=g.audioEnd;
  const target=changed||player.currentTime<start||Number.isFinite(end)&&player.currentTime>=end-.035?start:player.currentTime;
  beginPracticePosition(g,target,true);
@@ -687,7 +736,7 @@ function scrubPractice(g,value){
 }
 function checkPracticeRange(){
  if(formalRunning||listening()&&route==='quiz'||practicePosition||!currentAudioGroup||player.paused)return;
- const g=quizGroup(currentAudioGroup);if(!g?.audio)return;
+ const g=quizGroup(currentAudioGroup);if(!g?.audio||standalonePractice(g))return;
  const at=player.currentTime, start=mediaStart(g), end=g.audioEnd;
  if(at<start-PRACTICE_UNDERSHOOT||Number.isFinite(end)&&at>=end-.025){
   player.pause();try{player.currentTime=start}catch(e){}syncAudioUI();
@@ -699,6 +748,7 @@ function moveQuestion(delta){return moveGroup(delta)}
 
 async function submitAnswer(){if(!state.active)return;if(state.active.index===state.active.questionIds.length-1)return finishSession();moveQuestion(1)}
 async function finishSession(force=false){
+if(diagnostic){notify('This session is only for playback diagnostics. Nothing was saved.');return}
 const s=state.active;if(!s)return;const done=Object.keys(s.answers).length;
 const complete=async()=>{stopAudio();for(const id of s.questionIds){const q=sessionQuestion(id,s);if(q){recordAnswer(q,s.answers[id]||null,s.id,0);s.submitted[id]=true}}const outcomes=sessionOutcomes(s);const result={id:s.id,title:s.title,mode:s.mode,questionIds:s.questionIds,answers:s.answers,submitted:s.submitted,startedAt:s.startedAt,finishedAt:now(),correct:s.questionIds.filter(id=>outcomes.get(id)===true).length,answered:done,total:s.questionIds.length};state.sessions.push(result);lastResult=result;state.active=null;resumeEnv=null;await persist();route='result';render();window.scrollTo({top:0,behavior:'instant'})};
 if(!force&&done<s.questionIds.length)confirmBox('Submit and score this session?','There are '+(s.questionIds.length-done)+' unanswered questions. Unanswered items count as incorrect. Your score and explanations appear after submission.',complete,'Confirm Submission');else await complete()}
@@ -802,7 +852,7 @@ const qs=ids.map(id=>Q.get(id)).filter(Boolean);
 if(!qs.length){notify(kind==='result'?'There are no available incorrect questions to review in this session.':'No questions match these filters. Try changing your selection.');return}
 await startSession(groupedSelection(qs,40),kind==='result'?'Review This Session':route==='favorites'?'Saved Question Practice':'Review Mistakes');
 }
-async function action(name,el){if(name==='copy-question-uuid')return copyQuestionUuid(el);if(name.startsWith('nav-'))return navigate(name.slice(4));if(name==='menu'){mobileNav=true;render();return}if(name==='menu-close'){mobileNav=false;render();return}if(name==='close-modal'){closeModal();return}if(name==='quick-reading')return startFiltered({section:'reading',part:'all',topic:'all',difficulty:'all',count:20,unseen:false,accent:'all'});if(name==='quick-listening')return startFiltered({section:'listening',part:'all',topic:'all',difficulty:'all',count:20,unseen:false,accent:'all'});if(name==='topic'){filters.topic=el.dataset.topic;filters.section='all';filters.part='all';return navigate('practice')}if(name==='start-filtered')return startFiltered();if(name==='resume')return resume();if(name==='test-pick'){const id=el.dataset.test;modal('<h2>Choose a practice mode</h2><p>Section practice is graded after submission, not while answering. You can leave and resume later.</p><div class="btn-row">'+btn('Reading 100 questions','test-reading','primary','data-test="'+id+'"')+btn('Listening 100 questions','test-listening','primary','data-test="'+id+'"')+btn('Cancel','close-modal')+'</div>');return}if(['test-reading','test-listening','test-exam'].includes(name)){const id=el.dataset.test;closeModal();await loadTest(id);const qs=allQuestions().filter(q=>q.testId===id&&(name==='test-reading'?q.part>4:name==='test-listening'?q.part<5:true)).sort((a,b)=>a.number-b.number);const t=allTests().find(t=>t.id===id);const title=t.title+(name==='test-reading'?' · Reading':name==='test-listening'?' · Listening':' · Full Test');if(name==='test-exam'){const pack=state.importedPacks.find(p=>p.testId===id)||(window.SHIFT_PACKS||[]).find(p=>p.testId===id);if(!pack?.listeningPlan?.frames?.length){notify('This pack has no formal-listening plan. Choose Section Practice.');return}confirmBox('Start a Formal Test','The listening sequence lasts about 45 minutes. The first playback opens with the listening directions and an unscored example. Audio plays once, in order, without skipping or replay. Switching tabs pauses listening and its timer; return to continue or select Resume Listening if needed. Each group advances automatically after playback and answer time. Reading lasts 75 minutes, with free navigation among reading groups. This is an independently created practice test, not an ETS official test.',()=>startSession(qs,title,'exam'),'Start Test')}else return startSession(qs,title);return}if(name==='answer'){const s=state.active,q=sessionQuestion(el.dataset.question,s)||questionByActive();if(!q||!s||!groupQuestions().some(x=>x.id===q.id)||!q.options.some(o=>o.id===el.dataset.option))return;s.answers[q.id]=el.dataset.option;await persist();render();return}if(name==='submit-answer')return submitAnswer();if(name==='next-question'){return moveGroup(1)}if(name==='prev-question'){return moveGroup(-1)}if(name==='finish-session')return finishSession();if(name==='question-grid'){questionGrid();return}if(name==='jump'){const s=state.active;if(s){const index=Number(el.dataset.index);if(listening(s)||(formal(s)&&sessionQuestion(s.questionIds[index],s)?.part<5))return;closeModal();stopAudio();s.index=index;s.index=s.questionIds.indexOf(groupQuestions()[0].id);persist();render();window.scrollTo(0,0)}return}if(name==='finish-from-modal'){closeModal();return finishSession()}if(name==='star'){const id=el.dataset.id;state.stars[id]=!state.stars[id];await persist();render();notify(state.stars[id]?'Question saved.':'Question removed from saved items.');return}if(name==='toggle-translation'){state.settings.translation=!state.settings.translation;await persist();render();return}if(name==='transcript'){const q=questionByActive(),revealed=state.active?.mode==='practice'&&!!state.active?.submitted?.[q?.id];activeTranscript=!(activeTranscript===null?revealed:activeTranscript);render();return}if(name==='play-audio')return playAudio(el.dataset.group);if(name==='view-explanation'){
+async function action(name,el){if(diagnostic&&!['play-audio','question-grid','jump','close-modal','prev-question','next-question','answer','copy-question-uuid'].includes(name))return;if(name==='copy-question-uuid')return copyQuestionUuid(el);if(name.startsWith('nav-'))return navigate(name.slice(4));if(name==='menu'){mobileNav=true;render();return}if(name==='menu-close'){mobileNav=false;render();return}if(name==='close-modal'){closeModal();return}if(name==='quick-reading')return startFiltered({section:'reading',part:'all',topic:'all',difficulty:'all',count:20,unseen:false,accent:'all'});if(name==='quick-listening')return startFiltered({section:'listening',part:'all',topic:'all',difficulty:'all',count:20,unseen:false,accent:'all'});if(name==='topic'){filters.topic=el.dataset.topic;filters.section='all';filters.part='all';return navigate('practice')}if(name==='start-filtered')return startFiltered();if(name==='resume')return resume();if(name==='test-pick'){const id=el.dataset.test;modal('<h2>Choose a practice mode</h2><p>Section practice is graded after submission, not while answering. You can leave and resume later.</p><div class="btn-row">'+btn('Reading 100 questions','test-reading','primary','data-test="'+id+'"')+btn('Listening 100 questions','test-listening','primary','data-test="'+id+'"')+btn('Cancel','close-modal')+'</div>');return}if(['test-reading','test-listening','test-exam'].includes(name)){const id=el.dataset.test;closeModal();await loadTest(id);const qs=allQuestions().filter(q=>q.testId===id&&(name==='test-reading'?q.part>4:name==='test-listening'?q.part<5:true)).sort((a,b)=>a.number-b.number);const t=allTests().find(t=>t.id===id);const title=t.title+(name==='test-reading'?' · Reading':name==='test-listening'?' · Listening':' · Full Test');if(name==='test-exam'){const pack=state.importedPacks.find(p=>p.testId===id)||(window.SHIFT_PACKS||[]).find(p=>p.testId===id);if(!pack?.listeningPlan?.frames?.length){notify('This pack has no formal-listening plan. Choose Section Practice.');return}confirmBox('Start a Formal Test','The listening sequence lasts about 45 minutes. The first playback opens with the listening directions and an unscored example. Audio plays once, in order, without skipping or replay. Switching tabs pauses listening and its timer; return to continue or select Resume Listening if needed. Each group advances automatically after playback and answer time. Reading lasts 75 minutes, with free navigation among reading groups. This is an independently created practice test, not an ETS official test.',()=>startSession(qs,title,'exam'),'Start Test')}else return startSession(qs,title);return}if(name==='answer'){const s=state.active,q=sessionQuestion(el.dataset.question,s)||questionByActive();if(!q||!s||!groupQuestions().some(x=>x.id===q.id)||!q.options.some(o=>o.id===el.dataset.option))return;s.answers[q.id]=el.dataset.option;await persist();render();return}if(name==='submit-answer')return submitAnswer();if(name==='next-question'){return moveGroup(1)}if(name==='prev-question'){return moveGroup(-1)}if(name==='finish-session')return finishSession();if(name==='question-grid'){questionGrid();return}if(name==='jump'){const s=state.active;if(s){const index=Number(el.dataset.index);if(listening(s)||(formal(s)&&sessionQuestion(s.questionIds[index],s)?.part<5))return;closeModal();stopAudio();s.index=index;s.index=s.questionIds.indexOf(groupQuestions()[0].id);persist();render();window.scrollTo(0,0)}return}if(name==='finish-from-modal'){closeModal();return finishSession()}if(name==='star'){const id=el.dataset.id;state.stars[id]=!state.stars[id];await persist();render();notify(state.stars[id]?'Question saved.':'Question removed from saved items.');return}if(name==='toggle-translation'){state.settings.translation=!state.settings.translation;await persist();render();return}if(name==='transcript'){const q=questionByActive(),revealed=state.active?.mode==='practice'&&!!state.active?.submitted?.[q?.id];activeTranscript=!(activeTranscript===null?revealed:activeTranscript);render();return}if(name==='play-audio')return playAudio(el.dataset.group);if(name==='view-explanation'){
  clearTimeout(searchTimeout);
  await loadAll();
  const detail=explanationQueue(el.dataset.id,el.dataset.session);
@@ -816,7 +866,7 @@ async function action(name,el){if(name==='copy-question-uuid')return copyQuestio
  stopAudio();route=reviewDetail?.returnTo||'review';reviewDetail=null;render();window.scrollTo(0,0);return
 }if(name==='open-question'){await loadAll();const q=Q.get(el.dataset.id);if(q)return startSession(relatedQuestions(q),'Group Review');return}if(name==='start-list')return beginReview('list');if(name==='review-result')return beginReview('result');if(name==='more-list'){listLimit+=40;render();return}if(name==='open-result'){await loadAll();lastResult=state.sessions.find(s=>s.id===el.dataset.id);route='result';render();window.scrollTo(0,0);return}if(name==='export-backup')return exportBackup();if(name==='import-backup'){document.getElementById('backup-input').click();return}if(name==='import-pack'){await loadAll();document.getElementById('pack-input').click();return}if(name==='reset-progress'){confirmBox('Clear your learning records?','This removes local answers, mistakes, saved questions, notes, and unfinished progress. Imported packs are kept. Export a backup before clearing anything.',async()=>{const imported=state.importedPacks;state={formatVersion:1,settings:{fontScale:1,translation:false},attempts:[],stats:{},stars:{},notes:{},sessions:[],active:null,importedPacks:imported,lastBackup:null};clearNoteDraft();lastResult=null;await persist();render();notify('Learning records cleared.')},'Confirm Clear')}}
 document.addEventListener('click',e=>{const el=e.target.closest('[data-action]');if(!el||el.disabled)return;e.preventDefault();withBusy(()=>action(el.dataset.action,el))});
-document.addEventListener('change',e=>{const el=e.target;withBusy(async()=>{if(el.id==='filter-section'){filters.section=el.value;filters.part='all';if(el.value==='reading')filters.accent='all';render()}else if(el.id==='filter-accent'){filters.accent=el.value;if(el.value!=='all'){filters.section='listening';if(Number(filters.part)>4)filters.part='all'}render()}else if(el.id==='filter-part'){filters.part=el.value;if(Number(el.value)>4)filters.accent='all';if(el.value!=='all')filters.section=Number(el.value)>4?'reading':'listening';render()}else if(el.id==='filter-topic')filters.topic=el.value;else if(el.id==='filter-difficulty')filters.difficulty=el.value;else if(el.id==='filter-count')filters.count=Number(el.value);else if(el.id==='filter-unseen')filters.unseen=el.checked;else if(el.id==='review-filter'){listFilter=el.value;listLimit=40;render()}else if(el.id==='font-scale'){state.settings.fontScale=Number(el.value);await persist();render()}else if(el.id==='default-translation'){state.settings.translation=el.checked;await persist()}else if(el.id==='audio-speed'&&!listening()){player.playbackRate=Number(el.value)}else if(el.id==='backup-input'){const f=el.files[0];el.value='';if(f)await importBackup(f)}else if(el.id==='pack-input'){const f=el.files[0];el.value='';if(f)await importPack(f)}})});
+document.addEventListener('change',e=>{const el=e.target;withBusy(async()=>{if(el.id==='filter-section'){filters.section=el.value;filters.part='all';if(el.value==='reading')filters.accent='all';render()}else if(el.id==='filter-accent'){filters.accent=el.value;if(el.value!=='all'){filters.section='listening';if(Number(filters.part)>4)filters.part='all'}render()}else if(el.id==='filter-part'){filters.part=el.value;if(Number(el.value)>4)filters.accent='all';if(el.value!=='all')filters.section=Number(el.value)>4?'reading':'listening';render()}else if(el.id==='filter-topic')filters.topic=el.value;else if(el.id==='filter-difficulty')filters.difficulty=el.value;else if(el.id==='filter-count')filters.count=Number(el.value);else if(el.id==='filter-unseen')filters.unseen=el.checked;else if(el.id==='review-filter'){listFilter=el.value;listLimit=40;render()}else if(el.id==='font-scale'){state.settings.fontScale=Number(el.value);await persist();render()}else if(el.id==='default-translation'){state.settings.translation=el.checked;await persist()}else if(el.id==='audio-speed'&&!listening()){player.playbackRate=Number(el.value)}else if(!diagnostic&&el.id==='backup-input'){const f=el.files[0];el.value='';if(f)await importBackup(f)}else if(!diagnostic&&el.id==='pack-input'){const f=el.files[0];el.value='';if(f)await importPack(f)}})});
 let searchTimeout;
 document.addEventListener('input',e=>{const el=e.target;if(el.id==='question-note'||el.classList.contains('group-note')){saveNoteInput(el.dataset.id,el.value)}else if(el.id==='audio-seek'&&!listening()&&Number.isFinite(player.duration)){scrubPractice(quizGroup(currentAudioGroup),Number(el.value))}else if(el.id==='list-search'){listSearch=el.value;clearTimeout(searchTimeout);searchTimeout=setTimeout(()=>{const pos=el.selectionStart;render();const input=document.getElementById('list-search');input?.focus();input?.setSelectionRange(pos,pos)},300)}});
 document.addEventListener('keydown',e=>{if(route!=='quiz'||document.getElementById('modal').open||e.target.closest('.copy-question-uuid')||/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)||e.ctrlKey||e.metaKey||e.altKey)return;const card=e.target.closest('.grouped-question'),q=card?sessionQuestion(card.dataset.questionId):questionByActive();if(!q)return;const letter=e.key.toUpperCase();if(['A','B','C','D'].includes(letter)&&q.options.some(o=>o.id===letter)){const el=document.querySelector('[data-question="'+q.id+'"][data-option="'+letter+'"]');if(el&&!el.disabled){e.preventDefault();el.click()}}else if(e.key==='Enter'){const el=document.querySelector('[data-action="submit-answer"], [data-action="next-question"], [data-action="finish-session"]');if(el&&!el.disabled){e.preventDefault();el.click()}}});
@@ -829,15 +879,20 @@ document.addEventListener('visibilitychange',()=>{
    return
   }
   saveListeningTabPoint();
+  if(continuousVisibility?.token===audioRun){continuousVisibility.suspend();syncAudioUI();return;}
   visibilityResume={sessionId:state.active?.id,groupId:currentAudioGroup};
   stopAudio();
   if(route==='quiz')render();
   return;
  }
+ if(continuousVisibility?.token===audioRun){continuousVisibility.resume();return;}
  const pending=visibilityResume;visibilityResume=null;
  if(pending&&pending.sessionId===state.active?.id&&pending.groupId===questionByActive()?.groupId&&route==='quiz')void runFormalGroup(sessionGroup(pending.groupId));
 });
 for(const ev of ['timeupdate','loadedmetadata','play','pause','ended'])player.addEventListener(ev,syncAudioUI);
+player.addEventListener('ratechange',()=>{
+ if(route==='quiz'&&listening()&&player.playbackRate!==1)player.playbackRate=1;
+});
 player.addEventListener('error',()=>{if(currentAudioGroup)notify('Audio file loading failed. Make sure the audio folder and index.html were extracted together.')});
 setInterval(()=>{
  const s=state.active;if(!s||s.mode!=='exam')return;
@@ -847,6 +902,23 @@ setInterval(()=>{
  syncAudioUI();
  if(left<=0&&!busy&&!listening(s))withBusy(async()=>{await loadAll();await finishSession(true)});
 },1000);
-async function boot(){await initStorage();const restoredNote=await restoreNoteDraft();await installPackIndexes();const lastQuiz=(()=>{try{return sessionStorage.getItem('shift-last-quiz')}catch(e){return null}})();if(state.active&&lastQuiz===state.active.id){try{await resume()}catch(e){route='home';render();notify(e.message)}}else{route='home';render()}if(storageMode==='memory')notify('Only temporary storage is available. Export a backup before leaving.');else if(restoredNote)notify('Your unfinished note draft has been restored.')}
+async function bootDiagnostic(){
+ const fail=message=>shell('<section class="panel panel-body"><h1>Playback diagnostic</h1><p>'+esc(message)+'</p></section>');
+ if(!/^[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}$/.test(diagnosticUuid)||!['practice','exam'].includes(diagnosticMode)){
+  fail('Choose a listening question and a playback mode in Question Debug.');return
+ }
+ storageMode='diagnostic';
+ try{await installPackIndexes();await loadAllOfficial()}catch(e){fail('Could not load the built-in tests. Reopen Question Debug to retry.');return}
+ const target=[...Q.values()].find(q=>q.part<=4&&window.SHIFT_QUESTION_UUID(q.id)===diagnosticUuid);
+ if(!target){fail('No built-in listening question matches this UUID.');return}
+ const pack=officialPacks.get(target.testId),g=G.get(target.groupId);
+ if(!g||diagnosticMode==='practice'&&!g.audio||diagnosticMode==='exam'&&!pack?.listeningPlan?.frames?.some(f=>f.groupId===g.id)){
+  fail('The requested playback mode is not available for this question.');return
+ }
+ const section=pack.questions.filter(q=>q.part<=4).sort((a,b)=>a.number-b.number);
+ const start=section.find(q=>q.groupId===target.groupId);
+ return startSession(section,officialEntry(target.testId).title+' · Playback Diagnostic',diagnosticMode,start.id)
+}
+async function boot(){if(diagnostic)return bootDiagnostic();await initStorage();const restoredNote=await restoreNoteDraft();await installPackIndexes();const lastQuiz=(()=>{try{return sessionStorage.getItem('shift-last-quiz')}catch(e){return null}})();if(state.active&&lastQuiz===state.active.id){try{await resume()}catch(e){route='home';render();notify(e.message)}}else{route='home';render()}if(storageMode==='memory')notify('Only temporary storage is available. Export a backup before leaving.');else if(restoredNote)notify('Your unfinished note draft has been restored.')}
 boot().catch(e=>{console.error(e);app.innerHTML='<div class="boot"><h1>Unable to Open Practice</h1><p>'+esc(e.message)+'</p><p>Extract the entire folder and use Chrome or Edge to open index.html.</p></div>'});
 })();
