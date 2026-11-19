@@ -1,0 +1,133 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "A: Last sentence explicitly says both sold separately. All models support USB-C and include network port(s); weight info given in guide, not necessarily within the retail package. Sharpen stem to avoid unstated printed-package-information scope; no key or supporting evidence change. English and zh-TW sources/choices checked; second reviewer solved before viewing keys.",
+  "activeQuestion": {
+    "id": "t02-q161-r2",
+    "testId": "test-02",
+    "number": 161,
+    "part": 7,
+    "groupId": "t02-r-p7-05",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "reading-comprehension"
+    ],
+    "prompt": "According to the guide, which items are sold separately?",
+    "promptZh": "根據指南，哪些物品需要另外購買？",
+    "options": [
+      {
+        "text": "A charging cable and power supply",
+        "zh": "充電線及電源供應器",
+        "whyZh": "指南明確說這兩者另售。",
+        "id": "A"
+      },
+      {
+        "text": "The USB-C connection on every model",
+        "zh": "各款的 USB-C 連接功能",
+        "whyZh": "指南說三款均透過相容 USB-C 連接。",
+        "id": "B"
+      },
+      {
+        "text": "All network ports",
+        "zh": "所有網路埠",
+        "whyZh": "每款均列有網路埠。",
+        "id": "C"
+      },
+      {
+        "text": "The weight information",
+        "zh": "重量資訊",
+        "whyZh": "指南已列出各款重量，且重量資訊不是需另購的配件。",
+        "id": "D"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "指南明確說這兩者另售。",
+    "evidence": "Charging cables and power supplies are sold separately.",
+    "vocabulary": [
+      {
+        "term": "charging pass-through",
+        "zh": "充電直通",
+        "note": "透過轉接器把外接電源供給筆電的功能。"
+      },
+      {
+        "term": "sold separately",
+        "zh": "另外販售",
+        "note": "不包含在主產品的交付內容內。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t02-r-p7-05",
+    "testId": "test-02",
+    "part": 7,
+    "title": "Adapter selection guide",
+    "titleZh": "轉接器選購指南",
+    "topic": "technology",
+    "passage": "Adapter guide for field technicians\n\nModel R10: one wired network port; no USB-A port; no charging pass-through; 45 g.\nModel R20: one wired network port and one USB-A port; charging pass-through up to 60 W; 70 g.\nModel R30: two wired network ports and one USB-A port; charging pass-through up to 90 W; 110 g.\n\nAll three models connect to a compatible USB-C port on the laptop. Technicians who need to charge the laptop through the adapter must choose a model with charging pass-through. For laptops requiring more than 60 W, select R30. Charging cables and power supplies are sold separately.\n\nThe purchasing team recommends choosing the lightest model that meets the task requirements rather than automatically selecting the model with the most ports.",
+    "passageZh": "現場技術人員轉接器指南\n\nR10：一個有線網路埠；沒有 USB-A 埠；不支援充電直通；45 g。\nR20：一個有線網路埠及一個 USB-A 埠；充電直通最高 60 W；70 g。\nR30：兩個有線網路埠及一個 USB-A 埠；充電直通最高 90 W；110 g。\n\n三種型號都接到筆電相容的 USB-C 埠。需要透過轉接器替筆電充電者，必須選有充電直通的型號。筆電若需超過 60 W，請選 R30。充電線及電源供應器另售。\n\n採購團隊建議選擇能滿足工作需求的最輕型號，不必一律選埠數最多的型號。",
+    "image": "assets/graphics/t02-r-p7-05.svg",
+    "imageAlt": "Adapter model comparison: counts of wired network and USB-A ports, maximum pass-through charging power, and adapter weight.",
+    "imageCaption": "Maximum pass-through charging power and port counts by adapter model."
+  },
+  "originalQuestion": {
+    "id": "t02-q161",
+    "testId": "test-02",
+    "number": 161,
+    "part": 7,
+    "groupId": "t02-r-p7-05",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "reading-comprehension"
+    ],
+    "prompt": "What is excluded from the adapter package?",
+    "promptZh": "轉接器包裝未包含什麼？",
+    "options": [
+      {
+        "text": "A charging cable and power supply",
+        "zh": "充電線及電源供應器",
+        "whyZh": "指南明確說這兩者另售。",
+        "id": "A"
+      },
+      {
+        "text": "The USB-C connection on every model",
+        "zh": "各款的 USB-C 連接功能",
+        "whyZh": "指南說三款均透過相容 USB-C 連接。",
+        "id": "B"
+      },
+      {
+        "text": "All network ports",
+        "zh": "所有網路埠",
+        "whyZh": "每款均列有網路埠。",
+        "id": "C"
+      },
+      {
+        "text": "The weight information",
+        "zh": "重量資訊",
+        "whyZh": "指南已列出各款重量，且重量資訊不是需另購的配件。",
+        "id": "D"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "指南明確說這兩者另售。",
+    "evidence": "Charging cables and power supplies are sold separately.",
+    "vocabulary": [
+      {
+        "term": "charging pass-through",
+        "zh": "充電直通",
+        "note": "透過轉接器把外接電源供給筆電的功能。"
+      },
+      {
+        "term": "sold separately",
+        "zh": "另外販售",
+        "note": "不包含在主產品的交付內容內。"
+      }
+    ],
+    "revision": 1
+  },
+  "imageSha256": "8933f655fc45e49ed2f6cb8b37a56e239e1945a2a5072b5d97e7ad1c1150b947"
+}
