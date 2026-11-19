@@ -1,0 +1,8 @@
+# Reading QA recovery checkpoint: Tests 02–03
+
+Draft only. This directory is a source-control recovery checkpoint, not a website release or proof that an exam passed. It must stay out of the production merge.
+
+- Base: work branch 74d763b6e7b5c2efd18602f06161ee4b06e3efde. Start from a clean copy and apply the existing `qa-checkpoints/reading-revisions.patch` first with `git apply --check`. That patch carries Test 02 Q162/Q194 and Test 03 Q109.
+- Test 02: run `test02_p56_apply.py` on the patched Test 02 JSON to a new file, then `test02_part7_qa.py` on that output to a new file, then `test02_part7_visuals.py` on the latest output to another file and the site's `assets/graphics` directory. The runner accepts input and output paths. Rebuild the JS with `tools/add_pack.py`'s `js_json` and the existing wrapper. Counts, format, answer keys, and timeline verified; candidate needs historical passage lookups, audio and full compatibility QA.
+- Test 03: use `test03-p56.md` for Parts 5–6 fixes and `test03-part7-edits.json` for the guarded Part 7 changes (option paths keyed by letter). Preserve old reading IDs/passages when changing the material shown to learners, and install the matching SVGs via the group fields file. The edits have been reviewed, but the full Test 03 candidate is not assembled or accepted.
+- Test 01 separately: copy `qa-checkpoints/test01-test_archive_compatibility.cjs` into `tools/test_archive_compatibility.cjs` after restoring the Test 01 patch and run it with Node's test runner. The isolated tests cover historical images, answers, notes, score display, and normalized playback state. They are not a browser test or spoken-content verification.

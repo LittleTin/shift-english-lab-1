@@ -1,0 +1,95 @@
+"""Apply editorial proposals after applying existing Q162/Q194 patch.
+Usage: python test02_part7_qa.py <input test-02.json> <output test-02.json>
+Never writes input. Does not regenerate browser JS."""
+import copy,json,sys
+from pathlib import Path
+inp,out=map(Path,sys.argv[1:])
+assert inp.resolve()!=out.resolve()
+x=json.loads(inp.read_text())
+qs={q['number']:q for q in x['questions'] if q['part']==7}
+gs={g['id'][-2:]:g for g in x['groups'] if g['part']==7}
+legacy=x['legacyQuestions']; changed=set()
+assert qs[162]['id']=='t02-q162-r2' and qs[194]['id']=='t02-q194-r2'
+def touch(n):
+ q=qs[n]
+ if n not in changed and q['revision']==1:
+  legacy.append(copy.deepcopy(q)); q['revision']=2; q['id']+='-r2'
+ changed.add(n)
+ return q
+def fields(n,**kv): touch(n).update(kv)
+def option(n,letter,**kv):
+ q=touch(n); a=next(o for o in q['options'] if o['id']==letter); a.update(kv)
+def replaceopt(n,letter,text,zh,whyZh): option(n,letter,text=text,zh=zh,whyZh=whyZh)
+def zh(group,old,new):
+ g=gs[group]
+ assert old in g['passageZh'],(group,old)
+ g['passageZh']=g['passageZh'].replace(old,new,1)
+fields(147,prompt='Starting June 3, where must new revisions be saved?',promptZh='從 6 月 3 日起，新修訂版本必須存到哪裡？')
+replaceopt(149,'A','Where all internal links point','所有內部連結指向的位置','有些連結仍指向舊位置，修訂文件時須更新，並非一律保持不變。')
+replaceopt(153,'A','The name of the incoming shift leader','接班組長的姓名','必須記載的是核准該指示的工程師，不是接班組長。')
+replaceopt(153,'D','The time when the previous shift ended','上一班結束的時間','臨時指示必填的是到期時間，不是班次結束時間。')
+why='臨時指示一旦到期，須暫停受影響的作業，並聯絡當初核准該指示的工程師。'
+fields(154,explanationZh=why)
+replaceopt(154,'A','Pause the affected operation and contact the approving engineer','暫停受影響的作業，並聯絡核准該指示的工程師',why)
+replaceopt(154,'D','Record the expiry in the log and wait until the next handover','在紀錄中註明已到期，等下次交班再處理','程序要求立即暫停受影響作業並聯絡核准工程師，不是等待交班。')
+replaceopt(155,'A','The incoming shift leader must approve the report first','通報前須先取得接班組長核准','規定是立即向主管通報，沒有等待接班組長核准的步驟。')
+replaceopt(155,'C','The report must be entered in a separate safety log','通報須寫進另一份安全紀錄','文件要求立即通報主管，未要求另填安全紀錄。')
+replaceopt(157,'C','Swim in the teaching pool even without an adult','即使沒有成人陪同，仍可在教學池游泳','公告未列教學池例外；家庭時段未滿十二歲的兒童須由成人在水中陪同。')
+fields(159,promptZh='若筆電需要透過轉接器取得 80 W 的充電功率，應選哪款？')
+fields(160,prompt='What is the lightest model that meets the needs of a technician who requires one network port and does not need charging pass-through?',promptZh='若技術人員只需要一個網路埠、不需要充電直通，哪款轉接器符合需求且最輕？')
+replaceopt(162,'C','Start the physical stock count','開始實際盤點','盤點於下午一點開始，不是最遲在中午前完成的領料事項。')
+option(162,'D',whyZh=qs[162]['explanationZh'])
+replaceopt(164,'A','Combine it with undamaged stock in a single count','和未受損的庫存合併計數','公告要求受損庫存另行計數，不能和未受損庫存合計。')
+replaceopt(165,'C','To learn how to operate home brewing equipment','學習如何操作家用咖啡沖煮器材','講師會備好咖啡，活動重點是品飲與比較，不是操作設備。')
+replaceopt(165,'D','To take part in a guided tasting of light snacks','參加有講師指導的點心試吃','中途會供應點心，但主要活動是比較三款咖啡。')
+replaceopt(166,'A','It may make the light snack less enjoyable','可能降低享用點心的樂趣','公告提到的是干擾辨識咖啡香氣，而非影響享用點心。')
+replaceopt(166,'D','It may distract the instructor during coffee preparation','可能讓講師沖煮咖啡時分心','公告說會影響其他參加者辨識香氣，未提講師沖煮分心。')
+replaceopt(167,'A','Move the booking to another workshop date','將預約改到另一個工作坊日期','公告允許把名額轉給另一人，沒有說可更改日期。')
+replaceopt(168,'A','A museum admission ticket and a receipt','一張博物館門票和一張收據','她列出的是筆記本和眼鏡，未說袋中有門票或收據。')
+fields(168,promptZh='遺失的袋子裡有什麼？')
+replaceopt(169,'D','She has already asked the museum to send her bag to her workplace','她已要求博物館將袋子寄到她的工作地點','她只詢問能否由同事代領，未要求把袋子寄到工作地點。')
+replaceopt(170,'B','By phone during working hours','工作時間以電話聯絡','她白天希望收電子郵件，工作時可能無法接電話。')
+replaceopt(171,'B','The organizer must check in at reception to keep the booking','主辦人須改到服務櫃檯報到才能保留預約','通知只列門外面板或預約應用程式報到，逾時會釋出預約。')
+replaceopt(172,'C','To determine whether a room needs video-conferencing equipment','判斷會議室是否需要視訊設備','人數是供櫃檯準備識別證用的，視訊設備另有圖示。')
+replaceopt(173,'A','Check whether the reservation includes external visitors','查看預約是否包含外部訪客','外部訪客人數用於準備識別證，不能辨識視訊設備。')
+replaceopt(173,'D','Look for a check-in panel outside the room','查看門外是否有報到面板','門外面板用來報到，不是視訊設備的標記。')
+replaceopt(178,'A','Both lots, at 95.3 percent','兩批都是 95.3%','95.3% 約為兩批合計的 286÷300；分別計算為 95% 和 96%，兩批並不相同。')
+replaceopt(180,'B','It has already been ruled out as a possible cause','已排除治具為可能原因','製程團隊會檢查治具；目前既未認定治具是原因，也未排除它。')
+fields(183,promptZh='最晚何時可以免費取消已訂的班次？')
+option(183,'A',whyZh='這是最晚應抵達月台的時間，不是取消期限。')
+option(185,'B',whyZh='已過免費取消期限，依回覆規則不予退款。')
+fields(187,promptZh='哪一項費用應打九折？')
+fields(189,evidence='12 × NT$750 = NT$9,000 ... a 10% discount on training fees ... Room rental is a fixed NT$2,000 ... A deposit of NT$3,000 is deducted')
+fields(190,promptZh='主辦人希望業者在主辦方支付餘款前做什麼？')
+replaceopt(190,'C','Send a corrected invoice','寄送更正後的帳單','主辦人在電子郵件中要求先收到更正後的帳單，再安排支付餘款。')
+fields(190,explanationZh='主辦人在電子郵件中要求先收到更正後的帳單，再安排支付餘款。')
+replaceopt(192,'A','Move them to the service-stock location and label them clearly','將板子移到維修備品存放區，並清楚標示','採購要求將 E 版板移至維修備品存放區，並清楚標示這批板子。')
+fields(192,explanationZh='採購要求將 E 版板移至維修備品存放區，並清楚標示這批板子。')
+option(194,'B',whyZh=qs[194]['explanationZh'])
+fields(197,prompt='Why could the operators not tell that their copies were obsolete?',promptZh='作業員為何無法辨識手上的副本已失效？',explanationZh='舊版指導書上沒有失效標示，作業員因此無法辨識。')
+option(197,'A',zh='副本上沒有失效標示',whyZh=qs[197]['explanationZh'])
+fields(198,prompt='Which task does the supplier specifically schedule for December 9?',promptZh='供應商明確將哪項工作安排在十二月九日？')
+replaceopt(198,'D','Verify every station and photograph the current instructions','檢查每個站點並拍攝現行版指導書','這是品管最遲於 12 月 11 日完成的工作，12 月 9 日指定的是主管說明並登記出席。')
+fields(199,explanationZh='客戶要求一套可重複執行的文件管制方法，而不只是一次移除舊版。')
+option(199,'A',whyZh=qs[199]['explanationZh'])
+zh('01','工程師應於六月十日前','工程師最遲應在六月十日')
+zh('06','應在中午前領取下午需要的材料','最遲應在中午領取下午需要的材料')
+zh('07','星期五下午六點前取消','最遲在星期五下午六點取消')
+zh('09','相機圖示；只有一般螢幕','攝影機圖示；只有一般螢幕')
+fields(173,explanationZh='通知最後一段說，配有視訊會議設備的房間會標示攝影機圖示。')
+option(173,'C',zh='查看是否有攝影機圖示',whyZh=qs[173]['explanationZh'])
+zh('11','不要只看最後可接受數量','不要只看最終合格數量')
+zh('11','最常見的重工原因是連接器對位','最常見的重工原因是連接器對位不良')
+zh('12','約定地點靠近','我有約，地點靠近')
+zh('12','發車前三十分鐘以前可免費取消；','最遲於發車前三十分鐘取消，不收費；')
+zh('13','帳單似乎漏掉報價中的折扣。請寄更正帳單','帳單似乎漏列報價中的折扣。請寄送更正後的帳單')
+zh('14','請移到維修庫存位置並清楚標示','請把這批板子移到維修備品存放區，並清楚標示')
+zh('15','並在十二月十二日前提供證據','並最遲於十二月十二日提供佐證資料')
+zh('15','十二月八日前會','最遲於十二月八日會')
+zh('15','十二月十一日前品管會','品管最遲於十二月十一日會')
+zh('15','證據期限不變','佐證資料的提交期限不變')
+assert len(qs)==54 and len(gs)==15
+assert all(len({o['text'] for o in q['options']})==4 for q in qs.values())
+assert len(legacy)==len({q['id'] for q in legacy})
+out.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n')
+print('Question numbers changed:',','.join(map(str,sorted(changed))))
