@@ -1,8 +1,70 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "C: Explicit marker, not screen alone, visitor count, or a check-in panel. Shared identity-number wording polish unrelated to key. English and zh-TW sources/choices checked; second reviewer solved before viewing keys.",
+  "checks": "Combine authorized delegation, the grace period, and the valid fallback; distinguish physical entry and opening a virtual link from a check-in. Solved before viewing keys; after exact bilingual edits, source and all distractors rechecked.",
   "activeQuestion": {
+    "id": "t02-q173-r3",
+    "testId": "test-02",
+    "number": 173,
+    "part": 7,
+    "groupId": "t02-r-p7-09-r2",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "reading-comprehension"
+    ],
+    "prompt": "A session is booked for 2 p.m. The lead cannot arrive until 2:20, and the booking app is not working. What can keep the room reservation?",
+    "promptZh": "一場展示預約在下午 2 點開始。負責人得等到 2:20 才能到場，預約應用程式也無法使用。如何保留房間預約？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The lead checks in at the panel immediately after arriving.",
+        "zh": "負責人抵達後立刻使用門外面板報到。",
+        "whyZh": "面板確實可用，但下午 2:20 已超過開場後十分鐘的報到期限。"
+      },
+      {
+        "id": "B",
+        "text": "The listed co-host uses the panel at 2:07.",
+        "zh": "已登記的共同主持人在下午 2:07 使用面板報到。",
+        "whyZh": "已登記的共同主持人可以代為報到。應用程式無法使用時，可改用門外面板，而 2:07 在十分鐘期限內。"
+      },
+      {
+        "id": "C",
+        "text": "An unlisted colleague opens the client’s meeting link at 2:05.",
+        "zh": "未登記為共同主持人的同事在下午 2:05 開啟客戶的會議連結。",
+        "whyZh": "只有負責人或已登記的共同主持人能報到；開啟會議連結也不等於報到。"
+      },
+      {
+        "id": "D",
+        "text": "The listed co-host lets clients into the room before 2:10 without marking it as in use.",
+        "zh": "已登記的共同主持人於下午 2:10 前讓客戶進門，但未將房間標記為使用中。",
+        "whyZh": "雖是有資格代辦的人，但只讓客戶進門並不算報到。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "已登記的共同主持人可以代為報到。應用程式無法使用時，可改用門外面板，而 2:07 在十分鐘期限內。",
+    "evidence": "a colleague who is already listed as a co-host […] ten minutes after the reserved start […] can use the panel outside the room instead",
+    "vocabulary": [
+      {
+        "term": "co-host",
+        "zh": "共同主持人",
+        "note": "本文限定已在預約內登記的人，並非在場的任何同事。"
+      }
+    ],
+    "revision": 3
+  },
+  "group": {
+    "id": "t02-r-p7-09-r2",
+    "testId": "test-02",
+    "part": 7,
+    "title": "Thursday client demonstration: room and arrival instructions",
+    "titleZh": "週四客戶展示：場地與入場須知",
+    "topic": "business",
+    "passage": "Thursday client demonstration: room and arrival instructions\n\nAll three demonstration rooms have a display. Harbor can send both picture and sound to remote viewers, but there are three steps from the elevator to its door. Grove and Shore are both accessible without steps. Grove can send sound to remote viewers but has no camera; a portable camera that can be aimed at the demonstration table will be available there after 1 p.m. Shore sends sound and picture throughout the day, but its camera is fixed on the presenter’s lectern. It cannot show a product on the demonstration table.\n\nOutside technicians should bring the equipment collection reference to the service entrance if they are collecting any demonstration equipment from our storeroom. If they need nothing from the storeroom and are bringing their own equipment, they should use the lobby and show the vendor confirmation email. A supplier’s delivery driver who is not staying for the session should use the loading dock instead; a delivery note is enough there. The desk in the lobby does not issue collection references.\n\nThe session lead must mark the room as in use in the booking app. If the lead will be more than ten minutes late, a colleague who is already listed as a co-host can do this on arrival. If neither person has checked in ten minutes after the reserved start, the room will go to the waiting list. Letting the client into the room or opening the meeting link does not count as room check-in. If the booking app is not working, the lead or listed co-host can use the panel outside the room instead.",
+    "passageZh": "週四客戶展示：場地與入場須知\n\n三間展示室都有螢幕。Harbor 可將畫面和聲音傳給遠端觀眾，但從電梯到門口有三級階梯。前往 Grove 和 Shore 的路線都沒有階梯。Grove 能傳送聲音給遠端觀眾，但沒有攝影機。下午一點後，該室便可使用一台可對準展示桌的可攜式攝影機。Shore 全天都能傳送聲音和畫面，但攝影機固定對準講台，只能拍攝講台前的講者，無法拍到展示桌上的產品。\n\n外部技術人員若要到本公司庫房領取任何展示設備，請攜帶領取編號前往服務入口。若自備設備且不必到庫房領取任何物品，請走大廳入口並出示供應商確認信。不會留下參與展示的送貨司機則應前往卸貨區，在那裡只需出示送貨單。大廳櫃檯不核發設備領取編號。\n\n展示負責人必須在預約應用程式中將房間標記為使用中。如果負責人會遲到超過十分鐘，預約中已登記為共同主持人的同事可在到場時代為報到。若預約時段開始十分鐘後兩人都未報到，房間就會釋出給候補者。讓客戶進入展示室，或開啟線上會議連結，都不算完成房間報到。如果預約應用程式無法使用，負責人或已登記的共同主持人可以改用房間門外的面板。"
+  },
+  "originalQuestion": {
     "id": "t02-q173-r2",
     "testId": "test-02",
     "number": 173,
@@ -59,71 +121,6 @@
     ],
     "revision": 2
   },
-  "group": {
-    "id": "t02-r-p7-09",
-    "testId": "test-02",
-    "part": 7,
-    "title": "Meeting-room booking rules",
-    "titleZh": "會議室預約規則",
-    "topic": "business",
-    "passage": "Meeting-room booking update\n\nRoom bookings will be released if the organizer has not checked in within fifteen minutes of the reserved start time. Check-in can be completed on the panel outside the room or through the booking app.\n\nMeetings with external visitors should include the visitor count in the reservation. Reception uses this information to prepare temporary badges. Do not enter visitors’ personal identity numbers in the booking notes.\n\nIf your meeting ends early, release the room in the app so that others can use it. Moving chairs does not cancel a reservation. Rooms with video-conferencing equipment are marked with a camera icon; an ordinary screen alone does not indicate that a camera is installed.",
-    "passageZh": "會議室預約更新\n\n若主辦人在預約開始後十五分鐘內未報到，預約將被釋出。可在門外面板或預約應用程式中報到。\n\n有外部訪客的會議，請在預約中填訪客人數，櫃檯據此準備臨時識別證。請勿在預約備註中填寫訪客的個人身分識別號碼。\n\n若會議提早結束，請在應用程式釋出會議室，供他人使用。移動椅子不會取消預約。配備視訊會議設備的房間會標攝影機圖示；只有一般螢幕不代表已裝攝影機。"
-  },
-  "originalQuestion": {
-    "id": "t02-q173",
-    "testId": "test-02",
-    "number": 173,
-    "part": 7,
-    "groupId": "t02-r-p7-09",
-    "topic": "business",
-    "difficulty": "intermediate",
-    "tags": [
-      "business",
-      "reading-comprehension"
-    ],
-    "prompt": "How can a user identify a room equipped for video conferences?",
-    "promptZh": "如何辨識配有視訊會議設備的房間？",
-    "options": [
-      {
-        "text": "Count the chairs in the room",
-        "zh": "計算椅子數量",
-        "whyZh": "椅子數與視訊設備標示無關。",
-        "id": "A"
-      },
-      {
-        "text": "Choose any room with an ordinary screen",
-        "zh": "選任何有一般螢幕的房間",
-        "whyZh": "文件明說一般螢幕不代表有攝影機。",
-        "id": "B"
-      },
-      {
-        "text": "Look for the camera icon",
-        "zh": "查看是否有相機圖示",
-        "whyZh": "最後一段說視訊會議房間有相機圖示。",
-        "id": "C"
-      },
-      {
-        "text": "Book a room without checking in",
-        "zh": "不報到就預約房間",
-        "whyZh": "這不能辨識設備，還可能導致預約被釋出。",
-        "id": "D"
-      }
-    ],
-    "answer": "C",
-    "explanationZh": "最後一段說視訊會議房間有相機圖示。",
-    "evidence": "Rooms with video-conferencing equipment are marked with a camera icon",
-    "vocabulary": [
-      {
-        "term": "check in",
-        "zh": "報到；確認使用",
-        "note": "向預約系統表示使用者已到場。"
-      },
-      {
-        "term": "release a room",
-        "zh": "釋出會議室",
-        "note": "讓原本保留的會議空間可被其他人使用。"
-      }
-    ],
-    "revision": 1
-  }
+  "retiredSourceReference": "question-reserve/test-02/t02-r-p7-09/questions/Q173/verification.json",
+  "priorDeployedHistoryReference": "qa-checkpoints/reconstructions/history/test-02/t02-r-p7-09.json"
 }

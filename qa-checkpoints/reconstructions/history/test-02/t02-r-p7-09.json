@@ -1,0 +1,207 @@
+{
+  "status": "historical-only-never-active-not-for-deploy",
+  "testId": "test-02",
+  "sourceGroupId": "t02-r-p7-09",
+  "sourceActiveScope": [
+    171,
+    172,
+    173
+  ],
+  "retiredWorkGroup": {
+    "id": "t02-r-p7-09",
+    "testId": "test-02",
+    "part": 7,
+    "title": "Meeting-room booking rules",
+    "titleZh": "會議室預約規則",
+    "topic": "business",
+    "passage": "Meeting-room booking update\n\nRoom bookings will be released if the organizer has not checked in within fifteen minutes of the reserved start time. Check-in can be completed on the panel outside the room or through the booking app.\n\nMeetings with external visitors should include the visitor count in the reservation. Reception uses this information to prepare temporary badges. Do not enter visitors’ personal identity numbers in the booking notes.\n\nIf your meeting ends early, release the room in the app so that others can use it. Moving chairs does not cancel a reservation. Rooms with video-conferencing equipment are marked with a camera icon; an ordinary screen alone does not indicate that a camera is installed.",
+    "passageZh": "會議室預約更新\n\n若主辦人在預約開始後十五分鐘內未報到，預約將被釋出。可在門外面板或預約應用程式中報到。\n\n有外部訪客的會議，請在預約中填訪客人數，櫃檯據此準備臨時識別證。請勿在預約備註中填寫訪客的個人身分識別號碼。\n\n若會議提早結束，請在應用程式釋出會議室，供他人使用。移動椅子不會取消預約。配備視訊會議設備的房間會標攝影機圖示；只有一般螢幕不代表已裝攝影機。"
+  },
+  "noHistoricalRegrade": true,
+  "priorDeployedCommit": "043b91761f63062708d70f7cda3a6b2046cd4cf9",
+  "priorDeployedPack": "data/test-02.json",
+  "priorDeployedPackSha256": "dd9b42242b14c96999e2e6621f1b15850a7156dbc4271cd1b4ecff31ed83e090",
+  "priorDeployedGroup": {
+    "id": "t02-r-p7-09",
+    "testId": "test-02",
+    "part": 7,
+    "title": "Meeting-room booking rules",
+    "titleZh": "會議室預約規則",
+    "topic": "business",
+    "passage": "Meeting-room booking update\n\nRoom bookings will be released if the organizer has not checked in within fifteen minutes of the reserved start time. Check-in can be completed on the panel outside the room or through the booking app.\n\nMeetings with external visitors should include the visitor count in the reservation. Reception uses this information to prepare temporary badges. Do not enter visitors’ personal identity numbers in the booking notes.\n\nIf your meeting ends early, release the room in the app so that others can use it. Moving chairs does not cancel a reservation. Rooms with video-conferencing equipment are marked with a camera icon; an ordinary screen alone does not indicate that a camera is installed.",
+    "passageZh": "會議室預約更新\n\n若主辦人在預約開始後十五分鐘內未報到，預約將被釋出。可在門外面板或預約應用程式中報到。\n\n有外部訪客的會議，請在預約中填訪客人數，櫃檯據此準備臨時識別證。不要在預約備註中填訪客個人身分證字號。\n\n若會議提早結束，請在應用程式釋出會議室，供他人使用。移動椅子不會取消預約。配備視訊會議設備的房間會標相機圖示；只有一般螢幕不代表已裝攝影機。"
+  },
+  "legacyQuestions": [
+    {
+      "id": "t02-q171",
+      "testId": "test-02",
+      "number": 171,
+      "part": 7,
+      "groupId": "t02-r-p7-09",
+      "topic": "business",
+      "difficulty": "intermediate",
+      "tags": [
+        "business",
+        "reading-comprehension"
+      ],
+      "prompt": "What happens if the organizer does not check in on time?",
+      "promptZh": "主辦人未在期限內報到會如何？",
+      "options": [
+        {
+          "text": "The reservation is released",
+          "zh": "預約被釋出",
+          "whyZh": "超過開始後十五分鐘未報到，系統釋出房間。",
+          "id": "A"
+        },
+        {
+          "text": "The camera is removed from the room",
+          "zh": "攝影機從房間移除",
+          "whyZh": "未報到影響預約，不改變設備。",
+          "id": "B"
+        },
+        {
+          "text": "All visitors receive permanent badges",
+          "zh": "所有訪客取得永久識別證",
+          "whyZh": "櫃檯準備的是臨時證件，與未報到無關。",
+          "id": "C"
+        },
+        {
+          "text": "The reservation is extended automatically",
+          "zh": "預約自動延長",
+          "whyZh": "規則是釋出，不是延長。",
+          "id": "D"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "超過開始後十五分鐘未報到，系統釋出房間。",
+      "evidence": "Room bookings will be released if the organizer has not checked in within fifteen minutes",
+      "vocabulary": [
+        {
+          "term": "check in",
+          "zh": "報到；確認使用",
+          "note": "向預約系統表示使用者已到場。"
+        },
+        {
+          "term": "release a room",
+          "zh": "釋出會議室",
+          "note": "讓原本保留的會議空間可被其他人使用。"
+        }
+      ],
+      "revision": 1
+    },
+    {
+      "id": "t02-q172",
+      "testId": "test-02",
+      "number": 172,
+      "part": 7,
+      "groupId": "t02-r-p7-09",
+      "topic": "business",
+      "difficulty": "intermediate",
+      "tags": [
+        "business",
+        "reading-comprehension"
+      ],
+      "prompt": "Why should visitor numbers be included in a reservation?",
+      "promptZh": "為何預約要填訪客人數？",
+      "options": [
+        {
+          "text": "To determine how many chairs must be removed",
+          "zh": "決定移除多少椅子",
+          "whyZh": "文件沒有這項規則。",
+          "id": "A"
+        },
+        {
+          "text": "To help reception prepare temporary badges",
+          "zh": "協助櫃檯準備臨時識別證",
+          "whyZh": "第二段明確說明人數用途。",
+          "id": "B"
+        },
+        {
+          "text": "To publish visitors’ identity numbers",
+          "zh": "公開訪客身分證字號",
+          "whyZh": "規則禁止在備註填身分證字號。",
+          "id": "C"
+        },
+        {
+          "text": "To disable the check-in requirement",
+          "zh": "取消報到要求",
+          "whyZh": "訪客人數不影響報到規則。",
+          "id": "D"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "第二段明確說明人數用途。",
+      "evidence": "Reception uses this information to prepare temporary badges.",
+      "vocabulary": [
+        {
+          "term": "check in",
+          "zh": "報到；確認使用",
+          "note": "向預約系統表示使用者已到場。"
+        },
+        {
+          "term": "release a room",
+          "zh": "釋出會議室",
+          "note": "讓原本保留的會議空間可被其他人使用。"
+        }
+      ],
+      "revision": 1
+    },
+    {
+      "id": "t02-q173",
+      "testId": "test-02",
+      "number": 173,
+      "part": 7,
+      "groupId": "t02-r-p7-09",
+      "topic": "business",
+      "difficulty": "intermediate",
+      "tags": [
+        "business",
+        "reading-comprehension"
+      ],
+      "prompt": "How can a user identify a room equipped for video conferences?",
+      "promptZh": "如何辨識配有視訊會議設備的房間？",
+      "options": [
+        {
+          "text": "Count the chairs in the room",
+          "zh": "計算椅子數量",
+          "whyZh": "椅子數與視訊設備標示無關。",
+          "id": "A"
+        },
+        {
+          "text": "Choose any room with an ordinary screen",
+          "zh": "選任何有一般螢幕的房間",
+          "whyZh": "文件明說一般螢幕不代表有攝影機。",
+          "id": "B"
+        },
+        {
+          "text": "Look for the camera icon",
+          "zh": "查看是否有相機圖示",
+          "whyZh": "最後一段說視訊會議房間有相機圖示。",
+          "id": "C"
+        },
+        {
+          "text": "Book a room without checking in",
+          "zh": "不報到就預約房間",
+          "whyZh": "這不能辨識設備，還可能導致預約被釋出。",
+          "id": "D"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "最後一段說視訊會議房間有相機圖示。",
+      "evidence": "Rooms with video-conferencing equipment are marked with a camera icon",
+      "vocabulary": [
+        {
+          "term": "check in",
+          "zh": "報到；確認使用",
+          "note": "向預約系統表示使用者已到場。"
+        },
+        {
+          "term": "release a room",
+          "zh": "釋出會議室",
+          "note": "讓原本保留的會議空間可被其他人使用。"
+        }
+      ],
+      "revision": 1
+    }
+  ]
+}

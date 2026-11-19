@@ -1,12 +1,66 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": {
-    "key": "B",
-    "checks": "Fee includes simple lunch; no office transport, footwear brought by participants, half-day not overnight. zh retains $35 source notation; options and reasons aligned.",
-    "id": "t03-q151"
-  },
+  "checks": "Map the different goals of the three people to two separate access categories while applying the one-item/two-person table limit. Solved before viewing keys; after exact bilingual edits, source and all distractors rechecked.",
   "activeQuestion": {
+    "id": "t03-q151-r2",
+    "testId": "test-03",
+    "number": 151,
+    "part": 7,
+    "groupId": "t03-g061-r2",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "notice",
+      "context"
+    ],
+    "prompt": "Three colleagues are bringing one torn bag. Two want to work on it together, and the third only wants to watch. What should they arrange?",
+    "promptZh": "三位同事會帶一個破掉的袋子來。兩人想一起修袋子，第三人只想旁觀。他們應如何安排？",
+    "options": [
+      {
+        "id": "A",
+        "text": "One table booking and one visitor pass",
+        "zh": "預約一張工作桌和一張旁觀通行證。",
+        "whyZh": "一件物品可預約一張桌，供兩人一起修理；第三人只想看，可另外預約旁觀通行證。"
+      },
+      {
+        "id": "B",
+        "text": "Two table bookings and no visitor pass",
+        "zh": "預約兩張工作桌，不用旁觀通行證。",
+        "whyZh": "同一組須帶兩件不同的待修物品才能預約兩張工作桌；他們只有一件。"
+      },
+      {
+        "id": "C",
+        "text": "Three visitor passes and no table booking",
+        "zh": "預約三張旁觀通行證，不預約工作桌。",
+        "whyZh": "通行證只能進旁觀區，不能在桌邊參與修理；其中兩人想動手。"
+      },
+      {
+        "id": "D",
+        "text": "One table booking for all three colleagues",
+        "zh": "預約一張工作桌，讓三位同事一起使用。",
+        "whyZh": "一張工作桌最多兩人，包含帶物品來的人，因此不能三人一起使用。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "一件物品可預約一張桌，供兩人一起修理；第三人只想看，可另外預約旁觀通行證。",
+    "evidence": "Each table booking covers one item and up to two people […] a third person wants to learn by watching, they can reserve a separate visitor pass.",
+    "vocabulary": [],
+    "revision": 2
+  },
+  "group": {
+    "id": "t03-g061-r2",
+    "testId": "test-03",
+    "part": 7,
+    "title": "Workshop at Willow Court",
+    "titleZh": "柳庭社區修理日",
+    "topic": "daily",
+    "passage": "The Willow Court Reuse Cooperative is holding a Saturday repair morning. Each table booking covers one item and up to two people, including the person who brings it. If a third person wants to learn by watching, they can reserve a separate visitor pass. The visitor pass gives access to the viewing area, but visitors cannot join a repair at a table. A group can book two tables only if it brings two different items to repair.\n\nCan't come to the repair morning? Our collection cupboard is open Friday evening. Pieces of clean fabric are welcome there at any size, but offcuts too small to cover the palm of a hand must be packed together in a labelled bag for the craft basket. Larger pieces go loose into the patch-making drawer. Members will use both supplies on Saturday; there is no need to reserve a place to make a donation.",
+    "passageZh": "柳庭惜物合作社將在週六上午舉辦修理活動。每一張工作桌的預約可修理一件物品，最多兩人一起使用，包含帶物品來的人。如果第三人想旁觀學習，可以另外預約旁觀通行證。持通行證可進旁觀區，但不能到工作桌參與修理。同一組人只有帶兩件不同的物品來修時，才能預約兩張工作桌。\n\n週六上午無法來參加嗎？週五晚間會開放物資收集櫃。各種大小的乾淨布料都可捐贈，但不到手掌大小的碎布須裝在同一個貼有標籤的袋子裡，再放入手作材料籃。較大的布料不用裝袋，請直接放入製作補丁用的抽屜。會員週六會用到這兩種材料。捐贈不用預約名額。",
+    "passageType": "single"
+  },
+  "originalQuestion": {
     "id": "t03-q151",
     "testId": "test-03",
     "number": 151,
@@ -59,15 +113,5 @@
     ],
     "revision": 1
   },
-  "group": {
-    "id": "t03-g061",
-    "testId": "test-03",
-    "part": 7,
-    "title": "Community orchard advertisement",
-    "titleZh": "社區果園廣告",
-    "topic": "daily",
-    "passage": "A DIFFERENT KIND OF TEAM DAY\nGreen Lane Orchard welcomes workplace groups\n\nTrade the meeting room for a morning outdoors. Our half-day program combines a guided orchard walk with a seasonal task such as pruning young trees or preparing fruit baskets for a local food bank. No gardening experience is needed. Trained staff provide tools, gloves, and a safety briefing.\n\nGroups of 8–20 may book on Wednesdays or Fridays from March through October. The fee is $35 per person and includes a simple lunch. Bookings must be made at least three weeks ahead. Please tell us about dietary requirements when booking, not on arrival.\n\nWe work in light rain, but if high winds make the orchard unsafe, we will offer an alternative date or a full refund. Participants should bring waterproof shoes; ordinary office shoes are unsuitable for the uneven paths. To request available dates, contact teams@greenlane.example.",
-    "passageZh": "不一樣的團隊日\nGreen Lane 果園歡迎企業團體\n\n走出會議室，到戶外度過一個上午。半日活動包含果園導覽與季節性工作，例如修剪幼樹，或替當地食物銀行準備水果籃。不需要園藝經驗，受訓人員會提供工具、手套與安全說明。\n\n三月至十月的星期三或五，可接受八至二十人的團體預約。每人 $35，含簡餐，須至少提前三週預訂。飲食需求請於預訂時告知，不要等到抵達才提出。\n\n小雨時活動照常；若強風吹襲使果園不安全，將提供改期或全額退款。參加者應帶防水鞋，一般上班穿的鞋不適合凹凸不平的小徑。如想查詢可預約的日期，請聯絡 teams@greenlane.example。",
-    "passageType": "single"
-  }
+  "retiredSourceReference": "question-reserve/test-03/t03-g061/questions/Q151/verification.json"
 }

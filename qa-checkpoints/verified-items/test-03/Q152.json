@@ -1,12 +1,66 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": {
-    "key": "D",
-    "checks": "Unsafe high wind triggers alternative date or full refund; no experience required, light rain continues, four weeks meets booking rule. zh and reasons accurate.",
-    "id": "t03-q152"
-  },
+  "checks": "Compare two sizes in a new scenario with the notice threshold, assign each to its distinct preparation and destination, and choose the compliant drop-off time. Solved before viewing keys; after exact bilingual edits, source and all distractors rechecked.",
   "activeQuestion": {
+    "id": "t03-q152-r2",
+    "testId": "test-03",
+    "number": 152,
+    "part": 7,
+    "groupId": "t03-g061-r2",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "notice",
+      "context"
+    ],
+    "prompt": "Marta cannot come on Saturday. She has some clean offcuts the size of postage stamps and one clean piece large enough to cover both her palms. What should she do?",
+    "promptZh": "Marta 週六無法參加。她有幾片郵票大小的乾淨碎布，還有一塊大到能蓋住兩個手掌的乾淨布料。她應如何捐贈？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Put all the fabric loose in the patch-making drawer on Friday evening.",
+        "zh": "週五晚間把所有布料不裝袋，直接放進製作補丁的抽屜。",
+        "whyZh": "大布料可直接放入抽屜，但小碎布應集中裝袋、貼標籤後放入手作材料籃。"
+      },
+      {
+        "id": "B",
+        "text": "Bag and label all the fabric for the craft basket, and drop it off on Friday evening.",
+        "zh": "週五晚間把所有布料裝袋貼標籤，放入手作材料籃。",
+        "whyZh": "小碎布的處理方式正確，但大布料要不裝袋，直接放入製作補丁的抽屜。"
+      },
+      {
+        "id": "C",
+        "text": "On Friday evening, put the bagged, labelled offcuts in the craft basket and the loose large piece in the drawer.",
+        "zh": "週五晚間將小碎布裝袋貼標籤，放入手作材料籃；大布料不裝袋，直接放進抽屜。",
+        "whyZh": "收集櫃週五晚間開放，不須預約。郵票大小的碎布不到手掌大，應裝袋貼標籤放進材料籃；大布料直接放進製作補丁的抽屜。"
+      },
+      {
+        "id": "D",
+        "text": "Sort the fabric by size, then leave both sets by the repair tables on Saturday morning.",
+        "zh": "把布料按大小分開，週六上午一起放到工作桌旁。",
+        "whyZh": "公告指定週五晚間到收集櫃捐贈，並分別放入材料籃和抽屜。Marta 週六也無法到場。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "收集櫃週五晚間開放，不須預約。郵票大小的碎布不到手掌大，應裝袋貼標籤放進材料籃；大布料直接放進製作補丁的抽屜。",
+    "evidence": "Our collection cupboard is open Friday evening. Pieces of clean fabric are welcome there at any size, but offcuts too small to cover the palm of a hand must be packed together in a labelled bag for the craft basket. Larger pieces go loose into the patch-making drawer.",
+    "vocabulary": [],
+    "revision": 2
+  },
+  "group": {
+    "id": "t03-g061-r2",
+    "testId": "test-03",
+    "part": 7,
+    "title": "Workshop at Willow Court",
+    "titleZh": "柳庭社區修理日",
+    "topic": "daily",
+    "passage": "The Willow Court Reuse Cooperative is holding a Saturday repair morning. Each table booking covers one item and up to two people, including the person who brings it. If a third person wants to learn by watching, they can reserve a separate visitor pass. The visitor pass gives access to the viewing area, but visitors cannot join a repair at a table. A group can book two tables only if it brings two different items to repair.\n\nCan't come to the repair morning? Our collection cupboard is open Friday evening. Pieces of clean fabric are welcome there at any size, but offcuts too small to cover the palm of a hand must be packed together in a labelled bag for the craft basket. Larger pieces go loose into the patch-making drawer. Members will use both supplies on Saturday; there is no need to reserve a place to make a donation.",
+    "passageZh": "柳庭惜物合作社將在週六上午舉辦修理活動。每一張工作桌的預約可修理一件物品，最多兩人一起使用，包含帶物品來的人。如果第三人想旁觀學習，可以另外預約旁觀通行證。持通行證可進旁觀區，但不能到工作桌參與修理。同一組人只有帶兩件不同的物品來修時，才能預約兩張工作桌。\n\n週六上午無法來參加嗎？週五晚間會開放物資收集櫃。各種大小的乾淨布料都可捐贈，但不到手掌大小的碎布須裝在同一個貼有標籤的袋子裡，再放入手作材料籃。較大的布料不用裝袋，請直接放入製作補丁用的抽屜。會員週六會用到這兩種材料。捐贈不用預約名額。",
+    "passageType": "single"
+  },
+  "originalQuestion": {
     "id": "t03-q152",
     "testId": "test-03",
     "number": 152,
@@ -59,15 +113,5 @@
     ],
     "revision": 1
   },
-  "group": {
-    "id": "t03-g061",
-    "testId": "test-03",
-    "part": 7,
-    "title": "Community orchard advertisement",
-    "titleZh": "社區果園廣告",
-    "topic": "daily",
-    "passage": "A DIFFERENT KIND OF TEAM DAY\nGreen Lane Orchard welcomes workplace groups\n\nTrade the meeting room for a morning outdoors. Our half-day program combines a guided orchard walk with a seasonal task such as pruning young trees or preparing fruit baskets for a local food bank. No gardening experience is needed. Trained staff provide tools, gloves, and a safety briefing.\n\nGroups of 8–20 may book on Wednesdays or Fridays from March through October. The fee is $35 per person and includes a simple lunch. Bookings must be made at least three weeks ahead. Please tell us about dietary requirements when booking, not on arrival.\n\nWe work in light rain, but if high winds make the orchard unsafe, we will offer an alternative date or a full refund. Participants should bring waterproof shoes; ordinary office shoes are unsuitable for the uneven paths. To request available dates, contact teams@greenlane.example.",
-    "passageZh": "不一樣的團隊日\nGreen Lane 果園歡迎企業團體\n\n走出會議室，到戶外度過一個上午。半日活動包含果園導覽與季節性工作，例如修剪幼樹，或替當地食物銀行準備水果籃。不需要園藝經驗，受訓人員會提供工具、手套與安全說明。\n\n三月至十月的星期三或五，可接受八至二十人的團體預約。每人 $35，含簡餐，須至少提前三週預訂。飲食需求請於預訂時告知，不要等到抵達才提出。\n\n小雨時活動照常；若強風吹襲使果園不安全，將提供改期或全額退款。參加者應帶防水鞋，一般上班穿的鞋不適合凹凸不平的小徑。如想查詢可預約的日期，請聯絡 teams@greenlane.example。",
-    "passageType": "single"
-  }
+  "retiredSourceReference": "question-reserve/test-03/t03-g061/questions/Q152/verification.json"
 }
