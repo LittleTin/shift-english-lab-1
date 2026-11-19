@@ -1,0 +1,138 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Explicitly only the design server will use the temporary link; the video meeting uses a different arrangement, and all other traffic is unsupported. Formal and practice passages match the script after equivalent number/punctuation normalization; the formal spoken stem is checked where applicable. zh-TW and option rationales were checked.",
+  "activeQuestion": {
+    "id": "t01-q045",
+    "testId": "test-01",
+    "number": 45,
+    "part": 3,
+    "groupId": "t01-g036",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "scope"
+    ],
+    "prompt": "What will use the temporary connection?",
+    "promptZh": "什麼會使用臨時連線？",
+    "options": [
+      {
+        "id": "A",
+        "text": "All office services.",
+        "zh": "辦公室所有服務。",
+        "whyZh": "臨時連線只供設計伺服器使用，並未恢復所有服務。"
+      },
+      {
+        "id": "B",
+        "text": "The video meeting system.",
+        "zh": "視訊會議系統。",
+        "whyZh": "男子詢問此事時，女子回答 No。"
+      },
+      {
+        "id": "C",
+        "text": "The electrician's mobile phone.",
+        "zh": "電工的手機。",
+        "whyZh": "沒有提到替電工手機提供連線。"
+      },
+      {
+        "id": "D",
+        "text": "Only the design server.",
+        "zh": "只有設計伺服器。",
+        "whyZh": "女子明確回答 only the design server，因此不能擴大解讀為視訊或所有系統均可使用。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "女子明確回答 only the design server，因此不能擴大解讀為視訊或所有系統均可使用。",
+    "evidence": "No, only the design server.",
+    "vocabulary": [
+      {
+        "term": "temporary connection",
+        "zh": "臨時連線",
+        "note": "在正式網路維護期間提供的暫時連接方式。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g036",
+    "testId": "test-01",
+    "part": 3,
+    "title": "A temporary network connection",
+    "titleZh": "臨時網路連線",
+    "topic": "technology",
+    "passage": "Woman: We need to replace a network switch on Saturday. Most services will be unavailable from eight until nine in the morning.\nMan: Our overseas design team uploads drawings at eight thirty. Can we move the work an hour later?\nWoman: The electrician is only available at eight, but I can arrange a temporary connection for the design server.\nMan: That would solve the upload problem. Will the video meeting system use that connection too?\nWoman: No, only the design server. Please move Saturday's video meeting to nine thirty.\nMan: I'll notify the team and send the new meeting invitation.",
+    "passageZh": "女：我們星期六需要更換一台網路交換器。大部分服務會在早上八點到九點之間無法使用。\n男：我們海外設計團隊會在八點半上傳圖面。能不能把工程延後一小時？\n女：電工只有八點有空，但我可以替設計伺服器安排臨時連線。\n男：這樣就能解決上傳問題。視訊會議系統也會使用那條連線嗎？\n女：不會，只有設計伺服器會用。請把星期六的視訊會議改到九點半。\n男：我會通知團隊並寄出新的會議邀請。",
+    "audioScript": "We need to replace a network switch on Saturday. Most services will be unavailable from eight until nine in the morning.\nOur overseas design team uploads drawings at eight thirty. Can we move the work an hour later?\nThe electrician is only available at eight, but I can arrange a temporary connection for the design server.\nThat would solve the upload problem. Will the video meeting system use that connection too?\nNo, only the design server. Please move Saturday's video meeting to nine thirty.\nI'll notify the team and send the new meeting invitation.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "We need to replace a network switch on Saturday. Most services will be unavailable from eight until nine in the morning."
+      },
+      {
+        "voice": "male",
+        "text": "Our overseas design team uploads drawings at eight thirty. Can we move the work an hour later?"
+      },
+      {
+        "voice": "female",
+        "text": "The electrician is only available at eight, but I can arrange a temporary connection for the design server."
+      },
+      {
+        "voice": "male",
+        "text": "That would solve the upload problem. Will the video meeting system use that connection too?"
+      },
+      {
+        "voice": "female",
+        "text": "No, only the design server. Please move Saturday's video meeting to nine thirty."
+      },
+      {
+        "voice": "male",
+        "text": "I'll notify the team and send the new meeting invitation."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-16.mp3",
+    "duration": 40.848,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-PH",
+        "role": "female",
+        "modelVoice": "en-PH-RosaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-PH",
+        "role": "male",
+        "modelVoice": "en-PH-JamesNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 41.348
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-01-16.mp3",
+      "start": 0.5,
+      "end": 41.348,
+      "assetSha256": "7ae9c8c5855e605d120c7409ec6575f40be4ac59ab808695e6da532793925b91",
+      "speech": "We need to replace a network switch on Saturday.\n Most services will be unavailable from 8 until 9 in the morning.\n Our overseas design team uploads drawings at 8.30.\n Can we move the work an hour later?\n The electrician is only available at 8, but I can arrange a temporary connection for the design server.\n That would solve the upload problem.\n Will the video meeting system use that connection too?\n No, only the design server.\n Please move Saturday's video meeting to 9.30.\n I'll notify the team and send the new meeting invitation."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-01-cues-02.mp3",
+      "start": 36.52767,
+      "end": 39.59492,
+      "assetSha256": "4c01686b382311002ca4ec4dc257d065de2941cc085e66243d440974bc0910c7",
+      "speech": "Number 45, what will use the temporary connection?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-16.mp3",
+      "start": 0.5,
+      "end": 41.348,
+      "assetSha256": "7ae9c8c5855e605d120c7409ec6575f40be4ac59ab808695e6da532793925b91",
+      "speech": "We need to replace a network switch on Saturday.\n Most services will be unavailable from 8 until 9 in the morning.\n Our overseas design team uploads drawings at 8.30.\n Can we move the work an hour later?\n The electrician is only available at 8, but I can arrange a temporary connection for the design server.\n That would solve the upload problem.\n Will the video meeting system use that connection too?\n No, only the design server.\n Please move Saturday's video meeting to 9.30.\n I'll notify the team and send the new meeting invitation."
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "A agrees to explain the dashboard to the new engineers and asks about ten o'clock. B describes walking and C circuit boards; neither addresses the request. Formal and practice passages match the script after equivalent number/punctuation normalization; the formal spoken stem is checked where applicable. zh-TW and option rationales were checked.",
+  "activeQuestion": {
+    "id": "t01-q030",
+    "testId": "test-01",
+    "number": 30,
+    "part": 2,
+    "groupId": "t01-g030",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "idiom"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "Of course. Is ten o'clock convenient?",
+        "zh": "當然可以，十點方便嗎？",
+        "whyZh": "walk someone through 表示逐步講解；回應接受請求並協調時間，符合語意。"
+      },
+      {
+        "id": "B",
+        "text": "They walked here from the station.",
+        "zh": "他們從車站走路過來。",
+        "whyZh": "把 walk 誤解為步行，沒有回答操作講解的請求。"
+      },
+      {
+        "id": "C",
+        "text": "The new boards arrive tomorrow.",
+        "zh": "新板子明天到。",
+        "whyZh": "boards 與 dashboard 字詞相似，但板件到貨不是儀表板操作教學。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "walk someone through 表示逐步講解；回應接受請求並協調時間，符合語意。",
+    "evidence": "Would you walk the new engineers through the dashboard?",
+    "vocabulary": [
+      {
+        "term": "walk someone through",
+        "zh": "逐步向某人講解",
+        "note": "此處不是字面上的步行。"
+      },
+      {
+        "term": "dashboard",
+        "zh": "儀表板",
+        "note": "集中呈現系統數據與功能的操作畫面。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g030",
+    "testId": "test-01",
+    "part": 2,
+    "title": "A dashboard walkthrough",
+    "titleZh": "儀表板操作導覽",
+    "topic": "technology",
+    "passage": "Would you walk the new engineers through the dashboard?\nA. Of course. Is ten o'clock convenient? B. They walked here from the station. C. The new boards arrive tomorrow.",
+    "passageZh": "你願意帶新工程師了解儀表板的操作嗎？\nA. 當然可以，十點方便嗎？\nB. 他們從車站走路過來。\nC. 新板子明天到。",
+    "audioScript": "Would you walk the new engineers through the dashboard?\nA. Of course. Is ten o'clock convenient? B. They walked here from the station. C. The new boards arrive tomorrow.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Would you walk the new engineers through the dashboard?"
+      },
+      {
+        "voice": "male",
+        "text": "A. Of course. Is ten o'clock convenient? B. They walked here from the station. C. The new boards arrive tomorrow."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-11.mp3",
+    "duration": 17.856,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-GB",
+        "role": "female",
+        "modelVoice": "en-GB-SoniaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-GB",
+        "role": "male",
+        "modelVoice": "en-GB-RyanNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 18.356
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-01-11.mp3",
+      "start": 0.5,
+      "end": 18.668,
+      "assetSha256": "3c059a7da573244d682f073b07988b6a0af28a3d490d68b20450f3ecc86cd6d6",
+      "speech": "Would you walk the new engineers through the dashboard?\n A. Of course. Is 10 o'clock convenient?\n B. They walked here from the station.\n C. The new boards arrive tomorrow."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-11.mp3",
+      "start": 0.5,
+      "end": 18.356,
+      "assetSha256": "0fcb0ae0f4a294f95759ddfa5bbdf1966f2090ce55b8164b0ffe158272fd2480",
+      "speech": "Would you walk the new engineers through the dashboard?\n A. Of course. Is ten o'clock convenient?\n B. They walked here from the station.\n C. The new boards arrive tomorrow."
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "The man promises the revised delivery schedule by email that afternoon. The test is in the future, the order stays the same, and full shipment is not promised then. Formal and practice passages match the script after equivalent number/punctuation normalization; the formal spoken stem is checked where applicable. zh-TW and option rationales were checked.",
+  "activeQuestion": {
+    "id": "t01-q034",
+    "testId": "test-01",
+    "number": 34,
+    "part": 3,
+    "groupId": "t01-g032",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "next_action"
+    ],
+    "prompt": "What will the man send that afternoon?",
+    "promptZh": "男子當天下午會寄出什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "A vibration-test report.",
+        "zh": "振動測試報告。",
+        "whyZh": "振動測試尚待星期三進行，男子沒有承諾寄測試報告。"
+      },
+      {
+        "id": "B",
+        "text": "A replacement purchase order.",
+        "zh": "替換用的新採購單。",
+        "whyZh": "女子要求沿用同一張採購單，因此不是重開採購單。"
+      },
+      {
+        "id": "C",
+        "text": "The entire shipment of boards.",
+        "zh": "整批電路板貨物。",
+        "whyZh": "成品預定星期二起分批出貨，下午要寄的是時程文件。"
+      },
+      {
+        "id": "D",
+        "text": "An updated delivery schedule.",
+        "zh": "更新的交貨時程。",
+        "whyZh": "最後一句指出他會以電子郵件寄出 revised delivery schedule，即修訂後交貨時程。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "最後一句指出他會以電子郵件寄出 revised delivery schedule，即修訂後交貨時程。",
+    "evidence": "I'll email a revised delivery schedule this afternoon.",
+    "vocabulary": [
+      {
+        "term": "delivery schedule",
+        "zh": "交貨時程",
+        "note": "列明各批交貨日期的安排。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g032",
+    "testId": "test-01",
+    "part": 3,
+    "title": "Pilot-build delivery",
+    "titleZh": "試產交貨安排",
+    "topic": "manufacturing",
+    "passage": "Woman: I'm calling about the controller boards for our pilot build. We expected two hundred units on Friday.\nMan: The boards are ready, but the locking connectors won't reach our factory until Monday.\nWoman: Our validation team needs forty complete units for Wednesday's vibration test. Could you finish those first?\nMan: Yes. We have enough connectors in stock for forty. I can ship that batch on Tuesday and the rest later in the week.\nWoman: Please use the same purchase order, and show the two shipment dates separately.\nMan: I'll email a revised delivery schedule this afternoon.",
+    "passageZh": "女：我打電話是要詢問試產用的控制器板。我們原本預計星期五收到兩百片。\n男：板子已經做好，但帶鎖連接器要到星期一才會送到我們工廠。\n女：我們的驗證團隊需要四十片完整成品，供星期三的振動測試使用。你們可以先完成這批嗎？\n男：可以。我們庫存的連接器足夠做四十片。我可以星期二先寄這批，其餘在那一週稍晚寄出。\n女：請沿用同一張採購單，並分別列出兩次出貨日期。\n男：我今天下午會寄出修訂後的交貨時程。",
+    "audioScript": "I'm calling about the controller boards for our pilot build. We expected two hundred units on Friday.\nThe boards are ready, but the locking connectors won't reach our factory until Monday.\nOur validation team needs forty complete units for Wednesday's vibration test. Could you finish those first?\nYes. We have enough connectors in stock for forty. I can ship that batch on Tuesday and the rest later in the week.\nPlease use the same purchase order, and show the two shipment dates separately.\nI'll email a revised delivery schedule this afternoon.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "I'm calling about the controller boards for our pilot build. We expected two hundred units on Friday."
+      },
+      {
+        "voice": "male",
+        "text": "The boards are ready, but the locking connectors won't reach our factory until Monday."
+      },
+      {
+        "voice": "female",
+        "text": "Our validation team needs forty complete units for Wednesday's vibration test. Could you finish those first?"
+      },
+      {
+        "voice": "male",
+        "text": "Yes. We have enough connectors in stock for forty. I can ship that batch on Tuesday and the rest later in the week."
+      },
+      {
+        "voice": "female",
+        "text": "Please use the same purchase order, and show the two shipment dates separately."
+      },
+      {
+        "voice": "male",
+        "text": "I'll email a revised delivery schedule this afternoon."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-12.mp3",
+    "duration": 38.64,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-AU",
+        "role": "female",
+        "modelVoice": "en-AU-NatashaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-AU",
+        "role": "male",
+        "modelVoice": "en-AU-WilliamNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 39.14
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-01-12.mp3",
+      "start": 0.5,
+      "end": 39.14,
+      "assetSha256": "ee58a14a29945af7c3f5f88206b633da7b11666eda8212960897f3f8e1370e40",
+      "speech": "I'm calling about the controller boards for our pilot build.\n We expected 200 units on Friday.\n The boards are ready, but the locking connectors won't reach our factory until Monday.\n Our validation team needs 40 complete units for Wednesday's vibration test.\n Could you finish those first?\n Yes, we have enough connectors in stock for 40.\n I can ship that batch on Tuesday and the rest later in the week.\n Please use the same purchase order and show the two shipment dates separately.\n I'll email a revised delivery schedule this afternoon."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-01-cues-01.mp3",
+      "start": 50.83929,
+      "end": 53.81521,
+      "assetSha256": "6d8ae70c43fc4118e59e408cc5b4a4b1797fc4df9bcf03553e862a4624085b96",
+      "speech": "Number 34. What will the man send that afternoon?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-12.mp3",
+      "start": 0.5,
+      "end": 39.14,
+      "assetSha256": "ee58a14a29945af7c3f5f88206b633da7b11666eda8212960897f3f8e1370e40",
+      "speech": "I'm calling about the controller boards for our pilot build.\n We expected 200 units on Friday.\n The boards are ready, but the locking connectors won't reach our factory until Monday.\n Our validation team needs 40 complete units for Wednesday's vibration test.\n Could you finish those first?\n Yes, we have enough connectors in stock for 40.\n I can ship that batch on Tuesday and the rest later in the week.\n Please use the same purchase order and show the two shipment dates separately.\n I'll email a revised delivery schedule this afternoon."
+    }
+  ]
+}

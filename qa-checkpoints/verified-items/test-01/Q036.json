@@ -1,0 +1,138 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Only the older-driver computers experience the issue; the newest works. It is not every computer, nor does the problem depend on a missing application. Formal and practice passages match the script after equivalent number/punctuation normalization; the formal spoken stem is checked where applicable. zh-TW and option rationales were checked.",
+  "activeQuestion": {
+    "id": "t01-q036",
+    "testId": "test-01",
+    "number": 36,
+    "part": 3,
+    "groupId": "t01-g033",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "detail"
+    ],
+    "prompt": "Which computers experience the problem?",
+    "promptZh": "哪些電腦發生這個問題？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The ones using an older driver.",
+        "zh": "使用較舊驅動程式的電腦。",
+        "whyZh": "男子限定問題只出現在 running the older driver 的兩台電腦，最新工作站正常。"
+      },
+      {
+        "id": "B",
+        "text": "Only the newest workstation.",
+        "zh": "只有最新的工作站。",
+        "whyZh": "男子明確說最新工作站錄影正常。"
+      },
+      {
+        "id": "C",
+        "text": "Every computer in the laboratory.",
+        "zh": "實驗室裡所有電腦。",
+        "whyZh": "Only with the two computers 排除所有電腦都故障的說法。"
+      },
+      {
+        "id": "D",
+        "text": "Computers without a capture application.",
+        "zh": "未安裝擷取程式的電腦。",
+        "whyZh": "問題發生於切換預覽與錄影，對話沒有說未安裝擷取程式。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "男子限定問題只出現在 running the older driver 的兩台電腦，最新工作站正常。",
+    "evidence": "Only with the two computers running the older driver.",
+    "vocabulary": [
+      {
+        "term": "driver",
+        "zh": "驅動程式",
+        "note": "使作業系統與硬體互動的軟體。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g033",
+    "testId": "test-01",
+    "part": 3,
+    "title": "An inspection-camera connection",
+    "titleZh": "檢測相機連線",
+    "topic": "technology",
+    "passage": "Man: The inspection camera loses its connection whenever we switch from preview mode to recording.\nWoman: Does that happen with every workstation?\nMan: Only with the two computers running the older driver. The newest workstation records normally.\nWoman: Then please install driver version four point two before changing the firmware. I've put the download link in the support ticket.\nMan: Will that erase the saved camera profiles?\nWoman: No. The driver update keeps those profiles, but close the capture application first. Call me if the connection still drops afterward.",
+    "passageZh": "男：每當我們從預覽模式切換到錄影，檢測相機就會斷線。\n女：每一台工作站都會發生嗎？\n男：只有使用舊版驅動程式的兩台電腦會。最新那台工作站錄影正常。\n女：那麼在更動韌體之前，請先安裝四點二版驅動程式。我已把下載連結放進客服工單。\n男：這會清除儲存的相機設定檔嗎？\n女：不會。更新驅動程式會保留那些設定檔，但請先關閉擷取程式。如果之後仍會斷線，再打電話給我。",
+    "audioScript": "The inspection camera loses its connection whenever we switch from preview mode to recording.\nDoes that happen with every workstation?\nOnly with the two computers running the older driver. The newest workstation records normally.\nThen please install driver version four point two before changing the firmware. I've put the download link in the support ticket.\nWill that erase the saved camera profiles?\nNo. The driver update keeps those profiles, but close the capture application first. Call me if the connection still drops afterward.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "The inspection camera loses its connection whenever we switch from preview mode to recording."
+      },
+      {
+        "voice": "female",
+        "text": "Does that happen with every workstation?"
+      },
+      {
+        "voice": "male",
+        "text": "Only with the two computers running the older driver. The newest workstation records normally."
+      },
+      {
+        "voice": "female",
+        "text": "Then please install driver version four point two before changing the firmware. I've put the download link in the support ticket."
+      },
+      {
+        "voice": "male",
+        "text": "Will that erase the saved camera profiles?"
+      },
+      {
+        "voice": "female",
+        "text": "No. The driver update keeps those profiles, but close the capture application first. Call me if the connection still drops afterward."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-13.mp3",
+    "duration": 43.368,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-IN",
+        "role": "male",
+        "modelVoice": "en-IN-PrabhatNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-IN",
+        "role": "female",
+        "modelVoice": "en-IN-NeerjaNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 43.868
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-01-13.mp3",
+      "start": 0.5,
+      "end": 43.868,
+      "assetSha256": "dd4ab001d79c9e59f6f5b6f5df9bc37b94dcb4fed96befba5928461028d98464",
+      "speech": "The inspection camera loses its connection whenever we switch from preview mode to recording.\n Does that happen with every workstation?\n Only with the two computers running the older driver.\n The newest workstation records normally.\n Then please install driver version 4.2 before changing the firmware.\n I've put the download link in the support ticket.\n Will that erase the saved camera profiles?\n No.\n The driver update keeps those profiles, but close the capture application first.\n Call me if the connection still drops afterward."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-01-cues-01.mp3",
+      "start": 61.75625,
+      "end": 65.21854,
+      "assetSha256": "6d8ae70c43fc4118e59e408cc5b4a4b1797fc4df9bcf03553e862a4624085b96",
+      "speech": "Number 36, which computers experience the problem?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-13.mp3",
+      "start": 0.5,
+      "end": 43.868,
+      "assetSha256": "dd4ab001d79c9e59f6f5b6f5df9bc37b94dcb4fed96befba5928461028d98464",
+      "speech": "The inspection camera loses its connection whenever we switch from preview mode to recording.\n Does that happen with every workstation?\n Only with the two computers running the older driver.\n The newest workstation records normally.\n Then please install driver version 4.2 before changing the firmware.\n I've put the download link in the support ticket.\n Will that erase the saved camera profiles?\n No.\n The driver update keeps those profiles, but close the capture application first.\n Call me if the connection still drops afterward."
+    }
+  ]
+}

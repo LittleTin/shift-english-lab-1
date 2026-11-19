@@ -1,0 +1,138 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "The inspection camera loses connection when switching from preview to recording. Power loss is not mentioned, profiles are retained, and the download link exists. Formal and practice passages match the script after equivalent number/punctuation normalization; the formal spoken stem is checked where applicable. zh-TW and option rationales were checked.",
+  "activeQuestion": {
+    "id": "t01-q035",
+    "testId": "test-01",
+    "number": 35,
+    "part": 3,
+    "groupId": "t01-g033",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "problem"
+    ],
+    "prompt": "What problem does the man report?",
+    "promptZh": "男子反映什麼問題？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The camera disconnects when recording starts.",
+        "zh": "開始錄影時，相機會斷線。",
+        "whyZh": "第一句指出從預覽切換到錄影時 loses its connection；問題是連線中斷。"
+      },
+      {
+        "id": "B",
+        "text": "All workstations have lost power.",
+        "zh": "所有工作站都斷電了。",
+        "whyZh": "最新工作站仍能正常錄影，並非全體斷電。"
+      },
+      {
+        "id": "C",
+        "text": "The saved profiles have disappeared.",
+        "zh": "儲存的設定檔已消失。",
+        "whyZh": "男子只是詢問更新會不會清除設定，沒有說已經遺失。"
+      },
+      {
+        "id": "D",
+        "text": "The download link is missing.",
+        "zh": "下載連結不見了。",
+        "whyZh": "女子說連結已放入工單，並沒有連結遺失的問題。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "第一句指出從預覽切換到錄影時 loses its connection；問題是連線中斷。",
+    "evidence": "The inspection camera loses its connection whenever we switch from preview mode to recording.",
+    "vocabulary": [
+      {
+        "term": "preview mode",
+        "zh": "預覽模式",
+        "note": "在正式錄製前即時查看影像的模式。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g033",
+    "testId": "test-01",
+    "part": 3,
+    "title": "An inspection-camera connection",
+    "titleZh": "檢測相機連線",
+    "topic": "technology",
+    "passage": "Man: The inspection camera loses its connection whenever we switch from preview mode to recording.\nWoman: Does that happen with every workstation?\nMan: Only with the two computers running the older driver. The newest workstation records normally.\nWoman: Then please install driver version four point two before changing the firmware. I've put the download link in the support ticket.\nMan: Will that erase the saved camera profiles?\nWoman: No. The driver update keeps those profiles, but close the capture application first. Call me if the connection still drops afterward.",
+    "passageZh": "男：每當我們從預覽模式切換到錄影，檢測相機就會斷線。\n女：每一台工作站都會發生嗎？\n男：只有使用舊版驅動程式的兩台電腦會。最新那台工作站錄影正常。\n女：那麼在更動韌體之前，請先安裝四點二版驅動程式。我已把下載連結放進客服工單。\n男：這會清除儲存的相機設定檔嗎？\n女：不會。更新驅動程式會保留那些設定檔，但請先關閉擷取程式。如果之後仍會斷線，再打電話給我。",
+    "audioScript": "The inspection camera loses its connection whenever we switch from preview mode to recording.\nDoes that happen with every workstation?\nOnly with the two computers running the older driver. The newest workstation records normally.\nThen please install driver version four point two before changing the firmware. I've put the download link in the support ticket.\nWill that erase the saved camera profiles?\nNo. The driver update keeps those profiles, but close the capture application first. Call me if the connection still drops afterward.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "The inspection camera loses its connection whenever we switch from preview mode to recording."
+      },
+      {
+        "voice": "female",
+        "text": "Does that happen with every workstation?"
+      },
+      {
+        "voice": "male",
+        "text": "Only with the two computers running the older driver. The newest workstation records normally."
+      },
+      {
+        "voice": "female",
+        "text": "Then please install driver version four point two before changing the firmware. I've put the download link in the support ticket."
+      },
+      {
+        "voice": "male",
+        "text": "Will that erase the saved camera profiles?"
+      },
+      {
+        "voice": "female",
+        "text": "No. The driver update keeps those profiles, but close the capture application first. Call me if the connection still drops afterward."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-13.mp3",
+    "duration": 43.368,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-IN",
+        "role": "male",
+        "modelVoice": "en-IN-PrabhatNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-IN",
+        "role": "female",
+        "modelVoice": "en-IN-NeerjaNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 43.868
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-01-13.mp3",
+      "start": 0.5,
+      "end": 43.868,
+      "assetSha256": "dd4ab001d79c9e59f6f5b6f5df9bc37b94dcb4fed96befba5928461028d98464",
+      "speech": "The inspection camera loses its connection whenever we switch from preview mode to recording.\n Does that happen with every workstation?\n Only with the two computers running the older driver.\n The newest workstation records normally.\n Then please install driver version 4.2 before changing the firmware.\n I've put the download link in the support ticket.\n Will that erase the saved camera profiles?\n No.\n The driver update keeps those profiles, but close the capture application first.\n Call me if the connection still drops afterward."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-01-cues-01.mp3",
+      "start": 58.387,
+      "end": 61.50625,
+      "assetSha256": "6d8ae70c43fc4118e59e408cc5b4a4b1797fc4df9bcf03553e862a4624085b96",
+      "speech": "Number 35, what problem does the man report?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-13.mp3",
+      "start": 0.5,
+      "end": 43.868,
+      "assetSha256": "dd4ab001d79c9e59f6f5b6f5df9bc37b94dcb4fed96befba5928461028d98464",
+      "speech": "The inspection camera loses its connection whenever we switch from preview mode to recording.\n Does that happen with every workstation?\n Only with the two computers running the older driver.\n The newest workstation records normally.\n Then please install driver version 4.2 before changing the firmware.\n I've put the download link in the support ticket.\n Will that erase the saved camera profiles?\n No.\n The driver update keeps those profiles, but close the capture application first.\n Call me if the connection still drops afterward."
+    }
+  ]
+}
