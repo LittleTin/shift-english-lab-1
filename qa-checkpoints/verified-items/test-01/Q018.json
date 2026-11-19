@@ -1,0 +1,108 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Only C responds by offering to check the purchase date; shelf and the physical act of covering the screen do not address warranty. The choice does not claim coverage. Both actual recordings match; all zh-TW material checked.",
+  "activeQuestion": {
+    "id": "t01-q018",
+    "testId": "test-01",
+    "number": 18,
+    "part": 2,
+    "groupId": "t01-g018",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "indirect_response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "It's on the top shelf.",
+        "zh": "它在最上層架子。",
+        "whyZh": "這只回答實體位置，沒有回應保固狀態。"
+      },
+      {
+        "id": "B",
+        "text": "I covered the screen with a cloth.",
+        "zh": "我用布蓋住了螢幕。",
+        "whyZh": "covered 在題目指保固涵蓋，選項卻使用覆蓋物體的意思。"
+      },
+      {
+        "id": "C",
+        "text": "Let me check the purchase date.",
+        "zh": "讓我查一下購買日期。",
+        "whyZh": "購買日期有助於確認保固期限，因此是合理的間接回應；說話者先查證，尚未直接宣稱仍有保固。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "購買日期有助於確認保固期限，因此是合理的間接回應；說話者先查證，尚未直接宣稱仍有保固。",
+    "evidence": "Is this tablet still covered by the warranty?",
+    "vocabulary": [
+      {
+        "term": "covered by the warranty",
+        "zh": "在保固保障範圍內",
+        "note": "covered 在此表示受保障，而非被物體蓋住。"
+      }
+    ],
+    "revision": 1
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-01-07.mp3",
+      "start": 0.5,
+      "end": 16.868,
+      "assetSha256": "a02338f9af055329cee2dcbcdf9242ea8fb6c2fd4e03f3718b7c7b799bec1121",
+      "speech": "Is this tablet still covered by the warranty?\n A. It's on the top shelf.\n B. I covered the screen with a cloth.\n C. Let me check the purchase date."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-07.mp3",
+      "start": 0.5,
+      "end": 14.06,
+      "assetSha256": "2202527c3ad9e36901e3308070bc390b86cbb46496c3656a65cd333053cee5ac",
+      "speech": "Is this tablet still covered by the warranty?\n A. It's on the top shelf.\n B. I covered the screen with a cloth.\n C. Let me check the purchase date."
+    }
+  ],
+  "group": {
+    "id": "t01-g018",
+    "testId": "test-01",
+    "part": 2,
+    "title": "Checking a warranty",
+    "titleZh": "確認保固",
+    "topic": "technology",
+    "passage": "Is this tablet still covered by the warranty?\nA. It's on the top shelf. B. I covered the screen with a cloth. C. Let me check the purchase date.",
+    "passageZh": "這台平板仍在保固範圍內嗎？\nA. 它在最上層架子。\nB. 我用布蓋住了螢幕。\nC. 讓我查一下購買日期。",
+    "audioScript": "Is this tablet still covered by the warranty?\nA. It's on the top shelf. B. I covered the screen with a cloth. C. Let me check the purchase date.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Is this tablet still covered by the warranty?"
+      },
+      {
+        "voice": "male",
+        "text": "A. It's on the top shelf. B. I covered the screen with a cloth. C. Let me check the purchase date."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-07.mp3",
+    "duration": 13.56,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-AU",
+        "role": "female",
+        "modelVoice": "en-AU-NatashaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-AU",
+        "role": "male",
+        "modelVoice": "en-AU-WilliamNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 14.06
+  }
+}
