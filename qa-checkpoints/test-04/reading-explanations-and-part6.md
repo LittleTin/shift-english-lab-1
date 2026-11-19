@@ -1,0 +1,3 @@
+# Test 04 reading explanations and Part 6 review
+
+Source checkpoint only. Five reading items now have verified evidence, translation or option rationale fixes (Q146, Q155, Q157, Q180, Q185), and one shared passage keeps the inclusive Friday deadline in Traditional Chinese. The four Part 6 groups carry the previously reviewed full bilingual passages in separate review fields; exam blanks, keys and English questions are unchanged. The pre-/post-submit behavior was exercised in a disposable Chromium fixture; it still requires full candidate integration and live checks. No launch or lock is implied.
