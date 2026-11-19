@@ -1,0 +1,114 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Both modes ASR match options A–D. Formal cue “Number 1.” One worker gestures toward belt/boxes; alternatives imply absent paint/tools, table/diners and truck/bridge. English options, zh-TW and each rationale checked; offline ASR and visual review, not runtime acceptance.",
+  "activeQuestion": {
+    "id": "t02-q001",
+    "testId": "test-02",
+    "number": 1,
+    "part": 1,
+    "groupId": "t02-g001",
+    "topic": "manufacturing",
+    "difficulty": "foundation",
+    "tags": [
+      "picture description"
+    ],
+    "prompt": "Which statement best describes the picture?",
+    "promptZh": "哪一句最能描述圖片？",
+    "options": [
+      {
+        "id": "A",
+        "text": "A worker is painting a wall.",
+        "zh": "一名工人正在粉刷牆壁。",
+        "whyZh": "圖片沒有粉刷牆面的動作或油漆工具。"
+      },
+      {
+        "id": "B",
+        "text": "Some people are eating at a table.",
+        "zh": "有些人正在桌邊用餐。",
+        "whyZh": "場景是工廠設備旁，並非用餐情境。"
+      },
+      {
+        "id": "C",
+        "text": "A truck is crossing a bridge.",
+        "zh": "一輛卡車正在過橋。",
+        "whyZh": "圖片沒有卡車行經橋面的情景。"
+      },
+      {
+        "id": "D",
+        "text": "A worker is checking a conveyor.",
+        "zh": "一名工人正在檢查輸送帶。",
+        "whyZh": "圖片主體是工人在輸送帶旁進行檢查，checking a conveyor 與可見動作相符。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "圖片主體是工人在輸送帶旁進行檢查，checking a conveyor 與可見動作相符。",
+    "evidence": "A worker is checking a conveyor.",
+    "vocabulary": [
+      {
+        "term": "conveyor",
+        "zh": "輸送帶",
+        "note": "用來連續輸送物品的設備；本題搭配 checking 描述檢查動作。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g001",
+    "testId": "test-02",
+    "part": 1,
+    "title": "Inspecting a conveyor",
+    "titleZh": "檢查輸送帶",
+    "topic": "manufacturing",
+    "passage": "A. A worker is painting a wall.\nB. Some people are eating at a table.\nC. A truck is crossing a bridge.\nD. A worker is checking a conveyor.",
+    "passageZh": "A. 一名工人正在粉刷牆壁。\nB. 有些人正在桌邊用餐。\nC. 一輛卡車正在過橋。\nD. 一名工人正在檢查輸送帶。",
+    "audioScript": "A. A worker is painting a wall.\nB. Some people are eating at a table.\nC. A truck is crossing a bridge.\nD. A worker is checking a conveyor.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "A. A worker is painting a wall. B. Some people are eating at a table. C. A truck is crossing a bridge. D. A worker is checking a conveyor."
+      }
+    ],
+    "imageScene": "factory",
+    "audio": "audio/azure-v1/test-02-01.mp3",
+    "duration": 18.792,
+    "image": "assets/scenes/factory.svg",
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-HK",
+        "role": "female",
+        "modelVoice": "en-HK-YanNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 19.292
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "start": 0.25,
+      "end": 1.01471,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "Number 1."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-02-01.mp3",
+      "start": 0.5,
+      "end": 18.476,
+      "assetSha256": "c47b951e55bd87ef114cb03ae1d1f2d36ed601e8ae759de6d39df1df11d8ee39",
+      "speech": "A. A worker is painting a wall. B. Some people are eating at a table. C. A truck is crossing a bridge. D. A worker is checking a conveyor."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-02-01.mp3",
+      "start": 0.5,
+      "end": 19.292,
+      "assetSha256": "ada5faf88774234fb65e153c5022a9506f4440301fbef310faf927225846f050",
+      "speech": "A. A worker is painting a wall. B. Some people are eating at a table. C. A truck is crossing a bridge. D. A worker is checking a conveyor."
+    }
+  ],
+  "imageSha256": "158a373fabeb7579c54ea6becf4349aedbc67884e029bbcecdbf1802493e382b"
+}

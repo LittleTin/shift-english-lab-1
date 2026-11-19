@@ -1,0 +1,115 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Both modes exact prompt + A–C; correctly numbered. Only “Not yet; I will review it after lunch” answers completion status; translations/explanations equivalent. English options, zh-TW and each rationale checked; offline ASR and visual review, not runtime acceptance.",
+  "activeQuestion": {
+    "id": "t02-q010",
+    "testId": "test-02",
+    "number": 10,
+    "part": 2,
+    "groupId": "t02-g010",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "The meeting room is on the left.",
+        "zh": "會議室在左邊。",
+        "whyZh": "layout 在此指電路板佈局，回答會議室方向不合題意。"
+      },
+      {
+        "id": "B",
+        "text": "Yes, I would like some lunch.",
+        "zh": "好，我想吃點午餐。",
+        "whyZh": "問題不是邀請用餐，而是確認檢查是否完成。"
+      },
+      {
+        "id": "C",
+        "text": "Not yet; I will review it after lunch.",
+        "zh": "還沒；我午餐後會檢查。",
+        "whyZh": "Not yet 回答目前尚未完成，並交代下一步。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "Not yet 回答目前尚未完成，並交代下一步。",
+    "evidence": "Have you checked the board layout yet?",
+    "vocabulary": [
+      {
+        "term": "board layout",
+        "zh": "電路板佈局",
+        "note": "指元件與線路的配置；check 表示檢查其設計。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g010",
+    "testId": "test-02",
+    "part": 2,
+    "title": "Board review",
+    "titleZh": "電路板檢查",
+    "topic": "technology",
+    "passage": "Have you checked the board layout yet?\nA. The meeting room is on the left.\nB. Yes, I would like some lunch.\nC. Not yet; I will review it after lunch.",
+    "passageZh": "你已經檢查過電路板佈局了嗎？\nA. 會議室在左邊。\nB. 好，我想吃點午餐。\nC. 還沒；我午餐後會檢查。",
+    "audioScript": "Have you checked the board layout yet?\nA. The meeting room is on the left.\nB. Yes, I would like some lunch.\nC. Not yet; I will review it after lunch.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Have you checked the board layout yet?"
+      },
+      {
+        "voice": "female",
+        "text": "A. The meeting room is on the left. B. Yes, I would like some lunch. C. Not yet; I will review it after lunch."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-04.mp3",
+    "duration": 16.728,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-US",
+        "role": "male",
+        "modelVoice": "en-US-GuyNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-US",
+        "role": "female",
+        "modelVoice": "en-US-JennyNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 17.228
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "start": 10.044,
+      "end": 10.86983,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "Number 10."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-02-04.mp3",
+      "start": 0.5,
+      "end": 17.228,
+      "assetSha256": "d1b60a59b5d8754aac64419b4ef38473c43d49d5a44f6a48d4d7defdeccad585",
+      "speech": "Have you checked the board layout yet? A. The meeting room is on the left. B. Yes, I would like some lunch. C. Not yet, I will review it after lunch."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-02-04.mp3",
+      "start": 0.5,
+      "end": 17.228,
+      "assetSha256": "1bf1ed98b5b91c25068cc480c88a916e6b558e33eb6063af872cd8ae94c44b7b",
+      "speech": "Have you checked the board layout yet? A. The meeting room is on the left. B. Yes, I would like some lunch. C. Not yet, I will review it after lunch."
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Both modes ASR match A–D; correctly numbered. One figure faces and gestures to a second figure behind reception counter; no shoes, roof or sofa. Practice ASR has a trailing blank marker only. English options, zh-TW and each rationale checked; offline ASR and visual review, not runtime acceptance.",
+  "activeQuestion": {
+    "id": "t02-q004",
+    "testId": "test-02",
+    "number": 4,
+    "part": 1,
+    "groupId": "t02-g004",
+    "topic": "business",
+    "difficulty": "foundation",
+    "tags": [
+      "picture description"
+    ],
+    "prompt": "Which statement best describes the picture?",
+    "promptZh": "哪一句最能描述圖片？",
+    "options": [
+      {
+        "id": "A",
+        "text": "A customer is trying on shoes.",
+        "zh": "一位顧客正在試穿鞋子。",
+        "whyZh": "櫃檯交談的情境沒有試穿鞋子的動作。"
+      },
+      {
+        "id": "B",
+        "text": "A visitor is speaking with a receptionist.",
+        "zh": "一位訪客正在與接待人員交談。",
+        "whyZh": "圖中訪客站在櫃檯前，面向接待人員交談。"
+      },
+      {
+        "id": "C",
+        "text": "A worker is repairing the roof.",
+        "zh": "一名工人正在修理屋頂。",
+        "whyZh": "畫面人物在室內櫃檯旁，並非屋頂上。"
+      },
+      {
+        "id": "D",
+        "text": "Two people are lifting a sofa.",
+        "zh": "兩個人正在抬沙發。",
+        "whyZh": "人物沒有抬家具，主要動作是交談。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "圖中訪客站在櫃檯前，面向接待人員交談。",
+    "evidence": "A visitor is speaking with a receptionist.",
+    "vocabulary": [
+      {
+        "term": "receptionist",
+        "zh": "接待人員",
+        "note": "在公司或飯店等場所負責接待訪客的人員。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g004",
+    "testId": "test-02",
+    "part": 1,
+    "title": "At the reception desk",
+    "titleZh": "在接待櫃檯",
+    "topic": "business",
+    "passage": "A. A customer is trying on shoes.\nB. A visitor is speaking with a receptionist.\nC. A worker is repairing the roof.\nD. Two people are lifting a sofa.",
+    "passageZh": "A. 一位顧客正在試穿鞋子。\nB. 一位訪客正在與接待人員交談。\nC. 一名工人正在修理屋頂。\nD. 兩個人正在抬沙發。",
+    "audioScript": "A. A customer is trying on shoes.\nB. A visitor is speaking with a receptionist.\nC. A worker is repairing the roof.\nD. Two people are lifting a sofa.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "A. A customer is trying on shoes. B. A visitor is speaking with a receptionist. C. A worker is repairing the roof. D. Two people are lifting a sofa."
+      }
+    ],
+    "imageScene": "reception",
+    "audio": "audio/azure-v1/test-02-02.mp3",
+    "duration": 20.064,
+    "image": "assets/scenes/reception.svg",
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-NZ",
+        "role": "female",
+        "modelVoice": "en-NZ-MollyNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 20.564
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "start": 3.43483,
+      "end": 4.23721,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "Number four."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-02-02.mp3",
+      "start": 0.5,
+      "end": 19.004,
+      "assetSha256": "8ada77076dff7788062c8e279eeca8d84e817be1c3f7f65ad40f5f30468d796f",
+      "speech": "A. A customer is trying on shoes. B. A visitor is speaking with a receptionist. C. A worker is repairing the roof. D. Two people are lifting a sofa."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-02-02.mp3",
+      "start": 0.5,
+      "end": 20.564,
+      "assetSha256": "f9a9b86a12b4736133ffd8f8c7f76efd0cfb99ac517efe0e1d9503e92894e038",
+      "speech": "A. A customer is trying on shoes B. A visitor is speaking with a receptionist C. A worker is repairing the roof D. Two people are lifting a sofa [BLANK_AUDIO]"
+    }
+  ],
+  "imageSha256": "0778825311abdeab63a6c7b672a6122e790dacf71fad685a3099e433ba6bbe1f"
+}

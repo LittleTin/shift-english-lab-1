@@ -1,0 +1,114 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Both modes ASR match A–D; correctly numbered. Actual rendering shows knife against vegetables on chopping board, no serving, curtains or car. English options, zh-TW and each rationale checked; offline ASR and visual review, not runtime acceptance.",
+  "activeQuestion": {
+    "id": "t02-q003",
+    "testId": "test-02",
+    "number": 3,
+    "part": 1,
+    "groupId": "t02-g003",
+    "topic": "daily",
+    "difficulty": "foundation",
+    "tags": [
+      "picture description"
+    ],
+    "prompt": "Which statement best describes the picture?",
+    "promptZh": "哪一句最能描述圖片？",
+    "options": [
+      {
+        "id": "A",
+        "text": "A cook is serving soup to customers.",
+        "zh": "一名廚師正把湯端給客人。",
+        "whyZh": "圖中是切菜的準備動作，沒有端湯給客人。"
+      },
+      {
+        "id": "B",
+        "text": "A cook is chopping vegetables.",
+        "zh": "一名廚師正在切蔬菜。",
+        "whyZh": "圖片中廚師以刀具在工作檯上切蔬菜，與 chopping vegetables 相符。"
+      },
+      {
+        "id": "C",
+        "text": "A person is hanging curtains.",
+        "zh": "一個人正在掛窗簾。",
+        "whyZh": "場景與動作都不是掛窗簾。"
+      },
+      {
+        "id": "D",
+        "text": "A person is washing a car.",
+        "zh": "一個人正在洗車。",
+        "whyZh": "廚房內的切菜情境與洗車無關。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "圖片中廚師以刀具在工作檯上切蔬菜，與 chopping vegetables 相符。",
+    "evidence": "A cook is chopping vegetables.",
+    "vocabulary": [
+      {
+        "term": "chop",
+        "zh": "切碎；剁",
+        "note": "本題 chop vegetables 指用刀切蔬菜。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g003",
+    "testId": "test-02",
+    "part": 1,
+    "title": "Preparing vegetables",
+    "titleZh": "準備蔬菜",
+    "topic": "daily",
+    "passage": "A. A cook is serving soup to customers.\nB. A cook is chopping vegetables.\nC. A person is hanging curtains.\nD. A person is washing a car.",
+    "passageZh": "A. 一名廚師正把湯端給客人。\nB. 一名廚師正在切蔬菜。\nC. 一個人正在掛窗簾。\nD. 一個人正在洗車。",
+    "audioScript": "A. A cook is serving soup to customers.\nB. A cook is chopping vegetables.\nC. A person is hanging curtains.\nD. A person is washing a car.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "A. A cook is serving soup to customers. B. A cook is chopping vegetables. C. A person is hanging curtains. D. A person is washing a car."
+      }
+    ],
+    "imageScene": "kitchen",
+    "audio": "audio/azure-v1/test-02-01.mp3",
+    "duration": 18.288,
+    "image": "assets/scenes/kitchen.svg",
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-PH",
+        "role": "female",
+        "modelVoice": "en-PH-RosaNeural"
+      }
+    ],
+    "audioStart": 40.524,
+    "audioEnd": 58.812
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "start": 2.35425,
+      "end": 3.18483,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "Number 3."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-02-01.mp3",
+      "start": 38.508,
+      "end": 56.58,
+      "assetSha256": "c47b951e55bd87ef114cb03ae1d1f2d36ed601e8ae759de6d39df1df11d8ee39",
+      "speech": "A. A cook is serving soup to customers. B. A cook is chopping vegetables. C. A person is hanging curtains. D. A person is washing a car."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-02-01.mp3",
+      "start": 40.524,
+      "end": 58.812,
+      "assetSha256": "ada5faf88774234fb65e153c5022a9506f4440301fbef310faf927225846f050",
+      "speech": "A. A cook is serving soup to customers. B. A cook is chopping vegetables. C. A person is hanging curtains. D. A person is washing a car."
+    }
+  ],
+  "imageSha256": "b89faf51f4d7d8ce03741372d6b5765cd13d611d6adf9794145e8a21bba7e49d"
+}

@@ -1,0 +1,114 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Both modes ASR match A–D; correctly numbered. Raised hand extends to book spines on shelf, no ladder, vehicle or sweeping. English options, zh-TW and each rationale checked; offline ASR and visual review, not runtime acceptance.",
+  "activeQuestion": {
+    "id": "t02-q002",
+    "testId": "test-02",
+    "number": 2,
+    "part": 1,
+    "groupId": "t02-g002",
+    "topic": "daily",
+    "difficulty": "foundation",
+    "tags": [
+      "picture description"
+    ],
+    "prompt": "Which statement best describes the picture?",
+    "promptZh": "哪一句最能描述圖片？",
+    "options": [
+      {
+        "id": "A",
+        "text": "A person is carrying a ladder outside.",
+        "zh": "一個人正把梯子搬到外面。",
+        "whyZh": "圖中動作是伸手取書，並非搬運梯子。"
+      },
+      {
+        "id": "B",
+        "text": "Books are being loaded into a vehicle.",
+        "zh": "書籍正被裝進車輛。",
+        "whyZh": "畫面沒有車輛或裝貨動作。"
+      },
+      {
+        "id": "C",
+        "text": "A person is reaching for a book on a shelf.",
+        "zh": "一個人正伸手拿書架上的書。",
+        "whyZh": "可見人物伸手朝向書架上的書，reaching for 表達伸手去拿。"
+      },
+      {
+        "id": "D",
+        "text": "A person is sweeping the floor.",
+        "zh": "一個人正在掃地。",
+        "whyZh": "人物的手朝向書架，沒有使用掃把。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "可見人物伸手朝向書架上的書，reaching for 表達伸手去拿。",
+    "evidence": "A person is reaching for a book on a shelf.",
+    "vocabulary": [
+      {
+        "term": "reach for",
+        "zh": "伸手去拿",
+        "note": "reach for 後接想取得的物品。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g002",
+    "testId": "test-02",
+    "part": 1,
+    "title": "Choosing a book",
+    "titleZh": "挑選書籍",
+    "topic": "daily",
+    "passage": "A. A person is carrying a ladder outside.\nB. Books are being loaded into a vehicle.\nC. A person is reaching for a book on a shelf.\nD. A person is sweeping the floor.",
+    "passageZh": "A. 一個人正把梯子搬到外面。\nB. 書籍正被裝進車輛。\nC. 一個人正伸手拿書架上的書。\nD. 一個人正在掃地。",
+    "audioScript": "A. A person is carrying a ladder outside.\nB. Books are being loaded into a vehicle.\nC. A person is reaching for a book on a shelf.\nD. A person is sweeping the floor.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "A. A person is carrying a ladder outside. B. Books are being loaded into a vehicle. C. A person is reaching for a book on a shelf. D. A person is sweeping the floor."
+      }
+    ],
+    "imageScene": "bookstore",
+    "audio": "audio/azure-v1/test-02-01.mp3",
+    "duration": 20.232,
+    "image": "assets/scenes/bookstore.svg",
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-SG",
+        "role": "female",
+        "modelVoice": "en-SG-LunaNeural"
+      }
+    ],
+    "audioStart": 19.792,
+    "audioEnd": 40.024
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "start": 1.26471,
+      "end": 2.10425,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "Number 2."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-02-01.mp3",
+      "start": 18.976,
+      "end": 38.008,
+      "assetSha256": "c47b951e55bd87ef114cb03ae1d1f2d36ed601e8ae759de6d39df1df11d8ee39",
+      "speech": "A. A person is carrying a ladder outside. B. Books are being loaded into a vehicle. C. A person is reaching for a book on a shelf. D. A person is sweeping the floor."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-02-01.mp3",
+      "start": 19.792,
+      "end": 40.024,
+      "assetSha256": "ada5faf88774234fb65e153c5022a9506f4440301fbef310faf927225846f050",
+      "speech": "A. A person is carrying a ladder outside. B. Books are being loaded into a vehicle. C. A person is reaching for a book on a shelf. D. A person is sweeping the floor."
+    }
+  ],
+  "imageSha256": "26811c9ef310f980b703567939df1cca62b6271856f51947dcb6875a8b8666a6"
+}
