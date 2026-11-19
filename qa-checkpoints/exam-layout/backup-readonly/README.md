@@ -1,0 +1,5 @@
+# Backup export avoids overwriting another tab (staging only)
+
+Reproduced stale-tab export overwriting newer active answers, frame/offset and notes using two isolated contexts running the exact app functions, for IndexedDB and localStorage. The fix makes export read the latest committed snapshot, waits for saves already queued by the exporting tab, and records its timestamp separately without writing learning progress. Memory-only mode keeps its prior export behavior. No change to visibility, pause/resume, imports or the general cross-tab write contract.
+
+Apply after composing the baseline history/compatibility/practice patches: `python3 apply.py staged-app.js candidate-app.js`; `node test_backup_cross_tab.cjs candidate-app.js` (8/8 independently rerun after composition). The helper will not modify the input in place. Verify the real browser with clean shared origin: tab A advances and pauses formal listening, tab B opens Data and exports, then reload A and check answer, index and audio frame/offset and the actual JSON download. Repeat for fallback storage if practical. No real-browser pass, production mutation or broad cross-tab conflict guarantee.
