@@ -1,0 +1,71 @@
+{
+  "status": "pending-audio-confirmation-not-verified",
+  "items": {
+    "2": {
+      "id": "t03-q002",
+      "key": "D",
+      "status": "AUDIO_HOLD",
+      "checks": "White cup rests on countertop in original artwork, no plates or window washing, second person outside counter. Both versions A–C, formal D and cue agree; practice D is decoded as cop on 1.00, .90, 1.10 and 1.22×. May be recognition or vowel quality; do not claim actual word is wrong or pass without independent comparison. zh cup and counter wording exact.",
+      "audio": {
+        "cue": {
+          "path": "audio/formal/test-03-cues-01.mp3",
+          "fromSec": 1.26471,
+          "toSec": 2.10425,
+          "sourceSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+          "asr": "Number 2."
+        },
+        "passage": {
+          "path": "audio/formal-v2/test-03-01.mp3",
+          "fromSec": 20.128,
+          "toSec": 38.776,
+          "sourceSha256": "8a21ae045c9366b4ed5ed42612bacebff65b86e000b60833249b01fd528cb4f2",
+          "asr": "A. The counter is covered with plates. B. Both people are behind the counter. C. A customer is washing a window. D. A cup is resting on the counter."
+        },
+        "practice": {
+          "path": "audio/azure-v1/test-03-01.mp3",
+          "fromSec": 20.608,
+          "toSec": 37.936,
+          "sourceSha256": "8f78b5a19e22b5329e8b5aef750272bc91cfd8aae5cebb7a022d69f7837b25ef",
+          "asr": "A. The counter is covered with plates. B. Both people are behind the counter. C. A customer is washing a window. D. A cop is resting on the counter."
+        }
+      },
+      "image": {
+        "path": "assets/scenes/cafe.svg",
+        "sha256": "63f1a7baf4ac439b64fa29df3c2b01fb3b6a6e60f2fd210e924e83a52e71eecd"
+      }
+    },
+    "4": {
+      "id": "t03-q004",
+      "key": "C",
+      "status": "AUDIO_HOLD",
+      "checks": "Green line graph on wall behind seated figures; no removal, chair pile or all standing. Formal options and cue exact, practice B chairs vs chase corroborated at .90×. Practice D persistently decoded around the table vs written around a table, including isolated sample; semantically immaterial, exact article verification still held, not a demonstrated recording error.",
+      "audio": {
+        "cue": {
+          "path": "audio/formal/test-03-cues-01.mp3",
+          "fromSec": 3.43483,
+          "toSec": 4.23721,
+          "sourceSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+          "asr": "Number four."
+        },
+        "passage": {
+          "path": "audio/formal-v2/test-03-02.mp3",
+          "fromSec": 0.5,
+          "toSec": 20.06,
+          "sourceSha256": "6a0ddb6ba963c3230af399e582cbf24597be33b37fd54128561ed2b0fdaeb1a1",
+          "asr": "A. A chart is being removed from a wall. B. The chairs have been piled in a corner. C. A line graph is displayed behind the people. D. Everyone is standing around a table."
+        },
+        "practice": {
+          "path": "audio/azure-v1/test-03-02.mp3",
+          "fromSec": 0.5,
+          "toSec": 17.924,
+          "sourceSha256": "444de90014c8ace28b810abd1ca062889a77fe2512dbc3f46d4aea4bf4a37a35",
+          "asr": "A. A chart is being removed from a wall. B. The chase has been piled in a corner. C. A line graph is displayed behind the people. D. Everyone is standing around the table."
+        }
+      },
+      "image": {
+        "path": "assets/scenes/meeting.svg",
+        "sha256": "26f7f7aa1725eb81deb0707bdcc255cfb0f778f1bd00a659fbc2ed82ff593a12"
+      }
+    }
+  }
+}

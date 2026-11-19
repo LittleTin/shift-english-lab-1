@@ -1,0 +1,122 @@
+{
+  "status": "pending-audio-or-editorial-not-verified",
+  "notes": [
+    "| 013 | A | PDF commitment directly fits the request to attach invoice in reply. Physical location does not. C’s unexplained past history is off-point, but its initial “No” gives a possible refusal; replace C as noted below. | HOLD practice label B as V; formal fully aligned. Editorial C hold. |",
+    "| 014 | A | Meeting the auditor in reception responds to early arrival; factory expectation and model recency do not. 稽核員提早抵達／到接待處迎接. | HOLD practice C newer/new; formal fully aligned. Editorial B hold. |",
+    "| 016 | B | Release note identifies correct version; an event location and package weight do not. 韌體版本依發行說明. | Exact both modes; editorial A hold. |",
+    "| 019 | B | Video instead of in-person responds to attendance mode; height and buying a supplier do not. 親自到場／改用視訊. | HOLD practice Will/Would; formal fully aligned. Editorial C hold. |",
+    "- Q013 C: “I’ll update the delivery address.” /「我會更新送貨地址。」/「說的是更新送貨地址，未回答能否在回信中附上發票。」",
+    "- Q014 B: “The previous audit report is in the shared folder.” /「上一份稽核報告在共用資料夾裡。」/「說的是上一份報告存放位置，沒有回應稽核人員提早到達的消息。」",
+    "- Q016 A: “The installation is scheduled for Tuesday.” /「安裝安排在星期二。」/「說明何時安裝，沒有指明應安裝哪個版本。」",
+    "- Q019 C: “The supplier updated the meeting agenda.” /「供應商更新了會議議程。」/「議程更新不回答是否親自出席。」",
+    "- Q013: same practice waveform, both whole and context-preserving B/C window, at 0.83×/1×/1.17×, consistently decoded “V” for B. Practice Q027 using the same source voice (en-AU-NatashaNeural) did decode its B correctly as a comparative check, so a blanket “ASR always renders that voice’s B as V” cannot explain it. This still does not prove source audio said V.",
+    "- Q014: practice C isolated with trailing context, at 0.83×/1×/1.17×, consistently decoded “a new model”; normal-speed whole-item also. Same formal clip did decode “a newer model.” Strict match remains on hold.",
+    "- Q019: practice first 4.2 seconds only, at 0.83×/1×/1.17×, consistently decoded “Would you attend [the/a] supplier meeting in person?” Whole clip likewise. Formal decodes “Will you attend the supplier meeting in person?” Strict match remains on hold."
+  ],
+  "items": [
+    {
+      "number": 13,
+      "audio": [
+        {
+          "path": "audio/formal/test-02-cues-01.mp3",
+          "start": 13.51212,
+          "end": 14.59388,
+          "sourceSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+          "speech": "Number 13."
+        },
+        {
+          "path": "audio/formal-v2/test-02-05.mp3",
+          "start": 0.5,
+          "end": 17.9,
+          "sourceSha256": "c7b7fc1976b4ae94a7727516098eada098fb02f3aa3015e20ea6b2d182ba3ab9",
+          "speech": "Could you attach the invoice to your reply? A. Certainly, I will send the PDF. B. It is beside the station. C. No, I have not replied to him before."
+        },
+        {
+          "path": "audio/azure-v1/test-02-05.mp3",
+          "start": 0.5,
+          "end": 17.996,
+          "sourceSha256": "46cd00e07960a7e43925b982177460df43950d92d80c814bdfdcb12862f8bdbf",
+          "speech": "Could you attach the invoice to your reply? A) Certainly, I will send the PDF. V) It is beside the station. C) No, I have not replied to him before."
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "audio": [
+        {
+          "path": "audio/formal/test-02-cues-01.mp3",
+          "start": 14.84388,
+          "end": 15.84771,
+          "sourceSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+          "speech": "Number 14."
+        },
+        {
+          "path": "audio/formal-v2/test-02-05.mp3",
+          "start": 18.4,
+          "end": 34.888,
+          "sourceSha256": "c7b7fc1976b4ae94a7727516098eada098fb02f3aa3015e20ea6b2d182ba3ab9",
+          "speech": "The auditor has arrived earlier than expected. A. I will meet her at reception. B. Yes, the factory is expected. C. It is a newer model."
+        },
+        {
+          "path": "audio/azure-v1/test-02-05.mp3",
+          "start": 18.496,
+          "end": 36.472,
+          "sourceSha256": "46cd00e07960a7e43925b982177460df43950d92d80c814bdfdcb12862f8bdbf",
+          "speech": "The auditor has arrived earlier than expected. A. I will meet her at reception. B. Yes, the factory is expected. C. It is a new model. [BLANK_AUDIO]"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "audio": [
+        {
+          "path": "audio/formal/test-02-cues-01.mp3",
+          "start": 17.34471,
+          "end": 18.38175,
+          "sourceSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+          "speech": "Number 16."
+        },
+        {
+          "path": "audio/formal-v2/test-02-06.mp3",
+          "start": 0.5,
+          "end": 17.06,
+          "sourceSha256": "ac26ea4dd5b9d5dc3ee9c947c77d49d98b88b3eca21f2abac194c217c460553e",
+          "speech": "Which firmware version should we install? A. At the installation dinner. B. Use the one listed in the release note. C. The package weighs 2 kg."
+        },
+        {
+          "path": "audio/azure-v1/test-02-06.mp3",
+          "start": 0.5,
+          "end": 18.428,
+          "sourceSha256": "c8b6d5ddf2cd18dc4b40063efccbe0dece355af41f1f12f4c573f18164303769",
+          "speech": "Which firmware version should we install? A. At the installation dinner. B. Use the one listed in the release note. C. The package weighs 2 kg."
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "audio": [
+        {
+          "path": "audio/formal/test-02-cues-01.mp3",
+          "start": 21.20508,
+          "end": 22.25483,
+          "sourceSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+          "speech": "Number 19."
+        },
+        {
+          "path": "audio/formal-v2/test-02-07.mp3",
+          "start": 0.5,
+          "end": 16.604,
+          "sourceSha256": "ee6016360ee74abc8a44404ef756702455fa08a4afc148e242676cb99e465c27",
+          "speech": "Will you attend the supplier meeting in person? A. The person is very tall. B. I will join by video instead. C. I bought a new supplier."
+        },
+        {
+          "path": "audio/azure-v1/test-02-07.mp3",
+          "start": 0.5,
+          "end": 17.636,
+          "sourceSha256": "23f6adf5f8140aad1c3ce855836b0800bd919ed4a24d73816a6875f99d770e84",
+          "speech": "Would you attend the supplier meeting in person? A. The person is very tall. B. I will join by video instead. C. I bought a new supplier."
+        }
+      ]
+    }
+  ]
+}
