@@ -1,0 +1,77 @@
+{
+  "status": "unapproved-candidate-timing-only",
+  "changes": [
+    {
+      "role": "passage",
+      "questionId": null,
+      "priorSeconds": 35.808,
+      "candidateSeconds": 37.2125
+    },
+    {
+      "role": "question",
+      "questionId": "t01-q098",
+      "priorSeconds": 3.32867,
+      "candidateSeconds": 5.7625
+    },
+    {
+      "role": "question",
+      "questionId": "t01-q099",
+      "priorSeconds": 4.52658,
+      "candidateSeconds": 4.925
+    },
+    {
+      "role": "question",
+      "questionId": "t01-q100",
+      "priorSeconds": 4.30858,
+      "candidateSeconds": 6.8
+    }
+  ],
+  "assets": {
+    "test01-q098-100-passage-candidate.wav": {
+      "samples": 893100,
+      "hz": 24000,
+      "duration": 37.2125,
+      "sha256": "55e8e0abae7ddc01fdc95128a9674b16578f59cdf0ced6947650e3e4d070fa68"
+    },
+    "test01-q100-formal-stem.wav": {
+      "samples": 163200,
+      "hz": 24000,
+      "duration": 6.8,
+      "sha256": "1f5ccdddde6ad77545c616ddb7eef1ea2a1b827f6eede8fbe6161f502ffffffd"
+    },
+    "test01-q98-formal-stem.wav": {
+      "samples": 138300,
+      "hz": 24000,
+      "duration": 5.7625,
+      "sha256": "398d75ff90824efb0a8b6b2b7265edaf4cbb438b3d7413d26275b16ea8428cd7"
+    },
+    "test01-q99-formal-stem-repair.wav": {
+      "samples": 118200,
+      "hz": 24000,
+      "duration": 4.925,
+      "sha256": "3e49a6ed7841109515b4afd0638d51f37a042e3fbd166ccdc0272b8302a11b77"
+    }
+  },
+  "minimumPart4AnswerSeconds": 8.57566,
+  "pauseReductionTotalSeconds": 6.72817,
+  "formalDurationSeconds": 2700,
+  "numberOfAnswerSlots": 100,
+  "totalFrames": 284,
+  "numberOfAdjustedPart4Pauses": 30,
+  "pinnedRef": "89bec73dac3159f7c5a2c99ac7e0b403b3537e05",
+  "supersedesCandidateOnly": "Original Q099 containing 'morning van' is rejected; no live pack change.",
+  "sourcePatch": {
+    "number": 99,
+    "prompt": "Which shipment is allowed to leave in the morning?",
+    "promptZh": "依短講的規定，哪一筆貨物可以在上午送出？",
+    "formalSpokenText": "Number 99. Which shipment is allowed to leave in the morning?",
+    "answer": "B",
+    "optionsUnchanged": true
+  },
+  "assessment": {
+    "passage": "Unprompted Whisper small.en recovered entire passage except hat vs hut; independent Vosk recovered exact closing idiom. Both key-bearing logic and contextual idiom corroborated on same exact bytes.",
+    "newQ099": "Whisper small.en exact; Vosk matched every key-bearing term but rendered is as as. The prior van/ban ambiguity is removed.",
+    "otherStems": "Q098, Q100 exact with Whisper base.en and Vosk.",
+    "gate": "Candidate language and PCM checks only. Must adopt with exact media associations, protect previous snapshot, test final playback/path, and confirm remote per-item checkpoints before any pass counts. No raw candidate audio in this commit."
+  }
+}
