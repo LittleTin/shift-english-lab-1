@@ -1,0 +1,53 @@
+{
+  "id": "t03-q179",
+  "testId": "test-03",
+  "number": 179,
+  "part": 7,
+  "groupId": "t03-g069",
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "business",
+    "reading-comprehension",
+    "double"
+  ],
+  "prompt": "What is the latest date for cancelling this event without a room charge?",
+  "promptZh": "此次活動最晚哪天取消可免教室費？",
+  "options": [
+    {
+      "text": "April 3",
+      "zh": "四月三日",
+      "whyZh": "四月十日往前七個日曆日為四月三日。",
+      "id": "A"
+    },
+    {
+      "text": "April 8",
+      "zh": "四月八日",
+      "whyZh": "僅提前兩天，會收全額。",
+      "id": "B"
+    },
+    {
+      "text": "March 27",
+      "zh": "三月二十七日",
+      "whyZh": "是寄信日期，不是最後取消期限。",
+      "id": "C"
+    },
+    {
+      "text": "April 10",
+      "zh": "四月十日",
+      "whyZh": "當日取消已超過免費期限。",
+      "id": "D"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "四月十日往前七個日曆日為四月三日。",
+  "evidence": "until seven calendar days before the event / April 10",
+  "vocabulary": [
+    {
+      "term": "incur",
+      "zh": "招致、須支付",
+      "note": "本題閱讀重點詞彙。"
+    }
+  ],
+  "revision": 1
+}

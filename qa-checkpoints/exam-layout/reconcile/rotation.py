@@ -80,6 +80,17 @@ def splice_part5(repo,ref,packs,index,candidates,old_equal,retained,splices):
                         'supersededBaselineIds':[current['id']],'newIds':[qid]})
     need(not candidates,'unmatched standalone reconstruction')
 
+GRAPHIC_KIND='replace-whole-graphic-reading-group-by-exact-old-scope'
+
+def verified_graphic(repo, prior, record):
+    need(set(record)=={'runtimePath','checkpointPath','sha256'},'invalid graphic provenance fields')
+    url, source, digest=(record[k] for k in ('runtimePath','checkpointPath','sha256'))
+    need(isinstance(url,str) and re.fullmatch(r'assets/graphics/[a-z0-9-]+\.svg',url) and
+         isinstance(source,str) and source=='qa-checkpoints/reading-02-03/test03-part7-visuals/'+url.rsplit('/',1)[1] and
+         isinstance(digest,str) and re.fullmatch(r'[a-f0-9]{64}',digest),'invalid graphic path or digest')
+    body=repo.read(prior,source)
+    need(hashlib.sha256(body).hexdigest()==digest,'graphic bytes differ from immutable archive')
+    return url,body
 def need(ok,msg):
     if not ok: raise ValueError(msg)
 def dump(x):
@@ -122,6 +133,7 @@ def rotate(repo,ref,baseline,index,exact_old_overrides=None):
     need(repo.git('rev-parse','--verify','--end-of-options',ref+'^{commit}').decode().strip()==ref,'pin the full reconstruction commit')
     need(set(baseline)==set(EXAMS),'baseline must contain all three packs')
     packs=copy.deepcopy(baseline); retained={}; splices=[]; retired_legacy={t:set() for t in EXAMS}; extra_retired_ids=set()
+    added_graphics={t:{} for t in EXAMS}
     dirs=repo.git('ls-tree','-r','--name-only',ref,'qa-checkpoints/reconstructions').decode().splitlines()
     candidates={}; standalone_candidates={}
     for p in dirs:
@@ -134,7 +146,7 @@ def rotate(repo,ref,baseline,index,exact_old_overrides=None):
             need(key not in standalone_candidates,'duplicate standalone recipe')
             standalone_candidates[key]=r
             continue
-        if r.get('kind')!=KIND:continue
+        if r.get('kind') not in (KIND,GRAPHIC_KIND):continue
         need(match and r.get('sourceGroupId')==match[2] and r.get('notPublished') is True,'bad scope '+p)
         candidates[(match[1],match[2])]=r
     seen=set()
@@ -151,8 +163,23 @@ def rotate(repo,ref,baseline,index,exact_old_overrides=None):
         if it['status']=='saved-pending-replacement':
             need(m['sourceStillActive'] is True and key not in candidates,'inconsistent pending reserve')
             continue
-        need(it['status']=='reserved-inactive-in-work-candidate' and m['format']=='complete-text-only-reading-group' and m['notActiveHere'] is True and m['sourceStillActive'] is False and m['media']==[],'unsupported reserve status or media')
+        need(it['status']=='reserved-inactive-in-work-candidate' and m['notActiveHere'] is True and m['sourceStillActive'] is False,'unsupported reserve status or media')
         r=candidates.pop(key); nums=it['numbers']; ng=r['newGroupId']
+        graphic=r['kind']==GRAPHIC_KIND
+        image_url=None
+        if graphic:
+            need(t=='test-03' and m['format']=='complete-single-svg-reading-group' and
+                 isinstance(m['media'],list) and len(m['media'])==1 and m['media'][0]==r['preservedGraphic'] and
+                 bool(r.get('retiredLegacyHistory')),'graphic lacks exact archived media or deployed history')
+            image_url,image_body=verified_graphic(repo,m['sourceCommit'],m['media'][0])
+            need(all(image_url not in set(media(p)) for p in baseline.values()) and
+                 all(image_url not in paths for paths in added_graphics.values()),
+                 'graphic addition must be absent from baseline and other rotations')
+            added_graphics[t][image_url]=m['media'][0]['sha256']
+            retained[prefix+'/media/'+image_url.rsplit('/',1)[1]]=image_body
+        else:
+            need(m['format']=='complete-text-only-reading-group' and m['media']==[] and not r.get('preservedGraphic'),
+                 'unsupported reserve status or media')
         need(nums and nums==list(range(nums[0],nums[-1]+1)) and all(type(n) is int and 147<=n<=200 for n in nums),'invalid numbered scope')
         need(r['questionNumbers']==nums and r['previousReserve']==mp and m['replacementGroupId']==ng and ng!=gid,'rotation scope drift')
         expect=[f'qa-checkpoints/verified-items/{t}/Q{n:03}.json' for n in nums]
@@ -161,7 +188,9 @@ def rotate(repo,ref,baseline,index,exact_old_overrides=None):
         qpos=[i for i,q in enumerate(pack['questions']) if q.get('groupId')==gid]
         oldg=repo.row(ref,prefix+'/group.json')
         need(len(gpos)==1 and old_equal(t+'/'+gid,pack['groups'][gpos[0]],oldg) and [pack['questions'][i]['number'] for i in qpos]==nums,'stale/incomplete old group '+gid)
-        need((oldg['id'],oldg['testId'],oldg['part'])==(gid,t,7) and not list(media(oldg)),'not text-only part 7')
+        need((oldg['id'],oldg['testId'],oldg['part'])==(gid,t,7) and
+             ((oldg.get('image')==image_url and list(media(oldg))==[image_url]) if graphic else not list(media(oldg))),
+             'retired group media or part drift')
         need(re.fullmatch(r'[a-z0-9-]+',ng) and ng not in {g['id'] for p in packs.values() for g in p['groups']},'replacement group already present')
         prior=m['sourceCommit']; source_group=None; replacements=[]
         for i,n in enumerate(nums):
@@ -173,9 +202,15 @@ def rotate(repo,ref,baseline,index,exact_old_overrides=None):
             need(src['status']=='verified-item-not-published' and src['scope']=='reading' and src['group']==oldg and old==repo.row(ref,prefix+'/'+qdir+'/question.json') and old_equal(t+f'/Q{n:03}',pack['questions'][qpos[i]],old) and not list(media(old)),'stale or incorrect old item '+path)
             need((old['number'],old['testId'],old['part'],old['groupId'],old['id'],old['revision'],old['answer'])==(n,t,7,gid,row['questionId'],row['revision'],row['answer']),'old identity mismatch')
             replacement=repo.row(ref,path); q=replacement['activeQuestion']; g=replacement['group']
+            if graphic:
+                need(not list(media(q)) and g.get('image')==image_url and list(media(g))==[image_url] and
+                     src.get('imageSha256')==replacement.get('imageSha256')==added_graphics[t][image_url],
+                     'graphic route or item-level image hash drift')
             need(bool(replacement.get('checks')) and replacement['status']=='verified-item-not-published' and replacement['scope']=='reading' and replacement['originalQuestion']==old and replacement['retiredSourceReference']==prefix+'/'+v,'replacement verification link mismatch')
             need((q['number'],q['testId'],q['part'],q['groupId'],q['revision'])==(n,t,7,ng,old['revision']+1) and q['id']==m['replacementQuestionIds'][i] and q['id']!=old['id'],'replacement numbered identity mismatch')
-            need((g['id'],g['testId'],g['part'])==(ng,t,7) and g['passage']!=oldg['passage'] and g['passageZh']!=oldg['passageZh'] and not list(media([q,g])),'invalid replacement group or media')
+            need((g['id'],g['testId'],g['part'])==(ng,t,7) and g['passage']!=oldg['passage'] and g['passageZh']!=oldg['passageZh'] and
+                 (graphic or not list(media([q,g]))) and (not graphic or g.get('passageType')==oldg.get('passageType')),
+                 'invalid replacement group or media')
             need(dig(g)==r['newGroupCanonicalSha256'] and dig(q)==r['questionCanonicalSha256'][i] and (source_group is None or source_group==g),'replacement hash/staging mismatch')
             source_group=g; replacements.append(q)
             retained[prefix+'/'+v]=encoded
@@ -196,6 +231,13 @@ def rotate(repo,ref,baseline,index,exact_old_overrides=None):
             need(past['testId']==t and [x for x in past['groups'] if x['id']==gid]==[history['priorDeployedGroup']],
                  'historical prior group mismatch')
             previous_records=past['questions']+past.get('legacyQuestions',[])
+            if graphic:
+                deployed_group=history['priorDeployedGroup']
+                deployed_scope=[q for q in past['questions'] if q.get('groupId')==gid]
+                need(not list(media(deployed_group)) and deployed_group==baseline[t]['groups'][gpos[0]] and
+                     [q['number'] for q in deployed_scope]==nums and deployed_scope==history.get('priorDeployedQuestions') and
+                     deployed_scope==[baseline[t]['questions'][i] for i in qpos],
+                     'graphic rotation historical deployed scope, passage or routes mismatch')
             resolved=history['legacyQuestions']; historic_ids={q['id'] for q in resolved}
             need(bool(resolved) and len(historic_ids)==len(resolved) and
                  all(q['testId']==t and q['number'] in nums and q['groupId']==gid and
@@ -216,7 +258,9 @@ def rotate(repo,ref,baseline,index,exact_old_overrides=None):
         for pos,q in zip(qpos,replacements):pack['questions'][pos]=q
         retained[mp]=repo.read(ref,mp)
         retained[prefix+'/group.json']=repo.read(ref,prefix+'/group.json')
-        splices.append({'testId':t,'numbers':nums,'oldGroupId':gid,'newGroupId':ng,'reservedManifest':mp,'oldIds':[v['questionId'] for v in m['questions']],'newIds':[q['id'] for q in replacements]})
+        splice={'testId':t,'numbers':nums,'oldGroupId':gid,'newGroupId':ng,'reservedManifest':mp,'oldIds':[v['questionId'] for v in m['questions']],'newIds':[q['id'] for q in replacements]}
+        if graphic: splice['addedGraphic']=r['preservedGraphic']
+        splices.append(splice)
     need(not candidates,'unmatched reconstruction')
     splice_part5(repo,ref,packs,index,standalone_candidates,old_equal,retained,splices)
     need(not overrides,'unused baseline override: '+','.join(overrides))
@@ -231,7 +275,7 @@ def rotate(repo,ref,baseline,index,exact_old_overrides=None):
         ids={q['id'] for q in qs}
         need(len(ids)==200 and not ids & (active|all_retired),f'{t}: duplicate/archived active ID')
         active|=ids
-        need(set(media(p))==set(media(baseline[t])),f'{t}: media route drift')
+        need(set(media(p))==set(media(baseline[t]))|set(added_graphics[t]),f'{t}: media route drift')
         need(p.get('legacyQuestions',[])==[q for q in baseline[t].get('legacyQuestions',[]) if q['id'] not in retired_legacy[t]] and p['listeningPlan']==baseline[t]['listeningPlan'],f'{t}: historical route or listening plan drift')
     need(not active&{qid for row in splices for qid in row['oldIds']+row.get('supersededBaselineIds',[])},'retired ID remains active')
     return packs,splices,retained
@@ -242,6 +286,14 @@ def check_site_and_ledger(repo,base,ref,site,ledger,splices):
         need(not f.is_symlink() and not f.parent.is_symlink() and f.read_bytes()==repo.read(base,rel),'site baseline pack not exact Git source: '+t)
     for splice in splices:
         t=splice['testId']
+        if 'addedGraphic' in splice:
+            item=splice['addedGraphic']
+            f=site
+            for part in item['runtimePath'].split('/'):
+                f=f/part
+                need(not f.is_symlink(),'graphic route symlink')
+            need(f.is_file() and hashlib.sha256(f.read_bytes()).hexdigest()==item['sha256'],
+                 'site graphic does not match immutable bytes')
         for n in splice['numbers']:
             q=f'Q{n:03}.json'; f=ledger/t/q
             need(not f.is_symlink() and not f.parent.is_symlink() and f.read_bytes()==repo.read(ref,f'qa-checkpoints/verified-items/{t}/{q}'),'rotation ledger not exact Git evidence: '+t+'/'+q)
@@ -267,6 +319,13 @@ def main():
         for t,q in packs.items():
             f=staged/'reconcile-input'/'data'/f'{t}.json'; f.parent.mkdir(parents=True,exist_ok=True); f.write_text(dump(q))
             f=staged/'offline-history'/'baseline'/f'{t}.json'; f.parent.mkdir(parents=True,exist_ok=True); f.write_bytes(baseline[t])
+        for splice in splices:
+            if 'addedGraphic' in splice:
+                item=splice['addedGraphic']
+                source=f"question-reserve/{splice['testId']}/{splice['oldGroupId']}/media/"+item['runtimePath'].rsplit('/',1)[1]
+                f=staged/'reconcile-input'/item['runtimePath']
+                f.parent.mkdir(parents=True,exist_ok=True)
+                f.write_bytes(retained[source])
         for path,body in retained.items():
             f=staged/'offline-history'/path; f.parent.mkdir(parents=True,exist_ok=True); f.write_bytes(body)
         (staged/'rotation-receipt.json').write_text(dump(dict(localReplayOnly=True,baseCommit=a.base_commit,reconstructionCommit=ref,exactOldOverrides=overrides,baselineRawSha256={t:hashlib.sha256(v).hexdigest() for t,v in baseline.items()},splices=splices)))
