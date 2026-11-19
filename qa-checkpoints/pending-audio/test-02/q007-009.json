@@ -1,0 +1,96 @@
+{
+  "status": "pending-audio-confirmation-not-verified",
+  "findings": "| 007 | B | Formal ASR says “torque wrench”; practice ASR says “torque range” even in three isolated time/rate variants. Both modes A–C and B’s “Next Thursday” agree, as do formal cue and answer explanation. Hold exact practice noun; script/zh-TW say torque wrench / 扭力扳手. |\n| 008 | C | Both modes prompt asks approver and give A–C in current order; cue 8. Formal ASR “Ask May, the design lead” plausibly matches Mei pronunciation. Practice ASR says “Ask me” (two rerates) or “Ask mate” (third), which leaves lexical certainty insufficient. Hold exact practice name; “設計負責人 Mei” is correct for script. |\n| 009 | C | Both modes prompt concerns where to submit request and give A–C in order; cue 9. Both modes whole and isolated 0.88/1.00/1.13 rate models say “internet,” whereas written English/turns say “intranet” and 繁中 says 內部網路. Hold BOTH modes exact term pending acoustic/human comparison; best response still portal, not time or machine noise. |",
+  "items": [
+    {
+      "number": 7,
+      "status": "pending-audio-confirmation-not-verified",
+      "sourceAudio": [
+        {
+          "path": "audio/formal/test-02-cues-01.mp3",
+          "start": 6.76867,
+          "end": 7.64404,
+          "mode": "cue",
+          "sha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+          "observed": "Number 7."
+        },
+        {
+          "path": "audio/formal-v2/test-02-03.mp3",
+          "start": 0.5,
+          "end": 16.628,
+          "mode": "passage",
+          "sha256": "2551d9a3425fbe342acecc65989ffe2432e4cc4037a9ceefdb66406672d8ad52",
+          "observed": "When is the torque wrench due for calibration? A. On the second shelf. B. Next Thursday, according to its label. C. The handle is blue."
+        },
+        {
+          "path": "audio/azure-v1/test-02-03.mp3",
+          "start": 0.5,
+          "end": 15.956,
+          "mode": "practice",
+          "sha256": "4a4f444b97d3e77ff91a68c2299681d032d35500cae67f921e2d2dadf57c68e4",
+          "observed": "When is the torque range due for calibration? A. On the second shelf. B. Next Thursday, according to its label. C. The handle is blue."
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "status": "pending-audio-confirmation-not-verified",
+      "sourceAudio": [
+        {
+          "path": "audio/formal/test-02-cues-01.mp3",
+          "start": 7.89404,
+          "end": 8.71804,
+          "mode": "cue",
+          "sha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+          "observed": "Number 8."
+        },
+        {
+          "path": "audio/formal-v2/test-02-03.mp3",
+          "start": 17.128,
+          "end": 32.656,
+          "mode": "passage",
+          "sha256": "2551d9a3425fbe342acecc65989ffe2432e4cc4037a9ceefdb66406672d8ad52",
+          "observed": "Who can approve this revised drawing? A. It was revised yesterday. B. Three printed copies. C. Ask May, the design lead."
+        },
+        {
+          "path": "audio/azure-v1/test-02-03.mp3",
+          "start": 16.456,
+          "end": 31.816,
+          "mode": "practice",
+          "sha256": "4a4f444b97d3e77ff91a68c2299681d032d35500cae67f921e2d2dadf57c68e4",
+          "observed": "Who can approve this revised drawing? A. It was revised yesterday. B. Three printed copies. C. Ask me the design lead."
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "status": "pending-audio-confirmation-not-verified",
+      "sourceAudio": [
+        {
+          "path": "audio/formal/test-02-cues-01.mp3",
+          "start": 8.96804,
+          "end": 9.794,
+          "mode": "cue",
+          "sha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+          "observed": "Number 9."
+        },
+        {
+          "path": "audio/formal-v2/test-02-03.mp3",
+          "start": 33.156,
+          "end": 49.26,
+          "mode": "passage",
+          "sha256": "2551d9a3425fbe342acecc65989ffe2432e4cc4037a9ceefdb66406672d8ad52",
+          "observed": "Where should I submit the maintenance request? A. It took about an hour. B. The new machine is quieter. C. Use the equipment portal on the internet."
+        },
+        {
+          "path": "audio/azure-v1/test-02-03.mp3",
+          "start": 32.316,
+          "end": 48.996,
+          "mode": "practice",
+          "sha256": "4a4f444b97d3e77ff91a68c2299681d032d35500cae67f921e2d2dadf57c68e4",
+          "observed": "Where should I submit the maintenance request? A. It took about an hour. B. The new machine is quieter. C. Use the equipment portal on the internet."
+        }
+      ]
+    }
+  ]
+}
