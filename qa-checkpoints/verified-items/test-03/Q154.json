@@ -1,12 +1,73 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": {
-    "key": "C",
-    "checks": "Two stores lack room to keep returned empty crates and return them through partner. No opposition, stopped delivery or crate damage. Clarify zh stem scope and rationale.",
-    "id": "t03-q154"
-  },
+  "checks": "Infer the joke from “too,” the hand setting at the market closure and the separate functioning clock. Independently blind-solved and checked against the English text, Traditional Chinese translation, rationale, distractors and sibling items.",
   "activeQuestion": {
+    "id": "t03-q154-r2",
+    "testId": "test-03",
+    "number": 154,
+    "part": 7,
+    "groupId": "t03-g062-r2",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "reading-comprehension",
+      "single",
+      "culture"
+    ],
+    "prompt": "What does the librarian mean by saying the clock gets to “knock off, too”?",
+    "promptZh": "圖書館員說「連時鐘也終於能下班」，這句玩笑是在表達什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The clock has finished its work at the market, just as the traders have.",
+        "zh": "時鐘和攤商一樣，已經結束在市場的工作。",
+        "whyZh": "指針固定在市場最後關門的時間，這座時鐘不再負責報時。下班本來是人的動作，館員把時鐘當成市場裡最後收工的一員。"
+      },
+      {
+        "id": "B",
+        "text": "The library has decided to close at the same time as the market.",
+        "zh": "圖書館決定沿用市場的關門時間。",
+        "whyZh": "六點十分記錄的是市場最後一次關門，文章沒有說這是圖書館的閉館時間。"
+      },
+      {
+        "id": "C",
+        "text": "The volunteers expect the clock to work again after the display.",
+        "zh": "志工預期展出結束後，時鐘會重新走動。",
+        "whyZh": "志工把指針固定在特定時間，館員也另外指出可用哪座鐘看時間；沒有提到展後要恢復運作。"
+      },
+      {
+        "id": "D",
+        "text": "Market traders and library staff will take a break together.",
+        "zh": "攤商和圖書館員將一起休息。",
+        "whyZh": "市場已經結束營業，也沒有提到安排休息。玩笑的主角是那座老時鐘。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "指針固定在市場最後關門的時間，這座時鐘不再負責報時。下班本來是人的動作，館員把時鐘當成市場裡最後收工的一員。",
+    "evidence": "The volunteers fixed the hands at 6:10, the time the traders closed the gate for the last time. | At last, the clock gets to knock off, too",
+    "vocabulary": [
+      {
+        "term": "knock off",
+        "zh": "下班、收工",
+        "note": "口語用法。這裡把一座不再報時的老鐘比作終於下班的人。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t03-g062-r2",
+    "testId": "test-03",
+    "part": 7,
+    "title": "A market clock finds a new home",
+    "titleZh": "市場老時鐘有了新家",
+    "topic": "daily",
+    "passage": "NORTH QUAY NEIGHBOURHOOD BULLETIN\nA MARKET CLOCK FINDS A NEW HOME\n\nWhen North Quay's old fish market closed, the clock from the wall beside the gate was saved. It goes on display at the library this Saturday. Volunteers cleaned the glass but left a scrape on the case near the number six. An old photograph in the display shows a porter pushing a trolley piled with crates past the clock. A former porter told us that the corners of the crates often brushed the clock as they went through the gate.\n\nThe volunteers fixed the hands at 6:10, the time the traders closed the gate for the last time. “At last, the clock gets to knock off, too,” the librarian joked. If you need the current time, use the working clock above the library entrance.\n\nAnyone who remembers the market is invited to record a short story with a volunteer on Saturday. You can also bring a copy of a photo for the display. The library cannot scan photos at the event and will not accept originals, even for a short loan.",
+    "passageZh": "北碼頭社區通訊\n市場老時鐘有了新家\n\n北碼頭的舊魚市場結束營業時，大家保留了大門旁牆上的時鐘。這座時鐘將於本週六在圖書館展出。志工擦乾淨了鐘面的玻璃，但保留外框靠近數字六的刮痕。展出的一張老照片中，一位搬運工推著堆滿貨箱的手推車經過時鐘。一名前搬運工告訴我們，貨箱通過大門時，箱角常擦到時鐘。\n\n志工把指針固定在六點十分，那是攤商最後一次關上市場大門的時間。圖書館員開玩笑說：「這下連時鐘也終於能下班啦。」如果你想知道現在幾點，請看圖書館入口上方那座還在走的時鐘。\n\n只要對這座市場還有印象，都可以在週六請志工錄下一小段你的故事。你也可以帶照片的副本來參展。活動現場無法掃描照片，圖書館也不收原件，即使只借一下也不行。",
+    "passageType": "single"
+  },
+  "originalQuestion": {
     "id": "t03-q154",
     "testId": "test-03",
     "number": 154,
@@ -59,15 +120,5 @@
     ],
     "revision": 1
   },
-  "group": {
-    "id": "t03-g062",
-    "testId": "test-03",
-    "part": 7,
-    "title": "Packaging pilot report",
-    "titleZh": "包裝試用報告",
-    "topic": "manufacturing",
-    "passage": "INTERNAL REPORT: RETURNABLE CRATES\nPrepared by Omar Vale, Distribution Manager — June 12\n\nDuring May, our western depot used reusable crates for deliveries to six independent grocery stores. The other depots continued using cardboard boxes. We wanted to learn whether reusable packaging could reduce damage without slowing deliveries.\n\nDamaged-item claims at the western depot fell from 18 in April to 7 in May. However, drivers spent an average of twelve additional minutes at each store collecting empty crates. Two stores lacked space to keep empties between deliveries, so they returned them through a nearby partner store.\n\nI recommend extending the trial for two months rather than ordering crates for every depot now. We should test a separate weekly collection route and measure whether its cost offsets the savings from fewer damaged products. The crates themselves remained in good condition; replacing them is not currently necessary. Store managers were generally supportive but asked for a clearer collection schedule.",
-    "passageZh": "內部報告：可歸還再用的貨箱\n配送經理 Omar Vale，六月十二日\n\n五月，西區配送站對六家獨立雜貨店改用可重複使用貨箱；其他站仍用紙箱。目的是了解能否減少損壞，又不拖慢配送。\n\n西區的商品損壞索賠從四月十八件降為五月七件。但司機在每家店收回空箱平均多花十二分鐘。兩家店沒有空間暫存空箱，因此透過附近合作店歸還。\n\n我建議試用再延長兩個月，而非立即為所有站點訂貨箱。我們應測試獨立的每週回收路線，衡量成本是否抵消減少損壞帶來的節省。貨箱本身狀況良好，目前不需更換。店長們大致支持，但希望回收時間表更清楚。",
-    "passageType": "single"
-  }
+  "retiredSourceReference": "question-reserve/test-03/t03-g062/questions/Q154/verification.json"
 }

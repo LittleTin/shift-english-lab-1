@@ -1,0 +1,150 @@
+{
+  "status": "historical-only-never-active-not-for-deploy",
+  "testId": "test-02",
+  "sourceGroupId": "t02-r-p7-06",
+  "sourceActiveScope": [
+    162,
+    163,
+    164
+  ],
+  "priorDeployedCommit": "043b91761f63062708d70f7cda3a6b2046cd4cf9",
+  "priorDeployedPack": "data/test-02.json",
+  "priorDeployedPackSha256": "dd9b42242b14c96999e2e6621f1b15850a7156dbc4271cd1b4ecff31ed83e090",
+  "priorDeployedGroup": {
+    "id": "t02-r-p7-06",
+    "testId": "test-02",
+    "part": 7,
+    "title": "Warehouse stock count",
+    "titleZh": "倉庫盤點通知",
+    "topic": "manufacturing",
+    "passage": "Quarterly stock count — Warehouse B\n\nThe count will take place on Friday from 1 to 5 p.m. During this period, routine material issues and receipts will pause. Production teams should collect materials for the afternoon by noon.\n\nUrgent requests may be authorized by the warehouse manager. If a transaction is approved during the count, record it on the temporary movement sheet and give a copy to the counting team. Do not rely on a verbal message alone.\n\nCounting pairs will compare physical quantities with the stock list. Differences should be recorded and checked a second time before any inventory adjustment is made. Damaged stock must be counted separately rather than omitted.",
+    "passageZh": "季度盤點——B 倉庫\n\n盤點將於星期五下午一點至五點進行，期間暫停一般物料領用與收貨。生產團隊應在中午前領取下午需要的材料。\n\n緊急需求可由倉庫經理核准。若盤點期間核准一筆出入庫，須記錄於臨時異動表，並交一份副本給盤點團隊，不能只靠口頭傳達。\n\n兩人一組的盤點人員將比對實際數量與庫存清單。差異應先記錄並二次查核，再調整庫存紀錄。受損庫存必須另行計數，不能漏列。"
+  },
+  "legacyQuestions": [
+    {
+      "id": "t02-q162",
+      "testId": "test-02",
+      "number": 162,
+      "part": 7,
+      "groupId": "t02-r-p7-06",
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "manufacturing",
+        "reading-comprehension"
+      ],
+      "prompt": "What should production teams do before noon?",
+      "promptZh": "生產團隊應在中午前做什麼？",
+      "options": [
+        {
+          "text": "Complete every inventory adjustment",
+          "zh": "完成所有庫存調整",
+          "whyZh": "調整要在盤點、複核差異之後，非中午前。",
+          "id": "A"
+        },
+        {
+          "text": "Discard damaged materials",
+          "zh": "丟棄受損材料",
+          "whyZh": "受損材料應另計，不是丟棄。",
+          "id": "B"
+        },
+        {
+          "text": "Close Warehouse B permanently",
+          "zh": "永久關閉 B 倉庫",
+          "whyZh": "只是下午的季度盤點，沒有永久關倉。",
+          "id": "C"
+        },
+        {
+          "text": "Collect materials needed for the afternoon",
+          "zh": "領取下午需要的材料",
+          "whyZh": "一般出入庫午後暫停，所以通知要求提前領料。",
+          "id": "D"
+        }
+      ],
+      "answer": "D",
+      "explanationZh": "一般出入庫午後暫停，所以通知要求提前領料。",
+      "evidence": "Production teams should collect materials for the afternoon by noon.",
+      "vocabulary": [
+        {
+          "term": "inventory adjustment",
+          "zh": "庫存調整",
+          "note": "查明差異後修正系統中的庫存紀錄。"
+        },
+        {
+          "term": "material issue",
+          "zh": "物料領用",
+          "note": "將庫存材料發給使用部門。"
+        }
+      ],
+      "revision": 1
+    },
+    {
+      "id": "t02-q164",
+      "testId": "test-02",
+      "number": 164,
+      "part": 7,
+      "groupId": "t02-r-p7-06",
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "manufacturing",
+        "reading-comprehension"
+      ],
+      "prompt": "How should damaged stock be treated?",
+      "promptZh": "受損庫存應如何處理？",
+      "options": [
+        {
+          "text": "Send it to production without inspection",
+          "zh": "不檢查就送去生產",
+          "whyZh": "通知沒有此安排，且受損品不能被當一般領料處理。",
+          "id": "A"
+        },
+        {
+          "text": "Count it separately",
+          "zh": "分開計數",
+          "whyZh": "公告最後一句明確指定另行計數。",
+          "id": "B"
+        },
+        {
+          "text": "Exclude it from all counts",
+          "zh": "全部不列入盤點",
+          "whyZh": "通知明說不可省略。",
+          "id": "C"
+        },
+        {
+          "text": "Automatically adjust its quantity to zero",
+          "zh": "自動把數量改成零",
+          "whyZh": "任何調整前都要先查核差異，未授權直接歸零。",
+          "id": "D"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "公告最後一句明確指定另行計數。",
+      "evidence": "Damaged stock must be counted separately rather than omitted.",
+      "vocabulary": [
+        {
+          "term": "inventory adjustment",
+          "zh": "庫存調整",
+          "note": "查明差異後修正系統中的庫存紀錄。"
+        },
+        {
+          "term": "material issue",
+          "zh": "物料領用",
+          "note": "將庫存材料發給使用部門。"
+        }
+      ],
+      "revision": 1
+    }
+  ],
+  "retiredWorkGroup": {
+    "id": "t02-r-p7-06",
+    "testId": "test-02",
+    "part": 7,
+    "title": "Warehouse stock count",
+    "titleZh": "倉庫盤點通知",
+    "topic": "manufacturing",
+    "passage": "Quarterly stock count — Warehouse B\n\nThe count will take place on Friday from 1 to 5 p.m. During this period, routine material issues and receipts will pause. Production teams should collect materials for the afternoon by noon.\n\nUrgent requests may be authorized by the warehouse manager. If a transaction is approved during the count, record it on the temporary movement sheet and give a copy to the counting team. Do not rely on a verbal message alone.\n\nCounting pairs will compare physical quantities with the stock list. Differences should be recorded and checked a second time before any inventory adjustment is made. Damaged stock must be counted separately rather than omitted.",
+    "passageZh": "季度盤點——B 倉庫\n\n盤點將於星期五下午一點至五點進行，期間暫停一般物料領用與收貨。生產團隊最遲應在中午領取下午需要的材料。\n\n緊急需求可由倉庫經理核准。若盤點期間核准一筆出入庫，須記錄於臨時異動表，並交一份副本給盤點團隊，不能只靠口頭傳達。\n\n兩人一組的盤點人員將比對實際數量與庫存清單。差異應先記錄並二次查核，再調整庫存紀錄。受損庫存必須另行計數，不能漏列。"
+  },
+  "noHistoricalRegrade": true
+}

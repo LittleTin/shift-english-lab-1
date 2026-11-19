@@ -1,8 +1,75 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "Version 4.2 is approved for hardware revisions B and C only. Earlier hardware is excluded, and A must remain on 3.8; the stated range behavior does not grant eligibility.",
+  "checks": "Distinguish simultaneous reference readings from local noon and apply the reference-time control. Independently blind-solved and checked against the English text, Traditional Chinese translation, rationale, distractors and sibling items.",
   "activeQuestion": {
+    "id": "t01-q150-r2",
+    "testId": "test-01",
+    "number": 150,
+    "part": 7,
+    "groupId": "t01-r-p7-02-r2",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "reading-comprehension"
+    ],
+    "prompt": "A visitor wants to capture a useful comparison before resetting the activity. Which action should the visitor take?",
+    "promptZh": "參觀者想先取得有助於比較的讀數，再重設裝置。應該怎麼做？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Press the silver button and write down the two displayed readings.",
+        "zh": "按銀色按鈕，再記下兩個顯示器的讀數。",
+        "whyZh": "銀色按鈕會把參考時間改成船上的當地時間，因而失去比較依據。"
+      },
+      {
+        "id": "B",
+        "text": "Press the blue button while one display shows the reference time and the other shows the ship’s local time.",
+        "zh": "在一個顯示器顯示參考時間、另一個顯示船上當地時間時，按藍色按鈕。",
+        "whyZh": "藍色按鈕會在尚未重設時，同時記錄兩個所需的讀數。"
+      },
+      {
+        "id": "C",
+        "text": "Copy the ship’s local reading now and the reference reading a few minutes later.",
+        "zh": "先抄下船上的當地時間，幾分鐘後再抄下參考時間。",
+        "whyZh": "兩個時間必須是同一時刻的讀數，不能隔幾分鐘才記錄另一個。"
+      },
+      {
+        "id": "D",
+        "text": "Press the blue button only after the silver button has made the two times the same.",
+        "zh": "先按銀色按鈕讓兩個時間一致，再按藍色按鈕。",
+        "whyZh": "同時記錄還不夠，必須有一個顯示器仍顯示參考時間，兩個讀數才可比較。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "必須同時記錄參考地點與船所在位置的時間。藍色按鈕能一次記下這兩個讀數；銀色按鈕則會把參考地點的時間改掉。",
+    "evidence": "Paragraph 1: compare different reference places at same moment + blue logs both, silver overwrites the reference output.",
+    "vocabulary": [
+      {
+        "term": "reading",
+        "zh": "讀數",
+        "note": "儀器在某一時刻顯示的值。"
+      },
+      {
+        "term": "reference place",
+        "zh": "參考地點",
+        "note": "位置已知、在比較時作為基準的地點。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t01-r-p7-02-r2",
+    "testId": "test-01",
+    "part": 7,
+    "topic": "technology",
+    "title": "A clock that kept another place’s time",
+    "titleZh": "一只保留另一個地方時間的鐘",
+    "passage": "A clock that kept another place’s time\nFrom the teaching blog of the fictional Alder Maritime Museum\n\nA clock on a ship could be useful precisely because it did not show the ship’s local time. By comparing the local time aboard ship with the time at a place whose longitude was known, navigators could work out their east–west position. Both readings had to describe the same moment. At our learning station, one display represents the reference place. A second display shows the ship’s local time. Pressing the blue button records both readings at once; the silver button instead makes both displays show the ship’s local time. The silver button is for resetting the demonstration after an activity.\n\nOur inspiration is John Harrison’s marine timekeeper H4, which he completed in 1759. Its appearance is closer to a large pocket watch than to the earlier, much larger H3. The watch-shaped object visitors may lift and turn over here is a nonworking copy used to show the size and shape of H4. The enclosed working model beside it is not a copy of H4’s shape or mechanism; it is a teaching device that drives the two displays. Neither object is the original H4.\n\nH4 performed well during its sea trials. That did not immediately establish that other makers could build similarly accurate instruments. The Board of Longitude considered those two questions separately in deciding how Harrison should be rewarded. A section of our exhibit is called “One Good Watch Isn’t a Fleet.” Visitors there draw two activity cards: one follows a watch on a voyage; the other follows a second maker at a workbench. The guide asks what kind of evidence each card could provide.",
+    "passageZh": "一只保留另一個地方時間的鐘\n本文來自虛構的奧爾德海事博物館教學部落格\n\n船上的鐘之所以有用，有時正因為它顯示的不是船所在位置的當地時間。航海人員把船上的當地時間和一個已知經度地點的時間相比，就能算出自己在東西方向的位置。兩個讀數必須是同一時刻的時間。館內學習區的一個顯示器代表參考地點，另一個顯示器則顯示船上的當地時間。按下藍色按鈕可同時記錄兩個讀數；按銀色按鈕則會讓兩個顯示器都顯示船上的當地時間。銀色按鈕用於活動結束後重設示範裝置。\n\n本展的靈感來自約翰・哈里森於 1759 年完成的 H4 航海時計。和早期大上許多的 H3 相比，H4 的外型更接近一只大型懷錶。這裡讓參觀者可以拿起來翻看的懷錶造型展品，是用來呈現 H4 尺寸與外型的非運作複製品。旁邊罩在展示箱內的運作模型，並未仿造 H4 的外型或機構；它是帶動兩個顯示器的教學裝置。這兩件都不是 H4 原件。\n\nH4 在海上測試中表現良好，但這並沒有立刻證明其他製作者也能造出同等準確的儀器。經度委員會在評估應如何獎勵哈里森時，將這兩件事分開考量。本展有一區叫作「一只好錶，還不是一支船隊」。參觀者會抽兩張活動卡：一張跟著一只錶出海，另一張跟著第二位製作者在工作臺前動手。導覽員會請大家想想兩張卡各可提供什麼樣的證據。"
+  },
+  "originalQuestion": {
     "id": "t01-q150",
     "testId": "test-01",
     "number": 150,
@@ -59,14 +126,25 @@
     ],
     "revision": 1
   },
-  "group": {
-    "id": "t01-r-p7-02",
-    "testId": "test-01",
-    "part": 7,
-    "title": "Gateway firmware notice",
-    "titleZh": "閘道器韌體通知",
-    "topic": "technology",
-    "passage": "Release note: Gateway firmware 4.2\n\nVersion 4.2 improves recovery after a brief loss of network connection. It does not change the device’s wireless range. The update is approved for hardware revisions B and C only. Revision A units must remain on version 3.8.\n\nBefore installation, export the current configuration. The update preserves normal settings, but the exported file is required if a rollback becomes necessary. The gateway will restart twice; keep power connected until the green status light remains on. Installation normally takes six minutes. If it exceeds fifteen minutes, contact technical support instead of repeatedly disconnecting power.",
-    "passageZh": "發行說明：閘道器韌體 4.2\n\n4.2 版改善網路短暫斷線後的恢復能力，不改變設備的無線涵蓋範圍。此更新僅核准用於 B、C 硬體版本；A 版設備必須維持 3.8 版韌體。\n\n安裝前請匯出目前設定。更新會保留一般設定，但若必須回復舊版，就需要匯出的檔案。閘道器會重新啟動兩次；請保持供電，直到綠色狀態燈持續亮起。安裝通常需要六分鐘。如果超過十五分鐘，請聯絡技術支援，不要反覆切斷電源。"
+  "retiredSourceReference": "question-reserve/test-01/t01-r-p7-02/questions/Q150/verification.json",
+  "enrichmentProvenance": {
+    "fictionBoundary": "Alder Maritime Museum, its physical objects, station, buttons, interpretation heading and policy are invented. No assertion about any present H4 display location is made; all answers derivable from the article. Independently authored, no quoted wording from Royal Museums Greenwich.",
+    "references": [
+      {
+        "source": "Royal Museums Greenwich collection, H4 (ZAA0037)",
+        "url": "https://www.rmg.co.uk/collections/objects/rmgc-object-79142",
+        "supports": "Harrison completed H4 in 1759; H3 was much larger; H4 marine timekeeper."
+      },
+      {
+        "source": "Royal Museums Greenwich, Longitude found",
+        "url": "https://www.rmg.co.uk/stories/time/harrisons-clocks-longitude-problem",
+        "supports": "H4 resembles a large pocket watch, passed demanding sea-trial limits, and the Board distinguished trial success from reproduction by other makers."
+      },
+      {
+        "source": "Royal Museums Greenwich, What is longitude?",
+        "url": "https://www.rmg.co.uk/stories/time/what-longitude",
+        "supports": "East–west longitude can be determined by comparing local and known-reference times for the same moment."
+      }
+    ]
   }
 }

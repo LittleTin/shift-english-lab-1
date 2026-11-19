@@ -1,8 +1,75 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "D: Direct instruction, due by noon. Stock adjustment follows second count; damaged material counted separately, not discarded. Physical count starts at 1 p.m. Fix A/C rationale phrasing. English and zh-TW sources/choices checked; second reviewer solved before viewing keys.",
+  "checks": "Infer from the disguised label and staff practice why BOAT PINS signals one thing to insiders and another to customers. Independently blind-solved and checked against the English text, Traditional Chinese translation, rationale, distractors and sibling items.",
   "activeQuestion": {
+    "id": "t02-q162-r3",
+    "testId": "test-02",
+    "number": 162,
+    "part": 7,
+    "groupId": "t02-r-p7-06-r2",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "reading-comprehension"
+    ],
+    "prompt": "What did the words “BOAT PINS” help the ferry staff do?",
+    "promptZh": "「BOAT PINS」這幾個字對渡輪員工有什麼作用？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Distinguish damaged ferry parts from new ones.",
+        "zh": "區分受損和全新的渡輪零件。",
+        "whyZh": "零件是博物館初稿按字面做的解讀，文中沒有員工用它區分新舊或受損零件的說法。"
+      },
+      {
+        "id": "B",
+        "text": "Keep an evening snack from being eaten too early.",
+        "zh": "避免晚班的點心太早被吃光。",
+        "whyZh": "艾達說，如果直接寫「餅乾」，晚班同事到前就會被吃光；用看似零件的名字，是讓別人不容易發現點心。"
+      },
+      {
+        "id": "C",
+        "text": "Tell the evening crew which tin they were expected to repair.",
+        "zh": "告訴晚班員工該修理哪個鐵盒。",
+        "whyZh": "晚班同事和餅乾被吃光的時間有關，沒有修理鐵盒的任務。"
+      },
+      {
+        "id": "D",
+        "text": "Warn workers not to share food inside the office.",
+        "zh": "警告員工不得在辦公室內分享食物。",
+        "whyZh": "名稱是掩飾內容物，不是禁止分享；另一段回憶也提到晚班員工確實會分享食物。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "艾達說，如果把餅乾寫在盒上，點心在晚班同事抵達前就會被吃光。「BOAT PINS」看起來像零件標示，因此能降低別人提早發現餅乾的機會。",
+    "evidence": "Opening paragraph: an apparently technical marking, contrasted with Ada’s explanation of what an overt biscuit label would have caused.",
+    "vocabulary": [
+      {
+        "term": "spare parts",
+        "zh": "備用零件",
+        "note": "需要更換時使用的零件。"
+      },
+      {
+        "term": "evening crew",
+        "zh": "晚班人員",
+        "note": "晚班時段負責工作的員工。"
+      }
+    ],
+    "revision": 3
+  },
+  "group": {
+    "id": "t02-r-p7-06-r2",
+    "testId": "test-02",
+    "part": 7,
+    "title": "What the Tin Was Called",
+    "titleZh": "鐵盒上的名字",
+    "topic": "daily",
+    "passage": "From a fictional neighborhood museum’s exhibition blog\n\nWhen the Hollybank Neighborhood Museum found a tin labeled “BOAT PINS” among items donated from the old ferry office, the first draft of its exhibition label described it as a container for spare parts. Former ferry clerk Ada Moore laughed when she read the draft. “We wrote ‘boat pins’ because anything marked ‘biscuits’ would have been gone before the evening crew arrived,” she said. The museum had an undated recording in which another worker mentioned sharing food on evening shifts, but the worker never identified the container.\n\nBefore opening, the curator set two rules. The exact wording on a donated object would appear as part of its display, even if visitors might mistake it for a literal description. And a firsthand recollection could appear beside an object, but it could be presented as the museum’s own finding only if a second independent source identified that same object and supported the specific claim being made.\n\nAt a preview, a teacher suggested replacing “BOAT PINS” on the display with “BISCUITS” so children would understand the story. The curator replied, “We can make the label clearer without giving it the last word.” She pointed to a space reserved for visitor notes: one family had already offered to bring in a photograph of the ferry staff break room.",
+    "passageZh": "以下是虛構的社區博物館展覽部落格文章。\n\n霍利班克社區博物館在舊渡輪辦公室捐出的物品中找到一個寫著「BOAT PINS」（船用銷釘）的鐵盒。展覽說明牌的初稿將它描述為存放備用零件的容器。曾任渡輪站務員的艾達・摩爾讀了初稿，忍不住笑了。她說：「我們在盒上寫『船用銷釘』，因為只要寫上『餅乾』，還沒等晚班同事來上班，裡頭的東西就會被吃光。」博物館有一段未註明日期的錄音，另一名員工在錄音中提到大家會在晚班時分享食物，但未指認那個容器。\n\n展覽開幕前，策展人訂了兩項規則。捐贈文物上的原文要在展出時呈現，即使參觀者可能按字面誤解也一樣。親歷者的回憶可以放在文物旁，但只有在第二個獨立來源能辨認出同一件文物，且能支持該項說法時，博物館才能把這項說法列為館方的研究結論。\n\n在預展上，有位老師建議把展示中的「BOAT PINS」換成「BISCUITS」（餅乾），讓孩子更容易了解這段故事。策展人回答：「我們可以把說明寫清楚，但不必把它當作最後定論。」她指向留給訪客補充資料的地方：已經有一家人表示願意帶來一張渡輪員工休息室的照片。"
+  },
+  "originalQuestion": {
     "id": "t02-q162-r2",
     "testId": "test-02",
     "number": 162,
@@ -59,71 +126,6 @@
     ],
     "revision": 2
   },
-  "group": {
-    "id": "t02-r-p7-06",
-    "testId": "test-02",
-    "part": 7,
-    "title": "Warehouse stock count",
-    "titleZh": "倉庫盤點通知",
-    "topic": "manufacturing",
-    "passage": "Quarterly stock count — Warehouse B\n\nThe count will take place on Friday from 1 to 5 p.m. During this period, routine material issues and receipts will pause. Production teams should collect materials for the afternoon by noon.\n\nUrgent requests may be authorized by the warehouse manager. If a transaction is approved during the count, record it on the temporary movement sheet and give a copy to the counting team. Do not rely on a verbal message alone.\n\nCounting pairs will compare physical quantities with the stock list. Differences should be recorded and checked a second time before any inventory adjustment is made. Damaged stock must be counted separately rather than omitted.",
-    "passageZh": "季度盤點——B 倉庫\n\n盤點將於星期五下午一點至五點進行，期間暫停一般物料領用與收貨。生產團隊最遲應在中午領取下午需要的材料。\n\n緊急需求可由倉庫經理核准。若盤點期間核准一筆出入庫，須記錄於臨時異動表，並交一份副本給盤點團隊，不能只靠口頭傳達。\n\n兩人一組的盤點人員將比對實際數量與庫存清單。差異應先記錄並二次查核，再調整庫存紀錄。受損庫存必須另行計數，不能漏列。"
-  },
-  "originalQuestion": {
-    "id": "t02-q162",
-    "testId": "test-02",
-    "number": 162,
-    "part": 7,
-    "groupId": "t02-r-p7-06",
-    "topic": "manufacturing",
-    "difficulty": "intermediate",
-    "tags": [
-      "manufacturing",
-      "reading-comprehension"
-    ],
-    "prompt": "What should production teams do before noon?",
-    "promptZh": "生產團隊應在中午前做什麼？",
-    "options": [
-      {
-        "text": "Complete every inventory adjustment",
-        "zh": "完成所有庫存調整",
-        "whyZh": "調整要在盤點、複核差異之後，非中午前。",
-        "id": "A"
-      },
-      {
-        "text": "Discard damaged materials",
-        "zh": "丟棄受損材料",
-        "whyZh": "受損材料應另計，不是丟棄。",
-        "id": "B"
-      },
-      {
-        "text": "Close Warehouse B permanently",
-        "zh": "永久關閉 B 倉庫",
-        "whyZh": "只是下午的季度盤點，沒有永久關倉。",
-        "id": "C"
-      },
-      {
-        "text": "Collect materials needed for the afternoon",
-        "zh": "領取下午需要的材料",
-        "whyZh": "一般出入庫午後暫停，所以通知要求提前領料。",
-        "id": "D"
-      }
-    ],
-    "answer": "D",
-    "explanationZh": "一般出入庫午後暫停，所以通知要求提前領料。",
-    "evidence": "Production teams should collect materials for the afternoon by noon.",
-    "vocabulary": [
-      {
-        "term": "inventory adjustment",
-        "zh": "庫存調整",
-        "note": "查明差異後修正系統中的庫存紀錄。"
-      },
-      {
-        "term": "material issue",
-        "zh": "物料領用",
-        "note": "將庫存材料發給使用部門。"
-      }
-    ],
-    "revision": 1
-  }
+  "retiredSourceReference": "question-reserve/test-02/t02-r-p7-06/questions/Q162/verification.json",
+  "priorDeployedHistoryReference": "qa-checkpoints/reconstructions/history/test-02/t02-r-p7-06.json"
 }

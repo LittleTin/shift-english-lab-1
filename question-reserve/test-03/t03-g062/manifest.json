@@ -1,5 +1,5 @@
 {
-  "status": "saved-pending-replacement",
+  "status": "reserved-inactive-in-work-candidate",
   "sourceTest": "test-03",
   "sourceCommit": "a3370773e33d4dfa03c4f273abd2b2cd193338fc",
   "sourceGroupId": "t03-g062",
@@ -12,7 +12,7 @@
   "intendedFor": "test-04-or-later-after-release",
   "media": [],
   "notActiveHere": true,
-  "sourceStillActive": true,
+  "sourceStillActive": false,
   "questions": [
     {
       "number": 153,
@@ -47,5 +47,11 @@
       "sourceEvidenceGitBlob": "049688e0f7cd32e016e685dd77e5d8674fc4fa45",
       "sourceEvidenceSha256": "72d402142221f9d876a0e567cec0223c26e8d681b1760454a28ce7de76ce9e91"
     }
+  ],
+  "replacementGroupId": "t03-g062-r2",
+  "replacementQuestionIds": [
+    "t03-q153-r2",
+    "t03-q154-r2",
+    "t03-q155-r2"
   ]
 }
