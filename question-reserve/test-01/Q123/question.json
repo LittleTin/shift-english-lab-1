@@ -1,0 +1,52 @@
+{
+  "id": "t01-q123",
+  "testId": "test-01",
+  "number": 123,
+  "part": 5,
+  "groupId": null,
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "grammar"
+  ],
+  "prompt": "Ms. Chen has worked in supplier quality ____ 2019.",
+  "promptZh": "陳女士____ 2019 年便一直從事供應商品質管理工作。",
+  "options": [
+    {
+      "text": "for",
+      "zh": "長達",
+      "whyZh": "for 後接一段時間，例如 for seven years，不直接用此處的年份作期間。",
+      "id": "A"
+    },
+    {
+      "text": "until",
+      "zh": "直到",
+      "whyZh": "until 2019 指結束點，與 has worked 所表達的持續起點不符。",
+      "id": "B"
+    },
+    {
+      "text": "during",
+      "zh": "在……期間",
+      "whyZh": "during 2019 只指那一年期間，無法表達持續至今的起點。",
+      "id": "C"
+    },
+    {
+      "text": "since",
+      "zh": "自從",
+      "whyZh": "2019 是起始時間點，完成式搭配 since 表示持續至今。",
+      "id": "D"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "2019 是起始時間點，完成式搭配 since 表示持續至今。",
+  "evidence": "has worked ... since 2019",
+  "vocabulary": [
+    {
+      "term": "supplier quality",
+      "zh": "供應商品質",
+      "note": "對供應材料或供應商製程品質的管理。"
+    }
+  ],
+  "revision": 1
+}

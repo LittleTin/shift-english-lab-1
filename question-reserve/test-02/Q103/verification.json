@@ -1,0 +1,57 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "Within marks an elapsed five-business-day limit from returned-item receipt; onto/beside spatial, among does not mark an elapsed deadline. zh 營業工作天 timing and all rationales correctly mapped.",
+  "activeQuestion": {
+    "id": "t02-q103",
+    "testId": "test-02",
+    "number": 103,
+    "part": 5,
+    "groupId": null,
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "grammar"
+    ],
+    "prompt": "Refunds are normally processed ____ five business days after the returned item is received.",
+    "promptZh": "退貨商品收到後，退款通常會在五個工作天____完成。",
+    "options": [
+      {
+        "text": "onto",
+        "zh": "到……上面",
+        "whyZh": "onto 表示移動至表面，不適合時間期限。",
+        "id": "A"
+      },
+      {
+        "text": "beside",
+        "zh": "在……旁邊",
+        "whyZh": "beside 表示空間位置，不能表達處理期限。",
+        "id": "B"
+      },
+      {
+        "text": "within",
+        "zh": "之內",
+        "whyZh": "within five business days 表示不超過五個工作天。",
+        "id": "C"
+      },
+      {
+        "text": "among",
+        "zh": "在……之間",
+        "whyZh": "among 用於多個對象，不用於時間長度的期限。",
+        "id": "D"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "within five business days 表示不超過五個工作天。",
+    "evidence": "processed within five business days",
+    "vocabulary": [
+      {
+        "term": "business day",
+        "zh": "工作天",
+        "note": "此商店正常辦理業務的工作日。"
+      }
+    ],
+    "revision": 1
+  }
+}
