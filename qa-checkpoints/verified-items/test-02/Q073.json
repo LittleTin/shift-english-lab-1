@@ -1,0 +1,198 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Independent whole group blind review C/B/D, all candidate advanced. English/Traditional Chinese counterparts align. Q073 new wording retains open/yesterday’s stock, unresolved signatures, and fresh alternative, with D and all options unchanged.",
+    "audio": "Unprompted Whisper small, independent Vosk small/lgraph and source mapping corroborate mandatory training/sign-off, alternative labeling pending attendance, paper trail through initialed original and no copied signatures, and Quality-signed hold rule. Full small hears “such stock”, but both full unprompted Vosk graphs and exact normal-speed 29.450–32.250 s focused Whisper base transcribe “Fresh stock is cleared for assembly.” “Open/opened” does not change the specified previously opened stock. New standard-US Q073 only. Independent unprompted Vosk larger graph exactly recovers “the tags still need signatures” and fresh-stock/crew prompt. Unprompted Whisper small transcribes “the tag still needs signatures”; singular/plural morphology differs but both support the same pending-signatures meaning. Open/opened neutral; no contrary approved status. The failed previous unsigned stem is not present.",
+    "retainedIntro": "Old exact generic cue independently matched unprompted Whisper base and Vosk lgraph; preserved direction binding.",
+    "association": "Source-bound shared WAV, exact cue-bank window and exact new numbered stem fully hash/time matched. Local Part4-only ordinary retiming preserves all chart timing incl. Q085 and total 2700 seconds and 100 response slots; no human, browser or published acceptance.",
+    "offlineSpeechEvidenceSha256": {
+      "fullSharedWhisperSmall": "7b4c061694f0756123d9d7df8baf1f4ed196605df129a515f304f400b7248524",
+      "fullSharedVoskSmall": "136885bc8c7019894bcdee222700874dbc3fb7d5411aa27e0fd3074d2f7947a6",
+      "fullSharedVoskLgraph": "96d1f1a427b04aa15039dd9682875421ecb8451d2bb905ba66216dee9d7ef18c",
+      "focusedFreshStockWhisperBase": "953bc00a2b33dd0fd20471354f5260d9895a1314e385eabd45ed5d6d2f4ebf9d",
+      "newQ073WhisperSmall": "c73af7b7047966a648b19fc8ba1bfc36c2e430e0c5abaf65c9d5de24124b25db",
+      "newQ073VoskLgraph": "2c422f11353eaf1beae99a1b3815ff011b13153c58cb53fb6c82d9204722695f",
+      "oldCueWhisperBase": "eebc6c07463becc69adb01318f3d88aedb5cfed3dfc3b9c385ae030eb3a87805"
+    }
+  },
+  "activeQuestion": {
+    "number": 73,
+    "id": "t02-q073-r2",
+    "groupId": "t02-g045-r2",
+    "revision": 2,
+    "testId": "test-02",
+    "part": 4,
+    "topic": "manufacturing",
+    "difficulty": "advanced",
+    "prompt": "One model has only yesterday's opened trays. The tags still need signatures. Another has fresh stock. What should the crew make?",
+    "promptZh": "一個型號只剩昨天已拆封的料盤，標籤仍待簽核。另一個型號有新補的庫存。此時產線應組裝什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Continue the first model because the shortage has been resolved.",
+        "zh": "繼續做第一種型號，因為缺料已解決。",
+        "whyZh": "整體缺料解除不等於拆封料盤已獲核准；標籤還沒簽核，不能把這批料拿來組裝。"
+      },
+      {
+        "id": "B",
+        "text": "Continue the first model after a line leader initials the tray tags.",
+        "zh": "請線長在料盤標籤縮寫簽名後，繼續做第一種型號。",
+        "whyZh": "線長處理的是訓練表歸檔。料盤是否能使用要由品管簽核。"
+      },
+      {
+        "id": "C",
+        "text": "Stop producing both models until the opened trays are cleared.",
+        "zh": "兩種型號都停做，直到拆封料盤獲准。",
+        "whyZh": "料盤待確認不妨礙用新料組裝另一型號；無須兩種都停。"
+      },
+      {
+        "id": "D",
+        "text": "Build the other model with fresh stock and keep the opened trays on hold.",
+        "zh": "先用新料做另一型號，拆封料盤繼續放在待確認架。",
+        "whyZh": "昨天已拆封的料盤須等品管簽核。另一型號有可用新料，可以先改做該型號。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "昨天已拆封的料盤須等品管簽核。另一型號有可用新料，可以先改做該型號。",
+    "evidence": "Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only.",
+    "vocabulary": [
+      {
+        "term": "fresh stock",
+        "zh": "新補到的庫存",
+        "note": "此處指可直接投入組裝的新補料，而不是仍待確認的拆封料盤。"
+      },
+      {
+        "term": "on hold",
+        "zh": "暫停使用；待確認",
+        "note": "未獲品管放行前不能投入組裝。"
+      }
+    ],
+    "difficultyWhy": "Separate resolved inventory shortage from batch-specific Quality clearance, then choose the allowed alternate-model production despite unavailable stock for the first model.",
+    "tags": [
+      "manufacturing",
+      "training",
+      "inference"
+    ]
+  },
+  "originalQuestion": {
+    "id": "t02-q073",
+    "testId": "test-02",
+    "number": 73,
+    "part": 4,
+    "groupId": "t02-g045",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "work instruction"
+    ],
+    "prompt": "What must employees do before assembly?",
+    "promptZh": "員工組裝前必須做什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Wait for missing components to arrive tomorrow.",
+        "zh": "等缺料明天到貨。",
+        "whyZh": "缺料已解決，零件現在都有了。"
+      },
+      {
+        "id": "B",
+        "text": "Attend training and sign the record.",
+        "zh": "參加訓練並簽紀錄。",
+        "whyZh": "講者把完成這兩項列為開始組裝的前提。"
+      },
+      {
+        "id": "C",
+        "text": "Make copies of the old instructions.",
+        "zh": "影印舊版指導書。",
+        "whyZh": "舊版要交回，不是複印使用。"
+      },
+      {
+        "id": "D",
+        "text": "Change every product label.",
+        "zh": "更換每個產品標籤。",
+        "whyZh": "沒有標籤更換要求。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "講者把完成這兩項列為開始組裝的前提。",
+    "evidence": "attended the session and signed the training record",
+    "vocabulary": [
+      {
+        "term": "work instruction",
+        "zh": "作業指導書",
+        "note": "說明指定工作步驟與要求的文件。"
+      },
+      {
+        "term": "revision",
+        "zh": "版本；修訂版",
+        "note": "文件內容更新後用來區分版本的標示。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g045-r2",
+    "testId": "test-02",
+    "part": 4,
+    "title": "Assembly shift revision briefing",
+    "titleZh": "作業改版班前說明",
+    "topic": "manufacturing",
+    "passage": "Revision C changes the connector step. To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session. Keep a clear paper trail. On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page. Yesterday’s shortage is over. Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only.",
+    "passageZh": "C 版變更了連接器的安裝步驟。要開始組裝，必須先參加早上的說明會，再簽署紀錄。若錯過說明會，就先替已封箱的產品貼標，等下一場。要保留清楚、可追查的書面紀錄。訓練表上若寫錯，只用一條線劃掉錯誤，並在更正處簽上姓名縮寫；線長會把同一張表歸檔。不要把簽名抄到新表上。昨天的缺料已經解決，新補到的庫存已獲放行，可以用於組裝。昨天已拆封的料盤要留在待確認架上，等品管在標籤上簽核。產線要保持運作，但只能使用已獲放行的庫存。",
+    "audioScript": "Revision C changes the connector step. To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session. Keep a clear paper trail. On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page. Yesterday’s shortage is over. Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Revision C changes the connector step. To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session. Keep a clear paper trail. On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page. Yesterday’s shortage is over. Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only."
+      }
+    ],
+    "audio": "audio/exams/test-02/groups/t02-g045-r2/passage.wav",
+    "duration": 42.0,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-PH",
+        "role": "female",
+        "modelVoice": "en-PH-RosaNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 42.0
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-04.mp3",
+      "start": 21.79892,
+      "end": 25.20708,
+      "assetSha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+      "speech": "Questions 71 through 73. Listen to the talk."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/exams/test-02/groups/t02-g045-r2/passage.wav",
+      "start": 0,
+      "end": 42.0,
+      "assetSha256": "c5b4021db6b4bb61411c1646249d7a72f40eac72083fbaf9d00ec78ccffc3366",
+      "speech": "Revision C changes the connector step. To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session. Keep a clear paper trail. On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page. Yesterday’s shortage is over. Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only."
+    },
+    {
+      "mode": "question",
+      "path": "audio/exams/test-02/questions/Q073/formal-stem-r2.wav",
+      "start": 0,
+      "end": 12.5375,
+      "assetSha256": "5531ef9f573e4fab6863cc7a7c27597209dd59d9a2e26c3d0a4c74ffef9a57aa",
+      "speech": "Number 73. One model has only yesterday's opened trays. The tags still need signatures. Another has fresh stock. What should the crew make?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/exams/test-02/groups/t02-g045-r2/passage.wav",
+      "start": 0,
+      "end": 42.0,
+      "assetSha256": "c5b4021db6b4bb61411c1646249d7a72f40eac72083fbaf9d00ec78ccffc3366",
+      "speech": "Revision C changes the connector step. To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session. Keep a clear paper trail. On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page. Yesterday’s shortage is over. Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only."
+    }
+  ],
+  "imageSha256": null
+}

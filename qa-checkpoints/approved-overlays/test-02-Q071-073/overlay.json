@@ -1,0 +1,571 @@
+{
+  "status": "structural-only-candidate-independent-audio-gate-open",
+  "rawDraftSha256": "9033b94e11678150acb95b0c3168dee08e57e9bc90e7c9fc2148eb5ec4fb85c2",
+  "authPlanSha256": "ce5feef769a959b676e057a7fe108a9be2946f8d52869ec6be6f0207598e2f60",
+  "revisionPin": "696704b3ab9bf27137c1716e330bc0d8f403ea0d",
+  "repairTextSha256": "15f014b7164dd3d110bd7eeb9d8a9fb3a0bb3f4034a1ebabcccfcd80b9c0f44a",
+  "repairAuthorizedInputSha256": "6babcbe036415d87a636296ea1aa7564b4c0fd8caed10abd87ca4376514aab21",
+  "inputPackSha256": "bf4bbd9df5a47d2415778cf7ddc386bcdbfed2cdbfc65b5cc3c3cdd5e849b82c",
+  "oldListeningPlanSha256": "e03f5d75aabfd86f16521316dee9ab464d5a2058a02d3cd3a876a457220d680f",
+  "newListeningPlanSha256": "6bb391f19a1e55c33da4b2a52469a4d272b2af040c2bcf6df1112368d76374a9",
+  "oldGroupId": "t02-g045",
+  "oldGroupSha256": "034b3ae8d76d0eb41493b0cd2407eb383b03553679e7ff193d00bd6f09bfd28f",
+  "oldQuestionSha256": {
+    "71": "f0c4622975aa0a314c2a98f2643bd1bc59c43192ee7849c4840b74f6c18ce720",
+    "72": "6134e3448c36308326a3915dc5a98c440bba0d044e40f665d3b7fded21a59399",
+    "73": "e672b1db56e1950d0930883257808627eb185d44da1bb022262ebfb59c836842"
+  },
+  "newGroup": {
+    "id": "t02-g045-r2",
+    "testId": "test-02",
+    "part": 4,
+    "title": "Assembly shift revision briefing",
+    "titleZh": "作業改版班前說明",
+    "topic": "manufacturing",
+    "passage": "Revision C changes the connector step. To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session. Keep a clear paper trail. On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page. Yesterday’s shortage is over. Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only.",
+    "passageZh": "C 版變更了連接器的安裝步驟。要開始組裝，必須先參加早上的說明會，再簽署紀錄。若錯過說明會，就先替已封箱的產品貼標，等下一場。要保留清楚、可追查的書面紀錄。訓練表上若寫錯，只用一條線劃掉錯誤，並在更正處簽上姓名縮寫；線長會把同一張表歸檔。不要把簽名抄到新表上。昨天的缺料已經解決，新補到的庫存已獲放行，可以用於組裝。昨天已拆封的料盤要留在待確認架上，等品管在標籤上簽核。產線要保持運作，但只能使用已獲放行的庫存。",
+    "audioScript": "Revision C changes the connector step. To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session. Keep a clear paper trail. On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page. Yesterday’s shortage is over. Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Revision C changes the connector step. To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session. Keep a clear paper trail. On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page. Yesterday’s shortage is over. Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only."
+      }
+    ],
+    "audio": "audio/exams/test-02/groups/t02-g045-r2/passage.wav",
+    "duration": 42.0,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-PH",
+        "role": "female",
+        "modelVoice": "en-PH-RosaNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 42.0
+  },
+  "newQuestions": [
+    {
+      "number": 71,
+      "id": "t02-q071-r2",
+      "groupId": "t02-g045-r2",
+      "revision": 2,
+      "testId": "test-02",
+      "part": 4,
+      "topic": "manufacturing",
+      "difficulty": "advanced",
+      "prompt": "One worker attended but hasn’t signed. The other missed the briefing. How can both contribute now?",
+      "promptZh": "一位員工參加了說明會，卻還沒簽名；另一位錯過說明會。現在怎麼安排，兩人都能立即做事？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Have both workers assemble if they sign the record now.",
+          "zh": "讓兩人現在都簽名，再一起組裝。",
+          "whyZh": "簽名不能取代參加說明會。錯過說明會的人仍不能組裝。"
+        },
+        {
+          "id": "B",
+          "text": "Let the worker who attended start assembly now and send the other to label boxes.",
+          "zh": "讓參加說明會的人立刻組裝，另一人去貼標。",
+          "whyZh": "錯過說明會的人確實可貼標，但參加過的人也要先簽名才能組裝。"
+        },
+        {
+          "id": "C",
+          "text": "Have the worker who attended sign, then assemble; send the other to label boxes.",
+          "zh": "讓參加說明會的人先簽名再組裝，另一人去貼標。",
+          "whyZh": "組裝需要同時參加說明會並簽名；已參加的人補簽後可組裝，錯過的人可在等待下一場時替已封箱的產品貼標。"
+        },
+        {
+          "id": "D",
+          "text": "Have both workers wait until the next briefing before doing any work.",
+          "zh": "兩人都等到下一場說明會後才開始工作。",
+          "whyZh": "已參加的人可以先簽名；錯過的人也可貼標，不必兩人都停止工作。"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "組裝需要同時參加說明會並簽名；已參加的人補簽後可組裝，錯過的人可在等待下一場時替已封箱的產品貼標。",
+      "evidence": "To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session.",
+      "vocabulary": [
+        {
+          "term": "briefing",
+          "zh": "工作說明會",
+          "note": "正式作業前的簡短說明或訓練。"
+        },
+        {
+          "term": "attend",
+          "zh": "參加",
+          "note": "此處指參加說明會，不只是事後簽名。"
+        }
+      ],
+      "difficultyWhy": "Combine independent worker attendance states, the additional sign-off gate, and the permissible interim activity. Do not infer approval from attendance alone.",
+      "tags": [
+        "manufacturing",
+        "training",
+        "inference"
+      ]
+    },
+    {
+      "number": 72,
+      "id": "t02-q072-r2",
+      "groupId": "t02-g045-r2",
+      "revision": 2,
+      "testId": "test-02",
+      "part": 4,
+      "topic": "manufacturing",
+      "difficulty": "advanced",
+      "prompt": "Why does the speaker say, “Keep a clear paper trail”?",
+      "promptZh": "說話者為什麼說「Keep a clear paper trail」？",
+      "options": [
+        {
+          "id": "A",
+          "text": "To make sure the latest sheet replaces all original records.",
+          "zh": "確保最新版表單取代所有原始紀錄。",
+          "whyZh": "說話者說線長要歸檔的是同一張表，不是重新抄好的新表。"
+        },
+        {
+          "id": "B",
+          "text": "To let a later reviewer see the original entry and who corrected it.",
+          "zh": "讓之後查閱的人能看到原本寫了什麼，以及誰更正的。",
+          "whyZh": "錯誤只劃一條線，所以原文仍可辨識；在更正處留下姓名縮寫，再保留原表，就能查出誰做了更正。"
+        },
+        {
+          "id": "C",
+          "text": "To allow absent workers to reuse signatures that are already on file.",
+          "zh": "讓缺席的員工沿用已歸檔的簽名。",
+          "whyZh": "說話者明確禁止把簽名抄到新表上，並沒有准許他人沿用。"
+        },
+        {
+          "id": "D",
+          "text": "To prevent anyone from changing a training record after making a mistake.",
+          "zh": "防止寫錯後再更動訓練紀錄。",
+          "whyZh": "規定允許更正：只用一條線劃掉錯誤，並簽上姓名縮寫。不是禁止更正。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "錯誤只劃一條線，所以原文仍可辨識；在更正處留下姓名縮寫，再保留原表，就能查出誰做了更正。",
+      "evidence": "On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page.",
+      "vocabulary": [
+        {
+          "term": "paper trail",
+          "zh": "可追查的書面紀錄",
+          "note": "並非字面上的紙路，而是足以還原某件事的紀錄。"
+        },
+        {
+          "term": "initial",
+          "zh": "簽上姓名縮寫",
+          "note": "此處作動詞，意指留名確認這次更正。"
+        }
+      ],
+      "difficultyWhy": "Infer the audit purpose of the figurative paper trail from correction initials, preserved original, and ban on duplicated signatures. No worker-allocation or stock answer is exposed.",
+      "tags": [
+        "manufacturing",
+        "training",
+        "inference"
+      ]
+    },
+    {
+      "number": 73,
+      "id": "t02-q073-r2",
+      "groupId": "t02-g045-r2",
+      "revision": 2,
+      "testId": "test-02",
+      "part": 4,
+      "topic": "manufacturing",
+      "difficulty": "advanced",
+      "prompt": "One model has only yesterday's opened trays. The tags still need signatures. Another has fresh stock. What should the crew make?",
+      "promptZh": "一個型號只剩昨天已拆封的料盤，標籤仍待簽核。另一個型號有新補的庫存。此時產線應組裝什麼？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Continue the first model because the shortage has been resolved.",
+          "zh": "繼續做第一種型號，因為缺料已解決。",
+          "whyZh": "整體缺料解除不等於拆封料盤已獲核准；標籤還沒簽核，不能把這批料拿來組裝。"
+        },
+        {
+          "id": "B",
+          "text": "Continue the first model after a line leader initials the tray tags.",
+          "zh": "請線長在料盤標籤縮寫簽名後，繼續做第一種型號。",
+          "whyZh": "線長處理的是訓練表歸檔。料盤是否能使用要由品管簽核。"
+        },
+        {
+          "id": "C",
+          "text": "Stop producing both models until the opened trays are cleared.",
+          "zh": "兩種型號都停做，直到拆封料盤獲准。",
+          "whyZh": "料盤待確認不妨礙用新料組裝另一型號；無須兩種都停。"
+        },
+        {
+          "id": "D",
+          "text": "Build the other model with fresh stock and keep the opened trays on hold.",
+          "zh": "先用新料做另一型號，拆封料盤繼續放在待確認架。",
+          "whyZh": "昨天已拆封的料盤須等品管簽核。另一型號有可用新料，可以先改做該型號。"
+        }
+      ],
+      "answer": "D",
+      "explanationZh": "昨天已拆封的料盤須等品管簽核。另一型號有可用新料，可以先改做該型號。",
+      "evidence": "Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only.",
+      "vocabulary": [
+        {
+          "term": "fresh stock",
+          "zh": "新補到的庫存",
+          "note": "此處指可直接投入組裝的新補料，而不是仍待確認的拆封料盤。"
+        },
+        {
+          "term": "on hold",
+          "zh": "暫停使用；待確認",
+          "note": "未獲品管放行前不能投入組裝。"
+        }
+      ],
+      "difficultyWhy": "Separate resolved inventory shortage from batch-specific Quality clearance, then choose the allowed alternate-model production despite unavailable stock for the first model.",
+      "tags": [
+        "manufacturing",
+        "training",
+        "inference"
+      ]
+    }
+  ],
+  "oldAudioSha256": {
+    "audio/azure-v1/test-02-22.mp3": "9d53180853af9771c175446fdce1fd0bbc4ba52004742fb80f624e33baa21610",
+    "audio/formal-v2/narrator-02.mp3": "000f8c613a6bbc765516c11a020fc3298c92e9dfc7695110e68b0eab8aba0a63",
+    "audio/formal/test-02-cues-04.mp3": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe"
+  },
+  "newAudioGuards": {
+    "audio/exams/test-02/groups/t02-g045-r2/passage.wav": {
+      "path": "audio/exams/test-02/groups/t02-g045-r2/passage.wav",
+      "sha256": "c5b4021db6b4bb61411c1646249d7a72f40eac72083fbaf9d00ec78ccffc3366",
+      "frames": 1008000,
+      "sampleRate": 24000
+    },
+    "audio/exams/test-02/questions/Q071/formal-stem-r2.wav": {
+      "path": "audio/exams/test-02/questions/Q071/formal-stem-r2.wav",
+      "sha256": "d25a5243f197d4f55d94c496061526e6c8fa9f5116041b14ebecfe8519c25377",
+      "frames": 231300,
+      "sampleRate": 24000
+    },
+    "audio/exams/test-02/questions/Q072/formal-stem-r2.wav": {
+      "path": "audio/exams/test-02/questions/Q072/formal-stem-r2.wav",
+      "sha256": "99b8241e83927ac63c23cbdf35509334a1c9ce8fc8f05fed3e151e4ce49e60a9",
+      "frames": 138300,
+      "sampleRate": 24000
+    },
+    "audio/exams/test-02/questions/Q073/formal-stem-r2.wav": {
+      "path": "audio/exams/test-02/questions/Q073/formal-stem-r2.wav",
+      "sha256": "5531ef9f573e4fab6863cc7a7c27597209dd59d9a2e26c3d0a4c74ffef9a57aa",
+      "frames": 300900,
+      "sampleRate": 24000
+    }
+  },
+  "formalFrameOps": [
+    {
+      "index": 202,
+      "beforeSha256": "31cb1210ffdaa3bdd81e9fddc696806bf1509b76c26a2c98ce5165d20c2eff21",
+      "updates": {
+        "groupId": "t02-g045-r2"
+      }
+    },
+    {
+      "index": 203,
+      "beforeSha256": "8dafd9c12ffed62ddb24bb82449b5d5ec470a8ea2df5e04801e41b5cf75115a8",
+      "updates": {
+        "groupId": "t02-g045-r2"
+      }
+    },
+    {
+      "index": 204,
+      "beforeSha256": "7b8ef696d3f3a4d8d15951e733b6cf5b79c2c39421a0d85c396bdd4837662117",
+      "updates": {
+        "src": "audio/exams/test-02/groups/t02-g045-r2/passage.wav",
+        "start": 0,
+        "end": 42.0,
+        "duration": 42.0,
+        "groupId": "t02-g045-r2"
+      }
+    },
+    {
+      "index": 205,
+      "beforeSha256": "81b952c94abd58400266717dd33ad8e14e3d293faaeca0d021425bcfd7ff49e6",
+      "updates": {
+        "src": "audio/exams/test-02/questions/Q071/formal-stem-r2.wav",
+        "start": 0,
+        "end": 9.6375,
+        "duration": 9.6375,
+        "groupId": "t02-g045-r2",
+        "questionId": "t02-q071-r2",
+        "at": 1940.92544
+      }
+    },
+    {
+      "index": 206,
+      "beforeSha256": "a2bea5160a6713b77ceb9524fd518f57aaaad78393067568074f26bede1a4bb8",
+      "updates": {
+        "duration": 10,
+        "groupId": "t02-g045-r2",
+        "questionId": "t02-q071-r2",
+        "at": 1950.56294
+      }
+    },
+    {
+      "index": 207,
+      "beforeSha256": "bf69e6ea66159adf92367d34c79684eed3d45aa1e3e55f29b135349fbed27e60",
+      "updates": {
+        "src": "audio/exams/test-02/questions/Q072/formal-stem-r2.wav",
+        "start": 0,
+        "end": 5.7625,
+        "duration": 5.7625,
+        "groupId": "t02-g045-r2",
+        "questionId": "t02-q072-r2",
+        "at": 1960.56294
+      }
+    },
+    {
+      "index": 208,
+      "beforeSha256": "1c565802b192294f59f27ffb2a5a04094cd1698e92adaa254d14ebbbf92c2902",
+      "updates": {
+        "duration": 10,
+        "groupId": "t02-g045-r2",
+        "questionId": "t02-q072-r2",
+        "at": 1966.32544
+      }
+    },
+    {
+      "index": 209,
+      "beforeSha256": "84fd5da254cdcf598d61c95c098ee1f7afb77b33896e0567f7b74bfe71930d68",
+      "updates": {
+        "src": "audio/exams/test-02/questions/Q073/formal-stem-r2.wav",
+        "start": 0,
+        "end": 12.5375,
+        "duration": 12.5375,
+        "groupId": "t02-g045-r2",
+        "questionId": "t02-q073-r2",
+        "at": 1976.32544
+      }
+    },
+    {
+      "index": 210,
+      "beforeSha256": "d28fc852be043d002899ded95c0ac401872f1466c731d6c2b6fab41ee16aca83",
+      "updates": {
+        "duration": 10,
+        "groupId": "t02-g045-r2",
+        "questionId": "t02-q073-r2",
+        "at": 1988.86294
+      }
+    },
+    {
+      "index": 211,
+      "beforeSha256": "86bef73fcf653822f691231b44beba89aded89be13ac2a4812d8f8568ef95602",
+      "updates": {
+        "at": 1998.86294
+      }
+    },
+    {
+      "index": 212,
+      "beforeSha256": "dec886101368fe4eca513e31a15f03d6dc7b45dbb38112bea04705d173f24bbb",
+      "updates": {
+        "at": 2002.41081
+      }
+    },
+    {
+      "index": 213,
+      "beforeSha256": "5701608075fd2ae13ccce2a53451ed3bcefcd560901ff90583cad6e8de73ff88",
+      "updates": {
+        "at": 2034.28281
+      }
+    },
+    {
+      "index": 214,
+      "beforeSha256": "627ae56ba80a221782936ddd59ba3458f6b1ecf8e5e46359f88c226a435f5202",
+      "updates": {
+        "duration": 8.36432,
+        "at": 2037.41727
+      }
+    },
+    {
+      "index": 215,
+      "beforeSha256": "19e0322db4b06954b65cef05b851c7f89f85d968e86c3bdb9b10b5e243f39533",
+      "updates": {
+        "at": 2045.78159
+      }
+    },
+    {
+      "index": 216,
+      "beforeSha256": "0feba866b22129b58c88e694d9a0ffc027115d11189ee6f1246a7df5c0314ad7",
+      "updates": {
+        "duration": 8.36432,
+        "at": 2049.44505
+      }
+    },
+    {
+      "index": 217,
+      "beforeSha256": "0f78797b1d333164434cadc304e88431f33e1e82135a0b31f5eadaffcced3425",
+      "updates": {
+        "at": 2057.80937
+      }
+    },
+    {
+      "index": 218,
+      "beforeSha256": "dea0be1d09ed0b7eec2e80c3f582b29fdca725c5b1b7a0ae2397acc9d141120f",
+      "updates": {
+        "duration": 8.36433,
+        "at": 2062.07062
+      }
+    },
+    {
+      "index": 219,
+      "beforeSha256": "3ee9bf76a10fb159e9cb22a25739606f13b0bd2ff99ab782982a78bb0fef58cb",
+      "updates": {
+        "at": 2070.43495
+      }
+    },
+    {
+      "index": 220,
+      "beforeSha256": "73d3033740cc0fa5d8f3a41189304b7ebb801e7d55f3e9196b5736e9548b3091",
+      "updates": {
+        "at": 2074.03341
+      }
+    },
+    {
+      "index": 221,
+      "beforeSha256": "8c5bc3d0d7f7e0d45709408346665d3289a2afa0e397132c0def0d6eef799ffa",
+      "updates": {
+        "at": 2107.29741
+      }
+    },
+    {
+      "index": 222,
+      "beforeSha256": "f8f328a33a1bf052ce5953b22e17bd73473c02c8020e862ebf165d6876d64132",
+      "updates": {
+        "duration": 8.36433,
+        "at": 2110.17295
+      }
+    },
+    {
+      "index": 223,
+      "beforeSha256": "90eae9eabff549dbf057bee3e9ac5f5f7a9ae6b75eebfd67c35b934f3b8c8b00",
+      "updates": {
+        "at": 2118.53728
+      }
+    },
+    {
+      "index": 224,
+      "beforeSha256": "6c68c28198443e98675dade03bac34de70d78b3c073d236659d6a25b2528f1d5",
+      "updates": {
+        "duration": 8.36433,
+        "at": 2121.46545
+      }
+    },
+    {
+      "index": 225,
+      "beforeSha256": "b93a7ca69dbce04f8812f1a0db8f2d52ff41bf21f498956aa7fc513ccbfb8162",
+      "updates": {
+        "at": 2129.82978
+      }
+    },
+    {
+      "index": 226,
+      "beforeSha256": "79a500fa9204be8b0d3ab831e40ad64238cd4671388105a813568e5e25929cc4",
+      "updates": {
+        "duration": 8.36433,
+        "at": 2133.35282
+      }
+    },
+    {
+      "index": 227,
+      "beforeSha256": "8c9edc15a4e29ae532af5520eef8f0bade69a15d83234773323273aaa4515ca0",
+      "updates": {
+        "at": 2141.71715
+      }
+    },
+    {
+      "index": 228,
+      "beforeSha256": "945ce280ee5049d4802d759428c8322b0beab0887b4e253edc371143e173f035",
+      "updates": {
+        "at": 2144.62523
+      }
+    },
+    {
+      "index": 229,
+      "beforeSha256": "6ea164c36329469d47f5a199625a2392b10c5577b098d5f96df5525b76174623",
+      "updates": {
+        "at": 2174.62523
+      }
+    },
+    {
+      "index": 230,
+      "beforeSha256": "f5d84c06d249ba9e16dc59a70f68c7f69f0676b4e534b5dae5b271522473813f",
+      "updates": {
+        "duration": 8.36433,
+        "at": 2176.84565
+      }
+    },
+    {
+      "index": 231,
+      "beforeSha256": "1c0cf34faf1d7e5e47646889d9ab3806a2144214477b273879157ffdc02ca8d9",
+      "updates": {
+        "at": 2185.20998
+      }
+    },
+    {
+      "index": 232,
+      "beforeSha256": "af566830c4d01906ec8ed881227bfc0cae859462adebedb3df620e57641ceaa9",
+      "updates": {
+        "duration": 8.36433,
+        "at": 2188.63573
+      }
+    },
+    {
+      "index": 233,
+      "beforeSha256": "128e86a6d7a4c2a12071b3ad6cbfd40b676b41e5d7848300c9adad6891335894",
+      "updates": {
+        "at": 2197.00006
+      }
+    },
+    {
+      "index": 234,
+      "beforeSha256": "bc0516ca840c048d19278c32cb5b3954292d309224f15e8c90d67b307ada3e4f",
+      "updates": {
+        "duration": 8.36433,
+        "at": 2200.18789
+      }
+    }
+  ],
+  "chartGuard": {
+    "groupId": "t02-g049",
+    "imagePath": "assets/graphics/t02-g049.svg",
+    "imageSha256": "f773479b5ca6a4ffd7836895dc197dea32b2d009d8ad06ddefe3958d9e4a8984",
+    "formalFramesCanonicalSha256": "ba36f7ab11c61f5e666a0c83440697b353d8b74473233a39ff10dbb47a4913dd",
+    "questionId": "t02-q085-v2",
+    "responsePauseSec": 16.92616
+  },
+  "timingScope": {
+    "originalSpeechSeconds": 39.80713,
+    "newSpeechSeconds": 69.9375,
+    "speechDeltaSeconds": 30.13037,
+    "affectedPeriodBeginningAt": 1880.54127,
+    "preservedChartPeriodBeginningAt": 2208.55222,
+    "newAdvancedPauses": [
+      10,
+      10,
+      10
+    ],
+    "ordinaryPauses": {
+      "t02-q074": 8.36432,
+      "t02-q075": 8.36432,
+      "t02-q076": 8.36433,
+      "t02-q077": 8.36433,
+      "t02-q078": 8.36433,
+      "t02-q079": 8.36433,
+      "t02-q080": 8.36433,
+      "t02-q081": 8.36433,
+      "t02-q082": 8.36433
+    },
+    "protectedChartScope": {
+      "groupId": "t02-g049",
+      "imagePath": "assets/graphics/t02-g049.svg",
+      "imageSha256": "f773479b5ca6a4ffd7836895dc197dea32b2d009d8ad06ddefe3958d9e4a8984",
+      "formalFramesCanonicalSha256": "ba36f7ab11c61f5e666a0c83440697b353d8b74473233a39ff10dbb47a4913dd",
+      "questionId": "t02-q085-v2",
+      "responsePauseSec": 16.92616
+    },
+    "answerSlots": 100,
+    "formalSeconds": 2700
+  }
+}

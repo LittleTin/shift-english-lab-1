@@ -1,0 +1,312 @@
+{
+  "oldGroup": {
+    "id": "t02-g045",
+    "testId": "test-02",
+    "part": 4,
+    "title": "Production shift briefing",
+    "titleZh": "生產班前說明",
+    "topic": "manufacturing",
+    "passage": "Before we start today's shift, please check the revision number on your work instructions. The connector insertion step changed in revision C. Older copies must be returned to the line leader. The training session for this change will take place beside station three at eight fifteen. Do not begin assembly until you have attended the session and signed the training record. The material shortage reported yesterday has been resolved, so all required components are now available.",
+    "passageZh": "今天開班前，請先確認作業指導書的版本。連接器插入步驟在 C 版做了修改。舊版文件必須交回線長。這項變更的訓練會在八點十五分，於三號工作站旁進行。在參加訓練並簽署訓練紀錄前，請勿開始組裝。昨天回報的缺料已解決，所需零件現在都已備妥。",
+    "audioScript": "Before we start today's shift, please check the revision number on your work instructions. The connector insertion step changed in revision C. Older copies must be returned to the line leader. The training session for this change will take place beside station three at eight fifteen. Do not begin assembly until you have attended the session and signed the training record. The material shortage reported yesterday has been resolved, so all required components are now available.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Before we start today's shift, please check the revision number on your work instructions. The connector insertion step changed in revision C. Older copies must be returned to the line leader. The training session for this change will take place beside station three at eight fifteen. Do not begin assembly until you have attended the session and signed the training record. The material shortage reported yesterday has been resolved, so all required components are now available."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-22.mp3",
+    "duration": 30.816,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-PH",
+        "role": "female",
+        "modelVoice": "en-PH-RosaNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 31.316
+  },
+  "oldQuestions": [
+    {
+      "id": "t02-q071",
+      "testId": "test-02",
+      "number": 71,
+      "part": 4,
+      "groupId": "t02-g045",
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "work instruction"
+      ],
+      "prompt": "What changed in revision C?",
+      "promptZh": "C 版修改了哪項內容？",
+      "options": [
+        {
+          "id": "A",
+          "text": "The factory address.",
+          "zh": "工廠地址。",
+          "whyZh": "未提工廠地址變更。"
+        },
+        {
+          "id": "B",
+          "text": "The employee parking fee.",
+          "zh": "員工停車費。",
+          "whyZh": "與作業指導書變更無關。"
+        },
+        {
+          "id": "C",
+          "text": "The connector insertion step.",
+          "zh": "連接器插入步驟。",
+          "whyZh": "講者直接指出此步驟在 C 版變更。"
+        },
+        {
+          "id": "D",
+          "text": "The shift starting date.",
+          "zh": "班別開始日期。",
+          "whyZh": "未提日期變更。"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "講者直接指出此步驟在 C 版變更。",
+      "evidence": "The connector insertion step changed in revision C.",
+      "vocabulary": [
+        {
+          "term": "work instruction",
+          "zh": "作業指導書",
+          "note": "說明指定工作步驟與要求的文件。"
+        },
+        {
+          "term": "revision",
+          "zh": "版本；修訂版",
+          "note": "文件內容更新後用來區分版本的標示。"
+        }
+      ],
+      "revision": 1
+    },
+    {
+      "id": "t02-q072",
+      "testId": "test-02",
+      "number": 72,
+      "part": 4,
+      "groupId": "t02-g045",
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "work instruction"
+      ],
+      "prompt": "Where will the training take place?",
+      "promptZh": "訓練在哪裡進行？",
+      "options": [
+        {
+          "id": "A",
+          "text": "At the main reception desk.",
+          "zh": "主要接待櫃檯。",
+          "whyZh": "訓練地點不是接待櫃檯。"
+        },
+        {
+          "id": "B",
+          "text": "In the employee parking area.",
+          "zh": "員工停車區。",
+          "whyZh": "未提停車區。"
+        },
+        {
+          "id": "C",
+          "text": "Beside station three.",
+          "zh": "三號工作站旁。",
+          "whyZh": "講者明確說 beside station three。"
+        },
+        {
+          "id": "D",
+          "text": "At the supplier's office.",
+          "zh": "供應商辦公室。",
+          "whyZh": "訓練安排在廠內工作站旁。"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "講者明確說 beside station three。",
+      "evidence": "beside station three at eight fifteen",
+      "vocabulary": [
+        {
+          "term": "work instruction",
+          "zh": "作業指導書",
+          "note": "說明指定工作步驟與要求的文件。"
+        },
+        {
+          "term": "revision",
+          "zh": "版本；修訂版",
+          "note": "文件內容更新後用來區分版本的標示。"
+        }
+      ],
+      "revision": 1
+    },
+    {
+      "id": "t02-q073",
+      "testId": "test-02",
+      "number": 73,
+      "part": 4,
+      "groupId": "t02-g045",
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "work instruction"
+      ],
+      "prompt": "What must employees do before assembly?",
+      "promptZh": "員工組裝前必須做什麼？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wait for missing components to arrive tomorrow.",
+          "zh": "等缺料明天到貨。",
+          "whyZh": "缺料已解決，零件現在都有了。"
+        },
+        {
+          "id": "B",
+          "text": "Attend training and sign the record.",
+          "zh": "參加訓練並簽紀錄。",
+          "whyZh": "講者把完成這兩項列為開始組裝的前提。"
+        },
+        {
+          "id": "C",
+          "text": "Make copies of the old instructions.",
+          "zh": "影印舊版指導書。",
+          "whyZh": "舊版要交回，不是複印使用。"
+        },
+        {
+          "id": "D",
+          "text": "Change every product label.",
+          "zh": "更換每個產品標籤。",
+          "whyZh": "沒有標籤更換要求。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "講者把完成這兩項列為開始組裝的前提。",
+      "evidence": "attended the session and signed the training record",
+      "vocabulary": [
+        {
+          "term": "work instruction",
+          "zh": "作業指導書",
+          "note": "說明指定工作步驟與要求的文件。"
+        },
+        {
+          "term": "revision",
+          "zh": "版本；修訂版",
+          "note": "文件內容更新後用來區分版本的標示。"
+        }
+      ],
+      "revision": 1
+    }
+  ],
+  "oldFrames": [
+    {
+      "src": "audio/formal-v2/narrator-02.mp3",
+      "start": 16.408,
+      "end": 31.384,
+      "duration": 14.976,
+      "kind": "audio",
+      "role": "direction",
+      "part": 4,
+      "groupId": "t02-g045",
+      "at": 1880.54127
+    },
+    {
+      "src": "audio/formal/test-02-cues-04.mp3",
+      "start": 21.79892,
+      "end": 25.20708,
+      "duration": 3.40817,
+      "kind": "audio",
+      "role": "cue",
+      "part": 4,
+      "groupId": "t02-g045",
+      "at": 1895.51727
+    },
+    {
+      "src": "audio/azure-v1/test-02-22.mp3",
+      "start": 0.5,
+      "end": 31.316,
+      "duration": 30.816,
+      "kind": "audio",
+      "role": "passage",
+      "part": 4,
+      "groupId": "t02-g045",
+      "at": 1898.92544,
+      "speakers": [
+        {
+          "speaker": "female",
+          "locale": "en-PH",
+          "role": "female",
+          "modelVoice": "en-PH-RosaNeural"
+        }
+      ]
+    },
+    {
+      "src": "audio/formal/test-02-cues-04.mp3",
+      "start": 25.45708,
+      "end": 28.23242,
+      "duration": 2.77533,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t02-g045",
+      "questionId": "t02-q071",
+      "at": 1929.74144
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 11.28411,
+      "part": 4,
+      "groupId": "t02-g045",
+      "questionId": "t02-q071",
+      "at": 1932.51677
+    },
+    {
+      "src": "audio/formal/test-02-cues-04.mp3",
+      "start": 28.48242,
+      "end": 31.23904,
+      "duration": 2.75663,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t02-g045",
+      "questionId": "t02-q072",
+      "at": 1943.80088
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 11.28411,
+      "part": 4,
+      "groupId": "t02-g045",
+      "questionId": "t02-q072",
+      "at": 1946.55751
+    },
+    {
+      "src": "audio/formal/test-02-cues-04.mp3",
+      "start": 31.48904,
+      "end": 34.94821,
+      "duration": 3.45917,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t02-g045",
+      "questionId": "t02-q073",
+      "at": 1957.84162
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 11.28411,
+      "part": 4,
+      "groupId": "t02-g045",
+      "questionId": "t02-q073",
+      "at": 1961.30079
+    }
+  ],
+  "oldPlanAudioEdition": "toeic-1",
+  "preservedAlternative": {
+    "path": "qa-checkpoints/pending-audio/test-02/Q071-073/editorial-checked-pending-audio.json",
+    "sha256": "94bf9818a5fc6fc231fdbb46b0c84e1a63729b0bf7d85bf2da9bb216bb1bbf64"
+  }
+}

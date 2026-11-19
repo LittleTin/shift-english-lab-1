@@ -1,0 +1,198 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Independent whole group blind review C/B/D, all candidate advanced. English/Traditional Chinese counterparts align. Q073 new wording retains open/yesterday’s stock, unresolved signatures, and fresh alternative, with D and all options unchanged.",
+    "audio": "Unprompted Whisper small, independent Vosk small/lgraph and source mapping corroborate mandatory training/sign-off, alternative labeling pending attendance, paper trail through initialed original and no copied signatures, and Quality-signed hold rule. Full small hears “such stock”, but both full unprompted Vosk graphs and exact normal-speed 29.450–32.250 s focused Whisper base transcribe “Fresh stock is cleared for assembly.” “Open/opened” does not change the specified previously opened stock. Exact standard-US Q072 and paper-trail wording in Whisper small, Vosk small and larger graph.",
+    "retainedIntro": "Old exact generic cue independently matched unprompted Whisper base and Vosk lgraph; preserved direction binding.",
+    "association": "Source-bound shared WAV, exact cue-bank window and exact new numbered stem fully hash/time matched. Local Part4-only ordinary retiming preserves all chart timing incl. Q085 and total 2700 seconds and 100 response slots; no human, browser or published acceptance.",
+    "offlineSpeechEvidenceSha256": {
+      "fullSharedWhisperSmall": "7b4c061694f0756123d9d7df8baf1f4ed196605df129a515f304f400b7248524",
+      "fullSharedVoskSmall": "136885bc8c7019894bcdee222700874dbc3fb7d5411aa27e0fd3074d2f7947a6",
+      "fullSharedVoskLgraph": "96d1f1a427b04aa15039dd9682875421ecb8451d2bb905ba66216dee9d7ef18c",
+      "focusedFreshStockWhisperBase": "953bc00a2b33dd0fd20471354f5260d9895a1314e385eabd45ed5d6d2f4ebf9d",
+      "newQ073WhisperSmall": "c73af7b7047966a648b19fc8ba1bfc36c2e430e0c5abaf65c9d5de24124b25db",
+      "newQ073VoskLgraph": "2c422f11353eaf1beae99a1b3815ff011b13153c58cb53fb6c82d9204722695f",
+      "oldCueWhisperBase": "eebc6c07463becc69adb01318f3d88aedb5cfed3dfc3b9c385ae030eb3a87805"
+    }
+  },
+  "activeQuestion": {
+    "number": 72,
+    "id": "t02-q072-r2",
+    "groupId": "t02-g045-r2",
+    "revision": 2,
+    "testId": "test-02",
+    "part": 4,
+    "topic": "manufacturing",
+    "difficulty": "advanced",
+    "prompt": "Why does the speaker say, “Keep a clear paper trail”?",
+    "promptZh": "說話者為什麼說「Keep a clear paper trail」？",
+    "options": [
+      {
+        "id": "A",
+        "text": "To make sure the latest sheet replaces all original records.",
+        "zh": "確保最新版表單取代所有原始紀錄。",
+        "whyZh": "說話者說線長要歸檔的是同一張表，不是重新抄好的新表。"
+      },
+      {
+        "id": "B",
+        "text": "To let a later reviewer see the original entry and who corrected it.",
+        "zh": "讓之後查閱的人能看到原本寫了什麼，以及誰更正的。",
+        "whyZh": "錯誤只劃一條線，所以原文仍可辨識；在更正處留下姓名縮寫，再保留原表，就能查出誰做了更正。"
+      },
+      {
+        "id": "C",
+        "text": "To allow absent workers to reuse signatures that are already on file.",
+        "zh": "讓缺席的員工沿用已歸檔的簽名。",
+        "whyZh": "說話者明確禁止把簽名抄到新表上，並沒有准許他人沿用。"
+      },
+      {
+        "id": "D",
+        "text": "To prevent anyone from changing a training record after making a mistake.",
+        "zh": "防止寫錯後再更動訓練紀錄。",
+        "whyZh": "規定允許更正：只用一條線劃掉錯誤，並簽上姓名縮寫。不是禁止更正。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "錯誤只劃一條線，所以原文仍可辨識；在更正處留下姓名縮寫，再保留原表，就能查出誰做了更正。",
+    "evidence": "On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page.",
+    "vocabulary": [
+      {
+        "term": "paper trail",
+        "zh": "可追查的書面紀錄",
+        "note": "並非字面上的紙路，而是足以還原某件事的紀錄。"
+      },
+      {
+        "term": "initial",
+        "zh": "簽上姓名縮寫",
+        "note": "此處作動詞，意指留名確認這次更正。"
+      }
+    ],
+    "difficultyWhy": "Infer the audit purpose of the figurative paper trail from correction initials, preserved original, and ban on duplicated signatures. No worker-allocation or stock answer is exposed.",
+    "tags": [
+      "manufacturing",
+      "training",
+      "inference"
+    ]
+  },
+  "originalQuestion": {
+    "id": "t02-q072",
+    "testId": "test-02",
+    "number": 72,
+    "part": 4,
+    "groupId": "t02-g045",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "work instruction"
+    ],
+    "prompt": "Where will the training take place?",
+    "promptZh": "訓練在哪裡進行？",
+    "options": [
+      {
+        "id": "A",
+        "text": "At the main reception desk.",
+        "zh": "主要接待櫃檯。",
+        "whyZh": "訓練地點不是接待櫃檯。"
+      },
+      {
+        "id": "B",
+        "text": "In the employee parking area.",
+        "zh": "員工停車區。",
+        "whyZh": "未提停車區。"
+      },
+      {
+        "id": "C",
+        "text": "Beside station three.",
+        "zh": "三號工作站旁。",
+        "whyZh": "講者明確說 beside station three。"
+      },
+      {
+        "id": "D",
+        "text": "At the supplier's office.",
+        "zh": "供應商辦公室。",
+        "whyZh": "訓練安排在廠內工作站旁。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "講者明確說 beside station three。",
+    "evidence": "beside station three at eight fifteen",
+    "vocabulary": [
+      {
+        "term": "work instruction",
+        "zh": "作業指導書",
+        "note": "說明指定工作步驟與要求的文件。"
+      },
+      {
+        "term": "revision",
+        "zh": "版本；修訂版",
+        "note": "文件內容更新後用來區分版本的標示。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g045-r2",
+    "testId": "test-02",
+    "part": 4,
+    "title": "Assembly shift revision briefing",
+    "titleZh": "作業改版班前說明",
+    "topic": "manufacturing",
+    "passage": "Revision C changes the connector step. To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session. Keep a clear paper trail. On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page. Yesterday’s shortage is over. Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only.",
+    "passageZh": "C 版變更了連接器的安裝步驟。要開始組裝，必須先參加早上的說明會，再簽署紀錄。若錯過說明會，就先替已封箱的產品貼標，等下一場。要保留清楚、可追查的書面紀錄。訓練表上若寫錯，只用一條線劃掉錯誤，並在更正處簽上姓名縮寫；線長會把同一張表歸檔。不要把簽名抄到新表上。昨天的缺料已經解決，新補到的庫存已獲放行，可以用於組裝。昨天已拆封的料盤要留在待確認架上，等品管在標籤上簽核。產線要保持運作，但只能使用已獲放行的庫存。",
+    "audioScript": "Revision C changes the connector step. To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session. Keep a clear paper trail. On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page. Yesterday’s shortage is over. Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Revision C changes the connector step. To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session. Keep a clear paper trail. On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page. Yesterday’s shortage is over. Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only."
+      }
+    ],
+    "audio": "audio/exams/test-02/groups/t02-g045-r2/passage.wav",
+    "duration": 42.0,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-PH",
+        "role": "female",
+        "modelVoice": "en-PH-RosaNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 42.0
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-04.mp3",
+      "start": 21.79892,
+      "end": 25.20708,
+      "assetSha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+      "speech": "Questions 71 through 73. Listen to the talk."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/exams/test-02/groups/t02-g045-r2/passage.wav",
+      "start": 0,
+      "end": 42.0,
+      "assetSha256": "c5b4021db6b4bb61411c1646249d7a72f40eac72083fbaf9d00ec78ccffc3366",
+      "speech": "Revision C changes the connector step. To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session. Keep a clear paper trail. On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page. Yesterday’s shortage is over. Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only."
+    },
+    {
+      "mode": "question",
+      "path": "audio/exams/test-02/questions/Q072/formal-stem-r2.wav",
+      "start": 0,
+      "end": 5.7625,
+      "assetSha256": "99b8241e83927ac63c23cbdf35509334a1c9ce8fc8f05fed3e151e4ce49e60a9",
+      "speech": "Number 72. Why does the speaker say, “Keep a clear paper trail”?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/exams/test-02/groups/t02-g045-r2/passage.wav",
+      "start": 0,
+      "end": 42.0,
+      "assetSha256": "c5b4021db6b4bb61411c1646249d7a72f40eac72083fbaf9d00ec78ccffc3366",
+      "speech": "Revision C changes the connector step. To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session. Keep a clear paper trail. On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page. Yesterday’s shortage is over. Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only."
+    }
+  ],
+  "imageSha256": null
+}

@@ -1,0 +1,198 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Independent whole group blind review C/B/D, all candidate advanced. English/Traditional Chinese counterparts align. Q073 new wording retains open/yesterday’s stock, unresolved signatures, and fresh alternative, with D and all options unchanged.",
+    "audio": "Unprompted Whisper small, independent Vosk small/lgraph and source mapping corroborate mandatory training/sign-off, alternative labeling pending attendance, paper trail through initialed original and no copied signatures, and Quality-signed hold rule. Full small hears “such stock”, but both full unprompted Vosk graphs and exact normal-speed 29.450–32.250 s focused Whisper base transcribe “Fresh stock is cleared for assembly.” “Open/opened” does not change the specified previously opened stock. Exact standard-US Q071 in unprompted Whisper small and small Vosk, including hasn’t signed versus missed briefing; larger Vosk imperfect final phrase does not affect roles or conditions.",
+    "retainedIntro": "Old exact generic cue independently matched unprompted Whisper base and Vosk lgraph; preserved direction binding.",
+    "association": "Source-bound shared WAV, exact cue-bank window and exact new numbered stem fully hash/time matched. Local Part4-only ordinary retiming preserves all chart timing incl. Q085 and total 2700 seconds and 100 response slots; no human, browser or published acceptance.",
+    "offlineSpeechEvidenceSha256": {
+      "fullSharedWhisperSmall": "7b4c061694f0756123d9d7df8baf1f4ed196605df129a515f304f400b7248524",
+      "fullSharedVoskSmall": "136885bc8c7019894bcdee222700874dbc3fb7d5411aa27e0fd3074d2f7947a6",
+      "fullSharedVoskLgraph": "96d1f1a427b04aa15039dd9682875421ecb8451d2bb905ba66216dee9d7ef18c",
+      "focusedFreshStockWhisperBase": "953bc00a2b33dd0fd20471354f5260d9895a1314e385eabd45ed5d6d2f4ebf9d",
+      "newQ073WhisperSmall": "c73af7b7047966a648b19fc8ba1bfc36c2e430e0c5abaf65c9d5de24124b25db",
+      "newQ073VoskLgraph": "2c422f11353eaf1beae99a1b3815ff011b13153c58cb53fb6c82d9204722695f",
+      "oldCueWhisperBase": "eebc6c07463becc69adb01318f3d88aedb5cfed3dfc3b9c385ae030eb3a87805"
+    }
+  },
+  "activeQuestion": {
+    "number": 71,
+    "id": "t02-q071-r2",
+    "groupId": "t02-g045-r2",
+    "revision": 2,
+    "testId": "test-02",
+    "part": 4,
+    "topic": "manufacturing",
+    "difficulty": "advanced",
+    "prompt": "One worker attended but hasn’t signed. The other missed the briefing. How can both contribute now?",
+    "promptZh": "一位員工參加了說明會，卻還沒簽名；另一位錯過說明會。現在怎麼安排，兩人都能立即做事？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Have both workers assemble if they sign the record now.",
+        "zh": "讓兩人現在都簽名，再一起組裝。",
+        "whyZh": "簽名不能取代參加說明會。錯過說明會的人仍不能組裝。"
+      },
+      {
+        "id": "B",
+        "text": "Let the worker who attended start assembly now and send the other to label boxes.",
+        "zh": "讓參加說明會的人立刻組裝，另一人去貼標。",
+        "whyZh": "錯過說明會的人確實可貼標，但參加過的人也要先簽名才能組裝。"
+      },
+      {
+        "id": "C",
+        "text": "Have the worker who attended sign, then assemble; send the other to label boxes.",
+        "zh": "讓參加說明會的人先簽名再組裝，另一人去貼標。",
+        "whyZh": "組裝需要同時參加說明會並簽名；已參加的人補簽後可組裝，錯過的人可在等待下一場時替已封箱的產品貼標。"
+      },
+      {
+        "id": "D",
+        "text": "Have both workers wait until the next briefing before doing any work.",
+        "zh": "兩人都等到下一場說明會後才開始工作。",
+        "whyZh": "已參加的人可以先簽名；錯過的人也可貼標，不必兩人都停止工作。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "組裝需要同時參加說明會並簽名；已參加的人補簽後可組裝，錯過的人可在等待下一場時替已封箱的產品貼標。",
+    "evidence": "To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session.",
+    "vocabulary": [
+      {
+        "term": "briefing",
+        "zh": "工作說明會",
+        "note": "正式作業前的簡短說明或訓練。"
+      },
+      {
+        "term": "attend",
+        "zh": "參加",
+        "note": "此處指參加說明會，不只是事後簽名。"
+      }
+    ],
+    "difficultyWhy": "Combine independent worker attendance states, the additional sign-off gate, and the permissible interim activity. Do not infer approval from attendance alone.",
+    "tags": [
+      "manufacturing",
+      "training",
+      "inference"
+    ]
+  },
+  "originalQuestion": {
+    "id": "t02-q071",
+    "testId": "test-02",
+    "number": 71,
+    "part": 4,
+    "groupId": "t02-g045",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "work instruction"
+    ],
+    "prompt": "What changed in revision C?",
+    "promptZh": "C 版修改了哪項內容？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The factory address.",
+        "zh": "工廠地址。",
+        "whyZh": "未提工廠地址變更。"
+      },
+      {
+        "id": "B",
+        "text": "The employee parking fee.",
+        "zh": "員工停車費。",
+        "whyZh": "與作業指導書變更無關。"
+      },
+      {
+        "id": "C",
+        "text": "The connector insertion step.",
+        "zh": "連接器插入步驟。",
+        "whyZh": "講者直接指出此步驟在 C 版變更。"
+      },
+      {
+        "id": "D",
+        "text": "The shift starting date.",
+        "zh": "班別開始日期。",
+        "whyZh": "未提日期變更。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "講者直接指出此步驟在 C 版變更。",
+    "evidence": "The connector insertion step changed in revision C.",
+    "vocabulary": [
+      {
+        "term": "work instruction",
+        "zh": "作業指導書",
+        "note": "說明指定工作步驟與要求的文件。"
+      },
+      {
+        "term": "revision",
+        "zh": "版本；修訂版",
+        "note": "文件內容更新後用來區分版本的標示。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g045-r2",
+    "testId": "test-02",
+    "part": 4,
+    "title": "Assembly shift revision briefing",
+    "titleZh": "作業改版班前說明",
+    "topic": "manufacturing",
+    "passage": "Revision C changes the connector step. To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session. Keep a clear paper trail. On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page. Yesterday’s shortage is over. Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only.",
+    "passageZh": "C 版變更了連接器的安裝步驟。要開始組裝，必須先參加早上的說明會，再簽署紀錄。若錯過說明會，就先替已封箱的產品貼標，等下一場。要保留清楚、可追查的書面紀錄。訓練表上若寫錯，只用一條線劃掉錯誤，並在更正處簽上姓名縮寫；線長會把同一張表歸檔。不要把簽名抄到新表上。昨天的缺料已經解決，新補到的庫存已獲放行，可以用於組裝。昨天已拆封的料盤要留在待確認架上，等品管在標籤上簽核。產線要保持運作，但只能使用已獲放行的庫存。",
+    "audioScript": "Revision C changes the connector step. To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session. Keep a clear paper trail. On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page. Yesterday’s shortage is over. Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Revision C changes the connector step. To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session. Keep a clear paper trail. On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page. Yesterday’s shortage is over. Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only."
+      }
+    ],
+    "audio": "audio/exams/test-02/groups/t02-g045-r2/passage.wav",
+    "duration": 42.0,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-PH",
+        "role": "female",
+        "modelVoice": "en-PH-RosaNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 42.0
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-04.mp3",
+      "start": 21.79892,
+      "end": 25.20708,
+      "assetSha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+      "speech": "Questions 71 through 73. Listen to the talk."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/exams/test-02/groups/t02-g045-r2/passage.wav",
+      "start": 0,
+      "end": 42.0,
+      "assetSha256": "c5b4021db6b4bb61411c1646249d7a72f40eac72083fbaf9d00ec78ccffc3366",
+      "speech": "Revision C changes the connector step. To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session. Keep a clear paper trail. On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page. Yesterday’s shortage is over. Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only."
+    },
+    {
+      "mode": "question",
+      "path": "audio/exams/test-02/questions/Q071/formal-stem-r2.wav",
+      "start": 0,
+      "end": 9.6375,
+      "assetSha256": "d25a5243f197d4f55d94c496061526e6c8fa9f5116041b14ebecfe8519c25377",
+      "speech": "Number 71. One worker attended but hasn’t signed. The other missed the briefing. How can both contribute now?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/exams/test-02/groups/t02-g045-r2/passage.wav",
+      "start": 0,
+      "end": 42.0,
+      "assetSha256": "c5b4021db6b4bb61411c1646249d7a72f40eac72083fbaf9d00ec78ccffc3366",
+      "speech": "Revision C changes the connector step. To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session. Keep a clear paper trail. On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page. Yesterday’s shortage is over. Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only."
+    }
+  ],
+  "imageSha256": null
+}

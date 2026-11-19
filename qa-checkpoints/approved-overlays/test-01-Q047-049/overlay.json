@@ -1,0 +1,307 @@
+{
+  "status": "offline-structural-only",
+  "priorDeploymentRef": "043b91761f63062708d70f7cda3a6b2046cd4cf9",
+  "oldGroupId": "t01-g037",
+  "oldGroupSha256": "584daae85e4ccc083b6cf004461c8e1a9a58ff427db7368fe1c89dc6983ed42a",
+  "newGroup": {
+    "id": "t01-g037-r2",
+    "testId": "test-01",
+    "part": 3,
+    "title": "Arriving at a hotel late",
+    "titleZh": "深夜抵達旅館",
+    "topic": "daily",
+    "passage": "Man: I’m calling about my reservation for tonight, but my flight won’t land until eleven.\nWoman: We can hold the room. Our reception desk closes at midnight, so I'll send instructions for the key locker.\nMan: Thank you. Does the room price include breakfast?\nWoman: Yes, from seven to ten. However, the dining room is being renovated, so breakfast is served in the garden lounge this week.\nMan: One more thing: may I leave a suitcase here after checking out tomorrow?\nWoman: Certainly. The luggage room is beside reception, and there is no charge until six in the evening.",
+    "passageZh": "男：我想詢問今晚的訂房，我的班機要到十一點才會降落。\n女：我們可以保留房間。櫃檯午夜停止服務，所以我會寄送鑰匙置物櫃的使用說明。\n男：謝謝。房價包含早餐嗎？\n女：有，供餐時間是七點到十點。不過餐廳正在整修，所以這週改在花園休憩廳供應早餐。\n男：另外，明天退房後，我可以把一個行李箱寄放在這裡嗎？\n女：當然可以。行李房就在櫃檯旁，下午六點以前不收費。",
+    "audioScript": "I’m calling about my reservation for tonight, but my flight won’t land until eleven.\nWe can hold the room. Our reception desk closes at midnight, so I'll send instructions for the key locker.\nThank you. Does the room price include breakfast?\nYes, from seven to ten. However, the dining room is being renovated, so breakfast is served in the garden lounge this week.\nOne more thing: may I leave a suitcase here after checking out tomorrow?\nCertainly. The luggage room is beside reception, and there is no charge until six in the evening.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "I’m calling about my reservation for tonight, but my flight won’t land until eleven."
+      },
+      {
+        "voice": "female",
+        "text": "We can hold the room. Our reception desk closes at midnight, so I'll send instructions for the key locker."
+      },
+      {
+        "voice": "male",
+        "text": "Thank you. Does the room price include breakfast?"
+      },
+      {
+        "voice": "female",
+        "text": "Yes, from seven to ten. However, the dining room is being renovated, so breakfast is served in the garden lounge this week."
+      },
+      {
+        "voice": "male",
+        "text": "One more thing: may I leave a suitcase here after checking out tomorrow?"
+      },
+      {
+        "voice": "female",
+        "text": "Certainly. The luggage room is beside reception, and there is no charge until six in the evening."
+      }
+    ],
+    "audio": "audio/exams/test-01/groups/t01-g037-r2/passage.wav",
+    "duration": 41.30075,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-NZ",
+        "role": "male",
+        "modelVoice": "en-NZ-MitchellNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-NZ",
+        "role": "female",
+        "modelVoice": "en-NZ-MollyNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 41.30075
+  },
+  "oldQuestionSha256": {
+    "47": "89eec294d8529206be6974d422c2812c9d910cf0fa12be9b12e7f02173f803c3",
+    "48": "72bddf80985064ee218a4de12a749d5d3f9b3b51606d675d216015ddd80ce7a3",
+    "49": "84264894f53c53fca73f26f383ee4e983aa32614d4e78a5e4ea13108db940d73"
+  },
+  "newQuestions": [
+    {
+      "id": "t01-q047-r2",
+      "testId": "test-01",
+      "number": 47,
+      "part": 3,
+      "groupId": "t01-g037-r2",
+      "topic": "daily",
+      "difficulty": "intermediate",
+      "tags": [
+        "daily",
+        "purpose"
+      ],
+      "prompt": "Why is the man calling the hotel?",
+      "promptZh": "男子為什麼致電旅館？",
+      "options": [
+        {
+          "id": "A",
+          "text": "To cancel a flight.",
+          "zh": "取消班機。",
+          "whyZh": "旅館通話不是辦理取消機票，男子仍要入住。"
+        },
+        {
+          "id": "B",
+          "text": "To change the reservation name.",
+          "zh": "更改訂房姓名。",
+          "whyZh": "他只是來電說明會晚到，並沒有要求更改訂房姓名。"
+        },
+        {
+          "id": "C",
+          "text": "To explain that he will arrive late.",
+          "zh": "告知他會很晚抵達。",
+          "whyZh": "男子以班機十一點才降落說明晚到，旅館因此提供午夜櫃檯關閉後的取鑰匙說明。"
+        },
+        {
+          "id": "D",
+          "text": "To reserve the dining room for an event.",
+          "zh": "預約餐廳辦活動。",
+          "whyZh": "他詢問住宿早餐，沒有包場需求。"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "男子以班機十一點才降落說明晚到，旅館因此提供午夜櫃檯關閉後的取鑰匙說明。",
+      "evidence": "I’m calling about my reservation for tonight, but my flight won’t land until eleven.",
+      "vocabulary": [
+        {
+          "term": "hold the room",
+          "zh": "保留房間",
+          "note": "旅館確認晚到時仍保留預訂房間。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t01-q048-r2",
+      "testId": "test-01",
+      "number": 48,
+      "part": 3,
+      "groupId": "t01-g037-r2",
+      "topic": "daily",
+      "difficulty": "intermediate",
+      "tags": [
+        "daily",
+        "location"
+      ],
+      "prompt": "Where will breakfast be served this week?",
+      "promptZh": "這週早餐在哪裡供應？",
+      "options": [
+        {
+          "id": "A",
+          "text": "In the luggage room.",
+          "zh": "在行李房。",
+          "whyZh": "行李房用於寄放行李，不是供餐地點。"
+        },
+        {
+          "id": "B",
+          "text": "In the garden lounge.",
+          "zh": "在花園休憩廳。",
+          "whyZh": "餐廳整修，因此早餐暫時改到 garden lounge；這是服務地點變更。"
+        },
+        {
+          "id": "C",
+          "text": "At the reception desk.",
+          "zh": "在接待櫃檯。",
+          "whyZh": "櫃檯辦理住宿服務，未說在那裡供應早餐。"
+        },
+        {
+          "id": "D",
+          "text": "In the main dining room.",
+          "zh": "在主要餐廳。",
+          "whyZh": "餐廳正在整修，所以這週不在那裡供餐。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "餐廳整修，因此早餐暫時改到 garden lounge；這是服務地點變更。",
+      "evidence": "breakfast is served in the garden lounge this week.",
+      "vocabulary": [
+        {
+          "term": "be renovated",
+          "zh": "進行整修",
+          "note": "建物或室內空間暫時進行修繕。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t01-q049-r2",
+      "testId": "test-01",
+      "number": 49,
+      "part": 3,
+      "groupId": "t01-g037-r2",
+      "topic": "daily",
+      "difficulty": "intermediate",
+      "tags": [
+        "daily",
+        "detail"
+      ],
+      "prompt": "What is said about luggage storage?",
+      "promptZh": "關於寄放行李，對話說了什麼？",
+      "options": [
+        {
+          "id": "A",
+          "text": "It must be paid for at check-in.",
+          "zh": "必須在入住時付費。",
+          "whyZh": "對話說六點前免費，未要求入住時先付款。"
+        },
+        {
+          "id": "B",
+          "text": "It is available only before check-out.",
+          "zh": "只有退房前可以使用。",
+          "whyZh": "男子問退房後能否寄放，女子回答可以。"
+        },
+        {
+          "id": "C",
+          "text": "It is free until six in the evening.",
+          "zh": "到下午六點以前免費。",
+          "whyZh": "女子表示 there is no charge until six in the evening，明確給出免費寄放的時間界線。"
+        },
+        {
+          "id": "D",
+          "text": "It is located inside the dining room.",
+          "zh": "它位於餐廳裡面。",
+          "whyZh": "行李房在接待櫃檯旁，不在餐廳內。"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "女子表示 there is no charge until six in the evening，明確給出免費寄放的時間界線。",
+      "evidence": "there is no charge until six in the evening.",
+      "vocabulary": [
+        {
+          "term": "no charge",
+          "zh": "不收費",
+          "note": "表示該項服務在指定條件下免費。"
+        }
+      ],
+      "revision": 2
+    }
+  ],
+  "oldListeningPlanSha256": "596c07384f8371b5037da95c6041dac3ab7c08d5de552853b6392359bea633cf",
+  "newListeningPlanSha256": "9d7c75d64ef53824b0bcfbebedf15db14bfe98e947d86d251831ee884eef2f8c",
+  "priorAudioGuards": {
+    "audio/azure-v1/test-01-17.mp3": "823c48653d88e71109e1ebdc2434f09bd6f300a56b1f5dbbcd99abae5e7c7294",
+    "audio/formal/test-01-cues-02.mp3": "4c01686b382311002ca4ec4dc257d065de2941cc085e66243d440974bc0910c7"
+  },
+  "formalFrameOps": [
+    {
+      "index": 138,
+      "beforeSha256": "53c97bd75486ea980984c63c83cd4da2ec491a0c416dab5295e7814de417ca77",
+      "updates": {
+        "groupId": "t01-g037-r2"
+      }
+    },
+    {
+      "index": 139,
+      "beforeSha256": "afdaf8cd73e679fdddd1006c30904f44f5c53ee09d49222bedd785a9e25f8e01",
+      "updates": {
+        "src": "audio/exams/test-01/groups/t01-g037-r2/passage.wav",
+        "start": 0,
+        "end": 41.30075,
+        "duration": 41.30075,
+        "groupId": "t01-g037-r2"
+      }
+    },
+    {
+      "index": 140,
+      "beforeSha256": "d35c7d7b44af2bb51f30e502c0c5c8a2678ed3b0c4cd99737481ececdf2ae6ce",
+      "updates": {
+        "groupId": "t01-g037-r2",
+        "questionId": "t01-q047-r2",
+        "at": 1276.92475
+      }
+    },
+    {
+      "index": 141,
+      "beforeSha256": "6945966855577f9674b7602213e10afb8f532aac07ee1bd6e517ec41db945f91",
+      "updates": {
+        "duration": 8.66658,
+        "groupId": "t01-g037-r2",
+        "questionId": "t01-q047-r2",
+        "at": 1280.00887
+      }
+    },
+    {
+      "index": 142,
+      "beforeSha256": "f978b55767e8fdfc692457a9ddebbf8a73ec4c6e47068216c1d5569934383941",
+      "updates": {
+        "groupId": "t01-g037-r2",
+        "questionId": "t01-q048-r2",
+        "at": 1288.67545
+      }
+    },
+    {
+      "index": 143,
+      "beforeSha256": "c9d5a46992c482dbcd4771539477dde14bec5b4e19f42cb67a5e7f8afc218354",
+      "updates": {
+        "duration": 8.66658,
+        "groupId": "t01-g037-r2",
+        "questionId": "t01-q048-r2",
+        "at": 1291.72308
+      }
+    },
+    {
+      "index": 144,
+      "beforeSha256": "5c495965495ac9fb01315334993d80c7c3fdc5dd3f98f261f030ff1136895622",
+      "updates": {
+        "groupId": "t01-g037-r2",
+        "questionId": "t01-q049-r2",
+        "at": 1300.38966
+      }
+    },
+    {
+      "index": 145,
+      "beforeSha256": "3c401d996c057579fed12dd1a61218406960ef8a6efa74acf07ec1cb9e86418d",
+      "updates": {
+        "duration": 8.66659,
+        "groupId": "t01-g037-r2",
+        "questionId": "t01-q049-r2",
+        "at": 1303.38712
+      }
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "status": "fallback-sharpened-formal-stem-text-only-not-rendered-not-approved",
+  "candidateOldStem": "A model has only yesterday’s opened trays left. Another model has fresh stock. The tray tags are unsigned. What should the crew produce now?",
+  "candidateQuestion": {
+    "number": 73,
+    "id": "t02-q073-r2",
+    "groupId": "t02-g045-r2",
+    "revision": 2,
+    "testId": "test-02",
+    "part": 4,
+    "topic": "manufacturing",
+    "difficulty": "advanced",
+    "prompt": "One model has only yesterday's opened trays. The tags still need signatures. Another has fresh stock. What should the crew make?",
+    "promptZh": "一個型號只剩昨天已拆封的料盤，標籤仍待簽核。另一個型號有新補的庫存。此時產線應組裝什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Continue the first model because the shortage has been resolved.",
+        "zh": "繼續做第一種型號，因為缺料已解決。",
+        "whyZh": "整體缺料解除不等於拆封料盤已獲核准；標籤還沒簽核，不能把這批料拿來組裝。"
+      },
+      {
+        "id": "B",
+        "text": "Continue the first model after a line leader initials the tray tags.",
+        "zh": "請線長在料盤標籤縮寫簽名後，繼續做第一種型號。",
+        "whyZh": "線長處理的是訓練表歸檔。料盤是否能使用要由品管簽核。"
+      },
+      {
+        "id": "C",
+        "text": "Stop producing both models until the opened trays are cleared.",
+        "zh": "兩種型號都停做，直到拆封料盤獲准。",
+        "whyZh": "料盤待確認不妨礙用新料組裝另一型號；無須兩種都停。"
+      },
+      {
+        "id": "D",
+        "text": "Build the other model with fresh stock and keep the opened trays on hold.",
+        "zh": "先用新料做另一型號，拆封料盤繼續放在待確認架。",
+        "whyZh": "昨天已拆封的料盤須等品管簽核。另一型號有可用新料，可以先改做該型號。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "昨天已拆封的料盤須等品管簽核。另一型號有可用新料，可以先改做該型號。",
+    "evidence": "Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only.",
+    "vocabulary": [
+      {
+        "term": "fresh stock",
+        "zh": "新補到的庫存",
+        "note": "此處指可直接投入組裝的新補料，而不是仍待確認的拆封料盤。"
+      },
+      {
+        "term": "on hold",
+        "zh": "暫停使用；待確認",
+        "note": "未獲品管放行前不能投入組裝。"
+      }
+    ],
+    "difficultyWhy": "Separate resolved inventory shortage from batch-specific Quality clearance, then choose the allowed alternate-model production despite unavailable stock for the first model.",
+    "tags": [
+      "manufacturing",
+      "training",
+      "inference"
+    ]
+  },
+  "newFormalInput": {
+    "voice": "en-US-JennyNeural",
+    "locale": "en-US",
+    "script": "Number 73. One model has only yesterday's opened trays. The tags still need signatures. Another has fresh stock. What should the crew make?"
+  },
+  "actualAudioEvidence": {
+    "vosk.txt": "136885bc8c7019894bcdee222700874dbc3fb7d5411aa27e0fd3074d2f7947a6",
+    "vosk-lgraph.txt": "96d1f1a427b04aa15039dd9682875421ecb8451d2bb905ba66216dee9d7ef18c",
+    "q073-formal-stem.wav.txt": "ac647b395f52950c9bedf9c6f16605f8c07a742049e6e4f26ef602f22854cc9c",
+    "q071-formal-stem.wav.txt": "f558c091df3de2f7df7ca5c6cb863aac211d643dc4169a8d74de0a544a7c6ea4",
+    "q072-formal-stem.wav.txt": "e8304347a232845b31cef74f6bb7656a7b1907cb333446f847384ecbe95c0c78",
+    "old-cue.wav.txt": "eebc6c07463becc69adb01318f3d88aedb5cfed3dfc3b9c385ae030eb3a87805",
+    "g045-advanced-shared.wav.txt": "7b4c061694f0756123d9d7df8baf1f4ed196605df129a515f304f400b7248524"
+  },
+  "reason": "The answer-critical negative was not independently clear: current small Vosk produces “or and signed,” larger Vosk “or signed,” and Whisper base “are in signed.” Exact alternate affirmative is not proven, but do not promote from plausible segmentation alone. Use natural affirmative expression describing unsigned state (still need signatures).",
+  "reuse": "The complete talk and Q071/Q072 stems remain unchanged if their exact independent evidence clears. Rerender only the root-approved standard-US Q073 stem if necessary, recalculate timing region and preserve chart absolute anchors and proposed pauses with measured duration; do not start Azure from this file.",
+  "authorizedPlanInputTemplate": {
+    "name": "test02-q073-formal-stem-repair",
+    "turns": [
+      {
+        "voice": "en-US-JennyNeural",
+        "locale": "en-US",
+        "text": "Number 73. One model has only yesterday's opened trays. The tags still need signatures. Another has fresh stock. What should the crew make?"
+      }
+    ]
+  },
+  "exactExpectedKey": "D",
+  "spokenScopeGuard": "Same instruction using only cleared stock and distinguishing yesterday’s opened trays with no signoff from fresh stock. Only this stem/question wording differs, no option/key/rationale/ID change and no change to Q071/Q072/shared talk."
+}
