@@ -1,0 +1,115 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Fifteen more minutes means station is not ready yet. Train and colors do not distinguish readiness. 檢驗站／再給十五分鐘. English options, zh-TW and each rationale checked; offline ASR and editorial review, not runtime acceptance.",
+  "activeQuestion": {
+    "id": "t02-q018",
+    "testId": "test-02",
+    "number": 18,
+    "part": 2,
+    "groupId": "t02-g018",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes, the train is late.",
+        "zh": "是的，火車誤點。",
+        "whyZh": "station 在此是檢驗工作站，不是火車站。"
+      },
+      {
+        "id": "B",
+        "text": "Another fifteen minutes, please.",
+        "zh": "請再給我十五分鐘。",
+        "whyZh": "選擇問句提供兩種狀態；此回應明確表示仍需要時間。"
+      },
+      {
+        "id": "C",
+        "text": "There are more colors.",
+        "zh": "還有更多顏色。",
+        "whyZh": "顏色數量不能回答準備狀態。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "選擇問句提供兩種狀態；此回應明確表示仍需要時間。",
+    "evidence": "Is the inspection station ready, or do you need more time?",
+    "vocabulary": [
+      {
+        "term": "inspection station",
+        "zh": "檢驗站",
+        "note": "生產或檢驗流程中進行檢查的工作位置。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g018",
+    "testId": "test-02",
+    "part": 2,
+    "title": "Inspection station",
+    "titleZh": "檢驗站",
+    "topic": "manufacturing",
+    "passage": "Is the inspection station ready, or do you need more time?\nA. Yes, the train is late.\nB. Another fifteen minutes, please.\nC. There are more colors.",
+    "passageZh": "檢驗站準備好了，還是你需要更多時間？\nA. 是的，火車誤點。\nB. 請再給我十五分鐘。\nC. 還有更多顏色。",
+    "audioScript": "Is the inspection station ready, or do you need more time?\nA. Yes, the train is late.\nB. Another fifteen minutes, please.\nC. There are more colors.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Is the inspection station ready, or do you need more time?"
+      },
+      {
+        "voice": "female",
+        "text": "A. Yes, the train is late. B. Another fifteen minutes, please. C. There are more colors."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-06.mp3",
+    "duration": 17.904,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-NZ",
+        "role": "male",
+        "modelVoice": "en-NZ-MitchellNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-NZ",
+        "role": "female",
+        "modelVoice": "en-NZ-MollyNeural"
+      }
+    ],
+    "audioStart": 36.66,
+    "audioEnd": 54.564
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "start": 19.9795,
+      "end": 20.95508,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "Number 18. (Confirmed in contiguous cue-bank transcript.)"
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-02-06.mp3",
+      "start": 34.764,
+      "end": 52.068,
+      "assetSha256": "ac26ea4dd5b9d5dc3ee9c947c77d49d98b88b3eca21f2abac194c217c460553e",
+      "speech": "Is the inspection station ready or do you need more time? A. Yes, the train is late. B. Another 15 minutes, please. C. There are more colors."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-02-06.mp3",
+      "start": 36.66,
+      "end": 54.564,
+      "assetSha256": "c8b6d5ddf2cd18dc4b40063efccbe0dece355af41f1f12f4c573f18164303769",
+      "speech": "Is the inspection station ready or do you need more time? A. Yes, the train is late. B. Another 15 minutes, please. C. There are more colours."
+    }
+  ]
+}

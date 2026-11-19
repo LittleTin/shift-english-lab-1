@@ -1,0 +1,115 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Answers MOQ with 500 pieces; minimum refers to quantity not temperature, and ordering lunch is not purchasing MOQ. English options, zh-TW and each rationale checked; offline ASR and editorial review, not runtime acceptance.",
+  "activeQuestion": {
+    "id": "t02-q015",
+    "testId": "test-02",
+    "number": 15,
+    "part": 2,
+    "groupId": "t02-g015",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes, it says five hundred pieces.",
+        "zh": "有，上面寫五百個。",
+        "whyZh": "直接確認有最低數量並指出報價中的數字。"
+      },
+      {
+        "id": "B",
+        "text": "The minimum temperature was low.",
+        "zh": "最低溫度很低。",
+        "whyZh": "minimum 雖重複出現，這裡問的是訂購量而非溫度。"
+      },
+      {
+        "id": "C",
+        "text": "We ordered lunch already.",
+        "zh": "我們已經點午餐了。",
+        "whyZh": "order 在此指採購，不是點餐。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "直接確認有最低數量並指出報價中的數字。",
+    "evidence": "Does this quotation include a minimum order quantity?",
+    "vocabulary": [
+      {
+        "term": "minimum order quantity",
+        "zh": "最低訂購量",
+        "note": "報價或供貨條件中要求的一次最低訂購數量，常縮寫為 MOQ。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g015",
+    "testId": "test-02",
+    "part": 2,
+    "title": "MOQ explanation",
+    "titleZh": "最低訂購量",
+    "topic": "manufacturing",
+    "passage": "Does this quotation include a minimum order quantity?\nA. Yes, it says five hundred pieces.\nB. The minimum temperature was low.\nC. We ordered lunch already.",
+    "passageZh": "這份報價有包含最低訂購量嗎？\nA. 有，上面寫五百個。\nB. 最低溫度很低。\nC. 我們已經點午餐了。",
+    "audioScript": "Does this quotation include a minimum order quantity?\nA. Yes, it says five hundred pieces.\nB. The minimum temperature was low.\nC. We ordered lunch already.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Does this quotation include a minimum order quantity?"
+      },
+      {
+        "voice": "female",
+        "text": "A. Yes, it says five hundred pieces. B. The minimum temperature was low. C. We ordered lunch already."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-05.mp3",
+    "duration": 18.336,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-HK",
+        "role": "male",
+        "modelVoice": "en-HK-SamNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-HK",
+        "role": "female",
+        "modelVoice": "en-HK-YanNeural"
+      }
+    ],
+    "audioStart": 36.972,
+    "audioEnd": 55.308
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "start": 16.09771,
+      "end": 17.09471,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "Number 15. (Confirmed in contiguous cue-bank transcript.)"
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-02-05.mp3",
+      "start": 35.388,
+      "end": 52.692,
+      "assetSha256": "c7b7fc1976b4ae94a7727516098eada098fb02f3aa3015e20ea6b2d182ba3ab9",
+      "speech": "Does this quotation include a minimum order quantity? A. Yes, it says 500 pieces. B. The minimum temperature was low. C. We ordered lunch already."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-02-05.mp3",
+      "start": 36.972,
+      "end": 55.308,
+      "assetSha256": "46cd00e07960a7e43925b982177460df43950d92d80c814bdfdcb12862f8bdbf",
+      "speech": "Does this quotation include a minimum order quantity? A. Yes, it says 500 pieces. B. The minimum temperature was low. C. We ordered lunch already."
+    }
+  ]
+}

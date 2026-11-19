@@ -1,0 +1,115 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "“Yes” and proposing 4:30 communicate agreement; paper and punctuation do not address finish-of-shift review. 這個班別結束前／四點半. English options, zh-TW and each rationale checked; offline ASR and editorial review, not runtime acceptance.",
+  "activeQuestion": {
+    "id": "t02-q017",
+    "testId": "test-02",
+    "number": 17,
+    "part": 2,
+    "groupId": "t02-g017",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "The chart is made of paper.",
+        "zh": "圖表是紙做的。",
+        "whyZh": "材質無法回應是否能在下班前檢視。"
+      },
+      {
+        "id": "B",
+        "text": "Yes, let us meet at four thirty.",
+        "zh": "可以，我們四點半碰面。",
+        "whyZh": "同意檢視並提出碰面時間，符合請求。"
+      },
+      {
+        "id": "C",
+        "text": "I ended it with a period.",
+        "zh": "我用句點結尾。",
+        "whyZh": "把 ends 當成句子結尾，與班別結束無關。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "同意檢視並提出碰面時間，符合請求。",
+    "evidence": "Can we review the yield chart before the shift ends?",
+    "vocabulary": [
+      {
+        "term": "yield",
+        "zh": "良率",
+        "note": "在此指製造過程中合格產出的比例，須配合圖表定義閱讀。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g017",
+    "testId": "test-02",
+    "part": 2,
+    "title": "Yield chart",
+    "titleZh": "良率圖表",
+    "topic": "manufacturing",
+    "passage": "Can we review the yield chart before the shift ends?\nA. The chart is made of paper.\nB. Yes, let us meet at four thirty.\nC. I ended it with a period.",
+    "passageZh": "我們可以在這個班別結束前檢視良率圖表嗎？\nA. 圖表是紙做的。\nB. 可以，我們四點半碰面。\nC. 我用句點結尾。",
+    "audioScript": "Can we review the yield chart before the shift ends?\nA. The chart is made of paper.\nB. Yes, let us meet at four thirty.\nC. I ended it with a period.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Can we review the yield chart before the shift ends?"
+      },
+      {
+        "voice": "female",
+        "text": "A. The chart is made of paper. B. Yes, let us meet at four thirty. C. I ended it with a period."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-06.mp3",
+    "duration": 17.232,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-PH",
+        "role": "male",
+        "modelVoice": "en-PH-JamesNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-PH",
+        "role": "female",
+        "modelVoice": "en-PH-RosaNeural"
+      }
+    ],
+    "audioStart": 18.928,
+    "audioEnd": 36.16
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "start": 18.63175,
+      "end": 19.7295,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "Number 17. (Confirmed in contiguous cue-bank transcript.)"
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-02-06.mp3",
+      "start": 17.56,
+      "end": 34.264,
+      "assetSha256": "ac26ea4dd5b9d5dc3ee9c947c77d49d98b88b3eca21f2abac194c217c460553e",
+      "speech": "Can we review the yield chart before the shift ends? A. The chart is made of paper. B. Yes, let us meet at 4.30. C. I ended it with a period."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-02-06.mp3",
+      "start": 18.928,
+      "end": 36.16,
+      "assetSha256": "c8b6d5ddf2cd18dc4b40063efccbe0dece355af41f1f12f4c573f18164303769",
+      "speech": "Can we review the yield chart before the shift ends? A. The chart is made of paper. B. Yes, let us meet at 4.30. C. I ended it with a period."
+    }
+  ]
+}
