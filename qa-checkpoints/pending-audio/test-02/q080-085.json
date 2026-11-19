@@ -1,0 +1,371 @@
+{
+  "status": "pending-audio-confirmation-not-verified",
+  "items": [
+    {
+      "number": 80,
+      "id": "t02-q080",
+      "groupId": "t02-g048",
+      "blindAnswer": "A",
+      "writtenWhy": "Charge tonight and check demonstration mode; no shipping/removing forms/unlocking menu.",
+      "writtenStatus": "unique-answer",
+      "audioStatus": "hold",
+      "audioWhy": "G048 formal/practice same exact samples. Full ASR 'the charging cable' and 'Please chat the units' vs authored 'a charging cable' and 'Please charge the units'; tempo retries yield 'start' or 'chat', both unresolved. Cue and stem match. Not proof recording deviates.",
+      "clips": [
+        "080-cue",
+        "080-passage",
+        "080-question",
+        "080-practice"
+      ]
+    },
+    {
+      "number": 81,
+      "id": "t02-q081",
+      "groupId": "t02-g048",
+      "blindAnswer": "D",
+      "writtenWhy": "Some functions still under development; language, removed batteries and completed forms unstated.",
+      "writtenStatus": "unique-answer",
+      "audioStatus": "hold",
+      "audioWhy": "Own stem/cue and answer clause match, but unresolved shared G048 passage ('the/a charging cable', 'chat/start/charge') must not be marked fully verified.",
+      "clips": [
+        "080-cue",
+        "080-passage",
+        "081-question",
+        "080-practice"
+      ]
+    },
+    {
+      "number": 82,
+      "id": "t02-q082",
+      "groupId": "t02-g048",
+      "blindAnswer": "C",
+      "writtenWhy": "Use a spare and log event; no promise, cancellation or visitor repair.",
+      "writtenStatus": "unique-answer",
+      "audioStatus": "hold",
+      "audioWhy": "Own stem/cue and answer clause match, but unresolved shared G048 passage ('the/a charging cable', 'chat/start/charge') must not be marked fully verified.",
+      "clips": [
+        "080-cue",
+        "080-passage",
+        "082-question",
+        "080-practice"
+      ]
+    },
+    {
+      "number": 83,
+      "id": "t02-q083",
+      "groupId": "t02-g049",
+      "blindAnswer": "B",
+      "writtenWhy": "By 11 Friday; 4:30 is resumption, no Saturday midnight, deadline before count.",
+      "writtenStatus": "unique-answer",
+      "audioStatus": "hold",
+      "audioWhy": "Exact group cue and own spoken number/stem match. Both modes use byte-identical waveform. Full ASR urgent→agent, cartons→cut-ins, normal→no more; targeted 0.86x and 1.14x failed to confirm the intended words. Q085 4:30 and Pine graphic corroborated; recording difference unproven.",
+      "clips": [
+        "083-cue",
+        "083-passage",
+        "083-question",
+        "083-practice"
+      ]
+    },
+    {
+      "number": 84,
+      "id": "t02-q084",
+      "groupId": "t02-g049",
+      "blindAnswer": "B",
+      "writtenWhy": "Assign one person to verify quantities; no tour, label replacement or airport shift.",
+      "writtenStatus": "unique-answer",
+      "audioStatus": "hold",
+      "audioWhy": "Exact group cue and own spoken number/stem match. Both modes use byte-identical waveform. Full ASR urgent→agent, cartons→cut-ins, normal→no more; targeted 0.86x and 1.14x failed to confirm the intended words. Q085 4:30 and Pine graphic corroborated; recording difference unproven.",
+      "clips": [
+        "083-cue",
+        "083-passage",
+        "084-question",
+        "083-practice"
+      ]
+    },
+    {
+      "number": 85,
+      "id": "t02-q085-v2",
+      "groupId": "t02-g049",
+      "blindAnswer": "D",
+      "writtenWhy": "Read 4:30 p.m. from talk and Pine from chart; 11/noon/4 correspond to Maple/Oak/Cedar.",
+      "writtenStatus": "unique-answer",
+      "audioStatus": "hold",
+      "audioWhy": "Exact group cue and own spoken number/stem match. Both modes use byte-identical waveform. Full ASR urgent→agent, cartons→cut-ins, normal→no more; targeted 0.86x and 1.14x failed to confirm the intended words. Q085 4:30 and Pine graphic corroborated; recording difference unproven.",
+      "clips": [
+        "083-cue",
+        "083-passage",
+        "085-question",
+        "083-practice"
+      ]
+    }
+  ],
+  "frames": [
+    {
+      "src": "audio/formal/test-02-cues-04.mp3",
+      "start": 64.73046,
+      "end": 67.63854,
+      "duration": 2.90808,
+      "kind": "audio",
+      "role": "cue",
+      "part": 4,
+      "groupId": "t02-g048",
+      "at": 2132.95781,
+      "name": "080-cue",
+      "mode": "formal",
+      "asr_file": "test02-q080-091-audio/080-cue.pad.wav.txt",
+      "observed": "Questions 80 through 82. Listen to the talk.",
+      "sourceSha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+      "inputWavSha256": "95bc25f81ae1b57a985879990c8528ac5d6a99e8a365cdb5a14e9c957c13ff62"
+    },
+    {
+      "src": "audio/azure-v1/test-02-25.mp3",
+      "start": 0.5,
+      "end": 30.5,
+      "duration": 30.0,
+      "kind": "audio",
+      "role": "passage",
+      "part": 4,
+      "groupId": "t02-g048",
+      "at": 2135.86589,
+      "speakers": [
+        {
+          "speaker": "male",
+          "locale": "en-KE",
+          "role": "male",
+          "modelVoice": "en-KE-ChilembaNeural"
+        }
+      ],
+      "name": "080-passage",
+      "mode": "formal",
+      "asr_file": "test02-q080-091-audio/080-passage.wav.txt",
+      "observed": "Thank you for helping with tomorrow's product demonstration.\n Each table will have a prototype, the charging cable, and a feedback form.\n Please chat the units tonight and check that the demonstration mode is enabled.\n Visitors may try the touch controls, but the settings menu should remain locked\n because some functions are still under development.\n If a unit freezes, use the spare at the reception table and record the event.\n We want detailed feedback rather than estimates of when the product will ship.",
+      "sourceSha256": "9adcdbc5df8f998be9f3496b14cb9d1abddf809c89c913ca0661d2c5ab3fe527",
+      "inputWavSha256": "5ab0505aa24ad06724917c79f32192ee21e58cf2c7cfa8fdbd17b8d44fa25a3b"
+    },
+    {
+      "src": "audio/formal/test-02-cues-04.mp3",
+      "start": 67.88854,
+      "end": 70.10896,
+      "duration": 2.22042,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t02-g048",
+      "questionId": "t02-q080",
+      "at": 2165.86589,
+      "name": "080-question",
+      "mode": "formal",
+      "asr_file": "test02-q080-091-audio/080-question.pad.wav.txt",
+      "observed": "Number 80, what should staff do tonight?",
+      "sourceSha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+      "inputWavSha256": "79de88dca5fe3da5015048232386bd64b0bf3d9d9c38d3b8778396aca9a47758"
+    },
+    {
+      "src": "audio/formal/test-02-cues-05.mp3",
+      "start": 0.25,
+      "end": 3.67575,
+      "duration": 3.42575,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t02-g048",
+      "questionId": "t02-q081",
+      "at": 2179.37042,
+      "name": "081-question",
+      "mode": "formal",
+      "asr_file": "test02-q080-091-audio/081-question.pad.wav.txt",
+      "observed": "Number 81. Why should the settings menu remain locked?",
+      "sourceSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+      "inputWavSha256": "c93c4d8a23bd5607d08481f63bd88fe1442b11d912b202a562a1a89e2a527a85"
+    },
+    {
+      "src": "audio/formal/test-02-cues-05.mp3",
+      "start": 3.92575,
+      "end": 7.11358,
+      "duration": 3.18783,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t02-g048",
+      "questionId": "t02-q082",
+      "at": 2194.08028,
+      "name": "082-question",
+      "mode": "formal",
+      "asr_file": "test02-q080-091-audio/082-question.pad.wav.txt",
+      "observed": "Number 82. What should staff do if a unit freezes?",
+      "sourceSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+      "inputWavSha256": "a301d7947494a8e896a4a083e85bbdeaf90e7ab02ea452285ea852c381d7e455"
+    },
+    {
+      "src": "audio/formal/test-02-cues-05.mp3",
+      "start": 7.36358,
+      "end": 10.52187,
+      "duration": 3.15829,
+      "kind": "audio",
+      "role": "cue",
+      "part": 4,
+      "groupId": "t02-g049",
+      "at": 2208.55222,
+      "name": "083-cue",
+      "mode": "formal",
+      "asr_file": "test02-q080-091-audio/083-cue.pad.wav.txt",
+      "observed": "Questions 83-85. Listen to the talk.",
+      "sourceSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+      "inputWavSha256": "b1625690c560d85d27d0d4ca22afc3b11ca0eca8cc9f3d2e4b1706b59e097caa"
+    },
+    {
+      "src": "audio/azure-v1/test-02-26.mp3",
+      "start": 0.5,
+      "end": 30.86,
+      "duration": 30.36,
+      "kind": "audio",
+      "role": "passage",
+      "part": 4,
+      "groupId": "t02-g049",
+      "at": 2211.71051,
+      "speakers": [
+        {
+          "speaker": "female",
+          "locale": "en-NG",
+          "role": "female",
+          "modelVoice": "en-NG-EzinneNeural"
+        }
+      ],
+      "name": "083-passage",
+      "mode": "formal",
+      "asr_file": "test02-q080-091-audio/083-passage.wav.txt",
+      "observed": "The warehouse will conduct its quarterly inventory count on Friday afternoon.\n Material requests needed for Friday's production must reach us by 11 in the morning.\n Between noon and 4, only agent safety-related issues will be handled.\n Team leaders should assign one person to confirm quantities with warehouse staff.\n Please count sealed cut-ins according to the quantity on their labels unless the seal is damaged.\n No more material collection will resume at 4.30.",
+      "sourceSha256": "4597fce50a6581f52fcc8fb701c5070572754014d2703736162d64d19889d57a",
+      "inputWavSha256": "46fd60ee0c11dba9876098a24417b2a9d1ca3a696e9fe6730bf7abb74e8c3503"
+    },
+    {
+      "src": "audio/formal/test-02-cues-05.mp3",
+      "start": 10.77187,
+      "end": 14.29254,
+      "duration": 3.52067,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t02-g049",
+      "questionId": "t02-q083",
+      "at": 2242.07051,
+      "name": "083-question",
+      "mode": "formal",
+      "asr_file": "test02-q080-091-audio/083-question.pad.wav.txt",
+      "observed": "Number 83. When must production material requests arrive?",
+      "sourceSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+      "inputWavSha256": "7936d2f61358916a00a769fb8f1f693f2812531fc1c15ceca321e8ec1c7ca031"
+    },
+    {
+      "src": "audio/formal/test-02-cues-05.mp3",
+      "start": 14.54254,
+      "end": 17.31217,
+      "duration": 2.76963,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t02-g049",
+      "questionId": "t02-q084",
+      "at": 2256.87529,
+      "name": "084-question",
+      "mode": "formal",
+      "asr_file": "test02-q080-091-audio/084-question.pad.wav.txt",
+      "observed": "Number 84, what should team leaders arrange?",
+      "sourceSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+      "inputWavSha256": "fdbe60f04b6b7781356b67d6be92fa78a90e2c25b75e2ae7cb3238ab25fd2f81"
+    },
+    {
+      "src": "audio/formal/test-02-cues-05.mp3",
+      "start": 17.56217,
+      "end": 24.37687,
+      "duration": 6.81471,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t02-g049",
+      "questionId": "t02-q085-v2",
+      "at": 2270.92903,
+      "name": "085-question",
+      "mode": "formal",
+      "asr_file": "test02-q080-091-audio/085-question.pad.wav.txt",
+      "observed": "Number 85. Look at the graphic, which counter label matches the time normal material collection resumes.",
+      "sourceSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+      "inputWavSha256": "824f92ea01bc16e2660a7db18f87818550f8ccdfc9061425eae8d6caf532b6ea"
+    },
+    {
+      "src": "audio/azure-v1/test-02-25.mp3",
+      "start": 0.5,
+      "end": 30.5,
+      "name": "080-practice",
+      "role": "practice",
+      "groupId": "t02-g048",
+      "mode": "practice",
+      "asr_file": "test02-q080-091-audio/080-passage.wav.txt",
+      "observed": "Thank you for helping with tomorrow's product demonstration.\n Each table will have a prototype, the charging cable, and a feedback form.\n Please chat the units tonight and check that the demonstration mode is enabled.\n Visitors may try the touch controls, but the settings menu should remain locked\n because some functions are still under development.\n If a unit freezes, use the spare at the reception table and record the event.\n We want detailed feedback rather than estimates of when the product will ship.",
+      "sourceSha256": "9adcdbc5df8f998be9f3496b14cb9d1abddf809c89c913ca0661d2c5ab3fe527",
+      "inputWavSha256": "5ab0505aa24ad06724917c79f32192ee21e58cf2c7cfa8fdbd17b8d44fa25a3b"
+    },
+    {
+      "src": "audio/azure-v1/test-02-26.mp3",
+      "start": 0.5,
+      "end": 30.86,
+      "name": "083-practice",
+      "role": "practice",
+      "groupId": "t02-g049",
+      "mode": "practice",
+      "asr_file": "test02-q080-091-audio/083-passage.wav.txt",
+      "observed": "The warehouse will conduct its quarterly inventory count on Friday afternoon.\n Material requests needed for Friday's production must reach us by 11 in the morning.\n Between noon and 4, only agent safety-related issues will be handled.\n Team leaders should assign one person to confirm quantities with warehouse staff.\n Please count sealed cut-ins according to the quantity on their labels unless the seal is damaged.\n No more material collection will resume at 4.30.",
+      "sourceSha256": "4597fce50a6581f52fcc8fb701c5070572754014d2703736162d64d19889d57a",
+      "inputWavSha256": "46fd60ee0c11dba9876098a24417b2a9d1ca3a696e9fe6730bf7abb74e8c3503"
+    }
+  ],
+  "localizedRetries": {
+    "test02-q080-091-audio/080-retry-0.87.wav.txt": {
+      "text": "Each table will have a prototype, the charging cable and a feedback form.\n Please start the units tonight and check that the demonstration mode is enabled.",
+      "source": "audio/azure-v1/test-02-25.mp3",
+      "sourceSha256": "9adcdbc5df8f998be9f3496b14cb9d1abddf809c89c913ca0661d2c5ab3fe527",
+      "startSeconds": 3.5,
+      "endSecondsUpperBound": 30.5,
+      "processing": "11 seconds timed after atempo=0.87; 400ms front padding, 500ms requested tail padding; original processing command retained in retry log and review notes"
+    },
+    "test02-q080-091-audio/080-retry-1.13.wav.txt": {
+      "text": "Each table will have a prototype, the charging cable and a feedback form.\n Please chat the units tonight and check that the demonstration mode is enabled.\n Visitors may try the touch controls.",
+      "source": "audio/azure-v1/test-02-25.mp3",
+      "sourceSha256": "9adcdbc5df8f998be9f3496b14cb9d1abddf809c89c913ca0661d2c5ab3fe527",
+      "startSeconds": 3.5,
+      "endSecondsUpperBound": 30.5,
+      "processing": "11 seconds timed after atempo=1.13; 400ms front padding, 500ms requested tail padding; original processing command retained in retry log and review notes"
+    },
+    "test02-q080-091-audio/083-retry-cartons-normal-0.86.wav.txt": {
+      "text": "entities with warehouse stuff.\n Please counseled cut-ins according to the quantity on their labels unless the seal is\n damaged.\n No more material collection will resume at 4.30.\n [BLANK_AUDIO]",
+      "source": "audio/azure-v1/test-02-26.mp3",
+      "sourceSha256": "4597fce50a6581f52fcc8fb701c5070572754014d2703736162d64d19889d57a",
+      "startSeconds": 18.5,
+      "endSeconds": 30.86,
+      "processing": "Exact source WAV atrim before atempo=0.86, front padding .4s and tail padding .5s."
+    },
+    "test02-q080-091-audio/083-retry-cartons-normal-1.14.wav.txt": {
+      "text": "entities with warehouse stuff.\n Please count sealed cuttons according to the quantity on their labels unless the seal is damaged.\n No more material collection will resume at 4.30.",
+      "source": "audio/azure-v1/test-02-26.mp3",
+      "sourceSha256": "4597fce50a6581f52fcc8fb701c5070572754014d2703736162d64d19889d57a",
+      "startSeconds": 18.5,
+      "endSeconds": 30.86,
+      "processing": "Exact source WAV atrim before atempo=1.14, front padding .4s and tail padding .5s."
+    },
+    "test02-q080-091-audio/083-retry-urgent-0.86.wav.txt": {
+      "text": "Between noon and 4, only Adjensift related issues will be handled.",
+      "source": "audio/azure-v1/test-02-26.mp3",
+      "sourceSha256": "4597fce50a6581f52fcc8fb701c5070572754014d2703736162d64d19889d57a",
+      "startSeconds": 9.5,
+      "endSeconds": 15.5,
+      "processing": "Exact source WAV atrim before atempo=0.86, front padding .4s and tail padding .5s."
+    },
+    "test02-q080-091-audio/083-retry-urgent-1.14.wav.txt": {
+      "text": "Morning. Between noon and 4, only Adjunct Safety related issues will be handled.\n [BLANK_AUDIO]",
+      "source": "audio/azure-v1/test-02-26.mp3",
+      "sourceSha256": "4597fce50a6581f52fcc8fb701c5070572754014d2703736162d64d19889d57a",
+      "startSeconds": 9.5,
+      "endSeconds": 15.5,
+      "processing": "Exact source WAV atrim before atempo=1.14, front padding .4s and tail padding .5s."
+    }
+  }
+}

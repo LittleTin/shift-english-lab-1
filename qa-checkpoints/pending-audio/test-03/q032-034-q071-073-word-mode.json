@@ -1,0 +1,77 @@
+{
+  "testId": "test-03",
+  "scope": "Independent consistency check on held words; not independent recognizer or human audio review",
+  "method": "Decoded complete MP3 source to 16 kHz mono PCM; local Whisper base.en word mode (-sow -ml 1 -ojf, no prompt) across complete source. Word timestamps are decoder estimates, not acoustic boundaries. Confidence values are ASR token posteriors and do not prove pronunciation. Searched all three exam packs for same Azure voices with matched comparison words; no same-word independent references. FFmpeg asr backend was installed but had no usable local model and was not used as evidence.",
+  "holds": [
+    {
+      "questions": [
+        32,
+        33,
+        34
+      ],
+      "groupId": "t03-g032",
+      "source": "audio/azure-v1/test-03-12.mp3",
+      "sourceSha256": "75ebb83dacc7b205c938d9c89ce7fe15821c996c9356467c102f33e8231d2daf",
+      "samePracticeFormalRange": [
+        0.5,
+        47.54
+      ],
+      "voice": "en-ZA-LukeNeural",
+      "expected": [
+        "a blocked drain",
+        "cleaning the drain"
+      ],
+      "observations": [
+        {
+          "asr": "blocked rain",
+          "word": "rain",
+          "wordSourceRange": [
+            19.24,
+            19.51
+          ],
+          "wordTokenProbability": 0.916
+        },
+        {
+          "asr": "cleaning the train",
+          "word": "train",
+          "wordSourceRange": [
+            35.51,
+            35.85
+          ],
+          "wordTokenProbability": 0.857
+        }
+      ],
+      "decision": "hold, audio error not proven"
+    },
+    {
+      "questions": [
+        71,
+        72,
+        73
+      ],
+      "groupId": "t03-g045",
+      "source": "audio/azure-v1/test-03-25.mp3",
+      "sourceSha256": "95e920fcdedc5427c4e38c0fc6ee61b55b7b70a3ef8f377af5f72b900a33a30a",
+      "samePracticeFormalRange": [
+        0.5,
+        47.372
+      ],
+      "voice": "en-NG-EzinneNeural",
+      "expected": [
+        "large power saws"
+      ],
+      "observations": [
+        {
+          "asr": "large power source",
+          "word": "source",
+          "wordSourceRange": [
+            21.03,
+            21.9
+          ],
+          "wordTokenProbability": 0.908
+        }
+      ],
+      "decision": "hold, audio error not proven"
+    }
+  ]
+}

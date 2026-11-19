@@ -1,0 +1,188 @@
+{
+  "status": "pending-audio-confirmation-not-verified",
+  "items": [
+    {
+      "number": 59,
+      "id": "t02-q059",
+      "firstQuestionInGroup": 59,
+      "promptEn": "What change does the man request?",
+      "promptZh": "男方要求哪項變更？",
+      "auditedBestAnswer": "D",
+      "reasonZh": "六位改成四位；中午不變，不是加人或整筆取消。",
+      "supportEn": "I booked a table for six at noon, but two colleagues cannot come. Could you change it to four people?",
+      "formalSpokenQuestion": {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "srcSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+        "startSec": 37.00183,
+        "endSec": 40.07113,
+        "atSec": 1602.26061,
+        "segments": [
+          {
+            "text": "Number 59. What changed does the man request?",
+            "startMs": 0,
+            "endMs": 4180
+          }
+        ]
+      },
+      "practiceSpokenQuestion": null,
+      "practiceQuestionNote": "Part 3 practice loads dialogue only, then displays the written question. No per-question spoken practice component.",
+      "spokenQuestionStatus": "exact-word-hold",
+      "spokenQuestionHold": "Exact isolated and local three-question bank ASR report “What changed does the man request?” versus written “What change does the man request?” The answer and question intent are unaffected; 0.83× and 1.17× word decodes also report changed. Adjacent /d/ may lead an ASR merge but cannot be guessed.",
+      "groupDialogueStatus": "local-asr-matches"
+    }
+  ],
+  "groups": [
+    {
+      "firstQuestion": 65,
+      "cue": {
+        "src": "audio/formal/test-02-cues-03.mp3",
+        "srcSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+        "startSec": 60.36688,
+        "endSec": 64.48779,
+        "atSec": 1721.70031,
+        "segments": [
+          {
+            "text": "Questions 65 through 67, listen to the conversation.",
+            "startMs": 0,
+            "endMs": 5000
+          }
+        ]
+      },
+      "formalDialogue": {
+        "src": "audio/azure-v1/test-02-20.mp3",
+        "srcSha256": "656eeba61403cf941bfb69bccdb51d7b5848a1f0dc94d77c2daa24c1cabada1c",
+        "startSec": 0.5,
+        "endSec": 33.236,
+        "atSec": 1725.82123,
+        "segments": [
+          {
+            "text": "The clients flight now arrives at 10 instead of 8.",
+            "startMs": 0,
+            "endMs": 3760
+          },
+          {
+            "text": "We will not have time for both the factory tour and the morning presentation.",
+            "startMs": 3760,
+            "endMs": 9300
+          },
+          {
+            "text": "The client asks specifically to see the assembly line.",
+            "startMs": 9300,
+            "endMs": 13160
+          },
+          {
+            "text": "Let us keep the tour and send the presentation slides in advance.",
+            "startMs": 13160,
+            "endMs": 18020
+          },
+          {
+            "text": "All right.",
+            "startMs": 18020,
+            "endMs": 19780
+          },
+          {
+            "text": "I will move the question session to after lunch.",
+            "startMs": 19780,
+            "endMs": 23440
+          },
+          {
+            "text": "Can you update the visitor badges?",
+            "startMs": 23440,
+            "endMs": 26880
+          },
+          {
+            "text": "Yes. Please send me the final list of names before 3 today.",
+            "startMs": 26880,
+            "endMs": 31880
+          }
+        ]
+      },
+      "practiceDialogue": {
+        "src": "audio/azure-v1/test-02-20.mp3",
+        "srcSha256": "656eeba61403cf941bfb69bccdb51d7b5848a1f0dc94d77c2daa24c1cabada1c",
+        "startSec": 0.5,
+        "endSec": 33.236,
+        "atSec": null,
+        "segments": [
+          {
+            "text": "The clients flight now arrives at 10 instead of 8.",
+            "startMs": 0,
+            "endMs": 3760
+          },
+          {
+            "text": "We will not have time for both the factory tour and the morning presentation.",
+            "startMs": 3760,
+            "endMs": 9300
+          },
+          {
+            "text": "The client asks specifically to see the assembly line.",
+            "startMs": 9300,
+            "endMs": 13160
+          },
+          {
+            "text": "Let us keep the tour and send the presentation slides in advance.",
+            "startMs": 13160,
+            "endMs": 18020
+          },
+          {
+            "text": "All right.",
+            "startMs": 18020,
+            "endMs": 19780
+          },
+          {
+            "text": "I will move the question session to after lunch.",
+            "startMs": 19780,
+            "endMs": 23440
+          },
+          {
+            "text": "Can you update the visitor badges?",
+            "startMs": 23440,
+            "endMs": 26880
+          },
+          {
+            "text": "Yes. Please send me the final list of names before 3 today.",
+            "startMs": 26880,
+            "endMs": 31880
+          }
+        ]
+      },
+      "identicalDialogueRange": true,
+      "cueStatus": "matches-group-range-and-dialogue-cue",
+      "contentStatus": "exact-word-hold",
+      "uncertainties": [
+        "Shared formal/practice base ASR marks asks vs scripted asked in “The client asked specifically to see the assembly line.” 0.87× isolated word decoder gives asks; 1.13× gives scripted asked; conflicting ASR, not a verified source mismatch. No change to which activity is retained or why."
+      ]
+    }
+  ],
+  "localizedAsrRetries": {
+    "retry-q059-061-bank": " Number 59, what changed does the man request? Number 60, what food restriction is mentioned? Number 61, what will remain the same?",
+    "retry-q059-noun-0.83": " Number 59. What changed does the man request?",
+    "retry-q059-noun-1.17": " Number 59. What changed does the man request?",
+    "retry-q065-verb-0.87": " The client asks specifically to see the assembly line. Let us keep the tour.",
+    "retry-q065-verb-1.13": " The client asked specifically to see the assembly line. Let us keep the tour and send the presentation slides to the center."
+  },
+  "proposedEdits": [
+    {
+      "question": 60,
+      "option": "D",
+      "field": "whyZh",
+      "before": "男方特別要求把這項限制告知廚房。",
+      "after": "男方說有一位客人不能吃花生，並要求把這項限制告知廚房。",
+      "effect": "Place the actual listening evidence in both correct-option and whole-item rationale; no prompt/key change."
+    },
+    {
+      "question": 60,
+      "field": "explanationZh",
+      "before": "男方特別要求把這項限制告知廚房。",
+      "after": "男方說有一位客人不能吃花生，並要求把這項限制告知廚房。",
+      "effect": "No prompt/key change."
+    },
+    {
+      "question": 67,
+      "field": "prompt",
+      "before": "What does the woman need by three?",
+      "after": "What does the woman need before three?",
+      "effect": "Optional boundary precision: dialogue says before three, currently spoken and displayed question say by three. If adopted, synchronize formal spoken question and archive original; none of the answer choices depends on equality at 3:00."
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "status": "pending-audio-confirmation-not-verified",
+  "items": [
+    {
+      "number": 95,
+      "id": "t03-q095",
+      "groupId": "t03-g053",
+      "blindAnswer": "C",
+      "status": "hold",
+      "reason": "C: Supplier delivery was canceled, making the mushroom starter unavailable; same price salad offered, booking size unchanged, and chef offers substitution.",
+      "audioReview": "Group cue and numbered questions exact. Both modes are the same actual bytes and range. Key content clear and consistent: 14 at one long table, canceled supplier delivery, same-price salad, Monday evening vegetarian meal count, no payment needed now. Full and focused ASR say Mr. Chang rather than Chen; alternate rates retained that contrast. The full transcript also has send vs sent and in state vs instead, with matching response open and no key changes. Need independent exact acoustic review; not proof of incorrect recording.",
+      "audio": [
+        {
+          "mode": "cue",
+          "path": "audio/formal/test-03-cues-06.mp3",
+          "start": 0.25,
+          "end": 3.63379,
+          "assetSha256": "9f430340924f58a6fbfd974ab72cd67e7547780096cc11b1b677776d4a444d60",
+          "speech": "Questions 95 through 97. Listen to the talk."
+        },
+        {
+          "mode": "passage",
+          "path": "audio/azure-v1/test-03-33.mp3",
+          "start": 0.5,
+          "end": 51.404,
+          "assetSha256": "fc6a39c797bbfd6de0d48016855bc51d6a1a30fcaa784b379d27bc77da05cf26",
+          "speech": "Hello, Mr. Chang. This is Olivia from the Green Table restaurant, calling about your team's dinner on Wednesday. Your booking for 14 people is confirmed, and we can seat everyone at one long table as requested. There is one change to the menu I send you. The mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also need the final number of vegetarian meals by Monday evening, rather than Wednesday morning, so the kitchen can order ingredients. You don't need to pay anything now, your existing deposit still covers the booking. I look forward to hearing from you. [BLANK_AUDIO]",
+          "retries": {
+            "t03-g053-passage-retry-0-0.85": "Hello, Mr. Chang. This is Olivia from the Green Table restaurant, calling about your team's dinner on Wednesday.",
+            "t03-g053-passage-retry-0-1.15": "Hello, Mr Chang. This is Olivia from the Green Table Restaurant, calling about your team's dinner on Wednesday.",
+            "t03-g053-passage-retry-0-1": "Hello, Mr Chang. This is Olivia from the Green Table restaurant, calling about your team's dinner on Wednesday.",
+            "t03-g053-passage-retry-14.0-0.85": "as requested. There is one change to the menu I send you. The mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also...",
+            "t03-g053-passage-retry-14.0-1.15": "There is one change to the menu I send you, the mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also",
+            "t03-g053-passage-retry-14.0-1": "This is one change to the menu I send you. The mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also..."
+          }
+        },
+        {
+          "mode": "practice",
+          "path": "audio/azure-v1/test-03-33.mp3",
+          "start": 0.5,
+          "end": 51.404,
+          "assetSha256": "fc6a39c797bbfd6de0d48016855bc51d6a1a30fcaa784b379d27bc77da05cf26",
+          "speech": "Hello, Mr. Chang. This is Olivia from the Green Table restaurant, calling about your team's dinner on Wednesday. Your booking for 14 people is confirmed, and we can seat everyone at one long table as requested. There is one change to the menu I send you. The mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also need the final number of vegetarian meals by Monday evening, rather than Wednesday morning, so the kitchen can order ingredients. You don't need to pay anything now, your existing deposit still covers the booking. I look forward to hearing from you. [BLANK_AUDIO]",
+          "retries": {
+            "t03-g053-passage-retry-0-0.85": "Hello, Mr. Chang. This is Olivia from the Green Table restaurant, calling about your team's dinner on Wednesday.",
+            "t03-g053-passage-retry-0-1.15": "Hello, Mr Chang. This is Olivia from the Green Table Restaurant, calling about your team's dinner on Wednesday.",
+            "t03-g053-passage-retry-0-1": "Hello, Mr Chang. This is Olivia from the Green Table restaurant, calling about your team's dinner on Wednesday.",
+            "t03-g053-passage-retry-14.0-0.85": "as requested. There is one change to the menu I send you. The mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also...",
+            "t03-g053-passage-retry-14.0-1.15": "There is one change to the menu I send you, the mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also",
+            "t03-g053-passage-retry-14.0-1": "This is one change to the menu I send you. The mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also..."
+          }
+        },
+        {
+          "mode": "question",
+          "path": "audio/formal/test-03-cues-06.mp3",
+          "start": 3.88379,
+          "end": 7.88696,
+          "assetSha256": "9f430340924f58a6fbfd974ab72cd67e7547780096cc11b1b677776d4a444d60",
+          "speech": "Number 95, why is the restaurant suggesting a menu change?"
+        }
+      ],
+      "zhCorrections": [
+        {
+          "path": "options.C.whyZh",
+          "old": "供應商未送達，導致蘑菇前菜無法提供。",
+          "new": "供應商的配送取消，蘑菇前菜因此無法供應。"
+        },
+        {
+          "path": "explanationZh",
+          "old": "供應商未送達，導致蘑菇前菜無法提供。",
+          "new": "供應商的配送取消，蘑菇前菜因此無法供應。"
+        }
+      ]
+    },
+    {
+      "number": 96,
+      "id": "t03-q096",
+      "groupId": "t03-g053",
+      "blindAnswer": "A",
+      "status": "hold",
+      "reason": "A: Final vegetarian meal count by Monday evening, instead of Wednesday morning, lets kitchen order ingredients. No dimensions, guest cities, replacement supplier.",
+      "audioReview": "Group cue and numbered questions exact. Both modes are the same actual bytes and range. Key content clear and consistent: 14 at one long table, canceled supplier delivery, same-price salad, Monday evening vegetarian meal count, no payment needed now. Full and focused ASR say Mr. Chang rather than Chen; alternate rates retained that contrast. The full transcript also has send vs sent and in state vs instead, with matching response open and no key changes. Need independent exact acoustic review; not proof of incorrect recording.",
+      "audio": [
+        {
+          "mode": "cue",
+          "path": "audio/formal/test-03-cues-06.mp3",
+          "start": 0.25,
+          "end": 3.63379,
+          "assetSha256": "9f430340924f58a6fbfd974ab72cd67e7547780096cc11b1b677776d4a444d60",
+          "speech": "Questions 95 through 97. Listen to the talk."
+        },
+        {
+          "mode": "passage",
+          "path": "audio/azure-v1/test-03-33.mp3",
+          "start": 0.5,
+          "end": 51.404,
+          "assetSha256": "fc6a39c797bbfd6de0d48016855bc51d6a1a30fcaa784b379d27bc77da05cf26",
+          "speech": "Hello, Mr. Chang. This is Olivia from the Green Table restaurant, calling about your team's dinner on Wednesday. Your booking for 14 people is confirmed, and we can seat everyone at one long table as requested. There is one change to the menu I send you. The mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also need the final number of vegetarian meals by Monday evening, rather than Wednesday morning, so the kitchen can order ingredients. You don't need to pay anything now, your existing deposit still covers the booking. I look forward to hearing from you. [BLANK_AUDIO]",
+          "retries": {
+            "t03-g053-passage-retry-0-0.85": "Hello, Mr. Chang. This is Olivia from the Green Table restaurant, calling about your team's dinner on Wednesday.",
+            "t03-g053-passage-retry-0-1.15": "Hello, Mr Chang. This is Olivia from the Green Table Restaurant, calling about your team's dinner on Wednesday.",
+            "t03-g053-passage-retry-0-1": "Hello, Mr Chang. This is Olivia from the Green Table restaurant, calling about your team's dinner on Wednesday.",
+            "t03-g053-passage-retry-14.0-0.85": "as requested. There is one change to the menu I send you. The mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also...",
+            "t03-g053-passage-retry-14.0-1.15": "There is one change to the menu I send you, the mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also",
+            "t03-g053-passage-retry-14.0-1": "This is one change to the menu I send you. The mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also..."
+          }
+        },
+        {
+          "mode": "practice",
+          "path": "audio/azure-v1/test-03-33.mp3",
+          "start": 0.5,
+          "end": 51.404,
+          "assetSha256": "fc6a39c797bbfd6de0d48016855bc51d6a1a30fcaa784b379d27bc77da05cf26",
+          "speech": "Hello, Mr. Chang. This is Olivia from the Green Table restaurant, calling about your team's dinner on Wednesday. Your booking for 14 people is confirmed, and we can seat everyone at one long table as requested. There is one change to the menu I send you. The mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also need the final number of vegetarian meals by Monday evening, rather than Wednesday morning, so the kitchen can order ingredients. You don't need to pay anything now, your existing deposit still covers the booking. I look forward to hearing from you. [BLANK_AUDIO]",
+          "retries": {
+            "t03-g053-passage-retry-0-0.85": "Hello, Mr. Chang. This is Olivia from the Green Table restaurant, calling about your team's dinner on Wednesday.",
+            "t03-g053-passage-retry-0-1.15": "Hello, Mr Chang. This is Olivia from the Green Table Restaurant, calling about your team's dinner on Wednesday.",
+            "t03-g053-passage-retry-0-1": "Hello, Mr Chang. This is Olivia from the Green Table restaurant, calling about your team's dinner on Wednesday.",
+            "t03-g053-passage-retry-14.0-0.85": "as requested. There is one change to the menu I send you. The mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also...",
+            "t03-g053-passage-retry-14.0-1.15": "There is one change to the menu I send you, the mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also",
+            "t03-g053-passage-retry-14.0-1": "This is one change to the menu I send you. The mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also..."
+          }
+        },
+        {
+          "mode": "question",
+          "path": "audio/formal/test-03-cues-06.mp3",
+          "start": 8.13696,
+          "end": 12.03125,
+          "assetSha256": "9f430340924f58a6fbfd974ab72cd67e7547780096cc11b1b677776d4a444d60",
+          "speech": "Number 96. What information is needed by Monday evening?"
+        }
+      ],
+      "zhCorrections": [
+        {
+          "path": "promptZh",
+          "old": "星期一晚上前需要什麼資訊？",
+          "new": "最晚星期一晚上需要確認什麼資訊？"
+        }
+      ]
+    },
+    {
+      "number": 97,
+      "id": "t03-q097",
+      "groupId": "t03-g053",
+      "blindAnswer": "D",
+      "status": "hold",
+      "reason": "D: Existing deposit covers booking, so no additional payment now and salad is same price. It does not claim full cost is settled for all time.",
+      "audioReview": "Group cue and numbered questions exact. Both modes are the same actual bytes and range. Key content clear and consistent: 14 at one long table, canceled supplier delivery, same-price salad, Monday evening vegetarian meal count, no payment needed now. Full and focused ASR say Mr. Chang rather than Chen; alternate rates retained that contrast. The full transcript also has send vs sent and in state vs instead, with matching response open and no key changes. Need independent exact acoustic review; not proof of incorrect recording.",
+      "audio": [
+        {
+          "mode": "cue",
+          "path": "audio/formal/test-03-cues-06.mp3",
+          "start": 0.25,
+          "end": 3.63379,
+          "assetSha256": "9f430340924f58a6fbfd974ab72cd67e7547780096cc11b1b677776d4a444d60",
+          "speech": "Questions 95 through 97. Listen to the talk."
+        },
+        {
+          "mode": "passage",
+          "path": "audio/azure-v1/test-03-33.mp3",
+          "start": 0.5,
+          "end": 51.404,
+          "assetSha256": "fc6a39c797bbfd6de0d48016855bc51d6a1a30fcaa784b379d27bc77da05cf26",
+          "speech": "Hello, Mr. Chang. This is Olivia from the Green Table restaurant, calling about your team's dinner on Wednesday. Your booking for 14 people is confirmed, and we can seat everyone at one long table as requested. There is one change to the menu I send you. The mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also need the final number of vegetarian meals by Monday evening, rather than Wednesday morning, so the kitchen can order ingredients. You don't need to pay anything now, your existing deposit still covers the booking. I look forward to hearing from you. [BLANK_AUDIO]",
+          "retries": {
+            "t03-g053-passage-retry-0-0.85": "Hello, Mr. Chang. This is Olivia from the Green Table restaurant, calling about your team's dinner on Wednesday.",
+            "t03-g053-passage-retry-0-1.15": "Hello, Mr Chang. This is Olivia from the Green Table Restaurant, calling about your team's dinner on Wednesday.",
+            "t03-g053-passage-retry-0-1": "Hello, Mr Chang. This is Olivia from the Green Table restaurant, calling about your team's dinner on Wednesday.",
+            "t03-g053-passage-retry-14.0-0.85": "as requested. There is one change to the menu I send you. The mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also...",
+            "t03-g053-passage-retry-14.0-1.15": "There is one change to the menu I send you, the mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also",
+            "t03-g053-passage-retry-14.0-1": "This is one change to the menu I send you. The mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also..."
+          }
+        },
+        {
+          "mode": "practice",
+          "path": "audio/azure-v1/test-03-33.mp3",
+          "start": 0.5,
+          "end": 51.404,
+          "assetSha256": "fc6a39c797bbfd6de0d48016855bc51d6a1a30fcaa784b379d27bc77da05cf26",
+          "speech": "Hello, Mr. Chang. This is Olivia from the Green Table restaurant, calling about your team's dinner on Wednesday. Your booking for 14 people is confirmed, and we can seat everyone at one long table as requested. There is one change to the menu I send you. The mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also need the final number of vegetarian meals by Monday evening, rather than Wednesday morning, so the kitchen can order ingredients. You don't need to pay anything now, your existing deposit still covers the booking. I look forward to hearing from you. [BLANK_AUDIO]",
+          "retries": {
+            "t03-g053-passage-retry-0-0.85": "Hello, Mr. Chang. This is Olivia from the Green Table restaurant, calling about your team's dinner on Wednesday.",
+            "t03-g053-passage-retry-0-1.15": "Hello, Mr Chang. This is Olivia from the Green Table Restaurant, calling about your team's dinner on Wednesday.",
+            "t03-g053-passage-retry-0-1": "Hello, Mr Chang. This is Olivia from the Green Table restaurant, calling about your team's dinner on Wednesday.",
+            "t03-g053-passage-retry-14.0-0.85": "as requested. There is one change to the menu I send you. The mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also...",
+            "t03-g053-passage-retry-14.0-1.15": "There is one change to the menu I send you, the mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also",
+            "t03-g053-passage-retry-14.0-1": "This is one change to the menu I send you. The mushroom starter is unavailable because our supplier's delivery was cancelled. The chef can offer a roasted vegetable salad at the same price in state. Please let me know whether that substitution is acceptable. I also..."
+          }
+        },
+        {
+          "mode": "question",
+          "path": "audio/formal/test-03-cues-06.mp3",
+          "start": 12.28125,
+          "end": 15.32821,
+          "assetSha256": "9f430340924f58a6fbfd974ab72cd67e7547780096cc11b1b677776d4a444d60",
+          "speech": "Number 97. What does the speaker say about payment?"
+        }
+      ],
+      "zhCorrections": [
+        {
+          "path": "options.A.whyZh",
+          "old": "沒有欠款，反而不用現在付。",
+          "new": "講者說現在不用再付費，沒有說全額款項已逾期。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "status": "physical-audio-and-authored-boundary-only",
+  "durationSec": 2700,
+  "notBrowserAcceptance": true,
+  "exams": {
+    "test-02": {
+      "lastListeningAnswer": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.284030000000202,
+        "part": 4,
+        "groupId": "t02-g054",
+        "questionId": "t02-q100",
+        "at": 2679.33197
+      },
+      "physicalClosingFrame": {
+        "src": "audio/formal-v2/narrator-03.mp3",
+        "start": 33.232,
+        "end": 42.616,
+        "duration": 9.384,
+        "kind": "audio",
+        "role": "closing",
+        "part": 4,
+        "groupId": "t02-g054",
+        "at": 2690.616
+      },
+      "decodedReadingTransition": {
+        "src": "audio/formal-v2/narrator-03.mp3",
+        "srcSha256": "3d48bf365e43344f05bdf00d862b20d2e1ecc060d9ecdf78ebd1b0e810c2f93c",
+        "startSec": 33.232,
+        "endSec": 42.616,
+        "atSec": 2690.616,
+        "segments": [
+          {
+            "text": "This is the end of the listening test.",
+            "startMs": 0,
+            "endMs": 2720
+          },
+          {
+            "text": "You will now begin the reading test.",
+            "startMs": 2720,
+            "endMs": 5520
+          },
+          {
+            "text": "You have 75 minutes for the reading section.",
+            "startMs": 5520,
+            "endMs": 8400
+          }
+        ]
+      },
+      "adjacentNoGapOrOverlap": true,
+      "authoredReadingStartSec": 2700,
+      "closingWordingCheck": "Closing explicitly ends listening, begins reading, and grants 75 minutes.",
+      "scopeLimit": "Validates authored timing and the actual spoken handoff, not the browser timer or UI state."
+    },
+    "test-03": {
+      "mode": "closing",
+      "path": "audio/formal-v2/narrator-03.mp3",
+      "start": 33.232,
+      "end": 42.616,
+      "assetSha256": "3d48bf365e43344f05bdf00d862b20d2e1ecc060d9ecdf78ebd1b0e810c2f93c",
+      "speech": "This is the end of the listening test. You will now begin the reading test. You have 75 minutes for the reading section.",
+      "timelineStart": 2690.616,
+      "timelineEnd": 2700.0
+    }
+  }
+}
