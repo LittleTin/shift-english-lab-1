@@ -1,0 +1,379 @@
+{
+  "status": "held-mutually-exclusive-alternative-training-draft-no-audio-or-promotion",
+  "scope": "Test02 Part4 Q071–073 g045 no graphic",
+  "sourceHash": "94bf9818a5fc6fc231fdbb46b0c84e1a63729b0bf7d85bf2da9bb216bb1bbf64",
+  "priorDraftPath": "qa-checkpoints/pending-audio/test-02/Q071-073/editorial-checked-pending-audio.json",
+  "oldGroupGuard": {
+    "id": "t02-g045",
+    "canonicalSha256": "034b3ae8d76d0eb41493b0cd2407eb383b03553679e7ff193d00bd6f09bfd28f",
+    "audio": {
+      "path": "audio/azure-v1/test-02-22.mp3",
+      "sha256": "9d53180853af9771c175446fdce1fd0bbc4ba52004742fb80f624e33baa21610",
+      "gitBlobSha1": "ffd9c6f5e10fc9c066d5adb04326993921525814"
+    },
+    "practiceRange": [
+      0.5,
+      31.316
+    ],
+    "voice": [
+      {
+        "speaker": "female",
+        "locale": "en-PH",
+        "role": "female",
+        "modelVoice": "en-PH-RosaNeural"
+      }
+    ]
+  },
+  "oldQuestions": [
+    {
+      "number": 71,
+      "id": "t02-q071",
+      "revision": 1,
+      "answer": "C",
+      "canonicalSha256": "f0c4622975aa0a314c2a98f2643bd1bc59c43192ee7849c4840b74f6c18ce720"
+    },
+    {
+      "number": 72,
+      "id": "t02-q072",
+      "revision": 1,
+      "answer": "C",
+      "canonicalSha256": "6134e3448c36308326a3915dc5a98c440bba0d044e40f665d3b7fded21a59399"
+    },
+    {
+      "number": 73,
+      "id": "t02-q073",
+      "revision": 1,
+      "answer": "B",
+      "canonicalSha256": "e672b1db56e1950d0930883257808627eb185d44da1bb022262ebfb59c836842"
+    }
+  ],
+  "oldOfficial": {
+    "audioEdition": "toeic-1",
+    "duration": 2700,
+    "groupFrameArraySha256Canonical": "80e452d9edb51e898d97a63e0b7a5b6211269c2803f6230d771158bf724e9d3a",
+    "frames": [
+      {
+        "src": "audio/formal-v2/narrator-02.mp3",
+        "start": 16.408,
+        "end": 31.384,
+        "duration": 14.976,
+        "kind": "audio",
+        "role": "direction",
+        "part": 4,
+        "groupId": "t02-g045",
+        "at": 1880.54127
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 21.79892,
+        "end": 25.20708,
+        "duration": 3.40817,
+        "kind": "audio",
+        "role": "cue",
+        "part": 4,
+        "groupId": "t02-g045",
+        "at": 1895.51727
+      },
+      {
+        "src": "audio/azure-v1/test-02-22.mp3",
+        "start": 0.5,
+        "end": 31.316,
+        "duration": 30.816,
+        "kind": "audio",
+        "role": "passage",
+        "part": 4,
+        "groupId": "t02-g045",
+        "at": 1898.92544,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-PH",
+            "role": "female",
+            "modelVoice": "en-PH-RosaNeural"
+          }
+        ]
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 25.45708,
+        "end": 28.23242,
+        "duration": 2.77533,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q071",
+        "at": 1929.74144
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q071",
+        "at": 1932.51677
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 28.48242,
+        "end": 31.23904,
+        "duration": 2.75663,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q072",
+        "at": 1943.80088
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q072",
+        "at": 1946.55751
+      },
+      {
+        "src": "audio/formal/test-02-cues-04.mp3",
+        "start": 31.48904,
+        "end": 34.94821,
+        "duration": 3.45917,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q073",
+        "at": 1957.84162
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 4,
+        "groupId": "t02-g045",
+        "questionId": "t02-q073",
+        "at": 1961.30079
+      }
+    ],
+    "resources": [
+      {
+        "path": "audio/azure-v1/test-02-22.mp3",
+        "sha256": "9d53180853af9771c175446fdce1fd0bbc4ba52004742fb80f624e33baa21610",
+        "gitBlobSha1": "ffd9c6f5e10fc9c066d5adb04326993921525814"
+      },
+      {
+        "path": "audio/formal-v2/narrator-02.mp3",
+        "sha256": "000f8c613a6bbc765516c11a020fc3298c92e9dfc7695110e68b0eab8aba0a63",
+        "gitBlobSha1": "74e829940b327e618061ffbe02562d40ee201144"
+      },
+      {
+        "path": "audio/formal/test-02-cues-04.mp3",
+        "sha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+        "gitBlobSha1": "156d99bfdf54d863fd98463417a43e0eb6573cec"
+      }
+    ]
+  },
+  "newDraftGroup": {
+    "id": "t02-g045-r2",
+    "testId": "test-02",
+    "part": 4,
+    "title": "Assembly shift revision briefing",
+    "titleZh": "作業改版班前說明",
+    "topic": "manufacturing",
+    "passage": "Revision C changes the connector step. To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session. Keep a clear paper trail. On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page. Yesterday’s shortage is over. Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only.",
+    "passageZh": "C 版變更了連接器的安裝步驟。要開始組裝，必須先參加早上的說明會，再簽署紀錄。若錯過說明會，就先替已封箱的產品貼標，等下一場。要保留清楚、可追查的書面紀錄。訓練表上若寫錯，只用一條線劃掉錯誤，並在更正處簽上姓名縮寫；線長會把同一張表歸檔。不要把簽名抄到新表上。昨天的缺料已經解決，新補到的庫存已獲放行，可以用於組裝。昨天已拆封的料盤要留在待確認架上，等品管在標籤上簽核。產線要保持運作，但只能使用已獲放行的庫存。",
+    "audioScript": "Revision C changes the connector step. To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session. Keep a clear paper trail. On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page. Yesterday’s shortage is over. Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Revision C changes the connector step. To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session. Keep a clear paper trail. On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page. Yesterday’s shortage is over. Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only."
+      }
+    ],
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-PH",
+        "role": "female",
+        "modelVoice": "en-PH-RosaNeural"
+      }
+    ]
+  },
+  "draftActiveQuestions": [
+    {
+      "number": 71,
+      "id": "t02-q071-r2",
+      "groupId": "t02-g045-r2",
+      "revision": 2,
+      "testId": "test-02",
+      "part": 4,
+      "topic": "manufacturing",
+      "difficulty": "advanced",
+      "prompt": "One worker attended but hasn’t signed. The other missed the briefing. How can both contribute now?",
+      "promptZh": "一位員工參加了說明會，卻還沒簽名；另一位錯過說明會。現在怎麼安排，兩人都能立即做事？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Have both workers assemble if they sign the record now.",
+          "zh": "讓兩人現在都簽名，再一起組裝。",
+          "whyZh": "簽名不能取代參加說明會。錯過說明會的人仍不能組裝。"
+        },
+        {
+          "id": "B",
+          "text": "Let the worker who attended start assembly now and send the other to label boxes.",
+          "zh": "讓參加說明會的人立刻組裝，另一人去貼標。",
+          "whyZh": "錯過說明會的人確實可貼標，但參加過的人也要先簽名才能組裝。"
+        },
+        {
+          "id": "C",
+          "text": "Have the worker who attended sign, then assemble; send the other to label boxes.",
+          "zh": "讓參加說明會的人先簽名再組裝，另一人去貼標。",
+          "whyZh": "組裝需要同時參加說明會並簽名；已參加的人補簽後可組裝，錯過的人可在等待下一場時替已封箱的產品貼標。"
+        },
+        {
+          "id": "D",
+          "text": "Have both workers wait until the next briefing before doing any work.",
+          "zh": "兩人都等到下一場說明會後才開始工作。",
+          "whyZh": "已參加的人可以先簽名；錯過的人也可貼標，不必兩人都停止工作。"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "組裝需要同時參加說明會並簽名；已參加的人補簽後可組裝，錯過的人可在等待下一場時替已封箱的產品貼標。",
+      "evidence": "To assemble, attend the morning briefing and sign the record. If you miss the briefing, label sealed boxes until the next session.",
+      "vocabulary": [
+        {
+          "term": "briefing",
+          "zh": "工作說明會",
+          "note": "正式作業前的簡短說明或訓練。"
+        },
+        {
+          "term": "attend",
+          "zh": "參加",
+          "note": "此處指參加說明會，不只是事後簽名。"
+        }
+      ],
+      "difficultyWhy": "Combine independent worker attendance states, the additional sign-off gate, and the permissible interim activity. Do not infer approval from attendance alone."
+    },
+    {
+      "number": 72,
+      "id": "t02-q072-r2",
+      "groupId": "t02-g045-r2",
+      "revision": 2,
+      "testId": "test-02",
+      "part": 4,
+      "topic": "manufacturing",
+      "difficulty": "advanced",
+      "prompt": "Why does the speaker say, “Keep a clear paper trail”?",
+      "promptZh": "說話者為什麼說「Keep a clear paper trail」？",
+      "options": [
+        {
+          "id": "A",
+          "text": "To make sure the latest sheet replaces all original records.",
+          "zh": "確保最新版表單取代所有原始紀錄。",
+          "whyZh": "說話者說線長要歸檔的是同一張表，不是重新抄好的新表。"
+        },
+        {
+          "id": "B",
+          "text": "To let a later reviewer see the original entry and who corrected it.",
+          "zh": "讓之後查閱的人能看到原本寫了什麼，以及誰更正的。",
+          "whyZh": "錯誤只劃一條線，所以原文仍可辨識；在更正處留下姓名縮寫，再保留原表，就能查出誰做了更正。"
+        },
+        {
+          "id": "C",
+          "text": "To allow absent workers to reuse signatures that are already on file.",
+          "zh": "讓缺席的員工沿用已歸檔的簽名。",
+          "whyZh": "說話者明確禁止把簽名抄到新表上，並沒有准許他人沿用。"
+        },
+        {
+          "id": "D",
+          "text": "To prevent anyone from changing a training record after making a mistake.",
+          "zh": "防止寫錯後再更動訓練紀錄。",
+          "whyZh": "規定允許更正：只用一條線劃掉錯誤，並簽上姓名縮寫。不是禁止更正。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "錯誤只劃一條線，所以原文仍可辨識；在更正處留下姓名縮寫，再保留原表，就能查出誰做了更正。",
+      "evidence": "On the training sheet, cross out any mistake with one line and initial the correction. The line leader files that same sheet. Don’t copy signatures to a new page.",
+      "vocabulary": [
+        {
+          "term": "paper trail",
+          "zh": "可追查的書面紀錄",
+          "note": "並非字面上的紙路，而是足以還原某件事的紀錄。"
+        },
+        {
+          "term": "initial",
+          "zh": "簽上姓名縮寫",
+          "note": "此處作動詞，意指留名確認這次更正。"
+        }
+      ],
+      "difficultyWhy": "Infer the audit purpose of the figurative paper trail from correction initials, preserved original, and ban on duplicated signatures. No worker-allocation or stock answer is exposed."
+    },
+    {
+      "number": 73,
+      "id": "t02-q073-r2",
+      "groupId": "t02-g045-r2",
+      "revision": 2,
+      "testId": "test-02",
+      "part": 4,
+      "topic": "manufacturing",
+      "difficulty": "advanced",
+      "prompt": "A model has only yesterday’s opened trays left. Another model has fresh stock. The tray tags are unsigned. What should the crew produce now?",
+      "promptZh": "有一種型號只剩昨天已拆封的料盤，另一型號則有新料。料盤標籤還沒簽核。班組現在該做哪一種？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Continue the first model because the shortage has been resolved.",
+          "zh": "繼續做第一種型號，因為缺料已解決。",
+          "whyZh": "整體缺料解除不等於拆封料盤已獲核准；標籤還沒簽核，不能把這批料拿來組裝。"
+        },
+        {
+          "id": "B",
+          "text": "Continue the first model after a line leader initials the tray tags.",
+          "zh": "請線長在料盤標籤縮寫簽名後，繼續做第一種型號。",
+          "whyZh": "線長處理的是訓練表歸檔。料盤是否能使用要由品管簽核。"
+        },
+        {
+          "id": "C",
+          "text": "Stop producing both models until the opened trays are cleared.",
+          "zh": "兩種型號都停做，直到拆封料盤獲准。",
+          "whyZh": "料盤待確認不妨礙用新料組裝另一型號；無須兩種都停。"
+        },
+        {
+          "id": "D",
+          "text": "Build the other model with fresh stock and keep the opened trays on hold.",
+          "zh": "先用新料做另一型號，拆封料盤繼續放在待確認架。",
+          "whyZh": "昨天已拆封的料盤須等品管簽核。另一型號有可用新料，可以先改做該型號。"
+        }
+      ],
+      "answer": "D",
+      "explanationZh": "昨天已拆封的料盤須等品管簽核。另一型號有可用新料，可以先改做該型號。",
+      "evidence": "Fresh stock is cleared for assembly. Yesterday’s opened trays stay on the hold rack until Quality signs their tags. Keep the line working, but use cleared stock only.",
+      "vocabulary": [
+        {
+          "term": "fresh stock",
+          "zh": "新補到的庫存",
+          "note": "此處指可直接投入組裝的新補料，而不是仍待確認的拆封料盤。"
+        },
+        {
+          "term": "on hold",
+          "zh": "暫停使用；待確認",
+          "note": "未獲品管放行前不能投入組裝。"
+        }
+      ],
+      "difficultyWhy": "Separate resolved inventory shortage from batch-specific Quality clearance, then choose the allowed alternate-model production despite unavailable stock for the first model."
+    }
+  ],
+  "spokenWordCount": 94,
+  "groupQuestionsForExamAudio": [
+    "Number 71. One worker attended but hasn’t signed. The other missed the briefing. How can both contribute now?",
+    "Number 72. Why does the speaker say, “Keep a clear paper trail”?",
+    "Number 73. A model has only yesterday’s opened trays left. Another model has fresh stock. The tray tags are unsigned. What should the crew produce now?"
+  ],
+  "authoringNotes": [
+    "This shorter alternative grows from the original connector-revision training scenario; it does not invalidate or modify the archived packaging alternative. Choose only one confirmed variant for r2, or advance the revision if an ID is otherwise occupied.",
+    "Exact prior live MP3, cue/stem and old keys/scoring stay frozen; no stage edits yet. Preserve the original single en-PH-RosaNeural narrator, never mix voices between formal and practice for the shared talk.",
+    "Run independent blind solve and §1.1 adjudication on every item before any speech. Measure real rendered lengths; original passage is 30.816 s, no claim of fit. Retain native browser and 2700-second timing gates."
+  ],
+  "independentBlindStatus": "C/B/D, three genuine advanced inferences and no shared-key leak. Minor direct traceability and fresh-stock approval clarifications retained. No audio or timing acceptance."
+}

@@ -1,0 +1,100 @@
+{
+  "scope": "complete-ledger-structural-dry-run-not-release",
+  "workRef": "92bf2a621452ac8e54db87eb50f4f0cd9456c379",
+  "rotationBase": "8ab882d065cd33550ab8e694cc035c5135f1b146",
+  "audioStageReceiptSha256": "b58a19760e56d1349a53f526a9037aad0d2afcb3ceb13db97aeba3d5915c271b",
+  "audioStagePackSha256": {
+    "test-01": "b3a71869dfd1d0ec036ffe36c29d066ea05ec7bf08b105ed8c8b62e22bd17b9b",
+    "test-02": "9ec5c813dda01db241e4d21d81d3c025947d6f19a6c7f5a5007a9d8dfbb5c232",
+    "test-03": "af668512d7864d3af783c006d2930058d79c15d677c64bca924c5ff12afcfdc3"
+  },
+  "rotationRecipeCount": 60,
+  "rotationQuestionCount": 81,
+  "rawIssuePatterns": {
+    "absent media path": 20,
+    "changed ID has no matching prior identity": 5,
+    "item differs in baseline section or group; explicit layout change required": 31
+  },
+  "exams": {
+    "test-01": {
+      "accepted": 175,
+      "missingListening": [
+        27,
+        41,
+        42,
+        43,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        65,
+        66,
+        67,
+        74,
+        75,
+        76,
+        95,
+        96,
+        97
+      ],
+      "holds": 0,
+      "issues": 0
+    },
+    "test-02": {
+      "accepted": 180,
+      "missingListening": [
+        7,
+        8,
+        9,
+        27,
+        31,
+        41,
+        42,
+        43,
+        47,
+        48,
+        49,
+        71,
+        72,
+        73,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+      ],
+      "holds": 0,
+      "issues": 0
+    },
+    "test-03": {
+      "accepted": 187,
+      "missingListening": [
+        2,
+        11,
+        17,
+        32,
+        33,
+        34,
+        56,
+        57,
+        58,
+        71,
+        72,
+        73,
+        84
+      ],
+      "holds": 0,
+      "issues": 0
+    }
+  },
+  "difficultyGateComplete": false
+}

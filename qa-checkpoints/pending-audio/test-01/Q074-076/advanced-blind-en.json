@@ -1,0 +1,72 @@
+{
+  "title": "Switching booking apps without stopping service",
+  "script": "Our new booking app rolls out Monday. Green on the tracker means your test arrived. Wait for IT approval before choosing a slot. Monday teams need a spare computer for the full twenty minutes. Remote teams must reserve loan computers by Friday. Other approved teams switch Wednesday. We’re changing tyres while the bus keeps moving. The old app works on computers not being updated. If your working computer fails, the service desk takes new bookings. Only your team can finish bookings already open.",
+  "questions": [
+    {
+      "number": 74,
+      "prompt": "Which remote team can switch on Monday?",
+      "options": [
+        {
+          "text": "An approved team that reserved a fifteen-minute Monday loan on Friday.",
+          "id": "A"
+        },
+        {
+          "text": "An approved team that reserved a twenty-five-minute Monday loan on Friday.",
+          "id": "B"
+        },
+        {
+          "text": "A team with no IT approval, a green tracker and a twenty-five-minute Monday loan reserved Friday.",
+          "id": "C"
+        },
+        {
+          "text": "An approved team that first reserves its twenty-five-minute Monday loan on Saturday.",
+          "id": "D"
+        }
+      ]
+    },
+    {
+      "number": 75,
+      "prompt": "Both computers are ready to update. What does the bus comparison suggest?",
+      "options": [
+        {
+          "text": "Update both at once, then reopen bookings after twenty minutes.",
+          "id": "A"
+        },
+        {
+          "text": "Use both computers to take bookings and put off the change indefinitely.",
+          "id": "B"
+        },
+        {
+          "text": "Update both and send all bookings, including unfinished ones, to the service desk.",
+          "id": "C"
+        },
+        {
+          "text": "Update one while the other keeps taking bookings, then switch roles when the first works.",
+          "id": "D"
+        }
+      ]
+    },
+    {
+      "number": 76,
+      "prompt": "The tracker is green. IT hasn’t approved the team. Its computer fails mid-booking with a new caller waiting. What should it do?",
+      "options": [
+        {
+          "text": "Wait for IT approval to update, keep the open booking with the team, and send the new caller to the service desk.",
+          "id": "A"
+        },
+        {
+          "text": "Update now, keep the open booking with the team, and send the new caller to the service desk.",
+          "id": "B"
+        },
+        {
+          "text": "Wait for IT approval to update, send the open booking to the service desk, and handle the new caller yourself.",
+          "id": "C"
+        },
+        {
+          "text": "Wait for IT approval to update and let the service desk take both bookings for now.",
+          "id": "D"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "status": "conditional-held-draft-not-rendered",
+  "pin": "68f4c07990c6f2ec2eb3e9ca704c6e02ecbf3b28",
+  "testId": "test-01",
+  "groupId": "t01-g053",
+  "keys": [
+    "D",
+    "B",
+    "C"
+  ],
+  "speech": "Welcome to the Harbor History Museum. Regular admission includes the permanent collection and today's guided tour at two thirty. The photography exhibition upstairs needs its own ticket, sold at the information desk. To borrow a free audio guide, leave a photo ID with the attendant. You'll get your ID back after returning the guide. Put bulky luggage in the lockers by the entrance. The museum closes at six. The photography exhibition stops admitting visitors at five.",
+  "speechZh": "歡迎來到 Harbor History Museum。一般門票包含常設展，以及今天兩點半的導覽。樓上的攝影特展須另購門票，可在服務台購買。若要免費借用語音導覽機，請把附照片的身分證明文件留給服務人員。歸還導覽機後即可領回證件。大件行李請放在入口旁的置物櫃。博物館六點閉館。攝影特展最後入場時間是五點。",
+  "voice": "en-KE-ChilembaNeural",
+  "locale": "en-KE",
+  "chars": 471,
+  "words": 76,
+  "oldExactSharedAudio": {
+    "name": "passage",
+    "role": "passage",
+    "src": "audio/azure-v1/test-01-33.mp3",
+    "start": 0.5,
+    "end": 34.364,
+    "sha256": "1cb122e5342163330fd1fb1c4c7394f6944de93c4ce1dd43b42b2960fbac75ec",
+    "questionId": null,
+    "timeline": 2534.82436
+  },
+  "reusableCueAndStems": [
+    {
+      "name": "cue",
+      "role": "cue",
+      "src": "audio/formal/test-01-cues-06.mp3",
+      "start": 16.46487,
+      "end": 19.84867,
+      "sha256": "2337fe71d1c63145b612d550acc785e0342b6af6749661ea7ae3434b17cbba4d",
+      "questionId": null,
+      "timeline": 2531.44057
+    },
+    {
+      "name": "t01-q095",
+      "role": "question",
+      "src": "audio/formal/test-01-cues-06.mp3",
+      "start": 20.09867,
+      "end": 24.08429,
+      "sha256": "2337fe71d1c63145b612d550acc785e0342b6af6749661ea7ae3434b17cbba4d",
+      "questionId": "t01-q095",
+      "timeline": 2568.68836
+    },
+    {
+      "name": "t01-q096",
+      "role": "question",
+      "src": "audio/formal/test-01-cues-06.mp3",
+      "start": 24.33429,
+      "end": 27.93358,
+      "sha256": "2337fe71d1c63145b612d550acc785e0342b6af6749661ea7ae3434b17cbba4d",
+      "questionId": "t01-q096",
+      "timeline": 2581.24966
+    },
+    {
+      "name": "t01-q097",
+      "role": "question",
+      "src": "audio/formal/test-01-cues-06.mp3",
+      "start": 28.18358,
+      "end": 32.98704,
+      "sha256": "2337fe71d1c63145b612d550acc785e0342b6af6749661ea7ae3434b17cbba4d",
+      "questionId": "t01-q097",
+      "timeline": 2593.42462
+    }
+  ],
+  "anchors": {
+    "95": "Regular admission includes the permanent collection and today's guided tour at two thirty.",
+    "96": "To borrow a free audio guide, leave a photo ID with the attendant.",
+    "97": "The museum closes at six. The photography exhibition stops admitting visitors at five."
+  },
+  "recommendedQ095Zh": "一般門票包含下列哪一項？",
+  "editorial": "Q095 original zh-TW calls all choices 活動 while EN asks what is included; neutral refinement avoids priming the tour. Answer keys/topics/choices (and any adopted stems/cue exact) unchanged. Update passage evidence and vocabulary definitions where appropriate. Do not treat conditional draft as verified or render-edited. Preserve exact old attempt and current 2700-second guard."
+}

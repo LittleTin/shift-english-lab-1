@@ -1,0 +1,677 @@
+{
+  "status": "fictional-editorial-and-tts-input-draft-no-media-no-checkpoint",
+  "sourceGuard": {
+    "gitPin": "3cf8fbd7d12f1f446048dfa651f896a565fcffc8",
+    "rawPackSha256": "3e13a67918349a8298f0de04f66c377d85ef8ee684ba690d81d2ec65cafb4f1e",
+    "oldPlanCanonicalSha256": "b8d12885a129573e46b0424bb33f43753620f783d505d2f4d4154fa209fdf21f",
+    "oldQuestionCanonicalSha256": {
+      "t01-q074": "abc48f4dbb7a35d508d29cb691240060aa6837e91a3c39e16158e3836afcd725",
+      "t01-q075": "0675e7fcdcbb6cdcb71b37305a21d1e15354fb42b3ab427450f09435fda22671",
+      "t01-q076": "992c1136eafbd040a9f6a9b59797a00626e826eb9ff01e523154dee9c6480f91"
+    },
+    "oldGroupCanonicalSha256": "3a0fc9d6e6f9c982994fbacd119e46628e40cf229bcd0800af865ed14733bba5",
+    "oldGroup": {
+      "id": "t01-g046",
+      "testId": "test-01",
+      "part": 4,
+      "title": "Supplier-portal sign-in",
+      "titleZh": "供應商入口網站登入",
+      "topic": "technology",
+      "passage": "This is a message from the IT service desk. On Thursday evening, we will enable two-step sign-in for the supplier portal. You will still use your usual password, but you will also need a code from the authenticator application on your phone. Staff who use shared factory tablets should contact us before Thursday so we can arrange an approved alternative. Do not share an authentication code with a colleague or include it in a support ticket. Instructions are available on the intranet. We are holding a fifteen-minute setup session at eleven tomorrow in Training Room Two.",
+      "passageZh": "這是資訊服務台的通知。星期四晚上，我們會啟用供應商入口網站的兩步驟登入。你仍會使用原本的密碼，但也需要手機驗證器應用程式產生的驗證碼。使用工廠共用平板的同仁，請在星期四前聯絡我們，以便安排經核准的替代方式。不要把驗證碼分享給同事，也不要寫進客服工單。操作說明已放在內部網站。明天十一點，我們會在二號訓練教室舉辦十五分鐘的設定說明。",
+      "audioScript": "This is a message from the IT service desk. On Thursday evening, we will enable two-step sign-in for the supplier portal. You will still use your usual password, but you will also need a code from the authenticator application on your phone. Staff who use shared factory tablets should contact us before Thursday so we can arrange an approved alternative. Do not share an authentication code with a colleague or include it in a support ticket. Instructions are available on the intranet. We are holding a fifteen-minute setup session at eleven tomorrow in Training Room Two.",
+      "turns": [
+        {
+          "voice": "female",
+          "text": "This is a message from the IT service desk. On Thursday evening, we will enable two-step sign-in for the supplier portal. You will still use your usual password, but you will also need a code from the authenticator application on your phone. Staff who use shared factory tablets should contact us before Thursday so we can arrange an approved alternative. Do not share an authentication code with a colleague or include it in a support ticket. Instructions are available on the intranet. We are holding a fifteen-minute setup session at eleven tomorrow in Training Room Two."
+        }
+      ],
+      "audio": "audio/azure-v1/test-01-26.mp3",
+      "duration": 39.024,
+      "audioSpeakers": [
+        {
+          "speaker": "female",
+          "locale": "en-AU",
+          "role": "female",
+          "modelVoice": "en-AU-NatashaNeural"
+        }
+      ],
+      "audioStart": 0.5,
+      "audioEnd": 39.524
+    },
+    "oldItems": [
+      {
+        "id": "t01-q074",
+        "testId": "test-01",
+        "number": 74,
+        "part": 4,
+        "groupId": "t01-g046",
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "technology",
+          "main_idea"
+        ],
+        "prompt": "What change is being announced?",
+        "promptZh": "公告宣布什麼變更？",
+        "options": [
+          {
+            "id": "A",
+            "text": "The removal of all passwords.",
+            "zh": "移除所有密碼。",
+            "whyZh": "公告說仍然使用 usual password，沒有取消密碼。"
+          },
+          {
+            "id": "B",
+            "text": "An additional verification step for signing in.",
+            "zh": "登入時增加一道驗證步驟。",
+            "whyZh": "除了原本密碼，還需手機驗證器產生的碼，因此是增加驗證步驟，而非取消密碼。"
+          },
+          {
+            "id": "C",
+            "text": "The closure of the supplier portal.",
+            "zh": "關閉供應商入口網站。",
+            "whyZh": "入口網站繼續運作，只改變登入要求。"
+          },
+          {
+            "id": "D",
+            "text": "A new public customer website.",
+            "zh": "新的公開客戶網站。",
+            "whyZh": "對象是既有供應商入口網站，不是發布新公共網站。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "除了原本密碼，還需手機驗證器產生的碼，因此是增加驗證步驟，而非取消密碼。",
+        "evidence": "we will enable two-step sign-in for the supplier portal.",
+        "vocabulary": [
+          {
+            "term": "two-step sign-in",
+            "zh": "兩步驟登入",
+            "note": "本情境結合原密碼與驗證器產生的碼。"
+          }
+        ],
+        "revision": 1
+      },
+      {
+        "id": "t01-q075",
+        "testId": "test-01",
+        "number": 75,
+        "part": 4,
+        "groupId": "t01-g046",
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "technology",
+          "requested_action"
+        ],
+        "prompt": "What should employees using shared factory tablets do?",
+        "promptZh": "使用工廠共用平板的員工應做什麼？",
+        "options": [
+          {
+            "id": "A",
+            "text": "Share an authentication code with coworkers.",
+            "zh": "與同事共用驗證碼。",
+            "whyZh": "公告明確禁止將驗證碼分享給同事。"
+          },
+          {
+            "id": "B",
+            "text": "Contact the IT service desk before Thursday.",
+            "zh": "在星期四以前聯絡資訊服務台。",
+            "whyZh": "公告要求這些人事先聯絡，好安排經核准替代方式；沒有允許自行共用驗證碼。"
+          },
+          {
+            "id": "C",
+            "text": "Write their code in a support ticket.",
+            "zh": "把驗證碼寫進客服工單。",
+            "whyZh": "公告直接說不要把碼放進工單。"
+          },
+          {
+            "id": "D",
+            "text": "Discard the tablets immediately.",
+            "zh": "立即丟棄平板。",
+            "whyZh": "可安排替代登入方式，並沒有淘汰平板的要求。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "公告要求這些人事先聯絡，好安排經核准替代方式；沒有允許自行共用驗證碼。",
+        "evidence": "Staff who use shared factory tablets should contact us before Thursday",
+        "vocabulary": [
+          {
+            "term": "approved alternative",
+            "zh": "經核准的替代方式",
+            "note": "由負責單位確認可採用的其他方案。"
+          }
+        ],
+        "revision": 1
+      },
+      {
+        "id": "t01-q076",
+        "testId": "test-01",
+        "number": 76,
+        "part": 4,
+        "groupId": "t01-g046",
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "technology",
+          "purpose"
+        ],
+        "prompt": "What is the purpose of tomorrow's session?",
+        "promptZh": "明天說明會的目的是什麼？",
+        "options": [
+          {
+            "id": "A",
+            "text": "To help staff set up the new sign-in method.",
+            "zh": "協助員工設定新的登入方式。",
+            "whyZh": "公告內容圍繞新登入要求，並安排 setup session，因此說明會協助完成登入設定。"
+          },
+          {
+            "id": "B",
+            "text": "To negotiate supplier prices.",
+            "zh": "議定供應商價格。",
+            "whyZh": "supplier portal 是系統名稱，並非採購議價會議。"
+          },
+          {
+            "id": "C",
+            "text": "To distribute new tablet computers.",
+            "zh": "發放新的平板電腦。",
+            "whyZh": "公告未說會發放硬體。"
+          },
+          {
+            "id": "D",
+            "text": "To train staff to repair phone batteries.",
+            "zh": "教員工維修手機電池。",
+            "whyZh": "手機僅用於驗證器，沒有維修內容。"
+          }
+        ],
+        "answer": "A",
+        "explanationZh": "公告內容圍繞新登入要求，並安排 setup session，因此說明會協助完成登入設定。",
+        "evidence": "We are holding a fifteen-minute setup session at eleven tomorrow in Training Room Two.",
+        "vocabulary": [
+          {
+            "term": "setup session",
+            "zh": "設定說明會",
+            "note": "協助使用者完成系統設定的短期活動。"
+          }
+        ],
+        "revision": 1
+      }
+    ],
+    "oldKeys": {
+      "t01-q074": "B",
+      "t01-q075": "B",
+      "t01-q076": "A"
+    },
+    "oldFrames": [
+      {
+        "src": "audio/formal/test-01-cues-04.mp3",
+        "start": 41.60942,
+        "end": 45.15729,
+        "duration": 3.54787,
+        "kind": "audio",
+        "role": "cue",
+        "part": 4,
+        "groupId": "t01-g046",
+        "at": 1958.57548
+      },
+      {
+        "src": "audio/azure-v1/test-01-26.mp3",
+        "start": 0.5,
+        "end": 39.524,
+        "duration": 39.024,
+        "kind": "audio",
+        "role": "passage",
+        "part": 4,
+        "groupId": "t01-g046",
+        "at": 1962.12335,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-AU",
+            "role": "female",
+            "modelVoice": "en-AU-NatashaNeural"
+          }
+        ]
+      },
+      {
+        "src": "audio/formal/test-01-cues-04.mp3",
+        "start": 45.40729,
+        "end": 48.12079,
+        "duration": 2.7135,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t01-g046",
+        "questionId": "t01-q074",
+        "at": 2001.14735
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 8.79994,
+        "part": 4,
+        "groupId": "t01-g046",
+        "questionId": "t01-q074",
+        "at": 2003.86085
+      },
+      {
+        "src": "audio/formal/test-01-cues-04.mp3",
+        "start": 48.37079,
+        "end": 52.74792,
+        "duration": 4.37713,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t01-g046",
+        "questionId": "t01-q075",
+        "at": 2012.66079
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 8.79994,
+        "part": 4,
+        "groupId": "t01-g046",
+        "questionId": "t01-q075",
+        "at": 2017.03792
+      },
+      {
+        "src": "audio/formal/test-01-cues-04.mp3",
+        "start": 52.99792,
+        "end": 56.3405,
+        "duration": 3.34258,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t01-g046",
+        "questionId": "t01-q076",
+        "at": 2025.83786
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 8.79994,
+        "part": 4,
+        "groupId": "t01-g046",
+        "questionId": "t01-q076",
+        "at": 2029.18044
+      }
+    ],
+    "oldPhysicalWindows": [
+      {
+        "src": "audio/formal/test-01-cues-04.mp3",
+        "start": 41.60942,
+        "end": 45.15729,
+        "duration": 3.54787,
+        "kind": "audio",
+        "role": "cue",
+        "part": 4,
+        "groupId": "t01-g046",
+        "at": 1958.57548,
+        "sha256": "818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0"
+      },
+      {
+        "src": "audio/azure-v1/test-01-26.mp3",
+        "start": 0.5,
+        "end": 39.524,
+        "duration": 39.024,
+        "kind": "audio",
+        "role": "passage",
+        "part": 4,
+        "groupId": "t01-g046",
+        "at": 1962.12335,
+        "speakers": [
+          {
+            "speaker": "female",
+            "locale": "en-AU",
+            "role": "female",
+            "modelVoice": "en-AU-NatashaNeural"
+          }
+        ],
+        "sha256": "1b00171aa1837d661eb9c58ef3eb748d8f56be1415ecd45e546ebaa7e24ad017"
+      },
+      {
+        "src": "audio/formal/test-01-cues-04.mp3",
+        "start": 45.40729,
+        "end": 48.12079,
+        "duration": 2.7135,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t01-g046",
+        "questionId": "t01-q074",
+        "at": 2001.14735,
+        "sha256": "818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0"
+      },
+      {
+        "src": "audio/formal/test-01-cues-04.mp3",
+        "start": 48.37079,
+        "end": 52.74792,
+        "duration": 4.37713,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t01-g046",
+        "questionId": "t01-q075",
+        "at": 2012.66079,
+        "sha256": "818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0"
+      },
+      {
+        "src": "audio/formal/test-01-cues-04.mp3",
+        "start": 52.99792,
+        "end": 56.3405,
+        "duration": 3.34258,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t01-g046",
+        "questionId": "t01-q076",
+        "at": 2025.83786,
+        "sha256": "818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0"
+      }
+    ],
+    "oldGroupStartAt": 1958.57548,
+    "followingUntouchedFrameAt": 2037.98038,
+    "holdPath": "qa-checkpoints/pending-audio/test-01/q074-076-retriage.json",
+    "holdFileSha256": "203d0ca544fd839666bb7f1f24aac20614400a8b420a28bcb13edbdd9db952e1"
+  },
+  "group": {
+    "id": "t01-g046-r2",
+    "testId": "test-01",
+    "part": 4,
+    "title": "Switching booking apps without stopping service",
+    "titleZh": "不中斷服務地切換預約系統",
+    "topic": "technology",
+    "passage": "Our new booking app rolls out Monday. Green on the tracker means your test arrived. Wait for IT approval before choosing a slot. Monday teams need a spare computer for the full twenty minutes. Remote teams must reserve loan computers by Friday. Other approved teams switch Wednesday. We’re changing tyres while the bus keeps moving. The old app works on computers not being updated. If your working computer fails, the service desk takes new bookings. Only your team can finish bookings already open.",
+    "passageZh": "我們的新預約系統從星期一開始上線。進度表顯示綠色，只代表收到了你們的測試。選時段前，要先等資訊部門核准。安排在星期一切換的團隊，整整二十分鐘都要有一台備用電腦。遠端團隊要借電腦，最晚要在星期五預約。其他已獲核准的團隊改在星期三切換。這就像公車還在開，我們就得換輪胎。沒有在更新的電腦仍可使用舊系統。如果手邊正在用的電腦故障，服務櫃檯可以接手新的預約。已經開始處理的預約，只有你們自己的團隊能完成。",
+    "audioScript": "Our new booking app rolls out Monday. Green on the tracker means your test arrived. Wait for IT approval before choosing a slot. Monday teams need a spare computer for the full twenty minutes. Remote teams must reserve loan computers by Friday. Other approved teams switch Wednesday. We’re changing tyres while the bus keeps moving. The old app works on computers not being updated. If your working computer fails, the service desk takes new bookings. Only your team can finish bookings already open.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Our new booking app rolls out Monday. Green on the tracker means your test arrived. Wait for IT approval before choosing a slot. Monday teams need a spare computer for the full twenty minutes. Remote teams must reserve loan computers by Friday. Other approved teams switch Wednesday. We’re changing tyres while the bus keeps moving. The old app works on computers not being updated. If your working computer fails, the service desk takes new bookings. Only your team can finish bookings already open."
+      }
+    ],
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-AU",
+        "role": "female",
+        "modelVoice": "en-AU-NatashaNeural"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "t01-q074-r2",
+      "testId": "test-01",
+      "number": 74,
+      "part": 4,
+      "groupId": "t01-g046-r2",
+      "topic": "technology",
+      "difficulty": "advanced",
+      "tags": [
+        "technology",
+        "workplace",
+        "inference"
+      ],
+      "prompt": "Which remote team can switch on Monday?",
+      "promptZh": "哪個遠端團隊可以在星期一切換系統？",
+      "options": [
+        {
+          "id": "A",
+          "text": "An approved team that reserved a fifteen-minute Monday loan on Friday.",
+          "zh": "已獲核准，星期五預約星期一借用電腦十五分鐘的團隊。",
+          "whyZh": "已核准且預約及時，但借用時間不到所需的二十分鐘。"
+        },
+        {
+          "id": "B",
+          "text": "An approved team that reserved a twenty-five-minute Monday loan on Friday.",
+          "zh": "已獲核准，星期五預約星期一借用電腦二十五分鐘的團隊。",
+          "whyZh": "已獲核准，星期五已預約借用，二十五分鐘也涵蓋完整的二十分鐘。"
+        },
+        {
+          "id": "C",
+          "text": "A team with no IT approval, a green tracker and a twenty-five-minute Monday loan reserved Friday.",
+          "zh": "尚未獲資訊部門核准，但進度表顯示綠色，且星期五已預約星期一借用電腦二十五分鐘的團隊。",
+          "whyZh": "綠色只表示已收到測試，不能當作資訊部門核准。"
+        },
+        {
+          "id": "D",
+          "text": "An approved team that first reserves its twenty-five-minute Monday loan on Saturday.",
+          "zh": "已獲核准，但到星期六才首次預約星期一借用電腦二十五分鐘的團隊。",
+          "whyZh": "雖然已核准且可借足二十分鐘，但星期六才預約已錯過星期五的期限。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "已獲核准，星期五已預約借用，二十五分鐘也涵蓋完整的二十分鐘。",
+      "evidence": "Wait for IT approval before choosing a slot. Monday teams need a spare computer for the full twenty minutes. Remote teams must reserve loan computers by Friday.",
+      "vocabulary": [
+        {
+          "term": "roll out",
+          "zh": "開始上線、分批推出",
+          "note": "此處指將新系統引進工作流程，不是一次停掉舊服務。"
+        },
+        {
+          "term": "reserve",
+          "zh": "預約",
+          "note": "reserve a loan computer 指先預約一台可借用的電腦。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t01-q075-r2",
+      "testId": "test-01",
+      "number": 75,
+      "part": 4,
+      "groupId": "t01-g046-r2",
+      "topic": "technology",
+      "difficulty": "advanced",
+      "tags": [
+        "technology",
+        "workplace",
+        "inference"
+      ],
+      "prompt": "Both computers are ready to update. What does the bus comparison suggest?",
+      "promptZh": "兩台電腦都已準備好更新。講者用行駛中的公車作比喻，暗示應怎麼做？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Update both at once, then reopen bookings after twenty minutes.",
+          "zh": "同時更新兩台，二十分鐘後再開放預約。",
+          "whyZh": "同時更新會中斷預約服務，不符合「車繼續開」的比喻。"
+        },
+        {
+          "id": "B",
+          "text": "Use both computers to take bookings and put off the change indefinitely.",
+          "zh": "兩台都照常處理預約，無限期推遲系統切換。",
+          "whyZh": "公車繼續開，但輪胎仍要換；比喻不是說永遠不更新。"
+        },
+        {
+          "id": "C",
+          "text": "Update both and send all bookings, including unfinished ones, to the service desk.",
+          "zh": "同時更新兩台，把所有預約連同未完成的都交給服務櫃檯。",
+          "whyZh": "服務櫃檯可接新的預約，未完成的只能由原團隊處理；這也不是正常切換的不中斷做法。"
+        },
+        {
+          "id": "D",
+          "text": "Update one while the other keeps taking bookings, then switch roles when the first works.",
+          "zh": "一台更新時，另一台照常接受預約；第一台恢復可用後，再交換兩台的工作。",
+          "whyZh": "「換輪胎」是切換系統，「公車繼續開」是維持預約服務。未更新的電腦仍可用舊系統，因此可分開更新與接單。"
+        }
+      ],
+      "answer": "D",
+      "explanationZh": "「換輪胎」是切換系統，「公車繼續開」是維持預約服務。未更新的電腦仍可用舊系統，因此可分開更新與接單。",
+      "evidence": "We’re changing tyres while the bus keeps moving. The old app works on computers not being updated.",
+      "vocabulary": [
+        {
+          "term": "change tyres while the bus keeps moving",
+          "zh": "一邊維持運作，一邊做系統變更",
+          "note": "講者以誇張的公車比喻形容不中斷服務的系統切換；不是要求真的維修車輛。"
+        },
+        {
+          "term": "switch roles",
+          "zh": "交換工作",
+          "note": "讓已完成更新的電腦接手預約，再更新另一台。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t01-q076-r2",
+      "testId": "test-01",
+      "number": 76,
+      "part": 4,
+      "groupId": "t01-g046-r2",
+      "topic": "technology",
+      "difficulty": "advanced",
+      "tags": [
+        "technology",
+        "workplace",
+        "inference"
+      ],
+      "prompt": "The tracker is green. IT hasn’t approved the team. Its computer fails mid-booking with a new caller waiting. What should it do?",
+      "promptZh": "進度表顯示綠色，但資訊部門尚未核准這個團隊更新。電腦故障時，有一筆預約正在處理，也有一位新來電者在等候。團隊應該怎麼做？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wait for IT approval to update, keep the open booking with the team, and send the new caller to the service desk.",
+          "zh": "等資訊部門核准後再更新，由原團隊接續處理已開啟的預約，並把新來電轉給服務櫃檯。",
+          "whyZh": "綠色只表示收到了測試，不能先更新。故障時，新預約交給服務櫃檯，已開始的預約仍由原團隊接續。"
+        },
+        {
+          "id": "B",
+          "text": "Update now, keep the open booking with the team, and send the new caller to the service desk.",
+          "zh": "立即更新，由原團隊接續處理已開啟的預約，並把新來電轉給服務櫃檯。",
+          "whyZh": "預約分流正確，但綠色不代表資訊部門已核准；電腦故障也不能取代核准。"
+        },
+        {
+          "id": "C",
+          "text": "Wait for IT approval to update, send the open booking to the service desk, and handle the new caller yourself.",
+          "zh": "等資訊部門核准後再更新，把已開啟的預約轉給服務櫃檯，由原團隊接新來電。",
+          "whyZh": "等待核准是對的，但分流做反了：服務櫃檯只接新預約，已開啟的預約只能由原團隊處理。"
+        },
+        {
+          "id": "D",
+          "text": "Wait for IT approval to update and let the service desk take both bookings for now.",
+          "zh": "等資訊部門核准後再更新，暫時把兩筆預約都交給服務櫃檯。",
+          "whyZh": "等待核准是對的，但服務櫃檯無法完成原團隊已開啟的預約。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "綠色只表示收到了測試，不能先更新。故障時，新預約交給服務櫃檯，已開始的預約仍由原團隊接續。",
+      "evidence": "Green on the tracker means your test arrived. Wait for IT approval before choosing a slot. | If your working computer fails, the service desk takes new bookings. Only your team can finish bookings already open.",
+      "vocabulary": [
+        {
+          "term": "an open booking",
+          "zh": "已開始但未完成的預約",
+          "note": "open 可指一筆仍在處理、尚未結案的案件。"
+        },
+        {
+          "term": "IT approval",
+          "zh": "資訊部門核准",
+          "note": "收到測試資料與核准更新是不同的階段。"
+        }
+      ],
+      "revision": 2
+    }
+  ],
+  "editorial": {
+    "checks": {
+      "74": {
+        "proposedKey": "B",
+        "proposedDifficulty": "advanced",
+        "reason": "Conjoin three scattered conditions: affirmative IT approval, a Friday-or-earlier remote reservation, and a full 20-minute spare; merely green report receipt is not approval."
+      },
+      "75": {
+        "proposedKey": "D",
+        "proposedDifficulty": "advanced",
+        "reason": "Map tyres to the software change and the moving bus to live bookings, then infer staged role swapping from the separate old-app compatibility clue."
+      },
+      "76": {
+        "proposedKey": "A",
+        "proposedDifficulty": "advanced",
+        "reason": "Combine nonadjacent rollout and outage rules: green does not grant IT approval, an outage does not remove the authorization requirement, and the open and unstarted bookings follow different routes."
+      }
+    },
+    "stillNeedsSeparateBlindReview": true,
+    "blindReviewScope": "Prior Q074 B and Q075 D independently judged advanced; revised Q076 still requires separate blind validation.",
+    "cultureHumor": "Workplace speaker’s figurative moving-bus comparison can be decoded from supplied system and booking clues; no cultural trivia required."
+  },
+  "ttsPlan": {
+    "passage": {
+      "voice": {
+        "speaker": "female",
+        "locale": "en-AU",
+        "role": "female",
+        "modelVoice": "en-AU-NatashaNeural"
+      },
+      "exactText": "Our new booking app rolls out Monday. Green on the tracker means your test arrived. Wait for IT approval before choosing a slot. Monday teams need a spare computer for the full twenty minutes. Remote teams must reserve loan computers by Friday. Other approved teams switch Wednesday. We’re changing tyres while the bus keeps moving. The old app works on computers not being updated. If your working computer fails, the service desk takes new bookings. Only your team can finish bookings already open.",
+      "targetImmutablePath": "audio/exams/test-01/groups/t01-g046-r2/passage.wav",
+      "modes": [
+        "formal",
+        "practice"
+      ]
+    },
+    "formalNumberedStemsExact": [
+      {
+        "questionId": "t01-q074-r2",
+        "speech": "Number 74. Which remote team can switch on Monday?"
+      },
+      {
+        "questionId": "t01-q075-r2",
+        "speech": "Number 75. Both computers are ready to update. What does the bus comparison suggest?"
+      },
+      {
+        "questionId": "t01-q076-r2",
+        "speech": "Number 76. The tracker is green. IT hasn’t approved the team. Its computer fails mid-booking with a new caller waiting. What should it do?"
+      }
+    ],
+    "formalNarration": "Propose standard-US en-US-JennyNeural as approved prior replacement precedent; original cue bank exact narrator not established. Scope only the three new numbered stems; options not spoken.",
+    "retainedNumberCue": {
+      "exactOriginalWindow": {
+        "src": "audio/formal/test-01-cues-04.mp3",
+        "start": 41.60942,
+        "end": 45.15729,
+        "duration": 3.54787,
+        "kind": "audio",
+        "role": "cue",
+        "part": 4,
+        "groupId": "t01-g046",
+        "at": 1958.57548,
+        "sha256": "818dfc268166727216fdf937e87ffd8c30bf16673e30d0aacdf9152427b7c0d0"
+      },
+      "expectedSpeech": "Questions 74 through 76. Listen to the talk.",
+      "condition": "Independently compare exact retained cue and range before reuse, or new F0 standard-US cue only if required."
+    },
+    "authorization": "No media generation in this draft. Confirm actual Azure free F0 capacity and compliant execution access before any request, no unauthorized or paid fallback.",
+    "spokenWords": {
+      "passage": 83,
+      "stems": 47
+    },
+    "unicodeChars": 772
+  },
+  "timing": {
+    "oldPassageSec": 39.024,
+    "oldStemsSec": 10.43321,
+    "oldCombinedSpeechBudgetWithoutPauseChanges": 49.45721,
+    "oldGroupAnswerPauses": [
+      8.79994,
+      8.79994,
+      8.79994
+    ],
+    "exampleCombinedSpeechBudgetIfLocalPausesRemainAtLeastEightSecondsEach": 51.85703,
+    "exampleCombinedSpeechSecWithFourSecondsSilence": {
+      "145": 57.79,
+      "150": 56,
+      "155": 54.32,
+      "160": 52.75,
+      "165": 51.27,
+      "170": 49.88
+    },
+    "measureExact": true,
+    "scope": "Verify exact real WAVs and retained cue. If G046 local slot does not fit, a strictly guarded Part 4 timing alternative (protect other media and graphics) may be explored. No speech truncation, no mandatory pace target from word count, preserve 100 answers and 2700s."
+  },
+  "versioning": "New whole group and three successor IDs. Preserve predecessor exact group/items/audio/keys and active-session snapshot. Candidate difficulty is not a gate pass until independently reviewed; content, roles, mode and real browser acceptance remain open.",
+  "independentBlindStatus": "B/D/A, three genuinely advanced decisions in the exact final text. Q076 now combines the nonlocal green receipt/IT gate with open/new routing. No audio or timing acceptance."
+}

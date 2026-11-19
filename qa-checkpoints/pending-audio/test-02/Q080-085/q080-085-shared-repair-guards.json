@@ -1,0 +1,884 @@
+{
+  "status": "text-only-speech-repair-guard-hold-no-audio-no-pass",
+  "pin": "92bf2a621452ac8e54db87eb50f4f0cd9456c379",
+  "rawPackSha256": "dd9b42242b14c96999e2e6621f1b15850a7156dbc4271cd1b4ecff31ed83e090",
+  "rawListeningPlanCanonicalSha256": "f3fff062ff29d86385b2dbb9aa992518d4130bba47bd1038210d5576e6737a36",
+  "knownCumulativeThroughQ044046PackSha256": "9ec5c813dda01db241e4d21d81d3c025947d6f19a6c7f5a5007a9d8dfbb5c232",
+  "knownCumulativeThroughQ044046PlanCanonicalSha256": "f993b36948e7a37786348833f69a747778eb1c786d03908923160bb39c5f8461",
+  "priorAudioReviewGuards": {
+    "exact.json": "c7727da38171da486ba95e02af551a16415f23e2ea671a49b12250178f9d2dad",
+    "evidence.md": "8d015e5c929ecba13022f2fde7150dfbbc27ccb08dcd5d63e1682912e137519d",
+    "vosk.txt": "dbfc8f4b780ed008dbf22f1479e3356914607f133444793343e024038a5e9a6b",
+    "whisper.log": "d1baf4f0dc4e5ce3f3b0f1240fdacce9711e7e24d1ce777c136367a23c9f15f9"
+  },
+  "units": [
+    {
+      "groupId": "t02-g048",
+      "numbers": [
+        80,
+        81,
+        82
+      ],
+      "keys": [
+        "A",
+        "D",
+        "C"
+      ],
+      "oldGroupCanonicalSha256": "246e734fa46951e65e59359161157b170b30f13730cb85ff254c5cf45cd3473b",
+      "oldItemsCanonicalSha256": {
+        "t02-q080": "017f053426264190883de87b133e878eda245c6e29dff06cbdce87b0c4a68ce7",
+        "t02-q081": "88ad9210000dc778c086f5d01951f887352864189ee345f37dba3aeec3c1ff7b",
+        "t02-q082": "d52e0e23c57102a9d5b0951111e18aee4de9e8af83ede73905235ee4d574112b"
+      },
+      "oldExactFormalFrames": [
+        {
+          "src": "audio/formal/test-02-cues-04.mp3",
+          "start": 64.73046,
+          "end": 67.63854,
+          "duration": 2.90808,
+          "kind": "audio",
+          "role": "cue",
+          "part": 4,
+          "groupId": "t02-g048",
+          "at": 2132.95781
+        },
+        {
+          "src": "audio/azure-v1/test-02-25.mp3",
+          "start": 0.5,
+          "end": 30.5,
+          "duration": 30.0,
+          "kind": "audio",
+          "role": "passage",
+          "part": 4,
+          "groupId": "t02-g048",
+          "at": 2135.86589,
+          "speakers": [
+            {
+              "speaker": "male",
+              "locale": "en-KE",
+              "role": "male",
+              "modelVoice": "en-KE-ChilembaNeural"
+            }
+          ]
+        },
+        {
+          "src": "audio/formal/test-02-cues-04.mp3",
+          "start": 67.88854,
+          "end": 70.10896,
+          "duration": 2.22042,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t02-g048",
+          "questionId": "t02-q080",
+          "at": 2165.86589
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 11.28411,
+          "part": 4,
+          "groupId": "t02-g048",
+          "questionId": "t02-q080",
+          "at": 2168.08631
+        },
+        {
+          "src": "audio/formal/test-02-cues-05.mp3",
+          "start": 0.25,
+          "end": 3.67575,
+          "duration": 3.42575,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t02-g048",
+          "questionId": "t02-q081",
+          "at": 2179.37042
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 11.28411,
+          "part": 4,
+          "groupId": "t02-g048",
+          "questionId": "t02-q081",
+          "at": 2182.79617
+        },
+        {
+          "src": "audio/formal/test-02-cues-05.mp3",
+          "start": 3.92575,
+          "end": 7.11358,
+          "duration": 3.18783,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t02-g048",
+          "questionId": "t02-q082",
+          "at": 2194.08028
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 11.28411,
+          "part": 4,
+          "groupId": "t02-g048",
+          "questionId": "t02-q082",
+          "at": 2197.26811
+        }
+      ],
+      "oldCueStartAt": 2132.95781,
+      "nextGroupStartAt": 2208.55222,
+      "oldSharedWindow": {
+        "src": "audio/azure-v1/test-02-25.mp3",
+        "start": 0.5,
+        "end": 30.5,
+        "sha256": "9adcdbc5df8f998be9f3496b14cb9d1abddf809c89c913ca0661d2c5ab3fe527",
+        "formalAt": 2135.86589
+      },
+      "retainedExactCueAndStems": [
+        {
+          "originalFrame": {
+            "src": "audio/formal/test-02-cues-04.mp3",
+            "start": 64.73046,
+            "end": 67.63854,
+            "duration": 2.90808,
+            "kind": "audio",
+            "role": "cue",
+            "part": 4,
+            "groupId": "t02-g048",
+            "at": 2132.95781
+          },
+          "sourceAssetSha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+          "exactExpectedSpeech": "Questions 80 through 82. Listen to the talk.",
+          "oldBoundWhisperTranscriptSha256": "2a80a92df5ab9d8924d4de75f7aee5c0ad13f4aef807cdf22c500700510f1c8f"
+        },
+        {
+          "originalFrame": {
+            "src": "audio/formal/test-02-cues-04.mp3",
+            "start": 67.88854,
+            "end": 70.10896,
+            "duration": 2.22042,
+            "kind": "audio",
+            "role": "question",
+            "part": 4,
+            "groupId": "t02-g048",
+            "questionId": "t02-q080",
+            "at": 2165.86589
+          },
+          "sourceAssetSha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+          "exactExpectedSpeech": "Number 80. What should staff do tonight?",
+          "oldBoundWhisperTranscriptSha256": "c8529a1ebc1c22972c5e362c0d852e2c8b5a9cda5fb72cfdfb0b2f8f856d62e5"
+        },
+        {
+          "originalFrame": {
+            "src": "audio/formal/test-02-cues-05.mp3",
+            "start": 0.25,
+            "end": 3.67575,
+            "duration": 3.42575,
+            "kind": "audio",
+            "role": "question",
+            "part": 4,
+            "groupId": "t02-g048",
+            "questionId": "t02-q081",
+            "at": 2179.37042
+          },
+          "sourceAssetSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+          "exactExpectedSpeech": "Number 81. Why should the settings menu remain locked?",
+          "oldBoundWhisperTranscriptSha256": "36d4f1e9787fe73d9bb8928415b5687a3fb432b4ca2eb2cb5a40bfc5763713c9"
+        },
+        {
+          "originalFrame": {
+            "src": "audio/formal/test-02-cues-05.mp3",
+            "start": 3.92575,
+            "end": 7.11358,
+            "duration": 3.18783,
+            "kind": "audio",
+            "role": "question",
+            "part": 4,
+            "groupId": "t02-g048",
+            "questionId": "t02-q082",
+            "at": 2194.08028
+          },
+          "sourceAssetSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+          "exactExpectedSpeech": "Number 82. What should staff do if a unit freezes?",
+          "oldBoundWhisperTranscriptSha256": "ea2dbee8c6c443d2f553b799e6030ef22bae3bd3b7ee38da9194f11d820bf553"
+        }
+      ],
+      "protectedGraphicAndLegacy": null,
+      "candidateGroupTextOnly": {
+        "id": "t02-g048",
+        "testId": "test-02",
+        "part": 4,
+        "title": "Prototype demonstration instructions",
+        "titleZh": "樣機展示說明",
+        "topic": "technology",
+        "passage": "Thank you for helping with tomorrow's product demonstration. Each table will have one prototype, one charging cable, and one feedback form. Connect each unit to its charger tonight and check that demonstration mode is on. Visitors may try the touch controls, but the settings menu should remain locked because some functions are still under development. If a unit freezes, use the backup unit at the reception table and record the event. We want detailed feedback rather than estimates of when the product will ship.",
+        "passageZh": "感謝各位協助明天的產品展示。每張桌子會有一台樣機、一條充電線和一份回饋表。請今晚把每台機器接上充電器，並確認展示模式已開啟。訪客可試用觸控操作，但設定選單應保持鎖定，因為部分功能仍在開發。如果機器當機，請使用接待桌上的備用機，並記錄事件。我們希望收集詳細回饋，而不是估計產品何時出貨。",
+        "audioScript": "Thank you for helping with tomorrow's product demonstration. Each table will have one prototype, one charging cable, and one feedback form. Connect each unit to its charger tonight and check that demonstration mode is on. Visitors may try the touch controls, but the settings menu should remain locked because some functions are still under development. If a unit freezes, use the backup unit at the reception table and record the event. We want detailed feedback rather than estimates of when the product will ship.",
+        "turns": [
+          {
+            "voice": "male",
+            "text": "Thank you for helping with tomorrow's product demonstration. Each table will have one prototype, one charging cable, and one feedback form. Connect each unit to its charger tonight and check that demonstration mode is on. Visitors may try the touch controls, but the settings menu should remain locked because some functions are still under development. If a unit freezes, use the backup unit at the reception table and record the event. We want detailed feedback rather than estimates of when the product will ship."
+          }
+        ],
+        "audioSpeakers": [
+          {
+            "speaker": "male",
+            "locale": "en-KE",
+            "role": "male",
+            "modelVoice": "en-KE-ChilembaNeural"
+          }
+        ]
+      },
+      "questionSamePromptsOptionsIdsKeysWithEvidenceAligned": [
+        {
+          "id": "t02-q080",
+          "testId": "test-02",
+          "number": 80,
+          "part": 4,
+          "groupId": "t02-g048",
+          "topic": "technology",
+          "difficulty": "intermediate",
+          "tags": [
+            "demonstration mode"
+          ],
+          "prompt": "What should staff do tonight?",
+          "promptZh": "工作人員今晚應做什麼？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Charge the units and check demonstration mode.",
+              "zh": "充電並確認展示模式。",
+              "whyZh": "這兩項是講者指定今晚完成的準備。"
+            },
+            {
+              "id": "B",
+              "text": "Ship all prototypes to customers.",
+              "zh": "把所有樣機寄給客戶。",
+              "whyZh": "明天要現場展示，不是出貨。"
+            },
+            {
+              "id": "C",
+              "text": "Remove every feedback form.",
+              "zh": "移除所有回饋表。",
+              "whyZh": "活動目的正是收集詳細回饋。"
+            },
+            {
+              "id": "D",
+              "text": "Unlock all development settings.",
+              "zh": "解鎖所有開發設定。",
+              "whyZh": "設定選單應保持鎖定。"
+            }
+          ],
+          "answer": "A",
+          "explanationZh": "這兩項是講者指定今晚完成的準備。",
+          "evidence": "Connect each unit to its charger tonight and check that demonstration mode is on.",
+          "vocabulary": [
+            {
+              "term": "demonstration mode",
+              "zh": "展示模式",
+              "note": "供展示用途的運作設定；本題限制部分功能。"
+            },
+            {
+              "term": "under development",
+              "zh": "開發中",
+              "note": "表示尚在開發階段。"
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "id": "t02-q081",
+          "testId": "test-02",
+          "number": 81,
+          "part": 4,
+          "groupId": "t02-g048",
+          "topic": "technology",
+          "difficulty": "intermediate",
+          "tags": [
+            "demonstration mode"
+          ],
+          "prompt": "Why should the settings menu remain locked?",
+          "promptZh": "設定選單為何應保持鎖定？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Visitors cannot read English.",
+              "zh": "訪客看不懂英文。",
+              "whyZh": "未提訪客語言能力。"
+            },
+            {
+              "id": "B",
+              "text": "The batteries have been removed.",
+              "zh": "電池被移除了。",
+              "whyZh": "機器要充電，沒有移除電池的資訊。"
+            },
+            {
+              "id": "C",
+              "text": "The feedback forms have already been completed.",
+              "zh": "回饋表已填完。",
+              "whyZh": "明天才展示，未說表單已完成。"
+            },
+            {
+              "id": "D",
+              "text": "Some functions are still being developed.",
+              "zh": "部分功能仍在開發。",
+              "whyZh": "講者直接用 because 說明鎖定原因。"
+            }
+          ],
+          "answer": "D",
+          "explanationZh": "講者直接用 because 說明鎖定原因。",
+          "evidence": "because some functions are still under development",
+          "vocabulary": [
+            {
+              "term": "demonstration mode",
+              "zh": "展示模式",
+              "note": "供展示用途的運作設定；本題限制部分功能。"
+            },
+            {
+              "term": "under development",
+              "zh": "開發中",
+              "note": "表示尚在開發階段。"
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "id": "t02-q082",
+          "testId": "test-02",
+          "number": 82,
+          "part": 4,
+          "groupId": "t02-g048",
+          "topic": "technology",
+          "difficulty": "intermediate",
+          "tags": [
+            "demonstration mode"
+          ],
+          "prompt": "What should staff do if a unit freezes?",
+          "promptZh": "機器當機時應怎麼做？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Promise a shipping date to the visitor.",
+              "zh": "向訪客承諾出貨日期。",
+              "whyZh": "講者反而不希望估算出貨時間。"
+            },
+            {
+              "id": "B",
+              "text": "Cancel every demonstration immediately.",
+              "zh": "立刻取消所有展示。",
+              "whyZh": "有備用機方案，沒有全面取消。"
+            },
+            {
+              "id": "C",
+              "text": "Use a spare and record what happened.",
+              "zh": "使用備用機並記錄事件。",
+              "whyZh": "指示包含換備用機及記錄事件兩步。"
+            },
+            {
+              "id": "D",
+              "text": "Ask the visitor to repair the hardware.",
+              "zh": "請訪客修理硬體。",
+              "whyZh": "沒有要求訪客維修。"
+            }
+          ],
+          "answer": "C",
+          "explanationZh": "指示包含換備用機及記錄事件兩步。",
+          "evidence": "use the backup unit at the reception table and record the event",
+          "vocabulary": [
+            {
+              "term": "demonstration mode",
+              "zh": "展示模式",
+              "note": "供展示用途的運作設定；本題限制部分功能。"
+            },
+            {
+              "term": "under development",
+              "zh": "開發中",
+              "note": "表示尚在開發階段。"
+            }
+          ],
+          "revision": 1
+        }
+      ],
+      "rationaleEN": {
+        "80": "Tonight the hosts plug in every unit and check that demonstration mode is on; shipping, removing feedback forms and unlocking settings are not requested.",
+        "81": "Development functions are unfinished, so the settings menu stays locked. The talk does not attribute the lock to language, batteries or feedback form status.",
+        "82": "Use the backup unit from reception and record the incident; do not promise shipping timing, cancel every demo or have visitors repair hardware."
+      },
+      "priorDiagnosis": "Original full Whisper clearly found the key charge and mode; independent Vosk and focused reruns failed to resolve charge and rendered spare as despair. Fix the key action wording, specify setup list count without reduced articles, and make the backup instruction harder to mishear. Neither old mismatch is established as an actual generation defect.",
+      "renderOnlyWhenAuthorized": {
+        "originalExactVoice": {
+          "speaker": "male",
+          "locale": "en-KE",
+          "role": "male",
+          "modelVoice": "en-KE-ChilembaNeural"
+        },
+        "text": "Thank you for helping with tomorrow's product demonstration. Each table will have one prototype, one charging cable, and one feedback form. Connect each unit to its charger tonight and check that demonstration mode is on. Visitors may try the touch controls, but the settings menu should remain locked because some functions are still under development. If a unit freezes, use the backup unit at the reception table and record the event. We want detailed feedback rather than estimates of when the product will ship.",
+        "unicodeChars": 516,
+        "bothModes": "One same verified physical WAV and range for formal and practice.",
+        "immutableNewPath": "audio/exams/test-02/groups/t02-g048/passage-r2.wav",
+        "unchangedAudioOutside": "No new cues/stems. Compare exact retained source windows before acceptance. No overwrite of original shared asset or unrelated frames."
+      },
+      "timing": {
+        "originalSharedDurationSec": 30.0,
+        "originalAnswerSeconds": {
+          "t02-q080": 11.28411,
+          "t02-q081": 11.28411,
+          "t02-q082": 11.28411
+        },
+        "illustrativeLocalMinPerAnswerSec": {
+          "t02-q080": 9.75,
+          "t02-q081": 9.75,
+          "t02-q082": 9.75
+        },
+        "illustrativeMaxNewSpeechSecWithThoseLocalFloors": 34.60233,
+        "newActualPcmSeconds": null,
+        "requirement": "Bind measured sample times to both modes. Keep unrelated offsets and 2700s with 100 windows. In G049 do not borrow any Q085 chart reading time. If combined measured group cannot fit without violating applicable timing, hold, do not truncate speech."
+      }
+    },
+    {
+      "groupId": "t02-g049",
+      "numbers": [
+        83,
+        84,
+        85
+      ],
+      "keys": [
+        "B",
+        "B",
+        "D"
+      ],
+      "oldGroupCanonicalSha256": "19b92f4a9dcfcfd928f519b8cec8f2c2f3684d3198ccec799a52ae54f8fe4a82",
+      "oldItemsCanonicalSha256": {
+        "t02-q083": "a6ebd3b18dd35944a01af6ac412d9abd928b16ddde7c91b1e0910a2da5d6cbf5",
+        "t02-q084": "0a8f8024c8cf24b016a80ecf54b6db5aec57eb4790a8ef288015f05fc04c9009",
+        "t02-q085-v2": "5226ea5a011abae794b07e336052069e899131ced67a918037f000649c317c8a"
+      },
+      "oldExactFormalFrames": [
+        {
+          "src": "audio/formal/test-02-cues-05.mp3",
+          "start": 7.36358,
+          "end": 10.52187,
+          "duration": 3.15829,
+          "kind": "audio",
+          "role": "cue",
+          "part": 4,
+          "groupId": "t02-g049",
+          "at": 2208.55222
+        },
+        {
+          "src": "audio/azure-v1/test-02-26.mp3",
+          "start": 0.5,
+          "end": 30.86,
+          "duration": 30.36,
+          "kind": "audio",
+          "role": "passage",
+          "part": 4,
+          "groupId": "t02-g049",
+          "at": 2211.71051,
+          "speakers": [
+            {
+              "speaker": "female",
+              "locale": "en-NG",
+              "role": "female",
+              "modelVoice": "en-NG-EzinneNeural"
+            }
+          ]
+        },
+        {
+          "src": "audio/formal/test-02-cues-05.mp3",
+          "start": 10.77187,
+          "end": 14.29254,
+          "duration": 3.52067,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t02-g049",
+          "questionId": "t02-q083",
+          "at": 2242.07051
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 11.28411,
+          "part": 4,
+          "groupId": "t02-g049",
+          "questionId": "t02-q083",
+          "at": 2245.59118
+        },
+        {
+          "src": "audio/formal/test-02-cues-05.mp3",
+          "start": 14.54254,
+          "end": 17.31217,
+          "duration": 2.76963,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t02-g049",
+          "questionId": "t02-q084",
+          "at": 2256.87529
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 11.28411,
+          "part": 4,
+          "groupId": "t02-g049",
+          "questionId": "t02-q084",
+          "at": 2259.64492
+        },
+        {
+          "src": "audio/formal/test-02-cues-05.mp3",
+          "start": 17.56217,
+          "end": 24.37687,
+          "duration": 6.81471,
+          "kind": "audio",
+          "role": "question",
+          "part": 4,
+          "groupId": "t02-g049",
+          "questionId": "t02-q085-v2",
+          "at": 2270.92903
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 16.92616,
+          "part": 4,
+          "groupId": "t02-g049",
+          "questionId": "t02-q085-v2",
+          "at": 2277.74374
+        }
+      ],
+      "oldCueStartAt": 2208.55222,
+      "nextGroupStartAt": 2294.6699,
+      "oldSharedWindow": {
+        "src": "audio/azure-v1/test-02-26.mp3",
+        "start": 0.5,
+        "end": 30.86,
+        "sha256": "4597fce50a6581f52fcc8fb701c5070572754014d2703736162d64d19889d57a",
+        "formalAt": 2211.71051
+      },
+      "retainedExactCueAndStems": [
+        {
+          "originalFrame": {
+            "src": "audio/formal/test-02-cues-05.mp3",
+            "start": 7.36358,
+            "end": 10.52187,
+            "duration": 3.15829,
+            "kind": "audio",
+            "role": "cue",
+            "part": 4,
+            "groupId": "t02-g049",
+            "at": 2208.55222
+          },
+          "sourceAssetSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+          "exactExpectedSpeech": "Questions 83 through 85. Listen to the talk.",
+          "oldBoundWhisperTranscriptSha256": "d78e5c23043e2bc56df773056ffa1ec8de239f82dd5e429b857cbfda4bbc794d"
+        },
+        {
+          "originalFrame": {
+            "src": "audio/formal/test-02-cues-05.mp3",
+            "start": 10.77187,
+            "end": 14.29254,
+            "duration": 3.52067,
+            "kind": "audio",
+            "role": "question",
+            "part": 4,
+            "groupId": "t02-g049",
+            "questionId": "t02-q083",
+            "at": 2242.07051
+          },
+          "sourceAssetSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+          "exactExpectedSpeech": "Number 83. When must production material requests arrive?",
+          "oldBoundWhisperTranscriptSha256": "ac3c93738cb02023464f04116a3e438ab13702aeee83cc6d1aad6c048760e63a"
+        },
+        {
+          "originalFrame": {
+            "src": "audio/formal/test-02-cues-05.mp3",
+            "start": 14.54254,
+            "end": 17.31217,
+            "duration": 2.76963,
+            "kind": "audio",
+            "role": "question",
+            "part": 4,
+            "groupId": "t02-g049",
+            "questionId": "t02-q084",
+            "at": 2256.87529
+          },
+          "sourceAssetSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+          "exactExpectedSpeech": "Number 84. What should team leaders arrange?",
+          "oldBoundWhisperTranscriptSha256": "dc1db23ccf6410f8871ecafd61e8ef0a1450ae6c43b192462f5dcef68f363c75"
+        },
+        {
+          "originalFrame": {
+            "src": "audio/formal/test-02-cues-05.mp3",
+            "start": 17.56217,
+            "end": 24.37687,
+            "duration": 6.81471,
+            "kind": "audio",
+            "role": "question",
+            "part": 4,
+            "groupId": "t02-g049",
+            "questionId": "t02-q085-v2",
+            "at": 2270.92903
+          },
+          "sourceAssetSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+          "exactExpectedSpeech": "Number 85. Look at the graphic. Which counter label matches the time normal material collection resumes?",
+          "oldBoundWhisperTranscriptSha256": "7e3f929896966c91fef6f73274a759b43ba0322041032d6378786e3dd5250347"
+        }
+      ],
+      "protectedGraphicAndLegacy": {
+        "image": "assets/graphics/t02-g049.svg",
+        "sha256": "f773479b5ca6a4ffd7836895dc197dea32b2d009d8ad06ddefe3958d9e4a8984",
+        "alt": "Friday Collection Window Labels; 11:00 a.m.: Maple; 12:00 p.m.: Oak; 4:00 p.m.: Cedar; 4:30 p.m.: Pine",
+        "v2Id": "t02-q085-v2",
+        "legacyQ085Sha256": "7c6b45767966af64b323eb992421c2ba9b48b5840a2042eaf2b6cc974920a5c9",
+        "legend": [
+          "11:00 a.m. Maple",
+          "12:00 p.m. Oak",
+          "4:00 p.m. Cedar",
+          "4:30 p.m. Pine"
+        ],
+        "unchangedAnswer": "D",
+        "unchangedGraphicResponsePauseSec": 16.92616
+      },
+      "candidateGroupTextOnly": {
+        "id": "t02-g049",
+        "testId": "test-02",
+        "part": 4,
+        "title": "Inventory counting notice",
+        "titleZh": "盤點通知",
+        "topic": "manufacturing",
+        "passage": "The warehouse will conduct its quarterly inventory count on Friday afternoon. Material requests needed for Friday's production must reach us by eleven in the morning. From noon to four, we will handle safety emergencies only. Team leaders should assign one person to confirm quantities with warehouse staff. For sealed boxes, use the quantity on the label unless the seal is damaged. Regular material pickup starts again at four thirty in the afternoon.",
+        "passageZh": "倉庫將在星期五下午進行季度盤點。星期五生產所需的領料申請必須在上午十一點前送達。中午到下午四點，只處理緊急安全事件。各組主管應指派一人與倉庫人員核對數量。有封條的紙箱，若封條未破損，請依標籤上的數量盤點。下午四點半恢復正常領料。",
+        "audioScript": "The warehouse will conduct its quarterly inventory count on Friday afternoon. Material requests needed for Friday's production must reach us by eleven in the morning. From noon to four, we will handle safety emergencies only. Team leaders should assign one person to confirm quantities with warehouse staff. For sealed boxes, use the quantity on the label unless the seal is damaged. Regular material pickup starts again at four thirty in the afternoon.",
+        "turns": [
+          {
+            "voice": "female",
+            "text": "The warehouse will conduct its quarterly inventory count on Friday afternoon. Material requests needed for Friday's production must reach us by eleven in the morning. From noon to four, we will handle safety emergencies only. Team leaders should assign one person to confirm quantities with warehouse staff. For sealed boxes, use the quantity on the label unless the seal is damaged. Regular material pickup starts again at four thirty in the afternoon."
+          }
+        ],
+        "audioSpeakers": [
+          {
+            "speaker": "female",
+            "locale": "en-NG",
+            "role": "female",
+            "modelVoice": "en-NG-EzinneNeural"
+          }
+        ],
+        "image": "assets/graphics/t02-g049.svg",
+        "imageAlt": "Friday Collection Window Labels; 11:00 a.m.: Maple; 12:00 p.m.: Oak; 4:00 p.m.: Cedar; 4:30 p.m.: Pine"
+      },
+      "questionSamePromptsOptionsIdsKeysWithEvidenceAligned": [
+        {
+          "id": "t02-q083",
+          "testId": "test-02",
+          "number": 83,
+          "part": 4,
+          "groupId": "t02-g049",
+          "topic": "manufacturing",
+          "difficulty": "intermediate",
+          "tags": [
+            "inventory count"
+          ],
+          "prompt": "When must production material requests arrive?",
+          "promptZh": "生產領料申請何時前必須送達？",
+          "options": [
+            {
+              "id": "A",
+              "text": "At four thirty on Thursday.",
+              "zh": "星期四四點半。",
+              "whyZh": "四點半是星期五恢復領料，不是星期四截止。"
+            },
+            {
+              "id": "B",
+              "text": "By eleven on Friday morning.",
+              "zh": "星期五上午十一點前。",
+              "whyZh": "通知直接列明領料申請截止時間。"
+            },
+            {
+              "id": "C",
+              "text": "By midnight on Saturday.",
+              "zh": "星期六午夜前。",
+              "whyZh": "未提此時間。"
+            },
+            {
+              "id": "D",
+              "text": "Only after the inventory count ends.",
+              "zh": "只能盤點結束後。",
+              "whyZh": "生產需求要先在上午十一點前提出。"
+            }
+          ],
+          "answer": "B",
+          "explanationZh": "通知直接列明領料申請截止時間。",
+          "evidence": "must reach us by eleven in the morning",
+          "vocabulary": [
+            {
+              "term": "inventory count",
+              "zh": "盤點",
+              "note": "實際核對庫存品項與數量的作業。"
+            },
+            {
+              "term": "resume",
+              "zh": "恢復",
+              "note": "表示暫停後重新開始。"
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "id": "t02-q084",
+          "testId": "test-02",
+          "number": 84,
+          "part": 4,
+          "groupId": "t02-g049",
+          "topic": "manufacturing",
+          "difficulty": "intermediate",
+          "tags": [
+            "inventory count"
+          ],
+          "prompt": "What should team leaders arrange?",
+          "promptZh": "各組主管應安排什麼？",
+          "options": [
+            {
+              "id": "A",
+              "text": "A customer tour during the count.",
+              "zh": "盤點期間的客戶導覽。",
+              "whyZh": "未安排客戶參觀。"
+            },
+            {
+              "id": "B",
+              "text": "A person to verify quantities with warehouse staff.",
+              "zh": "一人與倉庫人員核對數量。",
+              "whyZh": "通知要求各組指定一人協助核對。"
+            },
+            {
+              "id": "C",
+              "text": "Replacement of every carton label.",
+              "zh": "更換所有紙箱標籤。",
+              "whyZh": "標籤是盤點參考，不是全部更換。"
+            },
+            {
+              "id": "D",
+              "text": "An extra shift at the airport.",
+              "zh": "機場額外班次。",
+              "whyZh": "與倉庫盤點無關。"
+            }
+          ],
+          "answer": "B",
+          "explanationZh": "通知要求各組指定一人協助核對。",
+          "evidence": "assign one person to confirm quantities with warehouse staff",
+          "vocabulary": [
+            {
+              "term": "inventory count",
+              "zh": "盤點",
+              "note": "實際核對庫存品項與數量的作業。"
+            },
+            {
+              "term": "resume",
+              "zh": "恢復",
+              "note": "表示暫停後重新開始。"
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "id": "t02-q085-v2",
+          "testId": "test-02",
+          "number": 85,
+          "part": 4,
+          "groupId": "t02-g049",
+          "topic": "manufacturing",
+          "difficulty": "intermediate",
+          "tags": [
+            "manufacturing",
+            "graphic-inference"
+          ],
+          "prompt": "Look at the graphic. Which counter label matches the time normal material collection resumes?",
+          "promptZh": "請看圖表。哪個櫃台標示對應正常領料恢復的時間？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Maple",
+              "zh": "Maple",
+              "whyZh": "Maple 對應上午十一點。"
+            },
+            {
+              "id": "B",
+              "text": "Oak",
+              "zh": "Oak",
+              "whyZh": "Oak 對應中午十二點。"
+            },
+            {
+              "id": "C",
+              "text": "Cedar",
+              "zh": "Cedar",
+              "whyZh": "Cedar 對應下午四點。"
+            },
+            {
+              "id": "D",
+              "text": "Pine",
+              "zh": "Pine",
+              "whyZh": "Pine 對應下午四點半。"
+            }
+          ],
+          "answer": "D",
+          "explanationZh": "廣播通知下午四點半恢復正常領料，圖表中下午四點半對應 Pine。",
+          "evidence": "“Regular material pickup starts again at four thirty in the afternoon.” → 4:30 p.m.: Pine.",
+          "vocabulary": [
+            {
+              "term": "inventory count",
+              "zh": "盤點",
+              "note": "實際核對庫存品項與數量的作業。"
+            },
+            {
+              "term": "resume",
+              "zh": "恢復",
+              "note": "表示暫停後重新開始。"
+            }
+          ],
+          "revision": 2
+        }
+      ],
+      "rationaleEN": {
+        "83": "Friday production requests are due by eleven Friday morning. Four thirty is when collection resumes on Friday, not a Thursday deadline.",
+        "84": "A supervisor names one person to confirm quantities with warehouse staff. Tour, relabeling every box or airport staffing are not requested.",
+        "85": "The announcement says regular collection resumes at 4:30 p.m., not when the safety-only period ends at 4:00. The unchanged chart maps 4:30 p.m. uniquely to Pine."
+      },
+      "priorDiagnosis": "Original dual ASR rendered cartons as curtains and normal as no more/nama. The latter risks turning a positive restart into a negative. Keep the exact Friday morning deadline, safety-only window, quantity-verification assignment, sealed-box exception and afternoon restart. Q085-v2 is fixed to shown chart.",
+      "renderOnlyWhenAuthorized": {
+        "originalExactVoice": {
+          "speaker": "female",
+          "locale": "en-NG",
+          "role": "female",
+          "modelVoice": "en-NG-EzinneNeural"
+        },
+        "text": "The warehouse will conduct its quarterly inventory count on Friday afternoon. Material requests needed for Friday's production must reach us by eleven in the morning. From noon to four, we will handle safety emergencies only. Team leaders should assign one person to confirm quantities with warehouse staff. For sealed boxes, use the quantity on the label unless the seal is damaged. Regular material pickup starts again at four thirty in the afternoon.",
+        "unicodeChars": 453,
+        "bothModes": "One same verified physical WAV and range for formal and practice.",
+        "immutableNewPath": "audio/exams/test-02/groups/t02-g049/passage-r2.wav",
+        "unchangedAudioOutside": "No new cues/stems. Compare exact retained source windows before acceptance. No overwrite of original shared asset or unrelated frames."
+      },
+      "timing": {
+        "originalSharedDurationSec": 30.36,
+        "originalAnswerSeconds": {
+          "t02-q083": 11.28411,
+          "t02-q084": 11.28411,
+          "t02-q085-v2": 16.92616
+        },
+        "illustrativeLocalMinPerAnswerSec": {
+          "t02-q083": 9.75,
+          "t02-q084": 9.75,
+          "t02-q085-v2": 16.92616
+        },
+        "illustrativeMaxNewSpeechSecWithThoseLocalFloors": 33.42822,
+        "newActualPcmSeconds": null,
+        "requirement": "Bind measured sample times to both modes. Keep unrelated offsets and 2700s with 100 windows. In G049 do not borrow any Q085 chart reading time. If combined measured group cannot fit without violating applicable timing, hold, do not truncate speech."
+      }
+    }
+  ],
+  "gates": [
+    "Authorized Azure Speech F0 and reliable compliant execution gate first. No request, paid fallback, upload or new synthesis now.",
+    "Rerender just each shared passage. After exact actual confirmation, bind both modes, retain every existing exact numbered/cue range and picture, and re-review only the appropriate text scope. Do not count six items from this text-only draft.",
+    "Keep old IDs and score meaning, original pack, source paths and playable prior resume independently immutable. Permanent exact media version from guarded source and browser playback only."
+  ]
+}
