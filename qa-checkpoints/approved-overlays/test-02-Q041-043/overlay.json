@@ -1,0 +1,420 @@
+{
+  "status": "structural-scratch-overlay-awaiting-independent-speech-judgment",
+  "oldListeningPlanSha256": "f2159b323f968a846d9ff993ecd7f033dec171e5d15ba14fe582eda26da8f533",
+  "newListeningPlanSha256": "e03f5d75aabfd86f16521316dee9ab464d5a2058a02d3cd3a876a457220d680f",
+  "inputPackRawSha256": "b5d0edf1d14ddf905fd4ac4293c02e56bfab19c5520b6d6023b21ad75c02fd9d",
+  "sourceRef": "300136286d2666c33ae2222dd59096b9d9f2ad6b",
+  "oldMediaSha256": {
+    "audio/azure-v1/test-02-13.mp3": "8c45e69db8ea8138ea2468257f59611b70c44335e26b900881d87caabff31474",
+    "audio/formal/test-02-cues-02.mp3": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c"
+  },
+  "newAudioGuards": {
+    "audio/exams/test-02/groups/t02-g035/passage-r2.wav": {
+      "path": "audio/exams/test-02/groups/t02-g035/passage-r2.wav",
+      "sha256": "13da2bf68d9bf8fbcd3858fa3ceaeeaa4e16659b7b7cf719e777fb39965f59c8",
+      "frames": 687300,
+      "sampleRate": 24000
+    }
+  },
+  "units": [
+    {
+      "groupId": "t02-g035",
+      "oldGroupSha256": "65854ff2d609c78faf46acf91c294ca0655be6ab4779691a057e6a9000dd5606",
+      "oldQuestionSha256": {
+        "t02-q041": "f3fe04be57e1197639591e5bb1c0b4b7706eb8f248d283f8b324a4627fc12e27",
+        "t02-q042": "57f82bfa02b71177321094be0ce7465bc247daf0a484cc34423a3ed1bda7e31d",
+        "t02-q043": "334380c49998a1350cec6f5398880de7c65e9ab17fbefb32544f97a90f9dc2b3"
+      },
+      "newGroup": {
+        "id": "t02-g035",
+        "testId": "test-02",
+        "part": 3,
+        "title": "Investigating a label mismatch",
+        "titleZh": "調查標籤不符",
+        "topic": "manufacturing",
+        "passage": "Man: The shipping box labels show the letter R, then the number eight. The units inside show the letter R, then the number nine. I have stopped the shipment.\nWoman: Keep the boxes in the marked holding area. Compare the labels with the packing list.\nMan: The list is correct. The label printer may have used an old template.\nWoman: Let’s check the print history. Do not relabel anything until the quality team approves the correction.",
+        "passageZh": "男：出貨紙箱上的標籤先顯示字母 R，再顯示數字 8。箱內產品的標示則是字母 R，接著是數字 9。我已停止出貨。\n女：把紙箱留在有標示的暫存區。請比對標籤與裝箱單。\n男：裝箱單沒錯。印表機可能用了舊版標籤樣板。\n女：先查列印紀錄。品管部門核准更正之前，不要重貼任何標籤。",
+        "audioScript": "The shipping box labels show the letter R, then the number eight. The units inside show the letter R, then the number nine. I have stopped the shipment.\nKeep the boxes in the marked holding area. Compare the labels with the packing list.\nThe list is correct. The label printer may have used an old template.\nLet’s check the print history. Do not relabel anything until the quality team approves the correction.",
+        "turns": [
+          {
+            "voice": "male",
+            "text": "The shipping box labels show the letter R, then the number eight. The units inside show the letter R, then the number nine. I have stopped the shipment."
+          },
+          {
+            "voice": "female",
+            "text": "Keep the boxes in the marked holding area. Compare the labels with the packing list."
+          },
+          {
+            "voice": "male",
+            "text": "The list is correct. The label printer may have used an old template."
+          },
+          {
+            "voice": "female",
+            "text": "Let’s check the print history. Do not relabel anything until the quality team approves the correction."
+          }
+        ],
+        "audio": "audio/exams/test-02/groups/t02-g035/passage-r2.wav",
+        "duration": 28.6375,
+        "audioSpeakers": [
+          {
+            "speaker": "male",
+            "locale": "en-NG",
+            "role": "male",
+            "modelVoice": "en-NG-AbeoNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-NG",
+            "role": "female",
+            "modelVoice": "en-NG-EzinneNeural"
+          }
+        ],
+        "audioStart": 0,
+        "audioEnd": 28.6375
+      },
+      "newQuestions": [
+        {
+          "id": "t02-q041",
+          "testId": "test-02",
+          "number": 41,
+          "part": 3,
+          "groupId": "t02-g035",
+          "topic": "manufacturing",
+          "difficulty": "intermediate",
+          "tags": [
+            "packing list"
+          ],
+          "prompt": "What problem was discovered?",
+          "promptZh": "發現了什麼問題？",
+          "options": [
+            {
+              "id": "A",
+              "text": "The packing list is missing.",
+              "zh": "裝箱單遺失。",
+              "whyZh": "男方已查看並說裝箱單正確。"
+            },
+            {
+              "id": "B",
+              "text": "The carton labels identify the wrong model.",
+              "zh": "紙箱標籤標示了錯誤型號。",
+              "whyZh": "箱外是 R8，箱內產品是 R9，型號不一致。"
+            },
+            {
+              "id": "C",
+              "text": "The units do not power on.",
+              "zh": "機器無法開機。",
+              "whyZh": "對話沒有討論產品功能故障。"
+            },
+            {
+              "id": "D",
+              "text": "The carrier arrived at the wrong address.",
+              "zh": "承運商到錯地址。",
+              "whyZh": "沒有提到承運商地址問題。"
+            }
+          ],
+          "answer": "B",
+          "explanationZh": "箱外是 R8，箱內產品是 R9，型號不一致。",
+          "evidence": "The shipping box labels show the letter R, then the number eight. The units inside show the letter R, then the number nine.",
+          "vocabulary": [
+            {
+              "term": "packing list",
+              "zh": "裝箱單",
+              "note": "列示包裝內貨物與數量的文件。"
+            },
+            {
+              "term": "holding area",
+              "zh": "暫存區",
+              "note": "在等待確認或處置期間暫時放置物品的區域。"
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "id": "t02-q042",
+          "testId": "test-02",
+          "number": 42,
+          "part": 3,
+          "groupId": "t02-g035",
+          "topic": "manufacturing",
+          "difficulty": "intermediate",
+          "tags": [
+            "packing list"
+          ],
+          "prompt": "What has the man already done?",
+          "promptZh": "男方已經做了什麼？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Stopped the shipment.",
+              "zh": "暫停出貨。",
+              "whyZh": "他在開頭明說已停止出貨。"
+            },
+            {
+              "id": "B",
+              "text": "Reprinted every label.",
+              "zh": "重印所有標籤。",
+              "whyZh": "對話只說要查列印紀錄，且核准前不得重貼，沒有說已重印全部標籤。"
+            },
+            {
+              "id": "C",
+              "text": "Discarded the old printer.",
+              "zh": "丟棄舊印表機。",
+              "whyZh": "印表機僅被懷疑用了舊模板，沒有被丟棄。"
+            },
+            {
+              "id": "D",
+              "text": "Changed the customer order.",
+              "zh": "修改客戶訂單。",
+              "whyZh": "對話沒有修改訂單。"
+            }
+          ],
+          "answer": "A",
+          "explanationZh": "他在開頭明說已停止出貨。",
+          "evidence": "I have stopped the shipment.",
+          "vocabulary": [
+            {
+              "term": "packing list",
+              "zh": "裝箱單",
+              "note": "列示包裝內貨物與數量的文件。"
+            },
+            {
+              "term": "holding area",
+              "zh": "暫存區",
+              "note": "在等待確認或處置期間暫時放置物品的區域。"
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "id": "t02-q043",
+          "testId": "test-02",
+          "number": 43,
+          "part": 3,
+          "groupId": "t02-g035",
+          "topic": "manufacturing",
+          "difficulty": "intermediate",
+          "tags": [
+            "packing list"
+          ],
+          "prompt": "What is required before relabeling?",
+          "promptZh": "重貼標籤前需要什麼？",
+          "options": [
+            {
+              "id": "A",
+              "text": "A new purchase order from the customer.",
+              "zh": "客戶的新採購單。",
+              "whyZh": "本題所需的是品質部門核准，不是新採購單。"
+            },
+            {
+              "id": "B",
+              "text": "A larger holding area.",
+              "zh": "更大的暫存區。",
+              "whyZh": "已指定現有暫存區，沒有擴大區域要求。"
+            },
+            {
+              "id": "C",
+              "text": "A different product model.",
+              "zh": "不同的產品型號。",
+              "whyZh": "處理的是標籤更正，未要求更換產品。"
+            },
+            {
+              "id": "D",
+              "text": "Approval from quality.",
+              "zh": "品質部門核准。",
+              "whyZh": "女方要求品質部門核准更正後才能重貼。"
+            }
+          ],
+          "answer": "D",
+          "explanationZh": "女方要求品質部門核准更正後才能重貼。",
+          "evidence": "Do not relabel anything until the quality team approves the correction.",
+          "vocabulary": [
+            {
+              "term": "packing list",
+              "zh": "裝箱單",
+              "note": "列示包裝內貨物與數量的文件。"
+            },
+            {
+              "term": "holding area",
+              "zh": "暫存區",
+              "note": "在等待確認或處置期間暫時放置物品的區域。"
+            }
+          ],
+          "revision": 1
+        }
+      ],
+      "timingProof": {
+        "status": "timing-candidate-not-sound-or-browser-acceptance",
+        "testId": "test-02",
+        "groupId": "t02-g035",
+        "firstSec": 1107.12654,
+        "endSec": 1183.15374,
+        "changedFormalIndices": [
+          123
+        ],
+        "answerSeconds": [
+          11.68228,
+          11.68228,
+          11.68227
+        ],
+        "formalSeconds": 2700
+      },
+      "receipt": {
+        "name": "test02-g035-explicit-codes",
+        "inputCharacters": 407,
+        "samples": 687300,
+        "seconds": 28.6375,
+        "bytes": 1374644,
+        "sha256": "13da2bf68d9bf8fbcd3858fa3ceaeeaa4e16659b7b7cf719e777fb39965f59c8",
+        "status": "rendered-candidate-not-validated"
+      },
+      "oldWindows": {
+        "shared": {
+          "path": "audio/azure-v1/test-02-13.mp3",
+          "sha256": "8c45e69db8ea8138ea2468257f59611b70c44335e26b900881d87caabff31474",
+          "start": 29.536,
+          "end": 59.368
+        },
+        "cueAndStem": [
+          {
+            "src": "audio/formal/test-02-cues-02.mp3",
+            "start": 13.28071,
+            "end": 17.10367,
+            "duration": 3.82296,
+            "kind": "audio",
+            "role": "cue",
+            "part": 3,
+            "groupId": "t02-g035",
+            "at": 1107.12654,
+            "assetSha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c"
+          },
+          {
+            "src": "audio/formal/test-02-cues-02.mp3",
+            "start": 17.35367,
+            "end": 20.049,
+            "duration": 2.69533,
+            "kind": "audio",
+            "role": "question",
+            "part": 3,
+            "groupId": "t02-g035",
+            "questionId": "t02-q041",
+            "at": 1140.7815,
+            "assetSha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c"
+          },
+          {
+            "src": "audio/formal/test-02-cues-02.mp3",
+            "start": 20.299,
+            "end": 22.94004,
+            "duration": 2.64104,
+            "kind": "audio",
+            "role": "question",
+            "part": 3,
+            "groupId": "t02-g035",
+            "questionId": "t02-q042",
+            "at": 1154.76094,
+            "assetSha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c"
+          },
+          {
+            "src": "audio/formal/test-02-cues-02.mp3",
+            "start": 23.19004,
+            "end": 26.37358,
+            "duration": 3.18354,
+            "kind": "audio",
+            "role": "question",
+            "part": 3,
+            "groupId": "t02-g035",
+            "questionId": "t02-q043",
+            "at": 1168.68609,
+            "assetSha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c"
+          }
+        ]
+      },
+      "exactVoiceTurnInputs": [
+        {
+          "speaker": "male",
+          "locale": "en-NG",
+          "role": "male",
+          "modelVoice": "en-NG-AbeoNeural",
+          "text": "The shipping box labels show the letter R, then the number eight. The units inside show the letter R, then the number nine. I have stopped the shipment."
+        },
+        {
+          "speaker": "female",
+          "locale": "en-NG",
+          "role": "female",
+          "modelVoice": "en-NG-EzinneNeural",
+          "text": "Keep the boxes in the marked holding area. Compare the labels with the packing list."
+        },
+        {
+          "speaker": "male",
+          "locale": "en-NG",
+          "role": "male",
+          "modelVoice": "en-NG-AbeoNeural",
+          "text": "The list is correct. The label printer may have used an old template."
+        },
+        {
+          "speaker": "female",
+          "locale": "en-NG",
+          "role": "female",
+          "modelVoice": "en-NG-EzinneNeural",
+          "text": "Let’s check the print history. Do not relabel anything until the quality team approves the correction."
+        }
+      ]
+    }
+  ],
+  "formalFrameOps": [
+    {
+      "index": 123,
+      "beforeSha256": "d4486b987e039caf1ad224be81f45424b0b341e5262aaa741c4f1e5436fa7ae0",
+      "updates": {
+        "src": "audio/exams/test-02/groups/t02-g035/passage-r2.wav",
+        "start": 0,
+        "end": 28.6375,
+        "duration": 28.6375
+      }
+    },
+    {
+      "index": 124,
+      "beforeSha256": "0b6c400c50ad8c0fb6be4d6db505a91f10d26f3e948b6b0a72a36daf436d515d",
+      "updates": {
+        "at": 1139.587
+      }
+    },
+    {
+      "index": 125,
+      "beforeSha256": "bc5f0dce3687f8065e0f91f8921225faf0e1e2a0fd5c005c02d7179b168bb9a8",
+      "updates": {
+        "duration": 11.68228,
+        "at": 1142.28233
+      }
+    },
+    {
+      "index": 126,
+      "beforeSha256": "b4fa177027ed7eca8b85bc5151701c6f8898f9e42d3b3eaba85e9b27e21fad6a",
+      "updates": {
+        "at": 1153.96461
+      }
+    },
+    {
+      "index": 127,
+      "beforeSha256": "e316816ca6d32ced53040aea19350d50f763148dbd9a06b1d554fc79bc1e7c56",
+      "updates": {
+        "duration": 11.68228,
+        "at": 1156.60565
+      }
+    },
+    {
+      "index": 128,
+      "beforeSha256": "833566a1ab2edba2ae5f630deab03ec22357a2a8e7aa998f3f34d7862006623b",
+      "updates": {
+        "at": 1168.28793
+      }
+    },
+    {
+      "index": 129,
+      "beforeSha256": "8e7a420af05e06d54d2e183f384509590bb77f7a0bcbfd32bf5acaa4ef47ba51",
+      "updates": {
+        "duration": 11.68227,
+        "at": 1171.47147
+      }
+    }
+  ]
+}

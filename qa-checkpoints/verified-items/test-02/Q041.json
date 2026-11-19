@@ -1,0 +1,209 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Externally marked R8 vs internal unit mark R9 is explicit. Shipment already stopped, packing and print history checked, Quality approval before relabeling. B/A/D and prompts/options unchanged with bilingual exact explanatory/source evidence alignment.",
+    "audio": "Unprompted Whisper small.en exact complete explicit-code wording. Independent unprompted Vosk small graph decodes both “the letter or then the number eight/nine”; “or” is the contextual phonetic representation of separately announced R in both lines, not another letter or numeric code. The larger graph is weaker and supplies a competing indefinite article around one letter; no exact independent whole-transcript claim. Remaining operational facts corroborated in combined exact/bounded local evidence. No human listening claimed.",
+    "retainedIntroAndStems": "Exact retained older shared cue-bank windows, independent scope model review matched numbers and intended stem words; earlier exact Vosk on all 3. Still the same existing media bytes and coordinates.",
+    "association": "New exact one WAV and interval shared by formal/practice (not independent speech), retained exact cue/stem positions, 100 scored slots and 2700 seconds. G036, G037 and all unrelated scopes are exactly unchanged; browser/session tests are independent.",
+    "localSpeechEvidenceHashes": {
+      "test02-g035-explicit-codes.wav.txt": "1ead3872c54379482cf4325a46cf736fa1613e316cab00a0edc52dab1ce28300",
+      "vosk-lgraph.txt": "5b293d1db3cc1019845d1ff22c3897fbb5e4b15e7ca55a4ddd6f972ef074ef88",
+      "vosk-small.txt": "1b4e7db0526797d8e3497171075b481d8a369db92ef4ce125e2813e553e3487c"
+    }
+  },
+  "activeQuestion": {
+    "id": "t02-q041",
+    "testId": "test-02",
+    "number": 41,
+    "part": 3,
+    "groupId": "t02-g035",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "packing list"
+    ],
+    "prompt": "What problem was discovered?",
+    "promptZh": "發現了什麼問題？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The packing list is missing.",
+        "zh": "裝箱單遺失。",
+        "whyZh": "男方已查看並說裝箱單正確。"
+      },
+      {
+        "id": "B",
+        "text": "The carton labels identify the wrong model.",
+        "zh": "紙箱標籤標示了錯誤型號。",
+        "whyZh": "箱外是 R8，箱內產品是 R9，型號不一致。"
+      },
+      {
+        "id": "C",
+        "text": "The units do not power on.",
+        "zh": "機器無法開機。",
+        "whyZh": "對話沒有討論產品功能故障。"
+      },
+      {
+        "id": "D",
+        "text": "The carrier arrived at the wrong address.",
+        "zh": "承運商到錯地址。",
+        "whyZh": "沒有提到承運商地址問題。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "箱外是 R8，箱內產品是 R9，型號不一致。",
+    "evidence": "The shipping box labels show the letter R, then the number eight. The units inside show the letter R, then the number nine.",
+    "vocabulary": [
+      {
+        "term": "packing list",
+        "zh": "裝箱單",
+        "note": "列示包裝內貨物與數量的文件。"
+      },
+      {
+        "term": "holding area",
+        "zh": "暫存區",
+        "note": "在等待確認或處置期間暫時放置物品的區域。"
+      }
+    ],
+    "revision": 1
+  },
+  "originalQuestion": {
+    "id": "t02-q041",
+    "testId": "test-02",
+    "number": 41,
+    "part": 3,
+    "groupId": "t02-g035",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "packing list"
+    ],
+    "prompt": "What problem was discovered?",
+    "promptZh": "發現了什麼問題？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The packing list is missing.",
+        "zh": "裝箱單遺失。",
+        "whyZh": "男方已查看並說裝箱單正確。"
+      },
+      {
+        "id": "B",
+        "text": "The carton labels identify the wrong model.",
+        "zh": "紙箱標籤標示了錯誤型號。",
+        "whyZh": "箱外是 R8，箱內產品是 R9，型號不一致。"
+      },
+      {
+        "id": "C",
+        "text": "The units do not power on.",
+        "zh": "機器無法開機。",
+        "whyZh": "對話沒有討論產品功能故障。"
+      },
+      {
+        "id": "D",
+        "text": "The carrier arrived at the wrong address.",
+        "zh": "承運商到錯地址。",
+        "whyZh": "沒有提到承運商地址問題。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "箱外是 R8，箱內產品是 R9，型號不一致。",
+    "evidence": "the units inside are model R nine",
+    "vocabulary": [
+      {
+        "term": "packing list",
+        "zh": "裝箱單",
+        "note": "列示包裝內貨物與數量的文件。"
+      },
+      {
+        "term": "holding area",
+        "zh": "暫存區",
+        "note": "在等待確認或處置期間暫時放置物品的區域。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g035",
+    "testId": "test-02",
+    "part": 3,
+    "title": "Investigating a label mismatch",
+    "titleZh": "調查標籤不符",
+    "topic": "manufacturing",
+    "passage": "Man: The shipping box labels show the letter R, then the number eight. The units inside show the letter R, then the number nine. I have stopped the shipment.\nWoman: Keep the boxes in the marked holding area. Compare the labels with the packing list.\nMan: The list is correct. The label printer may have used an old template.\nWoman: Let’s check the print history. Do not relabel anything until the quality team approves the correction.",
+    "passageZh": "男：出貨紙箱上的標籤先顯示字母 R，再顯示數字 8。箱內產品的標示則是字母 R，接著是數字 9。我已停止出貨。\n女：把紙箱留在有標示的暫存區。請比對標籤與裝箱單。\n男：裝箱單沒錯。印表機可能用了舊版標籤樣板。\n女：先查列印紀錄。品管部門核准更正之前，不要重貼任何標籤。",
+    "audioScript": "The shipping box labels show the letter R, then the number eight. The units inside show the letter R, then the number nine. I have stopped the shipment.\nKeep the boxes in the marked holding area. Compare the labels with the packing list.\nThe list is correct. The label printer may have used an old template.\nLet’s check the print history. Do not relabel anything until the quality team approves the correction.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "The shipping box labels show the letter R, then the number eight. The units inside show the letter R, then the number nine. I have stopped the shipment."
+      },
+      {
+        "voice": "female",
+        "text": "Keep the boxes in the marked holding area. Compare the labels with the packing list."
+      },
+      {
+        "voice": "male",
+        "text": "The list is correct. The label printer may have used an old template."
+      },
+      {
+        "voice": "female",
+        "text": "Let’s check the print history. Do not relabel anything until the quality team approves the correction."
+      }
+    ],
+    "audio": "audio/exams/test-02/groups/t02-g035/passage-r2.wav",
+    "duration": 28.6375,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-NG",
+        "role": "male",
+        "modelVoice": "en-NG-AbeoNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-NG",
+        "role": "female",
+        "modelVoice": "en-NG-EzinneNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 28.6375
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-02.mp3",
+      "start": 13.28071,
+      "end": 17.10367,
+      "assetSha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+      "speech": "Questions 41 through 43. Listen to the conversation."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/exams/test-02/groups/t02-g035/passage-r2.wav",
+      "start": 0,
+      "end": 28.6375,
+      "assetSha256": "13da2bf68d9bf8fbcd3858fa3ceaeeaa4e16659b7b7cf719e777fb39965f59c8",
+      "speech": "The shipping box labels show the letter R, then the number eight. The units inside show the letter R, then the number nine. I have stopped the shipment.\nKeep the boxes in the marked holding area. Compare the labels with the packing list.\nThe list is correct. The label printer may have used an old template.\nLet’s check the print history. Do not relabel anything until the quality team approves the correction."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-02-cues-02.mp3",
+      "start": 17.35367,
+      "end": 20.049,
+      "assetSha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+      "speech": "Number 41. What problem was discovered?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/exams/test-02/groups/t02-g035/passage-r2.wav",
+      "start": 0,
+      "end": 28.6375,
+      "assetSha256": "13da2bf68d9bf8fbcd3858fa3ceaeeaa4e16659b7b7cf719e777fb39965f59c8",
+      "speech": "The shipping box labels show the letter R, then the number eight. The units inside show the letter R, then the number nine. I have stopped the shipment.\nKeep the boxes in the marked holding area. Compare the labels with the packing list.\nThe list is correct. The label printer may have used an old template.\nLet’s check the print history. Do not relabel anything until the quality team approves the correction."
+    }
+  ],
+  "imageSha256": null
+}

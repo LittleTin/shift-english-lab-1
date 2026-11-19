@@ -1,0 +1,323 @@
+{
+  "t02-g035": {
+    "oldGroup": {
+      "id": "t02-g035",
+      "testId": "test-02",
+      "part": 3,
+      "title": "Investigating a label mismatch",
+      "titleZh": "調查標籤不符",
+      "topic": "manufacturing",
+      "passage": "Man: The barcode on these cartons shows model R eight, but the units inside are model R nine. I have stopped the shipment.\nWoman: Thank you. Keep the cartons in the marked holding area. We need to compare the labels with the packing list.\nMan: The list is correct. The label printer may have used an old template.\nWoman: Let us check the print history before deciding. Do not relabel anything until quality has approved the correction.",
+      "passageZh": "男：這些紙箱的條碼顯示 R8 型號，但裡面的機器是 R9。我已經暫停出貨。\n女：謝謝。先把紙箱放在標示好的暫存區。我們需要比對標籤與裝箱單。\n男：裝箱單是正確的。標籤印表機可能用了舊模板。\n女：先查列印紀錄再判斷。在品質部門核准更正前，先不要重貼任何標籤。",
+      "audioScript": "The barcode on these cartons shows model R eight, but the units inside are model R nine. I have stopped the shipment.\nThank you. Keep the cartons in the marked holding area. We need to compare the labels with the packing list.\nThe list is correct. The label printer may have used an old template.\nLet us check the print history before deciding. Do not relabel anything until quality has approved the correction.",
+      "turns": [
+        {
+          "voice": "male",
+          "text": "The barcode on these cartons shows model R eight, but the units inside are model R nine. I have stopped the shipment."
+        },
+        {
+          "voice": "female",
+          "text": "Thank you. Keep the cartons in the marked holding area. We need to compare the labels with the packing list."
+        },
+        {
+          "voice": "male",
+          "text": "The list is correct. The label printer may have used an old template."
+        },
+        {
+          "voice": "female",
+          "text": "Let us check the print history before deciding. Do not relabel anything until quality has approved the correction."
+        }
+      ],
+      "audio": "audio/azure-v1/test-02-13.mp3",
+      "duration": 29.832,
+      "audioSpeakers": [
+        {
+          "speaker": "male",
+          "locale": "en-NG",
+          "role": "male",
+          "modelVoice": "en-NG-AbeoNeural"
+        },
+        {
+          "speaker": "female",
+          "locale": "en-NG",
+          "role": "female",
+          "modelVoice": "en-NG-EzinneNeural"
+        }
+      ],
+      "audioStart": 29.536,
+      "audioEnd": 59.368
+    },
+    "oldQuestions": [
+      {
+        "id": "t02-q041",
+        "testId": "test-02",
+        "number": 41,
+        "part": 3,
+        "groupId": "t02-g035",
+        "topic": "manufacturing",
+        "difficulty": "intermediate",
+        "tags": [
+          "packing list"
+        ],
+        "prompt": "What problem was discovered?",
+        "promptZh": "發現了什麼問題？",
+        "options": [
+          {
+            "id": "A",
+            "text": "The packing list is missing.",
+            "zh": "裝箱單遺失。",
+            "whyZh": "男方已查看並說裝箱單正確。"
+          },
+          {
+            "id": "B",
+            "text": "The carton labels identify the wrong model.",
+            "zh": "紙箱標籤標示了錯誤型號。",
+            "whyZh": "箱外是 R8，箱內產品是 R9，型號不一致。"
+          },
+          {
+            "id": "C",
+            "text": "The units do not power on.",
+            "zh": "機器無法開機。",
+            "whyZh": "對話沒有討論產品功能故障。"
+          },
+          {
+            "id": "D",
+            "text": "The carrier arrived at the wrong address.",
+            "zh": "承運商到錯地址。",
+            "whyZh": "沒有提到承運商地址問題。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "箱外是 R8，箱內產品是 R9，型號不一致。",
+        "evidence": "the units inside are model R nine",
+        "vocabulary": [
+          {
+            "term": "packing list",
+            "zh": "裝箱單",
+            "note": "列示包裝內貨物與數量的文件。"
+          },
+          {
+            "term": "holding area",
+            "zh": "暫存區",
+            "note": "在等待確認或處置期間暫時放置物品的區域。"
+          }
+        ],
+        "revision": 1
+      },
+      {
+        "id": "t02-q042",
+        "testId": "test-02",
+        "number": 42,
+        "part": 3,
+        "groupId": "t02-g035",
+        "topic": "manufacturing",
+        "difficulty": "intermediate",
+        "tags": [
+          "packing list"
+        ],
+        "prompt": "What has the man already done?",
+        "promptZh": "男方已經做了什麼？",
+        "options": [
+          {
+            "id": "A",
+            "text": "Stopped the shipment.",
+            "zh": "暫停出貨。",
+            "whyZh": "他在開頭明說已停止出貨。"
+          },
+          {
+            "id": "B",
+            "text": "Reprinted every label.",
+            "zh": "重印所有標籤。",
+            "whyZh": "女方要求核准前不要重貼，尚未重印全部標籤。"
+          },
+          {
+            "id": "C",
+            "text": "Discarded the old printer.",
+            "zh": "丟棄舊印表機。",
+            "whyZh": "印表機僅被懷疑用了舊模板，沒有被丟棄。"
+          },
+          {
+            "id": "D",
+            "text": "Changed the customer order.",
+            "zh": "修改客戶訂單。",
+            "whyZh": "對話沒有修改訂單。"
+          }
+        ],
+        "answer": "A",
+        "explanationZh": "他在開頭明說已停止出貨。",
+        "evidence": "I have stopped the shipment.",
+        "vocabulary": [
+          {
+            "term": "packing list",
+            "zh": "裝箱單",
+            "note": "列示包裝內貨物與數量的文件。"
+          },
+          {
+            "term": "holding area",
+            "zh": "暫存區",
+            "note": "在等待確認或處置期間暫時放置物品的區域。"
+          }
+        ],
+        "revision": 1
+      },
+      {
+        "id": "t02-q043",
+        "testId": "test-02",
+        "number": 43,
+        "part": 3,
+        "groupId": "t02-g035",
+        "topic": "manufacturing",
+        "difficulty": "intermediate",
+        "tags": [
+          "packing list"
+        ],
+        "prompt": "What is required before relabeling?",
+        "promptZh": "重貼標籤前需要什麼？",
+        "options": [
+          {
+            "id": "A",
+            "text": "A new purchase order from the customer.",
+            "zh": "客戶的新採購單。",
+            "whyZh": "本題所需的是品質部門核准，不是新採購單。"
+          },
+          {
+            "id": "B",
+            "text": "A larger holding area.",
+            "zh": "更大的暫存區。",
+            "whyZh": "已指定現有暫存區，沒有擴大區域要求。"
+          },
+          {
+            "id": "C",
+            "text": "A different product model.",
+            "zh": "不同的產品型號。",
+            "whyZh": "處理的是標籤更正，未要求更換產品。"
+          },
+          {
+            "id": "D",
+            "text": "Approval from quality.",
+            "zh": "品質部門核准。",
+            "whyZh": "女方要求品質部門核准更正後才能重貼。"
+          }
+        ],
+        "answer": "D",
+        "explanationZh": "女方要求品質部門核准更正後才能重貼。",
+        "evidence": "until quality has approved the correction",
+        "vocabulary": [
+          {
+            "term": "packing list",
+            "zh": "裝箱單",
+            "note": "列示包裝內貨物與數量的文件。"
+          },
+          {
+            "term": "holding area",
+            "zh": "暫存區",
+            "note": "在等待確認或處置期間暫時放置物品的區域。"
+          }
+        ],
+        "revision": 1
+      }
+    ],
+    "oldGroupFormalFrames": [
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 13.28071,
+        "end": 17.10367,
+        "duration": 3.82296,
+        "kind": "audio",
+        "role": "cue",
+        "part": 3,
+        "groupId": "t02-g035",
+        "at": 1107.12654
+      },
+      {
+        "src": "audio/azure-v1/test-02-13.mp3",
+        "start": 29.536,
+        "end": 59.368,
+        "duration": 29.832,
+        "kind": "audio",
+        "role": "passage",
+        "part": 3,
+        "groupId": "t02-g035",
+        "at": 1110.9495,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-NG",
+            "role": "male",
+            "modelVoice": "en-NG-AbeoNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-NG",
+            "role": "female",
+            "modelVoice": "en-NG-EzinneNeural"
+          }
+        ]
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 17.35367,
+        "end": 20.049,
+        "duration": 2.69533,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g035",
+        "questionId": "t02-q041",
+        "at": 1140.7815
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 3,
+        "groupId": "t02-g035",
+        "questionId": "t02-q041",
+        "at": 1143.47683
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 20.299,
+        "end": 22.94004,
+        "duration": 2.64104,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g035",
+        "questionId": "t02-q042",
+        "at": 1154.76094
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 3,
+        "groupId": "t02-g035",
+        "questionId": "t02-q042",
+        "at": 1157.40198
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 23.19004,
+        "end": 26.37358,
+        "duration": 3.18354,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g035",
+        "questionId": "t02-q043",
+        "at": 1168.68609
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 3,
+        "groupId": "t02-g035",
+        "questionId": "t02-q043",
+        "at": 1171.86963
+      }
+    ],
+    "oldAudioEdition": "toeic-1"
+  }
+}

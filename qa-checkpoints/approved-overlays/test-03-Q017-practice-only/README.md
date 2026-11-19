@@ -1,0 +1,1 @@
+Apply on top of Test03 Q084 plan using explicit --select 17. Changes only the reviewed immutable practice asset references/ranges. Exact original formal plan/cue/voices, IDs/keys, old assets, memorized records and visible images are unchanged. Native browsers and archived resume still require final acceptance.

@@ -1,0 +1,90 @@
+{
+  "status": "item-verified-offline-not-published",
+  "testId": "test-03",
+  "requiresPriorApprovedOverlay": "test-03-Q084",
+  "guardSourceSha256": "fe5bef6a444ce2d002b1ec16c121abc6d24c35341d11453817608b4748a2d4ad",
+  "unchangedPlanSha256": "cf6ea649dec9e3e791d8a5b42ab428b6eacdac0ee971cd4b1562de7d4898928c",
+  "units": {
+    "17": {
+      "id": "t03-q017",
+      "key": "C",
+      "questionSha256": "2790e044ee50e520eb1d546689da26e250b89373f09e7effdb2ce12838e9b090",
+      "oldGroupSha256": "e74420667b1a355d77fb3c13361b971ddf0d7e48716f6831fa04c39695941fd6",
+      "newGroup": {
+        "id": "t03-g017",
+        "testId": "test-03",
+        "part": 2,
+        "title": "Meeting host",
+        "titleZh": "會議主持",
+        "topic": "business",
+        "passage": "You are leading the client meeting, are you not? A. The meeting room seats twelve. B. They are our largest client. C. Actually, Elena will be taking my place.",
+        "passageZh": "客戶會議是由你主持，對吧？\nA. 會議室可坐十二人。\nB. 他們是我們最大的客戶。\nC. 其實 Elena 會代替我。",
+        "audioScript": "You are leading the client meeting, are you not? A. The meeting room seats twelve. B. They are our largest client. C. Actually, Elena will be taking my place.",
+        "turns": [
+          {
+            "voice": "female",
+            "text": "You are leading the client meeting, are you not?"
+          },
+          {
+            "voice": "male",
+            "text": "A. The meeting room seats twelve. B. They are our largest client. C. Actually, Elena will be taking my place."
+          }
+        ],
+        "audio": "audio/exams/test-03/groups/t03-g017/practice-passage-r2.wav",
+        "duration": 14.57,
+        "audioStart": 0,
+        "audioEnd": 14.57,
+        "audioSpeakers": [
+          {
+            "speaker": "female",
+            "locale": "en-TZ",
+            "role": "female",
+            "modelVoice": "en-TZ-ImaniNeural"
+          },
+          {
+            "speaker": "male",
+            "locale": "en-TZ",
+            "role": "male",
+            "modelVoice": "en-TZ-ElimuNeural"
+          }
+        ]
+      },
+      "asset": {
+        "path": "audio/exams/test-03/groups/t03-g017/practice-passage-r2.wav",
+        "sha256": "01702e2144349eb42446eca903d3131e573a49aa6338ba43bc2abc3bd6c02215",
+        "samples": 349680,
+        "seconds": 14.57
+      },
+      "oldMedia": {
+        "practice": {
+          "n": 17,
+          "mode": "practice",
+          "asset": "audio/azure-v1/test-03-06.mp3",
+          "sha256": "00789143d5747f6c8f9dd5f8ff692997e5b4ca3095743e233e607e3a96122699",
+          "start": 17.944,
+          "end": 35.32,
+          "name": "Q017-practice"
+        },
+        "formal": {
+          "n": 17,
+          "mode": "formal",
+          "asset": "audio/formal-v2/test-03-06.mp3",
+          "sha256": "eeeabe98e86e44f0c9eb8c8c80315e2417ea573351fd4064b73595ccd67bf6d7",
+          "start": 18.64,
+          "end": 36.304,
+          "name": "Q017-formal"
+        },
+        "cue": {
+          "n": 17,
+          "mode": "cue",
+          "asset": "audio/formal/test-03-cues-01.mp3",
+          "sha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+          "start": 18.63175,
+          "end": 19.7295,
+          "name": "Q017-cue"
+        }
+      },
+      "image": null
+    }
+  }
+}
