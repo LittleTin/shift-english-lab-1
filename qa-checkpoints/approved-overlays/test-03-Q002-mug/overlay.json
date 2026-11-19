@@ -1,0 +1,167 @@
+{
+  "status": "exact-item-verified-offline-not-published",
+  "testId": "test-03",
+  "oldPlanSha256": "cf6ea649dec9e3e791d8a5b42ab428b6eacdac0ee971cd4b1562de7d4898928c",
+  "oldQuestionSha256": "d0f530a53262db0c42eae51aac2dfdd6f8dd0cd569fc8f422eef806ab0ec9db6",
+  "oldGroupSha256": "06f57b35274aff5d53d11d3defb9c775b69ecc5791a49b9260703e6eef6c7a17",
+  "oldFrames": {
+    "cue": "6a23ddf327702f267303944a36c562b68e830efc0cb966ac28d67adb00e94ff2",
+    "passage": "855259ce097c45a2ab9394eb16c4518056474a1fe6539f00ef40d48e1d03cd76",
+    "answer": "085f157971be89357424de8f97f8e4c4ffff99a47b5d12bba9b54c58a82992f0"
+  },
+  "predecessor": {
+    "requires": "Test03 Q084 and Q017 practice-only approved overlays",
+    "q017QuestionSha256": "2790e044ee50e520eb1d546689da26e250b89373f09e7effdb2ce12838e9b090",
+    "q017GroupSha256": "b29f3815a4a1efe5795bff34f4eecffc18f230122bb1e86672fa0cb549da4d02",
+    "q017MediaSha256": "01702e2144349eb42446eca903d3131e573a49aa6338ba43bc2abc3bd6c02215"
+  },
+  "image": {
+    "src": "assets/scenes/cafe.svg",
+    "sha256": "63f1a7baf4ac439b64fa29df3c2b01fb3b6a6e60f2fd210e924e83a52e71eecd",
+    "case": "Exact current SVG scene used in both modes. Rendered image shows a white cup on the counter; A, B and C contradicted by scene, not inferred from answer key."
+  },
+  "oldSources": {
+    "practice": {
+      "n": 2,
+      "mode": "practice",
+      "asset": "audio/azure-v1/test-03-01.mp3",
+      "sha256": "8f78b5a19e22b5329e8b5aef750272bc91cfd8aae5cebb7a022d69f7837b25ef",
+      "start": 20.608,
+      "end": 37.936,
+      "name": "Q002-practice"
+    },
+    "formal": {
+      "n": 2,
+      "mode": "formal",
+      "asset": "audio/formal-v2/test-03-01.mp3",
+      "sha256": "8a21ae045c9366b4ed5ed42612bacebff65b86e000b60833249b01fd528cb4f2",
+      "start": 20.128,
+      "end": 38.776,
+      "name": "Q002-formal"
+    },
+    "cue": {
+      "n": 2,
+      "mode": "cue",
+      "asset": "audio/formal/test-03-cues-01.mp3",
+      "sha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "start": 1.26471,
+      "end": 2.10425,
+      "name": "Q002-cue"
+    }
+  },
+  "newQuestion": {
+    "id": "t03-q002-r2",
+    "testId": "test-03",
+    "number": 2,
+    "part": 1,
+    "groupId": "t03-g002-r2",
+    "topic": "daily",
+    "difficulty": "foundation",
+    "tags": [
+      "daily",
+      "photo_description"
+    ],
+    "prompt": "Look at the picture and choose the statement that best describes it.",
+    "promptZh": "請看圖片，選出最符合畫面的敘述。",
+    "options": [
+      {
+        "id": "A",
+        "text": "The counter is covered with plates.",
+        "zh": "櫃檯上擺滿盤子。",
+        "whyZh": "只有杯子，沒有滿桌盤子。"
+      },
+      {
+        "id": "B",
+        "text": "Both people are behind the counter.",
+        "zh": "兩個人都在櫃檯後方。",
+        "whyZh": "其中一人位於櫃檯外側。"
+      },
+      {
+        "id": "C",
+        "text": "A customer is washing a window.",
+        "zh": "一位顧客正在清洗窗戶。",
+        "whyZh": "人物沒有接觸窗戶，也沒有清洗工具。"
+      },
+      {
+        "id": "D",
+        "text": "A mug is resting on the counter.",
+        "zh": "櫃檯上放著一只馬克杯。",
+        "whyZh": "畫面中央、兩人之間的檯面上，可見一只有把手的白色馬克杯。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "畫面中央、兩人之間的檯面上，可見一只有把手的白色馬克杯。",
+    "evidence": "A mug is resting on the counter.",
+    "vocabulary": [
+      {
+        "term": "counter",
+        "zh": "櫃檯",
+        "note": "A mug is resting on the counter."
+      }
+    ],
+    "revision": 2
+  },
+  "newGroup": {
+    "id": "t03-g002-r2",
+    "testId": "test-03",
+    "part": 1,
+    "title": "Across the counter",
+    "titleZh": "櫃檯兩側",
+    "topic": "daily",
+    "passage": "A. The counter is covered with plates. B. Both people are behind the counter. C. A customer is washing a window. D. A mug is resting on the counter.",
+    "passageZh": "A. 櫃檯上擺滿盤子。\nB. 兩個人都在櫃檯後方。\nC. 一位顧客正在清洗窗戶。\nD. 櫃檯上放著一只馬克杯。",
+    "audioScript": "A. The counter is covered with plates. B. Both people are behind the counter. C. A customer is washing a window. D. A mug is resting on the counter.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "A. The counter is covered with plates. B. Both people are behind the counter. C. A customer is washing a window. D. A mug is resting on the counter."
+      }
+    ],
+    "audio": "audio/exams/test-03/groups/t03-g002-r2/practice-passage.wav",
+    "duration": 13.3925,
+    "imageScene": "cafe",
+    "image": "assets/scenes/cafe.svg",
+    "imageAlt": "Original practice illustration, question 2",
+    "audioStart": 0,
+    "audioEnd": 13.3925,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-NG",
+        "role": "male",
+        "modelVoice": "en-NG-AbeoNeural"
+      }
+    ]
+  },
+  "newAssets": {
+    "formal": {
+      "path": "audio/exams/test-03/groups/t03-g002-r2/formal-passage.wav",
+      "sha256": "032fce4b43eba09fc894f9ee89518bc64d70beaed9afac9842b7c97ead932edb",
+      "samples": 355620,
+      "seconds": 14.8175,
+      "voices": [
+        {
+          "speaker": "male",
+          "locale": "en-US",
+          "role": "male",
+          "modelVoice": "en-US-GuyNeural"
+        }
+      ]
+    },
+    "practice": {
+      "path": "audio/exams/test-03/groups/t03-g002-r2/practice-passage.wav",
+      "sha256": "512d67888e7dfc45f7b9c098eb6c204f7d7b28b07ffe10cecb6ab796efe0a4ed",
+      "samples": 321420,
+      "seconds": 13.3925,
+      "voices": [
+        {
+          "speaker": "male",
+          "locale": "en-NG",
+          "role": "male",
+          "modelVoice": "en-NG-AbeoNeural"
+        }
+      ]
+    }
+  },
+  "newPlanSha256": "96afd1282f92d2a7a82254d6f5553cbbfd23497d8c6e11b12d75c81fb751b75b"
+}

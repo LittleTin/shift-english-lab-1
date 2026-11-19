@@ -1,0 +1,389 @@
+{
+  "status": "editorial-timing-tight-pending-independent-review-audio",
+  "testId": "test-03",
+  "scope": "Q071–073 single Part 4 talk replacing entire affected three-item group, not mixed with prior version",
+  "fictional": true,
+  "sourceGuard": {
+    "oldGroupId": "t03-g045",
+    "oldQuestionIds": [
+      "t03-q071",
+      "t03-q072",
+      "t03-q073"
+    ],
+    "oldGroupCanonicalSha256": "503bda56dc6aedad27bafa0b911afbfbb191198fcf2886e8a20ffae536195645",
+    "oldQuestionsCanonicalSha256": {
+      "t03-q071": "06dd0e7b85716a687ba6ef9e47207422e9ea54d9cb02d498f394cc7a72495483",
+      "t03-q072": "1b7b9243d39ebf70a76252f62ddc6587d931f3f8a589db20ad5e1b67f777294f",
+      "t03-q073": "d3f5241ea414a3718c79200f2c0e9f306411f2f87287689fc627f29321546158"
+    },
+    "oldFrames": [
+      {
+        "src": "audio/formal-v2/narrator-02.mp3",
+        "start": 16.408,
+        "end": 31.384,
+        "duration": 14.976,
+        "kind": "audio",
+        "role": "direction",
+        "part": 4,
+        "groupId": "t03-g045",
+        "at": 1878.50069
+      },
+      {
+        "src": "audio/formal/test-03-cues-04.mp3",
+        "start": 22.75333,
+        "end": 26.1615,
+        "duration": 3.40817,
+        "kind": "audio",
+        "role": "cue",
+        "part": 4,
+        "groupId": "t03-g045",
+        "at": 1893.47669
+      },
+      {
+        "src": "audio/azure-v1/test-03-25.mp3",
+        "start": 0.5,
+        "end": 47.372,
+        "duration": 46.872,
+        "kind": "audio",
+        "role": "passage",
+        "part": 4,
+        "groupId": "t03-g045",
+        "at": 1896.88486,
+        "speakers": [
+          {
+            "speaker": "F1",
+            "locale": "en-NG",
+            "role": "female",
+            "modelVoice": "en-NG-EzinneNeural"
+          }
+        ]
+      },
+      {
+        "src": "audio/formal/test-03-cues-04.mp3",
+        "start": 26.4115,
+        "end": 30.40383,
+        "duration": 3.99233,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t03-g045",
+        "questionId": "t03-q071",
+        "at": 1943.75686
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 6.55266,
+        "part": 4,
+        "groupId": "t03-g045",
+        "questionId": "t03-q071",
+        "at": 1947.74919
+      },
+      {
+        "src": "audio/formal/test-03-cues-04.mp3",
+        "start": 30.65383,
+        "end": 33.62954,
+        "duration": 2.97571,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t03-g045",
+        "questionId": "t03-q072",
+        "at": 1954.30185
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 6.55266,
+        "part": 4,
+        "groupId": "t03-g045",
+        "questionId": "t03-q072",
+        "at": 1957.27756
+      },
+      {
+        "src": "audio/formal/test-03-cues-04.mp3",
+        "start": 33.87954,
+        "end": 37.23608,
+        "duration": 3.35654,
+        "kind": "audio",
+        "role": "question",
+        "part": 4,
+        "groupId": "t03-g045",
+        "questionId": "t03-q073",
+        "at": 1963.83022
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 6.55266,
+        "part": 4,
+        "groupId": "t03-g045",
+        "questionId": "t03-q073",
+        "at": 1967.18676
+      }
+    ],
+    "oldSourceSha256": {
+      "audio/formal-v2/narrator-02.mp3": "000f8c613a6bbc765516c11a020fc3298c92e9dfc7695110e68b0eab8aba0a63",
+      "audio/formal/test-03-cues-04.mp3": "f5db73b2aab14a49b3a6ba3408fbf600098cfa5626160ea7dd95a13b9bf6404b",
+      "audio/azure-v1/test-03-25.mp3": "95e920fcdedc5427c4e38c0fc6ee61b55b7b70a3ef8f377af5f72b900a33a30a"
+    },
+    "holdReason": "old existing talk ASR discrepancy power saws versus power source; recording fault not established; do not promote old as verified or regrade",
+    "pin": "42f2eb741be2ac29f33cfebb4a54ae4dfdd60886",
+    "note": "Old frames stored in inherited original authored plan; bind file/range/identity to current cumulative Test03 predecessor and rederive at offsets, not assume inherited offsets or spare pauses."
+  },
+  "group": {
+    "id": "t03-g045-r2",
+    "testId": "test-03",
+    "part": 4,
+    "title": "Keeping track of the tool library",
+    "titleZh": "借還工具也要有紀錄",
+    "topic": "daily",
+    "passage": "F1: Shelf loans were quick but untracked. Now the desk checks tools and logs loans. The workshop leader demonstrates power tools at noon. Skip only if you've used that exact model. Check the tool, not its case.\n\nCourtyard lockers take returns. Scan your card and wait for confirmation. A quick exit is fine. A disappearing act isn't.\n\nThe courtyard opens Sunday; the desk reopens Monday. Never use lockers for tools with damaged cables. Report damage online before the tool is due. Hand it in when the desk reopens. Do both to avoid late fees.",
+    "passageZh": "以前從架上借工具很快，卻沒有紀錄。現在由服務台檢查工具並登記借用。工作坊負責人中午會示範電動工具。只有用過完全相同的型號，才能省略示範。要看工具本身，不是看工具盒。\n\n中庭的置物櫃可用來歸還工具。請掃卡並等候確認。快點離開沒關係，可別上演憑空消失。\n\n星期日中庭開放，服務台星期一才重新開放。電線受損的工具絕不能用置物櫃歸還。工具到期前須上網通報損壞；服務台重新開放時再親手交還。兩項都做到就不會被收逾期費。",
+    "audioScript": "Shelf loans were quick but untracked. Now the desk checks tools and logs loans. The workshop leader demonstrates power tools at noon. Skip only if you've used that exact model. Check the tool, not its case.\n\nCourtyard lockers take returns. Scan your card and wait for confirmation. A quick exit is fine. A disappearing act isn't.\n\nThe courtyard opens Sunday; the desk reopens Monday. Never use lockers for tools with damaged cables. Report damage online before the tool is due. Hand it in when the desk reopens. Do both to avoid late fees.",
+    "turns": [
+      {
+        "voice": "F1",
+        "text": "Shelf loans were quick but untracked. Now the desk checks tools and logs loans. The workshop leader demonstrates power tools at noon. Skip only if you've used that exact model. Check the tool, not its case.\n\nCourtyard lockers take returns. Scan your card and wait for confirmation. A quick exit is fine. A disappearing act isn't.\n\nThe courtyard opens Sunday; the desk reopens Monday. Never use lockers for tools with damaged cables. Report damage online before the tool is due. Hand it in when the desk reopens. Do both to avoid late fees."
+      }
+    ],
+    "audioSpeakers": [
+      {
+        "speaker": "F1",
+        "locale": "en-NG",
+        "role": "female",
+        "modelVoice": "en-NG-EzinneNeural"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "t03-q071-r2",
+      "testId": "test-03",
+      "number": 71,
+      "part": 4,
+      "groupId": "t03-g045-r2",
+      "topic": "daily",
+      "difficulty": "advanced",
+      "tags": [
+        "daily",
+        "listening-comprehension",
+        "talk"
+      ],
+      "prompt": "At ten, a power tool's case looks familiar, but the borrower hasn't used that model. What now?",
+      "promptZh": "十點時，借用人覺得一件電動工具的工具盒很眼熟，但沒用過那個型號。接下來該怎麼做？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wait for the workshop leader's demonstration, and have the tool checked and the loan recorded at the desk.",
+          "zh": "等工作坊負責人示範，並完成服務台的工具檢查及借用登記。",
+          "whyZh": "工具盒眼熟不代表曾用過完全相同的型號，因此仍須參加負責人中午的示範；同時不能省略服務台的工具檢查或借用登記。"
+        },
+        {
+          "id": "B",
+          "text": "Have it checked and the loan recorded at ten, then skip the demonstration because the case name is familiar.",
+          "zh": "十點在服務台檢查工具並登記，因為認得工具盒上的名稱，就省略示範。",
+          "whyZh": "檢查與登記正確，但熟悉盒上名稱不能代替曾使用同一型號。"
+        },
+        {
+          "id": "C",
+          "text": "Ask the desk volunteer to demonstrate it at ten and record the loan, without doing a separate check.",
+          "zh": "請服務台志工十點示範並登記，不另做工具檢查。",
+          "whyZh": "電動工具由工作坊負責人於中午示範，並非服務台志工在十點示範；工具檢查也不能省略。"
+        },
+        {
+          "id": "D",
+          "text": "Wait until noon, use the workshop leader's demonstration as the tool check, and take the tool after recording the loan.",
+          "zh": "等到中午，把負責人的示範當作工具檢查，登記後就借走。",
+          "whyZh": "操作示範與檢查是不同步驟。即使示範時間選對，仍須檢查工具。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "工具盒眼熟不代表曾用過完全相同的型號，因此仍須參加負責人中午的示範；同時不能省略服務台的工具檢查或借用登記。",
+      "evidence": "Now the desk checks tools and logs loans. | The workshop leader demonstrates power tools at noon. | Skip only if you've used that exact model. | Check the tool, not its case.",
+      "vocabulary": [
+        {
+          "term": "powered tool",
+          "zh": "電動工具",
+          "note": "此處指需由工作坊負責人示範的電動工具。"
+        },
+        {
+          "term": "log a loan",
+          "zh": "登記借用",
+          "note": "log 在此指留下借用紀錄，不是登入帳號。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t03-q072-r2",
+      "testId": "test-03",
+      "number": 72,
+      "part": 4,
+      "groupId": "t03-g045-r2",
+      "topic": "daily",
+      "difficulty": "advanced",
+      "tags": [
+        "daily",
+        "listening-comprehension",
+        "talk"
+      ],
+      "prompt": "How does the joke relate to old loans?",
+      "promptZh": "這個玩笑和以前借工具的方式有什麼關聯？",
+      "options": [
+        {
+          "id": "A",
+          "text": "It suggests that lending tools should be quick enough to skip the return confirmation.",
+          "zh": "它表示借還工具應該夠快，連歸還確認也可以跳過。",
+          "whyZh": "玩笑說可以快快離開，但前一句要求掃卡後等歸還確認；效率不等於可以省略紀錄。"
+        },
+        {
+          "id": "B",
+          "text": "It warns that the new lockers make it even harder to track tools than the old shelf did.",
+          "zh": "它提醒大家，新置物櫃讓工具比以前放在架上時更難追蹤。",
+          "whyZh": "講者說以前不知道誰拿了工具。現在有借用登記、掃卡和歸還確認，沒說置物櫃反而使追蹤更難。"
+        },
+        {
+          "id": "C",
+          "text": "It points out that people can still leave quickly, as long as the loan or return is recorded.",
+          "zh": "它指出大家仍可以快快離開，但工具借出或歸還都得留下紀錄。",
+          "whyZh": "以前拿了就走，沒人知道誰拿走哪件工具。現在領用有登記、還工具有確認。「表演憑空消失」這句玩笑說的是工具不能沒留下紀錄就離開或放回。"
+        },
+        {
+          "id": "D",
+          "text": "It explains why the library no longer lets people return tools without speaking to a volunteer.",
+          "zh": "它解釋為什麼現在還工具時，一律得先跟志工說話。",
+          "whyZh": "符合置物櫃歸還條件的工具可以自助歸還。玩笑要求的是掃卡後確認留紀錄，不是一定要接觸工作人員。"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "以前拿了就走，沒人知道誰拿走哪件工具。現在領用有登記、還工具有確認。「表演憑空消失」這句玩笑說的是工具不能沒留下紀錄就離開或放回。",
+      "evidence": "Shelf loans were quick but untracked. | Now the desk checks tools and logs loans. | Scan your card and wait for confirmation. | A quick exit is fine. A disappearing act isn't.",
+      "vocabulary": [
+        {
+          "term": "a disappearing act",
+          "zh": "憑空消失的表演",
+          "note": "此處借用魔術表演的意象，幽默比喻工具借還不能沒留下紀錄。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t03-q073-r2",
+      "testId": "test-03",
+      "number": 73,
+      "part": 4,
+      "groupId": "t03-g045-r2",
+      "topic": "daily",
+      "difficulty": "advanced",
+      "tags": [
+        "daily",
+        "listening-comprehension",
+        "talk"
+      ],
+      "prompt": "A tool with a damaged cable is due Sunday at five p.m. What avoids a late fee?",
+      "promptZh": "一件電線受損的工具星期日下午五點到期。怎麼做才不會被收逾期費？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Submit an online damage report before five and leave the tool in a courtyard locker on Sunday.",
+          "zh": "五點前上網提交損壞通報，星期日把工具放入中庭置物櫃。",
+          "whyZh": "通報時間符合，但電線受損的工具禁止放進置物櫃。"
+        },
+        {
+          "id": "B",
+          "text": "Submit an online damage report before five and hand the tool to a staff member at the desk on Monday.",
+          "zh": "五點前上網提交損壞通報，星期一把工具親手交給服務台人員。",
+          "whyZh": "五點前上網通報。受損工具不能用置物櫃還，服務台又到星期一才開，所以星期一親手歸還就符合免收逾期費的條件。"
+        },
+        {
+          "id": "C",
+          "text": "Hand it to the desk on Monday and submit the damage report at the same time.",
+          "zh": "星期一把工具交給服務台，同時提交損壞通報。",
+          "whyZh": "歸還方式正確，但星期一才通報已晚於星期日下午五點，不符合免收逾期費的要件。"
+        },
+        {
+          "id": "D",
+          "text": "Tell someone at the courtyard on Sunday, then leave the tool by the closed desk that afternoon.",
+          "zh": "星期日在中庭口頭告知他人，當天下午把工具留在關閉的服務台旁。",
+          "whyZh": "在中庭口頭告知不能取代上網通報，把工具留在服務台旁也不是服務台重新開放時親手交還。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "五點前上網通報。受損工具不能用置物櫃還，服務台又到星期一才開，所以星期一親手歸還就符合免收逾期費的條件。",
+      "evidence": "The courtyard opens Sunday; the desk reopens Monday. | Never use lockers for tools with damaged cables. | Report damage online before the tool is due. | Hand it in when the desk reopens. Do both to avoid late fees.",
+      "vocabulary": [
+        {
+          "term": "report damage",
+          "zh": "通報損壞",
+          "note": "此處是上網通報，不能以口頭通知替代。"
+        },
+        {
+          "term": "late fee",
+          "zh": "逾期費",
+          "note": "逾期費有條件免除，不等於可任意延後歸還。"
+        }
+      ],
+      "revision": 2
+    }
+  ],
+  "reasoning": [
+    {
+      "number": 71,
+      "level": "advanced",
+      "why": "Apply exact model identity, the powered-tool demonstrator role and timing, and nonwaivable check plus record. No procedural order is scored."
+    },
+    {
+      "number": 72,
+      "level": "advanced",
+      "why": "Interpret the joke by linking historical lack of records to the current desk/locker processes across different parts of the talk. The humor distinguishes acceptable efficiency from untraceable movement, not bad intent or a literal magic performance."
+    },
+    {
+      "number": 73,
+      "level": "advanced",
+      "why": "Apply a specified due time to separate deadline, mandatory handoff, next opening, and fee exception conditions; three distractors fail different conditions."
+    }
+  ],
+  "ttsPlan": {
+    "status": "not synthesized; do not mark audio-verified",
+    "narration": {
+      "speaker": "F1",
+      "locale": "en-NG",
+      "role": "female",
+      "modelVoice": "en-NG-EzinneNeural"
+    },
+    "formalQuestionStyle": "Maintain distinct clear en-US formal narrator role as in approved recent replacements; record actual selected voice, do not infer original speaker identity.",
+    "newFormalStemScripts": [
+      "Number 71. At ten, a power tool's case looks familiar, but the borrower hasn't used that model. What now?",
+      "Number 72. How does the joke relate to old loans?",
+      "Number 73. A tool with a damaged cable is due Sunday at five p.m. What avoids a late fee?"
+    ],
+    "reuseCueOnlyAfterVerification": "The existing Part 4 instructions and generic Questions 71 through 73 cue may be reused only after exact hash/range check and rebinding group IDs. Stem recordings must be replaced: old stems ask different questions.",
+    "audioLayout": "Generate only after authorized Azure F0 usage confirmed. Use one finalized talk asset for both practice and formal if exact same semantics/timeline, and separate exact American headed stem assets. No paid synthesis, old shared MP3 rewrites, or output before validation.",
+    "timing": "Measure encoded/decoded approved PCM of the shared talk and three separately numbered stems, then compose against latest Test03 cumulative plan. Budget target 57.19658 s speech (old talk 46.87200 + stems 3.99233/2.97571/3.35654 s), original section and 2700 s fixed. Do not assume unused silence after prior overlays, crop voiced content, or waive floors. If timing fails, mark exact deficit held.",
+    "versioning": "Keep old IDs and history; use new r2 question and group IDs only after verified candidate and correct migration. Archive superseded record outside active pool, retaining its hold status; do not regrade."
+  },
+  "postRevisionGates": [
+    "No synthesis or live adoption.",
+    "Blind solve edited exact English and separately check zh-TW; regenerate timing after F0 recording and verify actual audio before QA acceptance."
+  ],
+  "timingBudgetDraft": {
+    "oldGroupSpeechSeconds": 57.19658,
+    "targetTotalEnglishWords": 141,
+    "sharedTalkWords": 93,
+    "numberedStemWords": [
+      19,
+      10,
+      19
+    ],
+    "totalEnglishCharacters": 782,
+    "necessaryEffectiveWpmAtBudget": 147.91,
+    "measuredCandidateSpeechSeconds": null,
+    "after": "Speaker rates and pausing vary; derive only from exact stored samples, not word estimates. Keep duration at/below existing budget if feasible with no new timing reallocation."
+  },
+  "editorialAudit": {
+    "scope": "Independent authoring QA (not blind): retain A/C/B, verify exact new quoted disappearing act phrase and all Q-level anchors against compact text. All three distractor sets still separate structurally. Retain original narration role/locale and score/snapshots.",
+    "trimNotes": "Incidental first-loan prerequisite removed to fit timing; no key depends on it. Q072 D rationale aligned. Staff availability before noon is not asserted; only noon leader demo and desk checks are required. Loan reasons unchanged. Q073 retains Sunday 5 p.m., earlier online cutoff, damaged-cable locker prohibition, and hand-in at next desk opening jointly triggering fee waiver.",
+    "pending": "Separate final blind reread EN and zh-TW; authorized Azure F0, exact dual audio proof and measured 2700s cumulative timeline; old playback/history guards. No synthesized audio, official count increment or publication."
+  }
+}
