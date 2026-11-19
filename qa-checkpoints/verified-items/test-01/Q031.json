@@ -1,0 +1,174 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Only A responds to a notification of nonattendance by updating the reservation. B discusses table cleaning; C discusses what a dish is served with. Taiwanese Mandarin question source and all distractor/answer explanations agree.",
+    "audio": "Whisper small.en unprompted transcribed both complete, distinct original scheduled US formal and Canadian practice passages exactly, including I won't be able to attend the team dinner and all three options in order. Independently Vosk directly recovered the complete negative and team dinner in BOTH modes as well as A and option order (practice A label and served morphology had non-key decoder noise). This is independent positive evidence against the earlier formal will/negative and team/teen uncertainties. Cue Number 31 positive from Vosk. Existing assets and timing unchanged.",
+    "release": "Checks use exact branch-derived asset SHA and ranges in both modes; no claim of browser or deployment validation."
+  },
+  "activeQuestion": {
+    "id": "t01-q031",
+    "testId": "test-01",
+    "number": 31,
+    "part": 2,
+    "groupId": "t01-g031",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "statement_response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "Thanks for letting me know; I'll update the reservation.",
+        "zh": "謝謝你告知，我會更新訂位。",
+        "whyZh": "對方通知不能出席；回應確認收到並調整訂位，符合實際溝通目的。"
+      },
+      {
+        "id": "B",
+        "text": "The tables have already been cleaned.",
+        "zh": "桌子已經清潔過了。",
+        "whyZh": "桌子是否清潔並未回應出席人數變動。"
+      },
+      {
+        "id": "C",
+        "text": "It's usually served with rice.",
+        "zh": "它通常搭配米飯供應。",
+        "whyZh": "餐點搭配與無法出席聚餐的通知無關。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "對方通知不能出席；回應確認收到並調整訂位，符合實際溝通目的。",
+    "evidence": "I won't be able to attend the team dinner.",
+    "vocabulary": [
+      {
+        "term": "attend",
+        "zh": "出席",
+        "note": "參與會議、活動或聚會。"
+      },
+      {
+        "term": "reservation",
+        "zh": "預訂；訂位",
+        "note": "此處指餐廳保留的座位。"
+      }
+    ],
+    "revision": 1
+  },
+  "originalQuestion": {
+    "id": "t01-q031",
+    "testId": "test-01",
+    "number": 31,
+    "part": 2,
+    "groupId": "t01-g031",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "statement_response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "Thanks for letting me know; I'll update the reservation.",
+        "zh": "謝謝你告知，我會更新訂位。",
+        "whyZh": "對方通知不能出席；回應確認收到並調整訂位，符合實際溝通目的。"
+      },
+      {
+        "id": "B",
+        "text": "The tables have already been cleaned.",
+        "zh": "桌子已經清潔過了。",
+        "whyZh": "桌子是否清潔並未回應出席人數變動。"
+      },
+      {
+        "id": "C",
+        "text": "It's usually served with rice.",
+        "zh": "它通常搭配米飯供應。",
+        "whyZh": "餐點搭配與無法出席聚餐的通知無關。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "對方通知不能出席；回應確認收到並調整訂位，符合實際溝通目的。",
+    "evidence": "I won't be able to attend the team dinner.",
+    "vocabulary": [
+      {
+        "term": "attend",
+        "zh": "出席",
+        "note": "參與會議、活動或聚會。"
+      },
+      {
+        "term": "reservation",
+        "zh": "預訂；訂位",
+        "note": "此處指餐廳保留的座位。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g031",
+    "testId": "test-01",
+    "part": 2,
+    "title": "Missing a team dinner",
+    "titleZh": "無法出席聚餐",
+    "topic": "business",
+    "passage": "I won't be able to attend the team dinner.\nA. Thanks for letting me know; I'll update the reservation. B. The tables have already been cleaned. C. It's usually served with rice.",
+    "passageZh": "我沒辦法參加團隊聚餐。\nA. 謝謝你告知，我會更新訂位。\nB. 桌子已經清潔過了。\nC. 它通常搭配米飯供應。",
+    "audioScript": "I won't be able to attend the team dinner.\nA. Thanks for letting me know; I'll update the reservation. B. The tables have already been cleaned. C. It's usually served with rice.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "I won't be able to attend the team dinner."
+      },
+      {
+        "voice": "male",
+        "text": "A. Thanks for letting me know; I'll update the reservation. B. The tables have already been cleaned. C. It's usually served with rice."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-11.mp3",
+    "duration": 17.28,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-CA",
+        "role": "female",
+        "modelVoice": "en-CA-ClaraNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-CA",
+        "role": "male",
+        "modelVoice": "en-CA-LiamNeural"
+      }
+    ],
+    "audioStart": 18.856,
+    "audioEnd": 36.136
+  },
+  "audio": [
+    {
+      "path": "audio/azure-v1/test-01-11.mp3",
+      "start": 18.856,
+      "end": 36.136,
+      "mode": "practice",
+      "assetSha256": "0fcb0ae0f4a294f95759ddfa5bbdf1966f2090ce55b8164b0ffe158272fd2480"
+    },
+    {
+      "path": "audio/formal-v2/test-01-11.mp3",
+      "start": 19.168,
+      "end": 37.12,
+      "mode": "passage",
+      "assetSha256": "3c059a7da573244d682f073b07988b6a0af28a3d490d68b20450f3ecc86cd6d6"
+    },
+    {
+      "path": "audio/formal/test-01-cues-01.mp3",
+      "start": 37.55179,
+      "end": 38.64229,
+      "mode": "cue",
+      "assetSha256": "6d8ae70c43fc4118e59e408cc5b4a4b1797fc4df9bcf03553e862a4624085b96"
+    }
+  ],
+  "imageSha256": null
+}

@@ -1,0 +1,879 @@
+{
+  "status": "editorial-repair-manifest-only-not-verified",
+  "testId": "test-02",
+  "evidenceSource": {
+    "originalReviewRef": "fa6e3f8",
+    "exactSnapshotSha256": "d5e8338e1e90892868411524484f82cf7e58c1ae438766c7045c3f3333b4539d",
+    "independentSummarySha256": "12349b2c96d1edc804bd86d47a2c48ba6ef810c1260f02790ed417d6ecbdd2f1",
+    "whisperSmallLogSha256": "ab0c53535d9857e62dd07e62ed31022a8dbb6b8e022150da594c54100301e37c",
+    "voskLogSha256": "db7131ea95fa429a8aab0d65395ecd419a17a9325010d9397cbc8d998d8f9cb7"
+  },
+  "policy": "Keep exact immutable old release, source banks, numbered cues and all unaffected item recordings. Never overwrite a bank. Shared current group/options have one authoritative transcript, so no substantive text rewrite for a single mode while keeping contradictory audio in the other. Manifest does not authorize synthesis, migration, or verification promotion.",
+  "units": [
+    {
+      "number": 7,
+      "answer": "B",
+      "originalAsrEvidence": {
+        "interpretation": "Original formal Whisper small and Vosk confirm torque wrench. Practice Vosk recognizes wrench but unprompted full and isolated Whisper small consistently return torque range. This is a material unresolved original noun, not proof wrong audio.",
+        "whisperSmall": {
+          "formal": "When is the torque wrench due for calibration?\n A. On the second shelf.\n B. Next Thursday, according to its label.\n C. The handle is blue.",
+          "practice": "When is the torque range due for calibration?\n A. On the second shelf.\n B. Next Thursday, according to its label.\n C. The handle is blue."
+        }
+      },
+      "proposal": "Practice only using the exact unchanged published English; aim for clean natural emphasis on wrench (no added words and no alterations to phrase meaning). Do not waste a formal rerender unless a repeated exact-text practice attempt cannot pass. If a neutral textual rewrite is needed, “When do we need to calibrate this torque wrench?” must update all bilingual sources and be rerendered in both modes.",
+      "oldCanonical": {
+        "questionId": "t02-q007",
+        "groupId": "t02-g007",
+        "revision": 1,
+        "questionSha256": "a55d0f2f55c082e3a53fe61c4f667e5c8a9ff95d89e69500273fe5cebdc2603c",
+        "groupSha256": "6d641eaf5ac57694a315fc28a8eef2b1a65023cb747df0eeb7add896abb07a92",
+        "cue": {
+          "source": "audio/formal/test-02-cues-01.mp3",
+          "start": 6.76867,
+          "end": 7.64404,
+          "sha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+          "gitBlob": "7a6ff0f2c9e81c0374f2984ea58565596a368b4d",
+          "wavSha256": "f8c3807c23aa8b9d14025fe1280101f11f482a4c8c3585d18b298c1f8db02960"
+        },
+        "cueAt": 233.76608,
+        "formalAt": 234.64146
+      },
+      "plannedQuestion": {
+        "id": "t02-q007",
+        "testId": "test-02",
+        "number": 7,
+        "part": 2,
+        "groupId": "t02-g007",
+        "topic": "manufacturing",
+        "difficulty": "intermediate",
+        "tags": [
+          "question-response"
+        ],
+        "prompt": "Listen and choose the best response.",
+        "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+        "options": [
+          {
+            "id": "A",
+            "text": "On the second shelf.",
+            "zh": "在第二層架上。",
+            "whyZh": "這是位置，沒有回答何時校正。"
+          },
+          {
+            "id": "B",
+            "text": "Next Thursday, according to its label.",
+            "zh": "依照標籤，是下星期四。",
+            "whyZh": "When 詢問時間；Next Thursday 直接回答校正日期。"
+          },
+          {
+            "id": "C",
+            "text": "The handle is blue.",
+            "zh": "握柄是藍色的。",
+            "whyZh": "顏色與校正日期無關。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "When 詢問時間；Next Thursday 直接回答校正日期。",
+        "evidence": "When is the torque wrench due for calibration?",
+        "vocabulary": [
+          {
+            "term": "calibration",
+            "zh": "校正",
+            "note": "比對與調整量測工具的準確度；本題詢問預定日期。"
+          }
+        ],
+        "revision": 1
+      },
+      "plannedGroup": {
+        "id": "t02-g007",
+        "passage": "When is the torque wrench due for calibration?\nA. On the second shelf.\nB. Next Thursday, according to its label.\nC. The handle is blue.",
+        "passageZh": "這支扭力扳手何時該校正？\nA. 在第二層架上。\nB. 依照標籤，是下星期四。\nC. 握柄是藍色的。",
+        "audioScript": "When is the torque wrench due for calibration?\nA. On the second shelf.\nB. Next Thursday, according to its label.\nC. The handle is blue.",
+        "turns": [
+          {
+            "voice": "male",
+            "text": "When is the torque wrench due for calibration?"
+          },
+          {
+            "voice": "female",
+            "text": "A. On the second shelf. B. Next Thursday, according to its label. C. The handle is blue."
+          }
+        ]
+      },
+      "plannedModes": [
+        {
+          "mode": "formal",
+          "action": "retain accepted original exact clip; recheck association before adoption",
+          "oldSource": {
+            "source": "audio/formal-v2/test-02-03.mp3",
+            "start": 0.5,
+            "end": 16.628,
+            "sha256": "2551d9a3425fbe342acecc65989ffe2432e4cc4037a9ceefdb66406672d8ad52",
+            "gitBlob": "0d54d2af8e3458599e28d0b6602d3ea715707c99",
+            "wavSha256": "aa48e07f7c5fb7b72839a652c4f4ec543094197eed4e66510c2026e58bae7a96"
+          },
+          "voices": [
+            {
+              "speaker": "male",
+              "locale": "en-US",
+              "role": "male",
+              "modelVoice": "en-US-GuyNeural"
+            },
+            {
+              "speaker": "female",
+              "locale": "en-US",
+              "role": "female",
+              "modelVoice": "en-US-JennyNeural"
+            }
+          ],
+          "spokenTurns": [
+            {
+              "role": "male",
+              "voice": "en-US-GuyNeural",
+              "locale": "en-US",
+              "text": "When is the torque wrench due for calibration?"
+            },
+            {
+              "role": "female",
+              "voice": "en-US-JennyNeural",
+              "locale": "en-US",
+              "text": "A. On the second shelf. B. Next Thursday, according to its label. C. The handle is blue."
+            }
+          ]
+        },
+        {
+          "mode": "practice",
+          "action": "candidate coherent whole first-and-second-speaker track",
+          "oldSource": {
+            "source": "audio/azure-v1/test-02-03.mp3",
+            "start": 0.5,
+            "end": 15.956,
+            "sha256": "4a4f444b97d3e77ff91a68c2299681d032d35500cae67f921e2d2dadf57c68e4",
+            "gitBlob": "cf21f058ce1e14835ec7a6e2cbeefddd93be5804",
+            "wavSha256": "e133238aa3dd39e7e3505888cb5d394f57fc21a281bf391bd560d341f659371f"
+          },
+          "voices": [
+            {
+              "speaker": "male",
+              "locale": "en-NG",
+              "role": "male",
+              "modelVoice": "en-NG-AbeoNeural"
+            },
+            {
+              "speaker": "female",
+              "locale": "en-NG",
+              "role": "female",
+              "modelVoice": "en-NG-EzinneNeural"
+            }
+          ],
+          "spokenTurns": [
+            {
+              "role": "male",
+              "voice": "en-NG-AbeoNeural",
+              "locale": "en-NG",
+              "text": "When is the torque wrench due for calibration?"
+            },
+            {
+              "role": "female",
+              "voice": "en-NG-EzinneNeural",
+              "locale": "en-NG",
+              "text": "A. On the second shelf. B. Next Thursday, according to its label. C. The handle is blue."
+            }
+          ]
+        }
+      ],
+      "releaseNotes": "Reuse old numbered cue unchanged. Require actual dual-mode speech and label order proof, native Part2 timed playback and 2700 s, and old immutable resume; no acceptance yet."
+    },
+    {
+      "number": 8,
+      "answer": "C",
+      "originalAsrEvidence": {
+        "interpretation": "Formal small recognizes Mae, phonetically consistent with the written Mei. Practice full small/focused base hear ask me; Vosk does not establish a name. The exact named correct option cannot safely remain common to both modes.",
+        "whisperSmall": {
+          "formal": "Who can approve this revised drawing?\n A. It was revised yesterday.\n B. Three printed copies.\n C. Ask Mae, the design lead.",
+          "practice": "Who can approve this revised drawing?\n A. It was revised yesterday.\n B. Three printed copies.\n C. Ask me the design lead."
+        }
+      },
+      "proposal": "Both modes: remove fragile homophonic name while preserving approval authority. Formal old audio is acceptable on original item, but cannot be reused on the rewritten common option text.",
+      "oldCanonical": {
+        "questionId": "t02-q008",
+        "groupId": "t02-g008",
+        "revision": 1,
+        "questionSha256": "66ea128ebb2992d43c0af58379b76461f2ed6f1619b27424df59039ef2528e15",
+        "groupSha256": "e6384213098d73ea45dd2c9860ed4f7b7abff5d4137dc775830835fd84570583",
+        "cue": {
+          "source": "audio/formal/test-02-cues-01.mp3",
+          "start": 7.89404,
+          "end": 8.71804,
+          "sha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+          "gitBlob": "7a6ff0f2c9e81c0374f2984ea58565596a368b4d",
+          "wavSha256": "84bad3e6cb1fcd25707729d884b0382a0c6ae0e203c3f4d9ec0c2c3f805c0281"
+        },
+        "cueAt": 257.82203,
+        "formalAt": 258.64603
+      },
+      "plannedQuestion": {
+        "id": "t02-q008-r2",
+        "testId": "test-02",
+        "number": 8,
+        "part": 2,
+        "groupId": "t02-g008-r2",
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "question-response"
+        ],
+        "prompt": "Listen and choose the best response.",
+        "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+        "options": [
+          {
+            "id": "A",
+            "text": "It was revised yesterday.",
+            "zh": "昨天修訂的。",
+            "whyZh": "回答修訂時間，沒有說明核准人。"
+          },
+          {
+            "id": "B",
+            "text": "Three printed copies.",
+            "zh": "三份印刷本。",
+            "whyZh": "份數無法回答誰能核准。"
+          },
+          {
+            "id": "C",
+            "text": "The design lead can approve it.",
+            "zh": "設計負責人可以核准。",
+            "whyZh": "問題問誰有核准權，設計負責人正是能核准這張圖面的人。"
+          }
+        ],
+        "answer": "C",
+        "explanationZh": "問題問誰有核准權，設計負責人正是能核准這張圖面的人。",
+        "evidence": "Who can approve this revised drawing?",
+        "vocabulary": [
+          {
+            "term": "revised drawing",
+            "zh": "修訂圖面",
+            "note": "revised 表示已修改；核准權限依本題角色分工而定。"
+          }
+        ],
+        "revision": 2
+      },
+      "plannedGroup": {
+        "id": "t02-g008-r2",
+        "passage": "Who can approve this revised drawing?\nA. It was revised yesterday.\nB. Three printed copies.\nC. The design lead can approve it.",
+        "passageZh": "誰能核准這張修訂後的圖面？\nA. 昨天修訂的。\nB. 三份印刷本。\nC. 設計負責人可以核准。",
+        "audioScript": "Who can approve this revised drawing?\nA. It was revised yesterday.\nB. Three printed copies.\nC. The design lead can approve it.",
+        "turns": [
+          {
+            "voice": "male",
+            "text": "Who can approve this revised drawing?"
+          },
+          {
+            "voice": "female",
+            "text": "A. It was revised yesterday. B. Three printed copies. C. The design lead can approve it."
+          }
+        ]
+      },
+      "plannedModes": [
+        {
+          "mode": "formal",
+          "action": "candidate coherent whole first-and-second-speaker track",
+          "oldSource": {
+            "source": "audio/formal-v2/test-02-03.mp3",
+            "start": 17.128,
+            "end": 32.656,
+            "sha256": "2551d9a3425fbe342acecc65989ffe2432e4cc4037a9ceefdb66406672d8ad52",
+            "gitBlob": "0d54d2af8e3458599e28d0b6602d3ea715707c99",
+            "wavSha256": "d2545aeffa12157f69f24eca263e8fe2a4992120f31eaa921e792f86e3a55d48"
+          },
+          "voices": [
+            {
+              "speaker": "male",
+              "locale": "en-US",
+              "role": "male",
+              "modelVoice": "en-US-GuyNeural"
+            },
+            {
+              "speaker": "female",
+              "locale": "en-US",
+              "role": "female",
+              "modelVoice": "en-US-JennyNeural"
+            }
+          ],
+          "spokenTurns": [
+            {
+              "role": "male",
+              "voice": "en-US-GuyNeural",
+              "locale": "en-US",
+              "text": "Who can approve this revised drawing?"
+            },
+            {
+              "role": "female",
+              "voice": "en-US-JennyNeural",
+              "locale": "en-US",
+              "text": "A. It was revised yesterday. B. Three printed copies. C. The design lead can approve it."
+            }
+          ]
+        },
+        {
+          "mode": "practice",
+          "action": "candidate coherent whole first-and-second-speaker track",
+          "oldSource": {
+            "source": "audio/azure-v1/test-02-03.mp3",
+            "start": 16.456,
+            "end": 31.816,
+            "sha256": "4a4f444b97d3e77ff91a68c2299681d032d35500cae67f921e2d2dadf57c68e4",
+            "gitBlob": "cf21f058ce1e14835ec7a6e2cbeefddd93be5804",
+            "wavSha256": "f1c061567abf68bf05784e68e12b3548d1d6c62af8991a3dbe380320d8a65efc"
+          },
+          "voices": [
+            {
+              "speaker": "male",
+              "locale": "en-TZ",
+              "role": "male",
+              "modelVoice": "en-TZ-ElimuNeural"
+            },
+            {
+              "speaker": "female",
+              "locale": "en-TZ",
+              "role": "female",
+              "modelVoice": "en-TZ-ImaniNeural"
+            }
+          ],
+          "spokenTurns": [
+            {
+              "role": "male",
+              "voice": "en-TZ-ElimuNeural",
+              "locale": "en-TZ",
+              "text": "Who can approve this revised drawing?"
+            },
+            {
+              "role": "female",
+              "voice": "en-TZ-ImaniNeural",
+              "locale": "en-TZ",
+              "text": "A. It was revised yesterday. B. Three printed copies. C. The design lead can approve it."
+            }
+          ]
+        }
+      ],
+      "releaseNotes": "Reuse old numbered cue unchanged. Require actual dual-mode speech and label order proof, native Part2 timed playback and 2700 s, and old immutable resume; no acceptance yet."
+    },
+    {
+      "number": 9,
+      "answer": "C",
+      "originalAsrEvidence": {
+        "interpretation": "Both modes return Internet rather than intranet across independent engines. Internal versus public portal is a material key-bearing lexical distinction.",
+        "whisperSmall": {
+          "formal": "Where should I submit the maintenance request?\n A. It took about an hour.\n B. The new machine is quieter.\n C. Use the equipment portal on the internet.",
+          "practice": "Where should I submit the maintenance request?\n A. It took about an hour.\n B. The new machine is quieter.\n C. Use the equipment portal on the internet."
+        }
+      },
+      "proposal": "Both modes: use clear internal equipment portal wording rather than a fragile intranet/internet sound contrast.",
+      "oldCanonical": {
+        "questionId": "t02-q009",
+        "groupId": "t02-g009",
+        "revision": 1,
+        "questionSha256": "8fe402939127f9514b9b800a090deb4400d083d41b83415bce23861262c39c6c",
+        "groupSha256": "9c93dc03cd9b0a3a5c3af0937306c945a4e52b99c726904fc2514a16dd0c6a1d",
+        "cue": {
+          "source": "audio/formal/test-02-cues-01.mp3",
+          "start": 8.96804,
+          "end": 9.794,
+          "sha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+          "gitBlob": "7a6ff0f2c9e81c0374f2984ea58565596a368b4d",
+          "wavSha256": "7e7e6e3d7565a828e53168edcc5b6fef70b82c46746ddfcfa5fa920bc266e450"
+        },
+        "cueAt": 281.2266,
+        "formalAt": 282.05256
+      },
+      "plannedQuestion": {
+        "id": "t02-q009-r2",
+        "testId": "test-02",
+        "number": 9,
+        "part": 2,
+        "groupId": "t02-g009-r2",
+        "topic": "manufacturing",
+        "difficulty": "intermediate",
+        "tags": [
+          "question-response"
+        ],
+        "prompt": "Listen and choose the best response.",
+        "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+        "options": [
+          {
+            "id": "A",
+            "text": "It took about an hour.",
+            "zh": "大約花了一小時。",
+            "whyZh": "這是所需時間，不是提交管道。"
+          },
+          {
+            "id": "B",
+            "text": "The new machine is quieter.",
+            "zh": "新機器比較安靜。",
+            "whyZh": "機器聲音與申請提交位置無關。"
+          },
+          {
+            "id": "C",
+            "text": "Submit it through the internal equipment portal.",
+            "zh": "請透過內部設備入口網站提交。",
+            "whyZh": "問題問的是提交管道，內部設備入口網站正是提交申請的位置。"
+          }
+        ],
+        "answer": "C",
+        "explanationZh": "問題問的是提交管道，內部設備入口網站正是提交申請的位置。",
+        "evidence": "Where should I submit the maintenance request?",
+        "vocabulary": [
+          {
+            "term": "intranet",
+            "zh": "內部網路",
+            "note": "組織內部使用的網路；本題在其入口網站提出維修申請。"
+          }
+        ],
+        "revision": 2
+      },
+      "plannedGroup": {
+        "id": "t02-g009-r2",
+        "passage": "Where should I submit the maintenance request?\nA. It took about an hour.\nB. The new machine is quieter.\nC. Submit it through the internal equipment portal.",
+        "passageZh": "維修申請應該交到哪裡？\nA. 大約花了一小時。\nB. 新機器比較安靜。\nC. 請透過內部設備入口網站提交。",
+        "audioScript": "Where should I submit the maintenance request?\nA. It took about an hour.\nB. The new machine is quieter.\nC. Submit it through the internal equipment portal.",
+        "turns": [
+          {
+            "voice": "male",
+            "text": "Where should I submit the maintenance request?"
+          },
+          {
+            "voice": "female",
+            "text": "A. It took about an hour. B. The new machine is quieter. C. Submit it through the internal equipment portal."
+          }
+        ]
+      },
+      "plannedModes": [
+        {
+          "mode": "formal",
+          "action": "candidate coherent whole first-and-second-speaker track",
+          "oldSource": {
+            "source": "audio/formal-v2/test-02-03.mp3",
+            "start": 33.156,
+            "end": 49.26,
+            "sha256": "2551d9a3425fbe342acecc65989ffe2432e4cc4037a9ceefdb66406672d8ad52",
+            "gitBlob": "0d54d2af8e3458599e28d0b6602d3ea715707c99",
+            "wavSha256": "9ae63d4288bff2005121c0ff7faa575c61bb8c144c22c76c57f1a3538d5b8afe"
+          },
+          "voices": [
+            {
+              "speaker": "male",
+              "locale": "en-US",
+              "role": "male",
+              "modelVoice": "en-US-GuyNeural"
+            },
+            {
+              "speaker": "female",
+              "locale": "en-US",
+              "role": "female",
+              "modelVoice": "en-US-JennyNeural"
+            }
+          ],
+          "spokenTurns": [
+            {
+              "role": "male",
+              "voice": "en-US-GuyNeural",
+              "locale": "en-US",
+              "text": "Where should I submit the maintenance request?"
+            },
+            {
+              "role": "female",
+              "voice": "en-US-JennyNeural",
+              "locale": "en-US",
+              "text": "A. It took about an hour. B. The new machine is quieter. C. Submit it through the internal equipment portal."
+            }
+          ]
+        },
+        {
+          "mode": "practice",
+          "action": "candidate coherent whole first-and-second-speaker track",
+          "oldSource": {
+            "source": "audio/azure-v1/test-02-03.mp3",
+            "start": 32.316,
+            "end": 48.996,
+            "sha256": "4a4f444b97d3e77ff91a68c2299681d032d35500cae67f921e2d2dadf57c68e4",
+            "gitBlob": "cf21f058ce1e14835ec7a6e2cbeefddd93be5804",
+            "wavSha256": "cbbf62916c06580664d9a3671caf9a76fb3027c2d2cb29659724645f8c8bc543"
+          },
+          "voices": [
+            {
+              "speaker": "male",
+              "locale": "en-ZA",
+              "role": "male",
+              "modelVoice": "en-ZA-LukeNeural"
+            },
+            {
+              "speaker": "female",
+              "locale": "en-ZA",
+              "role": "female",
+              "modelVoice": "en-ZA-LeahNeural"
+            }
+          ],
+          "spokenTurns": [
+            {
+              "role": "male",
+              "voice": "en-ZA-LukeNeural",
+              "locale": "en-ZA",
+              "text": "Where should I submit the maintenance request?"
+            },
+            {
+              "role": "female",
+              "voice": "en-ZA-LeahNeural",
+              "locale": "en-ZA",
+              "text": "A. It took about an hour. B. The new machine is quieter. C. Submit it through the internal equipment portal."
+            }
+          ]
+        }
+      ],
+      "releaseNotes": "Reuse old numbered cue unchanged. Require actual dual-mode speech and label order proof, native Part2 timed playback and 2700 s, and old immutable resume; no acceptance yet."
+    },
+    {
+      "number": 27,
+      "answer": "A",
+      "originalAsrEvidence": {
+        "interpretation": "Both full tracks give collector-like stamps and the focused formal decode still does not establish collector likes stamps. Key A itself is supported, but the C distractor cannot be verified exactly.",
+        "whisperSmall": {
+          "formal": "\"Where can I collect the package if I miss the delivery?\"\n A. At the service counter on Pine St.\n B. It arrived earlier than usual.\n C. The collector-like stamps.",
+          "practice": "Where can I collect the package if I miss the delivery?\n A. At the service counter on Pine Street.\n B. It arrived earlier than usual.\n C. The collector-like stamps."
+        }
+      },
+      "proposal": "Both modes: preserve stem and key, replace only C with a clear plausible delivery fact that does not tell the listener where to go.",
+      "oldCanonical": {
+        "questionId": "t02-q027",
+        "groupId": "t02-g027",
+        "revision": 1,
+        "questionSha256": "7aa35a44fbe0f1dfb37129d31b45a09f82c574e1c9462f52484609f879b1e5e4",
+        "groupSha256": "87dc5fb74e865d22cd4e367b1fbf8069cb736cc740649e8017d3780a8073d01a",
+        "cue": {
+          "source": "audio/formal/test-02-cues-01.mp3",
+          "start": 32.18379,
+          "end": 33.39988,
+          "sha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+          "gitBlob": "7a6ff0f2c9e81c0374f2984ea58565596a368b4d",
+          "wavSha256": "5c16f26c7716376431b468326567e3d8e260223e2ccbc8e0b1c4df3d02d7821c"
+        },
+        "cueAt": 727.87262,
+        "formalAt": 729.0887
+      },
+      "plannedQuestion": {
+        "id": "t02-q027-r2",
+        "testId": "test-02",
+        "number": 27,
+        "part": 2,
+        "groupId": "t02-g027-r2",
+        "topic": "daily",
+        "difficulty": "intermediate",
+        "tags": [
+          "question-response"
+        ],
+        "prompt": "Listen and choose the best response.",
+        "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+        "options": [
+          {
+            "id": "A",
+            "text": "At the service counter on Pine Street.",
+            "zh": "到 Pine 街的服務櫃檯。",
+            "whyZh": "Where 詢問領件位置，服務櫃檯提供明確地點。"
+          },
+          {
+            "id": "B",
+            "text": "It arrived earlier than usual.",
+            "zh": "它比平常早到。",
+            "whyZh": "送達時間沒有回答後續領取地點。"
+          },
+          {
+            "id": "C",
+            "text": "The package requires a signature.",
+            "zh": "這件包裹需要簽收。",
+            "whyZh": "這只說明包裹需要簽收，沒回答可以在哪裡領取。"
+          }
+        ],
+        "answer": "A",
+        "explanationZh": "Where 詢問領件位置，服務櫃檯提供明確地點。",
+        "evidence": "Where can I collect the package if I miss the delivery?",
+        "vocabulary": [
+          {
+            "term": "collect a package",
+            "zh": "領取包裹",
+            "note": "collect 在物流情境常表示前往取件。"
+          }
+        ],
+        "revision": 2
+      },
+      "plannedGroup": {
+        "id": "t02-g027-r2",
+        "passage": "Where can I collect the package if I miss the delivery?\nA. At the service counter on Pine Street.\nB. It arrived earlier than usual.\nC. The package requires a signature.",
+        "passageZh": "如果錯過配送，我可以在哪裡領包裹？\nA. 到 Pine 街的服務櫃檯。\nB. 它比平常早到。\nC. 這件包裹需要簽收。",
+        "audioScript": "Where can I collect the package if I miss the delivery?\nA. At the service counter on Pine Street.\nB. It arrived earlier than usual.\nC. The package requires a signature.",
+        "turns": [
+          {
+            "voice": "male",
+            "text": "Where can I collect the package if I miss the delivery?"
+          },
+          {
+            "voice": "female",
+            "text": "A. At the service counter on Pine Street. B. It arrived earlier than usual. C. The package requires a signature."
+          }
+        ]
+      },
+      "plannedModes": [
+        {
+          "mode": "formal",
+          "action": "candidate coherent whole first-and-second-speaker track",
+          "oldSource": {
+            "source": "audio/formal-v2/test-02-09.mp3",
+            "start": 34.86,
+            "end": 51.876,
+            "sha256": "7d5e1ad5865af07862d094713fd460948b65b3b35a71f63af0075f2d5e28959c",
+            "gitBlob": "e0c5444de946272e70f85628edbc06d0d2fdb45f",
+            "wavSha256": "48b1679096cd2f4e010cf88c7e797a1ce8067dd0c0275014809c81291a434dc2"
+          },
+          "voices": [
+            {
+              "speaker": "male",
+              "locale": "en-US",
+              "role": "male",
+              "modelVoice": "en-US-GuyNeural"
+            },
+            {
+              "speaker": "female",
+              "locale": "en-US",
+              "role": "female",
+              "modelVoice": "en-US-JennyNeural"
+            }
+          ],
+          "spokenTurns": [
+            {
+              "role": "male",
+              "voice": "en-US-GuyNeural",
+              "locale": "en-US",
+              "text": "Where can I collect the package if I miss the delivery?"
+            },
+            {
+              "role": "female",
+              "voice": "en-US-JennyNeural",
+              "locale": "en-US",
+              "text": "A. At the service counter on Pine Street. B. It arrived earlier than usual. C. The package requires a signature."
+            }
+          ]
+        },
+        {
+          "mode": "practice",
+          "action": "candidate coherent whole first-and-second-speaker track",
+          "oldSource": {
+            "source": "audio/azure-v1/test-02-09.mp3",
+            "start": 32.652,
+            "end": 49.716,
+            "sha256": "d307280b603c03190d7c585982915fc4507df752f199cda54406966552f96f1e",
+            "gitBlob": "6631808327d18882dbc412af0b547742056f32d7",
+            "wavSha256": "d20858bad917ba211bccc258eda4e6f65e083cb30a6c4cdcd95a16f121655e1c"
+          },
+          "voices": [
+            {
+              "speaker": "male",
+              "locale": "en-AU",
+              "role": "male",
+              "modelVoice": "en-AU-WilliamNeural"
+            },
+            {
+              "speaker": "female",
+              "locale": "en-AU",
+              "role": "female",
+              "modelVoice": "en-AU-NatashaNeural"
+            }
+          ],
+          "spokenTurns": [
+            {
+              "role": "male",
+              "voice": "en-AU-WilliamNeural",
+              "locale": "en-AU",
+              "text": "Where can I collect the package if I miss the delivery?"
+            },
+            {
+              "role": "female",
+              "voice": "en-AU-NatashaNeural",
+              "locale": "en-AU",
+              "text": "A. At the service counter on Pine Street. B. It arrived earlier than usual. C. The package requires a signature."
+            }
+          ]
+        }
+      ],
+      "releaseNotes": "Reuse old numbered cue unchanged. Require actual dual-mode speech and label order proof, native Part2 timed playback and 2700 s, and old immutable resume; no acceptance yet."
+    },
+    {
+      "number": 31,
+      "answer": "B",
+      "originalAsrEvidence": {
+        "interpretation": "Formal blank is confirmed, but practice full and focused small/base and Vosk hear black. Exact wording and the old blank/form distractor relationship remain unresolved in practice.",
+        "whisperSmall": {
+          "formal": "The screen is still blank.\n A. I filled in the blank on the form.\n B. Let us check the input source.\n C. The presentation was last year.",
+          "practice": "The screen is still black.\n A. I filled in the blank on the form.\n B. Let us check the input source.\n C. The presentation was last year."
+        }
+      },
+      "proposal": "Both modes: avoid blank/black near contrast, keep troubleshooting intent and B; replace A with a current presentation-related but nonresponsive action.",
+      "oldCanonical": {
+        "questionId": "t02-q031",
+        "groupId": "t02-g031",
+        "revision": 1,
+        "questionSha256": "30ab68b7513fb309fa9ea3cf8dd0909a21485708766040c6bab2a1157502eebf",
+        "groupSha256": "42236e876a3b9f794724393aa00cdb692e7260ecb6906921a97ee7504ef1bdd3",
+        "cue": {
+          "source": "audio/formal/test-02-cues-01.mp3",
+          "start": 37.55179,
+          "end": 38.64229,
+          "sha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+          "gitBlob": "7a6ff0f2c9e81c0374f2984ea58565596a368b4d",
+          "wavSha256": "76d30ed097caff57454065354b0896dc2844a2743898bd62e94b249cae148a4c"
+        },
+        "cueAt": 827.9629,
+        "formalAt": 829.0534
+      },
+      "plannedQuestion": {
+        "id": "t02-q031-r2",
+        "testId": "test-02",
+        "number": 31,
+        "part": 2,
+        "groupId": "t02-g031-r2",
+        "topic": "business",
+        "difficulty": "intermediate",
+        "tags": [
+          "question-response"
+        ],
+        "prompt": "Listen and choose the best response.",
+        "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+        "options": [
+          {
+            "id": "A",
+            "text": "I saved a copy of the slides.",
+            "zh": "我存了一份投影片。",
+            "whyZh": "儲存投影片不是針對螢幕沒有畫面的排查做法。"
+          },
+          {
+            "id": "B",
+            "text": "Let us check the input source.",
+            "zh": "我們檢查一下輸入來源。",
+            "whyZh": "對螢幕無畫面的問題，確認輸入來源是合理的排查回應。"
+          },
+          {
+            "id": "C",
+            "text": "The presentation was last year.",
+            "zh": "那場簡報是去年。",
+            "whyZh": "沒有回應目前螢幕無畫面的狀況。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "對螢幕無畫面的問題，確認輸入來源是合理的排查回應。",
+        "evidence": "Nothing is showing on the screen.",
+        "vocabulary": [
+          {
+            "term": "input source",
+            "zh": "輸入來源",
+            "note": "螢幕接收畫面訊號的來源，可在無畫面時先確認是否選對。"
+          }
+        ],
+        "revision": 2
+      },
+      "plannedGroup": {
+        "id": "t02-g031-r2",
+        "passage": "Nothing is showing on the screen.\nA. I saved a copy of the slides.\nB. Let us check the input source.\nC. The presentation was last year.",
+        "passageZh": "螢幕上還是沒有畫面。\nA. 我存了一份投影片。\nB. 我們檢查一下輸入來源。\nC. 那場簡報是去年。",
+        "audioScript": "Nothing is showing on the screen.\nA. I saved a copy of the slides.\nB. Let us check the input source.\nC. The presentation was last year.",
+        "turns": [
+          {
+            "voice": "male",
+            "text": "Nothing is showing on the screen."
+          },
+          {
+            "voice": "female",
+            "text": "A. I saved a copy of the slides. B. Let us check the input source. C. The presentation was last year."
+          }
+        ]
+      },
+      "plannedModes": [
+        {
+          "mode": "formal",
+          "action": "candidate coherent whole first-and-second-speaker track",
+          "oldSource": {
+            "source": "audio/formal-v2/test-02-11.mp3",
+            "start": 0.5,
+            "end": 16.22,
+            "sha256": "f6b001264d614f907a6fa8a672c74cd5cae2f92e25549df6291999be2bf4ccf3",
+            "gitBlob": "8a369152cf5113d9992cf9426c811b533a4e2cf1",
+            "wavSha256": "3bd65d75111c7bbbcd180b10a4fcc99becddde5ad44b87bb0ac2a170ed67b376"
+          },
+          "voices": [
+            {
+              "speaker": "male",
+              "locale": "en-US",
+              "role": "male",
+              "modelVoice": "en-US-GuyNeural"
+            },
+            {
+              "speaker": "female",
+              "locale": "en-US",
+              "role": "female",
+              "modelVoice": "en-US-JennyNeural"
+            }
+          ],
+          "spokenTurns": [
+            {
+              "role": "male",
+              "voice": "en-US-GuyNeural",
+              "locale": "en-US",
+              "text": "Nothing is showing on the screen."
+            },
+            {
+              "role": "female",
+              "voice": "en-US-JennyNeural",
+              "locale": "en-US",
+              "text": "A. I saved a copy of the slides. B. Let us check the input source. C. The presentation was last year."
+            }
+          ]
+        },
+        {
+          "mode": "practice",
+          "action": "candidate coherent whole first-and-second-speaker track",
+          "oldSource": {
+            "source": "audio/azure-v1/test-02-11.mp3",
+            "start": 0.5,
+            "end": 16.58,
+            "sha256": "5e2bacd5d2e55ba239a41ba4f929e3364756da750a406995a403d8d6b05268ea",
+            "gitBlob": "09bee32ccce3c11080fcdb21da0bf8c890ecb324",
+            "wavSha256": "a52efe9682b13c7320e2579a54a7769c6eeab4dc549d894a46e3d342115d9b83"
+          },
+          "voices": [
+            {
+              "speaker": "male",
+              "locale": "en-PH",
+              "role": "male",
+              "modelVoice": "en-PH-JamesNeural"
+            },
+            {
+              "speaker": "female",
+              "locale": "en-PH",
+              "role": "female",
+              "modelVoice": "en-PH-RosaNeural"
+            }
+          ],
+          "spokenTurns": [
+            {
+              "role": "male",
+              "voice": "en-PH-JamesNeural",
+              "locale": "en-PH",
+              "text": "Nothing is showing on the screen."
+            },
+            {
+              "role": "female",
+              "voice": "en-PH-RosaNeural",
+              "locale": "en-PH",
+              "text": "A. I saved a copy of the slides. B. Let us check the input source. C. The presentation was last year."
+            }
+          ]
+        }
+      ],
+      "releaseNotes": "Reuse old numbered cue unchanged. Require actual dual-mode speech and label order proof, native Part2 timed playback and 2700 s, and old immutable resume; no acceptance yet."
+    }
+  ]
+}

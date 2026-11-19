@@ -1,0 +1,541 @@
+{
+  "status": "text-and-scope-only-hold-no-generation-upload-or-verification-promotion",
+  "pinnedRef": "7f94ed237f4ea3c3350591d27834ba43690497bf",
+  "sourceRawPackSha256": "849c26f1b903d3f89fbe88e39294caeb2386da2a1f8c2f7e4769b2e40a0d849d",
+  "oldFormalListeningPlanCanonicalSha256": "8b4c278753f6e1ac2154202544daf307a3de197ee3f5ee4c0ff8d1e7279d4659",
+  "oldDurationSeconds": 2700,
+  "evidencePin": "43087f633d279e2afb14b50436cbf9369b36d371",
+  "priorWindowEvidenceManifestSha256": "0f0d43dc73f549a4a692ab50fed003c4d7432b09306378f62c06b3a7830f59ad",
+  "priorModelEvidenceSha256": {
+    "whisper.log": "9116285044c0c1825ab77c690b81f225e821a3e2c01c23a907e278db6d35f503",
+    "vosk-result.json": "ef72aa12d07dfedd921be8eb09aa4011f5b775cbe5accd6042f76ba89f1f5367",
+    "Q011-formal-optionB-alternatives.json": "92f0da8916e1fea7370a07f57c715c6a4899ebbd8a966904144c3014821eb803",
+    "Q011-practice-optionB-alternatives.json": "e4085386ca86a5d09a387f8a0a35dfc9cf75bfd05b28993f81ee31348c76cc31"
+  },
+  "units": [
+    {
+      "number": 2,
+      "part": 1,
+      "groupId": "t03-g002",
+      "questionId": "t03-q002",
+      "originalRevision": 1,
+      "correctKey": "D",
+      "oldQuestionCanonicalSha256": "d0f530a53262db0c42eae51aac2dfdd6f8dd0cd569fc8f422eef806ab0ec9db6",
+      "oldGroupCanonicalSha256": "06f57b35274aff5d53d11d3defb9c775b69ecc5791a49b9260703e6eef6c7a17",
+      "oldFormalFrameIndex": [
+        6,
+        7,
+        8
+      ],
+      "oldFormalFrames": [
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 1.26471,
+          "end": 2.10425,
+          "duration": 0.83954,
+          "kind": "audio",
+          "role": "cue",
+          "part": 1,
+          "groupId": "t03-g002",
+          "at": 85.86012
+        },
+        {
+          "src": "audio/formal-v2/test-03-01.mp3",
+          "start": 20.128,
+          "end": 38.776,
+          "duration": 18.648,
+          "kind": "audio",
+          "role": "passage",
+          "part": 1,
+          "groupId": "t03-g002",
+          "at": 86.69966,
+          "speakers": [
+            {
+              "speaker": "male",
+              "locale": "en-US",
+              "role": "male",
+              "modelVoice": "en-US-GuyNeural"
+            }
+          ]
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.09541,
+          "part": 1,
+          "groupId": "t03-g002",
+          "questionId": "t03-q002",
+          "at": 105.34766
+        }
+      ],
+      "oldCueAndWindows": {
+        "practice": {
+          "n": 2,
+          "mode": "practice",
+          "asset": "audio/azure-v1/test-03-01.mp3",
+          "sha256": "8f78b5a19e22b5329e8b5aef750272bc91cfd8aae5cebb7a022d69f7837b25ef",
+          "start": 20.608,
+          "end": 37.936,
+          "name": "Q002-practice"
+        },
+        "formal": {
+          "n": 2,
+          "mode": "formal",
+          "asset": "audio/formal-v2/test-03-01.mp3",
+          "sha256": "8a21ae045c9366b4ed5ed42612bacebff65b86e000b60833249b01fd528cb4f2",
+          "start": 20.128,
+          "end": 38.776,
+          "name": "Q002-formal"
+        },
+        "cue": {
+          "n": 2,
+          "mode": "cue",
+          "asset": "audio/formal/test-03-cues-01.mp3",
+          "sha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+          "start": 1.26471,
+          "end": 2.10425,
+          "name": "Q002-cue"
+        }
+      },
+      "oldGroupStartsAt": 85.86012,
+      "followingUnchangedFrameAt": 109.44307,
+      "oldPracticeVoices": [
+        {
+          "speaker": "male",
+          "locale": "en-NG",
+          "role": "male",
+          "modelVoice": "en-NG-AbeoNeural"
+        }
+      ],
+      "retainedFormalVoices": [
+        {
+          "speaker": "male",
+          "locale": "en-US",
+          "role": "male",
+          "modelVoice": "en-US-GuyNeural"
+        }
+      ],
+      "previousASRScope": {
+        "formal": "Whisper small.en returned all options A–D including “cup”; see original exact clip.",
+        "practice": "Whisper small.en and Vosk independently output “cop” for written “cup”; evidence uncertainty, not a verified recording defect.",
+        "cue": "Retain old formal numbered cue, scope locked."
+      },
+      "editorialRationaleOnly": [
+        {
+          "option": "A",
+          "en": "There are no plates covering the counter.",
+          "zh": "檯面上有杯子，但沒有擺滿盤子。"
+        },
+        {
+          "option": "B",
+          "en": "One person is standing on the customer side of the counter.",
+          "zh": "一人在櫃檯外側，不是兩人都站在櫃檯後方。"
+        },
+        {
+          "option": "C",
+          "en": "Neither person is washing a window; there is no cleaning activity or tool.",
+          "zh": "兩人都沒有清洗窗戶；畫面也沒有清潔工具。"
+        },
+        {
+          "option": "D",
+          "en": "A small white cup is visible on the countertop between the two people.",
+          "zh": "櫃檯中央、兩人之間有一個白色杯子。"
+        }
+      ],
+      "decision": "proposed-practice-only-candidate-after-actual-F0-capacity-confirmation-no-status-promotion",
+      "practiceTurnInputs": [
+        {
+          "speaker": "male",
+          "locale": "en-NG",
+          "role": "male",
+          "modelVoice": "en-NG-AbeoNeural",
+          "text": "A. The counter is covered with plates. B. Both people are behind the counter. C. A customer is washing a window. D. A cup is resting on the counter."
+        }
+      ],
+      "practiceRenderControls": {
+        "spokenLabels": [
+          {
+            "option": "A",
+            "verbatim": "The counter is covered with plates."
+          },
+          {
+            "option": "B",
+            "verbatim": "Both people are behind the counter."
+          },
+          {
+            "option": "C",
+            "verbatim": "A customer is washing a window."
+          },
+          {
+            "option": "D",
+            "verbatim": "A cup is resting on the counter."
+          }
+        ],
+        "numberedCue": "Do not add number or new direction; unchanged existing format. Verify label boundaries and neutral prosody for mode.",
+        "target": {
+          "option": "D",
+          "verbatim": "A cup is resting on the counter.",
+          "direction": "Preserve the same en-NG voice and exact words. Enunciate cup clearly in the complete naturally paced option, with a modestly slower option D only if supported; do not move or overemphasize the correct answer. A–D same ordering. Do not respell cup or replace with mug."
+        }
+      },
+      "newImmutablePracticePath": "audio/exams/test-03/groups/t03-g002/practice-passage-r2.wav",
+      "newPracticeDuration": "Measure target WAV PCM, write exact start/end/duration; old duration is only a guard, not an allowed assumed new time label.",
+      "packChangesOnly": [
+        "group.audio",
+        "group.audioStart",
+        "group.audioEnd",
+        "group.duration"
+      ],
+      "unchangedContentAndHistory": "No scored option, image, formal audio/timing or question identity change. Keep old bank bytes and original group/range metadata immutable for deployed attempt review. Bind new study media revision by exact SHA and source range, not question-content revision.",
+      "expectedImage": {
+        "src": "assets/scenes/cafe.svg",
+        "sha256": "63f1a7baf4ac439b64fa29df3c2b01fb3b6a6e60f2fd210e924e83a52e71eecd",
+        "case": "Exact current SVG scene used in both modes. Rendered image shows a white cup on the counter; A, B and C contradicted by scene, not inferred from answer key."
+      }
+    },
+    {
+      "number": 11,
+      "part": 2,
+      "groupId": "t03-g011",
+      "questionId": "t03-q011",
+      "originalRevision": 1,
+      "correctKey": "B",
+      "oldQuestionCanonicalSha256": "c6671232bd61a5220e72e68869eeb5e97b0d48827b38e2d5ee545a993351168b",
+      "oldGroupCanonicalSha256": "45b161e91a79c8b4725ea65a6087d5cb6808fbcb76f45d39d2a152b422213f3a",
+      "oldFormalFrameIndex": [
+        34,
+        35,
+        36
+      ],
+      "oldFormalFrames": [
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 11.11983,
+          "end": 12.06871,
+          "duration": 0.94888,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g011",
+          "at": 306.02793
+        },
+        {
+          "src": "audio/formal-v2/test-03-04.mp3",
+          "start": 16.552,
+          "end": 32.944,
+          "duration": 16.392,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g011",
+          "at": 306.97681,
+          "speakers": [
+            {
+              "speaker": "female",
+              "locale": "en-US",
+              "role": "female",
+              "modelVoice": "en-US-JennyNeural"
+            },
+            {
+              "speaker": "male",
+              "locale": "en-US",
+              "role": "male",
+              "modelVoice": "en-US-GuyNeural"
+            }
+          ]
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.09541,
+          "part": 2,
+          "groupId": "t03-g011",
+          "questionId": "t03-q011",
+          "at": 323.36881
+        }
+      ],
+      "oldCueAndWindows": {
+        "practice": {
+          "n": 11,
+          "mode": "practice",
+          "asset": "audio/azure-v1/test-03-04.mp3",
+          "sha256": "4356353a4d4a32e341d747574f7913823dd3389332e64ca344f1603b70d5e065",
+          "start": 17.44,
+          "end": 34.792,
+          "name": "Q011-practice"
+        },
+        "formal": {
+          "n": 11,
+          "mode": "formal",
+          "asset": "audio/formal-v2/test-03-04.mp3",
+          "sha256": "ccc4f69355ad9910e235e518c1c1d676daaa8c97172468421cdc046e984a5b95",
+          "start": 16.552,
+          "end": 32.944,
+          "name": "Q011-formal"
+        },
+        "cue": {
+          "n": 11,
+          "mode": "cue",
+          "asset": "audio/formal/test-03-cues-01.mp3",
+          "sha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+          "start": 11.11983,
+          "end": 12.06871,
+          "name": "Q011-cue"
+        }
+      },
+      "oldGroupStartsAt": 306.02793,
+      "followingUnchangedFrameAt": 327.46422,
+      "oldPracticeVoices": [
+        {
+          "speaker": "female",
+          "locale": "en-SG",
+          "role": "female",
+          "modelVoice": "en-SG-LunaNeural"
+        },
+        {
+          "speaker": "male",
+          "locale": "en-SG",
+          "role": "male",
+          "modelVoice": "en-SG-WayneNeural"
+        }
+      ],
+      "retainedFormalVoices": [
+        {
+          "speaker": "female",
+          "locale": "en-US",
+          "role": "female",
+          "modelVoice": "en-US-JennyNeural"
+        },
+        {
+          "speaker": "male",
+          "locale": "en-US",
+          "role": "male",
+          "modelVoice": "en-US-GuyNeural"
+        }
+      ],
+      "previousASRScope": {
+        "formal": "Full-window Whisper small.en exactly recovered B, normalized numeral to 2: “A sales team has it booked at 2.” Vosk full and isolated rendered “has a book did too”; this is not a plausible alternative response or positive proof of real fault.",
+        "practice": "Full-window Whisper small.en exactly recovered option B again. Vosk full and isolated supported sales team/time, segmented book at to/two.",
+        "cue": "Exact numbered cue retained."
+      },
+      "editorialRationaleOnly": [
+        {
+          "option": "A",
+          "en": "The room’s location does not address the extension.",
+          "zh": "四樓是會議室的位置，沒有回應能否延長使用。"
+        },
+        {
+          "option": "B",
+          "en": "A reservation for two o’clock is a relevant scheduling constraint; the reply need not say “no” explicitly, and we do not know the current time.",
+          "zh": "銷售團隊已預訂兩點的時段，這是能否延長使用的排程限制；不必說「不行」才算回應，也不能據此推定現在幾點。"
+        },
+        {
+          "option": "C",
+          "en": "Liking the conference does not address the room availability.",
+          "zh": "是否喜歡研討會與會議室能否延長使用無關。"
+        }
+      ],
+      "decision": "retain-formal-and-practice-no-rerender-in-this-plan-no-status-promotion",
+      "reason": "Current exact primary evidence in both modes and no verified alternate meaning; independent reduced-speech transcription disagreement is not by itself a reason to rerender B.",
+      "zhOptionalEditorialOnly": "銷售團隊已經預訂兩點的時段。"
+    },
+    {
+      "number": 17,
+      "part": 2,
+      "groupId": "t03-g017",
+      "questionId": "t03-q017",
+      "originalRevision": 1,
+      "correctKey": "C",
+      "oldQuestionCanonicalSha256": "2790e044ee50e520eb1d546689da26e250b89373f09e7effdb2ce12838e9b090",
+      "oldGroupCanonicalSha256": "e74420667b1a355d77fb3c13361b971ddf0d7e48716f6831fa04c39695941fd6",
+      "oldFormalFrameIndex": [
+        52,
+        53,
+        54
+      ],
+      "oldFormalFrames": [
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 18.63175,
+          "end": 19.7295,
+          "duration": 1.09775,
+          "kind": "audio",
+          "role": "cue",
+          "part": 2,
+          "groupId": "t03-g017",
+          "at": 438.20431
+        },
+        {
+          "src": "audio/formal-v2/test-03-06.mp3",
+          "start": 18.64,
+          "end": 36.304,
+          "duration": 17.664,
+          "kind": "audio",
+          "role": "passage",
+          "part": 2,
+          "groupId": "t03-g017",
+          "at": 439.30206,
+          "speakers": [
+            {
+              "speaker": "female",
+              "locale": "en-US",
+              "role": "female",
+              "modelVoice": "en-US-JennyNeural"
+            },
+            {
+              "speaker": "male",
+              "locale": "en-US",
+              "role": "male",
+              "modelVoice": "en-US-GuyNeural"
+            }
+          ]
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "duration": 4.09541,
+          "part": 2,
+          "groupId": "t03-g017",
+          "questionId": "t03-q017",
+          "at": 456.96606
+        }
+      ],
+      "oldCueAndWindows": {
+        "practice": {
+          "n": 17,
+          "mode": "practice",
+          "asset": "audio/azure-v1/test-03-06.mp3",
+          "sha256": "00789143d5747f6c8f9dd5f8ff692997e5b4ca3095743e233e607e3a96122699",
+          "start": 17.944,
+          "end": 35.32,
+          "name": "Q017-practice"
+        },
+        "formal": {
+          "n": 17,
+          "mode": "formal",
+          "asset": "audio/formal-v2/test-03-06.mp3",
+          "sha256": "eeeabe98e86e44f0c9eb8c8c80315e2417ea573351fd4064b73595ccd67bf6d7",
+          "start": 18.64,
+          "end": 36.304,
+          "name": "Q017-formal"
+        },
+        "cue": {
+          "n": 17,
+          "mode": "cue",
+          "asset": "audio/formal/test-03-cues-01.mp3",
+          "sha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+          "start": 18.63175,
+          "end": 19.7295,
+          "name": "Q017-cue"
+        }
+      },
+      "oldGroupStartsAt": 438.20431,
+      "followingUnchangedFrameAt": 461.06147,
+      "oldPracticeVoices": [
+        {
+          "speaker": "female",
+          "locale": "en-TZ",
+          "role": "female",
+          "modelVoice": "en-TZ-ImaniNeural"
+        },
+        {
+          "speaker": "male",
+          "locale": "en-TZ",
+          "role": "male",
+          "modelVoice": "en-TZ-ElimuNeural"
+        }
+      ],
+      "retainedFormalVoices": [
+        {
+          "speaker": "female",
+          "locale": "en-US",
+          "role": "female",
+          "modelVoice": "en-US-JennyNeural"
+        },
+        {
+          "speaker": "male",
+          "locale": "en-US",
+          "role": "male",
+          "modelVoice": "en-US-GuyNeural"
+        }
+      ],
+      "previousASRScope": {
+        "formal": "Whisper small.en heard the exact question, options and “Elena” in C.",
+        "practice": "Whisper small.en returned “Talena”; independent Vosk returned “I” around the name. Both support surrounding content, not the exact spoken name.",
+        "cue": "Retain old formal numbered cue, scope locked."
+      },
+      "editorialRationaleOnly": [
+        {
+          "option": "A",
+          "en": "Capacity does not identify the person who will lead the meeting.",
+          "zh": "可容納十二人是會議室資訊，沒有說誰主持。"
+        },
+        {
+          "option": "B",
+          "en": "The client’s importance does not address the anticipated host.",
+          "zh": "客戶規模與這場會議由誰主持無關。"
+        },
+        {
+          "option": "C",
+          "en": "Actually introduces a correction: Elena will lead in the respondent’s place.",
+          "zh": "Actually 用來修正對方的假設：Elena 會代替答話者主持。"
+        }
+      ],
+      "decision": "proposed-practice-only-candidate-after-actual-F0-capacity-confirmation-no-status-promotion",
+      "practiceTurnInputs": [
+        {
+          "speaker": "female",
+          "locale": "en-TZ",
+          "role": "female",
+          "modelVoice": "en-TZ-ImaniNeural",
+          "text": "You are leading the client meeting, are you not?"
+        },
+        {
+          "speaker": "male",
+          "locale": "en-TZ",
+          "role": "male",
+          "modelVoice": "en-TZ-ElimuNeural",
+          "text": "A. The meeting room seats twelve. B. They are our largest client. C. Actually, Elena will be taking my place."
+        }
+      ],
+      "practiceRenderControls": {
+        "spokenLabels": [
+          {
+            "option": "A",
+            "verbatim": "The meeting room seats twelve."
+          },
+          {
+            "option": "B",
+            "verbatim": "They are our largest client."
+          },
+          {
+            "option": "C",
+            "verbatim": "Actually, Elena will be taking my place."
+          }
+        ],
+        "numberedCue": "Do not add number or new direction; unchanged existing format. Verify label boundaries and neutral prosody for mode.",
+        "target": {
+          "option": "C",
+          "verbatim": "Actually, Elena will be taking my place.",
+          "direction": "Preserve the same en-TZ male voice and exact words; insert a natural brief pause at the already written comma after Actually, with no added spoken words or false /t/ onset before Elena. A–C same ordering."
+        }
+      },
+      "newImmutablePracticePath": "audio/exams/test-03/groups/t03-g017/practice-passage-r2.wav",
+      "newPracticeDuration": "Measure target WAV PCM, write exact start/end/duration; old duration is only a guard, not an allowed assumed new time label.",
+      "packChangesOnly": [
+        "group.audio",
+        "group.audioStart",
+        "group.audioEnd",
+        "group.duration"
+      ],
+      "unchangedContentAndHistory": "No scored option, image, formal audio/timing or question identity change. Keep old bank bytes and original group/range metadata immutable for deployed attempt review. Bind new study media revision by exact SHA and source range, not question-content revision.",
+      "expectedImage": null
+    }
+  ],
+  "executionGates": [
+    "Use authored speech only, pending authorized Azure Speech free F0 capacity and execution policy. No provider fallback or charge.",
+    "Render each full coherent practice item only, then verify item labels and options all exact, actual named sounds, role/locale, exact immutable bytes and measured range. Current formal and cue sources untouched and must remain exact.",
+    "Do not replace shared MP3 practice banks, and reject any difference to formal frames, question IDs/keys or images. Article changes or voice names cannot be inferred from prompt alone.",
+    "Review material utterances on the actual final audio with suitable independent evidence. Maintain current ledger status until authorized actual playback/audio proof; no verification count from this manifest."
+  ]
+}

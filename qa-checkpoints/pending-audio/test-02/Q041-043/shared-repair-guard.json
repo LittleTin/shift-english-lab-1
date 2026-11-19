@@ -1,0 +1,571 @@
+{
+  "status": "compact-editorial-repair-proposal-only-pending-provider-and-exact-real-audio",
+  "scope": {
+    "testId": "test-02",
+    "part": 3,
+    "numbers": [
+      41,
+      42,
+      43
+    ],
+    "group": "t02-g035",
+    "originalKeys": [
+      "B",
+      "A",
+      "D"
+    ]
+  },
+  "guards": {
+    "pin": "7f94ed237f4ea3c3350591d27834ba43690497bf",
+    "rawPackSha256": "dd9b42242b14c96999e2e6621f1b15850a7156dbc4271cd1b4ecff31ed83e090",
+    "rawActivePlanCanonicalSha256": "f3fff062ff29d86385b2dbb9aa992518d4130bba47bd1038210d5576e6737a36",
+    "cumulativeQ044046ActivePlanCanonicalSha256": "f993b36948e7a37786348833f69a747778eb1c786d03908923160bb39c5f8461",
+    "cumulativeQ044046PackSha256": "9ec5c813dda01db241e4d21d81d3c025947d6f19a6c7f5a5007a9d8dfbb5c232",
+    "groupCanonicalSha256": "65854ff2d609c78faf46acf91c294ca0655be6ab4779691a057e6a9000dd5606",
+    "questionsCanonicalSha256": {
+      "t02-q041": "f3fe04be57e1197639591e5bb1c0b4b7706eb8f248d283f8b324a4627fc12e27",
+      "t02-q042": "57f82bfa02b71177321094be0ce7465bc247daf0a484cc34423a3ed1bda7e31d",
+      "t02-q043": "334380c49998a1350cec6f5398880de7c65e9ab17fbefb32544f97a90f9dc2b3"
+    },
+    "exactAllFormalFrames": [
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 13.28071,
+        "end": 17.10367,
+        "duration": 3.82296,
+        "kind": "audio",
+        "role": "cue",
+        "part": 3,
+        "groupId": "t02-g035",
+        "at": 1107.12654
+      },
+      {
+        "src": "audio/azure-v1/test-02-13.mp3",
+        "start": 29.536,
+        "end": 59.368,
+        "duration": 29.832,
+        "kind": "audio",
+        "role": "passage",
+        "part": 3,
+        "groupId": "t02-g035",
+        "at": 1110.9495,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-NG",
+            "role": "male",
+            "modelVoice": "en-NG-AbeoNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-NG",
+            "role": "female",
+            "modelVoice": "en-NG-EzinneNeural"
+          }
+        ]
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 17.35367,
+        "end": 20.049,
+        "duration": 2.69533,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g035",
+        "questionId": "t02-q041",
+        "at": 1140.7815
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 3,
+        "groupId": "t02-g035",
+        "questionId": "t02-q041",
+        "at": 1143.47683
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 20.299,
+        "end": 22.94004,
+        "duration": 2.64104,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g035",
+        "questionId": "t02-q042",
+        "at": 1154.76094
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 3,
+        "groupId": "t02-g035",
+        "questionId": "t02-q042",
+        "at": 1157.40198
+      },
+      {
+        "src": "audio/formal/test-02-cues-02.mp3",
+        "start": 23.19004,
+        "end": 26.37358,
+        "duration": 3.18354,
+        "kind": "audio",
+        "role": "question",
+        "part": 3,
+        "groupId": "t02-g035",
+        "questionId": "t02-q043",
+        "at": 1168.68609
+      },
+      {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 11.28411,
+        "part": 3,
+        "groupId": "t02-g035",
+        "questionId": "t02-q043",
+        "at": 1171.86963
+      }
+    ],
+    "originalFormalAndPracticeSharedWindow": {
+      "src": "audio/azure-v1/test-02-13.mp3",
+      "start": 29.536,
+      "end": 59.368,
+      "duration": 29.832,
+      "kind": "audio",
+      "role": "passage",
+      "part": 3,
+      "groupId": "t02-g035",
+      "at": 1110.9495,
+      "speakers": [
+        {
+          "speaker": "male",
+          "locale": "en-NG",
+          "role": "male",
+          "modelVoice": "en-NG-AbeoNeural"
+        },
+        {
+          "speaker": "female",
+          "locale": "en-NG",
+          "role": "female",
+          "modelVoice": "en-NG-EzinneNeural"
+        }
+      ],
+      "assetSha256": "8c45e69db8ea8138ea2468257f59611b70c44335e26b900881d87caabff31474"
+    },
+    "groupStartAt": 1107.12654,
+    "nextGroupStartAt": 1183.15374,
+    "noVerifiedRecordsAtPin": true,
+    "retainedCueAndFormalStems": [
+      {
+        "exactOriginalWindow": {
+          "src": "audio/formal/test-02-cues-02.mp3",
+          "start": 13.28071,
+          "end": 17.10367,
+          "duration": 3.82296,
+          "kind": "audio",
+          "role": "cue",
+          "part": 3,
+          "groupId": "t02-g035",
+          "at": 1107.12654,
+          "assetSha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c"
+        },
+        "expectedSpokenText": "Questions 41 through 43. Listen to the conversation.",
+        "localAlreadyExtractedClipSha256": "d698087081bd6cacd20ef7ac85682c13486291d04b7935226a3764eba24bb881",
+        "localUnpromptedVoskMatches": "Questions 41 through 43. Listen to the conversation."
+      },
+      {
+        "exactOriginalWindow": {
+          "src": "audio/formal/test-02-cues-02.mp3",
+          "start": 17.35367,
+          "end": 20.049,
+          "duration": 2.69533,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t02-g035",
+          "questionId": "t02-q041",
+          "at": 1140.7815,
+          "assetSha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c"
+        },
+        "expectedSpokenText": "Number 41. What problem was discovered?",
+        "localAlreadyExtractedClipSha256": "687d0458db01d3bacceea81a321796747c03cbcaabff16c0e3e9afae6c940e91",
+        "localUnpromptedVoskMatches": "Number 41. What problem was discovered?"
+      },
+      {
+        "exactOriginalWindow": {
+          "src": "audio/formal/test-02-cues-02.mp3",
+          "start": 20.299,
+          "end": 22.94004,
+          "duration": 2.64104,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t02-g035",
+          "questionId": "t02-q042",
+          "at": 1154.76094,
+          "assetSha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c"
+        },
+        "expectedSpokenText": "Number 42. What has the man already done?",
+        "localAlreadyExtractedClipSha256": "10f9f250d878c32509e8b326fd3a32e3c95c2a77bb5cedc7dbe0fb9c00661369",
+        "localUnpromptedVoskMatches": "Number 42. What has the man already done?"
+      },
+      {
+        "exactOriginalWindow": {
+          "src": "audio/formal/test-02-cues-02.mp3",
+          "start": 23.19004,
+          "end": 26.37358,
+          "duration": 3.18354,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t02-g035",
+          "questionId": "t02-q043",
+          "at": 1168.68609,
+          "assetSha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c"
+        },
+        "expectedSpokenText": "Number 43. What is required before relabeling?",
+        "localAlreadyExtractedClipSha256": "835fec80e0405a1ab8a3d2fd5ffd78ed566f9c57b806cca88fe0e9a35eb082d7",
+        "localUnpromptedVoskMatches": "Number 43. What is required before relabeling?"
+      }
+    ]
+  },
+  "candidateGroupTextAndRoles": {
+    "id": "t02-g035",
+    "testId": "test-02",
+    "part": 3,
+    "title": "Investigating a label mismatch",
+    "titleZh": "調查標籤不符",
+    "topic": "manufacturing",
+    "passage": "Man: The barcodes on the shipping boxes say model R eight. The units inside are model R nine. I have stopped the shipment.\nWoman: Keep the boxes in the marked holding area. Compare the labels with the packing list.\nMan: The list is correct. The label printer may have used an old template.\nWoman: Let’s check the print history. Do not relabel anything until the quality team approves the correction.",
+    "passageZh": "男：出貨紙箱上的條碼標示 R8 型號，裡面的產品卻是 R9。我已經停止出貨。\n女：把紙箱留在有標示的暫存區。請比對標籤與裝箱單。\n男：裝箱單沒錯。印表機可能用了舊版標籤樣板。\n女：先查列印紀錄。品管部門核准更正之前，不要重貼任何標籤。",
+    "audioScript": "The barcodes on the shipping boxes say model R eight. The units inside are model R nine. I have stopped the shipment.\nKeep the boxes in the marked holding area. Compare the labels with the packing list.\nThe list is correct. The label printer may have used an old template.\nLet’s check the print history. Do not relabel anything until the quality team approves the correction.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "The barcodes on the shipping boxes say model R eight. The units inside are model R nine. I have stopped the shipment."
+      },
+      {
+        "voice": "female",
+        "text": "Keep the boxes in the marked holding area. Compare the labels with the packing list."
+      },
+      {
+        "voice": "male",
+        "text": "The list is correct. The label printer may have used an old template."
+      },
+      {
+        "voice": "female",
+        "text": "Let’s check the print history. Do not relabel anything until the quality team approves the correction."
+      }
+    ],
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-NG",
+        "role": "male",
+        "modelVoice": "en-NG-AbeoNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-NG",
+        "role": "female",
+        "modelVoice": "en-NG-EzinneNeural"
+      }
+    ]
+  },
+  "candidateQuestionsSameIdentitiesAndScoring": [
+    {
+      "id": "t02-q041",
+      "testId": "test-02",
+      "number": 41,
+      "part": 3,
+      "groupId": "t02-g035",
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "packing list"
+      ],
+      "prompt": "What problem was discovered?",
+      "promptZh": "發現了什麼問題？",
+      "options": [
+        {
+          "id": "A",
+          "text": "The packing list is missing.",
+          "zh": "裝箱單遺失。",
+          "whyZh": "男方已查看並說裝箱單正確。"
+        },
+        {
+          "id": "B",
+          "text": "The carton labels identify the wrong model.",
+          "zh": "紙箱標籤標示了錯誤型號。",
+          "whyZh": "箱外是 R8，箱內產品是 R9，型號不一致。"
+        },
+        {
+          "id": "C",
+          "text": "The units do not power on.",
+          "zh": "機器無法開機。",
+          "whyZh": "對話沒有討論產品功能故障。"
+        },
+        {
+          "id": "D",
+          "text": "The carrier arrived at the wrong address.",
+          "zh": "承運商到錯地址。",
+          "whyZh": "沒有提到承運商地址問題。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "箱外是 R8，箱內產品是 R9，型號不一致。",
+      "evidence": "The barcodes on the shipping boxes say model R eight. The units inside are model R nine.",
+      "vocabulary": [
+        {
+          "term": "packing list",
+          "zh": "裝箱單",
+          "note": "列示包裝內貨物與數量的文件。"
+        },
+        {
+          "term": "holding area",
+          "zh": "暫存區",
+          "note": "在等待確認或處置期間暫時放置物品的區域。"
+        }
+      ],
+      "revision": 1
+    },
+    {
+      "id": "t02-q042",
+      "testId": "test-02",
+      "number": 42,
+      "part": 3,
+      "groupId": "t02-g035",
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "packing list"
+      ],
+      "prompt": "What has the man already done?",
+      "promptZh": "男方已經做了什麼？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Stopped the shipment.",
+          "zh": "暫停出貨。",
+          "whyZh": "他在開頭明說已停止出貨。"
+        },
+        {
+          "id": "B",
+          "text": "Reprinted every label.",
+          "zh": "重印所有標籤。",
+          "whyZh": "對話只說要查列印紀錄，且核准前不得重貼，沒有說已重印全部標籤。"
+        },
+        {
+          "id": "C",
+          "text": "Discarded the old printer.",
+          "zh": "丟棄舊印表機。",
+          "whyZh": "印表機僅被懷疑用了舊模板，沒有被丟棄。"
+        },
+        {
+          "id": "D",
+          "text": "Changed the customer order.",
+          "zh": "修改客戶訂單。",
+          "whyZh": "對話沒有修改訂單。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "他在開頭明說已停止出貨。",
+      "evidence": "I have stopped the shipment.",
+      "vocabulary": [
+        {
+          "term": "packing list",
+          "zh": "裝箱單",
+          "note": "列示包裝內貨物與數量的文件。"
+        },
+        {
+          "term": "holding area",
+          "zh": "暫存區",
+          "note": "在等待確認或處置期間暫時放置物品的區域。"
+        }
+      ],
+      "revision": 1
+    },
+    {
+      "id": "t02-q043",
+      "testId": "test-02",
+      "number": 43,
+      "part": 3,
+      "groupId": "t02-g035",
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "packing list"
+      ],
+      "prompt": "What is required before relabeling?",
+      "promptZh": "重貼標籤前需要什麼？",
+      "options": [
+        {
+          "id": "A",
+          "text": "A new purchase order from the customer.",
+          "zh": "客戶的新採購單。",
+          "whyZh": "本題所需的是品質部門核准，不是新採購單。"
+        },
+        {
+          "id": "B",
+          "text": "A larger holding area.",
+          "zh": "更大的暫存區。",
+          "whyZh": "已指定現有暫存區，沒有擴大區域要求。"
+        },
+        {
+          "id": "C",
+          "text": "A different product model.",
+          "zh": "不同的產品型號。",
+          "whyZh": "處理的是標籤更正，未要求更換產品。"
+        },
+        {
+          "id": "D",
+          "text": "Approval from quality.",
+          "zh": "品質部門核准。",
+          "whyZh": "女方要求品質部門核准更正後才能重貼。"
+        }
+      ],
+      "answer": "D",
+      "explanationZh": "女方要求品質部門核准更正後才能重貼。",
+      "evidence": "Do not relabel anything until the quality team approves the correction.",
+      "vocabulary": [
+        {
+          "term": "packing list",
+          "zh": "裝箱單",
+          "note": "列示包裝內貨物與數量的文件。"
+        },
+        {
+          "term": "holding area",
+          "zh": "暫存區",
+          "note": "在等待確認或處置期間暫時放置物品的區域。"
+        }
+      ],
+      "revision": 1
+    }
+  ],
+  "optionReasonEnAndZh": {
+    "41": [
+      {
+        "id": "A",
+        "en": "The packing list is explicitly correct, not missing.",
+        "zh": "男方已查看並說裝箱單正確。"
+      },
+      {
+        "id": "B",
+        "en": "The shipping-box barcodes identify R8 but the actual units are R9, so the label identifies the wrong model.",
+        "zh": "箱外是 R8，箱內產品是 R9，型號不一致。"
+      },
+      {
+        "id": "C",
+        "en": "The speakers do not describe any test or power-on failure.",
+        "zh": "對話沒有討論產品功能故障。"
+      },
+      {
+        "id": "D",
+        "en": "The discussion is about outbound labeling, not the carrier’s address.",
+        "zh": "沒有提到承運商地址問題。"
+      }
+    ],
+    "42": [
+      {
+        "id": "A",
+        "en": "The man expressly says he has already stopped the shipment.",
+        "zh": "他在開頭明說已停止出貨。"
+      },
+      {
+        "id": "B",
+        "en": "Reprinting every label is not reported as completed; the speakers are investigating the print history and have not authorized relabeling.",
+        "zh": "對話只說要查列印紀錄，且核准前不得重貼，沒有說已重印全部標籤。"
+      },
+      {
+        "id": "C",
+        "en": "An outdated template is suspected; the printer was not discarded.",
+        "zh": "印表機僅被懷疑用了舊模板，沒有被丟棄。"
+      },
+      {
+        "id": "D",
+        "en": "The speakers neither discuss nor report changing the customer order.",
+        "zh": "對話沒有修改訂單。"
+      }
+    ],
+    "43": [
+      {
+        "id": "A",
+        "en": "Approval from the quality team is required, not a new order.",
+        "zh": "本題所需的是品質部門核准，不是新採購單。"
+      },
+      {
+        "id": "B",
+        "en": "The boxes already have a marked holding area; enlarging it is not a condition.",
+        "zh": "已指定現有暫存區，沒有擴大區域要求。"
+      },
+      {
+        "id": "C",
+        "en": "Correcting a label does not require substituting another product model.",
+        "zh": "處理的是標籤更正，未要求更換產品。"
+      },
+      {
+        "id": "D",
+        "en": "The woman explicitly prohibits relabeling until the quality team approves the correction.",
+        "zh": "女方要求品質部門核准更正後才能重貼。"
+      }
+    ]
+  },
+  "render": {
+    "authorizeLaterOnly": "No audio request now. After confirming Azure F0 authorization, exact locale/voices and execution policy, generate one complete group shared by both modes.",
+    "turnSequence": [
+      {
+        "speaker": "male",
+        "locale": "en-NG",
+        "role": "male",
+        "modelVoice": "en-NG-AbeoNeural",
+        "text": "The barcodes on the shipping boxes say model R eight. The units inside are model R nine. I have stopped the shipment."
+      },
+      {
+        "speaker": "female",
+        "locale": "en-NG",
+        "role": "female",
+        "modelVoice": "en-NG-EzinneNeural",
+        "text": "Keep the boxes in the marked holding area. Compare the labels with the packing list."
+      },
+      {
+        "speaker": "male",
+        "locale": "en-NG",
+        "role": "male",
+        "modelVoice": "en-NG-AbeoNeural",
+        "text": "The list is correct. The label printer may have used an old template."
+      },
+      {
+        "speaker": "female",
+        "locale": "en-NG",
+        "role": "female",
+        "modelVoice": "en-NG-EzinneNeural",
+        "text": "Let’s check the print history. Do not relabel anything until the quality team approves the correction."
+      }
+    ],
+    "importantPronunciation": "Speak the letter R and the number eight separately for the external model, then R and nine separately for the actual units; no invented suffix, letter change or skipped digit. Say shipping box(es), not cartons or curtains.",
+    "passageFullLengthUnicodeChars": 372,
+    "immutableNewCandidateAsset": "audio/exams/test-02/groups/t02-g035/passage-r2.wav",
+    "noNewCueOrStemsDefault": "Original Q041-043 numbers/stems/cue use exact guard windows. Do not change labels, audio bytes, stems, or old attempts. Verify retained words again only if source association changes."
+  },
+  "localEvidence": {
+    "whisperPassageSha256": "76c4d174bb8a8dfa5f2cefd3d5792fad72ddd77a41082a06304e68a62dcd9146",
+    "voskOutputSha256": "be4a1edcd1b0a7171ea52b23ef38ac8a28dc8db6efc490a6cb86906d6ed998c6",
+    "scopeJsonSha256": "52d333d37649f71fa4eb785aae1f3a546a0ee6f211ba7597a7b6c9b075a16eaf",
+    "interpretation": "Whisper distinctly got R8 vs R9, stopped shipment, packing list, and quality approval. Both small/independent Vosk returned curtain(s) for cartons in at least one occurrence. This is lexical fragility, not proven provider defect. The new unambiguous packaging term preserves facts. The prior exact cue/stem windows matched to original pack with both current/old evidence; local Vosk cue and all stems match their respective wording."
+  },
+  "timing": {
+    "oldSharedPassageSeconds": 29.832,
+    "existingLocalAnswerSlotsSeconds": [
+      11.28411,
+      11.28411,
+      11.28411
+    ],
+    "keepAllLocalPausesExactlyIfNewFullPassageFitsWithinSeconds": 29.832,
+    "illustrativeMaxSpeechWithNinePointSevenFiveFloor": 34.43433,
+    "newMeasuredSeconds": null,
+    "action": "Measure actual PCM length and trim only provable redundant digital silence if needed. Rebuild scoped pauses only when needed, preserve later G036 boundary, unrelated frames, 100 answer slots and 2700 seconds. If no safe fit, no splice or speech truncation."
+  },
+  "releaseVersioning": "Retain scored contents/keys and item identity; semantic-equivalent authorized dialogue revision/media version only. Keep exact prior shared audio/translation/attempt snapshot recoverable; if project requires explicit scope version, document unchanged answers and prove old active resume. No pass increase or live changes from a text manifest."
+}

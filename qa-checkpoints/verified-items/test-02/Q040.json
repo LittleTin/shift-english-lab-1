@@ -1,0 +1,142 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "The final turn explicitly keeps the material delivery date. The assembly date and published schedule will change, and there is no Monday fixture ready date. All choices, Traditional Chinese, and rationales correspond. Exact original source and range are byte-identical in formal/practice. Unprompted Whisper small.en transcribed the complete four turns exactly (including “We planned”); independent Vosk independently and directly corroborated the exact disputed past form, Monday/Tuesday/Wednesday timing, Monday housing inspection, and unchanged material delivery. Vosk confirmed numbered item stem and group cue. This verifies actual offline content, not live playback or publication.",
+  "activeQuestion": {
+    "id": "t02-q040",
+    "testId": "test-02",
+    "number": 40,
+    "part": 3,
+    "groupId": "t02-g034",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "pilot build"
+    ],
+    "prompt": "What will remain unchanged?",
+    "promptZh": "哪件事維持不變？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The assembly date.",
+        "zh": "組裝日期。",
+        "whyZh": "組裝從星期一改到星期三。"
+      },
+      {
+        "id": "B",
+        "text": "The fixture completion date of Monday.",
+        "zh": "治具星期一完成的日期。",
+        "whyZh": "對話說治具星期二才完成。"
+      },
+      {
+        "id": "C",
+        "text": "The material delivery date.",
+        "zh": "物料交貨日期。",
+        "whyZh": "最後明確說物料交期 can stay the same。"
+      },
+      {
+        "id": "D",
+        "text": "The published production schedule.",
+        "zh": "已發布的生產排程。",
+        "whyZh": "女方說下午會更新排程。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "最後明確說物料交期 can stay the same。",
+    "evidence": "the material delivery date can stay the same",
+    "vocabulary": [
+      {
+        "term": "pilot build",
+        "zh": "試產",
+        "note": "正式量產前的小批次製作，用於驗證設計與製程準備。"
+      },
+      {
+        "term": "fixture",
+        "zh": "治具",
+        "note": "本題用於組裝的定位或輔助工具。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g034",
+    "testId": "test-02",
+    "part": 3,
+    "title": "Revising the pilot build",
+    "titleZh": "調整試產安排",
+    "topic": "manufacturing",
+    "passage": "Woman: We planned to assemble two hundred units in Monday's pilot build, but the new fixture will not be ready until Tuesday.\nMan: Can the team start with the housing inspection on Monday? That does not require the fixture.\nWoman: Yes. Assembly can move to Wednesday, after the fixture has been checked. I will update the schedule this afternoon.\nMan: Please also tell purchasing that the material delivery date can stay the same.",
+    "passageZh": "女：我們原本計畫星期一試產組裝兩百台，但新治具要到星期二才會完成。\n男：團隊星期一能先做外殼檢驗嗎？那不需要治具。\n女：可以。治具檢查完成後，組裝可移到星期三。我今天下午會更新排程。\n男：也請通知採購，物料交貨日期可以維持不變。",
+    "audioScript": "We planned to assemble two hundred units in Monday's pilot build, but the new fixture will not be ready until Tuesday.\nCan the team start with the housing inspection on Monday? That does not require the fixture.\nYes. Assembly can move to Wednesday, after the fixture has been checked. I will update the schedule this afternoon.\nPlease also tell purchasing that the material delivery date can stay the same.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "We planned to assemble two hundred units in Monday's pilot build, but the new fixture will not be ready until Tuesday."
+      },
+      {
+        "voice": "male",
+        "text": "Can the team start with the housing inspection on Monday? That does not require the fixture."
+      },
+      {
+        "voice": "female",
+        "text": "Yes. Assembly can move to Wednesday, after the fixture has been checked. I will update the schedule this afternoon."
+      },
+      {
+        "voice": "male",
+        "text": "Please also tell purchasing that the material delivery date can stay the same."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-13.mp3",
+    "duration": 28.536,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-KE",
+        "role": "female",
+        "modelVoice": "en-KE-AsiliaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-KE",
+        "role": "male",
+        "modelVoice": "en-KE-ChilembaNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 29.036
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-02.mp3",
+      "start": 0.25,
+      "end": 3.82842,
+      "assetSha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+      "speech": "Questions 38 through 40. Listen to the conversation."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-02-13.mp3",
+      "start": 0.5,
+      "end": 29.036,
+      "assetSha256": "8c45e69db8ea8138ea2468257f59611b70c44335e26b900881d87caabff31474",
+      "speech": "We planned to assemble two hundred units in Monday's pilot build, but the new fixture will not be ready until Tuesday. Can the team start with the housing inspection on Monday? That does not require the fixture. Yes. Assembly can move to Wednesday, after the fixture has been checked. I will update the schedule this afternoon. Please also tell purchasing that the material delivery date can stay the same."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-02-13.mp3",
+      "start": 0.5,
+      "end": 29.036,
+      "assetSha256": "8c45e69db8ea8138ea2468257f59611b70c44335e26b900881d87caabff31474",
+      "speech": "We planned to assemble two hundred units in Monday's pilot build, but the new fixture will not be ready until Tuesday. Can the team start with the housing inspection on Monday? That does not require the fixture. Yes. Assembly can move to Wednesday, after the fixture has been checked. I will update the schedule this afternoon. Please also tell purchasing that the material delivery date can stay the same."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-02-cues-02.mp3",
+      "start": 10.65592,
+      "end": 13.03071,
+      "assetSha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+      "speech": "Number 40. What will remain unchanged?"
+    }
+  ]
+}
