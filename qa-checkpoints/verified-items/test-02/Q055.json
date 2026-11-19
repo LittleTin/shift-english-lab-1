@@ -1,0 +1,142 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "She states she will send the return address after approval; no recycling schedule, order forecast or banking information. English/繁中 choices, reasons, timelines and real shared audio verified.",
+  "activeQuestion": {
+    "id": "t02-q055",
+    "testId": "test-02",
+    "number": 55,
+    "part": 3,
+    "groupId": "t02-g039",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "return authorization"
+    ],
+    "prompt": "What will the woman send after approval?",
+    "promptZh": "核准後女方會寄什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The recycling schedule.",
+        "zh": "回收時程。",
+        "whyZh": "原箱已回收是背景，沒有回收時程通知。"
+      },
+      {
+        "id": "B",
+        "text": "A new order forecast.",
+        "zh": "新的訂單預測。",
+        "whyZh": "對話沒有需求預測。"
+      },
+      {
+        "id": "C",
+        "text": "The return address.",
+        "zh": "退貨地址。",
+        "whyZh": "最後一句明確承諾核准後提供地址。"
+      },
+      {
+        "id": "D",
+        "text": "The customer's bank details.",
+        "zh": "客戶銀行資料。",
+        "whyZh": "對話沒有退款帳戶資訊。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "最後一句明確承諾核准後提供地址。",
+    "evidence": "I will send you the return address after the request is approved.",
+    "vocabulary": [
+      {
+        "term": "return authorization",
+        "zh": "退貨授權",
+        "note": "退回產品前依供應商流程取得的同意或編號。"
+      },
+      {
+        "term": "serial number",
+        "zh": "序號",
+        "note": "用來識別個別產品的編號。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g039",
+    "testId": "test-02",
+    "part": 3,
+    "title": "Returning a faulty adapter",
+    "titleZh": "退回故障轉接器",
+    "topic": "technology",
+    "passage": "Man: We received four adapters that lose power when the cable is moved. Can we send them back today?\nWoman: Please obtain a return authorization number first. Include the serial numbers and a short description of the fault in your request.\nMan: Do you need the original boxes? We kept the protective bags, but recycled the cartons.\nWoman: The bags are fine if the units are well protected. I will send you the return address after the request is approved.",
+    "passageZh": "男：我們收到四個轉接器，移動線材時就會斷電。今天可以寄回嗎？\n女：請先取得退貨授權編號。在申請中附上序號與簡短故障描述。\n男：你們需要原箱嗎？我們保留了保護袋，但紙箱已回收。\n女：只要轉接器受到妥善保護，用保護袋就可以。申請核准後，我會寄退回地址給你。",
+    "audioScript": "We received four adapters that lose power when the cable is moved. Can we send them back today?\nPlease obtain a return authorization number first. Include the serial numbers and a short description of the fault in your request.\nDo you need the original boxes? We kept the protective bags, but recycled the cartons.\nThe bags are fine if the units are well protected. I will send you the return address after the request is approved.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "We received four adapters that lose power when the cable is moved. Can we send them back today?"
+      },
+      {
+        "voice": "female",
+        "text": "Please obtain a return authorization number first. Include the serial numbers and a short description of the fault in your request."
+      },
+      {
+        "voice": "male",
+        "text": "Do you need the original boxes? We kept the protective bags, but recycled the cartons."
+      },
+      {
+        "voice": "female",
+        "text": "The bags are fine if the units are well protected. I will send you the return address after the request is approved."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-17.mp3",
+    "duration": 30.528,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-GB",
+        "role": "male",
+        "modelVoice": "en-GB-RyanNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-GB",
+        "role": "female",
+        "modelVoice": "en-GB-SoniaNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 31.028
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-03.mp3",
+      "start": 4.02787,
+      "end": 7.95071,
+      "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+      "speech": "Questions 53 through 55, listen to the conversation."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-02-cues-03.mp3",
+      "start": 15.09479,
+      "end": 18.29113,
+      "assetSha256": "79629f055edf5f5e8c774b8b979f849e25a4c4be1d752caab7c98191a243086d",
+      "speech": "Number 55. What will the woman send after approval?"
+    },
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-02-17.mp3",
+      "start": 0.5,
+      "end": 31.028,
+      "assetSha256": "eda0997157617645f6f1c6df43bf363c2a560dce83ad36cd982885bb549e23fa",
+      "speech": "We received for adapters that lose power when the cable is moved. Can we send them back today? Please obtain a return authorization number first. Include the serial numbers and a short description of the fault in your request. Do you need the original boxes? We kept the protective bags, but recycled the cartons. The bags are fine if the units are well protected. I will send you the return address after the request is approved."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-02-17.mp3",
+      "start": 0.5,
+      "end": 31.028,
+      "assetSha256": "eda0997157617645f6f1c6df43bf363c2a560dce83ad36cd982885bb549e23fa",
+      "speech": "We received for adapters that lose power when the cable is moved. Can we send them back today? Please obtain a return authorization number first. Include the serial numbers and a short description of the fault in your request. Do you need the original boxes? We kept the protective bags, but recycled the cartons. The bags are fine if the units are well protected. I will send you the return address after the request is approved."
+    }
+  ]
+}

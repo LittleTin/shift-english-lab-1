@@ -1,0 +1,142 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Another team has booked the chamber through Thursday, which includes Wednesday. Other alternatives are neither scheduled nor present. English/繁中 choices, reasons, timelines and real shared audio verified.",
+  "activeQuestion": {
+    "id": "t02-q050",
+    "testId": "test-02",
+    "number": 50,
+    "part": 3,
+    "groupId": "t02-g038",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "reserve"
+    ],
+    "prompt": "Why is the requested chamber unavailable on Wednesday?",
+    "promptZh": "星期三為何無法使用所需試驗箱？",
+    "options": [
+      {
+        "id": "A",
+        "text": "It is being moved to a new building.",
+        "zh": "設備要搬到新大樓。",
+        "whyZh": "對話未提搬遷。"
+      },
+      {
+        "id": "B",
+        "text": "The test plan was rejected.",
+        "zh": "測試計畫被否決。",
+        "whyZh": "計畫只被要求帶來，沒有被否決。"
+      },
+      {
+        "id": "C",
+        "text": "Another team has already booked it.",
+        "zh": "另一個團隊已預約。",
+        "whyZh": "男方說其他團隊的預約持續到星期四。"
+      },
+      {
+        "id": "D",
+        "text": "The laboratory is closed all week.",
+        "zh": "實驗室整週關閉。",
+        "whyZh": "星期三仍有小試驗箱、星期五有大試驗箱可用。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "男方說其他團隊的預約持續到星期四。",
+    "evidence": "Another team has booked it through Thursday.",
+    "vocabulary": [
+      {
+        "term": "reserve",
+        "zh": "預約；保留",
+        "note": "本題指預約設備使用時段。"
+      },
+      {
+        "term": "reliability test",
+        "zh": "可靠度測試",
+        "note": "在指定條件下評估產品持續運作等表現，具體條件由測試計畫定義。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g038",
+    "testId": "test-02",
+    "part": 3,
+    "title": "Rescheduling a reliability test",
+    "titleZh": "調整可靠度測試",
+    "topic": "technology",
+    "passage": "Woman: We need the reliability chamber for three days, starting Wednesday. Is it available?\nMan: Another team has booked it through Thursday. You could begin Friday morning, or use the smaller chamber on Wednesday.\nWoman: The smaller one cannot hold all twelve samples. Let us choose Friday, and I will notify the project manager about the revised completion date.\nMan: I will reserve the larger chamber for you. Please bring the test plan when you check in.",
+    "passageZh": "女：我們從星期三開始需要使用可靠度試驗箱三天。有空檔嗎？\n男：另一個團隊已預約到星期四，包含星期四當天。你們可以星期五早上開始，或星期三用比較小的試驗箱。\n女：小的那台放不下全部十二個樣品。我們選星期五，我會通知專案經理修改後的完成日期。\n男：我會替你預約較大的試驗箱。登記使用時請帶測試計畫。",
+    "audioScript": "We need the reliability chamber for three days, starting Wednesday. Is it available?\nAnother team has booked it through Thursday. You could begin Friday morning, or use the smaller chamber on Wednesday.\nThe smaller one cannot hold all twelve samples. Let us choose Friday, and I will notify the project manager about the revised completion date.\nI will reserve the larger chamber for you. Please bring the test plan when you check in.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "We need the reliability chamber for three days, starting Wednesday. Is it available?"
+      },
+      {
+        "voice": "male",
+        "text": "Another team has booked it through Thursday. You could begin Friday morning, or use the smaller chamber on Wednesday."
+      },
+      {
+        "voice": "female",
+        "text": "The smaller one cannot hold all twelve samples. Let us choose Friday, and I will notify the project manager about the revised completion date."
+      },
+      {
+        "voice": "male",
+        "text": "I will reserve the larger chamber for you. Please bring the test plan when you check in."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-16.mp3",
+    "duration": 30.888,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-US",
+        "role": "female",
+        "modelVoice": "en-US-JennyNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-US",
+        "role": "male",
+        "modelVoice": "en-US-GuyNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 31.388
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-02.mp3",
+      "start": 56.2015,
+      "end": 59.80392,
+      "assetSha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+      "speech": "Questions 50 through 52. Listen to the conversation."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-02-cues-02.mp3",
+      "start": 60.05392,
+      "end": 64.24658,
+      "assetSha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+      "speech": "Number 50. Why is the requested chamber unavailable on Wednesday?"
+    },
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-02-16.mp3",
+      "start": 0.5,
+      "end": 31.388,
+      "assetSha256": "2586dbecbf4afdfb30951aa05797e06952eb86d7d2fba094541d787d22408815",
+      "speech": "We need the reliability chamber for three days, starting Wednesday. Is it available? Another team has booked it through Thursday. You could begin Friday morning, or use the smaller chamber on Wednesday. The smaller one cannot hold all 12 samples. Let us choose Friday, and I will notify the project manager about the revised completion date. I will reserve the larger chamber for you. Please bring the test plan when you check in. [BLANK_AUDIO]"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-02-16.mp3",
+      "start": 0.5,
+      "end": 31.388,
+      "assetSha256": "2586dbecbf4afdfb30951aa05797e06952eb86d7d2fba094541d787d22408815",
+      "speech": "We need the reliability chamber for three days, starting Wednesday. Is it available? Another team has booked it through Thursday. You could begin Friday morning, or use the smaller chamber on Wednesday. The smaller one cannot hold all 12 samples. Let us choose Friday, and I will notify the project manager about the revised completion date. I will reserve the larger chamber for you. Please bring the test plan when you check in. [BLANK_AUDIO]"
+    }
+  ]
+}
