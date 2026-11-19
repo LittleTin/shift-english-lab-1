@@ -1,0 +1,57 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "‘Need assistance changing’ takes the mass noun for help. ‘Assistant’ would require a determiner and name a person; ‘assisted’ and ‘assist’ do not fill the noun slot. The itinerary, travel desk and all zh-TW options/rationales checked.",
+  "activeQuestion": {
+    "id": "t01-q128",
+    "testId": "test-01",
+    "number": 128,
+    "part": 5,
+    "groupId": null,
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "grammar"
+    ],
+    "prompt": "Please contact the travel desk if you need ____ changing your itinerary.",
+    "promptZh": "若你在更改行程時需要____，請聯絡差旅服務窗口。",
+    "options": [
+      {
+        "text": "assisted",
+        "zh": "受到協助的",
+        "whyZh": "assisted 不能單獨作為 need 在此所需的名詞受詞。",
+        "id": "A"
+      },
+      {
+        "text": "assistant",
+        "zh": "助理",
+        "whyZh": "assistant 指一位人員，作單數可數名詞時需要 an；此處要表示協助。",
+        "id": "B"
+      },
+      {
+        "text": "assistance",
+        "zh": "協助",
+        "whyZh": "need assistance doing something 表示做某事需要協助。",
+        "id": "C"
+      },
+      {
+        "text": "assist",
+        "zh": "協助（動詞）",
+        "whyZh": "need 後此處需要名詞，或另用 to assist 的不同結構。",
+        "id": "D"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "need assistance doing something 表示做某事需要協助。",
+    "evidence": "need assistance changing your itinerary",
+    "vocabulary": [
+      {
+        "term": "itinerary",
+        "zh": "行程表",
+        "note": "安排旅行時間、地點與交通的計畫。"
+      }
+    ],
+    "revision": 1
+  }
+}

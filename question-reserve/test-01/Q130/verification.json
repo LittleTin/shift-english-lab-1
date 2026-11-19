@@ -1,0 +1,57 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "‘Valid for any departure’ uniquely describes which services a ticket covers, not a location (at), start (from), or deadline (by). The Chinese stem preserves the purchase channel, selected date and every departure; all glosses and reasons were checked.",
+  "activeQuestion": {
+    "id": "t01-q130",
+    "testId": "test-01",
+    "number": 130,
+    "part": 5,
+    "groupId": null,
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "grammar"
+    ],
+    "prompt": "Tickets purchased online are valid ____ any departure on the selected date.",
+    "promptZh": "網路購買的車票對所選日期的任何班次都有效。（請在英文句中填入適當的介系詞。）",
+    "options": [
+      {
+        "text": "at",
+        "zh": "在某點",
+        "whyZh": "valid at 不適合連接 any departure 表示票券適用班次。",
+        "id": "A"
+      },
+      {
+        "text": "from",
+        "zh": "從……起",
+        "whyZh": "from 表起點，不能表達車票適用於任一班次。",
+        "id": "B"
+      },
+      {
+        "text": "by",
+        "zh": "由；不晚於",
+        "whyZh": "by 不表示票券對某班次有效。",
+        "id": "C"
+      },
+      {
+        "text": "for",
+        "zh": "用於；對……有效",
+        "whyZh": "valid for a departure 表示可用於某班次。",
+        "id": "D"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "valid for a departure 表示可用於某班次。",
+    "evidence": "valid for any departure on the selected date",
+    "vocabulary": [
+      {
+        "term": "departure",
+        "zh": "出發班次",
+        "note": "交通工具的出發或對應班次。"
+      }
+    ],
+    "revision": 1
+  }
+}
