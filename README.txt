@@ -1,3 +1,5 @@
+Project requirements and QA/release rules: SHIFT-SPEC.md
+
 SHIFT English Lab
 The current website version is shown on the home, guide, and voice preview pages.
 

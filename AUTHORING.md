@@ -1,5 +1,7 @@
 # Authoring a SHIFT Question Pack
 
+Project rules, priorities and release gates: [SHIFT-SPEC.md](SHIFT-SPEC.md). If the guidance below conflicts, follow the specification.
+
 The site loads question packs as static files. Add or update a pack without editing the HTML or application code.
 
 ## Import or publish
