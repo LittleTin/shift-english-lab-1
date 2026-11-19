@@ -1,0 +1,74 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": {
+    "number": 192,
+    "key": "A",
+    "reason": "$1,800 minus ineligible $120 food = $1,680; $2,000 is cap, $1,800 includes lunch, $1,620 wrongly subtracts eligible $180 tool hire.",
+    "evidence": "not food / volunteer lunch $120. Total: $1,800 / exclude the ineligible budget item"
+  },
+  "activeQuestion": {
+    "id": "t03-q192",
+    "testId": "test-03",
+    "number": 192,
+    "part": 7,
+    "groupId": "t03-g072",
+    "topic": "business",
+    "difficulty": "advanced",
+    "tags": [
+      "business",
+      "reading-comprehension",
+      "triple"
+    ],
+    "prompt": "How much should the association request after the officer’s correction?",
+    "promptZh": "依承辦人的要求，協會應申請多少？",
+    "options": [
+      {
+        "text": "$1,680",
+        "zh": "一千六百八十元",
+        "whyZh": "從總預算 1,800 元扣除不符合補助資格的志工午餐費 120 元，應申請 1,680 元。",
+        "id": "A"
+      },
+      {
+        "text": "$2,000",
+        "zh": "兩千元",
+        "whyZh": "這是上限，不是本案合資格預算。",
+        "id": "B"
+      },
+      {
+        "text": "$1,800",
+        "zh": "一千八百元",
+        "whyZh": "包含不合資格食物費。",
+        "id": "C"
+      },
+      {
+        "text": "$1,620",
+        "zh": "一千六百二十元",
+        "whyZh": "這是錯扣工具租賃一百八十元，工具租賃可補助。",
+        "id": "D"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "從總預算 1,800 元扣除不符合補助資格的志工午餐費 120 元，應申請 1,680 元。",
+    "evidence": "not food / volunteer lunch $120. Total: $1,800 / exclude the ineligible budget item",
+    "vocabulary": [
+      {
+        "term": "exclude",
+        "zh": "排除",
+        "note": "本題閱讀重點詞彙。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g072",
+    "testId": "test-03",
+    "part": 7,
+    "title": "A community grant application",
+    "titleZh": "社區補助申請",
+    "topic": "business",
+    "passage": "DOCUMENT 1 — WESTBOROUGH SMALL PROJECT GRANTS\nApplications close at 5 p.m. on May 30. Registered community groups may request up to $2,000 for projects completed by September 30. Funds may cover materials and equipment hire, but not food, permanent staff salaries, or work already completed. Applicants must provide a detailed budget and written permission from the property owner. Decisions will be emailed on June 20. Successful applicants must submit receipts and photographs within 30 days of completion.\n\nDOCUMENT 2 — PROJECT PROPOSAL DRAFT\nApplicant: Canal Neighbours Association\nProject: Transform the unused paved corner behind the public library into a container garden.\nWork date: August 17, with August 24 reserved for bad weather.\nVolunteers will assemble movable planters and fill them with herbs for residents to pick. The library director has signed a letter permitting use of the corner, provided the emergency exit remains clear. The project does not involve removing paving or drilling into the library wall.\nBudget: planter materials $960; soil and plants $540; tool hire $180; volunteer lunch $120. Total: $1,800.\n\nDOCUMENT 3 — EMAIL\nFrom: Council Grants Officer\nTo: Canal Neighbours Association\nDate: May 22\nThank you for sending your draft for an informal check. The permission letter is sufficient. Please revise the requested amount to exclude the ineligible budget item; you may pay for that separately using your association's funds. Also add a sketch showing the emergency-exit route. A professional drawing is not necessary. Once these changes are made, submit the final application through the online portal before the deadline. Sending this draft by email does not count as a formal application.",
+    "passageZh": "文件一：Westborough 小型專案補助\n申請五月三十日下午五點截止。已登記社區團體可申請最高兩千元，專案須最遲於九月三十日完成。可補助材料和設備租賃，不補助食物、固定員工薪資及已完成工作。須附詳細預算與場地所有人的書面許可。六月二十日以電子郵件通知結果。獲補助者完工後三十天內須交收據與照片。\n\n文件二：提案草稿\n申請者：Canal 鄰里協會。\n專案：將公共圖書館後方閒置鋪面角落改為盆栽花園。\n施工日八月十七日，天候不佳時改至八月二十四日。\n志工組裝可移式花盆，種植香草供居民採摘。館長已簽許可，但緊急出口須保持暢通。不移除鋪面，也不在牆上鑽孔。\n預算：花盆材料九百六十元、土壤及植物五百四十元、工具租賃一百八十元、志工午餐一百二十元，總計一千八百元。\n\n文件三：郵件\n市議會補助承辦人五月二十二日寄給協會。\n謝謝先寄來草稿供初步檢視。許可函已足夠。請調整申請金額，排除不合資格項目；該項可由協會自有資金另付。也請加上緊急出口路線草圖，不須專業製圖。修改後須於期限前透過線上申請系統送出正式申請；寄送草稿郵件不算正式申請。",
+    "passageType": "triple"
+  }
+}

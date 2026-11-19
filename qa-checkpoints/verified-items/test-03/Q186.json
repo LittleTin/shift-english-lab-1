@@ -1,0 +1,78 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": {
+    "number": 186,
+    "key": "A",
+    "reason": "Email says arrive by 10:30 for microphone check, not lunch after 1 p.m., ticket collection, or 11 a.m. audience admission.",
+    "evidence": "Please arrive by 10:30 a.m. for a microphone check"
+  },
+  "activeQuestion": {
+    "id": "t03-q186",
+    "testId": "test-03",
+    "number": 186,
+    "part": 7,
+    "groupId": "t03-g071",
+    "topic": "business",
+    "difficulty": "advanced",
+    "tags": [
+      "business",
+      "reading-comprehension",
+      "triple"
+    ],
+    "prompt": "Why must Dana reach the Maritime Centre by 10:30?",
+    "promptZh": "Dana 為何須最遲於上午十點半抵達 Maritime Centre？",
+    "options": [
+      {
+        "text": "To test audio equipment",
+        "zh": "測試音訊設備",
+        "whyZh": "Rowan 要求 Dana 最遲十點半抵達，以便測試麥克風。",
+        "id": "A"
+      },
+      {
+        "text": "To attend the closing lunch",
+        "zh": "參加結束午餐",
+        "whyZh": "午餐在下午一點座談結束後。",
+        "id": "B"
+      },
+      {
+        "text": "To collect train tickets",
+        "zh": "領取火車票",
+        "whyZh": "車票應先訂，不在會場領。",
+        "id": "C"
+      },
+      {
+        "text": "To meet the arriving audience",
+        "zh": "迎接入場觀眾",
+        "whyZh": "觀眾十一點才入場。",
+        "id": "D"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "Rowan 要求 Dana 最遲十點半抵達，以便測試麥克風。",
+    "evidence": "Please arrive by 10:30 a.m. for a microphone check",
+    "vocabulary": [
+      {
+        "term": "reimburse",
+        "zh": "報銷",
+        "note": "本題閱讀重點詞彙。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g071",
+    "testId": "test-03",
+    "part": 7,
+    "title": "Choosing a rail itinerary",
+    "titleZh": "選擇鐵路行程",
+    "topic": "business",
+    "passage": "DOCUMENT 1 — EASTLINE RAIL: TUESDAY SERVICES\nNorthbridge to Port Haven, direct trains\nService E12: departs 07:10; arrives 09:05; standard fare $46; flexible fare $64.\nService E18: departs 08:20; arrives 10:00; standard fare $52; flexible fare $70.\nService E24: departs 09:15; arrives 11:10; standard fare $46; flexible fare $64.\nStandard tickets are valid only on the booked train and cannot be refunded. Flexible tickets can be changed once, without an administration fee, before departure; any fare difference remains payable. A taxi from Port Haven station to the Maritime Centre normally takes 25 minutes. The public bus takes approximately 50 minutes.\n\nDOCUMENT 2 — EMAIL\nFrom: Rowan Lee, Maritime Centre\nTo: Dana Holt\nSubject: Tuesday panel\nThank you for agreeing to speak at our panel on Tuesday. Please arrive by 10:30 a.m. for a microphone check; the audience enters at eleven. We will reimburse your rail fare up to $75 and your taxi from the station. Please retain receipts. Your panel ends at 1 p.m., and lunch is available afterward. If your travel plans change, contact me rather than the venue's general reception.\n\nDOCUMENT 3 — MESSAGE\nDana to assistant, Monday 4:15 p.m.\nPlease book tomorrow's train. I can't leave Northbridge before eight because I must drop off some documents. Choose a service that gets me to the microphone check on time, allowing for the taxi ride. My morning appointment might run late, so I need a ticket that lets me change trains if necessary. Keep the rail fare within Rowan's reimbursement limit. I'll arrange my return journey after the panel.",
+    "passageZh": "文件一：Eastline 鐵路星期二班次\nNorthbridge 直達 Port Haven。\nE12：07:10 出發，09:05 抵達；標準票$46，彈性票$64。\nE18：08:20 出發，10:00 抵達；標準票$52，彈性票$70。\nE24：09:15 出發，11:10 抵達；標準票$46，彈性票$64。\n標準票只限預訂班次，不退款。彈性票在發車前可改一次，免行政費，若有差額仍須補繳。車站搭計程車到 Maritime Centre 通常二十五分鐘，公車約五十分鐘。\n\n文件二：郵件\nMaritime Centre 的 Rowan Lee 寄給 Dana Holt，主旨：星期二座談。\n感謝同意擔任座談講者。請最遲於上午十點半抵達，以便測試麥克風，觀眾十一點入場。火車票最高可報銷 $75，車站到會場的計程車費也可報銷，請保留收據。座談下午一點結束，之後有午餐。如行程改變，請聯絡我，不要聯絡場地一般櫃檯。\n\n文件三：訊息\nDana 星期一下午四點十五分傳給助理。\n請訂明天火車。我得先送文件，最早要到上午八點才能離開 Northbridge。選能準時到麥克風測試的班次，並算入計程車車程。早上的安排可能會耽擱，所以需要可改班次的票。票價不要超過 Rowan 說的報銷上限，回程我會在座談後安排。",
+    "passageType": "triple",
+    "image": "assets/graphics/t03-g071-rail-timetable.svg",
+    "imageAlt": "Eastline Rail Tuesday timetable. The same data appear in Document 1 below.",
+    "imageCaption": "Document 1: Train times, fares, and transfer estimates."
+  },
+  "imageSha256": "39cc7bb3275353e1db2c6660be4157239a0e2161cea0770140769d63c96f6135"
+}
