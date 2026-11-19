@@ -6,20 +6,23 @@ import json
 from pathlib import Path
 import re
 import tempfile
-from package import EXAMS, BINARY_EXT, copy, emit, inspect, layout, read, require, safe, sha
+from package import EXAMS, BINARY_EXT, copy, emit, inspect, layout, read, require, require_no_reserve_tree, require_public_path, safe, sha
 
 CURRENT_NAMESPACE=re.compile(r'(audio|assets)/exams/test-0[1-3]/.+')
 
 
 def verify(candidate):
+    require_no_reserve_tree(candidate)
     receipt=json.loads(read(candidate,'receipt.json'))
     require(receipt['format']==1 and receipt['localCandidateOnly'] is True,'Not a candidate receipt')
     for url,item in receipt['runtime'].items():
+        require_public_path(url)
         require(inspect(safe(candidate/'runtime',url))==item,f'Runtime drift {url}')
     for digest,size in receipt['objects'].items():
         require(inspect(safe(candidate/'objects',digest))=={'size':size,'sha256':digest},f'Object drift {digest}')
     require({r['sha256'] for r in receipt['routes'].values()}==set(receipt['objects']),'Object set not reachable')
     for url,r in receipt['routes'].items():
+        require_public_path(url)
         require(Path(url).suffix.lower()==r['ext'] and r['ext'] in BINARY_EXT,f'Media URL extension: {url}')
     return receipt
 
@@ -82,6 +85,7 @@ def static(candidate,out,unpublished):
                     copy(site,url,safe(candidate/'runtime',url))
         for digest,url in sorted(primary.items()):
             copy(site,url,safe(candidate/'objects',digest))
+        require_no_reserve_tree(site)
         files={f.relative_to(site).as_posix():inspect(f) for f in sorted(site.rglob('*')) if f.is_file()}
         require({r['sha256'] for u,r in files.items() if Path(u).suffix.lower() in BINARY_EXT}==set(primary),
                 'Projected object set drift')

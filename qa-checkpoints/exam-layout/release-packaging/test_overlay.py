@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Verify independent local builds, exact old URL behavior and export exclusions."""
 import collections
+import hashlib
 import json
 from pathlib import Path
 import sys
@@ -21,7 +22,7 @@ assert (a/'runtime/.nojekyll').read_bytes()==b''
 assert (projected/'site/.nojekyll').read_bytes()==b''
 assert len(receipt['routes'])-len(receipt['objects'])==158
 assert receipt['mediaAvoidedBytes']==receipt['mediaLogicalBytes']-receipt['mediaPhysicalBytes']
-assert not any(set(url.split('/'))&{'archive','qa-checkpoints','fixture','source','authoring','reconcile'}
+assert not any(set(url.split('/'))&{'archive','qa-checkpoints','fixture','source','authoring','reconcile','question-reserve'}
                for url in (*receipt['routes'],*receipt['runtime']))
 exact=WS/'shift-media-migration/acceptance/rebuilt'
 for exam in EXAMS:
@@ -73,4 +74,21 @@ with tempfile.TemporaryDirectory(dir=HERE) as t:
     fails(lambda:static(a,t/'out',{'audio/preview/azure/en-US-JennyNeural.mp3'}),'cannot be remapped'
           if 'audio/preview/azure/en-US-JennyNeural.mp3' in receipt['routes'] else 'Unknown URL')
     assert not (t/'out').exists()
+    # An otherwise valid receipt cannot turn a private reserve item into a media route.
+    candidate=t/'private-route'
+    candidate.mkdir()
+    (candidate/'objects').mkdir()
+    body=b'<svg/>'
+    digest=hashlib.sha256(body).hexdigest()
+    (candidate/'objects'/digest).write_bytes(body)
+    item={'sha256':digest,'ext':'.svg','roles':['current-pack']}
+    doc=dict(format=1,localCandidateOnly=True,runtime={},objects={digest:len(body)},routes={'assets/Question-Reserve/media.svg':item})
+    (candidate/'receipt.json').write_text(json.dumps(doc))
+    fails(lambda:verify(candidate),'Question reserve is not a publication input')
+    doc['routes']={'assets/media.svg':item}
+    (candidate/'receipt.json').write_text(json.dumps(doc))
+    assert verify(candidate)==doc
+    (candidate/'runtime'/'question-reserve').mkdir(parents=True)
+    (candidate/'runtime'/'question-reserve'/'draft.txt').write_text('private')
+    fails(lambda:verify(candidate),'Question reserve is not a publication input')
 print('PASS: stable URL bytes / two-build deterministic receipt / static one-blob projection / protected and unknown old routes')

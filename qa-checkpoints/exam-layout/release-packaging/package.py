@@ -38,6 +38,16 @@ def safe(root, url):
     return p
 
 
+def require_public_path(url):
+    require(not any(part.casefold() == 'question-reserve' for part in str(url).split('/')),
+            f'Question reserve is not a publication input: {url}')
+
+
+def require_no_reserve_tree(root):
+    for path in root.rglob('*'):
+        require_public_path(path.relative_to(root).as_posix())
+
+
 def inspect(path):
     require(path.is_file() and not path.is_symlink(),f'Missing regular file: {path}')
     return {'sha256':sha(path),'size':path.stat().st_size}
@@ -152,6 +162,7 @@ def package(source,shell,compatible_app,out,version,old=None,policy=None,authori
         object_rows={}
         role_counts=defaultdict(int)
         def asset(url, item, src, role):
+            require_public_path(url)
             suffix=Path(url).suffix.lower()
             require(suffix in BINARY_EXT,f'Unknown media suffix {url}')
             digest=item['sha256']
@@ -191,6 +202,7 @@ def package(source,shell,compatible_app,out,version,old=None,policy=None,authori
                 copy(runtime,url,safe(built,url))
         for url,body in sorted(scripts.items()):
             emit(runtime,url,body)
+        require_no_reserve_tree(stage)
         textfiles={p.relative_to(runtime).as_posix():inspect(p) for p in sorted(runtime.rglob('*')) if p.is_file()}
         object_bytes=sum(object_rows.values())
         route_bytes=sum(object_rows[r['sha256']] for r in routes.values())

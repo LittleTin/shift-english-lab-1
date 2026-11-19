@@ -109,3 +109,14 @@ output is a valid allowlist.
 Eligible files to checkpoint: this README plus Python source only. Do not
 include `run-*/`, `static-*/`, `unpublished-test.json`, caches, browser fixture,
 authoring copy, CLI output, or any generated media.
+
+### Candidate reserve exclusion
+
+A complete replacement can live under `question-reserve/` in the work branch,
+never in the website or its route/receipt. Packaging builds only the explicit
+runtime allowlist and rejects reserve components in media paths, overlay
+receipts, and generated trees. The negative test supplies a matching binary
+hash under a reserve path and rejects it, then proves the same binary can be
+accepted under a normal path. It also rejects a stray unmanifested reserve
+directory. Never publish the source checkout; these file checks do not
+replace verifying that each replacement is active in the final runtime pack.
