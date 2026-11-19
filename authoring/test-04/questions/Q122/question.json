@@ -1,0 +1,52 @@
+{
+  "id": "t04-q122",
+  "testId": "test-04",
+  "number": 122,
+  "part": 5,
+  "groupId": null,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "daily",
+    "price-application"
+  ],
+  "prompt": "At the grocery co-op, the display price applies only to a full basket. Individual pears are priced by weight, so a shopper taking just two pears should ____.",
+  "promptZh": "合作社的展示價格只適用於整籃購買。單買梨子按重量計價，因此只拿兩顆梨子的顧客應 ____。",
+  "options": [
+    {
+      "id": "A",
+      "text": "pay the displayed price for one full basket",
+      "zh": "支付一整籃的展示價格",
+      "whyZh": "顧客只拿兩顆，不能套用整籃售價。"
+    },
+    {
+      "id": "B",
+      "text": "use the displayed price for each pear",
+      "zh": "把展示價格當成每顆梨子的售價",
+      "whyZh": "展示價格是整籃價，不是單顆定價。"
+    },
+    {
+      "id": "C",
+      "text": "divide the basket price by the number of pears it holds",
+      "zh": "以每籃梨子的顆數平分整籃價格",
+      "whyZh": "散裝梨子按重量，不是把籃裝價格按顆數攤分。"
+    },
+    {
+      "id": "D",
+      "text": "have the two pears weighed to determine the price",
+      "zh": "把那兩顆梨子秤重後計價",
+      "whyZh": "買的是兩顆散裝梨子，要按實際重量計價，無法套用整籃售價。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "買的是兩顆散裝梨子，要按實際重量計價，無法套用整籃售價。",
+  "evidence": "At the grocery co-op, the display price applies only to a full basket. Individual pears are priced by weight, so a shopper taking just two pears should have the two pears weighed to determine the price.",
+  "vocabulary": [
+    {
+      "term": "by weight",
+      "zh": "按重量",
+      "note": "以商品重量決定應付金額。"
+    }
+  ],
+  "revision": 1
+}

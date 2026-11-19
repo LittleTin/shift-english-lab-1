@@ -1,0 +1,52 @@
+{
+  "id": "t04-q110",
+  "testId": "test-04",
+  "part": 5,
+  "number": 110,
+  "revision": 1,
+  "groupId": null,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "work",
+    "sentence-completion"
+  ],
+  "prompt": "The calendar invitation lists the start time in Taipei. Before accepting it from abroad, check the ___ local time on your calendar.",
+  "promptZh": "行事曆邀請以台北時間顯示開始時間。在海外接受邀請前，請查看行事曆上___的當地時間。",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "consecutive",
+      "zh": "連續的",
+      "whyZh": "連續形容相接的時間或事件，與不同時區的同一時間點不符。"
+    },
+    {
+      "id": "B",
+      "text": "corresponding",
+      "zh": "相對應的",
+      "whyZh": "要找同一個開始時間換算到所在時區後的當地時間。"
+    },
+    {
+      "id": "C",
+      "text": "temporary",
+      "zh": "暫時的",
+      "whyZh": "句子要求時區換算，不是查看暫定時間。"
+    },
+    {
+      "id": "D",
+      "text": "unrelated",
+      "zh": "無關的",
+      "whyZh": "當地時間必須對應同一場活動，不是無關的時間。"
+    }
+  ],
+  "explanationZh": "要找同一個開始時間換算到所在時區後的當地時間。",
+  "evidence": "The calendar invitation lists the start time in Taipei. Before accepting it from abroad, check the corresponding local time on your calendar.",
+  "vocabulary": [
+    {
+      "term": "corresponding",
+      "zh": "相對應的",
+      "note": "此處指同一時間點在另一時區的表示。"
+    }
+  ]
+}

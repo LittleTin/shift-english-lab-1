@@ -1,0 +1,52 @@
+{
+  "id": "t04-q119",
+  "testId": "test-04",
+  "number": 119,
+  "part": 5,
+  "groupId": null,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "business",
+    "voice-and-time"
+  ],
+  "prompt": "Two identical fees appeared on the customer’s statement, but the billing clerk reversed one of them yesterday. The customer was told that the duplicate charge had ____.",
+  "promptZh": "客戶帳單出現兩筆相同費用，不過帳務人員昨天已沖回其中一筆。客戶收到通知，重複收取的費用已 ____。",
+  "options": [
+    {
+      "id": "A",
+      "text": "reversed",
+      "zh": "沖回；撤銷（過去分詞）",
+      "whyZh": "had reversed 是主動語態，但重複費用是被沖回的對象。"
+    },
+    {
+      "id": "B",
+      "text": "been reversing",
+      "zh": "一直在沖回",
+      "whyZh": "had been reversing 是主動進行，不能表達這筆費用已被沖回。"
+    },
+    {
+      "id": "C",
+      "text": "been reversed",
+      "zh": "被沖回",
+      "whyZh": "費用是動作承受者，且沖回發生在通知前，用過去完成式被動 had been reversed。"
+    },
+    {
+      "id": "D",
+      "text": "being reversed",
+      "zh": "正在被沖回",
+      "whyZh": "had 不能直接接 being reversed；而且第一句表示昨天已完成。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "費用是動作承受者，且沖回發生在通知前，用過去完成式被動 had been reversed。",
+  "evidence": "Two identical fees appeared on the customer’s statement, but the billing clerk reversed one of them yesterday. The customer was told that the duplicate charge had been reversed.",
+  "vocabulary": [
+    {
+      "term": "duplicate charge",
+      "zh": "重複收費",
+      "note": "指同一筆應收費用被收取超過一次。"
+    }
+  ],
+  "revision": 1
+}
