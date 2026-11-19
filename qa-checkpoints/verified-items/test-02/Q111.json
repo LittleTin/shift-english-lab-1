@@ -1,8 +1,55 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "Both X and Y is plural; are takes attending. is/was singular, be nonfinite here. zh conjunction, two roles and supplier audit preserved; 正在 as possible progressive gloss and explanations consistent.",
+  "checks": "Distinguish a documented commitment from evidence of performing it; match the verb phrase to implementation, not documentation or approval. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t02-q111-r2",
+    "testId": "test-02",
+    "number": 111,
+    "part": 5,
+    "groupId": null,
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "sentence-completion",
+      "context"
+    ],
+    "prompt": "The audit report already records who will replace the missing guard. To verify that the supplier has ____ its promise, ask for a photo of the installed guard rather than another copy of the report.",
+    "promptZh": "稽核報告已載明由誰補裝缺少的防護罩。若要查證供應商是否已____承諾，請索取防護罩裝妥後的照片，而不是再要一份報告。",
+    "options": [
+      {
+        "id": "A",
+        "text": "referred to",
+        "zh": "提到",
+        "whyZh": "照片用來查證實際完成的工作，不是供應商是否曾提及承諾。"
+      },
+      {
+        "id": "B",
+        "text": "backed out of",
+        "zh": "撤回",
+        "whyZh": "防護罩裝妥的照片可證明已補裝，不是撤回承諾的證據。"
+      },
+      {
+        "id": "C",
+        "text": "signed off on",
+        "zh": "核准",
+        "whyZh": "報告已記載誰要負責；照片並不是核准紀錄，而是補裝完成的證據。"
+      },
+      {
+        "id": "D",
+        "text": "followed through on",
+        "zh": "履行",
+        "whyZh": "照片能查證防護罩已補裝，顯示供應商履行承諾。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "照片能查證防護罩已補裝，顯示供應商履行承諾。",
+    "evidence": "The audit report already records who will replace the missing guard. To verify that the supplier has ____ its promise, ask for a photo of the installed guard rather than another copy of the report.",
+    "vocabulary": [],
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t02-q111",
     "testId": "test-02",
     "number": 111,
@@ -53,5 +100,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-02/Q111/verification.json"
 }

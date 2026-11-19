@@ -1,8 +1,55 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "carefully modifies manner of count; careful adjective, carefulness noun, care noun/verb. zh faithfully conveys 生管 and carefully count remaining stock.",
+  "checks": "Interpret electrical acceptance and a temporary label hold together: the boards are usable but must be kept out of today’s outgoing stock. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t02-q109-r2",
+    "testId": "test-02",
+    "number": 109,
+    "part": 5,
+    "groupId": null,
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "sentence-completion",
+      "context"
+    ],
+    "prompt": "The shipment includes twelve boards that passed the electrical test but still need new labels. The warehouse should ____ those boards until the new labels arrive, rather than load them with the boards going out today.",
+    "promptZh": "這批貨中有十二片電路板通過了電氣測試，但仍需要新標籤。在新標籤送達前，倉庫應先將這些電路板____，而不是和今天要出貨的電路板一起裝車。",
+    "options": [
+      {
+        "id": "A",
+        "text": "write off",
+        "zh": "報廢列損",
+        "whyZh": "電路板已通過測試，只是需要換標籤，因此不應將它們當作無法使用的損失。"
+      },
+      {
+        "id": "B",
+        "text": "send back",
+        "zh": "退回",
+        "whyZh": "公告要求不要裝上今天的車，但沒有要求把板子送回供應商。"
+      },
+      {
+        "id": "C",
+        "text": "set aside",
+        "zh": "另行留置",
+        "whyZh": "將板子暫放一旁，等新標籤送到，不混入今天的出貨。"
+      },
+      {
+        "id": "D",
+        "text": "hand over",
+        "zh": "交給他人",
+        "whyZh": "題目沒有指定接手人員；重點是暫時留置，不是移交。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "將板子暫放一旁，等新標籤送到，不混入今天的出貨。",
+    "evidence": "The shipment includes twelve boards that passed the electrical test but still need new labels. The warehouse should ____ those boards until the new labels arrive, rather than load them with the boards going out today.",
+    "vocabulary": [],
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t02-q109",
     "testId": "test-02",
     "number": 109,
@@ -53,5 +100,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-02/Q109/verification.json"
 }

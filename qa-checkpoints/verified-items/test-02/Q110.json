@@ -1,8 +1,55 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "because introduces the forecast as cause; despite/in spite of/because of cannot directly take heavy rain is forecast. zh preserves completed move indoors and forecast; broad Chinese translations of cause terms are distinguished by English rationale.",
+  "checks": "Infer the consequence of not having a volunteer redirect arrivals while distinguishing audiences who receive the corrected email from readers of printed flyers. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t02-q110-r2",
+    "testId": "test-02",
+    "number": 110,
+    "part": 5,
+    "groupId": null,
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "sentence-completion",
+      "context"
+    ],
+    "prompt": "The community center can still email a corrected venue notice, but its printed flyers have already gone out. Ask a volunteer to stay at the original venue and give anyone who arrives the new address; ____, visitors relying on the flyers may wait there without knowing where the workshop has moved.",
+    "promptZh": "社區中心還能寄電子郵件更正場地資訊，但紙本傳單已經發出。請安排一位志工留在原場地，將新地址告訴到場的人。____只看傳單的人可能會在那裡等候，卻不知道工作坊改到了哪裡。",
+    "options": [
+      {
+        "id": "A",
+        "text": "otherwise",
+        "zh": "否則",
+        "whyZh": "若沒安排志工在舊場地通知新地址，只看舊傳單的人可能會留在那裡等候，不知道活動已改到何處。"
+      },
+      {
+        "id": "B",
+        "text": "similarly",
+        "zh": "同樣地",
+        "whyZh": "後句不是類比另一項安排，而是說明沒有志工時可能發生的事。"
+      },
+      {
+        "id": "C",
+        "text": "for instance",
+        "zh": "例如",
+        "whyZh": "民眾留在原處等候並不是安排志工指引的一個例子。"
+      },
+      {
+        "id": "D",
+        "text": "nevertheless",
+        "zh": "儘管如此",
+        "whyZh": "警告的是無人轉達新地址時的後果，而不是有人轉達後仍不知道新地址。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "若沒安排志工在舊場地通知新地址，只看舊傳單的人可能會留在那裡等候，不知道活動已改到何處。",
+    "evidence": "The community center can still email a corrected venue notice, but its printed flyers have already gone out. Ask a volunteer to stay at the original venue and give anyone who arrives the new address; ____, visitors relying on the flyers may wait there without knowing where the workshop has moved.",
+    "vocabulary": [],
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t02-q110",
     "testId": "test-02",
     "number": 110,
@@ -53,5 +100,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-02/Q110/verification.json"
 }
