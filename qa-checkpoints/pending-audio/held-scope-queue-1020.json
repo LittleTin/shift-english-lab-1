@@ -1,0 +1,277 @@
+{
+  "pin": "c15f48fb6555c2e43a3fe5035bdb24c34804c6ef",
+  "scope": "QA planning only, not authorization for synthesis, not a pass projection",
+  "heldItems": 58,
+  "exactWorkUnits": 26,
+  "estimatedInitialWavRequests": 42,
+  "assumptions": "No retries, other Q053/Q054 and shared WAV byte-identical local recovery, Q011 formal repeat if no better independent evidence, old cues/stems retained only where already positively scoped. Actual synthesis only after approved F0 access; all drafts are held. This counts work units, not feasibility, time, or quota.",
+  "priority": "Q055 missing audio, exact singletons with preserved sibling content, minimal shared repairs, then measured advanced additions. Resolve voice and text scope before rendering.",
+  "units": [
+    {
+      "groupId": "t01-g027",
+      "questions": [
+        27
+      ],
+      "estimate": 1,
+      "guard": "qa-checkpoints/pending-audio/test-01/Q027-Q041-043/repair-guards.json",
+      "note": "Exact same words and practice only; formal retained."
+    },
+    {
+      "groupId": "t01-g035",
+      "questions": [
+        41,
+        42,
+        43
+      ],
+      "estimate": 1,
+      "guard": "qa-checkpoints/pending-audio/test-01/Q027-Q041-043/repair-guards.json",
+      "note": "Shared talk, keep existing exact cue/stems (Q043 independent exact alternative)."
+    },
+    {
+      "groupId": "t01-g037",
+      "questions": [
+        47,
+        48,
+        49
+      ],
+      "estimate": 1,
+      "guard": "qa-checkpoints/pending-audio/test-01/Q047-049/shared-repair-guard.json",
+      "note": "Shared talk, same original numbered stems if fully retained."
+    },
+    {
+      "groupId": "t01-g038",
+      "questions": [
+        50,
+        51,
+        52
+      ],
+      "estimate": 4,
+      "guard": "qa-checkpoints/pending-audio/test-01/Q050-052/condensed-tts-guard.json",
+      "note": "Advanced revised talk and three numbered stems."
+    },
+    {
+      "groupId": "t01-g039",
+      "questions": [
+        53,
+        54,
+        55
+      ],
+      "estimate": 1,
+      "guard": "qa-checkpoints/pending-audio/azure-f0-workbench/resume-test01-q055.plan.json",
+      "note": "Resume missing Q055 only if other three approved-candidate files still match exact evidence. Otherwise up to four."
+    },
+    {
+      "groupId": "t01-g040",
+      "questions": [
+        56,
+        57,
+        58
+      ],
+      "estimate": 1,
+      "guard": "qa-checkpoints/pending-audio/test-01/Q056-058/shared-repair-guard.json",
+      "note": "Shared talk; original numbered stems supported."
+    },
+    {
+      "groupId": "t01-g043",
+      "questions": [
+        65,
+        66,
+        67
+      ],
+      "estimate": 1,
+      "guard": "qa-checkpoints/pending-audio/test-01/Q065-067/inactive-sessions-draft.json",
+      "note": "Shared dialogue; target old 'unused sessions' only."
+    },
+    {
+      "groupId": "t01-g046",
+      "questions": [
+        74,
+        75,
+        76
+      ],
+      "estimate": 4,
+      "guard": "qa-checkpoints/pending-audio/test-01/Q074-076/advanced-tts-guard.json",
+      "note": "Advanced revised talk and three numbered stems."
+    },
+    {
+      "groupId": "t01-g053",
+      "questions": [
+        95,
+        96,
+        97
+      ],
+      "estimate": 1,
+      "guard": "qa-checkpoints/pending-audio/test-01/Q095-097/candidate-rewrite-path.json",
+      "note": "Shared talk; old numbered cue and stems positively checked."
+    },
+    {
+      "groupId": "t02-g007",
+      "questions": [
+        7
+      ],
+      "estimate": 1,
+      "guard": "qa-checkpoints/pending-audio/test-02/part-2/five-held-repair-manifest.json",
+      "note": "Exact original words, practice only."
+    },
+    {
+      "groupId": "t02-g008",
+      "questions": [
+        8
+      ],
+      "estimate": 2,
+      "guard": "qa-checkpoints/pending-audio/test-02/part-2/five-held-repair-manifest.json",
+      "note": "Both modes for actual spoken wording change."
+    },
+    {
+      "groupId": "t02-g009",
+      "questions": [
+        9
+      ],
+      "estimate": 2,
+      "guard": "qa-checkpoints/pending-audio/test-02/part-2/five-held-repair-manifest.json",
+      "note": "Both modes for actual spoken wording change."
+    },
+    {
+      "groupId": "t02-g027",
+      "questions": [
+        27
+      ],
+      "estimate": 2,
+      "guard": "qa-checkpoints/pending-audio/test-02/part-2/five-held-repair-manifest.json",
+      "note": "Both modes for actual spoken wording change."
+    },
+    {
+      "groupId": "t02-g031",
+      "questions": [
+        31
+      ],
+      "estimate": 2,
+      "guard": "qa-checkpoints/pending-audio/test-02/part-2/five-held-repair-manifest.json",
+      "note": "Both modes for actual spoken wording change."
+    },
+    {
+      "groupId": "t02-g035",
+      "questions": [
+        41,
+        42,
+        43
+      ],
+      "estimate": 1,
+      "guard": "qa-checkpoints/pending-audio/test-02/Q041-043/shared-repair-guard.json",
+      "note": "Shared packaging talk only."
+    },
+    {
+      "groupId": "t02-g037",
+      "questions": [
+        47,
+        48,
+        49
+      ],
+      "estimate": 1,
+      "guard": "qa-checkpoints/pending-audio/test-02/Q047-049/shared-repair-guard.json",
+      "note": "Shared access dialogue; keep exact unaffected stems if corroborated."
+    },
+    {
+      "groupId": "t02-g045",
+      "questions": [
+        71,
+        72,
+        73
+      ],
+      "estimate": 4,
+      "guard": "qa-checkpoints/pending-audio/test-02/Q071-073/condensed-training-advanced-draft.json",
+      "note": "Advanced talk and three stems; alternative previous packaging candidate stays preserved, not mixed."
+    },
+    {
+      "groupId": "t02-g048",
+      "questions": [
+        80,
+        81,
+        82
+      ],
+      "estimate": 1,
+      "guard": "qa-checkpoints/pending-audio/test-02/Q080-085/q080-085-shared-repair-guards.json",
+      "note": "Shared demo talk only."
+    },
+    {
+      "groupId": "t02-g049",
+      "questions": [
+        83,
+        84,
+        85
+      ],
+      "estimate": 1,
+      "guard": "qa-checkpoints/pending-audio/test-02/Q080-085/q080-085-shared-repair-guards.json",
+      "note": "Shared material pickup talk; preserve Q085 graphic and chart pause."
+    },
+    {
+      "groupId": "t03-g002",
+      "questions": [
+        2
+      ],
+      "estimate": 1,
+      "guard": "qa-checkpoints/pending-audio/test-03/practice-only-output-guards.json",
+      "note": "Exact same words, practice, preserve formal and image."
+    },
+    {
+      "groupId": "t03-g011",
+      "questions": [
+        11
+      ],
+      "estimate": 1,
+      "guard": "qa-checkpoints/pending-audio/test-03/practice-only-output-guards.json",
+      "note": "Existing practice retained; formal retry only if needed (same words and voice, clarify time). Reported third engine did not resolve formal time; not proof of defective speech."
+    },
+    {
+      "groupId": "t03-g017",
+      "questions": [
+        17
+      ],
+      "estimate": 1,
+      "guard": "qa-checkpoints/pending-audio/test-03/practice-only-output-guards.json",
+      "note": "Exact practice lines with natural brief pause; formal retained."
+    },
+    {
+      "groupId": "t03-g032",
+      "questions": [
+        32,
+        33,
+        34
+      ],
+      "estimate": 1,
+      "guard": "qa-checkpoints/pending-audio/test-03/original-g032-g040-compact-candidates.json",
+      "note": "Shared talk, same numbered cue/stems if retained and verified."
+    },
+    {
+      "groupId": "t03-g040",
+      "questions": [
+        56,
+        57,
+        58
+      ],
+      "estimate": 1,
+      "guard": "qa-checkpoints/pending-audio/test-03/original-g032-g040-compact-candidates.json",
+      "note": "Shared talk, retain exact graphic and confirmed numbered stems."
+    },
+    {
+      "groupId": "t03-g045",
+      "questions": [
+        71,
+        72,
+        73
+      ],
+      "estimate": 4,
+      "guard": "qa-checkpoints/pending-audio/test-03/Q071-073/compact-advanced-draft.json",
+      "note": "Advanced talk and three numbered stems; exact paced fit TBD."
+    },
+    {
+      "groupId": "t03-g049",
+      "questions": [
+        84
+      ],
+      "estimate": 1,
+      "guard": "qa-checkpoints/pending-audio/test-03/Q084/formal-stem-only-draft.json",
+      "note": "Only Q084 numbered stem; preserve Q083/085, shared audio and their accepted group metadata."
+    }
+  ]
+}
