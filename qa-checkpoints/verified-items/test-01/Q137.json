@@ -1,0 +1,67 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "Only the unchanged original ticket numbers coherently add to the notice that tickets remain accessible and need not be resubmitted. The other sentences contradict the notice or change the subject. Both language versions and all reasons checked.",
+  "activeQuestion": {
+    "id": "t01-q137",
+    "testId": "test-01",
+    "number": 137,
+    "part": 6,
+    "groupId": "t01-r-p6-02",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "reading-comprehension"
+    ],
+    "prompt": "Choose the best word or sentence for blank [137].",
+    "promptZh": "請選出最適合填入空格 [137] 的字詞或句子。",
+    "options": [
+      {
+        "text": "The move has been cancelled because no customers use the portal.",
+        "zh": "因為沒有客戶使用入口網站，移轉已取消。",
+        "whyZh": "全文提供確定移轉日期及準備事項，並未取消。",
+        "id": "A"
+      },
+      {
+        "text": "Every customer must register a different company name.",
+        "zh": "每位客戶都必須登記另一個公司名稱。",
+        "whyZh": "前文談帳號及服務單移轉，沒有要求更改公司名稱。",
+        "id": "B"
+      },
+      {
+        "text": "The original ticket numbers will also stay the same.",
+        "zh": "原有服務單編號也會維持不變。",
+        "whyZh": "接續舊申請保留且不用重開單，補充編號沿用的資訊。",
+        "id": "C"
+      },
+      {
+        "text": "All unresolved requests will be permanently deleted.",
+        "zh": "所有未解決的申請都會永久刪除。",
+        "whyZh": "與舊申請仍可在新網站查看的說明矛盾。",
+        "id": "D"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "接續舊申請保留且不用重開單，補充編號沿用的資訊。",
+    "evidence": "There is no need to open a second ticket for the same issue.",
+    "vocabulary": [
+      {
+        "term": "support ticket",
+        "zh": "服務單",
+        "note": "記錄問題與處理進度的案件。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p6-02",
+    "testId": "test-01",
+    "part": 6,
+    "title": "Customer portal migration",
+    "titleZh": "客戶入口網站移轉",
+    "topic": "technology",
+    "passage": "Dear customers,\n\nOur support portal will move to a new address on June 8. Your existing username will remain valid; [135] ____, you will need to create a new password at your first login. The reset link will be sent to the email address currently associated with your account.\n\nRequests submitted before the move will remain [136] ____ in the new portal. There is no need to open a second ticket for the same issue. [137] ____\n\nTo help the transition run [138] ____, please verify your contact email by June 5. We will never ask you to send your password by email.\n\nCustomer Support",
+    "passageZh": "親愛的客戶：\n\n我們的支援入口網站將在六月八日移到新網址。原有使用者名稱仍然有效；[135] ____，第一次登入時必須建立新密碼。重設連結會寄至目前與帳號關聯的電子郵件地址。\n\n移轉前提交的服務單在新入口網站仍 [136] ____。同一問題不必再開第二張服務單。[137] ____\n\n為了讓移轉 [138] ____ 進行，請最遲於六月五日確認你的聯絡電子郵件。我們絕不會要求你用電子郵件寄送密碼。\n\n客戶支援團隊"
+  }
+}
