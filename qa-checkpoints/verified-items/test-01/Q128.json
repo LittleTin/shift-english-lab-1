@@ -1,8 +1,59 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "‘Need assistance changing’ takes the mass noun for help. ‘Assistant’ would require a determiner and name a person; ‘assisted’ and ‘assist’ do not fill the noun slot. The itinerary, travel desk and all zh-TW options/rationales checked.",
+  "checks": "Infer that the partial refund has already occurred but has not updated the team's morning passenger roster. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t01-q128-r2",
+    "testId": "test-01",
+    "number": 128,
+    "part": 5,
+    "groupId": null,
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "grammar"
+    ],
+    "prompt": "The team’s group booking includes five seat reservations for the morning train. Carla will now travel on her own ticket that evening. The rail operator refunded her unused seat to the team’s account, but the seat list we share with the team is not updated automatically. Before distributing the list to the morning travelers, please ____ Carla’s entry.",
+    "promptZh": "團隊在早班車訂了五個座位。Carla 現在會在晚上持個人車票搭車。鐵路公司已將她未使用座位的費用退回團隊帳戶，但團隊共享的座位名單不會自動更新。將座位名單發給搭早班車的人之前，請先____ Carla 的項目。",
+    "options": [
+      {
+        "id": "A",
+        "text": "delete",
+        "zh": "刪除",
+        "whyZh": "Carla 已改搭晚班車，退款也已處理，但座位名單還沒更新，因此必須刪除她在早班車名單上的項目。"
+      },
+      {
+        "id": "B",
+        "text": "restore",
+        "zh": "復原",
+        "whyZh": "目前名單不會自動更新，所以不必復原本來就不該留在早班車名單中的項目。"
+      },
+      {
+        "id": "C",
+        "text": "duplicate",
+        "zh": "複製",
+        "whyZh": "Carla 不搭早班車，複製她的項目只會多出錯誤紀錄。"
+      },
+      {
+        "id": "D",
+        "text": "retain",
+        "zh": "保留",
+        "whyZh": "她會在晚上使用個人車票，保留早班車名單上的項目並不符合實際搭車安排。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "Carla 已改搭晚班車，退款也已處理，但座位名單還沒更新，因此必須刪除她在早班車名單上的項目。",
+    "evidence": "The team’s group booking includes five seat reservations for the morning train. Carla will now travel on her own ticket that evening. The rail operator refunded her unused seat to the team’s account, but the seat list we share with the team is not updated automatically. Before distributing the list to the morning travelers, please ____ Carla’s entry.",
+    "vocabulary": [
+      {
+        "term": "delete",
+        "zh": "刪除"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t01-q128",
     "testId": "test-01",
     "number": 128,
@@ -53,5 +104,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-01/Q128/verification.json"
 }

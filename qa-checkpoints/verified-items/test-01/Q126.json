@@ -1,8 +1,59 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "‘Within walking distance of’ is the correct fixed expression; only the noun ‘distance’ heads the phrase. The adverb, adjective and participle alternatives do not fit. All zh-TW glosses and explanations checked.",
+  "checks": "Distinguish a traveler-specific restriction from the fact that the normal route remains open to pedestrians generally. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t01-q126-r2",
+    "testId": "test-01",
+    "number": 126,
+    "part": 5,
+    "groupId": null,
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "grammar"
+    ],
+    "prompt": "From the station, the usual route to the grocery store crosses a footbridge. The repair crew left one lane open to pedestrians, but anyone pulling a shopping trolley must use the crossing by the library. A shopper with a trolley should therefore ____ the footbridge even when other people are crossing it.",
+    "promptZh": "從車站前往雜貨店通常會經過一座人行天橋。維修人員留了一條通道供行人通行，但拖購物車的人必須走圖書館旁的行人穿越道。因此，即使看到其他人在過橋，拖購物車的顧客也應____這座天橋。",
+    "options": [
+      {
+        "id": "A",
+        "text": "approach",
+        "zh": "走向",
+        "whyZh": "顧客拖著購物車，不適用一般行人的過橋路線；應改往圖書館旁的穿越道。"
+      },
+      {
+        "id": "B",
+        "text": "wait at",
+        "zh": "在……等候",
+        "whyZh": "通道開放並不解除購物車限制；等其他人走完也不能改走天橋。"
+      },
+      {
+        "id": "C",
+        "text": "cross",
+        "zh": "走過",
+        "whyZh": "雖然一般行人可使用開放的通道，拖購物車的人仍不能走這座天橋。"
+      },
+      {
+        "id": "D",
+        "text": "bypass",
+        "zh": "繞開",
+        "whyZh": "有開放通道不等於拖購物車的人也能使用；這類顧客必須走圖書館旁的行人穿越道，因此須繞開天橋。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "有開放通道不等於拖購物車的人也能使用；這類顧客必須走圖書館旁的行人穿越道，因此須繞開天橋。",
+    "evidence": "From the station, the usual route to the grocery store crosses a footbridge. The repair crew left one lane open to pedestrians, but anyone pulling a shopping trolley must use the crossing by the library. A shopper with a trolley should therefore ____ the footbridge even when other people are crossing it.",
+    "vocabulary": [
+      {
+        "term": "bypass",
+        "zh": "繞開"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t01-q126",
     "testId": "test-01",
     "number": 126,
@@ -53,5 +104,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-01/Q126/verification.json"
 }

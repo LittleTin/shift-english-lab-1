@@ -1,8 +1,59 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "Only adjective ‘accurate’ is the intended complement of ‘was’; the adverb and nouns do not fit. Clarified that accurate means close to the actual voltage and that two matching measurements alone do not establish accuracy. Corrected the zh-TW cloze to fit the gloss; all choices checked.",
+  "checks": "Select the result applicable after the repair; distinguish two agreeing measurements from deriving one instrument's reading from the other. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t01-q129-r2",
+    "testId": "test-01",
+    "number": 129,
+    "part": 5,
+    "groupId": null,
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "grammar"
+    ],
+    "prompt": "During the first check the meter showed 4.8 volts while the reference instrument showed 5.0. After a loose connection was tightened, both instruments showed 5.0 volts. The technician concluded that the revised meter reading was ____ the reference reading.",
+    "promptZh": "第一次檢查時，電表顯示 4.8 伏特，參考儀器則顯示 5.0 伏特。接頭鎖緊後，兩台儀器都顯示 5.0 伏特。技術員據此認為，電表的新讀值____參考儀器的讀值。",
+    "options": [
+      {
+        "id": "A",
+        "text": "based on",
+        "zh": "以……為依據",
+        "whyZh": "讀值是由兩台儀器分別量得；沒有說電表的新讀值是根據參考儀器的數字推算出來的。"
+      },
+      {
+        "id": "B",
+        "text": "consistent with",
+        "zh": "與……一致",
+        "whyZh": "題目比較處理接頭後的讀值，此時兩台儀器都為 5.0 伏特，故讀值一致。"
+      },
+      {
+        "id": "C",
+        "text": "independent of",
+        "zh": "不受……影響",
+        "whyZh": "兩台儀器讀值相同，能判斷的是一致；不能由這一次觀察推論兩個讀值彼此絕無影響。"
+      },
+      {
+        "id": "D",
+        "text": "exclusive of",
+        "zh": "不含",
+        "whyZh": "exclusive of 用來說某個總數或範圍排除了某部分，不能用於說明兩台儀器在同一情況量得相同數字。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "題目比較處理接頭後的讀值，此時兩台儀器都為 5.0 伏特，故讀值一致。",
+    "evidence": "During the first check the meter showed 4.8 volts while the reference instrument showed 5.0. After a loose connection was tightened, both instruments showed 5.0 volts. The technician concluded that the revised meter reading was ____ the reference reading.",
+    "vocabulary": [
+      {
+        "term": "consistent with",
+        "zh": "與……一致"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t01-q129",
     "testId": "test-01",
     "number": 129,
@@ -53,5 +104,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-01/Q129/verification.json"
 }

@@ -1,8 +1,59 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "‘Valid for any departure’ uniquely describes which services a ticket covers, not a location (at), start (from), or deadline (by). The Chinese stem preserves the purchase channel, selected date and every departure; all glosses and reasons were checked.",
+  "checks": "Distinguish time flexibility from passenger identity and from refundability of the same reservation. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t01-q130-r2",
+    "testId": "test-01",
+    "number": 130,
+    "part": 5,
+    "groupId": null,
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "grammar"
+    ],
+    "prompt": "Leah can move her ferry reservation to a later departure, but the replacement ticket will still carry her name. The booking office will not substitute another passenger's name, so the ticket is not ____ even though its departure time can change.",
+    "promptZh": "Leah 可把渡輪訂位改到較晚的班次，但換發的票仍會印她的姓名。訂位處不會換成另一名乘客的姓名，所以即使可以改班次，這張票也不能____。",
+    "options": [
+      {
+        "id": "A",
+        "text": "refundable",
+        "zh": "退款",
+        "whyZh": "文中並未說可否退款；改班次與乘客姓名的限制無法證明退票政策。"
+      },
+      {
+        "id": "B",
+        "text": "replaceable",
+        "zh": "換發",
+        "whyZh": "改搭較晚班次就會換發船票，文中明說可更換票券，但姓名仍是 Leah。"
+      },
+      {
+        "id": "C",
+        "text": "adjustable",
+        "zh": "調整",
+        "whyZh": "文中允許調整班次，限制的是乘客身分，不能據此說票的內容完全不能調整。"
+      },
+      {
+        "id": "D",
+        "text": "transferable",
+        "zh": "轉讓",
+        "whyZh": "換發票仍須是 Leah 的姓名，不能換成另一名旅客；可改班次不等於可轉讓給他人。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "換發票仍須是 Leah 的姓名，不能換成另一名旅客；可改班次不等於可轉讓給他人。",
+    "evidence": "Leah can move her ferry reservation to a later departure, but the replacement ticket will still carry her name. The booking office will not substitute another passenger's name, so the ticket is not ____ even though its departure time can change.",
+    "vocabulary": [
+      {
+        "term": "transferable",
+        "zh": "轉讓"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t01-q130",
     "testId": "test-01",
     "number": 130,
@@ -53,5 +104,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-01/Q130/verification.json"
 }

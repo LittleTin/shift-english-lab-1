@@ -1,8 +1,59 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "The adjective ‘additional’ modifies ‘time’. The verb, noun, and adverb alternatives cannot occupy that role in this sentence. Corrected the Chinese rationale to distinguish making extra time available from increasing the required duration; the stem and all glosses match.",
+  "checks": "Distinguish an available result from a final conclusion by using the independent verification timeline and approval boundary. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t01-q125-r2",
+    "testId": "test-01",
+    "number": 125,
+    "part": 5,
+    "groupId": null,
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "grammar"
+    ],
+    "prompt": "The engineers can present the first set of measurements on Tuesday, but a second lab will not confirm them until Friday. Tuesday's presentation should therefore describe the findings as ____, rather than asking management to approve the design on their basis.",
+    "promptZh": "工程師可以在週二簡報第一批測量結果，但第二間實驗室要到週五才會確認。週二的簡報因此應將結果標為____，而不是請主管根據這些結果核准設計。",
+    "options": [
+      {
+        "id": "A",
+        "text": "conclusive",
+        "zh": "已有定論",
+        "whyZh": "另一間實驗室尚未確認，不能把初步結果視為定論。"
+      },
+      {
+        "id": "B",
+        "text": "provisional",
+        "zh": "暫定",
+        "whyZh": "週二已有一批結果可簡報，但仍待週五由第二間實驗室確認，因此只能視為暫定資料。"
+      },
+      {
+        "id": "C",
+        "text": "redundant",
+        "zh": "多餘",
+        "whyZh": "這是第一批可用結果；尚待第二間實驗室確認，不代表它是重複或多餘的。"
+      },
+      {
+        "id": "D",
+        "text": "contradictory",
+        "zh": "彼此矛盾",
+        "whyZh": "文中並未提到已有一組相反結果，只說另一間實驗室尚未確認。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "週二已有一批結果可簡報，但仍待週五由第二間實驗室確認，因此只能視為暫定資料。",
+    "evidence": "The engineers can present the first set of measurements on Tuesday, but a second lab will not confirm them until Friday. Tuesday's presentation should therefore describe the findings as ____, rather than asking management to approve the design on their basis.",
+    "vocabulary": [
+      {
+        "term": "provisional",
+        "zh": "暫定"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t01-q125",
     "testId": "test-01",
     "number": 125,
@@ -53,5 +104,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-01/Q125/verification.json"
 }
