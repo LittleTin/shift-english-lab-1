@@ -1,0 +1,67 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "Only ‘however’ signals that the existing username stays valid while a new password is required. The other choices signal cause, parallelism or an alternative consequence. The bilingual passage, June 8 move, login and reasons were checked.",
+  "activeQuestion": {
+    "id": "t01-q135",
+    "testId": "test-01",
+    "number": 135,
+    "part": 6,
+    "groupId": "t01-r-p6-02",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "reading-comprehension"
+    ],
+    "prompt": "Choose the best word or sentence for blank [135].",
+    "promptZh": "請選出最適合填入空格 [135] 的字詞或句子。",
+    "options": [
+      {
+        "text": "therefore",
+        "zh": "因此",
+        "whyZh": "使用者名稱仍有效不是必須改密碼的因果理由。",
+        "id": "A"
+      },
+      {
+        "text": "similarly",
+        "zh": "同樣地",
+        "whyZh": "前後一項維持、一項變更，並非同類結果。",
+        "id": "B"
+      },
+      {
+        "text": "however",
+        "zh": "然而",
+        "whyZh": "帳號名稱不變但密碼需重設，however 表示這項轉折。",
+        "id": "C"
+      },
+      {
+        "text": "otherwise",
+        "zh": "否則",
+        "whyZh": "前句不是必須遵守的條件，otherwise 不合此轉折。",
+        "id": "D"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "帳號名稱不變但密碼需重設，however 表示這項轉折。",
+    "evidence": "Your existing username will remain valid ... you will need to create a new password",
+    "vocabulary": [
+      {
+        "term": "support ticket",
+        "zh": "服務單",
+        "note": "記錄問題與處理進度的案件。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p6-02",
+    "testId": "test-01",
+    "part": 6,
+    "title": "Customer portal migration",
+    "titleZh": "客戶入口網站移轉",
+    "topic": "technology",
+    "passage": "Dear customers,\n\nOur support portal will move to a new address on June 8. Your existing username will remain valid; [135] ____, you will need to create a new password at your first login. The reset link will be sent to the email address currently associated with your account.\n\nRequests submitted before the move will remain [136] ____ in the new portal. There is no need to open a second ticket for the same issue. [137] ____\n\nTo help the transition run [138] ____, please verify your contact email by June 5. We will never ask you to send your password by email.\n\nCustomer Support",
+    "passageZh": "親愛的客戶：\n\n我們的支援入口網站將在六月八日移到新網址。原有使用者名稱仍然有效；[135] ____，第一次登入時必須建立新密碼。重設連結會寄至目前與帳號關聯的電子郵件地址。\n\n移轉前提交的服務單在新入口網站仍 [136] ____。同一問題不必再開第二張服務單。[137] ____\n\n為了讓移轉 [138] ____ 進行，請最遲於六月五日確認你的聯絡電子郵件。我們絕不會要求你用電子郵件寄送密碼。\n\n客戶支援團隊"
+  }
+}
