@@ -1,0 +1,54 @@
+{
+  "id": "t04-q007",
+  "testId": "test-04",
+  "number": 7,
+  "part": 2,
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽錄音，選出最適當的回應。",
+  "spokenPrompt": "Do we have clearance to send the first batch to the paint shop this afternoon?",
+  "spokenPromptZh": "第一批零件獲准在今天下午送去噴漆區了嗎？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The paint booth is free after lunch.",
+      "zh": "噴漆室午餐後就空了。",
+      "whyZh": "噴漆室有空不代表第一批零件已獲准送去噴漆。"
+    },
+    {
+      "id": "B",
+      "text": "Only if the inspector signs off before two.",
+      "zh": "只有檢驗員在兩點前簽核才可以。",
+      "whyZh": "說明下午送漆的核准條件：檢驗員要在兩點前簽核。"
+    },
+    {
+      "id": "C",
+      "text": "The last job came back from the paint shop this morning.",
+      "zh": "上一筆工單的零件今天早上已從噴漆區送回來了。",
+      "whyZh": "上一筆工單的進度，不能說明這一批是否獲准送漆。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "說明下午送漆的核准條件：檢驗員要在兩點前簽核。",
+  "vocabulary": [
+    {
+      "term": "clearance",
+      "zh": "核准",
+      "note": "指允許第一批零件送去噴漆的正式許可。"
+    },
+    {
+      "term": "signs off",
+      "zh": "簽核",
+      "note": "表示檢驗員完成確認並給予核准。"
+    }
+  ],
+  "evidence": "Do we have clearance to send the first batch to the paint shop this afternoon? / Only if the inspector signs off before two.",
+  "tags": [
+    "manufacturing",
+    "workplace",
+    "question_response"
+  ],
+  "revision": 1,
+  "groupId": "t04-g007"
+}

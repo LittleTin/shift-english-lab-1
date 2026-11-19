@@ -1,0 +1,54 @@
+{
+  "id": "t04-q025",
+  "testId": "test-04",
+  "number": 25,
+  "part": 2,
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽錄音，選出最適當的回應。",
+  "spokenPrompt": "Should I send the stock count now? The afternoon deliveries aren't in the system yet.",
+  "spokenPromptZh": "我現在要送出庫存盤點數字嗎？下午的到貨還沒有登錄到系統。",
+  "options": [
+    {
+      "id": "A",
+      "text": "The warehouse team already counted this morning's stock.",
+      "zh": "倉庫團隊已經盤點過早上的庫存。",
+      "whyZh": "不能解決下午到貨尚未納入數字的問題。"
+    },
+    {
+      "id": "B",
+      "text": "Send it at closing, after those deliveries are posted.",
+      "zh": "等那幾筆到貨登錄後，今天結束作業時再送。",
+      "whyZh": "需要等這幾筆到貨補上，並等到當日作業結束才送出最後的數字。"
+    },
+    {
+      "id": "C",
+      "text": "The report goes to the inventory manager.",
+      "zh": "那份報表要交給庫存管理主管。",
+      "whyZh": "回答資料送交的對象，沒回答目前可不可以送。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "需要等這幾筆到貨補上，並等到當日作業結束才送出最後的數字。",
+  "vocabulary": [
+    {
+      "term": "stock count",
+      "zh": "庫存盤點數字",
+      "note": "指盤點後統計的庫存數量。"
+    },
+    {
+      "term": "posted",
+      "zh": "已登錄",
+      "note": "此處指到貨資料已經入帳或輸入庫存系統。"
+    }
+  ],
+  "evidence": "Should I send the stock count now? The afternoon deliveries aren't in the system yet. / Send it at closing, after those deliveries are posted.",
+  "tags": [
+    "manufacturing",
+    "workplace",
+    "question_response"
+  ],
+  "revision": 1,
+  "groupId": "t04-g025"
+}

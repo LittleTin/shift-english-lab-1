@@ -1,0 +1,54 @@
+{
+  "id": "t04-q018",
+  "testId": "test-04",
+  "number": 18,
+  "part": 2,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽錄音，選出最適當的回應。",
+  "spokenPrompt": "My pass for the swimming pool is on my old phone, but the phone won't turn on.",
+  "spokenPromptZh": "我的游泳池通行證在舊手機裡，但那支手機開不了機。",
+  "options": [
+    {
+      "id": "A",
+      "text": "Your pass is good through the end of the month.",
+      "zh": "你的通行證月底前都有效。",
+      "whyZh": "有效期限不是問題；原本的手機無法出示通行證。"
+    },
+    {
+      "id": "B",
+      "text": "The front desk can look you up by name.",
+      "zh": "櫃台可以用姓名查你的資料。",
+      "whyZh": "從陳述推知對方需要入場；依姓名查詢可不靠舊手機。"
+    },
+    {
+      "id": "C",
+      "text": "The phone charging station is past the entry gate.",
+      "zh": "手機充電站在入口閘門裡面。",
+      "whyZh": "位置在閘門內，並未解決目前無法出示通行證的入場問題，也不能假定手機只是沒電。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "從陳述推知對方需要入場；依姓名查詢可不靠舊手機。",
+  "vocabulary": [
+    {
+      "term": "turn on",
+      "zh": "開機",
+      "note": "指舊手機無法啟動，因而不能顯示通行證。"
+    },
+    {
+      "term": "look you up",
+      "zh": "查到你的資料",
+      "note": "櫃台可以按姓名搜尋通行資料，不需要拿舊手機。"
+    }
+  ],
+  "evidence": "My pass for the swimming pool is on my old phone, but the phone won't turn on. / The front desk can look you up by name.",
+  "tags": [
+    "daily",
+    "daily",
+    "question_response"
+  ],
+  "revision": 2,
+  "groupId": "t04-g018"
+}

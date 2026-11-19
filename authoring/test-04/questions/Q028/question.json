@@ -1,0 +1,54 @@
+{
+  "id": "t04-q028",
+  "testId": "test-04",
+  "number": 28,
+  "part": 2,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽錄音，選出最適當的回應。",
+  "spokenPrompt": "The bus is running, but the stop outside the bakery is closed for roadwork.",
+  "spokenPromptZh": "公車還有開，但麵包店外的站牌因道路施工暫停使用。",
+  "options": [
+    {
+      "id": "A",
+      "text": "They finished repaving the bakery's parking lot.",
+      "zh": "麵包店的停車場已經重新鋪好了。",
+      "whyZh": "停車場修好不表示外面的公車站已恢復使用。"
+    },
+    {
+      "id": "B",
+      "text": "The last bus leaves downtown at eleven.",
+      "zh": "末班車十一點從市中心發車。",
+      "whyZh": "末班車的時間沒有解決目前這一站不能搭車的問題。"
+    },
+    {
+      "id": "C",
+      "text": "We can catch the same bus one block farther down.",
+      "zh": "再往前一個街區就能搭同一路公車。",
+      "whyZh": "從說明推知需要改到別站搭車；這個回應提供同一路線的替代站點。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "從說明推知需要改到別站搭車；這個回應提供同一路線的替代站點。",
+  "vocabulary": [
+    {
+      "term": "roadwork",
+      "zh": "道路施工",
+      "note": "施工使麵包店外的站點暫停使用。"
+    },
+    {
+      "term": "one block farther down",
+      "zh": "沿路再往前一個街區",
+      "note": "表示替代站點離原本的站點不遠。"
+    }
+  ],
+  "evidence": "The bus is running, but the stop outside the bakery is closed for roadwork. / We can catch the same bus one block farther down.",
+  "tags": [
+    "daily",
+    "daily",
+    "question_response"
+  ],
+  "revision": 1,
+  "groupId": "t04-g028"
+}
