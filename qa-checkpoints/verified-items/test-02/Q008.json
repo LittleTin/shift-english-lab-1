@@ -1,0 +1,193 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "English and Traditional Chinese stem and ABC options align. Key uniquely responsive, unchanged.",
+    "audio": "Whole formal Whisper exact; practice resolves design lead with independent Vosk whole and focused interval results, while whole Whisper says lid. Both modes provide three distinct options and matching roles.",
+    "retained": "The preexisting numbered cue exact source and timestamps retained, old bank and original item/group/frame objects retained in history.",
+    "association": "Distinct formal and practice complete two-speaker clips and 3 role bindings validated; no browser or production release claim.",
+    "offlineSpeechEvidence": {
+      "formal": {
+        "renderSha256": "493834b240309dc40a10e735d4e4a50e8f9c0a87a10f8a6cba1a878f2aeb5d83",
+        "whisper": {
+          "sha256": "8f572e7ba0dc6dad5f41258a4209ce8764cb91ecbc492fa901476a41138c27fb",
+          "text": "Who can approve this revised drawing?\n A. It was revised yesterday.\n B. Three printed copies.\n C. The design lead can approve it."
+        },
+        "independentVosk": {
+          "sha256": "462407a44118ad10515c5e238a771cb5f53f09815b50f6ff059e0628a4b5407c",
+          "text": "who can approve this revised drawing a it was revised yesterday\nbe three printed copies\nsee the design leed can approve it"
+        }
+      },
+      "practice": {
+        "renderSha256": "9c0a74ea4437d704743e8c58bc5ad0f39dd0c7e78d5dcc8bd34eb185dc3452dc",
+        "whisper": {
+          "sha256": "4f7591f62dbffa77341b2b8b567c567f012c7d45814747d2dce04cf47061781a",
+          "text": "Who can approve this revised drawing?\n A. It was revised yesterday.\n B. Three printed copies.\n C. The design lid can approve it."
+        },
+        "independentVosk": {
+          "sha256": "b6a718a376a52109615b0f93530f10f860b805d3fe4e8649e5c6958a1ee4a61a",
+          "text": "who can approve this revised the drawing a it was revised yesterday\nthe three printed copies\nsee the design leed can approve it"
+        }
+      },
+      "vosk-small.txt": {
+        "sha256": "01abcc9c957b64d6638ca830cf6dd8be4cbbef10f6a078b3317aad27dfaedd77"
+      }
+    }
+  },
+  "activeQuestion": {
+    "id": "t02-q008-r2",
+    "testId": "test-02",
+    "number": 8,
+    "part": 2,
+    "groupId": "t02-g008-r2",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "It was revised yesterday.",
+        "zh": "昨天修訂的。",
+        "whyZh": "回答修訂時間，沒有說明核准人。"
+      },
+      {
+        "id": "B",
+        "text": "Three printed copies.",
+        "zh": "三份印刷本。",
+        "whyZh": "份數無法回答誰能核准。"
+      },
+      {
+        "id": "C",
+        "text": "The design lead can approve it.",
+        "zh": "設計負責人可以核准。",
+        "whyZh": "問題問誰有核准權，設計負責人正是能核准這張圖面的人。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "問題問誰有核准權，設計負責人正是能核准這張圖面的人。",
+    "evidence": "Who can approve this revised drawing?",
+    "vocabulary": [
+      {
+        "term": "revised drawing",
+        "zh": "修訂圖面",
+        "note": "revised 表示已修改；核准權限依本題角色分工而定。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t02-q008",
+    "testId": "test-02",
+    "number": 8,
+    "part": 2,
+    "groupId": "t02-g008",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "It was revised yesterday.",
+        "zh": "昨天修訂的。",
+        "whyZh": "回答修訂時間，沒有說明核准人。"
+      },
+      {
+        "id": "B",
+        "text": "Three printed copies.",
+        "zh": "三份印刷本。",
+        "whyZh": "份數無法回答誰能核准。"
+      },
+      {
+        "id": "C",
+        "text": "Ask Mei, the design lead.",
+        "zh": "問設計負責人 Mei。",
+        "whyZh": "Who 問有權核准的人，design lead 指明應找誰。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "Who 問有權核准的人，design lead 指明應找誰。",
+    "evidence": "Who can approve this revised drawing?",
+    "vocabulary": [
+      {
+        "term": "revised drawing",
+        "zh": "修訂圖面",
+        "note": "revised 表示已修改；核准權限依本題角色分工而定。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g008-r2",
+    "testId": "test-02",
+    "part": 2,
+    "title": "Drawing approval",
+    "titleZh": "圖面核准",
+    "topic": "technology",
+    "passage": "Who can approve this revised drawing?\nA. It was revised yesterday.\nB. Three printed copies.\nC. The design lead can approve it.",
+    "passageZh": "誰能核准這張修訂後的圖面？\nA. 昨天修訂的。\nB. 三份印刷本。\nC. 設計負責人可以核准。",
+    "audioScript": "Who can approve this revised drawing?\nA. It was revised yesterday.\nB. Three printed copies.\nC. The design lead can approve it.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Who can approve this revised drawing?"
+      },
+      {
+        "voice": "female",
+        "text": "A. It was revised yesterday. B. Three printed copies. C. The design lead can approve it."
+      }
+    ],
+    "audio": "audio/practice-f0/test02-q008-practice-9c0a74ea4437.wav",
+    "duration": 12.4975,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-TZ",
+        "role": "male",
+        "modelVoice": "en-TZ-ElimuNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-TZ",
+        "role": "female",
+        "modelVoice": "en-TZ-ImaniNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 12.4975
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "start": 7.89404,
+      "end": 8.71804,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "Number 8."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-f0/test02-q008-formal-493834b24030.wav",
+      "start": 0,
+      "end": 12.535,
+      "assetSha256": "493834b240309dc40a10e735d4e4a50e8f9c0a87a10f8a6cba1a878f2aeb5d83",
+      "speech": "Who can approve this revised drawing?\nA. It was revised yesterday.\nB. Three printed copies.\nC. The design lead can approve it."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/practice-f0/test02-q008-practice-9c0a74ea4437.wav",
+      "start": 0,
+      "end": 12.4975,
+      "assetSha256": "9c0a74ea4437d704743e8c58bc5ad0f39dd0c7e78d5dcc8bd34eb185dc3452dc",
+      "speech": "Who can approve this revised drawing?\nA. It was revised yesterday.\nB. Three printed copies.\nC. The design lead can approve it."
+    }
+  ],
+  "imageSha256": null
+}

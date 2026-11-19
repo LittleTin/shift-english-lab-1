@@ -1,0 +1,190 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "English and Traditional Chinese stem and ABC options align. Key uniquely responsive, unchanged.",
+    "audio": "Whole Whisper exact both modes; independent Vosk confirms blank display symptom, input source remedy, past presentation. Vosk imperfect in slides distractor but Whisper exact; no competing remedy.",
+    "retained": "The preexisting numbered cue exact source and timestamps retained, old bank and original item/group/frame objects retained in history.",
+    "association": "Distinct formal and practice complete two-speaker clips and 3 role bindings validated; no browser or production release claim.",
+    "offlineSpeechEvidence": {
+      "formal": {
+        "renderSha256": "c2413b227a0d7d515d1c0fb54350bf2c24160a852631255851246f7c48536478",
+        "whisper": {
+          "sha256": "a1682f8448759283db33e3f1e2aaf296dc5b3babd35c6a11707b8061f7339ab7",
+          "text": "Nothing is showing on the screen.\n A. I saved a copy of the slides.\n B. Let us check the input source.\n C. The presentation was last year."
+        },
+        "independentVosk": {
+          "sha256": "d2483244180f9e98fa8d401c59892a0408bc3d7d7777d3def28a96ae9f076f38",
+          "text": "nothing is showing on the screen\na i said to copy of the sides\nbe let us check the input source\nsee the presentation was last year"
+        }
+      },
+      "practice": {
+        "renderSha256": "300355f0e4ea256df5021405f80d348858df5f2c65f1b52601fe6bbe5f7f3047",
+        "whisper": {
+          "sha256": "a1682f8448759283db33e3f1e2aaf296dc5b3babd35c6a11707b8061f7339ab7",
+          "text": "Nothing is showing on the screen.\n A. I saved a copy of the slides.\n B. Let us check the input source.\n C. The presentation was last year."
+        },
+        "independentVosk": {
+          "sha256": "fc0e1a5d5e6f13b3c3f77a8b51c1840028a7858429e54156422215c8ac9e078a",
+          "text": "nothing is showing on the screen a i saved a copy of this lights\nbe let us check the input source\nsee the presentation was last year"
+        }
+      }
+    }
+  },
+  "activeQuestion": {
+    "id": "t02-q031-r2",
+    "testId": "test-02",
+    "number": 31,
+    "part": 2,
+    "groupId": "t02-g031-r2",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "I saved a copy of the slides.",
+        "zh": "我存了一份投影片。",
+        "whyZh": "儲存投影片不是針對螢幕沒有畫面的排查做法。"
+      },
+      {
+        "id": "B",
+        "text": "Let us check the input source.",
+        "zh": "我們檢查一下輸入來源。",
+        "whyZh": "對螢幕無畫面的問題，確認輸入來源是合理的排查回應。"
+      },
+      {
+        "id": "C",
+        "text": "The presentation was last year.",
+        "zh": "那場簡報是去年。",
+        "whyZh": "沒有回應目前螢幕無畫面的狀況。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "對螢幕無畫面的問題，確認輸入來源是合理的排查回應。",
+    "evidence": "Nothing is showing on the screen.",
+    "vocabulary": [
+      {
+        "term": "input source",
+        "zh": "輸入來源",
+        "note": "螢幕接收畫面訊號的來源，可在無畫面時先確認是否選對。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t02-q031",
+    "testId": "test-02",
+    "number": 31,
+    "part": 2,
+    "groupId": "t02-g031",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "I filled in the blank on the form.",
+        "zh": "我填好了表格的空格。",
+        "whyZh": "blank 在此描述螢幕無畫面，不是表單空格。"
+      },
+      {
+        "id": "B",
+        "text": "Let us check the input source.",
+        "zh": "我們檢查一下輸入來源。",
+        "whyZh": "對螢幕無畫面的問題，確認輸入來源是合理的排查回應。"
+      },
+      {
+        "id": "C",
+        "text": "The presentation was last year.",
+        "zh": "那場簡報是去年。",
+        "whyZh": "沒有回應目前螢幕無畫面的狀況。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "對螢幕無畫面的問題，確認輸入來源是合理的排查回應。",
+    "evidence": "The screen is still blank.",
+    "vocabulary": [
+      {
+        "term": "input source",
+        "zh": "輸入來源",
+        "note": "顯示器或投影機選擇接收影像訊號的來源。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g031-r2",
+    "testId": "test-02",
+    "part": 2,
+    "title": "Presentation display",
+    "titleZh": "簡報投影",
+    "topic": "business",
+    "passage": "Nothing is showing on the screen.\nA. I saved a copy of the slides.\nB. Let us check the input source.\nC. The presentation was last year.",
+    "passageZh": "螢幕上還是沒有畫面。\nA. 我存了一份投影片。\nB. 我們檢查一下輸入來源。\nC. 那場簡報是去年。",
+    "audioScript": "Nothing is showing on the screen.\nA. I saved a copy of the slides.\nB. Let us check the input source.\nC. The presentation was last year.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Nothing is showing on the screen."
+      },
+      {
+        "voice": "female",
+        "text": "A. I saved a copy of the slides. B. Let us check the input source. C. The presentation was last year."
+      }
+    ],
+    "audio": "audio/practice-f0/test02-q031-practice-300355f0e4ea.wav",
+    "duration": 13.535,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-PH",
+        "role": "male",
+        "modelVoice": "en-PH-JamesNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-PH",
+        "role": "female",
+        "modelVoice": "en-PH-RosaNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 13.535
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "start": 37.55179,
+      "end": 38.64229,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "Number 31."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-f0/test02-q031-formal-c2413b227a0d.wav",
+      "start": 0,
+      "end": 13.1475,
+      "assetSha256": "c2413b227a0d7d515d1c0fb54350bf2c24160a852631255851246f7c48536478",
+      "speech": "Nothing is showing on the screen.\nA. I saved a copy of the slides.\nB. Let us check the input source.\nC. The presentation was last year."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/practice-f0/test02-q031-practice-300355f0e4ea.wav",
+      "start": 0,
+      "end": 13.535,
+      "assetSha256": "300355f0e4ea256df5021405f80d348858df5f2c65f1b52601fe6bbe5f7f3047",
+      "speech": "Nothing is showing on the screen.\nA. I saved a copy of the slides.\nB. Let us check the input source.\nC. The presentation was last year."
+    }
+  ],
+  "imageSha256": null
+}

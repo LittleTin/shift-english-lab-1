@@ -1,0 +1,671 @@
+{
+  "status": "structural-candidate-pending-dual-ASR-not-verified-not-published",
+  "predecessorPackSha256": "83cb4d4118f94abec9e082513d0c39107494ec72385093a601ceccfc2d81c6a5",
+  "predecessorPlanSha256": "b4e7d2cc7c35eccf557ffe19fa2031fb0c18d9bb315566476acd60905f59f2a4",
+  "successorPlanSha256": "ee11ca47ec35811d0ec15c852da9452e48735a9c57a364c82c284f6f883d0bc0",
+  "editorialGuardSha256": "da3560edddc36fe02305cddfb7718cc2f070b5eaa09c70b8f1c6e48bd6c04c2d",
+  "authorizedPlanSha256": "067c9e4b31a507bc7124daeda04c81fa5b81a774d22a3c9997d9b92123894907",
+  "oldMediaSha256": {
+    "audio/formal/test-02-cues-01.mp3": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+    "audio/formal-v2/test-02-03.mp3": "2551d9a3425fbe342acecc65989ffe2432e4cc4037a9ceefdb66406672d8ad52",
+    "audio/azure-v1/test-02-03.mp3": "4a4f444b97d3e77ff91a68c2299681d032d35500cae67f921e2d2dadf57c68e4",
+    "audio/formal-v2/test-02-09.mp3": "7d5e1ad5865af07862d094713fd460948b65b3b35a71f63af0075f2d5e28959c",
+    "audio/azure-v1/test-02-09.mp3": "d307280b603c03190d7c585982915fc4507df752f199cda54406966552f96f1e",
+    "audio/formal-v2/test-02-11.mp3": "f6b001264d614f907a6fa8a672c74cd5cae2f92e25549df6291999be2bf4ccf3",
+    "audio/azure-v1/test-02-11.mp3": "5e2bacd5d2e55ba239a41ba4f929e3364756da750a406995a403d8d6b05268ea"
+  },
+  "units": [
+    {
+      "number": 8,
+      "oldQuestionSha256": "66ea128ebb2992d43c0af58379b76461f2ed6f1619b27424df59039ef2528e15",
+      "oldGroupSha256": "e6384213098d73ea45dd2c9860ed4f7b7abff5d4137dc775830835fd84570583",
+      "newQuestion": {
+        "id": "t02-q008-r2",
+        "testId": "test-02",
+        "number": 8,
+        "part": 2,
+        "groupId": "t02-g008-r2",
+        "topic": "technology",
+        "difficulty": "intermediate",
+        "tags": [
+          "question-response"
+        ],
+        "prompt": "Listen and choose the best response.",
+        "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+        "options": [
+          {
+            "id": "A",
+            "text": "It was revised yesterday.",
+            "zh": "昨天修訂的。",
+            "whyZh": "回答修訂時間，沒有說明核准人。"
+          },
+          {
+            "id": "B",
+            "text": "Three printed copies.",
+            "zh": "三份印刷本。",
+            "whyZh": "份數無法回答誰能核准。"
+          },
+          {
+            "id": "C",
+            "text": "The design lead can approve it.",
+            "zh": "設計負責人可以核准。",
+            "whyZh": "問題問誰有核准權，設計負責人正是能核准這張圖面的人。"
+          }
+        ],
+        "answer": "C",
+        "explanationZh": "問題問誰有核准權，設計負責人正是能核准這張圖面的人。",
+        "evidence": "Who can approve this revised drawing?",
+        "vocabulary": [
+          {
+            "term": "revised drawing",
+            "zh": "修訂圖面",
+            "note": "revised 表示已修改；核准權限依本題角色分工而定。"
+          }
+        ],
+        "revision": 2
+      },
+      "newGroup": {
+        "id": "t02-g008-r2",
+        "testId": "test-02",
+        "part": 2,
+        "title": "Drawing approval",
+        "titleZh": "圖面核准",
+        "topic": "technology",
+        "passage": "Who can approve this revised drawing?\nA. It was revised yesterday.\nB. Three printed copies.\nC. The design lead can approve it.",
+        "passageZh": "誰能核准這張修訂後的圖面？\nA. 昨天修訂的。\nB. 三份印刷本。\nC. 設計負責人可以核准。",
+        "audioScript": "Who can approve this revised drawing?\nA. It was revised yesterday.\nB. Three printed copies.\nC. The design lead can approve it.",
+        "turns": [
+          {
+            "voice": "male",
+            "text": "Who can approve this revised drawing?"
+          },
+          {
+            "voice": "female",
+            "text": "A. It was revised yesterday. B. Three printed copies. C. The design lead can approve it."
+          }
+        ],
+        "audio": "audio/practice-f0/test02-q008-practice-9c0a74ea4437.wav",
+        "duration": 12.4975,
+        "audioSpeakers": [
+          {
+            "speaker": "male",
+            "locale": "en-TZ",
+            "role": "male",
+            "modelVoice": "en-TZ-ElimuNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-TZ",
+            "role": "female",
+            "modelVoice": "en-TZ-ImaniNeural"
+          }
+        ],
+        "audioStart": 0,
+        "audioEnd": 12.4975
+      },
+      "audio": {
+        "formal": {
+          "path": "audio/formal-f0/test02-q008-formal-493834b24030.wav",
+          "sha256": "493834b240309dc40a10e735d4e4a50e8f9c0a87a10f8a6cba1a878f2aeb5d83",
+          "frames": 300840,
+          "sampleRate": 24000
+        },
+        "practice": {
+          "path": "audio/practice-f0/test02-q008-practice-9c0a74ea4437.wav",
+          "sha256": "9c0a74ea4437d704743e8c58bc5ad0f39dd0c7e78d5dcc8bd34eb185dc3452dc",
+          "frames": 299940,
+          "sampleRate": 24000
+        }
+      }
+    },
+    {
+      "number": 9,
+      "oldQuestionSha256": "8fe402939127f9514b9b800a090deb4400d083d41b83415bce23861262c39c6c",
+      "oldGroupSha256": "9c93dc03cd9b0a3a5c3af0937306c945a4e52b99c726904fc2514a16dd0c6a1d",
+      "newQuestion": {
+        "id": "t02-q009-r2",
+        "testId": "test-02",
+        "number": 9,
+        "part": 2,
+        "groupId": "t02-g009-r2",
+        "topic": "manufacturing",
+        "difficulty": "intermediate",
+        "tags": [
+          "question-response"
+        ],
+        "prompt": "Listen and choose the best response.",
+        "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+        "options": [
+          {
+            "id": "A",
+            "text": "It took about an hour.",
+            "zh": "大約花了一小時。",
+            "whyZh": "這是所需時間，不是提交管道。"
+          },
+          {
+            "id": "B",
+            "text": "The new machine is quieter.",
+            "zh": "新機器比較安靜。",
+            "whyZh": "機器聲音與申請提交位置無關。"
+          },
+          {
+            "id": "C",
+            "text": "Submit it through the internal equipment portal.",
+            "zh": "請透過內部設備入口網站提交。",
+            "whyZh": "問題問的是提交管道，內部設備入口網站正是提交申請的位置。"
+          }
+        ],
+        "answer": "C",
+        "explanationZh": "問題問的是提交管道，內部設備入口網站正是提交申請的位置。",
+        "evidence": "Where should I submit the maintenance request?",
+        "vocabulary": [
+          {
+            "term": "intranet",
+            "zh": "內部網路",
+            "note": "組織內部使用的網路；本題在其入口網站提出維修申請。"
+          }
+        ],
+        "revision": 2
+      },
+      "newGroup": {
+        "id": "t02-g009-r2",
+        "testId": "test-02",
+        "part": 2,
+        "title": "Maintenance request",
+        "titleZh": "維修申請",
+        "topic": "manufacturing",
+        "passage": "Where should I submit the maintenance request?\nA. It took about an hour.\nB. The new machine is quieter.\nC. Submit it through the internal equipment portal.",
+        "passageZh": "維修申請應該交到哪裡？\nA. 大約花了一小時。\nB. 新機器比較安靜。\nC. 請透過內部設備入口網站提交。",
+        "audioScript": "Where should I submit the maintenance request?\nA. It took about an hour.\nB. The new machine is quieter.\nC. Submit it through the internal equipment portal.",
+        "turns": [
+          {
+            "voice": "male",
+            "text": "Where should I submit the maintenance request?"
+          },
+          {
+            "voice": "female",
+            "text": "A. It took about an hour. B. The new machine is quieter. C. Submit it through the internal equipment portal."
+          }
+        ],
+        "audio": "audio/practice-f0/test02-q009-practice-ba82776155bc.wav",
+        "duration": 14.1975,
+        "audioSpeakers": [
+          {
+            "speaker": "male",
+            "locale": "en-ZA",
+            "role": "male",
+            "modelVoice": "en-ZA-LukeNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-ZA",
+            "role": "female",
+            "modelVoice": "en-ZA-LeahNeural"
+          }
+        ],
+        "audioStart": 0,
+        "audioEnd": 14.1975
+      },
+      "audio": {
+        "formal": {
+          "path": "audio/formal-f0/test02-q009-formal-df0d0eda25f9.wav",
+          "sha256": "df0d0eda25f92f5828d1692d375cbef1f82929105759371c0a7aa19f0749404c",
+          "frames": 321540,
+          "sampleRate": 24000
+        },
+        "practice": {
+          "path": "audio/practice-f0/test02-q009-practice-ba82776155bc.wav",
+          "sha256": "ba82776155bca547c25681de0a6f40936c5c7a20fc4b608248a0e28f313763ae",
+          "frames": 340740,
+          "sampleRate": 24000
+        }
+      }
+    },
+    {
+      "number": 27,
+      "oldQuestionSha256": "7aa35a44fbe0f1dfb37129d31b45a09f82c574e1c9462f52484609f879b1e5e4",
+      "oldGroupSha256": "87dc5fb74e865d22cd4e367b1fbf8069cb736cc740649e8017d3780a8073d01a",
+      "newQuestion": {
+        "id": "t02-q027-r2",
+        "testId": "test-02",
+        "number": 27,
+        "part": 2,
+        "groupId": "t02-g027-r2",
+        "topic": "daily",
+        "difficulty": "intermediate",
+        "tags": [
+          "question-response"
+        ],
+        "prompt": "Listen and choose the best response.",
+        "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+        "options": [
+          {
+            "id": "A",
+            "text": "At the service counter on Pine Street.",
+            "zh": "到 Pine 街的服務櫃檯。",
+            "whyZh": "Where 詢問領件位置，服務櫃檯提供明確地點。"
+          },
+          {
+            "id": "B",
+            "text": "It arrived earlier than usual.",
+            "zh": "它比平常早到。",
+            "whyZh": "送達時間沒有回答後續領取地點。"
+          },
+          {
+            "id": "C",
+            "text": "The package requires a signature.",
+            "zh": "這件包裹需要簽收。",
+            "whyZh": "這只說明包裹需要簽收，沒回答可以在哪裡領取。"
+          }
+        ],
+        "answer": "A",
+        "explanationZh": "Where 詢問領件位置，服務櫃檯提供明確地點。",
+        "evidence": "Where can I collect the package if I miss the delivery?",
+        "vocabulary": [
+          {
+            "term": "collect a package",
+            "zh": "領取包裹",
+            "note": "collect 在物流情境常表示前往取件。"
+          }
+        ],
+        "revision": 2
+      },
+      "newGroup": {
+        "id": "t02-g027-r2",
+        "testId": "test-02",
+        "part": 2,
+        "title": "Package pickup",
+        "titleZh": "領取包裹",
+        "topic": "daily",
+        "passage": "Where can I collect the package if I miss the delivery?\nA. At the service counter on Pine Street.\nB. It arrived earlier than usual.\nC. The package requires a signature.",
+        "passageZh": "如果錯過配送，我可以在哪裡領包裹？\nA. 到 Pine 街的服務櫃檯。\nB. 它比平常早到。\nC. 這件包裹需要簽收。",
+        "audioScript": "Where can I collect the package if I miss the delivery?\nA. At the service counter on Pine Street.\nB. It arrived earlier than usual.\nC. The package requires a signature.",
+        "turns": [
+          {
+            "voice": "male",
+            "text": "Where can I collect the package if I miss the delivery?"
+          },
+          {
+            "voice": "female",
+            "text": "A. At the service counter on Pine Street. B. It arrived earlier than usual. C. The package requires a signature."
+          }
+        ],
+        "audio": "audio/practice-f0/test02-q027-practice-22e89785410b.wav",
+        "duration": 14.56,
+        "audioSpeakers": [
+          {
+            "speaker": "male",
+            "locale": "en-AU",
+            "role": "male",
+            "modelVoice": "en-AU-WilliamNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-AU",
+            "role": "female",
+            "modelVoice": "en-AU-NatashaNeural"
+          }
+        ],
+        "audioStart": 0,
+        "audioEnd": 14.56
+      },
+      "audio": {
+        "formal": {
+          "path": "audio/formal-f0/test02-q027-formal-c789a174c0f6.wav",
+          "sha256": "c789a174c0f62a51fef5014e0659cd58ccacee4c3002734664ffe7162c6e2372",
+          "frames": 346140,
+          "sampleRate": 24000
+        },
+        "practice": {
+          "path": "audio/practice-f0/test02-q027-practice-22e89785410b.wav",
+          "sha256": "22e89785410b072d7ce8e51c946991f1fce54d19d47e723e181aa37fc9feafb1",
+          "frames": 349440,
+          "sampleRate": 24000
+        }
+      }
+    },
+    {
+      "number": 31,
+      "oldQuestionSha256": "30ab68b7513fb309fa9ea3cf8dd0909a21485708766040c6bab2a1157502eebf",
+      "oldGroupSha256": "42236e876a3b9f794724393aa00cdb692e7260ecb6906921a97ee7504ef1bdd3",
+      "newQuestion": {
+        "id": "t02-q031-r2",
+        "testId": "test-02",
+        "number": 31,
+        "part": 2,
+        "groupId": "t02-g031-r2",
+        "topic": "business",
+        "difficulty": "intermediate",
+        "tags": [
+          "question-response"
+        ],
+        "prompt": "Listen and choose the best response.",
+        "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+        "options": [
+          {
+            "id": "A",
+            "text": "I saved a copy of the slides.",
+            "zh": "我存了一份投影片。",
+            "whyZh": "儲存投影片不是針對螢幕沒有畫面的排查做法。"
+          },
+          {
+            "id": "B",
+            "text": "Let us check the input source.",
+            "zh": "我們檢查一下輸入來源。",
+            "whyZh": "對螢幕無畫面的問題，確認輸入來源是合理的排查回應。"
+          },
+          {
+            "id": "C",
+            "text": "The presentation was last year.",
+            "zh": "那場簡報是去年。",
+            "whyZh": "沒有回應目前螢幕無畫面的狀況。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "對螢幕無畫面的問題，確認輸入來源是合理的排查回應。",
+        "evidence": "Nothing is showing on the screen.",
+        "vocabulary": [
+          {
+            "term": "input source",
+            "zh": "輸入來源",
+            "note": "螢幕接收畫面訊號的來源，可在無畫面時先確認是否選對。"
+          }
+        ],
+        "revision": 2
+      },
+      "newGroup": {
+        "id": "t02-g031-r2",
+        "testId": "test-02",
+        "part": 2,
+        "title": "Presentation display",
+        "titleZh": "簡報投影",
+        "topic": "business",
+        "passage": "Nothing is showing on the screen.\nA. I saved a copy of the slides.\nB. Let us check the input source.\nC. The presentation was last year.",
+        "passageZh": "螢幕上還是沒有畫面。\nA. 我存了一份投影片。\nB. 我們檢查一下輸入來源。\nC. 那場簡報是去年。",
+        "audioScript": "Nothing is showing on the screen.\nA. I saved a copy of the slides.\nB. Let us check the input source.\nC. The presentation was last year.",
+        "turns": [
+          {
+            "voice": "male",
+            "text": "Nothing is showing on the screen."
+          },
+          {
+            "voice": "female",
+            "text": "A. I saved a copy of the slides. B. Let us check the input source. C. The presentation was last year."
+          }
+        ],
+        "audio": "audio/practice-f0/test02-q031-practice-300355f0e4ea.wav",
+        "duration": 13.535,
+        "audioSpeakers": [
+          {
+            "speaker": "male",
+            "locale": "en-PH",
+            "role": "male",
+            "modelVoice": "en-PH-JamesNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-PH",
+            "role": "female",
+            "modelVoice": "en-PH-RosaNeural"
+          }
+        ],
+        "audioStart": 0,
+        "audioEnd": 13.535
+      },
+      "audio": {
+        "formal": {
+          "path": "audio/formal-f0/test02-q031-formal-c2413b227a0d.wav",
+          "sha256": "c2413b227a0d7d515d1c0fb54350bf2c24160a852631255851246f7c48536478",
+          "frames": 315540,
+          "sampleRate": 24000
+        },
+        "practice": {
+          "path": "audio/practice-f0/test02-q031-practice-300355f0e4ea.wav",
+          "sha256": "300355f0e4ea256df5021405f80d348858df5f2c65f1b52601fe6bbe5f7f3047",
+          "frames": 324840,
+          "sampleRate": 24000
+        }
+      }
+    }
+  ],
+  "frameOperations": [
+    {
+      "index": 25,
+      "originalSha256": "abf94699983a0a4eb79e2dad26b1b97f9badb3abf756a3d3b9d3f9ce59e89a55",
+      "replace": {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 7.89404,
+        "end": 8.71804,
+        "duration": 0.824,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g008-r2",
+        "at": 258.23051
+      }
+    },
+    {
+      "index": 26,
+      "originalSha256": "e52671e93d7e5c1cf5d674df59866503c9fcfaaa600892c202d2625c3ca692f7",
+      "replace": {
+        "src": "audio/formal-f0/test02-q008-formal-493834b24030.wav",
+        "start": 0,
+        "end": 12.535,
+        "duration": 12.535,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g008-r2",
+        "at": 259.05451,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
+      }
+    },
+    {
+      "index": 27,
+      "originalSha256": "be14b989f556a6bcdc3897c06d6cd84fdee6189ff338301990ff7e38413df62d",
+      "replace": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 10.45405,
+        "part": 2,
+        "groupId": "t02-g008-r2",
+        "questionId": "t02-q008-r2",
+        "at": 271.58951
+      }
+    },
+    {
+      "index": 28,
+      "originalSha256": "9e42e5e3def4f04ea357b63e1cf62656d0707e6ee4cc195f1481ddd15548055c",
+      "replace": {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 8.96804,
+        "end": 9.794,
+        "duration": 0.82596,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g009-r2",
+        "at": 282.04356
+      }
+    },
+    {
+      "index": 29,
+      "originalSha256": "0755adeddfe6bc7ddc91efd882c6d459e4a87e35b862931491c8cb519f6205e1",
+      "replace": {
+        "src": "audio/formal-f0/test02-q009-formal-df0d0eda25f9.wav",
+        "start": 0,
+        "end": 13.3975,
+        "duration": 13.3975,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g009-r2",
+        "at": 282.86952,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
+      }
+    },
+    {
+      "index": 30,
+      "originalSha256": "549410bacf97ea98def68eaef1db90287fe48b2ab0b366708893e911f4e79c75",
+      "replace": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 10.16755,
+        "part": 2,
+        "groupId": "t02-g009-r2",
+        "questionId": "t02-q009-r2",
+        "at": 296.26702
+      }
+    },
+    {
+      "index": 82,
+      "originalSha256": "c067fdb55fa12fff3efaa46234c0ad7233f5bf42e2734b826407f43c2e1807f9",
+      "replace": {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 32.18379,
+        "end": 33.39988,
+        "duration": 1.21608,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g027-r2",
+        "at": 725.83022
+      }
+    },
+    {
+      "index": 83,
+      "originalSha256": "a43c7e3e57de29f9ee07f96d68c981e5a68843177579d6d8e3f42d23ff61037a",
+      "replace": {
+        "src": "audio/formal-f0/test02-q027-formal-c789a174c0f6.wav",
+        "start": 0,
+        "end": 14.4225,
+        "duration": 14.4225,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g027-r2",
+        "at": 727.0463,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
+      }
+    },
+    {
+      "index": 84,
+      "originalSha256": "3dc688b585b8d97f018dabb6e2a3f2cc48a9a33a590a485c5639f30cee2f24e8",
+      "replace": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 10.05455,
+        "part": 2,
+        "groupId": "t02-g027-r2",
+        "questionId": "t02-q027-r2",
+        "at": 741.4688
+      }
+    },
+    {
+      "index": 94,
+      "originalSha256": "ea246cec352a8a49d5d633b4cf923f5c3f5b4bc017fdfb24f9d067c15ca3f280",
+      "replace": {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 37.55179,
+        "end": 38.64229,
+        "duration": 1.0905,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g031-r2",
+        "at": 827.55442
+      }
+    },
+    {
+      "index": 95,
+      "originalSha256": "74d6b04927ece7965fddfe76d64091ef3c6a3fdbf4287dacfdea4b988dee536c",
+      "replace": {
+        "src": "audio/formal-f0/test02-q031-formal-c2413b227a0d.wav",
+        "start": 0,
+        "end": 13.1475,
+        "duration": 13.1475,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g031-r2",
+        "at": 828.64492,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
+      }
+    },
+    {
+      "index": 96,
+      "originalSha256": "f5e17a38c8719745a2251a13f95818cd37315f570a37397f57be860b79a259cb",
+      "replace": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 10.03355,
+        "part": 2,
+        "groupId": "t02-g031-r2",
+        "questionId": "t02-q031-r2",
+        "at": 841.79242
+      }
+    }
+  ],
+  "timing": {
+    "seconds": 2700,
+    "newAnswerSeconds": {
+      "8": 10.45405,
+      "9": 10.16755,
+      "27": 10.05455,
+      "31": 10.03355
+    },
+    "movedCueSourceRanges": 0
+  }
+}

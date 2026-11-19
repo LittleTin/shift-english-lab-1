@@ -1,0 +1,190 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "English and Traditional Chinese stem and ABC options align. Key uniquely responsive, unchanged.",
+    "audio": "Whole Whisper full meaning both; independent Vosk confirms Pine Street counter, arrival comparison and signature, with missed/miss tense drift that does not change the situation.",
+    "retained": "The preexisting numbered cue exact source and timestamps retained, old bank and original item/group/frame objects retained in history.",
+    "association": "Distinct formal and practice complete two-speaker clips and 3 role bindings validated; no browser or production release claim.",
+    "offlineSpeechEvidence": {
+      "formal": {
+        "renderSha256": "c789a174c0f62a51fef5014e0659cd58ccacee4c3002734664ffe7162c6e2372",
+        "whisper": {
+          "sha256": "a64a9741e6d80895650ca2e1f2e63dbd02cfc04eecaa6a1fc734bd106593813a",
+          "text": "\"Where can I collect the package if I miss the delivery?\"\n (a) At the service counter on Pine Street.\n (b) It arrived earlier than usual.\n (c) The package requires a signature."
+        },
+        "independentVosk": {
+          "sha256": "79f5bb5f91da20eb7bfbf5ecd02a50fd35bc5466d82b4141d1cd1da3d1d60aca",
+          "text": "where can i collect the package if i missed the delivery\na at the service counter on pine street\nbe it arrived earlier than usual\nsee the package requires a signature"
+        }
+      },
+      "practice": {
+        "renderSha256": "22e89785410b072d7ce8e51c946991f1fce54d19d47e723e181aa37fc9feafb1",
+        "whisper": {
+          "sha256": "cbb271d0d441599cdd454443195d9af136771887a9c9d06c6840ff37b40cc7e3",
+          "text": "Where can I collect the package if I miss the delivery?\n A. At the service counter on Pine Street.\n B. It arrived earlier than usual.\n C. The package requires a signature."
+        },
+        "independentVosk": {
+          "sha256": "b626b85967c210d41629138a63649c40754b4ef229d6249e4264f555e791acb2",
+          "text": "where can i collect the package if i missed the delivery a at the service counter on pine street\nthe it arrived earlier than usual\nsee the package requires a signature"
+        }
+      }
+    }
+  },
+  "activeQuestion": {
+    "id": "t02-q027-r2",
+    "testId": "test-02",
+    "number": 27,
+    "part": 2,
+    "groupId": "t02-g027-r2",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "At the service counter on Pine Street.",
+        "zh": "到 Pine 街的服務櫃檯。",
+        "whyZh": "Where 詢問領件位置，服務櫃檯提供明確地點。"
+      },
+      {
+        "id": "B",
+        "text": "It arrived earlier than usual.",
+        "zh": "它比平常早到。",
+        "whyZh": "送達時間沒有回答後續領取地點。"
+      },
+      {
+        "id": "C",
+        "text": "The package requires a signature.",
+        "zh": "這件包裹需要簽收。",
+        "whyZh": "這只說明包裹需要簽收，沒回答可以在哪裡領取。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "Where 詢問領件位置，服務櫃檯提供明確地點。",
+    "evidence": "Where can I collect the package if I miss the delivery?",
+    "vocabulary": [
+      {
+        "term": "collect a package",
+        "zh": "領取包裹",
+        "note": "collect 在物流情境常表示前往取件。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t02-q027",
+    "testId": "test-02",
+    "number": 27,
+    "part": 2,
+    "groupId": "t02-g027",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "At the service counter on Pine Street.",
+        "zh": "到 Pine 街的服務櫃檯。",
+        "whyZh": "Where 詢問領件位置，服務櫃檯提供明確地點。"
+      },
+      {
+        "id": "B",
+        "text": "It arrived earlier than usual.",
+        "zh": "它比平常早到。",
+        "whyZh": "送達時間沒有回答後續領取地點。"
+      },
+      {
+        "id": "C",
+        "text": "The collector likes stamps.",
+        "zh": "收藏家喜歡郵票。",
+        "whyZh": "collect 在此指領件，與收藏家愛好無關。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "Where 詢問領件位置，服務櫃檯提供明確地點。",
+    "evidence": "Where can I collect the package if I miss the delivery?",
+    "vocabulary": [
+      {
+        "term": "collect a package",
+        "zh": "領取包裹",
+        "note": "collect 在物流情境常表示前往取件。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g027-r2",
+    "testId": "test-02",
+    "part": 2,
+    "title": "Package pickup",
+    "titleZh": "領取包裹",
+    "topic": "daily",
+    "passage": "Where can I collect the package if I miss the delivery?\nA. At the service counter on Pine Street.\nB. It arrived earlier than usual.\nC. The package requires a signature.",
+    "passageZh": "如果錯過配送，我可以在哪裡領包裹？\nA. 到 Pine 街的服務櫃檯。\nB. 它比平常早到。\nC. 這件包裹需要簽收。",
+    "audioScript": "Where can I collect the package if I miss the delivery?\nA. At the service counter on Pine Street.\nB. It arrived earlier than usual.\nC. The package requires a signature.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Where can I collect the package if I miss the delivery?"
+      },
+      {
+        "voice": "female",
+        "text": "A. At the service counter on Pine Street. B. It arrived earlier than usual. C. The package requires a signature."
+      }
+    ],
+    "audio": "audio/practice-f0/test02-q027-practice-22e89785410b.wav",
+    "duration": 14.56,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-AU",
+        "role": "male",
+        "modelVoice": "en-AU-WilliamNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-AU",
+        "role": "female",
+        "modelVoice": "en-AU-NatashaNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 14.56
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "start": 32.18379,
+      "end": 33.39988,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "Number 27."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-f0/test02-q027-formal-c789a174c0f6.wav",
+      "start": 0,
+      "end": 14.4225,
+      "assetSha256": "c789a174c0f62a51fef5014e0659cd58ccacee4c3002734664ffe7162c6e2372",
+      "speech": "Where can I collect the package if I miss the delivery?\nA. At the service counter on Pine Street.\nB. It arrived earlier than usual.\nC. The package requires a signature."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/practice-f0/test02-q027-practice-22e89785410b.wav",
+      "start": 0,
+      "end": 14.56,
+      "assetSha256": "22e89785410b072d7ce8e51c946991f1fce54d19d47e723e181aa37fc9feafb1",
+      "speech": "Where can I collect the package if I miss the delivery?\nA. At the service counter on Pine Street.\nB. It arrived earlier than usual.\nC. The package requires a signature."
+    }
+  ],
+  "imageSha256": null
+}

@@ -1,0 +1,167 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Single directly relevant schedule constraint. The other responses concern floor location and liking the conference; no inference about present time is required. B uniquely answers through the booking at two; bilingual original, question and key unchanged.",
+    "audio": "Strong exact unprompted whole-clip A/B/C and booking at numeral 2; independent phonetic segmentation supports sales team, prior booking and two, with no competing time or plausible meaning. Existing en-SG practice strongly recovered exact B independently of formal and is untouched.",
+    "association": "Only the formal passage and its immediately following wait are replaced; numbered cue and practice retain exact original ranges and bytes. No historical version or unrelated frame changes."
+  },
+  "activeQuestion": {
+    "id": "t03-q011",
+    "testId": "test-03",
+    "number": 11,
+    "part": 2,
+    "groupId": "t03-g011",
+    "topic": "business",
+    "difficulty": "foundation",
+    "tags": [
+      "business",
+      "question_response"
+    ],
+    "prompt": "Could we keep the conference room for another hour?",
+    "promptZh": "我們能再使用會議室一小時嗎？",
+    "options": [
+      {
+        "id": "A",
+        "text": "It is on the fourth floor.",
+        "zh": "它在四樓。",
+        "whyZh": "回答位置，未回應延長使用的請求。"
+      },
+      {
+        "id": "B",
+        "text": "A sales team has it booked at two.",
+        "zh": "銷售團隊兩點已經預訂了。",
+        "whyZh": "提出後續預約的限制，間接回答是否能延長。"
+      },
+      {
+        "id": "C",
+        "text": "I enjoyed the conference.",
+        "zh": "我很喜歡這次研討會。",
+        "whyZh": "談感受，與會議室延長使用無關。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "提出後續預約的限制，間接回答是否能延長。",
+    "evidence": "A sales team has it booked at two.",
+    "vocabulary": [
+      {
+        "term": "booked",
+        "zh": "已預訂的",
+        "note": "A sales team has it booked at two."
+      }
+    ],
+    "revision": 1
+  },
+  "originalQuestion": {
+    "id": "t03-q011",
+    "testId": "test-03",
+    "number": 11,
+    "part": 2,
+    "groupId": "t03-g011",
+    "topic": "business",
+    "difficulty": "foundation",
+    "tags": [
+      "business",
+      "question_response"
+    ],
+    "prompt": "Could we keep the conference room for another hour?",
+    "promptZh": "我們能再使用會議室一小時嗎？",
+    "options": [
+      {
+        "id": "A",
+        "text": "It is on the fourth floor.",
+        "zh": "它在四樓。",
+        "whyZh": "回答位置，未回應延長使用的請求。"
+      },
+      {
+        "id": "B",
+        "text": "A sales team has it booked at two.",
+        "zh": "銷售團隊兩點已經預訂了。",
+        "whyZh": "提出後續預約的限制，間接回答是否能延長。"
+      },
+      {
+        "id": "C",
+        "text": "I enjoyed the conference.",
+        "zh": "我很喜歡這次研討會。",
+        "whyZh": "談感受，與會議室延長使用無關。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "提出後續預約的限制，間接回答是否能延長。",
+    "evidence": "A sales team has it booked at two.",
+    "vocabulary": [
+      {
+        "term": "booked",
+        "zh": "已預訂的",
+        "note": "A sales team has it booked at two."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g011",
+    "testId": "test-03",
+    "part": 2,
+    "title": "Booking extension",
+    "titleZh": "延長預訂",
+    "topic": "business",
+    "passage": "Could we keep the conference room for another hour? A. It is on the fourth floor. B. A sales team has it booked at two. C. I enjoyed the conference.",
+    "passageZh": "我們能再使用會議室一小時嗎？\nA. 它在四樓。\nB. 銷售團隊兩點已經預訂了。\nC. 我很喜歡這次研討會。",
+    "audioScript": "Could we keep the conference room for another hour? A. It is on the fourth floor. B. A sales team has it booked at two. C. I enjoyed the conference.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Could we keep the conference room for another hour?"
+      },
+      {
+        "voice": "male",
+        "text": "A. It is on the fourth floor. B. A sales team has it booked at two. C. I enjoyed the conference."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-04.mp3",
+    "duration": 17.352,
+    "audioStart": 17.44,
+    "audioEnd": 34.792,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-SG",
+        "role": "female",
+        "modelVoice": "en-SG-LunaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-SG",
+        "role": "male",
+        "modelVoice": "en-SG-WayneNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "start": 11.11983,
+      "end": 12.06871,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 11."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/exams/test-03/groups/t03-g011/formal-exact-repair-1112.wav",
+      "start": 0,
+      "end": 13.6475,
+      "assetSha256": "df1bb068e5b1b81ccd1e50c1bf2b4e154060f7479a1c7a77d51df3e5313f69a9",
+      "speech": "Could we keep the conference room for another hour? A. It is on the fourth floor. B. A sales team has it booked at two. C. I enjoyed the conference."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-03-04.mp3",
+      "start": 17.44,
+      "end": 34.792,
+      "assetSha256": "4356353a4d4a32e341d747574f7913823dd3389332e64ca344f1603b70d5e065",
+      "speech": "Could we keep the conference room for another hour? A. It is on the fourth floor. B. A sales team has it booked at two. C. I enjoyed the conference."
+    }
+  ],
+  "imageSha256": null
+}

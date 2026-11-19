@@ -1,0 +1,190 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "English and Traditional Chinese stem and ABC options align. Key uniquely responsive, unchanged.",
+    "audio": "Whole Whisper exact both modes and independent Vosk exact channel phrase; submitted/submit it is word-boundary drift only.",
+    "retained": "The preexisting numbered cue exact source and timestamps retained, old bank and original item/group/frame objects retained in history.",
+    "association": "Distinct formal and practice complete two-speaker clips and 3 role bindings validated; no browser or production release claim.",
+    "offlineSpeechEvidence": {
+      "formal": {
+        "renderSha256": "df0d0eda25f92f5828d1692d375cbef1f82929105759371c0a7aa19f0749404c",
+        "whisper": {
+          "sha256": "fae28c84d4155922a3a6c5ef5d57027f0881fe14dd078f9483db694cbb9a3a90",
+          "text": "Where should I submit the maintenance request?\n A. It took about an hour.\n B. The new machine is quieter.\n C. Submit it through the internal equipment portal."
+        },
+        "independentVosk": {
+          "sha256": "4316055c1d303cd9c429a4309c6ec2f029ba266c2a70ed5ac0d7e5b1f76a9cfd",
+          "text": "where should i submit the maintenance request\na it took about an hour\nbe the new machine is quieter\nsee submitted through the internal equipment portal"
+        }
+      },
+      "practice": {
+        "renderSha256": "ba82776155bca547c25681de0a6f40936c5c7a20fc4b608248a0e28f313763ae",
+        "whisper": {
+          "sha256": "fae28c84d4155922a3a6c5ef5d57027f0881fe14dd078f9483db694cbb9a3a90",
+          "text": "Where should I submit the maintenance request?\n A. It took about an hour.\n B. The new machine is quieter.\n C. Submit it through the internal equipment portal."
+        },
+        "independentVosk": {
+          "sha256": "3deaa20c42dca765781934ad62e7f0750fcde230ec9c6a287defdf8b08d4a26e",
+          "text": "where should i submit the maintenance request a it took about an hour\nbe the new machine is quieter\nsee submitted through the internal equipment portal"
+        }
+      }
+    }
+  },
+  "activeQuestion": {
+    "id": "t02-q009-r2",
+    "testId": "test-02",
+    "number": 9,
+    "part": 2,
+    "groupId": "t02-g009-r2",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "It took about an hour.",
+        "zh": "大約花了一小時。",
+        "whyZh": "這是所需時間，不是提交管道。"
+      },
+      {
+        "id": "B",
+        "text": "The new machine is quieter.",
+        "zh": "新機器比較安靜。",
+        "whyZh": "機器聲音與申請提交位置無關。"
+      },
+      {
+        "id": "C",
+        "text": "Submit it through the internal equipment portal.",
+        "zh": "請透過內部設備入口網站提交。",
+        "whyZh": "問題問的是提交管道，內部設備入口網站正是提交申請的位置。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "問題問的是提交管道，內部設備入口網站正是提交申請的位置。",
+    "evidence": "Where should I submit the maintenance request?",
+    "vocabulary": [
+      {
+        "term": "intranet",
+        "zh": "內部網路",
+        "note": "組織內部使用的網路；本題在其入口網站提出維修申請。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t02-q009",
+    "testId": "test-02",
+    "number": 9,
+    "part": 2,
+    "groupId": "t02-g009",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "It took about an hour.",
+        "zh": "大約花了一小時。",
+        "whyZh": "這是所需時間，不是提交管道。"
+      },
+      {
+        "id": "B",
+        "text": "The new machine is quieter.",
+        "zh": "新機器比較安靜。",
+        "whyZh": "機器聲音與申請提交位置無關。"
+      },
+      {
+        "id": "C",
+        "text": "Use the equipment portal on the intranet.",
+        "zh": "使用內部網路上的設備入口網站。",
+        "whyZh": "問題詢問提交管道，設備入口網站提供了具體位置。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "問題詢問提交管道，設備入口網站提供了具體位置。",
+    "evidence": "Where should I submit the maintenance request?",
+    "vocabulary": [
+      {
+        "term": "intranet",
+        "zh": "內部網路",
+        "note": "組織內部使用的網路；本題在其入口網站提出維修申請。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g009-r2",
+    "testId": "test-02",
+    "part": 2,
+    "title": "Maintenance request",
+    "titleZh": "維修申請",
+    "topic": "manufacturing",
+    "passage": "Where should I submit the maintenance request?\nA. It took about an hour.\nB. The new machine is quieter.\nC. Submit it through the internal equipment portal.",
+    "passageZh": "維修申請應該交到哪裡？\nA. 大約花了一小時。\nB. 新機器比較安靜。\nC. 請透過內部設備入口網站提交。",
+    "audioScript": "Where should I submit the maintenance request?\nA. It took about an hour.\nB. The new machine is quieter.\nC. Submit it through the internal equipment portal.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Where should I submit the maintenance request?"
+      },
+      {
+        "voice": "female",
+        "text": "A. It took about an hour. B. The new machine is quieter. C. Submit it through the internal equipment portal."
+      }
+    ],
+    "audio": "audio/practice-f0/test02-q009-practice-ba82776155bc.wav",
+    "duration": 14.1975,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-ZA",
+        "role": "male",
+        "modelVoice": "en-ZA-LukeNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-ZA",
+        "role": "female",
+        "modelVoice": "en-ZA-LeahNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 14.1975
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "start": 8.96804,
+      "end": 9.794,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "Number 9."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-f0/test02-q009-formal-df0d0eda25f9.wav",
+      "start": 0,
+      "end": 13.3975,
+      "assetSha256": "df0d0eda25f92f5828d1692d375cbef1f82929105759371c0a7aa19f0749404c",
+      "speech": "Where should I submit the maintenance request?\nA. It took about an hour.\nB. The new machine is quieter.\nC. Submit it through the internal equipment portal."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/practice-f0/test02-q009-practice-ba82776155bc.wav",
+      "start": 0,
+      "end": 14.1975,
+      "assetSha256": "ba82776155bca547c25681de0a6f40936c5c7a20fc4b608248a0e28f313763ae",
+      "speech": "Where should I submit the maintenance request?\nA. It took about an hour.\nB. The new machine is quieter.\nC. Submit it through the internal equipment portal."
+    }
+  ],
+  "imageSha256": null
+}
