@@ -1,0 +1,71 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": {
+    "key": "A",
+    "checks": "Release unclaimed reserved desk to other members after fifteen minutes; reduce/recall/repair do not reallocate. zh time/recipient and reasons accurate.",
+    "id": "t03-q137"
+  },
+  "activeQuestion": {
+    "id": "t03-q137",
+    "testId": "test-03",
+    "number": 137,
+    "part": 6,
+    "groupId": "t03-g056",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "text-completion"
+    ],
+    "prompt": "Choose the best word or sentence for blank [137].",
+    "promptZh": "請選出最適合填入空格 [137] 的字詞或句子。",
+    "options": [
+      {
+        "id": "A",
+        "text": "released",
+        "zh": "釋出",
+        "whyZh": "released to other members 表示未報到的預約名額轉為他人可用。"
+      },
+      {
+        "id": "B",
+        "text": "reduced",
+        "zh": "減少",
+        "whyZh": "不能表示解除預約並重新開放。"
+      },
+      {
+        "id": "C",
+        "text": "recalled",
+        "zh": "召回",
+        "whyZh": "召回不適用讓其他會員使用書桌。"
+      },
+      {
+        "id": "D",
+        "text": "repaired",
+        "zh": "修理",
+        "whyZh": "未使用不代表書桌損壞。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "released to other members 表示未報到的預約名額轉為他人可用。",
+    "evidence": "unoccupied ... will be released to other members",
+    "vocabulary": [
+      {
+        "term": "unoccupied",
+        "zh": "無人使用的",
+        "note": "指預約後未到場使用的座位。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g056",
+    "testId": "test-03",
+    "part": 6,
+    "title": "A quieter place to work",
+    "titleZh": "更安靜的工作空間",
+    "topic": "daily",
+    "passage": "Harbor Library Member Update\n\nFollowing a survey of members, Harbor Library is converting the former map room into a quiet workspace. Construction will begin on June 3 and is expected to last two weeks. The map collection has already been moved to the second-floor reference area, where it remains [135] ____ during normal opening hours.\n\nThe new room will contain twelve desks, each equipped with a power outlet and an adjustable lamp. Members may reserve a desk online for up to three hours per day. Telephone calls and group discussions will not be permitted. [136] ____ A separate meeting room on the ground floor will continue to accommodate those activities.\n\nBecause demand is likely to be high, please cancel a reservation promptly if your plans change. Desks that remain unoccupied for fifteen minutes after the reserved start time will be [137] ____ to other members. Library staff will demonstrate the booking system on opening day. Anyone who needs assistance before then can speak with a librarian [138] ____ visiting the information desk.",
+    "passageZh": "海港圖書館會員消息\n\n依據會員調查結果，海港圖書館將把原地圖室改為安靜工作空間。施工將於六月三日開始，預計持續兩週。地圖館藏已移至二樓參考資料區，在正常開館時間仍 [135] ____。\n\n新房間有十二張書桌，每張均設電源插座與可調式檯燈。會員每天可在線上預約最多三小時。室內不得通電話或進行團體討論。[136] ____ 一樓獨立會議室將繼續提供這些活動使用。\n\n由於需求可能很高，若計畫有變，請即時取消預約。預約開始後十五分鐘仍無人使用的書桌，將 [137] ____ 給其他會員。開放當天，館員將示範預約系統。在開放前需要協助的人，可以在 [138] ____ 服務台時向館員詢問。"
+  }
+}
