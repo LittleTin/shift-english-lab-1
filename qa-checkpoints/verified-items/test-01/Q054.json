@@ -1,0 +1,202 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "editorial": "Independent bilingual editorial confirms A/B/D, all wrong choices explained and exact supplier-to-model graphic preserved. Speaker roles and time constraints distinguish eligible sample from the late or incomplete alternatives.",
+    "audio": "On exact retained passage SHA, unprompted Whisper small.en recovered all material clauses; Vosk corroborates cover, timing and supplier/role/worksheet logic with nonliteral word and letter errors rather than a clean verbatim match. Both engines exactly recovered all three numbered stems including Q055 and retained three-question cue. Group formal/practice use same SHA-bound raw range.",
+    "timing": "Formal remains 2700.000 seconds. Only Part3 ordinary answer pauses absorb growth, Q054 graphic pause intact at 13.19991 seconds; minimum ordinary 8.29961 seconds and Part4 Q098–100 unchanged. Offline structural QA only; real browser, old history and release not approved."
+  },
+  "activeQuestion": {
+    "id": "t01-q054-r3",
+    "testId": "test-01",
+    "number": 54,
+    "part": 3,
+    "groupId": "t01-g039-r2",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "graphic-inference"
+    ],
+    "prompt": "Look at the graphic. Which fan model will the speakers test at two o'clock?",
+    "promptZh": "請看圖表。兩位說話者兩點要測試哪一款風扇？",
+    "options": [
+      {
+        "id": "A",
+        "text": "AV-12",
+        "zh": "AV-12",
+        "whyZh": "圖表中的 AV-12 來自 A 供應商，這款樣品趕不上兩點的測試。"
+      },
+      {
+        "id": "B",
+        "text": "AV-21",
+        "zh": "AV-21",
+        "whyZh": "B 供應商的樣品已到收貨處且附卡扣；圖表把 B 供應商對應到 AV-21。"
+      },
+      {
+        "id": "C",
+        "text": "AV-28",
+        "zh": "AV-28",
+        "whyZh": "AV-28 對應 C 供應商，不是女子最後選定的 B 供應商。"
+      },
+      {
+        "id": "D",
+        "text": "AV-36",
+        "zh": "AV-36",
+        "whyZh": "AV-36 對應 D 供應商；樣品雖已到，但缺少安裝時需要的卡扣。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "B 供應商的樣品已到收貨處且附卡扣；圖表把 B 供應商對應到 AV-21。",
+    "evidence": "What about the replacement fan? Supplier A can deliver this afternoon, but not before our two o'clock test. Supplier D's sample is here, but it came without the clips we need. | Supplier B's sample is at the receiving desk, and the clips are in the box. Let's test that one. I'll collect it. Can you mark the first reading as invalid? Leave the worksheet open so we can add the new reading after the test. | Graphic: Fan Evaluation Roster; Supplier A: AV-12; Supplier B: AV-21; Supplier C: AV-28; Supplier D: AV-36",
+    "vocabulary": [
+      {
+        "term": "clip",
+        "zh": "卡扣",
+        "note": "用來固定零件的扣件；測試樣品必須附有安裝時所需的卡扣。"
+      },
+      {
+        "term": "receiving desk",
+        "zh": "收貨處",
+        "note": "收取企業或工坊物料的地方；B 供應商的風扇樣品可在此領取。"
+      }
+    ],
+    "revision": 3
+  },
+  "originalQuestion": {
+    "id": "t01-q054-v2",
+    "testId": "test-01",
+    "number": 54,
+    "part": 3,
+    "groupId": "t01-g039",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "graphic-inference"
+    ],
+    "prompt": "Look at the graphic. Which model will the team test next?",
+    "promptZh": "請看圖表。團隊接下來會測試哪一個型號？",
+    "options": [
+      {
+        "id": "A",
+        "text": "AV-12",
+        "zh": "AV-12",
+        "whyZh": "AV-12 屬於供應商 A。"
+      },
+      {
+        "id": "B",
+        "text": "AV-21",
+        "zh": "AV-21",
+        "whyZh": "AV-21 屬於供應商 B。"
+      },
+      {
+        "id": "C",
+        "text": "AV-28",
+        "zh": "AV-28",
+        "whyZh": "AV-28 是供應商 C 的型號。"
+      },
+      {
+        "id": "D",
+        "text": "AV-36",
+        "zh": "AV-36",
+        "whyZh": "AV-36 屬於供應商 D。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "對話指名供應商 C 的大風扇；圖表中供應商 C 對應 AV-28。",
+    "evidence": "“Let’s test the larger fan from supplier C.” → Supplier C: AV-28.",
+    "vocabulary": [
+      {
+        "term": "airflow",
+        "zh": "風量；空氣流動",
+        "note": "此處指風扇所提供的冷卻氣流。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t01-g039-r2",
+    "testId": "test-01",
+    "part": 3,
+    "title": "Repeating a heat test",
+    "titleZh": "重做散熱測試",
+    "topic": "technology",
+    "passage": "Man: I was about to report seventy degrees, but the cover wasn't quite shut. The probe cable was caught under it.\nWoman: Leave that reading out of the comparison. We have to test with the cover fully closed. I've got a thinner cable that will fit the opening.\nMan: What about the replacement fan? Supplier A can deliver this afternoon, but not before our two o'clock test. Supplier D's sample is here, but it came without the clips we need.\nWoman: Supplier B's sample is at the receiving desk, and the clips are in the box. Let's test that one. I'll collect it. Can you mark the first reading as invalid? Leave the worksheet open so we can add the new reading after the test.",
+    "passageZh": "男：我本來要回報七十度，才發現上蓋沒有完全關好。探頭的線卡在上蓋下面了。\n女：不要把那筆讀值拿來比較。測試時上蓋必須完全關閉。我手上有一條更細的線，能穿過開孔。\n男：那更換的風扇呢？A 供應商今天下午可以送達，但趕不上我們兩點的測試。D 供應商的樣品已到了，但缺少需要的卡扣。\n女：B 供應商的樣品在收貨處，卡扣也在盒裡。我們測那一台吧，我會去領。可以請你把第一筆讀值標成無效嗎？工作表先不要關，測完後我們再加入新的讀值。",
+    "audioScript": "I was about to report seventy degrees, but the cover wasn't quite shut. The probe cable was caught under it.\nLeave that reading out of the comparison. We have to test with the cover fully closed. I've got a thinner cable that will fit the opening.\nWhat about the replacement fan? Supplier A can deliver this afternoon, but not before our two o'clock test. Supplier D's sample is here, but it came without the clips we need.\nSupplier B's sample is at the receiving desk, and the clips are in the box. Let's test that one. I'll collect it. Can you mark the first reading as invalid? Leave the worksheet open so we can add the new reading after the test.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "I was about to report seventy degrees, but the cover wasn't quite shut. The probe cable was caught under it."
+      },
+      {
+        "voice": "female",
+        "text": "Leave that reading out of the comparison. We have to test with the cover fully closed. I've got a thinner cable that will fit the opening."
+      },
+      {
+        "voice": "male",
+        "text": "What about the replacement fan? Supplier A can deliver this afternoon, but not before our two o'clock test. Supplier D's sample is here, but it came without the clips we need."
+      },
+      {
+        "voice": "female",
+        "text": "Supplier B's sample is at the receiving desk, and the clips are in the box. Let's test that one. I'll collect it. Can you mark the first reading as invalid? Leave the worksheet open so we can add the new reading after the test."
+      }
+    ],
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-KE",
+        "role": "male",
+        "modelVoice": "en-KE-ChilembaNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-KE",
+        "role": "female",
+        "modelVoice": "en-KE-AsiliaNeural"
+      }
+    ],
+    "image": "assets/graphics/t01-g039.svg",
+    "imageAlt": "Fan Evaluation Roster; Supplier A: AV-12; Supplier B: AV-21; Supplier C: AV-28; Supplier D: AV-36",
+    "audio": "audio/exams/test-01/groups/t01-g039-r2/passage.wav",
+    "audioStart": 0,
+    "audioEnd": 48.0125,
+    "duration": 48.0125
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-01-cues-03.mp3",
+      "start": 4.58812,
+      "end": 8.51096,
+      "assetSha256": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196",
+      "speech": "Questions 53 through 55. Listen to the conversation."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/exams/test-01/groups/t01-g039-r2/passage.wav",
+      "start": 0,
+      "end": 48.0125,
+      "assetSha256": "dd269fb6bbc5bc26c4827bfd7aaf76e744b506a9b07bc367381a4a8e50599622",
+      "speech": "I was about to report seventy degrees, but the cover wasn't quite shut. The probe cable was caught under it.\nLeave that reading out of the comparison. We have to test with the cover fully closed. I've got a thinner cable that will fit the opening.\nWhat about the replacement fan? Supplier A can deliver this afternoon, but not before our two o'clock test. Supplier D's sample is here, but it came without the clips we need.\nSupplier B's sample is at the receiving desk, and the clips are in the box. Let's test that one. I'll collect it. Can you mark the first reading as invalid? Leave the worksheet open so we can add the new reading after the test."
+    },
+    {
+      "mode": "question",
+      "path": "audio/exams/test-01/questions/Q054/formal-stem-r2.wav",
+      "start": 0,
+      "end": 8.0375,
+      "assetSha256": "d0ade96116b8d9534e0a44535f3ea3b96c2a7526d8e1df33d69497b187094e5a",
+      "speech": "Number 54. Look at the graphic. Which fan model will the speakers test at two o'clock?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/exams/test-01/groups/t01-g039-r2/passage.wav",
+      "start": 0,
+      "end": 48.0125,
+      "assetSha256": "dd269fb6bbc5bc26c4827bfd7aaf76e744b506a9b07bc367381a4a8e50599622",
+      "speech": "I was about to report seventy degrees, but the cover wasn't quite shut. The probe cable was caught under it.\nLeave that reading out of the comparison. We have to test with the cover fully closed. I've got a thinner cable that will fit the opening.\nWhat about the replacement fan? Supplier A can deliver this afternoon, but not before our two o'clock test. Supplier D's sample is here, but it came without the clips we need.\nSupplier B's sample is at the receiving desk, and the clips are in the box. Let's test that one. I'll collect it. Can you mark the first reading as invalid? Leave the worksheet open so we can add the new reading after the test."
+    }
+  ],
+  "imageSha256": "dcc42595e5f4dc9f8f5f423b9e4860404256386fb4410a134f86493c7da8d1ff"
+}

@@ -1,0 +1,1069 @@
+{
+  "status": "local-proposal-not-published",
+  "baseRef": "43087f6+Q098–100 overlay",
+  "priorDeploymentRef": "043b91761f63062708d70f7cda3a6b2046cd4cf9",
+  "oldGroupSha256": "d78a365c5005d558fb3dcabc5f7de0954ee69f8bb9368b88142420bc07903c8d",
+  "oldLegacyQuestionsSha256": {
+    "t01-q054": "250b6244c57e99da94eb16128d54eb0246a22aced2f3846bcbad32eb3158e947"
+  },
+  "retiredLegacyRecordsPreservedInPriorPack": [
+    {
+      "id": "t01-q054",
+      "testId": "test-01",
+      "number": 54,
+      "part": 3,
+      "groupId": "t01-g039",
+      "topic": "technology",
+      "difficulty": "intermediate",
+      "tags": [
+        "technology",
+        "reason"
+      ],
+      "prompt": "Why does the woman suggest a larger fan?",
+      "promptZh": "女子為什麼提議使用較大的風扇？",
+      "options": [
+        {
+          "id": "A",
+          "text": "It can maintain airflow at a lower speed.",
+          "zh": "它能以較低轉速維持風量。",
+          "whyZh": "女子說大風扇能以較低速度提供同樣風量，因此值得測試其降噪效果；對話尚未宣稱測試已通過。"
+        },
+        {
+          "id": "B",
+          "text": "It requires no connector.",
+          "zh": "它不需要連接器。",
+          "whyZh": "男子明說連接器不同，需要轉接器。"
+        },
+        {
+          "id": "C",
+          "text": "It will eliminate the need for cooling.",
+          "zh": "它會讓設備不再需要散熱。",
+          "whyZh": "風扇仍是散熱方式，並未取消散熱需求。"
+        },
+        {
+          "id": "D",
+          "text": "It has already passed every test.",
+          "zh": "它已通過所有測試。",
+          "whyZh": "女子說要測試這顆風扇，聲學測試室也尚待預約。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "女子說大風扇能以較低速度提供同樣風量，因此值得測試其降噪效果；對話尚未宣稱測試已通過。",
+      "evidence": "It can move the same amount of air at a lower speed.",
+      "vocabulary": [
+        {
+          "term": "airflow",
+          "zh": "風量；空氣流動",
+          "note": "此處指風扇所提供的冷卻氣流。"
+        }
+      ],
+      "revision": 1
+    }
+  ],
+  "oldGroupId": "t01-g039",
+  "newGroup": {
+    "id": "t01-g039-r2",
+    "testId": "test-01",
+    "part": 3,
+    "title": "Repeating a heat test",
+    "titleZh": "重做散熱測試",
+    "topic": "technology",
+    "passage": "Man: I was about to report seventy degrees, but the cover wasn't quite shut. The probe cable was caught under it.\nWoman: Leave that reading out of the comparison. We have to test with the cover fully closed. I've got a thinner cable that will fit the opening.\nMan: What about the replacement fan? Supplier A can deliver this afternoon, but not before our two o'clock test. Supplier D's sample is here, but it came without the clips we need.\nWoman: Supplier B's sample is at the receiving desk, and the clips are in the box. Let's test that one. I'll collect it. Can you mark the first reading as invalid? Leave the worksheet open so we can add the new reading after the test.",
+    "passageZh": "男：我本來要回報七十度，才發現上蓋沒有完全關好。探頭的線卡在上蓋下面了。\n女：不要把那筆讀值拿來比較。測試時上蓋必須完全關閉。我手上有一條更細的線，能穿過開孔。\n男：那更換的風扇呢？A 供應商今天下午可以送達，但趕不上我們兩點的測試。D 供應商的樣品已到了，但缺少需要的卡扣。\n女：B 供應商的樣品在收貨處，卡扣也在盒裡。我們測那一台吧，我會去領。可以請你把第一筆讀值標成無效嗎？工作表先不要關，測完後我們再加入新的讀值。",
+    "audioScript": "I was about to report seventy degrees, but the cover wasn't quite shut. The probe cable was caught under it.\nLeave that reading out of the comparison. We have to test with the cover fully closed. I've got a thinner cable that will fit the opening.\nWhat about the replacement fan? Supplier A can deliver this afternoon, but not before our two o'clock test. Supplier D's sample is here, but it came without the clips we need.\nSupplier B's sample is at the receiving desk, and the clips are in the box. Let's test that one. I'll collect it. Can you mark the first reading as invalid? Leave the worksheet open so we can add the new reading after the test.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "I was about to report seventy degrees, but the cover wasn't quite shut. The probe cable was caught under it."
+      },
+      {
+        "voice": "female",
+        "text": "Leave that reading out of the comparison. We have to test with the cover fully closed. I've got a thinner cable that will fit the opening."
+      },
+      {
+        "voice": "male",
+        "text": "What about the replacement fan? Supplier A can deliver this afternoon, but not before our two o'clock test. Supplier D's sample is here, but it came without the clips we need."
+      },
+      {
+        "voice": "female",
+        "text": "Supplier B's sample is at the receiving desk, and the clips are in the box. Let's test that one. I'll collect it. Can you mark the first reading as invalid? Leave the worksheet open so we can add the new reading after the test."
+      }
+    ],
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-KE",
+        "role": "male",
+        "modelVoice": "en-KE-ChilembaNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-KE",
+        "role": "female",
+        "modelVoice": "en-KE-AsiliaNeural"
+      }
+    ],
+    "image": "assets/graphics/t01-g039.svg",
+    "imageAlt": "Fan Evaluation Roster; Supplier A: AV-12; Supplier B: AV-21; Supplier C: AV-28; Supplier D: AV-36",
+    "audio": "audio/exams/test-01/groups/t01-g039-r2/passage.wav",
+    "audioStart": 0,
+    "audioEnd": 48.0125,
+    "duration": 48.0125
+  },
+  "oldQuestionSha256": {
+    "53": "e0358d078b0021183d81dad939cf88c3d17f3b34f052a73cc454047eae2f7c73",
+    "54": "078ab558506c4781bb210eec4f4096ddb8543bed9893996a872d5608cddcc4dd",
+    "55": "743da279269d583b766c889dc5aff719e74ad95093bc519b45f5ee50701afb3d"
+  },
+  "newQuestions": [
+    {
+      "id": "t01-q053-r2",
+      "testId": "test-01",
+      "number": 53,
+      "part": 3,
+      "groupId": "t01-g039-r2",
+      "topic": "technology",
+      "difficulty": "intermediate",
+      "tags": [
+        "technology",
+        "problem"
+      ],
+      "prompt": "Why won't the speakers use the first reading in their comparison?",
+      "promptZh": "為什麼說話者不把第一次的讀值拿來比較？",
+      "options": [
+        {
+          "id": "A",
+          "text": "The probe cable kept the cover from closing.",
+          "zh": "探頭的線讓上蓋無法完全關好。",
+          "whyZh": "探頭線卡在上蓋下方，而只有上蓋完全關閉的測試讀值才能拿來比較。"
+        },
+        {
+          "id": "B",
+          "text": "The reading was taken after a fan was replaced.",
+          "zh": "讀到這個數值之前已經更換風扇。",
+          "whyZh": "對話沒有說先換了風扇才量得第一筆讀值。兩人在討論接下來要測試哪一款風扇；判斷讀值無效的原因是當時沒有封好外蓋。"
+        },
+        {
+          "id": "C",
+          "text": "The temperature was below the sensor's range.",
+          "zh": "溫度低於感測器的量測範圍。",
+          "whyZh": "對話沒有說七十度超出感測器的量測範圍；不採用讀值的原因在於上蓋沒有關好。"
+        },
+        {
+          "id": "D",
+          "text": "The worksheet had been closed before the reading was entered.",
+          "zh": "輸入讀值前，工作表就已關閉。",
+          "whyZh": "女子請男子把工作表保持開啟，並不是因為工作表已關閉才捨棄該讀值。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "探頭線卡在上蓋下方，而只有上蓋完全關閉的測試讀值才能拿來比較。",
+      "evidence": "I was about to report seventy degrees, but the cover wasn't quite shut. The probe cable was caught under it. | Leave that reading out of the comparison. We have to test with the cover fully closed. I've got a thinner cable that will fit the opening.",
+      "vocabulary": [
+        {
+          "term": "probe cable",
+          "zh": "探頭線",
+          "note": "連接測量探頭的線；本題它卡住了上蓋。"
+        },
+        {
+          "term": "reading",
+          "zh": "讀值",
+          "note": "儀器量出的數值；只有符合測試條件的讀值才能比較。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t01-q054-r3",
+      "testId": "test-01",
+      "number": 54,
+      "part": 3,
+      "groupId": "t01-g039-r2",
+      "topic": "technology",
+      "difficulty": "intermediate",
+      "tags": [
+        "technology",
+        "graphic-inference"
+      ],
+      "prompt": "Look at the graphic. Which fan model will the speakers test at two o'clock?",
+      "promptZh": "請看圖表。兩位說話者兩點要測試哪一款風扇？",
+      "options": [
+        {
+          "id": "A",
+          "text": "AV-12",
+          "zh": "AV-12",
+          "whyZh": "圖表中的 AV-12 來自 A 供應商，這款樣品趕不上兩點的測試。"
+        },
+        {
+          "id": "B",
+          "text": "AV-21",
+          "zh": "AV-21",
+          "whyZh": "B 供應商的樣品已到收貨處且附卡扣；圖表把 B 供應商對應到 AV-21。"
+        },
+        {
+          "id": "C",
+          "text": "AV-28",
+          "zh": "AV-28",
+          "whyZh": "AV-28 對應 C 供應商，不是女子最後選定的 B 供應商。"
+        },
+        {
+          "id": "D",
+          "text": "AV-36",
+          "zh": "AV-36",
+          "whyZh": "AV-36 對應 D 供應商；樣品雖已到，但缺少安裝時需要的卡扣。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "B 供應商的樣品已到收貨處且附卡扣；圖表把 B 供應商對應到 AV-21。",
+      "evidence": "What about the replacement fan? Supplier A can deliver this afternoon, but not before our two o'clock test. Supplier D's sample is here, but it came without the clips we need. | Supplier B's sample is at the receiving desk, and the clips are in the box. Let's test that one. I'll collect it. Can you mark the first reading as invalid? Leave the worksheet open so we can add the new reading after the test. | Graphic: Fan Evaluation Roster; Supplier A: AV-12; Supplier B: AV-21; Supplier C: AV-28; Supplier D: AV-36",
+      "vocabulary": [
+        {
+          "term": "clip",
+          "zh": "卡扣",
+          "note": "用來固定零件的扣件；測試樣品必須附有安裝時所需的卡扣。"
+        },
+        {
+          "term": "receiving desk",
+          "zh": "收貨處",
+          "note": "收取企業或工坊物料的地方；B 供應商的風扇樣品可在此領取。"
+        }
+      ],
+      "revision": 3
+    },
+    {
+      "id": "t01-q055-r2",
+      "testId": "test-01",
+      "number": 55,
+      "part": 3,
+      "groupId": "t01-g039-r2",
+      "topic": "technology",
+      "difficulty": "intermediate",
+      "tags": [
+        "technology",
+        "requested_action"
+      ],
+      "prompt": "What will the man most likely do before the test?",
+      "promptZh": "測試前，男子最可能會做什麼？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pick up the fan at the receiving desk.",
+          "zh": "去收貨處領風扇。",
+          "whyZh": "女子說她會去領風扇，這不是請男子做的事。"
+        },
+        {
+          "id": "B",
+          "text": "Put the new reading in the worksheet.",
+          "zh": "把新的讀值填進工作表。",
+          "whyZh": "新讀值要等測試結束才能輸入，現在還沒有。"
+        },
+        {
+          "id": "C",
+          "text": "Close the worksheet after saving the earlier reading.",
+          "zh": "儲存先前的讀值後，關閉工作表。",
+          "whyZh": "女子明確要求工作表保持開啟，好在測完後加入新讀值。"
+        },
+        {
+          "id": "D",
+          "text": "Flag the earlier reading without closing the worksheet.",
+          "zh": "將第一次的讀值標為無效，並讓工作表保持開啟。",
+          "whyZh": "女子請男子先將第一筆標成無效，並保留工作表開啟；等測完再加入新讀值。"
+        }
+      ],
+      "answer": "D",
+      "explanationZh": "女子請男子先將第一筆標成無效，並保留工作表開啟；等測完再加入新讀值。",
+      "evidence": "Supplier B's sample is at the receiving desk, and the clips are in the box. Let's test that one. I'll collect it. Can you mark the first reading as invalid? Leave the worksheet open so we can add the new reading after the test.",
+      "vocabulary": [
+        {
+          "term": "invalid",
+          "zh": "無效的",
+          "note": "資料因不符合測試條件而不能採用，但仍可保留註記以供查核。"
+        },
+        {
+          "term": "flag",
+          "zh": "加上標記",
+          "note": "在文件或工作表中標註需注意或不可採用的項目。"
+        }
+      ],
+      "revision": 2
+    }
+  ],
+  "oldListeningPlanSha256": "4fcec57865de92b619d33dea6d9fd25b8e4f9b90be2eced7eaf8c75c50e00e32",
+  "newListeningPlanSha256": "3860acbef7d3940ca000aceb0e1e82fa4b51fd47b44f38cc70f6aa68117abe21",
+  "formalFrameOps": [
+    {
+      "index": 101,
+      "beforeSha256": "7ede8848f2da37f918836f58f5c446d648bba4dd415c43b2467d1b24b9845ccd",
+      "updates": {
+        "duration": 8.29961
+      }
+    },
+    {
+      "index": 102,
+      "beforeSha256": "3f105761a155dbf0bb8be2694947523fabeede914bbccdd5ad3ee94ec057cb3f",
+      "updates": {
+        "at": 890.38804
+      }
+    },
+    {
+      "index": 103,
+      "beforeSha256": "4317de219541b836f63c548b2e7a85c22594e1c46e8bb41c742d2b91aafadac1",
+      "updates": {
+        "duration": 8.29961,
+        "at": 894.44766
+      }
+    },
+    {
+      "index": 104,
+      "beforeSha256": "7e4e0119931e20d9cc893da92b91db8e8688d95ab4ae3ad403f2e0b6d6883122",
+      "updates": {
+        "at": 902.74727
+      }
+    },
+    {
+      "index": 105,
+      "beforeSha256": "6ea56e2f49b867791e6e2d740ac3f5940e3092d9494ad3c2bf806da88957295a",
+      "updates": {
+        "duration": 8.29961,
+        "at": 905.72319
+      }
+    },
+    {
+      "index": 106,
+      "beforeSha256": "a0d2de2f40d99174a52ed292f39690271d6071b51d172215adf3f346b8b8c59f",
+      "updates": {
+        "at": 914.0228
+      }
+    },
+    {
+      "index": 107,
+      "beforeSha256": "0d35ee1649dc8804790841457aad576b9eba7b93079b6f90b09598bef5646724",
+      "updates": {
+        "at": 918.09459
+      }
+    },
+    {
+      "index": 108,
+      "beforeSha256": "32ea84a344563dc9f0586142758de527677163dc59d5ffb14652e5900ec61188",
+      "updates": {
+        "at": 961.46259
+      }
+    },
+    {
+      "index": 109,
+      "beforeSha256": "b8f329545ca59001b7bf18edd1926cbab067aaa324bea2a76a069d2e6a73d57c",
+      "updates": {
+        "duration": 8.29961,
+        "at": 964.58184
+      }
+    },
+    {
+      "index": 110,
+      "beforeSha256": "1bb7ac382c5be42dd18d54fd0c5fd908a325afee69b5666c3ecc3a6eac9d3984",
+      "updates": {
+        "at": 972.88145
+      }
+    },
+    {
+      "index": 111,
+      "beforeSha256": "77f20ed2d09df6a70a060a9dc18117cd4c2e6d309b1115e59b8fda96588cc44b",
+      "updates": {
+        "duration": 8.29961,
+        "at": 976.34374
+      }
+    },
+    {
+      "index": 112,
+      "beforeSha256": "27215cf276bcbbcd4011b5a831c5233aaa2e3433f2189bcdd36c5121cf9dbffb",
+      "updates": {
+        "at": 984.64335
+      }
+    },
+    {
+      "index": 113,
+      "beforeSha256": "8b51dca0f50fa5cdc26ec9059d3095fb12671fa35e94234c79ffa73da146f7e1",
+      "updates": {
+        "duration": 8.29961,
+        "at": 988.52293
+      }
+    },
+    {
+      "index": 114,
+      "beforeSha256": "08ab76bf8c46b9bd949a75d5eb423dcdd4762c17f7ea20cbbd1c089d44bc08d2",
+      "updates": {
+        "at": 996.82254
+      }
+    },
+    {
+      "index": 115,
+      "beforeSha256": "3128fb59b89bbff4d564b8b60f668dd7874952ad79839bd3f11b0765e67bdd97",
+      "updates": {
+        "at": 1000.40096
+      }
+    },
+    {
+      "index": 116,
+      "beforeSha256": "8dbd0cf5062767794318e649f472c06ada8b033d21e4c6b91cddbc44a1b52394",
+      "updates": {
+        "at": 1043.04896
+      }
+    },
+    {
+      "index": 117,
+      "beforeSha256": "9ba91cbac264ee6af2e78cd15fc0c33d947e07128eeb0b77c41bd0072c38ebb4",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1046.06667
+      }
+    },
+    {
+      "index": 118,
+      "beforeSha256": "c4d8763ac54810bfa14e58fcf5f9b0d7f42c3042337dd78ea94ee6f7c53f892a",
+      "updates": {
+        "at": 1054.36628
+      }
+    },
+    {
+      "index": 119,
+      "beforeSha256": "e83beb2fa61c38a81044565d7bc1f832a33244bc4c50174d414b399d818670f1",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1057.22149
+      }
+    },
+    {
+      "index": 120,
+      "beforeSha256": "384a8c4cec23766f3a3772afe3a99b42076f18f164fea56b1760358243bfcfd7",
+      "updates": {
+        "at": 1065.5211
+      }
+    },
+    {
+      "index": 121,
+      "beforeSha256": "394efe3eceef09921c41433d1b30b97ddb6d4b8fa6168cba4afbf0003e491e24",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1067.49168
+      }
+    },
+    {
+      "index": 122,
+      "beforeSha256": "66b1da67ce1ff4ff3f63e2a6c4067aa0b6feeb2c2624e59ec0c0869cd588f403",
+      "updates": {
+        "at": 1075.79129
+      }
+    },
+    {
+      "index": 123,
+      "beforeSha256": "f5ca97cbb6e0a066203d0d34d883f48737cfad01ba58b629d74cac470b0a34bf",
+      "updates": {
+        "at": 1079.61425
+      }
+    },
+    {
+      "index": 124,
+      "beforeSha256": "0b76a1b9a2a3f00a7a943c8ca11d898206f09dd28c8ae4b1d62220399f1ab661",
+      "updates": {
+        "at": 1118.99825
+      }
+    },
+    {
+      "index": 125,
+      "beforeSha256": "e7d1198678713b6a1119880ae2faee266ecea440cca0892c49f769df135d8dad",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1122.27396
+      }
+    },
+    {
+      "index": 126,
+      "beforeSha256": "81df5884dc821494f2f79522d305214da9048f456e377b777af40e214ffc06fc",
+      "updates": {
+        "at": 1130.57357
+      }
+    },
+    {
+      "index": 127,
+      "beforeSha256": "337ceb2f79b9dd5f33aa94dea0ff6d9f2d7b34fdcce33f3f340c8d6aeafcd146",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1133.58115
+      }
+    },
+    {
+      "index": 128,
+      "beforeSha256": "870500fd3f8d08eb167662b9aa814ea2cd5106aab34f25df1534b74cd1274813",
+      "updates": {
+        "at": 1141.88076
+      }
+    },
+    {
+      "index": 129,
+      "beforeSha256": "3176b361da9b1b8f26036784aff57a21eaa0ad7e8ce597c604439675b25c4c12",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1145.63672
+      }
+    },
+    {
+      "index": 130,
+      "beforeSha256": "3d154a7be6b81c238267e0a582e38ba5a1e46957ddc3b2f77b24a3ea686c9683",
+      "updates": {
+        "at": 1153.93633
+      }
+    },
+    {
+      "index": 131,
+      "beforeSha256": "f01d696ad767b500cdd601f7dd1a924b548dcbf9c9d02e60b85c491a5fa81d09",
+      "updates": {
+        "at": 1157.90208
+      }
+    },
+    {
+      "index": 132,
+      "beforeSha256": "4d697f054066696ea63a4d51c3db361c1c62e5ee28afe88db660c82784444151",
+      "updates": {
+        "at": 1198.75008
+      }
+    },
+    {
+      "index": 133,
+      "beforeSha256": "4be47021bd7de5e33fa57a3a9115f4660a90986a742cc7cfd52e630a82fe0e3f",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1203.27787
+      }
+    },
+    {
+      "index": 134,
+      "beforeSha256": "e8d7017b4b5fa425f3946aa923266c309504f10786e7f8168da334abc345e776",
+      "updates": {
+        "at": 1211.57748
+      }
+    },
+    {
+      "index": 135,
+      "beforeSha256": "003610a80ad8f040183a5771864a38f7af73a214df8a2f0f9977e525d55bf55c",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1214.64473
+      }
+    },
+    {
+      "index": 136,
+      "beforeSha256": "bd849bb38a7d0085fda430b7e564f6f884f9d2663cfb4b591c57af289170d524",
+      "updates": {
+        "at": 1222.94434
+      }
+    },
+    {
+      "index": 137,
+      "beforeSha256": "81d3d67e37e3e2ac6e708e1075e5293febb4df7c19235f7f3c845448542221a8",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1226.60684
+      }
+    },
+    {
+      "index": 138,
+      "beforeSha256": "f3a88c66a61c1de02976c4985af8515b2dfba6161c02cfc2fa20e3b5fec8db74",
+      "updates": {
+        "at": 1234.90645
+      }
+    },
+    {
+      "index": 139,
+      "beforeSha256": "b9d1ebbf8768b56efcd6b214ed6c772826463f87b3dbbad112a1c21a9fad889c",
+      "updates": {
+        "at": 1238.87732
+      }
+    },
+    {
+      "index": 140,
+      "beforeSha256": "a8feef29e81b439f6cc75b334afa61a71f4bda0bc0ffc9720a940cae37574b32",
+      "updates": {
+        "at": 1282.00532
+      }
+    },
+    {
+      "index": 141,
+      "beforeSha256": "e02b1fc6324aa541b43f600db6cc4358e8948b8c158b1d6fe092361d107c0d22",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1285.08944
+      }
+    },
+    {
+      "index": 142,
+      "beforeSha256": "52fa5f25fca3fc384d1a946da6fbbd236ecb5c74ed988daf4c1b57a7357b1eb8",
+      "updates": {
+        "at": 1293.38905
+      }
+    },
+    {
+      "index": 143,
+      "beforeSha256": "ca8cde3c382178789ee39bb0be8d38bf9d99c96ad38c9769e2df355d495e546f",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1296.43668
+      }
+    },
+    {
+      "index": 144,
+      "beforeSha256": "01014319a92233e52f8eb93f437385fdc6a9dc36a174fb34299178e7b103b6ad",
+      "updates": {
+        "at": 1304.73629
+      }
+    },
+    {
+      "index": 145,
+      "beforeSha256": "e63745b70a483921d6f26f8b7b1a10f467c9c77a002101fffac8a319c76ccaef",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1307.73375
+      }
+    },
+    {
+      "index": 146,
+      "beforeSha256": "b109792d9f6b4d8ad08ae5c83a1df62924759fc76dfc61599d830ba4c4af51c0",
+      "updates": {
+        "at": 1316.03336
+      }
+    },
+    {
+      "index": 147,
+      "beforeSha256": "fcdc9c13ad84b6f0ef5aabc332ae926dd5761a2aa976f33a13477bb1387cb219",
+      "updates": {
+        "at": 1319.63578
+      }
+    },
+    {
+      "index": 148,
+      "beforeSha256": "8269ab218b8ae80c2b8c882a16fd52ec144b36f298b1addf4fc01b34d0c32a4d",
+      "updates": {
+        "at": 1360.29178
+      }
+    },
+    {
+      "index": 149,
+      "beforeSha256": "3c792dbab437aed3145cff2bb2166982a52521acf05dfb03e2a0f4b8e0e088d0",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1363.46495
+      }
+    },
+    {
+      "index": 150,
+      "beforeSha256": "6a16d49e5d8ca44369a3379d96407987faee42e47b2151cc23a375c0cda80e01",
+      "updates": {
+        "at": 1371.76456
+      }
+    },
+    {
+      "index": 151,
+      "beforeSha256": "9c545ab200df51cc55e1077891fc5f6fcb2a6fa87c9ad997904295eafc8c8962",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1375.79714
+      }
+    },
+    {
+      "index": 152,
+      "beforeSha256": "3c7c50c965c721ce54461bcdd6f5383c37e12d3219eb70d55b7df8616a437ee4",
+      "updates": {
+        "at": 1384.09675
+      }
+    },
+    {
+      "index": 153,
+      "beforeSha256": "feab45fc75a92115ad99ec94d9a6198782154252b92ba0ce4beb1b2345e2d6af",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1388.18487
+      }
+    },
+    {
+      "index": 154,
+      "beforeSha256": "6ded1544c468775ccb586b21461222dec00fb1939bfda32517ca2fef5b16f086",
+      "updates": {
+        "groupId": "t01-g039-r2",
+        "at": 1396.48448
+      }
+    },
+    {
+      "index": 155,
+      "beforeSha256": "ff18355f93f96a76318991cf26889f73eb082fc17c4dcc3aee3f9879103f1f7f",
+      "updates": {
+        "src": "audio/exams/test-01/groups/t01-g039-r2/passage.wav",
+        "start": 0,
+        "end": 48.0125,
+        "duration": 48.0125,
+        "groupId": "t01-g039-r2",
+        "at": 1400.40731
+      }
+    },
+    {
+      "index": 156,
+      "beforeSha256": "04fe54d4847516d13ab0bd55a02531861534e9caf55c3e4cd98a067b0f0bf813",
+      "updates": {
+        "src": "audio/exams/test-01/questions/Q053/formal-stem-r2.wav",
+        "start": 0,
+        "end": 6.3,
+        "duration": 6.3,
+        "groupId": "t01-g039-r2",
+        "questionId": "t01-q053-r2",
+        "at": 1448.41981
+      }
+    },
+    {
+      "index": 157,
+      "beforeSha256": "78d3d8f0ab81aeb8466915f8cd008db2dac1b44d61cb9cfa6e2352e27eaaa079",
+      "updates": {
+        "duration": 8.29961,
+        "groupId": "t01-g039-r2",
+        "questionId": "t01-q053-r2",
+        "at": 1454.71981
+      }
+    },
+    {
+      "index": 158,
+      "beforeSha256": "5df9ad635cf51bf7ebd60e2ce24a51d5c2a5c78f856c45c854632c85dfc38915",
+      "updates": {
+        "src": "audio/exams/test-01/questions/Q054/formal-stem-r2.wav",
+        "start": 0,
+        "end": 8.0375,
+        "duration": 8.0375,
+        "groupId": "t01-g039-r2",
+        "questionId": "t01-q054-r3",
+        "at": 1463.01942
+      }
+    },
+    {
+      "index": 159,
+      "beforeSha256": "5105459d5c1d8dc22aa3a057fc679f1a4d7e456a54fe419847c2a765d24afcd2",
+      "updates": {
+        "groupId": "t01-g039-r2",
+        "questionId": "t01-q054-r3",
+        "at": 1471.05692
+      }
+    },
+    {
+      "index": 160,
+      "beforeSha256": "f20391f24383508d62ad8caa32420a441dc7dd993dd16cce848d0b452afdddb8",
+      "updates": {
+        "src": "audio/exams/test-01/questions/Q055/formal-stem-r2.wav",
+        "start": 0,
+        "end": 5.5625,
+        "duration": 5.5625,
+        "groupId": "t01-g039-r2",
+        "questionId": "t01-q055-r2",
+        "at": 1484.25683
+      }
+    },
+    {
+      "index": 161,
+      "beforeSha256": "6172d91e305e4ef96cb175e40b8df3e1d905daa08be29ba527e8504f5b56f1e1",
+      "updates": {
+        "duration": 8.29961,
+        "groupId": "t01-g039-r2",
+        "questionId": "t01-q055-r2",
+        "at": 1489.81933
+      }
+    },
+    {
+      "index": 162,
+      "beforeSha256": "02535c2152a2274172839b419496fc349587102f8198ae17e0978683cc929db5",
+      "updates": {
+        "at": 1498.11894
+      }
+    },
+    {
+      "index": 163,
+      "beforeSha256": "b5816dc02f35a9f3f9227061a6a4606e251dc83d7d9b7a24f6c65d7b2adc210b",
+      "updates": {
+        "at": 1502.02311
+      }
+    },
+    {
+      "index": 164,
+      "beforeSha256": "e06aaabc11b806ce6706b913e53c964a128b087555d3414d51e51ba44e9eb9e0",
+      "updates": {
+        "at": 1536.65511
+      }
+    },
+    {
+      "index": 165,
+      "beforeSha256": "c39e445b87312a4427f99085a1bb8d9de21dea3e3adc8e02a1c59eb0e6072ef1",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1540.41878
+      }
+    },
+    {
+      "index": 166,
+      "beforeSha256": "891fd93901f30ad7853e287010221cd282dce0314f6e19dd50ef45b8456dcbce",
+      "updates": {
+        "at": 1548.71839
+      }
+    },
+    {
+      "index": 167,
+      "beforeSha256": "b951103a99adf6bb057722361b7ec5aa0d48410a10d592c68cdfcd2215149df9",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1552.49951
+      }
+    },
+    {
+      "index": 168,
+      "beforeSha256": "06f281566fe5f6641c3d2f56dfbf62263bd096a7c15df4f20d7308bbd8f13540",
+      "updates": {
+        "at": 1560.79912
+      }
+    },
+    {
+      "index": 169,
+      "beforeSha256": "0589811a8255262cf96ac73eebd66da9bf2f2b03b754900e513b155cbec67a6b",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1563.41233
+      }
+    },
+    {
+      "index": 170,
+      "beforeSha256": "c319fdd921e7eb0540abf2f42db095957da522db7596022acaa87ed801ea7e3d",
+      "updates": {
+        "at": 1571.71194
+      }
+    },
+    {
+      "index": 171,
+      "beforeSha256": "fb9148a1a47098683a35d0a7933ff46b128f64b331773a7e09a5a3b80baa8dd2",
+      "updates": {
+        "at": 1575.72519
+      }
+    },
+    {
+      "index": 172,
+      "beforeSha256": "fc169f35450b3f73a5d0e1da44a912615d22cc15956207ea2215a934160c431d",
+      "updates": {
+        "at": 1611.62919
+      }
+    },
+    {
+      "index": 173,
+      "beforeSha256": "5d030feaf687c899eddb8ecb40a8e46dea7052074d2f3edab1472cb84cd3785b",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1614.50556
+      }
+    },
+    {
+      "index": 174,
+      "beforeSha256": "7106250a5fb63ae2b9072d185a7aab9dd885ab4d165bf399a5b558aa7da5a9b4",
+      "updates": {
+        "at": 1622.80517
+      }
+    },
+    {
+      "index": 175,
+      "beforeSha256": "74e9f37344a40a69e3a7c7043cfbc8d1760857417bce13282c1cce34913173a0",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1625.9645
+      }
+    },
+    {
+      "index": 176,
+      "beforeSha256": "9b91f6d39a1e9db6294ca614c24eb92a434a2f86e97a736c8385a676755a3acc",
+      "updates": {
+        "at": 1634.26411
+      }
+    },
+    {
+      "index": 177,
+      "beforeSha256": "915bb480de5ada4f6cfe456cac87ef6664e84d536e0d80e5d9eb51e5da693f76",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1637.72736
+      }
+    },
+    {
+      "index": 178,
+      "beforeSha256": "3e9106e304eac8a4d1bf52a0f03a680df3e4ae3f848b08ff80330fcecb05eed3",
+      "updates": {
+        "at": 1646.02697
+      }
+    },
+    {
+      "index": 179,
+      "beforeSha256": "03cdcef4e9fa9c93b8379306b65917093b9681274e26bb088e1cf7d0c799fe1a",
+      "updates": {
+        "at": 1650.0403
+      }
+    },
+    {
+      "index": 180,
+      "beforeSha256": "9f458938c79f82cd9503bef226cb9150084c608869eda5d26b8473fcd48e93be",
+      "updates": {
+        "at": 1686.7603
+      }
+    },
+    {
+      "index": 181,
+      "beforeSha256": "88eaafabe11606adb3c12958f0098e3d136603ab5e100d061dbfab699e9df9b4",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1689.6728
+      }
+    },
+    {
+      "index": 182,
+      "beforeSha256": "a90c4739370c1b0d65af930534c615fbfc200d4052209154da270ecb8c3da53f",
+      "updates": {
+        "at": 1697.97241
+      }
+    },
+    {
+      "index": 183,
+      "beforeSha256": "59a9e6c09783e0c5f4fe4e6e55346c3d909f28156a2e1459a4a83541716ac930",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1700.66358
+      }
+    },
+    {
+      "index": 184,
+      "beforeSha256": "c2fcf2c7a399489fd03b43b8bb30cc267f6d1ed923208a952661a2e1678ea070",
+      "updates": {
+        "at": 1708.96319
+      }
+    },
+    {
+      "index": 185,
+      "beforeSha256": "c33d1a17ccff10d828bc0c9e75d65c31176c27f81d42fc0e549374391e81adaa",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1712.18806
+      }
+    },
+    {
+      "index": 186,
+      "beforeSha256": "d3548da44f85fdd4502180edb8d3fc0cdafd552418293a7cf60e667f93f5d75e",
+      "updates": {
+        "at": 1720.48767
+      }
+    },
+    {
+      "index": 187,
+      "beforeSha256": "c62b84edccbb041f08b6ec369b106e43405c15f303b23be78df3a7d6d0a2ee45",
+      "updates": {
+        "at": 1724.60859
+      }
+    },
+    {
+      "index": 188,
+      "beforeSha256": "ab6517769c6cc3705ba48a569903bcd0b9c7bdfa80b281954a272b476a157097",
+      "updates": {
+        "at": 1762.16859
+      }
+    },
+    {
+      "index": 189,
+      "beforeSha256": "00ef3b1526f1e3572a3e70ed837b9b98b46ff416487762cf7bba843881bf818a",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1765.43371
+      }
+    },
+    {
+      "index": 190,
+      "beforeSha256": "c29317cfaa594d52970c03870ecb9032e581f37be02e0ccce9a56a66cbde569e",
+      "updates": {
+        "at": 1773.73332
+      }
+    },
+    {
+      "index": 191,
+      "beforeSha256": "884ef4990009b3b83b2c2178a5c0a734df61a8776a9e91e05fa9d1aaaafd74ba",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1778.0729
+      }
+    },
+    {
+      "index": 192,
+      "beforeSha256": "fc63a9baa68d8be5e54db786dc59a62a4e5d7f682b4904ec347fe59175d1c78f",
+      "updates": {
+        "at": 1786.37251
+      }
+    },
+    {
+      "index": 193,
+      "beforeSha256": "d4c6f8675f064218c199c981c58c22b7f03fb206fc68a966e5613f3cc18caa9a",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1789.12713
+      }
+    },
+    {
+      "index": 194,
+      "beforeSha256": "31390868d5eece82de0787ced5b27d0f409b18b4116e837ef7141a46f7878cc4",
+      "updates": {
+        "at": 1797.42674
+      }
+    },
+    {
+      "index": 195,
+      "beforeSha256": "7b3da463cc1f2827486e717ea58df25b7b984a99dd8c8d9a76d79493a195db01",
+      "updates": {
+        "at": 1801.25324
+      }
+    },
+    {
+      "index": 196,
+      "beforeSha256": "c1942f560e6e284564ddec5785a169c527c17a101a15a79f2482130e13932ee4",
+      "updates": {
+        "at": 1834.22924
+      }
+    },
+    {
+      "index": 197,
+      "beforeSha256": "f1d0c9c3b2da25da1bd8b92c5336ca4dfb5f7e639e9d39b862f6c371aa022310",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1836.84361
+      }
+    },
+    {
+      "index": 198,
+      "beforeSha256": "45e8e498f092bc6dc1302ba13f3148c0df0db4e3b1906e3c87d51ba22cb1eac7",
+      "updates": {
+        "at": 1845.14322
+      }
+    },
+    {
+      "index": 199,
+      "beforeSha256": "fb643d3a6c9c304a590ade9168c0590e4ab0b65b0af646eed52eab458c32220f",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1848.73464
+      }
+    },
+    {
+      "index": 200,
+      "beforeSha256": "104e447fdbaefe873f99ae1890b9d9a84cbcdef09cd0ce16515542c505745eca",
+      "updates": {
+        "at": 1857.03425
+      }
+    },
+    {
+      "index": 201,
+      "beforeSha256": "62e0573cdb0de4eebbaa450ff8c3d72cdd19f16961c8b95a4ef54d923f9cd422",
+      "updates": {
+        "duration": 8.29961,
+        "at": 1861.21204
+      }
+    }
+  ]
+}
