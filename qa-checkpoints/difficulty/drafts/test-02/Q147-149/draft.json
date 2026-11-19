@@ -1,0 +1,223 @@
+{
+  "status": "draft-awaiting-independent-blind-review-not-accepted",
+  "sourceCommit": "1183d26ee5a97ae050dec34ec6bb86c872adc058",
+  "sourceSpecSha256": "a1b85ded213e44bd0ce3f6f0325b92366ac9d4bf5722ad779ba36b3ffd6db080",
+  "fictionBoundary": "Original workplace email and fictional customer rules, stations, scores and labels; no outside knowledge required.",
+  "draftGroup": {
+    "id": "t02-r-p7-01-r2",
+    "testId": "test-02",
+    "part": 7,
+    "title": "Sharing the inspection station during tomorrow’s chip-substrate pilot",
+    "titleZh": "明天晶片載板試產的檢測站共用安排",
+    "topic": "technology",
+    "passage": "Subject: Sharing the inspection station during tomorrow’s chip-substrate pilot\n\nHi team,\n\nFrom 8:30 to 10:00, the station will run the reference panel, a sample with known marks. Nothing from production can go through while that run is in progress. The station is available for booking from 10:00 to 11:30; that is the only remaining slot with a process engineer on duty. It is available again from 1:00 to 2:30, but only the training technician will be there. Either a production run or a training run takes the full 90 minutes.\n\nOf the two programs, Blue works with the old camera mount and Green with the new one. The pilot panels are already sealed on the new mount for tomorrow’s pickup; transferring them would break those seals. We can use the reference results to clear a program for production only if that program scored at least 98 on the reference panel AND an engineer signs off in person before the run begins. The reference panel itself can be mounted either way. This morning Green scored 99; tomorrow’s result, not today’s, is the one that counts.\n\nThe customer’s driver leaves at noon whether we have inspection results or not. The driver’s next trip is on Thursday. The customer accepts only unopened panels sealed for that specific trip. Under the customer’s agreement, reopening and resealing the same panels for a later trip is not allowed. Training uses spare panels and doesn’t need a reference score or an engineer, but the training technician needs the station to herself. She offered to “keep the afternoon warm for us.” I’ve added her booking in pencil, not in the green ink we use for customer commitments.\n\nThanks,\nRina",
+    "passageZh": "主旨：明天晶片載板試產的檢測站共用安排\n\n各位好：\n\n明天上午 8:30 至 10:00，檢測站會用帶有已知標記的參考載板做測試。測試進行時，任何生產用載板都不能送進檢測站。上午 10:00 至 11:30 可以預約；在其餘的可用時段中，只有這段時間有製程工程師值班。下午 1:00 至 2:30 也可以預約，但到時只有負責訓練的技術員在場。無論是生產檢測或訓練，都需要完整的 90 分鐘。\n\n兩套程式中，Blue 適用於舊款相機座，Green 適用於新款相機座。試產載板已密封固定於新款相機座，準備讓客戶明天取貨；移到另一個相機座就會破壞封條。只有在所用程式對參考載板的檢測分數達到至少 98 分，而且工程師在生產檢測開始前親自簽核，才能依參考測試結果核准該程式用於生產。參考載板本身則可裝到任一款相機座。今天上午 Green 得了 99 分，但採計的是明天的成績，不是今天的。\n\n不論檢測結果是否出爐，客戶的司機中午都會離開。司機下次來是週四。客戶只收專為當次取貨封好的載板，而且不能拆封。依照與客戶的協議，不得將同一批載板拆封再重新封好，留到以後取貨。訓練使用備用載板，不必看參考測試成績，也不需要工程師，但技術員要獨占檢測站。她說可以幫忙「讓下午不至於冷下來」。我先用鉛筆記下她的預約，沒用我們記錄對客戶承諾時用的綠色筆。\n\n謝謝，\nRina"
+  },
+  "draftActiveQuestions": [
+    {
+      "id": "t02-q147-r3",
+      "testId": "test-02",
+      "number": 147,
+      "part": 7,
+      "groupId": "t02-r-p7-01-r2",
+      "topic": "technology",
+      "difficulty": "advanced",
+      "tags": [
+        "technology",
+        "reading-comprehension"
+      ],
+      "prompt": "If Green scores 98 tomorrow, which plan meets the customer’s pickup and inspection requirements?",
+      "promptZh": "假設 Green 明天得到 98 分，哪個方案符合客戶的取貨與檢測要求？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Run Green at 10:00 after the engineer signs off in person.",
+          "zh": "上午 10:00 經工程師親自簽核後，以 Green 進行檢測。",
+          "whyZh": "Green 與新款相機座相容，明天的 98 分達標；上午 10:00 工程師在場，檢測 90 分鐘可於 11:30 完成，早於司機離開時間。"
+        },
+        {
+          "id": "B",
+          "text": "Run Green at 8:30 using the engineer’s sign-off from today.",
+          "zh": "沿用工程師今天的簽核，上午 8:30 以 Green 進行檢測。",
+          "whyZh": "8:30 至 10:00 的檢測站只供參考測試，不能檢測生產用載板，今天的結果也不能代替明天的分數。"
+        },
+        {
+          "id": "C",
+          "text": "Run Blue at 10:00 after moving the pilot panels to the old mount.",
+          "zh": "把試產載板移到舊款相機座，上午 10:00 以 Blue 進行檢測。",
+          "whyZh": "轉移到舊款相機座會破壞封條，違反客戶只收未拆封載板的條件。"
+        },
+        {
+          "id": "D",
+          "text": "Run Green at 1:00, using the engineer’s earlier signature.",
+          "zh": "沿用工程師稍早的簽名，下午 1:00 以 Green 進行檢測。",
+          "whyZh": "即使事先有簽名，下午才開始檢測也趕不上司機中午取貨。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "Green 與新款相機座相容，明天的 98 分達標；上午 10:00 工程師在場，檢測 90 分鐘可於 11:30 完成，早於司機離開時間。",
+      "evidence": "The station is available for booking from 10:00 to 11:30 […] that program scored at least 98 on the reference panel […] The customer’s driver leaves at noon",
+      "vocabulary": [
+        {
+          "term": "sign off in person",
+          "zh": "親自簽核",
+          "note": "表示正式核准；此處指工程師本人在檢測開始前完成簽核。"
+        }
+      ],
+      "revision": 3
+    },
+    {
+      "id": "t02-q148-r2",
+      "testId": "test-02",
+      "number": 148,
+      "part": 7,
+      "groupId": "t02-r-p7-01-r2",
+      "topic": "technology",
+      "difficulty": "advanced",
+      "tags": [
+        "technology",
+        "reading-comprehension"
+      ],
+      "prompt": "Why did the training technician offer to “keep the afternoon warm for us”?",
+      "promptZh": "為什麼負責訓練的技術員說，可以幫忙「讓下午不至於冷下來」？",
+      "options": [
+        {
+          "id": "A",
+          "text": "She could hold the finished panels in a warmed room for the driver.",
+          "zh": "她可以把已完成的載板放在暖房裡，等司機來取。",
+          "whyZh": "這裡的「暖」不是溫度；她能安排的是訓練，而非保溫或保管載板。"
+        },
+        {
+          "id": "B",
+          "text": "She could fill the unused time with work without making it usable for production.",
+          "zh": "她可以安排工作填補空檔，但不能讓那段時間變成可用的生產檢測時段。",
+          "whyZh": "下午只剩技術員，她可用備用載板安排訓練，需要獨占檢測站；用鉛筆記下而不用代表客戶承諾的綠筆，表示不把這段時間當作承諾客戶的產能。"
+        },
+        {
+          "id": "C",
+          "text": "She could finish the production run if the engineer started it before lunch.",
+          "zh": "若工程師在午餐前開始生產檢測，她可以把檢測做完。",
+          "whyZh": "訓練須由她獨占檢測站，並非代工程師完成已開始的生產檢測。"
+        },
+        {
+          "id": "D",
+          "text": "She could make the station available as an unbooked production backup.",
+          "zh": "她可以把檢測站保持空著，當作生產的備用時段。",
+          "whyZh": "用鉛筆記下的是訓練預約，不是留空；訓練必須占用檢測站。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "下午只剩技術員，她可用備用載板安排訓練，需要獨占檢測站；用鉛筆記下而不用代表客戶承諾的綠筆，表示不把這段時間當作承諾客戶的產能。",
+      "evidence": "but only the training technician will be there […] the training technician needs the station to herself […] not in the green ink we use for customer commitments",
+      "vocabulary": [
+        {
+          "term": "keep the afternoon warm",
+          "zh": "讓下午不至於冷下來",
+          "note": "本文中的玩笑式比喻，不是固定俚語。指用訓練填補空檔、保持工作不閒置，不等於有生產能力。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t02-q149-r3",
+      "testId": "test-02",
+      "number": 149,
+      "part": 7,
+      "groupId": "t02-r-p7-01-r2",
+      "topic": "technology",
+      "difficulty": "advanced",
+      "tags": [
+        "technology",
+        "reading-comprehension"
+      ],
+      "prompt": "Suppose Green scores 97 tomorrow and the 10:00 slot is still available. What should the team do with the customer’s order?",
+      "promptZh": "假設 Green 明天只得 97 分，且上午 10:00 仍可預約。團隊該如何處理客戶的訂單？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Use this morning’s Green results and send tomorrow’s panels at noon.",
+          "zh": "使用今天上午 Green 的結果，明天中午出貨。",
+          "whyZh": "只採計明天的結果；即使今天有 99 分，也不能算明天達標。"
+        },
+        {
+          "id": "B",
+          "text": "Hold the sealed pilot set for Thursday and move the inspection to the next shift.",
+          "zh": "把目前封好的試產載板留到週四，並延到下一班再檢測。",
+          "whyZh": "原載板是為明天的取貨封存；客戶要求為當次取貨封存，也不允許把同一批拆封重封。"
+        },
+        {
+          "id": "C",
+          "text": "Use the 10:00 slot to approve Green based on an engineer’s signature alone.",
+          "zh": "使用上午 10:00 的時段，只憑工程師的簽名核准 Green。",
+          "whyZh": "親自簽核與至少 98 分缺一不可；97 分不符規定。"
+        },
+        {
+          "id": "D",
+          "text": "Prepare replacement panels for the next specified pickup opportunity.",
+          "zh": "另準備一批載板，等已知的下一個取貨機會。",
+          "whyZh": "97 分低於門檻，現在這批不能動用舊結果或單靠簽核趕上中午；客戶週四再來，須另準備一批載板供週四檢測、完成規定封存並取貨。"
+        }
+      ],
+      "answer": "D",
+      "explanationZh": "97 分低於門檻，現在這批不能動用舊結果或單靠簽核趕上中午；客戶週四再來，須另準備一批載板供週四檢測、完成規定封存並取貨。",
+      "evidence": "tomorrow’s result, not today’s, is the one that counts […] The driver’s next trip is on Thursday […] reopening and resealing the same panels for a later trip is not allowed",
+      "vocabulary": [
+        {
+          "term": "reopen and reseal",
+          "zh": "拆封後重新封好",
+          "note": "本文規定不能把原本為某次取貨封好的載板拆封重封，再留待另一次取貨。"
+        }
+      ],
+      "revision": 3
+    }
+  ],
+  "guards": [
+    {
+      "number": 147,
+      "id": "t02-q147-r2",
+      "revision": 2,
+      "key": "C",
+      "sourceFileSha256": "11108410f572ea2e22711c150166fa08d886622cdaa92399c8650aeb27f113d5",
+      "sourceGitBlobSha1": "c3627bc7cad67433b0ede3fefc9156fadca626f7",
+      "verifiedPath": "qa-checkpoints/verified-items/test-02/Q147.json",
+      "activeQuestionSha256Canonical": "270cb45672d3747d1de0b80102a4ad85bc1adb90f93be18be0e2a1a169f54398",
+      "groupSha256Canonical": "ec746709b067341d894e6bc250a75acb27c382f84d6b1e851e3c64245072630e",
+      "difficultyPath": "qa-checkpoints/difficulty/test-02/Q147.json",
+      "difficultySha256": "f91307b33a7d97b902db6860581b9178ec2aabe281d73f3b360fbf089c579281"
+    },
+    {
+      "number": 148,
+      "id": "t02-q148",
+      "revision": 1,
+      "key": "A",
+      "sourceFileSha256": "e13e7fb0cac1ff2ac4b3999a1f865001abc97542dad30df688e9378a03542699",
+      "sourceGitBlobSha1": "d53db1d63f0a57e9b76397bb47c702f42d98aca4",
+      "verifiedPath": "qa-checkpoints/verified-items/test-02/Q148.json",
+      "activeQuestionSha256Canonical": "f73f3d8b152e3ded2ab024c1fb64dca24e2814b814387962228bfb69fe9c2ac5",
+      "groupSha256Canonical": "ec746709b067341d894e6bc250a75acb27c382f84d6b1e851e3c64245072630e",
+      "difficultyPath": "qa-checkpoints/difficulty/test-02/Q148.json",
+      "difficultySha256": "41f5cf2e8f940caaf22f01e81f2c5ba8fab71f484648206128252d9fd2b4dbe9"
+    },
+    {
+      "number": 149,
+      "id": "t02-q149-r2",
+      "revision": 2,
+      "key": "D",
+      "sourceFileSha256": "452294d560d17048b643948b3bdf301af817eb3b2f4c6530cc3acf2da859e525",
+      "sourceGitBlobSha1": "ce14a1e85cbb6f0994bab2b9f1f69d728a0f5400",
+      "verifiedPath": "qa-checkpoints/verified-items/test-02/Q149.json",
+      "activeQuestionSha256Canonical": "27cd5f7b03afaffbbd7e8848534f8d5891234365f112802ac6b293ed4dfd6e26",
+      "groupSha256Canonical": "ec746709b067341d894e6bc250a75acb27c382f84d6b1e851e3c64245072630e",
+      "difficultyPath": "qa-checkpoints/difficulty/test-02/Q149.json",
+      "difficultySha256": "392bf7dc416e758fd2af7fbfdfaff6e1adc81c11970451f27bf46adfcdb7d433"
+    }
+  ],
+  "preserveOldHistory": true,
+  "retention": "Retain each original verified item and the complete shared group in the repo reserve before any future adoption; retain any exact deployed earlier revisions for prior sessions; nothing is edited in origin by this draft.",
+  "oldScope": [
+    147,
+    148,
+    149
+  ],
+  "singlePassage": true
+}

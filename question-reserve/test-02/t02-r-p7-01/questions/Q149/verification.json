@@ -1,0 +1,133 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": {
+    "key": "D",
+    "checks": "Approval status explicit unchanged. Link maintenance may change references; new revisions move to Atlas, old-server write is removed. zh option scope and all reasons match.",
+    "id": "t02-q149-r2"
+  },
+  "activeQuestion": {
+    "id": "t02-q149-r2",
+    "testId": "test-02",
+    "number": 149,
+    "part": 7,
+    "groupId": "t02-r-p7-01",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "reading-comprehension"
+    ],
+    "prompt": "What remains unchanged by the migration?",
+    "promptZh": "此次移轉不改變什麼？",
+    "options": [
+      {
+        "text": "Where all internal links point",
+        "zh": "所有內部連結指向的位置",
+        "whyZh": "有些連結仍指向舊位置，修訂文件時須更新，並非一律保持不變。",
+        "id": "A"
+      },
+      {
+        "text": "The location where new revisions are saved",
+        "zh": "新版本儲存位置",
+        "whyZh": "新版本位置改為 Atlas。",
+        "id": "B"
+      },
+      {
+        "text": "Write access on the old server",
+        "zh": "舊伺服器的寫入權限",
+        "whyZh": "六月三日起只允許查看與下載。",
+        "id": "C"
+      },
+      {
+        "text": "The approval status of drawings",
+        "zh": "圖面的核准狀態",
+        "whyZh": "最後一句明確說核准狀態不變。",
+        "id": "D"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "最後一句明確說核准狀態不變。",
+    "evidence": "The migration does not change any drawing’s approval status.",
+    "vocabulary": [
+      {
+        "term": "archive",
+        "zh": "檔案庫",
+        "note": "集中保存專案文件的儲存區。"
+      },
+      {
+        "term": "approval status",
+        "zh": "核准狀態",
+        "note": "文件目前是否已完成規定的審核。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t02-r-p7-01",
+    "testId": "test-02",
+    "part": 7,
+    "title": "Design-file migration",
+    "titleZh": "設計檔案移轉",
+    "topic": "technology",
+    "passage": "Engineering file migration\n\nThe design archive will move to the Atlas server on June 3. From that date, the old server will allow viewing and downloading only; all new revisions must be saved on Atlas. Existing project folder names will be preserved.\n\nEngineers should check their active projects on Atlas by June 10 and report missing files to the migration team. Do not create replacement folders before reporting a problem, as this may lead to duplicates.\n\nThe old server will remain available until June 30. Links in internal documents may still point to the old location, so please update them when you revise a document. The migration does not change any drawing’s approval status.",
+    "passageZh": "工程檔案移轉\n\n設計檔案庫將於六月三日搬到 Atlas 伺服器。從當天起，舊伺服器只能查看與下載，所有新修訂版本都必須存到 Atlas。原有專案資料夾名稱會保留。\n\n工程師最遲應在六月十日檢查 Atlas 上進行中的專案，若有缺檔，請向移轉團隊回報。回報前不要自行建立替代資料夾，以免造成重複。\n\n舊伺服器會保留至六月三十日。內部文件連結可能仍指向舊位置，因此修訂文件時請一併更新連結。此次移轉不會改變任何圖面的核准狀態。"
+  },
+  "originalQuestion": {
+    "id": "t02-q149",
+    "testId": "test-02",
+    "number": 149,
+    "part": 7,
+    "groupId": "t02-r-p7-01",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "reading-comprehension"
+    ],
+    "prompt": "What remains unchanged by the migration?",
+    "promptZh": "此次移轉不改變什麼？",
+    "options": [
+      {
+        "text": "All internal document links automatically",
+        "zh": "所有內部連結自動保持有效",
+        "whyZh": "部分連結仍指舊位置，需人工更新。",
+        "id": "A"
+      },
+      {
+        "text": "The location where new revisions are saved",
+        "zh": "新版本儲存位置",
+        "whyZh": "新版本位置改為 Atlas。",
+        "id": "B"
+      },
+      {
+        "text": "Write access on the old server",
+        "zh": "舊伺服器的寫入權限",
+        "whyZh": "六月三日起只允許查看與下載。",
+        "id": "C"
+      },
+      {
+        "text": "The approval status of drawings",
+        "zh": "圖面的核准狀態",
+        "whyZh": "最後一句明確說核准狀態不變。",
+        "id": "D"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "最後一句明確說核准狀態不變。",
+    "evidence": "The migration does not change any drawing’s approval status.",
+    "vocabulary": [
+      {
+        "term": "archive",
+        "zh": "檔案庫",
+        "note": "集中保存專案文件的儲存區。"
+      },
+      {
+        "term": "approval status",
+        "zh": "核准狀態",
+        "note": "文件目前是否已完成規定的審核。"
+      }
+    ],
+    "revision": 1
+  }
+}
