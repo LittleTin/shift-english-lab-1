@@ -1,0 +1,202 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "對話說有五個樣品要送驗；未確認的是接觸電阻，圖表指定 B 台，A/C/D 分別是阻燃、溫度循環與外殼尺寸。 正式題號、口述題幹與兩模式的對話範圍均核對；英中題意和各選項解析已校對。",
+  "activeQuestion": {
+    "id": "t02-q033-v2",
+    "testId": "test-02",
+    "number": 33,
+    "part": 3,
+    "groupId": "t02-g032",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "graphic-inference"
+    ],
+    "prompt": "Look at the graphic. Which bench should receive the five samples?",
+    "promptZh": "請看圖表。五件樣品應送到哪個測試工作台？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bench A",
+        "zh": "A 工作台",
+        "whyZh": "A 工作台做阻燃測試。"
+      },
+      {
+        "id": "B",
+        "text": "Bench B",
+        "zh": "B 工作台",
+        "whyZh": "B 工作台測量接觸電阻，正是尚未確認的項目。"
+      },
+      {
+        "id": "C",
+        "text": "Bench C",
+        "zh": "C 工作台",
+        "whyZh": "C 工作台做溫度循環測試。"
+      },
+      {
+        "id": "D",
+        "text": "Bench D",
+        "zh": "D 工作台",
+        "whyZh": "D 工作台測量外殼尺寸；對話說尺寸已吻合。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "樣品是為了補做接觸電阻測試；圖表中這項測試對應 B 工作台。",
+    "evidence": "“We have not checked the contact resistance yet.” → Contact resistance: Bench B.",
+    "vocabulary": [
+      {
+        "term": "alternative component",
+        "zh": "替代零件",
+        "note": "可供替換的零件；本題仍須先驗證特定性能。"
+      },
+      {
+        "term": "on hold",
+        "zh": "暫緩",
+        "note": "keep an order on hold 指暫不繼續處理訂單。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t02-g032",
+    "testId": "test-02",
+    "part": 3,
+    "title": "Confirming a connector alternative",
+    "titleZh": "確認替代連接器",
+    "topic": "technology",
+    "passage": "Woman: The original connector will not arrive until next month. Could we use the alternative listed in the component database?\nMan: Its dimensions match, but we have not checked the contact resistance yet. Please ask the lab to test it first.\nWoman: Understood. I will send five samples to the lab today and keep the purchase order on hold.\nMan: Good. We can decide after the results come back on Friday.",
+    "passageZh": "女：原本的連接器下個月才會到。我們能用零件資料庫列出的替代品嗎？\n男：尺寸吻合，但我們還沒檢查接觸電阻。請先請實驗室測試。\n女：了解。我今天會送五個樣品到實驗室，並暫緩採購單。\n男：很好。星期五結果回來後，我們再決定。",
+    "audioScript": "The original connector will not arrive until next month. Could we use the alternative listed in the component database?\nIts dimensions match, but we have not checked the contact resistance yet. Please ask the lab to test it first.\nUnderstood. I will send five samples to the lab today and keep the purchase order on hold.\nGood. We can decide after the results come back on Friday.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "The original connector will not arrive until next month. Could we use the alternative listed in the component database?"
+      },
+      {
+        "voice": "male",
+        "text": "Its dimensions match, but we have not checked the contact resistance yet. Please ask the lab to test it first."
+      },
+      {
+        "voice": "female",
+        "text": "Understood. I will send five samples to the lab today and keep the purchase order on hold."
+      },
+      {
+        "voice": "male",
+        "text": "Good. We can decide after the results come back on Friday."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-11.mp3",
+    "duration": 30.528,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-NZ",
+        "role": "female",
+        "modelVoice": "en-NZ-MollyNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-NZ",
+        "role": "male",
+        "modelVoice": "en-NZ-MitchellNeural"
+      }
+    ],
+    "image": "assets/graphics/t02-g032.svg",
+    "imageAlt": "Component Lab Bench Directory; Flammability: Bench A; Contact resistance: Bench B; Heat cycling: Bench C; Housing dimensions: Bench D",
+    "audioStart": 17.08,
+    "audioEnd": 47.608
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "mode": "cue",
+      "start": 38.89229,
+      "end": 42.78983,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "Questions 32 through 34. Listen to the conversation."
+    },
+    {
+      "path": "audio/azure-v1/test-02-11.mp3",
+      "mode": "passage",
+      "start": 17.08,
+      "end": 47.608,
+      "assetSha256": "5e2bacd5d2e55ba239a41ba4f929e3364756da750a406995a403d8d6b05268ea",
+      "speech": "The original connector will not arrive until next month. Could we use the alternative listed in the component database? It's dimensions match, but we have not checked the contact resistance yet. Please ask the lab to test it first. Understood. I will send five samples to the lab today and keep the purchase order on hold. Good. We can decide after the results come back on Friday."
+    },
+    {
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "mode": "question",
+      "start": 47.11458,
+      "end": 51.79833,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "Number 33, look at the graphic, which bench should receive the five samples."
+    },
+    {
+      "path": "audio/azure-v1/test-02-11.mp3",
+      "mode": "practice",
+      "start": 17.08,
+      "end": 47.608,
+      "assetSha256": "5e2bacd5d2e55ba239a41ba4f929e3364756da750a406995a403d8d6b05268ea",
+      "speech": "The original connector will not arrive until next month. Could we use the alternative listed in the component database? It's dimensions match, but we have not checked the contact resistance yet. Please ask the lab to test it first. Understood. I will send five samples to the lab today and keep the purchase order on hold. Good. We can decide after the results come back on Friday."
+    }
+  ],
+  "imageSha256": "c2e6040d2faba6142673c5d900f2645662dda28e9f0cc1bf14935561edc8d4d3",
+  "originalQuestion": {
+    "id": "t02-q033",
+    "testId": "test-02",
+    "number": 33,
+    "part": 3,
+    "groupId": "t02-g032",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "alternative component"
+    ],
+    "prompt": "What has not been verified?",
+    "promptZh": "哪一項尚未驗證？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The part dimensions.",
+        "zh": "零件尺寸。",
+        "whyZh": "男方已說 Its dimensions match，表示尺寸吻合。"
+      },
+      {
+        "id": "B",
+        "text": "The number of database entries.",
+        "zh": "資料庫項目數量。",
+        "whyZh": "對話沒有提出查核項目數量的需求。"
+      },
+      {
+        "id": "C",
+        "text": "The name of the laboratory.",
+        "zh": "實驗室名稱。",
+        "whyZh": "沒有提到實驗室名稱不明。"
+      },
+      {
+        "id": "D",
+        "text": "The contact resistance.",
+        "zh": "接觸電阻。",
+        "whyZh": "男方明確說尚未檢查 contact resistance。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "男方明確說尚未檢查 contact resistance。",
+    "evidence": "we have not checked the contact resistance yet",
+    "vocabulary": [
+      {
+        "term": "alternative component",
+        "zh": "替代零件",
+        "note": "可供替換的零件；本題仍須先驗證特定性能。"
+      },
+      {
+        "term": "on hold",
+        "zh": "暫緩",
+        "note": "keep an order on hold 指暫不繼續處理訂單。"
+      }
+    ],
+    "revision": 1
+  }
+}
