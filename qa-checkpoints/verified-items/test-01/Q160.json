@@ -1,0 +1,72 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "Quality makes the release decision; no line worker, driver, or supplier is designated. Both language versions and reasons agree.",
+  "activeQuestion": {
+    "id": "t01-q160",
+    "testId": "test-01",
+    "number": 160,
+    "part": 7,
+    "groupId": "t01-r-p7-05",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension"
+    ],
+    "prompt": "Who will decide whether units can be released?",
+    "promptZh": "由誰決定設備是否可以放行？",
+    "options": [
+      {
+        "text": "Any worker on the next production line",
+        "zh": "下一條產線的任何作業員",
+        "whyZh": "下一批可以繼續生產不代表作業員可放行 K724。",
+        "id": "A"
+      },
+      {
+        "text": "The delivery driver",
+        "zh": "送貨司機",
+        "whyZh": "司機未被賦予品質判定權限。",
+        "id": "B"
+      },
+      {
+        "text": "The packaging supplier",
+        "zh": "包材供應商",
+        "whyZh": "文件沒有將放行決定交給供應商。",
+        "id": "C"
+      },
+      {
+        "text": "The Quality department",
+        "zh": "品管部",
+        "whyZh": "文件明確將檢查及放行決定交給 Quality。",
+        "id": "D"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "文件明確將檢查及放行決定交給 Quality。",
+    "evidence": "Quality will inspect the window surfaces and decide which units can be released.",
+    "vocabulary": [
+      {
+        "term": "on hold",
+        "zh": "暫停放行",
+        "note": "等待檢查或決策前不可進入指定後續流程。"
+      },
+      {
+        "term": "quarantine area",
+        "zh": "隔離區",
+        "note": "將待處理物品與可用庫存分開的區域。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p7-05",
+    "testId": "test-01",
+    "part": 7,
+    "title": "Quality hold notice",
+    "titleZh": "品質暫停放行通知",
+    "topic": "manufacturing",
+    "passage": "QUALITY NOTICE — Lot K724\n\nDuring the final inspection of lot K724, three units showed scratches on the display window. Electrical tests passed on all units. The entire lot has been placed on hold while the cause of the cosmetic damage is investigated.\n\nDo not ship, rework, or mix these units with other lots. Move the sealed cartons to the marked quarantine area. Quality will inspect the window surfaces and decide which units can be released.\n\nProduction on the next lot may continue using the revised protective-film procedure. This notice applies only to K724 and does not authorize scrapping any product.",
+    "passageZh": "品質通知——K724 批次\n\nK724 批次的最終檢驗發現三台設備的顯示窗有刮痕。所有設備皆通過電氣測試。調查外觀損傷原因期間，整批產品暫停放行。\n\n不得出貨、重工或將這些設備與其他批次混放。請將封好的紙箱移到標示清楚的隔離區。品管部會檢查顯示窗表面，決定哪些設備可以放行。\n\n下一批可使用修訂後的保護膜作業程序繼續生產。本通知僅適用 K724，並未授權報廢任何產品。"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "The date required at the plant is September 12, not the September 18 pilot date or the other unsupported dates. Chinese passage now clearly treats September 12 as inclusive.",
+  "activeQuestion": {
+    "id": "t01-q149",
+    "testId": "test-01",
+    "number": 149,
+    "part": 7,
+    "groupId": "t01-r-p7-01",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension"
+    ],
+    "prompt": "By what date must the connectors arrive?",
+    "promptZh": "連接器最遲必須在哪一天送達？",
+    "options": [
+      {
+        "text": "September 12",
+        "zh": "九月十二日",
+        "whyZh": "信中要求試作零件最遲在九月十二日送達工廠。",
+        "id": "A"
+      },
+      {
+        "text": "September 30",
+        "zh": "九月三十日",
+        "whyZh": "信中沒有出現月底交貨的安排。",
+        "id": "B"
+      },
+      {
+        "text": "September 18",
+        "zh": "九月十八日",
+        "whyZh": "這是試產日期，並非零件到貨期限。",
+        "id": "C"
+      },
+      {
+        "text": "October 3",
+        "zh": "十月三日",
+        "whyZh": "信中未指定十月份日期。",
+        "id": "D"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "信中要求試作零件最遲在九月十二日送達工廠。",
+    "evidence": "We need the trial parts at the plant by September 12.",
+    "vocabulary": [
+      {
+        "term": "minimum order quantity",
+        "zh": "最低訂購量",
+        "note": "供應商通常接受的最小訂購數量，簡稱 MOQ。"
+      },
+      {
+        "term": "freight",
+        "zh": "運費；貨運",
+        "note": "本信要求與單價分開報出的運送費用。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p7-01",
+    "testId": "test-01",
+    "part": 7,
+    "title": "A request for quotation",
+    "titleZh": "詢價信",
+    "topic": "manufacturing",
+    "passage": "To: Valley Components\nSubject: Quote for a pilot build\n\nWe need 240 locking connectors for a pilot build scheduled for September 18. Please quote both the unit price and freight to our Taoyuan plant. Your catalogue lists a minimum order of 500 pieces. Could you make an exception for this trial? If the trial passes, our expected monthly requirement will be 3,000 pieces.\n\nWe need the trial parts at the plant by September 12. Please state the delivery date in your reply rather than only the number of production days. A drawing of the required connector is attached.\n\nMira Wu, Purchasing",
+    "passageZh": "收件者：Valley Components\n主旨：試產用零件詢價\n\n我們需要 240 個鎖扣式連接器，用於九月十八日的試產。請分別報出單價及運到桃園工廠的運費。貴公司的型錄列出最低訂購量為 500 個，這次試作是否可以例外？若試產通過，預計每月需求為 3,000 個。\n\n試作零件最遲須在九月十二日送達工廠。回覆時請註明交貨日期，不要只寫生產天數。附件是所需連接器的圖面。\n\n採購部 Mira Wu"
+  }
+}

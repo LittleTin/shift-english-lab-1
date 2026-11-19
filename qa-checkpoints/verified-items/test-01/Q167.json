@@ -1,0 +1,72 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "7:45 a.m. is in opening hours before cleaning; 8:45 is during cleaning and the other times are outside opening hours. Both versions and explanations checked.",
+  "activeQuestion": {
+    "id": "t01-q167",
+    "testId": "test-01",
+    "number": 167,
+    "part": 7,
+    "groupId": "t01-r-p7-07",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "reading-comprehension"
+    ],
+    "prompt": "At which time may a resident use the room?",
+    "promptZh": "下列哪個時間可以使用回收室？",
+    "options": [
+      {
+        "text": "8:45 a.m.",
+        "zh": "上午八點四十五分",
+        "whyZh": "落在八點半至九點的清潔暫停時段。",
+        "id": "A"
+      },
+      {
+        "text": "7:45 a.m.",
+        "zh": "上午七點四十五分",
+        "whyZh": "已在七點開放之後，且尚未進入八點半至九點的清潔時段。",
+        "id": "B"
+      },
+      {
+        "text": "6:45 a.m.",
+        "zh": "上午六點四十五分",
+        "whyZh": "尚未到七點開放時間。",
+        "id": "C"
+      },
+      {
+        "text": "9:15 p.m.",
+        "zh": "晚上九點十五分",
+        "whyZh": "超過晚上九點關閉時間。",
+        "id": "D"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "已在七點開放之後，且尚未進入八點半至九點的清潔時段。",
+    "evidence": "open from 7 a.m. to 9 p.m. ... cleaned every morning between 8:30 and 9:00",
+    "vocabulary": [
+      {
+        "term": "flatten",
+        "zh": "壓平",
+        "note": "讓紙箱變平以減少占用空間。"
+      },
+      {
+        "term": "bulky waste",
+        "zh": "大型廢棄物",
+        "note": "家具等體積大、需另外處理的物品。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p7-07",
+    "testId": "test-01",
+    "part": 7,
+    "title": "Apartment recycling update",
+    "titleZh": "公寓回收措施更新",
+    "topic": "daily",
+    "passage": "Notice to residents\n\nStarting July 1, the recycling room will open from 7 a.m. to 9 p.m. Cardboard boxes must be flattened and placed on the shelf along the left wall. Please rinse glass and plastic containers before putting them in the labelled bins.\n\nDo not leave furniture or electrical appliances in the room. These items require a bulky-waste collection appointment with the management office. The service is available on the first and third Wednesdays of each month.\n\nThe room will be cleaned every morning between 8:30 and 9:00. Please use it outside that half-hour period, even though the general opening hours begin earlier.",
+    "passageZh": "住戶通知\n\n七月一日起，回收室開放時間為上午七點至晚上九點。紙箱必須壓平，放到左牆旁的架子上。玻璃與塑膠容器請先沖洗，再放進有標示的桶內。\n\n請勿把家具或電器留在室內。這些物品需要向管理室預約大型廢棄物清運，每月第一及第三個星期三提供服務。\n\n回收室每天上午八點半至九點清潔。雖然一般開放時間較早開始，仍請避開這半小時使用。"
+  }
+}

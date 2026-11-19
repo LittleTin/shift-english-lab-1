@@ -1,0 +1,72 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "Samples left behind go to a labelled shelf, not waste, mail, or vibration testing. Clarified inclusive deadlines in the shared Chinese notice without changing the answer.",
+  "activeQuestion": {
+    "id": "t01-q169",
+    "testId": "test-01",
+    "number": 169,
+    "part": 7,
+    "groupId": "t01-r-p7-08",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "reading-comprehension"
+    ],
+    "prompt": "What will happen to samples left in the chamber?",
+    "promptZh": "留在試驗箱中的樣品會如何處理？",
+    "options": [
+      {
+        "text": "They will be mailed to the calibration supplier",
+        "zh": "寄給校正供應商",
+        "whyZh": "公告沒有寄出樣品的安排。",
+        "id": "A"
+      },
+      {
+        "text": "They will automatically undergo vibration testing",
+        "zh": "自動接受振動測試",
+        "whyZh": "振動台不受影響，不表示樣品會被安排此測試。",
+        "id": "B"
+      },
+      {
+        "text": "They will be discarded immediately",
+        "zh": "立即丟棄",
+        "whyZh": "文件明確說 not discarded。",
+        "id": "C"
+      },
+      {
+        "text": "They will be moved to a labelled shelf",
+        "zh": "移到有標示的架子上",
+        "whyZh": "通知明確要求轉移存放，並非丟棄。",
+        "id": "D"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "通知明確要求轉移存放，並非丟棄。",
+    "evidence": "Any samples left inside will be transferred to the labelled storage shelf, not discarded.",
+    "vocabulary": [
+      {
+        "term": "calibration certificate",
+        "zh": "校正證書",
+        "note": "記載設備校正結果與相關資訊的文件。"
+      },
+      {
+        "term": "return to service",
+        "zh": "恢復使用",
+        "note": "完成必要確認後重新投入作業。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p7-08",
+    "testId": "test-01",
+    "part": 7,
+    "title": "Calibration schedule",
+    "titleZh": "校正時程",
+    "topic": "technology",
+    "passage": "Laboratory equipment notice\n\nThe temperature chamber will be unavailable from August 4 through August 6 for annual calibration. Tests requiring the chamber should be completed by August 3 or rescheduled for August 7 onward. The vibration table and power analyzers are not affected.\n\nPlease remove samples from the chamber by 4 p.m. on August 3. Any samples left inside will be transferred to the labelled storage shelf, not discarded. After calibration, the updated certificate will be placed in the equipment record folder.\n\nThe laboratory coordinator must confirm the certificate before the chamber returns to service. A successful power-on check alone does not authorize its use.",
+    "passageZh": "實驗室設備通知\n\n溫度試驗箱將於八月四日至六日進行年度校正，期間不能使用。需要使用此箱的測試應最遲於八月三日完成，或改排八月七日起。振動台及功率分析儀不受影響。\n\n請最遲於八月三日下午四點取出箱內樣品。遺留樣品將移到有標示的存放架，不會丟棄。校正後，更新的證書將放進設備紀錄資料夾。\n\n試驗箱恢復使用前，實驗室協調人員必須確認證書。僅通過開機檢查並不代表已獲准使用。"
+  }
+}

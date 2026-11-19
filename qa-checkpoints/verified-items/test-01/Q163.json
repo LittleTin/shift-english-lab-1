@@ -1,0 +1,72 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "Coating-room maintenance is the stated reason; the post-tour discussion is in Room 2. The offsite and safety-dispute alternatives are unsupported.",
+  "activeQuestion": {
+    "id": "t01-q163",
+    "testId": "test-01",
+    "number": 163,
+    "part": 7,
+    "groupId": "t01-r-p7-06",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension"
+    ],
+    "prompt": "Why will the group not enter the coating room?",
+    "promptZh": "為何參訪團不會進入塗佈室？",
+    "options": [
+      {
+        "text": "The room is located at another factory",
+        "zh": "該室位於另一間工廠",
+        "whyZh": "文件未說地點在別處，理由是維護。",
+        "id": "A"
+      },
+      {
+        "text": "The technical discussion will use that room",
+        "zh": "技術討論會使用該室",
+        "whyZh": "技術討論在二號會議室，不是塗佈室。",
+        "id": "B"
+      },
+      {
+        "text": "Visitors have refused to wear safety glasses",
+        "zh": "訪客拒絕戴護目鏡",
+        "whyZh": "文件沒有這項事件。",
+        "id": "C"
+      },
+      {
+        "text": "Maintenance work will be taking place",
+        "zh": "當時會進行維護",
+        "whyZh": "通知明確以 maintenance in progress 解釋排除塗佈室。",
+        "id": "D"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "通知明確以 maintenance in progress 解釋排除塗佈室。",
+    "evidence": "The coating room is excluded because maintenance will be in progress.",
+    "vocabulary": [
+      {
+        "term": "incoming inspection",
+        "zh": "進料檢驗",
+        "note": "材料或零件到廠後的檢查。"
+      },
+      {
+        "term": "closed-toe shoes",
+        "zh": "包覆腳趾的鞋子",
+        "note": "鞋頭遮蓋腳趾的鞋款。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p7-06",
+    "testId": "test-01",
+    "part": 7,
+    "title": "Factory visit arrangements",
+    "titleZh": "工廠參訪安排",
+    "topic": "manufacturing",
+    "passage": "To: Project Orion visitors\n\nYour factory tour is confirmed for May 14. Please arrive at the west reception at 9:15 a.m. and bring a photo ID. Visitors must wear closed-toe shoes; safety glasses will be supplied by the factory.\n\nThe tour covers incoming inspection, assembly, and final testing. The coating room is excluded because maintenance will be in progress. Photography is prohibited throughout the production area, but you may take notes.\n\nA technical discussion will follow the tour in Meeting Room 2. Send your questions by May 10 so that we can invite the appropriate engineers. Lunch will be served at noon, and the visit will end at 1 p.m.",
+    "passageZh": "收件者：Orion 專案訪客\n\n五月十四日的工廠參訪已確認。請於上午九點十五分抵達西側接待處，並攜帶附照片的身分證件。訪客須穿包覆腳趾的鞋子；工廠會提供護目鏡。\n\n參訪包括進料檢驗、組裝及最終測試。塗佈室因進行維護，不列入參訪。整個生產區禁止攝影，但可以做筆記。\n\n參訪後將在二號會議室進行技術討論。請最遲於五月十日寄來問題，以便我們邀請適當的工程師。中午供餐，參訪於下午一點結束。"
+  }
+}

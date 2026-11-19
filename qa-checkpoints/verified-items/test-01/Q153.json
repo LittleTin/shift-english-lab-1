@@ -1,0 +1,72 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "Only the afternoon contract workshop requires on-site attendance; the morning session supports remote participants. Chinese passage and keyed reason agree.",
+  "activeQuestion": {
+    "id": "t01-q153",
+    "testId": "test-01",
+    "number": 153,
+    "part": 7,
+    "groupId": "t01-r-p7-03",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "reading-comprehension"
+    ],
+    "prompt": "Which activity requires attendance in person?",
+    "promptZh": "哪一項活動必須到現場參加？",
+    "options": [
+      {
+        "text": "The afternoon contract workshop",
+        "zh": "下午的合約工作坊",
+        "whyZh": "文件明說下午工作坊僅供現場參加者。",
+        "id": "A"
+      },
+      {
+        "text": "Registering for the forum",
+        "zh": "報名論壇",
+        "whyZh": "文件有遠端參加安排，未規定報名必須到場。",
+        "id": "B"
+      },
+      {
+        "text": "Receiving the presentation slides",
+        "zh": "收到簡報投影片",
+        "whyZh": "所有已報名者都會收到投影片，不限現場。",
+        "id": "C"
+      },
+      {
+        "text": "All morning presentations",
+        "zh": "上午所有簡報",
+        "whyZh": "遠端參加者可以使用連結觀看上午簡報。",
+        "id": "D"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "文件明說下午工作坊僅供現場參加者。",
+    "evidence": "The afternoon workshop ... is available only to people attending in person.",
+    "vocabulary": [
+      {
+        "term": "in person",
+        "zh": "親自到場",
+        "note": "與遠端線上參與相對。"
+      },
+      {
+        "term": "unpublished",
+        "zh": "尚未公開的",
+        "note": "尚未對外發表的資訊。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p7-03",
+    "testId": "test-01",
+    "part": 7,
+    "title": "Hybrid supplier forum",
+    "titleZh": "混合形式供應商論壇",
+    "topic": "business",
+    "passage": "Supplier Forum — Participant information\n\nThe forum begins at 9:30 a.m. in Harbor Hall. Registration opens at 8:45. Remote participants will receive a viewing link the previous afternoon; the same link works for all morning presentations.\n\nThe afternoon workshop involves reviewing sample contracts in small groups and is available only to people attending in person. Lunch is included for on-site participants. Anyone with a dietary requirement should notify the organizer by Monday.\n\nSlides will be emailed to all registered participants after the event. A recording of the presentations will not be provided because several speakers will discuss unpublished business plans.",
+    "passageZh": "供應商論壇——參加資訊\n\n論壇上午九點半於 Harbor Hall 開始，八點四十五分開放報到。遠端參加者會在前一天下午收到觀看連結；上午所有簡報皆使用同一連結。\n\n下午工作坊會分組檢視合約範例，僅供現場參加者加入。現場參加者的午餐已包含在內。有飲食需求者應最遲於星期一通知主辦單位。\n\n活動結束後，所有已報名者都會收到簡報投影片的電子郵件。由於部分講者將討論尚未公開的商業計畫，主辦單位不提供簡報錄影。"
+  }
+}

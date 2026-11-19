@@ -1,0 +1,72 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "An export is required if rollback is needed. Restarting still occurs twice; no warranty registration or coverage change is indicated. Clarified two Chinese glosses.",
+  "activeQuestion": {
+    "id": "t01-q151",
+    "testId": "test-01",
+    "number": 151,
+    "part": 7,
+    "groupId": "t01-r-p7-02",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "reading-comprehension"
+    ],
+    "prompt": "Why should users export their configuration?",
+    "promptZh": "為何使用者應匯出設定？",
+    "options": [
+      {
+        "text": "To prepare for a possible rollback",
+        "zh": "以備需要回復舊版",
+        "whyZh": "文件明說若需要 rollback，就必須有匯出檔案。",
+        "id": "A"
+      },
+      {
+        "text": "To avoid all device restarts",
+        "zh": "避免設備發生任何重啟",
+        "whyZh": "更新仍會重啟兩次，匯出無法免除。",
+        "id": "B"
+      },
+      {
+        "text": "To register for a new warranty",
+        "zh": "登記新的保固",
+        "whyZh": "文件沒有要求或提供保固登記。",
+        "id": "C"
+      },
+      {
+        "text": "To increase wireless coverage",
+        "zh": "增加無線涵蓋範圍",
+        "whyZh": "此更新不改變無線範圍，匯出設定也沒有此作用。",
+        "id": "D"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "文件明說若需要 rollback，就必須有匯出檔案。",
+    "evidence": "the exported file is required if a rollback becomes necessary",
+    "vocabulary": [
+      {
+        "term": "rollback",
+        "zh": "回復舊版",
+        "note": "出現問題時回到先前軟體版本或狀態。"
+      },
+      {
+        "term": "configuration",
+        "zh": "設定",
+        "note": "設備運作參數與選項。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p7-02",
+    "testId": "test-01",
+    "part": 7,
+    "title": "Gateway firmware notice",
+    "titleZh": "閘道器韌體通知",
+    "topic": "technology",
+    "passage": "Release note: Gateway firmware 4.2\n\nVersion 4.2 improves recovery after a brief loss of network connection. It does not change the device’s wireless range. The update is approved for hardware revisions B and C only. Revision A units must remain on version 3.8.\n\nBefore installation, export the current configuration. The update preserves normal settings, but the exported file is required if a rollback becomes necessary. The gateway will restart twice; keep power connected until the green status light remains on. Installation normally takes six minutes. If it exceeds fifteen minutes, contact technical support instead of repeatedly disconnecting power.",
+    "passageZh": "發行說明：閘道器韌體 4.2\n\n4.2 版改善網路短暫斷線後的恢復能力，不改變設備的無線涵蓋範圍。此更新僅核准用於 B、C 硬體版本；A 版設備必須維持 3.8 版韌體。\n\n安裝前請匯出目前設定。更新會保留一般設定，但若必須回復舊版，就需要匯出的檔案。閘道器會重新啟動兩次；請保持供電，直到綠色狀態燈持續亮起。安裝通常需要六分鐘。如果超過十五分鐘，請聯絡技術支援，不要反覆切斷電源。"
+  }
+}

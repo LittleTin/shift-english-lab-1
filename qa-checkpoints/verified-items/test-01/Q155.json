@@ -1,0 +1,72 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "Recordings are not distributed because some speakers discuss unpublished business plans. No low registration, internet outage or lack of slides is given; fixed the Chinese reason for D.",
+  "activeQuestion": {
+    "id": "t01-q155",
+    "testId": "test-01",
+    "number": 155,
+    "part": 7,
+    "groupId": "t01-r-p7-03",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "reading-comprehension"
+    ],
+    "prompt": "Why will recordings not be distributed?",
+    "promptZh": "為何不會提供錄影？",
+    "options": [
+      {
+        "text": "Only twelve people registered",
+        "zh": "只有十二人報名",
+        "whyZh": "文件未提供報名人數。",
+        "id": "A"
+      },
+      {
+        "text": "The internet connection has failed",
+        "zh": "網路連線已故障",
+        "whyZh": "文件沒有網路故障資訊，且安排上午遠端觀看。",
+        "id": "B"
+      },
+      {
+        "text": "Some talks contain business plans not yet made public",
+        "zh": "部分演講包含尚未公開的商業計畫",
+        "whyZh": "文件直接以未公開商業計畫解釋不提供錄影。",
+        "id": "C"
+      },
+      {
+        "text": "The speakers have not prepared slides",
+        "zh": "講者尚未準備投影片",
+        "whyZh": "文件並未說講者尚未準備投影片；不提供錄影是因為部分講者將討論尚未公開的商業計畫。",
+        "id": "D"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "文件直接以未公開商業計畫解釋不提供錄影。",
+    "evidence": "because several speakers will discuss unpublished business plans",
+    "vocabulary": [
+      {
+        "term": "in person",
+        "zh": "親自到場",
+        "note": "與遠端線上參與相對。"
+      },
+      {
+        "term": "unpublished",
+        "zh": "尚未公開的",
+        "note": "尚未對外發表的資訊。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p7-03",
+    "testId": "test-01",
+    "part": 7,
+    "title": "Hybrid supplier forum",
+    "titleZh": "混合形式供應商論壇",
+    "topic": "business",
+    "passage": "Supplier Forum — Participant information\n\nThe forum begins at 9:30 a.m. in Harbor Hall. Registration opens at 8:45. Remote participants will receive a viewing link the previous afternoon; the same link works for all morning presentations.\n\nThe afternoon workshop involves reviewing sample contracts in small groups and is available only to people attending in person. Lunch is included for on-site participants. Anyone with a dietary requirement should notify the organizer by Monday.\n\nSlides will be emailed to all registered participants after the event. A recording of the presentations will not be provided because several speakers will discuss unpublished business plans.",
+    "passageZh": "供應商論壇——參加資訊\n\n論壇上午九點半於 Harbor Hall 開始，八點四十五分開放報到。遠端參加者會在前一天下午收到觀看連結；上午所有簡報皆使用同一連結。\n\n下午工作坊會分組檢視合約範例，僅供現場參加者加入。現場參加者的午餐已包含在內。有飲食需求者應最遲於星期一通知主辦單位。\n\n活動結束後，所有已報名者都會收到簡報投影片的電子郵件。由於部分講者將討論尚未公開的商業計畫，主辦單位不提供簡報錄影。"
+  }
+}

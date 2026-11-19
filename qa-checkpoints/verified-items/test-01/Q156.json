@@ -1,0 +1,72 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "Station departures occur at :15 and :45. Hotel departures and the recommended early arrival are different values. Checked schedule in both languages.",
+  "activeQuestion": {
+    "id": "t01-q156",
+    "testId": "test-01",
+    "number": 156,
+    "part": 7,
+    "groupId": "t01-r-p7-04",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "reading-comprehension"
+    ],
+    "prompt": "When does the shuttle leave the station?",
+    "promptZh": "接駁車何時從車站出發？",
+    "options": [
+      {
+        "text": "Only once every hour",
+        "zh": "每小時只有一班",
+        "whyZh": "車站每小時有十五分及四十五分兩班。",
+        "id": "A"
+      },
+      {
+        "text": "At fifteen and forty-five minutes past the hour",
+        "zh": "每小時十五分及四十五分",
+        "whyZh": "這是車站返回飯店的發車時刻。",
+        "id": "B"
+      },
+      {
+        "text": "On the hour and at half past",
+        "zh": "每小時整點及三十分",
+        "whyZh": "這是飯店出發時刻，不是車站發車時刻。",
+        "id": "C"
+      },
+      {
+        "text": "Every ten minutes",
+        "zh": "每十分鐘一班",
+        "whyZh": "十分鐘是建議提早到達的時間。",
+        "id": "D"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "這是車站返回飯店的發車時刻。",
+    "evidence": "returns from the station at 15 and 45 minutes past",
+    "vocabulary": [
+      {
+        "term": "complimentary",
+        "zh": "免費提供的",
+        "note": "飯店提供、不另行收費的服務。"
+      },
+      {
+        "term": "pickup point",
+        "zh": "乘車地點",
+        "note": "接駁車讓乘客上車的位置。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p7-04",
+    "testId": "test-01",
+    "part": 7,
+    "title": "Hotel shuttle service",
+    "titleZh": "飯店接駁服務",
+    "topic": "daily",
+    "passage": "Maple Court Hotel — Station shuttle\n\nOur complimentary shuttle operates between the hotel and East Station from 6:30 a.m. to 10 p.m. It leaves the hotel at 00 and 30 minutes past each hour and returns from the station at 15 and 45 minutes past.\n\nSeats cannot be reserved. Please arrive at the pickup point ten minutes before departure. Large suitcases are accepted, but bicycles cannot be carried. Guests with mobility needs should contact reception one day ahead so that suitable assistance can be arranged.\n\nOn Sunday, roadworks will close the usual station entrance. The station pickup point will temporarily move to the north exit.",
+    "passageZh": "Maple Court Hotel——車站接駁服務\n\n免費接駁車於上午六點半至晚上十點往返飯店與 East Station。每小時整點及三十分從飯店出發，每小時十五分及四十五分從車站返回。\n\n座位無法預約。請在發車前十分鐘抵達乘車處。可攜帶大型行李箱，但不能載運自行車。需要行動協助的住客請提前一天聯絡櫃檯，以便安排適當協助。\n\n星期日道路施工將封閉平時使用的車站入口，車站接駁乘車處將暫時移至北出口。"
+  }
+}

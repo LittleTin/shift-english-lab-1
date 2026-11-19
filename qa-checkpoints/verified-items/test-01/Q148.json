@@ -1,0 +1,72 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "The requested exception is 240 units rather than the catalog minimum of 500. Freight and the drawing are discussed, but not as exceptions; the payment deadline is not mentioned. Corrected one Chinese distractor.",
+  "activeQuestion": {
+    "id": "t01-q148",
+    "testId": "test-01",
+    "number": 148,
+    "part": 7,
+    "groupId": "t01-r-p7-01",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension"
+    ],
+    "prompt": "What exception does Mira request?",
+    "promptZh": "Mira 希望取得哪一項例外？",
+    "options": [
+      {
+        "text": "Free transport for every future order",
+        "zh": "往後所有訂單免運",
+        "whyZh": "信中要求運費報價，未要求免運。",
+        "id": "A"
+      },
+      {
+        "text": "A payment deadline after the pilot build",
+        "zh": "付款期限訂在試產之後",
+        "whyZh": "信中沒有討論付款期限。",
+        "id": "B"
+      },
+      {
+        "text": "An order below the listed minimum quantity",
+        "zh": "低於型錄最低訂購量的訂單",
+        "whyZh": "需要 240 個，但型錄最低量為 500 個，因此請求小量例外。",
+        "id": "C"
+      },
+      {
+        "text": "A trial without an engineering drawing",
+        "zh": "不提供工程圖面的試作",
+        "whyZh": "信中明確表示圖面已附上。",
+        "id": "D"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "需要 240 個，但型錄最低量為 500 個，因此請求小量例外。",
+    "evidence": "Your catalogue lists a minimum order of 500 pieces. Could you make an exception for this trial?",
+    "vocabulary": [
+      {
+        "term": "minimum order quantity",
+        "zh": "最低訂購量",
+        "note": "供應商通常接受的最小訂購數量，簡稱 MOQ。"
+      },
+      {
+        "term": "freight",
+        "zh": "運費；貨運",
+        "note": "本信要求與單價分開報出的運送費用。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p7-01",
+    "testId": "test-01",
+    "part": 7,
+    "title": "A request for quotation",
+    "titleZh": "詢價信",
+    "topic": "manufacturing",
+    "passage": "To: Valley Components\nSubject: Quote for a pilot build\n\nWe need 240 locking connectors for a pilot build scheduled for September 18. Please quote both the unit price and freight to our Taoyuan plant. Your catalogue lists a minimum order of 500 pieces. Could you make an exception for this trial? If the trial passes, our expected monthly requirement will be 3,000 pieces.\n\nWe need the trial parts at the plant by September 12. Please state the delivery date in your reply rather than only the number of production days. A drawing of the required connector is attached.\n\nMira Wu, Purchasing",
+    "passageZh": "收件者：Valley Components\n主旨：試產用零件詢價\n\n我們需要 240 個鎖扣式連接器，用於九月十八日的試產。請分別報出單價及運到桃園工廠的運費。貴公司的型錄列出最低訂購量為 500 個，這次試作是否可以例外？若試產通過，預計每月需求為 3,000 個。\n\n試作零件最遲須在九月十二日送達工廠。回覆時請註明交貨日期，不要只寫生產天數。附件是所需連接器的圖面。\n\n採購部 Mira Wu"
+  }
+}

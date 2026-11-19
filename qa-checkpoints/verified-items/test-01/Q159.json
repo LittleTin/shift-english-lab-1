@@ -1,0 +1,72 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "The hold followed three scratched display windows. Electrical tests passed, and firmware or carton shortages are unstated. The zh-TW stem/options/rationales match.",
+  "activeQuestion": {
+    "id": "t01-q159",
+    "testId": "test-01",
+    "number": 159,
+    "part": 7,
+    "groupId": "t01-r-p7-05",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "reading-comprehension"
+    ],
+    "prompt": "What triggered the hold on lot K724?",
+    "promptZh": "什麼原因導致 K724 暫停放行？",
+    "options": [
+      {
+        "text": "Scratches found on three display windows",
+        "zh": "三個顯示窗發現刮痕",
+        "whyZh": "通知第一段指出三台設備有顯示窗刮痕。",
+        "id": "A"
+      },
+      {
+        "text": "An incorrect firmware version",
+        "zh": "韌體版本錯誤",
+        "whyZh": "通知處理的是外觀損傷，沒有韌體問題。",
+        "id": "B"
+      },
+      {
+        "text": "A shortage of shipping cartons",
+        "zh": "出貨紙箱不足",
+        "whyZh": "文件要求移動已封好的紙箱，未提紙箱不足。",
+        "id": "C"
+      },
+      {
+        "text": "Electrical failures in every unit",
+        "zh": "所有設備都有電氣故障",
+        "whyZh": "文件表示所有設備都通過電氣測試。",
+        "id": "D"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "通知第一段指出三台設備有顯示窗刮痕。",
+    "evidence": "three units showed scratches on the display window",
+    "vocabulary": [
+      {
+        "term": "on hold",
+        "zh": "暫停放行",
+        "note": "等待檢查或決策前不可進入指定後續流程。"
+      },
+      {
+        "term": "quarantine area",
+        "zh": "隔離區",
+        "note": "將待處理物品與可用庫存分開的區域。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p7-05",
+    "testId": "test-01",
+    "part": 7,
+    "title": "Quality hold notice",
+    "titleZh": "品質暫停放行通知",
+    "topic": "manufacturing",
+    "passage": "QUALITY NOTICE — Lot K724\n\nDuring the final inspection of lot K724, three units showed scratches on the display window. Electrical tests passed on all units. The entire lot has been placed on hold while the cause of the cosmetic damage is investigated.\n\nDo not ship, rework, or mix these units with other lots. Move the sealed cartons to the marked quarantine area. Quality will inspect the window surfaces and decide which units can be released.\n\nProduction on the next lot may continue using the revised protective-film procedure. This notice applies only to K724 and does not authorize scrapping any product.",
+    "passageZh": "品質通知——K724 批次\n\nK724 批次的最終檢驗發現三台設備的顯示窗有刮痕。所有設備皆通過電氣測試。調查外觀損傷原因期間，整批產品暫停放行。\n\n不得出貨、重工或將這些設備與其他批次混放。請將封好的紙箱移到標示清楚的隔離區。品管部會檢查顯示窗表面，決定哪些設備可以放行。\n\n下一批可使用修訂後的保護膜作業程序繼續生產。本通知僅適用 K724，並未授權報廢任何產品。"
+  }
+}

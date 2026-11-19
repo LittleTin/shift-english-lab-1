@@ -1,0 +1,72 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "Version 4.2 is approved for hardware revisions B and C only. Earlier hardware is excluded, and A must remain on 3.8; the stated range behavior does not grant eligibility.",
+  "activeQuestion": {
+    "id": "t01-q150",
+    "testId": "test-01",
+    "number": 150,
+    "part": 7,
+    "groupId": "t01-r-p7-02",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "reading-comprehension"
+    ],
+    "prompt": "Which device is eligible for this update?",
+    "promptZh": "哪一種設備適用此更新？",
+    "options": [
+      {
+        "text": "Any gateway manufactured before revision A",
+        "zh": "早於 A 版製造的任何閘道器",
+        "whyZh": "通知沒有核准更早版本，僅列 B 與 C。",
+        "id": "A"
+      },
+      {
+        "text": "Any device with a short wireless range",
+        "zh": "無線範圍較短的任何設備",
+        "whyZh": "更新資格由硬體版本決定，且不改善無線範圍。",
+        "id": "B"
+      },
+      {
+        "text": "A revision A gateway running version 3.8",
+        "zh": "執行 3.8 的 A 硬體版本閘道器",
+        "whyZh": "A 版設備必須維持 3.8，不能更新。",
+        "id": "C"
+      },
+      {
+        "text": "A gateway with hardware revision C",
+        "zh": "C 硬體版本的閘道器",
+        "whyZh": "通知只核准 B、C 硬體版本使用 4.2。",
+        "id": "D"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "通知只核准 B、C 硬體版本使用 4.2。",
+    "evidence": "The update is approved for hardware revisions B and C only.",
+    "vocabulary": [
+      {
+        "term": "rollback",
+        "zh": "回復舊版",
+        "note": "出現問題時回到先前軟體版本或狀態。"
+      },
+      {
+        "term": "configuration",
+        "zh": "設定",
+        "note": "設備運作參數與選項。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p7-02",
+    "testId": "test-01",
+    "part": 7,
+    "title": "Gateway firmware notice",
+    "titleZh": "閘道器韌體通知",
+    "topic": "technology",
+    "passage": "Release note: Gateway firmware 4.2\n\nVersion 4.2 improves recovery after a brief loss of network connection. It does not change the device’s wireless range. The update is approved for hardware revisions B and C only. Revision A units must remain on version 3.8.\n\nBefore installation, export the current configuration. The update preserves normal settings, but the exported file is required if a rollback becomes necessary. The gateway will restart twice; keep power connected until the green status light remains on. Installation normally takes six minutes. If it exceeds fifteen minutes, contact technical support instead of repeatedly disconnecting power.",
+    "passageZh": "發行說明：閘道器韌體 4.2\n\n4.2 版改善網路短暫斷線後的恢復能力，不改變設備的無線涵蓋範圍。此更新僅核准用於 B、C 硬體版本；A 版設備必須維持 3.8 版韌體。\n\n安裝前請匯出目前設定。更新會保留一般設定，但若必須回復舊版，就需要匯出的檔案。閘道器會重新啟動兩次；請保持供電，直到綠色狀態燈持續亮起。安裝通常需要六分鐘。如果超過十五分鐘，請聯絡技術支援，不要反覆切斷電源。"
+  }
+}
