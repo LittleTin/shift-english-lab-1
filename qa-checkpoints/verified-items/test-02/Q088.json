@@ -1,0 +1,124 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Thursday online walkthrough; no visit, manual wait or travel. Exact group cue, individual spoken stem and number, and identical formal/practice passage match written English (normalized numerals, spacing, and ASR silence marker only).",
+  "activeQuestion": {
+    "id": "t02-q088",
+    "testId": "test-02",
+    "number": 88,
+    "part": 4,
+    "groupId": "t02-g050",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "support case"
+    ],
+    "prompt": "How can employees learn to use the new form?",
+    "promptZh": "員工如何學習使用新表單？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Visit a customer's home on Friday.",
+        "zh": "星期五拜訪客戶家。",
+        "whyZh": "沒有到府訓練安排。"
+      },
+      {
+        "id": "B",
+        "text": "Wait for a printed manual next month.",
+        "zh": "等下個月的紙本手冊。",
+        "whyZh": "表單已在入口網站，且本週有線上導覽。"
+      },
+      {
+        "id": "C",
+        "text": "Attend an online walkthrough on Thursday.",
+        "zh": "參加星期四的線上操作導覽。",
+        "whyZh": "最後說星期四十點有十五分鐘線上導覽。"
+      },
+      {
+        "id": "D",
+        "text": "Take a three-day trip abroad.",
+        "zh": "出國三天。",
+        "whyZh": "沒有出國訓練。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "最後說星期四十點有十五分鐘線上導覽。",
+    "evidence": "A fifteen-minute walkthrough will be held online this Thursday at ten.",
+    "vocabulary": [
+      {
+        "term": "support case",
+        "zh": "支援案件",
+        "note": "用來追蹤使用者問題與處理過程的紀錄。"
+      },
+      {
+        "term": "walkthrough",
+        "zh": "操作導覽",
+        "note": "逐步說明如何使用系統或完成流程。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g050",
+    "testId": "test-02",
+    "part": 4,
+    "title": "Customer support handover",
+    "titleZh": "客服交接說明",
+    "topic": "technology",
+    "passage": "Starting next week, all technical support cases must include the device serial number, software version, and steps taken before the problem occurred. This will help the engineering team investigate without repeatedly requesting basic information. Do not ask customers to send passwords. For cases involving unexpected shutdowns, also request the event log if it can be exported safely. The new form is on the support portal. A fifteen-minute walkthrough will be held online this Thursday at ten.",
+    "passageZh": "從下週開始，所有技術支援案件都必須包含裝置序號、軟體版本，以及問題發生前的操作步驟。這能幫助工程團隊調查，避免反覆索取基本資訊。請勿要求客戶寄送密碼。涉及非預期關機的案件，如果能安全匯出，也請索取事件紀錄。新表單放在支援入口網站。本星期四十點會在線上進行十五分鐘的操作導覽。",
+    "audioScript": "Starting next week, all technical support cases must include the device serial number, software version, and steps taken before the problem occurred. This will help the engineering team investigate without repeatedly requesting basic information. Do not ask customers to send passwords. For cases involving unexpected shutdowns, also request the event log if it can be exported safely. The new form is on the support portal. A fifteen-minute walkthrough will be held online this Thursday at ten.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Starting next week, all technical support cases must include the device serial number, software version, and steps taken before the problem occurred. This will help the engineering team investigate without repeatedly requesting basic information. Do not ask customers to send passwords. For cases involving unexpected shutdowns, also request the event log if it can be exported safely. The new form is on the support portal. A fifteen-minute walkthrough will be held online this Thursday at ten."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-27.mp3",
+    "duration": 31.656,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-TZ",
+        "role": "male",
+        "modelVoice": "en-TZ-ElimuNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 32.156
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-02-cues-05.mp3",
+      "mode": "cue",
+      "start": 24.62687,
+      "end": 27.78346,
+      "assetSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+      "speech": "Questions 86 through 88. Listen to the talk."
+    },
+    {
+      "path": "audio/azure-v1/test-02-27.mp3",
+      "mode": "passage",
+      "start": 0.5,
+      "end": 32.156,
+      "assetSha256": "893be19a3f18558707c69459c99f33aed47ed6a1bf5e8d79e63899ba1c597d5b",
+      "speech": "Starting next week, all technical support cases must include the device serial number, software version, and steps taken before the problem occurred.\n This will help the engineering team investigate without repeatedly requesting basic information.\n Do not ask customers to send passwords.\n For cases involving unexpected shutdowns, also request the event log if it can be exported safely.\n The new form is on the support portal.\n A 15-minute walkthrough will be held online this Thursday at 10.\n [BLANK_AUDIO]"
+    },
+    {
+      "path": "audio/formal/test-02-cues-05.mp3",
+      "mode": "question",
+      "start": 35.71417,
+      "end": 39.26863,
+      "assetSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+      "speech": "Number 88. How can employees learn to use the new form?"
+    },
+    {
+      "path": "audio/azure-v1/test-02-27.mp3",
+      "mode": "practice",
+      "start": 0.5,
+      "end": 32.156,
+      "assetSha256": "893be19a3f18558707c69459c99f33aed47ed6a1bf5e8d79e63899ba1c597d5b",
+      "speech": "Starting next week, all technical support cases must include the device serial number, software version, and steps taken before the problem occurred.\n This will help the engineering team investigate without repeatedly requesting basic information.\n Do not ask customers to send passwords.\n For cases involving unexpected shutdowns, also request the event log if it can be exported safely.\n The new form is on the support portal.\n A 15-minute walkthrough will be held online this Thursday at 10.\n [BLANK_AUDIO]"
+    }
+  ]
+}

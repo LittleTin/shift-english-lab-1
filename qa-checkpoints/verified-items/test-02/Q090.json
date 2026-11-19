@@ -1,0 +1,124 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Tools provided, no bicycles, lodging or airline tickets. Exact group cue and individual spoken number/stem match written English; exact byte-identical formal/practice passage ASR matches after number formatting.",
+  "activeQuestion": {
+    "id": "t02-q090",
+    "testId": "test-02",
+    "number": 90,
+    "part": 4,
+    "groupId": "t02-g051",
+    "topic": "daily",
+    "difficulty": "foundation",
+    "tags": [
+      "tire pressure"
+    ],
+    "prompt": "What will be provided?",
+    "promptZh": "現場會提供什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tools.",
+        "zh": "工具。",
+        "whyZh": "講者明說工具會提供，不需預先購買。"
+      },
+      {
+        "id": "B",
+        "text": "New bicycles for every participant.",
+        "zh": "每人一台新自行車。",
+        "whyZh": "鼓勵帶自己的自行車，並未贈送新車。"
+      },
+      {
+        "id": "C",
+        "text": "Free hotel accommodation.",
+        "zh": "免費飯店住宿。",
+        "whyZh": "未提供住宿。"
+      },
+      {
+        "id": "D",
+        "text": "Airline tickets.",
+        "zh": "機票。",
+        "whyZh": "未涉及航空旅行。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "講者明說工具會提供，不需預先購買。",
+    "evidence": "Tools will be provided",
+    "vocabulary": [
+      {
+        "term": "tire pressure",
+        "zh": "胎壓",
+        "note": "輪胎內的氣壓。"
+      },
+      {
+        "term": "participant",
+        "zh": "參加者",
+        "note": "參與活動或課程的人。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g051",
+    "testId": "test-02",
+    "part": 4,
+    "title": "Community bicycle workshop",
+    "titleZh": "社區自行車工作坊",
+    "topic": "daily",
+    "passage": "The community center will host a bicycle maintenance workshop this Sunday from ten until noon. Participants will learn to check tire pressure, adjust a seat, and identify when professional repairs are needed. Bring your own bicycle if possible. Tools will be provided, so there is no need to buy any in advance. Registration is free, but space is limited to twelve participants. Please register through the center's website by Friday. Children under twelve must attend with an adult.",
+    "passageZh": "社區中心將在本星期日上午十點至中午舉辦自行車保養工作坊。參加者會學習檢查胎壓、調整座椅，以及辨識何時需要專業維修。可以的話請帶自己的自行車。現場會提供工具，不必事先購買。報名免費，但限十二位。請最晚在星期五透過中心網站報名。未滿十二歲的兒童必須由成人陪同。",
+    "audioScript": "The community center will host a bicycle maintenance workshop this Sunday from ten until noon. Participants will learn to check tire pressure, adjust a seat, and identify when professional repairs are needed. Bring your own bicycle if possible. Tools will be provided, so there is no need to buy any in advance. Registration is free, but space is limited to twelve participants. Please register through the center's website by Friday. Children under twelve must attend with an adult.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "The community center will host a bicycle maintenance workshop this Sunday from ten until noon. Participants will learn to check tire pressure, adjust a seat, and identify when professional repairs are needed. Bring your own bicycle if possible. Tools will be provided, so there is no need to buy any in advance. Registration is free, but space is limited to twelve participants. Please register through the center's website by Friday. Children under twelve must attend with an adult."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-28.mp3",
+    "duration": 34.272,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-ZA",
+        "role": "female",
+        "modelVoice": "en-ZA-LeahNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 34.772
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-02-cues-05.mp3",
+      "mode": "cue",
+      "start": 39.51863,
+      "end": 42.82688,
+      "assetSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+      "speech": "Questions 89-91. Listen to the talk."
+    },
+    {
+      "path": "audio/azure-v1/test-02-28.mp3",
+      "mode": "passage",
+      "start": 0.5,
+      "end": 34.772,
+      "assetSha256": "c266860ed24e02d59b916b7add2bd455908781c49f2ba2a3d5a8725387ac88fe",
+      "speech": "The Community Center will host a bicycle maintenance workshop this Sunday from 10 until noon.\n Participants will learn to check tire pressure, adjust a seat, and identify when professional\n repairs are needed. Bring your own bicycle if possible. Tools will be provided, so there is no\n need to buy any in advance. Registration is free, but space is limited to 12 participants.\n Please register through the center's website by Friday. Children under 12 must attend with an adult."
+    },
+    {
+      "path": "audio/formal/test-02-cues-05.mp3",
+      "mode": "question",
+      "start": 45.79888,
+      "end": 47.91958,
+      "assetSha256": "66f562eb5dde7b78487ec0e3850c5bc47d37e6217c19409781f63891150ff148",
+      "speech": "Number 90, what will be provided."
+    },
+    {
+      "path": "audio/azure-v1/test-02-28.mp3",
+      "mode": "practice",
+      "start": 0.5,
+      "end": 34.772,
+      "assetSha256": "c266860ed24e02d59b916b7add2bd455908781c49f2ba2a3d5a8725387ac88fe",
+      "speech": "The Community Center will host a bicycle maintenance workshop this Sunday from 10 until noon.\n Participants will learn to check tire pressure, adjust a seat, and identify when professional\n repairs are needed. Bring your own bicycle if possible. Tools will be provided, so there is no\n need to buy any in advance. Registration is free, but space is limited to 12 participants.\n Please register through the center's website by Friday. Children under 12 must attend with an adult."
+    }
+  ]
+}
