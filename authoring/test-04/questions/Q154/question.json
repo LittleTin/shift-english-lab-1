@@ -1,0 +1,52 @@
+{
+  "id": "t04-q154",
+  "testId": "test-04",
+  "number": 154,
+  "part": 7,
+  "groupId": "t04-r-p7-02",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "technology",
+    "single-document"
+  ],
+  "prompt": "At 2:30 the event feed starts lagging again. A quick switch fixes the problem. What should the incident record show?",
+  "promptZh": "兩點半，正式活動訊號的字幕再次延遲。快速切換訊號後恢復正常。事件紀錄應如何處理？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Keep the room and time in the record, even though the fix worked.",
+      "zh": "即使已經修好，仍在紀錄保留會場與發生時間。",
+      "whyZh": "14:20 的流程要求記下發生地點及時間，且即使立刻修好也要留存。"
+    },
+    {
+      "id": "B",
+      "text": "Reopen the glossary request and add the host’s name.",
+      "zh": "重開詞庫需求並加上主持人的名字。",
+      "whyZh": "詞庫需求和時間事件應分開。"
+    },
+    {
+      "id": "C",
+      "text": "Wait to see whether the fix succeeds before writing anything.",
+      "zh": "先等修復結果，再寫紀錄。",
+      "whyZh": "紀錄要求切換前就記下細節，即使立刻修好也要保留。"
+    },
+    {
+      "id": "D",
+      "text": "Turn off captions on the recording copy.",
+      "zh": "關閉錄影副本字幕。",
+      "whyZh": "流程沒有要求關錄影字幕。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "14:20 的流程要求記下發生地點及時間，且即使立刻修好也要留存。",
+  "evidence": "If lag returns on the event feed, note the room and time before switching feeds. … Record the details even if an immediate change restores the captions.",
+  "vocabulary": [
+    {
+      "term": "recurrence",
+      "zh": "復發；再度發生",
+      "note": "指相同問題再出現。"
+    }
+  ],
+  "revision": 1
+}

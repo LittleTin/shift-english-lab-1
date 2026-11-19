@@ -1,0 +1,52 @@
+{
+  "id": "t04-q150",
+  "testId": "test-04",
+  "number": 150,
+  "part": 7,
+  "groupId": "t04-r-p7-01",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "daily",
+    "single-document"
+  ],
+  "prompt": "Iris signs on Friday. The shop orders the fabric on Monday and receives it on Wednesday. When can the four-business-day period begin?",
+  "promptZh": "Iris 星期五簽單，店家星期一訂布料、星期三收到。四個工作天的施工期從何時起算？",
+  "options": [
+    {
+      "id": "A",
+      "text": "On Wednesday, after the fabric reaches the shop",
+      "zh": "星期三布料送到店之後",
+      "whyZh": "布料一到即可開工；題幹已說明實際到貨日是星期三。"
+    },
+    {
+      "id": "B",
+      "text": "When she signs the work order",
+      "zh": "她簽署工單時",
+      "whyZh": "簽單是下訂前的動作，還要等布料到貨。"
+    },
+    {
+      "id": "C",
+      "text": "When she first selected a fabric",
+      "zh": "她第一次選布時",
+      "whyZh": "首次選布的款式已缺貨，那不是開始日期。"
+    },
+    {
+      "id": "D",
+      "text": "When the shop orders the fabric on Monday",
+      "zh": "店家星期一訂購布料時",
+      "whyZh": "星期一是可訂購日，不等於布料到貨日。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "布料一到即可開工；題幹已說明實際到貨日是星期三。",
+  "evidence": "We can order material on Monday. The cuff work can begin as soon as the fabric arrives and takes four business days.",
+  "vocabulary": [
+    {
+      "term": "business day",
+      "zh": "工作天",
+      "note": "營業、辦公或施工的日子，不等於任何日曆日。"
+    }
+  ],
+  "revision": 1
+}
