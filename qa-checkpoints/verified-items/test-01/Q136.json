@@ -1,0 +1,67 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "Only adjective ‘accessible’ supplies the state after ‘remain’. The gerund, adverb and bare form alternatives do not fit. Changed the Chinese wording to 服務單 and 仍可查閱, consistently preserving access to earlier tickets.",
+  "activeQuestion": {
+    "id": "t01-q136",
+    "testId": "test-01",
+    "number": 136,
+    "part": 6,
+    "groupId": "t01-r-p6-02",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "reading-comprehension"
+    ],
+    "prompt": "Choose the best word or sentence for blank [136].",
+    "promptZh": "請選出最適合填入空格 [136] 的字詞或句子。",
+    "options": [
+      {
+        "text": "accessing",
+        "zh": "正在存取",
+        "whyZh": "申請本身不會主動存取其他資料，不能用此主動分詞。",
+        "id": "A"
+      },
+      {
+        "text": "accessibly",
+        "zh": "可存取地",
+        "whyZh": "副詞不能在 remain 後作這裡所需的狀態補語。",
+        "id": "B"
+      },
+      {
+        "text": "accessible",
+        "zh": "可查閱",
+        "whyZh": "remain 後接形容詞，表示舊申請在新網站仍可查看。",
+        "id": "C"
+      },
+      {
+        "text": "access",
+        "zh": "存取（名詞或動詞）",
+        "whyZh": "此處需要形容詞補語，access 不表示「可存取的」。",
+        "id": "D"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "remain 後接形容詞，表示舊申請在新網站仍可查看。",
+    "evidence": "Requests submitted before the move will remain accessible in the new portal.",
+    "vocabulary": [
+      {
+        "term": "support ticket",
+        "zh": "服務單",
+        "note": "記錄問題與處理進度的案件。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-r-p6-02",
+    "testId": "test-01",
+    "part": 6,
+    "title": "Customer portal migration",
+    "titleZh": "客戶入口網站移轉",
+    "topic": "technology",
+    "passage": "Dear customers,\n\nOur support portal will move to a new address on June 8. Your existing username will remain valid; [135] ____, you will need to create a new password at your first login. The reset link will be sent to the email address currently associated with your account.\n\nRequests submitted before the move will remain [136] ____ in the new portal. There is no need to open a second ticket for the same issue. [137] ____\n\nTo help the transition run [138] ____, please verify your contact email by June 5. We will never ask you to send your password by email.\n\nCustomer Support",
+    "passageZh": "親愛的客戶：\n\n我們的支援入口網站將在六月八日移到新網址。原有使用者名稱仍然有效；[135] ____，第一次登入時必須建立新密碼。重設連結會寄至目前與帳號關聯的電子郵件地址。\n\n移轉前提交的服務單在新入口網站仍 [136] ____。同一問題不必再開第二張服務單。[137] ____\n\n為了讓移轉 [138] ____ 進行，請最遲於六月五日確認你的聯絡電子郵件。我們絕不會要求你用電子郵件寄送密碼。\n\n客戶支援團隊"
+  }
+}
