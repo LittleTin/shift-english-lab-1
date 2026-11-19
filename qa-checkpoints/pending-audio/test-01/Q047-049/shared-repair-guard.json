@@ -1,0 +1,159 @@
+{
+  "status": "targeted-prospective-artifact-no-synthesis-no-promotion",
+  "testId": "test-01",
+  "part": 3,
+  "scope": [
+    47,
+    48,
+    49
+  ],
+  "oldGroupId": "t01-g037",
+  "oldGroupSha256": "584daae85e4ccc083b6cf004461c8e1a9a58ff427db7368fe1c89dc6983ed42a",
+  "rootSiteWorkRef": "fa6e3f8fa86a6b8f701dc4574db32bdbdc35cb01",
+  "oldQuestionIds": [
+    "t01-q047",
+    "t01-q048",
+    "t01-q049"
+  ],
+  "oldQuestionSha256": {
+    "47": "89eec294d8529206be6974d422c2812c9d910cf0fa12be9b12e7f02173f803c3",
+    "48": "72bddf80985064ee218a4de12a749d5d3f9b3b51606d675d216015ddd80ce7a3",
+    "49": "84264894f53c53fca73f26f383ee4e983aa32614d4e78a5e4ea13108db940d73"
+  },
+  "oldKeys": [
+    "C",
+    "B",
+    "C"
+  ],
+  "oldModeAssets": {
+    "formal": {
+      "path": "audio/azure-v1/test-01-17.mp3",
+      "start": 0.5,
+      "end": 43.628,
+      "sha256": "823c48653d88e71109e1ebdc2434f09bd6f300a56b1f5dbbcd99abae5e7c7294"
+    },
+    "practice": {
+      "path": "audio/azure-v1/test-01-17.mp3",
+      "start": 0.5,
+      "end": 43.628,
+      "sha256": "823c48653d88e71109e1ebdc2434f09bd6f300a56b1f5dbbcd99abae5e7c7294"
+    },
+    "cue": {
+      "path": "audio/formal/test-01-cues-02.mp3",
+      "start": 43.75742,
+      "end": 47.72829,
+      "sha256": "4c01686b382311002ca4ec4dc257d065de2941cc085e66243d440974bc0910c7"
+    }
+  },
+  "oldFormalStems": {
+    "47": {
+      "path": "audio/formal/test-01-cues-02.mp3",
+      "start": 47.97829,
+      "end": 51.06242,
+      "sha256": "4c01686b382311002ca4ec4dc257d065de2941cc085e66243d440974bc0910c7"
+    },
+    "48": {
+      "path": "audio/formal/test-01-cues-02.mp3",
+      "start": 51.31242,
+      "end": 54.36004,
+      "sha256": "4c01686b382311002ca4ec4dc257d065de2941cc085e66243d440974bc0910c7"
+    },
+    "49": {
+      "path": "audio/formal/test-01-cues-02.mp3",
+      "start": 54.61004,
+      "end": 57.6075,
+      "sha256": "4c01686b382311002ca4ec4dc257d065de2941cc085e66243d440974bc0910c7"
+    }
+  },
+  "oldVoices": [
+    {
+      "speaker": "male",
+      "locale": "en-NZ",
+      "role": "male",
+      "modelVoice": "en-NZ-MitchellNeural"
+    },
+    {
+      "speaker": "female",
+      "locale": "en-NZ",
+      "role": "female",
+      "modelVoice": "en-NZ-MollyNeural"
+    }
+  ],
+  "actualHold": "Whisper small.en and independent Vosk both return Alice / right. Other central facts and cue/stems positively corroborated; exact all-scope replacement or independent source clarification required.",
+  "newGroup": {
+    "englishPassage": "Man: I’m calling about my reservation for tonight, but my flight won’t land until eleven.\nWoman: We can hold the room. Our reception desk closes at midnight, so I'll send instructions for the key locker.\nMan: Thank you. Does the room price include breakfast?\nWoman: Yes, from seven to ten. However, the dining room is being renovated, so breakfast is served in the garden lounge this week.\nMan: One more thing: may I leave a suitcase here after checking out tomorrow?\nWoman: Certainly. The luggage room is beside reception, and there is no charge until six in the evening.",
+    "chinesePassage": "男：我想詢問今晚的訂房，我的班機要到十一點才會降落。\n女：我們可以保留房間。櫃檯午夜停止服務，所以我會寄送鑰匙置物櫃的使用說明。\n男：謝謝。房價包含早餐嗎？\n女：有，供餐時間是七點到十點。不過餐廳正在整修，所以這週改在花園休憩廳供應早餐。\n男：另外，明天退房後，我可以把一個行李箱寄放在這裡嗎？\n女：當然可以。行李房就在櫃檯旁，下午六點以前不收費。",
+    "audioScript": "I’m calling about my reservation for tonight, but my flight won’t land until eleven.\nWe can hold the room. Our reception desk closes at midnight, so I'll send instructions for the key locker.\nThank you. Does the room price include breakfast?\nYes, from seven to ten. However, the dining room is being renovated, so breakfast is served in the garden lounge this week.\nOne more thing: may I leave a suitcase here after checking out tomorrow?\nCertainly. The luggage room is beside reception, and there is no charge until six in the evening.",
+    "turns": [
+      {
+        "speaker": "Man",
+        "role": "male",
+        "text": "I’m calling about my reservation for tonight, but my flight won’t land until eleven.",
+        "zh": "我想詢問今晚的訂房，我的班機要到十一點才會降落。"
+      },
+      {
+        "speaker": "Woman",
+        "role": "female",
+        "text": "We can hold the room. Our reception desk closes at midnight, so I'll send instructions for the key locker.",
+        "zh": "我們可以保留房間。櫃檯午夜停止服務，所以我會寄送鑰匙置物櫃的使用說明。"
+      },
+      {
+        "speaker": "Man",
+        "role": "male",
+        "text": "Thank you. Does the room price include breakfast?",
+        "zh": "謝謝。房價包含早餐嗎？"
+      },
+      {
+        "speaker": "Woman",
+        "role": "female",
+        "text": "Yes, from seven to ten. However, the dining room is being renovated, so breakfast is served in the garden lounge this week.",
+        "zh": "有，供餐時間是七點到十點。不過餐廳正在整修，所以這週改在花園休憩廳供應早餐。"
+      },
+      {
+        "speaker": "Man",
+        "role": "male",
+        "text": "One more thing: may I leave a suitcase here after checking out tomorrow?",
+        "zh": "另外，明天退房後，我可以把一個行李箱寄放在這裡嗎？"
+      },
+      {
+        "speaker": "Woman",
+        "role": "female",
+        "text": "Certainly. The luggage room is beside reception, and there is no charge until six in the evening.",
+        "zh": "當然可以。行李房就在櫃檯旁，下午六點以前不收費。"
+      }
+    ],
+    "voiceMap": [
+      {
+        "speaker": "male",
+        "locale": "en-NZ",
+        "role": "male",
+        "modelVoice": "en-NZ-MitchellNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-NZ",
+        "role": "female",
+        "modelVoice": "en-NZ-MollyNeural"
+      }
+    ],
+    "partsChanged": [
+      1,
+      3
+    ]
+  },
+  "onlyQuestionEditorialPatch": {
+    "number": 47,
+    "field": [
+      "options",
+      1,
+      "whyZh"
+    ],
+    "old": "他只是報出 Ellis 供查詢，並沒有更改姓名。",
+    "new": "他只是來電說明會晚到，並沒有要求更改訂房姓名。"
+  },
+  "plannedAsset": "one coherent shared formal/practice rerender preserving the same six roles and configured voices; keep unchanged and independently recognized original numbered group cue and all three separate formal stem audio windows",
+  "adoptionNotes": [
+    "Immutable old audio/pack and attempt history retained. Never overwrite any original audio bank. Keep all keys and tested question semantics unchanged. Resolve stable question/changed group identity against pinned resume compatibility before any adoption.",
+    "Check exact new shared clip and formal/practice associations, old and new source paths, authored 2700 s timing and no narrowing of other verified scopes. No unapproved new render or records."
+  ]
+}

@@ -72,7 +72,53 @@ def inject_version(text):
     return text.replace("version:'"+PRIOR+"'","version:'"+SYNTH+"'",1)
 
 
-def prepare(root, out, practice_filter=False):
+def compose_app(root, out, target, practice_filter=False, backup_readonly=False):
+    """Compose only inside fresh staging; backup regressions gate final replacement."""
+    site=target.parent.parent
+    compat=root/'shift-media-migration/resume-compat'
+    # Audit isolated patching – no production or existing checkout changes.
+    patch=root/'shift-layout-stage/retired-results.patch'
+    with patch.open('rb') as inp:
+        subprocess.run(['patch','--batch','--fuzz=0','--dry-run','-p1'],cwd=site,stdin=inp,check=True)
+    with patch.open('rb') as inp:
+        subprocess.run(['patch','--batch','--fuzz=0','-p1'],cwd=site,stdin=inp,check=True)
+    filter_helper=None
+    if practice_filter:
+        filter_helper=root/'shift-media-migration/practice-filter-proof/make_patch.py'
+        tmp_filter=out/'practice-filter-patched.js'
+        subprocess.run(['python3',str(filter_helper),str(target),str(tmp_filter),str(out/'practice-filter.patch')],check=True)
+        tmp_filter.replace(target)
+    tmp=out/'resume-patched.js'
+    subprocess.run(['python3',str(compat/'make_patch.py'),str(target),str(tmp)],check=True)
+    tmp.replace(target)
+    evidence={
+        'retiredPatchSha256':sha(patch),
+        'resumePatchHelperSha256':sha(compat/'make_patch.py'),
+        'practiceFilterHelperSha256':sha(filter_helper) if filter_helper else None,
+    }
+    if backup_readonly:
+        backup=root/'shift-layout-stage/backup-readonly'
+        helper, regressions=backup/'apply.py', backup/'test_backup_cross_tab.cjs'
+        tmp=out/'backup-readonly-patched.js'
+        subprocess.run(['python3',str(helper),str(target),str(tmp)],check=True)
+        result=subprocess.run(['node',str(regressions),str(tmp)],
+                              capture_output=True,text=True)
+        require(result.returncode==0,'Backup regressions failed:\n'+result.stdout+result.stderr)
+        require(re.search(r'^(?:#|ℹ) tests 8$',result.stdout,re.M) and
+                re.search(r'^(?:#|ℹ) pass 8$',result.stdout,re.M) and
+                re.search(r'^(?:#|ℹ) fail 0$',result.stdout,re.M),
+                'Expected exactly eight passing backup regressions')
+        candidate=sha(tmp)
+        tmp.replace(target)
+        require(sha(target)==candidate,'Backup regression-tested asset changed')
+        evidence['backupReadonly']={
+            'helperSha256':sha(helper),'regressionsSha256':sha(regressions),
+            'testedAppSha256':candidate,'offlineRegressionsPassed':8,
+        }
+    return evidence
+
+
+def prepare(root, out, practice_filter=False, backup_readonly=False):
     require(not out.exists() and not out.is_symlink(), 'Choose a new output path')
     exact=root/'shift-media-migration/acceptance/rebuilt'
     base=root/'shift-media-migration/acceptance/staged'
@@ -102,22 +148,7 @@ def prepare(root, out, practice_filter=False):
     require(len(demos)==14,'Expected exactly 14 known voice demos')
     shell={x:copy(base,site,x) for x in sorted(shell_assets|demos)}
     shell['AUTHORING.md']=copy(root/'shift-qa',site,'AUTHORING.md')
-    # Audit isolated patching – no production or existing checkout changes.
-    patch=root/'shift-layout-stage/retired-results.patch'
-    with patch.open('rb') as inp:
-        subprocess.run(['patch','--batch','--fuzz=0','--dry-run','-p1'],cwd=site,stdin=inp,check=True)
-    with patch.open('rb') as inp:
-        subprocess.run(['patch','--batch','--fuzz=0','-p1'],cwd=site,stdin=inp,check=True)
-    target=site/'assets/app.js'
-    filter_helper=None
-    if practice_filter:
-        filter_helper=root/'shift-media-migration/practice-filter-proof/make_patch.py'
-        tmp_filter=out/'practice-filter-patched.js'
-        subprocess.run(['python3',str(filter_helper),str(target),str(tmp_filter),str(out/'practice-filter.patch')],check=True)
-        tmp_filter.replace(target)
-    tmp=out/'resume-patched.js'
-    subprocess.run(['python3',str(compat/'make_patch.py'),str(target),str(tmp)],check=True)
-    tmp.replace(target)
+    app_evidence=compose_app(root,out,site/'assets/app.js',practice_filter,backup_readonly)
     for ref,digest in sorted(old['assets'].items()):
         copy(overlay,site,ref,digest)
     snap={}
@@ -150,13 +181,15 @@ def prepare(root, out, practice_filter=False):
       'fixtureOnly':True,'doNotDeploy':True,'syntheticVersion':SYNTH,
       'priorCommit':old['commit'],'priorVersion':PRIOR,
       'activePathsVerifiedUnchanged':len(current_files),'activeDraftMajors':{test:current_files[f'data/{test}.json'] for test in EXAMS},
-      'priorManifestSha256':sha(old_manifest),'retiredPatchSha256':sha(patch),
-      'resumePatchHelperSha256':sha(compat/'make_patch.py'),'stagedShellSha256':shell,
-      'practiceFilterHelperSha256':sha(filter_helper) if filter_helper else None,
+      'priorManifestSha256':sha(old_manifest),'stagedShellSha256':shell,
+      **app_evidence,
       'oldResume':{'entry':old_entry,'question':qp,'questionIds':[q['id'] for q in snap['test-01']['questions']],
                    'image':g['image'],'groupId':g['id'],'passageIndex':passage_index,'passage':frames[passage_index]},
       'files':all_files
     }
+    if backup_readonly:
+        require(out_meta['backupReadonly']['testedAppSha256']==all_files['assets/app.js']['sha256'],
+                'Receipt does not bind tested backup app')
     meta=out/'fixture.json'
     meta.write_text(json.dumps(out_meta,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(f'Local fixture {site}: {len(all_files)} static files, {sum(x["size"] for x in all_files.values()):,} bytes; identity {sha(meta)}')
@@ -167,5 +200,6 @@ if __name__=='__main__':
     a.add_argument('output',type=Path)
     a.add_argument('--workspace',type=Path,default=Path.cwd())
     a.add_argument('--practice-filter',action='store_true')
+    a.add_argument('--backup-readonly',action='store_true')
     opts=a.parse_args()
-    prepare(opts.workspace.resolve(),opts.output.absolute(),opts.practice_filter)
+    prepare(opts.workspace.resolve(),opts.output.absolute(),opts.practice_filter,opts.backup_readonly)

@@ -1,0 +1,198 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "C: Room D has a working projector but seats only eight and there are twelve people. Other details describe different rooms or are unsupported.",
+    "audio": "Current formal and practice point to the same hash and exact playback range, not two independent repeats. Whisper small.en full exact all four causal/location details, except its initial full pass skipped the visitor turn; focused 26.8–36.2s unprompted small.en recovered it exactly and full Vosk independently recovered it. Independent Vosk directly corroborates the projector fails, ten/eleven conflict, eight versus twelve, free until noon and seats twenty, visitor notification, and sign outside Room B. Its initial 'and' vs 'in' is not a semantically coherent alternate subject; strongest model exact 'in', while independent model directly corroborates the failure, B setting and scheduling. A focused unprompted Vosk N-best independently includes exact 'Room D has a working projector but it only seats eight'. Both models positively recover the cue and all numbered stems (minor Vosk connective noise only). Existing asset/ranges unchanged, no browser validation."
+  },
+  "activeQuestion": {
+    "id": "t01-q039",
+    "testId": "test-01",
+    "number": 39,
+    "part": 3,
+    "groupId": "t01-g034",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "inference"
+    ],
+    "prompt": "Why is Room D unsuitable?",
+    "promptZh": "D 會議室為什麼不合適？",
+    "options": [
+      {
+        "id": "A",
+        "text": "It is unavailable until noon.",
+        "zh": "它中午前都無法使用。",
+        "whyZh": "free until noon 描述的是三樓訓練教室，不是 D 室。"
+      },
+      {
+        "id": "B",
+        "text": "It has no projector.",
+        "zh": "它沒有投影機。",
+        "whyZh": "男子明確說 D 室有一台能用的投影機。"
+      },
+      {
+        "id": "C",
+        "text": "It cannot seat everyone.",
+        "zh": "它無法容納所有人。",
+        "whyZh": "D 室只能坐八人，而出席者有十二人，容量不足。"
+      },
+      {
+        "id": "D",
+        "text": "It is on another company campus.",
+        "zh": "它在公司的另一個園區。",
+        "whyZh": "對話沒有說 D 室在不同園區。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "D 室只能坐八人，而出席者有十二人，容量不足。",
+    "evidence": "it only seats eight.",
+    "vocabulary": [
+      {
+        "term": "seat",
+        "zh": "可容納……人就坐",
+        "note": "此處為動詞，表示座位容量。"
+      }
+    ],
+    "revision": 1
+  },
+  "originalQuestion": {
+    "id": "t01-q039",
+    "testId": "test-01",
+    "number": 39,
+    "part": 3,
+    "groupId": "t01-g034",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "inference"
+    ],
+    "prompt": "Why is Room D unsuitable?",
+    "promptZh": "D 會議室為什麼不合適？",
+    "options": [
+      {
+        "id": "A",
+        "text": "It is unavailable until noon.",
+        "zh": "它中午前都無法使用。",
+        "whyZh": "free until noon 描述的是三樓訓練教室，不是 D 室。"
+      },
+      {
+        "id": "B",
+        "text": "It has no projector.",
+        "zh": "它沒有投影機。",
+        "whyZh": "男子明確說 D 室有一台能用的投影機。"
+      },
+      {
+        "id": "C",
+        "text": "It cannot seat everyone.",
+        "zh": "它無法容納所有人。",
+        "whyZh": "D 室只能坐八人，而出席者有十二人，容量不足。"
+      },
+      {
+        "id": "D",
+        "text": "It is on another company campus.",
+        "zh": "它在公司的另一個園區。",
+        "whyZh": "對話沒有說 D 室在不同園區。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "D 室只能坐八人，而出席者有十二人，容量不足。",
+    "evidence": "it only seats eight.",
+    "vocabulary": [
+      {
+        "term": "seat",
+        "zh": "可容納……人就坐",
+        "note": "此處為動詞，表示座位容量。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g034",
+    "testId": "test-01",
+    "part": 3,
+    "title": "Moving a presentation",
+    "titleZh": "更換簡報場地",
+    "topic": "business",
+    "passage": "Woman: The projector in Conference Room B won't turn on, and the client presentation starts at ten.\nMan: Maintenance can't get here until eleven. Room D has a working projector, but it only seats eight.\nWoman: There will be twelve of us. What about the training room on the third floor?\nMan: It's free until noon and seats twenty. I'll move the reservation there.\nWoman: Thanks. I'll send the revised location to the visitors. Could you also ask reception to direct anyone who misses the message?\nMan: Certainly. I'll put a sign outside Room B as well.",
+    "passageZh": "女：B 會議室的投影機無法開機，而客戶簡報十點就要開始。\n男：維修人員十一點才能來。D 會議室有能用的投影機，但只能坐八人。\n女：我們總共會有十二人。三樓的訓練教室呢？\n男：那裡中午之前都空著，可以坐二十人。我會把預約改到那裡。\n女：謝謝。我會把更新後的地點傳給來賓。你也可以請接待櫃檯替漏看訊息的人指路嗎？\n男：當然。我也會在 B 會議室外放一個指示牌。",
+    "audioScript": "The projector in Conference Room B won't turn on, and the client presentation starts at ten.\nMaintenance can't get here until eleven. Room D has a working projector, but it only seats eight.\nThere will be twelve of us. What about the training room on the third floor?\nIt's free until noon and seats twenty. I'll move the reservation there.\nThanks. I'll send the revised location to the visitors. Could you also ask reception to direct anyone who misses the message?\nCertainly. I'll put a sign outside Room B as well.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "The projector in Conference Room B won't turn on, and the client presentation starts at ten."
+      },
+      {
+        "voice": "male",
+        "text": "Maintenance can't get here until eleven. Room D has a working projector, but it only seats eight."
+      },
+      {
+        "voice": "female",
+        "text": "There will be twelve of us. What about the training room on the third floor?"
+      },
+      {
+        "voice": "male",
+        "text": "It's free until noon and seats twenty. I'll move the reservation there."
+      },
+      {
+        "voice": "female",
+        "text": "Thanks. I'll send the revised location to the visitors. Could you also ask reception to direct anyone who misses the message?"
+      },
+      {
+        "voice": "male",
+        "text": "Certainly. I'll put a sign outside Room B as well."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-14.mp3",
+    "duration": 42.648,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-HK",
+        "role": "female",
+        "modelVoice": "en-HK-YanNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-HK",
+        "role": "male",
+        "modelVoice": "en-HK-SamNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 43.148
+  },
+  "audio": [
+    {
+      "path": "audio/azure-v1/test-01-14.mp3",
+      "start": 0.5,
+      "end": 43.148,
+      "mode": "practice",
+      "assetSha256": "a4a5254e5f75dad5ac3cbff4d59c68beec9a6b357d61630148cc2f61476c6ba7"
+    },
+    {
+      "path": "audio/azure-v1/test-01-14.mp3",
+      "start": 0.5,
+      "end": 43.148,
+      "mode": "passage",
+      "assetSha256": "a4a5254e5f75dad5ac3cbff4d59c68beec9a6b357d61630148cc2f61476c6ba7"
+    },
+    {
+      "path": "audio/formal/test-01-cues-02.mp3",
+      "start": 7.34612,
+      "end": 10.20133,
+      "mode": "question",
+      "assetSha256": "4c01686b382311002ca4ec4dc257d065de2941cc085e66243d440974bc0910c7"
+    },
+    {
+      "path": "audio/formal/test-01-cues-02.mp3",
+      "start": 0.25,
+      "end": 3.82842,
+      "mode": "cue",
+      "assetSha256": "4c01686b382311002ca4ec4dc257d065de2941cc085e66243d440974bc0910c7"
+    }
+  ],
+  "imageSha256": null
+}

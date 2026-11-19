@@ -1,0 +1,173 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "How long asks for duration, so C only: roughly forty minutes; A is location, B is a temperature description. All Taiwanese Mandarin explanations agree.",
+    "audio": "Unprompted Whisper small.en exactly recovered full formal and practice prompts and option order, including thermal cycle and roughly forty minutes. Independent Vosk recovered the exact prompt formally and the forty-minute answer in both distinct modes. Unprompted isolated practice prompt hypothesis near the highest alternative recovered 'the thermal', not the earlier 'thermo'; independent full practice rendering still garbles parts including 'cycle'. The duration, option contrast and earlier disputed thermal are now positively supported without assuming all Vosk text is exact. Number 12 independently positive on both. No audio change."
+  },
+  "activeQuestion": {
+    "id": "t01-q012",
+    "testId": "test-01",
+    "number": 12,
+    "part": 2,
+    "groupId": "t01-g012",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "duration"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "In the environmental chamber.",
+        "zh": "在環境試驗箱裡。",
+        "whyZh": "這是測試地點，不是所需時間。"
+      },
+      {
+        "id": "B",
+        "text": "The temperature stays stable.",
+        "zh": "溫度維持穩定。",
+        "whyZh": "這是溫度狀況，沒有提供循環時長。"
+      },
+      {
+        "id": "C",
+        "text": "Roughly forty minutes.",
+        "zh": "大約四十分鐘。",
+        "whyZh": "How long 問持續時間；forty minutes 是時長，roughly 表示估計值。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "How long 問持續時間；forty minutes 是時長，roughly 表示估計值。",
+    "evidence": "How long does the thermal cycle take?",
+    "vocabulary": [
+      {
+        "term": "thermal cycle",
+        "zh": "溫度循環",
+        "note": "依設定反覆變化溫度的測試週期。"
+      },
+      {
+        "term": "roughly",
+        "zh": "大約",
+        "note": "表示近似估計。"
+      }
+    ],
+    "revision": 1
+  },
+  "originalQuestion": {
+    "id": "t01-q012",
+    "testId": "test-01",
+    "number": 12,
+    "part": 2,
+    "groupId": "t01-g012",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "duration"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "In the environmental chamber.",
+        "zh": "在環境試驗箱裡。",
+        "whyZh": "這是測試地點，不是所需時間。"
+      },
+      {
+        "id": "B",
+        "text": "The temperature stays stable.",
+        "zh": "溫度維持穩定。",
+        "whyZh": "這是溫度狀況，沒有提供循環時長。"
+      },
+      {
+        "id": "C",
+        "text": "Roughly forty minutes.",
+        "zh": "大約四十分鐘。",
+        "whyZh": "How long 問持續時間；forty minutes 是時長，roughly 表示估計值。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "How long 問持續時間；forty minutes 是時長，roughly 表示估計值。",
+    "evidence": "How long does the thermal cycle take?",
+    "vocabulary": [
+      {
+        "term": "thermal cycle",
+        "zh": "溫度循環",
+        "note": "依設定反覆變化溫度的測試週期。"
+      },
+      {
+        "term": "roughly",
+        "zh": "大約",
+        "note": "表示近似估計。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g012",
+    "testId": "test-01",
+    "part": 2,
+    "title": "Thermal cycle duration",
+    "titleZh": "溫度循環時間",
+    "topic": "technology",
+    "passage": "How long does the thermal cycle take?\nA. In the environmental chamber. B. The temperature stays stable. C. Roughly forty minutes.",
+    "passageZh": "這個溫度循環要多久？\nA. 在環境試驗箱裡。\nB. 溫度維持穩定。\nC. 大約四十分鐘。",
+    "audioScript": "How long does the thermal cycle take?\nA. In the environmental chamber. B. The temperature stays stable. C. Roughly forty minutes.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "How long does the thermal cycle take?"
+      },
+      {
+        "voice": "male",
+        "text": "A. In the environmental chamber. B. The temperature stays stable. C. Roughly forty minutes."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-05.mp3",
+    "duration": 15.024,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-NG",
+        "role": "female",
+        "modelVoice": "en-NG-EzinneNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-NG",
+        "role": "male",
+        "modelVoice": "en-NG-AbeoNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 15.524
+  },
+  "audio": [
+    {
+      "path": "audio/azure-v1/test-01-05.mp3",
+      "start": 0.5,
+      "end": 15.524,
+      "mode": "practice",
+      "assetSha256": "77868489b0ca7be46ec912952ff1f2b92d9bfbe12474f4b38cfc7dbe077613c2"
+    },
+    {
+      "path": "audio/formal-v2/test-01-05.mp3",
+      "start": 0.5,
+      "end": 16.412,
+      "mode": "passage",
+      "assetSha256": "99302315dff7321edf06c8c2cbb32b49b071eb4e2d8be4ae745a7c7b2ea185ff"
+    },
+    {
+      "path": "audio/formal/test-01-cues-01.mp3",
+      "start": 12.31871,
+      "end": 13.26212,
+      "mode": "cue",
+      "assetSha256": "6d8ae70c43fc4118e59e408cc5b4a4b1797fc4df9bcf03553e862a4624085b96"
+    }
+  ],
+  "imageSha256": null
+}

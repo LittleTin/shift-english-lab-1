@@ -1,0 +1,38 @@
+{
+  "status": "proposed-if-original-held-not-rendered",
+  "pin": "3cf8fbd7d12f1f446048dfa651f896a565fcffc8",
+  "test03Q084": {
+    "exam": "test-03",
+    "number": 84,
+    "oldId": "t03-q084",
+    "groupId": "t03-g049",
+    "oldPrompt": "What should be done with damaged returned products?",
+    "prompt": "What should staff do with damaged returns?",
+    "promptZh": "工作人員該如何處理損壞的退貨商品？",
+    "speech": "Number 84. What should staff do with damaged returns?",
+    "formalVoiceProposal": {
+      "locale": "en-US",
+      "voice": "en-US-JennyNeural",
+      "note": "Authorized locale/new synthesis proposal, not identification of original narrator."
+    },
+    "oldFormalStem": {
+      "group": "t03-g049",
+      "name": "t03-g049-t03-q084",
+      "src": "audio/formal/test-03-cues-05.mp3",
+      "sha256": "e214e1b90a2ba28dbf7cec4dab788d958b222f259cd036ee91ac81860ea792e1",
+      "start": 17.60963,
+      "end": 21.31125,
+      "role": "question",
+      "questionId": "t03-q084",
+      "timeline": 2259.34118
+    },
+    "oldAnswer": "A",
+    "newAnswer": "A",
+    "preserveSiblings": [
+      83,
+      85
+    ],
+    "guard": "Only remap the numbered Q084 stem and timing region if required; preserve same t03-g049 group ID and exact previously validated intro/talk/stems for siblings. Freeze old attempt. No practice passage required. If a new ID is used, rewrite only Q084 formal answer-frame identity too."
+  },
+  "additionalGuard": "Copy the already accepted identical g049 group variant from Q083/Q085 per-item records for future scoped reconciliation; it differs from raw legacy group only in an accepted translation refinement. Preserve both verified siblings and all original group audio."
+}

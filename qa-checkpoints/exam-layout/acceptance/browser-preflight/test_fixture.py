@@ -17,6 +17,10 @@ def test_fixture(root):
     m=json.loads(original)
     assert m['fixtureOnly'] and m['doNotDeploy']
     assert m['priorCommit']==PRIOR_SHA
+    if 'backupReadonly' in m:
+        e=m['backupReadonly']
+        assert e['offlineRegressionsPassed']==8
+        assert e['testedAppSha256']==m['files']['assets/app.js']['sha256']
     site=root/'site'
     for rel,info in m['files'].items():
         f=site/rel

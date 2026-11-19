@@ -1,0 +1,128 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "C uniquely follows the explicitly announced scratches on some of the aluminum covers. Software, missing manuals and logos are unmentioned.",
+    "audio": "Whisper small.en matched every answer-bearing spoken anchor and all cues/stems, aside from number/punctuation notation, and omitted “Please report any” from the final non-key sentence. Independent Vosk matched the final sentence fully, and corroborated prompts, cue, scratches, hold/not enter production, report by Tuesday, and material eligibility; full Vosk transcribed “pass inspection”, not exact “passed”. Unprompted Vosk 17.74–22.05s focused crop produced fully exact “the earlier batch passed inspection and can still be used” as its fourth and last n-best alternative, not its best. The weaker phoneme ordering is documented, not treated as two top exact transcripts. Shared formal/practice identical source/range; not two recordings. Translation-only precision applied to inclusive by Tuesday in shared zh-TW passage and Q079 zh-TW prompt. Accepted as offline item evidence; device/browser and publication gates remain separate.",
+    "association": "Pinned cumulative Test02 Q044–046 output, unchanged 2700-second plan and original en-IE-EmilyNeural shared source. Numbered stem and shared cue/passage/practice SHA and intervals matched; no new asset or browser confirmation."
+  },
+  "activeQuestion": {
+    "id": "t02-q077",
+    "testId": "test-02",
+    "number": 77,
+    "part": 4,
+    "groupId": "t02-g047",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "incoming inspection"
+    ],
+    "prompt": "What was found on some covers?",
+    "promptZh": "部分上蓋發現什麼問題？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Incorrect software.",
+        "zh": "錯誤軟體。",
+        "whyZh": "鋁製上蓋的問題是外觀損傷，不是軟體。"
+      },
+      {
+        "id": "B",
+        "text": "Missing instruction manuals.",
+        "zh": "缺少說明書。",
+        "whyZh": "沒有說明書缺漏資訊。"
+      },
+      {
+        "id": "C",
+        "text": "Scratches.",
+        "zh": "刮痕。",
+        "whyZh": "通知開頭直接指出鋁製上蓋有刮痕。"
+      },
+      {
+        "id": "D",
+        "text": "A different supplier logo.",
+        "zh": "不同供應商標誌。",
+        "whyZh": "未提標誌不符。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "通知開頭直接指出鋁製上蓋有刮痕。",
+    "evidence": "found scratches on some of the aluminum covers",
+    "vocabulary": [
+      {
+        "term": "incoming inspection",
+        "zh": "進料檢驗",
+        "note": "對到貨材料或零件進行的檢查。"
+      },
+      {
+        "term": "corrective action",
+        "zh": "矯正措施",
+        "note": "針對已發生問題的原因採取措施；本題要求供應商提交報告。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g047",
+    "testId": "test-02",
+    "part": 4,
+    "title": "A supplier quality update",
+    "titleZh": "供應商品質更新",
+    "topic": "manufacturing",
+    "passage": "Our incoming inspection team found scratches on some of the aluminum covers delivered this week. The affected batch has been placed on hold and will not enter production. We have asked the supplier to examine the protective packaging and send a corrective action report by Tuesday. The earlier batch passed inspection and can still be used. Purchasing will coordinate replacement covers once the supplier confirms the delivery schedule. Please report any similar damage through the quality portal.",
+    "passageZh": "進料檢驗團隊在本週交付的部分鋁製上蓋上發現刮痕。受影響批次已暫停使用，不會投入生產。我們已要求供應商檢查保護包裝，並最遲在星期二提供矯正措施報告。較早的批次檢驗合格，仍可使用。供應商確認交期後，採購會協調替換上蓋。若發現類似損傷，請透過品質入口網站回報。",
+    "audioScript": "Our incoming inspection team found scratches on some of the aluminum covers delivered this week. The affected batch has been placed on hold and will not enter production. We have asked the supplier to examine the protective packaging and send a corrective action report by Tuesday. The earlier batch passed inspection and can still be used. Purchasing will coordinate replacement covers once the supplier confirms the delivery schedule. Please report any similar damage through the quality portal.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Our incoming inspection team found scratches on some of the aluminum covers delivered this week. The affected batch has been placed on hold and will not enter production. We have asked the supplier to examine the protective packaging and send a corrective action report by Tuesday. The earlier batch passed inspection and can still be used. Purchasing will coordinate replacement covers once the supplier confirms the delivery schedule. Please report any similar damage through the quality portal."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-24.mp3",
+    "duration": 33.264,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-IE",
+        "role": "female",
+        "modelVoice": "en-IE-EmilyNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 33.764
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-02-cues-04.mp3",
+      "mode": "cue",
+      "start": 50.80525,
+      "end": 54.40371,
+      "assetSha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+      "speech": "Questions 77 through 79. Listen to the talk."
+    },
+    {
+      "path": "audio/azure-v1/test-02-24.mp3",
+      "mode": "passage",
+      "start": 0.5,
+      "end": 33.764,
+      "assetSha256": "afc5694920388f8fe28ca9c1d94e7cbb5a752061fcc5c04e25b95a302f2762bf",
+      "speech": "Our incoming inspection team found scratches on some of the aluminum covers delivered this week. The affected batch has been placed on hold and will not enter production. We have asked the supplier to examine the protective packaging and send a corrective action report by Tuesday. The earlier batch passed inspection and can still be used. Purchasing will coordinate replacement covers once the supplier confirms the delivery schedule. Please report any similar damage through the quality portal."
+    },
+    {
+      "path": "audio/formal/test-02-cues-04.mp3",
+      "mode": "question",
+      "start": 54.65371,
+      "end": 57.52925,
+      "assetSha256": "7a412414ef04f316cf0512c713422b437b36994c5a710db49896b72ac4ab72fe",
+      "speech": "Number 77. What was found on some covers?"
+    },
+    {
+      "path": "audio/azure-v1/test-02-24.mp3",
+      "mode": "practice",
+      "start": 0.5,
+      "end": 33.764,
+      "assetSha256": "afc5694920388f8fe28ca9c1d94e7cbb5a752061fcc5c04e25b95a302f2762bf",
+      "speech": "Our incoming inspection team found scratches on some of the aluminum covers delivered this week. The affected batch has been placed on hold and will not enter production. We have asked the supplier to examine the protective packaging and send a corrective action report by Tuesday. The earlier batch passed inspection and can still be used. Purchasing will coordinate replacement covers once the supplier confirms the delivery schedule. Please report any similar damage through the quality portal."
+    }
+  ]
+}

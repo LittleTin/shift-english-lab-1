@@ -103,3 +103,21 @@ all three candidate packs: hard filters must not select mismatched siblings,
 entire groups remain together, and fewer eligible groups are allowed. This
 additional browser scenario is not yet run. The residue of any build remains
 synthetic and must not enter production.
+
+### Optional backup export read-only guard
+
+Append both flags to a fresh build command to compose retired-result, practice,
+resume, and finally backup-readonly changes:
+
+    python3 "$D/prepare_fixture.py" "$D/fixture-backup" --practice-filter --backup-readonly
+
+Node must be available to run the eight existing backup state regressions.
+Any failure prevents the candidate app from replacing the composed app and
+prevents the fixture receipt from being written. A successful receipt binds
+the backup helper, regression script, and exact tested app SHA; the HTTP
+fixture verifier also checks that SHA equals the served app manifest entry.
+No media fixture or server restrictions change. These are isolated IndexedDB,
+localStorage, and memory-state doubles, not a real-browser test; still run a
+two-tab backup download/resume against the exact isolated final app, confirm
+the real JSON contains updated answers, audio frame/offset and note without
+overwriting progress, then repeat using fallback storage if available.

@@ -1,0 +1,187 @@
+{
+  "status": "targeted-prospective-artifact-no-synthesis-no-promotion",
+  "testId": "test-01",
+  "part": 3,
+  "scope": [
+    56,
+    57,
+    58
+  ],
+  "oldGroupId": "t01-g040",
+  "oldGroupSha256": "5fc1b34c7f5c8c5535288baf6a5dc518d884a5a29377ff224dde93867942c217",
+  "rootSiteWorkRef": "fa6e3f8fa86a6b8f701dc4574db32bdbdc35cb01",
+  "oldQuestionIds": [
+    "t01-q056",
+    "t01-q057",
+    "t01-q058"
+  ],
+  "oldQuestionSha256": {
+    "56": "36c25c5d58d7845f50b94a7747468e4d9eddb671876004bf076dfd8ca6d6ebaf",
+    "57": "f55c8afc6eb9011b03ebed8fd9fc36edd042222626ba20c6fdaabd0df44ad279",
+    "58": "e366f18034f04be2415b0b89bbd9060a0862092c80b59fd31cba4b61022012af"
+  },
+  "oldKeys": [
+    "A",
+    "B",
+    "C"
+  ],
+  "oldModeAssets": {
+    "formal": {
+      "path": "audio/azure-v1/test-01-20.mp3",
+      "start": 0.5,
+      "end": 35.132,
+      "sha256": "1181828246ee1e732d2aec3d12d602d188fe87286781f7e9b498eb1674b8602b"
+    },
+    "practice": {
+      "path": "audio/azure-v1/test-01-20.mp3",
+      "start": 0.5,
+      "end": 35.132,
+      "sha256": "1181828246ee1e732d2aec3d12d602d188fe87286781f7e9b498eb1674b8602b"
+    },
+    "cue": {
+      "path": "audio/formal/test-01-cues-03.mp3",
+      "start": 21.09092,
+      "end": 24.99508,
+      "sha256": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196"
+    }
+  },
+  "oldFormalStems": {
+    "56": {
+      "path": "audio/formal/test-01-cues-03.mp3",
+      "start": 25.24508,
+      "end": 29.00875,
+      "sha256": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196"
+    },
+    "57": {
+      "path": "audio/formal/test-01-cues-03.mp3",
+      "start": 29.25875,
+      "end": 33.03988,
+      "sha256": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196"
+    },
+    "58": {
+      "path": "audio/formal/test-01-cues-03.mp3",
+      "start": 33.28988,
+      "end": 35.90308,
+      "sha256": "429ddba55235596cc6f63139a505dfc73b07559dafd20781bfe097b001180196"
+    }
+  },
+  "oldVoices": [
+    {
+      "speaker": "female",
+      "locale": "en-NG",
+      "role": "female",
+      "modelVoice": "en-NG-EzinneNeural"
+    },
+    {
+      "speaker": "male",
+      "locale": "en-NG",
+      "role": "male",
+      "modelVoice": "en-NG-AbeoNeural"
+    }
+  ],
+  "actualHold": "Whisper small.en and independent Vosk both render reserve (not reserved) and I review (not I’ll review). Whisper small did not correctly render the connective in the final instruction. Both support existing claim and key facts; exact whole manuscript is still unapproved.",
+  "newGroup": {
+    "englishPassage": "Woman: My travel reimbursement was returned because the taxi receipt doesn't show the payment date.\nMan: Do you still have the booking confirmation?\nWoman: Yes, but it only shows the booking time.\nMan: Check the taxi app. You can usually download an itemized receipt after the trip.\nWoman: I found it. It has the date, fare, and company registration number.\nMan: Great. Attach that file to your existing claim. Do not start another one. I will review it this afternoon.",
+    "chinesePassage": "女：我的差旅費申請被退回，因為計程車收據沒有顯示付款日期。\n男：你還留著預訂確認信嗎？\n女：有，但那只顯示預約時間。\n男：看看計程車應用程式。行程結束後通常可以下載明細收據。\n女：我找到了。上面有日期、車資和公司登記號碼。\n男：很好。把那個檔案附在你原本的申請上。不要另開新申請。我今天下午會審查。",
+    "audioScript": "My travel reimbursement was returned because the taxi receipt doesn't show the payment date.\nDo you still have the booking confirmation?\nYes, but it only shows the booking time.\nCheck the taxi app. You can usually download an itemized receipt after the trip.\nI found it. It has the date, fare, and company registration number.\nGreat. Attach that file to your existing claim. Do not start another one. I will review it this afternoon.",
+    "turns": [
+      {
+        "speaker": "Woman",
+        "role": "female",
+        "text": "My travel reimbursement was returned because the taxi receipt doesn't show the payment date.",
+        "zh": "我的差旅費申請被退回，因為計程車收據沒有顯示付款日期。"
+      },
+      {
+        "speaker": "Man",
+        "role": "male",
+        "text": "Do you still have the booking confirmation?",
+        "zh": "你還留著預訂確認信嗎？"
+      },
+      {
+        "speaker": "Woman",
+        "role": "female",
+        "text": "Yes, but it only shows the booking time.",
+        "zh": "有，但那只顯示預約時間。"
+      },
+      {
+        "speaker": "Man",
+        "role": "male",
+        "text": "Check the taxi app. You can usually download an itemized receipt after the trip.",
+        "zh": "看看計程車應用程式。行程結束後通常可以下載明細收據。"
+      },
+      {
+        "speaker": "Woman",
+        "role": "female",
+        "text": "I found it. It has the date, fare, and company registration number.",
+        "zh": "我找到了。上面有日期、車資和公司登記號碼。"
+      },
+      {
+        "speaker": "Man",
+        "role": "male",
+        "text": "Great. Attach that file to your existing claim. Do not start another one. I will review it this afternoon.",
+        "zh": "很好。把那個檔案附在你原本的申請上。不要另開新申請。我今天下午會審查。"
+      }
+    ],
+    "voiceMap": [
+      {
+        "speaker": "female",
+        "locale": "en-NG",
+        "role": "female",
+        "modelVoice": "en-NG-EzinneNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-NG",
+        "role": "male",
+        "modelVoice": "en-NG-AbeoNeural"
+      }
+    ],
+    "partsChanged": [
+      3,
+      6
+    ]
+  },
+  "onlyQuestionEditorialPatches": [
+    {
+      "number": 58,
+      "field": [
+        "options",
+        0,
+        "whyZh"
+      ],
+      "old": "男子用 rather than starting a new one 明確排除此做法。",
+      "new": "男子明確說 Do not start another one，不要另開一份申請。"
+    },
+    {
+      "number": 58,
+      "field": [
+        "options",
+        2,
+        "whyZh"
+      ],
+      "old": "男子明確要求 attach ... to the existing claim，並特別說不要另開新申請。",
+      "new": "男子說要把檔案附在原申請上，並明確表示不要另開新申請。"
+    },
+    {
+      "number": 58,
+      "field": [
+        "explanationZh"
+      ],
+      "old": "男子明確要求 attach ... to the existing claim，並特別說不要另開新申請。",
+      "new": "男子說要把檔案附在原申請上，並明確表示不要另開新申請。"
+    },
+    {
+      "number": 58,
+      "field": [
+        "evidence"
+      ],
+      "old": "Attach that file to the existing claim rather than starting a new one.",
+      "new": "Great. Attach that file to your existing claim. Do not start another one. I will review it this afternoon."
+    }
+  ],
+  "plannedAsset": "One coherent shared formal/practice renderer, preserving voices, same numbered group cue and existing separately verified numbered stems. Associated rationale/evidence only updates literal excerpts.",
+  "adoptionNotes": [
+    "Existing cards and keys A/B/C unchanged. Keep immutable old audio/pack/resume and records; never overwrite original audio bank.",
+    "Resolve stable question/changed group identity and exact formal and practice paths with browser and 2700 s timing before adopting."
+  ]
+}
