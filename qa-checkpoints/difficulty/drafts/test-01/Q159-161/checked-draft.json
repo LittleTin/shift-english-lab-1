@@ -1,0 +1,231 @@
+{
+  "status": "pending-independent-blind-review-not-adopted",
+  "sourceCommit": "db910d2fa740dd6e916f9e9dd6b8d6ea70de547d",
+  "sourceSpecSha256": "ad34d489af593d03e9b97c94821e7130d271d1991f961af1eb1d8de9fe22cfef",
+  "fictionBoundary": "Original fictional stand handover at a nonspecific ODM factory; no model/vendor standards or external knowledge required.",
+  "draftGroup": {
+    "id": "t01-r-p7-05-r2",
+    "testId": "test-01",
+    "part": 7,
+    "title": "Sample stand handover",
+    "titleZh": "樣品展示架交接",
+    "topic": "manufacturing",
+    "passage": "Sample stand handover\n\nThe model shop has finished two display stands for an ODM customer’s countertop controller. The blue stand is a shape sample: its cable opening shows where the cable will run, but the stand has no working electrical parts. The gray stand has a working USB port so staff can demonstrate how the controller is powered. Both stands can hold the controller upright.\n\nThe blue stand goes in the showroom cabinet after every demonstration. The gray stand can be collected from the model shop between 9:30 and 11:30. If the model shop has not received a borrowing slip by 11:00, keep the stand there; the showroom office cannot sign the slip in the shop’s place. The model shop closes at 3:30, but the showroom office accepts returns of gray stands already on loan until 4:30.\n\nPlease leave the printed compatibility card in the gray stand’s case on return. The card lists the cables actually tested with the prototype. The engineering office issues official product specifications separately.",
+    "passageZh": "樣品展示架交接\n\n模型工坊為一位 ODM 客戶的檯面型控制器做了兩個展示架。藍色是外型樣品：開孔能展示線材會從哪裡穿過，但展示架沒有可運作的電子零件。灰色展示架有可用的 USB 連接埠，讓工作人員示範如何為控制器供電。兩個展示架都能讓控制器直立。\n\n藍色展示架每次示範完都放回展示間的櫃子。灰色展示架可在上午 9:30 至 11:30 到工坊領取。若工坊到上午 11:00 尚未收到借用單，就先把展示架留在工坊；展示間辦公室不能代替工坊簽借用單。工坊下午 3:30 關門，但已借出的灰色展示架可在下午 4:30 前歸還至展示間辦公室。\n\n歸還灰色展示架時，請將紙本相容性清單留在盒內。清單只列出在原型樣品上實際測試過的線材。正式產品規格由工程部門另行發布。"
+  },
+  "draftActiveQuestions": [
+    {
+      "id": "t01-q159-r2",
+      "testId": "test-01",
+      "number": 159,
+      "part": 7,
+      "groupId": "t01-r-p7-05-r2",
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "manufacturing",
+        "reading-comprehension"
+      ],
+      "prompt": "Marta plans to show a visitor how the controller gets power. What does she need to arrange before collecting a stand at 11:15?",
+      "promptZh": "Marta 想向訪客示範如何為控制器供電。若她計畫上午 11:15 領取展示架，事前需要做什麼安排？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Have the model shop receive the borrowing slip by 11:00, then collect the gray stand.",
+          "zh": "讓工坊最遲於上午 11:00 收到借用單，再領取灰色展示架。",
+          "whyZh": "灰色展示架能示範如何供電。上午 11:15 在領取時段內，但工坊須最遲於 11:00 收到借用單。"
+        },
+        {
+          "id": "B",
+          "text": "Ask the showroom office to sign the slip, then collect the gray stand.",
+          "zh": "請展示間辦公室簽借用單，再領取灰色展示架。",
+          "whyZh": "選對了展示架，但展示間辦公室不能代替工坊簽借用單。"
+        },
+        {
+          "id": "C",
+          "text": "Take the blue stand from the showroom cabinet because it has a cable opening.",
+          "zh": "從展示間的櫃子拿藍色展示架，因為它有穿線孔。",
+          "whyZh": "藍色展示架的穿線孔只能展示線材路徑，並無可運作的零件，不能示範供電。"
+        },
+        {
+          "id": "D",
+          "text": "Have the model shop receive the slip for the gray stand when she arrives at 11:15.",
+          "zh": "上午 11:15 抵達時再讓工坊收灰色展示架的借用單。",
+          "whyZh": "上午 11:15 還可領取展示架，但已超過工坊收借用單的 11:00 期限。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "灰色展示架能示範如何供電。上午 11:15 在領取時段內，但工坊須最遲於 11:00 收到借用單。",
+      "evidence": "The gray stand has a working USB port […] If the model shop has not received a borrowing slip by 11:00, keep the stand there",
+      "vocabulary": [
+        {
+          "term": "working",
+          "zh": "可運作的"
+        },
+        {
+          "term": "borrowing slip",
+          "zh": "借用單"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t01-q160-r2",
+      "testId": "test-01",
+      "number": 160,
+      "part": 7,
+      "groupId": "t01-r-p7-05-r2",
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "manufacturing",
+        "reading-comprehension"
+      ],
+      "prompt": "A staff member finishes using a borrowed stand at 3:40 and now needs to return it. Which plan follows the notice?",
+      "promptZh": "有位員工下午 3:40 用完借來的展示架，現在要歸還。下列哪個做法符合通知？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Put the gray stand in the showroom cabinet and take the compatibility card home.",
+          "zh": "把灰色展示架放進展示間的櫃子，將相容性清單帶回家。",
+          "whyZh": "櫃子用來收放藍色展示架；灰色應歸還到展示間辦公室，且清單要留在盒內。"
+        },
+        {
+          "id": "B",
+          "text": "Hand the gray stand to the showroom office before 4:30, with the card in its case.",
+          "zh": "下午 4:30 前把灰色展示架交給展示間辦公室，並將清單留在盒內。",
+          "whyZh": "工坊已關門，但展示間辦公室在下午 4:30 前仍收件；歸還時紙本清單須放在盒內。"
+        },
+        {
+          "id": "C",
+          "text": "Deliver the gray stand to the model shop at 4:00 and submit another borrowing slip.",
+          "zh": "下午 4:00 把灰色展示架送到工坊，並再交一張借用單。",
+          "whyZh": "工坊下午 3:30 就關門，而且通知並未要求歸還時再交借用單。"
+        },
+        {
+          "id": "D",
+          "text": "Return the stand to the showroom office now and put the card back the next morning.",
+          "zh": "現在把展示架還給展示間辦公室，隔天早上才把清單放回盒內。",
+          "whyZh": "地點正確，但通知要求歸還展示架的當下就把清單留在盒內，不能隔天才補。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "工坊已關門，但展示間辦公室在下午 4:30 前仍收件；歸還時紙本清單須放在盒內。",
+      "evidence": "the showroom office accepts returns of gray stands already on loan until 4:30 […] leave the printed compatibility card in the gray stand’s case on return",
+      "vocabulary": [
+        {
+          "term": "on loan",
+          "zh": "已借出"
+        },
+        {
+          "term": "on return",
+          "zh": "歸還時"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t01-q161-r2",
+      "testId": "test-01",
+      "number": 161,
+      "part": 7,
+      "groupId": "t01-r-p7-05-r2",
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "manufacturing",
+        "reading-comprehension"
+      ],
+      "prompt": "A customer wants official confirmation that a cable not shown on the card is supported. What should the sales team do?",
+      "promptZh": "有客戶希望得到正式確認，想知道清單上沒列出的線材是否受支援。業務團隊應該怎麼做？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tell the customer that a cable missing from the card will not work.",
+          "zh": "告訴客戶，沒列在清單上的線材一定不能用。",
+          "whyZh": "清單只列原型實際測過的線材；未列出不代表不能用。"
+        },
+        {
+          "id": "B",
+          "text": "Check the engineering office’s product specifications instead of relying on the card.",
+          "zh": "查閱工程部門發布的產品規格，不要只依賴這份清單。",
+          "whyZh": "原型相容性清單記錄實際做過的測試，不等於正式產品規格。要確認正式支援情況，應查工程部門另行發布的規格。"
+        },
+        {
+          "id": "C",
+          "text": "Send a copy of the card as the current product specification.",
+          "zh": "將這份清單寄給客戶，當作現行產品規格。",
+          "whyZh": "原型測試清單與正式產品規格用途不同；不能用測試清單代替正式規格。"
+        },
+        {
+          "id": "D",
+          "text": "Test whether the cable fits the blue stand’s opening and confirm support if it fits.",
+          "zh": "檢查線材能否穿過藍色展示架的開孔；只要穿得過就確認支援。",
+          "whyZh": "藍色展示架只展示外型和走線位置；線材可穿過開孔，不代表電氣功能相容或正式支援。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "原型相容性清單記錄實際做過的測試，不等於正式產品規格。要確認正式支援情況，應查工程部門另行發布的規格。",
+      "evidence": "The card lists the cables actually tested with the prototype. The engineering office issues official product specifications separately.",
+      "vocabulary": [
+        {
+          "term": "compatibility",
+          "zh": "相容性"
+        },
+        {
+          "term": "specification",
+          "zh": "規格"
+        }
+      ],
+      "revision": 2
+    }
+  ],
+  "guards": [
+    {
+      "number": 159,
+      "id": "t01-q159",
+      "key": "A",
+      "revision": 1,
+      "verifiedPath": "qa-checkpoints/verified-items/test-01/Q159.json",
+      "sourceFileSha256": "bf3b1ae0f721610ec24d6e7b31e0215d2d280eb101cd7cda360d681519be82c7",
+      "sourceGitBlobSha1": "9aeba246d8697b119475174055ed9b362a2560d8",
+      "activeQuestionSha256Canonical": "699262397bbcf16090017019ec71d3b3a7e390097140aab1382ce503a0aedc19",
+      "groupSha256Canonical": "96b8fabb4e4dcc2045f1c92ebdd138a5f06833d8f32dadbc28b859c0e68f7d77",
+      "difficultyPath": "qa-checkpoints/difficulty/test-01/Q159.json",
+      "difficultySha256": "d682fefcc31a68cd87d5eaf5b424c039536d6f42f30e93b2f803f5f0422f3ac9"
+    },
+    {
+      "number": 160,
+      "id": "t01-q160",
+      "key": "D",
+      "revision": 1,
+      "verifiedPath": "qa-checkpoints/verified-items/test-01/Q160.json",
+      "sourceFileSha256": "0473c2208fd825ecc198887deb999fbead418eca63cac6ba7e6481235a9477fc",
+      "sourceGitBlobSha1": "60b35f549880eee76ffc7ea65426ab6b8c0a9adf",
+      "activeQuestionSha256Canonical": "4dac80f88b0b3dee27be10f8899c4fe6a120ef01ae8468dfdd98169dc1f3d8c4",
+      "groupSha256Canonical": "96b8fabb4e4dcc2045f1c92ebdd138a5f06833d8f32dadbc28b859c0e68f7d77",
+      "difficultyPath": "qa-checkpoints/difficulty/test-01/Q160.json",
+      "difficultySha256": "5882d845e072412f988a2f990995168e86d2eae48f3c211025dad80bf073c5f3"
+    },
+    {
+      "number": 161,
+      "id": "t01-q161",
+      "key": "D",
+      "revision": 1,
+      "verifiedPath": "qa-checkpoints/verified-items/test-01/Q161.json",
+      "sourceFileSha256": "a759504c4b32248b3e1eb01f019ca39e7e47314600eedc88485fdc50eb90307f",
+      "sourceGitBlobSha1": "ba251bf633b2856f90114283f0722e46b36310a1",
+      "activeQuestionSha256Canonical": "186101952f16bba5fcbbb1b250f9cea74eb42d58b3fa0592fa7183ea75b3c4ac",
+      "groupSha256Canonical": "96b8fabb4e4dcc2045f1c92ebdd138a5f06833d8f32dadbc28b859c0e68f7d77",
+      "difficultyPath": "qa-checkpoints/difficulty/test-01/Q161.json",
+      "difficultySha256": "a168f184863777f77a3fff49307db990df15a1087a1208bd56d7fd2e7235cf8f"
+    }
+  ],
+  "difficultyEvidence": {
+    "159": "Identify the functional stand from its hardware, then distinguish the slip deadline from the later collection cutoff.",
+    "160": "Integrate the after-closing return route with the requirement to keep the card in the case upon return.",
+    "161": "Apply the test-record versus official-specification distinction to an unlisted cable, without inferring either compatibility or incompatibility."
+  },
+  "history": "Old entire single passage and all three verified foundation questions must be preserved in the reserve before adoption. Keep prior snapshots and original grading.",
+  "oldScope": "t01-r-p7-05, Test01 Q159–161, one manufacturing single passage, no media."
+}

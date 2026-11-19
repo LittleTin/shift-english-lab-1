@@ -1,0 +1,57 @@
+{
+  "id": "t02-q172-r2",
+  "testId": "test-02",
+  "number": 172,
+  "part": 7,
+  "groupId": "t02-r-p7-09",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "business",
+    "reading-comprehension"
+  ],
+  "prompt": "Why should visitor numbers be included in a reservation?",
+  "promptZh": "為何預約要填訪客人數？",
+  "options": [
+    {
+      "text": "To determine how many chairs must be removed",
+      "zh": "決定移除多少椅子",
+      "whyZh": "文件沒有這項規則。",
+      "id": "A"
+    },
+    {
+      "text": "To help reception prepare temporary badges",
+      "zh": "協助櫃檯準備臨時識別證",
+      "whyZh": "第二段明確說明人數用途。",
+      "id": "B"
+    },
+    {
+      "text": "To determine whether a room needs video-conferencing equipment",
+      "zh": "判斷會議室是否需要視訊設備",
+      "whyZh": "人數是供櫃檯準備識別證用的，視訊設備另有圖示。",
+      "id": "C"
+    },
+    {
+      "text": "To disable the check-in requirement",
+      "zh": "取消報到要求",
+      "whyZh": "訪客人數不影響報到規則。",
+      "id": "D"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "第二段明確說明人數用途。",
+  "evidence": "Reception uses this information to prepare temporary badges.",
+  "vocabulary": [
+    {
+      "term": "check in",
+      "zh": "報到；確認使用",
+      "note": "向預約系統表示使用者已到場。"
+    },
+    {
+      "term": "release a room",
+      "zh": "釋出會議室",
+      "note": "讓原本保留的會議空間可被其他人使用。"
+    }
+  ],
+  "revision": 2
+}

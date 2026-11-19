@@ -1,0 +1,57 @@
+{
+  "id": "t01-q160",
+  "testId": "test-01",
+  "number": 160,
+  "part": 7,
+  "groupId": "t01-r-p7-05",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "Who will decide whether units can be released?",
+  "promptZh": "由誰決定設備是否可以放行？",
+  "options": [
+    {
+      "text": "Any worker on the next production line",
+      "zh": "下一條產線的任何作業員",
+      "whyZh": "下一批可以繼續生產不代表作業員可放行 K724。",
+      "id": "A"
+    },
+    {
+      "text": "The delivery driver",
+      "zh": "送貨司機",
+      "whyZh": "司機未被賦予品質判定權限。",
+      "id": "B"
+    },
+    {
+      "text": "The packaging supplier",
+      "zh": "包材供應商",
+      "whyZh": "文件沒有將放行決定交給供應商。",
+      "id": "C"
+    },
+    {
+      "text": "The Quality department",
+      "zh": "品管部",
+      "whyZh": "文件明確將檢查及放行決定交給 Quality。",
+      "id": "D"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "文件明確將檢查及放行決定交給 Quality。",
+  "evidence": "Quality will inspect the window surfaces and decide which units can be released.",
+  "vocabulary": [
+    {
+      "term": "on hold",
+      "zh": "暫停放行",
+      "note": "等待檢查或決策前不可進入指定後續流程。"
+    },
+    {
+      "term": "quarantine area",
+      "zh": "隔離區",
+      "note": "將待處理物品與可用庫存分開的區域。"
+    }
+  ],
+  "revision": 1
+}

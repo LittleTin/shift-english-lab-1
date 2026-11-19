@@ -1,0 +1,228 @@
+{
+  "status": "local-revision-following-independent-blind-review",
+  "sourceCommit": "db910d2fa740dd6e916f9e9dd6b8d6ea70de547d",
+  "exactSourcePlan": "qa-checkpoints/difficulty/plans/post-six-rotations.md",
+  "singlePassage": true,
+  "fictionBoundary": "All room names, service procedures and clients are fictional.",
+  "oldScope": [
+    171,
+    172,
+    173
+  ],
+  "draftGroup": {
+    "id": "t02-r-p7-09-r2",
+    "testId": "test-02",
+    "part": 7,
+    "title": "Thursday client demonstration: room and arrival instructions",
+    "titleZh": "週四客戶展示：場地與入場須知",
+    "topic": "business",
+    "passage": "Thursday client demonstration: room and arrival instructions\n\nAll three demonstration rooms have a display. Harbor can send both picture and sound to remote viewers, but there are three steps from the elevator to its door. Grove and Shore are both accessible without steps. Grove can send sound to remote viewers but has no camera; a portable camera that can be aimed at the demonstration table will be available there after 1 p.m. Shore sends sound and picture throughout the day, but its camera is fixed on the presenter’s lectern. It cannot show a product on the demonstration table.\n\nOutside technicians should bring the equipment collection reference to the service entrance if they are collecting any demonstration equipment from our storeroom. If they need nothing from the storeroom and are bringing their own equipment, they should use the lobby and show the vendor confirmation email. A supplier’s delivery driver who is not staying for the session should use the loading dock instead; a delivery note is enough there. The desk in the lobby does not issue collection references.\n\nThe session lead must mark the room as in use in the booking app. If the lead will be more than ten minutes late, a colleague who is already listed as a co-host can do this on arrival. If neither person has checked in ten minutes after the reserved start, the room will go to the waiting list. Letting the client into the room or opening the meeting link does not count as room check-in. If the booking app is not working, the lead or listed co-host can use the panel outside the room instead.",
+    "passageZh": "週四客戶展示：場地與入場須知\n\n三間展示室都有螢幕。Harbor 可將畫面和聲音傳給遠端觀眾，但從電梯到門口有三級階梯。前往 Grove 和 Shore 的路線都沒有階梯。Grove 能傳送聲音給遠端觀眾，但沒有攝影機。下午一點後，該室便可使用一台可對準展示桌的可攜式攝影機。Shore 全天都能傳送聲音和畫面，但攝影機固定對準講台，只能拍攝講台前的講者，無法拍到展示桌上的產品。\n\n外部技術人員若要到本公司庫房領取任何展示設備，請攜帶領取編號前往服務入口。若自備設備且不必到庫房領取任何物品，請走大廳入口並出示供應商確認信。不會留下參與展示的送貨司機則應前往卸貨區，在那裡只需出示送貨單。大廳櫃檯不核發設備領取編號。\n\n展示負責人必須在預約應用程式中將房間標記為使用中。如果負責人會遲到超過十分鐘，預約中已登記為共同主持人的同事可在到場時代為報到。若預約時段開始十分鐘後兩人都未報到，房間就會釋出給候補者。讓客戶進入展示室，或開啟線上會議連結，都不算完成房間報到。如果預約應用程式無法使用，負責人或已登記的共同主持人可以改用房間門外的面板。"
+  },
+  "draftActiveQuestions": [
+    {
+      "id": "t02-q171-r3",
+      "testId": "test-02",
+      "number": 171,
+      "part": 7,
+      "groupId": "t02-r-p7-09-r2",
+      "topic": "business",
+      "difficulty": "intermediate",
+      "tags": [
+        "business",
+        "reading-comprehension"
+      ],
+      "prompt": "A session currently booked for 11 a.m. can be moved to a later time if needed. It needs a step-free room, and remote clients must be able to see the product on the table. What should the organizer do?",
+      "promptZh": "原定上午 11 點的展示必要時可以改到較晚時段。展示需要一間無階梯可達的房間，遠端客戶也必須能看到展示桌上的產品。主辦人應採取什麼做法？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Keep Harbor because remote clients can receive both picture and sound.",
+          "zh": "保留 Harbor，因為遠端客戶能收到畫面與聲音。",
+          "whyZh": "Harbor 雖能傳送畫面與聲音，但從電梯到室門有三級階梯，不符無階梯的需求。"
+        },
+        {
+          "id": "B",
+          "text": "Use Grove at 11 a.m. and take the portable camera from that room.",
+          "zh": "上午 11 點使用 Grove，取用該室的可攜式攝影機。",
+          "whyZh": "Grove 無階梯可達，但可攜式攝影機要下午一點後才可使用；上午 11 點沒有攝影機。"
+        },
+        {
+          "id": "C",
+          "text": "Use Shore at 11 a.m. and show the product on its demonstration table.",
+          "zh": "上午 11 點使用 Shore，把產品放在展示桌上展示。",
+          "whyZh": "Shore 無階梯可達，也能傳送影音，但攝影機固定朝向講台，拍不到展示桌。"
+        },
+        {
+          "id": "D",
+          "text": "Ask for a slot after 1 p.m. in Grove so a portable camera can be used.",
+          "zh": "詢問能否改到下午 1 點後使用 Grove，以便使用可攜式攝影機。",
+          "whyZh": "Grove 無階梯可達。展示可以調整時段；若改到下午 1 點後使用 Grove，就能把可攜式攝影機對準展示桌，讓遠端客戶看到產品。"
+        }
+      ],
+      "answer": "D",
+      "explanationZh": "Grove 無階梯可達。展示可以調整時段；若改到下午 1 點後使用 Grove，就能把可攜式攝影機對準展示桌，讓遠端客戶看到產品。",
+      "evidence": "Grove and Shore are both accessible without steps. […] a portable camera that can be aimed at the demonstration table will be available there after 1 p.m. […] It cannot show a product on the demonstration table.",
+      "vocabulary": [
+        {
+          "term": "portable camera",
+          "zh": "可攜式攝影機",
+          "note": "在本文指下午可在 Grove 使用，與 Shore 固定朝向講台的攝影機不同。"
+        }
+      ],
+      "revision": 3
+    },
+    {
+      "id": "t02-q172-r3",
+      "testId": "test-02",
+      "number": 172,
+      "part": 7,
+      "groupId": "t02-r-p7-09-r2",
+      "topic": "business",
+      "difficulty": "intermediate",
+      "tags": [
+        "business",
+        "reading-comprehension"
+      ],
+      "prompt": "A visiting technician has a vendor confirmation email and will bring a personal laptop, but has just agreed to pick up a spare camera from the site’s storeroom. What should the technician arrange before arriving?",
+      "promptZh": "一名外部技術人員已有供應商確認信，也會自備筆電，但剛答應順道在本公司庫房領取一台備用攝影機。到場前應做什麼安排？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Obtain the camera collection reference and go to the service entrance.",
+          "zh": "取得攝影機領取編號，並前往服務入口。",
+          "whyZh": "雖有確認信且自備筆電，技術人員仍有庫房領取任務；須先取得攝影機的領取編號，再走服務入口。"
+        },
+        {
+          "id": "B",
+          "text": "Keep the vendor confirmation and use the lobby to enter with the laptop.",
+          "zh": "保留供應商確認信，帶著筆電從大廳入口進入。",
+          "whyZh": "若自備設備且不用到庫房領取物品，才走大廳；這位技術人員仍須領攝影機。"
+        },
+        {
+          "id": "C",
+          "text": "Ask for a delivery note and use the loading dock to bring the laptop in.",
+          "zh": "索取送貨單，再從卸貨區帶筆電進場。",
+          "whyZh": "卸貨區的送貨單方式只適用於不會留下參與展示的送貨司機；這裡是技術人員要領設備。"
+        },
+        {
+          "id": "D",
+          "text": "Go to the lobby with the vendor confirmation and have the desk issue the collection reference.",
+          "zh": "持供應商確認信到大廳，請櫃檯核發設備領取編號。",
+          "whyZh": "大廳櫃檯不核發領取編號；供應商確認信也不能取代領取編號。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "雖有確認信且自備筆電，技術人員仍有庫房領取任務；須先取得攝影機的領取編號，再走服務入口。",
+      "evidence": "if they are collecting any demonstration equipment from our storeroom […] If they need nothing from the storeroom and are bringing their own equipment",
+      "vocabulary": [
+        {
+          "term": "collection reference",
+          "zh": "領取編號",
+          "note": "確認設備領取安排的編號，不等同供應商確認信上的訪客資料。"
+        }
+      ],
+      "revision": 3
+    },
+    {
+      "id": "t02-q173-r3",
+      "testId": "test-02",
+      "number": 173,
+      "part": 7,
+      "groupId": "t02-r-p7-09-r2",
+      "topic": "business",
+      "difficulty": "intermediate",
+      "tags": [
+        "business",
+        "reading-comprehension"
+      ],
+      "prompt": "A session is booked for 2 p.m. The lead cannot arrive until 2:20, and the booking app is not working. What can keep the room reservation?",
+      "promptZh": "一場展示預約在下午 2 點開始。負責人得等到 2:20 才能到場，預約應用程式也無法使用。如何保留房間預約？",
+      "options": [
+        {
+          "id": "A",
+          "text": "The lead checks in at the panel immediately after arriving.",
+          "zh": "負責人抵達後立刻使用門外面板報到。",
+          "whyZh": "面板確實可用，但下午 2:20 已超過開場後十分鐘的報到期限。"
+        },
+        {
+          "id": "B",
+          "text": "The listed co-host uses the panel at 2:07.",
+          "zh": "已登記的共同主持人在下午 2:07 使用面板報到。",
+          "whyZh": "已登記的共同主持人可以代為報到。應用程式無法使用時，可改用門外面板，而 2:07 在十分鐘期限內。"
+        },
+        {
+          "id": "C",
+          "text": "An unlisted colleague opens the client’s meeting link at 2:05.",
+          "zh": "未登記為共同主持人的同事在下午 2:05 開啟客戶的會議連結。",
+          "whyZh": "只有負責人或已登記的共同主持人能報到；開啟會議連結也不等於報到。"
+        },
+        {
+          "id": "D",
+          "text": "The listed co-host lets clients into the room before 2:10 without marking it as in use.",
+          "zh": "已登記的共同主持人於下午 2:10 前讓客戶進門，但未將房間標記為使用中。",
+          "whyZh": "雖是有資格代辦的人，但只讓客戶進門並不算報到。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "已登記的共同主持人可以代為報到。應用程式無法使用時，可改用門外面板，而 2:07 在十分鐘期限內。",
+      "evidence": "a colleague who is already listed as a co-host […] ten minutes after the reserved start […] can use the panel outside the room instead",
+      "vocabulary": [
+        {
+          "term": "co-host",
+          "zh": "共同主持人",
+          "note": "本文限定已在預約內登記的人，並非在場的任何同事。"
+        }
+      ],
+      "revision": 3
+    }
+  ],
+  "guards": [
+    {
+      "number": 171,
+      "id": "t02-q171-r2",
+      "revision": 2,
+      "key": "A",
+      "sourceFileSha256": "8072045bdee8e1d9bc711dbfbe92be4c17b09835f67578b28302263dd7f21007",
+      "sourceGitBlobSha1": "0dfbea327efe40eb9824670acabfc64874caff05",
+      "verifiedPath": "qa-checkpoints/verified-items/test-02/Q171.json",
+      "activeQuestionSha256Canonical": "32c3bbae1bec3b6046939aaaad5e5eb1bf90c6afac038a7a60a7fe1fb908f4bb",
+      "groupSha256Canonical": "3592a0fc110d3d6ce058019431d4dbd93a07fe3761a3c91c8feb1a16361151d4",
+      "difficultyPath": "qa-checkpoints/difficulty/test-02/Q171.json",
+      "difficultySha256": "93a9aad662352c6f1c3d6fda40b0c6cd7061e1dee45116dbe4c3fce6d0bae17e"
+    },
+    {
+      "number": 172,
+      "id": "t02-q172-r2",
+      "revision": 2,
+      "key": "B",
+      "sourceFileSha256": "1ef669ee320e786de2fbac106cce9ef4b057d2a2105bdc4e7cfeb35d69dc6fc3",
+      "sourceGitBlobSha1": "debc119f6c9be6d6248984e0ea891c6ce9ff8651",
+      "verifiedPath": "qa-checkpoints/verified-items/test-02/Q172.json",
+      "activeQuestionSha256Canonical": "c3e8ca204225a029d66e59cc52cb8bc6e518d4ceefc52b7afc116a49a5f7bfca",
+      "groupSha256Canonical": "3592a0fc110d3d6ce058019431d4dbd93a07fe3761a3c91c8feb1a16361151d4",
+      "difficultyPath": "qa-checkpoints/difficulty/test-02/Q172.json",
+      "difficultySha256": "88746ba63565d9579de101cc42899b92f02803599e81514b71f8de767d775709"
+    },
+    {
+      "number": 173,
+      "id": "t02-q173-r2",
+      "revision": 2,
+      "key": "C",
+      "sourceFileSha256": "24442df67c8e7812651a6ce7f23c4741b0c799c2e066007fe776b529aed6ef90",
+      "sourceGitBlobSha1": "c671b2676d7b05ff969572ba6822517937765b4e",
+      "verifiedPath": "qa-checkpoints/verified-items/test-02/Q173.json",
+      "activeQuestionSha256Canonical": "a38ccdab174e0e61574b6a93104192bfcc705560a505fbf5e9dd19e5e389c2a5",
+      "groupSha256Canonical": "3592a0fc110d3d6ce058019431d4dbd93a07fe3761a3c91c8feb1a16361151d4",
+      "difficultyPath": "qa-checkpoints/difficulty/test-02/Q173.json",
+      "difficultySha256": "f8529490fa90a50a3d8c42d892948b9104413567eeddf0bdea347cb122cbdbf6"
+    }
+  ],
+  "reasoning": {
+    "171": "Cross-check access, camera availability time, and fixed versus repositionable framing.",
+    "172": "Choose the storeroom policy over the otherwise plausible vendor-confirmation procedure when both own and borrowed equipment are involved.",
+    "173": "Combine authorized delegation, the grace period, and the valid fallback; distinguish physical entry and opening a virtual link from a check-in."
+  },
+  "independentReview": "independent-review.md",
+  "guardReadbackRef": "5ae438b0b6db88bdddfca7ba1328da8a10b08c31"
+}

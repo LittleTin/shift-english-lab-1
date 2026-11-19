@@ -1,0 +1,129 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "reading",
+  "checks": "A: 15-minute check-in rule, panel/app only, no reception remedy or auto-extension; badges temporary and unrelated. Clarify awkward A rationale time wording. English and zh-TW sources/choices checked; second reviewer solved before viewing keys.",
+  "activeQuestion": {
+    "id": "t02-q171-r2",
+    "testId": "test-02",
+    "number": 171,
+    "part": 7,
+    "groupId": "t02-r-p7-09",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "reading-comprehension"
+    ],
+    "prompt": "What happens if the organizer does not check in on time?",
+    "promptZh": "主辦人未在期限內報到會如何？",
+    "options": [
+      {
+        "text": "The reservation is released",
+        "zh": "預約被釋出",
+        "whyZh": "主辦人若未在預約開始後十五分鐘內報到，會議室就會開放給其他人預約。",
+        "id": "A"
+      },
+      {
+        "text": "The organizer must check in at reception to keep the booking",
+        "zh": "主辦人須改到服務櫃檯報到才能保留預約",
+        "whyZh": "通知只列門外面板或預約應用程式報到，逾時會釋出預約。",
+        "id": "B"
+      },
+      {
+        "text": "All visitors receive permanent badges",
+        "zh": "所有訪客取得永久識別證",
+        "whyZh": "櫃檯準備的是臨時證件，與未報到無關。",
+        "id": "C"
+      },
+      {
+        "text": "The reservation is extended automatically",
+        "zh": "預約自動延長",
+        "whyZh": "規則是釋出，不是延長。",
+        "id": "D"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "主辦人若未在預約開始後十五分鐘內報到，會議室就會開放給其他人預約。",
+    "evidence": "Room bookings will be released if the organizer has not checked in within fifteen minutes",
+    "vocabulary": [
+      {
+        "term": "check in",
+        "zh": "報到；確認使用",
+        "note": "向預約系統表示使用者已到場。"
+      },
+      {
+        "term": "release a room",
+        "zh": "釋出會議室",
+        "note": "讓原本保留的會議空間可被其他人使用。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t02-r-p7-09",
+    "testId": "test-02",
+    "part": 7,
+    "title": "Meeting-room booking rules",
+    "titleZh": "會議室預約規則",
+    "topic": "business",
+    "passage": "Meeting-room booking update\n\nRoom bookings will be released if the organizer has not checked in within fifteen minutes of the reserved start time. Check-in can be completed on the panel outside the room or through the booking app.\n\nMeetings with external visitors should include the visitor count in the reservation. Reception uses this information to prepare temporary badges. Do not enter visitors’ personal identity numbers in the booking notes.\n\nIf your meeting ends early, release the room in the app so that others can use it. Moving chairs does not cancel a reservation. Rooms with video-conferencing equipment are marked with a camera icon; an ordinary screen alone does not indicate that a camera is installed.",
+    "passageZh": "會議室預約更新\n\n若主辦人在預約開始後十五分鐘內未報到，預約將被釋出。可在門外面板或預約應用程式中報到。\n\n有外部訪客的會議，請在預約中填訪客人數，櫃檯據此準備臨時識別證。請勿在預約備註中填寫訪客的個人身分識別號碼。\n\n若會議提早結束，請在應用程式釋出會議室，供他人使用。移動椅子不會取消預約。配備視訊會議設備的房間會標攝影機圖示；只有一般螢幕不代表已裝攝影機。"
+  },
+  "originalQuestion": {
+    "id": "t02-q171",
+    "testId": "test-02",
+    "number": 171,
+    "part": 7,
+    "groupId": "t02-r-p7-09",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "reading-comprehension"
+    ],
+    "prompt": "What happens if the organizer does not check in on time?",
+    "promptZh": "主辦人未在期限內報到會如何？",
+    "options": [
+      {
+        "text": "The reservation is released",
+        "zh": "預約被釋出",
+        "whyZh": "超過開始後十五分鐘未報到，系統釋出房間。",
+        "id": "A"
+      },
+      {
+        "text": "The camera is removed from the room",
+        "zh": "攝影機從房間移除",
+        "whyZh": "未報到影響預約，不改變設備。",
+        "id": "B"
+      },
+      {
+        "text": "All visitors receive permanent badges",
+        "zh": "所有訪客取得永久識別證",
+        "whyZh": "櫃檯準備的是臨時證件，與未報到無關。",
+        "id": "C"
+      },
+      {
+        "text": "The reservation is extended automatically",
+        "zh": "預約自動延長",
+        "whyZh": "規則是釋出，不是延長。",
+        "id": "D"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "超過開始後十五分鐘未報到，系統釋出房間。",
+    "evidence": "Room bookings will be released if the organizer has not checked in within fifteen minutes",
+    "vocabulary": [
+      {
+        "term": "check in",
+        "zh": "報到；確認使用",
+        "note": "向預約系統表示使用者已到場。"
+      },
+      {
+        "term": "release a room",
+        "zh": "釋出會議室",
+        "note": "讓原本保留的會議空間可被其他人使用。"
+      }
+    ],
+    "revision": 1
+  }
+}

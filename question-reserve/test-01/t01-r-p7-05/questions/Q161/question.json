@@ -1,0 +1,57 @@
+{
+  "id": "t01-q161",
+  "testId": "test-01",
+  "number": 161,
+  "part": 7,
+  "groupId": "t01-r-p7-05",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "reading-comprehension"
+  ],
+  "prompt": "Which action is permitted by the notice?",
+  "promptZh": "通知允許進行哪一項作業？",
+  "options": [
+    {
+      "text": "Scrapping every unit in K724",
+      "zh": "將 K724 全部報廢",
+      "whyZh": "通知明確未授權報廢。",
+      "id": "A"
+    },
+    {
+      "text": "Reworking K724 immediately",
+      "zh": "立即重工 K724",
+      "whyZh": "通知明確禁止對 K724 進行重工。",
+      "id": "B"
+    },
+    {
+      "text": "Mixing inspected units into another lot",
+      "zh": "將已檢設備混入其他批次",
+      "whyZh": "文件禁止與其他批次混放。",
+      "id": "C"
+    },
+    {
+      "text": "Continuing the next lot with the revised film procedure",
+      "zh": "以修訂後的貼膜程序繼續生產下一批",
+      "whyZh": "文件明確允許下一批依新程序繼續生產。",
+      "id": "D"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "文件明確允許下一批依新程序繼續生產。",
+  "evidence": "Production on the next lot may continue using the revised protective-film procedure.",
+  "vocabulary": [
+    {
+      "term": "on hold",
+      "zh": "暫停放行",
+      "note": "等待檢查或決策前不可進入指定後續流程。"
+    },
+    {
+      "term": "quarantine area",
+      "zh": "隔離區",
+      "note": "將待處理物品與可用庫存分開的區域。"
+    }
+  ],
+  "revision": 1
+}

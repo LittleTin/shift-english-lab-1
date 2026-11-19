@@ -1,0 +1,57 @@
+{
+  "id": "t02-q173-r2",
+  "testId": "test-02",
+  "number": 173,
+  "part": 7,
+  "groupId": "t02-r-p7-09",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "business",
+    "reading-comprehension"
+  ],
+  "prompt": "How can a user identify a room equipped for video conferences?",
+  "promptZh": "如何辨識配有視訊會議設備的房間？",
+  "options": [
+    {
+      "text": "Check whether the reservation includes external visitors",
+      "zh": "查看預約是否包含外部訪客",
+      "whyZh": "外部訪客人數用於準備識別證，不能辨識視訊設備。",
+      "id": "A"
+    },
+    {
+      "text": "Choose any room with an ordinary screen",
+      "zh": "選任何有一般螢幕的房間",
+      "whyZh": "文件明說一般螢幕不代表有攝影機。",
+      "id": "B"
+    },
+    {
+      "text": "Look for the camera icon",
+      "zh": "查看是否有攝影機圖示",
+      "whyZh": "通知最後一段說，配有視訊會議設備的房間會標示攝影機圖示。",
+      "id": "C"
+    },
+    {
+      "text": "Look for a check-in panel outside the room",
+      "zh": "查看門外是否有報到面板",
+      "whyZh": "門外面板用來報到，不是視訊設備的標記。",
+      "id": "D"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "通知最後一段說，配有視訊會議設備的房間會標示攝影機圖示。",
+  "evidence": "Rooms with video-conferencing equipment are marked with a camera icon",
+  "vocabulary": [
+    {
+      "term": "check in",
+      "zh": "報到；確認使用",
+      "note": "向預約系統表示使用者已到場。"
+    },
+    {
+      "term": "release a room",
+      "zh": "釋出會議室",
+      "note": "讓原本保留的會議空間可被其他人使用。"
+    }
+  ],
+  "revision": 2
+}
