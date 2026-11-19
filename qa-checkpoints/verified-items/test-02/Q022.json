@@ -1,0 +1,145 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "C accepts the updated engineering change order and replaces the old copy; A echoes engineer/order but refers to coffee, B echoes change but refers to color. Original independently blind-selected C. Exact clip re-review: initial practice ASR coffee in C resolved by three unprompted local decodes of actual C plus same-voice stop/fricative contrast against A. English and zh-TW remain aligned. Not browser/runtime tests.",
+  "activeQuestion": {
+    "id": "t02-q022",
+    "testId": "test-02",
+    "number": 22,
+    "part": 2,
+    "groupId": "t02-g022",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "The engineer ordered coffee.",
+        "zh": "那位工程師點了咖啡。",
+        "whyZh": "engineering change order 是文件名稱，不能解讀成工程師點餐。"
+      },
+      {
+        "id": "B",
+        "text": "It changes color in sunlight.",
+        "zh": "它在陽光下會變色。",
+        "whyZh": "顏色改變與工程變更文件版本無關。"
+      },
+      {
+        "id": "C",
+        "text": "All right, I will replace the old copy.",
+        "zh": "好的，我會替換舊版。",
+        "whyZh": "使用新版的直接做法是替換舊版文件。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "使用新版的直接做法是替換舊版文件。",
+    "evidence": "Please use the updated engineering change order.",
+    "vocabulary": [
+      {
+        "term": "engineering change order",
+        "zh": "工程變更單",
+        "note": "記錄並管理工程設計變更的文件；實際名稱與核准流程依組織而異。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g022",
+    "testId": "test-02",
+    "part": 2,
+    "title": "ECO copy",
+    "titleZh": "設計變更通知",
+    "topic": "technology",
+    "passage": "Please use the updated engineering change order.\nA. The engineer ordered coffee.\nB. It changes color in sunlight.\nC. All right, I will replace the old copy.",
+    "passageZh": "請使用更新後的工程變更單。\nA. 那位工程師點了咖啡。\nB. 它在陽光下會變色。\nC. 好的，我會替換舊版。",
+    "audioScript": "Please use the updated engineering change order.\nA. The engineer ordered coffee.\nB. It changes color in sunlight.\nC. All right, I will replace the old copy.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Please use the updated engineering change order."
+      },
+      {
+        "voice": "female",
+        "text": "A. The engineer ordered coffee. B. It changes color in sunlight. C. All right, I will replace the old copy."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-08.mp3",
+    "duration": 17.544,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-TZ",
+        "role": "male",
+        "modelVoice": "en-TZ-ElimuNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-TZ",
+        "role": "female",
+        "modelVoice": "en-TZ-ImaniNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 18.044
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-01.mp3",
+      "start": 25.08521,
+      "end": 26.19542,
+      "assetSha256": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8",
+      "speech": "Number 22."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-02-08.mp3",
+      "start": 0.5,
+      "end": 17.9,
+      "assetSha256": "ad1303499752f5bd4f9bdfb48c155e432ea2b83c3741ad7e378820cdb5c6a62e",
+      "speech": "Please use the updated engineering change order. A. The engineer ordered coffee. B. It changes color in sunlight. C. All right, I will replace the old copy."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-02-08.mp3",
+      "start": 0.5,
+      "end": 18.044,
+      "assetSha256": "4eb13d16f28be215f8f99a9ef44624559deb25e0518f97e451148fbdb659bc72",
+      "speech": "Please use the updated engineering change order. A. The engineer ordered coffee. B. It changes color in sunlight. C. All right, I will replace the old copy."
+    }
+  ],
+  "additionalAudioEvidence": {
+    "comparison": "Q022 same female en-TZ-ImaniNeural; both words occur within exact practice source at 0.5–18.044s",
+    "source": "audio/azure-v1/test-02-08.mp3",
+    "sourceSha256": "4eb13d16f28be215f8f99a9ef44624559deb25e0518f97e451148fbdb659bc72",
+    "A_coffee_continuousFrication": {
+      "window_s": [
+        6.84,
+        6.96
+      ],
+      "rms": 717.306,
+      "powerAbove2kFraction": 0.8609
+    },
+    "C_copy_stopClosure": {
+      "window_s": [
+        16.65,
+        16.69
+      ],
+      "rms": 23.799,
+      "powerAbove2kFraction": 0.0341
+    },
+    "C_copy_releaseBurst": {
+      "window_s": [
+        16.69,
+        16.73
+      ],
+      "rms": 451.922,
+      "powerAbove2kFraction": 0.6447
+    },
+    "comparisonInterpretation": "A coffee has a sustained high-band fricative between vowels, whereas C copy has a near-silent stop closure followed by a short release burst. Preference is based on same-voice contrast plus unprompted target-clause positive redecodes, not on acoustic features alone."
+  }
+}
