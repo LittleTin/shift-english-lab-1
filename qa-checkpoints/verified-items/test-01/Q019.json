@@ -1,0 +1,158 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Both modes and the actual number cue were verified. Isolated original utterance confirms “sample trays”; same-speaker vowel evidence supports the eɪ reading. Only B directly offers to obtain more; A says the samples passed a test and C only says it was tried last week. Traditional Chinese and each rationale align. This is not browser acceptance.",
+  "activeQuestion": {
+    "id": "t01-q019",
+    "testId": "test-01",
+    "number": 19,
+    "part": 2,
+    "groupId": "t01-g019",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "statement_response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "The samples passed the vibration test.",
+        "zh": "樣品通過了振動測試。",
+        "whyZh": "測試合格與托盤數量不足是不同事項。"
+      },
+      {
+        "id": "B",
+        "text": "I'll bring some from the storage room.",
+        "zh": "我會從儲藏室拿一些過來。",
+        "whyZh": "題目是提出短缺狀況的陳述；回應主動補充托盤，能解決該問題。"
+      },
+      {
+        "id": "C",
+        "text": "I tried it last week.",
+        "zh": "我上週試過它。",
+        "whyZh": "tried 與 trays 聲音局部相近，但回應沒有處理托盤不足。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "題目是提出短缺狀況的陳述；回應主動補充托盤，能解決該問題。",
+    "evidence": "We don't have enough sample trays.",
+    "vocabulary": [
+      {
+        "term": "tray",
+        "zh": "托盤",
+        "note": "盛裝或移動樣品的器具。"
+      },
+      {
+        "term": "storage room",
+        "zh": "儲藏室",
+        "note": "存放備品的空間。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g019",
+    "testId": "test-01",
+    "part": 2,
+    "title": "More sample trays",
+    "titleZh": "補充樣品托盤",
+    "topic": "manufacturing",
+    "passage": "We don't have enough sample trays.\nA. The samples passed the vibration test. B. I'll bring some from the storage room. C. I tried it last week.",
+    "passageZh": "我們沒有足夠的樣品托盤。\nA. 樣品通過了振動測試。\nB. 我會從儲藏室拿一些過來。\nC. 我上週試過它。",
+    "audioScript": "We don't have enough sample trays.\nA. The samples passed the vibration test. B. I'll bring some from the storage room. C. I tried it last week.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "We don't have enough sample trays."
+      },
+      {
+        "voice": "male",
+        "text": "A. The samples passed the vibration test. B. I'll bring some from the storage room. C. I tried it last week."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-07.mp3",
+    "duration": 16.848,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-IN",
+        "role": "female",
+        "modelVoice": "en-IN-NeerjaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-IN",
+        "role": "male",
+        "modelVoice": "en-IN-PrabhatNeural"
+      }
+    ],
+    "audioStart": 14.56,
+    "audioEnd": 31.408
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-01-cues-01.mp3",
+      "start": 21.20508,
+      "end": 22.25483,
+      "assetSha256": "6d8ae70c43fc4118e59e408cc5b4a4b1797fc4df9bcf03553e862a4624085b96",
+      "speech": "Number 19."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-01-07.mp3",
+      "start": 17.368,
+      "end": 33.784,
+      "assetSha256": "a02338f9af055329cee2dcbcdf9242ea8fb6c2fd4e03f3718b7c7b799bec1121",
+      "speech": "We don't have enough sample trays.\n A. The samples passed the vibration test.\n B. I'll bring some from the storage room.\n C. I tried it last week."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-07.mp3",
+      "start": 14.56,
+      "end": 31.408,
+      "assetSha256": "2202527c3ad9e36901e3308070bc390b86cbb46496c3656a65cd333053cee5ac",
+      "speech": "We don't have enough sample trees.\n A. The samples passed the vibration test.\n B. I'll bring some from the storage room.\n C. I tried it last week."
+    }
+  ],
+  "audioCorroboration": {
+    "originalPracticeSourceInterval": [
+      14.56,
+      17.0
+    ],
+    "method": "The actual candidate prompt was isolated using the first 2.44 seconds of the scheduled practice waveform (clean pre-option boundary). Unprompted, pitch preserving 0.92× with 400 ms leading/550 ms trailing padding directly recognized the complete prompt. Formal recording independently yields the full exact literal.",
+    "positive": "We don't have enough sample trays.",
+    "alternatives": {
+      "prompt-0.76.json": "We don't have enough sample.",
+      "prompt-0.92.json": "We don't have enough sample trays.",
+      "prompt-1.00.json": "We don't have enough sample trees.",
+      "prompt-1.15.json": "We don't have enough sample trees.",
+      "prompt-1.27.json": "We don't have enough sample trees."
+    },
+    "demo": {
+      "path": "audio/preview/azure/en-in.mp3",
+      "assetSha256": "88478354ee6817658afd666b3c57674665cdac6a9a030c9cb9a05048d6744823",
+      "observed": " We don't have enough sample trace.",
+      "normalizedPcmCorrelation": 0.9968742363,
+      "note": "Effectively the same performance in an alternate encoding; this is not independent speech. Its trace token supports /eɪ/, not /iː/ but is not preferred as spelling."
+    },
+    "controlledFormants": {
+      "targetPracticeLocalSec": [
+        1.88,
+        1.98
+      ],
+      "targetF1Hz": [
+        465,
+        353
+      ],
+      "targetF2Hz": [
+        1742,
+        2636
+      ],
+      "sameSpeakerControl": "Known /iː/ in we and seats has lower, more stable F1; held sound has a clear /eɪ/-like formant transition. Corroboration only, no inferred word from spectral measurements by themselves."
+    }
+  }
+}
