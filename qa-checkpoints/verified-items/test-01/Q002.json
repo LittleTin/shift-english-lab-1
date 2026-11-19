@@ -1,0 +1,115 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "audio": "Both actual audio editions match all four choices in order after punctuation/case normalization.",
+    "imageQuestionAndZh": "Four people sit around a conference table. No table removal, chair stacking, or standing beside a doorway. The unique key, zh-TW stem and all options/rationales match."
+  },
+  "activeQuestion": {
+    "id": "t01-q002",
+    "testId": "test-01",
+    "number": 2,
+    "part": 1,
+    "groupId": "t01-g002",
+    "topic": "business",
+    "difficulty": "foundation",
+    "tags": [
+      "business",
+      "photo_description"
+    ],
+    "prompt": "Look at the picture and choose the statement that best describes it.",
+    "promptZh": "請看圖片，選出最符合畫面的敘述。",
+    "options": [
+      {
+        "id": "A",
+        "text": "People are carrying a table out of a room.",
+        "zh": "人們正把桌子搬出房間。",
+        "whyZh": "畫面中的桌子沒有被搬動，人物是在桌邊就坐。"
+      },
+      {
+        "id": "B",
+        "text": "A chair is being stacked on a table.",
+        "zh": "一張椅子正被疊放在桌上。",
+        "whyZh": "沒有把椅子放上桌面的動作。"
+      },
+      {
+        "id": "C",
+        "text": "Everyone is standing beside a doorway.",
+        "zh": "每個人都站在門口旁。",
+        "whyZh": "畫面的人物坐在桌邊，並非全員站在門邊。"
+      },
+      {
+        "id": "D",
+        "text": "People are sitting around a conference table.",
+        "zh": "人們正圍坐在會議桌旁。",
+        "whyZh": "人物坐在同一張會議桌四周；sitting around 描述了可見的姿態與位置。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "人物坐在同一張會議桌四周；sitting around 描述了可見的姿態與位置。",
+    "evidence": "People are sitting around a conference table.",
+    "vocabulary": [
+      {
+        "term": "conference table",
+        "zh": "會議桌",
+        "note": "供多人開會使用的桌子。"
+      },
+      {
+        "term": "around",
+        "zh": "圍繞；在四周",
+        "note": "描述人們分布在桌子周圍。"
+      }
+    ],
+    "revision": 1
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-01-01.mp3",
+      "start": 20.872,
+      "end": 40.096,
+      "assetSha256": "7ee1ae0ee4ea1abe66eaee4aa2d5988462a9b96026be63617f4d5ba268025251",
+      "speech": "A. People are carrying a table out of a room.\n B. A chair is being stacked on a table.\n C. Everyone is standing beside a doorway.\n D. People are sitting around a conference table."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-01.mp3",
+      "start": 20.872,
+      "end": 37.288,
+      "assetSha256": "0793147e0ad47e0a35953cf8b483dc724bda8ebd60864ab26d0f393acb6592a1",
+      "speech": "a. People are carrying a table out of a room\n b. A chair is being stacked on a table\n c. Everyone is standing beside a doorway\n d. People are sitting around a conference table"
+    }
+  ],
+  "group": {
+    "id": "t01-g002",
+    "testId": "test-01",
+    "part": 1,
+    "title": "Around the meeting table",
+    "titleZh": "會議桌旁",
+    "topic": "business",
+    "passage": "A. People are carrying a table out of a room. B. A chair is being stacked on a table. C. Everyone is standing beside a doorway. D. People are sitting around a conference table.",
+    "passageZh": "A. 人們正把桌子搬出房間。\nB. 一張椅子正被疊放在桌上。\nC. 每個人都站在門口旁。\nD. 人們正圍坐在會議桌旁。",
+    "audioScript": "A. People are carrying a table out of a room. B. A chair is being stacked on a table. C. Everyone is standing beside a doorway. D. People are sitting around a conference table.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "A. People are carrying a table out of a room. B. A chair is being stacked on a table. C. Everyone is standing beside a doorway. D. People are sitting around a conference table."
+      }
+    ],
+    "imageScene": "meeting",
+    "audio": "audio/azure-v1/test-01-01.mp3",
+    "duration": 16.416,
+    "image": "assets/scenes/meeting.svg",
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-GB",
+        "role": "female",
+        "modelVoice": "en-GB-SoniaNeural"
+      }
+    ],
+    "audioStart": 20.872,
+    "audioEnd": 37.288
+  },
+  "imageSha256": "26f7f7aa1725eb81deb0707bdcc255cfb0f778f1bd00a659fbc2ed82ff593a12"
+}
