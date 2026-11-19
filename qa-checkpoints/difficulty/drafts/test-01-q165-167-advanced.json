@@ -1,0 +1,276 @@
+{
+  "status": "draft-only-needs-independent-bilingual-review",
+  "verifiedBase": "shift-reconcile-current.ljqMnX/ledger/test-01 Q165–167, d934abf working scope",
+  "draftGroup": {
+    "id": "t01-r-p7-07",
+    "testId": "test-01",
+    "part": 7,
+    "title": "Apartment recycling update",
+    "titleZh": "公寓回收措施更新",
+    "topic": "daily",
+    "passage": "DOCUMENT 1 — Building notice\nNotice to residents\n\nStarting July 1, the recycling room will open from 7 a.m. to 9 p.m. Cardboard boxes must be flattened and placed on the shelf along the left wall. Please rinse glass and plastic containers before putting them in the labelled bins.\n\nDo not leave furniture or electrical appliances in the room. These items require a bulky-waste collection appointment with the management office. The service is available on the first and third Wednesdays of each month.\n\nThe room will be cleaned every morning between 8:30 and 9:00. Please use it outside that half-hour period, even though the general opening hours begin earlier.\n\nDOCUMENT 2 — Waste-sorting reminder and booking board\nSeparate removable packaging. Flattenable, clean cardboard sleeves follow the cardboard-box rule. Put greasy paper liners in the grey general-waste bin in the lobby; they are not recyclable.\n\nWednesday, July 15, 2026 — bulky-waste pickup appointment slots:\n• 4:30 p.m. (one slot open)\n• 5:30 p.m. (one slot open)\nSend your request to the management office by noon on Tuesday, July 14. A resident of the unit must meet the crew at the booked time. Do not leave the item unattended.",
+    "passageZh": "文件一——大樓公告\n住戶通知\n\n七月一日起，回收室開放時間為上午七點至晚上九點。紙箱必須壓平，放到左牆旁的架子上。玻璃與塑膠容器請先沖洗，再放進有標示的桶內。\n\n請勿把家具或電器留在室內。這些物品需要向管理室預約大型廢棄物清運，每月第一及第三個星期三提供服務。\n\n回收室每天上午八點半至九點清潔。雖然一般開放時間較早開始，仍請避開這半小時使用。\n\n文件二——垃圾分類提醒及清運預約表\n可拆開的包裝請分開處理。可壓平而且乾淨的紙板外套，按紙箱的規定處理。沾油的紙內襯不可回收，請投入大廳的灰色一般垃圾桶。\n\n二〇二六年七月十五日（星期三）大型廢棄物清運預約時段：\n• 下午四點半（尚有一個名額）\n• 下午五點半（尚有一個名額）\n請最遲於七月十四日（星期二）中午向管理室提出預約。同戶須有一名住戶在預約時間等候清運人員。請勿將物品留在無人看管的地方。"
+  },
+  "draftActiveQuestions": [
+    {
+      "id": "t01-q165-r2",
+      "testId": "test-01",
+      "number": 165,
+      "part": 7,
+      "groupId": "t01-r-p7-07",
+      "topic": "daily",
+      "difficulty": "advanced",
+      "tags": [
+        "daily",
+        "reading-comprehension"
+      ],
+      "prompt": "Hana has a clean removable cardboard sleeve she can flatten, a greasy paper liner, and an unrinsed glass jar. How should she handle all three?",
+      "promptZh": "Hana 有一個可壓平的乾淨可拆式紙板外套、一張沾油的紙內襯，以及一個還沒沖洗的玻璃罐。她應該如何處理這三樣物品？",
+      "options": [
+        {
+          "text": "Flatten the sleeve and put it on the left-wall shelf; put the liner in the grey lobby bin; rinse the jar and put it in the labelled glass bin.",
+          "zh": "把紙板外套壓平放到左牆旁的架上；把紙內襯投入大廳的灰色垃圾桶；沖洗玻璃罐後投入標示為玻璃類的桶內。",
+          "whyZh": "三項做法都符合公告：紙板外套按紙箱規定處理，沾油內襯丟一般垃圾，玻璃罐先沖洗再分類。",
+          "id": "A"
+        },
+        {
+          "text": "Flatten the sleeve and put it on the left-wall shelf; put the liner there too; rinse the jar and put it in the labelled glass bin.",
+          "zh": "把紙板外套壓平放到左牆旁的架上；紙內襯也放到同一個架上；沖洗玻璃罐後投入標示為玻璃類的桶內。",
+          "whyZh": "紙板外套和玻璃罐的處理方式正確，但沾油的紙內襯應丟大廳灰色垃圾桶，不是放到紙箱架上。",
+          "id": "B"
+        },
+        {
+          "text": "Flatten the sleeve and put it on the left-wall shelf; put the liner in the grey lobby bin; put the jar in the labelled glass bin without rinsing it.",
+          "zh": "把紙板外套壓平放到左牆旁的架上；把紙內襯投入大廳的灰色垃圾桶；玻璃罐不沖洗，直接投入標示為玻璃類的桶內。",
+          "whyZh": "紙板外套和紙內襯的處理方式正確，但玻璃罐必須先沖洗。",
+          "id": "C"
+        },
+        {
+          "text": "Put the sleeve and the liner in the grey lobby bin; rinse the jar and put it in the labelled glass bin.",
+          "zh": "把紙板外套和紙內襯都投入大廳的灰色垃圾桶；沖洗玻璃罐後投入標示為玻璃類的桶內。",
+          "whyZh": "紙內襯和玻璃罐的處理方式正確，但紙板外套按紙箱規定，應壓平後放到左牆旁的架上。",
+          "id": "D"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "文件二說，乾淨的紙板外套依紙箱規定處理，沾油內襯則丟一般垃圾。再查文件一：紙箱要壓平放到左牆旁的架上，玻璃容器要先沖洗，再投入有標示的桶內。只有 A 三項都符合。",
+      "evidence": "Doc 1: flattened cardboard shelf along left wall; rinse glass before placing in labelled bins. Doc 2: clean sleeves follow cardboard-box rule; greasy liners go to grey general-waste bin.",
+      "vocabulary": [
+        {
+          "term": "cardboard sleeve",
+          "zh": "紙板外套",
+          "note": "套在商品外側、可拆下的紙板包裝。"
+        },
+        {
+          "term": "greasy liner",
+          "zh": "沾油的內襯",
+          "note": "接觸食物而沾油的紙內層。"
+        },
+        {
+          "term": "rinse",
+          "zh": "沖洗",
+          "note": "先用清水把容器上的殘留物沖掉。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t01-q166-r2",
+      "testId": "test-01",
+      "number": 166,
+      "part": 7,
+      "groupId": "t01-r-p7-07",
+      "topic": "daily",
+      "difficulty": "advanced",
+      "tags": [
+        "daily",
+        "reading-comprehension"
+      ],
+      "prompt": "Tariq needs to dispose of an old sofa. He can contact management at 11:30 a.m. or 12:30 p.m. on July 14, and someone from his unit can meet the crew only from 5:15 p.m. onward on July 15. Which plan meets the building rules?",
+      "promptZh": "Tariq 要丟棄一張舊沙發。他可在七月十四日的上午十一點半或中午十二點半聯絡管理室，而七月十五日最早要到下午五點十五分，同戶才有人能等候清運人員。哪個做法符合大樓規定？",
+      "options": [
+        {
+          "text": "Contact management at 12:30 p.m. on July 14, then meet the crew at 5:30 p.m. on July 15.",
+          "zh": "七月十四日中午十二點半聯絡管理室，再於七月十五日下午五點半等候清運人員。",
+          "whyZh": "下午五點半有人可以等候清運人員，但預約申請超過前一天中午的期限。",
+          "id": "A"
+        },
+        {
+          "text": "Contact management at 11:30 a.m. on July 14, book 4:30 p.m. on July 15, and leave the sofa unattended for the crew.",
+          "zh": "七月十四日上午十一點半聯絡管理室，預約七月十五日下午四點半，把沙發留在現場讓清運人員自行取走。",
+          "whyZh": "申請時間符合規定，但下午四點半沒有住戶可等候清運人員，規定也不允許沙發無人看管。",
+          "id": "B"
+        },
+        {
+          "text": "Contact management at 11:30 a.m. on July 14, then meet the crew at 5:30 p.m. on July 15.",
+          "zh": "七月十四日上午十一點半聯絡管理室，再於七月十五日下午五點半等候清運人員。",
+          "whyZh": "舊沙發須預約大型廢棄物清運；申請趕在中午前提出，而且預約表上有下午五點半的時段，當時已有同戶住戶可在場。",
+          "id": "C"
+        },
+        {
+          "text": "Contact management at 11:30 a.m. on July 14, then take the sofa to the recycling room at 5:30 p.m. on July 15.",
+          "zh": "七月十四日上午十一點半聯絡管理室，再於七月十五日下午五點半把沙發搬進回收室。",
+          "whyZh": "即使回收室當時開放，家具也不得放在回收室，必須請管理室安排大型廢棄物清運。",
+          "id": "D"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "舊沙發屬家具，不能放在回收室，要按文件一預約大型廢棄物清運。依文件二，最遲週二中午要申請，而且同戶須有人等候。只有上午十一點半申請、隔天下午五點半到場同時符合。",
+      "evidence": "Doc 1: furniture requires management booking and cannot be left in recycling room. Doc 2: Tue Jul 14 noon cutoff, Jul 15 4:30/5:30 slots, resident present. Stem: allowed contact 11:30/12:30; first availability 5:15 p.m.",
+      "vocabulary": [
+        {
+          "term": "bulky-waste pickup",
+          "zh": "大型廢棄物清運",
+          "note": "家具等大型物品的預約清運服務。"
+        },
+        {
+          "term": "appointment slot",
+          "zh": "可預約時段",
+          "note": "尚有名額、可預約的指定時間。"
+        },
+        {
+          "term": "unattended",
+          "zh": "無人看管的",
+          "note": "物品留在現場，但沒有人留在那裡。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t01-q167",
+      "testId": "test-01",
+      "number": 167,
+      "part": 7,
+      "groupId": "t01-r-p7-07",
+      "topic": "daily",
+      "difficulty": "advanced",
+      "tags": [
+        "daily",
+        "reading-comprehension"
+      ],
+      "prompt": "At which time may a resident use the room?",
+      "promptZh": "下列哪個時間可以使用回收室？",
+      "options": [
+        {
+          "text": "8:45 a.m.",
+          "zh": "上午八點四十五分",
+          "whyZh": "落在八點半至九點的清潔暫停時段。",
+          "id": "A"
+        },
+        {
+          "text": "7:45 a.m.",
+          "zh": "上午七點四十五分",
+          "whyZh": "已在七點開放之後，且尚未進入八點半至九點的清潔時段。",
+          "id": "B"
+        },
+        {
+          "text": "6:45 a.m.",
+          "zh": "上午六點四十五分",
+          "whyZh": "尚未到七點開放時間。",
+          "id": "C"
+        },
+        {
+          "text": "9:15 p.m.",
+          "zh": "晚上九點十五分",
+          "whyZh": "超過晚上九點關閉時間。",
+          "id": "D"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "已在七點開放之後，且尚未進入八點半至九點的清潔時段。",
+      "evidence": "open from 7 a.m. to 9 p.m. ... cleaned every morning between 8:30 and 9:00",
+      "vocabulary": [
+        {
+          "term": "flatten",
+          "zh": "壓平",
+          "note": "讓紙箱變平以減少占用空間。"
+        },
+        {
+          "term": "bulky waste",
+          "zh": "大型廢棄物",
+          "note": "家具等體積大、需另外處理的物品。"
+        }
+      ],
+      "revision": 1
+    }
+  ],
+  "englishReviewSidecar": {
+    "165": {
+      "explanation": "The sorting reminder assigns the sleeve to the building’s cardboard rule and the liner to general waste. Use that rule and the building notice’s glass-rinsing instruction to select the only complete plan.",
+      "optionRationales": {
+        "A": "All three actions match the notices: cardboard rule, greasy-liner disposal, and rinsed glass collection.",
+        "B": "The sleeve and jar are handled correctly, but greasy paper liners belong in the grey lobby bin, not on the cardboard shelf.",
+        "C": "The sleeve and liner are handled correctly, but the glass jar must be rinsed first.",
+        "D": "The liner and jar are handled correctly, but the sleeve follows the cardboard-box rule and belongs on the left-wall shelf after flattening."
+      }
+    },
+    "166": {
+      "explanation": "The notice treats the sofa as bulky waste. The booking board requires a request by Tuesday noon and someone from the unit to meet the crew. Only the 11:30 request and 5:30 appointment meet those conditions.",
+      "optionRationales": {
+        "A": "Someone can meet the crew at 5:30, but the booking request would miss the previous day’s noon deadline.",
+        "B": "The request is early enough, but no resident can meet the crew at 4:30; leaving the sofa unattended is not allowed.",
+        "C": "A bulky-waste booking is required for the sofa. The request arrives before noon and an occupant can meet the crew at the posted 5:30 slot.",
+        "D": "Even during normal opening hours, furniture must not be left in the recycling room; management must arrange a bulky-waste pickup."
+      }
+    },
+    "167": {
+      "explanation": "The morning cleaning closure overrides the general hours. 7:45 a.m. is within regular hours and before cleaning.",
+      "optionRationales": {
+        "A": "This falls within the 8:30–9:00 a.m. cleaning exclusion.",
+        "B": "It is after the 7:00 a.m. opening and before the cleaning begins.",
+        "C": "The room has not yet opened at 6:45 a.m.",
+        "D": "The room has already closed at 9:15 p.m."
+      }
+    }
+  },
+  "guards": [
+    {
+      "number": 165,
+      "id": "t01-q165",
+      "revision": 1,
+      "key": "D",
+      "sourceFileSha256": "5cf1dbc5996b15f6ba7da51d3d0b450fbfa7430832442bc9299fab7063232054",
+      "activeQuestionSha256Canonical": "d0843a046e2fe4764e26ea7bd76554c27fe352236f01aabe36a27fd084e450d1",
+      "groupSha256Canonical": "c7e12766c5402ee5727ab7838a8eed35df5d74fe6940fb78a811999ae08ef868"
+    },
+    {
+      "number": 166,
+      "id": "t01-q166",
+      "revision": 1,
+      "key": "D",
+      "sourceFileSha256": "51adc2f2918532f972e8152cf69a10240b9bb6422af8ccd57cb647ca724466db",
+      "activeQuestionSha256Canonical": "00afed2db48777ab416324ed04f3ec3ec1903b9d66e6866955cc83d33b358271",
+      "groupSha256Canonical": "c7e12766c5402ee5727ab7838a8eed35df5d74fe6940fb78a811999ae08ef868"
+    },
+    {
+      "number": 167,
+      "id": "t01-q167",
+      "revision": 1,
+      "key": "B",
+      "sourceFileSha256": "9f7a9c4cf302ff5d82757feb1e6e470364068b877366d32e75c720ca1ee47948",
+      "activeQuestionSha256Canonical": "02dd04e9fb16a4ef4373b8a277eaf35583b091dbc3322ecdc7045417bbbd006f",
+      "groupSha256Canonical": "c7e12766c5402ee5727ab7838a8eed35df5d74fe6940fb78a811999ae08ef868"
+    }
+  ],
+  "historyPolicy": {
+    "retiredOnApproval": [
+      "t01-q165",
+      "t01-q166"
+    ],
+    "newIds": [
+      "t01-q165-r2",
+      "t01-q166-r2"
+    ],
+    "unchangedId": [
+      "t01-q167"
+    ],
+    "unchangedRule": "Q167 ID/revision/EN/zh options, correct key, evidence, answer explanations preserved; only label changes to advanced. Source Document 1 is retained verbatim and is unqualified by the new lobby and bulky-waste rules.",
+    "releaseGuards": "Before any release, preserve original full group and original Q165/Q166 in verified old immutable snapshot; never put retired questions into active pack, migrate answers or infer a historical score. Verify actual old-session compatibility and old Q167 display. Review all siblings against the changed group."
+  },
+  "classification": [
+    "Q165: both source blocks essential; B and C each violate one distinct requirement; D assumes all waste packaging is identical.",
+    "Q166: combine category/rule from notice, appointment cutoff/availability/attendance from board, and earliest available resident from stem. Every alternative misses one policy.",
+    "Q167: opening hours versus general cleaning exception; no added source or prompt uses or reveals any answer choice time."
+  ],
+  "bilingualNotes": "App-native options include zh and whyZh; full supplemental English rationales are excluded from the runtime schema unless separately approved. The new tip and appointment board is additional source; no existing direction, time window, or sample historical result is edited."
+}

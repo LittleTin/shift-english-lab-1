@@ -357,6 +357,7 @@ def main():
     x.add_argument('--site',type=Path,required=True)
     x.add_argument('--ledger',type=Path,required=True)
     x.add_argument('--decisions',type=Path)
+    x.add_argument('--difficulty-ledger',type=Path,help='Verified content-bound §1.1 reviews; required for final candidate output')
     x.add_argument('--out',type=Path)
     x.add_argument('--layout-script',type=Path)
     x.add_argument('--validator',type=Path)
@@ -365,8 +366,19 @@ def main():
     ns=x.parse_args()
     site=ns.site.resolve(); report,packs=run(site,ns.ledger,strict(ns.decisions) if ns.decisions else {})
     report['releaseReady']=False
-    report['stillRequired']=['final answer-key QA on candidate revisions','browser playback, storage and retirement acceptance','actual release size/deploy check']
-    if ns.overlays and report['evidenceComplete']:
+    difficulty_complete=False
+    if ns.difficulty_ledger:
+        sys.path.insert(0,str(Path(__file__).resolve().parent.parent/'difficulty'))
+        from difficulty_gate import report as difficulty_report, apply_accepted as apply_difficulty
+        level_report,_=difficulty_report(ns.ledger,ns.difficulty_ledger)
+        report['difficultyReview']=level_report
+        difficulty_complete=level_report['difficultyGateComplete']
+        if difficulty_complete and report['evidenceComplete']:
+            packs,_=apply_difficulty(packs,ns.ledger,ns.difficulty_ledger)
+    elif ns.out:
+        x.error('--out requires --difficulty-ledger; labels are a release gate')
+    report['stillRequired']=['final answer-key QA on candidate revisions','§1.1 exact difficulty audit and genuine distribution','browser playback, storage and retirement acceptance','actual release size/deploy check']
+    if ns.overlays and report['evidenceComplete'] and (not ns.difficulty_ledger or difficulty_complete):
         report['postMove']={}
         for exam,p in packs.items():
             try:report['postMove'][exam]=audit_migrated(site,p,ns.overlays/exam)
@@ -378,8 +390,12 @@ def main():
         freeze_json(ns.report,report)
     summary={'evidenceComplete':report['evidenceComplete'],'releaseReady':False,'exams':{
         k:{name:len(v[name]) for name in ('missing','holds','issues','accepted')} for k,v in report['exams'].items()}}
+    if ns.difficulty_ledger:
+        summary['difficultyReviewed']=report['difficultyReview']['reviewed']
+        summary['difficultyGateComplete']=difficulty_complete
     print(json.dumps(summary,indent=2))
     good=report['evidenceComplete'] and (not ns.overlays or report.get('postMoveComplete'))
+    if ns.difficulty_ledger:good=good and difficulty_complete
     if ns.out and good:
         if not ns.layout_script or not ns.validator:x.error('--out requires --layout-script and --validator')
         build(site,ns.out,packs,ns.layout_script.resolve(),ns.validator.resolve())
