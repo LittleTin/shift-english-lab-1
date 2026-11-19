@@ -1,0 +1,122 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "A is a prerequisite: put on protective footwear. B cleaning already occurred and C gives a production count. Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+  "activeQuestion": {
+    "id": "t01-q026",
+    "testId": "test-01",
+    "number": 26,
+    "part": 2,
+    "groupId": "t01-g026",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "action"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "Put on protective footwear.",
+        "zh": "穿上防護鞋。",
+        "whyZh": "What should we do 問應採取的動作；穿上防護鞋是進場前的安全措施。"
+      },
+      {
+        "id": "B",
+        "text": "The floor was cleaned this morning.",
+        "zh": "地板今天早上清潔過了。",
+        "whyZh": "這是已發生的清潔狀況，沒有回答人員應做的準備。"
+      },
+      {
+        "id": "C",
+        "text": "We produced five hundred units.",
+        "zh": "我們生產了五百台。",
+        "whyZh": "產量不是進入生產區前的動作。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "What should we do 問應採取的動作；穿上防護鞋是進場前的安全措施。",
+    "evidence": "What should we do before entering the production floor?",
+    "vocabulary": [
+      {
+        "term": "production floor",
+        "zh": "生產現場；產線區域",
+        "note": "floor 在此指工作區域，不只指地板表面。"
+      },
+      {
+        "term": "protective footwear",
+        "zh": "防護鞋",
+        "note": "為作業安全而穿著的鞋具。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g026",
+    "testId": "test-01",
+    "part": 2,
+    "title": "Production-floor entry",
+    "titleZh": "進入產線前",
+    "topic": "manufacturing",
+    "passage": "What should we do before entering the production floor?\nA. Put on protective footwear. B. The floor was cleaned this morning. C. We produced five hundred units.",
+    "passageZh": "進入生產現場前，我們應該做什麼？\nA. 穿上防護鞋。\nB. 地板今天早上清潔過了。\nC. 我們生產了五百台。",
+    "audioScript": "What should we do before entering the production floor?\nA. Put on protective footwear. B. The floor was cleaned this morning. C. We produced five hundred units.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "What should we do before entering the production floor?"
+      },
+      {
+        "voice": "male",
+        "text": "A. Put on protective footwear. B. The floor was cleaned this morning. C. We produced five hundred units."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-09.mp3",
+    "duration": 16.536,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-NG",
+        "role": "female",
+        "modelVoice": "en-NG-EzinneNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-NG",
+        "role": "male",
+        "modelVoice": "en-NG-AbeoNeural"
+      }
+    ],
+    "audioStart": 33.78,
+    "audioEnd": 50.316
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-01-cues-01.mp3",
+      "start": 30.75158,
+      "end": 31.93379,
+      "assetSha256": "6d8ae70c43fc4118e59e408cc5b4a4b1797fc4df9bcf03553e862a4624085b96",
+      "speech": "Number 26."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-01-09.mp3",
+      "start": 34.14,
+      "end": 51.3,
+      "assetSha256": "b7b5f071a7aa321bb8250a34a39c989ed16c8576c7bfbb8481d6939b09ccdc9a",
+      "speech": "What should we do before entering the production floor?\n A. Put on protective footwear.\n B. The floor was cleaned this morning.\n C. We produced 500 units."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-09.mp3",
+      "start": 33.78,
+      "end": 50.316,
+      "assetSha256": "65d735892de7a8de23f34053088a1768b9638d4d8da535e0d20de75814ab0288",
+      "speech": "What should we do before entering the production flow?\n A. Put on protective footwear.\n B. The flow was cleaned this morning.\n C. We produced 500 units."
+    }
+  ],
+  "audioCorroboration": "Unprompted whole original practice positively recognizes \"production floor\" at 36.860–37.560 and B \"floor\" at 42.660–43.160. Earlier practice exact-range flow was not stable. Formal exact independently matches all."
+}

@@ -1,0 +1,122 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "A says Not yet with the connection issue; B failure count and C finish preference do not address whether photos were uploaded. Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+  "activeQuestion": {
+    "id": "t01-q011",
+    "testId": "test-01",
+    "number": 11,
+    "part": 2,
+    "groupId": "t01-g011",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "completion"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "Not yet; the wireless connection is down.",
+        "zh": "還沒；無線網路連線中斷了。",
+        "whyZh": "Have you ... yet 問是否已完成；not yet 明確否定，並解釋因網路中斷而尚未上傳。"
+      },
+      {
+        "id": "B",
+        "text": "Only two units failed.",
+        "zh": "只有兩台未通過。",
+        "whyZh": "不良數量沒有回答照片是否已上傳。"
+      },
+      {
+        "id": "C",
+        "text": "They prefer the glossy finish.",
+        "zh": "他們比較喜歡亮面處理。",
+        "whyZh": "外觀表面偏好與上傳缺陷照片無關。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "Have you ... yet 問是否已完成；not yet 明確否定，並解釋因網路中斷而尚未上傳。",
+    "evidence": "Have you uploaded the defect photos yet?",
+    "vocabulary": [
+      {
+        "term": "defect",
+        "zh": "缺陷",
+        "note": "產品不符合要求的問題。"
+      },
+      {
+        "term": "be down",
+        "zh": "中斷；無法運作",
+        "note": "描述網路或系統暫時無法使用。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g011",
+    "testId": "test-01",
+    "part": 2,
+    "title": "Uploading defect photos",
+    "titleZh": "上傳缺陷照片",
+    "topic": "manufacturing",
+    "passage": "Have you uploaded the defect photos yet?\nA. Not yet; the wireless connection is down. B. Only two units failed. C. They prefer the glossy finish.",
+    "passageZh": "你已經上傳缺陷照片了嗎？\nA. 還沒；無線網路連線中斷了。\nB. 只有兩台未通過。\nC. 他們比較喜歡亮面處理。",
+    "audioScript": "Have you uploaded the defect photos yet?\nA. Not yet; the wireless connection is down. B. Only two units failed. C. They prefer the glossy finish.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Have you uploaded the defect photos yet?"
+      },
+      {
+        "voice": "male",
+        "text": "A. Not yet; the wireless connection is down. B. Only two units failed. C. They prefer the glossy finish."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-04.mp3",
+    "duration": 16.632,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-KE",
+        "role": "female",
+        "modelVoice": "en-KE-AsiliaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-KE",
+        "role": "male",
+        "modelVoice": "en-KE-ChilembaNeural"
+      }
+    ],
+    "audioStart": 35.652,
+    "audioEnd": 52.284
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-01-cues-01.mp3",
+      "start": 11.11983,
+      "end": 12.06871,
+      "assetSha256": "6d8ae70c43fc4118e59e408cc5b4a4b1797fc4df9bcf03553e862a4624085b96",
+      "speech": "Number 11. (Confirmed in continuous local cue-bank transcript.)"
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-01-04.mp3",
+      "start": 35.244,
+      "end": 52.38,
+      "assetSha256": "9fd72acced442be137ad8f96b34565a633dd9fb050d94ca63bbea198412002ab",
+      "speech": "Have you uploaded the defect photos yet?\n A. Not yet, the wireless connection is down.\n B. Only two units failed.\n C. They prefer the glossy finish."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-04.mp3",
+      "start": 35.652,
+      "end": 52.284,
+      "assetSha256": "2ee133d0509c83d25ced4b3fea10b0c934a539de3c6d9d55d01763396ef610fa",
+      "speech": "Have you uploaded the defect photos yet?\n A. Not yet if the wireless connection is down.\n B. Only two units failed.\n C. They prefer the glossy finish."
+    }
+  ],
+  "audioCorroboration": "Whole original practice, no seed, word-level -ml 1 -sow, explicitly says \"A. Not yet the wireless connection is down\" without earlier spurious if. All other original exact practice tokens and formal match."
+}
