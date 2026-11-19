@@ -1,0 +1,113 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "A time question: only C gives the time before the afternoon test begins. The other options concern inventory status and analysis quality. Both spoken versions match the script and the choices, and zh-TW preserves the calibration context.",
+  "activeQuestion": {
+    "id": "t01-q007",
+    "testId": "test-01",
+    "number": 7,
+    "part": 2,
+    "groupId": "t01-g007",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "time"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "It's on the equipment list.",
+        "zh": "它在設備清單上。",
+        "whyZh": "這只說明儀器是否列入清單，沒有回答校正時間。"
+      },
+      {
+        "id": "B",
+        "text": "The analysis was very detailed.",
+        "zh": "那份分析很詳細。",
+        "whyZh": "analysis 與 analyzer 字形相近，但分析是否詳細不是問題所問的時間。"
+      },
+      {
+        "id": "C",
+        "text": "Before the afternoon test begins.",
+        "zh": "在下午的測試開始之前。",
+        "whyZh": "When 問時間；before the afternoon test begins 提供了校正的時點。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "When 問時間；before the afternoon test begins 提供了校正的時點。",
+    "evidence": "When will the spectrum analyzer be calibrated?",
+    "vocabulary": [
+      {
+        "term": "spectrum analyzer",
+        "zh": "頻譜分析儀",
+        "note": "用來觀察訊號頻率成分的儀器。"
+      },
+      {
+        "term": "calibrate",
+        "zh": "校正",
+        "note": "比對標準並調整量測設備。"
+      }
+    ],
+    "revision": 1
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/formal-v2/test-01-03.mp3",
+      "start": 20.32,
+      "end": 37.408,
+      "assetSha256": "dae8ab62c26bc90912756a6bbca8aef70c3b1b5dbc5ae8250d8e42faf7ad12f1",
+      "speech": "When will the spectrum analyzer be calibrated?\n A. It's on the equipment list.\n B. The analysis was very detailed.\n C. Before the afternoon test begins."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-03.mp3",
+      "start": 21.232,
+      "end": 39.256,
+      "assetSha256": "afe6a1ec980196216810980a58e273e9228d2b27356d70078f0e2bb888e4569b",
+      "speech": "When will the spectrum analyzer be calibrated?\n A. It's on the equipment list.\n B. The analysis was very detailed.\n C. Before the afternoon test begins."
+    }
+  ],
+  "group": {
+    "id": "t01-g007",
+    "testId": "test-01",
+    "part": 2,
+    "title": "Calibration timing",
+    "titleZh": "校正時間",
+    "topic": "technology",
+    "passage": "When will the spectrum analyzer be calibrated?\nA. It's on the equipment list. B. The analysis was very detailed. C. Before the afternoon test begins.",
+    "passageZh": "頻譜分析儀什麼時候會進行校正？\nA. 它在設備清單上。\nB. 那份分析很詳細。\nC. 在下午的測試開始之前。",
+    "audioScript": "When will the spectrum analyzer be calibrated?\nA. It's on the equipment list. B. The analysis was very detailed. C. Before the afternoon test begins.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "When will the spectrum analyzer be calibrated?"
+      },
+      {
+        "voice": "male",
+        "text": "A. It's on the equipment list. B. The analysis was very detailed. C. Before the afternoon test begins."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-03.mp3",
+    "duration": 18.024,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-SG",
+        "role": "female",
+        "modelVoice": "en-SG-LunaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-SG",
+        "role": "male",
+        "modelVoice": "en-SG-WayneNeural"
+      }
+    ],
+    "audioStart": 21.232,
+    "audioEnd": 39.256
+  }
+}
