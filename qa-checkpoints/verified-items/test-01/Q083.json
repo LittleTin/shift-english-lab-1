@@ -1,0 +1,210 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Dock Four equals Yellow in graphic; Two Green reserved for outbound Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+  "activeQuestion": {
+    "id": "t01-q083-v2",
+    "testId": "test-01",
+    "number": 83,
+    "part": 4,
+    "groupId": "t01-g049",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "graphic-inference"
+    ],
+    "prompt": "Look at the graphic. Which check-in zone should drivers delivering electronic components use next week?",
+    "promptZh": "請看圖表。下週運送電子零件的司機應到哪個報到區？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The blue zone",
+        "zh": "藍色區",
+        "whyZh": "藍色是第一號裝卸區。"
+      },
+      {
+        "id": "B",
+        "text": "The green zone",
+        "zh": "綠色區",
+        "whyZh": "綠色是第二號裝卸區，保留給成品出貨。"
+      },
+      {
+        "id": "C",
+        "text": "The red zone",
+        "zh": "紅色區",
+        "whyZh": "紅色是第三號裝卸區。"
+      },
+      {
+        "id": "D",
+        "text": "The yellow zone",
+        "zh": "黃色區",
+        "whyZh": "黃色對應新的第四號裝卸區。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "廣播改為使用四號裝卸區；圖表將四號裝卸區配到黃色報到區。",
+    "evidence": "“Trucks carrying electronic components must use Dock Four instead of Dock Two.” → Dock Four: Yellow.",
+    "vocabulary": [
+      {
+        "term": "electronic component",
+        "zh": "電子零件",
+        "note": "構成電子設備的個別元件。"
+      }
+    ],
+    "revision": 2
+  },
+  "group": {
+    "id": "t01-g049",
+    "testId": "test-01",
+    "part": 4,
+    "title": "New loading-dock arrangements",
+    "titleZh": "新的裝卸區安排",
+    "topic": "manufacturing",
+    "passage": "Attention, delivery drivers. Starting next week, trucks carrying electronic components must use Dock Four instead of Dock Two. Dock Two will be reserved for outgoing finished products. The new arrangement is intended to keep incoming and outgoing shipments from blocking each other. Please book an arrival window through the logistics portal before leaving your warehouse. Drivers arriving more than thirty minutes early should wait in the holding area outside the east gate. The receiving team will scan the advance shipping notice at the dock, so keep a printed copy or the digital code ready.",
+    "passageZh": "請送貨司機注意。從下週開始，運送電子零件的貨車必須改用四號裝卸區，不再使用二號。二號裝卸區將保留給出貨成品。新安排是為了避免進貨與出貨互相阻塞。請在離開倉庫前，先透過物流入口網站預約抵達時段。比預約時間早到超過三十分鐘的司機，請在東門外的等候區等待。收貨團隊會在裝卸區掃描預先出貨通知，請準備好紙本或電子代碼。",
+    "audioScript": "Attention, delivery drivers. Starting next week, trucks carrying electronic components must use Dock Four instead of Dock Two. Dock Two will be reserved for outgoing finished products. The new arrangement is intended to keep incoming and outgoing shipments from blocking each other. Please book an arrival window through the logistics portal before leaving your warehouse. Drivers arriving more than thirty minutes early should wait in the holding area outside the east gate. The receiving team will scan the advance shipping notice at the dock, so keep a printed copy or the digital code ready.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Attention, delivery drivers. Starting next week, trucks carrying electronic components must use Dock Four instead of Dock Two. Dock Two will be reserved for outgoing finished products. The new arrangement is intended to keep incoming and outgoing shipments from blocking each other. Please book an arrival window through the logistics portal before leaving your warehouse. Drivers arriving more than thirty minutes early should wait in the holding area outside the east gate. The receiving team will scan the advance shipping notice at the dock, so keep a printed copy or the digital code ready."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-29.mp3",
+    "duration": 39.984,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-SG",
+        "role": "male",
+        "modelVoice": "en-SG-WayneNeural"
+      }
+    ],
+    "image": "assets/graphics/t01-g049.svg",
+    "imageAlt": "Receiving Check-in Zones; Dock One: Blue; Dock Two: Green; Dock Three: Red; Dock Four: Yellow",
+    "audioStart": 0.5,
+    "audioEnd": 40.484
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-01-29.mp3",
+      "start": 0.5,
+      "end": 40.484,
+      "assetSha256": "e5916dc075c775f10c14c9bd8781096999f10c0eb2426224b3e8d93a69ee9b43",
+      "speech": "Attention, delivery drivers.\n Starting next week, trucks carrying electronic components must use .4 instead of .2.\n .2 will be reserved for outgoing finished products.\n The new arrangement is intended to keep incoming and outgoing shipments from blocking each other.\n Please book an arrival window through the logistics portal before leaving your warehouse.\n Drivers arriving more than 30 minutes early should wait in the holding area outside the east gate.\n The receiving team will scan the advance shipping notice at the dock, so keep a printed copy or the digital code ready."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-01-cues-05.mp3",
+      "start": 23.22558,
+      "end": 30.23621,
+      "assetSha256": "3f418aff5586579ce8a41216bf0ef58ba657fb6c0861dcf94dbb6c8fc5f267ee",
+      "speech": "Number 83. Look at the graphic, which check-in zone should drivers delivering electronic components use next week."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-29.mp3",
+      "start": 0.5,
+      "end": 40.484,
+      "assetSha256": "e5916dc075c775f10c14c9bd8781096999f10c0eb2426224b3e8d93a69ee9b43",
+      "speech": "Attention, delivery drivers.\n Starting next week, trucks carrying electronic components must use .4 instead of .2.\n .2 will be reserved for outgoing finished products.\n The new arrangement is intended to keep incoming and outgoing shipments from blocking each other.\n Please book an arrival window through the logistics portal before leaving your warehouse.\n Drivers arriving more than 30 minutes early should wait in the holding area outside the east gate.\n The receiving team will scan the advance shipping notice at the dock, so keep a printed copy or the digital code ready."
+    }
+  ],
+  "imageSha256": "f75c12e5bb81d9d1ac6d20d501c3d59762c332f6a04e2ef8bdaefef5ce8c90db",
+  "audioCorroboration": {
+    "method": "Unprompted local Whisper base.en JSON full output on same actual MP3 decode; full file with leading silence restored, word-level segmentation (-ml 1 -sow) and segmented passage (-ojf). Those results independently show Dock labels not decimal points. Earlier narrowly cropped runs instead gave .4/.2; do not interpret those tokens as actual omission.",
+    "source": "audio/azure-v1/test-01-29.mp3",
+    "sha256": "e5916dc075c775f10c14c9bd8781096999f10c0eb2426224b3e8d93a69ee9b43",
+    "range": [
+      7.68,
+      13.32
+    ],
+    "observed": "must use Dock 4 instead of Dock 2. Dock 2 will be reserved for outgoing finished",
+    "segments": [
+      {
+        "start": 8.34,
+        "end": 8.72,
+        "word": "Dock"
+      },
+      {
+        "start": 8.72,
+        "end": 9.03,
+        "word": "4"
+      },
+      {
+        "start": 9.84,
+        "end": 9.95,
+        "word": "Dock"
+      },
+      {
+        "start": 9.95,
+        "end": 10.94,
+        "word": "2."
+      },
+      {
+        "start": 10.94,
+        "end": 11.09,
+        "word": "Dock"
+      },
+      {
+        "start": 11.09,
+        "end": 11.29,
+        "word": "2"
+      }
+    ],
+    "note": "Formal and practice passage use exactly the same source asset and sample range. Primary decode correctly spells advance shipping notice and holding area; less clean full-file retry suggests advanced and whole holding, which did not recur in earlier exact-range transcription and do not affect any correct answer."
+  },
+  "originalQuestion": {
+    "id": "t01-q083",
+    "testId": "test-01",
+    "number": 83,
+    "part": 4,
+    "groupId": "t01-g049",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "location"
+    ],
+    "prompt": "Which dock should trucks bringing electronic components use?",
+    "promptZh": "運入電子零件的貨車應使用哪個裝卸區？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dock Two.",
+        "zh": "二號裝卸區。",
+        "whyZh": "這是舊安排，改制後用於出貨成品。"
+      },
+      {
+        "id": "B",
+        "text": "Dock One.",
+        "zh": "一號裝卸區。",
+        "whyZh": "公告沒有指定一號裝卸區。"
+      },
+      {
+        "id": "C",
+        "text": "Any dock that is empty.",
+        "zh": "任何空著的裝卸區。",
+        "whyZh": "公告已指定用途，不能任意選擇空位。"
+      },
+      {
+        "id": "D",
+        "text": "Dock Four.",
+        "zh": "四號裝卸區。",
+        "whyZh": "電子零件屬進貨，公告要求使用 Dock Four；Dock Two 改保留給成品出貨。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "電子零件屬進貨，公告要求使用 Dock Four；Dock Two 改保留給成品出貨。",
+    "evidence": "trucks carrying electronic components must use Dock Four instead of Dock Two.",
+    "vocabulary": [
+      {
+        "term": "electronic component",
+        "zh": "電子零件",
+        "note": "構成電子設備的個別元件。"
+      }
+    ],
+    "revision": 1
+  }
+}

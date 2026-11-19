@@ -1,0 +1,158 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Early >30 minutes means wait outside east gate Taiwanese Mandarin, distractor explanations and actual spoken context/number/question reviewed.",
+  "activeQuestion": {
+    "id": "t01-q085",
+    "testId": "test-01",
+    "number": 85,
+    "part": 4,
+    "groupId": "t01-g049",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "condition"
+    ],
+    "prompt": "What should a driver do if arriving more than thirty minutes early?",
+    "promptZh": "司機若早到超過三十分鐘，應做什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Unload immediately at Dock Two.",
+        "zh": "立即在二號區卸貨。",
+        "whyZh": "早到須先等候，二號區也保留給成品出貨。"
+      },
+      {
+        "id": "B",
+        "text": "Cancel the shipping notice.",
+        "zh": "取消出貨通知。",
+        "whyZh": "出貨通知需供掃描，不應因早到而取消。"
+      },
+      {
+        "id": "C",
+        "text": "Leave the delivery at reception.",
+        "zh": "把貨物留在接待處。",
+        "whyZh": "收貨在指定裝卸區辦理，未授權放在接待處。"
+      },
+      {
+        "id": "D",
+        "text": "Wait in the area outside the east gate.",
+        "zh": "在東門外的等候區等待。",
+        "whyZh": "公告針對早到超過三十分鐘明確指定 holding area outside the east gate。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "公告針對早到超過三十分鐘明確指定 holding area outside the east gate。",
+    "evidence": "Drivers arriving more than thirty minutes early should wait in the holding area outside the east gate.",
+    "vocabulary": [
+      {
+        "term": "arrival window",
+        "zh": "預約抵達時段",
+        "note": "為交通或收貨安排而分配的時間區間。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g049",
+    "testId": "test-01",
+    "part": 4,
+    "title": "New loading-dock arrangements",
+    "titleZh": "新的裝卸區安排",
+    "topic": "manufacturing",
+    "passage": "Attention, delivery drivers. Starting next week, trucks carrying electronic components must use Dock Four instead of Dock Two. Dock Two will be reserved for outgoing finished products. The new arrangement is intended to keep incoming and outgoing shipments from blocking each other. Please book an arrival window through the logistics portal before leaving your warehouse. Drivers arriving more than thirty minutes early should wait in the holding area outside the east gate. The receiving team will scan the advance shipping notice at the dock, so keep a printed copy or the digital code ready.",
+    "passageZh": "請送貨司機注意。從下週開始，運送電子零件的貨車必須改用四號裝卸區，不再使用二號。二號裝卸區將保留給出貨成品。新安排是為了避免進貨與出貨互相阻塞。請在離開倉庫前，先透過物流入口網站預約抵達時段。比預約時間早到超過三十分鐘的司機，請在東門外的等候區等待。收貨團隊會在裝卸區掃描預先出貨通知，請準備好紙本或電子代碼。",
+    "audioScript": "Attention, delivery drivers. Starting next week, trucks carrying electronic components must use Dock Four instead of Dock Two. Dock Two will be reserved for outgoing finished products. The new arrangement is intended to keep incoming and outgoing shipments from blocking each other. Please book an arrival window through the logistics portal before leaving your warehouse. Drivers arriving more than thirty minutes early should wait in the holding area outside the east gate. The receiving team will scan the advance shipping notice at the dock, so keep a printed copy or the digital code ready.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Attention, delivery drivers. Starting next week, trucks carrying electronic components must use Dock Four instead of Dock Two. Dock Two will be reserved for outgoing finished products. The new arrangement is intended to keep incoming and outgoing shipments from blocking each other. Please book an arrival window through the logistics portal before leaving your warehouse. Drivers arriving more than thirty minutes early should wait in the holding area outside the east gate. The receiving team will scan the advance shipping notice at the dock, so keep a printed copy or the digital code ready."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-29.mp3",
+    "duration": 39.984,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-SG",
+        "role": "male",
+        "modelVoice": "en-SG-WayneNeural"
+      }
+    ],
+    "image": "assets/graphics/t01-g049.svg",
+    "imageAlt": "Receiving Check-in Zones; Dock One: Blue; Dock Two: Green; Dock Three: Red; Dock Four: Yellow",
+    "audioStart": 0.5,
+    "audioEnd": 40.484
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/azure-v1/test-01-29.mp3",
+      "start": 0.5,
+      "end": 40.484,
+      "assetSha256": "e5916dc075c775f10c14c9bd8781096999f10c0eb2426224b3e8d93a69ee9b43",
+      "speech": "Attention, delivery drivers.\n Starting next week, trucks carrying electronic components must use .4 instead of .2.\n .2 will be reserved for outgoing finished products.\n The new arrangement is intended to keep incoming and outgoing shipments from blocking each other.\n Please book an arrival window through the logistics portal before leaving your warehouse.\n Drivers arriving more than 30 minutes early should wait in the holding area outside the east gate.\n The receiving team will scan the advance shipping notice at the dock, so keep a printed copy or the digital code ready."
+    },
+    {
+      "mode": "question",
+      "path": "audio/formal/test-01-cues-05.mp3",
+      "start": 33.97533,
+      "end": 38.47575,
+      "assetSha256": "3f418aff5586579ce8a41216bf0ef58ba657fb6c0861dcf94dbb6c8fc5f267ee",
+      "speech": "Number 85. What should a driver do if arriving more than 30 minutes early?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/azure-v1/test-01-29.mp3",
+      "start": 0.5,
+      "end": 40.484,
+      "assetSha256": "e5916dc075c775f10c14c9bd8781096999f10c0eb2426224b3e8d93a69ee9b43",
+      "speech": "Attention, delivery drivers.\n Starting next week, trucks carrying electronic components must use .4 instead of .2.\n .2 will be reserved for outgoing finished products.\n The new arrangement is intended to keep incoming and outgoing shipments from blocking each other.\n Please book an arrival window through the logistics portal before leaving your warehouse.\n Drivers arriving more than 30 minutes early should wait in the holding area outside the east gate.\n The receiving team will scan the advance shipping notice at the dock, so keep a printed copy or the digital code ready."
+    }
+  ],
+  "imageSha256": "f75c12e5bb81d9d1ac6d20d501c3d59762c332f6a04e2ef8bdaefef5ce8c90db",
+  "audioCorroboration": {
+    "method": "Unprompted local Whisper base.en JSON full output on same actual MP3 decode; full file with leading silence restored, word-level segmentation (-ml 1 -sow) and segmented passage (-ojf). Those results independently show Dock labels not decimal points. Earlier narrowly cropped runs instead gave .4/.2; do not interpret those tokens as actual omission.",
+    "source": "audio/azure-v1/test-01-29.mp3",
+    "sha256": "e5916dc075c775f10c14c9bd8781096999f10c0eb2426224b3e8d93a69ee9b43",
+    "range": [
+      7.68,
+      13.32
+    ],
+    "observed": "must use Dock 4 instead of Dock 2. Dock 2 will be reserved for outgoing finished",
+    "segments": [
+      {
+        "start": 8.34,
+        "end": 8.72,
+        "word": "Dock"
+      },
+      {
+        "start": 8.72,
+        "end": 9.03,
+        "word": "4"
+      },
+      {
+        "start": 9.84,
+        "end": 9.95,
+        "word": "Dock"
+      },
+      {
+        "start": 9.95,
+        "end": 10.94,
+        "word": "2."
+      },
+      {
+        "start": 10.94,
+        "end": 11.09,
+        "word": "Dock"
+      },
+      {
+        "start": 11.09,
+        "end": 11.29,
+        "word": "2"
+      }
+    ],
+    "note": "Formal and practice passage use exactly the same source asset and sample range. Primary decode correctly spells advance shipping notice and holding area; less clean full-file retry suggests advanced and whole holding, which did not recur in earlier exact-range transcription and do not affect any correct answer."
+  }
+}
