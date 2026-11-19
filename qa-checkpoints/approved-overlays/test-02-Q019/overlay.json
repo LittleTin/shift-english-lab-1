@@ -1,0 +1,178 @@
+{
+  "status": "item-verified-offline-not-published",
+  "testId": "test-02",
+  "sourceRef": "43087f63",
+  "predecessorOverlay": "qa-checkpoints/approved-overlays/test-02-Q013-Q014-Q016",
+  "oldListeningPlanSha256": "b6633ba0a0da5e797e9fc00b25f3965c7f041e4ddfc3a62658870c4cf0b1c00b",
+  "units": {
+    "19": {
+      "oldGroupId": "t02-g019",
+      "oldGroupSha256": "b87f24d5ec50d58975995124f4a5f4382114643756cc8a1ddcae38cd6a7a754c",
+      "oldQuestionSha256": "f042441f58e066e10a2fc2187f5b0c458363340ed38fd10599a1a49c3e6fccd7",
+      "newQuestion": {
+        "id": "t02-q019-r2",
+        "testId": "test-02",
+        "number": 19,
+        "part": 2,
+        "groupId": "t02-g019-r2",
+        "topic": "business",
+        "difficulty": "intermediate",
+        "tags": [
+          "question-response"
+        ],
+        "prompt": "Listen and choose the best response.",
+        "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+        "options": [
+          {
+            "id": "A",
+            "text": "The meeting starts at ten.",
+            "zh": "會議十點開始。",
+            "whyZh": "這只說明會議開始的時間，沒有回答是否會親自到場。"
+          },
+          {
+            "id": "B",
+            "text": "I will join by video instead.",
+            "zh": "我會改用視訊參加。",
+            "whyZh": "說明將遠端參加，直接回應是否親自出席。"
+          },
+          {
+            "id": "C",
+            "text": "I reviewed the meeting schedule.",
+            "zh": "我看過會議時程了。",
+            "whyZh": "看過會議時程並未說明是否親自出席。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "說明將遠端參加，直接回應是否親自出席。",
+        "evidence": "Are you attending the supplier meeting in person?",
+        "vocabulary": [
+          {
+            "term": "in person",
+            "zh": "親自到場",
+            "note": "與 by video、online 等遠端參與方式相對。"
+          }
+        ],
+        "revision": 2
+      },
+      "newGroup": {
+        "id": "t02-g019-r2",
+        "testId": "test-02",
+        "part": 2,
+        "title": "Remote attendance",
+        "titleZh": "遠端與會",
+        "topic": "business",
+        "passage": "Are you attending the supplier meeting in person?\nA. The meeting starts at ten.\nB. I will join by video instead.\nC. I reviewed the meeting schedule.",
+        "passageZh": "你會親自到場參加供應商會議嗎？\nA. 會議十點開始。\nB. 我會改用視訊參加。\nC. 我看過會議時程了。",
+        "audioScript": "Are you attending the supplier meeting in person?\nA. The meeting starts at ten.\nB. I will join by video instead.\nC. I reviewed the meeting schedule.",
+        "turns": [
+          {
+            "voice": "male",
+            "text": "Are you attending the supplier meeting in person?"
+          },
+          {
+            "voice": "female",
+            "text": "A. The meeting starts at ten. B. I will join by video instead. C. I reviewed the meeting schedule."
+          }
+        ],
+        "audio": "audio/exams/test-02/groups/t02-g019-r2/practice-passage.wav",
+        "duration": 15.135,
+        "audioSpeakers": [
+          {
+            "speaker": "male",
+            "role": "male",
+            "locale": "en-IE",
+            "modelVoice": "en-IE-ConnorNeural"
+          },
+          {
+            "speaker": "female",
+            "role": "female",
+            "locale": "en-IE",
+            "modelVoice": "en-IE-EmilyNeural"
+          }
+        ],
+        "audioStart": 0,
+        "audioEnd": 15.135
+      },
+      "assets": {
+        "formal": {
+          "sourceFile": "t02-g019-repair-formal.wav",
+          "path": "audio/exams/test-02/groups/t02-g019-r2/formal-passage.wav",
+          "sha256": "08da3b179084383e4d0eea9f01365011b70ccc85760a109da37902423dc2ceb2",
+          "samples": 329040,
+          "hz": 24000,
+          "seconds": 13.71,
+          "speech": "Are you attending the supplier meeting in person?\nA. The meeting starts at ten.\nB. I will join by video instead.\nC. I reviewed the meeting schedule.",
+          "speakers": [
+            {
+              "speaker": "male",
+              "role": "male",
+              "locale": "en-US",
+              "modelVoice": "en-US-GuyNeural"
+            },
+            {
+              "speaker": "female",
+              "role": "female",
+              "locale": "en-US",
+              "modelVoice": "en-US-JennyNeural"
+            }
+          ],
+          "oldSource": {
+            "file": "audio/formal-v2/test-02-07.mp3",
+            "start": 0.5,
+            "end": 16.604,
+            "sha256": "ee6016360ee74abc8a44404ef756702455fa08a4afc148e242676cb99e465c27",
+            "role": "passage",
+            "timelineAt": 525.77773,
+            "questionId": null,
+            "voices": [
+              {
+                "speaker": "male",
+                "locale": "en-US",
+                "role": "male",
+                "modelVoice": "en-US-GuyNeural"
+              },
+              {
+                "speaker": "female",
+                "locale": "en-US",
+                "role": "female",
+                "modelVoice": "en-US-JennyNeural"
+              }
+            ]
+          }
+        },
+        "practice": {
+          "sourceFile": "t02-g019-repair-practice.wav",
+          "path": "audio/exams/test-02/groups/t02-g019-r2/practice-passage.wav",
+          "sha256": "3f34e1e6c2b06e33404d5eaaf7eefbf4825fedb477137e24cd13a004d7360a23",
+          "samples": 363240,
+          "hz": 24000,
+          "seconds": 15.135,
+          "speech": "Are you attending the supplier meeting in person?\nA. The meeting starts at ten.\nB. I will join by video instead.\nC. I reviewed the meeting schedule.",
+          "speakers": [
+            {
+              "speaker": "male",
+              "role": "male",
+              "locale": "en-IE",
+              "modelVoice": "en-IE-ConnorNeural"
+            },
+            {
+              "speaker": "female",
+              "role": "female",
+              "locale": "en-IE",
+              "modelVoice": "en-IE-EmilyNeural"
+            }
+          ],
+          "oldSource": {
+            "file": "audio/azure-v1/test-02-07.mp3",
+            "start": 0.5,
+            "end": 17.636,
+            "sha256": "23f6adf5f8140aad1c3ce855836b0800bd919ed4a24d73816a6875f99d770e84"
+          }
+        }
+      },
+      "cueSha256": "87dbe7c0926a7ea570b5e8543090f91e736d90bee334a753d664e6bacdfd1836",
+      "answerSha256": "30aa6a5604d8c92f7fb72ed6a3dbca6e005e0c21c65e8adcc372ea53f54b402e",
+      "passageSha256": "04823592b65757c32cc535e07c6e12331fdaaf54205621461fa2e308cc51142f"
+    }
+  }
+}

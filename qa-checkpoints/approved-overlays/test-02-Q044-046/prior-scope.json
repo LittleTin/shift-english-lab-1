@@ -1,0 +1,322 @@
+{
+  "status": "historical-only",
+  "group": {
+    "id": "t02-g036",
+    "testId": "test-02",
+    "part": 3,
+    "title": "A quotation revision",
+    "titleZh": "修訂報價",
+    "topic": "manufacturing",
+    "passage": "Woman: Your quotation assumes one thousand units a month. Our forecast is only six hundred for the first quarter.\nMan: I can revise the unit price for that volume. Will you still use the same enclosure and packaging?\nWoman: The enclosure is unchanged, but we want plain cartons instead of printed ones. Please show the packaging cost separately.\nMan: Certainly. I will email a revised quotation by tomorrow afternoon.",
+    "passageZh": "女：你們的報價假設每月一千台。我們第一季的預測只有每月六百台。\n男：我可以依那個數量修改單價。外殼和包裝仍使用相同的嗎？\n女：外殼不變，但我們要用素面紙箱代替印刷紙箱。請把包裝費用分開列出。\n男：當然。我明天下午前會寄出修訂報價。",
+    "audioScript": "Your quotation assumes one thousand units a month. Our forecast is only six hundred for the first quarter.\nI can revise the unit price for that volume. Will you still use the same enclosure and packaging?\nThe enclosure is unchanged, but we want plain cartons instead of printed ones. Please show the packaging cost separately.\nCertainly. I will email a revised quotation by tomorrow afternoon.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Your quotation assumes one thousand units a month. Our forecast is only six hundred for the first quarter."
+      },
+      {
+        "voice": "male",
+        "text": "I can revise the unit price for that volume. Will you still use the same enclosure and packaging?"
+      },
+      {
+        "voice": "female",
+        "text": "The enclosure is unchanged, but we want plain cartons instead of printed ones. Please show the packaging cost separately."
+      },
+      {
+        "voice": "male",
+        "text": "Certainly. I will email a revised quotation by tomorrow afternoon."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-14.mp3",
+    "duration": 29.976,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-TZ",
+        "role": "female",
+        "modelVoice": "en-TZ-ImaniNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-TZ",
+        "role": "male",
+        "modelVoice": "en-TZ-ElimuNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 30.476
+  },
+  "questions": [
+    {
+      "id": "t02-q044",
+      "testId": "test-02",
+      "number": 44,
+      "part": 3,
+      "groupId": "t02-g036",
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "forecast"
+      ],
+      "prompt": "What monthly quantity does the woman expect initially?",
+      "promptZh": "女方預期初期每月的數量是多少？",
+      "options": [
+        {
+          "id": "A",
+          "text": "One thousand units.",
+          "zh": "一千台。",
+          "whyZh": "這是原報價假設，女方正在修正它。"
+        },
+        {
+          "id": "B",
+          "text": "Three thousand units.",
+          "zh": "三千台。",
+          "whyZh": "對話未提出三千台的月需求。"
+        },
+        {
+          "id": "C",
+          "text": "One hundred units.",
+          "zh": "一百台。",
+          "whyZh": "對話未提出一百台的數量。"
+        },
+        {
+          "id": "D",
+          "text": "Six hundred units.",
+          "zh": "六百台。",
+          "whyZh": "女方表示第一季每月預測六百台。"
+        }
+      ],
+      "answer": "D",
+      "explanationZh": "女方表示第一季每月預測六百台。",
+      "evidence": "Our forecast is only six hundred for the first quarter.",
+      "vocabulary": [
+        {
+          "term": "forecast",
+          "zh": "預測",
+          "note": "本題是預估需求量，不等於已確認的採購訂單。"
+        },
+        {
+          "term": "unit price",
+          "zh": "單價",
+          "note": "每一單位產品的價格。"
+        }
+      ],
+      "revision": 1
+    },
+    {
+      "id": "t02-q045",
+      "testId": "test-02",
+      "number": 45,
+      "part": 3,
+      "groupId": "t02-g036",
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "forecast"
+      ],
+      "prompt": "What change does the woman request?",
+      "promptZh": "女方要求哪項變更？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Redesigning the enclosure.",
+          "zh": "重新設計外殼。",
+          "whyZh": "她明確說外殼不變。"
+        },
+        {
+          "id": "B",
+          "text": "Combining all costs into one unexplained charge.",
+          "zh": "把所有費用合成一筆不列明細。",
+          "whyZh": "她要求包裝成本另列，方向相反。"
+        },
+        {
+          "id": "C",
+          "text": "Using plain cartons.",
+          "zh": "改用素面紙箱。",
+          "whyZh": "她說要 plain cartons instead of printed ones。"
+        },
+        {
+          "id": "D",
+          "text": "Sending the quotation by regular mail.",
+          "zh": "用一般郵件寄紙本報價。",
+          "whyZh": "男方承諾 email，非紙本郵寄。"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "她說要 plain cartons instead of printed ones。",
+      "evidence": "we want plain cartons instead of printed ones",
+      "vocabulary": [
+        {
+          "term": "forecast",
+          "zh": "預測",
+          "note": "本題是預估需求量，不等於已確認的採購訂單。"
+        },
+        {
+          "term": "unit price",
+          "zh": "單價",
+          "note": "每一單位產品的價格。"
+        }
+      ],
+      "revision": 1
+    },
+    {
+      "id": "t02-q046",
+      "testId": "test-02",
+      "number": 46,
+      "part": 3,
+      "groupId": "t02-g036",
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "forecast"
+      ],
+      "prompt": "When will the revised quotation be sent?",
+      "promptZh": "修訂報價何時會寄出？",
+      "options": [
+        {
+          "id": "A",
+          "text": "At the end of the first quarter.",
+          "zh": "第一季結束時。",
+          "whyZh": "第一季是需求預測期間，不是報價寄送期限。"
+        },
+        {
+          "id": "B",
+          "text": "By tomorrow afternoon.",
+          "zh": "明天下午前。",
+          "whyZh": "最後一句直接給出期限。"
+        },
+        {
+          "id": "C",
+          "text": "After one thousand units are ordered.",
+          "zh": "訂購一千台後。",
+          "whyZh": "沒有這項寄送條件。"
+        },
+        {
+          "id": "D",
+          "text": "In six months.",
+          "zh": "六個月後。",
+          "whyZh": "six hundred 是數量，不能解讀成六個月。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "最後一句直接給出期限。",
+      "evidence": "by tomorrow afternoon",
+      "vocabulary": [
+        {
+          "term": "forecast",
+          "zh": "預測",
+          "note": "本題是預估需求量，不等於已確認的採購訂單。"
+        },
+        {
+          "term": "unit price",
+          "zh": "單價",
+          "note": "每一單位產品的價格。"
+        }
+      ],
+      "revision": 1
+    }
+  ],
+  "oldPlanAudioEdition": "toeic-1",
+  "oldFrames": [
+    {
+      "src": "audio/formal/test-02-cues-02.mp3",
+      "start": 26.62358,
+      "end": 30.58933,
+      "duration": 3.96575,
+      "kind": "audio",
+      "role": "cue",
+      "part": 3,
+      "groupId": "t02-g036",
+      "at": 1183.15374
+    },
+    {
+      "src": "audio/azure-v1/test-02-14.mp3",
+      "start": 0.5,
+      "end": 30.476,
+      "duration": 29.976,
+      "kind": "audio",
+      "role": "passage",
+      "part": 3,
+      "groupId": "t02-g036",
+      "at": 1187.11949,
+      "speakers": [
+        {
+          "speaker": "female",
+          "locale": "en-TZ",
+          "role": "female",
+          "modelVoice": "en-TZ-ImaniNeural"
+        },
+        {
+          "speaker": "male",
+          "locale": "en-TZ",
+          "role": "male",
+          "modelVoice": "en-TZ-ElimuNeural"
+        }
+      ]
+    },
+    {
+      "src": "audio/formal/test-02-cues-02.mp3",
+      "start": 30.83933,
+      "end": 35.06158,
+      "duration": 4.22225,
+      "kind": "audio",
+      "role": "question",
+      "part": 3,
+      "groupId": "t02-g036",
+      "questionId": "t02-q044",
+      "at": 1217.09549
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 11.28411,
+      "part": 3,
+      "groupId": "t02-g036",
+      "questionId": "t02-q044",
+      "at": 1221.31774
+    },
+    {
+      "src": "audio/formal/test-02-cues-02.mp3",
+      "start": 35.31158,
+      "end": 38.40979,
+      "duration": 3.09821,
+      "kind": "audio",
+      "role": "question",
+      "part": 3,
+      "groupId": "t02-g036",
+      "questionId": "t02-q045",
+      "at": 1232.60185
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 11.28411,
+      "part": 3,
+      "groupId": "t02-g036",
+      "questionId": "t02-q045",
+      "at": 1235.70006
+    },
+    {
+      "src": "audio/formal/test-02-cues-02.mp3",
+      "start": 38.65979,
+      "end": 42.12375,
+      "duration": 3.46396,
+      "kind": "audio",
+      "role": "question",
+      "part": 3,
+      "groupId": "t02-g036",
+      "questionId": "t02-q046",
+      "at": 1246.98417
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 11.28411,
+      "part": 3,
+      "groupId": "t02-g036",
+      "questionId": "t02-q046",
+      "at": 1250.44813
+    }
+  ]
+}

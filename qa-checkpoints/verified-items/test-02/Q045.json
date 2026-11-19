@@ -1,0 +1,204 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Independent editorial key review confirmed D/C/B. The forecast now explicitly states 600 a month for the first quarter; the packaging change is explicitly unprinted boxes; quote deadline is no later than tomorrow afternoon. Printed and spoken scope roles and Traditional Chinese explanation aligned.",
+    "audio": "New exact shared en-TZ passage: unprompted Whisper small.en recovered all four turns (punctuation/numeral normalization only); independent Vosk corroborated one thousand units a month, six hundred units per month in the first quarter, plain boxes with nothing printed, separately stated packaging cost, and by tomorrow afternoon. Vosk misdecoded some non-key surrounding words, so record exact Whisper and key-bearing corroboration separately. New standard-US Azure en-US-JennyNeural numbered stem was prompted with the exact printed wording and emitted in the pinned WAV. Unprompted Whisper small.en recovered the script exactly; Vosk matched the number and overall stem but segmented “change does” as “changed as.” This disagreement is not represented as two verbatim model passes. The matched affirmative packaging request and preserved numbered scope are separately verified.",
+    "retainedIntro": "Unprompted Whisper small.en and independent Vosk both recovered “Questions 44 through 46. Listen to the conversation.” from the current SHA-bound retained formal cue.",
+    "association": "Exact SHA-bound old cue, actual numbered stem, and one identical shared passage slice in both modes. The group-local timeline and 100 exact answer slots were checked offline; browser and historical in-progress-session acceptance are separate release gates."
+  },
+  "activeQuestion": {
+    "id": "t02-q045-r2",
+    "testId": "test-02",
+    "number": 45,
+    "part": 3,
+    "groupId": "t02-g036-r2",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "forecast"
+    ],
+    "prompt": "What change does the woman request?",
+    "promptZh": "女方要求哪項變更？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Redesigning the enclosure.",
+        "zh": "重新設計外殼。",
+        "whyZh": "她明確說外殼不變。"
+      },
+      {
+        "id": "B",
+        "text": "Combining all costs into one unexplained charge.",
+        "zh": "把所有費用合成一筆不列明細。",
+        "whyZh": "她要求包裝成本另列，方向相反。"
+      },
+      {
+        "id": "C",
+        "text": "Using plain boxes.",
+        "zh": "改用無印刷紙箱。",
+        "whyZh": "女方要求用無印刷紙箱裝產品。"
+      },
+      {
+        "id": "D",
+        "text": "Sending the quotation by regular mail.",
+        "zh": "用一般郵件寄紙本報價。",
+        "whyZh": "男方承諾 email，非紙本郵寄。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "女方要求用無印刷紙箱裝產品。",
+    "evidence": "Please pack the units in plain boxes, with nothing printed on them.",
+    "vocabulary": [
+      {
+        "term": "forecast",
+        "zh": "預測",
+        "note": "本題是預估需求量，不等於已確認的採購訂單。"
+      },
+      {
+        "term": "unit price",
+        "zh": "單價",
+        "note": "每一單位產品的價格。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t02-q045",
+    "testId": "test-02",
+    "number": 45,
+    "part": 3,
+    "groupId": "t02-g036",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "forecast"
+    ],
+    "prompt": "What change does the woman request?",
+    "promptZh": "女方要求哪項變更？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Redesigning the enclosure.",
+        "zh": "重新設計外殼。",
+        "whyZh": "她明確說外殼不變。"
+      },
+      {
+        "id": "B",
+        "text": "Combining all costs into one unexplained charge.",
+        "zh": "把所有費用合成一筆不列明細。",
+        "whyZh": "她要求包裝成本另列，方向相反。"
+      },
+      {
+        "id": "C",
+        "text": "Using plain cartons.",
+        "zh": "改用素面紙箱。",
+        "whyZh": "她說要 plain cartons instead of printed ones。"
+      },
+      {
+        "id": "D",
+        "text": "Sending the quotation by regular mail.",
+        "zh": "用一般郵件寄紙本報價。",
+        "whyZh": "男方承諾 email，非紙本郵寄。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "她說要 plain cartons instead of printed ones。",
+    "evidence": "we want plain cartons instead of printed ones",
+    "vocabulary": [
+      {
+        "term": "forecast",
+        "zh": "預測",
+        "note": "本題是預估需求量，不等於已確認的採購訂單。"
+      },
+      {
+        "term": "unit price",
+        "zh": "單價",
+        "note": "每一單位產品的價格。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g036-r2",
+    "testId": "test-02",
+    "part": 3,
+    "title": "A quotation revision",
+    "titleZh": "修訂報價",
+    "topic": "manufacturing",
+    "passage": "Woman: Your quotation assumes one thousand units a month. Our forecast is only six hundred units per month for the first quarter.\nMan: I can revise the unit price for that volume. Will you still use the same enclosure and packaging?\nWoman: The enclosure is unchanged. Please pack the units in plain boxes, with nothing printed on them. Show the packaging cost separately.\nMan: Certainly. I will email a revised quotation by tomorrow afternoon.",
+    "passageZh": "女：你們的報價假設每月一千台。我們預估第一季每月只有六百台。\n男：我可以依那個數量修改單價。外殼和包裝仍使用相同的嗎？\n女：外殼不變。請用無印刷紙箱裝這批產品。請把包裝費用分開列出。\n男：當然。我最遲會在明天下午寄出修訂報價。",
+    "audioScript": "Your quotation assumes one thousand units a month. Our forecast is only six hundred units per month for the first quarter.\nI can revise the unit price for that volume. Will you still use the same enclosure and packaging?\nThe enclosure is unchanged. Please pack the units in plain boxes, with nothing printed on them. Show the packaging cost separately.\nCertainly. I will email a revised quotation by tomorrow afternoon.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Your quotation assumes one thousand units a month. Our forecast is only six hundred units per month for the first quarter."
+      },
+      {
+        "voice": "male",
+        "text": "I can revise the unit price for that volume. Will you still use the same enclosure and packaging?"
+      },
+      {
+        "voice": "female",
+        "text": "The enclosure is unchanged. Please pack the units in plain boxes, with nothing printed on them. Show the packaging cost separately."
+      },
+      {
+        "voice": "male",
+        "text": "Certainly. I will email a revised quotation by tomorrow afternoon."
+      }
+    ],
+    "audio": "audio/exams/test-02/groups/t02-g036-r2/passage.wav",
+    "duration": 32.475,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-TZ",
+        "role": "female",
+        "modelVoice": "en-TZ-ImaniNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-TZ",
+        "role": "male",
+        "modelVoice": "en-TZ-ElimuNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 32.475
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-02-cues-02.mp3",
+      "start": 26.62358,
+      "end": 30.58933,
+      "assetSha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+      "speech": "Questions 44 through 46. Listen to the conversation."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/exams/test-02/groups/t02-g036-r2/passage.wav",
+      "start": 0,
+      "end": 32.475,
+      "assetSha256": "b33b0cbf8e5a683ca3a9f62c9f4f9d33e0d338156f9ab873a55742c452dc8acf",
+      "speech": "Your quotation assumes one thousand units a month. Our forecast is only six hundred units per month for the first quarter.\nI can revise the unit price for that volume. Will you still use the same enclosure and packaging?\nThe enclosure is unchanged. Please pack the units in plain boxes, with nothing printed on them. Show the packaging cost separately.\nCertainly. I will email a revised quotation by tomorrow afternoon."
+    },
+    {
+      "mode": "question",
+      "path": "audio/exams/test-02/questions/Q045/formal-stem-r2.wav",
+      "start": 0,
+      "end": 5.2,
+      "assetSha256": "02b43caecc7038b15228f8a472c20313eac614c4c9cc25b7a5fe6cc5b21ab639",
+      "speech": "Number 45. What change does the woman request?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/exams/test-02/groups/t02-g036-r2/passage.wav",
+      "start": 0,
+      "end": 32.475,
+      "assetSha256": "b33b0cbf8e5a683ca3a9f62c9f4f9d33e0d338156f9ab873a55742c452dc8acf",
+      "speech": "Your quotation assumes one thousand units a month. Our forecast is only six hundred units per month for the first quarter.\nI can revise the unit price for that volume. Will you still use the same enclosure and packaging?\nThe enclosure is unchanged. Please pack the units in plain boxes, with nothing printed on them. Show the packaging cost separately.\nCertainly. I will email a revised quotation by tomorrow afternoon."
+    }
+  ],
+  "imageSha256": null
+}

@@ -1,0 +1,157 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Infer a negative reply to attendance in person from the positive plan to join by video instead; start time and schedule familiarity are plausible meeting facts, but do not answer the mode-of-attendance question. Spoken form, both option transcripts, zh-TW and choice rationales matched; correct key B unchanged.",
+    "audio": "Independent reviewer confirmed Whisper small.en exact A/B/C and all bodies in both modalities. Independent Vosk corroborated meanings and response order. Repaired practice and formal matches only; earlier candidate pair is not adopted.",
+    "association": "Two separate SHA-bound mode WAVs retaining original voice assignments. Original numbered cue range, predecessor role sequence, and Part 3 boundary retained. No actual browser or release approval."
+  },
+  "activeQuestion": {
+    "id": "t02-q019-r2",
+    "testId": "test-02",
+    "number": 19,
+    "part": 2,
+    "groupId": "t02-g019-r2",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "The meeting starts at ten.",
+        "zh": "會議十點開始。",
+        "whyZh": "這只說明會議開始的時間，沒有回答是否會親自到場。"
+      },
+      {
+        "id": "B",
+        "text": "I will join by video instead.",
+        "zh": "我會改用視訊參加。",
+        "whyZh": "說明將遠端參加，直接回應是否親自出席。"
+      },
+      {
+        "id": "C",
+        "text": "I reviewed the meeting schedule.",
+        "zh": "我看過會議時程了。",
+        "whyZh": "看過會議時程並未說明是否親自出席。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "說明將遠端參加，直接回應是否親自出席。",
+    "evidence": "Are you attending the supplier meeting in person?",
+    "vocabulary": [
+      {
+        "term": "in person",
+        "zh": "親自到場",
+        "note": "與 by video、online 等遠端參與方式相對。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t02-q019",
+    "testId": "test-02",
+    "number": 19,
+    "part": 2,
+    "groupId": "t02-g019",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "The person is very tall.",
+        "zh": "那個人很高。",
+        "whyZh": "in person 是親自到場，不是在詢問某人的外貌。"
+      },
+      {
+        "id": "B",
+        "text": "I will join by video instead.",
+        "zh": "我會改用視訊參加。",
+        "whyZh": "說明將遠端參加，直接回應是否親自出席。"
+      },
+      {
+        "id": "C",
+        "text": "I bought a new supplier.",
+        "zh": "我買了一個新供應商。",
+        "whyZh": "句意不符合參加會議的情境。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "說明將遠端參加，直接回應是否親自出席。",
+    "evidence": "Will you attend the supplier meeting in person?",
+    "vocabulary": [
+      {
+        "term": "in person",
+        "zh": "親自到場",
+        "note": "與 by video、online 等遠端參與方式相對。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t02-g019-r2",
+    "testId": "test-02",
+    "part": 2,
+    "title": "Remote attendance",
+    "titleZh": "遠端與會",
+    "topic": "business",
+    "passage": "Are you attending the supplier meeting in person?\nA. The meeting starts at ten.\nB. I will join by video instead.\nC. I reviewed the meeting schedule.",
+    "passageZh": "你會親自到場參加供應商會議嗎？\nA. 會議十點開始。\nB. 我會改用視訊參加。\nC. 我看過會議時程了。",
+    "audioScript": "Are you attending the supplier meeting in person?\nA. The meeting starts at ten.\nB. I will join by video instead.\nC. I reviewed the meeting schedule.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Are you attending the supplier meeting in person?"
+      },
+      {
+        "voice": "female",
+        "text": "A. The meeting starts at ten. B. I will join by video instead. C. I reviewed the meeting schedule."
+      }
+    ],
+    "audio": "audio/exams/test-02/groups/t02-g019-r2/practice-passage.wav",
+    "duration": 15.135,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "role": "male",
+        "locale": "en-IE",
+        "modelVoice": "en-IE-ConnorNeural"
+      },
+      {
+        "speaker": "female",
+        "role": "female",
+        "locale": "en-IE",
+        "modelVoice": "en-IE-EmilyNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 15.135
+  },
+  "audio": [
+    {
+      "mode": "passage",
+      "path": "audio/exams/test-02/groups/t02-g019-r2/formal-passage.wav",
+      "start": 0,
+      "end": 13.71,
+      "assetSha256": "08da3b179084383e4d0eea9f01365011b70ccc85760a109da37902423dc2ceb2",
+      "speech": "Are you attending the supplier meeting in person?\nA. The meeting starts at ten.\nB. I will join by video instead.\nC. I reviewed the meeting schedule."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/exams/test-02/groups/t02-g019-r2/practice-passage.wav",
+      "start": 0,
+      "end": 15.135,
+      "assetSha256": "3f34e1e6c2b06e33404d5eaaf7eefbf4825fedb477137e24cd13a004d7360a23",
+      "speech": "Are you attending the supplier meeting in person?\nA. The meeting starts at ten.\nB. I will join by video instead.\nC. I reviewed the meeting schedule."
+    }
+  ],
+  "imageSha256": null
+}

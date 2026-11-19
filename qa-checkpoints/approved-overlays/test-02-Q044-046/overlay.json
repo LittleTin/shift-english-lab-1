@@ -1,0 +1,396 @@
+{
+  "status": "held-structural-only-not-audio-or-release-approval",
+  "testId": "test-02",
+  "baselineRef": "7b3e6b75de634152aaa7b3cdce0354514e3f68a7 + scoped Part2 Q013/Q014/Q016/Q019 overlays",
+  "rawPackSha256": "1e5f34ab02ec86dd86f7a1199dde9cca3d7a30b7776d3419c9ff38bc22f53788",
+  "oldListeningPlanSha256": "e93ef9fe0d1ebd66f94bcdd0a262488f5f4bbb27800b51a7590c6e6856cdafff",
+  "newListeningPlanSha256": "f993b36948e7a37786348833f69a747778eb1c786d03908923160bb39c5f8461",
+  "oldGroupId": "t02-g036",
+  "oldGroupSha256": "fdb075603d0955913ab662f293f35703b336b71bebbf372d0a40c4d2475cb8cf",
+  "newGroup": {
+    "id": "t02-g036-r2",
+    "testId": "test-02",
+    "part": 3,
+    "title": "A quotation revision",
+    "titleZh": "修訂報價",
+    "topic": "manufacturing",
+    "passage": "Woman: Your quotation assumes one thousand units a month. Our forecast is only six hundred units per month for the first quarter.\nMan: I can revise the unit price for that volume. Will you still use the same enclosure and packaging?\nWoman: The enclosure is unchanged. Please pack the units in plain boxes, with nothing printed on them. Show the packaging cost separately.\nMan: Certainly. I will email a revised quotation by tomorrow afternoon.",
+    "passageZh": "女：你們的報價假設每月一千台。我們預估第一季每月只有六百台。\n男：我可以依那個數量修改單價。外殼和包裝仍使用相同的嗎？\n女：外殼不變。請用無印刷紙箱裝這批產品。請把包裝費用分開列出。\n男：當然。我最遲會在明天下午寄出修訂報價。",
+    "audioScript": "Your quotation assumes one thousand units a month. Our forecast is only six hundred units per month for the first quarter.\nI can revise the unit price for that volume. Will you still use the same enclosure and packaging?\nThe enclosure is unchanged. Please pack the units in plain boxes, with nothing printed on them. Show the packaging cost separately.\nCertainly. I will email a revised quotation by tomorrow afternoon.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Your quotation assumes one thousand units a month. Our forecast is only six hundred units per month for the first quarter."
+      },
+      {
+        "voice": "male",
+        "text": "I can revise the unit price for that volume. Will you still use the same enclosure and packaging?"
+      },
+      {
+        "voice": "female",
+        "text": "The enclosure is unchanged. Please pack the units in plain boxes, with nothing printed on them. Show the packaging cost separately."
+      },
+      {
+        "voice": "male",
+        "text": "Certainly. I will email a revised quotation by tomorrow afternoon."
+      }
+    ],
+    "audio": "audio/exams/test-02/groups/t02-g036-r2/passage.wav",
+    "duration": 32.475,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-TZ",
+        "role": "female",
+        "modelVoice": "en-TZ-ImaniNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-TZ",
+        "role": "male",
+        "modelVoice": "en-TZ-ElimuNeural"
+      }
+    ],
+    "audioStart": 0,
+    "audioEnd": 32.475
+  },
+  "oldQuestionSha256": {
+    "44": "9724f5521ede7b315cce16f44e59fa7762d3d5c9e609a3e5e10f925fb7bee3fe",
+    "45": "22ca31aab73c5d662a8a880202574864725f801410c2a21e3cf695d2e525f91c",
+    "46": "8a491e2c3f74532fd1566eaca12bdb3873c80a5a6d4b77330d4744eac29ddd87"
+  },
+  "newQuestions": [
+    {
+      "id": "t02-q044-r2",
+      "testId": "test-02",
+      "number": 44,
+      "part": 3,
+      "groupId": "t02-g036-r2",
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "forecast"
+      ],
+      "prompt": "What monthly quantity does the woman expect initially?",
+      "promptZh": "女方預期初期每月的數量是多少？",
+      "options": [
+        {
+          "id": "A",
+          "text": "One thousand units.",
+          "zh": "一千台。",
+          "whyZh": "這是原報價假設，女方正在修正它。"
+        },
+        {
+          "id": "B",
+          "text": "Three thousand units.",
+          "zh": "三千台。",
+          "whyZh": "對話未提出三千台的月需求。"
+        },
+        {
+          "id": "C",
+          "text": "One hundred units.",
+          "zh": "一百台。",
+          "whyZh": "對話未提出一百台的數量。"
+        },
+        {
+          "id": "D",
+          "text": "Six hundred units.",
+          "zh": "六百台。",
+          "whyZh": "女方明說第一季預估每月只有六百台。"
+        }
+      ],
+      "answer": "D",
+      "explanationZh": "女方明說第一季預估每月只有六百台；每月一千台是原報價的假設。",
+      "evidence": "Our forecast is only six hundred units per month for the first quarter.",
+      "vocabulary": [
+        {
+          "term": "forecast",
+          "zh": "預測",
+          "note": "本題是預估需求量，不等於已確認的採購訂單。"
+        },
+        {
+          "term": "unit price",
+          "zh": "單價",
+          "note": "每一單位產品的價格。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t02-q045-r2",
+      "testId": "test-02",
+      "number": 45,
+      "part": 3,
+      "groupId": "t02-g036-r2",
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "forecast"
+      ],
+      "prompt": "What change does the woman request?",
+      "promptZh": "女方要求哪項變更？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Redesigning the enclosure.",
+          "zh": "重新設計外殼。",
+          "whyZh": "她明確說外殼不變。"
+        },
+        {
+          "id": "B",
+          "text": "Combining all costs into one unexplained charge.",
+          "zh": "把所有費用合成一筆不列明細。",
+          "whyZh": "她要求包裝成本另列，方向相反。"
+        },
+        {
+          "id": "C",
+          "text": "Using plain boxes.",
+          "zh": "改用無印刷紙箱。",
+          "whyZh": "女方要求用無印刷紙箱裝產品。"
+        },
+        {
+          "id": "D",
+          "text": "Sending the quotation by regular mail.",
+          "zh": "用一般郵件寄紙本報價。",
+          "whyZh": "男方承諾 email，非紙本郵寄。"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "女方要求用無印刷紙箱裝產品。",
+      "evidence": "Please pack the units in plain boxes, with nothing printed on them.",
+      "vocabulary": [
+        {
+          "term": "forecast",
+          "zh": "預測",
+          "note": "本題是預估需求量，不等於已確認的採購訂單。"
+        },
+        {
+          "term": "unit price",
+          "zh": "單價",
+          "note": "每一單位產品的價格。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t02-q046",
+      "testId": "test-02",
+      "number": 46,
+      "part": 3,
+      "groupId": "t02-g036-r2",
+      "topic": "manufacturing",
+      "difficulty": "intermediate",
+      "tags": [
+        "forecast"
+      ],
+      "prompt": "When will the revised quotation be sent?",
+      "promptZh": "修訂報價何時會寄出？",
+      "options": [
+        {
+          "id": "A",
+          "text": "At the end of the first quarter.",
+          "zh": "第一季結束時。",
+          "whyZh": "第一季是需求預測期間，不是報價寄送期限。"
+        },
+        {
+          "id": "B",
+          "text": "By tomorrow afternoon.",
+          "zh": "最遲明天下午。",
+          "whyZh": "男方承諾最遲會在明天下午以電子郵件寄出修訂報價。"
+        },
+        {
+          "id": "C",
+          "text": "After one thousand units are ordered.",
+          "zh": "訂購一千台後。",
+          "whyZh": "沒有這項寄送條件。"
+        },
+        {
+          "id": "D",
+          "text": "In six months.",
+          "zh": "六個月後。",
+          "whyZh": "six hundred 是數量，不能解讀成六個月。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "男方承諾最遲會在明天下午以電子郵件寄出修訂報價。",
+      "evidence": "by tomorrow afternoon",
+      "vocabulary": [
+        {
+          "term": "forecast",
+          "zh": "預測",
+          "note": "本題是預估需求量，不等於已確認的採購訂單。"
+        },
+        {
+          "term": "unit price",
+          "zh": "單價",
+          "note": "每一單位產品的價格。"
+        }
+      ],
+      "revision": 1
+    }
+  ],
+  "formalFrameOps": [
+    {
+      "index": 130,
+      "beforeSha256": "4d2ab3fcefbe686d6820e5ebd32e8a00ed36750623bcf820f7fdd8505f5d8312",
+      "updates": {
+        "groupId": "t02-g036-r2"
+      }
+    },
+    {
+      "index": 131,
+      "beforeSha256": "cc8abcc652bbb9875095445a5bdf05e31bb6516d8b1e6bd0e3be6390d4f82952",
+      "updates": {
+        "src": "audio/exams/test-02/groups/t02-g036-r2/passage.wav",
+        "start": 0,
+        "end": 32.475,
+        "duration": 32.475,
+        "groupId": "t02-g036-r2"
+      }
+    },
+    {
+      "index": 132,
+      "beforeSha256": "29912712456a6f79e097a0f0f4b193006204efec2bdc1ce2ade3566b88392daa",
+      "updates": {
+        "groupId": "t02-g036-r2",
+        "questionId": "t02-q044-r2",
+        "at": 1219.59449
+      }
+    },
+    {
+      "index": 133,
+      "beforeSha256": "490284524fb37fd56a451dd33d792c41264a3159ce25783d8b495750f8b913d2",
+      "updates": {
+        "duration": 9.75051,
+        "groupId": "t02-g036-r2",
+        "questionId": "t02-q044-r2",
+        "at": 1223.81674
+      }
+    },
+    {
+      "index": 134,
+      "beforeSha256": "7d869dd55cc1adcb4fc31f373a84c10477c3d34bdce597a80c0b2c32e8280547",
+      "updates": {
+        "src": "audio/exams/test-02/questions/Q045/formal-stem-r2.wav",
+        "start": 0,
+        "end": 5.2,
+        "duration": 5.2,
+        "groupId": "t02-g036-r2",
+        "questionId": "t02-q045-r2",
+        "at": 1233.56725
+      }
+    },
+    {
+      "index": 135,
+      "beforeSha256": "57095040ea7499c3fcd7d7b29cff645451e9c32b4cdceb02103c52b732bea05c",
+      "updates": {
+        "duration": 9.75051,
+        "groupId": "t02-g036-r2",
+        "questionId": "t02-q045-r2",
+        "at": 1238.76725
+      }
+    },
+    {
+      "index": 136,
+      "beforeSha256": "f7e2969f0c7fbbba80d222ec80bd102f74ba263f01fb9aa1d867ff66ad6771c8",
+      "updates": {
+        "groupId": "t02-g036-r2",
+        "at": 1248.51776
+      }
+    },
+    {
+      "index": 137,
+      "beforeSha256": "c3b8afd38c566f59bba9a1d88d88430f4903879f351b745d3ec34997a9f6057c",
+      "updates": {
+        "duration": 9.75052,
+        "groupId": "t02-g036-r2",
+        "at": 1251.98172
+      }
+    }
+  ],
+  "oldAudioGuards": [
+    {
+      "file": "audio/formal/test-02-cues-02.mp3",
+      "start": 26.62358,
+      "end": 30.58933,
+      "sha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+      "role": "cue",
+      "timelineAt": 1183.15374,
+      "questionId": null,
+      "voices": null
+    },
+    {
+      "file": "audio/formal/test-02-cues-02.mp3",
+      "start": 30.83933,
+      "end": 35.06158,
+      "sha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+      "role": "question",
+      "timelineAt": 1217.09549,
+      "questionId": "t02-q044",
+      "voices": null
+    },
+    {
+      "file": "audio/formal/test-02-cues-02.mp3",
+      "start": 35.31158,
+      "end": 38.40979,
+      "sha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+      "role": "question",
+      "timelineAt": 1232.60185,
+      "questionId": "t02-q045",
+      "voices": null
+    },
+    {
+      "file": "audio/formal/test-02-cues-02.mp3",
+      "start": 38.65979,
+      "end": 42.12375,
+      "sha256": "50f92c8fe81a8465dda77130a0e44b7e74ad9c10e79cc0fd1aa902741ce6438c",
+      "role": "question",
+      "timelineAt": 1246.98417,
+      "questionId": "t02-q046",
+      "voices": null
+    },
+    {
+      "file": "audio/azure-v1/test-02-14.mp3",
+      "start": 0.5,
+      "end": 30.476,
+      "sha256": "c7e1d9df3818415f157a25210ab0f5e47620b3e20b28c4ffa57e4f9463fff0a0"
+    }
+  ],
+  "newAudioGuards": {
+    "audio/exams/test-02/groups/t02-g036-r2/passage.wav": {
+      "path": "audio/exams/test-02/groups/t02-g036-r2/passage.wav",
+      "sha256": "b33b0cbf8e5a683ca3a9f62c9f4f9d33e0d338156f9ab873a55742c452dc8acf",
+      "frames": 779400,
+      "sampleRate": 24000
+    },
+    "audio/exams/test-02/questions/Q045/formal-stem-r2.wav": {
+      "path": "audio/exams/test-02/questions/Q045/formal-stem-r2.wav",
+      "sha256": "02b43caecc7038b15228f8a472c20313eac614c4c9cc25b7a5fe6cc5b21ab639",
+      "frames": 124800,
+      "sampleRate": 24000
+    }
+  },
+  "newFormalStemInput": "Number 45. What change does the woman request?",
+  "timingProof": {
+    "status": "timing-candidate-not-sound-or-browser-acceptance",
+    "testId": "test-02",
+    "groupId": "t02-g036",
+    "firstSec": 1183.15374,
+    "endSec": 1261.73224,
+    "changedFormalIndices": [
+      131,
+      134
+    ],
+    "answerSeconds": [
+      9.75051,
+      9.75051,
+      9.75052
+    ],
+    "formalSeconds": 2700
+  },
+  "guardNotes": [
+    "Use exact hydrated assets from validated work source. This overlay edits one group and preserves surrounding frames.",
+    "Archive existing old group/three items and publish only after independent audio evidence and original full gates. No automatic promotion.",
+    "A distinct work-branch composition may preapply other group-specific approved overlays; check each scope collision/offset and recompute aggregate digest."
+  ]
+}
