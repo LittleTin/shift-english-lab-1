@@ -175,7 +175,7 @@ def split(site, source, omit_legacy_questions=False):
                     if key != 'listeningPlan':
                         owner = archive
                     elif frame.get('role') in {'intro','direction','example','cue'}:
-                        owner = f'{exam}/shared'
+                        owner = f'{exam}/common'
                         for q in by_group[frame.get('groupId')]:
                             needed[q_dir(exam,q['number'])].update(refs(frame))
                     elif frame.get('questionId') in qmap:
@@ -188,10 +188,10 @@ def split(site, source, omit_legacy_questions=False):
                         for q in audience:
                             needed[q_dir(exam,q['number'])].update(refs(frame))
                     else:
-                        owner = f'{exam}/shared'
+                        owner = f'{exam}/common'
                     record_deps(owner, frame)
         # Catch ancillary top-level media fields while preserving precise ownership above.
-        record_deps(f'{exam}/shared', {k:v for k,v in meta.items() if k not in
+        record_deps(f'{exam}/common', {k:v for k,v in meta.items() if k not in
                     {'listeningPlan','previousListeningPlan','alternateListeningPlans'}})
         exam_manifest = {'version': 1, 'testId':exam, 'keyOrder':list(pack),
                          'metadata':meta, 'records':{k:indexes[k] for k in RECORDS if k in pack}}
@@ -205,7 +205,7 @@ def split(site, source, omit_legacy_questions=False):
             # Sharing between active content and archive must not move current media into archive.
             visible = {p for p in path_owners if not p.endswith('/archive')}
             holder = next(iter(visible)) if len(visible)==1 else (
-                f'{next(iter(exams))}/shared' if len(exams)==1 else 'shared')
+                f'{next(iter(exams))}/common' if len(exams)==1 else 'common')
         rel = f'{holder}/media/{url}'
         original = locate(site,url)
         target = locate(source,rel)

@@ -1,7 +1,7 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "Identify contrast between shift-specific permissions and obligation; the factual reason and switch trigger are not the same relation. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
+  "checks": "Identify contrast between shift-specific permissions and obligation; the factual reason and switch trigger are not the same relation. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections. Post-submission vocabulary and usage notes were independently checked against the unchanged item and canonical schema.",
   "activeQuestion": {
     "id": "t03-q123-r2",
     "testId": "test-03",
@@ -13,7 +13,13 @@
       "manufacturing",
       "context"
     ],
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "jig",
+        "zh": "治具",
+        "note": "製造現場可用來定位或引導加工的工具；本題是本班可繼續使用舊治具，下一班則須換用新治具。"
+      }
+    ],
     "difficulty": "intermediate",
     "prompt": "The old jig leaves a faint mark, but measurements show no damage. Production may use it for the rest of this shift, ____ the next shift must switch to the new jig once the maintenance crew has fitted it.",
     "promptZh": "舊治具會留下淺痕，但量測顯示沒有造成損傷。本班剩餘時間可繼續使用，____，下一班在維修人員裝好新治具後，就必須切換。",

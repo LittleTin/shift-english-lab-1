@@ -1,7 +1,7 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "The existing portal supports finding rather than adding migrated information; the specified end point requires temporarily postponing additions. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
+  "checks": "The existing portal supports finding rather than adding migrated information; the specified end point requires temporarily postponing additions. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections. Post-submission vocabulary and usage notes were independently checked against the unchanged item and canonical schema.",
   "activeQuestion": {
     "id": "t03-q115-r2",
     "testId": "test-03",
@@ -13,7 +13,13 @@
       "technology",
       "context"
     ],
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "hold off on",
+        "zh": "暫緩；先不要",
+        "note": "後面可接動名詞；本題請使用者先不要在舊入口網站新增備註，因為這些備註不會移轉。"
+      }
+    ],
     "difficulty": "intermediate",
     "prompt": "The help desk says that the old portal will remain accessible during the transfer. Users can still look up an existing request, but they should ____ adding notes there until the new portal opens; those notes will not be migrated.",
     "promptZh": "服務台表示，移轉紀錄期間仍可使用舊入口網站。使用者仍可查找既有申請，但新入口網站啟用前，請____在舊站新增備註；這段期間的備註不會移轉。",

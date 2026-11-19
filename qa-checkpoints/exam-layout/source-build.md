@@ -38,3 +38,18 @@ The build refuses edits with stale digests, source symlinks, unsafe paths, dupli
 The default split/build saves old questions separately from editable active questions, with exact legacy compatibility of the generated bundles. After validating that history is recoverable independently, `split --omit-legacy-questions` excludes old question records entirely from both the new editable layout and generated packs. The build also supports `--omit-legacy-questions` for preview from a compatibility-mode source. Neither flag removes historical audio plans required by the existing runtime; the front end's treatment of new and legacy results must be completed and verified before production use.
 
 `python3 test_layout.py` exercises the real working checkout at `../shift-qa` and compares every default generated JSON/JS file byte-for-byte and all media hashes, checks clean paths, archives, question counts, and safe intentional media replacement.
+
+## Per-exam common material
+
+The editable source manifest puts directions, cues or other media shared
+across a single exam in `test-NN/common/`. Byte-identical truly cross-exam
+materials can use root `common/`, with explicit per-exam inventories, so one
+does not have to edit several copies. Group-specific figures, for example
+Cedar's current `test-03/groups/t03-g069-r2/`, stay with the owning group,
+and each question folder's media inventory lists the exact asset route.
+
+`test_common_authoring.py <authoring-dir> <rebuilt-dir>` checks one explicit
+three-exam Cedar regression fixture. It is an authoring placement check only:
+the fixture keeps old, not finally verified listening audio and must never
+be published. Rebuild and validate the chosen exact candidate again when all
+600 items, layout acceptance and actual browser tests are complete.

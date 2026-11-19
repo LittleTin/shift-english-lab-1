@@ -1,7 +1,7 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "The clock reference is past and the second clause requires completed automatic shutdown rather than a forecast or in-progress activity. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
+  "checks": "The clock reference is past and the second clause requires completed automatic shutdown rather than a forecast or in-progress activity. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections. Post-submission vocabulary and usage notes were independently checked against the unchanged item and canonical schema.",
   "activeQuestion": {
     "id": "t03-q111-r2",
     "testId": "test-03",
@@ -13,7 +13,13 @@
       "technology",
       "context"
     ],
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "By the time",
+        "zh": "到……時",
+        "note": "搭配過去發生的時間點，指出當時另一件事已經完成；本題是陳先生打開警示前，控制器就已關閉線路。"
+      }
+    ],
     "difficulty": "intermediate",
     "prompt": "At 9:05, the dashboard issued a warning about the backup line. By the time Chen opened the alert at 9:12, the controller ____ the line, so there was nothing left for him to switch off.",
     "promptZh": "上午 9:05，儀表板針對備用線路發出警訊。到了上午 9:12，陳打開警訊通知時，控制器____該線路，因此他不必再手動關閉該線路。",

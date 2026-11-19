@@ -1,7 +1,7 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "The same-number rule only applies within a carton; the stated wrong-unit consequence requires a distinct carton, not the original or an unrestricted choice. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
+  "checks": "The same-number rule only applies within a carton; the stated wrong-unit consequence requires a distinct carton, not the original or an unrestricted choice. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections. Post-submission vocabulary and usage notes were independently checked against the unchanged item and canonical schema.",
   "activeQuestion": {
     "id": "t03-q114-r2",
     "testId": "test-03",
@@ -13,7 +13,13 @@
       "manufacturing",
       "context"
     ],
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "serial number",
+        "zh": "序號",
+        "note": "每箱各有一個不同的序號；同一箱的箱身標籤和檢驗單標籤印相同序號，以便對應。"
+      }
+    ],
     "difficulty": "intermediate",
     "prompt": "For the pilot lot, each carton contains two labels, one for the carton and one for its inspection sheet. The serial number is unique to each carton and is printed on both of its labels. If a label on an inspection sheet is damaged, replacing it with one from ____ carton would link the sheet to the wrong unit.",
     "promptZh": "試產批次每箱附兩張標籤，一張貼在箱子上，另一張貼在該箱的檢驗單上。每箱的序號各不相同，同一箱的兩張標籤則印有同一個序號。如果檢驗單上的標籤破損，以____箱的標籤替換，就會讓檢驗單對應到錯誤的產品。",

@@ -1,7 +1,7 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "Compute both 20-minute intervals, recognize that one ends just when the other starts, and check each line’s separate production condition. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
+  "checks": "Compute both 20-minute intervals, recognize that one ends just when the other starts, and check each line’s separate production condition. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections. Post-submission vocabulary and usage notes were independently checked against the unchanged item and canonical schema.",
   "activeQuestion": {
     "id": "t03-q127-r2",
     "testId": "test-03",
@@ -13,7 +13,13 @@
       "technology",
       "context"
     ],
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "staggered",
+        "zh": "錯開的",
+        "note": "本題兩段停機維修時間前後接續，並未同時占用兩條檢測線。"
+      }
+    ],
     "difficulty": "intermediate",
     "prompt": "At least one inspection line must keep running. A sensor must be fitted to Line 1 before noon, and a guard must be installed on Line 2 after its last batch finishes at 11:30. Each job takes twenty minutes with its line stopped. If the supervisor takes Line 1 offline at 11:20 and Line 2 offline at 11:40, the maintenance periods will be ____.",
     "promptZh": "至少須維持一條檢測線運轉。第 1 線須在中午前裝好感測器，第 2 線則要在上午 11:30 跑完最後一批後才能安裝防護罩。每項作業都需要讓各自的檢測線停機二十分鐘。如果主管讓第 1 線於上午 11:20 停機、第 2 線於上午 11:40 停機，兩段維修時間將會____。",

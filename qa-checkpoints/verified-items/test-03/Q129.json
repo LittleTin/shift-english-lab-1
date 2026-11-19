@@ -1,7 +1,7 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "Apply two distinct eligibility tests: the missed green-tag deadline excludes this repair trip, while the fixable condition separately excludes disposal. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
+  "checks": "Apply two distinct eligibility tests: the missed green-tag deadline excludes this repair trip, while the fixable condition separately excludes disposal. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections. Post-submission vocabulary and usage notes were independently checked against the unchanged item and canonical schema.",
   "activeQuestion": {
     "id": "t03-q129-r2",
     "testId": "test-03",
@@ -13,7 +13,13 @@
       "business",
       "context"
     ],
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "beyond repair",
+        "zh": "無法修復的",
+        "note": "只有判定無法修復的椅子才會貼紅標，供週五報廢收運；錯過本週維修收運不等於不能修。"
+      }
+    ],
     "difficulty": "intermediate",
     "prompt": "The repair truck collects broken chairs every Thursday, provided their green tags were attached by 5 p.m. the previous day. A contractor makes a separate Friday disposal trip that takes only red-tagged chairs, and red tags are issued only for chairs assessed as beyond repair. A chair can be fixed, but its green tag cannot be attached until Thursday morning. The chair must therefore ____.",
     "promptZh": "維修車每週四會來收走損壞的椅子，但椅子須在前一天下午 5 點前貼上綠標。承包商週五另有一趟報廢收運，只收貼有紅標的椅子；只有判定無法修理的椅子才會拿到紅標。有張椅子可以修，只是要到週四上午才能貼綠標。因此這張椅子必須____。",

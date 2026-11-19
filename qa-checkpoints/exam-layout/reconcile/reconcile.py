@@ -134,6 +134,13 @@ def check_audio(rec, required, verify):
         verified[mode]={'path':window[0],'start':str(lo),'end':str(hi),'sha256':expected}
     return verified
 
+def check_item_vocabulary(q):
+    records=q.get('vocabulary')
+    if not isinstance(records,list) or not records or not all(
+      isinstance(row,dict) and all(isinstance(row.get(k),str) and row[k].strip() for k in ('term','zh','note'))
+      for row in records):
+        raise ValueError('Incomplete vocabulary: require nonempty term, zh and usage note')
+
 def run(site, ledger, decisions, baseline_packs=None):
     if not isinstance(decisions,dict):raise ValueError('Group decisions object required')
     reports={}
@@ -174,6 +181,7 @@ def run(site, ledger, decisions, baseline_packs=None):
                 if rec.get('status')!=PASS:
                     report['holds'].append(n);continue
                 q=pair_number(rec.get('activeQuestion'),test,n,b)
+                check_item_vocabulary(q)
                 if not rec.get('checks'):raise ValueError('no positive QA decision evidence')
                 if rec.get('scope')!=('listening' if q['part']<=4 else 'reading'):
                     raise ValueError('section/scope mismatch')

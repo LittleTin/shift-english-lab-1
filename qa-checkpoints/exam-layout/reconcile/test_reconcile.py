@@ -9,6 +9,15 @@ LEDGER=ROOT/'evidence/qa-checkpoints/verified-items'
 
 
 class Gate(unittest.TestCase):
+    def test_retained_vocabulary_requires_usage_note(self):
+        passes=dict(vocabulary=[dict(term='stand',zh='支架',note='在文章中指放置樣品的支架。')])
+        self.assertIsNone(m.check_item_vocabulary(passes))
+        for bad in ({}, {'vocabulary':[]},
+          {'vocabulary':[{'term':'stand','zh':'支架'}]},
+          {'vocabulary':[{'term':'stand','zh':'支架','note':'  '}]}):
+            with self.assertRaisesRegex(ValueError,'Incomplete vocabulary'):
+                m.check_item_vocabulary(bad)
+
     def test_reject_escape_and_nonfinite(self):
         for p in ('assets/../private','/assets/p.png','audio/./x.wav','assets/shell\\abc.png'):
             with self.subTest(p=p),self.assertRaises(ValueError):m.rel(SITE,p)

@@ -1,7 +1,7 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "Combine appointment time, suspension of regular bus service and passenger eligibility for the two stops; the right stop alone does not establish the right plan. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
+  "checks": "Combine appointment time, suspension of regular bus service and passenger eligibility for the two stops; the right stop alone does not establish the right plan. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections. Post-submission vocabulary and usage notes were independently checked against the unchanged item and canonical schema.",
   "activeQuestion": {
     "id": "t03-q125-r2",
     "testId": "test-03",
@@ -13,7 +13,13 @@
       "daily",
       "context"
     ],
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "term": "accessibility passes",
+        "zh": "無障礙通行證",
+        "note": "持這類通行證的人從西站上接駁車；持一般票券的人則從東站上同一輛車。"
+      }
+    ],
     "difficulty": "intermediate",
     "prompt": "While the road is closed, visitors with accessibility passes can board the shuttle at the west stop, while visitors with ordinary tickets join the same shuttle at the east stop. Regular buses will not serve either stop until noon. A visitor with an ordinary ticket and an appointment at 11:45 should ____.",
     "promptZh": "道路封閉期間，持無障礙通行證的訪客可在西站搭乘接駁車，持一般票券的訪客則在東站搭乘同一輛接駁車。一般公車要到中午才會停靠這兩站。持一般票券、約在上午 11:45 的訪客應該____。",
