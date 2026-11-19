@@ -1,0 +1,195 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "activeQuestion": {
+    "id": "t01-q027-r2",
+    "testId": "test-01",
+    "number": 27,
+    "part": 2,
+    "groupId": "t01-g027-r2",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "request"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "The screen is beside the server rack.",
+        "zh": "螢幕在伺服器機櫃旁。",
+        "whyZh": "設備位置無法回應時程能否延後。"
+      },
+      {
+        "id": "B",
+        "text": "Yes, I'll reschedule it for half past five.",
+        "zh": "可以，我會把時間改到五點半。",
+        "whyZh": "問題請求延後重啟伺服器；回答先同意，再將重啟改到五點半。"
+      },
+      {
+        "id": "C",
+        "text": "I demonstrated it to the client.",
+        "zh": "我已向客戶展示過它。",
+        "whyZh": "這只提到過去的展示，沒有回答是否可延後重啟。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "問題請求延後重啟伺服器；回答先同意，再將重啟改到五點半。",
+    "evidence": "Could we reboot the server after the demonstration?",
+    "vocabulary": [
+      {
+        "term": "reboot",
+        "zh": "重新啟動",
+        "note": "在這裡是動詞，指讓伺服器重新開機。"
+      },
+      {
+        "term": "half past five",
+        "zh": "五點半",
+        "note": "half past + 小時表示該時的三十分。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t01-q027",
+    "testId": "test-01",
+    "number": 27,
+    "part": 2,
+    "groupId": "t01-g027",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "request"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "The screen is beside the server rack.",
+        "zh": "螢幕在伺服器機櫃旁。",
+        "whyZh": "設備位置無法回應時程能否延後。"
+      },
+      {
+        "id": "B",
+        "text": "Certainly; I'll move it to five thirty.",
+        "zh": "當然可以，我會把時間改到五點半。",
+        "whyZh": "問題是在請求延後重新啟動；Certainly 表示同意，並提出新的執行時間。"
+      },
+      {
+        "id": "C",
+        "text": "I demonstrated it to the client.",
+        "zh": "我已向客戶展示過它。",
+        "whyZh": "這只提到過去的展示，沒有回答是否可延後重啟。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "問題是在請求延後重新啟動；Certainly 表示同意，並提出新的執行時間。",
+    "evidence": "Can the server restart wait until after the demonstration?",
+    "vocabulary": [
+      {
+        "term": "restart",
+        "zh": "重新啟動",
+        "note": "此處為名詞，指伺服器重啟作業。"
+      },
+      {
+        "term": "demonstration",
+        "zh": "展示；示範",
+        "note": "向觀眾呈現系統功能。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t01-g027-r2",
+    "testId": "test-01",
+    "part": 2,
+    "title": "Postponing a restart",
+    "titleZh": "延後重新啟動",
+    "topic": "technology",
+    "passage": "Could we reboot the server after the demonstration?\nA. The screen is beside the server rack.\nB. Yes, I'll reschedule it for half past five.\nC. I demonstrated it to the client.",
+    "passageZh": "可以等示範結束後再重新啟動伺服器嗎？\nA. 螢幕在伺服器機櫃旁。\nB. 可以，我會把時間改到五點半。\nC. 我已向客戶展示過它。",
+    "audioScript": "Could we reboot the server after the demonstration?\nA. The screen is beside the server rack.\nB. Yes, I'll reschedule it for half past five.\nC. I demonstrated it to the client.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Could we reboot the server after the demonstration?"
+      },
+      {
+        "voice": "male",
+        "text": "A. The screen is beside the server rack. B. Yes, I'll reschedule it for half past five. C. I demonstrated it to the client."
+      }
+    ],
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-TZ",
+        "role": "female",
+        "modelVoice": "en-TZ-ImaniNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-TZ",
+        "role": "male",
+        "modelVoice": "en-TZ-ElimuNeural"
+      }
+    ],
+    "audio": "audio/practice-f0/test01-q027-practice-lexical-fallback-accd579d49b2.wav",
+    "audioStart": 0,
+    "audioEnd": 14.6975,
+    "duration": 14.6975
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-01-cues-01.mp3",
+      "start": 32.18379,
+      "end": 33.39988,
+      "assetSha256": "6d8ae70c43fc4118e59e408cc5b4a4b1797fc4df9bcf03553e862a4624085b96",
+      "speech": "Number 27."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/formal-f0/test01-q027-formal-lexical-fallback-627389e56449.wav",
+      "start": 0,
+      "end": 15.4725,
+      "assetSha256": "627389e56449829ed84ef13e145af0a00a0d72c49498c00e37c20bf1b5ba00c5",
+      "speech": "Could we reboot the server after the demonstration?\nA. The screen is beside the server rack.\nB. Yes, I'll reschedule it for half past five.\nC. I demonstrated it to the client."
+    },
+    {
+      "mode": "practice",
+      "path": "audio/practice-f0/test01-q027-practice-lexical-fallback-accd579d49b2.wav",
+      "start": 0,
+      "end": 14.6975,
+      "assetSha256": "accd579d49b2b057f909c8bc58ada57b7217fe0f848438502a309c11f6155618",
+      "speech": "Could we reboot the server after the demonstration?\nA. The screen is beside the server rack.\nB. Yes, I'll reschedule it for half past five.\nC. I demonstrated it to the client."
+    }
+  ],
+  "imageSha256": null,
+  "checks": {
+    "content": "B remains unique, English and Traditional Chinese exact new spoken options and reasoning aligned.",
+    "audio": "Whisper exact in both modes for key semantics; focused unaltered independent Vosk specifically confirms “reschedule it for half past five” in practice; formal independently confirms affirmative schedule. Keep both old voice-role order and distinct accents.",
+    "association": "Three cue/formal/practice roles, exact old cue and new WAVs, unchanged voice order, 2700 seconds and unchanged other frames. No browser/publication claim.",
+    "offlineSpeechEvidence": {
+      "formal": {
+        "renderSha256": "627389e56449829ed84ef13e145af0a00a0d72c49498c00e37c20bf1b5ba00c5",
+        "whisperTranscript": "Could we reboot the server after the demonstration?\n A. The screen is beside the server rack.\n B. Yes, I'll reschedule it for half past five.\n C. I demonstrated it to the client.",
+        "wholeWhisperSha256": "f7a0bd435c55acbf7e0878a81875ea55cd0d850b6d36710dc0d6b400d0c331f9"
+      },
+      "practice": {
+        "renderSha256": "accd579d49b2b057f909c8bc58ada57b7217fe0f848438502a309c11f6155618",
+        "whisperTranscript": "Could we reboot the server after the demonstration?\n A. The screen is beside the server rack.\n B. Yes, I'll schedule it for half past five.\n C. I demonstrated it to the client.",
+        "wholeWhisperSha256": "9aeeaabf9ee8bccb4544db01a30a3e8a396731ae6afbba0d6feffc78e8d7fcd3"
+      },
+      "independentLogs": {
+        "vosk-all.txt": "8a76f167cf5963989fc3258f6bbccbc0bf9dfce8959bbc9c0cd94f7b5130cbf6",
+        "focused/t01q027-vosklgraph.txt": "e51aeda1545e4ac7803ea3c9364a966171133478435bd6d9f3e63b08640e730b",
+        "focused/t01q027-vosksmall.txt": "da922caaaccf0022cd6b476eaac98647564875638bde7c4f0655332e8a5ab3a2",
+        "evidence.md": "0d2d9dd53c4ad5c5b665168f82270a4201ddf5bdf51492e99c50bcf048d78113"
+      }
+    }
+  }
+}

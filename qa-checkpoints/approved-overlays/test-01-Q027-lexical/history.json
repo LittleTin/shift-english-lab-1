@@ -1,0 +1,149 @@
+{
+  "oldQuestion": {
+    "id": "t01-q027",
+    "testId": "test-01",
+    "number": 27,
+    "part": 2,
+    "groupId": "t01-g027",
+    "topic": "technology",
+    "difficulty": "intermediate",
+    "tags": [
+      "technology",
+      "request"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "請聽題目，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "The screen is beside the server rack.",
+        "zh": "螢幕在伺服器機櫃旁。",
+        "whyZh": "設備位置無法回應時程能否延後。"
+      },
+      {
+        "id": "B",
+        "text": "Certainly; I'll move it to five thirty.",
+        "zh": "當然可以，我會把時間改到五點半。",
+        "whyZh": "問題是在請求延後重新啟動；Certainly 表示同意，並提出新的執行時間。"
+      },
+      {
+        "id": "C",
+        "text": "I demonstrated it to the client.",
+        "zh": "我已向客戶展示過它。",
+        "whyZh": "這只提到過去的展示，沒有回答是否可延後重啟。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "問題是在請求延後重新啟動；Certainly 表示同意，並提出新的執行時間。",
+    "evidence": "Can the server restart wait until after the demonstration?",
+    "vocabulary": [
+      {
+        "term": "restart",
+        "zh": "重新啟動",
+        "note": "此處為名詞，指伺服器重啟作業。"
+      },
+      {
+        "term": "demonstration",
+        "zh": "展示；示範",
+        "note": "向觀眾呈現系統功能。"
+      }
+    ],
+    "revision": 1
+  },
+  "oldGroup": {
+    "id": "t01-g027",
+    "testId": "test-01",
+    "part": 2,
+    "title": "Postponing a restart",
+    "titleZh": "延後重新啟動",
+    "topic": "technology",
+    "passage": "Can the server restart wait until after the demonstration?\nA. The screen is beside the server rack. B. Certainly; I'll move it to five thirty. C. I demonstrated it to the client.",
+    "passageZh": "伺服器重新啟動可以等到展示結束後再進行嗎？\nA. 螢幕在伺服器機櫃旁。\nB. 當然可以，我會把時間改到五點半。\nC. 我已向客戶展示過它。",
+    "audioScript": "Can the server restart wait until after the demonstration?\nA. The screen is beside the server rack. B. Certainly; I'll move it to five thirty. C. I demonstrated it to the client.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Can the server restart wait until after the demonstration?"
+      },
+      {
+        "voice": "male",
+        "text": "A. The screen is beside the server rack. B. Certainly; I'll move it to five thirty. C. I demonstrated it to the client."
+      }
+    ],
+    "audio": "audio/azure-v1/test-01-10.mp3",
+    "duration": 17.928,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-TZ",
+        "role": "female",
+        "modelVoice": "en-TZ-ImaniNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-TZ",
+        "role": "male",
+        "modelVoice": "en-TZ-ElimuNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 18.428
+  },
+  "oldFrames": [
+    {
+      "src": "audio/formal/test-01-cues-01.mp3",
+      "start": 32.18379,
+      "end": 33.39988,
+      "duration": 1.21608,
+      "kind": "audio",
+      "role": "cue",
+      "part": 2,
+      "groupId": "t01-g027",
+      "at": 698.40076
+    },
+    {
+      "src": "audio/formal-v2/test-01-10.mp3",
+      "start": 0.5,
+      "end": 18.908,
+      "duration": 18.408,
+      "kind": "audio",
+      "role": "passage",
+      "part": 2,
+      "groupId": "t01-g027",
+      "at": 699.61684,
+      "speakers": [
+        {
+          "speaker": "female",
+          "locale": "en-US",
+          "role": "female",
+          "modelVoice": "en-US-JennyNeural"
+        },
+        {
+          "speaker": "male",
+          "locale": "en-US",
+          "role": "male",
+          "modelVoice": "en-US-GuyNeural"
+        }
+      ]
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 5.49996,
+      "part": 2,
+      "groupId": "t01-g027",
+      "questionId": "t01-q027",
+      "at": 718.02484
+    }
+  ],
+  "oldAssets": {
+    "audio/azure-v1/test-01-10.mp3": "43d71007b9330cbdf7226536d5d86dcb4e65df19e000a7460c59c01f6e628efc",
+    "audio/formal-v2/test-01-10.mp3": "fba7fccbc4561be7416da1b7fcd85e927c64058ae0bac64d058be88884de2e5b",
+    "audio/formal/test-01-cues-01.mp3": "6d8ae70c43fc4118e59e408cc5b4a4b1797fc4df9bcf03553e862a4624085b96"
+  },
+  "oldPractice": {
+    "path": "audio/azure-v1/test-01-10.mp3",
+    "start": 0.5,
+    "end": 18.428
+  }
+}

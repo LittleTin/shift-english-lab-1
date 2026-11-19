@@ -1,0 +1,155 @@
+{
+  "oldQuestion": {
+    "id": "t02-q007",
+    "testId": "test-02",
+    "number": 7,
+    "part": 2,
+    "groupId": "t02-g007",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "question-response"
+    ],
+    "prompt": "Listen and choose the best response.",
+    "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+    "options": [
+      {
+        "id": "A",
+        "text": "On the second shelf.",
+        "zh": "在第二層架上。",
+        "whyZh": "這是位置，沒有回答何時校正。"
+      },
+      {
+        "id": "B",
+        "text": "Next Thursday, according to its label.",
+        "zh": "依照標籤，是下星期四。",
+        "whyZh": "When 詢問時間；Next Thursday 直接回答校正日期。"
+      },
+      {
+        "id": "C",
+        "text": "The handle is blue.",
+        "zh": "握柄是藍色的。",
+        "whyZh": "顏色與校正日期無關。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "When 詢問時間；Next Thursday 直接回答校正日期。",
+    "evidence": "When is the torque wrench due for calibration?",
+    "vocabulary": [
+      {
+        "term": "calibration",
+        "zh": "校正",
+        "note": "比對與調整量測工具的準確度；本題詢問預定日期。"
+      }
+    ],
+    "revision": 1
+  },
+  "oldGroup": {
+    "id": "t02-g007",
+    "testId": "test-02",
+    "part": 2,
+    "title": "Calibration date",
+    "titleZh": "校正日期",
+    "topic": "manufacturing",
+    "passage": "When is the torque wrench due for calibration?\nA. On the second shelf.\nB. Next Thursday, according to its label.\nC. The handle is blue.",
+    "passageZh": "這支扭力扳手何時該校正？\nA. 在第二層架上。\nB. 依照標籤，是下星期四。\nC. 握柄是藍色的。",
+    "audioScript": "When is the torque wrench due for calibration?\nA. On the second shelf.\nB. Next Thursday, according to its label.\nC. The handle is blue.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "When is the torque wrench due for calibration?"
+      },
+      {
+        "voice": "female",
+        "text": "A. On the second shelf. B. Next Thursday, according to its label. C. The handle is blue."
+      }
+    ],
+    "audio": "audio/azure-v1/test-02-03.mp3",
+    "duration": 15.456,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-NG",
+        "role": "male",
+        "modelVoice": "en-NG-AbeoNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-NG",
+        "role": "female",
+        "modelVoice": "en-NG-EzinneNeural"
+      }
+    ],
+    "audioStart": 0.5,
+    "audioEnd": 15.956
+  },
+  "oldFrames": [
+    {
+      "src": "audio/formal-v2/narrator-01.mp3",
+      "start": 31.14,
+      "end": 45.684,
+      "duration": 14.544,
+      "kind": "audio",
+      "role": "direction",
+      "part": 2,
+      "groupId": "t02-g007",
+      "at": 219.22208
+    },
+    {
+      "src": "audio/formal/test-02-cues-01.mp3",
+      "start": 6.76867,
+      "end": 7.64404,
+      "duration": 0.87538,
+      "kind": "audio",
+      "role": "cue",
+      "part": 2,
+      "groupId": "t02-g007",
+      "at": 233.76608
+    },
+    {
+      "src": "audio/formal-v2/test-02-03.mp3",
+      "start": 0.5,
+      "end": 16.628,
+      "duration": 16.128,
+      "kind": "audio",
+      "role": "passage",
+      "part": 2,
+      "groupId": "t02-g007",
+      "at": 234.64146,
+      "speakers": [
+        {
+          "speaker": "male",
+          "locale": "en-US",
+          "role": "male",
+          "modelVoice": "en-US-GuyNeural"
+        },
+        {
+          "speaker": "female",
+          "locale": "en-US",
+          "role": "female",
+          "modelVoice": "en-US-JennyNeural"
+        }
+      ]
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 7.46105,
+      "part": 2,
+      "groupId": "t02-g007",
+      "questionId": "t02-q007",
+      "at": 250.76946
+    }
+  ],
+  "oldAssets": {
+    "audio/azure-v1/test-02-03.mp3": "4a4f444b97d3e77ff91a68c2299681d032d35500cae67f921e2d2dadf57c68e4",
+    "audio/formal-v2/narrator-01.mp3": "d50b0d7dc4ec02feff7e4fc5a16f2e23368c0e90f4515a3cc870cb9f2457fcac",
+    "audio/formal-v2/test-02-03.mp3": "2551d9a3425fbe342acecc65989ffe2432e4cc4037a9ceefdb66406672d8ad52",
+    "audio/formal/test-02-cues-01.mp3": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8"
+  },
+  "oldPractice": {
+    "path": "audio/azure-v1/test-02-03.mp3",
+    "start": 0.5,
+    "end": 15.956
+  }
+}

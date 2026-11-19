@@ -1,0 +1,298 @@
+{
+  "oldGroup": {
+    "id": "t03-g045",
+    "testId": "test-03",
+    "part": 4,
+    "title": "A new library collection",
+    "titleZh": "圖書館新館藏",
+    "topic": "daily",
+    "passage": "F1: Good afternoon. Before our repair workshop begins, I'd like to introduce the library's new tool collection. From next Monday, adult members can borrow household tools for up to seven days. The collection includes drills, sanders, and basic gardening equipment, but not ladders or large power saws. You can reserve an item online just as you would a book. However, tools must be collected from the ground-floor service desk rather than the self-service lockers. On your first visit, a staff member will demonstrate safe use and ask you to sign the lending form. Today's instructor will show you several items from the collection after the workshop. Please save your questions about reservations until then.",
+    "passageZh": "大家午安。修理工作坊開始之前，先介紹圖書館新的工具館藏。下星期一起，成年會員可借家用工具最多七天，包括電鑽、砂磨機及基本園藝工具，但不含梯子或大型電鋸。可以像預約書籍一樣在線上預約，但工具必須在一樓服務台領取，不能用自助取件櫃。第一次來時，館員會示範安全操作並請你簽借用表。今天的老師會在工作坊後展示幾件工具，關於預約的問題請留到那時再問。",
+    "audioScript": "Good afternoon. Before our repair workshop begins, I'd like to introduce the library's new tool collection. From next Monday, adult members can borrow household tools for up to seven days. The collection includes drills, sanders, and basic gardening equipment, but not ladders or large power saws. You can reserve an item online just as you would a book. However, tools must be collected from the ground-floor service desk rather than the self-service lockers. On your first visit, a staff member will demonstrate safe use and ask you to sign the lending form. Today's instructor will show you several items from the collection after the workshop. Please save your questions about reservations until then.",
+    "turns": [
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "Good afternoon. Before our repair workshop begins, I'd like to introduce the library's new tool collection. From next Monday, adult members can borrow household tools for up to seven days. The collection includes drills, sanders, and basic gardening equipment, but not ladders or large power saws. You can reserve an item online just as you would a book. However, tools must be collected from the ground-floor service desk rather than the self-service lockers. On your first visit, a staff member will demonstrate safe use and ask you to sign the lending form. Today's instructor will show you several items from the collection after the workshop. Please save your questions about reservations until then."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-25.mp3",
+    "duration": 46.872,
+    "audioStart": 0.5,
+    "audioEnd": 47.372,
+    "audioSpeakers": [
+      {
+        "speaker": "F1",
+        "locale": "en-NG",
+        "role": "female",
+        "modelVoice": "en-NG-EzinneNeural"
+      }
+    ]
+  },
+  "oldQuestions": [
+    {
+      "id": "t03-q071",
+      "testId": "test-03",
+      "number": 71,
+      "part": 4,
+      "groupId": "t03-g045",
+      "topic": "daily",
+      "difficulty": "intermediate",
+      "tags": [
+        "daily",
+        "detail"
+      ],
+      "prompt": "What new service is the library introducing?",
+      "promptZh": "圖書館推出什麼新服務？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Home delivery of books",
+          "zh": "送書到府",
+          "whyZh": "仍是在介紹借用，但不是書籍配送。"
+        },
+        {
+          "id": "B",
+          "text": "Professional garden maintenance",
+          "zh": "專業園藝維護",
+          "whyZh": "有園藝工具可借，未提供到府維護。"
+        },
+        {
+          "id": "C",
+          "text": "Loans of household tools",
+          "zh": "家用工具借用",
+          "whyZh": "成年會員可借電鑽等家用工具最多七天。"
+        },
+        {
+          "id": "D",
+          "text": "Rental of workshop space",
+          "zh": "工作坊場地出租",
+          "whyZh": "有工作坊活動，沒有場地出租服務。"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "成年會員可借電鑽等家用工具最多七天。",
+      "evidence": "adult members can borrow household tools",
+      "vocabulary": [
+        {
+          "term": "lending form",
+          "zh": "借用表",
+          "note": "首次借工具需要簽署的表格。"
+        }
+      ],
+      "revision": 1
+    },
+    {
+      "id": "t03-q072",
+      "testId": "test-03",
+      "number": 72,
+      "part": 4,
+      "groupId": "t03-g045",
+      "topic": "daily",
+      "difficulty": "intermediate",
+      "tags": [
+        "daily",
+        "detail"
+      ],
+      "prompt": "Where must borrowers collect tools?",
+      "promptZh": "借用人必須在哪裡取工具？",
+      "options": [
+        {
+          "id": "A",
+          "text": "At a ground-floor service desk",
+          "zh": "一樓服務台",
+          "whyZh": "工具不能由自助櫃取，須到服務台。"
+        },
+        {
+          "id": "B",
+          "text": "From the self-service lockers",
+          "zh": "自助取件櫃",
+          "whyZh": "講者明確排除自助取件櫃。"
+        },
+        {
+          "id": "C",
+          "text": "At a nearby hardware store",
+          "zh": "附近五金行",
+          "whyZh": "服務由圖書館提供，未提外部店家。"
+        },
+        {
+          "id": "D",
+          "text": "From the instructor's home",
+          "zh": "講師家",
+          "whyZh": "講師只會展示工具。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "工具不能由自助櫃取，須到服務台。",
+      "evidence": "the ground-floor service desk rather than the self-service lockers",
+      "vocabulary": [
+        {
+          "term": "lending form",
+          "zh": "借用表",
+          "note": "首次借工具需要簽署的表格。"
+        }
+      ],
+      "revision": 1
+    },
+    {
+      "id": "t03-q073",
+      "testId": "test-03",
+      "number": 73,
+      "part": 4,
+      "groupId": "t03-g045",
+      "topic": "daily",
+      "difficulty": "intermediate",
+      "tags": [
+        "daily",
+        "detail"
+      ],
+      "prompt": "What happens on a borrower's first visit?",
+      "promptZh": "借用人第一次來會做什麼？",
+      "options": [
+        {
+          "id": "A",
+          "text": "The borrower must purchase a tool.",
+          "zh": "借用人必須買工具。",
+          "whyZh": "這是借用服務，無購買要求。"
+        },
+        {
+          "id": "B",
+          "text": "The borrower receives a permanent locker.",
+          "zh": "獲得永久置物櫃。",
+          "whyZh": "工具不經自助櫃領取。"
+        },
+        {
+          "id": "C",
+          "text": "A seven-day training course begins.",
+          "zh": "開始七天訓練。",
+          "whyZh": "七天是借用期限，不是訓練長度。"
+        },
+        {
+          "id": "D",
+          "text": "A staff member explains safe operation.",
+          "zh": "館員說明安全操作。",
+          "whyZh": "首次會示範安全使用並簽借用表。"
+        }
+      ],
+      "answer": "D",
+      "explanationZh": "首次會示範安全使用並簽借用表。",
+      "evidence": "a staff member will demonstrate safe use",
+      "vocabulary": [
+        {
+          "term": "lending form",
+          "zh": "借用表",
+          "note": "首次借工具需要簽署的表格。"
+        }
+      ],
+      "revision": 1
+    }
+  ],
+  "oldFormalFrames": [
+    {
+      "src": "audio/formal-v2/narrator-02.mp3",
+      "start": 16.408,
+      "end": 31.384,
+      "duration": 14.976,
+      "kind": "audio",
+      "role": "direction",
+      "part": 4,
+      "groupId": "t03-g045",
+      "at": 1878.50069
+    },
+    {
+      "src": "audio/formal/test-03-cues-04.mp3",
+      "start": 22.75333,
+      "end": 26.1615,
+      "duration": 3.40817,
+      "kind": "audio",
+      "role": "cue",
+      "part": 4,
+      "groupId": "t03-g045",
+      "at": 1893.47669
+    },
+    {
+      "src": "audio/azure-v1/test-03-25.mp3",
+      "start": 0.5,
+      "end": 47.372,
+      "duration": 46.872,
+      "kind": "audio",
+      "role": "passage",
+      "part": 4,
+      "groupId": "t03-g045",
+      "at": 1896.88486,
+      "speakers": [
+        {
+          "speaker": "F1",
+          "locale": "en-NG",
+          "role": "female",
+          "modelVoice": "en-NG-EzinneNeural"
+        }
+      ]
+    },
+    {
+      "src": "audio/formal/test-03-cues-04.mp3",
+      "start": 26.4115,
+      "end": 30.40383,
+      "duration": 3.99233,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t03-g045",
+      "questionId": "t03-q071",
+      "at": 1943.75686
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 6.45437,
+      "part": 4,
+      "groupId": "t03-g045",
+      "questionId": "t03-q071",
+      "at": 1947.74919
+    },
+    {
+      "src": "audio/formal/test-03-cues-04.mp3",
+      "start": 30.65383,
+      "end": 33.62954,
+      "duration": 2.97571,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t03-g045",
+      "questionId": "t03-q072",
+      "at": 1954.20356
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 6.45437,
+      "part": 4,
+      "groupId": "t03-g045",
+      "questionId": "t03-q072",
+      "at": 1957.17927
+    },
+    {
+      "src": "audio/formal/test-03-cues-04.mp3",
+      "start": 33.87954,
+      "end": 37.23608,
+      "duration": 3.35654,
+      "kind": "audio",
+      "role": "question",
+      "part": 4,
+      "groupId": "t03-g045",
+      "questionId": "t03-q073",
+      "at": 1963.63364
+    },
+    {
+      "kind": "silence",
+      "role": "answer",
+      "duration": 6.45437,
+      "part": 4,
+      "groupId": "t03-g045",
+      "questionId": "t03-q073",
+      "at": 1966.99018
+    }
+  ],
+  "oldPlanEdition": "toeic-1",
+  "oldContentNotPromoted": true
+}

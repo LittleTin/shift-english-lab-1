@@ -1,0 +1,198 @@
+{
+  "testId": "test-02",
+  "status": "working-scope-verified-not-published",
+  "predecessorPackSha256": "8f8138fb89325335e7b394d672551c43587cfa9293bd3e294967ae1d02587e05",
+  "predecessorPlanSha256": "ee11ca47ec35811d0ec15c852da9452e48735a9c57a364c82c284f6f883d0bc0",
+  "oldMediaSha256": {
+    "audio/azure-v1/test-02-03.mp3": "4a4f444b97d3e77ff91a68c2299681d032d35500cae67f921e2d2dadf57c68e4",
+    "audio/formal-v2/narrator-01.mp3": "d50b0d7dc4ec02feff7e4fc5a16f2e23368c0e90f4515a3cc870cb9f2457fcac",
+    "audio/formal-v2/test-02-03.mp3": "2551d9a3425fbe342acecc65989ffe2432e4cc4037a9ceefdb66406672d8ad52",
+    "audio/formal/test-02-cues-01.mp3": "1012f7eed79b415bb685ed970bd96a615731a2ada8f9286d7a72a7dcb7f536f8"
+  },
+  "frameOperations": [
+    {
+      "index": 21,
+      "originalSha256": "fe852ec637dc8c78bf9cf7cbb0d7d761d1ea1ab18c14000c840e4eb45ec9a09c",
+      "replace": {
+        "src": "audio/formal-v2/narrator-01.mp3",
+        "start": 31.14,
+        "end": 45.684,
+        "duration": 14.544,
+        "kind": "audio",
+        "role": "direction",
+        "part": 2,
+        "groupId": "t02-g007-r2",
+        "at": 219.22208
+      }
+    },
+    {
+      "index": 22,
+      "originalSha256": "55c1572aa3178b9ac7553e0c776612528b0a1f728da45097e7273f54bac90bb8",
+      "replace": {
+        "src": "audio/formal/test-02-cues-01.mp3",
+        "start": 6.76867,
+        "end": 7.64404,
+        "duration": 0.87538,
+        "kind": "audio",
+        "role": "cue",
+        "part": 2,
+        "groupId": "t02-g007-r2",
+        "at": 233.76608
+      }
+    },
+    {
+      "index": 23,
+      "originalSha256": "ba783a715240f38004bcc9ee2fc24f20a52d2732d5ed5214f7c49c5102c043f9",
+      "replace": {
+        "src": "audio/formal-f0/test02-q007-formal-lexical-fallback-91d8a31bab40.wav",
+        "start": 0,
+        "end": 13.16,
+        "duration": 13.16,
+        "kind": "audio",
+        "role": "passage",
+        "part": 2,
+        "groupId": "t02-g007-r2",
+        "at": 234.64146,
+        "speakers": [
+          {
+            "speaker": "male",
+            "locale": "en-US",
+            "role": "male",
+            "modelVoice": "en-US-GuyNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-US",
+            "role": "female",
+            "modelVoice": "en-US-JennyNeural"
+          }
+        ]
+      }
+    },
+    {
+      "index": 24,
+      "originalSha256": "36206c5dafa3816e317fa44cfe7310a2de78f8bcd86306cb028d1282a1fe540b",
+      "replace": {
+        "kind": "silence",
+        "role": "answer",
+        "duration": 10.42905,
+        "part": 2,
+        "groupId": "t02-g007-r2",
+        "questionId": "t02-q007-r2",
+        "at": 247.80146
+      }
+    }
+  ],
+  "authorizedPlanSha256": "3c1272e77213758ccd0ba2ad5f9d320984cbe721f1474891a2968a756f9cbb01",
+  "units": [
+    {
+      "number": 7,
+      "oldQuestionSha256": "a55d0f2f55c082e3a53fe61c4f667e5c8a9ff95d89e69500273fe5cebdc2603c",
+      "oldGroupSha256": "6d641eaf5ac57694a315fc28a8eef2b1a65023cb747df0eeb7add896abb07a92",
+      "newQuestion": {
+        "id": "t02-q007-r2",
+        "testId": "test-02",
+        "number": 7,
+        "part": 2,
+        "groupId": "t02-g007-r2",
+        "topic": "manufacturing",
+        "difficulty": "intermediate",
+        "tags": [
+          "question-response"
+        ],
+        "prompt": "Listen and choose the best response.",
+        "promptZh": "聆聽問題或陳述，選出最合適的回應。",
+        "options": [
+          {
+            "id": "A",
+            "text": "On the second shelf.",
+            "zh": "在第二層架上。",
+            "whyZh": "這是位置，沒有回答何時校正。"
+          },
+          {
+            "id": "B",
+            "text": "The label says next Thursday.",
+            "zh": "標籤上寫的是下星期四。",
+            "whyZh": "When 問的是校正日期；應依照標籤上的日期，在下星期四校正。"
+          },
+          {
+            "id": "C",
+            "text": "The handle is blue.",
+            "zh": "握柄是藍色的。",
+            "whyZh": "顏色與校正日期無關。"
+          }
+        ],
+        "answer": "B",
+        "explanationZh": "When 問的是校正日期；應依照標籤上的日期，在下星期四校正。",
+        "evidence": "When should we calibrate the wrench used to tighten bolts?",
+        "vocabulary": [
+          {
+            "term": "calibrate",
+            "zh": "校正",
+            "note": "核對並視需要調整工具的準確度；此處是生產環境用的扳手。"
+          },
+          {
+            "term": "tighten bolts",
+            "zh": "鎖緊螺栓",
+            "note": "tighten 指轉緊固定件。"
+          }
+        ],
+        "revision": 2
+      },
+      "newGroup": {
+        "id": "t02-g007-r2",
+        "testId": "test-02",
+        "part": 2,
+        "title": "Calibration date",
+        "titleZh": "校正日期",
+        "topic": "manufacturing",
+        "passage": "When should we calibrate the wrench used to tighten bolts?\nA. On the second shelf.\nB. The label says next Thursday.\nC. The handle is blue.",
+        "passageZh": "用來鎖緊螺栓的扳手該在什麼時候校正？\nA. 在第二層架上。\nB. 標籤上寫的是下星期四。\nC. 握柄是藍色的。",
+        "audioScript": "When should we calibrate the wrench used to tighten bolts?\nA. On the second shelf.\nB. The label says next Thursday.\nC. The handle is blue.",
+        "turns": [
+          {
+            "voice": "male",
+            "text": "When should we calibrate the wrench used to tighten bolts?"
+          },
+          {
+            "voice": "female",
+            "text": "A. On the second shelf. B. The label says next Thursday. C. The handle is blue."
+          }
+        ],
+        "audioSpeakers": [
+          {
+            "speaker": "male",
+            "locale": "en-NG",
+            "role": "male",
+            "modelVoice": "en-NG-AbeoNeural"
+          },
+          {
+            "speaker": "female",
+            "locale": "en-NG",
+            "role": "female",
+            "modelVoice": "en-NG-EzinneNeural"
+          }
+        ],
+        "audio": "audio/practice-f0/test02-q007-practice-lexical-fallback-cc41a003a474.wav",
+        "audioStart": 0,
+        "audioEnd": 12.46,
+        "duration": 12.46
+      },
+      "audio": {
+        "formal": {
+          "path": "audio/formal-f0/test02-q007-formal-lexical-fallback-91d8a31bab40.wav",
+          "sha256": "91d8a31bab408f3921b356cfdeb19adcaa10b39190d1db6db115240b58f860ad",
+          "frames": 315840,
+          "sampleRate": 24000
+        },
+        "practice": {
+          "path": "audio/practice-f0/test02-q007-practice-lexical-fallback-cc41a003a474.wav",
+          "sha256": "cc41a003a474946a95fadae93a474f7e61bd4d127b94bbfab386a31b418b66de",
+          "frames": 299040,
+          "sampleRate": 24000
+        }
+      }
+    }
+  ],
+  "successorPlanSha256": "8060e57aab76504226d9a79b5228346f98dc5c0079818793ecf95a03bb234d95"
+}

@@ -1,0 +1,387 @@
+{
+  "status": "exact-item-verified-offline-not-published",
+  "testId": "test-03",
+  "checkedPredecessorSha256": "d23d1b56b120e2be78c2094b4e3fe6365e72a5a078075786cb85d04ed70b14eb",
+  "groups": {
+    "t03-g032": {
+      "oldGroupSha256": "567aa11209decf5c1db8c90397e8fe87b97c9135c210c7949b609eb244d3e0be",
+      "oldQuestionSha256": {
+        "t03-q032": "6ee29ad3bf9087867c8424a029de384a7eada48d86fa783faeed05e1af6853b9",
+        "t03-q033": "a12f165a94e69efc998d34737e0a2fe1112633fbcae3464b9ea856dc2c1ba04a",
+        "t03-q034": "ee90ebd43f140b83eb974dc6f7fb3340715bb8b8e97439e8b9b169e896497cb5"
+      },
+      "newGroup": {
+        "id": "t03-g032-r2",
+        "testId": "test-03",
+        "part": 3,
+        "title": "Checking the roof",
+        "titleZh": "檢查屋頂",
+        "topic": "business",
+        "passage": "F1: Thanks for coming. A stain appeared above our reception desk after last night's rain. We're opening another office next month, so a new roof would be hard to afford.\nM1: I'll check the roof first. Fallen leaves can stop rainwater from flowing off a roof that is otherwise fine.\nF1: The building manager saw a pile of wet leaves on the roof. Can you get upstairs while our clients arrive?\nM1: I'll use the stairs at the back, away from the lobby. If we clear the blockage, you may not need a new roof.\nF1: That's a relief. Please take photos of anything you find, so I can show the manager why the work was needed.",
+        "passageZh": "F1：謝謝你趕來。昨晚下雨後，我們接待桌上方出現了污漬。下個月還要開另一處辦公室，換新屋頂恐怕負擔不起。\nM1：我會先檢查屋頂。即使屋頂本身沒問題，落葉仍可能堵住雨水流出的路。\nF1：大樓管理員看到屋頂上有一堆濕落葉。客戶陸續抵達時，你可以上樓嗎？\nM1：我會走後面的樓梯，避開大廳。如果把堵塞清掉，你可能就不用換屋頂。\nF1：那我就放心了。你發現什麼都請拍照，我好向管理員說明為什麼有必要施工。",
+        "audioScript": "Thanks for coming. A stain appeared above our reception desk after last night's rain. We're opening another office next month, so a new roof would be hard to afford.\nI'll check the roof first. Fallen leaves can stop rainwater from flowing off a roof that is otherwise fine.\nThe building manager saw a pile of wet leaves on the roof. Can you get upstairs while our clients arrive?\nI'll use the stairs at the back, away from the lobby. If we clear the blockage, you may not need a new roof.\nThat's a relief. Please take photos of anything you find, so I can show the manager why the work was needed.",
+        "turns": [
+          {
+            "voice": "female",
+            "speaker": "F1",
+            "text": "Thanks for coming. A stain appeared above our reception desk after last night's rain. We're opening another office next month, so a new roof would be hard to afford."
+          },
+          {
+            "voice": "male",
+            "speaker": "M1",
+            "text": "I'll check the roof first. Fallen leaves can stop rainwater from flowing off a roof that is otherwise fine."
+          },
+          {
+            "voice": "female",
+            "speaker": "F1",
+            "text": "The building manager saw a pile of wet leaves on the roof. Can you get upstairs while our clients arrive?"
+          },
+          {
+            "voice": "male",
+            "speaker": "M1",
+            "text": "I'll use the stairs at the back, away from the lobby. If we clear the blockage, you may not need a new roof."
+          },
+          {
+            "voice": "female",
+            "speaker": "F1",
+            "text": "That's a relief. Please take photos of anything you find, so I can show the manager why the work was needed."
+          }
+        ],
+        "audioSpeakers": [
+          {
+            "speaker": "F1",
+            "locale": "en-ZA",
+            "role": "female",
+            "modelVoice": "en-ZA-LeahNeural"
+          },
+          {
+            "speaker": "M1",
+            "locale": "en-ZA",
+            "role": "male",
+            "modelVoice": "en-ZA-LukeNeural"
+          }
+        ]
+      },
+      "newQuestions": [
+        {
+          "id": "t03-q032",
+          "testId": "test-03",
+          "number": 32,
+          "part": 3,
+          "groupId": "t03-g032-r2",
+          "topic": "business",
+          "difficulty": "intermediate",
+          "tags": [
+            "business",
+            "detail"
+          ],
+          "prompt": "What problem is being discussed?",
+          "promptZh": "兩人在討論什麼問題？",
+          "options": [
+            {
+              "id": "A",
+              "text": "An office has insufficient space.",
+              "zh": "辦公室空間不足。",
+              "whyZh": "第二間辦公室只是預算背景，不是請人到場的原因。"
+            },
+            {
+              "id": "B",
+              "text": "Water may be entering a building.",
+              "zh": "建築物可能有水滲入。",
+              "whyZh": "昨晚下雨後，接待桌上方出現污漬；男子準備檢查屋頂以及落葉是否阻礙雨水流走。"
+            },
+            {
+              "id": "C",
+              "text": "A client cannot find the entrance.",
+              "zh": "客戶找不到入口。",
+              "whyZh": "客戶到來只影響工作人員走哪條路。"
+            },
+            {
+              "id": "D",
+              "text": "A desk was damaged during a move.",
+              "zh": "桌子搬運時受損。",
+              "whyZh": "污漬位於桌子上方，沒有提到搬家損壞。"
+            }
+          ],
+          "answer": "B",
+          "explanationZh": "昨晚下雨後，接待桌上方出現污漬；男子準備檢查屋頂以及落葉是否阻礙雨水流走。",
+          "evidence": "A stain appeared above our reception desk after last night's rain.",
+          "vocabulary": [
+            {
+              "term": "rainwater",
+              "zh": "雨水",
+              "note": "被落葉擋住時，雨水可能無法從屋頂流走。"
+            },
+            {
+              "term": "clear the blockage",
+              "zh": "清除堵塞",
+              "note": "表示排除阻塞而恢復排水；此處可能不用換屋頂。"
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "id": "t03-q033",
+          "testId": "test-03",
+          "number": 33,
+          "part": 3,
+          "groupId": "t03-g032-r2",
+          "topic": "business",
+          "difficulty": "advanced",
+          "tags": [
+            "business",
+            "intent"
+          ],
+          "prompt": "Why does the woman say, \"That's a relief\"?",
+          "promptZh": "女子為什麼說「那我就放心了」？",
+          "options": [
+            {
+              "id": "A",
+              "text": "The second office is ready to open.",
+              "zh": "第二間辦公室準備好開幕。",
+              "whyZh": "第二間辦公室下月才開，男子未確認其進度。"
+            },
+            {
+              "id": "B",
+              "text": "The clients have canceled their appointments.",
+              "zh": "客戶取消約定。",
+              "whyZh": "對話未取消客戶到訪。"
+            },
+            {
+              "id": "C",
+              "text": "A costly replacement might be unnecessary.",
+              "zh": "可能不必昂貴地更換屋頂。",
+              "whyZh": "男子說清除堵塞後可能就不必換新屋頂，正好解除她的預算顧慮。"
+            },
+            {
+              "id": "D",
+              "text": "The building manager has offered to pay.",
+              "zh": "大樓管理員願意付款。",
+              "whyZh": "管理員只提過落葉，沒有承諾付款。"
+            }
+          ],
+          "answer": "C",
+          "explanationZh": "男子說清除堵塞後可能就不必換新屋頂，正好解除她的預算顧慮。",
+          "evidence": "If we clear the blockage, you may not need a new roof.",
+          "vocabulary": [
+            {
+              "term": "rainwater",
+              "zh": "雨水",
+              "note": "被落葉擋住時，雨水可能無法從屋頂流走。"
+            },
+            {
+              "term": "clear the blockage",
+              "zh": "清除堵塞",
+              "note": "表示排除阻塞而恢復排水；此處可能不用換屋頂。"
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "id": "t03-q034",
+          "testId": "test-03",
+          "number": 34,
+          "part": 3,
+          "groupId": "t03-g032-r2",
+          "topic": "business",
+          "difficulty": "intermediate",
+          "tags": [
+            "business",
+            "detail"
+          ],
+          "prompt": "What does the woman ask the man to do?",
+          "promptZh": "女子請男子做什麼？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Take pictures of the problem.",
+              "zh": "拍下問題的照片。",
+              "whyZh": "她請男子拍照，以便向管理員說明為什麼有必要施工。"
+            },
+            {
+              "id": "B",
+              "text": "Move the reception desk.",
+              "zh": "移動接待桌。",
+              "whyZh": "未要求搬桌子。"
+            },
+            {
+              "id": "C",
+              "text": "Use the main lobby.",
+              "zh": "使用主要大廳。",
+              "whyZh": "男子反而會走後面的樓梯，避開大廳。"
+            },
+            {
+              "id": "D",
+              "text": "Prepare the new office.",
+              "zh": "準備新辦公室。",
+              "whyZh": "他來檢查現址屋頂，不是布置新辦公室。"
+            }
+          ],
+          "answer": "A",
+          "explanationZh": "她請男子拍照，以便向管理員說明為什麼有必要施工。",
+          "evidence": "Please take photos of anything you find, so I can show the manager why the work was needed.",
+          "vocabulary": [
+            {
+              "term": "rainwater",
+              "zh": "雨水",
+              "note": "被落葉擋住時，雨水可能無法從屋頂流走。"
+            },
+            {
+              "term": "clear the blockage",
+              "zh": "清除堵塞",
+              "note": "表示排除阻塞而恢復排水；此處可能不用換屋頂。"
+            }
+          ],
+          "revision": 1
+        }
+      ],
+      "oldFrameSha256": [
+        "706a3ff340dc655a740789fc7a6df2b763063a899d94e22a188b0a3dc79fbac6",
+        "db55baace51fff036ad562cdcc9befa9c23d5b0798abd70cd64c6c3ff37d6112",
+        "6a7f782856b6bd4570b2bd976a19bf9910a3421afcd17fe703cff279771ba40c",
+        "7e568807d3c1b155c8728fdba7039272eee937cbe51d52cf2f0e53a1f2a7f949",
+        "aa8d17c03a82c1a5944442210430ec37075f0bef2a0a14814b4e0ee534caa498",
+        "fb7489a7dc3b578589e00c16f7977a66254316c8dbf49f4747c95100c7d6b9b1",
+        "7d4fe49b4d911250ee86888fbaa30f3f3531f272a44c60c15fa3e5f8a2fb9889",
+        "90291483843a1d960c4c65162d5aeaebc95d7877e8973c2cd28e0e792e9ef95f",
+        "87fbfb859d081c605aabaf60acb840f29529aa64633d990539f7c379ffaa50bd"
+      ],
+      "roleRanges": [
+        {
+          "src": "audio/formal-v2/narrator-02.mp3",
+          "start": 0.5,
+          "end": 15.908,
+          "duration": 15.408,
+          "kind": "audio",
+          "role": "direction",
+          "part": 3,
+          "groupId": "t03-g032",
+          "at": 774.45801
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 38.89229,
+          "end": 42.78983,
+          "duration": 3.89754,
+          "kind": "audio",
+          "role": "cue",
+          "part": 3,
+          "groupId": "t03-g032",
+          "at": 789.86601
+        },
+        {
+          "src": "audio/azure-v1/test-03-12.mp3",
+          "start": 0.5,
+          "end": 47.54,
+          "duration": 47.04,
+          "kind": "audio",
+          "role": "passage",
+          "part": 3,
+          "groupId": "t03-g032",
+          "at": 793.76355,
+          "speakers": [
+            {
+              "speaker": "F1",
+              "locale": "en-ZA",
+              "role": "female",
+              "modelVoice": "en-ZA-LeahNeural"
+            },
+            {
+              "speaker": "M1",
+              "locale": "en-ZA",
+              "role": "male",
+              "modelVoice": "en-ZA-LukeNeural"
+            }
+          ]
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 43.03983,
+          "end": 45.96162,
+          "duration": 2.92179,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g032",
+          "questionId": "t03-q032",
+          "at": 840.80355
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 46.21162,
+          "end": 49.41887,
+          "duration": 3.20725,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g032",
+          "questionId": "t03-q033",
+          "at": 850.278
+        },
+        {
+          "src": "audio/formal/test-03-cues-01.mp3",
+          "start": 49.66887,
+          "end": 52.78704,
+          "duration": 3.11817,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g032",
+          "questionId": "t03-q034",
+          "at": 860.03791
+        }
+      ],
+      "oldSources": {
+        "audio/formal/test-03-cues-01.mp3": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+        "audio/azure-v1/test-03-12.mp3": "75ebb83dacc7b205c938d9c89ce7fe15821c996c9356467c102f33e8231d2daf"
+      },
+      "imageSha256": null,
+      "newShared": {
+        "name": "test03-g032-roof-leaves-shared",
+        "path": "audio/exams/test-03/groups/t03-g032-r2/passage.wav",
+        "turns": [
+          {
+            "voice": "en-ZA-LeahNeural",
+            "locale": "en-ZA",
+            "text": "Thanks for coming. A stain appeared above our reception desk after last night's rain. We're opening another office next month, so a new roof would be hard to afford.",
+            "afterMs": 150
+          },
+          {
+            "voice": "en-ZA-LukeNeural",
+            "locale": "en-ZA",
+            "text": "I'll check the roof first. Fallen leaves can stop rainwater from flowing off a roof that is otherwise fine.",
+            "afterMs": 150
+          },
+          {
+            "voice": "en-ZA-LeahNeural",
+            "locale": "en-ZA",
+            "text": "The building manager saw a pile of wet leaves on the roof. Can you get upstairs while our clients arrive?",
+            "afterMs": 150
+          },
+          {
+            "voice": "en-ZA-LukeNeural",
+            "locale": "en-ZA",
+            "text": "I'll use the stairs at the back, away from the lobby. If we clear the blockage, you may not need a new roof.",
+            "afterMs": 150
+          },
+          {
+            "voice": "en-ZA-LeahNeural",
+            "locale": "en-ZA",
+            "text": "That's a relief. Please take photos of anything you find, so I can show the manager why the work was needed."
+          }
+        ],
+        "audioIdentity": "PENDING: exact authorized WAV receipt ＋ dual unprompted QA",
+        "oldSpeechSeconds": 47.04,
+        "words": 112,
+        "chars": 593
+      }
+    }
+  },
+  "historyKeys": [
+    "legacyQuestions",
+    "previousListeningPlan",
+    "alternateListeningPlans"
+  ],
+  "gate": "Prior authorized compact render stays held: dual ASR resolves answer anchors but produces unstable roof gutter and service stairs. New text is a conditional lexical rescue, not approval.",
+  "approvedSuccessorPlanSha256": "6a611754940a163545932c4930aba219346b63619c8f7d46e81a0ec81222e01f"
+}

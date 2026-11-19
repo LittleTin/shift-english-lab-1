@@ -1,0 +1,386 @@
+{
+  "status": "exact-item-verified-offline-not-published",
+  "testId": "test-03",
+  "checkedPredecessorSha256": "2ad08128068807199c1adb605fef125b45aa6235aee121c2ad16527834b5a60b",
+  "groups": {
+    "t03-g040": {
+      "oldGroupSha256": "81f2fb38fea1a9524d958867b1e0b87daa506bdaeb5beb9fc75e509618d2f17a",
+      "oldQuestionSha256": {
+        "t03-q056": "00b481abd7ecb0920cf51353f4d0d7b65ee677e272b23809bb039799a6856262",
+        "t03-q057": "5728dca799b4583d88225db847fb1137ac5eee0fc2b488254dc6374bee812355",
+        "t03-q058": "7d57586385f0d6b9433b88f4f5c47a07c9b5fabba77557a21781b6b36ad7aa67"
+      },
+      "newGroup": {
+        "id": "t03-g040-r2",
+        "testId": "test-03",
+        "part": 3,
+        "title": "Booking a workshop room",
+        "titleZh": "預訂工作坊教室",
+        "topic": "business",
+        "passage": "M1: We need a room for a drawing workshop. There will be twenty-four people, so we need tables. Theater seating will not work.\nF1: Here are the room listings. The middle column shows how many people fit with tables.\nM1: We can spend up to two hundred dollars. A larger room would cost too much.\nF1: Then I recommend the room for thirty people. A projector comes with every room.\nM1: Please book it for Monday. We need to get in half an hour early to set out drawing supplies.\nF1: Of course. I'll put eight thirty as your arrival time on the confirmation.",
+        "passageZh": "M1：我們需要一間辦繪圖工作坊的教室。會有二十四人，所以需要桌子。劇院式座位不適合。\nF1：這是各間教室的出租資訊。中間欄顯示擺放桌子時可容納的人數。\nM1：我們最多可以花兩百美元。更大的教室會太貴。\nF1：那我推薦可容納三十人的那間教室。每間都附投影機。\nM1：請預訂星期一。我們需要提早半小時入場，擺放繪圖用品。\nF1：沒問題，我會在確認函上註明你們八點半抵達。",
+        "audioScript": "We need a room for a drawing workshop. There will be twenty-four people, so we need tables. Theater seating will not work.\nHere are the room listings. The middle column shows how many people fit with tables.\nWe can spend up to two hundred dollars. A larger room would cost too much.\nThen I recommend the room for thirty people. A projector comes with every room.\nPlease book it for Monday. We need to get in half an hour early to set out drawing supplies.\nOf course. I'll put eight thirty as your arrival time on the confirmation.",
+        "turns": [
+          {
+            "voice": "male",
+            "speaker": "M1",
+            "text": "We need a room for a drawing workshop. There will be twenty-four people, so we need tables. Theater seating will not work."
+          },
+          {
+            "voice": "female",
+            "speaker": "F1",
+            "text": "Here are the room listings. The middle column shows how many people fit with tables."
+          },
+          {
+            "voice": "male",
+            "speaker": "M1",
+            "text": "We can spend up to two hundred dollars. A larger room would cost too much."
+          },
+          {
+            "voice": "female",
+            "speaker": "F1",
+            "text": "Then I recommend the room for thirty people. A projector comes with every room."
+          },
+          {
+            "voice": "male",
+            "speaker": "M1",
+            "text": "Please book it for Monday. We need to get in half an hour early to set out drawing supplies."
+          },
+          {
+            "voice": "female",
+            "speaker": "F1",
+            "text": "Of course. I'll put eight thirty as your arrival time on the confirmation."
+          }
+        ],
+        "graphicText": "ROOM HIRE — DAILY RATES\nRoom | Classroom capacity | Price\nCedar | 18 | $120\nMaple | 30 | $180\nOak | 45 | $240\nPine | 60 | $300",
+        "image": "assets/graphics/t03-g040.svg",
+        "imageAlt": "ROOM HIRE — DAILY RATES\nRoom | Classroom capacity | Price\nCedar | 18 | $120\nMaple | 30 | $180\nOak | 45 | $240\nPine | 60 | $300",
+        "audioSpeakers": [
+          {
+            "speaker": "M1",
+            "locale": "en-SG",
+            "role": "male",
+            "modelVoice": "en-SG-WayneNeural"
+          },
+          {
+            "speaker": "F1",
+            "locale": "en-SG",
+            "role": "female",
+            "modelVoice": "en-SG-LunaNeural"
+          }
+        ]
+      },
+      "newQuestions": [
+        {
+          "id": "t03-q056",
+          "testId": "test-03",
+          "number": 56,
+          "part": 3,
+          "groupId": "t03-g040-r2",
+          "topic": "business",
+          "difficulty": "intermediate",
+          "tags": [
+            "business",
+            "detail"
+          ],
+          "prompt": "What type of seating do the participants need?",
+          "promptZh": "參與者需要哪種座位？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Seating with tables",
+              "zh": "附桌子的座位",
+              "whyZh": "工作坊要畫圖，因此需要桌子，劇院式座位不適合。"
+            },
+            {
+              "id": "B",
+              "text": "Seats arranged like a theater",
+              "zh": "劇院式座位",
+              "whyZh": "男子明說劇院式不適用。"
+            },
+            {
+              "id": "C",
+              "text": "Individual soundproof booths",
+              "zh": "獨立隔音間",
+              "whyZh": "沒有錄音或隔音需求。"
+            },
+            {
+              "id": "D",
+              "text": "Outdoor benches",
+              "zh": "戶外長椅",
+              "whyZh": "對話是在選室內教室。"
+            }
+          ],
+          "answer": "A",
+          "explanationZh": "工作坊要畫圖，因此需要桌子，劇院式座位不適合。",
+          "evidence": "There will be twenty-four people, so we need tables. Theater seating will not work.",
+          "vocabulary": [
+            {
+              "term": "theater seating",
+              "zh": "劇院式座位排列",
+              "note": "座椅朝前排列；與此處需要附桌子的教室式座位不同。"
+            },
+            {
+              "term": "set out",
+              "zh": "擺放、備好",
+              "note": "把物品放好供使用；例：set out drawing supplies（備好繪圖用品）。"
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "id": "t03-q057",
+          "testId": "test-03",
+          "number": 57,
+          "part": 3,
+          "groupId": "t03-g040-r2",
+          "topic": "business",
+          "difficulty": "advanced",
+          "tags": [
+            "business",
+            "graphic"
+          ],
+          "prompt": "Look at the graphic. Which room will the man reserve?",
+          "promptZh": "請看圖表。男子會預訂哪間教室？",
+          "options": [
+            {
+              "id": "A",
+              "text": "Cedar",
+              "zh": "Cedar教室",
+              "whyZh": "只能坐 18 人，容納不了 24 人。"
+            },
+            {
+              "id": "B",
+              "text": "Maple",
+              "zh": "Maple教室",
+              "whyZh": "圖表中 Maple 教室可容納 30 人，費用 180 美元，是唯一能坐下 24 人且不超過 200 美元預算的教室。"
+            },
+            {
+              "id": "C",
+              "text": "Oak",
+              "zh": "Oak教室",
+              "whyZh": "雖夠大，但 240 美元超過預算。"
+            },
+            {
+              "id": "D",
+              "text": "Pine",
+              "zh": "Pine教室",
+              "whyZh": "300 美元超過預算，而且不是可容納 30 人的教室。"
+            }
+          ],
+          "answer": "B",
+          "explanationZh": "圖表中 Maple 教室可容納 30 人，費用 180 美元，是唯一能坐下 24 人且不超過 200 美元預算的教室。",
+          "evidence": "The middle column shows how many people fit with tables. | We can spend up to two hundred dollars. | Then I recommend the room for thirty people.",
+          "vocabulary": [
+            {
+              "term": "theater seating",
+              "zh": "劇院式座位排列",
+              "note": "座椅朝前排列；與此處需要附桌子的教室式座位不同。"
+            },
+            {
+              "term": "set out",
+              "zh": "擺放、備好",
+              "note": "把物品放好供使用；例：set out drawing supplies（備好繪圖用品）。"
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "id": "t03-q058",
+          "testId": "test-03",
+          "number": 58,
+          "part": 3,
+          "groupId": "t03-g040-r2",
+          "topic": "business",
+          "difficulty": "intermediate",
+          "tags": [
+            "business",
+            "detail"
+          ],
+          "prompt": "Why does the man request early access?",
+          "promptZh": "男子為什麼要求提早入場？",
+          "options": [
+            {
+              "id": "A",
+              "text": "To inspect the building's safety features",
+              "zh": "檢查建築安全設施",
+              "whyZh": "沒有安全檢查安排。"
+            },
+            {
+              "id": "B",
+              "text": "To interview the instructor",
+              "zh": "面談講師",
+              "whyZh": "沒有講師面試。"
+            },
+            {
+              "id": "C",
+              "text": "To repair the projector",
+              "zh": "修理投影機",
+              "whyZh": "投影機包含在租費內，未故障。"
+            },
+            {
+              "id": "D",
+              "text": "To arrange workshop materials",
+              "zh": "布置工作坊材料",
+              "whyZh": "男子需要提早半小時進場擺放繪圖用品。"
+            }
+          ],
+          "answer": "D",
+          "explanationZh": "男子需要提早半小時進場擺放繪圖用品。",
+          "evidence": "We need to get in half an hour early to set out drawing supplies.",
+          "vocabulary": [
+            {
+              "term": "theater seating",
+              "zh": "劇院式座位排列",
+              "note": "座椅朝前排列；與此處需要附桌子的教室式座位不同。"
+            },
+            {
+              "term": "set out",
+              "zh": "擺放、備好",
+              "note": "把物品放好供使用；例：set out drawing supplies（備好繪圖用品）。"
+            }
+          ],
+          "revision": 1
+        }
+      ],
+      "oldFrameSha256": [
+        "dbc1c3322a565246d73013587462ce6bb46ace9210194ff8a2e00bf997e16895",
+        "55fe6901f48f7c5bafae891a52172827697dc394275d1243ca9fd765d950e9db",
+        "7ca33e1df3f9c134f73fd464582223a32e02f0ebb1319072e2b6f6c0f17b2161",
+        "7a7ff6a81cbc75f3388d2a6a99c973e80107c1fd79a5adbb8889d26a9c641d49",
+        "a6b684830813a34406095582dab5d5a719483500d1cc395d2411cf3cf4907884",
+        "ed3e8f6873732c2339639cfc8a067487376abd8e532f2112f2518d84bdaac934",
+        "e05c69a1b9dd0bcde58bea9aa7048a21f5cca7681403a442196ca1624f34c004",
+        "10596dfb4de2280eb22bce42722cf08f2c98857f97eb49139bb639125a442368"
+      ],
+      "roleRanges": [
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 14.82883,
+          "end": 18.733,
+          "duration": 3.90417,
+          "kind": "audio",
+          "role": "cue",
+          "part": 3,
+          "groupId": "t03-g040",
+          "at": 1451.35506
+        },
+        {
+          "src": "audio/azure-v1/test-03-20.mp3",
+          "start": 0.5,
+          "end": 53.156,
+          "duration": 52.656,
+          "kind": "audio",
+          "role": "passage",
+          "part": 3,
+          "groupId": "t03-g040",
+          "at": 1455.25923,
+          "speakers": [
+            {
+              "speaker": "M1",
+              "locale": "en-SG",
+              "role": "male",
+              "modelVoice": "en-SG-WayneNeural"
+            },
+            {
+              "speaker": "F1",
+              "locale": "en-SG",
+              "role": "female",
+              "modelVoice": "en-SG-LunaNeural"
+            }
+          ]
+        },
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 18.983,
+          "end": 22.721,
+          "duration": 3.738,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g040",
+          "questionId": "t03-q056",
+          "at": 1507.91523
+        },
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 22.971,
+          "end": 27.06321,
+          "duration": 4.09221,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g040",
+          "questionId": "t03-q057",
+          "at": 1518.20589
+        },
+        {
+          "src": "audio/formal/test-03-cues-03.mp3",
+          "start": 27.31321,
+          "end": 30.67283,
+          "duration": 3.35962,
+          "kind": "audio",
+          "role": "question",
+          "part": 3,
+          "groupId": "t03-g040",
+          "questionId": "t03-q058",
+          "at": 1532.12708
+        }
+      ],
+      "oldSources": {
+        "audio/formal/test-03-cues-03.mp3": "cb55c1d3ed563f9e894d7f953440e40eb230ebb03ac85980a8d5c62c9e92888a",
+        "audio/azure-v1/test-03-20.mp3": "87ab6cfed3277949cccd5a01c450e794082ce7bcffbd1d81ce270a53dd24e099"
+      },
+      "imageSha256": "09a1e939aa3fb23aee0f724746f16dd503a77cdb0180ce5d86815a90fa82199f",
+      "newShared": {
+        "name": "test03-g040-compact-shared",
+        "path": "audio/exams/test-03/groups/t03-g040-r2/passage.wav",
+        "turns": [
+          {
+            "voice": "en-SG-WayneNeural",
+            "locale": "en-SG",
+            "text": "We need a room for a drawing workshop. There will be twenty-four people, so we need tables. Theater seating will not work.",
+            "afterMs": 150
+          },
+          {
+            "voice": "en-SG-LunaNeural",
+            "locale": "en-SG",
+            "text": "Here are the room listings. The middle column shows how many people fit with tables.",
+            "afterMs": 150
+          },
+          {
+            "voice": "en-SG-WayneNeural",
+            "locale": "en-SG",
+            "text": "We can spend up to two hundred dollars. A larger room would cost too much.",
+            "afterMs": 150
+          },
+          {
+            "voice": "en-SG-LunaNeural",
+            "locale": "en-SG",
+            "text": "Then I recommend the room for thirty people. A projector comes with every room.",
+            "afterMs": 150
+          },
+          {
+            "voice": "en-SG-WayneNeural",
+            "locale": "en-SG",
+            "text": "Please book it for Monday. We need to get in half an hour early to set out drawing supplies.",
+            "afterMs": 150
+          },
+          {
+            "voice": "en-SG-LunaNeural",
+            "locale": "en-SG",
+            "text": "Of course. I'll put eight thirty as your arrival time on the confirmation."
+          }
+        ],
+        "audioIdentity": "PENDING: exact authorized WAV receipt ＋ dual unprompted QA",
+        "oldSpeechSeconds": 52.656
+      }
+    }
+  },
+  "historyKeys": [
+    "legacyQuestions",
+    "previousListeningPlan",
+    "alternateListeningPlans"
+  ],
+  "approvedSuccessorPlanSha256": "d553385e5e8ae58545685e31198cc0cb6405dc1ea07c3cbca16ce3f3a89a882b"
+}

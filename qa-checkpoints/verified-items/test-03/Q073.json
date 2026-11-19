@@ -1,0 +1,198 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": {
+    "content": "Independent blind editorial A/C/B advanced. EN plus Traditional Chinese aligned. Exact Q073 strongest and independent due/do phonetics, no alternate due time. Combines damage restriction, Sunday desk closure, reporting before the due time and next desk opening, requiring both actions rather than just one.",
+    "audio": "Exact courtyard SHA and authorized speech corroborated by unprompted Whisper small and independent Vosk Lgraph: loans without records, exact model/noon, scan/wait confirmation, quick exit joke, desk reopens Monday, damaged cable excluded from courtyard, online before due plus hand in at desk to avoid fees. Minor check/checked and damage/damaged weak forms do not change any action. Retained separately checked numbered stem above. Prior failed return-box/locker passage is excluded.",
+    "retainedIntro": "Original cue independently exact at 22.75333–26.16150, unchanged bank SHA and range.",
+    "association": "Both modes use same exact shared new WAV; exact 2700s and 100 response windows; no time stretch; Q087 chart SHA, stem/source and 9.82898s pause unchanged; all Q095+ frames unchanged. No browser, human or publication gates represented.",
+    "offlineSpeechEvidenceSha256": {
+      "shift-azure-qa-1112:evidence.md": "4df8560ac7cf96378934fc154ba21b4c3ebbf858f436cc2812d30969292adaa8",
+      "shift-azure-qa-1112:hashes.txt": "6edfd9e8956737f7b811ad074e0bb27e47600c22c768e08f9eb432f404a83f44",
+      "shift-azure-qa-1112:test03-g045-courtyard-shared.wav.txt": "0270e45c5944d6b62e48f8b772cbcf2485ccf5729edf631c1b7ec836a39814d2",
+      "shift-azure-qa-1112:vosk-test03-g045-courtyard-shared.txt": "6dbd38bb857785f99df564b7b17e984a0f5d4dd0206b495a8814cf59367ea1d2",
+      "shift-azure-qa-1105:evidence.md": "19a08706e2b40cb9be8b5b8c9143dbf1c75af3c85f2a015cf8a78112211e0058",
+      "shift-azure-qa-1105:test03-q071-return-box-stem.wav.txt": "a25bf255c2013e0894e09ba2a703b5ddb42f0ac282bb8314d09e91859ef5fdc4",
+      "shift-azure-qa-1105:vosk-result.json": "bcffdc1cee8a78544b5d2483c90e9ceb7df3ac3a583d0985f92c787f6a8bb1a8",
+      "shift-azure-qa-g045-1053:evidence.md": "c9ae873fa26d251c279815a680776c07b86c4f2019a40e57376109e77b6b0dc9",
+      "shift-azure-qa-g045-1053:test03-q072-formal-stem.wav.txt": "24c9bbc5aaaddab02bd58716a069c68a8735db7e2c47d7bfb14db3e397b774c1",
+      "shift-azure-qa-g045-1053:test03-q073-formal-stem.wav.txt": "4577d222962e837350106a5111e0820a4aec3c57e115dda3c0064cf62e4d288a",
+      "shift-azure-qa-g045-1053:vosk-lgraph.log": "4d14c5ea53ba365b997bd689b16a2b036930f867a5f146f7bc3f36142d372d91"
+    }
+  },
+  "activeQuestion": {
+    "id": "t03-q073-r2",
+    "testId": "test-03",
+    "number": 73,
+    "part": 4,
+    "groupId": "t03-g045-r2",
+    "topic": "daily",
+    "difficulty": "advanced",
+    "tags": [
+      "daily",
+      "listening-comprehension",
+      "talk"
+    ],
+    "prompt": "A tool with a damaged cable is due Sunday at five p.m. What avoids a late fee?",
+    "promptZh": "一件電線受損的工具星期日下午五點到期。怎麼做才不會被收逾期費？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Submit an online damage report before five and return the tool in the courtyard on Sunday.",
+        "zh": "五點前上網提交損壞通報，星期日在中庭歸還工具。",
+        "whyZh": "通報時間符合，但電線受損的工具不能在中庭歸還。"
+      },
+      {
+        "id": "B",
+        "text": "Submit an online damage report before five and hand the tool to a staff member at the desk on Monday.",
+        "zh": "五點前上網提交損壞通報，星期一把工具親手交給服務台人員。",
+        "whyZh": "五點前上網通報。電線受損不能在中庭歸還，服務台又到星期一才重新開放，所以重新開放時親手交還就符合免收逾期費的條件。"
+      },
+      {
+        "id": "C",
+        "text": "Hand it to the desk on Monday and submit the damage report at the same time.",
+        "zh": "星期一把工具交給服務台，同時提交損壞通報。",
+        "whyZh": "歸還方式正確，但星期一才通報已晚於星期日下午五點，不符合免收逾期費的要件。"
+      },
+      {
+        "id": "D",
+        "text": "Tell someone at the courtyard on Sunday, then leave the tool by the closed desk that afternoon.",
+        "zh": "星期日在中庭口頭告知他人，當天下午把工具留在關閉的服務台旁。",
+        "whyZh": "在中庭口頭告知不能取代上網通報，把工具留在服務台旁也不是服務台重新開放時親手交還。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "五點前上網通報。電線受損不能在中庭歸還，服務台又到星期一才重新開放，所以重新開放時親手交還就符合免收逾期費的條件。",
+    "evidence": "Sunday: courtyard open, desk closed until Monday. | Damaged cable? Don't return it in the courtyard. | Report damage online before it's due. | Hand it in when the desk reopens. Do both to avoid late fees.",
+    "vocabulary": [
+      {
+        "term": "report damage",
+        "zh": "通報損壞",
+        "note": "此處是上網通報，不能以口頭通知替代。"
+      },
+      {
+        "term": "late fee",
+        "zh": "逾期費",
+        "note": "逾期費有條件免除，不等於可任意延後歸還。"
+      }
+    ],
+    "revision": 2
+  },
+  "originalQuestion": {
+    "id": "t03-q073",
+    "testId": "test-03",
+    "number": 73,
+    "part": 4,
+    "groupId": "t03-g045",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "detail"
+    ],
+    "prompt": "What happens on a borrower's first visit?",
+    "promptZh": "借用人第一次來會做什麼？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The borrower must purchase a tool.",
+        "zh": "借用人必須買工具。",
+        "whyZh": "這是借用服務，無購買要求。"
+      },
+      {
+        "id": "B",
+        "text": "The borrower receives a permanent locker.",
+        "zh": "獲得永久置物櫃。",
+        "whyZh": "工具不經自助櫃領取。"
+      },
+      {
+        "id": "C",
+        "text": "A seven-day training course begins.",
+        "zh": "開始七天訓練。",
+        "whyZh": "七天是借用期限，不是訓練長度。"
+      },
+      {
+        "id": "D",
+        "text": "A staff member explains safe operation.",
+        "zh": "館員說明安全操作。",
+        "whyZh": "首次會示範安全使用並簽借用表。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "首次會示範安全使用並簽借用表。",
+    "evidence": "a staff member will demonstrate safe use",
+    "vocabulary": [
+      {
+        "term": "lending form",
+        "zh": "借用表",
+        "note": "首次借工具需要簽署的表格。"
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g045-r2",
+    "testId": "test-03",
+    "part": 4,
+    "title": "Keeping track of the tool library",
+    "titleZh": "借還工具也要有紀錄",
+    "topic": "daily",
+    "passage": "F1: Old loans had no records. Desk staff check tools and log loans. The workshop leader demonstrates power tools at noon. Skip only for exact models you've used; ignore case labels.\n\nFor courtyard returns, scan your card and wait for confirmation. A quick exit is fine. A disappearing act isn't.\n\nSunday: courtyard open, desk closed until Monday. Damaged cable? Don't return it in the courtyard. Report damage online before it's due. Hand it in when the desk reopens. Do both to avoid late fees.",
+    "passageZh": "以前借工具時，我們沒有留下紀錄。現在服務台人員會檢查工具並登記借用。工作坊負責人中午會示範電動工具。只有用過同一型號，才能省略示範；別看工具盒上的標籤判斷。\n\n在中庭歸還工具時，請掃卡並等候確認。快點離開沒關係，可別上演憑空消失。\n\n星期日中庭開放，服務台星期一才重新開放。電線受損嗎？別在中庭歸還。工具到期前請上網通報損壞，等服務台重新開放時親手交還。兩項都做到，才不會被收取逾期費。",
+    "audioScript": "Old loans had no records. Desk staff check tools and log loans. The workshop leader demonstrates power tools at noon. Skip only for exact models you've used; ignore case labels.\n\nFor courtyard returns, scan your card and wait for confirmation. A quick exit is fine. A disappearing act isn't.\n\nSunday: courtyard open, desk closed until Monday. Damaged cable? Don't return it in the courtyard. Report damage online before it's due. Hand it in when the desk reopens. Do both to avoid late fees.",
+    "turns": [
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "Old loans had no records. Desk staff check tools and log loans. The workshop leader demonstrates power tools at noon. Skip only for exact models you've used; ignore case labels.\n\nFor courtyard returns, scan your card and wait for confirmation. A quick exit is fine. A disappearing act isn't.\n\nSunday: courtyard open, desk closed until Monday. Damaged cable? Don't return it in the courtyard. Report damage online before it's due. Hand it in when the desk reopens. Do both to avoid late fees."
+      }
+    ],
+    "audio": "audio/exams/test-03/groups/t03-g045-r2/passage.wav",
+    "duration": 41.1125,
+    "audioStart": 0,
+    "audioEnd": 41.1125,
+    "audioSpeakers": [
+      {
+        "speaker": "F1",
+        "locale": "en-NG",
+        "role": "female",
+        "modelVoice": "en-NG-EzinneNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "mode": "cue",
+      "path": "audio/formal/test-03-cues-04.mp3",
+      "start": 22.75333,
+      "end": 26.1615,
+      "assetSha256": "f5db73b2aab14a49b3a6ba3408fbf600098cfa5626160ea7dd95a13b9bf6404b",
+      "speech": "Questions 71 through 73. Listen to the talk."
+    },
+    {
+      "mode": "passage",
+      "path": "audio/exams/test-03/groups/t03-g045-r2/passage.wav",
+      "start": 0,
+      "end": 41.1125,
+      "assetSha256": "b95aed42eeb844f9a53a3622cd2278f727a809f58cfc2b8b4aa2054676826290",
+      "speech": "Old loans had no records. Desk staff check tools and log loans. The workshop leader demonstrates power tools at noon. Skip only for exact models you've used; ignore case labels.\n\nFor courtyard returns, scan your card and wait for confirmation. A quick exit is fine. A disappearing act isn't.\n\nSunday: courtyard open, desk closed until Monday. Damaged cable? Don't return it in the courtyard. Report damage online before it's due. Hand it in when the desk reopens. Do both to avoid late fees."
+    },
+    {
+      "mode": "question",
+      "path": "audio/exams/test-03/questions/Q073/formal-stem-r2.wav",
+      "start": 0,
+      "end": 8.5,
+      "assetSha256": "492f3f80e566e7aabb645038005b8eddc3ed54d24d362e6e9c4eac221391dc7c",
+      "speech": "Number 73. A tool with a damaged cable is due Sunday at five p.m. What avoids a late fee?"
+    },
+    {
+      "mode": "practice",
+      "path": "audio/exams/test-03/groups/t03-g045-r2/passage.wav",
+      "start": 0,
+      "end": 41.1125,
+      "assetSha256": "b95aed42eeb844f9a53a3622cd2278f727a809f58cfc2b8b4aa2054676826290",
+      "speech": "Old loans had no records. Desk staff check tools and log loans. The workshop leader demonstrates power tools at noon. Skip only for exact models you've used; ignore case labels.\n\nFor courtyard returns, scan your card and wait for confirmation. A quick exit is fine. A disappearing act isn't.\n\nSunday: courtyard open, desk closed until Monday. Damaged cable? Don't return it in the courtyard. Report damage online before it's due. Hand it in when the desk reopens. Do both to avoid late fees."
+    }
+  ],
+  "imageSha256": null
+}

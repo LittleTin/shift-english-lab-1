@@ -1,0 +1,810 @@
+{
+  "status": "offline-speech-verified-structural-ready-not-published",
+  "inputPackSha256": "02c1bd5ffc3f9f6cd9466037a0ef06c08e76bfd19e019d414920de0055bcf5c7",
+  "oldListeningPlanSha256": "d553385e5e8ae58545685e31198cc0cb6405dc1ea07c3cbca16ce3f3a89a882b",
+  "newListeningPlanSha256": "d23d1b56b120e2be78c2094b4e3fe6365e72a5a078075786cb85d04ed70b14eb",
+  "oldGroupId": "t03-g045",
+  "oldGroupSha256": "503bda56dc6aedad27bafa0b911afbfbb191198fcf2886e8a20ffae536195645",
+  "oldQuestionSha256": {
+    "71": "06dd0e7b85716a687ba6ef9e47207422e9ea54d9cb02d498f394cc7a72495483",
+    "72": "1b7b9243d39ebf70a76252f62ddc6587d931f3f8a589db20ad5e1b67f777294f",
+    "73": "d3f5241ea414a3718c79200f2c0e9f306411f2f87287689fc627f29321546158"
+  },
+  "newGroup": {
+    "id": "t03-g045-r2",
+    "testId": "test-03",
+    "part": 4,
+    "title": "Keeping track of the tool library",
+    "titleZh": "借還工具也要有紀錄",
+    "topic": "daily",
+    "passage": "F1: Old loans had no records. Desk staff check tools and log loans. The workshop leader demonstrates power tools at noon. Skip only for exact models you've used; ignore case labels.\n\nFor courtyard returns, scan your card and wait for confirmation. A quick exit is fine. A disappearing act isn't.\n\nSunday: courtyard open, desk closed until Monday. Damaged cable? Don't return it in the courtyard. Report damage online before it's due. Hand it in when the desk reopens. Do both to avoid late fees.",
+    "passageZh": "以前借工具時，我們沒有留下紀錄。現在服務台人員會檢查工具並登記借用。工作坊負責人中午會示範電動工具。只有用過同一型號，才能省略示範；別看工具盒上的標籤判斷。\n\n在中庭歸還工具時，請掃卡並等候確認。快點離開沒關係，可別上演憑空消失。\n\n星期日中庭開放，服務台星期一才重新開放。電線受損嗎？別在中庭歸還。工具到期前請上網通報損壞，等服務台重新開放時親手交還。兩項都做到，才不會被收取逾期費。",
+    "audioScript": "Old loans had no records. Desk staff check tools and log loans. The workshop leader demonstrates power tools at noon. Skip only for exact models you've used; ignore case labels.\n\nFor courtyard returns, scan your card and wait for confirmation. A quick exit is fine. A disappearing act isn't.\n\nSunday: courtyard open, desk closed until Monday. Damaged cable? Don't return it in the courtyard. Report damage online before it's due. Hand it in when the desk reopens. Do both to avoid late fees.",
+    "turns": [
+      {
+        "voice": "female",
+        "speaker": "F1",
+        "text": "Old loans had no records. Desk staff check tools and log loans. The workshop leader demonstrates power tools at noon. Skip only for exact models you've used; ignore case labels.\n\nFor courtyard returns, scan your card and wait for confirmation. A quick exit is fine. A disappearing act isn't.\n\nSunday: courtyard open, desk closed until Monday. Damaged cable? Don't return it in the courtyard. Report damage online before it's due. Hand it in when the desk reopens. Do both to avoid late fees."
+      }
+    ],
+    "audio": "audio/exams/test-03/groups/t03-g045-r2/passage.wav",
+    "duration": 41.1125,
+    "audioStart": 0,
+    "audioEnd": 41.1125,
+    "audioSpeakers": [
+      {
+        "speaker": "F1",
+        "locale": "en-NG",
+        "role": "female",
+        "modelVoice": "en-NG-EzinneNeural"
+      }
+    ]
+  },
+  "newQuestions": [
+    {
+      "id": "t03-q071-r2",
+      "testId": "test-03",
+      "number": 71,
+      "part": 4,
+      "groupId": "t03-g045-r2",
+      "topic": "daily",
+      "difficulty": "advanced",
+      "tags": [
+        "daily",
+        "listening-comprehension",
+        "talk"
+      ],
+      "prompt": "Which power-tool loan follows the rules?",
+      "promptZh": "下列哪一種電動工具借用方式符合規定？",
+      "options": [
+        {
+          "id": "A",
+          "text": "A borrower new to the model attends the leader's noon demonstration and completes the desk check and loan record.",
+          "zh": "一位沒用過該型號的借用人參加負責人中午的示範，並在服務台完成工具檢查與借用登記。",
+          "whyZh": "沒用過同一型號就必須參加示範，檢查和登記也不能省略。"
+        },
+        {
+          "id": "B",
+          "text": "At ten, a borrower recognizes the case but has never used the model. The tool is checked and logged, and the borrower skips the demonstration.",
+          "zh": "十點時，一位借用人認得工具盒，但沒用過該型號。工具經過檢查與登記後，這位借用人直接省略示範。",
+          "whyZh": "認得工具盒不等於用過同一型號；完成服務台流程也不能免除示範。"
+        },
+        {
+          "id": "C",
+          "text": "At ten, a desk volunteer demonstrates a power tool and records the loan without checking the tool separately.",
+          "zh": "十點時，服務台志工示範一件電動工具並登記借用，但沒有另外檢查工具。",
+          "whyZh": "應由工作坊負責人於中午示範，且工具仍需另外檢查。"
+        },
+        {
+          "id": "D",
+          "text": "At noon, a borrower treats the leader's demonstration as the tool check and takes the tool after it is logged.",
+          "zh": "中午時，一位借用人把負責人的示範當成工具檢查，登記後就把工具借走。",
+          "whyZh": "示範與工具檢查是兩個步驟；有示範及登記不代表可以不檢查。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "沒用過同一型號就必須參加示範，檢查和登記也不能省略。",
+      "evidence": "Desk staff check tools and log loans. | The workshop leader demonstrates power tools at noon. | Skip only for exact models you've used; ignore case labels.",
+      "vocabulary": [
+        {
+          "term": "powered tool",
+          "zh": "電動工具",
+          "note": "此處指需由工作坊負責人示範的電動工具。"
+        },
+        {
+          "term": "log a loan",
+          "zh": "登記借用",
+          "note": "log 在此指留下借用紀錄，不是登入帳號。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t03-q072-r2",
+      "testId": "test-03",
+      "number": 72,
+      "part": 4,
+      "groupId": "t03-g045-r2",
+      "topic": "daily",
+      "difficulty": "advanced",
+      "tags": [
+        "daily",
+        "listening-comprehension",
+        "talk"
+      ],
+      "prompt": "How does the joke relate to old loans?",
+      "promptZh": "這個玩笑和以前借工具的方式有什麼關聯？",
+      "options": [
+        {
+          "id": "A",
+          "text": "It suggests that lending tools should be quick enough to skip the return confirmation.",
+          "zh": "它表示借還工具應該夠快，連歸還確認也可以跳過。",
+          "whyZh": "玩笑說可以快快離開，但前一句要求掃卡後等歸還確認；效率不等於可以省略紀錄。"
+        },
+        {
+          "id": "B",
+          "text": "It warns that the new courtyard return process makes it harder to track tools than before.",
+          "zh": "它提醒大家，新的中庭歸還流程會讓工具比以前更難追蹤。",
+          "whyZh": "以前不留紀錄；現在有服務台登記、掃卡和歸還確認，沒說追蹤變得更難。"
+        },
+        {
+          "id": "C",
+          "text": "It points out that people can leave quickly as long as the loan or return is recorded.",
+          "zh": "它指出大家可以快點離開，但工具借出或歸還都必須留下紀錄。",
+          "whyZh": "以前借工具沒有紀錄；現在借出有登記、歸還要掃卡並確認。玩笑不是反對快點走，而是別讓工具在沒留下紀錄下就離開或放回。"
+        },
+        {
+          "id": "D",
+          "text": "It explains why the library no longer lets people return tools without speaking to a volunteer.",
+          "zh": "它解釋為什麼現在還工具時，一律得先跟志工說話。",
+          "whyZh": "合乎自助歸還條件的工具可在中庭歸還。掃卡與確認才是重點，不是每次都要跟志工說話。"
+        }
+      ],
+      "answer": "C",
+      "explanationZh": "以前借工具沒有紀錄；現在借出有登記、歸還要掃卡並確認。玩笑不是反對快點走，而是別讓工具在沒留下紀錄下就離開或放回。",
+      "evidence": "Old loans had no records. | Desk staff check tools and log loans. | For courtyard returns, scan your card and wait for confirmation. | A quick exit is fine. A disappearing act isn't.",
+      "vocabulary": [
+        {
+          "term": "a disappearing act",
+          "zh": "憑空消失的表演",
+          "note": "此處借用魔術表演的意象，幽默比喻工具借還不能沒留下紀錄。"
+        }
+      ],
+      "revision": 2
+    },
+    {
+      "id": "t03-q073-r2",
+      "testId": "test-03",
+      "number": 73,
+      "part": 4,
+      "groupId": "t03-g045-r2",
+      "topic": "daily",
+      "difficulty": "advanced",
+      "tags": [
+        "daily",
+        "listening-comprehension",
+        "talk"
+      ],
+      "prompt": "A tool with a damaged cable is due Sunday at five p.m. What avoids a late fee?",
+      "promptZh": "一件電線受損的工具星期日下午五點到期。怎麼做才不會被收逾期費？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Submit an online damage report before five and return the tool in the courtyard on Sunday.",
+          "zh": "五點前上網提交損壞通報，星期日在中庭歸還工具。",
+          "whyZh": "通報時間符合，但電線受損的工具不能在中庭歸還。"
+        },
+        {
+          "id": "B",
+          "text": "Submit an online damage report before five and hand the tool to a staff member at the desk on Monday.",
+          "zh": "五點前上網提交損壞通報，星期一把工具親手交給服務台人員。",
+          "whyZh": "五點前上網通報。電線受損不能在中庭歸還，服務台又到星期一才重新開放，所以重新開放時親手交還就符合免收逾期費的條件。"
+        },
+        {
+          "id": "C",
+          "text": "Hand it to the desk on Monday and submit the damage report at the same time.",
+          "zh": "星期一把工具交給服務台，同時提交損壞通報。",
+          "whyZh": "歸還方式正確，但星期一才通報已晚於星期日下午五點，不符合免收逾期費的要件。"
+        },
+        {
+          "id": "D",
+          "text": "Tell someone at the courtyard on Sunday, then leave the tool by the closed desk that afternoon.",
+          "zh": "星期日在中庭口頭告知他人，當天下午把工具留在關閉的服務台旁。",
+          "whyZh": "在中庭口頭告知不能取代上網通報，把工具留在服務台旁也不是服務台重新開放時親手交還。"
+        }
+      ],
+      "answer": "B",
+      "explanationZh": "五點前上網通報。電線受損不能在中庭歸還，服務台又到星期一才重新開放，所以重新開放時親手交還就符合免收逾期費的條件。",
+      "evidence": "Sunday: courtyard open, desk closed until Monday. | Damaged cable? Don't return it in the courtyard. | Report damage online before it's due. | Hand it in when the desk reopens. Do both to avoid late fees.",
+      "vocabulary": [
+        {
+          "term": "report damage",
+          "zh": "通報損壞",
+          "note": "此處是上網通報，不能以口頭通知替代。"
+        },
+        {
+          "term": "late fee",
+          "zh": "逾期費",
+          "note": "逾期費有條件免除，不等於可任意延後歸還。"
+        }
+      ],
+      "revision": 2
+    }
+  ],
+  "oldMediaSha256": {
+    "audio/formal-v2/narrator-02.mp3": "000f8c613a6bbc765516c11a020fc3298c92e9dfc7695110e68b0eab8aba0a63",
+    "audio/formal/test-03-cues-04.mp3": "f5db73b2aab14a49b3a6ba3408fbf600098cfa5626160ea7dd95a13b9bf6404b",
+    "audio/azure-v1/test-03-25.mp3": "95e920fcdedc5427c4e38c0fc6ee61b55b7b70a3ef8f377af5f72b900a33a30a"
+  },
+  "newAudioGuards": {
+    "audio/exams/test-03/groups/t03-g045-r2/passage.wav": {
+      "path": "audio/exams/test-03/groups/t03-g045-r2/passage.wav",
+      "sha256": "b95aed42eeb844f9a53a3622cd2278f727a809f58cfc2b8b4aa2054676826290",
+      "frames": 986700,
+      "sampleRate": 24000
+    },
+    "audio/exams/test-03/questions/Q071/formal-stem-r2.wav": {
+      "path": "audio/exams/test-03/questions/Q071/formal-stem-r2.wav",
+      "sha256": "b0c21d7032b53c6ca0cb0c7b613907dc5327db29f20c5db6a46c3fb6909b4082",
+      "frames": 123300,
+      "sampleRate": 24000
+    },
+    "audio/exams/test-03/questions/Q072/formal-stem-r2.wav": {
+      "path": "audio/exams/test-03/questions/Q072/formal-stem-r2.wav",
+      "sha256": "8b173f6c59c2f1ddc46e7d4cc36a9e70303c390aed7fb121e1002df4d0c0e9dd",
+      "frames": 118500,
+      "sampleRate": 24000
+    },
+    "audio/exams/test-03/questions/Q073/formal-stem-r2.wav": {
+      "path": "audio/exams/test-03/questions/Q073/formal-stem-r2.wav",
+      "sha256": "492f3f80e566e7aabb645038005b8eddc3ed54d24d362e6e9c4eac221391dc7c",
+      "frames": 204000,
+      "sampleRate": 24000
+    }
+  },
+  "formalFrameOps": [
+    {
+      "index": 202,
+      "beforeSha256": "ed46d2ed39630078e467148db5d7c17b17ecd54fc0223d9e1f30fe34d3000621",
+      "updates": {
+        "groupId": "t03-g045-r2"
+      }
+    },
+    {
+      "index": 203,
+      "beforeSha256": "d2323355c7068663283613363f1ce649bf79c3062c090f01b784daef9e13610d",
+      "updates": {
+        "groupId": "t03-g045-r2"
+      }
+    },
+    {
+      "index": 204,
+      "beforeSha256": "ab4814f68876c20eb991f089a6ad881beebbd46c7338ec7f47469f6a673329a6",
+      "updates": {
+        "src": "audio/exams/test-03/groups/t03-g045-r2/passage.wav",
+        "start": 0,
+        "end": 41.1125,
+        "duration": 41.1125,
+        "groupId": "t03-g045-r2"
+      }
+    },
+    {
+      "index": 205,
+      "beforeSha256": "9b55509767f04aa8d2fb1357460866d9a4bdf638ec309e15aa9e9cd878248767",
+      "updates": {
+        "src": "audio/exams/test-03/questions/Q071/formal-stem-r2.wav",
+        "start": 0,
+        "end": 5.1375,
+        "duration": 5.1375,
+        "groupId": "t03-g045-r2",
+        "questionId": "t03-q071-r2",
+        "at": 1937.99736
+      }
+    },
+    {
+      "index": 206,
+      "beforeSha256": "f0fe3175df1cca691e003fdf2ab4973e083ea6aafebe579fb63ec573bd29466c",
+      "updates": {
+        "duration": 6.34606,
+        "groupId": "t03-g045-r2",
+        "questionId": "t03-q071-r2",
+        "at": 1943.13486
+      }
+    },
+    {
+      "index": 207,
+      "beforeSha256": "709d7ad625e38407a406be1f578be1e9df453d414045cb63b0c51163969a7424",
+      "updates": {
+        "src": "audio/exams/test-03/questions/Q072/formal-stem-r2.wav",
+        "start": 0,
+        "end": 4.9375,
+        "duration": 4.9375,
+        "groupId": "t03-g045-r2",
+        "questionId": "t03-q072-r2",
+        "at": 1949.48092
+      }
+    },
+    {
+      "index": 208,
+      "beforeSha256": "8cd88c8a776a59c7728de2feb33dd675d846465cefdac092bdff8073251dac58",
+      "updates": {
+        "duration": 6.34606,
+        "groupId": "t03-g045-r2",
+        "questionId": "t03-q072-r2",
+        "at": 1954.41842
+      }
+    },
+    {
+      "index": 209,
+      "beforeSha256": "4a355f11d782cf1b35d714c8258f2840b2da4d6875fb27e899c3c026898901ae",
+      "updates": {
+        "src": "audio/exams/test-03/questions/Q073/formal-stem-r2.wav",
+        "start": 0,
+        "end": 8.5,
+        "duration": 8.5,
+        "groupId": "t03-g045-r2",
+        "questionId": "t03-q073-r2",
+        "at": 1960.76448
+      }
+    },
+    {
+      "index": 210,
+      "beforeSha256": "f20ca629d036f9241203d3495a27b95117a38194c664f94346ba086caaa097d9",
+      "updates": {
+        "duration": 6.34607,
+        "groupId": "t03-g045-r2",
+        "questionId": "t03-q073-r2",
+        "at": 1969.26448
+      }
+    },
+    {
+      "index": 211,
+      "beforeSha256": "dda0da077552a3d0d9d75b11f8cfdf18492613bc260eb5ddd298de79cbcdc81f",
+      "updates": {
+        "at": 1975.61055
+      }
+    },
+    {
+      "index": 212,
+      "beforeSha256": "c50556e559aa6ee605883f69731f101aa0138d72176ad7fbb145b88ed7c9c24f",
+      "updates": {
+        "at": 1979.15842
+      }
+    },
+    {
+      "index": 213,
+      "beforeSha256": "fa744636293c9d746e79d4186c31e5ee9e4cc9aa6e8f033de2b812e6875c84ea",
+      "updates": {
+        "at": 2020.72642
+      }
+    },
+    {
+      "index": 214,
+      "beforeSha256": "281d82d1dbacda2176cf11b6a91d83505b8d111710d8dbd386b77b49575f4bdc",
+      "updates": {
+        "duration": 6.34607,
+        "at": 2023.42996
+      }
+    },
+    {
+      "index": 215,
+      "beforeSha256": "95efa06c85c5942bd9ec349cc8214d0bc7eae68bfc23da7ad5c64cae13542255",
+      "updates": {
+        "at": 2029.77603
+      }
+    },
+    {
+      "index": 216,
+      "beforeSha256": "dc5e011f978e9f0e9987ba47ab35273de326497bcc52186bc813a8fedfa6aae7",
+      "updates": {
+        "duration": 6.34608,
+        "at": 2032.52903
+      }
+    },
+    {
+      "index": 217,
+      "beforeSha256": "89bba28b36de5f05ee062f71cbb5adfb54baeea19eb56f982512f22551339d25",
+      "updates": {
+        "at": 2038.87511
+      }
+    },
+    {
+      "index": 218,
+      "beforeSha256": "f6d547dfc49a046403fd31b4f2e7a26a967bc31555900ff7a17aab4dda3d1e87",
+      "updates": {
+        "duration": 6.34608,
+        "at": 2042.07894
+      }
+    },
+    {
+      "index": 219,
+      "beforeSha256": "438e17bbddbef61c0e63d27f4610c4269c7b1ea05631315f681b05add9161820",
+      "updates": {
+        "at": 2048.42502
+      }
+    },
+    {
+      "index": 220,
+      "beforeSha256": "2c4d8369128299c008cd502a0ed823b575d85cface2cdcff47225532e0bbce64",
+      "updates": {
+        "at": 2052.02348
+      }
+    },
+    {
+      "index": 221,
+      "beforeSha256": "c8cdacfd4fc84510cb720fc301ff897cde09181a8c8c3002d787521ac4bc7740",
+      "updates": {
+        "at": 2094.47948
+      }
+    },
+    {
+      "index": 222,
+      "beforeSha256": "f99fda08fb6853d522daab137239b82c718f77399de8c99ec4aa049b78a8ffcc",
+      "updates": {
+        "duration": 6.34608,
+        "at": 2098.89415
+      }
+    },
+    {
+      "index": 223,
+      "beforeSha256": "d59b17e4eb0c42bfe51415103e2bbff694dd3abc09b8dce4d6d914f316f23008",
+      "updates": {
+        "at": 2105.24023
+      }
+    },
+    {
+      "index": 224,
+      "beforeSha256": "4eda28b8588842bd7b1199147b79b5c1ca6dedca5cdfb1e7c5d3210116274edf",
+      "updates": {
+        "duration": 6.34608,
+        "at": 2109.00673
+      }
+    },
+    {
+      "index": 225,
+      "beforeSha256": "2330f67bd71d84fc0e36de369e658dfca6a0f397f117bf591d787d1bc929c97a",
+      "updates": {
+        "at": 2115.35281
+      }
+    },
+    {
+      "index": 226,
+      "beforeSha256": "32862bf31563320d67183b62f9b4fc0c4ef9500687cfac486f64b366f59aff10",
+      "updates": {
+        "duration": 6.34608,
+        "at": 2118.28831
+      }
+    },
+    {
+      "index": 227,
+      "beforeSha256": "eed5c9d3f892dc1689082a0042fa1a9d8ca734bcbc5fcf8966824b9df571d0cc",
+      "updates": {
+        "at": 2124.63439
+      }
+    },
+    {
+      "index": 228,
+      "beforeSha256": "bb0ec9bbdb28eab4dbe2d140a6251791a5991362ab0d6cc8149e97c7cce18c3a",
+      "updates": {
+        "at": 2127.54247
+      }
+    },
+    {
+      "index": 229,
+      "beforeSha256": "3ca3540ace176c17b71d3af414041e16af09e13562684048f2d8038756dd448e",
+      "updates": {
+        "at": 2172.87847
+      }
+    },
+    {
+      "index": 230,
+      "beforeSha256": "839df379728d1c7e8f037ef674c694bbc9a80d41e4c6ffcbd1dfa5dd29cf6797",
+      "updates": {
+        "duration": 6.34609,
+        "at": 2175.35672
+      }
+    },
+    {
+      "index": 231,
+      "beforeSha256": "45c38061d0397d6a642efccd184c9181e633d0e9c2838768d6ab120c61df9c4f",
+      "updates": {
+        "at": 2181.70281
+      }
+    },
+    {
+      "index": 232,
+      "beforeSha256": "9230c196f2dbd1aac2add7d4b1f9728358d761770fc77441e9a52395980ca876",
+      "updates": {
+        "duration": 6.34609,
+        "at": 2185.21569
+      }
+    },
+    {
+      "index": 233,
+      "beforeSha256": "f05dd41d0240536c03be097fe497ddb0e87a6c4a408a5dd2b8673d4b1afa014e",
+      "updates": {
+        "at": 2191.56178
+      }
+    },
+    {
+      "index": 234,
+      "beforeSha256": "2a6c7a72f97bb5928f5b92bc2cd78d2a7ce0fb83d4eb81dbf9df5ce877f24f2e",
+      "updates": {
+        "duration": 6.34609,
+        "at": 2195.43778
+      }
+    },
+    {
+      "index": 235,
+      "beforeSha256": "9893dbeb9e69d3301ff28c0b74f63ae72d95179f412726c69ce9b5a4d5897612",
+      "updates": {
+        "at": 2201.78387
+      }
+    },
+    {
+      "index": 236,
+      "beforeSha256": "78244b467ddc1f1c486c24a52d6b78dc97e8e2f130e7f5a3f56451d1a88ae7db",
+      "updates": {
+        "at": 2204.94216
+      }
+    },
+    {
+      "index": 237,
+      "beforeSha256": "6af6a512bccee716830034a57b18c493df65d63033b4ccd45b6a0551f5750b62",
+      "updates": {
+        "at": 2250.35016
+      }
+    },
+    {
+      "index": 238,
+      "beforeSha256": "3d667a0e1ff2c25ca53b62793f6e316bbf78aa254fa7b75db8291190687d0974",
+      "updates": {
+        "duration": 6.34609,
+        "at": 2253.43437
+      }
+    },
+    {
+      "index": 239,
+      "beforeSha256": "bfbfd477cf53eeece5e309b088542eefc93255c8a6027f2c0c073ee8d5fae514",
+      "updates": {
+        "at": 2259.78046
+      }
+    },
+    {
+      "index": 240,
+      "beforeSha256": "96858ae80101df238d007b7fdc90cca90c72919960010a3d0a7be8a83c6f0269",
+      "updates": {
+        "duration": 6.34609,
+        "at": 2264.91796
+      }
+    },
+    {
+      "index": 241,
+      "beforeSha256": "396115e23c2f944feca4b71b59a8bc4a921f619146ae3af69698afe8d13c0d38",
+      "updates": {
+        "at": 2271.26405
+      }
+    },
+    {
+      "index": 242,
+      "beforeSha256": "9c46f314514742cb318beb903d1829e21fd594d621f2e16c58b4d4190a3a876d",
+      "updates": {
+        "duration": 6.34609,
+        "at": 2274.35509
+      }
+    },
+    {
+      "index": 243,
+      "beforeSha256": "61e29854664eb3175e2b7a6b2f6bd5fa285ddbc3be618ce4d14c20ff9768a899",
+      "updates": {
+        "at": 2280.70118
+      }
+    },
+    {
+      "index": 244,
+      "beforeSha256": "d3af51ff12b97379c89f09b90dbe9b978194f0b7fa8e5a5d97bbbdac518be6be",
+      "updates": {
+        "at": 2283.85776
+      }
+    },
+    {
+      "index": 245,
+      "beforeSha256": "a4151e2e0068b76f346b5a13e9711100faa15500dd10d720404ccda397d82a4e",
+      "updates": {
+        "at": 2323.19376
+      }
+    },
+    {
+      "index": 246,
+      "beforeSha256": "9ea2588eb09afff4ccbd9eff312bc65d3403e13dcad4699f6863bc9bdb13865d",
+      "updates": {
+        "duration": 6.34609,
+        "at": 2326.25343
+      }
+    },
+    {
+      "index": 247,
+      "beforeSha256": "49d789c8c7842ec3b7fbac6c3e610770dc7759a37a0ebc86e9356f012d8608c1",
+      "updates": {
+        "at": 2332.59952
+      }
+    },
+    {
+      "index": 248,
+      "beforeSha256": "b224027dcdd6ff393a56a683d0f7b212789493ae46bbdbd94936d6a92a46b708",
+      "updates": {
+        "at": 2336.3076
+      }
+    },
+    {
+      "index": 249,
+      "beforeSha256": "63db987efe13a4c88b5eba3941730f7144786efe67c6fb5f7797d7a5aca21fba",
+      "updates": {
+        "at": 2346.13658
+      }
+    },
+    {
+      "index": 250,
+      "beforeSha256": "b9d681d2f9aaa1f817f4dfa18e366bde3243a186ab0b7e1c4a1cf24df41c2590",
+      "updates": {
+        "duration": 6.34609,
+        "at": 2350.12971
+      }
+    },
+    {
+      "index": 251,
+      "beforeSha256": "f54b0de4245fbc0a304b3e7cc93419e03cbd269d290793fcf42891139be6280d",
+      "updates": {
+        "at": 2356.4758
+      }
+    },
+    {
+      "index": 252,
+      "beforeSha256": "576a8d593d287b9cc9c4d4ceb5b003657473cdf3ca889afec7332a5796e89151",
+      "updates": {
+        "at": 2359.78405
+      }
+    },
+    {
+      "index": 253,
+      "beforeSha256": "64605c71a0a06dfee38e87ab16e9e4e195da08d3e7d160205dfdaa2196ee42e3",
+      "updates": {
+        "at": 2411.45605
+      }
+    },
+    {
+      "index": 254,
+      "beforeSha256": "40c1f7ec2332811c73ca82320d67fb4d82cb53544843fd5f2e53f524f5866b6d",
+      "updates": {
+        "duration": 6.34609,
+        "at": 2414.94226
+      }
+    },
+    {
+      "index": 255,
+      "beforeSha256": "aeb0d996c5925495b09bfe26dbadfd69f17bb03b20ed8bc71301fee5f4e6e4d2",
+      "updates": {
+        "at": 2421.28835
+      }
+    },
+    {
+      "index": 256,
+      "beforeSha256": "7d3a2bf4c6acfa25eb7236adfaf6c0ce6a6b15e6a0ee992b23ad60a2ca4a3519",
+      "updates": {
+        "duration": 6.34609,
+        "at": 2424.72077
+      }
+    },
+    {
+      "index": 257,
+      "beforeSha256": "322d3400bec93f047b0a100893b8f5b900d5eeeb5dd6905d9e57be1f92e1a2ca",
+      "updates": {
+        "at": 2431.06686
+      }
+    },
+    {
+      "index": 258,
+      "beforeSha256": "5ae5f28be41aae2656fa2100bf4d9b82378683a011b0c0caa657e5dcc1b659a3",
+      "updates": {
+        "duration": 6.34609,
+        "at": 2434.81211
+      }
+    },
+    {
+      "index": 259,
+      "beforeSha256": "478b755324bc4fff22d4d9ccfbd2c8bfc2d54ac4a155134fde0bc0e233cadd7d",
+      "updates": {
+        "at": 2441.1582
+      }
+    },
+    {
+      "index": 260,
+      "beforeSha256": "706161bc037c07d044614a727bfcfe7d7b8a498e8175cec7693e83f81c9195b0",
+      "updates": {
+        "at": 2444.46599
+      }
+    },
+    {
+      "index": 261,
+      "beforeSha256": "4059ca3029079349b4f951d9eabf4aa0684df7dcef4cc4b8a97bdc218881f953",
+      "updates": {
+        "at": 2492.65799
+      }
+    },
+    {
+      "index": 262,
+      "beforeSha256": "89665044c5879f10844f9268c4ac68ef04c2e0a38b99cb2784f3c8bef89eaf61",
+      "updates": {
+        "duration": 6.34609,
+        "at": 2496.20753
+      }
+    },
+    {
+      "index": 263,
+      "beforeSha256": "5e6dcfa8bf30af72b2285c4606aa96927665f82350af237d4cb3c4b52e3587d3",
+      "updates": {
+        "at": 2502.55362
+      }
+    },
+    {
+      "index": 264,
+      "beforeSha256": "1666e2dc93c83d3f455ec23038d25d7aa83e04f3cb4e2ee70e7130eb93bb41a8",
+      "updates": {
+        "duration": 6.34609,
+        "at": 2505.39795
+      }
+    },
+    {
+      "index": 265,
+      "beforeSha256": "68f77d694b472459c965c176091a17970cc219714c1a2dd484ba29770858a781",
+      "updates": {
+        "at": 2511.74404
+      }
+    },
+    {
+      "index": 266,
+      "beforeSha256": "1c7133829e5f6b2e5343d1172b10c6b8c1c8911a2b1748c5dec03d81dfa49868",
+      "updates": {
+        "duration": 6.34609,
+        "at": 2514.62129
+      }
+    }
+  ],
+  "courtyardDraftSha256": "819a305566412ab6a9bf452e6a27b77b52f45604ab8f229967e5e2670d9554b4",
+  "authorizedPlanSha256": "067c9e4b31a507bc7124daeda04c81fa5b81a774d22a3c9997d9b92123894907",
+  "protected": {
+    "intervalFrom": 1878.50069,
+    "preservedAllFramesStartingAt": 2520.96738,
+    "newSpeechDeltaSec": 2.49092,
+    "ordinaryWindowsAffected": 23,
+    "minOrdinaryResponseSec": 6.34606,
+    "ordinaryResponseSec": {
+      "t03-q071-r2": 6.34606,
+      "t03-q072-r2": 6.34606,
+      "t03-q073-r2": 6.34607,
+      "t03-q074": 6.34607,
+      "t03-q075": 6.34608,
+      "t03-q076": 6.34608,
+      "t03-q077": 6.34608,
+      "t03-q078": 6.34608,
+      "t03-q079": 6.34608,
+      "t03-q080": 6.34609,
+      "t03-q081": 6.34609,
+      "t03-q082": 6.34609,
+      "t03-q083": 6.34609,
+      "t03-q084": 6.34609,
+      "t03-q085": 6.34609,
+      "t03-q086": 6.34609,
+      "t03-q088": 6.34609,
+      "t03-q089": 6.34609,
+      "t03-q090": 6.34609,
+      "t03-q091": 6.34609,
+      "t03-q092": 6.34609,
+      "t03-q093": 6.34609,
+      "t03-q094": 6.34609
+    },
+    "q087": {
+      "qid": "t03-q087",
+      "oldChartSha256": "b42d2bd7201f11a74b04bdbf8393eec443005499307764b9c1ebfb4fd65dea62",
+      "image": "assets/graphics/t03-g050.svg",
+      "assetAndDurationsHash": "63fc605e1abfe1dac34fc6974f86f72d82ab8033f10f4f7cbd25ec27ab26d34b",
+      "oldAnswer": 9.82898,
+      "usedNewAnswer": 9.82898
+    },
+    "q095GroupFramesSha256": "eeb6e4f33e61bfa60ccbcfb4539ebc26501c8746626d05072d74b2ed08a649cd",
+    "exact2700": 2700
+  },
+  "audioEvidenceSha256": {
+    "shift-azure-qa-1112:evidence.md": "4df8560ac7cf96378934fc154ba21b4c3ebbf858f436cc2812d30969292adaa8",
+    "shift-azure-qa-1112:hashes.txt": "6edfd9e8956737f7b811ad074e0bb27e47600c22c768e08f9eb432f404a83f44",
+    "shift-azure-qa-1112:test03-g045-courtyard-shared.wav.txt": "0270e45c5944d6b62e48f8b772cbcf2485ccf5729edf631c1b7ec836a39814d2",
+    "shift-azure-qa-1112:vosk-test03-g045-courtyard-shared.txt": "6dbd38bb857785f99df564b7b17e984a0f5d4dd0206b495a8814cf59367ea1d2",
+    "shift-azure-qa-1105:evidence.md": "19a08706e2b40cb9be8b5b8c9143dbf1c75af3c85f2a015cf8a78112211e0058",
+    "shift-azure-qa-1105:test03-q071-return-box-stem.wav.txt": "a25bf255c2013e0894e09ba2a703b5ddb42f0ac282bb8314d09e91859ef5fdc4",
+    "shift-azure-qa-1105:vosk-result.json": "bcffdc1cee8a78544b5d2483c90e9ceb7df3ac3a583d0985f92c787f6a8bb1a8",
+    "shift-azure-qa-g045-1053:evidence.md": "c9ae873fa26d251c279815a680776c07b86c4f2019a40e57376109e77b6b0dc9",
+    "shift-azure-qa-g045-1053:test03-q072-formal-stem.wav.txt": "24c9bbc5aaaddab02bd58716a069c68a8735db7e2c47d7bfb14db3e397b774c1",
+    "shift-azure-qa-g045-1053:test03-q073-formal-stem.wav.txt": "4577d222962e837350106a5111e0820a4aec3c57e115dda3c0064cf62e4d288a",
+    "shift-azure-qa-g045-1053:vosk-lgraph.log": "4d14c5ea53ba365b997bd689b16a2b036930f867a5f146f7bc3f36142d372d91"
+  }
+}
