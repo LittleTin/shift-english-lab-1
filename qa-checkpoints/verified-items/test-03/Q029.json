@@ -1,0 +1,116 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Of course accepts the request to reduce volume and recognizes annoyance; left turn and sold-out concert are different senses/topic. Chinese rationale must not claim spoken apology explicitly. Exact normalized lexical transcript in both original playback modes, A–C in order. Actual cue 29 also confirmed in contiguous cue bank. No audio mismatch.",
+  "activeQuestion": {
+    "id": "t03-q029",
+    "testId": "test-03",
+    "number": 29,
+    "part": 2,
+    "groupId": "t03-g029",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "question_response"
+    ],
+    "prompt": "Could you turn the music down a little?",
+    "promptZh": "可以把音樂調小聲一點嗎？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Turn left at the next street.",
+        "zh": "下一條街左轉。",
+        "whyZh": "把 turn 當成轉彎，與音量無關。"
+      },
+      {
+        "id": "B",
+        "text": "The concert tickets sold out.",
+        "zh": "演唱會門票賣完了。",
+        "whyZh": "與當下調低音量的請求無關。"
+      },
+      {
+        "id": "C",
+        "text": "Of course, I did not realize it was bothering you.",
+        "zh": "當然，我不知道它打擾到你。",
+        "whyZh": "用 Of course 同意調低音量，並表示先前沒察覺音樂打擾到對方。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "用 Of course 同意調低音量，並表示先前沒察覺音樂打擾到對方。",
+    "evidence": "Of course, I did not realize it was bothering you.",
+    "vocabulary": [
+      {
+        "term": "bother",
+        "zh": "打擾",
+        "note": "Of course, I did not realize it was bothering you."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g029",
+    "testId": "test-03",
+    "part": 2,
+    "title": "Quiet workspace",
+    "titleZh": "安靜工作空間",
+    "topic": "daily",
+    "passage": "Could you turn the music down a little? A. Turn left at the next street. B. The concert tickets sold out. C. Of course, I did not realize it was bothering you.",
+    "passageZh": "可以把音樂調小聲一點嗎？\nA. 下一條街左轉。\nB. 演唱會門票賣完了。\nC. 當然，我不知道它打擾到你。",
+    "audioScript": "Could you turn the music down a little? A. Turn left at the next street. B. The concert tickets sold out. C. Of course, I did not realize it was bothering you.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Could you turn the music down a little?"
+      },
+      {
+        "voice": "male",
+        "text": "A. Turn left at the next street. B. The concert tickets sold out. C. Of course, I did not realize it was bothering you."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-10.mp3",
+    "duration": 17.016,
+    "audioStart": 19.336,
+    "audioEnd": 36.352,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-KE",
+        "role": "female",
+        "modelVoice": "en-KE-AsiliaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-KE",
+        "role": "male",
+        "modelVoice": "en-KE-ChilembaNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "mode": "cue",
+      "start": 35.02158,
+      "end": 36.16079,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 29."
+    },
+    {
+      "path": "audio/formal-v2/test-03-10.mp3",
+      "mode": "passage",
+      "start": 18.304,
+      "end": 35.44,
+      "assetSha256": "29f35ac63ad4514b929d16aaabe4203d98346763cc0367968c54bfe6689a263c",
+      "speech": "Could you turn the music down a little? A. Turn left at the next street. B. The concert tickets sold out. C. Of course, I did not realize it was bothering you."
+    },
+    {
+      "path": "audio/azure-v1/test-03-10.mp3",
+      "mode": "practice",
+      "start": 19.336,
+      "end": 36.352,
+      "assetSha256": "2ecc19105b285c5a68a7ec975783a865c535ca386a29dfe868c2fb4d4ca17fae",
+      "speech": "- Could you turn the music down a little? - A. Turn left at the next street. B. The concert tickets sold out. C. Of course, I did not realize it was bothering you."
+    }
+  ]
+}

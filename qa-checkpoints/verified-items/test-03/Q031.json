@@ -1,0 +1,116 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Easier for commuters to reach is opinion addressing location quality, unlike tree pruning or opening date. Chinese grasps access and branch as 分店. Exact normalized lexical transcript in both original playback modes, A–C in order. Actual cue 31 also confirmed in contiguous cue bank. No audio mismatch.",
+  "activeQuestion": {
+    "id": "t03-q031",
+    "testId": "test-03",
+    "number": 31,
+    "part": 2,
+    "groupId": "t03-g031",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "question_response"
+    ],
+    "prompt": "What do you think of the new branch location?",
+    "promptZh": "你覺得新分店的地點如何？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The tree needs its branches cut.",
+        "zh": "那棵樹需要修剪樹枝。",
+        "whyZh": "把分店 branch 誤作樹枝。"
+      },
+      {
+        "id": "B",
+        "text": "It will be much easier for commuters to reach.",
+        "zh": "通勤族要到那裡會方便得多。",
+        "whyZh": "以交通可達性評價新地點，回應看法。"
+      },
+      {
+        "id": "C",
+        "text": "The branch opens next month.",
+        "zh": "分店下個月開幕。",
+        "whyZh": "只是開幕時間，未評價地點。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "以交通可達性評價新地點，回應看法。",
+    "evidence": "It will be much easier for commuters to reach.",
+    "vocabulary": [
+      {
+        "term": "commuter",
+        "zh": "通勤族",
+        "note": "It will be much easier for commuters to reach."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g031",
+    "testId": "test-03",
+    "part": 2,
+    "title": "New branch",
+    "titleZh": "新分店",
+    "topic": "business",
+    "passage": "What do you think of the new branch location? A. The tree needs its branches cut. B. It will be much easier for commuters to reach. C. The branch opens next month.",
+    "passageZh": "你覺得新分店的地點如何？\nA. 那棵樹需要修剪樹枝。\nB. 通勤族要到那裡會方便得多。\nC. 分店下個月開幕。",
+    "audioScript": "What do you think of the new branch location? A. The tree needs its branches cut. B. It will be much easier for commuters to reach. C. The branch opens next month.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "What do you think of the new branch location?"
+      },
+      {
+        "voice": "male",
+        "text": "A. The tree needs its branches cut. B. It will be much easier for commuters to reach. C. The branch opens next month."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-11.mp3",
+    "duration": 17.304,
+    "audioStart": 0.5,
+    "audioEnd": 17.804,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-TZ",
+        "role": "female",
+        "modelVoice": "en-TZ-ImaniNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-TZ",
+        "role": "male",
+        "modelVoice": "en-TZ-ElimuNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "mode": "cue",
+      "start": 37.55179,
+      "end": 38.64229,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 31."
+    },
+    {
+      "path": "audio/formal-v2/test-03-11.mp3",
+      "mode": "passage",
+      "start": 0.5,
+      "end": 17.756,
+      "assetSha256": "8e05308d0f288c074222b80db833af39f897f0190a5722380f3dc37f4a935fe2",
+      "speech": "What do you think of the new branch location? A. The tree needs its branches cut. B. It will be much easier for commuters to reach. C. The branch opens next month."
+    },
+    {
+      "path": "audio/azure-v1/test-03-11.mp3",
+      "mode": "practice",
+      "start": 0.5,
+      "end": 17.804,
+      "assetSha256": "ce2a90496118044ed043b6dfb9ff2750bbe5d219723976eb0ea9d93c1695fc8d",
+      "speech": "What do you think of the new branch location? A. The tree needs its branches cut. B. It will be much easier for commuters to reach. C. The branch opens next month."
+    }
+  ]
+}

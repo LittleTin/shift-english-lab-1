@@ -1,0 +1,116 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Only online campaign says yes with scope of budget increase. Market closing and number of committee members are sound/topic traps, not answers. zh key needs 明示預算, A rationale should discuss hearing. Formal and practice exact budget prompt and A–C order including Only for the online campaign; 6/six formatting only and cue 25. No audio fix required.",
+  "activeQuestion": {
+    "id": "t03-q025",
+    "testId": "test-03",
+    "number": 25,
+    "part": 2,
+    "groupId": "t03-g025",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "question_response"
+    ],
+    "prompt": "Did the committee increase the marketing budget?",
+    "promptZh": "委員會有增加行銷預算嗎？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The market closes at six.",
+        "zh": "市場六點關閉。",
+        "whyZh": "market 和 marketing 聽起來相近，但市場的關門時間不回答預算是否調高。"
+      },
+      {
+        "id": "B",
+        "text": "Only for the online campaign.",
+        "zh": "只有網路行銷活動的預算增加。",
+        "whyZh": "指出增加預算的特定範圍。"
+      },
+      {
+        "id": "C",
+        "text": "A committee of five members.",
+        "zh": "由五人組成的委員會。",
+        "whyZh": "只提供成員數，沒有回答是否增加。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "指出增加預算的特定範圍。",
+    "evidence": "Only for the online campaign.",
+    "vocabulary": [
+      {
+        "term": "campaign",
+        "zh": "行銷活動",
+        "note": "Only for the online campaign."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g025",
+    "testId": "test-03",
+    "part": 2,
+    "title": "Budget adjustment",
+    "titleZh": "預算調整",
+    "topic": "business",
+    "passage": "Did the committee increase the marketing budget? A. The market closes at six. B. Only for the online campaign. C. A committee of five members.",
+    "passageZh": "委員會有增加行銷預算嗎？\nA. 市場六點關閉。\nB. 只有網路行銷活動的預算增加。\nC. 由五人組成的委員會。",
+    "audioScript": "Did the committee increase the marketing budget? A. The market closes at six. B. Only for the online campaign. C. A committee of five members.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "Did the committee increase the marketing budget?"
+      },
+      {
+        "voice": "male",
+        "text": "A. The market closes at six. B. Only for the online campaign. C. A committee of five members."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-09.mp3",
+    "duration": 18.12,
+    "audioStart": 0.5,
+    "audioEnd": 18.62,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-SG",
+        "role": "female",
+        "modelVoice": "en-SG-LunaNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-SG",
+        "role": "male",
+        "modelVoice": "en-SG-WayneNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "mode": "cue",
+      "start": 29.31821,
+      "end": 30.50158,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 25."
+    },
+    {
+      "path": "audio/formal-v2/test-03-09.mp3",
+      "mode": "passage",
+      "start": 0.5,
+      "end": 17.18,
+      "assetSha256": "5b596fabd14fada20dfa63ab533a330f8bbaa4fc38e49f379ca3a59dc36d3544",
+      "speech": "Did the committee increase the marketing budget? A. The market closes at 6. B. Only for the online campaign. C. A committee of five members."
+    },
+    {
+      "path": "audio/azure-v1/test-03-09.mp3",
+      "mode": "practice",
+      "start": 0.5,
+      "end": 18.62,
+      "assetSha256": "4c5371f92809a8a2ece15d9bd5b4aa9969e9639055a66626bc9330d2a7f432a9",
+      "speech": "Did the committee increase the marketing budget? A. The market closes at 6. B. Only for the online campaign. C. A committee of five members."
+    }
+  ]
+}

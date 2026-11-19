@@ -1,0 +1,116 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Using the last filter yesterday implies none remain, unlike repainting or a replacement schedule. Chinese preserves indirect negative reply and quantity. Formal and practice exact, including last one yesterday and every six months; real cue Number 24.",
+  "activeQuestion": {
+    "id": "t03-q024",
+    "testId": "test-03",
+    "number": 24,
+    "part": 2,
+    "groupId": "t03-g024",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "question_response"
+    ],
+    "prompt": "Are there any replacement filters in the storeroom?",
+    "promptZh": "儲藏室裡有替換濾網嗎？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The room was repainted last week.",
+        "zh": "房間上週重新油漆了。",
+        "whyZh": "房間裝修與濾網庫存無關。"
+      },
+      {
+        "id": "B",
+        "text": "I used the last one yesterday.",
+        "zh": "我昨天用掉最後一個了。",
+        "whyZh": "間接表示目前沒有剩餘濾網。"
+      },
+      {
+        "id": "C",
+        "text": "Replace them every six months.",
+        "zh": "每六個月更換一次。",
+        "whyZh": "提供更換週期，不回答現在是否有庫存。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "間接表示目前沒有剩餘濾網。",
+    "evidence": "I used the last one yesterday.",
+    "vocabulary": [
+      {
+        "term": "replacement filter",
+        "zh": "替換濾網",
+        "note": "I used the last one yesterday."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g024",
+    "testId": "test-03",
+    "part": 2,
+    "title": "Stock check",
+    "titleZh": "庫存確認",
+    "topic": "manufacturing",
+    "passage": "Are there any replacement filters in the storeroom? A. The room was repainted last week. B. I used the last one yesterday. C. Replace them every six months.",
+    "passageZh": "儲藏室裡有替換濾網嗎？\nA. 房間上週重新油漆了。\nB. 我昨天用掉最後一個了。\nC. 每六個月更換一次。",
+    "audioScript": "Are there any replacement filters in the storeroom? A. The room was repainted last week. B. I used the last one yesterday. C. Replace them every six months.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Are there any replacement filters in the storeroom?"
+      },
+      {
+        "voice": "female",
+        "text": "A. The room was repainted last week. B. I used the last one yesterday. C. Replace them every six months."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-08.mp3",
+    "duration": 18.0,
+    "audioStart": 37.044,
+    "audioEnd": 55.044,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-HK",
+        "role": "male",
+        "modelVoice": "en-HK-SamNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-HK",
+        "role": "female",
+        "modelVoice": "en-HK-YanNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "mode": "cue",
+      "start": 27.88458,
+      "end": 29.06821,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 24."
+    },
+    {
+      "path": "audio/formal-v2/test-03-08.mp3",
+      "mode": "passage",
+      "start": 36.324,
+      "end": 53.316,
+      "assetSha256": "cc051e00098335f2a20950a01884948dcc265877f77e90b2ce86df4f968ff6ca",
+      "speech": "Are there any replacement filters in the storeroom? A. The room was repainted last week. B. I used the last one yesterday. C. Replace them every six months."
+    },
+    {
+      "path": "audio/azure-v1/test-03-08.mp3",
+      "mode": "practice",
+      "start": 37.044,
+      "end": 55.044,
+      "assetSha256": "5ad4166812ea2f061981b166042388c7bf8b2a29733e2d413d47940909d6837a",
+      "speech": "Are there any replacement filters in the storeroom? A. The room was repainted last week. B. I used the last one yesterday. C. Replace them every six months."
+    }
+  ]
+}

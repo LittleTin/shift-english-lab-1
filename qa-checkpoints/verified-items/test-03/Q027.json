@@ -1,0 +1,126 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Valid through Friday checkout supplies end point; permitted entry says no duration; parking location irrelevant. Chinese 保持精確退房時間與星期五。 Cue confirmed. Formal and pitch-preserving faster practice independently decode “Until your checkout time on Friday”; unaltered/slow ASR tokenizes “you check out time” (same checkout Friday endpoint). All labels, outcomes and other choices match.",
+  "activeQuestion": {
+    "id": "t03-q027",
+    "testId": "test-03",
+    "number": 27,
+    "part": 2,
+    "groupId": "t03-g027",
+    "topic": "daily",
+    "difficulty": "intermediate",
+    "tags": [
+      "daily",
+      "question_response"
+    ],
+    "prompt": "How long is this parking permit valid?",
+    "promptZh": "這張停車證有效多久？",
+    "options": [
+      {
+        "id": "A",
+        "text": "You are permitted to enter.",
+        "zh": "你可以進入。",
+        "whyZh": "談當下進入權限，未說明持續多久。"
+      },
+      {
+        "id": "B",
+        "text": "Until your checkout time on Friday.",
+        "zh": "到你星期五退房的時間為止。",
+        "whyZh": "明確給出有效期終點。"
+      },
+      {
+        "id": "C",
+        "text": "The parking lot is behind the hotel.",
+        "zh": "停車場在飯店後面。",
+        "whyZh": "回答位置，不是有效期限。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "明確給出有效期終點。",
+    "evidence": "Until your checkout time on Friday.",
+    "vocabulary": [
+      {
+        "term": "valid",
+        "zh": "有效的",
+        "note": "Until your checkout time on Friday."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g027",
+    "testId": "test-03",
+    "part": 2,
+    "title": "Parking pass",
+    "titleZh": "停車證",
+    "topic": "daily",
+    "passage": "How long is this parking permit valid? A. You are permitted to enter. B. Until your checkout time on Friday. C. The parking lot is behind the hotel.",
+    "passageZh": "這張停車證有效多久？\nA. 你可以進入。\nB. 到你星期五退房的時間為止。\nC. 停車場在飯店後面。",
+    "audioScript": "How long is this parking permit valid? A. You are permitted to enter. B. Until your checkout time on Friday. C. The parking lot is behind the hotel.",
+    "turns": [
+      {
+        "voice": "female",
+        "text": "How long is this parking permit valid?"
+      },
+      {
+        "voice": "male",
+        "text": "A. You are permitted to enter. B. Until your checkout time on Friday. C. The parking lot is behind the hotel."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-09.mp3",
+    "duration": 17.136,
+    "audioStart": 36.468,
+    "audioEnd": 53.604,
+    "audioSpeakers": [
+      {
+        "speaker": "female",
+        "locale": "en-NZ",
+        "role": "female",
+        "modelVoice": "en-NZ-MollyNeural"
+      },
+      {
+        "speaker": "male",
+        "locale": "en-NZ",
+        "role": "male",
+        "modelVoice": "en-NZ-MitchellNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "mode": "cue",
+      "start": 32.18379,
+      "end": 33.39988,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 27."
+    },
+    {
+      "path": "audio/formal-v2/test-03-09.mp3",
+      "mode": "passage",
+      "start": 34.716,
+      "end": 51.684,
+      "assetSha256": "5b596fabd14fada20dfa63ab533a330f8bbaa4fc38e49f379ca3a59dc36d3544",
+      "speech": "How long is this parking permit valid? A. You are permitted to enter. B. Until your checkout time on Friday. C. The parking lot is behind the hotel."
+    },
+    {
+      "path": "audio/azure-v1/test-03-09.mp3",
+      "mode": "practice",
+      "start": 36.468,
+      "end": 53.604,
+      "assetSha256": "4c5371f92809a8a2ece15d9bd5b4aa9969e9639055a66626bc9330d2a7f432a9",
+      "speech": "How long is this parking permit valid? A. You are permitted to enter. B. Until you check out time on Friday. C. The parking lot is behind the hotel."
+    }
+  ],
+  "audioCorroboration": {
+    "Q027 practice option B": {
+      "variants": {
+        "027-practice.rate0.90": "How long is this parking permit valid? A. You are permitted to enter. B. Until you check out time on Friday. C. The parking lot is behind the hotel.",
+        "027-practice.rate1.12": "How long is this parking permit valid? A. You are permitted to enter. B. Until your checkout time on Friday. C. The parking lot is behind the hotel.",
+        "b027-practice": "B. Until your checkout time on Friday."
+      },
+      "result": "Untouched-rate and slower ASR mispartition your checkout as you check out; pitch-preserving 1.12× on the same actual clip transcribes Until your checkout time on Friday, agreeing with script, reference formal audio and key score. Checkout time / Friday and ordered options were recoverable in every pass."
+    }
+  }
+}

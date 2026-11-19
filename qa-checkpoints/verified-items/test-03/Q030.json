@@ -1,0 +1,116 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Deadline advanced from assumed Monday to Friday corrects premise. Appliance warranty and a busy Monday are sound/day association distractors. Correct Chinese retains Monday as stated cutoff and precise moved-forward Friday. Exact normalized lexical transcript in both original playback modes, A–C in order. Actual cue 30 also confirmed in contiguous cue bank. No audio mismatch.",
+  "activeQuestion": {
+    "id": "t03-q030",
+    "testId": "test-03",
+    "number": 30,
+    "part": 2,
+    "groupId": "t03-g030",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "question_response"
+    ],
+    "prompt": "We still have until Monday to apply, do we not?",
+    "promptZh": "我們的申請期限仍到星期一，對吧？",
+    "options": [
+      {
+        "id": "A",
+        "text": "The appliance is under warranty.",
+        "zh": "這台電器仍在保固期內。",
+        "whyZh": "appliance 與 apply 的聲音聯想，主題不同。"
+      },
+      {
+        "id": "B",
+        "text": "Monday is usually our busiest day.",
+        "zh": "星期一通常是我們最忙的一天。",
+        "whyZh": "工作忙碌狀況不確認截止日。"
+      },
+      {
+        "id": "C",
+        "text": "They brought the deadline forward to Friday.",
+        "zh": "他們把截止日提前到星期五了。",
+        "whyZh": "修正可等到星期一的錯誤假設。"
+      }
+    ],
+    "answer": "C",
+    "explanationZh": "修正可等到星期一的錯誤假設。",
+    "evidence": "They brought the deadline forward to Friday.",
+    "vocabulary": [
+      {
+        "term": "bring forward",
+        "zh": "提前",
+        "note": "They brought the deadline forward to Friday."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g030",
+    "testId": "test-03",
+    "part": 2,
+    "title": "Application deadline",
+    "titleZh": "申請截止日",
+    "topic": "business",
+    "passage": "We still have until Monday to apply, do we not? A. The appliance is under warranty. B. Monday is usually our busiest day. C. They brought the deadline forward to Friday.",
+    "passageZh": "我們的申請期限仍到星期一，對吧？\nA. 這台電器仍在保固期內。\nB. 星期一通常是我們最忙的一天。\nC. 他們把截止日提前到星期五了。",
+    "audioScript": "We still have until Monday to apply, do we not? A. The appliance is under warranty. B. Monday is usually our busiest day. C. They brought the deadline forward to Friday.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "We still have until Monday to apply, do we not?"
+      },
+      {
+        "voice": "female",
+        "text": "A. The appliance is under warranty. B. Monday is usually our busiest day. C. They brought the deadline forward to Friday."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-10.mp3",
+    "duration": 17.184,
+    "audioStart": 36.852,
+    "audioEnd": 54.036,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-NG",
+        "role": "male",
+        "modelVoice": "en-NG-AbeoNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-NG",
+        "role": "female",
+        "modelVoice": "en-NG-EzinneNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "mode": "cue",
+      "start": 36.41079,
+      "end": 37.30179,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 30."
+    },
+    {
+      "path": "audio/formal-v2/test-03-10.mp3",
+      "mode": "passage",
+      "start": 35.94,
+      "end": 53.508,
+      "assetSha256": "29f35ac63ad4514b929d16aaabe4203d98346763cc0367968c54bfe6689a263c",
+      "speech": "We still have until Monday to apply, do we not? A. The appliance is under warranty. B. Monday is usually our busiest day. C. They brought the deadline forward to Friday."
+    },
+    {
+      "path": "audio/azure-v1/test-03-10.mp3",
+      "mode": "practice",
+      "start": 36.852,
+      "end": 54.036,
+      "assetSha256": "2ecc19105b285c5a68a7ec975783a865c535ca386a29dfe868c2fb4d4ca17fae",
+      "speech": "We still have until Monday to apply, do we not? A. The appliance is under warranty. B. Monday is usually our busiest day. C. They brought the deadline forward to Friday."
+    }
+  ]
+}

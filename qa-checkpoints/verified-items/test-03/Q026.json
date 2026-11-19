@@ -1,0 +1,116 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Volunteering if nobody else has gives a candidate introducer; accounting introduction and audio system are senses of words but not speakers. Chinese preserves conditional volunteering and guest speaker. Exact normalized lexical transcript in both original playback modes, A–C in order. Actual cue 26 also confirmed in contiguous cue bank. No audio mismatch.",
+  "activeQuestion": {
+    "id": "t03-q026",
+    "testId": "test-03",
+    "number": 26,
+    "part": 2,
+    "groupId": "t03-g026",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "question_response"
+    ],
+    "prompt": "Who is introducing the guest speaker?",
+    "promptZh": "誰要介紹客座講者？",
+    "options": [
+      {
+        "id": "A",
+        "text": "I can do it if nobody else has volunteered.",
+        "zh": "如果還沒有人自願，我可以。",
+        "whyZh": "主動承擔介紹工作，合理回答誰來做。"
+      },
+      {
+        "id": "B",
+        "text": "An introduction to accounting.",
+        "zh": "會計入門。",
+        "whyZh": "introduction 的其他意思，未回答人選。"
+      },
+      {
+        "id": "C",
+        "text": "The speaker system is new.",
+        "zh": "擴音系統是新的。",
+        "whyZh": "把 speaker 人物誤當音響設備。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "主動承擔介紹工作，合理回答誰來做。",
+    "evidence": "I can do it if nobody else has volunteered.",
+    "vocabulary": [
+      {
+        "term": "volunteer",
+        "zh": "自願",
+        "note": "I can do it if nobody else has volunteered."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g026",
+    "testId": "test-03",
+    "part": 2,
+    "title": "Guest speaker",
+    "titleZh": "客座講者",
+    "topic": "business",
+    "passage": "Who is introducing the guest speaker? A. I can do it if nobody else has volunteered. B. An introduction to accounting. C. The speaker system is new.",
+    "passageZh": "誰要介紹客座講者？\nA. 如果還沒有人自願，我可以。\nB. 會計入門。\nC. 擴音系統是新的。",
+    "audioScript": "Who is introducing the guest speaker? A. I can do it if nobody else has volunteered. B. An introduction to accounting. C. The speaker system is new.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Who is introducing the guest speaker?"
+      },
+      {
+        "voice": "female",
+        "text": "A. I can do it if nobody else has volunteered. B. An introduction to accounting. C. The speaker system is new."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-09.mp3",
+    "duration": 16.848,
+    "audioStart": 19.12,
+    "audioEnd": 35.968,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-PH",
+        "role": "male",
+        "modelVoice": "en-PH-JamesNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-PH",
+        "role": "female",
+        "modelVoice": "en-PH-RosaNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "mode": "cue",
+      "start": 30.75158,
+      "end": 31.93379,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "No. 26"
+    },
+    {
+      "path": "audio/formal-v2/test-03-09.mp3",
+      "mode": "passage",
+      "start": 17.68,
+      "end": 34.216,
+      "assetSha256": "5b596fabd14fada20dfa63ab533a330f8bbaa4fc38e49f379ca3a59dc36d3544",
+      "speech": "Who is introducing the guest speaker? A. I can do it if nobody else has volunteered. B. An introduction to accounting. C. The speaker system is new."
+    },
+    {
+      "path": "audio/azure-v1/test-03-09.mp3",
+      "mode": "practice",
+      "start": 19.12,
+      "end": 35.968,
+      "assetSha256": "4c5371f92809a8a2ece15d9bd5b4aa9969e9639055a66626bc9330d2a7f432a9",
+      "speech": "Who is introducing the guest speaker? A. I can do it if nobody else has volunteered. B. An introduction to accounting. C. The speaker system is new."
+    }
+  ]
+}

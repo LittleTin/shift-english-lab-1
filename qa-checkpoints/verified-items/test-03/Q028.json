@@ -1,0 +1,116 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Should have been twelve signals shipment shortage. Checking whether the other two shipped separately addresses count; comfort and chairperson unrelated. Chinese accurately conveys separately shipped two, without claiming exactly ten units as an independently stated fact. Exact normalized lexical transcript in both original playback modes, A–C in order. Actual cue 28 also confirmed in contiguous cue bank. No audio mismatch.",
+  "activeQuestion": {
+    "id": "t03-q028",
+    "testId": "test-03",
+    "number": 28,
+    "part": 2,
+    "groupId": "t03-g028",
+    "topic": "manufacturing",
+    "difficulty": "intermediate",
+    "tags": [
+      "manufacturing",
+      "question_response"
+    ],
+    "prompt": "There should have been twelve chairs in this shipment.",
+    "promptZh": "這批貨應該有十二張椅子才對。",
+    "options": [
+      {
+        "id": "A",
+        "text": "I will check whether the other two were sent separately.",
+        "zh": "我會確認另外兩張是否分開寄送。",
+        "whyZh": "辨識數量短缺的隱含問題，提出具體查詢行動。"
+      },
+      {
+        "id": "B",
+        "text": "They are comfortable to sit on.",
+        "zh": "坐起來很舒服。",
+        "whyZh": "評論舒適度，沒有處理數量問題。"
+      },
+      {
+        "id": "C",
+        "text": "The chairperson is away today.",
+        "zh": "主席今天不在。",
+        "whyZh": "chairperson 與 chairs 含同字根，但主題不同。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "辨識數量短缺的隱含問題，提出具體查詢行動。",
+    "evidence": "I will check whether the other two were sent separately.",
+    "vocabulary": [
+      {
+        "term": "separately",
+        "zh": "分開地",
+        "note": "I will check whether the other two were sent separately."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g028",
+    "testId": "test-03",
+    "part": 2,
+    "title": "Shipment discrepancy",
+    "titleZh": "出貨差異",
+    "topic": "manufacturing",
+    "passage": "There should have been twelve chairs in this shipment. A. I will check whether the other two were sent separately. B. They are comfortable to sit on. C. The chairperson is away today.",
+    "passageZh": "這批貨應該有十二張椅子才對。\nA. 我會確認另外兩張是否分開寄送。\nB. 坐起來很舒服。\nC. 主席今天不在。",
+    "audioScript": "There should have been twelve chairs in this shipment. A. I will check whether the other two were sent separately. B. They are comfortable to sit on. C. The chairperson is away today.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "There should have been twelve chairs in this shipment."
+      },
+      {
+        "voice": "female",
+        "text": "A. I will check whether the other two were sent separately. B. They are comfortable to sit on. C. The chairperson is away today."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-10.mp3",
+    "duration": 18.336,
+    "audioStart": 0.5,
+    "audioEnd": 18.836,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-IE",
+        "role": "male",
+        "modelVoice": "en-IE-ConnorNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-IE",
+        "role": "female",
+        "modelVoice": "en-IE-EmilyNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "mode": "cue",
+      "start": 33.64988,
+      "end": 34.77158,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 28."
+    },
+    {
+      "path": "audio/formal-v2/test-03-10.mp3",
+      "mode": "passage",
+      "start": 0.5,
+      "end": 17.804,
+      "assetSha256": "29f35ac63ad4514b929d16aaabe4203d98346763cc0367968c54bfe6689a263c",
+      "speech": "There should have been 12 chairs in this shipment. A. I will check whether the other two were sent separately. B. They are comfortable to sit on. C. The chairperson is away today."
+    },
+    {
+      "path": "audio/azure-v1/test-03-10.mp3",
+      "mode": "practice",
+      "start": 0.5,
+      "end": 18.836,
+      "assetSha256": "2ecc19105b285c5a68a7ec975783a865c535ca386a29dfe868c2fb4d4ca17fae",
+      "speech": "There should have been 12 chairs in this shipment. A. I will check whether the other two were sent separately. B. They are comfortable to sit on. C. The chairperson is away today."
+    }
+  ]
+}

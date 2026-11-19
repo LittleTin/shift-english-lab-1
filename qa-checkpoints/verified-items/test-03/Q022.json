@@ -1,0 +1,116 @@
+{
+  "status": "verified-item-not-published",
+  "scope": "listening",
+  "checks": "Leaving badge in box by exit is an actionable reply to whether to return it now; visitor early and first visit do not address badge return. Chinese identifies issue and means correctly. Formal and practice exact ASR match of prompt and A–C in order; real cue Number 22. Known option waveforms independently align against Jenny A/B/C.",
+  "activeQuestion": {
+    "id": "t03-q022",
+    "testId": "test-03",
+    "number": 22,
+    "part": 2,
+    "groupId": "t03-g022",
+    "topic": "business",
+    "difficulty": "intermediate",
+    "tags": [
+      "business",
+      "question_response"
+    ],
+    "prompt": "Should I return this visitor badge now?",
+    "promptZh": "我現在應該歸還訪客識別證嗎？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Please leave it in the box by the exit.",
+        "zh": "請放進出口旁的盒子。",
+        "whyZh": "提供歸還方式，合理回應現在歸還的詢問。"
+      },
+      {
+        "id": "B",
+        "text": "The visitor arrived early.",
+        "zh": "訪客提早到了。",
+        "whyZh": "談訪客到達而非識別證歸還。"
+      },
+      {
+        "id": "C",
+        "text": "It is your first visit.",
+        "zh": "這是你第一次來訪。",
+        "whyZh": "來訪次數不回答歸還時機。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "提供歸還方式，合理回應現在歸還的詢問。",
+    "evidence": "Please leave it in the box by the exit.",
+    "vocabulary": [
+      {
+        "term": "badge",
+        "zh": "識別證",
+        "note": "Please leave it in the box by the exit."
+      }
+    ],
+    "revision": 1
+  },
+  "group": {
+    "id": "t03-g022",
+    "testId": "test-03",
+    "part": 2,
+    "title": "Visitor badge",
+    "titleZh": "訪客識別證",
+    "topic": "business",
+    "passage": "Should I return this visitor badge now? A. Please leave it in the box by the exit. B. The visitor arrived early. C. It is your first visit.",
+    "passageZh": "我現在應該歸還訪客識別證嗎？\nA. 請放進出口旁的盒子。\nB. 訪客提早到了。\nC. 這是你第一次來訪。",
+    "audioScript": "Should I return this visitor badge now? A. Please leave it in the box by the exit. B. The visitor arrived early. C. It is your first visit.",
+    "turns": [
+      {
+        "voice": "male",
+        "text": "Should I return this visitor badge now?"
+      },
+      {
+        "voice": "female",
+        "text": "A. Please leave it in the box by the exit. B. The visitor arrived early. C. It is your first visit."
+      }
+    ],
+    "audio": "audio/azure-v1/test-03-08.mp3",
+    "duration": 15.888,
+    "audioStart": 0.5,
+    "audioEnd": 16.388,
+    "audioSpeakers": [
+      {
+        "speaker": "male",
+        "locale": "en-AU",
+        "role": "male",
+        "modelVoice": "en-AU-WilliamNeural"
+      },
+      {
+        "speaker": "female",
+        "locale": "en-AU",
+        "role": "female",
+        "modelVoice": "en-AU-NatashaNeural"
+      }
+    ]
+  },
+  "audio": [
+    {
+      "path": "audio/formal/test-03-cues-01.mp3",
+      "mode": "cue",
+      "start": 25.08521,
+      "end": 26.19542,
+      "assetSha256": "2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51",
+      "speech": "Number 22."
+    },
+    {
+      "path": "audio/formal-v2/test-03-08.mp3",
+      "mode": "passage",
+      "start": 0.5,
+      "end": 16.652,
+      "assetSha256": "cc051e00098335f2a20950a01884948dcc265877f77e90b2ce86df4f968ff6ca",
+      "speech": "Should I return this visitor badge now? A. Please leave it in the box by the exit. B. The visitor arrived early. C. It is your first visit."
+    },
+    {
+      "path": "audio/azure-v1/test-03-08.mp3",
+      "mode": "practice",
+      "start": 0.5,
+      "end": 16.388,
+      "assetSha256": "5ad4166812ea2f061981b166042388c7bf8b2a29733e2d413d47940909d6837a",
+      "speech": "Should I return this visitor badge now? A. Please leave it in the box by the exit. B. The visitor arrived early. C. It is your first visit."
+    }
+  ]
+}
