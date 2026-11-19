@@ -1,8 +1,54 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "A: within walking distance defines the accessible range; through/toward/among express the wrong relations.",
+  "checks": "The conditional expresses necessity, not a casual preference; waiting-list eligibility and the earlier remaining capacity must be interpreted together. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t03-q116-r2",
+    "testId": "test-03",
+    "number": 116,
+    "part": 5,
+    "groupId": null,
+    "topic": "daily",
+    "tags": [
+      "daily",
+      "context"
+    ],
+    "vocabulary": [],
+    "difficulty": "intermediate",
+    "prompt": "The Friday evening train is sold out. The clerk can add us to a waiting list now, but that will not guarantee us seats. Of the two trains, if we need guaranteed seats for Friday, we ____ book the earlier one, which still has room.",
+    "promptZh": "週五晚間的列車已客滿。售票員現在可以幫我們登記候補，但不保證有座位。如果週五一定要有座位，這兩班車中，我們____訂較早班次的車票；那班還有空位。",
+    "options": [
+      {
+        "id": "A",
+        "text": "need not",
+        "zh": "不必",
+        "whyZh": "取消搭前一班的必要性，但留下的晚班候補並不保證有座。"
+      },
+      {
+        "id": "B",
+        "text": "will have to",
+        "zh": "就得",
+        "whyZh": "有座位是必要條件；較早的班次仍有空位，而晚班只能候補，因此在所列的兩個選擇之間就得改搭前一班。"
+      },
+      {
+        "id": "C",
+        "text": "will be unable to",
+        "zh": "將無法",
+        "whyZh": "較早的班次明示還有空位，故不能說無法預訂；此處要表達的是依照座位需求必須選較早的班次。"
+      },
+      {
+        "id": "D",
+        "text": "would rather not",
+        "zh": "寧可不",
+        "whyZh": "表示不願搭較早的車，但晚班候補無法滿足座位必要條件。"
+      }
+    ],
+    "answer": "B",
+    "explanationZh": "有座位是必要條件；較早的班次仍有空位，而晚班只能候補，因此在所列的兩個選擇之間就得改搭前一班。",
+    "evidence": "The conditional expresses necessity, not a casual preference; waiting-list eligibility and the earlier remaining capacity must be interpreted together.",
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t03-q116",
     "testId": "test-03",
     "number": 116,
@@ -53,5 +99,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-03/Q116/verification.json"
 }

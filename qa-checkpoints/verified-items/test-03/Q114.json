@@ -1,8 +1,54 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "A: both managers’ approval is the prerequisite; approving does not denote the formal permission here, approve is a verb, approved is adjectival.",
+  "checks": "The same-number rule only applies within a carton; the stated wrong-unit consequence requires a distinct carton, not the original or an unrestricted choice. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t03-q114-r2",
+    "testId": "test-03",
+    "number": 114,
+    "part": 5,
+    "groupId": null,
+    "topic": "manufacturing",
+    "tags": [
+      "manufacturing",
+      "context"
+    ],
+    "vocabulary": [],
+    "difficulty": "intermediate",
+    "prompt": "For the pilot lot, each carton contains two labels, one for the carton and one for its inspection sheet. The serial number is unique to each carton and is printed on both of its labels. If a label on an inspection sheet is damaged, replacing it with one from ____ carton would link the sheet to the wrong unit.",
+    "promptZh": "試產批次每箱附兩張標籤，一張貼在箱子上，另一張貼在該箱的檢驗單上。每箱的序號各不相同，同一箱的兩張標籤則印有同一個序號。如果檢驗單上的標籤破損，以____箱的標籤替換，就會讓檢驗單對應到錯誤的產品。",
+    "options": [
+      {
+        "id": "A",
+        "text": "another",
+        "zh": "另一",
+        "whyZh": "另一箱的標籤則用該箱自己的序號；混用會把檢驗單指向別的產品。"
+      },
+      {
+        "id": "B",
+        "text": "the same",
+        "zh": "同一",
+        "whyZh": "同一箱的兩張標籤序號一致，換用這一箱的另一張不會指向不同產品。"
+      },
+      {
+        "id": "C",
+        "text": "that particular",
+        "zh": "指定的那一",
+        "whyZh": "在這裡會指回標籤受損的那一箱；兩張標籤的序號一致，沒有更換對象。"
+      },
+      {
+        "id": "D",
+        "text": "any",
+        "zh": "任何一",
+        "whyZh": "範圍包含原本那一箱，但原箱的另一張標籤有相同序號，不一定會指向錯誤產品。"
+      }
+    ],
+    "answer": "A",
+    "explanationZh": "另一箱的標籤則用該箱自己的序號；混用會把檢驗單指向別的產品。",
+    "evidence": "The same-number rule only applies within a carton; the stated wrong-unit consequence requires a distinct carton, not the original or an unrestricted choice.",
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t03-q114",
     "testId": "test-03",
     "number": 114,
@@ -53,5 +99,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-03/Q114/verification.json"
 }

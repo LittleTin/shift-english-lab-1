@@ -1,8 +1,54 @@
 {
   "status": "verified-item-not-published",
   "scope": "reading",
-  "checks": "D: immediately is the manner/time adverb for the contact action; noun and adjective forms fail.",
+  "checks": "Each connective can introduce the clause grammatically; the resource shortfall and the start of all units establish the positive condition. Independent blind solve and item-level English, Traditional Chinese, answer and each distractor verified after language corrections.",
   "activeQuestion": {
+    "id": "t03-q112-r2",
+    "testId": "test-03",
+    "number": 112,
+    "part": 5,
+    "groupId": null,
+    "topic": "manufacturing",
+    "tags": [
+      "manufacturing",
+      "context"
+    ],
+    "vocabulary": [],
+    "difficulty": "intermediate",
+    "prompt": "Our current gasket supplier can cover only half the pilot order. We can still start all units on Monday, ____ the alternate supplier confirms that the remaining gaskets will arrive by Friday.",
+    "promptZh": "目前的墊圈供應商只能供應試產訂單所需數量的一半。我們仍可在週一開始生產所有產品，____備用供應商確認會在週五前交付其餘墊圈。",
+    "options": [
+      {
+        "id": "A",
+        "text": "even if",
+        "zh": "即使",
+        "whyZh": "即使備用供應商確認也能如期開工，沒有表達確認是一個必要的補足條件；「一半」讓補足缺料成為關鍵。"
+      },
+      {
+        "id": "B",
+        "text": "whether or not",
+        "zh": "無論是否",
+        "whyZh": "表示有無交貨確認都不影響全數開工，與現有供應量只夠一半矛盾。"
+      },
+      {
+        "id": "C",
+        "text": "unless",
+        "zh": "除非",
+        "whyZh": "會把確認交貨讀成阻止如期開工的條件，因果方向相反。"
+      },
+      {
+        "id": "D",
+        "text": "provided that",
+        "zh": "前提是",
+        "whyZh": "備用供應商若能確認及時補足缺料，所有產品才有足夠材料按期開工；provided that 表示後面的子句是前面結果成立的條件。"
+      }
+    ],
+    "answer": "D",
+    "explanationZh": "備用供應商若能確認及時補足缺料，所有產品才有足夠材料按期開工；provided that 表示後面的子句是前面結果成立的條件。",
+    "evidence": "Each connective can introduce the clause grammatically; the resource shortfall and the start of all units establish the positive condition.",
+    "revision": 2
+  },
+  "originalQuestion": {
     "id": "t03-q112",
     "testId": "test-03",
     "number": 112,
@@ -53,5 +99,6 @@
       }
     ],
     "revision": 1
-  }
+  },
+  "retiredSourceReference": "question-reserve/test-03/Q112/verification.json"
 }
