@@ -12,7 +12,7 @@
   ],
   "prompt": "What must happen for P8-R to receive tonight’s corrected time rows?",
   "promptZh": "P8-R 要收到今晚修正後的時段資料列，必須完成什麼？",
-  "answer": "D",
+  "answer": "B",
   "evidence": "the systems team must register it before the overnight job can write there. / The systems desk closes at 5:00 p.m.; destination changes received after closing are handled tomorrow.",
   "options": [
     {
@@ -24,10 +24,10 @@
     },
     {
       "id": "B",
-      "text": "Leave a copy of the old rows in it.",
-      "zh": "在裡面保留一份舊時段資料。",
-      "why": "The handover explicitly forbids copying old rows.",
-      "whyZh": "交班訊息明確禁止複製舊資料列。"
+      "text": "Have the systems team register it as the destination before the overnight job.",
+      "zh": "請系統小組在夜間作業前將它登記為匯出目的地。",
+      "why": "Only the registered destination receives the export; the request must be made before closing to be handled today.",
+      "whyZh": "只有已登記的目的地會收到匯出；要在今天處理，必須在服務台關閉前提出。"
     },
     {
       "id": "C",
@@ -38,10 +38,10 @@
     },
     {
       "id": "D",
-      "text": "Have the systems team register it as the destination before the overnight job.",
-      "zh": "請系統小組在夜間作業前將它登記為匯出目的地。",
-      "why": "Only the registered destination receives the export; the request must be made before closing to be handled today.",
-      "whyZh": "只有已登記的目的地會收到匯出；要在今天處理，必須在服務台關閉前提出。"
+      "text": "Leave a copy of the old rows in it.",
+      "zh": "在裡面保留一份舊時段資料。",
+      "why": "The handover explicitly forbids copying old rows.",
+      "whyZh": "交班訊息明確禁止複製舊資料列。"
     }
   ],
   "explanationZh": "只有已登記的目的地會收到匯出；要在今天處理，必須在服務台關閉前提出。"

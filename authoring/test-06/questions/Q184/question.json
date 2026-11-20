@@ -12,7 +12,7 @@
   ],
   "prompt": "What result should be used for tomorrow's comparison, and what should be retained in the report?",
   "promptZh": "明天應使用哪筆結果比對？報告還要保存什麼？",
-  "answer": "D",
+  "answer": "B",
   "options": [
     {
       "id": "A",
@@ -22,9 +22,9 @@
     },
     {
       "id": "B",
-      "text": "Use 0.3 mm left and remove the repeat from the report.",
-      "zh": "以向左 0.3 毫米比對，報告刪掉複測。",
-      "whyZh": "第一筆是清屑前的失敗值，應保留，但比對採複測。"
+      "text": "Use 0.2 mm right and also preserve the 0.3 mm left failure.",
+      "zh": "用向右 0.2 毫米比對，也保留向左 0.3 毫米的失敗值。",
+      "whyZh": "日誌列出兩筆方向及數值；Calder 指示採複測作基準，首次失敗值保留。"
     },
     {
       "id": "C",
@@ -34,9 +34,9 @@
     },
     {
       "id": "D",
-      "text": "Use 0.2 mm right and also preserve the 0.3 mm left failure.",
-      "zh": "用向右 0.2 毫米比對，也保留向左 0.3 毫米的失敗值。",
-      "whyZh": "日誌列出兩筆方向及數值；Calder 指示採複測作基準，首次失敗值保留。"
+      "text": "Use 0.3 mm left and remove the repeat from the report.",
+      "zh": "以向左 0.3 毫米比對，報告刪掉複測。",
+      "whyZh": "第一筆是清屑前的失敗值，應保留，但比對採複測。"
     }
   ],
   "explanationZh": "日誌列出兩筆方向及數值；Calder 指示採複測作基準，首次失敗值保留。",
