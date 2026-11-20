@@ -1,0 +1,52 @@
+{
+  "id": "t05-q043",
+  "testId": "test-05",
+  "number": 43,
+  "part": 3,
+  "groupId": "t05-g041",
+  "revision": 1,
+  "topic": "manufacturing",
+  "difficulty": "advanced",
+  "tags": [
+    "conversation",
+    "manufacturing"
+  ],
+  "prompt": "Which photos should the guide use for the two stages of work?",
+  "promptZh": "指南的兩個作業階段應分別使用哪些照片？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A new wire-side photo for assembly and yesterday's photo for final inspection.",
+      "zh": "組裝用新拍的進線側照片，最終檢驗用昨天的照片。",
+      "whyZh": "組裝要對照進線側圖面；裝好後檢驗人員看得到的是插板端，正好是昨天拍的方向。"
+    },
+    {
+      "id": "B",
+      "text": "Yesterday's photo for assembly and a new wire-side photo for inspection.",
+      "zh": "組裝用昨天的照片，檢驗用新拍的進線側照片。",
+      "whyZh": "把兩階段的適用視角對調了。"
+    },
+    {
+      "id": "C",
+      "text": "A new wire-side photo for both stages.",
+      "zh": "兩階段都用新拍的進線側照片。",
+      "whyZh": "組裝適用，但裝好後檢驗人員看得到的是插板端。"
+    },
+    {
+      "id": "D",
+      "text": "Yesterday's photo for both stages.",
+      "zh": "兩階段都用昨天的照片。",
+      "whyZh": "適合檢驗，但昨天從插板端拍，與組裝圖的進線側不同。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "組裝要對照進線側圖面；裝好後檢驗人員看得到的是插板端，正好是昨天拍的方向。",
+  "evidence": "The drawing shows the plug from the side where the wires go in. You're looking into the end that plugs into the board. Turn the sample around; the green wire should be on your left now. | Yes, it is. We still need a photo for the assembly guide. The photo we took yesterday was from the board end, just like my first view. | Keep yesterday's photo for the final inspection page. That's the end inspectors can see once the harness is in place. For assembly, take a new photo that shows the same side as the drawing.",
+  "vocabulary": [
+    {
+      "term": "in place",
+      "zh": "在應有位置",
+      "note": "once the harness is in place 指裝好線束後。"
+    }
+  ]
+}

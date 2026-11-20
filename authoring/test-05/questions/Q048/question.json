@@ -1,0 +1,52 @@
+{
+  "id": "t05-q048",
+  "testId": "test-05",
+  "number": 48,
+  "part": 3,
+  "groupId": "t05-g047",
+  "revision": 1,
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "conversation",
+    "manufacturing"
+  ],
+  "prompt": "Why might the original readings have been too low?",
+  "promptZh": "原先的讀值可能為什麼偏低？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The tip did not reach either strip.",
+      "zh": "測頭沒有碰到任何一條膠條。",
+      "whyZh": "男方把拉桿壓到底；問題是壓得太多，不是沒碰到。"
+    },
+    {
+      "id": "B",
+      "text": "The old value was written on the wrong card.",
+      "zh": "舊數值記在錯的卡片上。",
+      "whyZh": "對話不能證明卡片記錯；先檢查量測手法。"
+    },
+    {
+      "id": "C",
+      "text": "The lever pressed hard enough to compress the rubber.",
+      "zh": "拉桿施力太大，把橡膠壓縮了。",
+      "whyZh": "壓到底後連核准樣品的讀值都偏低；女方明說拉桿會擠壓橡膠。"
+    },
+    {
+      "id": "D",
+      "text": "The technician used a different gauge for each strip.",
+      "zh": "技術員每條都用不同的量具。",
+      "whyZh": "男方回答是用同一部量具量兩條。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "壓到底後連核准樣品的讀值都偏低；女方明說拉桿會擠壓橡膠。",
+  "evidence": "Yes. I measured both with the lever pulled all the way down. The reading for the approved strip was lower than the value on its card, too. | That lever can squeeze rubber. Lower it just until the tip touches the strip, then stop. Check the approved strip that way first. If its reading matches the card, use that approach on the new strips.",
+  "vocabulary": [
+    {
+      "term": "compress",
+      "zh": "壓縮",
+      "note": "compress 表示因施力而縮小厚度或體積。"
+    }
+  ]
+}

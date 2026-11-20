@@ -1,0 +1,52 @@
+{
+  "id": "t05-q049",
+  "testId": "test-05",
+  "number": 49,
+  "part": 3,
+  "groupId": "t05-g047",
+  "revision": 1,
+  "topic": "manufacturing",
+  "difficulty": "advanced",
+  "tags": [
+    "conversation",
+    "manufacturing"
+  ],
+  "prompt": "Which note would correctly tell the next shift when to retest the new strips and when to wait?",
+  "promptZh": "哪一項交班紀錄能正確說明何時可重測新版膠條、何時要先等等？",
+  "options": [
+    {
+      "id": "A",
+      "text": "If the approved strip reads low, record that and retest the new strips before the gauge check; if it matches, wait.",
+      "zh": "若核准膠條讀值偏低，先記錄並重測新版，再檢查量具；若相符，先等候。",
+      "whyZh": "偏低才需要先查量具；相符則可以直接照同樣手法重測。"
+    },
+    {
+      "id": "B",
+      "text": "If the approved strip matches its card, retest the new strips; if it still reads low, record it and wait for a gauge check.",
+      "zh": "若核准膠條讀值符合卡片，就重測新版；若仍偏低，記錄讀值並先等量具檢查。",
+      "whyZh": "女方說相符才可直接沿用輕觸手法；男方補充不相符且偏低時，要記錄、先查量具再重測。"
+    },
+    {
+      "id": "C",
+      "text": "If the approved strip matches its card, retest the new strips; if it still reads low, replace the approved strip and start over.",
+      "zh": "若核准膠條讀值符合卡片，就重測新版；若仍偏低，更換核准膠條並重新開始。",
+      "whyZh": "相符的處理對，但偏低要記錄並查量具，不是換參照件。"
+    },
+    {
+      "id": "D",
+      "text": "Record both results and send the gauge for a check in either case before retesting the new strips.",
+      "zh": "無論讀值相符或偏低，都記錄結果並先送檢量具，再重測新版。",
+      "whyZh": "讀值相符時不需要等待量具檢查；只有仍偏低才要求先查。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "女方說相符才可直接沿用輕觸手法；男方補充不相符且偏低時，要記錄、先查量具再重測。",
+  "evidence": "That lever can squeeze rubber. Lower it just until the tip touches the strip, then stop. Check the approved strip that way first. If its reading matches the card, use that approach on the new strips. | Understood. If the approved strip still reads low, I'll note the result and ask our gauge team to check the instrument before we measure the new strips again.",
+  "vocabulary": [
+    {
+      "term": "matches the card",
+      "zh": "與卡片記錄相符",
+      "note": "match 可指兩個數值相合，不是查找相配物件。"
+    }
+  ]
+}

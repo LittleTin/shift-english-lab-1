@@ -1,0 +1,52 @@
+{
+  "id": "t05-q042",
+  "testId": "test-05",
+  "number": 42,
+  "part": 3,
+  "groupId": "t05-g041",
+  "revision": 1,
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "conversation",
+    "manufacturing"
+  ],
+  "prompt": "Why did the sample initially seem different from the drawing?",
+  "promptZh": "樣品起初為什麼看來與圖面不同？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The green wire had been moved to a different slot.",
+      "zh": "綠線被移到了另一個插槽。",
+      "whyZh": "她只把樣品轉向，並沒移動綠線。"
+    },
+    {
+      "id": "B",
+      "text": "The drawing showed a different plug.",
+      "zh": "圖面畫的是另一種插頭。",
+      "whyZh": "男方比的是同一種接頭的兩端，不是換接頭。"
+    },
+    {
+      "id": "C",
+      "text": "The woman was looking at a photo of another sample.",
+      "zh": "女方看的是另一件樣品的照片。",
+      "whyZh": "這時她看的是工作檯上的樣品；照片是稍後才提到。"
+    },
+    {
+      "id": "D",
+      "text": "The woman was looking at the plug from the opposite end.",
+      "zh": "女方是從接頭的另一端看的。",
+      "whyZh": "圖面從進線側看；女方從插板端看，轉向後便一致。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "圖面從進線側看；女方從插板端看，轉向後便一致。",
+  "evidence": "The drawing says the green wire goes in the left slot, but the sample on my bench has it on the right. | The drawing shows the plug from the side where the wires go in. You're looking into the end that plugs into the board. Turn the sample around; the green wire should be on your left now. | Yes, it is. We still need a photo for the assembly guide. The photo we took yesterday was from the board end, just like my first view.",
+  "vocabulary": [
+    {
+      "term": "from the opposite end",
+      "zh": "從另一端看",
+      "note": "opposite end 表示同一物件的反向視角。"
+    }
+  ]
+}
