@@ -1,0 +1,52 @@
+{
+  "id": "t05-q189",
+  "testId": "test-05",
+  "number": 189,
+  "part": 7,
+  "groupId": "t05-r-p7-11",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "triple-document",
+    "business"
+  ],
+  "prompt": "What should the corrected entry show?",
+  "promptZh": "更正後的計費資料應如何填寫？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Charge 2.40 kg at $18 per kg and add ice at no cost.",
+      "zh": "以每公斤 18 美元計費 2.40 公斤，冰不收費。",
+      "whyZh": "單價正確、冰免費，但仍沿用把容器低估為 0.20 公斤的錯誤重量。"
+    },
+    {
+      "id": "B",
+      "text": "Charge 2.00 kg at a lower unit price.",
+      "zh": "以較低單價計費 2.00 公斤。",
+      "whyZh": "新計費重量正確，但當事人明說單價符合約定，不能改。"
+    },
+    {
+      "id": "C",
+      "text": "Charge 2.60 kg at $18 per kg because the fish cannot be returned.",
+      "zh": "因無法退魚，以每公斤 18 美元計費 2.60 公斤。",
+      "whyZh": "2.60 是總重；政策容許不退魚而修正，仍須扣容器。"
+    },
+    {
+      "id": "D",
+      "text": "Charge 2.00 kg at $18 per kg, without charging for the ice.",
+      "zh": "以每公斤 18 美元計費 2.00 公斤，冰不收費。",
+      "whyZh": "總重 2.60 減來訊證實的皮重 0.60 等於 2.00；單價不變、另袋冰免費。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "總重 2.60 減來訊證實的皮重 0.60 等於 2.00；單價不變、另袋冰免費。",
+  "evidence": "Document 1 · Counter policy\nFor orders weighed in a reusable customer tub, the clerk must deduct the tub’s empty weight. The receipt shows gross weight (fish plus tub), tare (empty tub), and chargeable weight. Ice supplied in a separate bag is free and must not be put on the scale. If the recorded weights are wrong, contact the counter with the receipt number and a photo of the empty tub on a scale. We can correct an invoice without taking back the fish.\n\nDocument 2 · Receipt and clerk’s note\nRC-241 · Fresh cod · Unit price: $18 per kg. Gross weight: 2.60 kg. Tare entered: 0.20 kg. Chargeable weight: 2.40 kg. Clerk’s note: White tub supplied by customer. Ice handed over in a separate bag after weighing.\n\nDocument 3 · Message from the café\nWe have already prepared the fish, so a return isn’t possible. I weighed the empty white tub this afternoon: the display read 0.60 kg, and the photo is attached. The unit price on the receipt matches the agreed price. Could you correct the invoice rather than issuing a credit on our next order? — Lina",
+  "vocabulary": [
+    {
+      "term": "chargeable weight",
+      "zh": "計費重量",
+      "note": "chargeable 形容可計入帳單的重量或服務。"
+    }
+  ]
+}

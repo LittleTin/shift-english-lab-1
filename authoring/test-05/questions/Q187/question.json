@@ -1,0 +1,52 @@
+{
+  "id": "t05-q187",
+  "testId": "test-05",
+  "number": 187,
+  "part": 7,
+  "groupId": "t05-r-p7-11",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "triple-document",
+    "business"
+  ],
+  "prompt": "What does Lina want the counter to do?",
+  "promptZh": "Lina 希望櫃檯怎麼處理？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Issue a corrected invoice.",
+      "zh": "開立更正後的發票。",
+      "whyZh": "Lina 明確要 correct the invoice，而不要抵扣下次訂單。"
+    },
+    {
+      "id": "B",
+      "text": "Take the fish back for weighing.",
+      "zh": "收回魚貨重秤。",
+      "whyZh": "魚貨已處理；規則也允許不退魚就更正。"
+    },
+    {
+      "id": "C",
+      "text": "Change the agreed unit price.",
+      "zh": "更改議定單價。",
+      "whyZh": "來訊說現有單價符合約定。"
+    },
+    {
+      "id": "D",
+      "text": "Apply a credit to a future order.",
+      "zh": "把差額抵扣下次訂單。",
+      "whyZh": "rather than 排除 Lina 不想採用的處理方式。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "Lina 明確要 correct the invoice，而不要抵扣下次訂單。",
+  "evidence": "Document 3 · Message from the café\nWe have already prepared the fish, so a return isn’t possible. I weighed the empty white tub this afternoon: the display read 0.60 kg, and the photo is attached. The unit price on the receipt matches the agreed price. Could you correct the invoice rather than issuing a credit on our next order? — Lina",
+  "vocabulary": [
+    {
+      "term": "issue an invoice",
+      "zh": "開立發票",
+      "note": "issue 在帳務用語表示正式開立文件，不是發生問題。"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "t05-q186",
+  "testId": "test-05",
+  "number": 186,
+  "part": 7,
+  "groupId": "t05-r-p7-11",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "triple-document",
+    "business"
+  ],
+  "prompt": "According to the counter policy, what does tare refer to?",
+  "promptZh": "依櫃檯規則，tare 指什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The weight of the fish alone",
+      "zh": "單算魚貨的重量",
+      "whyZh": "魚貨本身是扣除容器後的計費部分，不是皮重。"
+    },
+    {
+      "id": "B",
+      "text": "The weight of the fish and the tub",
+      "zh": "魚貨與容器的總重",
+      "whyZh": "文件明定兩者相加是 gross weight。"
+    },
+    {
+      "id": "C",
+      "text": "The weight of the empty tub",
+      "zh": "空容器的重量",
+      "whyZh": "規則直接將 tare 定義為 empty tub 的重量。"
+    },
+    {
+      "id": "D",
+      "text": "The weight of ice supplied with the fish",
+      "zh": "隨魚貨提供的冰塊重量",
+      "whyZh": "冰塊另袋免費，不放上秤。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "規則直接將 tare 定義為 empty tub 的重量。",
+  "evidence": "Document 1 · Counter policy\nFor orders weighed in a reusable customer tub, the clerk must deduct the tub’s empty weight. The receipt shows gross weight (fish plus tub), tare (empty tub), and chargeable weight. Ice supplied in a separate bag is free and must not be put on the scale. If the recorded weights are wrong, contact the counter with the receipt number and a photo of the empty tub on a scale. We can correct an invoice without taking back the fish.",
+  "vocabulary": [
+    {
+      "term": "tare",
+      "zh": "皮重",
+      "note": "商用秤重把容器皮重與商品分開記。"
+    }
+  ]
+}

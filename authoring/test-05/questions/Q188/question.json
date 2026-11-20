@@ -1,0 +1,52 @@
+{
+  "id": "t05-q188",
+  "testId": "test-05",
+  "number": 188,
+  "part": 7,
+  "groupId": "t05-r-p7-11",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "triple-document",
+    "business"
+  ],
+  "prompt": "Why is the bag of ice unlikely to explain the billing problem?",
+  "promptZh": "為什麼另袋的冰不太可能是計費有誤的原因？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The receipt lists a separate discount for it.",
+      "zh": "收據把冰塊折扣另行列出。",
+      "whyZh": "收據沒有列出冰塊折扣。"
+    },
+    {
+      "id": "B",
+      "text": "It was given to the customer after the fish was weighed.",
+      "zh": "秤完魚之後才把冰交給顧客。",
+      "whyZh": "規則禁止冰上秤，店員也記錄另袋冰在秤重後才交付。"
+    },
+    {
+      "id": "C",
+      "text": "The agreed price already included its weight.",
+      "zh": "議定價格已把冰重算進去。",
+      "whyZh": "政策明訂另袋冰免費且不秤；單價也與冰重無關。"
+    },
+    {
+      "id": "D",
+      "text": "Lina removed it from the tub before weighing the fish.",
+      "zh": "Lina 秤魚前已把冰從容器拿掉。",
+      "whyZh": "文件記載店員另外交冰，沒有 Lina 秤魚或取冰的記錄。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "規則禁止冰上秤，店員也記錄另袋冰在秤重後才交付。",
+  "evidence": "Document 1 · Counter policy\nFor orders weighed in a reusable customer tub, the clerk must deduct the tub’s empty weight. The receipt shows gross weight (fish plus tub), tare (empty tub), and chargeable weight. Ice supplied in a separate bag is free and must not be put on the scale. If the recorded weights are wrong, contact the counter with the receipt number and a photo of the empty tub on a scale. We can correct an invoice without taking back the fish.\n\nDocument 2 · Receipt and clerk’s note\nRC-241 · Fresh cod · Unit price: $18 per kg. Gross weight: 2.60 kg. Tare entered: 0.20 kg. Chargeable weight: 2.40 kg. Clerk’s note: White tub supplied by customer. Ice handed over in a separate bag after weighing.",
+  "vocabulary": [
+    {
+      "term": "separate bag",
+      "zh": "另袋",
+      "note": "in a separate bag 表示另袋盛裝，不與商品混秤。"
+    }
+  ]
+}

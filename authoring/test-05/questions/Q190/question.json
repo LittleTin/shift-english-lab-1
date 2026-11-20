@@ -1,0 +1,52 @@
+{
+  "id": "t05-q190",
+  "testId": "test-05",
+  "number": 190,
+  "part": 7,
+  "groupId": "t05-r-p7-11",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "triple-document",
+    "business"
+  ],
+  "prompt": "Which part of Lina’s message provides evidence of the tub’s actual empty weight?",
+  "promptZh": "Lina 的來訊中，哪一部分能證明該空容器的實際重量？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The attached photograph of the empty tub on a scale",
+      "zh": "附上的空容器秤重照片",
+      "whyZh": "Lina 說空容器秤重顯示 0.60 公斤；隨信照片記錄空容器在秤上的讀值，能佐證重量。"
+    },
+    {
+      "id": "B",
+      "text": "The statement that the fish has already been prepared",
+      "zh": "已處理魚貨的說明",
+      "whyZh": "這只解釋不能退貨，不證明容器重量。"
+    },
+    {
+      "id": "C",
+      "text": "The request not to apply a credit to the next order",
+      "zh": "不要抵扣下次訂單的要求",
+      "whyZh": "這是處理方式偏好，不證明秤重錯誤。"
+    },
+    {
+      "id": "D",
+      "text": "The agreement about the unit price",
+      "zh": "同意單價無誤",
+      "whyZh": "這說的是每公斤價格，不是空容器的實際重量。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "Lina 說空容器秤重顯示 0.60 公斤；隨信照片記錄空容器在秤上的讀值，能佐證重量。",
+  "evidence": "Document 1 · Counter policy\nFor orders weighed in a reusable customer tub, the clerk must deduct the tub’s empty weight. The receipt shows gross weight (fish plus tub), tare (empty tub), and chargeable weight. Ice supplied in a separate bag is free and must not be put on the scale. If the recorded weights are wrong, contact the counter with the receipt number and a photo of the empty tub on a scale. We can correct an invoice without taking back the fish.\n\nDocument 3 · Message from the café\nWe have already prepared the fish, so a return isn’t possible. I weighed the empty white tub this afternoon: the display read 0.60 kg, and the photo is attached. The unit price on the receipt matches the agreed price. Could you correct the invoice rather than issuing a credit on our next order? — Lina",
+  "vocabulary": [
+    {
+      "term": "empty tub",
+      "zh": "空容器",
+      "note": "empty 在此表示沒有內容物，「空」不是指容器不存在。"
+    }
+  ]
+}
