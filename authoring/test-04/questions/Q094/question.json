@@ -1,0 +1,53 @@
+{
+  "id": "t04-q094",
+  "testId": "test-04",
+  "part": 4,
+  "groupId": "t04-g052",
+  "number": 94,
+  "difficulty": "advanced",
+  "prompt": "A worker will submit a bus-pass claim on Saturday. On Wednesday she drove to the satellite office and did not use her pass. What can she do?",
+  "promptZh": "一名員工打算星期六送出公車月票補助申請。星期三她開車到分部，當天沒用月票。她可以怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Include both expenses in one request to receive both in this month’s pay.",
+      "zh": "把兩項費用併在一份申請，讓兩筆都在本月薪資入帳。",
+      "whyZh": "月票申請已過星期五，且兩項申請必須分開。"
+    },
+    {
+      "id": "B",
+      "text": "Expect the pass reimbursement next month and request a parking voucher separately for Wednesday.",
+      "zh": "等下個月領月票補助，並另外申請星期三的停車券。",
+      "whyZh": "月票申請晚於截止日；星期三未使用月票，可另申請當天停車券。"
+    },
+    {
+      "id": "C",
+      "text": "Expect the pass reimbursement next month but give up the parking voucher because her pass covered Wednesday.",
+      "zh": "下個月領月票補助，但月票星期三有效，不能申請停車券。",
+      "whyZh": "月票有效不等於當天使用；實際未使用就不排除星期三的停車券。"
+    },
+    {
+      "id": "D",
+      "text": "Request the Wednesday parking voucher separately and expect the Saturday pass claim in this month’s pay.",
+      "zh": "另外申請星期三的停車券，並等星期六的月票申請在本月薪資入帳。",
+      "whyZh": "停車處理正確，但星期六的月票申請要下個月才入帳。"
+    }
+  ],
+  "answer": "B",
+  "evidence": "Later claims will go into next month's pay. | You can still claim parking on a day you drove instead, provided you did not travel on the pass that day. | Keep the two requests separate.",
+  "explanationZh": "月票申請晚於截止日；星期三未使用月票，可另申請當天停車券。",
+  "difficultyRationale": "Integrate cutoff, actual vs covered usage, and separate workflow. Two near-miss answers satisfy one branch.",
+  "topic": "business",
+  "revision": 1,
+  "tags": [
+    "short-talk",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "provided you did not travel on the pass",
+      "zh": "前提是你當天沒有用該票搭車",
+      "note": "provided 表示條件；持有涵蓋當天的票和當天實際用票不同。"
+    }
+  ]
+}

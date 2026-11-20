@@ -1,0 +1,52 @@
+{
+  "id": "t04-q049",
+  "testId": "test-04",
+  "number": 49,
+  "part": 3,
+  "groupId": "t04-g037",
+  "difficulty": "advanced",
+  "answer": "B",
+  "prompt": "Which version would let the center make the needed changes without buying a font license while keeping the artwork locked?",
+  "promptZh": "哪個版本能讓藝文中心做所需的修改，又不用買字型授權，且能讓圖案維持鎖定？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A single flat image of the full poster using Lighthouse",
+      "zh": "整張改用 Lighthouse 並輸出成不可編輯圖片的海報",
+      "whyZh": "圖片無法讓對方自行編輯日期，即使使用了對方已有授權的字型也一樣。"
+    },
+    {
+      "id": "B",
+      "text": "A flat image for the artwork, with a separate editable date box in Lighthouse",
+      "zh": "圖案保留為不可編輯圖片，另加一個使用 Lighthouse 的可編輯日期欄",
+      "whyZh": "可編輯部分只有需要改的日期欄，且使用對方已有授權的 Lighthouse 字型。"
+    },
+    {
+      "id": "C",
+      "text": "A flat image for the artwork, with the original editable date box",
+      "zh": "圖案保留為不可編輯圖片，但日期欄仍用原有字型且可編輯",
+      "whyZh": "雖能編輯日期，原日期欄字型仍沒有涵蓋對方電腦的授權。"
+    },
+    {
+      "id": "D",
+      "text": "An editable copy of the full poster in Lighthouse",
+      "zh": "整張海報使用 Lighthouse，且全部內容皆可編輯",
+      "whyZh": "雖解決字型授權，但未保留圖案為不可編輯圖片，沒有同時滿足維持圖案不被編輯的條件。"
+    }
+  ],
+  "explanationZh": "可編輯部分只有需要改的日期欄，且使用對方已有授權的 Lighthouse 字型。",
+  "evidence": "We can send a finished image, but our font license covers editing only on our own computers. They'd need their own license to edit that file. | They asked us to lock the artwork in place, but they need to change the dates themselves. Is there a font they already have that looks close enough? | They have a current license for Lighthouse, the font on their website. And we can still send the artwork as a picture.",
+  "topic": "business",
+  "revision": 1,
+  "tags": [
+    "conversation",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "lock the artwork in place",
+      "zh": "固定圖稿不讓移動",
+      "note": "lock 在排版中可指固定圖層或圖稿；不表示日期文字也不能編輯。"
+    }
+  ]
+}

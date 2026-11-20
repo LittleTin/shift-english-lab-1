@@ -1,0 +1,52 @@
+{
+  "id": "t04-q033",
+  "testId": "test-04",
+  "number": 33,
+  "part": 3,
+  "groupId": "t04-g032",
+  "difficulty": "intermediate",
+  "answer": "D",
+  "prompt": "How does the man propose keeping the final rinse fresh while using less fresh water?",
+  "promptZh": "男子建議如何在最後一道沖洗仍用新水的情況下，降低新水的用量？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Use the same water for both rinses of the same batch.",
+      "zh": "同一批的兩道沖洗都用同一份水。",
+      "whyZh": "最後一道不能用回收水，而且他提出的是跨批次回收。"
+    },
+    {
+      "id": "B",
+      "text": "Reuse the first-wash water for the final rinse.",
+      "zh": "把第一道清洗的水用在最後一道沖洗。",
+      "whyZh": "回收方向正好相反；最後一道仍用新水。"
+    },
+    {
+      "id": "C",
+      "text": "Send the final-rinse water directly to the second line.",
+      "zh": "把最後一道沖洗水直接送到第二條線。",
+      "whyZh": "第二條線尚未試行；這不是目前的回收安排。"
+    },
+    {
+      "id": "D",
+      "text": "Use water from the final rinse for the next batch's first wash.",
+      "zh": "把最後一道沖洗用過的水拿來進行下一批的第一道清洗。",
+      "whyZh": "新水先用於最後一道沖洗，之後才回收供下一批先洗使用。"
+    }
+  ],
+  "explanationZh": "新水先用於最後一道沖洗，之後才回收供下一批先洗使用。",
+  "topic": "manufacturing",
+  "revision": 1,
+  "tags": [
+    "conversation",
+    "manufacturing"
+  ],
+  "evidence": "the final rinse must use fresh water | collect the water after that rinse and use it for the first wash on the next batch",
+  "vocabulary": [
+    {
+      "term": "the next batch",
+      "zh": "下一批",
+      "note": "batch 是同批處理的物件；next batch 和同一批的下一道工序不同。"
+    }
+  ]
+}

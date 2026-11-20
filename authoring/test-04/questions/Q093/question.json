@@ -1,0 +1,53 @@
+{
+  "id": "t04-q093",
+  "testId": "test-04",
+  "part": 4,
+  "groupId": "t04-g052",
+  "number": 93,
+  "difficulty": "intermediate",
+  "prompt": "When will a bus-pass claim submitted on Saturday appear in pay?",
+  "promptZh": "星期六送出的公車月票補助申請，會在哪個月的薪資入帳？",
+  "options": [
+    {
+      "id": "A",
+      "text": "In this month’s pay without any further action",
+      "zh": "不必另做處理，會在本月薪資入帳",
+      "whyZh": "星期五之後才送出，不能列入本月薪資。"
+    },
+    {
+      "id": "B",
+      "text": "In this month’s pay if the pass covers Saturday",
+      "zh": "若月票星期六有效，就會列入本月薪資",
+      "whyZh": "決定入帳月份的是申請日，不是月票有效日。"
+    },
+    {
+      "id": "C",
+      "text": "Only after a parking request is approved",
+      "zh": "停車補助申請核准後才入帳",
+      "whyZh": "兩項申請需分開，未說月票要等停車申請。"
+    },
+    {
+      "id": "D",
+      "text": "In next month’s pay",
+      "zh": "下個月的薪資",
+      "whyZh": "星期六晚於星期五的截止日，應列入下個月薪資。"
+    }
+  ],
+  "answer": "D",
+  "evidence": "Claims submitted by Friday will appear in this month's pay; later claims will go into next month's pay.",
+  "explanationZh": "星期六晚於星期五的截止日，應列入下個月薪資。",
+  "difficultyRationale": "Apply an inclusive payroll cutoff to a weekday not spoken.",
+  "topic": "business",
+  "revision": 1,
+  "tags": [
+    "short-talk",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "claims submitted by Friday",
+      "zh": "最遲於星期五提交的申請",
+      "note": "by + 截止時間通常含該時點；逾期則進入不同處理週期。"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "t04-q087",
+  "testId": "test-04",
+  "part": 4,
+  "groupId": "t04-g050",
+  "number": 87,
+  "difficulty": "intermediate",
+  "prompt": "A volunteer on the clipboard waiting list arrives at ten ten without a clipboard. What should they expect?",
+  "promptZh": "一名排在寫字板候補名單上的志工十點十分抵達，沒帶寫字板。他可以期待什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "They can collect any booked clipboard as soon as they arrive.",
+      "zh": "一抵達就可以領走任何預約的寫字板。",
+      "whyZh": "預約的寫字板會保留到十點十五分。"
+    },
+    {
+      "id": "B",
+      "text": "They must bring their own clipboard because none are lent to people on the waiting list.",
+      "zh": "候補者借不到寫字板，必須自行準備。",
+      "whyZh": "候補者有機會領到預約逾時未領的寫字板。"
+    },
+    {
+      "id": "C",
+      "text": "They may receive a clipboard after ten fifteen if a booked one goes unclaimed.",
+      "zh": "十點十五分後若有預約未領的寫字板，就有機會領到。",
+      "whyZh": "候補者要等領取期限過後，而且是否領到取決於有無未領的寫字板。"
+    },
+    {
+      "id": "D",
+      "text": "They will receive a clipboard from the yard as soon as it stops raining.",
+      "zh": "雨停後就一定能在院子裡領到寫字板。",
+      "whyZh": "寫字板在接待櫃檯發放，且候補取決於未領數量，不是天氣。"
+    }
+  ],
+  "answer": "C",
+  "evidence": "If you booked a clipboard, pick it up at the welcome desk by ten fifteen. After that, we'll give unclaimed clipboards to volunteers on the waiting list.",
+  "explanationZh": "候補者要等領取期限過後，而且是否領到取決於有無未領的寫字板。",
+  "difficultyRationale": "Apply the pickup priority and cutoff to a waiting-list arrival before the deadline; distinct from the late-arrival own-clipboard case.",
+  "topic": "daily",
+  "revision": 1,
+  "tags": [
+    "short-talk",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "unclaimed",
+      "zh": "無人領取的",
+      "note": "指已預訂但未被領走的物品，不是原本就沒有預訂。"
+    }
+  ]
+}

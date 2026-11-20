@@ -1,0 +1,53 @@
+{
+  "id": "t04-q084",
+  "testId": "test-04",
+  "part": 4,
+  "groupId": "t04-g049",
+  "number": 84,
+  "difficulty": "intermediate",
+  "prompt": "Why should a worker take the reading at six on Friday even if a machine is running overtime?",
+  "promptZh": "星期五有機器還在加班運轉時，為什麼仍應在傍晚六點讀表？",
+  "options": [
+    {
+      "id": "A",
+      "text": "It avoids having to record the overtime job.",
+      "zh": "這樣就不用記錄加班工作。",
+      "whyZh": "讀表仍須記錄加班工作；兩者用途不同。"
+    },
+    {
+      "id": "B",
+      "text": "It keeps the measurements comparable across workshops.",
+      "zh": "這樣各工作間的讀數才有共同的比較基準。",
+      "whyZh": "固定時間可作為各工作間的共同基準；如讀數偏離平常，可再查看加班註記。"
+    },
+    {
+      "id": "C",
+      "text": "It captures only the electricity used by the overtime machine.",
+      "zh": "這樣只會記錄這台加班機器的用電。",
+      "whyZh": "指定的是工作間電表，而不是單台機器。"
+    },
+    {
+      "id": "D",
+      "text": "It allows staff to skip the Monday reading.",
+      "zh": "這樣星期一就不用再讀表。",
+      "whyZh": "星期一仍須讀第二次，沒有因星期五加班而取消。"
+    }
+  ],
+  "answer": "B",
+  "evidence": "Take the six o'clock reading anyway, and mark the job on the sheet. A fixed time lets us compare workshops; the job note explains an unusual reading.",
+  "explanationZh": "固定時間可作為各工作間的共同基準；如讀數偏離平常，可再查看加班註記。",
+  "difficultyRationale": "Connect the fixed time to comparability rather than the separate purpose of the note.",
+  "topic": "business",
+  "revision": 1,
+  "tags": [
+    "short-talk",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "baseline",
+      "zh": "基準值",
+      "note": "固定時間取基準值，方便之後比較；不是說異常工況可以不記。"
+    }
+  ]
+}

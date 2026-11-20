@@ -1,0 +1,52 @@
+{
+  "id": "t04-q039",
+  "testId": "test-04",
+  "number": 39,
+  "part": 3,
+  "groupId": "t04-g034",
+  "difficulty": "advanced",
+  "answer": "C",
+  "prompt": "Which action lets the team avoid a new charge without losing the chance to export the comments?",
+  "promptZh": "要避免再被扣款，又保留匯出留言的機會，團隊應該採取什麼做法？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Close the old account on Friday before noon.",
+      "zh": "星期五中午前關閉舊帳戶。",
+      "whyZh": "關閉帳戶不是關閉自動續約；提前關閉帳戶可能在匯出或確認完成前失去必要的存取權限。"
+    },
+    {
+      "id": "B",
+      "text": "Wait until the export is done on Monday to cancel renewal.",
+      "zh": "等星期一匯出完成再取消續約。",
+      "whyZh": "星期一才處理會錯過星期五中午的期限。"
+    },
+    {
+      "id": "C",
+      "text": "Turn off automatic renewal by Friday at noon.",
+      "zh": "最晚星期五中午關閉自動續約。",
+      "whyZh": "能避免扣款，又能利用保留到星期一當天的唯讀存取匯出留言。"
+    },
+    {
+      "id": "D",
+      "text": "Leave automatic renewal on and make the old account read-only.",
+      "zh": "維持自動續約，再把舊帳戶設成唯讀。",
+      "whyZh": "唯讀不會關掉自動續約；維持續約仍有扣款問題。"
+    }
+  ],
+  "explanationZh": "能避免扣款，又能利用保留到星期一當天的唯讀存取匯出留言。",
+  "topic": "technology",
+  "revision": 1,
+  "tags": [
+    "conversation",
+    "technology"
+  ],
+  "evidence": "Turn off automatic renewal by noon Friday. We'll still have read-only access through Monday, but there won't be another charge. | I can export those by Monday afternoon.",
+  "vocabulary": [
+    {
+      "term": "automatic renewal",
+      "zh": "自動續約",
+      "note": "關閉自動續約不等於關閉帳戶；本題說明關閉續約後，星期一仍可唯讀存取。"
+    }
+  ]
+}

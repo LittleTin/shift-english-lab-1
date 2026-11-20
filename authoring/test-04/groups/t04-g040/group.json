@@ -1,0 +1,69 @@
+{
+  "id": "t04-g040",
+  "part": 3,
+  "topic": "technology",
+  "title": "Testing building alerts without alarming staff",
+  "titleZh": "測試大樓警示但不驚擾員工",
+  "turns": [
+    {
+      "speaker": "F",
+      "text": "The message system can now send building alerts by text. Can we run a test during lunch, when people are out of the office?",
+      "zh": "訊息系統現在可以用簡訊發送大樓警示。我們能趁午餐時間大家不在辦公室的時候測試嗎？"
+    },
+    {
+      "speaker": "M",
+      "text": "If we use the main list, it will reach everyone, even people at home. They might think the building is closed. The system has a separate list for test messages.",
+      "zh": "如果用主要名單，所有人都會收到，連在家的人也是。他們可能以為大樓關閉了。系統另有一份測試訊息名單。"
+    },
+    {
+      "speaker": "F",
+      "text": "Let's use that list, then. Do both the front desk and security get those messages?",
+      "zh": "那就用那份名單吧。服務台和保全都會收到嗎？"
+    },
+    {
+      "speaker": "M",
+      "text": "The front desk is on it, but security isn't. I'll add the security supervisor now. Ask both teams to reply with the word received, instead of just checking whether a message was sent.",
+      "zh": "服務台有列在上面，但保全沒有。我現在就加進保全主管。請兩組都回覆「已收到」，別只確認訊息有沒有送出。"
+    }
+  ],
+  "voicePlan": {
+    "F": {
+      "role": "facility coordinator",
+      "gender": "female",
+      "locale": "en-GB"
+    },
+    "M": {
+      "role": "systems specialist",
+      "gender": "male",
+      "locale": "en-US"
+    }
+  },
+  "narratorPlan": {
+    "role": "question narrator distinct from conversation",
+    "locale": "en-US",
+    "castStatus": "unassigned"
+  },
+  "passage": "F: The message system can now send building alerts by text. Can we run a test during lunch, when people are out of the office?\nM: If we use the main list, it will reach everyone, even people at home. They might think the building is closed. The system has a separate list for test messages.\nF: Let's use that list, then. Do both the front desk and security get those messages?\nM: The front desk is on it, but security isn't. I'll add the security supervisor now. Ask both teams to reply with the word received, instead of just checking whether a message was sent.",
+  "passageZh": "設施協調人員：訊息系統現在可以用簡訊發送大樓警示。我們能趁午餐時間大家不在辦公室的時候測試嗎？\n系統專員：如果用主要名單，所有人都會收到，連在家的人也是。他們可能以為大樓關閉了。系統另有一份測試訊息名單。\n設施協調人員：那就用那份名單吧。服務台和保全都會收到嗎？\n系統專員：服務台有列在上面，但保全沒有。我現在就加進保全主管。請兩組都回覆「已收到」，別只確認訊息有沒有送出。",
+  "scriptEnglishWords": 102,
+  "audio": "audio/practice-groups/test-04/t04-g040.ogg",
+  "audioStart": 0,
+  "audioEnd": 37.425,
+  "duration": 37.425,
+  "testId": "test-04",
+  "audioSpeakers": [
+    {
+      "speaker": "F",
+      "locale": "en-GB",
+      "role": "female",
+      "modelVoice": "en-GB-SoniaNeural"
+    },
+    {
+      "speaker": "M",
+      "locale": "en-NG",
+      "role": "male",
+      "modelVoice": "en-NG-AbeoNeural"
+    }
+  ],
+  "audioScript": "The message system can now send building alerts by text. Can we run a test during lunch, when people are out of the office?\nIf we use the main list, it will reach everyone, even people at home. They might think the building is closed. The system has a separate list for test messages.\nLet's use that list, then. Do both the front desk and security get those messages?\nThe front desk is on it, but security isn't. I'll add the security supervisor now. Ask both teams to reply with the word received, instead of just checking whether a message was sent."
+}

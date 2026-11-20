@@ -1,0 +1,199 @@
+{
+  "status": "PASS exact physical, master source/scope, and specified offline cue/header verification; unrelated editorial/runtime/release gates open; Q030 gameplay semantics HOLD, physical only",
+  "packSHA": "e381d9385dcd03bb2696af4884afa966239ad023f550f07a858fe322f6cebc54",
+  "physicalReceiptSHA": "57f4f5321c0bee78ea6bf9ddebd39e9ccef48202ff1451c4c7505730caa5b331",
+  "genericProvenanceReceiptSHA": "fc3641adb10c0486cc1705f5a64408eeead64a91e1f9574052ca3979019f133b",
+  "asrLogSHAs": {
+    "whisper.log": "76dc8c4ff213e14bc3485387101f3707804ed8a715a3c9b224004b9da5733f73",
+    "vosk.log": "861defd78f148692739210b1f4b97934b7d3065c6d712d0db29a120772c18781",
+    "whisper-role-supplement.log": "a9c2917f6e3ff486612880cdc8ee43a7b6d0dbb99b3fe6d25b481c99eb8a6926"
+  },
+  "practiceFreshFormalMasterBindings": 54,
+  "firstLastMarginsSamplesAtAbs33": {
+    "formal-first": 633,
+    "formal-last": 55994,
+    "practice-first": 4488,
+    "practice-last": 14314
+  },
+  "digitalZeroAnswerWindows": 100,
+  "physicalAssets": 108,
+  "totalFormalSamples48k": 129600000,
+  "formalRoles": {
+    "intro": 1,
+    "direction": 4,
+    "example": 1,
+    "cue": 54,
+    "passage": 54,
+    "answer": 100,
+    "question": 69,
+    "closing": 1
+  },
+  "part1and2CueCoverage": {
+    "whisperBatchedExact": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "voskIsolatedLiteral": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five",
+      "six",
+      "seven",
+      "eight",
+      "nine",
+      "ten",
+      "eleven",
+      "twelve",
+      "thirteen",
+      "fourteen",
+      "fifteen",
+      "sixteen",
+      "seventeen",
+      "eighteen",
+      "nineteen",
+      "twenty",
+      "twenty one",
+      "twenty two",
+      "twenty three",
+      "twenty four",
+      "twenty five",
+      "twenty six",
+      "twenty seven",
+      "twenty eight",
+      "twenty nine",
+      "thirty",
+      "thirty one"
+    ],
+    "passageOptionsReuse": "source and prior exact practice ASR bound, no fresh claim of Q030 approval"
+  },
+  "genericRoleTranscripts": {
+    "000-t04-g001-intro.wav": {
+      "role": "intro",
+      "whisper": "This is the listening test. You have about 45 minutes for 100 questions in 4 parts. Listen to the directions at the start of each part. Each item plays once. Select your answer on the screen as you go.",
+      "whisperProfile": "small",
+      "voskLgraph": "this is the listening test you have about forty five minutes for one hundred questions in four parts listened to the directions at the start of each part each item plays once select your answer on the screen as you go",
+      "positionSamples48k": [
+        0,
+        774144
+      ],
+      "nativeWindowPcmSHA": "af480a9312b69e119ec81304d4efef351f3e34676fea69e250c7959cc611f42f",
+      "exactNativeV150Source": "3546b1b93d9f0eaf73908619b10166b944f6c51c95d470cdf7964a67212b789e",
+      "asrFileSha": "b7ee21031258cf5f659f37bcd37c34f0f7c9ebb97e2541b15e8a25c7ac3542f3"
+    },
+    "001-t04-g001-direction.wav": {
+      "role": "direction",
+      "whisper": "Part 1. Photographs For each photograph, listen to four descriptions. Pick the one that best matches what you see. The descriptions are not shown on the screen.",
+      "whisperProfile": "small",
+      "voskLgraph": "part one photographs for each photograph listened to for descriptions pick the one that best matches what you see the descriptions are not shown on the screen",
+      "positionSamples48k": [
+        774144,
+        1422720
+      ],
+      "nativeWindowPcmSHA": "25999ee075235fe898bfba193faea2490f570b0cc531cc1bb7126f05e91695e0",
+      "exactNativeV150Source": "3546b1b93d9f0eaf73908619b10166b944f6c51c95d470cdf7964a67212b789e",
+      "asrFileSha": "6efcbd7bcd2e7554e5c3e731c3dccf488ed269717a5b9905bb1d43db50dae288"
+    },
+    "002-t04-g001-example.wav": {
+      "role": "example",
+      "whisper": "Look at the example picture. A. A lamp is next to a mug. B. A mug is under a chair. C. A lamp is hanging from the ceiling. D. A person is closing a door. The correct choice is A. This example does not count towards your score. Part 1 starts now.",
+      "whisperProfile": "base",
+      "voskLgraph": "look at the example picture a a lamp is next to a mug be a mug is under a chair see a lamp is hanging from the ceiling d a person is closing the door the correct choice as a this example does not count toward your score part one starts now",
+      "positionSamples48k": [
+        1422720,
+        2969856
+      ],
+      "nativeWindowPcmSHA": "01405bd6cb6e5e20eab4aa6582215124d9b4b9e2eb277819200c9087f56ee000",
+      "exactNativeV150Source": "f1bdb72fed65071d77428c7cc90715b5c8b7f6ad3045fb7026d75bdfd8e5d050",
+      "asrFileSha": "a23195e2377b10d208f5c13514aef9c06afb584305dc1c341574e1bfe31ac702"
+    },
+    "021-t04-g007-direction.wav": {
+      "role": "direction",
+      "whisper": "Part 2. Question and Response. Listen to a question or a statement and three possible replies. Choose the best reply. Neither the prompt nor the replies are printed on the screen.",
+      "whisperProfile": "small",
+      "voskLgraph": "part two question and response listened to a question or a statement and three possible replies choose the best reply neither the prompt nor the replies are printed on the screen",
+      "positionSamples48k": [
+        0,
+        698112
+      ],
+      "nativeWindowPcmSHA": "fa24d9191f91f16ed19353b9565a1a5faa76062f35b058f15db6051d15abb061",
+      "exactNativeV150Source": "3546b1b93d9f0eaf73908619b10166b944f6c51c95d470cdf7964a67212b789e",
+      "asrFileSha": "0c79e8e86c5545a1ce5a6de98864ba812dba8eda6cc66f5f911c9d643edcf7c1"
+    },
+    "097-t04-g032-direction.wav": {
+      "role": "direction",
+      "whisper": "3. Conversations. Listen to each conversation, then answer the three questions that follow. The questions and choices are on the screen. For some items, use the information in the graphic.",
+      "whisperProfile": "base",
+      "voskLgraph": "part three conversations listen to each conversation then answer the three questions that follow the questions and choices are on the screen for some items use the information in the graphic",
+      "positionSamples48k": [
+        0,
+        739584
+      ],
+      "nativeWindowPcmSHA": "6cfef15f0bc56e81eb3a92d2ba79b53a4229b1f01dc56b396f05b5543b490d0e",
+      "exactNativeV150Source": "f562d815731ba3c0074874f2c86ab428132c2ef8fe04ba5d43b2b6cb86bcf16c",
+      "asrFileSha": "3669c96637a36be8594aa76cca2f67b677a7c9eff723752dc4e38473f8d75e31"
+    },
+    "202-t04-g045-direction.wav": {
+      "role": "direction",
+      "whisper": "Part 4. Talks. Listen to each short talk, then answer the three questions that follow. The questions and choices are on the screen. For some items, use the information in the graphic.",
+      "whisperProfile": "base",
+      "voskLgraph": "part four talks listen to each short talk then answer the three questions that follow the questions and choices are on the screen for some items use the information in the graphic",
+      "positionSamples48k": [
+        0,
+        718848
+      ],
+      "nativeWindowPcmSHA": "639bbc6d431db106437fab87c08b9f13fc43b432129eb5c833524a2f3a1af9c9",
+      "exactNativeV150Source": "f562d815731ba3c0074874f2c86ab428132c2ef8fe04ba5d43b2b6cb86bcf16c",
+      "asrFileSha": "55307954c30e3ea6b335809867a149c5fc165fd7d22969cc850e7cd0171044d4"
+    },
+    "283-t04-g054-closing.wav": {
+      "role": "closing",
+      "whisper": "This is the end of the listening test. You will now begin the reading test. You have 75 minutes for the reading section.",
+      "whisperProfile": "base",
+      "voskLgraph": "this is the end of the listening test you will now begin the reading test you have seventy five minutes for the reading section",
+      "positionSamples48k": [
+        3822585,
+        4273017
+      ],
+      "nativeWindowPcmSHA": "4f848771e2489cf0bc84261f45f5f5c996029f03a59a5e5952891eac67ff706c",
+      "exactNativeV150Source": "f1bdb72fed65071d77428c7cc90715b5c8b7f6ad3045fb7026d75bdfd8e5d050",
+      "asrFileSha": "1318311490172ce4037fd9799c14564faaebfdab23a6edc7122a232c48d4b808"
+    }
+  },
+  "excluded": [
+    "semantic clearance for Q030 exact old wording",
+    "human audition",
+    "browser/physical-device/playability/hosted acceptance",
+    "selection/publication"
+  ]
+}

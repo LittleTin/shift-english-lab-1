@@ -1,0 +1,53 @@
+{
+  "id": "t04-q100",
+  "testId": "test-04",
+  "part": 4,
+  "groupId": "t04-g054",
+  "number": 100,
+  "difficulty": "intermediate",
+  "prompt": "Who can receive a shoe-rental refund?",
+  "promptZh": "誰可以拿到租鞋退款？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A player who booked rental shoes before the first game",
+      "zh": "第一場比賽前就租鞋的選手",
+      "whyZh": "開賽前租鞋不予退款。"
+    },
+    {
+      "id": "B",
+      "text": "A player whose own shoes were damaged during practice and who rented shoes before the first game",
+      "zh": "練習時自備鞋損壞，在第一場正式比賽前租鞋的選手",
+      "whyZh": "自備鞋在正式比賽中損壞才符合退款條件，練習時損壞不算。"
+    },
+    {
+      "id": "C",
+      "text": "A player who changed shoe sizes before the tournament",
+      "zh": "賽前更換租鞋尺寸的選手",
+      "whyZh": "更換尺寸不是退費條件，開賽前的租鞋也不退費。"
+    },
+    {
+      "id": "D",
+      "text": "A player who rented centre shoes after damaging their own pair during a tournament game",
+      "zh": "自備球鞋在正式比賽中損壞後，改租球館球鞋的選手",
+      "whyZh": "這種因比賽中損壞而臨時租鞋才符合退款條件，講者也提醒保留收據。"
+    }
+  ],
+  "answer": "D",
+  "evidence": "The desk will refund the rental charge if your own shoes are damaged during a tournament game and you rent shoes from the centre. Shoes rented before your first tournament game, including rentals for practice, are not refundable.",
+  "explanationZh": "這種因比賽中損壞而臨時租鞋才符合退款條件，講者也提醒保留收據。",
+  "difficultyRationale": "Separate normal pre-play rental from one during-game exception.",
+  "topic": "daily",
+  "revision": 1,
+  "tags": [
+    "short-talk",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "refundable",
+      "zh": "可退費的",
+      "note": "refundable 指符合特定條件可退費；光有收據不代表一定符合。"
+    }
+  ]
+}

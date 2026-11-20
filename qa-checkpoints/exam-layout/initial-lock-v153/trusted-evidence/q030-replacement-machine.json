@@ -1,0 +1,73 @@
+{
+  "physical": {
+    "formal": {
+      "bytes": 90401,
+      "sha256": "d9488002de7e3ee3d23c5463b7630224d791cdd5915ee96579af375bf4f16f49",
+      "samples48k": 1109279,
+      "decodedPcmSHA": "a8cd5e3c862aaead61fc83b144275d3dc63b05c53c6cb7aef7ed39adb23ee779",
+      "sampleRange48k": [
+        42768,
+        711768
+      ],
+      "speechPcmSha256": "88fbc218ea9a91603b538929a0738a8d32062c2401db42aec62d8aa2e3abf0b8",
+      "threshold32LeadTailSamples48k": [
+        7465,
+        39464
+      ],
+      "cueCorrelation": 1.0000000000000002,
+      "answerSamples48k": 397511,
+      "answerMaxAbsPcm": 0
+    },
+    "practice": {
+      "bytes": 82023,
+      "sha256": "13bdd3e26b18544e32cd26bbf81389f69d0e64ac2d3977f32d03b1d181b4bba5",
+      "samples48k": 669000,
+      "decodedPcmSHA": "2b73c7ed8778baa6ef1973e4642897d78982eea45cfdbf462ea8141086b98497",
+      "sampleRange48k": [
+        0,
+        669000
+      ],
+      "speechPcmSha256": "2b73c7ed8778baa6ef1973e4642897d78982eea45cfdbf462ea8141086b98497",
+      "threshold32LeadTailSamples48k": [
+        7400,
+        38344
+      ]
+    }
+  },
+  "repairReceiptSha256": "d3c27035c9b4c760cc3fac8438c68fc06b468314a88b94f946e938198261fb92",
+  "baselinePhysicalReceiptSha256": "57f4f5321c0bee78ea6bf9ddebd39e9ccef48202ff1451c4c7505730caa5b331",
+  "finalStagedPackSha256": "c8676357badc0569af75b7f4142b5466316b1b9bc153f10f60cab2bd5b2e8992",
+  "allOther106StageOggHashesEqual": true,
+  "allOtherFormalFramesAndGroupAudioExact": true,
+  "rawWavRiffPcmGeometryPass": true,
+  "scope": "Q030 actual formal and practice machine score-semantic PASS; previous weak noun caveat superseded only for these exact encodings",
+  "group": "t04-g030",
+  "baselineParentPack": "e381d9385dcd03bb2696af4884afa966239ad023f550f07a858fe322f6cebc54",
+  "sourceVerifiedF0InputSha256": "672b759aaf806a883ff691d1f00d373dd618b974f6a36454f2e2f0fde1c4061b",
+  "editorialOverlaySha256": "7ff0a1b6f2bdef9c5f8a92ac12c9c590a7c904c92ce658b367c1ca5a605dfb00",
+  "optionsSpokenInOrder": [
+    "A. Two. The third one is still in the kiln.",
+    "B. We close at six this evening.",
+    "C. The ceramic bowls are in cardboard boxes."
+  ],
+  "prompt": "How many ceramic bowls are ready for pickup?",
+  "formalCue": "Number 30.",
+  "cueRange48k": [
+    0,
+    42768
+  ],
+  "realAnswerRange48k": [
+    711768,
+    1109279
+  ],
+  "retainedVoicePlan": [
+    "en-US-JennyNeural",
+    "en-US-GuyNeural"
+  ],
+  "logs": {
+    "whisper.log": "5fa04651687866630bf642864c64d0e9d390d75b67ccd8e1eb50edc55e76685b",
+    "lgraph.log": "90505c57d2bffcac2bdb5b3e4dc5eccf832544bcc0402a8d1017fa487da0f69b"
+  },
+  "recognizers": "unprompted offline Whisper small.en plus independent Vosk lgraph; A/to and C/see homophones and pick-up punctuation do not change any answer-bearing word",
+  "limitations": "machine speech and sample acceptance only; no human listening, browser/device or deployment; source voice labels from F0 plan"
+}

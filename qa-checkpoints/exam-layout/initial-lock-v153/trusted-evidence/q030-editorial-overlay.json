@@ -1,0 +1,297 @@
+{
+  "status": "Local editorial proposal only, audio and lock not accepted",
+  "blindSha256": "997c3248d1a4876237994dd564e65d2963e146466014092843e1eb513e2103bf",
+  "planSha256": "4b6e62ef4f6e7052321ed61c5c9822931a297cb0410fc2d98b15694c99370d17",
+  "uuid": "ceab613f-ddde-50e3-857c-bcad61f2c98e",
+  "question": {
+    "before": {
+      "id": "t04-q030",
+      "testId": "test-04",
+      "number": 30,
+      "part": 2,
+      "topic": "daily",
+      "difficulty": "foundation",
+      "prompt": "Listen and choose the best response.",
+      "promptZh": "請聽錄音，選出最適當的回應。",
+      "spokenPrompt": "How many of my bowls are ready to pick up?",
+      "spokenPromptZh": "我的碗有幾個可以取件了？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Two. The third one is still in the kiln.",
+          "zh": "兩個。第三個還在窯裡。",
+          "whyZh": "直接回答可取件的數量，並補充其餘一個仍在窯裡。"
+        },
+        {
+          "id": "B",
+          "text": "We close at six this evening.",
+          "zh": "我們今天傍晚六點關門。",
+          "whyZh": "這是營業時間，不是可取件的數量。"
+        },
+        {
+          "id": "C",
+          "text": "The bowls are packed in cardboard boxes.",
+          "zh": "碗裝在紙箱裡。",
+          "whyZh": "包裝方式沒有說明有幾個已經可以取件。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "直接回答可取件的數量，並補充其餘一個仍在窯裡。",
+      "vocabulary": [
+        {
+          "term": "kiln",
+          "zh": "窯",
+          "note": "用來燒製陶器的高溫設備。"
+        },
+        {
+          "term": "ready to pick up",
+          "zh": "可以取件",
+          "note": "表示物品已準備好讓顧客領回。"
+        }
+      ],
+      "evidence": "How many of my bowls are ready to pick up? / Two. The third one is still in the kiln.",
+      "tags": [
+        "daily",
+        "daily",
+        "question_response"
+      ],
+      "revision": 1,
+      "groupId": "t04-g030"
+    },
+    "after": {
+      "id": "t04-q030",
+      "testId": "test-04",
+      "number": 30,
+      "part": 2,
+      "topic": "daily",
+      "difficulty": "foundation",
+      "prompt": "Listen and choose the best response.",
+      "promptZh": "請聽錄音，選出最適當的回應。",
+      "spokenPrompt": "How many ceramic bowls are ready for pickup?",
+      "spokenPromptZh": "有幾個陶瓷碗可以領取了？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Two. The third one is still in the kiln.",
+          "zh": "兩個。第三個還在窯裡。",
+          "whyZh": "直接回答可取件的數量，並補充其餘一個仍在窯裡。"
+        },
+        {
+          "id": "B",
+          "text": "We close at six this evening.",
+          "zh": "我們今天傍晚六點關門。",
+          "whyZh": "這是營業時間，不是可取件的數量。"
+        },
+        {
+          "id": "C",
+          "text": "The ceramic bowls are in cardboard boxes.",
+          "zh": "陶瓷碗裝在紙箱裡。",
+          "whyZh": "包裝方式沒有說明有幾個已經可以取件。"
+        }
+      ],
+      "answer": "A",
+      "explanationZh": "直接回答可取件的數量，並補充其餘一個仍在窯裡。",
+      "vocabulary": [
+        {
+          "term": "kiln",
+          "zh": "窯",
+          "note": "用來燒製陶器的高溫設備。"
+        },
+        {
+          "term": "ready for pickup",
+          "zh": "可以取件",
+          "note": "表示物品已準備好讓顧客領回。"
+        }
+      ],
+      "evidence": "How many ceramic bowls are ready for pickup? / Two. The third one is still in the kiln.",
+      "tags": [
+        "daily",
+        "daily",
+        "question_response"
+      ],
+      "revision": 1,
+      "groupId": "t04-g030"
+    }
+  },
+  "group": {
+    "before": {
+      "id": "t04-g030",
+      "testId": "test-04",
+      "part": 2,
+      "title": "Question 30",
+      "titleZh": "第 30 題",
+      "topic": "daily",
+      "passage": "How many of my bowls are ready to pick up?\nA. Two. The third one is still in the kiln. B. We close at six this evening. C. The bowls are packed in cardboard boxes.",
+      "passageZh": "我的碗有幾個可以取件了？\nA. 兩個。第三個還在窯裡。\nB. 我們今天傍晚六點關門。\nC. 碗裝在紙箱裡。",
+      "audioScript": "How many of my bowls are ready to pick up?\nA. Two. The third one is still in the kiln. B. We close at six this evening. C. The bowls are packed in cardboard boxes.",
+      "turns": [
+        {
+          "voice": "female",
+          "text": "How many of my bowls are ready to pick up?"
+        },
+        {
+          "voice": "male",
+          "text": "A. Two. The third one is still in the kiln. B. We close at six this evening. C. The bowls are packed in cardboard boxes."
+        }
+      ],
+      "audioSpeakers": [
+        {
+          "speaker": "female",
+          "locale": "en-US",
+          "role": "prompt",
+          "modelVoice": "en-US-JennyNeural"
+        },
+        {
+          "speaker": "male",
+          "locale": "en-US",
+          "role": "response choices",
+          "modelVoice": "en-US-GuyNeural"
+        }
+      ],
+      "audio": "audio/practice-groups/test-04/t04-g030.ogg",
+      "audioStart": 0,
+      "audioEnd": 15.9475,
+      "duration": 15.9475
+    },
+    "after": {
+      "id": "t04-g030",
+      "testId": "test-04",
+      "part": 2,
+      "title": "Question 30",
+      "titleZh": "第 30 題",
+      "topic": "daily",
+      "passage": "How many ceramic bowls are ready for pickup?\nA. Two. The third one is still in the kiln. B. We close at six this evening. C. The ceramic bowls are in cardboard boxes.",
+      "passageZh": "有幾個陶瓷碗可以領取了？\nA. 兩個。第三個還在窯裡。\nB. 我們今天傍晚六點關門。\nC. 陶瓷碗裝在紙箱裡。",
+      "audioScript": "How many ceramic bowls are ready for pickup?\nA. Two. The third one is still in the kiln. B. We close at six this evening. C. The ceramic bowls are in cardboard boxes.",
+      "turns": [
+        {
+          "voice": "female",
+          "text": "How many ceramic bowls are ready for pickup?"
+        },
+        {
+          "voice": "male",
+          "text": "A. Two. The third one is still in the kiln. B. We close at six this evening. C. The ceramic bowls are in cardboard boxes."
+        }
+      ],
+      "audioSpeakers": [
+        {
+          "speaker": "female",
+          "locale": "en-US",
+          "role": "prompt",
+          "modelVoice": "en-US-JennyNeural"
+        },
+        {
+          "speaker": "male",
+          "locale": "en-US",
+          "role": "response choices",
+          "modelVoice": "en-US-GuyNeural"
+        }
+      ],
+      "audio": "audio/practice-groups/test-04/t04-g030.ogg",
+      "audioStart": 0,
+      "audioEnd": 15.9475,
+      "duration": 15.9475
+    }
+  },
+  "precedent": {
+    "packSha256": "e381d9385dcd03bb2696af4884afa966239ad023f550f07a858fe322f6cebc54",
+    "formalManifestSha256": "9e9b9faead4300d4f6d628b36ae481da961c3369ea92aa992cf3dea1e8ec0081",
+    "formal": {
+      "src": "audio/formal-groups/test-04/t04-g030.ogg",
+      "duration": 23.109979166666665,
+      "durationSamples48k": 1109279,
+      "normalStartSample48k": 0,
+      "globalStartSample48k": 37350465,
+      "globalEndSample48k": 38459744,
+      "outputEncodedSha256": "0436fe32bdf805dfc25c62872abea808cc9485bd769d0568db08168df47ba66d",
+      "outputBytes": 89984,
+      "opusskip": 312,
+      "opusEOSGranule": 1109591,
+      "oggPages": 26,
+      "assembledPCM48kSha256": "0ed9deacb4a47226c4841e6a0fc8781467fb168c1d7dffa79a452a268231d87e",
+      "outputDecodedPCM48kSha256": "96da085b367fcda2144e0969a2feab2d0ec74e5c512ca52326a6e161e0fa5c0f",
+      "timingMilestones": [
+        {
+          "kind": "audio",
+          "role": "cue",
+          "localStartSample48k": 0,
+          "localEndSample48k": 42768,
+          "frameIndex": 91,
+          "questionId": null,
+          "sourceRef": "audio/opus-hq56-96-v2/22/2204be613ea495822675add5bbe3428e7cf85b9ec465b20bcfc79556a0bf0a51.ogg",
+          "sourceStartSample48k": 1747718,
+          "sourceEndSample48k": 1790486,
+          "inputSpanPcmSha256": "cde6c3aa2355b529d16cc7ef12d8004c777f9235ff56254592e571009b8699da",
+          "zeroLagCorrelation": 0.9959685,
+          "rmsDeltaDb": 0.025204
+        },
+        {
+          "kind": "audio",
+          "role": "passage",
+          "localStartSample48k": 42768,
+          "localEndSample48k": 808248,
+          "frameIndex": 92,
+          "questionId": null,
+          "sourceRef": "test04-q030-part2",
+          "sourceStartSample48k": 0,
+          "sourceEndSample48k": 765480,
+          "inputSpanPcmSha256": "05e16552cc69beac6c899d85a2536249deb801352ff786962c819cc421ec6bab",
+          "zeroLagCorrelation": 0.9955426,
+          "rmsDeltaDb": -0.001077
+        },
+        {
+          "kind": "silence",
+          "role": "answer",
+          "localStartSample48k": 808248,
+          "localEndSample48k": 1109279,
+          "frameIndex": 93,
+          "questionId": "t04-q030",
+          "encodedAnswerCrossingsAtMinus60dBFS": 0,
+          "lastCrossingFromAnswerStartSamples": 0
+        }
+      ],
+      "mime": "audio/ogg"
+    },
+    "practice": {
+      "path": "audio/practice-groups/test-04/t04-g030.ogg",
+      "sha256": "b33b6bc4ebf055d8cff893f9ccb4de735498d080761f93e43bb96c6816e52e1b",
+      "startSample48k": 0,
+      "endSample48k": 765480,
+      "naturalEndSeconds": 15.9475
+    },
+    "formalFrames": [
+      {
+        "groupId": "t04-g030",
+        "role": "cue",
+        "kind": "audio",
+        "part": 2,
+        "at": 778.1346875,
+        "duration": 0.891,
+        "src": "audio/formal-groups/test-04/t04-g030.ogg",
+        "start": 0.0,
+        "end": 0.891
+      },
+      {
+        "groupId": "t04-g030",
+        "role": "passage",
+        "kind": "audio",
+        "part": 2,
+        "at": 779.0256875,
+        "duration": 15.9475,
+        "src": "audio/formal-groups/test-04/t04-g030.ogg",
+        "start": 0.891,
+        "end": 16.8385
+      },
+      {
+        "groupId": "t04-g030",
+        "role": "answer",
+        "kind": "silence",
+        "part": 2,
+        "at": 794.9731875,
+        "duration": 6.2714791666666665,
+        "questionId": "t04-q030"
+      }
+    ],
+    "formalTestSeconds": 2700
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "t04-q085",
+  "testId": "test-04",
+  "part": 4,
+  "groupId": "t04-g049",
+  "number": 85,
+  "difficulty": "advanced",
+  "prompt": "A scheduled overtime job kept one machine running past six on Friday, and another machine started before the Monday reading. Which record should staff submit?",
+  "promptZh": "有一台機器因排定的加班工作在星期五運轉超過六點，另一台在星期一讀表前就已啟動。員工應送出哪一種紀錄？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Friday’s reading after the overtime job; Monday’s reading and start time, with no total.",
+      "zh": "星期五加班工作完成後的讀數；星期一讀數及啟動時間，不填總用電。",
+      "whyZh": "星期一處理正確，但星期五仍應在六點讀表，不能等加班工作結束。"
+    },
+    {
+      "id": "B",
+      "text": "Friday’s six o’clock reading and job note; Monday’s reading and the unadjusted weekend total.",
+      "zh": "星期五六點讀數與工作註記；星期一讀數及未調整的週末總用電。",
+      "whyZh": "星期五處理正確，但星期一必須註記啟動時間且總用電留白。"
+    },
+    {
+      "id": "C",
+      "text": "Friday’s six o’clock reading without a job note; Monday’s reading and start time, with no total.",
+      "zh": "星期五六點讀數，不註記工作；星期一讀數及啟動時間，不填總用電。",
+      "whyZh": "星期一處理正確，但星期五還需註記正在進行的加班工作。"
+    },
+    {
+      "id": "D",
+      "text": "Friday’s six o’clock reading and job note; Monday’s reading and start time, with no total.",
+      "zh": "星期五六點讀數與工作註記；星期一讀數及啟動時間，不填總用電。",
+      "whyZh": "星期五按時讀表並註記加班；星期一記下讀數和啟動時間，把週末總用電留白。"
+    }
+  ],
+  "answer": "D",
+  "evidence": "Take the six o'clock reading anyway, and mark the job on the sheet. | If a machine has already started, record the meter reading and the machine's start time. In that case, leave the weekend-total box empty",
+  "explanationZh": "星期五按時讀表並註記加班；星期一記下讀數和啟動時間，把週末總用電留白。",
+  "difficultyRationale": "Combine two distinct contingency branches; every distractor satisfies one complete branch but fails the other.",
+  "topic": "business",
+  "revision": 1,
+  "tags": [
+    "short-talk",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "an adjusted figure",
+      "zh": "調整後的數值",
+      "note": "figure 在此是數值；和直接相減得到的未調整讀值不同。"
+    }
+  ]
+}

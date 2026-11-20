@@ -1,0 +1,53 @@
+{
+  "id": "t04-q097",
+  "testId": "test-04",
+  "part": 4,
+  "groupId": "t04-g053",
+  "number": 97,
+  "difficulty": "intermediate",
+  "prompt": "Which plan follows the payment rules and qualifies for regular delivery at no extra charge?",
+  "promptZh": "哪一種安排符合付款規定，又能用不另收費的例行配送？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Fill out the form and pay now so the supplier can deliver on time.",
+      "zh": "現在填表並付款，讓供應商能準時送達。",
+      "whyZh": "可先填表，但地址尚未確認，現在不得付款。"
+    },
+    {
+      "id": "B",
+      "text": "Wait for address confirmation, then place the order on Thursday afternoon.",
+      "zh": "等地址確認後，在星期四下午下單。",
+      "whyZh": "等地址確認正確，但星期四下午已過中午的例行配送截止時間。"
+    },
+    {
+      "id": "C",
+      "text": "Prepare the form now, pay after address confirmation, and order by noon on Thursday.",
+      "zh": "現在先填表，確認地址後再付款，最晚星期四中午下單。",
+      "whyZh": "可先備好訂單，付款須等地址確認，而且要在星期四中午截止前完成下單。"
+    },
+    {
+      "id": "D",
+      "text": "Pay by Thursday noon, then confirm the address after placing the order.",
+      "zh": "最晚星期四中午先付款，下單後才確認地址。",
+      "whyZh": "守住下單期限不代表可先付款；地址確認必須在付款之前。"
+    }
+  ],
+  "answer": "C",
+  "evidence": "Put the backdrop on the order form now, but don't pay until the venue coordinator confirms the delivery address. She expects to confirm it on Wednesday. If we order by noon on Thursday, the supplier can send it with the regular delivery at no extra charge.",
+  "explanationZh": "可先備好訂單，付款須等地址確認，而且要在星期四中午截止前完成下單。",
+  "difficultyRationale": "Apply payment prerequisite and free-delivery ordering deadline; two near misses each satisfy one.",
+  "topic": "business",
+  "revision": 1,
+  "tags": [
+    "short-talk",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "confirm the delivery address",
+      "zh": "確認送貨地址",
+      "note": "填表、確認地址及付款是不同步驟，先後順序可能受限制。"
+    }
+  ]
+}
