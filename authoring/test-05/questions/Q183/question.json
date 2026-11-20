@@ -1,0 +1,52 @@
+{
+  "id": "t05-q183",
+  "number": 183,
+  "testId": "test-05",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t05-r-p7-10",
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "multiple-documents"
+  ],
+  "prompt": "Which recommendation meets the homeowner’s requirements without new holes or refinishing?",
+  "promptZh": "哪一項建議不必另鑽孔或重做表面，又符合住戶需求？",
+  "answer": "A",
+  "options": [
+    {
+      "id": "A",
+      "text": "Fit the Wren using the current holes and the original finish.",
+      "zh": "選相同表面處理的 Wren，使用現有孔位安裝。",
+      "whyZh": "96 公釐孔距相符，兩端各超出 13 公釐，蓋得住左 10、右 12 的痕跡。"
+    },
+    {
+      "id": "B",
+      "text": "Fit the Heron because its cover is as long as the mark.",
+      "zh": "選 Heron，因為蓋板跟痕跡一樣長。",
+      "whyZh": "雖總長為 118 公釐，但右端僅延伸 11 公釐，無法蓋住 12 公釐的痕跡。"
+    },
+    {
+      "id": "C",
+      "text": "Fit the Reed using the current holes because its cover is longest.",
+      "zh": "用現有孔位安裝蓋板最長的 Reed。",
+      "whyZh": "Reed 孔距是 128 公釐，現有孔距 96 公釐，不能用原孔安裝。"
+    },
+    {
+      "id": "D",
+      "text": "Refinish the front and fit the Heron in the current holes.",
+      "zh": "重做面板表面，再用現有孔位安裝 Heron。",
+      "whyZh": "Heron 孔距雖相同，但方案要求重做表面，不符合題目。"
+    }
+  ],
+  "explanationZh": "96 公釐孔距相符，兩端各超出 13 公釐，蓋得住左 10、右 12 的痕跡。",
+  "evidence": "The hole centers are 96 mm apart. | The first hole is 10 mm from the left end of the mark and the second is 12 mm from the right end. | The pull will be removed, but I would rather not refinish the drawer. | All three pulls below are available in the original finish. | Wren: 96 mm between screw centers; the cover extends 13 mm past the left screw center and 13 mm past the right screw center.",
+  "vocabulary": [
+    {
+      "term": "screw center",
+      "zh": "螺絲孔中心",
+      "note": "孔距及覆蓋距離的量測基準。"
+    }
+  ],
+  "difficultyRationale": "結合實測 96 孔距、不重做表面且保留同款、左右 10 和 12 至少均能遮蔽；總長相同不代表對位。"
+}

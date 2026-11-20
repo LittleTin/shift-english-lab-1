@@ -1,0 +1,52 @@
+{
+  "id": "t05-q182",
+  "number": 182,
+  "testId": "test-05",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t05-r-p7-10",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "multiple-documents"
+  ],
+  "prompt": "Why would ordering by the model code alone be unreliable in this case?",
+  "promptZh": "本案為何不能只靠型號訂購？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "The homeowner cannot read the cabinet’s code.",
+      "zh": "住戶看不清楚櫃子的型號。",
+      "whyZh": "住戶已清楚提供 Lark 80。"
+    },
+    {
+      "id": "B",
+      "text": "The cabinet has a non-original front whose hole spacing should be used.",
+      "zh": "櫃子換了非原廠面板，該用實際孔距來選。",
+      "whyZh": "表單特別要求自行更換面板要提供實測值，住戶確實換過。"
+    },
+    {
+      "id": "C",
+      "text": "None of the available pulls comes in the original finish.",
+      "zh": "三款把手都沒有原本的表面處理。",
+      "whyZh": "比對卡說三款都提供原本的款式。"
+    },
+    {
+      "id": "D",
+      "text": "The homeowner wants to replace the entire cabinet.",
+      "zh": "住戶要更換整個櫃子。",
+      "whyZh": "住戶只要更換把手。"
+    }
+  ],
+  "explanationZh": "表單特別要求自行更換面板要提供實測值，住戶確實換過。",
+  "evidence": "My Lark 80 drawer front was replaced by a local cabinet shop last winter. | The model code alone may identify the wrong pull.",
+  "vocabulary": [
+    {
+      "term": "model code",
+      "zh": "型號",
+      "note": "用來識別產品，但未必代表換修後的孔位。"
+    }
+  ],
+  "difficultyRationale": "對照住戶換過面板的事實與表單對新孔位的警告。"
+}
