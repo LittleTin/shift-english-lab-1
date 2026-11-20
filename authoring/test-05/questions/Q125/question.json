@@ -1,0 +1,51 @@
+{
+  "id": "t05-q125",
+  "testId": "test-05",
+  "number": 125,
+  "part": 5,
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "incomplete-sentence",
+    "work"
+  ],
+  "prompt": "Please deduct the deposit _____ the final balance rather than adding it as a second charge.",
+  "promptZh": "請把訂金 _____ 尾款扣除，不要把它再加收一次。",
+  "options": [
+    {
+      "id": "A",
+      "text": "toward",
+      "zh": "朝向、用於",
+      "whyZh": "toward 可在 pay toward 中表示用於某款項，deduct 的被減金額用 from 引出。"
+    },
+    {
+      "id": "B",
+      "text": "by",
+      "zh": "依照、相差",
+      "whyZh": "by 可引出變動幅度，這裡 final balance 是扣款的來源，不是扣減幅度。"
+    },
+    {
+      "id": "C",
+      "text": "from",
+      "zh": "從",
+      "whyZh": "deduct A from B 表示從 B 扣掉 A；訂金應從尾款中減掉。"
+    },
+    {
+      "id": "D",
+      "text": "with",
+      "zh": "以、和",
+      "whyZh": "with 不引出扣除前的底數，無法表達從尾款扣訂金。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "deduct A from B 表示從 B 扣掉 A；訂金應從尾款中減掉。",
+  "evidence": "Please deduct the deposit from the final balance rather than adding it as a second charge.",
+  "vocabulary": [
+    {
+      "term": "deduct … from",
+      "zh": "從……扣除",
+      "note": "deduct A from B 與 add A to B 表示相反的計算方向。"
+    }
+  ]
+}

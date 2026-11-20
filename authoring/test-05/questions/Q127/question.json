@@ -1,0 +1,51 @@
+{
+  "id": "t05-q127",
+  "testId": "test-05",
+  "number": 127,
+  "part": 5,
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "incomplete-sentence",
+    "work"
+  ],
+  "prompt": "The warranty covers damage _____ by a technician, not damage that occurred before the technician arrived, even if the technician spots it during the work.",
+  "promptZh": "保固涵蓋 _____ 的損壞，即使技師在施工時發現，到場前已發生的損壞也不在保固範圍。",
+  "options": [
+    {
+      "id": "A",
+      "text": "caused during installation",
+      "zh": "技師在安裝過程中造成",
+      "whyZh": "caused ... by a technician 是被動修飾 damage，by a technician 是造成損壞的人；後半排除技師到前既有損壞。"
+    },
+    {
+      "id": "B",
+      "text": "found during installation",
+      "zh": "安裝過程中發現",
+      "whyZh": "found 會讓技師成為發現者；安裝時發現不代表損壞是安裝時才造成。"
+    },
+    {
+      "id": "C",
+      "text": "reported after installation",
+      "zh": "安裝後通報",
+      "whyZh": "通報時間不等於發生時間，可能包含到場前既有損壞。"
+    },
+    {
+      "id": "D",
+      "text": "documented before installation",
+      "zh": "安裝前記錄",
+      "whyZh": "documented 指留下紀錄，不說明誰何時造成損壞。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "caused ... by a technician 是被動修飾 damage，by a technician 是造成損壞的人；後半排除技師到前既有損壞。",
+  "evidence": "The warranty covers damage caused during installation by a technician, not damage that occurred before the technician arrived, even if the technician spots it during the work.",
+  "vocabulary": [
+    {
+      "term": "during installation",
+      "zh": "在安裝過程中",
+      "note": "保固條款應分開理解損壞發生、發現與通報時間。"
+    }
+  ]
+}

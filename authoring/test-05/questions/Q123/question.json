@@ -1,0 +1,51 @@
+{
+  "id": "t05-q123",
+  "testId": "test-05",
+  "number": 123,
+  "part": 5,
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "incomplete-sentence",
+    "work"
+  ],
+  "prompt": "Every invoice must show the purchase order number _____ in the confirmation email.",
+  "promptZh": "每張發票都必須顯示確認郵件中 _____ 採購單號。",
+  "options": [
+    {
+      "id": "A",
+      "text": "lists",
+      "zh": "列出（第三人稱）",
+      "whyZh": "lists 是限定動詞；主句已有 must show，且單號不是主動列出內容的主詞。"
+    },
+    {
+      "id": "B",
+      "text": "listed",
+      "zh": "列出的",
+      "whyZh": "listed in 相當於 that is listed in，修飾已在郵件中列出的採購單號。"
+    },
+    {
+      "id": "C",
+      "text": "listing",
+      "zh": "正在列出",
+      "whyZh": "listing 表主動，單號不會主動在郵件中列出資料。"
+    },
+    {
+      "id": "D",
+      "text": "was listing",
+      "zh": "當時正在列出",
+      "whyZh": "這是過去進行式，既缺連接結構，又把單號誤當主動列出資料的主體。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "listed in 相當於 that is listed in，修飾已在郵件中列出的採購單號。",
+  "evidence": "Every invoice must show the purchase order number listed in the confirmation email.",
+  "vocabulary": [
+    {
+      "term": "listed in",
+      "zh": "列在……中",
+      "note": "listed in 是縮減的被動關係子句。"
+    }
+  ]
+}
