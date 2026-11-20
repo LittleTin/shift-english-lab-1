@@ -1,0 +1,52 @@
+{
+  "id": "t05-q170",
+  "number": 170,
+  "testId": "test-05",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t05-r-p7-07",
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "single-document"
+  ],
+  "prompt": "Which date does the warranty summary show?",
+  "promptZh": "保固摘要顯示哪個日期？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "The latest visit date",
+      "zh": "最近一次到訪的日期",
+      "whyZh": "再次到訪日期應列於備註。"
+    },
+    {
+      "id": "B",
+      "text": "The first test date",
+      "zh": "第一次測試的日期",
+      "whyZh": "摘要明確不是記錄技師第一次測試。"
+    },
+    {
+      "id": "C",
+      "text": "The original date the item was received",
+      "zh": "物品第一次收件的日期",
+      "whyZh": "保固摘要保留原收件日。"
+    },
+    {
+      "id": "D",
+      "text": "The date of the staffing report",
+      "zh": "人力安排報表日期",
+      "whyZh": "人力報表是另一份資料，不決定保固摘要的日期。"
+    }
+  ],
+  "explanationZh": "保固摘要保留原收件日。",
+  "evidence": "The warranty summary shows when we first received each item.",
+  "vocabulary": [
+    {
+      "term": "warranty summary",
+      "zh": "保固摘要",
+      "note": "服務紀錄的保固資訊摘要。"
+    }
+  ],
+  "difficultyRationale": "直接定位欄位含義。"
+}

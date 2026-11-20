@@ -1,0 +1,52 @@
+{
+  "id": "t05-q172",
+  "number": 172,
+  "testId": "test-05",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t05-r-p7-07",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "single-document"
+  ],
+  "prompt": "On Monday an item arrived and the repair was marked complete. On Thursday the customer brought it back with the same symptom. Which pair of figures is consistent with the note for this item that week?",
+  "promptZh": "一件物品在週一送修並已標為修畢，顧客週四因同一症狀再送修。依說明，該物品當週的哪一組數字正確？",
+  "answer": "D",
+  "options": [
+    {
+      "id": "A",
+      "text": "Two service records and one visit",
+      "zh": "兩筆維修紀錄、一次到訪",
+      "whyZh": "同症狀應重開一筆既有紀錄，而且週一、週四各算一次。"
+    },
+    {
+      "id": "B",
+      "text": "One service record and one visit",
+      "zh": "一筆維修紀錄、一次到訪",
+      "whyZh": "維修紀錄為一筆，但兩次到訪須各自計入。"
+    },
+    {
+      "id": "C",
+      "text": "Two service records and two visits",
+      "zh": "兩筆維修紀錄、兩次到訪",
+      "whyZh": "到訪數正確，但同症狀不用另開維修紀錄。"
+    },
+    {
+      "id": "D",
+      "text": "One service record and two visits",
+      "zh": "一筆維修紀錄、兩次到訪",
+      "whyZh": "週四重開週一紀錄；人力報表則照算這兩次到訪。"
+    }
+  ],
+  "explanationZh": "週四重開週一紀錄；人力報表則照算這兩次到訪。",
+  "evidence": "If a customer brings the same item back for the same symptom, reopen the existing record, even if it has already been marked complete. | The weekly staffing report counts each visit, even when two visits belong to one service record.",
+  "vocabulary": [
+    {
+      "term": "reopen",
+      "zh": "重新開啟",
+      "note": "此處指把標為完成的既有紀錄重新打開處理。"
+    }
+  ],
+  "difficultyRationale": "跨首尾兩段套用同症狀重開既有紀錄，以及每次到訪獨立計入報表。"
+}

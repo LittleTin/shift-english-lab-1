@@ -1,0 +1,52 @@
+{
+  "id": "t05-q165",
+  "number": 165,
+  "testId": "test-05",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t05-r-p7-05",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "single-document"
+  ],
+  "prompt": "In the booth, a patch looks different from the sample. The patch stays above the same mark on the table when the sheets are turned. What should happen next?",
+  "promptZh": "在檢驗室內看到一處色斑與樣品不同。紙張轉動後，色斑仍位在桌上同一個記號的上方。接下來應怎麼做？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "Adjust the press to counter the apparent color.",
+      "zh": "調整印刷機以抵銷看起來的色偏。",
+      "whyZh": "色斑留在原處，尚未證明是印刷品造成，不能據此調機。"
+    },
+    {
+      "id": "B",
+      "text": "Record that the patch moved with the print.",
+      "zh": "記錄色斑隨印刷品轉動。",
+      "whyZh": "色斑仍在同一桌面記號上方，沒有隨紙轉動。"
+    },
+    {
+      "id": "C",
+      "text": "Check the booth lighting and leave the press operator out for now.",
+      "zh": "先檢查檢驗室照明，暫時不要請印刷機操作員介入。",
+      "whyZh": "固定位置的色斑指向照明；只有查明來自印刷品，才請操作員調查。"
+    },
+    {
+      "id": "D",
+      "text": "Send the prints to the press operator because the patch was visible.",
+      "zh": "因色斑肉眼可見，就把印刷品送給印刷機操作員。",
+      "whyZh": "肉眼看得到還不夠；成因必須落在印刷品。"
+    }
+  ],
+  "explanationZh": "固定位置的色斑指向照明；只有查明來自印刷品，才請操作員調查。",
+  "evidence": "A patch that stays in the same spot is probably caused by the booth lighting. | Only ask the press operator to investigate after the difference has been traced to a print.",
+  "vocabulary": [
+    {
+      "term": "trace to",
+      "zh": "追查到源自",
+      "note": "找到差異的來源。"
+    }
+  ],
+  "difficultyRationale": "把同位置的觀察轉為照明成因，並套用下一步只能在印刷品成因確認後。"
+}

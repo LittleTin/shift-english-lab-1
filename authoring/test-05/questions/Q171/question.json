@@ -1,0 +1,52 @@
+{
+  "id": "t05-q171",
+  "number": 171,
+  "testId": "test-05",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t05-r-p7-07",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "single-document"
+  ],
+  "prompt": "A customer brings back the same item and reports a new symptom. Which information should the two service records share?",
+  "promptZh": "顧客帶同一件物品回來，反映有新症狀。兩筆維修紀錄應共用哪項資訊？",
+  "answer": "A",
+  "options": [
+    {
+      "id": "A",
+      "text": "The item serial number",
+      "zh": "物品序號",
+      "whyZh": "兩筆紀錄屬同一物品，因此共用同一序號。"
+    },
+    {
+      "id": "B",
+      "text": "The earlier diagnosis",
+      "zh": "先前的診斷",
+      "whyZh": "新紀錄不可照抄先前診斷。"
+    },
+    {
+      "id": "C",
+      "text": "The description of the symptom",
+      "zh": "症狀描述",
+      "whyZh": "新的症狀須另外描述，不能沿用同一份。"
+    },
+    {
+      "id": "D",
+      "text": "The notes from the first visit",
+      "zh": "第一次到訪的備註",
+      "whyZh": "文件沒有要求把原備註沿用到新紀錄。"
+    }
+  ],
+  "explanationZh": "兩筆紀錄屬同一物品，因此共用同一序號。",
+  "evidence": "For a new symptom, open a separate record. | Use the same item serial number on both records, but describe the new symptom without copying the earlier diagnosis.",
+  "vocabulary": [
+    {
+      "term": "serial number",
+      "zh": "序號",
+      "note": "辨識同一件物品的編號。"
+    }
+  ],
+  "difficultyRationale": "把新症狀情境套用序號共用、診斷不可照抄。"
+}
