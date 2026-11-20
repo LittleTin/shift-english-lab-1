@@ -1,0 +1,45 @@
+{
+  "id": "t06-q146",
+  "testId": "test-06",
+  "number": 146,
+  "part": 6,
+  "groupId": "t06-r-p6-04",
+  "topic": "manufacturing",
+  "revision": 1,
+  "answer": "A",
+  "difficulty": "intermediate",
+  "tags": [
+    "cloze",
+    "text-completion"
+  ],
+  "prompt": "Choose the best option for the blank.",
+  "promptZh": "請選出最適合填入空格的選項。",
+  "options": [
+    {
+      "id": "A",
+      "text": "continue under the existing record",
+      "zh": "沿用原取件紀錄作業",
+      "whyZh": "不掃描登記出庫，原紀錄就不會結案；沿用它可讓封條註記與原委託留在一起。"
+    },
+    {
+      "id": "B",
+      "text": "start a new record without carrying over today’s notes",
+      "zh": "另開一筆紀錄，不轉入今天的註記",
+      "whyZh": "這會把查核結果和需要查閱該結果的取件作業分開。"
+    },
+    {
+      "id": "C",
+      "text": "discard the seal-check note after shelving the jars",
+      "zh": "把兩罐放回架上後丟掉封條查核註記",
+      "whyZh": "文件明說明天的快遞需要查閱封條查核註記。"
+    },
+    {
+      "id": "D",
+      "text": "close the original record by scanning R out",
+      "zh": "把 R 罐掃描登記出庫，結束原紀錄",
+      "whyZh": "封條無法確認時兩罐都不能掃描登記出庫；R 罐也不能代替 S 罐。"
+    }
+  ],
+  "explanationZh": "不掃描登記出庫，原紀錄就不會結案；沿用它可讓封條註記與原委託留在一起。",
+  "evidence": "Attach a separate label to the shipping bag, not to the jar. Keep the original jar IDs; otherwise we will lose the link between the readings and the specific jar that was tested. If the courier can’t verify the bag seal, shelve S beside R without scanning either jar out. The inventory system would otherwise close the collection record automatically. Tomorrow’s courier needs to see today’s seal-check note next to the original request, so continue under the existing record when the courier returns."
+}

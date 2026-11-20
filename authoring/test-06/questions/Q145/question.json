@@ -1,0 +1,45 @@
+{
+  "id": "t06-q145",
+  "testId": "test-06",
+  "number": 145,
+  "part": 6,
+  "groupId": "t06-r-p6-04",
+  "topic": "manufacturing",
+  "revision": 1,
+  "answer": "C",
+  "difficulty": "intermediate",
+  "tags": [
+    "cloze",
+    "text-completion"
+  ],
+  "prompt": "Choose the best option for the blank.",
+  "promptZh": "請選出最適合填入空格的選項。",
+  "options": [
+    {
+      "id": "A",
+      "text": "customer’s delivery address",
+      "zh": "客戶的送貨地址",
+      "whyZh": "應保留的是樣品罐編號，與送貨地址無關。"
+    },
+    {
+      "id": "B",
+      "text": "shipment weight",
+      "zh": "貨件重量",
+      "whyZh": "讀值是測試 S 罐所得，文件沒有提供貨件總重。"
+    },
+    {
+      "id": "C",
+      "text": "specific jar that was tested",
+      "zh": "實際受測的那一罐",
+      "whyZh": "即使另貼袋標，罐號仍可辨識是同批兩罐中的哪一罐產生讀值。"
+    },
+    {
+      "id": "D",
+      "text": "time the roster was printed",
+      "zh": "列印取件清單的時間",
+      "whyZh": "列印日期解釋清單何以過時，不用來將測試結果追溯至某罐樣品。"
+    }
+  ],
+  "explanationZh": "即使另貼袋標，罐號仍可辨識是同批兩罐中的哪一罐產生讀值。",
+  "evidence": "Attach a separate label to the shipping bag, not to the jar. Keep the original jar IDs; otherwise we will lose the link between the readings and the specific jar that was tested. If the courier can’t verify the bag seal, shelve S beside R without scanning either jar out. The inventory system would otherwise close the collection record automatically. Tomorrow’s courier needs to see today’s seal-check note next to the original request, so continue under the existing record when the courier returns."
+}

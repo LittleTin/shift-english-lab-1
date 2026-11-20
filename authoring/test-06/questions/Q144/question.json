@@ -1,0 +1,45 @@
+{
+  "id": "t06-q144",
+  "testId": "test-06",
+  "number": 144,
+  "part": 6,
+  "groupId": "t06-r-p6-04",
+  "topic": "manufacturing",
+  "revision": 1,
+  "answer": "B",
+  "difficulty": "intermediate",
+  "tags": [
+    "cloze",
+    "text-completion"
+  ],
+  "prompt": "Choose the best option for the blank.",
+  "promptZh": "請選出最適合填入空格的選項。",
+  "options": [
+    {
+      "id": "A",
+      "text": "incomplete",
+      "zh": "資料不完整的",
+      "whyZh": "品項和批號都已列出；問題是品項與新版指示不符，不是少了必要欄位。"
+    },
+    {
+      "id": "B",
+      "text": "out of date",
+      "zh": "不合最新指示",
+      "whyZh": "批號不變，但原列的 R 罐不再符合最新指示；客戶現在要的是受測的 S 罐。"
+    },
+    {
+      "id": "C",
+      "text": "duplicated",
+      "zh": "重複登錄的",
+      "whyZh": "兩罐各有登記，但取件清單只列 R 罐；沒有重複列同一筆。"
+    },
+    {
+      "id": "D",
+      "text": "unreadable",
+      "zh": "無法辨識的",
+      "whyZh": "罐號和批號都看得清楚，問題在於清單選了哪一罐。"
+    }
+  ],
+  "explanationZh": "批號不變，但原列的 R 罐不再符合最新指示；客戶現在要的是受測的 S 罐。",
+  "evidence": "The customer’s revised instructions arrived after I logged both jars. They now want the jar that produced the test readings, provided the seal on the shipping bag can be verified at pickup. The roster entry is therefore out of date, even though the lot number on it is correct."
+}
