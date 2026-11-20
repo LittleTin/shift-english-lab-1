@@ -1,0 +1,80 @@
+{
+  "id": "t05-q037",
+  "testId": "test-05",
+  "groupId": "t05-g033",
+  "part": 3,
+  "number": 37,
+  "difficulty": "advanced",
+  "answer": "D",
+  "prompt": "For the next sample, which instruction would address the likely cause and help catch the defect?",
+  "promptZh": "對下一件樣品，哪項指示既能處理可能的原因，也有助於發現這種瑕疵？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Loosen the thread, flatten the lining, and check the outside only.",
+      "zh": "把線放鬆、攤平內襯，只檢查外側。",
+      "whyZh": "攤平有用，但試驗不支持先調鬆線；只看外側仍可能漏掉內側摺痕。"
+    },
+    {
+      "id": "B",
+      "text": "Keep the setting, leave the lining as it is, and check both sides.",
+      "zh": "不改設定、不整理內襯，兩面都檢查。",
+      "whyZh": "兩面檢查能發現問題，但讓內襯維持原樣並未處理被縫住的摺。"
+    },
+    {
+      "id": "C",
+      "text": "Keep the setting, flatten the lining, and check only the side shown in the photo.",
+      "zh": "不改設定、攤平內襯，只檢查照片所拍的那一側。",
+      "whyZh": "處理可能的原因是對的，但照片只拍外側，無法確認內側沒再起皺。"
+    },
+    {
+      "id": "D",
+      "text": "Keep the setting, flatten the lining, and check both sides.",
+      "zh": "不改設定、攤平內襯，並檢查兩面。",
+      "whyZh": "同設定下只有摺著的內襯起皺，先攤平比調線更符合觀察；外側照片看不出異常，所以還要看內側。"
+    }
+  ],
+  "revision": 1,
+  "topic": "manufacturing",
+  "evidence": "The seam looks straight in the photo you sent. | That photo shows the outside of the pouch. | The scrap with flat lining stayed smooth, but the one with a fold gathered inside. | leave the setting alone for the next sample | I also want a check that won't miss what the photo missed.",
+  "explanationZh": "同設定下只有摺著的內襯起皺，先攤平比調線更符合觀察；外側照片看不出異常，所以還要看內側。",
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "M",
+      "exactQuote": "The seam looks straight in the photo you sent."
+    },
+    {
+      "turn": 2,
+      "speaker": "F",
+      "exactQuote": "That photo shows the outside of the pouch."
+    },
+    {
+      "turn": 4,
+      "speaker": "F",
+      "exactQuote": "The scrap with flat lining stayed smooth, but the one with a fold gathered inside."
+    },
+    {
+      "turn": 4,
+      "speaker": "F",
+      "exactQuote": "leave the setting alone for the next sample"
+    },
+    {
+      "turn": 4,
+      "speaker": "F",
+      "exactQuote": "I also want a check that won't miss what the photo missed."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "what the photo missed",
+      "zh": "照片未顯示的問題",
+      "note": "From the dialogue / 對話原詞。"
+    }
+  ],
+  "difficultyRationale": "Cross-turn diagnosis (controlled fold comparison), photo viewpoint, and test instructions; distractors satisfy only some constraints.",
+  "tags": [
+    "conversation",
+    "manufacturing"
+  ]
+}

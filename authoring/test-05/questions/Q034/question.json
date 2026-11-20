@@ -1,0 +1,65 @@
+{
+  "id": "t05-q034",
+  "testId": "test-05",
+  "groupId": "t05-g032",
+  "part": 3,
+  "number": 34,
+  "difficulty": "intermediate",
+  "answer": "A",
+  "prompt": "What result would support the man's idea about leaving more time?",
+  "promptZh": "哪一項結果最能支持男子所說的拉長間隔？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The air returns to its starting temperature before the next opening.",
+      "zh": "下一次掀蓋前，空氣溫度已降回起始值。",
+      "whyZh": "上一輪忙的時候，空氣還沒降回原值就再次開蓋；若拉長間隔後能先降回去，就支持他的想法。"
+    },
+    {
+      "id": "B",
+      "text": "The air warms whenever the lid is opened.",
+      "zh": "每次掀蓋，空氣溫度仍往上升。",
+      "whyZh": "先前開蓋就會升溫，單是再次看到升溫不能證明延長間隔有用。"
+    },
+    {
+      "id": "C",
+      "text": "The air cools below its starting temperature only after the last opening.",
+      "zh": "最後一次掀蓋後，空氣溫度才降到起始值以下。",
+      "whyZh": "他想改善的是兩次開蓋之間能否降回原本的溫度，而不是最後一次開蓋後的最低溫。"
+    },
+    {
+      "id": "D",
+      "text": "The liquid's temperature stays almost the same again.",
+      "zh": "測試液的溫度再次幾乎不變。",
+      "whyZh": "測試液原本就幾乎不變；這次要看較長間隔對空氣溫度降回原值是否有幫助。"
+    }
+  ],
+  "revision": 1,
+  "topic": "business",
+  "evidence": "the air didn't cool all the way back before I opened the lid again. | Then we can see whether the slower pace helps the air get back to where it started.",
+  "explanationZh": "上一輪忙的時候，空氣還沒降回原值就再次開蓋；若拉長間隔後能先降回去，就支持他的想法。",
+  "evidenceSpans": [
+    {
+      "turn": 3,
+      "speaker": "F",
+      "exactQuote": "the air didn't cool all the way back before I opened the lid again."
+    },
+    {
+      "turn": 4,
+      "speaker": "M",
+      "exactQuote": "Then we can see whether the slower pace helps the air get back to where it started."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "slower pace",
+      "zh": "較慢的頻率",
+      "note": "From the dialogue / 對話原詞。"
+    }
+  ],
+  "difficultyRationale": "Predict discriminating outcome against original rush pattern; not a repeat of requested change.",
+  "tags": [
+    "conversation",
+    "business"
+  ]
+}

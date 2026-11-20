@@ -1,0 +1,60 @@
+{
+  "id": "t05-q032",
+  "testId": "test-05",
+  "groupId": "t05-g032",
+  "part": 3,
+  "number": 32,
+  "difficulty": "foundation",
+  "answer": "B",
+  "prompt": "What caused the display to jump?",
+  "promptZh": "什麼情況導致顯示的溫度突然上升？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The cart was moved outside.",
+      "zh": "攤車被移到戶外。",
+      "whyZh": "對話未提到攤車移動。"
+    },
+    {
+      "id": "B",
+      "text": "The freezer lid was opened.",
+      "zh": "冰櫃的蓋子被打開。",
+      "whyZh": "女子明說每次掀蓋，顯示的溫度就升高。"
+    },
+    {
+      "id": "C",
+      "text": "A full bottle was placed beside the display.",
+      "zh": "裝滿的瓶子被放到顯示器旁。",
+      "whyZh": "測試瓶放在底層架，並不是讀值跳高的原因。"
+    },
+    {
+      "id": "D",
+      "text": "The display was moved to the bottom shelf.",
+      "zh": "顯示器被移到底層架。",
+      "whyZh": "放到底層的是測試瓶，並未移動顯示器。"
+    }
+  ],
+  "revision": 1,
+  "topic": "business",
+  "evidence": "Every time I open the cart's freezer to serve someone, the display jumps.",
+  "explanationZh": "女子明說每次掀蓋，顯示的溫度就升高。",
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "F",
+      "exactQuote": "Every time I open the cart's freezer to serve someone, the display jumps."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "the display jumps",
+      "zh": "顯示的讀值突然上升",
+      "note": "From the dialogue / 對話原詞。"
+    }
+  ],
+  "difficultyRationale": "Direct cause stated at opener.",
+  "tags": [
+    "conversation",
+    "business"
+  ]
+}

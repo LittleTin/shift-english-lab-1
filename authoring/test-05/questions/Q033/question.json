@@ -1,0 +1,70 @@
+{
+  "id": "t05-q033",
+  "testId": "test-05",
+  "groupId": "t05-g032",
+  "part": 3,
+  "number": 33,
+  "difficulty": "intermediate",
+  "answer": "D",
+  "prompt": "Why did the man use a second probe?",
+  "promptZh": "男子為什麼使用第二支探針？",
+  "options": [
+    {
+      "id": "A",
+      "text": "To check whether the original display showed the correct air temperature",
+      "zh": "確認原本的顯示器是否顯示正確的空氣溫度",
+      "whyZh": "兩支探針不是放在同一處量同一種東西，試測不是要校正空氣讀值。"
+    },
+    {
+      "id": "B",
+      "text": "To measure how quickly the liquid chilled after being put into the freezer",
+      "zh": "測量測試液放進冰櫃後多快冷卻",
+      "whyZh": "要觀察的是開蓋時液體是否跟著空氣升溫，不是測新放入的液體冷卻要花多久。"
+    },
+    {
+      "id": "C",
+      "text": "To find which shelf had the lowest air temperature",
+      "zh": "找出哪一層架子的空氣溫度最低",
+      "whyZh": "第二支探針量液體，不是在不同層架量空氣作比較。"
+    },
+    {
+      "id": "D",
+      "text": "To see whether the liquid warmed as much as the air near the lid",
+      "zh": "觀察液體是否跟蓋子附近的空氣升溫一樣多",
+      "whyZh": "顯示器讀的是蓋旁空氣，另一支探針放在測試液裡，才能分開看兩種變化。"
+    }
+  ],
+  "revision": 1,
+  "topic": "business",
+  "evidence": "whether what's inside warms up as much as the air does. | The display measures air by the lid. | I put a second probe inside a sealed bottle of test liquid",
+  "explanationZh": "顯示器讀的是蓋旁空氣，另一支探針放在測試液裡，才能分開看兩種變化。",
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "F",
+      "exactQuote": "whether what's inside warms up as much as the air does."
+    },
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "The display measures air by the lid."
+    },
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "I put a second probe inside a sealed bottle of test liquid"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "probe",
+      "zh": "探針",
+      "note": "From the dialogue / 對話原詞。"
+    }
+  ],
+  "difficultyRationale": "Join stated purpose to distinct probe locations/material.",
+  "tags": [
+    "conversation",
+    "business"
+  ]
+}
