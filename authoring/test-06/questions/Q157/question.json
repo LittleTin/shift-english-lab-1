@@ -1,0 +1,52 @@
+{
+  "id": "t06-q157",
+  "number": 157,
+  "testId": "test-06",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t06-r-p7-03",
+  "topic": "manufacturing",
+  "difficulty": "advanced",
+  "tags": [
+    "single-document"
+  ],
+  "prompt": "A roll fails in the original load direction, is rewound, and then stops at every cut mark. Which record best represents the outcome?",
+  "promptZh": "一卷紙以原本的捲向裝入時無法在記號停下；回捲後每個記號都能停下。哪一筆紀錄符合處理結果？",
+  "answer": "D",
+  "options": [
+    {
+      "id": "A",
+      "text": "Correct wording; release direction does not need to be recorded.",
+      "zh": "文字正確；可不記錄放行時的方向。",
+      "whyZh": "紀錄必須註明放行時的捲向，文字正確不能取代該資訊。"
+    },
+    {
+      "id": "B",
+      "text": "Released as inward, because that was the direction on delivery.",
+      "zh": "以朝內狀態放行，因為收貨時是朝內。",
+      "whyZh": "紀錄應反映放行狀態，不是到貨狀態。"
+    },
+    {
+      "id": "C",
+      "text": "Sensor repaired; the roll was returned to stock unchanged.",
+      "zh": "感測器已修復；紙捲原樣退回庫存。",
+      "whyZh": "改變的是紙捲捲向，沒有修理感測器，也不是原樣放回。"
+    },
+    {
+      "id": "D",
+      "text": "Released after rewinding, with outward-facing labels.",
+      "zh": "回捲為標籤朝外後放行。",
+      "whyZh": "報告的對照試驗確立朝外是合宜方向，處理規則要求在放行紀錄採用檢查、回捲後的方向。"
+    }
+  ],
+  "explanationZh": "報告的對照試驗確立朝外是合宜方向，處理規則要求在放行紀錄採用檢查、回捲後的方向。",
+  "evidence": "A control roll wound outward then stopped at all of its cut marks. / Testing and the stock record must refer to the direction in which the roll was released, not the direction in which it arrived.",
+  "vocabulary": [
+    {
+      "term": "released",
+      "zh": "放行的",
+      "note": "此處代表檢查完成，可回到正常庫存。"
+    }
+  ],
+  "difficultyRationale": "將對照試驗與庫存紀錄時點整合，區別原貌和最終狀態。"
+}

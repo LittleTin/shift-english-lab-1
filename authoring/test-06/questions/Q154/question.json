@@ -1,0 +1,52 @@
+{
+  "id": "t06-q154",
+  "number": 154,
+  "testId": "test-06",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t06-r-p7-03",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "single-document"
+  ],
+  "prompt": "What was wrong with the two rejected rolls?",
+  "promptZh": "兩卷遭退驗的紙捲出了什麼問題？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "Their cartons had split open.",
+      "zh": "外箱裂開。",
+      "whyZh": "報告明說兩外箱都完好。"
+    },
+    {
+      "id": "B",
+      "text": "The labels faced inward.",
+      "zh": "標籤朝內。",
+      "whyZh": "兩卷文字正確，問題是紙捲捲得讓標籤面朝內。"
+    },
+    {
+      "id": "C",
+      "text": "Their labels had incorrect words.",
+      "zh": "標籤文字錯誤。",
+      "whyZh": "原文說兩卷標籤文字正確。"
+    },
+    {
+      "id": "D",
+      "text": "They would not feed into the printer at all.",
+      "zh": "完全無法進入印表機。",
+      "whyZh": "報告指出捲向錯誤時仍可能進紙；確定的問題是標籤面朝內。"
+    }
+  ],
+  "explanationZh": "兩卷文字正確，問題是紙捲捲得讓標籤面朝內。",
+  "evidence": "Two rejected rolls had the correct label wording but had been wound with the labels facing inward.",
+  "vocabulary": [
+    {
+      "term": "facing inward",
+      "zh": "朝內",
+      "note": "facing 可指某物某一面朝向何處。"
+    }
+  ],
+  "difficultyRationale": "直接讀取退驗原因並排除同句另一個屬性。"
+}

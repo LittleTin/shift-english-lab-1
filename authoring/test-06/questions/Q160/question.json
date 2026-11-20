@@ -1,0 +1,52 @@
+{
+  "id": "t06-q160",
+  "number": 160,
+  "testId": "test-06",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t06-r-p7-04",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "single-document"
+  ],
+  "prompt": "The regular cabinet has only one green-tied cable. Two cables on the inspection shelf have white tags, but just one of them has a green tie. How can staff fill the library's request?",
+  "promptZh": "一般櫃只有一條綠帶線材。檢查架上有兩條線材掛白標，但只有一條綁綠帶。員工要怎樣才能備妥圖書館所借的線材？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "Take both white-tagged cables from the inspection shelf.",
+      "zh": "把檢查架上兩條掛白標的線材都拿走。",
+      "whyZh": "其中一條不是中心所有，不能因可用就外借。"
+    },
+    {
+      "id": "B",
+      "text": "Take the one green-tied cable from the cabinet and the green-tied, white-tagged cable from the shelf.",
+      "zh": "取一般櫃的綠帶線材，另一條拿檢查架同時有綠帶和白標的線材。",
+      "whyZh": "一般櫃取綠帶；檢查架的備用則須同時符合中心所有及已通過檢查。"
+    },
+    {
+      "id": "C",
+      "text": "Take the cabinet cable and the black-tied, white-tagged cable.",
+      "zh": "取一般櫃的線材，再拿有黑帶和白標的線材。",
+      "whyZh": "黑帶代表團體所有；白標不會改變所有權，仍不能拿去借給圖書館。"
+    },
+    {
+      "id": "D",
+      "text": "Take just the cabinet cable because everything on the shelf is still awaiting inspection.",
+      "zh": "只取一般櫃的線材，因為檢查架上全都還在等檢查。",
+      "whyZh": "公告允許取有綠帶且掛白標的檢查架線材。"
+    }
+  ],
+  "explanationZh": "一般櫃取綠帶；檢查架的備用則須同時符合中心所有及已通過檢查。",
+  "evidence": "Take green-tied cables from the regular cabinet or, if needed, from the inspection shelf only if they also have a white tag.",
+  "vocabulary": [
+    {
+      "term": "if needed",
+      "zh": "有需要時",
+      "note": "此處表示一般設備櫃不足時才採用備援。"
+    }
+  ],
+  "difficultyRationale": "套用所有權、檢查完成及來源優先順序三項鄰近線索。"
+}

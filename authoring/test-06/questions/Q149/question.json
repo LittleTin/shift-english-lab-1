@@ -1,0 +1,52 @@
+{
+  "id": "t06-q149",
+  "number": 149,
+  "testId": "test-06",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t06-r-p7-01",
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "single-document"
+  ],
+  "prompt": "A runner delivered a card, and the kitchen has started plating that guest’s meal. The guest now asks the runner to switch the dish. What can happen next?",
+  "promptZh": "跑單志工已交回點餐單，廚房也開始為該位用餐者裝盤。用餐者現在請跑單志工換一道菜。接下來可以怎麼處理？",
+  "answer": "D",
+  "options": [
+    {
+      "id": "A",
+      "text": "The runner can write a new card and submit it as the first order.",
+      "zh": "跑單志工可以另寫新單，當成第一份點餐交件。",
+      "whyZh": "原單已送交，簡報禁止再寫第二張單；也不能繞過裝盤後的更改限制。"
+    },
+    {
+      "id": "B",
+      "text": "The runner can ask the kitchen to cancel the entry by reading out the new dish.",
+      "zh": "跑單志工可以直接向廚房念出新菜名，請廚房取消原紀錄。",
+      "whyZh": "跑單志工不得直接向廚房轉述，裝盤後也不能改原紀錄。"
+    },
+    {
+      "id": "C",
+      "text": "The steward can change the original entry because the request came through a runner.",
+      "zh": "因為請求由跑單志工轉交，點餐員可修改原紀錄。",
+      "whyZh": "跑單志工的參與不會延長可改單時間；裝盤一開始便不能更動原紀錄。"
+    },
+    {
+      "id": "D",
+      "text": "The guest can speak to the steward about alternatives, but the original entry stays unchanged.",
+      "zh": "用餐者可向點餐員詢問其他選擇，但原紀錄維持不變。",
+      "whyZh": "點餐單已交回且廚房已開始裝盤，應由點餐員說明替代選項，不可把換菜寫回原紀錄。"
+    }
+  ],
+  "explanationZh": "點餐單已交回且廚房已開始裝盤，應由點餐員說明替代選項，不可把換菜寫回原紀錄。",
+  "evidence": "the steward enters that card into the kitchen list. / Once plating starts, the steward can explain the available alternatives, but cannot amend the original list entry.",
+  "vocabulary": [
+    {
+      "term": "plating",
+      "zh": "裝盤",
+      "note": "指把已備妥的食物盛到盤子上。"
+    }
+  ],
+  "difficultyRationale": "依角色分工與裝盤時點兩項條件，區分另行說明與回寫原紀錄。"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "t06-q155",
+  "number": 155,
+  "testId": "test-06",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t06-r-p7-03",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "single-document"
+  ],
+  "prompt": "What did the pencil-line test establish?",
+  "promptZh": "鉛筆線測試證明了什麼？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "The printer's restart had fixed the cut problem.",
+      "zh": "重啟印表機已排除裁切問題。",
+      "whyZh": "重啟後結果相同；感測器仍沒讀到原裁切記號。"
+    },
+    {
+      "id": "B",
+      "text": "All printed cut marks were too faint to read.",
+      "zh": "所有印出的裁切記號都太淡，無法讀取。",
+      "whyZh": "報告指出感測器只能讀朝外面，從未確認記號太淡。"
+    },
+    {
+      "id": "C",
+      "text": "The sensor responded to a visible mark on the exposed side.",
+      "zh": "感測器對露出那一面的可見記號有反應。",
+      "whyZh": "它讀到鉛筆線；這足以證明有反應，不能證明它讀得到原記號。"
+    },
+    {
+      "id": "D",
+      "text": "The labels on all rolls were wound in the right direction.",
+      "zh": "所有標籤紙捲的捲向都正確。",
+      "whyZh": "已知有兩卷朝內，測試不是檢查所有紙捲的捲向。"
+    }
+  ],
+  "explanationZh": "它讀到鉛筆線；這足以證明有反應，不能證明它讀得到原記號。",
+  "evidence": "The sensor found the pencil line but not the printed cut marks. This established that the sensor was responding; it did not establish that it could see the original marks.",
+  "vocabulary": [
+    {
+      "term": "exposed side",
+      "zh": "露出的那一面",
+      "note": "exposed 在此指未被遮住、感測器可讀到的一面。"
+    }
+  ],
+  "difficultyRationale": "分辨測試直接支持與無法支持的結論。"
+}

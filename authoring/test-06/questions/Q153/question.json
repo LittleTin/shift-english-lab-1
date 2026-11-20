@@ -1,0 +1,52 @@
+{
+  "id": "t06-q153",
+  "number": 153,
+  "testId": "test-06",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t06-r-p7-02",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "single-document"
+  ],
+  "prompt": "A resident's laptop has successfully joined the kit’s Wi-Fi network, but shows “No Internet.” The router is beside a window and its light remains orange. Who should the resident contact, and what should they say?",
+  "promptZh": "住戶的筆電已成功加入套組的 Wi-Fi 網路，但仍顯示「沒有網際網路」。路由器在窗邊仍亮橘燈。住戶該聯絡誰，又該怎麼說？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "Contact the provider and ask it to restore the old network name on the kit.",
+      "zh": "聯絡家用網路業者，請它把套組改回原網路名稱。",
+      "whyZh": "套組會建立新網路；家用網路業者不維護套組。"
+    },
+    {
+      "id": "B",
+      "text": "Contact the hub for a new password, since the laptop could not join the network.",
+      "zh": "聯絡服務中心索取新密碼，因為筆電無法加入網路。",
+      "whyZh": "筆電已加入正確網路；服務中心也不能改借用設備的密碼。"
+    },
+    {
+      "id": "C",
+      "text": "Contact the hub and report that the kit is still offline even though the laptop joined its network and the router was placed by a window.",
+      "zh": "聯絡服務中心，說明筆電已加入套組網路，路由器也在窗邊，但套組仍無法上網。",
+      "whyZh": "筆電已連上套組網路，不是登入失敗；窗邊仍亮橘燈符合聯絡中心的條件，而非向業者反映家用網路。"
+    },
+    {
+      "id": "D",
+      "text": "Contact the provider and report that a blue kit light appeared as soon as the laptop joined.",
+      "zh": "聯絡業者，通報筆電一加入網路，套組就亮藍燈。",
+      "whyZh": "題目說仍亮橘燈；即使是設備問題，也不由家用網路業者維護。"
+    }
+  ],
+  "explanationZh": "筆電已連上套組網路，不是登入失敗；窗邊仍亮橘燈符合聯絡中心的條件，而非向業者反映家用網路。",
+  "evidence": "A connected device can still show “No Internet.” / If the light stays orange there, call the hub; the home Internet provider does not maintain the kit.",
+  "vocabulary": [
+    {
+      "term": "status light",
+      "zh": "狀態燈",
+      "note": "status 指設備目前回報的運作狀態。"
+    }
+  ],
+  "difficultyRationale": "依已加入 Wi-Fi 和窗邊仍亮橘燈，選擇正確的回報內容和聯絡對象。"
+}
