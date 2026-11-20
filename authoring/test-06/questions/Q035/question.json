@@ -1,0 +1,52 @@
+{
+  "id": "t06-q035",
+  "testId": "test-06",
+  "number": 35,
+  "part": 3,
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "groupId": "t06-g035",
+  "prompt": "Which tray still needs checking?",
+  "promptZh": "哪一個托盤還需要檢查？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "The first tray",
+      "zh": "第一個托盤",
+      "whyZh": "第一個托盤已經檢查過了。"
+    },
+    {
+      "id": "B",
+      "text": "The tray with the green clip",
+      "zh": "有綠色夾子的托盤",
+      "whyZh": "交班人員直接說綠夾托盤還沒檢查。"
+    },
+    {
+      "id": "C",
+      "text": "A tray at the tool desk",
+      "zh": "工具櫃檯上的托盤",
+      "whyZh": "工具櫃檯存放的是量規，並非這個托盤。"
+    },
+    {
+      "id": "D",
+      "text": "A tray from the press team",
+      "zh": "沖床組送來的托盤",
+      "whyZh": "沖床組借的是量規，而不是托盤。"
+    }
+  ],
+  "explanationZh": "交班人員直接說綠夾托盤還沒檢查。",
+  "evidence": "The press team lent us this gap gauge until the end of our shift. I checked the first tray. The one with the green clip still needs checking.",
+  "tags": [
+    "manufacturing",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "F",
+      "exactQuote": "The press team lent us this gap gauge until the end of our shift. I checked the first tray. The one with the green clip still needs checking."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "t06-q037",
+  "testId": "test-06",
+  "number": 37,
+  "part": 3,
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "groupId": "t06-g035",
+  "prompt": "By when must the borrowed gauge be returned?",
+  "promptZh": "借來的量規最晚什麼時候要還？",
+  "answer": "A",
+  "options": [
+    {
+      "id": "A",
+      "text": "By the end of the current shift",
+      "zh": "這個班次結束前",
+      "whyZh": "第一位說話者交代借期到本班結束，並說他們下班前對方就要收回。"
+    },
+    {
+      "id": "B",
+      "text": "By the end of the next shift",
+      "zh": "下一個班次結束前",
+      "whyZh": "不能留到接班人員下班；沖床組要在本班結束前收回。"
+    },
+    {
+      "id": "C",
+      "text": "After both trays have been checked",
+      "zh": "兩個托盤都檢查完後",
+      "whyZh": "歸還期限不取決於檢查進度；目前還有一盤未檢查，量規仍須在本班結束前歸還。"
+    },
+    {
+      "id": "D",
+      "text": "When the tool desk closes",
+      "zh": "工具櫃檯關閉時",
+      "whyZh": "工具櫃檯與借來的量規的歸還期限無關；對話也未提到櫃檯關閉時間。"
+    }
+  ],
+  "explanationZh": "第一位說話者交代借期到本班結束，並說他們下班前對方就要收回。",
+  "evidence": "The press team lent us this gap gauge until the end of our shift. I checked the first tray. The one with the green clip still needs checking. / No, they need it back before we leave. Our own gauge is at the tool desk. You can collect it, but bring the job card so they issue the right size.",
+  "tags": [
+    "manufacturing",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "F",
+      "exactQuote": "The press team lent us this gap gauge until the end of our shift. I checked the first tray. The one with the green clip still needs checking."
+    },
+    {
+      "turn": 3,
+      "speaker": "F",
+      "exactQuote": "No, they need it back before we leave. Our own gauge is at the tool desk. You can collect it, but bring the job card so they issue the right size."
+    }
+  ]
+}

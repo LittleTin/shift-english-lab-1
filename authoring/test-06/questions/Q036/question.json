@@ -1,0 +1,62 @@
+{
+  "id": "t06-q036",
+  "testId": "test-06",
+  "number": 36,
+  "part": 3,
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "groupId": "t06-g035",
+  "prompt": "What is the incoming operator going to do before checking the tray?",
+  "promptZh": "接班人員在檢查托盤前打算先做什麼？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "Extend the loan with the press team.",
+      "zh": "向沖床組辦理續借。",
+      "whyZh": "量規下班前必須歸還，接班人員沒有要求續借。"
+    },
+    {
+      "id": "B",
+      "text": "Take the borrowed gauge back personally.",
+      "zh": "親自歸還借來的量規。",
+      "whyZh": "接班人員會把量規留下，讓交班人員歸還。"
+    },
+    {
+      "id": "C",
+      "text": "Get their own team’s gauge from the tool desk.",
+      "zh": "到工具櫃檯領自己組的量規。",
+      "whyZh": "接班人員不能沿用借來的量規，會帶工單卡到工具櫃檯領自己組的。"
+    },
+    {
+      "id": "D",
+      "text": "Bring both trays to the press team.",
+      "zh": "把兩個托盤都拿去沖床組。",
+      "whyZh": "談話只說到檢查剩餘托盤，沒有要求把托盤交給沖床組。"
+    }
+  ],
+  "explanationZh": "接班人員不能沿用借來的量規，會帶工單卡到工具櫃檯領自己組的。",
+  "evidence": "I can check that tray when my shift starts. Is the gauge at the bench mine to use? / No, they need it back before we leave. Our own gauge is at the tool desk. You can collect it, but bring the job card so they issue the right size. / Got it. I’ll leave the borrowed one here for you to return, then take the card to the desk.",
+  "tags": [
+    "manufacturing",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "I can check that tray when my shift starts. Is the gauge at the bench mine to use?"
+    },
+    {
+      "turn": 3,
+      "speaker": "F",
+      "exactQuote": "No, they need it back before we leave. Our own gauge is at the tool desk. You can collect it, but bring the job card so they issue the right size."
+    },
+    {
+      "turn": 4,
+      "speaker": "M",
+      "exactQuote": "Got it. I’ll leave the borrowed one here for you to return, then take the card to the desk."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "t06-q032",
+  "testId": "test-06",
+  "number": 32,
+  "part": 3,
+  "topic": "daily",
+  "difficulty": "foundation",
+  "groupId": "t06-g032",
+  "prompt": "What problem does the visitor report?",
+  "promptZh": "訪客反映什麼問題？",
+  "answer": "A",
+  "options": [
+    {
+      "id": "A",
+      "text": "A switch gets stuck.",
+      "zh": "開關會卡住。",
+      "whyZh": "訪客直接說開關按到一半會卡住。"
+    },
+    {
+      "id": "B",
+      "text": "The shade has cracked.",
+      "zh": "燈罩裂了。",
+      "whyZh": "訪客明說燈罩沒問題。"
+    },
+    {
+      "id": "C",
+      "text": "A box is missing.",
+      "zh": "盒子不見了。",
+      "whyZh": "訪客明說自己帶來了原來的盒子。"
+    },
+    {
+      "id": "D",
+      "text": "The cord is too short.",
+      "zh": "電線太短。",
+      "whyZh": "電線只用來掛標籤，沒有說長度不足。"
+    }
+  ],
+  "explanationZh": "訪客直接說開關按到一半會卡住。",
+  "evidence": "I brought a desk lamp to the repair café. The shade is fine, but the switch gets stuck halfway. Is that something you look at here?",
+  "tags": [
+    "daily",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "F",
+      "exactQuote": "I brought a desk lamp to the repair café. The shade is fine, but the switch gets stuck halfway. Is that something you look at here?"
+    }
+  ]
+}

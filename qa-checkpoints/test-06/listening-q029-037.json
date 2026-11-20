@@ -1,0 +1,609 @@
+{
+  "status": "independent-standalone-audio-batch-pass-not-full-exam-lock",
+  "draftSha256": "df79e9996819d95ee88d6a2d492d86fdd817489319000e92d73284829fe1f520",
+  "mediaManifestsSha256": [
+    "c39994a93a7f72849162724da85e65119db13333cfe0d2b89009bc96d9c30e70",
+    "71bccca036b2ec622bcea8c70a77bb18a2bd864e2a684073c337cf5bcee3f664"
+  ],
+  "ASR": {
+    "part2": {
+      "whisperActual": "cfec1ab5bb834e4cda431a26f6916a7f5bc227998cdc46d20aab4bb1c912d6a0",
+      "voskActual": "4b730838b74b8f1ce5038ec5d17b014b880a619a7469c6fcc21c53b8ab940565",
+      "q030TargetedActualLgraph": "435ead19c95c6992b1eb7241f2a6ea13ff660eadf09d2cc982afcd8327185b4a"
+    },
+    "part3": {
+      "physicalActual": "0b9c6654f5bbc841661b755a2feba602b01ce1ce267e75eeacc8ee369c53c9f9",
+      "sourceRebuildActual": "c5dd1565b9495631ad22dfb88e8a49d77a38bc885e7e95ee97fccbfd6c02b4b0",
+      "whisperActual": "39f0d0a2ce748ca82efbbc49bd8b5cbc173aeca6bca445e43e721298f2ba251a",
+      "voskActual": "0c09bfa343f1b90f03165a7e519c2947bba87ead9632e62d9567a107ac37396d"
+    }
+  },
+  "native": {
+    "sourceManifestsSha256": [
+      "c39994a93a7f72849162724da85e65119db13333cfe0d2b89009bc96d9c30e70",
+      "71bccca036b2ec622bcea8c70a77bb18a2bd864e2a684073c337cf5bcee3f664"
+    ],
+    "stage": "native standalone exact-byte audio fixture (not full application)",
+    "started": 30,
+    "ended": 30,
+    "httpExact": 30,
+    "unexpected": 0,
+    "allTrusted": true,
+    "all1x": true,
+    "allStartAtZero": true,
+    "allNaturalEof": true,
+    "matchesSourceOrder": true,
+    "orderedSources": "both modes each G019–G031, G032 and G035; formal then practice",
+    "http": "each full SHA-256 byte match and precision HTTP 206 (bytes 1000–5095), audio/ogg"
+  },
+  "groups": [
+    {
+      "group": "t06-g029",
+      "questions": [
+        "t06-q029"
+      ],
+      "outputs": {
+        "formal": {
+          "url": "audio/formal-groups/test-06/t06-g029.ogg",
+          "sha256": "bad6d1e2abca0bb00a95c8f71b8394e9319f5502092abcf7493745c9fc290f11",
+          "pcmSha256": "a889408af71ecf18e1d2f9da6fa01050352cea4e4a6e5fd62a9c35da5278d47a",
+          "samples48k": 1193122,
+          "frames": [
+            {
+              "role": "lead",
+              "start": 0,
+              "end": 96000,
+              "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "codecRunway",
+              "start": 96000,
+              "end": 96960,
+              "pcmSha256": "e2006d67447ac1a3775bfff3f669090435329d2c0e9fe96f47cd0ef99a9792f2"
+            },
+            {
+              "role": "numberCue",
+              "start": 96960,
+              "end": 151642,
+              "pcmSha256": "94bccd506d57119c597ebfc7a18957b46f067a9ee399c3d65d1df32cb0770833"
+            },
+            {
+              "role": "newSpeech",
+              "start": 151642,
+              "end": 833122,
+              "pcmSha256": "18abfb1eb60d60c44c78063cf7e7e732e34fed3e7fd2b2399881d215b90ef796"
+            },
+            {
+              "role": "tail",
+              "start": 833122,
+              "end": 929122,
+              "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "answerWait",
+              "start": 929122,
+              "end": 1193122,
+              "pcmSha256": "68ca649d2d4a35df77d47fd04795aa2a18fc3f522455fb772d19bb0de66cbaf7"
+            }
+          ]
+        },
+        "practice": {
+          "url": "audio/practice-groups/test-06/t06-g029.ogg",
+          "sha256": "732f2472587246f179f1ff4e250455eccf96478d5c3faeff6b6383808f3b24d4",
+          "pcmSha256": "3b3bafc5c1c5c047f1f19c1277171b055c33b72b76b610f1e3491319c5f8f256",
+          "samples48k": 873480,
+          "frames": [
+            {
+              "role": "lead",
+              "start": 0,
+              "end": 96000,
+              "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "newSpeech",
+              "start": 96000,
+              "end": 777480,
+              "pcmSha256": "e2f08fcfef7e09b46caabf93338af5f398229bdcfaeb7179c05d85b70715aad6"
+            },
+            {
+              "role": "tail",
+              "start": 777480,
+              "end": 873480,
+              "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "t06-g030",
+      "questions": [
+        "t06-q030"
+      ],
+      "outputs": {
+        "formal": {
+          "url": "audio/formal-groups/test-06/t06-g030.ogg",
+          "sha256": "769fb1af6ec2769283db60fdd1fc1025f1e14c17b5fddf32bf86ecb34122dd95",
+          "pcmSha256": "6e2c63320a96dc4e6f55a0ebc77fff571dbc81e99250950607af93c7b28a0700",
+          "samples48k": 1319808,
+          "frames": [
+            {
+              "role": "lead",
+              "start": 0,
+              "end": 96000,
+              "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "codecRunway",
+              "start": 96000,
+              "end": 96960,
+              "pcmSha256": "4f6c064f7f14307d54d6d35ebfcf41aae1a95d6ea8e815f9643b3a85f45f6fc2"
+            },
+            {
+              "role": "numberCue",
+              "start": 96960,
+              "end": 139728,
+              "pcmSha256": "1258f7a5ea6fee42fdf0b4db8b6ec18c739afc82fd5e28e665422821948bc823"
+            },
+            {
+              "role": "newSpeech",
+              "start": 139728,
+              "end": 959808,
+              "pcmSha256": "62b9d93bb78a289aea9d4b357afd826517e328f8e55de4bfc8e418058d36c3de"
+            },
+            {
+              "role": "tail",
+              "start": 959808,
+              "end": 1055808,
+              "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "answerWait",
+              "start": 1055808,
+              "end": 1319808,
+              "pcmSha256": "68ca649d2d4a35df77d47fd04795aa2a18fc3f522455fb772d19bb0de66cbaf7"
+            }
+          ]
+        },
+        "practice": {
+          "url": "audio/practice-groups/test-06/t06-g030.ogg",
+          "sha256": "4157059e2a2549c2f016772ae232d318fee61ebad2086b6eb82039c16773224f",
+          "pcmSha256": "9b444995dff1ab77c14317a80c52f3b5adbc4a2c78417b07eacf1655b1e94ddc",
+          "samples48k": 1012080,
+          "frames": [
+            {
+              "role": "lead",
+              "start": 0,
+              "end": 96000,
+              "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "newSpeech",
+              "start": 96000,
+              "end": 916080,
+              "pcmSha256": "db80a8e9fe4a7dc3d86f4bafd057c2c2e515250842a9ffece00b1a201d28acc6"
+            },
+            {
+              "role": "tail",
+              "start": 916080,
+              "end": 1012080,
+              "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "t06-g031",
+      "questions": [
+        "t06-q031"
+      ],
+      "outputs": {
+        "formal": {
+          "url": "audio/formal-groups/test-06/t06-g031.ogg",
+          "sha256": "b82b87eab03037f5c2feacb5874a91869493b83bbbbbbc40b3f8bc78f76e64b3",
+          "pcmSha256": "9d064d44c8d7e2a5659f584f2037d9c8280f3ba491b8f53a5a05081152d6725d",
+          "samples48k": 1417584,
+          "frames": [
+            {
+              "role": "lead",
+              "start": 0,
+              "end": 96000,
+              "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "codecRunway",
+              "start": 96000,
+              "end": 96960,
+              "pcmSha256": "155e437b946ac82ae591ff382b8d19efda9397b2282672dbabd91ec31ce8a651"
+            },
+            {
+              "role": "numberCue",
+              "start": 96960,
+              "end": 149304,
+              "pcmSha256": "a61c6a227c2da0152647e25674b848a2e8b37c7b5e7c962ff23930f7afc8503c"
+            },
+            {
+              "role": "newSpeech",
+              "start": 149304,
+              "end": 1057584,
+              "pcmSha256": "7bd71e1adf541e5029265390ba2e8f095b8d6ea438c1f9771bb481a412dbb3c7"
+            },
+            {
+              "role": "tail",
+              "start": 1057584,
+              "end": 1153584,
+              "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "answerWait",
+              "start": 1153584,
+              "end": 1417584,
+              "pcmSha256": "68ca649d2d4a35df77d47fd04795aa2a18fc3f522455fb772d19bb0de66cbaf7"
+            }
+          ]
+        },
+        "practice": {
+          "url": "audio/practice-groups/test-06/t06-g031.ogg",
+          "sha256": "0369a2cdb814511970e40fbe7d2af12c7c8d5f9ac73348ef526752044aca1c65",
+          "pcmSha256": "f0378826ed2dd7f2c7796dc3987ea6315726604e5459a63ed6e1f23f04afac03",
+          "samples48k": 1100280,
+          "frames": [
+            {
+              "role": "lead",
+              "start": 0,
+              "end": 96000,
+              "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "newSpeech",
+              "start": 96000,
+              "end": 1004280,
+              "pcmSha256": "4c2e9c4df13212a09fb4fa19cc96302cd58595a3ae3eccaafa64862c98248302"
+            },
+            {
+              "role": "tail",
+              "start": 1004280,
+              "end": 1100280,
+              "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "t06-g032",
+      "questions": [
+        "t06-q032",
+        "t06-q033",
+        "t06-q034"
+      ],
+      "outputs": {
+        "formal": {
+          "url": "audio/formal-groups/test-06/t06-g032.ogg",
+          "sha256": "98f9717717975dfbbc1f00a79cebaec520e82b432f93b4b8b5eda9d21f004deb",
+          "pcmSha256": "0ae9edd4f70072fa5dadc7c05de33ab35a9ea1c593c0918b4a5fbd24c8e01e42",
+          "samples48k": 4500744,
+          "frames": [
+            {
+              "role": "lead",
+              "start": 0,
+              "end": 96000,
+              "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "codecRunway",
+              "start": 96000,
+              "end": 96960,
+              "pcmSha256": "155e437b946ac82ae591ff382b8d19efda9397b2282672dbabd91ec31ce8a651"
+            },
+            {
+              "role": "direction",
+              "start": 96960,
+              "end": 836544,
+              "pcmSha256": "4caea7abf188347218bd803fa87b69962548020b26364f3c7e414aa2798fc93a"
+            },
+            {
+              "role": "rangeCue",
+              "start": 836544,
+              "end": 1066944,
+              "pcmSha256": "91cff1e32648043f5eb210b1e891cbc23138bd1c293ede5a3208e4bd4cef84f8"
+            },
+            {
+              "role": "dialogueTurn",
+              "start": 1066944,
+              "end": 1509144,
+              "pcmSha256": "222287e00792164fb9624412ef1e723ab71cb4934f83be0ec1eff8ee29a79169"
+            },
+            {
+              "role": "dialogueTurn",
+              "start": 1509144,
+              "end": 1938744,
+              "pcmSha256": "6c052fdc8f2526ce57eea38572c2d357e3ebd9015bd1995f0074e235a518f669"
+            },
+            {
+              "role": "dialogueTurn",
+              "start": 1938744,
+              "end": 2280144,
+              "pcmSha256": "fd0ec7451197b1ff7c6ed1702ccf569ea7c48d3d46412fcf23cce95e91b5fc41"
+            },
+            {
+              "role": "dialogueTurn",
+              "start": 2280144,
+              "end": 2583744,
+              "pcmSha256": "6c042ac3ed26bdfd72c5477c19ee2afefe120b47e8024e2716e77339330def7f"
+            },
+            {
+              "role": "numberCue",
+              "start": 2583744,
+              "end": 2682744,
+              "pcmSha256": "4744afad99ada75f49ac8d185d6d4543eb3849d6dac7bf25d2aba1c9db8aca12"
+            },
+            {
+              "role": "stem",
+              "start": 2682744,
+              "end": 2818944,
+              "pcmSha256": "0a0650d1c33cc472a226f6b37e99951eb462bace2be58b5c29879fc333655b75"
+            },
+            {
+              "role": "answerWait",
+              "start": 2818944,
+              "end": 3178944,
+              "pcmSha256": "943696a366338cdf1765680dd633ef600abb4a015c7c6bd3d41cd7d585bc98c8"
+            },
+            {
+              "role": "numberCue",
+              "start": 3178944,
+              "end": 3279144,
+              "pcmSha256": "d065715d7f237a89aeaf583445e942bf535be58f7571785572a93c7c0d8dc9a5"
+            },
+            {
+              "role": "stem",
+              "start": 3279144,
+              "end": 3405144,
+              "pcmSha256": "109b47650c327da3cc25ae3b65bfdcad1eed964f310d99dce817953bbf105d62"
+            },
+            {
+              "role": "answerWait",
+              "start": 3405144,
+              "end": 3765144,
+              "pcmSha256": "943696a366338cdf1765680dd633ef600abb4a015c7c6bd3d41cd7d585bc98c8"
+            },
+            {
+              "role": "numberCue",
+              "start": 3765144,
+              "end": 3865944,
+              "pcmSha256": "78385f412aa5829912d1f2cca65cb0daace66b9ffcec151e9bcd4d2b69c68769"
+            },
+            {
+              "role": "stem",
+              "start": 3865944,
+              "end": 4044744,
+              "pcmSha256": "22e5321436a33e83656a15107f0c06ff4b35c3ba354ea4ce72f6c9c8583aeaea"
+            },
+            {
+              "role": "tail",
+              "start": 4044744,
+              "end": 4140744,
+              "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "answerWait",
+              "start": 4140744,
+              "end": 4500744,
+              "pcmSha256": "943696a366338cdf1765680dd633ef600abb4a015c7c6bd3d41cd7d585bc98c8"
+            }
+          ]
+        },
+        "practice": {
+          "url": "audio/practice-groups/test-06/t06-g032.ogg",
+          "sha256": "8a55076fe9bb9eff4981942758966c448eda89662f55cdb76c2a7448a77f8e22",
+          "pcmSha256": "2b4f5cd519eae5320d7fda8f12b589e82e4039517dd8515f7f517db53f121511",
+          "samples48k": 1708800,
+          "frames": [
+            {
+              "role": "lead",
+              "start": 0,
+              "end": 96000,
+              "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "dialogueTurn",
+              "start": 96000,
+              "end": 538200,
+              "pcmSha256": "149f80a563339403439e4af2c2131c4cc40d0eef37442c2a4440d4c39718c311"
+            },
+            {
+              "role": "dialogueTurn",
+              "start": 538200,
+              "end": 967800,
+              "pcmSha256": "a2cd638a7e252a4f115b5997a6dfcf7870ac4ac5e2141ee00a1653bde51d64dd"
+            },
+            {
+              "role": "dialogueTurn",
+              "start": 967800,
+              "end": 1309200,
+              "pcmSha256": "da596763bd6bbc1b997adec219ce0ccac3d9ec290214213e1c5626bbf257e7d9"
+            },
+            {
+              "role": "dialogueTurn",
+              "start": 1309200,
+              "end": 1612800,
+              "pcmSha256": "7f01fec82a37c7705e023b3be6b304bb6fa2cd41761110fb2512232b534c0ca7"
+            },
+            {
+              "role": "tail",
+              "start": 1612800,
+              "end": 1708800,
+              "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "t06-g035",
+      "questions": [
+        "t06-q035",
+        "t06-q036",
+        "t06-q037"
+      ],
+      "outputs": {
+        "formal": {
+          "url": "audio/formal-groups/test-06/t06-g035.ogg",
+          "sha256": "b3a77a73347a8ead342eb06f8c6ca5ac7435239e8c376e42b3ae282464965a28",
+          "pcmSha256": "8a80db45143cde368ff3c9c2d80423bf896220719cb63680409c9c1ec9d7cb0a",
+          "samples48k": 3828960,
+          "frames": [
+            {
+              "role": "lead",
+              "start": 0,
+              "end": 96000,
+              "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "codecRunway",
+              "start": 96000,
+              "end": 96960,
+              "pcmSha256": "155e437b946ac82ae591ff382b8d19efda9397b2282672dbabd91ec31ce8a651"
+            },
+            {
+              "role": "rangeCue",
+              "start": 96960,
+              "end": 333960,
+              "pcmSha256": "a1fd809905b2ce2bf4972a04b81bb7e3ad92a18fccd81e67ad1d0a4e40235c92"
+            },
+            {
+              "role": "dialogueTurn",
+              "start": 333960,
+              "end": 810960,
+              "pcmSha256": "dea4e86fa43f196d7f16240c8d81698b99c214e3f88679287847583b24531b37"
+            },
+            {
+              "role": "dialogueTurn",
+              "start": 810960,
+              "end": 1082760,
+              "pcmSha256": "fd6f114790979da25311ffccbaa6eac211705489e9ce0be5eec2581e9bf5bf25"
+            },
+            {
+              "role": "dialogueTurn",
+              "start": 1082760,
+              "end": 1576560,
+              "pcmSha256": "a2d46161ffe37ac7d450e34407e2ea08e89ecb3d1305695d961da914337dd593"
+            },
+            {
+              "role": "dialogueTurn",
+              "start": 1576560,
+              "end": 1856160,
+              "pcmSha256": "0cb810c5b483d561b334949e6dbae1cd032402a71fb61439bb028c43399ef182"
+            },
+            {
+              "role": "numberCue",
+              "start": 1856160,
+              "end": 1959960,
+              "pcmSha256": "efdfbf3da879d619c8e736dbaef88622555088b1bbfc11904e0b7556ce6f4f5d"
+            },
+            {
+              "role": "stem",
+              "start": 1959960,
+              "end": 2087160,
+              "pcmSha256": "f921f325a439ea3139c785b18acc92f8c5f64e2b3ae209bc5212756e55d2c86e"
+            },
+            {
+              "role": "answerWait",
+              "start": 2087160,
+              "end": 2447160,
+              "pcmSha256": "943696a366338cdf1765680dd633ef600abb4a015c7c6bd3d41cd7d585bc98c8"
+            },
+            {
+              "role": "numberCue",
+              "start": 2447160,
+              "end": 2550960,
+              "pcmSha256": "37403f04826707b4f052ae2562abb205564d4f04b80aaa309abc0b3fdde9a0a9"
+            },
+            {
+              "role": "stem",
+              "start": 2550960,
+              "end": 2762160,
+              "pcmSha256": "159b6762d080e3677b187a4a96fb7ade025520fb90474810170e8bec1b662d2d"
+            },
+            {
+              "role": "answerWait",
+              "start": 2762160,
+              "end": 3122160,
+              "pcmSha256": "943696a366338cdf1765680dd633ef600abb4a015c7c6bd3d41cd7d585bc98c8"
+            },
+            {
+              "role": "numberCue",
+              "start": 3122160,
+              "end": 3224160,
+              "pcmSha256": "94155e276d13675c4650c471aac1bd2b126aedb4bd3d7fe62de18e1b14153e1f"
+            },
+            {
+              "role": "stem",
+              "start": 3224160,
+              "end": 3372960,
+              "pcmSha256": "21c761e860f144d10d611413a48d20d479977b39006ef87c84267cdaee8f58dc"
+            },
+            {
+              "role": "tail",
+              "start": 3372960,
+              "end": 3468960,
+              "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "answerWait",
+              "start": 3468960,
+              "end": 3828960,
+              "pcmSha256": "943696a366338cdf1765680dd633ef600abb4a015c7c6bd3d41cd7d585bc98c8"
+            }
+          ]
+        },
+        "practice": {
+          "url": "audio/practice-groups/test-06/t06-g035.ogg",
+          "sha256": "e14c732fd942331e9bf3379b347c52f00a1e5d1cdadff621b308d5d4f04e47a8",
+          "pcmSha256": "f094f7a745f23b9a67367923248cf36185c560be0cf095a66f667f9725163949",
+          "samples48k": 1714200,
+          "frames": [
+            {
+              "role": "lead",
+              "start": 0,
+              "end": 96000,
+              "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "dialogueTurn",
+              "start": 96000,
+              "end": 573000,
+              "pcmSha256": "13b44c9922046dff09e2116461ded3c244bda21e5f27e601a2ebc1a96896b1c8"
+            },
+            {
+              "role": "dialogueTurn",
+              "start": 573000,
+              "end": 844800,
+              "pcmSha256": "152ae1da0b1554f95840c915973cad6b1b5fa574aaa82ac5f62444d8c27e7ede"
+            },
+            {
+              "role": "dialogueTurn",
+              "start": 844800,
+              "end": 1338600,
+              "pcmSha256": "825780013b3bfae9f1a5b0c2b3e987ce754e1a348fe22e04290b2e7a1481dff6"
+            },
+            {
+              "role": "dialogueTurn",
+              "start": 1338600,
+              "end": 1618200,
+              "pcmSha256": "32ff3e15647ca1a1a30df92c2c4bc1d137f15e753f855b191245cfa68d0af114"
+            },
+            {
+              "role": "tail",
+              "start": 1618200,
+              "end": 1714200,
+              "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
