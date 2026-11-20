@@ -1,0 +1,51 @@
+{
+  "id": "t06-q108",
+  "testId": "test-06",
+  "number": 108,
+  "part": 5,
+  "revision": 1,
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "incomplete-sentence",
+    "technology"
+  ],
+  "prompt": "The device sends its time in UTC; convert it to local time before comparing it with the time already _____ in the technician’s log.",
+  "promptZh": "這部裝置以 UTC 傳送時間；請先換算為當地時間，再與維修人員紀錄中已_____的時間比較。",
+  "options": [
+    {
+      "id": "A",
+      "text": "records",
+      "zh": "記載（主動限定動詞）",
+      "whyZh": "time 是被記錄的對象；本句也已有謂語，不需要在 time 後再直接加另一個限定動詞。"
+    },
+    {
+      "id": "B",
+      "text": "to record",
+      "zh": "要記下",
+      "whyZh": "to record 表尚待記錄；already 指這裡比較的是紀錄內已登載的時間。"
+    },
+    {
+      "id": "C",
+      "text": "recorded",
+      "zh": "記載的",
+      "whyZh": "already recorded 是過去分詞片語，表示這個時間已在紀錄中被記下。"
+    },
+    {
+      "id": "D",
+      "text": "recording",
+      "zh": "記錄中（主動分詞）",
+      "whyZh": "recording 會把 time 當成主動做紀錄的一方；這裡 time 是被記錄的對象。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "already recorded 是過去分詞片語，表示這個時間已在紀錄中被記下。",
+  "evidence": "The device sends its time in UTC; convert it to local time before comparing it with the time already recorded in the technician’s log.",
+  "vocabulary": [
+    {
+      "term": "local time",
+      "zh": "當地時間",
+      "note": "convert it to local time 指把時間換算為當地時區。"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "t06-q110",
+  "testId": "test-06",
+  "number": 110,
+  "part": 5,
+  "revision": 1,
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "incomplete-sentence",
+    "manufacturing"
+  ],
+  "prompt": "The supplier does not need the working motor back; send only the bracket _____ the paint is peeling.",
+  "promptZh": "供應商不需要收回仍正常運轉的馬達，只寄回烤漆_____剝落的支架即可。",
+  "options": [
+    {
+      "id": "A",
+      "text": "which",
+      "zh": "哪一個／關係代名詞",
+      "whyZh": "which 單獨不能補出「在支架上」的關係，因為 the paint 已是 is peeling 的主詞。"
+    },
+    {
+      "id": "B",
+      "text": "from whom",
+      "zh": "從哪個人身上",
+      "whyZh": "whom 指人，而 bracket 是支架。"
+    },
+    {
+      "id": "C",
+      "text": "how",
+      "zh": "如何",
+      "whyZh": "how 引出方式，不能在這裡說明漆是從哪個物體上剝落。"
+    },
+    {
+      "id": "D",
+      "text": "from which",
+      "zh": "從其上",
+      "whyZh": "在 the bracket from which the paint is peeling 中，from which 指漆從該支架上剝落，說明要退回哪個支架。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "在 the bracket from which the paint is peeling 中，from which 指漆從該支架上剝落，說明要退回哪個支架。",
+  "evidence": "The supplier does not need the working motor back; send only the bracket from which the paint is peeling.",
+  "vocabulary": [
+    {
+      "term": "peeling",
+      "zh": "正在剝落",
+      "note": "the paint is peeling 指塗層正一片片掉落。"
+    }
+  ]
+}

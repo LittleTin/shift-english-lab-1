@@ -1,0 +1,51 @@
+{
+  "id": "t06-q102",
+  "testId": "test-06",
+  "number": 102,
+  "part": 5,
+  "revision": 1,
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "incomplete-sentence",
+    "technology"
+  ],
+  "prompt": "The search tool indexes the title of each file, but not the words inside it, so give files _____ names rather than numbering them.",
+  "promptZh": "搜尋工具會將每個檔案的標題建立索引，但不會索引檔案內容，因此請用_____名稱命名，不要只用編號。",
+  "options": [
+    {
+      "id": "A",
+      "text": "sequential",
+      "zh": "按順序排列的",
+      "whyZh": "這種命名強調先後順序，近似題目要求避免的純編號，不能交代檔案內容。"
+    },
+    {
+      "id": "B",
+      "text": "temporary",
+      "zh": "暫時的",
+      "whyZh": "名稱是否暫時與能否依內容辨認檔案無關。"
+    },
+    {
+      "id": "C",
+      "text": "uniform",
+      "zh": "一致的",
+      "whyZh": "格式一致可以是命名規範，但題目真正要解決的是從名稱辨認檔案內容。"
+    },
+    {
+      "id": "D",
+      "text": "descriptive",
+      "zh": "能描述內容的",
+      "whyZh": "搜尋無法比對內文，因此檔名應帶有內容線索，讓使用者能靠標題搜尋。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "搜尋無法比對內文，因此檔名應帶有內容線索，讓使用者能靠標題搜尋。",
+  "evidence": "The search tool indexes the title of each file, but not the words inside it, so give files descriptive names rather than numbering them.",
+  "vocabulary": [
+    {
+      "term": "descriptive names",
+      "zh": "能描述內容的名稱",
+      "note": "名稱若帶有內容線索，即使搜尋工具不索引內文也容易找。"
+    }
+  ]
+}

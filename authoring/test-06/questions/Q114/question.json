@@ -1,0 +1,51 @@
+{
+  "id": "t06-q114",
+  "testId": "test-06",
+  "number": 114,
+  "part": 5,
+  "revision": 1,
+  "topic": "manufacturing",
+  "difficulty": "advanced",
+  "tags": [
+    "incomplete-sentence",
+    "manufacturing"
+  ],
+  "prompt": "Only after a technician has measured the defect at room temperature _____ under the supplier’s warranty, regardless of whether a photo has already been sent.",
+  "promptZh": "無論照片是否已寄出，只有等技術人員在室溫下量測瑕疵後，_____供應商的保固。",
+  "options": [
+    {
+      "id": "A",
+      "text": "the part qualifies",
+      "zh": "該零件符合條件",
+      "whyZh": "主詞加動詞順序通常可用，但 Only after 開頭限制主要子句，須用助動詞倒裝。"
+    },
+    {
+      "id": "B",
+      "text": "does the technician qualify",
+      "zh": "技術人員才符合條件",
+      "whyZh": "雖有正確倒裝，卻讓 technician 成為符合零件保固條件的一方；技術人員只負責量測。"
+    },
+    {
+      "id": "C",
+      "text": "qualifies the part",
+      "zh": "符合條件的是該零件",
+      "whyZh": "當 qualify 表示符合條件時，不能單靠把實義動詞移到主詞前完成這種倒裝；需 do-support。"
+    },
+    {
+      "id": "D",
+      "text": "does the part qualify",
+      "zh": "該零件才符合條件",
+      "whyZh": "句首 Only after 限制時間，主要子句用 does 倒裝；under the supplier’s warranty 表示零件符合供應商保固資格，寄照片不取代室溫量測。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "句首 Only after 限制時間，主要子句用 does 倒裝；under the supplier’s warranty 表示零件符合供應商保固資格，寄照片不取代室溫量測。",
+  "evidence": "Only after a technician has measured the defect at room temperature does the part qualify under the supplier’s warranty, regardless of whether a photo has already been sent.",
+  "vocabulary": [
+    {
+      "term": "at room temperature",
+      "zh": "在室溫下",
+      "note": "用於指明量測時的溫度條件。"
+    }
+  ]
+}
