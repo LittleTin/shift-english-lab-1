@@ -1,0 +1,51 @@
+{
+  "id": "t06-q130",
+  "testId": "test-06",
+  "number": 130,
+  "part": 5,
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "incomplete-sentence",
+    "daily"
+  ],
+  "prompt": "Jo paid the full fare because he tapped his travel card after the off-peak discount had _____ for the day.",
+  "promptZh": "Jo 必須付全額車資，因為刷交通卡時，當天的離峰折扣已經_____。",
+  "options": [
+    {
+      "id": "A",
+      "text": "qualified",
+      "zh": "符合資格",
+      "whyZh": "符合資格的通常是旅客或票種，折扣本身不會以此方式取得資格，也未解釋為何付全額。"
+    },
+    {
+      "id": "B",
+      "text": "reimbursed",
+      "zh": "退還",
+      "whyZh": "reimburse 要有付款人及償付對象或費用；此處描述折扣適用時段，不是退費。"
+    },
+    {
+      "id": "C",
+      "text": "deducted",
+      "zh": "扣除",
+      "whyZh": "若折扣已扣除，就不應付全額；the discount 也不是主動完成扣款的主詞。"
+    },
+    {
+      "id": "D",
+      "text": "expired",
+      "zh": "到期、失效",
+      "whyZh": "expired for the day 指當天的優惠適用時段已結束，因此刷卡只能付全額。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "expired for the day 指當天的優惠適用時段已結束，因此刷卡只能付全額。",
+  "evidence": "Jo paid the full fare because he tapped his travel card after the off-peak discount had expired for the day.",
+  "vocabulary": [
+    {
+      "term": "off-peak discount",
+      "zh": "離峰折扣",
+      "note": "off-peak 指需求較低的非尖峰時段。"
+    }
+  ]
+}
