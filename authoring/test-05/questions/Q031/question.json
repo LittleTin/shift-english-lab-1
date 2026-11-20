@@ -1,0 +1,51 @@
+{
+  "id": "t05-q031",
+  "testId": "test-05",
+  "groupId": "t05-g031",
+  "part": 2,
+  "number": 31,
+  "revision": 1,
+  "topic": "business",
+  "context": "work",
+  "difficulty": "advanced",
+  "difficultyRationaleZh": "須辨識回覆強調的是拍攝目的，再推論拍照前不能換掉有破損的原標籤；回覆本身未直接說不可以。",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽錄音，選出最適當的回應。",
+  "spokenPrompt": "Replace this torn tag before the photo?",
+  "spokenPromptZh": "拍照前，我要先換掉這張破掉的標籤嗎？",
+  "options": [
+    {
+      "id": "A",
+      "text": "I photographed the shelf.",
+      "zh": "我拍過那層置物架了。",
+      "whyZh": "層架的照片不是這張破標籤的照片，也沒有交代要不要先換掉標籤。"
+    },
+    {
+      "id": "B",
+      "text": "It came from that box.",
+      "zh": "這張標籤是那個箱子上的。",
+      "whyZh": "交代標籤的來源，但無法判斷拍照前該不該更換。"
+    },
+    {
+      "id": "C",
+      "text": "The damaged part is what we need to show.",
+      "zh": "我們要拍清楚的就是受損的地方。",
+      "whyZh": "破損正是拍攝目的；先換掉標籤會消除要記錄的證據，因此不能先換。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "破損正是拍攝目的；先換掉標籤會消除要記錄的證據，因此不能先換。",
+  "evidence": "Replace this torn tag before the photo? | The damaged part is what we need to show.",
+  "vocabulary": [
+    {
+      "term": "this torn tag",
+      "zh": "這張破損的標籤",
+      "note": "torn 是 tear 的過去分詞，在此形容被撕破或已有裂口。"
+    },
+    {
+      "term": "damaged part",
+      "zh": "受損的部位",
+      "note": "damaged 是受損的，修飾 part；這裡指照片必須呈現的標籤破損處。"
+    }
+  ]
+}

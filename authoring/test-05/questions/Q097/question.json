@@ -1,0 +1,52 @@
+{
+  "id": "t05-q097",
+  "number": 97,
+  "testId": "test-05",
+  "part": 4,
+  "groupId": "t05-g095",
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "talk",
+    "daily"
+  ],
+  "prompt": "Several dryers slow down. How should a single-machine report change?",
+  "promptZh": "好幾台烘衣機變慢。若原本只打算回報一台，應怎麼改？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Report only the number of the dryer used.",
+      "zh": "只回報自己使用的那台編號。",
+      "whyZh": "多台都慢時，講者明說不要只寫用過的那台。"
+    },
+    {
+      "id": "B",
+      "text": "Report a clogged filter in each slow dryer.",
+      "zh": "回報每台變慢的濾網都堵住了。",
+      "whyZh": "多台慢不等於濾網全堵；沒有檢查就不能寫成濾網故障。"
+    },
+    {
+      "id": "C",
+      "text": "Report that the room slowed but omit when it happened.",
+      "zh": "回報整間都慢，但不必寫發現時間。",
+      "whyZh": "分類正確，但缺了用於比對各筆回報的時間。"
+    },
+    {
+      "id": "D",
+      "text": "Report a room-wide slowdown and say when it was noticed.",
+      "zh": "按整間烘衣室變慢回報，並寫何時發現。",
+      "whyZh": "好幾台同時慢應與單機事件分開回報，並寫下察覺時間。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "好幾台同時慢應與單機事件分開回報，並寫下察覺時間。",
+  "evidence": "Report a slow room separately from a slow machine. | If several dryers are slow, tell us when you noticed it, not just which dryer you happened to use.",
+  "vocabulary": [
+    {
+      "term": "compare reports",
+      "zh": "比對回報",
+      "note": "檢查不同人所記的時間和狀況是否一致。"
+    }
+  ]
+}

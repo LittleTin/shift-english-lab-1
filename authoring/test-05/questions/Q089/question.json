@@ -1,0 +1,52 @@
+{
+  "id": "t05-q089",
+  "number": 89,
+  "testId": "test-05",
+  "part": 4,
+  "groupId": "t05-g089",
+  "topic": "manufacturing",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "talk",
+    "work"
+  ],
+  "prompt": "A jam was just spotted. Which response follows the rule?",
+  "promptZh": "剛發現卡料。哪種做法符合回報規則？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Send the line and last position to maintenance at shift change.",
+      "zh": "交班時再將產線和最後位置回報維修。",
+      "whyZh": "接收人與資料正確，但講者要求立即通知，不應等到交班。"
+    },
+    {
+      "id": "B",
+      "text": "Send the line and last position to dispatch straight away.",
+      "zh": "立即將產線和最後位置回報出貨團隊。",
+      "whyZh": "時機與資料正確，但要聯繫維修，不是出貨團隊。"
+    },
+    {
+      "id": "C",
+      "text": "Tell maintenance straight away, giving the line and last position.",
+      "zh": "立即通知維修，並回報產線編號和最後位置。",
+      "whyZh": "卡料先即時通知維修，並回報線號及已知位置，不必等更多讀值才開始通知。"
+    },
+    {
+      "id": "D",
+      "text": "Tell maintenance immediately but report only the line number.",
+      "zh": "立即通知維修，但只回報產線編號。",
+      "whyZh": "時機和接收人正確，但還要回報最後的位置讀值。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "卡料先即時通知維修，並回報線號及已知位置，不必等更多讀值才開始通知。",
+  "evidence": "When a part jams on the roller line, notify maintenance right away. Give the line number and the last position reading on your screen.",
+  "vocabulary": [
+    {
+      "term": "jam",
+      "zh": "卡住、卡料",
+      "note": "此處指零件堵在傳送路徑。"
+    }
+  ]
+}

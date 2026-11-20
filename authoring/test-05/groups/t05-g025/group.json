@@ -1,0 +1,49 @@
+{
+  "id": "t05-g025",
+  "testId": "test-05",
+  "part": 2,
+  "title": "ordering soup at a cafe",
+  "topic": "daily",
+  "context": "daily",
+  "locale": "en-US",
+  "turns": [
+    {
+      "speaker": "F",
+      "role": "prompt speaker",
+      "text": "What comes with the bean soup?",
+      "zh": "豆湯會附什麼？",
+      "locale": "en-US",
+      "voice": "en-US-JennyNeural"
+    },
+    {
+      "speaker": "M",
+      "role": "response options A–C in order",
+      "text": "A. A slice of bread. B. I ordered the soup. C. It needs more salt.",
+      "zh": "A. 一片麵包。 B. 我點了豆湯。 C. 還需要加一點鹽。",
+      "locale": "en-US",
+      "voice": "en-US-GuyNeural"
+    }
+  ],
+  "audioScript": "What comes with the bean soup?\nA. A slice of bread. B. I ordered the soup. C. It needs more salt.",
+  "passage": "What comes with the bean soup?\nA. A slice of bread. B. I ordered the soup. C. It needs more salt.",
+  "passageZh": "豆湯會附什麼？\nA. 一片麵包。 B. 我點了豆湯。 C. 還需要加一點鹽。",
+  "estimateSeconds": 11.79,
+  "audioSpeakers": [
+    {
+      "speaker": "F",
+      "locale": "en-US",
+      "role": "prompt speaker",
+      "modelVoice": "en-US-JennyNeural"
+    },
+    {
+      "speaker": "M",
+      "locale": "en-US",
+      "role": "response options A–C in order",
+      "modelVoice": "en-US-GuyNeural"
+    }
+  ],
+  "audio": "audio/practice-groups/test-05/t05-g025.ogg",
+  "audioStart": 0,
+  "audioEnd": 11.885,
+  "duration": 11.885
+}

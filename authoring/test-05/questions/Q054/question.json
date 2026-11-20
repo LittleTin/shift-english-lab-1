@@ -1,0 +1,52 @@
+{
+  "id": "t05-q054",
+  "testId": "test-05",
+  "number": 54,
+  "part": 3,
+  "groupId": "t05-g053",
+  "revision": 1,
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "conversation",
+    "manufacturing"
+  ],
+  "prompt": "What caused the repeated speech in the archive?",
+  "promptZh": "什麼造成存檔裡的語音重複？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The trainer was recorded on both tracks.",
+      "zh": "兩條音軌都錄進了講師。",
+      "whyZh": "會議音軌有講師聲音，現場麥克風又收到了喇叭播出的講師聲。"
+    },
+    {
+      "id": "B",
+      "text": "The trainer repeated each answer during the call.",
+      "zh": "講師在通話時把每個回答說了兩次。",
+      "whyZh": "問題是錄音中的重複，參與通話的人未反映回音。"
+    },
+    {
+      "id": "C",
+      "text": "The microphone missed the first part of each question.",
+      "zh": "麥克風漏掉了每個問題的前半段。",
+      "whyZh": "沒有提到漏句；重複的是講師的話。"
+    },
+    {
+      "id": "D",
+      "text": "The meeting track replayed the trainer’s voice by itself.",
+      "zh": "單是會議音軌就重複播放了講師的聲音。",
+      "whyZh": "單獨播放每一軌都清楚，重複出在兩軌同時有講師的聲音。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "會議音軌有講師聲音，現場麥克風又收到了喇叭播出的講師聲。",
+  "evidence": "Play the two tracks separately. The meeting track should contain the trainer. The room track is for the questions from people sitting with you. | Separately, each track sounds clear. But the room microphone picked up our loudspeaker. I need the questions in the archive, not just the trainer.",
+  "vocabulary": [
+    {
+      "term": "pick up",
+      "zh": "收錄",
+      "note": "指麥克風收到聲音。"
+    }
+  ]
+}

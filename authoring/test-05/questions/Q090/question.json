@@ -1,0 +1,52 @@
+{
+  "id": "t05-q090",
+  "number": 90,
+  "testId": "test-05",
+  "part": 4,
+  "groupId": "t05-g089",
+  "topic": "manufacturing",
+  "revision": 1,
+  "difficulty": "foundation",
+  "tags": [
+    "talk",
+    "work"
+  ],
+  "prompt": "Which reading can show extra load on the drive?",
+  "promptZh": "哪個讀值能幫忙判斷驅動端是否承受額外負載？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The motor current",
+      "zh": "馬達電流",
+      "whyZh": "馬達電流可反映驅動端當時承受的額外負載。"
+    },
+    {
+      "id": "B",
+      "text": "The part position",
+      "zh": "零件位置",
+      "whyZh": "位置顯示零件停在哪裡，不是驅動端負載。"
+    },
+    {
+      "id": "C",
+      "text": "The line number",
+      "zh": "產線編號",
+      "whyZh": "線號識別設備，不是負載量測。"
+    },
+    {
+      "id": "D",
+      "text": "The time of the last restart",
+      "zh": "最後一次重啟的時間",
+      "whyZh": "講者沒把重啟時間列為診斷負載的讀值。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "馬達電流可反映驅動端當時承受的額外負載。",
+  "evidence": "A motor current reading tells us whether the drive was under extra load.",
+  "vocabulary": [
+    {
+      "term": "motor current",
+      "zh": "馬達電流",
+      "note": "在這裡用來觀察驅動端負載的讀值。"
+    }
+  ]
+}

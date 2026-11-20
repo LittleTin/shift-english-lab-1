@@ -1,0 +1,53 @@
+{
+  "id": "t05-q093",
+  "number": 93,
+  "testId": "test-05",
+  "part": 4,
+  "groupId": "t05-g092",
+  "topic": "manufacturing",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "talk",
+    "work"
+  ],
+  "prompt": "Look at the graphic. Which turn should this team use?",
+  "promptZh": "請看圖。這組人應選哪個轉彎點？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Turn A",
+      "zh": "A 轉彎點",
+      "whyZh": "A 通往包裝區，但其門口在彎道內側。"
+    },
+    {
+      "id": "B",
+      "text": "Turn B",
+      "zh": "B 轉彎點",
+      "whyZh": "B 的內側沒有門口，但它通往清洗區，不是目的地。"
+    },
+    {
+      "id": "C",
+      "text": "Turn C",
+      "zh": "C 轉彎點",
+      "whyZh": "C 通往包裝區，且門口位在彎道外側，符合這趟高貨物搬運的兩個條件。"
+    },
+    {
+      "id": "D",
+      "text": "Turn D",
+      "zh": "D 轉彎點",
+      "whyZh": "D 通往包裝區，但有門口在彎道內側。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "C 通往包裝區，且門口位在彎道外側，符合這趟高貨物搬運的兩個條件。",
+  "evidence": "Choose a turn toward packing with no doorway on that inside edge. The wash bay isn’t on this delivery route.",
+  "vocabulary": [
+    {
+      "term": "doorway",
+      "zh": "門口",
+      "note": "建築物牆上的出入口。"
+    }
+  ],
+  "visualSpecId": "t05-g092-map"
+}

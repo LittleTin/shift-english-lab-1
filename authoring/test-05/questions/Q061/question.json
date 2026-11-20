@@ -1,0 +1,52 @@
+{
+  "id": "t05-q061",
+  "testId": "test-05",
+  "number": 61,
+  "part": 3,
+  "groupId": "t05-g059",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "conversation",
+    "business"
+  ],
+  "prompt": "How should the clerk check the earlier payment?",
+  "promptZh": "櫃檯人員應如何核對較早的款項？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Print the earlier slip again.",
+      "zh": "將較早的單據補印一次。",
+      "whyZh": "補印不會釐清款項對應哪張訂單。"
+    },
+    {
+      "id": "B",
+      "text": "Combine the amounts on the two slips.",
+      "zh": "把兩張單據的金額加起來。",
+      "whyZh": "同一交易的兩張單據不能相加。"
+    },
+    {
+      "id": "C",
+      "text": "Compare the print times.",
+      "zh": "比對列印時間。",
+      "whyZh": "時間只能分辨何時列印，不能判定訂單歸屬。"
+    },
+    {
+      "id": "D",
+      "text": "Compare the order references.",
+      "zh": "比對訂單編號。",
+      "whyZh": "同金額也可能對應不同訂單，所以要核對訂單編號。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "同金額也可能對應不同訂單，所以要核對訂單編號。",
+  "evidence": "Both slips show the same number. But the list shows another payment for the same amount just before this one. | Compare the order references. If that earlier payment belongs to another order, keep it separate.",
+  "vocabulary": [
+    {
+      "term": "order reference",
+      "zh": "訂單編號",
+      "note": "用來比對付款所屬的訂單。"
+    }
+  ]
+}

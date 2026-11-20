@@ -1,0 +1,52 @@
+{
+  "id": "t05-q100",
+  "number": 100,
+  "testId": "test-05",
+  "part": 4,
+  "groupId": "t05-g098",
+  "topic": "manufacturing",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "talk",
+    "work"
+  ],
+  "prompt": "Which change follows from this sample’s marks?",
+  "promptZh": "依這件樣品的痕跡，應做哪項調整？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Bring the side pads closer but leave the end pads alone.",
+      "zh": "把側邊墊塊往內移近，兩端墊塊不變。",
+      "whyZh": "痕跡朝端板，應調整兩端，不是側邊。"
+    },
+    {
+      "id": "B",
+      "text": "Bring the end pads closer and keep the side pads in place.",
+      "zh": "把兩端墊塊往內移近，側邊墊塊維持原位。",
+      "whyZh": "痕跡指向縱向移動，所以兩端墊塊往內移，側邊不動。"
+    },
+    {
+      "id": "C",
+      "text": "Move both kinds of pads farther apart.",
+      "zh": "把兩種墊塊都移得更遠。",
+      "whyZh": "講者只要縮小端板墊塊的間距，側邊維持原位。"
+    },
+    {
+      "id": "D",
+      "text": "Leave the pads unchanged and check only the sound again.",
+      "zh": "墊塊不變，只再聽一次聲音。",
+      "whyZh": "聲音本身不能判斷方向，這次痕跡已有足夠線索調整兩端。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "痕跡指向縱向移動，所以兩端墊塊往內移，側邊不動。",
+  "evidence": "A mark running toward an end panel points to movement along the length of the carton. | This sample has marks toward an end panel. For the next test, narrow the gap only between the pads on that pair of panels.",
+  "vocabulary": [
+    {
+      "term": "end panel",
+      "zh": "端板",
+      "note": "此處指箱體縱向兩端的板面，而非左右側板。"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "t05-q028",
+  "testId": "test-05",
+  "groupId": "t05-g028",
+  "part": 2,
+  "number": 28,
+  "revision": 1,
+  "topic": "manufacturing",
+  "context": "work",
+  "difficulty": "foundation",
+  "difficultyRationaleZh": "從簡短提問擷取需要的數量。",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽錄音，選出最適當的回應。",
+  "spokenPrompt": "How many hooks should I put on this panel?",
+  "spokenPromptZh": "這塊展示板上要裝幾個掛鉤？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The hooks are made of steel.",
+      "zh": "掛鉤是鋼製的。",
+      "whyZh": "提供材質，沒有提供要裝的數量。"
+    },
+    {
+      "id": "B",
+      "text": "I'll bring you a drill.",
+      "zh": "我拿一支電鑽給你。",
+      "whyZh": "提供施工工具，不回答要裝幾個。"
+    },
+    {
+      "id": "C",
+      "text": "Two should be enough.",
+      "zh": "兩個應該就夠了。",
+      "whyZh": "直接給出建議數量，回答 how many。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "直接給出建議數量，回答 how many。",
+  "evidence": "How many hooks should I put on this panel? | Two should be enough.",
+  "vocabulary": [
+    {
+      "term": "put on this panel",
+      "zh": "裝在這塊面板上",
+      "note": "put A on B 用來說明把某物放在或裝到某個表面。"
+    },
+    {
+      "term": "Two should be enough",
+      "zh": "兩個應該就夠了",
+      "note": "should be enough 委婉表示估算的數量足夠，不是命令。"
+    }
+  ]
+}

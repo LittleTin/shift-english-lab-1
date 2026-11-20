@@ -1,0 +1,52 @@
+{
+  "id": "t05-q066",
+  "testId": "test-05",
+  "number": 66,
+  "part": 3,
+  "groupId": "t05-g065",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "foundation",
+  "tags": [
+    "conversation",
+    "daily"
+  ],
+  "prompt": "Why can’t the cover identify the printing?",
+  "promptZh": "為什麼不能只靠藍封面判斷刷次？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The stallholder repaints worn covers.",
+      "zh": "攤主會把磨損的封面重新上色。",
+      "whyZh": "攤主說出版社重用了同一封面，沒有說自己上色。"
+    },
+    {
+      "id": "B",
+      "text": "The printing note was taken out.",
+      "zh": "刷次說明已被取走。",
+      "whyZh": "顧客讀到了第二刷標示。"
+    },
+    {
+      "id": "C",
+      "text": "Blue covers were sold without books.",
+      "zh": "藍封面是和書分開賣的。",
+      "whyZh": "沒有販售獨立封面的資訊。"
+    },
+    {
+      "id": "D",
+      "text": "The publisher used the same cover for two printings.",
+      "zh": "出版社有兩刷使用同一封面。",
+      "whyZh": "同一封面對應不同刷次，因此要查看內頁。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "同一封面對應不同刷次，因此要查看內頁。",
+  "evidence": "I'm looking for this drawing book. My old copy had a foldout grid. Does the blue cover mean this one has it? | No. The publisher used that cover twice. Check the printing note inside. Only the second printing came with a separate foldout grid in the back pocket.",
+  "vocabulary": [
+    {
+      "term": "printing",
+      "zh": "刷次",
+      "note": "同一本書印製的批次。"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "t05-q058",
+  "testId": "test-05",
+  "number": 58,
+  "part": 3,
+  "groupId": "t05-g056",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "conversation",
+    "daily"
+  ],
+  "prompt": "What should the volunteer use to serve the remaining diners?",
+  "promptZh": "志工應該用什麼供餐給剩下的用餐者？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A stack of plates from the side table",
+      "zh": "從旁桌拿來的一疊盤子",
+      "whyZh": "旁桌那個寫十二的架子只放空盤，不是額外的食物。"
+    },
+    {
+      "id": "B",
+      "text": "The four scoops and some bake from the warming shelf",
+      "zh": "手邊的四勺，再加保溫層架上的一些料理",
+      "whyZh": "六人還在等，四勺不夠；協調員說用保溫架小烤盤的料理補足。"
+    },
+    {
+      "id": "C",
+      "text": "Just the four scoops, split into six full servings",
+      "zh": "只用四勺，分成六份完整份量",
+      "whyZh": "一滿勺才算一份，四勺不能變六份完整份量。"
+    },
+    {
+      "id": "D",
+      "text": "Twelve portions already waiting beside the board",
+      "zh": "板子旁已備好的十二份",
+      "whyZh": "對話的十二是空盤數，不是十二份食物。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "六人還在等，四勺不夠；協調員說用保溫架小烤盤的料理補足。",
+  "evidence": "Count portions, not plates. A full scoop is one portion. Those split servings were still one scoop each. | The side table has a rack marked twelve. Can we count that? Six late diners are waiting, and there are only four scoops here. | That rack has twelve empty plates, not food. Use the bake from the small pan on the warming shelf to make up the difference.",
+  "vocabulary": [
+    {
+      "term": "make up the difference",
+      "zh": "補足差額",
+      "note": "此處是補足四勺到六份的差額。"
+    }
+  ]
+}

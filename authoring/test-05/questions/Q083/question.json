@@ -1,0 +1,52 @@
+{
+  "id": "t05-q083",
+  "number": 83,
+  "testId": "test-05",
+  "part": 4,
+  "groupId": "t05-g083",
+  "topic": "business",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "talk",
+    "work"
+  ],
+  "prompt": "Today’s list shows new orders and cancellations. What counts?",
+  "promptZh": "今日清單同時有新訂單和已取消的訂單。哪些要算進份數？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Count both kinds because both still appear on today’s list.",
+      "zh": "兩種都算，因為都還在今日清單上。",
+      "whyZh": "出現在來源清單不代表仍需供餐，取消項要排除。"
+    },
+    {
+      "id": "B",
+      "text": "Count only orders that appeared on the original printout and are still active.",
+      "zh": "只算原表已有且尚未取消的訂單。",
+      "whyZh": "應從今天的清單重新統計；仍有效的新訂單也要算。"
+    },
+    {
+      "id": "C",
+      "text": "Count the current active orders; leave cancelled ones out of the total.",
+      "zh": "計入目前仍有效的訂單；已取消的不算進總份數。",
+      "whyZh": "以今天的清單為準，計入有效訂單，取消項只排除於份數統計。"
+    },
+    {
+      "id": "D",
+      "text": "Count new orders only when they replace cancelled ones.",
+      "zh": "新訂單只有補上取消訂單的名額時才算。",
+      "whyZh": "講者沒有說新增訂單必須替代某筆取消訂單才能計入。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "以今天的清單為準，計入有效訂單，取消項只排除於份數統計。",
+  "evidence": "Before you reprint the lunch count, open today’s order list and exclude orders marked cancelled from the count.",
+  "vocabulary": [
+    {
+      "term": "marked cancelled",
+      "zh": "標為取消",
+      "note": "已在訂單清單註明不再履行。"
+    }
+  ]
+}

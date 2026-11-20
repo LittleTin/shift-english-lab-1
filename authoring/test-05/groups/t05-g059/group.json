@@ -1,0 +1,55 @@
+{
+  "id": "t05-g059",
+  "testId": "test-05",
+  "part": 3,
+  "title": "Two slips at a payment counter",
+  "titleZh": "付款櫃檯的兩張單據",
+  "topic": "business",
+  "locale": "en-PH",
+  "turns": [
+    {
+      "speaker": "F",
+      "role": "counter clerk",
+      "text": "One payment generated two slips. The first says approved. The second printed when I pressed copy. Which one should I attach to our report?",
+      "zh": "一筆付款印了兩張單據。第一張顯示核准，第二張是我按補印後印的。我該把哪張附在報表上？"
+    },
+    {
+      "speaker": "M",
+      "role": "reconciliation lead",
+      "text": "Use either one if the transaction number matches. A new print time isn't a new charge. Check the payment list, not the printer log.",
+      "zh": "交易號碼相同的話，附哪張都可以。列印時間不同不代表又扣一筆款。要查付款清單，不是印表機紀錄。"
+    },
+    {
+      "speaker": "F",
+      "role": "counter clerk",
+      "text": "Both slips show the same number. But the list shows another payment for the same amount just before this one.",
+      "zh": "兩張的交易號碼相同。不過清單上緊接這筆之前，還有一筆金額相同的款項。"
+    },
+    {
+      "speaker": "M",
+      "role": "reconciliation lead",
+      "text": "Compare the order references. If that earlier payment belongs to another order, keep it separate.",
+      "zh": "比對訂單編號。如果較早的款項屬於另一張訂單，就分開記錄。"
+    }
+  ],
+  "passage": "F: One payment generated two slips. The first says approved. The second printed when I pressed copy. Which one should I attach to our report?\nM: Use either one if the transaction number matches. A new print time isn't a new charge. Check the payment list, not the printer log.\nF: Both slips show the same number. But the list shows another payment for the same amount just before this one.\nM: Compare the order references. If that earlier payment belongs to another order, keep it separate.",
+  "passageZh": "女方：一筆付款印了兩張單據。第一張顯示核准，第二張是我按補印後印的。我該把哪張附在報表上？\n男方：交易號碼相同的話，附哪張都可以。列印時間不同不代表又扣一筆款。要查付款清單，不是印表機紀錄。\n女方：兩張的交易號碼相同。不過清單上緊接這筆之前，還有一筆金額相同的款項。\n男方：比對訂單編號。如果較早的款項屬於另一張訂單，就分開記錄。",
+  "audioSpeakers": [
+    {
+      "speaker": "F",
+      "locale": "en-PH",
+      "role": "counter clerk",
+      "modelVoice": "en-PH-RosaNeural"
+    },
+    {
+      "speaker": "M",
+      "locale": "en-PH",
+      "role": "reconciliation lead",
+      "modelVoice": "en-PH-JamesNeural"
+    }
+  ],
+  "audio": "audio/practice-groups/test-05/t05-g059.ogg",
+  "audioStart": 0,
+  "audioEnd": 35.9875,
+  "duration": 35.9875
+}

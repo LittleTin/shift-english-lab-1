@@ -1,0 +1,52 @@
+{
+  "id": "t05-q057",
+  "testId": "test-05",
+  "number": 57,
+  "part": 3,
+  "groupId": "t05-g056",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "conversation",
+    "daily"
+  ],
+  "prompt": "Why is the count on the lunch board unreliable for tracking food?",
+  "promptZh": "為什麼不能靠午餐板上的數目推算剩餘食物？",
+  "options": [
+    {
+      "id": "A",
+      "text": "It includes people who have not arrived.",
+      "zh": "它包括還沒到的人。",
+      "whyZh": "板上寫的是已出餐的盤數，沒說列入未到者。"
+    },
+    {
+      "id": "B",
+      "text": "It was copied from the warming shelf.",
+      "zh": "數字是從保溫層架抄來的。",
+      "whyZh": "板上盤數和保溫架小烤盤是不同資訊。"
+    },
+    {
+      "id": "C",
+      "text": "Two plates can represent only one portion.",
+      "zh": "兩個盤子有時只代表一份。",
+      "whyZh": "分裝時同一勺可放進兩盤，所以盤數不是份數。"
+    },
+    {
+      "id": "D",
+      "text": "It counts how many scoops are left.",
+      "zh": "它數的是剩下幾勺。",
+      "whyZh": "板上標示的是出餐盤數，不是剩下的勺數。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "分裝時同一勺可放進兩盤，所以盤數不是份數。",
+  "evidence": "The board says thirty plates served. How much vegetable bake is left? Some diners asked us to split one serving between two plates. | Count portions, not plates. A full scoop is one portion. Those split servings were still one scoop each.",
+  "vocabulary": [
+    {
+      "term": "portion",
+      "zh": "份量",
+      "note": "這裡一滿勺等於一份。"
+    }
+  ]
+}

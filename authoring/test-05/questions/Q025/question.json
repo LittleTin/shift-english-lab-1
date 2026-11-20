@@ -1,0 +1,51 @@
+{
+  "id": "t05-q025",
+  "testId": "test-05",
+  "groupId": "t05-g025",
+  "part": 2,
+  "number": 25,
+  "revision": 1,
+  "topic": "daily",
+  "context": "daily",
+  "difficulty": "foundation",
+  "difficultyRationaleZh": "直接聽出問的是隨餐附上的品項。",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽錄音，選出最適當的回應。",
+  "spokenPrompt": "What comes with the bean soup?",
+  "spokenPromptZh": "豆湯會附什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A slice of bread.",
+      "zh": "一片麵包。",
+      "whyZh": "直接說出豆湯附的配餐。"
+    },
+    {
+      "id": "B",
+      "text": "I ordered the soup.",
+      "zh": "我點了豆湯。",
+      "whyZh": "只說自己點了什麼，沒有交代豆湯附什麼。"
+    },
+    {
+      "id": "C",
+      "text": "It needs more salt.",
+      "zh": "還需要加一點鹽。",
+      "whyZh": "說的是調味，不是隨湯附上的配餐。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "直接說出豆湯附的配餐。",
+  "evidence": "What comes with the bean soup? | A slice of bread.",
+  "vocabulary": [
+    {
+      "term": "comes with",
+      "zh": "隨餐附上",
+      "note": "詢問餐點附什麼，可以用 What comes with ＋餐點？"
+    },
+    {
+      "term": "A slice of bread",
+      "zh": "一片麵包",
+      "note": "slice 指切下來的一片，可用 a slice of 介紹份量。"
+    }
+  ]
+}

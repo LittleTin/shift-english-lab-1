@@ -1,0 +1,51 @@
+{
+  "id": "t05-q026",
+  "testId": "test-05",
+  "groupId": "t05-g026",
+  "part": 2,
+  "number": 26,
+  "revision": 1,
+  "topic": "daily",
+  "context": "daily",
+  "difficulty": "foundation",
+  "difficultyRationaleZh": "直接辨識提問所指的清洗地點，而不是另一件物品的位置。",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽錄音，選出最適當的回應。",
+  "spokenPrompt": "Where can I rinse this paintbrush?",
+  "spokenPromptZh": "我可以在哪裡沖洗這支畫筆？",
+  "options": [
+    {
+      "id": "A",
+      "text": "We keep spare brushes downstairs.",
+      "zh": "備用畫筆放在樓下。",
+      "whyZh": "樓下是備用畫筆的存放地點，不是說可以在哪裡洗筆。"
+    },
+    {
+      "id": "B",
+      "text": "Use the sink by the door.",
+      "zh": "用門旁的水槽。",
+      "whyZh": "指出門旁的水槽可供沖洗，直接回答地點。"
+    },
+    {
+      "id": "C",
+      "text": "The blue paint is dry.",
+      "zh": "藍色顏料已經乾了。",
+      "whyZh": "描述顏料狀態，沒有指出哪裡可以沖洗。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "指出門旁的水槽可供沖洗，直接回答地點。",
+  "evidence": "Where can I rinse this paintbrush? | Use the sink by the door.",
+  "vocabulary": [
+    {
+      "term": "rinse this paintbrush",
+      "zh": "沖洗這支畫筆",
+      "note": "rinse 通常指用水沖掉表面的髒污或殘留物。"
+    },
+    {
+      "term": "the sink by the door",
+      "zh": "門旁的水槽",
+      "note": "by 在此指「在……旁邊」，可用來指明位置。"
+    }
+  ]
+}

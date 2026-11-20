@@ -1,0 +1,52 @@
+{
+  "id": "t05-q060",
+  "testId": "test-05",
+  "number": 60,
+  "part": 3,
+  "groupId": "t05-g059",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "conversation",
+    "business"
+  ],
+  "prompt": "Why is the printer log not enough?",
+  "promptZh": "為什麼只看印表機紀錄不夠？",
+  "options": [
+    {
+      "id": "A",
+      "text": "It leaves out the first copy.",
+      "zh": "它沒有記錄第一張單據。",
+      "whyZh": "沒有提到哪一次列印漏記。"
+    },
+    {
+      "id": "B",
+      "text": "It only records cancelled payments.",
+      "zh": "它只記錄取消的付款。",
+      "whyZh": "印表機紀錄列印，不是取消付款。"
+    },
+    {
+      "id": "C",
+      "text": "Separate print times can come from a single payment.",
+      "zh": "同一筆付款可能有不同的列印時間。",
+      "whyZh": "補印時間不同不表示新增一筆收款。"
+    },
+    {
+      "id": "D",
+      "text": "One payment cannot appear on two slips.",
+      "zh": "一筆付款不可能出現在兩張單據上。",
+      "whyZh": "交易號碼相同的兩張單據可對應同一筆付款。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "補印時間不同不表示新增一筆收款。",
+  "evidence": "One payment generated two slips. The first says approved. The second printed when I pressed copy. Which one should I attach to our report? | Use either one if the transaction number matches. A new print time isn't a new charge. Check the payment list, not the printer log.",
+  "vocabulary": [
+    {
+      "term": "print time",
+      "zh": "列印時間",
+      "note": "印出憑單的時間，不等於付款時間。"
+    }
+  ]
+}

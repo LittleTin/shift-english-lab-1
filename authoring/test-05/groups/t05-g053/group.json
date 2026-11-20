@@ -1,0 +1,55 @@
+{
+  "id": "t05-g053",
+  "testId": "test-05",
+  "part": 3,
+  "title": "An echo in a call archive",
+  "titleZh": "通話存檔裡的回音",
+  "topic": "manufacturing",
+  "locale": "en-NG",
+  "turns": [
+    {
+      "speaker": "M",
+      "role": "meeting coordinator",
+      "text": "On yesterday’s training recording, every sentence from the trainer repeats half a beat later. Nobody on the call reported an echo, though.",
+      "zh": "昨天的培訓錄音裡，講師每句話過半拍就重複一遍，但通話時沒有人反映有回音。"
+    },
+    {
+      "speaker": "F",
+      "role": "audio support",
+      "text": "Play the two tracks separately. The meeting track should contain the trainer. The room track is for the questions from people sitting with you.",
+      "zh": "把兩條音軌分開播放。會議音軌應該收錄講師，現場音軌則是錄跟你坐在一起的人提問。"
+    },
+    {
+      "speaker": "M",
+      "role": "meeting coordinator",
+      "text": "Separately, each track sounds clear. But the room microphone picked up our loudspeaker. I need the questions in the archive, not just the trainer.",
+      "zh": "分開聽兩軌都很清楚。不過現場麥克風錄到了我們的擴音喇叭。我需要把提問也存檔，不只保留講師的聲音。"
+    },
+    {
+      "speaker": "F",
+      "role": "audio support",
+      "text": "Keep the meeting track running. Use the room track only for questions, not for the trainer’s answers.",
+      "zh": "保留會議音軌全程播放。現場音軌只在提問時使用，不要用在講師回答的部分。"
+    }
+  ],
+  "passage": "M: On yesterday’s training recording, every sentence from the trainer repeats half a beat later. Nobody on the call reported an echo, though.\nF: Play the two tracks separately. The meeting track should contain the trainer. The room track is for the questions from people sitting with you.\nM: Separately, each track sounds clear. But the room microphone picked up our loudspeaker. I need the questions in the archive, not just the trainer.\nF: Keep the meeting track running. Use the room track only for questions, not for the trainer’s answers.",
+  "passageZh": "男方：昨天的培訓錄音裡，講師每句話過半拍就重複一遍，但通話時沒有人反映有回音。\n女方：把兩條音軌分開播放。會議音軌應該收錄講師，現場音軌則是錄跟你坐在一起的人提問。\n男方：分開聽兩軌都很清楚。不過現場麥克風錄到了我們的擴音喇叭。我需要把提問也存檔，不只保留講師的聲音。\n女方：保留會議音軌全程播放。現場音軌只在提問時使用，不要用在講師回答的部分。",
+  "audioSpeakers": [
+    {
+      "speaker": "M",
+      "locale": "en-NG",
+      "role": "meeting coordinator",
+      "modelVoice": "en-NG-AbeoNeural"
+    },
+    {
+      "speaker": "F",
+      "locale": "en-NG",
+      "role": "audio support",
+      "modelVoice": "en-NG-EzinneNeural"
+    }
+  ],
+  "audio": "audio/practice-groups/test-05/t05-g053.ogg",
+  "audioStart": 0,
+  "audioEnd": 35.025,
+  "duration": 35.025
+}

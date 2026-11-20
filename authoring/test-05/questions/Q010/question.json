@@ -1,0 +1,48 @@
+{
+  "id": "t05-q010",
+  "testId": "test-05",
+  "number": 10,
+  "part": 2,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽錄音，選出最適當的回應。",
+  "spokenPrompt": "Could you make another copy of the floor plan for this desk?",
+  "spokenPromptZh": "可以為這張工作桌再印一份平面圖嗎？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The desk faces the south wall.",
+      "zh": "這張桌子面向南牆。",
+      "whyZh": "描述桌子朝向，不回應印一份圖的請求。"
+    },
+    {
+      "id": "B",
+      "text": "Sure. Do you need it in color?",
+      "zh": "可以。你需要彩色的嗎？",
+      "whyZh": "先答應複印，再確認輸出要彩色或可用黑白。"
+    },
+    {
+      "id": "C",
+      "text": "We moved it here on Tuesday.",
+      "zh": "我們星期二把它搬來這裡。",
+      "whyZh": "搬動的日期與複印文件無關。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "先答應複印，再確認輸出要彩色或可用黑白。",
+  "vocabulary": [
+    {
+      "term": "in color",
+      "zh": "彩色的",
+      "note": "印製時說 print it in color；相對的是 in black and white。"
+    }
+  ],
+  "evidence": "Could you make another copy of the floor plan for this desk? / Sure. Do you need it in color?",
+  "tags": [
+    "work",
+    "question_response"
+  ],
+  "revision": 1,
+  "groupId": "t05-g010"
+}

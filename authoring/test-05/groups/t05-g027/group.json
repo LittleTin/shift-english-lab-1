@@ -1,0 +1,49 @@
+{
+  "id": "t05-g027",
+  "testId": "test-05",
+  "part": 2,
+  "title": "checking whether a newspaper is free to take",
+  "topic": "daily",
+  "context": "daily",
+  "locale": "en-US",
+  "turns": [
+    {
+      "speaker": "F",
+      "role": "prompt speaker",
+      "text": "Are you done with this newspaper?",
+      "zh": "這份報紙你看完了嗎？",
+      "locale": "en-US",
+      "voice": "en-US-JennyNeural"
+    },
+    {
+      "speaker": "M",
+      "role": "response options A–C in order",
+      "text": "A. It comes out on Fridays. B. I bought it this morning. C. You can take it with you.",
+      "zh": "A. 這份報紙每週五出版。 B. 我今天早上買的。 C. 你可以把它帶走。",
+      "locale": "en-US",
+      "voice": "en-US-GuyNeural"
+    }
+  ],
+  "audioScript": "Are you done with this newspaper?\nA. It comes out on Fridays. B. I bought it this morning. C. You can take it with you.",
+  "passage": "Are you done with this newspaper?\nA. It comes out on Fridays. B. I bought it this morning. C. You can take it with you.",
+  "passageZh": "這份報紙你看完了嗎？\nA. 這份報紙每週五出版。 B. 我今天早上買的。 C. 你可以把它帶走。",
+  "estimateSeconds": 13.44,
+  "audioSpeakers": [
+    {
+      "speaker": "F",
+      "locale": "en-US",
+      "role": "prompt speaker",
+      "modelVoice": "en-US-JennyNeural"
+    },
+    {
+      "speaker": "M",
+      "locale": "en-US",
+      "role": "response options A–C in order",
+      "modelVoice": "en-US-GuyNeural"
+    }
+  ],
+  "audio": "audio/practice-groups/test-05/t05-g027.ogg",
+  "audioStart": 0,
+  "audioEnd": 12.385,
+  "duration": 12.385
+}

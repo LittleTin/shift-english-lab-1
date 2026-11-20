@@ -1,0 +1,52 @@
+{
+  "id": "t05-q091",
+  "number": 91,
+  "testId": "test-05",
+  "part": 4,
+  "groupId": "t05-g089",
+  "topic": "manufacturing",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "talk",
+    "work"
+  ],
+  "prompt": "The drive had stopped. What belongs in the report?",
+  "promptZh": "驅動端當時已停機，回報中應有哪些資料？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Only the current shown after the restart",
+      "zh": "只有重啟後顯示的電流",
+      "whyZh": "事後重啟的電流不能描述卡料時的狀態。"
+    },
+    {
+      "id": "B",
+      "text": "The line number and current, but not the part position",
+      "zh": "產線編號和電流，不含零件位置",
+      "whyZh": "已停機要寫明狀態，仍應回報最後位置。"
+    },
+    {
+      "id": "C",
+      "text": "Only the position, since the line number stays the same",
+      "zh": "只需位置，因為產線編號沒變",
+      "whyZh": "無論當時驅動端狀態如何，都要送線號。"
+    },
+    {
+      "id": "D",
+      "text": "The line number, position, and a note that the drive had stopped",
+      "zh": "產線編號、位置，以及驅動端當時已停機的註記",
+      "whyZh": "仍回報線號及位置；電流欄改以停機註記代替。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "仍回報線號及位置；電流欄改以停機註記代替。",
+  "evidence": "Give the line number and the last position reading on your screen. | If it had already stopped, write that down instead of sending a current reading.",
+  "vocabulary": [
+    {
+      "term": "drive",
+      "zh": "驅動端",
+      "note": "使滾輪線運轉的設備。"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "t05-q082",
+  "number": 82,
+  "testId": "test-05",
+  "part": 4,
+  "groupId": "t05-g080",
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "foundation",
+  "tags": [
+    "talk",
+    "daily"
+  ],
+  "prompt": "How should staff check a bottle’s price without a shelf tag?",
+  "promptZh": "一瓶單賣品缺少架標時，員工該怎麼查價？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Quote the price on the large card.",
+      "zh": "報大卡的價格。",
+      "whyZh": "大卡標整組，不是單瓶。"
+    },
+    {
+      "id": "B",
+      "text": "Scan the bottle’s barcode at the price checker.",
+      "zh": "用查價機掃單瓶條碼。",
+      "whyZh": "架標遺失時，應用瓶身條碼查單瓶價再報。"
+    },
+    {
+      "id": "C",
+      "text": "Scan the kit’s sleeve and divide the price by the number of bottles.",
+      "zh": "掃旅行組套紙，再用整組價格除以瓶數。",
+      "whyZh": "整組價格不能拿來推算單品售價。"
+    },
+    {
+      "id": "D",
+      "text": "Use the tag beneath any bottle of the same size.",
+      "zh": "使用任一同容量瓶子下方的價標。",
+      "whyZh": "瓶子大小相同不表示品項或價格一樣。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "架標遺失時，應用瓶身條碼查單瓶價再報。",
+  "evidence": "If the bottle’s shelf tag is missing, use its barcode at the price checker before promising any price.",
+  "vocabulary": [
+    {
+      "term": "price checker",
+      "zh": "查價機",
+      "note": "用條碼確認售價的設備。"
+    }
+  ]
+}
