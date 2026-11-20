@@ -1,0 +1,52 @@
+{
+  "id": "t06-q181",
+  "number": 181,
+  "testId": "test-06",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t06-r-p7-09",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "multiple-documents"
+  ],
+  "prompt": "What prevents the fixture from being seated normally at 08:35?",
+  "promptZh": "上午 08:35 是什麼讓治具不能正常裝到位？",
+  "answer": "A",
+  "options": [
+    {
+      "id": "A",
+      "text": "The reference pin sticks up above the bed.",
+      "zh": "定位銷凸出台面。",
+      "whyZh": "恢復紀錄寫 pin standing proud；檢查表說凸銷不得硬壓裝治具。"
+    },
+    {
+      "id": "B",
+      "text": "The reference plate has already been removed.",
+      "zh": "基準板已被拆除。",
+      "whyZh": "此時尚未做基準板檢查，未說基準板被拆除。"
+    },
+    {
+      "id": "C",
+      "text": "The first production part is in the fixture.",
+      "zh": "第一個生產件已裝在治具上。",
+      "whyZh": "08:35 紀錄沒有提到治具上有生產件；已記錄的問題是定位銷未齊平。"
+    },
+    {
+      "id": "D",
+      "text": "The shift report is waiting for Calder's signature.",
+      "zh": "交班報告正在等 Calder 簽名。",
+      "whyZh": "當時紀錄的是凸銷，Calder 到 09:55 回覆，未提簽名。"
+    }
+  ],
+  "explanationZh": "恢復紀錄寫 pin standing proud；檢查表說凸銷不得硬壓裝治具。",
+  "evidence": "08:35 / Ana / Pin standing proud; no plate check.",
+  "vocabulary": [
+    {
+      "term": "standing proud",
+      "zh": "凸出於表面",
+      "note": "技術用法指物件高出台面，與 flush 相對。"
+    }
+  ],
+  "difficultyRationale": "從單筆紀錄定位障礙，術語可由第一份文件釋義。"
+}

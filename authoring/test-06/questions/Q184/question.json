@@ -1,0 +1,52 @@
+{
+  "id": "t06-q184",
+  "number": 184,
+  "testId": "test-06",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t06-r-p7-09",
+  "topic": "manufacturing",
+  "difficulty": "advanced",
+  "tags": [
+    "multiple-documents"
+  ],
+  "prompt": "What result should be used for tomorrow's comparison, and what should be retained in the report?",
+  "promptZh": "明天應使用哪筆結果比對？報告還要保存什麼？",
+  "answer": "D",
+  "options": [
+    {
+      "id": "A",
+      "text": "Use zero and record the skipped check as zero.",
+      "zh": "以零比對，未執行的檢查也記為零。",
+      "whyZh": "未執行不可記作零；比對基準用複測值。"
+    },
+    {
+      "id": "B",
+      "text": "Use 0.3 mm left and remove the repeat from the report.",
+      "zh": "以向左 0.3 毫米比對，報告刪掉複測。",
+      "whyZh": "第一筆是清屑前的失敗值，應保留，但比對採複測。"
+    },
+    {
+      "id": "C",
+      "text": "Average the two values and store only the result.",
+      "zh": "兩筆取平均且只保留平均值。",
+      "whyZh": "Calder 不准取平均也不准省去任何一筆。"
+    },
+    {
+      "id": "D",
+      "text": "Use 0.2 mm right and also preserve the 0.3 mm left failure.",
+      "zh": "用向右 0.2 毫米比對，也保留向左 0.3 毫米的失敗值。",
+      "whyZh": "日誌列出兩筆方向及數值；Calder 指示採複測作基準，首次失敗值保留。"
+    }
+  ],
+  "explanationZh": "日誌列出兩筆方向及數值；Calder 指示採複測作基準，首次失敗值保留。",
+  "evidence": "Ana ran the plate: 0.3 mm left. / Plate returned 0.2 mm right. / Use the repeat result as the comparison baseline for tomorrow. Keep the first reading in the report but do not average them: the first was taken before Maintenance removed the metal shaving.",
+  "vocabulary": [
+    {
+      "term": "comparison baseline",
+      "zh": "比對基準",
+      "note": "用來判斷下一次結果是否發生變化的參考值。"
+    }
+  ],
+  "difficultyRationale": "按時間線找到兩筆數值，辨識各自有不同用途。"
+}

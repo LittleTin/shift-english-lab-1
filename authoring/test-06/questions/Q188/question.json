@@ -1,0 +1,52 @@
+{
+  "id": "t06-q188",
+  "number": 188,
+  "testId": "test-06",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t06-r-p7-10",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "multiple-documents"
+  ],
+  "prompt": "After the desk's Wednesday message, how many bays is Min now paying for?",
+  "promptZh": "服務台週三的訊息發出後，更新後的費用是按 Min 的幾個格位收取？",
+  "answer": "D",
+  "options": [
+    {
+      "id": "A",
+      "text": "One bay.",
+      "zh": "一格。",
+      "whyZh": "Min 原預約三格，只轉出一格，不是兩格。"
+    },
+    {
+      "id": "B",
+      "text": "Three bays.",
+      "zh": "三格。",
+      "whyZh": "三格是原預約；確認後已減一格。"
+    },
+    {
+      "id": "C",
+      "text": "Four bays.",
+      "zh": "四格。",
+      "whyZh": "加一格的是接收方 Nessa，不是 Min。"
+    },
+    {
+      "id": "D",
+      "text": "Two bays.",
+      "zh": "兩格。",
+      "whyZh": "Min 原訂三格，在 Nessa 確認後減一，實付兩格；帶一箱不會把帳單再減一格。"
+    }
+  ],
+  "explanationZh": "Min 原訂三格，在 Nessa 確認後減一，實付兩格；帶一箱不會把帳單再減一格。",
+  "evidence": "staff remove one bay from the sender's bill and add one to the receiver's. / I booked three bays. / Nessa replied this morning that she accepts the bay.",
+  "vocabulary": [
+    {
+      "term": "revised fees",
+      "zh": "更新後的費用",
+      "note": "revised 說明原收費已按確認結果修正。"
+    }
+  ],
+  "difficultyRationale": "三文件確認原預約、規則和正式接受，不用箱數代替帳單證據。"
+}

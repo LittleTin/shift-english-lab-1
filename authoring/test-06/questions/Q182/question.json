@@ -1,0 +1,52 @@
+{
+  "id": "t06-q182",
+  "number": 182,
+  "testId": "test-06",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t06-r-p7-09",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "multiple-documents"
+  ],
+  "prompt": "Why was it appropriate to have Maintenance inspect the bed after the 08:50 reading?",
+  "promptZh": "為什麼 08:50 的讀值出來後，應請維修人員檢查機床台面？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "Every reading to the left requires a bed inspection.",
+      "zh": "任何向左的讀值都要檢查台面。",
+      "whyZh": "規則不分左右，只看偏移量是否超過界線。"
+    },
+    {
+      "id": "B",
+      "text": "The direction was not written down, so the reading could not be used.",
+      "zh": "沒有記錄方向，因此讀值無法使用。",
+      "whyZh": "紀錄已明寫向左，未缺方向。"
+    },
+    {
+      "id": "C",
+      "text": "The offset was larger than the permitted magnitude.",
+      "zh": "偏移量超過允許上限。",
+      "whyZh": "向左 0.3 毫米超過允許的 0.2 毫米，依檢查表應查看台面。"
+    },
+    {
+      "id": "D",
+      "text": "The checklist requires the operator to move the fixture after every failed reading.",
+      "zh": "檢查表規定每次未通過時操作員都要移動治具。",
+      "whyZh": "檢查表明說不要調治具，應請維修查看台面。"
+    }
+  ],
+  "explanationZh": "向左 0.3 毫米超過允許的 0.2 毫米，依檢查表應查看台面。",
+  "evidence": "If the magnitude exceeds 0.2 millimetres, don't adjust the fixture; have Maintenance inspect the bed. / Ana ran the plate: 0.3 mm left.",
+  "vocabulary": [
+    {
+      "term": "offset",
+      "zh": "偏移量",
+      "note": "可記錄大小與方向，如向左 0.3 毫米。"
+    }
+  ],
+  "difficultyRationale": "以紀錄中的偏移套用檢查表的門檻及處置規則。"
+}

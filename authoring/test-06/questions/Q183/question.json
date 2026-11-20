@@ -1,0 +1,52 @@
+{
+  "id": "t06-q183",
+  "number": 183,
+  "testId": "test-06",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t06-r-p7-09",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "multiple-documents"
+  ],
+  "prompt": "What action did Maintenance take at 09:20?",
+  "promptZh": "維修人員在上午 09:20 採取什麼動作？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "Moved the fixture 0.2 millimetres to the right.",
+      "zh": "把治具向右移 0.2 毫米。",
+      "whyZh": "09:40 才出現向右 0.2 毫米的讀值，不是 09:20 的動作。"
+    },
+    {
+      "id": "B",
+      "text": "Cleared a small piece of metal from beneath the bed.",
+      "zh": "從台面下方清掉一片金屬碎屑。",
+      "whyZh": "09:20 的紀錄寫取出台面底下的金屬屑，沒有移動治具。"
+    },
+    {
+      "id": "C",
+      "text": "Seated the reference pin for the first time.",
+      "zh": "首次將定位銷裝到位。",
+      "whyZh": "將定位銷裝到位列於 08:50。"
+    },
+    {
+      "id": "D",
+      "text": "Tested the first production part.",
+      "zh": "試測第一個生產件。",
+      "whyZh": "09:20 只記載清除金屬屑，未記載試測生產件。"
+    }
+  ],
+  "explanationZh": "09:20 的紀錄寫取出台面底下的金屬屑，沒有移動治具。",
+  "evidence": "09:20 / Maintenance / Removed a metal shaving beneath the bed. Did not move the fixture.",
+  "vocabulary": [
+    {
+      "term": "metal shaving",
+      "zh": "金屬屑",
+      "note": "shaving 指金屬材料表面削落的薄片。"
+    }
+  ],
+  "difficultyRationale": "按時間直接找單筆操作紀錄。"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "t06-q185",
+  "number": 185,
+  "testId": "test-06",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t06-r-p7-09",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "multiple-documents"
+  ],
+  "prompt": "Why does the checklist tell Ana not to push the fixture into position at 08:35?",
+  "promptZh": "依檢查表，為什麼 Ana 在 08:35 不應硬把治具壓到位？",
+  "answer": "A",
+  "options": [
+    {
+      "id": "A",
+      "text": "Forcing it into position could damage the fixture.",
+      "zh": "硬壓到位可能會損傷治具。",
+      "whyZh": "08:35 的紀錄顯示定位部位凸出；檢查表指出硬壓會有刮傷治具的風險，應由維修人員處理。"
+    },
+    {
+      "id": "B",
+      "text": "The checklist requires a production part to be tested before the fixture is touched.",
+      "zh": "檢查表要求碰治具前先測試生產件。",
+      "whyZh": "檢查表要求先確認定位狀態，再用基準板試測，順序不是先生產件。"
+    },
+    {
+      "id": "C",
+      "text": "Maintenance had already signed off on the position and told her not to move it.",
+      "zh": "維修人員已確認位置合格，並告知她不要移動。",
+      "whyZh": "維修人員 08:50 才將凸出部位裝到位；08:35 沒有核可的紀錄。"
+    },
+    {
+      "id": "D",
+      "text": "She needed to record the offset before deciding whether to move it.",
+      "zh": "她必須先記下偏移量，再決定要不要移動它。",
+      "whyZh": "檢查表要求先處理凸出，才可試測基準板取得偏移量，不能將偏移量當作決定是否硬壓的依據。"
+    }
+  ],
+  "explanationZh": "08:35 的紀錄顯示定位部位凸出；檢查表指出硬壓會有刮傷治具的風險，應由維修人員處理。",
+  "evidence": "Pin standing proud; no plate check. / A pin that protrudes can scratch the fixture. Stop and ask Maintenance to seat it; operators must not force the fixture down.",
+  "vocabulary": [
+    {
+      "term": "force down",
+      "zh": "硬壓下去",
+      "note": "force 表示強行施力，此處警示不可硬裝。"
+    }
+  ],
+  "difficultyRationale": "將紀錄所見和檢查表說明的損傷風險連結，不重考報表要填的方向或數值。"
+}
