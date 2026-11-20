@@ -1,0 +1,52 @@
+{
+  "id": "t05-q154",
+  "number": 154,
+  "testId": "test-05",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t05-r-p7-02",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "single-document"
+  ],
+  "prompt": "An operator has all the closing figures but no opening count. What should the operator submit?",
+  "promptZh": "操作人員有所有班末數字，但沒有班初計數。應提交什麼？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "Only the closing display count, with the remaining fields blank.",
+      "zh": "只提交顯示器班末計數，其他欄都留白。",
+      "whyZh": "只有合格件數留白；試做與檢驗件數仍須提交。"
+    },
+    {
+      "id": "B",
+      "text": "The available counts without a figure for good pieces.",
+      "zh": "提交現有計數，合格件數不填。",
+      "whyZh": "原文要求其他計數照常送出，只等主管確認班初計數後再回報合格件數。"
+    },
+    {
+      "id": "C",
+      "text": "An estimated opening count and a calculated total.",
+      "zh": "提交估計的班初計數和計算後的總數。",
+      "whyZh": "不能估填；班初計數須由主管確認。"
+    },
+    {
+      "id": "D",
+      "text": "A report that replaces the missing opening count with zero.",
+      "zh": "把無資料的班初計數填零再交報表。",
+      "whyZh": "零不是原文允許的替代；應讓合格件數留白。"
+    }
+  ],
+  "explanationZh": "原文要求其他計數照常送出，只等主管確認班初計數後再回報合格件數。",
+  "evidence": "If the opening count was not recorded, leave the good-piece total blank. | Send the closing count and the separate trial and inspection counts as usual.",
+  "vocabulary": [
+    {
+      "term": "leave blank",
+      "zh": "留白",
+      "note": "暫無足夠資訊時不填任何值。"
+    }
+  ],
+  "difficultyRationale": "重述缺資料的通報程序，排除補猜與全扣。"
+}

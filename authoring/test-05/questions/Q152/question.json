@@ -1,0 +1,52 @@
+{
+  "id": "t05-q152",
+  "number": 152,
+  "testId": "test-05",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t05-r-p7-02",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "single-document"
+  ],
+  "prompt": "Why should trial pieces go into a separate bin?",
+  "promptZh": "為什麼試做件要放在不同的箱子？",
+  "answer": "A",
+  "options": [
+    {
+      "id": "A",
+      "text": "So the inspection count reflects production rejects only.",
+      "zh": "讓檢驗托盤只反映正式生產的不合格件數。",
+      "whyZh": "把試做件另放可避免把試做件算進正式生產的不合格紀錄。"
+    },
+    {
+      "id": "B",
+      "text": "So the red bin can be used to store good pieces.",
+      "zh": "讓紅色箱可以存放合格零件。",
+      "whyZh": "紅箱用來放試做件，不是合格零件。"
+    },
+    {
+      "id": "C",
+      "text": "So operators can reset the display after the test.",
+      "zh": "讓操作人員能在測試後將顯示器歸零。",
+      "whyZh": "操作人員不能歸零，換箱也不改變計數。"
+    },
+    {
+      "id": "D",
+      "text": "So a supervisor can skip the opening count.",
+      "zh": "讓主管可以略過班初計數。",
+      "whyZh": "班初計數是計算當班合格件數的必要資訊。"
+    }
+  ],
+  "explanationZh": "把試做件另放可避免把試做件算進正式生產的不合格紀錄。",
+  "evidence": "The inspection tray holds only pieces rejected after the normal run begins. | Keep trial pieces in the red bin, not in the inspection tray.",
+  "vocabulary": [
+    {
+      "term": "inspection tray",
+      "zh": "檢驗托盤",
+      "note": "本文用來統計正式生產的不合格件。"
+    }
+  ],
+  "difficultyRationale": "以托盤的定義區分兩種計數。"
+}

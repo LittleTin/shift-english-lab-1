@@ -1,0 +1,52 @@
+{
+  "id": "t05-q161",
+  "number": 161,
+  "testId": "test-05",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t05-r-p7-04",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "single-document"
+  ],
+  "prompt": "An older carton is sealed for the courier and has no check mark in the register. What should the packing team do first?",
+  "promptZh": "一個舊紙箱已封好準備交給快遞，登記冊卻沒有勾號。包裝人員應先怎麼做？",
+  "answer": "A",
+  "options": [
+    {
+      "id": "A",
+      "text": "Ask dispatch to hold the unopened carton for inspection.",
+      "zh": "請出貨人員先攔下未拆封的紙箱，留待檢驗。",
+      "whyZh": "未勾選仍須檢驗；已封箱時應先攔貨，不在包裝線拆封。"
+    },
+    {
+      "id": "B",
+      "text": "Open it on the line and add a blue card.",
+      "zh": "在包裝線上拆封，放進藍卡。",
+      "whyZh": "不能在包裝線拆封，也不能只因箱子較舊就使用藍卡。"
+    },
+    {
+      "id": "C",
+      "text": "Send it out and attach a green card to the outside.",
+      "zh": "在外面貼上綠卡後送出去。",
+      "whyZh": "未確認銷長就不能配卡，還應在快遞取件前暫扣。"
+    },
+    {
+      "id": "D",
+      "text": "Add a check mark based on the delivery date.",
+      "zh": "依送達日期補上勾號。",
+      "whyZh": "勾號代表已實際檢查支撐銷，不是日期的替代記號。"
+    }
+  ],
+  "explanationZh": "未勾選仍須檢驗；已封箱時應先攔貨，不在包裝線拆封。",
+  "evidence": "For a carton without a check mark, leave the card out and move the carton to the inspection bench. | If the carton is already sealed for the courier, do not break the seal on the packing line. | Ask the dispatch lead to hold it before pickup",
+  "vocabulary": [
+    {
+      "term": "hold it",
+      "zh": "暫扣待處理",
+      "note": "此處指先攔下箱子，不交快遞。"
+    }
+  ],
+  "difficultyRationale": "結合未勾選須檢查、封箱不得在產線拆封兩項明示條件。"
+}

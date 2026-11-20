@@ -1,0 +1,52 @@
+{
+  "id": "t05-q151",
+  "number": 151,
+  "testId": "test-05",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t05-r-p7-02",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "single-document"
+  ],
+  "prompt": "What does the display count include?",
+  "promptZh": "顯示器的計數包含什麼？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "Only pieces that pass inspection.",
+      "zh": "只計入通過檢驗的零件。",
+      "whyZh": "顯示器計入每次裁切，不只合格件。"
+    },
+    {
+      "id": "B",
+      "text": "Only pieces placed in the inspection tray.",
+      "zh": "只計入放進檢驗托盤的零件。",
+      "whyZh": "托盤只用來統計不合格件，不構成顯示器的全部計數。"
+    },
+    {
+      "id": "C",
+      "text": "Cuts made during the trial run.",
+      "zh": "在試做期間進行的裁切。",
+      "whyZh": "原文特別說每次裁切都計入，包括班初試做。"
+    },
+    {
+      "id": "D",
+      "text": "Material that has not yet been fed into the machine.",
+      "zh": "尚未送進機器的材料。",
+      "whyZh": "還沒裁切的材料不會有裁切計數。"
+    }
+  ],
+  "explanationZh": "原文特別說每次裁切都計入，包括班初試做。",
+  "evidence": "including the short trial run at the start of a shift",
+  "vocabulary": [
+    {
+      "term": "stroke",
+      "zh": "一次裁切動作",
+      "note": "此處指機器做一次裁切。"
+    }
+  ],
+  "difficultyRationale": "首段明示。"
+}
