@@ -1,0 +1,53 @@
+{
+  "id": "t05-q146",
+  "testId": "test-05",
+  "number": 146,
+  "part": 6,
+  "groupId": "t05-r-p6-04",
+  "topic": "business",
+  "revision": 1,
+  "answer": "C",
+  "difficulty": "intermediate",
+  "tags": [
+    "cloze",
+    "text-completion"
+  ],
+  "prompt": "Choose the best option for the blank.",
+  "promptZh": "請選出最適合填入空格的選項。",
+  "options": [
+    {
+      "id": "A",
+      "text": "rejected",
+      "zh": "已判定不合格",
+      "whyZh": "尚未完成表示還沒有結果，並不表示已判定不合格。"
+    },
+    {
+      "id": "B",
+      "text": "identical",
+      "zh": "相同",
+      "whyZh": "未完成的樣品沒有測值，不能先說和其他件相同。"
+    },
+    {
+      "id": "C",
+      "text": "pending",
+      "zh": "待完成",
+      "whyZh": "先交完成結果，尚無結果的件數清楚標為待完成，不以零代替。"
+    },
+    {
+      "id": "D",
+      "text": "included",
+      "zh": "已列入結果",
+      "whyZh": "未完成的結果不能視為已納入。"
+    }
+  ],
+  "explanationZh": "先交完成結果，尚無結果的件數清楚標為待完成，不以零代替。",
+  "evidence": "If it cannot complete all four, report the finished results first and list the others as pending rather than entering a zero.",
+  "vocabulary": [
+    {
+      "term": "pending",
+      "zh": "待完成",
+      "note": "pending 表示尚未處理完，不是數值為零。"
+    }
+  ],
+  "difficultyRationale": "由不完整情況和不填零推知狀態，而非試驗結果。"
+}
