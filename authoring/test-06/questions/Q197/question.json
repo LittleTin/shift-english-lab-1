@@ -1,0 +1,48 @@
+{
+  "id": "t06-q197",
+  "number": 197,
+  "testId": "test-06",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t06-r-p7-15",
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "triple-document"
+  ],
+  "prompt": "What should be copied from P8-M to P8-R before the handover is complete?",
+  "promptZh": "交班完成前，應將哪一項從 P8-M 複製到 P8-R？",
+  "answer": "A",
+  "evidence": "If you rebuild on a new calendar, copy the annotations separately. / Calendar P8-R: spare calendar; 18 annotations copied from P8-M at 3:00 p.m.; no time rows; not registered for export. / At 4:10 p.m., the late shift added one annotation to P8-M: leave the first Friday slot available for operator training. / Do not copy the old time rows.",
+  "options": [
+    {
+      "id": "A",
+      "text": "The annotation asking staff to leave the first Friday slot available for operator training.",
+      "zh": "請將週五第一個時段留給操作員訓練的註記。",
+      "why": "That note was added after the annotation copy and will not travel with the export.",
+      "whyZh": "這則註記是在複製後才新增，夜間匯出也不會帶入註記。"
+    },
+    {
+      "id": "B",
+      "text": "The duplicated Tuesday time rows.",
+      "zh": "重複的週二時段資料列。",
+      "why": "Corrected rows will arrive via export; old rows must not be copied.",
+      "whyZh": "匯出會提供修正後的時段資料，不可複製舊資料列。"
+    },
+    {
+      "id": "C",
+      "text": "An identical second set of the eighteen earlier annotations.",
+      "zh": "把先前的十八則註記完整再複製一份。",
+      "why": "P8-R already has those annotations; the one added at 4:10 is missing.",
+      "whyZh": "P8-R 已有那十八則，缺少的是 4:10 新增的那一則。"
+    },
+    {
+      "id": "D",
+      "text": "P8-M’s export registration.",
+      "zh": "P8-M 的匯出登記。",
+      "why": "The systems team must register the destination separately; it is not copied as calendar content.",
+      "whyZh": "匯出目的地須由系統小組另行登記，並非可複製的行事曆內容。"
+    }
+  ],
+  "explanationZh": "這則註記是在複製後才新增，夜間匯出也不會帶入註記。"
+}

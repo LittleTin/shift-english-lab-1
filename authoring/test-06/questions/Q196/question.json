@@ -1,0 +1,48 @@
+{
+  "id": "t06-q196",
+  "number": 196,
+  "testId": "test-06",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t06-r-p7-15",
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "triple-document"
+  ],
+  "prompt": "What does the overnight export replace?",
+  "promptZh": "夜間匯出會替換什麼？",
+  "answer": "C",
+  "evidence": "The overnight export replaces the time rows only.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Calendar names.",
+      "zh": "行事曆名稱。",
+      "why": "Names are handled separately in the handover.",
+      "whyZh": "交班訊息另外規定如何標示行事曆。"
+    },
+    {
+      "id": "B",
+      "text": "Planner annotations.",
+      "zh": "排程人員的註記。",
+      "why": "Annotations stay attached to their calendar.",
+      "whyZh": "註記會留在其原本的行事曆。"
+    },
+    {
+      "id": "C",
+      "text": "Reserved production time rows.",
+      "zh": "預留的生產時段資料列。",
+      "why": "Only the time rows are replaced.",
+      "whyZh": "只有時段資料列會被替換。"
+    },
+    {
+      "id": "D",
+      "text": "The systems desk’s list of requests.",
+      "zh": "系統服務台的申請清單。",
+      "why": "Registration determines the destination; the export does not rewrite requests.",
+      "whyZh": "登記會決定匯出目的地，匯出不會改寫申請紀錄。"
+    }
+  ],
+  "explanationZh": "只有時段資料列會被替換。"
+}

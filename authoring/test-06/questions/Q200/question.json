@@ -1,0 +1,48 @@
+{
+  "id": "t06-q200",
+  "number": 200,
+  "testId": "test-06",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t06-r-p7-15",
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "triple-document"
+  ],
+  "prompt": "If the destination change is confirmed today, how should P8-M be treated until verification tomorrow?",
+  "promptZh": "如果今天確認目的地已更改，在明天查核前應如何處理 P8-M？",
+  "answer": "A",
+  "evidence": "Keep P8-M visible until tomorrow’s verification, but mark it “reference only” as soon as the systems team confirms the destination change.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Keep it visible and mark it “reference only.”",
+      "zh": "保持可見並標為「僅供參考」。",
+      "why": "Confirmation triggers labeling, not removal.",
+      "whyZh": "確認後要加上標示，不是移除。"
+    },
+    {
+      "id": "B",
+      "text": "Hide it immediately without changing its label.",
+      "zh": "立刻隱藏，標示不用改。",
+      "why": "It must remain visible until verification and be labeled once the change is confirmed.",
+      "whyZh": "查核前須保持可見，並在確認變更後加上標示。"
+    },
+    {
+      "id": "C",
+      "text": "Keep it as a second export destination.",
+      "zh": "保留為第二個匯出目的地。",
+      "why": "Each press has only one export destination.",
+      "whyZh": "每台沖床只能有一個匯出目的地。"
+    },
+    {
+      "id": "D",
+      "text": "Transfer its duplicated rows to P8-R and delete it.",
+      "zh": "把重複時段資料列轉到 P8-R，然後刪除 P8-M。",
+      "why": "No old time rows should be copied and P8-M must remain visible.",
+      "whyZh": "不可複製舊時段資料列，而且 P8-M 必須保持可見。"
+    }
+  ],
+  "explanationZh": "確認後要加上標示，不是移除。"
+}

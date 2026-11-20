@@ -1,0 +1,48 @@
+{
+  "id": "t06-q198",
+  "number": 198,
+  "testId": "test-06",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t06-r-p7-15",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "triple-document"
+  ],
+  "prompt": "What must happen for P8-R to receive tonight’s corrected time rows?",
+  "promptZh": "P8-R 要收到今晚修正後的時段資料列，必須完成什麼？",
+  "answer": "D",
+  "evidence": "the systems team must register it before the overnight job can write there. / The systems desk closes at 5:00 p.m.; destination changes received after closing are handled tomorrow.",
+  "options": [
+    {
+      "id": "A",
+      "text": "Give it the same name as P8-M.",
+      "zh": "將它改成與 P8-M 同名。",
+      "why": "The guide requires registration, not matching names.",
+      "whyZh": "指南要求登記目的地，不是讓兩份行事曆同名。"
+    },
+    {
+      "id": "B",
+      "text": "Leave a copy of the old rows in it.",
+      "zh": "在裡面保留一份舊時段資料。",
+      "why": "The handover explicitly forbids copying old rows.",
+      "whyZh": "交班訊息明確禁止複製舊資料列。"
+    },
+    {
+      "id": "C",
+      "text": "Wait until after 5:00 p.m. to request the change.",
+      "zh": "等下午五點過後再申請變更。",
+      "why": "After closing, the request will not be handled until tomorrow.",
+      "whyZh": "服務台關閉後收到的申請，要等明天才會處理。"
+    },
+    {
+      "id": "D",
+      "text": "Have the systems team register it as the destination before the overnight job.",
+      "zh": "請系統小組在夜間作業前將它登記為匯出目的地。",
+      "why": "Only the registered destination receives the export; the request must be made before closing to be handled today.",
+      "whyZh": "只有已登記的目的地會收到匯出；要在今天處理，必須在服務台關閉前提出。"
+    }
+  ],
+  "explanationZh": "只有已登記的目的地會收到匯出；要在今天處理，必須在服務台關閉前提出。"
+}

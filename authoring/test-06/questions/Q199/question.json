@@ -1,0 +1,48 @@
+{
+  "id": "t06-q199",
+  "number": 199,
+  "testId": "test-06",
+  "part": 7,
+  "revision": 1,
+  "groupId": "t06-r-p7-15",
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "triple-document"
+  ],
+  "prompt": "The last status update today confirms that P8-M is still the registered destination. Which update should the morning planner receive?",
+  "promptZh": "今天最後一次狀態更新確認，P8-M 仍是登記的匯出目的地。應給早班排程人員什麼訊息？",
+  "answer": "B",
+  "evidence": "Only one calendar per press may receive the export. / Calendar P8-M: registered export destination; Tuesday time rows duplicated; annotations readable. / Tonight’s export will contain corrected Tuesday time rows. / If that confirmation does not arrive today, leave both calendar names unchanged and tell the morning planner where tonight’s time rows will land.",
+  "options": [
+    {
+      "id": "A",
+      "text": "The corrected rows will appear in both calendars.",
+      "zh": "兩份行事曆都會收到已修正的資料列。",
+      "why": "Only one calendar is allowed to receive the export.",
+      "whyZh": "每台沖床只能有一份行事曆接收匯出。"
+    },
+    {
+      "id": "B",
+      "text": "The corrected rows will appear in P8-M; neither calendar name will change today.",
+      "zh": "修正後的資料列將寫入 P8-M；今天兩份行事曆的名稱都不變。",
+      "why": "P8-M remains the only registered destination; without confirmation, names stay unchanged.",
+      "whyZh": "P8-M 仍是唯一登記的目的地；未確認變更前，兩份行事曆的名稱不變。"
+    },
+    {
+      "id": "C",
+      "text": "No calendar will receive an export tonight.",
+      "zh": "今晚不會匯出到任何行事曆。",
+      "why": "Not changing the destination does not stop the export.",
+      "whyZh": "未變更目的地並不會停止匯出。"
+    },
+    {
+      "id": "D",
+      "text": "P8-R will receive the corrected rows because it is the intended working calendar.",
+      "zh": "P8-R 將收到已修正的資料列，因為它預定成為正式行事曆。",
+      "why": "Intent does not change the registered destination.",
+      "whyZh": "預定使用哪一份和實際登記的目的地不同。"
+    }
+  ],
+  "explanationZh": "P8-M 仍是唯一登記的目的地；未確認變更前，兩份行事曆的名稱不變。"
+}
