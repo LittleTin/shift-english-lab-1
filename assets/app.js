@@ -437,12 +437,15 @@ function updateExamClock(left){
  el.innerHTML=icon('clock')+' '+timerText(s,left);el.classList.toggle('urgent',left<300);
 }
 function groupReady(g){return state.active?.audioUsed?.[g?.id]?.status==='ended'}
-function stopAudio(){
+function stopAudio(keepNativeSource=false){
  captureFormal?.();captureFormal=null;formalMedia=null;formalPaused=false;
  audioRun++;cancelPracticePosition();formalRunning=false;formalRole='';
  const u=state.active?.audioUsed?.[currentAudioGroup];
  if(u?.status==='started'){u.status='interrupted';void persist()}
- player.pause();player.removeAttribute('src');player.load();player.playbackRate=1;currentAudioGroup=null;formalElapsed=0;
+ // In a continuous formal start, avoid an extra empty-resource reset.
+ if(keepNativeSource){if(!player.paused)player.pause()}
+ else{player.pause();player.removeAttribute('src');player.load()}
+ player.playbackRate=1;currentAudioGroup=null;formalElapsed=0;
 }
 // If listening ends in the background, the new Reading clock starts on return.
 function beginReadingClock(s){
@@ -501,6 +504,7 @@ function formalAudioLabel(u,running){
 function formalAudioStatus(g,u,running){
  if(u?.status==='ended')return 'This group is complete';
  if(running&&!formalPaused)return 'Playing';
+ if(running&&formalMedia&&!formalMedia.ready())return 'Preparing your saved listening position…';
  if(u)return 'Listening paused. Select Resume Listening to continue.';
  return groupFrames(g).length?'Start listening; subsequent groups play automatically':'This pack has no formal-listening plan. Use Practice mode instead.';
 }
@@ -516,15 +520,18 @@ function syncAudioUI(){if(route!=='quiz'&&route!=='answer-review')return;const q
  if(button.getAttribute('aria-label')!==newLabel){button.setAttribute('aria-label',newLabel);button.innerHTML=icon(running&&!formalPaused?'pause':'play')}
  }if(status)status.textContent=formalAudioStatus(g,u,running);if(label)label.textContent=time(formalRunning?formalElapsed:savedGroupElapsed(g,u))+' / '+time(groupSeconds(g));const next=document.querySelector('[data-action="next-question"]');if(next)next.disabled=!groupReady(g)||formalRunning;return}const active=currentAudioGroup===g.id;if(button){button.innerHTML=icon(active&&(!player.paused||practicePosition)?'pause':'play');button.setAttribute('aria-label',active&&(!player.paused||practicePosition)?'Pause Listening Audio':'Play Listening Audio')}if(seek)seek.value=active&&Number.isFinite(player.duration)&&player.duration?Math.round(Math.max(0,player.currentTime-mediaStart(g))/(Number.isFinite(g.audioEnd)?mediaDuration(g):player.duration)*1000):0;if(label)label.textContent=time(active?Math.max(0,player.currentTime-mediaStart(g)):0)+' / '+time(Number.isFinite(g.audioEnd)?mediaDuration(g):active&&Number.isFinite(player.duration)?player.duration:mediaDuration(g))}
 // Pausing within a live group keeps its source, cursor, and single-play journal.
-function bindFormalMedia(token,finish){
- let playEpoch=0;
+function bindFormalMedia(token,finish,ready=()=>true){
+ let playEpoch=0,confirmed=false;
  const controls={
+  ready,
+  confirmed(){return confirmed},
   pause(){playEpoch++;player.pause()},
   play(){
-   const epoch=++playEpoch;
-   const failed=e=>{if(formalMedia===controls&&token===audioRun&&!formalPaused&&epoch===playEpoch)finish(e)};
+   const epoch=++playEpoch;confirmed=false;
+   const current=()=>formalMedia===controls&&token===audioRun&&epoch===playEpoch;
+   const failed=e=>{if(current())finish(e)};
    player.playbackRate=1;
-   try{Promise.resolve(player.play()).catch(failed)}catch(e){failed(e)}
+   try{Promise.resolve(player.play()).then(()=>{if(current()){confirmed=true;if(player.paused)mediaPaused(token)}},failed)}catch(e){failed(e)}
   },
   clear(){if(formalMedia===controls)formalMedia=null;playEpoch++}
  };
@@ -539,6 +546,7 @@ function mediaPaused(token){
 function toggleFormalAudio(g){
  if(!g||groupReady(g))return;
  if(!formalRunning||currentAudioGroup!==g.id){void runFormalGroup(g);return}
+ if(formalPaused&&formalMedia&&!formalMedia.ready())return;
  captureFormal?.();
  formalPaused=!formalPaused;
  if(formalPaused){formalMedia?.pause();void persist()}
@@ -582,50 +590,87 @@ function audioFrame(f,token,offset,progress){
 }
 // One file includes directions, speech and exact answer silence. The native clock drives
 // chapters/UI/journal; a chapter transition never restarts media or uses currentTime=.
-function playContinuousGroup(m,token,position,isResume,progress){
+function playContinuousGroup(m,token,position,isResume,progress,trustedBuiltIn=false){
  return new Promise((resolve,reject)=>{
   const epsilon=.05;
-  let timer,settled=false,metadata=false,controls;
+  let timer,seekTimeout,settled=false,metadata=false,controls;
+  let seekPending=isResume&&position>0,seekRequested=false,observedPlayback=false;
+  const sourceUrl=new URL(m.src,document.baseURI).href;
+  const selected=()=>player.currentSrc===sourceUrl;
   const finish=error=>{
    if(settled)return;
-   settled=true;clearInterval(timer);controls?.clear();
+   settled=true;clearInterval(timer);clearTimeout(seekTimeout);controls?.clear();
    for(const [event,handler] of events)player.removeEventListener(event,handler);
    error?reject(error):resolve();
   };
   const validDuration=()=>Number.isFinite(player.duration)&&Math.abs(player.duration-m.duration)<=epsilon;
   const check=()=>{
    if(token!==audioRun)return finish();
-   if(!metadata||player.seeking||player.currentTime<position-.025)return;
-   progress(Math.min(m.duration,player.currentTime));
+   if(settled||!metadata||!selected()||player.seeking||seekPending)return;
+   if(player.currentTime<position-.025)return;
+   if(trustedBuiltIn&&player.currentTime>m.duration+epsilon)
+    return finish(new Error('Continuous group playback exceeded the planned duration'));
+   if(!player.paused&&player.currentTime>position+.0001)observedPlayback=true;
+   // Never journal completion until the browser dispatches verified EOS.
+   progress(Math.min(m.duration-.001,player.currentTime));
   };
   const loaded=()=>{
    if(token!==audioRun)return finish();
-   if(!validDuration())return finish(new Error('Unexpected continuous group audio duration'));
-   metadata=true;check();
+   if(!selected())return;
+   // Some WebKit versions report an estimated Ogg duration based on early
+   // packets. Only exact built-in group URLs use plan + actual cursor/EOS.
+   if(!trustedBuiltIn&&!validDuration())return finish(new Error('Unexpected continuous group audio duration'));
+   metadata=true;
+   if(seekPending&&!seekRequested){
+    seekRequested=true;
+    try{player.currentTime=position}catch(_){
+     return finish(new Error('Unable to resume at the saved audio position'));
+    }
+   }
+   check();
   };
   const ended=()=>{
-   check();
+   if(!selected()||!metadata||settled||!player.ended||(!observedPlayback&&!controls?.confirmed()))return;
+   check();if(settled)return;
    if(token!==audioRun)return finish();
-   if(!validDuration()||player.currentTime<m.duration-epsilon)return finish(new Error('Continuous group audio ended early'));
+   if(seekPending)return finish(new Error('Unable to resume at the saved audio position'));
+   if((!trustedBuiltIn&&!validDuration())||player.currentTime<m.duration-epsilon)return finish(new Error('Continuous group audio ended early'));
+   if(player.currentTime>m.duration+epsilon)return finish(new Error('Continuous group playback exceeded the planned duration'));
    progress(m.duration);finish();
   };
   const paused=()=>{
    check();
-   if(!settled)mediaPaused(token);
+   // Ignore unload/reset notifications before the current play actually
+   // starts; an active play rejection still reports its real failure.
+   if(!settled&&selected()&&controls?.confirmed())mediaPaused(token);
   };
-  const failed=()=>finish(new Error('Unable to load the continuous audio file'));
-  const events=[['loadedmetadata',loaded],['error',failed],['ended',ended],['pause',paused],['timeupdate',check]];
+  const failed=()=>{if(player.error)finish(new Error('Unable to load the continuous audio file'))};
+  const seeked=()=>{
+   if(seekPending&&seekRequested&&metadata&&selected()&&!player.seeking&&Math.abs(player.currentTime-position)<=.025){
+    seekPending=false;clearTimeout(seekTimeout);syncAudioUI();
+    // Playback is never initiated here; a fresh tap supplies activation.
+   }
+   check();
+  };
+  const events=[['loadedmetadata',loaded],['error',failed],['ended',ended],['pause',paused],['timeupdate',check],['seeked',seeked]];
   try{
    for(const [event,handler] of events)player.addEventListener(event,handler);
-   player.src=m.src;player.load();player.playbackRate=1;
-   // Native media's default start is zero; only a persisted interruption may seek.
-   if(isResume&&position>0)player.currentTime=position;
+   // Assigning src starts native resource selection. A second explicit
+   // load can abort pending startup; keep play in the initiating gesture.
+   player.src=m.src;player.playbackRate=1;
+   // Fresh playback can begin in this gesture. For restored offsets,
+   // first confirm the position without ever playing from zero. Request
+   // native metadata during this tap; no playback is pending in this branch.
+   if(seekPending)player.load();
    // Some in-memory/cached element implementations already know metadata.
-   if(player.readyState>=1)loaded();
+   if(player.readyState>=1&&selected())loaded();
    if(settled)return;
-   captureFormal=check;controls=bindFormalMedia(token,finish);
+   captureFormal=check;controls=bindFormalMedia(token,finish,()=>!seekPending);
    timer=setInterval(check,25);
-   if(!formalPaused)controls.play();
+   if(seekPending){
+    formalPaused=true;syncAudioUI();
+    seekTimeout=setTimeout(()=>finish(new Error('Unable to resume at the saved audio position')),10000);
+   }else if(!formalPaused)controls.play();
   }catch(e){finish(e)}
  });
 }
@@ -635,7 +680,7 @@ async function runFormalGroup(g){
  const frames=groupFrames(g),prior=s.audioUsed?.[g.id],continuous=continuousGroupAudio(g,s);
  if((continuous||frames.some(f=>opusRequired(f.src)))&&!opusPlayable()){notify(opusUnavailable);return;}
  if(prior?.status==='ended'||!frames.length)return;
- stopAudio();
+ stopAudio(Boolean(continuous));
  const token=audioRun,{frame,offset}=resumePosition(prior,frames);
  let elapsed=frames.slice(0,frame).reduce((sum,f)=>sum+(Number(f.duration)||0),0),savedAt=now();
  const u=s.audioUsed[g.id]={status:'started',unlockAt:0,frame,offset};
@@ -656,8 +701,9 @@ async function runFormalGroup(g){
     if(formalRole!==frames[i].role){formalRole=frames[i].role;syncFormalStage(g);}
     if(now()-savedAt>=2000){savedAt=now();void persist()}
    };
-   if(position<continuous.duration-.000001)
-    await playContinuousGroup(continuous,token,position,!!prior,progress);
+   if(position>=continuous.duration-.000001)throw new Error('Unable to resume at the saved audio position');
+   await playContinuousGroup(continuous,token,position,!!prior,progress,
+     Boolean(officialEntry(g.testId))&&continuous.src===`audio/formal-groups/${g.testId}/${g.id}.ogg`);
    if(token!==audioRun)return;
    captureFormal=null;formalElapsed=continuous.duration;u.frame=frames.length;u.offset=0;
   }else for(let i=frame;i<frames.length;i++){
@@ -697,7 +743,10 @@ async function runFormalGroup(g){
   if(token!==audioRun)return;
   stopAudio();
   void persist();render();
-  if(!document.hidden)notify('Listening paused. Select Resume Listening to try again.');
+  if(!document.hidden){
+   const detail=e?.name==='NotAllowedError'?'Playback was blocked by the browser.':e?.name==='NotSupportedError'?'The browser could not play this audio format.':e?.name==='AbortError'?'Playback was interrupted before it could start.':e?.message==='Unexpected continuous group audio duration'?'The browser reported an unexpected audio duration.':e?.message==='Unable to load the continuous audio file'?'The browser could not load the audio file.':e?.message==='Continuous group audio ended early'?'The audio ended before the group was complete.':e?.message==='Continuous group playback exceeded the planned duration'?'Audio exceeded the expected group duration.':e?.message==='Unable to resume at the saved audio position'?'The browser could not verify the saved listening position.':'Listening was paused or interrupted.';
+   notify(detail+' Select Resume Listening to try again.');
+  }
  }
 }
 const PRACTICE_SEEK_EPS=.014, PRACTICE_UNDERSHOOT=.004;
