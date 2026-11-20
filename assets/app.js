@@ -100,7 +100,7 @@ for(const[k,v]of Object.entries(s.stars||{}))if(safeId(k)&&v)r.stars[k]=true;
 for(const[k,v]of Object.entries(s.notes||{}))if(safeId(k)&&typeof v==='string')r.notes[k]=v.slice(0,20000);
 function session(x,active=false){if(!x||!safeId(x.id)||!['practice','exam'].includes(x.mode)||typeof x.title!=='string'||!Array.isArray(x.questionIds)||!x.questionIds.length||x.questionIds.length>5000||!x.questionIds.every(safeId)||new Set(x.questionIds).size!==x.questionIds.length||!validTime(x.startedAt)||!x.answers||typeof x.answers!=='object')throw new Error('Invalid practice-session format');const answerIds=new Set(x.questionIds),answers={},submitted={};for(const[k,v]of Object.entries(x.answers)){if(!answerIds.has(k)||!['A','B','C','D'].includes(v))throw new Error('Invalid saved answer option');answers[k]=v}for(const[k,v]of Object.entries(x.submitted||{}))if(answerIds.has(k)&&v===true)submitted[k]=true;
 const y={id:x.id,title:x.title.slice(0,250),mode:x.mode,questionIds:x.questionIds.slice(),answers,submitted,startedAt:x.startedAt};
-if(active){if(!Array.isArray(x.testIds)||!x.testIds.every(safeId)||!Number.isSafeInteger(x.index)||x.index<0||x.index>=x.questionIds.length||(x.mode==='exam'&&!validTime(x.deadline)))throw new Error('Invalid unfinished-session format');y.testIds=x.testIds.slice();if(safeId(x.contentVersion))y.contentVersion=x.contentVersion;y.index=x.index;y.deadline=x.mode==='exam'?x.deadline:null;y.examVersion=x.examVersion===2?2:1;if(['azure-1','toeic-1'].includes(x.audioEdition))y.audioEdition=x.audioEdition;y.examPhase=x.examPhase==='reading'?'reading':'listening';y.listeningStartedAt=validTime(x.listeningStartedAt)?x.listeningStartedAt:null;y.sectionDeadline=validTime(x.sectionDeadline)?x.sectionDeadline:(y.examVersion===2&&y.examPhase==='listening'&&!y.listeningStartedAt?null:y.deadline);y.audioUsed={};for(const[k,v]of Object.entries(x.audioUsed||{})){if(safeId(k)&&v&&['started','ended','interrupted'].includes(v.status)&&validTime(v.unlockAt))y.audioUsed[k]={status:v.status==='started'?'interrupted':v.status,unlockAt:v.unlockAt,...(Number.isSafeInteger(v.frame)&&v.frame>=0&&Number.isFinite(v.offset)&&v.offset>=0?{frame:v.frame,offset:v.offset}:{})}}}else{if(!Number.isSafeInteger(x.correct)||!Number.isSafeInteger(x.total)||!Number.isSafeInteger(x.answered)||x.total!==x.questionIds.length||x.correct<0||x.correct>x.total||x.answered<0||x.answered>x.total||!validTime(x.finishedAt))throw new Error('Score fields must contain valid numbers');y.correct=x.correct;y.total=x.total;y.answered=x.answered;y.finishedAt=x.finishedAt}return y}
+if(active){if(!Array.isArray(x.testIds)||!x.testIds.every(safeId)||!Number.isSafeInteger(x.index)||x.index<0||x.index>=x.questionIds.length||(x.mode==='exam'&&!validTime(x.deadline)))throw new Error('Invalid unfinished-session format');y.testIds=x.testIds.slice();if(safeId(x.contentVersion))y.contentVersion=x.contentVersion;y.index=x.index;y.deadline=x.mode==='exam'?x.deadline:null;y.examVersion=x.examVersion===2?2:1;if(['azure-1','toeic-1'].includes(x.audioEdition))y.audioEdition=x.audioEdition;y.examPhase=x.examPhase==='reading'?'reading':'listening';y.listeningStartedAt=validTime(x.listeningStartedAt)?x.listeningStartedAt:null;y.sectionDeadline=validTime(x.sectionDeadline)?x.sectionDeadline:(y.examVersion===2&&y.examPhase==='listening'&&!y.listeningStartedAt?null:y.deadline);if(y.examVersion===2&&y.examPhase==='listening'&&y.listeningStartedAt&&Number.isFinite(x.listeningRemaining)&&x.listeningRemaining>=0&&x.listeningRemaining<=86400)y.listeningRemaining=x.listeningRemaining;if(y.examVersion===2&&y.examPhase==='reading'&&x.readingStartsOnReturn===true){y.readingStartsOnReturn=true;y.sectionDeadline=null}y.audioUsed={};for(const[k,v]of Object.entries(x.audioUsed||{})){if(safeId(k)&&v&&['started','ended','interrupted'].includes(v.status)&&validTime(v.unlockAt))y.audioUsed[k]={status:v.status==='started'?'interrupted':v.status,unlockAt:v.unlockAt,...(Number.isSafeInteger(v.frame)&&v.frame>=0&&Number.isFinite(v.offset)&&v.offset>=0?{frame:v.frame,offset:v.offset}:{})}}}else{if(!Number.isSafeInteger(x.correct)||!Number.isSafeInteger(x.total)||!Number.isSafeInteger(x.answered)||x.total!==x.questionIds.length||x.correct<0||x.correct>x.total||x.answered<0||x.answered>x.total||!validTime(x.finishedAt))throw new Error('Score fields must contain valid numbers');y.correct=x.correct;y.total=x.total;y.answered=x.answered;y.finishedAt=x.finishedAt}return y}
 r.sessions=s.sessions.map(x=>session(x));if(s.active)r.active=session(s.active,true);
 const blocked=new Set(),testIds=new Set();
 for(const p of s.importedPacks||[]){
@@ -113,7 +113,7 @@ if(r.active&&(s.active?.reservedPackConflict===true||r.active.testIds.some(id=>b
 return r}
 
 async function initStorage(){try{db=await new Promise((resolve,reject)=>{const req=indexedDB.open('shift-english-lab-v1',1);req.onupgradeneeded=()=>req.result.createObjectStore('kv');req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);req.onblocked=()=>reject(new Error('The database is in use by another tab'))});const stored=await new Promise((resolve,reject)=>{const r=db.transaction('kv').objectStore('kv').get('state');r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error)});if(stored)state=normalizeState(stored);storageMode='indexeddb';db.onversionchange=()=>{db.close();storageMode='memory';notify('Storage has changed. Export a backup and reopen the app.')};await persist();return}catch(e){console.warn('IndexedDB unavailable',e)}try{localStorage.setItem('shift-probe','1');localStorage.removeItem('shift-probe');const raw=localStorage.getItem('shift-english-lab-v1');if(raw)state=normalizeState(JSON.parse(raw));storageMode='localstorage'}catch(e){storageMode='memory'}}
-function persist(){if(diagnostic)return Promise.resolve();if(storageMode==='loading'||storageMode==='memory')return Promise.resolve();const snapshot=JSON.stringify(state);saveQueue=saveQueue.catch(()=>{}).then(()=>new Promise((resolve,reject)=>{if(storageMode==='indexeddb'&&db){const tx=db.transaction('kv','readwrite');tx.objectStore('kv').put(JSON.parse(snapshot),'state');tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error||new Error('Saving was interrupted'))}else{try{localStorage.setItem('shift-english-lab-v1',snapshot);resolve()}catch(e){reject(e)}}})).catch(e=>{console.error(e);storageMode='memory';notify('The browser cannot save records. Export a backup from Data & Settings.');updateStorageBadge()});return saveQueue}
+function persist(){if(diagnostic)return Promise.resolve();if(storageMode==='loading'||storageMode==='memory')return Promise.resolve();saveListeningCountdown();const snapshot=JSON.stringify(state);saveQueue=saveQueue.catch(()=>{}).then(()=>new Promise((resolve,reject)=>{if(storageMode==='indexeddb'&&db){const tx=db.transaction('kv','readwrite');tx.objectStore('kv').put(JSON.parse(snapshot),'state');tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error||new Error('Saving was interrupted'))}else{try{localStorage.setItem('shift-english-lab-v1',snapshot);resolve()}catch(e){reject(e)}}})).catch(e=>{console.error(e);storageMode='memory';notify('The browser cannot save records. Export a backup from Data & Settings.');updateStorageBadge()});return saveQueue}
 function readNoteDraft(){try{const raw=localStorage.getItem(NOTE_DRAFT_KEY);return raw?JSON.parse(raw):null}catch(e){return null}}
 function removeNoteDraft(token){try{if(readNoteDraft()?.token===token)localStorage.removeItem(NOTE_DRAFT_KEY)}catch(e){}}
 function noteStatusText(id){return noteStatuses.get(id)||(storageMode==='memory'?'Temporary storage only. Please export a backup.':state.notes[id]?'Saved in this browser':'Changes are saved automatically in this browser')}
@@ -269,7 +269,7 @@ const ACCENTS={"en-US":"American English","en-GB":"British English","en-CA":"Can
 function accentMatches(q,accent){if(accent==='all')return true;const speakers=G.get(q.groupId)?.audioSpeakers;return q.part<5&&Array.isArray(speakers)&&speakers.length>0&&speakers.every(v=>v?.locale===accent)}
 function practicePage(){return heading('Practice at your own pace.','Choose a question type, topic, and difficulty. Related questions stay together.','PRACTICE BY TOPIC')+'<section class="panel"><h2>Set up this practice session</h2><div class="filters"><div class="field"><label for="filter-section">Practice section</label><select id="filter-section">'+selectOptions({reading:'Reading Practice',listening:'Listening Practice'},filters.section,'Reading + Listening')+'</select></div><div class="field"><label for="filter-part">Question type</label><select id="filter-part">'+selectOptions(Object.fromEntries(Object.entries(PARTS).map(([k,v])=>[k,'Part '+k+' · '+v])),filters.part,'All question types')+'</select></div><div class="field"><label for="filter-accent">Listening accent focus</label><select id="filter-accent">'+selectOptions(ACCENTS,filters.accent,'Any accent (including mixed)')+'</select></div><div class="field"><label for="filter-topic">Topic</label><select id="filter-topic">'+selectOptions(TOPICS,filters.topic,'All topics')+'</select></div><div class="field"><label for="filter-difficulty">Difficulty</label><select id="filter-difficulty">'+selectOptions(DIFFICULTY,filters.difficulty,'All difficulties')+'</select></div><div class="field"><label for="filter-count">Target question count</label><select id="filter-count">'+[10,20,40,100].map(n=>'<option value="'+n+'" '+(filters.count===n?'selected':'')+'>'+n+' questions approximately</option>').join('')+'</select></div></div><label class="check-row"><input type="checkbox" id="filter-unseen" '+(filters.unseen?'checked':'')+'>Prioritize questions not yet answered</label><p class="hint">Passages and conversations are selected as complete groups, so the question count may vary. If a topic or difficulty does not apply to every question in a group, that group is skipped. Prioritizing unanswered questions tries new groups first without splitting them. An accent filter includes only groups whose voices all have that accent label. Mixed and unlabeled groups are excluded; a shortfall is shown rather than filled with other accents. Labels describe synthetic voice models, not official accent certification. Submit the session to see your score and explanations.</p><div class="btn-row" style="margin-top:24px">'+btn('Start This Practice '+icon('arrow'),'start-filtered','primary')+'</div></section><div class="topics-row">'+Object.entries(TOPICS).map(([id,label])=>'<button class="topic-card" data-action="topic" data-topic="'+id+'">'+icon(topicIcon(id))+'<b>'+label+'</b><small>Choose this topic</small></button>').join('')+'</div>'}
 async function withBusy(fn){if(busy)return;busy=true;try{await fn()}catch(e){console.error(e);notify(e.message||'Something went wrong. Please try again.')}finally{busy=false}}
-async function navigate(dest){if(route==='quiz'||route==='answer-review'){stopAudio();await persist()}mobileNav=false;route=dest;activeTranscript=null;listLimit=40;if(['review','favorites','stats'].includes(dest)){shell('<div class="loading">Loading your learning records…</div>');await loadAll()}render();window.scrollTo({top:0,behavior:'instant'})}
+async function navigate(dest){if(route==='quiz'||route==='answer-review'){stopAudio();await persist()}mobileNav=false;route=dest;syncListeningCountdown(state.active);if(listening())void persist();activeTranscript=null;listLimit=40;if(['review','favorites','stats'].includes(dest)){shell('<div class="loading">Loading your learning records…</div>');await loadAll()}render();window.scrollTo({top:0,behavior:'instant'})}
 function render(){if(!diagnostic)try{if(route==='quiz'&&state.active)sessionStorage.setItem('shift-last-quiz',state.active.id);else sessionStorage.removeItem('shift-last-quiz')}catch(e){}if(route==='home')shell(homePage());else if(route==='practice')shell(practicePage());else if(route==='review'||route==='favorites')shell(listPage());else if(route==='stats')shell(statsPage());else if(route==='data')shell(dataPage());else if(route==='quiz')shell(quizPage());else if(route==='result')shell(resultPage());else if(route==='answer-review')shell(reviewDetailPage());syncAudioUI()}
 function groupedSelection(pool,count){const units=new Map();for(const q of pool){const key=q.groupId||q.id;if(!units.has(key))units.set(key,[]);units.get(key).push(q)}const chosen=[];for(const unit of shuffle([...units.values()])){if(chosen.length>=count)break;const qs=unit[0].groupId?relatedQuestions(unit[0]).map(q=>unit.find(x=>x.number===q.number)||q):unit;chosen.push(...qs)}return chosen}
 function startSession(questions,title,mode='practice',startId=null){if(!questions.length){notify('No questions match these filters. Try changing your selection.');return}const begin=async()=>{const unique=[...new Map(questions.map(q=>[q.id,q])).values()];resumeEnv=null;state.active={id:'session-'+uid(),contentVersion:contentVersion(),title,mode,questionIds:unique.map(q=>q.id),testIds:[...new Set(unique.map(q=>q.testId))],index:Math.max(0,unique.findIndex(q=>q.id===startId)),answers:{},submitted:{},startedAt:now(),deadline:mode==='exam'?now()+120*60000:null,examVersion:mode==='exam'?2:1,audioEdition:FORMAL_EDITION,examPhase:'listening',sectionDeadline:null,listeningStartedAt:null,audioUsed:{}};await persist();route='quiz';currentQuestionStart=now();activeTranscript=null;stopAudio();render();window.scrollTo({top:0,behavior:'instant'})};if(state.active){confirmBox('Start a new practice session?','You have an unfinished session. Starting a new one replaces that unfinished progress. Submitted answers and notes are kept.',begin,'Start New Session')}else return begin()}
@@ -305,7 +305,7 @@ async function startFiltered(override){await loadAll();const f=Object.assign({},
 function questionByActive(){return state.active?sessionQuestion(state.active.questionIds[state.active.index]):null}
 function recordAnswer(q,selected,sessionId,seconds){const id=sessionId+':'+q.id;if(state.attempts.some(a=>a.id===id))return;const correct=selected===q.answer;state.attempts.push({id,questionId:q.id,testId:q.testId,revision:q.revision||1,correctAnswer:q.answer,part:q.part,topic:q.topic,selected,correct,at:now(),seconds:Math.min(3600,Math.max(0,Math.round(seconds||0)))});const st=state.stats[q.id]||(state.stats[q.id]={attempts:0,wrong:0,streak:0});st.attempts++;if(!correct)st.wrong++;st.streak=correct?st.streak+1:0;st.lastCorrect=correct;st.lastAt=now();st.testId=q.testId;st.part=q.part;st.topic=q.topic;st.due=now()+(correct?(st.streak<2?3:7):1)*86400000;st.needsReview=st.wrong>0&&st.streak<2}
 
-let audioRun=0,formalRunning=false,formalElapsed=0,formalRole='',captureFormal=null,visibilityResume=null;
+let audioRun=0,formalRunning=false,formalElapsed=0,formalRole='',captureFormal=null,formalPaused=false,formalMedia=null;
 const LISTENING_TAB_KEY='shift-formal-listening-refresh-v1';
 function frameSignature(f,g,s=state.active){
  if(!f)return null;
@@ -338,7 +338,7 @@ function restoreListeningTabPoint(s){
  if(x.frame<old.frame||(x.frame===old.frame&&x.offset<=old.offset))return false;
  s.audioUsed[g.id]={...u,status:'interrupted',frame:x.frame,offset:x.offset};return true;
 }
-window.addEventListener?.('pagehide',saveListeningTabPoint);
+window.addEventListener?.('pagehide',()=>{saveListeningTabPoint();if(listening()&&route==='quiz')void persist()});
 
 function formal(s=state.active){return !!s&&s.mode==='exam'&&s.examVersion===2}
 function listening(s=state.active){return formal(s)&&s.examPhase==='listening'}
@@ -392,22 +392,65 @@ function savedGroupElapsed(g,u){
  const {frame,offset}=resumePosition(u,frames);
  return frames.slice(0,frame).reduce((sum,f)=>sum+(Number(f.duration)||0),offset);
 }
-function examSeconds(s,g=sessionGroup(questionByActive()?.groupId,s)){
- if(!listening(s))return ((formal(s)?s.sectionDeadline:s.deadline)-now())/1000;
+function listeningTimelineSeconds(s,g=sessionGroup(questionByActive()?.groupId,s)){
  if(!g)return 2700;
  const plan=formalPlan(g,s),frames=plan?.frames||[],first=frames.findIndex(f=>f.groupId===g.id);
  const before=first<0?0:frames.slice(0,first).reduce((sum,f)=>sum+(Number(f.duration)||0),0);
  return (Number(plan?.duration)||2700)-before-(formalRunning&&currentAudioGroup===g.id?formalElapsed:savedGroupElapsed(g,s.audioUsed?.[g.id]));
 }
+// The listening countdown measures visible quiz time, independently of media.
+let formalCountdown=null;
+function countdownFor(s){
+ if(formalCountdown?.session!==s){
+  const initial=Number.isFinite(s.listeningRemaining)?s.listeningRemaining:listeningTimelineSeconds(s);
+  formalCountdown={session:s,left:Math.max(0,initial),since:null,lastSave:performance.now()};
+ }
+ return formalCountdown;
+}
+function listeningCountdownLeft(c,at=performance.now()){
+ return Math.max(0,c.left-(c.since===null?0:(at-c.since)/1000));
+}
+function syncListeningCountdown(s){
+ if(!listening(s)||!s.listeningStartedAt)return;
+ const c=countdownFor(s),at=performance.now();
+ if(route==='quiz'&&!document.hidden){
+  if(c.since===null)c.since=at;
+ }else if(c.since!==null){
+  c.left=listeningCountdownLeft(c,at);c.since=null;
+ }
+}
+function saveListeningCountdown(){
+ const s=state.active,c=formalCountdown;
+ if(c?.session===s&&listening(s)){
+  s.listeningRemaining=listeningCountdownLeft(c);c.lastSave=performance.now();
+ }
+}
+function examSeconds(s){
+ if(!listening(s))return formal(s)&&s.readingStartsOnReturn?75*60:((formal(s)?s.sectionDeadline:s.deadline)-now())/1000;
+ return listeningCountdownLeft(countdownFor(s));
+}
+function timerText(s,left=examSeconds(s)){return time(listening(s)?Math.ceil(left):left)}
+function updateExamClock(left){
+ const s=state.active,el=document.getElementById('timer');
+ if(!el||!s||s.mode!=='exam'||listening(s)&&!s.listeningStartedAt)return;
+ left??=examSeconds(s);
+ el.innerHTML=icon('clock')+' '+timerText(s,left);el.classList.toggle('urgent',left<300);
+}
 function groupReady(g){return state.active?.audioUsed?.[g?.id]?.status==='ended'}
 function stopAudio(){
- captureFormal?.();captureFormal=null;
+ captureFormal?.();captureFormal=null;formalMedia=null;formalPaused=false;
  audioRun++;cancelPracticePosition();formalRunning=false;formalRole='';
  const u=state.active?.audioUsed?.[currentAudioGroup];
  if(u?.status==='started'){u.status='interrupted';void persist()}
  player.pause();player.removeAttribute('src');player.load();player.playbackRate=1;currentAudioGroup=null;formalElapsed=0;
 }
-async function enterReading(){const s=state.active;if(!formal(s)||s.examPhase==='reading')return;stopAudio();const idx=s.questionIds.findIndex(id=>sessionQuestion(id,s)?.part>=5);if(idx<0)return finishSession(true);s.examPhase='reading';s.index=idx;s.sectionDeadline=now()+75*60000;s.deadline=s.sectionDeadline;await persist();if(route==='quiz')render();notify('Listening is complete. Reading lasts 75 minutes. You cannot return to Listening.')}
+// If listening ends in the background, the new Reading clock starts on return.
+function beginReadingClock(s){
+ if(!formal(s)||s.examPhase!=='reading'||!s.readingStartsOnReturn||document.hidden)return false;
+ s.sectionDeadline=now()+75*60000;s.deadline=s.sectionDeadline;delete s.readingStartsOnReturn;
+ return true;
+}
+async function enterReading(){const s=state.active;if(!formal(s)||s.examPhase==='reading')return;stopAudio();const idx=s.questionIds.findIndex(id=>sessionQuestion(id,s)?.part>=5);if(idx<0)return finishSession(true);s.examPhase='reading';s.index=idx;s.sectionDeadline=null;s.readingStartsOnReturn=true;beginReadingClock(s);await persist();if(route==='quiz')render();notify('Listening is complete. Reading lasts 75 minutes. You cannot return to Listening.')}
 function questionReference(id){
  const uuid=window.SHIFT_QUESTION_UUID(id);
  return '<div class="question-reference"><span>UUID: <code dir="ltr">'+uuid+'</code></span><button type="button" class="copy-question-uuid" data-action="copy-question-uuid" aria-label="Copy question UUID '+uuid+'">Copy</button></div>';
@@ -448,26 +491,69 @@ function reviewedChartImage(g){
 }
 function quizPage(){
 const s=state.active,q=questionByActive();if(!s||!q)return '<p>Question not found. Please return to the home page.</p>';const g=sessionGroup(q.groupId,s),qs=groupQuestions(q),last=Math.max(...qs.map(x=>s.questionIds.indexOf(x.id))),answered=Object.keys(s.answers).length,locked=listening(s),ready=groupReady(g);
-let out='<div class="quiz-top"><div class="quiz-title">'+esc(displayEnglish(s.title))+'<div class="subtitle-small">'+(formal(s)?(locked?'Formal Mode · Listening: about 45 minutes · One play only':'Formal Mode · Reading 75 minutes'):s.mode==='exam'?'Legacy 120 minute self-timed test':'Grouped Practice · Replay allowed')+' · Scored after submission</div></div><div class="btn-row">'+(s.mode==='exam'?'<span class="timer" id="timer">'+(listening(s)&&!s.listeningStartedAt?'Ready to start':time(examSeconds(s)))+'</span>':'')+(!locked?btn(icon('grid')+' Groups','question-grid','small'):'')+'</div></div><div class="progress-track"><div class="progress-fill" style="width:'+(answered/s.questionIds.length*100)+'%"></div></div><div class="quiz-grid '+(!g?'single':'')+'">';
+let out='<div class="quiz-top"><div class="quiz-title">'+esc(displayEnglish(s.title))+'<div class="subtitle-small">'+(formal(s)?(locked?'Formal Mode · Listening: about 45 minutes · One play only':'Formal Mode · Reading 75 minutes'):s.mode==='exam'?'Legacy 120 minute self-timed test':'Grouped Practice · Replay allowed')+' · Scored after submission</div></div><div class="btn-row">'+(s.mode==='exam'?'<span class="timer" id="timer">'+(listening(s)&&!s.listeningStartedAt?'Ready to start':timerText(s))+'</span>':'')+(!locked?btn(icon('grid')+' Groups','question-grid','small'):'')+'</div></div><div class="progress-track"><div class="progress-fill" style="width:'+(answered/s.questionIds.length*100)+'%"></div></div><div class="quiz-grid '+(!g?'single':'')+'">';
 if(g){out+='<section class="passage-panel"><div class="panel-head"><span>Part '+q.part+' · '+(q.part<5?'Listening Material':'Reading Material')+'</span><span>'+qs.length+' related questions</span></div><div class="panel-body">';if(g.image&&safeMedia(g.image))out+='<div class="scored-graphic" '+(currentFormalStage(g,s)?'hidden':'')+'><img class="scene-img" src="'+esc(g.image)+'" alt="'+esc(displayEnglish(g.imageAlt,'Shared question-group illustration'))+'"><p class="image-caption">'+esc(displayEnglish(g.imageCaption,q.part===1?'Answer based on what you can see in the picture':'Shared illustration or chart'))+'</p>'+scopedChartZoom(g)+'</div>';out+=q.part<5?formalStageCard(g,s)+audioCard(g)+'<p class="hint">Transcripts, Traditional Chinese translations, and accent labels are available on the answer explanation page after submission.</p>':'<h2 class="passage-title">'+esc(displayEnglish(g.title,'Reading passage'))+'</h2><div class="passage-text">'+esc(g.passage)+'</div>';out+='</div></section>'}
 out+='<div class="group-questions" '+(currentFormalStage(g,s)?'hidden':'')+'>'+qs.map(x=>questionCard(x,s)).join('')+'<div class="quiz-footer">'+(!locked?btn(icon('back')+' Previous Group','prev-question','',s.index===0||(formal(s)&&sessionQuestion(s.questionIds[s.index-1],s)?.part<5)?'disabled':''):'<span class="hint">Listening plays in order. You cannot return to an earlier group.</span>')+'<div class="btn-row">'+btn(last===s.questionIds.length-1?'Submit & Score':locked?'Next Group (after playback)':'Next Group '+icon('arrow'),last===s.questionIds.length-1?'finish-session':'next-question','primary',locked&&(!ready||formalRunning)?'disabled':'')+(!locked&&last<s.questionIds.length-1?btn('Submit & Score','finish-session','small'):'')+'</div></div><p class="hint">This group: '+qs.length+' questions · Answered so far: '+answered+' / '+s.questionIds.length+' questions</p></div></div>';return out}
 
+function formalAudioLabel(u,running){
+ return running&&!formalPaused?'Pause Listening':u?'Resume Listening':'Start Formal Listening';
+}
+function formalAudioStatus(g,u,running){
+ if(u?.status==='ended')return 'This group is complete';
+ if(running&&!formalPaused)return 'Playing';
+ if(u)return 'Listening paused. Select Resume Listening to continue.';
+ return groupFrames(g).length?'Start listening; subsequent groups play automatically':'This pack has no formal-listening plan. Use Practice mode instead.';
+}
 function audioCard(g){if(listening()&&route==='quiz'){const u=state.active.audioUsed?.[g.id],available=groupFrames(g).length>0;
- const running=formalRunning&&currentAudioGroup===g.id,complete=u?.status==='ended',label=u?'Resume Listening':'Start Formal Listening';
- return '<div class="audio-card formal-audio"><button class="audio-play" data-action="play-audio" data-group="'+g.id+'" aria-label="'+label+'" '+(running||complete||!available?'disabled':'')+'>'+icon('play')+'</button><strong>'+(complete?'This group is complete':running?'Playing':u?'Listening paused. Select Resume Listening to continue.':available?'Start listening; subsequent groups play automatically':'This pack has no formal-listening plan. Use Practice mode instead.')+'</strong><p class="hint">Switching tabs pauses listening and its timer. Return to continue from where you stopped. Completed audio cannot be replayed.</p><span id="audio-time">0:00 / '+time(groupSeconds(g))+'</span></div>'}const has=!!g.audio;return '<div class="audio-card"><div class="audio-head"><button class="audio-play" data-action="play-audio" data-group="'+g.id+'" aria-label="Play Listening Audio" '+(!has?'disabled':'')+'>'+icon('play')+'</button><div><div class="audio-title">'+(has?'Play This Audio':'No audio is available for this group')+'</div><div class="audio-sub">'+(has?(Array.isArray(g.audioSpeakers)&&g.audioSpeakers.length?'Offline neural speech · Listen before choosing your answer':'Offline audio · Listen before choosing your answer'):'Add the audio files to the test-pack folder')+'</div></div></div><input class="audio-slider" id="audio-seek" type="range" min="0" max="1000" value="0" aria-label="Audio playback position"><div class="audio-meta"><span id="audio-time">0:00 / '+time(mediaDuration(g))+'</span><select class="audio-speed" id="audio-speed" aria-label="Playback speed">'+[.75,1,1.25].map(x=>'<option value="'+x+'" '+(player.playbackRate===x?'selected':'')+'>'+x+'×</option>').join('')+'</select></div></div>'}
+ const running=formalRunning&&currentAudioGroup===g.id,complete=u?.status==='ended',label=formalAudioLabel(u,running);
+ return '<div class="audio-card formal-audio"><button class="audio-play" data-action="play-audio" data-group="'+g.id+'" aria-label="'+label+'" '+(complete||!available?'disabled':'')+'>'+icon(running&&!formalPaused?'pause':'play')+'</button><strong id="formal-audio-status">'+formalAudioStatus(g,u,running)+'</strong><p class="hint">Switching tabs pauses the countdown, not the audio. Use Pause Listening to stop the audio temporarily. Completed audio cannot be replayed.</p><span id="audio-time">0:00 / '+time(groupSeconds(g))+'</span></div>'}const has=!!g.audio;return '<div class="audio-card"><div class="audio-head"><button class="audio-play" data-action="play-audio" data-group="'+g.id+'" aria-label="Play Listening Audio" '+(!has?'disabled':'')+'>'+icon('play')+'</button><div><div class="audio-title">'+(has?'Play This Audio':'No audio is available for this group')+'</div><div class="audio-sub">'+(has?(Array.isArray(g.audioSpeakers)&&g.audioSpeakers.length?'Offline neural speech · Listen before choosing your answer':'Offline audio · Listen before choosing your answer'):'Add the audio files to the test-pack folder')+'</div></div></div><input class="audio-slider" id="audio-seek" type="range" min="0" max="1000" value="0" aria-label="Audio playback position"><div class="audio-meta"><span id="audio-time">0:00 / '+time(mediaDuration(g))+'</span><select class="audio-speed" id="audio-speed" aria-label="Playback speed">'+[.75,1,1.25].map(x=>'<option value="'+x+'" '+(player.playbackRate===x?'selected':'')+'>'+x+'×</option>').join('')+'</select></div></div>'}
 function explanation(q,selected){const correct=selected===q.answer;return '<div class="feedback '+(correct?'':'wrong')+'"><h3>'+icon(correct?'check':'info')+' '+(correct?'Correct. Keep going.':'Take another look at the key details.')+' Correct answer '+esc(q.answer)+'</h3><p>'+esc(q.explanationZh)+'</p></div>'+(q.evidence?'<div class="evidence">'+esc(q.evidence)+'</div>':'')+'<div class="rationales"><h4>Why is each option right or wrong?</h4>'+q.options.map(o=>'<div class="rationale"><b>'+o.id+'</b><div>'+esc(o.whyZh)+'</div></div>').join('')+'</div>'+((q.vocabulary||[]).length?'<div class="vocabulary"><h4>'+icon('leaf')+' Vocabulary to take with you</h4>'+q.vocabulary.map(v=>'<div class="word"><strong>'+esc(v.term)+'</strong><div>'+esc(v.zh)+'<small>'+esc(v.note||'')+'</small></div></div>').join('')+'</div>':'')}
 function audioAccentNote(g){const labels=ACCENTS;const tags=[...new Set((Array.isArray(g.audioSpeakers)?g.audioSpeakers:[]).map(s=>s?.locale).filter(v=>Object.hasOwn(labels,v)))];return tags.length?'<p class="hint">Accents in this group: '+tags.map(t=>labels[t]).join(', ')+'</p>':''}
 
-function syncAudioUI(){if(route!=='quiz'&&route!=='answer-review')return;const q=route==='answer-review'?Q.get(reviewDetail?.questionId):questionByActive(),g=q&&quizGroup(q.groupId),button=document.querySelector('.audio-play'),seek=document.getElementById('audio-seek'),label=document.getElementById('audio-time');if(!g)return;if(listening()&&route==='quiz'){syncFormalStage(g);const u=state.active.audioUsed?.[g.id];if(button)button.disabled=formalRunning||u?.status==='ended'||!groupFrames(g).length;if(label)label.textContent=time(formalRunning?formalElapsed:savedGroupElapsed(g,u))+' / '+time(groupSeconds(g));const next=document.querySelector('[data-action="next-question"]');if(next)next.disabled=!groupReady(g)||formalRunning;return}const active=currentAudioGroup===g.id;if(button){button.innerHTML=icon(active&&(!player.paused||practicePosition)?'pause':'play');button.setAttribute('aria-label',active&&(!player.paused||practicePosition)?'Pause Listening Audio':'Play Listening Audio')}if(seek)seek.value=active&&Number.isFinite(player.duration)&&player.duration?Math.round(Math.max(0,player.currentTime-mediaStart(g))/(Number.isFinite(g.audioEnd)?mediaDuration(g):player.duration)*1000):0;if(label)label.textContent=time(active?Math.max(0,player.currentTime-mediaStart(g)):0)+' / '+time(Number.isFinite(g.audioEnd)?mediaDuration(g):active&&Number.isFinite(player.duration)?player.duration:mediaDuration(g))}
+function syncAudioUI(){if(route!=='quiz'&&route!=='answer-review')return;const q=route==='answer-review'?Q.get(reviewDetail?.questionId):questionByActive(),g=q&&quizGroup(q.groupId),button=document.querySelector('.audio-play'),seek=document.getElementById('audio-seek'),label=document.getElementById('audio-time');if(!g)return;if(listening()&&route==='quiz'){syncFormalStage(g);const u=state.active.audioUsed?.[g.id];const running=formalRunning&&currentAudioGroup===g.id,status=document.getElementById('formal-audio-status');if(button){
+ button.disabled=u?.status==='ended'||!groupFrames(g).length;
+ const newLabel=formalAudioLabel(u,running);
+ if(button.getAttribute('aria-label')!==newLabel){button.setAttribute('aria-label',newLabel);button.innerHTML=icon(running&&!formalPaused?'pause':'play')}
+ }if(status)status.textContent=formalAudioStatus(g,u,running);if(label)label.textContent=time(formalRunning?formalElapsed:savedGroupElapsed(g,u))+' / '+time(groupSeconds(g));const next=document.querySelector('[data-action="next-question"]');if(next)next.disabled=!groupReady(g)||formalRunning;return}const active=currentAudioGroup===g.id;if(button){button.innerHTML=icon(active&&(!player.paused||practicePosition)?'pause':'play');button.setAttribute('aria-label',active&&(!player.paused||practicePosition)?'Pause Listening Audio':'Play Listening Audio')}if(seek)seek.value=active&&Number.isFinite(player.duration)&&player.duration?Math.round(Math.max(0,player.currentTime-mediaStart(g))/(Number.isFinite(g.audioEnd)?mediaDuration(g):player.duration)*1000):0;if(label)label.textContent=time(active?Math.max(0,player.currentTime-mediaStart(g)):0)+' / '+time(Number.isFinite(g.audioEnd)?mediaDuration(g):active&&Number.isFinite(player.duration)?player.duration:mediaDuration(g))}
+// Pausing within a live group keeps its source, cursor, and single-play journal.
+function bindFormalMedia(token,finish){
+ let playEpoch=0;
+ const controls={
+  pause(){playEpoch++;player.pause()},
+  play(){
+   const epoch=++playEpoch;
+   const failed=e=>{if(formalMedia===controls&&token===audioRun&&!formalPaused&&epoch===playEpoch)finish(e)};
+   player.playbackRate=1;
+   try{Promise.resolve(player.play()).catch(failed)}catch(e){failed(e)}
+  },
+  clear(){if(formalMedia===controls)formalMedia=null;playEpoch++}
+ };
+ formalMedia=controls;
+ return controls;
+}
+function mediaPaused(token){
+ if(token!==audioRun||!player.paused||player.ended||formalPaused)return;
+ // OS or browser media interruptions are not resumed by visibility events.
+ formalPaused=true;captureFormal?.();syncAudioUI();
+}
+function toggleFormalAudio(g){
+ if(!g||groupReady(g))return;
+ if(!formalRunning||currentAudioGroup!==g.id){void runFormalGroup(g);return}
+ captureFormal?.();
+ formalPaused=!formalPaused;
+ if(formalPaused){formalMedia?.pause();void persist()}
+ else formalMedia?.play();
+ syncAudioUI();
+}
 function audioFrame(f,token,offset,progress){
  return new Promise((resolve,reject)=>{
   const start=Number(f.start)||0,end=Number(f.end)||start+Number(f.duration),position=start+offset;
   if(!safeMedia(f.src)||!Number.isFinite(end)||end<=start)return reject(new Error('Invalid formal-audio configuration'));
   if(position>=end-.02)return resolve();
-  let timer,settled=false;
+  let timer,settled=false,controls;
   const finish=(error)=>{
    if(settled)return;
-   settled=true;clearInterval(timer);
+   settled=true;clearInterval(timer);controls?.clear();
    for(const [event,handler] of events)player.removeEventListener(event,handler);
    if(token===audioRun)player.pause();
    error?reject(error):resolve();
@@ -482,28 +568,27 @@ function audioFrame(f,token,offset,progress){
   captureFormal=()=>{if(!player.seeking&&player.currentTime>=position)progress(player.currentTime-start)};
   const ended=()=>player.currentTime>=end-.15?finish():finish(new Error('Audio ended before the planned position'));
   const failed=()=>finish(new Error('Unable to load the audio file'));
-  const paused=()=>{check();if(player.paused&&!player.ended)finish(new Error('Audio was paused'))};
+  const paused=()=>{check();if(!settled)mediaPaused(token)};
   const events=[['error',failed],['ended',ended],['pause',paused],['timeupdate',check]];
   try{
    if(player.getAttribute('src')!==f.src||player.error){player.src=f.src;player.load()}
    player.playbackRate=1;player.currentTime=position;
    for(const [event,handler] of events)player.addEventListener(event,handler);
    timer=setInterval(check,25);
-   player.play().catch(finish);
+   controls=bindFormalMedia(token,finish);
+   if(!formalPaused)controls.play();
   }catch(e){finish(e)}
  });
 }
 // One file includes directions, speech and exact answer silence. The native clock drives
 // chapters/UI/journal; a chapter transition never restarts media or uses currentTime=.
-let continuousVisibility=null;
 function playContinuousGroup(m,token,position,isResume,progress){
  return new Promise((resolve,reject)=>{
   const epsilon=.05;
-  let timer,settled=false,metadata=false,suspended=false,playEpoch=0,handover;
+  let timer,settled=false,metadata=false,controls;
   const finish=error=>{
    if(settled)return;
-   settled=true;playEpoch++;clearInterval(timer);
-   if(continuousVisibility===handover)continuousVisibility=null;
+   settled=true;clearInterval(timer);controls?.clear();
    for(const [event,handler] of events)player.removeEventListener(event,handler);
    error?reject(error):resolve();
   };
@@ -525,30 +610,11 @@ function playContinuousGroup(m,token,position,isResume,progress){
    progress(m.duration);finish();
   };
   const paused=()=>{
-   check();if(token!==audioRun||!player.paused||player.ended||suspended||document.hidden)return;
-   if(player.currentTime<m.duration-epsilon)return finish(new Error('Audio was paused'));
-   // Browser end events can follow pause near the final sample. A genuine pause
-   // without a following ended event must not leave the session stuck.
-   setTimeout(()=>{if(!settled&&token===audioRun&&player.paused&&!player.ended&&!suspended&&!document.hidden)finish(new Error('Audio was paused'))},120);
+   check();
+   if(!settled)mediaPaused(token);
   };
   const failed=()=>finish(new Error('Unable to load the continuous audio file'));
   const events=[['loadedmetadata',loaded],['error',failed],['ended',ended],['pause',paused],['timeupdate',check]];
-  const play=()=>{
-   const turn=++playEpoch;
-   const failedPlay=e=>{if(!settled&&token===audioRun&&turn===playEpoch&&!suspended&&!document.hidden)finish(e)};
-   try{Promise.resolve(player.play()).catch(failedPlay)}catch(e){failedPlay(e)}
-  };
-  handover={
-   token,
-   suspend(){
-    if(settled||token!==audioRun||suspended)return;
-    suspended=true;playEpoch++;check();player.pause();
-   },
-   resume(){
-    if(settled||token!==audioRun||!suspended||document.hidden)return;
-    suspended=false;player.playbackRate=1;play();
-   }
-  };
   try{
    for(const [event,handler] of events)player.addEventListener(event,handler);
    player.src=m.src;player.load();player.playbackRate=1;
@@ -557,15 +623,15 @@ function playContinuousGroup(m,token,position,isResume,progress){
    // Some in-memory/cached element implementations already know metadata.
    if(player.readyState>=1)loaded();
    if(settled)return;
-   captureFormal=check;continuousVisibility=handover;
+   captureFormal=check;controls=bindFormalMedia(token,finish);
    timer=setInterval(check,25);
-   if(document.hidden)handover.suspend();else play();
+   if(!formalPaused)controls.play();
   }catch(e){finish(e)}
  });
 }
 async function runFormalGroup(g){
  const s=state.active;
- if(!g||!listening(s)||route!=='quiz'||document.hidden||formalRunning||questionByActive()?.groupId!==g.id)return;
+ if(!g||!listening(s)||route!=='quiz'||formalRunning||questionByActive()?.groupId!==g.id)return;
  const frames=groupFrames(g),prior=s.audioUsed?.[g.id],continuous=continuousGroupAudio(g,s);
  if((continuous||frames.some(f=>opusRequired(f.src)))&&!opusPlayable()){notify(opusUnavailable);return;}
  if(prior?.status==='ended'||!frames.length)return;
@@ -575,7 +641,7 @@ async function runFormalGroup(g){
  const u=s.audioUsed[g.id]={status:'started',unlockAt:0,frame,offset};
  currentAudioGroup=g.id;formalRunning=true;formalRole=frames[frame]?.role||'';formalElapsed=elapsed+offset;
  if(!s.listeningStartedAt)s.listeningStartedAt=now();
- void persist();render();
+ syncListeningCountdown(s);void persist();render();
  try{
   if(continuous){
    const starts=[0];for(const f of frames)starts.push(starts[starts.length-1]+f.duration);
@@ -605,8 +671,11 @@ async function runFormalGroup(g){
     if(now()-savedAt>=2000){savedAt=now();void persist()}
    };
    if(f.kind==='silence'){
-    const began=performance.now();
-    captureFormal=()=>progress(from+(performance.now()-began)/1000);
+    let tick=performance.now();
+    captureFormal=()=>{
+     const next=performance.now(),dt=next-tick;tick=next;
+     if(!formalPaused)progress(u.offset+dt/1000);
+    };
     await new Promise(resolve=>{const t=setInterval(()=>{
      if(token===audioRun)captureFormal?.();
      if(token!==audioRun||u.offset>=duration){clearInterval(t);resolve()}
@@ -622,15 +691,11 @@ async function runFormalGroup(g){
   if(route==='quiz'&&state.active===s&&token===audioRun){
    await moveGroup(1,true);
    const next=sessionGroup(questionByActive()?.groupId,s);
-   if(listening(s)&&route==='quiz'&&next){
-    if(document.hidden)visibilityResume={sessionId:s.id,groupId:next.id};
-    else void runFormalGroup(next);
-   }
+   if(listening(s)&&route==='quiz'&&next)void runFormalGroup(next);
   }
  }catch(e){
   if(token!==audioRun)return;
   stopAudio();
-  if(document.hidden)visibilityResume={sessionId:s.id,groupId:g.id};
   void persist();render();
   if(!document.hidden)notify('Listening paused. Select Resume Listening to try again.');
  }
@@ -720,7 +785,7 @@ function playStandalonePractice(g){
 }
 async function playAudio(groupId){
  const g=quizGroup(groupId);
- if(listening()&&route==='quiz'){void runFormalGroup(g);return}
+ if(listening()&&route==='quiz'){toggleFormalAudio(g);return}
  if(!g?.audio){notify('No audio is available for this question.');return}
  if(opusRequired(g.audio)&&!opusPlayable()){notify(opusUnavailable);return}
  if(practicePosition){cancelPracticePosition();syncAudioUI();return}
@@ -853,7 +918,7 @@ async function exportBackup(){
 }
 async function importBackup(file){if(file.size>30*1024*1024)throw new Error('This backup exceeds the supported size limit of 30 MB, Keep the original file and split it into smaller batches.');const obj=JSON.parse(await file.text());if(obj.format!=='shift-learning-backup'||obj.version!==1)throw new Error('This is not a SHIFT learning-record backup.');const next=normalizeState(obj.state);const omitted=(obj.state.importedPacks||[]).filter(p=>officialEntry(p?.testId)).length;confirmBox('Restore these learning records?','The backup contains '+next.attempts.length+' answer records and'+Object.keys(next.notes).length+' notes. Restoring replaces current records. Export your current backup first.'+(omitted?' Custom definitions with official test IDs will not be installed. Your saved scores and answers are kept.':''),async()=>{if(next.importedPacks.length)await loadAllOfficial();resumeEnv=null;state=next;clearNoteDraft();await installPackIndexes();lastResult=null;stopAudio();await persist();route='home';render();notify(omitted||unavailableCustom.size?'Learning records restored. Conflicting custom packs were not loaded.':'Learning records restored.')},'Confirm Restore')}
 async function importPack(file){if(file.size>20*1024*1024)throw new Error('Each additional pack must be smaller than 20 MB, Use one file per test.');const p=validatePack(JSON.parse(await file.text()));if(officialEntry(p.testId))throw new Error('Imported packs cannot overwrite built-in packs. Use a new testId.');await loadAllOfficial();const old=state.importedPacks.find(x=>x.testId===p.testId);const oldQIds=new Set((old?.questions||[]).map(q=>q.id));for(const q of p.questions)if(Q.has(q.id)&&!oldQIds.has(q.id))throw new Error('Question ID already exists:'+q.id);const oldGIds=new Set((old?.groups||[]).map(g=>g.id));for(const g of p.groups)if(G.has(g.id)&&!oldGIds.has(g.id))throw new Error('Groups ID already exists:'+g.id);const commit=async()=>{registerPack(p);unavailableCustom.delete(p.testId);state.importedPacks=state.importedPacks.filter(x=>x.testId!==p.testId);state.importedPacks.push(p);await persist();render();notify('Imported '+p.questions.length+' questions.')};if(old)confirmBox('Update this test pack?','The new file will replace '+p.testId+'.Existing answers and notes are kept. Question ID values must remain unchanged.',commit,'Update Pack');else await commit()}
-async function resume(){const s=state.active;if(!s){notify('There is no unfinished practice session.');return}if(s.reservedPackConflict)throw new Error('This saved session used a custom pack with an official test ID. Your saved answers are kept, but its original pack is not available to resume.');for(const id of s.testIds||[])await loadTest(id);await prepareResume(s);if(restoreListeningTabPoint(s))await persist();route='quiz';mobileNav=false;render();if(s.mode==='exam'&&!listening(s)&&(formal(s)?s.sectionDeadline:s.deadline)<=now())await finishSession(true)}
+async function resume(){const s=state.active;if(!s){notify('There is no unfinished practice session.');return}if(s.reservedPackConflict)throw new Error('This saved session used a custom pack with an official test ID. Your saved answers are kept, but its original pack is not available to resume.');for(const id of s.testIds||[])await loadTest(id);await prepareResume(s);if(restoreListeningTabPoint(s))await persist();route='quiz';mobileNav=false;syncListeningCountdown(s);if(beginReadingClock(s))await persist();render();if(s.mode==='exam'&&!listening(s)&&!s.readingStartsOnReturn&&(formal(s)?s.sectionDeadline:s.deadline)<=now())await finishSession(true)}
 async function beginReview(kind){
 await loadAll();let ids;
 if(kind==='result'){const r=lastResult||state.sessions.at(-1);if(!r){notify('There is no completed session available for review.');return}const outcomes=sessionOutcomes(r);ids=r.questionIds.filter(id=>outcomes.get(id)===false)}
@@ -864,7 +929,7 @@ const qs=ids.map(id=>Q.get(id)).filter(Boolean);
 if(!qs.length){notify(kind==='result'?'There are no available incorrect questions to review in this session.':'No questions match these filters. Try changing your selection.');return}
 await startSession(groupedSelection(qs,40),kind==='result'?'Review This Session':route==='favorites'?'Saved Question Practice':'Review Mistakes');
 }
-async function action(name,el){if(diagnostic&&!['play-audio','question-grid','jump','close-modal','prev-question','next-question','answer','copy-question-uuid'].includes(name))return;if(name==='copy-question-uuid')return copyQuestionUuid(el);if(name.startsWith('nav-'))return navigate(name.slice(4));if(name==='menu'){mobileNav=true;render();return}if(name==='menu-close'){mobileNav=false;render();return}if(name==='close-modal'){closeModal();return}if(name==='quick-reading')return startFiltered({section:'reading',part:'all',topic:'all',difficulty:'all',count:20,unseen:false,accent:'all'});if(name==='quick-listening')return startFiltered({section:'listening',part:'all',topic:'all',difficulty:'all',count:20,unseen:false,accent:'all'});if(name==='topic'){filters.topic=el.dataset.topic;filters.section='all';filters.part='all';return navigate('practice')}if(name==='start-filtered')return startFiltered();if(name==='resume')return resume();if(name==='test-pick'){const id=el.dataset.test;modal('<h2>Choose a practice mode</h2><p>Section practice is graded after submission, not while answering. You can leave and resume later.</p><div class="btn-row">'+btn('Reading 100 questions','test-reading','primary','data-test="'+id+'"')+btn('Listening 100 questions','test-listening','primary','data-test="'+id+'"')+btn('Cancel','close-modal')+'</div>');return}if(['test-reading','test-listening','test-exam'].includes(name)){const id=el.dataset.test;closeModal();await loadTest(id);const qs=allQuestions().filter(q=>q.testId===id&&(name==='test-reading'?q.part>4:name==='test-listening'?q.part<5:true)).sort((a,b)=>a.number-b.number);const t=allTests().find(t=>t.id===id);const title=t.title+(name==='test-reading'?' · Reading':name==='test-listening'?' · Listening':' · Full Test');if(name==='test-exam'){const pack=state.importedPacks.find(p=>p.testId===id)||(window.SHIFT_PACKS||[]).find(p=>p.testId===id);if(!pack?.listeningPlan?.frames?.length){notify('This pack has no formal-listening plan. Choose Section Practice.');return}confirmBox('Start a Formal Test','The listening sequence lasts about 45 minutes. The first playback opens with the listening directions and an unscored example. Audio plays once, in order, without skipping or replay. Switching tabs pauses listening and its timer; return to continue or select Resume Listening if needed. Each group advances automatically after playback and answer time. Reading lasts 75 minutes, with free navigation among reading groups. This is an independently created practice test, not an ETS official test.',()=>startSession(qs,title,'exam'),'Start Test')}else return startSession(qs,title);return}if(name==='answer'){const s=state.active,q=sessionQuestion(el.dataset.question,s)||questionByActive();if(!q||!s||!groupQuestions().some(x=>x.id===q.id)||!q.options.some(o=>o.id===el.dataset.option))return;s.answers[q.id]=el.dataset.option;await persist();render();return}if(name==='submit-answer')return submitAnswer();if(name==='next-question'){return moveGroup(1)}if(name==='prev-question'){return moveGroup(-1)}if(name==='finish-session')return finishSession();if(name==='question-grid'){questionGrid();return}if(name==='jump'){const s=state.active;if(s){const index=Number(el.dataset.index);if(listening(s)||(formal(s)&&sessionQuestion(s.questionIds[index],s)?.part<5))return;closeModal();stopAudio();s.index=index;s.index=s.questionIds.indexOf(groupQuestions()[0].id);persist();render();window.scrollTo(0,0)}return}if(name==='finish-from-modal'){closeModal();return finishSession()}if(name==='star'){const id=el.dataset.id;state.stars[id]=!state.stars[id];await persist();render();notify(state.stars[id]?'Question saved.':'Question removed from saved items.');return}if(name==='toggle-translation'){state.settings.translation=!state.settings.translation;await persist();render();return}if(name==='transcript'){const q=questionByActive(),revealed=state.active?.mode==='practice'&&!!state.active?.submitted?.[q?.id];activeTranscript=!(activeTranscript===null?revealed:activeTranscript);render();return}if(name==='play-audio')return playAudio(el.dataset.group);if(name==='view-explanation'){
+async function action(name,el){if(diagnostic&&!['play-audio','question-grid','jump','close-modal','prev-question','next-question','answer','copy-question-uuid'].includes(name))return;if(name==='copy-question-uuid')return copyQuestionUuid(el);if(name.startsWith('nav-'))return navigate(name.slice(4));if(name==='menu'){mobileNav=true;render();return}if(name==='menu-close'){mobileNav=false;render();return}if(name==='close-modal'){closeModal();return}if(name==='quick-reading')return startFiltered({section:'reading',part:'all',topic:'all',difficulty:'all',count:20,unseen:false,accent:'all'});if(name==='quick-listening')return startFiltered({section:'listening',part:'all',topic:'all',difficulty:'all',count:20,unseen:false,accent:'all'});if(name==='topic'){filters.topic=el.dataset.topic;filters.section='all';filters.part='all';return navigate('practice')}if(name==='start-filtered')return startFiltered();if(name==='resume')return resume();if(name==='test-pick'){const id=el.dataset.test;modal('<h2>Choose a practice mode</h2><p>Section practice is graded after submission, not while answering. You can leave and resume later.</p><div class="btn-row">'+btn('Reading 100 questions','test-reading','primary','data-test="'+id+'"')+btn('Listening 100 questions','test-listening','primary','data-test="'+id+'"')+btn('Cancel','close-modal')+'</div>');return}if(['test-reading','test-listening','test-exam'].includes(name)){const id=el.dataset.test;closeModal();await loadTest(id);const qs=allQuestions().filter(q=>q.testId===id&&(name==='test-reading'?q.part>4:name==='test-listening'?q.part<5:true)).sort((a,b)=>a.number-b.number);const t=allTests().find(t=>t.id===id);const title=t.title+(name==='test-reading'?' · Reading':name==='test-listening'?' · Listening':' · Full Test');if(name==='test-exam'){const pack=state.importedPacks.find(p=>p.testId===id)||(window.SHIFT_PACKS||[]).find(p=>p.testId===id);if(!pack?.listeningPlan?.frames?.length){notify('This pack has no formal-listening plan. Choose Section Practice.');return}confirmBox('Start a Formal Test','The listening sequence lasts about 45 minutes. The first playback opens with the listening directions and an unscored example. Audio plays once, in order, without skipping or replay. Switching tabs pauses the countdown, not the audio. Use Pause Listening and Resume Listening to control audio without replay. Each group advances automatically after playback and answer time. Reading lasts 75 minutes, with free navigation among reading groups. This is an independently created practice test, not an ETS official test.',()=>startSession(qs,title,'exam'),'Start Test')}else return startSession(qs,title);return}if(name==='answer'){const s=state.active,q=sessionQuestion(el.dataset.question,s)||questionByActive();if(!q||!s||!groupQuestions().some(x=>x.id===q.id)||!q.options.some(o=>o.id===el.dataset.option))return;s.answers[q.id]=el.dataset.option;await persist();render();return}if(name==='submit-answer')return submitAnswer();if(name==='next-question'){return moveGroup(1)}if(name==='prev-question'){return moveGroup(-1)}if(name==='finish-session')return finishSession();if(name==='question-grid'){questionGrid();return}if(name==='jump'){const s=state.active;if(s){const index=Number(el.dataset.index);if(listening(s)||(formal(s)&&sessionQuestion(s.questionIds[index],s)?.part<5))return;closeModal();stopAudio();s.index=index;s.index=s.questionIds.indexOf(groupQuestions()[0].id);persist();render();window.scrollTo(0,0)}return}if(name==='finish-from-modal'){closeModal();return finishSession()}if(name==='star'){const id=el.dataset.id;state.stars[id]=!state.stars[id];await persist();render();notify(state.stars[id]?'Question saved.':'Question removed from saved items.');return}if(name==='toggle-translation'){state.settings.translation=!state.settings.translation;await persist();render();return}if(name==='transcript'){const q=questionByActive(),revealed=state.active?.mode==='practice'&&!!state.active?.submitted?.[q?.id];activeTranscript=!(activeTranscript===null?revealed:activeTranscript);render();return}if(name==='play-audio')return playAudio(el.dataset.group);if(name==='view-explanation'){
  clearTimeout(searchTimeout);
  await loadAll();
  const detail=explanationQueue(el.dataset.id,el.dataset.session);
@@ -885,21 +950,13 @@ document.addEventListener('keydown',e=>{if(route!=='quiz'||document.getElementBy
 setInterval(checkPracticeRange,15);
 for(const e of ['timeupdate','seeked','playing'])player.addEventListener(e,checkPracticeRange);
 document.addEventListener('visibilitychange',()=>{
- if(document.hidden){
-  if(!formalRunning){
-   if(route==='answer-review'||route==='quiz'&&!listening()){cancelPracticePosition();player.pause();syncAudioUI()}
-   return
-  }
-  saveListeningTabPoint();
-  if(continuousVisibility?.token===audioRun){continuousVisibility.suspend();syncAudioUI();return;}
-  visibilityResume={sessionId:state.active?.id,groupId:currentAudioGroup};
-  stopAudio();
-  if(route==='quiz')render();
+ const s=state.active;
+ if(formal(s)&&route==='quiz'){
+  if(listening(s)){syncListeningCountdown(s);void persist();updateExamClock();}
+  else if(beginReadingClock(s)){void persist();updateExamClock();}
   return;
  }
- if(continuousVisibility?.token===audioRun){continuousVisibility.resume();return;}
- const pending=visibilityResume;visibilityResume=null;
- if(pending&&pending.sessionId===state.active?.id&&pending.groupId===questionByActive()?.groupId&&route==='quiz')void runFormalGroup(sessionGroup(pending.groupId));
+ if(document.hidden&&(route==='answer-review'||route==='quiz'&&!listening())){cancelPracticePosition();player.pause();syncAudioUI()}
 });
 for(const ev of ['timeupdate','loadedmetadata','play','pause','ended'])player.addEventListener(ev,syncAudioUI);
 player.addEventListener('ratechange',()=>{
@@ -909,8 +966,9 @@ player.addEventListener('error',()=>{if(currentAudioGroup)notify('Audio file loa
 setInterval(()=>{
  const s=state.active;if(!s||s.mode!=='exam')return;
  if(listening(s)&&!s.listeningStartedAt){syncAudioUI();return}
- const left=examSeconds(s),el=document.getElementById('timer');
- if(el){el.innerHTML=icon('clock')+' '+time(left);el.classList.toggle('urgent',left<300)}
+ const left=examSeconds(s);
+ updateExamClock(left);
+ if(listening(s)&&route==='quiz'&&!document.hidden&&performance.now()-countdownFor(s).lastSave>=2000)void persist();
  syncAudioUI();
  if(left<=0&&!busy&&!listening(s))withBusy(async()=>{await loadAll();await finishSession(true)});
 },1000);
