@@ -7,6 +7,10 @@ const str = x => typeof x === 'string';
 const validTime = x => str(x) && ISO.test(x) && Number.isFinite(Date.parse(x));
 const statuses = new Set(['inserted', 'already_exists', 'conflict']);
 const token = x => str(x) && x.length > 0 && x.length <= 16000 && /^[\x21-\x7e]+$/.test(x);
+function passwordOf(x) {
+  if (!str(x) || x.length < 1 || x.length > 1024) fail('invalid_password');
+  return x;
+}
 function emailOf(x) {
   if (!str(x) || x.trim().length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(x.trim())) fail('invalid_email');
   return x.trim().toLowerCase();
@@ -63,15 +67,15 @@ export async function combineCompletedSessionId(namespace, sourceId) {
   return [h.slice(0, 8), h.slice(8, 12), h.slice(12, 16), h.slice(16, 20), h.slice(20)].join('-');
 }
 export function createShiftSync({url, publishableKey, fetchImpl = globalThis.fetch, allowLocal = false,
-                                 allowSignup = true, now = Date.now} = {}) {
+                                 now = Date.now} = {}) {
   const origin = originOf(url, allowLocal), apikey = publicKey(publishableKey);
   if (typeof fetchImpl !== 'function' || typeof now !== 'function') fail('invalid_config');
   const cursorScopes = new WeakMap();
-  let generation = 0, authEpoch = 0, current = null, scope = null, pending = null, refreshing = null;
+  let generation = 0, authEpoch = 0, current = null, scope = null, refreshing = null;
   function clear() {
     generation++;
     authEpoch++;
-    current = scope = pending = refreshing = null;
+    current = scope = refreshing = null;
   }
   function requireScope(expected) {
     if (!scope || expected !== scope) fail('stale_scope');
@@ -113,7 +117,8 @@ export function createShiftSync({url, publishableKey, fetchImpl = globalThis.fet
       // No wire/body/identifier/token escapes; never parse an external error into UI.
       if (res.status === 429) fail('rate_limited');
       if (res.status >= 500) fail('service_unavailable');
-      if (context === 'verify' && [400,401,403,422].includes(res.status)) fail('invalid_code');
+      if (context === 'password_login' && [400,401,403,422].includes(res.status)) fail('invalid_credentials');
+      if (context === 'password_change' && [400,403,422].includes(res.status)) fail('password_change_failed');
       if (context === 'refresh' && [400,401,403,422].includes(res.status)) fail('auth_required');
       if (res.status === 401) fail('auth_required');
       if (res.status === 403) fail('forbidden');
@@ -122,31 +127,27 @@ export function createShiftSync({url, publishableKey, fetchImpl = globalThis.fet
     if (empty) return null;
     try { return await res.json(); } catch { fail('invalid_response'); }
   }
-  async function signInWithOtp(email) {
+  async function signInWithPassword(email, password) {
     email = emailOf(email);
+    password = passwordOf(password);
     if (scope) fail('already_signed_in');
     const ticket = ++authEpoch;
-    pending = null;
     try {
-      await request('/auth/v1/otp', {method:'POST',body:{email,create_user:allowSignup === true,data:{}},empty:true});
-      checkEpoch(ticket);
-      pending = email;
-    } catch (e) { checkEpoch(ticket); throw e; }
-  }
-  async function verifyOtp(email, code) {
-    email = emailOf(email);
-    if (!str(code) || !/^\d{6}$/.test(code)) fail('invalid_code');
-    if (scope) fail('already_signed_in');
-    if (pending !== email) fail('otp_not_requested');
-    const ticket = ++authEpoch;
-    pending = null;
-    try {
-      const data = await request('/auth/v1/verify',{method:'POST',body:{email,token:code,type:'email'},context:'verify'});
+      const data = await request('/auth/v1/token?grant_type=password', {
+        method:'POST',body:{email,password},context:'password_login'});
       checkEpoch(ticket);
       const s = authResponse(data);
       generation++;
       return install(s);
-    } catch (e) { checkEpoch(ticket); pending = email; throw e; }
+    } catch (e) { checkEpoch(ticket); throw e; }
+  }
+  async function changePassword(currentPassword, newPassword, expected) {
+    const s = requireScope(expected);
+    const body = {current_password:passwordOf(currentPassword),password:passwordOf(newPassword)};
+    const user = await authenticated('/auth/v1/user',{method:'PUT',body,context:'password_change'},expected);
+    requireScope(expected);
+    if (!obj(user) || uuid(user.id,'invalid_response') !== s.userId) fail('invalid_response');
+    return true;
   }
   async function refresh(expected = scope) {
     const old = requireScope(expected);
@@ -175,7 +176,6 @@ export function createShiftSync({url, publishableKey, fetchImpl = globalThis.fet
         !Number.isSafeInteger(saved.expiresAt) || saved.expiresAt <= 0) fail('invalid_auth_state');
     const userId = uuid(saved.userId, 'invalid_auth_state');
     const ticket = ++authEpoch;
-    pending = null;
     try {
       let s;
       if (saved.expiresAt <= now() / 1000 + 30) {
@@ -262,6 +262,6 @@ export function createShiftSync({url, publishableKey, fetchImpl = globalThis.fet
     if (nextCursor) cursorScopes.set(nextCursor,expected);
     return {rows,nextCursor};
   }
-  return Object.freeze({signInWithOtp,verifyOtp,refresh,logout,getScope:()=>scope,clear,restore,
+  return Object.freeze({signInWithPassword,changePassword,refresh,logout,getScope:()=>scope,clear,restore,
     exportAuthState,saveCompletedSession,listCompletedSessions});
 }

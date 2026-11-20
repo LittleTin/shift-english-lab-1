@@ -15,7 +15,7 @@ from urllib.parse import parse_qs, unquote, urlsplit
 
 KEY = "sb_publishable_shift_fixture_only"
 ACCOUNTS = {f"{name}@shift-fixture.invalid": (f"{digit*8}-{digit*4}-4{digit*3}-8{digit*3}-{digit*12}", pin)
-            for name,digit,pin in [("alex","1","123456"),("blair","2","654321")]}
+            for name,digit,pin in [("alex","1","AlexInitialPass-V1"),("blair","2","BlairInitialPass-V1")]}
 TABLE = "/rest/v1/shift_completed_sessions"
 RPC = "/rest/v1/rpc/shift_save_completed_session"
 AUTH = "/auth/v1/"
@@ -55,7 +55,7 @@ class Fixture:
     def __init__(self, ttl=120, clock=time.time):
         self.ttl,self.clock=ttl,clock
         self.lock=threading.RLock()
-        self.pending={}
+        self.passwords={email: pair[1] for email,pair in ACCOUNTS.items()}
         self.access={}
         self.refresh={}
         self.rows={}
@@ -92,7 +92,7 @@ class Fixture:
             if method!="POST" or headers.get("x-shift-fixture-control")!="1":
                 raise HttpError(404,"not_found")
             dest,status=body.get("path"),body.get("status")
-            if dest not in (TABLE,RPC,AUTH+"otp",AUTH+"verify",AUTH+"token",AUTH+"logout") or status not in (401,429,503):
+            if dest not in (TABLE,RPC,AUTH+"token",AUTH+"user",AUTH+"logout") or status not in (401,429,503):
                 raise HttpError(400,"invalid_fault")
             self.faults[dest]=status   # one-shot, no credential or attempt contents reported
             return 200,{"queued":True}
@@ -101,19 +101,22 @@ class Fixture:
         if path in self.faults:
             raise HttpError(self.faults.pop(path),"injected_fixture_fault")
         bearer=headers.get("authorization","").removeprefix("Bearer ")
-        if method=="POST" and path==AUTH+"otp":
+        if method=="POST" and path==AUTH+"token" and q.get("grant_type")==["password"]:
             email=body.get("email")
-            if email not in ACCOUNTS:
-                raise HttpError(400,"fixture_accounts_only")
-            self.pending[email]=self.clock()+180
-            return 200,{}
-        if method=="POST" and path==AUTH+"verify":
-            email=body.get("email")
-            if (email not in ACCOUNTS or self.pending.get(email,0)<self.clock()
-                    or body.get("type")!="email" or body.get("token")!=ACCOUNTS[email][1]):
-                raise HttpError(403,"otp_expired")
-            del self.pending[email]
+            password=body.get("password")
+            if not isinstance(email,str) or not isinstance(password,str) or self.passwords.get(email)!=password:
+                raise HttpError(400,"invalid_credentials")
             return 200,self.issue(email)
+        if method=="PUT" and path==AUTH+"user":
+            self.owner(bearer)
+            email=self.access[bearer][0]
+            if body.get("current_password")!=self.passwords[email]:
+                raise HttpError(400,"invalid_credentials")
+            fresh=body.get("password")
+            if not isinstance(fresh,str) or len(fresh)<12 or fresh==self.passwords[email]:
+                raise HttpError(422,"weak_password")
+            self.passwords[email]=fresh
+            return 200,dict(id=ACCOUNTS[email][0],email=email,aud="authenticated",role="authenticated")
         if method=="POST" and path==AUTH+"token":
             entry=self.refresh.get(body.get("refresh_token"))
             if not entry or q.get("grant_type")!=["refresh_token"]:
@@ -225,10 +228,10 @@ def handler_for(root,state):
                 if u.scheme or u.netloc or not self.allowed_origin():
                     raise HttpError(403,"private_same_origin_only")
                 if u.path.startswith((AUTH,"/rest/v1/","/__shift_qa/")):
-                    if self.command not in ("GET","POST"):
+                    if self.command not in ("GET","POST","PUT"):
                         raise HttpError(405,"method_not_allowed")
                     q=parse_qs(u.query,keep_blank_values=True,max_num_fields=12)
-                    body=self.body() if self.command=="POST" else {}
+                    body=self.body() if self.command in ("POST","PUT") else {}
                     status,data=state.api(self.command,u.path,q,body,{k.lower():v for k,v in self.headers.items()})
                     return self.json_reply(status,data)
                 if self.command not in ("GET","HEAD"):
@@ -280,7 +283,7 @@ def handler_for(root,state):
             except (BrokenPipeError,ConnectionResetError):
                 pass
 
-        do_GET=do_POST=do_HEAD=do_OPTIONS=do_DELETE=do_PATCH=dispatch
+        do_GET=do_POST=do_PUT=do_HEAD=do_OPTIONS=do_DELETE=do_PATCH=dispatch
     return Handler
 
 def main():

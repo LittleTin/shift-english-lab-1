@@ -5,7 +5,9 @@ const {JSDOM,VirtualConsole}=require('jsdom');
 const {IDBFactory}=require('fake-indexeddb');
 const base=path.resolve(process.env.SHIFT_ROOT||path.join(__dirname,'../..'));
 const host=process.env.SHIFT_QA_ORIGIN||'http://127.0.0.1:18765';
-const A=['alex@shift-fixture.invalid','123456'],B=['blair@shift-fixture.invalid','654321'];
+if(!/^http:\/\/127\.0\.0\.1:\d+$/.test(host))throw Error('Loopback fixture only');
+const A=['alex@shift-fixture.invalid','AlexInitialPass-V1'],B=['blair@shift-fixture.invalid','BlairInitialPass-V1'];
+const NEW='BlairReplacementPass-V2';
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const read=f=>fs.readFileSync(path.resolve(base,f),'utf8');
 const seenErrors=[];
@@ -16,7 +18,15 @@ function make({db=new IDBFactory(),existing=null,configured=true}={}){
  vc.on('error',e=>seenErrors.push(String(e)));
  const dom=new JSDOM(read('index.html'),{url:host,runScripts:'outside-only',virtualConsole:vc});
  const w=dom.window;
- Object.assign(w,{indexedDB:db,fetch:global.fetch.bind(global),scrollTo:()=>{},TextEncoder});
+ const wire=[];
+ const fetchFixture=async(input,opts)=>{
+  const u=new URL(typeof input==='string'?input:input.url,host);
+  assert.equal(u.origin,host,'unexpected external fetch');
+  const r=await global.fetch(u,opts);
+  if(u.pathname.startsWith('/auth/')) wire.push([opts?.method||'GET',u.pathname,u.searchParams.get('grant_type'),r.status]);
+  return r;
+ };
+ Object.assign(w,{indexedDB:db,fetch:fetchFixture,scrollTo:()=>{},TextEncoder});
  const p=w.document.querySelector('audio');p.pause=()=>{};p.load=()=>{};
  const d=w.document.querySelector('dialog');d.showModal=()=>d.setAttribute('open','');d.close=()=>d.removeAttribute('open');
  if(existing)for(const [k,v] of existing)w.sessionStorage.setItem(k,v);
@@ -29,7 +39,7 @@ function make({db=new IDBFactory(),existing=null,configured=true}={}){
  }
  const filename=path.join(base,'assets/app.js');
  new vm.Script(read('assets/app.js'),{filename,importModuleDynamically:vm.constants.USE_MAIN_CONTEXT_DEFAULT_LOADER}).runInContext(dom.getInternalVMContext());
- return {w,db,dom,d:w.document};
+ return {w,db,dom,d:w.document,wire};
 }
 const click=(p,x)=>{const el=p.d.querySelector('[data-action="'+x+'"]:not(:disabled)');assert.ok(el,'Missing action: '+x);el.click()};
 const text=(p,s)=>p.d.querySelector(s)?.textContent?.trim()||'';
@@ -38,12 +48,35 @@ async function wait(f,msg){
  throw Error(msg);
 }
 const data=async p=>{click(p,'nav-data');await wait(()=>p.d.querySelector('#account-sync'),'Missing account settings')};
-async function signIn(p,[email,code]){
- const ef=p.d.querySelector('#shift-sync-email-form');assert.ok(ef);
- ef.querySelector('[name=email]').value=email;ef.dispatchEvent(new p.w.Event('submit',{bubbles:true,cancelable:true}));
- const cf=await wait(()=>p.d.querySelector('#shift-sync-code-form'),'No code form: '+text(p,'#shift-sync-status'));
- cf.querySelector('[name=code]').value=code;cf.dispatchEvent(new p.w.Event('submit',{bubbles:true,cancelable:true}));
+function submit(p,selector,values){
+ const f=p.d.querySelector(selector);assert.ok(f,selector);
+ for(const [name,value] of Object.entries(values)){const el=f.querySelector('[name='+name+']');assert.ok(el,name);el.value=value}
+ f.dispatchEvent(new p.w.Event('submit',{bubbles:true,cancelable:true}));return f;
+}
+async function signIn(p,[email,password]){
+ submit(p,'#shift-sync-login-form',{email,password});
  await wait(()=>p.d.querySelector('[data-action="sync-logout"]'),'Sign-in failed');
+}
+async function rejectedSignIn(p,[email,password]){
+ const index=p.wire.length;
+ submit(p,'#shift-sync-login-form',{email,password});
+ await wait(()=>p.wire.slice(index).some(([m,path,grant,s])=>m==='POST'&&path==='/auth/v1/token'&&grant==='password'&&s===400),'No invalid-login HTTP response');
+ await wait(()=>{const now=text(p,'#shift-sync-status');return now&&!/signing in|loading|checking/i.test(now)},'No invalid-login feedback');
+ assert.ok(p.d.querySelector('#shift-sync-login-form'));
+ assert.equal(p.d.querySelector('[data-action="sync-logout"]'),null);
+}
+async function changeBlairPassword(p){
+ click(p,'sync-change-password');
+ await wait(()=>p.d.querySelector('#shift-sync-password-form'),'missing password form');await sleep(0);
+ const index=p.wire.length;
+ submit(p,'#shift-sync-password-form',{currentPassword:'DefinitelyWrongPass-V0',newPassword:NEW,confirmPassword:NEW});
+ await wait(()=>p.wire.slice(index).some(([m,path,,s])=>m==='PUT'&&path==='/auth/v1/user'&&s===400),'No incorrect-current HTTP response');
+ await sleep(50);
+ assert.ok(p.d.querySelector('#shift-sync-password-form'));
+ const prev=text(p,'#shift-sync-status');const second=p.wire.length;
+ submit(p,'#shift-sync-password-form',{currentPassword:B[1],newPassword:NEW,confirmPassword:NEW});
+ await wait(()=>p.wire.slice(second).some(([m,path,,s])=>m==='PUT'&&path==='/auth/v1/user'&&s===200),'No valid password-change HTTP response');
+ await wait(()=>{const now=text(p,'#shift-sync-status');return (now&&now!==prev&&/chang|updat|success/i.test(now)&&!/changing|updating|could not|unable|incorrect/i.test(now))||!p.d.querySelector('#shift-sync-password-form')},'No password-change completion');
 }
 async function snapshot(p){
  const db=await req(p.db.open('shift-english-lab-v1'));
@@ -73,7 +106,7 @@ function result(s){return [s.sessions.length,s.attempts.length,Object.values(s.s
   await complete(baseline); click(baseline,'nav-data');await wait(()=>baseline.d.querySelector('[data-action="export-backup"]'),'guest settings');
   assert.equal(baseline.d.querySelector('#account-sync'),null);console.log('PASS feature disabled: original guest scoring and Settings remain available');
   await complete(a);let s=await snapshot(a);assert.equal(s.state.sessions.length,1);assert.equal(s.state.sessions[0].correct,0);const guest=result(s.state);
-  await data(a);await signIn(a,A);await wait(()=>text(a,'#shift-sync-status')==='Completed history is synced.','initial empty sync');
+  await data(a);await rejectedSignIn(a,[A[0],'DefinitelyWrongPass-V0']);await signIn(a,A);await wait(()=>text(a,'#shift-sync-status')==='Completed history is synced.','initial empty sync');
   s=await snapshot(a);assert.equal(s.state.sessions.length,1);assert.equal(matches(s,1,1),undefined);
   console.log('PASS first sign-in leaves guest history local');
   click(a,'sync-import-guest');(await wait(()=>a.d.querySelector('dialog[open] #confirm-modal'),'copy confirmation')).click();
@@ -82,17 +115,25 @@ function result(s){return [s.sessions.length,s.attempts.length,Object.values(s.s
   assert.equal(b1.sessions[0].id,a1.sessions[0].id);assert.notEqual(a1.sessions[0].id,s.state.sessions[0].id);
   click(b,'nav-review');await wait(()=>b.d.querySelector('.record-card'),'synced wrong reviews');
   console.log('PASS explicit copy, score and wrong items synchronize to another device cache');
-  await data(b);click(b,'sync-logout');await wait(()=>b.d.querySelector('#shift-sync-email-form'),'logout');
+  await data(b);click(b,'sync-logout');await wait(()=>b.d.querySelector('#shift-sync-login-form'),'logout');
   await signIn(b,B);await wait(()=>text(b,'#shift-sync-status')==='Completed history is synced.','Blair blank sync');
   click(b,'nav-review');await wait(()=>b.d.body.textContent.toLowerCase().includes('review & remember'),'different account review');
   assert.equal(b.d.querySelectorAll('.record-card').length,0);
   console.log('PASS switching accounts hides the first account history');
-  await data(b);click(b,'sync-logout');await wait(()=>b.d.querySelector('#shift-sync-email-form'),'Blair logout');
+  await data(b);await changeBlairPassword(b);
+  if(b.d.querySelector('[data-action="sync-logout"]'))click(b,'sync-logout');
+  await wait(()=>b.d.querySelector('#shift-sync-login-form'),'Blair logout');
+  await rejectedSignIn(b,B);
+  await signIn(b,[B[0],NEW]);
+  await wait(()=>text(b,'#shift-sync-status')==='Completed history is synced.','Clear after password change');
+  click(b,'nav-review');await wait(()=>b.d.body.textContent.toLowerCase().includes('review & remember'),'changed account review');assert.equal(b.d.querySelectorAll('.record-card').length,0);
+  await data(b);click(b,'sync-logout');await wait(()=>b.d.querySelector('#shift-sync-login-form'),'Changed Blair logout');
+  console.log('PASS wrong current password, change, old login rejected, new login works, no other-account history');
   await signIn(b,A);await listWait(b,1,1);
   const existing=Array.from({length:b.w.sessionStorage.length},(_,i)=>b.w.sessionStorage.key(i)).map(k=>[k,b.w.sessionStorage.getItem(k)]);
-  assert.ok(existing.every(([key,value])=>!/auth|token/i.test(key+value)));
+  assert.ok(existing.every(([key,value])=>!/auth|token|InitialPass|ReplacementPass|WrongPass/i.test(key+value)));
   reload=make({db:b.db,existing});await wait(()=>reload.d.querySelector('[data-action="nav-data"]'),'reload boot');
-  await data(reload);assert.ok(reload.d.querySelector('#shift-sync-email-form'));
+  await data(reload);assert.ok(reload.d.querySelector('#shift-sync-login-form'));
   await signIn(reload,A);await listWait(reload,1,1);
   console.log('PASS reload stores no credentials, requires sign-in, then restores account history');
   const fault=await fetch(host+'/__shift_qa/fault',{method:'POST',headers:{'X-Shift-Fixture-Control':'1','Content-Type':'application/json'},body:JSON.stringify({path:'/rest/v1/rpc/shift_save_completed_session',status:503})});

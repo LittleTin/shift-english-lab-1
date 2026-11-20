@@ -7,6 +7,7 @@ const url='https://example123.supabase.co';
 const key='sb_publishable_AbcdEFGHijklmnop';
 const A='00000000-0000-4000-8000-000000000001', B='00000000-0000-4000-8000-000000000002';
 const at='2026-11-20T00:00:00Z', email='example@example.test';
+const pw='  Test only, exact spaces  ';
 const payload={version:1,session:{id:'local'},attempts:[{id:'attempt'}]};
 const row = (id=A, created=at,user_id=A) => ({id,user_id,completed_at:at,created_at:created,payload});
 const auth=(t='1',id=A,exp=1200)=>({access_token:'access'+t,refresh_token:'refresh'+t,expires_at:exp,user:{id}});
@@ -21,9 +22,8 @@ function fixture(opts={}) {
  }})};
 }
 async function login(f) {
- f.replies.push({},auth());
- await f.sync.signInWithOtp(email);
- return await f.sync.verifyOtp(email,'001234');
+ f.replies.push(auth());
+ return await f.sync.signInWithPassword(email,pw);
 }
 const code = c => e => e.code===c && e.message===c && !e.cause;
 test('strict origin and client-only keys', () => {
@@ -35,17 +35,22 @@ test('strict origin and client-only keys', () => {
  createShiftSync({url,publishableKey:jwt('anon')});
  createShiftSync({url:'http://[::1]:54321',publishableKey:key,allowLocal:true});
 });
-test('six digit sign-in, access header, RPC and immutable payload body',async()=>{
- const f=fixture(); await assert.rejects(f.sync.verifyOtp(email,'012345'),code('otp_not_requested'));
- f.replies.push({},auth());
- await f.sync.signInWithOtp(' Example@Example.Test ');
- await assert.rejects(f.sync.verifyOtp(email,'12345'),code('invalid_code'));
- const s=await f.sync.verifyOtp(email,'001234');
+test('password grant only, access header, RPC and immutable payload body',async()=>{
+ const f=fixture();
+ await assert.rejects(f.sync.signInWithPassword(email,''),code('invalid_password'));
+ f.replies.push([400,{message:'secret error never returned'}],auth());
+ await assert.rejects(f.sync.signInWithPassword(email,pw),code('invalid_credentials'));
+ const s=await f.sync.signInWithPassword(' Example@Example.Test ',pw);
  assert.deepEqual(s,{userId:A,generation:1}); assert.equal(f.sync.getScope(),s);
- assert.deepEqual(f.calls[0].body,{email,create_user:true,data:{}});
- assert.equal(f.calls[0].u.pathname,'/auth/v1/otp');
- assert.deepEqual(f.calls[1].body,{email,token:'001234',type:'email'});
- assert(!f.calls[0].raw.headers.authorization);
+ for(const call of f.calls){
+  assert.deepEqual(call.body,{email,password:pw});
+  assert.equal(call.u.pathname,'/auth/v1/token');
+  assert.equal(call.u.searchParams.get('grant_type'),'password');
+  assert(!call.raw.headers.authorization);
+ }
+ assert(!JSON.stringify(f.sync.exportAuthState()).includes(pw));
+ assert.equal(f.sync.signInWithOtp,undefined);
+ await assert.rejects(f.sync.signInWithPassword(email,pw),code('already_signed_in'));
  for(const status of ['inserted','already_exists','conflict']){
   f.replies.push(status);
   assert.equal(await f.sync.saveCompletedSession({id:B,completedAt:at,payload},s),status);
@@ -66,7 +71,7 @@ test('deterministic keyset keeps microseconds, tie-break id, server-capped page 
  const b=await f.sync.listCompletedSessions({scope,cursor:a.nextCursor});
  const c=await f.sync.listCompletedSessions({scope,cursor:b.nextCursor});
  assert.equal(c.nextCursor,null);
- const p=f.calls[3].u.searchParams;
+ const p=f.calls[2].u.searchParams;
  assert.equal(p.get('or'),'(created_at.gt.'+t+',and(created_at.eq.'+t+',id.gt.'+B+'))');
  assert.equal(p.get('order'),'created_at.asc,id.asc');
  assert.equal(p.get('user_id'),'eq.'+A);
@@ -80,20 +85,19 @@ test('coalesced refresh, 401 retry with fresh access and no remote raw errors', 
  const f=fixture(),s=await login(f);
  f.replies.push(auth('2'));
  assert.deepEqual(await Promise.all([f.sync.refresh(),f.sync.refresh()]),[s,s]);
- assert.equal(f.calls.filter(c=>c.u.pathname==='/auth/v1/token').length,1);
- assert.equal(f.calls[2].u.searchParams.get('grant_type'),'refresh_token');
- assert.deepEqual(f.calls[2].body,{refresh_token:'refresh1'});
+ assert.equal(f.calls.filter(c=>c.u.searchParams.get('grant_type')==='refresh_token').length,1);
+ assert.equal(f.calls[1].u.searchParams.get('grant_type'),'refresh_token');
+ assert.deepEqual(f.calls[1].body,{refresh_token:'refresh1'});
  f.replies.push([401,{message:'sensitive'}],auth('3'),'inserted');
  assert.equal(await f.sync.saveCompletedSession({id:A,completedAt:at,payload},s),'inserted');
  assert.equal(f.calls.at(-1).raw.headers.authorization,'Bearer access3');
  f.replies.push(()=>{throw Error('token from malicious exception')});
  await assert.rejects(f.sync.listCompletedSessions({scope:s}),code('network'));
 });
-test('late verify and data cannot revive a cleared scope', async()=>{
+test('late sign-in and data cannot revive a cleared scope', async()=>{
  const f=fixture();
- f.replies.push({},()=>new Promise(r=>setTimeout(()=>r(auth()),5)));
- await f.sync.signInWithOtp(email);
- const staleLogin=f.sync.verifyOtp(email,'012345'); f.sync.clear();
+ f.replies.push(()=>new Promise(r=>setTimeout(()=>r(auth()),5)));
+ const staleLogin=f.sync.signInWithPassword(email,pw); f.sync.clear();
  await assert.rejects(staleLogin,code('stale_scope')); assert.equal(f.sync.getScope(),null);
  const s=await login(f);
  f.replies.push(()=>new Promise(r=>setTimeout(()=>r([200,[row()]]),5)),[204,null]);
@@ -118,4 +122,32 @@ test('stable combined ID, distinct components, UUIDv8 variant',async()=>{
  assert.match(id,/^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/);
  assert.equal(id,await combineCompletedSessionId('exam','source'));
  assert.notEqual(await combineCompletedSessionId('ex','amsource'),await combineCompletedSessionId('exam','source'));
+});
+test('password change authenticated PUT, current password required, refresh is scoped',async()=>{
+ const f=fixture(),s=await login(f);
+ await assert.rejects(f.sync.changePassword('',pw,s),code('invalid_password'));
+ await assert.rejects(f.sync.changePassword(pw,'n'.repeat(1025),s),code('invalid_password'));
+ await assert.rejects(f.sync.changePassword(pw,'replacement',{...s}),code('stale_scope'));
+ const newPassword='  Replacement test only  ';
+ f.replies.push([401,{message:'expired'}],auth('2'),{id:A,password:'server echo not returned'});
+ assert.equal(await f.sync.changePassword(pw,newPassword,s),true);
+ assert.deepEqual(f.calls.slice(1).map(c=>[c.u.pathname,c.raw.method,c.raw.headers.authorization]),
+  [['/auth/v1/user','PUT','Bearer access1'],['/auth/v1/token','POST',undefined],['/auth/v1/user','PUT','Bearer access2']]);
+ assert.deepEqual(f.calls.at(-1).body,{current_password:pw,password:newPassword});
+ assert.equal(f.sync.getScope(),s);
+ assert(!JSON.stringify(f.sync.exportAuthState()).includes(newPassword));
+ f.replies.push([422,{msg:pw}],[403,{msg:newPassword}],{id:B});
+ await assert.rejects(f.sync.changePassword(pw,newPassword,s),code('password_change_failed'));
+ await assert.rejects(f.sync.changePassword(pw,newPassword,s),code('password_change_failed'));
+ await assert.rejects(f.sync.changePassword(pw,newPassword,s),code('invalid_response'));
+});
+test('late password change cannot succeed in replacement scope',async()=>{
+ const f=fixture(),s=await login(f);
+ let release;f.replies.push(()=>new Promise(res=>release=res));
+ const pending=f.sync.changePassword(pw,'some new test value',s);
+ f.sync.clear();f.replies.push(auth('3',B));
+ const next=await f.sync.signInWithPassword(email,pw);
+ release({id:A});
+ await assert.rejects(pending,code('stale_scope'));
+ assert.equal(next.userId,B);assert.equal(f.sync.getScope(),next);
 });

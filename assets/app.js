@@ -125,7 +125,7 @@ async function readWorkspace(owner){
 const records=window.SHIFT_SYNC_RECORDS;
 const syncConfig=window.SHIFT_SYNC_CONFIG;
 const syncConfigured=!!(records&&syncConfig?.url&&syncConfig?.publishableKey&&/^https?:$/.test(location.protocol));
-let syncOwner=null,syncCore=null,syncOnline=null,syncEmail='',syncStatus='',syncPageCursor=null,syncLastFull=0,syncEpoch=0;
+let syncOwner=null,syncCore=null,syncOnline=null,syncPasswordOpen=false,syncStatus='',syncPageCursor=null,syncLastFull=0,syncEpoch=0;
 const scopedKey=(key,owner=syncOwner)=>records&&owner?records.key(key,owner):key;
 const accountActionBusy=()=>route!=='data'||diagnostic;
 function historyNotice(){
@@ -133,27 +133,37 @@ function historyNotice(){
  if(!syncConfigured)return '';
  const h='<h2>'+icon('shield')+' Account &amp; Sync</h2>';
  const status='<p class="hint" role="status" aria-live="polite" id="shift-sync-status">'+esc(syncStatus)+'</p>';
- if(syncOwner)return '<section class="panel" id="account-sync" style="margin-bottom:20px">'+h+
- '<p>Account workspace. '+local+'</p><div class="btn-row">'+btn('Sync Now','sync-now','primary')+
- btn('Copy Guest History','sync-import-guest')+btn('Sign Out','sync-logout')+'</div>'+status+'</section>';
- if(!syncEmail)return '<section class="panel" id="account-sync" style="margin-bottom:20px">'+h+
- '<p>Keep practicing as a guest, or sign in to sync new completed sessions across devices. Existing guest records are not uploaded unless you choose Copy Guest History.</p>'+
- '<form id="shift-sync-email-form"><div class="field"><label for="shift-sync-email">Email</label><input id="shift-sync-email" name="email" type="email" autocomplete="email" maxlength="254" required></div><button class="btn primary" type="submit">Send Sign-in Code</button></form>'+status+'</section>';
+ if(syncOwner){
+  return '<section class="panel" id="account-sync" style="margin-bottom:20px">'+h+
+  '<p>Account workspace. '+local+'</p><div class="btn-row">'+btn('Sync Now','sync-now','primary')+
+  btn('Copy Guest History','sync-import-guest')+btn('Change Password','sync-change-password')+btn('Sign Out','sync-logout')+'</div>'+
+  (syncPasswordOpen?'<form id="shift-sync-password-form"><p>Set a password unique to SHIFT. If you forget it, contact the person who opened your account.</p>'+
+  '<div class="field"><label for="shift-sync-current-password">Current password</label><input id="shift-sync-current-password" name="currentPassword" type="password" autocomplete="current-password" maxlength="256" required></div>'+
+  '<div class="field"><label for="shift-sync-new-password">New password</label><input id="shift-sync-new-password" name="newPassword" type="password" autocomplete="new-password" minlength="12" maxlength="72" required></div>'+
+  '<div class="field"><label for="shift-sync-confirm-password">Confirm new password</label><input id="shift-sync-confirm-password" name="confirmPassword" type="password" autocomplete="new-password" minlength="12" maxlength="72" required></div>'+
+  '<button class="btn primary" type="submit">Save Password</button></form>':'')+status+'</section>';
+ }
  return '<section class="panel" id="account-sync" style="margin-bottom:20px">'+h+
- '<p>Enter the sign-in code sent to '+esc(syncEmail)+'.</p><form id="shift-sync-code-form"><div class="field"><label for="shift-sync-code">Six-digit code</label><input id="shift-sync-code" name="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required></div><button class="btn primary" type="submit">Sign In</button> '+btn('Use a Different Email','sync-change-email')+'</form>'+status+'</section>'
+ '<p>Keep practicing as a guest, or sign in with an account provided by the administrator. Sign in on each device to sync completed practice. Existing guest records stay here unless you choose Copy Guest History.</p>'+
+ '<form id="shift-sync-login-form"><div class="field"><label for="shift-sync-email">Email</label><input id="shift-sync-email" name="email" type="email" autocomplete="username" maxlength="254" required></div>'+
+ '<div class="field"><label for="shift-sync-password">Password</label><input id="shift-sync-password" name="password" type="password" autocomplete="current-password" maxlength="256" required></div>'+
+ '<button class="btn primary" type="submit">Sign In</button></form><p class="hint">Forgot your password? Contact your account administrator.</p>'+status+'</section>';
 }
 function setSyncStatus(msg){syncStatus=msg;const el=document.getElementById('shift-sync-status');if(el)el.textContent=msg}
 async function getSyncCore(){
  if(!syncConfigured)throw Error('Account sync is not configured.');
  if(syncCore)return syncCore;
  const m=await import('./shift-sync.mjs');
- syncCore=m.createShiftSync({url:syncConfig.url,publishableKey:syncConfig.publishableKey,allowSignup:syncConfig.allowSignup===true,allowLocal:syncConfig.allowLocal===true});
+ syncCore=m.createShiftSync({url:syncConfig.url,publishableKey:syncConfig.publishableKey,allowLocal:syncConfig.allowLocal===true,fetchImpl:window.fetch.bind(window)});
  return syncCore;
 }
 function accountMessage(error){
  const k=String(error?.code||'');
  if(/conflict/i.test(k))return 'A record needs attention. Both copies were kept.';
- if(/auth|session|credential|token|unauthor|invalid_code|otp_not_requested/i.test(k))return 'Sign-in could not be verified. Check the code or sign in again.';
+ if(k==='invalid_credentials')return 'Sign-in could not be verified. Check your email and password.';
+ if(k==='invalid_password')return 'Choose a different password with at least 12 characters.';
+ if(/password_change|reauthentication/i.test(k))return 'Password not changed. Check your current password or contact your account administrator.';
+ if(/auth|session|credential|token|unauthor/i.test(k))return 'Sign-in could not be verified. Sign in again.';
  if(/rate|limit/i.test(k))return 'Too many requests. Please wait before trying again.';
  if(/config|publishable/i.test(k))return 'Account sync is not available on this site.';
  return 'Unable to connect. Your learning records remain on this device.';
@@ -269,38 +279,53 @@ async function syncGuestPreview(){
 }
 async function syncAccountAction(actionId){
  if(accountActionBusy())return;
- if(actionId==='sync-change-email'){syncEmail='';syncStatus='';render();document.getElementById('shift-sync-email')?.focus();return}
  if(!syncOwner)return;
+ if(actionId==='sync-change-password'){
+  syncPasswordOpen=!syncPasswordOpen;render();
+  if(syncPasswordOpen)document.getElementById('shift-sync-current-password')?.focus();
+  return
+ }
  if(actionId==='sync-now')return startSync(true);
  if(actionId==='sync-import-guest')return syncGuestPreview();
  if(actionId==='sync-logout'){
   if(state.active?.mode==='exam')return notify('Finish your in-progress formal test before signing out.');
   try{await switchWorkspace(null)}catch{setSyncStatus('Sign-out was stopped to protect local records.');return}
-  syncEmail='';
+  syncPasswordOpen=false;
   const remote=syncCore?.logout();void remote?.catch(()=>{});render();
  }
 }
 document.addEventListener('submit',e=>{
- const form=e.target;if(!['shift-sync-email-form','shift-sync-code-form'].includes(form.id))return;
+ const form=e.target;
+ if(!['shift-sync-login-form','shift-sync-password-form'].includes(form.id))return;
  e.preventDefault();
- if(!form.reportValidity()||accountActionBusy())return;
+ if(!form.reportValidity()||accountActionBusy()||busy)return;
+ const change=form.id==='shift-sync-password-form';
  const value=new FormData(form);
+ const fields=['password','currentPassword','newPassword','confirmPassword'];
+ for(const key of fields){const input=form.elements.namedItem(key);if(input)input.value=''}
  void withBusy(async()=>{
   try{
    if(storageMode!=='indexeddb')return setSyncStatus('Sign-in requires available IndexedDB browser storage. Guest practice can still use this browser.');
-   if(state.active?.mode==='exam')return setSyncStatus('Finish your in-progress formal test before signing in.');
+   if(state.active?.mode==='exam')return setSyncStatus('Finish your in-progress formal test before changing your sign-in.');
    const c=await getSyncCore();
-   if(form.id==='shift-sync-email-form'){
-    const email=String(value.get('email')||'').trim();
-    await c.signInWithOtp(email);syncEmail=email;syncStatus='Code requested. Check your email.';render();document.getElementById('shift-sync-code')?.focus();
-   }else if(syncEmail){
-    await c.verifyOtp(syncEmail,String(value.get('code')||''));
-    const id=c.getScope()?.userId;
+   if(change){
+    const scope=c.getScope();
+    if(!syncOwner||scope?.userId!==syncOwner)return setSyncStatus('Sign in again before changing your password.');
+    const next=String(value.get('newPassword')||'');
+    if(next!==value.get('confirmPassword'))return setSyncStatus('The two new passwords do not match.');
+    const current=String(value.get('currentPassword')||'');
+    if([...next].length<12||new TextEncoder().encode(next).byteLength>72||next===current)return setSyncStatus('Choose a different password with at least 12 characters and at most 72 UTF-8 bytes.');
+    await c.changePassword(current,next,scope);
+    syncPasswordOpen=false;syncStatus='Password changed.';render();
+   }else{
+    if(syncOwner)return;
+    const id=(await c.signInWithPassword(String(value.get('email')||'').trim(),String(value.get('password')||'')))?.userId;
     if(!id)throw Error('Authentication did not create a session.');
     try{await switchWorkspace(id)}catch(error){c.clear();throw error}
-    syncEmail='';render();void startSync();
+    syncPasswordOpen=false;render();void startSync();
    }
   }catch(error){setSyncStatus(accountMessage(error))}
+  finally{for(const key of fields)value.delete(key)}
  })
 });
 window.addEventListener('online',()=>void startSync());
