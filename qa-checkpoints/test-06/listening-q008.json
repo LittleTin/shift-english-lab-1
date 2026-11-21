@@ -1,0 +1,120 @@
+{
+  "status": "Q008 independently verified staged subset; no app integration or round approval",
+  "questions": [
+    8
+  ],
+  "previousHold": "Supersedes the Q008 exclusion only in listening-q007-009-010.json; previously staged files are unchanged.",
+  "asr": {
+    "mode": "Offline, unprompted ASR on exact candidate Opus",
+    "both": "Whisper base.en/VAD by role independently matched exact prompt and all A/B/C words in both decoded files; Vosk identified Number Eight from the actual formal cue. Vosk choice homophones and filled/felt plus a full-window Whisper trailing hallucination were resolved by separate recognition, the exact independent WAV recognition and aligned PCM.",
+    "waveforms": {
+      "practice": 0.9838157143153025,
+      "formal": 0.9831094188701262,
+      "edge2sPeak16Bit": [
+        0,
+        1
+      ],
+      "formalAnswerWaitPeak16Bit": 1
+    }
+  },
+  "native": {
+    "fixtureType": "Exact-byte private managed Chromium harness; not app or physical iOS QA",
+    "started": 2,
+    "ended": 2,
+    "httpRangeExact": 2,
+    "errors": 0,
+    "seeks": 0,
+    "rate": 1,
+    "practice": {
+      "start": 0,
+      "pause": 6.0671,
+      "resume": 6.1443,
+      "end": 15.8815
+    },
+    "formal": {
+      "start": 0.0005,
+      "pause": 6.7342,
+      "resume": 6.8154,
+      "end": 22.2255
+    }
+  },
+  "group": {
+    "id": "t06-g008",
+    "voices": [
+      "en-US-GuyNeural",
+      "en-US-JennyNeural"
+    ],
+    "format": "Ogg Opus mono 48 kHz, 48 kbps VBR, 20 ms, audio application",
+    "practice": {
+      "samples": 762000,
+      "bytes": 69544,
+      "sha256": "2b5b57323fdf83f2e426a92b63a2f2b4385043221f8941737381efed2eb315e1",
+      "decodedPcmSha256": "c97b1be380963d00d5449908cda3f5ef5fb712e56939468c2f9771ef98e9ee18",
+      "frames": [
+        {
+          "role": "lead",
+          "start": 0,
+          "end": 96000,
+          "sha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "newSpeech",
+          "start": 96000,
+          "end": 666000,
+          "sha256": "65a68b9ab814b49972910f6db78eee3194581ec857a565aecac22f6647c5d7e9"
+        },
+        {
+          "role": "tail",
+          "start": 666000,
+          "end": 762000,
+          "sha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        }
+      ]
+    },
+    "formal": {
+      "samples": 1066512,
+      "bytes": 89938,
+      "sha256": "2c3c893ec9f0883e0f6789433a703d488d919589fa15b79782ae3f97365a1c4b",
+      "decodedPcmSha256": "6ed92e9d77eb50120490ad6662171cda89315836d005da0df4201c32de7c0059",
+      "frames": [
+        {
+          "role": "lead",
+          "start": 0,
+          "end": 96000,
+          "sha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "codecRunway",
+          "start": 96000,
+          "end": 96960,
+          "sha256": "155e437b946ac82ae591ff382b8d19efda9397b2282672dbabd91ec31ce8a651"
+        },
+        {
+          "role": "numberCue",
+          "start": 96960,
+          "end": 136512,
+          "sha256": "959fa82fa406656eb420c2f6682f91cb41a08c5c8b45864741ecec3bb27e9495"
+        },
+        {
+          "role": "newSpeech",
+          "start": 136512,
+          "end": 706512,
+          "sha256": "65a68b9ab814b49972910f6db78eee3194581ec857a565aecac22f6647c5d7e9"
+        },
+        {
+          "role": "tail",
+          "start": 706512,
+          "end": 802512,
+          "sha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "answerWait",
+          "start": 802512,
+          "end": 1066512,
+          "sha256": "68ca649d2d4a35df77d47fd04795aa2a18fc3f522455fb772d19bb0de66cbaf7"
+        }
+      ]
+    }
+  },
+  "finalRoundGates": "Actual app native media, old lock, history, practice selection, final 2,700 s timeline and production deployment are not inferred."
+}
