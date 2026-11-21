@@ -1,0 +1,62 @@
+{
+  "id": "t06-q046",
+  "testId": "test-06",
+  "number": 46,
+  "part": 3,
+  "topic": "daily",
+  "difficulty": "advanced",
+  "groupId": "t06-g044",
+  "prompt": "What will the record show without an update?",
+  "promptZh": "預約紀錄如果沒更新，會顯示什麼？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "Both slots assigned to the man",
+      "zh": "兩個時段都登記在男方名下",
+      "whyZh": "互換前男方只訂了星期日下午。"
+    },
+    {
+      "id": "B",
+      "text": "Saturday still assigned to the woman",
+      "zh": "星期六仍登記在女方名下",
+      "whyZh": "女方原訂星期六；沒請服務台更新，就不會反映交換後的安排。"
+    },
+    {
+      "id": "C",
+      "text": "Both weekend slots marked as cancelled",
+      "zh": "週末兩個時段都標為取消",
+      "whyZh": "互換不是取消，原紀錄也沒取消。"
+    },
+    {
+      "id": "D",
+      "text": "Sunday shown as still open to anyone",
+      "zh": "星期日顯示為開放預約",
+      "whyZh": "星期日是男方原先的預約；兩人私下互換不會改變原紀錄。"
+    }
+  ],
+  "explanationZh": "女方原訂星期六；沒請服務台更新，就不會反映交換後的安排。",
+  "evidence": "I booked the dehydrator for Saturday morning, but my pears aren’t ripe. Still using it Sunday afternoon? / Yes. My apple slices are ready. I could take Saturday if you take Sunday. / I will. Let’s tell the kitchen desk today so they update the bookings before the weekend.",
+  "tags": [
+    "daily",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "F",
+      "exactQuote": "I booked the dehydrator for Saturday morning, but my pears aren’t ripe. Still using it Sunday afternoon?"
+    },
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "Yes. My apple slices are ready. I could take Saturday if you take Sunday."
+    },
+    {
+      "turn": 4,
+      "speaker": "M",
+      "exactQuote": "I will. Let’s tell the kitchen desk today so they update the bookings before the weekend."
+    }
+  ]
+}
