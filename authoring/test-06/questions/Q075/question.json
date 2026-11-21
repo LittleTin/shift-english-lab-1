@@ -1,0 +1,53 @@
+{
+  "id": "t06-q075",
+  "testId": "test-06",
+  "number": 75,
+  "part": 4,
+  "groupId": "t06-g074",
+  "prompt": "Three birds were counted. One moves ashore. What now?",
+  "promptZh": "已數到三隻鳥，其中一隻移到岸上。現在該怎麼記？",
+  "answer": "A",
+  "options": [
+    {
+      "id": "A",
+      "text": "Keep three; add an arrow to its first entry.",
+      "zh": "維持三隻，在牠第一次的記錄加箭頭。",
+      "whyZh": "總數維持三隻，在那隻鳥的原記錄加箭頭，不重複計數。"
+    },
+    {
+      "id": "B",
+      "text": "Count four; add an arrow to its first entry.",
+      "zh": "改記四隻，並在牠第一次的記錄加箭頭。",
+      "whyZh": "箭頭是對的，但同一隻鳥不能重複計入總數。"
+    },
+    {
+      "id": "C",
+      "text": "Keep three; delete its first entry.",
+      "zh": "維持三隻，刪掉牠第一次的記錄。",
+      "whyZh": "總數不增加是對的，但原記錄應加箭頭而不是刪除。"
+    },
+    {
+      "id": "D",
+      "text": "Count four; make a separate entry for the bank.",
+      "zh": "改記四隻，在岸邊另作一筆記錄。",
+      "whyZh": "那隻鳥已計過，另記會把牠重複算入。"
+    }
+  ],
+  "explanationZh": "總數維持三隻，在那隻鳥的原記錄加箭頭，不重複計數。",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "evidence": "If a bird moves from the water to the bank, mark its first entry with an arrow rather than counting it twice.",
+  "tags": [
+    "daily",
+    "talk"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "speaker": "F",
+      "exactQuote": "If a bird moves from the water to the bank, mark its first entry with an arrow rather than counting it twice.",
+      "startChar": 114,
+      "endChar": 223
+    }
+  ]
+}
