@@ -1,0 +1,73 @@
+{
+  "id": "t06-q057",
+  "testId": "test-06",
+  "number": 57,
+  "part": 3,
+  "topic": "daily",
+  "difficulty": "advanced",
+  "groupId": "t06-g056",
+  "prompt": "Look at the graphic. Which room should the organiser choose?",
+  "promptZh": "請看圖表。主辦人應該選哪間房間？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "Room A",
+      "zh": "A 室",
+      "whyZh": "A 室入口無階梯，但門窄，寬琴架過不去。"
+    },
+    {
+      "id": "B",
+      "text": "Room B",
+      "zh": "B 室",
+      "whyZh": "B 室門寬，但入口有階梯。"
+    },
+    {
+      "id": "C",
+      "text": "Room C",
+      "zh": "C 室",
+      "whyZh": "C 室的門夠寬，且入口沒有階梯，符合兩個條件。"
+    },
+    {
+      "id": "D",
+      "text": "Room D",
+      "zh": "D 室",
+      "whyZh": "D 室門窄，入口也有階梯，兩個條件都不符合。"
+    }
+  ],
+  "explanationZh": "C 室的門夠寬，且入口沒有階梯，符合兩個條件。",
+  "evidence": "Someone’s bringing a keyboard on a wide stand. It won’t fit through a narrow door or go up steps. / Pick a room that meets both needs, then send me its letter. / Room access table: Room C | Wide | No entrance steps.",
+  "tags": [
+    "daily",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "Someone’s bringing a keyboard on a wide stand. It won’t fit through a narrow door or go up steps.",
+      "quoteZh": "有人會帶一台架在寬琴架上的電子琴。這套器材過不了窄門，也搬不上階梯。"
+    },
+    {
+      "turn": 3,
+      "speaker": "F",
+      "exactQuote": "Pick a room that meets both needs, then send me its letter.",
+      "quoteZh": "選一間符合兩項需求的房間，再把房間代號傳給我。"
+    }
+  ],
+  "graphicEvidence": {
+    "source": "assets/scenes/test-06/room-access.jpg",
+    "title": "Room access",
+    "row": [
+      "C",
+      "Wide",
+      "No"
+    ],
+    "columns": [
+      "Room",
+      "Door",
+      "Steps at entrance"
+    ]
+  }
+}

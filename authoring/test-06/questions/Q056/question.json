@@ -1,0 +1,53 @@
+{
+  "id": "t06-q056",
+  "testId": "test-06",
+  "number": 56,
+  "part": 3,
+  "topic": "daily",
+  "difficulty": "foundation",
+  "groupId": "t06-g056",
+  "prompt": "What will the center print tomorrow?",
+  "promptZh": "中心明天會印什麼？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "A list of start times",
+      "zh": "開始時間一覽表",
+      "whyZh": "開始時間已傳給大家，不是明天要印的文件。"
+    },
+    {
+      "id": "B",
+      "text": "A new map",
+      "zh": "一張新版地圖",
+      "whyZh": "女方明說中心明天要印新版地圖。"
+    },
+    {
+      "id": "C",
+      "text": "A set of room labels",
+      "zh": "一套房間標籤",
+      "whyZh": "房間代號已在表上，沒有提到要印標籤。"
+    },
+    {
+      "id": "D",
+      "text": "A copy of the keyboard manual",
+      "zh": "一份電子琴使用手冊",
+      "whyZh": "電子琴是參加者帶來的，與中心要印的文件無關。"
+    }
+  ],
+  "explanationZh": "女方明說中心明天要印新版地圖。",
+  "evidence": "The center prints a new map tomorrow. Today, use the room letter from the access table, not the old map screenshot.",
+  "tags": [
+    "daily",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "F",
+      "exactQuote": "The center prints a new map tomorrow. Today, use the room letter from the access table, not the old map screenshot.",
+      "quoteZh": "中心明天會印新版地圖。今天以出入資訊表的房間代號為準，不要用舊地圖截圖。"
+    }
+  ]
+}
