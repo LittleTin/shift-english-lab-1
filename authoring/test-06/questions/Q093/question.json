@@ -1,0 +1,65 @@
+{
+  "id": "t06-q093",
+  "testId": "test-06",
+  "number": 93,
+  "part": 4,
+  "groupId": "t06-g092",
+  "prompt": "Both floors look bright. The lower windows go completely dark when the upper lights go off. What should be logged?",
+  "promptZh": "兩個樓層看起來都亮。上方樓層的燈一關，較低樓層的窗戶就完全不亮了。應記錄什麼？",
+  "answer": "A",
+  "options": [
+    {
+      "id": "A",
+      "text": "Record only the upper floor as a light source",
+      "zh": "只登記較高樓層是光源",
+      "whyZh": "只關上方樓層的燈，下方窗戶就完全不亮，表示原先下方的亮光來自上方的反射；依規則只記錄本身發光的上方樓層。"
+    },
+    {
+      "id": "B",
+      "text": "Record both floors because both looked bright initially",
+      "zh": "因為一開始都亮，所以登記兩個樓層",
+      "whyZh": "兩層起初看起來都亮，不等於兩層都在發光；關上方樓層的燈後，下方窗戶完全不亮，符合反光。"
+    },
+    {
+      "id": "C",
+      "text": "Record only the lower floor because it was the one watched again",
+      "zh": "只登記重新觀察的較低樓層",
+      "whyZh": "下方窗戶完全不亮，是用來辨認先前的亮光是反射；應記錄主動發光的上方樓層，而非被觀察的下方樓層。"
+    },
+    {
+      "id": "D",
+      "text": "Record neither floor because both eventually went dark",
+      "zh": "因為最後都暗了，所以兩層都不登記",
+      "whyZh": "關燈是用來追查原先的光源，不是記錄關燈後的黑暗；結果顯示原先的光源在上方樓層。"
+    }
+  ],
+  "explanationZh": "只關上方樓層的燈，下方窗戶就完全不亮，表示原先下方的亮光來自上方的反射；依規則只記錄本身發光的上方樓層。",
+  "topic": "business",
+  "difficulty": "advanced",
+  "evidence": "Record only floors that give off their own light. / Facilities controls lights by floor. If two floors look bright, ask Facilities to switch off the higher one first. / If the lower windows go completely dark, they were reflecting light from above.",
+  "tags": [
+    "business",
+    "talk"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "speaker": "F",
+      "exactQuote": "Record only floors that give off their own light.",
+      "startChar": 144,
+      "endChar": 193
+    },
+    {
+      "speaker": "F",
+      "exactQuote": "Facilities controls lights by floor. If two floors look bright, ask Facilities to switch off the higher one first.",
+      "startChar": 194,
+      "endChar": 308
+    },
+    {
+      "speaker": "F",
+      "exactQuote": "If the lower windows go completely dark, they were reflecting light from above.",
+      "startChar": 309,
+      "endChar": 388
+    }
+  ]
+}
