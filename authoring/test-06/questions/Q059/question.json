@@ -1,0 +1,57 @@
+{
+  "id": "t06-q059",
+  "testId": "test-06",
+  "number": 59,
+  "part": 3,
+  "groupId": "t06-g059",
+  "prompt": "Which plan follows both moving instructions?",
+  "promptZh": "哪項安排同時符合兩項搬運指示？",
+  "answer": "D",
+  "options": [
+    {
+      "id": "A",
+      "text": "Pack the bench in the padded case and leave the block unpacked.",
+      "zh": "把測試臺裝進襯墊盒，基準塊不包裝。",
+      "whyZh": "女方指定裝進襯墊盒的是基準塊，不是測試臺。"
+    },
+    {
+      "id": "B",
+      "text": "Hold the bench and pack the block in its case.",
+      "zh": "先留下測試臺，把基準塊裝進盒裡。",
+      "whyZh": "基準塊要裝盒，但測試臺須直送四號區，不能先留在原處。"
+    },
+    {
+      "id": "C",
+      "text": "Send the bench straight to Bay Four and carry the block loose.",
+      "zh": "把測試臺直接搬去四號區，基準塊不包裝就搬。",
+      "whyZh": "測試臺路線正確，但基準塊需要用襯墊盒。"
+    },
+    {
+      "id": "D",
+      "text": "Send the bench straight to Bay Four and pack the block in its case.",
+      "zh": "把測試臺直接搬去四號區，基準塊裝進專用盒。",
+      "whyZh": "測試臺直接去四號區；同行基準塊要裝進有襯墊的盒子。"
+    }
+  ],
+  "explanationZh": "測試臺直接去四號區；同行基準塊要裝進有襯墊的盒子。",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "evidence": "The bench passed its test this morning. It moves to Bay Four after lunch. Leave the reference block for the other team? / I’ll leave a spare. Send the bench straight to Bay Four, but pack the block in its padded case.",
+  "tags": [
+    "manufacturing",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "F",
+      "exactQuote": "The bench passed its test this morning. It moves to Bay Four after lunch. Leave the reference block for the other team?"
+    },
+    {
+      "turn": 3,
+      "speaker": "F",
+      "exactQuote": "I’ll leave a spare. Send the bench straight to Bay Four, but pack the block in its padded case."
+    }
+  ]
+}
