@@ -1,0 +1,65 @@
+{
+  "id": "t06-q080",
+  "testId": "test-06",
+  "number": 80,
+  "part": 4,
+  "groupId": "t06-g080",
+  "prompt": "The reviewer arrives while the photo is saving and waits until it has finished saving. What should staff do with the long support?",
+  "promptZh": "照片還在儲存時，審查人員抵達並留在現場，直到照片存好。工作人員應如何處理長支撐件？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "Hand it to the reviewer before the photo is saved",
+      "zh": "存好照片前直接交給審查人員",
+      "whyZh": "照片存好之前不能取走支撐件，即使審查人員已經到了也一樣。"
+    },
+    {
+      "id": "B",
+      "text": "Wait for the photo to save, then hand it to the reviewer",
+      "zh": "等照片儲存完成，再交給審查人員",
+      "whyZh": "必須先等照片存好。審查人員屆時仍在現場，因此應直接把長支撐件交給他。"
+    },
+    {
+      "id": "C",
+      "text": "Wait for the photo to save, then put it in the cabinet",
+      "zh": "等照片儲存完成，再放進櫃子",
+      "whyZh": "只有照片存好後審查人員不在場，才要把支撐件放進下方櫃子；題中的審查人員仍在場。"
+    },
+    {
+      "id": "D",
+      "text": "Remove it and take a new photo of the empty fixture",
+      "zh": "先取走支撐件，再拍一張空治具的照片",
+      "whyZh": "應先拍攝並存好原配置的照片，不能先取走支撐件，再用空治具照片取代原配置照片。"
+    }
+  ],
+  "explanationZh": "必須先等照片存好。審查人員屆時仍在現場，因此應直接把長支撐件交給他。",
+  "topic": "manufacturing",
+  "difficulty": "advanced",
+  "evidence": "Don't remove the old support until the photo is saved. / Once the photo is saved, hand the support directly to the reviewer if they're still there. / Otherwise, put it in the bottom cabinet for Friday's review.",
+  "tags": [
+    "manufacturing",
+    "talk"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "speaker": "F",
+      "exactQuote": "Don't remove the old support until the photo is saved.",
+      "startChar": 276,
+      "endChar": 330
+    },
+    {
+      "speaker": "F",
+      "exactQuote": "Once the photo is saved, hand the support directly to the reviewer if they're still there.",
+      "startChar": 331,
+      "endChar": 421
+    },
+    {
+      "speaker": "F",
+      "exactQuote": "Otherwise, put it in the bottom cabinet for Friday's review.",
+      "startChar": 422,
+      "endChar": 482
+    }
+  ]
+}
