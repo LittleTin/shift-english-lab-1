@@ -1,0 +1,57 @@
+{
+  "id": "t06-q064",
+  "testId": "test-06",
+  "number": 64,
+  "part": 3,
+  "groupId": "t06-g062",
+  "prompt": "If space opens after five, when can she bring the plate?",
+  "promptZh": "若五點後有空位，她可以在什麼時候把餐盤送來？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "Before she receives a call",
+      "zh": "在接到電話前",
+      "whyZh": "要先等通知確認頂層架有空。"
+    },
+    {
+      "id": "B",
+      "text": "After a call and before loading starts",
+      "zh": "接到電話後、開始裝窯前",
+      "whyZh": "有空位時男方會先打電話；盤子必須在裝窯前送到。"
+    },
+    {
+      "id": "C",
+      "text": "After the kiln is already loaded",
+      "zh": "窯爐已裝好之後",
+      "whyZh": "男方明說要在裝窯前把盤子送來。"
+    },
+    {
+      "id": "D",
+      "text": "Only after the firing has finished",
+      "zh": "只能等燒製結束後",
+      "whyZh": "如果頂層架釋出且來得及，這次有機會加送，不必等燒完。"
+    }
+  ],
+  "explanationZh": "有空位時男方會先打電話；盤子必須在裝窯前送到。",
+  "topic": "daily",
+  "difficulty": "advanced",
+  "evidence": "It takes a full shelf. We hold the top shelf until five for any large piece booked in advance. / Leave your number. If the shelf is free, I’ll call. Bring the plate before we load the kiln.",
+  "tags": [
+    "daily",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "It takes a full shelf. We hold the top shelf until five for any large piece booked in advance."
+    },
+    {
+      "turn": 4,
+      "speaker": "M",
+      "exactQuote": "Leave your number. If the shelf is free, I’ll call. Bring the plate before we load the kiln."
+    }
+  ]
+}
