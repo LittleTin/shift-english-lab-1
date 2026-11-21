@@ -1,0 +1,59 @@
+{
+  "id": "t06-q098",
+  "testId": "test-06",
+  "number": 98,
+  "part": 4,
+  "groupId": "t06-g098",
+  "prompt": "When can a customer order another stamp at a lower price?",
+  "promptZh": "在什麼情況下，客戶能以較低價格加購鋼印？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "When a revised drawing requires fewer details.",
+      "zh": "修改後的圖面細節變少時。",
+      "whyZh": "圖面修改後要重新詢價，沒有保證價格較低。"
+    },
+    {
+      "id": "B",
+      "text": "When the stamp is reordered within six months.",
+      "zh": "在六個月內再次訂購時。",
+      "whyZh": "六個月是材料邊料的留存時間，並非加購優惠期限。"
+    },
+    {
+      "id": "C",
+      "text": "When the stamp is made to the same drawing.",
+      "zh": "依照同一份圖面製作時。",
+      "whyZh": "加購價取決於是否使用原圖，與是否晚一點訂購無關。"
+    },
+    {
+      "id": "D",
+      "text": "When the customer pays for three impressions.",
+      "zh": "客戶支付三次試印費時。",
+      "whyZh": "三次是邊料須容納的試印次數，不是加購價的條件。"
+    }
+  ],
+  "explanationZh": "加購價取決於是否使用原圖，與是否晚一點訂購無關。",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "evidence": "Extras from that drawing cost less, even later; give us the original drawing number when reordering. / A changed drawing needs a new quote.",
+  "tags": [
+    "manufacturing",
+    "talk"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "speaker": "M",
+      "exactQuote": "Extras from that drawing cost less, even later; give us the original drawing number when reordering.",
+      "startChar": 95,
+      "endChar": 195
+    },
+    {
+      "speaker": "M",
+      "exactQuote": "A changed drawing needs a new quote.",
+      "startChar": 196,
+      "endChar": 232
+    }
+  ]
+}
