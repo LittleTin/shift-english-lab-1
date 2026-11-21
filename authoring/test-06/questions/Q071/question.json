@@ -1,0 +1,65 @@
+{
+  "id": "t06-q071",
+  "testId": "test-06",
+  "number": 71,
+  "part": 4,
+  "groupId": "t06-g071",
+  "prompt": "A reader enters at three. Which exit should they use at half past four?",
+  "promptZh": "讀者三點進來，四點半應從哪個出口離開？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "Go out through the gate used on arrival",
+      "zh": "從進來的庭園入口出去",
+      "whyZh": "人在庭園內無法解鎖該入口。"
+    },
+    {
+      "id": "B",
+      "text": "Walk back through the library lobby",
+      "zh": "從圖書館大廳出去",
+      "whyZh": "大廳是平常的出口，但四點半已關閉。"
+    },
+    {
+      "id": "C",
+      "text": "Ask the caretaker to let them out through the service yard",
+      "zh": "請管理員讓他從後勤院區離開",
+      "whyZh": "庭園入口無法從內側解鎖，大廳已關閉，而五點前可經後勤院區離開。"
+    },
+    {
+      "id": "D",
+      "text": "Wait until five for the lobby to reopen",
+      "zh": "等到五點再從重新開放的大廳離開",
+      "whyZh": "五點是庭園關閉時間，通知沒說大廳屆時會重開。"
+    }
+  ],
+  "explanationZh": "庭園入口無法從內側解鎖，大廳已關閉，而五點前可經後勤院區離開。",
+  "topic": "daily",
+  "difficulty": "advanced",
+  "evidence": "The garden gate unlocks only from the street. / Normally, exit through the lobby. / It closes at four; until the garden closes at five, the caretaker lets you out through the service yard.",
+  "tags": [
+    "daily",
+    "talk"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "speaker": "F",
+      "exactQuote": "The garden gate unlocks only from the street.",
+      "startChar": 135,
+      "endChar": 180
+    },
+    {
+      "speaker": "F",
+      "exactQuote": "Normally, exit through the lobby.",
+      "startChar": 181,
+      "endChar": 214
+    },
+    {
+      "speaker": "F",
+      "exactQuote": "It closes at four; until the garden closes at five, the caretaker lets you out through the service yard.",
+      "startChar": 215,
+      "endChar": 319
+    }
+  ]
+}
