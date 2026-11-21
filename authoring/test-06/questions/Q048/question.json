@@ -1,0 +1,52 @@
+{
+  "id": "t06-q048",
+  "testId": "test-06",
+  "number": 48,
+  "part": 3,
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "groupId": "t06-g047",
+  "prompt": "What will use the yellow lane in a few minutes?",
+  "promptZh": "幾分鐘後，誰或什麼會使用黃色通道？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "A maintenance crew",
+      "zh": "一組維修人員",
+      "whyZh": "對話沒說維修人員要到。"
+    },
+    {
+      "id": "B",
+      "text": "The dock team’s truck",
+      "zh": "碼頭人員自己的貨車",
+      "whyZh": "自己的貨車下午才會用來運空籠車。"
+    },
+    {
+      "id": "C",
+      "text": "A delivery van",
+      "zh": "一輛送貨車",
+      "whyZh": "男方明說幾分鐘後送貨車會用到這條通道。"
+    },
+    {
+      "id": "D",
+      "text": "Another flat trolley",
+      "zh": "另一輛平板推車",
+      "whyZh": "原有的推車會在維修臺待到中午；也沒提到另一輛推車會使用通道。"
+    }
+  ],
+  "explanationZh": "男方明說幾分鐘後送貨車會用到這條通道。",
+  "evidence": "In the marked square by the roller door. Keep the yellow lane clear. A delivery van will use it in a few minutes.",
+  "tags": [
+    "manufacturing",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "In the marked square by the roller door. Keep the yellow lane clear. A delivery van will use it in a few minutes."
+    }
+  ]
+}
