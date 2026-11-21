@@ -1,0 +1,68 @@
+{
+  "id": "t06-q043",
+  "testId": "test-06",
+  "number": 43,
+  "part": 3,
+  "topic": "technology",
+  "difficulty": "foundation",
+  "groupId": "t06-g041",
+  "prompt": "Why can the technician investigate later?",
+  "promptZh": "技術人員為什麼能事後調查？",
+  "answer": "D",
+  "options": [
+    {
+      "id": "A",
+      "text": "Visitors keep a copy of the check-in list.",
+      "zh": "訪客保留了一份報到名單。",
+      "whyZh": "報到名單和顯示器暫時黑屏的原因無關。"
+    },
+    {
+      "id": "B",
+      "text": "Support staff can see the fault when they arrive.",
+      "zh": "支援人員到場時可以看到故障。",
+      "whyZh": "接待人員說支援人員尚未到場，畫面就已恢復。"
+    },
+    {
+      "id": "C",
+      "text": "The laptop saves an image of the blank screen.",
+      "zh": "筆記型電腦會存下黑屏畫面。",
+      "whyZh": "筆電只用於報到，沒有提到它會擷取主螢幕畫面。"
+    },
+    {
+      "id": "D",
+      "text": "The technician can match the time of the fault to the log.",
+      "zh": "技術人員能把故障時間和日誌紀錄比對。",
+      "whyZh": "發生時先記下時間。技術人員不用親眼看到黑屏，也能在畫面恢復後依時間比對控制器紀錄。"
+    }
+  ],
+  "explanationZh": "發生時先記下時間。技術人員不用親眼看到黑屏，也能在畫面恢復後依時間比對控制器紀錄。",
+  "evidence": [
+    {
+      "turn": 3,
+      "speaker": "F",
+      "exactQuote": "We’ll use that at the counter. The main display always comes back before support arrives."
+    },
+    {
+      "turn": 4,
+      "speaker": "M",
+      "exactQuote": "Note the time if it goes blank again. I can match it to the controller log afterward."
+    }
+  ],
+  "tags": [
+    "technology",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "turn": 3,
+      "speaker": "F",
+      "exactQuote": "We’ll use that at the counter. The main display always comes back before support arrives."
+    },
+    {
+      "turn": 4,
+      "speaker": "M",
+      "exactQuote": "Note the time if it goes blank again. I can match it to the controller log afterward."
+    }
+  ]
+}

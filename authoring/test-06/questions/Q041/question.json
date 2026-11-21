@@ -1,0 +1,68 @@
+{
+  "id": "t06-q041",
+  "testId": "test-06",
+  "number": 41,
+  "part": 3,
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "groupId": "t06-g041",
+  "prompt": "Why won’t the spare screen help today?",
+  "promptZh": "備用螢幕為什麼今天派不上用場？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "Check-in takes place before the training room opens.",
+      "zh": "報到在訓練室開門前開始。",
+      "whyZh": "沒有提到訓練室開門時間。"
+    },
+    {
+      "id": "B",
+      "text": "It cannot show today’s check-in list.",
+      "zh": "它無法顯示今天的報到名單。",
+      "whyZh": "對話指出缺少必要支架；沒有說螢幕無法顯示名單。"
+    },
+    {
+      "id": "C",
+      "text": "Its stand won’t return until after check-in begins.",
+      "zh": "它的支架要等到報到開始後才會歸還。",
+      "whyZh": "今天兩點就開始報到，專用支架要等到明天才會歸還。"
+    },
+    {
+      "id": "D",
+      "text": "The technician needs it for another check-in.",
+      "zh": "技術人員要把它用在另一場報到。",
+      "whyZh": "沒有提到另一場報到。"
+    }
+  ],
+  "explanationZh": "今天兩點就開始報到，專用支架要等到明天才會歸還。",
+  "evidence": [
+    {
+      "turn": 1,
+      "speaker": "F",
+      "exactQuote": "Our reception display cut out twice. Check-in starts at two today. Can we borrow the training room screen?"
+    },
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "Its stand won’t be back until tomorrow. That screen needs it. Your laptop can show the list by itself."
+    }
+  ],
+  "tags": [
+    "technology",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "F",
+      "exactQuote": "Our reception display cut out twice. Check-in starts at two today. Can we borrow the training room screen?"
+    },
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "Its stand won’t be back until tomorrow. That screen needs it. Your laptop can show the list by itself."
+    }
+  ]
+}

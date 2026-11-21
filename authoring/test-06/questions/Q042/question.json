@@ -1,0 +1,68 @@
+{
+  "id": "t06-q042",
+  "testId": "test-06",
+  "number": 42,
+  "part": 3,
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "groupId": "t06-g041",
+  "prompt": "How will staff handle check-in today?",
+  "promptZh": "員工今天會怎麼處理報到？",
+  "answer": "A",
+  "options": [
+    {
+      "id": "A",
+      "text": "Use a laptop at the counter.",
+      "zh": "在櫃檯使用筆記型電腦。",
+      "whyZh": "技術人員說筆電可單獨顯示名單，接待人員也同意在櫃檯這麼做。"
+    },
+    {
+      "id": "B",
+      "text": "Borrow a screen and its stand.",
+      "zh": "借用一台螢幕及其支架。",
+      "whyZh": "備用螢幕須有專用支架，但支架明天才還。"
+    },
+    {
+      "id": "C",
+      "text": "Move check-in to the training room.",
+      "zh": "把報到地點移到訓練室。",
+      "whyZh": "訓練室是備用螢幕所在地，並非新報到地點。"
+    },
+    {
+      "id": "D",
+      "text": "Ask guests to come back tomorrow.",
+      "zh": "請來賓明天再來。",
+      "whyZh": "可改用筆電，沒有要延後報到。"
+    }
+  ],
+  "explanationZh": "技術人員說筆電可單獨顯示名單，接待人員也同意在櫃檯這麼做。",
+  "evidence": [
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "Its stand won’t be back until tomorrow. That screen needs it. Your laptop can show the list by itself."
+    },
+    {
+      "turn": 3,
+      "speaker": "F",
+      "exactQuote": "We’ll use that at the counter. The main display always comes back before support arrives."
+    }
+  ],
+  "tags": [
+    "technology",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "Its stand won’t be back until tomorrow. That screen needs it. Your laptop can show the list by itself."
+    },
+    {
+      "turn": 3,
+      "speaker": "F",
+      "exactQuote": "We’ll use that at the counter. The main display always comes back before support arrives."
+    }
+  ]
+}
