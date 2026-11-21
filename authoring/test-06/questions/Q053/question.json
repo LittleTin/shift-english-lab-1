@@ -1,0 +1,57 @@
+{
+  "id": "t06-q053",
+  "testId": "test-06",
+  "number": 53,
+  "part": 3,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "groupId": "t06-g053",
+  "prompt": "How does the order change?",
+  "promptZh": "訂單有什麼變動？",
+  "answer": "D",
+  "options": [
+    {
+      "id": "A",
+      "text": "It contains fewer pastries in total.",
+      "zh": "糕點總數減少了。",
+      "whyZh": "四加二仍是六個，總數未減。"
+    },
+    {
+      "id": "B",
+      "text": "All of the pastries will be plain.",
+      "zh": "全部糕點都改成原味。",
+      "whyZh": "只有兩個改原味，還有四個杏仁口味。"
+    },
+    {
+      "id": "C",
+      "text": "It adds two pastries to the original six.",
+      "zh": "在原本六個之外再加兩個。",
+      "whyZh": "原味替換掉兩個，不是加訂。"
+    },
+    {
+      "id": "D",
+      "text": "The quantity stays the same, but the mix changes.",
+      "zh": "總數維持不變，但口味組合改了。",
+      "whyZh": "原訂六個杏仁；改為四個杏仁、兩個原味，所以總數仍是六個。"
+    }
+  ],
+  "explanationZh": "原訂六個杏仁；改為四個杏仁、兩個原味，所以總數仍是六個。",
+  "evidence": "I ordered six almond pastries for festival pickup. Can I switch two to plain? My younger sister prefers plain. / Sure. Four almond, two plain. They scan your receipt at pickup, so keep the original code.",
+  "tags": [
+    "daily",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "F",
+      "exactQuote": "I ordered six almond pastries for festival pickup. Can I switch two to plain? My younger sister prefers plain."
+    },
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "Sure. Four almond, two plain. They scan your receipt at pickup, so keep the original code."
+    }
+  ]
+}

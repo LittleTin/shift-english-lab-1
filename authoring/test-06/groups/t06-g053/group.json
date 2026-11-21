@@ -1,0 +1,56 @@
+{
+  "id": "t06-g053",
+  "testId": "test-06",
+  "part": 3,
+  "topic": "daily",
+  "title": "Updating a pastry pickup order",
+  "titleZh": "更改糕點取貨訂單",
+  "locale": "en-SG",
+  "turns": [
+    {
+      "speaker": "F",
+      "text": "I ordered six almond pastries for festival pickup. Can I switch two to plain? My younger sister prefers plain.",
+      "zh": "我預訂了六個杏仁糕點，要在活動現場領取。可以把其中兩個改成原味嗎？我妹妹比較喜歡原味。",
+      "role": "festival customer"
+    },
+    {
+      "speaker": "M",
+      "text": "Sure. Four almond, two plain. They scan your receipt at pickup, so keep the original code.",
+      "zh": "可以。四個杏仁、兩個原味。取貨時會掃描憑單，所以請留著原取貨碼。",
+      "role": "bakery counter worker"
+    },
+    {
+      "speaker": "F",
+      "text": "My older brother’s collecting it. How can he check they’ve given him the changed order?",
+      "zh": "我哥哥會代領。他怎麼確認拿到的是改過的訂單？",
+      "role": "festival customer"
+    },
+    {
+      "speaker": "M",
+      "text": "I’ll write the varieties and quantities on the seal. Have him check it before he leaves.",
+      "zh": "我會把口味和各自數量寫在封條上。請他離開前核對。",
+      "role": "bakery counter worker"
+    }
+  ],
+  "passage": "F: I ordered six almond pastries for festival pickup. Can I switch two to plain? My younger sister prefers plain.\nM: Sure. Four almond, two plain. They scan your receipt at pickup, so keep the original code.\nF: My older brother’s collecting it. How can he check they’ve given him the changed order?\nM: I’ll write the varieties and quantities on the seal. Have him check it before he leaves.",
+  "passageZh": "女方：我預訂了六個杏仁糕點，要在活動現場領取。可以把其中兩個改成原味嗎？我妹妹比較喜歡原味。\n男方：可以。四個杏仁、兩個原味。取貨時會掃描憑單，所以請留著原取貨碼。\n女方：我哥哥會代領。他怎麼確認拿到的是改過的訂單？\n男方：我會把口味和各自數量寫在封條上。請他離開前核對。",
+  "spokenWords": 66,
+  "audioSpeakers": [
+    {
+      "speaker": "F",
+      "locale": "en-SG",
+      "role": "festival customer",
+      "modelVoice": "en-SG-LunaNeural"
+    },
+    {
+      "speaker": "M",
+      "locale": "en-SG",
+      "role": "bakery counter worker",
+      "modelVoice": "en-SG-WayneNeural"
+    }
+  ],
+  "audio": "audio/practice-groups/test-06/t06-g053.ogg",
+  "audioStart": 0,
+  "audioEnd": 36.3375,
+  "duration": 36.3375
+}
