@@ -1,0 +1,53 @@
+{
+  "id": "t06-q091",
+  "testId": "test-06",
+  "number": 91,
+  "part": 4,
+  "groupId": "t06-g089",
+  "prompt": "A taped fold stays shut. Why is that result inconclusive?",
+  "promptZh": "貼了膠帶的紙箱摺邊維持閉合。為什麼這個結果不能確定紙箱是否通過檢查？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "The test only checks whether the tape sticks to the carton.",
+      "zh": "這項檢查只確認膠帶是否黏得住。",
+      "whyZh": "檢查的是摺邊能否自行維持閉合，不是膠帶的黏性。"
+    },
+    {
+      "id": "B",
+      "text": "A machine fold must first be tested with the same tape.",
+      "zh": "必須先用同一種膠帶測試機器摺出的紙箱。",
+      "whyZh": "本步驟先手摺並在桌上鬆手，不應使用膠帶；觀察機器是摺邊自行閉合時才走的分支。"
+    },
+    {
+      "id": "C",
+      "text": "The tape could be holding a fold that would otherwise spring open.",
+      "zh": "膠帶可能固定住本來會彈開的摺邊。",
+      "whyZh": "檢查要在未貼膠帶的情況下判斷摺邊會不會自行彈開；已貼膠帶的結果無法分辨是摺痕還是膠帶讓它閉合。"
+    },
+    {
+      "id": "D",
+      "text": "Only a taped carton that opens counts as a usable sample for the materials team.",
+      "zh": "材料小組只會採用貼了膠帶但仍彈開的紙箱當樣本。",
+      "whyZh": "若未貼膠帶的手摺紙箱彈開，須保留同一疊的平坦紙箱坯，而不是交出貼過膠帶的紙箱。"
+    }
+  ],
+  "explanationZh": "檢查要在未貼膠帶的情況下判斷摺邊會不會自行彈開；已貼膠帶的結果無法分辨是摺痕還是膠帶讓它閉合。",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "evidence": "Skip the tape for this check: it would hide whether the edge stays closed on its own.",
+  "tags": [
+    "manufacturing",
+    "talk"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "speaker": "Narrator",
+      "exactQuote": "Skip the tape for this check: it would hide whether the edge stays closed on its own.",
+      "startChar": 277,
+      "endChar": 362
+    }
+  ]
+}

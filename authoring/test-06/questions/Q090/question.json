@@ -1,0 +1,53 @@
+{
+  "id": "t06-q090",
+  "testId": "test-06",
+  "number": 90,
+  "part": 4,
+  "groupId": "t06-g089",
+  "prompt": "The hand-folded carton springs open. What should the worker do?",
+  "promptZh": "手摺的紙箱彈開了。同仁應該怎麼做？",
+  "answer": "A",
+  "options": [
+    {
+      "id": "A",
+      "text": "Keep an unused blank from the same stack for review",
+      "zh": "從同一疊取一張尚未使用的紙箱坯留待檢查",
+      "whyZh": "手摺後也彈開，就要從同一疊保留尚未成形的紙箱坯，供材料小組檢查。"
+    },
+    {
+      "id": "B",
+      "text": "Ask the line lead to watch a machine cycle instead",
+      "zh": "改請產線組長觀察機器的下一個運轉循環。",
+      "whyZh": "手摺後摺邊維持閉合時，才請產線組長觀察下一個機器循環。"
+    },
+    {
+      "id": "C",
+      "text": "Put the carton back into the machine immediately",
+      "zh": "立刻把紙箱放回成形機",
+      "whyZh": "流程要求留一張紙箱坯，不是把試過的紙箱放回機器。"
+    },
+    {
+      "id": "D",
+      "text": "Send the whole stack directly to shipping",
+      "zh": "把整疊直接送到出貨區",
+      "whyZh": "材料小組要先看紙箱坯；沒有要求送去出貨。"
+    }
+  ],
+  "explanationZh": "手摺後也彈開，就要從同一疊保留尚未成形的紙箱坯，供材料小組檢查。",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "evidence": "If the edge springs open, keep a flat blank from the same stack for the materials team.",
+  "tags": [
+    "manufacturing",
+    "talk"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "speaker": "Narrator",
+      "exactQuote": "If the edge springs open, keep a flat blank from the same stack for the materials team.",
+      "startChar": 125,
+      "endChar": 212
+    }
+  ]
+}
