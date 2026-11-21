@@ -1,0 +1,209 @@
+{
+  "status": "Verified staged Part 2 subset only; not full exam, app or mobile approval",
+  "questions": [
+    14,
+    15
+  ],
+  "voiceProvenance": "Original scored prompt PCM retained and source response repaired only; both modes share each verified scored PCM. Same US roles and authored wording; explicit letter articulation for both, explicit possessive /z/ and short boundary for Q014.",
+  "asr": {
+    "q014": "Unprompted local Whisper small.en decoded both exact Opus recovered labels and actual words; 'stations, scale' spelling normalizes to possessive station’s scale, unlike previous omitted /z/. Actual Number Fourteen cue verified.",
+    "q015": "Unprompted local Whisper small.en exact A/B/C and actual words on both decoded Opus, with answer-critical by sunset on Sunday. Actual Number Fifteen cue verified."
+  },
+  "native": {
+    "fixtureType": "Private exact-byte Chromium harness, not app or physical device",
+    "trustedStartsNearZero": 4,
+    "firstPlayingSeconds": [
+      0.0002,
+      0,
+      0,
+      0
+    ],
+    "naturalEnds": 4,
+    "rate": 1,
+    "unexpectedMediaEvents": 0,
+    "seekEvents": 0,
+    "http206ExactPrefixes": 4,
+    "order": [
+      "q014-practice",
+      "q014-formal",
+      "q015-practice",
+      "q015-formal"
+    ],
+    "endSeconds": [
+      18.8215,
+      25.3453,
+      17.869,
+      24.386
+    ],
+    "practicePauseResume": [
+      0.2132,
+      0.2773
+    ]
+  },
+  "media": {
+    "14": {
+      "practice": {
+        "speechSamples": 711120,
+        "decodedSamples": 903120,
+        "edgePeak": [
+          0,
+          1
+        ],
+        "opusSha256": "9a9b726951b128b6398cbb54d6558959c28d7dcd3e0c17280764f3f8565cc50a",
+        "decodedSha256": "c54d10ad135bd49fd6cf01465957d1256f3ec778a2d5be58ee39ba3a645a67db",
+        "bytes": 79935,
+        "frames": [
+          {
+            "role": "lead",
+            "start": 0,
+            "end": 96000,
+            "sha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "newSpeech",
+            "start": 96000,
+            "end": 807120,
+            "sha256": "592d6606f5fedd7cf3cc8c4fadb906daea9553da347d1d4d407f2a7be32944c1"
+          },
+          {
+            "role": "tail",
+            "start": 807120,
+            "end": 903120,
+            "sha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      },
+      "formal": {
+        "speechSamples": 711120,
+        "decodedSamples": 1216264,
+        "edgePeak": [
+          0,
+          1
+        ],
+        "opusSha256": "06ad08329a48df7909a4ad6874591ebdfce26f5b53ee9a8f46a2c5d64c25e126",
+        "decodedSha256": "28bb7238c55f32e6ca46bcb21566100b491c1e39d2461e271e8595e7e8254ed1",
+        "bytes": 101045,
+        "frames": [
+          {
+            "role": "lead",
+            "start": 0,
+            "end": 96000,
+            "sha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "codecRunway",
+            "start": 96000,
+            "end": 96960,
+            "sha256": "155e437b946ac82ae591ff382b8d19efda9397b2282672dbabd91ec31ce8a651"
+          },
+          {
+            "role": "numberCue",
+            "start": 96960,
+            "end": 145144,
+            "sha256": "f3ae55abacaa68949ccbbf69260d13ed56cd6a34c41cda48fa0661df99b8ee18"
+          },
+          {
+            "role": "newSpeech",
+            "start": 145144,
+            "end": 856264,
+            "sha256": "592d6606f5fedd7cf3cc8c4fadb906daea9553da347d1d4d407f2a7be32944c1"
+          },
+          {
+            "role": "tail",
+            "start": 856264,
+            "end": 952264,
+            "sha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "answerWait",
+            "start": 952264,
+            "end": 1216264,
+            "sha256": "68ca649d2d4a35df77d47fd04795aa2a18fc3f522455fb772d19bb0de66cbaf7"
+          }
+        ]
+      }
+    },
+    "15": {
+      "practice": {
+        "speechSamples": 665400,
+        "decodedSamples": 857400,
+        "edgePeak": [
+          0,
+          1
+        ],
+        "opusSha256": "f37a6c897b164000b9811713254edb1b94b0168a3265b69c590988be10a44547",
+        "decodedSha256": "6b0fb1b49a80045a1be111d465fe465d7c0fcbdce9ccb9a3694aab19e02b0241",
+        "bytes": 73307,
+        "frames": [
+          {
+            "role": "lead",
+            "start": 0,
+            "end": 96000,
+            "sha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "newSpeech",
+            "start": 96000,
+            "end": 761400,
+            "sha256": "14a64d71960a63cdd23020c502b103e2fe9227a4bcd255e4ab623d43f6ddde49"
+          },
+          {
+            "role": "tail",
+            "start": 761400,
+            "end": 857400,
+            "sha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      },
+      "formal": {
+        "speechSamples": 665400,
+        "decodedSamples": 1170216,
+        "edgePeak": [
+          0,
+          1
+        ],
+        "opusSha256": "11794f826719fdf2f5c40c8b55686957ec6ad1c4541d7b2453ee43c0d7e806bc",
+        "decodedSha256": "27c569ec5ea52523aa26eaf4d8672e28b9c6fcb73df6f310d588a5a090832910",
+        "bytes": 94349,
+        "frames": [
+          {
+            "role": "lead",
+            "start": 0,
+            "end": 96000,
+            "sha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "codecRunway",
+            "start": 96000,
+            "end": 96960,
+            "sha256": "155e437b946ac82ae591ff382b8d19efda9397b2282672dbabd91ec31ce8a651"
+          },
+          {
+            "role": "numberCue",
+            "start": 96960,
+            "end": 144816,
+            "sha256": "8a90b8601d58928aae53902051bde2834de54bd7515e52c1ecbb71a93072fc27"
+          },
+          {
+            "role": "newSpeech",
+            "start": 144816,
+            "end": 810216,
+            "sha256": "14a64d71960a63cdd23020c502b103e2fe9227a4bcd255e4ab623d43f6ddde49"
+          },
+          {
+            "role": "tail",
+            "start": 810216,
+            "end": 906216,
+            "sha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "answerWait",
+            "start": 906216,
+            "end": 1170216,
+            "sha256": "68ca649d2d4a35df77d47fd04795aa2a18fc3f522455fb772d19bb0de66cbaf7"
+          }
+        ]
+      }
+    }
+  }
+}
