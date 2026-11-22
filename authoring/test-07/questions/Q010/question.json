@@ -1,0 +1,48 @@
+{
+  "id": "t07-q010",
+  "testId": "test-07",
+  "number": 10,
+  "part": 2,
+  "topic": "daily",
+  "difficulty": "foundation",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽錄音，選出最適當的回應。",
+  "spokenPrompt": "How long can I borrow this folding table?",
+  "spokenPromptZh": "這張折疊桌我能借多久？",
+  "options": [
+    {
+      "id": "A",
+      "text": "It folds flat for storage.",
+      "zh": "它可以摺平存放。",
+      "whyZh": "這說明如何收納折疊桌，不是可借用多久。"
+    },
+    {
+      "id": "B",
+      "text": "Until Monday, if no one else needs it sooner.",
+      "zh": "可以借到星期一，前提是沒有人更早需要它。",
+      "whyZh": "until Monday 給出可借到何時，後半句補充可能提早歸還的條件。"
+    },
+    {
+      "id": "C",
+      "text": "We have a smaller one in the closet.",
+      "zh": "置物櫃裡有一張比較小的。",
+      "whyZh": "另一張桌子的大小及位置與這一張可借多久無關。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "until Monday 給出可借到何時，後半句補充可能提早歸還的條件。",
+  "evidence": "How long can I borrow this folding table? / Until Monday, if no one else needs it sooner.",
+  "tags": [
+    "daily",
+    "question_response"
+  ],
+  "revision": 1,
+  "groupId": "t07-g010",
+  "vocabulary": [
+    {
+      "term": "until Monday",
+      "zh": "直到星期一",
+      "note": "until 引出一段借用期限的終點。"
+    }
+  ]
+}
