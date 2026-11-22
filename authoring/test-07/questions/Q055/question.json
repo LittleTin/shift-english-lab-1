@@ -1,0 +1,69 @@
+{
+  "id": "t07-q055",
+  "testId": "test-07",
+  "number": 55,
+  "part": 3,
+  "groupId": "t07-g053",
+  "prompt": "What should the technician do with the board whose mark is covered?",
+  "promptZh": "技術員應如何處理版本標記被蓋住的那片板子？",
+  "answer": "C",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidence": "Leave any board with an unreadable mark out of both counts. / Leave the label in place. / Set that board aside on the inspection shelf, and tell the inspector where the label covers the mark.",
+  "evidenceSpans": [
+    {
+      "turn": 2,
+      "speaker": "F",
+      "exactQuote": "Leave any board with an unreadable mark out of both counts."
+    },
+    {
+      "turn": 4,
+      "speaker": "F",
+      "exactQuote": "Leave the label in place."
+    },
+    {
+      "turn": 4,
+      "speaker": "F",
+      "exactQuote": "Set that board aside on the inspection shelf, and tell the inspector where the label covers the mark."
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "text": "Add it to the same revision as the first board.",
+      "zh": "把它算入第一片板所屬的版本。",
+      "whyZh": "無法讀到標記的板不能先算入任何版本，即使外箱批號一樣。"
+    },
+    {
+      "id": "B",
+      "text": "Peel off the label and return the board to the carton.",
+      "zh": "撕掉貼紙，再把板子放回外箱。",
+      "whyZh": "女方要求不要撕貼紙，並指定把板子放到待檢架。"
+    },
+    {
+      "id": "C",
+      "text": "Keep the label on, exclude it from the counts, and put it aside for inspection.",
+      "zh": "保留貼紙，不列入任何一個版本的數量，並把板子分開等候檢驗。",
+      "whyZh": "看不清楚標記就不得計入任何一欄；女方另要求保留貼紙、送待檢架並通知檢驗員。"
+    },
+    {
+      "id": "D",
+      "text": "Count it in both revisions before sending it directly to production.",
+      "zh": "兩個版本都計入，再直接送去生產。",
+      "whyZh": "未辨認的板兩欄都不能加數，也不能略過待檢流程。"
+    }
+  ],
+  "explanationZh": "看不清楚標記就不得計入任何一欄；女方另要求保留貼紙、送待檢架並通知檢驗員。",
+  "vocabulary": [
+    {
+      "term": "set aside",
+      "zh": "先放一邊",
+      "note": "此處指先分開留待查驗，不混入已有確認結果的庫存。"
+    }
+  ]
+}

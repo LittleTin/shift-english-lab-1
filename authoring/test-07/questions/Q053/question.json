@@ -1,0 +1,59 @@
+{
+  "id": "t07-q053",
+  "testId": "test-07",
+  "number": 53,
+  "part": 3,
+  "groupId": "t07-g053",
+  "prompt": "What is the same on the two cartons?",
+  "promptZh": "兩個外箱上的哪項資訊相同？",
+  "answer": "B",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidence": "We got two items in separate shipping boxes. Each box has the same lot number.",
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "M",
+      "exactQuote": "We got two items in separate shipping boxes. Each box has the same lot number."
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "text": "The name of the receiving technician.",
+      "zh": "進料技術員的姓名。",
+      "whyZh": "男方提到外箱上的批號，沒有說箱上有技術員的姓名。"
+    },
+    {
+      "id": "B",
+      "text": "The lot number.",
+      "zh": "批號。",
+      "whyZh": "男方一開始就說兩個外箱有同一個批號。"
+    },
+    {
+      "id": "C",
+      "text": "A handwritten inspection date.",
+      "zh": "一個手寫的查驗日期。",
+      "whyZh": "對話沒有提到外箱上有任何手寫日期，無法據此比較。"
+    },
+    {
+      "id": "D",
+      "text": "A mark identifying the board revision.",
+      "zh": "用來辨認板子版本的標記。",
+      "whyZh": "版本標記在板子的安裝孔旁，不是外箱上用來辨認版本的資訊。"
+    }
+  ],
+  "explanationZh": "男方一開始就說兩個外箱有同一個批號。",
+  "vocabulary": [
+    {
+      "term": "lot number",
+      "zh": "批號",
+      "note": "用來辨別生產或到貨批次。"
+    }
+  ]
+}

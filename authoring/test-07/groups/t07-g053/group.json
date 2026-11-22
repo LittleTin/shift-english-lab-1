@@ -1,0 +1,56 @@
+{
+  "id": "t07-g053",
+  "testId": "test-07",
+  "part": 3,
+  "topic": "manufacturing",
+  "title": "Separating mixed revisions at receiving",
+  "titleZh": "進料時區分混在一起的版本",
+  "turns": [
+    {
+      "speaker": "M",
+      "text": "We got two items in separate shipping boxes. Each box has the same lot number. The packing list shows two revisions, but the items look the same. Should I put them in one bin?",
+      "zh": "我們收到兩件分開裝箱的貨。兩個外箱上的批號一樣。裝箱明細列了兩個版本，但這兩件貨看起來一樣。我該把它們放進同一個料盒嗎？",
+      "role": "receiving technician"
+    },
+    {
+      "speaker": "F",
+      "text": "No. Use the small revision mark next to the mounting hole, not the lot number on the box. Enter a separate count for each revision. Leave any board with an unreadable mark out of both counts.",
+      "zh": "不要。要看安裝孔旁的小型版本標記，而不是外箱上的批號。每個版本的數量要分開登記。標記無法辨讀的板子，兩個版本都不要計入。",
+      "role": "production lead"
+    },
+    {
+      "speaker": "M",
+      "text": "I can read the revision mark on the first card. A label hides the mark on the second card. Should I take the label off?",
+      "zh": "我看得清楚第一片板的版本標記。第二片板的標記被貼紙蓋住了。我該把貼紙撕掉嗎？",
+      "role": "receiving technician"
+    },
+    {
+      "speaker": "F",
+      "text": "Leave the label in place. Set that board aside on the inspection shelf, and tell the inspector where the label covers the mark.",
+      "zh": "不要撕下貼紙。把那片板另外放到待檢架上，並告訴檢驗員貼紙蓋住了哪裡的標記。",
+      "role": "production lead"
+    }
+  ],
+  "passage": "M: We got two items in separate shipping boxes. Each box has the same lot number. The packing list shows two revisions, but the items look the same. Should I put them in one bin?\nF: No. Use the small revision mark next to the mounting hole, not the lot number on the box. Enter a separate count for each revision. Leave any board with an unreadable mark out of both counts.\nM: I can read the revision mark on the first card. A label hides the mark on the second card. Should I take the label off?\nF: Leave the label in place. Set that board aside on the inspection shelf, and tell the inspector where the label covers the mark.",
+  "passageZh": "M：我們收到兩件分開裝箱的貨。兩個外箱上的批號一樣。裝箱明細列了兩個版本，但這兩件貨看起來一樣。我該把它們放進同一個料盒嗎？\nF：不要。要看安裝孔旁的小型版本標記，而不是外箱上的批號。每個版本的數量要分開登記。標記無法辨讀的板子，兩個版本都不要計入。\nM：我看得清楚第一片板的版本標記。第二片板的標記被貼紙蓋住了。我該把貼紙撕掉嗎？\nF：不要撕下貼紙。把那片板另外放到待檢架上，並告訴檢驗員貼紙蓋住了哪裡的標記。",
+  "audioScript": "M: We got two items in separate shipping boxes. Each box has the same lot number. The packing list shows two revisions, but the items look the same. Should I put them in one bin?\nF: No. Use the small revision mark next to the mounting hole, not the lot number on the box. Enter a separate count for each revision. Leave any board with an unreadable mark out of both counts.\nM: I can read the revision mark on the first card. A label hides the mark on the second card. Should I take the label off?\nF: Leave the label in place. Set that board aside on the inspection shelf, and tell the inspector where the label covers the mark.",
+  "spokenWords": 118,
+  "audioSpeakers": [
+    {
+      "speaker": "M",
+      "locale": "en-NG",
+      "role": "receiving technician",
+      "modelVoice": "en-NG-AbeoNeural"
+    },
+    {
+      "speaker": "F",
+      "locale": "en-TZ",
+      "role": "production lead",
+      "modelVoice": "en-TZ-ImaniNeural"
+    }
+  ],
+  "audio": "audio/practice-groups/test-07/t07-g053.ogg",
+  "audioStart": 0,
+  "audioEnd": 49.58508333333333,
+  "duration": 49.58508333333333
+}

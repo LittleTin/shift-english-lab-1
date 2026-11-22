@@ -1,0 +1,59 @@
+{
+  "id": "t07-q054",
+  "testId": "test-07",
+  "number": 54,
+  "part": 3,
+  "groupId": "t07-g053",
+  "prompt": "How should the technician identify a board’s revision?",
+  "promptZh": "技術員應如何辨認板子的版本？",
+  "answer": "A",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidence": "Use the small revision mark next to the mounting hole, not the lot number on the box.",
+  "evidenceSpans": [
+    {
+      "turn": 2,
+      "speaker": "F",
+      "exactQuote": "Use the small revision mark next to the mounting hole, not the lot number on the box."
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "text": "Look for a small mark beside a mounting hole.",
+      "zh": "查看安裝孔旁的小標記。",
+      "whyZh": "女方直接指定這個位置的標記才是判斷版本的依據。"
+    },
+    {
+      "id": "B",
+      "text": "Compare the color of the tops of the two boards.",
+      "zh": "比對兩片板子上表面的顏色。",
+      "whyZh": "男方說從上方看相同，女方也沒有要靠顏色辨認。"
+    },
+    {
+      "id": "C",
+      "text": "Use the lot number shown on the carton.",
+      "zh": "看外箱上的批號。",
+      "whyZh": "女方明確排除外箱號碼；同批號可能包含不同版本。"
+    },
+    {
+      "id": "D",
+      "text": "Use only the revision listed first on the packing sheet.",
+      "zh": "只採用裝箱明細上最先列出的版本。",
+      "whyZh": "明細上有兩個版本，排列順序不能辨認眼前個別板子。"
+    }
+  ],
+  "explanationZh": "女方直接指定這個位置的標記才是判斷版本的依據。",
+  "vocabulary": [
+    {
+      "term": "mounting hole",
+      "zh": "安裝孔",
+      "note": "用於固定零件或板子的孔。"
+    }
+  ]
+}
