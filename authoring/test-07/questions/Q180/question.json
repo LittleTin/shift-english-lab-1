@@ -1,0 +1,52 @@
+{
+  "id": "t07-q180",
+  "testId": "test-07",
+  "number": 180,
+  "part": 7,
+  "groupId": "t07-r-p7-08",
+  "revision": 1,
+  "topic": "work",
+  "difficulty": "advanced",
+  "tags": [
+    "double-passage",
+    "work"
+  ],
+  "prompt": "Evan applied the Held status in Pine but then opened Cedar before recording. How can he still capture a clip showing that order in Held?",
+  "promptZh": "Evan 在松木中將訂單標為「暫緩」，卻在錄影前先打開了雪松。他要如何補錄，才能讓片段顯示該筆訂單為「暫緩」？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Open Replay, stop at the first rush, and change the order to Held.",
+      "zh": "進入重播，在第一波尖峰暫停，再把訂單改成「暫緩」。",
+      "whyZh": "暫停重播不會開放編輯，第一波尖峰也屬於另一段影片。"
+    },
+    {
+      "id": "B",
+      "text": "Resume Pine and rely on the previous Held edit still being there.",
+      "zh": "回到松木，使用仍留在畫面上的原「暫緩」變更。",
+      "whyZh": "切換到雪松已捨棄原情境的變更，回去不能依賴原先的狀態。"
+    },
+    {
+      "id": "C",
+      "text": "Use the live dashboard because the fictional order is no longer editable.",
+      "zh": "因為不能再編輯這筆虛構訂單，改錄即時儀表板。",
+      "whyZh": "Evan 說兩段都不能用即時儀表板；預覽的虛構訂單仍可以再次編輯。"
+    },
+    {
+      "id": "D",
+      "text": "Open Pine again, make the status change in Preview, and record it before switching.",
+      "zh": "重新開啟松木，在預覽中再改一次狀態，切換前錄下。",
+      "whyZh": "原變更已因切換情境而遺失；預覽允許再改，應在改換情境前拍下畫面。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "原變更已因切換情境而遺失；預覽允許再改，應在改換情境前拍下畫面。",
+  "evidence": "You can change their status to demonstrate the editing controls. / If you select a different preview scenario, the edits from the previous scenario are discarded. / Use the Pine preview first. / Choose the new status, then record the revised row before you open the Cedar preview.",
+  "vocabulary": [
+    {
+      "term": "a preview scenario",
+      "zh": "預覽情境",
+      "note": "指供示範使用的一組虛構訂單與操作環境。"
+    }
+  ]
+}

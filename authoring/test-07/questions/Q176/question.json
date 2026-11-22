@@ -1,0 +1,52 @@
+{
+  "id": "t07-q176",
+  "testId": "test-07",
+  "number": 176,
+  "part": 7,
+  "groupId": "t07-r-p7-08",
+  "revision": 1,
+  "topic": "work",
+  "difficulty": "foundation",
+  "tags": [
+    "double-passage",
+    "work"
+  ],
+  "prompt": "According to the guide, what does Replay mode allow a presenter to do?",
+  "promptZh": "根據指南，重播模式允許示範者做什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Edit a fictional order’s status during the replay",
+      "zh": "在重播過程中編輯虛構訂單的狀態",
+      "whyZh": "重播模式的編輯功能已停用；能改狀態的是預覽模式。"
+    },
+    {
+      "id": "B",
+      "text": "Skip to a later point in the saved sequence",
+      "zh": "跳到已儲存序列的後段",
+      "whyZh": "指南明確說重播可暫停，也可跳到時間較晚的位置。"
+    },
+    {
+      "id": "C",
+      "text": "Replace the first group of orders with customer orders",
+      "zh": "以客戶的訂單替換第一批訂單",
+      "whyZh": "重播用的是儲存的虛構訂單序列；沒有以真實客戶訂單替換的功能。"
+    },
+    {
+      "id": "D",
+      "text": "Save a different status to all orders after a pause",
+      "zh": "暫停之後把所有訂單儲存成另一種狀態",
+      "whyZh": "暫停是播放控制，不會開放編輯功能，更不會一次寫入所有訂單。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "指南明確說重播可暫停，也可跳到時間較晚的位置。",
+  "evidence": "You may pause the sequence or jump to a later point, but the editing controls are disabled.",
+  "vocabulary": [
+    {
+      "term": "jump to",
+      "zh": "跳到",
+      "note": "此處指媒體或時間序列的定位，不是移動訂單。"
+    }
+  ]
+}
