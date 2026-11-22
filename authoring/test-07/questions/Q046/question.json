@@ -1,0 +1,69 @@
+{
+  "id": "t07-q046",
+  "testId": "test-07",
+  "number": 46,
+  "part": 3,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "groupId": "t07-g044",
+  "prompt": "Which plan matches what the man says about both sessions?",
+  "promptZh": "哪項安排符合男方對兩個時段的說明？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "Leave the towel in the same locker and exchange bands when she returns.",
+      "zh": "把毛巾留在原來的置物櫃，回來時再換腕帶。",
+      "whyZh": "時段之間會關閉，必須先取走全部物品，不能留毛巾。"
+    },
+    {
+      "id": "B",
+      "text": "Open the locker now, then put the things back before the evening class.",
+      "zh": "現在打開置物櫃，再在晚上上課前把東西放回去。",
+      "whyZh": "服務員要她清空原櫃；回來時再取得可用空櫃的腕帶，不是繼續佔用原櫃。"
+    },
+    {
+      "id": "C",
+      "text": "Remove all belongings now and get a band for an empty locker later.",
+      "zh": "現在取走所有物品，稍後再領取可用於空櫃的腕帶。",
+      "whyZh": "中間關閉使原櫃不得跨時段使用；回來後可領腕帶使用當時的空櫃。"
+    },
+    {
+      "id": "D",
+      "text": "Ask for a new band now while keeping the original locker occupied.",
+      "zh": "現在就要求新腕帶，同時繼續占用原來的置物櫃。",
+      "whyZh": "服務員說原櫃仍有物品時不另發腕帶，並要求立即清空。"
+    }
+  ],
+  "explanationZh": "中間關閉使原櫃不得跨時段使用；回來後可領腕帶使用當時的空櫃。",
+  "evidence": "We don’t issue a new band while the same locker is occupied. / The pool closes between sessions, so please collect everything now. / You can get a band for an empty locker when you come back.",
+  "tags": [
+    "daily",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "We don’t issue a new band while the same locker is occupied."
+    },
+    {
+      "turn": 4,
+      "speaker": "M",
+      "exactQuote": "The pool closes between sessions, so please collect everything now."
+    },
+    {
+      "turn": 4,
+      "speaker": "M",
+      "exactQuote": "You can get a band for an empty locker when you come back."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "between sessions",
+      "zh": "兩個時段之間",
+      "note": "指前一時段結束、下一時段開始前的空檔。"
+    }
+  ]
+}

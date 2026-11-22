@@ -1,0 +1,59 @@
+{
+  "id": "t07-q047",
+  "testId": "test-07",
+  "number": 47,
+  "part": 3,
+  "groupId": "t07-g047",
+  "prompt": "What is wrong with the pale blue swatch the supplier sent?",
+  "promptZh": "供應商送來的淺藍色樣片有什麼問題？",
+  "answer": "B",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "manufacturing",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidence": "the blue sample was made with a different material from the one in our order.",
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "F",
+      "exactQuote": "the blue sample was made with a different material from the one in our order."
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "text": "It was sent to the wrong customer.",
+      "zh": "它被寄給了錯誤的客戶。",
+      "whyZh": "對話沒有送錯人的情節，問題出在樣片材料。"
+    },
+    {
+      "id": "B",
+      "text": "It uses a different material from the one in the order.",
+      "zh": "它採用的材料與訂單上的材料不同。",
+      "whyZh": "女方直接說藍色樣片不是用訂單指定的材料做的。"
+    },
+    {
+      "id": "C",
+      "text": "It was lost after the supplier shipped it.",
+      "zh": "供應商寄送後遺失了。",
+      "whyZh": "供應商已寄來三種顏色的樣片，藍色樣片也在其中。"
+    },
+    {
+      "id": "D",
+      "text": "It is darker than the shade of blue the customer chose.",
+      "zh": "它的藍色比客戶選的色調更深。",
+      "whyZh": "女方說的是樣片材料不符訂單，沒說藍色太深。"
+    }
+  ],
+  "explanationZh": "女方直接說藍色樣片不是用訂單指定的材料做的。",
+  "vocabulary": [
+    {
+      "term": "a swatch",
+      "zh": "樣片",
+      "note": "用於檢查顏色或材質的小片實物。"
+    }
+  ]
+}

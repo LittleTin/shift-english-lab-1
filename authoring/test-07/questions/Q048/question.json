@@ -1,0 +1,64 @@
+{
+  "id": "t07-q048",
+  "testId": "test-07",
+  "number": 48,
+  "part": 3,
+  "groupId": "t07-g047",
+  "prompt": "Why can’t they use the grey swatch to approve production?",
+  "promptZh": "為什麼不能用灰色樣片來核准量產？",
+  "answer": "D",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "manufacturing",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidence": "A color sample is only useful here if it’s on the specified material. / The grey one is right, but it isn’t the color the customer chose.",
+  "evidenceSpans": [
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "A color sample is only useful here if it’s on the specified material."
+    },
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "The grey one is right, but it isn’t the color the customer chose."
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "text": "The grey swatch will arrive too late.",
+      "zh": "灰色樣片會太晚送到。",
+      "whyZh": "灰色樣片已到貨，沒有到得太晚的說法。"
+    },
+    {
+      "id": "B",
+      "text": "The grey material is not the specified material.",
+      "zh": "灰色樣片的材料不符規格。",
+      "whyZh": "男方明說灰色的材料正確；問題是顏色。"
+    },
+    {
+      "id": "C",
+      "text": "The grey swatch has not been sent yet.",
+      "zh": "灰色樣片還沒寄出。",
+      "whyZh": "供應商三種顏色的樣片都已寄來，現況不是缺灰色樣片。"
+    },
+    {
+      "id": "D",
+      "text": "Grey is not the color selected by the customer.",
+      "zh": "灰色不是客戶選的顏色。",
+      "whyZh": "雖然灰色樣片的材料正確，灰色卻不是客戶選的顏色。"
+    }
+  ],
+  "explanationZh": "雖然灰色樣片的材料正確，灰色卻不是客戶選的顏色。",
+  "vocabulary": [
+    {
+      "term": "specified material",
+      "zh": "指定材料",
+      "note": "此處指採購或生產訂單內明確要求的材料。"
+    }
+  ]
+}

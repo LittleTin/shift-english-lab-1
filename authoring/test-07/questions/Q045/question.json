@@ -1,0 +1,59 @@
+{
+  "id": "t07-q045",
+  "testId": "test-07",
+  "number": 45,
+  "part": 3,
+  "topic": "daily",
+  "difficulty": "foundation",
+  "groupId": "t07-g044",
+  "prompt": "If the attendant cannot read the existing band, what will he ask the woman to do?",
+  "promptZh": "如果服務員讀不到現有的腕帶，會請女方做什麼？",
+  "answer": "A",
+  "options": [
+    {
+      "id": "A",
+      "text": "Describe the items inside the locker.",
+      "zh": "描述置物櫃裡的物品。",
+      "whyZh": "男方說讀不到腕帶時，會在開櫃前先請她描述櫃內物品。"
+    },
+    {
+      "id": "B",
+      "text": "Give the name of her swimming instructor.",
+      "zh": "提供游泳教練的姓名。",
+      "whyZh": "開啟置物櫃的步驟沒有提到教練姓名。"
+    },
+    {
+      "id": "C",
+      "text": "Wait for another person to empty the locker.",
+      "zh": "等其他人把置物櫃清空。",
+      "whyZh": "服務員要她先描述物品，沒有要求別人代清。"
+    },
+    {
+      "id": "D",
+      "text": "Return in the evening with a replacement band.",
+      "zh": "晚上帶替換腕帶回來。",
+      "whyZh": "他要她現在取走物品，不是換腕帶後晚上才來開原櫃。"
+    }
+  ],
+  "explanationZh": "男方說讀不到腕帶時，會在開櫃前先請她描述櫃內物品。",
+  "evidence": "If the band can’t be read, I’ll ask you to describe what is in the locker before I open it.",
+  "tags": [
+    "daily",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "If the band can’t be read, I’ll ask you to describe what is in the locker before I open it."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "describe what is in the locker",
+      "zh": "描述置物櫃裡有什麼",
+      "note": "工作人員會先請使用者說明櫃內物品，再協助開櫃。"
+    }
+  ]
+}
