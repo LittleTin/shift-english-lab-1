@@ -46,7 +46,7 @@
       "uuid": "90b8c524-81d2-5e79-873c-4d915de2eba1"
     },
     "authoring/test-08/questions/Q153/question.json": {
-      "sha256": "e0aa077755dec8d007e583734d7791fe84d4300d86372924dc21019c168fc206",
+      "sha256": "26b65faf9163ef24e3b69b8ad6f8f7df1a340e747c1389d083f20879d108da3e",
       "uuid": "e962c1e4-63a8-52d2-8b7f-90699712c8be"
     },
     "authoring/test-08/questions/Q154/question.json": {
@@ -72,5 +72,23 @@
       "sha256": "32dad9ae7c38f4efc065613c8bd7f7a576219f083db9e1354d6ac69dcdaa65c2",
       "uuid": "d8e3a268-f029-55ab-8de6-1dabce8d6d4a"
     }
-  }
+  },
+  "amendments": [
+    {
+      "priorReceiptGitBlob": "2a304ff5fd14a23f3cdde9b5f393fa8c92b6d372",
+      "questionNumbers": [
+        153
+      ],
+      "groupId": "t08-r-p7-02",
+      "reviewStageSha256": "c16c9b9676c6c6160732d4dc1e639d76196aa264aa045490084473afe314b21e",
+      "newBlindSha256": "cff16664da65ec918a68dbaf83eb74f1efe216056ee31e67098b2bc83c0564dd",
+      "newBlindReceiptSha256": "a791318c56d01e31ba797d59ca8cc0138ba90308ae1307386cfb943a077fe432",
+      "bilingualReceiptSha256": "45d24d97e497c99f07b5cf725647acf001b51f22b51b183dc9857fea731003f0",
+      "checks": [
+        "Q153 only, same question ID/key, revision once",
+        "sibling questions and source unchanged",
+        "actual low-end advanced after independent calibration"
+      ]
+    }
+  ]
 }

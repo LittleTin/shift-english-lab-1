@@ -1,38 +1,54 @@
 {
   "number": 153,
-  "difficulty": "foundation",
-  "prompt": "What should a resident expect after selecting “both” on the signup sheet?",
-  "promptZh": "住戶在登記表選「兩天皆可」後，接下來會怎樣？",
+  "difficulty": "advanced",
+  "prompt": "Mia and Noor both asked for balcony visits and marked “both.” Their texts assign Monday, when neither resident will be home. Mia’s son lives with her and can open the balcony door. Noor lives alone but can leave a key at the office. Both residents are free on Tuesday. What follows from the notice?",
+  "promptZh": "米婭和努爾都登記了陽台清潔，並勾選「兩天皆可」。兩人都收到排在星期一的簡訊，但當天兩人都不在家。與米婭同住的兒子可以開陽台門。努爾獨居，但能把鑰匙留在辦公室。兩人星期二都有空。依公告，他們該怎麼做？",
   "answer": "D",
   "options": [
     {
-      "text": "Two visits scheduled in one message",
-      "zh": "同一則簡訊內安排兩次清潔",
-      "whyZh": "兩天皆可只是任一天有空，不是要約兩次。",
-      "id": "A"
+      "id": "A",
+      "text": "Mia can keep Monday; Noor can switch to Tuesday by notifying the office before the crew arrives because she marked “both.”",
+      "zh": "米婭可以保留星期一的時段；努爾勾了「兩天皆可」，只要在清潔人員抵達前通知辦公室，就能改到星期二。",
+      "whyZh": "米婭的兒子是同住家人，可以代為開門；但「兩天皆可」只表示原本兩天都能配合，不是拿到兩個時段；公告說無法配合原時段會列入下一輪，提前通知不是改到星期二的辦法。"
     },
     {
-      "text": "A visit assigned automatically to Monday morning",
-      "zh": "自動安排星期一上午清潔",
-      "whyZh": "公告只說會排一個時段，未保證哪一天或上午。",
-      "id": "B"
+      "id": "B",
+      "text": "Mia must notify the office because she will not be there herself; Noor can keep Monday by leaving the key at the office.",
+      "zh": "米婭本人不在家，必須通知辦公室；努爾可以把鑰匙留在辦公室，保留星期一的時段。",
+      "whyZh": "公告只要求家中有人開門，沒有要求登記者本人在場；而清潔人員不能使用留在辦公室的備用鑰匙。"
     },
     {
-      "text": "A request to choose a day after the crew arrives",
-      "zh": "等清潔人員到達後才請住戶選日期",
-      "whyZh": "星期日晚上就會通知，不會到場才選。",
-      "id": "C"
+      "id": "C",
+      "text": "Both can keep Monday: Mia can have her son open the door, and Noor can leave a key at the office.",
+      "zh": "兩人都能保留星期一的時段：米婭可以讓兒子開門，努爾可以把鑰匙留在辦公室。",
+      "whyZh": "米婭的做法符合規定，但努爾的鑰匙不能代替家中有人在場；她不能按照原時段接受陽台清潔。"
     },
     {
-      "text": "One time sent by text on Sunday evening",
-      "zh": "星期日晚上收到一則簡訊，通知一個清潔時段",
-      "whyZh": "選兩天都可仍只排一個時段，通知方式為星期日晚上傳簡訊。",
-      "id": "D"
+      "id": "D",
+      "text": "Mia can keep Monday; Noor should notify the office before the crew arrives and expect to be listed for the next round.",
+      "zh": "米婭可以保留星期一的時段；努爾應在清潔人員抵達前通知辦公室，並由辦公室列入下一輪清潔。",
+      "whyZh": "米婭有同住家人能開門，符合保留原時段的條件。努爾無人開門，辦公室的備用鑰匙又不能用；「兩天皆可」仍只排一個時段，不能自行改到星期二。她應在清潔人員抵達前通知辦公室，由辦公室保留她的名字，列入下一輪。"
     }
   ],
-  "explanationZh": "選兩天都可仍只排一個時段，通知方式為星期日晚上傳簡訊。",
-  "evidence": "This means you can be home on either day, not that you need two visits. / We will send you one time by text on Sunday evening.",
+  "explanationZh": "米婭有同住家人能開門，符合保留原時段的條件。努爾無人開門，辦公室的備用鑰匙又不能用；「兩天皆可」仍只排一個時段，不能自行改到星期二。她應在清潔人員抵達前通知辦公室，由辦公室保留她的名字，列入下一輪。",
+  "evidence": "For a balcony visit, someone from your household must be present to open the balcony door. / We can't use a spare key left at the office. / This means you can be home on either day, not that you need two visits. / We will send you one time by text on Sunday evening. / If you cannot make that time, tell the office before the crew arrives. / We will keep your name for the next cleaning round;",
   "evidenceSpans": [
+    {
+      "startChar": 382,
+      "endChar": 472,
+      "sourceField": "passage",
+      "exactQuote": "For a balcony visit, someone from your household must be present to open the balcony door.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    },
+    {
+      "startChar": 473,
+      "endChar": 517,
+      "sourceField": "passage",
+      "exactQuote": "We can't use a spare key left at the office.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    },
     {
       "startChar": 561,
       "endChar": 632,
@@ -48,13 +64,29 @@
       "exactQuote": "We will send you one time by text on Sunday evening.",
       "documentIndex": 0,
       "sourceRole": "single-document"
+    },
+    {
+      "startChar": 686,
+      "endChar": 756,
+      "sourceField": "passage",
+      "exactQuote": "If you cannot make that time, tell the office before the crew arrives.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    },
+    {
+      "startChar": 757,
+      "endChar": 808,
+      "sourceField": "passage",
+      "exactQuote": "We will keep your name for the next cleaning round;",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
     }
   ],
   "id": "t08-q153",
   "testId": "test-08",
   "part": 7,
   "groupId": "t08-r-p7-02",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
   "tags": [
     "single-passage",
@@ -65,6 +97,11 @@
       "term": "either day",
       "zh": "任一天",
       "note": "兩天當中任選一天，不表示兩次。"
+    },
+    {
+      "term": "make that time",
+      "zh": "能配合那個時段",
+      "note": "在公告中，make that time 表示能配合已通知的安排，不是另選一個時段。"
     }
   ]
 }
