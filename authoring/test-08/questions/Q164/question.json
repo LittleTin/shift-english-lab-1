@@ -1,0 +1,62 @@
+{
+  "number": 164,
+  "difficulty": "foundation",
+  "prompt": "What should someone preparing a packing ticket avoid doing?",
+  "promptZh": "製作裝箱單時，應避免哪一個做法？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Checking whether a replacement is still carried.",
+      "zh": "確認替換品是否仍供應。",
+      "whyZh": "供應狀況會影響應對，不是禁止確認的事項。"
+    },
+    {
+      "id": "B",
+      "text": "Using the current part name.",
+      "zh": "使用零件現行名稱。",
+      "whyZh": "禁止印的是搜尋別名，不是現行名稱。"
+    },
+    {
+      "id": "C",
+      "text": "Printing an old name that exists only as a search alias.",
+      "zh": "印上僅作為搜尋別名的舊名稱。",
+      "whyZh": "原文即說別名不可印在裝箱單上。"
+    },
+    {
+      "id": "D",
+      "text": "Asking whether there are two current records under one old name.",
+      "zh": "詢問一個舊名稱是否對應兩筆現行資料。",
+      "whyZh": "確認對應筆數有助區分，並非裝箱單上的禁令。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "原文即說別名不可印在裝箱單上。",
+  "evidence": "An alias is not printed on a packing ticket and cannot be used as the name on an invoice.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 284,
+      "endChar": 373,
+      "exactQuote": "An alias is not printed on a packing ticket and cannot be used as the name on an invoice.",
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q164",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-05",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "single-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "packing ticket",
+      "zh": "裝箱單",
+      "note": "出貨時印製的單據，與內部查詢工具不同。"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "number": 162,
+  "difficulty": "intermediate",
+  "prompt": "What can someone who leaves the arch at eleven thirty do before noon?",
+  "promptZh": "十一點半離開拱門後，到中午前可以做什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Remain at the arch to finish drawing without the guide.",
+      "zh": "不跟導覽員走，留在拱門畫完。",
+      "whyZh": "十一點半所有人都要離開拱門。"
+    },
+    {
+      "id": "B",
+      "text": "Finish a drawing at the shelter without having to walk back with the guide.",
+      "zh": "自行走回遮棚把畫完成，不必跟導覽員走。",
+      "whyZh": "遮棚開到中午，且同行只是選擇，不是規定。"
+    },
+    {
+      "id": "C",
+      "text": "Borrow a board and carry it back to the arch.",
+      "zh": "借畫板，再帶回拱門使用。",
+      "whyZh": "畫板要留在遮棚，拱門也已到離開時間。"
+    },
+    {
+      "id": "D",
+      "text": "Ask the guide to keep the arch open until noon.",
+      "zh": "請導覽員讓拱門開放到中午。",
+      "whyZh": "開到中午的地點是遮棚，不是拱門。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "遮棚開到中午，且同行只是選擇，不是規定。",
+  "evidence": "The guide will ask everyone to leave the arch at eleven thirty. / If you want to finish a drawing after that, return to the shelter and use one of the tables. / We will leave the shelter open until noon as usual; there is no need to walk back with the guide unless you want company.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 667,
+      "endChar": 730,
+      "exactQuote": "The guide will ask everyone to leave the arch at eleven thirty.",
+      "sourceRole": "single-document"
+    },
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 731,
+      "endChar": 823,
+      "exactQuote": "If you want to finish a drawing after that, return to the shelter and use one of the tables.",
+      "sourceRole": "single-document"
+    },
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 824,
+      "endChar": 945,
+      "exactQuote": "We will leave the shelter open until noon as usual; there is no need to walk back with the guide unless you want company.",
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q162",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-04",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "single-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "unless",
+      "zh": "除非",
+      "note": "此處表示可自由返程，只有想找人作伴才需考慮隨導覽員走。"
+    }
+  ]
+}

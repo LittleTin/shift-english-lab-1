@@ -1,0 +1,70 @@
+{
+  "number": 165,
+  "difficulty": "intermediate",
+  "prompt": "Two current handles share an old name. What change helps a technician select one without the warehouse making a choice?",
+  "promptZh": "兩種現行把手共用一個舊名稱。要如何讓技術員自己選，不用倉庫代選？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Show only the result with the shorter name.",
+      "zh": "只顯示名稱較短的結果。",
+      "whyZh": "必須保留兩筆，不能以名稱長短預選。"
+    },
+    {
+      "id": "B",
+      "text": "Show both results with their handle lengths.",
+      "zh": "顯示兩筆結果，分別標出把手長度。",
+      "whyZh": "長度是用來區分兩筆的依據，工具不應指定預設結果。"
+    },
+    {
+      "id": "C",
+      "text": "Remove the name from both records as discontinued.",
+      "zh": "把它從兩筆資料移除，標成停供。",
+      "whyZh": "兩個零件仍供應，不適用停供做法。"
+    },
+    {
+      "id": "D",
+      "text": "Print the old name twice on a packing ticket.",
+      "zh": "在裝箱單上印兩次舊名稱。",
+      "whyZh": "別名不得印在裝箱單，重印也不能區分零件。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "長度是用來區分兩筆的依據，工具不應指定預設結果。",
+  "evidence": "If the same old name points to two current parts, the search tool must show both records. / Add the handle length to each result instead of choosing one as the default.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 375,
+      "endChar": 464,
+      "exactQuote": "If the same old name points to two current parts, the search tool must show both records.",
+      "sourceRole": "single-document"
+    },
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 465,
+      "endChar": 541,
+      "exactQuote": "Add the handle length to each result instead of choosing one as the default.",
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q165",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-05",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "single-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "default",
+      "zh": "預設選項",
+      "note": "未進一步選擇時系統會自動採用的結果。"
+    }
+  ]
+}

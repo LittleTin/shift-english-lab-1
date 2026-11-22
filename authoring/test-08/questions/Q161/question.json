@@ -1,0 +1,70 @@
+{
+  "number": 161,
+  "difficulty": "intermediate",
+  "prompt": "A visitor wants to avoid steps but would like to sketch a boat. What can the visitor do?",
+  "promptZh": "一位訪客想避開階梯，又想畫船。可以怎麼安排？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Use the steps briefly, then switch paths before the arch.",
+      "zh": "先走一小段階梯，再於拱門前換路。",
+      "whyZh": "訪客要避開階梯，且文中未提供較早的換路點。"
+    },
+    {
+      "id": "B",
+      "text": "Stop along the sea wall to sketch the boats before the two paths meet.",
+      "zh": "在兩條路會合前停在海堤畫船。",
+      "whyZh": "海堤路的圍欄會遮住視線直到兩路會合。"
+    },
+    {
+      "id": "C",
+      "text": "Take the sea-wall path and ask to borrow a drawing board at the arch.",
+      "zh": "沿海堤走，到了拱門再借畫板。",
+      "whyZh": "畫板只能留在遮棚，不在拱門出借。"
+    },
+    {
+      "id": "D",
+      "text": "Take the sea-wall path and wait until the paths meet to sketch a boat.",
+      "zh": "沿海堤走，等到兩條路會合處再畫船。",
+      "whyZh": "海堤路沒有階梯，到會合處視線才不受圍欄阻擋。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "海堤路沒有階梯，到會合處視線才不受圍欄阻擋。",
+  "evidence": "The longer path by the sea wall has no steps. / Both paths reach the arch, but the view from the sea-wall path is blocked by a fence until the paths meet.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 427,
+      "endChar": 472,
+      "exactQuote": "The longer path by the sea wall has no steps.",
+      "sourceRole": "single-document"
+    },
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 473,
+      "endChar": 579,
+      "exactQuote": "Both paths reach the arch, but the view from the sea-wall path is blocked by a fence until the paths meet.",
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q161",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-04",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "single-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "sea wall",
+      "zh": "海堤",
+      "note": "沿海岸的堤防；本路線可從旁邊走而不必爬階梯。"
+    }
+  ]
+}

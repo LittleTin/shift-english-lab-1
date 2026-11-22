@@ -1,0 +1,62 @@
+{
+  "number": 159,
+  "difficulty": "foundation",
+  "prompt": "Who can use the tables at the pier shelter?",
+  "promptZh": "誰可以使用碼頭遮棚的桌子？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Only people who have borrowed a drawing board.",
+      "zh": "只限借了畫板的人。",
+      "whyZh": "借畫板不是用桌子的條件。"
+    },
+    {
+      "id": "B",
+      "text": "Only people who complete the walk.",
+      "zh": "只限走完全程的人。",
+      "whyZh": "公告允許想留在遮棚畫畫的人使用，不必走完全程。"
+    },
+    {
+      "id": "C",
+      "text": "Anyone who wants to draw at the shelter.",
+      "zh": "想在遮棚作畫的人都可以。",
+      "whyZh": "開頭直接說想留在遮棚畫畫的人都能用桌。"
+    },
+    {
+      "id": "D",
+      "text": "Anyone who returns with the guide.",
+      "zh": "跟導覽員一起回來的人。",
+      "whyZh": "可自行返回，不必跟導覽員。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "開頭直接說想留在遮棚畫畫的人都能用桌。",
+  "evidence": "The tables there are for anyone who wants to draw without leaving the shelter.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 67,
+      "endChar": 145,
+      "exactQuote": "The tables there are for anyone who wants to draw without leaving the shelter.",
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q159",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-04",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "single-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "pier shelter",
+      "zh": "碼頭遮棚",
+      "note": "此處可在遮棚避風並坐著畫畫。"
+    }
+  ]
+}

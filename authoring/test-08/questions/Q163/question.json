@@ -1,0 +1,62 @@
+{
+  "number": 163,
+  "difficulty": "foundation",
+  "prompt": "Why does the staff search tool keep old part names?",
+  "promptZh": "為何員工搜尋工具保留舊零件名稱？",
+  "options": [
+    {
+      "id": "A",
+      "text": "To help technicians use older repair notes to find current replacements.",
+      "zh": "讓技術員能依舊維修紀錄找到替換品。",
+      "whyZh": "搜尋別名的目的就是讓舊稱仍可連到正確現行備品。"
+    },
+    {
+      "id": "B",
+      "text": "To print both names on every service list.",
+      "zh": "在每份印刷清單上同時列出新舊名稱。",
+      "whyZh": "印刷清單上只顯示新名稱。"
+    },
+    {
+      "id": "C",
+      "text": "To let technicians bill for discontinued parts.",
+      "zh": "讓技術員能開立停供零件的發票。",
+      "whyZh": "停供零件要另記，不用別名開票。"
+    },
+    {
+      "id": "D",
+      "text": "To select one default handle for every search.",
+      "zh": "替每次搜尋選定一種預設把手。",
+      "whyZh": "若對應兩種，須顯示兩筆，不設預設。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "搜尋別名的目的就是讓舊稱仍可連到正確現行備品。",
+  "evidence": "Keep each old name as a search alias in the staff tool so a technician reading an old repair note can still find the right replacement.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 148,
+      "endChar": 283,
+      "exactQuote": "Keep each old name as a search alias in the staff tool so a technician reading an old repair note can still find the right replacement.",
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q163",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-05",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "single-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "search alias",
+      "zh": "搜尋別名",
+      "note": "用舊名稱也能找到以新名稱登記的品項。"
+    }
+  ]
+}

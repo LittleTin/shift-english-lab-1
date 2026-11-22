@@ -1,0 +1,70 @@
+{
+  "number": 166,
+  "difficulty": "intermediate",
+  "prompt": "The Friday list includes two searches. The first failed because the tool stores a misspelled alias for a current handle. The other search names a discontinued handle correctly. Which pair of changes follows the note?",
+  "promptZh": "星期五的清單有兩筆查詢。第一筆找不到結果，因為工具中存著一筆拼錯的現行把手別名。另一筆則正確寫出已停供把手的名字。哪組處理符合說明？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Keep both as aliases; point each to the closest current handle.",
+      "zh": "兩者都當別名，分別指向最相近的現行把手。",
+      "whyZh": "停供名稱不可導到無關的現行零件。"
+    },
+    {
+      "id": "B",
+      "text": "Add both to the discontinued-parts note.",
+      "zh": "兩者都加入停供零件備註。",
+      "whyZh": "第一個把手仍供應，不該因拼錯而列停供。"
+    },
+    {
+      "id": "C",
+      "text": "Correct the spelling of both and keep both as searchable aliases.",
+      "zh": "更正兩筆拼法，並保留為可搜尋的別名。",
+      "whyZh": "第二筆本來就拼對，且停供名稱本身不能保留為別名。"
+    },
+    {
+      "id": "D",
+      "text": "Correct the first alias and place only the second name in the discontinued-parts note.",
+      "zh": "更正第一筆別名，只將第二筆名稱放進停供零件備註。",
+      "whyZh": "輸入錯誤的現行別名需更正；拼寫無誤但已停供的名稱要另記，不加為別名。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "輸入錯誤的現行別名需更正；拼寫無誤但已停供的名稱要另記，不加為別名。",
+  "evidence": "Correct old names that were entered incorrectly as aliases. / If an old name is spelled correctly but belongs to a part we no longer carry, leave the alias out and add the name to the discontinued-parts note.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 715,
+      "endChar": 774,
+      "exactQuote": "Correct old names that were entered incorrectly as aliases.",
+      "sourceRole": "single-document"
+    },
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 775,
+      "endChar": 921,
+      "exactQuote": "If an old name is spelled correctly but belongs to a part we no longer carry, leave the alias out and add the name to the discontinued-parts note.",
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q166",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-05",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "single-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "discontinued",
+      "zh": "停止供應的",
+      "note": "指已不再銷售或供應的款式。"
+    }
+  ]
+}
