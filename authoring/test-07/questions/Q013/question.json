@@ -1,0 +1,48 @@
+{
+  "id": "t07-q013",
+  "testId": "test-07",
+  "number": 13,
+  "part": 2,
+  "topic": "work",
+  "difficulty": "intermediate",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽錄音，選出最適當的回應。",
+  "spokenPrompt": "Can we print today’s packing list at the dispatch desk now?",
+  "spokenPromptZh": "我們現在可以在出貨櫃檯印今天的裝箱清單了嗎？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The dispatch desk is beside the loading door.",
+      "zh": "出貨櫃檯就在裝貨門旁。",
+      "whyZh": "只說出貨櫃檯的位置，沒有回答現在能否列印。"
+    },
+    {
+      "id": "B",
+      "text": "Yesterday’s printed copy went with the cartons.",
+      "zh": "昨天印好的清單已經跟那批紙箱一起送出。",
+      "whyZh": "昨天的清單已隨貨送出，並不能說明印表機目前是否可用。"
+    },
+    {
+      "id": "C",
+      "text": "The list is open, but the printer still isn’t connected.",
+      "zh": "已開啟清單，但印表機還沒連線。",
+      "whyZh": "雖已開啟清單，印表機仍未連線，所以目前不能列印。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "雖已開啟清單，印表機仍未連線，所以目前不能列印。",
+  "evidence": "Can we print today’s packing list at the dispatch desk now? / The list is open, but the printer still isn’t connected.",
+  "tags": [
+    "work",
+    "question_response"
+  ],
+  "revision": 1,
+  "groupId": "t07-g013",
+  "vocabulary": [
+    {
+      "term": "a packing list",
+      "zh": "裝箱清單",
+      "note": "列出一批貨物打包所包含的品項或件數。"
+    }
+  ]
+}
