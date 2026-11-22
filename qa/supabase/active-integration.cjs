@@ -32,7 +32,10 @@ function make({db=new IDBFactory(),existing=null,configured=true}={}){
  const d=w.document.querySelector('dialog');d.showModal=()=>d.setAttribute('open','');d.close=()=>d.removeAttribute('open');
  if(existing)for(const [k,v] of existing)w.sessionStorage.setItem(k,v);
  w.eval(read('data/catalog.js'));
- for(let i=1;i<=6;i++)w.eval(read('data/test-0'+i+'.js'));
+ for(const item of w.SHIFT_CATALOG.tests){
+  assert.match(item.path,/^data\/test-[0-9]+\.js$/);
+  w.eval(read(item.path));
+ }
  for(const f of ['assets/question-uuid.js','assets/shift-sync-config.js','assets/shift-sync-records.js']){
   if(f.endsWith('shift-sync-config.js')) {
    w.SHIFT_SYNC_CONFIG=configured?{url:host,publishableKey:'sb_publishable_shift_fixture_only',allowLocal:true}:{url:'',publishableKey:''}
