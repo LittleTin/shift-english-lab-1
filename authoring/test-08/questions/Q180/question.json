@@ -1,0 +1,65 @@
+{
+  "number": 180,
+  "difficulty": "foundation",
+  "prompt": "How much time should staff book when a live machine demonstration uses only part of a slot?",
+  "promptZh": "實機示範只有一段時間會運轉機器，工作人員應預約多久？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Only the time the machine runs",
+      "zh": "只預約機器運轉時間",
+      "whyZh": "須預約整個時段，不只運轉時間。"
+    },
+    {
+      "id": "B",
+      "text": "Only the technician’s setup time",
+      "zh": "只預約技術員做設置的時間",
+      "whyZh": "設置不等於整個示範所需時段。"
+    },
+    {
+      "id": "C",
+      "text": "The entire slot",
+      "zh": "整個時段",
+      "whyZh": "排程須知直接要求預約完整時段。"
+    },
+    {
+      "id": "D",
+      "text": "Two consecutive slots",
+      "zh": "連續兩個時段",
+      "whyZh": "只要求整個單一時段，沒有要求雙倍。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "排程須知直接要求預約完整時段。",
+  "evidence": "Book the entire slot, even if the machine will run for only part of it.",
+  "evidenceSpans": [
+    {
+      "documentIndex": 0,
+      "sourceField": "text",
+      "startChar": 131,
+      "endChar": 202,
+      "exactQuote": "Book the entire slot, even if the machine will run for only part of it.",
+      "documentId": "d1-1",
+      "sourceRole": "document-1",
+      "passageStartChar": 170,
+      "passageEndChar": 241
+    }
+  ],
+  "id": "t08-q180",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-08",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "double-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "book the entire slot",
+      "zh": "預約完整時段",
+      "note": "不只預約機器實際運轉的時間。"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "number": 169,
+  "difficulty": "intermediate",
+  "prompt": "What does the guide suggest about the normal feeding schedule during travel?",
+  "promptZh": "指南對旅途中原有的餵養作息有什麼建議？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A feeding due on the road can wait until the jar has warmed up at the destination.",
+      "zh": "若原本應在途中餵養，可等到目的地並讓罐子回溫後再餵。",
+      "whyZh": "途中不要開罐餵養；抵達後取出罐子，回溫才餵。"
+    },
+    {
+      "id": "B",
+      "text": "Feed at the usual time even if the jar is still in the cooler.",
+      "zh": "即使罐子還在保冷袋中，也照平常時間餵養。",
+      "whyZh": "在保冷袋期間暫停平常作息，不在途中餵養。"
+    },
+    {
+      "id": "C",
+      "text": "Keep the cooler open once the usual feeding time arrives.",
+      "zh": "一到平常餵養時間，就打開保冷袋。",
+      "whyZh": "應在抵達後取出罐子，不是按平時的餵養時間打開保冷袋。"
+    },
+    {
+      "id": "D",
+      "text": "Skip feeding for the whole trip, even after taking the jar out.",
+      "zh": "整趟旅行都不餵，即使已把罐子拿出來也一樣。",
+      "whyZh": "抵達後回溫就可以餵，不必一直等到旅行結束。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "途中不要開罐餵養；抵達後取出罐子，回溫才餵。",
+  "evidence": "Don't open the jar to feed the starter on the way. / At your destination, take the jar out of the cooler and let it warm up before you feed it.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 513,
+      "endChar": 563,
+      "exactQuote": "Don't open the jar to feed the starter on the way.",
+      "sourceRole": "single-document"
+    },
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 670,
+      "endChar": 760,
+      "exactQuote": "At your destination, take the jar out of the cooler and let it warm up before you feed it.",
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q169",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-06",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "single-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "warm up",
+      "zh": "回溫",
+      "note": "從較冷的狀態逐漸升溫；這裡不是要加熱到很燙。"
+    }
+  ]
+}

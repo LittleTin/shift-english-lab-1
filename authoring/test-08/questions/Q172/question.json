@@ -1,0 +1,70 @@
+{
+  "number": 172,
+  "difficulty": "intermediate",
+  "prompt": "What is the purpose of noting that the grounds were watered?",
+  "promptZh": "記下場地曾澆灌的目的是什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "To help workers calculate a lower flow value for the result box.",
+      "zh": "協助工作人員計算較低的流量值，填入結果欄。",
+      "whyZh": "說明禁止自行估算再扣除用水量。"
+    },
+    {
+      "id": "B",
+      "text": "To tell the repair crew when to reopen the test outlet.",
+      "zh": "告知維修人員何時重新打開測試出水口。",
+      "whyZh": "澆灌情形提供給值班主管參考，不用來安排出水口操作。"
+    },
+    {
+      "id": "C",
+      "text": "To give the officer context for deciding whether to send a leak crew.",
+      "zh": "讓值班主管決定要不要派人查漏時有所依據。",
+      "whyZh": "澆灌是已知的正常用水，值班主管派人查漏前需要掌握這項情況。"
+    },
+    {
+      "id": "D",
+      "text": "To let the caretaker approve the completed log entry.",
+      "zh": "讓管理員核准已填妥的紀錄。",
+      "whyZh": "管理員可以回報澆灌情形，但不是核准紀錄的人。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "澆灌是已知的正常用水，值班主管派人查漏前需要掌握這項情況。",
+  "evidence": "For example, if a caretaker says the grounds were watered then, add that detail as a note. / The duty officer needs to know about planned use before deciding whether to send a leak crew.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 593,
+      "endChar": 683,
+      "exactQuote": "For example, if a caretaker says the grounds were watered then, add that detail as a note.",
+      "sourceRole": "single-document"
+    },
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 684,
+      "endChar": 777,
+      "exactQuote": "The duty officer needs to know about planned use before deciding whether to send a leak crew.",
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q172",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-07",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "single-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "duty officer",
+      "zh": "值班主管",
+      "note": "在該班次接收現場通報、決定是否派人查漏的人。"
+    }
+  ]
+}

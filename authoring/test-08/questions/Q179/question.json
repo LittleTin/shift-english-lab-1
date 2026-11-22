@@ -1,0 +1,87 @@
+{
+  "number": 179,
+  "difficulty": "intermediate",
+  "prompt": "What single change would make the 11:00 slot available for a live demonstration?",
+  "promptZh": "只要出現哪一項變更，十一點就能安排實機示範？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The safety lead sends written approval for that slot.",
+      "zh": "安全主管發出該時段的書面核准。",
+      "whyZh": "兩個現場角色都有人，十一點只欠書面核准。"
+    },
+    {
+      "id": "B",
+      "text": "Marta agrees to operate at that time.",
+      "zh": "瑪塔同意十一點操作。",
+      "whyZh": "她原本整個上午都有空，限制在待審核准。"
+    },
+    {
+      "id": "C",
+      "text": "A technician checks whether the training room is free.",
+      "zh": "技術員確認訓練室有空。",
+      "whyZh": "訓練室是否空著不改變實機示範時段的核准狀態。"
+    },
+    {
+      "id": "D",
+      "text": "The customer accepts a shorter machine run.",
+      "zh": "顧客接受較短的機器運轉時間。",
+      "whyZh": "縮短運轉不免除待審時段的書面核准。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "兩個現場角色都有人，十一點只欠書面核准。",
+  "evidence": "A slot marked REVIEW is not open for a demonstration until the safety lead sends written approval. / Marta can operate all morning on Wednesday / There is also a technician available at 11:00; that slot is listed as REVIEW, and the approval has not come in.",
+  "evidenceSpans": [
+    {
+      "documentIndex": 0,
+      "sourceField": "text",
+      "startChar": 204,
+      "endChar": 302,
+      "exactQuote": "A slot marked REVIEW is not open for a demonstration until the safety lead sends written approval.",
+      "documentId": "d1-1",
+      "sourceRole": "document-1",
+      "passageStartChar": 243,
+      "passageEndChar": 341
+    },
+    {
+      "documentIndex": 1,
+      "sourceField": "text",
+      "startChar": 0,
+      "endChar": 42,
+      "exactQuote": "Marta can operate all morning on Wednesday",
+      "documentId": "d1-2",
+      "sourceRole": "document-2",
+      "passageStartChar": 605,
+      "passageEndChar": 647
+    },
+    {
+      "documentIndex": 1,
+      "sourceField": "text",
+      "startChar": 151,
+      "endChar": 262,
+      "exactQuote": "There is also a technician available at 11:00; that slot is listed as REVIEW, and the approval has not come in.",
+      "documentId": "d1-2",
+      "sourceRole": "document-2",
+      "passageStartChar": 756,
+      "passageEndChar": 867
+    }
+  ],
+  "id": "t08-q179",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-08",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "double-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "written approval",
+      "zh": "書面核准",
+      "note": "本題待審時段須等安全主管發出書面核准。"
+    }
+  ]
+}

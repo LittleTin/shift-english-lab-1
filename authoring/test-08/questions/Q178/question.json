@@ -1,0 +1,76 @@
+{
+  "number": 178,
+  "difficulty": "intermediate",
+  "prompt": "What can be offered to the group that cannot change its time?",
+  "promptZh": "無法改期的那組可獲得什麼安排？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A live machine demonstration at 9:00 with Marta alone",
+      "zh": "九點由瑪塔獨自做實機示範",
+      "whyZh": "實機示範另需設置技術員。"
+    },
+    {
+      "id": "B",
+      "text": "A sample inspection at 10:00",
+      "zh": "十點檢視樣品",
+      "whyZh": "該組只能九點到。"
+    },
+    {
+      "id": "C",
+      "text": "A live machine demonstration at 11:00",
+      "zh": "十一點做實機示範",
+      "whyZh": "十一點並未核准，該組也不能改期。"
+    },
+    {
+      "id": "D",
+      "text": "A sample inspection in the training room at 9:00",
+      "zh": "九點到訓練室檢視樣品",
+      "whyZh": "訓練室可接待不能改期且只想看成品的小組。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "訓練室可接待不能改期且只想看成品的小組。",
+  "evidence": "For customers who cannot move their appointment, the training room may be used for a sample inspection / Another group can only come at 9:00 and specifically asked to inspect finished samples, not see the machine run.",
+  "evidenceSpans": [
+    {
+      "documentIndex": 0,
+      "sourceField": "text",
+      "startChar": 369,
+      "endChar": 471,
+      "exactQuote": "For customers who cannot move their appointment, the training room may be used for a sample inspection",
+      "documentId": "d1-1",
+      "sourceRole": "document-1",
+      "passageStartChar": 408,
+      "passageEndChar": 510
+    },
+    {
+      "documentIndex": 1,
+      "sourceField": "text",
+      "startChar": 424,
+      "endChar": 536,
+      "exactQuote": "Another group can only come at 9:00 and specifically asked to inspect finished samples, not see the machine run.",
+      "documentId": "d1-2",
+      "sourceRole": "document-2",
+      "passageStartChar": 1029,
+      "passageEndChar": 1141
+    }
+  ],
+  "id": "t08-q178",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-08",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "double-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "sample inspection",
+      "zh": "檢視樣品",
+      "note": "看完成品，不是觀看機器實際運作。"
+    }
+  ]
+}

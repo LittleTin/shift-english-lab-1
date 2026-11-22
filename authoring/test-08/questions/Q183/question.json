@@ -1,0 +1,76 @@
+{
+  "number": 183,
+  "difficulty": "foundation",
+  "prompt": "What should Ben do before using the side door, even after giving the order number?",
+  "promptZh": "即使班已提供訂單號碼，走側門前仍應做什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Ask the shop to replace the glass.",
+      "zh": "要求店家更換玻璃。",
+      "whyZh": "走廊那件是壓克力，且店家不在取件時更換面板。"
+    },
+    {
+      "id": "B",
+      "text": "Call the front counter to check in.",
+      "zh": "打電話向前方櫃檯報到。",
+      "whyZh": "店家側門規則要求先電話報到；訂單號碼不是側門的報到手續。"
+    },
+    {
+      "id": "C",
+      "text": "Wait for Ivy to arrive in person.",
+      "zh": "等艾薇親自到場。",
+      "whyZh": "店家說走側門要先電話報到，沒有要求艾薇親自到場。"
+    },
+    {
+      "id": "D",
+      "text": "Ask for permission to leave his bike overnight.",
+      "zh": "請求同意讓自行車停放過夜。",
+      "whyZh": "取件卡與簡訊都沒有過夜停車的條件。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "店家側門規則要求先電話報到；訂單號碼不是側門的報到手續。",
+  "evidence": "The step-free side door is for collections by people who have already checked in at the front counter by phone. / I’ll call the front counter before I go around to the side.",
+  "evidenceSpans": [
+    {
+      "documentIndex": 0,
+      "sourceField": "text",
+      "startChar": 443,
+      "endChar": 554,
+      "exactQuote": "The step-free side door is for collections by people who have already checked in at the front counter by phone.",
+      "documentId": "d2-1",
+      "sourceRole": "document-1",
+      "passageStartChar": 482,
+      "passageEndChar": 593
+    },
+    {
+      "documentIndex": 1,
+      "sourceField": "text",
+      "startChar": 524,
+      "endChar": 583,
+      "exactQuote": "I’ll call the front counter before I go around to the side.",
+      "documentId": "d2-2",
+      "sourceRole": "document-2",
+      "passageStartChar": 1147,
+      "passageEndChar": 1206
+    }
+  ],
+  "id": "t08-q183",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-09",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "double-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "check in by phone",
+      "zh": "透過電話報到",
+      "note": "先致電前方櫃檯，才能從側門取件。"
+    }
+  ]
+}

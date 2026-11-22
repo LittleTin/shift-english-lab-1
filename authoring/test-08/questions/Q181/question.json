@@ -1,0 +1,65 @@
+{
+  "number": 181,
+  "difficulty": "foundation",
+  "prompt": "What does the shop ask customers to bring for collection?",
+  "promptZh": "店家要求顧客取件時帶什麼資料？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The order number",
+      "zh": "訂單號碼",
+      "whyZh": "取件卡直接要求提供訂單號碼。"
+    },
+    {
+      "id": "B",
+      "text": "A list of hanging hardware",
+      "zh": "安裝五金清單",
+      "whyZh": "指南或掛鉤不等於取件證明。"
+    },
+    {
+      "id": "C",
+      "text": "The original packaging",
+      "zh": "原本的包裝",
+      "whyZh": "原文沒有要求顧客帶包裝。"
+    },
+    {
+      "id": "D",
+      "text": "A letter stating the type of glazing",
+      "zh": "說明透明面板種類的信件",
+      "whyZh": "材質影響自行車取件資格，不是須自備的文書。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "取件卡直接要求提供訂單號碼。",
+  "evidence": "Bring your order number to the front counter for pickup.",
+  "evidenceSpans": [
+    {
+      "documentIndex": 0,
+      "sourceField": "text",
+      "startChar": 0,
+      "endChar": 56,
+      "exactQuote": "Bring your order number to the front counter for pickup.",
+      "documentId": "d2-1",
+      "sourceRole": "document-1",
+      "passageStartChar": 39,
+      "passageEndChar": 95
+    }
+  ],
+  "id": "t08-q181",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-09",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "double-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "order number",
+      "zh": "訂單號碼",
+      "note": "取件時向櫃檯出示或說明的訂單識別碼。"
+    }
+  ]
+}

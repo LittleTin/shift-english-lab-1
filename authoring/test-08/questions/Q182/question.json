@@ -1,0 +1,87 @@
+{
+  "number": 182,
+  "difficulty": "intermediate",
+  "prompt": "Which of Ivy’s frames can Ben collect by bicycle under the shop’s policy?",
+  "promptZh": "依照店家的規定，班騎車可以代領艾薇哪一件裱框？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Both, because they share an order number",
+      "zh": "兩件都能領，因為訂單號碼相同",
+      "whyZh": "同一筆訂單也不能用自行車領取含玻璃的那件。"
+    },
+    {
+      "id": "B",
+      "text": "The bedroom frame only",
+      "zh": "只能領臥室那件",
+      "whyZh": "臥室那件是玻璃，不適用自行車取件。"
+    },
+    {
+      "id": "C",
+      "text": "Neither, unless staff change the glazing at pickup",
+      "zh": "兩件都不能領，除非現場更換面板",
+      "whyZh": "走廊那件已是壓克力，且店家不現場更換。"
+    },
+    {
+      "id": "D",
+      "text": "The hallway frame only",
+      "zh": "只能領走廊那件",
+      "whyZh": "走廊那件是壓克力，臥室那件是玻璃。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "走廊那件是壓克力，臥室那件是玻璃。",
+  "evidence": "If you come by bicycle, we can give you a wrapped frame only if it contains acrylic instead of glass. / The one with glass is for the bedroom / The hallway frame has acrylic, so that works.",
+  "evidenceSpans": [
+    {
+      "documentIndex": 0,
+      "sourceField": "text",
+      "startChar": 120,
+      "endChar": 221,
+      "exactQuote": "If you come by bicycle, we can give you a wrapped frame only if it contains acrylic instead of glass.",
+      "documentId": "d2-1",
+      "sourceRole": "document-1",
+      "passageStartChar": 159,
+      "passageEndChar": 260
+    },
+    {
+      "documentIndex": 1,
+      "sourceField": "text",
+      "startChar": 102,
+      "endChar": 139,
+      "exactQuote": "The one with glass is for the bedroom",
+      "documentId": "d2-2",
+      "sourceRole": "document-2",
+      "passageStartChar": 725,
+      "passageEndChar": 762
+    },
+    {
+      "documentIndex": 1,
+      "sourceField": "text",
+      "startChar": 281,
+      "endChar": 326,
+      "exactQuote": "The hallway frame has acrylic, so that works.",
+      "documentId": "d2-2",
+      "sourceRole": "document-2",
+      "passageStartChar": 904,
+      "passageEndChar": 949
+    }
+  ],
+  "id": "t08-q182",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-09",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "double-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "acrylic",
+      "zh": "壓克力",
+      "note": "本題指裱框用的透明壓克力板，與玻璃區分。"
+    }
+  ]
+}

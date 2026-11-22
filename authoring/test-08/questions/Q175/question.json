@@ -1,0 +1,78 @@
+{
+  "number": 175,
+  "difficulty": "intermediate",
+  "prompt": "A worker’s last two readings match, but they can see water flowing onto the road. What should the worker do?",
+  "promptZh": "一名工作人員的最後兩次讀值相同，但看到有水流到路面。應該怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Enter the matching result and call the duty officer immediately.",
+      "zh": "填入相同的讀值，並立即打電話給值班主管。",
+      "whyZh": "最後兩次讀值相同即可填數字，但路面有流水仍須立即通報，電話不能代替紀錄。"
+    },
+    {
+      "id": "B",
+      "text": "Enter the matching result and leave the matter for the dawn review.",
+      "zh": "填入相同的讀值，等清晨審查處理。",
+      "whyZh": "路面有流水時不能等清晨，必須立刻打電話。"
+    },
+    {
+      "id": "C",
+      "text": "Call the duty officer immediately and omit the log entry.",
+      "zh": "立即打電話給值班主管，不用填紀錄。",
+      "whyZh": "立刻通報沒錯，但打電話不能取代紀錄。"
+    },
+    {
+      "id": "D",
+      "text": "Write “unsettled” and wait to see whether another reading matches.",
+      "zh": "填「未穩定」，再等下一次讀值是否相符。",
+      "whyZh": "兩次既已相同就不應填「未穩定」，且路面流水必須立即通報。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "最後兩次讀值相同即可填數字，但路面有流水仍須立即通報，電話不能代替紀錄。",
+  "evidence": "Use the last two readings, and enter a result only if they match. / If water is visibly running onto the road, call the duty officer right away regardless of the meter result. / This call is in addition to the log entry, not in place of it.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 369,
+      "endChar": 434,
+      "exactQuote": "Use the last two readings, and enter a result only if they match.",
+      "sourceRole": "single-document"
+    },
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 1065,
+      "endChar": 1172,
+      "exactQuote": "If water is visibly running onto the road, call the duty officer right away regardless of the meter result.",
+      "sourceRole": "single-document"
+    },
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 1173,
+      "endChar": 1235,
+      "exactQuote": "This call is in addition to the log entry, not in place of it.",
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q175",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-07",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "single-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "in addition to",
+      "zh": "除了……之外還要",
+      "note": "通話和填寫紀錄都要做，不可互相代替。"
+    }
+  ]
+}

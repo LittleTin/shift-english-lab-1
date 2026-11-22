@@ -1,0 +1,62 @@
+{
+  "number": 167,
+  "difficulty": "foundation",
+  "prompt": "Where should a traveler place the folded towel?",
+  "promptZh": "旅行者應該把摺好的毛巾放在哪裡？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Over the cooler bag.",
+      "zh": "蓋在保冷袋上。",
+      "whyZh": "毛巾要隔在兩樣東西中間，不是蓋在袋子外。"
+    },
+    {
+      "id": "B",
+      "text": "Between the cold pack and the glass jar.",
+      "zh": "放在保冷劑和玻璃罐之間。",
+      "whyZh": "原文指定毛巾放在保冷劑與罐子中間，隔開兩者。"
+    },
+    {
+      "id": "C",
+      "text": "Under the lid of the jar.",
+      "zh": "放在罐蓋下方。",
+      "whyZh": "罐子要密封，毛巾不放在罐內或罐蓋下。"
+    },
+    {
+      "id": "D",
+      "text": "Around the starter that stays at home.",
+      "zh": "包住留在家的酸種容器。",
+      "whyZh": "毛巾是給旅行用罐使用的，家中那份留在原容器即可。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "原文指定毛巾放在保冷劑與罐子中間，隔開兩者。",
+  "evidence": "Put a folded towel between the pack and the jar.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 372,
+      "endChar": 420,
+      "exactQuote": "Put a folded towel between the pack and the jar.",
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q167",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-06",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "single-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "cold pack",
+      "zh": "保冷劑",
+      "note": "事先冷卻後放入保冷袋，用於降低袋內溫度。"
+    }
+  ]
+}

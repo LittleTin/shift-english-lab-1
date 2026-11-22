@@ -1,0 +1,87 @@
+{
+  "number": 184,
+  "difficulty": "intermediate",
+  "prompt": "When Ivy comes for the bedroom frame, what should she tell the shop?",
+  "promptZh": "艾薇改天來領臥室的裱框時，應告訴店家什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "That she needs a new order number for the bedroom frame",
+      "zh": "需要一個新的訂單號碼才能領臥室那件",
+      "whyZh": "只領其中一件不會改變其餘裱框的訂單號碼。"
+    },
+    {
+      "id": "B",
+      "text": "That Ben took the bedroom frame but left the hallway frame",
+      "zh": "班領走了臥室那件，留下走廊那件",
+      "whyZh": "兩件的領取安排相反，班只領走廊那件。"
+    },
+    {
+      "id": "C",
+      "text": "That she wants the bedroom frame under order 618",
+      "zh": "要領訂單 618 中的臥室裱框",
+      "whyZh": "班只領走廊那件，臥室那件仍留在原訂單 618。"
+    },
+    {
+      "id": "D",
+      "text": "That both frames should still be held under order 618",
+      "zh": "訂單 618 中的兩件都還要留著",
+      "whyZh": "班會領走走廊那件，店家只需保留另一件。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "班只領走廊那件，臥室那件仍留在原訂單 618。",
+  "evidence": "The other pieces will stay on the same order, so keep the order number to use again. / Order 618. / Both frames are under that number. Please tell the shop you’re taking just the hallway one.",
+  "evidenceSpans": [
+    {
+      "documentIndex": 0,
+      "sourceField": "text",
+      "startChar": 358,
+      "endChar": 442,
+      "exactQuote": "The other pieces will stay on the same order, so keep the order number to use again.",
+      "documentId": "d2-1",
+      "sourceRole": "document-1",
+      "passageStartChar": 397,
+      "passageEndChar": 481
+    },
+    {
+      "documentIndex": 1,
+      "sourceField": "text",
+      "startChar": 91,
+      "endChar": 101,
+      "exactQuote": "Order 618.",
+      "documentId": "d2-2",
+      "sourceRole": "document-2",
+      "passageStartChar": 714,
+      "passageEndChar": 724
+    },
+    {
+      "documentIndex": 1,
+      "sourceField": "text",
+      "startChar": 327,
+      "endChar": 418,
+      "exactQuote": "Both frames are under that number. Please tell the shop you’re taking just the hallway one.",
+      "documentId": "d2-2",
+      "sourceRole": "document-2",
+      "passageStartChar": 950,
+      "passageEndChar": 1041
+    }
+  ],
+  "id": "t08-q184",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-09",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "double-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "on the same order",
+      "zh": "仍在同一筆訂單",
+      "note": "分次領取不會為尚未領走的物品另開訂單。"
+    }
+  ]
+}

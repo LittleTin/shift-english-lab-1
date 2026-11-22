@@ -1,0 +1,70 @@
+{
+  "number": 170,
+  "difficulty": "intermediate",
+  "prompt": "One jar has a thin layer of liquid and no visible mold. The other has a clean-looking bottom but mold on top. What does the guide recommend?",
+  "promptZh": "一罐表面有薄薄一層液體，看不到霉斑。另一罐底部看起來乾淨，但頂部有霉斑。指南建議怎麼處理？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Pour the liquid off the first jar and discard the starter in the second.",
+      "zh": "倒掉第一罐表面的液體，並丟掉第二罐的酸種。",
+      "whyZh": "有霉斑的那罐要丟棄沒錯，但第一罐的薄液要攪拌回去。"
+    },
+    {
+      "id": "B",
+      "text": "Stir the first jar and save the bottom of the second.",
+      "zh": "攪拌第一罐，並留下第二罐的底部。",
+      "whyZh": "前者正確，但有霉斑那罐不能只留底部。"
+    },
+    {
+      "id": "C",
+      "text": "Stir the first jar and discard the starter in the second.",
+      "zh": "攪拌第一罐，並丟掉第二罐的酸種。",
+      "whyZh": "薄液可直接攪回去；有霉斑就丟掉罐內酸種，不因底部看起來乾淨而保留。"
+    },
+    {
+      "id": "D",
+      "text": "Discard the first jar’s starter and stir the second jar.",
+      "zh": "丟掉第一罐的酸種，並攪拌第二罐。",
+      "whyZh": "有薄液的可攪回去，有霉斑的才要丟棄。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "薄液可直接攪回去；有霉斑就丟掉罐內酸種，不因底部看起來乾淨而保留。",
+  "evidence": "If there's a thin layer of liquid on top, stir it in. / If you see spots of mold, throw the starter in that jar away rather than trying to save the portion underneath.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 761,
+      "endChar": 814,
+      "exactQuote": "If there's a thin layer of liquid on top, stir it in.",
+      "sourceRole": "single-document"
+    },
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 815,
+      "endChar": 926,
+      "exactQuote": "If you see spots of mold, throw the starter in that jar away rather than trying to save the portion underneath.",
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q170",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-06",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "single-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "mold",
+      "zh": "黴菌；黴斑",
+      "note": "文中 spots of mold 指罐內肉眼可見的發霉斑點。"
+    }
+  ]
+}

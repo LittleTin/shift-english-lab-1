@@ -1,0 +1,76 @@
+{
+  "number": 176,
+  "difficulty": "foundation",
+  "prompt": "Who is required for a live machine demonstration?",
+  "promptZh": "實機示範需要哪些人？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Two operators",
+      "zh": "兩名操作員",
+      "whyZh": "還缺設置技術員。"
+    },
+    {
+      "id": "B",
+      "text": "One person with both skills",
+      "zh": "一名具備兩種技能的人",
+      "whyZh": "同一場不能兼任兩個角色。"
+    },
+    {
+      "id": "C",
+      "text": "An operator and a separate setup technician",
+      "zh": "一名操作員及另一名設置技術員",
+      "whyZh": "原文要求兩種角色由不同人擔任。"
+    },
+    {
+      "id": "D",
+      "text": "A coordinator and the safety lead",
+      "zh": "協調員及安全主管",
+      "whyZh": "安全主管負責核准待審時段，不是實機示範兩個現場角色之一。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "原文要求兩種角色由不同人擔任。",
+  "evidence": "Each customer demonstration needs an operator and a setup technician. / The same person cannot fill both roles in one demonstration.",
+  "evidenceSpans": [
+    {
+      "documentIndex": 0,
+      "sourceField": "text",
+      "startChar": 0,
+      "endChar": 69,
+      "exactQuote": "Each customer demonstration needs an operator and a setup technician.",
+      "documentId": "d1-1",
+      "sourceRole": "document-1",
+      "passageStartChar": 39,
+      "passageEndChar": 108
+    },
+    {
+      "documentIndex": 0,
+      "sourceField": "text",
+      "startChar": 70,
+      "endChar": 130,
+      "exactQuote": "The same person cannot fill both roles in one demonstration.",
+      "documentId": "d1-1",
+      "sourceRole": "document-1",
+      "passageStartChar": 109,
+      "passageEndChar": 169
+    }
+  ],
+  "id": "t08-q176",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-08",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "double-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "setup technician",
+      "zh": "設置技術員",
+      "note": "負責示範前的設備設置；依本文，不能同時兼任操作員。"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "number": 173,
+  "difficulty": "intermediate",
+  "prompt": "What does a blank meter display mean for the log entry?",
+  "promptZh": "流量計的螢幕沒有顯示時，要怎麼填寫紀錄？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Log a flow of zero and leave the equipment column empty.",
+      "zh": "將流量填為零，並將設備欄留空。",
+      "whyZh": "螢幕無顯示不代表量到零流量，設備欄須記故障。"
+    },
+    {
+      "id": "B",
+      "text": "Write “unsettled” as the result and report a display fault.",
+      "zh": "將結果填為「未穩定」，並記錄顯示故障。",
+      "whyZh": "應記錄顯示故障，但「未穩定」只用在有實際讀值的檢查。"
+    },
+    {
+      "id": "C",
+      "text": "Put “display fault” in both columns.",
+      "zh": "在兩欄都填「顯示故障」。",
+      "whyZh": "只在設備欄記故障，結果欄留空。"
+    },
+    {
+      "id": "D",
+      "text": "Record a display fault but leave the result box empty.",
+      "zh": "記錄顯示故障，但將結果欄留空。",
+      "whyZh": "螢幕無顯示時在設備欄記故障，不能在結果欄填任何數字或狀態。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "螢幕無顯示時在設備欄記故障，不能在結果欄填任何數字或狀態。",
+  "evidence": "If the meter display is blank, enter “display fault” in the equipment column. / Leave the result box empty in that case; “unsettled” is for checks with actual readings.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 898,
+      "endChar": 975,
+      "exactQuote": "If the meter display is blank, enter “display fault” in the equipment column.",
+      "sourceRole": "single-document"
+    },
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 976,
+      "endChar": 1064,
+      "exactQuote": "Leave the result box empty in that case; “unsettled” is for checks with actual readings.",
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q173",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-07",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "single-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "display fault",
+      "zh": "顯示故障",
+      "note": "表示儀器無法顯示數字，而不是量到零。"
+    }
+  ]
+}

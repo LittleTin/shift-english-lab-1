@@ -1,0 +1,98 @@
+{
+  "number": 177,
+  "difficulty": "intermediate",
+  "prompt": "Which slot can the coordinator offer Dana’s group immediately?",
+  "promptZh": "協調員目前可以立即提供黛娜一行人哪個時段？",
+  "options": [
+    {
+      "id": "A",
+      "text": "9:00 in the machine area",
+      "zh": "九點在機器區",
+      "whyZh": "九點沒有設置技術員。"
+    },
+    {
+      "id": "B",
+      "text": "10:00 in the machine area",
+      "zh": "十點在機器區",
+      "whyZh": "十點已就緒，且瑪塔與設置技術員兩人都能到場。"
+    },
+    {
+      "id": "C",
+      "text": "11:00 in the machine area",
+      "zh": "十一點在機器區",
+      "whyZh": "雖然兩種人員皆可到場，十一點仍待書面核准。"
+    },
+    {
+      "id": "D",
+      "text": "9:00 in the training room for a live demonstration",
+      "zh": "九點在訓練室做實機示範",
+      "whyZh": "訓練室只能檢視樣品，不能運轉機器示範。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "十點已就緒，且瑪塔與設置技術員兩人都能到場。",
+  "evidence": "You may offer a READY slot immediately if both roles are covered. / The technician for 10:00 can still take that slot. / The 9:00 and 10:00 slots are listed as READY. / Marta can operate all morning on Wednesday",
+  "evidenceSpans": [
+    {
+      "documentIndex": 0,
+      "sourceField": "text",
+      "startChar": 303,
+      "endChar": 368,
+      "exactQuote": "You may offer a READY slot immediately if both roles are covered.",
+      "documentId": "d1-1",
+      "sourceRole": "document-1",
+      "passageStartChar": 342,
+      "passageEndChar": 407
+    },
+    {
+      "documentIndex": 1,
+      "sourceField": "text",
+      "startChar": 100,
+      "endChar": 150,
+      "exactQuote": "The technician for 10:00 can still take that slot.",
+      "documentId": "d1-2",
+      "sourceRole": "document-2",
+      "passageStartChar": 705,
+      "passageEndChar": 755
+    },
+    {
+      "documentIndex": 1,
+      "sourceField": "text",
+      "startChar": 264,
+      "endChar": 309,
+      "exactQuote": "The 9:00 and 10:00 slots are listed as READY.",
+      "documentId": "d1-2",
+      "sourceRole": "document-2",
+      "passageStartChar": 869,
+      "passageEndChar": 914
+    },
+    {
+      "documentIndex": 1,
+      "sourceField": "text",
+      "startChar": 0,
+      "endChar": 42,
+      "exactQuote": "Marta can operate all morning on Wednesday",
+      "documentId": "d1-2",
+      "sourceRole": "document-2",
+      "passageStartChar": 605,
+      "passageEndChar": 647
+    }
+  ],
+  "id": "t08-q177",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-08",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "double-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "cover a role",
+      "zh": "有人負責某職務",
+      "note": "本題指示範所需的兩個角色都有人擔任。"
+    }
+  ]
+}

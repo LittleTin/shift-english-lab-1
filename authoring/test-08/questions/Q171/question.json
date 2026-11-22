@@ -1,0 +1,62 @@
+{
+  "number": 171,
+  "difficulty": "foundation",
+  "prompt": "When should workers take the first meter reading?",
+  "promptZh": "工作人員何時應取得流量計的第一次讀值？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Once the test outlet has been shut.",
+      "zh": "測試出水口關閉後。",
+      "whyZh": "作業說明以測試出水口關閉為第一次讀值的起點。"
+    },
+    {
+      "id": "B",
+      "text": "While the repair crew is still testing the outlet.",
+      "zh": "維修人員還在測試出水口時。",
+      "whyZh": "必須等出水口關閉後再讀，不能在測試中讀。"
+    },
+    {
+      "id": "C",
+      "text": "When the duty officer starts the morning dispatch review.",
+      "zh": "值班主管開始清晨的派工審查時。",
+      "whyZh": "清晨的派工決定在讀值記錄之後，不是首次量測的時間。"
+    },
+    {
+      "id": "D",
+      "text": "After the site contact confirms that there was planned water use.",
+      "zh": "場地聯絡人確認有計畫性用水之後。",
+      "whyZh": "正常用水若被告知就另作備註，不是開始讀值的前提。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "作業說明以測試出水口關閉為第一次讀值的起點。",
+  "evidence": "At each site, note the flow shown on the street meter once the repair crew has closed the test outlet.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 57,
+      "endChar": 159,
+      "exactQuote": "At each site, note the flow shown on the street meter once the repair crew has closed the test outlet.",
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q171",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-07",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "single-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "test outlet",
+      "zh": "測試出水口",
+      "note": "在維修測試時讓水流出的開口。"
+    }
+  ]
+}

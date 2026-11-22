@@ -1,0 +1,65 @@
+{
+  "number": 185,
+  "difficulty": "foundation",
+  "prompt": "What extra item does Ivy want Ben to pick up without buying hardware?",
+  "promptZh": "除了裱框，艾薇希望班另拿什麼，又不用買五金？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A hanging guide",
+      "zh": "掛畫指南",
+      "whyZh": "艾薇要他拿一本指南，但不要買掛鉤。"
+    },
+    {
+      "id": "B",
+      "text": "A set of hooks",
+      "zh": "一組掛鉤",
+      "whyZh": "艾薇說家裡已有掛鉤，不要買。"
+    },
+    {
+      "id": "C",
+      "text": "A glass panel",
+      "zh": "一片玻璃",
+      "whyZh": "玻璃裱框她要自己改天領，沒請他拿面板。"
+    },
+    {
+      "id": "D",
+      "text": "A second frame for the bedroom",
+      "zh": "臥室的第二件裱框",
+      "whyZh": "臥室那件由艾薇自己領，不屬於附帶要拿的東西。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "艾薇要他拿一本指南，但不要買掛鉤。",
+  "evidence": "Could you pick up one of their hanging guides too? Don’t buy any hooks; I have some at home.",
+  "evidenceSpans": [
+    {
+      "documentIndex": 1,
+      "sourceField": "text",
+      "startChar": 419,
+      "endChar": 511,
+      "exactQuote": "Could you pick up one of their hanging guides too? Don’t buy any hooks; I have some at home.",
+      "documentId": "d2-2",
+      "sourceRole": "document-2",
+      "passageStartChar": 1042,
+      "passageEndChar": 1134
+    }
+  ],
+  "id": "t08-q185",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-09",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "double-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "a hanging guide",
+      "zh": "掛畫指南",
+      "note": "說明如何掛畫的資料，不是掛鉤等五金。"
+    }
+  ]
+}

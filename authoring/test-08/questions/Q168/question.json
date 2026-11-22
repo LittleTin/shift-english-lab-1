@@ -1,0 +1,70 @@
+{
+  "number": 168,
+  "difficulty": "intermediate",
+  "prompt": "Why does the guide recommend against taking all the starter?",
+  "promptZh": "為什麼指南不建議帶走所有酸種？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The cooler bag needs room for the starter to expand.",
+      "zh": "保冷袋內需保留空間讓酸種膨脹。",
+      "whyZh": "指南沒有提到膨脹，留一份在家是為了有備用酸種。"
+    },
+    {
+      "id": "B",
+      "text": "Any starter that travels has to be used before the journey ends.",
+      "zh": "帶上路的酸種必須在旅程結束前用完。",
+      "whyZh": "指南只說要回溫後再餵，未規定用完期限。"
+    },
+    {
+      "id": "C",
+      "text": "A fuller jar is more likely to freeze during the trip.",
+      "zh": "越滿的罐子在途中越容易結凍。",
+      "whyZh": "指南把局部結凍風險歸於玻璃與保冷劑接觸，不是罐子裝得滿。"
+    },
+    {
+      "id": "D",
+      "text": "It leaves something to bake with if the traveling portion is lost.",
+      "zh": "旅行時帶的那份若損失，仍有別份可用來烤麵包。",
+      "whyZh": "旅行用罐可能破損或灑出，家中保留的同批酸種可以備用。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "旅行用罐可能破損或灑出，家中保留的同批酸種可以備用。",
+  "evidence": "Keep the rest in its usual container at home. / If the travel jar cracks or spills, you'll still have enough to bake another batch after your trip.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 145,
+      "endChar": 190,
+      "exactQuote": "Keep the rest in its usual container at home.",
+      "sourceRole": "single-document"
+    },
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 191,
+      "endChar": 290,
+      "exactQuote": "If the travel jar cracks or spills, you'll still have enough to bake another batch after your trip.",
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q168",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-06",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "single-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "portion",
+      "zh": "一份；一部分",
+      "note": "這裡指從同一批酸種分出少量帶上路。"
+    }
+  ]
+}

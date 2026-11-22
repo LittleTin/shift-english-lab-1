@@ -1,0 +1,78 @@
+{
+  "number": 174,
+  "difficulty": "intermediate",
+  "prompt": "A meter shows 8 on the first check, 6 ten minutes later, and 8 ten minutes after that. What goes in the result box?",
+  "promptZh": "第一次讀值是 8，十分鐘後是 6，再過十分鐘又是 8。結果欄要填什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "6, because it was the lowest of the three readings.",
+      "zh": "填 6，因為它是三次讀值中的最低值。",
+      "whyZh": "不以最低值作結果，而是先確認最後兩次讀值相同。"
+    },
+    {
+      "id": "B",
+      "text": "“Unsettled,” because the two most recent readings do not agree.",
+      "zh": "填「未穩定」，因為最近兩次讀值不同。",
+      "whyZh": "第一次和第二次不同，才量第三次。最後兩次是 6 和 8，沒有達到填數字的條件。"
+    },
+    {
+      "id": "C",
+      "text": "8, because it appeared twice during the check.",
+      "zh": "填 8，因為檢查期間出現兩次。",
+      "whyZh": "非連續出現兩次不算；應比對最後兩次，不是找重複值。"
+    },
+    {
+      "id": "D",
+      "text": "8, because it was the last reading taken.",
+      "zh": "填 8，因為它是最後一次讀值。",
+      "whyZh": "最後一次讀值必須與前一次相同，才能填數字。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "第一次和第二次不同，才量第三次。最後兩次是 6 和 8，沒有達到填數字的條件。",
+  "evidence": "If the two readings differ, take a third ten minutes after the second. / Use the last two readings, and enter a result only if they match. / Otherwise, write “unsettled” in the result box rather than entering a number.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 200,
+      "endChar": 270,
+      "exactQuote": "If the two readings differ, take a third ten minutes after the second.",
+      "sourceRole": "single-document"
+    },
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 369,
+      "endChar": 434,
+      "exactQuote": "Use the last two readings, and enter a result only if they match.",
+      "sourceRole": "single-document"
+    },
+    {
+      "sourceField": "passage",
+      "documentIndex": 0,
+      "startChar": 435,
+      "endChar": 512,
+      "exactQuote": "Otherwise, write “unsettled” in the result box rather than entering a number.",
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q174",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-07",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "single-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "settle",
+      "zh": "趨於穩定",
+      "note": "這裡指流量不再變動，最後兩次讀值一致。"
+    }
+  ]
+}
