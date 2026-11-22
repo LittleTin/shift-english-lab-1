@@ -1,0 +1,66 @@
+{
+  "id": "t07-q096",
+  "testId": "test-07",
+  "number": 96,
+  "part": 4,
+  "groupId": "t07-g095",
+  "prompt": "What does a grey picture indicate in the sample catalogue?",
+  "promptZh": "範例目錄中的灰色圖片表示什麼？",
+  "answer": "D",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "technology",
+    "talk"
+  ],
+  "revision": 1,
+  "evidence": "A grey picture means the image file is not on this tablet. / It does not mean the product is unavailable.",
+  "evidenceSpans": [
+    {
+      "speaker": "M",
+      "exactQuote": "A grey picture means the image file is not on this tablet.",
+      "startChar": 140,
+      "endChar": 198
+    },
+    {
+      "speaker": "M",
+      "exactQuote": "It does not mean the product is unavailable.",
+      "startChar": 199,
+      "endChar": 243
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "text": "The product is no longer sold.",
+      "zh": "商品已停售。",
+      "whyZh": "講者明說該狀態不是指商品無貨或不能供應。"
+    },
+    {
+      "id": "B",
+      "text": "The tablet has no sample stock figures.",
+      "zh": "平板沒有任何庫存範例數字。",
+      "whyZh": "圖片狀態與庫存數字分開，範例數字確實有提到。"
+    },
+    {
+      "id": "C",
+      "text": "The product has just been reserved by a customer.",
+      "zh": "商品剛被客戶預訂。",
+      "whyZh": "示範目錄與實際客戶使用的目錄不同，灰圖也不表示預訂。"
+    },
+    {
+      "id": "D",
+      "text": "The image file is missing from this tablet.",
+      "zh": "這台平板缺少該圖片檔。",
+      "whyZh": "灰圖表示這台平板上沒有該圖片檔。"
+    }
+  ],
+  "explanationZh": "灰圖表示這台平板上沒有該圖片檔。",
+  "vocabulary": [
+    {
+      "term": "unavailable",
+      "zh": "無法取得；缺貨",
+      "note": "在這裡講者明確否定灰圖表示商品無法供應。"
+    }
+  ]
+}

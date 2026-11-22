@@ -1,0 +1,60 @@
+{
+  "id": "t07-q099",
+  "testId": "test-07",
+  "number": 99,
+  "part": 4,
+  "groupId": "t07-g098",
+  "prompt": "Which observation should be excluded from the list?",
+  "promptZh": "哪一筆觀察不應列入名單？",
+  "answer": "A",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "daily",
+    "talk"
+  ],
+  "revision": 1,
+  "evidence": "We want reports from the pond path, not from the feeding table in the visitor center.",
+  "evidenceSpans": [
+    {
+      "speaker": "F",
+      "exactQuote": "We want reports from the pond path, not from the feeding table in the visitor center.",
+      "startChar": 203,
+      "endChar": 288
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "text": "A bird seen at the feeding table inside the visitor center.",
+      "zh": "在遊客中心裡的餵食台看到的鳥。",
+      "whyZh": "領隊指定只收池塘步道紀錄，明確排除遊客中心餵食台。"
+    },
+    {
+      "id": "B",
+      "text": "A bird seen on the pond path during the count.",
+      "zh": "計數期間在池塘步道看到的鳥。",
+      "whyZh": "指定收錄池塘步道在這次計數活動中的觀察。"
+    },
+    {
+      "id": "C",
+      "text": "A bird seen on the pond path for which no photo was taken.",
+      "zh": "池塘步道上看到但沒有拍照的鳥。",
+      "whyZh": "照片不是必要條件，即使沒有照片也能提交紀錄。"
+    },
+    {
+      "id": "D",
+      "text": "One entry for a bird that two household members saw together on the path.",
+      "zh": "同戶兩個人在步道一起看到同一隻鳥，只記了一筆。",
+      "whyZh": "一起看到同一隻鳥正應只記一次，這一筆可以列入。"
+    }
+  ],
+  "explanationZh": "領隊指定只收池塘步道紀錄，明確排除遊客中心餵食台。",
+  "vocabulary": [
+    {
+      "term": "a feeding table",
+      "zh": "餵食台",
+      "note": "讓鳥類取食的一個平台；題中位於不列入的區域。"
+    }
+  ]
+}

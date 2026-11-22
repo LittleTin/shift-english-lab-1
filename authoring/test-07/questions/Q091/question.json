@@ -1,0 +1,66 @@
+{
+  "id": "t07-q091",
+  "testId": "test-07",
+  "number": 91,
+  "part": 4,
+  "groupId": "t07-g089",
+  "prompt": "If the team asks for more space along the fold, what should happen first?",
+  "promptZh": "如果團隊要求折線旁增加空間，第一步應怎麼做？",
+  "answer": "B",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "business",
+    "talk"
+  ],
+  "revision": 1,
+  "evidence": "If they ask for a wider fold margin, bring that copy back to me. / Don’t change the layout until we’ve measured how much space they need.",
+  "evidenceSpans": [
+    {
+      "speaker": "M",
+      "exactQuote": "If they ask for a wider fold margin, bring that copy back to me.",
+      "startChar": 365,
+      "endChar": 429
+    },
+    {
+      "speaker": "M",
+      "exactQuote": "Don’t change the layout until we’ve measured how much space they need.",
+      "startChar": 430,
+      "endChar": 500
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "text": "Change the layout before returning the sample.",
+      "zh": "先改版面再退回樣本。",
+      "whyZh": "錄音明確禁止先改版面，須先量所需空間。"
+    },
+    {
+      "id": "B",
+      "text": "Return the sample so the needed space can be measured.",
+      "zh": "把樣本送回，以便量出所需的空間。",
+      "whyZh": "對方要求加寬時，先帶回同一本，再量所需空間，之後才能改版。"
+    },
+    {
+      "id": "C",
+      "text": "Send the entire batch to reception for review.",
+      "zh": "把整批送到接待區審查。",
+      "whyZh": "檢查用的是一本成品，整批仍暫留裝訂區。"
+    },
+    {
+      "id": "D",
+      "text": "Print a new map without any fold.",
+      "zh": "重印一張完全沒有折線的平面圖。",
+      "whyZh": "要求是查明加寬的空間，並非取消折頁。"
+    }
+  ],
+  "explanationZh": "對方要求加寬時，先帶回同一本，再量所需空間，之後才能改版。",
+  "vocabulary": [
+    {
+      "term": "a margin",
+      "zh": "邊界留白",
+      "note": "與折線相鄰、可以調整的空白區。"
+    }
+  ]
+}

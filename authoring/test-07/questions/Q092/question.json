@@ -1,0 +1,60 @@
+{
+  "id": "t07-q092",
+  "testId": "test-07",
+  "number": 92,
+  "part": 4,
+  "groupId": "t07-g092",
+  "prompt": "Where should customers collect a prepaid order today?",
+  "promptZh": "今天已付款的預訂品應到哪裡領？",
+  "answer": "D",
+  "topic": "daily",
+  "difficulty": "foundation",
+  "tags": [
+    "daily",
+    "talk"
+  ],
+  "revision": 1,
+  "evidence": "all prepaid orders will be at the covered pickup counter beside the main gate.",
+  "evidenceSpans": [
+    {
+      "speaker": "F",
+      "exactQuote": "all prepaid orders will be at the covered pickup counter beside the main gate.",
+      "startChar": 111,
+      "endChar": 189
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "text": "At each stall in the order.",
+      "zh": "到這筆訂單涉及的各個攤位。",
+      "whyZh": "因下雨改到同一個取貨櫃檯，不需在各攤排隊。"
+    },
+    {
+      "id": "B",
+      "text": "Just beyond the last row of stalls.",
+      "zh": "剛過最後一排攤位的地方。",
+      "whyZh": "通知指定在主入口旁，沒有說要走過最後一排攤位。"
+    },
+    {
+      "id": "C",
+      "text": "At the counter where new purchases are paid for.",
+      "zh": "在新購品付款的櫃檯。",
+      "whyZh": "主入口旁的取貨櫃檯不收新購品的款項。"
+    },
+    {
+      "id": "D",
+      "text": "At the covered counter by the main gate.",
+      "zh": "在主入口旁有遮蔽的櫃檯。",
+      "whyZh": "錄音直接說已付款的預訂品全都移到主入口旁的取貨櫃檯。"
+    }
+  ],
+  "explanationZh": "錄音直接說已付款的預訂品全都移到主入口旁的取貨櫃檯。",
+  "vocabulary": [
+    {
+      "term": "prepaid",
+      "zh": "預付的；已付款的",
+      "note": "先支付後領取的訂單。"
+    }
+  ]
+}
