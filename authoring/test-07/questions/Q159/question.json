@@ -1,0 +1,52 @@
+{
+  "id": "t07-q159",
+  "testId": "test-07",
+  "number": 159,
+  "part": 7,
+  "groupId": "t07-r-p7-04",
+  "revision": 1,
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "single-passage",
+    "manufacturing"
+  ],
+  "prompt": "What is the weekly Idle total meant to measure?",
+  "promptZh": "每週「待命」總數要衡量什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Time spent producing the first piece of every job",
+      "zh": "每項工作做出第一件產品所花的時間",
+      "whyZh": "待命不以產品產出為準，而且已開始準備就算使用中。"
+    },
+    {
+      "id": "B",
+      "text": "All time when there is no operator at the machine",
+      "zh": "沒有操作員在設備旁的所有時間",
+      "whyZh": "看設備可否接工作和有沒有使用，不是看是否有人在旁邊。"
+    },
+    {
+      "id": "C",
+      "text": "Hours set aside for scheduled maintenance",
+      "zh": "排定保養留出的時間",
+      "whyZh": "保養停用期間屬於 Unavailable，不能算待命。"
+    },
+    {
+      "id": "D",
+      "text": "Time a usable press is unassigned and not in setup",
+      "zh": "設備可用、未被分派工作且沒在做準備的時間",
+      "whyZh": "第一段列出待命的三項條件，並指出待命是可接受工作卻未使用。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "第一段列出待命的三項條件，並指出待命是可接受工作卻未使用。",
+  "evidence": "Count time in Idle only while a press is available and has no assigned job or setup in progress.",
+  "vocabulary": [
+    {
+      "term": "in progress",
+      "zh": "進行中",
+      "note": "描述準備或其他工作已經開始而且尚未完成。"
+    }
+  ]
+}

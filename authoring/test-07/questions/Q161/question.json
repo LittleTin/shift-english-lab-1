@@ -1,0 +1,52 @@
+{
+  "id": "t07-q161",
+  "testId": "test-07",
+  "number": 161,
+  "part": 7,
+  "groupId": "t07-r-p7-04",
+  "revision": 1,
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "single-passage",
+    "manufacturing"
+  ],
+  "prompt": "For five minutes the press is free with no assigned job. It then undergoes five minutes of scheduled maintenance and ten minutes of approved setup. How much of the twenty minutes should be recorded as Idle?",
+  "promptZh": "設備先有五分鐘可用且無工作；接著進行五分鐘排定保養，再做十分鐘核准準備。二十分鐘中，有幾分鐘應算「待命」？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Five minutes",
+      "zh": "五分鐘",
+      "whyZh": "只有第一段可用、沒有工作且沒在準備；接下來保養不可用，準備算使用中。"
+    },
+    {
+      "id": "B",
+      "text": "Ten minutes",
+      "zh": "十分鐘",
+      "whyZh": "不能把保養五分鐘加在待命，也不能把十分鐘準備當待命。"
+    },
+    {
+      "id": "C",
+      "text": "Fifteen minutes",
+      "zh": "十五分鐘",
+      "whyZh": "只扣保養但把準備當待命不對，因為開始核准準備就算使用中。"
+    },
+    {
+      "id": "D",
+      "text": "Twenty minutes",
+      "zh": "二十分鐘",
+      "whyZh": "同一時段可有不同狀態，不能整段塞進待命欄。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "只有第一段可用、沒有工作且沒在準備；接下來保養不可用，準備算使用中。",
+  "evidence": "Count time in Idle only while a press is available and has no assigned job or setup in progress. / A job's approved setup counts as use from the minute it begins, even if the first piece will not be produced until later. / Separately, a press taken out of service for scheduled maintenance is Unavailable, not Idle. / A single time window may contain several statuses.",
+  "vocabulary": [
+    {
+      "term": "an interval",
+      "zh": "一段時間",
+      "note": "時間範圍內每段可有不同狀態，按起訖分開計算。"
+    }
+  ]
+}

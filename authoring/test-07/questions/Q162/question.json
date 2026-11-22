@@ -1,0 +1,52 @@
+{
+  "id": "t07-q162",
+  "testId": "test-07",
+  "number": 162,
+  "part": 7,
+  "groupId": "t07-r-p7-04",
+  "revision": 1,
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "single-passage",
+    "manufacturing"
+  ],
+  "prompt": "According to the note, what supplies the numbers used in the weekly totals?",
+  "promptZh": "依照須知，每週總數採計哪項資料？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The number of jobs marked ready",
+      "zh": "標記為「工作就緒」的工作數",
+      "whyZh": "job ready 通知規劃員工作即將能開始，不是設備狀態或使用分鐘。"
+    },
+    {
+      "id": "B",
+      "text": "The operator’s explanations alone",
+      "zh": "只用操作員的文字說明",
+      "whyZh": "可留註記說明，但原文說每週總數不以註記欄計算。"
+    },
+    {
+      "id": "C",
+      "text": "The time intervals entered under their actual status",
+      "zh": "按實際狀態登記的各段時間",
+      "whyZh": "末段要求逐段按狀態登記，並明確說總數使用這些有起訖的區間。"
+    },
+    {
+      "id": "D",
+      "text": "The number of operators present throughout",
+      "zh": "全程在場的操作員人數",
+      "whyZh": "同一位操作員在場也可能有不同狀態，人數不代表使用分鐘。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "末段要求逐段按狀態登記，並明確說總數使用這些有起訖的區間。",
+  "evidence": "Enter each interval under its actual status. / The operator may write an explanation in the notes, but the weekly totals use the timed intervals, not the notes.",
+  "vocabulary": [
+    {
+      "term": "timed intervals",
+      "zh": "有起訖紀錄的區間",
+      "note": "用每段的長度統計，而不是把文字說明轉成未量測的時間。"
+    }
+  ]
+}

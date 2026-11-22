@@ -1,0 +1,52 @@
+{
+  "id": "t07-q160",
+  "testId": "test-07",
+  "number": 160,
+  "part": 7,
+  "groupId": "t07-r-p7-04",
+  "revision": 1,
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "single-passage",
+    "manufacturing"
+  ],
+  "prompt": "What changes when approved setup begins but the press has not produced anything?",
+  "promptZh": "核准的準備作業開始後，如果沖壓設備還沒產出任何零件，設備狀態有何變化？",
+  "options": [
+    {
+      "id": "A",
+      "text": "It becomes Unavailable until the finished pieces are counted",
+      "zh": "成為「不可用」，直到完成品計數",
+      "whyZh": "不可用的例子是預定保養；開始工作準備不屬於該欄。"
+    },
+    {
+      "id": "B",
+      "text": "It counts as in use from the start of setup",
+      "zh": "從開始準備就算使用中",
+      "whyZh": "即使首件稍後才會完成，核准的準備從開始就列入使用。"
+    },
+    {
+      "id": "C",
+      "text": "It stays Idle until the first piece comes out",
+      "zh": "第一件產出之前全部算待命",
+      "whyZh": "原文特別說不能用是否出件判斷，準備開始就先計入使用。"
+    },
+    {
+      "id": "D",
+      "text": "It is counted only in the operator’s notes",
+      "zh": "只反映在操作員註記",
+      "whyZh": "狀態變更須記錄時間，不能只寫在不入總數的註記。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "即使首件稍後才會完成，核准的準備從開始就列入使用。",
+  "evidence": "A job's approved setup counts as use from the minute it begins, even if the first piece will not be produced until later.",
+  "vocabulary": [
+    {
+      "term": "setup",
+      "zh": "準備作業",
+      "note": "在生產流程中指正式產出前的安排與準備。"
+    }
+  ]
+}
