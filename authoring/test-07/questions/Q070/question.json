@@ -1,0 +1,69 @@
+{
+  "id": "t07-q070",
+  "testId": "test-07",
+  "number": 70,
+  "part": 3,
+  "groupId": "t07-g068",
+  "topic": "daily",
+  "prompt": "Which plan lets them keep their meeting time and travel together?",
+  "promptZh": "哪個方案讓他們一起搭船，又能準時與朋友碰面？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "Bring both bicycles on the eleven o’clock ferry.",
+      "zh": "帶兩輛車搭十一點渡輪。",
+      "whyZh": "兩車雖可同搭，但十一點出發無法在十一點前和朋友會合。"
+    },
+    {
+      "id": "B",
+      "text": "Lock both bicycles beside the ticket office and board the ten o’clock ferry on foot.",
+      "zh": "把兩車鎖在售票處旁，步行搭十點那班。",
+      "whyZh": "車架能停兩部車，原本的乘客票有效；十點一起登船，二十五分鐘後就能抵達對岸。"
+    },
+    {
+      "id": "C",
+      "text": "Have one traveler take a bicycle at ten and the other travel later.",
+      "zh": "一人十點帶車搭船，另一人晚點搭。",
+      "whyZh": "兩人分開搭船，不符合一起出發的要求。"
+    },
+    {
+      "id": "D",
+      "text": "Buy two new passenger tickets at the ramp and keep both bicycles with them.",
+      "zh": "在坡道買兩張新乘客票並帶兩輛車搭船。",
+      "whyZh": "買新乘客票不會增加自行車掛牌，且原先的乘客票已能使用。"
+    }
+  ],
+  "explanationZh": "車架能停兩部車，原本的乘客票有效；十點一起登船，二十五分鐘後就能抵達對岸。",
+  "evidence": "Your passenger tickets are still valid, but you need one bicycle tag for each bike. We’ve only got one tag left for that departure. The crossing takes twenty-five minutes. If you want to travel together with both bikes, the eleven o’clock ferry still has space. / We have to meet our friends on the other side before eleven. Is there a place to leave both bikes here? / Yes. The racks beside the ticket office are free. Lock both bicycles there, then use the tickets you already have to board the ten o’clock ferry on foot.",
+  "evidenceSpans": [
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "Your passenger tickets are still valid, but you need one bicycle tag for each bike. We’ve only got one tag left for that departure. The crossing takes twenty-five minutes. If you want to travel together with both bikes, the eleven o’clock ferry still has space."
+    },
+    {
+      "turn": 3,
+      "speaker": "F",
+      "exactQuote": "We have to meet our friends on the other side before eleven. Is there a place to leave both bikes here?"
+    },
+    {
+      "turn": 4,
+      "speaker": "M",
+      "exactQuote": "Yes. The racks beside the ticket office are free. Lock both bicycles there, then use the tickets you already have to board the ten o’clock ferry on foot."
+    }
+  ],
+  "difficulty": "intermediate",
+  "revision": 1,
+  "tags": [
+    "daily",
+    "conversation"
+  ],
+  "vocabulary": [
+    {
+      "term": "on foot",
+      "zh": "步行",
+      "note": "此處表示不帶自行車，直接步行登船。"
+    }
+  ]
+}

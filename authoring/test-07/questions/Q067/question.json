@@ -1,0 +1,69 @@
+{
+  "id": "t07-q067",
+  "testId": "test-07",
+  "number": 67,
+  "part": 3,
+  "topic": "business",
+  "difficulty": "advanced",
+  "groupId": "t07-g065",
+  "prompt": "Reception is using a temporary slip. Approval comes at eleven twenty-five, the proof at eleven thirty, and printed directories arrive at twelve fifteen. When can the site and reception first use the replacement?",
+  "promptZh": "接待櫃檯正在使用臨時便條。十一點二十五分核准、十一點三十分有校樣，印刷版名錄十二點十五分送達。網站和櫃檯各自最早何時可用新版？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "The site and counter can both switch at eleven thirty, when the proof is available.",
+      "zh": "十一點三十分有校樣可供核對時，網站和櫃檯都可換新版。",
+      "whyZh": "網站不必等校樣，櫃檯也不能把內部校樣當作新版名錄。"
+    },
+    {
+      "id": "B",
+      "text": "The site can switch at eleven twenty-five, and the counter can switch at eleven thirty.",
+      "zh": "網站十一點二十五分可更換，櫃檯十一點三十分可更換。",
+      "whyZh": "網站時間正確，但十一點三十分只有內部校樣可供核對，正式印刷本尚未送達櫃檯。"
+    },
+    {
+      "id": "C",
+      "text": "The site can switch at eleven twenty-five, and the counter can switch at twelve fifteen.",
+      "zh": "網站十一點二十五分可更換，櫃檯十二點十五分可更換。",
+      "whyZh": "網站在設施管理部門核准後即可更新；櫃檯維持原便條，直到正式印刷本送到。"
+    },
+    {
+      "id": "D",
+      "text": "The site can switch at eleven thirty, and the counter can switch at twelve fifteen.",
+      "zh": "網站十一點三十分可更換，櫃檯十二點十五分可更換。",
+      "whyZh": "櫃檯時間正確，但網站可以在核准的十一點二十五分更新，不必多等五分鐘核對校樣。"
+    }
+  ],
+  "explanationZh": "區分三個時間點的作用：核准決定上網時間，校樣僅供內部檢查，正式印刷本送達才結束櫃檯使用便條的安排。",
+  "evidence": "until the new directory arrives. / Can we post the approved PDF before seeing the proof? / Yes. Print from that file, but keep the proof here.",
+  "tags": [
+    "business",
+    "conversation"
+  ],
+  "revision": 2,
+  "evidenceSpans": [
+    {
+      "turn": 4,
+      "speaker": "M",
+      "exactQuote": "until the new directory arrives."
+    },
+    {
+      "turn": 5,
+      "speaker": "F",
+      "exactQuote": "Can we post the approved PDF before seeing the proof?"
+    },
+    {
+      "turn": 6,
+      "speaker": "M",
+      "exactQuote": "Yes. Print from that file, but keep the proof here."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "a proof",
+      "zh": "印刷校樣",
+      "note": "校樣僅供內部核對，不等於正式印刷本。"
+    }
+  ]
+}

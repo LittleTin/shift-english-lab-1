@@ -1,0 +1,64 @@
+{
+  "id": "t07-q065",
+  "testId": "test-07",
+  "number": 65,
+  "part": 3,
+  "topic": "business",
+  "difficulty": "advanced",
+  "groupId": "t07-g065",
+  "prompt": "Which finding in the visitor’s PDF supports the man’s explanation rather than the woman’s?",
+  "promptZh": "訪客手上的 PDF 裡，哪個情況能支持男方的解釋而非女方的猜測？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "The index and diagram both show Rosa at Desk Five.",
+      "zh": "索引和平面圖都顯示羅莎在五號座位。",
+      "whyZh": "女方猜的是索引更改前的舊版本；兩頁都顯示舊號碼反而符合她的猜測，無法支持男方所說的兩頁不同步。"
+    },
+    {
+      "id": "B",
+      "text": "The diagram shows Rosa at Desk Five, but the visitor cannot find her entry in the index.",
+      "zh": "平面圖顯示羅莎在五號座位，但訪客在索引裡找不到她的資料。",
+      "whyZh": "平面圖的號碼符合男方的說法，但找不到索引資料就不知道訪客開的是不是已更新索引的版本。"
+    },
+    {
+      "id": "C",
+      "text": "The index lists Rosa at Desk Nine, but the diagram still shows her at Desk Five.",
+      "zh": "索引把羅莎列在九號座位，但平面圖仍顯示她在五號。",
+      "whyZh": "十一點已儲存新版索引，十一點四十分匯出，午餐後才改平面圖，而且修改原始檔不會回寫既有 PDF。因此只有索引更新、平面圖仍停在舊號碼，最符合男方解釋。"
+    },
+    {
+      "id": "D",
+      "text": "The index and diagram both show Rosa at Desk Nine.",
+      "zh": "索引和平面圖都顯示羅莎在九號座位。",
+      "whyZh": "兩頁都是正確的新資料，無法解釋為何訪客依照圖上的標記走到五號。"
+    }
+  ],
+  "explanationZh": "要區分「開到更早的檔案」和「同一份 PDF 把新索引和舊平面圖一起匯出」，關鍵是查看同一份檔案中的兩頁是否一新一舊。",
+  "evidence": "I saved Desk Nine in the index at eleven yesterday. / We exported at eleven forty. I moved her map marker from Desk Five after lunch. Edits don’t change that PDF.",
+  "tags": [
+    "business",
+    "conversation"
+  ],
+  "revision": 2,
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "F",
+      "exactQuote": "I saved Desk Nine in the index at eleven yesterday."
+    },
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "We exported at eleven forty. I moved her map marker from Desk Five after lunch. Edits don’t change that PDF."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "an editable map",
+      "zh": "可編輯的平面圖",
+      "note": "原始檔更新不會回寫已匯出的 PDF。"
+    }
+  ]
+}

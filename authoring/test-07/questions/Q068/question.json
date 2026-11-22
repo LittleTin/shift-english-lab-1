@@ -1,0 +1,59 @@
+{
+  "id": "t07-q068",
+  "testId": "test-07",
+  "number": 68,
+  "part": 3,
+  "groupId": "t07-g068",
+  "topic": "daily",
+  "prompt": "What did the woman already buy?",
+  "promptZh": "女方已經買了什麼？",
+  "answer": "D",
+  "options": [
+    {
+      "id": "A",
+      "text": "Two tags for bicycles.",
+      "zh": "兩張自行車掛牌。",
+      "whyZh": "女方才決定帶車，原先買的是步行乘客票。"
+    },
+    {
+      "id": "B",
+      "text": "A lock for each bicycle.",
+      "zh": "每輛自行車各一個鎖。",
+      "whyZh": "男方請他們把自行車鎖在停車架上，沒有說女方之前買了鎖。"
+    },
+    {
+      "id": "C",
+      "text": "Two seats on the eleven o’clock ferry.",
+      "zh": "十一點渡輪的兩個座位。",
+      "whyZh": "她買的是十點那班的乘客票，而不是十一點班次。"
+    },
+    {
+      "id": "D",
+      "text": "Two passenger tickets for the ten o’clock ferry.",
+      "zh": "十點渡輪的兩張乘客票。",
+      "whyZh": "女方開頭說買了兩張十點班次的步行乘客票。"
+    }
+  ],
+  "explanationZh": "女方開頭說買了兩張十點班次的步行乘客票。",
+  "evidence": "I bought two walk-on tickets for the ten o’clock ferry. We decided to bring our bicycles. Can we just show the same tickets at the ramp?",
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "F",
+      "exactQuote": "I bought two walk-on tickets for the ten o’clock ferry. We decided to bring our bicycles. Can we just show the same tickets at the ramp?"
+    }
+  ],
+  "difficulty": "foundation",
+  "revision": 1,
+  "tags": [
+    "daily",
+    "conversation"
+  ],
+  "vocabulary": [
+    {
+      "term": "walk-on tickets",
+      "zh": "未攜車乘客票",
+      "note": "walk-on 指不搭載車輛而步行登船。"
+    }
+  ]
+}

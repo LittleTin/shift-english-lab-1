@@ -1,0 +1,69 @@
+{
+  "id": "t07-q066",
+  "testId": "test-07",
+  "number": 66,
+  "part": 3,
+  "topic": "business",
+  "difficulty": "advanced",
+  "groupId": "t07-g065",
+  "prompt": "Before sign-off, Communications asks to check Rosa’s name. The noon visitors need her signature in person and can’t wait until one. What can Communications and reception receive?",
+  "promptZh": "核准前，公關部想核對羅莎的姓名。中午的訪客需要她當面簽名，又不能等到一點。公關部和接待櫃檯各可以收到什麼？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "Send Communications the full line from the current index, and give reception a slip with the new desk number.",
+      "zh": "把目前索引的整列給公關部，並給櫃檯一張寫有新座位號碼的便條。",
+      "whyZh": "櫃檯可使用便條，但完整索引列包含核准前不能給公關部的座位號碼。"
+    },
+    {
+      "id": "B",
+      "text": "Send Communications the part of the current index line with Rosa’s name, and give reception a slip with the new desk number.",
+      "zh": "把索引目前那一列中的姓名部分給公關部，並給櫃檯一張寫有新座位號碼的便條。",
+      "whyZh": "核對姓名只需要那一部分；羅莎一點前留在樓上，訪客需要當面簽名、不能等，因此無法在櫃檯辦完，符合櫃檯可在核准前取得便條的例外。"
+    },
+    {
+      "id": "C",
+      "text": "Send Communications the part of the current index line with Rosa’s name, and leave the desk number off the counter slip until sign-off.",
+      "zh": "把索引目前那一列中的姓名部分給公關部，並在核准前不把座位號碼寫在櫃檯便條上。",
+      "whyZh": "公關部的資料範圍正確，但把限制錯套到接待櫃檯；訪客此時需要用新座位號碼上樓找人。"
+    },
+    {
+      "id": "D",
+      "text": "Send Communications the part of the current index line with Rosa’s name, and ask reception to get the document signed downstairs.",
+      "zh": "把索引目前那一列中的姓名部分給公關部，再請櫃檯在樓下安排文件簽名。",
+      "whyZh": "公關部的資料範圍正確，但羅莎一點前得留在樓上，訪客又不能等，因此請她在樓下簽名不符合已知條件。"
+    }
+  ],
+  "explanationZh": "這題要先從「須當面簽名」「一點前不能下樓」「訪客不能等」推得櫃檯無法代辦完成，再套用便條的例外；公關部仍只收到姓名。",
+  "evidence": "Rosa has to stay upstairs until one. / What can Communications see before Facilities approves the file? / Her name, not her desk number. If visitors can’t finish at reception, the counter can get the new number on a piece of paper until the new directory arrives.",
+  "tags": [
+    "business",
+    "conversation"
+  ],
+  "revision": 2,
+  "evidenceSpans": [
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "Rosa has to stay upstairs until one."
+    },
+    {
+      "turn": 3,
+      "speaker": "F",
+      "exactQuote": "What can Communications see before Facilities approves the file?"
+    },
+    {
+      "turn": 4,
+      "speaker": "M",
+      "exactQuote": "Her name, not her desk number. If visitors can’t finish at reception, the counter can get the new number on a piece of paper until the new directory arrives."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "sign-off",
+      "zh": "正式核准",
+      "note": "核准前只能提供公關部所需姓名，接待櫃檯有例外。"
+    }
+  ]
+}
