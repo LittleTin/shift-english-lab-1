@@ -1,0 +1,69 @@
+{
+  "id": "t08-q032",
+  "testId": "test-08",
+  "number": 32,
+  "part": 3,
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "groupId": "t08-g032",
+  "prompt": "Which finding best supports the man’s explanation rather than a general file-format problem?",
+  "promptZh": "哪個發現最能支持男方的解釋，而不是一般的檔案格式問題？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The older machine cannot open either file.",
+      "zh": "舊機器兩份檔案都打不開。",
+      "whyZh": "舊機器能開徽章檔，也能正常繡範例，並非兩份都打不開。"
+    },
+    {
+      "id": "B",
+      "text": "The plain-border file works on both machines, but the curved border changes on the older one.",
+      "zh": "簡單邊框的檔案在兩台都能正常刺繡，但曲線邊框在舊機器上變了樣。",
+      "whyZh": "普通邊框作為對照仍正常，只有舊機器處理曲線有異常，因此可以區分格式和特定設定。"
+    },
+    {
+      "id": "C",
+      "text": "Both borders change when stitched on the new machine.",
+      "zh": "兩種邊框用新機器刺繡時都變了樣。",
+      "whyZh": "新機器繡出的徽章正確，範例也正常，沒有兩種都變樣。"
+    },
+    {
+      "id": "D",
+      "text": "The two machines produce the same straight border from the badge file.",
+      "zh": "兩台機器用徽章檔案都繡出一樣的直線邊框。",
+      "whyZh": "同一徽章檔在新機器能繡對，只有舊機器繡成直線，成品不相同。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "普通邊框作為對照仍正常，只有舊機器處理曲線有異常，因此可以區分格式和特定設定。",
+  "evidence": "The same file stitched the border correctly on the new machine. / And the sample file with a plain border ran fine on both. / The older machine can open these files. It just doesn’t understand the curved-border setting.",
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "F",
+      "exactQuote": "The same file stitched the border correctly on the new machine."
+    },
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "And the sample file with a plain border ran fine on both."
+    },
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "The older machine can open these files. It just doesn’t understand the curved-border setting."
+    }
+  ],
+  "tags": [
+    "technology",
+    "conversation"
+  ],
+  "revision": 1,
+  "vocabulary": [
+    {
+      "term": "curved-border setting",
+      "zh": "曲線邊框設定",
+      "note": "用於指定圖樣邊框為曲線的設定。"
+    }
+  ]
+}

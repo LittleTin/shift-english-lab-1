@@ -1,0 +1,64 @@
+{
+  "id": "t08-q034",
+  "testId": "test-08",
+  "number": 34,
+  "part": 3,
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "groupId": "t08-g032",
+  "prompt": "The preview looks right but the border still fails on fabric. What should the technician do?",
+  "promptZh": "預覽看起來正確，但實際試繡的邊框仍不合格。技術員應該怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Clear the handover and ask the floor team to try the copy again later.",
+      "zh": "允許交付，再請現場人員晚點重試副本。",
+      "whyZh": "預覽正確不能取代布料上的試繡，不能先交給客戶。"
+    },
+    {
+      "id": "B",
+      "text": "Stop the handover and delete the copy so nobody can investigate it.",
+      "zh": "暫緩交付並刪除副本，讓其他人無法查問題。",
+      "whyZh": "暫緩交付正確，但失敗副本仍有診斷用途，不應刪除。"
+    },
+    {
+      "id": "C",
+      "text": "Keep the copy for the floor team and tell the desk not to hand it over.",
+      "zh": "把副本留給現場人員，並通知櫃檯不要交付。",
+      "whyZh": "現場可用失敗副本查問題；櫃檯另須暫緩對外交付。"
+    },
+    {
+      "id": "D",
+      "text": "Hand over the original master and keep the failed copy at the desk.",
+      "zh": "交付原始主檔，把試繡失敗的副本留在櫃檯。",
+      "whyZh": "原始主檔不符合舊機使用需求，而且副本應留給查問題的現場人員。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "現場可用失敗副本查問題；櫃檯另須暫緩對外交付。",
+  "evidence": "If the copy fails the fabric test, the floor team can keep it for troubleshooting, but tell the desk to put the handover on hold. / A good preview on screen isn’t enough.",
+  "evidenceSpans": [
+    {
+      "turn": 4,
+      "speaker": "M",
+      "exactQuote": "If the copy fails the fabric test, the floor team can keep it for troubleshooting, but tell the desk to put the handover on hold."
+    },
+    {
+      "turn": 4,
+      "speaker": "M",
+      "exactQuote": "A good preview on screen isn’t enough."
+    }
+  ],
+  "tags": [
+    "technology",
+    "conversation"
+  ],
+  "revision": 1,
+  "vocabulary": [
+    {
+      "term": "put the handover on hold",
+      "zh": "暫緩交付",
+      "note": "指暫停交給對方，並非刪除或丟棄檔案。"
+    }
+  ]
+}

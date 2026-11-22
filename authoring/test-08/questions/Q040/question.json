@@ -1,0 +1,64 @@
+{
+  "id": "t08-q040",
+  "testId": "test-08",
+  "number": 40,
+  "part": 3,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "groupId": "t08-g038",
+  "prompt": "What instruction changes for the guest who asked for decaf?",
+  "promptZh": "對於要求低咖啡因咖啡的客人，哪一項指示不同？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Offer her water only after she tastes all the coffee.",
+      "zh": "她試完所有咖啡後才給她水。",
+      "whyZh": "水是給客人試飲間漱口的，不是因應低咖啡因要求的措施。"
+    },
+    {
+      "id": "B",
+      "text": "Give her a roast-name card to take home before the tasting.",
+      "zh": "試飲前先給她一張烘焙品項卡帶回家。",
+      "whyZh": "品項卡留在櫃檯後；女方沒要求讓這位客人把卡帶回家。"
+    },
+    {
+      "id": "C",
+      "text": "Ask her to make her notes before getting a cup.",
+      "zh": "請她先記下心得，再給她杯子。",
+      "whyZh": "例外是提前告知哪杯符合要求，不是改變寫心得的時點。"
+    },
+    {
+      "id": "D",
+      "text": "Tell her which cup is decaf before serving her.",
+      "zh": "端給她之前，先告訴她哪一杯是低咖啡因咖啡。",
+      "whyZh": "大多數客人先試飲記錄再揭曉，但她在店員端上飲品之前就會知道哪杯是低咖啡因的。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "大多數客人先試飲記錄再揭曉，但她在店員端上飲品之前就會知道哪杯是低咖啡因的。",
+  "evidence": "We'll tell people what they tried after they've made their notes. / Let her know which cup is decaf before serving her.",
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "F",
+      "exactQuote": "We'll tell people what they tried after they've made their notes."
+    },
+    {
+      "turn": 5,
+      "speaker": "F",
+      "exactQuote": "Let her know which cup is decaf before serving her."
+    }
+  ],
+  "tags": [
+    "business",
+    "conversation"
+  ],
+  "revision": 1,
+  "vocabulary": [
+    {
+      "term": "decaf",
+      "zh": "低咖啡因咖啡",
+      "note": "decaffeinated 的常用簡稱。"
+    }
+  ]
+}

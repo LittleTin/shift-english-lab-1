@@ -1,0 +1,60 @@
+{
+  "id": "t08-g032",
+  "testId": "test-08",
+  "part": 3,
+  "topic": "technology",
+  "title": "A design file for the older embroidery machine",
+  "titleZh": "適用於舊款刺繡機的圖檔",
+  "locale": "en-AU",
+  "passage": "F: The older machine opened yesterday’s badge file, but the border came out in straight lines. The same file stitched the border correctly on the new machine.\nM: And the sample file with a plain border ran fine on both. The older machine can open these files. It just doesn’t understand the curved-border setting.\nF: The customer needs a file for the older machine. Can I replace the curve with short stitches in the master file?\nM: Make a separate copy for that machine. We still use the master for the new one. If the copy fails the fabric test, the floor team can keep it for troubleshooting, but tell the desk to put the handover on hold. A good preview on screen isn’t enough.",
+  "passageZh": "F: 舊機器打得開昨天的徽章圖檔，但繡出來的邊框變成一段段直線。同一個檔案用新機器，邊框就繡得正確。\nM: 那份只有簡單邊框的範例，兩台都繡得沒問題。舊機器能開這類檔案，只是讀不懂曲線邊框的設定。\nF: 客戶需要能用在舊機器上的檔案。我可以在主檔裡把曲線換成短針目嗎？\nM: 另外做一份給那台舊機器用。我們還要把主檔留給新機器。如果副本試繡沒通過，現場人員可以留下它查問題，但要通知櫃檯暫緩交付。只看螢幕預覽正確還不夠。",
+  "turns": [
+    {
+      "speaker": "F",
+      "text": "The older machine opened yesterday’s badge file, but the border came out in straight lines. The same file stitched the border correctly on the new machine.",
+      "zh": "舊機器打得開昨天的徽章圖檔，但繡出來的邊框變成一段段直線。同一個檔案用新機器，邊框就繡得正確。",
+      "role": "pattern technician",
+      "voice": "female"
+    },
+    {
+      "speaker": "M",
+      "text": "And the sample file with a plain border ran fine on both. The older machine can open these files. It just doesn’t understand the curved-border setting.",
+      "zh": "那份只有簡單邊框的範例，兩台都繡得沒問題。舊機器能開這類檔案，只是讀不懂曲線邊框的設定。",
+      "role": "workshop supervisor",
+      "voice": "male"
+    },
+    {
+      "speaker": "F",
+      "text": "The customer needs a file for the older machine. Can I replace the curve with short stitches in the master file?",
+      "zh": "客戶需要能用在舊機器上的檔案。我可以在主檔裡把曲線換成短針目嗎？",
+      "role": "pattern technician",
+      "voice": "female"
+    },
+    {
+      "speaker": "M",
+      "text": "Make a separate copy for that machine. We still use the master for the new one. If the copy fails the fabric test, the floor team can keep it for troubleshooting, but tell the desk to put the handover on hold. A good preview on screen isn’t enough.",
+      "zh": "另外做一份給那台舊機器用。我們還要把主檔留給新機器。如果副本試繡沒通過，現場人員可以留下它查問題，但要通知櫃檯暫緩交付。只看螢幕預覽正確還不夠。",
+      "role": "workshop supervisor",
+      "voice": "male"
+    }
+  ],
+  "spokenWords": 121,
+  "audioSpeakers": [
+    {
+      "speaker": "F",
+      "locale": "en-AU",
+      "modelVoice": "en-AU-NatashaNeural",
+      "role": "pattern technician"
+    },
+    {
+      "speaker": "M",
+      "locale": "en-GB",
+      "modelVoice": "en-GB-RyanNeural",
+      "role": "workshop supervisor"
+    }
+  ],
+  "audio": "audio/practice-groups/test-08/t08-g032.ogg",
+  "audioStart": 0,
+  "audioEnd": 49.9575,
+  "duration": 49.9575
+}

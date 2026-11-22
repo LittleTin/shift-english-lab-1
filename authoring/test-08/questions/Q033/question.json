@@ -1,0 +1,64 @@
+{
+  "id": "t08-q033",
+  "testId": "test-08",
+  "number": 33,
+  "part": 3,
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "groupId": "t08-g032",
+  "prompt": "A customer also needs the original design for a newer machine. Which pair of files would meet both needs?",
+  "promptZh": "客戶也需要供較新機器使用的原始設計。哪兩份檔案能同時滿足兩個需求？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The unchanged master for the newer machine and a separate copy with the border changed for the older machine.",
+      "zh": "未修改的主檔給較新機器，另做一份改過邊框的副本給舊機器。",
+      "whyZh": "只在副本調整舊機讀不懂的邊框設定；主檔保留較新機需要的原始曲線。"
+    },
+    {
+      "id": "B",
+      "text": "The changed master for the older machine and a copy of that same changed design for the newer one.",
+      "zh": "把修改後的主檔給舊機器，再把相同修改版的副本給較新機器。",
+      "whyZh": "改動仍會出現在兩份檔案，無法保留較新機需要的原設計。"
+    },
+    {
+      "id": "C",
+      "text": "The original master for both machines, but with a different file name for the older one.",
+      "zh": "兩台都用原始主檔，但給舊機器的那份改個檔名。",
+      "whyZh": "改檔名不會改到檔案裡不相容的曲線設定。"
+    },
+    {
+      "id": "D",
+      "text": "A copy of the plain sample for the older machine and the changed badge master for the newer one.",
+      "zh": "把簡單範例的副本給舊機器，修改後的徽章主檔給較新機器。",
+      "whyZh": "簡單範例是測試用的對照，不是客戶的徽章；改主檔也失去原始設計。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "只在副本調整舊機讀不懂的邊框設定；主檔保留較新機需要的原始曲線。",
+  "evidence": "Can I replace the curve with short stitches in the master file? / Make a separate copy for that machine. We still use the master for the new one.",
+  "evidenceSpans": [
+    {
+      "turn": 3,
+      "speaker": "F",
+      "exactQuote": "Can I replace the curve with short stitches in the master file?"
+    },
+    {
+      "turn": 4,
+      "speaker": "M",
+      "exactQuote": "Make a separate copy for that machine. We still use the master for the new one."
+    }
+  ],
+  "tags": [
+    "technology",
+    "conversation"
+  ],
+  "revision": 1,
+  "vocabulary": [
+    {
+      "term": "master file",
+      "zh": "主檔",
+      "note": "保留原版設計，不直接覆寫作為舊機適配的副本。"
+    }
+  ]
+}
