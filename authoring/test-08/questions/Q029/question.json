@@ -1,0 +1,41 @@
+{
+  "id": "t08-q029",
+  "testId": "test-08",
+  "number": 29,
+  "part": 2,
+  "groupId": "t08-g029",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽錄音，選出最適當的回應。",
+  "spokenPrompt": "Did that price print on its own, or did someone add it by hand?",
+  "spokenPromptZh": "那個價格是自動印出來的，還是有人手寫補上去的？",
+  "options": [
+    {
+      "id": "A",
+      "text": "I can check whether the price includes tax.",
+      "zh": "我可以確認這個價格含不含稅。",
+      "whyZh": "是否含稅是價格內容的問題，而非它如何出現在紙上。"
+    },
+    {
+      "id": "B",
+      "text": "That’s my handwriting. The printer left that line blank.",
+      "zh": "那是我的筆跡。印表機印出來時，那一行是空白的。",
+      "whyZh": "筆跡表明是手寫；印表機留下空白也排除該行的價格是自動印出的。"
+    },
+    {
+      "id": "C",
+      "text": "I printed another copy after lunch.",
+      "zh": "我午餐後又印了一份。",
+      "whyZh": "印過另一份不等於這份上的價格是印出來的，更不能說明這個價格的來源。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "筆跡表明是手寫；印表機留下空白也排除該行的價格是自動印出的。",
+  "evidence": "Did that price print on its own, or did someone add it by hand? / That’s my handwriting. The printer left that line blank.",
+  "revision": 1,
+  "tags": [
+    "business",
+    "question_response"
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "status": "independently-verified-listening-batch-not-published",
+  "testId": "test-08",
+  "numbers": [
+    27,
+    31
+  ],
+  "count": 5,
+  "verifiedReportSHA256": "7eb77a248a9c6d34505a1183239d90b7558baee6ab4e4e78344ce803bbae0817",
+  "sourcePins": {
+    "manifest": "e86a6a3df37f1c79ee3970d1436c8f40d822aeb23108fdd9de02a0953f2a5a0c",
+    "blind": "b569286ff5969ac6a1992ab8d0cb2ac12673c42181b01b63582a383c0b143ae2",
+    "blindReview": "595ae6d3a584dcaa016a5deaf8caf325867357baaccbf103f0b92140a0eebac3",
+    "zhAndEnglishTsv": "f35223f5bf554206b5596d807988e570e2668a17860518a472944f2a88cf780d",
+    "fixedCueLanguage": "44223e8aa3bcaa5c214c44af3c507b7595e3c4a6de4b1bf36789dbb76b55b58d",
+    "bindingCode": "d0de57a792cec61ccf33aca2d5db1d385f9873810d74a15531528c6689a0bdc6",
+    "bilingualR2": "d27b3cda644d0007bb6404427be1aa48d15e358e4862341b0c1fc37a8562111a",
+    "bilingualR2Review": "20d31cc0df305266c4416ee1f1cdcf37e0e6b4c43b45b7801122207633005b09"
+  },
+  "checks": [
+    "independent English blind plus Traditional Chinese and all option rationales",
+    "witnessed free-tier source, reconciled local unprompted ASR in source and each independently decoded Opus",
+    "each formal and practice file starts at zero and plays to natural completion at 1x in assistant-cloud Chromium",
+    "each file has 2 s lead and tail, formal 5.5 s answer wait and no extra directions or closing",
+    "timing evidence scoped to this batch only"
+  ],
+  "batchFormalFrames48k": 7268208,
+  "formalLocalCheckpointSha256": "7b54ed674b78ebd3418b13490a04b7a079a86b8e0d6b0e59c56d98d90ed7ffae",
+  "items": {
+    "Q027": {
+      "uuid": "65ec8fd6-2fe7-58f6-b037-16346b9a3592",
+      "reviewReceipts": {
+        "candidate-receipt.json": "650ce731e3a3d62b0c6b38ab8dd49d7b0aa1e71080c248714ca54c02865a21d9",
+        "language-receipt.json": "c5d8dc676973f305f1d0660a06200e3014aec6814d4549fb7ef7f742c0f3946f",
+        "native-opus-receipt.json": "fa5cd5aa9a08fa1d7c308eb5c487c399a0e79bf49d8ad0b87ccbb329a2449b5f"
+      },
+      "assetSHA256": {
+        "practice": "a2e60148feafdfe4d3ff78b993d81bf0731720d51a087cac9d55e5d5524b5116",
+        "formal": "2f124509533930dc4d26860c9f07c0ba3bbc01d098dee8dc8884c606064c689c"
+      },
+      "sourceQuestionSHA256": "ba9ec97806fb9182fa5809b8520219eac6c92986c5c4832016259b02187d037a",
+      "originalSSMLSHA256": "23edfc2fba29870684e9928b589327d4821de05fee85048bdafc78ae6feec640",
+      "effectiveSSMLSHA256": "23edfc2fba29870684e9928b589327d4821de05fee85048bdafc78ae6feec640"
+    },
+    "Q028": {
+      "uuid": "84f30fc1-0cd8-508e-8ed8-a30ca671941b",
+      "reviewReceipts": {
+        "candidate-receipt.json": "961fa398cdabe479f462afee9b6b5f7e61de6874ad23d4562e26f597fa3fffc6",
+        "language-receipt.json": "41d985a8d3bc6b0d78aaf7e3224988bbced10d80b7ed991ebc640832d7555d72",
+        "native-opus-receipt.json": "c335fca1e409d27e2f11e0d1efc247e41299c73cc6401de3469b84e241e9d4ef"
+      },
+      "assetSHA256": {
+        "practice": "db81c9ed28df1ee19e8a1daaa09cfc8a1e353f91e0a59f6553fb56ba92d0de7d",
+        "formal": "72c7b2ec06710fb87cf57b2ec5ac0a518b658b93f063763da2173f80f63f9f7b"
+      },
+      "sourceQuestionSHA256": "74b0ce8080a5772c92ec1a9ae0c01b6e22d3f1007798f3880865015318adb2bb",
+      "originalSSMLSHA256": "2a34908be40214d1dada0486511607e196d49c57742c05b9cd2f0fed4c27ea70",
+      "effectiveSSMLSHA256": "2a34908be40214d1dada0486511607e196d49c57742c05b9cd2f0fed4c27ea70"
+    },
+    "Q029": {
+      "uuid": "93d2f1cb-7201-5b34-9f16-2732dcea6136",
+      "reviewReceipts": {
+        "candidate-receipt.json": "02e522ec5bae76edb1ea77241dd5b9036a415d4cf398d35d5575a1c793d86869",
+        "language-receipt.json": "8731663c81b9a979f4725e219377d8ac81326f17d039d271581ec7a42efba9aa",
+        "native-opus-receipt.json": "0152c62493aebfd993e51cb219823396ab0f3fad57e67ebc749f497e4c6b2d25"
+      },
+      "assetSHA256": {
+        "practice": "092438633d4152cbab6d3eb3b37b50bc8fb5875ece98a2fa106e1c1835ea9c4c",
+        "formal": "683a18d77fa5db47ec072b69240c91fa7a7e4c3b99de919256d0ff069d995f8e"
+      },
+      "sourceQuestionSHA256": "597e1370cc24f9b3aa97429aba1f76f7be66a75877de621fab8901beeca97119",
+      "originalSSMLSHA256": "0b932bf9c589c78e82b470ac1047b5a92c135f9b519cab9b5863fbe4de1bd670",
+      "effectiveSSMLSHA256": "0b932bf9c589c78e82b470ac1047b5a92c135f9b519cab9b5863fbe4de1bd670"
+    },
+    "Q030": {
+      "uuid": "f3244c53-8ec4-507d-a442-2477d74a7375",
+      "reviewReceipts": {
+        "candidate-receipt.json": "4ee832dce18670868ea3500449ec4aaa7beb971b216880422cb5f06c460db5b5",
+        "language-receipt.json": "c7464b7d42e78f44f3680d4afddccb1e9f1fd77453d31d1c7a9c1aa5693667b3",
+        "native-opus-receipt.json": "d254bf82f7705811ffc3ac40d9e11c5c4dba5113d666a0c12e8b0993bd6eba6b"
+      },
+      "assetSHA256": {
+        "practice": "313c8802ad51c48156675f77accddd716b932db415201e3bcbcc1c73b9c5645c",
+        "formal": "4c97cd631b5254423b56004f685ca4f0d858d4c4942b31c1ce9dae477ebb906d"
+      },
+      "sourceQuestionSHA256": "a4746c5e8390c4861ac5df00e6d44c49eabfba2740b6cc123c94c87111848113",
+      "originalSSMLSHA256": "070e2b8141127aec129183a1eecbe8a9dce2530efc47fdde0d7abcf5ac1893a7",
+      "effectiveSSMLSHA256": "070e2b8141127aec129183a1eecbe8a9dce2530efc47fdde0d7abcf5ac1893a7"
+    },
+    "Q031": {
+      "uuid": "8cf8cceb-2020-5333-bcc6-109ef728113f",
+      "reviewReceipts": {
+        "candidate-receipt.json": "22a1908ca96b4b72835fe2a69ae0d75cdf52a48ad63cd43e822bbff219753768",
+        "language-receipt.json": "7a0649534e6483aa255f5cf8a09714c56f6f15d5e52cb41564cd43d3da5e81eb",
+        "native-opus-receipt.json": "81d09543b45e202954aa277a8dafd14ea460509d14d4c943f190f25e897db455"
+      },
+      "assetSHA256": {
+        "practice": "10fb872c9d415320d32b2ec8a909bf218144c255f90ffc4da6762c6a66d2eff2",
+        "formal": "d5f991fad32def5185dd693a0d04846c1c1fbdb493dfaa720091f63dbdd7abed"
+      },
+      "sourceQuestionSHA256": "b5994f71800a50381ec80dddec1887d92ef9ad8c802b37129edd655cdd74ec4b",
+      "originalSSMLSHA256": "86156221ea1d98a85e4e56dde47a551740ab60aad4e1b01f22c5da147501a95e",
+      "effectiveSSMLSHA256": "86156221ea1d98a85e4e56dde47a551740ab60aad4e1b01f22c5da147501a95e"
+    }
+  },
+  "files": {
+    "authoring/test-08/questions/Q027/question.json": {
+      "sha256": "ba9ec97806fb9182fa5809b8520219eac6c92986c5c4832016259b02187d037a"
+    },
+    "authoring/test-08/groups/t08-g027/group.json": {
+      "sha256": "e939b9be7f767a170bbae909d6111ec53bda36e6d547e0216376f99f28215d2d"
+    },
+    "authoring/test-08/questions/Q027/media.json": {
+      "sha256": "91de87b97379f9f6c593c0a60f8714f7a67909f2e5570ba1e9c7c2daa6281790"
+    },
+    "authoring/test-08/questions/Q027/media/audio/formal-groups/test-08/t08-g027.ogg": {
+      "sha256": "2f124509533930dc4d26860c9f07c0ba3bbc01d098dee8dc8884c606064c689c"
+    },
+    "authoring/test-08/questions/Q027/media/audio/practice-groups/test-08/t08-g027.ogg": {
+      "sha256": "a2e60148feafdfe4d3ff78b993d81bf0731720d51a087cac9d55e5d5524b5116"
+    },
+    "authoring/test-08/questions/Q028/question.json": {
+      "sha256": "74b0ce8080a5772c92ec1a9ae0c01b6e22d3f1007798f3880865015318adb2bb"
+    },
+    "authoring/test-08/groups/t08-g028/group.json": {
+      "sha256": "83b686e09cc2ba52fddf733467a4c8318e6e7870799497284b094ba8add4b25f"
+    },
+    "authoring/test-08/questions/Q028/media.json": {
+      "sha256": "5a0dc7cd908b7753c250726d20cd422369565748979c819c9f128ee47bbbb9ef"
+    },
+    "authoring/test-08/questions/Q028/media/audio/formal-groups/test-08/t08-g028.ogg": {
+      "sha256": "72c7b2ec06710fb87cf57b2ec5ac0a518b658b93f063763da2173f80f63f9f7b"
+    },
+    "authoring/test-08/questions/Q028/media/audio/practice-groups/test-08/t08-g028.ogg": {
+      "sha256": "db81c9ed28df1ee19e8a1daaa09cfc8a1e353f91e0a59f6553fb56ba92d0de7d"
+    },
+    "authoring/test-08/questions/Q029/question.json": {
+      "sha256": "597e1370cc24f9b3aa97429aba1f76f7be66a75877de621fab8901beeca97119"
+    },
+    "authoring/test-08/groups/t08-g029/group.json": {
+      "sha256": "4a336f1df02d6f026b89b9dbd5da1d71b8875a8136088cc58784c51cc6b5869f"
+    },
+    "authoring/test-08/questions/Q029/media.json": {
+      "sha256": "e0b31264a59497f490975564aa9a36b3cfbf8102e2e22ca89b6eccd170287b17"
+    },
+    "authoring/test-08/questions/Q029/media/audio/formal-groups/test-08/t08-g029.ogg": {
+      "sha256": "683a18d77fa5db47ec072b69240c91fa7a7e4c3b99de919256d0ff069d995f8e"
+    },
+    "authoring/test-08/questions/Q029/media/audio/practice-groups/test-08/t08-g029.ogg": {
+      "sha256": "092438633d4152cbab6d3eb3b37b50bc8fb5875ece98a2fa106e1c1835ea9c4c"
+    },
+    "authoring/test-08/questions/Q030/question.json": {
+      "sha256": "a4746c5e8390c4861ac5df00e6d44c49eabfba2740b6cc123c94c87111848113"
+    },
+    "authoring/test-08/groups/t08-g030/group.json": {
+      "sha256": "e411c7296f36ad74a721c0f776c75e042ff3fb80756cb081407c50738fbcb730"
+    },
+    "authoring/test-08/questions/Q030/media.json": {
+      "sha256": "122f379c83286e5dd39ffc28418f4e8aefe179c5b857b547f75efeb421ec20ee"
+    },
+    "authoring/test-08/questions/Q030/media/audio/formal-groups/test-08/t08-g030.ogg": {
+      "sha256": "4c97cd631b5254423b56004f685ca4f0d858d4c4942b31c1ce9dae477ebb906d"
+    },
+    "authoring/test-08/questions/Q030/media/audio/practice-groups/test-08/t08-g030.ogg": {
+      "sha256": "313c8802ad51c48156675f77accddd716b932db415201e3bcbcc1c73b9c5645c"
+    },
+    "authoring/test-08/questions/Q031/question.json": {
+      "sha256": "b5994f71800a50381ec80dddec1887d92ef9ad8c802b37129edd655cdd74ec4b"
+    },
+    "authoring/test-08/groups/t08-g031/group.json": {
+      "sha256": "74391a7ed1bbaaee4b8c630944b0cd817c5923a9cbd4bf130a36ed789c77e29d"
+    },
+    "authoring/test-08/questions/Q031/media.json": {
+      "sha256": "84bcd978e19fd66c21ea9fae2691f70ffe58abb95e77acd8bad8f60c8d3ae1f9"
+    },
+    "authoring/test-08/questions/Q031/media/audio/formal-groups/test-08/t08-g031.ogg": {
+      "sha256": "d5f991fad32def5185dd693a0d04846c1c1fbdb493dfaa720091f63dbdd7abed"
+    },
+    "authoring/test-08/questions/Q031/media/audio/practice-groups/test-08/t08-g031.ogg": {
+      "sha256": "10fb872c9d415320d32b2ec8a909bf218144c255f90ffc4da6762c6a66d2eff2"
+    }
+  }
+}

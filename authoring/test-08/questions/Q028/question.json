@@ -1,0 +1,41 @@
+{
+  "id": "t08-q028",
+  "testId": "test-08",
+  "number": 28,
+  "part": 2,
+  "groupId": "t08-g028",
+  "topic": "daily",
+  "difficulty": "foundation",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽錄音，選出最適當的回應。",
+  "spokenPrompt": "Which adapter did you use to charge the lantern?",
+  "spokenPromptZh": "你用哪個電源轉接器幫那盞提燈充電？",
+  "options": [
+    {
+      "id": "A",
+      "text": "It took less than an hour.",
+      "zh": "充不到一小時。",
+      "whyZh": "只說充了多久，沒有辨識轉接器。"
+    },
+    {
+      "id": "B",
+      "text": "I charged it on the porch.",
+      "zh": "我是在門廊充的。",
+      "whyZh": "只說在哪裡充電，沒有指出使用哪個轉接器。"
+    },
+    {
+      "id": "C",
+      "text": "The white one with the short cord.",
+      "zh": "白色、接短線的那個。",
+      "whyZh": "用白色和短線兩個特徵指出實際使用的轉接器，回應 Which。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "用白色和短線兩個特徵指出實際使用的轉接器，回應 Which。",
+  "evidence": "Which adapter did you use to charge the lantern? / The white one with the short cord.",
+  "revision": 1,
+  "tags": [
+    "daily",
+    "question_response"
+  ]
+}
