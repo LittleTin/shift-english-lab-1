@@ -1,0 +1,52 @@
+{
+  "id": "t07-q168",
+  "testId": "test-07",
+  "number": 168,
+  "part": 7,
+  "groupId": "t07-r-p7-06",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "single-passage",
+    "daily"
+  ],
+  "prompt": "A rider finds a box for the wrong diameter, but its stated width range includes the rider’s tyre width. What should the rider do?",
+  "promptZh": "騎士找到一盒直徑不對的內胎，但盒上的寬度範圍涵蓋自己外胎的寬度。騎士應怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Keep looking for a box with the right diameter and a suitable width range.",
+      "zh": "繼續找直徑正確且寬度範圍合適的內胎。",
+      "whyZh": "寬度範圍只在指定直徑下適用，須同時滿足直徑和寬度兩個條件。"
+    },
+    {
+      "id": "B",
+      "text": "Buy it because a matching width makes the diameter irrelevant.",
+      "zh": "既然寬度符合，直徑就不重要，可以買。",
+      "whyZh": "文章明說寬度範圍不能讓內胎用於不同直徑。"
+    },
+    {
+      "id": "C",
+      "text": "Keep it if the rider’s tyre width equals either end of the range.",
+      "zh": "如果外胎寬度剛好等於範圍任一端就可以選這盒。",
+      "whyZh": "端點雖包含在寬度範圍內，但此盒直徑仍不合，不能因此使用。"
+    },
+    {
+      "id": "D",
+      "text": "Ignore the box dimensions and look at the colour of the old tube.",
+      "zh": "略過盒上尺寸，改看舊內胎的顏色。",
+      "whyZh": "文章的判斷依據是尺寸與氣嘴，並沒有以顏色選擇內胎。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "寬度範圍只在指定直徑下適用，須同時滿足直徑和寬度兩個條件。",
+  "evidence": "The width range does not make the tube suitable for a different diameter. / Check the diameter first, then look for a range that includes your tyre width.",
+  "vocabulary": [
+    {
+      "term": "diameter",
+      "zh": "直徑",
+      "note": "此處與以毫米表示的外胎寬度是不同的規格，不可互相替代。"
+    }
+  ]
+}
