@@ -1,0 +1,235 @@
+{
+  "status": "independently-verified-listening-batch-not-published",
+  "testId": "test-08",
+  "numbers": [
+    1,
+    6
+  ],
+  "count": 6,
+  "verifiedReportSHA256": "66361afc1a01f84a6383e77545bf0d4838173c6cdf79d420f9a04ab3c1c125bb",
+  "sourcePins": {
+    "manifest": "3d986a6d1051aeb19bbba237f07dee2492532aedbcc22e10e0a1c518222e70db",
+    "bindingCode": "d0de57a792cec61ccf33aca2d5db1d385f9873810d74a15531528c6689a0bdc6",
+    "bilingual/manifest.json": "8a775b89285944ede2337b491a66d778225dcc909072ab98d48bd9e1f4206eea",
+    "independent-visual-b/q001-006-bilingual-review.md": "ad99ba8c150c751e04b5491350afc908c53da968658319f15e1740fa23b61149",
+    "bilingual/draft-bilingual.json": "52444c03d43ee207757378a6c0ec82a4ab36db6d6a16fd5b65871406ae449566",
+    "blind-en.json": "7819e5778517310c0d9fa139b041eb93336935ba1190386a45634ea57a667121"
+  },
+  "checks": [
+    "all six photos and English/Traditional Chinese choices and whys underwent independent review",
+    "one F0 selected voice per scored source, identical content in both mode Opus, only scoped approved alternates included; rejected provider WAVs not staged",
+    "unprompted local ASR plus native Chromium independent play from zero to end at 1x and browser images at 360px in asset fixtures",
+    "each item has its own number and formal six-second answer wait; duration-neutral intro, directions, and unscored example only at Q001",
+    "batch-local measurements only, not a full test clock nor full app/iPhone UI"
+  ],
+  "batchFormalFrames48k": 11629952,
+  "formalLocalCheckpointSha256": "5d283cbc3ad9628f5325aefb2e43707840afabd2dc0aea9b506d01f51c67f8c1",
+  "items": {
+    "Q001": {
+      "uuid": "c1ac8fc8-49af-54e1-bcbd-99938568d552",
+      "reviewReceipts": {
+        "candidate": "6a586cc097472f80750c8751b3ee28d73a49bce078628bb40e57a3edcaf7476a",
+        "language": "729a25ca29756c2a7d224a46b7649fa89442edd69bc1a2c9b1344376436dad8a",
+        "native": "fc0f4f33de3a8ebd2c7b05cc28a4465fd85d8bdeca1e766727f8fe681e30ef42"
+      },
+      "assetSHA256": {
+        "practice": "7813e42243000451e5ff2e7a160ddc4e48e7f30db4f19fad99c51380b5e80c5a",
+        "formal": "18f7bf4e62ed314c2d5b939a591c2bde2877802be61610d012a639efd47c81c7",
+        "image": "9020d821f9fefb5d77a43204c1e210dc9067ff859776fae4dbf39b78b9936439"
+      },
+      "sourceQuestionSHA256": "92b497494db0e90bcf2c1ef8d947d5f998c215eda93a23b34bf57a793abafca7",
+      "originalSSMLSHA256": "b9bc822eaf646d29459308a41b8f38b76b1b33def6390eb838c99c5834edb829",
+      "effectiveSSMLSHA256": "14baddcf3ccc1f9991e8fb360cbb269c3a498e437f173c6ac289bb6514d48e8b"
+    },
+    "Q002": {
+      "uuid": "16be5dd8-472c-579f-9e22-e02b1ac5b5b2",
+      "reviewReceipts": {
+        "candidate": "2c9904ebe2e0d98e232b68aea2c1850714744a73b74feec2efd9819a95e09942",
+        "language": "7ff1c090dda7d0ed61377b95b6e48d5922c2eeddd2ae24924affa81a9889718c",
+        "native": "4276675e5aa40159f6f847f6ccebecec52a43960db24036ad12c5d7f551c26c0"
+      },
+      "assetSHA256": {
+        "practice": "0fdb87331bf12d7f7687993dee7b6e0748aace2531a481a46151ca9cbad4c8b5",
+        "formal": "26ad1f7b02fe2f4a617f759db0667c4478ad8051eb04cb1edd8dff95ff3d7e87",
+        "image": "593289b560429af7786e323ff01176dc8bb3fd3eb968bed01b22c097f554c1a2"
+      },
+      "sourceQuestionSHA256": "82cfd772c0a6c3941c3b557c940022fd3c5af421d96be267f38846ec9d9a850a",
+      "originalSSMLSHA256": "bc943b43c540bca50cf0f3e0fb9b18fba140dd248305f7ca67781357aa7dfa00",
+      "effectiveSSMLSHA256": "bc943b43c540bca50cf0f3e0fb9b18fba140dd248305f7ca67781357aa7dfa00"
+    },
+    "Q003": {
+      "uuid": "1048d80e-805c-5f6c-b6d3-7ff6bd64c0f2",
+      "reviewReceipts": {
+        "candidate": "25746d98cf2a63051c8bcfae5bbcb338e483877850feb15f91b8e02102d46dbe",
+        "language": "4bce9c64026cb3d995cf08dd5b2b0c339cca8df4a3973cc16d2728af6b826ad0",
+        "native": "6913f0836de9b2b1c7ce7fb7b93b7ec3ba585c94b465007d6bc79d590c712340"
+      },
+      "assetSHA256": {
+        "practice": "48b46d48473d83b5d270845040db2841e969994637550c9b99e853df79d962f6",
+        "formal": "f793c0b82514a6f2c2c4fe5b284fcc0d519b64c2fdb522eccc47cd603aafa5ab",
+        "image": "9d0470f061b12ec3d4b86a795f66c866b534c373685819ad54517df4251435c6"
+      },
+      "sourceQuestionSHA256": "5e974dff6ad1c7b75c339591b1797b74cc35f254e2b3ae325b556ec1f8d7c4e4",
+      "originalSSMLSHA256": "68a1f2d5410aaf8cc58f5ca0b3e427fdd01c20be786b3d0686fe6ee9a5edf98e",
+      "effectiveSSMLSHA256": "e119e87189641e13e441725aa66433cf84a6f27ce970ff35fe6cc1f694d8254d"
+    },
+    "Q004": {
+      "uuid": "b68c76e0-b2f5-5100-89e1-d70065db13a7",
+      "reviewReceipts": {
+        "candidate": "7cdf06f76f079a8e9f6d897ba0e5e89c8930d4f09d3c001324c6c7bd06d60158",
+        "language": "c461d817698f10a91d914eef4aa996046ee630cdbbfe3249e48e68613bd7e192",
+        "native": "4ba038162083eff0a9f5673d758ae99faae7288098a5434825a1914576e60408"
+      },
+      "assetSHA256": {
+        "practice": "b3bd302c347fbceff6218373b85e81258014a37beac8ade8bdd7140b48b4e8a3",
+        "formal": "d705507a19fbcdaa3fd7ca3ad635e34604bec9664039133f81d4f2b2716da4f7",
+        "image": "204c4c337234e04e80b8b924fe0650f48202f851787321b6b2b8ba6e99acd1d2"
+      },
+      "sourceQuestionSHA256": "19e1ff7fba54ee3224915395df3d816adb0e31990f0002f35e44858aebe27003",
+      "originalSSMLSHA256": "2dca21c3d8925efcdb47f3d150478b5f45f3c02548424c5977e80de5db4b48c0",
+      "effectiveSSMLSHA256": "2dca21c3d8925efcdb47f3d150478b5f45f3c02548424c5977e80de5db4b48c0"
+    },
+    "Q005": {
+      "uuid": "2015ee35-efb4-5754-a6b9-c62e49ae2a90",
+      "reviewReceipts": {
+        "candidate": "bf27b93de56c064532f224eb89703c77689ec8e0b389ed65c2ee7971ebb11f55",
+        "language": "aac8d7a1d130953466bf4a773588248c6f9c9cf705c6bca10057aa9bff04576c",
+        "native": "15e5f481bbde1926b7d4b513f8e651e4199b3a36ba59b0ac95c66850f75ce40c"
+      },
+      "assetSHA256": {
+        "practice": "1784838057b4a06fb61f7ac6900928f1dfecbb5e356590c9ecefb06241c1a90b",
+        "formal": "ebde55d8ed6bfa2fc2d44439b3ce1c4481265fc521919aa38cd763e81236e22a",
+        "image": "331ebbc52b9e313fa316cc6be91a2c673655b84cc54e0e9a4701859b727df36f"
+      },
+      "sourceQuestionSHA256": "79aa49b45122d712fe00ed60344a17d6d0213172e3028ace6f855de58b7d614a",
+      "originalSSMLSHA256": "39959a50c10ad75dfbdca21fde54ec0aa7c8cc3b4a4d19229b513061000cf65a",
+      "effectiveSSMLSHA256": "b359c6fbeef8d159c8f3ba006e0263deffce7722739f287ea5f60b2611f28a3a"
+    },
+    "Q006": {
+      "uuid": "132e9b85-0ed9-5dfb-b0c8-fde404b84a05",
+      "reviewReceipts": {
+        "candidate": "d06b449cd5393bba2db88c8f49db3d62dc580dafd99dbbdaaf0e0ef241d4baab",
+        "language": "22ec9131ea3e121d526ad610ae1f651854b80f7c3bc5eef88ce5ad4c82b8d1cf",
+        "native": "286d0ebbcefb2eb5d241e9161b08be58c0b662711fbb3ac481a07c40badfed3f"
+      },
+      "assetSHA256": {
+        "practice": "176d13f7ac80599043cd6b7ac06b785454ea7a160e35c7897a5dd87940ec01a6",
+        "formal": "e02a892662ca35bddd6b119ffede004eed0b644e508f01416052af9ec2f5147d",
+        "image": "3162460c238967288193514859f1129791e460ff1a92176bc60b56c872153ef5"
+      },
+      "sourceQuestionSHA256": "e55568aa6e75f6a063df811cc3cbd923484a1ed38bfc26d2df7316808175a012",
+      "originalSSMLSHA256": "5ae6422312bc4f3d90190d62eaad27ee1b8f52c8342ed60894f79eac4ae5f8a6",
+      "effectiveSSMLSHA256": "5ae6422312bc4f3d90190d62eaad27ee1b8f52c8342ed60894f79eac4ae5f8a6"
+    }
+  },
+  "files": {
+    "authoring/test-08/questions/Q001/question.json": {
+      "sha256": "92b497494db0e90bcf2c1ef8d947d5f998c215eda93a23b34bf57a793abafca7"
+    },
+    "authoring/test-08/groups/t08-g001/group.json": {
+      "sha256": "68324cdab5cec96a93c548933c8e53a3121ec3eb56197360bb20932dd538cd60"
+    },
+    "authoring/test-08/questions/Q001/media.json": {
+      "sha256": "38e9f21f62c661187df9b30e16c1bb5b8414ed390ab44ec3514b1d80fc808141"
+    },
+    "authoring/test-08/questions/Q001/media/assets/scenes/test-08/q001.jpg": {
+      "sha256": "9020d821f9fefb5d77a43204c1e210dc9067ff859776fae4dbf39b78b9936439"
+    },
+    "authoring/test-08/questions/Q001/media/audio/formal-groups/test-08/t08-g001.ogg": {
+      "sha256": "18f7bf4e62ed314c2d5b939a591c2bde2877802be61610d012a639efd47c81c7"
+    },
+    "authoring/test-08/questions/Q001/media/audio/practice-groups/test-08/t08-g001.ogg": {
+      "sha256": "7813e42243000451e5ff2e7a160ddc4e48e7f30db4f19fad99c51380b5e80c5a"
+    },
+    "authoring/test-08/questions/Q002/question.json": {
+      "sha256": "82cfd772c0a6c3941c3b557c940022fd3c5af421d96be267f38846ec9d9a850a"
+    },
+    "authoring/test-08/groups/t08-g002/group.json": {
+      "sha256": "d3316b92ed3d1471718f11a490f1249ed895f076e42e0975eae939605552a338"
+    },
+    "authoring/test-08/questions/Q002/media.json": {
+      "sha256": "ecaf350faba5be6b5e5bdb9a00f50a9136aa905e5b397c5805c223aa67e31508"
+    },
+    "authoring/test-08/questions/Q002/media/assets/scenes/test-08/q002.jpg": {
+      "sha256": "593289b560429af7786e323ff01176dc8bb3fd3eb968bed01b22c097f554c1a2"
+    },
+    "authoring/test-08/questions/Q002/media/audio/formal-groups/test-08/t08-g002.ogg": {
+      "sha256": "26ad1f7b02fe2f4a617f759db0667c4478ad8051eb04cb1edd8dff95ff3d7e87"
+    },
+    "authoring/test-08/questions/Q002/media/audio/practice-groups/test-08/t08-g002.ogg": {
+      "sha256": "0fdb87331bf12d7f7687993dee7b6e0748aace2531a481a46151ca9cbad4c8b5"
+    },
+    "authoring/test-08/questions/Q003/question.json": {
+      "sha256": "5e974dff6ad1c7b75c339591b1797b74cc35f254e2b3ae325b556ec1f8d7c4e4"
+    },
+    "authoring/test-08/groups/t08-g003/group.json": {
+      "sha256": "ad11b7da4c7d66d1070816331d3d7298161771157838baf3932a1c52cecfa93d"
+    },
+    "authoring/test-08/questions/Q003/media.json": {
+      "sha256": "3b584b9281b69f51c0b056087a79fbde3f95275d0cd7c7f48870ab23c2dd06e2"
+    },
+    "authoring/test-08/questions/Q003/media/assets/scenes/test-08/q003.jpg": {
+      "sha256": "9d0470f061b12ec3d4b86a795f66c866b534c373685819ad54517df4251435c6"
+    },
+    "authoring/test-08/questions/Q003/media/audio/formal-groups/test-08/t08-g003.ogg": {
+      "sha256": "f793c0b82514a6f2c2c4fe5b284fcc0d519b64c2fdb522eccc47cd603aafa5ab"
+    },
+    "authoring/test-08/questions/Q003/media/audio/practice-groups/test-08/t08-g003.ogg": {
+      "sha256": "48b46d48473d83b5d270845040db2841e969994637550c9b99e853df79d962f6"
+    },
+    "authoring/test-08/questions/Q004/question.json": {
+      "sha256": "19e1ff7fba54ee3224915395df3d816adb0e31990f0002f35e44858aebe27003"
+    },
+    "authoring/test-08/groups/t08-g004/group.json": {
+      "sha256": "52231bb7846907e2cb4253f6579dbd3097426aa9f764e6a330513e602e8d319d"
+    },
+    "authoring/test-08/questions/Q004/media.json": {
+      "sha256": "9e5e04098961cd79156eafbe7bf9924b740c9fb84de22a126f9ef1cc15f8fa76"
+    },
+    "authoring/test-08/questions/Q004/media/assets/scenes/test-08/q004.jpg": {
+      "sha256": "204c4c337234e04e80b8b924fe0650f48202f851787321b6b2b8ba6e99acd1d2"
+    },
+    "authoring/test-08/questions/Q004/media/audio/formal-groups/test-08/t08-g004.ogg": {
+      "sha256": "d705507a19fbcdaa3fd7ca3ad635e34604bec9664039133f81d4f2b2716da4f7"
+    },
+    "authoring/test-08/questions/Q004/media/audio/practice-groups/test-08/t08-g004.ogg": {
+      "sha256": "b3bd302c347fbceff6218373b85e81258014a37beac8ade8bdd7140b48b4e8a3"
+    },
+    "authoring/test-08/questions/Q005/question.json": {
+      "sha256": "79aa49b45122d712fe00ed60344a17d6d0213172e3028ace6f855de58b7d614a"
+    },
+    "authoring/test-08/groups/t08-g005/group.json": {
+      "sha256": "0d9655628a08e44ef3d35fd597b856eba96b42a7300e436ebd2cb590e6549341"
+    },
+    "authoring/test-08/questions/Q005/media.json": {
+      "sha256": "180d1e4fdccc01019dd660c8eba106355d303fdc95df3b5a7ccf4d13dbc98536"
+    },
+    "authoring/test-08/questions/Q005/media/assets/scenes/test-08/q005.jpg": {
+      "sha256": "331ebbc52b9e313fa316cc6be91a2c673655b84cc54e0e9a4701859b727df36f"
+    },
+    "authoring/test-08/questions/Q005/media/audio/formal-groups/test-08/t08-g005.ogg": {
+      "sha256": "ebde55d8ed6bfa2fc2d44439b3ce1c4481265fc521919aa38cd763e81236e22a"
+    },
+    "authoring/test-08/questions/Q005/media/audio/practice-groups/test-08/t08-g005.ogg": {
+      "sha256": "1784838057b4a06fb61f7ac6900928f1dfecbb5e356590c9ecefb06241c1a90b"
+    },
+    "authoring/test-08/questions/Q006/question.json": {
+      "sha256": "e55568aa6e75f6a063df811cc3cbd923484a1ed38bfc26d2df7316808175a012"
+    },
+    "authoring/test-08/groups/t08-g006/group.json": {
+      "sha256": "f49e95b264934c7eb0d333316571a70aa71f2a9f0ab5abcd2a19130b156ffe93"
+    },
+    "authoring/test-08/questions/Q006/media.json": {
+      "sha256": "df4e095ae7aade742cf1241471bc060e8048c3f5d7759fa660401b86fbde2c39"
+    },
+    "authoring/test-08/questions/Q006/media/assets/scenes/test-08/q006.jpg": {
+      "sha256": "3162460c238967288193514859f1129791e460ff1a92176bc60b56c872153ef5"
+    },
+    "authoring/test-08/questions/Q006/media/audio/formal-groups/test-08/t08-g006.ogg": {
+      "sha256": "e02a892662ca35bddd6b119ffede004eed0b644e508f01416052af9ec2f5147d"
+    },
+    "authoring/test-08/questions/Q006/media/audio/practice-groups/test-08/t08-g006.ogg": {
+      "sha256": "176d13f7ac80599043cd6b7ac06b785454ea7a160e35c7897a5dd87940ec01a6"
+    }
+  }
+}
