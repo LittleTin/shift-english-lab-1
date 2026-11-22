@@ -1,0 +1,52 @@
+{
+  "id": "t07-q140",
+  "testId": "test-07",
+  "number": 140,
+  "part": 6,
+  "groupId": "t07-r-p6-03",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Do not include a room number as a substitute [140] _____ the room name.",
+  "promptZh": "請勿用房號 [140] _____ 房間名稱。",
+  "options": [
+    {
+      "id": "A",
+      "text": "for",
+      "zh": "取代（a substitute for）",
+      "whyZh": "a substitute for 後接被替代的項目，此處是口譯員要辨識的房間名稱。"
+    },
+    {
+      "id": "B",
+      "text": "about",
+      "zh": "關於",
+      "whyZh": "about 表討論主題，不能和 a substitute 構成這裡的替代關係。"
+    },
+    {
+      "id": "C",
+      "text": "between",
+      "zh": "在……之間",
+      "whyZh": "between 通常連接兩個對象，這裡只有一個被替代的名稱。"
+    },
+    {
+      "id": "D",
+      "text": "against",
+      "zh": "對抗",
+      "whyZh": "against 可表抗衡或阻擋，不表示某物代替原物。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "a substitute for 後接被替代的項目，此處是口譯員要辨識的房間名稱。",
+  "evidence": "Do not include a room number as a substitute for the room name.",
+  "vocabulary": [
+    {
+      "term": "a substitute for",
+      "zh": "用來代替……的事物",
+      "note": "substitute 作名詞時常與 for 連用，引出原來使用的項目。"
+    }
+  ]
+}

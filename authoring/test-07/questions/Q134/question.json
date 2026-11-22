@@ -1,0 +1,52 @@
+{
+  "id": "t07-q134",
+  "testId": "test-07",
+  "number": 134,
+  "part": 6,
+  "groupId": "t07-r-p6-01",
+  "revision": 1,
+  "topic": "technology",
+  "difficulty": "foundation",
+  "tags": [
+    "text-completion",
+    "technology"
+  ],
+  "prompt": "Please hand the completed log to Lydia [134] _____ noon tomorrow.",
+  "promptZh": "請 [134] _____ 明天中午把填好的紀錄表交給 Lydia。",
+  "options": [
+    {
+      "id": "A",
+      "text": "by",
+      "zh": "最晚在",
+      "whyZh": "by 接明確時點來設定提交截止；Lydia 會在截止後統一彙整。"
+    },
+    {
+      "id": "B",
+      "text": "since",
+      "zh": "自從",
+      "whyZh": "since 指已發生的起點，明天中午在未來，且這裡需要提交截止。"
+    },
+    {
+      "id": "C",
+      "text": "for",
+      "zh": "持續……",
+      "whyZh": "for noon 可表示安排在中午，但不能用來說最晚須在中午之前或中午當下交件。"
+    },
+    {
+      "id": "D",
+      "text": "throughout",
+      "zh": "貫穿整段……",
+      "whyZh": "throughout 要有一段可覆蓋的期間，不能用來指定一次交件的最晚時刻。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "by 接明確時點來設定提交截止；Lydia 會在截止後統一彙整。",
+  "evidence": "Please hand the completed log to Lydia by noon tomorrow. She will combine the notes after that deadline and bring them to the afternoon meeting.",
+  "vocabulary": [
+    {
+      "term": "a deadline",
+      "zh": "截止時間",
+      "note": "這裡是紀錄須提交的最晚時點，不是下午會議開始的時間。"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "t07-q133",
+  "testId": "test-07",
+  "number": 133,
+  "part": 6,
+  "groupId": "t07-r-p6-01",
+  "revision": 1,
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "technology"
+  ],
+  "prompt": "Which sentence best fits blank [133]?",
+  "promptZh": "哪個句子最適合填入 [133]？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The completed log will be displayed outside the screening room.",
+      "zh": "完成的紀錄表會在放映室外展示。",
+      "whyZh": "這句只說在哪裡展示紀錄表，沒有提出任何建議字詞，無法承接下一句的 those suggested phrases。"
+    },
+    {
+      "id": "B",
+      "text": "Return the source recording to the entrance desk when your review is complete.",
+      "zh": "校對完成後，將原始錄影交還入口櫃檯。",
+      "whyZh": "校對人員用的是工作副本，且這句沒有提出任何可加進逐字稿的字詞。"
+    },
+    {
+      "id": "C",
+      "text": "If a caption is inaccurate, write a suggested replacement in the log.",
+      "zh": "若字幕不正確，請在紀錄表填上建議替換的字詞。",
+      "whyZh": "下一句 those suggested phrases 指向此處建議替換的文字；以紀錄表收集建議，再依建議更新逐字稿，流程一致。"
+    },
+    {
+      "id": "D",
+      "text": "Keep notes about the video separate from the timestamp log.",
+      "zh": "把影片筆記與時間戳記紀錄分開保管。",
+      "whyZh": "這句只說如何分開保存筆記，沒有提出任何可供下一句採用的建議字詞。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "下一句 those suggested phrases 指向此處建議替換的文字；以紀錄表收集建議，再依建議更新逐字稿，流程一致。",
+  "evidence": "If a caption is inaccurate, write a suggested replacement in the log. The editor will use those suggested phrases to update the text transcript, but the video itself will not be edited during this review.",
+  "vocabulary": [
+    {
+      "term": "a text transcript",
+      "zh": "文字逐字稿",
+      "note": "將錄音或影片之中的語言內容以文字呈現；不等於已替換畫面字幕。"
+    }
+  ]
+}

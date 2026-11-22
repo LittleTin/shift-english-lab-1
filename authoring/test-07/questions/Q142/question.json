@@ -1,0 +1,52 @@
+{
+  "id": "t07-q142",
+  "testId": "test-07",
+  "number": 142,
+  "part": 6,
+  "groupId": "t07-r-p6-03",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Tell the floor lead directly [142] _____ the shared file has already been printed.",
+  "promptZh": "請直接告訴場務組長，[142] _____ 共用檔案已印妥。",
+  "options": [
+    {
+      "id": "A",
+      "text": "before",
+      "zh": "在……之前",
+      "whyZh": "has already been printed 表已印出；直接告知是因現在不能只更新共用檔，並非要求在印製之前通知。"
+    },
+    {
+      "id": "B",
+      "text": "unless",
+      "zh": "除非",
+      "whyZh": "unless 會將「已印妥」變成不用通知的例外，而這正是必須直接告知組長的理由。"
+    },
+    {
+      "id": "C",
+      "text": "although",
+      "zh": "雖然",
+      "whyZh": "兩件事不是讓步反差；資料已印妥，合理解釋為何要另行口頭通知。"
+    },
+    {
+      "id": "D",
+      "text": "because",
+      "zh": "因為",
+      "whyZh": "共用檔已經印給口譯間，僅改線上檔無法讓口譯員立即知道，所以要通知場務組長。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "共用檔已經印給口譯間，僅改線上檔無法讓口譯員立即知道，所以要通知場務組長。",
+  "evidence": "If a speaker makes a change on the morning of the forum, tell the floor lead directly because the shared file has already been printed for the booths.",
+  "vocabulary": [
+    {
+      "term": "a floor lead",
+      "zh": "場務組長",
+      "note": "負責在活動場地協調人員或更新，不一定是講者本人。"
+    }
+  ]
+}

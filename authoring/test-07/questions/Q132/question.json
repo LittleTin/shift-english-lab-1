@@ -1,0 +1,52 @@
+{
+  "id": "t07-q132",
+  "testId": "test-07",
+  "number": 132,
+  "part": 6,
+  "groupId": "t07-r-p6-01",
+  "revision": 1,
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "technology"
+  ],
+  "prompt": "Enter the timestamp [132] _____ the first word in the same row.",
+  "promptZh": "請將時間戳記 [132] _____ 第一個詞寫在同一列。",
+  "options": [
+    {
+      "id": "A",
+      "text": "instead of",
+      "zh": "代替",
+      "whyZh": "上一句要求確切時間和第一個詞都要寫，不能以其中一項替代另一項。"
+    },
+    {
+      "id": "B",
+      "text": "along with",
+      "zh": "連同、以及",
+      "whyZh": "同一列要同時放時間和第一個詞，用 along with 表示兩個都附上。"
+    },
+    {
+      "id": "C",
+      "text": "except for",
+      "zh": "除了……之外",
+      "whyZh": "except for 引出排除的項目；第一個詞是定位字幕所需資料，不能排除。"
+    },
+    {
+      "id": "D",
+      "text": "regardless of",
+      "zh": "不管",
+      "whyZh": "regardless of 表不需理會某事；第一個詞是明列的必填欄位，不能忽略。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "同一列要同時放時間和第一個詞，用 along with 表示兩個都附上。",
+  "evidence": "Write both the exact time and the first visible word in the log. Enter the timestamp along with the first word in the same row so the editor can locate the right caption.",
+  "vocabulary": [
+    {
+      "term": "a timestamp",
+      "zh": "時間戳記",
+      "note": "用來精確標記音訊或影片中的時間位置。"
+    }
+  ]
+}
