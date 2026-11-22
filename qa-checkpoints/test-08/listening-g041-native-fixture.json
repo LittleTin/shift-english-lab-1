@@ -1,0 +1,184 @@
+{
+  "testId": "test-08",
+  "part": 3,
+  "group": "t08-g041",
+  "questions": [
+    41,
+    42,
+    43
+  ],
+  "status": "exact audio and native audio-element fixture pass; private Q041–049 batch input; no deployment",
+  "scopeLimits": {
+    "integratedShiftAppVerified": false,
+    "physicalMobileVerified": false,
+    "releaseApproved": false
+  },
+  "pins": {
+    "materializationReportSha256": "89bce4ba9f8e219dce9a28244ca2ef35ed29cbaf411abc08999f89dd00bc9d75",
+    "nativeFixtureReceiptSha256": "8c22bd6cf8f19d6878031be11bc2940132a1d44cfcda64e4456527f7eb2c1a0b",
+    "fixtureDocumentSha256": "99fbbc022e837c23f295800e3bafa2329b077049a136b23913b1a7f89a0a4e24",
+    "independentLanguageSha256": "017241d6a8d1968b78802c97906a4b931d764aef60d4102255d1df365dba6bdf",
+    "candidateReceiptSha256": "8ddc44543e1b2b4edcc45d5323a05a6a280c5e044ac225d4be7a583adf3855f1",
+    "independentBilingualSha256": "e55fc68b9eb48259a64ee0c58d7abc8c0388e014c8b77cb3414eb7ea0b45f758"
+  },
+  "modes": {
+    "practice": {
+      "encodedSha256": "8a04cef3c27946c4c509adc821f81595008eea09164355dff022775f8b781d86",
+      "decodedPcmSha256": "a50680b0e76c0fc699bb950cb7da9c7ec64d90775cbe90713e14efb6401d243a",
+      "decodedFrames48k": 1806960,
+      "nativePlayback": {
+        "startSeconds": 0,
+        "playbackRate": 1,
+        "reportedDurationSeconds": 37.6515,
+        "naturalEnd": true,
+        "seek": false,
+        "error": false
+      }
+    },
+    "formal": {
+      "encodedSha256": "89fa5f56b40c3f2ec005f3382725de175bb2785764776674c6efaf6131f16876",
+      "decodedPcmSha256": "11f0defa5a6ef5e5f67c7fdf39c84925ce9142da17b5971828c8a487064d3ba5",
+      "decodedFrames48k": 3940080,
+      "nativePlayback": {
+        "startSeconds": 0,
+        "playbackRate": 1,
+        "reportedDurationSeconds": 82.0915,
+        "naturalEnd": true,
+        "seek": false,
+        "error": false
+      }
+    }
+  },
+  "files": {
+    "authoring/test-08/groups/t08-g041/group.json": {
+      "sha256": "714eb1e73df87e60032b3fe653238f1ec56220c6d43d30adebd154d272ac63f0",
+      "oid": "3368078495c7d6b00992387ae90e2e9f690173b9",
+      "bytes": 3171
+    },
+    "authoring/test-08/groups/t08-g041/media/audio/practice-groups/test-08/t08-g041.ogg": {
+      "sha256": "8a04cef3c27946c4c509adc821f81595008eea09164355dff022775f8b781d86",
+      "oid": "f1d6e6671260b82472f9521d92338a7baf368fd5",
+      "bytes": 337117
+    },
+    "authoring/test-08/groups/t08-g041/media/audio/formal-groups/test-08/t08-g041.ogg": {
+      "sha256": "89fa5f56b40c3f2ec005f3382725de175bb2785764776674c6efaf6131f16876",
+      "oid": "fb69fee072ed148465e3a2e4cb432dc388bf3491",
+      "bytes": 565836
+    },
+    "authoring/test-08/questions/Q041/question.json": {
+      "sha256": "904388b3b6b95e2501343e8ad21ab1dd9b5ceb39e2022aeaca0dac4d4321d66f",
+      "oid": "13d86c26b1dd184891ca0bd93cd539854d3acb85",
+      "bytes": 2000
+    },
+    "authoring/test-08/questions/Q041/media.json": {
+      "sha256": "3e2685eedb3c9829e80256f05eef05c4652762d81ffb3c461c808629fd1eb0bf",
+      "oid": "f29d60ac9ce8d546e5629fd11d6fddd8edd11b1d",
+      "bytes": 1078
+    },
+    "authoring/test-08/questions/Q042/question.json": {
+      "sha256": "45d7c753f1c502aeb60d8cda8a83467793ae42037e84c6135b707f8a877652a9",
+      "oid": "57a70c15d6d90edd29da9479a50cc48462690989",
+      "bytes": 2639
+    },
+    "authoring/test-08/questions/Q042/media.json": {
+      "sha256": "5436a9958000768ab299288c4e7fcf1c2b711cae5af9fb0cc778d9d14d7d34b7",
+      "oid": "3e587e519b562e8ecac96ab0b2bb6ddc2c40bcf6",
+      "bytes": 1078
+    },
+    "authoring/test-08/questions/Q043/question.json": {
+      "sha256": "af2a05d81f24575bd40856e6a6ec434cc8e58f932e89b198f1f1fbeee5388990",
+      "oid": "5cad76084fc2abdf8c6d262b4d75d90478db23f4",
+      "bytes": 1929
+    },
+    "authoring/test-08/questions/Q043/media.json": {
+      "sha256": "a601c14fbadea6ee10d01d5db444c4ee3392f82a07330585ba74c418afc2cdc8",
+      "oid": "10c75efe38b571b10656414c62f688e029a6051c",
+      "bytes": 1078
+    }
+  },
+  "fullBandZeroLagCosines": {
+    "practice.passage": 0.9985575684718022,
+    "formal.cue": 0.998549296097643,
+    "formal.passage": 0.9985839323595037,
+    "formal.q041": 0.9986272324490216,
+    "formal.q042": 0.9986081990761609,
+    "formal.q043": 0.9990066170256057,
+    "crossMode": 0.9973858689178231
+  },
+  "roleBounds": {
+    "practice": [
+      {
+        "role": "lead",
+        "startSample48k": 0,
+        "endSample48k": 96000
+      },
+      {
+        "role": "passage",
+        "startSample48k": 96000,
+        "endSample48k": 1710960
+      },
+      {
+        "role": "tail",
+        "startSample48k": 1710960,
+        "endSample48k": 1806960
+      }
+    ],
+    "formal": [
+      {
+        "role": "lead",
+        "startSample48k": 0,
+        "endSample48k": 96000
+      },
+      {
+        "role": "codecRunway",
+        "startSample48k": 96000,
+        "endSample48k": 96960
+      },
+      {
+        "role": "cue",
+        "startSample48k": 96960,
+        "endSample48k": 326760
+      },
+      {
+        "role": "passage",
+        "startSample48k": 326760,
+        "endSample48k": 1941720
+      },
+      {
+        "role": "q041",
+        "startSample48k": 1941720,
+        "endSample48k": 2220120
+      },
+      {
+        "role": "wait041",
+        "startSample48k": 2220120,
+        "endSample48k": 2580120
+      },
+      {
+        "role": "q042",
+        "startSample48k": 2580120,
+        "endSample48k": 2848920
+      },
+      {
+        "role": "wait042",
+        "startSample48k": 2848920,
+        "endSample48k": 3208920
+      },
+      {
+        "role": "q043",
+        "startSample48k": 3208920,
+        "endSample48k": 3484080
+      },
+      {
+        "role": "tail",
+        "startSample48k": 3484080,
+        "endSample48k": 3580080
+      },
+      {
+        "role": "wait043",
+        "startSample48k": 3580080,
+        "endSample48k": 3940080
+      }
+    ]
+  }
+}

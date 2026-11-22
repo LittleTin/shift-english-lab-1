@@ -1,0 +1,64 @@
+{
+  "id": "t08-q046",
+  "testId": "test-08",
+  "number": 46,
+  "part": 3,
+  "topic": "daily",
+  "difficulty": "foundation",
+  "groupId": "t08-g044",
+  "prompt": "Lin finds a file marked with the time of Maya’s interview, but it opens with “run-through.” How should she classify it?",
+  "promptZh": "琳找到一個檔案，標示的時間和瑪雅受訪的時間相同，但錄音開頭說的是「彩排」。她應該怎麼分類？",
+  "options": [
+    {
+      "id": "A",
+      "text": "As a run-through, using the spoken opening.",
+      "zh": "依錄音開頭說的內容，歸為彩排。",
+      "whyZh": "檔案時間是複製時間；口頭開場才是用來辨認錄音種類的依據。"
+    },
+    {
+      "id": "B",
+      "text": "As an interview, using the file time.",
+      "zh": "依檔案時間歸為訪談。",
+      "whyZh": "時間只表示何時複製檔案，不能拿來判定錄的是訪談還是彩排。"
+    },
+    {
+      "id": "C",
+      "text": "As a joint interview because of where it was saved.",
+      "zh": "依儲存位置歸為聯合訪談。",
+      "whyZh": "所有錄音都放在同一個資料夾，不能用位置辨認種類。"
+    },
+    {
+      "id": "D",
+      "text": "As an interview if it was copied before the other files.",
+      "zh": "若它比其他檔案更早複製，就歸為訪談。",
+      "whyZh": "複製順序同樣無法說明錄音種類，應聽開頭怎麼標示。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "檔案時間是複製時間；口頭開場才是用來辨認錄音種類的依據。",
+  "evidence": "Lin’s sorting the recordings. The recorder puts every file in the same folder. How will she tell what’s what? / Say “interview” or “run-through” at the start of each recording. Tell Lin not to go by the file times. Those show when we copied the files, not when we recorded them.",
+  "evidenceSpans": [
+    {
+      "turn": 5,
+      "speaker": "M",
+      "exactQuote": "Lin’s sorting the recordings. The recorder puts every file in the same folder. How will she tell what’s what?"
+    },
+    {
+      "turn": 6,
+      "speaker": "F",
+      "exactQuote": "Say “interview” or “run-through” at the start of each recording. Tell Lin not to go by the file times. Those show when we copied the files, not when we recorded them."
+    }
+  ],
+  "tags": [
+    "daily",
+    "conversation"
+  ],
+  "revision": 1,
+  "vocabulary": [
+    {
+      "term": "go by the file times",
+      "zh": "依檔案時間判斷",
+      "note": "go by 表示以某項資訊為依據；此處的檔案時間是複製時間。"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "t08-q044",
+  "testId": "test-08",
+  "number": 44,
+  "part": 3,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "groupId": "t08-g044",
+  "prompt": "If Maya and Theo agree to speak together, which plan lets both speak with the interpreter present?",
+  "promptZh": "如果瑪雅和西奧都願意同場發言，哪個安排能讓口譯員在場時兩人都能發言？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Book Theo’s early run-through and Maya’s late interview.",
+      "zh": "安排西奧在較早的時段彩排，瑪雅在較晚的時段接受訪談。",
+      "whyZh": "口譯員只能留在較早的時段，瑪雅較晚受訪時沒有口譯。"
+    },
+    {
+      "id": "B",
+      "text": "Book Maya’s early interview and Theo’s late run-through.",
+      "zh": "安排瑪雅在較早的時段接受訪談，西奧在較晚的時段彩排。",
+      "whyZh": "只有瑪雅會在口譯員在場時發言，西奧較晚彩排時口譯員已離開。"
+    },
+    {
+      "id": "C",
+      "text": "Book a run-through for Theo and an interview for Maya within the same early booking.",
+      "zh": "在同一筆較早時段的預約中，安排西奧彩排和瑪雅受訪。",
+      "whyZh": "一起受訪可以共用預約，但彩排是獨立的預約，不能和訪談排成同一筆。"
+    },
+    {
+      "id": "D",
+      "text": "Book one early interview with both Maya and Theo.",
+      "zh": "安排兩人在較早的時段一起接受一次訪談。",
+      "whyZh": "同場訪談可以由口譯員協助兩人，較早的時段也符合口譯員的時間。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "同場訪談可以由口譯員協助兩人，較早的時段也符合口譯員的時間。",
+  "evidence": "Maya and Theo can both come early or late. Maya needs the interpreter for her interview. Theo wants help with a run-through of his notes, but our interpreter can only stay for the early slot. / The interpreter can work with two people in a joint interview. A run-through is a separate booking, though. / Right. I’ll ask if they’re willing to interview together. Can we still record Theo’s run-through?",
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "M",
+      "exactQuote": "Maya and Theo can both come early or late. Maya needs the interpreter for her interview. Theo wants help with a run-through of his notes, but our interpreter can only stay for the early slot."
+    },
+    {
+      "turn": 2,
+      "speaker": "F",
+      "exactQuote": "The interpreter can work with two people in a joint interview. A run-through is a separate booking, though."
+    },
+    {
+      "turn": 3,
+      "speaker": "M",
+      "exactQuote": "Right. I’ll ask if they’re willing to interview together. Can we still record Theo’s run-through?"
+    }
+  ],
+  "tags": [
+    "daily",
+    "conversation"
+  ],
+  "revision": 1,
+  "vocabulary": [
+    {
+      "term": "joint interview",
+      "zh": "共同受訪；同場訪談",
+      "note": "兩位受訪者在同一場訪談中發言，不等於把彩排併入同一筆預約。"
+    }
+  ]
+}

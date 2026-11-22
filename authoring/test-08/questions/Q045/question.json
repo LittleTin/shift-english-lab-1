@@ -1,0 +1,64 @@
+{
+  "id": "t08-q045",
+  "testId": "test-08",
+  "number": 45,
+  "part": 3,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "groupId": "t08-g044",
+  "prompt": "Theo asks Maya to read a few lines during his run-through. What can the team do under the current permission?",
+  "promptZh": "西奧請瑪雅在他的彩排中念幾句。依現有的錄音授權，團隊可以怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Record both speakers because Theo is a member.",
+      "zh": "因為西奧是會員，所以把兩人都錄下來。",
+      "whyZh": "彩排錄音要求房間裡都是會員；西奧是會員並不涵蓋來賓瑪雅。"
+    },
+    {
+      "id": "B",
+      "text": "Let them practice together without recording the run-through.",
+      "zh": "讓兩人一起練習，但不要錄下這場彩排。",
+      "whyZh": "瑪雅的授權只涵蓋訪談，彩排時又不是只有會員在場，所以可以一起練習但不能錄音。"
+    },
+    {
+      "id": "C",
+      "text": "Record Maya only because she signed a form.",
+      "zh": "因為瑪雅簽了表單，所以只錄瑪雅。",
+      "whyZh": "她簽的表單涵蓋訪談，不涵蓋這場彩排。"
+    },
+    {
+      "id": "D",
+      "text": "Record Theo’s parts and pause only while Maya reads.",
+      "zh": "錄下西奧的部分，只有瑪雅念台詞時才暫停錄音。",
+      "whyZh": "規則看的是房間裡是否只有會員；瑪雅仍在場，她沒念台詞時也不能錄。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "瑪雅的授權只涵蓋訪談，彩排時又不是只有會員在場，所以可以一起練習但不能錄音。",
+  "evidence": "Right. I’ll ask if they’re willing to interview together. Can we still record Theo’s run-through? / Yes, if it’s just members in the room. Maya is a guest; her form covers her interview, but not a run-through.",
+  "evidenceSpans": [
+    {
+      "turn": 3,
+      "speaker": "M",
+      "exactQuote": "Right. I’ll ask if they’re willing to interview together. Can we still record Theo’s run-through?"
+    },
+    {
+      "turn": 4,
+      "speaker": "F",
+      "exactQuote": "Yes, if it’s just members in the room. Maya is a guest; her form covers her interview, but not a run-through."
+    }
+  ],
+  "tags": [
+    "daily",
+    "conversation"
+  ],
+  "revision": 1,
+  "vocabulary": [
+    {
+      "term": "run-through",
+      "zh": "彩排；先完整練習一遍",
+      "note": "此處指正式訪談以外的練習；訪談錄音授權不會自動涵蓋彩排。"
+    }
+  ]
+}
