@@ -1,0 +1,51 @@
+{
+  "id": "t07-q123",
+  "testId": "test-07",
+  "number": 123,
+  "part": 5,
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "incomplete-sentence",
+    "business"
+  ],
+  "prompt": "The travel office does not accept a single combined figure. Please _____ the rail fares, hotel charges, and taxi fares so that each amount appears on its own line.",
+  "promptZh": "差旅辦公室不接受一筆合計數字。請 _____ 火車票價、旅館費與計程車費，每筆金額各占一行。",
+  "options": [
+    {
+      "id": "A",
+      "text": "waive",
+      "zh": "免除",
+      "whyZh": "免除會取消收費義務，但題目沒有要免付任何一筆費用。"
+    },
+    {
+      "id": "B",
+      "text": "estimate",
+      "zh": "估算",
+      "whyZh": "估算是推算未知數字，沒有確保各種費用分開列出。"
+    },
+    {
+      "id": "C",
+      "text": "itemize",
+      "zh": "逐項列出",
+      "whyZh": "each amount appears on its own line 說明每筆獨立列示，符合 itemize。"
+    },
+    {
+      "id": "D",
+      "text": "round",
+      "zh": "四捨五入",
+      "whyZh": "round 調整數字的精確度，不會解決費用混成一筆的問題。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "each amount appears on its own line 說明每筆獨立列示，符合 itemize。",
+  "evidence": "The travel office does not accept a single combined figure. Please itemize the rail fares, hotel charges, and taxi fares so that each amount appears on its own line.",
+  "vocabulary": [
+    {
+      "term": "a combined figure",
+      "zh": "合計數字",
+      "note": "figure 在本句指一個數目，而非圖形。"
+    }
+  ]
+}
