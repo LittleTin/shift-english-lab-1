@@ -1,0 +1,48 @@
+{
+  "id": "t07-q019",
+  "testId": "test-07",
+  "number": 19,
+  "part": 2,
+  "topic": "daily",
+  "difficulty": "foundation",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽錄音，選出最適當的回應。",
+  "spokenPrompt": "Is the boat coming in now the last one?",
+  "spokenPromptZh": "現在正靠岸的這艘船是末班嗎？",
+  "options": [
+    {
+      "id": "A",
+      "text": "No, there is another one after this.",
+      "zh": "不是，這艘之後還有一班。",
+      "whyZh": "既然這艘之後還有船，眼前這艘就不是末班。"
+    },
+    {
+      "id": "B",
+      "text": "The dock has two ramps.",
+      "zh": "碼頭有兩條斜坡。",
+      "whyZh": "碼頭設備不能判斷當天之後還有沒有船。"
+    },
+    {
+      "id": "C",
+      "text": "The tickets are in my pocket.",
+      "zh": "船票在我的口袋裡。",
+      "whyZh": "票在哪裡，並不回答目前這艘是否為末班。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "既然這艘之後還有船，眼前這艘就不是末班。",
+  "evidence": "Is the boat coming in now the last one? / No, there is another one after this.",
+  "tags": [
+    "daily",
+    "question_response"
+  ],
+  "revision": 1,
+  "groupId": "t07-g019",
+  "vocabulary": [
+    {
+      "term": "come in",
+      "zh": "抵達、靠岸",
+      "note": "此處指船駛進碼頭準備靠岸。"
+    }
+  ]
+}
