@@ -1,0 +1,69 @@
+{
+  "id": "t07-q037",
+  "testId": "test-07",
+  "number": 37,
+  "part": 3,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "groupId": "t07-g035",
+  "prompt": "Which pickup plan fits what the woman says?",
+  "promptZh": "哪個取件安排符合女方的說法？",
+  "answer": "D",
+  "options": [
+    {
+      "id": "A",
+      "text": "Come Thursday morning with the old patch.",
+      "zh": "星期四早上帶舊補丁來取件。",
+      "whyZh": "她只保證中午前能備妥，並且明確不用帶舊補丁。"
+    },
+    {
+      "id": "B",
+      "text": "Wait until after five Thursday and bring the receipt.",
+      "zh": "星期四五點過後帶收據來。",
+      "whyZh": "收據正確，但五點關門後無法照她所說在下午取件。"
+    },
+    {
+      "id": "C",
+      "text": "Collect it in the evening without any documents.",
+      "zh": "晚上來取件，不用帶任何文件。",
+      "whyZh": "店五點關門，而且她要求帶收據。"
+    },
+    {
+      "id": "D",
+      "text": "Come Thursday afternoon before closing, with the receipt.",
+      "zh": "星期四下午打烊前帶收據來。",
+      "whyZh": "中午前備妥、五點關門、帶收據三項條件都符合。"
+    }
+  ],
+  "explanationZh": "中午前備妥、五點關門、帶收據三項條件都符合。",
+  "evidence": "I can have it ready by noon Thursday. / The shop closes at five, so you can collect it in the afternoon. / Bring your receipt, not the old patch you showed me.",
+  "tags": [
+    "daily",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "turn": 4,
+      "speaker": "F",
+      "exactQuote": "I can have it ready by noon Thursday."
+    },
+    {
+      "turn": 4,
+      "speaker": "F",
+      "exactQuote": "The shop closes at five, so you can collect it in the afternoon."
+    },
+    {
+      "turn": 4,
+      "speaker": "F",
+      "exactQuote": "Bring your receipt, not the old patch you showed me."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "pick it up",
+      "zh": "來取件",
+      "note": "pick up 在此指到店領取修好的衣物。"
+    }
+  ]
+}
