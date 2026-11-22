@@ -1,0 +1,41 @@
+{
+  "id": "t08-q012",
+  "testId": "test-08",
+  "number": 12,
+  "part": 2,
+  "groupId": "t08-g012",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽錄音，選出最適當的回應。",
+  "spokenPrompt": "I left my library book in the return slot, but it still shows as checked out.",
+  "spokenPromptZh": "我把圖書館的書投入還書口了，但帳戶仍顯示借閱中。",
+  "options": [
+    {
+      "id": "A",
+      "text": "I read it in two days.",
+      "zh": "我兩天就讀完了。",
+      "whyZh": "讀完的速度不能解釋登記狀態。"
+    },
+    {
+      "id": "B",
+      "text": "That book is on the second floor.",
+      "zh": "那本書在二樓。",
+      "whyZh": "書架樓層不處理還書尚未更新。"
+    },
+    {
+      "id": "C",
+      "text": "The account updates after we empty the slot.",
+      "zh": "我們清空還書口後，帳戶才會更新。",
+      "whyZh": "說明投還書口與更新帳戶之間有時間差。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "說明投還書口與更新帳戶之間有時間差。",
+  "evidence": "I left my library book in the return slot, but it still shows as checked out. / The account updates after we empty the slot.",
+  "revision": 1,
+  "tags": [
+    "daily",
+    "question_response"
+  ]
+}
