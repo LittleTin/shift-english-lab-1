@@ -1,0 +1,41 @@
+{
+  "id": "t08-q021",
+  "testId": "test-08",
+  "number": 21,
+  "part": 2,
+  "groupId": "t08-g021",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽錄音，選出最適當的回應。",
+  "spokenPrompt": "We only checked for the leak with the pump off. Can I tell the client it’s fixed?",
+  "spokenPromptZh": "我們只在泵浦停機時檢查過有沒有洩漏。我可以跟客戶說已經修好了嗎？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Not yet. Tell them we still need to test it with the pump running.",
+      "zh": "還不能。告訴他們，我們還需要在泵浦運轉時再測一次。",
+      "whyZh": "先否定目前就宣稱修好，接著指出還缺泵浦運轉時的檢查，符合目前的驗證範圍。"
+    },
+    {
+      "id": "B",
+      "text": "Yes. Tell them we didn’t find a leak while the pump was running.",
+      "zh": "可以。告訴他們，我們在泵浦運轉時沒有發現洩漏。",
+      "whyZh": "題幹明說只在泵浦停機時檢查；這個回應卻把運轉測試當成已做過。"
+    },
+    {
+      "id": "C",
+      "text": "Ask them whether they saw the leak before the repair.",
+      "zh": "問他們修理前有沒有看到洩漏。",
+      "whyZh": "追問修理前的情況可能對調查有用，但不能回答現有檢查是否足以宣稱修好。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "先否定目前就宣稱修好，接著指出還缺泵浦運轉時的檢查，符合目前的驗證範圍。",
+  "evidence": "We only checked for the leak with the pump off. Can I tell the client it’s fixed? / Not yet. Tell them we still need to test it with the pump running.",
+  "revision": 1,
+  "tags": [
+    "manufacturing",
+    "question_response"
+  ]
+}
