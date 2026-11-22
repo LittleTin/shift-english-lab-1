@@ -1,0 +1,59 @@
+{
+  "id": "t07-q032",
+  "testId": "test-07",
+  "number": 32,
+  "part": 3,
+  "groupId": "t07-g032",
+  "topic": "manufacturing",
+  "prompt": "What issue does the woman mention at the beginning?",
+  "promptZh": "女方一開始提到什麼問題？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "A label cannot be read.",
+      "zh": "有張標籤看不清楚。",
+      "whyZh": "標籤是稍後拍照時要入鏡的資料，不是最先提到的問題。"
+    },
+    {
+      "id": "B",
+      "text": "One trim panel looks cloudy.",
+      "zh": "其中一片飾板看起來霧霧的。",
+      "whyZh": "女方指出檢驗燈下左邊的飾板看起來霧霧的。"
+    },
+    {
+      "id": "C",
+      "text": "An inspection lamp has stopped working.",
+      "zh": "檢驗燈故障了。",
+      "whyZh": "兩人用燈照飾板，沒有提到燈故障。"
+    },
+    {
+      "id": "D",
+      "text": "Two panels were sent to the wrong address.",
+      "zh": "兩片飾板寄錯地址。",
+      "whyZh": "女方比較同批飾板的外觀，未提送錯地點。"
+    }
+  ],
+  "explanationZh": "女方指出檢驗燈下左邊的飾板看起來霧霧的。",
+  "evidence": "Two trim panels from this shipment look different under the inspection lamp. The one on the left looks cloudy. Do we need to send the whole shipment back?",
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "F",
+      "exactQuote": "Two trim panels from this shipment look different under the inspection lamp. The one on the left looks cloudy. Do we need to send the whole shipment back?"
+    }
+  ],
+  "difficulty": "foundation",
+  "revision": 1,
+  "tags": [
+    "manufacturing",
+    "conversation"
+  ],
+  "vocabulary": [
+    {
+      "term": "trim panel",
+      "zh": "飾板",
+      "note": "此處為外觀與表面檢查的零件。"
+    }
+  ]
+}

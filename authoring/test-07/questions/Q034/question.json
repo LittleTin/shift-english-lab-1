@@ -1,0 +1,64 @@
+{
+  "id": "t07-q034",
+  "testId": "test-07",
+  "number": 34,
+  "part": 3,
+  "groupId": "t07-g032",
+  "topic": "manufacturing",
+  "prompt": "If the exposed strip is still cloudy, what should the woman send?",
+  "promptZh": "如果撕膜後的試片仍霧霧的，女方該寄什麼？",
+  "answer": "A",
+  "options": [
+    {
+      "id": "A",
+      "text": "A photo showing both strips and their material label.",
+      "zh": "一張兩片試片和材料標籤都入鏡的照片。",
+      "whyZh": "撕膜後仍霧霧的才請供應商檢查，且兩片試片和材料標籤都要拍進同一張照片。"
+    },
+    {
+      "id": "B",
+      "text": "A package containing the inspection lamp.",
+      "zh": "一個裝著檢驗燈的包裹。",
+      "whyZh": "需寄試片照片，不用寄檢驗燈。"
+    },
+    {
+      "id": "C",
+      "text": "A photo of the shipping carton without the strips.",
+      "zh": "一張沒有試片的外箱照片。",
+      "whyZh": "照片要包含兩片試片，不是只拍外箱。"
+    },
+    {
+      "id": "D",
+      "text": "A list of customer addresses for the shipment.",
+      "zh": "這批貨的客戶地址清單。",
+      "whyZh": "要讓供應商看外觀及材質，不必提供客戶地址。"
+    }
+  ],
+  "explanationZh": "撕膜後仍霧霧的才請供應商檢查，且兩片試片和材料標籤都要拍進同一張照片。",
+  "evidence": "I’ll compare the two strips under this lamp. If the exposed strip still looks cloudy, should I ask the supplier to check the finish? / Yes. In that case, send the supplier a photo of both strips with the material label in view.",
+  "evidenceSpans": [
+    {
+      "turn": 3,
+      "speaker": "F",
+      "exactQuote": "I’ll compare the two strips under this lamp. If the exposed strip still looks cloudy, should I ask the supplier to check the finish?"
+    },
+    {
+      "turn": 4,
+      "speaker": "M",
+      "exactQuote": "Yes. In that case, send the supplier a photo of both strips with the material label in view."
+    }
+  ],
+  "difficulty": "intermediate",
+  "revision": 1,
+  "tags": [
+    "manufacturing",
+    "conversation"
+  ],
+  "vocabulary": [
+    {
+      "term": "in view",
+      "zh": "在畫面可見範圍內",
+      "note": "此處表示拍照時要讓標籤入鏡。"
+    }
+  ]
+}
