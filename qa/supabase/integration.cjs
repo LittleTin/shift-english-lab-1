@@ -31,7 +31,7 @@ function make({db=new IDBFactory(),existing=null,configured=true}={}){
  const d=w.document.querySelector('dialog');d.showModal=()=>d.setAttribute('open','');d.close=()=>d.removeAttribute('open');
  if(existing)for(const [k,v] of existing)w.sessionStorage.setItem(k,v);
  w.eval(read('data/catalog.js'));
- for(let i=1;i<=5;i++)w.eval(read('data/test-0'+i+'.js'));
+ for(let i=1;i<=6;i++)w.eval(read('data/test-0'+i+'.js'));
  for(const f of ['assets/question-uuid.js','assets/shift-sync-config.js','assets/shift-sync-records.js']){
   if(f.endsWith('shift-sync-config.js')) {
    w.SHIFT_SYNC_CONFIG=configured?{url:host,publishableKey:'sb_publishable_shift_fixture_only',allowLocal:true}:{url:'',publishableKey:''}
@@ -87,6 +87,34 @@ async function snapshot(p){
   return objects;
  }finally{db.close()}
 }
+async function installExam(p,owner,{variant='guest',questionIndex=109,answers=2}={}){
+ const pack=p.w.SHIFT_PACKS.find(x=>x.testId==='test-01');
+ const ids=Array.from(pack.questions,q=>q.id);
+ const deadline=Date.now()+2100000;
+ const exam={id:'qa-formal-'+variant,title:'QA formal '+variant,mode:'exam',examVersion:2,examPhase:'reading',
+  audioEdition:'toeic-1',contentVersion:p.w.SHIFT_CATALOG.version,questionIds:ids,testIds:['test-01'],index:questionIndex,
+  startedAt:deadline-4200000,deadline,sectionDeadline:deadline,listeningStartedAt:deadline-3000000,
+  answers:Object.fromEntries(ids.slice(questionIndex,questionIndex+answers).map((id,i)=>[id,i?'B':'D'])),
+  submitted:{},audioUsed:{}};
+ const key=owner?p.w.SHIFT_SYNC_RECORDS.key('state',owner):'state';
+ const db=await req(p.db.open('shift-english-lab-v1'));
+ try{
+  const tx=db.transaction('kv','readwrite'),store=tx.objectStore('kv');
+  const done=new Promise((yes,no)=>{tx.oncomplete=yes;tx.onerror=()=>no(tx.error);tx.onabort=()=>no(tx.error)});
+  const r=store.get(key);
+  r.onsuccess=()=>store.put({...r.result||{formatVersion:1,attempts:[],sessions:[]},active:exam},key);
+  await done;
+ }finally{db.close()}
+ return {key,exam};
+}
+const canResume=p=>p.d.querySelector('[data-action="resume"]');
+async function resumed(p,exam){
+ click(p,'nav-home');await wait(()=>canResume(p),'Progress was not available to resume');
+ await sleep(20);click(p,'resume');
+ await wait(()=>p.d.querySelector('#timer')&&p.d.querySelector('[data-question="'+exam.questionIds[exam.index]+'"][data-option="D"]'),'Wrong question after resume');
+ assert.match(text(p,'#timer'),/\b34:[0-5][0-9]\b|\b35:00\b/);
+ assert.ok(p.d.querySelector('[data-question="'+exam.questionIds[exam.index]+'"][data-option="D"]').classList.contains('selected'));
+}
 function matches(s,n,sent){return Object.entries(s).filter(([k,v])=>k!=='state'&&v.sessions.length===n&&Object.keys(v.syncSent||{}).length===sent).at(0)?.[1]}
 async function complete(p){
  click(p,'nav-home');await wait(()=>p.d.querySelector('[data-action="quick-reading"]'),'home');
@@ -100,7 +128,7 @@ async function flag(p,val){Object.defineProperty(p.w.navigator,'onLine',{configu
 function result(s){return [s.sessions.length,s.attempts.length,Object.values(s.stats).filter(x=>x.needsReview).length]}
 (async()=>{
  await wait(async()=>{try{return (await fetch(host)).ok}catch{return false}},'Synthetic HTTP fixture not ready');
- const a=make(),b=make(),baseline=make({configured:false});let reload=null,otherTab=null;
+ const a=make(),b=make(),baseline=make({configured:false});let reload=null,otherTab=null,ex=null;
  try{
   for(const p of [a,b,baseline])await wait(()=>p.d.querySelector('[data-action="quick-reading"]'),'app boot: '+p.d.body.textContent.slice(0,100));
   await complete(baseline); click(baseline,'nav-data');await wait(()=>baseline.d.querySelector('[data-action="export-backup"]'),'guest settings');
@@ -152,6 +180,37 @@ function result(s){return [s.sessions.length,s.attempts.length,Object.values(s.s
   otherTab.dom.window.close();otherTab=null;
   await data(a);click(a,'sync-now');await listWait(a,4,4);
   console.log('PASS an offline second tab may close; a surviving same-account tab uploads its durable result');
+  const owner='11111111-1111-4111-8111-111111111111';
+  const guestExam=await installExam(baseline,null);
+  const ownExam=await installExam(baseline,owner,{variant:'account-before',questionIndex:113,answers:1});
+  ex=make({db:baseline.db});
+  await wait(()=>canResume(ex),'Guest exam seed');
+  await data(ex);
+  await rejectedSignIn(ex,[A[0],'DefinitelyWrongPass-V0']);
+  assert.equal(ex.d.querySelector('#shift-sync-status').hidden,false);
+  assert.equal((await snapshot(ex)).state.active.id,guestExam.exam.id);
+  await signIn(ex,A);
+  await wait(()=>text(ex,'#shift-sync-status')==='Completed history is synced.','Active account did not sync');
+  let es=await snapshot(ex);
+  for(const [key,t] of [[guestExam.key,guestExam.exam],[ownExam.key,ownExam.exam]]){
+   assert.equal(es[key].active.index,t.index);assert.equal(es[key].active.sectionDeadline,t.sectionDeadline);
+   assert.deepEqual(es[key].active.answers,t.answers);assert.ok(es[key].sessions.every(r=>r.id!==guestExam.exam.id&&r.id!==ownExam.exam.id));
+  }
+  assert.equal(es[ownExam.key].sessions.length,4);
+  // Another tab has a newer checkpoint; the tab holding the older active exam must not overwrite it when pulling new history.
+  const later=await installExam(ex,owner,{variant:'account-newer',questionIndex:122,answers:2});
+  await complete(b);await listWait(b,5,5);
+  click(ex,'sync-now');
+  await listWait(ex,5,5);
+  es=await snapshot(ex);assert.deepEqual(es[later.key].active,later.exam);
+  click(ex,'sync-logout');await wait(()=>ex.d.querySelector('#shift-sync-login-form'),'Logout with unfinished account exam');
+  await resumed(ex,guestExam.exam);
+  await data(ex);await signIn(ex,B.map((v,i)=>i?NEW:v));await wait(()=>text(ex,'#shift-sync-status')==='Completed history is synced.','Switch to B');
+  click(ex,'nav-home');await sleep(40);assert.equal(canResume(ex),null);
+  await data(ex);click(ex,'sync-logout');await wait(()=>ex.d.querySelector('#shift-sync-login-form'),'Logout B');
+  await signIn(ex,A);await wait(()=>text(ex,'#shift-sync-status')==='Completed history is synced.','Switch back A');
+  await resumed(ex,later.exam);
+  console.log('PASS active formal exam never blocks login, logout or Sync Now; guest and accounts remain isolated; correct answers, question and timer resume; stale sync does not overwrite a newer checkpoint');
   assert.deepEqual(seenErrors,[]);
- }finally{for(const p of [a,b,baseline,reload,otherTab])p?.dom.window.close()}
+ }finally{for(const p of [a,b,baseline,reload,otherTab,ex])p?.dom.window.close()}
 })().catch(e=>{console.error(e.stack,seenErrors);process.exitCode=1});

@@ -129,10 +129,10 @@ let syncOwner=null,syncCore=null,syncOnline=null,syncPasswordOpen=false,syncStat
 const scopedKey=(key,owner=syncOwner)=>records&&owner?records.key(key,owner):key;
 const accountActionBusy=()=>route!=='data'||diagnostic;
 function historyNotice(){
- const local='Only completed sessions, answers, and mistakes sync. Unfinished tests, notes, saved questions, and custom packs stay in this browser. Sign in again after reloading or closing this page.';
+ const local='Only completed sessions, answers, and mistakes sync. Unfinished tests, notes, saved questions, and custom packs stay in their original workspace in this browser. Signing in or out does not move or delete an unfinished test. Sign in again after reloading or closing this page.';
  if(!syncConfigured)return '';
  const h='<h2>'+icon('shield')+' Account &amp; Sync</h2>';
- const status='<p class="hint" role="status" aria-live="polite" id="shift-sync-status">'+esc(syncStatus)+'</p>';
+ const status='<p class="notice" role="status" aria-live="polite" aria-atomic="true" id="shift-sync-status" style="margin:12px 0 0"'+(syncStatus?'':' hidden')+'>'+esc(syncStatus)+'</p>';
  if(syncOwner){
   return '<section class="panel" id="account-sync" style="margin-bottom:20px">'+h+
   '<p>Account workspace. '+local+'</p><div class="btn-row">'+btn('Sync Now','sync-now','primary')+
@@ -144,12 +144,12 @@ function historyNotice(){
   '<button class="btn primary" type="submit">Save Password</button></form>':'')+status+'</section>';
  }
  return '<section class="panel" id="account-sync" style="margin-bottom:20px">'+h+
- '<p>Keep practicing as a guest, or sign in with an account provided by the administrator. Sign in on each device to sync completed practice. Existing guest records stay here unless you choose Copy Guest History.</p>'+
+ '<p>Keep practicing as a guest, or sign in with an account provided by the administrator. Sign in on each device to sync completed practice. An unfinished guest test does not block sign-in. To resume it after signing in, sign out and return to Practice Home. Guest records are not uploaded unless you choose Copy Guest History, which copies completed records only.</p>'+
  '<form id="shift-sync-login-form"><div class="field"><label for="shift-sync-email">Email</label><input id="shift-sync-email" name="email" type="email" autocomplete="username" maxlength="254" required></div>'+
  '<div class="field"><label for="shift-sync-password">Password</label><input id="shift-sync-password" name="password" type="password" autocomplete="current-password" maxlength="256" required></div>'+
  '<button class="btn primary" type="submit">Sign In</button></form><p class="hint">Forgot your password? Contact your account administrator.</p>'+status+'</section>';
 }
-function setSyncStatus(msg){syncStatus=msg;const el=document.getElementById('shift-sync-status');if(el)el.textContent=msg}
+function setSyncStatus(msg){syncStatus=msg;const el=document.getElementById('shift-sync-status');if(el){el.hidden=!msg;el.textContent=msg}}
 async function getSyncCore(){
  if(!syncConfigured)throw Error('Account sync is not configured.');
  if(syncCore)return syncCore;
@@ -171,7 +171,10 @@ function accountMessage(error){
 async function switchWorkspace(owner){
  if(owner===syncOwner)return;
  if(storageMode!=='indexeddb')throw Error('Local account records cannot be safely opened.');
+ // Leave any unfinished test in its original workspace. Drain pending writes
+ // before opening a different owner; do not re-save this tab's stale snapshot.
  await saveQueue;
+ if(storageMode!=='indexeddb')throw Error('Local account records cannot be safely opened.');
  const next=await readWorkspace(owner);
  const previous={state,owner:syncOwner,Q,G,loaded,officialPacks:new Map(officialPacks),
   archived:new Set(archivedIds),unavailable:new Set(unavailableCustom),lastResult,reviewDetail,resumeEnv,lastExportAt};
@@ -220,7 +223,7 @@ async function startSync(full=false){
     if(result==='conflict'){conflicts++;continue}
     const prior=state.syncSent;
     state.syncSent={...prior,[s.id]:true};
-    try{await persist(true)}catch(error){if(current())state.syncSent=prior;throw error}
+    try{await persist(true,true)}catch(error){if(current())state.syncSent=prior;throw error}
    }
    const runFull=full||!syncLastFull||now()-syncLastFull>=15*60000;
    let cursor=runFull?null:syncPageCursor, count=0;
@@ -232,7 +235,7 @@ async function startSync(full=false){
      const prior={sessions:state.sessions,attempts:state.attempts,stats:state.stats,syncSent:state.syncSent};
      state.sessions=merged.sessions;state.attempts=merged.attempts;state.stats=merged.stats;state.syncSent=merged.syncSent;
      conflicts+=merged.conflicts;invalid+=merged.invalid;changed ||= merged.imported>0;
-     try{await persist(true)}catch(error){
+     try{await persist(true,true)}catch(error){
       // Keep newly read records in memory for backup, without claiming a durable receipt.
       if(current())state.syncSent=prior.syncSent;
       throw error
@@ -270,7 +273,7 @@ async function syncGuestPreview(){
    const local=records.safeRows(state,staged,normalizeState,owner);
    // These are local additions, not a read receipt from the server.
    state.sessions=local.sessions;state.attempts=local.attempts;state.stats=local.stats;
-   await persist(true);
+   await persist(true,true);
    if(local.conflicts)notify('Some existing account records differ. Matching IDs were not overwritten.');
   }
   if(staged.length!==guest.sessions.length)notify('Incomplete or oversized guest records remained in the guest workspace.');
@@ -288,10 +291,11 @@ async function syncAccountAction(actionId){
  if(actionId==='sync-now')return startSync(true);
  if(actionId==='sync-import-guest')return syncGuestPreview();
  if(actionId==='sync-logout'){
-  if(state.active?.mode==='exam')return notify('Finish your in-progress formal test before signing out.');
+  setSyncStatus('Signing out…');
   try{await switchWorkspace(null)}catch{setSyncStatus('Sign-out was stopped to protect local records.');return}
   syncPasswordOpen=false;
-  const remote=syncCore?.logout();void remote?.catch(()=>{});render();
+  const remote=syncCore?.logout();void remote?.catch(()=>{});
+  syncStatus='Signed out. Any unfinished guest test can be resumed from Practice Home.';render();
  }
 }
 document.addEventListener('submit',e=>{
@@ -306,7 +310,6 @@ document.addEventListener('submit',e=>{
  void withBusy(async()=>{
   try{
    if(storageMode!=='indexeddb')return setSyncStatus('Sign-in requires available IndexedDB browser storage. Guest practice can still use this browser.');
-   if(state.active?.mode==='exam')return setSyncStatus('Finish your in-progress formal test before changing your sign-in.');
    const c=await getSyncCore();
    if(change){
     const scope=c.getScope();
@@ -319,10 +322,11 @@ document.addEventListener('submit',e=>{
     syncPasswordOpen=false;syncStatus='Password changed.';render();
    }else{
     if(syncOwner)return;
+    setSyncStatus('Signing in…');
     const id=(await c.signInWithPassword(String(value.get('email')||'').trim(),String(value.get('password')||'')))?.userId;
     if(!id)throw Error('Authentication did not create a session.');
-    try{await switchWorkspace(id)}catch(error){c.clear();throw error}
-    syncPasswordOpen=false;render();void startSync();
+    try{await switchWorkspace(id)}catch{c.clear();return setSyncStatus('Signed in but could not open local account records. Your current workspace was kept. Try again.');}
+    syncPasswordOpen=false;syncStatus='Signed in.';render();void startSync();
    }
   }catch(error){setSyncStatus(accountMessage(error))}
   finally{for(const key of fields)value.delete(key)}
@@ -332,9 +336,9 @@ window.addEventListener('online',()=>void startSync());
 if(syncConfigured)setInterval(()=>{if(!document.hidden&&syncOwner)void startSync()},60000);
 
 async function initStorage(){try{db=await new Promise((resolve,reject)=>{const req=indexedDB.open('shift-english-lab-v1',1);req.onupgradeneeded=()=>req.result.createObjectStore('kv');req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);req.onblocked=()=>reject(new Error('The database is in use by another tab'))});const stored=await new Promise((resolve,reject)=>{const r=db.transaction('kv').objectStore('kv').get('state');r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error)});if(stored)state=normalizeState(stored);storageMode='indexeddb';db.onversionchange=()=>{db.close();storageMode='memory';notify('Storage has changed. Export a backup and reopen the app.')};await persist();return}catch(e){console.warn('IndexedDB unavailable',e)}try{localStorage.setItem('shift-probe','1');localStorage.removeItem('shift-probe');const raw=localStorage.getItem('shift-english-lab-v1');if(raw)state=normalizeState(JSON.parse(raw));storageMode='localstorage'}catch(e){storageMode='memory'}}
-function persist(strict=false){
+function persist(strict=false,historyOnly=false){
  if(diagnostic||storageMode==='loading'||storageMode==='memory')return strict?Promise.reject(new Error('Local saving unavailable')):Promise.resolve();
- saveListeningCountdown();
+ if(!historyOnly)saveListeningCountdown();
  const snapshot=JSON.stringify(state),owner=syncOwner;
  saveQueue=saveQueue.catch(()=>{}).then(()=>new Promise((resolve,reject)=>{
   if(storageMode==='indexeddb'&&db){
@@ -348,10 +352,16 @@ function persist(strict=false){
    req.onsuccess=()=>{
     try{
      const old=req.result;
-     if(old){
-      Object.assign(next,records.localUnion(next,old,normalizeState));
+     if(historyOnly){
+      // A different tab may have newer in-progress answers, timing, or notes.
+      // A cloud pull/receipt must never overwrite those local workspace fields.
+      const durable=old||blankWorkspace();
+      Object.assign(durable,records.localUnion(durable,next,normalizeState));
+      store.put(durable,key);
+     }else{
+      if(old)Object.assign(next,records.localUnion(next,old,normalizeState));
+      store.put(next,key);
      }
-     store.put(next,key);
     }catch(error){try{tx.abort()}catch{}reject(error)}
    };
   }else{try{localStorage.setItem(scopedKey('shift-english-lab-v1',owner),snapshot);resolve()}catch(e){reject(e)}}
