@@ -1,0 +1,59 @@
+{
+  "id": "t07-q056",
+  "testId": "test-07",
+  "number": 56,
+  "part": 3,
+  "groupId": "t07-g056",
+  "prompt": "What concern does the woman report?",
+  "promptZh": "女方提出什麼疑慮？",
+  "answer": "B",
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "business",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidence": "one person says the tubs themselves were included.",
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "F",
+      "exactQuote": "one person says the tubs themselves were included."
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "text": "Two tubs were sent to the wrong station.",
+      "zh": "兩個桶子送到錯的工作區。",
+      "whyZh": "她談的是秤重是否包含空桶，不是桶送到哪裡。"
+    },
+    {
+      "id": "B",
+      "text": "The reported amounts may include the tubs.",
+      "zh": "回報數字可能把桶子的重量算進去。",
+      "whyZh": "女方說有人認為回報的重量把桶子本身也包含了。"
+    },
+    {
+      "id": "C",
+      "text": "The two stations used different units.",
+      "zh": "兩區使用了不同的重量單位。",
+      "whyZh": "八和五都是公斤；問題不是重量單位不一致。"
+    },
+    {
+      "id": "D",
+      "text": "The report has been delivered a day late.",
+      "zh": "報告晚了一天送出。",
+      "whyZh": "數字已列入明天的報告，沒有說報告遲交。"
+    }
+  ],
+  "explanationZh": "女方說有人認為回報的重量把桶子本身也包含了。",
+  "vocabulary": [
+    {
+      "term": "be included",
+      "zh": "被包含在內",
+      "note": "指數字可能把原本不該列入的空桶算進去了。"
+    }
+  ]
+}

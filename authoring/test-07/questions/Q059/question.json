@@ -1,0 +1,59 @@
+{
+  "id": "t07-q059",
+  "testId": "test-07",
+  "number": 59,
+  "part": 3,
+  "groupId": "t07-g059",
+  "topic": "manufacturing",
+  "prompt": "What is the man preparing?",
+  "promptZh": "男方正在準備什麼？",
+  "answer": "A",
+  "options": [
+    {
+      "id": "A",
+      "text": "A chart for a customer call.",
+      "zh": "客戶通話要用的圖表。",
+      "whyZh": "他開頭說在準備明天與客戶通話要用的振動圖。"
+    },
+    {
+      "id": "B",
+      "text": "A new motor stand.",
+      "zh": "新的馬達支架。",
+      "whyZh": "支架是測試設備上的既有物件，男方並未準備新支架。"
+    },
+    {
+      "id": "C",
+      "text": "A recording of a sales call.",
+      "zh": "業務通話錄音。",
+      "whyZh": "通話安排在明天，他要準備的是圖表，而不是錄音。"
+    },
+    {
+      "id": "D",
+      "text": "A schedule for future vibration tests.",
+      "zh": "後續振動測試的排程。",
+      "whyZh": "男方在處理既有測試圖表，不是排定新的測試。"
+    }
+  ],
+  "explanationZh": "他開頭說在準備明天與客戶通話要用的振動圖。",
+  "evidence": "I’m preparing the vibration chart for tomorrow’s customer call. The largest spike is at the far right. I thought I should circle it as the worst result.",
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "M",
+      "exactQuote": "I’m preparing the vibration chart for tomorrow’s customer call. The largest spike is at the far right. I thought I should circle it as the worst result."
+    }
+  ],
+  "difficulty": "foundation",
+  "revision": 1,
+  "tags": [
+    "manufacturing",
+    "conversation"
+  ],
+  "vocabulary": [
+    {
+      "term": "customer call",
+      "zh": "與客戶的通話",
+      "note": "call 可指電話或線上通話。"
+    }
+  ]
+}

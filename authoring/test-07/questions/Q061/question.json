@@ -1,0 +1,69 @@
+{
+  "id": "t07-q061",
+  "testId": "test-07",
+  "number": 61,
+  "part": 3,
+  "groupId": "t07-g059",
+  "topic": "manufacturing",
+  "prompt": "How should the man present the results?",
+  "promptZh": "男方應如何呈現結果？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "Remove everything that happened after the shutoff.",
+      "zh": "刪去關機後的全部資料。",
+      "whyZh": "男方提出裁掉，但女方要求保留整張圖。"
+    },
+    {
+      "id": "B",
+      "text": "Keep the whole chart, explain the grey band and mark the largest spike before it.",
+      "zh": "保留整張圖、解釋灰色區段，並標出它之前的最大尖峰。",
+      "whyZh": "女方指定要保留圖表、加註灰色帶，並圈出運轉區段的最大尖峰。"
+    },
+    {
+      "id": "C",
+      "text": "Keep the chart but circle the largest spike on the far right.",
+      "zh": "保留圖表，但圈出最右側的最大尖峰。",
+      "whyZh": "最右的尖峰不是運轉資料，該圈的是灰色帶左側的尖峰。"
+    },
+    {
+      "id": "D",
+      "text": "Replace the chart with written notes and show no data.",
+      "zh": "用文字替代圖表，不顯示資料。",
+      "whyZh": "女方請他把註解加在圖表上，並沒有要求取消圖表。"
+    }
+  ],
+  "explanationZh": "女方指定要保留圖表、加註灰色帶，並圈出運轉區段的最大尖峰。",
+  "evidence": "Check the grey band on the chart. It marks the time after we switched the motor off. That spike is from lifting the unit off the stand, not from running the motor. / Should I crop the chart at the motor shutoff, so the customer doesn’t have to see the grey band? / Keep the full chart. Add a note explaining the grey band, and circle the largest spike to the left of it.",
+  "evidenceSpans": [
+    {
+      "turn": 2,
+      "speaker": "F",
+      "exactQuote": "Check the grey band on the chart. It marks the time after we switched the motor off. That spike is from lifting the unit off the stand, not from running the motor."
+    },
+    {
+      "turn": 3,
+      "speaker": "M",
+      "exactQuote": "Should I crop the chart at the motor shutoff, so the customer doesn’t have to see the grey band?"
+    },
+    {
+      "turn": 4,
+      "speaker": "F",
+      "exactQuote": "Keep the full chart. Add a note explaining the grey band, and circle the largest spike to the left of it."
+    }
+  ],
+  "difficulty": "intermediate",
+  "revision": 1,
+  "tags": [
+    "manufacturing",
+    "conversation"
+  ],
+  "vocabulary": [
+    {
+      "term": "grey band",
+      "zh": "灰色區段",
+      "note": "圖上的色帶標示馬達關閉後的時段。"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "t07-q058",
+  "testId": "test-07",
+  "number": 58,
+  "part": 3,
+  "groupId": "t07-g056",
+  "prompt": "What information is needed to make the correction?",
+  "promptZh": "更正數字需要知道什麼？",
+  "answer": "A",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "business",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidence": "Then only the dish station needs a correction. / Ask them to weigh their own empty tub this afternoon. / We can’t assume both tubs weigh the same.",
+  "evidenceSpans": [
+    {
+      "turn": 4,
+      "speaker": "M",
+      "exactQuote": "Then only the dish station needs a correction."
+    },
+    {
+      "turn": 4,
+      "speaker": "M",
+      "exactQuote": "Ask them to weigh their own empty tub this afternoon."
+    },
+    {
+      "turn": 4,
+      "speaker": "M",
+      "exactQuote": "We can’t assume both tubs weigh the same."
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "text": "The weight of the dish station’s own empty tub.",
+      "zh": "清洗區自己那個空桶的重量。",
+      "whyZh": "男方請他們秤本區空桶，因為兩個桶子的重量不一定相同。"
+    },
+    {
+      "id": "B",
+      "text": "The current weight of both tubs together.",
+      "zh": "兩個桶子目前合在一起的總重。",
+      "whyZh": "只更正清洗區，所需的是該區空桶單獨重量。"
+    },
+    {
+      "id": "C",
+      "text": "The number of meals served at each station.",
+      "zh": "每個工作區供應的餐點數。",
+      "whyZh": "更正關乎重量，不需要知道餐點數。"
+    },
+    {
+      "id": "D",
+      "text": "The exact date the tubs were purchased.",
+      "zh": "桶子的確切購買日期。",
+      "whyZh": "購買日期不能代替秤得的空桶重量。"
+    }
+  ],
+  "explanationZh": "男方請他們秤本區空桶，因為兩個桶子的重量不一定相同。",
+  "vocabulary": [
+    {
+      "term": "weigh",
+      "zh": "秤重",
+      "note": "表示量出物件的重量，不是估計。"
+    }
+  ]
+}

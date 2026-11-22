@@ -1,0 +1,69 @@
+{
+  "id": "t07-q057",
+  "testId": "test-07",
+  "number": 57,
+  "part": 3,
+  "groupId": "t07-g056",
+  "prompt": "Which station’s number should stay as it is?",
+  "promptZh": "哪一區回報的數字應維持不變？",
+  "answer": "D",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "business",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidence": "Find out which station reset the scale with an empty tub on it. / If they did that, their number is already the weight of the food scraps. / The prep station confirms they reset it.",
+  "evidenceSpans": [
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "Find out which station reset the scale with an empty tub on it."
+    },
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "If they did that, their number is already the weight of the food scraps."
+    },
+    {
+      "turn": 3,
+      "speaker": "F",
+      "exactQuote": "The prep station confirms they reset it."
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "text": "The dish station’s number, because its empty-tub weight was shown.",
+      "zh": "清洗區，因為秤有顯示空桶重量。",
+      "whyZh": "秤仍顯示空桶重量代表未歸零，清洗區的數字需要更正。"
+    },
+    {
+      "id": "B",
+      "text": "Both numbers, because the same unit was used.",
+      "zh": "兩個都不變，因為單位相同。",
+      "whyZh": "單位相同不表示都先扣掉了空桶。"
+    },
+    {
+      "id": "C",
+      "text": "Neither number, because every tub has weight.",
+      "zh": "兩個都更正，因為桶子都有重量。",
+      "whyZh": "已用空桶歸零的數字已排除桶重，不能再扣。"
+    },
+    {
+      "id": "D",
+      "text": "The prep station’s number, because it already excluded its tub.",
+      "zh": "備料區，因為已排除自己的桶重。",
+      "whyZh": "備料區確認有以空桶歸零，依規則不需要扣第二次。"
+    }
+  ],
+  "explanationZh": "備料區確認有以空桶歸零，依規則不需要扣第二次。",
+  "vocabulary": [
+    {
+      "term": "reset the scale",
+      "zh": "把秤重新歸零",
+      "note": "空容器在秤上時歸零，之後讀值只反映新增的重量。"
+    }
+  ]
+}
