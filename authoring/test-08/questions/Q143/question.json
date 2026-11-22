@@ -1,45 +1,52 @@
 {
   "id": "t08-q143",
   "testId": "test-08",
+  "number": 143,
   "part": 6,
-  "revision": 1,
-  "topic": "daily",
   "groupId": "t08-r-p6-04",
+  "revision": 2,
+  "topic": "daily",
+  "difficulty": "foundation",
   "tags": [
     "text-completion",
     "daily"
   ],
-  "number": 143,
   "prompt": "Choose the best word or sentence for blank [143].",
-  "promptZh": "請選出最適合填入空格 [143] 的單字或句子。",
+  "promptZh": "請選出最適合填入第 143 題空格的字詞或句子。",
   "options": [
     {
       "id": "A",
-      "text": "assigned",
-      "zh": "分配",
-      "whyZh": "be assigned to someone else 是改分配給另一個人的被動句，呼應逾時。"
+      "text": "seldom",
+      "zh": "很少",
+      "whyZh": "訪客每次換桌都須更新，不能只偶爾改。"
     },
     {
       "id": "B",
-      "text": "achieved",
-      "zh": "達成",
-      "whyZh": "achieved 搭配目標或成果，不把亭子當作要達成的成果。"
+      "text": "immediately",
+      "zh": "立刻",
+      "whyZh": "更新是讓接下來進門的人看到正確空位；立即更新符合用途。"
     },
     {
       "id": "C",
-      "text": "assembled",
-      "zh": "組裝",
-      "whyZh": "assembled 指組裝，遲到不會觸發新的組裝，且 to someone else 不合。"
+      "text": "overseas",
+      "zh": "在海外",
+      "whyZh": "入口看板的更新時點與地理位置無關。"
     },
     {
       "id": "D",
-      "text": "arrived",
-      "zh": "抵達",
-      "whyZh": "arrive 不及物，不用 be arrived to 表已把空間分給別人。"
+      "text": "at the end of the day",
+      "zh": "當日結束時",
+      "whyZh": "等到當日結束才更新，稍晚入場的人仍會看到舊座位數。"
     }
   ],
-  "answer": "A",
-  "evidence": "If you are more than five minutes late, the booth may be assigned to someone else.",
-  "difficulty": "foundation",
-  "explanationZh": "be assigned to someone else 是改分配給另一個人的被動句，呼應逾時。"
+  "answer": "B",
+  "explanationZh": "更新是讓接下來進門的人看到正確空位；立即更新符合用途。",
+  "evidence": "When a visitor changes tables, update the seat totals immediately so later arrivals can use the board.",
+  "vocabulary": [
+    {
+      "term": "seat totals",
+      "zh": "座位數",
+      "note": "入口看板上的座位數，應在訪客換桌時更新。"
+    }
+  ]
 }

@@ -1,45 +1,52 @@
 {
   "id": "t08-q144",
   "testId": "test-08",
+  "number": 144,
   "part": 6,
-  "revision": 1,
-  "topic": "daily",
   "groupId": "t08-r-p6-04",
+  "revision": 2,
+  "topic": "daily",
+  "difficulty": "foundation",
   "tags": [
     "text-completion",
     "daily"
   ],
-  "number": 144,
   "prompt": "Choose the best word or sentence for blank [144].",
-  "promptZh": "請選出最適合填入空格 [144] 的單字或句子。",
+  "promptZh": "請選出最適合填入第 144 題空格的字詞或句子。",
   "options": [
     {
       "id": "A",
-      "text": "remains",
-      "zh": "剩餘（單數）",
-      "whyZh": "主詞 minutes 是複數，不用 remains。"
+      "text": "understand",
+      "zh": "理解（原形）",
+      "whyZh": "主詞是單數 the visitor，現在式不用原形。"
     },
     {
       "id": "B",
-      "text": "remaining",
-      "zh": "剩餘（分詞）",
-      "whyZh": "remaining 沒有助動詞，無法成立 how many minutes 作主詞的完整從屬問句。"
+      "text": "understanding",
+      "zh": "理解中",
+      "whyZh": "關係子句需要限定動詞，不是單獨使用現在分詞。"
     },
     {
       "id": "C",
-      "text": "remain",
-      "zh": "剩餘（複數）",
-      "whyZh": "how many minutes 作複數主詞，remain 是限定動詞，表示剩下幾分鐘。"
+      "text": "to understand",
+      "zh": "去理解",
+      "whyZh": "此處描述訪客現已能理解該語言，不是待學會的目的。"
     },
     {
       "id": "D",
-      "text": "is remaining",
-      "zh": "正在剩餘（單數）",
-      "whyZh": "is 與複數 minutes 不一致；剩餘時間也不需強調正在進行。"
+      "text": "understands",
+      "zh": "理解",
+      "whyZh": "the visitor 是單數，關係子句用第三人稱單數現在式。"
     }
   ],
-  "answer": "C",
-  "evidence": "The digital display inside shows how many minutes remain.",
-  "difficulty": "intermediate",
-  "explanationZh": "how many minutes 作複數主詞，remain 是限定動詞，表示剩下幾分鐘。"
+  "answer": "D",
+  "explanationZh": "the visitor 是單數，關係子句用第三人稱單數現在式。",
+  "evidence": "the next host should offer it in a language the visitor understands.",
+  "vocabulary": [
+    {
+      "term": "the next host",
+      "zh": "接手的主持人",
+      "note": "訪客換桌後，指新一桌的主持人。"
+    }
+  ]
 }

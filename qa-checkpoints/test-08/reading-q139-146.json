@@ -35,23 +35,45 @@
       "sha256": "1a648acb9799ed372e00b3d653ff65e7230d935e18f5d1b933d466d497a08999"
     },
     "authoring/test-08/questions/Q143/question.json": {
-      "sha256": "a45e5c663c77542bee2d49160206b6bb4ae9c070461b662e4437404b66f5dba6",
+      "sha256": "31c4702f5535ce5d89f987078d054466429b7feaaf563e1227121eebb9d785f6",
       "uuid": "9b2cea49-77cb-557c-8c82-309ffbdfe68b"
     },
     "authoring/test-08/questions/Q144/question.json": {
-      "sha256": "14841caecf1c30e447c64968330470b66a6b08ad80bee6e5793e3af5e2a93c39",
+      "sha256": "21d0054869dc10cba1691f22e7a4542553882b16fa6bbab62bb17143e97a09c3",
       "uuid": "00512f1b-9124-584e-8456-bf0bba42efcd"
     },
     "authoring/test-08/questions/Q145/question.json": {
-      "sha256": "5215dc5341bfae8dbd11d5517c486e7e2ca6d790e12d1678bbba5c42bfeb1079",
+      "sha256": "315e2a3a7e4844b06586c93dc92700eeedd0151681dd96d93a8e9f8f52461090",
       "uuid": "c259f3e1-47ef-590e-9ffa-df1b6a294ba3"
     },
     "authoring/test-08/questions/Q146/question.json": {
-      "sha256": "35dfbe3c8f9d2f1536308447b201640f7f940b7bdae621f732a2fd9d5f273774",
+      "sha256": "e4bd047b5f99367bcf6d569b9db5fb6c4ade4e547912655242b58d9e523b8043",
       "uuid": "9462b915-ccb5-554c-9831-e0cf21bf3c75"
     },
     "authoring/test-08/groups/t08-r-p6-04/group.json": {
-      "sha256": "fc27d9bea0c3b4ec5c4d88ad472bf643ae640f2fac4dae029c8e56dbb4cea076"
+      "sha256": "9742b5a6daf9d4ae80e74d00988892fda668abff981f5b719fd5bf18aaf4a6c3"
     }
-  }
+  },
+  "amendments": [
+    {
+      "priorReceiptGitBlob": "a2ea32e56564a074885ba3397348ff257768e01b",
+      "questionNumbers": [
+        143,
+        144,
+        145,
+        146
+      ],
+      "groupId": "t08-r-p6-04",
+      "reviewStageSha256": "9d4cfd634181e6560646bddeb128effd8bd59decf896714c65184fa6f7c4516a",
+      "literalEvidenceProofSha256": "ffe8068df91281c164baeb5875caf17f41970b222328d879f2f93e568eb04311",
+      "newBlindSha256": "d8efc8e0681304dc24b120700be7fe85d4d5f147372596fcdd56497939787f03",
+      "newBlindReceiptSha256": "41643c869a929b0af7151c9072ab5e70345370d8ee4d5b11556614d3a5654d91",
+      "bilingualReceiptSha256": "e6e0961333192f2018c0372eb198198af96e25ddc65f57a3d4414e769553788d",
+      "checked": [
+        "identity and UUID retained; all four material revisions incremented once",
+        "live unshipped QA only",
+        "neighbor Q139–142 unchanged"
+      ]
+    }
+  ]
 }

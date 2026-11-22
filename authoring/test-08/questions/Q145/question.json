@@ -1,45 +1,52 @@
 {
   "id": "t08-q145",
   "testId": "test-08",
+  "number": 145,
   "part": 6,
-  "revision": 1,
-  "topic": "daily",
   "groupId": "t08-r-p6-04",
+  "revision": 2,
+  "topic": "daily",
+  "difficulty": "advanced",
   "tags": [
     "text-completion",
     "daily"
   ],
-  "number": 145,
   "prompt": "Choose the best word or sentence for blank [145].",
-  "promptZh": "請選出最適合填入空格 [145] 的單字或句子。",
+  "promptZh": "請選出最適合填入第 145 題空格的字詞或句子。",
   "options": [
     {
       "id": "A",
-      "text": "The amber light outside goes out as soon as the headphones are unplugged.",
-      "zh": "一拔掉耳機，外面的琥珀色燈就會熄滅。",
-      "whyZh": "沒有耳機拔插控制燈號的說明，且前句談裡面的顯示器。"
+      "text": "Update both table totals, but add Hana to Table Three’s private welcome checklist this time.",
+      "zh": "兩桌的座位數都要更新，但這次仍應將哈娜列入三號桌的私人迎新檢核表。",
+      "whyZh": "換桌要更新兩桌人數，但看板不記姓名；哈娜聽過卻沒聽懂第一次說明，仍需在新桌補聽，應列入三號桌私人表。"
     },
     {
       "id": "B",
-      "text": "It does not make a sound in the final minute.",
-      "zh": "它在最後一分鐘不會發出任何提示音。",
-      "whyZh": "It 接續裡面的數字顯示器，最後一分鐘不發提示音也銜接下一句不用匆忙的提醒。"
+      "text": "Update both table totals, but leave Hana off the private checklist because she already heard a welcome.",
+      "zh": "兩桌的座位數都要更新，但哈娜已聽過迎新說明，不必列入私人表。",
+      "whyZh": "看板更新正確；然而聽過不等於完成，這一次符合語言不通的例外。"
     },
     {
       "id": "C",
-      "text": "You have to leave the booth to see this display.",
-      "zh": "你必須離開聆聽亭才能看到這個顯示器。",
-      "whyZh": "上句明說顯示器在裡面。"
+      "text": "Add Hana to Table Three’s private checklist, but wait to change the seat totals until she finishes the welcome.",
+      "zh": "把哈娜列入三號桌私人表，但等她完成迎新才更新座位數。",
+      "whyZh": "哈娜應列入私人表；座位數在換桌時就須更新，不取決於迎新是否完成。"
     },
     {
       "id": "D",
-      "text": "The booking starts as soon as you connect an adapter.",
-      "zh": "一接上轉接頭，預約就會開始計時。",
-      "whyZh": "第一段說按下 Ready 才開始計時，不是接上轉接頭。"
+      "text": "Update both table totals and keep Hana on Table One’s checklist until its host can repeat the welcome.",
+      "zh": "更新兩桌的座位數，但把哈娜留在一號桌的檢核表，等原桌主持人再說明。",
+      "whyZh": "座位數應更新，但由接手的三號桌主持人安排補說明，不是把人留在原桌表上。"
     }
   ],
-  "answer": "B",
-  "evidence": "The digital display inside shows how many minutes remain. [insert] If you need to finish a sentence, wait for a natural stopping point rather than rushing to the door.",
-  "difficulty": "intermediate",
-  "explanationZh": "It 接續裡面的數字顯示器，最後一分鐘不發提示音也銜接下一句不用匆忙的提醒。"
+  "answer": "A",
+  "explanationZh": "換桌要更新兩桌人數，但看板不記姓名；哈娜聽過卻沒聽懂第一次說明，仍需在新桌補聽，應列入三號桌私人表。",
+  "evidence": "The board at the door shows which conversation tables have seats. / When a visitor changes tables, update the seat totals immediately so later arrivals can use the board. / Do not write names there. / The host’s private checklist, by contrast, keeps the names of visitors who still need the five-minute welcome. / A visitor who already had the welcome normally does not need it again. / There is one exception: if the first welcome was given in a language the visitor did not understand, the next host should offer it in a language the visitor understands. / On Saturday, Hana moved from Table One to Table Three after hearing a welcome in a language she did not understand.",
+  "vocabulary": [
+    {
+      "term": "a private checklist",
+      "zh": "私人檢核表",
+      "note": "只給主持人使用，不在入口公開姓名。"
+    }
+  ]
 }

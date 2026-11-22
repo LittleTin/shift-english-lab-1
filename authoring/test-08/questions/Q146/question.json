@@ -1,45 +1,52 @@
 {
   "id": "t08-q146",
   "testId": "test-08",
+  "number": 146,
   "part": 6,
-  "revision": 1,
-  "topic": "daily",
   "groupId": "t08-r-p6-04",
+  "revision": 2,
+  "topic": "daily",
+  "difficulty": "foundation",
   "tags": [
     "text-completion",
     "daily"
   ],
-  "number": 146,
   "prompt": "Choose the best word or sentence for blank [146].",
-  "promptZh": "請選出最適合填入空格 [146] 的單字或句子。",
+  "promptZh": "請選出最適合填入第 146 題空格的字詞或句子。",
   "options": [
     {
       "id": "A",
-      "text": "across",
-      "zh": "橫越",
-      "whyZh": "on your way across 需要橫越某處的語境，文中是在結束使用後離開。"
+      "text": "borrowed",
+      "zh": "已借出",
+      "whyZh": "檢查的是換桌紀錄有沒有填妥，不是在追蹤借出的物品。"
     },
     {
       "id": "B",
-      "text": "along",
-      "zh": "沿途",
-      "whyZh": "along 通常需要沿著特定路徑或作跟隨語意，這裡沒有。"
+      "text": "optional",
+      "zh": "非必須的",
+      "whyZh": "換桌後須依規則更新紀錄，並非可自由決定要不要填。"
     },
     {
       "id": "C",
-      "text": "within",
-      "zh": "在……之內",
-      "whyZh": "within 指在範圍內，不接 on your way 表離開。"
+      "text": "unavailable",
+      "zh": "無法取得的",
+      "whyZh": "核對紀錄是確認已填完整，不是把紀錄標為無法取得。"
     },
     {
       "id": "D",
-      "text": "out",
-      "zh": "出去",
-      "whyZh": "on your way out 是離開時，正適合把轉接頭交給出口動線上的櫃檯。"
+      "text": "complete",
+      "zh": "已完成的",
+      "whyZh": "complete 意為完整；接待下一位前，先確認這次換桌的紀錄已填妥。"
     }
   ],
   "answer": "D",
-  "evidence": "hand it to the desk staff on your way out",
-  "difficulty": "foundation",
-  "explanationZh": "on your way out 是離開時，正適合把轉接頭交給出口動線上的櫃檯。"
+  "explanationZh": "complete 意為完整；接待下一位前，先確認這次換桌的紀錄已填妥。",
+  "evidence": "Before admitting the next visitor, check that the records for the table change are complete.",
+  "vocabulary": [
+    {
+      "term": "admit",
+      "zh": "准許進入；接待",
+      "note": "這裡指讓下一位訪客入場。"
+    }
+  ]
 }
