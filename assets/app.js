@@ -734,7 +734,9 @@ function formalStageCard(g,s){
 function officialReviewedChart(g){
  return g?.testId==='test-04'&&['t04-g041','t04-g053'].includes(g.id)||
   g?.testId==='test-05'&&g.id==='t05-g092'&&!!officialEntry('test-05')&&
-  g.image==='assets/scenes/test-05/dispatch-map.jpg'&&g.chartWidthPx===1020;
+  g.image==='assets/scenes/test-05/dispatch-map.jpg'&&g.chartWidthPx===1020||
+  g?.testId==='test-06'&&g.id==='t06-g056'&&!!officialEntry('test-06')&&
+  g.image==='assets/scenes/test-06/room-access.jpg'&&g.chartWidthPx===1000;
 }
 function scopedChartZoom(g){
  if(!officialReviewedChart(g)||!safeMedia(g.image)||!Number.isInteger(g.chartWidthPx)||g.chartWidthPx<600||g.chartWidthPx>2000)return '';
