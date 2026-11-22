@@ -1,0 +1,52 @@
+{
+  "id": "t07-q199",
+  "testId": "test-07",
+  "number": 199,
+  "part": 7,
+  "groupId": "t07-r-p7-12",
+  "revision": 1,
+  "topic": "work",
+  "difficulty": "intermediate",
+  "tags": [
+    "triple-passage",
+    "work"
+  ],
+  "prompt": "Why should the earlier export be kept as it is?",
+  "promptZh": "為什麼應保留先前匯出報表的原貌？",
+  "options": [
+    {
+      "id": "A",
+      "text": "To make it ready to attach to the customer summary",
+      "zh": "讓它可直接作為客戶摘要的附件",
+      "whyZh": "先前匯出報表應留作內部調查及日後比對，不是為了附在給客戶的摘要上。"
+    },
+    {
+      "id": "B",
+      "text": "To preserve the baseline for a later comparison if more evidence appears",
+      "zh": "若之後找到更多證據，可保有原始基準供比較",
+      "whyZh": "品質部同時說要讓較早的報表維持原樣，若找到更多來源日誌，再與新報表比對。"
+    },
+    {
+      "id": "C",
+      "text": "To help estimate missing data from the previous alert count",
+      "zh": "方便根據前一段的警示數估算缺失資料",
+      "whyZh": "指南明確禁止用相鄰資料列的數字估填，保留原報表是為了日後比對。"
+    },
+    {
+      "id": "D",
+      "text": "To make sure the confirmed zero can be copied into the earlier interval",
+      "zh": "確保能將確認的零複製到較早的區間",
+      "whyZh": "零只屬於確認連線的區間，不可套用到較早連線未確認的時段。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "品質部同時說要讓較早的報表維持原樣，若找到更多來源日誌，再與新報表比對。",
+  "evidence": "keep the earlier export untouched so we can compare it with a new one if a supervisor finds additional source logs.",
+  "vocabulary": [
+    {
+      "term": "untouched",
+      "zh": "保留原樣的",
+      "note": "指不覆寫原報表，即使之後會新增修正版。"
+    }
+  ]
+}

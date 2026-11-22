@@ -1,0 +1,52 @@
+{
+  "id": "t07-q200",
+  "testId": "test-07",
+  "number": 200,
+  "part": 7,
+  "groupId": "t07-r-p7-12",
+  "revision": 1,
+  "topic": "work",
+  "difficulty": "intermediate",
+  "tags": [
+    "triple-passage",
+    "work"
+  ],
+  "prompt": "What does Quality Operations ask to receive on Wednesday?",
+  "promptZh": "品質作業部要求在週三收到什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The unedited shift log attached to a new export",
+      "zh": "未修改的班次日誌，並附在新匯出報表中",
+      "whyZh": "要求的是客戶摘要，且不將內部班次日誌當作附件。"
+    },
+    {
+      "id": "B",
+      "text": "A combined log with an estimated alert count for the entire job",
+      "zh": "以估計警示數涵蓋整項工作的合併日誌",
+      "whyZh": "不得為缺少連線證據的區間填估計數字，也沒有要求合併日誌。"
+    },
+    {
+      "id": "C",
+      "text": "A revised customer summary without the internal shift log attached",
+      "zh": "修改後的客戶摘要，不附內部班次日誌",
+      "whyZh": "週三上午的訊息要求今天送交修改後摘要，並不得附上內部班次日誌。"
+    },
+    {
+      "id": "D",
+      "text": "A new customer summary only after additional logs are found",
+      "zh": "等找到額外日誌後再送一份新客戶摘要",
+      "whyZh": "找到日誌是未來可能的內部調查，不是今天送摘要的前置條件。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "週三上午的訊息要求今天送交修改後摘要，並不得附上內部班次日誌。",
+  "evidence": "Please send me a revised customer summary today, but do not attach the internal shift log to it.",
+  "vocabulary": [
+    {
+      "term": "revised",
+      "zh": "修改後的",
+      "note": "指在第一版基礎上更正說法，不表示附上所有底層紀錄。"
+    }
+  ]
+}

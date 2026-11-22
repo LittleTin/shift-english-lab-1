@@ -1,0 +1,52 @@
+{
+  "id": "t07-q198",
+  "testId": "test-07",
+  "number": 198,
+  "part": 7,
+  "groupId": "t07-r-p7-12",
+  "revision": 1,
+  "topic": "work",
+  "difficulty": "intermediate",
+  "tags": [
+    "triple-passage",
+    "work"
+  ],
+  "prompt": "How does the export represent a job that continues after a period without confirmed coverage?",
+  "promptZh": "如果一項工作跨過無法確認連線的區間，而且之後繼續執行，匯出報表會如何呈現？",
+  "options": [
+    {
+      "id": "A",
+      "text": "As one combined row with a single alert count for the whole job",
+      "zh": "用一列記錄整項工作的合計警示數",
+      "whyZh": "指南明確區分已確認區間與缺少監測資料，不能用一個數字合計未知部分。"
+    },
+    {
+      "id": "B",
+      "text": "As two rows, each reporting a numeric alert count",
+      "zh": "分成兩列，兩列都填數字形式的警示數",
+      "whyZh": "未確認區間不會有可核實的警示數；它會另列附註，而不是填數字。"
+    },
+    {
+      "id": "C",
+      "text": "As a coverage note with no row for the checked interval",
+      "zh": "只留下監測範圍附註，不列出已確認區間",
+      "whyZh": "日誌說仍為有監測資料的區間產生資料列，不會只留下附註。"
+    },
+    {
+      "id": "D",
+      "text": "As a row for the checked period and a separate note for the gap",
+      "zh": "已確認區間列為一筆，缺少資料的區間另列附註",
+      "whyZh": "班次日誌明確規定一列有資料的區間和一條無法確認監測範圍的附註；指南也要求分開報告。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "班次日誌明確規定一列有資料的區間和一條無法確認監測範圍的附註；指南也要求分開報告。",
+  "evidence": "For jobs that extend across an unconfirmed interval, the export creates one covered row and a separate note about unavailable coverage. / Report the duration of missing coverage separately.",
+  "vocabulary": [
+    {
+      "term": "a covered row",
+      "zh": "有監測資料的資料列",
+      "note": "covered 在此表示列出的時間區間有經確認的連線監測。"
+    }
+  ]
+}

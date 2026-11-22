@@ -1,0 +1,52 @@
+{
+  "id": "t07-q191",
+  "testId": "test-07",
+  "number": 191,
+  "part": 7,
+  "groupId": "t07-r-p7-11",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "triple-passage",
+    "daily"
+  ],
+  "prompt": "A customer has an unopened River box and would prefer a Hill box. Which step is permitted that morning?",
+  "promptZh": "一位顧客有一箱未拆封的 River 箱，想改換 Hill 箱。當天早上可以怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Ask the entrance desk to exchange just the pears.",
+      "zh": "請入口服務台只辦理梨子的交換。",
+      "whyZh": "入口服務台不能辦交換，交換台也只換整箱，不交換單一品項。"
+    },
+    {
+      "id": "B",
+      "text": "Open the River box to check it, then bring it to the exchange table.",
+      "zh": "先打開 River 箱檢查，再帶到交換台。",
+      "whyZh": "一般交換必須未拆封，開箱後就不符合交換條件。"
+    },
+    {
+      "id": "C",
+      "text": "Wait until an uncollected River reservation is released for an exchange.",
+      "zh": "等到未被領取的 River 箱釋出後用於交換。",
+      "whyZh": "顧客要的是 Hill，且未領預訂箱也不能拿來交換。"
+    },
+    {
+      "id": "D",
+      "text": "Bring the entire sealed River box to the exchange table and ask for a spare Hill box.",
+      "zh": "把未拆封的 River 整箱帶到交換台，請志工換一箱備用的 Hill 箱。",
+      "whyZh": "指南允許在交換台用未拆封的整箱換另一種，前提是有備用箱；當日訊息指出那裡有幾箱備用 Hill。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "指南允許在交換台用未拆封的整箱換另一種，前提是有備用箱；當日訊息指出那裡有幾箱備用 Hill。",
+  "evidence": "You may exchange a sealed box for the other kind at the exchange table if spare boxes are available. / There are a few spare Hill boxes at the exchange table.",
+  "vocabulary": [
+    {
+      "term": "a sealed box",
+      "zh": "未拆封的箱子",
+      "note": "sealed 表示封口或封條完整，符合這裡的整箱交換條件。"
+    }
+  ]
+}

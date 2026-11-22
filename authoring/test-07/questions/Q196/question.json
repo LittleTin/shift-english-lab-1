@@ -1,0 +1,52 @@
+{
+  "id": "t07-q196",
+  "testId": "test-07",
+  "number": 196,
+  "part": 7,
+  "groupId": "t07-r-p7-12",
+  "revision": 1,
+  "topic": "work",
+  "difficulty": "foundation",
+  "tags": [
+    "triple-passage",
+    "work"
+  ],
+  "prompt": "What does a dash in the alert count indicate?",
+  "promptZh": "警示數欄位中的破折號代表什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The receiver got exactly one alert.",
+      "zh": "接收器剛好收到一則警示。",
+      "whyZh": "已收到一則的情況應有數字，不以破折號表示。"
+    },
+    {
+      "id": "B",
+      "text": "All alerts were received by a different line.",
+      "zh": "所有警示都由另一條生產線收到。",
+      "whyZh": "破折號說的是連線未確認，並未指出訊息由別線接收。"
+    },
+    {
+      "id": "C",
+      "text": "No connection is confirmed for the interval.",
+      "zh": "該區間無法確認有連線。",
+      "whyZh": "指南直接定義破折號為沒有已確認連線的區間。"
+    },
+    {
+      "id": "D",
+      "text": "The device was online and sent no alerts.",
+      "zh": "裝置在連線狀態下沒有送出警示。",
+      "whyZh": "破折號不能證實有連線或沒送出；指南特別排除這種解讀。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "指南直接定義破折號為沒有已確認連線的區間。",
+  "evidence": "A dash means there is no confirmed connection for that interval. / It does not mean the device sent nothing.",
+  "vocabulary": [
+    {
+      "term": "a dash",
+      "zh": "破折號",
+      "note": "這裡是欄位狀態符號，不代表零。"
+    }
+  ]
+}

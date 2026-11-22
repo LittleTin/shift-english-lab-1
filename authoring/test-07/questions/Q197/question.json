@@ -1,0 +1,52 @@
+{
+  "id": "t07-q197",
+  "testId": "test-07",
+  "number": 197,
+  "part": 7,
+  "groupId": "t07-r-p7-12",
+  "revision": 1,
+  "topic": "work",
+  "difficulty": "advanced",
+  "tags": [
+    "triple-passage",
+    "work"
+  ],
+  "prompt": "Which statement is suitable for the revised customer summary?",
+  "promptZh": "哪項陳述適合放入修改後的客戶摘要？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The receiver recorded no alerts from 10:00 to 10:20; coverage from 09:40 to 10:00 was unconfirmed.",
+      "zh": "10:00 到 10:20 接收器未收到警示；09:40 到 10:00 的監測連線未確認。",
+      "whyZh": "Fern 從 09:40 開始，直到 10:00 的連線未確認；10:00 到 10:20 確認連線且未收到任何警示。"
+    },
+    {
+      "id": "B",
+      "text": "The receiver recorded two alerts from 09:40 to 10:20.",
+      "zh": "09:40 到 10:20 接收器收到兩則警示。",
+      "whyZh": "兩則是 09:00 到 09:30 的紀錄，在 Fern 開始之前，不能移用。"
+    },
+    {
+      "id": "C",
+      "text": "No alerts were sent at any point during Job Fern.",
+      "zh": "Fern 工作執行期間，沒有任何警示被送出。",
+      "whyZh": "較早部分沒有確認連線；能證實的是較晚的連線區間內接收器未收到警示，而非裝置整段都沒發出。"
+    },
+    {
+      "id": "D",
+      "text": "The receiver recorded zero alerts throughout the two intervals from 09:30 to 10:20.",
+      "zh": "09:30 到 10:20 的兩個區間內，接收器都沒有收到警示。",
+      "whyZh": "破折號表示連線未確認，不是零；而 Fern 也要到 09:40 才開始。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "Fern 從 09:40 開始，直到 10:00 的連線未確認；10:00 到 10:20 確認連線且未收到任何警示。",
+  "evidence": "Job Fern ran from 09:40 to 10:20. / 09:30–10:00 | No confirmed connection recorded; count —. / 10:00–10:20 | Receiver connected throughout; count 0. / State the period we actually checked and what the receiver got during that period.",
+  "vocabulary": [
+    {
+      "term": "unconfirmed",
+      "zh": "尚未確認的",
+      "note": "缺乏可證實連線的紀錄，不等於確定離線或確定未發警示。"
+    }
+  ]
+}
