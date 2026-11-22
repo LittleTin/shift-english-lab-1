@@ -1,0 +1,59 @@
+{
+  "id": "t08-q057",
+  "testId": "test-08",
+  "number": 57,
+  "part": 3,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "groupId": "t08-g056",
+  "prompt": "What most likely caused the problem?",
+  "promptZh": "最可能是什麼原因造成這個問題？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The daytime-mode switch was turned off.",
+      "zh": "白天模式的開關被關掉了。",
+      "whyZh": "男方確認開關仍在白天模式。"
+    },
+    {
+      "id": "B",
+      "text": "The new battery is too weak to move the hands.",
+      "zh": "新電池太弱，無法帶動指針。",
+      "whyZh": "沒有電力不足的跡象；換電池後只調了指針。"
+    },
+    {
+      "id": "C",
+      "text": "The back dial was left twelve hours off.",
+      "zh": "背面的轉盤設定差了十二小時。",
+      "whyZh": "轉盤用來區分上午和下午；換電池後沒把它調對，才會在夜間響。"
+    },
+    {
+      "id": "D",
+      "text": "The clock was moved into the hall.",
+      "zh": "鐘被搬到走廊。",
+      "whyZh": "走廊是鐘所在的位置，不是報時設定異常的原因。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "轉盤用來區分上午和下午；換電池後沒把它調對，才會在夜間響。",
+  "evidence": "The switch is still on daytime mode. I changed the battery yesterday, and I only set the hands. The little dial at the back tells it whether it’s morning or evening. I must have left that twelve hours off.",
+  "evidenceSpans": [
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "The switch is still on daytime mode. I changed the battery yesterday, and I only set the hands. The little dial at the back tells it whether it’s morning or evening. I must have left that twelve hours off."
+    }
+  ],
+  "tags": [
+    "daily",
+    "conversation"
+  ],
+  "revision": 1,
+  "vocabulary": [
+    {
+      "term": "twelve hours off",
+      "zh": "設定差了十二小時",
+      "note": "off 在此指設定有偏差；這會顛倒上午與下午。"
+    }
+  ]
+}

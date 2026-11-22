@@ -1,0 +1,64 @@
+{
+  "id": "t08-q055",
+  "testId": "test-08",
+  "number": 55,
+  "part": 3,
+  "topic": "workplace",
+  "difficulty": "intermediate",
+  "groupId": "t08-g053",
+  "prompt": "Suppose the theatre asks for the receipt before the parcel is deposited. Can the kiosk meet the new request?",
+  "promptZh": "假設劇場要求在投入包裹前先提供收據，自助機能配合這項新要求嗎？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Yes, as long as it has the theatre’s name.",
+      "zh": "可以，只要有劇場的名稱。",
+      "whyZh": "自助機的收據雖可列名稱，卻不能在投入包裹前印出。"
+    },
+    {
+      "id": "B",
+      "text": "Yes, because pickup will not be until tomorrow.",
+      "zh": "可以，因為快遞要等到明天才收。",
+      "whyZh": "快遞何時收件不影響印收據的先後順序。"
+    },
+    {
+      "id": "C",
+      "text": "No, because the kiosk cannot print the receipt until the courier collects the parcel.",
+      "zh": "不行，因為自助機要等快遞收走包裹後才能印收據。",
+      "whyZh": "不必等快遞收走，投入包裹時就能取得收據。"
+    },
+    {
+      "id": "D",
+      "text": "No, because the kiosk cannot print the receipt until the parcel is put in.",
+      "zh": "不行，因為包裹投入後，自助機才能印出收據。",
+      "whyZh": "收據只能在投入包裹後印出，和劇場的新要求順序相反。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "收據只能在投入包裹後印出，和劇場的新要求順序相反。",
+  "evidence": "It prints a dated receipt with the recipient’s name, but only after you drop off the parcel. The courier emptied it at four, so anything going in now won’t leave until tomorrow. / That may work for the theatre, then. They said the parcel could leave tomorrow, as long as we send the receipt before six tonight.",
+  "evidenceSpans": [
+    {
+      "turn": 4,
+      "speaker": "M",
+      "exactQuote": "It prints a dated receipt with the recipient’s name, but only after you drop off the parcel. The courier emptied it at four, so anything going in now won’t leave until tomorrow."
+    },
+    {
+      "turn": 5,
+      "speaker": "F",
+      "exactQuote": "That may work for the theatre, then. They said the parcel could leave tomorrow, as long as we send the receipt before six tonight."
+    }
+  ],
+  "tags": [
+    "workplace",
+    "conversation"
+  ],
+  "revision": 1,
+  "vocabulary": [
+    {
+      "term": "drop off the parcel",
+      "zh": "交寄包裹；將包裹投入",
+      "note": "此處指把包裹投入快遞自助機，完成投件後才出收據。"
+    }
+  ]
+}

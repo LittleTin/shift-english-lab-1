@@ -1,0 +1,59 @@
+{
+  "id": "t08-q056",
+  "testId": "test-08",
+  "number": 56,
+  "part": 3,
+  "topic": "daily",
+  "difficulty": "foundation",
+  "groupId": "t08-g056",
+  "prompt": "What problem does the woman report?",
+  "promptZh": "女方說遇到什麼問題？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The clock chimes during the night.",
+      "zh": "鐘在夜裡會報時。",
+      "whyZh": "她一開頭就說走廊的鐘半夜會響。"
+    },
+    {
+      "id": "B",
+      "text": "The hands have stopped moving.",
+      "zh": "指針停止移動。",
+      "whyZh": "男方說已調過指針，女方抱怨的是夜間報時。"
+    },
+    {
+      "id": "C",
+      "text": "The clock has fallen off the wall.",
+      "zh": "鐘從牆上掉下來了。",
+      "whyZh": "對話沒有提到鐘掉下來。"
+    },
+    {
+      "id": "D",
+      "text": "The chime is too quiet during the day.",
+      "zh": "白天報時的聲音太小。",
+      "whyZh": "問題是夜裡響，不是白天音量太小。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "她一開頭就說走廊的鐘半夜會響。",
+  "evidence": "The clock in the hall chimes in the middle of the night. I thought we’d set it to ring only during the day.",
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "F",
+      "exactQuote": "The clock in the hall chimes in the middle of the night. I thought we’d set it to ring only during the day."
+    }
+  ],
+  "tags": [
+    "daily",
+    "conversation"
+  ],
+  "revision": 1,
+  "vocabulary": [
+    {
+      "term": "chimes",
+      "zh": "鳴響；報時",
+      "note": "用於鐘發出報時聲，不代表指針停擺。"
+    }
+  ]
+}

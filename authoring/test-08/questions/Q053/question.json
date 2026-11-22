@@ -1,0 +1,74 @@
+{
+  "id": "t08-q053",
+  "testId": "test-08",
+  "number": 53,
+  "part": 3,
+  "topic": "workplace",
+  "difficulty": "advanced",
+  "groupId": "t08-g053",
+  "prompt": "The museum parcel is ready before five. Which plan meets both recipients’ requirements?",
+  "promptZh": "博物館的包裹五點前備妥。哪個做法能同時滿足兩位收件方的要求？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Put both parcels on the signed van list.",
+      "zh": "把兩件都列上廂型車的簽收清單。",
+      "whyZh": "列名並簽署的清單能證明今天寄出，卻不能提供劇場要的載有自身名稱的收據。"
+    },
+    {
+      "id": "B",
+      "text": "Use the kiosk for the museum parcel and the van for the theatre parcel.",
+      "zh": "博物館的包裹用自助機，劇場的包裹用廂型車。",
+      "whyZh": "用自助機無法讓博物館的包裹今天寄出；廂型車也不能開立劇場所需的收據。"
+    },
+    {
+      "id": "C",
+      "text": "Put the museum parcel on the van list for the driver to sign, and send the theatre its kiosk receipt before six.",
+      "zh": "把博物館的包裹列在由廂型車司機簽署的清單上；六點前把自助機開出的收據寄給劇場。",
+      "whyZh": "同一張清單列出博物館包裹、由司機簽署，就能證明今天寄出。六點前將劇場包裹投入自助機並把具名收據發出，包裹明天出發也符合要求。"
+    },
+    {
+      "id": "D",
+      "text": "Drop both parcels at the kiosk and send both receipts tonight.",
+      "zh": "把兩件都投入自助機，今晚寄出兩張收據。",
+      "whyZh": "劇場可以接受這個做法，但博物館要證明今天寄出，自助機的包裹會等到明天才寄出。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "同一張清單列出博物館包裹、由司機簽署，就能證明今天寄出。六點前將劇場包裹投入自助機並把具名收據發出，包裹明天出發也符合要求。",
+  "evidence": "The museum wants proof that its membership cards left today. The theatre’s parcel needs something more: a dated receipt that names the theatre. The post office counter has already closed. / Our van leaves at five. The driver signs once for each bag, not for each parcel. If the bag list names a parcel and the driver signs that same list, we can prove it left today. The van service can’t issue receipts to individual recipients. / It prints a dated receipt with the recipient’s name, but only after you drop off the parcel. The courier emptied it at four, so anything going in now won’t leave until tomorrow. / That may work for the theatre, then. They said the parcel could leave tomorrow, as long as we send the receipt before six tonight.",
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "F",
+      "exactQuote": "The museum wants proof that its membership cards left today. The theatre’s parcel needs something more: a dated receipt that names the theatre. The post office counter has already closed."
+    },
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "Our van leaves at five. The driver signs once for each bag, not for each parcel. If the bag list names a parcel and the driver signs that same list, we can prove it left today. The van service can’t issue receipts to individual recipients."
+    },
+    {
+      "turn": 4,
+      "speaker": "M",
+      "exactQuote": "It prints a dated receipt with the recipient’s name, but only after you drop off the parcel. The courier emptied it at four, so anything going in now won’t leave until tomorrow."
+    },
+    {
+      "turn": 5,
+      "speaker": "F",
+      "exactQuote": "That may work for the theatre, then. They said the parcel could leave tomorrow, as long as we send the receipt before six tonight."
+    }
+  ],
+  "tags": [
+    "workplace",
+    "conversation"
+  ],
+  "revision": 1,
+  "vocabulary": [
+    {
+      "term": "dated receipt",
+      "zh": "載有日期的收據",
+      "note": "與司機簽署的袋件清單不同；此處劇場還要求收據列出劇場名稱。"
+    }
+  ]
+}

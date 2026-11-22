@@ -1,0 +1,64 @@
+{
+  "id": "t08-q058",
+  "testId": "test-08",
+  "number": 58,
+  "part": 3,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "groupId": "t08-g056",
+  "prompt": "How does the man expect to know whether his adjustment worked?",
+  "promptZh": "男方要怎麼確認調整有沒有效？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The clock will stay silent both day and night.",
+      "zh": "鐘白天和晚上都不會響。",
+      "whyZh": "完全關掉報時才會始終無聲，他想保留白天報時。"
+    },
+    {
+      "id": "B",
+      "text": "The clock will ring at six this evening but not overnight.",
+      "zh": "鐘會在今天傍晚六點響，但夜裡不會響。",
+      "whyZh": "轉盤設定正確時，傍晚六點會照常報時，夜裡則保持安靜。"
+    },
+    {
+      "id": "C",
+      "text": "The hands will move ahead by twelve hours.",
+      "zh": "指針會往前走十二小時。",
+      "whyZh": "要調的是背面的轉盤，不是讓指針快轉十二小時。"
+    },
+    {
+      "id": "D",
+      "text": "The daytime switch will turn off by itself.",
+      "zh": "白天模式的開關會自己關掉。",
+      "whyZh": "他要修正轉盤，開關會繼續維持白天模式。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "轉盤設定正確時，傍晚六點會照常報時，夜裡則保持安靜。",
+  "evidence": "Can we just switch the chime off? / You can, but it won’t ring at all then. Let me fix the dial first. If it’s right, it should ring at six this evening and stay quiet overnight.",
+  "evidenceSpans": [
+    {
+      "turn": 3,
+      "speaker": "F",
+      "exactQuote": "Can we just switch the chime off?"
+    },
+    {
+      "turn": 4,
+      "speaker": "M",
+      "exactQuote": "You can, but it won’t ring at all then. Let me fix the dial first. If it’s right, it should ring at six this evening and stay quiet overnight."
+    }
+  ],
+  "tags": [
+    "daily",
+    "conversation"
+  ],
+  "revision": 1,
+  "vocabulary": [
+    {
+      "term": "stay quiet overnight",
+      "zh": "夜裡保持安靜",
+      "note": "鐘在夜間不報時，不表示白天也關掉報時。"
+    }
+  ]
+}
