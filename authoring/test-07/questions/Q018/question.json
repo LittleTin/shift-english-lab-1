@@ -1,0 +1,48 @@
+{
+  "id": "t07-q018",
+  "testId": "test-07",
+  "number": 18,
+  "part": 2,
+  "topic": "work",
+  "difficulty": "intermediate",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽錄音，選出最適當的回應。",
+  "spokenPrompt": "The client wants shipment totals in pieces, not cartons.",
+  "spokenPromptZh": "客戶要的出貨總數是以件計，不是以箱計。",
+  "options": [
+    {
+      "id": "A",
+      "text": "The cartons arrived this morning.",
+      "zh": "紙箱今天早上送到。",
+      "whyZh": "紙箱到貨時間，不會處理總數使用哪個計量單位。"
+    },
+    {
+      "id": "B",
+      "text": "I will redo the summary using the item counts.",
+      "zh": "我會改用件數重做摘要。",
+      "whyZh": "以個別品項的件數重算，直接配合改用件而不用箱的要求。"
+    },
+    {
+      "id": "C",
+      "text": "Let’s put the total on the last page.",
+      "zh": "把總數列到最後一頁吧。",
+      "whyZh": "位置改到最後一頁，並沒有更改總數的計量單位。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "以個別品項的件數重算，直接配合改用件而不用箱的要求。",
+  "evidence": "The client wants shipment totals in pieces, not cartons. / I will redo the summary using the item counts.",
+  "tags": [
+    "work",
+    "question_response"
+  ],
+  "revision": 1,
+  "groupId": "t07-g018",
+  "vocabulary": [
+    {
+      "term": "in pieces",
+      "zh": "以件計",
+      "note": "in 指採用的單位；pieces 在這裡指個別物品，不是碎片。"
+    }
+  ]
+}
