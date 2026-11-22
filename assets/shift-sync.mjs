@@ -67,15 +67,20 @@ export async function combineCompletedSessionId(namespace, sourceId) {
   return [h.slice(0, 8), h.slice(8, 12), h.slice(12, 16), h.slice(16, 20), h.slice(20)].join('-');
 }
 export function createShiftSync({url, publishableKey, fetchImpl = globalThis.fetch, allowLocal = false,
-                                 now = Date.now} = {}) {
+                                 now = Date.now, onSessionChange = () => {}} = {}) {
   const origin = originOf(url, allowLocal), apikey = publicKey(publishableKey);
-  if (typeof fetchImpl !== 'function' || typeof now !== 'function') fail('invalid_config');
+  if (typeof fetchImpl !== 'function' || typeof now !== 'function' || typeof onSessionChange !== 'function') fail('invalid_config');
   const cursorScopes = new WeakMap();
   let generation = 0, authEpoch = 0, current = null, scope = null, refreshing = null;
+  function notifySession() {
+    // Persist only the rotating refresh handle, never the access token or password.
+    try { onSessionChange(current?{projectOrigin:origin,userId:current.userId,refreshToken:current.refreshToken}:null); } catch {}
+  }
   function clear() {
     generation++;
     authEpoch++;
     current = scope = refreshing = null;
+    notifySession();
   }
   function requireScope(expected) {
     if (!scope || expected !== scope) fail('stale_scope');
@@ -85,6 +90,7 @@ export function createShiftSync({url, publishableKey, fetchImpl = globalThis.fet
   function install(s) {
     current = s;
     scope = Object.freeze({userId: s.userId, generation});
+    notifySession();
     return scope;
   }
   function authResponse(data) {
@@ -165,6 +171,7 @@ export function createShiftSync({url, publishableKey, fetchImpl = globalThis.fet
       requireScope(expected);
       if (next.userId !== old.userId) { clear(); fail('auth_required'); }
       current = next;
+      notifySession();
       return expected;
     })();
     refreshing = task;
@@ -191,6 +198,19 @@ export function createShiftSync({url, publishableKey, fetchImpl = globalThis.fet
       generation++;
       return install(s);
     } catch (e) { checkEpoch(ticket); throw e; }
+  }
+  async function restoreWithRefresh(saved) {
+    if (scope) fail('already_signed_in');
+    if (!obj(saved) || saved.projectOrigin !== origin || !token(saved.refreshToken)) fail('invalid_auth_state');
+    const owner = uuid(saved.userId,'invalid_auth_state'), ticket = ++authEpoch;
+    try {
+      const next = authResponse(await request('/auth/v1/token?grant_type=refresh_token',{
+        method:'POST',body:{refresh_token:saved.refreshToken},context:'refresh'}));
+      checkEpoch(ticket);
+      if (next.userId !== owner) fail('auth_required');
+      generation++;
+      return install(next);
+    } catch (error) { checkEpoch(ticket); throw error; }
   }
   function exportAuthState() { return current ? {...current,projectOrigin:origin} : null; }
   async function logout() {
@@ -262,6 +282,27 @@ export function createShiftSync({url, publishableKey, fetchImpl = globalThis.fet
     if (nextCursor) cursorScopes.set(nextCursor,expected);
     return {rows,nextCursor};
   }
-  return Object.freeze({signInWithPassword,changePassword,refresh,logout,getScope:()=>scope,clear,restore,
-    exportAuthState,saveCompletedSession,listCompletedSessions});
+  async function readActiveCheckpoint(expected) {
+    requireScope(expected);
+    const rows=await authenticated('/rest/v1/shift_active_checkpoint?select=revision,mutation_id,checkpoint,updated_at',{},expected);
+    requireScope(expected);
+    if(!Array.isArray(rows)||rows.length>1)fail('invalid_response');
+    if(!rows.length)return {revision:0,mutationId:null,checkpoint:null};
+    const r=rows[0];
+    if(!obj(r)||!Number.isSafeInteger(r.revision)||r.revision<1||
+       !validTime(r.updated_at)||(r.checkpoint!==null&&(!obj(r.checkpoint)||r.checkpoint.version!==1))) fail('invalid_response');
+    return {revision:r.revision,mutationId:uuid(r.mutation_id,'invalid_response'),checkpoint:r.checkpoint};
+  }
+  async function writeActiveCheckpoint({revision,mutationId,checkpoint}, expected) {
+    requireScope(expected);
+    if(!Number.isSafeInteger(revision)||revision<0||(checkpoint!==null&&(!obj(checkpoint)||checkpoint.version!==1)))fail('invalid_checkpoint');
+    const mutation=uuid(mutationId,'invalid_checkpoint');
+    const status=await authenticated('/rest/v1/rpc/shift_write_active_checkpoint',{
+      method:'POST',body:{p_expected_revision:revision,p_mutation_id:mutation,p_checkpoint:checkpoint}},expected);
+    requireScope(expected);
+    if(!['saved','already_saved','conflict','already_completed'].includes(status))fail('invalid_response');
+    return status;
+  }
+  return Object.freeze({signInWithPassword,changePassword,refresh,logout,getScope:()=>scope,clear,restore,restoreWithRefresh,
+    exportAuthState,saveCompletedSession,listCompletedSessions,readActiveCheckpoint,writeActiveCheckpoint});
 }

@@ -188,6 +188,95 @@ class Fixture:
         rows.sort(key=pair,reverse=order.endswith(".desc"))
         return 200,[{k:row[k] for k in columns} for row in rows[:limit]]
 
+GET_ACTIVE = '/rest/v1/shift_active_checkpoint'
+WRITE_ACTIVE = '/rest/v1/rpc/shift_write_active_checkpoint'
+ACTIVE_COLUMNS = ('revision', 'mutation_id', 'checkpoint', 'updated_at')
+ARGS = {'p_expected_revision', 'p_mutation_id', 'p_checkpoint'}
+FIELDS = {'version','id','title','mode','questionIds','answers','submitted','startedAt','testIds','index',
+          'contentVersion','deadline','examVersion','audioEdition','examPhase','listeningStartedAt','sectionDeadline',
+          'listeningRemaining','readingStartsOnReturn','audioUsed','practiceMedia'}
+REQUIRED = {'version','id','title','mode','questionIds','answers','submitted','startedAt','testIds','index'}
+
+class ActiveFixture(Fixture):
+    """Mimic route and conflict behavior only; the disposable SQL tests enforce RLS/shape."""
+    def __init__(self, *a, **kw):
+        super().__init__(*a, **kw)
+        self.active = {}
+
+    def row(self, rev, mut, checkpoint):
+        d = iso(datetime.fromtimestamp(self.clock(), timezone.utc))
+        return dict(revision=rev,mutation_id=mut,checkpoint=checkpoint,updated_at=d)
+
+    def _api(self, method, path, q, body, headers):
+        if path == FAULT and body.get('path') in (GET_ACTIVE, WRITE_ACTIVE):
+            if method != 'POST' or headers.get('x-shift-fixture-control') != '1':
+                raise HttpError(404,'not_found')
+            if body.get('status') not in (401,429,503):
+                raise HttpError(400,'invalid_fault')
+            self.faults[body['path']]=body['status']
+            return 200,{"queued":True}
+        bearer=headers.get("authorization","").removeprefix("Bearer ")
+        if path not in (GET_ACTIVE, WRITE_ACTIVE):
+            status, value=super()._api(method,path,q,body,headers)
+            if method=='POST' and path==RPC and value=='inserted':
+                owner=self.owner(bearer)
+                saved=self.active.get(owner)
+                checkpoint=(saved or {}).get('checkpoint')
+                if checkpoint and body['p_id'].lower()==checkpoint['id']:
+                    self.active[owner]=self.row(saved['revision']+1,str(uuid.uuid4()),None)
+            return status,value
+
+        if headers.get("apikey")!=KEY:
+            raise HttpError(401,"fixture_key_required")
+        if path in self.faults:
+            raise HttpError(self.faults.pop(path),"injected_fixture_fault")
+        owner=self.owner(bearer)
+        saved=self.active.get(owner)
+        if path == GET_ACTIVE and method == 'GET':
+            if set(q)-{'select','limit'} or any(len(v)!=1 for v in q.values()):
+                raise HttpError(400,'unsupported_filter')
+            projection=q.get('select',['*'])[0]
+            requested=ACTIVE_COLUMNS if projection=='*' else projection.split(',')
+            if not set(requested)<=set(ACTIVE_COLUMNS) or str(q.get('limit',['1'])[0]) not in ('1','2','10','100'):
+                raise HttpError(400,'unsupported_filter')
+            return 200,[{k:saved[k] for k in requested}] if saved else []
+
+        if path != WRITE_ACTIVE or method != 'POST':
+            raise HttpError(405,'method_not_allowed')
+        if q or set(body)!=ARGS:
+            raise HttpError(400,'invalid_checkpoint')
+        expect=body['p_expected_revision']
+        if type(expect) is not int or not 0<=expect<9007199254740991:
+            raise HttpError(400,'invalid_checkpoint')
+        mut=str(uuid.UUID(body['p_mutation_id']))
+        ck=body['p_checkpoint']
+        if ck is not None:
+            if not (type(ck) is dict and REQUIRED<=set(ck)<=FIELDS and type(ck['version']) is int and ck['version']==1
+                and len(json.dumps(ck,ensure_ascii=False).encode())<=CHUNK
+                and ck['mode'] in ('practice','exam') and type(ck['questionIds']) is list
+                and type(ck['answers']) is dict and 0<len(ck['questionIds'])<=5000
+                and type(ck['index']) is int and 0<=ck['index']<len(ck['questionIds'])
+                and type(ck['id']) is str and str(uuid.UUID(ck['id']))==ck['id']):
+                raise HttpError(400,'invalid_checkpoint')
+            if 'practiceMedia' in ck:
+                media=ck['practiceMedia']
+                if not (ck['mode']=='practice' and type(media) is dict and set(media)=={'groupId','offset','rate','paused'}
+                        and type(media['groupId']) is str and re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._:-]{0,95}',media['groupId'])
+                        and media['groupId'] not in ('constructor','prototype','__proto__')
+                        and type(media['offset']) in (int,float) and 0<=media['offset']<=86400
+                        and type(media['rate']) in (int,float) and media['rate'] in (0.75,1,1.25)
+                        and type(media['paused']) is bool):
+                    raise HttpError(400,'invalid_checkpoint')
+        if saved and saved['mutation_id']==mut:
+            return 200,'already_saved' if saved['revision']==expect+1 and payload_equal(saved['checkpoint'],ck) else 'conflict'
+        if ck and (owner,ck['id']) in self.rows:
+            return 200,'already_completed'
+        if (saved['revision'] if saved else 0)!=expect:
+            return 200,'conflict'
+        self.active[owner]=self.row(expect+1,mut,ck)
+        return 200,'saved'
+
+
 def handler_for(root,state):
     class Handler(SimpleHTTPRequestHandler):
         def log_message(self,*_):
@@ -295,7 +384,7 @@ def main():
     root=a.candidate.resolve(strict=True)
     if not root.is_dir() or not (root/"index.html").is_file() or not 1<=a.ttl<=3600:
         ap.error("candidate must have index.html and TTL must be 1–3600")
-    with ThreadingHTTPServer(("127.0.0.1",a.port),handler_for(root,Fixture(a.ttl))) as server:
+    with ThreadingHTTPServer(("127.0.0.1",a.port),handler_for(root,ActiveFixture(a.ttl))) as server:
         print(f"SHIFT synthetic only: http://127.0.0.1:{server.server_port}/",flush=True)
         server.serve_forever()
 

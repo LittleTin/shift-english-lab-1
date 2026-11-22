@@ -47,13 +47,15 @@ async function wait(f,msg){
  for(let i=0;i<160;i++){const value=await f();if(value)return value;await sleep(30)}
  throw Error(msg);
 }
-const data=async p=>{click(p,'nav-data');await wait(()=>p.d.querySelector('#account-sync'),'Missing account settings')};
+const data=async p=>{click(p,'nav-data');await wait(()=>p.d.querySelector('#account-sync'),'Missing account settings');await sleep(10)};
 function submit(p,selector,values){
  const f=p.d.querySelector(selector);assert.ok(f,selector);
  for(const [name,value] of Object.entries(values)){const el=f.querySelector('[name='+name+']');assert.ok(el,name);el.value=value}
+ assert.ok(f.checkValidity(),Array.from(f.elements).filter(x=>x.validationMessage).map(x=>x.name+': '+x.validationMessage).join('; '));
  f.dispatchEvent(new p.w.Event('submit',{bubbles:true,cancelable:true}));return f;
 }
 async function signIn(p,[email,password]){
+ await sleep(10);
  submit(p,'#shift-sync-login-form',{email,password});
  await wait(()=>p.d.querySelector('[data-action="sync-logout"]'),'Sign-in failed');
 }
@@ -159,11 +161,18 @@ function result(s){return [s.sessions.length,s.attempts.length,Object.values(s.s
   console.log('PASS wrong current password, change, old login rejected, new login works, no other-account history');
   await signIn(b,A);await listWait(b,1,1);
   const existing=Array.from({length:b.w.sessionStorage.length},(_,i)=>b.w.sessionStorage.key(i)).map(k=>[k,b.w.sessionStorage.getItem(k)]);
-  assert.ok(existing.every(([key,value])=>!/auth|token|InitialPass|ReplacementPass|WrongPass/i.test(key+value)));
+  const remembered=existing.find(([key])=>key.startsWith('shift:/shift-english-lab-1/:auth-refresh/'));
+  assert.ok(remembered);
+  assert.deepEqual(Object.keys(JSON.parse(remembered[1])).sort(),['projectOrigin','refreshToken','userId','version']);
+  assert.ok(existing.every(([key,value])=>!/accessToken|InitialPass|ReplacementPass|WrongPass/i.test(key+value)));
+  // This exercise models replacing the page in one tab, not concurrent pages using one refresh handle.
+  b.dom.window.close();
   reload=make({db:b.db,existing});await wait(()=>reload.d.querySelector('[data-action="nav-data"]'),'reload boot');
-  await data(reload);assert.ok(reload.d.querySelector('#shift-sync-login-form'));
-  await signIn(reload,A);await listWait(reload,1,1);
-  console.log('PASS reload stores no credentials, requires sign-in, then restores account history');
+  await data(reload);await wait(()=>reload.d.querySelector('[data-action="sync-logout"]'),'reload should re-verify sign-in');
+  await listWait(reload,1,1);
+  assert.match(text(reload,'#shift-auth-badge'),/Signed in/);
+  assert.ok(reload.wire.some(([m,path,grant,s])=>m==='POST'&&path==='/auth/v1/token'&&grant==='refresh_token'&&s===200));
+  console.log('PASS same-tab reload re-verifies, stores no access token or password, then restores the same account workspace');
   const fault=await fetch(host+'/__shift_qa/fault',{method:'POST',headers:{'X-Shift-Fixture-Control':'1','Content-Type':'application/json'},body:JSON.stringify({path:'/rest/v1/rpc/shift_save_completed_session',status:503})});
   assert.ok(fault.ok);await complete(a);await data(a);
   await wait(()=>text(a,'#shift-sync-status').startsWith('Unable to connect.'),'server error shown');
@@ -199,7 +208,7 @@ function result(s){return [s.sessions.length,s.attempts.length,Object.values(s.s
   assert.equal(es[ownExam.key].sessions.length,4);
   // Another tab has a newer checkpoint; the tab holding the older active exam must not overwrite it when pulling new history.
   const later=await installExam(ex,owner,{variant:'account-newer',questionIndex:122,answers:2});
-  await complete(b);await listWait(b,5,5);
+  await complete(reload);await listWait(reload,5,5);
   click(ex,'sync-now');
   await listWait(ex,5,5);
   es=await snapshot(ex);assert.deepEqual(es[later.key].active,later.exam);
