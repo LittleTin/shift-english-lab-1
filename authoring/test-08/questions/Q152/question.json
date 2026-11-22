@@ -1,0 +1,62 @@
+{
+  "number": 152,
+  "difficulty": "intermediate",
+  "prompt": "A resident will be out all day Monday. The only window to be cleaned faces the courtyard. What should the resident do?",
+  "promptZh": "一位住戶星期一整天外出，唯一要清潔的窗戶面向中庭。住戶應怎麼做？",
+  "answer": "A",
+  "options": [
+    {
+      "text": "Close the window by eight without making a separate appointment.",
+      "zh": "早上八點前關窗，不必另行預約。",
+      "whyZh": "中庭窗不必有人在家，早上八點前關好即可。",
+      "id": "A"
+    },
+    {
+      "text": "Leave a key so the crew can close the window",
+      "zh": "留下鑰匙，讓清潔人員關窗",
+      "whyZh": "不能使用留在辦公室的備用鑰匙，且關窗是住戶應做的。",
+      "id": "B"
+    },
+    {
+      "text": "Ask for a second courtyard appointment",
+      "zh": "要求另排一次中庭清潔",
+      "whyZh": "住戶無須在場，不必改約。",
+      "id": "C"
+    },
+    {
+      "text": "Sign up for a balcony visit",
+      "zh": "登記陽台清潔",
+      "whyZh": "窗戶朝中庭，不適用陽台清潔安排。",
+      "id": "D"
+    }
+  ],
+  "explanationZh": "中庭窗不必有人在家，早上八點前關好即可。",
+  "evidence": "You don't have to be home for a courtyard window. Please close it by eight in the morning.",
+  "evidenceSpans": [
+    {
+      "startChar": 291,
+      "endChar": 381,
+      "sourceField": "passage",
+      "exactQuote": "You don't have to be home for a courtyard window. Please close it by eight in the morning.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q152",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-02",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "single-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "courtyard",
+      "zh": "中庭",
+      "note": "這類窗戶可由中庭清潔，住戶不用在家。"
+    }
+  ]
+}

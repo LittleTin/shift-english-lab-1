@@ -1,0 +1,78 @@
+{
+  "number": 158,
+  "difficulty": "intermediate",
+  "prompt": "A customer wants the lamp delivered and asks for a written estimate, but says nothing about installation. What should staff do?",
+  "promptZh": "顧客想配送燈具，也要求書面估價，但未提安裝。工作人員應怎麼做？",
+  "answer": "B",
+  "options": [
+    {
+      "text": "Add installation because delivery was requested.",
+      "zh": "把安裝費加進去，因為顧客要求配送。",
+      "whyZh": "配送不能當作要求安裝的依據。",
+      "id": "A"
+    },
+    {
+      "text": "Leave installation off the estimate unless the customer asks for it.",
+      "zh": "估價單先不列安裝，除非顧客提出要求。",
+      "whyZh": "安裝需顧客主動詢問才列入；目前只有配送需求。",
+      "id": "B"
+    },
+    {
+      "text": "Use the repair record number to estimate installation.",
+      "zh": "用維修紀錄編號估算安裝費。",
+      "whyZh": "維修紀錄與安裝估價無關。",
+      "id": "C"
+    },
+    {
+      "text": "Treat the card beside the sample as an installation-inclusive price.",
+      "zh": "將樣品旁的價卡當成含安裝的價格。",
+      "whyZh": "價卡只標燈具單買價格，安裝另計。",
+      "id": "D"
+    }
+  ],
+  "explanationZh": "安裝需顧客主動詢問才列入；目前只有配送需求。",
+  "evidence": "The price card beside the sample is accurate for a lamp sold on its own. / Installation is offered separately. / itemize installation only if the customer asked for it; never add it simply because the lamp will be delivered.",
+  "evidenceSpans": [
+    {
+      "startChar": 671,
+      "endChar": 743,
+      "sourceField": "passage",
+      "exactQuote": "The price card beside the sample is accurate for a lamp sold on its own.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    },
+    {
+      "startChar": 744,
+      "endChar": 779,
+      "sourceField": "passage",
+      "exactQuote": "Installation is offered separately.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    },
+    {
+      "startChar": 836,
+      "endChar": 947,
+      "sourceField": "passage",
+      "exactQuote": "itemize installation only if the customer asked for it; never add it simply because the lamp will be delivered.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q158",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-03",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "single-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "itemize",
+      "zh": "逐項列出",
+      "note": "此處指有請求安裝時，才在估價單上把安裝單獨列項。"
+    }
+  ]
+}

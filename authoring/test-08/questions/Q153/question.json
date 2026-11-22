@@ -1,0 +1,70 @@
+{
+  "number": 153,
+  "difficulty": "foundation",
+  "prompt": "What should a resident expect after selecting “both” on the signup sheet?",
+  "promptZh": "住戶在登記表選「兩天皆可」後，接下來會怎樣？",
+  "answer": "D",
+  "options": [
+    {
+      "text": "Two visits scheduled in one message",
+      "zh": "同一則簡訊內安排兩次清潔",
+      "whyZh": "兩天皆可只是任一天有空，不是要約兩次。",
+      "id": "A"
+    },
+    {
+      "text": "A visit assigned automatically to Monday morning",
+      "zh": "自動安排星期一上午清潔",
+      "whyZh": "公告只說會排一個時段，未保證哪一天或上午。",
+      "id": "B"
+    },
+    {
+      "text": "A request to choose a day after the crew arrives",
+      "zh": "等清潔人員到達後才請住戶選日期",
+      "whyZh": "星期日晚上就會通知，不會到場才選。",
+      "id": "C"
+    },
+    {
+      "text": "One time sent by text on Sunday evening",
+      "zh": "星期日晚上收到一則簡訊，通知一個清潔時段",
+      "whyZh": "選兩天都可仍只排一個時段，通知方式為星期日晚上傳簡訊。",
+      "id": "D"
+    }
+  ],
+  "explanationZh": "選兩天都可仍只排一個時段，通知方式為星期日晚上傳簡訊。",
+  "evidence": "This means you can be home on either day, not that you need two visits. / We will send you one time by text on Sunday evening.",
+  "evidenceSpans": [
+    {
+      "startChar": 561,
+      "endChar": 632,
+      "sourceField": "passage",
+      "exactQuote": "This means you can be home on either day, not that you need two visits.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    },
+    {
+      "startChar": 633,
+      "endChar": 685,
+      "sourceField": "passage",
+      "exactQuote": "We will send you one time by text on Sunday evening.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q153",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-02",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "single-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "either day",
+      "zh": "任一天",
+      "note": "兩天當中任選一天，不表示兩次。"
+    }
+  ]
+}

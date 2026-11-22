@@ -1,0 +1,62 @@
+{
+  "number": 148,
+  "difficulty": "foundation",
+  "prompt": "A mentor watches a trainee carry out a task and gives feedback. Which entry fits the note?",
+  "promptZh": "導師觀察受訓者執行工作並給予回饋。應如何登記？",
+  "answer": "D",
+  "options": [
+    {
+      "text": "Regular work, because the trainee did the task",
+      "zh": "一般工作，因為實際操作的是受訓者",
+      "whyZh": "導師觀察並給回饋，即使不是自己操作也算教學。",
+      "id": "A"
+    },
+    {
+      "text": "A handover, because the trainee took over",
+      "zh": "交接，因為受訓者接手了",
+      "whyZh": "交接指另一位導師接手，不是受訓者操作。",
+      "id": "B"
+    },
+    {
+      "text": "No entry until the trainee finishes orientation",
+      "zh": "等受訓者完成入職訓練才登記",
+      "whyZh": "原文依實際活動分類，未要求等入職訓練完成。",
+      "id": "C"
+    },
+    {
+      "text": "Teaching, because the mentor provided feedback",
+      "zh": "教學，因為導師提供了回饋",
+      "whyZh": "道理是觀察練習同時給予回饋符合教學代碼。",
+      "id": "D"
+    }
+  ],
+  "explanationZh": "道理是觀察練習同時給予回饋符合教學代碼。",
+  "evidence": "Use the teaching code when the mentor explains a task, demonstrates it, or watches the trainee do it and provides feedback.",
+  "evidenceSpans": [
+    {
+      "startChar": 114,
+      "endChar": 237,
+      "sourceField": "passage",
+      "exactQuote": "Use the teaching code when the mentor explains a task, demonstrates it, or watches the trainee do it and provides feedback.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q148",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-01",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "single-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "provide feedback",
+      "zh": "提供回饋",
+      "note": "這裡指導師觀察實作後，提出有助改進的意見。"
+    }
+  ]
+}

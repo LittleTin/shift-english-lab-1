@@ -1,0 +1,70 @@
+{
+  "number": 150,
+  "difficulty": "intermediate",
+  "prompt": "What does the payroll desk need to correct teaching time already entered as regular work on an approved sheet?",
+  "promptZh": "核准的工時表把教學時間列為一般工作。薪資承辦需要什麼資料才能更正？",
+  "answer": "C",
+  "options": [
+    {
+      "text": "A new sheet with a higher total",
+      "zh": "總時數增加的新工時表",
+      "whyZh": "只改工時分類，總時數不變。",
+      "id": "A"
+    },
+    {
+      "text": "The name of a substitute mentor only",
+      "zh": "只提供接手導師的姓名",
+      "whyZh": "更正需課程日期和移轉時數，單有名字不足。",
+      "id": "B"
+    },
+    {
+      "text": "The session date and the amount of time to recode",
+      "zh": "課程日期與須改用其他代碼的時數",
+      "whyZh": "原文要求把日期和須從一個代碼移到另一個代碼的時數送給薪資承辦。",
+      "id": "C"
+    },
+    {
+      "text": "The original entry after the mentor changes it",
+      "zh": "導師改過的原始登記",
+      "whyZh": "工時表已核准，不可修改原始登記。",
+      "id": "D"
+    }
+  ],
+  "explanationZh": "原文要求把日期和須從一個代碼移到另一個代碼的時數送給薪資承辦。",
+  "evidence": "When a time sheet is already approved, do not change its original entry. / Send the payroll desk a note with the session date and the amount to move from one code to the other.",
+  "evidenceSpans": [
+    {
+      "startChar": 744,
+      "endChar": 816,
+      "sourceField": "passage",
+      "exactQuote": "When a time sheet is already approved, do not change its original entry.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    },
+    {
+      "startChar": 817,
+      "endChar": 918,
+      "sourceField": "passage",
+      "exactQuote": "Send the payroll desk a note with the session date and the amount to move from one code to the other.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q150",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-01",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "single-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "an approved time sheet",
+      "zh": "已核准的工時表",
+      "note": "核准後不能直接改原登記，可另提分類更正。"
+    }
+  ]
+}

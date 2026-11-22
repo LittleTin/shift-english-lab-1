@@ -1,0 +1,78 @@
+{
+  "number": 149,
+  "difficulty": "intermediate",
+  "prompt": "Lee teaches the first twenty minutes of a paired session; Jo teaches the next forty. What should Lee record?",
+  "promptZh": "李先教二十分鐘，喬接手教四十分鐘。李應如何登記？",
+  "answer": "A",
+  "options": [
+    {
+      "text": "Twenty minutes and Jo’s name in the handover field",
+      "zh": "二十分鐘，並在交接欄填喬的名字",
+      "whyZh": "李只登記自己授課的時間；喬的名字填交接欄。",
+      "id": "A"
+    },
+    {
+      "text": "Twenty minutes plus a separate entry for the handover",
+      "zh": "二十分鐘，再為交接另建紀錄",
+      "whyZh": "個人時數正確，但交接本身不用獨立登記。",
+      "id": "B"
+    },
+    {
+      "text": "Forty minutes and Jo’s name in the handover field",
+      "zh": "四十分鐘，並在交接欄填喬的名字",
+      "whyZh": "四十分鐘是喬授課的時間，不是李的。",
+      "id": "C"
+    },
+    {
+      "text": "Sixty minutes with no handover name",
+      "zh": "六十分鐘，不填接手的人",
+      "whyZh": "不能把兩人的時數合算，且須填接手人的名字。",
+      "id": "D"
+    }
+  ],
+  "explanationZh": "李只登記自己授課的時間；喬的名字填交接欄。",
+  "evidence": "For paired sessions, each mentor records only the time they personally taught. / If another mentor takes over partway through, put the other person's name in the handover field, but don't include their time in your total. / Neither person needs to create a second entry for the handover itself.",
+  "evidenceSpans": [
+    {
+      "startChar": 452,
+      "endChar": 530,
+      "sourceField": "passage",
+      "exactQuote": "For paired sessions, each mentor records only the time they personally taught.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    },
+    {
+      "startChar": 531,
+      "endChar": 671,
+      "sourceField": "passage",
+      "exactQuote": "If another mentor takes over partway through, put the other person's name in the handover field, but don't include their time in your total.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    },
+    {
+      "startChar": 672,
+      "endChar": 742,
+      "sourceField": "passage",
+      "exactQuote": "Neither person needs to create a second entry for the handover itself.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q149",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-01",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "single-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "handover field",
+      "zh": "交接欄",
+      "note": "工時表上填寫接手者姓名的欄位。"
+    }
+  ]
+}

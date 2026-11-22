@@ -1,0 +1,70 @@
+{
+  "number": 154,
+  "difficulty": "intermediate",
+  "prompt": "Why does the office not send the crew to another balcony immediately when a resident cancels?",
+  "promptZh": "住戶取消後，為何辦公室不能立即改派人員清潔另一戶陽台？",
+  "answer": "B",
+  "options": [
+    {
+      "text": "The crew must use different equipment for each balcony.",
+      "zh": "每戶陽台都需要不同的清潔設備。",
+      "whyZh": "公告未提設備差異。",
+      "id": "A"
+    },
+    {
+      "text": "Someone from the other household might not be there to let them in.",
+      "zh": "另一戶可能沒有人在家開門。",
+      "whyZh": "陽台清潔需住戶開門，臨時換戶可能沒有住戶在家。",
+      "id": "B"
+    },
+    {
+      "text": "Canceled balcony visits have to become courtyard visits.",
+      "zh": "取消的陽台清潔一定要改成中庭清潔。",
+      "whyZh": "公告說名字保留至下輪，未將陽台與中庭的工作互換。",
+      "id": "C"
+    },
+    {
+      "text": "The original resident is required to provide a spare key first.",
+      "zh": "原先登記的住戶須先提供備用鑰匙。",
+      "whyZh": "不能使用備用鑰匙，留鑰匙不會解決臨時無人開門的問題。",
+      "id": "D"
+    }
+  ],
+  "explanationZh": "陽台清潔需住戶開門，臨時換戶可能沒有住戶在家。",
+  "evidence": "For a balcony visit, someone from your household must be present to open the balcony door. / we cannot move the crew to another balcony on short notice because a resident may not be there.",
+  "evidenceSpans": [
+    {
+      "startChar": 382,
+      "endChar": 472,
+      "sourceField": "passage",
+      "exactQuote": "For a balcony visit, someone from your household must be present to open the balcony door.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    },
+    {
+      "startChar": 809,
+      "endChar": 904,
+      "sourceField": "passage",
+      "exactQuote": "we cannot move the crew to another balcony on short notice because a resident may not be there.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q154",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-02",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "single-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "on short notice",
+      "zh": "在很短的通知時間內",
+      "note": "臨時通知，讓另一戶沒有充足時間安排在家。"
+    }
+  ]
+}

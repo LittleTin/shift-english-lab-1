@@ -1,0 +1,62 @@
+{
+  "number": 157,
+  "difficulty": "foundation",
+  "prompt": "What lets staff use the video to explain what a buyer will receive?",
+  "promptZh": "工作人員為什麼能用影片說明買家會收到什麼？",
+  "answer": "D",
+  "options": [
+    {
+      "text": "The video shows the repair record on the old lamp.",
+      "zh": "影片顯示舊燈的維修紀錄。",
+      "whyZh": "維修編號屬於樣品，不是影片能示範現行功能的原因。",
+      "id": "A"
+    },
+    {
+      "text": "The video includes an estimate for delivery.",
+      "zh": "影片含配送估價。",
+      "whyZh": "影片展示計時操作，配送估價未列為它的內容。",
+      "id": "B"
+    },
+    {
+      "text": "The tablet can be used to enter an order.",
+      "zh": "平板能輸入訂單。",
+      "whyZh": "原文只說平板能播放短片，沒有說可下單。",
+      "id": "C"
+    },
+    {
+      "text": "The model in the video uses the same timer as the one sold.",
+      "zh": "影片中的型號與販售款使用相同的計時器。",
+      "whyZh": "原文說影片展示現行款，計時器與顧客收到的一致。",
+      "id": "D"
+    }
+  ],
+  "explanationZh": "原文說影片展示現行款，計時器與顧客收到的一致。",
+  "evidence": "It shows the current version with the same timer that customers will receive.",
+  "evidenceSpans": [
+    {
+      "startChar": 592,
+      "endChar": 669,
+      "sourceField": "passage",
+      "exactQuote": "It shows the current version with the same timer that customers will receive.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q157",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-03",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "single-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "the current version",
+      "zh": "現行款",
+      "note": "現在銷售的版本，與展示樣品未必相同。"
+    }
+  ]
+}

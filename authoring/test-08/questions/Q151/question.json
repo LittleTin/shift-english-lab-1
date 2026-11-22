@@ -1,0 +1,62 @@
+{
+  "number": 151,
+  "difficulty": "foundation",
+  "prompt": "Who needs to sign up for a visit?",
+  "promptZh": "誰需要登記到府清潔？",
+  "answer": "C",
+  "options": [
+    {
+      "text": "Everyone whose window faces the courtyard",
+      "zh": "所有窗戶朝中庭的住戶",
+      "whyZh": "中庭側窗戶可直接清潔，不必登記陽台清潔。",
+      "id": "A"
+    },
+    {
+      "text": "Anyone who will be away on both days",
+      "zh": "兩天都不在家的住戶",
+      "whyZh": "需要登記與否看窗戶是否朝私人陽台，不是看這兩天是否在家。",
+      "id": "B"
+    },
+    {
+      "text": "Residents who want a window facing their private balcony cleaned",
+      "zh": "想清潔朝私人陽台窗戶的住戶",
+      "whyZh": "公告說這側窗戶只有登記陽台清潔才能清洗。",
+      "id": "C"
+    },
+    {
+      "text": "Residents who keep a spare key at the office",
+      "zh": "把備用鑰匙留在辦公室的住戶",
+      "whyZh": "留鑰匙不構成登記條件，工作人員也不能用那把鑰匙。",
+      "id": "D"
+    }
+  ],
+  "explanationZh": "公告說這側窗戶只有登記陽台清潔才能清洗。",
+  "evidence": "If your window opens onto a private balcony, however, the crew can clean that side only if you sign up for a balcony visit.",
+  "evidenceSpans": [
+    {
+      "startChar": 166,
+      "endChar": 289,
+      "sourceField": "passage",
+      "exactQuote": "If your window opens onto a private balcony, however, the crew can clean that side only if you sign up for a balcony visit.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q151",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-02",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "single-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "sign up for a visit",
+      "zh": "登記到府服務",
+      "note": "此處特指要讓人員進入住戶陽台的服務。"
+    }
+  ]
+}

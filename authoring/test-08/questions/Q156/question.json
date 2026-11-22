@@ -1,0 +1,78 @@
+{
+  "number": 156,
+  "difficulty": "intermediate",
+  "prompt": "A visitor wants to compare the two light settings and learn about the timer. How should staff help?",
+  "promptZh": "訪客想比較兩種亮度，也想了解計時器。工作人員應怎麼做？",
+  "answer": "A",
+  "options": [
+    {
+      "text": "Let the visitor turn on the sample, then offer the video for the timer.",
+      "zh": "讓訪客打開樣品試用，再提供計時器示範影片。",
+      "whyZh": "樣品能展示亮度，影片才展示現行款計時器，因此兩種需求各有做法。",
+      "id": "A"
+    },
+    {
+      "text": "Play the video for the light settings, then use the sample to demonstrate the timer.",
+      "zh": "用影片比較亮度，再用樣品示範計時器。",
+      "whyZh": "樣品沒有計時器，這個做法把適用媒介弄反。",
+      "id": "B"
+    },
+    {
+      "text": "Use only the sample for both demonstrations.",
+      "zh": "兩項功能都用樣品示範。",
+      "whyZh": "樣品只有亮度可示範，沒有定時功能。",
+      "id": "C"
+    },
+    {
+      "text": "Refer to the price card for both demonstrations.",
+      "zh": "兩項功能都請訪客參考價卡。",
+      "whyZh": "價卡是售價資料，不是操作示範。",
+      "id": "D"
+    }
+  ],
+  "explanationZh": "樣品能展示亮度，影片才展示現行款計時器，因此兩種需求各有做法。",
+  "evidence": "Visitors may switch on the working sample to compare its two light settings. / Don't use the sample to demonstrate the timer, since that feature isn't fitted to it. / If someone wants to see how the timer works, offer the short video on the counter tablet.",
+  "evidenceSpans": [
+    {
+      "startChar": 339,
+      "endChar": 415,
+      "sourceField": "passage",
+      "exactQuote": "Visitors may switch on the working sample to compare its two light settings.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    },
+    {
+      "startChar": 416,
+      "endChar": 501,
+      "sourceField": "passage",
+      "exactQuote": "Don't use the sample to demonstrate the timer, since that feature isn't fitted to it.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    },
+    {
+      "startChar": 502,
+      "endChar": 591,
+      "sourceField": "passage",
+      "exactQuote": "If someone wants to see how the timer works, offer the short video on the counter tablet.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q156",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-03",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "single-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "be fitted to",
+      "zh": "安裝於",
+      "note": "此處指樣品並未裝有計時器。"
+    }
+  ]
+}

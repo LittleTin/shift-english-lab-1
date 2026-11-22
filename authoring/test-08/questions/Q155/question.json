@@ -1,0 +1,62 @@
+{
+  "number": 155,
+  "difficulty": "foundation",
+  "prompt": "Which number should a visitor use to order the current lamp?",
+  "promptZh": "訪客要訂購現行款燈具，應使用哪個編號？",
+  "answer": "C",
+  "options": [
+    {
+      "text": "The repair record number on the sample",
+      "zh": "樣品上的維修紀錄編號",
+      "whyZh": "燈底貼紙不是用來下訂單的編號。",
+      "id": "A"
+    },
+    {
+      "text": "A number displayed by the timer",
+      "zh": "計時器顯示的號碼",
+      "whyZh": "計時器是功能，不是訂購代碼。",
+      "id": "B"
+    },
+    {
+      "text": "The code on the shelf card",
+      "zh": "架上卡片的代碼",
+      "whyZh": "原文指示顧客用架上卡片的代碼下單。",
+      "id": "C"
+    },
+    {
+      "text": "A delivery reference in the envelope",
+      "zh": "信封中的配送參考編號",
+      "whyZh": "信封提到估價，未說其中有可用來下單的配送代碼。",
+      "id": "D"
+    }
+  ],
+  "explanationZh": "原文指示顧客用架上卡片的代碼下單。",
+  "evidence": "Ask the visitor to use the code on the shelf card when placing an order.",
+  "evidenceSpans": [
+    {
+      "startChar": 265,
+      "endChar": 337,
+      "sourceField": "passage",
+      "exactQuote": "Ask the visitor to use the code on the shelf card when placing an order.",
+      "documentIndex": 0,
+      "sourceRole": "single-document"
+    }
+  ],
+  "id": "t08-q155",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-03",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "single-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "repair record number",
+      "zh": "維修紀錄編號",
+      "note": "查維修用的標識，不等同於產品訂購代碼。"
+    }
+  ]
+}
