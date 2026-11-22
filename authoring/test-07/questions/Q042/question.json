@@ -1,0 +1,74 @@
+{
+  "id": "t07-q042",
+  "testId": "test-07",
+  "number": 42,
+  "part": 3,
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "groupId": "t07-g041",
+  "prompt": "If they connect the laptop to the second screen but do not share that laptop in the meeting, what will happen?",
+  "promptZh": "如果筆電接到第二個螢幕，卻沒有在會議中分享筆電畫面，會發生什麼事？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "The remote participants will see the laptop but not the slides.",
+      "zh": "遠端與會者會看到筆電畫面，但看不到投影片。",
+      "whyZh": "遠端接收的是現場電腦的畫面，投影片會從現場電腦播放。"
+    },
+    {
+      "id": "B",
+      "text": "People in the room can see the laptop demonstration, but remote participants cannot.",
+      "zh": "現場的人看得到筆電上的示範，遠端與會者則看不到。",
+      "whyZh": "接到第二個螢幕的筆電畫面只在現場顯示，遠端仍只能看到現場電腦分享的內容。"
+    },
+    {
+      "id": "C",
+      "text": "Everyone will see the laptop automatically once a cable is connected.",
+      "zh": "只要接上線，所有人就會自動看到筆電畫面。",
+      "whyZh": "接到現場的第二個螢幕，不等於在遠端會議中分享筆電畫面。"
+    },
+    {
+      "id": "D",
+      "text": "Neither group will be able to see any screen.",
+      "zh": "現場和遠端的人都看不到任何螢幕畫面。",
+      "whyZh": "不分享筆電不會讓現場螢幕或現場電腦的分享失效。"
+    }
+  ],
+  "explanationZh": "接到第二個螢幕的筆電畫面只在現場顯示，遠端仍只能看到現場電腦分享的內容。",
+  "evidence": "connect your laptop to the second screen. / The second screen shows whatever is connected to it / people joining remotely only see what the room computer shares. / Then they would miss the order demonstration.",
+  "tags": [
+    "technology",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "connect your laptop to the second screen."
+    },
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "The second screen shows whatever is connected to it"
+    },
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "people joining remotely only see what the room computer shares."
+    },
+    {
+      "turn": 3,
+      "speaker": "F",
+      "exactQuote": "Then they would miss the order demonstration."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "join remotely",
+      "zh": "遠端加入",
+      "note": "指不在簡報現場，而透過線上會議參與。"
+    }
+  ]
+}

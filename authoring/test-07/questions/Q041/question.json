@@ -1,0 +1,59 @@
+{
+  "id": "t07-q041",
+  "testId": "test-07",
+  "number": 41,
+  "part": 3,
+  "topic": "technology",
+  "difficulty": "foundation",
+  "groupId": "t07-g041",
+  "prompt": "What does the customer want to see during the presentation?",
+  "promptZh": "客戶希望在簡報時看到什麼？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "A recorded tour of the training room.",
+      "zh": "一段預錄的訓練室介紹。",
+      "whyZh": "對話說用現場電腦放投影片；客戶想看的是即時訂單示範，不是場地介紹。"
+    },
+    {
+      "id": "B",
+      "text": "A list of people who are joining remotely.",
+      "zh": "遠端與會者名單。",
+      "whyZh": "對話提到遠端與會者，但沒有說客戶想看名單。"
+    },
+    {
+      "id": "C",
+      "text": "The order screen changing in real time.",
+      "zh": "訂單畫面即時變動。",
+      "whyZh": "女方一開始直接說客戶想在她解說時看訂單畫面即時變動。"
+    },
+    {
+      "id": "D",
+      "text": "A new set of printed instructions.",
+      "zh": "一套新版的紙本說明。",
+      "whyZh": "此次要看的是實際畫面，不曾提到印製說明。"
+    }
+  ],
+  "explanationZh": "女方一開始直接說客戶想在她解說時看訂單畫面即時變動。",
+  "evidence": "the customer wants to see our order screen change while I talk.",
+  "tags": [
+    "technology",
+    "conversation"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "F",
+      "exactQuote": "the customer wants to see our order screen change while I talk."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "order screen",
+      "zh": "訂單畫面",
+      "note": "指實際操作訂單時使用的介面，而非預先截下的圖片。"
+    }
+  ]
+}
