@@ -1,0 +1,56 @@
+{
+  "id": "t07-g038",
+  "testId": "test-07",
+  "part": 3,
+  "topic": "manufacturing",
+  "title": "Which timestamp belongs in a production report?",
+  "titleZh": "生產報告應採哪個時間戳記？",
+  "turns": [
+    {
+      "speaker": "M",
+      "text": "I measured the test unit at four twenty yesterday, but our shared report puts the reading at four thirty-eight. Can we correct the chart?",
+      "zh": "我昨天四點二十分量測測試件，但共用報告把讀值標在四點三十八分。可以改圖表嗎？",
+      "role": "quality analyst"
+    },
+    {
+      "speaker": "F",
+      "text": "Before you change anything, check the column headings. Four twenty is the measurement time. Four thirty-eight is when the reading was uploaded to the shared folder. The chart is using the upload column.",
+      "zh": "更動前先看欄位標題。四點二十分是量測時間，四點三十八分是讀值上傳到共用資料夾的時間。圖表目前用的是上傳欄。",
+      "role": "data support specialist"
+    },
+    {
+      "speaker": "M",
+      "text": "So we should keep both values in the data and point the chart at the measurement column?",
+      "zh": "那麼資料保留兩個時間，把圖表改用量測欄？",
+      "role": "quality analyst"
+    },
+    {
+      "speaker": "F",
+      "text": "Exactly. The upload time is useful when we investigate delays. Save a new chart and compare its first two points with the worksheet before sending it out.",
+      "zh": "沒錯。調查延誤時，上傳時間有用。另存新圖表，寄出前先把前兩個資料點和工作表比對。",
+      "role": "data support specialist"
+    }
+  ],
+  "passage": "M: I measured the test unit at four twenty yesterday, but our shared report puts the reading at four thirty-eight. Can we correct the chart?\nF: Before you change anything, check the column headings. Four twenty is the measurement time. Four thirty-eight is when the reading was uploaded to the shared folder. The chart is using the upload column.\nM: So we should keep both values in the data and point the chart at the measurement column?\nF: Exactly. The upload time is useful when we investigate delays. Save a new chart and compare its first two points with the worksheet before sending it out.",
+  "passageZh": "M：我昨天四點二十分量測測試件，但共用報告把讀值標在四點三十八分。可以改圖表嗎？\nF：更動前先看欄位標題。四點二十分是量測時間，四點三十八分是讀值上傳到共用資料夾的時間。圖表目前用的是上傳欄。\nM：那麼資料保留兩個時間，把圖表改用量測欄？\nF：沒錯。調查延誤時，上傳時間有用。另存新圖表，寄出前先把前兩個資料點和工作表比對。",
+  "audioSpeakers": [
+    {
+      "speaker": "M",
+      "locale": "en-SG",
+      "role": "quality analyst",
+      "modelVoice": "en-SG-WayneNeural"
+    },
+    {
+      "speaker": "F",
+      "locale": "en-HK",
+      "role": "data support specialist",
+      "modelVoice": "en-HK-YanNeural"
+    }
+  ],
+  "audioScript": "M: I measured the test unit at four twenty yesterday, but our shared report puts the reading at four thirty-eight. Can we correct the chart?\nF: Before you change anything, check the column headings. Four twenty is the measurement time. Four thirty-eight is when the reading was uploaded to the shared folder. The chart is using the upload column.\nM: So we should keep both values in the data and point the chart at the measurement column?\nF: Exactly. The upload time is useful when we investigate delays. Save a new chart and compare its first two points with the worksheet before sending it out.",
+  "spokenWords": 101,
+  "audio": "audio/practice-groups/test-07/t07-g038.ogg",
+  "audioStart": 0,
+  "audioEnd": 45.04397916666667,
+  "duration": 45.04397916666667
+}

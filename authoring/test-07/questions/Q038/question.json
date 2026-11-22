@@ -1,0 +1,64 @@
+{
+  "id": "t07-q038",
+  "testId": "test-07",
+  "number": 38,
+  "part": 3,
+  "groupId": "t07-g038",
+  "topic": "manufacturing",
+  "prompt": "What difference is the man concerned about?",
+  "promptZh": "男方在意的是哪項差異？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "The test unit and the report carry different serial numbers.",
+      "zh": "測試件與報告的序號不同。",
+      "whyZh": "對話中比的是兩個時間，未提到序號。"
+    },
+    {
+      "id": "B",
+      "text": "The same row lists two different measurement results.",
+      "zh": "同一列列了兩種量測結果。",
+      "whyZh": "差異是報告標示的時間，不是讀值本身有兩種。"
+    },
+    {
+      "id": "C",
+      "text": "The chart shows a later time than he measured the unit.",
+      "zh": "圖表時間比他量測測試件的時間晚。",
+      "whyZh": "男方說四點二十分量測，報告顯示四點三十八分，後者更晚。"
+    },
+    {
+      "id": "D",
+      "text": "The first two chart points have disappeared.",
+      "zh": "圖表前兩個資料點不見了。",
+      "whyZh": "前兩點是修正後要比對的項目，沒有說它們消失。"
+    }
+  ],
+  "explanationZh": "男方說四點二十分量測，報告顯示四點三十八分，後者更晚。",
+  "evidence": "I measured the test unit at four twenty yesterday, but our shared report puts the reading at four thirty-eight. Can we correct the chart? / Before you change anything, check the column headings. Four twenty is the measurement time. Four thirty-eight is when the reading was uploaded to the shared folder. The chart is using the upload column.",
+  "evidenceSpans": [
+    {
+      "turn": 1,
+      "speaker": "M",
+      "exactQuote": "I measured the test unit at four twenty yesterday, but our shared report puts the reading at four thirty-eight. Can we correct the chart?"
+    },
+    {
+      "turn": 2,
+      "speaker": "F",
+      "exactQuote": "Before you change anything, check the column headings. Four twenty is the measurement time. Four thirty-eight is when the reading was uploaded to the shared folder. The chart is using the upload column."
+    }
+  ],
+  "difficulty": "foundation",
+  "revision": 1,
+  "tags": [
+    "manufacturing",
+    "conversation"
+  ],
+  "vocabulary": [
+    {
+      "term": "test unit",
+      "zh": "測試件",
+      "note": "指正在測量的那一件樣品或裝置。"
+    }
+  ]
+}

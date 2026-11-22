@@ -1,0 +1,69 @@
+{
+  "id": "t07-q039",
+  "testId": "test-07",
+  "number": 39,
+  "part": 3,
+  "groupId": "t07-g038",
+  "topic": "manufacturing",
+  "prompt": "Why does the woman want to keep the upload time in the data?",
+  "promptZh": "女方為何要保留資料中的上傳時間？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "It is the only time that should appear on the revised chart.",
+      "zh": "那是修正版圖表唯一應顯示的時間。",
+      "whyZh": "修正版要改用量測欄，不是繼續使用上傳欄。"
+    },
+    {
+      "id": "B",
+      "text": "It can help the team investigate delays.",
+      "zh": "可協助團隊查明延誤。",
+      "whyZh": "女方同意圖表用量測時間，但指出保留上傳時間有助於查明延遲。"
+    },
+    {
+      "id": "C",
+      "text": "It tells them when the technician started the measurement.",
+      "zh": "可得知技術人員何時開始量測。",
+      "whyZh": "上傳時間記的是資料到資料夾的時點，不是操作人員開始量測的時點。"
+    },
+    {
+      "id": "D",
+      "text": "It gives them the time when the worksheet was printed.",
+      "zh": "可得知工作表何時列印。",
+      "whyZh": "對話中上傳與列印無關，未提到紙本時間。"
+    }
+  ],
+  "explanationZh": "女方同意圖表用量測時間，但指出保留上傳時間有助於查明延遲。",
+  "evidence": "Before you change anything, check the column headings. Four twenty is the measurement time. Four thirty-eight is when the reading was uploaded to the shared folder. The chart is using the upload column. / So we should keep both values in the data and point the chart at the measurement column? / Exactly. The upload time is useful when we investigate delays. Save a new chart and compare its first two points with the worksheet before sending it out.",
+  "evidenceSpans": [
+    {
+      "turn": 2,
+      "speaker": "F",
+      "exactQuote": "Before you change anything, check the column headings. Four twenty is the measurement time. Four thirty-eight is when the reading was uploaded to the shared folder. The chart is using the upload column."
+    },
+    {
+      "turn": 3,
+      "speaker": "M",
+      "exactQuote": "So we should keep both values in the data and point the chart at the measurement column?"
+    },
+    {
+      "turn": 4,
+      "speaker": "F",
+      "exactQuote": "Exactly. The upload time is useful when we investigate delays. Save a new chart and compare its first two points with the worksheet before sending it out."
+    }
+  ],
+  "difficulty": "intermediate",
+  "revision": 1,
+  "tags": [
+    "manufacturing",
+    "conversation"
+  ],
+  "vocabulary": [
+    {
+      "term": "upload column",
+      "zh": "上傳時間欄",
+      "note": "這個欄位記上傳，不是量測時間。"
+    }
+  ]
+}
