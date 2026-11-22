@@ -1,0 +1,45 @@
+{
+  "id": "t08-q141",
+  "testId": "test-08",
+  "part": 6,
+  "revision": 1,
+  "topic": "manufacturing",
+  "groupId": "t08-r-p6-03",
+  "tags": [
+    "text-completion",
+    "manufacturing"
+  ],
+  "number": 141,
+  "prompt": "Choose the best word or sentence for blank [141].",
+  "promptZh": "請選出最適合填入空格 [141] 的單字或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "The technician checks in each team before the board goes up.",
+      "zh": "登記板掛出來前，技術員會逐隊報到。",
+      "whyZh": "登記板已指定位置，不涉及掛板前的逐隊報到。"
+    },
+    {
+      "id": "B",
+      "text": "Please erase any line that shows your team has canceled the session.",
+      "zh": "請把所有顯示你的團隊已取消測試的列擦掉。",
+      "whyZh": "上句明確說不要擦掉整列，否則無法查原櫃號。"
+    },
+    {
+      "id": "C",
+      "text": "Cabinet numbers may be reused on other teams’ lines after the table is switched off.",
+      "zh": "振動台關掉後，其他團隊可以在自己的列上重複使用這些櫃號。",
+      "whyZh": "未規定關機後可借用別隊的櫃號，原號反而需要留存追蹤。"
+    },
+    {
+      "id": "D",
+      "text": "Keep that number legible even though the booking has been canceled.",
+      "zh": "即使已取消預約，也要確保櫃號仍看得清楚。",
+      "whyZh": "that number 回指劃掉的櫃號；它仍須可讀，才方便把測試件放回原位並在櫃號旁打勾。"
+    }
+  ],
+  "answer": "D",
+  "evidence": "the technician uses the crossed-out cabinet number to check where to put the pieces back. [insert] Once the pieces are back in the cabinet, she will place a small check mark next to the crossed-out number.",
+  "difficulty": "intermediate",
+  "explanationZh": "that number 回指劃掉的櫃號；它仍須可讀，才方便把測試件放回原位並在櫃號旁打勾。"
+}

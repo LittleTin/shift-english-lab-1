@@ -1,0 +1,52 @@
+{
+  "id": "t08-q133",
+  "testId": "test-08",
+  "number": 133,
+  "part": 6,
+  "groupId": "t08-r-p6-01",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Choose the best word or sentence for blank [133].",
+  "promptZh": "請選出最適合填入第 133 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "The shop must scan its return card once more.",
+      "zh": "店家必須再掃一次回收卡。",
+      "whyZh": "末句明說無須請店家再掃，且此段已抵達轉運站。"
+    },
+    {
+      "id": "B",
+      "text": "The receipt must be filed before you reach the depot.",
+      "zh": "抵達轉運站前，必須先歸檔收據。",
+      "whyZh": "下一句才請司機在離開前索取收據，並未要求抵達前就有收據。"
+    },
+    {
+      "id": "C",
+      "text": "The clerk can scan the same stack there.",
+      "zh": "櫃檯人員可以在那裡掃描同一疊周轉箱。",
+      "whyZh": "there 指前一句的收貨櫃檯；櫃檯掃描同一批箱子，接著才索取收據。"
+    },
+    {
+      "id": "D",
+      "text": "The kiosk closes only after every driver has left.",
+      "zh": "自助站要等所有司機離開後才會關閉。",
+      "whyZh": "文中只說四點前若顯示關閉就改走櫃檯，沒有訂出等司機離開的規則。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "there 指前一句的收貨櫃檯；櫃檯掃描同一批箱子，接著才索取收據。",
+  "evidence": "If the kiosk displays CLOSED before 4 p.m., take the crates to the staffed receiving desk instead. The clerk can scan the same stack there.",
+  "vocabulary": [
+    {
+      "term": "a staffed receiving desk",
+      "zh": "有工作人員的收貨櫃檯",
+      "note": "和自助站不同，可由收貨人員完成掃描。"
+    }
+  ]
+}
