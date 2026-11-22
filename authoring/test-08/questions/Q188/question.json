@@ -1,0 +1,98 @@
+{
+  "number": 188,
+  "prompt": "Which single roll meets all the conditions for the lobby panel?",
+  "promptZh": "哪一卷單獨符合大廳展板的所有條件？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "Birch",
+      "zh": "Birch",
+      "whyZh": "寬度與長度足夠，但背膠是永久型。"
+    },
+    {
+      "id": "B",
+      "text": "Cedar",
+      "zh": "Cedar",
+      "whyZh": "長度與背膠符合，但五十八公分不含兩側餘量。"
+    },
+    {
+      "id": "C",
+      "text": "Aster",
+      "zh": "Aster",
+      "whyZh": "寬至少六十公分、可用長至少十二公尺且可移除；Aster 的 62、14 與可移除均符合。"
+    },
+    {
+      "id": "D",
+      "text": "Dune",
+      "zh": "Dune",
+      "whyZh": "寬度及背膠符合，但只有十一公尺可用。"
+    }
+  ],
+  "explanationZh": "寬至少六十公分、可用長至少十二公尺且可移除；Aster 的 62、14 與可移除均符合。",
+  "evidence": "Use film with removable backing; permanent backing is approved only for the rear workshop sign, not the lobby. / The lobby panel is 58 cm wide. Its two edges require one extra centimetre of film on each side, so the roll width must allow for both margins. / The original layout required 10 metres. The designer has added two metres of printed material to the same layout. / Roll | Width (cm) | Usable length (m) | Backing\nAster | 62 | 14 | removable\nBirch | 64 | 12 | permanent\nCedar | 58 | 16 | removable\nDune | 60 | 11 | removable",
+  "evidenceSpans": [
+    {
+      "documentIndex": 0,
+      "documentId": "d1",
+      "sourceField": "text",
+      "startChar": 61,
+      "endChar": 171,
+      "exactQuote": "Use film with removable backing; permanent backing is approved only for the rear workshop sign, not the lobby.",
+      "sourceRole": "document-1",
+      "passageStartChar": 94,
+      "passageEndChar": 204
+    },
+    {
+      "documentIndex": 0,
+      "documentId": "d1",
+      "sourceField": "text",
+      "startChar": 172,
+      "endChar": 314,
+      "exactQuote": "The lobby panel is 58 cm wide. Its two edges require one extra centimetre of film on each side, so the roll width must allow for both margins.",
+      "sourceRole": "document-1",
+      "passageStartChar": 205,
+      "passageEndChar": 347
+    },
+    {
+      "documentIndex": 0,
+      "documentId": "d1",
+      "sourceField": "text",
+      "startChar": 316,
+      "endChar": 429,
+      "exactQuote": "The original layout required 10 metres. The designer has added two metres of printed material to the same layout.",
+      "sourceRole": "document-1",
+      "passageStartChar": 349,
+      "passageEndChar": 462
+    },
+    {
+      "documentIndex": 1,
+      "documentId": "d2",
+      "sourceField": "text",
+      "startChar": 0,
+      "endChar": 158,
+      "exactQuote": "Roll | Width (cm) | Usable length (m) | Backing\nAster | 62 | 14 | removable\nBirch | 64 | 12 | permanent\nCedar | 58 | 16 | removable\nDune | 60 | 11 | removable",
+      "sourceRole": "document-2",
+      "passageStartChar": 714,
+      "passageEndChar": 872
+    }
+  ],
+  "difficulty": "intermediate",
+  "id": "t08-q188",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-10",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "double-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "allow for",
+      "zh": "把……算進去",
+      "note": "計算寬度時須加上兩側所需的餘量。"
+    }
+  ]
+}

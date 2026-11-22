@@ -1,0 +1,76 @@
+{
+  "number": 197,
+  "difficulty": "foundation",
+  "prompt": "Why should the chairs at the feedback table stay in place?",
+  "promptZh": "為什麼回饋桌旁的椅子不應移走？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Some visitors need to sit down while writing.",
+      "zh": "有些訪客需要坐著寫。",
+      "whyZh": "布展備註說，即使暫時沒人在寫，也要保留椅子給需要坐著填卡的訪客。"
+    },
+    {
+      "id": "B",
+      "text": "Visitors are assigned seats before entering the hall.",
+      "zh": "訪客進場前就已分配座位。",
+      "whyZh": "椅子供填寫回饋卡使用，原文沒有分配座位的安排。"
+    },
+    {
+      "id": "C",
+      "text": "The chairs keep visitors away from the window display.",
+      "zh": "椅子能讓訪客與窗邊展品保持距離。",
+      "whyZh": "椅子設在回饋桌旁供填卡使用，不是窗邊展品的阻隔設施。"
+    },
+    {
+      "id": "D",
+      "text": "The chairs hold quilts that are waiting to be displayed.",
+      "zh": "椅子用來放置等待展示的拼布被。",
+      "whyZh": "拼布被應掛橫桿或平放在有軟墊的桌上，不放在椅子上。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "布展備註說，即使暫時沒人在寫，也要保留椅子給需要坐著填卡的訪客。",
+  "evidence": "Please leave the chairs there even if no one is writing at the moment. / Some visitors need to sit to fill out a card.",
+  "evidenceSpans": [
+    {
+      "sourceField": "text",
+      "documentId": "d3",
+      "documentIndex": 2,
+      "startChar": 199,
+      "endChar": 269,
+      "exactQuote": "Please leave the chairs there even if no one is writing at the moment.",
+      "sourceRole": "document-3",
+      "passageStartChar": 1801,
+      "passageEndChar": 1871
+    },
+    {
+      "sourceField": "text",
+      "documentId": "d3",
+      "documentIndex": 2,
+      "startChar": 270,
+      "endChar": 315,
+      "exactQuote": "Some visitors need to sit to fill out a card.",
+      "sourceRole": "document-3",
+      "passageStartChar": 1872,
+      "passageEndChar": 1917
+    }
+  ],
+  "id": "t08-q197",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-12",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "triple-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "keep in place",
+      "zh": "保留在原位",
+      "note": "即使暫時沒有人用，也不要移走椅子。"
+    }
+  ]
+}

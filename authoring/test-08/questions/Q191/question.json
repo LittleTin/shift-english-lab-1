@@ -1,0 +1,65 @@
+{
+  "number": 191,
+  "prompt": "When does borderless printing trim the sides of the picture?",
+  "promptZh": "何時滿版沖印會裁掉照片的兩側？",
+  "answer": "D",
+  "options": [
+    {
+      "id": "A",
+      "text": "Whenever the mount is reused",
+      "zh": "每次重用卡紙時",
+      "whyZh": "卡紙是否重用與滿版裁圖無關。"
+    },
+    {
+      "id": "B",
+      "text": "Whenever the paper is larger than the mount opening",
+      "zh": "相紙比卡紙開口大時",
+      "whyZh": "那是裱框條件，不是是否裁圖的原因。"
+    },
+    {
+      "id": "C",
+      "text": "Whenever the source file has a white strip",
+      "zh": "原始檔有白邊時",
+      "whyZh": "規則取決於比例，未說原檔有白邊必須裁圖。"
+    },
+    {
+      "id": "D",
+      "text": "When the picture and paper have different shapes",
+      "zh": "照片和相紙的比例不相同時",
+      "whyZh": "滿版需填滿紙張，比例不同就會裁去部分畫面。"
+    }
+  ],
+  "explanationZh": "滿版需填滿紙張，比例不同就會裁去部分畫面。",
+  "evidence": "A borderless print fills the paper by trimming the sides of the image if its shape differs from the paper.",
+  "evidenceSpans": [
+    {
+      "documentIndex": 0,
+      "documentId": "d1",
+      "sourceField": "text",
+      "startChar": 0,
+      "endChar": 106,
+      "exactQuote": "A borderless print fills the paper by trimming the sides of the image if its shape differs from the paper.",
+      "sourceRole": "document-1",
+      "passageStartChar": 34,
+      "passageEndChar": 140
+    }
+  ],
+  "difficulty": "foundation",
+  "id": "t08-q191",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-11",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "triple-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "borderless",
+      "zh": "無邊框；滿版",
+      "note": "沒有白邊；照片與相紙比例不同時會裁切畫面。"
+    }
+  ]
+}

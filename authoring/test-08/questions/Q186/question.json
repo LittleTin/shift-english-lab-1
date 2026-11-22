@@ -1,0 +1,65 @@
+{
+  "number": 186,
+  "prompt": "Which backing is required for the temporary lobby display?",
+  "promptZh": "大廳的臨時展示必須使用哪種背膠？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "Permanent",
+      "zh": "永久",
+      "whyZh": "永久背膠只核准用於後方工作間。"
+    },
+    {
+      "id": "B",
+      "text": "Removable",
+      "zh": "可移除",
+      "whyZh": "工單直接指定大廳用可移除背膠。"
+    },
+    {
+      "id": "C",
+      "text": "Either kind",
+      "zh": "兩種皆可",
+      "whyZh": "大廳不能用永久背膠。"
+    },
+    {
+      "id": "D",
+      "text": "No backing at all",
+      "zh": "完全不需背膠",
+      "whyZh": "工單指定背膠種類，並未取消背膠。"
+    }
+  ],
+  "explanationZh": "工單直接指定大廳用可移除背膠。",
+  "evidence": "Use film with removable backing; permanent backing is approved only for the rear workshop sign, not the lobby.",
+  "evidenceSpans": [
+    {
+      "documentIndex": 0,
+      "documentId": "d1",
+      "sourceField": "text",
+      "startChar": 61,
+      "endChar": 171,
+      "exactQuote": "Use film with removable backing; permanent backing is approved only for the rear workshop sign, not the lobby.",
+      "sourceRole": "document-1",
+      "passageStartChar": 94,
+      "passageEndChar": 204
+    }
+  ],
+  "difficulty": "foundation",
+  "id": "t08-q186",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-10",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "double-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "removable backing",
+      "zh": "可移除背膠",
+      "note": "適用於展覽結束後要移除的貼膜。"
+    }
+  ]
+}

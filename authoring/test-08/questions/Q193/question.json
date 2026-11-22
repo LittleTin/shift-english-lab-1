@@ -1,0 +1,76 @@
+{
+  "number": 193,
+  "prompt": "Which paper size should be ruled out because it exactly matches the mount opening?",
+  "promptZh": "哪個尺寸應排除，因為它恰好等於卡紙開口？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "20 by 25 centimetres",
+      "zh": "20×25 公分",
+      "whyZh": "這是里昂猜測的開口，實際開口較小。"
+    },
+    {
+      "id": "B",
+      "text": "18 by 25 centimetres",
+      "zh": "18×25 公分",
+      "whyZh": "店家未列這個規格，且它不等於實際開口。"
+    },
+    {
+      "id": "C",
+      "text": "18 by 24 centimetres",
+      "zh": "18×24 公分",
+      "whyZh": "店員實測開口是這個尺寸；相紙須較大才能壓在卡紙後。"
+    },
+    {
+      "id": "D",
+      "text": "24 by 25 centimetres",
+      "zh": "24×25 公分",
+      "whyZh": "店家未列此規格，且它也不是實測開口。"
+    }
+  ],
+  "explanationZh": "店員實測開口是這個尺寸；相紙須較大才能壓在卡紙後。",
+  "evidence": "Part of the paper needs to sit behind the mount, so the paper must be larger than the opening. / I measured Leon’s mount: its opening is 18 by 24 centimetres.",
+  "evidenceSpans": [
+    {
+      "documentIndex": 0,
+      "documentId": "d1",
+      "sourceField": "text",
+      "startChar": 354,
+      "endChar": 448,
+      "exactQuote": "Part of the paper needs to sit behind the mount, so the paper must be larger than the opening.",
+      "sourceRole": "document-1",
+      "passageStartChar": 388,
+      "passageEndChar": 482
+    },
+    {
+      "documentIndex": 2,
+      "documentId": "d3",
+      "sourceField": "text",
+      "startChar": 0,
+      "endChar": 61,
+      "exactQuote": "I measured Leon’s mount: its opening is 18 by 24 centimetres.",
+      "sourceRole": "document-3",
+      "passageStartChar": 781,
+      "passageEndChar": 842
+    }
+  ],
+  "difficulty": "intermediate",
+  "id": "t08-q193",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-11",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "triple-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "a pre-cut mount",
+      "zh": "預切卡紙",
+      "note": "已切出開口的裱框材料，相紙須大於開口。"
+    }
+  ]
+}

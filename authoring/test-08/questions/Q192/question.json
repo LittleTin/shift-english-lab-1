@@ -1,0 +1,87 @@
+{
+  "number": 192,
+  "prompt": "Which setting keeps both ends of the bridge on the printed photo?",
+  "promptZh": "哪一種設定能讓印出的照片保留橋的兩端？",
+  "answer": "A",
+  "options": [
+    {
+      "id": "A",
+      "text": "Fit",
+      "zh": "完整置入",
+      "whyZh": "完整置入保留整張照片，符合里昂的要求。"
+    },
+    {
+      "id": "B",
+      "text": "Borderless",
+      "zh": "滿版",
+      "whyZh": "照片比例比相紙更寬，滿版會裁去部分畫面。"
+    },
+    {
+      "id": "C",
+      "text": "Both give the same result.",
+      "zh": "兩種效果相同。",
+      "whyZh": "這張照片與兩種相紙比例都不同，兩種設定不會得到相同構圖。"
+    },
+    {
+      "id": "D",
+      "text": "Neither unless Leon replaces the mount.",
+      "zh": "除非里昂換卡紙，否則兩種都不行。",
+      "whyZh": "原始取景由沖印設定決定，不需要換卡紙。"
+    }
+  ],
+  "explanationZh": "完整置入保留整張照片，符合里昂的要求。",
+  "evidence": "Choose Fit instead if you need to keep the whole picture. / Please keep both ends of the bridge visible. / The saved preview shows the bridge photo is wider in shape than either paper size.",
+  "evidenceSpans": [
+    {
+      "documentIndex": 0,
+      "documentId": "d1",
+      "sourceField": "text",
+      "startChar": 107,
+      "endChar": 164,
+      "exactQuote": "Choose Fit instead if you need to keep the whole picture.",
+      "sourceRole": "document-1",
+      "passageStartChar": 141,
+      "passageEndChar": 198
+    },
+    {
+      "documentIndex": 1,
+      "documentId": "d2",
+      "sourceField": "text",
+      "startChar": 33,
+      "endChar": 77,
+      "exactQuote": "Please keep both ends of the bridge visible.",
+      "sourceRole": "document-2",
+      "passageStartChar": 549,
+      "passageEndChar": 593
+    },
+    {
+      "documentIndex": 2,
+      "documentId": "d3",
+      "sourceField": "text",
+      "startChar": 143,
+      "endChar": 225,
+      "exactQuote": "The saved preview shows the bridge photo is wider in shape than either paper size.",
+      "sourceRole": "document-3",
+      "passageStartChar": 924,
+      "passageEndChar": 1006
+    }
+  ],
+  "difficulty": "intermediate",
+  "id": "t08-q192",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-11",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "triple-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "Fit",
+      "zh": "完整置入",
+      "note": "保留整張圖像，可能留白邊。"
+    }
+  ]
+}

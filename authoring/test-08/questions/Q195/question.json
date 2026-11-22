@@ -1,0 +1,65 @@
+{
+  "number": 195,
+  "prompt": "What can staff not do at the counter?",
+  "promptZh": "櫃檯不能提供哪項服務？",
+  "answer": "D",
+  "options": [
+    {
+      "id": "A",
+      "text": "Sell paper in two sizes",
+      "zh": "販售兩種尺寸的相紙",
+      "whyZh": "店員列出兩種可用尺寸。"
+    },
+    {
+      "id": "B",
+      "text": "Explain the Fit setting",
+      "zh": "說明完整置入設定",
+      "whyZh": "須知本身就說明此選項。"
+    },
+    {
+      "id": "C",
+      "text": "Work with a customer’s existing mount",
+      "zh": "使用顧客現有的卡紙",
+      "whyZh": "店員已量舊卡紙，也沒要求換新。"
+    },
+    {
+      "id": "D",
+      "text": "Trim the white strips from a print",
+      "zh": "裁去照片上的白邊",
+      "whyZh": "須知明白說櫃檯不提供這項裁切。"
+    }
+  ],
+  "explanationZh": "須知明白說櫃檯不提供這項裁切。",
+  "evidence": "We cannot trim those strips at the counter.",
+  "evidenceSpans": [
+    {
+      "documentIndex": 0,
+      "documentId": "d1",
+      "sourceField": "text",
+      "startChar": 210,
+      "endChar": 253,
+      "exactQuote": "We cannot trim those strips at the counter.",
+      "sourceRole": "document-1",
+      "passageStartChar": 244,
+      "passageEndChar": 287
+    }
+  ],
+  "difficulty": "foundation",
+  "id": "t08-q195",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-11",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "triple-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "trim",
+      "zh": "裁去",
+      "note": "在本題指沿著相紙邊緣裁去白邊。"
+    }
+  ]
+}

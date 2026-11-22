@@ -1,0 +1,98 @@
+{
+  "number": 200,
+  "difficulty": "intermediate",
+  "prompt": "Which photograph and caption can the team use for the first online update?",
+  "promptZh": "團隊第一次更新線上展覽時，可以使用哪張照片及哪一行圖說？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The full view of entry 17, captioned “Entry 17.”",
+      "zh": "17 號的全景照，圖說為「17 號作品」。",
+      "whyZh": "編號圖說可以用，但全景照仍拍到右下角的姓名縮寫，不可上傳。"
+    },
+    {
+      "id": "B",
+      "text": "The full view of entry 42, captioned “Entry 42.”",
+      "zh": "42 號的全景照，圖說為「42 號作品」。",
+      "whyZh": "即使沒有署名，琳仍未同意任何照片用於線上展覽。"
+    },
+    {
+      "id": "C",
+      "text": "The center-panel close-up of entry 17, captioned “Entry 17.”",
+      "zh": "17 號中央拼布的特寫，圖說為「17 號作品」。",
+      "whyZh": "泰莎同意照片用於線上展覽；現有特寫只拍無文字或姓名縮寫的中央拼布，圖說也只用編號。"
+    },
+    {
+      "id": "D",
+      "text": "The center-panel close-up of entry 17, captioned “Tessa King.”",
+      "zh": "17 號中央拼布的特寫，圖說為「泰莎・金」。",
+      "whyZh": "照片本身符合條件，但線上展覽圖說應用參展編號代替姓名。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "泰莎同意照片用於線上展覽；現有特寫只拍無文字或姓名縮寫的中央拼布，圖說也只用編號。",
+  "evidence": "In the gallery, use entry numbers in place of names. Post a photograph only if its maker approved online photography and no initials, signatures, or names are visible in the photograph. / Tessa declined name credit on the hall card but approved photos for the online gallery. Her initials are sewn into the lower right corner of the quilt. The center panel has no text or initials. / Lin approved name credit on the hall card but did not approve any online photos, even pictures that leave out her name. / There is a full view of entry 17 with the lower right corner visible and a close-up of only its center panel. There is also a full view of entry 42.",
+  "evidenceSpans": [
+    {
+      "sourceField": "text",
+      "documentId": "d1",
+      "documentIndex": 0,
+      "startChar": 612,
+      "endChar": 797,
+      "exactQuote": "In the gallery, use entry numbers in place of names. Post a photograph only if its maker approved online photography and no initials, signatures, or names are visible in the photograph.",
+      "sourceRole": "document-1",
+      "passageStartChar": 655,
+      "passageEndChar": 840
+    },
+    {
+      "sourceField": "text",
+      "documentId": "d2",
+      "documentIndex": 1,
+      "startChar": 152,
+      "endChar": 345,
+      "exactQuote": "Tessa declined name credit on the hall card but approved photos for the online gallery. Her initials are sewn into the lower right corner of the quilt. The center panel has no text or initials.",
+      "sourceRole": "document-2",
+      "passageStartChar": 1037,
+      "passageEndChar": 1230
+    },
+    {
+      "sourceField": "text",
+      "documentId": "d2",
+      "documentIndex": 1,
+      "startChar": 422,
+      "endChar": 541,
+      "exactQuote": "Lin approved name credit on the hall card but did not approve any online photos, even pictures that leave out her name.",
+      "sourceRole": "document-2",
+      "passageStartChar": 1307,
+      "passageEndChar": 1426
+    },
+    {
+      "sourceField": "text",
+      "documentId": "d3",
+      "documentIndex": 2,
+      "startChar": 396,
+      "endChar": 544,
+      "exactQuote": "There is a full view of entry 17 with the lower right corner visible and a close-up of only its center panel. There is also a full view of entry 42.",
+      "sourceRole": "document-3",
+      "passageStartChar": 1998,
+      "passageEndChar": 2146
+    }
+  ],
+  "id": "t08-q200",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-12",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "triple-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "close-up",
+      "zh": "特寫",
+      "note": "只拍作品的一個局部，與可看到整件作品的全景照相對。"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "number": 194,
+  "prompt": "Which order keeps the whole picture on paper and uses paper large enough for Leon’s mount?",
+  "promptZh": "哪一組合能把整張照片印在相紙上，且相紙夠大、適用里昂的卡紙？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "18 by 24 centimetres, borderless",
+      "zh": "18×24 公分，滿版",
+      "whyZh": "相紙等於卡紙開口，而且滿版會裁掉照片一部分。"
+    },
+    {
+      "id": "B",
+      "text": "20 by 25 centimetres, Fit",
+      "zh": "20×25 公分，完整置入",
+      "whyZh": "相紙大於實測開口，完整置入保留橋的兩端。"
+    },
+    {
+      "id": "C",
+      "text": "20 by 25 centimetres, borderless",
+      "zh": "20×25 公分，滿版",
+      "whyZh": "相紙尺寸符合，但比例不同仍會裁圖。"
+    },
+    {
+      "id": "D",
+      "text": "18 by 24 centimetres, Fit",
+      "zh": "18×24 公分，完整置入",
+      "whyZh": "照片畫面完整，但無法讓相紙邊緣壓在卡紙後。"
+    }
+  ],
+  "explanationZh": "相紙大於實測開口，完整置入保留橋的兩端。",
+  "evidence": "Choose Fit instead if you need to keep the whole picture. / Part of the paper needs to sit behind the mount, so the paper must be larger than the opening. / Please keep both ends of the bridge visible. / I measured Leon’s mount: its opening is 18 by 24 centimetres. / We offer 18 by 24 and 20 by 25 centimetre paper.",
+  "evidenceSpans": [
+    {
+      "documentIndex": 0,
+      "documentId": "d1",
+      "sourceField": "text",
+      "startChar": 107,
+      "endChar": 164,
+      "exactQuote": "Choose Fit instead if you need to keep the whole picture.",
+      "sourceRole": "document-1",
+      "passageStartChar": 141,
+      "passageEndChar": 198
+    },
+    {
+      "documentIndex": 0,
+      "documentId": "d1",
+      "sourceField": "text",
+      "startChar": 354,
+      "endChar": 448,
+      "exactQuote": "Part of the paper needs to sit behind the mount, so the paper must be larger than the opening.",
+      "sourceRole": "document-1",
+      "passageStartChar": 388,
+      "passageEndChar": 482
+    },
+    {
+      "documentIndex": 1,
+      "documentId": "d2",
+      "sourceField": "text",
+      "startChar": 33,
+      "endChar": 77,
+      "exactQuote": "Please keep both ends of the bridge visible.",
+      "sourceRole": "document-2",
+      "passageStartChar": 549,
+      "passageEndChar": 593
+    },
+    {
+      "documentIndex": 2,
+      "documentId": "d3",
+      "sourceField": "text",
+      "startChar": 0,
+      "endChar": 61,
+      "exactQuote": "I measured Leon’s mount: its opening is 18 by 24 centimetres.",
+      "sourceRole": "document-3",
+      "passageStartChar": 781,
+      "passageEndChar": 842
+    },
+    {
+      "documentIndex": 2,
+      "documentId": "d3",
+      "sourceField": "text",
+      "startChar": 94,
+      "endChar": 142,
+      "exactQuote": "We offer 18 by 24 and 20 by 25 centimetre paper.",
+      "sourceRole": "document-3",
+      "passageStartChar": 875,
+      "passageEndChar": 923
+    }
+  ],
+  "difficulty": "intermediate",
+  "id": "t08-q194",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-11",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "triple-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "the mount opening",
+      "zh": "卡紙開口",
+      "note": "此處須以實測尺寸為準，不是顧客先前猜測的尺寸。"
+    }
+  ]
+}

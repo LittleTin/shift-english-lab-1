@@ -1,0 +1,76 @@
+{
+  "number": 189,
+  "prompt": "Why is Cedar unsuitable even though it has the longest listed usable length?",
+  "promptZh": "Cedar 公布的可用長度最長，為何仍不能選？",
+  "answer": "A",
+  "options": [
+    {
+      "id": "A",
+      "text": "It is too narrow once both margins are included.",
+      "zh": "加上兩側餘量後，它不夠寬。",
+      "whyZh": "Cedar 寬五十八公分，只等於展板本身的寬度，還缺兩公分。"
+    },
+    {
+      "id": "B",
+      "text": "Its backing is permanent.",
+      "zh": "它使用永久背膠。",
+      "whyZh": "表格寫的是可移除。"
+    },
+    {
+      "id": "C",
+      "text": "Its usable length is less than 12 metres.",
+      "zh": "它的可用長度不足十二公尺。",
+      "whyZh": "表格列十六公尺，已足夠長。"
+    },
+    {
+      "id": "D",
+      "text": "Its listing includes damaged sections.",
+      "zh": "它公布的長度包含受損區段。",
+      "whyZh": "工單說表中可用長度已扣除受損區段。"
+    }
+  ],
+  "explanationZh": "Cedar 寬五十八公分，只等於展板本身的寬度，還缺兩公分。",
+  "evidence": "The lobby panel is 58 cm wide. Its two edges require one extra centimetre of film on each side, so the roll width must allow for both margins. / Cedar | 58 | 16 | removable",
+  "evidenceSpans": [
+    {
+      "documentIndex": 0,
+      "documentId": "d1",
+      "sourceField": "text",
+      "startChar": 172,
+      "endChar": 314,
+      "exactQuote": "The lobby panel is 58 cm wide. Its two edges require one extra centimetre of film on each side, so the roll width must allow for both margins.",
+      "sourceRole": "document-1",
+      "passageStartChar": 205,
+      "passageEndChar": 347
+    },
+    {
+      "documentIndex": 1,
+      "documentId": "d2",
+      "sourceField": "text",
+      "startChar": 104,
+      "endChar": 131,
+      "exactQuote": "Cedar | 58 | 16 | removable",
+      "sourceRole": "document-2",
+      "passageStartChar": 818,
+      "passageEndChar": 845
+    }
+  ],
+  "difficulty": "intermediate",
+  "id": "t08-q189",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-10",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "double-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "margin",
+      "zh": "餘量；邊距",
+      "note": "此處指展板每一側都要多留的寬度。"
+    }
+  ]
+}

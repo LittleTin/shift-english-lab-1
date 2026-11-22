@@ -1,0 +1,65 @@
+{
+  "number": 187,
+  "prompt": "What usable length is required for the final layout?",
+  "promptZh": "最後版面至少需要多長的可用卷材？",
+  "answer": "D",
+  "options": [
+    {
+      "id": "A",
+      "text": "8 metres",
+      "zh": "八公尺",
+      "whyZh": "增加是加法，不是從十公尺扣掉兩公尺。"
+    },
+    {
+      "id": "B",
+      "text": "10 metres",
+      "zh": "十公尺",
+      "whyZh": "這是原版面，漏算後加的兩公尺。"
+    },
+    {
+      "id": "C",
+      "text": "14 metres",
+      "zh": "十四公尺",
+      "whyZh": "十四公尺是某卷庫存，並非版面需要的長度。"
+    },
+    {
+      "id": "D",
+      "text": "12 metres",
+      "zh": "十二公尺",
+      "whyZh": "原十公尺加上新增兩公尺，共十二公尺。"
+    }
+  ],
+  "explanationZh": "原十公尺加上新增兩公尺，共十二公尺。",
+  "evidence": "The original layout required 10 metres. The designer has added two metres of printed material to the same layout.",
+  "evidenceSpans": [
+    {
+      "documentIndex": 0,
+      "documentId": "d1",
+      "sourceField": "text",
+      "startChar": 316,
+      "endChar": 429,
+      "exactQuote": "The original layout required 10 metres. The designer has added two metres of printed material to the same layout.",
+      "sourceRole": "document-1",
+      "passageStartChar": 349,
+      "passageEndChar": 462
+    }
+  ],
+  "difficulty": "intermediate",
+  "id": "t08-q187",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-10",
+  "revision": 1,
+  "topic": "business",
+  "tags": [
+    "double-passage",
+    "business"
+  ],
+  "vocabulary": [
+    {
+      "term": "usable length",
+      "zh": "可用長度",
+      "note": "表格所列長度已扣除受損區段。"
+    }
+  ]
+}

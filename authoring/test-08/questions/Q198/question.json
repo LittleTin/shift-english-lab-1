@@ -1,0 +1,98 @@
+{
+  "number": 198,
+  "difficulty": "intermediate",
+  "prompt": "How can the team display both entries in the hall without moving any furniture?",
+  "promptZh": "不移動任何家具，團隊要怎麼把兩件作品都放在展場展示？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Show 17 on the rail and 42 on the padded table.",
+      "zh": "17 號掛橫桿，42 號放在有軟墊的桌上。",
+      "whyZh": "17 號的布套只有三公分寬，穿不進需要五公分寬布套的橫桿。"
+    },
+    {
+      "id": "B",
+      "text": "Show 17 on the padded table and 42 on the feedback table.",
+      "zh": "17 號放在有軟墊的桌上，42 號放在回饋桌。",
+      "whyZh": "17 號適合放在有軟墊的桌上，但回饋桌沒有軟墊，不能用來展示 42 號。"
+    },
+    {
+      "id": "C",
+      "text": "Show both entries on the padded table.",
+      "zh": "兩件都放在有軟墊的桌上。",
+      "whyZh": "有軟墊的桌子只有一件作品的空間。"
+    },
+    {
+      "id": "D",
+      "text": "Show 17 on the padded table and 42 on the rail.",
+      "zh": "17 號放在有軟墊的桌上，42 號掛橫桿。",
+      "whyZh": "17 號開口只有三公分，須平放；42 號開口六公分，達到五公分的懸掛門檻。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "17 號開口只有三公分，須平放；42 號開口六公分，達到五公分的懸掛門檻。",
+  "evidence": "If the sleeve is too narrow for the rail, use a padded table instead. / 17, Harbor Steps, by Tessa King. The sleeve opening is three centimeters wide. / 42, Orchard Road, by Lin Bell. The sleeve opening is six centimeters wide. / The rail in the entrance hall fits sleeves at least five centimeters wide. The padded table by the window has room for one quilt. The other table is for filling out feedback cards; it is not padded.",
+  "evidenceSpans": [
+    {
+      "sourceField": "text",
+      "documentId": "d1",
+      "documentIndex": 0,
+      "startChar": 199,
+      "endChar": 268,
+      "exactQuote": "If the sleeve is too narrow for the rail, use a padded table instead.",
+      "sourceRole": "document-1",
+      "passageStartChar": 242,
+      "passageEndChar": 311
+    },
+    {
+      "sourceField": "text",
+      "documentId": "d2",
+      "documentIndex": 1,
+      "startChar": 73,
+      "endChar": 151,
+      "exactQuote": "17, Harbor Steps, by Tessa King. The sleeve opening is three centimeters wide.",
+      "sourceRole": "document-2",
+      "passageStartChar": 958,
+      "passageEndChar": 1036
+    },
+    {
+      "sourceField": "text",
+      "documentId": "d2",
+      "documentIndex": 1,
+      "startChar": 347,
+      "endChar": 421,
+      "exactQuote": "42, Orchard Road, by Lin Bell. The sleeve opening is six centimeters wide.",
+      "sourceRole": "document-2",
+      "passageStartChar": 1232,
+      "passageEndChar": 1306
+    },
+    {
+      "sourceField": "text",
+      "documentId": "d3",
+      "documentIndex": 2,
+      "startChar": 0,
+      "endChar": 198,
+      "exactQuote": "The rail in the entrance hall fits sleeves at least five centimeters wide. The padded table by the window has room for one quilt. The other table is for filling out feedback cards; it is not padded.",
+      "sourceRole": "document-3",
+      "passageStartChar": 1602,
+      "passageEndChar": 1800
+    }
+  ],
+  "id": "t08-q198",
+  "testId": "test-08",
+  "part": 7,
+  "groupId": "t08-r-p7-12",
+  "revision": 1,
+  "topic": "daily",
+  "tags": [
+    "triple-passage",
+    "daily"
+  ],
+  "vocabulary": [
+    {
+      "term": "at least",
+      "zh": "至少",
+      "note": "布套開口等於五公分或更寬才符合懸掛條件。"
+    }
+  ]
+}
