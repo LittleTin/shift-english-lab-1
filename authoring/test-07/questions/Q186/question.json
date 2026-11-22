@@ -1,0 +1,52 @@
+{
+  "id": "t07-q186",
+  "testId": "test-07",
+  "number": 186,
+  "part": 7,
+  "groupId": "t07-r-p7-10",
+  "revision": 1,
+  "topic": "work",
+  "difficulty": "intermediate",
+  "tags": [
+    "triple-passage",
+    "work"
+  ],
+  "prompt": "A customer who agreed to receive reminders opened one request during the trial and sent three messages about it. How many eligible cases should the service desk count for that request?",
+  "promptZh": "一位同意接收提醒的客戶在試行期間提出一項請求，並為此發了三封訊息。服務中心應將這項請求計為幾件符合條件的案件？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Zero, since the request took more than one message",
+      "zh": "0 件，因為這項請求涉及不只一封訊息",
+      "whyZh": "用幾封訊息不是資格條件；試行期間建立且同意提醒，這件就符合。"
+    },
+    {
+      "id": "B",
+      "text": "Two, because the later messages are counted together",
+      "zh": "兩件，因為後續訊息合併計為一件",
+      "whyZh": "規則沒有將最初訊息與後續訊息分開計，都是同一項請求。"
+    },
+    {
+      "id": "C",
+      "text": "One, because the messages concern the same request",
+      "zh": "一件，因為這些訊息都關於同一項請求",
+      "whyZh": "文件一明說一項符合條件的請求只算一件，不管有幾封訊息。"
+    },
+    {
+      "id": "D",
+      "text": "Three, one for each message",
+      "zh": "三件，每封訊息各算一件",
+      "whyZh": "表格按請求計，不是按訊息計；雖然有三封訊息，案件仍只有一件。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "文件一明說一項符合條件的請求只算一件，不管有幾封訊息。",
+  "evidence": "Count one eligible case per request, even if several messages are exchanged about it.",
+  "vocabulary": [
+    {
+      "term": "eligible",
+      "zh": "符合條件的",
+      "note": "此處有明確的收案期間與同意提醒兩項條件。"
+    }
+  ]
+}

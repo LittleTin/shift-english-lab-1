@@ -1,0 +1,52 @@
+{
+  "id": "t07-q187",
+  "testId": "test-07",
+  "number": 187,
+  "part": 7,
+  "groupId": "t07-r-p7-10",
+  "revision": 1,
+  "topic": "work",
+  "difficulty": "foundation",
+  "tags": [
+    "triple-passage",
+    "work"
+  ],
+  "prompt": "Which method included the most eligible cases?",
+  "promptZh": "哪種方式納入最多符合條件的案件？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Green",
+      "zh": "Green",
+      "whyZh": "Green 有 36 件，少於 Amber 的 48 件。"
+    },
+    {
+      "id": "B",
+      "text": "Amber",
+      "zh": "Amber",
+      "whyZh": "結果表的符合條件案件數為 Green 36、Slate 24、Amber 48，Amber 最多。"
+    },
+    {
+      "id": "C",
+      "text": "Slate",
+      "zh": "Slate",
+      "whyZh": "Slate 有 24 件，是三種方式中最少的。"
+    },
+    {
+      "id": "D",
+      "text": "Green and Amber had the same highest total.",
+      "zh": "Green 和 Amber 並列最多。",
+      "whyZh": "兩者分別為 36 件和 48 件，並不相同。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "結果表的符合條件案件數為 Green 36、Slate 24、Amber 48，Amber 最多。",
+  "evidence": "Read the attached results chart.",
+  "vocabulary": [
+    {
+      "term": "include",
+      "zh": "納入",
+      "note": "此處表示試行涵蓋多少件符合條件的案件。"
+    }
+  ]
+}

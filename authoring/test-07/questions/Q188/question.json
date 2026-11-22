@@ -1,0 +1,52 @@
+{
+  "id": "t07-q188",
+  "testId": "test-07",
+  "number": 188,
+  "part": 7,
+  "groupId": "t07-r-p7-10",
+  "revision": 1,
+  "topic": "work",
+  "difficulty": "advanced",
+  "tags": [
+    "triple-passage",
+    "work"
+  ],
+  "prompt": "Which method can the team recommend under all three requirements in the email?",
+  "promptZh": "依內部郵件的全部三項要求，團隊可推薦哪種方式？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Green only",
+      "zh": "只有 Green",
+      "whyZh": "Green 有 36 件，27 件恰為四分之三，且結案後提醒為零，三項都通過。"
+    },
+    {
+      "id": "B",
+      "text": "Slate only",
+      "zh": "只有 Slate",
+      "whyZh": "Slate 的比率超過四分之三且沒有結案後提醒，但只納入 24 件，不到三十件。"
+    },
+    {
+      "id": "C",
+      "text": "Amber only",
+      "zh": "只有 Amber",
+      "whyZh": "Amber 案件數與比例達標，但發了兩次結案後提醒，不符合零提醒規定。"
+    },
+    {
+      "id": "D",
+      "text": "Green and Slate",
+      "zh": "Green 和 Slate",
+      "whyZh": "只有 Green 三項都通過，Slate 不滿至少三十件的要求。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "Green 有 36 件，27 件恰為四分之三，且結案後提醒為零，三項都通過。",
+  "evidence": "Please recommend a method only if it had at least thirty eligible cases, at least three quarters of its eligible cases were resolved without a repeat contact, and it sent no reminders after closure. / Read the attached results chart.",
+  "vocabulary": [
+    {
+      "term": "at least three quarters",
+      "zh": "至少四分之三",
+      "note": "等於四分之三也符合 at least，不要求一定更高。"
+    }
+  ]
+}
