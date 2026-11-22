@@ -1,47 +1,86 @@
 {
   "number": 189,
-  "prompt": "Why is Cedar unsuitable even though it has the longest listed usable length?",
-  "promptZh": "Cedar 公布的可用長度最長，為何仍不能選？",
+  "prompt": "In a separate scenario, all four rolls are available. The workshop sign needs 12 metres of film at least 62 cm wide and can use either backing. The lobby design is unchanged. Which reservation lets both jobs go ahead using a different whole roll for each?",
+  "promptZh": "在另一個情境裡，四卷貼膜都可使用。工作間標誌需十二公尺長、至少六十二公分寬，背膠兩種皆可。大廳版面不變。哪個預留方式能讓兩項工作各用不同的單卷、都照常進行？",
   "answer": "A",
   "options": [
     {
       "id": "A",
-      "text": "It is too narrow once both margins are included.",
-      "zh": "加上兩側餘量後，它不夠寬。",
-      "whyZh": "Cedar 寬五十八公分，只等於展板本身的寬度，還缺兩公分。"
+      "text": "Reserve Birch for the workshop and Aster for the lobby.",
+      "zh": "工作間預留 Birch，大廳預留 Aster。",
+      "whyZh": "Aster 與 Birch 都可做工作間；先把兩者中唯一也能做大廳的 Aster 留給大廳，另一卷 Birch 做工作間。"
     },
     {
       "id": "B",
-      "text": "Its backing is permanent.",
-      "zh": "它使用永久背膠。",
-      "whyZh": "表格寫的是可移除。"
+      "text": "Reserve Aster for the workshop and Birch for the lobby.",
+      "zh": "工作間預留 Aster，大廳預留 Birch。",
+      "whyZh": "Aster 可以做工作間，但一旦用掉，大廳不能拿永久型的 Birch 替代。"
     },
     {
       "id": "C",
-      "text": "Its usable length is less than 12 metres.",
-      "zh": "它的可用長度不足十二公尺。",
-      "whyZh": "表格列十六公尺，已足夠長。"
+      "text": "Reserve Aster for the workshop and Cedar for the lobby.",
+      "zh": "工作間預留 Aster，大廳預留 Cedar。",
+      "whyZh": "兩卷長度都夠，但 Cedar 只有五十八公分，大廳加兩側餘量至少要六十。"
     },
     {
       "id": "D",
-      "text": "Its listing includes damaged sections.",
-      "zh": "它公布的長度包含受損區段。",
-      "whyZh": "工單說表中可用長度已扣除受損區段。"
+      "text": "Reserve Cedar for the workshop and Aster for the lobby.",
+      "zh": "工作間預留 Cedar，大廳預留 Aster。",
+      "whyZh": "大廳用 Aster 正確；Cedar 的十六公尺夠長，背膠在工作間也可用，但寬度只有五十八公分，低於工作間所需的六十二公分。"
     }
   ],
-  "explanationZh": "Cedar 寬五十八公分，只等於展板本身的寬度，還缺兩公分。",
-  "evidence": "The lobby panel is 58 cm wide. Its two edges require one extra centimetre of film on each side, so the roll width must allow for both margins. / Cedar | 58 | 16 | removable",
+  "explanationZh": "Aster 與 Birch 都可做工作間；先把兩者中唯一也能做大廳的 Aster 留給大廳，另一卷 Birch 做工作間。",
+  "evidence": "Use film with removable backing; permanent backing is approved only for the rear workshop sign, not the lobby. / The lobby panel is 58 cm wide. Its two edges require one extra centimetre of film on each side, so the roll width must allow for both margins. / The original layout required 10 metres. The designer has added two metres of printed material to the same layout. / Aster | 62 | 14 | removable / Birch | 64 | 12 | permanent / Cedar | 58 | 16 | removable / Dune | 60 | 11 | removable",
   "evidenceSpans": [
+    {
+      "documentIndex": 0,
+      "documentId": "d1",
+      "sourceField": "text",
+      "startChar": 61,
+      "endChar": 171,
+      "passageStartChar": 94,
+      "passageEndChar": 204,
+      "exactQuote": "Use film with removable backing; permanent backing is approved only for the rear workshop sign, not the lobby."
+    },
     {
       "documentIndex": 0,
       "documentId": "d1",
       "sourceField": "text",
       "startChar": 172,
       "endChar": 314,
-      "exactQuote": "The lobby panel is 58 cm wide. Its two edges require one extra centimetre of film on each side, so the roll width must allow for both margins.",
-      "sourceRole": "document-1",
       "passageStartChar": 205,
-      "passageEndChar": 347
+      "passageEndChar": 347,
+      "exactQuote": "The lobby panel is 58 cm wide. Its two edges require one extra centimetre of film on each side, so the roll width must allow for both margins."
+    },
+    {
+      "documentIndex": 0,
+      "documentId": "d1",
+      "sourceField": "text",
+      "startChar": 316,
+      "endChar": 429,
+      "passageStartChar": 349,
+      "passageEndChar": 462,
+      "exactQuote": "The original layout required 10 metres. The designer has added two metres of printed material to the same layout."
+    },
+    {
+      "documentIndex": 1,
+      "documentId": "d2",
+      "sourceField": "text",
+      "startChar": 48,
+      "endChar": 75,
+      "passageStartChar": 762,
+      "passageEndChar": 789,
+      "exactQuote": "Aster | 62 | 14 | removable"
+    },
+    {
+      "documentIndex": 1,
+      "documentId": "d2",
+      "sourceField": "text",
+      "startChar": 76,
+      "endChar": 103,
+      "passageStartChar": 790,
+      "passageEndChar": 817,
+      "exactQuote": "Birch | 64 | 12 | permanent"
     },
     {
       "documentIndex": 1,
@@ -49,18 +88,27 @@
       "sourceField": "text",
       "startChar": 104,
       "endChar": 131,
-      "exactQuote": "Cedar | 58 | 16 | removable",
-      "sourceRole": "document-2",
       "passageStartChar": 818,
-      "passageEndChar": 845
+      "passageEndChar": 845,
+      "exactQuote": "Cedar | 58 | 16 | removable"
+    },
+    {
+      "documentIndex": 1,
+      "documentId": "d2",
+      "sourceField": "text",
+      "startChar": 132,
+      "endChar": 158,
+      "passageStartChar": 846,
+      "passageEndChar": 872,
+      "exactQuote": "Dune | 60 | 11 | removable"
     }
   ],
-  "difficulty": "intermediate",
+  "difficulty": "advanced",
   "id": "t08-q189",
   "testId": "test-08",
   "part": 7,
   "groupId": "t08-r-p7-10",
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
   "tags": [
     "double-passage",

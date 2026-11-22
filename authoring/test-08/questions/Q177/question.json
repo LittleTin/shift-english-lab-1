@@ -1,88 +1,124 @@
 {
   "number": 177,
-  "difficulty": "intermediate",
-  "prompt": "Which slot can the coordinator offer Dana’s group immediately?",
-  "promptZh": "協調員目前可以立即提供黛娜一行人哪個時段？",
+  "difficulty": "advanced",
+  "prompt": "A substitute technician takes 9:00, and written approval arrives for 11:00. Each hour-long slot has a live run from twenty to thirty minutes after it starts. Dana can leave as soon as the run ends, but must leave by 11:25. Which is the latest valid booking that lets her see the whole run?",
+  "promptZh": "替補設置技術員接手九點，十一點也已收到書面核准。每時段一小時，實機運轉從開始後第二十分鐘持續到第三十分鐘。黛娜可在運轉結束後離開，但最晚十一點二十五分須走。能讓她看完整場運轉、且最晚的有效預約是哪一項？",
   "options": [
     {
       "id": "A",
-      "text": "9:00 in the machine area",
-      "zh": "九點在機器區",
-      "whyZh": "九點沒有設置技術員。"
+      "text": "Book the whole 9:00 slot; Dana can leave after the run.",
+      "zh": "預約九點的完整時段；黛娜看完實機運轉即可離開。",
+      "whyZh": "九點有人且就緒，但十點也符合限制，所以九點不是最晚可行的選項。"
     },
     {
       "id": "B",
-      "text": "10:00 in the machine area",
-      "zh": "十點在機器區",
-      "whyZh": "十點已就緒，且瑪塔與設置技術員兩人都能到場。"
+      "text": "Book the whole 10:00 slot; Dana can leave after the run.",
+      "zh": "預約十點的完整時段；黛娜看完實機運轉即可離開。",
+      "whyZh": "十點就緒且人員齊，運轉在十點三十分結束；十一點即使已核准，也要到十一點三十分才能看完。"
     },
     {
       "id": "C",
-      "text": "11:00 in the machine area",
-      "zh": "十一點在機器區",
-      "whyZh": "雖然兩種人員皆可到場，十一點仍待書面核准。"
+      "text": "Book the whole 11:00 slot; Dana can leave after the run.",
+      "zh": "預約十一點的完整時段；黛娜看完實機運轉即可離開。",
+      "whyZh": "人員與核准都符合，但運轉到十一點三十分，黛娜會提早五分鐘離開。"
     },
     {
       "id": "D",
-      "text": "9:00 in the training room for a live demonstration",
-      "zh": "九點在訓練室做實機示範",
-      "whyZh": "訓練室只能檢視樣品，不能運轉機器示範。"
+      "text": "Book 10:20 to 10:30 only, since Dana does not need to stay for the full hour.",
+      "zh": "只預約十點二十分到十點三十分，因為黛娜不必待到時段結束。",
+      "whyZh": "客人可先走，不代表協調員可只預約設備運轉的十分鐘。"
     }
   ],
   "answer": "B",
-  "explanationZh": "十點已就緒，且瑪塔與設置技術員兩人都能到場。",
-  "evidence": "You may offer a READY slot immediately if both roles are covered. / The technician for 10:00 can still take that slot. / The 9:00 and 10:00 slots are listed as READY. / Marta can operate all morning on Wednesday",
+  "explanationZh": "十點就緒且人員齊，運轉在十點三十分結束；十一點即使已核准，也要到十一點三十分才能看完。",
+  "evidence": "Each customer demonstration needs an operator and a setup technician. / Book the entire slot, even if the machine will run for only part of it. / A slot marked REVIEW is not open for a demonstration until the safety lead sends written approval. / You may offer a READY slot immediately if both roles are covered. / Marta can operate all morning on Wednesday / The technician for 10:00 can still take that slot. / There is also a technician available at 11:00 / The 9:00 and 10:00 slots are listed as READY.",
   "evidenceSpans": [
     {
       "documentIndex": 0,
+      "documentId": "d1-1",
+      "sourceField": "text",
+      "startChar": 0,
+      "endChar": 69,
+      "passageStartChar": 39,
+      "passageEndChar": 108,
+      "exactQuote": "Each customer demonstration needs an operator and a setup technician."
+    },
+    {
+      "documentIndex": 0,
+      "documentId": "d1-1",
+      "sourceField": "text",
+      "startChar": 131,
+      "endChar": 202,
+      "passageStartChar": 170,
+      "passageEndChar": 241,
+      "exactQuote": "Book the entire slot, even if the machine will run for only part of it."
+    },
+    {
+      "documentIndex": 0,
+      "documentId": "d1-1",
+      "sourceField": "text",
+      "startChar": 204,
+      "endChar": 302,
+      "passageStartChar": 243,
+      "passageEndChar": 341,
+      "exactQuote": "A slot marked REVIEW is not open for a demonstration until the safety lead sends written approval."
+    },
+    {
+      "documentIndex": 0,
+      "documentId": "d1-1",
       "sourceField": "text",
       "startChar": 303,
       "endChar": 368,
-      "exactQuote": "You may offer a READY slot immediately if both roles are covered.",
-      "documentId": "d1-1",
-      "sourceRole": "document-1",
       "passageStartChar": 342,
-      "passageEndChar": 407
+      "passageEndChar": 407,
+      "exactQuote": "You may offer a READY slot immediately if both roles are covered."
     },
     {
       "documentIndex": 1,
-      "sourceField": "text",
-      "startChar": 100,
-      "endChar": 150,
-      "exactQuote": "The technician for 10:00 can still take that slot.",
       "documentId": "d1-2",
-      "sourceRole": "document-2",
-      "passageStartChar": 705,
-      "passageEndChar": 755
-    },
-    {
-      "documentIndex": 1,
-      "sourceField": "text",
-      "startChar": 264,
-      "endChar": 309,
-      "exactQuote": "The 9:00 and 10:00 slots are listed as READY.",
-      "documentId": "d1-2",
-      "sourceRole": "document-2",
-      "passageStartChar": 869,
-      "passageEndChar": 914
-    },
-    {
-      "documentIndex": 1,
       "sourceField": "text",
       "startChar": 0,
       "endChar": 42,
-      "exactQuote": "Marta can operate all morning on Wednesday",
-      "documentId": "d1-2",
-      "sourceRole": "document-2",
       "passageStartChar": 605,
-      "passageEndChar": 647
+      "passageEndChar": 647,
+      "exactQuote": "Marta can operate all morning on Wednesday"
+    },
+    {
+      "documentIndex": 1,
+      "documentId": "d1-2",
+      "sourceField": "text",
+      "startChar": 100,
+      "endChar": 150,
+      "passageStartChar": 705,
+      "passageEndChar": 755,
+      "exactQuote": "The technician for 10:00 can still take that slot."
+    },
+    {
+      "documentIndex": 1,
+      "documentId": "d1-2",
+      "sourceField": "text",
+      "startChar": 151,
+      "endChar": 196,
+      "passageStartChar": 756,
+      "passageEndChar": 801,
+      "exactQuote": "There is also a technician available at 11:00"
+    },
+    {
+      "documentIndex": 1,
+      "documentId": "d1-2",
+      "sourceField": "text",
+      "startChar": 264,
+      "endChar": 309,
+      "passageStartChar": 869,
+      "passageEndChar": 914,
+      "exactQuote": "The 9:00 and 10:00 slots are listed as READY."
     }
   ],
   "id": "t08-q177",
   "testId": "test-08",
   "part": 7,
   "groupId": "t08-r-p7-08",
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
   "tags": [
     "double-passage",

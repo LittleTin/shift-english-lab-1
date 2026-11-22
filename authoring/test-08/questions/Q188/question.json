@@ -1,36 +1,36 @@
 {
   "number": 188,
-  "prompt": "Which single roll meets all the conditions for the lobby panel?",
-  "promptZh": "哪一卷單獨符合大廳展板的所有條件？",
+  "prompt": "Aster has been set aside for another job. The designer can remove up to one metre from the revised lobby layout, but neither margin nor the backing or single-roll rule can change. What would make the lobby work possible?",
+  "promptZh": "Aster 已留給另一個工作。設計師最多可以從新版大廳版面減一公尺，但兩側餘量、背膠和單卷規定都不能改。哪個做法能讓大廳工作照常進行？",
   "answer": "C",
   "options": [
     {
       "id": "A",
-      "text": "Birch",
-      "zh": "Birch",
-      "whyZh": "寬度與長度足夠，但背膠是永久型。"
+      "text": "Use Birch after trimming one metre from the layout.",
+      "zh": "把版面縮短一公尺，改用 Birch。",
+      "whyZh": "Birch 的寬與長不成問題，但大廳不能用永久背膠。"
     },
     {
       "id": "B",
-      "text": "Cedar",
-      "zh": "Cedar",
-      "whyZh": "長度與背膠符合，但五十八公分不含兩側餘量。"
+      "text": "Use Cedar without shortening the layout.",
+      "zh": "不縮短版面，改用 Cedar。",
+      "whyZh": "Cedar 長度充足且可移除，但寬只等於展板本身，未含餘量。"
     },
     {
       "id": "C",
-      "text": "Aster",
-      "zh": "Aster",
-      "whyZh": "寬至少六十公分、可用長至少十二公尺且可移除；Aster 的 62、14 與可移除均符合。"
+      "text": "Shorten the revised layout by one metre and use Dune.",
+      "zh": "把新版版面縮短一公尺，使用 Dune。",
+      "whyZh": "十二公尺減一為十一；Dune 可用十一、寬六十且背膠可移除。"
     },
     {
       "id": "D",
-      "text": "Dune",
-      "zh": "Dune",
-      "whyZh": "寬度及背膠符合，但只有十一公尺可用。"
+      "text": "Keep the revised length and join Dune to part of Cedar.",
+      "zh": "維持新版長度，把 Dune 接上一段 Cedar。",
+      "whyZh": "即便加長，拼接仍違反單卷規定。"
     }
   ],
-  "explanationZh": "寬至少六十公分、可用長至少十二公尺且可移除；Aster 的 62、14 與可移除均符合。",
-  "evidence": "Use film with removable backing; permanent backing is approved only for the rear workshop sign, not the lobby. / The lobby panel is 58 cm wide. Its two edges require one extra centimetre of film on each side, so the roll width must allow for both margins. / The original layout required 10 metres. The designer has added two metres of printed material to the same layout. / Roll | Width (cm) | Usable length (m) | Backing\nAster | 62 | 14 | removable\nBirch | 64 | 12 | permanent\nCedar | 58 | 16 | removable\nDune | 60 | 11 | removable",
+  "explanationZh": "十二公尺減一為十一；Dune 可用十一、寬六十且背膠可移除。",
+  "evidence": "Use film with removable backing; permanent backing is approved only for the rear workshop sign, not the lobby. / The lobby panel is 58 cm wide. Its two edges require one extra centimetre of film on each side, so the roll width must allow for both margins. / The original layout required 10 metres. The designer has added two metres of printed material to the same layout. / Prepare the full length from a single roll: a join would cross the middle of a word. / Aster | 62 | 14 | removable / Birch | 64 | 12 | permanent / Cedar | 58 | 16 | removable / Dune | 60 | 11 | removable",
   "evidenceSpans": [
     {
       "documentIndex": 0,
@@ -38,10 +38,9 @@
       "sourceField": "text",
       "startChar": 61,
       "endChar": 171,
-      "exactQuote": "Use film with removable backing; permanent backing is approved only for the rear workshop sign, not the lobby.",
-      "sourceRole": "document-1",
       "passageStartChar": 94,
-      "passageEndChar": 204
+      "passageEndChar": 204,
+      "exactQuote": "Use film with removable backing; permanent backing is approved only for the rear workshop sign, not the lobby."
     },
     {
       "documentIndex": 0,
@@ -49,10 +48,9 @@
       "sourceField": "text",
       "startChar": 172,
       "endChar": 314,
-      "exactQuote": "The lobby panel is 58 cm wide. Its two edges require one extra centimetre of film on each side, so the roll width must allow for both margins.",
-      "sourceRole": "document-1",
       "passageStartChar": 205,
-      "passageEndChar": 347
+      "passageEndChar": 347,
+      "exactQuote": "The lobby panel is 58 cm wide. Its two edges require one extra centimetre of film on each side, so the roll width must allow for both margins."
     },
     {
       "documentIndex": 0,
@@ -60,29 +58,67 @@
       "sourceField": "text",
       "startChar": 316,
       "endChar": 429,
-      "exactQuote": "The original layout required 10 metres. The designer has added two metres of printed material to the same layout.",
-      "sourceRole": "document-1",
       "passageStartChar": 349,
-      "passageEndChar": 462
+      "passageEndChar": 462,
+      "exactQuote": "The original layout required 10 metres. The designer has added two metres of printed material to the same layout."
+    },
+    {
+      "documentIndex": 0,
+      "documentId": "d1",
+      "sourceField": "text",
+      "startChar": 430,
+      "endChar": 514,
+      "passageStartChar": 463,
+      "passageEndChar": 547,
+      "exactQuote": "Prepare the full length from a single roll: a join would cross the middle of a word."
     },
     {
       "documentIndex": 1,
       "documentId": "d2",
       "sourceField": "text",
-      "startChar": 0,
+      "startChar": 48,
+      "endChar": 75,
+      "passageStartChar": 762,
+      "passageEndChar": 789,
+      "exactQuote": "Aster | 62 | 14 | removable"
+    },
+    {
+      "documentIndex": 1,
+      "documentId": "d2",
+      "sourceField": "text",
+      "startChar": 76,
+      "endChar": 103,
+      "passageStartChar": 790,
+      "passageEndChar": 817,
+      "exactQuote": "Birch | 64 | 12 | permanent"
+    },
+    {
+      "documentIndex": 1,
+      "documentId": "d2",
+      "sourceField": "text",
+      "startChar": 104,
+      "endChar": 131,
+      "passageStartChar": 818,
+      "passageEndChar": 845,
+      "exactQuote": "Cedar | 58 | 16 | removable"
+    },
+    {
+      "documentIndex": 1,
+      "documentId": "d2",
+      "sourceField": "text",
+      "startChar": 132,
       "endChar": 158,
-      "exactQuote": "Roll | Width (cm) | Usable length (m) | Backing\nAster | 62 | 14 | removable\nBirch | 64 | 12 | permanent\nCedar | 58 | 16 | removable\nDune | 60 | 11 | removable",
-      "sourceRole": "document-2",
-      "passageStartChar": 714,
-      "passageEndChar": 872
+      "passageStartChar": 846,
+      "passageEndChar": 872,
+      "exactQuote": "Dune | 60 | 11 | removable"
     }
   ],
-  "difficulty": "intermediate",
+  "difficulty": "advanced",
   "id": "t08-q188",
   "testId": "test-08",
   "part": 7,
   "groupId": "t08-r-p7-10",
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
   "tags": [
     "double-passage",
