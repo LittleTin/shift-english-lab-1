@@ -1,88 +1,88 @@
 {
   "number": 200,
   "difficulty": "intermediate",
-  "prompt": "Which photograph and caption can the team use for the first online update?",
-  "promptZh": "團隊第一次更新線上展覽時，可以使用哪張照片及哪一行圖說？",
+  "prompt": "Both substitute collectors arrive as described. What can the pickup volunteer release, and what should stay for verification?",
+  "promptZh": "兩位代領人都依上述情況到場。領件志工可以交付哪一件，哪一件應保留待確認？",
   "options": [
     {
       "id": "A",
-      "text": "The full view of entry 17, captioned “Entry 17.”",
-      "zh": "17 號的全景照，圖說為「17 號作品」。",
-      "whyZh": "編號圖說可以用，但全景照仍拍到右下角的姓名縮寫，不可上傳。"
+      "text": "Give 17 to Ellis; hold 42.",
+      "zh": "將 17 號交給艾利斯；保留 42 號。",
+      "whyZh": "艾利斯的訊息對應 17 號，但書面同意出自 42 號製作者琳，不能用來領 17 號。"
     },
     {
       "id": "B",
-      "text": "The full view of entry 42, captioned “Entry 42.”",
-      "zh": "42 號的全景照，圖說為「42 號作品」。",
-      "whyZh": "即使沒有署名，琳仍未同意任何照片用於線上展覽。"
+      "text": "Give 42 to Ellis; hold 17.",
+      "zh": "將 42 號交給艾利斯；保留 17 號。",
+      "whyZh": "艾利斯有琳的授權，但沒有 42 號的領件訊息；羅賓的 17 號訊息及泰莎同意均齊全。"
     },
     {
       "id": "C",
-      "text": "The center-panel close-up of entry 17, captioned “Entry 17.”",
-      "zh": "17 號中央拼布的特寫，圖說為「17 號作品」。",
-      "whyZh": "泰莎同意照片用於線上展覽；現有特寫只拍無文字或姓名縮寫的中央拼布，圖說也只用編號。"
+      "text": "Give 17 to Robin; hold 42.",
+      "zh": "將 17 號交給羅賓；保留 42 號。",
+      "whyZh": "羅賓的原始訊息與泰莎的指名同意均對應 17 號。艾利斯有琳的指名同意，卻只有 17 號的訊息，應保留 42 號並向琳確認。"
     },
     {
       "id": "D",
-      "text": "The center-panel close-up of entry 17, captioned “Tessa King.”",
-      "zh": "17 號中央拼布的特寫，圖說為「泰莎・金」。",
-      "whyZh": "照片本身符合條件，但線上展覽圖說應用參展編號代替姓名。"
+      "text": "Give 17 to Robin and 42 to Ellis.",
+      "zh": "將 17 號交給羅賓，42 號交給艾利斯。",
+      "whyZh": "羅賓的資格齊全；艾利斯除了琳的書面同意，仍須有 42 號的原始領件訊息。"
     }
   ],
   "answer": "C",
-  "explanationZh": "泰莎同意照片用於線上展覽；現有特寫只拍無文字或姓名縮寫的中央拼布，圖說也只用編號。",
-  "evidence": "In the gallery, use entry numbers in place of names. Post a photograph only if its maker approved online photography and no initials, signatures, or names are visible in the photograph. / Tessa declined name credit on the hall card but approved photos for the online gallery. Her initials are sewn into the lower right corner of the quilt. The center panel has no text or initials. / Lin approved name credit on the hall card but did not approve any online photos, even pictures that leave out her name. / There is a full view of entry 17 with the lower right corner visible and a close-up of only its center panel. There is also a full view of entry 42.",
+  "explanationZh": "羅賓的原始訊息與泰莎的指名同意均對應 17 號。艾利斯有琳的指名同意，卻只有 17 號的訊息，應保留 42 號並向琳確認。",
+  "evidence": "For pickup by a substitute, require the original message for that entry and written approval naming the collector from its maker. If either is missing, hold the quilt and check with the maker. / 17, Harbor Steps, by Tessa King: three-centimeter sleeve. / 42, Orchard Road, by Lin Bell: six-centimeter sleeve. / Ellis brings Lin's written approval naming Ellis, but the pickup message is for 17. Robin brings the original message for 17 and Tessa's email naming Robin.",
   "evidenceSpans": [
     {
       "sourceField": "text",
       "documentId": "d1",
       "documentIndex": 0,
-      "startChar": 612,
-      "endChar": 797,
-      "exactQuote": "In the gallery, use entry numbers in place of names. Post a photograph only if its maker approved online photography and no initials, signatures, or names are visible in the photograph.",
+      "startChar": 565,
+      "endChar": 757,
+      "exactQuote": "For pickup by a substitute, require the original message for that entry and written approval naming the collector from its maker. If either is missing, hold the quilt and check with the maker.",
       "sourceRole": "document-1",
-      "passageStartChar": 655,
-      "passageEndChar": 840
+      "passageStartChar": 612,
+      "passageEndChar": 804
     },
     {
       "sourceField": "text",
       "documentId": "d2",
       "documentIndex": 1,
-      "startChar": 152,
-      "endChar": 345,
-      "exactQuote": "Tessa declined name credit on the hall card but approved photos for the online gallery. Her initials are sewn into the lower right corner of the quilt. The center panel has no text or initials.",
+      "startChar": 0,
+      "endChar": 57,
+      "exactQuote": "17, Harbor Steps, by Tessa King: three-centimeter sleeve.",
       "sourceRole": "document-2",
-      "passageStartChar": 1037,
-      "passageEndChar": 1230
+      "passageStartChar": 843,
+      "passageEndChar": 900
     },
     {
       "sourceField": "text",
       "documentId": "d2",
       "documentIndex": 1,
-      "startChar": 422,
-      "endChar": 541,
-      "exactQuote": "Lin approved name credit on the hall card but did not approve any online photos, even pictures that leave out her name.",
+      "startChar": 196,
+      "endChar": 249,
+      "exactQuote": "42, Orchard Road, by Lin Bell: six-centimeter sleeve.",
       "sourceRole": "document-2",
-      "passageStartChar": 1307,
-      "passageEndChar": 1426
+      "passageStartChar": 1039,
+      "passageEndChar": 1092
     },
     {
       "sourceField": "text",
       "documentId": "d3",
       "documentIndex": 2,
-      "startChar": 396,
-      "endChar": 544,
-      "exactQuote": "There is a full view of entry 17 with the lower right corner visible and a close-up of only its center panel. There is also a full view of entry 42.",
+      "startChar": 419,
+      "endChar": 575,
+      "exactQuote": "Ellis brings Lin's written approval naming Ellis, but the pickup message is for 17. Robin brings the original message for 17 and Tessa's email naming Robin.",
       "sourceRole": "document-3",
-      "passageStartChar": 1998,
-      "passageEndChar": 2146
+      "passageStartChar": 1859,
+      "passageEndChar": 2015
     }
   ],
   "id": "t08-q200",
   "testId": "test-08",
   "part": 7,
   "groupId": "t08-r-p7-12",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
   "tags": [
     "triple-passage",
@@ -90,9 +90,9 @@
   ],
   "vocabulary": [
     {
-      "term": "close-up",
-      "zh": "特寫",
-      "note": "只拍作品的一個局部，與可看到整件作品的全景照相對。"
+      "term": "substitute collector",
+      "zh": "代領人",
+      "note": "指代替製作者來領取作品的人。"
     }
   ]
 }

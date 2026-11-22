@@ -1,88 +1,88 @@
 {
   "number": 198,
-  "difficulty": "intermediate",
-  "prompt": "How can the team display both entries in the hall without moving any furniture?",
-  "promptZh": "不移動任何家具，團隊要怎麼把兩件作品都放在展場展示？",
+  "difficulty": "advanced",
+  "prompt": "The editor wants one new full photo for the public gallery, not another close-up. Which plan is feasible under the current permissions and schedule?",
+  "promptZh": "編輯想替公開圖庫新增一張全幅照，而不是再加一張特寫。依目前的授權和時間安排，哪項做法可行？",
   "options": [
     {
       "id": "A",
-      "text": "Show 17 on the rail and 42 on the padded table.",
-      "zh": "17 號掛橫桿，42 號放在有軟墊的桌上。",
-      "whyZh": "17 號的布套只有三公分寬，穿不進需要五公分寬布套的橫桿。"
+      "text": "10:50: photograph 17 with the screen.",
+      "zh": "十點五十分：用紙片遮擋後拍攝 17 號。",
+      "whyZh": "即使紙片不接觸作品、遮擋方式符合泰莎的要求，紙片也要到十一點才送到。"
     },
     {
       "id": "B",
-      "text": "Show 17 on the padded table and 42 on the feedback table.",
-      "zh": "17 號放在有軟墊的桌上，42 號放在回饋桌。",
-      "whyZh": "17 號適合放在有軟墊的桌上，但回饋桌沒有軟墊，不能用來展示 42 號。"
+      "text": "11:00: photograph 42; label by number.",
+      "zh": "十一點：拍攝 42 號，以編號標示。",
+      "whyZh": "不標姓名也不能取代製作者的網路照片授權，琳未准許任何線上照片。"
     },
     {
       "id": "C",
-      "text": "Show both entries on the padded table.",
-      "zh": "兩件都放在有軟墊的桌上。",
-      "whyZh": "有軟墊的桌子只有一件作品的空間。"
+      "text": "11:10: photograph 17 with the screen.",
+      "zh": "十一點十分：用紙片遮擋後拍攝 17 號。",
+      "whyZh": "即使遮擋方式符合泰莎的要求，攝影人員十一點零五分就離開了。"
     },
     {
       "id": "D",
-      "text": "Show 17 on the padded table and 42 on the rail.",
-      "zh": "17 號放在有軟墊的桌上，42 號掛橫桿。",
-      "whyZh": "17 號開口只有三公分，須平放；42 號開口六公分，達到五公分的懸掛門檻。"
+      "text": "11:00: photograph 17 with initials screened without contact; label by number.",
+      "zh": "十一點：用紙片擋住 17 號的姓名縮寫，不碰到作品，拍照後以編號標示。",
+      "whyZh": "十一點紙片已就緒、攝影人員尚未離開；紙片不碰作品並遮住姓名縮寫，即可按泰莎授權拍攝並用編號上傳。"
     }
   ],
   "answer": "D",
-  "explanationZh": "17 號開口只有三公分，須平放；42 號開口六公分，達到五公分的懸掛門檻。",
-  "evidence": "If the sleeve is too narrow for the rail, use a padded table instead. / 17, Harbor Steps, by Tessa King. The sleeve opening is three centimeters wide. / 42, Orchard Road, by Lin Bell. The sleeve opening is six centimeters wide. / The rail in the entrance hall fits sleeves at least five centimeters wide. The padded table by the window has room for one quilt. The other table is for filling out feedback cards; it is not padded.",
+  "explanationZh": "十一點紙片已就緒、攝影人員尚未離開；紙片不碰作品並遮住姓名縮寫，即可按泰莎授權拍攝並用編號上傳。",
+  "evidence": "Gallery photos need online approval and must show no names or initials; caption by entry number. / Online photos approved, but a new full view requires a paper screen hiding the initials without touching the quilt. / No online photos, even anonymous ones. / The paper screen arrives at eleven. The photographer leaves at eleven five.",
   "evidenceSpans": [
     {
       "sourceField": "text",
       "documentId": "d1",
       "documentIndex": 0,
-      "startChar": 199,
-      "endChar": 268,
-      "exactQuote": "If the sleeve is too narrow for the rail, use a padded table instead.",
+      "startChar": 336,
+      "endChar": 432,
+      "exactQuote": "Gallery photos need online approval and must show no names or initials; caption by entry number.",
       "sourceRole": "document-1",
-      "passageStartChar": 242,
-      "passageEndChar": 311
+      "passageStartChar": 383,
+      "passageEndChar": 479
     },
     {
       "sourceField": "text",
       "documentId": "d2",
       "documentIndex": 1,
-      "startChar": 73,
-      "endChar": 151,
-      "exactQuote": "17, Harbor Steps, by Tessa King. The sleeve opening is three centimeters wide.",
+      "startChar": 79,
+      "endChar": 194,
+      "exactQuote": "Online photos approved, but a new full view requires a paper screen hiding the initials without touching the quilt.",
       "sourceRole": "document-2",
-      "passageStartChar": 958,
-      "passageEndChar": 1036
+      "passageStartChar": 922,
+      "passageEndChar": 1037
     },
     {
       "sourceField": "text",
       "documentId": "d2",
       "documentIndex": 1,
-      "startChar": 347,
-      "endChar": 421,
-      "exactQuote": "42, Orchard Road, by Lin Bell. The sleeve opening is six centimeters wide.",
+      "startChar": 250,
+      "endChar": 288,
+      "exactQuote": "No online photos, even anonymous ones.",
       "sourceRole": "document-2",
-      "passageStartChar": 1232,
-      "passageEndChar": 1306
+      "passageStartChar": 1093,
+      "passageEndChar": 1131
     },
     {
       "sourceField": "text",
       "documentId": "d3",
       "documentIndex": 2,
-      "startChar": 0,
-      "endChar": 198,
-      "exactQuote": "The rail in the entrance hall fits sleeves at least five centimeters wide. The padded table by the window has room for one quilt. The other table is for filling out feedback cards; it is not padded.",
+      "startChar": 307,
+      "endChar": 382,
+      "exactQuote": "The paper screen arrives at eleven. The photographer leaves at eleven five.",
       "sourceRole": "document-3",
-      "passageStartChar": 1602,
-      "passageEndChar": 1800
+      "passageStartChar": 1747,
+      "passageEndChar": 1822
     }
   ],
   "id": "t08-q198",
   "testId": "test-08",
   "part": 7,
   "groupId": "t08-r-p7-12",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
   "tags": [
     "triple-passage",
@@ -90,9 +90,9 @@
   ],
   "vocabulary": [
     {
-      "term": "at least",
-      "zh": "至少",
-      "note": "布套開口等於五公分或更寬才符合懸掛條件。"
+      "term": "full photo",
+      "zh": "全幅照",
+      "note": "把作品整件拍進畫面，而非只拍局部特寫。"
     }
   ]
 }

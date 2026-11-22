@@ -1,55 +1,88 @@
 {
   "number": 196,
-  "difficulty": "foundation",
-  "prompt": "Where is the sleeve used to hang a quilt?",
-  "promptZh": "用來懸掛拼布被的布套在哪裡？",
+  "difficulty": "advanced",
+  "prompt": "The team wants to free the window table for a demonstration by eleven twenty, without taking entry 17 off display. Which assessment is correct?",
+  "promptZh": "團隊想在十一點二十分前空出窗邊的桌子做示範，但不能撤下 17 號作品。下列哪個判斷正確？",
   "options": [
     {
       "id": "A",
-      "text": "Attached permanently to the rail.",
-      "zh": "永久固定在橫桿上。",
-      "whyZh": "橫桿是穿入背面布套的設備；布套不是橫桿本身的配件。"
+      "text": "Move 17 to the second table at 10:40.",
+      "zh": "十點四十分將 17 號移到第二張桌子。",
+      "whyZh": "十點四十分雖然有兩人可以搬，但第二張軟墊桌要到十一點才備妥。"
     },
     {
       "id": "B",
-      "text": "Under the pad on the display table.",
-      "zh": "在展示桌的軟墊底下。",
-      "whyZh": "桌墊供平放展示使用，下面沒有用來懸掛作品的布套。"
+      "text": "Move 17 to the second table at 11:10.",
+      "zh": "十一點十分將 17 號移到第二張桌子。",
+      "whyZh": "十一點十分人員和桌子都已就緒，但已開館，走道最快十一點十五才能封閉。"
     },
     {
       "id": "C",
-      "text": "On the back of the quilt.",
-      "zh": "在拼布被背面。",
-      "whyZh": "志工指南指出，懸掛時要把橫桿穿入縫在拼布被背面的布套。"
+      "text": "Neither move time works.",
+      "zh": "兩個時段都不能搬移。",
+      "whyZh": "十點四十分有兩人但沒有第二張軟墊桌；十一點十分有人也有桌，卻不能在搬移前封閉走道。"
     },
     {
       "id": "D",
-      "text": "Along the front edge of each display card.",
-      "zh": "在每張展卡的正面邊緣。",
-      "whyZh": "展卡用來標示作品，不是懸掛拼布被的工具。"
+      "text": "Hang 17 on the rail at 10:40.",
+      "zh": "十點四十分將 17 號掛上橫桿。",
+      "whyZh": "17 號布套開口只有三公分，橫桿要求至少五公分，不相容。"
     }
   ],
   "answer": "C",
-  "explanationZh": "志工指南指出，懸掛時要把橫桿穿入縫在拼布被背面的布套。",
-  "evidence": "To hang one, slide the rail through the sleeve sewn onto the back of the quilt.",
+  "explanationZh": "十點四十分有兩人但沒有第二張軟墊桌；十一點十分有人也有桌，卻不能在搬移前封閉走道。",
+  "evidence": "Display quilts on padded tables or compatible rails. / After check-in, two trained handlers must move a quilt to another display surface; after opening, close the aisle first. / 17, Harbor Steps, by Tessa King: three-centimeter sleeve. / 17 is checked in on the padded window table. The rail needs a sleeve at least five centimeters wide. A second padded table is ready at eleven. Before eleven twenty, two trained handlers are available only at ten forty and eleven ten. The hall opens at eleven; the aisle cannot close before eleven fifteen.",
   "evidenceSpans": [
     {
       "sourceField": "text",
       "documentId": "d1",
       "documentIndex": 0,
-      "startChar": 119,
-      "endChar": 198,
-      "exactQuote": "To hang one, slide the rail through the sleeve sewn onto the back of the quilt.",
+      "startChar": 0,
+      "endChar": 52,
+      "exactQuote": "Display quilts on padded tables or compatible rails.",
       "sourceRole": "document-1",
-      "passageStartChar": 162,
-      "passageEndChar": 241
+      "passageStartChar": 47,
+      "passageEndChar": 99
+    },
+    {
+      "sourceField": "text",
+      "documentId": "d1",
+      "documentIndex": 0,
+      "startChar": 53,
+      "endChar": 173,
+      "exactQuote": "After check-in, two trained handlers must move a quilt to another display surface; after opening, close the aisle first.",
+      "sourceRole": "document-1",
+      "passageStartChar": 100,
+      "passageEndChar": 220
+    },
+    {
+      "sourceField": "text",
+      "documentId": "d2",
+      "documentIndex": 1,
+      "startChar": 0,
+      "endChar": 57,
+      "exactQuote": "17, Harbor Steps, by Tessa King: three-centimeter sleeve.",
+      "sourceRole": "document-2",
+      "passageStartChar": 843,
+      "passageEndChar": 900
+    },
+    {
+      "sourceField": "text",
+      "documentId": "d3",
+      "documentIndex": 2,
+      "startChar": 0,
+      "endChar": 305,
+      "exactQuote": "17 is checked in on the padded window table. The rail needs a sleeve at least five centimeters wide. A second padded table is ready at eleven. Before eleven twenty, two trained handlers are available only at ten forty and eleven ten. The hall opens at eleven; the aisle cannot close before eleven fifteen.",
+      "sourceRole": "document-3",
+      "passageStartChar": 1440,
+      "passageEndChar": 1745
     }
   ],
   "id": "t08-q196",
   "testId": "test-08",
   "part": 7,
   "groupId": "t08-r-p7-12",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
   "tags": [
     "triple-passage",
@@ -57,9 +90,9 @@
   ],
   "vocabulary": [
     {
-      "term": "sleeve",
-      "zh": "布套",
-      "note": "縫在拼布被背面，懸掛時可讓橫桿穿過。"
+      "term": "close the aisle",
+      "zh": "封閉走道",
+      "note": "指暫停讓人通行，不是關閉整個展場。"
     }
   ]
 }

@@ -1,77 +1,77 @@
 {
   "number": 199,
   "difficulty": "intermediate",
-  "prompt": "Which pair of hall cards follows the makers’ choices?",
-  "promptZh": "哪一組展場展卡符合兩位製作者的選擇？",
+  "prompt": "Both hall cards were printed before nine. A replacement printer is not ready. What should the volunteer do with the cards in the meantime?",
+  "promptZh": "兩張展卡都已在九點前印出，替換用的印表機還不能使用。這段期間志工該怎麼處理展卡？",
   "options": [
     {
       "id": "A",
-      "text": "Include Tessa King on the card for Harbor Steps (17); omit Lin Bell from the card for Orchard Road (42).",
-      "zh": "17 號《港口階梯》加印泰莎・金；42 號《果園路》不印琳・貝爾。",
-      "whyZh": "兩位製作者的選擇被對調了：泰莎不同意展場署名，琳同意。"
+      "text": "Add Tessa’s name; leave Lin’s visible.",
+      "zh": "加上泰莎的名字；琳的名字維持可見。",
+      "whyZh": "泰莎沒有親自提出書面要求，不能加名；琳已書面撤回署名，應立即遮住姓名。"
     },
     {
       "id": "B",
-      "text": "Omit Tessa King from the card for Harbor Steps (17); include Lin Bell on the card for Orchard Road (42).",
-      "zh": "17 號《港口階梯》不印泰莎・金；42 號《果園路》加印琳・貝爾。",
-      "whyZh": "泰莎不同意在展卡署名，所以只印編號和作品名稱；琳已同意署名，可印她的姓名。"
+      "text": "Leave 17 unchanged; cover only Lin’s name.",
+      "zh": "17 號不變；只遮住琳的名字。",
+      "whyZh": "泰莎未要求修改署名，只有志工留下便條；琳本人已用電郵撤回署名，重印前先遮住姓名，不遮編號和作品名稱。"
     },
     {
       "id": "C",
-      "text": "Print 17 and 42 with both makers’ names on their respective cards.",
-      "zh": "17 號和 42 號的展卡各印製作者姓名。",
-      "whyZh": "琳同意，泰莎不同意；同意上傳照片不是同意展卡署名。"
+      "text": "Leave 17 unchanged; remove 42’s card.",
+      "zh": "17 號不變；撤下 42 號的展卡。",
+      "whyZh": "17 號可以維持原樣；42 號則只遮住姓名，不能因此讓作品名稱和參展編號都不見。"
     },
     {
       "id": "D",
-      "text": "Print 17 and 42 without titles or names.",
-      "zh": "17 號和 42 號都只印編號，不印作品名或姓名。",
-      "whyZh": "展場未獲署名授權的展卡仍要印作品名稱；琳的展卡也可依其授權署名。"
+      "text": "Hide both names and titles pending confirmation.",
+      "zh": "兩張展卡的姓名與作品名稱都先遮住，等候確認。",
+      "whyZh": "17 號本來就不應署名，琳的書面撤回也已確認，兩張展卡的作品名稱都應保留。"
     }
   ],
   "answer": "B",
-  "explanationZh": "泰莎不同意在展卡署名，所以只印編號和作品名稱；琳已同意署名，可印她的姓名。",
-  "evidence": "To credit the maker by name on that card, check the maker’s show form. If they did not give permission for a name credit in the hall, print the entry number and quilt title only. / Tessa declined name credit on the hall card but approved photos for the online gallery. / Lin approved name credit on the hall card but did not approve any online photos, even pictures that leave out her name.",
+  "explanationZh": "泰莎未要求修改署名，只有志工留下便條；琳本人已用電郵撤回署名，重印前先遮住姓名，不遮編號和作品名稱。",
+  "evidence": "Change printed hall credit only at the maker's written request. If withdrawn, cover the name but keep the title and number visible until the new card is ready. / No hall name credit. / Lin emailed at nine to remove her printed hall credit. At nine fifteen a volunteer asked to add Tessa's name; Tessa herself has not requested this.",
   "evidenceSpans": [
     {
       "sourceField": "text",
       "documentId": "d1",
       "documentIndex": 0,
-      "startChar": 346,
-      "endChar": 524,
-      "exactQuote": "To credit the maker by name on that card, check the maker’s show form. If they did not give permission for a name credit in the hall, print the entry number and quilt title only.",
+      "startChar": 175,
+      "endChar": 334,
+      "exactQuote": "Change printed hall credit only at the maker's written request. If withdrawn, cover the name but keep the title and number visible until the new card is ready.",
       "sourceRole": "document-1",
-      "passageStartChar": 389,
-      "passageEndChar": 567
+      "passageStartChar": 222,
+      "passageEndChar": 381
     },
     {
       "sourceField": "text",
       "documentId": "d2",
       "documentIndex": 1,
-      "startChar": 152,
-      "endChar": 239,
-      "exactQuote": "Tessa declined name credit on the hall card but approved photos for the online gallery.",
+      "startChar": 58,
+      "endChar": 78,
+      "exactQuote": "No hall name credit.",
       "sourceRole": "document-2",
-      "passageStartChar": 1037,
-      "passageEndChar": 1124
+      "passageStartChar": 901,
+      "passageEndChar": 921
     },
     {
       "sourceField": "text",
       "documentId": "d2",
       "documentIndex": 1,
-      "startChar": 422,
-      "endChar": 541,
-      "exactQuote": "Lin approved name credit on the hall card but did not approve any online photos, even pictures that leave out her name.",
+      "startChar": 289,
+      "endChar": 436,
+      "exactQuote": "Lin emailed at nine to remove her printed hall credit. At nine fifteen a volunteer asked to add Tessa's name; Tessa herself has not requested this.",
       "sourceRole": "document-2",
-      "passageStartChar": 1307,
-      "passageEndChar": 1426
+      "passageStartChar": 1132,
+      "passageEndChar": 1279
     }
   ],
   "id": "t08-q199",
   "testId": "test-08",
   "part": 7,
   "groupId": "t08-r-p7-12",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
   "tags": [
     "triple-passage",
@@ -79,9 +79,9 @@
   ],
   "vocabulary": [
     {
-      "term": "name credit",
-      "zh": "署名",
-      "note": "在展卡上印製作者姓名以標明作品出處。"
+      "term": "withdraw a credit",
+      "zh": "撤回署名同意",
+      "note": "此處指收回在展卡上公開姓名的同意。"
     }
   ]
 }
