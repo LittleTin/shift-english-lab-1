@@ -1,0 +1,60 @@
+{
+  "id": "t07-q087",
+  "testId": "test-07",
+  "number": 87,
+  "part": 4,
+  "groupId": "t07-g086",
+  "prompt": "Which silence does the announcement describe as normal?",
+  "promptZh": "公告說哪一種沒有聲音的情況是正常的？",
+  "answer": "B",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "daily",
+    "talk"
+  ],
+  "revision": 1,
+  "evidence": "Once you sit down, the lecture channel will remain quiet until the host starts.",
+  "evidenceSpans": [
+    {
+      "speaker": "F",
+      "exactQuote": "Once you sit down, the lecture channel will remain quiet until the host starts.",
+      "startChar": 278,
+      "endChar": 357
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "text": "No sound at the entrance table during the receiver test.",
+      "zh": "在入口桌測試接收器時沒有聲音。",
+      "whyZh": "入口桌的測試本應播出錄音，聽不到就要回去處理。"
+    },
+    {
+      "id": "B",
+      "text": "No lecture sound at the seat before the host starts.",
+      "zh": "就座後，主持人開始前聽不到講座聲音。",
+      "whyZh": "就座後，主持人尚未開始時，講座頻道本來就會安靜。"
+    },
+    {
+      "id": "C",
+      "text": "A working receiver losing sound during the talk.",
+      "zh": "運作中的接收器在講座途中突然沒有聲音。",
+      "whyZh": "若使用中故障，工作人員可送來備用機，不是所說的正常安靜。"
+    },
+    {
+      "id": "D",
+      "text": "No sound after exchanging two receivers at the entrance.",
+      "zh": "在入口更換兩台接收器後仍沒有聲音。",
+      "whyZh": "錄音沒有說換兩台是流程；測試階段沒聲音仍應反映。"
+    }
+  ],
+  "explanationZh": "就座後，主持人尚未開始時，講座頻道本來就會安靜。",
+  "vocabulary": [
+    {
+      "term": "remain quiet",
+      "zh": "保持安靜；沒有聲音",
+      "note": "在這裡指主持人開始前，講座頻道還沒有播出聲音。"
+    }
+  ]
+}

@@ -41,12 +41,38 @@
   ],
   "answer": "D",
   "explanationZh": "場地核准和開門時間是兩件事。未填時間並不等於不承諾開放時間，公開活動表會把空白解讀為十一點。",
-  "evidence": "Once the duty manager clears Recording Room B for us, we can name it in the public program",
+  "evidence": "Once the duty manager clears Recording Room B for us, we can name it in the public program / If building staff haven’t confirmed an unlock time, mark the room’s opening time as pending. / a listed location with no time or note still defaults to eleven.",
   "vocabulary": [
     {
       "term": "pending",
       "zh": "待確認",
       "note": "場地已核准，開門時間仍未確認。"
+    }
+  ],
+  "evidenceSpans": [
+    {
+      "documentIndex": 0,
+      "sourceRole": "single-document",
+      "sourceField": "passage",
+      "startChar": 178,
+      "endChar": 268,
+      "exactQuote": "Once the duty manager clears Recording Room B for us, we can name it in the public program"
+    },
+    {
+      "documentIndex": 0,
+      "sourceRole": "single-document",
+      "sourceField": "passage",
+      "startChar": 319,
+      "endChar": 411,
+      "exactQuote": "If building staff haven’t confirmed an unlock time, mark the room’s opening time as pending."
+    },
+    {
+      "documentIndex": 0,
+      "sourceRole": "single-document",
+      "sourceField": "passage",
+      "startChar": 1154,
+      "endChar": 1218,
+      "exactQuote": "a listed location with no time or note still defaults to eleven."
     }
   ]
 }

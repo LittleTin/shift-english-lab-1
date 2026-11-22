@@ -1,0 +1,60 @@
+{
+  "id": "t07-q084",
+  "testId": "test-07",
+  "number": 84,
+  "part": 4,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "groupId": "t07-g083",
+  "prompt": "Someone attended in person in the morning and online in the afternoon. What should they see on the list?",
+  "promptZh": "有人上午到場、下午在線上參加。名單上應列出什麼？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "Only the first session.",
+      "zh": "只有第一個時段。",
+      "whyZh": "早上到場無法取代下午訓練的出席紀錄。"
+    },
+    {
+      "id": "B",
+      "text": "Only the afternoon session.",
+      "zh": "只有下午時段。",
+      "whyZh": "錄音要求確認早、下午都在名單上。"
+    },
+    {
+      "id": "C",
+      "text": "Both sessions.",
+      "zh": "兩個時段都列出。",
+      "whyZh": "針對上午到場、下午線上這種情況，通知明確要求列出兩個時段。"
+    },
+    {
+      "id": "D",
+      "text": "A separate registration for a third session.",
+      "zh": "額外報名的第三個時段。",
+      "whyZh": "通知只談上午與下午兩個時段，並沒有第三個。"
+    }
+  ],
+  "explanationZh": "針對上午到場、下午線上這種情況，通知明確要求列出兩個時段。",
+  "evidence": "If you joined the morning session in person and finished the afternoon session online, make sure the list shows both sessions.",
+  "tags": [
+    "business",
+    "talk"
+  ],
+  "revision": 1,
+  "evidenceSpans": [
+    {
+      "speaker": "M",
+      "exactQuote": "If you joined the morning session in person and finished the afternoon session online, make sure the list shows both sessions.",
+      "startChar": 210,
+      "endChar": 336
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "in person",
+      "zh": "親自到場",
+      "note": "指本人在現場參加，而不是透過網路。"
+    }
+  ]
+}
