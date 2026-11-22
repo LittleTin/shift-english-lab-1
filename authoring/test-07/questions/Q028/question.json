@@ -1,0 +1,48 @@
+{
+  "id": "t07-q028",
+  "testId": "test-07",
+  "number": 28,
+  "part": 2,
+  "topic": "work",
+  "difficulty": "intermediate",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽錄音，選出最適當的回應。",
+  "spokenPrompt": "I thought the readings had been approved because the sheet says “Final.”",
+  "spokenPromptZh": "這張表上寫著「定稿」，我以為量測數值已獲核准。",
+  "options": [
+    {
+      "id": "A",
+      "text": "The sheet is in the shared folder.",
+      "zh": "這張表在共用資料夾裡。",
+      "whyZh": "檔案存放位置並不能證明數值是否獲准或「定稿」指哪一部分。"
+    },
+    {
+      "id": "B",
+      "text": "I can print another copy of the sheet.",
+      "zh": "我可以再印一份這張表。",
+      "whyZh": "印另一份也只是複製原表，沒有澄清數值是否已獲核准。"
+    },
+    {
+      "id": "C",
+      "text": "That refers to the layout. The measurements still need to be reviewed.",
+      "zh": "「定稿」是指版面。量測數值仍然需要審查。",
+      "whyZh": "說明 Final 只描述版面，不表示裡面的量測數值已核准，直接更正原本的推斷。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "說明 Final 只描述版面，不表示裡面的量測數值已核准，直接更正原本的推斷。",
+  "evidence": "I thought the readings had been approved because the sheet says “Final.” / That refers to the layout. The measurements still need to be reviewed.",
+  "tags": [
+    "work",
+    "question_response"
+  ],
+  "revision": 1,
+  "groupId": "t07-g028",
+  "vocabulary": [
+    {
+      "term": "refer to",
+      "zh": "指的是",
+      "note": "回應中的 that 指表上的 Final，而不是指整份表已全部核准。"
+    }
+  ]
+}
