@@ -87,6 +87,7 @@ async function prepareResume(s){
 }
 let Q=new Map(),G=new Map(),loaded=new Set(),loading=new Map(),busy=false,activeTranscript=null,lastResult=null,reviewDetail=null,currentAudioGroup=null,currentQuestionStart=now();
 let persistentError='';
+let guestBackupApplying=false;
 function showPersistentError(){
  const box=document.getElementById('shift-persistent-error'), message=document.getElementById('shift-persistent-error-message');
  if(box&&message){box.hidden=!persistentError;message.textContent=persistentError}
@@ -228,7 +229,7 @@ function updateCheckpointRegion(){
 }
 async function recheckAuthOnReconnect(){
  if(syncOwner){void startSync();void syncCheckpoint();renderAuthStatus();return}
- if(authRestoreStatus!=='waiting'||authOperation||route==='quiz'||route==='data'&&!allowPassiveRepaint())return;
+ if(authRestoreStatus!=='waiting'||authOperation||guestBackupApplying||route==='quiz'||route==='data'&&!allowPassiveRepaint())return;
  await restoreSavedAccount();
  if(route==='quiz')return; // Do not switch or redraw an active local quiz.
  if(allowPassiveRepaint())render();
@@ -295,6 +296,7 @@ async function switchWorkspace(owner,avoidQuiz=false){
  await saveQueue;
  if(storageMode!=='indexeddb')throw Error('Local account records cannot be safely opened.');
  const next=await readWorkspace(owner);
+ if(guestBackupApplying)throw Error('keep_guest_workspace');
  if(avoidQuiz&&(route==='quiz'||route==='data'&&!allowPassiveRepaint()||document.getElementById('modal')?.open))throw Error('keep_guest_workspace');
  const previous={state,owner:syncOwner,Q,G,loaded,officialPacks:new Map(officialPacks),
   archived:new Set(archivedIds),unavailable:new Set(unavailableCustom),lastResult,reviewDetail,resumeEnv,lastExportAt};
@@ -1540,31 +1542,76 @@ function metric(label,arr){const c=arr.filter(a=>a.correct).length,pct=arr.lengt
 function dataPage(){const total=allTests().reduce((n,t)=>n+t.reading+t.listening,0);return heading('Take your progress with you.','Back up your records, import new packs, and adjust your reading preferences.','DATA & PREFERENCES')+historyNotice()+'<div class="data-grid"><section class="panel"><h2>'+icon('download')+' Learning Record Backup</h2><p>Export answers, mistakes, saved questions, notes, and unfinished sessions. Make a backup before moving folders, changing devices, or updating the app.</p><div class="btn-row">'+btn('Export Backup','export-backup','primary')+(syncOwner?'':btn('Import Backup','import-backup'))+'</div><p class="hint">Last export:'+(lastBackupTime()?new Date(lastBackupTime()).toLocaleString('en-US'):'Not exported yet')+'</p></section><section class="panel"><h2>'+icon('upload')+' Add Test Packs</h2><p>Add questions by selecting a compatible JSON test pack. Built-in audio is stored in the audio folder; additional audio must also be placed in the website folder.</p><div class="btn-row">'+btn('Import JSON Test Pack','import-pack','primary')+'<a class="btn" href="data/example-pack.json" download>Download Example Format</a></div><p class="hint">Currently: '+allTests().length+' test packs · '+fmt(total)+' questions.</p></section><section class="panel"><h2>'+icon('settings')+' Reading Preferences</h2><div class="field"><label for="font-scale">Text size</label><select id="font-scale"><option value="1" '+(state.settings.fontScale===1?'selected':'')+'>Standard</option><option value="1.1" '+(state.settings.fontScale===1.1?'selected':'')+'>Larger by 10%</option><option value="1.2" '+(state.settings.fontScale===1.2?'selected':'')+'>Larger by 20%</option></select></div><p class="hint">All practice sessions hide correctness, answers, translations, and explanations until submission.</p></section><section class="panel"><h2>'+icon('shield')+' Local Storage Status</h2><p><strong>'+(storageMode==='indexeddb'?'IndexedDB · Saving available':storageMode==='localstorage'?'localStorage · Backup storage available':'Temporary mode · Permanent storage unavailable')+'</strong></p><p>Guest records belong to this browser profile and website address. Private browsing, clearing site data, or moving folders may make unsynced records inaccessible.</p><p class="hint">No account is required. Current practice and completed history in a signed-in account workspace are eligible for sync.</p></section></div><section class="panel" style="margin-top:20px"><h2>What is included?</h2><ul class="inline-list"><li>'+fmt(catalog.tests.length)+' original tests: '+fmt(catalog.tests.reduce((n,t)=>n+t.reading,0))+' Reading and '+fmt(catalog.tests.reduce((n,t)=>n+t.listening,0))+' Listening questions. Traditional Chinese translations and explanations are shown only on answer explanation pages.</li><li>Part 1 uses original AI-generated photographs. Listening uses bundled offline synthetic speech.</li><li>Formal tests use a single-play Listening sequence whose duration is shown before the test, followed by 75 minutes of Reading. Practice mode allows replay.</li><li>This is practice material, not official questions, calibrated difficulty, or an official TOEIC score conversion.</li></ul><div class="btn-row"><a class="btn small" href="使用說明.html" target="_blank" rel="noopener">Open User Guide</a><a class="btn small" href="question-debug.html" target="_blank" rel="noopener">Question Debug</a>'+(syncOwner?'':btn('Clear Learning Records','reset-progress','danger small'))+'</div></section>'}
 function downloadJson(name,obj){const blob=new Blob([JSON.stringify(obj,null,2)],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000)}
 function lastBackupTime(){let stored=0;try{stored=Number(localStorage.getItem(scopedKey(BACKUP_TIME_KEY)))||0}catch(e){}return Math.max(state.lastBackup||0,lastExportAt,stored>=0&&stored<8640000000000000?stored:0)}
-async function backupSnapshot(){
- // Drain saves already queued in this tab, then read the shared durable snapshot.
- // A backup is read-only with respect to learning state, even in a stale tab.
- await saveQueue;
+async function backupSnapshot(owner=syncOwner,epoch=syncEpoch){
+ // Drain saves already queued in this tab, then read only the workspace that
+ // requested the backup. An auth change must not redirect a pending export.
+ const assertWorkspace=()=>{if(owner!==syncOwner||epoch!==syncEpoch)throw Error('Backup could not be prepared because the account changed. Open Data & Settings and try again.');};
+ await saveQueue;assertWorkspace();
  let saved;
  if(storageMode==='indexeddb'&&db){
   saved=await new Promise((resolve,reject)=>{
-   const request=db.transaction('kv','readonly').objectStore('kv').get('state');
+   const request=db.transaction('kv','readonly').objectStore('kv').get(scopedKey('state',owner));
    request.onsuccess=()=>resolve(request.result);
    request.onerror=()=>reject(new Error('Saved records could not be read. Reopen the app and try again.'));
   });
  }else if(storageMode==='localstorage'){
-  const raw=localStorage.getItem('shift-english-lab-v1');
+  const raw=localStorage.getItem(scopedKey('shift-english-lab-v1',owner));
   if(raw!==null)saved=JSON.parse(raw);
  }
- return saved??state;
+ assertWorkspace();
+ const backup={...(saved??state)};
+ delete backup.syncSent;
+ return backup;
 }
 async function exportBackup(){
- const saved=await backupSnapshot(),exportedAt=new Date().toISOString(),exportTime=Date.parse(exportedAt);
+ const owner=syncOwner,epoch=syncEpoch,saved=await backupSnapshot(owner,epoch);
+ if(owner!==syncOwner||epoch!==syncEpoch)throw Error('Backup could not be prepared because the account changed. Open Data & Settings and try again.');
+ const exportedAt=new Date().toISOString(),exportTime=Date.parse(exportedAt);
  downloadJson('SHIFT-learning-backup-'+exportedAt.slice(0,10)+'.json',{format:'shift-learning-backup',version:1,exportedAt,state:{...saved,lastBackup:exportTime}});
  lastExportAt=exportTime;
- try{localStorage.setItem(scopedKey(BACKUP_TIME_KEY),String(exportTime))}catch(e){}
+ try{localStorage.setItem(scopedKey(BACKUP_TIME_KEY,owner),String(exportTime))}catch(e){}
  notify('Your backup is ready to download.');if(route==='data')render()
 }
-async function importBackup(file){if(file.size>30*1024*1024)throw new Error('This backup exceeds the supported size limit of 30 MB, Keep the original file and split it into smaller batches.');const obj=JSON.parse(await file.text());if(obj.format!=='shift-learning-backup'||obj.version!==1)throw new Error('This is not a SHIFT learning-record backup.');const next=normalizeState(obj.state);const omitted=(obj.state.importedPacks||[]).filter(p=>officialEntry(p?.testId)).length;confirmBox('Restore these learning records?','The backup contains '+next.attempts.length+' answer records and'+Object.keys(next.notes).length+' notes. Restoring replaces current records. Export your current backup first.'+(omitted?' Custom definitions with official test IDs will not be installed. Your saved scores and answers are kept.':''),async()=>{if(next.importedPacks.length)await loadAllOfficial();resumeEnv=null;state=next;clearNoteDraft();await installPackIndexes();lastResult=null;stopAudio();await persist();route='home';render();notify(omitted||unavailableCustom.size?'Learning records restored. Conflicting custom packs were not loaded.':'Learning records restored.')},'Confirm Restore')}
+async function importBackup(file){
+ const owner=syncOwner,epoch=syncEpoch;
+ const unchangedGuest=()=>owner===null&&syncOwner===owner&&syncEpoch===epoch;
+ const stale=()=>notify('Backup could not be restored because the account changed. Switch to guest mode and try again.');
+ if(!unchangedGuest())return stale();
+ if(file.size>30*1024*1024)throw new Error('This backup exceeds the supported size limit of 30 MB, Keep the original file and split it into smaller batches.');
+ const raw=await file.text();
+ if(!unchangedGuest())return stale();
+ const obj=JSON.parse(raw);
+ if(obj.format!=='shift-learning-backup'||obj.version!==1)throw new Error('This is not a SHIFT learning-record backup.');
+ const next=normalizeState(obj.state);
+ const omitted=(obj.state.importedPacks||[]).filter(p=>officialEntry(p?.testId)).length;
+ const count=next.attempts.length,notes=Object.keys(next.notes).length;
+ confirmBox('Restore these learning records?','The backup contains '+count+' answer record'+(count===1?'':'s')+' and '+notes+' note'+(notes===1?'':'s')+'. Restoring replaces current records. Export your current backup first.'+(omitted?' Custom definitions with official test IDs will not be installed. Your saved scores and answers are kept.':''),async()=>{
+  if(!unchangedGuest())return stale();
+  if(guestBackupApplying)return notify('Backup could not be restored because another backup is still being restored.');
+  guestBackupApplying=true;
+  try{
+   // Let any earlier guest writes finish before this explicit replacement.
+   await saveQueue;
+   if(!unchangedGuest())return stale();
+   if(next.importedPacks.length)await loadAllOfficial();
+   if(!unchangedGuest())return stale();
+   resumeEnv=null;state=next;clearNoteDraft();
+   await installPackIndexes();
+   if(!unchangedGuest())return stale();
+   lastResult=null;stopAudio();
+   if(!unchangedGuest())return stale();
+   await persist(true);
+   if(!unchangedGuest())return stale();
+   route='home';render();notify(omitted||unavailableCustom.size?'Learning records restored. Conflicting custom packs were not loaded.':'Learning records restored.');
+  }catch(error){
+   console.error(error);
+   notify('Backup could not be saved. Your original backup file was not changed.');
+  }finally{
+   guestBackupApplying=false;
+   if(authRestoreStatus==='waiting'&&navigator.onLine!==false)void recheckAuthOnReconnect()
+  }
+ },'Confirm Restore')
+}
 async function importPack(file){if(file.size>20*1024*1024)throw new Error('Each additional pack must be smaller than 20 MB, Use one file per test.');const p=validatePack(JSON.parse(await file.text()));if(officialEntry(p.testId))throw new Error('Imported packs cannot overwrite built-in packs. Use a new testId.');await loadAllOfficial();const old=state.importedPacks.find(x=>x.testId===p.testId);const oldQIds=new Set((old?.questions||[]).map(q=>q.id));for(const q of p.questions)if(Q.has(q.id)&&!oldQIds.has(q.id))throw new Error('Question ID already exists:'+q.id);const oldGIds=new Set((old?.groups||[]).map(g=>g.id));for(const g of p.groups)if(G.has(g.id)&&!oldGIds.has(g.id))throw new Error('Groups ID already exists:'+g.id);const commit=async()=>{registerPack(p);unavailableCustom.delete(p.testId);state.importedPacks=state.importedPacks.filter(x=>x.testId!==p.testId);state.importedPacks.push(p);await persist();render();notify('Imported '+p.questions.length+' questions.')};if(old)confirmBox('Update this test pack?','The new file will replace '+p.testId+'.Existing answers and notes are kept. Question ID values must remain unchanged.',commit,'Update Pack');else await commit()}
 async function resume(){const s=state.active;if(!s){notify('There is no unfinished practice session.');return}if(s.reservedPackConflict)throw new Error('This saved session used a custom pack with an official test ID. Your saved answers are kept, but its original pack is not available to resume.');for(const id of s.testIds||[])await loadTest(id);await prepareResume(s);if(restoreListeningTabPoint(s))await persist();route='quiz';mobileNav=false;syncListeningCountdown(s);if(beginReadingClock(s))await persist();render();if(listening(s)){const g=sessionGroup(questionByActive()?.groupId,s);void runFormalGroup(g,{prepareOnly:true})}if(s.mode==='exam'&&!listening(s)&&!s.readingStartsOnReturn&&(formal(s)?s.sectionDeadline:s.deadline)<=now())await finishSession(true)}
 async function beginReview(kind){
