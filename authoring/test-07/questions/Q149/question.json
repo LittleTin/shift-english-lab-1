@@ -4,49 +4,49 @@
   "number": 149,
   "part": 7,
   "groupId": "t07-r-p7-01",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
-  "difficulty": "intermediate",
+  "difficulty": "advanced",
   "tags": [
     "single-passage",
     "daily"
   ],
-  "prompt": "At 3:55 p.m. on the first Thursday of the month, no one else is waiting. What does the notice allow a new player to do?",
-  "promptZh": "每月第一個星期四下午 3:55 沒有其他人等候。公告允許新琴手怎麼做？",
+  "prompt": "On Friday, Emil confirms he wants both stations held and sends one cleared excerpt. He expects a second excerpt to be cleared after the host sheet goes out. What would be consistent with Rina’s instructions?",
+  "promptZh": "週五，艾米爾確認要保留兩個聆聽站，並寄來一段已獲授權的錄音摘錄。他預計第二段要等主持人工作表發出後才會獲准。哪項安排符合里娜的指示？",
   "options": [
     {
       "id": "A",
-      "text": "Take a brief turn, provided it ends before four",
-      "zh": "短暫彈一下，前提是四點前結束",
-      "whyZh": "普通開放允許任何人彈；聆聽時段的例外是即使無人等待，也須於四點前停止。"
+      "text": "Put both stations in the setup duties but put the second excerpt in Notes; keep both reserved.",
+      "zh": "把兩站列為準備工作，但把第二段摘錄列入備註；保留兩站。",
+      "whyZh": "兩站確實都可保留，但第二站尚未取得可播放的摘錄，不能列成主持人現在就能做的準備工作。"
     },
     {
       "id": "B",
-      "text": "Continue past four as long as no one is waiting",
-      "zh": "只要無人等候，就彈到四點以後",
-      "whyZh": "四點的停止規則明確適用於無人等候的情況。"
+      "text": "Put the first station in the setup duties and the second in Notes; keep both reserved.",
+      "zh": "把第一站列為準備工作，第二站列入備註；保留兩站。",
+      "whyZh": "已收到一段授權摘錄，主持人能準備一站；第二站等待外部授權，可先保留但不能當作已可準備。"
     },
     {
       "id": "C",
-      "text": "Leave a token now to guarantee a turn after the event",
-      "zh": "先放木牌，保證活動後輪到自己",
-      "whyZh": "木牌只計實際使用，未提供預約或保證輪次的功能。"
+      "text": "Put the first station in the setup duties and record the second as returned to the equipment pool.",
+      "zh": "把第一站列為準備工作，並註明第二站設備已歸還共用設備庫。",
+      "whyZh": "第一站處理正確，但週五已回覆保留兩站；第二站尚未能配置，不必因此退回設備。"
     },
     {
       "id": "D",
-      "text": "Begin as a scheduled performer without checking the program",
-      "zh": "不查看節目流程表，就以排定演奏者的身分開始彈奏",
-      "whyZh": "四點聆聽時段只聽已排定的琴手，先到並不等於被排定。"
+      "text": "Put both stations in Notes because neither can go into setup duties until the second excerpt arrives.",
+      "zh": "兩站都列入備註，因為在第二段摘錄到達前兩站都不能列為準備工作。",
+      "whyZh": "準備第一站不以第二段獲准為前提；現有的一段已足以準備第一站。"
     }
   ],
-  "answer": "A",
-  "explanationZh": "普通開放允許任何人彈；聆聽時段的例外是即使無人等待，也須於四點前停止。",
-  "evidence": "Anyone may play. / Ordinary turns must stop before then, even if no one is waiting.",
+  "answer": "B",
+  "explanationZh": "分清已保留、可以著手準備、仍待他人處理三種狀態。「保留」是設備安排，不代表授權程序已完成。",
+  "evidence": "A reply by Friday evening will hold them.",
   "vocabulary": [
     {
-      "term": "a scheduled player",
-      "zh": "已排定的演奏者",
-      "note": "scheduled 表先安排進正式時段。"
+      "term": "pencil in",
+      "zh": "暫時安排",
+      "note": "保留一站仍不等於已獲准播放錄音。"
     }
   ]
 }

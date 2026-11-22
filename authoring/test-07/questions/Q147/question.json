@@ -4,49 +4,49 @@
   "number": 147,
   "part": 7,
   "groupId": "t07-r-p7-01",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
-  "difficulty": "foundation",
+  "difficulty": "advanced",
   "tags": [
     "single-passage",
     "daily"
   ],
-  "prompt": "Why are the wooden tokens used?",
-  "promptZh": "木牌有什麼用途？",
+  "prompt": "At 9:45 on Saturday the duty manager approves Room B. The editor plans to send a public update at 10:00. At 10:20 building staff confirm they can unlock Room B at noon. Which pair of public updates would be accurate at the time each goes out? The program lists the foyer from eleven to two in both updates.",
+  "promptZh": "星期六九點四十五分，值班主管核准使用 B 錄音室。編輯打算十點發布一則公開更新；十點二十分，館務人員確認中午能開門。下列哪一組內容在兩次發布當下都正確？兩次活動表的大廳時段都列為十一點到兩點。",
   "options": [
     {
       "id": "A",
-      "text": "To reserve a seat for the listening hour",
-      "zh": "預約聆聽時段的座位",
-      "whyZh": "座位可以先坐，但木牌另有用途且不負責保留座位。"
+      "text": "10:00 “Room B” with no time or note; 10:20 “Room B: time pending”",
+      "zh": "十點「B 錄音室」，不標時間也不附註；十點二十分「B 錄音室：時間待定」。",
+      "whyZh": "十點只寫名稱會被理解為十一點開放；十點二十分已確定中午開門，不再待定。"
     },
     {
       "id": "B",
-      "text": "To count how often the piano is used",
-      "zh": "統計鋼琴使用次數",
-      "whyZh": "公告明說木牌統計鋼琴使用次數，而不是在場人數。"
+      "text": "10:00 “Room B: time pending”; 10:20 “Room B” with no time or note",
+      "zh": "十點「B 錄音室：時間待定」；十點二十分「B 錄音室」，不標時間也不附註。",
+      "whyZh": "前一則正確；後一則依預設仍表示十一點開放，不是已確認的中午。"
     },
     {
       "id": "C",
-      "text": "To show how many people attend a duet",
-      "zh": "顯示參加合奏的人數",
-      "whyZh": "朋友於同一輪加入合奏時不可再加木牌，所以不按合奏人數統計。"
+      "text": "10:00 “Room B” with no time or note; 10:20 “Room B: noon”",
+      "zh": "十點「B 錄音室」，不標時間也不附註；十點二十分「B 錄音室：中午」。",
+      "whyZh": "後一則正確；前一則會讓人以為十一點已確定可進入。"
     },
     {
       "id": "D",
-      "text": "To measure how long a turn lasts",
-      "zh": "量測一次輪彈多久",
-      "whyZh": "琴手要自行記下坐下時間；木牌用來計次，不記時間。"
+      "text": "10:00 “Room B: time pending”; 10:20 “Room B: noon”",
+      "zh": "十點「B 錄音室：時間待定」；十點二十分「B 錄音室：中午」。",
+      "whyZh": "十點已有場地核准，可列出名稱但須標示時間待定；十點二十分得到開門時間，就改標中午。"
     }
   ],
-  "answer": "B",
-  "explanationZh": "公告明說木牌統計鋼琴使用次數，而不是在場人數。",
-  "evidence": "The tokens show how many times the piano is used, not how many people are in the room.",
+  "answer": "D",
+  "explanationZh": "場地核准和開門時間是兩件事。未填時間並不等於不承諾開放時間，公開活動表會把空白解讀為十一點。",
+  "evidence": "Once the duty manager clears Recording Room B for us, we can name it in the public program",
   "vocabulary": [
     {
-      "term": "a turn",
-      "zh": "輪到某人的一段時間",
-      "note": "take a turn 指輪到某人使用或做某事。"
+      "term": "pending",
+      "zh": "待確認",
+      "note": "場地已核准，開門時間仍未確認。"
     }
   ]
 }

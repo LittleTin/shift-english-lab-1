@@ -4,49 +4,49 @@
   "number": 150,
   "part": 7,
   "groupId": "t07-r-p7-01",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
-  "difficulty": "foundation",
+  "difficulty": "advanced",
   "tags": [
     "single-passage",
     "daily"
   ],
-  "prompt": "What does the notice say about saving a seat?",
-  "promptZh": "公告如何說明留座？",
+  "prompt": "Just after the event, Emil receives a signed online release for an excerpt whose catalog entry still has no audio link. The visitor wants to forward the listing now, but plans to describe it as “ready to listen to” only if their friend can actually hear it online. Which reply makes the right distinction and keeps the release moving?",
+  "promptZh": "活動剛結束，艾米爾收到一份已簽署的授權書，允許將一段錄音摘錄發布到網路上；該摘錄的目錄項目仍未附音訊連結。訪客想現在就轉傳該項目，但只有朋友確實能在線上聆聽時，才想稱它為「現在可以聽」。哪句回覆正確區分目前的狀況，又能讓授權流程繼續？",
   "options": [
     {
       "id": "A",
-      "text": "Only a performer may keep a seat before the event",
-      "zh": "活動前只有演奏者可留座",
-      "whyZh": "公告明確寫 Visitors 可先留座，不限琴手。"
+      "text": "“Send the listing as a reference, not as something playable yet. I’ll pass the release to the archive.”",
+      "zh": "「可以把目錄項目當參考資料傳給朋友，但現在還不能聽。我會把授權交給檔案館。」",
+      "whyZh": "目錄已公開，可立即分享；音訊尚未掛上去；合適做法是將授權書交給檔案館，由檔案館發布錄音並加入連結。"
     },
     {
       "id": "B",
-      "text": "A seat must be reserved with a wooden token",
-      "zh": "一定要用木牌留座",
-      "whyZh": "木牌只統計實際輪彈次數，沒有將留座登記在木牌的規定。"
+      "text": "“Send the listing as ready to listen to. I’ll pass the release to the archive so the audio link appears there.”",
+      "zh": "「可以把目錄項目傳給朋友，告訴他現在就能聽。我會把授權交給檔案館，讓音訊連結顯示在那裡。」",
+      "whyZh": "交給檔案館正確，但收到授權不等於已刊登連結，不能說現在能聽。"
     },
     {
       "id": "C",
-      "text": "A seat does not reserve a piano turn for later",
-      "zh": "留座不等於預約之後的彈琴時段",
-      "whyZh": "末句清楚區分先留座和之後的彈琴預約。"
+      "text": "“Wait to send the listing until it can be described as ready to listen to. I’ll pass the release to the archive.”",
+      "zh": "「等到可以說現在就能聽時，再把目錄項目傳給朋友。我會把授權交給檔案館。」",
+      "whyZh": "授權去向正確，但公開目錄現在已可當參考分享，不必等音訊。"
     },
     {
       "id": "D",
-      "text": "People with seats get fifteen additional minutes to play",
-      "zh": "有座位者多十五分鐘彈琴",
-      "whyZh": "十五分鐘是有人等候時一次輪彈上限，不是留座獎勵。"
+      "text": "“Send the listing as a reference. I’ll pass the release to the archive and send your friend the recording separately in the meantime.”",
+      "zh": "「可以把目錄項目當參考資料傳給朋友。我會把授權交給檔案館，同時另外寄錄音給你朋友。」",
+      "whyZh": "把目錄當參考、交出授權都正確，但這份線上授權允許檔案館新增音訊連結，但不授權艾米爾另寄錄音。"
     }
   ],
-  "answer": "C",
-  "explanationZh": "末句清楚區分先留座和之後的彈琴預約。",
-  "evidence": "Visitors who arrive before four may keep a seat, but a seat does not reserve a piano turn for later.",
+  "answer": "A",
+  "explanationZh": "公開目錄項目、實際可以播放的音訊，以及允許誰發布音訊的授權是不同的事。不能用未發布的錄音承諾即時聆聽，也不能把發布授權當成寄送許可。",
+  "evidence": "People can open the archive’s public catalog entries from its links, but they won’t hear the recording there unless the archive has published it.",
   "vocabulary": [
     {
-      "term": "reserve",
-      "zh": "預留、預約",
-      "note": "保留座位和預約輪彈是不同的資源與規則。"
+      "term": "online release",
+      "zh": "線上發布授權",
+      "note": "僅讓檔案館上架連結，不允許直接寄出音檔。"
     }
   ]
 }
