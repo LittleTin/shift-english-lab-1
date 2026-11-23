@@ -1,0 +1,66 @@
+{
+  "id": "t10-q157",
+  "testId": "test-10",
+  "number": 157,
+  "part": 7,
+  "topic": "manufacturing",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "latch-production"
+  ],
+  "prompt": "Based on the documented movement, where should the team first look for the contact that left the streak?",
+  "promptZh": "根據交接紀錄所示的移動方式，團隊應優先檢查哪裡出現了留下細痕的接觸？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The molding station, where the flat latch first moves hinge end forward",
+      "zh": "成形工站，門扣平放並以鉸接端在前移動。",
+      "whyZh": "平放時鉸接端在前，但這件門扣細痕的末端朝自由端，代表接觸當時的移動方向是自由端在前。"
+    },
+    {
+      "id": "B",
+      "text": "The inspection station, because the marks would have been visible on an unpacked latch",
+      "zh": "檢查工站，因為細痕在門扣還沒裝盒時就能看見。",
+      "whyZh": "即使未裝盒時可能看得見，仍不能據此判定痕跡在這裡產生；記錄顯示檢查時門扣平放、鉸接端在前，和細痕方向不符。"
+    },
+    {
+      "id": "C",
+      "text": "The feeder, where the upright latch moves free end forward",
+      "zh": "送料裝置，門扣直立並以自由端在前移動。",
+      "whyZh": "細痕朝自由端變窄，表示接觸時是自由端在前；照片顯示自由端只在門扣直立通過送料裝置時領先。"
+    },
+    {
+      "id": "D",
+      "text": "The packing table, because that is where the finished boxes were checked",
+      "zh": "包裝桌，因為完成的盒子是在這裡檢查。",
+      "whyZh": "包裝檢查只看盒子外觀，不能由發現細痕的時間回推出是在包裝形成；況且門扣在包裝桌重新平放，方向不符。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "細痕朝自由端變窄，表示接觸時是自由端在前；照片顯示自由端只在門扣直立通過送料裝置時領先。",
+  "vocabulary": [
+    {
+      "term": "taper toward",
+      "zh": "朝……一端逐漸變窄",
+      "note": "此處要先找由痕跡推定的前端，再用照片對照不同站的移動方向。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-05",
+  "evidence": "The evening crew found marks on the latches at the end of packing. The latch travels flat during molding and inspection, then upright through the feeder before it reaches the packing table, where it lies flat again. In the case of these marks, the streak narrows toward the end that was leading when the contact occurred. / I asked each station to mark the leading end of an unmarked latch with blue chalk before moving it. The crew’s photographs show that the hinge end leads while a latch lies flat; the free end leads when it is upright in the feeder. On the latch with the streak the streak starts near the hinge and tapers toward the free end. The final packing check had been made on the box exterior only.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 0,
+      "endChar": 321,
+      "exactQuote": "The evening crew found marks on the latches at the end of packing. The latch travels flat during molding and inspection, then upright through the feeder before it reaches the packing table, where it lies flat again. In the case of these marks, the streak narrows toward the end that was leading when the contact occurred."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 323,
+      "endChar": 711,
+      "exactQuote": "I asked each station to mark the leading end of an unmarked latch with blue chalk before moving it. The crew’s photographs show that the hinge end leads while a latch lies flat; the free end leads when it is upright in the feeder. On the latch with the streak the streak starts near the hinge and tapers toward the free end. The final packing check had been made on the box exterior only."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "t10-q158",
+  "testId": "test-10",
+  "number": 158,
+  "part": 7,
+  "topic": "manufacturing",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "latch-production"
+  ],
+  "prompt": "How should the two replacement dividers be recorded in the cost log?",
+  "promptZh": "兩片更換用的隔板應如何記入成本紀錄？",
+  "options": [
+    {
+      "id": "A",
+      "text": "One against Elsin and one against in-house setup",
+      "zh": "一片列在 Elsin 名下，另一片列入內部架設成本。",
+      "whyZh": "標線外代表在到貨初檢時就不能使用；那片的兩個凹口表示是 Elsin 供應。另一片驗收時可用，架設時才斷裂，成本列內部架設。"
+    },
+    {
+      "id": "B",
+      "text": "One against Northpack and one against in-house setup",
+      "zh": "一片列在 Northpack 名下，另一片列入內部架設成本。",
+      "whyZh": "內部架設成本的分類沒錯，但外箱上的印記不能認定是哪一家供應商；到貨就有裂痕的那片以兩個凹口辨識，屬於 Elsin。"
+    },
+    {
+      "id": "C",
+      "text": "One against each of the two suppliers",
+      "zh": "兩家供應商各記一片。",
+      "whyZh": "隔板雖來自兩家，但 Northpack 供應的那片已簽收可用，是公司架設時才受損；不是每換一片就向原供應商列費。"
+    },
+    {
+      "id": "D",
+      "text": "Both against in-house setup because the replacements came from our own stock",
+      "zh": "兩片都列入內部架設成本，因為更換品來自公司庫存。",
+      "whyZh": "備用品來源不決定費用歸屬；Elsin 的原隔板到貨時就不能使用，所以其更換不列內部架設。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "標線外代表在到貨初檢時就不能使用；那片的兩個凹口表示是 Elsin 供應。另一片驗收時可用，架設時才斷裂，成本列內部架設。",
+  "vocabulary": [
+    {
+      "term": "usable on arrival",
+      "zh": "到貨時可使用",
+      "note": "判定更換成本依原品的供應商和損壞發現時點，不看替換品從哪裡拿。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-05",
+  "evidence": "Purchase orders for the clear divider were split between two suppliers. In the cost log, charge a replacement divider to the supplier of the original only when that original was unusable on arrival. If it was accepted, then damaged while we were setting a tray up, charge the replacement to in-house setup. Enter the replacement against the item involved, not against the box or the order as a whole. / The carton was stamped Northpack, but it contained dividers from both suppliers. The completion sheet identifies dividers by notch pattern, not by the carton: one notch means Northpack and two mean Elsin. At delivery, the receiving team checked every divider before accepting it or moving it to setup. Only dividers rejected as unusable at that first check went beyond the taped line, where they stayed. / A photo taken during the first receiving check shows the cracked two-notch divider beyond the taped line. Another photo shows the one-notch divider in use at setup; its receiving record was signed as usable, and the setup lead reported that it broke during a tray adjustment. We replaced both from our spare shelf.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 713,
+      "endChar": 1113,
+      "exactQuote": "Purchase orders for the clear divider were split between two suppliers. In the cost log, charge a replacement divider to the supplier of the original only when that original was unusable on arrival. If it was accepted, then damaged while we were setting a tray up, charge the replacement to in-house setup. Enter the replacement against the item involved, not against the box or the order as a whole."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1115,
+      "endChar": 1518,
+      "exactQuote": "The carton was stamped Northpack, but it contained dividers from both suppliers. The completion sheet identifies dividers by notch pattern, not by the carton: one notch means Northpack and two mean Elsin. At delivery, the receiving team checked every divider before accepting it or moving it to setup. Only dividers rejected as unusable at that first check went beyond the taped line, where they stayed."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1520,
+      "endChar": 1834,
+      "exactQuote": "A photo taken during the first receiving check shows the cracked two-notch divider beyond the taped line. Another photo shows the one-notch divider in use at setup; its receiving record was signed as usable, and the setup lead reported that it broke during a tray adjustment. We replaced both from our spare shelf."
+    }
+  ]
+}
