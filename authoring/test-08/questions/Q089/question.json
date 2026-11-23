@@ -1,0 +1,67 @@
+{
+  "id": "t08-q089",
+  "testId": "test-08",
+  "groupId": "t08-g089",
+  "number": 89,
+  "part": 4,
+  "topic": "business",
+  "difficulty": "foundation",
+  "prompt": "What did the team count in each run?",
+  "promptZh": "團隊每輪計算什麼？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "The sheets that went through the punch.",
+      "zh": "通過打孔機的紙張數。",
+      "whyZh": "每輪用同樣多的紙張，但圖表記的是檯面上的紙屑數。"
+    },
+    {
+      "id": "B",
+      "text": "The scraps that fell into the bin.",
+      "zh": "掉進收集盒的紙屑數。",
+      "whyZh": "講者特別把落入收集盒的紙屑排除。"
+    },
+    {
+      "id": "C",
+      "text": "The scraps that remained on the worktop.",
+      "zh": "留在工作檯面上的紙屑數。",
+      "whyZh": "試驗只記下落在檯面、未被收集盒接住的紙屑。"
+    },
+    {
+      "id": "D",
+      "text": "The holes left in each sheet.",
+      "zh": "每張紙上的孔數。",
+      "whyZh": "講者沒有量打出的孔，計數的是檯面上的紙屑。"
+    }
+  ],
+  "explanationZh": "試驗只記下落在檯面、未被收集盒接住的紙屑。",
+  "evidence": "We counted the scraps left on the worktop, not the ones that landed in the bin.",
+  "evidenceSpans": [
+    {
+      "paragraphIndex": 0,
+      "sourceField": "talk",
+      "speaker": "M",
+      "startChar": 51,
+      "endChar": 130,
+      "exactQuote": "We counted the scraps left on the worktop, not the ones that landed in the bin."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "worktop",
+      "zh": "工作檯面",
+      "note": "工作用的平坦表面。"
+    },
+    {
+      "term": "landed in the bin",
+      "zh": "落入收集盒",
+      "note": "land 在此指掉落到某處。"
+    }
+  ],
+  "tags": [
+    "business",
+    "monologue"
+  ],
+  "revision": 1
+}

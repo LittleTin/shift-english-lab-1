@@ -1,0 +1,75 @@
+{
+  "id": "t08-q098",
+  "testId": "test-08",
+  "groupId": "t08-g098",
+  "number": 98,
+  "part": 4,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "prompt": "Which action lets a visitor take part without reducing the next person’s choices?",
+  "promptZh": "哪種做法既能參加活動，又不會讓下一位遊客少一個選擇？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "Write a reply on a blank card and take the old note along.",
+      "zh": "用空白卡寫回覆，並帶走舊短箋。",
+      "whyZh": "回覆載體正確，但帶走牆上的短箋會讓下一位少一個選擇。"
+    },
+    {
+      "id": "B",
+      "text": "Write a reply on a blank card and leave the old note on the wall.",
+      "zh": "用空白卡寫回覆，並把舊短箋留在牆上。",
+      "whyZh": "回覆應另寫在空白卡上；把選中的舊短箋留在牆上，下一位仍能從同一組短箋挑選。"
+    },
+    {
+      "id": "C",
+      "text": "Write a reply directly on an old note and leave it on the wall.",
+      "zh": "直接在舊短箋上寫回覆，再把短箋留在牆上。",
+      "whyZh": "雖然短箋沒有帶走，但回覆應另寫在桌上的空白卡，而非直接寫在牆上的複本。"
+    },
+    {
+      "id": "D",
+      "text": "Write a reply directly on an old note and take it along.",
+      "zh": "直接在舊短箋上寫回覆，再帶走短箋。",
+      "whyZh": "回覆應另寫在空白卡上，牆上的舊短箋也不能帶走。"
+    }
+  ],
+  "explanationZh": "回覆應另寫在空白卡上；把選中的舊短箋留在牆上，下一位仍能從同一組短箋挑選。",
+  "evidence": "write an imaginary reply on a blank card from the table. / Please leave the old notes on the wall so the next person can choose from the same set.",
+  "evidenceSpans": [
+    {
+      "paragraphIndex": 0,
+      "sourceField": "talk",
+      "speaker": "M",
+      "startChar": 148,
+      "endChar": 204,
+      "exactQuote": "write an imaginary reply on a blank card from the table."
+    },
+    {
+      "paragraphIndex": 0,
+      "sourceField": "talk",
+      "speaker": "M",
+      "startChar": 205,
+      "endChar": 292,
+      "exactQuote": "Please leave the old notes on the wall so the next person can choose from the same set."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "an imaginary reply",
+      "zh": "一封想像中的回信",
+      "note": "imaginary 指非真實寄送情境。"
+    },
+    {
+      "term": "the same set",
+      "zh": "同一組",
+      "note": "此處指牆上不更動的一組舊便箋。"
+    }
+  ],
+  "tags": [
+    "daily",
+    "monologue"
+  ],
+  "revision": 2
+}

@@ -5,39 +5,47 @@
   "number": 80,
   "part": 4,
   "topic": "daily",
-  "difficulty": "foundation",
-  "prompt": "How should participants choose between the instruction sheets?",
-  "promptZh": "參加者應該怎麼選擇說明單？",
+  "difficulty": "intermediate",
+  "prompt": "Two participants feed the yarn with opposite hands. Which sheets should they use, and what will they make?",
+  "promptZh": "兩位參加者分別用不同側的手送線。他們該用哪一張圖解？最後會織出什麼？",
   "answer": "D",
   "options": [
     {
       "id": "A",
-      "text": "Choose the one with the larger square.",
-      "zh": "選方片比較大的那份。",
-      "whyZh": "兩份說明會織出一樣的方片，沒有較大的一份。"
+      "text": "The same sheet; they will both make the same square.",
+      "zh": "用同一張圖解；兩人會織出相同的方片。",
+      "whyZh": "成品相同沒錯，但應選和自己送線那隻手相符的圖解；兩人應選不同張。"
     },
     {
       "id": "B",
-      "text": "Choose according to the yarn colour.",
-      "zh": "依毛線顏色選擇。",
-      "whyZh": "毛線顏色不是選說明單的依據；兩份圖的差別是引線方向。"
+      "text": "The same sheet; they will make different squares.",
+      "zh": "用同一張圖解；兩人會織出不同的方片。",
+      "whyZh": "兩人的送線手不同，應選不同圖解；兩張圖解會織出相同的方片。"
     },
     {
       "id": "C",
-      "text": "Choose the one with fewer numbered rows.",
-      "zh": "選列號比較少的那份。",
-      "whyZh": "兩份的列號一一對應，並未說其中一份列數較少。"
+      "text": "Different sheets; they will make different squares.",
+      "zh": "用不同的圖解；兩人會織出不同的方片。",
+      "whyZh": "兩人的送線手不同，應選不同圖解；但講師說織出來的條紋方片相同。"
     },
     {
       "id": "D",
-      "text": "Choose according to the hand that feeds the yarn.",
-      "zh": "依拿毛線的那隻手來選。",
-      "whyZh": "講者請參加者選符合自己拿線手的圖。"
+      "text": "Different sheets; they will both make the same square.",
+      "zh": "用不同的圖解；兩人會織出相同的方片。",
+      "whyZh": "兩張圖解分別對應兩側送線；兩人送線手不同所以選不同張，但會織出相同的條紋方片。"
     }
   ],
-  "explanationZh": "講者請參加者選符合自己拿線手的圖。",
-  "evidence": "Pick the drawing that matches the hand you use to feed the yarn.",
+  "explanationZh": "兩張圖解分別對應兩側送線；兩人送線手不同所以選不同張，但會織出相同的條紋方片。",
+  "evidence": "They make the same striped square, but they show the yarn coming from opposite sides. / Pick the drawing that matches the hand you use to feed the yarn.",
   "evidenceSpans": [
+    {
+      "paragraphIndex": 0,
+      "sourceField": "talk",
+      "speaker": "M",
+      "startChar": 102,
+      "endChar": 187,
+      "exactQuote": "They make the same striped square, but they show the yarn coming from opposite sides."
+    },
     {
       "paragraphIndex": 0,
       "sourceField": "talk",
@@ -63,5 +71,5 @@
     "daily",
     "monologue"
   ],
-  "revision": 1
+  "revision": 2
 }

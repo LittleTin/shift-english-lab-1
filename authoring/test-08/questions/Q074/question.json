@@ -5,46 +5,54 @@
   "number": 74,
   "part": 4,
   "topic": "business",
-  "difficulty": "foundation",
-  "prompt": "Why has the lead stopped the crew from washing the floor with the machine?",
-  "promptZh": "為什麼領班不讓清潔班用這台機器洗地？",
+  "difficulty": "intermediate",
+  "prompt": "What should the crew conclude about the machine’s two functions?",
+  "promptZh": "清潔人員應如何判斷這台機器的兩項功能？",
   "answer": "B",
   "options": [
     {
       "id": "A",
-      "text": "The machine cannot be moved downstairs.",
-      "zh": "機器不能搬到樓下。",
-      "whyZh": "對話沒有提到機器搬不動；領班只是說自己要上樓。"
+      "text": "Neither washing nor dry pickup is available this afternoon.",
+      "zh": "今天下午既不能洗地，也不能用乾式吸頭清理。",
+      "whyZh": "洗地的確暫停，但這不妨礙使用獨立的乾式吸頭。"
     },
     {
       "id": "B",
-      "text": "The strip that collects water is damaged.",
-      "zh": "用來收水的橡膠條壞了。",
-      "whyZh": "領班指出橡膠條破了，因此今天下午不能用它洗地。"
+      "text": "Dry pickup is still possible even though washing must wait.",
+      "zh": "仍可用乾式吸頭清理，但洗地要等。",
+      "whyZh": "集水橡膠條破了，今天下午不要用這台機器洗地；獨立的乾式吸頭仍能用。"
     },
     {
       "id": "C",
-      "text": "The machine has lost its dry head.",
-      "zh": "機器的乾式吸頭不見了。",
-      "whyZh": "乾式吸頭仍可用，故障的是收水的橡膠條。"
+      "text": "Washing can continue if the crew leaves off the dry head.",
+      "zh": "只要不裝乾式吸頭，就可以繼續洗地。",
+      "whyZh": "卸下乾式吸頭解決不了集水橡膠條破損的問題。"
     },
     {
       "id": "D",
-      "text": "There is no water in the supply room.",
-      "zh": "物料間沒水了。",
-      "whyZh": "物料間是掛橡膠條的地方，沒有說那裡缺水。"
+      "text": "Both functions can continue because the dry head still works.",
+      "zh": "乾式吸頭還能用，所以兩項功能都可以繼續。",
+      "whyZh": "乾式吸頭能用，不代表可以繼續洗地；主管明確說下午不要用機器洗地。"
     }
   ],
-  "explanationZh": "領班指出橡膠條破了，因此今天下午不能用它洗地。",
-  "evidence": "The rubber strip that picks up water on the scrubber has torn.",
+  "explanationZh": "集水橡膠條破了，今天下午不要用這台機器洗地；獨立的乾式吸頭仍能用。",
+  "evidence": "Please don’t use the scrubber to wash the floor this afternoon. / The separate dry head still works.",
   "evidenceSpans": [
     {
       "paragraphIndex": 0,
       "sourceField": "talk",
       "speaker": "M",
-      "startChar": 53,
-      "endChar": 115,
-      "exactQuote": "The rubber strip that picks up water on the scrubber has torn."
+      "startChar": 116,
+      "endChar": 179,
+      "exactQuote": "Please don’t use the scrubber to wash the floor this afternoon."
+    },
+    {
+      "paragraphIndex": 0,
+      "sourceField": "talk",
+      "speaker": "M",
+      "startChar": 180,
+      "endChar": 214,
+      "exactQuote": "The separate dry head still works."
     }
   ],
   "vocabulary": [
@@ -63,5 +71,5 @@
     "business",
     "monologue"
   ],
-  "revision": 1
+  "revision": 2
 }

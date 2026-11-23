@@ -1,0 +1,75 @@
+{
+  "id": "t08-q090",
+  "testId": "test-08",
+  "groupId": "t08-g089",
+  "number": 90,
+  "part": 4,
+  "topic": "business",
+  "difficulty": "advanced",
+  "prompt": "Look at the graphic. Which change met the speaker’s rule for counting as an improvement?",
+  "promptZh": "請看圖。依講者的判定規則，哪項調整達到改善標準？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "Brushing around the bin only.",
+      "zh": "只有刷清收集盒周圍。",
+      "whyZh": "第二輪 8 片低於刷清前的第一輪 12 片，但第三輪回升至 13 片，刷清後兩輪沒有都下降。"
+    },
+    {
+      "id": "B",
+      "text": "Adding the paper guard only.",
+      "zh": "只有加裝紙擋板。",
+      "whyZh": "加裝前第三輪有 13 片，之後兩輪是 6 片和 5 片，都低於 13；刷清後的第三輪沒有低於其基準 12。"
+    },
+    {
+      "id": "C",
+      "text": "Both brushing and adding the guard.",
+      "zh": "刷清和加裝擋板都符合。",
+      "whyZh": "加擋板符合；但刷清後第二輪雖降，第三輪反而高於第一輪，不能算兩項都符合。"
+    },
+    {
+      "id": "D",
+      "text": "Neither brushing nor adding the guard.",
+      "zh": "刷清和加裝擋板都不符合。",
+      "whyZh": "加擋板後兩輪都低於調整前最後一輪，所以不是兩項都不符合。"
+    }
+  ],
+  "explanationZh": "加裝前第三輪有 13 片，之後兩輪是 6 片和 5 片，都低於 13；刷清後的第三輪沒有低於其基準 12。",
+  "evidence": "Between runs one and two, we brushed out the gap around the bin. Between runs three and four, we added a paper guard along the edge. / For a change to count, both of the next two runs have to be below the run just before that change.",
+  "evidenceSpans": [
+    {
+      "paragraphIndex": 0,
+      "sourceField": "talk",
+      "speaker": "M",
+      "startChar": 131,
+      "endChar": 263,
+      "exactQuote": "Between runs one and two, we brushed out the gap around the bin. Between runs three and four, we added a paper guard along the edge."
+    },
+    {
+      "paragraphIndex": 1,
+      "sourceField": "talk",
+      "speaker": "M",
+      "startChar": 292,
+      "endChar": 390,
+      "exactQuote": "For a change to count, both of the next two runs have to be below the run just before that change."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "a paper guard",
+      "zh": "紙製擋片",
+      "note": "裝在邊緣的紙製阻隔物。"
+    },
+    {
+      "term": "just before that change",
+      "zh": "就在那項變更之前",
+      "note": "just 強調緊接在某時間點前。"
+    }
+  ],
+  "tags": [
+    "business",
+    "monologue"
+  ],
+  "revision": 1
+}

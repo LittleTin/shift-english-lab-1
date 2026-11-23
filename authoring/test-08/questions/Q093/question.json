@@ -1,0 +1,75 @@
+{
+  "id": "t08-q093",
+  "testId": "test-08",
+  "groupId": "t08-g092",
+  "number": 93,
+  "part": 4,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "prompt": "Why does the guide say “There’s only one stripe”?",
+  "promptZh": "導覽員為什麼說「只有一條條紋」？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "To tell visitors which stripe they should touch.",
+      "zh": "告訴遊客應該碰哪一條條紋。",
+      "whyZh": "導覽請人透過玻璃觀察，沒有要碰條紋。"
+    },
+    {
+      "id": "B",
+      "text": "To explain why the reflector moves.",
+      "zh": "說明反光板為什麼會移動。",
+      "whyZh": "反光板的角色是照明，條紋數量和反光板是否移動無關。"
+    },
+    {
+      "id": "C",
+      "text": "To show that the glass causes the difference in appearance.",
+      "zh": "指出外觀看起來不同，是玻璃造成的。",
+      "whyZh": "同一條條紋透過舊玻璃看起來彎曲，因此差異來自玻璃，不是用了不同的條紋。"
+    },
+    {
+      "id": "D",
+      "text": "To point out that one pane has no stripe behind it.",
+      "zh": "指出有一片玻璃後面沒有條紋。",
+      "whyZh": "兩片都能看見同一條，並不是有一片後方看不到。"
+    }
+  ],
+  "explanationZh": "同一條條紋透過舊玻璃看起來彎曲，因此差異來自玻璃，不是用了不同的條紋。",
+  "evidence": "There’s only one stripe. / you’re seeing the effect of the uneven glass, not a stripe that was drawn crooked.",
+  "evidenceSpans": [
+    {
+      "paragraphIndex": 1,
+      "sourceField": "talk",
+      "speaker": "M",
+      "startChar": 264,
+      "endChar": 288,
+      "exactQuote": "There’s only one stripe."
+    },
+    {
+      "paragraphIndex": 1,
+      "sourceField": "talk",
+      "speaker": "M",
+      "startChar": 331,
+      "endChar": 413,
+      "exactQuote": "you’re seeing the effect of the uneven glass, not a stripe that was drawn crooked."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "looks bent",
+      "zh": "看起來彎曲",
+      "note": "look 加形容詞描述外觀，不代表實際狀態。"
+    },
+    {
+      "term": "uneven glass",
+      "zh": "不平整的玻璃",
+      "note": "此處指玻璃表面不平整。"
+    }
+  ],
+  "tags": [
+    "daily",
+    "monologue"
+  ],
+  "revision": 1
+}
