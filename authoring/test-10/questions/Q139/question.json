@@ -1,0 +1,90 @@
+{
+  "id": "t10-q139",
+  "testId": "test-10",
+  "number": 139,
+  "part": 6,
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "text-completion",
+    "hotel-housekeeping"
+  ],
+  "prompt": "Choose the best word or sentence for blank [139].",
+  "promptZh": "請選出最適合填入第 139 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "Return only the pack from 307, since that room’s guest key was not used.",
+      "zh": "只放回 307 房的布巾包，因為該房未使用房客房卡。",
+      "whyZh": "307 房雖然未使用房客房卡，房務員卻扶門讓房客實際進入；布巾包仍密封也不能放回。"
+    },
+    {
+      "id": "B",
+      "text": "Return only the pack from 312, since no guest entered the room.",
+      "zh": "只放回 312 房的布巾包，因為沒有房客進入。",
+      "whyZh": "312 房確實沒有房客進入，但房務員已拆封，還是不符合放回條件。"
+    },
+    {
+      "id": "C",
+      "text": "Return only the pack from 304, even though the log shows use of a guest key.",
+      "zh": "只放回 304 房的布巾包，即使門鎖紀錄顯示使用過房客房卡。",
+      "whyZh": "304 房仍密封。房客九點看房時，房間要到十點才準備好；之後用房客房卡進去的是行李員，房客沒再上樓，因此符合放回條件。"
+    },
+    {
+      "id": "D",
+      "text": "Return neither sealed pack, since both rooms had a guest visit at some point.",
+      "zh": "兩包密封布巾都不要放回，因為兩間房都曾有房客進入。",
+      "whyZh": "是否曾進房不是唯一條件，還要看時間。304 房的房客在準備好之前就已離開，後來使用房客房卡的是行李員；307 房的房客才是在準備好之後走進去。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "304 房仍密封。房客九點看房時，房間要到十點才準備好；之後用房客房卡進去的是行李員，房客沒再上樓，因此符合放回條件。",
+  "groupId": "t10-r-p6-03",
+  "evidence": "An unopened spare linen pack can go back to the floor cupboard only if no guest has entered the room since the room was prepared. / A ‘guest key’ entry in the door log identifies the card used to open the door, not the person who carried it. / The guest stepped inside 304 at nine; the attendant prepared the room at ten. / The porter had borrowed it to put a suitcase inside and returned it to the guest in the lobby. / just after the attendant finished preparing the room, she held the door open while the guest stepped inside. / a new attendant broke its pack's seal to check the contents.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 91,
+      "endChar": 220,
+      "exactQuote": "An unopened spare linen pack can go back to the floor cupboard only if no guest has entered the room since the room was prepared."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 285,
+      "endChar": 394,
+      "exactQuote": "A ‘guest key’ entry in the door log identifies the card used to open the door, not the person who carried it."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 693,
+      "endChar": 770,
+      "exactQuote": "The guest stepped inside 304 at nine; the attendant prepared the room at ten."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 817,
+      "endChar": 911,
+      "exactQuote": "The porter had borrowed it to put a suitcase inside and returned it to the guest in the lobby."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1011,
+      "endChar": 1119,
+      "exactQuote": "just after the attendant finished preparing the room, she held the door open while the guest stepped inside."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1146,
+      "endChar": 1206,
+      "exactQuote": "a new attendant broke its pack's seal to check the contents."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "since the room was prepared",
+      "zh": "自客房準備好之後",
+      "note": "since 在這裡限定時間；之前進房和之後進房的判定不同。"
+    }
+  ]
+}

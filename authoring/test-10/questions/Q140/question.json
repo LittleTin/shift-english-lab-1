@@ -1,0 +1,90 @@
+{
+  "id": "t10-q140",
+  "testId": "test-10",
+  "number": 140,
+  "part": 6,
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "text-completion",
+    "hotel-housekeeping"
+  ],
+  "prompt": "Choose the best word or sentence for blank [140].",
+  "promptZh": "請選出最適合填入第 140 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "cancel the room visit but keep the towel request open for desk pickup",
+      "zh": "取消進房服務，但保留毛巾需求，讓房客到櫃台領取",
+      "whyZh": "她明確取消的只有進房服務；毛巾需求沒有取消，而且她先前已選擇必要時到櫃台拿，因此不需另問地點。"
+    },
+    {
+      "id": "B",
+      "text": "cancel the visit and the towel request because the guest will not be going upstairs",
+      "zh": "取消進房服務和毛巾需求，因為房客不會上樓",
+      "whyZh": "不上樓與取消進房服務一致，但旅館把毛巾視為另一項需求，不能一併取消。"
+    },
+    {
+      "id": "C",
+      "text": "keep the room visit until the guest confirms what to do with the towels",
+      "zh": "保留進房服務，直到房客確認毛巾要怎麼處理",
+      "whyZh": "客人已清楚取消進房服務，不需要為一項仍有效的毛巾需求保留進房安排。"
+    },
+    {
+      "id": "D",
+      "text": "cancel the room visit and wait for the guest to choose where the towels should go",
+      "zh": "取消進房服務，等待房客選擇領取毛巾的地點",
+      "whyZh": "如果房客沒選過櫃台領取，不能自行把毛巾留在那裡；但這位房客已事先要求若取消進房就改到櫃台領取。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "她明確取消的只有進房服務；毛巾需求沒有取消，而且她先前已選擇必要時到櫃台拿，因此不需另問地點。",
+  "groupId": "t10-r-p6-03",
+  "evidence": "If a guest asks us not to enter a room, cancel the room visit. / A separate towel request should stay open unless the guest cancels it too. / The desk can hold towels only when the guest has already chosen desk pickup. / If I end up canceling the visit, please switch the towels to desk pickup. / Her note does not mention towels. / Please cancel the visit to the room.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 395,
+      "endChar": 457,
+      "exactQuote": "If a guest asks us not to enter a room, cancel the room visit."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 458,
+      "endChar": 532,
+      "exactQuote": "A separate towel request should stay open unless the guest cancels it too."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 533,
+      "endChar": 609,
+      "exactQuote": "The desk can hold towels only when the guest has already chosen desk pickup."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1354,
+      "endChar": 1427,
+      "exactQuote": "If I end up canceling the visit, please switch the towels to desk pickup."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1548,
+      "endChar": 1581,
+      "exactQuote": "Her note does not mention towels."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1451,
+      "endChar": 1487,
+      "exactQuote": "Please cancel the visit to the room."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "keep a request open",
+      "zh": "保留仍待處理的需求",
+      "note": "取消進房這件事不會自動取消分開提出的毛巾需求。"
+    }
+  ]
+}

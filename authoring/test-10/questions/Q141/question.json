@@ -1,0 +1,72 @@
+{
+  "id": "t10-q141",
+  "testId": "test-10",
+  "number": 141,
+  "part": 6,
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "hotel-housekeeping"
+  ],
+  "prompt": "Choose the best word or sentence for blank [141].",
+  "promptZh": "請選出最適合填入第 141 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "be used on either size, provided we keep both hooks on each cart",
+      "zh": "用於兩種尺寸，但每臺推車都要保留兩個掛鉤",
+      "whyZh": "小推車要取下一個掛鉤才有空間，因此不能兩種車都加裝又保留所有掛鉤。"
+    },
+    {
+      "id": "B",
+      "text": "be used only on smaller carts, where replacing a hook saves room on top",
+      "zh": "只用於小推車，因為取代一個掛鉤就能省下上層空間",
+      "whyZh": "小推車改裝雖然能多放袋子，卻會失去其中一瓶的掛放位置，無法維持原本瓶數。"
+    },
+    {
+      "id": "C",
+      "text": "be used on larger carts even if one of their hooks is removed",
+      "zh": "用於大推車，即使拿掉其中一個掛鉤也可以",
+      "whyZh": "拿掉一個掛鉤，仍會讓其中一瓶無處可掛；車大也不會改變這點。"
+    },
+    {
+      "id": "D",
+      "text": "be used on larger carts while their two hooks stay in place",
+      "zh": "用於大推車，同時保留原本的兩個掛鉤",
+      "whyZh": "大推車的掛鉤旁還有空間放收納袋，因此不用移除掛鉤，也仍可攜帶兩瓶。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "大推車的掛鉤旁還有空間放收納袋，因此不用移除掛鉤，也仍可攜帶兩瓶。",
+  "groupId": "t10-r-p6-03",
+  "evidence": "A sleeve fits beside the two hooks on a large cart but needs the space occupied by one hook on a small cart. / the only places for them are the hooks, which hold one bottle apiece. / Without changing how many bottles we carry",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1756,
+      "endChar": 1864,
+      "exactQuote": "A sleeve fits beside the two hooks on a large cart but needs the space occupied by one hook on a small cart."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1920,
+      "endChar": 1989,
+      "exactQuote": "the only places for them are the hooks, which hold one bottle apiece."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1990,
+      "endChar": 2032,
+      "exactQuote": "Without changing how many bottles we carry"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "apiece",
+      "zh": "每件各自；一個各……",
+      "note": "one bottle apiece 指每個掛鉤各放一瓶，不能把兩瓶都掛在同一個掛鉤。"
+    }
+  ]
+}

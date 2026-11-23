@@ -1,0 +1,84 @@
+{
+  "id": "t10-q142",
+  "testId": "test-10",
+  "number": 142,
+  "part": 6,
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "hotel-housekeeping"
+  ],
+  "prompt": "Choose the best word or sentence for blank [142].",
+  "promptZh": "請選出最適合填入第 142 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "direct both rooms to the desk because mats are no longer supplied by the floor team",
+      "zh": "請兩間房的房客都到櫃台，因為樓層房務人員不再負責提供浴墊",
+      "whyZh": "樓層房務人員仍負責房內標準配置的浴墊；不能把 205 房的責任也轉給櫃台。"
+    },
+    {
+      "id": "B",
+      "text": "have the floor team replace the missing mat in 205 and provide the requested extra for 207 from the desk",
+      "zh": "請樓層房務人員補上 205 房缺的標準浴墊，並由櫃台提供 207 房要求多拿的那片",
+      "whyZh": "205 房是缺少標準浴墊，應由樓層房務人員補上；207 房已有標準浴墊，只需由櫃台提供額外的那片。"
+    },
+    {
+      "id": "C",
+      "text": "ask the floor team to put a new mat in both rooms as part of their standard setup",
+      "zh": "請樓層房務人員照客房標準配置，在兩間房都各放一片新浴墊",
+      "whyZh": "205 房確實要補標準浴墊，但 207 房已有標準配置，想要的是由櫃台管理的備用品。"
+    },
+    {
+      "id": "D",
+      "text": "send spare mats from the desk to both rooms because neither mat was requested before cleaning",
+      "zh": "由櫃台向兩間房提供備用浴墊，因為兩項需求都不是在清潔前提出的",
+      "whyZh": "何時提出需求不是分流依據；205 房少的是標準浴墊，並非備用浴墊。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "205 房是缺少標準浴墊，應由樓層房務人員補上；207 房已有標準浴墊，只需由櫃台提供額外的那片。",
+  "groupId": "t10-r-p6-03",
+  "evidence": "A regular bath mat is still part of every room's setup. / If one is missing, the floor team should replace it. / they are available on request from the cabinet at the desk. / The floor team took the regular mat out of 205 during cleaning but did not leave a fresh one. / Room 207 still has a regular mat but would like one more.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 2112,
+      "endChar": 2167,
+      "exactQuote": "A regular bath mat is still part of every room's setup."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 2168,
+      "endChar": 2220,
+      "exactQuote": "If one is missing, the floor team should replace it."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 2292,
+      "endChar": 2351,
+      "exactQuote": "they are available on request from the cabinet at the desk."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 2381,
+      "endChar": 2474,
+      "exactQuote": "The floor team took the regular mat out of 205 during cleaning but did not leave a fresh one."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 2475,
+      "endChar": 2532,
+      "exactQuote": "Room 207 still has a regular mat but would like one more."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "on request",
+      "zh": "依需求提供",
+      "note": "額外物品才是依需求到櫃台索取，常規客房備品有缺漏時仍由樓層補齊。"
+    }
+  ]
+}
