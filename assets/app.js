@@ -1345,6 +1345,7 @@ function advanceExpiredFormalPhase(){
 document.getElementById('modal').addEventListener('cancel',e=>{if(document.getElementById('formal-expiry-title'))e.preventDefault()});
 function groupReady(g){return state.active?.audioUsed?.[g?.id]?.status==='ended'}
 function stopAudio(keepNativeSource=false){
+ stopPracticeRangeTimer();
  if(savePracticeMedia(true))void persist();
  captureFormal?.();captureFormal=null;formalMedia=null;formalPaused=false;
  audioRun++;cancelPracticePosition();formalRunning=false;formalRole='';
@@ -1682,7 +1683,7 @@ async function runFormalGroup(g,{prepareOnly=false}={}){
  }
 }
 const PRACTICE_SEEK_EPS=.014, PRACTICE_UNDERSHOOT=.004;
-let practicePosition=null;
+let practicePosition=null,practiceRangeTimer=null;
 function standalonePractice(g){
  return !!g&&g.audio===`audio/practice-groups/${g.testId}/${g.id}.ogg`&&safeMedia(g.audio)&&
   g.audioStart===0&&Number.isFinite(g.duration)&&g.duration>0&&g.audioEnd===g.duration;
@@ -1709,7 +1710,7 @@ function beginPracticePosition(g,target,playAfter){
  }
  const originalMute=player.muted;let finished=false,timer;
  const state={cancel:()=>finish('cancel')};
- practicePosition=state;
+ stopPracticeRangeTimer();practicePosition=state;
  function finish(kind){
   if(finished)return;finished=true;
   clearTimeout(timer);
@@ -1721,6 +1722,7 @@ function beginPracticePosition(g,target,playAfter){
    try{player.currentTime=target}catch(e){}
   }
   player.muted=originalMute;
+  if(kind==='ready')startPracticeRangeTimer();
   if(kind==='fail'&&current())notify('Audio position was not confirmed. Select Play again to start from this question.');
   if(kind!=='cancel')syncAudioUI();
  }
@@ -1809,12 +1811,23 @@ function savePracticeMedia(force=false){
     s.practiceMedia.rate===next.rate&&s.practiceMedia.paused===next.paused)return false;
  s.practiceMedia=next;lastPracticeMediaSave=at;return true
 }
+function practiceRangeGroup(){
+ if(formalRunning||listening()&&route==='quiz'||practicePosition||!currentAudioGroup||player.paused||player.ended)return null;
+ const g=quizGroup(currentAudioGroup);
+ return g?.audio&&!standalonePractice(g)?g:null;
+}
+function stopPracticeRangeTimer(){
+ if(practiceRangeTimer!==null){clearInterval(practiceRangeTimer);practiceRangeTimer=null}
+}
+function startPracticeRangeTimer(){
+ if(practiceRangeTimer===null&&practiceRangeGroup())practiceRangeTimer=setInterval(checkPracticeRange,15);
+}
 function checkPracticeRange(){
- if(formalRunning||listening()&&route==='quiz'||practicePosition||!currentAudioGroup||player.paused)return;
- const g=quizGroup(currentAudioGroup);if(!g?.audio||standalonePractice(g))return;
+ const g=practiceRangeGroup();
+ if(!g){stopPracticeRangeTimer();return}
  const at=player.currentTime, start=mediaStart(g), end=g.audioEnd;
  if(at<start-PRACTICE_UNDERSHOOT||Number.isFinite(end)&&at>=end-.025){
-  player.pause();try{player.currentTime=start}catch(e){}syncAudioUI();
+  stopPracticeRangeTimer();player.pause();try{player.currentTime=start}catch(e){}syncAudioUI();
  }
 }
 
@@ -2063,8 +2076,9 @@ let searchTimeout;
 document.addEventListener('input',e=>{const el=e.target;if(el.id==='question-note'||el.classList.contains('group-note')){saveNoteInput(el.dataset.id,el.value)}else if(el.id==='audio-seek'&&!listening()&&Number.isFinite(player.duration)){scrubPractice(quizGroup(currentAudioGroup),Number(el.value))}else if(el.id==='list-search'){listSearch=el.value;clearTimeout(searchTimeout);searchTimeout=setTimeout(()=>{const pos=el.selectionStart;render();const input=document.getElementById('list-search');input?.focus();input?.setSelectionRange(pos,pos)},300)}});
 window.matchMedia?.('(max-width:760px)').addEventListener?.('change',()=>{const sidebar=document.getElementById('shift-sidebar');if(window.matchMedia('(max-width:760px)').matches===false&&mobileNav){mobileNav=false;render();return}if(sidebar)sidebar.inert=window.matchMedia('(max-width:760px)').matches&&!mobileNav});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&mobileNav&&!document.getElementById('modal').open){mobileNav=false;render();document.querySelector('.mobile-menu')?.focus();return}if(route!=='quiz'||document.getElementById('modal').open||e.target.closest('.copy-question-uuid')||(e.key==='Enter'&&e.target.closest('a,button,summary,.chart-full-size'))||/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)||e.ctrlKey||e.metaKey||e.altKey)return;const card=e.target.closest('.grouped-question'),q=card?sessionQuestion(card.dataset.questionId):questionByActive();if(!q)return;const letter=e.key.toUpperCase();if(['A','B','C','D'].includes(letter)&&q.options.some(o=>o.id===letter)){const el=document.querySelector('[data-question="'+q.id+'"][data-option="'+letter+'"]');if(el&&!el.disabled){e.preventDefault();el.click()}}else if(e.key==='Enter'){const el=document.querySelector('[data-action="submit-answer"], [data-action="next-question"], [data-action="finish-session"]');if(el&&!el.disabled){e.preventDefault();el.click()}}});
-setInterval(checkPracticeRange,15);
-for(const e of ['timeupdate','seeked','playing'])player.addEventListener(e,checkPracticeRange);
+player.addEventListener('playing',()=>{checkPracticeRange();startPracticeRangeTimer()});
+for(const e of ['timeupdate','seeked'])player.addEventListener(e,checkPracticeRange);
+for(const e of ['waiting','pause','ended','emptied','error'])player.addEventListener(e,stopPracticeRangeTimer);
 for(const e of ['timeupdate','seeked','playing','pause','ended','ratechange'])player.addEventListener(e,()=>{
  if(savePracticeMedia(e!=='timeupdate'))void persist()
 });
