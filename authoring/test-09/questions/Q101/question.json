@@ -1,0 +1,52 @@
+{
+  "id": "t09-q101",
+  "testId": "test-09",
+  "number": 101,
+  "part": 5,
+  "topic": "business",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "incomplete-sentence",
+    "business"
+  ],
+  "prompt": "Had the supplier enclosed a reference chip, the repair shop _____ the finish before the client's sample was collected yesterday.",
+  "promptZh": "如果供應商當初附上比對用的色樣，維修店原本就能在樣品於昨天被取走前，比對表面處理效果。",
+  "options": [
+    {
+      "id": "A",
+      "text": "will compare",
+      "zh": "將比較",
+      "whyZh": "will compare 表示未來，與昨天已經結束的時段不符。"
+    },
+    {
+      "id": "B",
+      "text": "would compare",
+      "zh": "會比較（假設現在或未來）",
+      "whyZh": "would compare 可表示假設下的現在或未來結果，不能在此描述昨天本可做到但沒做到的事。"
+    },
+    {
+      "id": "C",
+      "text": "could have compared",
+      "zh": "原本可以比較",
+      "whyZh": "Had the supplier enclosed 是 If the supplier had enclosed 的倒裝；could have compared 表示過去本可比較卻沒有做到。"
+    },
+    {
+      "id": "D",
+      "text": "has compared",
+      "zh": "已比較過",
+      "whyZh": "has compared 是現在完成式，會把比較當作已發生的事，與過去反事實條件不合。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "Had the supplier enclosed 是 If the supplier had enclosed 的倒裝；could have compared 表示過去本可比較卻沒有做到。",
+  "evidence": "Had the supplier enclosed a reference chip, the repair shop could have compared the finish before the client's sample was collected yesterday.",
+  "evidenceZh": "如果供應商當初附上比對用的色樣，維修店原本就能在樣品於昨天被取走前，比對表面處理效果。",
+  "vocabulary": [
+    {
+      "term": "reference chip",
+      "zh": "比對用色樣",
+      "note": "此處是比對表面處理的小片樣品，不是電子晶片。"
+    }
+  ]
+}
