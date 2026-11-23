@@ -1,0 +1,52 @@
+{
+  "id": "t10-q123",
+  "testId": "test-10",
+  "number": 123,
+  "part": 5,
+  "topic": "manufacturing",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "incomplete-sentence",
+    "counterfactual-savings"
+  ],
+  "prompt": "The battery supplier expected smaller transit cartons to reduce shipping costs. A new carrier limit meant fewer cartons per pallet, canceling the saving the supplier would ______ have made.",
+  "promptZh": "電池供應商原本預期用較小的運輸紙箱能降低運費。承運商的新規定減少了每個棧板可堆放的箱數，抵銷了供應商______本可省下的錢。",
+  "options": [
+    {
+      "id": "A",
+      "text": "likewise",
+      "zh": "同樣地",
+      "whyZh": "likewise 要有另一個相同結果；此處沒有第二筆類似節省。"
+    },
+    {
+      "id": "B",
+      "text": "otherwise",
+      "zh": "若非如此",
+      "whyZh": "otherwise 表示若沒有剛提到的情況，原先本可出現的結果；若每棧板箱數沒減少便能省下。"
+    },
+    {
+      "id": "C",
+      "text": "instead",
+      "zh": "反而",
+      "whyZh": "instead 表示改做另一件事或出現另一種結果，不能在此說明若沒有箱數限制本會省下的錢。"
+    },
+    {
+      "id": "D",
+      "text": "thereby",
+      "zh": "從而",
+      "whyZh": "thereby 表示由該作法所導致；前文說承運商的做法抵銷節省，而不是藉此省錢。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "otherwise 表示若沒有剛提到的情況，原先本可出現的結果；若每棧板箱數沒減少便能省下。",
+  "vocabulary": [
+    {
+      "term": "would otherwise have + p.p.",
+      "zh": "若非前述情況，本可……",
+      "note": "用於說明因已提到的情況而未實現的過去結果。"
+    }
+  ],
+  "evidence": "The battery supplier expected smaller transit cartons to reduce shipping costs. A new carrier limit meant fewer cartons per pallet, canceling the saving the supplier would otherwise have made.",
+  "evidenceZh": "電池供應商原本預期用較小的運輸紙箱能降低運費。承運商的新規定減少了每個棧板可堆放的箱數，抵銷了供應商若非如此本可省下的錢。"
+}
