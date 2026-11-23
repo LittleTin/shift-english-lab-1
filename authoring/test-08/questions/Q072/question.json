@@ -1,0 +1,67 @@
+{
+  "id": "t08-q072",
+  "testId": "test-08",
+  "groupId": "t08-g071",
+  "number": 72,
+  "part": 4,
+  "topic": "business",
+  "difficulty": "foundation",
+  "prompt": "What should the listener do if only the old phone rings?",
+  "promptZh": "如果只有舊電話響，聽者應該怎麼做？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "Change the reception number on the front door.",
+      "zh": "更改大門上的接待處號碼。",
+      "whyZh": "換電話不換號碼，也沒有要求改大門上的資訊。"
+    },
+    {
+      "id": "B",
+      "text": "Box it up and call from the new phone.",
+      "zh": "把舊電話裝箱，用新電話打出去。",
+      "whyZh": "要等新電話接得到來電，才能把舊電話裝箱。"
+    },
+    {
+      "id": "C",
+      "text": "Keep it connected and contact Nia.",
+      "zh": "讓舊電話保持連接，並聯絡妮亞。",
+      "whyZh": "只有舊電話響時，妮亞請聽者不要拔掉舊電話，並打電話給她。"
+    },
+    {
+      "id": "D",
+      "text": "Try calling the number on the installer’s sticker.",
+      "zh": "改打安裝貼紙上的號碼。",
+      "whyZh": "那個號碼只供安裝人員使用；指定測試的是大門上的公開號碼。"
+    }
+  ],
+  "explanationZh": "只有舊電話響時，妮亞請聽者不要拔掉舊電話，並打電話給她。",
+  "evidence": "If only the old one rings, leave it plugged in and call me.",
+  "evidenceSpans": [
+    {
+      "paragraphIndex": 1,
+      "sourceField": "talk",
+      "speaker": "F",
+      "startChar": 365,
+      "endChar": 424,
+      "exactQuote": "If only the old one rings, leave it plugged in and call me."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "leave it plugged in",
+      "zh": "讓它繼續插著",
+      "note": "leave 在此指維持原狀。"
+    },
+    {
+      "term": "put the old one in its box",
+      "zh": "把舊的放進盒子",
+      "note": "old one 指舊電話。"
+    }
+  ],
+  "tags": [
+    "business",
+    "monologue"
+  ],
+  "revision": 1
+}

@@ -1,0 +1,75 @@
+{
+  "id": "t08-q071",
+  "testId": "test-08",
+  "groupId": "t08-g071",
+  "number": 71,
+  "part": 4,
+  "topic": "business",
+  "difficulty": "foundation",
+  "prompt": "What does Nia ask the listener to test?",
+  "promptZh": "妮亞請聽者測試什麼？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "Whether the new phone can call a mobile.",
+      "zh": "新電話能不能打到手機。",
+      "whyZh": "新電話已經能撥出；這次要測試接不接得到外面打進來的電話。"
+    },
+    {
+      "id": "B",
+      "text": "Whether the installer can read the sticker.",
+      "zh": "安裝人員能不能看懂貼紙。",
+      "whyZh": "貼紙上的號碼只供安裝用，不是測試的目標。"
+    },
+    {
+      "id": "C",
+      "text": "Whether an outside call to reception reaches the new phone.",
+      "zh": "從外面打到接待處的電話，能不能由新電話接到。",
+      "whyZh": "妮亞請聽者用自己的手機打大門上的接待處號碼，確認新電話是否會響。"
+    },
+    {
+      "id": "D",
+      "text": "Whether staff can find the directory.",
+      "zh": "員工能不能找到通訊錄。",
+      "whyZh": "員工通訊錄會維持原樣；留言沒有要求測試通訊錄。"
+    }
+  ],
+  "explanationZh": "妮亞請聽者用自己的手機打大門上的接待處號碼，確認新電話是否會響。",
+  "evidence": "It can already call out. Making a call doesn’t show that the phone can receive one. / Please use your own mobile to call the reception number printed on our front door.",
+  "evidenceSpans": [
+    {
+      "paragraphIndex": 0,
+      "sourceField": "talk",
+      "speaker": "F",
+      "startChar": 73,
+      "endChar": 156,
+      "exactQuote": "It can already call out. Making a call doesn’t show that the phone can receive one."
+    },
+    {
+      "paragraphIndex": 1,
+      "sourceField": "talk",
+      "speaker": "F",
+      "startChar": 157,
+      "endChar": 239,
+      "exactQuote": "Please use your own mobile to call the reception number printed on our front door."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "call out",
+      "zh": "撥出電話",
+      "note": "電話能往外撥號。"
+    },
+    {
+      "term": "receive one",
+      "zh": "接到來電",
+      "note": "one 代替 a call。"
+    }
+  ],
+  "tags": [
+    "business",
+    "monologue"
+  ],
+  "revision": 1
+}

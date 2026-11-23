@@ -1,0 +1,75 @@
+{
+  "id": "t08-q075",
+  "testId": "test-08",
+  "groupId": "t08-g074",
+  "number": 75,
+  "part": 4,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "prompt": "Which plan follows the handover for both areas?",
+  "promptZh": "哪個安排同時符合兩處的交接指示？",
+  "answer": "D",
+  "options": [
+    {
+      "id": "A",
+      "text": "Wash the lobby, and sweep near the lift twice.",
+      "zh": "洗大廳的地，再把電梯旁掃兩次。",
+      "whyZh": "下午不使用洗地功能，領班也明說電梯旁掃兩次沒用。"
+    },
+    {
+      "id": "B",
+      "text": "Leave both areas untouched until tomorrow.",
+      "zh": "兩處都先不處理，等到明天。",
+      "whyZh": "電梯旁可以等到明天，大廳紙屑今天仍能用乾式吸頭處理。"
+    },
+    {
+      "id": "C",
+      "text": "Clean the lift area with the dry head, and leave the lobby until tomorrow.",
+      "zh": "用乾式吸頭清理電梯旁，大廳留到明天。",
+      "whyZh": "處理順序剛好相反：電梯旁的痕跡需要洗，大廳紙屑可乾吸。"
+    },
+    {
+      "id": "D",
+      "text": "Pick up the lobby paper with the dry head, and leave the lift area for tomorrow.",
+      "zh": "用乾式吸頭清掉大廳的紙屑，電梯旁留到明天。",
+      "whyZh": "大廳的紙屑不必用水洗；電梯旁的深色痕跡需要洗，所以等到明天。"
+    }
+  ],
+  "explanationZh": "大廳的紙屑不必用水洗；電梯旁的深色痕跡需要洗，所以等到明天。",
+  "evidence": "Use the dry head in the lobby, where the children’s workshop left bits of paper. / The dark marks by the west lift need washing, so leave those for tomorrow.",
+  "evidenceSpans": [
+    {
+      "paragraphIndex": 1,
+      "sourceField": "talk",
+      "speaker": "M",
+      "startChar": 215,
+      "endChar": 295,
+      "exactQuote": "Use the dry head in the lobby, where the children’s workshop left bits of paper."
+    },
+    {
+      "paragraphIndex": 1,
+      "sourceField": "talk",
+      "speaker": "M",
+      "startChar": 296,
+      "endChar": 370,
+      "exactQuote": "The dark marks by the west lift need washing, so leave those for tomorrow."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "dry head",
+      "zh": "乾式吸頭",
+      "note": "洗地機獨立的乾式附件；此處用來清除大廳紙屑，不用水洗。"
+    },
+    {
+      "term": "leave those for tomorrow",
+      "zh": "把那些留到明天處理",
+      "note": "those 指電梯旁的深色痕跡"
+    }
+  ],
+  "tags": [
+    "business",
+    "monologue"
+  ],
+  "revision": 1
+}

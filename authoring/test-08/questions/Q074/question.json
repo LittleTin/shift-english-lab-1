@@ -1,0 +1,67 @@
+{
+  "id": "t08-q074",
+  "testId": "test-08",
+  "groupId": "t08-g074",
+  "number": 74,
+  "part": 4,
+  "topic": "business",
+  "difficulty": "foundation",
+  "prompt": "Why has the lead stopped the crew from washing the floor with the machine?",
+  "promptZh": "為什麼領班不讓清潔班用這台機器洗地？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "The machine cannot be moved downstairs.",
+      "zh": "機器不能搬到樓下。",
+      "whyZh": "對話沒有提到機器搬不動；領班只是說自己要上樓。"
+    },
+    {
+      "id": "B",
+      "text": "The strip that collects water is damaged.",
+      "zh": "用來收水的橡膠條壞了。",
+      "whyZh": "領班指出橡膠條破了，因此今天下午不能用它洗地。"
+    },
+    {
+      "id": "C",
+      "text": "The machine has lost its dry head.",
+      "zh": "機器的乾式吸頭不見了。",
+      "whyZh": "乾式吸頭仍可用，故障的是收水的橡膠條。"
+    },
+    {
+      "id": "D",
+      "text": "There is no water in the supply room.",
+      "zh": "物料間沒水了。",
+      "whyZh": "物料間是掛橡膠條的地方，沒有說那裡缺水。"
+    }
+  ],
+  "explanationZh": "領班指出橡膠條破了，因此今天下午不能用它洗地。",
+  "evidence": "The rubber strip that picks up water on the scrubber has torn.",
+  "evidenceSpans": [
+    {
+      "paragraphIndex": 0,
+      "sourceField": "talk",
+      "speaker": "M",
+      "startChar": 53,
+      "endChar": 115,
+      "exactQuote": "The rubber strip that picks up water on the scrubber has torn."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "rubber strip",
+      "zh": "橡膠條",
+      "note": "此處是洗地機上回收水的膠條"
+    },
+    {
+      "term": "has torn",
+      "zh": "已經裂了",
+      "note": "tear 的現在完成式，指出破損仍影響使用"
+    }
+  ],
+  "tags": [
+    "business",
+    "monologue"
+  ],
+  "revision": 1
+}
