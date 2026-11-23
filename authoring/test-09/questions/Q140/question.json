@@ -1,0 +1,66 @@
+{
+  "id": "t09-q140",
+  "testId": "test-09",
+  "number": 140,
+  "part": 6,
+  "groupId": "t09-r-p6-03",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Choose the best word or sentence for blank [140].",
+  "promptZh": "請選出最適合填入第 140 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "whether",
+      "zh": "不論",
+      "whyZh": "whether…or not 說明無論替換品是否可用，都不影響結案狀態；還是要等原品核對。"
+    },
+    {
+      "id": "B",
+      "text": "although",
+      "zh": "雖然",
+      "whyZh": "although 不能在此用 or not 並列「正常」與「不正常」兩種狀態。"
+    },
+    {
+      "id": "C",
+      "text": "in case",
+      "zh": "以防",
+      "whyZh": "案件不結不是預防替換品故障，而是等待收到原品與比對序號。"
+    },
+    {
+      "id": "D",
+      "text": "so that",
+      "zh": "為了",
+      "whyZh": "案件保持開啟並不是為了讓替換品正常運作；後一句交代實際結案條件。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "whether…or not 說明無論替換品是否可用，都不影響結案狀態；還是要等原品核對。",
+  "evidence": "A case remains open whether the replacement is working or not. / We close it only after the original is received and its serial number is matched to the case.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 414,
+      "endChar": 476,
+      "exactQuote": "A case remains open whether the replacement is working or not."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 477,
+      "endChar": 570,
+      "exactQuote": "We close it only after the original is received and its serial number is matched to the case."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "remain open",
+      "zh": "仍未結案",
+      "note": "open 在案件語境指尚未完成處理，不是門開著。"
+    }
+  ]
+}

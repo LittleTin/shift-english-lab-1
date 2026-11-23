@@ -1,0 +1,66 @@
+{
+  "id": "t09-q144",
+  "testId": "test-09",
+  "number": 144,
+  "part": 6,
+  "groupId": "t09-r-p6-04",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "daily"
+  ],
+  "prompt": "Choose the best word or sentence for blank [144].",
+  "promptZh": "請選出最適合填入第 144 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "turning",
+      "zh": "轉折",
+      "whyZh": "並沒有情節改變或需要掉頭的位置；是在找描述位置時可共用的物件。"
+    },
+    {
+      "id": "B",
+      "text": "reference",
+      "zh": "參照",
+      "whyZh": "先找白天、晚上都看得見的物件當定位基準；僅在白天出現的花盆不合要求。"
+    },
+    {
+      "id": "C",
+      "text": "stopping",
+      "zh": "停止",
+      "whyZh": "花盆不是活動要停下來的位置；要找可用來辨別影子位置的基準。"
+    },
+    {
+      "id": "D",
+      "text": "selling",
+      "zh": "銷售訴求",
+      "whyZh": "selling point 表示商品的主打特色或賣點；此處要用兩格都看得見的物件作為定位基準。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "先找白天、晚上都看得見的物件當定位基準；僅在白天出現的花盆不合要求。",
+  "evidence": "Start each clue with an object that appears in both panels. / A planter shown only in daylight is a poor reference point for a clue about a shadow in the night panel.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 524,
+      "endChar": 583,
+      "exactQuote": "Start each clue with an object that appears in both panels."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 584,
+      "endChar": 688,
+      "exactQuote": "A planter shown only in daylight is a poor reference point for a clue about a shadow in the night panel."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "reference point",
+      "zh": "參照點",
+      "note": "描述相對位置時可以指一個足以定位的物件。"
+    }
+  ]
+}

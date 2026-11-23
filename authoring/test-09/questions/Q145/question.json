@@ -1,0 +1,72 @@
+{
+  "id": "t09-q145",
+  "testId": "test-09",
+  "number": 145,
+  "part": 6,
+  "groupId": "t09-r-p6-04",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "daily"
+  ],
+  "prompt": "Choose the best word or sentence for blank [145].",
+  "promptZh": "請選出最適合填入第 145 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "For example, name the blue pot that appears only on the daylight drawing.",
+      "zh": "例如，指出只出現在白天格裡的那個藍色花盆。",
+      "whyZh": "用藍色定位又只在白天出現，和前文的兩格共用、不靠顏色兩條規則皆衝突。"
+    },
+    {
+      "id": "B",
+      "text": "For example, start with the color of the object, then confirm it in both panels.",
+      "zh": "例如，先說物件的顏色，再確認它在兩格都出現。",
+      "whyZh": "用共用物件沒錯，但選色作為辨識依據，不符合入夜外觀改變時的要求。"
+    },
+    {
+      "id": "C",
+      "text": "For example, describe the outline of a crate that is shown only before dark.",
+      "zh": "例如，描述只在天黑前那格出現的箱子的外形。",
+      "whyZh": "外形不靠顏色，但箱子只在白天出現；只看夜景的人找不到。"
+    },
+    {
+      "id": "D",
+      "text": "For example, refer to the three steps visible in both drawings.",
+      "zh": "例如，用兩張圖上都看得見的三級台階來定位。",
+      "whyZh": "數台階不用靠顏色，兩格也都看得見；只看夜景依然能找出位置。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "數台階不用靠顏色，兩格也都看得見；只看夜景依然能找出位置。",
+  "evidence": "Start each clue with an object that appears in both panels. / If the same object changes appearance after dark, describe a feature that doesn’t depend on its color. / A clue should still work for a reader who sees only the night panel.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 524,
+      "endChar": 583,
+      "exactQuote": "Start each clue with an object that appears in both panels."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 690,
+      "endChar": 792,
+      "exactQuote": "If the same object changes appearance after dark, describe a feature that doesn’t depend on its color."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 857,
+      "endChar": 925,
+      "exactQuote": "A clue should still work for a reader who sees only the night panel."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "after dark",
+      "zh": "天黑後",
+      "note": "表示入夜後的時段，不是房間關燈後才必然使用。"
+    }
+  ]
+}

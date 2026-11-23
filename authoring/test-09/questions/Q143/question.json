@@ -1,0 +1,66 @@
+{
+  "id": "t09-q143",
+  "testId": "test-09",
+  "number": 143,
+  "part": 6,
+  "groupId": "t09-r-p6-04",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "foundation",
+  "tags": [
+    "text-completion",
+    "daily"
+  ],
+  "prompt": "Choose the best word or sentence for blank [143].",
+  "promptZh": "請選出最適合填入第 143 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "even though",
+      "zh": "儘管",
+      "whyZh": "保持同一觀察位置不是不用同日完成的讓步；這是允許不同日完成的前提。"
+    },
+    {
+      "id": "B",
+      "text": "as if",
+      "zh": "彷彿",
+      "whyZh": "不是假裝位置不變，而是實際要用相同位置。"
+    },
+    {
+      "id": "C",
+      "text": "as long as",
+      "zh": "只要",
+      "whyZh": "觀察位置相同即可分日完成；日期可變，但觀看角度不能變。"
+    },
+    {
+      "id": "D",
+      "text": "so that",
+      "zh": "以便",
+      "whyZh": "分日完成的目的不是讓位置保持不變；前者是在遵守後者的前提下被允許。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "觀察位置相同即可分日完成；日期可變，但觀看角度不能變。",
+  "evidence": "Use one panel for the view in daylight and another for the same view after dark. / You don’t have to finish both on the same day, as long as you keep the viewing position the same.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 123,
+      "endChar": 203,
+      "exactQuote": "Use one panel for the view in daylight and another for the same view after dark."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 204,
+      "endChar": 301,
+      "exactQuote": "You don’t have to finish both on the same day, as long as you keep the viewing position the same."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "viewing position",
+      "zh": "觀察位置",
+      "note": "指實際站的位置，不是作品擺放的位置。"
+    }
+  ]
+}

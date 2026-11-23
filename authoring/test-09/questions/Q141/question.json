@@ -1,0 +1,72 @@
+{
+  "id": "t09-q141",
+  "testId": "test-09",
+  "number": 141,
+  "part": 6,
+  "groupId": "t09-r-p6-03",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Choose the best word or sentence for blank [141].",
+  "promptZh": "請選出最適合填入第 141 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "The delivery date can be used to close the case if both headsets have the same model number.",
+      "zh": "如果兩副耳機型號相同，就可以用送達日期結案。",
+      "whyZh": "同款型號不能代替單件序號；收到且比對原耳機是兩個必要條件。"
+    },
+    {
+      "id": "B",
+      "text": "Leave the case open if the carrier confirms delivery but inventory has not matched the number.",
+      "zh": "若承運人確認已送達，但庫存管理人員還沒核對序號，請不要結案。",
+      "whyZh": "送達只符合其中一個條件；序號未比對仍不結案。否則可能在確認收到的是哪件之前就讓統計下降。"
+    },
+    {
+      "id": "C",
+      "text": "Wait for inventory to match the number before sending a replacement.",
+      "zh": "先等庫存管理人員比對序號再寄替換品。",
+      "whyZh": "前文允許替換品先送到；此段目的是規定何時結案，而非延後寄替換品。"
+    },
+    {
+      "id": "D",
+      "text": "Close the case as soon as delivery of the original appears on the carrier’s page.",
+      "zh": "只要承運人的頁面顯示原耳機已送達，就立即結案。",
+      "whyZh": "只確認送達仍缺少序號比對；下一句正是要避免這類過早結案。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "送達只符合其中一個條件；序號未比對仍不結案。否則可能在確認收到的是哪件之前就讓統計下降。",
+  "evidence": "We close it only after the original is received and its serial number is matched to the case. / Otherwise, the count would drop before we could confirm what came back. / The carrier may already have delivered it even if inventory has not yet matched the serial number.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 477,
+      "endChar": 570,
+      "exactQuote": "We close it only after the original is received and its serial number is matched to the case."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 666,
+      "endChar": 737,
+      "exactQuote": "Otherwise, the count would drop before we could confirm what came back."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 843,
+      "endChar": 941,
+      "exactQuote": "The carrier may already have delivered it even if inventory has not yet matched the serial number."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "match the number",
+      "zh": "核對序號是否相符",
+      "note": "match 除了「配對」也指核對這個序號對應哪一筆案件。"
+    }
+  ]
+}

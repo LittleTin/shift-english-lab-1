@@ -1,0 +1,66 @@
+{
+  "id": "t09-q142",
+  "testId": "test-09",
+  "number": 142,
+  "part": 6,
+  "groupId": "t09-r-p6-03",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Choose the best word or sentence for blank [142].",
+  "promptZh": "請選出最適合填入第 142 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "on loan",
+      "zh": "借給我們的",
+      "whyZh": "on loan to us 表示物品借給我們使用；這裡要區分尚在運送的原耳機與尚未結案，並不是在說借用狀態。"
+    },
+    {
+      "id": "B",
+      "text": "on display",
+      "zh": "展示中的",
+      "whyZh": "展示狀態和承運人是否已交貨無關。"
+    },
+    {
+      "id": "C",
+      "text": "in transit",
+      "zh": "在運送途中",
+      "whyZh": "仍在寄送途中是物流狀態；案件未結案卻可能早就送到，只是尚未比對序號。"
+    },
+    {
+      "id": "D",
+      "text": "in reserve",
+      "zh": "預留的",
+      "whyZh": "預留表示庫存先留著備用，不表示顧客已寄回、承運人尚未送達。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "仍在寄送途中是物流狀態；案件未結案卻可能早就送到，只是尚未比對序號。",
+  "evidence": "please distinguish an open case from a headset that is still in transit to us. / The carrier may already have delivered it even if inventory has not yet matched the serial number.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 764,
+      "endChar": 842,
+      "exactQuote": "please distinguish an open case from a headset that is still in transit to us."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 843,
+      "endChar": 941,
+      "exactQuote": "The carrier may already have delivered it even if inventory has not yet matched the serial number."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "in transit",
+      "zh": "在運送途中",
+      "note": "在物流狀態上和已送達 delivered 不同。"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "t09-q139",
+  "testId": "test-09",
+  "number": 139,
+  "part": 6,
+  "groupId": "t09-r-p6-03",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Choose the best word or sentence for blank [139].",
+  "promptZh": "請選出最適合填入第 139 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "divided",
+      "zh": "拆分",
+      "whyZh": "序號相同，結果是一筆，不是拆成更多筆。"
+    },
+    {
+      "id": "B",
+      "text": "ranked",
+      "zh": "排序",
+      "whyZh": "沒有優先順序或等級要評定；重點是同一副耳機不重複計數。"
+    },
+    {
+      "id": "C",
+      "text": "discarded",
+      "zh": "丟棄；捨棄",
+      "whyZh": "discarded 表示把通報丟棄；文中明說兩則描述仍保留在備註裡，所以要合併而非丟掉。"
+    },
+    {
+      "id": "D",
+      "text": "combined",
+      "zh": "合併",
+      "whyZh": "同一序號代表同一副耳機，把兩則通報併成一筆但保留兩則描述，既不重算也不丟資訊。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "同一序號代表同一副耳機，把兩則通報併成一筆但保留兩則描述，既不重算也不丟資訊。",
+  "evidence": "The trial page counts headsets, not reports. / Both descriptions remain in the notes.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 83,
+      "endChar": 127,
+      "exactQuote": "The trial page counts headsets, not reports."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 295,
+      "endChar": 333,
+      "exactQuote": "Both descriptions remain in the notes."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "serial number",
+      "zh": "序號",
+      "note": "用來辨認單一實物，不能和只代表同款的型號混用。"
+    }
+  ]
+}
