@@ -1,0 +1,86 @@
+{
+  "id": "t08-q060",
+  "testId": "test-08",
+  "groupId": "t08-g059",
+  "number": 60,
+  "part": 3,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "prompt": "Look at the graphic. Which site will the crew check next?",
+  "promptZh": "請看圖。工程班接下來會勘查哪個地點？",
+  "answer": "D",
+  "options": [
+    {
+      "id": "A",
+      "text": "Tool shed",
+      "zh": "工具間",
+      "whyZh": "工具間在噴水池的下一列；但今天往清單上方走，不是往下。"
+    },
+    {
+      "id": "B",
+      "text": "Notice board",
+      "zh": "布告欄",
+      "whyZh": "布告欄在噴水池上方，但中間還有花園牆邊，不是下一個地點。"
+    },
+    {
+      "id": "C",
+      "text": "Fountain",
+      "zh": "噴水池",
+      "whyZh": "男方已完成噴水池旁的勘查，要去下一個地點，不是留下來重查。"
+    },
+    {
+      "id": "D",
+      "text": "Garden wall",
+      "zh": "花園牆邊",
+      "whyZh": "噴水池已勘查完，今天沿清單由下往上走；噴水池上一列是花園牆邊。"
+    }
+  ],
+  "explanationZh": "噴水池已勘查完，今天沿清單由下往上走；噴水池上一列是花園牆邊。",
+  "evidence": "I just finished checking the fountain. / We’re working toward the top of the list today because the crew entered from the far end. / Let’s go to the next spot.",
+  "evidenceSpans": [
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "I just finished checking the fountain."
+    },
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "We’re working toward the top of the list today because the crew entered from the far end."
+    },
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "Let’s go to the next spot."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "the top of the list",
+      "zh": "清單最上方",
+      "note": "指清單上方，不是地理上的北方。"
+    },
+    {
+      "term": "the far end",
+      "zh": "另一端",
+      "note": "相對於接近說話者的一端。"
+    }
+  ],
+  "tags": [
+    "business",
+    "conversation"
+  ],
+  "revision": 1,
+  "graphicEvidence": {
+    "labels": [
+      "List position",
+      "Site"
+    ],
+    "rowIds": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  }
+}

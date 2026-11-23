@@ -1,0 +1,69 @@
+{
+  "id": "t08-q066",
+  "testId": "test-08",
+  "groupId": "t08-g065",
+  "number": 66,
+  "part": 3,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "prompt": "Why might the first recording lack the confirmation tone?",
+  "promptZh": "第一次錄音為什麼可能沒有錄到確認音？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "She released the button too soon.",
+      "zh": "她太快放開按鍵。",
+      "whyZh": "提示音放開後才響；實際問題是先停止錄音，並非太早放開。"
+    },
+    {
+      "id": "B",
+      "text": "She stopped the recording before releasing the button.",
+      "zh": "她還沒放開按鍵就停止錄音。",
+      "whyZh": "她放開按鍵前便已停止錄音，而提示音要在放開後才會響。"
+    },
+    {
+      "id": "C",
+      "text": "She pressed a different button.",
+      "zh": "她按了另一個按鍵。",
+      "whyZh": "對話沒有提到按錯按鍵。"
+    },
+    {
+      "id": "D",
+      "text": "She left a long pause after releasing the button.",
+      "zh": "她放開按鍵後停頓太久。",
+      "whyZh": "提示音在放開後不久響起；錄音更早就已停止。"
+    }
+  ],
+  "explanationZh": "她放開按鍵前便已停止錄音，而提示音要在放開後才會響。",
+  "evidence": "You won’t hear it if the button is held down. / I stopped recording before I let go.",
+  "evidenceSpans": [
+    {
+      "turn": 2,
+      "speaker": "M",
+      "exactQuote": "You won’t hear it if the button is held down."
+    },
+    {
+      "turn": 3,
+      "speaker": "F",
+      "exactQuote": "I stopped recording before I let go."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "let go",
+      "zh": "放開",
+      "note": "在此指放開按鈕。"
+    },
+    {
+      "term": "held down",
+      "zh": "持續按住",
+      "note": "held 是 hold 的過去分詞。"
+    }
+  ],
+  "tags": [
+    "business",
+    "conversation"
+  ],
+  "revision": 1
+}
