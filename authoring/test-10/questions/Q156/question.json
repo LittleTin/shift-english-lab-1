@@ -1,0 +1,60 @@
+{
+  "id": "t10-q156",
+  "testId": "test-10",
+  "number": 156,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "winter-comfort"
+  ],
+  "prompt": "Mia sends a photo showing that moving the pull along its rail would let her reach it. Sonia sends a photo too, but there is no space left on her rail; the whole rail would need to move. What should the team offer first?",
+  "promptZh": "米婭傳來照片，顯示只要把拉簾裝置沿軌道移位，她伸手就能碰到。索妮亞也傳來照片，但她的軌道已無剩餘空間，必須移動整條軌道。團隊應各自先安排哪項服務？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A short service call for Mia and a new measurement for Sonia",
+      "zh": "先為米婭安排短時間的到府服務，為索妮亞安排重測",
+      "whyZh": "米婭只要在既有軌道上移動拉簾裝置，符合短時間到府服務規則；索妮亞要移動整條軌道，須先重測。"
+    },
+    {
+      "id": "B",
+      "text": "A short service call for each resident, because their photos show where the pulls are",
+      "zh": "兩人都安排短時間的到府服務，因為照片都顯示了拉簾裝置的位置",
+      "whyZh": "照片有助於判斷服務類型，但不能取代重測；索妮亞移動軌道仍須先重測。"
+    },
+    {
+      "id": "C",
+      "text": "A new measurement for Mia and a short service call for Sonia",
+      "zh": "為米婭安排重測，為索妮亞安排短時間的到府服務",
+      "whyZh": "這把對應規則顛倒了：只在現有軌道上移動裝置不必重測，移動整條軌道才需要。"
+    },
+    {
+      "id": "D",
+      "text": "A new measurement for each resident, because the repairs address similar problems",
+      "zh": "兩人都安排重測，因為修理要處理的問題相似",
+      "whyZh": "即使症狀相似，是否重測取決於採取哪種改動；米婭不需要動軌道或改窗簾長度。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "米婭只要在既有軌道上移動拉簾裝置，符合短時間到府服務規則；索妮亞要移動整條軌道，須先重測。",
+  "vocabulary": [
+    {
+      "term": "existing rail",
+      "zh": "既有軌道",
+      "note": "沿原軌道調整和移動整條軌道，在這項試行中是不同等級的服務。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-04",
+  "evidence": "A resident may ask for an adjustment and still stay in the pilot. Staff can book a short service call for a pull that needs to move only along the existing rail. If the rail has to move, or the curtain’s length has to change, staff must arrange to measure the room again before booking the work. A resident’s photo helps staff choose which appointment to offer, but it does not replace a measurement. If a request mentions two possible fixes, decide which of them would work rather than automatically booking the longer visit.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 968,
+      "endChar": 1494,
+      "exactQuote": "A resident may ask for an adjustment and still stay in the pilot. Staff can book a short service call for a pull that needs to move only along the existing rail. If the rail has to move, or the curtain’s length has to change, staff must arrange to measure the room again before booking the work. A resident’s photo helps staff choose which appointment to offer, but it does not replace a measurement. If a request mentions two possible fixes, decide which of them would work rather than automatically booking the longer visit."
+    }
+  ]
+}
