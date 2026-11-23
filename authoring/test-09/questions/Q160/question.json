@@ -1,0 +1,72 @@
+{
+  "id": "t09-q160",
+  "testId": "test-09",
+  "number": 160,
+  "part": 7,
+  "groupId": "t09-r-p7-04",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "How should Mina represent the heron stamp in the two albums?",
+  "promptZh": "米娜應該如何把鷺鳥郵票收錄在兩本冊子裡？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Travel: 1998, original envelope. Design: 2003, photocopy.",
+      "zh": "旅遊冊：1998 年、信封原件。設計冊：2003 年、影本。",
+      "whyZh": "兩種留存方式可行，但年份用反了：旅遊依郵戳；設計依發行年。"
+    },
+    {
+      "id": "B",
+      "text": "Travel: 2003, original envelope. Design: 1998, stamp removed from the envelope.",
+      "zh": "旅遊冊：2003 年、信封原件。設計冊：1998 年、取下的郵票。",
+      "whyZh": "年份正確，但郵戳年份清楚，郵票不可從信封取下。"
+    },
+    {
+      "id": "C",
+      "text": "Travel: 2003, original envelope. Design: 1998, photocopy.",
+      "zh": "旅遊冊：2003 年、信封原件。設計冊：1998 年、影本。",
+      "whyZh": "2003 是郵戳年份，1998 是發行年份。郵戳可讀，保留原信封並在設計冊使用影本。"
+    },
+    {
+      "id": "D",
+      "text": "Travel: undated, original envelope. Design: 1998, photocopy.",
+      "zh": "旅遊冊：日期不明、信封原件。設計冊：1998 年、影本。",
+      "whyZh": "無法讀出城鎮名稱不代表日期不明；2003 年可讀。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "2003 是郵戳年份，1998 是發行年份。郵戳可讀，保留原信封並在設計冊使用影本。",
+  "evidence": "For the travel album, sort by the year on the postmark. For the design album, use the small printed issue year on the stamp itself. / We can use a photocopy of an attached stamp in the design album. / a stamp showing a heron and the issue year 1998 is still on an envelope. Its postmark clearly says 2003, although the town name is hard to read.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 204,
+      "endChar": 335,
+      "exactQuote": "For the travel album, sort by the year on the postmark. For the design album, use the small printed issue year on the stamp itself."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 517,
+      "endChar": 581,
+      "exactQuote": "We can use a photocopy of an attached stamp in the design album."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 762,
+      "endChar": 906,
+      "exactQuote": "a stamp showing a heron and the issue year 1998 is still on an envelope. Its postmark clearly says 2003, although the town name is hard to read."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "postmark",
+      "zh": "郵戳",
+      "note": "寄送時蓋上的印記，可顯示處理日期和地點。"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "t09-q155",
+  "testId": "test-09",
+  "number": 155,
+  "part": 7,
+  "groupId": "t09-r-p7-03",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "What was added to the new label?",
+  "promptZh": "新標籤增加了什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A second product code.",
+      "zh": "第二組產品代碼。",
+      "whyZh": "新標籤保留原本那組代碼，並沒有增加第二組。"
+    },
+    {
+      "id": "B",
+      "text": "A drawing of the holder.",
+      "zh": "標籤架的圖。",
+      "whyZh": "標籤架是試驗設備，並未印在標籤上。"
+    },
+    {
+      "id": "C",
+      "text": "A packing instruction below the code.",
+      "zh": "印在代碼下方的包裝指示。",
+      "whyZh": "首段說明在同一位置保留原代碼，下方增加字體較小的包裝指示。"
+    },
+    {
+      "id": "D",
+      "text": "A large heading above the code.",
+      "zh": "印在代碼上方的大標題。",
+      "whyZh": "新增的是代碼下方的小字指示，不是上方新增的大標題。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "首段說明在同一位置保留原代碼，下方增加字體較小的包裝指示。",
+  "evidence": "The new label shows that code in the same place, with a smaller packing instruction below.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 103,
+      "endChar": 193,
+      "exactQuote": "The new label shows that code in the same place, with a smaller packing instruction below."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "in large type",
+      "zh": "以大字印刷",
+      "note": "type 在印刷語境可指字樣或字體。"
+    }
+  ]
+}

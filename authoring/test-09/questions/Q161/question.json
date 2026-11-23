@@ -1,0 +1,60 @@
+{
+  "id": "t09-q161",
+  "testId": "test-09",
+  "number": 161,
+  "part": 7,
+  "groupId": "t09-r-p7-04",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "What should Mina put in the UNDATED folder?",
+  "promptZh": "米娜應把哪一種信封放入「日期不明」資料夾？",
+  "options": [
+    {
+      "id": "A",
+      "text": "An envelope with a mailing year but no legible town name.",
+      "zh": "可讀到寄件年份、但地名看不清楚的信封。",
+      "whyZh": "這種情況已知道寄信年份；地名不影響是否屬日期不明。"
+    },
+    {
+      "id": "B",
+      "text": "An envelope whose mailing year is unclear even though the stamp shows its issue year.",
+      "zh": "郵票有發行年份，但仍看不出寄件年份的信封。",
+      "whyZh": "用了哪一年的郵票不能代替實際寄信的年份；使用年份看不出來就先放資料夾。"
+    },
+    {
+      "id": "C",
+      "text": "An envelope with an issue year earlier than the mailing year.",
+      "zh": "郵票發行年早於寄件年份的信封。",
+      "whyZh": "兩年不同本來就可能，且這個選項明知寄件年份。"
+    },
+    {
+      "id": "D",
+      "text": "An envelope with a clear mailing year and no printed issue year on the stamp.",
+      "zh": "寄件年清楚、但郵票沒有印發行年份的信封。",
+      "whyZh": "「日期不明」是指不知使用年份，而非不知發行年份。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "用了哪一年的郵票不能代替實際寄信的年份；使用年份看不出來就先放資料夾。",
+  "evidence": "If neither the stamp nor its envelope shows a year of use, put the envelope in the folder marked UNDATED rather than guessing from the design.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 582,
+      "endChar": 724,
+      "exactQuote": "If neither the stamp nor its envelope shows a year of use, put the envelope in the folder marked UNDATED rather than guessing from the design."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "rather than",
+      "zh": "而不是",
+      "note": "指出選用一種做法並排除另一種。"
+    }
+  ]
+}

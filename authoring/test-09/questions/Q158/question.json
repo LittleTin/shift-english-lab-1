@@ -1,0 +1,66 @@
+{
+  "id": "t09-q158",
+  "testId": "test-09",
+  "number": 158,
+  "part": 7,
+  "groupId": "t09-r-p7-03",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "Why is the note about Station 2 relevant to the committee’s decision?",
+  "promptZh": "第二站的備註為何和委員會的決定有關？",
+  "options": [
+    {
+      "id": "A",
+      "text": "It shows that neither station needs a label holder.",
+      "zh": "它顯示兩站都不需要標籤架。",
+      "whyZh": "第二站未調整標籤就能讀到，但兩站都使用標籤架，沒有做無架試驗。"
+    },
+    {
+      "id": "B",
+      "text": "It gives a reason not to prescribe the same height adjustment at both stations.",
+      "zh": "它說明為什麼不應規定兩站都以相同方式調高標籤。",
+      "whyZh": "第二站原本已看得清楚；把標籤上移是為了讓第一站的指示露出，而且委員會需要分站提出建議。"
+    },
+    {
+      "id": "C",
+      "text": "It proves that raising the label would make Station 2 fail.",
+      "zh": "它證明第二站把標籤上移後會測試失敗。",
+      "whyZh": "試驗沒有描述第二站調高標籤後表現變差，不能推定上移必定有害。"
+    },
+    {
+      "id": "D",
+      "text": "It establishes that the holder with the lower rail at Station 1 must be replaced.",
+      "zh": "它證明第一站有下擋條的標籤架必須換掉。",
+      "whyZh": "第一站使用原架把標籤上移後已讀得清楚，沒有證明非換架不可。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "第二站原本已看得清楚；把標籤上移是為了讓第一站的指示露出，而且委員會需要分站提出建議。",
+  "evidence": "At Station 2 the instruction was already visible before anyone moved the label. / The committee needs a separate recommendation for each station; it is not deciding whether the label should replace the old one everywhere.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 926,
+      "endChar": 1005,
+      "exactQuote": "At Station 2 the instruction was already visible before anyone moved the label."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1006,
+      "endChar": 1145,
+      "exactQuote": "The committee needs a separate recommendation for each station; it is not deciding whether the label should replace the old one everywhere."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "prescribe",
+      "zh": "規定；指示採行",
+      "note": "在作業建議裡指建議或規定具體做法，不只指醫師開處方。"
+    }
+  ]
+}

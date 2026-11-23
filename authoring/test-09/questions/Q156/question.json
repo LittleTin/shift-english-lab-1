@@ -1,0 +1,72 @@
+{
+  "id": "t09-q156",
+  "testId": "test-09",
+  "number": 156,
+  "part": 7,
+  "groupId": "t09-r-p7-03",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "How should the notebook record Nora’s results at Station 1?",
+  "promptZh": "諾拉在第一站的測試結果應如何記錄？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Keep two attempts: only the second met both reading requirements.",
+      "zh": "保留兩次測試；只有第二次達成兩項閱讀要求。",
+      "whyZh": "她第一次只讀出代碼，未完全通過；把標籤上移後兩項皆讀出。配置改變，兩次必須分別記載。"
+    },
+    {
+      "id": "B",
+      "text": "Keep two attempts: both met the requirements because the code was readable.",
+      "zh": "保留兩次測試；兩次都因代碼可讀而達標。",
+      "whyZh": "分開記錄正確，但只讀得出代碼不算完全通過。"
+    },
+    {
+      "id": "C",
+      "text": "Keep only the second attempt because it used the same holder.",
+      "zh": "只保留第二次，因為兩次都用同一個標籤架。",
+      "whyZh": "標籤架沒換，但把標籤上移改變了配置，先前那次仍要另外記。"
+    },
+    {
+      "id": "D",
+      "text": "Combine the attempts as one pass because Nora did not remove the label.",
+      "zh": "合併記為一次通過，因為諾拉沒有抽掉標籤。",
+      "whyZh": "標籤沒有抽掉不代表配置沒變；把標籤上移後要分開記錄，第一次也未完全通過。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "她第一次只讀出代碼，未完全通過；把標籤上移後兩項皆讀出。配置改變，兩次必須分別記載。",
+  "evidence": "Reading the code correctly is not enough for a full pass. / If they changed the setup, the old attempt had to be logged separately. / A technician slid the label up and repeated the test, using the same holder. Nora then read both parts correctly.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 275,
+      "endChar": 332,
+      "exactQuote": "Reading the code correctly is not enough for a full pass."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 626,
+      "endChar": 697,
+      "exactQuote": "If they changed the setup, the old attempt had to be logged separately."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 812,
+      "endChar": 925,
+      "exactQuote": "A technician slid the label up and repeated the test, using the same holder. Nora then read both parts correctly."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "log separately",
+      "zh": "分別記錄",
+      "note": "log 作動詞可指把一次測試或事件記入紀錄。"
+    }
+  ]
+}

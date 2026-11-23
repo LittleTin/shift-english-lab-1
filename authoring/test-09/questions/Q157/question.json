@@ -1,0 +1,66 @@
+{
+  "id": "t09-q157",
+  "testId": "test-09",
+  "number": 157,
+  "part": 7,
+  "groupId": "t09-r-p7-03",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "What adjustment is supported by the observations at Station 1?",
+  "promptZh": "第一站的觀察支持哪項調整？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Replace the label with the old version.",
+      "zh": "換回舊版標籤。",
+      "whyZh": "舊版沒有包裝指示，觀察也無法支持把新版換掉。"
+    },
+    {
+      "id": "B",
+      "text": "Ask operators to tip the holder as they read.",
+      "zh": "要求操作員讀標籤時把架子傾斜。",
+      "whyZh": "試驗中不允許傾斜標籤架，而且成功的做法是把標籤上移。"
+    },
+    {
+      "id": "C",
+      "text": "Move the packing instruction above the code.",
+      "zh": "把包裝指示移到代碼上方。",
+      "whyZh": "成功重測時沒有換標籤版面，所以無法據此建議移位置。"
+    },
+    {
+      "id": "D",
+      "text": "Raise the label in its holder before testing.",
+      "zh": "測試前把標籤在架內往上調。",
+      "whyZh": "擋條曾遮住包裝指示；把標籤上移後同一標籤架上的代碼和指示都看得清楚。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "擋條曾遮住包裝指示；把標籤上移後同一標籤架上的代碼和指示都看得清楚。",
+  "evidence": "Nora read the code at Station 1 but could not read the instruction because the rail hid the bottom of the label. / A technician slid the label up and repeated the test, using the same holder.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 699,
+      "endChar": 811,
+      "exactQuote": "Nora read the code at Station 1 but could not read the instruction because the rail hid the bottom of the label."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 812,
+      "endChar": 888,
+      "exactQuote": "A technician slid the label up and repeated the test, using the same holder."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "holder",
+      "zh": "固定架",
+      "note": "用來固定標籤或其他物品的位置。"
+    }
+  ]
+}
