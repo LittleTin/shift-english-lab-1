@@ -1,0 +1,83 @@
+{
+  "id": "t08-q086",
+  "testId": "test-08",
+  "groupId": "t08-g086",
+  "number": 86,
+  "part": 4,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "prompt": "A member saved all three meetings on a phone. Which update follows the correction?",
+  "promptZh": "一位成員把三次聚會都存進手機。怎麼更新才符合更正？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "Move all three meetings to the hall; keep their start times.",
+      "zh": "把三次聚會都改到會堂，開始時間不變。",
+      "whyZh": "只有本週六移到會堂，後兩次依然在廣場。"
+    },
+    {
+      "id": "B",
+      "text": "Move just this Saturday’s meeting to the hall and keep its start time.",
+      "zh": "只把本週六的聚會改到會堂，開始時間不變。",
+      "whyZh": "本週六地點改了，但仍是十點開始；接下來兩次的地點不變。"
+    },
+    {
+      "id": "C",
+      "text": "Leave this Saturday’s meeting on the square and move the next two indoors.",
+      "zh": "本週六仍在廣場，後兩次改到室內。",
+      "whyZh": "公告只把本週六移到會堂，後兩次照舊在廣場。"
+    },
+    {
+      "id": "D",
+      "text": "Move just this Saturday’s meeting to the hall and change its start time too.",
+      "zh": "只把本週六的聚會改到會堂，也一併更改開始時間。",
+      "whyZh": "只有本週六地點變動，十點開始不變。"
+    }
+  ],
+  "explanationZh": "本週六地點改了，但仍是十點開始；接下來兩次的地點不變。",
+  "evidence": "This Saturday’s outdoor session is moving to the hall because the paving is being repaired. / We’ll still begin at ten. / The next two meetings are still on the square, so please don’t change the whole series if you saved it on your phone.",
+  "evidenceSpans": [
+    {
+      "paragraphIndex": 0,
+      "sourceField": "talk",
+      "speaker": "F",
+      "startChar": 51,
+      "endChar": 142,
+      "exactQuote": "This Saturday’s outdoor session is moving to the hall because the paving is being repaired."
+    },
+    {
+      "paragraphIndex": 0,
+      "sourceField": "talk",
+      "speaker": "F",
+      "startChar": 143,
+      "endChar": 168,
+      "exactQuote": "We’ll still begin at ten."
+    },
+    {
+      "paragraphIndex": 0,
+      "sourceField": "talk",
+      "speaker": "F",
+      "startChar": 169,
+      "endChar": 286,
+      "exactQuote": "The next two meetings are still on the square, so please don’t change the whole series if you saved it on your phone."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "the next two meetings",
+      "zh": "接下來兩次聚會",
+      "note": "此處不包含正在更正的星期六場次。"
+    },
+    {
+      "term": "the whole series",
+      "zh": "整個系列",
+      "note": "指行事曆裡的所有相關場次。"
+    }
+  ],
+  "tags": [
+    "daily",
+    "monologue"
+  ],
+  "revision": 1
+}

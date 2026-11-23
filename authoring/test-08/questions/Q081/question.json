@@ -1,0 +1,75 @@
+{
+  "id": "t08-q081",
+  "testId": "test-08",
+  "groupId": "t08-g080",
+  "number": 81,
+  "part": 4,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "prompt": "A participant changes sheets during the square. What should they do?",
+  "promptZh": "一位參加者織到一半換了說明單，接下來應該怎麼做？",
+  "answer": "B",
+  "options": [
+    {
+      "id": "A",
+      "text": "Restart and use the original number of stitches.",
+      "zh": "從頭織，並沿用原本的針數。",
+      "whyZh": "針數正確，但講者明說不用重頭開始。"
+    },
+    {
+      "id": "B",
+      "text": "Continue from the same row without changing the stitch count.",
+      "zh": "從目前那一列繼續，針數不變。",
+      "whyZh": "兩份的列號對應，換單不改針數，也不用重織。"
+    },
+    {
+      "id": "C",
+      "text": "Continue from the same row but reduce the stitch count.",
+      "zh": "從目前那一列繼續，但減少針數。",
+      "whyZh": "可從原列繼續，但針數仍維持不變。"
+    },
+    {
+      "id": "D",
+      "text": "Restart after adding a row to the instructions.",
+      "zh": "在說明單上多加一列，再從頭織。",
+      "whyZh": "說明單列號一致，不需加列，也不用從頭織。"
+    }
+  ],
+  "explanationZh": "兩份的列號對應，換單不改針數，也不用重織。",
+  "evidence": "If you switch sheets halfway through, don’t start the square over. / Keep the same stitch count and carry on from the row you’ve already reached.",
+  "evidenceSpans": [
+    {
+      "paragraphIndex": 1,
+      "sourceField": "talk",
+      "speaker": "M",
+      "startChar": 253,
+      "endChar": 319,
+      "exactQuote": "If you switch sheets halfway through, don’t start the square over."
+    },
+    {
+      "paragraphIndex": 1,
+      "sourceField": "talk",
+      "speaker": "M",
+      "startChar": 320,
+      "endChar": 396,
+      "exactQuote": "Keep the same stitch count and carry on from the row you’ve already reached."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "halfway through",
+      "zh": "進行到一半",
+      "note": "指已開始但尚未完成時。"
+    },
+    {
+      "term": "stitch count",
+      "zh": "針數",
+      "note": "指編織時要維持的針目數。"
+    }
+  ],
+  "tags": [
+    "daily",
+    "monologue"
+  ],
+  "revision": 1
+}

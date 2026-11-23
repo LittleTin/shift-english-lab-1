@@ -1,0 +1,75 @@
+{
+  "id": "t08-q084",
+  "testId": "test-08",
+  "groupId": "t08-g083",
+  "number": 84,
+  "part": 4,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "prompt": "There is no live estimate. The caller agrees to a callback, but all callback slots are full. What should the trainee do?",
+  "promptZh": "沒有即時估時。來電者同意接受回電，但回電時段都滿了。受訓人員應該怎麼做？",
+  "answer": "C",
+  "options": [
+    {
+      "id": "A",
+      "text": "Promise a callback at the end of the last slot.",
+      "zh": "承諾在最後一個時段結束時回電。",
+      "whyZh": "已沒有空時段，不能把未安排的時間當成承諾。"
+    },
+    {
+      "id": "B",
+      "text": "Quote the longest wait as an estimate.",
+      "zh": "用最長等待時間當作預估。",
+      "whyZh": "最長等待時間不是剛來電者的預測；缺少估時時不能自行代用。"
+    },
+    {
+      "id": "C",
+      "text": "Offer to keep the caller on the line without promising a time.",
+      "zh": "詢問對方是否願意繼續在線上等，不承諾時間。",
+      "whyZh": "同意回電還不夠，也必須有空時段。排滿時應讓對方選擇繼續等，不編造時間。"
+    },
+    {
+      "id": "D",
+      "text": "End the call so a callback slot can open.",
+      "zh": "結束通話，讓回電時段空出來。",
+      "whyZh": "掛斷不會依規則另生回電時段，講者要人員先詢問對方是否願意繼續等。"
+    }
+  ],
+  "explanationZh": "同意回電還不夠，也必須有空時段。排滿時應讓對方選擇繼續等，不編造時間。",
+  "evidence": "but only if the caller accepts one and you can see a free slot. / A full list means you should offer to keep them on the line, not invent a time.",
+  "evidenceSpans": [
+    {
+      "paragraphIndex": 1,
+      "sourceField": "talk",
+      "speaker": "F",
+      "startChar": 335,
+      "endChar": 398,
+      "exactQuote": "but only if the caller accepts one and you can see a free slot."
+    },
+    {
+      "paragraphIndex": 1,
+      "sourceField": "talk",
+      "speaker": "F",
+      "startChar": 399,
+      "endChar": 478,
+      "exactQuote": "A full list means you should offer to keep them on the line, not invent a time."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "live estimate",
+      "zh": "即時估算",
+      "note": "來電系統即時預估的等候時間。"
+    },
+    {
+      "term": "a free slot",
+      "zh": "一個空檔",
+      "note": "此處指可安排回電的時段。"
+    }
+  ],
+  "tags": [
+    "business",
+    "monologue"
+  ],
+  "revision": 1
+}

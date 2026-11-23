@@ -1,0 +1,67 @@
+{
+  "id": "t08-q083",
+  "testId": "test-08",
+  "groupId": "t08-g083",
+  "number": 83,
+  "part": 4,
+  "topic": "business",
+  "difficulty": "foundation",
+  "prompt": "What does “Longest wait” show?",
+  "promptZh": "「最長等待時間」顯示什麼？",
+  "answer": "A",
+  "options": [
+    {
+      "id": "A",
+      "text": "How long one caller has already been waiting.",
+      "zh": "有一位來電者已經等了多久。",
+      "whyZh": "講者說這是已經經過的等待時間，供主管參考。"
+    },
+    {
+      "id": "B",
+      "text": "How long a new caller is expected to wait.",
+      "zh": "剛打進來的人預計要等多久。",
+      "whyZh": "剛來電的等待預測要看即時估時，不是最長已等時間。"
+    },
+    {
+      "id": "C",
+      "text": "The time remaining until the next callback.",
+      "zh": "距離下一通回電還有多久。",
+      "whyZh": "最長等待時間描述來電者過去已等多久，不是回電倒數。"
+    },
+    {
+      "id": "D",
+      "text": "How long it takes to finish the training.",
+      "zh": "完成訓練要多久。",
+      "whyZh": "它是電話排隊資訊，不是訓練時長。"
+    }
+  ],
+  "explanationZh": "講者說這是已經經過的等待時間，供主管參考。",
+  "evidence": "“Longest wait” tells us how long one caller has already been waiting.",
+  "evidenceSpans": [
+    {
+      "paragraphIndex": 0,
+      "sourceField": "talk",
+      "speaker": "F",
+      "startChar": 71,
+      "endChar": 140,
+      "exactQuote": "“Longest wait” tells us how long one caller has already been waiting."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "longest wait",
+      "zh": "最長等候時間",
+      "note": "此處指一名既有來電者已等候最久的時間。"
+    },
+    {
+      "term": "a prediction",
+      "zh": "預測",
+      "note": "此處指對新來電者等候時間的預測。"
+    }
+  ],
+  "tags": [
+    "business",
+    "monologue"
+  ],
+  "revision": 1
+}
