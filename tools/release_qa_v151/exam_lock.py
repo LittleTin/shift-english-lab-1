@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Fail-closed whole-exam lock candidate. No signing/approval or deployment."""
 from pathlib import Path
-from continuous_contract import geometry, role as continuous_role, owner as continuous_owner
+from continuous_contract import (SILENCE_ROLES, geometry, timeline, role as continuous_role,
+                                 owner as continuous_owner)
 from collections import Counter
 from group_layout import require_contiguous_groups, require_part7_layout, uses_source_document_count
 import argparse, hashlib, json, math, re, struct, subprocess, sys
@@ -101,9 +102,10 @@ def inspect_continuous_decode(path,layout):
   a,b=seg['start'],seg['end'];need(a==last and b>a and b<=len(decoded),'decoded frame geometry drift')
   abs_pcm=np.abs(decoded[a:b].astype(np.int32)); crossing=np.nonzero(abs_pcm>=33)[0]
   if seg['kind']=='silence':
-   need(seg['role']=='answer','unknown decoded silence purpose')
-   need(not len(crossing) or (crossing[-1]<960 and abs_pcm.max()<327),'non-silent encoded answer window outside known 20ms codec tail')
-   edges.append((seg['index'],'answer',len(crossing),int(crossing[-1])+1 if len(crossing) else 0))
+   role=seg['role'];need(role in SILENCE_ROLES,'unknown decoded silence purpose')
+   label='answer window' if role=='answer' else f'{role} silence'
+   need(not len(crossing) or (crossing[-1]<960 and abs_pcm.max()<327),f'non-silent encoded {label} outside known 20ms codec tail')
+   edges.append((seg['index'],role,len(crossing),int(crossing[-1])+1 if len(crossing) else 0))
   else:
    need(len(crossing)>0,'wholly silent logical speech frame')
    lead=int(crossing[0]);tail=b-a-1-int(crossing[-1])
@@ -140,19 +142,27 @@ def validate_pack(p,t):
   part=gp[gid]['part']
   need(part not in GROUPS or n==GROUPS[part],f'incomplete group: {gid}')
  plan=p['listeningPlan'];fr=plan['frames']; ans=set()
- need(plan.get('duration')==2700 and plan.get('testId')==t and bool(fr),'invalid 2700s formal plan')
- next_at=0.0; secs_tol=.00006
+ answer_groups={x['id']:x['groupId'] for x in q if x['part']<=4}
+ need(plan.get('testId')==t,'formal plan exam mismatch')
+ try:timeline(plan)
+ except ValueError as ex:raise LockError(str(ex)) from ex
+ secs_tol=.00006
  for x in fr:
-  d=x.get('duration');at=x.get('at');kind=x.get('kind');role=x.get('role')
-  need(kind in ('audio','silence') and number(d) and d>0 and number(at) and abs(at-next_at)<=secs_tol,'gap/overlap or invalid formal frame')
-  next_at=at+d;need(x.get('groupId') in gp and gp[x['groupId']]['part']==x.get('part') and x['part']<=4,'unknown formal group/part')
+  d=x['duration'];kind=x.get('kind');role=x.get('role')
+  need(kind in ('audio','silence'),'invalid formal frame kind')
+  need(x.get('groupId') in gp and gp[x['groupId']]['part']==x.get('part') and x['part']<=4,'unknown formal group/part')
+  if kind=='silence':
+   need(role in SILENCE_ROLES,'unknown formal silence purpose')
+   need(x.get('src') is None,'formal silence must not reference separate media')
+   need(role=='answer' or x.get('questionId') is None,'non-answer silence may not claim an answer slot')
   if kind=='audio':
    lo,hi=x.get('start'),x.get('end')
    need(number(lo) and number(hi) and 0<=lo<hi and abs((hi-lo)-d)<=secs_tol and isinstance(x.get('src'),str),'invalid audio window')
   if role=='answer':
    qi=x.get('questionId'); need(kind=='silence' and qi not in ans,'duplicate or non-silence answer')
+   need(answer_groups.get(qi)==x['groupId'],'answer window assigned to wrong formal group')
    ans.add(qi)
- need(abs(next_at-2700)<=secs_tol and ans=={x['id'] for x in q[:100]},'formal timing or answer slot coverage drift')
+ need(ans==set(answer_groups),'formal answer slot coverage drift')
  return q,g,plan
 
 def frames48(x):

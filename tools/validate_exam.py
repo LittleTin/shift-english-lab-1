@@ -4,6 +4,7 @@ from collections import Counter,defaultdict
 from pathlib import Path
 import argparse,json,math,re,subprocess
 from add_pack import validate_pack, PACK_WRAPPER, parse_json
+from release_qa_v151.continuous_contract import RATE, SILENCE_ROLES, geometry, timeline
 from release_qa_v151.group_layout import (require_contiguous_groups, require_part7_layout,
                                           uses_source_document_count)
 
@@ -95,17 +96,26 @@ def exam(root,filename,durations,allow_no_plan,authoring=None):
     plan=p.get('listeningPlan')
     if not plan and allow_no_plan:return ids
     check(bool(plan and plan.get('frames')),f'{filename.name}: missing formal audio plan')
-    order=[]; lengths=0
+    check(plan.get('testId')==p['testId'],f'{filename.name}: formal plan exam mismatch')
+    total,_=timeline(plan)
+    geometry(plan,p['testId'])
+    order=[]
     frames_by_group=defaultdict(list)
     for frame in plan['frames']:
         gid=frame['groupId']
         check(gid in g and frame.get('part')==g[gid]['part']<5,f'{gid}: bad audio frame ownership')
         if not order or gid!=order[-1]:order.append(gid)
         frames_by_group[gid].append(frame)
-        check(abs(frame['at']-lengths)<.02,f'{gid}: inconsistent timeline position')
         d=frame['duration']
-        check(isinstance(d,(int,float)) and 0<d<180,f'{gid}: invalid frame duration {d}')
-        lengths+=d
+        kind=frame.get('kind'); role=frame.get('role')
+        check(d<180 and kind in ('audio','silence'),f'{gid}: invalid frame duration/kind: {d}')
+        if kind=='silence':
+            check(role in SILENCE_ROLES,f'{gid}: unknown formal silence purpose')
+            check(frame.get('src') is None,f'{gid}: formal silence must not reference separate media')
+            check(role=='answer' or frame.get('questionId') is None,
+                  f'{gid}: non-answer silence may not claim an answer slot')
+        else:
+            check(role!='answer',f'{gid}: answer window is not silence')
         if frame.get('src'):
             actual=duration_for(root,frame['src'],durations)
             start=frame.get('start',0); end=frame.get('end',start+d)
@@ -125,8 +135,7 @@ def exam(root,filename,durations,allow_no_plan,authoring=None):
             check(roles['direction']==1 and next((t for t in f if t['role']!='intro'),{}).get('role')=='direction',f'{gid}: bad part direction')
             direction_parts.append(g[gid]['part'])
     check(direction_parts==[1,2,3,4],f'{filename.name}: incorrect section directions')
-    check(abs(lengths-2700)<.25,f'{filename.name}: formal listening is {lengths:.3f}s (expected 2700)')
-    print(f'{p["testId"]}: 200 questions; {len(order)} listening groups; {len(plan["frames"])} frames; {lengths:.3f}s; {len(archived)} archived IDs retained.')
+    print(f'{p["testId"]}: 200 questions; {len(order)} listening groups; {len(plan["frames"])} frames; {total/RATE:.3f}s; {len(archived)} archived IDs retained.')
     return ids
 
 if __name__=='__main__':
