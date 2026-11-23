@@ -1,0 +1,72 @@
+{
+  "id": "t10-q146",
+  "testId": "test-10",
+  "number": 146,
+  "part": 6,
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "technical-rehearsal"
+  ],
+  "prompt": "Choose the best word or sentence for blank [146].",
+  "promptZh": "請選出最適合填入第 146 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "welcomes her input at the shorter run without asking her to remain available throughout",
+      "zh": "歡迎她參加較短的排練並提供意見，但不要求她全程待命",
+      "whyZh": "她的意見有價值，歡迎她最後來看看換景；on call 指隨時待命，邀請特別說不用。"
+    },
+    {
+      "id": "B",
+      "text": "asks her to wait in the theatre in case an equipment problem delays a transition",
+      "zh": "請她在劇院等候，以防設備問題拖延過場",
+      "whyZh": "設備檢查那段不用她等待，更沒有要求她等到故障處理完畢。"
+    },
+    {
+      "id": "C",
+      "text": "makes her attendance a condition for starting the short run",
+      "zh": "把她到場列為開始短暫排練的必要條件",
+      "whyZh": "有她到場會有幫助，是邀請，不是排練開場的必要門檻。"
+    },
+    {
+      "id": "D",
+      "text": "asks her to comment on the transitions in writing before the equipment checks",
+      "zh": "請她在設備檢查前以書面對過場提出意見",
+      "whyZh": "邀請她到場觀察換景並提供意見，沒要求事前提交書面意見。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "她的意見有價值，歡迎她最後來看看換景；on call 指隨時待命，邀請特別說不用。",
+  "groupId": "t10-r-p6-04",
+  "evidence": "there is no reason to keep her in the theatre through the equipment checks. / There will be a separate short run of the scene changes at the end. / It would be useful if you were around for the scene changes, but we don’t need you on call.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 2430,
+      "endChar": 2505,
+      "exactQuote": "there is no reason to keep her in the theatre through the equipment checks."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 2506,
+      "endChar": 2573,
+      "exactQuote": "There will be a separate short run of the scene changes at the end."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 2606,
+      "endChar": 2697,
+      "exactQuote": "It would be useful if you were around for the scene changes, but we don’t need you on call."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "on call",
+      "zh": "隨時待命",
+      "note": "歡迎只參與短排練，不等於邀請她全程保持可支援狀態。"
+    }
+  ]
+}

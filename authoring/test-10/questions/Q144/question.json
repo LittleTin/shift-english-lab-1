@@ -1,0 +1,96 @@
+{
+  "id": "t10-q144",
+  "testId": "test-10",
+  "number": 144,
+  "part": 6,
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "text-completion",
+    "technical-rehearsal"
+  ],
+  "prompt": "Choose the best word or sentence for blank [144].",
+  "promptZh": "請選出最適合填入第 144 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "restart at Cue 21 because it is the first item marked on her copy",
+      "zh": "重新從第 21 號 cue 開始，因為那是提示單上第一個有記號的項目",
+      "whyZh": "窗板已到本版提示單的終點；第 21 號不是尚未完成的 cue，也不能只看單上的第一個記號。"
+    },
+    {
+      "id": "B",
+      "text": "resume at Cue 22 because the bench movement still has to reach its endpoint",
+      "zh": "從第 22 號 cue 接續，因為長凳仍未移動到指定終點",
+      "whyZh": "已對第 22 號發出「開始」。長凳在三角標記處，只到了上次彩排的終點，未到現在指定的後牆；這是最早開始卻未到本輪終點的 cue。"
+    },
+    {
+      "id": "C",
+      "text": "start at Cue 23 because the bench reached its stopping point in the previous rehearsal",
+      "zh": "從第 23 號 cue 開始，因為長凳已到達上次彩排規定的停放點",
+      "whyZh": "長凳只到上次的終點，本輪後牆才是終點；而第 23 號僅收到「預備」，還未開始。"
+    },
+    {
+      "id": "D",
+      "text": "repeat all three cues because the marks cannot distinguish 'go' from 'stand by'",
+      "zh": "重做三個 cue，因為單上的記號無法區分「開始」與「預備」",
+      "whyZh": "提示單上的記號確實無法排出進度，但文中提供實際發出的口令和物件狀態，足以辨認第 22 號。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "已對第 22 號發出「開始」。長凳在三角標記處，只到了上次彩排的終點，未到現在指定的後牆；這是最早開始卻未到本輪終點的 cue。",
+  "groupId": "t10-r-p6-04",
+  "evidence": "the replacement resumes with the earliest cue that was actually started but has not yet reached its stated endpoint. / Use the endpoint on the current cue sheet, not an old mark left on the stage. / the window panel reached the square shown on the current sheet as its endpoint. / She said 'go' for Cue 22. / The crew stopped the bench at the triangle, where the previous rehearsal ended that movement. / Today’s sheet shows the back wall as its endpoint, and the bench is not there. / She had already issued a 'stand by' for Cue 23 before she lost her connection.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 354,
+      "endChar": 470,
+      "exactQuote": "the replacement resumes with the earliest cue that was actually started but has not yet reached its stated endpoint."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 471,
+      "endChar": 548,
+      "exactQuote": "Use the endpoint on the current cue sheet, not an old mark left on the stage."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1216,
+      "endChar": 1295,
+      "exactQuote": "the window panel reached the square shown on the current sheet as its endpoint."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1296,
+      "endChar": 1321,
+      "exactQuote": "She said 'go' for Cue 22."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1322,
+      "endChar": 1415,
+      "exactQuote": "The crew stopped the bench at the triangle, where the previous rehearsal ended that movement."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1416,
+      "endChar": 1494,
+      "exactQuote": "Today’s sheet shows the back wall as its endpoint, and the bench is not there."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1495,
+      "endChar": 1573,
+      "exactQuote": "She had already issued a 'stand by' for Cue 23 before she lost her connection."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "resume at a cue",
+      "zh": "從某個提示接續",
+      "note": "文中有預備口令與開始口令之分，並以本版終點判斷是否完成。"
+    }
+  ]
+}

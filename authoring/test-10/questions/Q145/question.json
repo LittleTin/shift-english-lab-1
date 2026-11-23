@@ -1,0 +1,72 @@
+{
+  "id": "t10-q145",
+  "testId": "test-10",
+  "number": 145,
+  "part": 6,
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "technical-rehearsal"
+  ],
+  "prompt": "Choose the best word or sentence for blank [145].",
+  "promptZh": "請選出最適合填入第 145 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "adds a slower greeting to the version that follows the host's welcome",
+      "zh": "讓接在主持人歡迎之後的版本加入一段較慢的歡迎詞",
+      "whyZh": "導演明確說歡迎詞步調維持不變，因此任何一版都不會增加較慢的歡迎詞。"
+    },
+    {
+      "id": "B",
+      "text": "changes the recorded directions in the version intended to follow the host",
+      "zh": "變更接在主持人之後的版本中，預先錄製好的引導說明",
+      "whyZh": "第一版的觀眾已經聽過主持人的走道說明，只有第二版錄音另外包含說明。"
+    },
+    {
+      "id": "C",
+      "text": "slows the whole recording intended for audiences who have not heard the host",
+      "zh": "讓未聽過主持人發言的觀眾所聽到的整段錄音都放慢",
+      "whyZh": "第二版是正確的目標，但須放慢的是裡面的走道指引，而不是整段錄音。"
+    },
+    {
+      "id": "D",
+      "text": "changes the pace of the directions only in the recording for audiences who have not heard the host",
+      "zh": "只放慢給未聽過主持人發言的觀眾所聽到的錄音裡的引導說明",
+      "whyZh": "走道指引只錄在給未聽過主持人發言的觀眾的版本，導演也只要求這段指引放慢。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "走道指引只錄在給未聽過主持人發言的觀眾的版本，導演也只要求這段指引放慢。",
+  "groupId": "t10-r-p6-04",
+  "evidence": "one for audiences who have already been welcomed by the host, and one for audiences who have heard nothing yet. / The second version includes separate directions for finding the side aisles / Slow down when you read the aisle directions, but keep the pace of the greeting as it is.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1825,
+      "endChar": 1936,
+      "exactQuote": "one for audiences who have already been welcomed by the host, and one for audiences who have heard nothing yet."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1937,
+      "endChar": 2012,
+      "exactQuote": "The second version includes separate directions for finding the side aisles"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 2123,
+      "endChar": 2212,
+      "exactQuote": "Slow down when you read the aisle directions, but keep the pace of the greeting as it is."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "keep the pace as it is",
+      "zh": "維持原本的步調",
+      "note": "只放慢指定的指引，不調整歡迎詞。"
+    }
+  ]
+}

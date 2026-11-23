@@ -1,0 +1,78 @@
+{
+  "id": "t10-q143",
+  "testId": "test-10",
+  "number": 143,
+  "part": 6,
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "text-completion",
+    "technical-rehearsal"
+  ],
+  "prompt": "Choose the best word or sentence for blank [143].",
+  "promptZh": "請選出最適合填入第 143 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "shorten the break by three minutes, because the banner and the sign could both be dealt with sooner",
+      "zh": "讓換景縮短三分鐘，因為布旗和標牌都能提早處理",
+      "whyZh": "這些工作不是逐項加總。布旗原本就在臺座就位的時間內收好，讓它更快完成也不會減少觀眾等待。"
+    },
+    {
+      "id": "B",
+      "text": "leave the break unchanged, because the platform still takes longer than any other job",
+      "zh": "讓換景長度不變，因為臺座仍比其他每項工作都耗時",
+      "whyZh": "臺座仍是最久的單一工作，但目前臺座之後還要再花一分鐘裝標牌；夾式標牌取消這段串接等待。"
+    },
+    {
+      "id": "C",
+      "text": "shorten the break by one minute, even if the banner is folded at the usual speed",
+      "zh": "即使照平常速度收折布旗，也能讓換景縮短一分鐘",
+      "whyZh": "舊方式要等臺座三分鐘再加掛標牌一分鐘；新標牌可於移動臺座時同步裝好。收布旗本來就在臺座進行時完成，所以仍可縮短一分鐘。"
+    },
+    {
+      "id": "D",
+      "text": "shorten the break only if the crew also learns to fold the banner more quickly",
+      "zh": "只有組員也學會更快收折布旗，才能讓換景縮短",
+      "whyZh": "收布旗原本就在臺座就位前完成，因此加快布旗並非縮短換景的必要條件。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "舊方式要等臺座三分鐘再加掛標牌一分鐘；新標牌可於移動臺座時同步裝好。收布旗本來就在臺座進行時完成，所以仍可縮短一分鐘。",
+  "groupId": "t10-r-p6-04",
+  "evidence": "If one job is already holding up the next scene, finishing another job during that same interval does not make the audience wait longer. / Attaching the street sign then takes one more minute; the next scene cannot begin until both are ready. / Folding the market banner takes two minutes, entirely within the platform's three minutes. / the sign will need no work afterward.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 100,
+      "endChar": 236,
+      "exactQuote": "If one job is already holding up the next scene, finishing another job during that same interval does not make the audience wait longer."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 666,
+      "endChar": 769,
+      "exactQuote": "Attaching the street sign then takes one more minute; the next scene cannot begin until both are ready."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 770,
+      "endChar": 860,
+      "exactQuote": "Folding the market banner takes two minutes, entirely within the platform's three minutes."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 944,
+      "endChar": 981,
+      "exactQuote": "the sign will need no work afterward."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "within the platform’s three minutes",
+      "zh": "在臺座作業的三分鐘之內",
+      "note": "同步完成的工作不會把等待時間額外加長。"
+    }
+  ]
+}
