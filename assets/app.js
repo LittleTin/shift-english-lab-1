@@ -1242,26 +1242,27 @@ function listeningTimelineSeconds(s,g=sessionGroup(questionByActive()?.groupId,s
  const before=first<0?0:frames.slice(0,first).reduce((sum,f)=>sum+(Number(f.duration)||0),0);
  return (Number(plan?.duration)||2700)-before-(formalRunning&&currentAudioGroup===g.id?formalElapsed:savedGroupElapsed(g,s.audioUsed?.[g.id]));
 }
-// The listening countdown measures visible quiz time, independently of media.
+// Advance the listening display only as the media timeline advances visibly.
 let formalCountdown=null;
 function countdownFor(s){
  if(formalCountdown?.session!==s){
-  const initial=Number.isFinite(s.listeningRemaining)?s.listeningRemaining:listeningTimelineSeconds(s);
-  formalCountdown={session:s,left:Math.max(0,initial),since:null,lastSave:performance.now()};
+  const media=Math.max(0,listeningTimelineSeconds(s));
+  const saved=Number.isFinite(s.listeningRemaining)?s.listeningRemaining:media;
+  formalCountdown={session:s,left:Math.max(media,saved),position:media,charging:route==='quiz'&&!document.hidden,lastSave:performance.now()};
  }
  return formalCountdown;
 }
-function listeningCountdownLeft(c,at=performance.now()){
- return Math.max(0,c.left-(c.since===null?0:(at-c.since)/1000));
+function listeningCountdownLeft(c){
+ const media=Math.max(0,listeningTimelineSeconds(c.session));
+ const position=Math.min(c.position,media),travelled=c.position-position;
+ if(c.charging)c.left=Math.max(position,c.left-travelled);
+ c.position=position;
+ return c.left;
 }
 function syncListeningCountdown(s){
  if(!listening(s)||!s.listeningStartedAt)return;
- const c=countdownFor(s),at=performance.now();
- if(route==='quiz'&&!document.hidden){
-  if(c.since===null)c.since=at;
- }else if(c.since!==null){
-  c.left=listeningCountdownLeft(c,at);c.since=null;
- }
+ const c=countdownFor(s);listeningCountdownLeft(c);
+ c.charging=route==='quiz'&&!document.hidden;
 }
 function saveListeningCountdown(){
  const s=state.active,c=formalCountdown;
@@ -1273,7 +1274,7 @@ function examSeconds(s){
  if(!listening(s))return formal(s)&&s.readingStartsOnReturn?75*60:((formal(s)?s.sectionDeadline:s.deadline)-now())/1000;
  return listeningCountdownLeft(countdownFor(s));
 }
-function timerText(s,left=examSeconds(s)){return time(listening(s)?Math.ceil(left):left)}
+function timerText(s,left=examSeconds(s)){return time(formal(s)?Math.ceil(left):left)}
 function updateExamClock(left){
  const s=state.active,el=document.getElementById('timer');
  if(!el||!s||s.mode!=='exam'||listening(s)&&!s.listeningStartedAt)return;
@@ -1284,7 +1285,11 @@ const formalExpiryNotices=new WeakMap();
 function formalClockExpired(s){
  if(diagnostic||!formal(s))return false;
  if(formalExpiryNotices.has(s))return true;
- if(listening(s))return !!s.listeningStartedAt&&examSeconds(s)<=0;
+ if(listening(s)){
+  if(!s.listeningStartedAt)return false;
+  const last=s.questionIds.findLast(id=>sessionQuestion(id,s)?.part<5);
+  return !!last&&s.audioUsed?.[sessionQuestion(last,s)?.groupId]?.status==='ended';
+ }
  return !s.readingStartsOnReturn&&Number.isFinite(s.sectionDeadline)&&now()>=s.sectionDeadline;
 }
 function closeFormalExpiryNotice(){
@@ -1292,7 +1297,11 @@ function closeFormalExpiryNotice(){
  if(title){if(d.open)d.close();d.removeAttribute('aria-labelledby');d.removeAttribute('aria-describedby');title.removeAttribute('id')}
 }
 function showFormalExpiryNotice(s,pending){
- if(route!=='quiz')return;
+ if(route!=='quiz'||pending.listening&&document.hidden)return;
+ if(pending.until===null){
+  pending.until=now()+5000;
+  setTimeout(advanceExpiredFormalPhase,5000);
+ }
  let title=document.getElementById('formal-expiry-title');
  if(!title){
   const d=document.getElementById('modal');
@@ -1308,18 +1317,18 @@ function beginFormalExpiry(s){
  if(diagnostic||!formal(s)||s!==state.active)return;
  const old=formalExpiryNotices.get(s);
  if(old){if(!old.transitioning)showFormalExpiryNotice(s,old);return;}
- const pending={listening:listening(s),until:now()+5000,transitioning:false};
+ const pending={listening:listening(s),until:listening(s)?null:now()+5000,transitioning:false};
  formalExpiryNotices.set(s,pending);
  if(pending.listening){
-  stopAudio();const c=countdownFor(s);c.left=0;c.since=null;s.listeningRemaining=0;
+  stopAudio();const c=countdownFor(s);c.left=0;c.position=0;c.charging=false;s.listeningRemaining=0;
   if(!diagnostic)void persist();
  }
  updateExamClock(0);showFormalExpiryNotice(s,pending);
- setTimeout(advanceExpiredFormalPhase,5000);
+ if(!pending.listening)setTimeout(advanceExpiredFormalPhase,5000);
 }
 function advanceExpiredFormalPhase(){
  const s=state.active,pending=s&&formalExpiryNotices.get(s);
- if(!pending||pending.transitioning||now()<pending.until||busy||guestSubmitPending)return;
+ if(!pending||pending.transitioning||pending.until===null||now()<pending.until||busy||guestSubmitPending)return;
  pending.transitioning=true;
  void withBusy(async()=>{
   try{
