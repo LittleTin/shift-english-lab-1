@@ -1,0 +1,60 @@
+{
+  "id": "t10-q149",
+  "testId": "test-10",
+  "number": 149,
+  "part": 7,
+  "topic": "community",
+  "revision": 1,
+  "difficulty": "foundation",
+  "tags": [
+    "reading-comprehension",
+    "community"
+  ],
+  "prompt": "A crew records a follow-up inspection and recommends pruning the tree next month. What should it do about the orange clip?",
+  "promptZh": "巡護人員已記錄複查結果，並建議下個月修剪這棵樹。應如何處理橘色夾子？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Leave it until next month’s pruning is done.",
+      "zh": "等下個月修剪完成再取下。",
+      "whyZh": "夾子標記的是待複查，不是待修剪；無須留到後續作業完成。"
+    },
+    {
+      "id": "B",
+      "text": "Use it as the notice that the tree will be removed.",
+      "zh": "把它當作這棵樹將被移除的通知。",
+      "whyZh": "文中明確說明橘色夾子並非移除通知，複查也只建議修剪。"
+    },
+    {
+      "id": "C",
+      "text": "Remove it now that the follow-up has been recorded.",
+      "zh": "複查已記錄，現在就應取下。",
+      "whyZh": "複查結果登錄後就應取下夾子，即使後續還有修剪工作。"
+    },
+    {
+      "id": "D",
+      "text": "Remove it only if the report is changed to say no further work is needed.",
+      "zh": "只有把報告改成不需再作業才取下。",
+      "whyZh": "是否取下取決於複查是否已記錄，不取決於報告有無建議進一步作業。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "複查結果登錄後就應取下夾子，即使後續還有修剪工作。",
+  "vocabulary": [
+    {
+      "term": "follow-up inspection",
+      "zh": "複查",
+      "note": "記錄複查與完成之後要做的工作，是兩個不同的時間點。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-01",
+  "evidence": "One reminder about the orange clips: crews use them to mark trees that need a follow-up inspection. A clip is not a removal notice. Please take a clip off after recording the follow-up, even if the report recommends that more work be done later.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 1275,
+      "endChar": 1520,
+      "exactQuote": "One reminder about the orange clips: crews use them to mark trees that need a follow-up inspection. A clip is not a removal notice. Please take a clip off after recording the follow-up, even if the report recommends that more work be done later."
+    }
+  ]
+}

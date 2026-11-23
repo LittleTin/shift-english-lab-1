@@ -1,0 +1,66 @@
+{
+  "id": "t10-q147",
+  "testId": "test-10",
+  "number": 147,
+  "part": 7,
+  "topic": "community",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "community"
+  ],
+  "prompt": "What should the route leads do on Cedar and Flint?",
+  "promptZh": "巡護路線領班應如何處理雪松街與燧石街的澆水作業？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Add a stop on both streets because the soil was dry before Monday’s round.",
+      "zh": "兩條街都多跑一趟，因為週一巡護前土壤都偏乾。",
+      "whyZh": "週一偏乾並未說明原因；雪松街已觀察到澆水流失，應先改善澆水方式。"
+    },
+    {
+      "id": "B",
+      "text": "Improve delivery on both streets before adding any stops.",
+      "zh": "兩條街都先改善澆水方式，再考慮增加趟次。",
+      "whyZh": "燧石街的水全數滲入，問題是土壤在下次巡護前已乾，不是澆水流失。"
+    },
+    {
+      "id": "C",
+      "text": "Add a stop on Cedar and change the way Flint is watered.",
+      "zh": "雪松街多跑一趟，燧石街則改變澆水方式。",
+      "whyZh": "這把兩條街的處置顛倒了：雪松街有水流失，燧石街則是水量無法維持到下一次。"
+    },
+    {
+      "id": "D",
+      "text": "Change how Cedar is watered and add a stop on Flint.",
+      "zh": "調整雪松街的澆水方式，並在燧石街多跑一趟。",
+      "whyZh": "雪松街的澆水流進路邊排水溝，應先改善施作方式；燧石街全量滲入，但下次巡護前根部土壤已乾，符合加跑一趟的條件。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "雪松街的澆水流進路邊排水溝，應先改善施作方式；燧石街全量滲入，但下次巡護前根部土壤已乾，符合加跑一趟的條件。",
+  "vocabulary": [
+    {
+      "term": "soak in",
+      "zh": "滲入",
+      "note": "水滲入土中不等於土壤的水分能維持到下次巡護。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-01",
+  "evidence": "We plan a second stop only where a first stop still gets the planned amount to the tree but that amount does not last until the next visit. If water from the first stop runs into the gutter, fix the way it is delivered before adding another stop. / The crew noted dry soil before this Monday’s round on both Cedar and Flint. On Cedar, water was still running into the gutter at the end of Monday’s dose. On Flint, all of Monday’s dose soaked in. I checked Flint again on Thursday, just before the next scheduled visit, and the soil around the roots was already dry.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 99,
+      "endChar": 345,
+      "exactQuote": "We plan a second stop only where a first stop still gets the planned amount to the tree but that amount does not last until the next visit. If water from the first stop runs into the gutter, fix the way it is delivered before adding another stop."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 347,
+      "endChar": 663,
+      "exactQuote": "The crew noted dry soil before this Monday’s round on both Cedar and Flint. On Cedar, water was still running into the gutter at the end of Monday’s dose. On Flint, all of Monday’s dose soaked in. I checked Flint again on Thursday, just before the next scheduled visit, and the soil around the roots was already dry."
+    }
+  ]
+}

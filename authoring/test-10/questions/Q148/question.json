@@ -1,0 +1,66 @@
+{
+  "id": "t10-q148",
+  "testId": "test-10",
+  "number": 148,
+  "part": 7,
+  "topic": "community",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "community"
+  ],
+  "prompt": "Which analysis would give Yara the strongest basis for judging the mulch trial using the records already collected?",
+  "promptZh": "利用既有紀錄，哪項分析最能幫助 Yara 判斷覆蓋材料試驗的結果？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Compare all chip trees with all bark trees, since every tree was watered on the same schedule.",
+      "zh": "比較所有用木片的樹與所有用碎樹皮的樹，因為澆水時程一致。",
+      "whyZh": "澆水時程一致並未排除日照差異；兩類材料的使用地點有不同的遮蔭比例。"
+    },
+    {
+      "id": "B",
+      "text": "Compare weed counts for the two materials within each shaded stretch that used both.",
+      "zh": "在同時使用兩種材料的每個遮蔭路段內，比較兩種材料的雜草數。",
+      "whyZh": "可利用逐棵紀錄，對照同一路段、同一週鋪設的兩種材料，降低把遮蔭差異誤認為材料效果的可能。"
+    },
+    {
+      "id": "C",
+      "text": "Compare shaded bark trees with sunny chip trees, keeping the two light conditions separate in the report.",
+      "zh": "比較遮蔭處使用碎樹皮的樹與向陽處使用木片的樹，並在報告中分開標示兩種光照狀況。",
+      "whyZh": "即使分開標示，兩組仍然同時有材料和光照差異，難以分辨哪個因素造成結果。"
+    },
+    {
+      "id": "D",
+      "text": "Use only the sunny stretches, because those stretches have the most consistent exposure to daylight.",
+      "zh": "只分析向陽路段，因為這些路段的日照條件最一致。",
+      "whyZh": "每個向陽路段只使用一種材料，無法在同一路段內對照；遮蔭路段有條件更接近的兩種材料可比較。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "可利用逐棵紀錄，對照同一路段、同一週鋪設的兩種材料，降低把遮蔭差異誤認為材料效果的可能。",
+  "vocabulary": [
+    {
+      "term": "shade",
+      "zh": "遮蔭",
+      "note": "同一路段內比較，有助於區分材料差異與遮蔭差異。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-01",
+  "evidence": "Separately, we tried two types of mulch on newly planted trees: wood chips and shredded bark. Every tree in this trial had the same watering schedule. The crew counted fewer weeds around trees with bark overall. However, most of the bark trees were shaded by buildings, while most of the chip trees were in full sun. / The crew did keep counts for individual trees. Two shaded stretches each had trees with both types of mulch, installed in the same week. Each sunny stretch had only one type. Before recommending a switch, I want a comparison that does not simply repeat the difference in growing conditions.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 665,
+      "endChar": 981,
+      "exactQuote": "Separately, we tried two types of mulch on newly planted trees: wood chips and shredded bark. Every tree in this trial had the same watering schedule. The crew counted fewer weeds around trees with bark overall. However, most of the bark trees were shaded by buildings, while most of the chip trees were in full sun."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 983,
+      "endChar": 1273,
+      "exactQuote": "The crew did keep counts for individual trees. Two shaded stretches each had trees with both types of mulch, installed in the same week. Each sunny stretch had only one type. Before recommending a switch, I want a comparison that does not simply repeat the difference in growing conditions."
+    }
+  ]
+}
