@@ -1,0 +1,64 @@
+{
+  "id": "t09-q199",
+  "testId": "test-09",
+  "number": 199,
+  "part": 7,
+  "groupId": "t09-r-p7-12",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "reading-comprehension",
+    "triple-passage",
+    "business"
+  ],
+  "prompt": "Which participant does not need to attend either activity?",
+  "promptZh": "哪位參與者兩項活動都不必參加？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Ira.",
+      "zh": "艾拉。",
+      "whyZh": "艾拉需要實機操作。"
+    },
+    {
+      "id": "B",
+      "text": "Bea.",
+      "zh": "貝雅。",
+      "whyZh": "貝雅參與用詞檢視。"
+    },
+    {
+      "id": "C",
+      "text": "Milo.",
+      "zh": "米洛。",
+      "whyZh": "主辦人明確說兩件事都不需要米洛。"
+    },
+    {
+      "id": "D",
+      "text": "Jules.",
+      "zh": "朱爾斯。",
+      "whyZh": "實機需要現場講師，在艾拉可用時間內唯一列出的合格現場講師是朱爾斯。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "主辦人明確說兩件事都不需要米洛。",
+  "evidence": "We don’t need Milo for either task.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc3",
+      "sourceField": "passage",
+      "startChar": 1177,
+      "endChar": 1212,
+      "documentStartChar": 167,
+      "documentEndChar": 202,
+      "exactQuote": "We don’t need Milo for either task."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "either task",
+      "zh": "兩件事中的任何一件",
+      "note": "在否定句中，not … either 表示兩件都不。"
+    }
+  ]
+}

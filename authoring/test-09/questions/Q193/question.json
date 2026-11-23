@@ -1,0 +1,73 @@
+{
+  "id": "t09-q193",
+  "testId": "test-09",
+  "number": 193,
+  "part": 7,
+  "groupId": "t09-r-p7-11",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "foundation",
+  "tags": [
+    "reading-comprehension",
+    "triple-passage",
+    "daily"
+  ],
+  "prompt": "What can the visitors do at 1:35 before their first event?",
+  "promptZh": "1:35 到達時，兩位訪客可在第一個活動前怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Go inside the dome immediately and take their reserved seats.",
+      "zh": "立刻進入圓頂場內，坐到預訂的座位。",
+      "whyZh": "這些座位屬於較晚的 2:40 場；導覽另有集合點。"
+    },
+    {
+      "id": "B",
+      "text": "Go to the coat hooks and wait for the tour to start.",
+      "zh": "去掛衣鉤旁等導覽開始。",
+      "whyZh": "星期六活動表寫明 1:40 導覽在掛衣鉤旁集合。"
+    },
+    {
+      "id": "C",
+      "text": "Go to the help desk before it opens at 3:45.",
+      "zh": "在 3:45 開門前先到服務櫃台。",
+      "whyZh": "3:45 是關閉時間，非開始營運時間。"
+    },
+    {
+      "id": "D",
+      "text": "Wait for walk-in admission to the tour after ticket holders enter.",
+      "zh": "等有票觀眾先進，再以現場候補參加導覽。",
+      "whyZh": "入場候補規則是完整放映的安排；活動表已給導覽集合位置。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "星期六活動表寫明 1:40 導覽在掛衣鉤旁集合。",
+  "evidence": "1:40 Orientation tour | 15 minutes | Meet at coat hooks / We can arrive by 1:35",
+  "evidenceSpans": [
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 873,
+      "endChar": 928,
+      "documentStartChar": 0,
+      "documentEndChar": 55,
+      "exactQuote": "1:40 Orientation tour | 15 minutes | Meet at coat hooks"
+    },
+    {
+      "documentId": "doc3",
+      "sourceField": "passage",
+      "startChar": 1487,
+      "endChar": 1508,
+      "documentStartChar": 186,
+      "documentEndChar": 207,
+      "exactQuote": "We can arrive by 1:35"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "coat hook",
+      "zh": "掛衣鉤",
+      "note": "固定在牆上或架上供掛外套的小鉤。"
+    }
+  ]
+}

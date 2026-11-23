@@ -1,0 +1,64 @@
+{
+  "id": "t09-q200",
+  "testId": "test-09",
+  "number": 200,
+  "part": 7,
+  "groupId": "t09-r-p7-12",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "reading-comprehension",
+    "triple-passage",
+    "business"
+  ],
+  "prompt": "What should be sent to Bea before the review?",
+  "promptZh": "檢視前應把什麼傳給貝雅？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The checklist without the margin notes.",
+      "zh": "沒有邊欄備註的檢查表。",
+      "whyZh": "主辦人要求分享乾淨頁面，備註辨識得出先前參加者。"
+    },
+    {
+      "id": "B",
+      "text": "The history of Ira’s live panel results.",
+      "zh": "艾拉面板操作的歷次結果。",
+      "whyZh": "檢視談用詞，不需要傳他人的實機測試結果。"
+    },
+    {
+      "id": "C",
+      "text": "Only the previous class’s margin notes.",
+      "zh": "只傳上一堂課的邊欄備註。",
+      "whyZh": "邊欄備註不應分享；要傳的是不帶備註的頁面。"
+    },
+    {
+      "id": "D",
+      "text": "A copy that shows who made every previous comment.",
+      "zh": "一份顯示先前每則意見是誰寫的副本。",
+      "whyZh": "不需要向貝雅提供之前班級的個人身分。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "主辦人要求分享乾淨頁面，備註辨識得出先前參加者。",
+  "evidence": "Please share the clean page with Bea; the notes identify people from a previous class.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc3",
+      "sourceField": "passage",
+      "startChar": 1439,
+      "endChar": 1525,
+      "documentStartChar": 429,
+      "documentEndChar": 515,
+      "exactQuote": "Please share the clean page with Bea; the notes identify people from a previous class."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "margin notes",
+      "zh": "邊欄備註",
+      "note": "寫在頁面正文旁留白的備註。"
+    }
+  ]
+}

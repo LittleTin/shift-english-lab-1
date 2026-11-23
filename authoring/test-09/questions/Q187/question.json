@@ -1,0 +1,91 @@
+{
+  "id": "t09-q187",
+  "testId": "test-09",
+  "number": 187,
+  "part": 7,
+  "groupId": "t09-r-p7-10",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "triple-passage",
+    "business"
+  ],
+  "prompt": "Which item belongs in the public changelog?",
+  "promptZh": "哪個項目應列在公開更新紀錄？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Wait for a steady indicator before recording the reading.",
+      "zh": "等指示燈穩定後再記錄讀數。",
+      "whyZh": "這是已核准版本中新增的操作要求，符合公開紀錄範圍。"
+    },
+    {
+      "id": "B",
+      "text": "Add the extra measurement from revision 5.",
+      "zh": "加入第 5 版的額外量測。",
+      "whyZh": "第 5 版是未核准公開的工坊試驗稿。"
+    },
+    {
+      "id": "C",
+      "text": "Enlarge the drawing on page 2.",
+      "zh": "放大第 2 頁的圖。",
+      "whyZh": "圖只變得更清楚，沒有說放大；圖面改善本身也不須列。"
+    },
+    {
+      "id": "D",
+      "text": "Keep recording readings the old way until after the workshop trial.",
+      "zh": "工坊試驗完成前，維持舊讀數記錄方式。",
+      "whyZh": "第 4 版已核准新增等待要求，不必等未核准的工坊試驗。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "這是已核准版本中新增的操作要求，符合公開紀錄範圍。",
+  "evidence": "In the public changelog, list only changes that alter what an operator must do. / asks operators to wait for a steady indicator before writing down the reading on page 3. The wait is new. / I did not approve revision 5; it is the workshop trial with an extra measurement step. / They also want one sentence for their lesson plan explaining what operators should now do differently.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 258,
+      "endChar": 337,
+      "documentStartChar": 224,
+      "documentEndChar": 303,
+      "exactQuote": "In the public changelog, list only changes that alter what an operator must do."
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 505,
+      "endChar": 610,
+      "documentStartChar": 86,
+      "documentEndChar": 191,
+      "exactQuote": "asks operators to wait for a steady indicator before writing down the reading on page 3. The wait is new."
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 611,
+      "endChar": 697,
+      "documentStartChar": 192,
+      "documentEndChar": 278,
+      "exactQuote": "I did not approve revision 5; it is the workshop trial with an extra measurement step."
+    },
+    {
+      "documentId": "doc3",
+      "sourceField": "passage",
+      "startChar": 1031,
+      "endChar": 1133,
+      "documentStartChar": 233,
+      "documentEndChar": 335,
+      "exactQuote": "They also want one sentence for their lesson plan explaining what operators should now do differently."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "changelog",
+      "zh": "更新紀錄",
+      "note": "用來列出版本間的變更。"
+    }
+  ]
+}

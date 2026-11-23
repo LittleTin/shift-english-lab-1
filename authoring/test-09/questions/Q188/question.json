@@ -1,0 +1,82 @@
+{
+  "id": "t09-q188",
+  "testId": "test-09",
+  "number": 188,
+  "part": 7,
+  "groupId": "t09-r-p7-10",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "triple-passage",
+    "business"
+  ],
+  "prompt": "Why might comparing only the drawings fail to settle the trainers’ question?",
+  "promptZh": "只比對插圖，為什麼無法解答講師的疑問？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The link opens a different machine family’s guide.",
+      "zh": "連結開啟另一個機型系列的指南。",
+      "whyZh": "經銷商說是 K7 的第 3 版，不是不同機型。"
+    },
+    {
+      "id": "B",
+      "text": "Only revision 5 includes a drawing.",
+      "zh": "只有第 5 版有圖。",
+      "whyZh": "第 4、5 版有同一張圖。"
+    },
+    {
+      "id": "C",
+      "text": "Revisions 4 and 5 share a drawing, but only the latter has the questioned trial step.",
+      "zh": "第 4、5 版共用一張圖，但有疑問的試驗步驟只在後者。",
+      "whyZh": "插圖辨認不了這兩版的流程差異；講師畫出的是第 5 版額外試驗步驟。"
+    },
+    {
+      "id": "D",
+      "text": "The trainers drew a new picture after printing their copies.",
+      "zh": "講師把文件印出後又畫了新圖。",
+      "whyZh": "他們只劃出一個量測步驟，並未改圖。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "插圖辨認不了這兩版的流程差異；講師畫出的是第 5 版額外試驗步驟。",
+  "evidence": "It contains the same drawing and waiting instruction as revision 4. / it is the workshop trial with an extra measurement step. / My trainers highlighted an extra measurement step in a printout labeled revision 5",
+  "evidenceSpans": [
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 698,
+      "endChar": 765,
+      "documentStartChar": 279,
+      "documentEndChar": 346,
+      "exactQuote": "It contains the same drawing and waiting instruction as revision 4."
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 641,
+      "endChar": 697,
+      "documentStartChar": 222,
+      "documentEndChar": 278,
+      "exactQuote": "it is the workshop trial with an extra measurement step."
+    },
+    {
+      "documentId": "doc3",
+      "sourceField": "passage",
+      "startChar": 906,
+      "endChar": 988,
+      "documentStartChar": 108,
+      "documentEndChar": 190,
+      "exactQuote": "My trainers highlighted an extra measurement step in a printout labeled revision 5"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "highlight",
+      "zh": "標示；劃出",
+      "note": "在文件上把重要文字劃出，並不一定是新增內容。"
+    }
+  ]
+}

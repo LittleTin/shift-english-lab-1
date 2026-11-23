@@ -1,0 +1,73 @@
+{
+  "id": "t09-q192",
+  "testId": "test-09",
+  "number": 192,
+  "part": 7,
+  "groupId": "t09-r-p7-11",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "triple-passage",
+    "daily"
+  ],
+  "prompt": "Why is the orientation tour worth adding for these visitors?",
+  "promptZh": "為何值得替這兩位訪客加選場地導覽？",
+  "options": [
+    {
+      "id": "A",
+      "text": "It makes every show keep its lights on throughout.",
+      "zh": "它會讓所有場次全程開燈。",
+      "whyZh": "導覽不會改變各場照明；開燈入場也不等同全程開燈。"
+    },
+    {
+      "id": "B",
+      "text": "It guarantees adjacent seats without a reservation.",
+      "zh": "它可讓訪客不必預約便保證相鄰座位。",
+      "whyZh": "相鄰座位仍須預約，導覽不保留座位。"
+    },
+    {
+      "id": "C",
+      "text": "It lets Pema see the doors in a bright dome before the show.",
+      "zh": "它讓佩瑪在放映前於明亮的圓頂場館看門的位置。",
+      "whyZh": "佩瑪想先看門；導覽就在燈光明亮時指出門的位置。"
+    },
+    {
+      "id": "D",
+      "text": "It substitutes for the projected night sky show.",
+      "zh": "它可以取代投影夜空的放映。",
+      "whyZh": "導覽不算完整放映。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "佩瑪想先看門；導覽就在燈光明亮時指出門的位置。",
+  "evidence": "The optional orientation tour shows where the doors are while the dome is bright / We can arrive by 1:35 and she would like to see the doors first.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 521,
+      "endChar": 601,
+      "documentStartChar": 483,
+      "documentEndChar": 563,
+      "exactQuote": "The optional orientation tour shows where the doors are while the dome is bright"
+    },
+    {
+      "documentId": "doc3",
+      "sourceField": "passage",
+      "startChar": 1487,
+      "endChar": 1551,
+      "documentStartChar": 186,
+      "documentEndChar": 250,
+      "exactQuote": "We can arrive by 1:35 and she would like to see the doors first."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "orientation tour",
+      "zh": "場地導覽",
+      "note": "先熟悉環境、入口或動線的簡短導覽。"
+    }
+  ]
+}

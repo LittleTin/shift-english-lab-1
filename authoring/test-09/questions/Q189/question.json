@@ -1,0 +1,64 @@
+{
+  "id": "t09-q189",
+  "testId": "test-09",
+  "number": 189,
+  "part": 7,
+  "groupId": "t09-r-p7-10",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "reading-comprehension",
+    "triple-passage",
+    "business"
+  ],
+  "prompt": "Where must a workshop-only draft remain?",
+  "promptZh": "只供工坊使用的草稿須放在哪裡？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Behind the public download link.",
+      "zh": "公開下載連結的位置。",
+      "whyZh": "公開連結應指向核准版本。"
+    },
+    {
+      "id": "B",
+      "text": "In the staff folder.",
+      "zh": "在員工資料夾。",
+      "whyZh": "編輯指南明訂工坊草稿只能留在員工資料夾。"
+    },
+    {
+      "id": "C",
+      "text": "In an email to distributors.",
+      "zh": "在給經銷商的電子郵件內。",
+      "whyZh": "連核准更新都不以 PDF 附件寄出，更不能寄工坊草稿。"
+    },
+    {
+      "id": "D",
+      "text": "In the public changelog.",
+      "zh": "在公開更新紀錄內。",
+      "whyZh": "更新紀錄不是草稿存放處。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "編輯指南明訂工坊草稿只能留在員工資料夾。",
+  "evidence": "A workshop-only draft must stay in the staff folder.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 205,
+      "endChar": 257,
+      "documentStartChar": 171,
+      "documentEndChar": 223,
+      "exactQuote": "A workshop-only draft must stay in the staff folder."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "workshop-only",
+      "zh": "僅供工坊使用的",
+      "note": "only 限定使用範圍。"
+    }
+  ]
+}

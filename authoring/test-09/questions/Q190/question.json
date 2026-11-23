@@ -1,0 +1,82 @@
+{
+  "id": "t09-q190",
+  "testId": "test-09",
+  "number": 190,
+  "part": 7,
+  "groupId": "t09-r-p7-10",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "triple-passage",
+    "business"
+  ],
+  "prompt": "What is the likely consequence if the editor posts the approved PDF but forgets to update the public changelog?",
+  "promptZh": "若編輯放上核准版 PDF，卻忘了更新公開變更紀錄，最可能有什麼後果？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The original public link would begin opening revision 5.",
+      "zh": "原公開連結會開始開啟第 5 版。",
+      "whyZh": "是否更新公開紀錄不會決定連結指向哪個 PDF。"
+    },
+    {
+      "id": "B",
+      "text": "Readers can get the approved guide but miss the notice about the new operator instruction.",
+      "zh": "讀者可取得核准版，但可能沒看到新增操作指示的通知。",
+      "whyZh": "連結替換和更新紀錄是兩件事；核准稿可下載，但應公開的操作變更沒有列出。"
+    },
+    {
+      "id": "C",
+      "text": "Trainers would have to request a public copy of the clearer drawing alone.",
+      "zh": "講師必須單獨索取公開的新版插圖。",
+      "whyZh": "核准稿仍有插圖；不用另外索取。"
+    },
+    {
+      "id": "D",
+      "text": "The distributor would automatically get an email attachment.",
+      "zh": "經銷商會自動收到電子郵件附件。",
+      "whyZh": "規則不以附件發送新版，漏寫公開紀錄不會啟動郵件。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "連結替換和更新紀錄是兩件事；核准稿可下載，但應公開的操作變更沒有列出。",
+  "evidence": "Replace the PDF behind the link when approving an update; do not email the updated PDF itself to distributors. / In the public changelog, list only changes that alter what an operator must do. / The wait is new.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 94,
+      "endChar": 204,
+      "documentStartChar": 60,
+      "documentEndChar": 170,
+      "exactQuote": "Replace the PDF behind the link when approving an update; do not email the updated PDF itself to distributors."
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 258,
+      "endChar": 337,
+      "documentStartChar": 224,
+      "documentEndChar": 303,
+      "exactQuote": "In the public changelog, list only changes that alter what an operator must do."
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 594,
+      "endChar": 610,
+      "documentStartChar": 175,
+      "documentEndChar": 191,
+      "exactQuote": "The wait is new."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "alter",
+      "zh": "改變",
+      "note": "alter what an operator must do 指改變必要的作業方式。"
+    }
+  ]
+}

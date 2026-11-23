@@ -1,0 +1,127 @@
+{
+  "id": "t09-q196",
+  "testId": "test-09",
+  "number": 196,
+  "part": 7,
+  "groupId": "t09-r-p7-12",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "triple-passage",
+    "business"
+  ],
+  "prompt": "Which plan meets the room, staff and timing rules?",
+  "promptZh": "哪個方案符合教室、講師和時間規定？",
+  "options": [
+    {
+      "id": "A",
+      "text": "10:00: live turn in H with Jules; 10:20: review in H with Bea by video.",
+      "zh": "10:00：在 H 室和朱爾斯實機操作；10:20：在 H 室與貝雅視訊檢視。",
+      "whyZh": "時間及人員看似可行，但 H 室不得進行實機控制面板練習。"
+    },
+    {
+      "id": "B",
+      "text": "10:00: live turn in E with Jules; 10:20: review in H with Bea by video.",
+      "zh": "10:00：在 E 室和朱爾斯實機操作；10:20：在 H 室與貝雅視訊檢視。",
+      "whyZh": "艾拉及朱爾斯皆在現場有十分鐘可排；實機用 E，貝雅在可上線時進行不送指令的 H 室檢視。"
+    },
+    {
+      "id": "C",
+      "text": "10:00: live turn in E with Dev as the only instructor; 10:20: review in H with Bea by video.",
+      "zh": "10:00：在 E 室由戴夫獨自指導實機操作；10:20：在 H 室與貝雅視訊檢視。",
+      "whyZh": "戴夫遠端可觀摩，但不能算 E 室的講師。"
+    },
+    {
+      "id": "D",
+      "text": "10:00: review in H with Bea; 10:20: live turn in E with Jules.",
+      "zh": "10:00：在 H 室與貝雅檢視；10:20：在 E 室與朱爾斯實機操作。",
+      "whyZh": "順序反了，貝雅 10:00 尚無法視訊，且朱爾斯 10:20 已到現場可用時間的末點。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "艾拉及朱爾斯皆在現場有十分鐘可排；實機用 E，貝雅在可上線時進行不送指令的 H 室檢視。",
+  "evidence": "A group that takes turns at a live control panel must use Room E with its instructor station. / A participant who has already completed the control-panel check may attend an explanation by video. / Room H is for discussion and paper exercises only. / Ira | outstanding | on site 10:00–11:00 / Jules | qualified instructor | on site 10:00–10:20 / Bea | complete | video only after 10:15 / The live turn must finish before the review begins. / The review will show a recording of the panel on screen. It will not let anyone send a command.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 153,
+      "endChar": 246,
+      "documentStartChar": 113,
+      "documentEndChar": 206,
+      "exactQuote": "A group that takes turns at a live control panel must use Room E with its instructor station."
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 406,
+      "endChar": 505,
+      "documentStartChar": 366,
+      "documentEndChar": 465,
+      "exactQuote": "A participant who has already completed the control-panel check may attend an explanation by video."
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 247,
+      "endChar": 297,
+      "documentStartChar": 207,
+      "documentEndChar": 257,
+      "exactQuote": "Room H is for discussion and paper exercises only."
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 755,
+      "endChar": 794,
+      "documentStartChar": 44,
+      "documentEndChar": 83,
+      "exactQuote": "Ira | outstanding | on site 10:00–11:00"
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 873,
+      "endChar": 923,
+      "documentStartChar": 162,
+      "documentEndChar": 212,
+      "exactQuote": "Jules | qualified instructor | on site 10:00–10:20"
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 795,
+      "endChar": 834,
+      "documentStartChar": 84,
+      "documentEndChar": 123,
+      "exactQuote": "Bea | complete | video only after 10:15"
+    },
+    {
+      "documentId": "doc3",
+      "sourceField": "passage",
+      "startChar": 1125,
+      "endChar": 1176,
+      "documentStartChar": 115,
+      "documentEndChar": 166,
+      "exactQuote": "The live turn must finish before the review begins."
+    },
+    {
+      "documentId": "doc3",
+      "sourceField": "passage",
+      "startChar": 1213,
+      "endChar": 1308,
+      "documentStartChar": 203,
+      "documentEndChar": 298,
+      "exactQuote": "The review will show a recording of the panel on screen. It will not let anyone send a command."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "take turns",
+      "zh": "輪流",
+      "note": "每人有一段自己的操作時間。"
+    }
+  ]
+}

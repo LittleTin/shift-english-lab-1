@@ -1,0 +1,64 @@
+{
+  "id": "t09-q195",
+  "testId": "test-09",
+  "number": 195,
+  "part": 7,
+  "groupId": "t09-r-p7-11",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "foundation",
+  "tags": [
+    "reading-comprehension",
+    "triple-passage",
+    "daily"
+  ],
+  "prompt": "What does the schedule indicate about the full shows?",
+  "promptZh": "時程表顯示，完整放映場次有什麼共同點？",
+  "options": [
+    {
+      "id": "A",
+      "text": "They take place immediately after the orientation tour.",
+      "zh": "它們都在場地導覽後立刻開始。",
+      "whyZh": "只有最早場接近導覽結束時，後面兩場晚得多。"
+    },
+    {
+      "id": "B",
+      "text": "All three have the same title and duration.",
+      "zh": "三場的名稱和時長相同。",
+      "whyZh": "活動表三場都叫「冬季城市星空」，各長 25 分鐘。"
+    },
+    {
+      "id": "C",
+      "text": "All use the same lighting at entry.",
+      "zh": "三場入場照明相同。",
+      "whyZh": "只有 2:40 入場時開燈。"
+    },
+    {
+      "id": "D",
+      "text": "All have a row of available seats.",
+      "zh": "每場都有一整排空位。",
+      "whyZh": "活動表只說 3:20 場有一整排空位。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "活動表三場都叫「冬季城市星空」，各長 25 分鐘。",
+  "evidence": "2:00 City Winter Sky | 25 minutes | lights down for entry\n2:40 City Winter Sky | 25 minutes | lights on for entry\n3:20 City Winter Sky | 25 minutes | lights down for entry",
+  "evidenceSpans": [
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 929,
+      "endChar": 1100,
+      "documentStartChar": 56,
+      "documentEndChar": 227,
+      "exactQuote": "2:00 City Winter Sky | 25 minutes | lights down for entry\n2:40 City Winter Sky | 25 minutes | lights on for entry\n3:20 City Winter Sky | 25 minutes | lights down for entry"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "duration",
+      "zh": "時長",
+      "note": "正式說法，指某個活動持續多久。"
+    }
+  ]
+}

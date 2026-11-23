@@ -1,0 +1,91 @@
+{
+  "id": "t09-q194",
+  "testId": "test-09",
+  "number": 194,
+  "part": 7,
+  "groupId": "t09-r-p7-11",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "triple-passage",
+    "daily"
+  ],
+  "prompt": "What plan would let Pema use the tactile floor plan and meet the loan rule?",
+  "promptZh": "哪個安排能讓佩瑪使用可觸讀的平面圖，又符合借用規定？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Keep the raised-line floor plan until the next library visit.",
+      "zh": "將凸線平面圖留到下次到圖書館。",
+      "whyZh": "凸線版只在參觀時借用，不可拿回家等下次再還。"
+    },
+    {
+      "id": "B",
+      "text": "Get a printed floor plan from the desk and return it before the bus.",
+      "zh": "從櫃台拿一般紙本平面圖，搭公車前還回去。",
+      "whyZh": "一般紙本可留用，但不是佩瑪想試用的觸讀版。"
+    },
+    {
+      "id": "C",
+      "text": "Use the raised-line plan and hand it to the show attendant on leaving.",
+      "zh": "用凸線平面圖，離場時交給放映工作人員。",
+      "whyZh": "雖是想用的版本，但要還到服務櫃台，而不是交給放映工作人員。"
+    },
+    {
+      "id": "D",
+      "text": "Use the raised-line plan during the visit and allow time to return it to the help desk before catching the bus.",
+      "zh": "參觀時使用凸線平面圖，並預留時間在搭公車前把它還回服務櫃台。",
+      "whyZh": "凸線版借用限本次參觀並須還櫃台；櫃台到 3:45 才關，有辦法在搭公車前歸還。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "凸線版借用限本次參觀並須還櫃台；櫃台到 3:45 才關，有辦法在搭公車前歸還。",
+  "evidence": "With a raised-line floor plan, you can feel the edges and doorways, but that version is lent for the visit and must be brought back to the help desk. / The help desk closes at 3:45. / We need to be outside the dome by 3:10 for our bus. / Pema wants to try the raised-line floor plan but won’t be back at the library next week.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 694,
+      "endChar": 843,
+      "documentStartChar": 656,
+      "documentEndChar": 805,
+      "exactQuote": "With a raised-line floor plan, you can feel the edges and doorways, but that version is lent for the visit and must be brought back to the help desk."
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 1231,
+      "endChar": 1260,
+      "documentStartChar": 358,
+      "documentEndChar": 387,
+      "exactQuote": "The help desk closes at 3:45."
+    },
+    {
+      "documentId": "doc3",
+      "sourceField": "passage",
+      "startChar": 1552,
+      "endChar": 1603,
+      "documentStartChar": 251,
+      "documentEndChar": 302,
+      "exactQuote": "We need to be outside the dome by 3:10 for our bus."
+    },
+    {
+      "documentId": "doc3",
+      "sourceField": "passage",
+      "startChar": 1604,
+      "endChar": 1692,
+      "documentStartChar": 303,
+      "documentEndChar": 391,
+      "exactQuote": "Pema wants to try the raised-line floor plan but won’t be back at the library next week."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "raised-line floor plan",
+      "zh": "凸線平面圖",
+      "note": "用凸線讓人可藉觸摸辨出空間的邊界和入口。"
+    }
+  ]
+}

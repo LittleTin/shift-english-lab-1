@@ -1,0 +1,100 @@
+{
+  "id": "t09-q191",
+  "testId": "test-09",
+  "number": 191,
+  "part": 7,
+  "groupId": "t09-r-p7-11",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "triple-passage",
+    "daily"
+  ],
+  "prompt": "Which booking meets both visitors’ needs and their departure time?",
+  "promptZh": "哪個預約安排同時符合兩位訪客的需求和離開時間？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Add the orientation tour and reserve seats 6 and 7 at 2:40.",
+      "zh": "加選場地導覽，以及預約 2:40 場的 6、7 號座位。",
+      "whyZh": "1:35 能趕到導覽，2:40 有相鄰座且入場開燈，25 分鐘放映在 3:05 結束。"
+    },
+    {
+      "id": "B",
+      "text": "Add the tour and reserve the two remaining seats at 2:00.",
+      "zh": "加選導覽，以及預約 2:00 場剩下兩席。",
+      "whyZh": "能趕上導覽和公車，但座位不相鄰，且 2:00 場入場前調暗。"
+    },
+    {
+      "id": "C",
+      "text": "Reserve two adjacent seats at 3:20 and add the tour.",
+      "zh": "預約 3:20 場兩個相鄰座位，再加選導覽。",
+      "whyZh": "座位可相鄰但入場不開燈，而且開始時已過 3:10。"
+    },
+    {
+      "id": "D",
+      "text": "Reserve only one seat at 2:40 and ask Pema to wait for a walk-in seat next to it.",
+      "zh": "2:40 場只先訂一席，請佩瑪等該座旁的現場候補位。",
+      "whyZh": "想並坐就須同時預約兩個相鄰座位；候補不能保證相鄰。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "1:35 能趕到導覽，2:40 有相鄰座且入場開燈，25 分鐘放映在 3:05 結束。",
+  "evidence": "you must reserve two adjacent seats. / 2:40 City Winter Sky | 25 minutes | lights on for entry / Seats 6 and 7 together are still free at 2:40 / We want to sit together and she needs the lights up while we find the seats. / We need to be outside the dome by 3:10 for our bus. Pema wants to try the raised-line floor plan but won’t be back at the library next week.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 198,
+      "endChar": 234,
+      "documentStartChar": 160,
+      "documentEndChar": 196,
+      "exactQuote": "you must reserve two adjacent seats."
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 987,
+      "endChar": 1042,
+      "documentStartChar": 114,
+      "documentEndChar": 169,
+      "exactQuote": "2:40 City Winter Sky | 25 minutes | lights on for entry"
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 1102,
+      "endChar": 1147,
+      "documentStartChar": 229,
+      "documentEndChar": 274,
+      "exactQuote": "Seats 6 and 7 together are still free at 2:40"
+    },
+    {
+      "documentId": "doc3",
+      "sourceField": "passage",
+      "startChar": 1330,
+      "endChar": 1406,
+      "documentStartChar": 29,
+      "documentEndChar": 105,
+      "exactQuote": "We want to sit together and she needs the lights up while we find the seats."
+    },
+    {
+      "documentId": "doc3",
+      "sourceField": "passage",
+      "startChar": 1552,
+      "endChar": 1692,
+      "documentStartChar": 251,
+      "documentEndChar": 391,
+      "exactQuote": "We need to be outside the dome by 3:10 for our bus. Pema wants to try the raised-line floor plan but won’t be back at the library next week."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "adjacent",
+      "zh": "相鄰的",
+      "note": "指座位就在彼此旁邊。"
+    }
+  ]
+}

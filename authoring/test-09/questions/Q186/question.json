@@ -1,0 +1,82 @@
+{
+  "id": "t09-q186",
+  "testId": "test-09",
+  "number": 186,
+  "part": 7,
+  "groupId": "t09-r-p7-10",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "triple-passage",
+    "business"
+  ],
+  "prompt": "What should the portal editor do before replying to the distributor?",
+  "promptZh": "入口網站編輯應先做什麼，再回覆經銷商？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Create a second public link for revision 5.",
+      "zh": "為第 5 版建立第二個公開連結。",
+      "whyZh": "每個機型只有一個固定連結，且第 5 版尚未公開核准。"
+    },
+    {
+      "id": "B",
+      "text": "Email revision 4 as an attachment and keep the website on revision 3.",
+      "zh": "把第 4 版當附件寄出，網站維持第 3 版。",
+      "whyZh": "版次正確，但核准稿須替換原連結所指的 PDF，不直接寄附件。"
+    },
+    {
+      "id": "C",
+      "text": "Move revision 3 into the staff folder and give the distributor revision 5.",
+      "zh": "把第 3 版移到員工資料夾，並把第 5 版交給經銷商。",
+      "whyZh": "試驗用第 5 版不可對外提供，也沒解決原連結的核准版。"
+    },
+    {
+      "id": "D",
+      "text": "Put revision 4 behind the original K7 link and direct the distributor there.",
+      "zh": "將原 K7 連結改指向第 4 版，並請經銷商使用該連結。",
+      "whyZh": "第 4 版已核准、原連結仍是舊版、規則要求維持固定連結；應先更新原連結。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "第 4 版已核准、原連結仍是舊版、規則要求維持固定連結；應先更新原連結。",
+  "evidence": "Replace the PDF behind the link when approving an update; do not email the updated PDF itself to distributors. / I approved Guide K7 revision 4 for public use. / The original K7 link still opens revision 3 when I try it.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 94,
+      "endChar": 204,
+      "documentStartChar": 60,
+      "documentEndChar": 170,
+      "exactQuote": "Replace the PDF behind the link when approving an update; do not email the updated PDF itself to distributors."
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 419,
+      "endChar": 465,
+      "documentStartChar": 0,
+      "documentEndChar": 46,
+      "exactQuote": "I approved Guide K7 revision 4 for public use."
+    },
+    {
+      "documentId": "doc3",
+      "sourceField": "passage",
+      "startChar": 798,
+      "endChar": 856,
+      "documentStartChar": 0,
+      "documentEndChar": 58,
+      "exactQuote": "The original K7 link still opens revision 3 when I try it."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "behind the link",
+      "zh": "連結指向的位置",
+      "note": "這裡指使用者按連結後開啟的檔案。"
+    }
+  ]
+}

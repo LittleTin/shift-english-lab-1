@@ -1,0 +1,82 @@
+{
+  "id": "t09-q197",
+  "testId": "test-09",
+  "number": 197,
+  "part": 7,
+  "groupId": "t09-r-p7-12",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "triple-passage",
+    "business"
+  ],
+  "prompt": "What answer can the organizer give Dev?",
+  "promptZh": "主辦人可以如何回覆戴夫？",
+  "options": [
+    {
+      "id": "A",
+      "text": "He can replace Jules remotely because both are qualified.",
+      "zh": "兩人都具資格，所以他可遠端取代朱爾斯。",
+      "whyZh": "資格不取消 E 室實機環節的現場教學要求。"
+    },
+    {
+      "id": "B",
+      "text": "He must complete Ira’s check by video.",
+      "zh": "他須用視訊完成艾拉的檢查。",
+      "whyZh": "尚未完成檢查的艾拉須親自操作，戴夫也只問觀摩。"
+    },
+    {
+      "id": "C",
+      "text": "He must wait until noon to observe.",
+      "zh": "他必須等到中午才能觀摩。",
+      "whyZh": "紀錄寫他中午前可視訊，不是中午後才可觀摩。"
+    },
+    {
+      "id": "D",
+      "text": "He can watch by video but cannot be the required instructor in Room E.",
+      "zh": "他可以透過視訊觀摩，但不能當作 E 室所需的講師。",
+      "whyZh": "遠端可觀摩，卻不能計入實機教學需要的 E 室講師。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "遠端可觀摩，卻不能計入實機教學需要的 E 室講師。",
+  "evidence": "A coach may observe remotely, but may not be counted as the instructor at Room E. / Dev | qualified instructor | video before noon / Dev asked whether he can join the live turn just to observe.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 588,
+      "endChar": 669,
+      "documentStartChar": 548,
+      "documentEndChar": 629,
+      "exactQuote": "A coach may observe remotely, but may not be counted as the instructor at Room E."
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 924,
+      "endChar": 970,
+      "documentStartChar": 213,
+      "documentEndChar": 259,
+      "exactQuote": "Dev | qualified instructor | video before noon"
+    },
+    {
+      "documentId": "doc3",
+      "sourceField": "passage",
+      "startChar": 1310,
+      "endChar": 1370,
+      "documentStartChar": 300,
+      "documentEndChar": 360,
+      "exactQuote": "Dev asked whether he can join the live turn just to observe."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "observe remotely",
+      "zh": "遠端觀摩",
+      "note": "透過視訊等方式觀看，不等同現場指導。"
+    }
+  ]
+}

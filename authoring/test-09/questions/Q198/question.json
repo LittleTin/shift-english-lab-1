@@ -1,0 +1,73 @@
+{
+  "id": "t09-q198",
+  "testId": "test-09",
+  "number": 198,
+  "part": 7,
+  "groupId": "t09-r-p7-12",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "triple-passage",
+    "business"
+  ],
+  "prompt": "Why is the plan to play a recording important when choosing the review room?",
+  "promptZh": "選檢視教室時，為什麼只播放錄影這一點很重要？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The review qualifies for Room H because participants will not control the panel.",
+      "zh": "參與者不會操作面板，所以檢視可用 H 室。",
+      "whyZh": "螢幕上雖會出現控制面板，但沒人能送出指令；預約時可按紙本練習處理。"
+    },
+    {
+      "id": "B",
+      "text": "The review must use Room E because a panel appears in the recording.",
+      "zh": "錄影中有面板，所以檢視必須用 E 室。",
+      "whyZh": "是否看得見面板不是關鍵；能否實際送指令才是。"
+    },
+    {
+      "id": "C",
+      "text": "The recording allows Ira’s live check to be completed during the review.",
+      "zh": "播放錄影就能在檢視時完成艾拉的實機檢查。",
+      "whyZh": "艾拉仍須親自輪到操作；觀看錄影不算。"
+    },
+    {
+      "id": "D",
+      "text": "The recording means the checklist can be omitted.",
+      "zh": "播放錄影就可以不看檢查表。",
+      "whyZh": "檢視的目的就是確認檢查表用詞；錄影不是取代檢查表。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "螢幕上雖會出現控制面板，但沒人能送出指令；預約時可按紙本練習處理。",
+  "evidence": "An on-screen view of a control panel is a paper exercise for booking purposes if nobody can send commands. / The review will show a recording of the panel on screen. It will not let anyone send a command.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 298,
+      "endChar": 404,
+      "documentStartChar": 258,
+      "documentEndChar": 364,
+      "exactQuote": "An on-screen view of a control panel is a paper exercise for booking purposes if nobody can send commands."
+    },
+    {
+      "documentId": "doc3",
+      "sourceField": "passage",
+      "startChar": 1213,
+      "endChar": 1308,
+      "documentStartChar": 203,
+      "documentEndChar": 298,
+      "exactQuote": "The review will show a recording of the panel on screen. It will not let anyone send a command."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "for booking purposes",
+      "zh": "就預約分類而言",
+      "note": "表示某項安排在預約時如何歸類。"
+    }
+  ]
+}
