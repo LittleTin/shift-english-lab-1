@@ -1,0 +1,66 @@
+{
+  "id": "t09-q149",
+  "testId": "test-09",
+  "number": 149,
+  "part": 7,
+  "groupId": "t09-r-p7-01",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "Why does the writer mention the reading taken before Mold 12 returned to the shop floor?",
+  "promptZh": "作者為什麼提到 12 號模具回到現場前量得的讀數？",
+  "options": [
+    {
+      "id": "A",
+      "text": "To distinguish it from a reading taken during actual production.",
+      "zh": "用來區別它和實際生產時量得的讀數。",
+      "whyZh": "這筆量測是在回到現場前做的，不是恢復生產後的磨耗讀數。"
+    },
+    {
+      "id": "B",
+      "text": "To show that the workshop entered the wrong item in the register.",
+      "zh": "用來指出工坊在登記表記錯了物品。",
+      "whyZh": "兩份紀錄分別指明不同模具；沒有說登記表輸入錯誤。"
+    },
+    {
+      "id": "C",
+      "text": "To show that the borrowed spare needed its surface renewed.",
+      "zh": "用來證明借來的備品也要重整表面。",
+      "whyZh": "重整的是 12 號模具，不是星期四的備品。"
+    },
+    {
+      "id": "D",
+      "text": "To explain why the shop stopped measuring wear.",
+      "zh": "用來解釋工坊為何停止測量磨耗。",
+      "whyZh": "工坊仍量測和採用讀數，只是區分量測的時點和用途。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "這筆量測是在回到現場前做的，不是恢復生產後的磨耗讀數。",
+  "evidence": "the renewal sheet also shows a reading for Mold 12 taken before it returned to the shop floor. / if the mold ran again after resurfacing, use that run’s reading for this quarter instead.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 1005,
+      "endChar": 1099,
+      "exactQuote": "the renewal sheet also shows a reading for Mold 12 taken before it returned to the shop floor."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 666,
+      "endChar": 755,
+      "exactQuote": "if the mold ran again after resurfacing, use that run’s reading for this quarter instead."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "shop floor",
+      "zh": "生產現場",
+      "note": "不只是地板，而是實際生產作業區。"
+    }
+  ]
+}

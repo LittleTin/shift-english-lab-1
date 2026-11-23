@@ -1,0 +1,60 @@
+{
+  "id": "t09-q151",
+  "testId": "test-09",
+  "number": 151,
+  "part": 7,
+  "groupId": "t09-r-p7-02",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "foundation",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "What must someone bring to use a lantern provided by the group?",
+  "promptZh": "想使用團體提供的提燈，必須帶什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A battery from home.",
+      "zh": "從家中帶來的電池。",
+      "whyZh": "電池式只限制自帶提燈；借用團體提燈的要求是押金。"
+    },
+    {
+      "id": "B",
+      "text": "A reservation slip.",
+      "zh": "預約憑單。",
+      "whyZh": "活動不必預約，也沒說領燈需出示預約單。"
+    },
+    {
+      "id": "C",
+      "text": "A ticket for the theater.",
+      "zh": "劇院門票。",
+      "whyZh": "活動免費，劇院牆上的投影不等於進劇院看表演。"
+    },
+    {
+      "id": "D",
+      "text": "A coin for a deposit.",
+      "zh": "一枚當押金的硬幣。",
+      "whyZh": "想拿團體的提燈，要帶硬幣付押金，交還提燈時會退。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "想拿團體的提燈，要帶硬幣付押金，交還提燈時會退。",
+  "evidence": "If you want to carry one of our lanterns, bring a coin for the deposit.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 176,
+      "endChar": 247,
+      "exactQuote": "If you want to carry one of our lanterns, bring a coin for the deposit."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "deposit",
+      "zh": "押金",
+      "note": "交還借用物品時可退回的金錢。"
+    }
+  ]
+}

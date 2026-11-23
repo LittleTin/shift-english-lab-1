@@ -1,0 +1,72 @@
+{
+  "id": "t09-q148",
+  "testId": "test-09",
+  "number": 148,
+  "part": 7,
+  "groupId": "t09-r-p7-01",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "Which reading should the leads use for Mold 12 this quarter?",
+  "promptZh": "領班應採用 12 號模具的哪筆本季讀數？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The reading from the Thursday trial.",
+      "zh": "星期四試作的讀數。",
+      "whyZh": "實際試作的是借來的備品，不是 12 號。"
+    },
+    {
+      "id": "B",
+      "text": "The reading on the renewal sheet.",
+      "zh": "表面重整表上的讀數。",
+      "whyZh": "在回生產現場前量得，不是重整後再次投入生產的讀數。"
+    },
+    {
+      "id": "C",
+      "text": "No reading, because the trial used a borrowed spare.",
+      "zh": "不用填讀數，因為試作使用借來的備品。",
+      "whyZh": "借來的是星期四用的備品；12 號模具是自有，且星期二已投入生產。"
+    },
+    {
+      "id": "D",
+      "text": "The reading from its Tuesday run.",
+      "zh": "12 號模具星期二生產作業的讀數。",
+      "whyZh": "重整後沒有用 12 號再次生產，不能改採其他模具的試作讀數或重整時的讀數。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "重整後沒有用 12 號再次生產，不能改採其他模具的試作讀數或重整時的讀數。",
+  "evidence": "For molds we do own, use the wear reading from the last production run wherever possible. / Mold 12 belongs to us. It ran on Tuesday and its surface was renewed on Wednesday. / The workshop reserved it for a Thursday trial but used a borrowed spare when the renewal took longer than expected.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 402,
+      "endChar": 491,
+      "exactQuote": "For molds we do own, use the wear reading from the last production run wherever possible."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 757,
+      "endChar": 839,
+      "exactQuote": "Mold 12 belongs to us. It ran on Tuesday and its surface was renewed on Wednesday."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 840,
+      "endChar": 955,
+      "exactQuote": "The workshop reserved it for a Thursday trial but used a borrowed spare when the renewal took longer than expected."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "production run",
+      "zh": "一批生產作業",
+      "note": "run 在製造語境可指一次實際開機生產，不等同預留時段。"
+    }
+  ]
+}

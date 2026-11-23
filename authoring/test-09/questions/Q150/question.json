@@ -1,0 +1,72 @@
+{
+  "id": "t09-q150",
+  "testId": "test-09",
+  "number": 150,
+  "part": 7,
+  "groupId": "t09-r-p7-01",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "Suppose a different borrowed mold is resurfaced, then used for another production run. How should it be handled?",
+  "promptZh": "假設另一具借來的模具重整表面後再投入生產，應如何處理？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Use the later run in the wear figures, but remove the mold from the register.",
+      "zh": "磨耗數據採用後一次生產作業的讀數，但從登記表刪除模具。",
+      "whyZh": "借入模具應留在登記表且不計入磨耗；兩項都不符。"
+    },
+    {
+      "id": "B",
+      "text": "Keep it in the register and report the later run in the wear figures.",
+      "zh": "留在登記表，並把後一次生產作業的讀數列入磨耗數據。",
+      "whyZh": "留在登記表正確，但重整後再生產的取值例外只適用自有模具。"
+    },
+    {
+      "id": "C",
+      "text": "Keep it in the register without adding either reading to the wear figures.",
+      "zh": "留在登記表，但兩次讀數都不列入磨耗數據。",
+      "whyZh": "借入物件仍須登記；重整後使用的規則不能使借入模具成為自有磨耗數據的一部分。"
+    },
+    {
+      "id": "D",
+      "text": "Remove it from the register and leave both readings out of the wear figures.",
+      "zh": "從登記表刪除，且不把兩筆讀數列入磨耗數據。",
+      "whyZh": "不列磨耗正確，但借入模具仍須保留在登記表。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "借入物件仍須登記；重整後使用的規則不能使借入模具成為自有磨耗數據的一部分。",
+  "evidence": "The register itself must still list them. / For molds we do own, use the wear reading from the last production run wherever possible. / There is one exception: if the mold ran again after resurfacing, use that run’s reading for this quarter instead.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 359,
+      "endChar": 400,
+      "exactQuote": "The register itself must still list them."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 402,
+      "endChar": 491,
+      "exactQuote": "For molds we do own, use the wear reading from the last production run wherever possible."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 642,
+      "endChar": 755,
+      "exactQuote": "There is one exception: if the mold ran again after resurfacing, use that run’s reading for this quarter instead."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "wherever possible",
+      "zh": "在可行的情況下",
+      "note": "表示原則而非毫無例外的硬性要求。"
+    }
+  ]
+}

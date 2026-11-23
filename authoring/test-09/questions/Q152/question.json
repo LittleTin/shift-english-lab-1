@@ -1,0 +1,66 @@
+{
+  "id": "t09-q152",
+  "testId": "test-09",
+  "number": 152,
+  "part": 7,
+  "groupId": "t09-r-p7-02",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "A visitor will leave before the final sculpture and wants to take pictures from the bridge. What should the visitor plan if there is a strong wind?",
+  "promptZh": "一位訪客會在最後一座雕塑前提早離開，原本想在橋上拍照。如果風勢強，他應如何安排？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Take the long route for bridge pictures and return the lantern to a guide in a yellow vest.",
+      "zh": "走長路線拍橋上照片，並向穿黃色背心的導覽員還提燈。",
+      "whyZh": "還燈對象正確，但強風時橋在出發前關閉，只走短線。"
+    },
+    {
+      "id": "B",
+      "text": "Skip bridge pictures and return any borrowed lantern to a guide in a yellow vest before leaving.",
+      "zh": "不拍橋上照片，離開前把借的提燈交給穿黃色背心的導覽員。",
+      "whyZh": "強風取消過橋；提早離開還是得在走前把借用的燈交給導覽員。"
+    },
+    {
+      "id": "C",
+      "text": "Skip bridge pictures and leave any borrowed lantern by the last sculpture.",
+      "zh": "不拍橋上照片，把借來的提燈留在最後一座雕塑旁。",
+      "whyZh": "放棄過橋正確，但不能將燈留在雕塑旁，而且訪客不到最後一座雕塑。"
+    },
+    {
+      "id": "D",
+      "text": "Wait for the bridge to reopen and ask a theater employee to take the lantern.",
+      "zh": "等橋重新開放，請劇院員工收回提燈。",
+      "whyZh": "通知沒說晚一點會重新開橋，交還對象也應是穿黃色背心的導覽員。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "強風取消過橋；提早離開還是得在走前把借用的燈交給導覽員。",
+  "evidence": "If there is a strong wind, the bridge will close before we set out. / If you plan to leave early, hand your borrowed lantern to any guide in a yellow vest before you go.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 721,
+      "endChar": 788,
+      "exactQuote": "If there is a strong wind, the bridge will close before we set out."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 967,
+      "endChar": 1066,
+      "exactQuote": "If you plan to leave early, hand your borrowed lantern to any guide in a yellow vest before you go."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "set out",
+      "zh": "出發",
+      "note": "在路線安排中表示開始走、啟程。"
+    }
+  ]
+}

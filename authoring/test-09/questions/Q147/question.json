@@ -1,0 +1,60 @@
+{
+  "id": "t09-q147",
+  "testId": "test-09",
+  "number": 147,
+  "part": 7,
+  "groupId": "t09-r-p7-01",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "What is the purpose of the quarterly wear figures?",
+  "promptZh": "季度磨耗數據的用途是什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "To show how many molds the workshop borrowed.",
+      "zh": "顯示工坊借了幾具模具。",
+      "whyZh": "借用紀錄保留在登記表，不是磨耗數據要顯示的內容。"
+    },
+    {
+      "id": "B",
+      "text": "To show how quickly the workshop’s own molds wear out.",
+      "zh": "顯示工坊自有的模具磨損得多快。",
+      "whyZh": "首段直接說明：季度數據用來看自有模具磨損的速度。"
+    },
+    {
+      "id": "C",
+      "text": "To show how long it takes to renew a mold’s surface.",
+      "zh": "顯示重整模具表面需要多久。",
+      "whyZh": "正文提到一次重整延遲，但磨耗數據不衡量重整時間。"
+    },
+    {
+      "id": "D",
+      "text": "To record how many production runs each workshop completes.",
+      "zh": "記錄各工坊完成了多少次生產作業。",
+      "whyZh": "生產讀數是量測來源；磨耗數據本身不統計生產次數。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "首段直接說明：季度數據用來看自有模具磨損的速度。",
+  "evidence": "The quarterly wear figures are meant to show how quickly our own molds wear out",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 189,
+      "endChar": 268,
+      "exactQuote": "The quarterly wear figures are meant to show how quickly our own molds wear out"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "leave out",
+      "zh": "排除；不列入",
+      "note": "leave an item out of a total 表示不把它計入。"
+    }
+  ]
+}

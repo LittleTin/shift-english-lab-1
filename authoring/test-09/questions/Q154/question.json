@@ -1,0 +1,72 @@
+{
+  "id": "t09-q154",
+  "testId": "test-09",
+  "number": 154,
+  "part": 7,
+  "groupId": "t09-r-p7-02",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "Jia wants to ask the artist a question, but does not need to see the studio. Which plan works on either a calm or a windy evening?",
+  "promptZh": "佳想問藝術家一個問題，但不一定要看工作室。不論風勢平穩或有強風，哪種安排都可行？",
+  "options": [
+    {
+      "id": "A",
+      "text": "On a calm night, take the long route to the studio; in strong wind, stay with the group until the last sculpture.",
+      "zh": "風勢平穩時走長線到工作室；強風時跟團走到最後一座雕塑。",
+      "whyZh": "平常經過工作室的只有長線；強風時藝術家改在短線最後一座雕塑回答問題。"
+    },
+    {
+      "id": "B",
+      "text": "On a calm night, take the short route to the studio; in strong wind, stay with the group until the last sculpture.",
+      "zh": "風勢平穩時走短線到工作室；強風時跟團走到最後一座雕塑。",
+      "whyZh": "強風部分正確，但風勢平穩時短線不經過工作室。"
+    },
+    {
+      "id": "C",
+      "text": "On a calm night, take the long route to the studio; in strong wind, wait for the artist at the projection.",
+      "zh": "風勢平穩時走長線到工作室；強風時在投影處等藝術家。",
+      "whyZh": "風勢平穩部分正確；強風時投影仍會舉行，但問答是改到最後一座雕塑。"
+    },
+    {
+      "id": "D",
+      "text": "On a calm night, wait by the ramp; in strong wind, go to the studio.",
+      "zh": "風勢平穩時在坡道旁等；強風時去工作室。",
+      "whyZh": "坡道是短線的一部分；強風時問答不在工作室。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "平常經過工作室的只有長線；強風時藝術家改在短線最後一座雕塑回答問題。",
+  "evidence": "Only the long route stops at the artist’s studio for questions before it closes to visitors at 7:30. / the artist will answer questions at the last sculpture instead of at the studio. / The theater projection will still happen.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 619,
+      "endChar": 719,
+      "exactQuote": "Only the long route stops at the artist’s studio for questions before it closes to visitors at 7:30."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 844,
+      "endChar": 924,
+      "exactQuote": "the artist will answer questions at the last sculpture instead of at the studio."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 925,
+      "endChar": 966,
+      "exactQuote": "The theater projection will still happen."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "instead of",
+      "zh": "而不是；取代",
+      "note": "用來指出原來位置或做法被另一個替代。"
+    }
+  ]
+}
