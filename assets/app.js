@@ -1877,12 +1877,21 @@ function explanationQueue(id,sessionId){
  }
  const entries=ids.filter(qid=>Q.has(qid)&&attempts.has(qid)).map(qid=>({questionId:qid,attempt:attempts.get(qid)}));
  const index=entries.findIndex(e=>e.questionId===id);
- return index===-1?null:{...entries[index],entries,index,returnTo};
+ return index===-1?null:{...entries[index],entries,index,returnTo,origin:{questionId:id,sessionId:sessionId||''}};
 }
-function openExplanation(detail,focus=false){
+function openExplanation(detail){
  stopAudio();
  reviewDetail=detail;route='answer-review';render();
- if(focus)document.getElementById('review-heading')?.focus({preventScroll:true});
+ document.getElementById('review-heading')?.focus({preventScroll:true});
+ window.scrollTo(0,0);
+}
+function focusReviewOrigin(detail){
+ const origin=detail?.origin;
+ const control=origin&&Array.from(document.querySelectorAll('#main button[data-action="view-explanation"]:not(:disabled)')).find(b=>
+  b.dataset.id===origin.questionId&&(b.dataset.session||'')===origin.sessionId);
+ if(control){control.focus();return}
+ const heading=document.querySelector('#main h1, #main h2')||document.getElementById('main');
+ if(heading){heading.tabIndex=-1;heading.focus({preventScroll:true})}
  window.scrollTo(0,0);
 }
 function reviewAdvance(d){
@@ -2031,9 +2040,9 @@ async function action(name,el){if(name==='export-unsaved-local-backup'){
 }if(name==='next-explanation'){
  const d=reviewDetail;
  if(route!=='answer-review'||!d||!d.entries[d.index+1])return;
- openExplanation({...d,...d.entries[d.index+1],index:d.index+1},true);return
+ openExplanation({...d,...d.entries[d.index+1],index:d.index+1});return
 }if(name==='back-review'){
- stopAudio();route=reviewDetail?.returnTo||'review';reviewDetail=null;render();window.scrollTo(0,0);return
+ const detail=reviewDetail;stopAudio();route=detail?.returnTo||'review';reviewDetail=null;render();focusReviewOrigin(detail);return
 }if(name==='open-question'){await loadAll();const q=Q.get(el.dataset.id);if(q)return startSession(relatedQuestions(q),'Group Review');return}if(name==='start-list')return beginReview('list');if(name==='review-result')return beginReview('result');if(name==='more-list'){listLimit+=40;render();return}if(name==='open-result'){await loadAll();lastResult=state.sessions.find(s=>s.id===el.dataset.id);route='result';render();window.scrollTo(0,0);return}if(name==='export-backup')return exportBackup();if(name==='import-backup'){if(syncOwner)return;document.getElementById('backup-input').click();return}if(name==='import-pack'){await loadAll();document.getElementById('pack-input').click();return}if(name==='reset-progress'){if(syncOwner)return;confirmBox('Clear your learning records?',storageMode==='tabstorage'?'This clears this tab’s answers, mistakes, saved questions, notes, and unfinished progress only. Previously shared records are not changed. Export a backup before clearing anything.':'This removes local answers, mistakes, saved questions, notes, and unfinished progress. Imported packs are kept. Export a backup before clearing anything.',async()=>{const imported=state.importedPacks;state={formatVersion:1,settings:{fontScale:1,translation:false},attempts:[],stats:{},stars:{},notes:{},sessions:[],active:null,importedPacks:imported,lastBackup:null};clearNoteDraft();lastResult=null;if(await persist(false,false,'clear')===false)return;render();notify('Learning records cleared.')},'Confirm Clear')}}
 document.addEventListener('click',e=>{const el=e.target.closest('[data-action]');if(!el||el.disabled)return;e.preventDefault();
  const name=el.dataset.action; void withBusy(async()=>{await action(name,el);if(/^(?:answer|resume|next-question|prev-question|jump|play-audio|finish-session|finish-from-modal|test-listening|test-reading|test-exam|quick-reading|quick-listening|start-filtered|nav-)/.test(name))scheduleCheckpoint()})
