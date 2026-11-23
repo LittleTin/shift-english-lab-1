@@ -1,0 +1,78 @@
+{
+  "id": "t10-q184",
+  "testId": "test-10",
+  "number": 184,
+  "part": 7,
+  "topic": "business",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "Suppose the Oak shipment cannot leave the factory until September 9. What is the most accurate conclusion Marcel could draw?",
+  "promptZh": "假設 Oak 高腳椅要到 9 月 9 日才能離廠，Marcel 可以得出哪項最準確的結論？",
+  "options": [
+    {
+      "id": "A",
+      "text": "It would miss the setup deadline, but the information given does not determine whether the sale date must move.",
+      "zh": "貨品會趕不上陳設期限，但現有資訊不足以判定開賣日期是否必須延後。",
+      "whyZh": "承運商確認 9 月 8 日是趕上陳設的最晚出貨日，但資訊沒有說明錯過陳設期限後，是否仍有辦法如期開賣。"
+    },
+    {
+      "id": "B",
+      "text": "It could still meet the setup deadline because Rowan does not plan to sell the stools until September 15.",
+      "zh": "貨品仍能趕上陳設期限，因為 Rowan 到 9 月 15 日才開賣。",
+      "whyZh": "開賣在 9 月 15 日，不代表可延後 9 月 12 日的陳設期限；兩者是不同的安排。"
+    },
+    {
+      "id": "C",
+      "text": "It would miss both the setup deadline and the first day of sales.",
+      "zh": "貨品既趕不上陳設期限，也趕不上開賣首日。",
+      "whyZh": "資訊足以確認會錯過陳設期限，不能再推定一定趕不上開賣。"
+    },
+    {
+      "id": "D",
+      "text": "It could meet the existing production plan as long as the carrier still has space on the truck.",
+      "zh": "只要承運商的貨車仍有空間，就可符合既定生產規劃。",
+      "whyZh": "問題是出貨時間已過截止日，不能僅憑車上有空間就認定能如期到貨。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "承運商確認 9 月 8 日是趕上陳設的最晚出貨日，但資訊沒有說明錯過陳設期限後，是否仍有辦法如期開賣。",
+  "vocabulary": [
+    {
+      "term": "make the setup date",
+      "zh": "趕上布置日期",
+      "note": "make 在這裡指趕得到某個截止點，不表示建立或決定日期。"
+    }
+  ],
+  "groupId": "t10-r-p7-double-02",
+  "evidence": "For production planning, show the last factory departure that still allows the buyer to sell on the intended date, not the date the goods appear in stores. / For the Oak stools, the setup team needs everything at its site on September 12. / The carrier confirmed that September 8 is the last day the factory can send a load and make that setup date. / Stores are due to start selling on September 15.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 1038,
+      "endChar": 1193,
+      "exactQuote": "For production planning, show the last factory departure that still allows the buyer to sell on the intended date, not the date the goods appear in stores."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2413,
+      "endChar": 2493,
+      "exactQuote": "For the Oak stools, the setup team needs everything at its site on September 12."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2494,
+      "endChar": 2602,
+      "exactQuote": "The carrier confirmed that September 8 is the last day the factory can send a load and make that setup date."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2603,
+      "endChar": 2651,
+      "exactQuote": "Stores are due to start selling on September 15."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "t10-q183",
+  "testId": "test-10",
+  "number": 183,
+  "part": 7,
+  "topic": "business",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "What would be misleading about reporting all Elm tables as East territory demand?",
+  "promptZh": "若把所有 Elm 邊桌都列為東區需求，會造成什麼誤導？",
+  "options": [
+    {
+      "id": "A",
+      "text": "It would show the East center as receiving fewer tables than it will actually handle.",
+      "zh": "顯示東區中心收到的邊桌比實際經手的少。",
+      "whyZh": "東區中心確實會收到全部貨品，問題不在收貨數量。"
+    },
+    {
+      "id": "B",
+      "text": "It would treat a warehouse transfer as another order for Elm tables.",
+      "zh": "把倉庫轉運誤算成另一張 Elm 邊桌訂單。",
+      "whyZh": "全部歸東區是區域歸類錯誤，不是把同一批貨當成兩張訂單。"
+    },
+    {
+      "id": "C",
+      "text": "It would identify Rowan’s receiving point but conceal where some of the tables will first be sold.",
+      "zh": "只反映 Rowan 的收貨地點，卻掩蓋一部分邊桌首次販售的地點。",
+      "whyZh": "貨都經東區中心，但有一半會在開賣前轉往西區並在那裡首次販售。"
+    },
+    {
+      "id": "D",
+      "text": "It would imply that Rowan is already selling the tables in West stores.",
+      "zh": "暗示 Rowan 已在西區門市開賣這些邊桌。",
+      "whyZh": "全部列東區反而不會反映西區的銷售地點，也不表示已經開賣。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "貨都經東區中心，但有一半會在開賣前轉往西區並在那裡首次販售。",
+  "vocabulary": [
+    {
+      "term": "sales territory",
+      "zh": "銷售區域",
+      "note": "此處按商品第一次銷售的地點歸類，不按貨物最先入庫的點。"
+    }
+  ],
+  "groupId": "t10-r-p7-double-02",
+  "evidence": "use the place where the items will first be offered for sale to assign the sales territory. / A transfer through a warehouse does not change the territory. / The Elm side tables will all go to Rowan’s East distribution center. / Staff there will send half on to West stores before the range goes on sale; the other half will be sold in East stores.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 884,
+      "endChar": 975,
+      "exactQuote": "use the place where the items will first be offered for sale to assign the sales territory."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 976,
+      "endChar": 1037,
+      "exactQuote": "A transfer through a warehouse does not change the territory."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2224,
+      "endChar": 2292,
+      "exactQuote": "The Elm side tables will all go to Rowan’s East distribution center."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2293,
+      "endChar": 2412,
+      "exactQuote": "Staff there will send half on to West stores before the range goes on sale; the other half will be sold in East stores."
+    }
+  ]
+}

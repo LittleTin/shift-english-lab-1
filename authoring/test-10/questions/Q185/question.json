@@ -1,0 +1,90 @@
+{
+  "id": "t10-q185",
+  "testId": "test-10",
+  "number": 185,
+  "part": 7,
+  "topic": "business",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "How should the autumn sales forecast and the factory plan treat Pine and Ash?",
+  "promptZh": "秋季銷售預測和工廠計畫應如何處理 Pine 與 Ash？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Count both in sales demand, but reserve new production for neither.",
+      "zh": "把兩款都計入銷售需求，但兩款都不保留新產能。",
+      "whyZh": "Ash 的庫存已指定供應另一個市場，本地需求須另行交貨。"
+    },
+    {
+      "id": "B",
+      "text": "Count both in sales demand, but reserve new production only for Ash.",
+      "zh": "把兩款都計入銷售需求，但只為 Ash 保留新產能。",
+      "whyZh": "兩款銷售需求都已確認；Pine 由自有貨品供應，Ash 雖然有自有庫存，但庫存另有用途，因此只為 Ash 預留產能安排新生產。"
+    },
+    {
+      "id": "C",
+      "text": "Count only Ash in sales demand and reserve new production only for Ash.",
+      "zh": "只把 Ash 計入銷售需求，也只為 Ash 保留新產能。",
+      "whyZh": "Pine 不需新生產，但仍是已確認的銷售需求，不能從預測刪掉。"
+    },
+    {
+      "id": "D",
+      "text": "Count both in sales demand and reserve new production for both.",
+      "zh": "把兩款都計入銷售需求，並為兩款保留新產能。",
+      "whyZh": "Pine 已確定由歇業門市調出的自有貨品供應，不用再生產。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "兩款銷售需求都已確認；Pine 由自有貨品供應，Ash 雖然有自有庫存，但庫存另有用途，因此只為 Ash 預留產能安排新生產。",
+  "vocabulary": [
+    {
+      "term": "set aside new production",
+      "zh": "預留新生產的產能",
+      "note": "銷售需求仍須記下；只有現有庫存未承諾供這筆需求時，才需安排生產。"
+    }
+  ],
+  "groupId": "t10-r-p7-double-02",
+  "evidence": "Keep confirmed sales figures even when they won’t generate factory work. / For the factory plan, set aside new production only for the demand that Rowan hasn’t committed to meeting with units it already owns. / Mara also confirmed the autumn quantities for the Pine racks and Ash cabinets. / She is moving Rowan’s Pine racks from two stores that are closing to the autumn sales locations, so she won’t take a new delivery of that model. / The Ash cabinets in Rowan’s central warehouse could cover its autumn quantity, but Mara has committed those units to a separate launch in another market. / She wants a fresh delivery to cover the forecast here.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 1195,
+      "endChar": 1267,
+      "exactQuote": "Keep confirmed sales figures even when they won’t generate factory work."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1268,
+      "endChar": 1401,
+      "exactQuote": "For the factory plan, set aside new production only for the demand that Rowan hasn’t committed to meeting with units it already owns."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2653,
+      "endChar": 2731,
+      "exactQuote": "Mara also confirmed the autumn quantities for the Pine racks and Ash cabinets."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2732,
+      "endChar": 2876,
+      "exactQuote": "She is moving Rowan’s Pine racks from two stores that are closing to the autumn sales locations, so she won’t take a new delivery of that model."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2877,
+      "endChar": 3030,
+      "exactQuote": "The Ash cabinets in Rowan’s central warehouse could cover its autumn quantity, but Mara has committed those units to a separate launch in another market."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 3031,
+      "endChar": 3085,
+      "exactQuote": "She wants a fresh delivery to cover the forecast here."
+    }
+  ]
+}

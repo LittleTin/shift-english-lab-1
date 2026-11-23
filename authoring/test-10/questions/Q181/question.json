@@ -1,0 +1,78 @@
+{
+  "id": "t10-q181",
+  "testId": "test-10",
+  "number": 181,
+  "part": 7,
+  "topic": "business",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "How should Marcel handle the two bench models in the autumn figures?",
+  "promptZh": "Marcel 應如何在秋季數字中處理這兩款長椅？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Enter Arc in the forecast and list Cove as an opportunity.",
+      "zh": "將 Arc 納入預測，Cove 另列為潛在商機。",
+      "whyZh": "Arc 可按現有條件納入；Cove 要先改變運費條件，故先列商機。"
+    },
+    {
+      "id": "B",
+      "text": "Enter Cove in the forecast and list Arc as an opportunity.",
+      "zh": "將 Cove 納入預測，Arc 另列為潛在商機。",
+      "whyZh": "Arc 不需改變我方條件；Cove 才有尚未接受的條件。"
+    },
+    {
+      "id": "C",
+      "text": "Enter both in the forecast because they appear in the same presentation.",
+      "zh": "兩款都納入預測，因為它們出現在同一份簡報中。",
+      "whyZh": "出現在同一份簡報並不代表買方接受兩款的現有條件。"
+    },
+    {
+      "id": "D",
+      "text": "Leave both out of the forecast until Rowan sends a purchase order.",
+      "zh": "Rowan 發出採購訂單前，兩款都不列入預測。",
+      "whyZh": "即使正式訂單尚未送達，符合條件的 Arc 仍可納入。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "Arc 可按現有條件納入；Cove 要先改變運費條件，故先列商機。",
+  "vocabulary": [
+    {
+      "term": "quoted specification",
+      "zh": "報價所列的規格",
+      "note": "規格與價格都已可接受時，仍可在正式訂單之前作需求預測。"
+    }
+  ],
+  "groupId": "t10-r-p7-double-02",
+  "evidence": "Include quantities the retailer’s buyer still expects to take at the quoted specification and price. / Show projects that still depend on a change to our offer in a separate list, as opportunities rather than forecast demand. / Mara, Rowan’s buyer, says the Arc benches are still in her launch plan on the terms we sent. / The Cove benches are in the same presentation, but her finance team will back them only if we absorb the freight surcharge.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 278,
+      "endChar": 378,
+      "exactQuote": "Include quantities the retailer’s buyer still expects to take at the quoted specification and price."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 433,
+      "endChar": 555,
+      "exactQuote": "Show projects that still depend on a change to our offer in a separate list, as opportunities rather than forecast demand."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1566,
+      "endChar": 1658,
+      "exactQuote": "Mara, Rowan’s buyer, says the Arc benches are still in her launch plan on the terms we sent."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1719,
+      "endChar": 1842,
+      "exactQuote": "The Cove benches are in the same presentation, but her finance team will back them only if we absorb the freight surcharge."
+    }
+  ]
+}

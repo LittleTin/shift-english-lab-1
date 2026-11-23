@@ -1,0 +1,84 @@
+{
+  "id": "t10-q182",
+  "testId": "test-10",
+  "number": 182,
+  "part": 7,
+  "topic": "business",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "Which revision to the design-level forecast follows both messages?",
+  "promptZh": "哪項調整符合兩封信對不同設計款式的預測原則？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Switch both Wave and Pier to their newer designs without adding volume.",
+      "zh": "Wave 和 Pier 都改列新款，但不增加數量。",
+      "whyZh": "Wave 已獲准換款；Pier 圓角款只是拍照用樣品，正式規劃仍是方角款。"
+    },
+    {
+      "id": "B",
+      "text": "Keep the square Pier and replace the projected high-back Wave with the low-back Wave.",
+      "zh": "Pier 仍列方角款，Wave 則把原預測的高背款換成低背款。",
+      "whyZh": "Wave 低背款取代高背款且首批數量不變；Pier 仍按要求規劃方角款。"
+    },
+    {
+      "id": "C",
+      "text": "Keep both Wave designs in the forecast while moving the Pier demand to the rounded design.",
+      "zh": "兩款 Wave 都列入，Pier 的需求則轉到圓角款。",
+      "whyZh": "Wave 是取代，不是兩款並列；也不應因 Pier 索取樣品就轉移需求。"
+    },
+    {
+      "id": "D",
+      "text": "Keep the existing Wave demand and add a separate forecast for the rounded Pier.",
+      "zh": "Wave 維持原預測，另把圓角 Pier 列入預測。",
+      "whyZh": "Wave 必須換款，圓角 Pier 則沒有新增需求的依據。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "Wave 低背款取代高背款且首批數量不變；Pier 仍按要求規劃方角款。",
+  "vocabulary": [
+    {
+      "term": "reassign demand",
+      "zh": "重新分配已預測的需求",
+      "note": "改一種設計去承接原數量，不等於把新舊款的需求相加。"
+    }
+  ],
+  "groupId": "t10-r-p7-double-02",
+  "evidence": "If the new design would take the place of an item already on the forecast, reassign that demand / Do not move demand merely because Rowan has asked for a design sample. / For the Pier desk, Rowan requested a sample of the rounded version for a photograph. It has told us to plan for the square version. / She has retained the same opening quantity. / Mara told me to replace the planned high-back order with the low-back version.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 617,
+      "endChar": 712,
+      "exactQuote": "If the new design would take the place of an item already on the forecast, reassign that demand"
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 770,
+      "endChar": 840,
+      "exactQuote": "Do not move demand merely because Rowan has asked for a design sample."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1875,
+      "endChar": 2006,
+      "exactQuote": "For the Pier desk, Rowan requested a sample of the rounded version for a photograph. It has told us to plan for the square version."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2179,
+      "endChar": 2222,
+      "exactQuote": "She has retained the same opening quantity."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2100,
+      "endChar": 2178,
+      "exactQuote": "Mara told me to replace the planned high-back order with the low-back version."
+    }
+  ]
+}
