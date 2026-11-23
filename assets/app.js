@@ -93,12 +93,12 @@ let persistentError='';
 let guestBackupApplying=false;
 function showPersistentError(){
  const box=document.getElementById('shift-persistent-error'), message=document.getElementById('shift-persistent-error-message');
- if(box&&message){box.hidden=!persistentError;message.textContent=persistentError;for(const action of ['retry-local-save','export-unsaved-local-backup']){const button=box.querySelector('[data-action="'+action+'"]');if(button)button.hidden=!localSaveFailure}}
+ if(box&&message){box.hidden=!persistentError;message.textContent=persistentError;for(const action of ['retry-local-save','export-unsaved-local-backup']){const button=box.querySelector('[data-action="'+action+'"]');if(button)button.hidden=action==='retry-local-save'?!localSaveFailure:!(localSaveFailure||accountActiveConflict)}}
 }
 function persistentErrorHtml(){
  return '<aside id="shift-persistent-error" class="page-error"'+(persistentError?'':' hidden')+'><p id="shift-persistent-error-message" role="alert">'+esc(persistentError)+'</p>'+
  '<button type="button" class="btn small" data-action="retry-local-save"'+(localSaveFailure?'':' hidden')+'>Retry Save</button>'+
- '<button type="button" class="btn small" data-action="export-unsaved-local-backup"'+(localSaveFailure?'':' hidden')+'>Backup Unsaved Progress</button>'+
+ '<button type="button" class="btn small" data-action="export-unsaved-local-backup"'+((localSaveFailure||accountActiveConflict)?'':' hidden')+'>Backup Unsaved Progress</button>'+
  '<button type="button" class="btn small" data-action="dismiss-page-error">'+icon('close')+' Dismiss</button></aside>'
 }
 function notify(msg){
@@ -140,12 +140,15 @@ async function readWorkspace(owner){
  }):storageMode==='localstorage'?JSON.parse(localStorage.getItem(fallback)):null;
  const result=stored?normalizeState(stored):blankWorkspace();
  if(!owner&&typeof stored?.guestActiveRevision==='string')Object.defineProperty(result,'guestActiveRevision',{value:stored.guestActiveRevision});
+ if(owner)Object.defineProperty(result,'accountActiveRevision',{value:stored?.accountActiveRevision??null});
  if(owner)result.syncSent=Object.fromEntries(Object.entries(stored?.syncSent||{}).filter(([id,value])=>records.UUID.test(id)&&value===true));
  return result
 }
 const records=window.SHIFT_SYNC_RECORDS;
 const syncConfig=window.SHIFT_SYNC_CONFIG;
 const syncConfigured=!!(records&&syncConfig?.url&&syncConfig?.publishableKey&&/^https?:$/.test(location.protocol));
+let accountBaseline=null,accountActiveRevision=null,accountActiveConflict=false;
+const accountActiveWarning='This session could not be saved because it changed in another tab. Back up any unsaved edits, then reload to resume.';
 let syncOwner=null,syncCore=null,syncOnline=null,syncPasswordOpen=false,syncStatus='',syncPageCursor=null,syncLastFull=0,syncEpoch=0;
 const scopedKey=(key,owner=syncOwner)=>records&&owner?records.key(key,owner):key;
 const accountActionBusy=()=>route!=='data'||diagnostic;
@@ -310,11 +313,16 @@ async function switchWorkspace(owner,avoidQuiz=false){
  syncEpoch++;syncPageCursor=null;syncLastFull=0;syncOnline=null;syncStatus='';lastExportAt=0;
  stopAudio();reviewDetail=null;lastResult=null;resumeEnv=null;noteGeneration++;noteTokens.clear();noteStatuses.clear();
  state=next;syncOwner=owner;
+ const priorAccount=[accountBaseline,accountActiveRevision,accountActiveConflict];
+ accountBaseline=owner?JSON.parse(JSON.stringify(next)):null;
+ accountActiveRevision=next.accountActiveRevision??null;
+ accountActiveConflict=false;
  const priorGuest=[guestBaseline,guestActiveRevision,guestSavedAnswerKey];
  if(!owner)seedGuest(state,state);
  try{await installPackIndexes();await restoreNoteDraft();if(storageMode!=='indexeddb')throw Error('Storage unavailable')}
  catch(error){
   [guestBaseline,guestActiveRevision,guestSavedAnswerKey]=priorGuest;
+  [accountBaseline,accountActiveRevision,accountActiveConflict]=priorAccount;
   state=previous.state;syncOwner=previous.owner;Q=previous.Q;G=previous.G;loaded=previous.loaded;
   officialPacks.clear();for(const [key,value] of previous.officialPacks)officialPacks.set(key,value);
   archivedIds.clear();for(const key of previous.archived)archivedIds.add(key);
@@ -336,39 +344,60 @@ function checkpointUi(){
  return '<aside class="checkpoint-region" aria-label="Practice progress sync">'+rem+
    '<p id="checkpoint-feedback" class="checkpoint-feedback" data-kind="'+statusKind(checkpointFeedback)+'" role="status" aria-live="polite" aria-atomic="true"'+(checkpointFeedback?'':' hidden')+'>'+esc(checkpointFeedback)+'</p></aside>'
 }
-async function checkpointMeta(owner,updated){
+function nextCheckpointMeta(observed,expected,updated){
+ const prior=observed||{};
+ // Compare the whole earlier record, including the pending ID and kept copies.
+ // A delayed response must not replace a pending mutation from another tab.
+ if(!records.same(prior,expected||{}))return null;
+ if((updated.base?.revision??-1)<(prior.base?.revision??-1))return null;
+ return updated
+}
+async function checkpointMeta(owner,update){
  if(!owner||!db||storageMode!=='indexeddb')throw Error('checkpoint_storage');
  const key=scopedKey('checkpoint-meta',owner);
  return new Promise((resolve,reject)=>{
-  const writing=updated!==undefined,tx=db.transaction('kv',writing?'readwrite':'readonly'),store=tx.objectStore('kv');
-  let value;
-  if(writing)store.put(updated,key);else{const req=store.get(key);req.onsuccess=()=>{value=req.result}}
-  tx.oncomplete=()=>resolve(value||null);tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error)
+  const tx=db.transaction('kv',update?'readwrite':'readonly'),store=tx.objectStore('kv');
+  let value=null;
+  tx.oncomplete=()=>resolve(value);tx.onabort=()=>reject(tx.error||Error('checkpoint_storage'));
+  const req=store.get(key);
+  req.onsuccess=()=>{
+   try{
+    if(!update){value=req.result??null;return}
+    value=nextCheckpointMeta(req.result,update.expected,update.updated);
+    if(value)store.put(value,key);
+   }catch(error){tx.onabort=()=>reject(error);tx.abort()}
+  }
  })
 }
 function scheduleCheckpoint(delay=500){
- if(!syncOwner||!syncConfigured||!syncCore?.getScope()||storageMode!=='indexeddb'||localSaveFailure||checkpointApplying||checkpointConflict)return;
+ if(!syncOwner||!syncConfigured||!syncCore?.getScope()||storageMode!=='indexeddb'||localSaveFailure||accountActiveConflict||checkpointApplying||checkpointConflict)return;
  if(navigator.onLine===false){setCheckpointFeedback('Offline. Practice progress is saved on this device and will sync when you reconnect.');return}
  if(checkpointTimer!==undefined)return;
  checkpointTimer=setTimeout(()=>{checkpointTimer=undefined;void syncCheckpoint()},delay)
 }
 async function syncCheckpoint(choice=null){
- if(!syncOwner||storageMode!=='indexeddb'||localSaveFailure||checkpointConflict&&!choice||navigator.onLine===false)return;
+ if(!syncOwner||storageMode!=='indexeddb'||localSaveFailure||accountActiveConflict||checkpointConflict&&!choice||navigator.onLine===false)return;
  if(checkpointLoop){if(choice)return;return checkpointLoop}
  const owner=syncOwner,epoch=syncEpoch,active=syncCore?.getScope();
  if(active?.userId!==owner)return;
- const current=()=>owner===syncOwner&&epoch===syncEpoch&&active===syncCore?.getScope();
+ const current=()=>owner===syncOwner&&epoch===syncEpoch&&active===syncCore?.getScope()&&!accountActiveConflict;
+ const currentDurable=async()=>{
+  await saveQueue;
+  if(!current()||localSaveFailure)return false;
+  const durable=await readWorkspace(owner);
+  return current()&&!localSaveFailure&&durable.accountActiveRevision===accountActiveRevision;
+ };
  let localAtStart,applied=false;
  const task=(async()=>{
   try{
    const lib=await checkpointLibrary();
    await saveQueue;
-   if(!current()||localSaveFailure)return;
-   const meta=await checkpointMeta(owner)||{};
+   if(!await currentDurable())return;
+   let meta=await checkpointMeta(owner)||{};
    const cap=()=>lib.captureCheckpoint(state.active?normalizeState({formatVersion:1,attempts:[],sessions:[],active:state.active}).active:null);
    const local=localAtStart=cap();let base=meta.base;
    const remote=await syncCore.readActiveCheckpoint(active);
-   if(!current())return;
+   if(!await currentDurable())return;
    remote.checkpoint=lib.parseCheckpoint(remote.checkpoint,normalizeState);
    if(remote.mutationId&&meta.pending?.mutationId===remote.mutationId)base=remote;
    const newerLocal=cap();
@@ -376,8 +405,11 @@ async function syncCheckpoint(choice=null){
    // might have advanced between the GET and the decision.
    const same=lib.sameCheckpoint;
    const mark=async value=>{
-    if(!current())return;
-    await checkpointMeta(owner,value);
+    if(!current())return false;
+    const committed=await checkpointMeta(owner,{expected:meta,updated:value});
+    if(!committed){if(await currentDurable())scheduleCheckpoint();return false}
+    meta=committed;
+    return current()
    };
    let resolution=lib.checkpointDecision({base,remote,local:newerLocal,inTest:route==='quiz'});
    if(choice){
@@ -394,23 +426,26 @@ async function syncCheckpoint(choice=null){
     return
    }
    if(resolution==='stale')throw Error('checkpoint_stale');
-   if(resolution==='ack'){if(!meta.base||meta.base.revision!==remote.revision||meta.pending)await mark({...meta,base:remote,pending:null});if(!current())return;checkpointConflict=null;checkpointSyncAt=now();setCheckpointFeedback('Practice progress is synced.');if(choice){updateCheckpointRegion();if(route==='home')document.querySelector('.resume-main')?.focus()}return}
+   if(resolution==='ack'){if((!meta.base||meta.base.revision!==remote.revision||meta.pending)&&!await mark({...meta,base:remote,pending:null}))return;if(!current())return;checkpointConflict=null;checkpointSyncAt=now();setCheckpointFeedback('Practice progress is synced.');if(choice){updateCheckpointRegion();if(route==='home')document.querySelector('.resume-main')?.focus()}return}
    if(resolution==='take'){
     // External changes cannot take over an open quiz unless explicitly selected.
     if(!current()||!same(cap(),newerLocal))return;
     if(newerLocal&&choice){
      const kept=[...(Array.isArray(meta.kept)?meta.kept:[]),{at:now(),checkpoint:newerLocal}].slice(-4);
-     await mark({...meta,kept});meta.kept=kept;
+     if(!await mark({...meta,kept}))return;
      if(!current()||!same(cap(),newerLocal))return;
     }
     checkpointApplying=true;
-    const wasQuiz=route==='quiz';
+    const wasQuiz=route==='quiz',previousActive=state.active,previousResume=resumeEnv;
     try{
      stopAudio();state.active=remote.checkpoint?normalizeState({formatVersion:1,attempts:[],sessions:[],active:remote.checkpoint}).active:null;
      resumeEnv=null;
      if(route==='quiz')route='home';
-     await persist(true);
-     await mark({...meta,base:remote,pending:null});
+     try{if(await persist(true)===false)throw Error('account_workspace_conflict')}catch(error){
+      if(owner===syncOwner&&epoch===syncEpoch){state.active=previousActive;resumeEnv=previousResume;if(wasQuiz)route='quiz'}
+      throw error
+     }
+     if(!await mark({...meta,base:remote,pending:null})){if(wasQuiz&&current())render();return}
      if(!current())return;
      applied=true;checkpointConflict=null;checkpointSyncAt=now();
      setCheckpointFeedback(state.active?'Practice progress is ready to resume.':'Practice progress is synced.');
@@ -422,17 +457,20 @@ async function syncCheckpoint(choice=null){
    const value=newerLocal;
    if(choice==='local'&&remote.checkpoint){
     const kept=[...(Array.isArray(meta.kept)?meta.kept:[]),{at:now(),checkpoint:remote.checkpoint}].slice(-4);
-    await mark({...meta,kept});meta.kept=kept;if(!current())return;
+    if(!await mark({...meta,kept}))return;
    }
    const prev=meta.pending;
    const pending=prev?.revision===remote.revision&&same(prev.checkpoint,value)?prev:
      {revision:remote.revision,mutationId:crypto.randomUUID(),checkpoint:value};
    // Durably keep the mutation ID; a lost success response is safe to retry.
-   await mark({...meta,base:remote,pending});
-   if(!current())return;
+   if(!await currentDurable()||!same(cap(),value))return;
+   if(!await mark({...meta,base:remote,pending}))return;
+   if(!await currentDurable()||!same(cap(),value))return;
    const result=await syncCore.writeActiveCheckpoint(pending,active);
    if(!current())return;
    if(result==='conflict'||result==='already_completed'){
+    // Another tab may already have superseded this exact RPC while it waited.
+    if(!await currentDurable()||!records.same(await checkpointMeta(owner)||{},meta)||!current())return;
     // Never mark stale or already-submitted data synced; preserve its local copy.
     checkpointConflict=result==='already_completed'
       ?{finished:true,revision:remote.revision,checkpoint:remote.checkpoint}
@@ -444,7 +482,7 @@ async function syncCheckpoint(choice=null){
     return
    }
    const ack={revision:remote.revision+1,mutationId:pending.mutationId,checkpoint:value};
-   await mark({...meta,base:ack,pending:null});
+   if(!await mark({...meta,base:ack,pending:null}))return;
    if(!current())return;
    checkpointConflict=null;checkpointSyncAt=now();
    const more=!same(cap(),value);
@@ -755,6 +793,31 @@ function applyGuestWrite(stored,{base,next,mode}){
  }
  return {value:changed?result:undefined,warning,activeCommit}
 }
+function applyAccountWrite(stored,before,next,revision,historyOnly,conflicted){
+ const durable=stored||blankWorkspace();
+ if(historyOnly)return {value:{...durable,...records.localUnion(durable,next,normalizeState)}};
+ if(!before)throw Error('Account workspace not ready');
+ const activeChanged=!guestEqual(before.active,next.active);
+ const finishing=!!before.active&&!next.active&&next.sessions.some(s=>s.id===before.active.id);
+ const owns=(durable.active?.id??null)===(before.active?.id??null)&&(durable.accountActiveRevision??null)===revision;
+ if((activeChanged||finishing)&&(!owns||conflicted))return {blocked:true};
+ const result={...durable,...records.localUnion(durable,next,normalizeState)};
+ for(const key of ['settings','stars','notes']){
+  const old=before[key]||{},edited=next[key]||{},merged={...(durable[key]||{})};
+  for(const id of new Set([...Object.keys(old),...Object.keys(edited)])){
+   if(guestEqual(old[id],edited[id]))continue;
+   if(!Object.hasOwn(edited,id)||key==='stars'&&!edited[id])delete merged[id];else merged[id]=edited[id];
+  }
+  result[key]=merged;
+ }
+ const priorPacks=new Map(before.importedPacks.map(p=>[p.testId,p]));
+ const packs=new Map((durable.importedPacks||[]).map(p=>[p.testId,p]));
+ for(const p of next.importedPacks)if(!guestEqual(priorPacks.get(p.testId),p))packs.set(p.testId,p);
+ result.importedPacks=[...packs.values()];
+ if(!guestEqual(before.lastBackup,next.lastBackup))result.lastBackup=next.lastBackup;
+ if(activeChanged){result.active=next.active;result.accountActiveRevision=uid()}
+ return {value:result,activeChanged};
+}
 function persist(strict=false,historyOnly=false,guestMode=null,guestSubmission=null){
  if(guestSubmitPending&&!guestSubmission&&!syncOwner)return Promise.resolve();
  if(diagnostic||storageMode==='loading'||storageMode==='memory'){
@@ -766,7 +829,7 @@ function persist(strict=false,historyOnly=false,guestMode=null,guestSubmission=n
  const guestWrite=owner?null:{base:null,next:JSON.parse(snapshot),mode:guestMode};
  // Capture the user action at call time, but compare against this tab's last
  // committed state at transaction time. A rejected write is never our baseline.
- let guestWarning=null,guestBlocked=false,activeCommit=null,writeMode=null;
+ let guestWarning=null,guestBlocked=false,activeCommit=null,writeMode=null,accountOutcome=null;
  const mergeGuest=stored=>{
   const outcome=applyGuestWrite(stored,guestWrite);
   guestWarning=outcome.warning;guestBlocked=!!outcome.blocked;activeCommit=outcome.activeCommit;
@@ -789,22 +852,11 @@ function persist(strict=false,historyOnly=false,guestMode=null,guestSubmission=n
     return
    }
    const next=JSON.parse(snapshot);
-   // A different tab for the same account may have completed a session while this tab was offline.
-   // Preserve append-only history atomically without sharing notes or unfinished exams between profiles.
    const req=store.get(key);
    req.onsuccess=()=>{
     try{
-     const old=req.result;
-     if(historyOnly){
-      // A different tab may have newer in-progress answers, timing, or notes.
-      // A cloud pull/receipt must never overwrite those local workspace fields.
-      const durable=old||blankWorkspace();
-      Object.assign(durable,records.localUnion(durable,next,normalizeState));
-      store.put(durable,key);
-     }else{
-      if(old)Object.assign(next,records.localUnion(next,old,normalizeState));
-      store.put(next,key);
-     }
+     accountOutcome=applyAccountWrite(req.result,accountBaseline,next,accountActiveRevision,historyOnly,accountActiveConflict);
+     if(accountOutcome.value)store.put(accountOutcome.value,key);
     }catch(error){try{tx.onabort=()=>reject(error);tx.abort()}catch{reject(error)}}
    };
   }else{
@@ -812,7 +864,7 @@ function persist(strict=false,historyOnly=false,guestMode=null,guestSubmission=n
    const write=()=>{
     if(mode!==storageMode)throw Error('Storage changed before the write');
     const store=guestStorage(),key=guestStorageKey(owner);
-    if(owner){if(mode!=='localstorage')throw Error('Account storage unavailable');store.setItem(key,snapshot)}
+    if(owner)throw Error('Account storage unavailable');
     else{
      const raw=store.getItem(key),value=mergeGuest(raw?JSON.parse(raw):null);
      if(value)store.setItem(key,JSON.stringify(value))
@@ -836,6 +888,16 @@ function persist(strict=false,historyOnly=false,guestMode=null,guestSubmission=n
     await timeout([40,100,240][attempt]);
    }
   }
+  if(accountOutcome?.blocked){
+   accountActiveConflict=true;
+   clearTimeout(checkpointTimer);checkpointTimer=undefined;
+   notify(accountActiveWarning);
+   return false;
+  }
+  if(owner&&!historyOnly){
+   accountBaseline=JSON.parse(snapshot);
+   if(accountOutcome?.activeChanged)accountActiveRevision=accountOutcome.value.accountActiveRevision;
+  }
   if(guestBlocked)return false;
   if(guestWrite)guestBaseline=guestWrite.next;
   if(activeCommit)[guestActiveRevision,guestSavedAnswerKey]=activeCommit;
@@ -852,7 +914,7 @@ function persist(strict=false,historyOnly=false,guestMode=null,guestSubmission=n
  return operation.then(saved=>{
   if(guestWarning)notify(guestWarning);
   if(!saved)return false;
-  if(!guestSubmission&&!historyOnly&&!checkpointApplying&&owner&&owner===syncOwner&&storageMode==='indexeddb'){
+  if(!guestSubmission&&!historyOnly&&!checkpointApplying&&!accountActiveConflict&&owner&&owner===syncOwner&&storageMode==='indexeddb'){
   const a=state.active,u=a?.audioUsed?.[currentAudioGroup],m=a?.practiceMedia;
   const signature=JSON.stringify(a?[a.id,a.index,a.answers,a.submitted,a.examPhase,a.readingStartsOnReturn,!!a.listeningStartedAt,u?.status,m?.groupId,m?.paused,m?.rate]:null);
   if(checkpointSignature!==signature||now()-checkpointSyncAt>=8000){
@@ -1039,7 +1101,7 @@ async function withBusy(fn){if(busy||guestSubmitPending)return;busy=true;try{awa
 async function navigate(dest){if(route==='quiz'||route==='answer-review'){stopAudio();await persist()}mobileNav=false;route=dest;syncListeningCountdown(state.active);if(listening())void persist();activeTranscript=null;listLimit=40;if(['review','favorites','stats'].includes(dest)){shell('<div class="loading">Loading your learning records…</div>');await loadAll()}render();window.scrollTo({top:0,behavior:'instant'});if(authRestoreStatus==='waiting'&&navigator.onLine!==false)void recheckAuthOnReconnect()}
 function render(){if(!diagnostic)try{tabWrite(LAST_PAGE_TAB_KEY,route==='data'?'data':null);if(route==='quiz'&&state.active)sessionStorage.setItem(scopedKey('shift-last-quiz'),state.active.id);else sessionStorage.removeItem(scopedKey('shift-last-quiz'))}catch(e){}if(route==='home')shell(homePage());else if(route==='practice')shell(practicePage());else if(route==='review'||route==='favorites')shell(listPage());else if(route==='stats')shell(statsPage());else if(route==='data')shell(dataPage());else if(route==='quiz')shell(quizPage());else if(route==='result')shell(resultPage());else if(route==='answer-review')shell(reviewDetailPage());syncAudioUI()}
 function groupedSelection(pool,count){const units=new Map();for(const q of pool){const key=q.groupId||q.id;if(!units.has(key))units.set(key,[]);units.get(key).push(q)}const chosen=[];for(const unit of shuffle([...units.values()])){if(chosen.length>=count)break;const qs=unit[0].groupId?relatedQuestions(unit[0]).map(q=>unit.find(x=>x.number===q.number)||q):unit;chosen.push(...qs)}return chosen}
-async function startSession(questions,title,mode='practice',startId=null){if(!questions.length){notify('No questions match these filters. Try changing your selection.');return}
+async function startSession(questions,title,mode='practice',startId=null){if(accountActiveConflict){notify(accountActiveWarning);return}if(!questions.length){notify('No questions match these filters. Try changing your selection.');return}
  const workspaceOwner=syncOwner;
  const guest=!workspaceOwner&&guestCanPersist();
  const durableActive=guest?(await backupSnapshot()).active:null;
@@ -1742,7 +1804,8 @@ function moveQuestion(delta){return moveGroup(delta)}
 async function submitAnswer(){if(!state.active)return;if(state.active.index===state.active.questionIds.length-1)return finishSession();moveQuestion(1)}
 async function finishSession(force=false){
 if(diagnostic){notify('This session is only for playback diagnostics. Nothing was saved.');return}
-const s=state.active;if(!s||guestSubmitPending||(force&&guestRejectedAutoSubmit===s))return;const done=Object.keys(s.answers).length;
+const s=state.active;if(!s||guestSubmitPending||(force&&guestRejectedAutoSubmit===s))return;
+if(accountActiveConflict){notify(accountActiveWarning);return}const done=Object.keys(s.answers).length;
 const complete=async()=>{
  if(state.active!==s||guestSubmitPending)return;
  stopAudio();
@@ -1864,7 +1927,7 @@ async function backupSnapshot(owner=syncOwner,epoch=syncEpoch,includeUnsaved=fal
  assertWorkspace();
  let saved;
  // Emergency export is the current tab's snapshot, not the older durable copy.
- if(includeUnsaved&&localSaveFailure)saved=state;
+ if(includeUnsaved&&(localSaveFailure||accountActiveConflict))saved=state;
  else if(storageMode==='indexeddb'&&db){
   saved=await new Promise((resolve,reject)=>{
    const request=db.transaction('kv','readonly').objectStore('kv').get(scopedKey('state',owner));
@@ -1877,7 +1940,7 @@ async function backupSnapshot(owner=syncOwner,epoch=syncEpoch,includeUnsaved=fal
  }
  assertWorkspace();
  const backup={...(saved??state)};
- delete backup.syncSent;delete backup.guestActiveRevision;delete backup.guestSupersededSessions;
+ delete backup.accountActiveRevision;delete backup.syncSent;delete backup.guestActiveRevision;delete backup.guestSupersededSessions;
  return backup;
 }
 async function exportBackup(){
