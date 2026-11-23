@@ -1,0 +1,66 @@
+{
+  "id": "t10-q178",
+  "testId": "test-10",
+  "number": 178,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "What should the morning shift put in a reply about the camera if the depot portal has not changed?",
+  "promptZh": "若保管所系統狀態沒有更新，早班應如何回覆相機的詢問？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Use ‘Lark Street, Tuesday, 06’ to distinguish the camera from the satchel.",
+      "zh": "用「雲雀街站、週二、06」區分相機和側背包。",
+      "whyZh": "這種識別方式適用於留在車站的失物。相機已交給司機，不應在回信引用原站編號。"
+    },
+    {
+      "id": "B",
+      "text": "Acknowledge the inquiry without quoting a receipt or depot number.",
+      "zh": "確認已收到詢問，但不引用車站或保管所編號。",
+      "whyZh": "相機已離站，但仍等待保管所登記，尚無保管所編號。因此應先回覆確認，但暫不引用任何編號。"
+    },
+    {
+      "id": "C",
+      "text": "Wait until the depot assigns a number before replying at all.",
+      "zh": "等到保管所分配編號後再回信。",
+      "whyZh": "流程要求先確認收到詢問，不必等保管所核發編號；現階段不得在回覆中引用任何編號。"
+    },
+    {
+      "id": "D",
+      "text": "Quote DP-184 because the portal uses it in place of receipt 06.",
+      "zh": "引用 DP-184，因為這是系統用來取代 06 的編號。",
+      "whyZh": "DP-184 對應週一撿到的側背包。收件編號 06 每天可重複使用，不能單靠相同編號認定是相機。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "相機已離站，但仍等待保管所登記，尚無保管所編號。因此應先回覆確認，但暫不引用任何編號。",
+  "vocabulary": [
+    {
+      "term": "awaiting intake",
+      "zh": "等待收件登記",
+      "note": "intake 表示保管所把物件登錄入庫，和運送途中不同。"
+    }
+  ],
+  "groupId": "t10-r-p7-double-01",
+  "evidence": "Station receipt numbers start over each morning. For an item that stays at a station, keep the station name, date and local receipt number together when replying to a claimant. After an item is entered at the depot, quote the new depot number in replies and keep the station receipt details in the staff record only. If an item is still on the way and has no depot number, acknowledge the inquiry without quoting either number. / A green satchel found here on Monday and a camera found here on Tuesday both have local receipt 06. The depot portal now shows the satchel under DP-184. The camera left with the evening driver, but the depot portal still shows ‘awaiting intake’. A message in our inbox about the camera mentions only ‘06’.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 879,
+      "endChar": 1306,
+      "exactQuote": "Station receipt numbers start over each morning. For an item that stays at a station, keep the station name, date and local receipt number together when replying to a claimant. After an item is entered at the depot, quote the new depot number in replies and keep the station receipt details in the staff record only. If an item is still on the way and has no depot number, acknowledge the inquiry without quoting either number."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 3081,
+      "endChar": 3386,
+      "exactQuote": "A green satchel found here on Monday and a camera found here on Tuesday both have local receipt 06. The depot portal now shows the satchel under DP-184. The camera left with the evening driver, but the depot portal still shows ‘awaiting intake’. A message in our inbox about the camera mentions only ‘06’."
+    }
+  ]
+}

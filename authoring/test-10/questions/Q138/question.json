@@ -1,0 +1,66 @@
+{
+  "id": "t10-q138",
+  "testId": "test-10",
+  "number": 138,
+  "part": 6,
+  "topic": "business",
+  "revision": 1,
+  "difficulty": "foundation",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Choose the best word or sentence for blank [138].",
+  "promptZh": "請選出最適合填入第 138 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "while having revised",
+      "zh": "而同時已修訂",
+      "whyZh": "revised 與後面的 as originally entered 相反；只補登一場，不須修改其他現場出席。"
+    },
+    {
+      "id": "B",
+      "text": "and had left",
+      "zh": "並且先前已保留",
+      "whyZh": "had left 是過去完成式，不能與前面祈使句 mark 用 and 並列。"
+    },
+    {
+      "id": "C",
+      "text": "leaving",
+      "zh": "同時保留",
+      "whyZh": "分詞 leaving 補充登記一場的同時，其他現場出席照舊。"
+    },
+    {
+      "id": "D",
+      "text": "so as to remove",
+      "zh": "以便刪除",
+      "whyZh": "remove 表示刪除，與要維持原紀錄的意思相反。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "分詞 leaving 補充登記一場的同時，其他現場出席照舊。",
+  "vocabulary": [
+    {
+      "term": "as originally entered",
+      "zh": "保留原先登錄方式",
+      "note": "entered 表示登記到出席單或系統，而不是進入會場。"
+    }
+  ],
+  "groupId": "t10-r-p6-02",
+  "evidence": "show how each apprentice actually took part / the rest of the in-person attendance as originally entered",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1592,
+      "endChar": 1635,
+      "exactQuote": "show how each apprentice actually took part"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1816,
+      "endChar": 1874,
+      "exactQuote": "the rest of the in-person attendance as originally entered"
+    }
+  ]
+}

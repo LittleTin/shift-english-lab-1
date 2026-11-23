@@ -1,0 +1,66 @@
+{
+  "id": "t10-q180",
+  "testId": "test-10",
+  "number": 180,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "What should the morning shift do to follow up on the report about the scarf?",
+  "promptZh": "早班人員應如何跟進圍巾遺失通報？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Ask the Lark Street cleaners to check again because that is where the passenger got off.",
+      "zh": "因為旅客在雲雀街站下車，請該站清潔人員再檢查一次。",
+      "whyZh": "乘客說圍巾留在車上，不是留在下車站的月台。雲雀街站的下車和月台巡查都不能決定後續查找。"
+    },
+    {
+      "id": "B",
+      "text": "Ask Oak Lane to check the racks above the rear seats because that is where the last passengers got off.",
+      "zh": "最後一批旅客在橡樹巷站下車，請該站檢查後排座位上方的行李架。",
+      "whyZh": "查找的區域正確，但最後一位旅客下車不等於列車結束載客服務。郵件說列車在磨坊場站才清空停放。"
+    },
+    {
+      "id": "C",
+      "text": "Close the search because Mill Yard has already checked the area the passenger described.",
+      "zh": "磨坊場站已查過旅客描述的區域，可結束查找。",
+      "whyZh": "磨坊場站找過後排座位及周圍地板，但主管說上方行李架欄位空白代表未檢查，現有查找沒有涵蓋旅客所述位置。"
+    },
+    {
+      "id": "D",
+      "text": "Ask the Mill Yard cleaners to check the racks above the rear seats.",
+      "zh": "請磨坊場站的清潔人員檢查後排座位上方的行李架。",
+      "whyZh": "磨坊場站是這班車結束載客服務的地點，負責查找車內失物。主管確認空白代表沒有檢查上方行李架，而旅客指出圍巾留在座位上方。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "磨坊場站是這班車結束載客服務的地點，負責查找車內失物。主管確認空白代表沒有檢查上方行李架，而旅客指出圍巾留在座位上方。",
+  "vocabulary": [
+    {
+      "term": "take a train out of service",
+      "zh": "讓列車退出載客服務",
+      "note": "末批旅客下車與列車正式結束營運可以在不同站，不能當成同一個事件。"
+    }
+  ],
+  "groupId": "t10-r-p7-double-01",
+  "evidence": "For a report about something left on board, the station that last took the train out of service handles the search, even if the passenger got off elsewhere. Ask the cleaning team at that station to recheck only if the first inspection did not cover the area the passenger described. For an item left on a platform, ask the station where it was left instead. / Another passenger got off the 17:40 at Lark Street and left a scarf above the seat by the rear door. Our cleaners checked the platforms after the last departure. The 17:40's final passengers got off at Oak Lane, but it stayed in service until Mill Yard, where it was emptied and parked. Mill Yard's log says the rear seats and the floor around them were checked; the entry for the overhead racks is blank. Their supervisor says a blank entry means that area was not checked.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 1627,
+      "endChar": 1984,
+      "exactQuote": "For a report about something left on board, the station that last took the train out of service handles the search, even if the passenger got off elsewhere. Ask the cleaning team at that station to recheck only if the first inspection did not cover the area the passenger described. For an item left on a platform, ask the station where it was left instead."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 3662,
+      "endChar": 4136,
+      "exactQuote": "Another passenger got off the 17:40 at Lark Street and left a scarf above the seat by the rear door. Our cleaners checked the platforms after the last departure. The 17:40's final passengers got off at Oak Lane, but it stayed in service until Mill Yard, where it was emptied and parked. Mill Yard's log says the rear seats and the floor around them were checked; the entry for the overhead racks is blank. Their supervisor says a blank entry means that area was not checked."
+    }
+  ]
+}

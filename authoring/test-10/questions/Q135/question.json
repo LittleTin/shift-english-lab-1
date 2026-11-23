@@ -1,0 +1,72 @@
+{
+  "id": "t10-q135",
+  "testId": "test-10",
+  "number": 135,
+  "part": 6,
+  "topic": "business",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Choose the best word or sentence for blank [135].",
+  "promptZh": "請選出最適合填入第 135 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "Count the whole fare if at least one of the two apprentices has to attend in person.",
+      "zh": "兩人中至少有一人必須親自出席，就申報整筆車資。",
+      "whyZh": "每人的資格應分開判斷，不能因一人必須到場就申報兩人費用。"
+    },
+    {
+      "id": "B",
+      "text": "Claim only the share of each apprentice required to attend in person, even if the whole fare appears on the receipt.",
+      "zh": "即使收據列的是全部車資，也只申報每位被要求親自出席者應分攤的金額。",
+      "whyZh": "合併收據可證明整筆車資，但仍只申報符合條件的份額；每名學徒須分別核對。"
+    },
+    {
+      "id": "C",
+      "text": "Claim both fares if the coordinator can confirm that both apprentices did arrive in person.",
+      "zh": "倘若協調員能確認兩名學徒皆已到場，就申報兩份車資。",
+      "whyZh": "實際到場不代表是依協調員的要求到場。"
+    },
+    {
+      "id": "D",
+      "text": "Exclude the receipt entirely unless the travel clerk can start separate files for both apprentices.",
+      "zh": "除非差旅人員能替兩人各開一份檔案，否則不採用這張收據。",
+      "whyZh": "合併收據可以證明拆分金額，並未要求為兩人分別開檔才可採用。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "合併收據可證明整筆車資，但仍只申報符合條件的份額；每名學徒須分別核對。",
+  "vocabulary": [
+    {
+      "term": "reimbursement",
+      "zh": "費用報銷",
+      "note": "費用可否報銷與車程是否計入工作時間是不同判斷；receipt 通常是報銷所需憑證。"
+    }
+  ],
+  "groupId": "t10-r-p6-02",
+  "evidence": "Travel reimbursement is limited to those same trips, and a receipt is required for each amount claimed. / use the coordinator’s individual attendance requests to establish each person’s eligibility / The receipt can document the split, but cannot make an optional journey eligible.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 191,
+      "endChar": 294,
+      "exactQuote": "Travel reimbursement is limited to those same trips, and a receipt is required for each amount claimed."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 468,
+      "endChar": 559,
+      "exactQuote": "use the coordinator’s individual attendance requests to establish each person’s eligibility"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 678,
+      "endChar": 759,
+      "exactQuote": "The receipt can document the split, but cannot make an optional journey eligible."
+    }
+  ]
+}

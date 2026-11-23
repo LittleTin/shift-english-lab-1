@@ -1,0 +1,66 @@
+{
+  "id": "t10-q177",
+  "testId": "test-10",
+  "number": 177,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "Why has Anya not told the person who wrote in whose name is on the parcel?",
+  "promptZh": "安雅為什麼沒告訴來信的人，包裹上寫著誰的名字？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The name is evidence that the parcel belongs to someone who has not written in.",
+      "zh": "標籤上的姓名證明包裹屬於尚未來信的人。",
+      "whyZh": "目前只知道有人詢問這種綁法的包裹，員工還不能據此判定來信者與標籤所列收件人的關係。"
+    },
+    {
+      "id": "B",
+      "text": "The details already on the public page are enough to verify the claim.",
+      "zh": "公開頁面上的資訊已足以確認失主。",
+      "whyZh": "棕色外包裝與藍繩已公開，任何看過招領資訊的人都能說出，不足以核對失主。"
+    },
+    {
+      "id": "C",
+      "text": "The incomplete address prevents staff from recording anything from the label.",
+      "zh": "地址不完整，因此員工不能記錄標籤上的任何資料。",
+      "whyZh": "流程恰好相反：未提供聯絡方式的外部標籤應列為員工紀錄中的辨識細節。"
+    },
+    {
+      "id": "D",
+      "text": "The name can help verify the claim only if the person supplies it independently.",
+      "zh": "來信者自行說出姓名，才能用這項資訊協助核對失主身分。",
+      "whyZh": "公開頁面只有包裹的外觀，沒有收件人姓名。員工不先透露姓名，才能核對來信者是否原本就知道這個未公開的細節。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "公開頁面只有包裹的外觀，沒有收件人姓名。員工不先透露姓名，才能核對來信者是否原本就知道這個未公開的細節。",
+  "vocabulary": [
+    {
+      "term": "public listing",
+      "zh": "公開招領公告",
+      "note": "公開公告提供線索，但不會列出所有可用來驗證失主的細節。"
+    }
+  ],
+  "groupId": "t10-r-p7-double-01",
+  "evidence": "Do not open sealed envelopes or parcels to look for a name. If an outside label names a recipient but does not give a way to contact them, record the label as an identifying detail in the staff record. On the public listing, describe the packaging without reproducing the name. A claimant may then supply the name without having read it on the listing. / The label on the sealed brown parcel gives a full name and a building number, but no street, phone number or email. I've only put ‘brown parcel with blue cord’ on the public page. Someone has written to ask whether we found a parcel tied that way. I have not told them whose name is on it.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 525,
+      "endChar": 877,
+      "exactQuote": "Do not open sealed envelopes or parcels to look for a name. If an outside label names a recipient but does not give a way to contact them, record the label as an identifying detail in the staff record. On the public listing, describe the packaging without reproducing the name. A claimant may then supply the name without having read it on the listing."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2790,
+      "endChar": 3079,
+      "exactQuote": "The label on the sealed brown parcel gives a full name and a building number, but no street, phone number or email. I've only put ‘brown parcel with blue cord’ on the public page. Someone has written to ask whether we found a parcel tied that way. I have not told them whose name is on it."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "t10-q179",
+  "testId": "test-10",
+  "number": 179,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "Which plan follows the guide for the things found together on the bench?",
+  "promptZh": "對於在長椅上一同發現的物品，哪個處理方式符合流程？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Give the pass and key to security, send the comb to the depot, and note the split in both records.",
+      "zh": "將員工證和鑰匙交給保全，梳子送往保管所，並在兩筆紀錄都註明分開處理。",
+      "whyZh": "取出鑰匙會剪破員工證，所以鑰匙須隨證件交給保全。梳子並未相連，也無人詢問，應依一般失物流程送保管所，並在兩筆紀錄註明分開處理。"
+    },
+    {
+      "id": "B",
+      "text": "Give only the pass to security, send both other objects to the depot, and note the split in both records.",
+      "zh": "只把員工證交給保全，其餘兩件送往保管所，並在兩筆紀錄都註明分開處理。",
+      "whyZh": "記錄分流沒錯，梳子也可以單獨送往保管所；但鑰匙無法在不損傷員工證的情況下取出，不能拆開送走。"
+    },
+    {
+      "id": "C",
+      "text": "Give all three to security, since the comb and key were found with the staff pass.",
+      "zh": "三件都交給保全，因為梳子和鑰匙都是與員工證一同發現的。",
+      "whyZh": "同一處發現不等於物品相連。鑰匙不能安全拆下，但梳子只是擱在底下，仍走一般失物流程。"
+    },
+    {
+      "id": "D",
+      "text": "Give the pass and key to security and send the comb to the depot without making a note about the two transfers.",
+      "zh": "把員工證和鑰匙交給保全，梳子送往保管所，不另做分流註記。",
+      "whyZh": "目的地都正確，但流程還規定原本一同發現的物品若分開處理，兩筆紀錄都須有註記。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "取出鑰匙會剪破員工證，所以鑰匙須隨證件交給保全。梳子並未相連，也無人詢問，應依一般失物流程送保管所，並在兩筆紀錄註明分開處理。",
+  "vocabulary": [
+    {
+      "term": "split up things found together",
+      "zh": "將一同發現的物品分開處理",
+      "note": "split up 在此指依物件類型分送；分送時仍須留下兩邊的紀錄。"
+    }
+  ],
+  "groupId": "t10-r-p7-double-01",
+  "evidence": "A station sends ordinary items to the central depot on the evening collection. A confirmed claimant can instead collect an item at that station the next day, but only if the claimant gave a distinguishing detail not shown on its public listing and the station has a staffed ticket window the next morning. If the window will be closed, mark the item for collection at the depot; do not arrange a handover at the station even if the claimant has been identified. / Give railway staff passes to station security, not the evening driver. Keep an ordinary item attached to a pass with it if separating them would damage either one. Loose items found next to a pass should go through the usual lost-property process. Leave a note in both records when you split up things found together. / A railway staff pass, a plain key and a folding comb were found together on a bench. The key is caught in the edge of the pass's laminated cover, so I can't get it out without cutting the pass. The comb was simply lying underneath. Nobody has asked about any of the three.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 62,
+      "endChar": 523,
+      "exactQuote": "A station sends ordinary items to the central depot on the evening collection. A confirmed claimant can instead collect an item at that station the next day, but only if the claimant gave a distinguishing detail not shown on its public listing and the station has a staffed ticket window the next morning. If the window will be closed, mark the item for collection at the depot; do not arrange a handover at the station even if the claimant has been identified."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1308,
+      "endChar": 1625,
+      "exactQuote": "Give railway staff passes to station security, not the evening driver. Keep an ordinary item attached to a pass with it if separating them would damage either one. Loose items found next to a pass should go through the usual lost-property process. Leave a note in both records when you split up things found together."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 3388,
+      "endChar": 3660,
+      "exactQuote": "A railway staff pass, a plain key and a folding comb were found together on a bench. The key is caught in the edge of the pass's laminated cover, so I can't get it out without cutting the pass. The comb was simply lying underneath. Nobody has asked about any of the three."
+    }
+  ]
+}

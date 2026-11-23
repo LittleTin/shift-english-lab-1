@@ -1,0 +1,72 @@
+{
+  "id": "t10-q136",
+  "testId": "test-10",
+  "number": 136,
+  "part": 6,
+  "topic": "business",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Choose the best word or sentence for blank [136].",
+  "promptZh": "請選出最適合填入第 136 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "Ask every apprentice to delay the first claim until both fares have been recorded.",
+      "zh": "請所有學徒等到兩程車資都登記後再送第一次申請。",
+      "whyZh": "上句說明可先報銷回程車資，不必等第二張收據。"
+    },
+    {
+      "id": "B",
+      "text": "Enter the outbound fare on the attendance sheet when it is known.",
+      "zh": "得知去程車資後，把它填到出席單上。",
+      "whyZh": "出席單記參與方式；去程收據要加在原報銷檔。"
+    },
+    {
+      "id": "C",
+      "text": "Use the date on each receipt to decide whether to create a new file.",
+      "zh": "用各張收據上的日期決定是否開新檔。",
+      "whyZh": "前文要求同一趟補交收據仍用同一檔；不能按收據日期分案。"
+    },
+    {
+      "id": "D",
+      "text": "Use the original journey reference on any supplemental receipt.",
+      "zh": "補交收據時沿用原本的差旅編號。",
+      "whyZh": "同一趟的兩張收據要歸入同一份報銷資料，沿用原差旅編號可讓兩張收據對應到同一趟。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "同一趟的兩張收據要歸入同一份報銷資料，沿用原差旅編號可讓兩張收據對應到同一趟。",
+  "vocabulary": [
+    {
+      "term": "supplemental receipt",
+      "zh": "補交的收據",
+      "note": "supplemental 表示追加，同一趟差旅後補收據不等於另開新案。"
+    }
+  ],
+  "groupId": "t10-r-p6-02",
+  "evidence": "The travel clerk can reimburse that amount now. / add it to the same reimbursement file rather than opening another one / This keeps two receipts for a single trip from being mistaken for two trips.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 826,
+      "endChar": 873,
+      "exactQuote": "The travel clerk can reimburse that amount now."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 914,
+      "endChar": 983,
+      "exactQuote": "add it to the same reimbursement file rather than opening another one"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1049,
+      "endChar": 1125,
+      "exactQuote": "This keeps two receipts for a single trip from being mistaken for two trips."
+    }
+  ]
+}

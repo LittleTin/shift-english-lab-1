@@ -1,0 +1,72 @@
+{
+  "id": "t10-q176",
+  "testId": "test-10",
+  "number": 176,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "Which plan lets each caller collect at the station where the umbrella was found if the guide allows it?",
+  "promptZh": "哪個安排能讓來電者在流程允許時，到撿到雨傘的原車站領取？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Arrange collection of both umbrellas at the stations where they were found.",
+      "zh": "安排兩把傘都在各自被撿到的車站領取。",
+      "whyZh": "兩人都提供了未公開的辨識細節，但橡樹巷站明早沒有售票窗口人員，不可安排在該站領傘。"
+    },
+    {
+      "id": "B",
+      "text": "Arrange collection of both umbrellas at the depot.",
+      "zh": "安排兩把傘都在保管所領取。",
+      "whyZh": "橡樹巷站那把須在保管所領取；雲雀街站那把已核對未公開的修補細節，且窗口早上仍有人值班，不必送保管所。"
+    },
+    {
+      "id": "C",
+      "text": "Offer collection at Lark Street after its window opens, and send the other claimant to the depot.",
+      "zh": "請本站失主在雲雀街站窗口開放後領取，另一位失主則到保管所領取。",
+      "whyZh": "兩位失主都說出了未公開的細節，但只有雲雀街站隔天早上有窗口值班。代回覆橡樹巷站的信箱不等於代為保管。"
+    },
+    {
+      "id": "D",
+      "text": "Offer collection of both umbrellas at Lark Street after its window opens.",
+      "zh": "請兩位失主都在雲雀街站窗口開放後領取。",
+      "whyZh": "雲雀街站只代回覆橡樹巷站的信箱，不代保管該站失物；該站的雨傘應在保管所領取。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "兩位失主都說出了未公開的細節，但只有雲雀街站隔天早上有窗口值班。代回覆橡樹巷站的信箱不等於代為保管。",
+  "vocabulary": [
+    {
+      "term": "distinguishing detail",
+      "zh": "可供辨識的特徵",
+      "note": "例如傘把下未刊在公告上的修補痕跡；能用來核對物件是否屬於來認領的人。"
+    }
+  ],
+  "groupId": "t10-r-p7-double-01",
+  "evidence": "A station sends ordinary items to the central depot on the evening collection. A confirmed claimant can instead collect an item at that station the next day, but only if the claimant gave a distinguishing detail not shown on its public listing and the station has a staffed ticket window the next morning. If the window will be closed, mark the item for collection at the depot; do not arrange a handover at the station even if the claimant has been identified. / The ticket window will open at 9:00 tomorrow, an hour late because the glass is being replaced. Leon will staff it from opening. The team at Oak Lane will have no one on its ticket window tomorrow morning; they've asked us to answer their property inbox, not to take custody of anything for them. / Two callers asked about umbrellas. The one found here has an orange band, as shown online. Its caller mentioned a stitched repair under the handle that wasn’t included in the listing. I checked that detail. Oak Lane's caller described a bent tip on their umbrella before it was listed at all, and Oak Lane checked that detail. Both callers said they could come in the morning.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 62,
+      "endChar": 523,
+      "exactQuote": "A station sends ordinary items to the central depot on the evening collection. A confirmed claimant can instead collect an item at that station the next day, but only if the claimant gave a distinguishing detail not shown on its public listing and the station has a staffed ticket window the next morning. If the window will be closed, mark the item for collection at the depot; do not arrange a handover at the station even if the claimant has been identified."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2114,
+      "endChar": 2410,
+      "exactQuote": "The ticket window will open at 9:00 tomorrow, an hour late because the glass is being replaced. Leon will staff it from opening. The team at Oak Lane will have no one on its ticket window tomorrow morning; they've asked us to answer their property inbox, not to take custody of anything for them."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2412,
+      "endChar": 2788,
+      "exactQuote": "Two callers asked about umbrellas. The one found here has an orange band, as shown online. Its caller mentioned a stitched repair under the handle that wasn’t included in the listing. I checked that detail. Oak Lane's caller described a bent tip on their umbrella before it was listed at all, and Oak Lane checked that detail. Both callers said they could come in the morning."
+    }
+  ]
+}

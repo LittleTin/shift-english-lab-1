@@ -1,0 +1,72 @@
+{
+  "id": "t10-q137",
+  "testId": "test-10",
+  "number": 137,
+  "part": 6,
+  "topic": "business",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Choose the best word or sentence for blank [137].",
+  "promptZh": "請選出最適合填入第 137 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "the coordinator’s request, made before she travelled, that she attend in person",
+      "zh": "協調員在她搭車前要求她到場出席的通知",
+      "whyZh": "規則問實際前往是否由協調員要求；後續通知已在搭車前將到場改為必要。"
+    },
+    {
+      "id": "B",
+      "text": "the booking that was already in place when the coordinator wrote",
+      "zh": "協調員寫信時就已訂好的行程",
+      "whyZh": "車已訂好證明訂位早，不表示當時搭車是否受要求。"
+    },
+    {
+      "id": "C",
+      "text": "the attendance choice stated in the first invitation",
+      "zh": "第一封邀請上列的出席選項",
+      "whyZh": "最初邀請可以選擇，但已被隨後的現場展示要求改變。"
+    },
+    {
+      "id": "D",
+      "text": "the reason she was originally considering the morning bus",
+      "zh": "她原先考慮搭早班車的理由",
+      "whyZh": "搭車前的最終要求決定工時；沒有證據說她先選客運的理由會影響工時。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "規則問實際前往是否由協調員要求；後續通知已在搭車前將到場改為必要。",
+  "vocabulary": [
+    {
+      "term": "attend in person",
+      "zh": "親自到場出席",
+      "note": "此處與參加線上場次對照，in person 修飾出席的方式。"
+    }
+  ],
+  "groupId": "t10-r-p6-02",
+  "evidence": "A trip to the workshop counts as work time when a coordinator has asked the apprentice to attend in person. / The next day the coordinator asked her to present a physical sample, so she needed to come in. / She took the same bus she had already booked.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 83,
+      "endChar": 190,
+      "exactQuote": "A trip to the workshop counts as work time when a coordinator has asked the apprentice to attend in person."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1238,
+      "endChar": 1332,
+      "exactQuote": "The next day the coordinator asked her to present a physical sample, so she needed to come in."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1333,
+      "endChar": 1378,
+      "exactQuote": "She took the same bus she had already booked."
+    }
+  ]
+}
