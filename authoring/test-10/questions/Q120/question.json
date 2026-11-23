@@ -1,0 +1,52 @@
+{
+  "id": "t10-q120",
+  "testId": "test-10",
+  "number": 120,
+  "part": 5,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "incomplete-sentence",
+    "field-observation"
+  ],
+  "prompt": "The bird survey requires every submitted sighting to pass each check on the same list. One report with a verified location was not added to the survey because its date could not be established. Another report had a confirmed date but was held because the location could not be verified. A verified location is therefore _____ adding a sighting to the survey.",
+  "promptZh": "鳥類調查要求每一筆提交的觀察紀錄，都必須通過同一份清單上的每項檢查。一筆地點已核實的紀錄因無法確定日期而未收錄；另一筆紀錄的日期已確認，卻因地點無法核實而遭暫緩。因此，核實地點對於將一筆觀察紀錄納入調查而言，_____。",
+  "options": [
+    {
+      "id": "A",
+      "text": "sufficient but not necessary for",
+      "zh": "是充分但非必要條件",
+      "whyZh": "日期已確認但地點無法核實，仍被暫緩，表示核實地點是必要條件；反過來，核實地點也不能補足日期不明。"
+    },
+    {
+      "id": "B",
+      "text": "necessary but not sufficient for",
+      "zh": "是必要但非充分條件",
+      "whyZh": "日期已確認的紀錄仍因地點未核實而未能收錄，表示這是必要條件；已核實地點的紀錄若無法確定日期，仍不會收錄，表示這不是充分條件。"
+    },
+    {
+      "id": "C",
+      "text": "neither necessary nor sufficient for",
+      "zh": "既不是必要條件，也不是充分條件",
+      "whyZh": "地點已核實卻未收錄，確實證明單靠這個條件還不夠；但另一筆正是因為地點未核實才遭暫緩，不能說核實地點不必要。"
+    },
+    {
+      "id": "D",
+      "text": "both necessary and sufficient for",
+      "zh": "是必要且充分的條件",
+      "whyZh": "地點未核實而暫緩符合必要條件；但日期不明的紀錄即使核實了地點也未收錄，故不能說這就是充分條件。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "日期已確認的紀錄仍因地點未核實而未能收錄，表示這是必要條件；已核實地點的紀錄若無法確定日期，仍不會收錄，表示這不是充分條件。",
+  "vocabulary": [
+    {
+      "term": "necessary but not sufficient",
+      "zh": "必要但非充分",
+      "note": "必要表示少了它就不行；非充分表示有它也不一定成功，要看其他條件。"
+    }
+  ],
+  "evidence": "The bird survey requires every submitted sighting to pass each check on the same list. One report with a verified location was not added to the survey because its date could not be established. Another report had a confirmed date but was held because the location could not be verified. A verified location is therefore necessary but not sufficient for adding a sighting to the survey.",
+  "evidenceZh": "鳥類調查要求每一筆提交的觀察紀錄，都必須通過同一份清單上的每項檢查。一筆地點已核實的紀錄因無法確定日期而未收錄；另一筆紀錄的日期已確認，卻因地點無法核實而遭暫緩。因此，核實地點對於將一筆觀察紀錄納入調查而言，是必要但非充分條件。"
+}
