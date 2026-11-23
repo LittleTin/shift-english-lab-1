@@ -1,0 +1,66 @@
+{
+  "id": "t10-q159",
+  "testId": "test-10",
+  "number": 159,
+  "part": 7,
+  "topic": "technology",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "field-reference"
+  ],
+  "prompt": "Which plan would let people using either printed sheet keep using the short link without searching for the next step?",
+  "promptZh": "哪個做法能讓使用這兩種紙本的人，都可繼續用原短網址，且不用搜尋接下來該看哪一頁？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Redirect the short link to the field page and let workshop staff use the general procedure list from there.",
+      "zh": "把短網址導向外勤頁，再讓工作間人員從該頁進入一般流程清單。",
+      "whyZh": "直接導到外勤頁只符合其中一種紙本用途。工作間人員還得去一般流程清單中找自己的流程。"
+    },
+    {
+      "id": "B",
+      "text": "Redirect the short link to the workshop page and keep the field page under ‘Connection Check’ in the main notebook.",
+      "zh": "把短網址導向工作間頁，並在主筆記中保留名為〈連線檢查〉的外勤頁。",
+      "whyZh": "這照顧了工作間使用者，但外勤讀者會先被導至不同的流程，還得另去主筆記找外勤頁。"
+    },
+    {
+      "id": "C",
+      "text": "Use one index with the choices ‘Checking the connection after switching power sources’ and ‘Testing a returned unit on the bench.’",
+      "zh": "使用同一個索引，兩個選項分別寫「切換電源後檢查連線」與「在工作台測試送回的設備」。",
+      "whyZh": "兩種紙本使用同一個網址，索引上的兩個選項分別對應紙本上已知的任務，不用先知道設備的連線狀態，也不用搜尋。"
+    },
+    {
+      "id": "D",
+      "text": "Use one index that directs people with connected readers to the field page and people with unconnected readers to the workshop page.",
+      "zh": "使用同一個索引，將讀取器已連線的人導向外勤頁，未連線的人導向工作間頁。",
+      "whyZh": "雖然保留兩種流程在同一個索引，但外勤人員必須先看外勤頁，才會知道怎麼確認是否連線，不能靠尚未查明的結果來選流程。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "兩種紙本使用同一個網址，索引上的兩個選項分別對應紙本上已知的任務，不用先知道設備的連線狀態，也不用搜尋。",
+  "vocabulary": [
+    {
+      "term": "redirect to an index",
+      "zh": "重新導向索引頁",
+      "note": "索引選項要讓紙本使用者在不知道檢查結果前就能分流。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-06",
+  "evidence": "Field teams carry printed sheets with a short link for each entry in Sandbar Notebook. Keep an entry’s original link when replacing its text if the new text still serves the purpose for which the sheet was printed. An old link can instead redirect to an index page, but only if the field team can tell which entry to open next without searching. Do not redirect a printed link directly to a different procedure merely because the new procedure has a similar name. / The same short link is on two printed sheets. The field sheet says ‘Check the first connection after switching power sources’; the workshop sheet says ‘Test a returned unit on the bench.’ We now have one page for confirming whether a reader connects in the field, and one for testing a returned reader on the bench. The crew must open the field instructions to find out whether a reader has connected. The draft index currently lists two links both titled ‘Connection Check.’",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 0,
+      "endChar": 463,
+      "exactQuote": "Field teams carry printed sheets with a short link for each entry in Sandbar Notebook. Keep an entry’s original link when replacing its text if the new text still serves the purpose for which the sheet was printed. An old link can instead redirect to an index page, but only if the field team can tell which entry to open next without searching. Do not redirect a printed link directly to a different procedure merely because the new procedure has a similar name."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 465,
+      "endChar": 940,
+      "exactQuote": "The same short link is on two printed sheets. The field sheet says ‘Check the first connection after switching power sources’; the workshop sheet says ‘Test a returned unit on the bench.’ We now have one page for confirming whether a reader connects in the field, and one for testing a returned reader on the bench. The crew must open the field instructions to find out whether a reader has connected. The draft index currently lists two links both titled ‘Connection Check.’"
+    }
+  ]
+}

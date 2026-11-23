@@ -1,0 +1,66 @@
+{
+  "id": "t10-q160",
+  "testId": "test-10",
+  "number": 160,
+  "part": 7,
+  "topic": "technology",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "field-reference"
+  ],
+  "prompt": "Which full-size pictures, if any, does Inez still need to download before making the trip export?",
+  "promptZh": "製作此行的匯出副本前，伊內絲還需要下載哪些完整圖片（如果有的話）？",
+  "options": [
+    {
+      "id": "A",
+      "text": "R17 only, from Reader Setup",
+      "zh": "只從〈讀取器設定〉下載 R17。",
+      "whyZh": "R17 的完整圖可從另一條目已存的同 ID 檔案取得；仍缺的是新版標籤 C24。"
+    },
+    {
+      "id": "B",
+      "text": "C24 only, from Cable Labels",
+      "zh": "只從〈線材標籤〉下載 C24。",
+      "whyZh": "R17 可使用〈工作間套件〉已存的同 ID 完整圖；C19 和 C24 是不同圖片，C24 不能用舊完整圖替代。〈手勢〉只有文字且已儲存。"
+    },
+    {
+      "id": "C",
+      "text": "Both R17 and C24 from the three selected entries",
+      "zh": "從選定的三個條目中下載 R17 和 C24。",
+      "whyZh": "C24 確實需要下載，但完整的 R17 已存在，雖然是儲存在未選取的條目下，仍可依 ID 重用；兩張都下載不是最少的做法。"
+    },
+    {
+      "id": "D",
+      "text": "No pictures, because a full-size copy already exists for each subject",
+      "zh": "不用下載，因為每個主題已有完整的圖片。",
+      "whyZh": "R17 已經有完整圖，但線材標籤保存的是 C19 舊圖，不是此次需要的 C24；同一主題並不表示圖片 ID 相同。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "R17 可使用〈工作間套件〉已存的同 ID 完整圖；C19 和 C24 是不同圖片，C24 不能用舊完整圖替代。〈手勢〉只有文字且已儲存。",
+  "vocabulary": [
+    {
+      "term": "reuse a full copy",
+      "zh": "重用完整副本",
+      "note": "可否重用取決於原始 ID 是否相同，而不是檔案主題是否相近。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-06",
+  "evidence": "The export button gathers entries and pictures already saved on the device; it does not download missing files. It can reuse a full picture saved under another entry if both point to the same original picture ID. A preview badge shows only that the small version has been saved. A full-copy badge confirms a full picture for the ID shown alongside the badge. If an entry has no picture, saving the text is enough. / Inez has saved the text of all three entries for the trip. Reader Setup needs picture R17. It shows only a preview, but the unrelated Workshop Kit entry already has a full-copy badge for picture R17. Cable Labels needs picture C24. A full-size picture of the old set, C19, is still saved, and C24 has only a preview. Hand Signals has no picture. The team needs full pictures of every illustration referenced by the three selected entries, but has no need for the old label set.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 942,
+      "endChar": 1355,
+      "exactQuote": "The export button gathers entries and pictures already saved on the device; it does not download missing files. It can reuse a full picture saved under another entry if both point to the same original picture ID. A preview badge shows only that the small version has been saved. A full-copy badge confirms a full picture for the ID shown alongside the badge. If an entry has no picture, saving the text is enough."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1357,
+      "endChar": 1834,
+      "exactQuote": "Inez has saved the text of all three entries for the trip. Reader Setup needs picture R17. It shows only a preview, but the unrelated Workshop Kit entry already has a full-copy badge for picture R17. Cable Labels needs picture C24. A full-size picture of the old set, C19, is still saved, and C24 has only a preview. Hand Signals has no picture. The team needs full pictures of every illustration referenced by the three selected entries, but has no need for the old label set."
+    }
+  ]
+}

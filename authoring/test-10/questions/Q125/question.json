@@ -1,0 +1,52 @@
+{
+  "id": "t10-q125",
+  "testId": "test-10",
+  "number": 125,
+  "part": 5,
+  "topic": "manufacturing",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "incomplete-sentence",
+    "qualified-endorsement"
+  ],
+  "prompt": "The specialist said the repair could go ahead with the parts now on hand but would not last unless the brackets were replaced. The manager quoted only the first part and presented it as the specialist’s overall view of the plan. As a result, the summary _____ the specialist’s endorsement of the repair plan.",
+  "promptZh": "專家說，現有零件足以開始維修，但若不更換支架，修補效果就無法持久。經理只引述前半段，並把它說成專家對整個計畫的看法。因此，就專家對維修計畫的支持而言，這份摘要_____。",
+  "options": [
+    {
+      "id": "A",
+      "text": "overstated",
+      "zh": "誇大了支持的程度",
+      "whyZh": "開始工作這件事說得沒錯，但漏掉了持久性取決於更換支架的保留條件，讓支持看起來比原話更全面。"
+    },
+    {
+      "id": "B",
+      "text": "contradicted",
+      "zh": "與專家原本的支持態度相矛盾",
+      "whyZh": "專家確實說可以開工。摘要刪去保留條件，並未直接否定已陳述的開工許可。"
+    },
+    {
+      "id": "C",
+      "text": "withdrew",
+      "zh": "撤回了專家原本的支持",
+      "whyZh": "withdrew 表示撤回原支持；經理並未讓專家的原話失效，也沒有說不再支持。"
+    },
+    {
+      "id": "D",
+      "text": "qualified",
+      "zh": "為專家原本的支持加上限制條件",
+      "whyZh": "qualified 在此表示加上保留條件；摘要沒有補上條件，反而省略了條件。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "開始工作這件事說得沒錯，但漏掉了持久性取決於更換支架的保留條件，讓支持看起來比原話更全面。",
+  "vocabulary": [
+    {
+      "term": "overstate",
+      "zh": "誇大程度",
+      "note": "說出的局部可能正確，但省去保留條件後，整體會顯得過於肯定。"
+    }
+  ],
+  "evidence": "The specialist said the repair could go ahead with the parts now on hand but would not last unless the brackets were replaced. The manager quoted only the first part and presented it as the specialist’s overall view of the plan. As a result, the summary overstated the specialist’s endorsement of the repair plan.",
+  "evidenceZh": "專家說，現有零件足以開始維修，但若不更換支架，修補效果就無法持久。經理只引述前半段，並把它說成專家對整個計畫的看法。因此，就專家對維修計畫的支持而言，這份摘要誇大了支持的程度。"
+}
