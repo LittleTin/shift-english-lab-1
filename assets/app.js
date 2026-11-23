@@ -34,6 +34,8 @@ const opusRequired=p=>typeof p==='string'&&p.endsWith('.ogg');
 const opusUnavailable='This browser does not support Ogg Opus audio. Please use a browser with native Opus playback.';
 let storageMode='loading',db=null,saveQueue=Promise.resolve(),toastHandle=null;
 let guestBaseline=null,guestActiveRevision=null,guestSavedAnswerKey=null,guestSubmitPending=false,guestRejectedAutoSubmit=null;
+let localSaveFailure=false;
+const localSaveMessage='The browser could not save your latest changes. Keep this tab open and retry, or download a backup of this tab’s latest progress.';
 let state={formatVersion:1,noteDraftEpoch:'initial',settings:{fontScale:1,translation:false},attempts:[],stats:{},stars:{},notes:{},sessions:[],active:null,importedPacks:[],lastBackup:null};
 let route='home',mobileNav=false,filterTopic='all',filters={section:'all',part:'all',topic:'all',difficulty:'all',accent:'all',count:20,unseen:false},listFilter='all',listSearch='',listLimit=40;
 let archivedIds=new Set();
@@ -91,10 +93,12 @@ let persistentError='';
 let guestBackupApplying=false;
 function showPersistentError(){
  const box=document.getElementById('shift-persistent-error'), message=document.getElementById('shift-persistent-error-message');
- if(box&&message){box.hidden=!persistentError;message.textContent=persistentError}
+ if(box&&message){box.hidden=!persistentError;message.textContent=persistentError;for(const action of ['retry-local-save','export-unsaved-local-backup']){const button=box.querySelector('[data-action="'+action+'"]');if(button)button.hidden=action==='retry-local-save'?!localSaveFailure:!(localSaveFailure||accountActiveConflict)}}
 }
 function persistentErrorHtml(){
  return '<aside id="shift-persistent-error" class="page-error"'+(persistentError?'':' hidden')+'><p id="shift-persistent-error-message" role="alert">'+esc(persistentError)+'</p>'+
+ '<button type="button" class="btn small" data-action="retry-local-save"'+(localSaveFailure?'':' hidden')+'>Retry Save</button>'+
+ '<button type="button" class="btn small" data-action="export-unsaved-local-backup"'+((localSaveFailure||accountActiveConflict)?'':' hidden')+'>Backup Unsaved Progress</button>'+
  '<button type="button" class="btn small" data-action="dismiss-page-error">'+icon('close')+' Dismiss</button></aside>'
 }
 function notify(msg){
@@ -136,12 +140,15 @@ async function readWorkspace(owner){
  }):storageMode==='localstorage'?JSON.parse(localStorage.getItem(fallback)):null;
  const result=stored?normalizeState(stored):blankWorkspace();
  if(!owner&&typeof stored?.guestActiveRevision==='string')Object.defineProperty(result,'guestActiveRevision',{value:stored.guestActiveRevision});
+ if(owner)Object.defineProperty(result,'accountActiveRevision',{value:stored?.accountActiveRevision??null});
  if(owner)result.syncSent=Object.fromEntries(Object.entries(stored?.syncSent||{}).filter(([id,value])=>records.UUID.test(id)&&value===true));
  return result
 }
 const records=window.SHIFT_SYNC_RECORDS;
 const syncConfig=window.SHIFT_SYNC_CONFIG;
 const syncConfigured=!!(records&&syncConfig?.url&&syncConfig?.publishableKey&&/^https?:$/.test(location.protocol));
+let accountBaseline=null,accountActiveRevision=null,accountActiveConflict=false;
+const accountActiveWarning='This session could not be saved because it changed in another tab. Back up any unsaved edits, then reload to resume.';
 let syncOwner=null,syncCore=null,syncOnline=null,syncPasswordOpen=false,syncStatus='',syncPageCursor=null,syncLastFull=0,syncEpoch=0;
 const scopedKey=(key,owner=syncOwner)=>records&&owner?records.key(key,owner):key;
 const accountActionBusy=()=>route!=='data'||diagnostic;
@@ -296,7 +303,7 @@ async function switchWorkspace(owner,avoidQuiz=false){
  // Leave any unfinished test in its original workspace. Drain pending writes
  // before opening a different owner; do not re-save this tab's stale snapshot.
  await saveQueue;
- if(storageMode!=='indexeddb')throw Error('Local account records cannot be safely opened.');
+ if(localSaveFailure||storageMode!=='indexeddb')throw Error('Local account records cannot be safely opened.');
  const next=await readWorkspace(owner);
  if(guestBackupApplying)throw Error('keep_guest_workspace');
  if(avoidQuiz&&(route==='quiz'||route==='data'&&!allowPassiveRepaint()||document.getElementById('modal')?.open))throw Error('keep_guest_workspace');
@@ -306,11 +313,16 @@ async function switchWorkspace(owner,avoidQuiz=false){
  syncEpoch++;syncPageCursor=null;syncLastFull=0;syncOnline=null;syncStatus='';lastExportAt=0;
  stopAudio();reviewDetail=null;lastResult=null;resumeEnv=null;noteGeneration++;noteTokens.clear();noteStatuses.clear();
  state=next;syncOwner=owner;
+ const priorAccount=[accountBaseline,accountActiveRevision,accountActiveConflict];
+ accountBaseline=owner?JSON.parse(JSON.stringify(next)):null;
+ accountActiveRevision=next.accountActiveRevision??null;
+ accountActiveConflict=false;
  const priorGuest=[guestBaseline,guestActiveRevision,guestSavedAnswerKey];
  if(!owner)seedGuest(state,state);
  try{await installPackIndexes();await restoreNoteDraft();if(storageMode!=='indexeddb')throw Error('Storage unavailable')}
  catch(error){
   [guestBaseline,guestActiveRevision,guestSavedAnswerKey]=priorGuest;
+  [accountBaseline,accountActiveRevision,accountActiveConflict]=priorAccount;
   state=previous.state;syncOwner=previous.owner;Q=previous.Q;G=previous.G;loaded=previous.loaded;
   officialPacks.clear();for(const [key,value] of previous.officialPacks)officialPacks.set(key,value);
   archivedIds.clear();for(const key of previous.archived)archivedIds.add(key);
@@ -332,39 +344,60 @@ function checkpointUi(){
  return '<aside class="checkpoint-region" aria-label="Practice progress sync">'+rem+
    '<p id="checkpoint-feedback" class="checkpoint-feedback" data-kind="'+statusKind(checkpointFeedback)+'" role="status" aria-live="polite" aria-atomic="true"'+(checkpointFeedback?'':' hidden')+'>'+esc(checkpointFeedback)+'</p></aside>'
 }
-async function checkpointMeta(owner,updated){
+function nextCheckpointMeta(observed,expected,updated){
+ const prior=observed||{};
+ // Compare the whole earlier record, including the pending ID and kept copies.
+ // A delayed response must not replace a pending mutation from another tab.
+ if(!records.same(prior,expected||{}))return null;
+ if((updated.base?.revision??-1)<(prior.base?.revision??-1))return null;
+ return updated
+}
+async function checkpointMeta(owner,update){
  if(!owner||!db||storageMode!=='indexeddb')throw Error('checkpoint_storage');
  const key=scopedKey('checkpoint-meta',owner);
  return new Promise((resolve,reject)=>{
-  const writing=updated!==undefined,tx=db.transaction('kv',writing?'readwrite':'readonly'),store=tx.objectStore('kv');
-  let value;
-  if(writing)store.put(updated,key);else{const req=store.get(key);req.onsuccess=()=>{value=req.result}}
-  tx.oncomplete=()=>resolve(value||null);tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error)
+  const tx=db.transaction('kv',update?'readwrite':'readonly'),store=tx.objectStore('kv');
+  let value=null;
+  tx.oncomplete=()=>resolve(value);tx.onabort=()=>reject(tx.error||Error('checkpoint_storage'));
+  const req=store.get(key);
+  req.onsuccess=()=>{
+   try{
+    if(!update){value=req.result??null;return}
+    value=nextCheckpointMeta(req.result,update.expected,update.updated);
+    if(value)store.put(value,key);
+   }catch(error){tx.onabort=()=>reject(error);tx.abort()}
+  }
  })
 }
 function scheduleCheckpoint(delay=500){
- if(!syncOwner||!syncConfigured||!syncCore?.getScope()||storageMode!=='indexeddb'||checkpointApplying||checkpointConflict)return;
+ if(!syncOwner||!syncConfigured||!syncCore?.getScope()||storageMode!=='indexeddb'||localSaveFailure||accountActiveConflict||checkpointApplying||checkpointConflict)return;
  if(navigator.onLine===false){setCheckpointFeedback('Offline. Practice progress is saved on this device and will sync when you reconnect.');return}
  if(checkpointTimer!==undefined)return;
  checkpointTimer=setTimeout(()=>{checkpointTimer=undefined;void syncCheckpoint()},delay)
 }
 async function syncCheckpoint(choice=null){
- if(!syncOwner||storageMode!=='indexeddb'||checkpointConflict&&!choice||navigator.onLine===false)return;
+ if(!syncOwner||storageMode!=='indexeddb'||localSaveFailure||accountActiveConflict||checkpointConflict&&!choice||navigator.onLine===false)return;
  if(checkpointLoop){if(choice)return;return checkpointLoop}
  const owner=syncOwner,epoch=syncEpoch,active=syncCore?.getScope();
  if(active?.userId!==owner)return;
- const current=()=>owner===syncOwner&&epoch===syncEpoch&&active===syncCore?.getScope();
+ const current=()=>owner===syncOwner&&epoch===syncEpoch&&active===syncCore?.getScope()&&!accountActiveConflict;
+ const currentDurable=async()=>{
+  await saveQueue;
+  if(!current()||localSaveFailure)return false;
+  const durable=await readWorkspace(owner);
+  return current()&&!localSaveFailure&&durable.accountActiveRevision===accountActiveRevision;
+ };
  let localAtStart,applied=false;
  const task=(async()=>{
   try{
    const lib=await checkpointLibrary();
    await saveQueue;
-   if(!current())return;
-   const meta=await checkpointMeta(owner)||{};
+   if(!await currentDurable())return;
+   let meta=await checkpointMeta(owner)||{};
    const cap=()=>lib.captureCheckpoint(state.active?normalizeState({formatVersion:1,attempts:[],sessions:[],active:state.active}).active:null);
    const local=localAtStart=cap();let base=meta.base;
    const remote=await syncCore.readActiveCheckpoint(active);
-   if(!current())return;
+   if(!await currentDurable())return;
    remote.checkpoint=lib.parseCheckpoint(remote.checkpoint,normalizeState);
    if(remote.mutationId&&meta.pending?.mutationId===remote.mutationId)base=remote;
    const newerLocal=cap();
@@ -372,8 +405,11 @@ async function syncCheckpoint(choice=null){
    // might have advanced between the GET and the decision.
    const same=lib.sameCheckpoint;
    const mark=async value=>{
-    if(!current())return;
-    await checkpointMeta(owner,value);
+    if(!current())return false;
+    const committed=await checkpointMeta(owner,{expected:meta,updated:value});
+    if(!committed){if(await currentDurable())scheduleCheckpoint();return false}
+    meta=committed;
+    return current()
    };
    let resolution=lib.checkpointDecision({base,remote,local:newerLocal,inTest:route==='quiz'});
    if(choice){
@@ -390,23 +426,26 @@ async function syncCheckpoint(choice=null){
     return
    }
    if(resolution==='stale')throw Error('checkpoint_stale');
-   if(resolution==='ack'){if(!meta.base||meta.base.revision!==remote.revision||meta.pending)await mark({...meta,base:remote,pending:null});if(!current())return;checkpointConflict=null;checkpointSyncAt=now();setCheckpointFeedback('Practice progress is synced.');if(choice){updateCheckpointRegion();if(route==='home')document.querySelector('.resume-main')?.focus()}return}
+   if(resolution==='ack'){if((!meta.base||meta.base.revision!==remote.revision||meta.pending)&&!await mark({...meta,base:remote,pending:null}))return;if(!current())return;checkpointConflict=null;checkpointSyncAt=now();setCheckpointFeedback('Practice progress is synced.');if(choice){updateCheckpointRegion();if(route==='home')document.querySelector('.resume-main')?.focus()}return}
    if(resolution==='take'){
     // External changes cannot take over an open quiz unless explicitly selected.
     if(!current()||!same(cap(),newerLocal))return;
     if(newerLocal&&choice){
      const kept=[...(Array.isArray(meta.kept)?meta.kept:[]),{at:now(),checkpoint:newerLocal}].slice(-4);
-     await mark({...meta,kept});meta.kept=kept;
+     if(!await mark({...meta,kept}))return;
      if(!current()||!same(cap(),newerLocal))return;
     }
     checkpointApplying=true;
-    const wasQuiz=route==='quiz';
+    const wasQuiz=route==='quiz',previousActive=state.active,previousResume=resumeEnv;
     try{
      stopAudio();state.active=remote.checkpoint?normalizeState({formatVersion:1,attempts:[],sessions:[],active:remote.checkpoint}).active:null;
      resumeEnv=null;
      if(route==='quiz')route='home';
-     await persist(true);
-     await mark({...meta,base:remote,pending:null});
+     try{if(await persist(true)===false)throw Error('account_workspace_conflict')}catch(error){
+      if(owner===syncOwner&&epoch===syncEpoch){state.active=previousActive;resumeEnv=previousResume;if(wasQuiz)route='quiz'}
+      throw error
+     }
+     if(!await mark({...meta,base:remote,pending:null})){if(wasQuiz&&current())render();return}
      if(!current())return;
      applied=true;checkpointConflict=null;checkpointSyncAt=now();
      setCheckpointFeedback(state.active?'Practice progress is ready to resume.':'Practice progress is synced.');
@@ -418,17 +457,20 @@ async function syncCheckpoint(choice=null){
    const value=newerLocal;
    if(choice==='local'&&remote.checkpoint){
     const kept=[...(Array.isArray(meta.kept)?meta.kept:[]),{at:now(),checkpoint:remote.checkpoint}].slice(-4);
-    await mark({...meta,kept});meta.kept=kept;if(!current())return;
+    if(!await mark({...meta,kept}))return;
    }
    const prev=meta.pending;
    const pending=prev?.revision===remote.revision&&same(prev.checkpoint,value)?prev:
      {revision:remote.revision,mutationId:crypto.randomUUID(),checkpoint:value};
    // Durably keep the mutation ID; a lost success response is safe to retry.
-   await mark({...meta,base:remote,pending});
-   if(!current())return;
+   if(!await currentDurable()||!same(cap(),value))return;
+   if(!await mark({...meta,base:remote,pending}))return;
+   if(!await currentDurable()||!same(cap(),value))return;
    const result=await syncCore.writeActiveCheckpoint(pending,active);
    if(!current())return;
    if(result==='conflict'||result==='already_completed'){
+    // Another tab may already have superseded this exact RPC while it waited.
+    if(!await currentDurable()||!records.same(await checkpointMeta(owner)||{},meta)||!current())return;
     // Never mark stale or already-submitted data synced; preserve its local copy.
     checkpointConflict=result==='already_completed'
       ?{finished:true,revision:remote.revision,checkpoint:remote.checkpoint}
@@ -440,7 +482,7 @@ async function syncCheckpoint(choice=null){
     return
    }
    const ack={revision:remote.revision+1,mutationId:pending.mutationId,checkpoint:value};
-   await mark({...meta,base:ack,pending:null});
+   if(!await mark({...meta,base:ack,pending:null}))return;
    if(!current())return;
    checkpointConflict=null;checkpointSyncAt=now();
    const more=!same(cap(),value);
@@ -683,8 +725,8 @@ function applyGuestWrite(stored,{base,next,mode}){
  // Only an explicit, confirmed replace may discard another tab's history.
  if(mode==='restore'||mode==='clear'){
   const replacement=mode==='clear'&&stored?{...next,importedPacks:stored.importedPacks||[]}:next;
-  guestActiveRevision=uid();guestSavedAnswerKey=guestAnswerKey(replacement.active);
-  return {value:{...replacement,guestActiveRevision}}
+  const revision=uid();
+  return {value:{...replacement,guestActiveRevision:revision},activeCommit:[revision,guestAnswerKey(replacement.active)]}
  }
  if(!base)return {};
  if(guestEpoch(base)!==guestEpoch(stored))return {warning:guestChangedElsewhere,blocked:true};
@@ -743,64 +785,86 @@ function applyGuestWrite(stored,{base,next,mode}){
   result.guestSupersededSessions=[...lineage.filter(x=>x.id!==displaced.id),displaced].slice(-128);
  }
  if(finishing&&prior)result.guestSupersededSessions=lineage.filter(x=>x.id!==base.active.id);
+ let activeCommit;
  if(activeChanged&&(starting||ownsActive)){
-  result.active=next.active;guestActiveRevision=uid();result.guestActiveRevision=guestActiveRevision;
-  guestSavedAnswerKey=guestAnswerKey(next.active);
+  result.active=next.active;result.guestActiveRevision=uid();
+  activeCommit=[result.guestActiveRevision,guestAnswerKey(next.active)];
   changed=true
  }
- return {value:changed?result:undefined,warning}
+ return {value:changed?result:undefined,warning,activeCommit}
+}
+function applyAccountWrite(stored,before,next,revision,historyOnly,conflicted){
+ const durable=stored||blankWorkspace();
+ if(historyOnly)return {value:{...durable,...records.localUnion(durable,next,normalizeState)}};
+ if(!before)throw Error('Account workspace not ready');
+ const activeChanged=!guestEqual(before.active,next.active);
+ const finishing=!!before.active&&!next.active&&next.sessions.some(s=>s.id===before.active.id);
+ const owns=(durable.active?.id??null)===(before.active?.id??null)&&(durable.accountActiveRevision??null)===revision;
+ if((activeChanged||finishing)&&(!owns||conflicted))return {blocked:true};
+ const result={...durable,...records.localUnion(durable,next,normalizeState)};
+ for(const key of ['settings','stars','notes']){
+  const old=before[key]||{},edited=next[key]||{},merged={...(durable[key]||{})};
+  for(const id of new Set([...Object.keys(old),...Object.keys(edited)])){
+   if(guestEqual(old[id],edited[id]))continue;
+   if(!Object.hasOwn(edited,id)||key==='stars'&&!edited[id])delete merged[id];else merged[id]=edited[id];
+  }
+  result[key]=merged;
+ }
+ const priorPacks=new Map(before.importedPacks.map(p=>[p.testId,p]));
+ const packs=new Map((durable.importedPacks||[]).map(p=>[p.testId,p]));
+ for(const p of next.importedPacks)if(!guestEqual(priorPacks.get(p.testId),p))packs.set(p.testId,p);
+ result.importedPacks=[...packs.values()];
+ if(!guestEqual(before.lastBackup,next.lastBackup))result.lastBackup=next.lastBackup;
+ if(activeChanged){result.active=next.active;result.accountActiveRevision=uid()}
+ return {value:result,activeChanged};
 }
 function persist(strict=false,historyOnly=false,guestMode=null,guestSubmission=null){
  if(guestSubmitPending&&!guestSubmission&&!syncOwner)return Promise.resolve();
- if(diagnostic||storageMode==='loading'||storageMode==='memory')return strict?Promise.reject(new Error('Local saving unavailable')):Promise.resolve();
+ if(diagnostic||storageMode==='loading'||storageMode==='memory'){
+  if(guestSubmission){localSaveFailure=true;notify(localSaveMessage);updateStorageBadge()}
+  return strict?Promise.reject(new Error('Local saving unavailable')):Promise.resolve(guestSubmission?false:undefined)
+ }
  if(!historyOnly)saveListeningCountdown();
  const snapshot=JSON.stringify(guestSubmission||state),owner=syncOwner;
- const guestWrite=owner?null:{base:guestBaseline,next:JSON.parse(snapshot),mode:guestMode};
- // Record what this tab itself edited, not foreign fields that it has never read.
- if(guestWrite&&!guestSubmission)guestBaseline=guestWrite.next;
- let guestWarning=null,guestBlocked=false;
+ const guestWrite=owner?null:{base:null,next:JSON.parse(snapshot),mode:guestMode};
+ // Capture the user action at call time, but compare against this tab's last
+ // committed state at transaction time. A rejected write is never our baseline.
+ let guestWarning=null,guestBlocked=false,activeCommit=null,writeMode=null,accountOutcome=null;
  const mergeGuest=stored=>{
   const outcome=applyGuestWrite(stored,guestWrite);
-  guestWarning=outcome.warning;guestBlocked=!!outcome.blocked;
+  guestWarning=outcome.warning;guestBlocked=!!outcome.blocked;activeCommit=outcome.activeCommit;
   return outcome.value
  };
- saveQueue=saveQueue.catch(()=>{}).then(()=>new Promise((resolve,reject)=>{
+ const writeOnce=()=>new Promise((resolve,reject)=>{
+  guestWarning=null;guestBlocked=false;activeCommit=null;
+  writeMode=storageMode;
   if(storageMode==='indexeddb'&&db){
    const tx=db.transaction('kv','readwrite'),store=tx.objectStore('kv'),key=scopedKey('state',owner);
-   tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error||new Error('Saving was interrupted'));
+   tx.oncomplete=resolve;
+   // Wait until abort completes before retrying; each replay uses a new transaction.
+   tx.onabort=()=>reject(tx.error||new DOMException('Saving was interrupted','AbortError'));
    if(!owner){
     const request=store.get(key);
     request.onsuccess=()=>{
      try{const value=mergeGuest(request.result);if(value)store.put(value,key)}
-     catch(error){try{tx.abort()}catch{}reject(error)}
+     catch(error){try{tx.onabort=()=>reject(error);tx.abort()}catch{reject(error)}}
     };
     return
    }
    const next=JSON.parse(snapshot);
-   // A different tab for the same account may have completed a session while this tab was offline.
-   // Preserve append-only history atomically without sharing notes or unfinished exams between profiles.
    const req=store.get(key);
    req.onsuccess=()=>{
     try{
-     const old=req.result;
-     if(historyOnly){
-      // A different tab may have newer in-progress answers, timing, or notes.
-      // A cloud pull/receipt must never overwrite those local workspace fields.
-      const durable=old||blankWorkspace();
-      Object.assign(durable,records.localUnion(durable,next,normalizeState));
-      store.put(durable,key);
-     }else{
-      if(old)Object.assign(next,records.localUnion(next,old,normalizeState));
-      store.put(next,key);
-     }
-    }catch(error){try{tx.abort()}catch{}reject(error)}
+     accountOutcome=applyAccountWrite(req.result,accountBaseline,next,accountActiveRevision,historyOnly,accountActiveConflict);
+     if(accountOutcome.value)store.put(accountOutcome.value,key);
+    }catch(error){try{tx.onabort=()=>reject(error);tx.abort()}catch{reject(error)}}
    };
   }else{
    const mode=storageMode;
    const write=()=>{
     if(mode!==storageMode)throw Error('Storage changed before the write');
     const store=guestStorage(),key=guestStorageKey(owner);
-    if(owner){if(mode!=='localstorage')throw Error('Account storage unavailable');store.setItem(key,snapshot)}
+    if(owner)throw Error('Account storage unavailable');
     else{
      const raw=store.getItem(key),value=mergeGuest(raw?JSON.parse(raw):null);
      if(value)store.setItem(key,JSON.stringify(value))
@@ -812,16 +876,45 @@ function persist(strict=false,historyOnly=false,guestMode=null,guestSubmission=n
    }else reject(Error('Safe shared storage is unavailable'))
 
   }
- }));
- return saveQueue.catch(e=>{
-  console.error(e);storageMode='memory';notify('The browser cannot save records. Export a backup from Data & Settings.');updateStorageBadge();
-  if(strict)throw e;
-  if(!owner)guestBlocked=true
- }).then(()=>{
-  if(guestWarning)notify(guestWarning);
+ });
+ const timeout=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+ const operation=saveQueue.catch(()=>{}).then(async()=>{
+  if(guestWrite)guestWrite.base=guestBaseline;
+  for(let attempt=0;;attempt++){
+   try{await writeOnce();break}
+   catch(error){
+    const transient=['AbortError','UnknownError','TimeoutError'].includes(error?.name);
+    if(attempt>=3||!transient||writeMode!=='indexeddb'||storageMode!=='indexeddb')throw error;
+    await timeout([40,100,240][attempt]);
+   }
+  }
+  if(accountOutcome?.blocked){
+   accountActiveConflict=true;
+   clearTimeout(checkpointTimer);checkpointTimer=undefined;
+   notify(accountActiveWarning);
+   return false;
+  }
+  if(owner&&!historyOnly){
+   accountBaseline=JSON.parse(snapshot);
+   if(accountOutcome?.activeChanged)accountActiveRevision=accountOutcome.value.accountActiveRevision;
+  }
   if(guestBlocked)return false;
-  if(guestSubmission)guestBaseline=guestWrite.next;
-  if(!historyOnly&&!checkpointApplying&&owner&&owner===syncOwner&&storageMode==='indexeddb'){
+  if(guestWrite)guestBaseline=guestWrite.next;
+  if(activeCommit)[guestActiveRevision,guestSavedAnswerKey]=activeCommit;
+  if(localSaveFailure&&!historyOnly&&!guestWarning){
+   localSaveFailure=false;if(persistentError===localSaveMessage){persistentError='';showPersistentError()}updateStorageBadge();
+  }
+  return true
+ }).catch(error=>{
+  console.error(error);localSaveFailure=true;notify(localSaveMessage);updateStorageBadge();
+  if(strict)throw error;
+  return false
+ });
+ saveQueue=operation;
+ return operation.then(saved=>{
+  if(guestWarning)notify(guestWarning);
+  if(!saved)return false;
+  if(!guestSubmission&&!historyOnly&&!checkpointApplying&&!accountActiveConflict&&owner&&owner===syncOwner&&storageMode==='indexeddb'){
   const a=state.active,u=a?.audioUsed?.[currentAudioGroup],m=a?.practiceMedia;
   const signature=JSON.stringify(a?[a.id,a.index,a.answers,a.submitted,a.examPhase,a.readingStartsOnReturn,!!a.listeningStartedAt,u?.status,m?.groupId,m?.paused,m?.rate]:null);
   if(checkpointSignature!==signature||now()-checkpointSyncAt>=8000){
@@ -841,7 +934,7 @@ const token=uid(),generation=noteGeneration,draft={version:1,token,epoch:state.n
 state.notes[id]=draft.text;noteTokens.set(id,token);let cached=false;
 try{guestStorage().setItem(scopedKey(NOTE_DRAFT_KEY),JSON.stringify(draft));cached=true}catch(e){}
 setNoteStatus(id,'Saving…');
-persist().then(saved=>{if(generation!==noteGeneration||noteTokens.get(id)!==token)return;if(saved===false){setNoteStatus(id,storageMode==='memory'?'Not saved permanently. Please export a backup.':'Not saved. Reload after changes in another tab.');return}if(guestCanPersist()){removeNoteDraft(token);setNoteStatus(id,guestSaveLabel())}else setNoteStatus(id,cached?'Draft cached. Please export a backup.':'Not saved permanently. Please export a backup.')});
+persist().then(saved=>{if(generation!==noteGeneration||noteTokens.get(id)!==token)return;if(saved===false){setNoteStatus(id,localSaveFailure||storageMode==='memory'?'Not saved. Keep this tab open and retry, or export a backup.':'Not saved. Reload after changes in another tab.');return}if(guestCanPersist()){removeNoteDraft(token);setNoteStatus(id,guestSaveLabel())}else setNoteStatus(id,cached?'Draft cached. Please export a backup.':'Not saved permanently. Please export a backup.')});
 }
 function validNoteDraft(draft){return !!draft&&draft.version===1&&safeId(draft.token)&&safeId(draft.questionId)&&typeof draft.text==='string'&&draft.text.length<=20000}
 async function restoreNoteDraft(){
@@ -854,8 +947,8 @@ if(saved===false||generation!==noteGeneration||noteTokens.get(draft.questionId)!
 if(guestCanPersist()){removeNoteDraft(draft.token);setNoteStatus(draft.questionId,guestSaveLabel())}else setNoteStatus(draft.questionId,'Draft restored. Please export a backup.');
 return true;
 }
-function storageBadgeWarning(){return storageMode==='memory'||storageMode==='tabstorage'}
-function storageBadgeLabel(){return storageMode==='tabstorage'?'Saved in this tab only':storageMode==='memory'?'Temporary storage · Back up now':'Records saved locally'}
+function storageBadgeWarning(){return localSaveFailure||storageMode==='memory'||storageMode==='tabstorage'}
+function storageBadgeLabel(){return localSaveFailure?'Latest changes not saved':storageMode==='tabstorage'?'Saved in this tab only':storageMode==='memory'?'Temporary storage · Back up now':'Records saved locally'}
 function updateStorageBadge(){const b=document.getElementById('storage-badge');if(b){b.innerHTML=icon(storageBadgeWarning()?'info':'shield')+storageBadgeLabel();b.classList.toggle('warn',storageBadgeWarning())}}
 function validatePack(p){
 if(!p||p.schemaVersion!==1||!safeId(p.testId)||!Array.isArray(p.questions)||!Array.isArray(p.groups)||p.questions.length<1||p.questions.length>5000)throw new Error('Invalid pack format. Expected schemaVersion: 1 and questions/groups.');
@@ -1008,7 +1101,7 @@ async function withBusy(fn){if(busy||guestSubmitPending)return;busy=true;try{awa
 async function navigate(dest){if(route==='quiz'||route==='answer-review'){stopAudio();await persist()}mobileNav=false;route=dest;syncListeningCountdown(state.active);if(listening())void persist();activeTranscript=null;listLimit=40;if(['review','favorites','stats'].includes(dest)){shell('<div class="loading">Loading your learning records…</div>');await loadAll()}render();window.scrollTo({top:0,behavior:'instant'});if(authRestoreStatus==='waiting'&&navigator.onLine!==false)void recheckAuthOnReconnect()}
 function render(){if(!diagnostic)try{tabWrite(LAST_PAGE_TAB_KEY,route==='data'?'data':null);if(route==='quiz'&&state.active)sessionStorage.setItem(scopedKey('shift-last-quiz'),state.active.id);else sessionStorage.removeItem(scopedKey('shift-last-quiz'))}catch(e){}if(route==='home')shell(homePage());else if(route==='practice')shell(practicePage());else if(route==='review'||route==='favorites')shell(listPage());else if(route==='stats')shell(statsPage());else if(route==='data')shell(dataPage());else if(route==='quiz')shell(quizPage());else if(route==='result')shell(resultPage());else if(route==='answer-review')shell(reviewDetailPage());syncAudioUI()}
 function groupedSelection(pool,count){const units=new Map();for(const q of pool){const key=q.groupId||q.id;if(!units.has(key))units.set(key,[]);units.get(key).push(q)}const chosen=[];for(const unit of shuffle([...units.values()])){if(chosen.length>=count)break;const qs=unit[0].groupId?relatedQuestions(unit[0]).map(q=>unit.find(x=>x.number===q.number)||q):unit;chosen.push(...qs)}return chosen}
-async function startSession(questions,title,mode='practice',startId=null){if(!questions.length){notify('No questions match these filters. Try changing your selection.');return}
+async function startSession(questions,title,mode='practice',startId=null){if(accountActiveConflict){notify(accountActiveWarning);return}if(!questions.length){notify('No questions match these filters. Try changing your selection.');return}
  const workspaceOwner=syncOwner;
  const guest=!workspaceOwner&&guestCanPersist();
  const durableActive=guest?(await backupSnapshot()).active:null;
@@ -1017,7 +1110,6 @@ async function startSession(questions,title,mode='practice',startId=null){if(!qu
  const previous=state.active,previousResume=resumeEnv;
  const unique=[...new Map(questions.map(q=>[q.id,q])).values()];resumeEnv=null;state.active={id:syncOwner?crypto.randomUUID():'session-'+uid(),contentVersion:contentVersion(),title,mode,questionIds:unique.map(q=>q.id),testIds:[...new Set(unique.map(q=>q.testId))],index:Math.max(0,unique.findIndex(q=>q.id===startId)),answers:{},submitted:{},startedAt:now(),deadline:mode==='exam'?now()+120*60000:null,examVersion:mode==='exam'?2:1,audioEdition:FORMAL_EDITION,examPhase:'listening',sectionDeadline:null,listeningStartedAt:null,audioUsed:{}};if(await persist(false,false,guest?{type:'start',replacedId:durableActive?.id??null}:null)===false){
   state.active=previous;resumeEnv=previousResume;
-  if(guestBaseline)guestBaseline.active=previous?JSON.parse(JSON.stringify(previous)):null;
   return
  }route='quiz';currentQuestionStart=now();activeTranscript=null;stopAudio();render();window.scrollTo({top:0,behavior:'instant'})};if(state.active||durableActive){confirmBox('Start a new practice session?',durableActive&&durableActive.id!==state.active?.id?'Another tab has an unfinished session. Starting a new one replaces the session offered when you reopen Practice Home. Submitted records and notes are kept.':'You have an unfinished session. Starting a new one replaces that unfinished progress. Submitted answers and notes are kept.',begin,'Start New Session')}else return begin()}
 function filteredGroupSelection(questions,f,getGroup=key=>G.get(key),hasAttempt=id=>!!state.stats[id]){
@@ -1712,15 +1804,16 @@ function moveQuestion(delta){return moveGroup(delta)}
 async function submitAnswer(){if(!state.active)return;if(state.active.index===state.active.questionIds.length-1)return finishSession();moveQuestion(1)}
 async function finishSession(force=false){
 if(diagnostic){notify('This session is only for playback diagnostics. Nothing was saved.');return}
-const s=state.active;if(!s||guestSubmitPending||(force&&guestRejectedAutoSubmit===s))return;const done=Object.keys(s.answers).length;
+const s=state.active;if(!s||guestSubmitPending||(force&&guestRejectedAutoSubmit===s))return;
+if(accountActiveConflict){notify(accountActiveWarning);return}const done=Object.keys(s.answers).length;
 const complete=async()=>{
  if(state.active!==s||guestSubmitPending)return;
  stopAudio();
- const original=state,guest=!syncOwner;
- // A guest transaction may reject stale answers. Keep their visible quiz and
- // score/history untouched until IndexedDB (or localStorage) accepts submission.
- const target=guest?{...original,attempts:original.attempts.slice(),sessions:original.sessions.slice(),stats:JSON.parse(JSON.stringify(original.stats))}:original;
- const submitted=guest?{...s.submitted}:s.submitted;
+ const original=state;
+ // Keep the quiz and score/history untouched until its durable save succeeds.
+ const owner=syncOwner;
+ const target={...original,attempts:original.attempts.slice(),sessions:original.sessions.slice(),stats:JSON.parse(JSON.stringify(original.stats))};
+ const submitted={...s.submitted};
  for(const id of s.questionIds){
   const q=sessionQuestion(id,s);
   if(q){recordAnswer(q,s.answers[id]||null,s.id,0,target);submitted[id]=true}
@@ -1729,16 +1822,14 @@ const complete=async()=>{
  const result={id:s.id,title:s.title,mode:s.mode,questionIds:s.questionIds,answers:s.answers,submitted,startedAt:s.startedAt,finishedAt:now(),correct:s.questionIds.filter(id=>outcomes.get(id)===true).length,answered:done,total:s.questionIds.length};
  target.sessions.push(result);
  target.active=null;
- if(guest){
-  guestSubmitPending=true;
-  let accepted;
-  try{accepted=await persist(false,false,null,target)}finally{guestSubmitPending=false}
-  if(state!==original||syncOwner)return;
-  if(accepted===false){guestRejectedAutoSubmit=s;return}
-  Object.assign(original,{attempts:target.attempts,sessions:target.sessions,stats:target.stats,active:null});
- }
+ guestSubmitPending=true;
+ let accepted;
+ try{accepted=await persist(false,false,null,target)}finally{guestSubmitPending=false}
+ if(state!==original||syncOwner!==owner)return;
+ if(accepted===false){guestRejectedAutoSubmit=s;return}
+ Object.assign(original,{attempts:target.attempts,sessions:target.sessions,stats:target.stats,active:null});
+ if(owner)scheduleCheckpoint();
  lastResult=result;resumeEnv=null;
- if(!guest)await persist();
  route='result';render();if(syncOwner)void startSync();window.scrollTo({top:0,behavior:'instant'})
 };
 if(!force&&done<s.questionIds.length)confirmBox('Submit and score this session?','There are '+(s.questionIds.length-done)+' unanswered questions. Unanswered items count as incorrect. Your score and explanations appear after submission.',complete,'Confirm Submission');else await complete()}
@@ -1759,7 +1850,7 @@ function estimatedScoreCard(r){const s=estimatedSections(r);if(!s)return '';retu
 function resultPage(){
 const r=lastResult||state.sessions.at(-1);if(!r)return '<div class="empty"><h2>No completed sessions yet</h2>'+btn('Start Practicing','nav-practice','primary')+'</div>';
 const outcomes=sessionOutcomes(r),wrong=r.questionIds.filter(id=>outcomes.get(id)===false),score=Math.round(r.correct/r.total*100);
-let out='<section class="panel"><div class="result-header">'+icon('leaf')+'<p class="eyebrow">YOUR RESULTS</p><h1>Session complete. See what you learned.</h1><p>'+esc(displayEnglish(r.title))+' · '+new Date(r.finishedAt).toLocaleString('en-US')+'</p></div><div class="summary-grid"><div class="result-stat"><b>'+score+'<small style="font-size:14px"> points</small></b><span>Session score (out of 100)</span></div><div class="result-stat"><b>'+r.correct+'<small style="font-size:14px"> / '+r.total+'</small></b><span>Correct answers</span></div><div class="result-stat"><b>'+wrong.length+'<small style="font-size:14px"> questions</small></b><span>Questions to revisit</span></div></div><p class="hint" style="text-align:center">Score = Correct answers ÷ Total questions × 100.Unanswered items count as incorrect. This is not an official TOEIC scaled score.</p><div class="btn-row" style="justify-content:center;margin:23px 0">'+btn('Practice These Mistakes Again','review-result','primary',wrong.some(id=>Q.has(id))?'':'disabled')+btn('Back to Home','nav-home')+'</div></section><div class="section-heading"><h2>All Answers in This Session</h2><span>Review correct, incorrect, and unanswered questions after submission.</span></div>';
+let out='<section class="panel"><div class="result-header">'+icon('leaf')+'<p class="eyebrow">YOUR RESULTS</p><h1>Session complete. See what you learned.</h1><p>'+esc(displayEnglish(r.title))+' · '+new Date(r.finishedAt).toLocaleString('en-US')+'</p></div><div class="summary-grid"><div class="result-stat"><b>'+score+'<small style="font-size:.875rem"> points</small></b><span>Session score (out of 100)</span></div><div class="result-stat"><b>'+r.correct+'<small style="font-size:.875rem"> / '+r.total+'</small></b><span>Correct answers</span></div><div class="result-stat"><b>'+wrong.length+'<small style="font-size:.875rem"> questions</small></b><span>Questions to revisit</span></div></div><p class="hint" style="text-align:center">Score = Correct answers ÷ Total questions × 100.Unanswered items count as incorrect. This is not an official TOEIC scaled score.</p><div class="btn-row" style="justify-content:center;margin:23px 0">'+btn('Practice These Mistakes Again','review-result','primary',wrong.some(id=>Q.has(id))?'':'disabled')+btn('Back to Home','nav-home')+'</div></section><div class="section-heading"><h2>All Answers in This Session</h2><span>Review correct, incorrect, and unanswered questions after submission.</span></div>';
 out+=estimatedScoreCard(r);
 out+='<div class="record-list">'+r.questionIds.map(id=>{const q=Q.get(id),a=state.attempts.find(a=>a.id===r.id+':'+id);if(!q){const savedSelection=a?.selected??r.answers[id]??null;const savedKey=a?.correctAnswer;const savedOutcome=outcomes.get(id);const badge=typeof savedOutcome==='boolean'?(savedOutcome?'Correct':'Incorrect'):'Not recorded';return '<article class="record-card"><div class="record-title"><div class="badge-row"><span class="tag gray">Previous question version</span><span class="tag orange">'+esc(badge)+'</span></div><h3>'+esc(id)+'</h3>'+questionReference(id)+'<p>Your answer: '+esc(savedSelection||'Unanswered')+(savedKey?' · Original correct answer: '+esc(savedKey):'')+'</p><p class="hint">The old question content is no longer available. Your original result is unchanged.</p></div></article>';}return '<article class="record-card"><div class="record-title"><div class="badge-row"><span class="tag">Part '+q.part+'</span><span class="tag gray">'+esc(TOPICS[q.topic])+'</span><span class="tag orange">'+(a?.selected?(a.correct?'Correct · ':'Incorrect · ')+'Your answer '+esc(a.selected):'Unanswered')+'</span></div><h3>'+esc(q.prompt)+'</h3>'+questionReference(id)+'</div>'+btn('View Explanation '+icon('arrow'),'view-explanation','small','data-id="'+id+'" data-session="'+r.id+'" '+(!a?'disabled':''))+'</article>'}).join('')+'</div>';return out}
 function explanationQueue(id,sessionId){
@@ -1811,7 +1902,7 @@ function reviewedAnswerMarkup(q,attempt){
 }
 function reviewDetailPage(){
 const d=reviewDetail,q=d&&Q.get(d.questionId);if(!q)return '<div class="empty"><h2>This question is unavailable</h2>'+btn('Back to Review List','nav-review','primary')+'</div>';const g=G.get(q.groupId),a=d.attempt,reviewed=reviewedAnswerMarkup(q,a);
-let out='<div class="quiz-top"><div><p class="eyebrow">REVIEW AFTER SUBMISSION</p><h1 id="review-heading" class="page-title" tabindex="-1" style="font-size:24px">Understand this question.</h1><p class="subtitle-small">Part '+q.part+' · '+PARTS[q.part]+' · Q'+q.number +'</p></div>'+btn(icon('back')+' Back to Results / Review','back-review','small')+'</div><div class="quiz-grid '+(!g?'single':'')+'">';
+let out='<div class="quiz-top"><div><p class="eyebrow">REVIEW AFTER SUBMISSION</p><h1 id="review-heading" class="page-title" tabindex="-1" style="font-size:1.5rem">Understand this question.</h1><p class="subtitle-small">Part '+q.part+' · '+PARTS[q.part]+' · Q'+q.number +'</p></div>'+btn(icon('back')+' Back to Results / Review','back-review','small')+'</div><div class="quiz-grid '+(!g?'single':'')+'">';
 if(g){out+='<section class="passage-panel"><div class="panel-head"><span>'+icon(q.part<5?'headphones':'book')+' '+(q.part<5?'Audio & Transcript':'Original Text & Translation')+'</span></div><div class="panel-body">';if(g.image&&safeMedia(g.image))out+=reviewedChartImage(g);if(q.part<5)out+=audioCard(g)+audioAccentNote(g);else out+='<h2 class="passage-title">'+esc(displayEnglish(g.title,'Reading passage'))+'</h2>';out+=reviewPassageMarkup(g)+'</div></section>'}
 out+='<section class="question-panel"><div class="panel-head"><span>Correct answer '+esc(q.answer)+'</span><button class="icon-button '+(state.stars[q.id]?'starred':'')+'" data-action="star" data-id="'+q.id+'" aria-label="'+(state.stars[q.id]?'Unsave question':'Save question')+'">'+icon('star')+'</button></div><div class="panel-body">'+questionReference(q.id)+(a&&!reviewed.selectionKnown?'<div class="notice">The saved option letter belongs to an older or unconfirmed question version. The current choices may differ. Your original score is unchanged.</div>':'')+'<h2 class="question-text">'+esc(q.prompt)+'</h2><p class="translation">'+esc(q.promptZh)+'</p><div class="options">'+reviewed.options+'</div>'+reviewed.summary+explanation(q,reviewed.selected,reviewed.selectionKnown)+'<details class="note-box" open><summary>'+icon('note')+' My Notes</summary><textarea id="question-note" data-id="'+q.id+'" maxlength="20000" placeholder="Write down what you learned from this question…" aria-label="Question notes">'+esc(state.notes[q.id]||'')+'</textarea><div class="word-count" id="note-save-status">'+esc(noteStatusText(q.id))+'</div></details><div class="btn-row" style="margin-top:20px">'+reviewAdvance(d)+btn('Try This Group Again','open-question','','data-id="'+q.id+'"')+btn('Back to Results / Review','back-review')+'</div></div></section></div>';return out}
 function reviewListIds(review=true){
@@ -1825,19 +1916,19 @@ function metric(label,arr){const c=arr.filter(a=>a.correct).length,pct=arr.lengt
 function dataPage(){const total=allTests().reduce((n,t)=>n+t.reading+t.listening,0);return heading('Take your progress with you.','Back up your records, import new packs, and adjust your reading preferences.','DATA & PREFERENCES')+historyNotice()+'<div class="data-grid"><section class="panel"><h2>'+icon('download')+' Learning Record Backup</h2><p>Export answers, mistakes, saved questions, notes, and unfinished sessions. Make a backup before moving folders, changing devices, or updating the app.</p><div class="btn-row">'+btn('Export Backup','export-backup','primary')+(syncOwner?'':btn('Import Backup','import-backup'))+'</div><p class="hint">Last export:'+(lastBackupTime()?new Date(lastBackupTime()).toLocaleString('en-US'):'Not exported yet')+'</p></section><section class="panel"><h2>'+icon('upload')+' Add Test Packs</h2><p>Add questions by selecting a compatible JSON test pack. Built-in audio is stored in the audio folder; additional audio must also be placed in the website folder.</p><div class="btn-row">'+btn('Import JSON Test Pack','import-pack','primary')+'<a class="btn" href="data/example-pack.json" download>Download Example Format</a></div><p class="hint">Currently: '+allTests().length+' test packs · '+fmt(total)+' questions.</p></section><section class="panel"><h2>'+icon('settings')+' Reading Preferences</h2><div class="field"><label for="font-scale">Text size</label><select id="font-scale"><option value="1" '+(state.settings.fontScale===1?'selected':'')+'>Standard</option><option value="1.1" '+(state.settings.fontScale===1.1?'selected':'')+'>Larger by 10%</option><option value="1.2" '+(state.settings.fontScale===1.2?'selected':'')+'>Larger by 20%</option></select></div><p class="hint">All practice sessions hide correctness, answers, translations, and explanations until submission.</p></section><section class="panel"><h2>'+icon('shield')+' Local Storage Status</h2><p><strong>'+(storageMode==='indexeddb'?'IndexedDB · Saving available':storageMode==='localstorage'?'localStorage · Backup storage available':storageMode==='tabstorage'?'Tab-only storage · Export before closing':'Temporary mode · Permanent storage unavailable')+'</strong></p><p>Guest records belong to this browser profile and website address. Private browsing, clearing site data, or moving folders may make unsynced records inaccessible.</p><p class="hint">No account is required. Current practice and completed history in a signed-in account workspace are eligible for sync.</p></section></div><section class="panel" style="margin-top:20px"><h2>What is included?</h2><ul class="inline-list"><li>'+fmt(catalog.tests.length)+' original tests: '+fmt(catalog.tests.reduce((n,t)=>n+t.reading,0))+' Reading and '+fmt(catalog.tests.reduce((n,t)=>n+t.listening,0))+' Listening questions. Traditional Chinese translations and explanations are shown only on answer explanation pages.</li><li>Part 1 uses original AI-generated photographs. Listening uses bundled offline synthetic speech.</li><li>Formal tests use a single-play Listening sequence whose duration is shown before the test, followed by 75 minutes of Reading. Practice mode allows replay.</li><li>This is practice material, not official questions, calibrated difficulty, or an official TOEIC score conversion.</li></ul><div class="btn-row"><a class="btn small" href="使用說明.html" target="_blank" rel="noopener">Open User Guide</a><a class="btn small" href="question-debug.html" target="_blank" rel="noopener">Question Debug</a>'+(syncOwner?'':btn('Clear Learning Records','reset-progress','danger small'))+'</div></section>'}
 function downloadJson(name,obj){const blob=new Blob([JSON.stringify(obj,null,2)],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000)}
 function lastBackupTime(){let stored=0;try{stored=Number(guestStorage().getItem(scopedKey(BACKUP_TIME_KEY)))||0}catch(e){}return Math.max(state.lastBackup||0,lastExportAt,stored>=0&&stored<8640000000000000?stored:0)}
-async function backupSnapshot(owner=syncOwner,epoch=syncEpoch){
+async function backupSnapshot(owner=syncOwner,epoch=syncEpoch,includeUnsaved=false){
  // Drain saves already queued in this tab, then read only the workspace that
  // requested the backup. An auth change must not redirect a pending export.
  const assertWorkspace=()=>{if(owner!==syncOwner||epoch!==syncEpoch)throw Error('Backup could not be prepared because the account changed. Open Data & Settings and try again.');};
  try{await saveQueue}catch(error){
-  // Failed saving deliberately switches to memory. That is also when an
-  // emergency export is needed most; do not let the rejected save veto it.
   assertWorkspace();
-  if(storageMode!=='memory')throw error
+  if(!(includeUnsaved&&localSaveFailure)&&storageMode!=='memory')throw error
  }
  assertWorkspace();
  let saved;
- if(storageMode==='indexeddb'&&db){
+ // Emergency export is the current tab's snapshot, not the older durable copy.
+ if(includeUnsaved&&(localSaveFailure||accountActiveConflict))saved=state;
+ else if(storageMode==='indexeddb'&&db){
   saved=await new Promise((resolve,reject)=>{
    const request=db.transaction('kv','readonly').objectStore('kv').get(scopedKey('state',owner));
    request.onsuccess=()=>resolve(request.result);
@@ -1849,11 +1940,11 @@ async function backupSnapshot(owner=syncOwner,epoch=syncEpoch){
  }
  assertWorkspace();
  const backup={...(saved??state)};
- delete backup.syncSent;delete backup.guestActiveRevision;delete backup.guestSupersededSessions;
+ delete backup.accountActiveRevision;delete backup.syncSent;delete backup.guestActiveRevision;delete backup.guestSupersededSessions;
  return backup;
 }
 async function exportBackup(){
- const owner=syncOwner,epoch=syncEpoch,saved=await backupSnapshot(owner,epoch);
+ const owner=syncOwner,epoch=syncEpoch,saved=await backupSnapshot(owner,epoch,true);
  if(owner!==syncOwner||epoch!==syncEpoch)throw Error('Backup could not be prepared because the account changed. Open Data & Settings and try again.');
  const exportedAt=new Date().toISOString(),exportTime=Date.parse(exportedAt);
  downloadJson('SHIFT-learning-backup-'+exportedAt.slice(0,10)+'.json',{format:'shift-learning-backup',version:1,exportedAt,state:{...saved,lastBackup:exportTime}});
@@ -1913,7 +2004,16 @@ const qs=ids.map(id=>Q.get(id)).filter(Boolean);
 if(!qs.length){notify(kind==='result'?'There are no available incorrect questions to review in this session.':'No questions match these filters. Try changing your selection.');return}
 await startSession(groupedSelection(qs,40),kind==='result'?'Review This Session':route==='favorites'?'Saved Question Practice':'Review Mistakes');
 }
-async function action(name,el){if(formal(state.active)&&route==='quiz'&&formalClockExpired(state.active)){beginFormalExpiry(state.active);return}if(name==='dismiss-page-error'){persistentError='';showPersistentError();return}if(diagnostic&&!['play-audio','question-grid','jump','close-modal','prev-question','next-question','answer','copy-question-uuid'].includes(name))return;if(name==='checkpoint-cloud'||name==='checkpoint-local'){void syncCheckpoint(name==='checkpoint-cloud'?'cloud':'local');return}if(name.startsWith('sync-'))return syncAccountAction(name);if(name==='copy-question-uuid')return copyQuestionUuid(el);if(name.startsWith('nav-'))return navigate(name.slice(4));if(name==='menu'){mobileNav=true;render();document.querySelector('#shift-sidebar nav button')?.focus();return}if(name==='menu-close'){mobileNav=false;render();document.querySelector('.mobile-menu')?.focus();return}if(name==='close-modal'){closeModal();return}if(name==='quick-reading')return startFiltered({section:'reading',part:'all',topic:'all',difficulty:'all',count:20,unseen:false,accent:'all'});if(name==='quick-listening')return startFiltered({section:'listening',part:'all',topic:'all',difficulty:'all',count:20,unseen:false,accent:'all'});if(name==='topic'){filters.topic=el.dataset.topic;filters.section='all';filters.part='all';return navigate('practice')}if(name==='start-filtered')return startFiltered();if(name==='resume')return resume();if(name==='test-pick'){const id=el.dataset.test;modal('<h2>Choose a practice mode</h2><p>Section practice is graded after submission, not while answering. You can leave and resume later.</p><div class="btn-row">'+btn('Reading 100 questions','test-reading','primary','data-test="'+id+'"')+btn('Listening 100 questions','test-listening','primary','data-test="'+id+'"')+btn('Cancel','close-modal')+'</div>');return}if(['test-reading','test-listening','test-exam'].includes(name)){const id=el.dataset.test;closeModal();await loadTest(id);const qs=allQuestions().filter(q=>q.testId===id&&(name==='test-reading'?q.part>4:name==='test-listening'?q.part<5:true)).sort((a,b)=>a.number-b.number);const t=allTests().find(t=>t.id===id);const title=t.title+(name==='test-reading'?' · Reading':name==='test-listening'?' · Listening':' · Full Test');if(name==='test-exam'){const pack=state.importedPacks.find(p=>p.testId===id)||(window.SHIFT_PACKS||[]).find(p=>p.testId===id);if(!pack?.listeningPlan?.frames?.length){notify('This pack has no formal-listening plan. Choose Section Practice.');return}confirmBox('Start a Formal Test','The listening sequence lasts '+listeningDurationLabel(pack.listeningPlan)+'. The first playback opens with the listening directions and an unscored example. Audio plays once, in order, without skipping or replay. Switching tabs pauses the countdown, not the audio. Use Pause Listening and Resume Listening to control audio without replay. Each group advances automatically after playback and answer time. Reading lasts 75 minutes, with free navigation among reading groups. When time is up, answers lock immediately; after a five-second notice, the test advances or submits automatically. This is an independently created practice test, not an ETS official test.',()=>startSession(qs,title,'exam'),'Start Test')}else return startSession(qs,title);return}if(name==='answer'){const s=state.active,q=sessionQuestion(el.dataset.question,s)||questionByActive();if(!q||!s||!groupQuestions().some(x=>x.id===q.id)||!q.options.some(o=>o.id===el.dataset.option))return;s.answers[q.id]=el.dataset.option;await persist();render();return}if(name==='submit-answer')return submitAnswer();if(name==='next-question'){return moveGroup(1)}if(name==='prev-question'){return moveGroup(-1)}if(name==='finish-session')return finishSession();if(name==='question-grid'){questionGrid();return}if(name==='jump'){const s=state.active;if(s){const index=Number(el.dataset.index);if(listening(s)||(formal(s)&&sessionQuestion(s.questionIds[index],s)?.part<5))return;closeModal();stopAudio();s.index=index;s.index=s.questionIds.indexOf(groupQuestions()[0].id);persist();render();window.scrollTo(0,0)}return}if(name==='finish-from-modal'){closeModal();return finishSession()}if(name==='star'){const id=el.dataset.id;state.stars[id]=!state.stars[id];if(await persist()===false)return;render();notify(state.stars[id]?'Question saved.':'Question removed from saved items.');return}if(name==='toggle-translation'){state.settings.translation=!state.settings.translation;await persist();render();return}if(name==='transcript'){const q=questionByActive(),revealed=state.active?.mode==='practice'&&!!state.active?.submitted?.[q?.id];activeTranscript=!(activeTranscript===null?revealed:activeTranscript);render();return}if(name==='play-audio')return playAudio(el.dataset.group);if(name==='view-explanation'){
+async function action(name,el){if(name==='export-unsaved-local-backup'){
+ if(!diagnostic&&localSaveFailure)return exportBackup();
+ return
+}if(name==='retry-local-save'){
+ if(!localSaveFailure)return;
+ if(state.active&&guestRejectedAutoSubmit===state.active){
+  guestRejectedAutoSubmit=null;return finishSession(true)
+ }
+ return persist()
+}if(formal(state.active)&&route==='quiz'&&formalClockExpired(state.active)){beginFormalExpiry(state.active);return}if(name==='dismiss-page-error'){persistentError='';showPersistentError();return}if(diagnostic&&!['play-audio','question-grid','jump','close-modal','prev-question','next-question','answer','copy-question-uuid'].includes(name))return;if(name==='checkpoint-cloud'||name==='checkpoint-local'){void syncCheckpoint(name==='checkpoint-cloud'?'cloud':'local');return}if(name.startsWith('sync-'))return syncAccountAction(name);if(name==='copy-question-uuid')return copyQuestionUuid(el);if(name.startsWith('nav-'))return navigate(name.slice(4));if(name==='menu'){mobileNav=true;render();document.querySelector('#shift-sidebar nav button')?.focus();return}if(name==='menu-close'){mobileNav=false;render();document.querySelector('.mobile-menu')?.focus();return}if(name==='close-modal'){closeModal();return}if(name==='quick-reading')return startFiltered({section:'reading',part:'all',topic:'all',difficulty:'all',count:20,unseen:false,accent:'all'});if(name==='quick-listening')return startFiltered({section:'listening',part:'all',topic:'all',difficulty:'all',count:20,unseen:false,accent:'all'});if(name==='topic'){filters.topic=el.dataset.topic;filters.section='all';filters.part='all';return navigate('practice')}if(name==='start-filtered')return startFiltered();if(name==='resume')return resume();if(name==='test-pick'){const id=el.dataset.test;modal('<h2>Choose a practice mode</h2><p>Section practice is graded after submission, not while answering. You can leave and resume later.</p><div class="btn-row">'+btn('Reading 100 questions','test-reading','primary','data-test="'+id+'"')+btn('Listening 100 questions','test-listening','primary','data-test="'+id+'"')+btn('Cancel','close-modal')+'</div>');return}if(['test-reading','test-listening','test-exam'].includes(name)){const id=el.dataset.test;closeModal();await loadTest(id);const qs=allQuestions().filter(q=>q.testId===id&&(name==='test-reading'?q.part>4:name==='test-listening'?q.part<5:true)).sort((a,b)=>a.number-b.number);const t=allTests().find(t=>t.id===id);const title=t.title+(name==='test-reading'?' · Reading':name==='test-listening'?' · Listening':' · Full Test');if(name==='test-exam'){const pack=state.importedPacks.find(p=>p.testId===id)||(window.SHIFT_PACKS||[]).find(p=>p.testId===id);if(!pack?.listeningPlan?.frames?.length){notify('This pack has no formal-listening plan. Choose Section Practice.');return}confirmBox('Start a Formal Test','The listening sequence lasts '+listeningDurationLabel(pack.listeningPlan)+'. The first playback opens with the listening directions and an unscored example. Audio plays once, in order, without skipping or replay. Switching tabs pauses the countdown, not the audio. Use Pause Listening and Resume Listening to control audio without replay. Each group advances automatically after playback and answer time. Reading lasts 75 minutes, with free navigation among reading groups. When time is up, answers lock immediately; after a five-second notice, the test advances or submits automatically. This is an independently created practice test, not an ETS official test.',()=>startSession(qs,title,'exam'),'Start Test')}else return startSession(qs,title);return}if(name==='answer'){const s=state.active,q=sessionQuestion(el.dataset.question,s)||questionByActive();if(!q||!s||!groupQuestions().some(x=>x.id===q.id)||!q.options.some(o=>o.id===el.dataset.option))return;s.answers[q.id]=el.dataset.option;await persist();render();return}if(name==='submit-answer')return submitAnswer();if(name==='next-question'){return moveGroup(1)}if(name==='prev-question'){return moveGroup(-1)}if(name==='finish-session')return finishSession();if(name==='question-grid'){questionGrid();return}if(name==='jump'){const s=state.active;if(s){const index=Number(el.dataset.index);if(listening(s)||(formal(s)&&sessionQuestion(s.questionIds[index],s)?.part<5))return;closeModal();stopAudio();s.index=index;s.index=s.questionIds.indexOf(groupQuestions()[0].id);persist();render();window.scrollTo(0,0)}return}if(name==='finish-from-modal'){closeModal();return finishSession()}if(name==='star'){const id=el.dataset.id;state.stars[id]=!state.stars[id];if(await persist()===false)return;render();notify(state.stars[id]?'Question saved.':'Question removed from saved items.');return}if(name==='toggle-translation'){state.settings.translation=!state.settings.translation;await persist();render();return}if(name==='transcript'){const q=questionByActive(),revealed=state.active?.mode==='practice'&&!!state.active?.submitted?.[q?.id];activeTranscript=!(activeTranscript===null?revealed:activeTranscript);render();return}if(name==='play-audio')return playAudio(el.dataset.group);if(name==='view-explanation'){
  clearTimeout(searchTimeout);
  await loadAll();
  const detail=explanationQueue(el.dataset.id,el.dataset.session);
