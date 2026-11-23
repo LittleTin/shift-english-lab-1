@@ -1,0 +1,91 @@
+{
+  "id": "t09-q182",
+  "testId": "test-09",
+  "number": 182,
+  "part": 7,
+  "groupId": "t09-r-p7-09",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "double-passage",
+    "daily"
+  ],
+  "prompt": "Which revision would preserve the most usable part of the recording’s sound while meeting the rules?",
+  "promptZh": "在符合規則下，怎樣修剪聲音能保留最多可用素材？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Keep the piano because the contributor composed it, but delete the bells.",
+      "zh": "因為鋼琴曲是投稿者寫的，所以保留鋼琴，刪除鐘聲。",
+      "whyZh": "規則不因自創曲而例外，反而可保留不蓋過語音的現場鐘聲。"
+    },
+    {
+      "id": "B",
+      "text": "Remove the piano and retain the bells with the words clear.",
+      "zh": "移除鋼琴聲，保留不會蓋過人聲的鐘聲。",
+      "whyZh": "鋼琴是加上的背景音樂，應去掉；現場鐘聲沒蓋過敘述，因此可用。"
+    },
+    {
+      "id": "C",
+      "text": "Remove both the piano and the bells because recordings cannot include any added or local sound.",
+      "zh": "鋼琴聲與鐘聲都移除，因錄音不可有外加或現場聲音。",
+      "whyZh": "外加背景音樂不准用，但只要聽得懂每個詞，就可留現場聲音。"
+    },
+    {
+      "id": "D",
+      "text": "Keep both but move the piano to a louder section.",
+      "zh": "兩種聲音都留著，但把鋼琴移到更大聲的段落。",
+      "whyZh": "移位置不能讓外加背景音樂變成可接受的現場聲音。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "鋼琴是加上的背景音樂，應去掉；現場鐘聲沒蓋過敘述，因此可用。",
+  "evidence": "For the recorded format, do not add background music. / A place’s own sounds may stay in the recording if listeners can still hear every word. / The bells are clear but don’t drown out my words. / I recorded bells from the street and mixed in a short piano tune.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 361,
+      "endChar": 414,
+      "documentStartChar": 317,
+      "documentEndChar": 370,
+      "exactQuote": "For the recorded format, do not add background music."
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 415,
+      "endChar": 501,
+      "documentStartChar": 371,
+      "documentEndChar": 457,
+      "exactQuote": "A place’s own sounds may stay in the recording if listeners can still hear every word."
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 1471,
+      "endChar": 1520,
+      "documentStartChar": 374,
+      "documentEndChar": 423,
+      "exactQuote": "The bells are clear but don’t drown out my words."
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 1405,
+      "endChar": 1470,
+      "documentStartChar": 308,
+      "documentEndChar": 373,
+      "exactQuote": "I recorded bells from the street and mixed in a short piano tune."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "drown out",
+      "zh": "蓋過聲音",
+      "note": "指某種聲音太大，以致另一個聲音聽不清楚。"
+    }
+  ]
+}

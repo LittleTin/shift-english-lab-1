@@ -1,0 +1,109 @@
+{
+  "id": "t09-q177",
+  "testId": "test-09",
+  "number": 177,
+  "part": 7,
+  "groupId": "t09-r-p7-08",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "double-passage",
+    "business"
+  ],
+  "prompt": "Which allocation fills both requests this afternoon and preserves a usable spare?",
+  "promptZh": "哪種分配能在今天下午備妥兩項需求，並留有可用備品？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Elmar: two P14 and three P22; test units: two more P22.",
+      "zh": "艾爾瑪：兩個 P14、三個 P22；測試機：另兩個 P22。",
+      "whyZh": "雖然都是細電纜零件，但客戶工單不能混鎖扣。"
+    },
+    {
+      "id": "B",
+      "text": "Elmar: five P14; test units: two P14.",
+      "zh": "艾爾瑪：五個 P14；測試機：兩個 P14。",
+      "whyZh": "今天只有六個未保留的 P14，不能拿七個。"
+    },
+    {
+      "id": "C",
+      "text": "Elmar: five P14; test units: two P25.",
+      "zh": "艾爾瑪：五個 P14；測試機：兩個 P25。",
+      "whyZh": "客戶部分可行，P25 卻是粗電纜，測試機也不能用。"
+    },
+    {
+      "id": "D",
+      "text": "Elmar: five P14; test units: two P22.",
+      "zh": "艾爾瑪：五個 P14；測試機：兩個 P22。",
+      "whyZh": "六個可用 P14 中分五個給客戶；測試機可用細電纜的 P22，並仍留有細電纜備品。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "六個可用 P14 中分五個給客戶；測試機可用細電纜的 P22，並仍留有細電纜備品。",
+  "evidence": "P14 | thin | lever | 8 / P22 | thin | sliding | 6 / The shelf quantities include two P14 plugs set aside for a training session. / A test unit may use either lock style if the cable size matches. / The Elmar plugs must be ready now; the bench units may use anything allowed by the counter reference, but please keep at least one usable thin-cable plug as a spare after filling both requests. / Kara from training can release the two reserved plugs tomorrow, not this afternoon.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 110,
+      "endChar": 132,
+      "documentStartChar": 73,
+      "documentEndChar": 95,
+      "exactQuote": "P14 | thin | lever | 8"
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 157,
+      "endChar": 181,
+      "documentStartChar": 120,
+      "documentEndChar": 144,
+      "exactQuote": "P22 | thin | sliding | 6"
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 440,
+      "endChar": 516,
+      "documentStartChar": 403,
+      "documentEndChar": 479,
+      "exactQuote": "The shelf quantities include two P14 plugs set aside for a training session."
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 209,
+      "endChar": 273,
+      "documentStartChar": 172,
+      "documentEndChar": 236,
+      "exactQuote": "A test unit may use either lock style if the cable size matches."
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 1038,
+      "endChar": 1231,
+      "documentStartChar": 199,
+      "documentEndChar": 392,
+      "exactQuote": "The Elmar plugs must be ready now; the bench units may use anything allowed by the counter reference, but please keep at least one usable thin-cable plug as a spare after filling both requests."
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 1233,
+      "endChar": 1316,
+      "documentStartChar": 394,
+      "documentEndChar": 477,
+      "exactQuote": "Kara from training can release the two reserved plugs tomorrow, not this afternoon."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "set aside",
+      "zh": "預留",
+      "note": "先保留給特定用途，不算人人可先取用的庫存。"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "t09-q183",
+  "testId": "test-09",
+  "number": 183,
+  "part": 7,
+  "groupId": "t09-r-p7-09",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "double-passage",
+    "daily"
+  ],
+  "prompt": "What change is needed in the account of the tram shed itself?",
+  "promptZh": "就電車庫的故事內容而言，需改哪裡？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Keep the street view but leave out the instructions for entering through the side door.",
+      "zh": "保留街上的所見，但刪除如何從側門進去的指引。",
+      "whyZh": "場地暫不對外，不可教聽眾如何進入；從街上描述玻璃門可以保留。"
+    },
+    {
+      "id": "B",
+      "text": "Replace the street view with a description from inside the shed.",
+      "zh": "改從車庫內描述，不再用街上的所見。",
+      "whyZh": "公告指示不對外開放的地點要從外面描述。"
+    },
+    {
+      "id": "C",
+      "text": "Keep the directions because the contributor used to work there.",
+      "zh": "因投稿者曾在那裡工作，可保留進入指引。",
+      "whyZh": "過去有使用側門的經驗不會改變目前不對外的規則。"
+    },
+    {
+      "id": "D",
+      "text": "Choose a different place because stories about closed sites are not accepted.",
+      "zh": "改選別處，因為不收關閉地點的故事。",
+      "whyZh": "公告仍歡迎這種故事，只限制描述角度及進入指引。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "場地暫不對外，不可教聽眾如何進入；從街上描述玻璃門可以保留。",
+  "evidence": "If an entry mentions a place that is temporarily closed or not publicly accessible, describe it from outside and avoid giving directions for entering. / I also give directions for getting through a little side door, which I used when I worked there. / The shed is closed to the public while the city checks the roof.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 683,
+      "endChar": 833,
+      "documentStartChar": 639,
+      "documentEndChar": 789,
+      "exactQuote": "If an entry mentions a place that is temporarily closed or not publicly accessible, describe it from outside and avoid giving directions for entering."
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 1242,
+      "endChar": 1338,
+      "documentStartChar": 145,
+      "documentEndChar": 241,
+      "exactQuote": "I also give directions for getting through a little side door, which I used when I worked there."
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 1339,
+      "endChar": 1403,
+      "documentStartChar": 242,
+      "documentEndChar": 306,
+      "exactQuote": "The shed is closed to the public while the city checks the roof."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "closed to the public",
+      "zh": "不對公眾開放",
+      "note": "表示一般人目前不能進入，不表示所有作業停止。"
+    }
+  ]
+}

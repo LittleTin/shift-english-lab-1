@@ -1,0 +1,82 @@
+{
+  "id": "t09-q178",
+  "testId": "test-09",
+  "number": 178,
+  "part": 7,
+  "groupId": "t09-r-p7-08",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "double-passage",
+    "business"
+  ],
+  "prompt": "What should the reader do with the bag Omar picked up?",
+  "promptZh": "收件人該怎麼處理歐瑪拿起的袋子？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Return it in its original bag rather than using it for either current request.",
+      "zh": "保留原袋放回，不用於目前任一項需求。",
+      "whyZh": "歐瑪拿的是 P25，適用粗電纜，而兩筆需求都是細電纜；不合用的樣品應放回原袋。"
+    },
+    {
+      "id": "B",
+      "text": "Open the bag and put its plugs in the training stock.",
+      "zh": "打開袋子，把接頭放入訓練用庫存。",
+      "whyZh": "沒有要求增加訓練存量，且訓練保留的是 P14。"
+    },
+    {
+      "id": "C",
+      "text": "Use the bag for the bench units only.",
+      "zh": "只把袋內的接頭用於工作台上的測試機。",
+      "whyZh": "測試機可以用不同鎖扣，但電纜粗細仍須符合；P25 是粗電纜。"
+    },
+    {
+      "id": "D",
+      "text": "Combine its plugs with the Elmar plugs because Omar already checked them.",
+      "zh": "因為歐瑪核對過，把袋內接頭和艾爾瑪用的接頭合併。",
+      "whyZh": "歐瑪誤判 P25 的粗細，且它的鎖扣也不符訂單。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "歐瑪拿的是 P25，適用粗電纜，而兩筆需求都是細電纜；不合用的樣品應放回原袋。",
+  "evidence": "P25 | thick | sliding | 4 / Put all unmatched samples back in their original bags. / When Omar checked the shelf, he picked up a bag marked P25 and called it a thin-cable part.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 182,
+      "endChar": 207,
+      "documentStartChar": 145,
+      "documentEndChar": 170,
+      "exactQuote": "P25 | thick | sliding | 4"
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 623,
+      "endChar": 677,
+      "documentStartChar": 586,
+      "documentEndChar": 640,
+      "exactQuote": "Put all unmatched samples back in their original bags."
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 1317,
+      "endChar": 1408,
+      "documentStartChar": 478,
+      "documentEndChar": 569,
+      "exactQuote": "When Omar checked the shelf, he picked up a bag marked P25 and called it a thin-cable part."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "unmatched",
+      "zh": "不符合；未能配對的",
+      "note": "在此指不能配合所需機型的零件。"
+    }
+  ]
+}

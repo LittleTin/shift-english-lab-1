@@ -1,0 +1,64 @@
+{
+  "id": "t09-q179",
+  "testId": "test-09",
+  "number": 179,
+  "part": 7,
+  "groupId": "t09-r-p7-08",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "reading-comprehension",
+    "double-passage",
+    "business"
+  ],
+  "prompt": "What does the counter reference say must remain the same within a customer job?",
+  "promptZh": "櫃台資料規定，同一筆客戶工單的什麼特徵不得混用？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The shelf quantity.",
+      "zh": "貨架數量。",
+      "whyZh": "原文允許庫存變動，沒有規定一筆工單的貨架數量。"
+    },
+    {
+      "id": "B",
+      "text": "The bag size.",
+      "zh": "袋子的尺寸。",
+      "whyZh": "不符的樣品放回原袋；未規定袋子尺寸。"
+    },
+    {
+      "id": "C",
+      "text": "The lock style.",
+      "zh": "鎖扣樣式。",
+      "whyZh": "資料明說，同一筆客戶工單不得混用不同鎖扣。"
+    },
+    {
+      "id": "D",
+      "text": "The supplier name.",
+      "zh": "供應商名稱。",
+      "whyZh": "資料未列供應商，也沒有此一限制。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "資料明說，同一筆客戶工單不得混用不同鎖扣。",
+  "evidence": "The lock styles cannot be mixed within a customer job.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 384,
+      "endChar": 438,
+      "documentStartChar": 347,
+      "documentEndChar": 401,
+      "exactQuote": "The lock styles cannot be mixed within a customer job."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "within a customer job",
+      "zh": "在同一筆客戶工單內",
+      "note": "within 指在某個工作範圍之內。"
+    }
+  ]
+}

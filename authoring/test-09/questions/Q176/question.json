@@ -1,0 +1,73 @@
+{
+  "id": "t09-q176",
+  "testId": "test-09",
+  "number": 176,
+  "part": 7,
+  "groupId": "t09-r-p7-08",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "double-passage",
+    "business"
+  ],
+  "prompt": "Which part code should be used for the Elmar order?",
+  "promptZh": "艾爾瑪訂單應使用哪個零件代號？",
+  "options": [
+    {
+      "id": "A",
+      "text": "P19",
+      "zh": "P19",
+      "whyZh": "P19 雖是扳桿式，但只適用粗電纜。"
+    },
+    {
+      "id": "B",
+      "text": "P14",
+      "zh": "P14",
+      "whyZh": "艾爾瑪是客戶訂單，要同時符合細電纜和扳桿式；只有 P14 符合。"
+    },
+    {
+      "id": "C",
+      "text": "P22",
+      "zh": "P22",
+      "whyZh": "P22 可配細電纜，但為滑扣式，不符合客戶指定。"
+    },
+    {
+      "id": "D",
+      "text": "P25",
+      "zh": "P25",
+      "whyZh": "P25 是粗電纜滑扣式，兩個條件皆不符。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "艾爾瑪是客戶訂單，要同時符合細電纜和扳桿式；只有 P14 符合。",
+  "evidence": "Code | Cable size | Lock | Shelf quantity\nP14 | thin | lever | 8\nP19 | thick | lever | 3\nP22 | thin | sliding | 6\nP25 | thick | sliding | 4 / I need five thin-cable plugs with lever locks for the Elmar order.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 68,
+      "endChar": 207,
+      "documentStartChar": 31,
+      "documentEndChar": 170,
+      "exactQuote": "Code | Cable size | Lock | Shelf quantity\nP14 | thin | lever | 8\nP19 | thick | lever | 3\nP22 | thin | sliding | 6\nP25 | thick | sliding | 4"
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 839,
+      "endChar": 905,
+      "documentStartChar": 0,
+      "documentEndChar": 66,
+      "exactQuote": "I need five thin-cable plugs with lever locks for the Elmar order."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "lever lock",
+      "zh": "扳桿式鎖扣",
+      "note": "此類接頭的固定方式；和 sliding lock 是不同結構。"
+    }
+  ]
+}

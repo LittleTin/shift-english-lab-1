@@ -1,0 +1,82 @@
+{
+  "id": "t09-q181",
+  "testId": "test-09",
+  "number": 181,
+  "part": 7,
+  "groupId": "t09-r-p7-09",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "double-passage",
+    "daily"
+  ],
+  "prompt": "What can the contributor still meet under the published deadlines?",
+  "promptZh": "依公告截止時間，投稿者還來得及做什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Book a live chat this afternoon, but only without music.",
+      "zh": "今天下午預約現場訪談，但不能有音樂。",
+      "whyZh": "星期五中午已過；是否有音樂不會延長預約期限。"
+    },
+    {
+      "id": "B",
+      "text": "Book a live chat before sending a recording on Sunday.",
+      "zh": "星期日寄錄音前先預約現場訪談。",
+      "whyZh": "現場訪談的期限已過，而且不必先預約才能提交錄音。"
+    },
+    {
+      "id": "C",
+      "text": "Ask the host to convert the current recording into a live chat.",
+      "zh": "請主持人把現有錄音改為現場訪談。",
+      "whyZh": "公告沒說轉換形式可繞過已過的預約期限。"
+    },
+    {
+      "id": "D",
+      "text": "Submit a corrected spoken postcard by Sunday night.",
+      "zh": "在星期日晚上前提交修正的口述明信片。",
+      "whyZh": "她在星期五下午一點寫備註，已過現場預約期限，但仍可按時完成不超過 60 秒的錄音。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "她在星期五下午一點寫備註，已過現場預約期限，但仍可按時完成不超過 60 秒的錄音。",
+  "evidence": "A spoken postcard is a recording of 60 seconds or less and must be submitted by Sunday night. / book it by Friday at noon. / I’m writing this on Friday at 1 p.m. My draft is a forty-five-second account of the old tram shed.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 125,
+      "endChar": 218,
+      "documentStartChar": 81,
+      "documentEndChar": 174,
+      "exactQuote": "A spoken postcard is a recording of 60 seconds or less and must be submitted by Sunday night."
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 275,
+      "endChar": 301,
+      "documentStartChar": 231,
+      "documentEndChar": 257,
+      "exactQuote": "book it by Friday at noon."
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 1097,
+      "endChar": 1195,
+      "documentStartChar": 0,
+      "documentEndChar": 98,
+      "exactQuote": "I’m writing this on Friday at 1 p.m. My draft is a forty-five-second account of the old tram shed."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "submit",
+      "zh": "提交；投稿",
+      "note": "把文件或錄音正式交給主辦者。"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "t09-q184",
+  "testId": "test-09",
+  "number": 184,
+  "part": 7,
+  "groupId": "t09-r-p7-09",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "foundation",
+  "tags": [
+    "reading-comprehension",
+    "double-passage",
+    "daily"
+  ],
+  "prompt": "Why does the station want a sound mentioned in a live-chat booking note?",
+  "promptZh": "為何電台要投稿者在現場訪談的預約備註提及音效？",
+  "options": [
+    {
+      "id": "A",
+      "text": "To add it under the host’s voice.",
+      "zh": "好加在主持人說話的背景。",
+      "whyZh": "現場聲音可在對話後播放，而不是當背景。"
+    },
+    {
+      "id": "B",
+      "text": "To use it instead of the conversation.",
+      "zh": "好拿聲音取代對談。",
+      "whyZh": "短聲音是附加內容，不取代與主持人的對談。"
+    },
+    {
+      "id": "C",
+      "text": "To check it in advance.",
+      "zh": "以便事先確認。",
+      "whyZh": "公告直接說在備註提及，是讓電台事先檢查。"
+    },
+    {
+      "id": "D",
+      "text": "To change the program’s submission deadline.",
+      "zh": "好更改節目的投稿期限。",
+      "whyZh": "音效備註不改變任何截止時間。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "公告直接說在備註提及，是讓電台事先檢查。",
+  "evidence": "Mention any sound you want played in the booking note so we can check it in advance.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 597,
+      "endChar": 681,
+      "documentStartChar": 553,
+      "documentEndChar": 637,
+      "exactQuote": "Mention any sound you want played in the booking note so we can check it in advance."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "in advance",
+      "zh": "預先；事先",
+      "note": "表示在某項活動前先完成準備。"
+    }
+  ]
+}

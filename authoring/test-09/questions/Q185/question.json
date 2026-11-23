@@ -1,0 +1,82 @@
+{
+  "id": "t09-q185",
+  "testId": "test-09",
+  "number": 185,
+  "part": 7,
+  "groupId": "t09-r-p7-09",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "double-passage",
+    "daily"
+  ],
+  "prompt": "Which title and introduction would fit both the station’s instructions and the contributor’s choice about identification?",
+  "promptZh": "哪個標題與介紹方式同時符合電台指示和投稿者對具名的選擇？",
+  "options": [
+    {
+      "id": "A",
+      "text": "“The Shed on Ferry Row,” introduced under the contributor’s name.",
+      "zh": "〈渡口街的電車庫〉，以投稿者姓名介紹。",
+      "whyZh": "渡口街是舊名，標題應用現名；投稿者也想讓姓名欄留白。"
+    },
+    {
+      "id": "B",
+      "text": "“The Shed on Ferry Row,” introduced as a story from “a neighbor.”",
+      "zh": "〈渡口街的電車庫〉，介紹為「一位鄰居」的故事。",
+      "whyZh": "不具名的介紹正確；標題仍須用現行街名。"
+    },
+    {
+      "id": "C",
+      "text": "“The Shed on Canal Street,” introduced as a story from “a neighbor.”",
+      "zh": "〈運河街的電車庫〉，介紹為「一位鄰居」的故事。",
+      "whyZh": "標題使用現行街名運河街；姓名欄留白時依電台規則介紹為「一位鄰居」。"
+    },
+    {
+      "id": "D",
+      "text": "“The Shed on Canal Street,” introduced under the contributor’s name.",
+      "zh": "〈運河街的電車庫〉，以投稿者姓名介紹。",
+      "whyZh": "街名正確；但投稿者不想在表單留下姓名，電台不會以姓名介紹。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "標題使用現行街名運河街；姓名欄留白時依電台規則介紹為「一位鄰居」。",
+  "evidence": "Give the place’s current street name in the title, even if you use its old name in the story. / If you leave your name off the form, the host will introduce you as “a neighbor.” / The draft title uses the former street name, Ferry Row. It’s Canal Street now. I’d rather leave my name off the form.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 877,
+      "endChar": 970,
+      "documentStartChar": 833,
+      "documentEndChar": 926,
+      "exactQuote": "Give the place’s current street name in the title, even if you use its old name in the story."
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 971,
+      "endChar": 1052,
+      "documentStartChar": 927,
+      "documentEndChar": 1008,
+      "exactQuote": "If you leave your name off the form, the host will introduce you as “a neighbor.”"
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 1713,
+      "endChar": 1830,
+      "documentStartChar": 616,
+      "documentEndChar": 733,
+      "exactQuote": "The draft title uses the former street name, Ferry Row. It’s Canal Street now. I’d rather leave my name off the form."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "leave your name off",
+      "zh": "不把姓名列上",
+      "note": "leave X off a form 表示不將該項填進表單。"
+    }
+  ]
+}

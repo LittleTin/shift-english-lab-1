@@ -1,0 +1,82 @@
+{
+  "id": "t09-q180",
+  "testId": "test-09",
+  "number": 180,
+  "part": 7,
+  "groupId": "t09-r-p7-08",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "double-passage",
+    "business"
+  ],
+  "prompt": "How should the counter describe the current P19 stock to another technician?",
+  "promptZh": "櫃台現在應如何向另一位技術人員說明 P19 的庫存？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Two on the shelf, with both usable.",
+      "zh": "架上兩個，兩個都可用。",
+      "whyZh": "可用件確實有兩個，但損壞件未由退貨櫃台受理，仍應計入三個的帳面架上數量。"
+    },
+    {
+      "id": "B",
+      "text": "Three on the shelf, with all three usable.",
+      "zh": "架上三個，三個都可用。",
+      "whyZh": "架上數量仍是三個，但其中一個一發現損壞就應標不可用。"
+    },
+    {
+      "id": "C",
+      "text": "Three in the shelf count, with only two usable.",
+      "zh": "架上計三個，但只有兩個可用。",
+      "whyZh": "資料列出三個 P19；彎端子件須標不可用，但退貨櫃台未受理，仍計入架上數量。"
+    },
+    {
+      "id": "D",
+      "text": "Four in the shelf count, with only three usable.",
+      "zh": "架上計四個，但只有三個可用。",
+      "whyZh": "四個是 P25 的數量，不是 P19；架上總額應為三個。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "資料列出三個 P19；彎端子件須標不可用，但退貨櫃台未受理，仍計入架上數量。",
+  "evidence": "P19 | thick | lever | 3 / Mark any damaged plug unusable as soon as you find it, but keep it in the shelf count until the return desk accepts it. / Separately, one of the P19 plugs on the shelf has a bent pin. The return desk hasn’t accepted it yet.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 133,
+      "endChar": 156,
+      "documentStartChar": 96,
+      "documentEndChar": 119,
+      "exactQuote": "P19 | thick | lever | 3"
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 678,
+      "endChar": 797,
+      "documentStartChar": 641,
+      "documentEndChar": 760,
+      "exactQuote": "Mark any damaged plug unusable as soon as you find it, but keep it in the shelf count until the return desk accepts it."
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 1480,
+      "endChar": 1581,
+      "documentStartChar": 641,
+      "documentEndChar": 742,
+      "exactQuote": "Separately, one of the P19 plugs on the shelf has a bent pin. The return desk hasn’t accepted it yet."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "bent pin",
+      "zh": "彎掉的端子",
+      "note": "指接頭中的針型端子歪彎。"
+    }
+  ]
+}
