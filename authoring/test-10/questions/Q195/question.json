@@ -1,0 +1,72 @@
+{
+  "id": "t10-q195",
+  "testId": "test-10",
+  "number": 195,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "Which follow-up should Ivo make about the hose reel?",
+  "promptZh": "伊沃應如何處理水管捲盤的後續事宜？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Send the treasurer a photo of the reel and of the loose tag beside it.",
+      "zh": "把捲盤和旁邊掉落標牌的照片寄給財務負責人。",
+      "whyZh": "捲盤已無法使用，的確需要拍照。但旁邊的方形牌是從水箱支架上掉下來的，不能拿來判斷捲盤歸屬。"
+    },
+    {
+      "id": "B",
+      "text": "Photograph the reel with its own tag and send the images to the association's caretaker.",
+      "zh": "拍下捲盤及它本身的標牌，並將照片寄給住宅協會的管理員。",
+      "whyZh": "捲盤無法恢復使用；捲盤原有標牌與戶外水龍頭組的一樣，都是圓形。公告要求拍下捲盤本身和它自己的牌，寄給住宅協會管理員，即使設備在圍欄內也一樣。"
+    },
+    {
+      "id": "C",
+      "text": "Wait and report the reel only if the outside tap stops working again.",
+      "zh": "先等一等，只有戶外水龍頭再次故障時才通報捲盤。",
+      "whyZh": "水龍頭還能裝水，不妨礙現在通報捲盤。公告是依各設備能否恢復使用來處理，並未要求關聯設備同時故障。"
+    },
+    {
+      "id": "D",
+      "text": "Photograph the reel and its own tag, but send the images to the treasurer because the reel is inside the fence.",
+      "zh": "拍下捲盤和它本身的標牌，但因捲盤在圍欄內，將照片寄給財務負責人。",
+      "whyZh": "拍攝捲盤和它的標牌是對的，但牌的形狀才決定收件方。捲盤的圓形牌代表住宅協會的設備，圍欄內的位置不會改變這項規則。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "捲盤無法恢復使用；捲盤原有標牌與戶外水龍頭組的一樣，都是圓形。公告要求拍下捲盤本身和它自己的牌，寄給住宅協會管理員，即使設備在圍欄內也一樣。",
+  "vocabulary": [
+    {
+      "term": "fixed to it",
+      "zh": "固定在該物件上",
+      "note": "修飾的是設備本身的標牌，不包括旁邊掉落的牌。"
+    }
+  ],
+  "groupId": "t10-r-p7-triple-02",
+  "evidence": "If a damaged fixture cannot be put back into service, photograph both the fixture and the tag fixed to it. A square tag identifies committee property: the treasurer needs the photos before approving a replacement. A round tag identifies a fixture lent by the housing association: send the photos to its caretaker, even if the fixture stands inside our fence. / Ivo: Before I forget, the water-tank stand and the outside tap assembly both tipped over. I took pictures of each with its tag. The stand is back in place, and we filled two cans from the tap after I straightened it. But the crank in the hose reel sheared off; there’s no way to wind it up now. / The loose square tag by the hose reel came off the water-tank stand when it tipped. The reel still has its own tag on the back; it’s the same shape as the tag on the outside tap assembly. The tap’s tag is round, and the assembly appears on the association’s loan list.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 864,
+      "endChar": 1222,
+      "exactQuote": "If a damaged fixture cannot be put back into service, photograph both the fixture and the tag fixed to it. A square tag identifies committee property: the treasurer needs the photos before approving a replacement. A round tag identifies a fixture lent by the housing association: send the photos to its caretaker, even if the fixture stands inside our fence."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2030,
+      "endChar": 2324,
+      "exactQuote": "Ivo: Before I forget, the water-tank stand and the outside tap assembly both tipped over. I took pictures of each with its tag. The stand is back in place, and we filled two cans from the tap after I straightened it. But the crank in the hose reel sheared off; there’s no way to wind it up now."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 3254,
+      "endChar": 3522,
+      "exactQuote": "The loose square tag by the hose reel came off the water-tank stand when it tipped. The reel still has its own tag on the back; it’s the same shape as the tag on the outside tap assembly. The tap’s tag is round, and the assembly appears on the association’s loan list."
+    }
+  ]
+}

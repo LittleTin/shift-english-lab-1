@@ -1,0 +1,72 @@
+{
+  "id": "t10-q194",
+  "testId": "test-10",
+  "number": 194,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "How should a volunteer prepare for a fence repair at the work party?",
+  "promptZh": "志工在集體整修時應如何準備修理圍欄？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Reuse grey boards if they look smooth, and get fasteners from the tool shed.",
+      "zh": "若灰色木板表面平整，就拿來再用，並去工具房拿固定零件。",
+      "whyZh": "工具房的位置正確，但灰色木板仍可能藏有釘子；公告沒有允許外觀平整就使用。"
+    },
+    {
+      "id": "B",
+      "text": "Use the clean boards and collect fasteners from the shelter hooks.",
+      "zh": "使用乾淨木板，並從棚下掛鉤取固定零件。",
+      "whyZh": "掛鉤上的名字屬於借工具的人；圍欄用固定件在工具房標有圍欄的盒子裡。"
+    },
+    {
+      "id": "C",
+      "text": "Use the clean boards and pick up the boxed fence fasteners from the tool shed.",
+      "zh": "使用乾淨木板，並去工具房取盒裝的圍欄固定零件。",
+      "whyZh": "公告指定乾淨木板；基特的郵件指明零件在工具房架上的盒子裡。"
+    },
+    {
+      "id": "D",
+      "text": "Use the clean boards and look for fasteners in the pump shed.",
+      "zh": "使用乾淨木板，並到抽水機房找固定零件。",
+      "whyZh": "木板選對了，但移進抽水機房的是備用花槽，不是圍欄零件。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "公告指定乾淨木板；基特的郵件指明零件在工具房架上的盒子裡。",
+  "vocabulary": [
+    {
+      "term": "fasteners",
+      "zh": "固定零件",
+      "note": "可指螺絲、螺栓等固定物；這段文字並未指定單一種類。"
+    }
+  ],
+  "groupId": "t10-r-p7-triple-02",
+  "evidence": "At the next work party, use the clean boards stacked under the shelter. Leave the grey boards alone; they came from the damaged fence and may still contain nails. / I moved the spare planters from the shelter to the pump shed before the storm so they wouldn't blow loose. The new names on the shelter hooks are for people borrowing tools, not planters. / The water tank is beyond the pump shed turn-off. Only the short lane between the north gate and that turn-off has been marked in yellow. If the fence team needs fasteners, there is a sealed box on the tool-shed shelf marked ‘fence’.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 700,
+      "endChar": 862,
+      "exactQuote": "At the next work party, use the clean boards stacked under the shelter. Leave the grey boards alone; they came from the damaged fence and may still contain nails."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2638,
+      "endChar": 2825,
+      "exactQuote": "I moved the spare planters from the shelter to the pump shed before the storm so they wouldn't blow loose. The new names on the shelter hooks are for people borrowing tools, not planters."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2827,
+      "endChar": 3059,
+      "exactQuote": "The water tank is beyond the pump shed turn-off. Only the short lane between the north gate and that turn-off has been marked in yellow. If the fence team needs fasteners, there is a sealed box on the tool-shed shelf marked ‘fence’."
+    }
+  ]
+}

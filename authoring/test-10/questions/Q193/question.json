@@ -1,0 +1,84 @@
+{
+  "id": "t10-q193",
+  "testId": "test-10",
+  "number": 193,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "Which suggestion would allow Ivo to respond to Mara's visit without breaking the entry rules or disregarding Ruth's latest request?",
+  "promptZh": "哪個做法能讓伊沃接待來訪的瑪拉，又不違反入園規定或忽略露絲最後的交代？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Meet Mara outside the north gate and take back his secateurs.",
+      "zh": "在北門外和瑪拉碰面，拿回自己的修枝剪。",
+      "whyZh": "瑪拉本來就要把修枝剪還給伊沃；在門外碰面不涉及入園，也不需要搬動露絲要求先放著的堆肥。"
+    },
+    {
+      "id": "B",
+      "text": "Ask Mara to wheel the compost in through the north gate on her own.",
+      "zh": "請瑪拉自己把堆肥從北門推進來。",
+      "whyZh": "來訪者入園須有受訪會員同行，露絲也交代等她回來再搬堆肥。"
+    },
+    {
+      "id": "C",
+      "text": "Direct Mara across the footbridge to collect the bag without entering the garden.",
+      "zh": "請瑪拉走小人行橋去取堆肥，不用進菜園。",
+      "whyZh": "住宅協會要求不要引導任何人改走橋，就算只拿圍欄外的東西也一樣。"
+    },
+    {
+      "id": "D",
+      "text": "Enter with Mara and ask her to put the bag beside Ruth's plot.",
+      "zh": "陪瑪拉入園，請她把堆肥放到露絲的地塊旁。",
+      "whyZh": "即使伊沃可以陪瑪拉入園，現在搬堆肥仍違反露絲最新的請求。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "瑪拉本來就要把修枝剪還給伊沃；在門外碰面不涉及入園，也不需要搬動露絲要求先放著的堆肥。",
+  "vocabulary": [
+    {
+      "term": "disregard a request",
+      "zh": "不理會一項請求",
+      "note": "請求改變後，earlier suggestion 不能當成仍有效的指示。"
+    }
+  ],
+  "groupId": "t10-r-p7-triple-02",
+  "evidence": "Visitors must enter with the member they are visiting. The nearby footbridge is not a garden entrance, and the committee cannot issue keys to the gate at its far end. / Ruth: I'll lay it where the paved path meets the grass, just past the water tank. Mara from next door offered to help shift the bag, but she can only come before I get back from my appointment. / Ivo: I can meet Mara at the north gate. She was coming anyway to return the secateurs I lent her. / Ruth: Let's just leave the bag where it is until I get back. If you see Kit, can you ask what the pencil ring beside number 18 means? That's my plot, and my bed's still too wet to plant in. / The gate at the far end of the footbridge belongs to the neighbouring housing association. They asked us not to redirect anyone across the bridge even to collect items from outside our fence.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 284,
+      "endChar": 450,
+      "exactQuote": "Visitors must enter with the member they are visiting. The nearby footbridge is not a garden entrance, and the committee cannot issue keys to the gate at its far end."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1545,
+      "endChar": 1738,
+      "exactQuote": "Ruth: I'll lay it where the paved path meets the grass, just past the water tank. Mara from next door offered to help shift the bag, but she can only come before I get back from my appointment."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1740,
+      "endChar": 1837,
+      "exactQuote": "Ivo: I can meet Mara at the north gate. She was coming anyway to return the secateurs I lent her."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1839,
+      "endChar": 2028,
+      "exactQuote": "Ruth: Let's just leave the bag where it is until I get back. If you see Kit, can you ask what the pencil ring beside number 18 means? That's my plot, and my bed's still too wet to plant in."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 3061,
+      "endChar": 3252,
+      "exactQuote": "The gate at the far end of the footbridge belongs to the neighbouring housing association. They asked us not to redirect anyone across the bridge even to collect items from outside our fence."
+    }
+  ]
+}

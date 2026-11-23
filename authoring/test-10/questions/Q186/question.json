@@ -1,0 +1,60 @@
+{
+  "id": "t10-q186",
+  "testId": "test-10",
+  "number": 186,
+  "part": 7,
+  "topic": "business",
+  "revision": 1,
+  "difficulty": "foundation",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "What is the stated goal of the trial?",
+  "promptZh": "試驗的明確目標是什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "To reduce brushing work without changing the finish",
+      "zh": "在不改變表面效果的情況下，減少拉絲作業時間",
+      "whyZh": "信件開頭同時說明縮短作業時間與維持表面效果兩個目標。"
+    },
+    {
+      "id": "B",
+      "text": "To reduce waiting time at the inspection station",
+      "zh": "縮短在檢驗站的等待時間",
+      "whyZh": "等待不計入作業時間。"
+    },
+    {
+      "id": "C",
+      "text": "To establish the capacity of each wash rack",
+      "zh": "確認各清洗架的容量",
+      "whyZh": "清洗批次只是比較條件，不是在測架子容量。"
+    },
+    {
+      "id": "D",
+      "text": "To replace hand preparation with machine preparation",
+      "zh": "以機器前處理取代手工前處理",
+      "whyZh": "前處理方式是比較時要控制的條件。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "信件開頭同時說明縮短作業時間與維持表面效果兩個目標。",
+  "vocabulary": [
+    {
+      "term": "hands-on work",
+      "zh": "動手實作的時間",
+      "note": "這個試驗只計實際打磨，不把排隊或等待算入。"
+    }
+  ],
+  "groupId": "t10-r-p7-triple-01",
+  "evidence": "We want to find out whether a revised brushing recipe reduces hands-on work without changing the finish of our stainless-steel instrument covers.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 118,
+      "endChar": 263,
+      "exactQuote": "We want to find out whether a revised brushing recipe reduces hands-on work without changing the finish of our stainless-steel instrument covers."
+    }
+  ]
+}

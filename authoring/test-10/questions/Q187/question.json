@@ -1,0 +1,84 @@
+{
+  "id": "t10-q187",
+  "testId": "test-10",
+  "number": 187,
+  "part": 7,
+  "topic": "business",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "Which entry could Clara make in a record of the controlled comparison?",
+  "promptZh": "Clara 可在受控比較紀錄中填入哪一組資料？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Old: K61; revised: K62.",
+      "zh": "舊版：K61；新版：K62。",
+      "whyZh": "這樣填是採用排程要求，與簽核隨工單記載的實際版本相反。"
+    },
+    {
+      "id": "B",
+      "text": "Old: K62; revised: K64.",
+      "zh": "舊版：K62；新版：K64。",
+      "whyZh": "雖然版本及前處理方式符合，兩片也用了同一架，但聊天紀錄顯示沒有同批清洗。"
+    },
+    {
+      "id": "C",
+      "text": "Old: K62; revised: K61.",
+      "zh": "舊版：K62；新版：K61。",
+      "whyZh": "隨工單記載 K62 為舊版、K61 為新版，兩者均為手工前處理且同批清洗。"
+    },
+    {
+      "id": "D",
+      "text": "Old: K63; revised: K61.",
+      "zh": "舊版：K63；新版：K61。",
+      "whyZh": "兩片的前處理方式不同，也不在同一清洗架。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "隨工單記載 K62 為舊版、K61 為新版，兩者均為手工前處理且同批清洗。",
+  "vocabulary": [
+    {
+      "term": "signed finishing traveler",
+      "zh": "簽核過的表面處理隨工單",
+      "note": "traveler 在工廠語境是隨工件流轉的紀錄，不是旅客。"
+    }
+  ],
+  "groupId": "t10-r-p7-triple-01",
+  "evidence": "Both must have been cleaned in the same load and have had their edges prepared the same way. / The signed finishing traveler shows what the operator actually ran / K61 | A | By hand | Old | Revised | 64 sec | Pass after touch-up / K62 | A | By hand | Revised | Old | 79 sec | Pass / I put it back on that rack for the second load. The other Lane A covers were cleaned together in the first load.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 321,
+      "endChar": 413,
+      "exactQuote": "Both must have been cleaned in the same load and have had their edges prepared the same way."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 414,
+      "endChar": 480,
+      "exactQuote": "The signed finishing traveler shows what the operator actually ran"
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1353,
+      "endChar": 1417,
+      "exactQuote": "K61 | A | By hand | Old | Revised | 64 sec | Pass after touch-up"
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1418,
+      "endChar": 1467,
+      "exactQuote": "K62 | A | By hand | Revised | Old | 79 sec | Pass"
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1950,
+      "endChar": 2062,
+      "exactQuote": "I put it back on that rack for the second load. The other Lane A covers were cleaned together in the first load."
+    }
+  ]
+}

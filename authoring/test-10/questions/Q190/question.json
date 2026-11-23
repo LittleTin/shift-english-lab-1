@@ -1,0 +1,84 @@
+{
+  "id": "t10-q190",
+  "testId": "test-10",
+  "number": 190,
+  "part": 7,
+  "topic": "business",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "What should Raj do about the finishing cloths for the night crew?",
+  "promptZh": "Raj 應如何處理夜班需要的表面處理擦拭布？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Put six packs from the supply shelf on the night crew’s cart now and cancel the rush order.",
+      "zh": "現在就從耗材架拿六包放到夜班推車上，並取消急單。",
+      "whyZh": "原有八包，其中三包原先預留；C 線主管釋出一包後只剩兩包預留，已有六包可用，因此可取消急單。"
+    },
+    {
+      "id": "B",
+      "text": "Cancel the rush order and wait for the regular shipment before setting up the cart.",
+      "zh": "取消急單，等一般訂單到貨再備好推車。",
+      "whyZh": "夜班推車中午前就要備齊六包，不能等下午兩點的一般訂單；現有庫存已足夠。"
+    },
+    {
+      "id": "C",
+      "text": "Keep the rush order open because all three Line C packs still have to be held.",
+      "zh": "保留急單，因為三包耗材仍須全部留給 C 線。",
+      "whyZh": "C 線主管只保留兩包，第三包已釋出。"
+    },
+    {
+      "id": "D",
+      "text": "Keep the rush order open because two packs from the regular shipment are needed.",
+      "zh": "保留急單，因為還需要一般訂單到貨的兩包。",
+      "whyZh": "現場已有六包可用，無須等待一般訂單補足。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "原有八包，其中三包原先預留；C 線主管釋出一包後只剩兩包預留，已有六包可用，因此可取消急單。",
+  "vocabulary": [
+    {
+      "term": "release reserved stock",
+      "zh": "解除庫存預留",
+      "note": "預留給產線的東西雖在倉庫，仍未必可供其他人領用。"
+    }
+  ],
+  "groupId": "t10-r-p7-triple-01",
+  "evidence": "put six unopened packs of finishing cloths on the night crew’s cart by noon / Cancel the rush order if you can fill the cart by noon from eligible stock already in the building. / Eight packs on the supply shelf, all unopened. Three of those eight are reserved for Line C. / I’ve taken the Line C sticker off the third one; it’s yours now. / The regular shipment won’t arrive until two.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 838,
+      "endChar": 913,
+      "exactQuote": "put six unopened packs of finishing cloths on the night crew’s cart by noon"
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1000,
+      "endChar": 1099,
+      "exactQuote": "Cancel the rush order if you can fill the cart by noon from eligible stock already in the building."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1676,
+      "endChar": 1768,
+      "exactQuote": "Eight packs on the supply shelf, all unopened. Three of those eight are reserved for Line C."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2493,
+      "endChar": 2557,
+      "exactQuote": "I’ve taken the Line C sticker off the third one; it’s yours now."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2575,
+      "endChar": 2619,
+      "exactQuote": "The regular shipment won’t arrive until two."
+    }
+  ]
+}

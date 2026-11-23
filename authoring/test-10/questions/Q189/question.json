@@ -1,0 +1,78 @@
+{
+  "id": "t10-q189",
+  "testId": "test-10",
+  "number": 189,
+  "part": 7,
+  "topic": "business",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "Which pair of instructions should Raj follow before the cart leaves?",
+  "promptZh": "推車出發前，Raj 應採取哪一組處置？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Put K64 on the trial shelf and K63 in the rework bin.",
+      "zh": "將 K64 放到試驗架，將 K63 放進返工箱。",
+      "whyZh": "K64 是合格的新版品，未經核准須留在試驗架；K63 不合格，須進返工箱。"
+    },
+    {
+      "id": "B",
+      "text": "Put K64 on the trial shelf and K62 in the rework bin.",
+      "zh": "將 K64 放到試驗架，將 K62 放進返工箱。",
+      "whyZh": "K64 的處置正確，但 K62 是合格的舊版品，無須返工。"
+    },
+    {
+      "id": "C",
+      "text": "Put K62 on the trial shelf and K63 in the rework bin.",
+      "zh": "將 K62 放到試驗架，將 K63 放進返工箱。",
+      "whyZh": "K63 的處置正確，但 K62 是合格的舊版品，可留在組裝推車上。"
+    },
+    {
+      "id": "D",
+      "text": "Put K62 on the trial shelf and K61 in the rework bin.",
+      "zh": "將 K62 放到試驗架，將 K61 放進返工箱。",
+      "whyZh": "K62 可留在組裝推車上；K61 已合格，應留在試驗架，不需返工。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "K64 是合格的新版品，未經核准須留在試驗架；K63 不合格，須進返工箱。",
+  "vocabulary": [
+    {
+      "term": "sign off",
+      "zh": "正式核准",
+      "note": "簽核改變可送往組裝的工法版本；檢驗合格和正式核准不是同一件事。"
+    }
+  ],
+  "groupId": "t10-r-p7-triple-01",
+  "evidence": "Until Engineering signs off, send only accepted old-recipe covers to assembly. Keep accepted revised-recipe covers on the trial shelf. All rejects go to the rework bin. / K63 | B | By machine | Old | Old | 80 sec | Reject / K64 | A | By hand | Revised | Revised | 58 sec | Pass / I won’t sign off today. Raj, K62 and K64 are on the assembly cart right now. K61 and K63 are on the trial shelf.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 636,
+      "endChar": 804,
+      "exactQuote": "Until Engineering signs off, send only accepted old-recipe covers to assembly. Keep accepted revised-recipe covers on the trial shelf. All rejects go to the rework bin."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1468,
+      "endChar": 1518,
+      "exactQuote": "K63 | B | By machine | Old | Old | 80 sec | Reject"
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1519,
+      "endChar": 1572,
+      "exactQuote": "K64 | A | By hand | Revised | Revised | 58 sec | Pass"
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2229,
+      "endChar": 2341,
+      "exactQuote": "I won’t sign off today. Raj, K62 and K64 are on the assembly cart right now. K61 and K63 are on the trial shelf."
+    }
+  ]
+}

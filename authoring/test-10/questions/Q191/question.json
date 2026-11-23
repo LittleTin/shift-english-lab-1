@@ -1,0 +1,78 @@
+{
+  "id": "t10-q191",
+  "testId": "test-10",
+  "number": 191,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "What supports Ruth’s plan to lay the mat near the water tank without blocking emergency access?",
+  "promptZh": "什麼資訊可以證明露絲在水箱附近鋪墊子的計畫不會擋住緊急通道？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The mat can be removed before a vehicle reaches the water tank.",
+      "zh": "有車輛抵達水箱前，可以先把墊子收起來。",
+      "whyZh": "資料並未把不妨礙消防通行的條件建立在臨時收墊上；重點是預定鋪設處原本就不在消防通道內。"
+    },
+    {
+      "id": "B",
+      "text": "The paved path reaches the proposed spot after the fire route has branched off.",
+      "zh": "鋪面步道先經過消防通道的岔口，之後才會到預定鋪墊的位置。",
+      "whyZh": "消防通道是北門到抽水機房岔口的黃線路段；水箱在岔口之後，而露絲要鋪在比水箱更遠的地方，所以不占用黃線路段。"
+    },
+    {
+      "id": "C",
+      "text": "The marked part of the path begins only after the water tank.",
+      "zh": "有標線的步道路段過了水箱才開始。",
+      "whyZh": "郵件說黃線是從北門到抽水機房岔口，而水箱在岔口之後；這個選項把兩者順序顛倒了。"
+    },
+    {
+      "id": "D",
+      "text": "The emergency route has shifted from the north gate to the west gate.",
+      "zh": "消防通道已由北門改至西門。",
+      "whyZh": "西門和門內小路封閉；公告指定北門內的黃線區是消防通道，沒有說改走西門。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "消防通道是北門到抽水機房岔口的黃線路段；水箱在岔口之後，而露絲要鋪在比水箱更遠的地方，所以不占用黃線路段。",
+  "vocabulary": [
+    {
+      "term": "turn-off",
+      "zh": "岔路口",
+      "note": "beyond the turn-off 表示過了岔口；從這個位置關係可判斷是否仍在標線區。"
+    }
+  ],
+  "groupId": "t10-r-p7-triple-02",
+  "evidence": "The west gate and the lane immediately inside it are closed while the fence posts are reset. Members may use the north gate to move tools or compost, provided they keep the yellow strip clear. The strip is the fire crew's route to the pump shed. / Ivo: The mat from the tool shed will get a loaded barrow across that soft patch. It tears on an edge, though, so don't drag it over the kerb on the yellow strip. / Ruth: I'll lay it where the paved path meets the grass, just past the water tank. Mara from next door offered to help shift the bag, but she can only come before I get back from my appointment. / The water tank is beyond the pump shed turn-off. Only the short lane between the north gate and that turn-off has been marked in yellow. If the fence team needs fasteners, there is a sealed box on the tool-shed shelf marked ‘fence’.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 37,
+      "endChar": 282,
+      "exactQuote": "The west gate and the lane immediately inside it are closed while the fence posts are reset. Members may use the north gate to move tools or compost, provided they keep the yellow strip clear. The strip is the fire crew's route to the pump shed."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1382,
+      "endChar": 1543,
+      "exactQuote": "Ivo: The mat from the tool shed will get a loaded barrow across that soft patch. It tears on an edge, though, so don't drag it over the kerb on the yellow strip."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1545,
+      "endChar": 1738,
+      "exactQuote": "Ruth: I'll lay it where the paved path meets the grass, just past the water tank. Mara from next door offered to help shift the bag, but she can only come before I get back from my appointment."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2827,
+      "endChar": 3059,
+      "exactQuote": "The water tank is beyond the pump shed turn-off. Only the short lane between the north gate and that turn-off has been marked in yellow. If the fence team needs fasteners, there is a sealed box on the tool-shed shelf marked ‘fence’."
+    }
+  ]
+}

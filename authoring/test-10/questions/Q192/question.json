@@ -1,0 +1,78 @@
+{
+  "id": "t10-q192",
+  "testId": "test-10",
+  "number": 192,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "What does Kit's email allow Ruth to conclude about her own plot?",
+  "promptZh": "基特的郵件讓露絲可以對自己的地塊得出什麼結論？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A spare planter has already been set aside for her.",
+      "zh": "已經有一個備用花槽留給她。",
+      "whyZh": "公告說姓名縮寫表示已檢查，不表示已保留花槽。"
+    },
+    {
+      "id": "B",
+      "text": "She must wait until Kit examines the bed.",
+      "zh": "她必須等基特檢查種植床。",
+      "whyZh": "鉛筆圈原本只是提出檢查要求，但基特已在露絲的 18 號地塊旁用墨水簽上縮寫。"
+    },
+    {
+      "id": "C",
+      "text": "She may borrow a spare planter, but none is shown as reserved for her.",
+      "zh": "她可以借用備用花槽，但沒有紀錄顯示已替她保留。",
+      "whyZh": "18 號仍太濕，縮寫證明已檢查，所以露絲有資格借用備用花槽；縮寫不代表已分配或預留花槽。"
+    },
+    {
+      "id": "D",
+      "text": "She should check the shelter hooks for her planter assignment.",
+      "zh": "她應到棚下掛鉤查看分到哪個花槽。",
+      "whyZh": "郵件說掛鉤的姓名是借工具的登記，不是花槽分配名單。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "18 號仍太濕，縮寫證明已檢查，所以露絲有資格借用備用花槽；縮寫不代表已分配或預留花槽。",
+  "vocabulary": [
+    {
+      "term": "initial a record",
+      "zh": "在紀錄上簽姓名縮寫",
+      "note": "initial 在這裡作動詞，和初始的形容詞用法不同。"
+    }
+  ],
+  "groupId": "t10-r-p7-triple-02",
+  "evidence": "If a raised bed is too wet to use, its holder may borrow a spare planter once the plot steward has initialled the plot number on the damage board. An initialled entry shows the bed has been inspected; it does not mean a planter has been assigned. / Ruth: Let's just leave the bag where it is until I get back. If you see Kit, can you ask what the pencil ring beside number 18 means? That's my plot, and my bed's still too wet to plant in. / A ring in pencil means someone asked me to have a look. I visited the lower beds first. Beside 18 I wrote KJ in ink over the pencil ring; it may not show in the picture someone sent round. I left the rings beside 14 and 21 as they were. / I moved the spare planters from the shelter to the pump shed before the storm so they wouldn't blow loose. The new names on the shelter hooks are for people borrowing tools, not planters.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 452,
+      "endChar": 698,
+      "exactQuote": "If a raised bed is too wet to use, its holder may borrow a spare planter once the plot steward has initialled the plot number on the damage board. An initialled entry shows the bed has been inspected; it does not mean a planter has been assigned."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1839,
+      "endChar": 2028,
+      "exactQuote": "Ruth: Let's just leave the bag where it is until I get back. If you see Kit, can you ask what the pencil ring beside number 18 means? That's my plot, and my bed's still too wet to plant in."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2400,
+      "endChar": 2636,
+      "exactQuote": "A ring in pencil means someone asked me to have a look. I visited the lower beds first. Beside 18 I wrote KJ in ink over the pencil ring; it may not show in the picture someone sent round. I left the rings beside 14 and 21 as they were."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2638,
+      "endChar": 2825,
+      "exactQuote": "I moved the spare planters from the shelter to the pump shed before the storm so they wouldn't blow loose. The new names on the shelter hooks are for people borrowing tools, not planters."
+    }
+  ]
+}

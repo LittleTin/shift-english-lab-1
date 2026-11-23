@@ -1,0 +1,78 @@
+{
+  "id": "t10-q188",
+  "testId": "test-10",
+  "number": 188,
+  "part": 7,
+  "topic": "business",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "A draft summary credits the revised recipe with a hands-on time saving in the controlled comparison. What correction should Clara make?",
+  "promptZh": "摘要草稿稱，在受控比較中，新版工法節省了實際作業時間。Clara 應如何修正？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Keep the stated saving because both covers ultimately passed inspection.",
+      "zh": "保留省時結論，因為兩片外蓋最終都通過檢驗。",
+      "whyZh": "檢驗合格不代表投入的作業時間較少。"
+    },
+    {
+      "id": "B",
+      "text": "Keep the stated saving because work at a second bench is a separate operation.",
+      "zh": "保留省時結論，因為第二個工作台的作業應分開計算。",
+      "whyZh": "凡是重新拉絲的作業時間都須計入。"
+    },
+    {
+      "id": "C",
+      "text": "Report a time increase because the wait for the touch-up bench must be included.",
+      "zh": "改為耗時增加，因為等候補修台的時間必須計入。",
+      "whyZh": "等待屬於閒置時間，不計入。"
+    },
+    {
+      "id": "D",
+      "text": "Report a time increase because extra brushing outweighed the initial saving.",
+      "zh": "改為耗時增加，因為重新拉絲的時間超過首次拉絲節省的時間。",
+      "whyZh": "新版首次拉絲 64 秒，補修再用 22 秒，共 86 秒；舊版共 79 秒。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "新版首次拉絲 64 秒，補修再用 22 秒，共 86 秒；舊版共 79 秒。",
+  "vocabulary": [
+    {
+      "term": "touch-up",
+      "zh": "補修",
+      "note": "first brush 是第一道拉絲；實作時間也計入補修時的重拉絲。"
+    }
+  ],
+  "groupId": "t10-r-p7-triple-01",
+  "evidence": "Count time spent brushing, including any extra brushing at the touch-up bench, but exclude idle time. / K61 | A | By hand | Old | Revised | 64 sec | Pass after touch-up / K62 | A | By hand | Revised | Old | 79 sec | Pass / K61 waited ten minutes to get to my bench, then I rebrushed it for 22 seconds.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 534,
+      "endChar": 635,
+      "exactQuote": "Count time spent brushing, including any extra brushing at the touch-up bench, but exclude idle time."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1353,
+      "endChar": 1417,
+      "exactQuote": "K61 | A | By hand | Old | Revised | 64 sec | Pass after touch-up"
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1418,
+      "endChar": 1467,
+      "exactQuote": "K62 | A | By hand | Revised | Old | 79 sec | Pass"
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2085,
+      "endChar": 2163,
+      "exactQuote": "K61 waited ten minutes to get to my bench, then I rebrushed it for 22 seconds."
+    }
+  ]
+}
