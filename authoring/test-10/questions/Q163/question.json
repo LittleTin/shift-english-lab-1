@@ -1,0 +1,66 @@
+{
+  "id": "t10-q163",
+  "testId": "test-10",
+  "number": 163,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "shelter-volunteering"
+  ],
+  "prompt": "Which description would be most accurate in a report about the two blank sign-up choices?",
+  "promptZh": "在報告中描述兩位志工都未勾選動物照護時，下列哪項說法最準確？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Neither volunteer wanted the work, so clearer wording would not have changed what we learned.",
+      "zh": "兩位志工都不想做這項工作，所以寫得更清楚也不影響我們得到的資訊。",
+      "whyZh": "諾亞確實不想做；米拉沒選是因為誤以為自己不符合資格，不是明確表達不想做。"
+    },
+    {
+      "id": "B",
+      "text": "Both blanks show that a beginner-friendly introduction is needed because both volunteers felt unqualified.",
+      "zh": "兩處空白都表示需要新手導覽，因為兩位志工都覺得自己資格不足。",
+      "whyZh": "米拉誤以為不能選且詢問帶領；諾亞看懂欄位，只是想做不涉及照護動物的工作。"
+    },
+    {
+      "id": "C",
+      "text": "One blank conceals possible interest, while the other reflects an informed choice to do different work.",
+      "zh": "一處空白可能掩蓋志工的興趣；另一處則反映志工在看懂說明後選擇做其他工作。",
+      "whyZh": "米拉不勾是因為誤解選擇資格，卻有詢問如何入門；諾亞是理解後表達自己的工作偏好。表單收集的是偏好，不能把兩個空白一概當成不想做。"
+    },
+    {
+      "id": "D",
+      "text": "Mila has already chosen animal-care work, while Noah still needs help understanding his options.",
+      "zh": "米拉已選擇動物照護工作，而諾亞還需要協助理解可選的工作。",
+      "whyZh": "米拉問入門方式不等於已勾選或承諾參加；諾亞已理解欄位，不是看不懂。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "米拉不勾是因為誤解選擇資格，卻有詢問如何入門；諾亞是理解後表達自己的工作偏好。表單收集的是偏好，不能把兩個空白一概當成不想做。",
+  "vocabulary": [
+    {
+      "term": "experience helpful",
+      "zh": "有經驗較佳",
+      "note": "這並不是必備資格；未勾選可能是誤會，而非確定沒興趣。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-07",
+  "evidence": "We are revising how we introduce the welcome shift to new volunteers. It combines two jobs: greeting visitors and putting completed adoption packs in the outgoing tray. The visitor queue can form again at any time. Adoption packs are different: once a pack reaches the tray, the next team takes responsibility for it. A volunteer may do either job without changing shifts. The sign-up form helps us learn what people want to do, not decide who qualifies. / Finally, I asked two people why they had not selected animal-care work on the sign-up form. Mila left it blank because she thought ‘experience helpful’ meant she was not allowed to choose it; she asked whether someone could show her how to start. Noah understood the entry but wanted work that did not involve caring for animals. Leave animal-care work voluntary, but make clear that a newcomer may select it and request an introduction.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 0,
+      "endChar": 454,
+      "exactQuote": "We are revising how we introduce the welcome shift to new volunteers. It combines two jobs: greeting visitors and putting completed adoption packs in the outgoing tray. The visitor queue can form again at any time. Adoption packs are different: once a pack reaches the tray, the next team takes responsibility for it. A volunteer may do either job without changing shifts. The sign-up form helps us learn what people want to do, not decide who qualifies."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1655,
+      "endChar": 2092,
+      "exactQuote": "Finally, I asked two people why they had not selected animal-care work on the sign-up form. Mila left it blank because she thought ‘experience helpful’ meant she was not allowed to choose it; she asked whether someone could show her how to start. Noah understood the entry but wanted work that did not involve caring for animals. Leave animal-care work voluntary, but make clear that a newcomer may select it and request an introduction."
+    }
+  ]
+}

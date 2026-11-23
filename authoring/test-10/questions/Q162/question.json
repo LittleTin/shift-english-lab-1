@@ -1,0 +1,66 @@
+{
+  "id": "t10-q162",
+  "testId": "test-10",
+  "number": 162,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "shelter-volunteering"
+  ],
+  "prompt": "Which conclusion about the welcome card is best supported by the three trials?",
+  "promptZh": "三次測試最能支持關於迎新說明卡的哪項結論？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Volunteers can use the card on their own in both situations because Lee and Priya made the right choices.",
+      "zh": "在兩種情況下志工都能自行使用說明卡，因為李和普莉雅都選對了。",
+      "whyZh": "李沒有提示仍做對；普莉雅做對前，領班已先指門，無法據此確認她單靠卡片就能在有訪客時做對。"
+    },
+    {
+      "id": "B",
+      "text": "The correct no-visitor action has been taken without help, but the diagram can still be mistaken for an instruction to open the door.",
+      "zh": "已有人在未獲提示且預期不會有訪客走側門的情況下採取正確做法，但仍有人會把門的圖示誤讀成開門指示。",
+      "whyZh": "領班沒有做手勢，李仍在預期無人走側門時讓門保持關閉。歐瑪認得門卻認為圖示要求一開始就打開，表示位置圖和操作條件可能被混淆。"
+    },
+    {
+      "id": "C",
+      "text": "Identifying the side entrance remains the main obstacle, since Omar used it at the wrong time.",
+      "zh": "歐瑪在錯誤時機使用側門，表示主要困難仍是辨認側門。",
+      "whyZh": "歐瑪有認出正確的側門；他搞錯的是何時該開門，而不是門的位置。"
+    },
+    {
+      "id": "D",
+      "text": "The diagram is unnecessary because a leader can always point to the correct entrance instead.",
+      "zh": "領班可以指向正確入口，因此不需要示意圖。",
+      "whyZh": "測試要確認志工不靠領班也能理解，不能把有人提示的案例當成可撤掉圖示的證據。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "領班沒有做手勢，李仍在預期無人走側門時讓門保持關閉。歐瑪認得門卻認為圖示要求一開始就打開，表示位置圖和操作條件可能被混淆。",
+  "vocabulary": [
+    {
+      "term": "act without a cue",
+      "zh": "沒有提示仍能按指示做",
+      "note": "有人先指了門，做對不代表志工單靠說明就能判斷。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-07",
+  "evidence": "We are also testing whether the new welcome card works without a team leader’s explanation. The card now asks a volunteer to open the side entrance only when a visitor is expected there. The large door diagram identifies the side entrance, but it does not tell readers when to use it. For this test, a leader may observe silently but should not point to the card or the entrance before the volunteer acts. / In the first trial, Lee read the card and left the side entrance shut when no one was expected there; the leader did not gesture. In the second trial a visitor was expected there. The leader pointed to the side entrance before Priya opened it. Omar, working without a leader, opened the side entrance on a morning when no one was expected there. Omar could identify the correct door but said he had thought the picture told him to open it at the start of every shift.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 779,
+      "endChar": 1184,
+      "exactQuote": "We are also testing whether the new welcome card works without a team leader’s explanation. The card now asks a volunteer to open the side entrance only when a visitor is expected there. The large door diagram identifies the side entrance, but it does not tell readers when to use it. For this test, a leader may observe silently but should not point to the card or the entrance before the volunteer acts."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1186,
+      "endChar": 1653,
+      "exactQuote": "In the first trial, Lee read the card and left the side entrance shut when no one was expected there; the leader did not gesture. In the second trial a visitor was expected there. The leader pointed to the side entrance before Priya opened it. Omar, working without a leader, opened the side entrance on a morning when no one was expected there. Omar could identify the correct door but said he had thought the picture told him to open it at the start of every shift."
+    }
+  ]
+}
