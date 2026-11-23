@@ -1,0 +1,72 @@
+{
+  "id": "t09-q168",
+  "testId": "test-09",
+  "number": 168,
+  "part": 7,
+  "groupId": "t09-r-p7-06",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "Before the count ends, Sora’s household has picked its two attached pears. Sora sees one sound pear on the grass and one on the path and wants to take another pear home now. Which plan follows the notice?",
+  "promptZh": "盤點結束前，索拉家已摘了兩顆樹上的梨。索拉看到草地上有一顆完好的梨，步道上也有一顆，現在想再拿一顆回家。哪個做法符合告示？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Put the grass pear in the tray and take it from there; leave the path pear alone.",
+      "zh": "把草地上的梨放進淺盤，再從盤裡拿；步道上的梨留在原處。",
+      "whyZh": "盤裡的落果不占採摘上限；步道落果要保留落點。"
+    },
+    {
+      "id": "B",
+      "text": "Put both pears in the tray, then take both without counting them.",
+      "zh": "兩顆都放進淺盤，再拿走兩顆，不列入上限。",
+      "whyZh": "盤裡的梨不計上限，但步道落果不能移進盤。"
+    },
+    {
+      "id": "C",
+      "text": "Leave the grass pear alone and take the path pear, since neither is attached.",
+      "zh": "草地的梨不動，拿走步道的梨，因為兩顆都不在樹上。",
+      "whyZh": "步道落果一定要留在原處；完好的草地落果才應放進盤。"
+    },
+    {
+      "id": "D",
+      "text": "Put the grass pear in the tray but do not take any from it until the count ends.",
+      "zh": "把草地的梨放進淺盤，但到盤點結束前不從盤裡拿。",
+      "whyZh": "可以先把草地完好的梨放進盤，但規則未要求等盤點結束才從盤裡拿。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "盤裡的落果不占採摘上限；步道落果要保留落點。",
+  "evidence": "If they still look sound, put them in the shallow tray by the door. / They do not count toward your household’s two-pear limit if you take them from the tray. / Leave fruit on the path where it is;",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 509,
+      "endChar": 576,
+      "exactQuote": "If they still look sound, put them in the shallow tray by the door."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 577,
+      "endChar": 665,
+      "exactQuote": "They do not count toward your household’s two-pear limit if you take them from the tray."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 666,
+      "endChar": 702,
+      "exactQuote": "Leave fruit on the path where it is;"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "sound",
+      "zh": "完好的",
+      "note": "形容水果時指外表看來未壞，不是聲音。"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "t09-q163",
+  "testId": "test-09",
+  "number": 163,
+  "part": 7,
+  "groupId": "t09-r-p7-05",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "What does the cab screen show?",
+  "promptZh": "駕駛室螢幕顯示什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The current temperature near the driver.",
+      "zh": "駕駛附近當下的氣溫。",
+      "whyZh": "首段直接交代駕駛室螢幕顯示駕駛附近的即時氣溫。"
+    },
+    {
+      "id": "B",
+      "text": "The average cargo temperature for the trip.",
+      "zh": "整趟行程的貨艙平均溫度。",
+      "whyZh": "貨艙溫度由記錄器量測，本文也沒說駕駛室螢幕提供平均值。"
+    },
+    {
+      "id": "C",
+      "text": "The stop times on the route.",
+      "zh": "路線上的停靠時間。",
+      "whyZh": "停靠時間在路線表上，非駕駛室螢幕。"
+    },
+    {
+      "id": "D",
+      "text": "The time on the spare logger.",
+      "zh": "備用記錄器的時間。",
+      "whyZh": "備用記錄器有自己的時鐘，要在出車前核對。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "首段直接交代駕駛室螢幕顯示駕駛附近的即時氣溫。",
+  "evidence": "The cab screen shows the current air temperature near the driver.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 93,
+      "endChar": 158,
+      "exactQuote": "The cab screen shows the current air temperature near the driver."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "cab",
+      "zh": "駕駛室",
+      "note": "商用車前方供駕駛乘坐、操控的空間。"
+    }
+  ]
+}

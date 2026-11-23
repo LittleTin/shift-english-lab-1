@@ -1,0 +1,72 @@
+{
+  "id": "t09-q170",
+  "testId": "test-09",
+  "number": 170,
+  "part": 7,
+  "groupId": "t09-r-p7-06",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "What remains true on Saturday morning if the gardeners are still counting?",
+  "promptZh": "如果星期六上午志工還在盤點，哪一項仍然適用？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Residents can pick as many as they like once the first tie is added that morning.",
+      "zh": "上午一綁第一條綠帶，住戶就能不限量採摘。",
+      "whyZh": "上限在整項盤點結束前仍適用，跟上午何時綁第一條帶子無關。"
+    },
+    {
+      "id": "B",
+      "text": "A newly marked low branch can be used, but the household limit still applies.",
+      "zh": "新綁綠帶的低枝可以採摘，但每戶上限仍適用。",
+      "whyZh": "一紮上綠帶就已有盤點紀錄，可摘該低枝；限制要等整項盤點完成才解除。"
+    },
+    {
+      "id": "C",
+      "text": "No fruit may be picked from any newly marked branch until the new notice appears.",
+      "zh": "新告示張貼前，所有新綁綠帶的枝條都不能採摘。",
+      "whyZh": "規則依綠帶和高度判定是否可摘；不需等新告示才採摘新標記的低枝。"
+    },
+    {
+      "id": "D",
+      "text": "The two-pear limit will apply only to the newly marked branches.",
+      "zh": "兩顆的上限只適用於新標記的枝條。",
+      "whyZh": "上限依每戶摘下的總數，而非對哪根枝條單獨計算。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "一紮上綠帶就已有盤點紀錄，可摘該低枝；限制要等整項盤點完成才解除。",
+  "evidence": "Take no more than two attached pears per household until Saturday’s count is finished. / You may pick only from low branches with a green tie. / On Saturday morning the gardeners will add green ties as they count more branches.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 103,
+      "endChar": 189,
+      "exactQuote": "Take no more than two attached pears per household until Saturday’s count is finished."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 383,
+      "endChar": 436,
+      "exactQuote": "You may pick only from low branches with a green tie."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 813,
+      "endChar": 895,
+      "exactQuote": "On Saturday morning the gardeners will add green ties as they count more branches."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "per household",
+      "zh": "每戶",
+      "note": "per 用來表示分配或計量的單位。"
+    }
+  ]
+}

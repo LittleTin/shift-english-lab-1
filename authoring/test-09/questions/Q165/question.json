@@ -1,0 +1,66 @@
+{
+  "id": "t09-q165",
+  "testId": "test-09",
+  "number": 165,
+  "part": 7,
+  "groupId": "t09-r-p7-05",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "Why should staff compare the file with the route sheet before deciding what to do?",
+  "promptZh": "員工決定如何處理前，為何要先用路線表比對檔案？",
+  "options": [
+    {
+      "id": "A",
+      "text": "To calculate an average temperature from the stop times.",
+      "zh": "用停靠時間算出平均溫度。",
+      "whyZh": "停靠時間不是溫度數據，不能用來算平均。"
+    },
+    {
+      "id": "B",
+      "text": "To determine whether the cartons warmed during loading.",
+      "zh": "判定紙箱是否在裝貨時變暖。",
+      "whyZh": "缺讀數本身不表示升溫；路線表只能提供停靠時點。"
+    },
+    {
+      "id": "C",
+      "text": "To find out whether the missing period covers a whole stop.",
+      "zh": "確認缺漏時段是否涵蓋某一站的全部停靠時間。",
+      "whyZh": "路線表標明停靠時間；對照記錄器可判斷是否整站都沒讀數，決定下一步。"
+    },
+    {
+      "id": "D",
+      "text": "To find which vehicle had its clock checked.",
+      "zh": "查出哪一輛車核對過時鐘。",
+      "whyZh": "需要核對的是記錄器的時鐘，不是從路線表辨認車輛。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "路線表標明停靠時間；對照記錄器可判斷是否整站都沒讀數，決定下一步。",
+  "evidence": "First compare the file with the stop times on the route sheet. / If an entire stop is missing, use the independent logger carried with the load, provided its clock was checked before departure.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 400,
+      "endChar": 462,
+      "exactQuote": "First compare the file with the stop times on the route sheet."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 463,
+      "endChar": 591,
+      "exactQuote": "If an entire stop is missing, use the independent logger carried with the load, provided its clock was checked before departure."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "route sheet",
+      "zh": "路線表",
+      "note": "可記錄停靠地點、時間等行程資料。"
+    }
+  ]
+}

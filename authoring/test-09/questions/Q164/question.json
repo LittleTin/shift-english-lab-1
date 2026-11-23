@@ -1,0 +1,72 @@
+{
+  "id": "t09-q164",
+  "testId": "test-09",
+  "number": 164,
+  "part": 7,
+  "groupId": "t09-r-p7-05",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "What should the person preparing Monday’s record do?",
+  "promptZh": "整理星期一的送貨紀錄時，應怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Fill the gap with the spare file and note which logger supplied it.",
+      "zh": "用備用檔案補齊缺漏，並註明由哪部記錄器提供。",
+      "whyZh": "記載資料來源本來是對的，但備用記錄器的時鐘未核對，不能用它補這一段。"
+    },
+    {
+      "id": "B",
+      "text": "Record the driver’s reading for the clinic stop because it was written down on site.",
+      "zh": "用駕駛在診所現場抄下的讀數補該站資料。",
+      "whyZh": "即使是在診所抄的，也屬駕駛室讀數，不是貨艙紀錄。"
+    },
+    {
+      "id": "C",
+      "text": "Use the nearest main readings to estimate the temperature, then flag the stop.",
+      "zh": "用主記錄器前後最接近的讀數估算溫度，再標記該站。",
+      "whyZh": "應標記缺漏，但通知明確要求不要估算。"
+    },
+    {
+      "id": "D",
+      "text": "Flag the interval for the supervisor without inserting either substitute.",
+      "zh": "標記該缺漏時段交主管處理，不採用任何替代讀數。",
+      "whyZh": "主要檔案缺整站，備用時鐘未核對，駕駛室讀數也不符合用途，只能標記並送主管。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "主要檔案缺整站，備用時鐘未核對，駕駛室讀數也不符合用途，只能標記並送主管。",
+  "evidence": "If an entire stop is missing, use the independent logger carried with the load, provided its clock was checked before departure. / Its clock had not been checked. / In such cases, flag the missing interval and send the record to the supervisor rather than estimating a temperature.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 463,
+      "endChar": 591,
+      "exactQuote": "If an entire stop is missing, use the independent logger carried with the load, provided its clock was checked before departure."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 860,
+      "endChar": 891,
+      "exactQuote": "Its clock had not been checked."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 976,
+      "endChar": 1092,
+      "exactQuote": "In such cases, flag the missing interval and send the record to the supervisor rather than estimating a temperature."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "flag an interval",
+      "zh": "標記一段時段",
+      "note": "flag 在此指標示待查項目，不是動手修正實際讀數。"
+    }
+  ]
+}

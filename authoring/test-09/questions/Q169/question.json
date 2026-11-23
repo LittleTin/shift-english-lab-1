@@ -1,0 +1,66 @@
+{
+  "id": "t09-q169",
+  "testId": "test-09",
+  "number": 169,
+  "part": 7,
+  "groupId": "t09-r-p7-06",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "foundation",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "What could a green tie tell a resident who is choosing where to pick?",
+  "promptZh": "住戶在挑選採摘位置時，綠帶能告訴他什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Every pear on that branch is ready to eat.",
+      "zh": "那一枝上的每顆梨都可以吃了。",
+      "whyZh": "綠帶不表示成熟度。"
+    },
+    {
+      "id": "B",
+      "text": "No one has picked any fruit from that branch.",
+      "zh": "那一枝還沒人摘過果實。",
+      "whyZh": "綠帶只表示已盤點，不表示之後是否有人摘過。"
+    },
+    {
+      "id": "C",
+      "text": "The branch may be picked from even if it is high above the ground.",
+      "zh": "即使枝條在高處，也可以從那一枝摘。",
+      "whyZh": "採摘僅限綁綠帶的低枝；高枝不開放住戶採摘。"
+    },
+    {
+      "id": "D",
+      "text": "If it is a low branch, it is one of the branches from which picking is allowed.",
+      "zh": "如果是低枝，就屬於可以採摘的枝條。",
+      "whyZh": "低枝且有綠帶即可採摘，但仍受完成盤點前每戶上限約束。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "低枝且有綠帶即可採摘，但仍受完成盤點前每戶上限約束。",
+  "evidence": "You may pick only from low branches with a green tie. / The ties show only which branches were counted; they say nothing about whether individual pears are ripe.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 383,
+      "endChar": 436,
+      "exactQuote": "You may pick only from low branches with a green tie."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 896,
+      "endChar": 1001,
+      "exactQuote": "The ties show only which branches were counted; they say nothing about whether individual pears are ripe."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "at the base of a branch",
+      "zh": "在枝條靠近樹幹的位置",
+      "note": "base 是枝條開始延伸出去的一端。"
+    }
+  ]
+}

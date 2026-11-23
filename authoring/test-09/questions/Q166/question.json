@@ -1,0 +1,66 @@
+{
+  "id": "t09-q166",
+  "testId": "test-09",
+  "number": 166,
+  "part": 7,
+  "groupId": "t09-r-p7-05",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "On another trip, an entire stop is missing from the main file, but the independent logger stayed with the cargo and its clock was checked before departure. Which action fits the card?",
+  "promptZh": "另一趟行程中，主要檔案缺了整站資料，但獨立記錄器跟貨同行，且出車前核對過時鐘。哪項做法符合訓練卡？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Use the independent file but list it as data from the main logger.",
+      "zh": "採用獨立檔案，但註明數據來自主記錄器。",
+      "whyZh": "可以補資料，但來源要如實記錄。"
+    },
+    {
+      "id": "B",
+      "text": "Fill the gap from the independent logger and identify it as the source.",
+      "zh": "用獨立記錄器補上缺漏，並註明來源。",
+      "whyZh": "缺了整站、獨立記錄器隨貨且時鐘已核對，符合條件；仍要標明資料來源。"
+    },
+    {
+      "id": "C",
+      "text": "Use the independent file only if the cab screen showed the same temperature.",
+      "zh": "只有駕駛室螢幕顯示相同溫度時才採用獨立檔案。",
+      "whyZh": "規則不要求和駕駛室比對；兩者測量位置不同。"
+    },
+    {
+      "id": "D",
+      "text": "Leave the gap empty because only the main logger may supply delivery data.",
+      "zh": "保留空白，因為送貨資料只能由主記錄器提供。",
+      "whyZh": "完整停靠資料缺漏，且備用來源符合條件，可改用獨立記錄器。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "缺了整站、獨立記錄器隨貨且時鐘已核對，符合條件；仍要標明資料來源。",
+  "evidence": "If an entire stop is missing, use the independent logger carried with the load, provided its clock was checked before departure. / Record which logger supplied the missing portion.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 463,
+      "endChar": 591,
+      "exactQuote": "If an entire stop is missing, use the independent logger carried with the load, provided its clock was checked before departure."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 592,
+      "endChar": 641,
+      "exactQuote": "Record which logger supplied the missing portion."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "provided",
+      "zh": "前提是",
+      "note": "在這裡連接使用替代紀錄必須符合的條件。"
+    }
+  ]
+}
