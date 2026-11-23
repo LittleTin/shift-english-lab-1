@@ -1,6 +1,7 @@
 (function(){
 'use strict';
 const VERSION=window.SHIFT_CATALOG?.releaseLabel||window.SHIFT_CATALOG?.version||'';
+const SYNC_MODULE_URL='./shift-sync.mjs?v=account-resume-v2';
 const BACKUP_TIME_KEY='shift-english-last-export-v1';
 let lastExportAt=0;
 const NOTE_DRAFT_KEY='shift-english-note-draft-v1';
@@ -282,7 +283,7 @@ function setSyncStatus(msg){syncStatus=msg;const el=document.getElementById('shi
 async function getSyncCore(){
  if(!syncConfigured)throw Error('Account sync is not configured.');
  if(syncCore)return syncCore;
- const m=await import('./shift-sync.mjs?v=account-resume-v2');
+ const m=await import(SYNC_MODULE_URL);
  syncCore=m.createShiftSync({url:syncConfig.url,publishableKey:syncConfig.publishableKey,allowLocal:syncConfig.allowLocal===true,fetchImpl:window.fetch.bind(window),onSessionChange:refreshReceipt});
  return syncCore;
 }
@@ -574,9 +575,9 @@ async function syncGuestPreview(){
  if(!guest.sessions.length){notify('No completed history was found in the guest workspace.');return}
  confirmBox('Copy guest history to your account?','Copies eligible completed sessions and their answers from this browser into your signed-in account and uploads them to Supabase. The guest copy stays on this device. Notes, saved questions, unfinished tests, and custom packs are not copied.',async()=>{
   if(owner!==syncOwner||epoch!==syncEpoch)return;
+  const m=await import(SYNC_MODULE_URL);
   const staged=[];
   for(const s of guest.sessions){
-   const m=await import('./shift-sync.mjs');
    const id=records.UUID.test(s.id)?s.id:await m.combineCompletedSessionId('shift-en-lab/guest-session-v1',s.id);
    const r=records.record(s,byId,id);
    if(r)staged.push({id,user_id:owner,completed_at:r.completedAt,payload:r.payload});
