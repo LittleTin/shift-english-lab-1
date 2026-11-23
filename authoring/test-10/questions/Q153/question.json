@@ -1,0 +1,78 @@
+{
+  "id": "t10-q153",
+  "testId": "test-10",
+  "number": 153,
+  "part": 7,
+  "topic": "transportation",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "transportation"
+  ],
+  "prompt": "All four Market Pier departures below have confirmed headcounts. Which one should still be set aside for the capacity analysis because of its display?",
+  "promptZh": "下列市場碼頭四個班次的人數都已確認。哪個班次仍應因看板資訊問題暫不納入運量分析？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A wrong time appeared at the street entrance while passengers were still boarding, but staff corrected it before the ferry left.",
+      "zh": "乘客仍在登船時，臨街入口顯示了錯誤時間，但工作人員在渡輪開出前已更正。",
+      "whyZh": "臨街入口在登船期間一度顯示錯誤，兩項條件都符合；出發前改正不會抹去那段錯誤，人數仍保留但運量分析須先擱置。"
+    },
+    {
+      "id": "B",
+      "text": "A wrong time appeared at the street entrance before boarding, but staff corrected it before anyone began to board.",
+      "zh": "登船前臨街入口顯示了錯誤時間，但工作人員在任何人開始登船之前已更正。",
+      "whyZh": "出錯的確在臨街入口，但已在登船開始前修正，並未發生於規則要看的時段。"
+    },
+    {
+      "id": "C",
+      "text": "A wrong time appeared on the boarding ramp during boarding while the street entrance continued to show the correct time.",
+      "zh": "登船期間斜坡通道上的看板顯示了錯誤時間，但臨街入口持續顯示正確時間。",
+      "whyZh": "錯誤發生在登船期間，但位置是斜坡通道而非規則要看的臨街入口。"
+    },
+    {
+      "id": "D",
+      "text": "A wrong time appeared at the street entrance only after boarding had ended and the ferry had left.",
+      "zh": "臨街入口只在登船結束、渡輪已開出後才顯示錯誤時間。",
+      "whyZh": "位置符合，但錯誤只出現在登船結束之後，不是登船期間。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "臨街入口在登船期間一度顯示錯誤，兩項條件都符合；出發前改正不會抹去那段錯誤，人數仍保留但運量分析須先擱置。",
+  "vocabulary": [
+    {
+      "term": "set aside",
+      "zh": "暫不納入",
+      "note": "不是從人數統計刪除，而是先不拿來估算加開班次。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-03",
+  "evidence": "whether the street entrance displayed the correct departure during boarding. / tag the run for separate analysis if that display was wrong at any point while passengers were boarding. / An error seen only at another location or outside that time does not need the tag. / A tagged run will not be used to estimate the effect of adding another ferry until the planner reviews the sign discrepancy.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 944,
+      "endChar": 1020,
+      "exactQuote": "whether the street entrance displayed the correct departure during boarding."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1056,
+      "endChar": 1160,
+      "exactQuote": "tag the run for separate analysis if that display was wrong at any point while passengers were boarding."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1161,
+      "endChar": 1243,
+      "exactQuote": "An error seen only at another location or outside that time does not need the tag."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1244,
+      "endChar": 1368,
+      "exactQuote": "A tagged run will not be used to estimate the effect of adding another ferry until the planner reviews the sign discrepancy."
+    }
+  ]
+}

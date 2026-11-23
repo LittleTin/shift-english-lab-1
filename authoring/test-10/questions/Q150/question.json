@@ -1,0 +1,72 @@
+{
+  "id": "t10-q150",
+  "testId": "test-10",
+  "number": 150,
+  "part": 7,
+  "topic": "culture",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "culture"
+  ],
+  "prompt": "What should Mina do to prepare a preview that can go online at launch?",
+  "promptZh": "為了準備一支能在網站推出時上線的預告片，米娜應該怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Replace the uncleared Market Street footage and post the new edit without another test.",
+      "zh": "更換〈市場街〉裡未取得網路授權的片段，並在不再試看的情況下發布新版。",
+      "whyZh": "更換該段影像是實質改動，因此新版必須再試看。上線前沒有試看時段。"
+    },
+    {
+      "id": "B",
+      "text": "Post Lantern Parade unchanged, since its footage is now cleared for online use.",
+      "zh": "不作改動便發布〈燈籠遊行〉，因為影像現已取得網路公開授權。",
+      "whyZh": "授權沒有問題，但試看的觀眾沒有主持人解說就看不懂；網站預告仍缺少解說。"
+    },
+    {
+      "id": "C",
+      "text": "Use the explanation from the viewer test as narration for Lantern Parade.",
+      "zh": "把試看時用過的解說做成〈燈籠遊行〉的旁白。",
+      "whyZh": "影像可在網路公開，而同一解說已幫助試看觀眾理解片段；加旁白讓預告可獨立觀看，也不用再試看。"
+    },
+    {
+      "id": "D",
+      "text": "Add an explanation to Lantern Parade that was not used in the viewer test.",
+      "zh": "替〈燈籠遊行〉加上試看時未使用過的解說。",
+      "whyZh": "這個解說未經試看；不符合免再試看的條件，而上線前也沒有其他試看時段。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "影像可在網路公開，而同一解說已幫助試看觀眾理解片段；加旁白讓預告可獨立觀看，也不用再試看。",
+  "vocabulary": [
+    {
+      "term": "footage cleared for online use",
+      "zh": "已取得網路公開授權的影像",
+      "note": "cleared 不代表觀眾能在沒有旁白時理解，也不表示所有使用範圍都已授權。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-02",
+  "evidence": "At our October fundraiser, we will show short clips from the neighborhood’s film collection. A preview for the public website must make sense without a live presenter and may include only footage cleared for online use. The screening itself can use footage cleared only for in-person events, as long as the presenter explains any clip that depends on outside context. / The two possible previews are the Market Street and Lantern Parade edits. Both have already been tested with viewers who had never seen the original films. They understood Market Street without help, but could not follow Lantern Parade until the host described what happened in the missing opening scene. The music in the Lantern Parade edit has now been replaced, and its entire footage is cleared for online use. Market Street is cleared only for in-person events, though the opening scene by itself is cleared for online use. / Mina has enough time this week either to add a short narration to Lantern Parade or to replace the uncleared footage in Market Street, but not both. Replacing that footage is a substantive change and requires another viewer test. Adding a narration does not require a new test if that same explanation was already used successfully in the viewer test. No testing session is available before the website launch.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 0,
+      "endChar": 367,
+      "exactQuote": "At our October fundraiser, we will show short clips from the neighborhood’s film collection. A preview for the public website must make sense without a live presenter and may include only footage cleared for online use. The screening itself can use footage cleared only for in-person events, as long as the presenter explains any clip that depends on outside context."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 369,
+      "endChar": 897,
+      "exactQuote": "The two possible previews are the Market Street and Lantern Parade edits. Both have already been tested with viewers who had never seen the original films. They understood Market Street without help, but could not follow Lantern Parade until the host described what happened in the missing opening scene. The music in the Lantern Parade edit has now been replaced, and its entire footage is cleared for online use. Market Street is cleared only for in-person events, though the opening scene by itself is cleared for online use."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 899,
+      "endChar": 1309,
+      "exactQuote": "Mina has enough time this week either to add a short narration to Lantern Parade or to replace the uncleared footage in Market Street, but not both. Replacing that footage is a substantive change and requires another viewer test. Adding a narration does not require a new test if that same explanation was already used successfully in the viewer test. No testing session is available before the website launch."
+    }
+  ]
+}

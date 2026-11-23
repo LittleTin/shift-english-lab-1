@@ -1,0 +1,90 @@
+{
+  "id": "t10-q152",
+  "testId": "test-10",
+  "number": 152,
+  "part": 7,
+  "topic": "transportation",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "transportation"
+  ],
+  "prompt": "A West Pier ferry has one seat left, but a rider decides to wait. After that seat is filled, someone else is turned away. The crew later closes the departure on a spare device after carrying over the primary device’s visible tally. How should the crew handle these two riders in the records?",
+  "promptZh": "西碼頭的渡輪還剩一個座位，但一名乘客決定等下一班。該座位坐滿後，另一名乘客因客滿被拒絕登船。工作人員把主裝置顯示的數字帶入備用裝置，之後再用備用裝置結束該班次的登船紀錄。這兩名乘客在紀錄中應如何處理？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Count both riders and note the swap without adding the carried-over tally again.",
+      "zh": "兩人都計入，並備註更換設備，但不重複加計轉入的數字。",
+      "whyZh": "換機只需備註，但第一人在仍有空位時自行延後搭乘，不能計入。"
+    },
+    {
+      "id": "B",
+      "text": "Count only the second rider and copy the primary tally to the unsent-totals box.",
+      "zh": "只計入第二人，並將主裝置的數字抄到「尚未傳送的總數」欄。",
+      "whyZh": "第二人應計入，但備機的確認總數已包含帶入的主機數字，再填入未傳送欄會重算。"
+    },
+    {
+      "id": "C",
+      "text": "Count only the second rider and note the swap without adding the carried-over tally again.",
+      "zh": "只計入第二人，並備註更換設備，但不重複加計轉入的數字。",
+      "whyZh": "第一人是自主等下一班；第二人因客滿上不了船才計入。備機回傳的總數含主機數字，所以紙表只註記換機，不補加人數。"
+    },
+    {
+      "id": "D",
+      "text": "Count both riders and copy the primary tally to the unsent-totals box.",
+      "zh": "兩人都計入，並將主裝置的數字抄到「尚未傳送的總數」欄。",
+      "whyZh": "同時把自行等待的人算進去，又把已納入備機總數的數字重複申報。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "第一人是自主等下一班；第二人因客滿上不了船才計入。備機回傳的總數含主機數字，所以紙表只註記換機，不補加人數。",
+  "vocabulary": [
+    {
+      "term": "carried-over tally",
+      "zh": "轉入的原有計數",
+      "note": "備機延續已計數字，另報會重算。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-03",
+  "evidence": "do not include riders who choose to wait for a later ferry while there is still room on the current one. / The handheld counter sends a confirmed total when the supervisor closes a departure on the device. / A departure closed on a spare counter is treated like any other in the planner’s report. / resume from that number on the spare. / Entries in the first box are added to device totals. / Write a short description under equipment notes whenever a device is swapped.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 187,
+      "endChar": 291,
+      "exactQuote": "do not include riders who choose to wait for a later ferry while there is still room on the current one."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 402,
+      "endChar": 500,
+      "exactQuote": "The handheld counter sends a confirmed total when the supervisor closes a departure on the device."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 501,
+      "endChar": 589,
+      "exactQuote": "A departure closed on a spare counter is treated like any other in the planner’s report."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 671,
+      "endChar": 708,
+      "exactQuote": "resume from that number on the spare."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 784,
+      "endChar": 836,
+      "exactQuote": "Entries in the first box are added to device totals."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 837,
+      "endChar": 914,
+      "exactQuote": "Write a short description under equipment notes whenever a device is swapped."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "t10-q151",
+  "testId": "test-10",
+  "number": 151,
+  "part": 7,
+  "topic": "culture",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "culture"
+  ],
+  "prompt": "How should the archive revise the matching totals after the ticket changes?",
+  "promptZh": "這兩筆票券異動後，檔案館應如何調整配對捐款的計算基準？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Transfer both payments from the early screening to the late screening.",
+      "zh": "把兩筆款項都從早場移列晚場。",
+      "whyZh": "兩人都看晚場，但只有艾利斯沿用原預售款；喬退款後的現場新購票款不能移列。"
+    },
+    {
+      "id": "B",
+      "text": "Remove both payments from the early screening and add only Ellis’s payment to the late screening.",
+      "zh": "從早場移除兩筆款項，只將艾利斯的票款列入晚場。",
+      "whyZh": "兩張票都不再供早場使用；艾利斯沿用原預售款，可與票一起轉至晚場，喬的新購票款不符合配對條件。"
+    },
+    {
+      "id": "C",
+      "text": "Remove only Jo’s payment from the early screening and leave the late screening’s total unchanged.",
+      "zh": "早場只移除喬的票款，晚場的款項維持不變。",
+      "whyZh": "看出了喬已退款，但艾利斯的票款不能留在早場，因為符合資格的票款要依現持票場次歸類。"
+    },
+    {
+      "id": "D",
+      "text": "Remove both payments from the early screening without adding either to the late screening.",
+      "zh": "從早場移除兩筆款項，晚場也不加列任一筆。",
+      "whyZh": "移除早場款項正確，但沒把仍符合資格的艾利斯預售款列入晚場。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "兩張票都不再供早場使用；艾利斯沿用原預售款，可與票一起轉至晚場，喬的新購票款不符合配對條件。",
+  "vocabulary": [
+    {
+      "term": "carry a payment across",
+      "zh": "將原票款轉至另一場次",
+      "note": "保留原預售票款與先退款、再買新票，在捐款計算上有不同結果。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-02",
+  "evidence": "Only advance-ticket payments may be included in the amount that the bookstore has offered to match. The bookstore confirmed that a payment stays eligible if a guest moves to a different screening and we carry the original payment across. If we refund the original ticket and the guest later buys one at the door, the new purchase does not count toward the match. For this report, record eligible payments under the screening on the ticket the guest will use; keep payments for canceled reservations out of that screening’s total. / In Thursday’s report, Ellis and Jo were both booked for the early screening and their advance payments had been included in its matching total. On Friday, Ellis transferred to the late screening and kept the original payment. Jo received a refund, then bought a new ticket at the door for the late screening. Both will attend the late screening.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 1311,
+      "endChar": 1840,
+      "exactQuote": "Only advance-ticket payments may be included in the amount that the bookstore has offered to match. The bookstore confirmed that a payment stays eligible if a guest moves to a different screening and we carry the original payment across. If we refund the original ticket and the guest later buys one at the door, the new purchase does not count toward the match. For this report, record eligible payments under the screening on the ticket the guest will use; keep payments for canceled reservations out of that screening’s total."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1842,
+      "endChar": 2187,
+      "exactQuote": "In Thursday’s report, Ellis and Jo were both booked for the early screening and their advance payments had been included in its matching total. On Friday, Ellis transferred to the late screening and kept the original payment. Jo received a refund, then bought a new ticket at the door for the late screening. Both will attend the late screening."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "t10-q154",
+  "testId": "test-10",
+  "number": 154,
+  "part": 7,
+  "topic": "transportation",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "transportation"
+  ],
+  "prompt": "After reviewing the tagged runs, the planner finds that West Pier has enough suitable departures, but Market Pier is still one short. Market Pier’s regular entrance sign is currently blank and will not be repaired until June 18. What is consistent with the trial instructions?",
+  "promptZh": "規劃人員檢視過有標記的班次後，發現西碼頭的合格班次已足夠，但市場碼頭還差一班。市場碼頭原有的入口看板目前沒有顯示資訊，要到 6 月 18 日才會修復。下列何者符合試行指示？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Extend the trial at both piers because the repair falls after the memo date.",
+      "zh": "由於修理日期晚於備忘錄發布日期，兩座碼頭都延長試行。",
+      "whyZh": "檢視後只有市場碼頭班次不足，因此只延長該碼頭；看板何時修復不會讓西碼頭重做。"
+    },
+    {
+      "id": "B",
+      "text": "Extend only at Market Pier; a blank sign need not prevent a new run from counting if the correct departure is announced at the street entrance throughout boarding.",
+      "zh": "只延長市場碼頭的試行；若整段登船期間都在臨街入口口頭告知正確班次，看板空白不一定會使新班次無法列入。",
+      "whyZh": "合格班次不足才延長，而且只延長不足的碼頭。看板空白但在臨街入口全程正確口頭公告的班次，不會因空白看板本身而被排除。"
+    },
+    {
+      "id": "C",
+      "text": "Count one of Market Pier’s tagged runs automatically on June 18 and end both trials.",
+      "zh": "6 月 18 日自動把市場碼頭某個有標記的班次算進去，然後結束兩座碼頭的試行。",
+      "whyZh": "修好看板不代表先前的問題班次立刻合格，何況題幹已說明檢視後市場碼頭仍差一班。"
+    },
+    {
+      "id": "D",
+      "text": "Wait to record any further Market Pier departures until a replacement sign has been installed.",
+      "zh": "等入口看板換新後，才繼續記錄市場碼頭的其他班次。",
+      "whyZh": "指示不要求等待換新；即使沒有看板顯示，仍有全程口頭公告的處理方式。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "合格班次不足才延長，而且只延長不足的碼頭。看板空白但在臨街入口全程正確口頭公告的班次，不會因空白看板本身而被排除。",
+  "vocabulary": [
+    {
+      "term": "fall short",
+      "zh": "不足；未達門檻",
+      "note": "須以合格班次計算，不是以報表上所有班次計算。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-03",
+  "evidence": "if crew members read the correct departure aloud at the street entrance throughout boarding, no tag is needed. / Only runs suitable for the capacity analysis count toward the minimum needed for that recommendation. / If a pier falls short, its supervisor should extend the trial there rather than extending both schedules. / This decision is made after the planner reviews any tagged runs.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 1422,
+      "endChar": 1532,
+      "exactQuote": "if crew members read the correct departure aloud at the street entrance throughout boarding, no tag is needed."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1631,
+      "endChar": 1732,
+      "exactQuote": "Only runs suitable for the capacity analysis count toward the minimum needed for that recommendation."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1733,
+      "endChar": 1838,
+      "exactQuote": "If a pier falls short, its supervisor should extend the trial there rather than extending both schedules."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1839,
+      "endChar": 1903,
+      "exactQuote": "This decision is made after the planner reviews any tagged runs."
+    }
+  ]
+}
