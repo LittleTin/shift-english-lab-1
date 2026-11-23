@@ -45,7 +45,8 @@
 @media(max-width:760px){.mobile-menu{min-width:44px;min-height:44px}.breadcrumbs strong{max-width:26vw}.sidebar-close{display:grid;place-items:center;position:absolute;right:10px;top:9px;min-height:44px;min-width:44px;border:1px solid #82977b;background:#28452f;color:#fff;border-radius:8px}}
 /* Keep secondary text legible without depending on color to signal state. */
 .hint,.footer-note,.page-sub{color:#465842}.sidebar .sidebar-bottom p{color:#d4e0cd}
-.page-error{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;padding:12px;margin:0 0 14px;border:1px solid #d19481;border-left:4px solid #914629;border-radius:10px;background:#fff1e9;color:#632615;overflow-wrap:anywhere}.page-error[hidden]{display:none}.page-error p{margin:0}.page-error button{flex-shrink:0;min-height:44px}
+.page-error{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;padding:12px;margin:0 0 14px;border:1px solid #d19481;border-left:4px solid #914629;border-radius:10px;background:#fff1e9;color:#632615;overflow-wrap:anywhere}.page-error[hidden],.page-error button[hidden]{display:none}.page-error p{margin:0;min-width:0}.page-error button{flex-shrink:0;min-height:44px}
+@media(max-width:560px){.page-error{display:grid;grid-template-columns:minmax(0,1fr)}.page-error button.btn{width:100%;min-height:44px;min-width:0;max-width:100%;white-space:normal}}
 
 .sidebar :focus-visible{outline-color:var(--lime)}
 

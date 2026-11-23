@@ -1352,7 +1352,7 @@ function beginReadingClock(s){
  s.sectionDeadline=now()+75*60000;s.deadline=s.sectionDeadline;delete s.readingStartsOnReturn;
  return true;
 }
-async function enterReading(){const s=state.active;if(!formal(s)||s.examPhase==='reading')return;stopAudio();const idx=s.questionIds.findIndex(id=>sessionQuestion(id,s)?.part>=5);if(idx<0)return finishSession(true);s.examPhase='reading';s.index=idx;s.sectionDeadline=null;s.readingStartsOnReturn=true;beginReadingClock(s);await persist();if(route==='quiz')render();notify('Listening is complete. Reading lasts 75 minutes. You cannot return to Listening.')}
+async function enterReading(){const s=state.active;if(!formal(s)||s.examPhase==='reading')return;stopAudio();const idx=s.questionIds.findIndex(id=>sessionQuestion(id,s)?.part>=5);if(idx<0)return finishSession(true);s.examPhase='reading';s.index=idx;s.sectionDeadline=null;s.readingStartsOnReturn=true;beginReadingClock(s);await persist();if(route==='quiz')render();notify('Listening is complete. Reading lasts 75 minutes. Listening answers are now locked.')}
 function questionReference(id){
  const uuid=window.SHIFT_QUESTION_UUID(id);
  return '<div class="question-reference"><span>UUID: <code dir="ltr">'+uuid+'</code></span><button type="button" class="copy-question-uuid" data-action="copy-question-uuid" aria-label="Copy question UUID '+uuid+'">Copy</button></div>';
