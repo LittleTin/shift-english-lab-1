@@ -1,0 +1,66 @@
+{
+  "id": "t09-q174",
+  "testId": "test-09",
+  "number": 174,
+  "part": 7,
+  "groupId": "t09-r-p7-07",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "foundation",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "A volunteer changes the arrangement in one corner. The label cards are still readable in the previous close photograph. How should this morning’s setup be recorded?",
+  "promptZh": "志工調整了一個角落的排列。前次拍的近照仍看得清標示卡。這天上午應如何記錄布展？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Log “same layout” because the card text did not change.",
+      "zh": "登記為「配置相同」，因為卡片文字沒有改。",
+      "whyZh": "即使舊近照仍看得清卡片文字，牆面一角改動也不能填「配置相同」。"
+    },
+    {
+      "id": "B",
+      "text": "Keep only a new wide picture of the wall.",
+      "zh": "只保存一張新的展牆全景照。",
+      "whyZh": "即使只改一角，也要保存兩張照片。"
+    },
+    {
+      "id": "C",
+      "text": "Keep a new wide picture and a new close picture of the cards.",
+      "zh": "保存一張新的全景照及一張新的卡片近照。",
+      "whyZh": "牆面一角有改動，不能走無變更的例外；仍須保留全景和卡片近照。"
+    },
+    {
+      "id": "D",
+      "text": "Keep only the old close picture because it shows the readable details.",
+      "zh": "只保留前次近照，因為細節可讀。",
+      "whyZh": "前次卡片近照無法記錄改後的排列，也不符合改動時拍兩張的規則。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "牆面一角有改動，不能走無變更的例外；仍須保留全景和卡片近照。",
+  "evidence": "volunteers will take two photographs for the setup record: a wide view of the wall and a close view of the label cards. / Take and keep a new pair even if only one corner of the wall has changed.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 931,
+      "endChar": 1050,
+      "exactQuote": "volunteers will take two photographs for the setup record: a wide view of the wall and a close view of the label cards."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1128,
+      "endChar": 1201,
+      "exactQuote": "Take and keep a new pair even if only one corner of the wall has changed."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "close view",
+      "zh": "近照；近景",
+      "note": "指靠近物件拍出的畫面，便於閱讀細節。"
+    }
+  ]
+}

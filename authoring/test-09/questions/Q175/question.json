@@ -1,0 +1,72 @@
+{
+  "id": "t09-q175",
+  "testId": "test-09",
+  "number": 175,
+  "part": 7,
+  "groupId": "t09-r-p7-07",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "Two participants named Kai have prints at opposite ends of the wall. The Kai on the left has a last name that comes later alphabetically. How should the entries be documented?",
+  "promptZh": "兩位名叫凱的參加者分別把相片掛在展牆的兩端。左側那位的姓按字母排列較後。應如何標記並編列這兩件作品？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Write their last initials on the prints and list the right-hand entry first.",
+      "zh": "把兩人的姓氏首字母寫在相片上，並把右側作品列在前面。",
+      "whyZh": "不能在相片上寫字；節目單也不按姓名字母排序。"
+    },
+    {
+      "id": "B",
+      "text": "Add their last initials to the removable cards and preserve wall order in the program.",
+      "zh": "在可取下的卡片各加上姓氏首字母，節目單照展牆順序編列。",
+      "whyZh": "同名以卡上的姓氏首字母區分，不寫在相片上；節目單要依牆面排列順序。"
+    },
+    {
+      "id": "C",
+      "text": "Add their last initials to the cards but sort the program by the initials.",
+      "zh": "在卡片各加上姓氏首字母，但節目單按首字母排序。",
+      "whyZh": "卡片作法正確，節目單排序卻違反依牆面順序的規定。"
+    },
+    {
+      "id": "D",
+      "text": "Write the layout slot numbers on both prints and preserve wall order in the program.",
+      "zh": "把牆位編號寫在兩張相片上，節目單則照展牆順序編列。",
+      "whyZh": "節目單順序正確，但位置編號只寫在配置草圖上；同名應用卡片辨識。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "同名以卡上的姓氏首字母區分，不寫在相片上；節目單要依牆面排列順序。",
+  "evidence": "The preparation team numbers the slots on its layout sketch, not on the prints. / If two participants share a given name, the guide will add their last initials to the cards. / The printed program keeps the entries in wall order, not in alphabetical order.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 572,
+      "endChar": 651,
+      "exactQuote": "The preparation team numbers the slots on its layout sketch, not on the prints."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 741,
+      "endChar": 833,
+      "exactQuote": "If two participants share a given name, the guide will add their last initials to the cards."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 834,
+      "endChar": 913,
+      "exactQuote": "The printed program keeps the entries in wall order, not in alphabetical order."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "last initial",
+      "zh": "姓氏首字母",
+      "note": "initial 指姓名中某部分的第一個字母；此處為姓氏。"
+    }
+  ]
+}

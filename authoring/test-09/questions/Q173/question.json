@@ -1,0 +1,66 @@
+{
+  "id": "t09-q173",
+  "testId": "test-09",
+  "number": 173,
+  "part": 7,
+  "groupId": "t09-r-p7-07",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "Gao requests a wall space on time. On Friday, he changes only the title. Another participant changes to a different print of unknown width. What should they do?",
+  "promptZh": "高準時預留牆面。星期五，他只改標題；另一位參加者換了相片，尚未提供寬度。兩人應怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Gao should tell the guide the new title at the door; the other participant should send the new width first.",
+      "zh": "高應在入口告知導覽員新標題；另一位參加者應先寄送新相片寬度。",
+      "whyZh": "只改標題保留原位置，由入口導覽員收新標題；換相片則要先確認寬度。"
+    },
+    {
+      "id": "B",
+      "text": "Gao should send a width first; the other participant can tell the guide only the new title.",
+      "zh": "高應先寄寬度；另一位只需告知導覽員新標題。",
+      "whyZh": "只改題名不需重查寬度，改用不同相片則不能只報題名。"
+    },
+    {
+      "id": "C",
+      "text": "Both should send only a new title to the guide.",
+      "zh": "兩人都只須把新標題告訴導覽員。",
+      "whyZh": "此流程僅適用於相片本身未變；換相片的人還須先提供寬度。"
+    },
+    {
+      "id": "D",
+      "text": "Both should give up their wall spaces because the deadline has passed.",
+      "zh": "截止日已過，兩人都應放棄牆面位置。",
+      "whyZh": "通知明列截止後的更改流程；沒有規定星期四後有變動就失去位置。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "只改標題保留原位置，由入口導覽員收新標題；換相片則要先確認寬度。",
+  "evidence": "If you change the title after that, keep the same wall space and give the guide the new title at the door. / If you change to a different print, you must send its width first",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 1371,
+      "endChar": 1477,
+      "exactQuote": "If you change the title after that, keep the same wall space and give the guide the new title at the door."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1478,
+      "endChar": 1543,
+      "exactQuote": "If you change to a different print, you must send its width first"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "provisional title",
+      "zh": "暫定標題",
+      "note": "provisional 指現時可用但之後還能修訂。"
+    }
+  ]
+}
