@@ -4,56 +4,56 @@
   "number": 174,
   "part": 7,
   "groupId": "t09-r-p7-07",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
-  "difficulty": "foundation",
+  "difficulty": "intermediate",
   "tags": [
     "reading-comprehension",
     "daily"
   ],
-  "prompt": "A volunteer changes the arrangement in one corner. The label cards are still readable in the previous close photograph. How should this morning’s setup be recorded?",
-  "promptZh": "志工調整了一個角落的排列。前次拍的近照仍看得清標示卡。這天上午應如何記錄布展？",
+  "prompt": "What should appear in the setup record over two mornings if the wall is identical on the first morning but a print moves on the second, with its card text unchanged?",
+  "promptZh": "如果第一天早上牆面配置不變，第二天移動一幅作品但不改卡片文字，兩天各該留下什麼紀錄？",
   "options": [
     {
       "id": "A",
-      "text": "Log “same layout” because the card text did not change.",
-      "zh": "登記為「配置相同」，因為卡片文字沒有改。",
-      "whyZh": "即使舊近照仍看得清卡片文字，牆面一角改動也不能填「配置相同」。"
+      "text": "A “same layout” entry on both mornings.",
+      "zh": "兩天都寫「配置不變」。",
+      "whyZh": "第二天作品移位，即使文字不變，牆面配置也變了。"
     },
     {
       "id": "B",
-      "text": "Keep only a new wide picture of the wall.",
-      "zh": "只保存一張新的展牆全景照。",
-      "whyZh": "即使只改一角，也要保存兩張照片。"
+      "text": "A “same layout” entry first, then only a new wide image.",
+      "zh": "第一天寫「配置不變」，第二天只拍新的全景照。",
+      "whyZh": "第一天做法正確，但第二天變動須另拍一張標籤特寫。"
     },
     {
       "id": "C",
-      "text": "Keep a new wide picture and a new close picture of the cards.",
-      "zh": "保存一張新的全景照及一張新的卡片近照。",
-      "whyZh": "牆面一角有改動，不能走無變更的例外；仍須保留全景和卡片近照。"
+      "text": "A “same layout” entry first, then both new photographs.",
+      "zh": "第一天寫「配置不變」，第二天重拍兩張照片。",
+      "whyZh": "第一天配置未變只需登記；第二天作品移位，即使標籤文字未變，仍須重拍全景與特寫。"
     },
     {
       "id": "D",
-      "text": "Keep only the old close picture because it shows the readable details.",
-      "zh": "只保留前次近照，因為細節可讀。",
-      "whyZh": "前次卡片近照無法記錄改後的排列，也不符合改動時拍兩張的規則。"
+      "text": "Two new photographs first, then just a new close image.",
+      "zh": "第一天重拍兩張，第二天只重拍特寫。",
+      "whyZh": "第一天不須重拍；第二天缺少顯示變動的全景照。"
     }
   ],
   "answer": "C",
-  "explanationZh": "牆面一角有改動，不能走無變更的例外；仍須保留全景和卡片近照。",
-  "evidence": "volunteers will take two photographs for the setup record: a wide view of the wall and a close view of the label cards. / Take and keep a new pair even if only one corner of the wall has changed.",
+  "explanationZh": "第一天配置未變只需登記；第二天作品移位，即使標籤文字未變，仍須重拍全景與特寫。",
+  "evidence": "Take and keep a new pair even if only one corner of the wall has changed. / For no-change days, write “same layout” in the log; there is no need to take new photos.",
   "evidenceSpans": [
-    {
-      "sourceField": "passage",
-      "startChar": 931,
-      "endChar": 1050,
-      "exactQuote": "volunteers will take two photographs for the setup record: a wide view of the wall and a close view of the label cards."
-    },
     {
       "sourceField": "passage",
       "startChar": 1128,
       "endChar": 1201,
       "exactQuote": "Take and keep a new pair even if only one corner of the wall has changed."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1202,
+      "endChar": 1290,
+      "exactQuote": "For no-change days, write “same layout” in the log; there is no need to take new photos."
     }
   ],
   "vocabulary": [

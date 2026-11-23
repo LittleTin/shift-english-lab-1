@@ -4,54 +4,81 @@
   "number": 184,
   "part": 7,
   "groupId": "t09-r-p7-09",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
-  "difficulty": "foundation",
+  "difficulty": "intermediate",
   "tags": [
     "reading-comprehension",
     "double-passage",
     "daily"
   ],
-  "prompt": "Why does the station want a sound mentioned in a live-chat booking note?",
-  "promptZh": "為何電台要投稿者在現場訪談的預約備註提及音效？",
+  "prompt": "If the contributor had booked by Friday morning, which suggestion would address the wish to have the piano heard on air and still follow the live-chat sound rules?",
+  "promptZh": "假設投稿人星期五早上就完成預約，哪項建議能兼顧讓鋼琴聲播出的願望與現場訪談的聲音規則？",
   "options": [
     {
       "id": "A",
-      "text": "To add it under the host’s voice.",
-      "zh": "好加在主持人說話的背景。",
-      "whyZh": "現場聲音可在對話後播放，而不是當背景。"
+      "text": "Speak live with the host; play the short tune quietly during the conversation, as noted in the booking.",
+      "zh": "和主持人現場交談；如預約備註所寫，在談話中以較小音量播放短曲。",
+      "whyZh": "事先備註正確，但訪談進行中不可用音樂墊底，即使小聲也不行。"
     },
     {
       "id": "B",
-      "text": "To use it instead of the conversation.",
-      "zh": "好拿聲音取代對談。",
-      "whyZh": "短聲音是附加內容，不取代與主持人的對談。"
+      "text": "Speak live with the host; offer the short tune after the chat without mentioning it in the booking.",
+      "zh": "和主持人現場交談；結束後再提出播放短曲，不事先寫在預約備註。",
+      "whyZh": "播放時機正確，但想播的聲音須事先填入，讓電台有時間審查。"
     },
     {
       "id": "C",
-      "text": "To check it in advance.",
-      "zh": "以便事先確認。",
-      "whyZh": "公告直接說在備註提及，是讓電台事先檢查。"
+      "text": "Mention the short tune in the booking and ask the host to play it after the conversation.",
+      "zh": "預約時註明這段短曲，詢問主持人能否在談話結束後播放。",
+      "whyZh": "本人盼鋼琴曲能播出，但不必如原提議在談話時播放；可先在備註提出，談完才播。"
     },
     {
       "id": "D",
-      "text": "To change the program’s submission deadline.",
-      "zh": "好更改節目的投稿期限。",
-      "whyZh": "音效備註不改變任何截止時間。"
+      "text": "Mention the short tune in the booking and ask the host to play it in place of the conversation.",
+      "zh": "預約時註明這段短曲，詢問主持人能否以它代替談話。",
+      "whyZh": "備註雖正確，但現場形式本身必須有兩分鐘的對談，不是單播音樂。"
     }
   ],
   "answer": "C",
-  "explanationZh": "公告直接說在備註提及，是讓電台事先檢查。",
-  "evidence": "Mention any sound you want played in the booking note so we can check it in advance.",
+  "explanationZh": "本人盼鋼琴曲能播出，但不必如原提議在談話時播放；可先在備註提出，談完才播。",
+  "evidence": "A live chat is a two-minute conversation with our host; book it by Friday at noon. / For live chats, the host can play a short sound after the conversation, but not underneath it. / Mention any sound you want played in the booking note so we can check it in advance. / The piano tune is my own, and I was hoping the station could play it while I tell the story.",
   "evidenceSpans": [
     {
+      "sourceField": "passage",
+      "startChar": 219,
+      "endChar": 301,
+      "exactQuote": "A live chat is a two-minute conversation with our host; book it by Friday at noon.",
       "documentId": "doc1",
+      "documentStartChar": 175,
+      "documentEndChar": 257
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 502,
+      "endChar": 596,
+      "exactQuote": "For live chats, the host can play a short sound after the conversation, but not underneath it.",
+      "documentId": "doc1",
+      "documentStartChar": 458,
+      "documentEndChar": 552
+    },
+    {
       "sourceField": "passage",
       "startChar": 597,
       "endChar": 681,
+      "exactQuote": "Mention any sound you want played in the booking note so we can check it in advance.",
+      "documentId": "doc1",
       "documentStartChar": 553,
-      "documentEndChar": 637,
-      "exactQuote": "Mention any sound you want played in the booking note so we can check it in advance."
+      "documentEndChar": 637
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1584,
+      "endChar": 1676,
+      "exactQuote": "The piano tune is my own, and I was hoping the station could play it while I tell the story.",
+      "documentId": "doc2",
+      "documentStartChar": 487,
+      "documentEndChar": 579
     }
   ],
   "vocabulary": [
