@@ -1,0 +1,60 @@
+{
+  "id": "t09-q138",
+  "testId": "test-09",
+  "number": 138,
+  "part": 6,
+  "groupId": "t09-r-p6-02",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "foundation",
+  "tags": [
+    "text-completion",
+    "daily"
+  ],
+  "prompt": "Choose the best word or sentence for blank [138].",
+  "promptZh": "請選出最適合填入第 138 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "return",
+      "zh": "返回",
+      "whyZh": "不是要求回到另一處，而是可選在較涼處等到輪到。"
+    },
+    {
+      "id": "B",
+      "text": "wait",
+      "zh": "等候",
+      "whyZh": "第二等候區的用途就是讓訪客等到叫自己的名字。"
+    },
+    {
+      "id": "C",
+      "text": "register",
+      "zh": "登記",
+      "whyZh": "已照原名單叫名字，移動不需重新登記。"
+    },
+    {
+      "id": "D",
+      "text": "serve",
+      "zh": "提供餐點；服務",
+      "whyZh": "訪客是在等使用烤爐，沒有被要求在長椅處服務。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "第二等候區的用途就是讓訪客等到叫自己的名字。",
+  "evidence": "You are welcome to wait there until it’s your turn.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 829,
+      "endChar": 880,
+      "exactQuote": "You are welcome to wait there until it’s your turn."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "until it’s your turn",
+      "zh": "直到輪到你",
+      "note": "until 帶出等待結束的時點。"
+    }
+  ]
+}

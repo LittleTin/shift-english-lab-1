@@ -1,0 +1,66 @@
+{
+  "id": "t09-q135",
+  "testId": "test-09",
+  "number": 135,
+  "part": 6,
+  "groupId": "t09-r-p6-02",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "foundation",
+  "tags": [
+    "text-completion",
+    "daily"
+  ],
+  "prompt": "Choose the best word or sentence for blank [135].",
+  "promptZh": "請選出最適合填入第 135 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "As if",
+      "zh": "彷彿",
+      "whyZh": "as if 用於描述看起來像某事；這裡是在就實際冷藏狀態給指示。"
+    },
+    {
+      "id": "B",
+      "text": "Now that",
+      "zh": "既然",
+      "whyZh": "這會把已冷藏當成每人都有的情況；通知要給帶不同狀態麵團的人。"
+    },
+    {
+      "id": "C",
+      "text": "If",
+      "zh": "如果",
+      "whyZh": "是否冷藏因人而異；只有符合此情況才需要提早取出回溫；已經柔軟的麵團可直接放上板子。"
+    },
+    {
+      "id": "D",
+      "text": "Unless",
+      "zh": "除非",
+      "whyZh": "會把適用條件倒轉，變成未冷藏才需要先拿出來。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "是否冷藏因人而異；只有符合此情況才需要提早取出回溫；已經柔軟的麵團可直接放上板子。",
+  "evidence": "Please bring dough that is ready to stretch. / If your dough was chilled, take it out ahead of time so it has a chance to soften.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 49,
+      "endChar": 93,
+      "exactQuote": "Please bring dough that is ready to stretch."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 188,
+      "endChar": 270,
+      "exactQuote": "If your dough was chilled, take it out ahead of time so it has a chance to soften."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "ahead of time",
+      "zh": "提早",
+      "note": "表示在預定時點前先做，而不是到現場才做。"
+    }
+  ]
+}

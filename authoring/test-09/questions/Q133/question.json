@@ -1,0 +1,66 @@
+{
+  "id": "t09-q133",
+  "testId": "test-09",
+  "number": 133,
+  "part": 6,
+  "groupId": "t09-r-p6-01",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Choose the best word or sentence for blank [133].",
+  "promptZh": "請選出最適合填入第 133 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "Please send the two sign-offs as separate messages.",
+      "zh": "請分別發送兩封核准訊息。",
+      "whyZh": "依各自時程回覆，印刷廠能在收到大廳版核准後先放行，而員工版仍保留待確認。"
+    },
+    {
+      "id": "B",
+      "text": "Please wait and send both approvals in a single message.",
+      "zh": "請等兩張都核准後，再併在同一封訊息寄出。",
+      "whyZh": "這會迫使大廳版等明天，和後文說不用等員工版審核相反。"
+    },
+    {
+      "id": "C",
+      "text": "Please give both proofs the file name of the first map.",
+      "zh": "請把兩張校樣都改成第一張地圖的檔名。",
+      "whyZh": "檔名相同會讓兩張難以區分；後段要求寫出檔名以明確指出核准對象。"
+    },
+    {
+      "id": "D",
+      "text": "Please ask the printer to release both maps once Reception replies.",
+      "zh": "請在接待櫃台回覆後請印刷廠放行兩張圖。",
+      "whyZh": "今天只能放行大廳版；後文要求員工版仍待確認。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "依各自時程回覆，印刷廠能在收到大廳版核准後先放行，而員工版仍保留待確認。",
+  "evidence": "Reception can sign off on the lobby proof today. Building Services will review the staff proof tomorrow. / This lets the printer release the lobby map without waiting for the staff review, while keeping the second file on hold.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 608,
+      "endChar": 712,
+      "exactQuote": "Reception can sign off on the lobby proof today. Building Services will review the staff proof tomorrow."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 765,
+      "endChar": 885,
+      "exactQuote": "This lets the printer release the lobby map without waiting for the staff review, while keeping the second file on hold."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "sign off on",
+      "zh": "正式核准",
+      "note": "用於同意某份文件或版面可以進下一步。"
+    }
+  ]
+}

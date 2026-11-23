@@ -1,0 +1,60 @@
+{
+  "id": "t09-q132",
+  "testId": "test-09",
+  "number": 132,
+  "part": 6,
+  "groupId": "t09-r-p6-01",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Choose the best word or sentence for blank [132].",
+  "promptZh": "請選出最適合填入第 132 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "replacing",
+      "zh": "替換",
+      "whyZh": "把分機號碼換掉不會解決統一版型到底印不印分機的取捨；沒有替代內容。"
+    },
+    {
+      "id": "B",
+      "text": "concealing",
+      "zh": "隱藏",
+      "whyZh": "若兩版都看不到分機，和前一項省略員工版的情況沒有形成相反選擇。"
+    },
+    {
+      "id": "C",
+      "text": "displaying",
+      "zh": "顯示",
+      "whyZh": "一種取捨是員工版少了分機，另一種是大廳版出現分機。"
+    },
+    {
+      "id": "D",
+      "text": "verifying",
+      "zh": "核實",
+      "whyZh": "檢查正確性不能說明分機會不會出現在大廳版上。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "一種取捨是員工版少了分機，另一種是大廳版出現分機。",
+  "evidence": "choosing between omitting the extensions from the staff map and displaying them on the lobby copy.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 477,
+      "endChar": 575,
+      "exactQuote": "choosing between omitting the extensions from the staff map and displaying them on the lobby copy."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "omit",
+      "zh": "省略",
+      "note": "omit X from Y 表示從 Y 中省去 X。"
+    }
+  ]
+}

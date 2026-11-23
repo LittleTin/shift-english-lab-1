@@ -1,0 +1,60 @@
+{
+  "id": "t09-q134",
+  "testId": "test-09",
+  "number": 134,
+  "part": 6,
+  "groupId": "t09-r-p6-01",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Choose the best word or sentence for blank [134].",
+  "promptZh": "請選出最適合填入第 134 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "delivery",
+      "zh": "交付件",
+      "whyZh": "這裡要在核准時列檔名，而不是把檔名放在交付品中。"
+    },
+    {
+      "id": "B",
+      "text": "estimate",
+      "zh": "估價單",
+      "whyZh": "本段沒有談價格或工時估算。"
+    },
+    {
+      "id": "C",
+      "text": "complaint",
+      "zh": "申訴",
+      "whyZh": "不必抱怨某項缺失；需要清楚告知已核准哪張。"
+    },
+    {
+      "id": "D",
+      "text": "reply",
+      "zh": "回覆",
+      "whyZh": "在對印刷廠的核准回覆中附檔名，能辨認校樣。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "在對印刷廠的核准回覆中附檔名，能辨認校樣。",
+  "evidence": "Please include the proof’s file name in your reply so there’s no doubt which map you approved.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 886,
+      "endChar": 980,
+      "exactQuote": "Please include the proof’s file name in your reply so there’s no doubt which map you approved."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "on hold",
+      "zh": "暫緩；保留待處理",
+      "note": "keep a file on hold 在這裡指先不放行該檔。"
+    }
+  ]
+}

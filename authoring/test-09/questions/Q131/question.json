@@ -1,0 +1,66 @@
+{
+  "id": "t09-q131",
+  "testId": "test-09",
+  "number": 131,
+  "part": 6,
+  "groupId": "t09-r-p6-01",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Choose the best word or sentence for blank [131].",
+  "promptZh": "請選出最適合填入第 131 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "Only if",
+      "zh": "只有在……時才",
+      "whyZh": "會把名稱相同限制成各自核對的必要條件；兩張校樣本來就有不同用途，均需各自檢查。"
+    },
+    {
+      "id": "B",
+      "text": "Even though",
+      "zh": "儘管",
+      "whyZh": "承認房間名稱相符，仍要求各自對照；兩張圖並非所有內容都相同。"
+    },
+    {
+      "id": "C",
+      "text": "Until",
+      "zh": "直到",
+      "whyZh": "目前描述的是兩圖名稱相符，不是等待名稱核對完成才停止工作。"
+    },
+    {
+      "id": "D",
+      "text": "So that",
+      "zh": "以便",
+      "whyZh": "分開核對的目的不是為了讓名稱彼此相符，而是發現各版特有的差異。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "承認房間名稱相符，仍要求各自對照；兩張圖並非所有內容都相同。",
+  "evidence": "The lobby map gives room names; the staff map gives names and internal phone extensions. / please check each proof against its own reference file.",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 115,
+      "endChar": 203,
+      "exactQuote": "The lobby map gives room names; the staff map gives names and internal phone extensions."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 238,
+      "endChar": 293,
+      "exactQuote": "please check each proof against its own reference file."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "against its own reference file",
+      "zh": "對照各自的參考檔",
+      "note": "check X against Y 表示拿 X 與 Y 比對。"
+    }
+  ]
+}
