@@ -1,0 +1,52 @@
+{
+  "id": "t09-q120",
+  "testId": "test-09",
+  "number": 120,
+  "part": 5,
+  "topic": "business",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "incomplete-sentence",
+    "business"
+  ],
+  "prompt": "The first memo said the delay was due to a licensing dispute. The revised memo names just one cause, says that no dispute existed, and states that the delay was _____ an expired certificate.",
+  "promptZh": "第一份備忘錄說延誤是授權爭議造成的；修訂版只列一項原因，說根本沒有爭議，延誤完全是憑證到期所致。",
+  "options": [
+    {
+      "id": "A",
+      "text": "worsened by",
+      "zh": "因……惡化",
+      "whyZh": "這只把憑證寫成加重延誤的因素，沒有給出用以取代原說法的原因。"
+    },
+    {
+      "id": "B",
+      "text": "unrelated to",
+      "zh": "與……無關",
+      "whyZh": "會排除憑證因素，讓修訂版沒有解釋延誤原因。"
+    },
+    {
+      "id": "C",
+      "text": "attributable solely to",
+      "zh": "只能歸因於",
+      "whyZh": "修訂版推翻前一說法，將原因完全歸於憑證到期。"
+    },
+    {
+      "id": "D",
+      "text": "masked by",
+      "zh": "被……掩蓋",
+      "whyZh": "掩蓋某事與造成延誤不同。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "修訂版推翻前一說法，將原因完全歸於憑證到期。",
+  "evidence": "The first memo said the delay was due to a licensing dispute. The revised memo names just one cause, says that no dispute existed, and states that the delay was attributable solely to an expired certificate.",
+  "evidenceZh": "第一份備忘錄說延誤是授權爭議造成的；修訂版只列一項原因，說根本沒有爭議，延誤完全是憑證到期所致。",
+  "vocabulary": [
+    {
+      "term": "licensing dispute",
+      "zh": "授權爭議",
+      "note": "licensing 在此指使用授權，不是駕照。"
+    }
+  ]
+}
