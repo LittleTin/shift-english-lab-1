@@ -4,49 +4,48 @@
   "number": 125,
   "part": 5,
   "topic": "daily",
-  "revision": 1,
-  "difficulty": "foundation",
+  "revision": 2,
+  "difficulty": "intermediate",
   "tags": [
     "incomplete-sentence",
     "daily"
   ],
-  "prompt": "The puppet workshop had just enough needles for everyone to start, but when two broke there were no _____ to hand out.",
-  "promptZh": "木偶工作坊本來的針剛好夠大家開始使用，但兩根斷掉後，沒有備用的針可發給大家。",
+  "prompt": "The puppet workshop had no spare needles. Two participants agreed to share one until the others had finished; _____, neither would have been able to complete a puppet.",
+  "promptZh": "布偶工作坊沒有備用針。兩位參加者同意共用一支，直到其他人做完；＿＿，這兩人原本都無法完成布偶。",
   "options": [
     {
       "id": "A",
-      "text": "reminders",
-      "zh": "提醒",
-      "whyZh": "斷針後少的是替換工具，不是提醒事項。"
+      "text": "meanwhile",
+      "zh": "與此同時",
+      "whyZh": "表示同步發生，但完成與否取決於是否共用；這裡不是把兩項動作並列。"
     },
     {
       "id": "B",
-      "text": "refunds",
-      "zh": "退款",
-      "whyZh": "退款不是可當場分發以替代斷針的工具。"
+      "text": "likewise",
+      "zh": "同樣地",
+      "whyZh": "沒有前一個可類比的結果；後句是假設沒有共用時的結果。"
     },
     {
       "id": "C",
-      "text": "spares",
-      "zh": "備用品",
-      "whyZh": "spares 指可以在原用品損壞時拿來替換的備品。"
+      "text": "otherwise",
+      "zh": "否則",
+      "whyZh": "把共用和不共用的假設結果連起來；would have been 表明是假設未採共用的過去結果。"
     },
     {
       "id": "D",
-      "text": "demonstrations",
-      "zh": "示範",
-      "whyZh": "示範無法補足兩根斷掉的針。"
+      "text": "thereafter",
+      "zh": "其後",
+      "whyZh": "只交代時間先後，會將無法完成誤連到同意共用之後；句子要表達的是不同做法的條件。"
     }
   ],
   "answer": "C",
-  "explanationZh": "spares 指可以在原用品損壞時拿來替換的備品。",
-  "evidence": "The puppet workshop had just enough needles for everyone to start, but when two broke there were no spares to hand out.",
-  "evidenceZh": "木偶工作坊本來的針剛好夠大家開始使用，但兩根斷掉後，沒有備用的針可發給大家。",
+  "explanationZh": "把共用和不共用的假設結果連起來；would have been 表明是假設未採共用的過去結果。",
+  "evidence": "The puppet workshop had no spare needles. Two participants agreed to share one until the others had finished; otherwise, neither would have been able to complete a puppet.",
+  "evidenceZh": "布偶工作坊沒有備用針。兩位參加者同意共用一支，直到其他人做完；若非如此，兩人原本都無法完成布偶。",
   "vocabulary": [
     {
-      "term": "hand out",
-      "zh": "分發",
-      "note": "指把工具或講義逐一發給參與者。"
+      "term": "otherwise",
+      "zh": "否則；若未採取該作法"
     }
   ]
 }

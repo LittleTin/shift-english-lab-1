@@ -4,49 +4,48 @@
   "number": 118,
   "part": 5,
   "topic": "business",
-  "revision": 1,
-  "difficulty": "foundation",
+  "revision": 2,
+  "difficulty": "intermediate",
   "tags": [
     "incomplete-sentence",
     "business"
   ],
-  "prompt": "The manager approved overtime for the installers, not for the observers. Only the hours _____ by employees assigned to installation may be included on this form.",
-  "promptZh": "主管只核准安裝人員加班，不包含觀察人員。這張表只可填寫指派執行安裝的員工實際工作的時數。",
+  "prompt": "Hours spent observing from the platform are not eligible for overtime. However, employees who resume installation after a scheduled observation period may claim the hours _____ to the installation itself.",
+  "promptZh": "在平台上做觀察的時段不列入加班。不過員工若在排定的觀察時段結束後恢復安裝，可申報＿＿安裝工作本身的時數。",
   "options": [
     {
       "id": "A",
-      "text": "work",
-      "zh": "工作（原形）",
-      "whyZh": "work 為原形，不能靠後接 by 片語來被動修飾前面的 hours。"
+      "text": "preceding",
+      "zh": "在……之前",
+      "whyZh": "安裝前的觀察時段明文排除；preceding 通常直接接受詞，本句有 to。"
     },
     {
       "id": "B",
-      "text": "were worked",
-      "zh": "被工作（完整過去被動式）",
-      "whyZh": "were worked 已是限定動詞；在沒有 that／which 銜接的情況下，會與主句的 may be included 形成兩個並列不了的謂語。"
+      "text": "incidental",
+      "zh": "附帶的",
+      "whyZh": "附帶於安裝的活動也不一定是安裝本身；句中要區分純觀察和實際施作。"
     },
     {
       "id": "C",
-      "text": "working",
-      "zh": "正在工作",
-      "whyZh": "working 會讓 hours 成為執行工作的主體，與 by employees 指出人員是執行者不符。"
+      "text": "adjacent",
+      "zh": "相鄰的",
+      "whyZh": "時間銜接不代表該時段用於安裝；不能把緊鄰安裝的觀察算入。"
     },
     {
       "id": "D",
-      "text": "worked",
-      "zh": "所工作的（過去分詞）",
-      "whyZh": "worked by employees 是縮短的被動關係子句，意為由安裝人員實際做了的工時。"
+      "text": "devoted",
+      "zh": "用於",
+      "whyZh": "hours devoted to X 指實際投入 X 的時數；即使同一員工連做兩件事，仍只可申報安裝的部分。"
     }
   ],
   "answer": "D",
-  "explanationZh": "正確的 hours worked by employees 等於 hours that were worked by employees。指由安裝人員實際工作的時數，不包含觀察人員。",
-  "evidence": "The manager approved overtime for the installers, not for the observers. Only the hours worked by employees assigned to installation may be included on this form.",
-  "evidenceZh": "主管只核准安裝人員加班，不包含觀察人員。這張表只可填寫指派執行安裝的員工實際工作的時數。",
+  "explanationZh": "hours devoted to X 指實際投入 X 的時數；即使同一員工連做兩件事，仍只可申報安裝的部分。",
+  "evidence": "Hours spent observing from the platform are not eligible for overtime. However, employees who resume installation after a scheduled observation period may claim the hours devoted to the installation itself.",
+  "evidenceZh": "在平台上做觀察的時段不列入加班。不過員工若在排定的觀察時段結束後恢復安裝，只可申報實際投入安裝工作本身的時數。",
   "vocabulary": [
     {
-      "term": "hours worked",
-      "zh": "實際工作時數",
-      "note": "hours worked 是工時表常見寫法，worked 直接修飾 hours。"
+      "term": "devote time to",
+      "zh": "把時間用於某事"
     }
   ]
 }
