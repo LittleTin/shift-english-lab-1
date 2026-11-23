@@ -1,0 +1,59 @@
+{
+  "id": "t10-q132",
+  "testId": "test-10",
+  "number": 132,
+  "part": 6,
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "daily"
+  ],
+  "prompt": "Choose the best word or sentence for blank [132].",
+  "promptZh": "請選出最適合填入第 132 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "The replacement packs are for residents’ records.",
+      "zh": "補寄的資料是供住戶留存之用。",
+      "whyZh": "重寄的是圖示與設計說明，沒附回覆卡；報告也只納入截止前已收到的回覆，因此用途是提供住戶留存，而不是補收意見。"
+    },
+    {
+      "id": "B",
+      "text": "The replacement packs should be entered as new responses.",
+      "zh": "補寄的資料應登記成新的回覆。",
+      "whyZh": "補寄資料是寄出的資料，不是住戶的回覆，不能登記成新的回覆。"
+    },
+    {
+      "id": "C",
+      "text": "The diagrams will be sent only to households that already voted.",
+      "zh": "只有已投票的住戶才會收到圖示。",
+      "whyZh": "文中說寄到四戶更新後的地址，沒要求這些住戶必須已投票。"
+    },
+    {
+      "id": "D",
+      "text": "Replies received after the new mailing will be counted in the report figures.",
+      "zh": "重寄後收到的回覆會納入這次報告的統計數字。",
+      "whyZh": "報告只涵蓋昨晚截止前已送達的回覆，不包括補寄之後收到的回覆。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "重寄的是圖示與設計說明，沒附回覆卡；報告也只納入截止前已收到的回覆，因此用途是提供住戶留存，而不是補收意見。",
+  "groupId": "t10-r-p6-01",
+  "evidence": "without the original reply card / the figures cover only replies already in our office at last night’s cutoff",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1074,
+      "endChar": 1105,
+      "exactQuote": "without the original reply card"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1239,
+      "endChar": 1314,
+      "exactQuote": "the figures cover only replies already in our office at last night’s cutoff"
+    }
+  ]
+}

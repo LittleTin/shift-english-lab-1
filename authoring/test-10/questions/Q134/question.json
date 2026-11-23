@@ -1,0 +1,53 @@
+{
+  "id": "t10-q134",
+  "testId": "test-10",
+  "number": 134,
+  "part": 6,
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "foundation",
+  "tags": [
+    "text-completion",
+    "daily"
+  ],
+  "prompt": "Choose the best word or sentence for blank [134].",
+  "promptZh": "請選出最適合填入第 134 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "from",
+      "zh": "從",
+      "whyZh": "from 表示來源，不是把資料附在報告上的關係。"
+    },
+    {
+      "id": "B",
+      "text": "to",
+      "zh": "在（附在……上）",
+      "whyZh": "attach A to B 表示把 A 附在 B 上；資料要與報告一併寄出。"
+    },
+    {
+      "id": "C",
+      "text": "about",
+      "zh": "關於",
+      "whyZh": "about 表示關於某主題，不是表示附檔或附加資料的用法。"
+    },
+    {
+      "id": "D",
+      "text": "against",
+      "zh": "對著；反對",
+      "whyZh": "against 表示對著或反對，不適合表示把文件附上報告。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "attach A to B 表示把 A 附在 B 上；資料要與報告一併寄出。",
+  "groupId": "t10-r-p6-01",
+  "evidence": "attach the packet to the report",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1622,
+      "endChar": 1653,
+      "exactQuote": "attach the packet to the report"
+    }
+  ]
+}

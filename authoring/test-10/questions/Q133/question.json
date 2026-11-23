@@ -1,0 +1,59 @@
+{
+  "id": "t10-q133",
+  "testId": "test-10",
+  "number": 133,
+  "part": 6,
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "daily"
+  ],
+  "prompt": "Choose the best word or sentence for blank [133].",
+  "promptZh": "請選出最適合填入第 133 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "and the delivery register could be discarded",
+      "zh": "而且可丟棄投遞名冊",
+      "whyZh": "留存理由副本與投遞名冊用途不同，沒有規定丟棄名冊。"
+    },
+    {
+      "id": "B",
+      "text": "but we would need to count the same form twice",
+      "zh": "但是同一份表單需要計入兩次",
+      "whyZh": "有理由的表單仍是一份，不因留存方式而重複計入。"
+    },
+    {
+      "id": "C",
+      "text": "but we could not include the reasons in the report packet",
+      "zh": "但報告附件中就無法附上選擇該方案的理由",
+      "whyZh": "若不留副本，表格只能讓人查到所選方案，文字理由不會一併附上。"
+    },
+    {
+      "id": "D",
+      "text": "and the household could no longer be included in the first figure",
+      "zh": "所以無法將這一戶計入第一項數字",
+      "whyZh": "是否留存書面副本，不影響該戶原本是否應計入參與戶數。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "若不留副本，表格只能讓人查到所選方案，文字理由不會一併附上。",
+  "groupId": "t10-r-p6-01",
+  "evidence": "if a postcard names a design and also gives a reason, retain a copy after entering the preference / we could reproduce the choice from the table",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1355,
+      "endChar": 1452,
+      "exactQuote": "if a postcard names a design and also gives a reason, retain a copy after entering the preference"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1473,
+      "endChar": 1517,
+      "exactQuote": "we could reproduce the choice from the table"
+    }
+  ]
+}

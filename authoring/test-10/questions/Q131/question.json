@@ -1,0 +1,83 @@
+{
+  "id": "t10-q131",
+  "testId": "test-10",
+  "number": 131,
+  "part": 6,
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "daily"
+  ],
+  "prompt": "Choose the best word or sentence for blank [131].",
+  "promptZh": "請選出最適合填入第 131 題空格的字詞或句子。",
+  "options": [
+    {
+      "id": "A",
+      "text": "one addition to the household total and none to the preference total",
+      "zh": "參與戶數加一，方案偏好份數不變",
+      "whyZh": "辦公室在截止前收到明信片，該戶地址合資格而且尚未列入名冊，所以增加參與戶；明信片未選任何方案，所以不增加偏好份數。"
+    },
+    {
+      "id": "B",
+      "text": "one addition to each total",
+      "zh": "兩項各增加一筆",
+      "whyZh": "明信片雖然算參與，但沒有指明方案。"
+    },
+    {
+      "id": "C",
+      "text": "one addition to the preference total and none to the household total",
+      "zh": "方案偏好增加一份，參與戶數不變",
+      "whyZh": "該戶未列入名冊，且地址符合資格，不能漏計該戶；也沒有指明方案。"
+    },
+    {
+      "id": "D",
+      "text": "no addition to either total",
+      "zh": "兩項都不增加",
+      "whyZh": "未選方案不等於未參與；該戶的書面意見仍計入參與。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "辦公室在截止前收到明信片，該戶地址合資格而且尚未列入名冊，所以增加參與戶；明信片未選任何方案，所以不增加偏好份數。",
+  "groupId": "t10-r-p6-01",
+  "evidence": "The first figure counts each household only once / the second counts each eligible form with a named design / Before the consultation closed last night, our office received a completed postcard from the public meeting. / I cannot choose without a diagram showing the evening bus stop / The household was not yet listed in the participation register / its address was within the consultation area",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 252,
+      "endChar": 300,
+      "exactQuote": "The first figure counts each household only once"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 302,
+      "endChar": 358,
+      "exactQuote": "the second counts each eligible form with a named design"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 424,
+      "endChar": 532,
+      "exactQuote": "Before the consultation closed last night, our office received a completed postcard from the public meeting."
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 543,
+      "endChar": 605,
+      "exactQuote": "I cannot choose without a diagram showing the evening bus stop"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 608,
+      "endChar": 670,
+      "exactQuote": "The household was not yet listed in the participation register"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 676,
+      "endChar": 720,
+      "exactQuote": "its address was within the consultation area"
+    }
+  ]
+}
