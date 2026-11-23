@@ -1,0 +1,66 @@
+{
+  "id": "t10-q198",
+  "testId": "test-10",
+  "number": 198,
+  "part": 7,
+  "topic": "community",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "community"
+  ],
+  "prompt": "What should the volunteers do with the two trial findings?",
+  "promptZh": "志工應如何處理這兩筆試用發現？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Remove map 3 for repair, but log the river-marker observation separately.",
+      "zh": "把 3 號圖撤下送修，另行記錄有關河流標記的觀察。",
+      "whyZh": "同條件下 5 號能辨認車站標記，符合只送修先前失敗的 3 號；河流兩份都未辨認且原因不明，另記，不列送修。"
+    },
+    {
+      "id": "B",
+      "text": "Count maps 3 and 4 as damaged and return maps 5 and 6 to use.",
+      "zh": "把 3 號和 4 號列為損壞，讓 5 號和 6 號恢復使用。",
+      "whyZh": "3 號可送修，但 4、6 號都找不到同一標記且原因不明，不能只把 4 號認定損壞。"
+    },
+    {
+      "id": "C",
+      "text": "Leave map 3 in use because the station marker was eventually found, and remove map 6.",
+      "zh": "車站標記最後有找到，繼續使用 3 號圖，並撤下 6 號。",
+      "whyZh": "車站標記是在另一份 5 號才找到，不能證明 3 號正常；河流也未確認是 6 號圖損壞。"
+    },
+    {
+      "id": "D",
+      "text": "Remove both river maps and report the station marker only as a room condition.",
+      "zh": "撤下兩份有河流的地圖，把車站標記只列為環境條件。",
+      "whyZh": "兩份河流地圖的原因未明不列送修；反而是車站標記的同條件對照可分離出 3 號異常。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "同條件下 5 號能辨認車站標記，符合只送修先前失敗的 3 號；河流兩份都未辨認且原因不明，另記，不列送修。",
+  "vocabulary": [
+    {
+      "term": "under the same conditions",
+      "zh": "在相同條件下",
+      "note": "在同等條件下換另一份地圖，才能更有把握分辨單張圖的問題。"
+    }
+  ],
+  "groupId": "t10-r-p7-triple-03",
+  "evidence": "Volunteer reports distinguish a broken map from a label that becomes unreadable in the room. If the visitor locates the same marker on a second copy under the same conditions, pull just the first copy for repair. If the marker is missed on both copies and the cause has not been identified, report the conditions and keep that observation separate from the repair count. / At a trial, a guest could not find the station marker on map 3. Under the same lamp and using the same instructions, the guest found it on map 5. A second guest could not find the river marker on maps 4 or 6, even after moving closer to the lamp. We have not determined why.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 703,
+      "endChar": 1073,
+      "exactQuote": "Volunteer reports distinguish a broken map from a label that becomes unreadable in the room. If the visitor locates the same marker on a second copy under the same conditions, pull just the first copy for repair. If the marker is missed on both copies and the cause has not been identified, report the conditions and keep that observation separate from the repair count."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1593,
+      "endChar": 1867,
+      "exactQuote": "At a trial, a guest could not find the station marker on map 3. Under the same lamp and using the same instructions, the guest found it on map 5. A second guest could not find the river marker on maps 4 or 6, even after moving closer to the lamp. We have not determined why."
+    }
+  ]
+}

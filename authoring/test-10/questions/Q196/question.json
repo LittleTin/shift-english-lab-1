@@ -1,0 +1,84 @@
+{
+  "id": "t10-q196",
+  "testId": "test-10",
+  "number": 196,
+  "part": 7,
+  "topic": "community",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "community"
+  ],
+  "prompt": "Which site is ready to host a route session this week without arranging a different place for storage?",
+  "promptZh": "本週哪個場地不用另安排收納地點，就能舉辦路線圖體驗？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Birch Hall, using its display case and the kit stand",
+      "zh": "樺樹館，使用展示櫃和套件支架",
+      "whyZh": "展示櫃可上鎖，但只能垂直吊掛，不能平放地圖；支架不能解決收納需求。"
+    },
+    {
+      "id": "B",
+      "text": "Cedar Library, using the kit stand and its reserved drawer",
+      "zh": "雪松圖書館，使用套件支架及預留的抽屜",
+      "whyZh": "指南允許使用便攜支架，雪松有可設立支架的空間，以及場次結束後就能使用的可上鎖平放抽屜。"
+    },
+    {
+      "id": "C",
+      "text": "Elm Center, using its fixed mount and map drawer",
+      "zh": "榆樹中心，使用固定支架及地圖抽屜",
+      "whyZh": "抽屜符合規格卻要下週才空出，本週活動用不到。"
+    },
+    {
+      "id": "D",
+      "text": "Fir Annex, using the kit stand on its countertop",
+      "zh": "冷杉分館，把便攜支架放在檯面上使用",
+      "whyZh": "抽屜符合規格，但沒固定支架，也沒有地面空間可放便攜支架；有檯面不等於能架設便攜支架。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "指南允許使用便攜支架，雪松有可設立支架的空間，以及場次結束後就能使用的可上鎖平放抽屜。",
+  "vocabulary": [
+    {
+      "term": "fixed mount",
+      "zh": "固定支架",
+      "note": "有固定支架可不用便攜式落地架，但地圖的平放上鎖收納規定仍適用。"
+    }
+  ],
+  "groupId": "t10-r-p7-triple-03",
+  "evidence": "The route kit contains raised maps that visitors can follow under a guide’s direction. Mount the maps on a portable floor stand (not on a countertop) unless the venue has a fixed mount. After a session, the maps must go into a flat, lockable drawer. A spare stand travels with every kit; storage does not. / Birch Hall: Fixed mount and deep display case on site. The case locks, but everything inside it hangs vertically. The stand from the kit will fit. / Cedar Library: No fixed mount. Confirmed space on the floor for the kit stand. A flat, lockable map drawer is reserved from the end of every session through the next morning. / Elm Center: Fixed mount and a lockable flat drawer. The drawer is occupied until the following week. The first event at this center is planned for this week. / Fir Annex: A flat, lockable drawer is available, but its fixed mount has been removed. A countertop is available; there is no clear floor space for the stand.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 43,
+      "endChar": 348,
+      "exactQuote": "The route kit contains raised maps that visitors can follow under a guide’s direction. Mount the maps on a portable floor stand (not on a countertop) unless the venue has a fixed mount. After a session, the maps must go into a flat, lockable drawer. A spare stand travels with every kit; storage does not."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1110,
+      "endChar": 1256,
+      "exactQuote": "Birch Hall: Fixed mount and deep display case on site. The case locks, but everything inside it hangs vertically. The stand from the kit will fit."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1258,
+      "endChar": 1432,
+      "exactQuote": "Cedar Library: No fixed mount. Confirmed space on the floor for the kit stand. A flat, lockable map drawer is reserved from the end of every session through the next morning."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1434,
+      "endChar": 1591,
+      "exactQuote": "Elm Center: Fixed mount and a lockable flat drawer. The drawer is occupied until the following week. The first event at this center is planned for this week."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1869,
+      "endChar": 2027,
+      "exactQuote": "Fir Annex: A flat, lockable drawer is available, but its fixed mount has been removed. A countertop is available; there is no clear floor space for the stand."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "t10-q200",
+  "testId": "test-10",
+  "number": 200,
+  "part": 7,
+  "topic": "community",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "community"
+  ],
+  "prompt": "Which plan for a Hart Room notice follows the instructions?",
+  "promptZh": "哈特室的公告採用哪項做法才符合指示？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A noticeboard post advertising pocket-card pickup through Saturday only",
+      "zh": "在公告欄刊登口袋卡領取只到週六",
+      "whyZh": "領取桌和人員只確認到週六，且完整展覽未確認，故在公告欄僅宣傳到週六的口袋卡領取。公告標題使用「僅提供口袋卡」。"
+    },
+    {
+      "id": "B",
+      "text": "A noticeboard post advertising pocket-card pickup on both Saturday and Sunday",
+      "zh": "在公告欄刊登週六、週日都可領取口袋卡",
+      "whyZh": "公告欄是合適管道，但哈特室平常週日開放，不代表領取服務當天有人負責。"
+    },
+    {
+      "id": "C",
+      "text": "A city calendar entry advertising pocket-card pickup through Saturday only",
+      "zh": "在市府活動行事曆刊登口袋卡領取只到週六",
+      "whyZh": "週六是正確的領取期限，但市府活動行事曆不刊登只有口袋卡的領取活動。"
+    },
+    {
+      "id": "D",
+      "text": "A city calendar entry announcing a full-show stop through Saturday",
+      "zh": "在市府活動行事曆預告完整展覽將在哈特室展出至週六",
+      "whyZh": "市府活動行事曆用於完整展覽，但哈特室需要的平放抽屜尚未確認，不能宣布完整展覽會在這裡舉行。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "領取桌和人員只確認到週六，且完整展覽未確認，故在公告欄僅宣傳到週六的口袋卡領取。公告標題使用「僅提供口袋卡」。",
+  "vocabulary": [
+    {
+      "term": "confirmed staffing period",
+      "zh": "已確認有人值班的期間",
+      "note": "場館平常開放，並不等於指定領取服務已安排好人員。"
+    }
+  ],
+  "groupId": "t10-r-p7-triple-03",
+  "evidence": "The route kit contains raised maps that visitors can follow under a guide’s direction. Mount the maps on a portable floor stand (not on a countertop) unless the venue has a fixed mount. After a session, the maps must go into a flat, lockable drawer. A spare stand travels with every kit; storage does not. / Hart Room: The lobby table and staffing for pocket-card pickup are confirmed through Saturday. Staff are still checking whether there is a flat drawer for the raised route maps. / The city calendar is for full-show listings, and a venue has to confirm all required equipment before we give it a listing. Use our noticeboard for a confirmed card pickup when the show is not confirmed; use ‘pocket cards only’ as the heading. Hart Room normally opens on Sundays, but do not advertise pickup for any day beyond the confirmed staffing period.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 43,
+      "endChar": 348,
+      "exactQuote": "The route kit contains raised maps that visitors can follow under a guide’s direction. Mount the maps on a portable floor stand (not on a countertop) unless the venue has a fixed mount. After a session, the maps must go into a flat, lockable drawer. A spare stand travels with every kit; storage does not."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2029,
+      "endChar": 2206,
+      "exactQuote": "Hart Room: The lobby table and staffing for pocket-card pickup are confirmed through Saturday. Staff are still checking whether there is a flat drawer for the raised route maps."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2946,
+      "endChar": 3304,
+      "exactQuote": "The city calendar is for full-show listings, and a venue has to confirm all required equipment before we give it a listing. Use our noticeboard for a confirmed card pickup when the show is not confirmed; use ‘pocket cards only’ as the heading. Hart Room normally opens on Sundays, but do not advertise pickup for any day beyond the confirmed staffing period."
+    }
+  ]
+}

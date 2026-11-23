@@ -1,0 +1,60 @@
+{
+  "id": "t10-q199",
+  "testId": "test-10",
+  "number": 199,
+  "part": 7,
+  "topic": "community",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "community"
+  ],
+  "prompt": "Which action would let staff mail everything that is ready now without opening any packed envelopes?",
+  "promptZh": "哪項做法能讓工作人員現在就寄出所有已可寄送的東西，又不必拆開已封好的信封？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Mail the full-size maps only; the wording on the envelopes has been checked.",
+      "zh": "只寄全尺寸地圖，因為信封上的拼字已檢查。",
+      "whyZh": "信封拼字檢查與卡片寄送有關；全尺寸地圖仍須等印刷廠確認。"
+    },
+    {
+      "id": "B",
+      "text": "Mail both items if they can use the revised pocket-card wrapper.",
+      "zh": "如果可使用修訂後的口袋卡封套，就寄出兩種物品。",
+      "whyZh": "修訂口袋卡封套不能取代全尺寸地圖的另一項確認，也不是重封才能寄出的規定。"
+    },
+    {
+      "id": "C",
+      "text": "Hold both mailings until the printer confirms the revised full-size map.",
+      "zh": "兩種郵件都先保留，等印刷廠確認修訂後的全尺寸地圖。",
+      "whyZh": "已裝封口袋卡的信封拼字都正確，這批可以先寄，不必等全尺寸地圖。"
+    },
+    {
+      "id": "D",
+      "text": "Mail the packed pocket cards, but continue to hold the full-size maps.",
+      "zh": "寄出已裝封的口袋卡，但繼續保留全尺寸地圖。",
+      "whyZh": "信封拼字已核對且不必換裡面的卡；全尺寸地圖是另一項更正，需等印刷廠確認。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "信封拼字已核對且不必換裡面的卡；全尺寸地圖是另一項更正，需等印刷廠確認。",
+  "vocabulary": [
+    {
+      "term": "wrapper",
+      "zh": "外包裝；封套",
+      "note": "這次修訂只涉及封套，和全尺寸地圖的更正是兩回事。"
+    }
+  ],
+  "groupId": "t10-r-p7-triple-03",
+  "evidence": "The revised pocket-card jacket fixes the spelling of Milford. It replaces the wrapper, not the raised card inside. We may send the cards that are already packed if the labels on the envelopes do not use the misspelling. I checked those envelopes this morning: all say ‘Milford.’ The full-size printed maps will instead be held until the printing shop certifies their separate correction.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 2557,
+      "endChar": 2944,
+      "exactQuote": "The revised pocket-card jacket fixes the spelling of Milford. It replaces the wrapper, not the raised card inside. We may send the cards that are already packed if the labels on the envelopes do not use the misspelling. I checked those envelopes this morning: all say ‘Milford.’ The full-size printed maps will instead be held until the printing shop certifies their separate correction."
+    }
+  ]
+}

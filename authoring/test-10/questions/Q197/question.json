@@ -1,0 +1,72 @@
+{
+  "id": "t10-q197",
+  "testId": "test-10",
+  "number": 197,
+  "part": 7,
+  "topic": "community",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "community"
+  ],
+  "prompt": "Which arrangement would meet Irene’s cousin’s request?",
+  "promptZh": "哪項安排能符合艾琳表親的需求？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Have her borrow a route map after the day’s guided session and take it home.",
+      "zh": "在當天有導覽的場次結束後，借她一張路線圖帶回家。",
+      "whyZh": "這項安排沒有提供她想要的無口頭解說現場體驗；而且每場結束後，路線圖須收到指定抽屜，不能借回家。"
+    },
+    {
+      "id": "B",
+      "text": "Leave a pocket card for her to take away after a short spoken introduction.",
+      "zh": "在簡短的口頭介紹後，留一張口袋卡給她帶走。",
+      "whyZh": "口頭介紹不符合她需要的無解說環境，口袋卡也沒有路線。"
+    },
+    {
+      "id": "C",
+      "text": "Let her follow the full map at a quiet session and return it before she leaves.",
+      "zh": "讓她在靜音場次摸讀完整地圖，離開前歸還。",
+      "whyZh": "靜音場次既無口頭介紹，又提供完整路線圖；當場使用並歸還即可。"
+    },
+    {
+      "id": "D",
+      "text": "Give her a pocket card at the quiet session in place of the full map.",
+      "zh": "在靜音場次用口袋卡代替完整地圖交給她。",
+      "whyZh": "靜音場次符合環境需求，但口袋卡只有圖例，不能讓她摸讀完整路線。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "靜音場次既無口頭介紹，又提供完整路線圖；當場使用並歸還即可。",
+  "vocabulary": [
+    {
+      "term": "commentary",
+      "zh": "口頭解說",
+      "note": "quiet session 提供完整地圖且不使用口頭解說，和能帶走的圖例卡用途不同。"
+    }
+  ],
+  "groupId": "t10-r-p7-triple-03",
+  "evidence": "The route kit contains raised maps that visitors can follow under a guide’s direction. Mount the maps on a portable floor stand (not on a countertop) unless the venue has a fixed mount. After a session, the maps must go into a flat, lockable drawer. A spare stand travels with every kit; storage does not. / The pocket card is a raised version of the key, with the route names in large print. Visitors may take it away, but it does not show the routes themselves. At a quiet session, visitors can follow the complete routes on their own, without spoken directions or commentary. In a quiet session, visitors still need to return the route maps before leaving. / Irene will bring her cousin on Friday. Her cousin wants to explore an entire route independently and needs the room to be free of narration, but does not need a map to take away. The pocket cards for mailing are already packed. Please keep her on the guest list, even if preparing the quiet session adds work.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 43,
+      "endChar": 348,
+      "exactQuote": "The route kit contains raised maps that visitors can follow under a guide’s direction. Mount the maps on a portable floor stand (not on a countertop) unless the venue has a fixed mount. After a session, the maps must go into a flat, lockable drawer. A spare stand travels with every kit; storage does not."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 350,
+      "endChar": 701,
+      "exactQuote": "The pocket card is a raised version of the key, with the route names in large print. Visitors may take it away, but it does not show the routes themselves. At a quiet session, visitors can follow the complete routes on their own, without spoken directions or commentary. In a quiet session, visitors still need to return the route maps before leaving."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 2246,
+      "endChar": 2555,
+      "exactQuote": "Irene will bring her cousin on Friday. Her cousin wants to explore an entire route independently and needs the room to be free of narration, but does not need a map to take away. The pocket cards for mailing are already packed. Please keep her on the guest list, even if preparing the quiet session adds work."
+    }
+  ]
+}
