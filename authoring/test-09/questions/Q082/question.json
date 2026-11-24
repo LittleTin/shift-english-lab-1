@@ -1,0 +1,59 @@
+{
+  "id": "t09-q082",
+  "testId": "test-09",
+  "number": 82,
+  "part": 4,
+  "groupId": "t09-g080",
+  "revision": 1,
+  "prompt": "Why will the technician record a settings issue for the tablet on the tray?",
+  "promptZh": "為什麼托盤上那台平板會被記為設定問題？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The technician could not turn on automatic brightness.",
+      "zh": "技術人員無法開啟自動亮度。",
+      "whyZh": "那台送來時已開啟自動亮度。"
+    },
+    {
+      "id": "B",
+      "text": "The tablet was tested only at the bright bench.",
+      "zh": "那台只在明亮工作台上測。",
+      "whyZh": "講者說那台進暗箱後變暗。"
+    },
+    {
+      "id": "C",
+      "text": "The sensor window was still covered by shipping film.",
+      "zh": "感測小窗仍被出貨保護膜蓋著。",
+      "whyZh": "送到時保護膜已撕掉。"
+    },
+    {
+      "id": "D",
+      "text": "The display reacted to the darkness but did not dim enough.",
+      "zh": "螢幕對黑暗有反應，但變暗的幅度不足。",
+      "whyZh": "它確實隨環境變暗，只是亮度仍過高，因此不是完全無反應的情況。"
+    }
+  ],
+  "answer": "D",
+  "difficulty": "foundation",
+  "explanationZh": "它確實隨環境變暗，只是亮度仍過高，因此不是完全無反應的情況。",
+  "evidence": "Don’t use that label just because the display is brighter than you want. / It dimmed inside the box, just not enough. List that as a brightness setting issue.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "M",
+      "startChar": 304,
+      "endChar": 376,
+      "exactQuote": "Don’t use that label just because the display is brighter than you want."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "M",
+      "startChar": 458,
+      "endChar": 541,
+      "exactQuote": "It dimmed inside the box, just not enough. List that as a brightness setting issue."
+    }
+  ],
+  "topic": "technology"
+}

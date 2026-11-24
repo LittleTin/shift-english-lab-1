@@ -1,0 +1,59 @@
+{
+  "id": "t09-q080",
+  "testId": "test-09",
+  "number": 80,
+  "part": 4,
+  "groupId": "t09-g080",
+  "revision": 1,
+  "prompt": "Which tablet meets the rule for recording a possible sensor fault?",
+  "promptZh": "哪台平板符合登記為可能的感測器故障的條件？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Film removed, automatic brightness on, and the display gets dimmer in the box.",
+      "zh": "已撕膜、自動亮度開啟，螢幕在暗箱中變暗。",
+      "whyZh": "測試條件對，但螢幕有反應，不是兩處等亮。"
+    },
+    {
+      "id": "B",
+      "text": "Film still on, automatic brightness on, and no difference between the two places.",
+      "zh": "未撕膜、自動亮度開啟，兩處亮度無差異。",
+      "whyZh": "膜還擋住感測小窗，前置條件未完成。"
+    },
+    {
+      "id": "C",
+      "text": "Film removed, automatic brightness on, and no difference between the two places.",
+      "zh": "已撕膜、自動亮度開啟，兩處亮度無差異。",
+      "whyZh": "撕膜、開自動亮度、兩處亮度相同三項均吻合。"
+    },
+    {
+      "id": "D",
+      "text": "Film removed, automatic brightness off, and no difference between the two places.",
+      "zh": "已撕膜、自動亮度關閉，兩處亮度無差異。",
+      "whyZh": "沒開自動亮度，不能用兩處亮度相同判為可能故障。"
+    }
+  ],
+  "answer": "C",
+  "difficulty": "intermediate",
+  "explanationZh": "撕膜、開自動亮度、兩處亮度相同三項均吻合。",
+  "evidence": "Peel off the shipping film from the little sensor window beside the camera, and turn on automatic brightness. / Then take the tablet from the bright bench to the dark test box. If the display is equally bright in both places, note a possible sensor fault.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "M",
+      "startChar": 50,
+      "endChar": 159,
+      "exactQuote": "Peel off the shipping film from the little sensor window beside the camera, and turn on automatic brightness."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "M",
+      "startChar": 160,
+      "endChar": 303,
+      "exactQuote": "Then take the tablet from the bright bench to the dark test box. If the display is equally bright in both places, note a possible sensor fault."
+    }
+  ],
+  "topic": "technology"
+}

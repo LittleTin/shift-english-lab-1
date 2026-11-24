@@ -1,0 +1,203 @@
+{
+  "group": "t09-g080",
+  "status": "Authoring batch accepted; unreleased.",
+  "sourceGroupSha256": "c78da49243bf00adf434013859fc90d993d754ebd7a1bc3209414750c052a86a",
+  "questions": [
+    {
+      "q": 80,
+      "questionId": "t09-q080",
+      "uuid": "4477f158-5a6f-5f15-b69f-c5973ff39b63",
+      "qSha256": "e6a3ab7655524845889f1e6de1333fb3125aee3278f4fd43b939aec107086266",
+      "sidecarSha256": "48d99e87166af8f6bde31c7f421db2b0ab43aaff518efeba39824672f3dfd43f"
+    },
+    {
+      "q": 81,
+      "questionId": "t09-q081",
+      "uuid": "2d5db383-ca24-5092-8789-f3856a891aa2",
+      "qSha256": "87b3930c9425dd70a938c423972bfa794b8d654df93e9e2fe8e8d4fb5b269c3e",
+      "sidecarSha256": "cc19b2668b3cb7016d33969fddaec6d8a105e712d387d76a2da66692199a44bd"
+    },
+    {
+      "q": 82,
+      "questionId": "t09-q082",
+      "uuid": "30213a34-bfae-5c06-a16f-e780959eec73",
+      "qSha256": "9d1a61edcb10143964d18998d5c0bf32e28194147be5c577fbe1339ce1ab357e",
+      "sidecarSha256": "87bd87d4122776af8e2999b63863b3c9ad58e89dbbcd561b12019685084bdaa0"
+    }
+  ],
+  "mediaPaths": [
+    {
+      "url": "audio/formal-groups/test-09/t09-g080.ogg",
+      "source": "test-09/groups/t09-g080/media/audio/formal-groups/test-09/t09-g080.ogg"
+    },
+    {
+      "url": "audio/practice-groups/test-09/t09-g080.ogg",
+      "source": "test-09/groups/t09-g080/media/audio/practice-groups/test-09/t09-g080.ogg"
+    }
+  ],
+  "mediaManifestSha256": "0f42950d128dddbc662696893540f45c71ba5295d30615ddc2c1188e089dcde9",
+  "integrationBase": "811020f65c174e9708d625ed6015a73815f7bbcf",
+  "appSha256": "fccb873225784218f39c7625f332c20e5a385113ab4425d265d531059df08df2",
+  "candidateEvidenceSha256": "a2737c2391f8079d829455ce81b7e32fc312199b1d0a493153c9748f9166355e",
+  "sourceCutMapSha256": "3cea847be74aba8ba06de7c1f74c973539c6b62ed25da3613d42aafb8af5ae93",
+  "sourcePreflightSha256": "e82843b4db14526af9359d3b499cd494d968077b68bda7922a046a7354416982",
+  "decodedAsrSha256": {
+    "whisper-small.json": "13276357a2059a81c28f6d758701ee60cc4a836ea9419d796d2077557c8707e9",
+    "zipformer.json": "d8eed281303d0c6391596d7ce36b27fef600f52cc7325c875308c6a591fb3177"
+  },
+  "media": {
+    "formal": {
+      "file": "t09-g080-formal.ogg",
+      "sha256": "0d08ea294f71082bcf43f9fc4ff111b3869d550518a8e8fa1b123eed245d409f",
+      "samples48k": 4269986,
+      "halfSecondGuardPeaksLsb": [
+        0,
+        1
+      ],
+      "timeline": [
+        {
+          "role": "gap",
+          "startSample48k": 0,
+          "endSample48k": 96000,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "cue",
+          "startSample48k": 96000,
+          "endSample48k": 278400,
+          "inputPcmSha256": "698766f556023bb6cc49cf9b406151b25d6ab746ffa9a620efa50fcd17c7d555"
+        },
+        {
+          "role": "gap",
+          "startSample48k": 278400,
+          "endSample48k": 295200,
+          "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+        },
+        {
+          "role": "passage",
+          "startSample48k": 295200,
+          "endSample48k": 2105546,
+          "inputPcmSha256": "3d1edbd18a5b6418bcb3db634518b5b349189bd1fb3e72e9b0f41251f51c230d",
+          "turnRanges48k": [
+            [
+              295200,
+              2105546
+            ]
+          ]
+        },
+        {
+          "role": "stem:80",
+          "startSample48k": 2105546,
+          "endSample48k": 2409386,
+          "inputPcmSha256": "df2b1060bad494a4f2e56355e03296dfa45185e4b47b180ee7097a1cec857a7b"
+        },
+        {
+          "role": "answer:80",
+          "startSample48k": 2409386,
+          "endSample48k": 2793386,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "stem:81",
+          "startSample48k": 2793386,
+          "endSample48k": 3069386,
+          "inputPcmSha256": "0aafdbd84a13bc1344d34a9128fb456ba3e8918ce079eb8537855f7072b4a016"
+        },
+        {
+          "role": "answer:81",
+          "startSample48k": 3069386,
+          "endSample48k": 3453386,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "stem:82",
+          "startSample48k": 3453386,
+          "endSample48k": 3789986,
+          "inputPcmSha256": "e5890fa31000dd65db216cda50ddbaa7ef8315e0b4929946a15312520a2d3a64"
+        },
+        {
+          "role": "answer:82",
+          "startSample48k": 3789986,
+          "endSample48k": 4173986,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "gap",
+          "startSample48k": 4173986,
+          "endSample48k": 4269986,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        }
+      ]
+    },
+    "practice": {
+      "file": "t09-g080-practice.ogg",
+      "sha256": "cadb8f809083fe04e5ce52595664ad2f4ce768983ad55b888ee4779d9c060d1f",
+      "samples48k": 2002346,
+      "halfSecondGuardPeaksLsb": [
+        0,
+        1
+      ],
+      "timeline": [
+        {
+          "role": "gap",
+          "startSample48k": 0,
+          "endSample48k": 96000,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "passage",
+          "startSample48k": 96000,
+          "endSample48k": 1906346,
+          "inputPcmSha256": "3d1edbd18a5b6418bcb3db634518b5b349189bd1fb3e72e9b0f41251f51c230d",
+          "turnRanges48k": [
+            [
+              96000,
+              1906346
+            ]
+          ]
+        },
+        {
+          "role": "gap",
+          "startSample48k": 1906346,
+          "endSample48k": 2002346,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        }
+      ]
+    }
+  },
+  "semanticChecks": {
+    "80": "C: remove the shipping film, enable automatic brightness, and confirm display stays equally bright in light and dark locations before naming possible sensor fault.",
+    "81": "A: peel film off the sensor window next to camera.",
+    "82": "D: it actually dimmed inside the box, just not enough, so note brightness settings."
+  },
+  "recognitionScope": "Both exact Opus independently verified by Whisper overlapping windows 0–23 and 18–end and full/windowed Zipformer. In the JSON verifier commas are normalized only at exact non-scored phrase separators; terminological sensor/censer and head cutoff ‘not bright’ are resolved by full overlapping tail and the audio logic. All three numbered stems are distinct. Native fixture retains calibrated prior G077 chart source and exact scoped candidate app, G080 group has no chart.",
+  "native": {
+    "engine": "Cloud Chromium, exact private fixture",
+    "fixtureSha256": "717038906ebfb8f1e56468904bba48779fdd94c0985dd7f8b8c3863e6d9c968d",
+    "threeDisplayed": [
+      80,
+      81,
+      82
+    ],
+    "formal": {
+      "priorStillPlaying": 74.50731,
+      "newAutomatic": 12.008805,
+      "initial": 0,
+      "firstSampled": 0.15497,
+      "paused": 12.0804,
+      "whileStillPaused": 12.0804,
+      "afterResume": 12.319518,
+      "rate": 1,
+      "nextDisabled": true,
+      "transcriptHidden": true
+    },
+    "practice": {
+      "previous": 0.171734,
+      "reset": 0,
+      "firstSampled": 0.122501,
+      "paused": 0.198309,
+      "whileStillPaused": 0.198309,
+      "afterResume": 0.441833
+    }
+  }
+}
