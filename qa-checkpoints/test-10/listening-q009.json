@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "testId": "test-10",
+  "scope": [
+    9
+  ],
+  "status": "Validated authoring batch; not deployed",
+  "sourceBase": "4e2971acd9cd75f8c4e8758b25edb58bbcc96135",
+  "integrationBase": "5641a9621a4c744ffddf3ed0370b418258a7f6ec",
+  "items": [
+    {
+      "number": 9,
+      "id": "t10-q009",
+      "answer": "B",
+      "difficulty": "intermediate",
+      "independentEvidence": "they've already given it to me",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q009/question.json": "5180c8b29e5aee91676bde206dfb97cd60ac2f02f3ad7a06fe3fc548df69360e",
+        "authoring/test-10/questions/Q009/media.json": "11d0d65fa075b4b489da2e104dc38f56d0ca913cdeef06cdb1f2256629002e53",
+        "authoring/test-10/groups/t10-g009/group.json": "edf47bb6ed19dfe080ae5060b41f28eb279361484b222326aa811a16eaa95618"
+      },
+      "opus": {
+        "practice": {
+          "sha256": "19f5409c220e7ea8c4996c6292779eec4dc46b98c6027a64ce6a8699c498ccfa",
+          "samples48k": 936000,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 840000,
+              "peakLsb": 22524
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 840000,
+              "endSample48k": 936000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        },
+        "formal": {
+          "sha256": "a5e7c7e4606e3e4767f91a2e5ca16673982465e39111ab62034776eed3a6ec0a",
+          "samples48k": 1376446,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 135646,
+              "peakLsb": 15656
+            },
+            {
+              "role": "gap",
+              "startSample48k": 135646,
+              "endSample48k": 152446,
+              "peakLsb": 2,
+              "rmsLsb": 0.36928
+            },
+            {
+              "role": "passage",
+              "startSample48k": 152446,
+              "endSample48k": 896446,
+              "peakLsb": 22354
+            },
+            {
+              "role": "answer",
+              "startSample48k": 896446,
+              "endSample48k": 1280446,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1280446,
+              "endSample48k": 1376446,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        }
+      },
+      "recognizers": {
+        "whisper-small.json": "4a3dcbeae836735992331cc234033f048c69a800468e0023e80ae558a7b28944",
+        "whisper-base.json": "9b8bb9e6b5ccc807c814cf380640cd7267ef3e77fd3378c8976e99c510b1744f",
+        "zipformer.json": "b901ffe3885e6bad14e3414f97ce293cdc5c8fc779c8b9422cb19ff962c93e4d"
+      }
+    }
+  ],
+  "native": {
+    "fixtureSha256": "c319a9d4f210282bc78b6af3b865e4d7a609d162bf3f8a6d562cca972bced03e",
+    "scope": "G009 only; G008 verified control, G010 draft not passed",
+    "formal": {
+      "previousFromStart": 0.140704,
+      "naturalG009": 7.591253,
+      "fixedRate": 1,
+      "paused": 7.65592,
+      "still": 7.65592,
+      "resume": 7.900109
+    },
+    "practice": {
+      "previousFromStart": 0.144657,
+      "reset": 0,
+      "newSource": "t10-g009.ogg",
+      "first": 0.138043,
+      "paused": 0.173876,
+      "still": 0.173876,
+      "resume": 0.437009
+    }
+  },
+  "recognitionNotes": "Three unprompted ASR models confirm the service key, reception, prior statement, handing it to the speaker already and distractor contents. The isolated numbered cue matched Number Nine."
+}
