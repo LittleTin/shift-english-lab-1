@@ -1,0 +1,66 @@
+{
+  "id": "t10-q170",
+  "testId": "test-10",
+  "number": 170,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "repair-directory"
+  ],
+  "prompt": "Which guide entry accurately describes Jun’s experience?",
+  "promptZh": "哪一則指南內容正確描述了俊的經驗？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Oak Gate reported adjusting the chime, and Jun heard it chime on the hour after it came back.",
+      "zh": "橡門回報調整了報時裝置，俊在取回時鐘後聽到它準點報時。",
+      "whyZh": "俊確實自己聽到準點報時，但橡門只是受理和收款；實際回報調整報時的是雀鈴。"
+    },
+    {
+      "id": "B",
+      "text": "Finch Bell reported adjusting the chime, and Jun confirmed that the clock keeps time correctly.",
+      "zh": "雀鈴回報調整了報時裝置，俊也確認時鐘走時準確。",
+      "whyZh": "實際調整報時的工作室沒錯，但俊還沒檢查一整天的走時情況；準點報時的經驗不能當作已確認全天走時準確。"
+    },
+    {
+      "id": "C",
+      "text": "Finch Bell reported finishing work on both problems, but Jun has only verified the chime.",
+      "zh": "雀鈴回報已完成兩項維修，但俊只確認了報時的情況。",
+      "whyZh": "俊只確認報時的部分沒錯；雀鈴只是說走時問題可能需要後續處理，沒說已經完成。"
+    },
+    {
+      "id": "D",
+      "text": "Finch Bell reported adjusting the chime, and Jun heard it chime on the hour after it came back.",
+      "zh": "雀鈴回報調整了報時裝置，俊在取回時鐘後聽到它準點報時。",
+      "whyZh": "依工作室留言，實際調整的是雀鈴，而非收款的橡門。俊回家後兩次親自確認準點報時，但還沒有驗證全天走時。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "依工作室留言，實際調整的是雀鈴，而非收款的橡門。俊回家後兩次親自確認準點報時，但還沒有驗證全天走時。",
+  "vocabulary": [
+    {
+      "term": "intake contact",
+      "zh": "受理窗口",
+      "note": "受理或收款人與實際修理人可不同；再區分作業回報和物主親自觀察。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-11",
+  "evidence": "An intake shop may book a job and take payment without doing the work. Name that shop as the intake contact, but attribute each repair to the workshop that performed it. A workshop’s message is enough to say what it reports having done. Do not describe a result as verified unless the owner has actually checked that result after getting the clock back. / Jun paid Oak Gate when leaving a clock whose chime was unreliable. Oak Gate forwarded it to Finch Bell. Finch Bell’s message says it adjusted the chime and noted that a separate timekeeping problem might need a later visit. At home, Jun heard it chime on the hour twice. Jun has not yet checked whether the clock keeps time correctly over an entire day.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 117,
+      "endChar": 470,
+      "exactQuote": "An intake shop may book a job and take payment without doing the work. Name that shop as the intake contact, but attribute each repair to the workshop that performed it. A workshop’s message is enough to say what it reports having done. Do not describe a result as verified unless the owner has actually checked that result after getting the clock back."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 472,
+      "endChar": 825,
+      "exactQuote": "Jun paid Oak Gate when leaving a clock whose chime was unreliable. Oak Gate forwarded it to Finch Bell. Finch Bell’s message says it adjusted the chime and noted that a separate timekeeping problem might need a later visit. At home, Jun heard it chime on the hour twice. Jun has not yet checked whether the clock keeps time correctly over an entire day."
+    }
+  ]
+}

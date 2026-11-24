@@ -1,0 +1,66 @@
+{
+  "id": "t10-q171",
+  "testId": "test-10",
+  "number": 171,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "repair-directory"
+  ],
+  "prompt": "What inspection costs should the welcome desk give Mira under the guide’s rule?",
+  "promptZh": "依照指南，服務台應告訴米拉，若要取得兩家各自的檢查服務，她分別需支付多少總額？",
+  "options": [
+    {
+      "id": "A",
+      "text": "35 dollars at Oak Gate and 44 dollars at Finch Bell",
+      "zh": "橡門 35 元，雀鈴 44 元。",
+      "whyZh": "雀鈴的 44 元已包括收件，算得沒錯；米拉需要到府收件，橡門仍要再加 12 元到府收件費。"
+    },
+    {
+      "id": "B",
+      "text": "47 dollars at Oak Gate and 34 dollars at Finch Bell",
+      "zh": "橡門 47 元，雀鈴 34 元。",
+      "whyZh": "橡門檢查和收件共 47 元，但雀鈴的 10 元只能折抵決定要做的維修，不能先從檢查費扣掉。"
+    },
+    {
+      "id": "C",
+      "text": "47 dollars at Oak Gate and 44 dollars at Finch Bell",
+      "zh": "橡門 47 元，雀鈴 44 元。",
+      "whyZh": "米拉需要到府收件，所以橡門要把 35 元檢查費與 12 元收件費相加；雀鈴已包收件，且先不假定她會修，不能扣 10 元。兩家送回都不加價。"
+    },
+    {
+      "id": "D",
+      "text": "35 dollars at Oak Gate and 34 dollars at Finch Bell",
+      "zh": "橡門 35 元，雀鈴 34 元。",
+      "whyZh": "這同時漏算橡門必付的收件費，也錯把雀鈴要決定維修才有的折抵算進檢查費。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "米拉需要到府收件，所以橡門要把 35 元檢查費與 12 元收件費相加；雀鈴已包收件，且先不假定她會修，不能扣 10 元。兩家送回都不加價。",
+  "vocabulary": [
+    {
+      "term": "credit toward a repair",
+      "zh": "折抵維修費",
+      "note": "只有下單維修才適用，不從單做檢查的必付費用先扣掉。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-11",
+  "evidence": "When a visitor only wants to know what an inspection will cost, include every charge the visitor must pay to get the inspection under their circumstances. Do not reduce that figure by a credit that applies only if the visitor decides to have a repair. A visitor who takes the clock home unrepaired will not receive that credit. / Mira wants an inspection before deciding whether to repair her wall clock, and she needs the shop to pick it up. Oak Gate quotes 35 dollars for the inspection and 12 dollars to pick it up. Finch Bell quotes 44 dollars including pickup and will credit 10 dollars toward a repair if she orders one. Neither shop charges separately for returning the clock.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 827,
+      "endChar": 1154,
+      "exactQuote": "When a visitor only wants to know what an inspection will cost, include every charge the visitor must pay to get the inspection under their circumstances. Do not reduce that figure by a credit that applies only if the visitor decides to have a repair. A visitor who takes the clock home unrepaired will not receive that credit."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1156,
+      "endChar": 1509,
+      "exactQuote": "Mira wants an inspection before deciding whether to repair her wall clock, and she needs the shop to pick it up. Oak Gate quotes 35 dollars for the inspection and 12 dollars to pick it up. Finch Bell quotes 44 dollars including pickup and will credit 10 dollars toward a repair if she orders one. Neither shop charges separately for returning the clock."
+    }
+  ]
+}

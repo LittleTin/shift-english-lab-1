@@ -1,0 +1,66 @@
+{
+  "id": "t10-q168",
+  "testId": "test-10",
+  "number": 168,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "concert-programme"
+  ],
+  "prompt": "What is the writer asking the team to do by saying ‘Please leave room for the people who remember it’?",
+  "promptZh": "文中說「請也顧及那些還記得這首曲子的人」時，寫信者要節目小組怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Describe the original music as a premiere but mention that an earlier rehearsal was closed to visitors.",
+      "zh": "把原本的樂曲稱作首演，同時提到先前的排練並未開放訪客。",
+      "whyZh": "不公開的排練不妨礙這個新版本首演，但原有曲子去年已公開演奏過，不能把原曲稱為首演。"
+    },
+    {
+      "id": "B",
+      "text": "Recognize the earlier concert and present the five-player arrangement, rather than the tune, as a premiere.",
+      "zh": "提及先前的音樂會，並把五人改編版而非原曲稱為首演。",
+      "whyZh": "觀眾可能記得去年公開演過的曲調；五人版本則只有不公開的排練，這次才是該改編版本首次公開演出。"
+    },
+    {
+      "id": "C",
+      "text": "Advertise only familiar music, since listeners have already heard the complete five-player arrangement.",
+      "zh": "只宣傳大家熟悉的樂曲，因為聽眾已聽過完整五人改編版。",
+      "whyZh": "大家可能聽過的是早期三重奏版；完整的五人版只在不公開的排練裡演過。"
+    },
+    {
+      "id": "D",
+      "text": "Drop the word ‘premiere’ altogether because the five players have already performed the whole score once.",
+      "zh": "完全不用「首演」一詞，因為那五位樂手已完整演奏過一次。",
+      "whyZh": "是否完整演奏不是關鍵；規則看的是這個版本是否曾公開演出，不公開的排練不算。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "觀眾可能記得去年公開演過的曲調；五人版本則只有不公開的排練，這次才是該改編版本首次公開演出。",
+  "vocabulary": [
+    {
+      "term": "a five-player arrangement",
+      "zh": "五人改編版",
+      "note": "改編版未曾公開演出，與旋律本身曾公開演過並不衝突。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-10",
+  "evidence": "When we describe a first performance, be clear about what is new. A piece of music and an arrangement of that piece are not the same thing: an arrangement changes how the music is played, although the original tune remains. We should name a previous public performance if it helps readers understand why the tune may sound familiar. We can call an arrangement a premiere only if that particular arrangement has never been performed in public. / People may remember Under the Lantern from last year’s library concert, where our trio played it. Our conductor has since written a five-player arrangement. The five of us played through its full score in a rehearsal closed to visitors; the version has not been heard at any public event. I know someone has already drafted the headline ‘A tune you’ve never heard’ for the programme. Please leave room for the people who remember it.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 0,
+      "endChar": 442,
+      "exactQuote": "When we describe a first performance, be clear about what is new. A piece of music and an arrangement of that piece are not the same thing: an arrangement changes how the music is played, although the original tune remains. We should name a previous public performance if it helps readers understand why the tune may sound familiar. We can call an arrangement a premiere only if that particular arrangement has never been performed in public."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 444,
+      "endChar": 877,
+      "exactQuote": "People may remember Under the Lantern from last year’s library concert, where our trio played it. Our conductor has since written a five-player arrangement. The five of us played through its full score in a rehearsal closed to visitors; the version has not been heard at any public event. I know someone has already drafted the headline ‘A tune you’ve never heard’ for the programme. Please leave room for the people who remember it."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "t10-q169",
+  "testId": "test-10",
+  "number": 169,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "concert-programme"
+  ],
+  "prompt": "Which edit would best address what happened at the open rehearsal while respecting the conductor’s preference?",
+  "promptZh": "哪項修改最能處理開放排練時的問題，又能尊重指揮的偏好？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Keep the headline and enlarge the existing note so readers can compare the two accounts.",
+      "zh": "保留標題，把現有附註放大，讓讀者比較兩處說明。",
+      "whyZh": "放大附註或可讓更多人看到正確資訊，但標題仍把停頓錯稱為結束；對只讀標題的人仍有誤導。"
+    },
+    {
+      "id": "B",
+      "text": "Change the headline to give the precise point where the silence starts, without describing the final solo.",
+      "zh": "修改標題，精確寫出安靜何時開始，不介紹最後的獨奏。",
+      "whyZh": "只寫停頓起點仍無法讓讀者判斷整首樂曲何時結束，且會破壞出乎意料的效果。"
+    },
+    {
+      "id": "C",
+      "text": "Correct the headline so it says the piece ends after a solo, but does not identify when the silence begins.",
+      "zh": "修正標題，說明曲子在一段獨奏後才結束，但不指出安靜從何時開始。",
+      "whyZh": "讀者常只看標題，應在那裡直接說清楚作品如何結束；不預告停頓開始的時機，就不會破壞用意。"
+    },
+    {
+      "id": "D",
+      "text": "Remove the description of the solo and ask the conductor to announce the pause in the concert.",
+      "zh": "拿掉獨奏說明，請指揮在演出時口頭預告停頓。",
+      "whyZh": "口頭預告可能破壞停頓出乎意料的效果；拿掉獨奏說明，也會讓聽眾失去用來判斷真正結束的資訊。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "讀者常只看標題，應在那裡直接說清楚作品如何結束；不預告停頓開始的時機，就不會破壞用意。",
+  "vocabulary": [
+    {
+      "term": "take the silence for the end",
+      "zh": "把安靜誤當成演出結束",
+      "note": "更正讀者最先看到的標題，不用揭露中間哪一刻才會停頓。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-10",
+  "evidence": "The hall manager has asked us to keep a long pause in the middle of River Steps. The unexpected silence is part of the music, and the conductor does not want to replace it with a spoken cue. We can, however, tell listeners where the whole piece ends without telling them exactly when the silence starts; they need a reason to stay attentive through that silence, not a warning that spoils its effect. / After the open rehearsal, several listeners said they had taken the silence for the end. There were two descriptions in the handout. The short headline called the silence the ending; the smaller note correctly described the final solo that follows it. The volunteers distributing the handout noticed that many readers glanced at only the headline. We will keep the smaller note for people who want the extra detail.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 879,
+      "endChar": 1279,
+      "exactQuote": "The hall manager has asked us to keep a long pause in the middle of River Steps. The unexpected silence is part of the music, and the conductor does not want to replace it with a spoken cue. We can, however, tell listeners where the whole piece ends without telling them exactly when the silence starts; they need a reason to stay attentive through that silence, not a warning that spoils its effect."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1281,
+      "endChar": 1696,
+      "exactQuote": "After the open rehearsal, several listeners said they had taken the silence for the end. There were two descriptions in the handout. The short headline called the silence the ending; the smaller note correctly described the final solo that follows it. The volunteers distributing the handout noticed that many readers glanced at only the headline. We will keep the smaller note for people who want the extra detail."
+    }
+  ]
+}
