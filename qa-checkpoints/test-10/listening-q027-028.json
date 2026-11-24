@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "testId": "test-10",
+  "scope": [
+    27,
+    28
+  ],
+  "status": "Validated authoring batch; not deployed",
+  "sourceBase": "51679af1669dfe220ed19f3cb7707ab575eb374a",
+  "integrationBase": "5641a9621a4c744ffddf3ed0370b418258a7f6ec",
+  "items": [
+    {
+      "number": 27,
+      "id": "t10-q027",
+      "answer": "C",
+      "difficulty": "intermediate",
+      "independentEvidence": "we still need to reach the ones we haven't heard from",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q027/question.json": "ee86cb7e22c1eec67d59731340444df019773047da08d5eb4ff7bdafed2cb9b0",
+        "authoring/test-10/questions/Q027/media.json": "715e1c156f8d5a2c15e6f0799e6d7eff2c09b0a0eae43e6512271dc69300822c",
+        "authoring/test-10/groups/t10-g027/group.json": "a374eae3f90375d4cfb94dd94535d221d340c71745c0e0cddc1c68a90a2ff5f6"
+      },
+      "opus": {
+        "practice": {
+          "sha256": "3832d020f41fb283c2ee80d19cca6464a14cadad697d77719f12242996c5fd52",
+          "samples48k": 1354800,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 1,
+              "rmsLsb": 0.03195
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 1258800,
+              "peakLsb": 23714
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1258800,
+              "endSample48k": 1354800,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        },
+        "formal": {
+          "sha256": "3108ade2fee1fcdcf3f8bcfc16bcbc2c18d32a9165d9e53c0f8d826b594353a6",
+          "samples48k": 1813972,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 1,
+              "rmsLsb": 0.00645
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 154372,
+              "peakLsb": 14474
+            },
+            {
+              "role": "gap",
+              "startSample48k": 154372,
+              "endSample48k": 171172,
+              "peakLsb": 1,
+              "rmsLsb": 0.28295
+            },
+            {
+              "role": "passage",
+              "startSample48k": 171172,
+              "endSample48k": 1333972,
+              "peakLsb": 23467
+            },
+            {
+              "role": "answer",
+              "startSample48k": 1333972,
+              "endSample48k": 1717972,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1717972,
+              "endSample48k": 1813972,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        }
+      },
+      "recognizers": {
+        "whisper-small.json": "39bf89f9e4987ac6c7400c25a627fd7305d7f60fa3e9924c3586282bb4d2b16e",
+        "whisper-base.json": "b8274a7a77af4db27a6522986e0aa3fbe8b6d4f37cb34c50914677dabb0b6f43",
+        "zipformer.json": "b78c2c025e0f82c315e3060885f4711c8e78ce521ff2a5df90d66336f746fa12"
+      }
+    },
+    {
+      "number": 28,
+      "id": "t10-q028",
+      "answer": "B",
+      "difficulty": "intermediate",
+      "independentEvidence": "families that haven't paid yet. we haven't decided on refunds",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q028/question.json": "2aebe25e682fc1f56b89c93652bea6548029931d363897856b1e8d9135565d0e",
+        "authoring/test-10/questions/Q028/media.json": "07c621868dc88bd4c9624c820171dcbc8ac4017eed2ebf49bacb4ce04823f07d",
+        "authoring/test-10/groups/t10-g028/group.json": "f8c8b937b4b9dbca648c28d55fbe45b5c8a95c486dd32bab3806eca250ccc083"
+      },
+      "opus": {
+        "practice": {
+          "sha256": "b94d30d46ae373bbf4af968041e2bde72f68289ff5e8ab528208afd154b8703f",
+          "samples48k": 1338600,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 1,
+              "rmsLsb": 0.01677
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 1242600,
+              "peakLsb": 22458
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1242600,
+              "endSample48k": 1338600,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        },
+        "formal": {
+          "sha256": "1888bfdecd76e9ba8a5e6bd3dc0cb09ea5f75187a3f63695c21f79da4224c084",
+          "samples48k": 1793242,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 1,
+              "rmsLsb": 0.00323
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 149842,
+              "peakLsb": 16948
+            },
+            {
+              "role": "gap",
+              "startSample48k": 149842,
+              "endSample48k": 166642,
+              "peakLsb": 1,
+              "rmsLsb": 0.03536
+            },
+            {
+              "role": "passage",
+              "startSample48k": 166642,
+              "endSample48k": 1313242,
+              "peakLsb": 22962
+            },
+            {
+              "role": "answer",
+              "startSample48k": 1313242,
+              "endSample48k": 1697242,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1697242,
+              "endSample48k": 1793242,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        }
+      },
+      "recognizers": {
+        "whisper-small.json": "a27fbccd72fe0bf883aed1dbcc35f5c04c98e94837097f94cbb5c78043d873ee",
+        "whisper-base.json": "d1adffd512acb256dfc2ca5b5e35258cd1a69405052ad770827d4d9dbfa7956f",
+        "zipformer.json": "99372c39cdc74539085089364642e9aa5109b135e1eabc054dfbe2f2042510ff"
+      }
+    }
+  ],
+  "native": {
+    "fixtureSha256": "3fc37a823d0090f495a42be130423c4512c6c51be234636b7f89c69a766a5024",
+    "formal": {
+      "previousFromStart": 0.160665,
+      "natural": [
+        0.011837,
+        0.014827
+      ],
+      "fixedRate": 1,
+      "paused": [
+        0.071589,
+        0.015145
+      ],
+      "still": [
+        0.071589,
+        0.015145
+      ],
+      "resumed": [
+        0.326228,
+        0.278985
+      ]
+    },
+    "practice": {
+      "reset": [
+        0,
+        0
+      ],
+      "newSources": [
+        "audio/practice-groups/test-10/t10-g027.ogg",
+        "audio/practice-groups/test-10/t10-g028.ogg"
+      ],
+      "first": [
+        0.148512,
+        0.145539
+      ],
+      "paused": [
+        0.186777,
+        0.185836
+      ],
+      "still": [
+        0.186777,
+        0.185836
+      ],
+      "resumed": [
+        0.447062,
+        0.434337
+      ],
+      "previousFromStart": 0.181732
+    }
+  },
+  "recognitionNotes": "Both Whisper decoders independently resolve the stems and scored answers in both final modes. Zipformer confirms both decisive answers, both Q028 negatives, and both numeric cues, but not all carrier wording. Q027 distractor A has ASR one/ones number normalization; it still concerns processing time rather than outreach, with no effect on answer uniqueness. Shared source PCM, independently encoded formal and practice Opus."
+}
