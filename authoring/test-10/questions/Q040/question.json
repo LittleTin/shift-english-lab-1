@@ -1,0 +1,46 @@
+{
+  "id": "t10-q040",
+  "uuid": "128d09be-469c-5803-832d-ead69ce04558",
+  "number": 40,
+  "part": 3,
+  "testId": "test-10",
+  "groupId": "t10-g038",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "prompt": "If the old meter counts normally during the workshop test, what is the most the team can conclude from that result?",
+  "promptZh": "如果舊水表在工作室測試時能正常計數，團隊根據這項結果最多能下什麼結論？",
+  "options": [
+    {
+      "id": "A",
+      "text": "They did not reproduce the stopped count under the workshop conditions.",
+      "zh": "在工作室的測試條件下，並未重現讀數停止增加的情形。",
+      "whyZh": "大樓裡即使放水，讀數也沒有增加；若工作室能正常計數，只能說在當時的工作室條件未重現故障，不能判定原因。"
+    },
+    {
+      "id": "B",
+      "text": "The connection to the office caused the display to stop counting.",
+      "zh": "與辦公室的連線使水表顯示停止計數。",
+      "whyZh": "另一處的連線問題只是待查，而且其水表本身的讀數仍增加。這個結果無法證明迪恩大樓的連線造成水表顯示停滯。"
+    },
+    {
+      "id": "C",
+      "text": "The total on the worksheet agrees with the number shown after the meter was removed.",
+      "zh": "工作單上的讀數等於拆下水表後它顯示的數字。",
+      "whyZh": "正常計數並不提供兩邊讀數數值或比對結果；工作單記的是故障前經驗證的讀數。"
+    },
+    {
+      "id": "D",
+      "text": "The old meter can be put back into use without checking it at the building.",
+      "zh": "不必在大樓再檢查，就可把舊水表裝回使用。",
+      "whyZh": "正常一次並不確定現場如何或是否有間歇性問題；講者並未同意不用再查就裝回。"
+    }
+  ],
+  "answer": "A",
+  "evidence": "“At Dean House, running water didn’t change the display at all.” / “I want to see whether it behaves the same way on the test loop.” Counting normally at the workshop is a hypothetical supplied by this question, not a claim about the dialogue’s actual result.",
+  "explanationZh": "大樓裡即使放水，讀數也沒有增加；若工作室能正常計數，只能說在當時的工作室條件未重現故障，不能判定原因。",
+  "revision": 1,
+  "tags": [
+    "service-diagnostics",
+    "maintenance"
+  ]
+}

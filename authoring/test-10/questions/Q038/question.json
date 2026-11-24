@@ -1,0 +1,46 @@
+{
+  "id": "t10-q038",
+  "uuid": "69e1bfee-27e0-5c27-9923-c476d3369c0e",
+  "number": 38,
+  "part": 3,
+  "testId": "test-10",
+  "groupId": "t10-g038",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "prompt": "What should the man do with the spare, and what should happen at Vale Court?",
+  "promptZh": "男子應如何分配備用水表？維爾庭院又應該先處理什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Take the spare to Vale Court and have Dean House check its connection.",
+      "zh": "把備用水表帶去維爾庭院，讓迪恩大樓檢查連線。",
+      "whyZh": "維爾庭院的表在放水時仍會累計，是辦公室收不到讀數；迪恩大樓的表在放水時仍不動，兩處不能對調處置。"
+    },
+    {
+      "id": "B",
+      "text": "Take the spare to Dean House and have the connection at Vale Court checked.",
+      "zh": "把備用水表帶去迪恩大樓，並安排檢查維爾庭院的連線。",
+      "whyZh": "規則只為完全停止計量的表換表。迪恩放水時讀數不動，該用備品；維爾現場有計量，但辦公室沒有收到，應先查連線。"
+    },
+    {
+      "id": "C",
+      "text": "Take the spare to Dean House and order another replacement for Vale Court.",
+      "zh": "把備用水表帶去迪恩大樓，再為維爾庭院訂一只替換用的水表。",
+      "whyZh": "先送迪恩是對的，但維爾仍會計量；還沒先查連線，不能按目前資訊就訂替換水表。"
+    },
+    {
+      "id": "D",
+      "text": "Keep the spare in the van and have both sites check their connections first.",
+      "zh": "把備用水表留在車上，兩處都先檢查連線。",
+      "whyZh": "先查連線適合仍在計量的維爾；迪恩已在放水時確認現場讀數不動，符合換表條件。"
+    }
+  ],
+  "answer": "B",
+  "evidence": "“We swap a meter only if it has stopped counting.” / “If the number on its own display is still rising, we check the connection to the office first.” / “The total went up, even though nothing appeared on our office screen.” / “At Dean House, running water didn’t change the display at all.”",
+  "explanationZh": "規則只為完全停止計量的表換表。迪恩放水時讀數不動，該用備品；維爾現場有計量，但辦公室沒有收到，應先查連線。",
+  "revision": 1,
+  "tags": [
+    "service-diagnostics",
+    "maintenance"
+  ]
+}

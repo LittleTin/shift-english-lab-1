@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "testId": "test-10",
+  "scope": [
+    38,
+    39,
+    40
+  ],
+  "status": "Validated authoring batch; not deployed",
+  "sourceBase": "a6979972afde6eed643694fe80fac7c9ef368b8f",
+  "integrationBase": "5641a9621a4c744ffddf3ed0370b418258a7f6ec",
+  "groupSourceSha256": "28d42474f42968a7f87c1ee03f66837aa74b475502a0744db7b9ad7b58061f0f",
+  "items": [
+    {
+      "number": 38,
+      "answer": "B",
+      "difficulty": "intermediate",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q038/question.json": "111ad0a53affa711223be60f47d77c1e2932b74fe0d65d0c46b0fd112125ae30",
+        "authoring/test-10/questions/Q038/media.json": "fdf0c64461da9d9a4bfcc2c8c8e76ed8fc5f58a1a733f25247b90154141465fa"
+      }
+    },
+    {
+      "number": 39,
+      "answer": "C",
+      "difficulty": "intermediate",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q039/question.json": "406d943619009eb45f59f416664a0edadbe51ba850adc85a7c79c150dc0b781e",
+        "authoring/test-10/questions/Q039/media.json": "7f79f5ceba744ea3ca88caf6adcd376cce939629206faaa752dbfd001acfa772"
+      }
+    },
+    {
+      "number": 40,
+      "answer": "A",
+      "difficulty": "intermediate",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q040/question.json": "ebd13e6293219e5fc490aea261b535f8ef9e1dad79e3fc4b6a16b3564c7dc252",
+        "authoring/test-10/questions/Q040/media.json": "1186a2c1a6a687fb51d0b63282ee1da1438fdd28c8c1933cb43cf55d008e22d2"
+      }
+    }
+  ],
+  "sourceMediaAndPhases": {
+    "groupId": "t10-g038",
+    "practiceAndFormal": {
+      "formal": {
+        "path": "audio/formal-groups/test-10/t10-g038.ogg",
+        "name": "t10-g038-formal.ogg",
+        "duration": 116.39,
+        "samples": 5586720,
+        "sha256": "0d8f27674d5ac7b24aad8d047ef7275d75f3d130564c1f8187fac0e0d7b7c8fc",
+        "phase": [
+          {
+            "role": "edge-lead",
+            "startSample48k": 0,
+            "endSample48k": 96000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "cue",
+            "startSample48k": 96000,
+            "endSample48k": 302400,
+            "inputPcmSha256": "4e4da388bf79c8ae9c04b829b2f706f122d1ff0389268c3a0b0a7786f36ecd48"
+          },
+          {
+            "role": "gap",
+            "startSample48k": 302400,
+            "endSample48k": 319200,
+            "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+          },
+          {
+            "role": "passage",
+            "startSample48k": 319200,
+            "endSample48k": 3297600,
+            "inputPcmSha256": "f696faa96b37f6c87f5ae1ca991a57c02c38e823c1ba91fd897233902133437c",
+            "turnRanges48k": [
+              [
+                319200,
+                759840
+              ],
+              [
+                759840,
+                1240800
+              ],
+              [
+                1240800,
+                1636800
+              ],
+              [
+                1636800,
+                2117760
+              ],
+              [
+                2117760,
+                2732640
+              ],
+              [
+                2732640,
+                3297600
+              ]
+            ]
+          },
+          {
+            "role": "stem-38",
+            "startSample48k": 3297600,
+            "endSample48k": 3578400,
+            "inputPcmSha256": "26cc2ffa776e76276d01b2e119568f2b73ee28c5743c048dadf80716c57a3d1a"
+          },
+          {
+            "role": "answer-38",
+            "startSample48k": 3578400,
+            "endSample48k": 3962400,
+            "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+          },
+          {
+            "role": "stem-39",
+            "startSample48k": 3962400,
+            "endSample48k": 4296000,
+            "inputPcmSha256": "d94045730aa396cbd14889a4af76dd90d6d6c754316099ec2fec321808db56d3"
+          },
+          {
+            "role": "answer-39",
+            "startSample48k": 4296000,
+            "endSample48k": 4680000,
+            "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+          },
+          {
+            "role": "stem-40",
+            "startSample48k": 4680000,
+            "endSample48k": 5106720,
+            "inputPcmSha256": "5584e9e7db1e70557f295edf98886607899f891a71cc5faa2248a9d3cdd5d931"
+          },
+          {
+            "role": "answer-40",
+            "startSample48k": 5106720,
+            "endSample48k": 5490720,
+            "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+          },
+          {
+            "role": "edge-tail",
+            "startSample48k": 5490720,
+            "endSample48k": 5586720,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      },
+      "practice": {
+        "path": "audio/practice-groups/test-10/t10-g038.ogg",
+        "name": "t10-g038-practice.ogg",
+        "duration": 66.05,
+        "samples": 3170400,
+        "sha256": "c45d8cdf5dca05c5bf072b1c16341cba519d912deff20a182a3a5ad52c4bedcc",
+        "phase": [
+          {
+            "role": "edge-lead",
+            "startSample48k": 0,
+            "endSample48k": 96000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "passage",
+            "startSample48k": 96000,
+            "endSample48k": 3074400,
+            "inputPcmSha256": "f696faa96b37f6c87f5ae1ca991a57c02c38e823c1ba91fd897233902133437c",
+            "turnRanges48k": [
+              [
+                96000,
+                536640
+              ],
+              [
+                536640,
+                1017600
+              ],
+              [
+                1017600,
+                1413600
+              ],
+              [
+                1413600,
+                1894560
+              ],
+              [
+                1894560,
+                2509440
+              ],
+              [
+                2509440,
+                3074400
+              ]
+            ]
+          },
+          {
+            "role": "edge-tail",
+            "startSample48k": 3074400,
+            "endSample48k": 3170400,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      }
+    },
+    "sharedSourceSha256": "5a549c839a76ff26768ced2cc909079724566192b78139a9c23d51ae58400abc",
+    "formalStemSourceSha256": "0fd03182c9d28b0f399ac28816d965462dcaf8c92e05ace2e8b0de95e6e734e5",
+    "sourceStemRanges": [
+      [
+        0,
+        280800
+      ],
+      [
+        345600,
+        679200
+      ],
+      [
+        742080,
+        1168800
+      ]
+    ],
+    "sourceTurnCuts": [
+      0,
+      440640,
+      921600,
+      1317600,
+      1798560,
+      2413440,
+      2978400
+    ],
+    "status": "private; ASR and native QA required"
+  },
+  "native": {
+    "fixtureSha256": "30bd75ac72abd05e8dd72d350da4396ddbe9c10a7ef0255c0b24503f65283865",
+    "formal": {
+      "previous": 0.210552,
+      "new": 0.006524,
+      "rate": 1,
+      "paused": 0.042993,
+      "still": 0.042993,
+      "resumed": 0.321097,
+      "stems": [
+        {
+          "n": 38,
+          "t": 68.851168,
+          "choices": [
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "n": 39,
+          "t": 82.77558,
+          "choices": [
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "n": 40,
+          "t": 97.667387,
+          "choices": [
+            4,
+            4,
+            4
+          ]
+        }
+      ],
+      "pausedAfter": 97.744047
+    },
+    "practice": {
+      "previous": 0.24493,
+      "reset": 0,
+      "new": 0.07422,
+      "choices": [
+        4,
+        4,
+        4
+      ],
+      "paused": 0.222708,
+      "still": 0.222708,
+      "resumed": 0.476817
+    }
+  },
+  "independentSpeechReceipts": {
+    "formal-whisper-small.json": "759a153ff3b3dd860eff616e979e6e0bc44233ab3a6d2f5f4db5f0c101f80386",
+    "formal-whisper-base.json": "85697bc42ac0e00d1f2ca20beeeb16e68eba5544348935b57a39a50450d860a0",
+    "formal-zipformer.json": "30fd578da6b0fc75f3eab1409940aaceb8bcffbf2103d873ec786c0bb9bbf6d3",
+    "practice-whisper-small.json": "51c32c1dbf30853a5d0ec6d0ec5181ee43c94cf72852b68e364b0228be8af4c6",
+    "practice-whisper-base.json": "a141a630d9ab4390a46577f4bb8a9a69ff086af18d6610674fa9a8bfb5dc361b",
+    "practice-zipformer.json": "47b77e024073f50e25660a89d2801e519044e8eba23d0b2b79a56934fef07a67"
+  },
+  "notes": "All three independent decoders recover the meter replacement rule, opposing observations at Vale and Dean, and documented reading/source distinctions in each mode. Proper name Vale may be rendered Vail or Veil with the same pronunciation. Irish Connor and Australian Natasha dialogue; Aria formal. Natural change from exact approved G035 to G038 verified."
+}

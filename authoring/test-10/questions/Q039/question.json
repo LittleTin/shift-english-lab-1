@@ -1,0 +1,46 @@
+{
+  "id": "t10-q039",
+  "uuid": "deb44422-1695-5cec-bc67-f8f3c578b5de",
+  "number": 39,
+  "part": 3,
+  "testId": "test-10",
+  "groupId": "t10-g038",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "prompt": "Which two sources should the man use for the required fields on the replacement form?",
+  "promptZh": "更換表上的必填欄位，男子該從哪兩個來源取得資料？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The total now showing on the display and the serial number on the old unit",
+      "zh": "水表現在顯示的累積讀數，以及舊水表上的序號。",
+      "whyZh": "舊表序號沒錯，但現在表上顯示的是表停住後仍看得到的數字，不是按規則指定的最後一次在正常計量時核實的來源。"
+    },
+    {
+      "id": "B",
+      "text": "The total on yesterday’s worksheet and the serial number of the spare",
+      "zh": "昨天工作單上的累積讀數，以及備用水表的序號。",
+      "whyZh": "昨天工作單記的是正確的累積讀數，但資料是舊表產生的，不能填備用水表的序號。"
+    },
+    {
+      "id": "C",
+      "text": "The total on yesterday’s worksheet and the serial number on the old unit",
+      "zh": "昨天工作單上的累積讀數，以及舊水表上的序號。",
+      "whyZh": "工作單有最後一次核實的累積讀數；讀數來自舊表，工作單沒抄的序號要從舊表上讀取。"
+    },
+    {
+      "id": "D",
+      "text": "The total now showing on the display and the serial number of the spare",
+      "zh": "水表現在顯示的累積讀數，以及備用水表的序號。",
+      "whyZh": "這同時選了已停住的表目前顯示值和未產生該讀數的備用水表，兩個來源都不符規則。"
+    }
+  ],
+  "answer": "C",
+  "evidence": "“the last total someone verified while the old meter was still counting, and the serial number of the unit that produced it.” / “Kim has the last verified total on yesterday’s worksheet, but didn’t copy the serial number.” / “It’s printed on the old unit.”",
+  "explanationZh": "工作單有最後一次核實的累積讀數；讀數來自舊表，工作單沒抄的序號要從舊表上讀取。",
+  "revision": 1,
+  "tags": [
+    "service-diagnostics",
+    "maintenance"
+  ]
+}
