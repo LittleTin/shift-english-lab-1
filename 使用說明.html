@@ -7,7 +7,8 @@ body{margin:0;background:#f6f7f0;color:#253d32;font:16px/1.8 -apple-system,Blink
 <p>The website needs an internet connection to open or load test content you haven’t loaded yet. Saving your progress in this browser does not download the site or its audio. To practise offline, use the complete downloaded package instead.</p>
 <div class="box"><ol><li>If you have the complete ZIP, extract it fully before opening it. Saving this webpage or exporting your progress is not the same as downloading the package.</li><li>Open <code>index.html</code> in desktop Chrome or Edge. Keep the <code>audio/</code>, <code>assets/</code> and <code>data/</code> folders together.</li><li>Choose reading practice, listening practice or a complete test. The audio included in that folder can play offline in a browser that supports Opus. Cross-device account sync requires a connection and is not available when opening the package from your files.</li></ol><a href="index.html">Open the practice app →</a></div>
 <h2>What is included?</h2>
-<p>Three original tests contain 600 questions: 300 listening and 300 reading. Each test follows the Part 1–7 question counts of 6, 25, 39, 30, 30, 16 and 54. Related questions share a single page, passage and illustration or chart.</p>
+<p id="guide-test-count">See Practice Home for the tests available in this copy.</p>
+<p>Each test follows the Part 1–7 question counts of 6, 25, 39, 30, 30, 16 and 54. Related questions share a single page, passage and illustration or chart.</p>
 <p>The interface and answer choices are in English. Traditional Chinese translations, explanations, option-by-option reasoning, evidence and vocabulary appear on answer-explanation pages after submission, whether the answer was right, wrong or unanswered. Your own notes are preserved in the language you wrote them.</p>
 <p>This is independent practice material, not an ETS product or an official TOEIC test. Part 1 uses original AI-generated practice photographs, not official test photographs. Data graphics preserve the original charts and labels. New listening passages use Azure neural voices across 14 English accents, with female and male voices per accent. They are not human recordings. Difficulty and timing have not been officially calibrated.</p>
 <p><a href="語音試聽.html?v=1.5.3">Compare all 14 listening accents →</a></p>
@@ -38,4 +39,18 @@ body{margin:0;background:#f6f7f0;color:#253d32;font:16px/1.8 -apple-system,Blink
 <h2>Question lookup</h2><p>Open <a href="question-debug.html">Question Debug</a> and paste the UUID displayed on a question. It shows the original media and playback range without recording an answer.</p><h2>Question lookup</h2><p>Open <a href="question-debug.html">Question Debug</a> and paste the UUID displayed on a question. It shows the original media and playback range without recording an answer.</p><h2>Privacy and implementation</h2><p>The app plays pre-generated audio locally and does not call an external speech service during playback. It uses no remote fonts, third-party JavaScript packages or analytics trackers. When signed in, it connects to its configured Supabase project for authentication and completed-session synchronization. Question content and illustrations are original practice material.</p>
 <p><a href="index.html">← Back to practice home</a></p></main><script src="data/catalog.js?v=1.5.14"></script>
 <script src="assets/release-label.js?v=1.5.3"></script>
+<script>
+(() => {
+  const tests = window.SHIFT_CATALOG?.tests;
+  if (!Array.isArray(tests) || !tests.length || !tests.every(test =>
+    Number.isSafeInteger(test?.listening) && test.listening > 0 &&
+    Number.isSafeInteger(test?.reading) && test.reading > 0)) return;
+  const listening = tests.reduce((total, test) => total + test.listening, 0);
+  const reading = tests.reduce((total, test) => total + test.reading, 0);
+  const count = number => number.toLocaleString("en-US");
+  const label = tests.length === 1 ? "test" : "tests";
+  document.getElementById("guide-test-count").textContent =
+    `This copy includes ${count(tests.length)} ${label} with ${count(listening + reading)} questions: ${count(listening)} listening and ${count(reading)} reading.`;
+})();
+</script>
 </body></html>
