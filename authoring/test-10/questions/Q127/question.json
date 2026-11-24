@@ -1,0 +1,52 @@
+{
+  "id": "t10-q127",
+  "testId": "test-10",
+  "number": 127,
+  "part": 5,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "incomplete-sentence",
+    "counterfactual-evidence"
+  ],
+  "prompt": "A conservator notes that the mural looks brighter since a dark partition beside it was removed. Even if the paint had faded slightly, the change to its surroundings could still have made the mural look brighter. Using its brighter appearance to conclude that the paint has not faded would ______.",
+  "promptZh": "一名修復人員指出，壁畫旁的深色隔板拆掉後，壁畫看起來更亮了。即使顏料已略微褪色，周邊環境的變動仍可能讓壁畫看起來更亮。若以外觀看似變亮為由斷定顏料沒有褪色，就會______。",
+  "options": [
+    {
+      "id": "A",
+      "text": "distinguish a change in the paint from a change in what surrounds it",
+      "zh": "分辨顏料本身的變化與周邊環境的變化",
+      "whyZh": "壁畫的外觀可能同時受顏料狀態和周邊環境影響；只看亮度不能把兩者分開。"
+    },
+    {
+      "id": "B",
+      "text": "accept that the paint could have faded despite looking brighter",
+      "zh": "承認即使看起來更亮，顏料仍有可能褪色",
+      "whyZh": "下結論說顏料沒褪色，就是不接受仍有褪色可能，不是承認那種可能。"
+    },
+    {
+      "id": "C",
+      "text": "dismiss a possibility that the change to its surroundings could have hidden",
+      "zh": "不當地排除一種可能被周遭環境變化掩蓋的情況",
+      "whyZh": "隔板拆除帶來的視覺變亮有可能遮掩顏料的輕微褪色。把變亮直接當成沒褪色的證據，就會錯誤排除這種可能。"
+    },
+    {
+      "id": "D",
+      "text": "show that the mural was seen against the same background on both occasions",
+      "zh": "顯示兩次都在相同背景下觀看壁畫",
+      "whyZh": "隔板已拆除，兩次觀看的周邊背景並不相同。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "隔板拆除帶來的視覺變亮有可能遮掩顏料的輕微褪色。把變亮直接當成沒褪色的證據，就會錯誤排除這種可能。",
+  "vocabulary": [
+    {
+      "term": "even if",
+      "zh": "即使",
+      "note": "用來引入讓步假設；即使假設成立，後述的結果仍可能發生。"
+    }
+  ],
+  "evidence": "A conservator notes that the mural looks brighter since a dark partition beside it was removed. Even if the paint had faded slightly, the change to its surroundings could still have made the mural look brighter. Using its brighter appearance to conclude that the paint has not faded would dismiss a possibility that the change to its surroundings could have hidden.",
+  "evidenceZh": "一名修復人員指出，壁畫旁的深色隔板拆掉後，壁畫看起來更亮了。即使顏料已略微褪色，周邊環境的變動仍可能讓壁畫看起來更亮。若以外觀看似變亮為由斷定顏料沒有褪色，就會不當地排除一種可能被周遭環境變化掩蓋的情況。"
+}

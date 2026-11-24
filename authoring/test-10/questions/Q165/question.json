@@ -1,0 +1,78 @@
+{
+  "id": "t10-q165",
+  "testId": "test-10",
+  "number": 165,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "courtyard-harvest"
+  ],
+  "prompt": "Which case for using the lobby cabinet complies with the committee’s budget principle without overstating its effect?",
+  "promptZh": "下列哪個使用大廳櫃子的理由，符合委員會預算原則，又沒有誇大效果？",
+  "options": [
+    {
+      "id": "A",
+      "text": "It will save the garden team a crate trip every Thursday, as supplies can stay in the cabinet.",
+      "zh": "用品可以留在櫃子裡，菜園小組每週四都可少搬一趟箱子。",
+      "whyZh": "少做每週重複的工作原本符合預算原則，但大廳櫃子只開放到當晚，志工還是得搬箱子。"
+    },
+    {
+      "id": "B",
+      "text": "It gives residents who cannot pick their own a collection option, although the crate still has to be carried.",
+      "zh": "雖然還是得搬箱子，它能讓無法自行採摘的住戶有辦法稍後領菜。",
+      "whyZh": "櫃子讓志工有地方暫留分好的菜，解決這些住戶不能自行摘、也不能稍後領的障礙；這符合參與例外，不必主張搬運時間減少。"
+    },
+    {
+      "id": "C",
+      "text": "It brings the first week’s setup forward, which is enough to qualify as a reduction in weekly work.",
+      "zh": "它能提前準備第一週的布置，已足以算是減少每週工作。",
+      "whyZh": "就算第一週準備較早，也不代表每週工作減少；原則明確排除只讓第一週輕鬆的理由。"
+    },
+    {
+      "id": "D",
+      "text": "It allows residents who collect later to make the same choice of vegetables as people who harvest for themselves.",
+      "zh": "它能讓稍後領菜的住戶，享有與自行採摘者相同的選菜自由。",
+      "whyZh": "事先分好的菜確實讓人可以稍後領取，卻不是讓領取者像自行採摘的人一樣，在菜畦裡自行挑選。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "櫃子讓志工有地方暫留分好的菜，解決這些住戶不能自行摘、也不能稍後領的障礙；這符合參與例外，不必主張搬運時間減少。",
+  "vocabulary": [
+    {
+      "term": "a recurring task",
+      "zh": "反覆要做的工作",
+      "note": "能新增參與方式是例外，不必把既有的搬運說成省下來了。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-08",
+  "evidence": "The Thursday harvest is open to residents whether or not they work in the garden. Anyone who comes in can pick vegetables from the marked beds. We do not normally set anything aside for people who cannot pick their own; once the Thursday volunteers leave, any vegetables they have collected go to the community kitchen. At present, the volunteers write down what was picked but not what was still available. / Nina said an earlier opening would let her in before work. Sam replied, ‘A path to the harvest isn’t the same as a share of it.’ Sam is already free on Thursdays. He said that he enjoys choosing vegetables to cook, but cannot pick them himself. He had asked the garden team for a small selection when they were already gathering vegetables, but had been told there was no way to leave it for him to collect. / The proposed budget follows a principle residents adopted last year: spend money to reduce tasks that are repeated each week, not just to make the first week easier. The main exception is an item that allows a household to participate in a way it previously could not. If an expense fits that exception, say which barrier it removes rather than claiming it saves time. / Looking at the storage plans, volunteers currently bring a crate downstairs from the tool room each Thursday and take it back afterwards. A permanent shelf beside the harvest table would still need to be cleared after every session; our upstairs room is the only place where supplies can stay overnight. The kitchen has offered us a small cabinet in the lobby for a small seasonal fee. It would be available during the harvest and until the end of the evening. Volunteers would still have to carry the crate, but the cabinet could hold a selection labelled for later collection.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 0,
+      "endChar": 407,
+      "exactQuote": "The Thursday harvest is open to residents whether or not they work in the garden. Anyone who comes in can pick vegetables from the marked beds. We do not normally set anything aside for people who cannot pick their own; once the Thursday volunteers leave, any vegetables they have collected go to the community kitchen. At present, the volunteers write down what was picked but not what was still available."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 409,
+      "endChar": 816,
+      "exactQuote": "Nina said an earlier opening would let her in before work. Sam replied, ‘A path to the harvest isn’t the same as a share of it.’ Sam is already free on Thursdays. He said that he enjoys choosing vegetables to cook, but cannot pick them himself. He had asked the garden team for a small selection when they were already gathering vegetables, but had been told there was no way to leave it for him to collect."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 818,
+      "endChar": 1186,
+      "exactQuote": "The proposed budget follows a principle residents adopted last year: spend money to reduce tasks that are repeated each week, not just to make the first week easier. The main exception is an item that allows a household to participate in a way it previously could not. If an expense fits that exception, say which barrier it removes rather than claiming it saves time."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1188,
+      "endChar": 1766,
+      "exactQuote": "Looking at the storage plans, volunteers currently bring a crate downstairs from the tool room each Thursday and take it back afterwards. A permanent shelf beside the harvest table would still need to be cleared after every session; our upstairs room is the only place where supplies can stay overnight. The kitchen has offered us a small cabinet in the lobby for a small seasonal fee. It would be available during the harvest and until the end of the evening. Volunteers would still have to carry the crate, but the cabinet could hold a selection labelled for later collection."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "t10-q130",
+  "testId": "test-10",
+  "number": 130,
+  "part": 5,
+  "topic": "business",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "incomplete-sentence",
+    "maximum-capacity"
+  ],
+  "prompt": "The new display rack holds ten more cards than the old one on a deep shelf, but no more on a shallow shelf. Two of the five shops use deep shelves and the other three use shallow ones. None is changing its shelves for the next delivery. The rack lets a shop display ten extra cards ______, so the order should not assume that all five shops need ten more.",
+  "promptZh": "新陳列架放在較深的層架上時，比舊架多容納十張卡片；放在較淺的層架上時，容量沒有增加。五家店中兩家用較深的層架，其餘三家用較淺的層架，這次送貨前也沒有店家會更換層架。以單家門市來看，換上新架後______，所以訂貨時不該假定五家店都需要多十張。",
+  "options": [
+    {
+      "id": "A",
+      "text": "at a minimum",
+      "zh": "至少能多展示十張",
+      "whyZh": "淺層架上的容量沒有增加，因此多十張不是每家店都能達到的最低增加量。"
+    },
+    {
+      "id": "B",
+      "text": "on average",
+      "zh": "平均能多展示十張",
+      "whyZh": "只有兩家可以多展示十張，另三家是零；五家平均是多四張，不是多十張。"
+    },
+    {
+      "id": "C",
+      "text": "at best",
+      "zh": "最多能多展示十張",
+      "whyZh": "新架放在較深的層架上時比舊架多容納十張；在較淺的層架上容量不變。十張是最多可增加的容量，不是每店的固定增量。"
+    },
+    {
+      "id": "D",
+      "text": "more often than not",
+      "zh": "多數時候能多展示十張",
+      "whyZh": "五家中只有兩家的層架有足夠深度，無法說這是多數店家的情況。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "新架放在較深的層架上時比舊架多容納十張；在較淺的層架上容量不變。十張是最多可增加的容量，不是每店的固定增量。",
+  "vocabulary": [
+    {
+      "term": "at best",
+      "zh": "最多；最好的情況下",
+      "note": "表示可能結果的有利上限，不表示平均或預期結果。"
+    }
+  ],
+  "evidence": "The new display rack holds ten more cards than the old one on a deep shelf, but no more on a shallow shelf. Two of the five shops use deep shelves and the other three use shallow ones. None is changing its shelves for the next delivery. The rack lets a shop display ten extra cards at best, so the order should not assume that all five shops need ten more.",
+  "evidenceZh": "新陳列架放在較深的層架上時，比舊架多容納十張卡片；放在較淺的層架上時，容量沒有增加。五家店中兩家用較深的層架，其餘三家用較淺的層架，這次送貨前也沒有店家會更換層架。以單家門市來看，換上新架後最多能多展示十張，所以訂貨時不該假定五家店都需要多十張。"
+}
