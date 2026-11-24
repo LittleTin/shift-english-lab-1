@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "testId": "test-10",
+  "scope": [
+    25,
+    26
+  ],
+  "status": "Validated authoring batch; not deployed",
+  "sourceBase": "1fcbcc1d8bace72608eddf2a724bda7067919e9c",
+  "integrationBase": "5641a9621a4c744ffddf3ed0370b418258a7f6ec",
+  "items": [
+    {
+      "number": 25,
+      "id": "t10-q025",
+      "answer": "A",
+      "difficulty": "intermediate",
+      "independentEvidence": "one of its legs is shorter than the others",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q025/question.json": "5bee6479ad323cdfdee16e0490209edb7ad233c35912d21c778807b19e128d94",
+        "authoring/test-10/questions/Q025/media.json": "51fb607d32e54256c0418bc78dbadaaa79a28d47e3485ea32f3834cd33e63734",
+        "authoring/test-10/groups/t10-g025/group.json": "6a08ef30b12b068768a83fec6bf7fa936505f7562cb7e41e3f2b8438a34a298b"
+      },
+      "opus": {
+        "practice": {
+          "sha256": "948b7956d5fce357f746dc4c78c62092a3176b79a03f5b8d793ab9640eee7ad7",
+          "samples48k": 893400,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 1,
+              "rmsLsb": 0.02305
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 797400,
+              "peakLsb": 23034
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 797400,
+              "endSample48k": 893400,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        },
+        "formal": {
+          "sha256": "c00ef963a866679547f9c5174c83b6a4517374449e6b4385f9ae5a189c8907cc",
+          "samples48k": 1351002,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 152802,
+              "peakLsb": 16282
+            },
+            {
+              "role": "gap",
+              "startSample48k": 152802,
+              "endSample48k": 169602,
+              "peakLsb": 2,
+              "rmsLsb": 0.33408
+            },
+            {
+              "role": "passage",
+              "startSample48k": 169602,
+              "endSample48k": 871002,
+              "peakLsb": 23058
+            },
+            {
+              "role": "answer",
+              "startSample48k": 871002,
+              "endSample48k": 1255002,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1255002,
+              "endSample48k": 1351002,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        }
+      },
+      "recognizers": {
+        "whisper-small.json": "d3453b539a21324d8f8f621c8d166f1a70e79013ad770652b09dd6ba9df43205",
+        "whisper-base.json": "dfd6839f234a93f5bd8fc132901f7ff185029dc2c97eea6672556ba859a9b2ce",
+        "zipformer.json": "4f310d8354955831a0209048388d3773739c7b6803a3a2feee82aede5c5c562c"
+      }
+    },
+    {
+      "number": 26,
+      "id": "t10-q026",
+      "answer": "A",
+      "difficulty": "intermediate",
+      "independentEvidence": "fine in the shoes i'm wearing",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q026/question.json": "a986a15651b4a602e2606782b87268f8bc57972afa4dc0453fd03b4d0dd1cf93",
+        "authoring/test-10/questions/Q026/media.json": "fc138ab60fe3abd1b29ccd31ea21178b5c0cb51ef64d977cc877c7d1b6bb2a56",
+        "authoring/test-10/groups/t10-g026/group.json": "9ec34f09ae1e87eba08f50e3e5b77d5683e35db7f6598d67b721a68af134ed49"
+      },
+      "opus": {
+        "practice": {
+          "sha256": "f41f41ca9c9ccf6f4f0b2ad202cad09ed783b15d201c5e1051949daf7158077a",
+          "samples48k": 1063200,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 967200,
+              "peakLsb": 25895
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 967200,
+              "endSample48k": 1063200,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        },
+        "formal": {
+          "sha256": "af4921784b6be8517d67d321292f4df3020e8d8917d6babad9655c6dd37a0127",
+          "samples48k": 1520746,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 152746,
+              "peakLsb": 16888
+            },
+            {
+              "role": "gap",
+              "startSample48k": 152746,
+              "endSample48k": 169546,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "passage",
+              "startSample48k": 169546,
+              "endSample48k": 1040746,
+              "peakLsb": 25684
+            },
+            {
+              "role": "answer",
+              "startSample48k": 1040746,
+              "endSample48k": 1424746,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1424746,
+              "endSample48k": 1520746,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        }
+      },
+      "recognizers": {
+        "whisper-small.json": "500596a8fd41e53925130c736e20e3403dd664b4541a12694aa20acdbf93a319",
+        "whisper-base.json": "c02dfe2955fc84f14fe2d661d950e931513f54fad11fe1af4772736d98ef245d",
+        "zipformer.json": "6e21e4b804b5ca4b0de1c4907fd51060fc65450e1d1dbd63ed8101408ab1c9af"
+      }
+    }
+  ],
+  "native": {
+    "fixtureSha256": "07defd06832f2fb29d88c334329e8bfb9bb31bb6e87afb4fe1286c4dacf6a480",
+    "formal": {
+      "previousFromStart": 0.115574,
+      "natural": [
+        0.011042,
+        0.020321
+      ],
+      "fixedRate": 1,
+      "paused": [
+        0.016817,
+        0.037745
+      ],
+      "still": [
+        0.016817,
+        0.037745
+      ],
+      "resumed": [
+        0.262389,
+        0.285493
+      ]
+    },
+    "practice": {
+      "reset": [
+        0,
+        0
+      ],
+      "newSources": [
+        "audio/practice-groups/test-10/t10-g025.ogg",
+        "audio/practice-groups/test-10/t10-g026.ogg"
+      ],
+      "first": [
+        0.147976,
+        0.147325
+      ],
+      "paused": [
+        0.185029,
+        0.189024
+      ],
+      "still": [
+        0.185029,
+        0.189024
+      ],
+      "resumed": [
+        0.439513,
+        0.456691
+      ],
+      "previousFromStart": 0.154695
+    }
+  },
+  "recognitionNotes": "Both Whisper engines resolve each question and correct response independently in both exact Opus modes. Whisper Small also reads all distractors verbatim in both modes. Q026 distractor ASR alternates socks and sucks in Base practice and Zipformer; the independent Base formal and both Small decodes match socks, and both modes derive from identical original passage samples. These are not scoring-word substitutions. Zipformer confirms both number cues and the response evidence about a short plant-stand leg and existing shoes, but does not confirm all wording."
+}
