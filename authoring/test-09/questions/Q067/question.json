@@ -1,0 +1,59 @@
+{
+  "id": "t09-q067",
+  "testId": "test-09",
+  "number": 67,
+  "part": 3,
+  "groupId": "t09-g065",
+  "revision": 1,
+  "prompt": "What must purchasing do to keep the next-day cutting option?",
+  "promptZh": "採購要做什麼才能保住次日完成切割的選項？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Send the revised drawing to the outside shop before three.",
+      "zh": "三點前把修正圖面送到外部工坊。",
+      "whyZh": "工坊需要三點前取得修正圖，才能明天切好；歐瑪說能在期限前送出。"
+    },
+    {
+      "id": "B",
+      "text": "Send the original drawing and confirm the lettering tomorrow.",
+      "zh": "先寄原圖，明天再確認字樣。",
+      "whyZh": "需要修正後的圖，不是原圖；字樣也不是外部工坊任務。"
+    },
+    {
+      "id": "C",
+      "text": "Wait until the toolroom fixes its cutter.",
+      "zh": "等工具間修好切割機。",
+      "whyZh": "等待維修不是保住外部工坊次日切割的條件。"
+    },
+    {
+      "id": "D",
+      "text": "Deliver the finished nameplate to assembly by three.",
+      "zh": "三點前把做好的銘牌交給組裝部。",
+      "whyZh": "三點前的期限指修正圖送到工坊，不是銘牌已完成。"
+    }
+  ],
+  "answer": "A",
+  "difficulty": "intermediate",
+  "explanationZh": "工坊需要三點前取得修正圖，才能明天切好；歐瑪說能在期限前送出。",
+  "evidence": "I’m Leon from the toolroom. We can fill the lettering here, but our cutter is down. The outside shop can cut the brass by tomorrow if it gets the revised drawing by three. / I’m Omar in purchasing. I can send that drawing before three. Should I ask them to fill the lettering as well?",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 2,
+      "speaker": "M1",
+      "startChar": 0,
+      "endChar": 171,
+      "exactQuote": "I’m Leon from the toolroom. We can fill the lettering here, but our cutter is down. The outside shop can cut the brass by tomorrow if it gets the revised drawing by three."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 3,
+      "speaker": "M2",
+      "startChar": 0,
+      "endChar": 110,
+      "exactQuote": "I’m Omar in purchasing. I can send that drawing before three. Should I ask them to fill the lettering as well?"
+    }
+  ],
+  "topic": "manufacturing"
+}

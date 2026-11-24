@@ -1,0 +1,228 @@
+{
+  "group": "t09-g065",
+  "status": "Authoring batch accepted; unreleased.",
+  "sourceGroupSha256": "6071dac7a6df5b9634797747a89ff859a2406c150eea3bf76e0c9b17677e6398",
+  "questions": [
+    {
+      "q": 65,
+      "questionId": "t09-q065",
+      "uuid": "ea153f78-79a9-5757-bca2-13914b2ad6ca",
+      "qSha256": "4e2d74794102fc344f3ee8a2795250a1211631f01e38efd58d9619733750a6be",
+      "sidecarSha256": "4e63707127e2b95ed4a0e2dfe0c0b0c1bea2558b993a4b008720776d33986b3d"
+    },
+    {
+      "q": 66,
+      "questionId": "t09-q066",
+      "uuid": "0366f868-f44a-581e-8cee-cab0859b20b7",
+      "qSha256": "b19c0a71d09f87768cf37f6177bd9626f57453d3723de04b107617ca0b06f3be",
+      "sidecarSha256": "7119de17307973f3d6260b2ebc8c51d51745b04cb172839a903e19b3168b4ce1"
+    },
+    {
+      "q": 67,
+      "questionId": "t09-q067",
+      "uuid": "1f5f8bcf-8ae2-5fa5-a8dd-33b5e099af56",
+      "qSha256": "f04f611c6c6f0d754732ba145d59bdc283ce5301f472226fc8ad19881659e81c",
+      "sidecarSha256": "44470ca04e3ab2675a34ddf236af2ae0bf04070a2521692c728ef5cdef954f9b"
+    }
+  ],
+  "mediaPaths": [
+    {
+      "url": "audio/formal-groups/test-09/t09-g065.ogg",
+      "source": "test-09/groups/t09-g065/media/audio/formal-groups/test-09/t09-g065.ogg"
+    },
+    {
+      "url": "audio/practice-groups/test-09/t09-g065.ogg",
+      "source": "test-09/groups/t09-g065/media/audio/practice-groups/test-09/t09-g065.ogg"
+    }
+  ],
+  "mediaManifestSha256": "b01b9e4d0b6aceb5f80a984da2f85806fe151988379fb7067608dc268fa9855f",
+  "integrationBase": "811020f65c174e9708d625ed6015a73815f7bbcf",
+  "appSha256": "eebd55c330ca4f52584d893a3096748dd8afc062f6232ad7bc01de395e450a62",
+  "candidateEvidenceSha256": "39adce6cc6d501e580a57d420697c192afe0ce3c484d792a67044f200d27d026",
+  "sourceCutMapSha256": "22987f4952c07c1e78741c84c47237b34851e90d80f6c78b28744fdaa0069d52",
+  "sourcePreflightSha256": "7f0fd1a5c3f067470f1274b7f59232d7004a46b85ff3b8afbbc3c9adba2af1cb",
+  "decodedAsrSha256": {
+    "whisper-small.json": "df69b07c9034ad988e37cdc9becc448b275c630e253a699ff0e4d1a9d18ea38c",
+    "zipformer.json": "9dcfa955108382622072d2a461162474c693667741d6c565bf96196bcdfe1256",
+    "whisper-base-targeted.json": "d9460a3b5d41fd54c38f917e7e050b596996c6ffc43216ddc58b93d49aa7dec7"
+  },
+  "media": {
+    "formal": {
+      "file": "t09-g065-formal.ogg",
+      "sha256": "0df9985f93370f7795b2030ea65f84781809d1661903a50c1601926d6a608467",
+      "samples48k": 4279626,
+      "halfSecondGuardPeaksLsb": [
+        0,
+        1
+      ],
+      "timeline": [
+        {
+          "role": "gap",
+          "startSample48k": 0,
+          "endSample48k": 96000,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "cue",
+          "startSample48k": 96000,
+          "endSample48k": 328800,
+          "inputPcmSha256": "153eb7f7fe5177b5234e470cecc333dd5d73a61c8eafccd06f10b483c1549f22"
+        },
+        {
+          "role": "gap",
+          "startSample48k": 328800,
+          "endSample48k": 345600,
+          "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+        },
+        {
+          "role": "passage",
+          "startSample48k": 345600,
+          "endSample48k": 2195946,
+          "inputPcmSha256": "b20b49f30b5e5c62ea184ff8bacd3d6d238f0ca3b2cf8af89d11e90267ef1889",
+          "turnRanges48k": [
+            [
+              345600,
+              864000
+            ],
+            [
+              864000,
+              1478400
+            ],
+            [
+              1478400,
+              1896000
+            ],
+            [
+              1896000,
+              2195946
+            ]
+          ]
+        },
+        {
+          "role": "stem:65",
+          "startSample48k": 2195946,
+          "endSample48k": 2470986,
+          "inputPcmSha256": "04c714325789e810310550e7798676410f638bc3cd85c06ab32dcd163536506a"
+        },
+        {
+          "role": "answer:65",
+          "startSample48k": 2470986,
+          "endSample48k": 2854986,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "stem:66",
+          "startSample48k": 2854986,
+          "endSample48k": 3101226,
+          "inputPcmSha256": "dad2aa9f104cb29d6821ed4db4fd212431a955c28a7ab2309d482a4ced830008"
+        },
+        {
+          "role": "answer:66",
+          "startSample48k": 3101226,
+          "endSample48k": 3485226,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "stem:67",
+          "startSample48k": 3485226,
+          "endSample48k": 3799626,
+          "inputPcmSha256": "4bb76a871297bdd19d4054e5a7255a0281061e9d89868f4687a0e6276c661c36"
+        },
+        {
+          "role": "answer:67",
+          "startSample48k": 3799626,
+          "endSample48k": 4183626,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "gap",
+          "startSample48k": 4183626,
+          "endSample48k": 4279626,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        }
+      ]
+    },
+    "practice": {
+      "file": "t09-g065-practice.ogg",
+      "sha256": "7bf5d318d97190d71b48ab5580e4504775d931cef6309141e9d04af920ccd955",
+      "samples48k": 2042346,
+      "halfSecondGuardPeaksLsb": [
+        0,
+        1
+      ],
+      "timeline": [
+        {
+          "role": "gap",
+          "startSample48k": 0,
+          "endSample48k": 96000,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "passage",
+          "startSample48k": 96000,
+          "endSample48k": 1946346,
+          "inputPcmSha256": "b20b49f30b5e5c62ea184ff8bacd3d6d238f0ca3b2cf8af89d11e90267ef1889",
+          "turnRanges48k": [
+            [
+              96000,
+              614400
+            ],
+            [
+              614400,
+              1228800
+            ],
+            [
+              1228800,
+              1646400
+            ],
+            [
+              1646400,
+              1946346
+            ]
+          ]
+        },
+        {
+          "role": "gap",
+          "startSample48k": 1946346,
+          "endSample48k": 2042346,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        }
+      ]
+    }
+  },
+  "semanticChecks": {
+    "65": "B: the mounting holes are too close to the nameplate edge, despite its front looking fine.",
+    "66": "C: the outside shop only cuts the brass, and the lettering is completed in-house.",
+    "67": "A: purchasing sends the revised drawing before the three o’clock deadline to keep next-day cutting."
+  },
+  "recognitionScope": "All three formal stems and numbered cue are clear in both independent recognizers. Both actual final Opus files independently recover holes too close to edge, exact supplier deadline and difference between outside cutting and inside lettering. Exact final targeted blind Whisper base independently confirms mounting holes and purchasing in both modes; differing spellings of Ada/Omar and mountain in Zipformer do not change supported answer. Targeted ASR included in receipt hashes.",
+  "native": {
+    "engine": "Cloud Chromium, exact private fixture",
+    "fixtureSha256": "879eea9485518a13c2d68a213e35399fc54ea5440121675d9bf80d3ea41b5a05",
+    "formal": {
+      "priorStillPlaying": 68.256007,
+      "newAutomatic": 2.749194,
+      "initial": 0,
+      "firstSampled": 0.131958,
+      "paused": 2.850278,
+      "whileStillPaused": 2.850278,
+      "afterResume": 3.086825,
+      "rate": 1,
+      "nextDisabled": true,
+      "transcriptHidden": true
+    },
+    "practice": {
+      "previous": 0.080947,
+      "reset": 0,
+      "firstSampled": 0.129948,
+      "paused": 0.189829,
+      "whileStillPaused": 0.189829,
+      "afterResume": 0.431777
+    },
+    "threeDisplayed": [
+      65,
+      66,
+      67
+    ]
+  }
+}
