@@ -1,0 +1,59 @@
+{
+  "id": "t09-q085",
+  "testId": "test-09",
+  "number": 85,
+  "part": 4,
+  "groupId": "t09-g083",
+  "revision": 1,
+  "prompt": "Without a phone, what should a visitor do if the card they get does not match the tile they later choose?",
+  "promptZh": "沒帶手機的訪客若拿到的圖卡和後來選的磁磚不符，該怎麼辦？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Keep the card until the last table and trade it there.",
+      "zh": "先留著圖卡，到最後一張服務桌再換。",
+      "whyZh": "沒手機者可先借圖卡，不用猜會選哪片，末站可以換成相符的圖卡。"
+    },
+    {
+      "id": "B",
+      "text": "Wait to borrow a phone from the last volunteer.",
+      "zh": "等到最後向志工借手機。",
+      "whyZh": "替代方案是借圖卡，不是借手機。"
+    },
+    {
+      "id": "C",
+      "text": "Make a rubbing of the tile from the pavement.",
+      "zh": "站在人行道上拓印磁磚。",
+      "whyZh": "今天牆濕已取消鉛筆拓印；站在人行道是拍照的要求。"
+    },
+    {
+      "id": "D",
+      "text": "Choose only the tile already shown on the borrowed card.",
+      "zh": "只能選圖卡上原本那片。",
+      "whyZh": "主辦人說不必先猜選哪片，可到末站換卡。"
+    }
+  ],
+  "answer": "A",
+  "difficulty": "intermediate",
+  "explanationZh": "沒手機者可先借圖卡，不用猜會選哪片，末站可以換成相符的圖卡。",
+  "evidence": "If you don’t have a phone, borrow a picture card from me now. / We have a card for every stop, and you can trade yours at the last table.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "F",
+      "startChar": 308,
+      "endChar": 369,
+      "exactQuote": "If you don’t have a phone, borrow a picture card from me now."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "F",
+      "startChar": 420,
+      "endChar": 493,
+      "exactQuote": "We have a card for every stop, and you can trade yours at the last table."
+    }
+  ],
+  "topic": "daily"
+}
