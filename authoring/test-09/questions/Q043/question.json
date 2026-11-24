@@ -1,0 +1,51 @@
+{
+  "id": "t09-q043",
+  "testId": "test-09",
+  "number": 43,
+  "part": 3,
+  "groupId": "t09-g041",
+  "revision": 1,
+  "prompt": "What does Leila ask the clerk to set aside?",
+  "promptZh": "蕾拉請庫房管理員另外留什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A spare battery for the late crew.",
+      "zh": "給晚到那組的備用電池。",
+      "whyZh": "蕾拉請管理員留一顆備用電池供晚到者領取。"
+    },
+    {
+      "id": "B",
+      "text": "An empty case for the stewards.",
+      "zh": "給引導人員的空箱子。",
+      "whyZh": "引導人員要收到裝有對講機的箱子；蕾拉沒要求留空箱。"
+    },
+    {
+      "id": "C",
+      "text": "A radio for use at the side counter.",
+      "zh": "在側櫃使用的一支對講機。",
+      "whyZh": "無人看管的側櫃不是留貨點；所留的是電池。"
+    },
+    {
+      "id": "D",
+      "text": "A second sign-out form for Nia.",
+      "zh": "給妮雅的第二張簽領表。",
+      "whyZh": "蕾拉會簽領，沒有另要簽領表。"
+    }
+  ],
+  "answer": "A",
+  "difficulty": "foundation",
+  "explanationZh": "蕾拉請管理員留一顆備用電池供晚到者領取。",
+  "evidence": "I’m Leila, the crew leader. I’ll sign before Nia takes the case. Can you leave one spare battery here? The late crew can pick it up from you.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 3,
+      "speaker": "F2",
+      "startChar": 0,
+      "endChar": 141,
+      "exactQuote": "I’m Leila, the crew leader. I’ll sign before Nia takes the case. Can you leave one spare battery here? The late crew can pick it up from you."
+    }
+  ],
+  "topic": "business"
+}

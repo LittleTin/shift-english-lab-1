@@ -1,0 +1,227 @@
+{
+  "group": "t09-g041",
+  "status": "Authoring batch accepted; unreleased.",
+  "sourceGroupSha256": "f5fe8f445e7509044dbc8772c2e5c90d0648fb6688073ea8dbb097cca9797986",
+  "questions": [
+    {
+      "q": 41,
+      "questionId": "t09-q041",
+      "uuid": "0cd75155-7d70-5588-8e7d-4b0c7027b21f",
+      "qSha256": "9116e3e63bdf5ee980abe8d06eada5ebc8b46ebfb414ef75f5fe0daec3202ffb",
+      "sidecarSha256": "1b7251f29cac0416ead85e6ef218fbc956474d70e1a6b90edf7fa58637cb1566"
+    },
+    {
+      "q": 42,
+      "questionId": "t09-q042",
+      "uuid": "ec12d073-777d-5e3d-8009-10b761836cb8",
+      "qSha256": "607ed20862959dd0682e06046ee4da98b6f960597d436bc4bbf47fbcfd9a08d8",
+      "sidecarSha256": "f13630d0623f017b4819fccebf6cc0f53e4dcea6cc95c7dc93614fdb2faecfc7"
+    },
+    {
+      "q": 43,
+      "questionId": "t09-q043",
+      "uuid": "63bbec17-5b37-5ed3-b41b-7c7de30203ac",
+      "qSha256": "176f87cbbb0d3fbecf27ac514010ceb4d1a030c8d16abb17a64f92d311cab1bd",
+      "sidecarSha256": "81a707ba51721a6e851558ff5f598d1c4135e741554045ac9c33f152058dc543"
+    }
+  ],
+  "mediaPaths": [
+    {
+      "url": "audio/formal-groups/test-09/t09-g041.ogg",
+      "source": "test-09/groups/t09-g041/media/audio/formal-groups/test-09/t09-g041.ogg"
+    },
+    {
+      "url": "audio/practice-groups/test-09/t09-g041.ogg",
+      "source": "test-09/groups/t09-g041/media/audio/practice-groups/test-09/t09-g041.ogg"
+    }
+  ],
+  "mediaManifestSha256": "a0e0b0027962c8c877eddfa0226be847b690c1ba5797d14f472672a4e2173da1",
+  "integrationBase": "811020f65c174e9708d625ed6015a73815f7bbcf",
+  "appSha256": "eebd55c330ca4f52584d893a3096748dd8afc062f6232ad7bc01de395e450a62",
+  "candidateEvidenceSha256": "eeacc4d4c33e4c953db31024f585c09163cc55141474d43040ff484e51a01edd",
+  "sourceCutMapSha256": "e3fce68f627b8742a9064f594a023a3578d6a3de1382785b7fbbdabb67ec4093",
+  "sourcePreflightSha256": "09c54302eeedd57585f47c76e7b2424e00270947513d008cf66e07fadffc3a0e",
+  "decodedAsrSha256": {
+    "whisper-small.json": "964444d98c828adfee57c0a4d11737e07415f721702b40ae426e8a5650abaa0d",
+    "zipformer.json": "848911bd62663141f4e91aa3f9a3644281dda530d72348fd7f4a6a5a2d79d7be",
+    "focused-name-base.json": "7ee9b1f78ade80d977d2476d8ff9a2e3c503e03f249d60d702643222be5708d2"
+  },
+  "media": {
+    "formal": {
+      "file": "t09-g041-formal.ogg",
+      "sha256": "60cfe61c288456e363cb05f2fddca7c26c5973258812f5fb5ab0a7dd198b3315",
+      "samples48k": 4397394,
+      "halfSecondGuardPeaksLsb": [
+        0,
+        1
+      ],
+      "timeline": [
+        {
+          "role": "gap",
+          "startSample48k": 0,
+          "endSample48k": 96000,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "cue",
+          "startSample48k": 96000,
+          "endSample48k": 321600,
+          "inputPcmSha256": "b48964fd21e40822ecf4cafa18eb85cc0c4515156c732196607900c1c7be5867"
+        },
+        {
+          "role": "gap",
+          "startSample48k": 321600,
+          "endSample48k": 338400,
+          "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+        },
+        {
+          "role": "passage",
+          "startSample48k": 338400,
+          "endSample48k": 2281290,
+          "inputPcmSha256": "012e69fa08e338ccea55cc725eb63aff363c99a34841b5e7c145cbe3414fea68",
+          "turnRanges48k": [
+            [
+              338400,
+              761760
+            ],
+            [
+              761760,
+              1401600
+            ],
+            [
+              1401600,
+              1981920
+            ],
+            [
+              1981920,
+              2281290
+            ]
+          ]
+        },
+        {
+          "role": "stem:41",
+          "startSample48k": 2281290,
+          "endSample48k": 2577834,
+          "inputPcmSha256": "0cfe685623d1e06cc322b783e9abee4c2e91cc1c13e16e8f75388217a6c13054"
+        },
+        {
+          "role": "answer:41",
+          "startSample48k": 2577834,
+          "endSample48k": 2961834,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "stem:42",
+          "startSample48k": 2961834,
+          "endSample48k": 3255594,
+          "inputPcmSha256": "456523ae029141a4ef82e0b04b78f7026d138a8f859fc964f93c5bfc3771faeb"
+        },
+        {
+          "role": "answer:42",
+          "startSample48k": 3255594,
+          "endSample48k": 3639594,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "stem:43",
+          "startSample48k": 3639594,
+          "endSample48k": 3917394,
+          "inputPcmSha256": "cf05f8a07579062ab169024757d1fd5f8e05282403a8d6fc209f2e38af38bcd1"
+        },
+        {
+          "role": "answer:43",
+          "startSample48k": 3917394,
+          "endSample48k": 4301394,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "gap",
+          "startSample48k": 4301394,
+          "endSample48k": 4397394,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        }
+      ]
+    },
+    "practice": {
+      "file": "t09-g041-practice.ogg",
+      "sha256": "6b46566a5dc537b55b3dbab6f0c01d1c884a39a9771f1ca5204da76b57a08d60",
+      "samples48k": 2134890,
+      "halfSecondGuardPeaksLsb": [
+        0,
+        1
+      ],
+      "timeline": [
+        {
+          "role": "gap",
+          "startSample48k": 0,
+          "endSample48k": 96000,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "passage",
+          "startSample48k": 96000,
+          "endSample48k": 2038890,
+          "inputPcmSha256": "012e69fa08e338ccea55cc725eb63aff363c99a34841b5e7c145cbe3414fea68",
+          "turnRanges48k": [
+            [
+              96000,
+              519360
+            ],
+            [
+              519360,
+              1159200
+            ],
+            [
+              1159200,
+              1739520
+            ],
+            [
+              1739520,
+              2038890
+            ]
+          ]
+        },
+        {
+          "role": "gap",
+          "startSample48k": 2038890,
+          "endSample48k": 2134890,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        }
+      ]
+    }
+  },
+  "semanticChecks": {
+    "41": "B: unattended side counter",
+    "42": "D: Leila/crew leader signs before Nia/first speaker takes the case to stewards; both recognizers find same roles, Nia independently repeated, and Leila/Laila/layelah transcription variation is phonetic. Targeted Whisper-base confirms exact Leila in formal, Nia in both. No other plausible signer or deliverer.",
+    "43": "A: one spare battery; formal cue and all numbered stems tracked by independent engines."
+  },
+  "native": {
+    "engine": "Cloud Chromium, exact private fixture",
+    "fixtureSha256": "b84f4e00ea2bcda1ae9a87d9dfdbb52b230d3950618d3816f126b0cd2a981663",
+    "formal": {
+      "priorStillPlaying": 66.582954,
+      "newAutomatic": 24.083094,
+      "initial": 0,
+      "firstSampled": 0.158173,
+      "paused": 24.175812,
+      "whileStillPaused": 24.175812,
+      "afterResume": 24.417214,
+      "rate": 1,
+      "nextDisabled": true,
+      "transcriptHidden": true
+    },
+    "practice": {
+      "previous": 0.138064,
+      "reset": 0,
+      "firstSampled": 0.085723,
+      "paused": 0.126905,
+      "whileStillPaused": 0.126905,
+      "afterResume": 0.417002
+    },
+    "threeDisplayed": [
+      41,
+      42,
+      43
+    ]
+  }
+}

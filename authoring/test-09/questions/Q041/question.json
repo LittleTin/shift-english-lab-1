@@ -1,0 +1,51 @@
+{
+  "id": "t09-q041",
+  "testId": "test-09",
+  "number": 41,
+  "part": 3,
+  "groupId": "t09-g041",
+  "revision": 1,
+  "prompt": "Why does the clerk reject leaving the case on the side counter?",
+  "promptZh": "庫房管理員為什麼不把箱子留在旁邊的櫃台？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The radio case will not fit there.",
+      "zh": "對講機箱子放不下。",
+      "whyZh": "管理員沒提尺寸，問題是櫃台沒人看管。"
+    },
+    {
+      "id": "B",
+      "text": "Nobody is there to watch it.",
+      "zh": "那裡沒有人看管。",
+      "whyZh": "管理員明說不想把箱子留在無人看管的櫃台。"
+    },
+    {
+      "id": "C",
+      "text": "The stewards are using the counter for batteries.",
+      "zh": "引導人員正在那個櫃台放電池。",
+      "whyZh": "晚到的人要向庫房管理員領備用電池，沒人說側櫃放電池。"
+    },
+    {
+      "id": "D",
+      "text": "The case still needs to be packed.",
+      "zh": "箱子還沒裝好。",
+      "whyZh": "管理員提到的是裝滿的箱子，不是等待裝箱。"
+    }
+  ],
+  "answer": "B",
+  "difficulty": "foundation",
+  "explanationZh": "管理員明說不想把箱子留在無人看管的櫃台。",
+  "evidence": "I’m the storeroom clerk. I can’t sign them out to myself. Could your crew leader come to the desk? I don’t want to leave a full case on the unattended side counter.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 2,
+      "speaker": "M",
+      "startChar": 0,
+      "endChar": 164,
+      "exactQuote": "I’m the storeroom clerk. I can’t sign them out to myself. Could your crew leader come to the desk? I don’t want to leave a full case on the unattended side counter."
+    }
+  ],
+  "topic": "business"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "t09-q042",
+  "testId": "test-09",
+  "number": 42,
+  "part": 3,
+  "groupId": "t09-g041",
+  "revision": 1,
+  "prompt": "Who will sign for the radios, and who will deliver them?",
+  "promptZh": "誰會簽領對講機？誰會把它們送去給引導人員？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Nia will sign; Leila will deliver.",
+      "zh": "妮雅簽領；蕾拉送去。",
+      "whyZh": "兩人角色相反：蕾拉簽，妮雅送。"
+    },
+    {
+      "id": "B",
+      "text": "The clerk will sign; Nia will deliver.",
+      "zh": "庫房管理員簽領；妮雅送去。",
+      "whyZh": "妮雅送沒錯，但管理員不能自己簽領自己發出的物品。"
+    },
+    {
+      "id": "C",
+      "text": "Leila will sign and deliver the case herself.",
+      "zh": "蕾拉會簽領，也會親自送箱子。",
+      "whyZh": "蕾拉簽領後，由妮雅接手送箱子。"
+    },
+    {
+      "id": "D",
+      "text": "Leila will sign; Nia will deliver.",
+      "zh": "蕾拉簽領；妮雅送去。",
+      "whyZh": "領班蕾拉先簽領，之後妮雅把箱子直接送給引導人員。"
+    }
+  ],
+  "answer": "D",
+  "difficulty": "intermediate",
+  "explanationZh": "領班蕾拉先簽領，之後妮雅把箱子直接送給引導人員。",
+  "evidence": "I’m Nia from the event crew. Are the radios ready? I can carry them to the stewards if someone can sign for them here. / I’m the storeroom clerk. I can’t sign them out to myself. Could your crew leader come to the desk? I don’t want to leave a full case on the unattended side counter. / I’m Leila, the crew leader. I’ll sign before Nia takes the case. Can you leave one spare battery here? The late crew can pick it up from you. / That works. I’ll take the case straight to the stewards after you’ve signed.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "F1",
+      "startChar": 0,
+      "endChar": 118,
+      "exactQuote": "I’m Nia from the event crew. Are the radios ready? I can carry them to the stewards if someone can sign for them here."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 2,
+      "speaker": "M",
+      "startChar": 0,
+      "endChar": 164,
+      "exactQuote": "I’m the storeroom clerk. I can’t sign them out to myself. Could your crew leader come to the desk? I don’t want to leave a full case on the unattended side counter."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 3,
+      "speaker": "F2",
+      "startChar": 0,
+      "endChar": 141,
+      "exactQuote": "I’m Leila, the crew leader. I’ll sign before Nia takes the case. Can you leave one spare battery here? The late crew can pick it up from you."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 4,
+      "speaker": "F1",
+      "startChar": 0,
+      "endChar": 76,
+      "exactQuote": "That works. I’ll take the case straight to the stewards after you’ve signed."
+    }
+  ],
+  "topic": "business"
+}
