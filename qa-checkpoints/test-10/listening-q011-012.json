@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "testId": "test-10",
+  "scope": [
+    11,
+    12
+  ],
+  "status": "Validated authoring batch; not deployed",
+  "sourceBase": "acf44c4387bd09e7ca638b25c5cd993d4ae23453",
+  "integrationBase": "5641a9621a4c744ffddf3ed0370b418258a7f6ec",
+  "items": [
+    {
+      "number": 11,
+      "id": "t10-q011",
+      "answer": "A",
+      "difficulty": "intermediate",
+      "independentEvidence": "when i checked this morning",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q011/question.json": "f6f8845f896a5b3f3836737196a5f05ccb7ec583290365765ebca1dcb2a64e29",
+        "authoring/test-10/questions/Q011/media.json": "817e84ea473d75077d561eae189359cfbb13399e514362e20ae0ccadf563d58a",
+        "authoring/test-10/groups/t10-g011/group.json": "f62f965a1f190227aa8eb2fa9701e7cb4b285597525967912345d5503024207a"
+      },
+      "opus": {
+        "practice": {
+          "sha256": "840764529fb736fb1142279d09e6e71de6901a9b679099e4e2a249319237fd03",
+          "samples48k": 907200,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 811200,
+              "peakLsb": 21500
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 811200,
+              "endSample48k": 907200,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        },
+        "formal": {
+          "sha256": "0a8960ee75c09aa8d5aa21a237731e990e6070e63dac82d00b42d1110b9d041f",
+          "samples48k": 1353546,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 141546,
+              "peakLsb": 12771
+            },
+            {
+              "role": "gap",
+              "startSample48k": 141546,
+              "endSample48k": 158346,
+              "peakLsb": 2,
+              "rmsLsb": 0.44887
+            },
+            {
+              "role": "passage",
+              "startSample48k": 158346,
+              "endSample48k": 873546,
+              "peakLsb": 21368
+            },
+            {
+              "role": "answer",
+              "startSample48k": 873546,
+              "endSample48k": 1257546,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1257546,
+              "endSample48k": 1353546,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        }
+      },
+      "recognizers": {
+        "whisper-small.json": "a8be767547e024a55589ed719e0f949ef0560b89e8551f9ba6b043d7b9327c1b",
+        "whisper-base.json": "a16e5a97d517e11bcbbd7377464102e9920ac1f4cebc21a67897d9bd769f2691",
+        "zipformer.json": "070b1f15b657156fda24060afad81aab91fbfda051949a3e59637a2ff0990af1"
+      }
+    },
+    {
+      "number": 12,
+      "id": "t10-q012",
+      "answer": "C",
+      "difficulty": "foundation",
+      "independentEvidence": "can be here when we arrive",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q012/question.json": "1bcbdb0101d2546434739eeecf08fa2757b486975a48ececb54556819d4c1a0f",
+        "authoring/test-10/questions/Q012/media.json": "d4dfa63b456951f441d5271218ee044bfaa9709b765e643481341159658003a0",
+        "authoring/test-10/groups/t10-g012/group.json": "1f6cb6bc7713111129f386cbf4006b568dee3cede934b0c798bc09c28627a0d4"
+      },
+      "opus": {
+        "practice": {
+          "sha256": "4ad36681b5451fca7506b7a69ac6cfb7c0414b917b767d52d367caf54a456874",
+          "samples48k": 852600,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 1,
+              "rmsLsb": 0.02415
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 756600,
+              "peakLsb": 23279
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 756600,
+              "endSample48k": 852600,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        },
+        "formal": {
+          "sha256": "e787b13c0a6f78ff9d79ea4829c229b8aeceff1a03149a809d0ce5efc6a354a8",
+          "samples48k": 1298684,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 141284,
+              "peakLsb": 22659
+            },
+            {
+              "role": "gap",
+              "startSample48k": 141284,
+              "endSample48k": 158084,
+              "peakLsb": 1,
+              "rmsLsb": 0.25992
+            },
+            {
+              "role": "passage",
+              "startSample48k": 158084,
+              "endSample48k": 818684,
+              "peakLsb": 22903
+            },
+            {
+              "role": "answer",
+              "startSample48k": 818684,
+              "endSample48k": 1202684,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1202684,
+              "endSample48k": 1298684,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        }
+      },
+      "recognizers": {
+        "whisper-small.json": "4ead035b0327d9b4882b9a9edf27db384f4c085c03498490f0e42c31c9cfd63b",
+        "whisper-base.json": "cba67a0a05afcd21f6a5d8f34bdb9b2f7a79415e4eff1ef6dc7549f9c2a892db",
+        "zipformer.json": "06f456ace924e2a7ab670ee1b2a4e4fddf5c28802543c7e70fb69c59aa11e1ee"
+      }
+    }
+  ],
+  "native": {
+    "fixtureSha256": "defd3878b8fea381b68c7f48d0419c59b7f620b5c861e7ba33ab9bacb39f2153",
+    "scope": "G011/012 only; accepted R2 G010 control, other structure placeholders are unplayable and excluded",
+    "formal": {
+      "previousFromStart": 0.17471,
+      "naturalG011": 16.479548,
+      "naturalG012": 0.008547,
+      "fixedRate": 1,
+      "paused": [
+        25.905653,
+        0.019093
+      ],
+      "still": [
+        25.905653,
+        0.019093
+      ],
+      "resumed": [
+        26.146173,
+        0.240282
+      ]
+    },
+    "practice": {
+      "previousFromStart": 0.136361,
+      "reset": [
+        0,
+        0
+      ],
+      "newSources": [
+        "t10-g011.ogg",
+        "t10-g012.ogg"
+      ],
+      "first": [
+        0.174634,
+        0.130321
+      ],
+      "paused": [
+        0.210926,
+        0.233937
+      ],
+      "still": [
+        0.210926,
+        0.233937
+      ],
+      "resumed": [
+        0.466337,
+        0.477892
+      ]
+    }
+  },
+  "recognitionNotes": "Blind recognition confirms the renewal has not yet been signed as of the morning check (not current status) and the necessary condition for leaving the keys, along with distractors and the independent numbered cues Eleven and Twelve."
+}
