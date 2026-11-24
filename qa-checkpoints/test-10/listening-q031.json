@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "testId": "test-10",
+  "scope": [
+    31
+  ],
+  "status": "Validated authoring batch; not deployed",
+  "sourceBase": "bc550494e977520672b1708dabf23461b9ec4d42",
+  "integrationBase": "5641a9621a4c744ffddf3ed0370b418258a7f6ec",
+  "items": [
+    {
+      "number": 31,
+      "id": "t10-q031",
+      "answer": "B",
+      "difficulty": "intermediate",
+      "independentEvidence": "there's no need for her to come back",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q031/question.json": "5494fa44c662a2bd8b6515a9117c58908333ee0fe202301c803e04f82663578c",
+        "authoring/test-10/questions/Q031/media.json": "59b72c901dd069dcbd76ca3d9ca89dba76446f0990e5173be1678c29608e8e9e",
+        "authoring/test-10/groups/t10-g031/group.json": "845aefaf7a2550f51d6335f40648d9203044f9075bd3d5d470875abe68497df2"
+      },
+      "opus": {
+        "practice": {
+          "sha256": "ececddbbd25f9f40811ed5a6f0da76f8e5cf4e714da290caf502a59bf65ac163",
+          "samples48k": 1296600,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 1,
+              "rmsLsb": 0.00456
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 1200600,
+              "peakLsb": 21741
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1200600,
+              "endSample48k": 1296600,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        },
+        "formal": {
+          "sha256": "9efb853ed0284d4169a86722c7e0810f42ad09c8e247bcc69a67769814da2db4",
+          "samples48k": 1749744,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 148344,
+              "peakLsb": 15132
+            },
+            {
+              "role": "gap",
+              "startSample48k": 148344,
+              "endSample48k": 165144,
+              "peakLsb": 6,
+              "rmsLsb": 1.00357
+            },
+            {
+              "role": "passage",
+              "startSample48k": 165144,
+              "endSample48k": 1269744,
+              "peakLsb": 22180
+            },
+            {
+              "role": "answer",
+              "startSample48k": 1269744,
+              "endSample48k": 1653744,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1653744,
+              "endSample48k": 1749744,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        }
+      },
+      "recognizers": {
+        "whisper-small.json": "ed9e1c8e753f222ddb41bd1864d698165fa0fb2328dc0c883dc1d39140ff71d8",
+        "whisper-base.json": "8c8891358c582480910f20681b6a27ea42e9134ca278dd06935887603ed652a5",
+        "zipformer.json": "0a6a7ff6696b1ef477edcd8064256c404bf15352d3cae958141b96517166a639"
+      }
+    }
+  ],
+  "native": {
+    "fixtureSha256": "4649065f24e3e7c1be8fe62bf6c7a33d5c31c4953a5e3ed3356799c73b42ec65",
+    "formal": {
+      "previousFromStart": 0.094489,
+      "natural": [
+        0.020598
+      ],
+      "fixedRate": 1,
+      "paused": [
+        0.078348
+      ],
+      "still": [
+        0.078348
+      ],
+      "resumed": [
+        0.346271
+      ]
+    },
+    "practice": {
+      "previousFromStart": 0.090777,
+      "reset": [
+        0
+      ],
+      "newSources": [
+        "audio/practice-groups/test-10/t10-g031.ogg"
+      ],
+      "first": [
+        0.146779
+      ],
+      "paused": [
+        0.188618
+      ],
+      "still": [
+        0.188618
+      ],
+      "resumed": [
+        0.493177
+      ]
+    }
+  },
+  "recognitionNotes": "All three independent engines recovered both the completed earlier visit and the explicit no-repeat condition in both exact Opus modes, plus the separate Number Thirty-One cue. Cue reused exact prior trusted source; no directions added because this is the end of Part 2."
+}
