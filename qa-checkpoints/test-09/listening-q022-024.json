@@ -1,0 +1,362 @@
+{
+  "testId": "test-09",
+  "stage": "Three independently reviewed authoring groups only. No full exam, hosted catalog, lock, or public release.",
+  "questions": [
+    {
+      "number": 22,
+      "id": "t09-q022",
+      "uuid": "4d118eb5-daaa-5abf-a7d2-d10344cc9a04",
+      "questionSha256": "0cbeadd710fabd84bbd43b8439fe47d087358ff11e4e097aac0283f569ba7398",
+      "groupSha256": "a41a715ed4d93afbb8a70f0127bb10739567ccb5b32931d77c7b13f53b14b8f8",
+      "sidecarSha256": "b5ccb5257900e15c89d43928c502ed011a34a528bf3749d1a220557cdc333f13",
+      "nativeMediaManifestSha256": "554216bb4400ca5fcdebf05106b54738dc1cf77102b7e0a3301aa35de1ffa9a8"
+    },
+    {
+      "number": 23,
+      "id": "t09-q023",
+      "uuid": "2b75de14-24e1-5b87-8240-71e6285e8acf",
+      "questionSha256": "702e258e3683d1c2ecdcc2f41c5c986b78d3e6f76d3e84419803e8c29faf681c",
+      "groupSha256": "1f655e8fd414b096908e3cbb1ac6d663dde751cf5e573819212dbfa9a3bfbbc7",
+      "sidecarSha256": "ad5bcc7eef2803e11a06fed8bbb0c85892c08ed6643c8c480fc6cdd84594ac36",
+      "nativeMediaManifestSha256": "554216bb4400ca5fcdebf05106b54738dc1cf77102b7e0a3301aa35de1ffa9a8"
+    },
+    {
+      "number": 24,
+      "id": "t09-q024",
+      "uuid": "382021d7-a847-5ad8-a970-aa60a6269d3d",
+      "questionSha256": "6d5272ec984bf7237ce0d640029adfca5c72a0eb401c029dad796cad84f8fcd1",
+      "groupSha256": "524cc7df14646222010d66af17e281296b01bced5540ab0a036a658b5f246ee0",
+      "sidecarSha256": "b71938d78340eea04dd0703bcf5d7b90b2643d5ce1f5ddbb05793221225b76e0",
+      "nativeMediaManifestSha256": "554216bb4400ca5fcdebf05106b54738dc1cf77102b7e0a3301aa35de1ffa9a8"
+    }
+  ],
+  "integrationBase": "4dc7dc4254350024d98c20bd0be5ce484cc334d7",
+  "appSha256": "62ff3db3a5fde82100cf3cb4eb125139cd591a1440b65b59d58a75b3ec831600",
+  "mediaEvidenceSha256": "554216bb4400ca5fcdebf05106b54738dc1cf77102b7e0a3301aa35de1ffa9a8",
+  "media": {
+    "22": {
+      "lockedReferenceSlices": {
+        "cue": {
+          "sourceSha256": "38ec6f6bf2558915a61a6375045ecb4bb6ee4cec79ff309a99564fff5584cfb9",
+          "halfOpen48k": [
+            96960,
+            150250
+          ],
+          "cutSha256": "c84e5f3305309adaf95410aac8dd5ac55e9ae49a308b1c9f9c71b849de70d668"
+        }
+      },
+      "sourceSha256": "36cec1ed221e429456ac90d11c95e86963e0b6fc01de657df2d974c0a88cae7b",
+      "practice": {
+        "file": "q022-practice.ogg",
+        "encodedSha256": "6756a15d22a5e6de3e6a8e0f4f60d44fbd1d9f11d511521e16301c95eb0e4946",
+        "samples48k": 1176240,
+        "physicalGuardPeakFirstLast500ms": [
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "role": "guard lead",
+            "startSample48k": 0,
+            "endSample48k": 96000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "same shared source",
+            "startSample48k": 96000,
+            "endSample48k": 1080240,
+            "inputPcmSha256": "cd8439378dec102a0aa90104ce64be2fc1349fac9dc29ec98e2e7bfd02a9add3"
+          },
+          {
+            "role": "guard tail",
+            "startSample48k": 1080240,
+            "endSample48k": 1176240,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      },
+      "formal": {
+        "file": "q022-formal.ogg",
+        "encodedSha256": "4700c88f600858949df94ba07e41254ad133c9dd4ddb7314877cee50ba492bfb",
+        "samples48k": 1630330,
+        "physicalGuardPeakFirstLast500ms": [
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "role": "guard lead",
+            "startSample48k": 0,
+            "endSample48k": 96000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "cue",
+            "startSample48k": 96000,
+            "endSample48k": 149290,
+            "inputPcmSha256": "c84e5f3305309adaf95410aac8dd5ac55e9ae49a308b1c9f9c71b849de70d668"
+          },
+          {
+            "role": "cue-to-prompt pause",
+            "startSample48k": 149290,
+            "endSample48k": 166090,
+            "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+          },
+          {
+            "role": "same shared source",
+            "startSample48k": 166090,
+            "endSample48k": 1150330,
+            "inputPcmSha256": "cd8439378dec102a0aa90104ce64be2fc1349fac9dc29ec98e2e7bfd02a9add3"
+          },
+          {
+            "role": "draft answer window",
+            "startSample48k": 1150330,
+            "endSample48k": 1534330,
+            "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+          },
+          {
+            "role": "guard tail",
+            "startSample48k": 1534330,
+            "endSample48k": 1630330,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      }
+    },
+    "23": {
+      "lockedReferenceSlices": {
+        "cue": {
+          "sourceSha256": "8c08c95af12337f6b2e013fc67f2d9d957aafdc86b233f00cc7636e07d68a92a",
+          "halfOpen48k": [
+            96960,
+            154040
+          ],
+          "cutSha256": "ad3618927e3f31bba210c8c0455d5d0bd098ddab27201a0f9b95d5aa8a5e746c"
+        }
+      },
+      "sourceSha256": "64c2285eeae2852546dc463fd62a73ad18f53c8b50e6112c59b11f5995850e70",
+      "practice": {
+        "file": "q023-practice.ogg",
+        "encodedSha256": "8386fcdf770c24f69f7e7547081c68b0991448e049e4d577161b40e3c5704533",
+        "samples48k": 1170240,
+        "physicalGuardPeakFirstLast500ms": [
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "role": "guard lead",
+            "startSample48k": 0,
+            "endSample48k": 96000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "same shared source",
+            "startSample48k": 96000,
+            "endSample48k": 1074240,
+            "inputPcmSha256": "3e4b2e603c24a649ab14f9d9359625de93bfbe2d94e512099669d1e712dd4d04"
+          },
+          {
+            "role": "guard tail",
+            "startSample48k": 1074240,
+            "endSample48k": 1170240,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      },
+      "formal": {
+        "file": "q023-formal.ogg",
+        "encodedSha256": "7807ba686812a12b04549595307c64033e4699a1914ede74cbf565935f7ef64a",
+        "samples48k": 1628120,
+        "physicalGuardPeakFirstLast500ms": [
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "role": "guard lead",
+            "startSample48k": 0,
+            "endSample48k": 96000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "cue",
+            "startSample48k": 96000,
+            "endSample48k": 153080,
+            "inputPcmSha256": "ad3618927e3f31bba210c8c0455d5d0bd098ddab27201a0f9b95d5aa8a5e746c"
+          },
+          {
+            "role": "cue-to-prompt pause",
+            "startSample48k": 153080,
+            "endSample48k": 169880,
+            "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+          },
+          {
+            "role": "same shared source",
+            "startSample48k": 169880,
+            "endSample48k": 1148120,
+            "inputPcmSha256": "3e4b2e603c24a649ab14f9d9359625de93bfbe2d94e512099669d1e712dd4d04"
+          },
+          {
+            "role": "draft answer window",
+            "startSample48k": 1148120,
+            "endSample48k": 1532120,
+            "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+          },
+          {
+            "role": "guard tail",
+            "startSample48k": 1532120,
+            "endSample48k": 1628120,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      }
+    },
+    "24": {
+      "lockedReferenceSlices": {
+        "cue": {
+          "sourceSha256": "4b1c5547bf4139ea65b7f47a852838a769afe8009b597951adeaa419f990ee56",
+          "halfOpen48k": [
+            96960,
+            153774
+          ],
+          "cutSha256": "7f7aa75d879a3aeb5b9d212bb363b019177cdccb1db1760fcfa06f6cc476a3e3"
+        }
+      },
+      "sourceSha256": "63c934c9fb28b3a7c6250d0641c657adbe0203e4a13e8cb29babc78ebffa5c7c",
+      "practice": {
+        "file": "q024-practice.ogg",
+        "encodedSha256": "cc499de3d7bc8894f0d1d4faea751cc7fc6cc4d7f1b13cd62b9150f945a055a5",
+        "samples48k": 1091040,
+        "physicalGuardPeakFirstLast500ms": [
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "role": "guard lead",
+            "startSample48k": 0,
+            "endSample48k": 96000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "same shared source",
+            "startSample48k": 96000,
+            "endSample48k": 995040,
+            "inputPcmSha256": "213dbb20929e48694638f0e2d0b0d5dd7961d60182308765c1079d5c0e75b0ec"
+          },
+          {
+            "role": "guard tail",
+            "startSample48k": 995040,
+            "endSample48k": 1091040,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      },
+      "formal": {
+        "file": "q024-formal.ogg",
+        "encodedSha256": "c506f3698f6ea9fb973eaa0d5c348a35b7ea490d94aa608a138b5d74b3ec62ce",
+        "samples48k": 1548654,
+        "physicalGuardPeakFirstLast500ms": [
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "role": "guard lead",
+            "startSample48k": 0,
+            "endSample48k": 96000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "cue",
+            "startSample48k": 96000,
+            "endSample48k": 152814,
+            "inputPcmSha256": "7f7aa75d879a3aeb5b9d212bb363b019177cdccb1db1760fcfa06f6cc476a3e3"
+          },
+          {
+            "role": "cue-to-prompt pause",
+            "startSample48k": 152814,
+            "endSample48k": 169614,
+            "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+          },
+          {
+            "role": "same shared source",
+            "startSample48k": 169614,
+            "endSample48k": 1068654,
+            "inputPcmSha256": "213dbb20929e48694638f0e2d0b0d5dd7961d60182308765c1079d5c0e75b0ec"
+          },
+          {
+            "role": "draft answer window",
+            "startSample48k": 1068654,
+            "endSample48k": 1452654,
+            "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+          },
+          {
+            "role": "guard tail",
+            "startSample48k": 1452654,
+            "endSample48k": 1548654,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      }
+    }
+  },
+  "scoredProof": {
+    "22": "C says empty the trays first because screws may remain. A gives a quantity, B a location.",
+    "23": "B offers to check for an adjacent seat for the niece. A mentions the speaker and C a printed program.",
+    "24": "C agrees to keep the umbrella over the listener. A describes the stroller and B gives a location of the stand."
+  },
+  "actualDecodedAsr": {
+    "whisperSmallSha256": "da807f0af373f81a8e0c80f15f09916a486ac8eae4a731cb4833b165b6bcebc8",
+    "zipformerSha256": "3066bd2f11ce5a18addb339a0da6c2ca5bc84fda415c978074ea16b8eb954acc",
+    "scope": "Exact decoded scored segments and locked standalone number cues. Whisper verbatim both modes, independent Zipformer all number cues/option labels/core semantics, with lexical ASR variants booked/bucked, programme/program, shore/sure. Both independently confirm cue, question, sequence and selection evidence."
+  },
+  "actualNativeChrome": {
+    "practiceStartPauseResumeSeconds": {
+      "22": [
+        0.120366,
+        0.160564,
+        0.404246
+      ],
+      "23": [
+        0.087962,
+        0.145996,
+        0.389076
+      ],
+      "24": [
+        0.127966,
+        0.170068,
+        0.414502
+      ]
+    },
+    "practiceAdjacentResetsToZero": [
+      true,
+      true
+    ],
+    "formalManualPauseResumeSeconds": {
+      "22": [
+        0.189724,
+        0.412027
+      ],
+      "23": [
+        22.461417,
+        22.699696
+      ],
+      "24": [
+        5.340571,
+        5.584944
+      ]
+    },
+    "formal23Direct": [
+      0.165973,
+      0.22835,
+      0.22835,
+      0.463047
+    ],
+    "natural22to23To24Confirmed": true,
+    "formalAllRate": 1,
+    "actualOfficialRuntimeRoutes": true,
+    "noRealAccountOrDevice": true
+  }
+}
