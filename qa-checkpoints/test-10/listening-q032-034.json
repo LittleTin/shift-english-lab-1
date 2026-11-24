@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "testId": "test-10",
+  "scope": [
+    32,
+    33,
+    34
+  ],
+  "status": "Validated authoring batch; not deployed",
+  "sourceBase": "646c0459da287e92a3da0490c07adf4a4e68b7b6",
+  "integrationBase": "5641a9621a4c744ffddf3ed0370b418258a7f6ec",
+  "groupSourceSha256": "8e28f5cd11982b4ff431ced965e193f7b0d042aa4c0a7a210486447d18259478",
+  "items": [
+    {
+      "number": 32,
+      "answer": "A",
+      "difficulty": "advanced",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q032/question.json": "d3a9a39e057bb104600a1b670e5ab51e04d697171807bb74d148e0d00856a624",
+        "authoring/test-10/questions/Q032/media.json": "511e579dddabea5f834148cde68f91641f26592eac5aac507e4ac01497f9b1ad"
+      }
+    },
+    {
+      "number": 33,
+      "answer": "D",
+      "difficulty": "advanced",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q033/question.json": "aef15c5f93483dda82c6392d5de2e3425f69beceb7def2b636ed14836ee61361",
+        "authoring/test-10/questions/Q033/media.json": "490253ee72a616787ea3d94426765e235fb07d66eaa7fb03053c3d6ea818ab24"
+      }
+    },
+    {
+      "number": 34,
+      "answer": "A",
+      "difficulty": "intermediate",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q034/question.json": "703f056bf202385deacea6547c7716d610029694d415eec2cd44a5075a4b026e",
+        "authoring/test-10/questions/Q034/media.json": "a3ae80faad6edfdb75aadedfe92cdd6713216d7ba609c188e54b23c64e426293"
+      }
+    }
+  ],
+  "sourceMediaAndPhases": {
+    "groupId": "t10-g032",
+    "practiceAndFormal": {
+      "formal": {
+        "path": "audio/formal-groups/test-10/t10-g032.ogg",
+        "name": "t10-g032-formal.ogg",
+        "duration": 159.1275,
+        "samples": 7638120,
+        "sha256": "1253e771f35f9adac48d76a7c62213ab7ebab5a912b0d3ddcba699fa31d7abb2",
+        "phase": [
+          {
+            "role": "direction",
+            "startSample48k": 0,
+            "endSample48k": 624960,
+            "inputPcmSha256": "4307508d9a32906bbbe7427962b41debc3a247de194564bce4e011b9db23eb2b"
+          },
+          {
+            "role": "cue",
+            "startSample48k": 624960,
+            "endSample48k": 840960,
+            "inputPcmSha256": "cb043f56c62c7bb85e808eaee94987f9fa400a5e9b6155c5b9423578a6ea4b72"
+          },
+          {
+            "role": "gap",
+            "startSample48k": 840960,
+            "endSample48k": 857760,
+            "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+          },
+          {
+            "role": "passage",
+            "startSample48k": 857760,
+            "endSample48k": 5031960,
+            "inputPcmSha256": "c61dfe03148a535a55ef9def96d2fdbaa03a182fcbbd35b557bc26664c3949b6",
+            "turnRanges48k": [
+              [
+                857760,
+                2096160
+              ],
+              [
+                2096160,
+                2607360
+              ],
+              [
+                2607360,
+                3221760
+              ],
+              [
+                3221760,
+                4009920
+              ],
+              [
+                4009920,
+                4676160
+              ],
+              [
+                4676160,
+                5031960
+              ]
+            ]
+          },
+          {
+            "role": "stem-32",
+            "startSample48k": 5031960,
+            "endSample48k": 5327160,
+            "inputPcmSha256": "90e3f5f5fac116090ff5ed711a9f23d26c99652ea79dd012922ff71647e27b11"
+          },
+          {
+            "role": "answer-32",
+            "startSample48k": 5327160,
+            "endSample48k": 5711160,
+            "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+          },
+          {
+            "role": "stem-33",
+            "startSample48k": 5711160,
+            "endSample48k": 6431160,
+            "inputPcmSha256": "8a0ce5eddca337d49238c29c64d21ce27339254e141679282b1edd33564c41a8"
+          },
+          {
+            "role": "answer-33",
+            "startSample48k": 6431160,
+            "endSample48k": 6815160,
+            "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+          },
+          {
+            "role": "stem-34",
+            "startSample48k": 6815160,
+            "endSample48k": 7158120,
+            "inputPcmSha256": "3e598fe8131c22d06364ecd21003308cd3200594fb2c7e6f06955ea45a05eb92"
+          },
+          {
+            "role": "answer-34",
+            "startSample48k": 7158120,
+            "endSample48k": 7542120,
+            "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+          },
+          {
+            "role": "edge-tail",
+            "startSample48k": 7542120,
+            "endSample48k": 7638120,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      },
+      "practice": {
+        "path": "audio/practice-groups/test-10/t10-g032.ogg",
+        "name": "t10-g032-practice.ogg",
+        "duration": 90.9625,
+        "samples": 4366200,
+        "sha256": "260b8460133658ae9ea8194e4dbccefe90655c75ab1c156bbbce569abf195c9b",
+        "phase": [
+          {
+            "role": "edge-lead",
+            "startSample48k": 0,
+            "endSample48k": 96000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "passage",
+            "startSample48k": 96000,
+            "endSample48k": 4270200,
+            "inputPcmSha256": "c61dfe03148a535a55ef9def96d2fdbaa03a182fcbbd35b557bc26664c3949b6",
+            "turnRanges48k": [
+              [
+                96000,
+                1334400
+              ],
+              [
+                1334400,
+                1845600
+              ],
+              [
+                1845600,
+                2460000
+              ],
+              [
+                2460000,
+                3248160
+              ],
+              [
+                3248160,
+                3914400
+              ],
+              [
+                3914400,
+                4270200
+              ]
+            ]
+          },
+          {
+            "role": "edge-tail",
+            "startSample48k": 4270200,
+            "endSample48k": 4366200,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      }
+    },
+    "sharedSourceSha256": "a1b6aac3c9a2d54d5137900814e44237f9471eae181d8e495af6d137a29adb75",
+    "formalStemSourceSha256": "23158b1d4b0475cb967aea99ca1729d516bd15f0f207ec06be46dc040837115a",
+    "sourceStemRanges": [
+      [
+        0,
+        295200
+      ],
+      [
+        357600,
+        1077600
+      ],
+      [
+        1141440,
+        1484400
+      ]
+    ],
+    "sourceTurnCuts": [
+      0,
+      1238400,
+      1749600,
+      2364000,
+      3152160,
+      3818400,
+      4174200
+    ],
+    "status": "private; ASR and native QA required"
+  },
+  "native": {
+    "fixtureSha256": "9be321c20790c01c67c2fe4ae3d55bb46300ac48f74bf9d0cbdf3987edfdcbe8",
+    "formal": {
+      "previous": 0.0821,
+      "new": 0.008028,
+      "rate": 1,
+      "paused": 0.048689,
+      "still": 0.048689,
+      "resumed": 0.316054,
+      "directionsVisible": true,
+      "stems": [
+        {
+          "stem": 32,
+          "cursor": 104.888432,
+          "source": "audio/formal-groups/test-10/t10-g032.ogg",
+          "rate": 1,
+          "choices": [
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "stem": 33,
+          "cursor": 119.256624,
+          "source": "audio/formal-groups/test-10/t10-g032.ogg",
+          "rate": 1,
+          "choices": [
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "stem": 34,
+          "cursor": 142.167507,
+          "source": "audio/formal-groups/test-10/t10-g032.ogg",
+          "rate": 1,
+          "choices": [
+            4,
+            4,
+            4
+          ]
+        }
+      ],
+      "finishedCheckPausedAt": 142.252539
+    },
+    "practice": {
+      "previous": 0.173734,
+      "reset": 0,
+      "new": 0.188686,
+      "questions": [
+        4,
+        4,
+        4
+      ],
+      "paused": 0.248715,
+      "still": 0.248715,
+      "resumed": 0.499438
+    }
+  },
+  "independentSpeechReceipts": {
+    "formal-whisper-small.json": "79888c1e2f38c6b7bbb9244229bc83dfe5a5f668f7ad98e0e50ac49381b90e0a",
+    "formal-whisper-base.json": "f60c1be8862fff05970f1b9cffdc1f7847112c1dfc06114753c43439385024ab",
+    "formal-zipformer.json": "59b23b895fa618f9003ded77e1cf5d2974df86b9887c5fb516857a65f0b34e69",
+    "practice-whisper-small.json": "9860c12bfa80a04f7036b63f28e59d966ef428d3627bd1731c628071ccec5b13",
+    "practice-whisper-base.json": "a79e667aa380cdd2c5cf3124fcd653d222ac2f978d3beca0b9af1a7cfc40f874",
+    "practice-zipformer.json": "942a6273217521e34bb8f426dfbee7435ece9d80a121ec337a3f98fd57a35fc7"
+  },
+  "notes": "Standard public Ezinne and Abeo visual picker presence confirmed on existing F0; six turns shared between files; both official cue and reusable directions preserved; final scored wording varies on several orthographic/non-decisive words across independent decoders, with key exclusive rules recovered. Source metadata records local proof separately."
+}

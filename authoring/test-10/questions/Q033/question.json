@@ -1,0 +1,46 @@
+{
+  "id": "t10-q033",
+  "number": 33,
+  "uuid": "d4125876-9be2-58f9-a71c-b8116c6cf6c7",
+  "part": 3,
+  "groupId": "t10-g032",
+  "testId": "test-10",
+  "topic": "business",
+  "difficulty": "advanced",
+  "prompt": "Suppose a customer collects a prepaid tin held in the station shop's cabinet. If nothing else changes, what happens to that shop's cabinet count and its physical count of tins available for new customers?",
+  "promptZh": "假設一位顧客從車站店的庫存櫃取走一罐先前已付款、留在櫃裡等候領取的茶。如果沒有其他變動，那家店的庫存櫃盤點數，以及實際清點後仍可賣給新顧客的茶罐數，會怎麼變？",
+  "answer": "D",
+  "evidence": "“Both branches have cabinets that count every tin inside, including prepaid orders and returns that haven't been checked.” / “Count the tins the staff could sell to someone walking in. That's anywhere on the shop floor, not just in the cabinet. Don't count orders that have already been paid for, even if they're still here.”",
+  "options": [
+    {
+      "id": "A",
+      "text": "Both counts decrease.",
+      "zh": "兩個數量都減少。",
+      "whyZh": "庫存櫃盤點數會減少，但已付款的茶罐原本就不在可賣給新顧客的實際盤點數中。"
+    },
+    {
+      "id": "B",
+      "text": "Both counts stay the same.",
+      "zh": "兩個數量都不變。",
+      "whyZh": "可賣的實際盤點數確實不變，但櫃子原本有計入那罐，取走後櫃子的數字會減少。"
+    },
+    {
+      "id": "C",
+      "text": "The cabinet count stays the same; the count of tins available for new customers decreases.",
+      "zh": "庫存櫃盤點數不變；可賣給新顧客的茶罐數減少。",
+      "whyZh": "兩邊弄反了：櫃子原本有計入那罐，可賣給新顧客的盤點數則排除已付款罐子。"
+    },
+    {
+      "id": "D",
+      "text": "The cabinet count decreases; the count of tins available for new customers stays the same.",
+      "zh": "庫存櫃盤點數減少；可賣給新顧客的茶罐數不變。",
+      "whyZh": "正確。取走前櫃子有算進去，可賣給新顧客的盤點數則不算，因此取走只會改變庫存櫃盤點數。"
+    }
+  ],
+  "explanationZh": "正確。取走前櫃子有算進去，可賣給新顧客的盤點數則不算，因此取走只會改變庫存櫃盤點數。",
+  "revision": 1,
+  "tags": [
+    "retail-operations",
+    "inventory"
+  ]
+}

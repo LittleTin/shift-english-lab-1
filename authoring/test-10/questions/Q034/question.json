@@ -1,0 +1,46 @@
+{
+  "id": "t10-q034",
+  "number": 34,
+  "uuid": "ddb4c38f-f750-5b54-9641-f45055150b1e",
+  "part": 3,
+  "groupId": "t10-g032",
+  "testId": "test-10",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "prompt": "What can Mei infer about the new tins left out of the station shop's cabinet?",
+  "promptZh": "對於車站店沒有放進庫存櫃的新茶罐，梅可以推知什麼？",
+  "answer": "A",
+  "evidence": "“Count the tins the staff could sell to someone walking in. That's anywhere on the shop floor, not just in the cabinet.” / “I've got fresh stock on the sales shelf at the station shop. Staff can sell it at the counter now, but some of it won't fit in the cabinet.” / “Leave the website linked to the cabinets. You can post a note to let people know they can ask at the counter.”",
+  "options": [
+    {
+      "id": "A",
+      "text": "They can be counted for replenishment while the station cabinet still excludes them.",
+      "zh": "即使車站店的庫存櫃沒把它們算進去，補貨盤點仍可計入。",
+      "whyZh": "正確。貨架上的茶罐已可在櫃檯販賣，能納入補貨盤點，但不在櫃內，所以網站數量尚未計入。"
+    },
+    {
+      "id": "B",
+      "text": "They can appear in the website quantity before they are counted for replenishment.",
+      "zh": "在納入補貨盤點之前，它們就可以列入網站數量。",
+      "whyZh": "那些茶罐還在櫃外時，網站不會計入，但補貨盤點已能計入。"
+    },
+    {
+      "id": "C",
+      "text": "They are included in both counts once the shop posts a note about them.",
+      "zh": "門市只要貼出公告，它們就會被兩邊計入。",
+      "whyZh": "公告只告訴顧客可以詢問，不會改變網站數量；補貨盤點也無須等公告才計入。"
+    },
+    {
+      "id": "D",
+      "text": "They are excluded from both counts until staff put them into the cabinet.",
+      "zh": "在店員把它們放入庫存櫃以前，兩邊都不會計入。",
+      "whyZh": "只有網站數量得等放進櫃子才會計入；補貨盤點涵蓋店內各處可以出售的商品。"
+    }
+  ],
+  "explanationZh": "正確。貨架上的茶罐已可在櫃檯販賣，能納入補貨盤點，但不在櫃內，所以網站數量尚未計入。",
+  "revision": 1,
+  "tags": [
+    "retail-operations",
+    "inventory"
+  ]
+}

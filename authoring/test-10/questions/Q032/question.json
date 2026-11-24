@@ -1,0 +1,46 @@
+{
+  "id": "t10-q032",
+  "number": 32,
+  "uuid": "ed0dcbbf-75fa-57f0-b6d6-831d632c8ca6",
+  "part": 3,
+  "groupId": "t10-g032",
+  "testId": "test-10",
+  "topic": "business",
+  "difficulty": "advanced",
+  "prompt": "Which situation most likely led to the two sales Mei mentions?",
+  "promptZh": "最可能是哪種情況導致梅提到的兩筆交易？",
+  "answer": "A",
+  "evidence": "“For those orders, the website uses only the cabinet count at the shop with the window. It never adds any stock from the other branch.” / “The market shop still runs the window, right?” / “Right. The market shop sends returns straight to the station shop. None go back into the market cabinet. Paid orders stay inside until the customers pick them up, though.”",
+  "options": [
+    {
+      "id": "A",
+      "text": "A tin waiting for collection was counted at the market shop.",
+      "zh": "市場店把一罐等顧客取貨的茶算進庫存。",
+      "whyZh": "正確。窗口訂單只看市場店櫃子；已付款未取件的茶罐留在裡面，而網站會持續把櫃內的茶罐列為仍可購買。"
+    },
+    {
+      "id": "B",
+      "text": "A returned tin waiting for inspection was counted at the market shop.",
+      "zh": "市場店把一罐退回、等候檢查的茶算進庫存。",
+      "whyZh": "市場店是對的門市，但它的退貨不會放進自己的櫃子。"
+    },
+    {
+      "id": "C",
+      "text": "A tin waiting for collection was counted at the station shop.",
+      "zh": "車站店把一罐等顧客取貨的茶算進庫存。",
+      "whyZh": "未取件確實會被櫃子計入，但車站店的數量沒有進入窗口訂單。"
+    },
+    {
+      "id": "D",
+      "text": "A returned tin waiting for inspection was counted at the station shop.",
+      "zh": "車站店把一罐退回、等候檢查的茶算進庫存。",
+      "whyZh": "退貨可能出現在接收退貨的車站店，但即使被計入也不會影響窗口訂單。"
+    }
+  ],
+  "explanationZh": "正確。窗口訂單只看市場店櫃子；已付款未取件的茶罐留在裡面，而網站會持續把櫃內的茶罐列為仍可購買。",
+  "revision": 1,
+  "tags": [
+    "retail-operations",
+    "inventory"
+  ]
+}
