@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "testId": "test-10",
+  "scope": [
+    15,
+    16
+  ],
+  "status": "Validated authoring batch; not deployed",
+  "sourceBase": "e662be940e77f8dc0be3353749bd259ae60326d1",
+  "integrationBase": "5641a9621a4c744ffddf3ed0370b418258a7f6ec",
+  "items": [
+    {
+      "number": 15,
+      "id": "t10-q015",
+      "answer": "B",
+      "difficulty": "foundation",
+      "independentEvidence": "only the lower one was included in that figure",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q015/question.json": "67ebe3145d046b1d45f00da3cfd7835f1a8a741634db20070ea947b52a84f9ab",
+        "authoring/test-10/questions/Q015/media.json": "381bd0d5357e58357c6e5a266a395484eac0291947cc704ee677668aa5a04de1",
+        "authoring/test-10/groups/t10-g015/group.json": "32e381c4e439ea4b88d44aefe97a8343ab599ac9d2801c116ff26e6fe9e5e290"
+      },
+      "opus": {
+        "practice": {
+          "sha256": "06c764cc380405a67a368a8174555c758df338f87ce4b355604b384df7d8405f",
+          "samples48k": 925800,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 829800,
+              "peakLsb": 23930
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 829800,
+              "endSample48k": 925800,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        },
+        "formal": {
+          "sha256": "66fba4f97f82db7f03945a504ba7019fcb8220526c66be9d26c7f303d8b6358c",
+          "samples48k": 1374456,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 1,
+              "rmsLsb": 0.00645
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 143856,
+              "peakLsb": 17460
+            },
+            {
+              "role": "gap",
+              "startSample48k": 143856,
+              "endSample48k": 160656,
+              "peakLsb": 2,
+              "rmsLsb": 0.46194
+            },
+            {
+              "role": "passage",
+              "startSample48k": 160656,
+              "endSample48k": 894456,
+              "peakLsb": 23397
+            },
+            {
+              "role": "answer",
+              "startSample48k": 894456,
+              "endSample48k": 1278456,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1278456,
+              "endSample48k": 1374456,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        }
+      },
+      "recognizers": {
+        "whisper-small.json": "f7eb40199c3695c7784cfd1c9258ba05b7e0b9b0bd6c8fb5a574279bb1475c2c",
+        "whisper-base.json": "fe2c73c97899747bbc08056097fbd92da89d2d6c973b8b2723f028c9f59cc853",
+        "zipformer.json": "815b0b5c6938c40df61162cbd7347b6b04ab3402ea8b82437928325f6b0dd727"
+      }
+    },
+    {
+      "number": 16,
+      "id": "t10-q016",
+      "answer": "A",
+      "difficulty": "foundation",
+      "independentEvidence": "the class has moved to room",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q016/question.json": "9ae15d9bf02394742b10f777481a4a953f4c7f69c87d398135681e55cbf5a620",
+        "authoring/test-10/questions/Q016/media.json": "fc08b1276f386190cb190574d8c86b56cdf6a38ff9483ce56c0898e57aab37fc",
+        "authoring/test-10/groups/t10-g016/group.json": "6e880dcc187973f340c86990438da2f16c15414e24279b325e6aa550b8053a9b"
+      },
+      "opus": {
+        "practice": {
+          "sha256": "77ff35c0214c77ba0880f53dc4bcb124be97687f370892862aee6161d8d9b5dc",
+          "samples48k": 921000,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 1,
+              "rmsLsb": 0.02479
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 825000,
+              "peakLsb": 24837
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 825000,
+              "endSample48k": 921000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        },
+        "formal": {
+          "sha256": "dcfd6e72310af81d5573a280f0bc4ac26d1696c0366e3acef1ba101cddb9d7af",
+          "samples48k": 1371578,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 1,
+              "rmsLsb": 0.00559
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 145778,
+              "peakLsb": 18111
+            },
+            {
+              "role": "gap",
+              "startSample48k": 145778,
+              "endSample48k": 162578,
+              "peakLsb": 2,
+              "rmsLsb": 0.34087
+            },
+            {
+              "role": "passage",
+              "startSample48k": 162578,
+              "endSample48k": 891578,
+              "peakLsb": 25002
+            },
+            {
+              "role": "answer",
+              "startSample48k": 891578,
+              "endSample48k": 1275578,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1275578,
+              "endSample48k": 1371578,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        }
+      },
+      "recognizers": {
+        "whisper-small.json": "308c361e238d863f3aa9d02848398e631e9a367bce29cbdeb6d6f4dafc93b696",
+        "whisper-base.json": "be14d85da924b63f63c32d4028cd12c7fd30ed05f501c9fa83fd1a806a3eb16d",
+        "zipformer.json": "6931d0f5f448568cb55da91db2b002e0cb4c27b6f19759e8c50d0ab12ecf12af"
+      }
+    }
+  ],
+  "native": {
+    "fixtureSha256": "aaab8867cd0687959084184553feb35022e479d9403277a60135e10f71e89dd2",
+    "formal": {
+      "previousFromStart": [
+        0.187437,
+        0.139504
+      ],
+      "natural": [
+        0.075819,
+        15.283689
+      ],
+      "fixedRate": 1,
+      "paused": [
+        0.115103,
+        15.333441
+      ],
+      "still": [
+        0.115103,
+        15.333441
+      ],
+      "resumed": [
+        0.350129,
+        15.581986
+      ]
+    },
+    "practice": {
+      "previousFromStart": 0.140758,
+      "reset": [
+        0,
+        0
+      ],
+      "newSources": [
+        "audio/practice-groups/test-10/t10-g015.ogg",
+        "audio/practice-groups/test-10/t10-g016.ogg"
+      ],
+      "first": [
+        0.137632,
+        0.128879
+      ],
+      "paused": [
+        0.171862,
+        0.165804
+      ],
+      "still": [
+        0.171862,
+        0.165804
+      ],
+      "resumed": [
+        0.435075,
+        0.426067
+      ]
+    }
+  },
+  "recognitionNotes": "Blind ASR recovered scope of the estimate, negative expectation about the kitchen, actual locking and Room Two, answer and distractor content, and separate number cues. All three models agreed on deciding phrases, with two independent decoders recovering ladder. No re-recording required."
+}
