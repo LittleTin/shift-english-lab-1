@@ -1,0 +1,51 @@
+{
+  "id": "t09-q045",
+  "testId": "test-09",
+  "number": 45,
+  "part": 3,
+  "groupId": "t09-g044",
+  "revision": 3,
+  "prompt": "What can the man no longer read on the second label?",
+  "promptZh": "男子在第二罐的標籤上已看不到什麼資訊？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The suggested paint color.",
+      "zh": "建議的漆色。",
+      "whyZh": "男子說看不清的是乾燥時間，不是漆色。"
+    },
+    {
+      "id": "B",
+      "text": "How long the paint takes to dry.",
+      "zh": "漆要多久才會乾。",
+      "whyZh": "男子明說看不出乾燥時間。"
+    },
+    {
+      "id": "C",
+      "text": "Whether the paint dries shiny or flat.",
+      "zh": "漆乾後有光澤還是消光。",
+      "whyZh": "表面效果還看得清楚。"
+    },
+    {
+      "id": "D",
+      "text": "The place to bring unused paint.",
+      "zh": "剩漆要帶去哪裡。",
+      "whyZh": "第二罐的處理方式由女子決定，並非撕破標籤上的資訊。"
+    }
+  ],
+  "answer": "B",
+  "difficulty": "foundation",
+  "explanationZh": "男子明說看不出乾燥時間。",
+  "evidence": "The label on the second jar is damaged. A piece of it came off. I can still read the finish, but the drying time is missing.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 3,
+      "speaker": "M",
+      "startChar": 0,
+      "endChar": 124,
+      "exactQuote": "The label on the second jar is damaged. A piece of it came off. I can still read the finish, but the drying time is missing."
+    }
+  ],
+  "topic": "daily"
+}
