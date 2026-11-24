@@ -1,0 +1,59 @@
+{
+  "id": "t09-q048",
+  "testId": "test-09",
+  "number": 48,
+  "part": 3,
+  "groupId": "t09-g047",
+  "revision": 1,
+  "prompt": "What can the packing crew do during the check?",
+  "promptZh": "檢查期間，包裝人員可以做什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Pack orders and set the boxes aside without recording their weights.",
+      "zh": "繼續裝箱，放一旁，先不記重量。",
+      "whyZh": "男子同意包裝，但要等看過空帶兩筆讀值才登記出貨重量。"
+    },
+    {
+      "id": "B",
+      "text": "Keep weighing boxes but stop packing new orders.",
+      "zh": "繼續秤箱子，但先停止新訂單裝箱。",
+      "whyZh": "安排恰好相反：可裝箱，暫不登記重量。"
+    },
+    {
+      "id": "C",
+      "text": "Record the weights of the boxes as long as the belt is stopped.",
+      "zh": "只要皮帶停止，就可以登記箱重。",
+      "whyZh": "還沒看兩筆空帶讀值前，不可登記出貨重量；沒有停帶例外。"
+    },
+    {
+      "id": "D",
+      "text": "Put every completed box on the conveyor for the test.",
+      "zh": "把每個裝好的箱子都放上輸送帶測試。",
+      "whyZh": "空帶檢查不放箱子；裝好的箱子先放一旁。"
+    }
+  ],
+  "answer": "A",
+  "difficulty": "intermediate",
+  "explanationZh": "男子同意包裝，但要等看過空帶兩筆讀值才登記出貨重量。",
+  "evidence": "Can the packing crew keep boxing orders while we check? / Yes. Set the boxes aside as they’re packed. Don’t record any shipment weights until we’ve looked at those two empty-belt readings.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 3,
+      "speaker": "F",
+      "startChar": 0,
+      "endChar": 55,
+      "exactQuote": "Can the packing crew keep boxing orders while we check?"
+    },
+    {
+      "sourceField": "turns",
+      "turn": 4,
+      "speaker": "M",
+      "startChar": 0,
+      "endChar": 130,
+      "exactQuote": "Yes. Set the boxes aside as they’re packed. Don’t record any shipment weights until we’ve looked at those two empty-belt readings."
+    }
+  ],
+  "topic": "manufacturing"
+}

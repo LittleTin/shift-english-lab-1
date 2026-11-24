@@ -1,0 +1,228 @@
+{
+  "group": "t09-g047",
+  "status": "Authoring batch accepted; unreleased.",
+  "sourceGroupSha256": "a92d55e919ceb3d8f0e7f6ee3c1172e850904ee069a2a9a8ab1cd1c37e013c07",
+  "questions": [
+    {
+      "q": 47,
+      "questionId": "t09-q047",
+      "uuid": "7c260cfc-d148-5a40-9d05-6642fb95deaf",
+      "qSha256": "625e2384ffbf0a74f3308c2111bb1129db050d0b0f04b5576bedf9bf9058ec3c",
+      "sidecarSha256": "9b341e6cfcc2d19caac6171f564e30eabb61d7ae9c00cc4dc3992f6d4074a9ed"
+    },
+    {
+      "q": 48,
+      "questionId": "t09-q048",
+      "uuid": "b0ffca58-f9db-58b4-8939-26a2e025152d",
+      "qSha256": "0ddb6c9d277b55632e0e1414de8ff0fd432fb6a346e6d666a89fb1742df38c20",
+      "sidecarSha256": "5a23ffcd2d768edf9bc1455f04fd82468db7d6c326c7082066e2d030d65d6afb"
+    },
+    {
+      "q": 49,
+      "questionId": "t09-q049",
+      "uuid": "8b48a88d-b2ac-5c13-b722-440475038482",
+      "qSha256": "2112a6749c6014e5a10fe016d3084f11d077277048e8e0b8ae5b7d9332ca133e",
+      "sidecarSha256": "1feac4cc26b4c9bab35d4ad55c931afc4bc3cd433e81bf7ae2a50ad5b2a8e56e"
+    }
+  ],
+  "mediaPaths": [
+    {
+      "url": "audio/formal-groups/test-09/t09-g047.ogg",
+      "source": "test-09/groups/t09-g047/media/audio/formal-groups/test-09/t09-g047.ogg"
+    },
+    {
+      "url": "audio/practice-groups/test-09/t09-g047.ogg",
+      "source": "test-09/groups/t09-g047/media/audio/practice-groups/test-09/t09-g047.ogg"
+    }
+  ],
+  "mediaManifestSha256": "691a655ea67c7bb62e40e9420b9bcc8109e6fcec7285698ffe3de7a19a1e4fd8",
+  "integrationBase": "811020f65c174e9708d625ed6015a73815f7bbcf",
+  "appSha256": "eebd55c330ca4f52584d893a3096748dd8afc062f6232ad7bc01de395e450a62",
+  "candidateEvidenceSha256": "9d2e23bb709dc8bfcd87c1a8f7a5d07a40091357ee10ac5d3558700d6499a3a3",
+  "sourceCutMapSha256": "4cfaf80a521c70c8f541d4e0965f1d3e8d3daebf0d6e27a5501c3be1949f282e",
+  "sourcePreflightSha256": "e4bf02555db97894e2e2446c5eccdc0612e095b4a2466412f65247ea04851df6",
+  "decodedAsrSha256": {
+    "whisper-small.json": "14247b05432a1429fc2ce27c19a522678457221311736373f64711d117fa004f",
+    "zipformer.json": "20e35be1812850b460a6b1f6c38118ffa01d0400fd97016ec551da3281968679",
+    "targeted-weights-base.json": "6be42c0f8df7fec60f4c6714c2ba31df94e1a37a6453b1c9b55ebe3f8c7aed7f"
+  },
+  "media": {
+    "formal": {
+      "file": "t09-g047-formal.ogg",
+      "sha256": "d43898c3aea6a9c760347621b5251f4d621e1807d56ef91b83bcb31595b3f476",
+      "samples48k": 4175040,
+      "halfSecondGuardPeaksLsb": [
+        0,
+        1
+      ],
+      "timeline": [
+        {
+          "role": "gap",
+          "startSample48k": 0,
+          "endSample48k": 96000,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "cue",
+          "startSample48k": 96000,
+          "endSample48k": 323032,
+          "inputPcmSha256": "67173e843a8b8b9ef2414eff78f7e5dd011e2893fc9910cca82de87de0a48953"
+        },
+        {
+          "role": "gap",
+          "startSample48k": 323032,
+          "endSample48k": 339832,
+          "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+        },
+        {
+          "role": "passage",
+          "startSample48k": 339832,
+          "endSample48k": 2077552,
+          "inputPcmSha256": "228e0101c65f3d1516fa2a8904ee5084d44c90a2464c3bfdd01ab7893b60b73d",
+          "turnRanges48k": [
+            [
+              339832,
+              808240
+            ],
+            [
+              808240,
+              1369432
+            ],
+            [
+              1369432,
+              1559032
+            ],
+            [
+              1559032,
+              2077552
+            ]
+          ]
+        },
+        {
+          "role": "stem:47",
+          "startSample48k": 2077552,
+          "endSample48k": 2390032,
+          "inputPcmSha256": "519d4f13176b4cc40e560d589d6722f7d9d3d2190e1e8c273e141cdd55ea19b5"
+        },
+        {
+          "role": "answer:47",
+          "startSample48k": 2390032,
+          "endSample48k": 2774032,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "stem:48",
+          "startSample48k": 2774032,
+          "endSample48k": 3033232,
+          "inputPcmSha256": "36a761f9d632761eca98c64da176d0abc5c58ec6d4d9f199009e51cb16e96a2b"
+        },
+        {
+          "role": "answer:48",
+          "startSample48k": 3033232,
+          "endSample48k": 3417232,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "stem:49",
+          "startSample48k": 3417232,
+          "endSample48k": 3695040,
+          "inputPcmSha256": "ca78e046f5b5fcc1305e954e55beb6fcd6ff622c47e4a4df76d4030d27eb8dd5"
+        },
+        {
+          "role": "answer:49",
+          "startSample48k": 3695040,
+          "endSample48k": 4079040,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "gap",
+          "startSample48k": 4079040,
+          "endSample48k": 4175040,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        }
+      ]
+    },
+    "practice": {
+      "file": "t09-g047-practice.ogg",
+      "sha256": "513de106097cfe1db0eb6cb81d3046e1f9e5c5b65dd27832b1da41d977ff1102",
+      "samples48k": 1929720,
+      "halfSecondGuardPeaksLsb": [
+        0,
+        1
+      ],
+      "timeline": [
+        {
+          "role": "gap",
+          "startSample48k": 0,
+          "endSample48k": 96000,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "passage",
+          "startSample48k": 96000,
+          "endSample48k": 1833720,
+          "inputPcmSha256": "228e0101c65f3d1516fa2a8904ee5084d44c90a2464c3bfdd01ab7893b60b73d",
+          "turnRanges48k": [
+            [
+              96000,
+              564408
+            ],
+            [
+              564408,
+              1125600
+            ],
+            [
+              1125600,
+              1315200
+            ],
+            [
+              1315200,
+              1833720
+            ]
+          ]
+        },
+        {
+          "role": "gap",
+          "startSample48k": 1833720,
+          "endSample48k": 1929720,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        }
+      ]
+    }
+  },
+  "semanticChecks": {
+    "47": "C: compare whether the unloaded belt running changes the reading before adjustment",
+    "48": "A: continue packing and set boxes aside, do not record shipment weights until review",
+    "49": "B: stopped and moving with no box on the belt"
+  },
+  "recognitionScope": "Both independent decoders reproduce positive scored evidence in both actual modes, with targeted independent Whisper-base resolving broad model renderings of the final restriction in both exact files.",
+  "native": {
+    "engine": "Cloud Chromium, exact private fixture",
+    "fixtureSha256": "fced70f25ca1bf6c43805c4100a92ef0f059c8a06a0089d2addc99659e5ff87a",
+    "formal": {
+      "priorStillPlaying": 68.353861,
+      "newAutomatic": 9.246136,
+      "initial": 0,
+      "firstSampled": 0.122385,
+      "paused": 9.31891,
+      "whileStillPaused": 9.31891,
+      "afterResume": 9.554217,
+      "rate": 1,
+      "nextDisabled": true,
+      "transcriptHidden": true
+    },
+    "practice": {
+      "previous": 0.150983,
+      "reset": 0,
+      "firstSampled": 0.074961,
+      "paused": 0.119531,
+      "whileStillPaused": 0.119531,
+      "afterResume": 0.372657
+    },
+    "threeDisplayed": [
+      47,
+      48,
+      49
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "t09-q049",
+  "testId": "test-09",
+  "number": 49,
+  "part": 3,
+  "groupId": "t09-g047",
+  "revision": 1,
+  "prompt": "Which readings should the woman write down first?",
+  "promptZh": "女子應先記下哪兩個讀值？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The weight of one sealed box and one open box.",
+      "zh": "一個封箱和一個未封箱的重量。",
+      "whyZh": "兩筆都不應有箱子。"
+    },
+    {
+      "id": "B",
+      "text": "The empty-belt readings with the belt stopped and moving.",
+      "zh": "空皮帶停止與運轉時的讀值。",
+      "whyZh": "兩個狀態都不放箱子，才可比較運轉本身是否造成差異。"
+    },
+    {
+      "id": "C",
+      "text": "Two empty-belt readings after she zeroes the running scale.",
+      "zh": "運轉時先歸零，再取兩筆空帶讀值。",
+      "whyZh": "男子要求先取數再調整，不能先歸零。"
+    },
+    {
+      "id": "D",
+      "text": "The first two shipment weights after packing resumes.",
+      "zh": "恢復包裝後最早兩筆出貨重量。",
+      "whyZh": "可以繼續包裝，但出貨重量要等看過空帶讀值再登記。"
+    }
+  ],
+  "answer": "B",
+  "difficulty": "intermediate",
+  "explanationZh": "兩個狀態都不放箱子，才可比較運轉本身是否造成差異。",
+  "evidence": "The conveyor scale shows zero when the belt is stopped, but it shows a small weight as soon as the empty belt starts moving. Should I set it to zero while it runs? / Not yet. First write down both readings without a box on the belt. We need to see whether starting the belt changes the reading before we adjust anything.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "F",
+      "startChar": 0,
+      "endChar": 163,
+      "exactQuote": "The conveyor scale shows zero when the belt is stopped, but it shows a small weight as soon as the empty belt starts moving. Should I set it to zero while it runs?"
+    },
+    {
+      "sourceField": "turns",
+      "turn": 2,
+      "speaker": "M",
+      "startChar": 0,
+      "endChar": 154,
+      "exactQuote": "Not yet. First write down both readings without a box on the belt. We need to see whether starting the belt changes the reading before we adjust anything."
+    }
+  ],
+  "topic": "manufacturing"
+}

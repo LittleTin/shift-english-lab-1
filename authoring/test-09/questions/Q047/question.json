@@ -1,0 +1,59 @@
+{
+  "id": "t09-q047",
+  "testId": "test-09",
+  "number": 47,
+  "part": 3,
+  "groupId": "t09-g047",
+  "revision": 1,
+  "prompt": "Why does the man ask the woman not to zero the scale yet?",
+  "promptZh": "男子為什麼請女子暫時不要把秤歸零？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The scale needs time to cool after packing.",
+      "zh": "包裝後要等秤冷卻。",
+      "whyZh": "沒有談溫度；男子要先保留原讀值。"
+    },
+    {
+      "id": "B",
+      "text": "The next box must be used to set the scale to zero.",
+      "zh": "要用下一箱把秤歸零。",
+      "whyZh": "要求在皮帶沒箱子時取讀值，不是用箱子歸零。"
+    },
+    {
+      "id": "C",
+      "text": "An adjustment could hide a difference caused by the moving belt.",
+      "zh": "調整可能掩蓋皮帶運轉造成的讀數差異。",
+      "whyZh": "要在任何調整前比對停止、運轉的空帶讀值，檢查變化是否跟運轉有關。"
+    },
+    {
+      "id": "D",
+      "text": "The belt must be replaced before any reading can be taken.",
+      "zh": "量測前必須更換皮帶。",
+      "whyZh": "原文沒有更換指示，反而要先測兩個狀態。"
+    }
+  ],
+  "answer": "C",
+  "difficulty": "intermediate",
+  "explanationZh": "要在任何調整前比對停止、運轉的空帶讀值，檢查變化是否跟運轉有關。",
+  "evidence": "The conveyor scale shows zero when the belt is stopped, but it shows a small weight as soon as the empty belt starts moving. Should I set it to zero while it runs? / Not yet. First write down both readings without a box on the belt. We need to see whether starting the belt changes the reading before we adjust anything.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "F",
+      "startChar": 0,
+      "endChar": 163,
+      "exactQuote": "The conveyor scale shows zero when the belt is stopped, but it shows a small weight as soon as the empty belt starts moving. Should I set it to zero while it runs?"
+    },
+    {
+      "sourceField": "turns",
+      "turn": 2,
+      "speaker": "M",
+      "startChar": 0,
+      "endChar": 154,
+      "exactQuote": "Not yet. First write down both readings without a box on the belt. We need to see whether starting the belt changes the reading before we adjust anything."
+    }
+  ],
+  "topic": "manufacturing"
+}
