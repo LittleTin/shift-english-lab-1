@@ -1,0 +1,59 @@
+{
+  "id": "t09-q056",
+  "testId": "test-09",
+  "number": 56,
+  "part": 3,
+  "groupId": "t09-g056",
+  "revision": 1,
+  "prompt": "Why does the man mention his paperback copy?",
+  "promptZh": "男子為什麼特別提到他的平裝本？",
+  "options": [
+    {
+      "id": "A",
+      "text": "He wants to read a map from that copy.",
+      "zh": "他想讀那個版本裡的地圖。",
+      "whyZh": "地圖出現在女子的大字版，不是男子提起平裝本的理由。"
+    },
+    {
+      "id": "B",
+      "text": "His page reference may not match another edition.",
+      "zh": "他的頁碼在其他版本可能對不上。",
+      "whyZh": "平裝本第六十頁是他筆記記的位置；女子的大字版同頁是地圖。"
+    },
+    {
+      "id": "C",
+      "text": "He wants the woman to borrow that edition tonight.",
+      "zh": "他要女子今晚借用那一版。",
+      "whyZh": "女子用自己的大字版按章名找，男子沒有要求換書。"
+    },
+    {
+      "id": "D",
+      "text": "It does not include an editor’s note.",
+      "zh": "這個版本沒有編者註。",
+      "whyZh": "沒有說平裝本有沒有編者註；確定的是兩版頁碼不同。"
+    }
+  ],
+  "answer": "B",
+  "difficulty": "intermediate",
+  "explanationZh": "平裝本第六十頁是他筆記記的位置；女子的大字版同頁是地圖。",
+  "evidence": "Could you read the opening bit of the chapter tonight? My notes say page sixty, but that’s in my paperback. / My large-print copy has a map on that page. I found the chapter by its title, but there’s an editor’s note between the title and the story.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "M",
+      "startChar": 0,
+      "endChar": 107,
+      "exactQuote": "Could you read the opening bit of the chapter tonight? My notes say page sixty, but that’s in my paperback."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 2,
+      "speaker": "F",
+      "startChar": 0,
+      "endChar": 139,
+      "exactQuote": "My large-print copy has a map on that page. I found the chapter by its title, but there’s an editor’s note between the title and the story."
+    }
+  ],
+  "topic": "daily"
+}

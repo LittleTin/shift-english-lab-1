@@ -1,0 +1,59 @@
+{
+  "id": "t09-q057",
+  "testId": "test-09",
+  "number": 57,
+  "part": 3,
+  "groupId": "t09-g056",
+  "revision": 1,
+  "prompt": "Where should the woman start reading aloud?",
+  "promptZh": "女子應從哪裡開始朗讀？",
+  "options": [
+    {
+      "id": "A",
+      "text": "At the page with the map.",
+      "zh": "從有地圖的那一頁。",
+      "whyZh": "地圖是找錯頁時看到的，不是朗讀起點。"
+    },
+    {
+      "id": "B",
+      "text": "At the beginning of the editor’s note.",
+      "zh": "從編者註的開頭。",
+      "whyZh": "男子說編者註可討論，但不朗讀。"
+    },
+    {
+      "id": "C",
+      "text": "At the title of the chapter.",
+      "zh": "從章名。",
+      "whyZh": "章名用來定位該章，並非朗讀起點。"
+    },
+    {
+      "id": "D",
+      "text": "At the first line that a character speaks.",
+      "zh": "從角色說的第一句話。",
+      "whyZh": "男子明確指定第一句角色台詞。"
+    }
+  ],
+  "answer": "D",
+  "difficulty": "foundation",
+  "explanationZh": "男子明確指定第一句角色台詞。",
+  "evidence": "My large-print copy has a map on that page. I found the chapter by its title, but there’s an editor’s note between the title and the story. / Start at the first line spoken by a character. The note is useful for our discussion, but let’s not read it aloud.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 2,
+      "speaker": "F",
+      "startChar": 0,
+      "endChar": 139,
+      "exactQuote": "My large-print copy has a map on that page. I found the chapter by its title, but there’s an editor’s note between the title and the story."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 3,
+      "speaker": "M",
+      "startChar": 0,
+      "endChar": 114,
+      "exactQuote": "Start at the first line spoken by a character. The note is useful for our discussion, but let’s not read it aloud."
+    }
+  ],
+  "topic": "daily"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "t09-q058",
+  "testId": "test-09",
+  "number": 58,
+  "part": 3,
+  "groupId": "t09-g056",
+  "revision": 2,
+  "prompt": "Which direction would help both the large-print reader and people using the audio edition locate the chapter?",
+  "promptZh": "哪個指引能同時幫助讀大字版的人和使用有聲版的人找到該章？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Use page sixty in both editions.",
+      "zh": "兩個版本都用第六十頁。",
+      "whyZh": "第六十頁是平裝本的頁碼，大字版該頁是地圖，有聲版也非依頁碼列出。"
+    },
+    {
+      "id": "B",
+      "text": "Use page sixty in the large-print edition and the chapter name in the audio edition.",
+      "zh": "大字版用第六十頁，有聲版用章名。",
+      "whyZh": "有聲版用章名正確，但大字版第六十頁找不到該章。"
+    },
+    {
+      "id": "C",
+      "text": "Use the chapter name in both editions.",
+      "zh": "兩個版本都用章名。",
+      "whyZh": "女子已用章名找到大字版該章，而有聲版也按章名列出，兩者都適用。"
+    },
+    {
+      "id": "D",
+      "text": "Use the chapter name in the large-print edition and a page number in the audio edition.",
+      "zh": "大字版用章名，有聲版用頁碼。",
+      "whyZh": "大字版做法對，但有聲版依章名列出，不按頁碼。"
+    }
+  ],
+  "answer": "C",
+  "difficulty": "intermediate",
+  "explanationZh": "女子已用章名找到大字版該章，而有聲版也按章名列出，兩者都適用。",
+  "evidence": "I found the chapter by its title / it lists chapters by name, not by page.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 2,
+      "speaker": "F",
+      "startChar": 44,
+      "endChar": 76,
+      "exactQuote": "I found the chapter by its title"
+    },
+    {
+      "sourceField": "turns",
+      "turn": 4,
+      "speaker": "F",
+      "startChar": 89,
+      "endChar": 128,
+      "exactQuote": "it lists chapters by name, not by page."
+    }
+  ],
+  "topic": "daily"
+}
