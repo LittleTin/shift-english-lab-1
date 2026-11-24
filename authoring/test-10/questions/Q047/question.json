@@ -1,0 +1,46 @@
+{
+  "id": "t10-q047",
+  "uuid": "c574d3c2-2a37-5fa4-b7c9-c5f38f6cfb09",
+  "number": 47,
+  "part": 3,
+  "testId": "test-10",
+  "groupId": "t10-g047",
+  "topic": "technology",
+  "difficulty": "intermediate",
+  "prompt": "What does the engineer’s proposal allow the trainer to do?",
+  "promptZh": "工程師的提議能讓講師怎麼安排練習？",
+  "answer": "A",
+  "evidence": "“I copied yesterday’s case into the practice environment. The activity list still has a gap where a device stopped sending updates. If we connect a device during class, the gap may never appear.” / “I want every group to see the same gap. But don’t make them watch a recording of me choosing what to check. They need to decide whether to examine the device or the activity list first.” / “Then I’ll replay just the incoming updates. The controls will still respond to whatever the learners choose. Should I put a message at the top saying the device disconnected?”",
+  "options": [
+    {
+      "id": "A",
+      "text": "Give each group the same starting evidence while letting learners choose their own checks.",
+      "zh": "每組都從同樣的線索開始，但由學員自行選擇要檢查的項目。",
+      "whyZh": "固定重播收到的資料可讓每組都看到同一段紀錄空白；操作仍會隨學員的選擇回應，不會替他們決定先查什麼。"
+    },
+    {
+      "id": "B",
+      "text": "Let learners practice on a live device before showing them how an earlier group handled it.",
+      "zh": "先讓學員用實體裝置練習，再讓他們看看上一組如何處理。",
+      "whyZh": "工程師表示，上課時直接接裝置可能無法重現空白；講師也不想讓學員照著他人已做的選擇來練習。"
+    },
+    {
+      "id": "C",
+      "text": "Show each group a full recording and ask which of the trainer’s choices mattered most.",
+      "zh": "每組看完完整錄影，再判斷講師的哪項選擇最重要。",
+      "whyZh": "講師明說不要讓學員看她選擇檢查項目的錄影，重點是由學員自行決定。"
+    },
+    {
+      "id": "D",
+      "text": "Let each group encounter a different gap while following a common sequence of checks.",
+      "zh": "每組遇到不同的空白，卻按同一順序進行檢查。",
+      "whyZh": "做法正相反：所有人看相同的空白，但不是按照固定順序檢查。"
+    }
+  ],
+  "explanationZh": "固定重播收到的資料可讓每組都看到同一段紀錄空白；操作仍會隨學員的選擇回應，不會替他們決定先查什麼。",
+  "revision": 1,
+  "tags": [
+    "technical-training",
+    "practice-replay"
+  ]
+}
