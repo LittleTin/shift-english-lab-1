@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "testId": "test-10",
+  "scope": [
+    21,
+    22
+  ],
+  "status": "Validated authoring batch; not deployed",
+  "sourceBase": "bb6044deaba76671ec942997aaa51ad2e92c86a4",
+  "integrationBase": "5641a9621a4c744ffddf3ed0370b418258a7f6ec",
+  "items": [
+    {
+      "number": 21,
+      "id": "t10-q021",
+      "answer": "C",
+      "difficulty": "intermediate",
+      "independentEvidence": "which way the upstairs windows face",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q021/question.json": "d4400841d1a22d1e8778623454a50416e6edc098c7deaa65f4e470181d6ad5d1",
+        "authoring/test-10/questions/Q021/media.json": "ab2c6ff0693a61f52f0fb44cd33d58a5d44b89be767008487cc22351cdd2c320",
+        "authoring/test-10/groups/t10-g021/group.json": "d2422abdda7c7ddd991c26aa3c8de1cd6ec089846b5d73bf43e59838b9d1198c"
+      },
+      "opus": {
+        "practice": {
+          "sha256": "73ebc0999e687987bb03c38f37f80d1946796d5403697ae96212fa53ce5057cf",
+          "samples48k": 945600,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 849600,
+              "peakLsb": 24917
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 849600,
+              "endSample48k": 945600,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        },
+        "formal": {
+          "sha256": "59e2cdf9035a5e918a6e9fce8174be14ea4b05af6fc6de2bde506e9ce7b3cbdb",
+          "samples48k": 1399798,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 149398,
+              "peakLsb": 24111
+            },
+            {
+              "role": "gap",
+              "startSample48k": 149398,
+              "endSample48k": 166198,
+              "peakLsb": 4,
+              "rmsLsb": 0.53658
+            },
+            {
+              "role": "passage",
+              "startSample48k": 166198,
+              "endSample48k": 919798,
+              "peakLsb": 24341
+            },
+            {
+              "role": "answer",
+              "startSample48k": 919798,
+              "endSample48k": 1303798,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1303798,
+              "endSample48k": 1399798,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        }
+      },
+      "recognizers": {
+        "whisper-small.json": "c021a6bb7df539e8638d666bca79c75ad786c0194d9c9e091fc9b91b957514db",
+        "whisper-base.json": "f4b16f44ff7e39a6abe20702981a58f73c0bb0a54a2397686a79db65e4a9102f",
+        "zipformer.json": "ada225597a6371bb92bac0c1f2740c86c4098ea150ada257e4b75a5f1eacf28b"
+      }
+    },
+    {
+      "number": 22,
+      "id": "t10-q022",
+      "answer": "B",
+      "difficulty": "intermediate",
+      "independentEvidence": "the workshop wasn't until thursday",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q022/question.json": "a8ad70312df856361551a50eaacdb40515338530172c1c4368424e4a532fbe54",
+        "authoring/test-10/questions/Q022/media.json": "735e018e8eb4de3a17f77a32d0e43af65c1e90c86c8ab69cdbbd7b137cb87f45",
+        "authoring/test-10/groups/t10-g022/group.json": "a2b1fd1b85d6ba5875444d0a2c81df3e54be403f45b857ee49c739b11ad45ae7"
+      },
+      "opus": {
+        "practice": {
+          "sha256": "15e528deee4f291cd61efd3b6e5a18e655b5e109e132a89ff412f7fbb2d135e6",
+          "samples48k": 1107000,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 3,
+              "rmsLsb": 0.05863
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 1011000,
+              "peakLsb": 22856
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1011000,
+              "endSample48k": 1107000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        },
+        "formal": {
+          "sha256": "c805022507b91f1c17212357d824576ac57de6ee637591cc7864046f64f64dd3",
+          "samples48k": 1561090,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 149290,
+              "peakLsb": 15547
+            },
+            {
+              "role": "gap",
+              "startSample48k": 149290,
+              "endSample48k": 166090,
+              "peakLsb": 4,
+              "rmsLsb": 0.71991
+            },
+            {
+              "role": "passage",
+              "startSample48k": 166090,
+              "endSample48k": 1081090,
+              "peakLsb": 22717
+            },
+            {
+              "role": "answer",
+              "startSample48k": 1081090,
+              "endSample48k": 1465090,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1465090,
+              "endSample48k": 1561090,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        }
+      },
+      "recognizers": {
+        "whisper-small.json": "5ee5153132b51d8c6697b4889b5cfec3d123fe52781f0616953abb3a45706d08",
+        "whisper-base.json": "380fafa1bb55f087259cc5e20e0b94709353e2b69ef8aaffe5de3fad10cd9f03",
+        "zipformer.json": "44ecf074f856433eebe1e8399f466a73d725c024de337650e830aefcabb94879"
+      }
+    }
+  ],
+  "native": {
+    "fixtureSha256": "0587be54ee95e581d447cf2a971bfbc9562ec647dd7171e52b2c176c60919aff",
+    "formal": {
+      "previousFromStart": 0.131663,
+      "natural": [
+        0.04649,
+        0.018284
+      ],
+      "fixedRate": 1,
+      "paused": [
+        0.08266,
+        0.057512
+      ],
+      "still": [
+        0.08266,
+        0.057512
+      ],
+      "resumed": [
+        0.330961,
+        0.310792
+      ]
+    },
+    "practice": {
+      "reset": [
+        0,
+        0
+      ],
+      "newSources": [
+        "audio/practice-groups/test-10/t10-g021.ogg",
+        "audio/practice-groups/test-10/t10-g022.ogg"
+      ],
+      "first": [
+        0.149028,
+        0.184594
+      ],
+      "paused": [
+        0.187943,
+        0.225964
+      ],
+      "still": [
+        0.187943,
+        0.225964
+      ],
+      "resumed": [
+        0.447128,
+        0.495205
+      ],
+      "previousFromStart": 0.150139
+    }
+  },
+  "recognitionNotes": "Whisper Small and Base independently recover both exact questions and all English responses in both final modes (numeric spelling and label punctuation normalized). Zipformer recovers both scored responses and both official cues, but misdecodes parts of the unscored carrier context and does not independently resolve the Q022 prompt; do not treat that extra recognizer as confirming the full prompts. Separate Aria cues Number Twenty-One and Number Twenty-Two verified. Shared source captured once each from the unchanged F0 resource; formal and practice outputs retain the same speech."
+}

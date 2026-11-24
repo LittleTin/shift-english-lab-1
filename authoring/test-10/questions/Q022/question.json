@@ -1,0 +1,46 @@
+{
+  "id": "t10-q022",
+  "number": 22,
+  "part": 2,
+  "revision": 1,
+  "testId": "test-10",
+  "groupId": "t10-g022",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽題目，選出最合適的回應。",
+  "options": [
+    {
+      "id": "A",
+      "text": "Every person who attended was given a pass.",
+      "zh": "所有到場的人都領到一張通行證。",
+      "whyZh": "這只保證到場者會領證，不能反推所有領證者皆到場。"
+    },
+    {
+      "id": "B",
+      "text": "Some people picked theirs up on Monday. The workshop wasn’t until Thursday.",
+      "zh": "有些人星期一就領了。研習星期四才舉行。",
+      "whyZh": "領證發生在活動開始前，不能單靠領證數判定實際出席。"
+    },
+    {
+      "id": "C",
+      "text": "The workshop drew more people than last year’s did.",
+      "zh": "這次研習出席的人比去年多。",
+      "whyZh": "講的是出席人數與去年相比，沒有說能否用領證數取代實際計數。"
+    }
+  ],
+  "answer": "B",
+  "evidence": "Some people picked theirs up on Monday. The workshop wasn’t until Thursday.",
+  "explanationZh": "領證發生在活動開始前，不能單靠領證數判定實際出席。",
+  "tags": [
+    "question-response",
+    "workplace-communication"
+  ],
+  "vocabulary": [
+    {
+      "term": "attendance figure",
+      "zh": "出席人數",
+      "note": "figure 在此表示統計數字；通行證的領取數不能直接視為出席數。"
+    }
+  ]
+}
