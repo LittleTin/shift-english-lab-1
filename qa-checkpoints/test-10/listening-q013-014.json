@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "testId": "test-10",
+  "scope": [
+    13,
+    14
+  ],
+  "status": "Validated authoring batch; not deployed",
+  "sourceBase": "1057b95c9bf0e41b37c75e6e79d6bf69a084657f",
+  "integrationBase": "5641a9621a4c744ffddf3ed0370b418258a7f6ec",
+  "items": [
+    {
+      "number": 13,
+      "id": "t10-q013",
+      "answer": "A",
+      "difficulty": "intermediate",
+      "independentEvidence": "pulled out",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q013/question.json": "66eb4c75873fb4acce922b4c171bbc3fa7af4a6ffb9311938b097e3559b89db3",
+        "authoring/test-10/questions/Q013/media.json": "175865fca0615edd5a9eadfacbdb73edca923280a7891b9ab680592f8eafb055",
+        "authoring/test-10/groups/t10-g013/group.json": "66a47112063be34a1a1966df498b3a9e53a924ab0938ffc287b9e706985fd80d"
+      },
+      "opus": {
+        "practice": {
+          "sha256": "8817bc9103cc3bdb9cdcd5a6cea559da22e625cefe9c04076251ee908c9e7734",
+          "samples48k": 921600,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 825600,
+              "peakLsb": 21739
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 825600,
+              "endSample48k": 921600,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        },
+        "formal": {
+          "sha256": "d2a2f1ff939ae30b9da4baf0e2af7776973fd7fe4b59dc2da68a6ee17d73dff3",
+          "samples48k": 1374324,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 147924,
+              "peakLsb": 15999
+            },
+            {
+              "role": "gap",
+              "startSample48k": 147924,
+              "endSample48k": 164724,
+              "peakLsb": 5,
+              "rmsLsb": 1.10243
+            },
+            {
+              "role": "passage",
+              "startSample48k": 164724,
+              "endSample48k": 894324,
+              "peakLsb": 21389
+            },
+            {
+              "role": "answer",
+              "startSample48k": 894324,
+              "endSample48k": 1278324,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1278324,
+              "endSample48k": 1374324,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        }
+      },
+      "recognizers": {
+        "whisper-small.json": "17318f83b69d25b9eae1665e2e9f240a1015bc8c43721162939b9ddf27a5c150",
+        "whisper-base.json": "d9705bc3cfaa81753bcc52aa7f7700dab54993c6947e460c16b9494413f5d885",
+        "zipformer.json": "b9f365fb9948b3f9e183e6789f760096a22505a1f72a86605aa21495f3b092e1"
+      }
+    },
+    {
+      "number": 14,
+      "id": "t10-q014",
+      "answer": "B",
+      "difficulty": "intermediate",
+      "independentEvidence": "this is the spare one",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q014/question.json": "9eac2eb4ec260d600f016bbc9f21e86433242897f6fb4a7f36e8e2b7db14347e",
+        "authoring/test-10/questions/Q014/media.json": "853031e266bfce46df53e65f254c21419fb3b4d6a7036ef2e12581b030f0086f",
+        "authoring/test-10/groups/t10-g014/group.json": "b9d4a63368a206b43a42559fde36f78e922ac6526e1e90713b47d35a026ba972"
+      },
+      "opus": {
+        "practice": {
+          "sha256": "1ccd2f057b9889ef76650c321b56444a0b3196702e0cb55455f3a3bc7f9c0324",
+          "samples48k": 961200,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 2,
+              "rmsLsb": 0.03323
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 865200,
+              "peakLsb": 25740
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 865200,
+              "endSample48k": 961200,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        },
+        "formal": {
+          "sha256": "cc477e71bb2e70d802f06a7393b548471c5760de972b983fe780be4675c451d7",
+          "samples48k": 1410184,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 144184,
+              "peakLsb": 17541
+            },
+            {
+              "role": "gap",
+              "startSample48k": 144184,
+              "endSample48k": 160984,
+              "peakLsb": 3,
+              "rmsLsb": 0.75848
+            },
+            {
+              "role": "passage",
+              "startSample48k": 160984,
+              "endSample48k": 930184,
+              "peakLsb": 25453
+            },
+            {
+              "role": "answer",
+              "startSample48k": 930184,
+              "endSample48k": 1314184,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1314184,
+              "endSample48k": 1410184,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        }
+      },
+      "recognizers": {
+        "whisper-small.json": "4d5c914a0023cb15ffcc76afd13cc937c7e0858348a4e8cbfe82c9b55c121def",
+        "whisper-base.json": "9173f4329c42cbe874fc60433f830df7d9f3578ab40068b198b6e514f75a46a5",
+        "zipformer.json": "694d30fbb03765d67ad3f9e210290131c4bbfbeb430862359d99580ffd3d57d2"
+      }
+    }
+  ],
+  "native": {
+    "fixtureSha256": "8070aa6d920552be8abf445e9a1fd68c0a8cd07e27b6d0404edba397afcaf26d",
+    "formal": {
+      "previousFromStart": 0.1977,
+      "natural": [
+        15.771972,
+        14.36326
+      ],
+      "fixedRate": 1,
+      "paused": [
+        15.813684,
+        14.401908
+      ],
+      "still": [
+        15.813684,
+        14.401908
+      ],
+      "resumed": [
+        16.053863,
+        14.644983
+      ]
+    },
+    "practice": {
+      "previousFromStart": 0.138968,
+      "reset": [
+        0,
+        0
+      ],
+      "newSources": [
+        "audio/practice-groups/test-10/t10-g013.ogg",
+        "audio/practice-groups/test-10/t10-g014.ogg"
+      ],
+      "first": [
+        0.171185,
+        0.150852
+      ],
+      "paused": [
+        0.226769,
+        0.186832
+      ],
+      "still": [
+        0.226769,
+        0.186832
+      ],
+      "resumed": [
+        0.466325,
+        0.437214
+      ]
+    }
+  },
+  "recognitionNotes": "The original Q013 contraction was not sufficiently clear in more than one decoder. R2 re-records only the condition (“the van is still here”). All three decoders recover the revised condition in both modes. Original A/B/C PCM preserved from original sample 177600 at a quiet boundary. Q014 independent recognition confirmed old meter, Friday and spare item. Numbered cues 13 and 14 separately verified."
+}
