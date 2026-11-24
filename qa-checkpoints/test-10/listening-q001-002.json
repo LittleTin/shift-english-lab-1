@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "testId": "test-10",
+  "scope": [
+    1,
+    2
+  ],
+  "status": "Validated authoring batch; not deployed",
+  "sourceBase": "d1bd230d3c5c064e772d3a82f442fc8b5cbce1bc",
+  "integrationBase": "5641a9621a4c744ffddf3ed0370b418258a7f6ec",
+  "items": [
+    {
+      "number": 1,
+      "key": "B",
+      "difficulty": "intermediate",
+      "source": {
+        "authoring/test-10/groups/t10-g001/group.json": "017644a92cf1d123e6e78fbb3695a2898e5db8e6a486ee45bf2dfa8ce4e43321",
+        "authoring/test-10/questions/Q001/question.json": "403b54bd28319d4c42c7edabf4909a01273940e773c2157d1f58d26f9b7b5408",
+        "authoring/test-10/questions/Q001/media.json": "91bbae589ca600b3d905996e4ea93d98def709f545a6be6d6297318c80cf016a"
+      },
+      "visualSha256": "7cda2e1d125fbd8938af366b84b63a7aa6013b8c25cda1eae0ad7f7974dbd449",
+      "blindVisualReceiptSha256": "74e845b9bbcc230e3ca6ff5ff7f2c03b9685d830c9271bca5ed142d28a07f7cf",
+      "practiceFormal": {
+        "formal": {
+          "sha256": "5690a6379fc2fb1c735599b44f8e635ef3778e85bad3038869c64d5b0f68c1f6",
+          "samples": 4643362,
+          "phase": [
+            {
+              "role": "intro",
+              "startSample48k": 0,
+              "endSample48k": 661024,
+              "peakLsb": 25077,
+              "inputPcmSha256": "fd2fc1e1d99bd34d3e968b2738e9fedd9a564955518b038791fb0901570f0706"
+            },
+            {
+              "role": "direction",
+              "startSample48k": 661024,
+              "endSample48k": 1325600,
+              "peakLsb": 22044,
+              "inputPcmSha256": "da2fb22477c669a44259d66d9d665621dc48fd52b0dfbd3a97c66560f58fc7ff"
+            },
+            {
+              "role": "example",
+              "startSample48k": 1325600,
+              "endSample48k": 2888736,
+              "peakLsb": 24134,
+              "inputPcmSha256": "d1a36c2b1945120203435b467262c99a15d3ebc7ef9cde050db13bcb97b37525"
+            },
+            {
+              "role": "cue",
+              "startSample48k": 2888736,
+              "endSample48k": 2925442,
+              "peakLsb": 14913,
+              "inputPcmSha256": "45a8f67a53a0162f54364b13968f34269a79ad93b18a6c2e6c2b84c7343a3fb1"
+            },
+            {
+              "role": "gap",
+              "startSample48k": 2925442,
+              "endSample48k": 2942242,
+              "peakLsb": 4,
+              "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+            },
+            {
+              "role": "passage",
+              "startSample48k": 2942242,
+              "endSample48k": 4163362,
+              "peakLsb": 23114,
+              "inputPcmSha256": "11122e7897195aae88c52d969bda70e95e13514dfa1a848b2e2a9930d946194c"
+            },
+            {
+              "role": "answer",
+              "startSample48k": 4163362,
+              "endSample48k": 4547362,
+              "peakLsb": 0,
+              "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 4547362,
+              "endSample48k": 4643362,
+              "peakLsb": 0,
+              "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            }
+          ]
+        },
+        "practice": {
+          "sha256": "65302b9386f96d3a3936f7c50c56d6b644fdee40aed244ac741ac5c3701e6d73",
+          "samples": 1413120,
+          "phase": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 1317120,
+              "peakLsb": 23220,
+              "inputPcmSha256": "11122e7897195aae88c52d969bda70e95e13514dfa1a848b2e2a9930d946194c"
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1317120,
+              "endSample48k": 1413120,
+              "peakLsb": 0,
+              "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            }
+          ]
+        }
+      },
+      "speechRecognizers": {
+        "whisper-small.json": "20af4ee54bb7dab2673cfcc2961b80bb51070d1885cecf893713fd6ed25abee6",
+        "whisper-base.json": "1623dccf8d91924c20af2b5e88ef1cb59587d034557c66d119c5a2a4aaf3516e",
+        "zipformer.json": "3107a92f148a889c1d072dc90453b975b7f267034123e107ae3f7306844c3695"
+      }
+    },
+    {
+      "number": 2,
+      "key": "C",
+      "difficulty": "foundation",
+      "source": {
+        "authoring/test-10/groups/t10-g002/group.json": "e706cc370726cdd2944681f606fdfa6fa32407a8ce4fcdd64165601c83c04818",
+        "authoring/test-10/questions/Q002/question.json": "4d730ed8e3c9b0d3a7bcf8f46af7615bb4601c06fb25f9234a30045989003e2f",
+        "authoring/test-10/questions/Q002/media.json": "48e8e05f399dff082fc1694d25bca84b02c3730034269cf4282fb385bef52c0f"
+      },
+      "visualSha256": "ce6d2cbfb20eab58115c6a048e1cf8a4faa04bf9f67aa57b419482fac65109ed",
+      "blindVisualReceiptSha256": "82063ee8ed389a85e9e4200bfe8a0750e3b0ef6a50c1f58bedae7b022584a0b6",
+      "practiceFormal": {
+        "formal": {
+          "sha256": "1f73b9ad0fae10338cb487f12552f9a31dd9266145f89f6368f0dbc18aa1acda",
+          "samples": 1667018,
+          "phase": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 136298,
+              "peakLsb": 15765,
+              "inputPcmSha256": "a77e9f72adcdbdb353d3efb57e6016b04cbdc66a389379d6cadfaa0334f6a4f3"
+            },
+            {
+              "role": "gap",
+              "startSample48k": 136298,
+              "endSample48k": 153098,
+              "peakLsb": 1,
+              "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+            },
+            {
+              "role": "passage",
+              "startSample48k": 153098,
+              "endSample48k": 1187018,
+              "peakLsb": 22506,
+              "inputPcmSha256": "8b1998a0bb106a1255180c19997aa41ec8dd9b5eeca215f973d26032b22ab61b"
+            },
+            {
+              "role": "answer",
+              "startSample48k": 1187018,
+              "endSample48k": 1571018,
+              "peakLsb": 0,
+              "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1571018,
+              "endSample48k": 1667018,
+              "peakLsb": 0,
+              "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            }
+          ]
+        },
+        "practice": {
+          "sha256": "fe5fec5a1162b45976b34895e51ed070a6ab2114af4f4618431b5632495a0aef",
+          "samples": 1225920,
+          "phase": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 1,
+              "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 1129920,
+              "peakLsb": 22490,
+              "inputPcmSha256": "8b1998a0bb106a1255180c19997aa41ec8dd9b5eeca215f973d26032b22ab61b"
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1129920,
+              "endSample48k": 1225920,
+              "peakLsb": 0,
+              "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            }
+          ]
+        }
+      },
+      "speechRecognizers": {
+        "whisper-small.json": "938aab653e678c486957178ee626d67798373d133e2f0e9c2e0a6f9f735343da",
+        "whisper-base.json": "938aab653e678c486957178ee626d67798373d133e2f0e9c2e0a6f9f735343da",
+        "zipformer.json": "e926f4652f2b27353fed97d394e42f723e1ae7f43b7787dabdd7bd2cba7925b8"
+      }
+    }
+  ],
+  "native": {
+    "fixtureSha256": "7115be3c9c160ea5fab71c9c5e38f26c55a92d63c2534a59be5e9acd403c9b4d",
+    "formal": {
+      "rate": 1,
+      "initial": 0.117197,
+      "example": "assets/scenes/formal-example.svg",
+      "exampleNaturalWidth": 640,
+      "scoredPhotos": [
+        "assets/scenes/test-10/test10-p1-001.jpg",
+        "assets/scenes/test-10/test10-p1-002.jpg"
+      ],
+      "photoNaturalWidth": 1200,
+      "naturalNext": 0.017111
+    },
+    "practice": {
+      "outerDesktopWidth": 1348,
+      "photoWidth": 402,
+      "AtoD": [
+        4,
+        4
+      ],
+      "initial": [
+        0.204855,
+        0.138564
+      ],
+      "resetTo": 0,
+      "pause": 0.179108,
+      "still": 0.179108,
+      "resume": 0.504713
+    },
+    "narrow": {
+      "outerIframeWidthCssPx": [
+        375,
+        375
+      ],
+      "actualViewportWidthCssPx": [
+        360,
+        360
+      ],
+      "scrollWidths": [
+        360,
+        360
+      ],
+      "photoWidths": [
+        278,
+        278
+      ],
+      "AtoD": [
+        4,
+        4
+      ],
+      "physicalIphone": false
+    }
+  },
+  "unscoredPhasesRecognizerReceipts": {
+    "intro-whisper-small.json": "c80aa97087725e573c8fc94debc2f981cee4c5eacf3b19dacdce95498cc06d93",
+    "intro-zipformer.json": "5533757bd975d9fda5ea32455c98317e59718e9fb0fc25d420278d5c660627f1",
+    "intro-tail-whisper-small.json": "869753ba415a95dce5b01328ace3461cb251eacc9c95b8e1de07e069f7cdb1c2"
+  }
+}
