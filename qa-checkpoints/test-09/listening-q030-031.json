@@ -1,0 +1,250 @@
+{
+  "testId": "test-09",
+  "stage": "Two independently reviewed authoring groups only. No full exam, catalog, lock, or public release.",
+  "questions": [
+    {
+      "number": 30,
+      "id": "t09-q030",
+      "uuid": "11a98791-7008-5a98-b6f0-4a314e78240e",
+      "questionSha256": "37bc471ce169a39ad5d8f4d179f579213be9c64005f189b823520999304e518f",
+      "groupSha256": "9e40be956bec55cea08c7115941a2fdda7cde39a8efb70a392a56cfab24745c9",
+      "sidecarSha256": "3a2626501cddbbba30f5d16f61594fa035778ff04341895429810a4a5f44da24",
+      "nativeMediaManifestSha256": "8592cb497b3c4c97d2f9c62ab90b13a9935e1ad02e7afcd88e5553b3c0a701dd"
+    },
+    {
+      "number": 31,
+      "id": "t09-q031",
+      "uuid": "ad11699b-096d-58f5-a824-0275e8608560",
+      "questionSha256": "6855f27691d58b00153f1e53a3a0dc949b4c544cc4d765294504f2acd5c2fd8b",
+      "groupSha256": "fbfe042a01a2484b35efc31c7ccde97bf65ef74885f6451076dd0b20de1b69f0",
+      "sidecarSha256": "6bb423b1f83289fb21d10e6469972bdffed6755c4f2d9c248891e9baaa4957c7",
+      "nativeMediaManifestSha256": "8592cb497b3c4c97d2f9c62ab90b13a9935e1ad02e7afcd88e5553b3c0a701dd"
+    }
+  ],
+  "integrationBase": "4dc7dc4254350024d98c20bd0be5ce484cc334d7",
+  "appSha256": "62ff3db3a5fde82100cf3cb4eb125139cd591a1440b65b59d58a75b3ec831600",
+  "mediaEvidenceSha256": "8592cb497b3c4c97d2f9c62ab90b13a9935e1ad02e7afcd88e5553b3c0a701dd",
+  "media": {
+    "30": {
+      "lockedReferenceSlices": {
+        "cue": {
+          "sourceSha256": "82c493063901f1674662d7277469e480bb961989483539b8b638a1926bc8964c",
+          "halfOpen48k": [
+            96960,
+            139728
+          ],
+          "cutSha256": "ba96f8e741ff07782962a114a706a66f9bbbdb06a5e53aade4cee5ca1d994173"
+        }
+      },
+      "sourceSha256": "9a234520476f49ed52c9cc45fab79f13e0fa241b7b57aecab53913e5bcad4171",
+      "practice": {
+        "file": "q030-practice.ogg",
+        "encodedSha256": "e9a466d510831195b0a78c6a7b81acba6d60bad3b098d191ccd87fe16196cce0",
+        "samples48k": 1016040,
+        "physicalGuardPeakFirstLast500ms": [
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "role": "guard lead",
+            "startSample48k": 0,
+            "endSample48k": 96000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "same shared source",
+            "startSample48k": 96000,
+            "endSample48k": 920040,
+            "inputPcmSha256": "c648b45130dd60aee7717b6ff7fc1e9fe673a9d5ac77abaf006d1dfc803e7f83"
+          },
+          {
+            "role": "guard tail",
+            "startSample48k": 920040,
+            "endSample48k": 1016040,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      },
+      "formal": {
+        "file": "q030-formal.ogg",
+        "encodedSha256": "12ded7ef69021c9f15d9b356c834dc771f326d9eada6be623c2f895f7828e249",
+        "samples48k": 1459608,
+        "physicalGuardPeakFirstLast500ms": [
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "role": "guard lead",
+            "startSample48k": 0,
+            "endSample48k": 96000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "cue",
+            "startSample48k": 96000,
+            "endSample48k": 138768,
+            "inputPcmSha256": "ba96f8e741ff07782962a114a706a66f9bbbdb06a5e53aade4cee5ca1d994173"
+          },
+          {
+            "role": "cue-to-prompt pause",
+            "startSample48k": 138768,
+            "endSample48k": 155568,
+            "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+          },
+          {
+            "role": "same shared source",
+            "startSample48k": 155568,
+            "endSample48k": 979608,
+            "inputPcmSha256": "c648b45130dd60aee7717b6ff7fc1e9fe673a9d5ac77abaf006d1dfc803e7f83"
+          },
+          {
+            "role": "draft answer window",
+            "startSample48k": 979608,
+            "endSample48k": 1363608,
+            "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+          },
+          {
+            "role": "guard tail",
+            "startSample48k": 1363608,
+            "endSample48k": 1459608,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      }
+    },
+    "31": {
+      "lockedReferenceSlices": {
+        "cue": {
+          "sourceSha256": "1efc3f541c6dbb201a5130b65aa9940a39b897107c1fce7fee8cf16ca359c37f",
+          "halfOpen48k": [
+            96960,
+            149304
+          ],
+          "cutSha256": "2d10b844a47df7069ee9783d39a59de5bd2053f375b1584b4881e4deb20bc611"
+        }
+      },
+      "sourceSha256": "0699559dfa41a79b1e922bc5e1445d68c28176048932623dd4f436b79e2266bb",
+      "practice": {
+        "file": "q031-practice.ogg",
+        "encodedSha256": "cdda6f05934c58741bdcd3290fe7ec33f88ef94130ff0e9b7ea03902077e0353",
+        "samples48k": 1197240,
+        "physicalGuardPeakFirstLast500ms": [
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "role": "guard lead",
+            "startSample48k": 0,
+            "endSample48k": 96000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "same shared source",
+            "startSample48k": 96000,
+            "endSample48k": 1101240,
+            "inputPcmSha256": "6254dcc0490eac0891a85ad5c44ddc56fa1583c148fef9923058aa1f675356f9"
+          },
+          {
+            "role": "guard tail",
+            "startSample48k": 1101240,
+            "endSample48k": 1197240,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      },
+      "formal": {
+        "file": "q031-formal.ogg",
+        "encodedSha256": "32a85f073a1005b645e8fd312528318a91d9c74d169c654d644ed6fecdb39c37",
+        "samples48k": 1650384,
+        "physicalGuardPeakFirstLast500ms": [
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "role": "guard lead",
+            "startSample48k": 0,
+            "endSample48k": 96000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "cue",
+            "startSample48k": 96000,
+            "endSample48k": 148344,
+            "inputPcmSha256": "2d10b844a47df7069ee9783d39a59de5bd2053f375b1584b4881e4deb20bc611"
+          },
+          {
+            "role": "cue-to-prompt pause",
+            "startSample48k": 148344,
+            "endSample48k": 165144,
+            "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+          },
+          {
+            "role": "same shared source",
+            "startSample48k": 165144,
+            "endSample48k": 1170384,
+            "inputPcmSha256": "6254dcc0490eac0891a85ad5c44ddc56fa1583c148fef9923058aa1f675356f9"
+          },
+          {
+            "role": "draft answer window",
+            "startSample48k": 1170384,
+            "endSample48k": 1554384,
+            "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+          },
+          {
+            "role": "guard tail",
+            "startSample48k": 1554384,
+            "endSample48k": 1650384,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      }
+    }
+  },
+  "scoredProof": {
+    "30": "A states the postcards were free, so no payment; B is where they are and C where to write.",
+    "31": "C agrees to stop the printer after the first sheet, allowing a one-copy visual check. A is catalog order, B concerns old copies."
+  },
+  "actualDecodedAsr": {
+    "whisperSmallSha256": "58f11234b70b6e29a3943e62a3c97081523798b4b53775e9ee6c729a809dda29",
+    "zipformerSha256": "d16363c5b4f956064c3f006c36ef6fc70d52188539967d8b6fac270515fefe96",
+    "raw30Sha256": "f0f3fef2249b49cd3cc88991128b818c84e1d4d9e1fd97fbcbc3f8546aa7eb49",
+    "raw31Sha256": "dddd9516f8ae353f9938d7d66850f2d60002d20edd5ac4a57a346751c8030116",
+    "scope": "Exact official candidate Opus scored clips and independent number-only cues. Whisper exact all content. Independent Zipformer same numbering, option labels, key phrases and answer semantics, with picked/pick and catalog/catalogue surface variants."
+  },
+  "actualNativeChrome": {
+    "practiceStartPauseResumeSeconds": {
+      "30": [
+        0.149105,
+        0.230919,
+        0.472181
+      ],
+      "31": [
+        0.167796,
+        0.226476,
+        0.463448
+      ]
+    },
+    "practiceAdjacentResetsToZero": true,
+    "formalManualPauseStillResumeSeconds": {
+      "30": [
+        0.17603,
+        0.17603,
+        0.420354
+      ],
+      "31": [
+        0.011375,
+        0.011375,
+        0.234959
+      ]
+    },
+    "natural30To31Confirmed": true,
+    "formal31FirstObservedAtZero": true,
+    "formalAllRate": 1,
+    "actualOfficialRuntimeRoutes": true,
+    "noRealAccountOrDevice": true
+  }
+}
