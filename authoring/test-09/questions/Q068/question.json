@@ -1,0 +1,59 @@
+{
+  "id": "t09-q068",
+  "testId": "test-09",
+  "number": 68,
+  "part": 3,
+  "groupId": "t09-g068",
+  "revision": 1,
+  "prompt": "Why is the suggestion to play quietly upstairs not accepted?",
+  "promptZh": "為什麼不能採用在樓上小聲演奏的建議？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The room is no longer available.",
+      "zh": "那間房現在沒空。",
+      "whyZh": "原文說房間空著，問題不是沒場地。"
+    },
+    {
+      "id": "B",
+      "text": "The leader has forgotten the bells.",
+      "zh": "帶領人忘了帶鈴。",
+      "whyZh": "沒有提忘帶；規定是今天室內不能敲鈴。"
+    },
+    {
+      "id": "C",
+      "text": "The bells cannot be rung indoors today at any volume.",
+      "zh": "今天在室內不能敲鈴，不論音量。",
+      "whyZh": "帶領人不接受小聲演奏，直接說今天室內不敲鈴。"
+    },
+    {
+      "id": "D",
+      "text": "The study group needs to borrow the bells.",
+      "zh": "讀書小組要借用那些鈴。",
+      "whyZh": "隔壁有小組，但沒有借鈴。"
+    }
+  ],
+  "answer": "C",
+  "difficulty": "foundation",
+  "explanationZh": "帶領人不接受小聲演奏，直接說今天室內不敲鈴。",
+  "evidence": "The room upstairs is open, but there’s a study group next door. Can we rehearse the bells here and just play quietly? / No ringing indoors today. We can practice the hand movements without bells. The courtyard is free after six if we want to hear the actual notes.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "M",
+      "startChar": 0,
+      "endChar": 117,
+      "exactQuote": "The room upstairs is open, but there’s a study group next door. Can we rehearse the bells here and just play quietly?"
+    },
+    {
+      "sourceField": "turns",
+      "turn": 2,
+      "speaker": "F",
+      "startChar": 0,
+      "endChar": 144,
+      "exactQuote": "No ringing indoors today. We can practice the hand movements without bells. The courtyard is free after six if we want to hear the actual notes."
+    }
+  ],
+  "topic": "daily"
+}

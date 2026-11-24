@@ -1,0 +1,59 @@
+{
+  "id": "t09-q070",
+  "testId": "test-09",
+  "number": 70,
+  "part": 3,
+  "groupId": "t09-g068",
+  "revision": 1,
+  "prompt": "What will the remaining players check in the courtyard?",
+  "promptZh": "留下來的團員會在庭院確認什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Which bells need to be replaced.",
+      "zh": "哪些鈴要更換。",
+      "whyZh": "對話沒有提到換掉鈴。"
+    },
+    {
+      "id": "B",
+      "text": "The start time for the next rehearsal.",
+      "zh": "下次排練的開始時間。",
+      "whyZh": "只說明今天六點後的安排，沒有談下次。"
+    },
+    {
+      "id": "C",
+      "text": "How many new players can join.",
+      "zh": "可以招募多少位新團員。",
+      "whyZh": "安排給現有團員，沒有談招募。"
+    },
+    {
+      "id": "D",
+      "text": "How the final chord sounds.",
+      "zh": "最後的和弦聽起來如何。",
+      "whyZh": "六點後，留到最後的團員到戶外聽最後幾個音一起奏出的聲音，也就是最後的和弦。"
+    }
+  ],
+  "answer": "D",
+  "difficulty": "foundation",
+  "explanationZh": "六點後，留到最後的團員到戶外聽最後幾個音一起奏出的聲音，也就是最後的和弦。",
+  "evidence": "No ringing indoors today. We can practice the hand movements without bells. The courtyard is free after six if we want to hear the actual notes. / Start with that change upstairs. After six, I’ll take the remaining players outside to hear how the last notes sound together.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 2,
+      "speaker": "F",
+      "startChar": 0,
+      "endChar": 144,
+      "exactQuote": "No ringing indoors today. We can practice the hand movements without bells. The courtyard is free after six if we want to hear the actual notes."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 4,
+      "speaker": "F",
+      "startChar": 0,
+      "endChar": 126,
+      "exactQuote": "Start with that change upstairs. After six, I’ll take the remaining players outside to hear how the last notes sound together."
+    }
+  ],
+  "topic": "daily"
+}
