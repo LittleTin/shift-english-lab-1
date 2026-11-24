@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "testId": "test-10",
+  "scope": [
+    3
+  ],
+  "status": "Validated authoring batch; not deployed",
+  "sourceBase": "c2b20fcc207f841eef807c309c627cbd4dac2267",
+  "integrationBase": "5641a9621a4c744ffddf3ed0370b418258a7f6ec",
+  "items": [
+    {
+      "number": 3,
+      "key": "A",
+      "difficulty": "intermediate",
+      "source": {
+        "authoring/test-10/groups/t10-g003/group.json": "9cc62ddecb9cfe3e70e292e52a495b16df0247f2d50351a7206c40f4c8cff938",
+        "authoring/test-10/questions/Q003/question.json": "d41d30c8a9619a2ab001f07d550d274e30824d1be59db3a5ebcca8d299d2b5ca",
+        "authoring/test-10/questions/Q003/media.json": "a327a269901f80125af5b51bcfd682f26e89236a48afd771ca6881658fabeaea"
+      },
+      "visualSha256": "76b4e7fb6bee08f60beb3c9d8ee05136ec8877b00b057b95c3fbf5d867392049",
+      "blindVisualReceiptSha256": "a159e13a208230ca5c574dda60d9eba32730f8bfdddb5b8cce0ac6cb603a490a",
+      "practiceFormal": {
+        "formal": {
+          "sha256": "dcbd9452eaf8a38b9c0d8e271dbc65c77ddd2e9fb54dfe09b0ecd7cf4d386553",
+          "samples": 1910188,
+          "phase": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 135868,
+              "peakLsb": 16696,
+              "inputPcmSha256": "8e94624a2e864d8a49d29bf9d31b96372563e6f114e85d919a605166a57ceb1a"
+            },
+            {
+              "role": "gap",
+              "startSample48k": 135868,
+              "endSample48k": 152668,
+              "peakLsb": 1,
+              "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+            },
+            {
+              "role": "passage",
+              "startSample48k": 152668,
+              "endSample48k": 1430188,
+              "peakLsb": 21631,
+              "inputPcmSha256": "a7d9b5a21d07db932d05955e8bbd6fc6e2af71f4f4e42f8155795566259d23f8"
+            },
+            {
+              "role": "answer",
+              "startSample48k": 1430188,
+              "endSample48k": 1814188,
+              "peakLsb": 0,
+              "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1814188,
+              "endSample48k": 1910188,
+              "peakLsb": 0,
+              "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            }
+          ]
+        },
+        "practice": {
+          "sha256": "639b697ba85b704858ce8c2281bc7d00126fe34093e9498943a0e24ec7daaa0d",
+          "samples": 1469520,
+          "phase": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 1373520,
+              "peakLsb": 21248,
+              "inputPcmSha256": "a7d9b5a21d07db932d05955e8bbd6fc6e2af71f4f4e42f8155795566259d23f8"
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1373520,
+              "endSample48k": 1469520,
+              "peakLsb": 0,
+              "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            }
+          ]
+        }
+      },
+      "speechRecognizers": {
+        "whisper-small.json": "10d3acaecb64c64ab0d736e192d172888cf16bad5876b05adfe767391fa03774",
+        "whisper-base.json": "2597e91f2fb613080bd7ac03add3249617f6e58e352411334d2e9f9e86e90756",
+        "zipformer.json": "e425f4398b93cf4ba7975b59b1b96f90502a36a22a19713627db795ff627bb3f"
+      }
+    }
+  ],
+  "native": {
+    "fixtureSha256": "507f254932a4d4c738b6a1364ce2f22eba07df0b16188e5a011f70deba664c83",
+    "formal": {
+      "initial": 0.154009,
+      "transition": 0.028054,
+      "rate": 1,
+      "image": {
+        "loaded": true,
+        "natural": 1200,
+        "src": "assets/scenes/test-10/test10-p1-003.jpg",
+        "width": 402
+      },
+      "opts": [
+        "A\nChoose A",
+        "B\nChoose B",
+        "C\nChoose C",
+        "D\nChoose D"
+      ],
+      "pause": 0.098732,
+      "still": 0.098732,
+      "resume": 0.345401
+    },
+    "practice": {
+      "old": 0.148462,
+      "reset": 0,
+      "started": 0.145205,
+      "pause": 0.185904,
+      "still": 0.185904,
+      "resume": 0.43649,
+      "image": {
+        "loaded": true,
+        "natural": 1200,
+        "src": "assets/scenes/test-10/test10-p1-003.jpg",
+        "width": 402
+      },
+      "opts": [
+        "A\nChoose A",
+        "B\nChoose B",
+        "C\nChoose C",
+        "D\nChoose D"
+      ]
+    },
+    "mobile": {
+      "natural": 1200,
+      "scroll": 360,
+      "vw": 360,
+      "width": 278,
+      "outer": 375,
+      "choices": 4
+    }
+  },
+  "recognitionNotes": "Whisper Small confirms A through D exactly in both final files; Zipformer independently confirms all substantive alternatives, including ajar. Whisper Base joins gate ajar as gated jar but supports A through C and confirms the cue. No voice or photo changes after candidate verification."
+}
