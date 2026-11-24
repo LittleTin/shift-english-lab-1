@@ -1,0 +1,59 @@
+{
+  "id": "t09-q050",
+  "testId": "test-09",
+  "number": 50,
+  "part": 3,
+  "groupId": "t09-g050",
+  "revision": 1,
+  "prompt": "Why should the woman not take her sheet now?",
+  "promptZh": "女子為什麼不該現在就把紙帶走？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The sheet needs to be cut to fit a tray.",
+      "zh": "紙要剪小才能放進托盤。",
+      "whyZh": "沒有尺寸問題；紙還黏著布。"
+    },
+    {
+      "id": "B",
+      "text": "It still cannot be lifted off the cloth cleanly.",
+      "zh": "紙目前還不能完整地從布上拿起來。",
+      "whyZh": "上面雖乾，底下還黏著；能不彎折拿起的紙才能移到托盤。"
+    },
+    {
+      "id": "C",
+      "text": "She has already written her name on the paper.",
+      "zh": "她已把名字寫在紙上。",
+      "whyZh": "標名在稍後；此時不能取走是因為黏住。"
+    },
+    {
+      "id": "D",
+      "text": "The workshop is already closed.",
+      "zh": "工作坊已經結束。",
+      "whyZh": "女子說她須在工作坊結束前走，現在並未結束。"
+    }
+  ],
+  "answer": "B",
+  "difficulty": "intermediate",
+  "explanationZh": "上面雖乾，底下還黏著；能不彎折拿起的紙才能移到托盤。",
+  "evidence": "Can I take this sheet with me now? The top feels dry, but the bottom is still stuck to the cloth. / Leave it flat on the cloth for now. The two empty trays by the door are for sheets that lift off without bending.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "F",
+      "startChar": 0,
+      "endChar": 97,
+      "exactQuote": "Can I take this sheet with me now? The top feels dry, but the bottom is still stuck to the cloth."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 2,
+      "speaker": "M",
+      "startChar": 0,
+      "endChar": 113,
+      "exactQuote": "Leave it flat on the cloth for now. The two empty trays by the door are for sheets that lift off without bending."
+    }
+  ],
+  "topic": "daily"
+}

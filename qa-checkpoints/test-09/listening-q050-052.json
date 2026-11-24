@@ -1,0 +1,228 @@
+{
+  "group": "t09-g050",
+  "status": "Authoring batch accepted; unreleased.",
+  "sourceGroupSha256": "91d624dd170aadf5479ce516574d8dc40ad46a328d0b3b9a34336c844159f192",
+  "questions": [
+    {
+      "q": 50,
+      "questionId": "t09-q050",
+      "uuid": "95d1650e-0bef-5f3c-b888-20c4a69471d3",
+      "qSha256": "e6ff72beb228e2161b5a4dc9e4e988327e594ab475f30802ca68a2435591d6ef",
+      "sidecarSha256": "256f42bff14d442ae192d2b3a115fdd0b9f8b70daa205d4e0bdc9ba177e3c323"
+    },
+    {
+      "q": 51,
+      "questionId": "t09-q051",
+      "uuid": "9e8bf1ca-9d19-563c-bc0a-337ecb12ea56",
+      "qSha256": "18b58b357f4e95f1deb9df3de02161a22525a67fe2ff8a84bcf85df047ecdbe3",
+      "sidecarSha256": "93b946250301110dbc58c91db6001f504add33c4c0349668ee592caae17e8e35"
+    },
+    {
+      "q": 52,
+      "questionId": "t09-q052",
+      "uuid": "ad81ef3d-8cf4-5d0d-a1a6-9bad45bac2f5",
+      "qSha256": "e4fdf02b2847d0944ed00e6df1efb7257e3981e2251cc87515623e6985225980",
+      "sidecarSha256": "8a1d282e0d00b910b1c569c2cba5fe1160c77bcfcde181e393228b02a7650297"
+    }
+  ],
+  "mediaPaths": [
+    {
+      "url": "audio/formal-groups/test-09/t09-g050.ogg",
+      "source": "test-09/groups/t09-g050/media/audio/formal-groups/test-09/t09-g050.ogg"
+    },
+    {
+      "url": "audio/practice-groups/test-09/t09-g050.ogg",
+      "source": "test-09/groups/t09-g050/media/audio/practice-groups/test-09/t09-g050.ogg"
+    }
+  ],
+  "mediaManifestSha256": "98f4bec09fc5244dc304a6d3f6ba3e1f2ed52824b907cf1fcd0b7788a2c46199",
+  "integrationBase": "811020f65c174e9708d625ed6015a73815f7bbcf",
+  "appSha256": "eebd55c330ca4f52584d893a3096748dd8afc062f6232ad7bc01de395e450a62",
+  "candidateEvidenceSha256": "2f7b56e09c20b9b563d6db09d070ff59dad95730ace0def38dfbc09aac30af67",
+  "sourceCutMapSha256": "b316697dbbf46e693c1313561f7133a919c49dc13b4332f199aedeaf5005f1e5",
+  "sourcePreflightSha256": "c8d34460f1b41c9b493faabb63aaad762260307a70c1a74046777e94b52259a9",
+  "decodedAsrSha256": {
+    "whisper-small.json": "b6cd484da61fe02d090ede7d426c7ce0bea1087f06e3effc7f300926aa9ea44b",
+    "zipformer.json": "e1d3da5fe0ba826c157b67189d93112dd85f5d97521d4c6a1ccc53b35480a7bb",
+    "targeted-evidence-base.json": "3c3281bbed163c73e0a758a8c54a15db71f0da722122992156e13c5d7d357438"
+  },
+  "media": {
+    "formal": {
+      "file": "t09-g050-formal.ogg",
+      "sha256": "de3f1f3236207a95c998b075d1f2d8e2a441144f6ca88800c874d42e7e8bfe92",
+      "samples48k": 4056024,
+      "halfSecondGuardPeaksLsb": [
+        0,
+        1
+      ],
+      "timeline": [
+        {
+          "role": "gap",
+          "startSample48k": 0,
+          "endSample48k": 96000,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "cue",
+          "startSample48k": 96000,
+          "endSample48k": 307200,
+          "inputPcmSha256": "8dbbde8d2ce9dd91d9589c73f693deafd728f92fcdf5986e4819b76774610dfc"
+        },
+        {
+          "role": "gap",
+          "startSample48k": 307200,
+          "endSample48k": 324000,
+          "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+        },
+        {
+          "role": "passage",
+          "startSample48k": 324000,
+          "endSample48k": 1893600,
+          "inputPcmSha256": "d8a6653a2aa418da1b608d6668f8fd2bcbf388b831115d0aa613ec8f7bc88af7",
+          "turnRanges48k": [
+            [
+              324000,
+              648000
+            ],
+            [
+              648000,
+              988800
+            ],
+            [
+              988800,
+              1293600
+            ],
+            [
+              1293600,
+              1893600
+            ]
+          ]
+        },
+        {
+          "role": "stem:50",
+          "startSample48k": 1893600,
+          "endSample48k": 2140104,
+          "inputPcmSha256": "c850c11550b0051645aeb97bef1cdc60badb825e146c518cf842e666f57eb7c7"
+        },
+        {
+          "role": "answer:50",
+          "startSample48k": 2140104,
+          "endSample48k": 2524104,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "stem:51",
+          "startSample48k": 2524104,
+          "endSample48k": 2881224,
+          "inputPcmSha256": "e86d7e288375f3f5067575555c51b3ca86fa6f6b489ebaef25722ff5e279322e"
+        },
+        {
+          "role": "answer:51",
+          "startSample48k": 2881224,
+          "endSample48k": 3265224,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "stem:52",
+          "startSample48k": 3265224,
+          "endSample48k": 3576024,
+          "inputPcmSha256": "43254b73c336987e3f41aad041b9164ac5393abf9b6d6a44a72051374e2794d8"
+        },
+        {
+          "role": "answer:52",
+          "startSample48k": 3576024,
+          "endSample48k": 3960024,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "gap",
+          "startSample48k": 3960024,
+          "endSample48k": 4056024,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        }
+      ]
+    },
+    "practice": {
+      "file": "t09-g050-practice.ogg",
+      "sha256": "bf49b1516e51b1930dfdcb235e4140635c0c5e9e3943e9982ceb5fa0441c6c84",
+      "samples48k": 1761600,
+      "halfSecondGuardPeaksLsb": [
+        0,
+        1
+      ],
+      "timeline": [
+        {
+          "role": "gap",
+          "startSample48k": 0,
+          "endSample48k": 96000,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "passage",
+          "startSample48k": 96000,
+          "endSample48k": 1665600,
+          "inputPcmSha256": "d8a6653a2aa418da1b608d6668f8fd2bcbf388b831115d0aa613ec8f7bc88af7",
+          "turnRanges48k": [
+            [
+              96000,
+              420000
+            ],
+            [
+              420000,
+              760800
+            ],
+            [
+              760800,
+              1065600
+            ],
+            [
+              1065600,
+              1665600
+            ]
+          ]
+        },
+        {
+          "role": "gap",
+          "startSample48k": 1665600,
+          "endSample48k": 1761600,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        }
+      ]
+    }
+  },
+  "semanticChecks": {
+    "50": "B: bottom still stuck to the cloth, leave it flat",
+    "51": "D: name on small holder associated with cloth and explicit no writing on the paper; proposed storage is until tomorrow",
+    "52": "A: leave sheet flat on its cloth and staff place it on a shelf to dry; today’s pickup trays are not for her"
+  },
+  "recognitionScope": "R1/R2 discarded on the ambiguous object. Exact R3 both modes unanimously decode holder, associated cloth, explicit do not write on the paper, overnight and shelf. Secondary models vary on the descriptive verb grips but not on the identified holder or the scoring contrast. Targeted Whisper-base confirms shelf to dry in both. Formal question stem 51 distinctly says cloth clip.",
+  "native": {
+    "engine": "Cloud Chromium, exact private fixture",
+    "fixtureSha256": "83bb9cf72c547a1318f1cbd84794f4a5ffda2f94723b251f3ffc5d25f9cca1f4",
+    "formal": {
+      "priorNearEnd": 86.878119,
+      "newAutomatic": 11.261528,
+      "initial": 0,
+      "firstSampled": 0.109936,
+      "paused": 11.324562,
+      "whileStillPaused": 11.324562,
+      "afterResume": 11.56628,
+      "rate": 1,
+      "nextDisabled": true,
+      "transcriptHidden": true
+    },
+    "practice": {
+      "previous": 0.084206,
+      "reset": 0,
+      "firstSampled": 0.123875,
+      "paused": 0.168219,
+      "whileStillPaused": 0.168219,
+      "afterResume": 0.394674
+    },
+    "threeDisplayed": [
+      50,
+      51,
+      52
+    ]
+  }
+}

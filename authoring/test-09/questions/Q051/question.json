@@ -1,0 +1,59 @@
+{
+  "id": "t09-q051",
+  "testId": "test-09",
+  "number": 51,
+  "part": 3,
+  "groupId": "t09-g050",
+  "revision": 3,
+  "prompt": "Why is the cloth clip a better place to put the woman’s name than the paper itself?",
+  "promptZh": "為什麼夾布的夾子比紙本身更適合標註女子的姓名？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The sheet is already dry and the clip tells her which tray to use.",
+      "zh": "紙已乾，夾子會指示她用哪個托盤。",
+      "whyZh": "紙底仍黏住，標名也不是為了分配托盤。"
+    },
+    {
+      "id": "B",
+      "text": "The paper will be taken home now and the name is only for the other tray.",
+      "zh": "紙現在要帶回去，姓名只是給另一個托盤用。",
+      "whyZh": "她將紙留到隔天，也不使用當日取件托盤。"
+    },
+    {
+      "id": "C",
+      "text": "The name tells staff to move the sheet without its cloth.",
+      "zh": "姓名是通知工作人員搬紙時不要連布一起。",
+      "whyZh": "紙目前應平放在布上，不應單獨從布上拿起。"
+    },
+    {
+      "id": "D",
+      "text": "It identifies the sheet left overnight without marking the sheet itself.",
+      "zh": "可辨認留到明天的作品，又不把名字寫在作品上。",
+      "whyZh": "女子須提早離開且想隔天再取；指定在夾布的夾子上標名，使紙本身不必被寫上名字。"
+    }
+  ],
+  "answer": "D",
+  "difficulty": "intermediate",
+  "explanationZh": "女子須提早離開且想隔天再取；指定在夾布的夾子上標名，使紙本身不必被寫上名字。",
+  "evidence": "Can I leave it here until tomorrow? / Write your name on the little holder that grips the cloth. Do not write on the paper.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 3,
+      "speaker": "F",
+      "startChar": 41,
+      "endChar": 76,
+      "exactQuote": "Can I leave it here until tomorrow?"
+    },
+    {
+      "sourceField": "turns",
+      "turn": 4,
+      "speaker": "M",
+      "startChar": 5,
+      "endChar": 90,
+      "exactQuote": "Write your name on the little holder that grips the cloth. Do not write on the paper."
+    }
+  ],
+  "topic": "daily"
+}
