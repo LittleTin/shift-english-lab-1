@@ -1,0 +1,148 @@
+{
+  "testId": "test-09",
+  "stage": "One independently reviewed authoring group only; does not release a catalog, full exam, or public website.",
+  "questions": [
+    {
+      "number": 16,
+      "id": "t09-q016",
+      "uuid": "d9c69ae2-7f88-5d0f-b7fd-eec126afd701",
+      "questionSha256": "57c7c6ec19fe820ae591a3c00a5661a9f570a4afe8a304b930be04c919b608ad",
+      "groupSha256": "8568f86fab975388142204316873a35a4e93dc3bdd52e7d534e1abbe86eb60da",
+      "sidecarSha256": "b0ac73f00b256c93b8e0ebe3e6a6b303d88d9e0959eda0055f74be170cdc8693",
+      "nativeMediaManifestSha256": "342b9e3a0c62fa43b6b8f7defab9c1050e39a9d3813a3dee00b83a0f5f484a24"
+    }
+  ],
+  "integrationBase": "4dc7dc4254350024d98c20bd0be5ce484cc334d7",
+  "appSha256": "62ff3db3a5fde82100cf3cb4eb125139cd591a1440b65b59d58a75b3ec831600",
+  "mediaEvidenceSha256": "2d7032889b1f79344e997efb238e442a8bd42a6c98133ae4f9d664c6c1a41ba7",
+  "independentRecognition": {
+    "whisperSha256": "086b98fd1c11bde9d28c1cf22b5a6cbee6a1d387b78e45c19a4a16635bed6e7d",
+    "zipformerSha256": "752201be0884f1ab617e21537f78e50b504e2f2ac0a22e429616a767b5384987",
+    "selection": "B checks the outlet after the test bench lost power while the lights remained on; A discusses an order and C discusses turning room lights off at departure. All original independent scripts and bilingual explanations unchanged. Both final Opus decoded: exact scored prompt plus all response labels/content, formal exact Number 16, no graded words in the cue. The independent practice model has an isolated silence artifact at ~0.04s; first half-second physical peak 0 PCM and Whisper has no spoken prefix."
+  },
+  "q016Media": {
+    "lockedReferenceSlices": {
+      "cue": {
+        "sourceSha256": "28e30c2961d9f7f7e5e969799e87c4ce4ea43a0dfa2f558a6166a6058deb8c43",
+        "halfOpen48k": [
+          96960,
+          146738
+        ],
+        "cutSha256": "87c81485730122d868d3b9ae8be4674e3e7e8a0d891f9feffc016aa65fae4274"
+      }
+    },
+    "sourceSha256": "03aaf410dfac07ae64b86473469b1bc3b0d4772e541ab7cb35dc83facbe12715",
+    "practice": {
+      "file": "q016-practice.ogg",
+      "encodedSha256": "776b8ad1b8938ac33b00a52ffdfce2e548979305383840250dee27bdfe2c09a7",
+      "samples48k": 1105440,
+      "physicalGuardPeakFirstLast500ms": [
+        0,
+        1
+      ],
+      "parts": [
+        {
+          "role": "guard lead",
+          "startSample48k": 0,
+          "endSample48k": 96000,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "same shared source",
+          "startSample48k": 96000,
+          "endSample48k": 1009440,
+          "inputPcmSha256": "04953b17a1e075dd702fdb88b7960e512d35553f6d6d2fabb2b48b050a6ea4e4"
+        },
+        {
+          "role": "guard tail",
+          "startSample48k": 1009440,
+          "endSample48k": 1105440,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        }
+      ]
+    },
+    "formal": {
+      "file": "q016-formal.ogg",
+      "encodedSha256": "3aa0290f06a0b055918154490784e3b3232f68f8d968f6109af685fd610f10be",
+      "samples48k": 1556018,
+      "physicalGuardPeakFirstLast500ms": [
+        0,
+        1
+      ],
+      "parts": [
+        {
+          "role": "guard lead",
+          "startSample48k": 0,
+          "endSample48k": 96000,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "cue",
+          "startSample48k": 96000,
+          "endSample48k": 145778,
+          "inputPcmSha256": "87c81485730122d868d3b9ae8be4674e3e7e8a0d891f9feffc016aa65fae4274"
+        },
+        {
+          "role": "cue-to-prompt pause",
+          "startSample48k": 145778,
+          "endSample48k": 162578,
+          "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+        },
+        {
+          "role": "same shared source",
+          "startSample48k": 162578,
+          "endSample48k": 1076018,
+          "inputPcmSha256": "04953b17a1e075dd702fdb88b7960e512d35553f6d6d2fabb2b48b050a6ea4e4"
+        },
+        {
+          "role": "draft answer window",
+          "startSample48k": 1076018,
+          "endSample48k": 1460018,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "guard tail",
+          "startSample48k": 1460018,
+          "endSample48k": 1556018,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        }
+      ]
+    }
+  },
+  "actualChromium": {
+    "formalPlayback": [
+      0.142227,
+      0.19022,
+      0.19022,
+      0.414146
+    ],
+    "practicePlayback": [
+      0.160324,
+      0.220993,
+      0.220993,
+      0.457306
+    ],
+    "cursorDefinition": [
+      "playing",
+      "manually paused",
+      "confirmed stationary while paused",
+      "continued from cursor"
+    ],
+    "practiceSwitchFromBoundQ015": {
+      "oldTime": 0.128058,
+      "postSwitchTime": 0,
+      "firstQ016PlayingTime": 0.142078
+    },
+    "naturalFormalAdvanceFromBoundQ015": {
+      "oldTime": 0.126397,
+      "firstQ016PlayingTime": 0.107406,
+      "rate": 1,
+      "manualPauseConfirmed": 6.369553
+    },
+    "referenceQ015OriginalBranchMediaVerified": true,
+    "modeSeparation": true,
+    "allFormalsRate": 1,
+    "physicalPhoneOrFullExam": false
+  },
+  "heldOthers": "Q017 B label remains uncertain and excluded; Q018 exact mode playback and ASR independently verified; intact neighboring accepted group not yet available."
+}

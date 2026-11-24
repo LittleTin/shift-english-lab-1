@@ -1,0 +1,47 @@
+{
+  "id": "t09-q016",
+  "testId": "test-09",
+  "number": 16,
+  "part": 2,
+  "groupId": "t09-g016",
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽錄音，選出最適當的回應。",
+  "spokenPrompt": "The test bench just lost power, but the lights are still on.",
+  "spokenPromptZh": "測試台剛斷電，但照明還亮著。",
+  "options": [
+    {
+      "id": "A",
+      "text": "We ordered those lights on Tuesday.",
+      "zh": "那些燈是我們星期二訂的。",
+      "whyZh": "只談採購時間，沒回應測試台斷電。"
+    },
+    {
+      "id": "B",
+      "text": "I’ll check the outlet before we start the next test.",
+      "zh": "開始下一項測試前，我先檢查插座。",
+      "whyZh": "主動檢查測試台供電；室內燈仍亮，不表示該插座有電。"
+    },
+    {
+      "id": "C",
+      "text": "You can turn the lights off when you leave.",
+      "zh": "你離開時可以把燈關掉。",
+      "whyZh": "只談之後關燈，未處理當下測試台無電。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "主動檢查測試台供電；室內燈仍亮，不表示該插座有電。",
+  "evidence": "The test bench just lost power, but the lights are still on. / I’ll check the outlet before we start the next test.",
+  "revision": 1,
+  "tags": [
+    "manufacturing",
+    "question_response"
+  ],
+  "vocabulary": [
+    {
+      "term": "test bench",
+      "zh": "測試台"
+    }
+  ]
+}
