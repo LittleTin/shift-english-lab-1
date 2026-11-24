@@ -1,0 +1,59 @@
+{
+  "id": "t09-q096",
+  "testId": "test-09",
+  "number": 96,
+  "part": 4,
+  "groupId": "t09-g095",
+  "revision": 2,
+  "prompt": "Both the green sign and an unphotographed sign must be prepared. Which plan follows the instructions?",
+  "promptZh": "綠色招牌與另一面還未拍照的招牌都要處理。哪個做法符合指示？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Start both signs and photograph only the one with similar-looking letters.",
+      "zh": "先處理兩面招牌，只拍下字母外觀相近的那一面。",
+      "whyZh": "還沒拍照的招牌必須先記下灰塵標出的原位，和字母看起來是否相近無關。"
+    },
+    {
+      "id": "B",
+      "text": "Start the other sign while waiting for a first photograph of the green one.",
+      "zh": "等待綠色招牌首次拍照時，先處理另一面招牌。",
+      "whyZh": "綠色招牌已拍照，可以先處理；另一面未拍照，不可先清除灰塵。"
+    },
+    {
+      "id": "C",
+      "text": "Start the green sign now and photograph the other sign before removing its dust.",
+      "zh": "現在先處理綠色招牌，另一面則先拍照再清除灰塵。",
+      "whyZh": "灰塵顯示字母原位，清除之前要先拍照；綠色招牌已拍過，因此可以立即進行。"
+    },
+    {
+      "id": "D",
+      "text": "Photograph the green sign again and clean the other sign before photographing it.",
+      "zh": "替綠色招牌再拍一次，另一面先清潔再拍照。",
+      "whyZh": "另一面應在清潔前拍照，否則看不到灰塵標出的原位；綠色招牌不必等重拍。"
+    }
+  ],
+  "answer": "C",
+  "difficulty": "intermediate",
+  "explanationZh": "灰塵顯示字母原位，清除之前要先拍照；綠色招牌已拍過，因此可以立即進行。",
+  "evidence": "Dust is useful here: it shows where each letter rested. Take a picture before you remove it. / I’ve already photographed the green sign, so that one can go ahead.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "F",
+      "startChar": 71,
+      "endChar": 163,
+      "exactQuote": "Dust is useful here: it shows where each letter rested. Take a picture before you remove it."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "F",
+      "startChar": 164,
+      "endChar": 231,
+      "exactQuote": "I’ve already photographed the green sign, so that one can go ahead."
+    }
+  ],
+  "topic": "manufacturing"
+}
