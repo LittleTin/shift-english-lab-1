@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "testId": "test-10",
+  "scope": [
+    29,
+    30
+  ],
+  "status": "Validated authoring batch; not deployed",
+  "sourceBase": "b622f45a3b9bcdaa8ae8bf8749acf29d4bb88d01",
+  "integrationBase": "5641a9621a4c744ffddf3ed0370b418258a7f6ec",
+  "items": [
+    {
+      "number": 29,
+      "id": "t10-q029",
+      "answer": "B",
+      "difficulty": "intermediate",
+      "independentEvidence": "don't put the box back in the cupboard yet",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q029/question.json": "056aedde862066cd02d30b1f2ebaadb1c1bd163880248576ea9833c5cccc4893",
+        "authoring/test-10/questions/Q029/media.json": "c68116492924db73d50c15013a4de8e5b9ae8385c29f5da9645cfa372d4cfad2",
+        "authoring/test-10/groups/t10-g029/group.json": "1c9e437ae47ca6bfe197c9c8b2b754fde68765319b60b877c3774e6bd6c4723b"
+      },
+      "opus": {
+        "practice": {
+          "sha256": "cf015a14a05aaea452f8d5fa283e20644e9d890539f02a29b2965ae9ff7c3bf2",
+          "samples48k": 1026000,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 1,
+              "rmsLsb": 0.02458
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 930000,
+              "peakLsb": 24230
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 930000,
+              "endSample48k": 1026000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        },
+        "formal": {
+          "sha256": "799e10d36002551e00e8d371a8de7f99d3fbe25850cbdfa17a42ef920d18ac4d",
+          "samples48k": 1481482,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 1,
+              "rmsLsb": 0.00456
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 150682,
+              "peakLsb": 27061
+            },
+            {
+              "role": "gap",
+              "startSample48k": 150682,
+              "endSample48k": 167482,
+              "peakLsb": 2,
+              "rmsLsb": 0.49815
+            },
+            {
+              "role": "passage",
+              "startSample48k": 167482,
+              "endSample48k": 1001482,
+              "peakLsb": 23875
+            },
+            {
+              "role": "answer",
+              "startSample48k": 1001482,
+              "endSample48k": 1385482,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1385482,
+              "endSample48k": 1481482,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        }
+      },
+      "recognizers": {
+        "whisper-small.json": "3b90d1cc8c071060638479312997ec8f993ebddf1c7d63ae01b5dc89050142ab",
+        "whisper-base.json": "99375da8970802a4b54e5b08246ef4bbf367935b2998ea620f32688c93db7e7d",
+        "zipformer.json": "873fa3abb21597a475d667bb8676fdf3067d3ba0a36e1df3bf065a4e5a21573b"
+      }
+    },
+    {
+      "number": 30,
+      "id": "t10-q030",
+      "answer": "A",
+      "difficulty": "intermediate",
+      "independentEvidence": "depends on what they're running",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q030/question.json": "c4c8410ef8826ed4358a7c9b2767d50aca17fd511cba14a0248572157300d6d2",
+        "authoring/test-10/questions/Q030/media.json": "b210443a49398cbd6015e2c7f642e9b04bce64784a136a26f4c50caaafb8e44e",
+        "authoring/test-10/groups/t10-g030/group.json": "cb05a3d4c428e4c09d3c7c2cdba013c0e453756c3ecdb3c28789b8e6f1662fa2"
+      },
+      "opus": {
+        "practice": {
+          "sha256": "e8cc0ccdfb0e96b6436fa05025f922c188e75b4966bc2ef07d8a9eec428e504a",
+          "samples48k": 1248000,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 1152000,
+              "peakLsb": 23140
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1152000,
+              "endSample48k": 1248000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        },
+        "formal": {
+          "sha256": "2f092361dafa3b2b27dadf4cfa0b53a1133b39e969914a247cb0cae7a693e0a2",
+          "samples48k": 1691568,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 138768,
+              "peakLsb": 15912
+            },
+            {
+              "role": "gap",
+              "startSample48k": 138768,
+              "endSample48k": 155568,
+              "peakLsb": 5,
+              "rmsLsb": 1.04801
+            },
+            {
+              "role": "passage",
+              "startSample48k": 155568,
+              "endSample48k": 1211568,
+              "peakLsb": 23687
+            },
+            {
+              "role": "answer",
+              "startSample48k": 1211568,
+              "endSample48k": 1595568,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1595568,
+              "endSample48k": 1691568,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        }
+      },
+      "recognizers": {
+        "whisper-small.json": "2332b84ffbcc94aaef696db2d6d6d41d18fe07d547cb6d74b6abc730d7a577c9",
+        "whisper-base.json": "f7ae5153ae9d79c79c6371ea985a43edca8f5c7bdd89d35d6067951dd1007f2b",
+        "zipformer.json": "a6e9a4f7e2fd9aea57222a5883ea782d773f1369306d0562c929753d2d739711"
+      }
+    }
+  ],
+  "native": {
+    "fixtureSha256": "c397739bb059ea215f37ace05bacb3572e6aaabde20326fa8da983c54dcebb83",
+    "formal": {
+      "previousControlToTargetObservedAt": 1.27078,
+      "directTargetStart": 0.160709,
+      "naturalNext": 0.00976,
+      "fixedRate": 1,
+      "paused": [
+        0.227135,
+        0.034917
+      ],
+      "still": [
+        0.227135,
+        0.034917
+      ],
+      "resumed": [
+        0.485526,
+        0.284499
+      ]
+    },
+    "practice": {
+      "reset": [
+        0,
+        0
+      ],
+      "newSources": [
+        "audio/practice-groups/test-10/t10-g029.ogg",
+        "audio/practice-groups/test-10/t10-g030.ogg"
+      ],
+      "first": [
+        0.11651,
+        0.149238
+      ],
+      "paused": [
+        0.156977,
+        0.18894
+      ],
+      "still": [
+        0.156977,
+        0.18894
+      ],
+      "resumed": [
+        0.414741,
+        0.43693
+      ],
+      "previousFromStart": 0.153572
+    }
+  },
+  "recognitionNotes": "Q029 R1 prompt ambiguity (said versus sit) led to prompt-only revision. The answers retain exact original PCM from quiet cut 206400; all three independent engines match the new complete prompt and decisive answer in both modes, with ASR label punctuation normalized. Q030 exact original audio is retained; both Whisper engines independently match its stem including 80 percent and the best response, additionally confirmed by Zipformer. Native formal used a direct Q029 playback and a natural Q030 transition, both near zero."
+}
