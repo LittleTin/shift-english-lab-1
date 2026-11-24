@@ -1,0 +1,47 @@
+{
+  "id": "t09-q027",
+  "testId": "test-09",
+  "number": 27,
+  "part": 2,
+  "groupId": "t09-g027",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽錄音，選出最適當的回應。",
+  "spokenPrompt": "Should I tighten these hinges before or after I line up the two panels?",
+  "spokenPromptZh": "我該先把兩片面板對齊再鎖緊鉸鏈，還是先鎖緊？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The panels came in the same box.",
+      "zh": "兩片面板裝在同一個箱子裡送來。",
+      "whyZh": "說明包裝情況，沒有回答操作先後。"
+    },
+    {
+      "id": "B",
+      "text": "Get the panels straight first.",
+      "zh": "先把兩片面板對齊。",
+      "whyZh": "先對齊就是回答應在對齊後才鎖緊鉸鏈。"
+    },
+    {
+      "id": "C",
+      "text": "That screwdriver is on the bench.",
+      "zh": "那支螺絲起子在工作台上。",
+      "whyZh": "只說工具位置，沒回答先後順序。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "先對齊就是回答應在對齊後才鎖緊鉸鏈。",
+  "evidence": "Should I tighten these hinges before or after I line up the two panels? / Get the panels straight first.",
+  "revision": 1,
+  "tags": [
+    "manufacturing",
+    "question_response"
+  ],
+  "vocabulary": [
+    {
+      "term": "line up",
+      "zh": "對齊"
+    }
+  ]
+}
