@@ -1,0 +1,227 @@
+{
+  "group": "t09-g062",
+  "status": "Authoring batch accepted; unreleased.",
+  "sourceGroupSha256": "6660d9c95c0725632b7474fc5c04d5112e30d7ac004eb316a4c41751cf147e61",
+  "questions": [
+    {
+      "q": 62,
+      "questionId": "t09-q062",
+      "uuid": "e0b98eef-de29-5cea-b842-35c83441571f",
+      "qSha256": "d280bde70c2c3fcd71b14733e599d4be33669777aa7d7276717ba3f686019594",
+      "sidecarSha256": "4ddb32f1fff13fbf1cb232d340ae6d48082a0f1b76425da084cf079b6eeb1272"
+    },
+    {
+      "q": 63,
+      "questionId": "t09-q063",
+      "uuid": "cfff86f4-8214-5d26-8195-71ea601cbdc2",
+      "qSha256": "2d04391956cd28bf7ca8eff2e3d11c17f513067b6c9f66c0b8503863514d0ede",
+      "sidecarSha256": "76e23f01039cc8ba2e1fb63b0b2c2d9759d0c6787a20f48287c4e4218abe6032"
+    },
+    {
+      "q": 64,
+      "questionId": "t09-q064",
+      "uuid": "b42f9e46-54e8-5d4c-ac01-9bebe04c4e23",
+      "qSha256": "9d63b300c9085a024d18925033667d3597b7e7e8f3e413b04d6bf743b95b3556",
+      "sidecarSha256": "29a503f0bca60255e34adba3fe1c5baba0a8245a20604a8708267bfd24d604d6"
+    }
+  ],
+  "mediaPaths": [
+    {
+      "url": "audio/formal-groups/test-09/t09-g062.ogg",
+      "source": "test-09/groups/t09-g062/media/audio/formal-groups/test-09/t09-g062.ogg"
+    },
+    {
+      "url": "audio/practice-groups/test-09/t09-g062.ogg",
+      "source": "test-09/groups/t09-g062/media/audio/practice-groups/test-09/t09-g062.ogg"
+    }
+  ],
+  "mediaManifestSha256": "8b49cf8a9403c2b50cf852d75cd98c4585633633e06522eecbd18a965ccba21c",
+  "integrationBase": "811020f65c174e9708d625ed6015a73815f7bbcf",
+  "appSha256": "eebd55c330ca4f52584d893a3096748dd8afc062f6232ad7bc01de395e450a62",
+  "candidateEvidenceSha256": "01817650e279ffba781382a8cb5b7ee000799d6a5268419530d29ce2759c2066",
+  "sourceCutMapSha256": "e204b7bfa1cc9e4808c511fd86bf330547067fe3eb49728b24542be39b79c5c7",
+  "sourcePreflightSha256": "ff4281ee2c57a3afc41631558a01bab224735938e1857d33c3572cffaafa8c6f",
+  "decodedAsrSha256": {
+    "whisper-small.json": "03c473609babeba6fc0babf663bd632f040313052b569a4f382f3b6914aa7534",
+    "zipformer.json": "8e50763203e3b19c5903e8868afec712debae5bf6e96966cf7678ba27de63ff6"
+  },
+  "media": {
+    "formal": {
+      "file": "t09-g062-formal.ogg",
+      "sha256": "234afb28ee6d800db95acbb14a133fa0e6f58adaf07b93289c83a1d352cc3051",
+      "samples48k": 4242504,
+      "halfSecondGuardPeaksLsb": [
+        0,
+        1
+      ],
+      "timeline": [
+        {
+          "role": "gap",
+          "startSample48k": 0,
+          "endSample48k": 96000,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "cue",
+          "startSample48k": 96000,
+          "endSample48k": 323040,
+          "inputPcmSha256": "5e7c465079e22c76bf149d2f42d689a510d4bc7c66c3c88f8322a7fb954be7ed"
+        },
+        {
+          "role": "gap",
+          "startSample48k": 323040,
+          "endSample48k": 339840,
+          "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+        },
+        {
+          "role": "passage",
+          "startSample48k": 339840,
+          "endSample48k": 2128560,
+          "inputPcmSha256": "a2b51721c1d912d3849169950b5297124a3fc46b32713188e7e9616a779279e6",
+          "turnRanges48k": [
+            [
+              339840,
+              814080
+            ],
+            [
+              814080,
+              1295160
+            ],
+            [
+              1295160,
+              1691040
+            ],
+            [
+              1691040,
+              2128560
+            ]
+          ]
+        },
+        {
+          "role": "stem:62",
+          "startSample48k": 2128560,
+          "endSample48k": 2402064,
+          "inputPcmSha256": "6d96ca48ea7eebc58f13faeea9e720583e9b5d6887012dfac39617701ca3b9dd"
+        },
+        {
+          "role": "answer:62",
+          "startSample48k": 2402064,
+          "endSample48k": 2786064,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "stem:63",
+          "startSample48k": 2786064,
+          "endSample48k": 3073104,
+          "inputPcmSha256": "a0f1b5b46b7b7fccba6d0f9bf4602bb684ec640612b3f83aa4b1b50405b71e37"
+        },
+        {
+          "role": "answer:63",
+          "startSample48k": 3073104,
+          "endSample48k": 3457104,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "stem:64",
+          "startSample48k": 3457104,
+          "endSample48k": 3762504,
+          "inputPcmSha256": "c8efed73cd83d02b43f5ab23901770caffe1fb53d369b895a08d3b73b96224af"
+        },
+        {
+          "role": "answer:64",
+          "startSample48k": 3762504,
+          "endSample48k": 4146504,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "gap",
+          "startSample48k": 4146504,
+          "endSample48k": 4242504,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        }
+      ]
+    },
+    "practice": {
+      "file": "t09-g062-practice.ogg",
+      "sha256": "33c3c0cdefc3cbdc3defdc1aa02d01287c6f26f6b2ed8847384c189bb4fcc0fc",
+      "samples48k": 1980720,
+      "halfSecondGuardPeaksLsb": [
+        0,
+        1
+      ],
+      "timeline": [
+        {
+          "role": "gap",
+          "startSample48k": 0,
+          "endSample48k": 96000,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "passage",
+          "startSample48k": 96000,
+          "endSample48k": 1884720,
+          "inputPcmSha256": "a2b51721c1d912d3849169950b5297124a3fc46b32713188e7e9616a779279e6",
+          "turnRanges48k": [
+            [
+              96000,
+              570240
+            ],
+            [
+              570240,
+              1051320
+            ],
+            [
+              1051320,
+              1447200
+            ],
+            [
+              1447200,
+              1884720
+            ]
+          ]
+        },
+        {
+          "role": "gap",
+          "startSample48k": 1884720,
+          "endSample48k": 1980720,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        }
+      ]
+    }
+  },
+  "semanticChecks": {
+    "62": "B: the two cooking times apply to the full pan and the half recipe in the smaller pan.",
+    "63": "C: a photo through the sleeve may miss the pencil note hidden under the fold.",
+    "64": "A: take a second picture just for the note, keep it with the first, and write the two recipe versions separately."
+  },
+  "recognitionScope": "Both exact Opus modes independently recovered the same scored turns and numbers. Both models heard full pan and the smaller pan, and recorded half/halved the recipe; the latter is a spelling or inflection difference, not a different claim. Both recovered all exact formal question stems and numbered group cue.",
+  "native": {
+    "engine": "Cloud Chromium, exact private fixture",
+    "fixtureSha256": "aa05171612debc68f740ab29c51f68639a78fec57263887cb6b23dd8e247e88a",
+    "threeDisplayed": [
+      62,
+      63,
+      64
+    ],
+    "formal": {
+      "priorStillPlaying": 82.343947,
+      "newAutomatic": 11.649597,
+      "initial": 0,
+      "firstSampled": 0.165819,
+      "paused": 11.70365,
+      "whileStillPaused": 11.70365,
+      "afterResume": 11.941995,
+      "rate": 1,
+      "nextDisabled": true,
+      "transcriptHidden": true
+    },
+    "practice": {
+      "previous": 0.127281,
+      "reset": 0,
+      "firstSampled": 0.135657,
+      "paused": 0.203938,
+      "whileStillPaused": 0.203938,
+      "afterResume": 0.444657
+    }
+  }
+}

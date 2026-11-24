@@ -1,0 +1,59 @@
+{
+  "id": "t09-q062",
+  "testId": "test-09",
+  "number": 62,
+  "part": 3,
+  "groupId": "t09-g062",
+  "revision": 1,
+  "prompt": "Why should the booklet include both cooking times?",
+  "promptZh": "小冊子為什麼要收錄兩個烹調時間？",
+  "options": [
+    {
+      "id": "A",
+      "text": "One is the time needed to copy the recipe.",
+      "zh": "其中一個是抄寫食譜的時間。",
+      "whyZh": "兩個都是烹調時間，不是抄寫時間。"
+    },
+    {
+      "id": "B",
+      "text": "They apply to different amounts of the recipe.",
+      "zh": "兩個時間分別適用不同的食譜份量。",
+      "whyZh": "二十分鐘對應整盤，十五分鐘對應減半且改用小烤盤的版本。"
+    },
+    {
+      "id": "C",
+      "text": "The smaller pan takes longer to heat up.",
+      "zh": "小烤盤需要更久預熱。",
+      "whyZh": "對話沒有談預熱時間；小份量反而寫十五分鐘。"
+    },
+    {
+      "id": "D",
+      "text": "The first batch must cook for twenty minutes and then cook for fifteen more.",
+      "zh": "第一批須先煮二十分鐘，再加十五分鐘。",
+      "whyZh": "兩個時間屬不同版本，不能相加。"
+    }
+  ],
+  "answer": "B",
+  "difficulty": "intermediate",
+  "explanationZh": "二十分鐘對應整盤，十五分鐘對應減半且改用小烤盤的版本。",
+  "evidence": "That recipe card has two times on it. Grandma wrote twenty minutes in ink, and Dad wrote fifteen in pencil below it. Which one goes into our booklet? / Both, but don’t put them on the same line. Twenty is for a full pan. Dad halved the recipe when he used the smaller pan.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "M",
+      "startChar": 0,
+      "endChar": 149,
+      "exactQuote": "That recipe card has two times on it. Grandma wrote twenty minutes in ink, and Dad wrote fifteen in pencil below it. Which one goes into our booklet?"
+    },
+    {
+      "sourceField": "turns",
+      "turn": 2,
+      "speaker": "F",
+      "startChar": 0,
+      "endChar": 120,
+      "exactQuote": "Both, but don’t put them on the same line. Twenty is for a full pan. Dad halved the recipe when he used the smaller pan."
+    }
+  ],
+  "topic": "daily"
+}

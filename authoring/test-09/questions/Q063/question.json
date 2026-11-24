@@ -1,0 +1,59 @@
+{
+  "id": "t09-q063",
+  "testId": "test-09",
+  "number": 63,
+  "part": 3,
+  "groupId": "t09-g062",
+  "revision": 1,
+  "prompt": "What may be missing in a photo taken through the clear sleeve?",
+  "promptZh": "直接隔著透明套拍照，照片可能漏掉什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Grandma’s time written in ink.",
+      "zh": "奶奶用墨水寫的時間。",
+      "whyZh": "被折處遮住的是鉛筆註記，不是墨水字。"
+    },
+    {
+      "id": "B",
+      "text": "The printed name of the recipe.",
+      "zh": "食譜印好的名稱。",
+      "whyZh": "沒有說食譜印有名稱或名稱被擋住。"
+    },
+    {
+      "id": "C",
+      "text": "Dad’s time written in pencil.",
+      "zh": "爸爸用鉛筆寫的時間。",
+      "whyZh": "要掀開折處才能看到鉛筆註記，透明套會把它壓住。"
+    },
+    {
+      "id": "D",
+      "text": "The size of the larger pan stamped on the card.",
+      "zh": "卡片上蓋印的大烤盤尺寸。",
+      "whyZh": "沒有說卡片上有尺寸印記。"
+    }
+  ],
+  "answer": "C",
+  "difficulty": "intermediate",
+  "explanationZh": "要掀開折處才能看到鉛筆註記，透明套會把它壓住。",
+  "evidence": "That recipe card has two times on it. Grandma wrote twenty minutes in ink, and Dad wrote fifteen in pencil below it. Which one goes into our booklet? / I was planning to photograph the card first. I can see the pencil note if I lift the fold, but the clear sleeve presses it closed.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "M",
+      "startChar": 0,
+      "endChar": 149,
+      "exactQuote": "That recipe card has two times on it. Grandma wrote twenty minutes in ink, and Dad wrote fifteen in pencil below it. Which one goes into our booklet?"
+    },
+    {
+      "sourceField": "turns",
+      "turn": 3,
+      "speaker": "M",
+      "startChar": 0,
+      "endChar": 130,
+      "exactQuote": "I was planning to photograph the card first. I can see the pencil note if I lift the fold, but the clear sleeve presses it closed."
+    }
+  ],
+  "topic": "daily"
+}
