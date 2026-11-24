@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "testId": "test-10",
+  "scope": [
+    10
+  ],
+  "status": "Validated authoring batch; not deployed",
+  "sourceBase": "95f9d9899b2deff27e3706491051fc626b292e58",
+  "integrationBase": "5641a9621a4c744ffddf3ed0370b418258a7f6ec",
+  "items": [
+    {
+      "number": 10,
+      "id": "t10-q010",
+      "answer": "C",
+      "difficulty": "intermediate",
+      "independentEvidence": "written the weight on each label",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q010/question.json": "da9184b502b2da2527e4a36b2d914ceaed93a6a39081ebf363ce09f8ea48c6b6",
+        "authoring/test-10/questions/Q010/media.json": "75a1d47c2c7ef6b8ba85b73a6a24b32dbc56f1e6e5ca3ca8d20c1949f3f0a77a",
+        "authoring/test-10/groups/t10-g010/group.json": "7eb415d4521ab58c530db2611607c1e49e53106711b2c65b083c8ca2113755e0"
+      },
+      "opus": {
+        "practice": {
+          "sha256": "280d66cbd1d91781ee5c319d0d7ba432d4faf99ed21d9c5309c2787eab692657",
+          "samples48k": 912000,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 2,
+              "rmsLsb": 0.03028
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 816000,
+              "peakLsb": 20127
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 816000,
+              "endSample48k": 912000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        },
+        "formal": {
+          "sha256": "959756396a4d32bdc146cdacbdfd47ca3b73bb0d75d704b6ce5e43970753b03b",
+          "samples48k": 1352440,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 135640,
+              "peakLsb": 18502
+            },
+            {
+              "role": "gap",
+              "startSample48k": 135640,
+              "endSample48k": 152440,
+              "peakLsb": 6,
+              "rmsLsb": 1.22603
+            },
+            {
+              "role": "passage",
+              "startSample48k": 152440,
+              "endSample48k": 872440,
+              "peakLsb": 19385
+            },
+            {
+              "role": "answer",
+              "startSample48k": 872440,
+              "endSample48k": 1256440,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1256440,
+              "endSample48k": 1352440,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        }
+      },
+      "recognizers": {
+        "whisper-small.json": "91cf82fdefced167c01159112da35dd6aa2e2f40d890bebea01d3546238c668d",
+        "whisper-base.json": "8275359913cbb4fdac21674d104eacc482f0f05314a979ef4786ec8d17256bcb",
+        "zipformer.json": "1e7ba93170a4c3e2f00e2da111da5404f9b6f1648b73fd7ef68607a577d2afc0"
+      }
+    }
+  ],
+  "native": {
+    "fixtureSha256": "ba0a59f87b74796e2085fff1b6cb851cdefc03408de38f1fd66c8eb9af03736e",
+    "formal": {
+      "previousFromStart": 0.181604,
+      "natural": 20.79685,
+      "initialRate": 1,
+      "paused": 20.847198,
+      "samePaused": true,
+      "resumed": 21.111242
+    },
+    "practice": {
+      "previous": 0.185955,
+      "reset": 0,
+      "first": 0.180608,
+      "source": "audio/practice-groups/test-10/t10-g010.ogg",
+      "paused": 0.213477,
+      "still": 0.213477,
+      "resumed": 0.485123
+    }
+  },
+  "recognitionNotes": "R1 could be heard as “their weight”. Only the question prompt was recorded again (“we weigh them”), and all three unprompted models recover the corrected clause in both modes. The unchanged C option is independently recovered by multiple models per mode; Base once outputs “wait” (homophone). Number Ten cue verified. The three original response options were joined at original 170400 samples, in a quiet region, without any edit to their PCM."
+}
