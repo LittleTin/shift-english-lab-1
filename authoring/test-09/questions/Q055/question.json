@@ -1,0 +1,67 @@
+{
+  "id": "t09-q055",
+  "testId": "test-09",
+  "number": 55,
+  "part": 3,
+  "groupId": "t09-g053",
+  "revision": 1,
+  "prompt": "Which quote does the man decide to request?",
+  "promptZh": "男子決定請廠商提供哪一種報價？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A low section facing visitors but extending into the aisle, without delivery.",
+      "zh": "低檯面區面向訪客，但伸進走道，不含運送。",
+      "whyZh": "面向與運送處理正確，但展示區須留在攤位範圍內。"
+    },
+    {
+      "id": "B",
+      "text": "A low section inside the booth facing the wall, without delivery.",
+      "zh": "低檯面區在攤位內、面向牆壁，不含運送。",
+      "whyZh": "位置和運送可行，卻保留了樣品朝錯方向的問題。"
+    },
+    {
+      "id": "C",
+      "text": "A regular-height display inside the booth facing visitors, without delivery.",
+      "zh": "一般高度的展示區在攤位內、面向訪客，不含運送。",
+      "whyZh": "位置和朝向對，但必須保留可供坐著看樣品的低檯面區。"
+    },
+    {
+      "id": "D",
+      "text": "A low section inside the booth facing visitors, without delivery.",
+      "zh": "低檯面區在攤位內、面向訪客，不含運送。",
+      "whyZh": "這項兼顧坐姿高度、朝向與攤位界線，且男子允許運送繼續不列入。"
+    }
+  ],
+  "answer": "D",
+  "difficulty": "intermediate",
+  "explanationZh": "這項兼顧坐姿高度、朝向與攤位界線，且男子允許運送繼續不列入。",
+  "evidence": "What about the low display section? We need it so visitors can look at the samples from a seated position. / They included it, but their drawing puts it in the aisle. They suggested turning it sideways. That keeps the aisle clear, but the samples would face the back wall. / Ask them to quote a low section that faces visitors and stays inside our booth space. They can leave delivery off the new quote.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 2,
+      "speaker": "M",
+      "startChar": 0,
+      "endChar": 106,
+      "exactQuote": "What about the low display section? We need it so visitors can look at the samples from a seated position."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 3,
+      "speaker": "F",
+      "startChar": 0,
+      "endChar": 163,
+      "exactQuote": "They included it, but their drawing puts it in the aisle. They suggested turning it sideways. That keeps the aisle clear, but the samples would face the back wall."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 4,
+      "speaker": "M",
+      "startChar": 0,
+      "endChar": 128,
+      "exactQuote": "Ask them to quote a low section that faces visitors and stays inside our booth space. They can leave delivery off the new quote."
+    }
+  ],
+  "topic": "business"
+}
