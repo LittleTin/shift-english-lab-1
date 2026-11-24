@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "testId": "test-10",
+  "scope": [
+    7,
+    8
+  ],
+  "status": "Validated authoring batch; not deployed",
+  "sourceBase": "038460631fbe704488b74f6438a221c15596ef71",
+  "integrationBase": "5641a9621a4c744ffddf3ed0370b418258a7f6ec",
+  "items": [
+    {
+      "number": 7,
+      "id": "t10-q007",
+      "answer": "B",
+      "difficulty": "foundation",
+      "independentEvidence": "the one with the tray underneath",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q007/question.json": "0ddd787084b303bdb44fe5180a3ba88ba52cc47d549cc9ce6cc8c67083409a30",
+        "authoring/test-10/questions/Q007/media.json": "77ae95dc107f2fedff37b21123978e3e4f3e18a44c45fa0da85672a91bc0e9db",
+        "authoring/test-10/groups/t10-g007/group.json": "7721d852c9bc03ad02c5488e581e965b170b1530203f3b62a4a60dc2f69a7c04"
+      },
+      "opus": {
+        "practice": {
+          "sha256": "3c818542632a448134d23fe4b5d3c1f0bc418c7c9be98c78508041ada3ecc4f9",
+          "samples48k": 826800,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 730800,
+              "peakLsb": 26357
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 730800,
+              "endSample48k": 826800,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        },
+        "formal": {
+          "sha256": "44b2cc1d4d870de96814e96a265b6a614161ef1f961ef6988c5f47bee468262e",
+          "samples48k": 2064690,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "direction",
+              "startSample48k": 96000,
+              "endSample48k": 891072,
+              "peakLsb": 25625
+            },
+            {
+              "role": "cue",
+              "startSample48k": 891072,
+              "endSample48k": 933090,
+              "peakLsb": 14664
+            },
+            {
+              "role": "gap",
+              "startSample48k": 933090,
+              "endSample48k": 949890,
+              "peakLsb": 2,
+              "rmsLsb": 0.60035
+            },
+            {
+              "role": "passage",
+              "startSample48k": 949890,
+              "endSample48k": 1584690,
+              "peakLsb": 25277
+            },
+            {
+              "role": "answer",
+              "startSample48k": 1584690,
+              "endSample48k": 1968690,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1968690,
+              "endSample48k": 2064690,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        }
+      },
+      "recognizers": {
+        "whisper-small.json": "ed7377c4fe830747b19257c201feec704bb10c017f32a5e160628f32865ff5ae",
+        "whisper-base.json": "815f6d331b35b5b191e8370772c37fa57155aee57132b33d84e68ab2c581ab21",
+        "zipformer.json": "16f00018e684d2ccc99e0edb39471663c191d58df40bb724a738489065330834"
+      }
+    },
+    {
+      "number": 8,
+      "id": "t10-q008",
+      "answer": "A",
+      "difficulty": "foundation",
+      "independentEvidence": "i'll send it as soon as i'm back at my desk",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q008/question.json": "3b2958702d8deb26af77b15ddd23a6aa1feeae8f9ac958213189d53f12640dff",
+        "authoring/test-10/questions/Q008/media.json": "766e03fcca10238281cb061f4999f13e9efe52fd54967999f58f2de421af3b4b",
+        "authoring/test-10/groups/t10-g008/group.json": "0ef5a1242c5ac8a1515b5cd0d03b397ba5f799857c18658c733e8f9b80755ee2"
+      },
+      "opus": {
+        "practice": {
+          "sha256": "94af3cf0659aae760215d97a9ad27a8c65744e555c3dcc995507746622569003",
+          "samples48k": 865200,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 1,
+              "rmsLsb": 0.02141
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 769200,
+              "peakLsb": 27009
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 769200,
+              "endSample48k": 865200,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        },
+        "formal": {
+          "sha256": "60f3d2878141965d1bb0b9c616fbdfd8213fbe3cc8943782d30fbe3c825f5080",
+          "samples48k": 1305552,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 1,
+              "rmsLsb": 0.00456
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 135552,
+              "peakLsb": 13149
+            },
+            {
+              "role": "gap",
+              "startSample48k": 135552,
+              "endSample48k": 152352,
+              "peakLsb": 1,
+              "rmsLsb": 0.14454
+            },
+            {
+              "role": "passage",
+              "startSample48k": 152352,
+              "endSample48k": 825552,
+              "peakLsb": 26678
+            },
+            {
+              "role": "answer",
+              "startSample48k": 825552,
+              "endSample48k": 1209552,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1209552,
+              "endSample48k": 1305552,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        }
+      },
+      "recognizers": {
+        "whisper-small.json": "b9fed7252540aa21fc3df2271b46dc31c4df71fa6b06d9ae8944219e12827acc",
+        "whisper-base.json": "c08d15e9565317de82eebc28d6bbcfd013f9dfcad9d63c63612e96eb961a561f",
+        "zipformer.json": "9b109fff659d48aba84ba5218e8ba60d7881909bc56506fbeed851eee03b9a47"
+      }
+    }
+  ],
+  "native": {
+    "status": "VM Chromium native exact four physical Opus; Test 10 diagnostic shell with only two genuine and 98 structure placeholders, no public or real-user changes",
+    "fixtureSha256": "1e68081f82ffaa785c9ab70df92ee463e4aa8ffaba0fae3fbc8dac3a9cb9b96a",
+    "practice": {
+      "priorSource": "t10-g007.ogg",
+      "firstFromStart": 0.179094,
+      "newSource": "t10-g008.ogg",
+      "reset": 0,
+      "first": 0.272179,
+      "paused": 0.321482,
+      "still": 0.321482,
+      "resume": 0.601546
+    },
+    "formal": {
+      "actualG007First": 0.203118,
+      "actualG007Part2Directions": true,
+      "actualG007Q7VisibleAt": 28.981837,
+      "actualNaturalG008": 10.677657,
+      "fixedRate": 1,
+      "directG008": 0,
+      "firstG008": 0.145232,
+      "paused": 0.209402,
+      "still": 0.209402,
+      "resume": 0.446236,
+      "earlyNextDisabled": true
+    }
+  },
+  "recognitionNotes": "Two independent unprompted Whisper decoders agree on both scored phrases and the numbers in final Opus. Zipformer’s tree for tray and chicken loose for check-in list are phonetic ASR errors; the other models recover both entire items in formal and practice. Number Seven and Eight and unscored Part 2 direction were reused only after ASR verified exact prior standard speech."
+}
