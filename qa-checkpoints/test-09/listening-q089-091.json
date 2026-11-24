@@ -1,0 +1,203 @@
+{
+  "group": "t09-g089",
+  "status": "Authoring batch accepted; unreleased.",
+  "sourceGroupSha256": "8b400edcaec1ae34544f8d8d65ffedc896c05926813e7c5510cb7e495c389a3a",
+  "questions": [
+    {
+      "q": 89,
+      "questionId": "t09-q089",
+      "uuid": "2144a84d-bc72-5abf-9a12-8494a6c3423e",
+      "qSha256": "b4577f28bbb5f80ddb03802a6172c34cc259bfbc879c7c9d28264b9cbb1f50a2",
+      "sidecarSha256": "3449435f63d517af87809a7820df84c7e1f9344c2ec92095d218313260ca785f"
+    },
+    {
+      "q": 90,
+      "questionId": "t09-q090",
+      "uuid": "cdf0e91d-6d0a-52f0-ac76-84f8560c579c",
+      "qSha256": "1e6ea27a1ef30792805d895656e60f536527bfd74e548539b2e847da15e58f67",
+      "sidecarSha256": "16c873cdec4488d71cda012fbff195bad0cecec1d168afeb14fcd3832d008cb3"
+    },
+    {
+      "q": 91,
+      "questionId": "t09-q091",
+      "uuid": "015a7c2b-bf05-54c6-8ac7-ce6b37ee7010",
+      "qSha256": "181d79873c79a8018ad68c48f352be404e3c6374162da964b452d36750e59738",
+      "sidecarSha256": "262d458837eb55ce11d94aea60f1e6bd804f238a95d6db6e20110a6b6837dfe9"
+    }
+  ],
+  "mediaPaths": [
+    {
+      "url": "audio/formal-groups/test-09/t09-g089.ogg",
+      "source": "test-09/groups/t09-g089/media/audio/formal-groups/test-09/t09-g089.ogg"
+    },
+    {
+      "url": "audio/practice-groups/test-09/t09-g089.ogg",
+      "source": "test-09/groups/t09-g089/media/audio/practice-groups/test-09/t09-g089.ogg"
+    }
+  ],
+  "mediaManifestSha256": "47ae1929ebbb27406eff269fa243611bfa07e086f1f513556f1a4876f239cd16",
+  "integrationBase": "811020f65c174e9708d625ed6015a73815f7bbcf",
+  "appSha256": "eebd55c330ca4f52584d893a3096748dd8afc062f6232ad7bc01de395e450a62",
+  "candidateEvidenceSha256": "8d7dd504108410d011628238c98e38d6e8ea5e99baa242fd12360b9d912f0aaf",
+  "sourceCutMapSha256": "7fc8ed511d43cfab1ad1c8209841ab96f4e49fc5c9426335a6d43e56c47f6a62",
+  "sourcePreflightSha256": "64df725ffbab80c0c8952ae68f78384a187e6c26ecf61d23d790b7abd47f8f56",
+  "decodedAsrSha256": {
+    "whisper-small.json": "e8c8c66e641735fcba46a797cefe5859450afc5ad68605177f75f63540d73485",
+    "zipformer.json": "efd3ca9b29fa807663d363e2ab5a662cf8b4c3090c70c7e3f0e7eeb1916647cd"
+  },
+  "media": {
+    "formal": {
+      "file": "t09-g089-formal.ogg",
+      "sha256": "a766876d5b79381f90a6f006013a9ee60cc543d925bdd191892c99057149e76f",
+      "samples48k": 3984312,
+      "halfSecondGuardPeaksLsb": [
+        0,
+        1
+      ],
+      "timeline": [
+        {
+          "role": "gap",
+          "startSample48k": 0,
+          "endSample48k": 96000,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "cue",
+          "startSample48k": 96000,
+          "endSample48k": 297600,
+          "inputPcmSha256": "b4806802275c8e8ed96f68ab8ff973e8fe0f41f6a14e60c3da5300937db876cd"
+        },
+        {
+          "role": "gap",
+          "startSample48k": 297600,
+          "endSample48k": 314400,
+          "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+        },
+        {
+          "role": "passage",
+          "startSample48k": 314400,
+          "endSample48k": 1853400,
+          "inputPcmSha256": "2530597316df8b5bb75552bf7c8d758184f47ef8941f9f61298cf01e044f591e",
+          "turnRanges48k": [
+            [
+              314400,
+              1853400
+            ]
+          ]
+        },
+        {
+          "role": "stem:89",
+          "startSample48k": 1853400,
+          "endSample48k": 2175552,
+          "inputPcmSha256": "50db79325bc596fc3295af8ff475b64c260a82b1d488e56fb2a0beaca97fd8a2"
+        },
+        {
+          "role": "answer:89",
+          "startSample48k": 2175552,
+          "endSample48k": 2559552,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "stem:90",
+          "startSample48k": 2559552,
+          "endSample48k": 2807712,
+          "inputPcmSha256": "f744a668b9171158f8dd96728807824a04eb2b1ddefb2165f0bc52f8343f635c"
+        },
+        {
+          "role": "answer:90",
+          "startSample48k": 2807712,
+          "endSample48k": 3191712,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "stem:91",
+          "startSample48k": 3191712,
+          "endSample48k": 3504312,
+          "inputPcmSha256": "a26fcf673a11d58d84061f4797e9d140bcd958f783c02253f347b78c8078d9e7"
+        },
+        {
+          "role": "answer:91",
+          "startSample48k": 3504312,
+          "endSample48k": 3888312,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "gap",
+          "startSample48k": 3888312,
+          "endSample48k": 3984312,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        }
+      ]
+    },
+    "practice": {
+      "file": "t09-g089-practice.ogg",
+      "sha256": "0b30f41343568f328455b1f2f1a3f23834dac84a80f02cda5e078a31006439db",
+      "samples48k": 1731000,
+      "halfSecondGuardPeaksLsb": [
+        0,
+        1
+      ],
+      "timeline": [
+        {
+          "role": "gap",
+          "startSample48k": 0,
+          "endSample48k": 96000,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "passage",
+          "startSample48k": 96000,
+          "endSample48k": 1635000,
+          "inputPcmSha256": "2530597316df8b5bb75552bf7c8d758184f47ef8941f9f61298cf01e044f591e",
+          "turnRanges48k": [
+            [
+              96000,
+              1635000
+            ]
+          ]
+        },
+        {
+          "role": "gap",
+          "startSample48k": 1635000,
+          "endSample48k": 1731000,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        }
+      ]
+    }
+  },
+  "semanticChecks": {
+    "89": "B: use a fictional sample and check the rejected text appears unchanged as well as the reason.",
+    "90": "D: correcting a missing space can remove the failure, making it important to preserve the original.",
+    "91": "A: preserve the rejected input unchanged and give the successful version its own line."
+  },
+  "recognitionScope": "Whisper windows 0–23 and 18–end plus independent full/windowed Zipformer on exact encoded native inputs. All necessary timing and labels clear. The non-scored final function word and/in is context-resolved with adjacent explicit before-fix and separate-line instructions; both actual files recover them. Exact numbered formal stems checked.",
+  "native": {
+    "engine": "Cloud Chromium, exact private fixture",
+    "fixtureSha256": "517b818abee3c3d6562a19c2ea46cbbfc61ba3c79e7d37611bccc078f0a6f92c",
+    "threeDisplayed": [
+      89,
+      90,
+      91
+    ],
+    "formal": {
+      "priorStillPlaying": 70.297618,
+      "newAutomatic": 19.552691,
+      "initial": 0,
+      "firstSampled": 0.118686,
+      "paused": 19.656871,
+      "whileStillPaused": 19.656871,
+      "afterResume": 19.90153,
+      "rate": 1,
+      "nextDisabled": true,
+      "transcriptHidden": true
+    },
+    "practice": {
+      "previous": 0.17435,
+      "reset": 0,
+      "firstSampled": 0.080657,
+      "paused": 0.123798,
+      "whileStillPaused": 0.123798,
+      "afterResume": 0.350077
+    }
+  }
+}

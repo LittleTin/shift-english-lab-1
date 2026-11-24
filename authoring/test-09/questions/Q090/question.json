@@ -1,0 +1,51 @@
+{
+  "id": "t09-q090",
+  "testId": "test-09",
+  "number": 90,
+  "part": 4,
+  "groupId": "t09-g089",
+  "revision": 1,
+  "prompt": "Why does the speaker mention a missing space?",
+  "promptZh": "講者為什麼提到少一個空格？",
+  "options": [
+    {
+      "id": "A",
+      "text": "To explain how to keep someone’s address private.",
+      "zh": "說明如何保護某人的位址隱私。",
+      "whyZh": "保護真實資料靠使用虛構位址，不是刪去空格。"
+    },
+    {
+      "id": "B",
+      "text": "To show that the tester rejects every address with a space.",
+      "zh": "說明測試工具會拒絕所有含空格的位址。",
+      "whyZh": "原文反而舉例缺空格造成失敗、補回會通過。"
+    },
+    {
+      "id": "C",
+      "text": "To suggest a way to shorten the next shift’s schedule.",
+      "zh": "提出縮短下一班排程的方法。",
+      "whyZh": "例子談重現失敗，與班表長短無關。"
+    },
+    {
+      "id": "D",
+      "text": "To illustrate how a small edit can make a failure disappear.",
+      "zh": "說明很小的修改也可能讓失敗無法重現。",
+      "whyZh": "一把缺的空格補回，原本的失敗就消失，所以要先保留原字串。"
+    }
+  ],
+  "answer": "D",
+  "difficulty": "intermediate",
+  "explanationZh": "一把缺的空格補回，原本的失敗就消失，所以要先保留原字串。",
+  "evidence": "A missing space can cause a failure that disappears the moment you put the space back.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "M",
+      "startChar": 218,
+      "endChar": 304,
+      "exactQuote": "A missing space can cause a failure that disappears the moment you put the space back."
+    }
+  ],
+  "topic": "technology"
+}

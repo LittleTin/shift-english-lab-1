@@ -1,0 +1,59 @@
+{
+  "id": "t09-q089",
+  "testId": "test-09",
+  "number": 89,
+  "part": 4,
+  "groupId": "t09-g089",
+  "revision": 2,
+  "prompt": "How should a tester check that the new screen shows the added information?",
+  "promptZh": "測試人員應如何查驗新畫面是否有顯示新增的資訊？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Use a made-up address and check only whether the reason for rejection appears.",
+      "zh": "用虛構位址，只看拒絕原因是否顯示。",
+      "whyZh": "用虛構資料是對的，但原因是舊版已有的欄位，無法查新增功能。"
+    },
+    {
+      "id": "B",
+      "text": "Use a made-up address and check whether the rejected text appears as entered.",
+      "zh": "用虛構位址，確認遭拒的輸入內容是否原樣顯示。",
+      "whyZh": "今日用虛構位址；新增的是原輸入內容，所以查遭拒輸入是否原樣顯示。"
+    },
+    {
+      "id": "C",
+      "text": "Use a real address and check whether the rejected text appears as entered.",
+      "zh": "用真實位址，確認遭拒的輸入內容是否原樣顯示。",
+      "whyZh": "查驗目標正確，但指示要求用虛構位址，不必使用真實資料。"
+    },
+    {
+      "id": "D",
+      "text": "Use a real address and check only whether the reason for rejection appears.",
+      "zh": "用真實位址，只看拒絕原因是否顯示。",
+      "whyZh": "資料應為虛構，而且舊有的原因欄不是本次新增的資訊。"
+    }
+  ],
+  "answer": "B",
+  "difficulty": "intermediate",
+  "explanationZh": "今日用虛構位址；新增的是原輸入內容，所以查遭拒輸入是否原樣顯示。",
+  "evidence": "Until now, the address tester has shown us the reason it rejected an entry, but not what was typed. The new screen gives us both. / Please use fictional addresses for today’s checks; we don’t need anyone’s real details.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "M",
+      "startChar": 0,
+      "endChar": 129,
+      "exactQuote": "Until now, the address tester has shown us the reason it rejected an entry, but not what was typed. The new screen gives us both."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "M",
+      "startChar": 130,
+      "endChar": 217,
+      "exactQuote": "Please use fictional addresses for today’s checks; we don’t need anyone’s real details."
+    }
+  ],
+  "topic": "technology"
+}

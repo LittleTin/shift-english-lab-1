@@ -1,0 +1,59 @@
+{
+  "id": "t09-q091",
+  "testId": "test-09",
+  "number": 91,
+  "part": 4,
+  "groupId": "t09-g089",
+  "revision": 1,
+  "prompt": "What should the notes contain when a correction lets a sample pass?",
+  "promptZh": "修改讓範例通過時，筆記應包含哪些內容？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The original failing entry and the successful version on separate lines.",
+      "zh": "造成失敗的原始輸入與成功版本，分行記錄。",
+      "whyZh": "修正前原樣保留，通過版另寫一行，下一班才能重現兩種結果。"
+    },
+    {
+      "id": "B",
+      "text": "Only the successful version with its added space.",
+      "zh": "只有補好空格的成功版本。",
+      "whyZh": "只記成功版就無法重現失敗。"
+    },
+    {
+      "id": "C",
+      "text": "Only the original entry and the rejection reason.",
+      "zh": "只記原始輸入和拒絕原因。",
+      "whyZh": "缺少通過的修改版本；講者要求另列。"
+    },
+    {
+      "id": "D",
+      "text": "The corrected entry written over the original one.",
+      "zh": "將修正版直接覆蓋原始輸入。",
+      "whyZh": "要求分行，不能以修正版覆蓋原文。"
+    }
+  ],
+  "answer": "A",
+  "difficulty": "intermediate",
+  "explanationZh": "修正前原樣保留，通過版另寫一行，下一班才能重現兩種結果。",
+  "evidence": "copy the entry as it appeared into your notes before you fix it. / If your edit passes, put that successful version on a separate line.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "M",
+      "startChar": 339,
+      "endChar": 403,
+      "exactQuote": "copy the entry as it appeared into your notes before you fix it."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "M",
+      "startChar": 404,
+      "endChar": 472,
+      "exactQuote": "If your edit passes, put that successful version on a separate line."
+    }
+  ],
+  "topic": "technology"
+}
