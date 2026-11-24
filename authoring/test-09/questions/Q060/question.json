@@ -1,0 +1,59 @@
+{
+  "id": "t09-q060",
+  "testId": "test-09",
+  "number": 60,
+  "part": 3,
+  "groupId": "t09-g059",
+  "revision": 1,
+  "prompt": "Which instruction will work from either side of the stand?",
+  "promptZh": "哪項指示從展示台哪一側看都適用？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Use the slot on your right.",
+      "zh": "用你右手邊的進料口。",
+      "whyZh": "右邊只對訪客的當前視角有效。"
+    },
+    {
+      "id": "B",
+      "text": "Use the slot shown in the original notes.",
+      "zh": "請用原先筆記所寫的進料口。",
+      "whyZh": "原筆記以左側指稱，視角改變時不可靠。"
+    },
+    {
+      "id": "C",
+      "text": "Use the slot next to the guide rail.",
+      "zh": "請用導軌旁的進料口。",
+      "whyZh": "導軌的相對位置不因觀看方向改變。"
+    },
+    {
+      "id": "D",
+      "text": "Use the slot nearest the visitors.",
+      "zh": "請用距離訪客最近的進料口。",
+      "whyZh": "訪客位置不是兩側都通用的實物指標。"
+    }
+  ],
+  "answer": "C",
+  "difficulty": "foundation",
+  "explanationZh": "導軌的相對位置不因觀看方向改變。",
+  "evidence": "My demo notes say to put the sample in the slot on the left. The stand has been turned around so visitors can see the controls. / From their side, the slot is now on the right. Say “the slot next to the guide rail” instead. The rail travels with the stand, so that description works from either side.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "F",
+      "startChar": 0,
+      "endChar": 127,
+      "exactQuote": "My demo notes say to put the sample in the slot on the left. The stand has been turned around so visitors can see the controls."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 2,
+      "speaker": "M",
+      "startChar": 0,
+      "endChar": 170,
+      "exactQuote": "From their side, the slot is now on the right. Say “the slot next to the guide rail” instead. The rail travels with the stand, so that description works from either side."
+    }
+  ],
+  "topic": "business"
+}

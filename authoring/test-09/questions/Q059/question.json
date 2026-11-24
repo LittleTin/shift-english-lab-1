@@ -1,0 +1,59 @@
+{
+  "id": "t09-q059",
+  "testId": "test-09",
+  "number": 59,
+  "part": 3,
+  "groupId": "t09-g059",
+  "revision": 1,
+  "prompt": "Why is the original description no longer reliable?",
+  "promptZh": "原來的說法為何不再可靠？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The guide rail has been removed.",
+      "zh": "導軌被拆掉了。",
+      "whyZh": "導軌仍在，且可作為新的實物參照。"
+    },
+    {
+      "id": "B",
+      "text": "The visitors see the stand from the opposite side.",
+      "zh": "訪客從展示台的另一側看。",
+      "whyZh": "展示台轉向後，原本稱左邊的開口從訪客側看在右邊。"
+    },
+    {
+      "id": "C",
+      "text": "The sample is too large for the slot.",
+      "zh": "樣品太大，放不進進料口。",
+      "whyZh": "問題是指示方向，並非樣品尺寸。"
+    },
+    {
+      "id": "D",
+      "text": "The controls now cover the slot.",
+      "zh": "控制裝置現在遮住進料口。",
+      "whyZh": "展示台轉向是為了讓人看控制裝置；沒有遮住開口。"
+    }
+  ],
+  "answer": "B",
+  "difficulty": "intermediate",
+  "explanationZh": "展示台轉向後，原本稱左邊的開口從訪客側看在右邊。",
+  "evidence": "My demo notes say to put the sample in the slot on the left. The stand has been turned around so visitors can see the controls. / From their side, the slot is now on the right. Say “the slot next to the guide rail” instead. The rail travels with the stand, so that description works from either side.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "F",
+      "startChar": 0,
+      "endChar": 127,
+      "exactQuote": "My demo notes say to put the sample in the slot on the left. The stand has been turned around so visitors can see the controls."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 2,
+      "speaker": "M",
+      "startChar": 0,
+      "endChar": 170,
+      "exactQuote": "From their side, the slot is now on the right. Say “the slot next to the guide rail” instead. The rail travels with the stand, so that description works from either side."
+    }
+  ],
+  "topic": "business"
+}

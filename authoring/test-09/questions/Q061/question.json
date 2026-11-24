@@ -1,0 +1,59 @@
+{
+  "id": "t09-q061",
+  "testId": "test-09",
+  "number": 61,
+  "part": 3,
+  "groupId": "t09-g059",
+  "revision": 1,
+  "prompt": "When should the woman give the instruction?",
+  "promptZh": "女子應何時給出這項指示？",
+  "options": [
+    {
+      "id": "A",
+      "text": "As the group first approaches the stand.",
+      "zh": "團體一走近展示台時。",
+      "whyZh": "女子提出這時點，男子要她等提示。"
+    },
+    {
+      "id": "B",
+      "text": "While the group is still looking at the controls.",
+      "zh": "團體還在看控制裝置時。",
+      "whyZh": "要等團體看完控制裝置。"
+    },
+    {
+      "id": "C",
+      "text": "When the stand is turned around again.",
+      "zh": "展示台再次轉向時。",
+      "whyZh": "轉向影響定位說法，不是開口時機。"
+    },
+    {
+      "id": "D",
+      "text": "When the man says the sample can be put in.",
+      "zh": "男子說可以放樣品時。",
+      "whyZh": "男子指定固定口令後才說明。"
+    }
+  ],
+  "answer": "D",
+  "difficulty": "foundation",
+  "explanationZh": "男子指定固定口令後才說明。",
+  "evidence": "Should I say that as the group comes up to the stand? / Wait until I say “ready for the sample.” We use that same cue after each group has had a look at the controls.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 3,
+      "speaker": "F",
+      "startChar": 0,
+      "endChar": 53,
+      "exactQuote": "Should I say that as the group comes up to the stand?"
+    },
+    {
+      "sourceField": "turns",
+      "turn": 4,
+      "speaker": "M",
+      "startChar": 0,
+      "endChar": 110,
+      "exactQuote": "Wait until I say “ready for the sample.” We use that same cue after each group has had a look at the controls."
+    }
+  ],
+  "topic": "business"
+}
