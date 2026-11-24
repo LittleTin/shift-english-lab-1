@@ -1,0 +1,87 @@
+{
+  "testId": "test-09",
+  "questions": [
+    {
+      "number": 9,
+      "id": "t09-q009",
+      "uuid": "eaaf422a-bf6c-5edb-a93e-73a1711d72f6",
+      "questionSha256": "1b74964cbf6442907cb5494c11e9b0444caf8422c94c582c597281aafc0d0515",
+      "groupSha256": "43c5bcd9252944e6f76b974b06844eea7ac91e2984467c93c242ffe172418be4",
+      "sidecarSha256": "2848aa11a6b1b54fee25c2844231d31b3f3aef787a8be80caf4c4f276b5185d1",
+      "nativeMediaManifestSha256": "ca0e7ed47a0b4b7df1233a5a48e0a56da1141e3ef22170d4c824b8364099abe1"
+    },
+    {
+      "number": 10,
+      "id": "t09-q010",
+      "uuid": "aa76d36b-44da-57d7-b116-651bad9dcbfd",
+      "questionSha256": "cc1c9455ca709aa9fec1c3e6ce794c34985f8a19730a815f4224ccb866b0c7b3",
+      "groupSha256": "71785e5ba31bd2fea670a14f3ec8a456f2c358c3f72596f0a138dfb2e31dfde9",
+      "sidecarSha256": "7f9882cc41d40fbb037c5af149f86382e9b1e522ba53643655f2f9b627524f05",
+      "nativeMediaManifestSha256": "ca0e7ed47a0b4b7df1233a5a48e0a56da1141e3ef22170d4c824b8364099abe1"
+    }
+  ],
+  "stage": "Independently checked authoring groups only. No catalog, app, lock, final release or real account data.",
+  "integrationBase": "4dc7dc4254350024d98c20bd0be5ce484cc334d7",
+  "appSha256": "62ff3db3a5fde82100cf3cb4eb125139cd591a1440b65b59d58a75b3ec831600",
+  "checked": {
+    "offlineAsr": "Independently recognized exact both scored phrase windows with Whisper and verified independent Zipformer variations with label-only cuts. Both exact complete end phrases, spoken numbers nine and ten and A/B/C order retained.",
+    "actualDiagnosticApp": "Own Chromium actual UUID lookup and separate produced app test. Q009 formal starts near zero, paused 0.219611s, resumed 0.46485s on the same file, advances naturally to exact Q010 formal at 1x. Q010 formal paused 11.652754s. Q010 practice paused/resumed at 0.184178/0.429252s before previous Q009 and next Q010 reset time to 0 and correctly changed source, each starts ~0.13s after UI interaction. Full-round integrated duration and physical phone not claimed."
+  },
+  "mediaEvidenceSha256": "ca0e7ed47a0b4b7df1233a5a48e0a56da1141e3ef22170d4c824b8364099abe1",
+  "whisperScoredSha256": "4608328f2efa12c208f6c367942cf7310394e28c82a2e93fb1de7686b981345e",
+  "zipformerScoredSha256": "75aebe5ebe79d7e293d9b6ceb473d19dac40918f8ed7ddda3865cf24adde8983",
+  "focusedWhisperSha256": "e7062ed3fa4a419f5be1b1610b1187f26eb51f31942f3e282dd8bda94f7bd262",
+  "focusedZipformerSha256": "2198fcca18d1fea9ef84bc4aa2eb72bb901d122a89927064d0fffd8c6802e677",
+  "files": {
+    "authoring/test-09/groups/t09-g009/group.json": {
+      "sha256": "43c5bcd9252944e6f76b974b06844eea7ac91e2984467c93c242ffe172418be4",
+      "size": 1508,
+      "oid": "6071d1946a5268c79b4c522c4b91a788216f1c4e"
+    },
+    "authoring/test-09/groups/t09-g010/group.json": {
+      "sha256": "71785e5ba31bd2fea670a14f3ec8a456f2c358c3f72596f0a138dfb2e31dfde9",
+      "size": 1604,
+      "oid": "76516ee9be8c3bf3e9da0696cbc58290028e9681"
+    },
+    "authoring/test-09/questions/Q009/media/audio/formal-groups/test-09/t09-g009.ogg": {
+      "sha256": "e2664667f106dccad58ac3bfa023ca08bc6b576244d62d18febded993cf72b44",
+      "size": 132462,
+      "oid": "d790e249cee2c20d41367c219fe33840c1e6f945"
+    },
+    "authoring/test-09/questions/Q009/media/audio/practice-groups/test-09/t09-g009.ogg": {
+      "sha256": "d7eb06e0dee05c48384af1cb2a2bf5cb5b8eae0d630b53b73d14de280b8a296e",
+      "size": 103663,
+      "oid": "20b0c8d26aa9d22ed2fbfd141913ef3b3c41a63a"
+    },
+    "authoring/test-09/questions/Q009/media.json": {
+      "sha256": "2848aa11a6b1b54fee25c2844231d31b3f3aef787a8be80caf4c4f276b5185d1",
+      "size": 1087,
+      "oid": "5e69f5ab091d9c0efb595992c18a309dfed611f0"
+    },
+    "authoring/test-09/questions/Q009/question.json": {
+      "sha256": "1b74964cbf6442907cb5494c11e9b0444caf8422c94c582c597281aafc0d0515",
+      "size": 1448,
+      "oid": "e05c74709fd90a7d7c028f808bbd4fc58e3772b5"
+    },
+    "authoring/test-09/questions/Q010/media/audio/formal-groups/test-09/t09-g010.ogg": {
+      "sha256": "e4f8a6092c03bfeaf93421114926f3aeac7ae66c3aae8505d0415f98956b434a",
+      "size": 142426,
+      "oid": "455649f1efc615f883c57704622cf68f2708b309"
+    },
+    "authoring/test-09/questions/Q010/media/audio/practice-groups/test-09/t09-g010.ogg": {
+      "sha256": "cb0b0058a322739e7316b2a8715331aa0d9aa428e6cb45b073f312431ce189c6",
+      "size": 114279,
+      "oid": "b7a5adad57562b0bd75bf3baa5e0c717725d2948"
+    },
+    "authoring/test-09/questions/Q010/media.json": {
+      "sha256": "7f9882cc41d40fbb037c5af149f86382e9b1e522ba53643655f2f9b627524f05",
+      "size": 1086,
+      "oid": "b2c9d7ff05eb0d62fe3ab15c6e0b5d21eb071f5a"
+    },
+    "authoring/test-09/questions/Q010/question.json": {
+      "sha256": "cc1c9455ca709aa9fec1c3e6ce794c34985f8a19730a815f4224ccb866b0c7b3",
+      "size": 1454,
+      "oid": "60874ac75f4e8cdb97a721e34f153e6f97f3269d"
+    }
+  }
+}
