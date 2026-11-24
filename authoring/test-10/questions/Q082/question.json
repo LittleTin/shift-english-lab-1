@@ -1,0 +1,46 @@
+{
+  "id": "t10-q082",
+  "uuid": "4ae22194-0ceb-54da-923c-a817fb57e3a5",
+  "number": 82,
+  "part": 4,
+  "testId": "test-10",
+  "groupId": "t10-g080",
+  "topic": "daily",
+  "difficulty": "advanced",
+  "prompt": "A basement washer failed to start. A photo shows its current position. In the laundry payment history, two entries show the same amount: the one listed first has no receipt number, and the other does. What should the resident send?",
+  "promptZh": "地下室一台洗衣機沒能啟動，照片拍到它目前的位置。洗衣間的付款記錄有兩筆金額相同的款項：第一筆沒有收據編號，另一筆有。住戶要傳什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The entry listed second and the machine number from the lobby plan.",
+      "zh": "第二筆款項紀錄，以及從大廳位置圖查到的機器編號。",
+      "whyZh": "第二筆有收據編號，代表已完成扣款；照片拍的是現在的位置，應用反映新配置的大廳位置圖查機器編號。"
+    },
+    {
+      "id": "B",
+      "text": "The entry listed second and the machine number from the sheet by the basement door.",
+      "zh": "第二筆款項紀錄，以及從地下室門邊位置圖查到的機器編號。",
+      "whyZh": "第二筆確實是已完成扣款，但門邊位置圖早於機器移動，不能用舊圖辨識現在位置。"
+    },
+    {
+      "id": "C",
+      "text": "The entry listed first and the machine number from the lobby plan.",
+      "zh": "第一筆款項紀錄，以及從大廳位置圖查到的機器編號。",
+      "whyZh": "大廳位置圖確實是新的，但第一筆沒有收據編號，不能用它確認扣款已完成。"
+    },
+    {
+      "id": "D",
+      "text": "The entry listed first and the machine number from the sheet by the basement door.",
+      "zh": "第一筆款項紀錄，以及從地下室門邊位置圖查到的機器編號。",
+      "whyZh": "第一筆沒有收據編號，不能用它確認扣款已完成；地下室門邊的圖也是舊配置。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "第二筆有收據編號，代表已完成扣款；照片拍的是現在的位置，應用反映新配置的大廳位置圖查機器編號。",
+  "evidence": "A quick laundry update after we rearranged the basement washers yesterday. The ordinary washers in the basement are available until ten, but the large washer there is out of service. In the annex, the attendant has to unlock the large washer for each new load. The room also stays open until ten, but the attendant’s desk closes at eight. / If a washer fails to start, send us a record of the completed charge and the machine number. Your bank may show a pair of entries with the same amount. In our own payment history, only a completed charge has a receipt number. / As for those delayed notices, the resident in apartment eighteen finished a load during the outage and then started a second load on the same setting. Her phone received no notices during the outage and just one when it came back online. Finally, both of our paper layouts show machine numbers by position. The sheet beside the basement door was printed before the move. The plan on the lobby noticeboard shows the new arrangement.",
+  "revision": 1,
+  "tags": [
+    "shared-housing",
+    "laundry"
+  ]
+}

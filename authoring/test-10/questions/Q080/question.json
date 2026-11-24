@@ -1,0 +1,46 @@
+{
+  "id": "t10-q080",
+  "uuid": "e2e7a4df-c559-5f28-93a5-a6bd1c10cc97",
+  "number": 80,
+  "part": 4,
+  "testId": "test-10",
+  "groupId": "t10-g080",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "prompt": "A resident reaches the laundry at 8:15 p.m. with towels and a bulky one-piece bed cover. What can the resident do that evening?",
+  "promptZh": "住戶晚上八點十五分帶著毛巾和一件厚重的一體式床罩到洗衣間。當晚可以怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Wash both loads in the annex while the room is still open.",
+      "zh": "趁附館還開著，在那裡洗完兩批衣物。",
+      "whyZh": "附館仍開放不代表大型機可啟用；八點後沒有管理員替新的一批開鎖。"
+    },
+    {
+      "id": "B",
+      "text": "Wash the towels in the basement and postpone washing the cover.",
+      "zh": "在地下室洗毛巾，床罩改天再洗。",
+      "whyZh": "地下室普通機仍可洗毛巾；床罩必須用大型機，但地下室那台停用，附館的也無法新開洗程。"
+    },
+    {
+      "id": "C",
+      "text": "Wash the folded cover in an ordinary washer and take the towels to the annex.",
+      "zh": "把床罩折好放進普通機，毛巾改拿去附館洗。",
+      "whyZh": "單件厚重床罩即使折得進普通機，仍須用大型機。"
+    },
+    {
+      "id": "D",
+      "text": "Wait until another day to wash either load.",
+      "zh": "兩批衣物都等到別天再洗。",
+      "whyZh": "床罩確實要延期，但地下室普通機還開著，毛巾不必等。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "地下室普通機仍可洗毛巾；床罩必須用大型機，但地下室那台停用，附館的也無法新開洗程。",
+  "evidence": "A quick laundry update after we rearranged the basement washers yesterday. The ordinary washers in the basement are available until ten, but the large washer there is out of service. In the annex, the attendant has to unlock the large washer for each new load. The room also stays open until ten, but the attendant’s desk closes at eight. / About load sizes: towels are fine in an ordinary machine. A bulky, one-piece bed cover needs a large machine, even if you can fold it small enough to fit through an ordinary door.",
+  "revision": 1,
+  "tags": [
+    "shared-housing",
+    "laundry"
+  ]
+}

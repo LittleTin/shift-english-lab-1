@@ -1,0 +1,46 @@
+{
+  "id": "t10-q081",
+  "uuid": "320253e8-df52-5316-9f4a-de190ac3b98d",
+  "number": 81,
+  "part": 4,
+  "testId": "test-10",
+  "groupId": "t10-g080",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "prompt": "What does the single notice in the example refer to, and what does its displayed time indicate?",
+  "promptZh": "例子中的那一則通知指的是哪一批衣物？通知顯示的時間又代表什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The first load; when that load finished.",
+      "zh": "第一批；那一批洗完的時間。",
+      "whyZh": "確實是指第一批，但顯示的是通知送達時間，不是洗完的時間。"
+    },
+    {
+      "id": "B",
+      "text": "The second load; when the phone received the notice.",
+      "zh": "第二批；手機收到通知的時間。",
+      "whyZh": "時間的解讀正確，但第一批先洗完，暫存的通知也會先送達，所以這則是第一批的。"
+    },
+    {
+      "id": "C",
+      "text": "The second load; when that load finished.",
+      "zh": "第二批；那一批洗完的時間。",
+      "whyZh": "錯在兩處：這則通知屬於第一批，時間是送達手機的時間，不是洗完的時間。"
+    },
+    {
+      "id": "D",
+      "text": "The first load; when the phone received the notice.",
+      "zh": "第一批；手機收到通知的時間。",
+      "whyZh": "第一批先洗完且當時沒有收到通知；重新連線後，手機會先收到那則暫存通知。顯示的是手機收到通知的時間。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "第一批先洗完且當時沒有收到通知；重新連線後，手機會先收到那則暫存通知。顯示的是手機收到通知的時間。",
+  "evidence": "Also, the time on a completion notice is when it reaches your phone, not when the wash ended. The washers kept running during yesterday’s connection failure. When your phone reconnects, it receives any notices held back for it before new ones, starting with the oldest completed load. Each completed load generates just one notice. / As for those delayed notices, the resident in apartment eighteen finished a load during the outage and then started a second load on the same setting. Her phone received no notices during the outage and just one when it came back online. Finally, both of our paper layouts show machine numbers by position. The sheet beside the basement door was printed before the move. The plan on the lobby noticeboard shows the new arrangement.",
+  "revision": 1,
+  "tags": [
+    "shared-housing",
+    "laundry"
+  ]
+}

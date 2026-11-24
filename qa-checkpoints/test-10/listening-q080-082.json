@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 1,
+  "testId": "test-10",
+  "scope": [
+    80,
+    81,
+    82
+  ],
+  "status": "Validated authoring batch; not deployed",
+  "sourceBase": "ab3ffb6945daf2e2e1e83d0b7b972f430d3d0988",
+  "integrationBase": "b3b0ff801a38f271ef44d71fda98bf7088cb9fd9",
+  "groupSourceSha256": "8685a9ed001482dc51e562efd55fa942a593e6f09ffedd7e0fd1433c3bb5ccd1",
+  "items": [
+    {
+      "number": 80,
+      "answer": "B",
+      "difficulty": "intermediate",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q080/question.json": "add00cb65453f94168c60332fbb08cca2b74d77f52b198e47b7e4445ccb52fa1",
+        "authoring/test-10/questions/Q080/media.json": "9e43389f35d4da9a3fcfd6ada7c82728a84da2e158449506e3be25c53599b4e1"
+      }
+    },
+    {
+      "number": 81,
+      "answer": "D",
+      "difficulty": "intermediate",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q081/question.json": "d7be8210be95c7998fa642ebfe24a2b8028f934fd1c25a3d10bf5ec2454ee6c9",
+        "authoring/test-10/questions/Q081/media.json": "63537dc6e1c284263c930dde34bc7ccdfa284f074e2d990395686c71dcb1744b"
+      }
+    },
+    {
+      "number": 82,
+      "answer": "A",
+      "difficulty": "advanced",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q082/question.json": "b886d38acadd6fce35816de4f66eeeca231ff77b7b6eaaa762a401ca20984352",
+        "authoring/test-10/questions/Q082/media.json": "85b454344eb56661f54de8b5563e24762bd1f20247c73c66e3d6305f671f4aaa"
+      }
+    }
+  ],
+  "sourceMediaAndPhases": {
+    "groupId": "t10-g080",
+    "practiceAndFormal": {
+      "formal": {
+        "path": "audio/formal-groups/test-10/t10-g080.ogg",
+        "name": "t10-g080-formal.ogg",
+        "duration": 172.8325,
+        "samples": 8295960,
+        "sha256": "5c042c87b07fd94ebe611b247c09b5610477c75de7afbfb81ccf4bca7522ab68",
+        "phase": [
+          {
+            "role": "edge-lead",
+            "startSample48k": 0,
+            "endSample48k": 96000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "cue",
+            "startSample48k": 96000,
+            "endSample48k": 278400,
+            "inputPcmSha256": "698766f556023bb6cc49cf9b406151b25d6ab746ffa9a620efa50fcd17c7d555"
+          },
+          {
+            "role": "gap",
+            "startSample48k": 278400,
+            "endSample48k": 295200,
+            "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+          },
+          {
+            "role": "passage",
+            "startSample48k": 295200,
+            "endSample48k": 5284200,
+            "inputPcmSha256": "674171100085dbc5c56a0ca411b7309802720270dc62194bdfc1d87edd6c3da6",
+            "turnRanges48k": [
+              [
+                295200,
+                1400640
+              ],
+              [
+                1400640,
+                2519040
+              ],
+              [
+                2519040,
+                3149760
+              ],
+              [
+                3149760,
+                3897120
+              ],
+              [
+                3897120,
+                5284200
+              ]
+            ]
+          },
+          {
+            "role": "stem-80",
+            "startSample48k": 5284200,
+            "endSample48k": 5775720,
+            "inputPcmSha256": "672cc39e6d9e16b998187af50ffa2b058ce0a7be848fd3db53b2f2a46302a370"
+          },
+          {
+            "role": "answer-80",
+            "startSample48k": 5775720,
+            "endSample48k": 6159720,
+            "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+          },
+          {
+            "role": "stem-81",
+            "startSample48k": 6159720,
+            "endSample48k": 6533160,
+            "inputPcmSha256": "2a451915e2ee586a89532deacd694a3383b9db7ab2d45a16875391d5a4c0316a"
+          },
+          {
+            "role": "answer-81",
+            "startSample48k": 6533160,
+            "endSample48k": 6917160,
+            "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+          },
+          {
+            "role": "stem-82",
+            "startSample48k": 6917160,
+            "endSample48k": 7815960,
+            "inputPcmSha256": "3d04efd216d3b5a28667a97ffa8886419766c1c563b58f5fe086d4076993a0b5"
+          },
+          {
+            "role": "answer-82",
+            "startSample48k": 7815960,
+            "endSample48k": 8199960,
+            "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+          },
+          {
+            "role": "edge-tail",
+            "startSample48k": 8199960,
+            "endSample48k": 8295960,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      },
+      "practice": {
+        "path": "audio/practice-groups/test-10/t10-g080.ogg",
+        "name": "t10-g080-practice.ogg",
+        "duration": 107.9375,
+        "samples": 5181000,
+        "sha256": "a489ab15176e298e0c31fe13514c1db1b6d9916cb049cc3b53966f773f282593",
+        "phase": [
+          {
+            "role": "edge-lead",
+            "startSample48k": 0,
+            "endSample48k": 96000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "passage",
+            "startSample48k": 96000,
+            "endSample48k": 5085000,
+            "inputPcmSha256": "674171100085dbc5c56a0ca411b7309802720270dc62194bdfc1d87edd6c3da6",
+            "turnRanges48k": [
+              [
+                96000,
+                1201440
+              ],
+              [
+                1201440,
+                2319840
+              ],
+              [
+                2319840,
+                2950560
+              ],
+              [
+                2950560,
+                3697920
+              ],
+              [
+                3697920,
+                5085000
+              ]
+            ]
+          },
+          {
+            "role": "edge-tail",
+            "startSample48k": 5085000,
+            "endSample48k": 5181000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      }
+    },
+    "sharedSourceSha256": "5ec854c0b7b82a20b811b8592274a8c8b75c482ac8d8566b1c1ace33dd7cba5e",
+    "formalStemSourceSha256": "83e80facc0fb951f61a550eacbd4b426a9dc16322e10b15cbedb47e2ac437502",
+    "sourceStemRanges": [
+      [
+        0,
+        491520
+      ],
+      [
+        545760,
+        919200
+      ],
+      [
+        972000,
+        1870800
+      ]
+    ],
+    "sourceTurnCuts": [
+      0,
+      1105440,
+      2223840,
+      2854560,
+      3601920,
+      4989000
+    ],
+    "status": "private; ASR and native QA required"
+  },
+  "native": {
+    "fixtureSha256": "ce40769493efc3caaf9ea98fd7a8474831320ca3d268bb351d6382741a393278",
+    "practice": {
+      "path": "audio/practice-groups/test-10/t10-g080.ogg",
+      "previousTime": 0.770304,
+      "reset": 0,
+      "initial": 0.112367,
+      "paused": 0.268338,
+      "still": 0.268338,
+      "resumed": 0.598877,
+      "choices": [
+        4,
+        4,
+        4
+      ]
+    },
+    "formal": {
+      "path": "audio/formal-groups/test-10/t10-g080.ogg",
+      "initial": 0.044194,
+      "paused": 0.13143,
+      "still": 0.13143,
+      "resumed": 0.375322,
+      "rate": 1,
+      "stems": [
+        {
+          "n": 80,
+          "t": 110.505745,
+          "choices": [
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "n": 81,
+          "t": 128.696997,
+          "choices": [
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "n": 82,
+          "t": 144.444592,
+          "choices": [
+            4,
+            4,
+            4
+          ]
+        }
+      ]
+    }
+  },
+  "independentSpeechReceipts": {
+    "formal-whisper-small.json": "a9805d1c9f1865419c4fee542822476c9687754a1d6b77cec903877f51a24ffd",
+    "formal-whisper-base.json": "b04a0df655cc0929d84e00eaa6665a2b36a89c23fee05a3c7586aa8250a88824",
+    "formal-zipformer.json": "22267e588a44cc0daeb19887998195ca0d80113710434d0af9161c3c011670e7",
+    "practice-whisper-small.json": "b7f4d5a49235ad4bc818dc9277e89f77e466db30c3414bf034c8cee34e8aede3",
+    "practice-whisper-base.json": "24e908fe0e7c796392735a77ef0da53d1ae4709d8083205981b93b474f7652b8",
+    "practice-zipformer.json": "2b7d249918238b271d258712b1b67fceba5b824c64bb790ce98f2e59b23b6da6"
+  },
+  "notes": "Exact final recording preserves basement availability, separate attendant-controlled washer, completion notices versus actual finish, receipt versus position-map evidence. Zipformer renders annex in both; Whisper variants NX are the same spoken sound, and independent decoders all substantiate the actual access rules. Singapore Luna single-accent practice talk, Aria formal stems. Direct formal and real practice G077 to G080 continuity verified; natural formal neighbor pass remains whole-round scope."
+}
