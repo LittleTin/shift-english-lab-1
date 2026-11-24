@@ -1,0 +1,55 @@
+{
+  "id": "t09-q094",
+  "testId": "test-09",
+  "number": 94,
+  "part": 4,
+  "groupId": "t09-g092",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "foundation",
+  "tags": [
+    "talk",
+    "daily"
+  ],
+  "prompt": "Why is the booth speaker turned off?",
+  "promptZh": "錄音亭的喇叭為什麼關著？",
+  "options": [
+    {
+      "id": "A",
+      "text": "To prevent other visitors from hearing the story’s location.",
+      "zh": "不讓其他人聽見故事發生地點。",
+      "whyZh": "地點寫在卡上，關喇叭的理由是避免同時播放。"
+    },
+    {
+      "id": "B",
+      "text": "To make sure visitors bring their own headphones.",
+      "zh": "為了確保訪客自備耳機。",
+      "whyZh": "原文請訪客用耳機試聽，沒有要求自備。"
+    },
+    {
+      "id": "C",
+      "text": "To prevent the microphone from moving.",
+      "zh": "為了防止麥克風移動。",
+      "whyZh": "志工會按收音需要移麥；這和關喇叭無關。"
+    },
+    {
+      "id": "D",
+      "text": "To avoid playing audio over someone else’s recording.",
+      "zh": "避免播放聲音干擾別人錄音。",
+      "whyZh": "講者明說喇叭不開，以免另一個人正在錄音時播放聲音。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "講者明說喇叭不開，以免另一個人正在錄音時播放聲音。",
+  "evidence": "The booth speaker is off so it won’t play while someone else is recording.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "N",
+      "startChar": 490,
+      "endChar": 564,
+      "exactQuote": "The booth speaker is off so it won’t play while someone else is recording."
+    }
+  ]
+}

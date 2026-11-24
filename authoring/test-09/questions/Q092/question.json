@@ -1,0 +1,63 @@
+{
+  "id": "t09-q092",
+  "testId": "test-09",
+  "number": 92,
+  "part": 4,
+  "groupId": "t09-g092",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "talk",
+    "daily"
+  ],
+  "prompt": "What should a visitor do with a remembered sound and the details of where it happened?",
+  "promptZh": "訪客應如何處理記得的聲音與發生地點的細節？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Write down the story and give it to the volunteer instead of recording.",
+      "zh": "寫下故事交給志工，不錄音。",
+      "whyZh": "須先錄聲音；書寫卡片只用於補記細節，不能代替錄音。"
+    },
+    {
+      "id": "B",
+      "text": "Record the place first, then demonstrate the sound.",
+      "zh": "先錄下地點說明，再示範聲音。",
+      "whyZh": "地點應寫在卡上，不是放在錄音的開頭。"
+    },
+    {
+      "id": "C",
+      "text": "Record the sound first, then write the location on a card.",
+      "zh": "先錄聲音，再把地點寫在卡上。",
+      "whyZh": "錄音從聲音開始，時間與地點等細節錄完再寫。"
+    },
+    {
+      "id": "D",
+      "text": "Read the full story aloud and leave the card blank.",
+      "zh": "把整段故事念出來，卡片留白。",
+      "whyZh": "錄音只播放一小段，重點是聲音；地點資料另寫在卡上。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "錄音從聲音開始，時間與地點等細節錄完再寫。",
+  "evidence": "Start with the sound you remember, rather than telling us when and where it happened. / You can add those details on a card after you record.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "N",
+      "startChar": 154,
+      "endChar": 239,
+      "exactQuote": "Start with the sound you remember, rather than telling us when and where it happened."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "N",
+      "startChar": 240,
+      "endChar": 293,
+      "exactQuote": "You can add those details on a card after you record."
+    }
+  ]
+}
