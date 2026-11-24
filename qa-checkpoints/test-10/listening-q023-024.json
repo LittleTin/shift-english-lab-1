@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "testId": "test-10",
+  "scope": [
+    23,
+    24
+  ],
+  "status": "Validated authoring batch; not deployed",
+  "sourceBase": "b453b4f8e52c61a2cfe380eb4ef717be7a2493ff",
+  "integrationBase": "5641a9621a4c744ffddf3ed0370b418258a7f6ec",
+  "items": [
+    {
+      "number": 23,
+      "id": "t10-q023",
+      "answer": "A",
+      "difficulty": "intermediate",
+      "independentEvidence": "the desk lamp was our only light then",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q023/question.json": "b391f4b212a8a33f045e28f0d4740689693720721e6612ca4118e2498a903d9a",
+        "authoring/test-10/questions/Q023/media.json": "b6fa6e94fd308297677e844e96ef48da527da1cb912ac9122c6cc8372ea25be3",
+        "authoring/test-10/groups/t10-g023/group.json": "0baed0445a868961ef91de7baf5db2d2f4d937c2c09f742ec3440b94f74e505c"
+      },
+      "opus": {
+        "practice": {
+          "sha256": "d14e7594f723c779348398e36dfcabba4f76090fbfa59460b03d39f637c07342",
+          "samples48k": 1239600,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 1,
+              "rmsLsb": 0.02041
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 1143600,
+              "peakLsb": 24407
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1143600,
+              "endSample48k": 1239600,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        },
+        "formal": {
+          "sha256": "df1553242048c95447a7ded1a76bc1da6146cb24b0b969091ac3a8b6611e8df8",
+          "samples48k": 1697480,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 1,
+              "rmsLsb": 0.0125
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 153080,
+              "peakLsb": 28289
+            },
+            {
+              "role": "gap",
+              "startSample48k": 153080,
+              "endSample48k": 169880,
+              "peakLsb": 2,
+              "rmsLsb": 0.08964
+            },
+            {
+              "role": "passage",
+              "startSample48k": 169880,
+              "endSample48k": 1217480,
+              "peakLsb": 24373
+            },
+            {
+              "role": "answer",
+              "startSample48k": 1217480,
+              "endSample48k": 1601480,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1601480,
+              "endSample48k": 1697480,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        }
+      },
+      "recognizers": {
+        "whisper-small.json": "64dd1b667ec6f28ee5029f230a2be98a2ccf888cbc6b247c9fabae64787c5eb6",
+        "whisper-base.json": "88b3bee8a3dac78c9dc36d61fc4a02a40490d9457cc3cd71b4c90b6a19f7a97e",
+        "zipformer.json": "b37691c4f364a3618b5bc6a9bd8a996e7eee9ba62970bc7954e547a069ee1ef3"
+      }
+    },
+    {
+      "number": 24,
+      "id": "t10-q024",
+      "answer": "C",
+      "difficulty": "intermediate",
+      "independentEvidence": "this room is just for coats and bags",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q024/question.json": "d8c95e546b3273de3311dd3729faa556926ab6f5fcabca5d3b4dbf23efeb343b",
+        "authoring/test-10/questions/Q024/media.json": "3e033e5d7773d21f762259336abe16f221e77795363df4d84decdb2b363bad18",
+        "authoring/test-10/groups/t10-g024/group.json": "7d510400ff3e980d837567fe49df3bf51109dab959c4c457b04febe27ea93065"
+      },
+      "opus": {
+        "practice": {
+          "sha256": "fd83d9652d1aed58edde1b1be1c3eed225ca01dd1cbb36e1f2fd64a72d88130f",
+          "samples48k": 1068600,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 972600,
+              "peakLsb": 26593
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 972600,
+              "endSample48k": 1068600,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        },
+        "formal": {
+          "sha256": "2c3ebb30d460d2721df01b767fa2c9473e46847c2afee26434e2db7a8a2a58ba",
+          "samples48k": 1526214,
+          "phases": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 1,
+              "rmsLsb": 0.00323
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 152814,
+              "peakLsb": 21297
+            },
+            {
+              "role": "gap",
+              "startSample48k": 152814,
+              "endSample48k": 169614,
+              "peakLsb": 2,
+              "rmsLsb": 0.4194
+            },
+            {
+              "role": "passage",
+              "startSample48k": 169614,
+              "endSample48k": 1046214,
+              "peakLsb": 25176
+            },
+            {
+              "role": "answer",
+              "startSample48k": 1046214,
+              "endSample48k": 1430214,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1430214,
+              "endSample48k": 1526214,
+              "peakLsb": 0,
+              "rmsLsb": 0.0
+            }
+          ]
+        }
+      },
+      "recognizers": {
+        "whisper-small.json": "6c35ebf327eda6f53a1a343fff47fa2455b95bda1ef0230877fccbce49ecd444",
+        "whisper-base.json": "e793f548b789b16edbb8e87df0f0cdcb10ef28a702e2aaae7f0ea365f172bfb1",
+        "zipformer.json": "557e8eaca90dcada29c0151cb33a00970c75e1dd7979826861dd2d3566d8bc29"
+      }
+    }
+  ],
+  "native": {
+    "fixtureSha256": "c8727866aca5b900f752b653353052ddc770edb2e213a4eee0bba20efddb40cf",
+    "formal": {
+      "previousFromStart": 0.17342,
+      "natural": [
+        0.009366,
+        0.037344
+      ],
+      "fixedRate": 1,
+      "paused": [
+        0.012461,
+        0.076856
+      ],
+      "still": [
+        0.012461,
+        0.076856
+      ],
+      "resumed": [
+        0.255665,
+        0.325697
+      ]
+    },
+    "practice": {
+      "reset": [
+        0,
+        0
+      ],
+      "newSources": [
+        "audio/practice-groups/test-10/t10-g023.ogg",
+        "audio/practice-groups/test-10/t10-g024.ogg"
+      ],
+      "first": [
+        0.138403,
+        0.138206
+      ],
+      "paused": [
+        0.186481,
+        0.177998
+      ],
+      "still": [
+        0.186481,
+        0.177998
+      ],
+      "resumed": [
+        0.436727,
+        0.455338
+      ],
+      "previousFromStart": 0.177029
+    }
+  },
+  "recognitionNotes": "All three independent decoders recover both decisive answer clauses and both cue numbers in both practice and formal media as applicable. Q023 ASR normalized this set to the set; both Whisper variants render blinds as blind whereas Zipformer recovers plural in both modes, with one practice carrier preposition substitution. These do not alter the evaluated lighting distinction or option order. Q024 independently confirmed, including still in the hall and just for coats and bags. One shared F0 recording each, separate encoded Opus modes."
+}
