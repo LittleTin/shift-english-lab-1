@@ -1,0 +1,51 @@
+{
+  "id": "t09-q071",
+  "testId": "test-09",
+  "number": 71,
+  "part": 4,
+  "groupId": "t09-g071",
+  "revision": 1,
+  "prompt": "What does a tick beside a comment mean?",
+  "promptZh": "意見旁的勾表示什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The drawing has already been revised.",
+      "zh": "圖面已經改好了。",
+      "whyZh": "勾記只代表討論過，未表示圖面已改。"
+    },
+    {
+      "id": "B",
+      "text": "The comment was discussed at the review.",
+      "zh": "這項意見在審查時討論過。",
+      "whyZh": "講者說意見旁的勾表示團隊討論過。"
+    },
+    {
+      "id": "C",
+      "text": "The comment must be moved out of the log.",
+      "zh": "這項意見必須從紀錄中移除。",
+      "whyZh": "沒有說要刪除；勾記用來標示討論狀態。"
+    },
+    {
+      "id": "D",
+      "text": "The change has been approved for every enclosure.",
+      "zh": "變更已獲准套用到全部外殼。",
+      "whyZh": "勾不是同意變更，更不能推論適用全部外殼。"
+    }
+  ],
+  "answer": "B",
+  "difficulty": "foundation",
+  "explanationZh": "講者說意見旁的勾表示團隊討論過。",
+  "evidence": "a tick beside a comment means we discussed it, not that we agreed to change the design.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "F",
+      "startChar": 45,
+      "endChar": 132,
+      "exactQuote": "a tick beside a comment means we discussed it, not that we agreed to change the design."
+    }
+  ],
+  "topic": "manufacturing"
+}
