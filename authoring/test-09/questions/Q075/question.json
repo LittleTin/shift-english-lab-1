@@ -1,0 +1,63 @@
+{
+  "id": "t09-q075",
+  "testId": "test-09",
+  "number": 75,
+  "part": 4,
+  "groupId": "t09-g074",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "talk",
+    "daily"
+  ],
+  "prompt": "What can a family do upstairs, and what must they do downstairs to get on the list?",
+  "promptZh": "一家人可以在樓上做什麼？要列入名單，又必須到樓下做什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Leave a blank card upstairs and tell the storyteller their names downstairs.",
+      "zh": "把空白卡留在樓上，再下樓向說故事的人報姓名。",
+      "whyZh": "空白卡不能保留順位；應把填好的卡交給志工。"
+    },
+    {
+      "id": "B",
+      "text": "Sign the list upstairs and pick up headphones downstairs.",
+      "zh": "在樓上簽名，再到樓下取耳機。",
+      "whyZh": "樓上可以填卡，不是登記處；原文也沒有叫家庭下樓先拿耳機。"
+    },
+    {
+      "id": "C",
+      "text": "Wait upstairs until their names appear without showing a card.",
+      "zh": "在樓上等名字出現，不用出示卡片。",
+      "whyZh": "必須把卡交給志工確認，等待本身不列名。"
+    },
+    {
+      "id": "D",
+      "text": "Fill in a card upstairs and show it to the volunteer downstairs.",
+      "zh": "在樓上填卡，再下樓出示給志工。",
+      "whyZh": "樓上可填卡；下樓出示後，由志工把名字寫在名單上。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "樓上可填卡；下樓出示後，由志工把名字寫在名單上。",
+  "evidence": "You can fill out a listening card there, but bring it downstairs when you’re ready. / Show it to the volunteer, who’ll write your name on the list.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "N",
+      "startChar": 298,
+      "endChar": 381,
+      "exactQuote": "You can fill out a listening card there, but bring it downstairs when you’re ready."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "N",
+      "startChar": 414,
+      "endChar": 475,
+      "exactQuote": "Show it to the volunteer, who’ll write your name on the list."
+    }
+  ]
+}

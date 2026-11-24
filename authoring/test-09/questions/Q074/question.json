@@ -1,0 +1,63 @@
+{
+  "id": "t09-q074",
+  "testId": "test-09",
+  "number": 74,
+  "part": 4,
+  "groupId": "t09-g074",
+  "revision": 2,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "talk",
+    "daily"
+  ],
+  "prompt": "The storyteller is still reading, and an attendant is getting the booth ready. What should the attendant do?",
+  "promptZh": "說故事的人還在朗讀，服務人員正在準備聆聽室。服務人員該怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Keep the booth door open and start the first turn as soon as the booth is ready.",
+      "zh": "讓聆聽室的門開著，一準備好就讓第一組使用。",
+      "whyZh": "應開門讓候用家庭聽到叫名，但必須等故事講完才開始使用。"
+    },
+    {
+      "id": "B",
+      "text": "Keep the booth door open, but wait for the story to end before starting turns.",
+      "zh": "讓聆聽室的門開著，但等故事講完才開始輪流使用。",
+      "whyZh": "門開著能讓等候者聽見叫名；使用開始仍以主廳故事講完為準。"
+    },
+    {
+      "id": "C",
+      "text": "Keep the booth door closed and wait for the story to end before starting turns.",
+      "zh": "讓聆聽室的門關著，等故事講完才開始輪流使用。",
+      "whyZh": "等待時點對，但講者交代門保持開著，方便等候家庭聽到叫名。"
+    },
+    {
+      "id": "D",
+      "text": "Keep the booth door closed and start the first turn while the story is still going.",
+      "zh": "讓聆聽室的門關著，趁故事還在講時讓第一組使用。",
+      "whyZh": "門應開著；也不能在故事結束前讓人使用。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "門開著能讓等候者聽見叫名；使用開始仍以主廳故事講完為準。",
+  "evidence": "If you want to use the listening booth today, please wait until the storyteller has finished in the main room. / We leave the booth door open so that families can hear their names when we call them.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "N",
+      "startChar": 26,
+      "endChar": 136,
+      "exactQuote": "If you want to use the listening booth today, please wait until the storyteller has finished in the main room."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "N",
+      "startChar": 137,
+      "endChar": 222,
+      "exactQuote": "We leave the booth door open so that families can hear their names when we call them."
+    }
+  ]
+}

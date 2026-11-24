@@ -1,0 +1,63 @@
+{
+  "id": "t09-q076",
+  "testId": "test-09",
+  "number": 76,
+  "part": 4,
+  "groupId": "t09-g074",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "foundation",
+  "tags": [
+    "talk",
+    "daily"
+  ],
+  "prompt": "What does the speaker suggest about the headphones?",
+  "promptZh": "講者對耳機有什麼說明？",
+  "options": [
+    {
+      "id": "A",
+      "text": "They stay in the booth and are wiped between users.",
+      "zh": "耳機留在亭內，每次換人前會擦拭。",
+      "whyZh": "講者說耳機留在聆聽亭，換人使用時會擦拭。"
+    },
+    {
+      "id": "B",
+      "text": "They must be taken upstairs to be cleaned.",
+      "zh": "耳機必須拿到樓上清潔。",
+      "whyZh": "樓上是等候的位置，不是耳機清潔處。"
+    },
+    {
+      "id": "C",
+      "text": "A family must reserve them on a separate card.",
+      "zh": "一家人必須用另一張卡預約耳機。",
+      "whyZh": "只提到進亭的登記卡，沒有另訂耳機。"
+    },
+    {
+      "id": "D",
+      "text": "People are expected to bring their own.",
+      "zh": "大家應自備耳機。",
+      "whyZh": "原文交代耳機可留在亭內、輪次之間會擦拭，沒有要求自備。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "講者說耳機留在聆聽亭，換人使用時會擦拭。",
+  "evidence": "The headphones can stay in the booth. / We wipe them between turns.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "N",
+      "startChar": 476,
+      "endChar": 513,
+      "exactQuote": "The headphones can stay in the booth."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "N",
+      "startChar": 514,
+      "endChar": 541,
+      "exactQuote": "We wipe them between turns."
+    }
+  ]
+}
