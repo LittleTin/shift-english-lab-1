@@ -1,0 +1,41 @@
+{
+  "id": "t09-q012",
+  "testId": "test-09",
+  "number": 12,
+  "part": 2,
+  "groupId": "t09-g012",
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "prompt": "Listen and choose the best response.",
+  "promptZh": "請聽錄音，選出最適當的回應。",
+  "spokenPrompt": "The cabinet can open either way. Which side should I put the hinges on?",
+  "spokenPromptZh": "櫃門可以向任一側開。我應該把鉸鏈裝在哪一側？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The screws are in the plastic tray.",
+      "zh": "螺絲在塑膠托盤裡。",
+      "whyZh": "只提供工具零件的位置，沒有指定鉸鏈的安裝側。"
+    },
+    {
+      "id": "B",
+      "text": "On the left, so the door won't block the outlet on the right.",
+      "zh": "裝左側，這樣櫃門就不會擋住右邊的插座。",
+      "whyZh": "明確選左側，補充裝在這側的空間理由。"
+    },
+    {
+      "id": "C",
+      "text": "It was delivered without a handle.",
+      "zh": "送來時沒有門把。",
+      "whyZh": "描述缺少門把，沒有回應鉸鏈裝哪邊。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "明確選左側，補充裝在這側的空間理由。",
+  "evidence": "The cabinet can open either way. Which side should I put the hinges on? / On the left, so the door won't block the outlet on the right.",
+  "revision": 1,
+  "tags": [
+    "manufacturing",
+    "question_response"
+  ]
+}
