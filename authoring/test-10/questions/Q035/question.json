@@ -1,0 +1,46 @@
+{
+  "id": "t10-q035",
+  "uuid": "05dda353-5c82-598f-9f45-e1f62000d2cd",
+  "number": 35,
+  "part": 3,
+  "testId": "test-10",
+  "groupId": "t10-g035",
+  "difficulty": "advanced",
+  "topic": "business",
+  "prompt": "Look at the graphic. If the bay could accommodate panels up to 34 millimeters deep, which previously excluded model could now be used without changing either sound requirement?",
+  "promptZh": "請看圖表。如果維修區能容納安裝厚度最多 34 毫米的面板，在兩項降噪要求都不變的情況下，哪一款原本不符合條件的面板現在可以使用？",
+  "answer": "D",
+  "evidence": "“For the actual bay, we can’t use anything deeper than thirty millimeters.” / “And here are the minimums for the bay: ten decibels at two hundred and fifty hertz, and eleven at a thousand.” / “We need one panel that meets both.”",
+  "options": [
+    {
+      "id": "A",
+      "text": "Alder",
+      "zh": "Alder",
+      "whyZh": "Alder 的安裝厚度為 34 mm，這次已在新上限內；1,000 Hz 降噪 17 dB 也達標，但 250 Hz 只有 8 dB，仍低於 10 dB 的要求。"
+    },
+    {
+      "id": "B",
+      "text": "Brook",
+      "zh": "Brook",
+      "whyZh": "Brook 厚 28 mm，原本就沒有超過 30 mm；250 Hz 和 1,000 Hz 降噪量分別為 10、12 dB，原本便已符合兩項要求，因此不是新增加的選項。"
+    },
+    {
+      "id": "C",
+      "text": "Cinder",
+      "zh": "Cinder",
+      "whyZh": "Cinder 厚 23 mm，原本和現在都符合厚度限制，1,000 Hz 降噪 15 dB 也達標；但 250 Hz 只有 8 dB，放寬厚度限制也無法補足差距。"
+    },
+    {
+      "id": "D",
+      "text": "Dune",
+      "zh": "Dune",
+      "whyZh": "Dune 厚 32 mm，原本超過 30 mm，現在則未超過 34 mm；250 Hz 降噪 10 dB，1,000 Hz 降噪 11 dB，兩項要求都不必改動即可達標。"
+    }
+  ],
+  "explanationZh": "Dune 厚 32 mm，原本超過 30 mm，現在則未超過 34 mm；250 Hz 降噪 10 dB，1,000 Hz 降噪 11 dB，兩項要求都不必改動即可達標。",
+  "revision": 1,
+  "tags": [
+    "lab-results",
+    "manufacturing"
+  ]
+}

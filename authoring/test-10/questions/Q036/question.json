@@ -1,0 +1,46 @@
+{
+  "id": "t10-q036",
+  "uuid": "040de61d-a112-5dc3-b05b-ccd5f43160b6",
+  "number": 36,
+  "part": 3,
+  "testId": "test-10",
+  "groupId": "t10-g035",
+  "difficulty": "advanced",
+  "topic": "business",
+  "prompt": "Look at the graphic. Which pair meets the supervisor’s goal for the demonstration?",
+  "promptZh": "請看圖表。哪兩塊面板符合主管的示範目標？",
+  "answer": "C",
+  "evidence": "“The supervisor also wants to compare two panel models in a demonstration.” / “For that comparison, the two panels should have the same reduction at two hundred and fifty hertz.” / “That a thinner panel can cut more sound at a thousand hertz than a thicker one.” / “We’re not trying to show that thin panels are better in general.”",
+  "options": [
+    {
+      "id": "A",
+      "text": "Alder and Cinder",
+      "zh": "Alder 和 Cinder",
+      "whyZh": "兩者在 250 Hz 的降噪量同為 8 dB，但較薄的 Cinder 在 1,000 Hz 降噪 15 dB，低於較厚的 Alder 的 17 dB；無法示範指定現象。"
+    },
+    {
+      "id": "B",
+      "text": "Brook and Cinder",
+      "zh": "Brook 和 Cinder",
+      "whyZh": "較薄的 Cinder 在 1,000 Hz 的 15 dB 優於 Brook 的 12 dB，但兩者在 250 Hz 分別為 8、10 dB，不符相同比較條件。"
+    },
+    {
+      "id": "C",
+      "text": "Brook and Dune",
+      "zh": "Brook 和 Dune",
+      "whyZh": "Brook 和 Dune 在 250 Hz 同為 10 dB；較薄的 Brook（28 mm）在 1,000 Hz 可降低 12 dB，比 Dune（32 mm、11 dB）更多。"
+    },
+    {
+      "id": "D",
+      "text": "Alder and Brook",
+      "zh": "Alder 和 Brook",
+      "whyZh": "兩者在 250 Hz 為 8、10 dB，不相同；較薄的 Brook 在 1,000 Hz 的降噪量也不是兩者之中較高的。"
+    }
+  ],
+  "explanationZh": "Brook 和 Dune 在 250 Hz 同為 10 dB；較薄的 Brook（28 mm）在 1,000 Hz 可降低 12 dB，比 Dune（32 mm、11 dB）更多。",
+  "revision": 1,
+  "tags": [
+    "lab-results",
+    "manufacturing"
+  ]
+}
