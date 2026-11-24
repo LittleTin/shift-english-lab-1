@@ -1,0 +1,121 @@
+{
+  "testId": "test-09",
+  "questions": [
+    {
+      "number": 13,
+      "id": "t09-q013",
+      "uuid": "c14c8e45-58c6-5dae-a44b-6113ad7e0ec1",
+      "questionSha256": "c650b3f2c63cd9ed1ed46721d43e2d352e3a55518def9aecb277d180f4f8f0d6",
+      "groupSha256": "3ffc59c4d2c4e12679d41d479ae94338c76412c5070cfbf606702b10ad27b2d8",
+      "sidecarSha256": "873d465fda58efe3f970598e7932d4cdb0e00e6d159cd929af26350ebc91cdbc",
+      "nativeMediaManifestSha256": "f8fd5e70725dfb3a0553fd3b99b7f1643c3624cf0f7d7c2dc35e17e16c5d1d73"
+    },
+    {
+      "number": 14,
+      "id": "t09-q014",
+      "uuid": "9c32b502-7d26-5d57-b41c-4e9f8b155184",
+      "questionSha256": "7085a290cb11cea386a659224140fa79d7d2fd6c3946e35a701846cc7324a6fc",
+      "groupSha256": "4cc94c7a9c719997168ee9da642a23523a6db284611e0f5d695575f357ec8afd",
+      "sidecarSha256": "f131057c84ea7de70e701e5fb47854c8aef2652498be4deb7fd05181b2473c76",
+      "nativeMediaManifestSha256": "f8fd5e70725dfb3a0553fd3b99b7f1643c3624cf0f7d7c2dc35e17e16c5d1d73"
+    },
+    {
+      "number": 15,
+      "id": "t09-q015",
+      "uuid": "f3e83fdd-c5e8-5e65-9f8a-76b535fed01b",
+      "questionSha256": "f6ea7ea3103607667890820bfd5c39f0fd053ad13b5d148131051212f5fbc896",
+      "groupSha256": "b8afde3cd679f73dcc348a29572d50fbd3ecfa47d2ccb0e2041d194a61ad4e19",
+      "sidecarSha256": "aa799a21d692bfa9bd4cf7ae1db9b918288a1e13a2f7da473c6476454045beef",
+      "nativeMediaManifestSha256": "f8fd5e70725dfb3a0553fd3b99b7f1643c3624cf0f7d7c2dc35e17e16c5d1d73"
+    }
+  ],
+  "stage": "Three independently checked authoring groups only; no catalog, app, lock, full test release, or real account data.",
+  "integrationBase": "4dc7dc4254350024d98c20bd0be5ce484cc334d7",
+  "appSha256": "62ff3db3a5fde82100cf3cb4eb125139cd591a1440b65b59d58a75b3ec831600",
+  "checked": {
+    "offlineAsr": "Exact shared source, both final Opus scored text and independently isolated number cues. Q014 precursor pronunciation was corrected by replacing only its independently verified prompt; previously verified responses remain bit-identical in the shared input. Stronger Whisper both final raw/encoded and focused exact, independent targeted Zipformer verified signed in both final modes. Both Whisper sizes corroborated typo. Q013/Q015 media unchanged.",
+    "actualDiagnosticApp": "Own Chromium actual UUID lookup and unchanged live app players in private preview. Q013 formal pause/resume .170768/.416041 and continued to Q015 at 1x; directly opened Q014 formal at near zero, pause/resume .185750/.430246 on its corrected track. Q014 practice pause/resume .190603/.425744; previous Q013/next Q014/next Q015 each reset then started correct track near zero. Full exam, physical phone, and hosted site not tested."
+  },
+  "mediaEvidenceSha256": "f8fd5e70725dfb3a0553fd3b99b7f1643c3624cf0f7d7c2dc35e17e16c5d1d73",
+  "spliceProofSha256": "5631060e34e9bdc59a66af03f87eb7d7e7f4963b8634fc05b2411212586ee1e3",
+  "fullScoreQ014Sha256": "4e35ae2c6472c8f28e4e04357b160a1a139a9c16f273d9213006de018f69ef7a",
+  "focusedWhisperSha256": "f8bd9ae286a9274f195f14a46b4d71c0dbb61f3a33022502ddd866b7090850b6",
+  "focusedZipformerSha256": "3415e1b829b610e25de822bbafeb51cd17ab0b1dfc0e82248cd072f1f4ae0c89",
+  "files": {
+    "authoring/test-09/groups/t09-g013/group.json": {
+      "sha256": "3ffc59c4d2c4e12679d41d479ae94338c76412c5070cfbf606702b10ad27b2d8",
+      "size": 1525,
+      "oid": "1f9a6278b3fae7c56fd5b9a7b6da8ba35fa3b603"
+    },
+    "authoring/test-09/groups/t09-g014/group.json": {
+      "sha256": "4cc94c7a9c719997168ee9da642a23523a6db284611e0f5d695575f357ec8afd",
+      "size": 1769,
+      "oid": "c5154b78c179aa7d61a3221f7f800832aa2bf715"
+    },
+    "authoring/test-09/groups/t09-g015/group.json": {
+      "sha256": "b8afde3cd679f73dcc348a29572d50fbd3ecfa47d2ccb0e2041d194a61ad4e19",
+      "size": 1578,
+      "oid": "2140d48a3f31f61bdbb9696a718abfb84b19eabc"
+    },
+    "authoring/test-09/questions/Q013/media/audio/formal-groups/test-09/t09-g013.ogg": {
+      "sha256": "e1df4cd82a25a875fa1c69d4a50f2f9ff6915177c4400d348b4f9c7ef00806f6",
+      "size": 142854,
+      "oid": "8153d92453d718b73f1d9bc59e29e5ce1a337f98"
+    },
+    "authoring/test-09/questions/Q013/media/audio/practice-groups/test-09/t09-g013.ogg": {
+      "sha256": "8b047cb298b74723c7c857bfc46f3754506cec9b9ded7e853a75613665995f79",
+      "size": 113028,
+      "oid": "5822ab7d27f2979ce403d7b619d6f6b5b84fe5ca"
+    },
+    "authoring/test-09/questions/Q013/media.json": {
+      "sha256": "873d465fda58efe3f970598e7932d4cdb0e00e6d159cd929af26350ebc91cdbc",
+      "size": 1077,
+      "oid": "05729cbb0244e4adcee460d0b20ac462229367fe"
+    },
+    "authoring/test-09/questions/Q013/question.json": {
+      "sha256": "c650b3f2c63cd9ed1ed46721d43e2d352e3a55518def9aecb277d180f4f8f0d6",
+      "size": 1377,
+      "oid": "bb50ba340b46a5474f3e16c8cb2cb528320b4902"
+    },
+    "authoring/test-09/questions/Q014/media/audio/formal-groups/test-09/t09-g014.ogg": {
+      "sha256": "aaf8c0628a7f394eb36b60d9ebe470e127c84e0960b17f77579fa95fbcf1af40",
+      "size": 148174,
+      "oid": "87552b8f24a41a10fe011e5a5863ebf1c0957ad8"
+    },
+    "authoring/test-09/questions/Q014/media/audio/practice-groups/test-09/t09-g014.ogg": {
+      "sha256": "408c894051779952803e9ff3a41b7f8a076ee03b6597395050bfbee3184409c1",
+      "size": 118278,
+      "oid": "2893c0874e14270c928df0c5d1811ad25556ba80"
+    },
+    "authoring/test-09/questions/Q014/media.json": {
+      "sha256": "f131057c84ea7de70e701e5fb47854c8aef2652498be4deb7fd05181b2473c76",
+      "size": 1090,
+      "oid": "117441953830417d3b39a99d13f07f680a6fb84e"
+    },
+    "authoring/test-09/questions/Q014/question.json": {
+      "sha256": "7085a290cb11cea386a659224140fa79d7d2fd6c3946e35a701846cc7324a6fc",
+      "size": 1633,
+      "oid": "4ec087d8526750c01d95aee3ee14673d841927bd"
+    },
+    "authoring/test-09/questions/Q015/media/audio/formal-groups/test-09/t09-g015.ogg": {
+      "sha256": "ff528da7dbd7a9f06739394efa06af63654fcebb3acd30429dce423d2ab3feea",
+      "size": 135595,
+      "oid": "b3c025fca25768de47268cb42eec2107429a622d"
+    },
+    "authoring/test-09/questions/Q015/media/audio/practice-groups/test-09/t09-g015.ogg": {
+      "sha256": "52107482c778c2b99feb74ac0573334cf49569011e50e496456f1f20670016a9",
+      "size": 106324,
+      "oid": "f6d2266a9357c2aec868595395a077c4179ab3ef"
+    },
+    "authoring/test-09/questions/Q015/media.json": {
+      "sha256": "aa799a21d692bfa9bd4cf7ae1db9b918288a1e13a2f7da473c6476454045beef",
+      "size": 1073,
+      "oid": "fc3ca82d113aaa3b2f1364dc58678a825cf1f2d7"
+    },
+    "authoring/test-09/questions/Q015/question.json": {
+      "sha256": "f6ea7ea3103607667890820bfd5c39f0fd053ad13b5d148131051212f5fbc896",
+      "size": 1465,
+      "oid": "6c14057199cca517958655d3bc6e180ed643eab7"
+    }
+  }
+}
