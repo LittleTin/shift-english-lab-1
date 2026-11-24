@@ -1,0 +1,227 @@
+{
+  "group": "t09-g038",
+  "status": "Authoring batch accepted; unreleased.",
+  "sourceGroupSha256": "96de3acf9b2e73b41de839f960a371809940fb3c38e74bd4ff8eeaeae526b56f",
+  "questions": [
+    {
+      "q": 38,
+      "questionId": "t09-q038",
+      "uuid": "f9531d56-89d7-534c-9048-211ea6168ea5",
+      "qSha256": "39d96c148eb678259f61a071549eac92b8e90b5e35110698178dffe5022284b0",
+      "sidecarSha256": "c0785926bc61253d99f9afb4a8680d948ee99976c497cff28a8ed9faf6e964e8"
+    },
+    {
+      "q": 39,
+      "questionId": "t09-q039",
+      "uuid": "54f4035f-1b64-522a-8a53-077d49b66993",
+      "qSha256": "d5309d88818919f834a7d2582f0b734a03e25d5ff59fa6078e1b798d50d96f5c",
+      "sidecarSha256": "52efc5a28e96e5e98b7cb78075b67373ad2104ecc6403f934f0bd6f7e9eff111"
+    },
+    {
+      "q": 40,
+      "questionId": "t09-q040",
+      "uuid": "ee187ce3-0f89-5d50-91ce-84d3ae425320",
+      "qSha256": "13d3faa593e75ea28d15b9efa58bd0f436c7ef73ca24bbba0226fa66860f9901",
+      "sidecarSha256": "11997cba8b709fefe36fb0f469345e83f7ccf7727ec278ab4363b40647d3264e"
+    }
+  ],
+  "mediaPaths": [
+    {
+      "url": "audio/formal-groups/test-09/t09-g038.ogg",
+      "source": "test-09/groups/t09-g038/media/audio/formal-groups/test-09/t09-g038.ogg"
+    },
+    {
+      "url": "audio/practice-groups/test-09/t09-g038.ogg",
+      "source": "test-09/groups/t09-g038/media/audio/practice-groups/test-09/t09-g038.ogg"
+    }
+  ],
+  "mediaManifestSha256": "e1ee4276cb35cae855a943f7a680332938511da267137387a97eeb522c760ab6",
+  "integrationBase": "bb0926cde7261103351fbff28d0e420d4c18feb8",
+  "appSha256": "ef028bf3264029472171725692332eda767e8ba0d120be022b63e29833a7c84e",
+  "candidateEvidenceSha256": "01ecd54e842ccacf691197d245b58c01028ddac8a286bcba8faeac6396659299",
+  "sourceCutMapSha256": "c5990dbdde42c25bdc51f2b44cf0a5f1372311fad11c7b9b7846df43ce6a13c3",
+  "sourcePreflightSha256": "db42b9ec792b0934027bf0cfc1fc9b91c6ab43bdd7c173d581d2525b2aa2789f",
+  "decodedAsrSha256": {
+    "whisperSmall": "d0ac6291e4e77d300f566460fdc112e0f824546a02675a51d5aa7b33cb0e27d1",
+    "zipformer": "3975993bac6825864af063196b9584d7ab689c801ecfbab4491c8196cd752c03"
+  },
+  "media": {
+    "formal": {
+      "file": "t09-g038-formal.ogg",
+      "sha256": "550d890216446ba0d1f665cf3690a3a462de3bd962fee8a9e8545af0a1ef720e",
+      "samples48k": 4378680,
+      "halfSecondGuardPeaksLsb": [
+        0,
+        1
+      ],
+      "timeline": [
+        {
+          "role": "gap",
+          "startSample48k": 0,
+          "endSample48k": 96000,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "cue",
+          "startSample48k": 96000,
+          "endSample48k": 302400,
+          "inputPcmSha256": "4e4da388bf79c8ae9c04b829b2f706f122d1ff0389268c3a0b0a7786f36ecd48"
+        },
+        {
+          "role": "gap",
+          "startSample48k": 302400,
+          "endSample48k": 319200,
+          "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+        },
+        {
+          "role": "passage",
+          "startSample48k": 319200,
+          "endSample48k": 2239320,
+          "inputPcmSha256": "c6358fc0bee35c5c5e14f1b0341d6c43abdf47fe99a2820f961769c4cf056f5d",
+          "turnRanges48k": [
+            [
+              319200,
+              676800
+            ],
+            [
+              676800,
+              1077600
+            ],
+            [
+              1077600,
+              1759200
+            ],
+            [
+              1759200,
+              2239320
+            ]
+          ]
+        },
+        {
+          "role": "stem:38",
+          "startSample48k": 2239320,
+          "endSample48k": 2557080,
+          "inputPcmSha256": "1ea9abaf4414e4df7677b03744c8ccd05e79730687b08958e4c7abce20914b35"
+        },
+        {
+          "role": "answer:38",
+          "startSample48k": 2557080,
+          "endSample48k": 2941080,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "stem:39",
+          "startSample48k": 2941080,
+          "endSample48k": 3219480,
+          "inputPcmSha256": "367aa7c84e554a9285ae7011acf35a3e77fc7006b2c629f121bc6362f5c58e37"
+        },
+        {
+          "role": "answer:39",
+          "startSample48k": 3219480,
+          "endSample48k": 3603480,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "stem:40",
+          "startSample48k": 3603480,
+          "endSample48k": 3898680,
+          "inputPcmSha256": "96a85bc54f9a2af6f6e5b6a3d572b46bf25ca3a6de2a9870cb449965a696c16a"
+        },
+        {
+          "role": "answer:40",
+          "startSample48k": 3898680,
+          "endSample48k": 4282680,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "gap",
+          "startSample48k": 4282680,
+          "endSample48k": 4378680,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        }
+      ]
+    },
+    "practice": {
+      "file": "t09-g038-practice.ogg",
+      "sha256": "8fa35b057400aa1ddb9e2f44008cca4695845133ee66cb3e771785079b031656",
+      "samples48k": 2112120,
+      "halfSecondGuardPeaksLsb": [
+        0,
+        1
+      ],
+      "timeline": [
+        {
+          "role": "gap",
+          "startSample48k": 0,
+          "endSample48k": 96000,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "passage",
+          "startSample48k": 96000,
+          "endSample48k": 2016120,
+          "inputPcmSha256": "c6358fc0bee35c5c5e14f1b0341d6c43abdf47fe99a2820f961769c4cf056f5d",
+          "turnRanges48k": [
+            [
+              96000,
+              453600
+            ],
+            [
+              453600,
+              854400
+            ],
+            [
+              854400,
+              1536000
+            ],
+            [
+              1536000,
+              2016120
+            ]
+          ]
+        },
+        {
+          "role": "gap",
+          "startSample48k": 2016120,
+          "endSample48k": 2112120,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        }
+      ]
+    }
+  },
+  "semanticChecks": {
+    "38": "B: people are actively using the doorway; hears same in both exact Opus",
+    "39": "C: photograph rounded corner on first visit; same in both exact Opus",
+    "40": "A: caretaker keeps door open until the man arrives, then closes; same in both exact Opus"
+  },
+  "recognition": "First unscored occurrence of hall resolves in independent Zipformer model and the second is heard in both. All scored evidence and the narrator range and stems confirmed independently.",
+  "native": {
+    "engine": "Cloud Chromium, exact private fixture",
+    "fixtureSha256": "50adccfe63428ff1e39d6fce33ca2d31eac34d3fe7564d8b454924d7b2f0116d",
+    "formal": {
+      "previousBeforeEnd": 77.500932,
+      "automaticNextDistinctFile": 15.288608,
+      "initial": 0,
+      "firstSampled": 0.131026,
+      "paused": 15.491056,
+      "whileStillPaused": 15.491056,
+      "afterResume": 15.740411,
+      "rate": 1,
+      "nextDisabled": true,
+      "transcriptHidden": true
+    },
+    "practice": {
+      "previous": 0.147495,
+      "reset": 0,
+      "newFirstSampled": 0.117572,
+      "paused": 0.174185,
+      "whileStillPaused": 0.174185,
+      "afterResume": 0.417583
+    },
+    "threeDisplayed": [
+      38,
+      39,
+      40
+    ]
+  }
+}
