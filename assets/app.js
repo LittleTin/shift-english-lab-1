@@ -1463,8 +1463,22 @@ function scopedChartZoom(g,sessionId=''){
  if(!officialReviewedChart(g)||!safeMedia(g.image)||!Number.isInteger(g.chartWidthPx)||g.chartWidthPx<600||g.chartWidthPx>2000)return '';
  return '<details class="chart-full-size"'+(sessionId?' data-quiz-chart="'+esc(sessionId+':'+g.id)+'"':'')+'><summary>View full-size chart</summary><div tabindex="0" role="region" aria-label="Scrollable full-size chart" style="overflow:auto;max-width:100%;"><img src="'+esc(g.image)+'" width="'+g.chartWidthPx+'" alt="" style="display:block;width:'+g.chartWidthPx+'px;max-width:none;height:auto;"></div></details>';
 }
+const LEGACY_REVIEW_CHARTS=new Map([
+  ['t01-g039-r2',['test-01',3,'assets/graphics/62a63cbb0721343a21cc04e1.jpg']],
+  ['t01-g049',['test-01',4,'assets/graphics/77133f7d456a3b8d9baee605.jpg']],
+  ['t02-g032',['test-02',3,'assets/graphics/a6f0fc305dda092a84b50a90.jpg']],
+  ['t02-g049',['test-02',4,'assets/graphics/f3d11a89cde8ed5b9c9def99.jpg']],
+  ['t03-g035',['test-03',3,'assets/graphics/072d051478b462600b1216a9.jpg']],
+  ['t03-g040-r2',['test-03',3,'assets/graphics/9df87449704f079f6bfd2604.jpg']],
+  ['t03-g050',['test-03',4,'assets/graphics/d1a2492e3ff12ddac3266bb5.jpg']]
+]);
+function legacyReviewChart(g){
+ const chart=LEGACY_REVIEW_CHARTS.get(g?.id);
+ return !!chart&&g.testId===chart[0]&&g.part===chart[1]&&g.image===chart[2]&&
+  !!officialEntry(chart[0])&&typeof g.imageAlt==='string'&&g.imageAlt.trim().length>0;
+}
 function reviewedChartImage(g){
- const alt=officialReviewedChart(g)?g.imageAlt:'Question illustration';
+ const alt=officialReviewedChart(g)||legacyReviewChart(g)?g.imageAlt:'Question illustration';
  return '<img class="scene-img" src="'+esc(g.image)+'" alt="'+esc(alt)+'">'+scopedChartZoom(g);
 }
 function quizPage(){
