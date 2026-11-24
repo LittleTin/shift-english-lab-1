@@ -1,0 +1,276 @@
+{
+  "testId": "test-09",
+  "stage": "Two independently reviewed authoring groups only; not a live catalog, full exam, locked release or phone test.",
+  "questions": [
+    {
+      "number": 17,
+      "id": "t09-q017",
+      "uuid": "08abf2ca-21b5-576d-b8b2-ca1670ca4efd",
+      "questionSha256": "b33e1d7220a5a4c1d162f3760e7640c4218d70c8d801a6d904fb8af344165709",
+      "groupSha256": "148736453825b1a9bd62ade2ebdc8820e6f7bc0db3a14e412ff7015aee2ca764",
+      "sidecarSha256": "ad44a5258ca6eed795068afc53bbff8258165a0f5daa48f02a7fbb6dc61f636a",
+      "nativeMediaManifestSha256": "669d6fd149b967e47f260a5848e08ddf39d26acaa791881545789d3f69e57eaf"
+    },
+    {
+      "number": 18,
+      "id": "t09-q018",
+      "uuid": "0d9f8697-10c4-5fa7-adae-485076b91e7b",
+      "questionSha256": "dc2ddeb7611404e60fa54df314913c0b95a499ca7fd32a26b7012783c746b31d",
+      "groupSha256": "e32c32dd219d2450e00c1eb45b1722280b0c39a4c0814075ca0aba68184c84f6",
+      "sidecarSha256": "127dd842925698da4310555dce9210cd906e27fa816810df1484ec3732852481",
+      "nativeMediaManifestSha256": "669d6fd149b967e47f260a5848e08ddf39d26acaa791881545789d3f69e57eaf"
+    }
+  ],
+  "integrationBase": "4dc7dc4254350024d98c20bd0be5ce484cc334d7",
+  "appSha256": "62ff3db3a5fde82100cf3cb4eb125139cd591a1440b65b59d58a75b3ec831600",
+  "media": {
+    "17": {
+      "lockedReferenceSlices": {
+        "cue": {
+          "sourceSha256": "dd7f93a3e83ece46776bfeea5555aa1767728c2bc4d5a3fac4ea154358ddeb1f",
+          "halfOpen48k": [
+            96960,
+            149652
+          ],
+          "cutSha256": "60f12e4ad9f819499aa5b5215e5879c2b05d90e6bf14b7a919cf0605172284b4"
+        }
+      },
+      "sourceSha256": "d99f65307248fee9d33b0bedbd15d10ccaa9e1fedccb3c8d67ac33e479af2838",
+      "practice": {
+        "file": "q017-practice.ogg",
+        "encodedSha256": "0d37abce2911f279ce1958d60a81758666ad0370383411c24bbe197c131477a3",
+        "samples48k": 1017840,
+        "physicalGuardPeakFirstLast500ms": [
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "role": "guard lead",
+            "startSample48k": 0,
+            "endSample48k": 96000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "same shared source",
+            "startSample48k": 96000,
+            "endSample48k": 921840,
+            "inputPcmSha256": "0726d9d9b878f22928847de83bd8c65f946667fd4644274d8618387a195c5858"
+          },
+          {
+            "role": "guard tail",
+            "startSample48k": 921840,
+            "endSample48k": 1017840,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      },
+      "formal": {
+        "file": "q017-formal.ogg",
+        "encodedSha256": "a3d1a2418378c14f1b15b870340e7d82c31d4116b63cc13a4810b3210a3b87b0",
+        "samples48k": 1471332,
+        "physicalGuardPeakFirstLast500ms": [
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "role": "guard lead",
+            "startSample48k": 0,
+            "endSample48k": 96000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "cue",
+            "startSample48k": 96000,
+            "endSample48k": 148692,
+            "inputPcmSha256": "60f12e4ad9f819499aa5b5215e5879c2b05d90e6bf14b7a919cf0605172284b4"
+          },
+          {
+            "role": "cue-to-prompt pause",
+            "startSample48k": 148692,
+            "endSample48k": 165492,
+            "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+          },
+          {
+            "role": "same shared source",
+            "startSample48k": 165492,
+            "endSample48k": 991332,
+            "inputPcmSha256": "0726d9d9b878f22928847de83bd8c65f946667fd4644274d8618387a195c5858"
+          },
+          {
+            "role": "draft answer window",
+            "startSample48k": 991332,
+            "endSample48k": 1375332,
+            "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+          },
+          {
+            "role": "guard tail",
+            "startSample48k": 1375332,
+            "endSample48k": 1471332,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      }
+    },
+    "18": {
+      "lockedReferenceSlices": {
+        "cue": {
+          "sourceSha256": "e277236ed3bb938928972f1b62f11799537ee216db08f70870ebf42762c26f62",
+          "halfOpen48k": [
+            96960,
+            143788
+          ],
+          "cutSha256": "3a43c6881ee814af3a25e20a74f65c25842fa37284af61ebe29d8a56fdd31f8f"
+        }
+      },
+      "sourceSha256": "f6208057a374f6a85780846fcc4a97b0743ad871d25354c210cb50f8dbce20fa",
+      "practice": {
+        "file": "q018-practice.ogg",
+        "encodedSha256": "413eca330e2d71a8b519f32a7b8bd9f9ae5ffd96f9ed67493c5a4c9d9304067f",
+        "samples48k": 1242840,
+        "physicalGuardPeakFirstLast500ms": [
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "role": "guard lead",
+            "startSample48k": 0,
+            "endSample48k": 96000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "same shared source",
+            "startSample48k": 96000,
+            "endSample48k": 1146840,
+            "inputPcmSha256": "82c5617672e61b4e58a4165a9d87e4df5cc8103d3c7dc8f4762ba25c0af2f848"
+          },
+          {
+            "role": "guard tail",
+            "startSample48k": 1146840,
+            "endSample48k": 1242840,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      },
+      "formal": {
+        "file": "q018-formal.ogg",
+        "encodedSha256": "15ea6cda6d515d8c2431900b59f55d8076dfc00ab3bffa1a95b67bd40b7eba17",
+        "samples48k": 1690468,
+        "physicalGuardPeakFirstLast500ms": [
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "role": "guard lead",
+            "startSample48k": 0,
+            "endSample48k": 96000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "cue",
+            "startSample48k": 96000,
+            "endSample48k": 142828,
+            "inputPcmSha256": "3a43c6881ee814af3a25e20a74f65c25842fa37284af61ebe29d8a56fdd31f8f"
+          },
+          {
+            "role": "cue-to-prompt pause",
+            "startSample48k": 142828,
+            "endSample48k": 159628,
+            "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+          },
+          {
+            "role": "same shared source",
+            "startSample48k": 159628,
+            "endSample48k": 1210468,
+            "inputPcmSha256": "82c5617672e61b4e58a4165a9d87e4df5cc8103d3c7dc8f4762ba25c0af2f848"
+          },
+          {
+            "role": "draft answer window",
+            "startSample48k": 1210468,
+            "endSample48k": 1594468,
+            "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+          },
+          {
+            "role": "guard tail",
+            "startSample48k": 1594468,
+            "endSample48k": 1690468,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      }
+    }
+  },
+  "q017": {
+    "selection": "C gives the bus number; A is pool hours and B is a shelter location. All questions, original choices, translations and explanations unchanged. The exact voiced option B label uses the explicit announcement “Option B.”, not a wording change to the response.",
+    "onlyLabelReplaced": true,
+    "sameOtherSourceSamples": true,
+    "spliceEvidenceSha256": "882e0ceb1dc4d415568a47afd728560223e832c8cf1a647355f7b4b1e1d7e067",
+    "indexedOriginalLockedNumberCue": "17",
+    "check": "Small Whisper decoded practice and formal scored bodies and isolated label to the exact script and “Option B.”; independent Zipformer exact B label in both decoded candidates, and both sentence clips have the intended response. Focused base Whisper confirmed “which bus stops ... on Sundays” in the exact two modes.",
+    "asrSha256": {
+      "whisper-base-prompt.json": "973852895a3e8e27a2541d282df3b0825e58cf070f5bbaa0ff0c15bb5b45c2ba",
+      "whisper-small.json": "942b5e0973a4dcf73090bd4089946567758759081d3f62127ad8388fd5fb0b20",
+      "zipformer.json": "88bd397333f3e27a54e7d796df30e52e7aa3a6ff8247be7db5048f8d0ff6d0a4"
+    }
+  },
+  "q018": {
+    "selection": "A explains the vendor’s call was incomplete and that the delivery date is needed in writing; B proposes a phone and C gives a phone number. Exact scored media is unchanged.",
+    "check": "Both final media independently verified for the key phrase “in writing” and contrast “isn’t working” using targeted excerpts. Exact 18 number cue and all labels preserved.",
+    "originalWhisperEvidenceSha256": "086b98fd1c11bde9d28c1cf22b5a6cbee6a1d387b78e45c19a4a16635bed6e7d",
+    "keyPhraseWhisperSha256": "f7f1c78b9b0d91788b97282eaad494a4511f60b0476bb01a35896f44c5ddbb63",
+    "keyPhraseZipformerSha256": "6c6b92bee969e103fa336bb4fbf2481f9255138d85d4ced271111b69d390572c",
+    "negativeAsrSha256": {
+      "whisper-base.json": "59ce39597249e7293e47d0afd97359a3af00b932b0aa69f42396069d67ba6faf",
+      "whisper-small.json": "59ce39597249e7293e47d0afd97359a3af00b932b0aa69f42396069d67ba6faf",
+      "zipformer.json": "65c287b4d147a09799084dda59386b1269840b40ded538f72e44b2d91fce1fab"
+    }
+  },
+  "actualChromium": {
+    "modeSeparationAndCorrectMediaForAll": true,
+    "rateAllFormal": 1,
+    "resumeMeasurementsSeconds": {
+      "q017Practice": [
+        0.185469,
+        0.185469,
+        0.432939
+      ],
+      "q017Formal": [
+        0.168794,
+        0.168794,
+        0.413817
+      ],
+      "q018Practice": [
+        0.188628,
+        0.188628,
+        0.414924
+      ],
+      "q018FormalDirect": [
+        0.167087,
+        0.167087,
+        0.388737
+      ]
+    },
+    "cursorOrder": [
+      "manually paused",
+      "confirmed stationary while paused",
+      "resumed same file"
+    ],
+    "practiceAdjacent": {
+      "from": 17,
+      "to": 18,
+      "postSwitchPausedZero": true,
+      "q018PlaybackNearZero": 0.131898
+    },
+    "formalAdjacent": {
+      "from": 17,
+      "to": 18,
+      "autoNextObservedPlaying": true,
+      "q018FirstObserved": 5.864053,
+      "q018ManualPauseAt": 5.905212
+    },
+    "nativePreviewWasPrivateAndNoRecordsSaved": true
+  }
+}
