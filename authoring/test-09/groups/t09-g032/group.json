@@ -1,0 +1,67 @@
+{
+  "id": "t09-g032",
+  "roles": {
+    "F": "en-GB-SoniaNeural",
+    "M": "en-CA-LiamNeural"
+  },
+  "passage": "F: The supplier register is missing two names after this morning’s import. They’re both in the file we received. What happened?\nM: Both supplier names contain a comma. The import treated those commas as column breaks, so it skipped the two rows.\nF: Put quotation marks around each complete name in the file. Keep the names themselves exactly as the suppliers wrote them. Then test those two rows in a copy of the register.\nM: If the names come through correctly, I’ll import just the two missing rows into the real register. There’s no need to load the full list again.",
+  "turns": [
+    {
+      "speaker": "F",
+      "text": "The supplier register is missing two names after this morning’s import. They’re both in the file we received. What happened?",
+      "zh": "今天早上匯入後，供應商名冊少了兩個名稱。收到的檔案裡明明都有。發生什麼事了？"
+    },
+    {
+      "speaker": "M",
+      "text": "Both supplier names contain a comma. The import treated those commas as column breaks, so it skipped the two rows.",
+      "zh": "兩家供應商的名稱都含逗號。匯入工具把那些逗號當成欄位分隔符號，因此跳過那兩列。"
+    },
+    {
+      "speaker": "F",
+      "text": "Put quotation marks around each complete name in the file. Keep the names themselves exactly as the suppliers wrote them. Then test those two rows in a copy of the register.",
+      "zh": "在原始檔裡用引號框住每個完整名稱，名稱本身仍要照供應商原先的寫法。接著用名冊的副本測這兩列。"
+    },
+    {
+      "speaker": "M",
+      "text": "If the names come through correctly, I’ll import just the two missing rows into the real register. There’s no need to load the full list again.",
+      "zh": "如果名稱能正確匯入，我就只把缺少的兩列匯入正式名冊，不必重載整份清單。"
+    }
+  ],
+  "passageZh": "F：今天早上匯入後，供應商名冊少了兩個名稱。收到的檔案裡明明都有。發生什麼事了？\nM：兩家供應商的名稱都含逗號。匯入工具把那些逗號當成欄位分隔符號，因此跳過那兩列。\nF：在原始檔裡用引號框住每個完整名稱，名稱本身仍要照供應商原先的寫法。接著用名冊的副本測這兩列。\nM：如果名稱能正確匯入，我就只把缺少的兩列匯入正式名冊，不必重載整份清單。",
+  "part": 3,
+  "testId": "test-09",
+  "topic": "technology",
+  "audioSpeakers": [
+    {
+      "speaker": "F",
+      "modelVoice": "en-GB-SoniaNeural",
+      "locale": "en-GB",
+      "role": "speaker setting"
+    },
+    {
+      "speaker": "M",
+      "modelVoice": "en-CA-LiamNeural",
+      "locale": "en-CA",
+      "role": "speaker setting"
+    }
+  ],
+  "title": "Questions 32–34",
+  "titleZh": "第 32–34 題",
+  "formalSourcePlan": {
+    "standaloneStems": [
+      "Number 32. What caused the register to omit two suppliers?",
+      "Number 33. How should the coordinator prepare the test file?",
+      "Number 34. What should happen if the test works?"
+    ],
+    "rangeCue": "Questions 32 through 34 refer to the following conversation.",
+    "narrator": "en-US-AriaNeural",
+    "locale": "en-US",
+    "spokenOptions": false
+  },
+  "audio": "audio/practice-groups/test-09/t09-g032.ogg",
+  "audioStart": 0,
+  "audioEnd": 39.865,
+  "duration": 39.865,
+  "audioScript": "F: The supplier register is missing two names after this morning’s import. They’re both in the file we received. What happened?\nM: Both supplier names contain a comma. The import treated those commas as column breaks, so it skipped the two rows.\nF: Put quotation marks around each complete name in the file. Keep the names themselves exactly as the suppliers wrote them. Then test those two rows in a copy of the register.\nM: If the names come through correctly, I’ll import just the two missing rows into the real register. There’s no need to load the full list again.",
+  "spokenWords": 97
+}

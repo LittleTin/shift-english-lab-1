@@ -1,0 +1,51 @@
+{
+  "id": "t09-q032",
+  "number": 32,
+  "part": 3,
+  "groupId": "t09-g032",
+  "prompt": "What caused the register to omit two suppliers?",
+  "promptZh": "什麼原因使名冊漏掉兩家供應商？",
+  "difficulty": "intermediate",
+  "answer": "B",
+  "explanationZh": "匯入把名稱中的逗號當成欄位界線，因此跳過兩列。",
+  "options": [
+    {
+      "id": "A",
+      "text": "The new file did not list their names.",
+      "zh": "新檔案沒有列出他們的名稱。",
+      "whyZh": "女子確認來源檔有兩家名稱。"
+    },
+    {
+      "id": "B",
+      "text": "The tool read punctuation in their names as field separators.",
+      "zh": "工具將名稱裡的標點當成欄位分隔符號。",
+      "whyZh": "匯入把名稱中的逗號當成欄位界線，因此跳過兩列。"
+    },
+    {
+      "id": "C",
+      "text": "They had already been entered by another employee.",
+      "zh": "他們已由另一位員工登記。",
+      "whyZh": "沒有提到重複登記。"
+    },
+    {
+      "id": "D",
+      "text": "Their names were changed by their suppliers.",
+      "zh": "供應商改了自己的名稱。",
+      "whyZh": "問題是逗號的解析方式，不是名稱變動。"
+    }
+  ],
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 2,
+      "speaker": "M",
+      "startChar": 0,
+      "endChar": 114,
+      "exactQuote": "Both supplier names contain a comma. The import treated those commas as column breaks, so it skipped the two rows."
+    }
+  ],
+  "evidence": "Both supplier names contain a comma. The import treated those commas as column breaks, so it skipped the two rows.",
+  "testId": "test-09",
+  "topic": "technology",
+  "revision": 1
+}

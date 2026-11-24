@@ -1,0 +1,51 @@
+{
+  "id": "t09-q034",
+  "number": 34,
+  "part": 3,
+  "groupId": "t09-g032",
+  "prompt": "What should happen if the test works?",
+  "promptZh": "如果測試成功，下一步是什麼？",
+  "difficulty": "foundation",
+  "answer": "A",
+  "explanationZh": "名冊副本測試成功後，只補正式名冊漏掉的資料。",
+  "options": [
+    {
+      "id": "A",
+      "text": "Import only the two missing rows into the actual register.",
+      "zh": "只把缺少的兩列匯入正式名冊。",
+      "whyZh": "名冊副本測試成功後，只補正式名冊漏掉的資料。"
+    },
+    {
+      "id": "B",
+      "text": "Load the entire list into the actual register again.",
+      "zh": "把完整清單重新匯入正式名冊。",
+      "whyZh": "原文明說不用重載全份清單。"
+    },
+    {
+      "id": "C",
+      "text": "Ask each supplier to send a new spelling.",
+      "zh": "請兩家供應商提供新的拼法。",
+      "whyZh": "保留既有名稱；不必向供應商索取新拼法。"
+    },
+    {
+      "id": "D",
+      "text": "Keep the two names only in the test copy.",
+      "zh": "只在測試副本保留兩家名稱。",
+      "whyZh": "測試後要補進正式名冊，不是停留在副本。"
+    }
+  ],
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 4,
+      "speaker": "M",
+      "startChar": 0,
+      "endChar": 143,
+      "exactQuote": "If the names come through correctly, I’ll import just the two missing rows into the real register. There’s no need to load the full list again."
+    }
+  ],
+  "evidence": "If the names come through correctly, I’ll import just the two missing rows into the real register. There’s no need to load the full list again.",
+  "testId": "test-09",
+  "topic": "technology",
+  "revision": 1
+}

@@ -1,0 +1,51 @@
+{
+  "id": "t09-q033",
+  "number": 33,
+  "part": 3,
+  "groupId": "t09-g032",
+  "prompt": "How should the coordinator prepare the test file?",
+  "promptZh": "協調人員應如何準備測試檔？",
+  "difficulty": "foundation",
+  "answer": "D",
+  "explanationZh": "引號把整個名稱標成單一欄位，並保留原寫法。",
+  "options": [
+    {
+      "id": "A",
+      "text": "Remove punctuation from the suppliers’ names.",
+      "zh": "刪除供應商名稱中的標點。",
+      "whyZh": "名稱文字應原樣保留，不能刪逗號。"
+    },
+    {
+      "id": "B",
+      "text": "Put quotation marks around only the commas.",
+      "zh": "只在逗號兩側加引號。",
+      "whyZh": "要用引號包住各完整名稱，不是只包標點。"
+    },
+    {
+      "id": "C",
+      "text": "Rewrite both names without spaces.",
+      "zh": "重新輸入名稱並去掉空格。",
+      "whyZh": "要求保留原寫法，沒有要求去空格。"
+    },
+    {
+      "id": "D",
+      "text": "Put quotation marks around the full names without rewriting them.",
+      "zh": "在各完整名稱外加引號，名稱文字保持不變。",
+      "whyZh": "引號把整個名稱標成單一欄位，並保留原寫法。"
+    }
+  ],
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 3,
+      "speaker": "F",
+      "startChar": 0,
+      "endChar": 173,
+      "exactQuote": "Put quotation marks around each complete name in the file. Keep the names themselves exactly as the suppliers wrote them. Then test those two rows in a copy of the register."
+    }
+  ],
+  "evidence": "Put quotation marks around each complete name in the file. Keep the names themselves exactly as the suppliers wrote them. Then test those two rows in a copy of the register.",
+  "testId": "test-09",
+  "topic": "technology",
+  "revision": 1
+}
