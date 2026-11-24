@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "testId": "test-10",
+  "scope": [
+    4
+  ],
+  "status": "Validated authoring batch; not deployed",
+  "sourceBase": "f5e980e2fc08137ea6797573f72d4f6d2a67d61e",
+  "integrationBase": "39b448c1c93a6d353db208809aca03dc80f9a0c1",
+  "items": [
+    {
+      "number": 4,
+      "key": "D",
+      "difficulty": "intermediate",
+      "source": {
+        "authoring/test-10/groups/t10-g004/group.json": "483f743a0726c337f6880c65c70cfecb96799a52aba0470f7b7c150d0eb996d2",
+        "authoring/test-10/questions/Q004/question.json": "8512af9cb7fec1d014ed66eda003e4c1c877f1205a22a1824e7a368f75f5e00c",
+        "authoring/test-10/questions/Q004/media.json": "42b583d0f1cbc0be202e81c31eb216d157c07d6eaa36e93091e815d5dbf785fe"
+      },
+      "visualSha256": "c83954942e444144f4e7cd914b9e5db5dc1261cc5a83924db364d746828f37cb",
+      "blindVisualReceiptSha256": "29fbb133787ec2377785afc46900d8f1eadb825a5addd5f6f2fb2fe1c448f94d",
+      "practiceFormal": {
+        "formal": {
+          "sha256": "3380dbe1dd90357675b4a01b2f7aa3f41797487451d55dafe761e2a79eb1722c",
+          "samples": 1769634,
+          "phase": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 1,
+              "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "cue",
+              "startSample48k": 96000,
+              "endSample48k": 134514,
+              "peakLsb": 14722,
+              "inputPcmSha256": "dca81c4690a188f31c0d544c1700985a17c30089f2300f58f69466d010c87977"
+            },
+            {
+              "role": "gap",
+              "startSample48k": 134514,
+              "endSample48k": 151314,
+              "peakLsb": 2,
+              "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+            },
+            {
+              "role": "passage",
+              "startSample48k": 151314,
+              "endSample48k": 1289634,
+              "peakLsb": 18229,
+              "inputPcmSha256": "a00e6332f0e996d0f1b70dd64a1dbe08a01b690039f831420be6845011381b27"
+            },
+            {
+              "role": "answer",
+              "startSample48k": 1289634,
+              "endSample48k": 1673634,
+              "peakLsb": 0,
+              "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1673634,
+              "endSample48k": 1769634,
+              "peakLsb": 0,
+              "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            }
+          ]
+        },
+        "practice": {
+          "sha256": "dc4213cfd0967314350a523b011f112d4070ef9f13a6e246990d538e7f06bd60",
+          "samples": 1330320,
+          "phase": [
+            {
+              "role": "edge-lead",
+              "startSample48k": 0,
+              "endSample48k": 96000,
+              "peakLsb": 0,
+              "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            },
+            {
+              "role": "passage",
+              "startSample48k": 96000,
+              "endSample48k": 1234320,
+              "peakLsb": 17780,
+              "inputPcmSha256": "a00e6332f0e996d0f1b70dd64a1dbe08a01b690039f831420be6845011381b27"
+            },
+            {
+              "role": "edge-tail",
+              "startSample48k": 1234320,
+              "endSample48k": 1330320,
+              "peakLsb": 0,
+              "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+            }
+          ]
+        }
+      },
+      "speechRecognizers": {
+        "formal-whisper-small.json": "0b9fbc31c1f670b9ad6e0530c6d74d5befa1ff0fee6f62dab5c018dd4a4031ef",
+        "practice-whisper-small.json": "3c17e46577f650a8240733325d51cc87119b17548fb1e0868711cb662940b8fc",
+        "formal-whisper-base.json": "ee3d158a00685b6e7ebc1d78deb6199426d6e15a4f78108fdd41709e40a89d1c",
+        "practice-whisper-base.json": "3c17e46577f650a8240733325d51cc87119b17548fb1e0868711cb662940b8fc",
+        "formal-zipformer.json": "d5d2ed62accecac06b2af0193f5d8a058ea2109d1200a4115d986a751de2ee84",
+        "practice-zipformer.json": "d8bd982ea7c6d801c245efc328cc502a8ad86eaa5d4439d6d66506e27d50c155"
+      }
+    }
+  ],
+  "native": {
+    "fixtureSha256": "9cca32c9b0310ee4f30294ddab609790f8e1ccc31094c7bcf3be00ffa2fbbc47",
+    "formal": {
+      "initial": 0.152342,
+      "transition": 0.045138,
+      "tail": 38.651411,
+      "rate": 1,
+      "image": {
+        "alt": "Pottery bowls and workshop items on a wooden bench.",
+        "natural": 1200,
+        "scroll": 1348,
+        "src": "assets/scenes/test-10/test10-p1-004.jpg",
+        "vw": 1348,
+        "width": 401.546875
+      },
+      "opts": [
+        "AChoose A",
+        "BChoose B",
+        "CChoose C",
+        "DChoose D"
+      ],
+      "pause": 0.147387,
+      "still": 0.147387,
+      "resume": 0.372203
+    },
+    "practice": {
+      "old": 0.97,
+      "reset": 0,
+      "started": 0.127254,
+      "pause": 0.170006,
+      "still": 0.170006,
+      "resume": 0.400771,
+      "image": {
+        "alt": "Pottery bowls and workshop items on a wooden bench.",
+        "natural": 1200,
+        "scroll": 1348,
+        "src": "assets/scenes/test-10/test10-p1-004.jpg",
+        "vw": 1348,
+        "width": 401.546875
+      },
+      "opts": [
+        "AChoose A",
+        "BChoose B",
+        "CChoose C",
+        "DChoose D"
+      ]
+    },
+    "mobile": {
+      "img": {
+        "alt": "Pottery bowls and workshop items on a wooden bench.",
+        "natural": 1200,
+        "scroll": 375,
+        "src": "assets/scenes/test-10/test10-p1-004.jpg",
+        "vw": 375,
+        "width": 293
+      },
+      "opts": [
+        "AChoose A",
+        "BChoose B",
+        "CChoose C",
+        "DChoose D"
+      ]
+    }
+  },
+  "recognitionNotes": "Both actual final Opus read all A–D exact per both Whisper models; Zipformer independently corroborates the full ordering and qualifiers, with bowls/bulls near-homophone only for C. Exact R2 JPEG and Intermediate adjudicated cold. Narrow browser has no horizontal overflow and no printed spoken choices. Actual natural G003 into G004 plus in-place pauses/resumes verified."
+}
