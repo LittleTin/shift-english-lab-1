@@ -1,0 +1,66 @@
+{
+  "id": "t10-q175",
+  "testId": "test-10",
+  "number": 175,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "focus-boundaries"
+  ],
+  "prompt": "Where should Dee and Eli have their updated meeting?",
+  "promptZh": "狄和伊萊變更議程後，應在哪裡開會？",
+  "options": [
+    {
+      "id": "A",
+      "text": "At the corner table, since that was the original meeting place",
+      "zh": "在角落桌，因為那是原訂會面地點。",
+      "whyZh": "角落桌可供簡短交換，但改過的議程需要較長討論，不能只沿用原先的安排。"
+    },
+    {
+      "id": "B",
+      "text": "In the enclosed room, so they can hold the longer discussion together",
+      "zh": "在有門的會議室，方便兩人一起參與較長的討論。",
+      "whyZh": "改過的議程要逐項討論六件事和各項替代做法，合理預期不只是交換幾句話；兩人在同一處與同事交談，應使用有門的會議室。"
+    },
+    {
+      "id": "C",
+      "text": "In the phone booth, since only one colleague is joining by video",
+      "zh": "在電話亭，因為只有一位同事透過視訊加入。",
+      "whyZh": "電話亭只容許一位現場使用者，不能以視訊那端只有一人來判斷；狄和伊萊都在現場。"
+    },
+    {
+      "id": "D",
+      "text": "At the corner table if Dee and Eli take turns speaking to the colleague",
+      "zh": "在角落桌，只要狄和伊萊輪流和那位同事說話。",
+      "whyZh": "輪流說話沒有讓六件待議事項變成簡短交換；場地決定仍取決於預期談話長度。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "改過的議程要逐項討論六件事和各項替代做法，合理預期不只是交換幾句話；兩人在同一處與同事交談，應使用有門的會議室。",
+  "vocabulary": [
+    {
+      "term": "a quick exchange",
+      "zh": "簡短交換意見",
+      "note": "逐項討論多個未定方案，和只確認一個日期不一樣；場所人數以現場的人為準。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-13",
+  "evidence": "For conversations between coworkers, the open corner table is fine for a quick exchange, but move to the enclosed room if you expect anything longer. The small phone booth is for one person, even if the call itself will be brief. These rules apply to people sharing the space, not to the number of callers on a screen. / Dee and Eli had planned to meet at the corner table to confirm one date. Before the meeting, the colleague joining them by video sent them six unresolved matters and wrote, 'Let’s go through these one at a time and discuss the alternatives, rather than just confirming the dates.' Both Dee and Eli will be in the office and need to speak to the colleague from the same location.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 873,
+      "endChar": 1191,
+      "exactQuote": "For conversations between coworkers, the open corner table is fine for a quick exchange, but move to the enclosed room if you expect anything longer. The small phone booth is for one person, even if the call itself will be brief. These rules apply to people sharing the space, not to the number of callers on a screen."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1193,
+      "endChar": 1571,
+      "exactQuote": "Dee and Eli had planned to meet at the corner table to confirm one date. Before the meeting, the colleague joining them by video sent them six unresolved matters and wrote, 'Let’s go through these one at a time and discuss the alternatives, rather than just confirming the dates.' Both Dee and Eli will be in the office and need to speak to the colleague from the same location."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "t10-q174",
+  "testId": "test-10",
+  "number": 174,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "focus-boundaries"
+  ],
+  "prompt": "Who, if anyone, meets the stated conditions for speaking to Rowan before 12:00?",
+  "promptZh": "誰符合在 12:00 前當面打斷羅恩的條件？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Avery and Samir only",
+      "zh": "只有艾佛里和薩米爾。",
+      "whyZh": "兩人都在 12:00 前需要資訊，但艾佛里已可從共用資料夾的定稿取得日期，只有薩米爾沒有替代來源。"
+    },
+    {
+      "id": "B",
+      "text": "Mallory and Samir only",
+      "zh": "只有瑪洛里和薩米爾。",
+      "whyZh": "兩人都沒有替代來源，但瑪洛里最晚在 12:15 需要回覆，晚於羅恩下次查看訊息的時間。"
+    },
+    {
+      "id": "C",
+      "text": "Samir only",
+      "zh": "只有薩米爾。",
+      "whyZh": "他得在羅恩下次查看訊息前回電，也只有羅恩知道新集合地點，兩項條件都符合。"
+    },
+    {
+      "id": "D",
+      "text": "Avery only",
+      "zh": "只有艾佛里。",
+      "whyZh": "艾佛里的期限最早，但仍可自行取得資訊；薩米爾的期限也在 12:00 前，而且不能使用其他來源。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "他得在羅恩下次查看訊息前回電，也只有羅恩知道新集合地點，兩項條件都符合。",
+  "vocabulary": [
+    {
+      "term": "supply what is needed",
+      "zh": "提供所需的資訊",
+      "note": "期限早且無替代來源才符合當面打斷的條件。兩項缺一不可。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-13",
+  "evidence": "A violet marker on a desk means that the person is doing work that should not be interrupted. The time printed below the marker is when they will next read messages. Speak to the person before then only if you need something from them before that time and neither another person nor a shared source can supply it. A deadline on its own does not make a spoken interruption necessary. / Rowan’s marker says 12:00. Avery needs by 11:50 the date that Rowan put into the revised welcome letter, but the final letter is already in the shared folder. Mallory needs Rowan’s recollection of yesterday’s discussion by 12:15; there are no minutes and nobody else heard the part in question. Samir must reply to a caller by 11:55 about where a training group will meet. Rowan moved the group this morning. No one else knows the new room, and the shared room list is still out of date.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 0,
+      "endChar": 382,
+      "exactQuote": "A violet marker on a desk means that the person is doing work that should not be interrupted. The time printed below the marker is when they will next read messages. Speak to the person before then only if you need something from them before that time and neither another person nor a shared source can supply it. A deadline on its own does not make a spoken interruption necessary."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 384,
+      "endChar": 871,
+      "exactQuote": "Rowan’s marker says 12:00. Avery needs by 11:50 the date that Rowan put into the revised welcome letter, but the final letter is already in the shared folder. Mallory needs Rowan’s recollection of yesterday’s discussion by 12:15; there are no minutes and nobody else heard the part in question. Samir must reply to a caller by 11:55 about where a training group will meet. Rowan moved the group this morning. No one else knows the new room, and the shared room list is still out of date."
+    }
+  ]
+}

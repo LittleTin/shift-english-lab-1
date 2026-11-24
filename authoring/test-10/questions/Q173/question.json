@@ -1,0 +1,66 @@
+{
+  "id": "t10-q173",
+  "testId": "test-10",
+  "number": 173,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "framing-commission"
+  ],
+  "prompt": "Which reply would most directly resolve Dara’s concern without interpreting it as a request for a lower price?",
+  "promptZh": "哪種答覆最直接回應達拉的疑慮，又不把它誤解成要求降價？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Offer the original price for both windows and put the work on both items in progress.",
+      "zh": "兩個開口都按原估價收費，並開始處理兩項工作。",
+      "whyZh": "達拉沒有要求用原價做兩件事，也尚未決定要展示題詞，不能直接開始題詞的額外工作。"
+    },
+    {
+      "id": "B",
+      "text": "Show the illustration work and the optional dedication work separately, and begin the approved part.",
+      "zh": "分開列出插畫的工作和可加選的題詞工作，先開始已核可的部分。",
+      "whyZh": "較高的估價是包含額外題詞工作，不是調高相同工作的價格；拆開列明可讓達拉決定是否加選，同時依其意願先處理插畫。"
+    },
+    {
+      "id": "C",
+      "text": "Explain that the frame charge has not changed, then wait for a decision on the whole estimate.",
+      "zh": "說明畫框費用不變，然後等達拉決定是否接受整份估價。",
+      "whyZh": "畫框費用未變確實是相關事實，但只說這點沒有讓達拉分別選擇兩項工作；達拉也希望先處理插畫，不必等題詞決定。"
+    },
+    {
+      "id": "D",
+      "text": "Permanently remove the dedication from the commission and confirm the original total.",
+      "zh": "永久取消題詞這項委託工作，並確認原先的總額。",
+      "whyZh": "達拉仍在考慮是否加做題詞，並未拒絕；先做基本部分不等於永久取消另一個選項。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "較高的估價是包含額外題詞工作，不是調高相同工作的價格；拆開列明可讓達拉決定是否加選，同時依其意願先處理插畫。",
+  "vocabulary": [
+    {
+      "term": "match the first number",
+      "zh": "照第一個報價收費",
+      "note": "客戶要求分開看可加選的工作，不是在要求同樣的額外工作用較低價格承做。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-12",
+  "evidence": "At another visit, Dara showed me two estimates for a commission. Our first email gave a lower figure for displaying a single illustration. The later estimate was higher because it also included a second window for a handwritten dedication that Dara wanted to show beside the illustration. Both figures included the same charge for the frame. Dara had read the later figure as a replacement for the first, not as the price of doing more work. / Dara said, ‘I’m not asking you to match the first number. Just make it possible for me to choose what I’m paying for.’ The handwritten dedication is still under consideration. Dara has approved the frame and wants work on the illustration to go ahead even if we do not display the dedication. No extra work on the dedication has begun.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 791,
+      "endChar": 1232,
+      "exactQuote": "At another visit, Dara showed me two estimates for a commission. Our first email gave a lower figure for displaying a single illustration. The later estimate was higher because it also included a second window for a handwritten dedication that Dara wanted to show beside the illustration. Both figures included the same charge for the frame. Dara had read the later figure as a replacement for the first, not as the price of doing more work."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1234,
+      "endChar": 1569,
+      "exactQuote": "Dara said, ‘I’m not asking you to match the first number. Just make it possible for me to choose what I’m paying for.’ The handwritten dedication is still under consideration. Dara has approved the frame and wants work on the illustration to go ahead even if we do not display the dedication. No extra work on the dedication has begun."
+    }
+  ]
+}

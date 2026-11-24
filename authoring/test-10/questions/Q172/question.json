@@ -1,0 +1,66 @@
+{
+  "id": "t10-q172",
+  "testId": "test-10",
+  "number": 172,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "framing-commission"
+  ],
+  "prompt": "Which plan would give Anika the choice she is asking for, while using the frames she likes?",
+  "promptZh": "哪項做法既能給安妮卡想要的選圖自由，又能使用她喜歡的畫框？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Prepare a selection of openings in advance and show her how to group the drawings that fit each opening.",
+      "zh": "先備好幾種開口，再教她怎麼依各開口可容納的作品分組。",
+      "whyZh": "雖可使用原框且不必裁圖，但要先按固定開口挑圖組，還是讓現有尺寸左右作品搭配。"
+    },
+    {
+      "id": "B",
+      "text": "Let her choose each set together, then trim the original drawings to keep the existing cards usable.",
+      "zh": "讓她先挑好每一組作品，再裁剪原畫，以便沿用框內卡紙。",
+      "whyZh": "順序確實讓她先按整組效果選圖，但她不希望任何原畫被裁剪，不能用這個方式保留卡紙。"
+    },
+    {
+      "id": "C",
+      "text": "Let her choose a set first, then cut openings in spare cards based on those drawings, keeping the wooden frames.",
+      "zh": "讓她先選定一組作品，再依那些圖畫的尺寸裁切備用卡紙的開口，沿用原本的木框。",
+      "whyZh": "先確定作品搭配，再按原畫尺寸開卡紙，可保留木框和未裁剪的原畫，也讓框的原固定開口不再限制選圖。"
+    },
+    {
+      "id": "D",
+      "text": "Cut all the spare cards to match the largest drawing and leave the originals untrimmed.",
+      "zh": "把所有備用卡紙的開口都裁成最大圖畫的尺寸，不裁剪原畫。",
+      "whyZh": "雖然沒裁原畫，但大小不同的圖仍使用同尺寸開口，小幅作品可能沒法適當展示；仍是先決定開口尺寸，而非按已選好的圖組調整。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "先確定作品搭配，再按原畫尺寸開卡紙，可保留木框和未裁剪的原畫，也讓框的原固定開口不再限制選圖。",
+  "vocabulary": [
+    {
+      "term": "decide on a set",
+      "zh": "先選定一組作品",
+      "note": "先挑作品再配開口，不讓四個畫框原有尺寸決定作品怎麼組合。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-12",
+  "evidence": "Anika, the illustrator, is planning a series of small drawings that she can display in the same four frames. She likes the dark wooden borders on the frames we lent her and asked us not to make them narrower. Her problem is the card inside each frame: it has one fixed opening, and a smaller drawing slips too far behind it. The card slides out from behind the wooden border. We have spare cards without openings; the workshop cuts these after it receives the dimensions of a drawing. / She spent ten minutes trying to decide which drawing would fit which frame. ‘I want the frames to disappear from the decision,’ she said. She said she wanted the pieces in each month’s display to work as a set, not simply have something in every frame. She does not want us to trim any of the originals.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 0,
+      "endChar": 484,
+      "exactQuote": "Anika, the illustrator, is planning a series of small drawings that she can display in the same four frames. She likes the dark wooden borders on the frames we lent her and asked us not to make them narrower. Her problem is the card inside each frame: it has one fixed opening, and a smaller drawing slips too far behind it. The card slides out from behind the wooden border. We have spare cards without openings; the workshop cuts these after it receives the dimensions of a drawing."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 486,
+      "endChar": 789,
+      "exactQuote": "She spent ten minutes trying to decide which drawing would fit which frame. ‘I want the frames to disappear from the decision,’ she said. She said she wanted the pieces in each month’s display to work as a set, not simply have something in every frame. She does not want us to trim any of the originals."
+    }
+  ]
+}
