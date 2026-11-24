@@ -1,0 +1,46 @@
+{
+  "id": "t10-q045",
+  "uuid": "0897454e-87db-5838-9076-d150600f7d24",
+  "number": 45,
+  "part": 3,
+  "testId": "test-10",
+  "groupId": "t10-g044",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "prompt": "Why would changing a main-map pin alone not solve the problem for people using the printed sign?",
+  "promptZh": "為什麼只改主地圖的標記，無法解決使用印刷看板的訪客遇到的問題？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The printed code would stop working after the pin was hidden.",
+      "zh": "隱藏地圖標記後，印刷的掃描碼會失效。",
+      "whyZh": "掃描碼本身正常，且直達攤商頁面，不是連到某個主地圖標記。"
+    },
+    {
+      "id": "B",
+      "text": "The printed sign shows the two stop dates in the wrong order.",
+      "zh": "印刷看板上兩個營業地點的日期順序排錯了。",
+      "whyZh": "順序問題是在掃碼開啟的攤商頁面；對話沒有說印刷看板直接列出兩個日期。"
+    },
+    {
+      "id": "C",
+      "text": "Scanning the code opens a different view in which the current stop is not the first one listed.",
+      "zh": "掃碼會開啟另一個頁面，而今天的營業點在該頁面上並未排在第一個。",
+      "whyZh": "掃碼不經主地圖；攤商頁面目前按輸入順序，把非當日營業的圖書館排第一，所以只改主地圖不會改變掃碼訪客看到的順序。"
+    },
+    {
+      "id": "D",
+      "text": "Scanning the code opens a view that does not include the theater stop at all.",
+      "zh": "掃碼開啟的頁面根本沒有劇院營業點。",
+      "whyZh": "劇院已列在頁面上，只是排在圖書館後面。"
+    }
+  ],
+  "answer": "C",
+  "evidence": "“Does it open the main map?” / “Straight to the Finch page, actually.” / “It works, but the stops are listed in the order they were entered.” / “The library is first, even though the theater is today's.”",
+  "explanationZh": "掃碼不經主地圖；攤商頁面目前按輸入順序，把非當日營業的圖書館排第一，所以只改主地圖不會改變掃碼訪客看到的順序。",
+  "revision": 1,
+  "tags": [
+    "public-information",
+    "market-navigation"
+  ]
+}

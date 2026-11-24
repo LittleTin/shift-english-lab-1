@@ -1,0 +1,46 @@
+{
+  "id": "t10-q044",
+  "uuid": "c70a12b8-96ed-531f-af0a-b5d45563c93e",
+  "number": 44,
+  "part": 3,
+  "testId": "test-10",
+  "groupId": "t10-g044",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "prompt": "Which change to the main map best meets the speakers’ needs?",
+  "promptZh": "主地圖怎麼改最符合兩位講者的需求？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Keep both Finch pins until dates can be added.",
+      "zh": "在能加上日期之前，先保留雀鳥咖啡的兩個地圖標記。",
+      "whyZh": "現在的主地圖標記沒有日期，保留兩個會讓今天來買咖啡的人仍可能跑錯地點。"
+    },
+    {
+      "id": "B",
+      "text": "Show the theater pin and hide the library pin.",
+      "zh": "顯示劇院的地圖標記，隱藏圖書館的地圖標記。",
+      "whyZh": "劇院是今天的營業點。只顯示劇院標記，既保留了有用的地圖資訊，也不再把今天的訪客引向圖書館。"
+    },
+    {
+      "id": "C",
+      "text": "Hide both Finch pins for now.",
+      "zh": "暫時隱藏雀鳥咖啡的兩個地圖標記。",
+      "whyZh": "隱藏兩個標記確實能避免訪客跟著地圖跑錯，但也讓他們連今天營業的地點都無法從主地圖找到。"
+    },
+    {
+      "id": "D",
+      "text": "Show the library pin and hide the theater pin.",
+      "zh": "顯示圖書館的地圖標記，隱藏劇院的地圖標記。",
+      "whyZh": "只顯示一個標記的方向正確，但圖書館不是今天的營業點；應保留的是劇院標記。"
+    }
+  ],
+  "answer": "B",
+  "evidence": "“the pins on the main map have no date labels.” / “We can hide individual pins without taking the stops off the vendor's page.” / “Let's keep a pin where people can actually buy coffee today.” / “The library is first, even though the theater is today's.” / “People planning a Saturday visit still need it.”",
+  "explanationZh": "劇院是今天的營業點。只顯示劇院標記，既保留了有用的地圖資訊，也不再把今天的訪客引向圖書館。",
+  "revision": 1,
+  "tags": [
+    "public-information",
+    "market-navigation"
+  ]
+}
