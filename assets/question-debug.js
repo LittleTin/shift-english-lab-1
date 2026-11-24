@@ -89,7 +89,8 @@ function show(found){
  head.tabIndex=-1;card.append(head,el('p',title),el('p','UUID: '+uuid,'hint'),el('p','Question ID: '+q.id+(g?' · Group: '+g.id:''),'hint'),el('h3',q.prompt),el('p',q.promptZh,'translation'));
  const scopedChart=(
   p.testId==='test-08'&&g?.id==='t08-g059'&&g.image==='assets/scenes/test-08/bench-site-survey-list.jpg'&&g.chartWidthPx===720?'t08-q060':
-  p.testId==='test-08'&&g?.id==='t08-g089'&&g.image==='assets/scenes/test-08/paper-scraps-worktop.jpg'&&g.chartWidthPx===1170?'t08-q090':'');
+  p.testId==='test-08'&&g?.id==='t08-g089'&&g.image==='assets/scenes/test-08/paper-scraps-worktop.jpg'&&g.chartWidthPx===1170?'t08-q090':
+  p.testId==='test-09'&&g?.id==='t09-g077'&&g.image==='assets/scenes/test-09/glove-sorting-worksheet.jpg'&&g.chartWidthPx===1130?'t09-q078':'');
  if(g&&safeAsset(g.image,'image')&&(!scopedChart||q.id===scopedChart)){
   const img=el('img');img.src=g.image;img.alt=g.imageAlt||'Original question image';
   card.append(img,el('p',g.image,'hint'),href(g.image,'Open original image'));

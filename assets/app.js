@@ -1444,7 +1444,9 @@ function officialReviewedChart(g){
    g.id==='t08-g059'&&g.image==='assets/scenes/test-08/bench-site-survey-list.jpg'&&g.chartWidthPx===720||
    g.id==='t08-g089'&&g.image==='assets/scenes/test-08/paper-scraps-worktop.jpg'&&g.chartWidthPx===1170||
    g.id==='t08-r-p7-10'&&g.image==='assets/scenes/test-08/film-stock.jpg'&&g.chartWidthPx===1080
-  );
+  )||
+  g?.testId==='test-09'&&g.id==='t09-g077'&&!!officialEntry('test-09')&&
+  g.image==='assets/scenes/test-09/glove-sorting-worksheet.jpg'&&g.chartWidthPx===1130;
 }
 function renderQuizWithChartPosition(){
  const old=app.querySelector('details[data-quiz-chart][open]');
