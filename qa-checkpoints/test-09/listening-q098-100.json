@@ -1,0 +1,215 @@
+{
+  "group": "t09-g098",
+  "status": "Authoring batch accepted; unreleased.",
+  "sourceGroupSha256": "ef575305128b0c7c588bd1cc27c61b32527946fcfd788f803f46c4fe665be255",
+  "questions": [
+    {
+      "q": 98,
+      "questionId": "t09-q098",
+      "uuid": "34ed43d6-8bda-599e-8cd4-c5a463ee7490",
+      "qSha256": "7e7154619c7756525162a447806349b38b6be03cadd3d0faaa18049f907e7ab1",
+      "sidecarSha256": "2b4c9036e4d537a6eaeab5530c252478fe947f74718f287a71043b86f2cf12a9"
+    },
+    {
+      "q": 99,
+      "questionId": "t09-q099",
+      "uuid": "18a2ddec-a098-5068-a1f9-2479914c1c5c",
+      "qSha256": "9af7a26ff3cc4a29c66ef4daf56912a13c4616ef5040291e2219aba032c5cd8a",
+      "sidecarSha256": "d12e38cacb1feb9ca381e7ff882fd8f47c27b7a580406f371b8796b0e4f587c5"
+    },
+    {
+      "q": 100,
+      "questionId": "t09-q100",
+      "uuid": "c484819c-e668-5d03-af6a-d5bdbae40865",
+      "qSha256": "98a12d9445427f2c5fde7149a5c0fee4703e25ea471739d57498db28fbc9079b",
+      "sidecarSha256": "dc76de78fe1acecc785b0f7ef8bc8fddb6cd23c2c679bf89d0ef4a540b89c742"
+    }
+  ],
+  "mediaPaths": [
+    {
+      "url": "audio/formal-groups/test-09/t09-g098.ogg",
+      "source": "test-09/groups/t09-g098/media/audio/formal-groups/test-09/t09-g098.ogg"
+    },
+    {
+      "url": "audio/practice-groups/test-09/t09-g098.ogg",
+      "source": "test-09/groups/t09-g098/media/audio/practice-groups/test-09/t09-g098.ogg"
+    }
+  ],
+  "mediaManifestSha256": "edd25c0d880442ddc44956e143be11f070b5902e730db423f7d157a6dd42a1b3",
+  "integrationBase": "811020f65c174e9708d625ed6015a73815f7bbcf",
+  "appSha256": "eebd55c330ca4f52584d893a3096748dd8afc062f6232ad7bc01de395e450a62",
+  "candidateEvidenceSha256": "ca203206dfb1f916067d6c1f7811ac2347ce4c5ef54ad660edb3379a71886815",
+  "sourceCutMapSha256": "c86a9cc2a971afc7e0941d3d39ae88662bd480b1600bb9edc66e4e73f3e0e9f3",
+  "sourcePreflightSha256": "ac4bd4cf49d3cfd6c2a5647b420d50829f22b1480a2bf6e03403bfad8a01b2bc",
+  "decodedAsrSha256": {
+    "whisper-small.json": "6a831b5235ba20c7cbc204f06fe510ec7713fc6c557eecd0bd7118d1c03d9715",
+    "zipformer.json": "ae2657d03ec2e77d8f203e21c38bd1251b01685c0e6e3934a46e0e7ccfdbd591",
+    "whisper-base-stem98.json": "39cf92900f9298b96ffda01d204c0b0b6d612e4c33c3800280f44ae5a9c5f1e8"
+  },
+  "media": {
+    "formal": {
+      "file": "t09-g098-formal.ogg",
+      "sha256": "bdeaa904cfbebbac599016f35ae621e2a70bc2985a2889871abbdbf247e83be8",
+      "samples48k": 4607673,
+      "halfSecondGuardPeaksLsb": [
+        0,
+        1
+      ],
+      "timeline": [
+        {
+          "role": "gap",
+          "startSample48k": 0,
+          "endSample48k": 96000,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "cue",
+          "startSample48k": 96000,
+          "endSample48k": 286080,
+          "inputPcmSha256": "0780e035dd57e79cb3181db2d7f6edf93eba9a8522b0062684c1d029987a57e0"
+        },
+        {
+          "role": "gap",
+          "startSample48k": 286080,
+          "endSample48k": 302880,
+          "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+        },
+        {
+          "role": "passage",
+          "startSample48k": 302880,
+          "endSample48k": 2096817,
+          "inputPcmSha256": "f4a30828f942198ce90c1c2167bf06f059bef6f8929594fb350077a45578a008",
+          "turnRanges48k": [
+            [
+              302880,
+              2096817
+            ]
+          ]
+        },
+        {
+          "role": "stem:98",
+          "startSample48k": 2096817,
+          "endSample48k": 2385033,
+          "inputPcmSha256": "e964619d72d259412c7c5df15a58a1a692db7751392e5747d1947e22dc3fdbec"
+        },
+        {
+          "role": "answer:98",
+          "startSample48k": 2385033,
+          "endSample48k": 2769033,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "stem:99",
+          "startSample48k": 2769033,
+          "endSample48k": 3091593,
+          "inputPcmSha256": "6a94fd6debe6bdf8c74fc4f8bbfa7f9fd29e755e18e9c47c81d5b62108b01d53"
+        },
+        {
+          "role": "answer:99",
+          "startSample48k": 3091593,
+          "endSample48k": 3475593,
+          "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+        },
+        {
+          "role": "stem:100",
+          "startSample48k": 3475593,
+          "endSample48k": 3743073,
+          "inputPcmSha256": "f963234fbcb58893d2380701781852f8f6825c86d4211caab3d2a8c8a6612b6c"
+        },
+        {
+          "role": "answer:100",
+          "startSample48k": 3743073,
+          "endSample48k": 4223073,
+          "inputPcmSha256": "b9163d03c43083a18e6101539b555cb5e363eed61fa4b3a3b54f50ae60eb5b52"
+        },
+        {
+          "role": "closing",
+          "startSample48k": 4223073,
+          "endSample48k": 4511673,
+          "inputPcmSha256": "f3ac274f0b6fc34afcf587b1eccfa2d9637e0b093a71814bf0a9015e240b0600"
+        },
+        {
+          "role": "closing-gap",
+          "startSample48k": 4511673,
+          "endSample48k": 4607673,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        }
+      ]
+    },
+    "practice": {
+      "file": "t09-g098-practice.ogg",
+      "sha256": "753a8b697073e7e69a763797a5e4b434e099422bfd0530f6491740d7024df0ee",
+      "samples48k": 1985937,
+      "halfSecondGuardPeaksLsb": [
+        0,
+        1
+      ],
+      "timeline": [
+        {
+          "role": "gap",
+          "startSample48k": 0,
+          "endSample48k": 96000,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        },
+        {
+          "role": "passage",
+          "startSample48k": 96000,
+          "endSample48k": 1889937,
+          "inputPcmSha256": "f4a30828f942198ce90c1c2167bf06f059bef6f8929594fb350077a45578a008",
+          "turnRanges48k": [
+            [
+              96000,
+              1889937
+            ]
+          ]
+        },
+        {
+          "role": "gap",
+          "startSample48k": 1889937,
+          "endSample48k": 1985937,
+          "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+        }
+      ]
+    }
+  },
+  "semanticChecks": {
+    "98": "D: customers should bring their desired finished length, not window measurements.",
+    "99": "B: the staff can fold to another position and show another version before cutting.",
+    "100": "A: matching curtains are both needed so staff can compare the pattern before a permanent alteration."
+  },
+  "recognitionScope": "Exact final tracks passed independent overlapping Whisper Small and Zipformer whole and overlapping ASR. Whisper Base and Zipformer both confirm the complete Q98 number and stem. All three stems and the neutral closing cue verified; near-homophone recognition pattern/patent and pair/pear resolved by neighboring evidence, dual models and exact cue and option semantics. Exact 8/8/10 second wait and final 2-second guard; practice excludes the closing announcement. This diagnostic proof is listening-only; full Reading handoff remains a separate release gate.",
+  "native": {
+    "engine": "Cloud Chromium, exact private fixture",
+    "fixtureSha256": "c6528b313b20585e3be646718b3f0e755a744565fc3b1d87302c4f6684ed3ade",
+    "threeDisplayed": [
+      98,
+      99,
+      100
+    ],
+    "formal": {
+      "priorStillPlaying": 0.127806,
+      "newAutomatic": 10.635195,
+      "initial": 0,
+      "firstSampled": 0.127618,
+      "paused": 0.174199,
+      "whileStillPaused": 0.174199,
+      "afterResume": 0.415647,
+      "rate": 1,
+      "nextDisabled": true,
+      "transcriptHidden": true,
+      "questionsVisibleAfter": 45.415774,
+      "lastAnswerSeconds": 10,
+      "closingVisibleAt": 88.48507,
+      "answerControlsHiddenAtClosing": true,
+      "readingNotInDiagnostic": true
+    },
+    "practice": {
+      "previous": 0.168103,
+      "reset": 0,
+      "firstSampled": 0.170298,
+      "paused": 0.212157,
+      "whileStillPaused": 0.212157,
+      "afterResume": 0.435731
+    }
+  }
+}
