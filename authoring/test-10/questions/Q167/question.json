@@ -1,0 +1,66 @@
+{
+  "id": "t10-q167",
+  "testId": "test-10",
+  "number": 167,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "shared-table-service"
+  ],
+  "prompt": "What should the server clear from Table 9 in response to the requests already made?",
+  "promptZh": "依據目前收到的請求，服務生應收走第 9 桌哪些餐盤？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The two empty side plates and the shared flatbread plate",
+      "zh": "兩個空的小餐盤和公用扁麵包盤。",
+      "whyZh": "兩個空盤可收，但奈特的同意是回答服務生針對空盤的問句；有食物的扁麵包公用盤仍只收到非主揪喬丹的收盤請求。"
+    },
+    {
+      "id": "B",
+      "text": "The two empty side plates, but not the shared flatbread plate",
+      "zh": "收走兩個空的小餐盤，但先不收公用扁麵包盤。",
+      "whyZh": "奈特是仍有權同意的主揪，但「好，麻煩你」只是在回答收空盤的問句。喬丹獲准結帳，沒有因此取得主揪的權限；公用扁麵包盤先不收。"
+    },
+    {
+      "id": "C",
+      "text": "The shared flatbread plate, but not the two empty side plates",
+      "zh": "收走公用扁麵包盤，但不收兩個空的小餐盤。",
+      "whyZh": "有食物的公用盤並未獲主揪同意收走；奈特確實同意服務生剛問到的兩個空盤，才是可以收的。"
+    },
+    {
+      "id": "D",
+      "text": "Neither the side plates nor the flatbread plate",
+      "zh": "空的小餐盤和扁麵包盤都不收。",
+      "whyZh": "公用盤還不能收，不表示全部都要留下；服務生明確問的是兩個空盤，奈特也已表示同意。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "奈特是仍有權同意的主揪，但「好，麻煩你」只是在回答收空盤的問句。喬丹獲准結帳，沒有因此取得主揪的權限；公用扁麵包盤先不收。",
+  "vocabulary": [
+    {
+      "term": "take care of the bill",
+      "zh": "負責結帳",
+      "note": "同意由別人結帳，不代表那人可以代替主揪同意收菜。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-09",
+  "evidence": "There is a separate convention for clearing a table. Anyone sitting at the table can ask staff to remove empty individual plates. To remove a shared dish that still contains food, the server needs a request from the group's named host that specifically identifies the dish. The host can either name the shared dish or agree when the server names it. Permission to handle the bill does not transfer the host’s role. / At Table 9, Nat is listed as the host. Nat tells Jordan, ‘You can take care of the bill.’ Jordan then asks the server to clear the shared flatbread plate, which still has two pieces on it. The server replies by asking, ‘Shall I take these two empty side plates?’ Nat says, ‘Yes, please.’ The server writes down ‘host said yes’ on the ticket.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 729,
+      "endChar": 1143,
+      "exactQuote": "There is a separate convention for clearing a table. Anyone sitting at the table can ask staff to remove empty individual plates. To remove a shared dish that still contains food, the server needs a request from the group's named host that specifically identifies the dish. The host can either name the shared dish or agree when the server names it. Permission to handle the bill does not transfer the host’s role."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 1145,
+      "endChar": 1486,
+      "exactQuote": "At Table 9, Nat is listed as the host. Nat tells Jordan, ‘You can take care of the bill.’ Jordan then asks the server to clear the shared flatbread plate, which still has two pieces on it. The server replies by asking, ‘Shall I take these two empty side plates?’ Nat says, ‘Yes, please.’ The server writes down ‘host said yes’ on the ticket."
+    }
+  ]
+}

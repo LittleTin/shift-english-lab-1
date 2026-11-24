@@ -1,0 +1,66 @@
+{
+  "id": "t10-q166",
+  "testId": "test-10",
+  "number": 166,
+  "part": 7,
+  "topic": "daily",
+  "revision": 1,
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "shared-table-service"
+  ],
+  "prompt": "What should the server do with Table 6's order right now?",
+  "promptZh": "服務生現在應如何處理第 6 桌的餐點？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Hold the salads on one serving plate and bring them out with the flatbread when Sam returns.",
+      "zh": "把沙拉放在同一個公用餐盤上，等山姆回來再連同扁麵包一起送出。",
+      "whyZh": "合盤沒有錯，但後來只暫緩扁麵包的要求取消了扁麵包與沙拉的同時上桌安排；沙拉無須等山姆。"
+    },
+    {
+      "id": "B",
+      "text": "Bring the two salads out on separate plates now and hold the flatbread until Sam returns.",
+      "zh": "現在把兩份沙拉分盤送出，扁麵包等山姆回來再送。",
+      "whyZh": "上菜順序正確，但取消同時上桌不改變 FOR TABLE 的裝盤指示，兩份沙拉仍應合盤。"
+    },
+    {
+      "id": "C",
+      "text": "Bring both salad portions out on one serving plate now and hold the flatbread.",
+      "zh": "現在把兩份沙拉合放在一個公用盤送出，扁麵包先不上。",
+      "whyZh": "FOR TABLE 要求兩份沙拉合盤。後來只暫緩扁麵包，取消與沙拉同時上桌的安排，但不改變裝盤指示；山姆尚未回來，所以先上已備好的沙拉。"
+    },
+    {
+      "id": "D",
+      "text": "Bring the salads on one serving plate now, with the flatbread on a separate plate in the same round.",
+      "zh": "現在把沙拉合放在一個公用盤送出，扁麵包另裝一盤同時上桌。",
+      "whyZh": "單獨裝盤不能取消後來只暫緩扁麵包的指示；扁麵包要等山姆，不能現在就隨沙拉上桌。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "FOR TABLE 要求兩份沙拉合盤。後來只暫緩扁麵包，取消與沙拉同時上桌的安排，但不改變裝盤指示；山姆尚未回來，所以先上已備好的沙拉。",
+  "vocabulary": [
+    {
+      "term": "plate for the table",
+      "zh": "合放在公用餐盤上",
+      "note": "合盤與同時上桌是兩種各自獨立的要求。"
+    }
+  ],
+  "groupId": "t10-r-p7-single-09",
+  "evidence": "Our new ticket words separate how food is plated from when it goes out. FOR TABLE is for two or more portions of the same dish placed on one serving plate. SAME ROUND links dishes that need to go out at the same time. A later request to hold only one dish cancels any timing link involving that dish; it does not alter plating instructions. If someone says just 'together,' ask which instruction they mean. / At Table 6, the two portions of fennel salad are marked FOR TABLE. The server also marked the salads and the flatbread SAME ROUND. After the order went in, Lien called the server back and asked to hold just the flatbread until Sam returned. Both salad portions and the flatbread are now ready. Sam has not returned yet.",
+  "evidenceSpans": [
+    {
+      "sourceField": "passage",
+      "startChar": 0,
+      "endChar": 406,
+      "exactQuote": "Our new ticket words separate how food is plated from when it goes out. FOR TABLE is for two or more portions of the same dish placed on one serving plate. SAME ROUND links dishes that need to go out at the same time. A later request to hold only one dish cancels any timing link involving that dish; it does not alter plating instructions. If someone says just 'together,' ask which instruction they mean."
+    },
+    {
+      "sourceField": "passage",
+      "startChar": 408,
+      "endChar": 727,
+      "exactQuote": "At Table 6, the two portions of fennel salad are marked FOR TABLE. The server also marked the salads and the flatbread SAME ROUND. After the order went in, Lien called the server back and asked to hold just the flatbread until Sam returned. Both salad portions and the flatbread are now ready. Sam has not returned yet."
+    }
+  ]
+}
