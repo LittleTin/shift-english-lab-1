@@ -760,7 +760,7 @@ function applyGuestWrite(stored,{base,next,mode}){
   result[key]=merged
  }
  const packsBefore=new Map(base.importedPacks.map(p=>[p.testId,p]));
- const updated=next.importedPacks.filter(p=>!guestEqual(packsBefore.get(p.testId),p));
+ const updated=next.importedPacks.filter(p=>packsBefore.get(p.testId)!==p&&!guestEqual(packsBefore.get(p.testId),p));
  if(updated.length){
   const packs=new Map((durable.importedPacks||[]).map(p=>[p.testId,p]));
   for(const p of updated)packs.set(p.testId,p);
@@ -819,6 +819,42 @@ function applyAccountWrite(stored,before,next,revision,historyOnly,conflicted){
  if(activeChanged){result.active=next.active;result.accountActiveRevision=uid()}
  return {value:result,activeChanged};
 }
+// Imported packs are immutable data. Preserve their unchanged references only
+// across guest progress snapshots in IndexedDB; never change the saved format.
+const immutableGuestPacks=new WeakSet();
+function makeImmutableGuestPack(pack){
+ if(!pack||typeof pack!=='object')return false;
+ if(immutableGuestPacks.has(pack))return true;
+ const seen=new WeakSet(),todo=[pack],objects=[];
+ while(todo.length){
+  const v=todo.pop(),type=typeof v;
+  if(v===null||type==='string'||type==='boolean'||type==='number'&&Number.isFinite(v)&&!Object.is(v,-0))continue;
+  if(type!=='object'||seen.has(v))return false;
+  if(Array.isArray(v)){
+   if(Object.getPrototypeOf(v)!==Array.prototype||Object.keys(v).length!==v.length)return false
+  }else if(Object.getPrototypeOf(v)!==Object.prototype)return false;
+  seen.add(v);objects.push(v);
+  for(const k of Reflect.ownKeys(v)){
+   if(Array.isArray(v)&&k==='length')continue;
+   const d=Object.getOwnPropertyDescriptor(v,k);
+   if(typeof k!=='string'||!d?.enumerable||!Object.hasOwn(d,'value'))return false;
+   if(Array.isArray(v)&&(!/^(0|[1-9][0-9]*)$/.test(k)||Number(k)>=v.length))return false;
+   todo.push(d.value)
+  }
+ }
+ // Validate the entire graph before freezing anything. Stored records from
+ // older formats that aren't plain JSON use the ordinary snapshot path.
+ for(const v of objects)Object.freeze(v);
+ immutableGuestPacks.add(pack);
+ return true
+}
+function captureGuestProgress(source){
+ const {importedPacks,...progress}=source;
+ if(!Array.isArray(importedPacks)||!importedPacks.length||!importedPacks.every(makeImmutableGuestPack))return null;
+ const next=JSON.parse(JSON.stringify(progress));
+ next.importedPacks=importedPacks.slice();
+ return next
+}
 function persist(strict=false,historyOnly=false,guestMode=null,guestSubmission=null){
  if(guestSubmitPending&&!guestSubmission&&!syncOwner)return Promise.resolve();
  if(diagnostic||storageMode==='loading'||storageMode==='memory'){
@@ -826,8 +862,10 @@ function persist(strict=false,historyOnly=false,guestMode=null,guestSubmission=n
   return strict?Promise.reject(new Error('Local saving unavailable')):Promise.resolve(guestSubmission?false:undefined)
  }
  if(!historyOnly)saveListeningCountdown();
- const snapshot=JSON.stringify(guestSubmission||state),owner=syncOwner;
- const guestWrite=owner?null:{base:null,next:JSON.parse(snapshot),mode:guestMode};
+ const owner=syncOwner,source=guestSubmission||state;
+ const captured=!owner&&!guestSubmission&&!historyOnly&&!guestMode&&storageMode==='indexeddb'?captureGuestProgress(source):null;
+ const snapshot=captured?null:JSON.stringify(source);
+ const guestWrite=owner?null:{base:null,next:captured||JSON.parse(snapshot),mode:guestMode};
  // Capture the user action at call time, but compare against this tab's last
  // committed state at transaction time. A rejected write is never our baseline.
  let guestWarning=null,guestBlocked=false,activeCommit=null,writeMode=null,accountOutcome=null;
