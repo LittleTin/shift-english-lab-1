@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "testId": "test-10",
+  "scope": [
+    41,
+    42,
+    43
+  ],
+  "status": "Validated authoring batch; not deployed",
+  "sourceBase": "b2e91ab4de130c7a4d97e13be7a510390b5d1a4d",
+  "integrationBase": "5641a9621a4c744ffddf3ed0370b418258a7f6ec",
+  "groupSourceSha256": "695c4f19f2b5567f1eb3399b783c4f6a47c08fe0d9b1d482de1217eb575bdea4",
+  "items": [
+    {
+      "number": 41,
+      "answer": "B",
+      "difficulty": "advanced",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q041/question.json": "0abb69dde003d1de6d84d2ba90af51c812a82eea51b3ce5affb6bfdee3966a4b",
+        "authoring/test-10/questions/Q041/media.json": "39f7341506c777039d956ed558cf6e129963bc63fb0e11317dc01b5ebb732641"
+      }
+    },
+    {
+      "number": 42,
+      "answer": "C",
+      "difficulty": "intermediate",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q042/question.json": "9c6cada9db034a1c587e9329cd788c38a782b9b34f408aa8116b0c0ee068e360",
+        "authoring/test-10/questions/Q042/media.json": "adcf02061641f027f1d302879e0325c165b81b5ffe2d501bedee1ebe93a96473"
+      }
+    },
+    {
+      "number": 43,
+      "answer": "D",
+      "difficulty": "foundation",
+      "sourceSha256": {
+        "authoring/test-10/questions/Q043/question.json": "b81973fe5bf0e31b439ad72f1c3c736bddbd5cf7b03d44f8535d40b781a3b3f4",
+        "authoring/test-10/questions/Q043/media.json": "871321ca31d6f9e8de51ccfa03b083d5955e8dd646f833e8b56fa280fd09105f"
+      }
+    }
+  ],
+  "visualSha256": "f64c8ae818af8ef5b0fb2b4276600661ce65b3a146edbe39bec53d515bba2ccb",
+  "sourceMediaAndPhases": {
+    "groupId": "t10-g041",
+    "practiceAndFormal": {
+      "formal": {
+        "path": "audio/formal-groups/test-10/t10-g041.ogg",
+        "name": "t10-g041-formal.ogg",
+        "duration": 119.8775,
+        "samples": 5754120,
+        "sha256": "9876e4052e6e93c7b00f4fa94afdc84cd2086db82ca1fe6f2073acb8a0e4dea6",
+        "phase": [
+          {
+            "role": "edge-lead",
+            "startSample48k": 0,
+            "endSample48k": 96000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "cue",
+            "startSample48k": 96000,
+            "endSample48k": 321600,
+            "inputPcmSha256": "b48964fd21e40822ecf4cafa18eb85cc0c4515156c732196607900c1c7be5867"
+          },
+          {
+            "role": "gap",
+            "startSample48k": 321600,
+            "endSample48k": 338400,
+            "inputPcmSha256": "c84915d58f2cde58af67d9d2d689c93f08b991e0d041e77444a8d5162e2942a5"
+          },
+          {
+            "role": "passage",
+            "startSample48k": 338400,
+            "endSample48k": 3376200,
+            "inputPcmSha256": "00c5455515bed56982f694a4c3f30b1e4c50996b392a637da052eacb83de07f2",
+            "turnRanges48k": [
+              [
+                338400,
+                1044960
+              ],
+              [
+                1044960,
+                1305600
+              ],
+              [
+                1305600,
+                2042880
+              ],
+              [
+                2042880,
+                2739360
+              ],
+              [
+                2739360,
+                3376200
+              ]
+            ]
+          },
+          {
+            "role": "stem-41",
+            "startSample48k": 3376200,
+            "endSample48k": 3808200,
+            "inputPcmSha256": "1c74e269bca8a72726cc3d3eb79954befbc17f9c7b3eb7c3498f75e58e71a5a0"
+          },
+          {
+            "role": "answer-41",
+            "startSample48k": 3808200,
+            "endSample48k": 4192200,
+            "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+          },
+          {
+            "role": "stem-42",
+            "startSample48k": 4192200,
+            "endSample48k": 4623720,
+            "inputPcmSha256": "c1f264539068a22982b6d3f2fbed8469bfe30761a879879f9de86120e3d3da0a"
+          },
+          {
+            "role": "answer-42",
+            "startSample48k": 4623720,
+            "endSample48k": 5007720,
+            "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+          },
+          {
+            "role": "stem-43",
+            "startSample48k": 5007720,
+            "endSample48k": 5274120,
+            "inputPcmSha256": "7eed6ddb06602a78b8855ba84f68a137f4330dd85e5acbc248239c392705014a"
+          },
+          {
+            "role": "answer-43",
+            "startSample48k": 5274120,
+            "endSample48k": 5658120,
+            "inputPcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+          },
+          {
+            "role": "edge-tail",
+            "startSample48k": 5658120,
+            "endSample48k": 5754120,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      },
+      "practice": {
+        "path": "audio/practice-groups/test-10/t10-g041.ogg",
+        "name": "t10-g041-practice.ogg",
+        "duration": 67.2875,
+        "samples": 3229800,
+        "sha256": "5edf058ce4023f6bc8fe9164ca87dbede127ad0ccb15f1bd702cc1c758802be8",
+        "phase": [
+          {
+            "role": "edge-lead",
+            "startSample48k": 0,
+            "endSample48k": 96000,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          },
+          {
+            "role": "passage",
+            "startSample48k": 96000,
+            "endSample48k": 3133800,
+            "inputPcmSha256": "00c5455515bed56982f694a4c3f30b1e4c50996b392a637da052eacb83de07f2",
+            "turnRanges48k": [
+              [
+                96000,
+                802560
+              ],
+              [
+                802560,
+                1063200
+              ],
+              [
+                1063200,
+                1800480
+              ],
+              [
+                1800480,
+                2496960
+              ],
+              [
+                2496960,
+                3133800
+              ]
+            ]
+          },
+          {
+            "role": "edge-tail",
+            "startSample48k": 3133800,
+            "endSample48k": 3229800,
+            "inputPcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+          }
+        ]
+      }
+    },
+    "sharedSourceSha256": "e3d7f52351dd049ce80c7be80e297761d7bbd70848785ed00b5ffb6878f878d2",
+    "formalStemSourceSha256": "3e7ca329d7b8203abff3c88b56fea63e563b9c30f88eb245333024f8a004d704",
+    "sourceStemRanges": [
+      [
+        0,
+        432000
+      ],
+      [
+        488160,
+        919680
+      ],
+      [
+        974400,
+        1240800
+      ]
+    ],
+    "sourceTurnCuts": [
+      0,
+      706560,
+      967200,
+      1704480,
+      2400960,
+      3037800
+    ],
+    "status": "private; ASR and native QA required"
+  },
+  "native": {
+    "fixtureSha256": "a0b6ec0967e3968a6a1537228efc04efe5a2459bbb0a2f41345957f8be28bb13",
+    "practice": {
+      "path": "audio/practice-groups/test-10/t10-g041.ogg",
+      "initial": 0.062312,
+      "previousTime": 0.744374,
+      "reset": 0,
+      "paused": 0.114963,
+      "still": 0.114963,
+      "resumed": 0.349952,
+      "choices": [
+        4,
+        4,
+        4
+      ],
+      "chart": {
+        "alt": "Engraving trial results. Columns: Tag shape, Guide, Finished tags, Finished tags re-engraved. Rows: Flat, Standard, 60, 6; Flat, New, 30, 4; Curved, Standard, 20, 5; Curved, New, 10, 2.",
+        "height": 448,
+        "shown": 401.546875,
+        "url": "assets/scenes/test-10/engraving-trial-results.jpg",
+        "width": 640
+      }
+    },
+    "formal": {
+      "path": "audio/formal-groups/test-10/t10-g041.ogg",
+      "rate": 1,
+      "initial": 0.11332,
+      "paused": 0.189891,
+      "still": 0.189891,
+      "resumed": 0.420805,
+      "stems": [
+        {
+          "n": 41,
+          "t": 70.61937,
+          "choices": [
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "n": 42,
+          "t": 87.831604,
+          "choices": [
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "n": 43,
+          "t": 104.912888,
+          "choices": [
+            4,
+            4,
+            4
+          ]
+        }
+      ],
+      "chart": {
+        "alt": "Engraving trial results. Columns: Tag shape, Guide, Finished tags, Finished tags re-engraved. Rows: Flat, Standard, 60, 6; Flat, New, 30, 4; Curved, Standard, 20, 5; Curved, New, 10, 2.",
+        "height": 448,
+        "shown": 401.546875,
+        "url": "assets/scenes/test-10/engraving-trial-results.jpg",
+        "width": 640
+      }
+    }
+  },
+  "independentSpeechReceipts": {
+    "formal-whisper-small.json": "40a544807f7d07b775ddfe40903205d529512e6112cef2792b66bb4f3229ac01",
+    "formal-whisper-base.json": "82f784df480d66b40bef6d6649ca03acd3be2e0395c201c56a8eb846a63e745f",
+    "formal-zipformer.json": "b74ee8f9f6f2aa62a907233c8d029460c7cd15a2b20109468dd644aee0dd7bcc",
+    "practice-whisper-small.json": "5ad498742a170e1629d9b051782560430a3f4cc0218c1ab64b041b5717181b7d",
+    "practice-whisper-base.json": "a6642aa2d979b9c1cf7f39b5563bb40b93eeb3e4d17fd3f1d0c695b279632fb3",
+    "practice-zipformer.json": "247f9590b952149e226e4a84d51ebc0cfffa85350ccca646d514810a346fb1e2"
+  },
+  "notes": "Both exact Opus outputs preserve the fixed engraving machine, six missing curved tags, and repeated alignment with new names. Both independent Whisper decoders recover the key rework-over-setup choice; the third decoder agrees on flat-only and has a near-homophone in redoing. Native direct formal and neighboring practice/reset verified. Formal G038 to G041 continuous boundary and optional chart enlargement remain whole-round checks; neither change is in this authoring batch."
+}

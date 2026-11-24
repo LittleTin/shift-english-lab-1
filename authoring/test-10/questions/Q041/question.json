@@ -1,0 +1,46 @@
+{
+  "id": "t10-q041",
+  "uuid": "cdffd3f3-9989-5370-b2ee-1146b4a2af2f",
+  "number": 41,
+  "part": 3,
+  "testId": "test-10",
+  "groupId": "t10-g041",
+  "topic": "business",
+  "difficulty": "advanced",
+  "prompt": "Look at the graphic. Which method best matches the woman’s priority for next week’s order, and why?",
+  "promptZh": "請看圖表。哪種做法最符合女子對下週訂單的優先考量？原因為何？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The new guide, because fewer flat tags were re-engraved with it.",
+      "zh": "新治具，因為用它重新刻字的平面牌片總數比較少。",
+      "whyZh": "4 確實比 6 少，但只做完 30 片，而標準治具做完 60 片。單看總數沒有把產量差異算進去。"
+    },
+    {
+      "id": "B",
+      "text": "The standard guide, because fewer flat tags were re-engraved for every ten finished.",
+      "zh": "標準治具，因為每做完十片，需要重新刻字的平面牌片比較少。",
+      "whyZh": "標準治具每十片平均重刻 1 片（6÷60×10），新治具則約 1.33 片（4÷30×10）。在同樣數量下，標準治具的重刻比例較低，符合女子的優先考量。"
+    },
+    {
+      "id": "C",
+      "text": "The new guide, because it was used for fewer curved tags.",
+      "zh": "新治具，因為用它處理的弧形牌片比較少。",
+      "whyZh": "下週訂單只需要平面牌片；弧形牌片的產量不是這個決策的依據。"
+    },
+    {
+      "id": "D",
+      "text": "The standard guide, because it eliminates the need to line up individual flat tags.",
+      "zh": "標準治具，因為用它就不需要逐片對準平面牌片。",
+      "whyZh": "標準治具是正確選擇，但對話沒有說因此不需對準牌片。新舊治具的差異正是對準方式。"
+    }
+  ],
+  "answer": "B",
+  "evidence": "“For next week's order, I need a method for flat tags only. We're doing them in sets of ten. I'd rather avoid redoing tags than save a bit of setup time.” Chart bindings: Flat/Standard 60 finished/6 re-engraved; Flat/New 30/4. “What changes is how the operator lines up each tag.”",
+  "explanationZh": "標準治具每十片平均重刻 1 片（6÷60×10），新治具則約 1.33 片（4÷30×10）。在同樣數量下，標準治具的重刻比例較低，符合女子的優先考量。",
+  "revision": 1,
+  "tags": [
+    "engraving-trials",
+    "manufacturing"
+  ]
+}

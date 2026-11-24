@@ -1,0 +1,46 @@
+{
+  "id": "t10-q042",
+  "uuid": "a5e0bbd6-5291-5e51-8455-1e9c7ba02e8f",
+  "number": 42,
+  "part": 3,
+  "testId": "test-10",
+  "groupId": "t10-g041",
+  "topic": "business",
+  "difficulty": "intermediate",
+  "prompt": "What concern is raised about using the trial to choose a guide for orders with many different names on curved tags?",
+  "promptZh": "若用這次試做來為刻有許多不同名字的弧形牌片訂單挑選治具，對話提出什麼疑慮？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The machine can engrave curved tags only if all of them carry the same name.",
+      "zh": "只有當所有弧形牌片都刻同一個名字時，機器才刻得了。",
+      "whyZh": "可以刻不同名字，只是換名字時要重新定位，並非不能換。"
+    },
+    {
+      "id": "B",
+      "text": "Re-engraving requires tags from an earlier flat-tag order.",
+      "zh": "必須使用先前平面牌片訂單留下的牌片才能重刻。",
+      "whyZh": "沒有線索顯示重刻依賴另一筆訂單的牌片；問題在於某些弧形牌片根本沒有進入已完成數據。"
+    },
+    {
+      "id": "C",
+      "text": "Some hard-to-position curved tags are missing from the figures, and a typical order may require repeated repositioning.",
+      "zh": "部分難以定位的弧形牌片不在數據內，而一般弧形牌片訂單可能需要反覆定位。",
+      "whyZh": "試做表只列已完成牌片，漏掉六片新治具難以定位的弧形牌片；弧形訂單又常換名字，每換一次都要重新定位，因此只看片上數字會看不完整。"
+    },
+    {
+      "id": "D",
+      "text": "The setup time for flat tags was included in the curved-tag results.",
+      "zh": "平面牌片的準備時間被算進弧形牌片的結果中。",
+      "whyZh": "表格將平面和弧形分開，也沒有準備時間欄；對話沒有把兩種準備時間加在一起。"
+    }
+  ],
+  "answer": "C",
+  "evidence": "“We also set aside six curved tags during the new-guide run.” / “They were never engraved, so they're not on the sheet.” / “The curved-tag orders are all short runs with different names. When people switch names, they have to lift the tag and line it up again.”",
+  "explanationZh": "試做表只列已完成牌片，漏掉六片新治具難以定位的弧形牌片；弧形訂單又常換名字，每換一次都要重新定位，因此只看片上數字會看不完整。",
+  "revision": 1,
+  "tags": [
+    "engraving-trials",
+    "manufacturing"
+  ]
+}
