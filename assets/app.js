@@ -1439,7 +1439,12 @@ function officialReviewedChart(g){
   g?.testId==='test-06'&&g.id==='t06-g056'&&!!officialEntry('test-06')&&
   g.image==='assets/scenes/test-06/room-access.jpg'&&g.chartWidthPx===1000||
   g?.testId==='test-07'&&g.id==='t07-r-p7-10'&&!!officialEntry('test-07')&&
-  g.image==='assets/scenes/test-07/pilot-results.jpg'&&g.chartWidthPx===1080;
+  g.image==='assets/scenes/test-07/pilot-results.jpg'&&g.chartWidthPx===1080||
+  g?.testId==='test-08'&&!!officialEntry('test-08')&&(
+   g.id==='t08-g059'&&g.image==='assets/scenes/test-08/bench-site-survey-list.jpg'&&g.chartWidthPx===720||
+   g.id==='t08-g089'&&g.image==='assets/scenes/test-08/paper-scraps-worktop.jpg'&&g.chartWidthPx===1170||
+   g.id==='t08-r-p7-10'&&g.image==='assets/scenes/test-08/film-stock.jpg'&&g.chartWidthPx===1080
+  );
 }
 function renderQuizWithChartPosition(){
  const old=app.querySelector('details[data-quiz-chart][open]');
