@@ -1,0 +1,79 @@
+{
+  "id": "t09-q078",
+  "testId": "test-09",
+  "number": 78,
+  "part": 4,
+  "groupId": "t09-g077",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "talk",
+    "business"
+  ],
+  "prompt": "Look at the graphic. Which bin should volunteers start with?",
+  "promptZh": "請看圖表。志工應從哪一箱開始？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Bin A.",
+      "zh": "A 箱。",
+      "whyZh": "已包裝的 12 副不算；左 3、右 8，最多只能新增 3 副。"
+    },
+    {
+      "id": "B",
+      "text": "Bin B.",
+      "zh": "B 箱。",
+      "whyZh": "散裝左、右各 5，可新增 5 副，多於任何其他箱。"
+    },
+    {
+      "id": "C",
+      "text": "Bin C.",
+      "zh": "C 箱。",
+      "whyZh": "左手套雖最多，右手套只有 4 隻，最多新增 4 副。"
+    },
+    {
+      "id": "D",
+      "text": "Bin D.",
+      "zh": "D 箱。",
+      "whyZh": "左 6、右 2；只能新增 2 副。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "散裝左、右各 5，可新增 5 副，多於任何其他箱。",
+  "evidence": "Make pairs only within the same bin. / You need one left glove and one right glove for each new pair. / Don’t break up pairs that are already complete / Start at the bin where you can make the most new pairs.",
+  "evidenceSpans": [
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "N",
+      "startChar": 240,
+      "endChar": 276,
+      "exactQuote": "Make pairs only within the same bin."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "N",
+      "startChar": 277,
+      "endChar": 339,
+      "exactQuote": "You need one left glove and one right glove for each new pair."
+    },
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "N",
+      "startChar": 340,
+      "endChar": 386,
+      "exactQuote": "Don’t break up pairs that are already complete"
+    },
+    {
+      "sourceField": "turns",
+      "turn": 1,
+      "speaker": "N",
+      "startChar": 417,
+      "endChar": 472,
+      "exactQuote": "Start at the bin where you can make the most new pairs."
+    }
+  ]
+}
