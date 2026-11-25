@@ -1,0 +1,52 @@
+{
+  "id": "t13-q119",
+  "uuid": "d6a77b74-db8b-5e21-a444-ce7bbf389ace",
+  "testId": "test-13",
+  "number": 119,
+  "part": 5,
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "incomplete-sentence",
+    "daily"
+  ],
+  "prompt": "The community greenhouse asks volunteers to water the trays on three _____ mornings. A missed morning breaks the sequence, so logging a visit on Saturday cannot make up for missing Thursday in a Wednesday-to-Friday assignment.",
+  "promptZh": "社區溫室請志工在連續三天的早晨替育苗盤澆水。少一天就會中斷，所以原排星期三到星期五的志工如果漏掉星期四，星期六再登記一次也不能補回星期四。",
+  "options": [
+    {
+      "id": "A",
+      "text": "alternate",
+      "zh": "間隔的；交替的",
+      "whyZh": "alternate mornings 通常指每隔一天，和星期三至星期五須每天澆水不合。"
+    },
+    {
+      "id": "B",
+      "text": "cumulative",
+      "zh": "累計的",
+      "whyZh": "cumulative 表示把次數加總；若只是累計，星期六本可補計，題目已排除這種規則。"
+    },
+    {
+      "id": "C",
+      "text": "consecutive",
+      "zh": "連續的",
+      "whyZh": "consecutive mornings 指中間沒有一天中斷的早晨，正好符合漏一天就不能事後補算的說明。"
+    },
+    {
+      "id": "D",
+      "text": "additional",
+      "zh": "額外的",
+      "whyZh": "additional 表示另外增加的日數，但文中未說在一組已安排的工作日之外增加天數，而是在規定這三天之間不得有空檔。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "consecutive mornings 指中間沒有一天中斷的早晨，正好符合漏一天就不能事後補算的說明。",
+  "evidence": "The community greenhouse asks volunteers to water the trays on three consecutive mornings. A missed morning breaks the sequence, so logging a visit on Saturday cannot make up for missing Thursday in a Wednesday-to-Friday assignment.",
+  "evidenceZh": "社區溫室請志工在連續三天的早晨替育苗盤澆水。少一天就會中斷，所以原排星期三到星期五的志工如果漏掉星期四，星期六再登記一次也不能補回星期四。",
+  "vocabulary": [
+    {
+      "term": "consecutive",
+      "zh": "連續的"
+    }
+  ]
+}

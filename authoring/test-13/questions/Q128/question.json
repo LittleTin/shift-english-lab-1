@@ -1,0 +1,52 @@
+{
+  "id": "t13-q128",
+  "uuid": "605df491-7847-5e54-b037-509fee420399",
+  "testId": "test-13",
+  "number": 128,
+  "part": 5,
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "incomplete-sentence",
+    "daily"
+  ],
+  "prompt": "We got two adjacent seats off the waitlist at the last minute. We would _____ apart: our original tickets had been assigned to different rows, and the venue had no walk-up seats left.",
+  "promptZh": "我們在最後一刻透過候補拿到兩個相鄰座位。要不是透過候補拿到相鄰座位，我們原本只能分開坐：原先票上的座位在不同排，場館也沒有剩餘座位可現場購買。",
+  "options": [
+    {
+      "id": "A",
+      "text": "already sit",
+      "zh": "早就坐（原形）",
+      "whyZh": "already sit 缺少 have sat，不能在此表達對當時未發生結果的回顧；題幹是在說候補成功前的另一種過去結果。"
+    },
+    {
+      "id": "B",
+      "text": "have reserved",
+      "zh": "本來已預訂",
+      "whyZh": "reserved 此處沒有受詞，且原票已安排在不同排；題目要表達本來如何就座，不是本來要預訂什麼。"
+    },
+    {
+      "id": "C",
+      "text": "rather sit",
+      "zh": "寧願坐",
+      "whyZh": "rather sit 表示偏好分開坐，並非原票分開、又沒有剩席可買才不得不分開的情況。"
+    },
+    {
+      "id": "D",
+      "text": "otherwise have sat",
+      "zh": "要不然原本會坐",
+      "whyZh": "otherwise 回指「如果沒有候補改配」，would have sat 用完成式指出未發生的過去替代結果，和已取得相鄰座位一致。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "otherwise 回指「如果沒有候補改配」，would have sat 用完成式指出未發生的過去替代結果，和已取得相鄰座位一致。",
+  "evidence": "We got two adjacent seats off the waitlist at the last minute. We would otherwise have sat apart: our original tickets had been assigned to different rows, and the venue had no walk-up seats left.",
+  "evidenceZh": "我們在最後一刻透過候補拿到兩個相鄰座位。要不是透過候補拿到相鄰座位，我們原本只能分開坐：原先票上的座位在不同排，場館也沒有剩餘座位可現場購買。",
+  "vocabulary": [
+    {
+      "term": "otherwise have sat",
+      "zh": "要不然原本會坐"
+    }
+  ]
+}
