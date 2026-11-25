@@ -67,3 +67,6 @@
  .record-card{flex-direction:column}
  .result-stat b small{display:block;font-weight:500}
 }
+
+/* Preserve source proportions for scored listening images. */
+.scored-graphic .scene-img{height:auto;aspect-ratio:auto;max-height:clamp(300px,55vh,580px);object-fit:contain}
