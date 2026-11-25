@@ -1342,7 +1342,7 @@ function formalClockExpired(s){
 }
 function closeFormalExpiryNotice(){
  const d=document.getElementById('modal'),title=document.getElementById('formal-expiry-title');
- if(title){if(d.open)d.close();d.removeAttribute('aria-labelledby');d.removeAttribute('aria-describedby');title.removeAttribute('id')}
+ if(title){if(d.open)d.close();d.removeAttribute('closedby');d.removeAttribute('aria-labelledby');d.removeAttribute('aria-describedby');title.removeAttribute('id')}
 }
 function showFormalExpiryNotice(s,pending){
  if(route!=='quiz'||pending.listening&&document.hidden)return;
@@ -1350,15 +1350,18 @@ function showFormalExpiryNotice(s,pending){
   pending.until=now()+5000;
   setTimeout(advanceExpiredFormalPhase,5000);
  }
+ const d=document.getElementById('modal');
  let title=document.getElementById('formal-expiry-title');
  if(!title){
-  const d=document.getElementById('modal');
   if(d.open)closeModal();
+  d.setAttribute('closedby','none');
   const what=pending.listening?'Listening':'Reading';
   const next=pending.listening?'Reading will start automatically in 5 seconds.':'Your test will be submitted and scored in 5 seconds.';
   modal('<h2 id="formal-expiry-title" tabindex="-1">'+what+' · Time is up</h2><p id="formal-expiry-message">You can no longer answer or change answers in this section. '+next+'</p>');
   d.setAttribute('aria-labelledby','formal-expiry-title');d.setAttribute('aria-describedby','formal-expiry-message');
   title=document.getElementById('formal-expiry-title');title?.focus({preventScroll:true});
+ }else if(!d.open){
+  d.showModal();title.focus({preventScroll:true});
  }
 }
 function beginFormalExpiry(s){
@@ -1391,6 +1394,9 @@ function advanceExpiredFormalPhase(){
  });
 }
 document.getElementById('modal').addEventListener('cancel',e=>{if(document.getElementById('formal-expiry-title'))e.preventDefault()});
+document.getElementById('modal').addEventListener('keydown',e=>{
+ if(e.key==='Escape'&&document.getElementById('formal-expiry-title')){e.preventDefault();e.stopPropagation()}
+},true);
 function groupReady(g){return state.active?.audioUsed?.[g?.id]?.status==='ended'}
 function stopAudio(keepNativeSource=false){
  stopPracticeRangeTimer();
