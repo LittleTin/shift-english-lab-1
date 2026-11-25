@@ -1151,7 +1151,16 @@ async function startSession(questions,title,mode='practice',startId=null){if(acc
   state.active=previous;resumeEnv=previousResume;
   return
  }route='quiz';currentQuestionStart=now();activeTranscript=null;stopAudio();render();window.scrollTo({top:0,behavior:'instant'})};if(state.active||durableActive){confirmBox('Start a new practice session?',durableActive&&durableActive.id!==state.active?.id?'Another tab has an unfinished session. Starting a new one replaces the session offered when you reopen Practice Home. Submitted records and notes are kept.':'You have an unfinished session. Starting a new one replaces that unfinished progress. Submitted answers and notes are kept.',begin,'Start New Session')}else return begin()}
-function filteredGroupSelection(questions,f,getGroup=key=>G.get(key),hasAttempt=id=>!!state.stats[id]){
+function answeredQuestionIds(attempts){
+ const ids=new Set();
+ for(const a of attempts)if(['A','B','C','D'].includes(a.selected))ids.add(a.questionId);
+ return ids
+}
+function filteredGroupSelection(questions,f,getGroup=key=>G.get(key),hasAnswered){
+ if(f.unseen&&!hasAnswered){
+  const answered=answeredQuestionIds(state.attempts);
+  hasAnswered=id=>answered.has(id)
+ }
  const bucket=new Map();
  for(const q of questions){
   const key=JSON.stringify(q.groupId?[q.testId,'group',q.groupId]:[q.testId,'single',q.id]);
@@ -1169,7 +1178,7 @@ function filteredGroupSelection(questions,f,getGroup=key=>G.get(key),hasAttempt=
    if(group.some(v=>v.part>4)||owner?.testId!==q.testId||!Array.isArray(voices)||!voices.length||
       !voices.every(v=>v?.locale===f.accent))continue;
   }
-  const attempted=f.unseen?group.filter(q=>hasAttempt(q.id)).length:0;
+  const attempted=f.unseen?group.filter(q=>hasAnswered(q.id)).length:0;
   unseen[attempted===0?0:attempted<group.length?1:2].push(group.slice().sort((a,b)=>a.number-b.number))
  }
  const chosen=[];
