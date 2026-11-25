@@ -1,0 +1,66 @@
+{
+  "id": "t13-q135",
+  "uuid": "2531f8bb-6093-5cc4-85f0-c373c20710f4",
+  "testId": "test-13",
+  "number": 135,
+  "part": 6,
+  "groupId": "t13-r-p6-02",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "daily"
+  ],
+  "prompt": "Choose the best word or sentence for blank [135].",
+  "promptZh": "請選出最適合填入第 135 格的答案。",
+  "options": [
+    {
+      "id": "A",
+      "text": "even though",
+      "zh": "儘管",
+      "whyZh": "even though 指即使家庭已完成合格尾帶仍不可送；規則是未備妥前不要送，備妥後可送。"
+    },
+    {
+      "id": "B",
+      "text": "as if",
+      "zh": "好像",
+      "whyZh": "as if 指彷彿已經裝上；文中要求真的選好、裝好並讓引導員看得到，不是假設已達標。"
+    },
+    {
+      "id": "C",
+      "text": "now that",
+      "zh": "既然",
+      "whyZh": "now that 表示既然已完成，接著卻說不可送；完成尾帶這項必要條件並不是不准送的理由。"
+    },
+    {
+      "id": "D",
+      "text": "until",
+      "zh": "直到",
+      "whyZh": "do not send ... until 表示先不要送，等家庭把符合可見要求的尾帶裝妥後才送去排隊。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "do not send ... until 表示先不要送，等家庭把符合可見要求的尾帶裝妥後才送去排隊。",
+  "evidence": "the large field is reserved for kites with streamer tails / has chosen and tied on a tail that the steward can see",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 168,
+      "endChar": 225,
+      "exactQuote": "the large field is reserved for kites with streamer tails"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 511,
+      "endChar": 565,
+      "exactQuote": "has chosen and tied on a tail that the steward can see"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "until",
+      "zh": "直到"
+    }
+  ]
+}

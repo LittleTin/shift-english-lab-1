@@ -1,0 +1,66 @@
+{
+  "id": "t13-q142",
+  "uuid": "134d4bbe-7521-51c4-a3cd-97d99f4c773e",
+  "testId": "test-13",
+  "number": 142,
+  "part": 6,
+  "groupId": "t13-r-p6-03",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "foundation",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Choose the best word or sentence for blank [142].",
+  "promptZh": "請選出最適合填入第 142 格的答案。",
+  "options": [
+    {
+      "id": "A",
+      "text": "separate",
+      "zh": "分開",
+      "whyZh": "鞋長相同不代表鞋楦及鞋墊都相同，左右應分開列，製鞋人員才能分辨各腳搭配。"
+    },
+    {
+      "id": "B",
+      "text": "matching",
+      "zh": "相符的；配對的",
+      "whyZh": "matching 指內容相符或彼此對應，但只寫這點不能確保分列左右資料；兩腳鞋楦和鞋墊仍可能不同。"
+    },
+    {
+      "id": "C",
+      "text": "erased",
+      "zh": "已擦除的",
+      "whyZh": "erased 指已擦除；為讓製鞋人員取得資料，不會要求把記錄擦掉。"
+    },
+    {
+      "id": "D",
+      "text": "unmarked",
+      "zh": "未標記的",
+      "whyZh": "unmarked 指無標記，不能表達用獨立欄列明確指出左右的要求。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "鞋長相同不代表鞋楦及鞋墊都相同，左右應分開列，製鞋人員才能分辨各腳搭配。",
+  "evidence": "even if the dancer finally selects the same shoe length for both feet / The maker still needs the form and insole choice on each side",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1293,
+      "endChar": 1362,
+      "exactQuote": "even if the dancer finally selects the same shoe length for both feet"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1364,
+      "endChar": 1425,
+      "exactQuote": "The maker still needs the form and insole choice on each side"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "separate",
+      "zh": "分開"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "t13-q139",
+  "uuid": "88bc0622-b15b-5d74-ba55-b51621f3c115",
+  "testId": "test-13",
+  "number": 139,
+  "part": 6,
+  "groupId": "t13-r-p6-03",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Choose the best word or sentence for blank [139].",
+  "promptZh": "請選出最適合填入第 139 格的答案。",
+  "options": [
+    {
+      "id": "A",
+      "text": "an exact match for",
+      "zh": "與……恰好相同",
+      "whyZh": "exact match 表示效果相同；鞋墊提供的是上方空間，而非更長的鞋，兩種做法不能當成一樣。"
+    },
+    {
+      "id": "B",
+      "text": "another name for",
+      "zh": "是……的別稱",
+      "whyZh": "another name for 表示同一物品的另一叫法；鞋墊是插入鞋中的配件，不是較大尺寸鞋的別名。"
+    },
+    {
+      "id": "C",
+      "text": "not equivalent to",
+      "zh": "不等同於",
+      "whyZh": "較薄的鞋墊讓腳上方空間增加，但不能加長鞋；not equivalent to 正確區分兩種處理方式。"
+    },
+    {
+      "id": "D",
+      "text": "no shorter than",
+      "zh": "至少一樣長",
+      "whyZh": "no shorter than 把鞋墊與大鞋作長度比較；冒號後說明鞋墊不會改變鞋長，並未比較兩個物件的總長。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "較薄的鞋墊讓腳上方空間增加，但不能加長鞋；not equivalent to 正確區分兩種處理方式。",
+  "evidence": "first offer a thinner removable insole / without changing the length of the shoe",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 407,
+      "endChar": 445,
+      "exactQuote": "first offer a thinner removable insole"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 531,
+      "endChar": 570,
+      "exactQuote": "without changing the length of the shoe"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "not equivalent to",
+      "zh": "不等同於"
+    }
+  ]
+}

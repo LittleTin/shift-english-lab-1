@@ -1,0 +1,66 @@
+{
+  "id": "t13-q141",
+  "uuid": "673794aa-ca48-5df6-968f-fac7d34f7923",
+  "testId": "test-13",
+  "number": 141,
+  "part": 6,
+  "groupId": "t13-r-p6-03",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Choose the best word or sentence for blank [141].",
+  "promptZh": "請選出最適合填入第 141 格的答案。",
+  "options": [
+    {
+      "id": "A",
+      "text": "final",
+      "zh": "已定稿",
+      "whyZh": "final 指已確定，原文要求試兩次轉身，尚不能結案。"
+    },
+    {
+      "id": "B",
+      "text": "inactive",
+      "zh": "非啟用；不再進行",
+      "whyZh": "inactive 通常指不再進行或暫時停用；這項試穿還在等待必要的確認，並非已停做。"
+    },
+    {
+      "id": "C",
+      "text": "canceled",
+      "zh": "已取消",
+      "whyZh": "canceled 表示案件被取消；舞者仍可做兩次轉身並完成確認。"
+    },
+    {
+      "id": "D",
+      "text": "provisional",
+      "zh": "暫定；待確認",
+      "whyZh": "provisional 表示暫定，等完整測試後才確定，符合不能只看第一步或單腳的要求。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "provisional 表示暫定，等完整測試後才確定，符合不能只看第一步或單腳的要求。",
+  "evidence": "try two turns in the trial pair / neither a comfortable first step nor a decision about only one foot is enough to close it",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 945,
+      "endChar": 976,
+      "exactQuote": "try two turns in the trial pair"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1074,
+      "endChar": 1163,
+      "exactQuote": "neither a comfortable first step nor a decision about only one foot is enough to close it"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "provisional",
+      "zh": "暫定；待確認"
+    }
+  ]
+}

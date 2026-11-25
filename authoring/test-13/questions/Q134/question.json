@@ -1,0 +1,66 @@
+{
+  "id": "t13-q134",
+  "uuid": "4b084785-63eb-559f-9988-585c15c3cd37",
+  "testId": "test-13",
+  "number": 134,
+  "part": 6,
+  "groupId": "t13-r-p6-01",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Choose the best word or sentence for blank [134].",
+  "promptZh": "請選出最適合填入第 134 格的答案。",
+  "options": [
+    {
+      "id": "A",
+      "text": "together with",
+      "zh": "連同",
+      "whyZh": "together with 表示將紀錄和音量抱怨一同存檔；下文說音量另開工單，不應合併。"
+    },
+    {
+      "id": "B",
+      "text": "in place of",
+      "zh": "取代",
+      "whyZh": "in place of 表示以方向紀錄取代音量抱怨；原文說音量問題另開工單，仍會審查，並未以方向紀錄取代。"
+    },
+    {
+      "id": "C",
+      "text": "separately from",
+      "zh": "分開",
+      "whyZh": "目前只檢查方向，音量會另案審查；separately from 表示將兩套位置紀錄與音量抱怨分開存放。"
+    },
+    {
+      "id": "D",
+      "text": "in reply to",
+      "zh": "答覆；回覆",
+      "whyZh": "in reply to 表示回覆某人提出的問題；句子說要把檢查位置存檔，並不是以該檔案答覆抱怨。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "目前只檢查方向，音量會另案審查；separately from 表示將兩套位置紀錄與音量抱怨分開存放。",
+  "evidence": "test of perceived direction, not speaker output / reviewed in a separate work order",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1280,
+      "endChar": 1327,
+      "exactQuote": "test of perceived direction, not speaker output"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1424,
+      "endChar": 1457,
+      "exactQuote": "reviewed in a separate work order"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "separately from",
+      "zh": "分開"
+    }
+  ]
+}

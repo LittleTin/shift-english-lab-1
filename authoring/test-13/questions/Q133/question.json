@@ -1,0 +1,66 @@
+{
+  "id": "t13-q133",
+  "uuid": "270155c1-79dc-5227-be50-5df90d168d3d",
+  "testId": "test-13",
+  "number": 133,
+  "part": 6,
+  "groupId": "t13-r-p6-01",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Choose the best word or sentence for blank [133].",
+  "promptZh": "請選出最適合填入第 133 格的答案。",
+  "options": [
+    {
+      "id": "A",
+      "text": "so that",
+      "zh": "以免",
+      "whyZh": "等待標記後才答是為避免影響聽者選點；so that 引出的正是這項做法的目的。"
+    },
+    {
+      "id": "B",
+      "text": "even if",
+      "zh": "即使",
+      "whyZh": "even if 是讓步，表示即使答覆不會影響選點，某個結果仍成立；這裡是在說明延後答覆的目的，不是在讓步。"
+    },
+    {
+      "id": "C",
+      "text": "unless",
+      "zh": "除非",
+      "whyZh": "unless 將無引導性作為不必等標記的例外，但前文要求技術人員一律等聽者記下位置。"
+    },
+    {
+      "id": "D",
+      "text": "as though",
+      "zh": "彷彿",
+      "whyZh": "as though 是彷彿，好像能假裝答覆不引導；實際目標是讓紀錄形成在答覆之前。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "等待標記後才答是為避免影響聽者選點；so that 引出的正是這項做法的目的。",
+  "evidence": "only after they have marked a location / their answers will not guide anyone to a particular point",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1162,
+      "endChar": 1200,
+      "exactQuote": "only after they have marked a location"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1210,
+      "endChar": 1267,
+      "exactQuote": "their answers will not guide anyone to a particular point"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "so that",
+      "zh": "以免"
+    }
+  ]
+}

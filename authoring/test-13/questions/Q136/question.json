@@ -1,0 +1,66 @@
+{
+  "id": "t13-q136",
+  "uuid": "4e8bfc0b-b5bc-5570-92aa-4060ea1f8c88",
+  "testId": "test-13",
+  "number": 136,
+  "part": 6,
+  "groupId": "t13-r-p6-02",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "text-completion",
+    "daily"
+  ],
+  "prompt": "Choose the best word or sentence for blank [136].",
+  "promptZh": "請選出最適合填入第 136 格的答案。",
+  "options": [
+    {
+      "id": "A",
+      "text": "When you move a tail to another drying spot, move its tag to that new spot as well.",
+      "zh": "若把尾帶移到另一處晾乾，也把它的認領標籤移到新位置。",
+      "whyZh": "認領靠風箏的一張標籤與晾乾位置的一張標籤配成一對。尾帶移位時同步移牌，之後才能憑配對找回正確的尾帶，而非憑顏色。"
+    },
+    {
+      "id": "B",
+      "text": "If two neighboring tails look alike, remove one tag so there is no confusion about the color.",
+      "zh": "若相鄰兩條尾帶看起來相同，就移除其中一張標籤，避免弄混顏色。",
+      "whyZh": "外觀相同正是保留各自標籤的情況，拿掉一張會失去歸屬線索。"
+    },
+    {
+      "id": "C",
+      "text": "Take both tags off as soon as the kite is brought to the tent; the tails can be collected by color.",
+      "zh": "風箏一到帳篷就取下兩張標籤；憑顏色即可領尾帶。",
+      "whyZh": "同色彩帶可能屬於不同風箏；拿掉配對會妨礙後句所描述的認領方法。"
+    },
+    {
+      "id": "D",
+      "text": "Put each tag on the handle of a loan kite instead, so it can be carried through the practice field.",
+      "zh": "把所有標籤改貼到借用風箏的手把上，這樣風箏就能帶去練習區。",
+      "whyZh": "借用風箏與自有遊行風箏是不同用途；把認領標籤改貼借用風箏會使配對失效。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "認領靠風箏的一張標籤與晾乾位置的一張標籤配成一對。尾帶移位時同步移牌，之後才能憑配對找回正確的尾帶，而非憑顏色。",
+  "evidence": "attach a small matching claim tag to the kite and to the spot where its tail is drying / even when neighboring streamers happen to look alike",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 648,
+      "endChar": 734,
+      "exactQuote": "attach a small matching claim tag to the kite and to the spot where its tail is drying"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 875,
+      "endChar": 927,
+      "exactQuote": "even when neighboring streamers happen to look alike"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "drying spot",
+      "zh": "晾乾的位置"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "t13-q131",
+  "uuid": "957a8137-7c6b-5b67-86f2-c06a2cf318cd",
+  "testId": "test-13",
+  "number": 131,
+  "part": 6,
+  "groupId": "t13-r-p6-01",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Choose the best word or sentence for blank [131].",
+  "promptZh": "請選出最適合填入第 131 格的答案。",
+  "options": [
+    {
+      "id": "A",
+      "text": "as well as",
+      "zh": "以及",
+      "whyZh": "文中首先要取得方向改變的位置；as well as 會把「只記最響處」也寫成另一項要求，和 only 及測試目的不合。"
+    },
+    {
+      "id": "B",
+      "text": "rather than",
+      "zh": "而不是",
+      "whyZh": "方向改變不見得出現在最響處；rather than 引出應避免的替代做法，不能只記最大音量的位置。"
+    },
+    {
+      "id": "C",
+      "text": "in addition to",
+      "zh": "另外還",
+      "whyZh": "in addition to 指另外記錄，會把原先沒有辨識方向的做法保留下來，不是將它換成指定記錄項目。"
+    },
+    {
+      "id": "D",
+      "text": "after",
+      "zh": "在……之後",
+      "whyZh": "after 把記最響處當成先行程序；指示要的是用同一趟路徑記方向改變，不要求先記最大音量。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "方向改變不見得出現在最響處；rather than 引出應避免的替代做法，不能只記最大音量的位置。",
+  "evidence": "the first location at which the voice seems to change direction / not speaker output",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 514,
+      "endChar": 577,
+      "exactQuote": "the first location at which the voice seems to change direction"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1309,
+      "endChar": 1327,
+      "exactQuote": "not speaker output"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "rather than",
+      "zh": "而不是"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "t13-q140",
+  "uuid": "185e1b43-ae59-5770-b609-760d37ae3325",
+  "testId": "test-13",
+  "number": 140,
+  "part": 6,
+  "groupId": "t13-r-p6-03",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Choose the best word or sentence for blank [140].",
+  "promptZh": "請選出最適合填入第 140 格的答案。",
+  "options": [
+    {
+      "id": "A",
+      "text": "Move both feet to the next shoe length before you record either of the forms.",
+      "zh": "先把左右鞋都換到下一個鞋長，再記下其中任何一隻的鞋楦。",
+      "whyZh": "前句規定測更長的左鞋時先不要再改右鞋；兩腳一起換鞋長會改掉控制的右側搭配。"
+    },
+    {
+      "id": "B",
+      "text": "Enter the form and insole used for the final trial on each side rather than copying the newer left-side entry into both fields.",
+      "zh": "按最後試穿結果分別記下左右鞋的鞋楦和鞋墊，不要把左腳較新的紀錄複製到兩欄。",
+      "whyZh": "每腳可各自試不同搭配，紀錄也要能支援分開下訂。只改左腳時，右腳不能沿用左腳的新資料。"
+    },
+    {
+      "id": "C",
+      "text": "Use the left shoe to confirm the overall size, and omit information about the right side until the order is shipped.",
+      "zh": "只用左鞋確認整雙尺寸，等鞋寄出後再補右腳資料。",
+      "whyZh": "這張卡要求每隻都註明鞋楦；出貨以後才補右側資料，製鞋人員便無從依右側結果製作。"
+    },
+    {
+      "id": "D",
+      "text": "Remove the thinner insole from both shoes before checking whether the dancer prefers the new fit.",
+      "zh": "先把兩鞋的薄鞋墊取出，再確認舞者是否喜歡新的搭配。",
+      "whyZh": "取掉兩邊薄鞋墊等於再改動原有測試設定，也沒說明如何在卡上保留左右各自的搭配結果。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "每腳可各自試不同搭配，紀錄也要能支援分開下訂。只改左腳時，右腳不能沿用左腳的新資料。",
+  "evidence": "test the next left shoe length without making another change to the right shoe / The two sides can be ordered with different combinations",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 630,
+      "endChar": 708,
+      "exactQuote": "test the next left shoe length without making another change to the right shoe"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 838,
+      "endChar": 894,
+      "exactQuote": "The two sides can be ordered with different combinations"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "insole",
+      "zh": "鞋墊"
+    }
+  ]
+}

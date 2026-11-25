@@ -1,0 +1,66 @@
+{
+  "id": "t13-q138",
+  "uuid": "afe1ff46-dab1-5f66-b6ce-d4c276299b31",
+  "testId": "test-13",
+  "number": 138,
+  "part": 6,
+  "groupId": "t13-r-p6-02",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "daily"
+  ],
+  "prompt": "Choose the best word or sentence for blank [138].",
+  "promptZh": "請選出最適合填入第 138 格的答案。",
+  "options": [
+    {
+      "id": "A",
+      "text": "permanent",
+      "zh": "永久的",
+      "whyZh": "permanent 表示永久；星期日中午還未領取就移交，不會一直放在中心。"
+    },
+    {
+      "id": "B",
+      "text": "temporary",
+      "zh": "暫時",
+      "whyZh": "temporary basis 表示中心僅暫存，期限到星期日中午；逾時未取的風箏移到另一個招領處。"
+    },
+    {
+      "id": "C",
+      "text": "seasonal",
+      "zh": "季節性的",
+      "whyZh": "seasonal 指按季節安排；活動後到星期日中午的處理程序不是每一季反覆保管。"
+    },
+    {
+      "id": "D",
+      "text": "renewable",
+      "zh": "可續期的",
+      "whyZh": "renewable 指保管期可延長或另續一段期限；指示只說到點移送，沒有說可以續期。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "temporary basis 表示中心僅暫存，期限到星期日中午；逾時未取的風箏移到另一個招領處。",
+  "evidence": "take it inside the center at dusk / any kite still there at noon on Sunday goes to the main lost-property desk",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1272,
+      "endChar": 1305,
+      "exactQuote": "take it inside the center at dusk"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1351,
+      "endChar": 1425,
+      "exactQuote": "any kite still there at noon on Sunday goes to the main lost-property desk"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "temporary",
+      "zh": "暫時"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "t13-q146",
+  "uuid": "7f452c1b-2889-54e3-8ab2-eb878518846b",
+  "testId": "test-13",
+  "number": 146,
+  "part": 6,
+  "groupId": "t13-r-p6-04",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "text-completion",
+    "daily"
+  ],
+  "prompt": "Choose the best word or sentence for blank [146].",
+  "promptZh": "請選出最適合填入第 146 格的答案。",
+  "options": [
+    {
+      "id": "A",
+      "text": "limits the time on",
+      "zh": "限制……的時間",
+      "whyZh": "桌號不會改變時鐘設定或限制對弈時間；當前問題是如何辨識收到哪種顯示效果的意見。"
+    },
+    {
+      "id": "B",
+      "text": "records the brightness of",
+      "zh": "記錄……的亮度",
+      "whyZh": "亮度不是桌號能記下的量，也沒有要求志工量測亮度。"
+    },
+    {
+      "id": "C",
+      "text": "may not identify",
+      "zh": "不一定能判別",
+      "whyZh": "中途換時鐘後，同一張桌可能先後用兩台時鐘；必須提供編號，不能單憑桌號判定所說的是哪一款顯示。"
+    },
+    {
+      "id": "D",
+      "text": "might already display",
+      "zh": "也許已顯示",
+      "whyZh": "若桌號本身已顯示出所看的機型，就無須在同桌改用兩台時分別附上實際時鐘的編號；原文沒有說桌號會顯示機型。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "中途換時鐘後，同一張桌可能先後用兩台時鐘；必須提供編號，不能單憑桌號判定所說的是哪一款顯示。",
+  "evidence": "If you changed clocks in the middle of the game / give the clock numbers in the order you used them / a table number alone",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1406,
+      "endChar": 1453,
+      "exactQuote": "If you changed clocks in the middle of the game"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1455,
+      "endChar": 1504,
+      "exactQuote": "give the clock numbers in the order you used them"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1556,
+      "endChar": 1576,
+      "exactQuote": "a table number alone"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "may not identify",
+      "zh": "不一定能判別"
+    }
+  ]
+}

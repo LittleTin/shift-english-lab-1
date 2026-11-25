@@ -1,0 +1,66 @@
+{
+  "id": "t13-q132",
+  "uuid": "1483df5f-fb4d-560e-811f-1463c9c44f7d",
+  "testId": "test-13",
+  "number": 132,
+  "part": 6,
+  "groupId": "t13-r-p6-01",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "text-completion",
+    "business"
+  ],
+  "prompt": "Choose the best word or sentence for blank [132].",
+  "promptZh": "請選出最適合填入第 132 格的答案。",
+  "options": [
+    {
+      "id": "A",
+      "text": "Copy the outbound right or left mark to the same place on the return map, so the two maps use matching labels.",
+      "zh": "把去程記下的左或右抄到回程圖的同一處，讓兩張圖用相同標記。",
+      "whyZh": "直接照抄左右會把相反方向的兩次觀察誤當成指向同一面牆；路徑記號相同，不表示左右的基準相同。"
+    },
+    {
+      "id": "B",
+      "text": "Rotate the return map and then remove all of the walking marks that appear on both maps.",
+      "zh": "旋轉回程圖，然後刪掉兩張圖都有的所有步行記號。",
+      "whyZh": "不能刪兩圖共有的步行記號，否則無法比較行經同一點時的認知；也還需要把左右對應到實體牆面。"
+    },
+    {
+      "id": "C",
+      "text": "Keep right and left in the report without noting which way each listener was facing.",
+      "zh": "在報告上保留左右，但不註明聽者當時面向哪裡。",
+      "whyZh": "只留左右不記行進方向，就無法判斷左右究竟是指中庭哪一面牆。"
+    },
+    {
+      "id": "D",
+      "text": "After each walk, convert the listener’s right or left into the actual wall indicated before comparing the marks.",
+      "zh": "每次走完後，先把聽者所說的左或右換成實際指出的牆面，再比較記號。",
+      "whyZh": "前文提到去程與回程同一方位詞會指相對的兩面牆；先換成以場地為準的實際牆面再比較，才可回答後句的「是否同一面牆」。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "前文提到去程與回程同一方位詞會指相對的兩面牆；先換成以場地為準的實際牆面再比較，才可回答後句的「是否同一面牆」。",
+  "evidence": "listeners will cross the atrium in the opposite direction / This will let us tell whether listeners on both walks are pointing to the same wall",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 669,
+      "endChar": 726,
+      "exactQuote": "listeners will cross the atrium in the opposite direction"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 968,
+      "endChar": 1051,
+      "exactQuote": "This will let us tell whether listeners on both walks are pointing to the same wall"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "before comparing the marks",
+      "zh": "比較記號之前"
+    }
+  ]
+}

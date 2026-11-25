@@ -1,0 +1,66 @@
+{
+  "id": "t13-q137",
+  "uuid": "c45a9c9b-24dc-5d48-b3bb-c871858ba4e2",
+  "testId": "test-13",
+  "number": 137,
+  "part": 6,
+  "groupId": "t13-r-p6-02",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "daily"
+  ],
+  "prompt": "Choose the best word or sentence for blank [137].",
+  "promptZh": "請選出最適合填入第 137 格的答案。",
+  "options": [
+    {
+      "id": "A",
+      "text": "will record",
+      "zh": "將記錄",
+      "whyZh": "will record 把歸還當成即將主動記錄的事物；是引導員記下歸還，不是歸還本身記錄其他事，once 也已標示先決時間。"
+    },
+    {
+      "id": "B",
+      "text": "had been recording",
+      "zh": "先前一直在記錄",
+      "whyZh": "had been recording 是過去完成進行式，把登記變成先前持續進行的動作，也錯把歸還寫成執行記錄的主詞。"
+    },
+    {
+      "id": "C",
+      "text": "has been recorded",
+      "zh": "已登記",
+      "whyZh": "has been recorded 是現在完成被動，表示上一次歸還已在簿上登記；登記完成後可再次出借。"
+    },
+    {
+      "id": "D",
+      "text": "records",
+      "zh": "記錄（主動，第三人稱單數）",
+      "whyZh": "records 是主動式；previous return 是要被登記的事件，不能用它當主動記錄的人。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "has been recorded 是現在完成被動，表示上一次歸還已在簿上登記；登記完成後可再次出借。",
+  "evidence": "A new loan may begin once the previous return / in the steward’s register",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1095,
+      "endChar": 1140,
+      "exactQuote": "A new loan may begin once the previous return"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1159,
+      "endChar": 1184,
+      "exactQuote": "in the steward’s register"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "has been recorded",
+      "zh": "已登記"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "t13-q145",
+  "uuid": "f2d96486-ef92-5586-b2c7-b357061508d4",
+  "testId": "test-13",
+  "number": 145,
+  "part": 6,
+  "groupId": "t13-r-p6-04",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "text-completion",
+    "daily"
+  ],
+  "prompt": "Choose the best word or sentence for blank [145].",
+  "promptZh": "請選出最適合填入第 145 格的答案。",
+  "options": [
+    {
+      "id": "A",
+      "text": "by which time",
+      "zh": "到那時",
+      "whyZh": "by which time 回指隔天早上九點；will have ended 從九點往前看，指出星期四閉館前須歸還的設備已不在借用期內。"
+    },
+    {
+      "id": "B",
+      "text": "after which time",
+      "zh": "在那之後",
+      "whyZh": "after which time 會把期限結束放到隔天早上九點之後；設備在星期四閉館前就要歸還，時間先後相反。"
+    },
+    {
+      "id": "C",
+      "text": "from that time onward",
+      "zh": "自那時起",
+      "whyZh": "from that time onward 表示從讀留言那時往後開始；借用已在該時點前結束，而且該片語不能在逗號後直接連接兩個有限子句。"
+    },
+    {
+      "id": "D",
+      "text": "at whatever time",
+      "zh": "在無論哪個時間",
+      "whyZh": "at whatever time 不回指已指定的隔天一早，也未連接 the equipment loan will have ended 成合乎此語境的子句。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "by which time 回指隔天早上九點；will have ended 從九點往前看，指出星期四閉館前須歸還的設備已不在借用期內。",
+  "evidence": "The equipment is due back before the hall closes on Thursday / The comments will be read at nine the next morning / the equipment loan will have ended",
+  "evidenceSpans": [
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1185,
+      "endChar": 1245,
+      "exactQuote": "The equipment is due back before the hall closes on Thursday"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1247,
+      "endChar": 1297,
+      "exactQuote": "The comments will be read at nine the next morning"
+    },
+    {
+      "sourceField": "reviewPassage",
+      "startChar": 1313,
+      "endChar": 1347,
+      "exactQuote": "the equipment loan will have ended"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "by which time",
+      "zh": "到那時"
+    }
+  ]
+}
