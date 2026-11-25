@@ -1,0 +1,73 @@
+{
+  "id": "t13-q153",
+  "uuid": "c6a92f46-094c-54c2-9442-99a657b45d13",
+  "testId": "test-13",
+  "number": 153,
+  "part": 7,
+  "groupId": "t13-r-p7-03",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "double-passage",
+    "daily"
+  ],
+  "prompt": "A neighbor asks a volunteer to show a written comment beside a story clearly marked “with headphones.” What can the volunteer explain?",
+  "promptZh": "鄰居請志工把自己的書面意見放在一段明確標為「用耳機聆聽」的故事旁。志工可以怎麼說明？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Allowing a comment would change the story's listening label to “play aloud.”",
+      "zh": "允許留言會把故事的聆聽標示改成「可公開播放」。",
+      "whyZh": "書面意見和錄音的聆聽方式是兩回事；留言不會改變聆聽規定。"
+    },
+    {
+      "id": "B",
+      "text": "The neighbor must sign in the speaker space before leaving a comment.",
+      "zh": "鄰居要先在講述者欄簽名，才能留言。",
+      "whyZh": "講述者欄用於確認錄音的署名，未要求聽眾在此簽名才可寫意見。"
+    },
+    {
+      "id": "C",
+      "text": "The listening restriction can stay in place even though the neighbor leaves written feedback.",
+      "zh": "即使鄰居留下書面意見，原有的聆聽限制仍可保留。",
+      "whyZh": "辦法明說耳機限制不影響留言；兩者可以同時成立。"
+    },
+    {
+      "id": "D",
+      "text": "The neighbor must replace the original listening card with the comment.",
+      "zh": "鄰居必須用意見取代原聆聽卡。",
+      "whyZh": "原卡應保留，而書面意見不負責指定聆聽方式。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "辦法明說耳機限制不影響留言；兩者可以同時成立。",
+  "evidence": "The speaker space gives the name to credit / “With headphones” does not stop listeners from leaving written comments",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 177,
+      "endChar": 219,
+      "documentStartChar": 123,
+      "documentEndChar": 165,
+      "exactQuote": "The speaker space gives the name to credit"
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 339,
+      "endChar": 410,
+      "documentStartChar": 285,
+      "documentEndChar": 356,
+      "exactQuote": "“With headphones” does not stop listeners from leaving written comments"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "listening space",
+      "zh": "聆聽方式欄"
+    }
+  ]
+}

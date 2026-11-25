@@ -1,0 +1,73 @@
+{
+  "id": "t13-q157",
+  "uuid": "9ac3dac1-55ef-5aba-9856-85841169bc91",
+  "testId": "test-13",
+  "number": 157,
+  "part": 7,
+  "groupId": "t13-r-p7-04",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "triple-passage",
+    "business"
+  ],
+  "prompt": "What happens when a technician presses HIDE instead of muting a booth?",
+  "promptZh": "技術人員按 HIDE 而不是將口譯間靜音時，會發生什麼事？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The booth stops transmitting but the sign keeps the same channel number.",
+      "zh": "口譯間停止傳送，但指示牌維持顯示同一個頻道。",
+      "whyZh": "停止口譯間傳輸是靜音的效果，不是按 HIDE 的效果。"
+    },
+    {
+      "id": "B",
+      "text": "The rehearsal receiver can hear only the main talk on channel 2.",
+      "zh": "彩排接收器只能收到第 2 頻道的主講。",
+      "whyZh": "HIDE 不重新調整彩排接收器頻道；接收器依原設定可繼續收聽仍在傳輸的口譯。"
+    },
+    {
+      "id": "C",
+      "text": "The channel is removed from the audience display without cutting the booth feed.",
+      "zh": "該頻道從聽眾指示牌隱藏，但口譯間仍可送出訊號。",
+      "whyZh": "技術簡報說 HIDE 只改顯示，彩排接收器在頻道隱藏時仍可收聽。"
+    },
+    {
+      "id": "D",
+      "text": "The audience sign displays the channel during the staff test.",
+      "zh": "工作人員測試期間，聽眾指示牌會顯示該頻道。",
+      "whyZh": "HIDE 隱藏頻道，不是讓它在測試期間顯示。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "技術簡報說 HIDE 只改顯示，彩排接收器在頻道隱藏時仍可收聽。",
+  "evidence": "Pressing HIDE on the sign panel changes the display only / Muting the booth switches off the booth feed itself",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 534,
+      "endChar": 590,
+      "documentStartChar": 479,
+      "documentEndChar": 535,
+      "exactQuote": "Pressing HIDE on the sign panel changes the display only"
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 592,
+      "endChar": 643,
+      "documentStartChar": 537,
+      "documentEndChar": 588,
+      "exactQuote": "Muting the booth switches off the booth feed itself"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "feed",
+      "zh": "傳輸訊號"
+    }
+  ]
+}

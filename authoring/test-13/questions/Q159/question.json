@@ -1,0 +1,82 @@
+{
+  "id": "t13-q159",
+  "uuid": "589f3703-f0b2-5262-b421-557eded5297e",
+  "testId": "test-13",
+  "number": 159,
+  "part": 7,
+  "groupId": "t13-r-p7-04",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "triple-passage",
+    "business"
+  ],
+  "prompt": "A draft handover says, “At 11:00, put channel 4 on the audience sign for the Korean panel.” Which revision makes the instruction consistent with the technical brief and Niall's update?",
+  "promptZh": "接班草稿寫著：「11:00 在聽眾指示牌上顯示第 4 頻道，供韓語座談使用。」哪項改法同時符合技術簡報和奈爾的更新？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Keep 11:00 for a staff-only test and list 11:18 as the expected panel start, not the test time.",
+      "zh": "保留 11:00 供工作人員測試，將 11:18 列為預定座談開始，而不是測試時間。",
+      "whyZh": "簡報把 11:00 定為韓語測試且不開放聽眾。奈爾說測試不變、座談改到 11:18，必須分開記錄這兩件事。"
+    },
+    {
+      "id": "B",
+      "text": "Delay the Korean test until 11:18, but show channel 4 to the audience at 11:00.",
+      "zh": "將韓語測試延到 11:18，但 11:00 先對聽眾顯示第 4 頻道。",
+      "whyZh": "測試仍在 11:00，而且測試不開放聽眾，兩項都和資料相反。"
+    },
+    {
+      "id": "C",
+      "text": "Cancel the test, since the panel no longer starts at 11:00, and show channel 2 for its interpretation.",
+      "zh": "座談不再於 11:00 開始，故取消測試，並顯示第 2 頻道供座談口譯。",
+      "whyZh": "前文沒取消測試；第 2 頻道用於主講，韓語口譯使用的是第 4 頻道。"
+    },
+    {
+      "id": "D",
+      "text": "Run the audience panel at 11:00 and list 11:18 as the test time for the French booth.",
+      "zh": "11:00 開始聽眾座談，並把 11:18 列為法語口譯間的測試時間。",
+      "whyZh": "11:00 是韓語測試，11:18 是韓語座談；法語口譯安排較早，和此處的測試無關。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "簡報把 11:00 定為韓語測試且不開放聽眾。奈爾說測試不變、座談改到 11:18，必須分開記錄這兩件事。",
+  "evidence": "the Korean booth will test channel 4 from 11:00 to 11:12 / The panel team did not request an audience channel during testing / The panel start moved to 11:18, but the test is still at 11:00",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 175,
+      "endChar": 231,
+      "documentStartChar": 120,
+      "documentEndChar": 176,
+      "exactQuote": "the Korean booth will test channel 4 from 11:00 to 11:12"
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 273,
+      "endChar": 338,
+      "documentStartChar": 218,
+      "documentEndChar": 283,
+      "exactQuote": "The panel team did not request an audience channel during testing"
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 1155,
+      "endChar": 1217,
+      "documentStartChar": 419,
+      "documentEndChar": 481,
+      "exactQuote": "The panel start moved to 11:18, but the test is still at 11:00"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "panel",
+      "zh": "座談"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "t13-q154",
+  "uuid": "0840d8e7-f1c5-5fed-b961-63df64e28814",
+  "testId": "test-13",
+  "number": 154,
+  "part": 7,
+  "groupId": "t13-r-p7-03",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "double-passage",
+    "daily"
+  ],
+  "prompt": "Why does Gita object to playing the first minute of Mina's interview?",
+  "promptZh": "吉塔為什麼反對播出米娜訪談開頭的一分鐘？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The whole recording is restricted while the second voice's listening agreement is missing.",
+      "zh": "第二位講述者尚未同意聆聽方式，所以整段錄音仍受限。",
+      "whyZh": "阿姨只在講述者欄簽名，未同意聆聽方式；整段錄音都受暫定限制，即使剪出米娜單獨發言也不能公開播。"
+    },
+    {
+      "id": "B",
+      "text": "The aunt speaks more than once during the opening minute.",
+      "zh": "阿姨在開頭一分鐘講過不只一次。",
+      "whyZh": "訊息只提阿姨在接近尾聲時出聲，未說她在開頭一分鐘發言；暫定限制涵蓋整段錄音。"
+    },
+    {
+      "id": "C",
+      "text": "Mina has not supplied any name for the first speaker space.",
+      "zh": "米娜還未在第一位講述者欄提供任何姓名。",
+      "whyZh": "訊息沒有指出米娜的講述者欄缺少姓名；吉塔指出的問題是阿姨尚未同意公開播放，而不是署名不全。"
+    },
+    {
+      "id": "D",
+      "text": "A gathering can play only recordings received in the current month.",
+      "zh": "聚會只能播放當月收到的錄音。",
+      "whyZh": "辦法未限制收到月份；吉塔還推薦上個月送來的另一段。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "阿姨只在講述者欄簽名，未同意聆聽方式；整段錄音都受暫定限制，即使剪出米娜單獨發言也不能公開播。",
+  "evidence": "The provisional mark applies to the entire recording / The aunt left the speaker space signed but did not reply about the listening arrangement",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 685,
+      "endChar": 737,
+      "documentStartChar": 631,
+      "documentEndChar": 683,
+      "exactQuote": "The provisional mark applies to the entire recording"
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 1345,
+      "endChar": 1433,
+      "documentStartChar": 257,
+      "documentEndChar": 345,
+      "exactQuote": "The aunt left the speaker space signed but did not reply about the listening arrangement"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "provisional",
+      "zh": "暫定的"
+    }
+  ]
+}

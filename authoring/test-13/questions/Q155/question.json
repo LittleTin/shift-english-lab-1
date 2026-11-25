@@ -1,0 +1,73 @@
+{
+  "id": "t13-q155",
+  "uuid": "1a068098-8e6b-586f-a256-4a751a1c8cb7",
+  "testId": "test-13",
+  "number": 155,
+  "part": 7,
+  "groupId": "t13-r-p7-03",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "double-passage",
+    "daily"
+  ],
+  "prompt": "Which choice fits both the listening rule and Mina's stated credit preference for the gathering?",
+  "promptZh": "哪個做法同時符合聆聽規定，也符合米娜這次聚會希望採用的署名？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Play the interview's opening minute and credit Mina R. from the newest card.",
+      "zh": "播訪談的開頭一分鐘，依最新卡署名 Mina R.。",
+      "whyZh": "Mina R. 符合署名偏好，但訪談任何片段都不能公開播，兩個條件只滿足一個。"
+    },
+    {
+      "id": "B",
+      "text": "Play “Rain on the Balcony” and use her full name shown on the older card.",
+      "zh": "播〈陽台上的雨〉，並用舊卡上的全名。",
+      "whyZh": "這段錄音可以播放，但用舊卡全名不符合她目前的偏好。"
+    },
+    {
+      "id": "C",
+      "text": "Play the full interview and list both speakers by first name.",
+      "zh": "播整段訪談，兩位講述者只寫名字。",
+      "whyZh": "長訪談尚未取得第二位講述者的聆聽同意，改用名字也不能解除限制。"
+    },
+    {
+      "id": "D",
+      "text": "Play “Rain on the Balcony” and use the credit Mina R.",
+      "zh": "播〈陽台上的雨〉，並署名 Mina R.。",
+      "whyZh": "另一段錄音只有米娜，最新具日期的卡允許公開播放；她也要求不要用全名，最新版提供 Mina R.。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "另一段錄音只有米娜，最新具日期的卡允許公開播放；她也要求不要用全名，最新版提供 Mina R.。",
+  "evidence": "Her dated card for that recording says “play aloud.” / The older card shows it, but the latest one shows Mina R.",
+  "evidenceSpans": [
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 1539,
+      "endChar": 1591,
+      "documentStartChar": 451,
+      "documentEndChar": 503,
+      "exactQuote": "Her dated card for that recording says “play aloud.”"
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 1695,
+      "endChar": 1752,
+      "documentStartChar": 607,
+      "documentEndChar": 664,
+      "exactQuote": "The older card shows it, but the latest one shows Mina R."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "credited",
+      "zh": "列名表彰；署名"
+    }
+  ]
+}

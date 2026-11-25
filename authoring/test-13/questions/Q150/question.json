@@ -1,0 +1,73 @@
+{
+  "id": "t13-q150",
+  "uuid": "9ad955fb-d02a-5b67-a05a-ccb7da98fc2f",
+  "testId": "test-13",
+  "number": 150,
+  "part": 7,
+  "groupId": "t13-r-p7-02",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "single-passage",
+    "daily"
+  ],
+  "prompt": "A team starts repairing its sculpture while visitors are approaching. What does the notice indicate about the area around the platform?",
+  "promptZh": "有一隊開始修補沙雕，這時也有遊客走近。公告對平台周圍的區域有什麼說明？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The team can use its marked work area while visitors stay on the separately marked route.",
+      "zh": "隊伍可在劃定的工作區作業，遊客則留在另有標記的動線內。",
+      "whyZh": "公告以不同繩索區分公開動線與修補區，並說隊伍作業時公開動線仍開放。遊客通行與隊伍作業可以同時進行，但區域要分開。"
+    },
+    {
+      "id": "B",
+      "text": "Visitors can cross the blue boundary if they borrow viewing mats at the west entrance.",
+      "zh": "遊客如果在西側入口借了觀覽墊，就可以跨過藍繩。",
+      "whyZh": "觀覽墊提供較硬的行走表面，不是通行許可。藍繩劃出的工作區仍不能進入。"
+    },
+    {
+      "id": "C",
+      "text": "The main route must close whenever an entry needs repairs.",
+      "zh": "只要有作品需要修補，就必須關閉主要動線。",
+      "whyZh": "這與修補期間黃色動線仍開放的說法相反。"
+    },
+    {
+      "id": "D",
+      "text": "Teams can move the yellow cord into the entry's work area to allow visitors to watch more closely.",
+      "zh": "隊伍可以把黃繩移進作品的工作區，好讓遊客靠近觀看。",
+      "whyZh": "黃繩是公開動線，不能為了增加視野而移進工作區；標記不清楚可以請引導員指位置。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "公告以不同繩索區分公開動線與修補區，並說隊伍作業時公開動線仍開放。遊客通行與隊伍作業可以同時進行，但區域要分開。",
+  "evidence": "A yellow cord marks the public route / The yellow route will remain open even while some teams are working",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 113,
+      "endChar": 149,
+      "documentStartChar": 64,
+      "documentEndChar": 100,
+      "exactQuote": "A yellow cord marks the public route"
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 215,
+      "endChar": 282,
+      "documentStartChar": 166,
+      "documentEndChar": 233,
+      "exactQuote": "The yellow route will remain open even while some teams are working"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "public route",
+      "zh": "開放給民眾的動線"
+    }
+  ]
+}

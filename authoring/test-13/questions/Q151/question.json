@@ -1,0 +1,73 @@
+{
+  "id": "t13-q151",
+  "uuid": "6f211022-4a42-58ac-ab3a-efc109f2b7b5",
+  "testId": "test-13",
+  "number": 151,
+  "part": 7,
+  "groupId": "t13-r-p7-02",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "single-passage",
+    "daily"
+  ],
+  "prompt": "Why does the form ask a visitor to identify the side they used for certain entries?",
+  "promptZh": "為什麼有些參賽作品的選票會要求遊客填寫觀覽的那一側？",
+  "options": [
+    {
+      "id": "A",
+      "text": "To check if the visitor entered through the west gate",
+      "zh": "查核遊客是不是從西側入口入場",
+      "whyZh": "詢問的是看作品的那一側，不是入場大門的位置。"
+    },
+    {
+      "id": "B",
+      "text": "To count how many visitors watched the repair teams",
+      "zh": "計算有多少遊客觀看修補工作",
+      "whyZh": "投票欄記側面和喜歡的造型，不記是否看了修補工作。"
+    },
+    {
+      "id": "C",
+      "text": "To require that all voters see the work from both sides",
+      "zh": "要求所有投票者先從兩側看過",
+      "whyZh": "公告明說不用從兩側都看過；只須記下實際看的一側。"
+    },
+    {
+      "id": "D",
+      "text": "To connect a shape preference with the viewpoint that produced it",
+      "zh": "把遊客偏好的造型與他們看作品的位置連在一起",
+      "whyZh": "這幾座沙雕從兩側看差別很大；一同填側面與喜歡的造型，才能知道那個偏好針對哪個視角看到的外形。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "這幾座沙雕從兩側看差別很大；一同填側面與喜歡的造型，才能知道那個偏好針對哪個視角看到的外形。",
+  "evidence": "The shapes of three entries look very different from their two marked sides / choose the side you looked from, then mark the shape you liked",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 380,
+      "endChar": 455,
+      "documentStartChar": 331,
+      "documentEndChar": 406,
+      "exactQuote": "The shapes of three entries look very different from their two marked sides"
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 510,
+      "endChar": 572,
+      "documentStartChar": 461,
+      "documentEndChar": 523,
+      "exactQuote": "choose the side you looked from, then mark the shape you liked"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "marked sides",
+      "zh": "有標記的兩側"
+    }
+  ]
+}

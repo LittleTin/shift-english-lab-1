@@ -1,0 +1,73 @@
+{
+  "id": "t13-q158",
+  "uuid": "bc670eec-16dc-5276-a204-f55ef7ed2b7a",
+  "testId": "test-13",
+  "number": 158,
+  "part": 7,
+  "groupId": "t13-r-p7-04",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "triple-passage",
+    "business"
+  ],
+  "prompt": "At 10:42, why should staff not hide channel 4 yet?",
+  "promptZh": "10:42 時，工作人員為什麼還不該隱藏第 4 頻道？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The Korean team has already started its audience panel.",
+      "zh": "韓語團隊的聽眾座談已開始。",
+      "whyZh": "當時韓語測試甚至還沒開始，座談後來才改到 11:18。"
+    },
+    {
+      "id": "B",
+      "text": "The main talk has not yet been moved from channel 2 to channel 4.",
+      "zh": "主講還沒有從第 2 頻道移到第 4 頻道。",
+      "whyZh": "主講使用第 2 頻道，沒有移到第 4 頻道的安排；第 4 頻道用於不同口譯。"
+    },
+    {
+      "id": "C",
+      "text": "The rehearsal receiver still needs the audience sign to find the channel.",
+      "zh": "彩排接收器仍需要指示牌才能找到頻道。",
+      "whyZh": "彩排接收器在頻道從指示牌隱藏後仍可收聽；指示牌不是給彩排設備找頻道用的。"
+    },
+    {
+      "id": "D",
+      "text": "French interpretation is still available for one more slide.",
+      "zh": "第 4 頻道仍可收聽最後一張投影片的法語口譯。",
+      "whyZh": "技術簡報說，聽眾還能收聽某場活動時才顯示頻道。對話指出主講雖已結束，第 4 頻道還有最後一張投影片的法語口譯，因此仍應顯示。"
+    }
+  ],
+  "answer": "D",
+  "explanationZh": "技術簡報說，聽眾還能收聽某場活動時才顯示頻道。對話指出主講雖已結束，第 4 頻道還有最後一張投影片的法語口譯，因此仍應顯示。",
+  "evidence": "a channel only while it can be used to listen to an event / The interpreter is about to read one last slide",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 368,
+      "endChar": 425,
+      "documentStartChar": 313,
+      "documentEndChar": 370,
+      "exactQuote": "a channel only while it can be used to listen to an event"
+    },
+    {
+      "documentId": "doc2",
+      "sourceField": "passage",
+      "startChar": 832,
+      "endChar": 879,
+      "documentStartChar": 96,
+      "documentEndChar": 143,
+      "exactQuote": "The interpreter is about to read one last slide"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "interpretation",
+      "zh": "口譯"
+    }
+  ]
+}

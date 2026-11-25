@@ -1,0 +1,73 @@
+{
+  "id": "t13-q156",
+  "uuid": "7c7c75ea-8dd0-5aaf-9ab4-8b7c53494baa",
+  "testId": "test-13",
+  "number": 156,
+  "part": 7,
+  "groupId": "t13-r-p7-03",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "double-passage",
+    "daily"
+  ],
+  "prompt": "What should a volunteer do with the previous card if both speakers eventually choose a different listening option for the long interview?",
+  "promptZh": "如果長訪談的兩位講述者後來都同意改用另一種聆聽方式，志工要怎麼處理原卡？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Cross out the original instruction and add the new agreement underneath.",
+      "zh": "劃掉原本的指示，在下面寫下新約定。",
+      "whyZh": "辦法說不可在原卡上覆寫；更改要另開新卡。"
+    },
+    {
+      "id": "B",
+      "text": "Keep the old card behind a dated replacement card showing the new decision.",
+      "zh": "在註有日期、記載新決定的新卡後面保留舊卡。",
+      "whyZh": "雙方同意後，給新卡寫日期，把舊卡留在後面；最新設定由頂端的有日期卡提供。"
+    },
+    {
+      "id": "C",
+      "text": "Throw away the old card once both speakers have approved the change.",
+      "zh": "兩位講述者都同意改變後就丟掉舊卡。",
+      "whyZh": "原卡要留在後方，不能因新設定確定就丟掉。"
+    },
+    {
+      "id": "D",
+      "text": "Keep the old card on top and change only the name printed on the recording.",
+      "zh": "把舊卡留在最上面，只改錄音上印的人名。",
+      "whyZh": "應在上方放新卡，而且錄音上印的姓名不決定播放方式。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "雙方同意後，給新卡寫日期，把舊卡留在後面；最新設定由頂端的有日期卡提供。",
+  "evidence": "put the date on an updated card and keep the old card behind it / use the dated card on top",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 810,
+      "endChar": 873,
+      "documentStartChar": 756,
+      "documentEndChar": 819,
+      "exactQuote": "put the date on an updated card and keep the old card behind it"
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 968,
+      "endChar": 993,
+      "documentStartChar": 914,
+      "documentEndChar": 939,
+      "exactQuote": "use the dated card on top"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "dated card",
+      "zh": "有日期的卡片"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "t13-q152",
+  "uuid": "c492d3bf-b7f5-5dfe-a51e-86a8cf8d8858",
+  "testId": "test-13",
+  "number": 152,
+  "part": 7,
+  "groupId": "t13-r-p7-02",
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "single-passage",
+    "daily"
+  ],
+  "prompt": "A visitor arrives during the noon repairs and wants to vote after seeing the west-platform entry from its west viewing position. What is the best plan?",
+  "promptZh": "遊客在中午修補期間到場，想看過西側平台作品從西面看去的視角再投票。怎麼做最合適？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Wait at the exit until the repair team uncovers the west mark and collects votes.",
+      "zh": "在出口等修補隊掀開西側標記，並在那裡等他們收票。",
+      "whyZh": "選票由出口的引導員收取，修補人員不是收票者；主辦方也沒要求等標記露出才能看。"
+    },
+    {
+      "id": "B",
+      "text": "Reach the platform from the east on the public route and ask the steward for the west viewing position.",
+      "zh": "使用公開動線從東側到平台，再請引導員指示西側觀覽點。",
+      "whyZh": "修補時公開路線仍從東側到平台，而觀覽墊旁引導員可以從公開路線指引到兩側觀覽點。兩項條件使遊客能安全看到西面並照常在出口投票。"
+    },
+    {
+      "id": "C",
+      "text": "Enter inside the blue cord to see the west face while the public mark is covered.",
+      "zh": "趁公開標記被蓋住，走到藍繩內從西面看。",
+      "whyZh": "藍繩內是修補工作區，公告明令不要為了看清楚進入。"
+    },
+    {
+      "id": "D",
+      "text": "Use the mat as the west viewing marker and give the vote to the workers on the platform.",
+      "zh": "把觀覽墊當作西側觀覽標記，並將選票交給平台作業人員。",
+      "whyZh": "觀覽墊用來提供較硬的表面，不是西側正確觀覽點；選票也不在工作區收取。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "修補時公開路線仍從東側到平台，而觀覽墊旁引導員可以從公開路線指引到兩側觀覽點。兩項條件使遊客能安全看到西面並照常在出口投票。",
+  "evidence": "The public route still reaches it from the east / the steward beside the mat can still direct visitors to both marked sides / we will not collect votes inside the marked work area",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 813,
+      "endChar": 860,
+      "documentStartChar": 764,
+      "documentEndChar": 811,
+      "exactQuote": "The public route still reaches it from the east"
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 926,
+      "endChar": 999,
+      "documentStartChar": 877,
+      "documentEndChar": 950,
+      "exactQuote": "the steward beside the mat can still direct visitors to both marked sides"
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 1071,
+      "endChar": 1124,
+      "documentStartChar": 1022,
+      "documentEndChar": 1075,
+      "exactQuote": "we will not collect votes inside the marked work area"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "steward",
+      "zh": "現場引導員"
+    }
+  ]
+}

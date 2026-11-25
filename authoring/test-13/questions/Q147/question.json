@@ -1,0 +1,73 @@
+{
+  "id": "t13-q147",
+  "uuid": "ee0f9b86-5532-5ba2-9d83-23e1253e6e8c",
+  "testId": "test-13",
+  "number": 147,
+  "part": 7,
+  "groupId": "t13-r-p7-01",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "single-passage",
+    "business"
+  ],
+  "prompt": "Why did the workshop publish this notice for potential trainees?",
+  "promptZh": "這份公告的主要目的是什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "To announce that the workshop is changing its cutting equipment",
+      "zh": "宣告工場會更換裁切設備",
+      "whyZh": "公告沒有更換設備的安排；裁切是實習能力的一部分。"
+    },
+    {
+      "id": "B",
+      "text": "To explain how customers should request a change to a drawing",
+      "zh": "說明客戶如何申請修改圖面",
+      "whyZh": "客戶改變需求只用來說明進階實習的教學內容，對象是應徵者而非客戶。"
+    },
+    {
+      "id": "C",
+      "text": "To tell prospective placement applicants what evidence to submit",
+      "zh": "告訴打算報名實習的人應提交哪些證明",
+      "whyZh": "開頭介紹兩種實習，後兩段重點在申請所需的照片、進階實習的圖面與說明，以及漏件處理。"
+    },
+    {
+      "id": "D",
+      "text": "To invite instructors to lead three weeks of cabinet classes",
+      "zh": "招募老師帶領為期三週的木櫃課程",
+      "whyZh": "公告徵求實習申請人，不是徵老師；老師可能協助申請人撰寫說明，但不是招募對象。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "開頭介紹兩種實習，後兩段重點在申請所需的照片、進階實習的圖面與說明，以及漏件處理。",
+  "evidence": "Applicants may list both preferences / For either placement, submit one photo of work that you did yourself",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 294,
+      "endChar": 330,
+      "documentStartChar": 229,
+      "documentEndChar": 265,
+      "exactQuote": "Applicants may list both preferences"
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 385,
+      "endChar": 453,
+      "documentStartChar": 320,
+      "documentEndChar": 388,
+      "exactQuote": "For either placement, submit one photo of work that you did yourself"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "placement",
+      "zh": "實習安排"
+    }
+  ]
+}

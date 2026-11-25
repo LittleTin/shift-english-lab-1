@@ -1,0 +1,82 @@
+{
+  "id": "t13-q161",
+  "uuid": "07173224-543c-5a4e-80a9-2b98201cbec3",
+  "testId": "test-13",
+  "number": 161,
+  "part": 7,
+  "groupId": "t13-r-p7-04",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "triple-passage",
+    "business"
+  ],
+  "prompt": "Which action fits both the test-bench rule and the attendant's expected use after the panel starts?",
+  "promptZh": "哪個做法同時符合測試台的規定，也符合座談開始後無障礙服務人員的需要？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Let the attendant use the worn receiver for both checking and helping the guest, since staff selected it.",
+      "zh": "因為這台是工作人員挑的，讓服務人員用磨損的接收器做檢查及協助來賓。",
+      "whyZh": "磨損的接收器只能在測試台使用，不得發給聽眾；服務人員之後要用它協助來賓，不能把這台交給他。"
+    },
+    {
+      "id": "B",
+      "text": "Leave the worn receiver for staff use only and get a different spare from the hall locker for the attendant.",
+      "zh": "把磨損的接收器留給工作人員使用，另從廳內置物櫃取一台備用機給服務人員。",
+      "whyZh": "便條說磨損的接收器可留作測試台用途，並要求另從廳內置物櫃取一台。這樣能支援服務人員測試以及開場後協助來賓。"
+    },
+    {
+      "id": "C",
+      "text": "Issue the worn receiver after replacing its dial with the one from the locker receiver.",
+      "zh": "用置物櫃那台的旋鈕換掉磨損件，再把原接收器發出去。",
+      "whyZh": "便條未授權拆換部件，已給出前往置物櫃另取整台接收器的做法。"
+    },
+    {
+      "id": "D",
+      "text": "Keep both receivers at the desk and send the guest to the Korean booth.",
+      "zh": "把兩台接收器都留在服務台，讓來賓去韓語口譯間。",
+      "whyZh": "便條說服務人員要在前排協助來賓；把兩台留在服務台且讓來賓去口譯間都不符合安排。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "便條說磨損的接收器可留作測試台用途，並要求另從廳內置物櫃取一台。這樣能支援服務人員測試以及開場後協助來賓。",
+  "evidence": "it is safe to use at the test bench but must not be issued to the audience / Fetch a different spare from the hall locker / using it to assist a guest once the panel starts",
+  "evidenceSpans": [
+    {
+      "documentId": "doc3",
+      "sourceField": "passage",
+      "startChar": 1827,
+      "endChar": 1901,
+      "documentStartChar": 430,
+      "documentEndChar": 504,
+      "exactQuote": "it is safe to use at the test bench but must not be issued to the audience"
+    },
+    {
+      "documentId": "doc3",
+      "sourceField": "passage",
+      "startChar": 1903,
+      "endChar": 1947,
+      "documentStartChar": 506,
+      "documentEndChar": 550,
+      "exactQuote": "Fetch a different spare from the hall locker"
+    },
+    {
+      "documentId": "doc3",
+      "sourceField": "passage",
+      "startChar": 1979,
+      "endChar": 2027,
+      "documentStartChar": 582,
+      "documentEndChar": 630,
+      "exactQuote": "using it to assist a guest once the panel starts"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "spare receiver",
+      "zh": "備用接收器"
+    }
+  ]
+}

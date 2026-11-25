@@ -1,0 +1,82 @@
+{
+  "id": "t13-q148",
+  "uuid": "3043627b-92cc-59f6-acd4-60a3641d1ad6",
+  "testId": "test-13",
+  "number": 148,
+  "part": 7,
+  "groupId": "t13-r-p7-01",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "single-passage",
+    "business"
+  ],
+  "prompt": "Kai lists plan adjustment first and cutting second. Kai submits a photograph of a divider he fitted, but includes no other files. How can the workshop handle the application?",
+  "promptZh": "凱的第一志願是計畫調整，第二志願是裁切。他提交自己安裝隔板的照片，沒有附其他檔案。工場可以怎麼處理他的申請？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Consider both placements because a fitted divider proves a plan was changed.",
+      "zh": "隔板能證明他改過計畫，因此兩種實習都可審查。",
+      "whyZh": "照片中的隔板是本人作品，但不能取代計畫調整實習所需的早期圖面及說明。"
+    },
+    {
+      "id": "B",
+      "text": "Consider him for cutting without requiring him to send a drawing after the deadline.",
+      "zh": "可以考慮他參加裁切實習，不要求他在截止後補交圖面。",
+      "whyZh": "符合照片要求、漏交早期圖面和說明，且第二志願是裁切，正好符合轉入裁切審查的條件；截止後不會再要求補圖。"
+    },
+    {
+      "id": "C",
+      "text": "Interview him twice to check whether he changed the divider's original drawing.",
+      "zh": "安排兩次面試，確認他是否修改了隔板的原始圖面。",
+      "whyZh": "每位申請人只能受邀面試一個實習，不能用兩次面試補足圖面。"
+    },
+    {
+      "id": "D",
+      "text": "Reject both preferences because the pictured cabinet is unfinished.",
+      "zh": "照片中的櫃子未完工，因此拒絕兩個志願。",
+      "whyZh": "公告明說不必拍完整櫃子，裝好的隔板就是合適的照片內容。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "符合照片要求、漏交早期圖面和說明，且第二志願是裁切，正好符合轉入裁切審查的條件；截止後不會再要求補圖。",
+  "evidence": "a fitted divider / an application listing the cutting placement second can still be considered / We will not ask applicants to send missing drawings after the closing date",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 650,
+      "endChar": 666,
+      "documentStartChar": 585,
+      "documentEndChar": 601,
+      "exactQuote": "a fitted divider"
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 945,
+      "endChar": 1020,
+      "documentStartChar": 880,
+      "documentEndChar": 955,
+      "exactQuote": "an application listing the cutting placement second can still be considered"
+    },
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 1072,
+      "endChar": 1146,
+      "documentStartChar": 1007,
+      "documentEndChar": 1081,
+      "exactQuote": "We will not ask applicants to send missing drawings after the closing date"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "fitted divider",
+      "zh": "裝妥的隔板"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "t13-q160",
+  "uuid": "e246ac6a-7c69-5a64-afec-84b77158af44",
+  "testId": "test-13",
+  "number": 160,
+  "part": 7,
+  "groupId": "t13-r-p7-04",
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "triple-passage",
+    "business"
+  ],
+  "prompt": "At 11:16 the booth technician signals readiness, but the moderator has not yet greeted the audience. What should the desk lead do with channel 4?",
+  "promptZh": "11:16 口譯間技術人員示意已準備好，主持人尚未向聽眾致意。服務台組長該怎麼處理第 4 頻道？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Display it and mute the booth until the moderator speaks.",
+      "zh": "顯示頻道，但將口譯間靜音直到主持人開口。",
+      "whyZh": "顯示的觸發點還沒發生，且便條說致詞前仍需讓工作人員收聽，不可靜音。"
+    },
+    {
+      "id": "B",
+      "text": "Leave it hidden and mute the booth until the announced start time.",
+      "zh": "隱藏頻道並靜音，直到公告的開始時間。",
+      "whyZh": "隱藏顯示這部分對，但靜音會中斷工作人員收聽，而且不能僅用公告時間代替主持人致詞。"
+    },
+    {
+      "id": "C",
+      "text": "Keep it hidden from the audience but retain the staff feed.",
+      "zh": "不在聽眾指示牌顯示，但保持工作人員能收聽訊號。",
+      "whyZh": "接班便條把公開顯示和內部訊號分開；技術員發訊號不等於主持人致詞，應繼續隱藏但保留工作訊號。"
+    },
+    {
+      "id": "D",
+      "text": "Display it immediately, since the booth can now transmit.",
+      "zh": "口譯間現在已能傳送訊號，所以立刻顯示頻道。",
+      "whyZh": "口譯間可送出訊號只表示能供內部使用；要公開顯示仍須等主持人向聽眾致意。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "接班便條把公開顯示和內部訊號分開；技術員發訊號不等於主持人致詞，應繼續隱藏但保留工作訊號。",
+  "evidence": "Staff can use the rehearsal receiver with a headset even while the channel is hidden / once the moderator welcomes the panel audience, not when the booth technician gives us a ready signal / The booth feed should stay available to staff",
+  "evidenceSpans": [
+    {
+      "documentId": "doc1",
+      "sourceField": "passage",
+      "startChar": 427,
+      "endChar": 511,
+      "documentStartChar": 372,
+      "documentEndChar": 456,
+      "exactQuote": "Staff can use the rehearsal receiver with a headset even while the channel is hidden"
+    },
+    {
+      "documentId": "doc3",
+      "sourceField": "passage",
+      "startChar": 1504,
+      "endChar": 1605,
+      "documentStartChar": 107,
+      "documentEndChar": 208,
+      "exactQuote": "once the moderator welcomes the panel audience, not when the booth technician gives us a ready signal"
+    },
+    {
+      "documentId": "doc3",
+      "sourceField": "passage",
+      "startChar": 1607,
+      "endChar": 1652,
+      "documentStartChar": 210,
+      "documentEndChar": 255,
+      "exactQuote": "The booth feed should stay available to staff"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "moderator",
+      "zh": "主持人"
+    }
+  ]
+}
