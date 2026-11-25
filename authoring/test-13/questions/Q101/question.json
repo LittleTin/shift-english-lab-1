@@ -1,0 +1,52 @@
+{
+  "id": "t13-q101",
+  "uuid": "08c452c4-dc17-5222-a129-ec73624b2867",
+  "testId": "test-13",
+  "number": 101,
+  "part": 5,
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "incomplete-sentence",
+    "business"
+  ],
+  "prompt": "The dye count was never intended to tell operators why the rinse water turned cloudy. But when the optical probe was offline, the count rose and fell in step with the lab readings, so the team used it as a _____ for cloudiness.",
+  "promptZh": "原先並未打算讓作業人員用染劑計數判斷沖洗水為何變混濁。不過，光學探頭停用時，這個計數的升降與實驗室讀值同步，因此團隊用它作為衡量混濁程度的替代指標。",
+  "options": [
+    {
+      "id": "A",
+      "text": "threshold",
+      "zh": "門檻值",
+      "whyZh": "threshold 是用來觸發某項判定的界線；文中沒有設定任何界線，只說兩組讀值同步變動。"
+    },
+    {
+      "id": "B",
+      "text": "cause",
+      "zh": "成因",
+      "whyZh": "cause 要能說明水變混濁的原因；前句明確排除這個用途，而且同步變動不等於有因果關係。"
+    },
+    {
+      "id": "C",
+      "text": "proxy",
+      "zh": "替代指標",
+      "whyZh": "探頭停用時，與實驗室讀值同方向變動的計數可暫作間接衡量。團隊拿來判斷混濁程度，並不拿它解釋混濁的成因。"
+    },
+    {
+      "id": "D",
+      "text": "remedy",
+      "zh": "補救方法",
+      "whyZh": "remedy 指能改善問題的辦法；在此計數只提供讀值，不會使水變清。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "探頭停用時，與實驗室讀值同方向變動的計數可暫作間接衡量。團隊拿來判斷混濁程度，並不拿它解釋混濁的成因。",
+  "evidence": "The dye count was never intended to tell operators why the rinse water turned cloudy. But when the optical probe was offline, the count rose and fell in step with the lab readings, so the team used it as a proxy for cloudiness.",
+  "evidenceZh": "原先並未打算讓作業人員用染劑計數判斷沖洗水為何變混濁。不過，光學探頭停用時，這個計數的升降與實驗室讀值同步，因此團隊用它作為衡量混濁程度的替代指標。",
+  "vocabulary": [
+    {
+      "term": "proxy",
+      "zh": "替代指標"
+    }
+  ]
+}

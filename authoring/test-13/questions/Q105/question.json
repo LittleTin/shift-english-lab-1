@@ -1,0 +1,52 @@
+{
+  "id": "t13-q105",
+  "uuid": "2611b6eb-d871-54ab-8f2c-eb4f3ef999fa",
+  "testId": "test-13",
+  "number": 105,
+  "part": 5,
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "incomplete-sentence",
+    "business"
+  ],
+  "prompt": "The control panel counts each run with a missing stop time as one hour. The controller logs confirm all other durations but show that every run with a missing stop time lasted at most forty minutes. The panel therefore _____ the total runtime.",
+  "promptZh": "控制面板將每筆缺少停止時間的運轉紀錄以一小時計入。控制器紀錄證實其他運轉時間均無誤，但顯示缺少停止時間的運轉實際上每筆最多四十分鐘。因此，控制面板高估了總運轉時間。",
+  "options": [
+    {
+      "id": "A",
+      "text": "overstates",
+      "zh": "高估／報得過高",
+      "whyZh": "每筆缺少停止時間的運轉以一小時計入，實際至多四十分鐘，每筆至少多計二十分鐘；其他運轉時長已證實無誤，因此總時數必然被高估。"
+    },
+    {
+      "id": "B",
+      "text": "understates",
+      "zh": "低估／報得過低",
+      "whyZh": "understates 代表算得比實際少；這裡的一小時大於每筆的真實時間，所以偏差方向相反。"
+    },
+    {
+      "id": "C",
+      "text": "rounds down",
+      "zh": "無條件捨去",
+      "whyZh": "rounds down 指往下取整；對已停止的運轉填一小時實際是增加計入時間，並不是往下取整。"
+    },
+    {
+      "id": "D",
+      "text": "confirms",
+      "zh": "證實",
+      "whyZh": "confirms 表示證實同一數值；獨立紀錄顯示時間較短，並非支持面板的總時數。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "每筆缺少停止時間的運轉以一小時計入，實際至多四十分鐘，每筆至少多計二十分鐘；其他運轉時長已證實無誤，因此總時數必然被高估。",
+  "evidence": "The control panel counts each run with a missing stop time as one hour. The controller logs confirm all other durations but show that every run with a missing stop time lasted at most forty minutes. The panel therefore overstates the total runtime.",
+  "evidenceZh": "控制面板將每筆缺少停止時間的運轉紀錄以一小時計入。控制器紀錄證實其他運轉時間均無誤，但顯示缺少停止時間的運轉實際上每筆最多四十分鐘。因此，控制面板高估了總運轉時間。",
+  "vocabulary": [
+    {
+      "term": "overstates",
+      "zh": "高估／報得過高"
+    }
+  ]
+}

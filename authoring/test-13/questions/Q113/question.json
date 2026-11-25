@@ -1,0 +1,52 @@
+{
+  "id": "t13-q113",
+  "uuid": "9acee095-1d86-5237-a725-33d6d793f7a7",
+  "testId": "test-13",
+  "number": 113,
+  "part": 5,
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "incomplete-sentence",
+    "business"
+  ],
+  "prompt": "A purchase order can be submitted while the buyer is still checking a quote. The accounting system simply refuses to release payment in that state. Until the quote is approved, its status _____ payment but not submission.",
+  "promptZh": "採購人員仍在審查報價時，採購單可以送出；只是此時會計系統拒絕付款。在報價核准之前，報價的狀態會阻止付款，卻不影響採購單送出。",
+  "options": [
+    {
+      "id": "A",
+      "text": "authorizes",
+      "zh": "授權；准許",
+      "whyZh": "authorizes 表示准許付款，和會計系統拒絕支付的規則相反。"
+    },
+    {
+      "id": "B",
+      "text": "precludes",
+      "zh": "阻止；使無法進行",
+      "whyZh": "precludes 表示使某事在當前條件下無法進行；尚未核准會卡住付款，但不妨礙採購單送出。"
+    },
+    {
+      "id": "C",
+      "text": "records",
+      "zh": "記錄",
+      "whyZh": "records 表示把付款登記下來；系統此時拒絕付款，沒有已發生的付款可由這個狀態記錄。"
+    },
+    {
+      "id": "D",
+      "text": "recommends",
+      "zh": "建議",
+      "whyZh": "recommends 是建議，仍容許採取另一做法；文中說會計系統會直接拒絕付款，不是提出建議。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "precludes 表示使某事在當前條件下無法進行；尚未核准會卡住付款，但不妨礙採購單送出。",
+  "evidence": "A purchase order can be submitted while the buyer is still checking a quote. The accounting system simply refuses to release payment in that state. Until the quote is approved, its status precludes payment but not submission.",
+  "evidenceZh": "採購人員仍在審查報價時，採購單可以送出；只是此時會計系統拒絕付款。在報價核准之前，報價的狀態會阻止付款，卻不影響採購單送出。",
+  "vocabulary": [
+    {
+      "term": "precludes",
+      "zh": "阻止；使無法進行"
+    }
+  ]
+}
