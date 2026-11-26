@@ -1,0 +1,52 @@
+{
+  "id": "t13-q166",
+  "testId": "test-13",
+  "number": 166,
+  "part": 7,
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "What should the desk do on Len’s visit and when the first locker trays are checked?",
+  "promptZh": "連恩到櫃檯時，以及工作人員第一次查找歸還櫃的收件盤時，應怎麼處理？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Use the old slip to find the loan. List the case alone as received, and start the folder search in the wide tray.",
+      "zh": "用原借出單查借用紀錄，只將盒子列為已收件，再從寬盤開始找譜夾。",
+      "whyZh": "歸還單只列盒子是對的，但投入口曾空著關上，擋板已復位；第二次沒重新選擇，應先找單份譜夾盤。"
+    },
+    {
+      "id": "B",
+      "text": "Use the old slip to find the loan. List both pieces as received, and start the folder search in the single-folder tray.",
+      "zh": "用原借出單查借用紀錄，將兩件物品都列為已收件，再從單份譜夾盤開始找譜夾。",
+      "whyZh": "首查位置正確，但原借出單只能定位借用紀錄，不能證明譜夾已歸還。工作人員先看到的是盒子，找出譜夾前不能把它列為已收件。"
+    },
+    {
+      "id": "C",
+      "text": "Use the old slip to find the loan. List the case alone as received, and start the folder search in the single-folder tray.",
+      "zh": "用原借出單查借用紀錄，只將盒子列為已收件，再從單份譜夾盤開始找譜夾。",
+      "whyZh": "櫃檯可以據原借出單找到借用紀錄，只為當面收到的盒子開歸還單。投入口空著關上後擋板已復位；第二次沒重選，所以先查單份譜夾盤並保留譜夾待查。"
+    },
+    {
+      "id": "D",
+      "text": "Use the old slip to find the loan. List both pieces as received, and start the folder search in the wide tray.",
+      "zh": "用原借出單查借用紀錄，將兩件物品都列為已收件，再從寬盤開始找譜夾。",
+      "whyZh": "盒子可先辦歸還，但譜夾尚未找到，不能一起列為已收件。第一次開關已復位，第二次沒有再選，不應依保留在畫面的選項去找寬盤。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "櫃檯可以據原借出單找到借用紀錄，只為當面收到的盒子開歸還單。投入口空著關上後擋板已復位；第二次沒重選，所以先查單份譜夾盤並保留譜夾待查。",
+  "evidence": "its inside gate starts in the single-folder position. / The gate resets when the flap closes. / The desk can use the old checkout slip to find the loan. / A return slip, though, lists only pieces that staff have seen. / don’t list the second piece as returned until it has been found. / so I shut the flap empty. / the screen still showed Together. I put in the folder without choosing again. / Len can come before work with the case and the old slip. / He won’t be there when the first locker trays are checked.",
+  "vocabulary": [
+    {
+      "term": "as received",
+      "zh": "列為已收件",
+      "note": "list X as received 指在紀錄上標示已收到該物品；同一借用紀錄中的各件物品不一定同時收到。"
+    }
+  ],
+  "groupId": "t13-r-q165-167"
+}

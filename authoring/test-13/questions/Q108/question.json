@@ -1,52 +1,51 @@
 {
-  "id": "t13-q108",
-  "uuid": "d7fd3fbd-f392-5010-9270-38f0e26a3c61",
+  "id": "t13-q108-r2-5c0450e57b6f",
   "testId": "test-13",
   "number": 108,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
-  "difficulty": "foundation",
+  "difficulty": "intermediate",
   "tags": [
     "incomplete-sentence",
     "daily"
   ],
-  "prompt": "I can still meet on Saturday, but I would like to _____ our 9 a.m. lesson to 11 a.m.; I do not need any extra practice time.",
-  "promptZh": "我星期六仍能赴約，但想把我們上午九點的課改到上午十一點；我不需要額外的練習時間。",
+  "prompt": "A family may transfer its shared swim lesson to the 11:00 slot if an instructor has room for both swimmers, but a visitor pass can be used only at its named pool. June’s pass names North Pool. The North instructor has one opening, the South instructor has two, and North’s desk can reissue the pass with South named before the lesson; to keep both swimmers together at 11:00, June should _____.",
+  "promptZh": "若有教練可以在 11:00 同時接收兩位學員，家庭可把共用游泳課改到該時段，但訪客通行證只限指定泳池。茱恩的通行證指定北池。北池教練有一個空位，南池教練有兩個；北池櫃檯可在上課前重發指定南池的證件。為讓兩人都能在 11:00 一起上課，茱恩應_____。",
   "options": [
     {
       "id": "A",
-      "text": "cancel",
-      "zh": "取消",
-      "whyZh": "cancel 是取消原課，後面不能用 to 11 a.m. 指定取消後仍上同一堂課。"
+      "text": "book North at 11:00 and keep the current pass",
+      "zh": "預約北池 11:00 並沿用原證",
+      "whyZh": "原證可在北池用，但這個時段只有一個空位，不能一起上課。"
     },
     {
       "id": "B",
-      "text": "lengthen",
-      "zh": "延長時間",
-      "whyZh": "lengthen 是增加長度或時長；句中只要換時段，而且明說不需要加長練習時間。"
+      "text": "book South at 11:00 and take the current pass",
+      "zh": "預約南池 11:00 並攜帶原證",
+      "whyZh": "南池有兩席，但原證只限北池。"
     },
     {
       "id": "C",
-      "text": "reserve",
-      "zh": "預訂",
-      "whyZh": "reserve 是預留／預訂；課已排在九點，現在要調整已存在的安排。"
+      "text": "have the pass reissued for South and book one swimmer there at 11:00 and the other later",
+      "zh": "請櫃檯換發南池通行證，預約一人 11:00、另一人稍後在南池上課",
+      "whyZh": "新證及地點正確，但分開上課不符合原先兩人同在 11:00 的需求。"
     },
     {
       "id": "D",
-      "text": "reschedule",
-      "zh": "改期；改時間",
-      "whyZh": "reschedule 可表示調整既有安排；to 11 a.m. 給出同一天的新上課時間，沒有改變課程長度。"
+      "text": "have the pass reissued for South and book both places there at 11:00",
+      "zh": "請櫃檯換發南池通行證並預約南池 11:00 兩席",
+      "whyZh": "南池有兩席，課前請北池櫃檯換發指定南池的通行證便能同時符合容量、時段與入場條件。"
     }
   ],
   "answer": "D",
-  "explanationZh": "reschedule 可表示調整既有安排；to 11 a.m. 給出同一天的新上課時間，沒有改變課程長度。",
-  "evidence": "I can still meet on Saturday, but I would like to reschedule our 9 a.m. lesson to 11 a.m.; I do not need any extra practice time.",
-  "evidenceZh": "我星期六仍能赴約，但想把我們上午九點的課改到上午十一點；我不需要額外的練習時間。",
+  "explanationZh": "南池有兩席，課前請北池櫃檯換發指定南池的通行證便能同時符合容量、時段與入場條件。",
+  "evidence": "has room for both swimmers / only at its named pool / the South instructor has two / North’s desk can reissue the pass with South named",
   "vocabulary": [
     {
-      "term": "reschedule",
-      "zh": "改期；改時間"
+      "term": "reissue",
+      "zh": "重新核發",
+      "note": "票證有誤或資料需更改時，可用此動詞描述發給新版票證。"
     }
   ]
 }

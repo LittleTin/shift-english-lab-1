@@ -1,73 +1,57 @@
 {
-  "id": "t13-q151",
-  "uuid": "6f211022-4a42-58ac-ab3a-efc109f2b7b5",
+  "id": "t13-q151-r2-873664da7645",
   "testId": "test-13",
   "number": 151,
   "part": 7,
-  "groupId": "t13-r-p7-02",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
   "difficulty": "intermediate",
   "tags": [
     "reading-comprehension",
-    "single-passage",
     "daily"
   ],
-  "prompt": "Why does the form ask a visitor to identify the side they used for certain entries?",
-  "promptZh": "為什麼有些參賽作品的選票會要求遊客填寫觀覽的那一側？",
+  "prompt": "A volunteer sees more votes for the curved shape from the east side than from the west. She writes, “An east-side visitor was more likely to vote for the curved shape.” Which point most directly challenges her conclusion?",
+  "promptZh": "一位志工發現，從東側看的人投給弧形造型的票，比從西側看的多。她寫道：「從東側觀賞的遊客更可能投給弧形造型。」哪一點最能直接質疑她的結論？",
   "options": [
     {
       "id": "A",
-      "text": "To check if the visitor entered through the west gate",
-      "zh": "查核遊客是不是從西側入口入場",
-      "whyZh": "詢問的是看作品的那一側，不是入場大門的位置。"
+      "text": "The ballot records where voters stood, but we do not know how many people actually looked from either side.",
+      "zh": "選票記下投票者站在哪一側觀賞，卻不知道實際有多少人從各側看過。",
+      "whyZh": "東側票數較多，可能只是因為到東側看的人更多。看板按投票者填寫的觀覽側統計，卻沒有各側的實際觀覽人數，不能判斷每位遊客投給弧形的可能性哪側較高。"
     },
     {
       "id": "B",
-      "text": "To count how many visitors watched the repair teams",
-      "zh": "計算有多少遊客觀看修補工作",
-      "whyZh": "投票欄記側面和喜歡的造型，不記是否看了修補工作。"
+      "text": "The east-side total includes visitors who reached the platform from the east, even if they looked from the west.",
+      "zh": "東側的總票數包括從東側走到平台的遊客，即使他們是在西側看作品。",
+      "whyZh": "選票按實際觀覽側計算，不是依到達平台的方向；從東側過來、在西側看的票仍算西側。"
     },
     {
       "id": "C",
-      "text": "To require that all voters see the work from both sides",
-      "zh": "要求所有投票者先從兩側看過",
-      "whyZh": "公告明說不用從兩側都看過；只須記下實際看的一側。"
+      "text": "Some visitors looked from only one side, so their ballots cannot be included in either count.",
+      "zh": "有些遊客只從一側看過，因此兩側的票數都不能計入他們的票。",
+      "whyZh": "公告允許只看一側，選票仍可按填寫的側別計入，不需要兩側都看過。"
     },
     {
       "id": "D",
-      "text": "To connect a shape preference with the viewpoint that produced it",
-      "zh": "把遊客偏好的造型與他們看作品的位置連在一起",
-      "whyZh": "這幾座沙雕從兩側看差別很大；一同填側面與喜歡的造型，才能知道那個偏好針對哪個視角看到的外形。"
+      "text": "An east-side vote for the curved shape may have been collected at the exit rather than on the east side.",
+      "zh": "在東側觀賞後投給弧形的票，可能是在出口收到的，而不是在作品東側。",
+      "whyZh": "出口統一收票不改變觀覽側的分類。選票在哪裡收、遊客在哪側看，是兩件事。"
     }
   ],
-  "answer": "D",
-  "explanationZh": "這幾座沙雕從兩側看差別很大；一同填側面與喜歡的造型，才能知道那個偏好針對哪個視角看到的外形。",
-  "evidence": "The shapes of three entries look very different from their two marked sides / choose the side you looked from, then mark the shape you liked",
-  "evidenceSpans": [
-    {
-      "documentId": "doc1",
-      "sourceField": "passage",
-      "startChar": 380,
-      "endChar": 455,
-      "documentStartChar": 331,
-      "documentEndChar": 406,
-      "exactQuote": "The shapes of three entries look very different from their two marked sides"
-    },
-    {
-      "documentId": "doc1",
-      "sourceField": "passage",
-      "startChar": 510,
-      "endChar": 572,
-      "documentStartChar": 461,
-      "documentEndChar": 523,
-      "exactQuote": "choose the side you looked from, then mark the shape you liked"
-    }
-  ],
+  "answer": "A",
+  "explanationZh": "東側票數較多，可能只是因為到東側看的人更多。看板按投票者填寫的觀覽側統計，卻沒有各側的實際觀覽人數，不能判斷每位遊客投給弧形的可能性哪側較高。",
+  "evidence": "choose the side you looked from, then mark the shape you liked. / You do not need to look from both sides. / they do not direct equal numbers to each side. / can also walk away without voting. / will list the votes by the side marked on each ballot. / It will not list how many visitors stood on each side / A steward will collect paper votes at the exit",
   "vocabulary": [
     {
+      "term": "ballot",
+      "zh": "選票",
+      "note": "這裡指填有觀覽側別和所選造型的一張票；得票數不等於到場人數。"
+    },
+    {
       "term": "marked sides",
-      "zh": "有標記的兩側"
+      "zh": "有標記的兩側",
+      "note": "指有標示、可用來觀覽作品的兩側，不是指通往作品的兩條路線。"
     }
-  ]
+  ],
+  "groupId": "t13-r-q150-152"
 }

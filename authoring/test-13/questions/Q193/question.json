@@ -1,0 +1,52 @@
+{
+  "id": "t13-q193",
+  "testId": "test-13",
+  "number": 193,
+  "part": 7,
+  "revision": 3,
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "Which line would be most useful in the morning briefing?",
+  "promptZh": "早班簡報用哪一行最能幫上忙？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Ask North to check the goods and compare “Item seen” with the expected code.",
+      "zh": "請北分店檢查貨品，並用「目視品項」和預期代碼比對。",
+      "whyZh": "北分店接手容器，貨品在那裡。掃到的只是可重複使用容器上的貼紙；需要看容器內的商品代碼，才能查清型號是否和預期一致。"
+    },
+    {
+      "id": "B",
+      "text": "Ask North to repeat the scan and compare “Scanned code” with the expected code.",
+      "zh": "請北分店重新掃描，並用「掃描代碼」和預期代碼比對。",
+      "whyZh": "北分店是對的地點，但重新掃到的是容器貼紙，而不是裡面的商品。這無法確認當初是否裝了不同型號。"
+    },
+    {
+      "id": "C",
+      "text": "Ask West to check the goods and compare “Item seen” with the expected code.",
+      "zh": "請西分店檢查貨品，並用「目視品項」和預期代碼比對。",
+      "whyZh": "查看裡面的商品代碼正是所需的查核，但西分店收到的是申請。容器由北分店接收，應請那裡的同仁查。"
+    },
+    {
+      "id": "D",
+      "text": "Ask West to repeat the scan and compare “Scanned code” with the expected code.",
+      "zh": "請西分店重新掃描，並用「掃描代碼」和預期代碼比對。",
+      "whyZh": "西分店並未接手容器；就算重新掃描，也只會讀到容器貼紙，不能證明裡面是哪個型號。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "北分店接手容器，貨品在那裡。掃到的只是可重複使用容器上的貼紙；需要看容器內的商品代碼，才能查清型號是否和預期一致。",
+  "evidence": "“Follow-up branch” shows where the request was sent. / “Handed to,” which records the branch that took the container and now has the goods. / “Scanned code” comes from the sticker on the reusable container. / Staff enter “Item seen” by reading the product code on an item inside / The count is right and the scanner shows the expected code. / “Follow-up branch: West; Handed to: North.” / One of us remembered putting a different model in there",
+  "vocabulary": [
+    {
+      "term": "reusable container",
+      "zh": "可重複使用的容器",
+      "note": "reusable 意為可以重複使用；容器上的標籤不一定能代表這次裝入的物品。"
+    }
+  ],
+  "groupId": "t13-r-q191-195"
+}

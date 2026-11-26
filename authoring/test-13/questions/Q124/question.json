@@ -1,52 +1,51 @@
 {
-  "id": "t13-q124",
-  "uuid": "00a8c5ef-d5b0-5054-a88e-cdc5fbf485a8",
+  "id": "t13-q124-r2-031588b21dd8",
   "testId": "test-13",
   "number": 124,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
   "difficulty": "intermediate",
   "tags": [
     "incomplete-sentence",
     "daily"
   ],
-  "prompt": "When signing up for the river cleanup, choose the volunteer bus _____ you are bringing a bicycle: the bus can carry people but has no bike rack, and there is a separate meeting point for cyclists.",
-  "promptZh": "報名河川清理活動時，除非你要帶自行車，否則請選志工接駁車。接駁車只載人、沒有自行車架，而騎自行車的人另有集合地點。",
+  "prompt": "Cleanup volunteers can take a folding wagon on the bus only if it fits inside the marked luggage space. The west loading team lends compact wagons before 9:00, but its registration desk does not handle riverside check-in; that check-in is at the bridge before the 9:15 bus. Lu’s own wagon fits the luggage space, though it is wider than the compact loan wagons, so to keep it and join the bus Lu must _____.",
+  "promptZh": "清理活動的志工只有在折疊手推車能放進巴士標示行李空間時才能帶上車。西側裝運小組在 9:00 前借出小型推車，但其借用登記櫃檯不受理河岸報到；要搭 9:15 的車須先到橋邊報到。露自己的推車放得進行李區，雖比小型借車寬，因此要帶原車搭巴士，露必須_____。",
   "options": [
     {
       "id": "A",
-      "text": "because",
-      "zh": "因為",
-      "whyZh": "because 會把帶車當成選接駁車的理由；沒有車架反而是帶車者不選它的理由。"
+      "text": "exchange the wagon for a small one at the west desk and board at the bridge",
+      "zh": "在西側櫃檯換成小型推車，到橋邊搭車",
+      "whyZh": "原車已符合行李空間，換小車違反留用的前提。"
     },
     {
       "id": "B",
-      "text": "once",
-      "zh": "一旦",
-      "whyZh": "once 表示一旦帶了自行車就選接駁，但接駁車無法載自行車，條件方向相反。"
+      "text": "take the original wagon to the bridge, check in there, and board the 9:15 bus",
+      "zh": "推原本的車到橋邊，在那裡報到並搭 9:15 巴士",
+      "whyZh": "原車可上巴士，但河岸報到須在橋邊完成。"
     },
     {
       "id": "C",
-      "text": "wherever",
-      "zh": "無論何處",
-      "whyZh": "wherever 表示無論在哪裡；you are bringing a bicycle 描述是否攜車，不是在指定或比較地點。"
+      "text": "keep the original wagon, check in at the west desk, and board at the bridge",
+      "zh": "留用原車，在西側櫃檯報到，再到橋邊搭車",
+      "whyZh": "西側櫃檯只受理借車登記，不能代替河岸報到。"
     },
     {
       "id": "D",
-      "text": "unless",
-      "zh": "除非",
-      "whyZh": "unless 表示對「選接駁車」的例外。接駁車不載單車，帶車的志工應使用另一集合地點。"
+      "text": "leave the wagon at the bridge and board without it after checking in",
+      "zh": "把推車留在橋邊，報到後不帶車上巴士",
+      "whyZh": "可以帶原車上車，不必留在橋邊。"
     }
   ],
-  "answer": "D",
-  "explanationZh": "unless 表示對「選接駁車」的例外。接駁車不載單車，帶車的志工應使用另一集合地點。",
-  "evidence": "When signing up for the river cleanup, choose the volunteer bus unless you are bringing a bicycle: the bus can carry people but has no bike rack, and there is a separate meeting point for cyclists.",
-  "evidenceZh": "報名河川清理活動時，除非你要帶自行車，否則請選志工接駁車。接駁車只載人、沒有自行車架，而騎自行車的人另有集合地點。",
+  "answer": "B",
+  "explanationZh": "原車可上巴士，但河岸報到須在橋邊完成。",
+  "evidence": "fits inside the marked luggage space / does not handle riverside check-in / at the bridge before the 9:15 bus / Lu’s own wagon fits the luggage space",
   "vocabulary": [
     {
-      "term": "unless",
-      "zh": "除非"
+      "term": "folding wagon",
+      "zh": "折疊式手拉車",
+      "note": "指可摺疊收納、用來搬運物品的小型手拉車。"
     }
   ]
 }

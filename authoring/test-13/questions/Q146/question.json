@@ -1,11 +1,9 @@
 {
-  "id": "t13-q146",
-  "uuid": "7f452c1b-2889-54e3-8ab2-eb878518846b",
+  "id": "t13-q146-r2-e729bb421e28",
   "testId": "test-13",
   "number": 146,
   "part": 6,
-  "groupId": "t13-r-p6-04",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
   "difficulty": "advanced",
   "tags": [
@@ -17,56 +15,38 @@
   "options": [
     {
       "id": "A",
-      "text": "limits the time on",
-      "zh": "限制……的時間",
-      "whyZh": "桌號不會改變時鐘設定或限制對弈時間；當前問題是如何辨識收到哪種顯示效果的意見。"
+      "text": "Report Nia's positive comment about the display and Rob’s result as a complaint about reading it.",
+      "zh": "把妮雅的話寫成對顯示效果的好評，並把羅布的對局結果寫成他抱怨看不清楚。",
+      "whyZh": "妮雅講的是坐著就能獨立讀清數字，確實是正面回饋。但「超時落敗」只記錄羅布的時間用完，意見欄是空的，不能當作對易讀性的抱怨。"
     },
     {
       "id": "B",
-      "text": "records the brightness of",
-      "zh": "記錄……的亮度",
-      "whyZh": "亮度不是桌號能記下的量，也沒有要求志工量測亮度。"
+      "text": "Report two game results and leave both players out of the display feedback.",
+      "zh": "只記下兩人的對局結果，把兩人都從顯示效果的回饋中排除。",
+      "whyZh": "羅布只回報結果，但妮雅另說她不用請對手代看時鐘，這是對易讀性的實際回饋，不能漏掉。"
     },
     {
       "id": "C",
-      "text": "may not identify",
-      "zh": "不一定能判別",
-      "whyZh": "中途換時鐘後，同一張桌可能先後用兩台時鐘；必須提供編號，不能單憑桌號判定所說的是哪一款顯示。"
+      "text": "Report Nia's positive comment about the display without treating Rob's result as display feedback.",
+      "zh": "記下妮雅對顯示效果的好評，但不要把羅布的對局結果算成顯示效果的回饋。",
+      "whyZh": "妮雅實際輸棋，但用「算是贏了」形容坐在原位也看得清楚；這可算正面回饋。羅布只繳交超時落敗的成績單，不能從結果推定他看不清楚。"
     },
     {
       "id": "D",
-      "text": "might already display",
-      "zh": "也許已顯示",
-      "whyZh": "若桌號本身已顯示出所看的機型，就無須在同桌改用兩台時分別附上實際時鐘的編號；原文沒有說桌號會顯示機型。"
+      "text": "Report Nia’s note as a recorded win without treating Rob’s result as display feedback.",
+      "zh": "把妮雅的留言記作一場勝局，但不把羅布的對局結果算成顯示效果的回饋。",
+      "whyZh": "不把羅布的結果算進回饋是正確的，但妮雅那場是對手獲勝。她說「算是贏了」是在形容不用請別人代看時鐘，並非改寫對局結果。"
     }
   ],
   "answer": "C",
-  "explanationZh": "中途換時鐘後，同一張桌可能先後用兩台時鐘；必須提供編號，不能單憑桌號判定所說的是哪一款顯示。",
-  "evidence": "If you changed clocks in the middle of the game / give the clock numbers in the order you used them / a table number alone",
-  "evidenceSpans": [
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 1406,
-      "endChar": 1453,
-      "exactQuote": "If you changed clocks in the middle of the game"
-    },
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 1455,
-      "endChar": 1504,
-      "exactQuote": "give the clock numbers in the order you used them"
-    },
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 1556,
-      "endChar": 1576,
-      "exactQuote": "a table number alone"
-    }
-  ],
+  "explanationZh": "妮雅實際輸棋，但用「算是贏了」形容坐在原位也看得清楚；這可算正面回饋。羅布只繳交超時落敗的成績單，不能從結果推定他看不清楚。",
+  "evidence": "Our score slips record a game as a loss on time when a player’s clock runs out / that entry describes the result, whether or not the player could read the display. / Nia wrote, “That one was a win for me.” / Nia’s opponent won. / she had read every number from her seat without asking her opponent to check the clock. / Rob turned in a score slip marked “lost on time” and left the comments box blank.",
   "vocabulary": [
     {
-      "term": "may not identify",
-      "zh": "不一定能判別"
+      "term": "lost on time",
+      "zh": "因用時耗盡而落敗",
+      "note": "棋賽記分單上的結果，不足以說明玩家是否看得清楚棋鐘。"
     }
-  ]
+  ],
+  "groupId": "t13-r-p6-04"
 }

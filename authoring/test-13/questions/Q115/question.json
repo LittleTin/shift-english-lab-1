@@ -1,52 +1,51 @@
 {
-  "id": "t13-q115",
-  "uuid": "3b622676-4a79-53b5-8162-31a699686dab",
+  "id": "t13-q115-r2-2561ec812dfa",
   "testId": "test-13",
   "number": 115,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
-  "difficulty": "foundation",
+  "difficulty": "intermediate",
   "tags": [
     "incomplete-sentence",
     "business"
   ],
-  "prompt": "When folded along the perforations, _____ should sit inside the shipping box without pressing against the glass.",
-  "promptZh": "紙板襯墊沿著打孔線折好後，應能放進運送箱內，且不會壓到玻璃。",
+  "prompt": "For this return carton, either end of the insert can take the shipping strap, but the courier must read the barcode without lifting the strap. The insert’s lined face belongs against the glass; write the return number on the rough face, not on the temporary strap. The right strap channel would cross the barcode, so the packer should _____.",
+  "promptZh": "這個退貨紙箱的內襯兩端都可穿束帶，但快遞必須不用掀起束帶就能讀取條碼。內襯加墊的一面要貼玻璃，退貨編號須寫在粗糙面，不可寫在臨時束帶上。右側穿束帶處會橫過條碼，因此包裝人員應_____。",
   "options": [
     {
       "id": "A",
-      "text": "the cardboard insert",
-      "zh": "紙板襯墊",
-      "whyZh": "When folded along the perforations 的省略主詞要和主句主詞一致。紙板襯墊是可沿打孔線折疊、放入箱內又不碰壓玻璃的實體包材。"
+      "text": "turn the rough face toward the glass, pass the strap through the left channel, and write on the rough face",
+      "zh": "讓粗糙面貼玻璃，束帶走左側，編號寫粗糙面",
+      "whyZh": "束帶與書寫位置正確，但貼玻璃的應是加墊面。"
     },
     {
       "id": "B",
-      "text": "the delivery window",
-      "zh": "送達時段",
-      "whyZh": "delivery window 在配送情境中是約定的送達時段；時段不能沿打孔線折起或放入箱內。"
+      "text": "turn the lined face toward the glass, pass the strap through the left channel, and write on the rough face",
+      "zh": "讓加墊的一面貼玻璃，束帶走左側，編號寫粗糙面",
+      "whyZh": "加墊面貼玻璃，左束帶保持右邊條碼可讀，並把退貨編號寫在粗糙面。"
     },
     {
       "id": "C",
-      "text": "the printed tracking number",
-      "zh": "印好的物流追蹤號碼",
-      "whyZh": "tracking number 指可查詢物流的編號。即使承載文字的標籤是紙做的，這裡的名詞指編號本身，編號本身不能折成防護內襯或放進箱內擔任同樣的防護功能。"
+      "text": "turn the lined face toward the glass, pass the strap through the right channel, and write on the rough face",
+      "zh": "讓加墊的一面貼玻璃，束帶走右側，編號寫粗糙面",
+      "whyZh": "接觸面和書寫位置正確，但右束帶會遮住條碼。"
     },
     {
       "id": "D",
-      "text": "the package weight",
-      "zh": "包裹重量",
-      "whyZh": "package weight 是包裹重量，沒有可折疊的實體形狀；無法符合紙材打孔線或箱內擺放的描述。"
+      "text": "turn the lined face toward the glass, pass the strap through the left channel, and write on the strap",
+      "zh": "讓加墊的一面貼玻璃，束帶走左側，編號寫束帶",
+      "whyZh": "接觸面與左側束帶都正確；退貨編號應寫在粗糙面，而非臨時束帶。"
     }
   ],
-  "answer": "A",
-  "explanationZh": "When folded along the perforations 的省略主詞要和主句主詞一致。紙板襯墊是可沿打孔線折疊、放入箱內又不碰壓玻璃的實體包材。",
-  "evidence": "When folded along the perforations, the cardboard insert should sit inside the shipping box without pressing against the glass.",
-  "evidenceZh": "紙板襯墊沿著打孔線折好後，應能放進運送箱內，且不會壓到玻璃。",
+  "answer": "B",
+  "explanationZh": "加墊面貼玻璃，左束帶保持右邊條碼可讀，並把退貨編號寫在粗糙面。",
+  "evidence": "without lifting the strap / lined face belongs against the glass / The right strap channel would cross the barcode / write the return number on the rough face, not on the temporary strap.",
   "vocabulary": [
     {
-      "term": "the cardboard insert",
-      "zh": "紙板襯墊"
+      "term": "lined face",
+      "zh": "有襯層的一面",
+      "note": "face 可指零件的其中一個表面；lined 表示覆有內襯或保護層。"
     }
   ]
 }

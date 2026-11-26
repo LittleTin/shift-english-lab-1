@@ -1,11 +1,9 @@
 {
-  "id": "t13-q145",
-  "uuid": "f2d96486-ef92-5586-b2c7-b357061508d4",
+  "id": "t13-q145-r2-ae7681af714b",
   "testId": "test-13",
   "number": 145,
   "part": 6,
-  "groupId": "t13-r-p6-04",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
   "difficulty": "intermediate",
   "tags": [
@@ -43,30 +41,17 @@
   "answer": "A",
   "explanationZh": "by which time 回指隔天早上九點；will have ended 從九點往前看，指出星期四閉館前須歸還的設備已不在借用期內。",
   "evidence": "The equipment is due back before the hall closes on Thursday / The comments will be read at nine the next morning / the equipment loan will have ended",
-  "evidenceSpans": [
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 1185,
-      "endChar": 1245,
-      "exactQuote": "The equipment is due back before the hall closes on Thursday"
-    },
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 1247,
-      "endChar": 1297,
-      "exactQuote": "The comments will be read at nine the next morning"
-    },
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 1313,
-      "endChar": 1347,
-      "exactQuote": "the equipment loan will have ended"
-    }
-  ],
   "vocabulary": [
     {
+      "term": "due back",
+      "zh": "應歸還",
+      "note": "借用設備時搭配期限，指最遲何時要還，不是何時收到。"
+    },
+    {
       "term": "by which time",
-      "zh": "到那時"
+      "zh": "到那時",
+      "note": "指前面提到的那個時間點；文中指隔天上午九點，屆時設備的借用期已結束。"
     }
-  ]
+  ],
+  "groupId": "t13-r-p6-04"
 }

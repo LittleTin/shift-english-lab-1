@@ -1,0 +1,52 @@
+{
+  "id": "t13-q173",
+  "testId": "test-13",
+  "number": 173,
+  "part": 7,
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "Which labeling plan would work both at the pickup tray and after the guest takes the packet home?",
+  "promptZh": "哪個標示方案能讓來訪者在領取盤挑選時、以及把種子包帶回家後都派得上用場？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Put the crop name on the permanent label and write the packet’s lot symbol on its removable tally band.",
+      "zh": "把作物俗名印在會留在包上的標籤上，並把該包的批次符號寫在會取下的統計束帶上。",
+      "whyZh": "選種子時看得到俗名，但統計束帶會被取下，回家後看不到這包對應講義哪一列。"
+    },
+    {
+      "id": "B",
+      "text": "Put each packet’s lot symbol on its permanent label, and identify the crops by posting names above the different parts of the tray.",
+      "zh": "把每包的批次符號印在會保留的標籤上，再在盤子的不同位置上方標各種作物的名稱。",
+      "whyZh": "拿到講義後可以依批次符號查詢，但領取盤沒有固定分區，志工看到空位就補貨，對照盤子上方的位置仍可能看不出手上的種子是哪種作物。"
+    },
+    {
+      "id": "C",
+      "text": "Put the common name and that packet’s own lot symbol on its permanent label; keep the tally band for counting only.",
+      "zh": "把俗名與該包自己的批次符號都印在會保留的標籤上，統計束帶只用來計數。",
+      "whyZh": "選取時不用靠盤上位置或講義就能認出作物；帶回家後，該包的批次符號仍在，可查到講義正確一列。"
+    },
+    {
+      "id": "D",
+      "text": "Print the crop name and both possible lot symbols on every permanent label; put the packet’s own symbol on the tally band.",
+      "zh": "在每張會保留的標籤上印作物俗名與兩個可能的批次符號，再把這一包實際的符號印在統計束帶上。",
+      "whyZh": "辨認作物沒問題，但兩個批次符號只能列出可能的兩列。束帶一取下，就無法知道這一包實際對應哪一列。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "選取時不用靠盤上位置或講義就能認出作物；帶回家後，該包的批次符號仍在，可查到講義正確一列。",
+  "evidence": "The handout gives planting advice in separate rows marked by lot symbol. / she simply couldn't tell which row belonged to which packet. / Visitors often choose what they want from that tray before taking a handout. / The printed labels will cover the handwritten marks. / The pickup tray has no separate sections: volunteers refill it wherever a space opens. / volunteers remove it from each packet at the counter / The adhesive label stays on the packet.",
+  "vocabulary": [
+    {
+      "term": "lot symbol",
+      "zh": "批次記號",
+      "note": "lot 指同一批來源或處理條件的種子；這個符號辨識批次，不是拿來代替作物名稱。"
+    }
+  ],
+  "groupId": "t13-r-q171-173"
+}

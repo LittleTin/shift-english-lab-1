@@ -1,52 +1,51 @@
 {
-  "id": "t13-q127",
-  "uuid": "d0fd6824-ffef-5e10-a763-7908371bf4d9",
+  "id": "t13-q127-r2-8d6363989bbc",
   "testId": "test-13",
   "number": 127,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
   "difficulty": "intermediate",
   "tags": [
     "incomplete-sentence",
     "business"
   ],
-  "prompt": "Under the service agreement, the repair shop is _____ any damage caused while it has the borrowed projector. The lender retains ownership, but the shop must pay the full repair bill for damage that occurs in its care.",
-  "promptZh": "依服務協議，借來的投影機在保管期間如果發生任何損害，維修店必須負責。出借方保留所有權，但保管期間若發生損害，維修店必須付清修理費。",
+  "prompt": "The loan form makes the repair shop responsible for damage until it hands the projector to the lender's own driver. A driver hired by the shop does not end that responsibility. The shop's driver collected the projector at noon. The lender's driver signed for it at one; an inspection at that handover showed an intact screen. A crack was reported at two. Under the form, the shop _____.",
+  "promptZh": "借用單規定，維修店要對損壞負責，直到把投影機交給出借方自己的司機。交給維修店雇用的司機不會解除責任。維修店的司機中午取走投影機；出借方的司機一點簽收，當場檢查時螢幕完好；兩點才回報出現裂痕。維修店_____。",
   "options": [
     {
       "id": "A",
-      "text": "liable for",
-      "zh": "須對……負責",
-      "whyZh": "liable for damage 指須就損害承擔責任。後句明訂維修店須付清修理費，即使不擁有投影機也不能免責。"
+      "text": "became exempt at noon because the projector left the shop",
+      "zh": "因投影機中午離店而在中午免責",
+      "whyZh": "中午取件的是維修店的司機，不能解除責任。"
     },
     {
       "id": "B",
-      "text": "in control of",
-      "zh": "掌管",
-      "whyZh": "in control of 指掌管某項事物或安排；修理店保管的是投影機，句子要說的是發生損害時由誰負責，不是誰操控損害。"
+      "text": "remains responsible because the shop arranged the first trip",
+      "zh": "因為安排第一段運送而仍須負責",
+      "whyZh": "第一段誰安排，不改變一點交到出借方司機手中後責任結束的規定。"
     },
     {
       "id": "C",
-      "text": "entitled to",
-      "zh": "有權取得",
-      "whyZh": "entitled to 指有權享有或取得某物；損壞責任不是協議給修理店享受的權益。"
+      "text": "must cover the damage because the lender's driver signed afterward",
+      "zh": "因出借方司機後來簽收而須負責賠償",
+      "whyZh": "出借方司機在一點簽收時螢幕仍完好，簽收後回報的裂痕不能依該條款歸責維修店。"
     },
     {
       "id": "D",
-      "text": "exempt from",
-      "zh": "免於；免除",
-      "whyZh": "exempt from 表示免除責任；後句明訂維修店要付清保管期間發生的損害修理費，並非免責。"
+      "text": "is not responsible for the crack under the stated handover rule",
+      "zh": "依借用單不必對這次裂痕負責",
+      "whyZh": "一點已交給出借方司機，而且當場檢查螢幕完好；依該條款，兩點回報的裂痕不在維修店負責的期間。"
     }
   ],
-  "answer": "A",
-  "explanationZh": "liable for damage 指須就損害承擔責任。後句明訂維修店須付清修理費，即使不擁有投影機也不能免責。",
-  "evidence": "Under the service agreement, the repair shop is liable for any damage caused while it has the borrowed projector. The lender retains ownership, but the shop must pay the full repair bill for damage that occurs in its care.",
-  "evidenceZh": "依服務協議，借來的投影機在保管期間如果發生任何損害，維修店必須負責。出借方保留所有權，但保管期間若發生損害，維修店必須付清修理費。",
+  "answer": "D",
+  "explanationZh": "一點已交給出借方司機，而且當場檢查螢幕完好；依該條款，兩點回報的裂痕不在維修店負責的期間。",
+  "evidence": "until it hands the projector to the lender's own driver / A driver hired by the shop does not end that responsibility. / an inspection at that handover showed an intact screen. / A crack was reported at two.",
   "vocabulary": [
     {
-      "term": "liable for",
-      "zh": "須對……負責"
+      "term": "signed for it",
+      "zh": "已簽收該物品",
+      "note": "sign for 是簽名確認收到物品，不等於同意整份借用契約。"
     }
   ]
 }

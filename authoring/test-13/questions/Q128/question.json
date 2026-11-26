@@ -1,52 +1,51 @@
 {
-  "id": "t13-q128",
-  "uuid": "605df491-7847-5e54-b037-509fee420399",
+  "id": "t13-q128-r2-9465575c10ed",
   "testId": "test-13",
   "number": 128,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
-  "difficulty": "advanced",
+  "difficulty": "intermediate",
   "tags": [
     "incomplete-sentence",
     "daily"
   ],
-  "prompt": "We got two adjacent seats off the waitlist at the last minute. We would _____ apart: our original tickets had been assigned to different rows, and the venue had no walk-up seats left.",
-  "promptZh": "我們在最後一刻透過候補拿到兩個相鄰座位。要不是透過候補拿到相鄰座位，我們原本只能分開坐：原先票上的座位在不同排，場館也沒有剩餘座位可現場購買。",
+  "prompt": "The theater changes a two-seat booking only when both replacement seats are confirmed and the buyer has accepted them, including any condition in the buyer's reply. At ten the box office confirmed two replacement seats at opposite ends of different rows. We replied, “Yes, if we can sit together.” At noon it offered two adjacent seats: one was confirmed, but the other was still on hold for another buyer. At noon, our reply had _____.",
+  "promptZh": "劇院只在兩個替換座位都已確認、買家也接受且回覆中的任何條件都已滿足時，才會更改雙人訂位。十點，售票處確認了兩個替換座位，兩席分在不同排的兩端。我們回覆：「可以，前提是能坐在一起。」中午，售票處提出兩個相鄰座位：一席已確認，另一席仍為其他買家保留。到中午，我們的回覆_____。",
   "options": [
     {
       "id": "A",
-      "text": "already sit",
-      "zh": "早就坐（原形）",
-      "whyZh": "already sit 缺少 have sat，不能在此表達對當時未發生結果的回顧；題幹是在說候補成功前的另一種過去結果。"
+      "text": "allowed the theater to switch us to the morning seats, since both had been confirmed",
+      "zh": "已讓劇院替我們換成早上那兩席，因為兩席都已確認",
+      "whyZh": "早上兩席雖已確認，卻在不同排，不符合買家「坐在一起」的接受條件。"
     },
     {
       "id": "B",
-      "text": "have reserved",
-      "zh": "本來已預訂",
-      "whyZh": "reserved 此處沒有受詞，且原票已安排在不同排；題目要表達本來如何就座，不是本來要預訂什麼。"
+      "text": "secured one of the adjacent seats in exchange for one of our original seats",
+      "zh": "已讓我們以一個原座位換到相鄰兩席中的一席",
+      "whyZh": "劇院只有在兩席都確認且符合接受條件時才更改雙人訂位，不會先拿一席換一席。"
     },
     {
       "id": "C",
-      "text": "rather sit",
-      "zh": "寧願坐",
-      "whyZh": "rather sit 表示偏好分開坐，並非原票分開、又沒有剩席可買才不得不分開的情況。"
+      "text": "left our original booking unchanged, since neither offer met the terms for an exchange",
+      "zh": "並未改變原本的訂位，因為兩次提案都未符合換位條件",
+      "whyZh": "早上的兩席已確認但不相鄰；中午的兩席相鄰，卻有一席仍為別人保留。沒有任何一組同時符合兩席確認與相鄰條件，所以訂位不變。"
     },
     {
       "id": "D",
-      "text": "otherwise have sat",
-      "zh": "要不然原本會坐",
-      "whyZh": "otherwise 回指「如果沒有候補改配」，would have sat 用完成式指出未發生的過去替代結果，和已取得相鄰座位一致。"
+      "text": "allowed the theater to switch us to the adjacent pair, since the seats met our condition",
+      "zh": "已讓劇院替我們換成中午的相鄰兩席，因為相鄰符合我們的條件",
+      "whyZh": "雖然中午兩席相鄰，但有一席仍為其他買家保留，兩席並未都確認。"
     }
   ],
-  "answer": "D",
-  "explanationZh": "otherwise 回指「如果沒有候補改配」，would have sat 用完成式指出未發生的過去替代結果，和已取得相鄰座位一致。",
-  "evidence": "We got two adjacent seats off the waitlist at the last minute. We would otherwise have sat apart: our original tickets had been assigned to different rows, and the venue had no walk-up seats left.",
-  "evidenceZh": "我們在最後一刻透過候補拿到兩個相鄰座位。要不是透過候補拿到相鄰座位，我們原本只能分開坐：原先票上的座位在不同排，場館也沒有剩餘座位可現場購買。",
+  "answer": "C",
+  "explanationZh": "早上的兩席已確認但不相鄰；中午的兩席相鄰，卻有一席仍為別人保留。沒有任何一組同時符合兩席確認與相鄰條件，所以訂位不變。",
+  "evidence": "only when both replacement seats are confirmed and the buyer has accepted them / confirmed two replacement seats at opposite ends of different rows. / Yes, if we can sit together. / one was confirmed, but the other was still on hold for another buyer.",
   "vocabulary": [
     {
-      "term": "otherwise have sat",
-      "zh": "要不然原本會坐"
+      "term": "adjacent seats",
+      "zh": "相鄰座位",
+      "note": "訂票時指座位彼此緊鄰，不只是位於同一排。"
     }
   ]
 }

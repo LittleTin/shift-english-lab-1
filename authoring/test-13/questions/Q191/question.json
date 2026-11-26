@@ -1,0 +1,52 @@
+{
+  "id": "t13-q191",
+  "testId": "test-13",
+  "number": 191,
+  "part": 7,
+  "revision": 2,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "Which advice should the support editor give about the display-case records?",
+  "promptZh": "關於展示品箱的紀錄，支援編輯應提供哪項建議？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The branch’s stock did not change overall; use Branch Summary again with only this branch selected to show when each movement happened.",
+      "zh": "分店庫存總量未變；再用「分店摘要」只選這間分店，就能看到每筆異動發生時間。",
+      "whyZh": "庫存總量未變的解讀可以成立，但摘要即使只選一間分店也不列個別異動，因此不能顯示每筆時間。"
+    },
+    {
+      "id": "B",
+      "text": "The branch’s stock did not change overall, but two movements were recorded; use Movement Detail without combining stock codes to show both.",
+      "zh": "分店庫存總量未變，但有兩筆異動紀錄；請用「異動明細」，不要按品號合併，就能分別顯示。",
+      "whyZh": "「無變動」是庫存的淨結果，不等於沒發生異動。兩筆編號不同但品號相同的異動需分列；關閉品號合併才能保留兩列。"
+    },
+    {
+      "id": "C",
+      "text": "Two movements were recorded; use Movement Detail with stock-code combining on to retain a separate row for each movement reference.",
+      "zh": "有兩筆異動紀錄；請用「異動明細」，開啟品號合併，以便依各異動編號保留各自的一列。",
+      "whyZh": "兩筆不同異動的判斷正確，但開啟合併後是按品號併列，並非保留每個異動編號。"
+    },
+    {
+      "id": "D",
+      "text": "‘No change’ rules out any real movement; check the source records to see which of the two references was copied in error.",
+      "zh": "「無變動」代表沒有實際的異動；查看原始紀錄，找出哪個異動編號是誤抄的。",
+      "whyZh": "摘要的「無變動」只表示淨結果，不能否定已記下的出庫和入庫，也沒有證據顯示其中一筆是誤抄。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "「無變動」是庫存的淨結果，不等於沒發生異動。兩筆編號不同但品號相同的異動需分列；關閉品號合併才能保留兩列。",
+  "evidence": "Its optional “Combine identical stock codes” setting merges moves for the same item instead. / a branch’s total reflects the change in its stock, not the number of movements. / the overview displays ‘No change’ even if the branch has entries in Movement Detail. / Stores logged a case going out and a case of the same stock code coming back, with separate movement references. / took it to mean nobody moved the stock.",
+  "vocabulary": [
+    {
+      "term": "Combine identical stock codes",
+      "zh": "合併相同的庫存代碼",
+      "note": "開啟後，匯出報表會合併同一商品代碼的異動，不再逐筆顯示。"
+    }
+  ],
+  "groupId": "t13-r-q191-195"
+}

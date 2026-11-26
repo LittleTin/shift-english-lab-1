@@ -1,52 +1,51 @@
 {
-  "id": "t13-q112",
-  "uuid": "79d5023d-27b4-5bed-816d-dbc123d21c1e",
+  "id": "t13-q112-r2-e7eff9769800",
   "testId": "test-13",
   "number": 112,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
   "difficulty": "intermediate",
   "tags": [
     "incomplete-sentence",
     "daily"
   ],
-  "prompt": "_____ the seedlings look healthy, please leave them in their indoor trays until the overnight temperature rises; they have not yet been exposed to cold air.",
-  "promptZh": "儘管這些幼苗看起來很健康，在夜間氣溫回升前仍請把它們留在室內育苗盤裡；它們還沒接觸過冷空氣。",
+  "prompt": "On Monday, the seedlings in the tray by the door were shorter on average than those on the inner shelf. By Friday the two trays had the same average seedling height. Only the door tray was exposed to cooler air, but it also received an extra watering each day. The record supports _____ rather than a claim about what caused the difference in growth.",
+  "promptZh": "星期一，門邊育苗盤的幼苗平均比內側架上那盤矮。到星期五，兩盤幼苗的平均高度已相同。只有門邊那盤接觸較冷的空氣，但那盤每天也多澆一次水。這份紀錄支持_____，而不是對生長差異的成因下結論。",
   "options": [
     {
       "id": "A",
-      "text": "Despite",
-      "zh": "儘管（後接名詞等）",
-      "whyZh": "Despite 可表示讓步，但 the seedlings look healthy 是有主詞與動詞的完整子句；直接接在 despite 後不成立。"
+      "text": "the conclusion that both trays gained the same height",
+      "zh": "兩盤幼苗增加的高度相同這項結論",
+      "whyZh": "星期五一樣高不代表長高的幅度相同，因為門邊那盤星期一起點較低。"
     },
     {
       "id": "B",
-      "text": "Because of",
-      "zh": "由於（後接名詞等）",
-      "whyZh": "Because of 後面需要名詞或名詞性結構，不能直接接這個完整子句；幼苗看起來健康也不是繼續放室內的原因。"
+      "text": "the conclusion that the inner tray grew more before the heights matched",
+      "zh": "在高度相同之前，內側那盤幼苗長得更多這項結論",
+      "whyZh": "內側那盤原本較高，最後兩盤一樣高，因此是較矮的門邊那盤增加了更多高度。"
     },
     {
       "id": "C",
-      "text": "So that",
-      "zh": "為了讓",
-      "whyZh": "So that 引導目的或結果；題幹是要在夜間氣溫回升前避免幼苗首次接觸冷空氣，不是要讓幼苗看起來健康。"
+      "text": "the conclusion that the door tray gained more height",
+      "zh": "門邊那盤幼苗增加的高度較多這項結論",
+      "whyZh": "門邊那盤由原本較矮追到相同高度，能判斷增加的高度較多；冷空氣、額外澆水同時出現在同一盤，不能據此單獨歸因。"
     },
     {
       "id": "D",
-      "text": "Although",
-      "zh": "雖然；儘管（後接子句）",
-      "whyZh": "Although 能接完整子句，表明「看起來健康」不改變還沒接觸冷空氣的事實，仍需按照提醒暫留室內。"
+      "text": "a finding that the door tray overtook the inner tray before Friday",
+      "zh": "門邊那盤的平均高度在星期五前曾超過內側那盤這項判斷",
+      "whyZh": "只有星期一與星期五兩個時間點的高度，不能確定中途曾一度超過。"
     }
   ],
-  "answer": "D",
-  "explanationZh": "Although 能接完整子句，表明「看起來健康」不改變還沒接觸冷空氣的事實，仍需按照提醒暫留室內。",
-  "evidence": "Although the seedlings look healthy, please leave them in their indoor trays until the overnight temperature rises; they have not yet been exposed to cold air.",
-  "evidenceZh": "儘管這些幼苗看起來很健康，在夜間氣溫回升前仍請把它們留在室內育苗盤裡；它們還沒接觸過冷空氣。",
+  "answer": "C",
+  "explanationZh": "門邊那盤由原本較矮追到相同高度，能判斷增加的高度較多；冷空氣、額外澆水同時出現在同一盤，不能據此單獨歸因。",
+  "evidence": "the seedlings in the tray by the door were shorter on average than those on the inner shelf. / By Friday the two trays had the same average seedling height. / it also received an extra watering each day.",
   "vocabulary": [
     {
-      "term": "Although",
-      "zh": "雖然；儘管（後接子句）"
+      "term": "on average",
+      "zh": "平均而言",
+      "note": "說明一組數據的平均情況，不代表組內每個個體都相同。"
     }
   ]
 }

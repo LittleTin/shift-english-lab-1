@@ -1,11 +1,9 @@
 {
-  "id": "t13-q144",
-  "uuid": "8236ad9e-56b7-53ec-8f95-b215414cc85a",
+  "id": "t13-q144-r2-91e569b97851",
   "testId": "test-13",
   "number": 144,
   "part": 6,
-  "groupId": "t13-r-p6-04",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
   "difficulty": "advanced",
   "tags": [
@@ -17,50 +15,43 @@
   "options": [
     {
       "id": "A",
-      "text": "Rate the red display as a whole, and leave out any comments about the size of the figures.",
-      "zh": "只給紅色顯示的整體評價，不用提數字大小。",
-      "whyZh": "只給整體評價，無法分辨是對字的尺寸有意見，還是對顏色有意見。"
+      "text": "Pair the reference reading with the large figures at H after time was added back.",
+      "zh": "用基準紀錄和 H 座手動加回時間後的大字紀錄配對。",
+      "whyZh": "都是 H 座，但加回時間的大字紀錄曾降到一分四十秒，已觸發紅色警示；未重設，顏色就不同於基準紀錄。"
     },
     {
       "id": "B",
-      "text": "Let the volunteer count each comment about the red display as a vote for bigger figures.",
-      "zh": "請志工把每則對紅色顯示的評論，都計為支持大字顯示的一票。",
-      "whyZh": "這把顏色意見一律當成同一種對字體的投票；下句明確說要避免這種歸類。"
+      "text": "Pair the reference reading with the large figures at J after the reset.",
+      "zh": "用基準紀錄和 J 座重設時鐘後的大字紀錄配對。",
+      "whyZh": "兩次都顯示三分鐘，也未進入紅色警示；但 H 座與 J 座的反光情況不同，改變的不只是字體大小。"
     },
     {
       "id": "C",
-      "text": "If red is hard to see, report that the other display worked only if you switched to the smaller table clock.",
-      "zh": "如果紅色難讀，只有換用桌上的小字時鐘，才回報另一款顯示是否有用。",
-      "whyZh": "通知沒有規定必須先換成小字的時鐘才可回報，而且比較的是兩種大字顯示方案。"
+      "text": "Pair the two H readings in which she was looking at the larger figures.",
+      "zh": "把她在 H 座看大字的兩筆紀錄配對。",
+      "whyZh": "兩次都是大字，畫面也都顯示剩 3:00，不能拿來比較字體大小。不過兩次顏色不同：其中一次曾倒數到 1:40，手動加回時間後仍是紅色；另一次是重設後倒數至 3:00，尚未變紅。"
     },
     {
       "id": "D",
-      "text": "If the numbers are large enough but hard to see in red, say both things on the same comment.",
-      "zh": "如果字夠大、但變成紅色時不易看清，請在同一則留言中分別說明這兩點。",
-      "whyZh": "同一人可同時肯定大字的尺寸、指出紅色在此燈光下的可見度問題；這樣可區分兩項獨立意見。"
+      "text": "Pair the reference reading with the large figures at H after the reset.",
+      "zh": "用基準紀錄和 H 座重設時鐘後的大字紀錄配對。",
+      "whyZh": "兩次都在 H 座，面板都顯示三分鐘且尚未變紅，因此反光條件與顏色相同；配對比較時只有字體大小改變。"
     }
   ],
   "answer": "D",
-  "explanationZh": "同一人可同時肯定大字的尺寸、指出紅色在此燈光下的可見度問題；這樣可區分兩項獨立意見。",
-  "evidence": "find red figures hard to see under the hall lights / avoid treating a report about one color as a vote against large figures in general",
-  "evidenceSpans": [
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 773,
-      "endChar": 823,
-      "exactQuote": "find red figures hard to see under the hall lights"
-    },
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 936,
-      "endChar": 1018,
-      "exactQuote": "avoid treating a report about one color as a vote against large figures in general"
-    }
-  ],
+  "explanationZh": "兩次都在 H 座，面板都顯示三分鐘且尚未變紅，因此反光條件與顏色相同；配對比較時只有字體大小改變。",
+  "evidence": "one seat catches a reflection from the hall lamp and the other does not. / One display also turns red when a player has two minutes left. / To see what difference size makes / In the test setting, once the warning comes on it stays on until we reset the clock, even if we add time. / Asha’s smaller-figure reading came from H during a fresh countdown. / at H after adding time back from 1:40, at J counting down after a reset, and at H counting down after a reset.",
   "vocabulary": [
     {
-      "term": "on the same comment",
-      "zh": "在同一則留言裡"
+      "term": "reset the clock",
+      "zh": "重設棋鐘",
+      "note": "讓棋鐘回到新的計時狀態；這款棋鐘一旦觸發紅色警示，單純加回時間不會解除，須重設才會恢復原色。"
+    },
+    {
+      "term": "reference reading",
+      "zh": "用來比較的基準紀錄",
+      "note": "作為其他讀取結果的比較基準；此處指用小字顯示時取得的棋鐘讀取結果。"
     }
-  ]
+  ],
+  "groupId": "t13-r-p6-04"
 }

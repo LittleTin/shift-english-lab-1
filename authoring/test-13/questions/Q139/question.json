@@ -1,13 +1,11 @@
 {
-  "id": "t13-q139",
-  "uuid": "88bc0622-b15b-5d74-ba55-b51621f3c115",
+  "id": "t13-q139-r2-3686a6f315e1",
   "testId": "test-13",
   "number": 139,
   "part": 6,
-  "groupId": "t13-r-p6-03",
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
-  "difficulty": "intermediate",
+  "difficulty": "foundation",
   "tags": [
     "text-completion",
     "business"
@@ -43,24 +41,17 @@
   "answer": "C",
   "explanationZh": "較薄的鞋墊讓腳上方空間增加，但不能加長鞋；not equivalent to 正確區分兩種處理方式。",
   "evidence": "first offer a thinner removable insole / without changing the length of the shoe",
-  "evidenceSpans": [
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 407,
-      "endChar": 445,
-      "exactQuote": "first offer a thinner removable insole"
-    },
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 531,
-      "endChar": 570,
-      "exactQuote": "without changing the length of the shoe"
-    }
-  ],
   "vocabulary": [
     {
+      "term": "removable insole",
+      "zh": "可拆式鞋墊",
+      "note": "試鞋時可抽換的鞋內墊層；會影響腳在鞋內的空間，不一定影響鞋長。"
+    },
+    {
       "term": "not equivalent to",
-      "zh": "不等同於"
+      "zh": "不等同於",
+      "note": "表示兩種做法的效果不可等同；換薄鞋墊會多出腳背上方的空間，但不會增加鞋長。"
     }
-  ]
+  ],
+  "groupId": "t13-r-p6-03"
 }

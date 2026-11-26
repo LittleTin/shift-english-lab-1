@@ -1,13 +1,11 @@
 {
-  "id": "t13-q134",
-  "uuid": "4b084785-63eb-559f-9988-585c15c3cd37",
+  "id": "t13-q134-r2-6d75c55ed0b2",
   "testId": "test-13",
   "number": 134,
   "part": 6,
-  "groupId": "t13-r-p6-01",
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
-  "difficulty": "intermediate",
+  "difficulty": "foundation",
   "tags": [
     "text-completion",
     "business"
@@ -43,24 +41,17 @@
   "answer": "C",
   "explanationZh": "目前只檢查方向，音量會另案審查；separately from 表示將兩套位置紀錄與音量抱怨分開存放。",
   "evidence": "test of perceived direction, not speaker output / reviewed in a separate work order",
-  "evidenceSpans": [
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 1280,
-      "endChar": 1327,
-      "exactQuote": "test of perceived direction, not speaker output"
-    },
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 1424,
-      "endChar": 1457,
-      "exactQuote": "reviewed in a separate work order"
-    }
-  ],
   "vocabulary": [
     {
+      "term": "work order",
+      "zh": "工單",
+      "note": "用來安排並追蹤指定工作；這裡音量問題另開一張工單。"
+    },
+    {
       "term": "separately from",
-      "zh": "分開"
+      "zh": "分開",
+      "note": "告知兩類資料要各自處理；這裡是把兩組方向標記與音量抱怨分開存檔。"
     }
-  ]
+  ],
+  "groupId": "t13-r-p6-01"
 }

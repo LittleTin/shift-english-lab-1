@@ -1,0 +1,52 @@
+{
+  "id": "t13-q175",
+  "testId": "test-13",
+  "number": 175,
+  "part": 7,
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "Which change would let customers know they have ordered the coffee they meant to buy without losing what worked along the queue?",
+  "promptZh": "哪項改動能讓顧客知道自己點到了想買的咖啡，同時保留排隊時已經有效的做法？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Keep both coffees on the menu board and send the drink button to the till. After it is pressed, return the customer screen to payment.",
+      "zh": "菜單保留兩款咖啡，按鈕把飲品選擇送到收銀臺。按下後，顧客螢幕回到付款畫面。",
+      "whyZh": "保留排隊時能看到的兩款，也確實送出選擇；但一跳回付款，顧客仍看不到收銀臺是否收到想要的飲品。"
+    },
+    {
+      "id": "B",
+      "text": "Keep both coffees on the menu board. Use the drink buttons to send the order and show the choice the till received before asking for payment.",
+      "zh": "菜單保留兩款咖啡。用按鈕送出飲品，並在請顧客付款前顯示收銀臺收到的選擇。",
+      "whyZh": "排隊時仍能看懂有哪些選擇；點餐時會送到收銀臺，顧客也看得到實際收到哪一款，不必再點一次或猜是否有成功。"
+    },
+    {
+      "id": "C",
+      "text": "Keep both coffees on the menu board and send the drink button to the till. Show whatever the customer last pressed as soon as they touch it.",
+      "zh": "菜單保留兩款咖啡，按鈕把飲品選擇送到收銀臺。顧客按下時，立即顯示最後按的是什麼。",
+      "whyZh": "顯示按動內容可讓顧客知道手指選了什麼，但不代表收銀臺已收到。要確認訂單不能只回顯按鈕。"
+    },
+    {
+      "id": "D",
+      "text": "Take the two coffee lines off the menu board. On the payment screen, show the choice received at the till before taking payment.",
+      "zh": "從菜單移除兩款咖啡的列表，在付款畫面上先顯示收銀臺收到的選擇。",
+      "whyZh": "這能確認訂單，但拿掉排隊時能看到的兩款資訊，使顧客得等到收銀臺才能知道可選什麼。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "排隊時仍能看懂有哪些選擇；點餐時會送到收銀臺，顧客也看得到實際收到哪一款，不必再點一次或猜是否有成功。",
+  "evidence": "the two coffees had lines of their own. / I thought I’d already ordered. / It sent the choice to the till; the screen immediately returned to the payment amount. / She asked if she had to tell the cashier her choice again. / Lunch customers often decide what to have before they reach the register / show the choice the till received before taking payment / even if the till hasn’t received anything.",
+  "vocabulary": [
+    {
+      "term": "till",
+      "zh": "收銀機；收銀系統",
+      "note": "此處是接收訂單的收銀系統；顧客螢幕顯示按過的選項，不一定代表收銀端已收到。"
+    }
+  ],
+  "groupId": "t13-r-q174-175"
+}

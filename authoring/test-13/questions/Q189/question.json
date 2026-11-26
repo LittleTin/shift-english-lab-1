@@ -1,0 +1,52 @@
+{
+  "id": "t13-q189",
+  "testId": "test-13",
+  "number": 189,
+  "part": 7,
+  "revision": 1,
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "daily"
+  ],
+  "prompt": "How should the editor handle the pauses in Bert’s recording?",
+  "promptZh": "剪輯人員應怎麼處理伯特錄音裡的停頓？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Shorten both gaps so the bells come sooner.",
+      "zh": "把兩段停頓都縮短，讓鈴聲提早出現。",
+      "whyZh": "第一段是等控台檢查，但第二段是伯特要求播放鈴聲來示範攤商等待的過程。兩段都縮短會刪去後者的敘事作用。"
+    },
+    {
+      "id": "B",
+      "text": "Keep both gaps and the bells that follow them.",
+      "zh": "保留兩段停頓，以及各自接在後面的鈴聲。",
+      "whyZh": "使用同一段鈴聲並不代表目的相同。第一段實心點是控台請伯特停下來檢查音量，不是伯特安排的示範。"
+    },
+    {
+      "id": "C",
+      "text": "Shorten the first gap, but keep the later gap and its bell together.",
+      "zh": "縮短第一段停頓，但把後面那段停頓與鈴聲一起保留。",
+      "whyZh": "依錄音紀錄，第一段的實心點是控台要求伯特等待音量檢查，並不示範市場情境。第二段的空心點是伯特示意對方播放他要的鈴聲；前面的停頓示範攤商等待，應連同鈴聲保留。"
+    },
+    {
+      "id": "D",
+      "text": "Keep the first gap and its bell together, but shorten the later gap.",
+      "zh": "把第一段停頓及鈴聲一起保留，但縮短後面那段停頓。",
+      "whyZh": "剛好顛倒兩段的用途。實心點是控台發給伯特的音量檢查訊號；空心點才是伯特發給控台、用於故事示範的訊號。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "依錄音紀錄，第一段的實心點是控台要求伯特等待音量檢查，並不示範市場情境。第二段的空心點是伯特示意對方播放他要的鈴聲；前面的停頓示範攤商等待，應連同鈴聲保留。",
+  "evidence": "A pause that demonstrates what the speaker is describing belongs in the story, even when the recording was made later. / The recording notes use a filled dot for a cue sent to the speaker; an open dot is a cue the speaker sent to the person at the controls. / In this session a cue sent to Bert meant wait for a level check. The cue in the other direction meant Bert was ready for the sound he had requested. / a gap marked with a filled dot / the gap in the second account is marked with an open dot / We hear the same bell clip at the end of both gaps. / If a pause is just for an equipment check, tighten it without cutting anything the speaker says.",
+  "vocabulary": [
+    {
+      "term": "level check",
+      "zh": "音量電平檢查",
+      "note": "錄音時用來確認訊號大小的技術檢查，不是節目內容本身。"
+    }
+  ],
+  "groupId": "t13-r-q186-190"
+}

@@ -1,52 +1,51 @@
 {
-  "id": "t13-q110",
-  "uuid": "0fa57391-a9a2-52b8-8f89-4707d4cf21aa",
+  "id": "t13-q110-r2-4989c45f56bc",
   "testId": "test-13",
   "number": 110,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
-  "difficulty": "foundation",
+  "difficulty": "intermediate",
   "tags": [
     "incomplete-sentence",
     "business"
   ],
-  "prompt": "Our lab assistant will collect the signed _____ after the safety briefing.",
-  "promptZh": "安全說明會後，我們的實驗室助理會收回已簽名的表單。",
+  "prompt": "The assistant lists all briefing attendees in a separate register. The new form is signed only after a technician takes a copy of the revised instructions. Signing it says nothing about whether the technician has read the instructions or agreed to a change. A signature on that form _____ receipt of the revised instructions.",
+  "promptZh": "助理另外用簽到簿記下所有參加說明會的人。技術人員必須先拿到一份修訂指引，才在新表單上簽名。簽名並不代表他已閱讀指引或同意變更。這張表單上的簽名_____。",
   "options": [
     {
       "id": "A",
-      "text": "formal",
-      "zh": "正式的",
-      "whyZh": "formal 是形容詞，不能單獨當作這裡要收回的可簽物品；signed 後需要名詞。"
+      "text": "authorizes",
+      "zh": "授權技術人員領取修訂指引",
+      "whyZh": "簽名發生在拿到指引之後，用來留存紀錄，不是給予領取權限。"
     },
     {
       "id": "B",
-      "text": "forms",
-      "zh": "表單",
-      "whyZh": "forms 是複數名詞，指說明會後助理會收回的已簽名表單。"
+      "text": "anticipates",
+      "zh": "表示稍後會收到指引",
+      "whyZh": "領取已經發生；簽名不是說將來才會收到。"
     },
     {
       "id": "C",
-      "text": "formerly",
-      "zh": "從前",
-      "whyZh": "formerly 是副詞「從前」，不能當作 collect 的受詞或接在 signed 後充當文件名。"
+      "text": "is a prerequisite for",
+      "zh": "是領取指引的先決條件",
+      "whyZh": "修訂指引先交到技術人員手上，再以簽名記錄；簽名不是領取的先決條件。"
     },
     {
       "id": "D",
-      "text": "forming",
-      "zh": "形成；塑形",
-      "whyZh": "forming 可表形成或塑形的動作，不是這段安全說明會要收回的已簽名文件。"
+      "text": "acknowledges",
+      "zh": "確認他已收到修訂指引",
+      "whyZh": "簽名只確認技術人員已收到指引，不等於閱讀、同意修改或出席證明。"
     }
   ],
-  "answer": "B",
-  "explanationZh": "forms 是複數名詞，指說明會後助理會收回的已簽名表單。",
-  "evidence": "Our lab assistant will collect the signed forms after the safety briefing.",
-  "evidenceZh": "安全說明會後，我們的實驗室助理會收回已簽名的表單。",
+  "answer": "D",
+  "explanationZh": "簽名只確認技術人員已收到指引，不等於閱讀、同意修改或出席證明。",
+  "evidence": "The assistant lists all briefing attendees in a separate register. / The new form is signed only after a technician takes a copy of the revised instructions. / Signing it says nothing about whether the technician has read the instructions or agreed to a change.",
   "vocabulary": [
     {
-      "term": "forms",
-      "zh": "表單"
+      "term": "briefing attendees",
+      "zh": "簡報會的出席者",
+      "note": "attendee 指實際參加會議或活動的人；briefing 說明活動類型。"
     }
   ]
 }

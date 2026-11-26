@@ -1,52 +1,51 @@
 {
-  "id": "t13-q105",
-  "uuid": "2611b6eb-d871-54ab-8f2c-eb4f3ef999fa",
+  "id": "t13-q105-r2-b5051e91b81d",
   "testId": "test-13",
   "number": 105,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
-  "difficulty": "intermediate",
+  "difficulty": "advanced",
   "tags": [
     "incomplete-sentence",
     "business"
   ],
-  "prompt": "The control panel counts each run with a missing stop time as one hour. The controller logs confirm all other durations but show that every run with a missing stop time lasted at most forty minutes. The panel therefore _____ the total runtime.",
-  "promptZh": "控制面板將每筆缺少停止時間的運轉紀錄以一小時計入。控制器紀錄證實其他運轉時間均無誤，但顯示缺少停止時間的運轉實際上每筆最多四十分鐘。因此，控制面板高估了總運轉時間。",
+  "prompt": "The two stations can run independently, but the report counts each minute of customer production on the line only once. Today’s 80 minutes include a 20-minute setup and omit a 15-minute customer run; the omitted run overlapped the setup for five minutes and did not overlap any minutes of recorded production. None of the setup overlapped previously recorded production. The revised production total is _____.",
+  "promptZh": "兩個工作站可各自運行，但產線每分鐘的客戶產品生產時間只計一次。今天報的 80 分鐘包含 20 分鐘準備，卻漏了一次 15 分鐘的客戶產品生產；漏報的生產有 5 分鐘與準備重疊，與已記錄的生產完全不重疊。準備時段與先前已記錄的生產時段完全不重疊。修正後的生產總時間為_____。",
   "options": [
     {
       "id": "A",
-      "text": "overstates",
-      "zh": "高估／報得過高",
-      "whyZh": "每筆缺少停止時間的運轉以一小時計入，實際至多四十分鐘，每筆至少多計二十分鐘；其他運轉時長已證實無誤，因此總時數必然被高估。"
+      "text": "60 minutes",
+      "zh": "60 分鐘",
+      "whyZh": "從 80 扣了準備，卻沒計回漏報的生產。"
     },
     {
       "id": "B",
-      "text": "understates",
-      "zh": "低估／報得過低",
-      "whyZh": "understates 代表算得比實際少；這裡的一小時大於每筆的真實時間，所以偏差方向相反。"
+      "text": "70 minutes",
+      "zh": "70 分鐘",
+      "whyZh": "把與準備重疊的 5 分鐘排除在漏報生產外，但該 5 分鐘也是實際生產。"
     },
     {
       "id": "C",
-      "text": "rounds down",
-      "zh": "無條件捨去",
-      "whyZh": "rounds down 指往下取整；對已停止的運轉填一小時實際是增加計入時間，並不是往下取整。"
+      "text": "75 minutes",
+      "zh": "75 分鐘",
+      "whyZh": "準備時段與已記錄生產完全不重疊，因此從 80 扣除全部 20 分鐘，留下 60 分鐘已記錄生產；補回完整 15 分鐘，與已記錄生產不重疊，故 75 分鐘。"
     },
     {
       "id": "D",
-      "text": "confirms",
-      "zh": "證實",
-      "whyZh": "confirms 表示證實同一數值；獨立紀錄顯示時間較短，並非支持面板的總時數。"
+      "text": "95 minutes",
+      "zh": "95 分鐘",
+      "whyZh": "直接把 15 分鐘加到原 80，未排除當中列入的準備時段。"
     }
   ],
-  "answer": "A",
-  "explanationZh": "每筆缺少停止時間的運轉以一小時計入，實際至多四十分鐘，每筆至少多計二十分鐘；其他運轉時長已證實無誤，因此總時數必然被高估。",
-  "evidence": "The control panel counts each run with a missing stop time as one hour. The controller logs confirm all other durations but show that every run with a missing stop time lasted at most forty minutes. The panel therefore overstates the total runtime.",
-  "evidenceZh": "控制面板將每筆缺少停止時間的運轉紀錄以一小時計入。控制器紀錄證實其他運轉時間均無誤，但顯示缺少停止時間的運轉實際上每筆最多四十分鐘。因此，控制面板高估了總運轉時間。",
+  "answer": "C",
+  "explanationZh": "準備時段與已記錄生產完全不重疊，因此從 80 扣除全部 20 分鐘，留下 60 分鐘已記錄生產；補回完整 15 分鐘，與已記錄生產不重疊，故 75 分鐘。",
+  "evidence": "the report counts each minute of customer production on the line only once. / include a 20-minute setup and omit a 15-minute customer run / did not overlap any minutes of recorded production / None of the setup overlapped previously recorded production.",
   "vocabulary": [
     {
-      "term": "overstates",
-      "zh": "高估／報得過高"
+      "term": "overlapped",
+      "zh": "時間上重疊",
+      "note": "在時段紀錄中，表示兩項活動有一部分時間同時發生。"
     }
   ]
 }

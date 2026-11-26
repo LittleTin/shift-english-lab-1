@@ -1,52 +1,51 @@
 {
-  "id": "t13-q106",
-  "uuid": "5cf264ae-aaef-5696-8869-c642720a63e8",
+  "id": "t13-q106-r2-0f43c7b31004",
   "testId": "test-13",
   "number": 106,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
-  "difficulty": "foundation",
+  "difficulty": "intermediate",
   "tags": [
     "incomplete-sentence",
     "daily"
   ],
-  "prompt": "_____ return your locker key to the front desk before leaving the pool; there is no drop box outside the building.",
-  "promptZh": "離開游泳池前，請務必把置物櫃的鑰匙交回服務台；建築物外沒有鑰匙歸還箱。",
+  "prompt": "The front desk will be closed when evening swimmers leave. They may bring their locker keys back the next morning, and the desk will still record each return as usual. The notice should say the pool has _____ the return requirement for those swimmers.",
+  "promptZh": "晚間泳客離開時，櫃檯已經下班。他們可以隔天早上再還置物櫃鑰匙，櫃檯仍會照常逐一登記歸還情形。公告應說明，游泳池對這些泳客_____。",
   "options": [
     {
       "id": "A",
-      "text": "Almost",
-      "zh": "幾乎",
-      "whyZh": "Almost return 表示「差一點就歸還」，不是要求確實完成的指示。"
+      "text": "waived",
+      "zh": "免除歸還義務",
+      "whyZh": "waive 指不再要求歸還，但隔天仍要把鑰匙交回。"
     },
     {
       "id": "B",
-      "text": "Elsewhere",
-      "zh": "在別處",
-      "whyZh": "Elsewhere 表示「在別處」，但句中已明確指定地點是服務台。"
+      "text": "deferred fulfillment of",
+      "zh": "延後了歸還鑰匙的期限",
+      "whyZh": "歸還義務和登記方式不變，只把歸還延到隔天早上。"
     },
     {
       "id": "C",
-      "text": "Always",
-      "zh": "每次都；務必",
-      "whyZh": "Always 在祈使句開頭強調每次離開前都要照辦；沒有室外投還箱也支持這個要求。"
+      "text": "reinstated",
+      "zh": "恢復原先取消的歸還義務",
+      "whyZh": "歸還義務從未取消，因此不是恢復原有規定。"
     },
     {
       "id": "D",
-      "text": "Yesterday",
-      "zh": "昨天",
-      "whyZh": "Yesterday 指昨天，不能在這則面向每位泳客的即時指示裡，修飾祈使句的歸還動作。"
+      "text": "tightened",
+      "zh": "收緊歸還規定",
+      "whyZh": "公告放寬的是歸還時間，並不是收緊規定。"
     }
   ],
-  "answer": "C",
-  "explanationZh": "Always 在祈使句開頭強調每次離開前都要照辦；沒有室外投還箱也支持這個要求。",
-  "evidence": "Always return your locker key to the front desk before leaving the pool; there is no drop box outside the building.",
-  "evidenceZh": "離開游泳池前，請務必把置物櫃的鑰匙交回服務台；建築物外沒有鑰匙歸還箱。",
+  "answer": "B",
+  "explanationZh": "歸還義務和登記方式不變，只把歸還延到隔天早上。",
+  "evidence": "They may bring their locker keys back the next morning / the desk will still record each return as usual.",
   "vocabulary": [
     {
-      "term": "Always",
-      "zh": "每次都；務必"
+      "term": "return requirement",
+      "zh": "歸還規定",
+      "note": "可用來說明借用品必須交回的時間、地點或方式。"
     }
   ]
 }

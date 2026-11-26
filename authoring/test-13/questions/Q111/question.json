@@ -1,52 +1,51 @@
 {
-  "id": "t13-q111",
-  "uuid": "6c16cd76-0385-560f-bd5f-7a20b0787729",
+  "id": "t13-q111-r2-538a23d8a926",
   "testId": "test-13",
   "number": 111,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
-  "difficulty": "intermediate",
+  "difficulty": "advanced",
   "tags": [
     "incomplete-sentence",
     "business"
   ],
-  "prompt": "The newspaper can print an unsigned correction, but anyone quoted by name must approve the revised wording. The copy desk needs consent from _____ names will appear in the correction, not from everyone who read the first story.",
-  "promptZh": "報社可以刊登不署名的更正，但被具名引用的人必須同意修改後的文字。編輯台需要取得會在更正中被具名的人同意，而不是所有讀過原報導的人的同意。",
+  "prompt": "In the revised notice, a sentence may be attributed to a named source only when that person has checked the revised wording, and a checked sentence may still appear without a name if the source approved anonymous publication only. Mara approved anonymous publication of the revised first sentence; Leon approved being named but checked only its earlier wording. The editor may now _____.",
+  "promptZh": "更正公告中的句子，只有在具名來源確認過修訂文字後才能署名；若來源只同意匿名刊登，已確認的句子仍可匿名刊出。瑪拉同意匿名刊登修訂後的第一句；里昂同意具名，但只看過該句的舊版。編輯現在可_____。",
   "options": [
     {
       "id": "A",
-      "text": "those whose",
-      "zh": "那些其……的人",
-      "whyZh": "from 需要一組人的名詞片語；those 指那群人，whose 修飾 names，表示他們的名字會出現在更正中。句意限定需同意的是被具名引用的人，而非所有讀者。"
+      "text": "publish the revised sentence without naming either source",
+      "zh": "刊登修訂後的句子，但不公開任何一位來源的姓名",
+      "whyZh": "瑪拉已核對修改後的文字並同意匿名刊出；里昂並未核對新版，不能為新版具名。"
     },
     {
       "id": "B",
-      "text": "whoever",
-      "zh": "無論誰；任何……的人",
-      "whyZh": "whoever 可引出「任何做某事的人」，但後面的主詞是 names，需要 whose 來表示名字屬於這些人；whoever 不能直接修飾 names。"
+      "text": "publish the revised sentence naming Mara alone",
+      "zh": "刊登修訂後的句子，僅列瑪拉姓名",
+      "whyZh": "瑪拉只授權匿名，不可即使核對了新版就列她姓名。"
     },
     {
       "id": "C",
-      "text": "them whom",
-      "zh": "他們（受格）加關係代名詞受格",
-      "whyZh": "them 是代名詞受格，whom 也是關係代名詞受格；這裡要表達人與 names 的所有關係，而非受詞。兩者連用也不是可接受的先行詞結構。"
+      "text": "publish the revised sentence naming Leon alone",
+      "zh": "刊登修訂後的句子，僅列里昂姓名",
+      "whyZh": "里昂同意的是具名，卻沒核對修訂文字；兩項授權缺一不可。"
     },
     {
       "id": "D",
-      "text": "their own",
-      "zh": "他們自己的",
-      "whyZh": "their own 後接 names 只會指名字本身，而 from 後面要的是會在文中被具名的人。把 their own names 放進空格後，也無法和 will appear 構成所需的關係子句。"
+      "text": "publish the earlier wording and attribute the revised wording to both sources",
+      "zh": "先刊登舊版文字，再把修訂版歸於兩位具名來源",
+      "whyZh": "先列舊版不會補足修訂版的授權，瑪拉仍未同意具名，里昂仍沒核對新版。"
     }
   ],
   "answer": "A",
-  "explanationZh": "from 需要一組人的名詞片語；those 指那群人，whose 修飾 names，表示他們的名字會出現在更正中。句意限定需同意的是被具名引用的人，而非所有讀者。",
-  "evidence": "The newspaper can print an unsigned correction, but anyone quoted by name must approve the revised wording. The copy desk needs consent from those whose names will appear in the correction, not from everyone who read the first story.",
-  "evidenceZh": "報社可以刊登不署名的更正，但被具名引用的人必須同意修改後的文字。編輯台需要取得會在更正中被具名的人同意，而不是所有讀過原報導的人的同意。",
+  "explanationZh": "瑪拉已核對修改後的文字並同意匿名刊出；里昂並未核對新版，不能為新版具名。",
+  "evidence": "only when that person has checked the revised wording / Mara approved anonymous publication / Leon approved being named but checked only its earlier wording",
   "vocabulary": [
     {
-      "term": "those whose",
-      "zh": "那些其……的人"
+      "term": "attributed to",
+      "zh": "註明出自……",
+      "note": "在編輯與引述語境中，用來連結文字和其消息來源。"
     }
   ]
 }

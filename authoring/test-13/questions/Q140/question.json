@@ -1,11 +1,9 @@
 {
-  "id": "t13-q140",
-  "uuid": "185e1b43-ae59-5770-b609-760d37ae3325",
+  "id": "t13-q140-r2-d187118e0582",
   "testId": "test-13",
   "number": 140,
   "part": 6,
-  "groupId": "t13-r-p6-03",
-  "revision": 1,
+  "revision": 3,
   "topic": "business",
   "difficulty": "advanced",
   "tags": [
@@ -17,50 +15,38 @@
   "options": [
     {
       "id": "A",
-      "text": "Move both feet to the next shoe length before you record either of the forms.",
-      "zh": "先把左右鞋都換到下一個鞋長，再記下其中任何一隻的鞋楦。",
-      "whyZh": "前句規定測更長的左鞋時先不要再改右鞋；兩腳一起換鞋長會改掉控制的右側搭配。"
+      "text": "Put a narrow band with a soft finish on the left, and keep the fit unchanged.",
+      "zh": "左鞋換成低光澤的窄銀邊，維持原本的合腳度。",
+      "whyZh": "低光澤可減少反光，且可保留合腳度；但換成窄銀邊後，兩只鞋外側都會像架上對照圖的 R，服裝組看不到鞋跟標籤時就失去原本的辨識線索。"
     },
     {
       "id": "B",
-      "text": "Enter the form and insole used for the final trial on each side rather than copying the newer left-side entry into both fields.",
-      "zh": "按最後試穿結果分別記下左右鞋的鞋楦和鞋墊，不要把左腳較新的紀錄複製到兩欄。",
-      "whyZh": "每腳可各自試不同搭配，紀錄也要能支援分開下訂。只改左腳時，右腳不能沿用左腳的新資料。"
+      "text": "Put a broad band with a soft finish on the left, and keep the fit unchanged.",
+      "zh": "左鞋換成低光澤的寬銀邊，維持原本的合腳度。",
+      "whyZh": "架上圖示的 L 和 R 以銀邊寬窄區分左右鞋，鞋跟內標從外面看不見。瑞娜只在開場燈光下左鞋閃亮時暫停，並說不是之前的樣子，顯示她要改的是那一下反光。保留寬度與合腳度，只調整左側銀邊光澤。"
     },
     {
       "id": "C",
-      "text": "Use the left shoe to confirm the overall size, and omit information about the right side until the order is shipped.",
-      "zh": "只用左鞋確認整雙尺寸，等鞋寄出後再補右腳資料。",
-      "whyZh": "這張卡要求每隻都註明鞋楦；出貨以後才補右側資料，製鞋人員便無從依右側結果製作。"
+      "text": "Keep the left band’s current finish and give the narrow band on the right that same finish.",
+      "zh": "保留左鞋銀邊的表面處理，並把右鞋窄銀邊改成相同的表面處理。",
+      "whyZh": "這會保留服裝組用來辨認左右腳的寬窄，卻會讓右鞋也變得容易閃光。瑞娜是在左鞋亮起時指出問題，不是要把那道反光也加到右鞋。"
     },
     {
       "id": "D",
-      "text": "Remove the thinner insole from both shoes before checking whether the dancer prefers the new fit.",
-      "zh": "先把兩鞋的薄鞋墊取出，再確認舞者是否喜歡新的搭配。",
-      "whyZh": "取掉兩邊薄鞋墊等於再改動原有測試設定，也沒說明如何在卡上保留左右各自的搭配結果。"
+      "text": "Keep the left band’s current finish but make it narrow, and keep the fit unchanged.",
+      "zh": "保留左鞋銀邊的表面處理，但改為窄銀邊；維持原本合腳度。",
+      "whyZh": "既未改變造成反光的表面光澤，又拿掉服裝組在快速換裝時辨認左腳鞋用的寬銀邊。"
     }
   ],
   "answer": "B",
-  "explanationZh": "每腳可各自試不同搭配，紀錄也要能支援分開下訂。只改左腳時，右腳不能沿用左腳的新資料。",
-  "evidence": "test the next left shoe length without making another change to the right shoe / The two sides can be ordered with different combinations",
-  "evidenceSpans": [
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 630,
-      "endChar": 708,
-      "exactQuote": "test the next left shoe length without making another change to the right shoe"
-    },
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 838,
-      "endChar": 894,
-      "exactQuote": "The two sides can be ordered with different combinations"
-    }
-  ],
+  "explanationZh": "架上圖示的 L 和 R 以銀邊寬窄區分左右鞋，鞋跟內標從外面看不見。瑞娜只在開場燈光下左鞋閃亮時暫停，並說不是之前的樣子，顯示她要改的是那一下反光。保留寬度與合腳度，只調整左側銀邊光澤。",
+  "evidence": "the dressers line up the shoes toe-first on the rack, with the labels inside the heels out of sight. / Their diagram above the rack shows a broad silver band under “L” and a narrow one under “R.” / In the lit run, she stopped the video just as a bright flash came from the left toe; the right toe still showed silver. / “That bit,” she said, “not what we saw before.” / The maker can use the same silver in either width with a soft finish that does not flash under that light.",
   "vocabulary": [
     {
-      "term": "insole",
-      "zh": "鞋墊"
+      "term": "soft finish",
+      "zh": "低光澤處理",
+      "note": "舞台鞋表面用語，在這裡指減少強光下的反射，不是把鞋面變軟。"
     }
-  ]
+  ],
+  "groupId": "t13-r-p6-03"
 }

@@ -1,52 +1,51 @@
 {
-  "id": "t13-q130",
-  "uuid": "684f28fc-79e3-5300-8332-31af57e1c1b5",
+  "id": "t13-q130-r2-812ed01e1b16",
   "testId": "test-13",
   "number": 130,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
   "difficulty": "intermediate",
   "tags": [
     "incomplete-sentence",
     "daily"
   ],
-  "prompt": "Check the museum ticket receipt before paying at the coat check. The receipt shows a two-dollar credit that will be _____ the coat-check fee; the desk deducts it from what you owe that day rather than returning it in cash.",
-  "promptZh": "在寄衣處付費前先看看博物館門票收據。收據上有兩美元抵用金，可用來折抵寄衣費；櫃台會從你當天應付的金額扣除這兩美元，不會退現金。",
+  "prompt": "A museum ticket includes a noncash coat-check credit that applies only to the first item its holder checks that day. The desk charges $3 per item; Bea’s $2 credit was used on an umbrella this morning, while Arun’s own ticket still carries an unused $2 credit. If each now checks a coat and this is Arun’s first item today, the desk should _____.",
+  "promptZh": "博物館門票含不可兌現的寄物抵用額，只適用持票人當天寄放的第一件。每件收 3 美元。貝雅的 2 美元抵用額今早已用在一把傘上，阿潤自己的票仍有一筆未用的 2 美元。若兩人現在各寄放一件外套，且這是阿潤今天寄放的第一件，櫃檯應_____。",
   "options": [
     {
       "id": "A",
-      "text": "collected from",
-      "zh": "向……收取；從……收取",
-      "whyZh": "collected from 描述收取來源；兩美元是要在繳費時使用的抵用金，不是從寄衣費再另外收錢。"
+      "text": "charge Bea $3 and Arun $1",
+      "zh": "向貝雅收 3 美元，阿潤收 1 美元",
+      "whyZh": "貝雅第一件已用了抵用額；這是阿潤今天的第一件，且抵用額尚未使用，可從應付的 3 美元抵 2 美元。"
     },
     {
       "id": "B",
-      "text": "held separately from",
-      "zh": "與……分開保留",
-      "whyZh": "held separately from 表示分開留存；櫃台實際把抵用金從當天的寄衣費中扣除，不是分開保管。"
+      "text": "charge Bea and Arun $1 each",
+      "zh": "貝雅和阿潤各收 1 美元",
+      "whyZh": "貝雅的抵用額已用掉，不能再抵一件。"
     },
     {
       "id": "C",
-      "text": "applied to",
-      "zh": "用來折抵",
-      "whyZh": "applied to a fee 表示用抵用金抵扣費用；櫃台會從當天應付的寄衣費中扣掉兩美元，不會把它退成現金。"
+      "text": "charge Bea $1 and Arun $3",
+      "zh": "向貝雅收 1 美元，阿潤收 3 美元",
+      "whyZh": "抵用額狀態相反，阿潤有未用的折抵。"
     },
     {
       "id": "D",
-      "text": "replaced by",
-      "zh": "被……取代",
-      "whyZh": "replaced by 表示抵用金被一筆寄衣費取代；題目描述的是仍有抵用金可用，不是將它取消或替換成應付款。"
+      "text": "charge both the full $3 and pay Arun $2 in cash",
+      "zh": "兩人都收全額 3 美元，再現金給阿潤 2 美元",
+      "whyZh": "抵用額是抵第一件寄物費，不是另外發現金。"
     }
   ],
-  "answer": "C",
-  "explanationZh": "applied to a fee 表示用抵用金抵扣費用；櫃台會從當天應付的寄衣費中扣掉兩美元，不會把它退成現金。",
-  "evidence": "Check the museum ticket receipt before paying at the coat check. The receipt shows a two-dollar credit that will be applied to the coat-check fee; the desk deducts it from what you owe that day rather than returning it in cash.",
-  "evidenceZh": "在寄衣處付費前先看看博物館門票收據。收據上有兩美元抵用金，可用來折抵寄衣費；櫃台會從你當天應付的金額扣除這兩美元，不會退現金。",
+  "answer": "A",
+  "explanationZh": "貝雅第一件已用了抵用額；這是阿潤今天的第一件，且抵用額尚未使用，可從應付的 3 美元抵 2 美元。",
+  "evidence": "applies only to the first item its holder checks that day / Bea’s $2 credit was used on an umbrella / Arun’s own ticket still carries an unused $2 credit / this is Arun’s first item today",
   "vocabulary": [
     {
-      "term": "applied to",
-      "zh": "用來折抵"
+      "term": "coat-check credit",
+      "zh": "衣物寄放抵用額",
+      "note": "credit 在這裡指可折抵寄放費的金額，不是現金或信用。"
     }
   ]
 }

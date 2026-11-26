@@ -1,0 +1,57 @@
+{
+  "id": "t13-q181",
+  "testId": "test-13",
+  "number": 181,
+  "part": 7,
+  "revision": 2,
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "Which instruction should replace the note in the Monday repair test file?",
+  "promptZh": "哪項指示應取代星期一報修測試檔的附註？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Leave both fields as South, since both the paper’s footer and the accepting desk point there.",
+      "zh": "兩欄都保留南分店，因為紙本頁尾與實際收件櫃檯都指向南分店。",
+      "whyZh": "南分店確實收件，但紙本是補印單，頁尾並非原開單分店；維修登記簿的首筆紀錄寫北分店。"
+    },
+    {
+      "id": "B",
+      "text": "Use North for Issue branch and South for Taken at.",
+      "zh": "「開單分店」填北分店，「收件分店」填南分店。",
+      "whyZh": "首筆開單紀錄為北分店，即使這張紙在南分店補印也不變。客人會把物品交給南分店收件，即使承辦人登入北分店填表，也應將收件分店記為南分店。"
+    },
+    {
+      "id": "C",
+      "text": "Use North for both fields; the first ticket record and the clerk’s login identify the branch handling the form.",
+      "zh": "兩欄都填北分店；首筆開單紀錄與承辦人的登入資料顯示北分店在處理表單。",
+      "whyZh": "首筆開單確為北分店，但登入地不是實際收件地。南分店櫃檯會收物並傳來收據。"
+    },
+    {
+      "id": "D",
+      "text": "Use South for Issue branch and North for Taken at.",
+      "zh": "「開單分店」填南分店，「收件分店」填北分店。",
+      "whyZh": "這會把補印地與承辦人登入地誤當作原開單分店及實際收件分店；兩欄應分別用首筆開單和收件櫃檯的分店。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "首筆開單紀錄為北分店，即使這張紙在南分店補印也不變。客人會把物品交給南分店收件，即使承辦人登入北分店填表，也應將收件分店記為南分店。",
+  "evidence": "keep the “Issue branch” from the first entry in the claim register. / where that copy was printed. / “Taken at” is the branch whose desk accepts the item for repair / The banner shows only where the clerk has signed in. / The paper clipped to it has a South footer. / I looked up the first entry in the register and it gives North for the same ticket number. / has arranged to hand the item to the south desk instead / South will accept it and send her a photo of the receipt.",
+  "vocabulary": [
+    {
+      "term": "replacement printout",
+      "zh": "補印的文件",
+      "note": "補印只產生另一份副本；補印地點不必然是原始單據的開立地點。"
+    },
+    {
+      "term": "claim register",
+      "zh": "維修登記簿",
+      "note": "在維修語境中是追蹤報修案件的登記簿，可用單號查找先前紀錄。"
+    }
+  ],
+  "groupId": "t13-r-q181-185"
+}

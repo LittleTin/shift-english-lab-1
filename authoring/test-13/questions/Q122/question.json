@@ -1,52 +1,51 @@
 {
-  "id": "t13-q122",
-  "uuid": "19b7f079-107d-5365-94ca-ad3749ba05f7",
+  "id": "t13-q122-r2-7c3a32090c8c",
   "testId": "test-13",
   "number": 122,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
-  "difficulty": "advanced",
+  "difficulty": "intermediate",
   "tags": [
     "incomplete-sentence",
     "daily"
   ],
-  "prompt": "The community theater could bring the scenery through the alley if the arch were high enough, or through the courtyard if the gate could open fully. The arch is too low, and a tree trunk stops the gate halfway. These findings _____ moving the scenery in one piece; it may still come in as separate panels.",
-  "promptZh": "社區劇場如果巷口拱門夠高，可以由巷子把布景搬進來；如果庭院的門能全開，也能走庭院。拱門太低，而樹幹卡住庭院的門，使它只能開到一半。這兩項發現排除了整件搬入的做法，但拆成板件後仍可搬入。",
+  "prompt": "The stage crew will keep the scenery’s painted face upright; it can remove a shallow base without disturbing that face. The alley fits the full width but not the height unless the base comes off, while the courtyard is tall enough but still narrower than the face with the gate held halfway. To avoid dividing the painted face, the crew should _____.",
+  "promptZh": "舞臺組會讓布景的彩繪面保持直立，並能拆下淺底座而不動彩繪面。小巷夠寬，但除非拆底座，否則高度不夠；庭院夠高，但閘門只能開一半，開口仍窄於彩繪面。為免拆分彩繪面，舞臺組應_____。",
   "options": [
     {
       "id": "A",
-      "text": "hold off",
-      "zh": "延後；暫緩",
-      "whyZh": "hold off 指暫緩；文中指出兩個通道現有的物理限制，沒有表示等一段時間就能整件搬。"
+      "text": "remove the base and take the face upright through the alley",
+      "zh": "拆下底座，彩繪面保持直立從小巷通過",
+      "whyZh": "小巷的寬度夠；只拆底座即可解決高度限制並保留整片面板。"
     },
     {
       "id": "B",
-      "text": "rule out",
-      "zh": "排除",
-      "whyZh": "巷道及庭院原本是整件搬入的兩種做法，但各自缺少必要條件。rule out 所排除的是「一整件搬運」，不是所有搬運方式。"
+      "text": "remove the base and take the face upright through the courtyard",
+      "zh": "拆下底座，彩繪面保持直立從庭院通過",
+      "whyZh": "底座影響高度，無法解決庭院閘門開口太窄的問題。"
     },
     {
       "id": "C",
-      "text": "scale back",
-      "zh": "縮小規模",
-      "whyZh": "scale back 指縮小某項活動的規模；拆成板件是改變搬運方法，並非讓整件搬運以較小規模進行。"
+      "text": "leave the base attached and take the face upright through the alley",
+      "zh": "不拆底座，彩繪面保持直立從小巷通過",
+      "whyZh": "小巷寬度夠，但不拆底座時高度不足。"
     },
     {
       "id": "D",
-      "text": "phase in",
-      "zh": "分階段引進",
-      "whyZh": "phase in 指逐步引進；結果是現有條件下整件搬不進去，不是逐步實施整件搬運。"
+      "text": "divide the painted face and take both sections through the courtyard",
+      "zh": "拆分彩繪面，從庭院搬兩片",
+      "whyZh": "能搬小塊不代表符合保持整片彩繪面的要求。"
     }
   ],
-  "answer": "B",
-  "explanationZh": "巷道及庭院原本是整件搬入的兩種做法，但各自缺少必要條件。rule out 所排除的是「一整件搬運」，不是所有搬運方式。",
-  "evidence": "The community theater could bring the scenery through the alley if the arch were high enough, or through the courtyard if the gate could open fully. The arch is too low, and a tree trunk stops the gate halfway. These findings rule out moving the scenery in one piece; it may still come in as separate panels.",
-  "evidenceZh": "社區劇場如果巷口拱門夠高，可以由巷子把布景搬進來；如果庭院的門能全開，也能走庭院。拱門太低，而樹幹卡住庭院的門，使它只能開到一半。這兩項發現排除了整件搬入的做法，但拆成板件後仍可搬入。",
+  "answer": "A",
+  "explanationZh": "小巷的寬度夠；只拆底座即可解決高度限制並保留整片面板。",
+  "evidence": "can remove a shallow base without disturbing that face / fits the full width but not the height unless the base comes off / still narrower than the face",
   "vocabulary": [
     {
-      "term": "rule out",
-      "zh": "排除"
+      "term": "upright",
+      "zh": "直立地；保持直立的",
+      "note": "搬運物品時用來描述保持垂直的姿態。"
     }
   ]
 }

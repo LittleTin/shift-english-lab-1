@@ -1,13 +1,11 @@
 {
-  "id": "t13-q141",
-  "uuid": "673794aa-ca48-5df6-968f-fac7d34f7923",
+  "id": "t13-q141-r2-5326b6a3ab22",
   "testId": "test-13",
   "number": 141,
   "part": 6,
-  "groupId": "t13-r-p6-03",
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
-  "difficulty": "intermediate",
+  "difficulty": "advanced",
   "tags": [
     "text-completion",
     "business"
@@ -17,50 +15,38 @@
   "options": [
     {
       "id": "A",
-      "text": "final",
-      "zh": "已定稿",
-      "whyZh": "final 指已確定，原文要求試兩次轉身，尚不能結案。"
+      "text": "Submit the order with the standard right insole because Mina completed two comfortable turns.",
+      "zh": "用標準右鞋墊送出訂單，因為米娜已舒服地完成兩次轉身。",
+      "whyZh": "第二次轉身用的是薄鞋墊，不能和第一次的標準鞋墊合併計次。"
     },
     {
       "id": "B",
-      "text": "inactive",
-      "zh": "非啟用；不再進行",
-      "whyZh": "inactive 通常指不再進行或暫時停用；這項試穿還在等待必要的確認，並非已停做。"
+      "text": "Require two new turns with the standard right insole because Mina tried a different setup in between.",
+      "zh": "請米娜用標準右鞋墊重新做兩次轉身，因為她中途試穿了不同的搭配。",
+      "whyZh": "試穿別的搭配不會取消先前符合條件的轉身；第一次用了選定的標準鞋墊，仍可計入。"
     },
     {
       "id": "C",
-      "text": "canceled",
-      "zh": "已取消",
-      "whyZh": "canceled 表示案件被取消；舞者仍可做兩次轉身並完成確認。"
+      "text": "Require one more turn with the thin right insole because it was the last setup Mina tried.",
+      "zh": "請米娜用右腳薄鞋墊再轉身一次，因為那是她最後試穿的搭配。",
+      "whyZh": "最後試穿的是薄鞋墊，但米娜選的是換回標準鞋墊；不能把最後測試的搭配當成最後選定的搭配。"
     },
     {
       "id": "D",
-      "text": "provisional",
-      "zh": "暫定；待確認",
-      "whyZh": "provisional 表示暫定，等完整測試後才確定，符合不能只看第一步或單腳的要求。"
+      "text": "Require one more comfortable turn with the standard right insole before submitting the order.",
+      "zh": "請米娜用標準右鞋墊再舒服地完成一次轉身，才送出訂單。",
+      "whyZh": "米娜選回標準鞋墊。第一次確實用的是標準鞋墊，雖然原紀錄抄錯，仍可計入；薄鞋墊那次不能計入，所以只差一次。"
     }
   ],
   "answer": "D",
-  "explanationZh": "provisional 表示暫定，等完整測試後才確定，符合不能只看第一步或單腳的要求。",
-  "evidence": "try two turns in the trial pair / neither a comfortable first step nor a decision about only one foot is enough to close it",
-  "evidenceSpans": [
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 945,
-      "endChar": 976,
-      "exactQuote": "try two turns in the trial pair"
-    },
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 1074,
-      "endChar": 1163,
-      "exactQuote": "neither a comfortable first step nor a decision about only one foot is enough to close it"
-    }
-  ],
+  "explanationZh": "米娜選回標準鞋墊。第一次確實用的是標準鞋墊，雖然原紀錄抄錯，仍可計入；薄鞋墊那次不能計入，所以只差一次。",
+  "evidence": "count two comfortable turns with the exact shoes and insoles the dancer selects / a trial of a different setup does not erase a turn made with the selected pair / Mina’s first comfortable turn used a standard right insole / Mina then made a comfortable turn with a thin right insole but asked for the standard one to go back in.",
   "vocabulary": [
     {
-      "term": "provisional",
-      "zh": "暫定；待確認"
+      "term": "consecutive",
+      "zh": "連續的",
+      "note": "數次試穿之間若沒有穿插其他配置，才算連續。"
     }
-  ]
+  ],
+  "groupId": "t13-r-p6-03"
 }

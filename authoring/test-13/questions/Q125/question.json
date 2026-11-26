@@ -1,52 +1,51 @@
 {
-  "id": "t13-q125",
-  "uuid": "5e0598a0-0906-5291-9076-c10838aa4a0d",
+  "id": "t13-q125-r2-5511800ebaf9",
   "testId": "test-13",
   "number": 125,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
   "difficulty": "advanced",
   "tags": [
     "incomplete-sentence",
     "business"
   ],
-  "prompt": "The help desk reduced its response-time target from ten minutes to six on July 1. All tickets received on or after that date use the six-minute target; June tickets use the old target even if their reports are prepared in July. In other words, the new target is not applied _____.",
-  "promptZh": "服務台在七月一日把回應時間目標從十分鐘縮短到六分鐘。當日及之後收到的工單一律以六分鐘為目標；六月的工單仍適用舊目標，即使報表是七月才製作。換言之，新目標不會追溯適用。",
+  "prompt": "The help desk applies a six-minute response limit to tickets received on or after July 1, and a ten-minute limit to earlier tickets. An automatic acknowledgment stops neither clock; the first reply signed by a staff member stops it even if that reply asks for more information. A ticket received on June 30 at 8:00 got an automatic message at 8:04 and a signed question at 8:08, so the report should _____.",
+  "promptZh": "服務台對 7 月 1 日起收到的案件採六分鐘回覆時限，較早收到的案件採十分鐘時限。自動確認訊息不能停止計時；第一封有員工署名的回覆即停止計時，即使內容只是要求補充資料。某案在 6 月 30 日 8:00 收到，8:04 發出自動訊息，8:08 發出署名詢問，因此報表應_____。",
   "options": [
     {
       "id": "A",
-      "text": "prospectively",
-      "zh": "向未來生效",
-      "whyZh": "prospectively 表示向未來適用。題幹明說新目標適用於七月一日當天和之後收到的工單，因此不能說它不向未來適用。"
+      "text": "record an on-time four-minute reply under the old limit",
+      "zh": "依舊時限登記四分鐘、準時回覆",
+      "whyZh": "舊時限正確，但 8:04 的自動訊息不停止計時。"
     },
     {
       "id": "B",
-      "text": "uniformly to July tickets",
-      "zh": "一致地適用於七月工單",
-      "whyZh": "uniformly to July tickets 指一致地用於七月收到的工單；題幹說 all tickets，沒有排除個別七月工單。"
+      "text": "record a late eight-minute reply under the new limit",
+      "zh": "依新時限登記八分鐘、逾時回覆",
+      "whyZh": "8:08 的人工回覆時間算對，但案件適用舊限。"
     },
     {
       "id": "C",
-      "text": "retroactively",
-      "zh": "溯及既往",
-      "whyZh": "政策以收到工單的日期為準。六月收到的工單不因七月製表而改用新目標，所以六分鐘的新標準不會套用到生效前收到的工單。"
+      "text": "leave the clock running because the signed reply did not resolve the issue",
+      "zh": "署名信未解決問題，應繼續計時",
+      "whyZh": "停止計時取決於首封人工署名回覆，非是否解決或結案。"
     },
     {
       "id": "D",
-      "text": "from its effective date",
-      "zh": "自生效日起",
-      "whyZh": "from its effective date 指自生效日起。七月一日當天收到的工單就適用新目標，符合生效日當日起算，而非延後到別的日期。"
+      "text": "record an on-time eight-minute reply under the old limit",
+      "zh": "依舊時限登記八分鐘、準時回覆",
+      "whyZh": "舊案適用十分鐘；8:08 有員工署名回覆，八分鐘未超時。"
     }
   ],
-  "answer": "C",
-  "explanationZh": "政策以收到工單的日期為準。六月收到的工單不因七月製表而改用新目標，所以六分鐘的新標準不會套用到生效前收到的工單。",
-  "evidence": "The help desk reduced its response-time target from ten minutes to six on July 1. All tickets received on or after that date use the six-minute target; June tickets use the old target even if their reports are prepared in July. In other words, the new target is not applied retroactively.",
-  "evidenceZh": "服務台在七月一日把回應時間目標從十分鐘縮短到六分鐘。當日及之後收到的工單一律以六分鐘為目標；六月的工單仍適用舊目標，即使報表是七月才製作。換言之，新目標不會追溯適用。",
+  "answer": "D",
+  "explanationZh": "舊案適用十分鐘；8:08 有員工署名回覆，八分鐘未超時。",
+  "evidence": "a ten-minute limit to earlier tickets / An automatic acknowledgment stops neither clock / the first reply signed by a staff member stops it / a signed question at 8:08 / received on June 30 at 8:00",
   "vocabulary": [
     {
-      "term": "retroactively",
-      "zh": "溯及既往"
+      "term": "automatic acknowledgment",
+      "zh": "自動收件確認",
+      "note": "客服系統可自動發送此類訊息，告知使用者案件已送達。"
     }
   ]
 }

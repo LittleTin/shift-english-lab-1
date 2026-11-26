@@ -1,52 +1,51 @@
 {
-  "id": "t13-q126",
-  "uuid": "f71c0d23-e465-567a-a44e-bb3a2cf848e6",
+  "id": "t13-q126-r2-8e3aa5ed2c91",
   "testId": "test-13",
   "number": 126,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
   "difficulty": "intermediate",
   "tags": [
     "incomplete-sentence",
     "daily"
   ],
-  "prompt": "The neighborhood seed exchange has opened a second table for people who registered online. An email acknowledgment is _____ proof of registration; there is no need to print the numbered form attached to it.",
-  "promptZh": "社區種子交換活動加開一張桌子給已在網路上登記的人。登記確認信就足以作為登記證明；不必把附件中有編號的表格印出來。",
+  "prompt": "The seed exchange keeps early and evening places on separate lists. A confirmation email proves the registration only for the time it names. Yun has an evening confirmation and an early-time request marked “waitlisted.” The desk can lend tools only after a time has been confirmed. Yun's email is therefore _____ for borrowing tools at the early session.",
+  "promptZh": "種子交換活動把早場與晚場分開登記。確認信只能證明信中時段已完成登記。允收到晚場確認信，而他的早場申請仍標示為「候補」。櫃檯須等時段確認後才能借出工具。因此，針對在早場借用工具，允的確認信_____。",
   "options": [
     {
       "id": "A",
-      "text": "adjacent",
-      "zh": "相鄰的",
-      "whyZh": "adjacent 指兩件物品或兩個位置相鄰；本句問的是郵件本身是否能證明已登記，不是郵件和表格的位置關係。"
+      "text": "not sufficient evidence",
+      "zh": "不足以證明他有資格",
+      "whyZh": "晚場確認信不證明早場已登記成功，候補也不等於確認，因此無法據此在早場借工具。"
     },
     {
       "id": "B",
-      "text": "sufficient",
-      "zh": "足夠的",
-      "whyZh": "不用印表格表示郵件本身就符合要求；sufficient proof 指足以作為證明。"
+      "text": "sufficient if shown with the waitlist request",
+      "zh": "和候補申請一併出示就已足夠",
+      "whyZh": "早場候補申請仍不是早場確認；加上晚場確認信也不會取得早場資格。"
     },
     {
       "id": "C",
-      "text": "temporary",
-      "zh": "暫時的",
-      "whyZh": "temporary 表示只是暫時有效；原文沒有說之後須再補印表單或交正式證明。"
+      "text": "valid proof of an early booking",
+      "zh": "是早場預約的有效證明",
+      "whyZh": "已確認的是晚場，不是早場。"
     },
     {
       "id": "D",
-      "text": "exclusive",
-      "zh": "排他的；專屬的",
-      "whyZh": "exclusive 可能暗示只有郵件能證明，但原文只說郵件就夠，未排除其他驗證方式。"
+      "text": "a replacement for an early confirmation",
+      "zh": "可代替早場確認信",
+      "whyZh": "活動時段分開登記，晚場信不能代替早場確認。"
     }
   ],
-  "answer": "B",
-  "explanationZh": "不用印表格表示郵件本身就符合要求；sufficient proof 指足以作為證明。",
-  "evidence": "The neighborhood seed exchange has opened a second table for people who registered online. An email acknowledgment is sufficient proof of registration; there is no need to print the numbered form attached to it.",
-  "evidenceZh": "社區種子交換活動加開一張桌子給已在網路上登記的人。登記確認信就足以作為登記證明；不必把附件中有編號的表格印出來。",
+  "answer": "A",
+  "explanationZh": "晚場確認信不證明早場已登記成功，候補也不等於確認，因此無法據此在早場借工具。",
+  "evidence": "A confirmation email proves the registration only for the time it names. / Yun has an evening confirmation and an early-time request marked “waitlisted.” / The desk can lend tools only after a time has been confirmed.",
   "vocabulary": [
     {
-      "term": "sufficient",
-      "zh": "足夠的"
+      "term": "waitlisted",
+      "zh": "列入候補名單",
+      "note": "報名狀態用語，表示仍在等候名額，可與 confirmed 對照。"
     }
   ]
 }

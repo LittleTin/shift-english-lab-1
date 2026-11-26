@@ -1,73 +1,57 @@
 {
-  "id": "t13-q155",
-  "uuid": "1a068098-8e6b-586f-a256-4a751a1c8cb7",
+  "id": "t13-q155-r2-3e4acc494dc0",
   "testId": "test-13",
   "number": 155,
   "part": 7,
-  "groupId": "t13-r-p7-03",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
   "difficulty": "advanced",
   "tags": [
     "reading-comprehension",
-    "double-passage",
     "daily"
   ],
-  "prompt": "Which choice fits both the listening rule and Mina's stated credit preference for the gathering?",
-  "promptZh": "哪個做法同時符合聆聽規定，也符合米娜這次聚會希望採用的署名？",
+  "prompt": "Which opening should the host use for “Rain on the Balcony”?",
+  "promptZh": "〈陽台上的雨〉用哪段開場最適合？",
   "options": [
     {
       "id": "A",
-      "text": "Play the interview's opening minute and credit Mina R. from the newest card.",
-      "zh": "播訪談的開頭一分鐘，依最新卡署名 Mina R.。",
-      "whyZh": "Mina R. 符合署名偏好，但訪談任何片段都不能公開播，兩個條件只滿足一個。"
+      "text": "Read her credit as listed in the cabinet index. “She went out to collect her own washing. Listen for what made that job wait.”",
+      "zh": "照故事櫃索引唸出她的署名。「她出去收自己的衣服。請留意是什麼讓她暫時擱下這件事。」",
+      "whyZh": "情節開端正確，也沒有先揭露轉折。但索引可以保留全名是為了方便志工查找；聚會口頭署名須用最新卡上的 Mina R.。"
     },
     {
       "id": "B",
-      "text": "Play “Rain on the Balcony” and use her full name shown on the older card.",
-      "zh": "播〈陽台上的雨〉，並用舊卡上的全名。",
-      "whyZh": "這段錄音可以播放，但用舊卡全名不符合她目前的偏好。"
+      "text": "Say ‘Mina R.’ “She stepped out intending to bring in both households’ washing. Listen for how that plan changed once she was outside.”",
+      "zh": "唸出「Mina R.」。「她走出去，打算把自己和鄰居的衣物都收進來。請留意她到了外面後，這個打算如何改變。」",
+      "whyZh": "口頭署名正確，也沒有說出讓她改變打算的事。但出門前她只打算收自己的衣服，不是兩家的。為鄰居伸手幫忙是後來才做的決定。"
     },
     {
       "id": "C",
-      "text": "Play the full interview and list both speakers by first name.",
-      "zh": "播整段訪談，兩位講述者只寫名字。",
-      "whyZh": "長訪談尚未取得第二位講述者的聆聽同意，改用名字也不能解除限制。"
+      "text": "Say ‘Mina R.’ “She went out to collect her own washing. Listen for what made that job wait.”",
+      "zh": "唸出「Mina R.」。「她出去收自己的衣服。請留意是什麼讓她暫時擱下這件事。」",
+      "whyZh": "用的是最新卡指定在聚會使用的署名。先交代她本來要做的事，卻沒有說出她看到鄰居遇到困難才擱下自己的工作，符合主持人要留給聽眾的問題。"
     },
     {
       "id": "D",
-      "text": "Play “Rain on the Balcony” and use the credit Mina R.",
-      "zh": "播〈陽台上的雨〉，並署名 Mina R.。",
-      "whyZh": "另一段錄音只有米娜，最新具日期的卡允許公開播放；她也要求不要用全名，最新版提供 Mina R.。"
+      "text": "Say ‘Mina R.’ “She went out to collect her own washing, then reached across to help a neighbor with a sheet. Listen for which end she held.”",
+      "zh": "唸出「Mina R.」。「她出去收自己的衣物，接著伸手幫鄰居拉住床單。請留意她扶住的是哪一端。」",
+      "whyZh": "署名、起初要做的事都對，但也公開了她改變行動去幫鄰居，並把聽眾要思考的問題換成床單的哪一端，不再聚焦原本的轉折。"
     }
   ],
-  "answer": "D",
-  "explanationZh": "另一段錄音只有米娜，最新具日期的卡允許公開播放；她也要求不要用全名，最新版提供 Mina R.。",
-  "evidence": "Her dated card for that recording says “play aloud.” / The older card shows it, but the latest one shows Mina R.",
-  "evidenceSpans": [
-    {
-      "documentId": "doc2",
-      "sourceField": "passage",
-      "startChar": 1539,
-      "endChar": 1591,
-      "documentStartChar": 451,
-      "documentEndChar": 503,
-      "exactQuote": "Her dated card for that recording says “play aloud.”"
-    },
-    {
-      "documentId": "doc2",
-      "sourceField": "passage",
-      "startChar": 1695,
-      "endChar": 1752,
-      "documentStartChar": 607,
-      "documentEndChar": 664,
-      "exactQuote": "The older card shows it, but the latest one shows Mina R."
-    }
-  ],
+  "answer": "C",
+  "explanationZh": "用的是最新卡指定在聚會使用的署名。先交代她本來要做的事，卻沒有說出她看到鄰居遇到困難才擱下自己的工作，符合主持人要留給聽眾的問題。",
+  "evidence": "about a neighbor changing a plan, not about the weather. / but leave them to notice what changed the plan. / Mina asked not to use her full name at this gathering. / the latest card gives the credit as Mina R. / She had planned to bring in her own clothes. / Then she saw her new neighbor trying to pull in a long sheet / It is all right to keep the full name in the cabinet’s index / read the credit for this gathering as it appears on the latest card.",
   "vocabulary": [
     {
-      "term": "credited",
-      "zh": "列名表彰；署名"
+      "term": "cabinet index",
+      "zh": "故事櫃索引",
+      "note": "這裡是志工查找錄音的清單，與聚會中要唸出的講述者署名不同。"
+    },
+    {
+      "term": "credit",
+      "zh": "署名；註明講述者",
+      "note": "在錄音與節目語境中，動詞 credit 指註明誰是講述者；當名詞時指對外使用的署名。"
     }
-  ]
+  ],
+  "groupId": "t13-r-q153-156"
 }

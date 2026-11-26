@@ -1,73 +1,52 @@
 {
-  "id": "t13-q149",
-  "uuid": "498a5678-a3a9-5d07-b254-e0a1cc60fcbe",
+  "id": "t13-q149-r2-09ae039bc13c",
   "testId": "test-13",
   "number": 149,
   "part": 7,
-  "groupId": "t13-r-p7-01",
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
-  "difficulty": "intermediate",
+  "difficulty": "advanced",
   "tags": [
     "reading-comprehension",
-    "single-passage",
     "business"
   ],
-  "prompt": "What would make a photograph unacceptable for either placement?",
-  "promptZh": "哪種情況會讓照片不符合任一實習的要求？",
+  "prompt": "Which pair of attachments would support Nell’s note about the hinge change?",
+  "promptZh": "哪一組附件最能支持妮爾對鉸鏈變更的說明？",
   "options": [
     {
       "id": "A",
-      "text": "The picture shows a test joint made from scraps.",
-      "zh": "照片呈現用邊角料做的接合測試。",
-      "whyZh": "邊角料做的接合測試是公告列出的合格例子。"
+      "text": "The approved deeper-shelf drawing, plus a photograph of her test door shut with the block in place.",
+      "zh": "核准的較深層板圖，以及她的試驗門關著、木塊放在定位的照片。",
+      "whyZh": "圖面確實是實際改鉸鏈前的依據。可是關門的照片不能顯示開門時，門是否避開了代表管子的木塊。"
     },
     {
       "id": "B",
-      "text": "The applicant photographed a divider rather than a cabinet.",
-      "zh": "申請人拍的是隔板而不是櫃子。",
-      "whyZh": "照片不需要是完整櫃子，裝妥的隔板可以證明個人作品。"
+      "text": "The approved deeper-shelf drawing, plus a photograph of her test door open past the block.",
+      "zh": "核准的較深層板圖，以及她的試驗門打開、避開木塊的照片。",
+      "whyZh": "核准的圖是撞到管子、必須改鉸鏈前使用的方案。自己搭的框架在與真實管子相同的距離放木塊，照片又顯示門打開時能避開它。"
     },
     {
       "id": "C",
-      "text": "The applicant kept the original work instead of bringing it to the interview.",
-      "zh": "申請人自行保留實物，沒有帶去面試。",
-      "whyZh": "第一次面試本來就不用帶實物，保留實物不影響照片合格。"
+      "text": "Her pencil tracing with the hinge moved to the other side, plus a photograph of her test door open past the block.",
+      "zh": "她用鉛筆把鉸鏈畫到另一側的描圖，以及她的試驗門打開、避開木塊的照片。",
+      "whyZh": "開門測試照片能證明改善，但鉛筆描圖的方案沒有採用，不是實際造成開門碰管子、後來必須重新調整的方案。"
     },
     {
       "id": "D",
-      "text": "The work pictured was actually completed by someone else.",
-      "zh": "照片裡的作品實際上是別人完成的。",
-      "whyZh": "兩種實習都要求自己完成的作品；即使自己的老師幫忙描述，別人的作品照仍不合格。"
+      "text": "The initial shallow-shelf sketch, plus a photograph of her test door open on a bench with nothing next to the frame.",
+      "zh": "最初的淺層板草圖，以及她的試驗門在旁邊沒有障礙物的工作臺上打開的照片。",
+      "whyZh": "淺層板是更早的版本，不是改鉸鏈前所依據的版本。沒有重現管子所占的位置，照片也不能顯示門有沒有避開它。"
     }
   ],
-  "answer": "D",
-  "explanationZh": "兩種實習都要求自己完成的作品；即使自己的老師幫忙描述，別人的作品照仍不合格。",
-  "evidence": "scrap pieces used to test a joint can provide the evidence / A photograph of work done by a classmate does not meet the requirement",
-  "evidenceSpans": [
-    {
-      "documentId": "doc1",
-      "sourceField": "passage",
-      "startChar": 671,
-      "endChar": 729,
-      "documentStartChar": 606,
-      "documentEndChar": 664,
-      "exactQuote": "scrap pieces used to test a joint can provide the evidence"
-    },
-    {
-      "documentId": "doc1",
-      "sourceField": "passage",
-      "startChar": 731,
-      "endChar": 801,
-      "documentStartChar": 666,
-      "documentEndChar": 736,
-      "exactQuote": "A photograph of work done by a classmate does not meet the requirement"
-    }
-  ],
+  "answer": "B",
+  "explanationZh": "核准的圖是撞到管子、必須改鉸鏈前使用的方案。自己搭的框架在與真實管子相同的距離放木塊，照片又顯示門打開時能避開它。",
+  "evidence": "For the plan-adjustment placement, include an earlier drawing / It must show the part in the position that made the difference, with the same obstruction or limit that the customer has. / send the drawing that shows the plan immediately before the change you describe. / She put that idea aside without using it. / When she tried the approved layout beside the customer’s wall pipe, the open door hit the pipe. / Moving the hinge inward let the door clear it. / The block sits at the same distance from the cabinet as the real pipe.",
   "vocabulary": [
     {
       "term": "scrap pieces",
-      "zh": "邊料"
+      "zh": "剩餘邊料",
+      "note": "木工可用切割後的小塊材料試接合，而不用耗用正式板材。"
     }
-  ]
+  ],
+  "groupId": "t13-r-q147-149"
 }

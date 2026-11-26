@@ -1,52 +1,51 @@
 {
-  "id": "t13-q102",
-  "uuid": "b427bfd9-08b4-57ea-a36e-be26c236e79f",
+  "id": "t13-q102-r2-3ed889746be1",
   "testId": "test-13",
   "number": 102,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
-  "difficulty": "foundation",
+  "difficulty": "intermediate",
   "tags": [
     "incomplete-sentence",
     "daily"
   ],
-  "prompt": "Please write _____ name on the paper tag before leaving your helmet at the skating rink's cloakroom.",
-  "promptZh": "把安全帽留在溜冰場的寄物處之前，請在紙標籤上寫下你的姓名。",
+  "prompt": "The skating rink writes the name of the person leaving a helmet on its claim tag, then records the person who actually picks it up in a separate log. Rosa left her nephew's helmet, and he collected it himself. Both records show the same claim number. The difference between the two names _____, rather than showing that the helmet changed owners.",
+  "promptZh": "溜冰場在認領牌上寫下寄放安全帽的人名，再用另一份紀錄登記實際領取的人。羅莎替外甥寄放安全帽，之後由外甥親自領回。兩份紀錄的認領號碼相同。兩份紀錄上的姓名不同，_____，並不表示安全帽換了主人。",
   "options": [
     {
       "id": "A",
-      "text": "your",
-      "zh": "你的（接名詞）",
-      "whyZh": "your 放在 name 前構成 your name，指寄放者本人的姓名。"
+      "text": "calls the claim number into question",
+      "zh": "使認領號碼的正確性可疑",
+      "whyZh": "兩份紀錄的號碼相同；姓名不同是因為各自登記的對象不同，不表示認領號碼有誤。"
     },
     {
       "id": "B",
-      "text": "you",
-      "zh": "你",
-      "whyZh": "you 是人稱代名詞，不能直接放在 name 前表示姓名的歸屬。"
+      "text": "implies a change to the original tag",
+      "zh": "表示原認領牌被改過",
+      "whyZh": "一份登記寄放者，一份登記領取者，不需更改原認領牌才能出現兩個名字。"
     },
     {
       "id": "C",
-      "text": "yours",
-      "zh": "你的（代替名詞）",
-      "whyZh": "yours 可單獨表示「屬於你的東西」，不能再接 name；要說 your name。"
+      "text": "reflects who performed each action",
+      "zh": "反映兩個動作各由誰完成",
+      "whyZh": "羅莎寄放，外甥領取；名字分別對應兩個動作，同一認領號碼將兩份紀錄連在一起。"
     },
     {
       "id": "D",
-      "text": "yourself",
-      "zh": "你自己",
-      "whyZh": "yourself 可指「你自己」，不是限定後方名詞 name 的所有格詞。"
+      "text": "identifies the person who owns the helmet",
+      "zh": "指出安全帽的主人是誰",
+      "whyZh": "兩份紀錄記的是誰寄放、誰領取；即使情境已說安全帽屬於外甥，兩筆姓名的差異本身並不證明誰是主人。"
     }
   ],
-  "answer": "A",
-  "explanationZh": "your 放在 name 前構成 your name，指寄放者本人的姓名。",
-  "evidence": "Please write your name on the paper tag before leaving your helmet at the skating rink's cloakroom.",
-  "evidenceZh": "把安全帽留在溜冰場的寄物處之前，請在紙標籤上寫下你的姓名。",
+  "answer": "C",
+  "explanationZh": "羅莎寄放，外甥領取；名字分別對應兩個動作，同一認領號碼將兩份紀錄連在一起。",
+  "evidence": "writes the name of the person leaving a helmet on its claim tag / records the person who actually picks it up in a separate log / Rosa left her nephew's helmet, and he collected it himself. / Both records show the same claim number.",
   "vocabulary": [
     {
-      "term": "your",
-      "zh": "你的（接名詞）"
+      "term": "claim tag",
+      "zh": "領取憑籤",
+      "note": "可用於寄放或失物領取，常印有供核對的編號。"
     }
   ]
 }

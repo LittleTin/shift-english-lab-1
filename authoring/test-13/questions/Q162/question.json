@@ -1,0 +1,52 @@
+{
+  "id": "t13-q162",
+  "testId": "test-13",
+  "number": 162,
+  "part": 7,
+  "revision": 1,
+  "topic": "manufacturing",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "manufacturing"
+  ],
+  "prompt": "Which request correctly covers the whole lift trial?",
+  "promptZh": "哪份申請能涵蓋整次升降試驗？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Request AX for the entire trial; K44 was tested before it went live.",
+      "zh": "整次試驗只申請 AX；K44 上線前已通過測試。",
+      "whyZh": "K44 開始記錄時使用 Q0。通過測試不會自動採用 AX，只列 AX 會漏掉後半段。"
+    },
+    {
+      "id": "B",
+      "text": "List AX and Q0 separately; use the observed 10:19 handover to distinguish the trial segments.",
+      "zh": "分開列出 AX 和 Q0，並以親眼確認的 10:19 交接區分兩段試驗紀錄。",
+      "whyZh": "第 1 段規定備機用不同代碼時須保留兩段並列出兩碼。第 2 段證明 AX 和 Q0 實際都用於試驗，而且訊號在 10:19 切換。"
+    },
+    {
+      "id": "C",
+      "text": "List AX and Q0 separately; split the trial at 10:12, when the spare passed its test.",
+      "zh": "分開列出 AX 和 Q0，以備機通過測試的 10:12 為分界。",
+      "whyZh": "10:12 是工作檯測試的時間，只代表備機已準備好，並不證明當時已開始記錄正式試驗。"
+    },
+    {
+      "id": "D",
+      "text": "Rename the AX recording to Q0 and request the merged trial under the spare’s label.",
+      "zh": "把 AX 紀錄改名成 Q0，再用備機的代碼申請合併後的試驗紀錄。",
+      "whyZh": "第 1 段明確要求保留原始紀錄及原代碼，不可把 AX 改成 Q0 來合併。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "第 1 段規定備機用不同代碼時須保留兩段並列出兩碼。第 2 段證明 AX 和 Q0 實際都用於試驗，而且訊號在 10:19 切換。",
+  "evidence": "keep the recordings separate and list both codes on the request / saw the signal switch to it at 10:19 / K44’s display showed Q0",
+  "vocabulary": [
+    {
+      "term": "handover",
+      "zh": "交接；切換",
+      "note": "在設備語境中，handover 指訊號或記錄工作正式從原設備切換到備機，不是備機測試完成。"
+    }
+  ],
+  "groupId": "t13-r-q162-164"
+}

@@ -1,52 +1,51 @@
 {
-  "id": "t13-q109",
-  "uuid": "2587f01b-38c5-5adf-bb6c-e9e3c03265f9",
+  "id": "t13-q109-r2-5341c4bde19e",
   "testId": "test-13",
   "number": 109,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
   "difficulty": "intermediate",
   "tags": [
     "incomplete-sentence",
     "daily"
   ],
-  "prompt": "By adding back the four places set aside for orientation last month, the climbing club will _____ the class to its usual capacity. No new places will be created beyond that earlier limit.",
-  "promptZh": "上個月攀岩社保留了四個名額做入門說明，現在把這四個名額加回來，就能讓課程名額恢復到平常的上限。不會增設超出原上限的名額。",
+  "prompt": "The climbing club’s notice said, “The last two places were not reserved for beginners only.” Its coordinator then confirmed that a returning member with a valid booking had used one of those places; a beginner who arrived without booking had been turned away. Taken together, the notice and the coordinator’s account indicate that _____.",
+  "promptZh": "攀岩社的公告寫道：「最後兩席不只保留給初學者。」協調員隨後確認，一名預約有效的舊會員用了其中一席；一名沒預約就到場的初學者則被拒。綜合公告與協調員的說法可知，_____。",
   "options": [
     {
       "id": "A",
-      "text": "reassign",
-      "zh": "重新分配；改派",
-      "whyZh": "reassign 指把人員、工作或物品改分配給另一對象。句中沒有把課程改派給別人；to its usual capacity 指原有名額上限，不是改派的對象。"
+      "text": "the places were not set aside for bookings of any kind, although a returning member happened to have booked",
+      "zh": "這兩席沒有保留給任何預約，只是剛好有位舊會員事先預約",
+      "whyZh": "不能將 not 的作用讀成「沒有保留座位」；上下文否定的是「只限初學者」。"
     },
     {
       "id": "B",
-      "text": "restrict",
-      "zh": "限制",
-      "whyZh": "restrict 是加以限制，本來已有上限；現在是把原先暫時減少的可用名額加回，不是進一步縮限課程。"
+      "text": "the places were still exclusively for beginners, but one of them was opened to returning members after all bookings ended",
+      "zh": "這兩席仍僅限初學者，只是預約全部結束後才將其中一席開放給舊會員",
+      "whyZh": "未說預約已結束或後來才放寬。舊會員用的是有效預約。"
     },
     {
       "id": "C",
-      "text": "restore",
-      "zh": "恢復",
-      "whyZh": "adding back 說明是補回暫留名額，usual capacity 和 earlier limit 表示以前的容量；restore 表示恢復既有狀態，而不是擴充。"
+      "text": "beginners could claim the places without booking, but returning members had to book them",
+      "zh": "初學者可不經預約取得這兩席，舊會員則必須事先預約",
+      "whyZh": "未預約的初學者被拒，不能從非排他推論初學者免預約。"
     },
     {
       "id": "D",
-      "text": "transfer",
-      "zh": "轉移",
-      "whyZh": "transfer 是把某物移轉到另一對象或位置；這裡描述課程容量回到本來的水準，不是把課程轉給他人。"
+      "text": "having a booking could qualify a returning member as well; beginner status alone did not secure a place",
+      "zh": "有預約的舊會員也有資格；僅有初學者身分不足以取得一席",
+      "whyZh": "only 限定適用的人；舊會員有有效預約也取得一席，而初學者身分本身不足。"
     }
   ],
-  "answer": "C",
-  "explanationZh": "adding back 說明是補回暫留名額，usual capacity 和 earlier limit 表示以前的容量；restore 表示恢復既有狀態，而不是擴充。",
-  "evidence": "By adding back the four places set aside for orientation last month, the climbing club will restore the class to its usual capacity. No new places will be created beyond that earlier limit.",
-  "evidenceZh": "上個月攀岩社保留了四個名額做入門說明，現在把這四個名額加回來，就能讓課程名額恢復到平常的上限。不會增設超出原上限的名額。",
+  "answer": "D",
+  "explanationZh": "only 限定適用的人；舊會員有有效預約也取得一席，而初學者身分本身不足。",
+  "evidence": "were not reserved for beginners only / a returning member with a valid booking / a beginner who arrived without booking had been turned away",
   "vocabulary": [
     {
-      "term": "restore",
-      "zh": "恢復"
+      "term": "turned away",
+      "zh": "被拒於門外；未獲接納",
+      "note": "可指有人到場後因名額或資格等原因沒能進入。"
     }
   ]
 }

@@ -1,0 +1,52 @@
+{
+  "id": "t13-q163",
+  "testId": "test-13",
+  "number": 163,
+  "part": 7,
+  "revision": 1,
+  "topic": "manufacturing",
+  "difficulty": "foundation",
+  "tags": [
+    "reading-comprehension",
+    "manufacturing"
+  ],
+  "prompt": "Which material should be excluded from the requested record even though the same logger and code were used?",
+  "promptZh": "哪些內容即使使用同一部記錄器和同一個代碼，也應排除在申請範圍之外？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The readings that begin with “Raise 5 cm” at 10:46.",
+      "zh": "10:46 以「升高 5 公分」開始的讀數。",
+      "whyZh": "第 3 段指出 10:46 是另一項校正開始記錄的時間。使用同一代碼不會把校正變成正式試驗。"
+    },
+    {
+      "id": "B",
+      "text": "The final lift movements before the 10:43 end of the trial.",
+      "zh": "10:43 試驗結束前最後幾個升降動作。",
+      "whyZh": "這些是正式試驗的最後一段動作，並非試驗後的校正。"
+    },
+    {
+      "id": "C",
+      "text": "All readings after K44 arrived at the loading bay.",
+      "zh": "K44 抵達裝卸區之後的所有讀數。",
+      "whyZh": "備機到場後仍記錄了正式試驗，不能只因更換設備就捨棄這部分。"
+    },
+    {
+      "id": "D",
+      "text": "Lift movements logged as the lift restarted after the logger handover.",
+      "zh": "記錄器交接後，升降設備恢復運轉時記下的升降動作。",
+      "whyZh": "第 2 段明說升降設備在交接後重新運轉，直到第 3 段記的 10:43 才結束正式試驗。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "第 3 段指出 10:46 是另一項校正開始記錄的時間。使用同一代碼不會把校正變成正式試驗。",
+  "evidence": "The final lift movement of the trial ended at 10:43. / At 10:46 I logged the first movement of that calibration / Calibration and bench checks do not belong in the trial record",
+  "vocabulary": [
+    {
+      "term": "calibration",
+      "zh": "校正",
+      "note": "此處是試驗結束後另行做的校正，紀錄可能沿用設備與代碼，但用途不同。"
+    }
+  ],
+  "groupId": "t13-r-q162-164"
+}

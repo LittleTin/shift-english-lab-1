@@ -1,52 +1,51 @@
 {
-  "id": "t13-q121",
-  "uuid": "80b53ea4-d5bb-5259-88bf-79ed044ca7ea",
+  "id": "t13-q121-r2-f3787cc179fa",
   "testId": "test-13",
   "number": 121,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
   "difficulty": "intermediate",
   "tags": [
     "incomplete-sentence",
     "business"
   ],
-  "prompt": "The translation vendor has translated _____ all the error messages: only two of them, both in the old setup wizard, are still in English. The localized menu is already complete.",
-  "promptZh": "翻譯廠商幾乎翻完了所有錯誤訊息，只有兩則仍是英文，且都在舊版設定精靈裡。選單翻譯已全數完成。",
+  "prompt": "The French menu and wizard use the same translation file. Changing a line in that file affects every screen that calls the line by its key. The key for “Retry” also appears on a menu button that must keep that wording, but the new wizard asks users to resume where they stopped. The vendor should _____ before adding the new French wording.",
+  "promptZh": "法文選單和設定精靈共用同一份翻譯檔。更改檔案中的一行，會影響所有以同一個識別碼呼叫該行的畫面。「重試」的識別碼也用在一個必須保留原字樣的選單按鈕上，但新的設定精靈要請使用者從中斷處繼續。翻譯廠商應先_____，再加入新的法文字樣。",
   "options": [
     {
       "id": "A",
-      "text": "rarely",
-      "zh": "很少",
-      "whyZh": "rarely 是頻率，不能修飾 all 表示「除兩則外的總量」；題目不問供應商多久翻譯一次。"
+      "text": "keep the same key and revise its text",
+      "zh": "保留相同識別碼並更改字樣",
+      "whyZh": "共用識別碼會同時改到必須維持原字樣的選單按鈕。"
     },
     {
       "id": "B",
-      "text": "altogether",
-      "zh": "完全地；總共",
-      "whyZh": "altogether 通常表示完全或總計，不表達剩下兩則這項例外；若總量為 all，就不能又有未譯的錯誤訊息。"
+      "text": "assign the wizard its own key",
+      "zh": "為設定精靈另設一個識別碼",
+      "whyZh": "精靈需要不同字樣；另設識別碼才能更新它，而不改到共用識別碼的選單。"
     },
     {
       "id": "C",
-      "text": "actually",
-      "zh": "實際上",
-      "whyZh": "actually 可強調實際狀況，但 actually all 表示確實全部已譯，和仍有兩則英文不合。"
+      "text": "revise the French menu entry before updating the wizard",
+      "zh": "先更改法文選單的字樣，再更新設定精靈",
+      "whyZh": "調整先後順序不能保留選單原字樣，也不會解除識別碼共用。"
     },
     {
       "id": "D",
-      "text": "nearly",
-      "zh": "幾乎",
-      "whyZh": "nearly all 是「幾乎全部」；兩句分別說明錯誤訊息只剩兩則、選單則全部完成，兩者需區分。"
+      "text": "make the menu button call the new wizard wording",
+      "zh": "讓選單按鈕改用設定精靈的新字樣",
+      "whyZh": "選單按鈕的原字樣不得更改。"
     }
   ],
-  "answer": "D",
-  "explanationZh": "nearly all 是「幾乎全部」；兩句分別說明錯誤訊息只剩兩則、選單則全部完成，兩者需區分。",
-  "evidence": "The translation vendor has translated nearly all the error messages: only two of them, both in the old setup wizard, are still in English. The localized menu is already complete.",
-  "evidenceZh": "翻譯廠商幾乎翻完了所有錯誤訊息，只有兩則仍是英文，且都在舊版設定精靈裡。選單翻譯已全數完成。",
+  "answer": "B",
+  "explanationZh": "精靈需要不同字樣；另設識別碼才能更新它，而不改到共用識別碼的選單。",
+  "evidence": "Changing a line in that file affects every screen that calls the line by its key. / a menu button that must keep that wording / the new wizard asks users to resume where they stopped.",
   "vocabulary": [
     {
-      "term": "nearly",
-      "zh": "幾乎"
+      "term": "resume",
+      "zh": "接續；恢復",
+      "note": "可用於先暫停再繼續的流程；並非一定要從頭重做。"
     }
   ]
 }

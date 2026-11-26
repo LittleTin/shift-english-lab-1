@@ -1,16 +1,13 @@
 {
-  "id": "t13-q154",
-  "uuid": "0840d8e7-f1c5-5fed-b961-63df64e28814",
+  "id": "t13-q154-r2-cacf745f6029",
   "testId": "test-13",
   "number": 154,
   "part": 7,
-  "groupId": "t13-r-p7-03",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
-  "difficulty": "advanced",
+  "difficulty": "intermediate",
   "tags": [
     "reading-comprehension",
-    "double-passage",
     "daily"
   ],
   "prompt": "Why does Gita object to playing the first minute of Mina's interview?",
@@ -43,31 +40,13 @@
   ],
   "answer": "A",
   "explanationZh": "阿姨只在講述者欄簽名，未同意聆聽方式；整段錄音都受暫定限制，即使剪出米娜單獨發言也不能公開播。",
-  "evidence": "The provisional mark applies to the entire recording / The aunt left the speaker space signed but did not reply about the listening arrangement",
-  "evidenceSpans": [
-    {
-      "documentId": "doc1",
-      "sourceField": "passage",
-      "startChar": 685,
-      "endChar": 737,
-      "documentStartChar": 631,
-      "documentEndChar": 683,
-      "exactQuote": "The provisional mark applies to the entire recording"
-    },
-    {
-      "documentId": "doc2",
-      "sourceField": "passage",
-      "startChar": 1345,
-      "endChar": 1433,
-      "documentStartChar": 257,
-      "documentEndChar": 345,
-      "exactQuote": "The aunt left the speaker space signed but did not reply about the listening arrangement"
-    }
-  ],
+  "evidence": "Mina’s aunt is only heard briefly near the end / the aunt signed the speaker space but hasn’t agreed to a listening arrangement. / the listening entry is provisional until both speakers agree. / the restriction applies to the whole recording, not just the parts with both voices.",
   "vocabulary": [
     {
       "term": "provisional",
-      "zh": "暫定的"
+      "zh": "暫定的",
+      "note": "表示聆聽安排還沒有定案，須等兩位講述者都同意；不等於已獲准公開播放。"
     }
-  ]
+  ],
+  "groupId": "t13-r-q153-156"
 }

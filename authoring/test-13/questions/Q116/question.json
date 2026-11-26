@@ -1,52 +1,51 @@
 {
-  "id": "t13-q116",
-  "uuid": "14afc354-b1c4-50c5-a7b9-a27a6a0af369",
+  "id": "t13-q116-r2-8e57163d9478",
   "testId": "test-13",
   "number": 116,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
   "difficulty": "advanced",
   "tags": [
     "incomplete-sentence",
     "business"
   ],
-  "prompt": "The same number of service requests was logged citywide in both weeks, but calls fell sharply on the east side and rose by the same amount on the west side. The citywide view therefore _____ the shift in where calls came from; the district view reveals it.",
-  "promptZh": "兩週的全市服務請求總數相同，但東區來電大幅下降，西區來電則增加同樣的件數。因此，全市總覽掩蓋了來電來源地的變化；分區總覽則能看出這項變化。",
+  "prompt": "The dashboard assigns each request to its opening district, but a request closed and then reopened keeps its original district. This week, East logged fewer new requests, West logged more, and an East request reopened from a West office. Citywide new-request volume did not change, so the district chart should _____.",
+  "promptZh": "儀表板按案件首次開立的行政區分類；結案後重開的案件仍保留原開立區。本週東區的新案減少、西區增加，另有一件東區案件由西區辦公室重開。全市新案數沒變，因此各區圖表應_____。",
   "options": [
     {
       "id": "A",
-      "text": "eliminates",
-      "zh": "消除",
-      "whyZh": "eliminates 會表示地區分布的變化不再存在；兩區的來電量確實變動，只是在總覽看不見。"
+      "text": "show no district change and leave the reopened case under East",
+      "zh": "顯示各區無變化，並把重開案件留在東區",
+      "whyZh": "全市合計不變，並不代表各區個別不變。"
     },
     {
       "id": "B",
-      "text": "reproduces",
-      "zh": "重現",
-      "whyZh": "reproduces 表示總覽也呈現同樣的地區變化；不變的全市總數並未呈現這個變化。"
+      "text": "show more new requests in West and fewer in East, and credit the reopening to West",
+      "zh": "顯示西區新案增加、東區減少，並將重開列到西區",
+      "whyZh": "各區新案方向正確，但重開地點不是原開立區。"
     },
     {
       "id": "C",
-      "text": "reverses",
-      "zh": "逆轉",
-      "whyZh": "reverses 指讓變化反向；總覽既未使東區來電回升，也未將西區上升顯示為下降。"
+      "text": "show more new requests in West and fewer in East, and keep the reopened case under East",
+      "zh": "顯示西區新案增加、東區減少，並把重開案件留在東區",
+      "whyZh": "需呈現互相抵銷的分區變化，重開案沿用最初開立區，不新增一筆。"
     },
     {
       "id": "D",
-      "text": "masks",
-      "zh": "掩蓋",
-      "whyZh": "東區減少的件數剛好被西區增加的件數抵銷。合計雖無變動，來電地區卻已轉變；masks 指彙總呈現掩蓋實際分布變化。"
+      "text": "show the district shift and count the reopening as a second new request in East",
+      "zh": "顯示各區變化，並把重開案件算作東區另一件新案",
+      "whyZh": "重開是保留原案，不是再次開立。"
     }
   ],
-  "answer": "D",
-  "explanationZh": "東區減少的件數剛好被西區增加的件數抵銷。合計雖無變動，來電地區卻已轉變；masks 指彙總呈現掩蓋實際分布變化。",
-  "evidence": "The same number of service requests was logged citywide in both weeks, but calls fell sharply on the east side and rose by the same amount on the west side. The citywide view therefore masks the shift in where calls came from; the district view reveals it.",
-  "evidenceZh": "兩週的全市服務請求總數相同，但東區來電大幅下降，西區來電則增加同樣的件數。因此，全市總覽掩蓋了來電來源地的變化；分區總覽則能看出這項變化。",
+  "answer": "C",
+  "explanationZh": "需呈現互相抵銷的分區變化，重開案沿用最初開立區，不新增一筆。",
+  "evidence": "keeps its original district / East logged fewer new requests, West logged more / Citywide new-request volume did not change",
   "vocabulary": [
     {
-      "term": "masks",
-      "zh": "掩蓋"
+      "term": "citywide",
+      "zh": "涵蓋全市的",
+      "note": "可修飾統計量或措施，表示範圍是整座城市，而非單一行政區。"
     }
   ]
 }

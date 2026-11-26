@@ -1,73 +1,57 @@
 {
-  "id": "t13-q153",
-  "uuid": "c6a92f46-094c-54c2-9442-99a657b45d13",
+  "id": "t13-q153-r2-bb065a4cb44f",
   "testId": "test-13",
   "number": 153,
   "part": 7,
-  "groupId": "t13-r-p7-03",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
   "difficulty": "intermediate",
   "tags": [
     "reading-comprehension",
-    "double-passage",
     "daily"
   ],
-  "prompt": "A neighbor asks a volunteer to show a written comment beside a story clearly marked “with headphones.” What can the volunteer explain?",
-  "promptZh": "鄰居請志工把自己的書面意見放在一段明確標為「用耳機聆聽」的故事旁。志工可以怎麼說明？",
+  "prompt": "A neighbor writes about the long interview: “Mina says, ‘We closed the shop before the rain.’ I remember staying out longer that day.” Which edit would fit the weekly comments sheet?",
+  "promptZh": "一位鄰居寫下對長訪談的回應：「米娜說：『我們在下雨前就收店了。』我記得那天我在外頭待得更久。」哪項編法符合每週意見單的用途？",
   "options": [
     {
       "id": "A",
-      "text": "Allowing a comment would change the story's listening label to “play aloud.”",
-      "zh": "允許留言會把故事的聆聽標示改成「可公開播放」。",
-      "whyZh": "書面意見和錄音的聆聽方式是兩回事；留言不會改變聆聽規定。"
+      "text": "Under the interview title, print ‘We closed the shop before the rain, but I stayed out longer’ as a single quotation from Mina.",
+      "zh": "在訪談標題下，把「我們在下雨前就收店了，但我在外頭待得更久」整段當成米娜的引言刊登。",
+      "whyZh": "前半句是米娜的話，後半句是鄰居的回憶，不能全當成米娜說的。"
     },
     {
       "id": "B",
-      "text": "The neighbor must sign in the speaker space before leaving a comment.",
-      "zh": "鄰居要先在講述者欄簽名，才能留言。",
-      "whyZh": "講述者欄用於確認錄音的署名，未要求聽眾在此簽名才可寫意見。"
+      "text": "Print both statements under the interview title as a single unsigned comment without distinguishing the two accounts.",
+      "zh": "把兩段話合成一則未署名的留言，刊在訪談標題下，不區分這是兩個人的說法。",
+      "whyZh": "有標題不夠；編修後仍應看得出錄音說了什麼，以及鄰居另外提供了什麼。"
     },
     {
       "id": "C",
-      "text": "The listening restriction can stay in place even though the neighbor leaves written feedback.",
-      "zh": "即使鄰居留下書面意見，原有的聆聽限制仍可保留。",
-      "whyZh": "辦法明說耳機限制不影響留言；兩者可以同時成立。"
+      "text": "Add the neighbor as a speaker on the cabinet card and print the reply there, leaving the comments sheet unchanged.",
+      "zh": "把鄰居加為故事櫃卡片上的講述者，將回應印在卡片上，意見單維持原樣。",
+      "whyZh": "鄰居寫了回應，不代表在錄音中說話；卡片講述者欄不能取代意見單。"
     },
     {
       "id": "D",
-      "text": "The neighbor must replace the original listening card with the comment.",
-      "zh": "鄰居必須用意見取代原聆聽卡。",
-      "whyZh": "原卡應保留，而書面意見不負責指定聆聽方式。"
+      "text": "Under the interview title, introduce Mina’s words as a quotation and give the neighbor’s later memory separately as a response.",
+      "zh": "在訪談標題下，把米娜的話標為引言，再把鄰居記得自己在外頭待得更久的話另列為回應。",
+      "whyZh": "作為獨立回應刊在標題下，清楚分開錄音中的米娜原話和鄰居自己的回憶，符合意見單規則。"
     }
   ],
-  "answer": "C",
-  "explanationZh": "辦法明說耳機限制不影響留言；兩者可以同時成立。",
-  "evidence": "The speaker space gives the name to credit / “With headphones” does not stop listeners from leaving written comments",
-  "evidenceSpans": [
-    {
-      "documentId": "doc1",
-      "sourceField": "passage",
-      "startChar": 177,
-      "endChar": 219,
-      "documentStartChar": 123,
-      "documentEndChar": 165,
-      "exactQuote": "The speaker space gives the name to credit"
-    },
-    {
-      "documentId": "doc1",
-      "sourceField": "passage",
-      "startChar": 339,
-      "endChar": 410,
-      "documentStartChar": 285,
-      "documentEndChar": 356,
-      "exactQuote": "“With headphones” does not stop listeners from leaving written comments"
-    }
-  ],
+  "answer": "D",
+  "explanationZh": "作為獨立回應刊在標題下，清楚分開錄音中的米娜原話和鄰居自己的回憶，符合意見單規則。",
+  "evidence": "print a neighbor’s response as a separate entry that gives the story title. / which words the neighbor added and which came from the recording. / a speaker in the recording, not a byline for the comments sheet. / Neighbors can leave written comments even for a story marked “with headphones.”",
   "vocabulary": [
     {
+      "term": "unsigned comment",
+      "zh": "未署名的留言",
+      "note": "unsigned 指留言沒有署名，不一定表示留言內容沒有引述別人的話。"
+    },
+    {
       "term": "listening space",
-      "zh": "聆聽方式欄"
+      "zh": "聆聽方式欄",
+      "note": "space 在卡片上指欄位；這一欄記的是錄音可以採用什麼播放方式，不是聆聽的場所。"
     }
-  ]
+  ],
+  "groupId": "t13-r-q153-156"
 }

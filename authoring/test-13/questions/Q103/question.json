@@ -1,52 +1,51 @@
 {
-  "id": "t13-q103",
-  "uuid": "76c36e22-c84e-5e3e-9b28-45d743054c56",
+  "id": "t13-q103-r2-78726a708e66",
   "testId": "test-13",
   "number": 103,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
-  "difficulty": "intermediate",
+  "difficulty": "advanced",
   "tags": [
     "incomplete-sentence",
     "business"
   ],
-  "prompt": "Printed across the bottom edge of every prototype label _____ the two codes that help staff tell the shell apart from the assembled unit.",
-  "promptZh": "每張原型標籤的底邊都印著兩組代碼，讓工作人員能分辨外殼和組裝完成的機組。",
+  "prompt": "Keep the prototype’s engraved shell code on the metal even when the shell moves to another unit. On a replacement tag, print the receiving unit’s build code and use the shell code as a cross-reference; record the transfer without overwriting the installation log. A shell marked S4 has just moved from build 21 to build 36, so the technician should _____.",
+  "promptZh": "即使把外殼移裝到另一部原型機，也須保留刻在金屬上的外殼代碼。更換吊牌時，應印上接收機組的組裝代碼，並引用外殼代碼；請記錄移裝，但不要覆寫安裝紀錄。一個標有 S4 的外殼剛從 21 號移裝到 36 號，因此技師應_____。",
   "options": [
     {
       "id": "A",
-      "text": "is",
-      "zh": "be 動詞（單數）",
-      "whyZh": "is 會和真正的主詞 the two codes 在單複數上不一致；every prototype label 只是介系詞片語中的名詞。"
+      "text": "issue a tag for build 21 referring to S4 and add a separate transfer entry",
+      "zh": "發出引用 S4 的 21 號吊牌，並另記移裝",
+      "whyZh": "21 號是移出方，吊牌應跟接收機組。另記移裝及引用 S4 正確。"
     },
     {
       "id": "B",
-      "text": "has",
-      "zh": "有；已（單數）",
-      "whyZh": "has 不符合複數主詞，且不能與 printed 構成本句需要的被動式；倒回一般語序也不能用 The two codes has printed 來表示代碼「被印上」。"
+      "text": "issue a tag for build 36 referring to S4 and add a separate transfer entry",
+      "zh": "發出引用 S4 的 36 號吊牌，並另記移裝",
+      "whyZh": "接收方是 36 號，外殼仍為 S4；另列移裝紀錄不會覆蓋先前安裝紀錄。"
     },
     {
       "id": "C",
-      "text": "prints",
-      "zh": "印製（主動，單數）",
-      "whyZh": "prints 是主動式，表示主詞去印東西；此處被印的是代碼，而且 the two codes 也不配單數 prints。"
+      "text": "issue a tag for build 36 referring to S4 and change the earlier installation entry",
+      "zh": "發出引用 S4 的 36 號吊牌，並修改舊安裝紀錄",
+      "whyZh": "吊牌內容正確，但禁止改寫先前安裝紀錄。"
     },
     {
       "id": "D",
-      "text": "are",
-      "zh": "be 動詞（複數）",
-      "whyZh": "過去分詞片語放在句首，主詞 the two codes 放在動詞後面；回到一般語序是 The two codes are printed across the bottom edge。"
+      "text": "issue a tag for build 36 referring to a new shell code and add a separate transfer entry",
+      "zh": "發出引用新外殼代碼的 36 號吊牌，並另記移裝",
+      "whyZh": "36 號與新增紀錄都正確；搬動外殼不應另外分配一個新的引用代碼。"
     }
   ],
-  "answer": "D",
-  "explanationZh": "過去分詞片語放在句首，主詞 the two codes 放在動詞後面；回到一般語序是 The two codes are printed across the bottom edge。",
-  "evidence": "Printed across the bottom edge of every prototype label are the two codes that help staff tell the shell apart from the assembled unit.",
-  "evidenceZh": "每張原型標籤的底邊都印著兩組代碼，讓工作人員能分辨外殼和組裝完成的機組。",
+  "answer": "B",
+  "explanationZh": "接收方是 36 號，外殼仍為 S4；另列移裝紀錄不會覆蓋先前安裝紀錄。",
+  "evidence": "Keep the prototype’s engraved shell code on the metal / print the receiving unit’s build code / record the transfer without overwriting the installation log.",
   "vocabulary": [
     {
-      "term": "are",
-      "zh": "be 動詞（複數）"
+      "term": "cross-reference",
+      "zh": "交互參照",
+      "note": "可在新標籤上保留另一筆紀錄的識別碼，方便對照查找。"
     }
   ]
 }

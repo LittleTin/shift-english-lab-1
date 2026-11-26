@@ -1,0 +1,52 @@
+{
+  "id": "t13-q199",
+  "testId": "test-13",
+  "number": 199,
+  "part": 7,
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "intermediate",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "Which account of the two slips should go on the wall label?",
+  "promptZh": "牆面標籤應採用哪一種說法來描述這兩張訂單？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Two customers placed orders for delivery to the school office and the library desk.",
+      "zh": "兩位顧客各下一筆訂單，預定送往學校辦公室和圖書館服務臺。",
+      "whyZh": "收貨地點正確，但不同機構名稱不等於不同顧客，兩單同屬 C7。"
+    },
+    {
+      "id": "B",
+      "text": "One customer placed both orders, with the school office and the library desk as the intended destinations.",
+      "zh": "同一位顧客下了這兩筆訂單，預定收貨地點分別是學校辦公室和圖書館服務臺。",
+      "whyZh": "訂單各寫不同機構名稱，但兩張的帳戶代碼都是 C7，按店家規則屬同一位顧客。學校訂單送學校辦公室，圖書館訂單則應以更正欄的圖書館服務臺為準。這是預定收貨地點，不代表商品已送達。"
+    },
+    {
+      "id": "C",
+      "text": "One customer placed both orders and asked for both sets of supplies to be taken to the school office.",
+      "zh": "同一位顧客下了這兩筆訂單，並要求兩批用品都送到學校辦公室。",
+      "whyZh": "顧客相同，但圖書館訂單上原本寫的學校辦公室已被劃掉，改送圖書館服務臺。"
+    },
+    {
+      "id": "D",
+      "text": "Two customers placed orders and asked for both sets of supplies to be taken to the school office.",
+      "zh": "兩位顧客各下一筆訂單，並要求兩批用品都送到學校辦公室。",
+      "whyZh": "既把兩個收貨機構當成兩位顧客，又把已劃掉的學校辦公室當作兩單的目的地。"
+    }
+  ],
+  "answer": "B",
+  "explanationZh": "訂單各寫不同機構名稱，但兩張的帳戶代碼都是 C7，按店家規則屬同一位顧客。學校訂單送學校辦公室，圖書館訂單則應以更正欄的圖書館服務臺為準。這是預定收貨地點，不代表商品已送達。",
+  "evidence": "Each account code belonged to just one customer. / where that order was meant to go / Each bears account C7 / the note for the packer says ‘school office.’ / ‘use school office’ was crossed out and ‘library desk’ appears beside it / Follow the clerk’s correction, not the wording that was crossed out.",
+  "vocabulary": [
+    {
+      "term": "crossed out",
+      "zh": "畫線刪除的",
+      "note": "cross out 指在字上畫線標示取消；原字往往仍然可辨認。"
+    }
+  ],
+  "groupId": "t13-r-q196-200"
+}

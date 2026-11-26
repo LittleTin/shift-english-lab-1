@@ -1,52 +1,51 @@
 {
-  "id": "t13-q123",
-  "uuid": "6fc9d308-7d81-5e27-a60a-8fdf7c295d70",
+  "id": "t13-q123-r2-c994465a4495",
   "testId": "test-13",
   "number": 123,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
   "difficulty": "intermediate",
   "tags": [
     "incomplete-sentence",
     "business"
   ],
-  "prompt": "Keep the faulty handset in the service cabinet _____ the manufacturer's decision on whether to replace it. If the decision is to repair it instead, the courier will collect it on Friday.",
-  "promptZh": "在等待製造商決定是否更換期間，請將故障話機放在維修櫃裡。若製造商決定改為維修，快遞人員會在星期五來取件。",
+  "prompt": "The handset's replacement was authorized, but Friday's courier collects only equipment assigned to the repair shop. The handset must stay at the desk until the replacement arrives, because its inventory tag has to be transferred to the new unit in person. Although the paperwork is complete, the desk must _____ on Friday.",
+  "promptZh": "這支話機已核准換新，但星期五的快遞只收要送往維修店的設備。舊話機必須留在櫃檯等新機送達，因為要當場把財產標籤移貼到新機上。雖然手續已辦完，櫃檯人員星期五仍須_____。",
   "options": [
     {
       "id": "A",
-      "text": "as a result of",
-      "zh": "由於",
-      "whyZh": "as a result of 說的是某個已發生決定造成的結果；現在是否更換尚未有結果。"
+      "text": "send the handset with the repair shipment",
+      "zh": "把話機併入維修件寄出",
+      "whyZh": "已核准的是換新，不是送修，快遞星期五不收這類設備。"
     },
     {
       "id": "B",
-      "text": "in place of",
-      "zh": "代替",
-      "whyZh": "in place of 表示用保存動作代替製造商作決定；話機暫存不會取代決策。"
+      "text": "remove the inventory tag and release the handset",
+      "zh": "拆下財產標籤後交出話機",
+      "whyZh": "標籤要等新機到了再當場移貼，不能先交出舊機。"
     },
     {
       "id": "C",
-      "text": "pending",
-      "zh": "等待",
-      "whyZh": "pending 接名詞片語表示「等待……期間」；把話機先放好，後續依換新或維修的決定處理。"
+      "text": "keep the handset out of the courier pickup",
+      "zh": "把話機留在快遞收件範圍之外",
+      "whyZh": "星期五的快遞只收送修品，且舊話機仍要留櫃檯等新機，以便當場移貼標籤。"
     },
     {
       "id": "D",
-      "text": "in exchange for",
-      "zh": "作為交換",
-      "whyZh": "in exchange for 指拿一件事交換另一件事；把話機收在櫃內是暫時保管，不是為了向製造商交換一個決定。"
+      "text": "have the courier carry the handset once the tag has been recorded",
+      "zh": "記下標籤後就讓快遞帶走話機",
+      "whyZh": "沒說記下標籤可以代替當場移貼，且這不是送修件。"
     }
   ],
   "answer": "C",
-  "explanationZh": "pending 接名詞片語表示「等待……期間」；把話機先放好，後續依換新或維修的決定處理。",
-  "evidence": "Keep the faulty handset in the service cabinet pending the manufacturer's decision on whether to replace it. If the decision is to repair it instead, the courier will collect it on Friday.",
-  "evidenceZh": "在等待製造商決定是否更換期間，請將故障話機放在維修櫃裡。若製造商決定改為維修，快遞人員會在星期五來取件。",
+  "explanationZh": "星期五的快遞只收送修品，且舊話機仍要留櫃檯等新機，以便當場移貼標籤。",
+  "evidence": "Friday's courier collects only equipment assigned to the repair shop / its inventory tag has to be transferred to the new unit in person",
   "vocabulary": [
     {
-      "term": "pending",
-      "zh": "等待"
+      "term": "inventory tag",
+      "zh": "資產標籤",
+      "note": "用於辨識、追蹤機構持有的設備，通常印有編號。"
     }
   ]
 }

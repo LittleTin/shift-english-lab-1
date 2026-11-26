@@ -1,52 +1,51 @@
 {
-  "id": "t13-q104",
-  "uuid": "2335a83a-587d-5154-a5f0-418ffd4b356a",
+  "id": "t13-q104-r2-2f7f063f0aaf",
   "testId": "test-13",
   "number": 104,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
-  "difficulty": "foundation",
+  "difficulty": "intermediate",
   "tags": [
     "incomplete-sentence",
     "daily"
   ],
-  "prompt": "The pottery room is available again as soon as the floor is _____ to the touch; the custodian has already removed the spill, and no coating will be applied.",
-  "promptZh": "地板摸起來乾了，陶藝教室就能重新開放；管理員已清除濺出的液體，而且不會再上任何塗層。",
+  "prompt": "The pottery class will use the same room after a spill, but the collection shelves, unlike the worktables, can be reached without walking across the affected floor. The shelves are needed for pieces already fired, not for shaping new ones. Until the custodian clears the floor, members may _____.",
+  "promptZh": "陶藝課在灑漏後仍會使用原教室，但與工作桌不同，前往領件架不必穿過受影響的地面。領件架用於已燒製的作品，不用來製作新作品。管理員宣布地面可通行前，學員可以_____。",
   "options": [
     {
       "id": "A",
-      "text": "drying",
-      "zh": "正在變乾",
-      "whyZh": "drying 強調還在變乾，沒有說明摸起來已乾；to the touch 在這裡是以手觸確認目前狀態。"
+      "text": "collect fired pieces from the collection shelves and start shaping there until the floor is cleared",
+      "zh": "到領件架領已燒成的作品，並在地面可通行前先在架旁製作",
+      "whyZh": "領成品的地點正確，但暫時能走到領件架，不代表該處可供製作新作品。"
     },
     {
       "id": "B",
-      "text": "dry",
-      "zh": "乾的",
-      "whyZh": "dry to the touch 指摸起來已乾，正是清除液體後可以立刻檢查的重新開放條件。"
+      "text": "use the worktables to collect fired pieces if they are not shaping new ones",
+      "zh": "只要沒在製作新作品，就到工作桌領已燒成的作品",
+      "whyZh": "只領成品也不改變前往工作桌會穿越受影響地面的問題。"
     },
     {
       "id": "C",
-      "text": "waterproof",
-      "zh": "防水的",
-      "whyZh": "waterproof 指防水性能；沒有要施工上塗層，句子也不是要測試地板未來能否防水。"
+      "text": "collect fired pieces from the collection shelves but leave new shaping work until the floor is cleared",
+      "zh": "到領件架領已燒成的作品，但等地面可通行後再製作新作品",
+      "whyZh": "已燒成作品在可抵達的架上，製作新作品仍需等到可去工作桌。"
     },
     {
       "id": "D",
-      "text": "absorbent",
-      "zh": "會吸水的",
-      "whyZh": "absorbent 指吸水性能，不是液體清除後要檢查的乾燥狀態。"
+      "text": "delay collecting fired pieces until the floor is cleared but move new shaping work to the collection shelves",
+      "zh": "等地面可通行後再領已燒成的作品，把新作品移到領件架製作",
+      "whyZh": "把兩項限制對調：可直接領成品，但不能在領件架製作新作品。"
     }
   ],
-  "answer": "B",
-  "explanationZh": "dry to the touch 指摸起來已乾，正是清除液體後可以立刻檢查的重新開放條件。",
-  "evidence": "The pottery room is available again as soon as the floor is dry to the touch; the custodian has already removed the spill, and no coating will be applied.",
-  "evidenceZh": "地板摸起來乾了，陶藝教室就能重新開放；管理員已清除濺出的液體，而且不會再上任何塗層。",
+  "answer": "C",
+  "explanationZh": "已燒成作品在可抵達的架上，製作新作品仍需等到可去工作桌。",
+  "evidence": "can be reached without walking across the affected floor / for pieces already fired, not for shaping new ones / Until the custodian clears the floor",
   "vocabulary": [
     {
-      "term": "dry",
-      "zh": "乾的"
+      "term": "fired",
+      "zh": "已燒製的",
+      "note": "在陶藝語境中指陶件經過窯燒；不是指人員遭解僱。"
     }
   ]
 }

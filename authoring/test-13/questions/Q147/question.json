@@ -1,16 +1,13 @@
 {
-  "id": "t13-q147",
-  "uuid": "ee0f9b86-5532-5ba2-9d83-23e1253e6e8c",
+  "id": "t13-q147-r2-c3dd24d59eb5",
   "testId": "test-13",
   "number": 147,
   "part": 7,
-  "groupId": "t13-r-p7-01",
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
   "difficulty": "intermediate",
   "tags": [
     "reading-comprehension",
-    "single-passage",
     "business"
   ],
   "prompt": "Why did the workshop publish this notice for potential trainees?",
@@ -44,30 +41,17 @@
   "answer": "C",
   "explanationZh": "開頭介紹兩種實習，後兩段重點在申請所需的照片、進階實習的圖面與說明，以及漏件處理。",
   "evidence": "Applicants may list both preferences / For either placement, submit one photo of work that you did yourself",
-  "evidenceSpans": [
-    {
-      "documentId": "doc1",
-      "sourceField": "passage",
-      "startChar": 294,
-      "endChar": 330,
-      "documentStartChar": 229,
-      "documentEndChar": 265,
-      "exactQuote": "Applicants may list both preferences"
-    },
-    {
-      "documentId": "doc1",
-      "sourceField": "passage",
-      "startChar": 385,
-      "endChar": 453,
-      "documentStartChar": 320,
-      "documentEndChar": 388,
-      "exactQuote": "For either placement, submit one photo of work that you did yourself"
-    }
-  ],
   "vocabulary": [
     {
+      "term": "prospective placement applicants",
+      "zh": "有意申請實習的人",
+      "note": "prospective 形容可能或打算申請，並不表示已獲錄取。"
+    },
+    {
       "term": "placement",
-      "zh": "實習安排"
+      "zh": "實習安排",
+      "note": "這裡指為期三週、在工作坊中練習實作的實習安排，不是把物件放到某一位置。"
     }
-  ]
+  ],
+  "groupId": "t13-r-q147-149"
 }

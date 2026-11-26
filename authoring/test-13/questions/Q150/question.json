@@ -1,16 +1,13 @@
 {
-  "id": "t13-q150",
-  "uuid": "9ad955fb-d02a-5b67-a05a-ccb7da98fc2f",
+  "id": "t13-q150-r2-a325214856b5",
   "testId": "test-13",
   "number": 150,
   "part": 7,
-  "groupId": "t13-r-p7-02",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
-  "difficulty": "intermediate",
+  "difficulty": "foundation",
   "tags": [
     "reading-comprehension",
-    "single-passage",
     "daily"
   ],
   "prompt": "A team starts repairing its sculpture while visitors are approaching. What does the notice indicate about the area around the platform?",
@@ -44,30 +41,17 @@
   "answer": "A",
   "explanationZh": "公告以不同繩索區分公開動線與修補區，並說隊伍作業時公開動線仍開放。遊客通行與隊伍作業可以同時進行，但區域要分開。",
   "evidence": "A yellow cord marks the public route / The yellow route will remain open even while some teams are working",
-  "evidenceSpans": [
-    {
-      "documentId": "doc1",
-      "sourceField": "passage",
-      "startChar": 113,
-      "endChar": 149,
-      "documentStartChar": 64,
-      "documentEndChar": 100,
-      "exactQuote": "A yellow cord marks the public route"
-    },
-    {
-      "documentId": "doc1",
-      "sourceField": "passage",
-      "startChar": 215,
-      "endChar": 282,
-      "documentStartChar": 166,
-      "documentEndChar": 233,
-      "exactQuote": "The yellow route will remain open even while some teams are working"
-    }
-  ],
   "vocabulary": [
     {
+      "term": "firm surface",
+      "zh": "穩固的表面",
+      "note": "沙灘活動中指較不鬆軟、便於站立的表面；此處觀覽墊提供這種立足處。"
+    },
+    {
       "term": "public route",
-      "zh": "開放給民眾的動線"
+      "zh": "開放給民眾的動線",
+      "note": "指活動場地中遊客可以走的路線；在這份公告中與工作人員修補作品的區域分開。"
     }
-  ]
+  ],
+  "groupId": "t13-r-q150-152"
 }

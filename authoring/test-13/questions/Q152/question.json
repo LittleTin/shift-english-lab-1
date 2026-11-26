@@ -1,82 +1,67 @@
 {
-  "id": "t13-q152",
-  "uuid": "c492d3bf-b7f5-5dfe-a51e-86a8cf8d8858",
+  "id": "t13-q152-r2-035851a7b6cd",
   "testId": "test-13",
   "number": 152,
   "part": 7,
-  "groupId": "t13-r-p7-02",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
   "difficulty": "advanced",
   "tags": [
     "reading-comprehension",
-    "single-passage",
     "daily"
   ],
-  "prompt": "A visitor arrives during the noon repairs and wants to vote after seeing the west-platform entry from its west viewing position. What is the best plan?",
-  "promptZh": "遊客在中午修補期間到場，想看過西側平台作品從西面看去的視角再投票。怎麼做最合適？",
+  "prompt": "The organizers can use two sets of replies to check whether mentioning a fan changed what people reported. Which sets would give the clearest comparison?",
+  "promptZh": "主辦方可以用兩組回答來檢查，提到扇子是否影響遊客回報看到的形狀。哪兩組最適合比較？",
   "options": [
     {
       "id": "A",
-      "text": "Wait at the exit until the repair team uncovers the west mark and collects votes.",
-      "zh": "在出口等修補隊掀開西側標記，並在那裡等他們收票。",
-      "whyZh": "選票由出口的引導員收取，修補人員不是收票者；主辦方也沒要求等標記露出才能看。"
+      "text": "Fern and Shell",
+      "zh": "蕨葉卡與貝殼卡",
+      "whyZh": "這兩組都在觀覽墊旁詢問，因此會到西側觀覽點；但蕨葉卡組觀察時遮陽布未拆，貝殼卡組是在拍照、遮陽布已拆下時觀察。強光下稜線不易看清，用語和可見細節一起改變了。"
     },
     {
       "id": "B",
-      "text": "Reach the platform from the east on the public route and ask the steward for the west viewing position.",
-      "zh": "使用公開動線從東側到平台，再請引導員指示西側觀覽點。",
-      "whyZh": "修補時公開路線仍從東側到平台，而觀覽墊旁引導員可以從公開路線指引到兩側觀覽點。兩項條件使遊客能安全看到西面並照常在出口投票。"
+      "text": "Fern and Pebble",
+      "zh": "蕨葉卡與小石卡",
+      "whyZh": "這兩組觀察時都有遮陽布；但蕨葉卡組會由引導員帶到西側，小石卡組沿海鷗旗走到東側。作品從兩側看起來不同，回答差異不一定是提示造成的。"
     },
     {
       "id": "C",
-      "text": "Enter inside the blue cord to see the west face while the public mark is covered.",
-      "zh": "趁公開標記被蓋住，走到藍繩內從西面看。",
-      "whyZh": "藍繩內是修補工作區，公告明令不要為了看清楚進入。"
+      "text": "Fern and Reed",
+      "zh": "蕨葉卡與蘆葦卡",
+      "whyZh": "這兩組都請觀覽墊旁的引導員帶路，因此都從西側觀覽點看。蕨葉卡組在拆遮陽布前看，蘆葦卡組是在巡覽時看，此時遮陽布已重新架好。只有蕨葉卡組聽到扇子的提示，因此這兩組的回答最適合用來比較提示的影響。"
     },
     {
       "id": "D",
-      "text": "Use the mat as the west viewing marker and give the vote to the workers on the platform.",
-      "zh": "把觀覽墊當作西側觀覽標記，並將選票交給平台作業人員。",
-      "whyZh": "觀覽墊用來提供較硬的表面，不是西側正確觀覽點；選票也不在工作區收取。"
+      "text": "Shell and Reed",
+      "zh": "貝殼卡與蘆葦卡",
+      "whyZh": "這兩組都會從西側看，但沒有任何一組聽到扇子的提示，無法直接比較有提示和沒提示的回答。"
     }
   ],
-  "answer": "B",
-  "explanationZh": "修補時公開路線仍從東側到平台，而觀覽墊旁引導員可以從公開路線指引到兩側觀覽點。兩項條件使遊客能安全看到西面並照常在出口投票。",
-  "evidence": "The public route still reaches it from the east / the steward beside the mat can still direct visitors to both marked sides / we will not collect votes inside the marked work area",
-  "evidenceSpans": [
-    {
-      "documentId": "doc1",
-      "sourceField": "passage",
-      "startChar": 813,
-      "endChar": 860,
-      "documentStartChar": 764,
-      "documentEndChar": 811,
-      "exactQuote": "The public route still reaches it from the east"
-    },
-    {
-      "documentId": "doc1",
-      "sourceField": "passage",
-      "startChar": 926,
-      "endChar": 999,
-      "documentStartChar": 877,
-      "documentEndChar": 950,
-      "exactQuote": "the steward beside the mat can still direct visitors to both marked sides"
-    },
-    {
-      "documentId": "doc1",
-      "sourceField": "passage",
-      "startChar": 1071,
-      "endChar": 1124,
-      "documentStartChar": 1022,
-      "documentEndChar": 1075,
-      "exactQuote": "we will not collect votes inside the marked work area"
-    }
-  ],
+  "answer": "C",
+  "explanationZh": "這兩組都請觀覽墊旁的引導員帶路，因此都從西側觀覽點看。蕨葉卡組在拆遮陽布前看，蘆葦卡組是在巡覽時看，此時遮陽布已重新架好。只有蕨葉卡組聽到扇子的提示，因此這兩組的回答最適合用來比較提示的影響。",
+  "evidence": "the shapes really do look different from the two marked spots. / the steward takes you to the western spot / lead to the eastern spot. / In full sun, a thin ridge on the sculpture is hard to see even from a marked spot. / The noon repair screen will shade the whole sculpture until we take it down for the closing photograph. We will put it back up for the closing walk. / Fern-card volunteers will hear ‘Look for a fan’ and will ask at the mat as the photographer arrives, before we take the screen down. / Shell-card volunteers will ask at the mat while the photographer is taking pictures. / Pebble-card volunteers will follow the gull flags during the closing walk. Reed-card volunteers will ask at the mat during that walk. / Only Fern cards give the fan hint; the other cards simply ask what shape the volunteers see.",
   "vocabulary": [
     {
-      "term": "steward",
-      "zh": "現場引導員"
+      "term": "viewing spot",
+      "zh": "觀覽點；觀看位置",
+      "note": "指被指定用來看沙雕的位置，不是遊客走到平台時所走的路線。"
+    },
+    {
+      "term": "gull",
+      "zh": "海鷗",
+      "note": "海邊常見的鳥；gull flags 在這裡指印有海鷗圖案、用來指路的旗幟。"
+    },
+    {
+      "term": "ridge",
+      "zh": "稜線；細長的隆起",
+      "note": "指表面凸起的一條線；有強光照射時，沙雕上的細稜線反而可能不容易辨認。"
+    },
+    {
+      "term": "closing walk",
+      "zh": "活動結束前的巡覽",
+      "note": "活動即將結束時安排的巡覽；它和拍攝閉幕照片是不同的活動。"
     }
-  ]
+  ],
+  "groupId": "t13-r-q150-152"
 }

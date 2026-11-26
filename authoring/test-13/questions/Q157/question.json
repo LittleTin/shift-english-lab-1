@@ -1,16 +1,13 @@
 {
-  "id": "t13-q157",
-  "uuid": "9ac3dac1-55ef-5aba-9856-85841169bc91",
+  "id": "t13-q157-r2-30b8262a3f70",
   "testId": "test-13",
   "number": 157,
   "part": 7,
-  "groupId": "t13-r-p7-04",
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
-  "difficulty": "intermediate",
+  "difficulty": "foundation",
   "tags": [
     "reading-comprehension",
-    "triple-passage",
     "business"
   ],
   "prompt": "What happens when a technician presses HIDE instead of muting a booth?",
@@ -32,7 +29,7 @@
       "id": "C",
       "text": "The channel is removed from the audience display without cutting the booth feed.",
       "zh": "該頻道從聽眾指示牌隱藏，但口譯間仍可送出訊號。",
-      "whyZh": "技術簡報說 HIDE 只改顯示，彩排接收器在頻道隱藏時仍可收聽。"
+      "whyZh": "交接便條說 HIDE 只改告示顯示，不切斷音訊；工作人員的彩排接收器仍能收聽。"
     },
     {
       "id": "D",
@@ -42,32 +39,19 @@
     }
   ],
   "answer": "C",
-  "explanationZh": "技術簡報說 HIDE 只改顯示，彩排接收器在頻道隱藏時仍可收聽。",
-  "evidence": "Pressing HIDE on the sign panel changes the display only / Muting the booth switches off the booth feed itself",
-  "evidenceSpans": [
-    {
-      "documentId": "doc1",
-      "sourceField": "passage",
-      "startChar": 534,
-      "endChar": 590,
-      "documentStartChar": 479,
-      "documentEndChar": 535,
-      "exactQuote": "Pressing HIDE on the sign panel changes the display only"
-    },
-    {
-      "documentId": "doc1",
-      "sourceField": "passage",
-      "startChar": 592,
-      "endChar": 643,
-      "documentStartChar": 537,
-      "documentEndChar": 588,
-      "exactQuote": "Muting the booth switches off the booth feed itself"
-    }
-  ],
+  "explanationZh": "交接便條說 HIDE 只改告示顯示，不切斷音訊；工作人員的彩排接收器仍能收聽。",
+  "evidence": "use HIDE on the sign controls. / It changes the display, not the audio signal. / You can still listen on the rehearsal receiver with the channel hidden / muting the booth stops its feed",
   "vocabulary": [
     {
+      "term": "booth feed",
+      "zh": "口譯室傳出的訊號",
+      "note": "feed 在音訊語境指持續傳送的訊號；從告示牌隱藏頻道不一定會切斷訊號。"
+    },
+    {
       "term": "feed",
-      "zh": "傳輸訊號"
+      "zh": "傳輸訊號",
+      "note": "在音訊設備中指傳送中的聲音訊號，與該頻道是否列在聽眾告示牌上無關。"
     }
-  ]
+  ],
+  "groupId": "t13-r-q157-158"
 }

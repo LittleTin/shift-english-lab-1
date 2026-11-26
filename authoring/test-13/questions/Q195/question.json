@@ -1,0 +1,52 @@
+{
+  "id": "t13-q195",
+  "testId": "test-13",
+  "number": 195,
+  "part": 7,
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "What should the manager do before leaving to read the corrected Wednesday report on the train?",
+  "promptZh": "經理要在火車上閱讀更正後的星期三報表，離開分店前應怎麼做？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Take Alder. It finished downloading after the branch’s change and is already available offline.",
+      "zh": "帶走 Alder。它在分店更正後才下載完成，已經可以離線讀取。",
+      "whyZh": "Alder 的確已落在本機，但內容固定在 9:30 產生時。10:45 下載不會補進 10:00 的更正。"
+    },
+    {
+      "id": "B",
+      "text": "Take Birch as it is. It appears as Ready, so the tablet reader can open it after she loses her connection.",
+      "zh": "直接帶走現在的 Birch。它已顯示「就緒」，離線後平板閱讀器就可以開啟。",
+      "whyZh": "Birch 產生於更正後，但「就緒」只表示伺服器已有檔案。下載仍未完成，不能指望離線讀到它。"
+    },
+    {
+      "id": "C",
+      "text": "Resume downloading Birch and check that the file is saved before leaving.",
+      "zh": "繼續下載 Birch，並確認檔案已存到本機再離開。",
+      "whyZh": "雖然 Birch 在更正前提出申請，但內容以 10:20 產生時的資料為準，包含 10:00 的更正。分店仍有網路，可以把尚未下載完的檔案存到本機再出發。"
+    },
+    {
+      "id": "D",
+      "text": "Start a new export from the tablet reader at the branch and check that its file is saved before leaving.",
+      "zh": "在分店用平板閱讀器重新匯出，確認檔案已存到本機再離開。",
+      "whyZh": "重新產生並下載可解決時效與離線問題，但平板閱讀器只能開啟已保存的檔案，不能產生匯出檔。"
+    }
+  ],
+  "answer": "C",
+  "explanationZh": "雖然 Birch 在更正前提出申請，但內容以 10:20 產生時的資料為準，包含 10:00 的更正。分店仍有網路，可以把尚未下載完的檔案存到本機再出發。",
+  "evidence": "A report that has finished downloading is a local file; it can be opened without a connection. / is not proof that it has finished downloading. / The tablet reader can display saved reports but does not create exports. / A generated export shows the entries as they were when it was created. / the branch’s 10:00 correction. / Alder was created at 9:30, and its download finished at 10:45. / She requested Birch at 9:40; the server created it at 10:20 and marked it Ready. / Its transfer paused before a copy finished downloading. / She still has a connection at the branch before she leaves.",
+  "vocabulary": [
+    {
+      "term": "finished downloading",
+      "zh": "下載完成",
+      "note": "已完整下載到本機，和伺服器顯示檔案已準備好並不相同。"
+    }
+  ],
+  "groupId": "t13-r-q191-195"
+}

@@ -1,16 +1,13 @@
 {
-  "id": "t13-q156",
-  "uuid": "7c7c75ea-8dd0-5aaf-9ab4-8b7c53494baa",
+  "id": "t13-q156-r2-543704dc096b",
   "testId": "test-13",
   "number": 156,
   "part": 7,
-  "groupId": "t13-r-p7-03",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
-  "difficulty": "intermediate",
+  "difficulty": "foundation",
   "tags": [
     "reading-comprehension",
-    "double-passage",
     "daily"
   ],
   "prompt": "What should a volunteer do with the previous card if both speakers eventually choose a different listening option for the long interview?",
@@ -43,31 +40,18 @@
   ],
   "answer": "B",
   "explanationZh": "雙方同意後，給新卡寫日期，把舊卡留在後面；最新設定由頂端的有日期卡提供。",
-  "evidence": "put the date on an updated card and keep the old card behind it / use the dated card on top",
-  "evidenceSpans": [
-    {
-      "documentId": "doc1",
-      "sourceField": "passage",
-      "startChar": 810,
-      "endChar": 873,
-      "documentStartChar": 756,
-      "documentEndChar": 819,
-      "exactQuote": "put the date on an updated card and keep the old card behind it"
-    },
-    {
-      "documentId": "doc1",
-      "sourceField": "passage",
-      "startChar": 968,
-      "endChar": 993,
-      "documentStartChar": 914,
-      "documentEndChar": 939,
-      "exactQuote": "use the dated card on top"
-    }
-  ],
+  "evidence": "date a replacement card and put the earlier one behind it. / Please leave the original intact. / use the dated card on top to check the current arrangement / the name printed on the recording doesn’t decide how we play it.",
   "vocabulary": [
     {
+      "term": "dated replacement card",
+      "zh": "註明日期的新卡",
+      "note": "新的安排要記在註明日期的卡片上；舊卡完整保留在後面。"
+    },
+    {
       "term": "dated card",
-      "zh": "有日期的卡片"
+      "zh": "有日期的卡片",
+      "note": "dated 表示卡片標有日期，可用來區分先後版本。"
     }
-  ]
+  ],
+  "groupId": "t13-r-q153-156"
 }

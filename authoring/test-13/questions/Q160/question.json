@@ -1,82 +1,52 @@
 {
-  "id": "t13-q160",
-  "uuid": "e246ac6a-7c69-5a64-afec-84b77158af44",
+  "id": "t13-q160-r2-8321b6550473",
   "testId": "test-13",
   "number": 160,
   "part": 7,
-  "groupId": "t13-r-p7-04",
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
   "difficulty": "advanced",
   "tags": [
     "reading-comprehension",
-    "triple-passage",
     "business"
   ],
-  "prompt": "At 11:16 the booth technician signals readiness, but the moderator has not yet greeted the audience. What should the desk lead do with channel 4?",
-  "promptZh": "11:16 口譯間技術人員示意已準備好，主持人尚未向聽眾致意。服務台組長該怎麼處理第 4 頻道？",
+  "prompt": "At which point in the drill should the trainee first show channel 4 on the audience sign?",
+  "promptZh": "在交接練習中，學員最早應在什麼時候把第 4 頻道顯示在聽眾告示牌上？",
   "options": [
     {
       "id": "A",
-      "text": "Display it and mute the booth until the moderator speaks.",
-      "zh": "顯示頻道，但將口譯間靜音直到主持人開口。",
-      "whyZh": "顯示的觸發點還沒發生，且便條說致詞前仍需讓工作人員收聽，不可靜音。"
+      "text": "10:14",
+      "zh": "10:14",
+      "whyZh": "這時只有送往會場的要求，沒有聽到主持人開口，不能算已向聽眾致歡迎詞。"
     },
     {
       "id": "B",
-      "text": "Leave it hidden and mute the booth until the announced start time.",
-      "zh": "隱藏頻道並靜音，直到公告的開始時間。",
-      "whyZh": "隱藏顯示這部分對，但靜音會中斷工作人員收聽，而且不能僅用公告時間代替主持人致詞。"
+      "text": "10:16",
+      "zh": "10:16",
+      "whyZh": "K 是主持人米拉，也說了歡迎詞；但實際只有控制臺聽到，不能只看原本要求送往會場。"
     },
     {
       "id": "C",
-      "text": "Keep it hidden from the audience but retain the staff feed.",
-      "zh": "不在聽眾指示牌顯示，但保持工作人員能收聽訊號。",
-      "whyZh": "接班便條把公開顯示和內部訊號分開；技術員發訊號不等於主持人致詞，應繼續隱藏但保留工作訊號。"
+      "text": "10:17",
+      "zh": "10:17",
+      "whyZh": "歡迎詞確實播到了會場，但 W 是負責入座廣播的路易，不是主持人。"
     },
     {
       "id": "D",
-      "text": "Display it immediately, since the booth can now transmit.",
-      "zh": "口譯間現在已能傳送訊號，所以立刻顯示頻道。",
-      "whyZh": "口譯間可送出訊號只表示能供內部使用；要公開顯示仍須等主持人向聽眾致意。"
+      "text": "10:19",
+      "zh": "10:19",
+      "whyZh": "K 是主持人米拉；她的開場白在這一刻確實播到會場，已入座的聽眾聽得到。這是第一個同時符合發言者身分與對象的時點。"
     }
   ],
-  "answer": "C",
-  "explanationZh": "接班便條把公開顯示和內部訊號分開；技術員發訊號不等於主持人致詞，應繼續隱藏但保留工作訊號。",
-  "evidence": "Staff can use the rehearsal receiver with a headset even while the channel is hidden / once the moderator welcomes the panel audience, not when the booth technician gives us a ready signal / The booth feed should stay available to staff",
-  "evidenceSpans": [
-    {
-      "documentId": "doc1",
-      "sourceField": "passage",
-      "startChar": 427,
-      "endChar": 511,
-      "documentStartChar": 372,
-      "documentEndChar": 456,
-      "exactQuote": "Staff can use the rehearsal receiver with a headset even while the channel is hidden"
-    },
-    {
-      "documentId": "doc3",
-      "sourceField": "passage",
-      "startChar": 1504,
-      "endChar": 1605,
-      "documentStartChar": 107,
-      "documentEndChar": 208,
-      "exactQuote": "once the moderator welcomes the panel audience, not when the booth technician gives us a ready signal"
-    },
-    {
-      "documentId": "doc3",
-      "sourceField": "passage",
-      "startChar": 1607,
-      "endChar": 1652,
-      "documentStartChar": 210,
-      "documentEndChar": 255,
-      "exactQuote": "The booth feed should stay available to staff"
-    }
-  ],
+  "answer": "D",
+  "explanationZh": "K 是主持人米拉；她的開場白在這一刻確實播到會場，已入座的聽眾聽得到。這是第一個同時符合發言者身分與對象的時點。",
+  "evidence": "look for K on Mira’s badge and W on Louis’s. / when the moderator welcomes the panel audience. / Mira is moderating. Louis reads the seating announcement / “Heard at” is the return checked after the switch. / “Hall” reaches the seated listeners. / At 10:14 K requested Hall; no speech was heard. / At 10:16 K requested Hall and said “Welcome to the panel”; the return was heard at Desk. / At 10:17 W requested Hall and began “Welcome to the panel”; it was heard at Hall. / At 10:19 K requested Hall again and began with the same words; it was heard at Hall.",
   "vocabulary": [
     {
       "term": "moderator",
-      "zh": "主持人"
+      "zh": "主持人",
+      "note": "此處指主持座談並向聽眾致歡迎詞的人，不是負責引導大家就座的廣播人員。"
     }
-  ]
+  ],
+  "groupId": "t13-r-q159-161"
 }

@@ -1,13 +1,11 @@
 {
-  "id": "t13-q143",
-  "uuid": "f9be129a-b0b3-585b-8e63-e5d147c69af0",
+  "id": "t13-q143-r2-ffa12e1662a7",
   "testId": "test-13",
   "number": 143,
   "part": 6,
-  "groupId": "t13-r-p6-04",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
-  "difficulty": "intermediate",
+  "difficulty": "foundation",
   "tags": [
     "text-completion",
     "daily"
@@ -25,7 +23,7 @@
       "id": "B",
       "text": "separately",
       "zh": "分別地",
-      "whyZh": "須分別回報大字與變紅的可讀性；有人能讀清大字，卻因顏色不易讀取，因此不能只給單一判斷。"
+      "whyZh": "測試要分別了解數字大小與紅色警示對易讀性的影響；兩台顯示相同時間，不代表應把兩項特徵合成一個評價。"
     },
     {
       "id": "C",
@@ -41,32 +39,19 @@
     }
   ],
   "answer": "B",
-  "explanationZh": "須分別回報大字與變紅的可讀性；有人能讀清大字，卻因顏色不易讀取，因此不能只給單一判斷。",
+  "explanationZh": "測試要分別了解數字大小與紅色警示對易讀性的影響；兩台顯示相同時間，不代表應把兩項特徵合成一個評價。",
   "evidence": "One display also turns red / Both displays show the same numerical time / report the two features",
-  "evidenceSpans": [
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 380,
-      "endChar": 406,
-      "exactQuote": "One display also turns red"
-    },
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 486,
-      "endChar": 528,
-      "exactQuote": "Both displays show the same numerical time"
-    },
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 689,
-      "endChar": 712,
-      "exactQuote": "report the two features"
-    }
-  ],
   "vocabulary": [
     {
+      "term": "legibility",
+      "zh": "清晰易讀程度",
+      "note": "此處指棋鐘數字能不能看清楚，不是訊號是否影響下棋速度。"
+    },
+    {
       "term": "separately",
-      "zh": "分別地"
+      "zh": "分別地",
+      "note": "表示兩項特徵要各自回報；這裡不要把數字的易讀性和警示對下棋速度的影響混在一起。"
     }
-  ]
+  ],
+  "groupId": "t13-r-p6-04"
 }

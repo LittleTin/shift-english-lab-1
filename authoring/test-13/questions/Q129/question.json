@@ -1,52 +1,51 @@
 {
-  "id": "t13-q129",
-  "uuid": "0f3f37a6-dfb7-5d4f-9f1d-fc20e9c75473",
+  "id": "t13-q129-r2-f4cef075f65e",
   "testId": "test-13",
   "number": 129,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
-  "difficulty": "foundation",
+  "difficulty": "intermediate",
   "tags": [
     "incomplete-sentence",
     "business"
   ],
-  "prompt": "The apprentice's draft meets the spacing rule, but spacing is not the only requirement. The assessor will check for both uniform spacing _____ legible labels before approving it.",
-  "promptZh": "學徒的草稿符合間距規定，但並非只要看間距。審查人員核准前，會同時檢查間距是否一致、標籤是否清楚可讀。",
+  "prompt": "The assessor measures the distance between the centers of the labels, not between their edges. The last three centers on the draft are evenly spaced, but the middle label overlaps an illustration. The centers of the gaps between the illustrations are not evenly spaced. Its type is already at the smallest size allowed. A shorter version of that label fits the same center and remains legible. To fix the overlap without sacrificing either requirement, the apprentice should _____.",
+  "promptZh": "評審量的是標示中心之間的距離，不是邊緣之間的距離。草稿最後三個標示的中心間距相同，但中間的標示與插圖重疊。各插圖間空隙的中心並非等距。原本的字體已是規定容許的最小尺寸。改用較短的版本，沿用同一中心就能放得下，字也仍清楚易讀。為了排除重疊且不犧牲這兩項要求，學徒應_____。",
   "options": [
     {
       "id": "A",
-      "text": "or",
-      "zh": "或",
-      "whyZh": "or 會表示兩者可擇一；題幹用了 both 並指出間距不是唯一要求。"
+      "text": "move the middle label and keep its current length",
+      "zh": "挪動中間標示並保留原本長度",
+      "whyZh": "只移動中間標示，會破壞原本均勻的中心間距。"
     },
     {
       "id": "B",
-      "text": "and",
-      "zh": "和；以及",
-      "whyZh": "both A and B 是並列結構，兩個名詞片語分別是 uniform spacing 和 legible labels；審查人員兩項都看。"
+      "text": "center all labels in the gaps between the illustrations",
+      "zh": "把所有標示放到插圖之間的空隙中央",
+      "whyZh": "插圖空隙的中心本來就不等距，改以這些中心定位會破壞間距。"
     },
     {
       "id": "C",
-      "text": "than",
-      "zh": "比；而非",
-      "whyZh": "than 通常引出比較的對象，或跟在 rather 後；這裡兩項都是檢查項目，不是比較或用一項取代另一項。"
+      "text": "replace the middle label without moving its center",
+      "zh": "更換中間標示，但不移動其中心",
+      "whyZh": "較短版本在原中心已能避開插圖且仍易讀，保留中心就能維持原間距。"
     },
     {
       "id": "D",
-      "text": "so",
-      "zh": "所以",
-      "whyZh": "so 可引出結果，但 legible labels 是名詞片語，並不是要表達結果的子句。"
+      "text": "reduce the middle label’s type until it no longer overlaps",
+      "zh": "縮小中間標示的字體直到不再重疊",
+      "whyZh": "原標示已用到最低允許字體尺寸，不能再縮小。"
     }
   ],
-  "answer": "B",
-  "explanationZh": "both A and B 是並列結構，兩個名詞片語分別是 uniform spacing 和 legible labels；審查人員兩項都看。",
-  "evidence": "The apprentice's draft meets the spacing rule, but spacing is not the only requirement. The assessor will check for both uniform spacing and legible labels before approving it.",
-  "evidenceZh": "學徒的草稿符合間距規定，但並非只要看間距。審查人員核准前，會同時檢查間距是否一致、標籤是否清楚可讀。",
+  "answer": "C",
+  "explanationZh": "較短版本在原中心已能避開插圖且仍易讀，保留中心就能維持原間距。",
+  "evidence": "the distance between the centers of the labels, not between their edges / The centers of the gaps between the illustrations are not evenly spaced. / Its type is already at the smallest size allowed. / A shorter version of that label fits the same center and remains legible.",
   "vocabulary": [
     {
-      "term": "and",
-      "zh": "和；以及"
+      "term": "evenly spaced",
+      "zh": "等距排列",
+      "note": "各標示中心等距，不表示標示邊緣的間隙也等寬。"
     }
   ]
 }

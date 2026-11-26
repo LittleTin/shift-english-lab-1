@@ -1,13 +1,11 @@
 {
-  "id": "t13-q132",
-  "uuid": "1483df5f-fb4d-560e-811f-1463c9c44f7d",
+  "id": "t13-q132-r2-a2bdc11a4888",
   "testId": "test-13",
   "number": 132,
   "part": 6,
-  "groupId": "t13-r-p6-01",
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
-  "difficulty": "advanced",
+  "difficulty": "intermediate",
   "tags": [
     "text-completion",
     "business"
@@ -43,24 +41,17 @@
   "answer": "D",
   "explanationZh": "前文提到去程與回程同一方位詞會指相對的兩面牆；先換成以場地為準的實際牆面再比較，才可回答後句的「是否同一面牆」。",
   "evidence": "listeners will cross the atrium in the opposite direction / This will let us tell whether listeners on both walks are pointing to the same wall",
-  "evidenceSpans": [
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 669,
-      "endChar": 726,
-      "exactQuote": "listeners will cross the atrium in the opposite direction"
-    },
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 968,
-      "endChar": 1051,
-      "exactQuote": "This will let us tell whether listeners on both walks are pointing to the same wall"
-    }
-  ],
   "vocabulary": [
     {
+      "term": "outbound walk",
+      "zh": "去程步行路線",
+      "note": "outbound 指從起點往外的一段，在這裡與 return（回程）相對。"
+    },
+    {
       "term": "before comparing the marks",
-      "zh": "比較記號之前"
+      "zh": "比較記號之前",
+      "note": "before 後可接動名詞，表示先做前面提到的事，再進行該動作。這裡要先把左右換算成實際牆面。"
     }
-  ]
+  ],
+  "groupId": "t13-r-p6-01"
 }

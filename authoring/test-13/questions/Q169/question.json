@@ -1,0 +1,52 @@
+{
+  "id": "t13-q169",
+  "testId": "test-13",
+  "number": 169,
+  "part": 7,
+  "revision": 1,
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [
+    "reading-comprehension",
+    "business"
+  ],
+  "prompt": "Which conclusion about the learner’s problem is supported by the two presses?",
+  "promptZh": "關於學員遇到的問題，這兩次按鍵測試能支持哪個結論？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The first press reached the tablet, but neither test establishes what the learner’s own profile does when shortcuts can run.",
+      "zh": "第一次按鍵已被繪圖板偵測到，但兩次測試都無法確認：在允許快捷功能執行時，學員自己的設定檔會如何運作。",
+      "whyZh": "錄影中的輸入燈亮起，證明繪圖板有收到第一次按鍵；但三角形表示練習當下不會執行快捷功能。第二次雖成功開啟放大鏡，用的是課程選單的標準副本，不能代表學員自己的版本。"
+    },
+    {
+      "id": "B",
+      "text": "The first press reached the tablet, and the second proves that the learner’s saved shortcut still works.",
+      "zh": "第一次按鍵已被繪圖板偵測到，第二次則證明學員儲存的快捷功能仍能運作。",
+      "whyZh": "第二次有反應，但課程選單另開了標準副本。同名不等於同一份設定，無法證明學員自己的快捷功能仍能運作。"
+    },
+    {
+      "id": "C",
+      "text": "The first press reached the tablet and shows that the learner’s saved assignment was lost; the second tests only the standard profile.",
+      "zh": "第一次按鍵已被繪圖板偵測到，也證明學員儲存的功能指派已遺失；第二次只測了標準設定檔。",
+      "whyZh": "第一次是在只示範按鍵的模式下測試，沒有執行快捷功能不能證明功能指派遺失。第二次只測標準版本這部分正確。"
+    },
+    {
+      "id": "D",
+      "text": "There is no evidence that the tablet detected the first press; the second tests only the standard profile.",
+      "zh": "沒有證據顯示繪圖板偵測到第一次按鍵；第二次只測了標準設定檔。",
+      "whyZh": "第二次只測標準版本這部分正確，但錄影中的輸入指示燈已證明第一次按鍵有被偵測到。"
+    }
+  ],
+  "answer": "A",
+  "explanationZh": "錄影中的輸入燈亮起，證明繪圖板有收到第一次按鍵；但三角形表示練習當下不會執行快捷功能。第二次雖成功開啟放大鏡，用的是課程選單的標準副本，不能代表學員自己的版本。",
+  "evidence": "the input dot lights as soon as the tablet detects a press / The triangle in the exercise toolbar means taps are being demonstrated without running their shortcuts. / The recording shows the input dot lighting and the triangle still in the toolbar. / chose “N6” from the lesson menu / The lesson menu always opens a fresh copy of our standard N6. / No one reopened the learner’s copy after ending the exercise.",
+  "vocabulary": [
+    {
+      "term": "assignment",
+      "zh": "功能指派",
+      "note": "在設定檔裡，指指定某個按鍵執行哪一項功能，不是工作任務。"
+    }
+  ],
+  "groupId": "t13-r-q168-170"
+}

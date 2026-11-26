@@ -1,11 +1,9 @@
 {
-  "id": "t13-q138",
-  "uuid": "afe1ff46-dab1-5f66-b6ce-d4c276299b31",
+  "id": "t13-q138-r2-e1ca5005105d",
   "testId": "test-13",
   "number": 138,
   "part": 6,
-  "groupId": "t13-r-p6-02",
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
   "difficulty": "intermediate",
   "tags": [
@@ -17,50 +15,43 @@
   "options": [
     {
       "id": "A",
-      "text": "permanent",
-      "zh": "永久的",
-      "whyZh": "permanent 表示永久；星期日中午還未領取就移交，不會一直放在中心。"
+      "text": "Tell them to come to the center on Monday, since a request for later pickup keeps the kite there.",
+      "zh": "請他們星期一到中心來，因為提出延後領取就能把風箏留在原處。",
+      "whyZh": "沒有規定來信可阻止星期日中午的搬移，中心不一定還有該風箏。"
     },
     {
       "id": "B",
-      "text": "temporary",
-      "zh": "暫時",
-      "whyZh": "temporary basis 表示中心僅暫存，期限到星期日中午；逾時未取的風箏移到另一個招領處。"
+      "text": "Tell them to check with the main lost-property desk on Monday and keep the claim details handy.",
+      "zh": "請他們星期一向總失物招領處詢問，並備妥認領資料。",
+      "whyZh": "星期日中午移交的是風箏及其認領標籤，不是取消物主的領取權。星期一應到新保管處查詢。"
     },
     {
       "id": "C",
-      "text": "seasonal",
-      "zh": "季節性的",
-      "whyZh": "seasonal 指按季節安排；活動後到星期日中午的處理程序不是每一季反覆保管。"
+      "text": "Tell them to send the claim tag back by Sunday noon, since the desk will not accept it on Monday.",
+      "zh": "請他們在星期日中午以前送回認領標籤，因為失物招領處星期一不收標籤。",
+      "whyZh": "星期日中午是內部移交時間，並非認領期限，也沒有規定要事先送回標籤。"
     },
     {
       "id": "D",
-      "text": "renewable",
-      "zh": "可續期的",
-      "whyZh": "renewable 指保管期可延長或另續一段期限；指示只說到點移送，沒有說可以續期。"
+      "text": "Tell them to ask the other families at the parade whether one has taken the kite before Monday.",
+      "zh": "請他們在星期一以前向參加遊行的其他家庭打聽，有沒有人拿走風箏。",
+      "whyZh": "文中已說未領風箏會由志工移交總失物招領處，沒有證據要向其他家庭查詢。"
     }
   ],
   "answer": "B",
-  "explanationZh": "temporary basis 表示中心僅暫存，期限到星期日中午；逾時未取的風箏移到另一個招領處。",
-  "evidence": "take it inside the center at dusk / any kite still there at noon on Sunday goes to the main lost-property desk",
-  "evidenceSpans": [
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 1272,
-      "endChar": 1305,
-      "exactQuote": "take it inside the center at dusk"
-    },
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 1351,
-      "endChar": 1425,
-      "exactQuote": "any kite still there at noon on Sunday goes to the main lost-property desk"
-    }
-  ],
+  "explanationZh": "星期日中午移交的是風箏及其認領標籤，不是取消物主的領取權。星期一應到新保管處查詢。",
+  "evidence": "Kites still there at noon on Sunday go to the main lost-property desk with their claim tags. / it is not the last time the owner can claim one / it cannot come until Monday.",
   "vocabulary": [
     {
-      "term": "temporary",
-      "zh": "暫時"
+      "term": "claim tags",
+      "zh": "認領標籤",
+      "note": "失物移交時隨物品附上，服務台可用來核對認領資訊。"
+    },
+    {
+      "term": "claim details",
+      "zh": "認領資料",
+      "note": "領回失物時供核對的認領資訊，不是表示物品已被領走的紀錄。"
     }
-  ]
+  ],
+  "groupId": "t13-r-p6-02"
 }

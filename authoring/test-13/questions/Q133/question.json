@@ -1,13 +1,11 @@
 {
-  "id": "t13-q133",
-  "uuid": "270155c1-79dc-5227-be50-5df90d168d3d",
+  "id": "t13-q133-r2-03bbc46b3a08",
   "testId": "test-13",
   "number": 133,
   "part": 6,
-  "groupId": "t13-r-p6-01",
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
-  "difficulty": "intermediate",
+  "difficulty": "advanced",
   "tags": [
     "text-completion",
     "business"
@@ -17,50 +15,38 @@
   "options": [
     {
       "id": "A",
-      "text": "so that",
-      "zh": "以免",
-      "whyZh": "等待標記後才答是為避免影響聽者選點；so that 引出的正是這項做法的目的。"
+      "text": "Point out the exit now, but wait for the return map before discussing the speaker location.",
+      "zh": "現在指出緊急出口，但等收到回程圖再談揚聲器的位置。",
+      "whyZh": "緊急出口可以立即告知；蘇里只交了去程圖，揚聲器的位置要等她交回回程圖再說。"
     },
     {
       "id": "B",
-      "text": "even if",
-      "zh": "即使",
-      "whyZh": "even if 是讓步，表示即使答覆不會影響選點，某個結果仍成立；這裡是在說明延後答覆的目的，不是在讓步。"
+      "text": "Point out the exit and the speaker now, since Suri has handed in a map.",
+      "zh": "現在就指出緊急出口和揚聲器，因為蘇里已交回一張圖。",
+      "whyZh": "出口可以說，但只交一張圖還不能回答揚聲器位置。"
     },
     {
       "id": "C",
-      "text": "unless",
-      "zh": "除非",
-      "whyZh": "unless 將無引導性作為不必等標記的例外，但前文要求技術人員一律等聽者記下位置。"
+      "text": "Wait for the return map before answering either of Suri’s questions.",
+      "zh": "等收到回程圖才回答蘇里的兩個問題。",
+      "whyZh": "揚聲器的問題要等，但緊急出口的問題應立即回答。"
     },
     {
       "id": "D",
-      "text": "as though",
-      "zh": "彷彿",
-      "whyZh": "as though 是彷彿，好像能假裝答覆不引導；實際目標是讓紀錄形成在答覆之前。"
+      "text": "Discuss the speaker now, but wait for the return map before pointing out the exit.",
+      "zh": "現在先談揚聲器，等收到回程圖再指出緊急出口。",
+      "whyZh": "這把兩種資訊的時間限制顛倒了。"
     }
   ],
   "answer": "A",
-  "explanationZh": "等待標記後才答是為避免影響聽者選點；so that 引出的正是這項做法的目的。",
-  "evidence": "only after they have marked a location / their answers will not guide anyone to a particular point",
-  "evidenceSpans": [
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 1162,
-      "endChar": 1200,
-      "exactQuote": "only after they have marked a location"
-    },
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 1210,
-      "endChar": 1267,
-      "exactQuote": "their answers will not guide anyone to a particular point"
-    }
-  ],
+  "explanationZh": "緊急出口可以立即告知；蘇里只交了去程圖，揚聲器的位置要等她交回回程圖再說。",
+  "evidence": "only after the listener has handed in both route maps / Emergency exit questions should be answered as soon as they are asked / Suri hands in the outbound map and asks where the loudspeaker is / she also asks which door is the emergency exit",
   "vocabulary": [
     {
-      "term": "so that",
-      "zh": "以免"
+      "term": "hands in",
+      "zh": "繳交",
+      "note": "hand in 後可接交回給負責人的地圖、表單等文件；hands in 是第三人稱單數。"
     }
-  ]
+  ],
+  "groupId": "t13-r-p6-01"
 }

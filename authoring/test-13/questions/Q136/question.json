@@ -1,11 +1,9 @@
 {
-  "id": "t13-q136",
-  "uuid": "4e8bfc0b-b5bc-5570-92aa-4060ea1f8c88",
+  "id": "t13-q136-r2-178b9b5f1c6f",
   "testId": "test-13",
   "number": 136,
   "part": 6,
-  "groupId": "t13-r-p6-02",
-  "revision": 1,
+  "revision": 3,
   "topic": "daily",
   "difficulty": "advanced",
   "tags": [
@@ -17,50 +15,38 @@
   "options": [
     {
       "id": "A",
-      "text": "When you move a tail to another drying spot, move its tag to that new spot as well.",
-      "zh": "若把尾帶移到另一處晾乾，也把它的認領標籤移到新位置。",
-      "whyZh": "認領靠風箏的一張標籤與晾乾位置的一張標籤配成一對。尾帶移位時同步移牌，之後才能憑配對找回正確的尾帶，而非憑顏色。"
+      "text": "the photo supports the pairing, but the tab in the tin does not establish a pickup for 27B",
+      "zh": "照片能支持配對結果，但領件盒裡的存根不能證明 27B 已被領走",
+      "whyZh": "照片拍到 27B 風箏和瑪拉記為 27B 的尾帶；照片單看不清數字，但可用瑪拉的晾乾紀錄來核對。圓點只表示尾帶已乾到可以拿取。實際領件存根寫的是不含 B 的 27，不能當成 27B 的領件紀錄。"
     },
     {
       "id": "B",
-      "text": "If two neighboring tails look alike, remove one tag so there is no confusion about the color.",
-      "zh": "若相鄰兩條尾帶看起來相同，就移除其中一張標籤，避免弄混顏色。",
-      "whyZh": "外觀相同正是保留各自標籤的情況，拿掉一張會失去歸屬線索。"
+      "text": "the photo supports the pairing and the tab in the tin establishes a pickup for 27B",
+      "zh": "照片能支持配對結果，領件盒裡的存根也證明 27B 已被領走",
+      "whyZh": "風箏和尾帶確實相配；但「27」與「27B」是不同的完整代碼，盒中的存根不能證明 27B 已領走。"
     },
     {
       "id": "C",
-      "text": "Take both tags off as soon as the kite is brought to the tent; the tails can be collected by color.",
-      "zh": "風箏一到帳篷就取下兩張標籤；憑顏色即可領尾帶。",
-      "whyZh": "同色彩帶可能屬於不同風箏；拿掉配對會妨礙後句所描述的認領方法。"
+      "text": "the photo does not support the pairing, although the tab in the tin does not establish a pickup for 27B",
+      "zh": "照片不足以支持配對結果，但領件盒的存根也不能證明 27B 被領走",
+      "whyZh": "存根確實無法證明 27B 被領走。不過照片裡的尾帶折標就是瑪拉記為 27B 的標籤，因此遮住數字不代表無法核對配對。"
     },
     {
       "id": "D",
-      "text": "Put each tag on the handle of a loan kite instead, so it can be carried through the practice field.",
-      "zh": "把所有標籤改貼到借用風箏的手把上，這樣風箏就能帶去練習區。",
-      "whyZh": "借用風箏與自有遊行風箏是不同用途；把認領標籤改貼借用風箏會使配對失效。"
+      "text": "the photo does not support the pairing, but the tab in the tin establishes a pickup for 27B",
+      "zh": "照片不足以支持配對結果，但領件盒裡的存根證明 27B 已被領走",
+      "whyZh": "瑪拉的晾乾紀錄足以補足照片裡看不到的數字；盒中只有 27 的存根，不能據此判定另一個代碼 27B 已被領走。"
     }
   ],
   "answer": "A",
-  "explanationZh": "認領靠風箏的一張標籤與晾乾位置的一張標籤配成一對。尾帶移位時同步移牌，之後才能憑配對找回正確的尾帶，而非憑顏色。",
-  "evidence": "attach a small matching claim tag to the kite and to the spot where its tail is drying / even when neighboring streamers happen to look alike",
-  "evidenceSpans": [
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 648,
-      "endChar": 734,
-      "exactQuote": "attach a small matching claim tag to the kite and to the spot where its tail is drying"
-    },
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 875,
-      "endChar": 927,
-      "exactQuote": "even when neighboring streamers happen to look alike"
-    }
-  ],
+  "explanationZh": "照片拍到 27B 風箏和瑪拉記為 27B 的尾帶；照片單看不清數字，但可用瑪拉的晾乾紀錄來核對。圓點只表示尾帶已乾到可以拿取。實際領件存根寫的是不含 B 的 27，不能當成 27B 的領件紀錄。",
+  "evidence": "any last letter is part of the family’s code. / A dot beside the code is the drying volunteer’s reminder that the streamer is dry enough to handle. / only when the kite is handed to the family. / the kite at the front is marked 27B / The tail’s folded tag is the one Mara recorded as 27B while she was drying it. / The tin contains a tab numbered 27, with no letter.",
   "vocabulary": [
     {
-      "term": "drying spot",
-      "zh": "晾乾的位置"
+      "term": "tears off",
+      "zh": "撕下",
+      "note": "指把卡片的一部分沿邊緣撕離，不是把整張卡片撕碎。"
     }
-  ]
+  ],
+  "groupId": "t13-r-p6-02"
 }

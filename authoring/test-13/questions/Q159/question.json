@@ -1,82 +1,57 @@
 {
-  "id": "t13-q159",
-  "uuid": "589f3703-f0b2-5262-b421-557eded5297e",
+  "id": "t13-q159-r2-1d62ec382b5f",
   "testId": "test-13",
   "number": 159,
   "part": 7,
-  "groupId": "t13-r-p7-04",
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
   "difficulty": "advanced",
   "tags": [
     "reading-comprehension",
-    "triple-passage",
     "business"
   ],
-  "prompt": "A draft handover says, “At 11:00, put channel 4 on the audience sign for the Korean panel.” Which revision makes the instruction consistent with the technical brief and Niall's update?",
-  "promptZh": "接班草稿寫著：「11:00 在聽眾指示牌上顯示第 4 頻道，供韓語座談使用。」哪項改法同時符合技術簡報和奈爾的更新？",
+  "prompt": "What is the most useful correction before the debrief and the live panel?",
+  "promptZh": "檢討會及正式座談開始前，最有用的修正是什麼？",
   "options": [
     {
       "id": "A",
-      "text": "Keep 11:00 for a staff-only test and list 11:18 as the expected panel start, not the test time.",
-      "zh": "保留 11:00 供工作人員測試，將 11:18 列為預定座談開始，而不是測試時間。",
-      "whyZh": "簡報把 11:00 定為韓語測試且不開放聽眾。奈爾說測試不變、座談改到 11:18，必須分開記錄這兩件事。"
+      "text": "Change the note to a running-order issue and replace the booth card before the panel.",
+      "zh": "把備註改為流程表的問題，並在座談前換掉口譯室的卡片。",
+      "whyZh": "口譯員說朴博士在休息後發言，與主席排練時按藍卡讀出的順序一致。這不是把順序翻反，而是排練讀到舊流程。正式流程改為休息前，因此要換卡。"
     },
     {
       "id": "B",
-      "text": "Delay the Korean test until 11:18, but show channel 4 to the audience at 11:00.",
-      "zh": "將韓語測試延到 11:18，但 11:00 先對聽眾顯示第 4 頻道。",
-      "whyZh": "測試仍在 11:00，而且測試不開放聽眾，兩項都和資料相反。"
+      "text": "Replace the booth card, but keep the note about the interpreter reversing two events.",
+      "zh": "換掉口譯室的卡片，但保留口譯員顛倒兩項安排順序的備註。",
+      "whyZh": "換卡適合正式場次，但備註不能說口譯員顛倒順序。排練用的藍卡本來就排在休息後；要比較的是當時主席讀的內容，不是正式活動的新順序。"
     },
     {
       "id": "C",
-      "text": "Cancel the test, since the panel no longer starts at 11:00, and show channel 2 for its interpretation.",
-      "zh": "座談不再於 11:00 開始，故取消測試，並顯示第 2 頻道供座談口譯。",
-      "whyZh": "前文沒取消測試；第 2 頻道用於主講，韓語口譯使用的是第 4 頻道。"
+      "text": "Raise the extra announcement with the interpreter before changing the booth card.",
+      "zh": "先和口譯員討論為何多做了這段宣告，再更換口譯室的卡片。",
+      "whyZh": "空欄只表示主席的原話還沒補進逐字稿。錄音顯示主席按藍卡自上而下讀，卡上本來就有朴博士的發言安排，不能因空白就推定口譯員自己加了一段。"
     },
     {
       "id": "D",
-      "text": "Run the audience panel at 11:00 and list 11:18 as the test time for the French booth.",
-      "zh": "11:00 開始聽眾座談，並把 11:18 列為法語口譯間的測試時間。",
-      "whyZh": "11:00 是韓語測試，11:18 是韓語座談；法語口譯安排較早，和此處的測試無關。"
+      "text": "Remove the note about an interpreting error, but leave the booth card in use for the panel.",
+      "zh": "刪掉有口譯錯誤的備註，但正式座談仍沿用口譯室的卡片。",
+      "whyZh": "藍卡可以用來查當時主席讀的是什麼，卻不能沿用到正式座談：藍卡把朴博士排在休息後，正式流程已改為休息前。"
     }
   ],
   "answer": "A",
-  "explanationZh": "簡報把 11:00 定為韓語測試且不開放聽眾。奈爾說測試不變、座談改到 11:18，必須分開記錄這兩件事。",
-  "evidence": "the Korean booth will test channel 4 from 11:00 to 11:12 / The panel team did not request an audience channel during testing / The panel start moved to 11:18, but the test is still at 11:00",
-  "evidenceSpans": [
-    {
-      "documentId": "doc1",
-      "sourceField": "passage",
-      "startChar": 175,
-      "endChar": 231,
-      "documentStartChar": 120,
-      "documentEndChar": 176,
-      "exactQuote": "the Korean booth will test channel 4 from 11:00 to 11:12"
-    },
-    {
-      "documentId": "doc1",
-      "sourceField": "passage",
-      "startChar": 273,
-      "endChar": 338,
-      "documentStartChar": 218,
-      "documentEndChar": 283,
-      "exactQuote": "The panel team did not request an audience channel during testing"
-    },
-    {
-      "documentId": "doc2",
-      "sourceField": "passage",
-      "startChar": 1155,
-      "endChar": 1217,
-      "documentStartChar": 419,
-      "documentEndChar": 481,
-      "exactQuote": "The panel start moved to 11:18, but the test is still at 11:00"
-    }
-  ],
+  "explanationZh": "口譯員說朴博士在休息後發言，與主席排練時按藍卡讀出的順序一致。這不是把順序翻反，而是排練讀到舊流程。正式流程改為休息前，因此要換卡。",
+  "evidence": "The chair used the booth's blue running-order card during the staff test. / It put Dr. Park after the break. / Niall's revised order for the actual panel now has Dr. Park speaking before the break. / After the break, Dr. Park will speak / That line is the reviewer's English rendering of what the interpreter said. / The adjacent blank in the transcript is just an unfilled space for the chair's words / the chair reads from top to bottom and pauses at the break heading on the blue card.",
   "vocabulary": [
     {
-      "term": "panel",
-      "zh": "座談"
+      "term": "debrief",
+      "zh": "事後檢討會",
+      "note": "在測試或活動後回顧發生了什麼、哪些做法需要調整的會議。"
+    },
+    {
+      "term": "rendering",
+      "zh": "用另一種語言表達的版本",
+      "note": "在口譯或翻譯的語境中，指用另一種語言表達原話的版本，不是逐字稿中的原話。"
     }
-  ]
+  ],
+  "groupId": "t13-r-q159-161"
 }

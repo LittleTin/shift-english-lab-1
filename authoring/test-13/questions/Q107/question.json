@@ -1,52 +1,51 @@
 {
-  "id": "t13-q107",
-  "uuid": "db8bf364-3990-5eff-9bd0-d7f38d751c58",
+  "id": "t13-q107-r2-2f5187a487b1",
   "testId": "test-13",
   "number": 107,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
-  "difficulty": "foundation",
+  "difficulty": "intermediate",
   "tags": [
     "incomplete-sentence",
     "business"
   ],
-  "prompt": "To have the courier fee reimbursed, attach the receipt as evidence _____ payment, not the estimate that was issued before pickup.",
-  "promptZh": "要申請核銷快遞費，請附上收據作為付款證明，不要附上取件前開出的估價單。",
+  "prompt": "The same courier portal shows a delivery confirmation and an amount marked “charged.” For a company-paid booking, that amount is billed to the company, whereas a personal card receipt shows what the employee actually paid. Asked to substantiate an out-of-pocket expense, the employee should _____.",
+  "promptZh": "同一個快遞網站顯示送達確認，以及一個標為「已收費」的金額。公司付款的預約會把該金額記到公司帳上，個人卡的收據才顯示員工自己實際付了多少。若被要求證明個人先墊的款項，員工應_____。",
   "options": [
     {
       "id": "A",
-      "text": "by",
-      "zh": "藉由；由",
-      "whyZh": "evidence by 若接人或機構可指該方提出證據；payment 不是提出證據的一方，而是要證明的事。"
+      "text": "use the personal card receipt to show payment and the delivery confirmation only if delivery itself needs verification",
+      "zh": "用個人卡收據證明付款；只有要另證明送達時才使用送達確認",
+      "whyZh": "個人收據證明實際由員工付款；送達確認的證明對象不同。"
     },
     {
       "id": "B",
-      "text": "of",
-      "zh": "關於；……的",
-      "whyZh": "evidence of payment 指能證明已付款的文件。收據符合，取件前的估價單只有預計費用。"
+      "text": "use the portal’s charged amount as proof of personal payment whenever it matches the card receipt",
+      "zh": "只要網站收費金額與卡費收據相同，就以網站金額證明個人付款",
+      "whyZh": "相同金額不代表付款人相同，公司付款的帳單也可能同額。"
     },
     {
       "id": "C",
-      "text": "through",
-      "zh": "透過",
-      "whyZh": "through 表示取得證據的途徑；句意不是付款這一手段如何取得證據，而是證據要證明哪件事。"
+      "text": "use the personal card receipt to show the amount, but identify the payer from the name of the recipient on the delivery confirmation",
+      "zh": "用個人卡收據證明金額，但用送達確認上的收件人姓名辨認付款人",
+      "whyZh": "用個人卡收據確認金額正確，但收件人不一定是付款人；送達資料不能辨認誰墊款。"
     },
     {
       "id": "D",
-      "text": "among",
-      "zh": "在……之中",
-      "whyZh": "among 通常比較複數群體或名單成員，既不符合不可數的 payment，也不表達收據與付款的證明關係。"
+      "text": "use the company billing entry for the employee’s payment and retain the personal receipt only for delivery",
+      "zh": "用公司帳項證明員工付款，個人收據只留作送達證明",
+      "whyZh": "把兩種資料的用途對調了；公司帳項不是個人先墊的依據。"
     }
   ],
-  "answer": "B",
-  "explanationZh": "evidence of payment 指能證明已付款的文件。收據符合，取件前的估價單只有預計費用。",
-  "evidence": "To have the courier fee reimbursed, attach the receipt as evidence of payment, not the estimate that was issued before pickup.",
-  "evidenceZh": "要申請核銷快遞費，請附上收據作為付款證明，不要附上取件前開出的估價單。",
+  "answer": "A",
+  "explanationZh": "個人收據證明實際由員工付款；送達確認的證明對象不同。",
+  "evidence": "that amount is billed to the company / a personal card receipt shows what the employee actually paid / substantiate an out-of-pocket expense",
   "vocabulary": [
     {
-      "term": "of",
-      "zh": "關於；……的"
+      "term": "out-of-pocket expense",
+      "zh": "自掏腰包的支出",
+      "note": "報帳時指本人先從自己的資金支付的費用。"
     }
   ]
 }

@@ -1,13 +1,11 @@
 {
-  "id": "t13-q131",
-  "uuid": "957a8137-7c6b-5b67-86f2-c06a2cf318cd",
+  "id": "t13-q131-r2-fc6f304cef87",
   "testId": "test-13",
   "number": 131,
   "part": 6,
-  "groupId": "t13-r-p6-01",
-  "revision": 1,
+  "revision": 2,
   "topic": "business",
-  "difficulty": "intermediate",
+  "difficulty": "advanced",
   "tags": [
     "text-completion",
     "business"
@@ -17,50 +15,43 @@
   "options": [
     {
       "id": "A",
-      "text": "as well as",
-      "zh": "以及",
-      "whyZh": "文中首先要取得方向改變的位置；as well as 會把「只記最響處」也寫成另一項要求，和 only 及測試目的不合。"
+      "text": "Use mark 2 for the comparison and preserve mark 4 in the notes.",
+      "zh": "以第 2 號記號做比較，並將第 4 號記號保留在備註。",
+      "whyZh": "第 2 號雖先發生，但當時聽者因推車擋路而轉身，不能採作比較標記。"
     },
     {
       "id": "B",
-      "text": "rather than",
-      "zh": "而不是",
-      "whyZh": "方向改變不見得出現在最響處；rather than 引出應避免的替代做法，不能只記最大音量的位置。"
+      "text": "Use mark 4 for the comparison and retain mark 2 as an interrupted observation.",
+      "zh": "以第 4 號記號做比較，第 2 號則保留為受干擾的觀察。",
+      "whyZh": "第 4 號是在持續行走中第一個合格的方向變化；第 2 號受干擾，不用來比較，但仍要保留紀錄。"
     },
     {
       "id": "C",
-      "text": "in addition to",
-      "zh": "另外還",
-      "whyZh": "in addition to 指另外記錄，會把原先沒有辨識方向的做法保留下來，不是將它換成指定記錄項目。"
+      "text": "Use mark 4 for the comparison and delete mark 2 from the notes.",
+      "zh": "以第 4 號記號做比較，並從備註中刪除第 2 號記號。",
+      "whyZh": "比較位置選對了，但原指示是保留受干擾的觀察，而不是刪除。"
     },
     {
       "id": "D",
-      "text": "after",
-      "zh": "在……之後",
-      "whyZh": "after 把記最響處當成先行程序；指示要的是用同一趟路徑記方向改變，不要求先記最大音量。"
+      "text": "Use mark 5 for the comparison and retain mark 2 as an interrupted observation.",
+      "zh": "以第 5 號記號做比較，第 2 號則保留為受干擾的觀察。",
+      "whyZh": "受干擾的紀錄保留得對，但第 5 號只有最響的證據，不是合格的方向變化。"
     }
   ],
   "answer": "B",
-  "explanationZh": "方向改變不見得出現在最響處；rather than 引出應避免的替代做法，不能只記最大音量的位置。",
-  "evidence": "the first location at which the voice seems to change direction / not speaker output",
-  "evidenceSpans": [
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 514,
-      "endChar": 577,
-      "exactQuote": "the first location at which the voice seems to change direction"
-    },
-    {
-      "sourceField": "reviewPassage",
-      "startChar": 1309,
-      "endChar": 1327,
-      "exactQuote": "not speaker output"
-    }
-  ],
+  "explanationZh": "第 4 號是在持續行走中第一個合格的方向變化；第 2 號受干擾，不用來比較，但仍要保留紀錄。",
+  "evidence": "the first location where a listener notices a change while still walking / keep that observation in the notes, but it cannot be the comparison mark / at mark 2 while turning when a cart blocked the path / at mark 4, without stopping or turning; the voice was loudest at mark 5",
   "vocabulary": [
     {
-      "term": "rather than",
-      "zh": "而不是"
+      "term": "acoustic tiles",
+      "zh": "吸音板",
+      "note": "裝在牆面的聲學材料；文中是走動聆聽時經過的牆段特徵。"
+    },
+    {
+      "term": "comparison mark",
+      "zh": "比較用的位置標記",
+      "note": "走動聆聽時，用來比較所感知聲音方向的標記，不是標示人聲最響的位置。"
     }
-  ]
+  ],
+  "groupId": "t13-r-p6-01"
 }

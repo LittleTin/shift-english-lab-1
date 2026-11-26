@@ -1,52 +1,51 @@
 {
-  "id": "t13-q114",
-  "uuid": "bf0f2d52-e09e-5a25-b5a8-31f5bdb7f7d7",
+  "id": "t13-q114-r2-575016cd4495",
   "testId": "test-13",
   "number": 114,
   "part": 5,
-  "revision": 1,
+  "revision": 2,
   "topic": "daily",
-  "difficulty": "foundation",
+  "difficulty": "intermediate",
   "tags": [
     "incomplete-sentence",
     "daily"
   ],
-  "prompt": "The rooftop terrace may be _____ for repairs while the railing is being replaced. Please check the lobby sign before using the stairs.",
-  "promptZh": "更換欄杆期間，頂樓露台可能會因維修而關閉。走樓梯上去前請先看大廳的告示牌。",
+  "prompt": "The manager told residents, “The roof terrace won’t reopen before Monday.” A crew member later said the railing should be finished by Sunday, but the manager would not give a date for the inspection. A resident planning a Monday gathering should understand the manager’s original statement as _____.",
+  "promptZh": "管理員告訴住戶：「屋頂露台在星期一之前不會重新開放。」工作人員後來說欄杆應可在星期日完工，但管理員沒有提供檢查日期。打算星期一聚會的住戶，應把管理員原先的說法理解為_____。",
   "options": [
     {
       "id": "A",
-      "text": "close",
-      "zh": "關閉；靠近的",
-      "whyZh": "close 用作形容詞可以指「靠近」，但這裡沒有距離的比較；若表示被關閉，需用 closed。"
+      "text": "a commitment to reopen on Monday, provided the railing work finishes by Sunday",
+      "zh": "只要欄杆在星期日完工，就承諾星期一會重新開放",
+      "whyZh": "完工不等於已檢查；原句也沒有承諾星期一開放。"
     },
     {
       "id": "B",
-      "text": "closes",
-      "zh": "關閉（主動，單數）",
-      "whyZh": "closes 是第三人稱單數現在式，不能接在 may be 後構成被動語態。"
+      "text": "an assurance that Monday is the latest the terrace will remain closed",
+      "zh": "保證露台最晚只會關閉到星期一",
+      "whyZh": "「星期一之前不開放」給的是最早可能日期，並未設定最晚日期。"
     },
     {
       "id": "C",
-      "text": "closed",
-      "zh": "關閉的；被關閉",
-      "whyZh": "closed 是過去分詞，may be closed 表示露台可能會被關閉；for repairs 說明原因。"
+      "text": "a limit on how early the terrace can reopen, not a guarantee that it will be open on Monday",
+      "zh": "界定露台最早可能何時開放，不保證星期一就能使用",
+      "whyZh": "before Monday 的否定只排除星期一之前；星期一可能開放，但不是承諾，且檢查日期未公布。"
     },
     {
       "id": "D",
-      "text": "closure",
-      "zh": "關閉（名詞）",
-      "whyZh": "closure 是「關閉」這件事的名詞，不是露台本身的狀態，不能用 may be closure 表達露台停用。"
+      "text": "a warning that reopening on Monday is impossible even if the railing work and inspection finish beforehand",
+      "zh": "即使欄杆和檢查都提前完成，星期一也不可能開放的警告",
+      "whyZh": "before Monday 不包括星期一當天；這句無法推出星期一必定不能開放。"
     }
   ],
   "answer": "C",
-  "explanationZh": "closed 是過去分詞，may be closed 表示露台可能會被關閉；for repairs 說明原因。",
-  "evidence": "The rooftop terrace may be closed for repairs while the railing is being replaced. Please check the lobby sign before using the stairs.",
-  "evidenceZh": "更換欄杆期間，頂樓露台可能會因維修而關閉。走樓梯上去前請先看大廳的告示牌。",
+  "explanationZh": "before Monday 的否定只排除星期一之前；星期一可能開放，但不是承諾，且檢查日期未公布。",
+  "evidence": "won’t reopen before Monday / railing should be finished by Sunday / would not give a date for the inspection",
   "vocabulary": [
     {
-      "term": "closed",
-      "zh": "關閉的；被關閉"
+      "term": "roof terrace",
+      "zh": "屋頂露臺",
+      "note": "指屋頂上供人使用的開放平台，可用於描述住戶共用設施。"
     }
   ]
 }
