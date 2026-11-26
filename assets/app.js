@@ -1912,7 +1912,11 @@ function checkPracticeRange(){
  }
 }
 
-async function moveGroup(delta,automatic=false){const s=state.active,q=questionByActive();if(!s||!q)return;const qs=groupQuestions(q),indices=qs.map(x=>s.questionIds.indexOf(x.id)),start=Math.min(...indices),end=Math.max(...indices);if(listening(s)&&(delta<0||!groupReady(sessionGroup(q.groupId,s))||formalRunning))return;let target=delta>0?end+1:start-1;if(target<0||target>=s.questionIds.length){if(automatic&&listening(s)&&delta>0)beginFormalExpiry(s);return}if(formal(s)&&s.examPhase==='reading'&&sessionQuestion(s.questionIds[target],s)?.part<5)return;if(listening(s)&&sessionQuestion(s.questionIds[target],s)?.part>=5){beginFormalExpiry(s);return;}stopAudio();s.index=target;const targetQ=questionByActive();s.index=s.questionIds.indexOf(groupQuestions(targetQ)[0].id);activeTranscript=null;await persist();render();window.scrollTo({top:0,behavior:'instant'})}
+async function moveGroup(delta,automatic=false){const s=state.active,q=questionByActive();if(!s||!q)return;const qs=groupQuestions(q),indices=qs.map(x=>s.questionIds.indexOf(x.id)),start=Math.min(...indices),end=Math.max(...indices);if(listening(s)&&(delta<0||!groupReady(sessionGroup(q.groupId,s))||formalRunning))return;let target=delta>0?end+1:start-1;if(target<0||target>=s.questionIds.length){if(automatic&&listening(s)&&delta>0)beginFormalExpiry(s);return}if(formal(s)&&s.examPhase==='reading'&&sessionQuestion(s.questionIds[target],s)?.part<5)return;if(listening(s)&&sessionQuestion(s.questionIds[target],s)?.part>=5){beginFormalExpiry(s);return;}const originFocus=document.activeElement;
+stopAudio();s.index=target;const targetQ=questionByActive();s.index=s.questionIds.indexOf(groupQuestions(targetQ)[0].id);activeTranscript=null;const targetIndex=s.index;await persist();
+const moveFocus=!automatic&&route==='quiz'&&state.active===s&&s.index===targetIndex&&document.activeElement===originFocus&&!document.getElementById('modal').open;
+render();window.scrollTo({top:0,behavior:'instant'});
+if(moveFocus)document.getElementById('main')?.focus({preventScroll:true})}
 function moveQuestion(delta){return moveGroup(delta)}
 
 async function submitAnswer(){if(!state.active)return;if(state.active.index===state.active.questionIds.length-1)return finishSession();moveQuestion(1)}
