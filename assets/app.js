@@ -35,7 +35,7 @@ const opusRequired=p=>typeof p==='string'&&p.endsWith('.ogg');
 const opusUnavailable='This browser does not support Ogg Opus audio. Please use a browser with native Opus playback.';
 let storageMode='loading',db=null,saveQueue=Promise.resolve(),toastHandle=null;
 let guestBaseline=null,guestActiveRevision=null,guestSavedAnswerKey=null,guestSubmitPending=false,guestRejectedAutoSubmit=null;
-let localSaveFailure=false;
+let localSaveFailure=false, guestProgressConflict=false;
 const localSaveMessage='The browser could not save your latest changes. Keep this tab open and retry, or download a backup of this tab’s latest progress.';
 let state={formatVersion:1,noteDraftEpoch:'initial',settings:{fontScale:1,translation:false},attempts:[],stats:{},stars:{},notes:{},sessions:[],active:null,importedPacks:[],lastBackup:null};
 let route='home',mobileNav=false,filterTopic='all',filters={section:'all',part:'all',topic:'all',difficulty:'all',accent:'all',count:20,unseen:false},listFilter='all',listSearch='',listLimit=40;
@@ -951,7 +951,8 @@ function persist(strict=false,historyOnly=false,guestMode=null,guestSubmission=n
  });
  saveQueue=operation;
  return operation.then(saved=>{
-  if(guestWarning)notify(guestWarning);
+  if(guestWarning){guestProgressConflict=true;notify(guestWarning);updateStorageBadge()}
+  else if(saved&&guestProgressConflict&&activeCommit){guestProgressConflict=false;updateStorageBadge()}
   if(!saved)return false;
   if(guestMode==='restore')return true;
   if(!guestSubmission&&!historyOnly&&!checkpointApplying&&!accountActiveConflict&&owner&&owner===syncOwner&&storageMode==='indexeddb'){
@@ -987,8 +988,8 @@ if(saved===false||generation!==noteGeneration||noteTokens.get(draft.questionId)!
 if(guestCanPersist()){removeNoteDraft(draft.token);setNoteStatus(draft.questionId,guestSaveLabel())}else setNoteStatus(draft.questionId,'Draft restored. Please export a backup.');
 return true;
 }
-function storageBadgeWarning(){return localSaveFailure||storageMode==='memory'||storageMode==='tabstorage'}
-function storageBadgeLabel(){return localSaveFailure?'Latest changes not saved':storageMode==='tabstorage'?'Saved in this tab only':storageMode==='memory'?'Temporary storage · Back up now':'Records saved locally'}
+function storageBadgeWarning(){return localSaveFailure||(!syncOwner&&guestProgressConflict)||storageMode==='memory'||storageMode==='tabstorage'}
+function storageBadgeLabel(){return localSaveFailure?'Latest changes not saved':!syncOwner&&guestProgressConflict?'Progress not saved in this tab':storageMode==='tabstorage'?'Saved in this tab only':storageMode==='memory'?'Temporary storage · Back up now':'Records saved locally'}
 function updateStorageBadge(){const b=document.getElementById('storage-badge');if(b){b.innerHTML=icon(storageBadgeWarning()?'info':'shield')+storageBadgeLabel();b.classList.toggle('warn',storageBadgeWarning())}}
 function validatePack(p){
 if(!p||p.schemaVersion!==1||!safeId(p.testId)||!Array.isArray(p.questions)||!Array.isArray(p.groups)||p.questions.length<1||p.questions.length>5000)throw new Error('Invalid pack format. Expected schemaVersion: 1 and questions/groups.');
