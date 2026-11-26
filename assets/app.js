@@ -1077,6 +1077,10 @@ function registerPack(p,official=false){
  if(official)officialPacks.set(p.testId,p);
  loaded.add(p.testId)
 }
+function packLoadMessage(test){
+ const next=location.protocol==='file:'?'Extract the complete package before opening index.html.':'Check your connection and try again.';
+ return 'Could not load the questions for '+displayEnglish(test.title||test.id)+'. '+next;
+}
 async function loadTest(id){
  const t=officialEntry(id);
  if(t?officialPacks.has(id):loaded.has(id))return;
@@ -1092,9 +1096,11 @@ async function loadTest(id){
   script.onload=()=>{try{
    const p=(window.SHIFT_PACKS||[]).find(p=>p.testId===id);
    if(!p)throw new Error('The test-pack file has no content');
-   registerPack(p,true);resolve()
+   registerPack(p,true);
+   if(persistentError===packLoadMessage(t)){persistentError='';showPersistentError()}
+   resolve()
   }catch(e){reject(e)}};
-  script.onerror=()=>{script.remove();reject(new Error('Unable to load '+t.path+'. Extract the entire folder before opening index.html.'))};
+  script.onerror=()=>{script.remove();reject(new Error(packLoadMessage(t)))};
   document.head.append(script)
  });
  loading.set(id,promise);try{await promise}finally{loading.delete(id)}
@@ -1142,7 +1148,17 @@ async function withBusy(fn){if(busy||guestSubmitPending||guestBackupApplying)ret
 async function navigate(dest){if(route==='quiz'||route==='answer-review'){stopAudio();await persist()}mobileNav=false;route=dest;syncListeningCountdown(state.active);if(listening())void persist();activeTranscript=null;listLimit=40;if(['review','favorites'].includes(dest)){
  const hasRecords=dest==='review'?Object.values(state.stats).some(item=>item.needsReview||item.wrong>0):Object.values(state.stars).some(Boolean);
  // Keep account hydration and every saved/history filter on the existing path.
- if(syncOwner||authRestoreStatus==='waiting'||authRestoreStatus==='checking'||hasRecords){shell('<div class="loading">Loading your learning records…</div>');await loadAll()}
+ if(syncOwner||authRestoreStatus==='waiting'||authRestoreStatus==='checking'||hasRecords){
+  shell('<div class="loading">Loading your learning records…</div>');
+  try{await loadAll()}catch(e){
+   console.error(e);
+   const hint=location.protocol==='file:'?'Extract the complete package before opening index.html.':'Check your connection and try again.';
+   shell('<section class="panel"><h1>Could not load questions</h1><p>'+hint+'</p><p>Your saved records have not been changed.</p><div class="btn-row">'+btn('Try Again','nav-'+dest,'primary')+btn('Back to Home','nav-home')+'</div></section>');
+   window.scrollTo({top:0,behavior:'instant'});
+   document.getElementById('main')?.focus({preventScroll:true});
+   return
+  }
+ }
 }render();window.scrollTo({top:0,behavior:'instant'});// All navigate() calls are user-initiated; rendering removed the initiating control.
  document.getElementById('main')?.focus({preventScroll:true});if(authRestoreStatus==='waiting'&&navigator.onLine!==false)void recheckAuthOnReconnect()}
 function render(){if(!diagnostic)try{tabWrite(LAST_PAGE_TAB_KEY,route==='data'?'data':null);if(route==='quiz'&&state.active)sessionStorage.setItem(scopedKey('shift-last-quiz'),state.active.id);else sessionStorage.removeItem(scopedKey('shift-last-quiz'))}catch(e){}if(route==='home')shell(homePage());else if(route==='practice')shell(practicePage());else if(route==='review'||route==='favorites')shell(listPage());else if(route==='stats')shell(statsPage());else if(route==='data')shell(dataPage());else if(route==='quiz')renderQuizWithChartPosition();else if(route==='result')shell(resultPage());else if(route==='answer-review')shell(reviewDetailPage());syncAudioUI()}
