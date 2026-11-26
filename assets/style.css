@@ -70,3 +70,11 @@
 
 /* Preserve source proportions for scored listening images. */
 .scored-graphic .scene-img{height:auto;aspect-ratio:auto;max-height:clamp(300px,55vh,580px);object-fit:contain}
+
+/* Keep actionable storage warnings visible without crowding mobile navigation. */
+@media(max-width:760px){
+ .topbar:has(#storage-badge.warn){height:auto;display:grid;grid-template-columns:minmax(0,1fr) auto;padding-block:8px}
+ .topbar:has(#storage-badge.warn) .top-actions{display:contents}
+ .topbar:has(#storage-badge.warn) .auth-badge{grid-column:2;grid-row:1}
+ .topbar .top-actions #storage-badge.warn{display:flex;grid-column:1/-1;grid-row:2;justify-self:start;max-width:100%;white-space:normal}
+}
