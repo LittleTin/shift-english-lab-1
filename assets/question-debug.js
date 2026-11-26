@@ -111,7 +111,14 @@ function show(found){
  card.append(details);
  const audio=inspectRanges(q,g,p);
  if(audio.length){addPlayers(card,uuid,g,p);card.append(el('h3','Original audio files and playback ranges'));for(const row of audio)audioSource(card,row);}
- result.replaceChildren(card);head.focus({preventScroll:true});
+ result.replaceChildren(card);
+ focusResult(head);
+}
+function focusResult(head){
+ head.focus({preventScroll:true});
+ const rect=head.getBoundingClientRect(),viewport=window.visualViewport;
+ const top=viewport?.offsetTop??0,bottom=top+(viewport?.height??window.innerHeight);
+ if(rect.top<top||rect.bottom>bottom)head.scrollIntoView({block:'nearest',inline:'nearest',behavior:'instant'});
 }
 function clearResult(){
  for(const a of result.querySelectorAll('audio'))a.pause();
