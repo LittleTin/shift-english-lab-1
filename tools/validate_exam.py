@@ -6,7 +6,8 @@ import argparse,json,math,re,subprocess
 from add_pack import validate_pack, PACK_WRAPPER, parse_json
 from release_qa_v151.continuous_contract import RATE, SILENCE_ROLES, geometry, timeline
 from release_qa_v151.group_layout import (require_contiguous_groups, require_part7_layout,
-                                          uses_source_document_count)
+                                          require_physical_part7_documents,
+                                          uses_physical_part7_layout, uses_source_document_count)
 
 COUNTS={1:6,2:25,3:39,4:30,5:30,6:16,7:54}
 
@@ -34,7 +35,12 @@ def source_document_count(authoring, test_id, group):
     check(isinstance(source,dict) and all(source.get(key)==group[key]
           for key in ('id','testId','part','passage','passageZh')),
           f'{gid}: Part 7 authoring record differs from candidate')
-    count=source.get('documentCount')
+    if uses_physical_part7_layout(test_id):
+        count=require_physical_part7_documents(source,check)
+        check('documents' not in group or group['documents']==source['documents'],
+              f'{gid}: candidate documents differ from authoring record')
+    else:
+        count=source.get('documentCount')
     check('documentCount' not in group or (type(group['documentCount']) is int
           and group['documentCount']==count),
           f'{gid}: candidate documentCount differs from authoring record')
@@ -48,8 +54,10 @@ def validate_group_layout(pack, filename, authoring):
     by=require_contiguous_groups(pack['questions'],layout_check)
     test_id=pack['testId']
     if uses_source_document_count(test_id):
+        strict_physical=uses_physical_part7_layout(test_id)
         require_part7_layout(pack['groups'],by,
-                             lambda row: source_document_count(authoring,test_id,row),layout_check)
+                             lambda row: source_document_count(authoring,test_id,row),layout_check,
+                             require_ten_singles=strict_physical)
     else:
         # Preserve the existing historical format check without new metadata.
         passages=Counter()

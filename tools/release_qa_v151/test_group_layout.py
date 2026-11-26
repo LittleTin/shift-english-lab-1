@@ -20,6 +20,7 @@ class GroupLayout(unittest.TestCase):
         fixtures.Synthetic.setUpClass()
 
     def setUp(self):
+        self.test_id = TEST
         temp = tempfile.TemporaryDirectory()
         self.addCleanup(temp.cleanup)
         self.root = Path(temp.name)
@@ -28,10 +29,10 @@ class GroupLayout(unittest.TestCase):
         for ref in (PIC, SV):
             w(self.site, ref, b'<svg/>')
         self.pack = fixtures.Synthetic.make(self)
-        self.pack['testId'] = self.pack['listeningPlan']['testId'] = TEST
+        self.pack['testId'] = self.pack['listeningPlan']['testId'] = self.test_id
         q, g = self.pack['questions'], self.pack['groups']
         for item in q + g:
-            item.update(testId=TEST, topic='business')
+            item.update(testId=self.test_id, topic='business')
         for row in q:
             row['tags'] = []
         for row in g:
@@ -53,24 +54,24 @@ class GroupLayout(unittest.TestCase):
         g = p['groups']
         if not inventory:
             p = {k:v for k,v in p.items() if k != 'listeningPlan'}
-        w(self.site, f'data/{TEST}.json', p)
-        w(self.site, f'data/{TEST}.js',
+        w(self.site, f'data/{self.test_id}.json', p)
+        w(self.site, f'data/{self.test_id}.js',
           b'window.SHIFT_PACKS=window.SHIFT_PACKS||[];window.SHIFT_PACKS.push('
           + e.canonical(p).strip() + b');\n')
         if self.source.exists():
             shutil.rmtree(self.source)
-        qp = [f'{TEST}/questions/Q{row["number"]:03}/question.json' for row in q]
-        gp = [f'{TEST}/groups/{row["id"]}/group.json' for row in g]
+        qp = [f'{self.test_id}/questions/Q{row["number"]:03}/question.json' for row in q]
+        gp = [f'{self.test_id}/groups/{row["id"]}/group.json' for row in g]
         for path, row in zip(qp + gp, q + g, strict=True):
             w(self.source, path, row)
-        w(self.source, f'{TEST}/exam.json',
-          dict(testId=TEST, records=dict(questions=qp, groups=gp),
+        w(self.source, f'{self.test_id}/exam.json',
+          dict(testId=self.test_id, records=dict(questions=qp, groups=gp),
                metadata={k:v for k,v in p.items() if k not in ('questions', 'groups')}))
         refs = sorted(set(e.media_refs(p)))
         for ref in refs:
-            w(self.source, f'{TEST}/common/media/{ref}', (self.site / ref).read_bytes())
-        w(self.source, f'{TEST}/common/media.json',
-          dict(files=[dict(url=ref, source=f'{TEST}/common/media/{ref}') for ref in refs]))
+            w(self.source, f'{self.test_id}/common/media/{ref}', (self.site / ref).read_bytes())
+        w(self.source, f'{self.test_id}/common/media.json',
+          dict(files=[dict(url=ref, source=f'{self.test_id}/common/media/{ref}') for ref in refs]))
 
     def assert_gates(self, rejection=None):
         for inventory in (False, True):
@@ -79,10 +80,10 @@ class GroupLayout(unittest.TestCase):
                 if inventory:
                     cmd = [TOOLS/'release_qa_v151/exam_lock.py', 'snapshot',
                            '--source', self.source, '--site', self.site,
-                           '--exam', TEST, '--out', self.root/'draft-inventory.json']
+                           '--exam', self.test_id, '--out', self.root/'draft-inventory.json']
                 else:
                     cmd = [TOOLS/'validate_exam.py', '--no-plan', '--authoring', self.source,
-                           '--site', self.site, f'{TEST}.json']
+                           '--site', self.site, f'{self.test_id}.json']
                 proc = subprocess.run([sys.executable, *map(str, cmd)],
                                       capture_output=True, text=True)
                 if rejection:
@@ -111,3 +112,54 @@ class GroupLayout(unittest.TestCase):
     def test_missing_source_document_count_fails_closed(self):
         del next(row for row in self.pack['groups'] if row['part'] == 7)['documentCount']
         self.assert_gates('authoring record needs an integer documentCount')
+
+
+    def physical_fixture(self):
+        self.test_id = 'test-13'
+        self.pack['testId'] = self.pack['listeningPlan']['testId'] = self.test_id
+        q, g = self.pack['questions'], self.pack['groups']
+        for item in q + g:
+            item['testId'] = self.test_id
+        starts = [147, 150, 153, 157, 159, 162, 165, 168, 171, 174, 176]
+        for lo, hi in zip(starts, starts[1:]):
+            for number in range(lo, hi):
+                q[number - 1]['groupId'] = f'synthetic-group-{lo}'
+        active = {row.get('groupId') for row in q}
+        self.pack['groups'] = [row for row in g if row['id'] in active]
+        for row in self.pack['groups']:
+            if row['part'] != 7:
+                continue
+            count = row['documentCount']
+            docs = [dict(id=f'doc{n}', title=f'Document {n} — Fixture',
+                         titleZh=f'文件 {n}｜測試',
+                         passage=f'Body of genuine Test 13 document {n}.',
+                         passageZh=f'第 {n} 份測試文件的內文。') for n in range(1, count + 1)]
+            row['documents'] = docs
+            row['passage'] = '\n\n'.join(d['title'].upper() + '\n' + d['passage'] for d in docs)
+            row['passageZh'] = '\n\n'.join(d['titleZh'] + '\n' + d['passageZh'] for d in docs)
+
+    def test_test13_physical_bilingual_documents(self):
+        self.physical_fixture()
+        self.assert_gates()
+
+    def test_test13_declared_count_cannot_hide_an_actual_document(self):
+        self.physical_fixture()
+        row = next(x for x in self.pack['groups'] if x['id'] == 'synthetic-group-176')
+        row['documents'].append(dict(id='doc3', title='Third memo', titleZh='第三份備忘錄',
+                                     passage='Different information.', passageZh='另一段資訊。'))
+        self.assert_gates('documentCount must match the physical Part 7 source documents')
+
+    def test_test13_chinese_order_must_match_the_document_order(self):
+        self.physical_fixture()
+        row = next(x for x in self.pack['groups'] if x['id'] == 'synthetic-group-176')
+        row['passageZh'] = '\n\n'.join(d['titleZh'] + '\n' + d['passageZh']
+                                       for d in reversed(row['documents']))
+        self.assert_gates('passageZh missing its ordered document title')
+
+    def test_test13_single_group_cannot_have_five_questions(self):
+        self.physical_fixture()
+        for number in range(159, 162):
+            self.pack['questions'][number - 1]['groupId'] = 'synthetic-group-157'
+        self.pack['groups'] = [row for row in self.pack['groups']
+                               if row['id'] != 'synthetic-group-159']
+        self.assert_gates('each single passage needs 2–4 questions')

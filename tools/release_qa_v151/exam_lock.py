@@ -4,7 +4,8 @@ from pathlib import Path
 from continuous_contract import (SILENCE_ROLES, geometry, timeline, role as continuous_role,
                                  owner as continuous_owner)
 from collections import Counter
-from group_layout import require_contiguous_groups, require_part7_layout, uses_source_document_count
+from group_layout import (require_contiguous_groups, require_part7_layout, require_physical_part7_documents,
+                          uses_physical_part7_layout, uses_source_document_count)
 import argparse, hashlib, json, math, re, struct, subprocess, sys
 from decimal import Decimal,ROUND_HALF_UP
 
@@ -208,16 +209,17 @@ def inventory(src,site,test,check_codec=True):
  qp=[f'{test}/questions/Q{n:03}/question.json' for n in range(1,201)]
  pg=[f"{test}/groups/{row['id']}/group.json" for row in g]
  need(rs.get('questions')==qp and rs.get('groups')==pg,'source records not at exact per-question/group paths or ordered differently')
- strict_part7=uses_source_document_count(test); source_counts={}
+ strict_part7=uses_source_document_count(test); strict_physical=uses_physical_part7_layout(test); source_counts={}
  for name,row in zip(qp+pg,q+g,strict=True):
   record=read_json(bytes_at(src,name))
   need(record==row,f'editable record differs from active runtime: {name}')
   if strict_part7 and name.endswith('/group.json') and record['part']==7:
-   count=record.get('documentCount')
+   count=require_physical_part7_documents(record,need) if strict_physical else record.get('documentCount')
    need(type(count) is type(row.get('documentCount')),f'documentCount type differs from runtime: {name}')
    source_counts[record['id']]=count
  if strict_part7:
-  require_part7_layout(g,require_contiguous_groups(q,need),lambda row: source_counts[row['id']],need)
+  require_part7_layout(g,require_contiguous_groups(q,need),lambda row: source_counts[row['id']],need,
+                       require_ten_singles=strict_physical)
  paths=search_source(src,test); known=set(qp+pg+[em]); media_set=set(media_refs(p))
  media_files={};source_dig={};sidecars=0;active_groups={row['id']:row for row in g}
  for path in paths:
