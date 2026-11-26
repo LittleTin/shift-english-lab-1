@@ -92,6 +92,7 @@ async function prepareResume(s){
 let Q=new Map(),G=new Map(),loaded=new Set(),loading=new Map(),busy=false,activeTranscript=null,lastResult=null,reviewDetail=null,currentAudioGroup=null,currentQuestionStart=now();
 let persistentError='';
 let guestBackupApplying=false;
+let leavePendingList=null;
 function showPersistentError(){
  const box=document.getElementById('shift-persistent-error'), message=document.getElementById('shift-persistent-error-message');
  if(box&&message){box.hidden=!persistentError;message.textContent=persistentError;for(const action of ['retry-local-save','export-unsaved-local-backup']){const button=box.querySelector('[data-action="'+action+'"]');if(button)button.hidden=action==='retry-local-save'?!localSaveFailure:!(localSaveFailure||accountActiveConflict)}}
@@ -1149,15 +1150,26 @@ async function navigate(dest){if(route==='quiz'||route==='answer-review'){stopAu
  const hasRecords=dest==='review'?Object.values(state.stats).some(item=>item.needsReview||item.wrong>0):Object.values(state.stars).some(Boolean);
  // Keep account hydration and every saved/history filter on the existing path.
  if(syncOwner||authRestoreStatus==='waiting'||authRestoreStatus==='checking'||hasRecords){
-  shell('<div class="loading">Loading your learning records…</div>');
-  try{await loadAll()}catch(e){
+  shell('<section class="panel"><p role="status">Loading your learning records…</p>'+btn('Back to Home','nav-home')+'</section>');
+  document.getElementById('main')?.focus({preventScroll:true});
+  // A slow script may still finish, but only the active list may render or request more packs.
+  let cancelled=false;
+  const leave=new Promise(resolve=>{leavePendingList=()=>{cancelled=true;resolve(false)}});
+  const loadList=async()=>{
+   for(const t of allTests()){
+    if(cancelled)return false;
+    await loadTest(t.id)
+   }
+   return !cancelled
+  };
+  try{if(!await Promise.race([loadList(),leave]))route='home'}catch(e){
    console.error(e);
    const hint=location.protocol==='file:'?'Extract the complete package before opening index.html.':'Check your connection and try again.';
    shell('<section class="panel"><h1>Could not load questions</h1><p>'+hint+'</p><p>Your saved records have not been changed.</p><div class="btn-row">'+btn('Try Again','nav-'+dest,'primary')+btn('Back to Home','nav-home')+'</div></section>');
    window.scrollTo({top:0,behavior:'instant'});
    document.getElementById('main')?.focus({preventScroll:true});
    return
-  }
+  }finally{leavePendingList=null}
  }
 }render();window.scrollTo({top:0,behavior:'instant'});// All navigate() calls are user-initiated; rendering removed the initiating control.
  document.getElementById('main')?.focus({preventScroll:true});if(authRestoreStatus==='waiting'&&navigator.onLine!==false)void recheckAuthOnReconnect()}
@@ -2216,7 +2228,9 @@ async function action(name,el){if(name==='export-unsaved-local-backup'){
  const detail=reviewDetail;stopAudio();route=detail?.returnTo||'review';reviewDetail=null;render();focusReviewOrigin(detail);return
 }if(name==='open-question'){await loadAll();const q=Q.get(el.dataset.id);if(q)return startSession(relatedQuestions(q),'Group Review');return}if(name==='start-list')return beginReview('list');if(name==='review-result')return beginReview('result');if(name==='more-list'){listLimit+=40;render();return}if(name==='open-result'){await loadAll();lastResult=state.sessions.find(s=>s.id===el.dataset.id);route='result';render();window.scrollTo(0,0);return}if(name==='export-backup')return exportBackup();if(name==='import-backup'){if(syncOwner)return;document.getElementById('backup-input').click();return}if(name==='import-pack'){await loadAll();document.getElementById('pack-input').click();return}if(name==='reset-progress'){if(syncOwner)return;confirmBox('Clear your learning records?',storageMode==='tabstorage'?'This clears this tab’s answers, mistakes, saved questions, notes, and unfinished progress only. Previously shared records are not changed. Export a backup before clearing anything.':'This removes local answers, mistakes, saved questions, notes, and unfinished progress. Imported packs are kept. Export a backup before clearing anything.',async()=>{const imported=state.importedPacks;state={formatVersion:1,settings:{fontScale:1,translation:false},attempts:[],stats:{},stars:{},notes:{},sessions:[],active:null,importedPacks:imported,lastBackup:null};clearNoteDraft();lastResult=null;if(await persist(false,false,'clear')===false)return;render();notify('Learning records cleared.')},'Confirm Clear')}}
 document.addEventListener('click',e=>{const el=e.target.closest('[data-action]');if(!el||el.disabled)return;e.preventDefault();
- const name=el.dataset.action; void withBusy(async()=>{await action(name,el);if(/^(?:answer|resume|next-question|prev-question|jump|play-audio|finish-session|finish-from-modal|test-listening|test-reading|test-exam|quick-reading|quick-listening|start-filtered|nav-)/.test(name))scheduleCheckpoint()})
+ const name=el.dataset.action;
+ if(name==='nav-home'&&leavePendingList){leavePendingList();return}
+ void withBusy(async()=>{await action(name,el);if(/^(?:answer|resume|next-question|prev-question|jump|play-audio|finish-session|finish-from-modal|test-listening|test-reading|test-exam|quick-reading|quick-listening|start-filtered|nav-)/.test(name))scheduleCheckpoint()})
 });
 document.addEventListener('change',e=>{const el=e.target;withBusy(async()=>{if(el.id==='filter-section'){filters.section=el.value;filters.part='all';if(el.value==='reading')filters.accent='all';render()}else if(el.id==='filter-accent'){filters.accent=el.value;if(el.value!=='all'){filters.section='listening';if(Number(filters.part)>4)filters.part='all'}render()}else if(el.id==='filter-part'){filters.part=el.value;if(Number(el.value)>4)filters.accent='all';if(el.value!=='all')filters.section=Number(el.value)>4?'reading':'listening';render()}else if(el.id==='filter-topic')filters.topic=el.value;else if(el.id==='filter-difficulty')filters.difficulty=el.value;else if(el.id==='filter-count')filters.count=Number(el.value);else if(el.id==='filter-unseen')filters.unseen=el.checked;else if(el.id==='review-filter'){listFilter=el.value;listLimit=40;render()}else if(el.id==='font-scale'){state.settings.fontScale=Number(el.value);await persist();render()}else if(el.id==='default-translation'){state.settings.translation=el.checked;await persist()}else if(el.id==='audio-speed'&&!listening()){player.playbackRate=Number(el.value);if(savePracticeMedia(true))void persist()}else if(!diagnostic&&el.id==='backup-input'){const f=el.files[0];el.value='';if(f&&!syncOwner)await importBackup(f)}else if(!diagnostic&&el.id==='pack-input'){const f=el.files[0];el.value='';if(f)await importPack(f)}})});
 let searchTimeout;
