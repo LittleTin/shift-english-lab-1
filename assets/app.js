@@ -855,14 +855,14 @@ function captureGuestProgress(source){
  next.importedPacks=importedPacks.slice();
  return next
 }
-function persist(strict=false,historyOnly=false,guestMode=null,guestSubmission=null){
- if(guestSubmitPending&&!guestSubmission&&!syncOwner)return Promise.resolve();
+function persist(strict=false,historyOnly=false,guestMode=null,guestSubmission=null,restoreSnapshot=null){
+ if(guestSubmitPending&&!guestSubmission&&!syncOwner)return strict?Promise.reject(new Error('Finish saving the current session before restoring a backup')):Promise.resolve();
  if(diagnostic||storageMode==='loading'||storageMode==='memory'){
   if(guestSubmission){localSaveFailure=true;notify(localSaveMessage);updateStorageBadge()}
   return strict?Promise.reject(new Error('Local saving unavailable')):Promise.resolve(guestSubmission?false:undefined)
  }
- if(!historyOnly)saveListeningCountdown();
- const owner=syncOwner,source=guestSubmission||state;
+ if(!historyOnly&&!restoreSnapshot)saveListeningCountdown();
+ const owner=syncOwner,source=restoreSnapshot||guestSubmission||state;
  const captured=!owner&&!guestSubmission&&!historyOnly&&!guestMode&&storageMode==='indexeddb'?captureGuestProgress(source):null;
  const snapshot=captured?null:JSON.stringify(source);
  const guestWrite=owner?null:{base:null,next:captured||JSON.parse(snapshot),mode:guestMode};
@@ -953,6 +953,7 @@ function persist(strict=false,historyOnly=false,guestMode=null,guestSubmission=n
  return operation.then(saved=>{
   if(guestWarning)notify(guestWarning);
   if(!saved)return false;
+  if(guestMode==='restore')return true;
   if(!guestSubmission&&!historyOnly&&!checkpointApplying&&!accountActiveConflict&&owner&&owner===syncOwner&&storageMode==='indexeddb'){
   const a=state.active,u=a?.audioUsed?.[currentAudioGroup],m=a?.practiceMedia;
   const signature=JSON.stringify(a?[a.id,a.index,a.answers,a.submitted,a.examPhase,a.readingStartsOnReturn,!!a.listeningStartedAt,u?.status,m?.groupId,m?.paused,m?.rate]:null);
@@ -966,7 +967,7 @@ function readNoteDraft(){try{const raw=guestStorage().getItem(scopedKey(NOTE_DRA
 function removeNoteDraft(token){try{if(readNoteDraft()?.token===token)guestStorage().removeItem(scopedKey(NOTE_DRAFT_KEY))}catch(e){}}
 function noteStatusText(id){return noteStatuses.get(id)||(storageMode==='memory'?'Temporary storage only. Please export a backup.':state.notes[id]?guestSaveLabel():'Changes are saved automatically in this browser')}
 function setNoteStatus(id,text){noteStatuses.set(id,text);const el=document.getElementById('note-save-status'),input=document.getElementById('question-note');if(el&&input?.dataset.id===id)el.textContent=text;const grouped=document.querySelector('[data-note-status="'+id+'"]');if(grouped)grouped.textContent=text}
-function clearNoteDraft(){noteGeneration++;noteTokens.clear();noteStatuses.clear();state.noteDraftEpoch=uid();try{guestStorage().removeItem(scopedKey(NOTE_DRAFT_KEY))}catch(e){}}
+function clearNoteDraft(keepEpoch=false){noteGeneration++;noteTokens.clear();noteStatuses.clear();if(!keepEpoch)state.noteDraftEpoch=uid();try{guestStorage().removeItem(scopedKey(NOTE_DRAFT_KEY))}catch(e){}}
 function saveNoteInput(id,text){
 if(diagnostic||!safeId(id))return;
 const token=uid(),generation=noteGeneration,draft={version:1,token,epoch:state.noteDraftEpoch||'initial',questionId:id,text:String(text).slice(0,20000),at:now()};
@@ -1136,7 +1137,7 @@ function selectOptions(map,value,allLabel='All'){return '<option value="all" '+(
 const ACCENTS={"en-US":"American English","en-GB":"British English","en-CA":"Canadian English","en-AU":"Australian English","en-IN":"Indian English","en-HK":"Hong Kong English","en-SG":"Singaporean English","en-PH":"Philippine English","en-NZ":"New Zealand English","en-IE":"Irish English","en-KE":"Kenyan English","en-NG":"Nigerian English","en-TZ":"Tanzanian English","en-ZA":"South African English"};
 function accentMatches(q,accent){if(accent==='all')return true;const speakers=G.get(q.groupId)?.audioSpeakers;return q.part<5&&Array.isArray(speakers)&&speakers.length>0&&speakers.every(v=>v?.locale===accent)}
 function practicePage(){return heading('Practice at your own pace.','Choose a question type, topic, and difficulty. Related questions stay together.','PRACTICE BY TOPIC')+'<section class="panel"><h2>Set up this practice session</h2><div class="filters"><div class="field"><label for="filter-section">Practice section</label><select id="filter-section">'+selectOptions({reading:'Reading Practice',listening:'Listening Practice'},filters.section,'Reading + Listening')+'</select></div><div class="field"><label for="filter-part">Question type</label><select id="filter-part">'+selectOptions(Object.fromEntries(Object.entries(PARTS).map(([k,v])=>[k,'Part '+k+' · '+v])),filters.part,'All question types')+'</select></div><div class="field"><label for="filter-accent">Listening accent focus</label><select id="filter-accent">'+selectOptions(ACCENTS,filters.accent,'Any accent (including mixed)')+'</select></div><div class="field"><label for="filter-topic">Topic</label><select id="filter-topic">'+selectOptions(TOPICS,filters.topic,'All topics')+'</select></div><div class="field"><label for="filter-difficulty">Difficulty</label><select id="filter-difficulty">'+selectOptions(DIFFICULTY,filters.difficulty,'All difficulties')+'</select></div><div class="field"><label for="filter-count">Target question count</label><select id="filter-count">'+[10,20,40,100].map(n=>'<option value="'+n+'" '+(filters.count===n?'selected':'')+'>'+n+' questions approximately</option>').join('')+'</select></div></div><label class="check-row"><input type="checkbox" id="filter-unseen" '+(filters.unseen?'checked':'')+'>Prioritize questions not yet answered</label><p class="hint">Passages and conversations are selected as complete groups, so the question count may vary. If a topic or difficulty does not apply to every question in a group, that group is skipped. Prioritizing unanswered questions tries new groups first without splitting them. An accent filter includes only groups whose voices all have that accent label. Mixed and unlabeled groups are excluded; a shortfall is shown rather than filled with other accents. Labels describe synthetic voice models, not official accent certification. Submit the session to see your score and explanations.</p><div class="btn-row" style="margin-top:24px">'+btn('Start This Practice '+icon('arrow'),'start-filtered','primary')+'</div></section><div class="topics-row">'+Object.entries(TOPICS).map(([id,label])=>'<button class="topic-card" data-action="topic" data-topic="'+id+'">'+icon(topicIcon(id))+'<b>'+label+'</b><small>Choose this topic</small></button>').join('')+'</div>'}
-async function withBusy(fn){if(busy||guestSubmitPending)return;busy=true;try{await fn()}catch(e){console.error(e);notify(e.message||'Something went wrong. Please try again.')}finally{busy=false}}
+async function withBusy(fn){if(busy||guestSubmitPending||guestBackupApplying)return;busy=true;try{await fn()}catch(e){console.error(e);notify(e.message||'Something went wrong. Please try again.')}finally{busy=false}}
 async function navigate(dest){const fromDrawer=mobileNav;if(route==='quiz'||route==='answer-review'){stopAudio();await persist()}mobileNav=false;route=dest;syncListeningCountdown(state.active);if(listening())void persist();activeTranscript=null;listLimit=40;if(['review','favorites'].includes(dest)){shell('<div class="loading">Loading your learning records…</div>');await loadAll()}render();window.scrollTo({top:0,behavior:'instant'});if(fromDrawer)document.getElementById('main')?.focus({preventScroll:true});if(authRestoreStatus==='waiting'&&navigator.onLine!==false)void recheckAuthOnReconnect()}
 function render(){if(!diagnostic)try{tabWrite(LAST_PAGE_TAB_KEY,route==='data'?'data':null);if(route==='quiz'&&state.active)sessionStorage.setItem(scopedKey('shift-last-quiz'),state.active.id);else sessionStorage.removeItem(scopedKey('shift-last-quiz'))}catch(e){}if(route==='home')shell(homePage());else if(route==='practice')shell(practicePage());else if(route==='review'||route==='favorites')shell(listPage());else if(route==='stats')shell(statsPage());else if(route==='data')shell(dataPage());else if(route==='quiz')renderQuizWithChartPosition();else if(route==='result')shell(resultPage());else if(route==='answer-review')shell(reviewDetailPage());syncAudioUI()}
 function groupedSelection(pool,count){const units=new Map();for(const q of pool){const key=q.groupId||q.id;if(!units.has(key))units.set(key,[]);units.get(key).push(q)}const chosen=[];for(const unit of shuffle([...units.values()])){if(chosen.length>=count)break;const qs=unit[0].groupId?relatedQuestions(unit[0]).map(q=>unit.find(x=>x.number===q.number)||q):unit;chosen.push(...qs)}return chosen}
@@ -1912,7 +1913,7 @@ function moveQuestion(delta){return moveGroup(delta)}
 async function submitAnswer(){if(!state.active)return;if(state.active.index===state.active.questionIds.length-1)return finishSession();moveQuestion(1)}
 async function finishSession(force=false){
 if(diagnostic){notify('This session is only for playback diagnostics. Nothing was saved.');return}
-const s=state.active;if(!s||guestSubmitPending||(force&&guestRejectedAutoSubmit===s))return;
+const s=state.active;if(!s||guestSubmitPending||guestBackupApplying||(force&&guestRejectedAutoSubmit===s))return;
 if(accountActiveConflict){notify(accountActiveWarning);return}const done=Object.keys(s.answers).length;
 const complete=async()=>{
  if(state.active!==s||guestSubmitPending)return;
@@ -2095,6 +2096,7 @@ async function exportBackup(){
 }
 async function importBackup(file){
  const owner=syncOwner,epoch=syncEpoch;
+ const restoreFailure='Backup could not be saved. Your original backup file and current learning records were not changed.';
  const unchangedGuest=()=>owner===null&&syncOwner===owner&&syncEpoch===epoch;
  const stale=()=>notify('Backup could not be restored because the account changed. Switch to guest mode and try again.');
  if(!unchangedGuest())return stale();
@@ -2108,24 +2110,27 @@ async function importBackup(file){
  confirmBox('Restore these learning records?','The backup contains '+count+' answer record'+(count===1?'':'s')+' and '+notes+' note'+(notes===1?'':'s')+'. Restoring replaces current records. Export your current backup first.'+(omitted?' Custom definitions with official test IDs will not be installed. Your saved scores and answers are kept.':''),async()=>{
   if(!unchangedGuest())return stale();
   if(guestBackupApplying)return notify('Backup could not be restored because another backup is still being restored.');
+  if(guestSubmitPending)return notify('Finish saving the current session before restoring a backup.');
   guestBackupApplying=true;
+  let committed=false;
   try{
-   // Let any earlier guest writes finish before this explicit replacement.
-   await saveQueue;
+   // Drain any earlier guest write without making its failure reject this new restore.
+   await saveQueue.catch(()=>{});
    if(!unchangedGuest())return stale();
    if(next.importedPacks.length)await loadAllOfficial();
    if(!unchangedGuest())return stale();
-   resumeEnv=null;state=next;clearNoteDraft();
+   next.noteDraftEpoch=uid();
+   if(await persist(true,false,'restore',null,next)!==true)throw new Error('Backup state was not committed');
+   committed=true;
+   if(!unchangedGuest())return stale();
+   resumeEnv=null;state=next;clearNoteDraft(true);lastResult=null;stopAudio();
    await installPackIndexes();
    if(!unchangedGuest())return stale();
-   lastResult=null;stopAudio();
-   if(!unchangedGuest())return stale();
-   await persist(true,false,'restore');
-   if(!unchangedGuest())return stale();
+   if(persistentError===restoreFailure)persistentError='';
    route='home';render();notify(omitted||unavailableCustom.size?'Learning records restored. Conflicting custom packs were not loaded.':'Learning records restored.');
   }catch(error){
    console.error(error);
-   notify('Backup could not be saved. Your original backup file was not changed.');
+   notify(committed?'Learning records were saved. Reload to finish opening them.':restoreFailure);
   }finally{
    guestBackupApplying=false;
    if(authRestoreStatus==='waiting'&&navigator.onLine!==false)void recheckAuthOnReconnect()
