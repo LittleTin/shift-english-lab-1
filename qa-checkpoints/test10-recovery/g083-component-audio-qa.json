@@ -1,0 +1,43 @@
+{
+  "testId": "test-10",
+  "group": "t10-g083",
+  "status": "Verified audio components; exact outputs still pending staging. Full application and round gates not passed.",
+  "releaseReady": false,
+  "questions": [
+    "t10-q083",
+    "t10-q084",
+    "t10-q085"
+  ],
+  "approvedDraftSHA256": "323fd86b52f20d81fd717d32ccc0e0fc53674673e35ec214cd444872ab598b22",
+  "sharedWAVSHA256": "1ef449426f994dd8a8dfdd37de3b4037c51c5e74195658310b37992bb8349003",
+  "priorFullLocalReceiptSHA256": "a26dffeacc350fcdec261797fb1a92589fb0fff7469b5664365859d80be0d7b4",
+  "decodedSampleRate": 48000,
+  "decodedMinimumQuietFramesEachEdge": 96000,
+  "blindASR": "Both encoded tracks preserve 'go past the long shelf', residents, full hold deadline and closing line. Formal stems and spoken numbers 83–85 are exact. UK spelling color/colour and neighbor/neighbour are equivalent; source-only residents/residence was resolved independently on both encoded outputs.",
+  "media": [
+    {
+      "role": "practice",
+      "gitBlobSHA": "e388bd644aad42f443e0aa8ea64ff481d7b7d758",
+      "sha256": "6048ce8e21d1fba9e0960e4e68a83c90d2252ef2925ccb1ca9d59e06c618247f",
+      "decodedFrames": 3018840,
+      "leadingQuietFrames": 102734,
+      "trailingQuietFrames": 135353,
+      "nativeStartsAt": 0,
+      "nativeEndedAt": 62.899,
+      "seekEvents": 0,
+      "errorEvents": 0
+    },
+    {
+      "role": "formal",
+      "gitBlobSHA": "0ca9873d55c1ef37285a5ea6f857ca051476d485",
+      "sha256": "5ae87c1486d6a72a6b9d91e5f585b6f1a0f2304af62e337006171caa411cf6be",
+      "decodedFrames": 5166963,
+      "leadingQuietFrames": 102734,
+      "trailingQuietFrames": 518553,
+      "nativeStartsAt": 0,
+      "nativeEndedAt": 107.651563,
+      "seekEvents": 0,
+      "errorEvents": 0
+    }
+  ]
+}
