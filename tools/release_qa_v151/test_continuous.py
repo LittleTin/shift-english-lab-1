@@ -5,11 +5,41 @@ import amendment_audit as A
 import exam_lock as L
 from continuous_contract import geometry,role,owner
 D=Path(__file__).parent
-H=Path('/workspace/shared/shift-t02-formal-independent-prototype/all162-master')
-BASE=Path('/workspace/shared/shift-full-candidate-1230/deploy-preflight-v150/site/data')
+def synthetic_legacy_pair(test):
+ # Deterministic fixture, not a published pack or evidence about a historical release.
+ # Keep the historical test dimensions: 54 independent groups, 100 items, 45 minutes.
+ groups=[]; questions=[]; frames=[]; audio={}
+ for index in range(54):
+  gid=f't01-g{index+1:03}'
+  part=1 if index<6 else 2 if index<31 else 3 if index<44 else 4
+  group={'id':gid,'part':part}
+  if index==0: group.update(image='assets/scenes/synthetic-scene.svg',imageAlt='Synthetic scene')
+  if index==31: group.update(image='assets/graphics/synthetic-chart.svg',imageAlt='Synthetic chart')
+  groups.append(group)
+  for _ in range(1 if part<3 else 3):
+   questions.append(dict(id=f't01-q{len(questions)+1:03}',groupId=gid,answer='A'))
+  at=index*50
+  frames.append(dict(at=at,duration=26,groupId=gid,kind='audio',role='passage',
+                     src=f'audio/legacy/{test}/{gid}.ogg'))
+  frames.append(dict(at=at+26,duration=24,groupId=gid,kind='silence',role='answer'))
+  audio[gid]=dict(src=f'audio/formal-groups/{test}/{gid}.ogg',duration=50)
+ old=dict(groups=groups,questions=questions,listeningPlan=dict(duration=2700,frames=frames))
+ new=copy.deepcopy(old)
+ new['listeningPlan']['groupAudio']=audio
+ return old,new
+
+def fixture_pair(test):
+ paths=[os.environ.get('SHIFT_CONTINUOUS_LEGACY_PACK'),os.environ.get('SHIFT_CONTINUOUS_GROUPED_PACK')]
+ if not any(paths):
+  return synthetic_legacy_pair(test)
+ if not all(paths):
+  raise ValueError('set both SHIFT_CONTINUOUS_LEGACY_PACK and SHIFT_CONTINUOUS_GROUPED_PACK')
+ return tuple(json.loads(Path(path).read_bytes()) for path in paths)
+
 class TestContinuous(unittest.TestCase):
  def setUp(self):
-  self.t='test-01';self.old=json.loads((BASE/'test-01.json').read_bytes());g=geometry(json.loads((H/'data/test-01.json').read_bytes())['listeningPlan'],self.t)
+  self.t='test-01';self.old,grouped=fixture_pair(self.t)
+  g=geometry(grouped['listeningPlan'],self.t)
   self.r={u['src']:'a'*64 for u in g.values()}
   self.new=copy.deepcopy(self.old);self.new['listeningPlan']['groupAudio']={k:dict(src=v['src'],duration=v['seconds'])for k,v in g.items()}
   self.images={}
