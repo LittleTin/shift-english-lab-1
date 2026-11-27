@@ -1,0 +1,49 @@
+{
+  "id": "t10-q056-recovery-210644dd5a39",
+  "number": 56,
+  "part": 3,
+  "revision": 1,
+  "testId": "test-10",
+  "groupId": "t10-g056",
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [],
+  "prompt": "Which entry would put the lamp in the right production run for the right reason?",
+  "promptZh": "哪個登錄項目用正確的理由把燈歸到正確的生產批次？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Run 39, because the socket is on the left in the photo.",
+      "zh": "第 39 批，因為照片中的插座在左邊。",
+      "whyZh": "左邊是照片從背面看的方向，與工廠單以提把朝向自己為基準的左右相反。"
+    },
+    {
+      "id": "B",
+      "text": "Run 41, because the sticker above the socket identifies the batch.",
+      "zh": "第 41 批，因為插座上方的貼紙標出批次。",
+      "whyZh": "圓形貼紙標的是檢查人員，不是批次。"
+    },
+    {
+      "id": "C",
+      "text": "Run 42, because the socket is on the right when viewed as the factory sheet specifies.",
+      "zh": "第 42 批，因為依工廠單指定的方向看，插座在右邊。",
+      "whyZh": "把從背面拍到的左側換成工廠單正向的右側，才得到第 42 批；退貨單碰巧同號，但它抄的是外箱，理由不成立。"
+    },
+    {
+      "id": "D",
+      "text": "Run 42, because the number on the return slip identifies the lamp inside.",
+      "zh": "第 42 批，因為退貨單上的號碼能辨認箱內那盞燈。",
+      "whyZh": "店家隨手用箱包退貨，單上是箱號；這次碰巧是同一批，不能視為證據。"
+    }
+  ],
+  "answer": "C",
+  "evidence": "The shop’s holding run 42 because it’s on the return slip. Verify the run before six. After six, only the morning desk can change that field.\nThat slip uses the number on the box. The shop reuses boxes. Our factory sheet puts the lamp socket on the left for 39, middle for 41, right for 42, looking at the handle side.\nThe lamp’s upright in the photo, with the handle facing away. On the left in the photo is the socket, just below a round sticker marked 41. Those stickers identify the inspector.",
+  "explanationZh": "把從背面拍到的左側換成工廠單正向的右側，才得到第 42 批；退貨單碰巧同號，但它抄的是外箱，理由不成立。",
+  "vocabulary": [
+    {
+      "term": "handle side",
+      "zh": "有提把的那一面",
+      "note": "讀圖時可用 handle side 指定觀察物件的哪一面。"
+    }
+  ]
+}

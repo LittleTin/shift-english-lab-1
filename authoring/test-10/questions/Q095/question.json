@@ -1,0 +1,49 @@
+{
+  "id": "t10-q095-recovery-9ee682703d97",
+  "number": 95,
+  "part": 4,
+  "revision": 1,
+  "testId": "test-10",
+  "groupId": "t10-g095",
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [],
+  "prompt": "Which version of the entrance timetable should the team prepare?",
+  "promptZh": "團隊應準備哪一版入口時刻表？",
+  "options": [
+    {
+      "id": "A",
+      "text": "The announced start, with the updated room shown only by a symbol",
+      "zh": "保留已公布的開始時間，只用符號標示新場地",
+      "whyZh": "時段和新場地都對，但從側門上樓的訪客不會經過大告示板，只有符號無法辨認房間。"
+    },
+    {
+      "id": "B",
+      "text": "The announced start, naming the Oak Room on the sheet",
+      "zh": "保留已公布的開始時間，在表上寫明橡樹廳",
+      "whyZh": "開場改在橡樹廳，可以提前的是工作人員搬東西；訪客照原先通知到場。從側門上樓的人看不到符號說明，因此表本身要寫房間名稱。"
+    },
+    {
+      "id": "C",
+      "text": "The announced start, keeping the previous room name on the sheet",
+      "zh": "保留已公布的開始時間，表上仍寫原場地名稱",
+      "whyZh": "入口表有房間名稱而且時間沒改，但中心已把開場活動移到橡樹廳，不能保留舊場地。"
+    },
+    {
+      "id": "D",
+      "text": "An earlier start in the Oak Room, with the room named on the sheet",
+      "zh": "表上寫明橡樹廳，但把開始時間提早",
+      "whyZh": "新場地和寫法正確，但提前的是工作人員搬物進場，不是邀請來賓的開始時間。"
+    }
+  ],
+  "answer": "B",
+  "evidence": "some visitors will enter by the side door and go upstairs without passing the big board.\nThe room symbols are explained only at the foot of that board.\nIt’s in Oak now. You can bring your things in earlier, but people will come when we told them.",
+  "explanationZh": "開場改在橡樹廳，可以提前的是工作人員搬東西；訪客照原先通知到場。從側門上樓的人看不到符號說明，因此表本身要寫房間名稱。",
+  "vocabulary": [
+    {
+      "term": "at the foot of",
+      "zh": "在……的底部",
+      "note": "此處指看板最下方，不是指距離單位 foot。"
+    }
+  ]
+}

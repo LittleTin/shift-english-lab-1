@@ -1,0 +1,49 @@
+{
+  "id": "t10-q058-recovery-e470b2134e0d",
+  "number": 58,
+  "part": 3,
+  "revision": 1,
+  "testId": "test-10",
+  "groupId": "t10-g056",
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [],
+  "prompt": "How should Owen handle the return record and the hold now?",
+  "promptZh": "歐文現在該怎麼處理退貨紀錄和扣留狀態？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Verify or correct the run in the record now; defer any stockroom clearance until the direct check.",
+      "zh": "現在先核對或更正紀錄上的批次；等直接查驗後，才考慮通知庫房解除扣留。",
+      "whyZh": "照片可供核對登錄，且剩五分鐘可處理；直接查驗還要等明天，所以現在不發解除通知。"
+    },
+    {
+      "id": "B",
+      "text": "Check the run using the photo, then lift the hold in the notice sent to the stockroom.",
+      "zh": "用照片核對批次後，就發通知給庫房解除扣留。",
+      "whyZh": "照片可協助核對紀錄，但沒有實物查驗前不能發解除通知。"
+    },
+    {
+      "id": "C",
+      "text": "Leave the record until tomorrow and send the stockroom a clearance now.",
+      "zh": "紀錄等明天再處理，現在就通知庫房解除扣留。",
+      "whyZh": "在可處理的窗口內能先核對紀錄，且解除扣留欠缺直接查驗。"
+    },
+    {
+      "id": "D",
+      "text": "Post the photo in the intake chat and leave changes to the desk for tomorrow.",
+      "zh": "把照片貼到收件聊天室，把變更留給明天的櫃檯。",
+      "whyZh": "聊天室不是紀錄欄；還沒到截止時間，歐文本人可先核對紀錄，不必把可做的工作延後。"
+    }
+  ],
+  "answer": "A",
+  "evidence": "The shop’s holding run 42 because it’s on the return slip. Verify the run before six. After six, only the morning desk can change that field.\nDon’t tell the stockroom the hold is lifted until we check the lamp in person. The intake chat is just for us.\nThe courier just took the lamp. I can use the photo for our record, but the lamp won’t be back till tomorrow. It’s five to six.",
+  "explanationZh": "照片可供核對登錄，且剩五分鐘可處理；直接查驗還要等明天，所以現在不發解除通知。",
+  "vocabulary": [
+    {
+      "term": "hold is lifted",
+      "zh": "解除扣留",
+      "note": "lift a hold 指取消暫停處理或出貨的狀態，和單純更正紀錄不同。"
+    }
+  ]
+}

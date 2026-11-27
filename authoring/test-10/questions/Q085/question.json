@@ -1,0 +1,49 @@
+{
+  "id": "t10-q085-recovery-b5c089777c5a",
+  "number": 85,
+  "part": 4,
+  "revision": 1,
+  "testId": "test-10",
+  "groupId": "t10-g083",
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [],
+  "prompt": "A resident arrives hoping to take the folding rack. What can the desk tell her?",
+  "promptZh": "有位住戶想領走摺疊架。櫃檯可以怎麼告訴她？",
+  "options": [
+    {
+      "id": "A",
+      "text": "It was marked as being on trial, but its return has not been confirmed",
+      "zh": "摺疊架已標記為試用，但尚未確認是否已歸還。",
+      "whyZh": "摺疊架的圖卡翻面，表示它被標記為試用。未署名的紙條只說有人在別處找到一個架子，並未確認這個摺疊架已經歸還。"
+    },
+    {
+      "id": "B",
+      "text": "It is out on a trial, but the person who has it has promised to bring it back",
+      "zh": "摺疊架正在試用，但拿的人已答應歸還",
+      "whyZh": "試用對了，但沒有證據說未署名紙條就是拿架子的人留下，也沒有歸還承諾。"
+    },
+    {
+      "id": "C",
+      "text": "It is available again, though the desk cannot identify who wrote the note",
+      "zh": "摺疊架已重新開放領取，只是櫃檯不知道誰寫了紙條",
+      "whyZh": "寫紙條的人不明，但卡片仍翻面；不能把「在別處找到」當成架子已歸還。"
+    },
+    {
+      "id": "D",
+      "text": "It has been kept, although the desk cannot identify who took it",
+      "zh": "摺疊架已有人留下，只是不知道是誰",
+      "whyZh": "卡片仍在而且翻面，表示試用中；收到留下通知才撤卡。"
+    }
+  ],
+  "answer": "A",
+  "evidence": "Turn the picture card face down for a trial.\nThe card for the folding rack is face down.\nA neighbor left a note saying she’d found a rack elsewhere, but she didn’t put her name on it.",
+  "explanationZh": "摺疊架的圖卡翻面，表示它被標記為試用。未署名的紙條只說有人在別處找到一個架子，並未確認這個摺疊架已經歸還。",
+  "vocabulary": [
+    {
+      "term": "try out",
+      "zh": "試用",
+      "note": "指先實際使用物品，再決定要不要留下；試用不等於已經領取。"
+    }
+  ]
+}

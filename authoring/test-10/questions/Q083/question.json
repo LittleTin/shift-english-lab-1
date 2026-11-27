@@ -1,0 +1,49 @@
+{
+  "id": "t10-q083-recovery-b43fb04d0907",
+  "number": 83,
+  "part": 4,
+  "revision": 1,
+  "testId": "test-10",
+  "groupId": "t10-g083",
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [],
+  "prompt": "Which action should the desk take with the baskets at noon?",
+  "promptZh": "到了中午，櫃檯應如何處理兩個籃子？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Keep the basket without handles for Mel and put the other one back out",
+      "zh": "替梅爾保留沒有提把的籃子，把另一個放回架上",
+      "whyZh": "下午四點到確實延長保留，但照片裡的是有提把的籃子。"
+    },
+    {
+      "id": "B",
+      "text": "Keep the basket with handles for Mel instead of putting it back out",
+      "zh": "把有提把的籃子繼續留給梅爾，不放回交換架",
+      "whyZh": "她問的是照片裡唯一有提把的籃子，且已告知下午四點能到，適用延長保留。"
+    },
+    {
+      "id": "C",
+      "text": "Put the basket with handles back out and tell Mel to look for it at four",
+      "zh": "把有提把的籃子放回架上，請梅爾四點來找",
+      "whyZh": "籃子認對了，但她已傳來下午可到的時間，不應中午就解除保留。"
+    },
+    {
+      "id": "D",
+      "text": "Keep both baskets behind the desk so Mel can choose when she arrives",
+      "zh": "把兩個籃子都留在櫃檯後，讓她到場選擇",
+      "whyZh": "照片雖看不出顏色，但提把已辨認出她問的是哪一個，不需要同時扣住兩個。"
+    }
+  ],
+  "answer": "B",
+  "evidence": "or longer if the person sends us a time they can come that afternoon\nShe asked about the one in yesterday’s photo.\nthat’s our only basket with handles\nI can get there at four.",
+  "explanationZh": "她問的是照片裡唯一有提把的籃子，且已告知下午四點能到，適用延長保留。",
+  "vocabulary": [
+    {
+      "term": "named hold",
+      "zh": "具名保留",
+      "note": "指寫上領取人姓名、暫時替對方保留的物品；在這裡會放在櫃檯後方。"
+    }
+  ]
+}

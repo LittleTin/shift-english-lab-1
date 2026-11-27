@@ -1,0 +1,49 @@
+{
+  "id": "t10-q088-recovery-738065747b73",
+  "number": 88,
+  "part": 4,
+  "revision": 1,
+  "testId": "test-10",
+  "groupId": "t10-g086",
+  "topic": "daily",
+  "difficulty": "advanced",
+  "tags": [],
+  "prompt": "Which two pictures would best show whether a pouch’s seam was closed by the repair?",
+  "promptZh": "哪兩張照片最能看出修補是否讓小袋接縫合起來？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Two pictures at the workbench lamp with the pouch lying flat",
+      "zh": "兩次都在工作台燈下，把小袋平放拍照",
+      "whyZh": "光線一致，但小袋平放可能把開口壓住，前後照片無法可靠顯示修補是否有效。"
+    },
+    {
+      "id": "B",
+      "text": "Two pictures by the window, each with a card inside the pouch",
+      "zh": "兩次都在窗邊拍，小袋裡都放一張卡片",
+      "whyZh": "卡片能讓開口看得見，但活動到尾聲窗邊會進入陰影，前後光線不同。"
+    },
+    {
+      "id": "C",
+      "text": "One picture with a card inside, then one without it, both at the workbench",
+      "zh": "兩張都在工作台拍；第一張放卡片，第二張不放",
+      "whyZh": "燈光沒變，但拿掉卡片後小袋鬆扁，可能讓還在的開口看起來像補好了。"
+    },
+    {
+      "id": "D",
+      "text": "Two pictures at the workbench lamp, each with a card inside the pouch",
+      "zh": "兩次都在工作台燈下拍，小袋裡都放一張卡片",
+      "whyZh": "卡片讓小袋呈現使用時的形狀，不會因放平而遮掉開口；工作台照明前後也保持一致。"
+    }
+  ],
+  "answer": "D",
+  "evidence": "a loose seam looked closed because the pouch lay flat.\nA card slipped inside gave it the shape it has in use, and we could see the gap.\nThe window seat gets shade by the end of the session; the lamp on the workbench stays the same.",
+  "explanationZh": "卡片讓小袋呈現使用時的形狀，不會因放平而遮掉開口；工作台照明前後也保持一致。",
+  "vocabulary": [
+    {
+      "term": "loose seam",
+      "zh": "鬆開的接縫",
+      "note": "seam 是布片縫合的接縫；接縫鬆開時，袋子平放可能看不出開口。"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "t10-q096-recovery-f6cbaed71103",
+  "number": 96,
+  "part": 4,
+  "revision": 1,
+  "testId": "test-10",
+  "groupId": "t10-g095",
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [],
+  "prompt": "Which test would answer the workshop’s question about the pale line?",
+  "promptZh": "哪項測試能回答工作坊對淺色線的疑問？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Print on original and smoother cloth, then roll both pieces without waiting",
+      "zh": "用原本的布和較平滑的布印，各自不等就捲起來",
+      "whyZh": "捲起前等待時間一致，適合比較布面，但這次要確認的是等久一點能否改善原本的布。"
+    },
+    {
+      "id": "B",
+      "text": "Use original cloth for both prints, roll one while fresh, and leave the other flat",
+      "zh": "兩張都用原布印，一張趁墨未乾捲起，另一張讓它平放",
+      "whyZh": "保留原布是對的，但另一張從未捲過；即使沒線也無法分辨是等待還是不捲所致。"
+    },
+    {
+      "id": "C",
+      "text": "Roll an original print straight away and roll a smoother print after a rest",
+      "zh": "原布印完立即捲，平滑布放一段時間再捲",
+      "whyZh": "這正重複前次同時改布面與等待時間的問題，無法分辨是哪一項影響結果。"
+    },
+    {
+      "id": "D",
+      "text": "Use original cloth for both prints, rolling one while fresh and the other after a rest",
+      "zh": "兩張都用原布印，一張趁墨未乾捲起，另一張放一段時間再捲",
+      "whyZh": "兩張用同樣布料且都捲起來，只有等待時間不同，才能檢查等待是否改善原布上的淺色線。"
+    }
+  ],
+  "answer": "D",
+  "evidence": "Yesterday’s banner showed a pale line after we rolled it while the ink was fresh.\nThe same file gave a clean result on smoother cloth, but that print had rested all morning before we rolled it.\nWe need to find out whether waiting helps with the original cloth.",
+  "explanationZh": "兩張用同樣布料且都捲起來，只有等待時間不同，才能檢查等待是否改善原布上的淺色線。",
+  "vocabulary": [
+    {
+      "term": "while the ink was fresh",
+      "zh": "趁墨還沒乾",
+      "note": "fresh 在這裡指墨剛印上、還未乾，不是「新鮮」。"
+    }
+  ]
+}

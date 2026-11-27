@@ -1,0 +1,54 @@
+{
+  "id": "t10-q070-recovery-96a7c76e4ca2",
+  "number": 70,
+  "part": 3,
+  "revision": 1,
+  "testId": "test-10",
+  "groupId": "t10-g068",
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [],
+  "prompt": "What should happen so the kitchen sends the right number of portions when the runner arrives?",
+  "promptZh": "怎麼做才能讓送餐人員抵達時，廚房按正確份數出餐？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Leave the signed figure at thirty and tell the runner to read thirty-two from the screen.",
+      "zh": "維持簽核三十份，請送餐人員到時看畫面上的三十二。",
+      "whyZh": "畫面上會有正確人數，但廚房只依簽核的數目出餐。"
+    },
+    {
+      "id": "B",
+      "text": "Have Mei sign for thirty-two before she leaves so the runner can collect the new figure.",
+      "zh": "請梅離開前簽核三十二份，讓送餐人員取得新數目。",
+      "whyZh": "原簽核只涵蓋當時已發的三十張；新增兩張各需一份，須在梅先離開前簽核三十二。"
+    },
+    {
+      "id": "C",
+      "text": "Have Mei sign for thirty before leaving and have the runner use that number for the new group.",
+      "zh": "請梅離開前簽核三十份，再由送餐人員把該數供給新增團員。",
+      "whyZh": "三十份不包含兩張新發藍證；重簽而不修正份數仍不夠。"
+    },
+    {
+      "id": "D",
+      "text": "Have Mei update the figure to thirty-two when the runner arrives and sign it then.",
+      "zh": "送餐人員到了以後，再讓梅把份數改為三十二並簽核。",
+      "whyZh": "份數對，但送餐人員抵達時梅已離開。"
+    }
+  ],
+  "answer": "B",
+  "evidence": "The order includes one serving for each blue badge.\nshe just issued two more blue badges. At four I signed for the thirty badges she'd issued by then. I haven't put these two on any sheet.\nYou leave at four twenty, right? The runner comes ten minutes later. The kitchen sends out the number you sign for, not the total on the badge screen.",
+  "explanationZh": "原簽核只涵蓋當時已發的三十張；新增兩張各需一份，須在梅先離開前簽核三十二。",
+  "vocabulary": [
+    {
+      "term": "sign for",
+      "zh": "簽核；簽名確認",
+      "note": "這裡指簽名確認廚房要出的份數；電子畫面顯示的數字不等於簽名核對的數字。"
+    },
+    {
+      "term": "sends out",
+      "zh": "送出；供應",
+      "note": "send out 在餐飲情境指廚房把做好的餐點送出，不是發送郵件。"
+    }
+  ]
+}

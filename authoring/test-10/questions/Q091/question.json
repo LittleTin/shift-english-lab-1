@@ -1,0 +1,49 @@
+{
+  "id": "t10-q091-recovery-1131e8438bd9",
+  "number": 91,
+  "part": 4,
+  "revision": 1,
+  "testId": "test-10",
+  "groupId": "t10-g089",
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [],
+  "prompt": "Which item should the team prepare for the café to take away?",
+  "promptZh": "團隊應準備哪項物品讓咖啡店帶走？",
+  "options": [
+    {
+      "id": "A",
+      "text": "A ground packet from the North tray",
+      "zh": "北側托盤上已磨成粉的小包",
+      "whyZh": "北側托盤的小包已磨成粉，不能用店家的磨豆機重做她試飲的咖啡。錄音也未交代這些小包是哪一烘次。"
+    },
+    {
+      "id": "B",
+      "text": "The unopened whole-bean bag beside the scale",
+      "zh": "秤旁那袋未開封的整豆",
+      "whyZh": "秤旁那袋整豆適用磨豆機，但星期四烘的豆子是經理離開後才到的，不是她試喝的那一批。"
+    },
+    {
+      "id": "C",
+      "text": "A brewed sample from the tasting bar, with a note saying which tray was used",
+      "zh": "試飲台沖好的樣品，附註用了哪個托盤",
+      "whyZh": "沖好的樣品不能讓他們用自己的磨豆機和咖啡機重做。"
+    },
+    {
+      "id": "D",
+      "text": "The sealed whole-bean bag from the cupboard",
+      "zh": "櫃子裡那袋未開封的整豆",
+      "whyZh": "經理來試飲之前只有星期三烘的豆子。取櫃子裡那袋星期三烘的整豆，才既能用店家的磨豆機，又跟試飲用豆是同一烘次。"
+    }
+  ],
+  "answer": "D",
+  "evidence": "The café wants to try the same coffee on its own machine. Their grinder takes whole beans.\nThursday’s roast arrived after the manager left; before her visit we’d roasted only on Wednesday.\nThe tasting packets on the North tray are already ground.\nThursday’s is by the scale and Wednesday’s is in the cupboard.",
+  "explanationZh": "經理來試飲之前只有星期三烘的豆子。取櫃子裡那袋星期三烘的整豆，才既能用店家的磨豆機，又跟試飲用豆是同一烘次。",
+  "vocabulary": [
+    {
+      "term": "whole beans",
+      "zh": "未磨成粉的整顆咖啡豆",
+      "note": "whole 表示咖啡豆仍是完整顆粒，還要先用磨豆機磨粉；不同於已磨好的試飲小包。"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "t10-q068-recovery-1d24e6fda445",
+  "number": 68,
+  "part": 3,
+  "revision": 1,
+  "testId": "test-10",
+  "groupId": "t10-g068",
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [],
+  "prompt": "The first tray will be gone before the later tour arrives. Which plan keeps the booking on track?",
+  "promptZh": "較晚一團抵達前，第一盤餐點就會發完。哪個方案能維持原本的供餐安排？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Keep the middle clear by putting both full trays on the ledge before the first group arrives.",
+      "zh": "第一團抵達前就把兩盤足量的餐點都放上檯面，讓中央通道保持暢通。",
+      "whyZh": "份數足夠，且中央沒有擺桌，但檯面一次只放得下一盤，不能先並放兩盤。"
+    },
+    {
+      "id": "B",
+      "text": "Hold a fresh tray in the prep room, then put it on the ledge with one serving for every two blue badges.",
+      "zh": "把新餐盤留在備餐室，之後放上檯面，每兩張藍證一份。",
+      "whyZh": "備餐室與檯面的輪替方式可行，但較晚一團也拿藍證，每張應有一份，而不是每兩張藍證一份。"
+    },
+    {
+      "id": "C",
+      "text": "Hold the later portions in the prep room and bring out a fresh tray when the ledge is clear.",
+      "zh": "把較晚一團的份數留在備餐室，等檯面空出再補上一盤。",
+      "whyZh": "較晚一團的藍證持有人仍各有一份；檯面只放一盤，備餐室仍可使用，因此不必阻礙中央動線。"
+    },
+    {
+      "id": "D",
+      "text": "Serve the first group from the ledge, then put a table in the middle as soon as that group leaves.",
+      "zh": "先在檯面為第一團供餐；第一團離開便在中央擺桌。",
+      "whyZh": "分時段是對的，但後續團員仍要雙向通過中央，不能在第一團離開後加桌。"
+    }
+  ],
+  "answer": "C",
+  "evidence": "The order includes one serving for each blue badge. The later tour group has blue badges too.\nThey need the middle clear in both directions.\nThe ledge will hold one tray; the prep room is free until the last tour finishes.",
+  "explanationZh": "較晚一團的藍證持有人仍各有一份；檯面只放一盤，備餐室仍可使用，因此不必阻礙中央動線。",
+  "vocabulary": [
+    {
+      "term": "keep the reception light",
+      "zh": "讓招待會採簡便安排",
+      "note": "light 在活動情境可形容形式簡便，未必指份量較少；要依對話中對用餐人數與場地的安排理解。"
+    },
+    {
+      "term": "the middle clear",
+      "zh": "讓中間保持暢通",
+      "note": "keep 或 need + 地點 + clear 在這裡指要保留中間通道，不是叫人把地面擦乾淨。"
+    }
+  ]
+}

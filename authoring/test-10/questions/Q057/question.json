@@ -1,0 +1,49 @@
+{
+  "id": "t10-q057-recovery-df109b7e38b7",
+  "number": 57,
+  "part": 3,
+  "revision": 1,
+  "testId": "test-10",
+  "groupId": "t10-g056",
+  "topic": "business",
+  "difficulty": "advanced",
+  "tags": [],
+  "prompt": "Which follow-up would best test whether the trouble follows the shop cord?",
+  "promptZh": "哪項後續測試最能判斷問題是否會跟著店家的電線一起出現？",
+  "options": [
+    {
+      "id": "A",
+      "text": "Try both cords on the spare lamp, moving the lamp by its handle.",
+      "zh": "用備用燈依序試兩條電線，握住提把移動燈身。",
+      "whyZh": "備用燈能避開工作台燈的鬆插座，但先前出問題是插頭被碰到時，不是提著燈移動時。"
+    },
+    {
+      "id": "B",
+      "text": "Try both cords on the bench lamp, moving each plug at the socket.",
+      "zh": "用工作台的燈依序試兩條電線，在插座處搖各自的插頭。",
+      "whyZh": "在插座處搖插頭能重現故障發生的情境；但是工作台燈的插座本來就鬆，可能干擾判斷。"
+    },
+    {
+      "id": "C",
+      "text": "Try both cords on the bench lamp, moving the lamp by its handle.",
+      "zh": "用工作台的燈依序試兩條電線，握住提把移動燈身。",
+      "whyZh": "工作台燈的插座本來就鬆，而且提起燈並不是已知引發故障的動作。"
+    },
+    {
+      "id": "D",
+      "text": "Try both cords on the spare lamp, moving each plug at the socket.",
+      "zh": "用備用燈依序試兩條電線，在插座處搖各自的插頭。",
+      "whyZh": "備用燈的插座緊實，可排除已知的鬆插座；在插座處分別搖兩個插頭，重現顧客碰到插頭的情境，並讓兩條線受到同樣操作。"
+    }
+  ],
+  "answer": "D",
+  "evidence": "The shop cord cuts out on both lamps if I jiggle the plug. Our bench lamp already had a loose socket. With our cord both lit up, but I didn’t move the plug.\nFor the cord test, remember the shop got a steady light until a customer brushed the plug. We have another lamp here with a tight socket.",
+  "explanationZh": "備用燈的插座緊實，可排除已知的鬆插座；在插座處分別搖兩個插頭，重現顧客碰到插頭的情境，並讓兩條線受到同樣操作。",
+  "vocabulary": [
+    {
+      "term": "cuts out",
+      "zh": "突然中斷",
+      "note": "說燈或設備 cuts out，指運作或供電突然中斷，不是使用者關掉它。"
+    }
+  ]
+}

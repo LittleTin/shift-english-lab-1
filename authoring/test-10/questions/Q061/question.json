@@ -1,0 +1,49 @@
+{
+  "id": "t10-q061-recovery-f4cf35fa4ce2",
+  "number": 61,
+  "part": 3,
+  "revision": 1,
+  "testId": "test-10",
+  "groupId": "t10-g059",
+  "topic": "daily",
+  "difficulty": "intermediate",
+  "tags": [],
+  "prompt": "What kind of repeat collection was the change at the end table intended to prevent?",
+  "promptZh": "收尾桌改用新做法，主要是為了防止哪種重複領取？",
+  "options": [
+    {
+      "id": "A",
+      "text": "One person making a second claim under the same name at the end table",
+      "zh": "同一人在收尾桌用相同名字再領一次",
+      "whyZh": "舊做法已按個人名字核對；改查住址主要是要辨識名字不同但同住的人。"
+    },
+    {
+      "id": "B",
+      "text": "One household coming back to claim something again at the next swap",
+      "zh": "同一戶下次的交換活動又回來領取物品",
+      "whyZh": "目前限制的是同一天的重複領取；對話沒有說下一場會沿用本日的領取紀錄。"
+    },
+    {
+      "id": "C",
+      "text": "People from the same home collecting again by using the public shelf",
+      "zh": "同住的人改去公開架再拿一次",
+      "whyZh": "公開架依然對所有人開放；新做法只在收尾桌查核住址，不會阻止到公開架取物。"
+    },
+    {
+      "id": "D",
+      "text": "People from the same home collecting more than one share under different names",
+      "zh": "同住的人用不同名字領到不只一份",
+      "whyZh": "以前查的是個人名字，同戶多人可各領；現在按住址核對，這種重複較不容易發生。"
+    }
+  ],
+  "answer": "D",
+  "evidence": "The swap is blind. The cups are wrapped. Last month we checked each person's name at the end table; two people from one family could each claim a cup.\nThe shelf is open to everyone. The end table checks by address now. It can take wrapped cups with a written condition tag; at the swap, notes stay inside the wrapping.",
+  "explanationZh": "以前查的是個人名字，同戶多人可各領；現在按住址核對，這種重複較不容易發生。",
+  "vocabulary": [
+    {
+      "term": "by address",
+      "zh": "依住址；按地址",
+      "note": "這裡用住址找出可能同住的申領人，不是用來安排配送。"
+    }
+  ]
+}
