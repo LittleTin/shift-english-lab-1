@@ -1,0 +1,140 @@
+{
+  "testId": "test-10",
+  "group": "t10-g059",
+  "questions": [
+    "t10-q059",
+    "t10-q060",
+    "t10-q061"
+  ],
+  "status": "Verified audio components; full SHIFT playback and round gate pending",
+  "releaseReady": false,
+  "format": "Ogg Opus mono 48000 Hz",
+  "decodedQuietSamplesMinimumEachEdge": 96000,
+  "blindASR": {
+    "recognizer": "whisper.cpp small.en without expected-script prompting",
+    "comparison": "Both encoded token sequences and shared WAV exactly match the approved script after punctuation/case and question-number formatting. Formal stems WAV rendered the possessive sister's as the acoustically identical sisters; final formal Opus returned the correct possessive.",
+    "answerBearingEvidence": {
+      "59": "one per household, wear disclosure before selection; last month names, now address",
+      "60": "two fingers and upper shelf; wrapping card fold below; no unwrapping",
+      "61": "wrapped accepted at end table with written condition tag; public shelf open to all"
+    },
+    "resultSHA256": {
+      "shared": "9eb04f85a5cb5109c4836dca49dccf605c4f246d97d8c51e300b9df2b6afd5d8",
+      "formal-stems": "35bb43959aaa518d3857de3943f21139ce3388f60e1cb01ef368bc3fd1f99254",
+      "practice-opus": "7beaa53d38a061eb3bae7809a286059cbb0913c5a19d96e44dbb7178d429b822",
+      "formal-opus": "9f41db51686c689e5dab4843c3a38965324277d50efa5f3bc4b92c3e89ee600b"
+    }
+  },
+  "sources": {
+    "shared": {
+      "expectedSSMLSha256": "89eceefa8687012d33b31fdbe3464c1309f97aeaee3ec0ca28e277282261ec15",
+      "wavSHA256": "303ac9d0666dc5ea6dec05ee56722daee40707b5d7500ef8b0db499d79c9189b",
+      "decodedPCMSha256": "8698fe6225317d14856653064170e479b93944cdeada6d6720f519165e784a59"
+    },
+    "formal-stems": {
+      "expectedSSMLSha256": "2e0c34ba2ecd25da82f1306fa1a5282c524b3823f71dfd952addf1f0c46502fe",
+      "wavSHA256": "51e3c485388163ceccaefc1229dc54780f8088be1922f181731bbcab72a8ed60",
+      "decodedPCMSha256": "093da6484e87aec3951f78d86b0a1b5c6961b1bb27d99580c6c8f020b05a8291"
+    }
+  },
+  "voices": [
+    "en-CA-ClaraNeural",
+    "en-CA-LiamNeural",
+    "en-US-AriaNeural"
+  ],
+  "formalPhases": [
+    {
+      "role": "edge",
+      "startFrame48k": 0,
+      "endFrame48k": 96000,
+      "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+    },
+    {
+      "role": "shared",
+      "startFrame48k": 96000,
+      "endFrame48k": 3378000,
+      "pcmSha256": "8698fe6225317d14856653064170e479b93944cdeada6d6720f519165e784a59"
+    },
+    {
+      "role": "gap",
+      "startFrame48k": 3378000,
+      "endFrame48k": 3426000,
+      "pcmSha256": "55873fecc61a79e87ca550c7072e38ccdd7ecb600ace286fe4717952a97c42b0"
+    },
+    {
+      "role": "stem",
+      "startFrame48k": 3426000,
+      "endFrame48k": 3652430,
+      "pcmSha256": "0b8f0ef1afd3aa1b87caea644c38d48884c983126d5b1366e3f8e3277fe76be1"
+    },
+    {
+      "role": "answer-gap",
+      "startFrame48k": 3652430,
+      "endFrame48k": 4036430,
+      "pcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+    },
+    {
+      "role": "stem",
+      "startFrame48k": 4036430,
+      "endFrame48k": 4290178,
+      "pcmSha256": "5f253c17cb6614d817a80100cbc6025131af54e9897489631ab0e8fe422c8394"
+    },
+    {
+      "role": "answer-gap",
+      "startFrame48k": 4290178,
+      "endFrame48k": 4674178,
+      "pcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+    },
+    {
+      "role": "stem",
+      "startFrame48k": 4674178,
+      "endFrame48k": 5022041,
+      "pcmSha256": "5f014b63f9f7182d7c2e202b4f7de48841064050d026f4df727bdad4322d7251"
+    },
+    {
+      "role": "answer-gap",
+      "startFrame48k": 5022041,
+      "endFrame48k": 5406041,
+      "pcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+    },
+    {
+      "role": "edge",
+      "startFrame48k": 5406041,
+      "endFrame48k": 5502041,
+      "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+    }
+  ],
+  "sharedPCMSHA256": "8698fe6225317d14856653064170e479b93944cdeada6d6720f519165e784a59",
+  "media": [
+    {
+      "role": "practice",
+      "path": "authoring/test-10/groups/t10-g059/media/audio/practice-groups/test-10/t10-g059.ogg",
+      "sha": "fc1fa1a0c3528ed7eec43b375a0882df31e5c553",
+      "sha256": "f742ad15efd8c572ef2208829694d5066cd220750997bd6336dc37e852ee7fe3",
+      "decodedSamples": 3474000,
+      "leadingQuietSamples": 98954,
+      "trailingQuietSamples": 134593,
+      "nativeComponent": {
+        "startsAt": 0,
+        "endedAt": 72.3815,
+        "seekEvents": 0,
+        "errorEvents": 0
+      }
+    },
+    {
+      "role": "formal",
+      "path": "authoring/test-10/groups/t10-g059/media/audio/formal-groups/test-10/t10-g059.ogg",
+      "sha": "dbc4ac34584452cff20247f72cde2063341abcd1",
+      "sha256": "d72d8fa5f1aa8f998b0dcafa7c0685a479b7a941de1de1c774aad454c169e06c",
+      "decodedSamples": 5502041,
+      "leadingQuietSamples": 98954,
+      "trailingQuietSamples": 518565,
+      "nativeComponent": {
+        "startsAt": 0,
+        "endedAt": 114.632354,
+        "seekEvents": 0,
+        "errorEvents": 0
+      }
+    }
+  ]
+}
