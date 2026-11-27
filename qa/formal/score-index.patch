@@ -1,0 +1,24 @@
+--- a/assets/app.js
++++ b/assets/app.js
+@@ -1258,7 +1258,7 @@
+ }
+ async function startFiltered(override){await loadAll();const f=Object.assign({},filters,override||{});if(!Object.hasOwn(ACCENTS,f.accent))f.accent='all';if(f.accent!=='all'){f.section='listening';if(Number(f.part)>4)f.part='all'}const qs=filteredGroupSelection(allQuestions(),f);const label=f.accent!=='all'?ACCENTS[f.accent]+' focused practice':f.topic==='all'?'Daily Practice':TOPICS[f.topic]+' practice session';const short=qs.length<Number(f.count);const title=label+(short||f.accent!=='all'?' · '+qs.length+' questions':'')+(short?' (target '+f.count+'; not enough matching full groups)':'');await startSession(qs,title)}
+ function questionByActive(){return state.active?sessionQuestion(state.active.questionIds[state.active.index]):null}
+-function recordAnswer(q,selected,sessionId,seconds,workspace=state){const id=sessionId+':'+q.id;if(workspace.attempts.some(a=>a.id===id))return;const correct=selected===q.answer;workspace.attempts.push({id,questionId:q.id,testId:q.testId,revision:q.revision||1,correctAnswer:q.answer,part:q.part,topic:q.topic,selected,correct,at:now(),seconds:Math.min(3600,Math.max(0,Math.round(seconds||0)))});const st=workspace.stats[q.id]||(workspace.stats[q.id]={attempts:0,wrong:0,streak:0});st.attempts++;if(!correct)st.wrong++;st.streak=correct?st.streak+1:0;st.lastCorrect=correct;st.lastAt=now();st.testId=q.testId;st.part=q.part;st.topic=q.topic;st.due=now()+(correct?(st.streak<2?3:7):1)*86400000;st.needsReview=st.wrong>0&&st.streak<2}
++function recordAnswer(q,selected,sessionId,seconds,workspace,attemptIds){const id=sessionId+':'+q.id;if(attemptIds.has(id))return;attemptIds.add(id);const correct=selected===q.answer;workspace.attempts.push({id,questionId:q.id,testId:q.testId,revision:q.revision||1,correctAnswer:q.answer,part:q.part,topic:q.topic,selected,correct,at:now(),seconds:Math.min(3600,Math.max(0,Math.round(seconds||0)))});const st=workspace.stats[q.id]||(workspace.stats[q.id]={attempts:0,wrong:0,streak:0});st.attempts++;if(!correct)st.wrong++;st.streak=correct?st.streak+1:0;st.lastCorrect=correct;st.lastAt=now();st.testId=q.testId;st.part=q.part;st.topic=q.topic;st.due=now()+(correct?(st.streak<2?3:7):1)*86400000;st.needsReview=st.wrong>0&&st.streak<2}
+ 
+ let audioRun=0,formalRunning=false,formalElapsed=0,formalRole='',captureFormal=null,formalPaused=false,formalMedia=null;
+ const LISTENING_TAB_KEY='shift-formal-listening-refresh-v1';
+@@ -2022,9 +2022,11 @@
+  const owner=syncOwner;
+  const target={...original,attempts:original.attempts.slice(),sessions:original.sessions.slice(),stats:JSON.parse(JSON.stringify(original.stats))};
+  const submitted={...s.submitted};
++ const prefix=s.id+':',attemptIds=new Set();
++ for(const attempt of target.attempts){const id=attempt.id;if(id.startsWith(prefix))attemptIds.add(id)}
+  for(const id of s.questionIds){
+   const q=sessionQuestion(id,s);
+-  if(q){recordAnswer(q,s.answers[id]||null,s.id,0,target);submitted[id]=true}
++  if(q){recordAnswer(q,s.answers[id]||null,s.id,0,target,attemptIds);submitted[id]=true}
+  }
+  const outcomes=sessionOutcomes(s,target);
+  const result={id:s.id,title:s.title,mode:s.mode,questionIds:s.questionIds,answers:s.answers,submitted,startedAt:s.startedAt,finishedAt:now(),correct:s.questionIds.filter(id=>outcomes.get(id)===true).length,answered:done,total:s.questionIds.length};
