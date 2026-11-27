@@ -1,0 +1,34 @@
+{
+  "testId": "test-10",
+  "group": "t10-g005",
+  "question": "t10-q005",
+  "status": "Verified audio components; full SHIFT playback and round gate pending",
+  "releaseReady": false,
+  "format": "Ogg Opus mono 48000 Hz",
+  "checks": {
+    "sharedWavAndBothClipsAllFourOptionsBlindASR": "exact normalized words",
+    "formalWavBlindASR": "Number 5",
+    "formalHasUniqueNumber": true,
+    "decodedQuietSecondsEachEdge": 2,
+    "browserComponentBothFromZeroToNaturalEnd": true,
+    "browserDidNotSeek": true,
+    "fullApplication": false
+  },
+  "media": [
+    {
+      "role": "practice",
+      "path": "authoring/test-10/questions/Q005/media/audio/practice-groups/test-10/t10-g005.ogg",
+      "sha": "11298e3d39e1ee10e3fe944eb74e3cb0401d87df",
+      "sha256": "9bbe453d05b2ff90d41bf7defeb5198a279269504c5c61f2032e7f7dd0798850",
+      "decodedSamples": 1377000
+    },
+    {
+      "role": "formal",
+      "path": "authoring/test-10/questions/Q005/media/audio/formal-groups/test-10/t10-g005.ogg",
+      "sha": "66d39c6ab8cb397ed95182dcdf75cc50b71763bd",
+      "sha256": "b38c5b77752440ea814c84761c1313caa90880be01b0807c7749eb2411f50f9a",
+      "decodedSamples": 1848360
+    }
+  ],
+  "next": "Complete group sidecar and official pack, test exact browser routes and lock only after complete round verification."
+}
