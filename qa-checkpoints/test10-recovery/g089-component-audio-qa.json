@@ -1,0 +1,134 @@
+{
+  "testId": "test-10",
+  "group": "t10-g089",
+  "questions": [
+    "t10-q089",
+    "t10-q090",
+    "t10-q091"
+  ],
+  "status": "Verified audio components; full SHIFT playback and round gate pending",
+  "releaseReady": false,
+  "format": "Ogg Opus mono 48000 Hz",
+  "decodedQuietSamplesMinimumEachEdge": 96000,
+  "blindASR": {
+    "recognizer": "whisper.cpp small.en without expected-script prompting",
+    "comparison": "Caf\u00e9/cafe is an orthographic match. All clues and ordered formal stems 89\u201391 match.",
+    "resultSHA256": {
+      "shared": "bd039d674051dc6197c9b687a897a5c7f51ef6ece7e5fbc3b3ea2057a208e32a",
+      "formal-stems": "8276abd0540b265546125afa167d719d3765feb1c30aebce9320b1f078dc04be",
+      "practice-opus": "2dc789daf7efdd91bcb1cf3be70d0b8d3bf37ee1cdf4e5d2e67e07cdad9662b7",
+      "formal-opus": "281dd36f7128eae3558caff4c501d44d7a636d0c7ebf587c5f91e5c45f3fe04b"
+    }
+  },
+  "sources": {
+    "shared": {
+      "expectedSSMLSha256": "75ae534d6512a5ce560e568f6079f490d26a3d29a90f825299ba93c4b61214bf",
+      "wavSHA256": "7efc30da1624c9c04ee0bf22b1657ed7f0873eee02b0dfff4c271e0625727a61",
+      "decodedPCMSha256": "8b5ccf094d6d97292ae9e721a477ae034ec35add1a2d393c98ee99ec2cdb0f08"
+    },
+    "formal-stems": {
+      "expectedSSMLSha256": "fdf52efffebee66992a64c87dffa25d5495b5566e9040ac1212fa1fdd011bbbf",
+      "wavSHA256": "e993f3a18d96dbc782f285ee05211e246bf7400d03f7f421ca88f71e91538371",
+      "decodedPCMSha256": "9f9a99e0c72175c73e6141d85b861da274b53935ff470f1bd25363010c5ac73b"
+    }
+  },
+  "voices": [
+    "en-AU-NatashaNeural",
+    "en-US-AriaNeural"
+  ],
+  "formalPhases": [
+    {
+      "role": "edge",
+      "startFrame48k": 0,
+      "endFrame48k": 96000,
+      "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+    },
+    {
+      "role": "shared",
+      "startFrame48k": 96000,
+      "endFrame48k": 2989200,
+      "pcmSha256": "8b5ccf094d6d97292ae9e721a477ae034ec35add1a2d393c98ee99ec2cdb0f08"
+    },
+    {
+      "role": "gap",
+      "startFrame48k": 2989200,
+      "endFrame48k": 3037200,
+      "pcmSha256": "55873fecc61a79e87ca550c7072e38ccdd7ecb600ace286fe4717952a97c42b0"
+    },
+    {
+      "role": "stem",
+      "startFrame48k": 3037200,
+      "endFrame48k": 3302241,
+      "pcmSha256": "f8cf5c78e92db7e1152487702e8d02fd02f207140f61de84e9e46873e97f5fe9"
+    },
+    {
+      "role": "answer-gap",
+      "startFrame48k": 3302241,
+      "endFrame48k": 3686241,
+      "pcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+    },
+    {
+      "role": "stem",
+      "startFrame48k": 3686241,
+      "endFrame48k": 3945639,
+      "pcmSha256": "c0417dcf7e8c34d8b71ab233cdc13b195d55dededbe649edba4d33454b72ba46"
+    },
+    {
+      "role": "answer-gap",
+      "startFrame48k": 3945639,
+      "endFrame48k": 4329639,
+      "pcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+    },
+    {
+      "role": "stem",
+      "startFrame48k": 4329639,
+      "endFrame48k": 4626529,
+      "pcmSha256": "180cd0f33eddaab29143978c7f439088c78bc857df1455a423b2f3139bb82cc4"
+    },
+    {
+      "role": "answer-gap",
+      "startFrame48k": 4626529,
+      "endFrame48k": 5010529,
+      "pcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+    },
+    {
+      "role": "edge",
+      "startFrame48k": 5010529,
+      "endFrame48k": 5106529,
+      "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+    }
+  ],
+  "sharedPCMSHA256": "8b5ccf094d6d97292ae9e721a477ae034ec35add1a2d393c98ee99ec2cdb0f08",
+  "media": [
+    {
+      "role": "practice",
+      "path": "authoring/test-10/groups/t10-g089/media/audio/practice-groups/test-10/t10-g089.ogg",
+      "sha": "3807e6271c787aac470ebbc5c14397ac235e3485",
+      "sha256": "a5c09682dc9ad3963618207b11bd5158444cee038c386a89a8d4c553e8678dda",
+      "decodedSamples": 3085200,
+      "leadingQuietSamples": 99789,
+      "trailingQuietSamples": 134376,
+      "nativeComponent": {
+        "startsAt": 0,
+        "endedAt": 64.2815,
+        "seekEvents": 0,
+        "errorEvents": 0
+      }
+    },
+    {
+      "role": "formal",
+      "path": "authoring/test-10/groups/t10-g089/media/audio/formal-groups/test-10/t10-g089.ogg",
+      "sha": "390b54cc11fd50a5c322f2ad12f2d1035405614e",
+      "sha256": "7a050a5fb844720636c9cf7b11539fade94bf5a2598993874f372f608cb8d745",
+      "decodedSamples": 5106529,
+      "leadingQuietSamples": 99789,
+      "trailingQuietSamples": 518411,
+      "nativeComponent": {
+        "startsAt": 0,
+        "endedAt": 106.392521,
+        "seekEvents": 0,
+        "errorEvents": 0
+      }
+    }
+  ]
+}

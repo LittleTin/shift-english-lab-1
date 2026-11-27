@@ -1,0 +1,134 @@
+{
+  "testId": "test-10",
+  "group": "t10-g086",
+  "questions": [
+    "t10-q086",
+    "t10-q087",
+    "t10-q088"
+  ],
+  "status": "Verified audio components; full SHIFT playback and round gate pending",
+  "releaseReady": false,
+  "format": "Ogg Opus mono 48000 Hz",
+  "decodedQuietSamplesMinimumEachEdge": 96000,
+  "blindASR": {
+    "recognizer": "whisper.cpp small.en without expected-script prompting",
+    "comparison": "All question-bearing content now matches. The ASR substitutions the/a vs a/the do not alter the exercise rules or referents; formal stems WAV pouch’s/pouches is an orthographic homophone. Exact final marks and stems 86–88.",
+    "resultSHA256": {
+      "shared": "2f594e252d219b4a48f5400c64cd42e9d5d35b7de7b160531109cc1c3f76d4e1",
+      "formal-stems": "3a6de37aa0a8ad2b6617bd8589f0e34a64d917ebb74b4ee4e29ace5daea215e7",
+      "practice-opus": "5c5584fc1793e7278d376addf7bd206bbaa242291da2465482a7324bd17a4e5c",
+      "formal-opus": "b40a550d689fe7bd2048bf4c6bb4963aaf5114ddd7f38366ccc3462c559e92f1"
+    }
+  },
+  "sources": {
+    "shared": {
+      "expectedSSMLSha256": "0868856ac6b6fc4a2f3a396bc6627e1561074b94e08d75b53fe77a95c1f6c206",
+      "wavSHA256": "265a9d67340df083ead5a3c5c3bae15a27d23c49f2b3e89b3f8326a77e8f3e99",
+      "decodedPCMSha256": "077139c3b8963c3cd227f901f5e18103963e0c958ac23ec3bf1745f760a793f4"
+    },
+    "formal-stems": {
+      "expectedSSMLSha256": "ccdde5b4db305318ea191e7457117124aafd9361c37518209d1280297f11cae9",
+      "wavSHA256": "1ea0d35c4921f4b2d65b13c88f97a52ea6a98e895013d68d193bbbe223878ef8",
+      "decodedPCMSha256": "1178070fc5373e83889ca5c2af72867f5a351f03adc8b371258218a5a60a2049"
+    }
+  },
+  "voices": [
+    "en-SG-LunaNeural",
+    "en-US-AriaNeural"
+  ],
+  "formalPhases": [
+    {
+      "role": "edge",
+      "startFrame48k": 0,
+      "endFrame48k": 96000,
+      "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+    },
+    {
+      "role": "shared",
+      "startFrame48k": 96000,
+      "endFrame48k": 3115200,
+      "pcmSha256": "077139c3b8963c3cd227f901f5e18103963e0c958ac23ec3bf1745f760a793f4"
+    },
+    {
+      "role": "gap",
+      "startFrame48k": 3115200,
+      "endFrame48k": 3163200,
+      "pcmSha256": "55873fecc61a79e87ca550c7072e38ccdd7ecb600ace286fe4717952a97c42b0"
+    },
+    {
+      "role": "stem",
+      "startFrame48k": 3163200,
+      "endFrame48k": 3401850,
+      "pcmSha256": "f35ea8676ff5154a2d8e9f079f33a0f87ea9cb371336394111d21fc4176f1589"
+    },
+    {
+      "role": "answer-gap",
+      "startFrame48k": 3401850,
+      "endFrame48k": 3785850,
+      "pcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+    },
+    {
+      "role": "stem",
+      "startFrame48k": 3785850,
+      "endFrame48k": 4007777,
+      "pcmSha256": "08b27b1bcea632215a9959275209552df5f925eb97a99471c05d804bb79ba84a"
+    },
+    {
+      "role": "answer-gap",
+      "startFrame48k": 4007777,
+      "endFrame48k": 4391777,
+      "pcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+    },
+    {
+      "role": "stem",
+      "startFrame48k": 4391777,
+      "endFrame48k": 4736607,
+      "pcmSha256": "fb48896c589f2e6ad6ebeec27dcf6c059c5dc0a00ab7645f8ebf3dcea607094c"
+    },
+    {
+      "role": "answer-gap",
+      "startFrame48k": 4736607,
+      "endFrame48k": 5120607,
+      "pcmSha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a"
+    },
+    {
+      "role": "edge",
+      "startFrame48k": 5120607,
+      "endFrame48k": 5216607,
+      "pcmSha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5"
+    }
+  ],
+  "sharedPCMSHA256": "077139c3b8963c3cd227f901f5e18103963e0c958ac23ec3bf1745f760a793f4",
+  "media": [
+    {
+      "role": "practice",
+      "path": "authoring/test-10/groups/t10-g086/media/audio/practice-groups/test-10/t10-g086.ogg",
+      "sha": "206013211fe44de4604a162077ce8751ee022c70",
+      "sha256": "c7d78fa398c59d182a6a3a794b0fc62709e316e6ce869718ff1b1a436ca719e6",
+      "decodedSamples": 3211200,
+      "leadingQuietSamples": 100601,
+      "trailingQuietSamples": 137455,
+      "nativeComponent": {
+        "startsAt": 0,
+        "endedAt": 66.9065,
+        "seekEvents": 0,
+        "errorEvents": 0
+      }
+    },
+    {
+      "role": "formal",
+      "path": "authoring/test-10/groups/t10-g086/media/audio/formal-groups/test-10/t10-g086.ogg",
+      "sha": "0295ebecd503ad7b27c2a9f4dfdfd26987d3f464",
+      "sha256": "8f30af849f771849b84105d4a187a31e9e643965254171adb40e5f37c5427606",
+      "decodedSamples": 5216607,
+      "leadingQuietSamples": 100601,
+      "trailingQuietSamples": 518568,
+      "nativeComponent": {
+        "startsAt": 0,
+        "endedAt": 108.685813,
+        "seekEvents": 0,
+        "errorEvents": 0
+      }
+    }
+  ]
+}
