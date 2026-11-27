@@ -1146,6 +1146,27 @@ const ACCENTS={"en-US":"American English","en-GB":"British English","en-CA":"Can
 function accentMatches(q,accent){if(accent==='all')return true;const speakers=G.get(q.groupId)?.audioSpeakers;return q.part<5&&Array.isArray(speakers)&&speakers.length>0&&speakers.every(v=>v?.locale===accent)}
 function practicePage(){return heading('Practice at your own pace.','Choose a question type, topic, and difficulty. Related questions stay together.','PRACTICE BY TOPIC')+'<section class="panel"><h2>Set up this practice session</h2><div class="filters"><div class="field"><label for="filter-section">Practice section</label><select id="filter-section">'+selectOptions({reading:'Reading Practice',listening:'Listening Practice'},filters.section,'Reading + Listening')+'</select></div><div class="field"><label for="filter-part">Question type</label><select id="filter-part">'+selectOptions(Object.fromEntries(Object.entries(PARTS).map(([k,v])=>[k,'Part '+k+' · '+v])),filters.part,'All question types')+'</select></div><div class="field"><label for="filter-accent">Listening accent focus</label><select id="filter-accent">'+selectOptions(ACCENTS,filters.accent,'Any accent (including mixed)')+'</select></div><div class="field"><label for="filter-topic">Topic</label><select id="filter-topic">'+selectOptions(TOPICS,filters.topic,'All topics')+'</select></div><div class="field"><label for="filter-difficulty">Difficulty</label><select id="filter-difficulty">'+selectOptions(DIFFICULTY,filters.difficulty,'All difficulties')+'</select></div><div class="field"><label for="filter-count">Target question count</label><select id="filter-count">'+[10,20,40,100].map(n=>'<option value="'+n+'" '+(filters.count===n?'selected':'')+'>'+n+' questions approximately</option>').join('')+'</select></div></div><label class="check-row"><input type="checkbox" id="filter-unseen" '+(filters.unseen?'checked':'')+'>Prioritize questions not yet answered</label><p class="hint">Passages and conversations are selected as complete groups, so the question count may vary. If a topic or difficulty does not apply to every question in a group, that group is skipped. Prioritizing unanswered questions tries new groups first without splitting them. An accent filter includes only groups whose voices all have that accent label. Mixed and unlabeled groups are excluded; a shortfall is shown rather than filled with other accents. Labels describe synthetic voice models, not official accent certification. Submit the session to see your score and explanations.</p><div class="btn-row" style="margin-top:24px">'+btn('Start This Practice '+icon('arrow'),'start-filtered','primary')+'</div></section><div class="topics-row">'+Object.entries(TOPICS).map(([id,label])=>'<button class="topic-card" data-action="topic" data-topic="'+id+'">'+icon(topicIcon(id))+'<b>'+label+'</b><small>Choose this topic</small></button>').join('')+'</div>'}
 async function withBusy(fn){if(busy||guestSubmitPending||guestBackupApplying)return;busy=true;try{await fn()}catch(e){console.error(e);notify(e.message||'Something went wrong. Please try again.')}finally{busy=false}}
+function canUseLocalListPacks(){return !syncOwner&&authRestoreStatus!=='waiting'&&authRestoreStatus!=='checking'}
+async function loadListPacks(dest,cancelled=()=>false){
+ const review=dest==='review';
+ const currentUnloaded=()=>(review?Object.keys(state.stats).filter(id=>state.stats[id].wrong>0||state.stats[id].needsReview):Object.keys(state.stars).filter(id=>state.stars[id])).filter(id=>!Q.has(id));
+ if(canUseLocalListPacks()){
+  const needed=new Set();
+  let reliable=true;
+  for(const id of currentUnloaded()){
+   const p=/^t([0-9]{2,})-q(00[1-9]|0[1-9][0-9]|1[0-9]{2}|200)(?:-[rv][1-9][0-9]*)?$/.exec(id);
+   const testId=p&&'test-'+p[1],recorded=Object.hasOwn(state.stats,id)?state.stats[id].testId:null;
+   if(!testId||!officialEntry(testId)||(recorded&&recorded!==testId)){reliable=false;break}
+   needed.add(testId);
+  }
+  if(reliable){
+   for(const id of needed){if(cancelled())return false;await loadTest(id)}
+   if(canUseLocalListPacks()&&currentUnloaded().length===0)return !cancelled();
+  }
+ }
+ for(const t of allTests()){if(cancelled())return false;await loadTest(t.id)}
+ return !cancelled()
+}
 async function navigate(dest){if(route==='quiz'||route==='answer-review'){stopAudio();await persist()}mobileNav=false;route=dest;syncListeningCountdown(state.active);if(listening())void persist();activeTranscript=null;listLimit=40;if(['review','favorites'].includes(dest)){
  const hasRecords=dest==='review'?Object.values(state.stats).some(item=>item.needsReview||item.wrong>0):Object.values(state.stars).some(Boolean);
  // Keep account hydration and every saved/history filter on the existing path.
@@ -1155,14 +1176,7 @@ async function navigate(dest){if(route==='quiz'||route==='answer-review'){stopAu
   // A slow script may still finish, but only the active list may render or request more packs.
   let cancelled=false;
   const leave=new Promise(resolve=>{leavePendingList=()=>{cancelled=true;resolve(false)}});
-  const loadList=async()=>{
-   for(const t of allTests()){
-    if(cancelled)return false;
-    await loadTest(t.id)
-   }
-   return !cancelled
-  };
-  try{if(!await Promise.race([loadList(),leave]))route='home'}catch(e){
+  try{if(!await Promise.race([loadListPacks(dest,()=>cancelled),leave]))route='home'}catch(e){
    console.error(e);
    const hint=location.protocol==='file:'?'Extract the complete package before opening index.html.':'Check your connection and try again.';
    shell('<section class="panel"><h1>Could not load questions</h1><p>'+hint+'</p><p>Your saved records have not been changed.</p><div class="btn-row">'+btn('Try Again','nav-'+dest,'primary')+btn('Back to Home','nav-home')+'</div></section>');
@@ -2197,7 +2211,7 @@ async function loadResultQuestions(r){
  }
 }
 async function beginReview(kind){
-if(kind!=='result')await loadAll();
+if(kind!=='result')await loadListPacks(route);
 let ids;
 if(kind==='result'){const r=lastResult||state.sessions.at(-1);if(!r){notify('There is no completed session available for review.');return}await loadResultQuestions(r);const outcomes=sessionOutcomes(r);ids=r.questionIds.filter(id=>outcomes.get(id)===false)}
 else if(route==='favorites')ids=Object.keys(state.stars).filter(id=>state.stars[id]);
@@ -2240,7 +2254,7 @@ async function action(name,el){if(name==='export-unsaved-local-backup'){
  if(sessionId){
   const completed=state.sessions.find(s=>s.id===sessionId&&s.questionIds.includes(el.dataset.id));
   await loadResultQuestions(completed);
- }else await loadAll();
+ }else await loadListPacks('review');
  const detail=explanationQueue(el.dataset.id,sessionId);
  if(!detail){notify('There is no submitted answer record available for this question.');return}
  openExplanation(detail);return
@@ -2250,7 +2264,7 @@ async function action(name,el){if(name==='export-unsaved-local-backup'){
  openExplanation({...d,...d.entries[d.index+1],index:d.index+1});return
 }if(name==='back-review'){
  const detail=reviewDetail;stopAudio();route=detail?.returnTo||'review';reviewDetail=null;render();focusReviewOrigin(detail);return
-}if(name==='open-question'){if(!(route==='answer-review'&&reviewDetail?.returnTo==='result'&&reviewDetail.questionId===el.dataset.id&&Q.has(el.dataset.id)))await loadAll();const q=Q.get(el.dataset.id);if(q)return startSession(relatedQuestions(q),'Group Review');return}if(name==='start-list')return beginReview('list');if(name==='review-result')return beginReview('result');if(name==='more-list'){listLimit+=40;render();return}if(name==='open-result'){const r=state.sessions.find(s=>s.id===el.dataset.id);await loadResultQuestions(r);lastResult=r;route='result';render();window.scrollTo(0,0);return}if(name==='export-backup')return exportBackup();if(name==='import-backup'){if(syncOwner)return;document.getElementById('backup-input').click();return}if(name==='import-pack'){await loadAll();document.getElementById('pack-input').click();return}if(name==='reset-progress'){if(syncOwner)return;confirmBox('Clear your learning records?',storageMode==='tabstorage'?'This clears this tab’s answers, mistakes, saved questions, notes, and unfinished progress only. Previously shared records are not changed. Export a backup before clearing anything.':'This removes local answers, mistakes, saved questions, notes, and unfinished progress. Imported packs are kept. Export a backup before clearing anything.',async()=>{const imported=state.importedPacks;state={formatVersion:1,settings:{fontScale:1,translation:false},attempts:[],stats:{},stars:{},notes:{},sessions:[],active:null,importedPacks:imported,lastBackup:null};clearNoteDraft();lastResult=null;if(await persist(false,false,'clear')===false)return;render();notify('Learning records cleared.')},'Confirm Clear')}}
+}if(name==='open-question'){if(!((route==='favorites'||route==='answer-review'&&reviewDetail?.questionId===el.dataset.id)&&Q.has(el.dataset.id)))await loadAll();const q=Q.get(el.dataset.id);if(q)return startSession(relatedQuestions(q),'Group Review');return}if(name==='start-list')return beginReview('list');if(name==='review-result')return beginReview('result');if(name==='more-list'){listLimit+=40;render();return}if(name==='open-result'){const r=state.sessions.find(s=>s.id===el.dataset.id);await loadResultQuestions(r);lastResult=r;route='result';render();window.scrollTo(0,0);return}if(name==='export-backup')return exportBackup();if(name==='import-backup'){if(syncOwner)return;document.getElementById('backup-input').click();return}if(name==='import-pack'){await loadAll();document.getElementById('pack-input').click();return}if(name==='reset-progress'){if(syncOwner)return;confirmBox('Clear your learning records?',storageMode==='tabstorage'?'This clears this tab’s answers, mistakes, saved questions, notes, and unfinished progress only. Previously shared records are not changed. Export a backup before clearing anything.':'This removes local answers, mistakes, saved questions, notes, and unfinished progress. Imported packs are kept. Export a backup before clearing anything.',async()=>{const imported=state.importedPacks;state={formatVersion:1,settings:{fontScale:1,translation:false},attempts:[],stats:{},stars:{},notes:{},sessions:[],active:null,importedPacks:imported,lastBackup:null};clearNoteDraft();lastResult=null;if(await persist(false,false,'clear')===false)return;render();notify('Learning records cleared.')},'Confirm Clear')}}
 document.addEventListener('click',e=>{const el=e.target.closest('[data-action]');if(!el||el.disabled)return;e.preventDefault();
  const name=el.dataset.action;
  if(name==='nav-home'&&leavePendingList){leavePendingList();return}
