@@ -1,0 +1,33 @@
+{
+  "testId": "test-10",
+  "group": "t10-g006",
+  "question": "t10-q006",
+  "status": "Verified audio components; full SHIFT playback and round gate pending",
+  "releaseReady": false,
+  "format": "Ogg Opus mono 48000 Hz",
+  "checks": {
+    "sharedWavAndBothClipsAllFourOptionsBlindASR": "matched options; separate D crop resolved one spurious tail token on whole practice clip",
+    "formalWavBlindASR": "Number 6",
+    "formalHasUniqueNumber": true,
+    "decodedQuietSecondsEachEdge": 2,
+    "browserComponentBothFromZeroToNaturalEnd": true,
+    "browserDidNotSeek": true,
+    "fullApplication": false
+  },
+  "media": [
+    {
+      "role": "practice",
+      "path": "authoring/test-10/questions/Q006/media/audio/practice-groups/test-10/t10-g006.ogg",
+      "sha": "7be6011b24022f223c1edc48d40e8ace3553692c",
+      "sha256": "fc37de73f05f31f2981423a1b8e1319ca70f4fa07d1b8fd0b72a610acfea849d",
+      "decodedSamples": 1537800
+    },
+    {
+      "role": "formal",
+      "path": "authoring/test-10/questions/Q006/media/audio/formal-groups/test-10/t10-g006.ogg",
+      "sha": "6bbc85c24924661a3071903550b99fe3e9fe7023",
+      "sha256": "2b5f52587f12fe44bedce2390085228c958fecfa2bca91d4ffd17d5edf114cbd",
+      "decodedSamples": 2010600
+    }
+  ]
+}
