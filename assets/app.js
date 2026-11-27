@@ -2187,7 +2187,14 @@ async function loadResultQuestions(r){
   needed.add(testId);
  }
  for(const id of needed)await loadTest(id);
- if(r.questionIds.some(id=>!Q.has(id)))await loadAll();
+ for(const id of r.questionIds){
+  if(Q.has(id))continue;
+  const testId=first.get(id)?.testId;
+  const owner=/^t([0-9]{2,})-q(00[1-9]|0[1-9][0-9]|1[0-9]{2}|200)(?:-[rv][1-9][0-9]*)?$/.exec(id);
+  // A built-in ID confirms the stored association even when its original content is retired.
+  // Keep the compatibility search for imported, ambiguous or older nonstandard associations.
+  if(!owner||testId!=='test-'+owner[1]||!officialEntry(testId))return loadAll();
+ }
 }
 async function beginReview(kind){
 if(kind!=='result')await loadAll();
