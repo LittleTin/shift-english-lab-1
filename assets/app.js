@@ -151,7 +151,7 @@ const syncConfig=window.SHIFT_SYNC_CONFIG;
 const syncConfigured=!!(records&&syncConfig?.url&&syncConfig?.publishableKey&&/^https?:$/.test(location.protocol));
 let accountBaseline=null,accountActiveRevision=null,accountActiveConflict=false;
 const accountActiveWarning='This session could not be saved because it changed in another tab. Back up any unsaved edits, then reload to resume.';
-let syncOwner=null,syncCore=null,syncOnline=null,syncPasswordOpen=false,syncStatus='',syncPageCursor=null,syncLastFull=0,syncEpoch=0;
+let syncOwner=null,syncCore=null,syncOnline=null,syncOnlineFull=false,syncPendingFull=null,syncPasswordOpen=false,syncStatus='',syncPageCursor=null,syncLastFull=0,syncEpoch=0;
 const scopedKey=(key,owner=syncOwner)=>records&&owner?records.key(key,owner):key;
 const accountActionBusy=()=>route!=='data'||diagnostic;
 const AUTH_TAB_KEY='shift:/shift-english-lab-1/:auth-refresh/v1', LAST_PAGE_TAB_KEY='shift:last-page:v1';
@@ -312,7 +312,7 @@ async function switchWorkspace(owner,avoidQuiz=false){
  const previous={state,owner:syncOwner,Q,G,loaded,officialPacks:new Map(officialPacks),
   archived:new Set(archivedIds),unavailable:new Set(unavailableCustom),lastResult,reviewDetail,resumeEnv,lastExportAt};
  clearTimeout(checkpointTimer);checkpointTimer=undefined;checkpointLoop=null;checkpointConflict=null;checkpointFeedback='';checkpointSyncAt=0;checkpointSignature='';
- syncEpoch++;syncPageCursor=null;syncLastFull=0;syncOnline=null;syncStatus='';lastExportAt=0;
+ syncEpoch++;syncPageCursor=null;syncLastFull=0;syncOnline=null;syncOnlineFull=false;syncPendingFull=null;syncStatus='';lastExportAt=0;
  stopAudio();reviewDetail=null;lastResult=null;resumeEnv=null;noteGeneration++;noteTokens.clear();noteStatuses.clear();
  state=next;syncOwner=owner;
  const priorAccount=[accountBaseline,accountActiveRevision,accountActiveConflict];
@@ -510,7 +510,19 @@ async function startSync(full=false){
  if(!syncOwner||storageMode!=='indexeddb')return;
  if(navigator.onLine===false){setSyncStatus('Offline. Completed records will sync after reconnecting.');return}
  const owner=syncOwner,epoch=syncEpoch;
- if(syncOnline)return syncOnline;
+ if(syncOnline){
+  if(!full||syncOnlineFull)return syncOnline;
+  if(syncPendingFull)return syncPendingFull;
+  // Honor a manual full reconciliation after the current incremental run.
+  const queued=syncOnline.then(()=>{
+   if(syncPendingFull!==queued||syncOwner!==owner||syncEpoch!==epoch)return;
+   syncPendingFull=null;
+   return startSync(true);
+  });
+  syncPendingFull=queued;
+  return queued;
+ }
+ const runFull=full||!syncLastFull||now()-syncLastFull>=15*60000;
  const p=(async()=>{
   const inWorkspace=()=>syncOwner===owner&&syncEpoch===epoch;
   const current=()=>inWorkspace()&&syncCore?.getScope()?.userId===owner;
@@ -540,7 +552,6 @@ async function startSync(full=false){
     state.syncSent={...prior,[s.id]:true};
     try{await persist(true,true)}catch(error){if(current())state.syncSent=prior;throw error}
    }
-   const runFull=full||!syncLastFull||now()-syncLastFull>=15*60000;
    let cursor=runFull?null:syncPageCursor, count=0;
    do{
     const page=await syncCore.listCompletedSessions({scope,cursor,limit:100});
@@ -572,8 +583,8 @@ async function startSync(full=false){
    }
   }catch(error){if(inWorkspace())setSyncStatus(storageMode!=='indexeddb'?'Local saving failed. Export a backup before switching accounts.':accountMessage(error))}
  })();
- syncOnline=p;
- try{return await p}finally{if(syncOnline===p)syncOnline=null}
+ syncOnline=p;syncOnlineFull=runFull;
+ try{return await p}finally{if(syncOnline===p){syncOnline=null;syncOnlineFull=false}}
 }
 async function syncGuestPreview(){
  const guest=await readWorkspace(null);
