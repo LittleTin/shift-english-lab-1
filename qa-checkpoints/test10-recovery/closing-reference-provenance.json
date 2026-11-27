@@ -1,0 +1,52 @@
+{
+  "testId": "test-10",
+  "releaseReady": false,
+  "closingReferenceOnly": {
+    "sourceCommit": "ef583fdc9108704dc8a3eb763f8f27714ae0be97",
+    "path": "audio/formal-groups/test-09/t09-g098.ogg",
+    "sourceSHA256": "bdeaa904cfbebbac599016f35ae621e2a70bc2985a2889871abbdbf247e83be8",
+    "range48k": [
+      4223073,
+      4607673
+    ],
+    "sourceDecodedFrames": 4607673,
+    "exactClipS16LE_SHA256": "5a2d8b30544cba4ce27c01c6a016e0a1abb4019423febb5be87220ec5ae493c0",
+    "trailingFramesAtThreshold32": 134528,
+    "offlineUnpromptedASR": {
+      "models": [
+        "base.en",
+        "small.en"
+      ],
+      "both": "This is the end of the listening section. Please continue to the reading section.",
+      "receiptSHA256": [
+        "17e136dd6d1c77d75aac5a3a9633acb1ae6b55ea203ff52aaddb2d042fd13696",
+        "1f69f8726b9f0096527f22ee0b512875747ecd0e3f30f41226ac94e171605643"
+      ]
+    }
+  },
+  "limitations": [
+    "Comparison reference only, not the historical pre-codec source or current Test 10 scored material.",
+    "Current G098 formal release media must independently verify the spoken transition after Q100, boundaries, natural end and trusted native foreground transition."
+  ],
+  "backedUpPracticeEvidence": [
+    {
+      "group": "t10-g068",
+      "gitBlob": "48440d43bbc3eab65cec3a05471083e4f64f8e52",
+      "earlierNativePlaybackSeconds": [
+        0,
+        76.344
+      ],
+      "earlierReceiptSHA256": "82fd0165a992884e89f86b4bbbe15fffe032c32d4bea10abe9235968119b3a4e"
+    },
+    {
+      "group": "t10-g092",
+      "gitBlob": "40b3129bb4eb0399ab6dab89915eb7914c8ec640",
+      "earlierNativePlaybackSeconds": [
+        0,
+        68.719
+      ],
+      "earlierReceiptSHA256": "b82009d466f1b21f8833a34aa596d87c2eb862a9b9e455499926f1dbe454ebca"
+    }
+  ],
+  "practiceEvidenceScope": "Historical QA provenance for exact retained backup objects; not current formal-counterpart evidence."
+}
