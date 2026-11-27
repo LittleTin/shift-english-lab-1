@@ -1,0 +1,924 @@
+{
+  "testId": "test-10",
+  "releaseReady": false,
+  "baseline": "feee7e054a4e91cfc52a322346116de9ae579f11",
+  "status": "Development integrity checkpoint only; whole-test seal, timing, playback and publication remain pending.",
+  "questions": {
+    "total": 200,
+    "retainedExactGitObjects": 159,
+    "reading": {
+      "advanced": 40,
+      "intermediate": 50,
+      "foundation": 10
+    },
+    "listening": {
+      "advanced": 40,
+      "intermediate": 50,
+      "foundation": 10
+    }
+  },
+  "audio": {
+    "groups": 54,
+    "completePairs": 44,
+    "missingPairs": [
+      "t10-g053",
+      "t10-g062",
+      "t10-g065",
+      "t10-g068",
+      "t10-g083",
+      "t10-g086",
+      "t10-g089",
+      "t10-g092",
+      "t10-g095",
+      "t10-g098"
+    ],
+    "filesDecoded": 88,
+    "stagedFormalSubTotalSamples48k": 130576789,
+    "stagedFormalSubTotalNotWholeRound": true,
+    "allDecodedOggOpusMono48k": true,
+    "minimumQuietFramesAt32PCM": 96000,
+    "sidecarSampleAndReceiptErrors": 0,
+    "assets": [
+      {
+        "path": "authoring/test-10/groups/t10-g032/media/audio/formal-groups/test-10/t10-g032.ogg",
+        "sha256": "1253e771f35f9adac48d76a7c62213ab7ebab5a912b0d3ddcba699fa31d7abb2",
+        "gitBlob": "efd4aa220b766aa50eed4c5699273b616582f691",
+        "decodedSamples48k": 7638120,
+        "quietAtBothEdges": [
+          106648,
+          518781
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g032/media/audio/practice-groups/test-10/t10-g032.ogg",
+        "sha256": "260b8460133658ae9ea8194e4dbccefe90655c75ab1c156bbbce569abf195c9b",
+        "gitBlob": "16a34b283be5edef1eefeb7a543d564770c2260e",
+        "decodedSamples48k": 4366200,
+        "quietAtBothEdges": [
+          100929,
+          136202
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g035/media/audio/formal-groups/test-10/t10-g035.ogg",
+        "sha256": "0c5f41d04e76e32dcee4fac210ccb7a0793b7d51ba1e0ce5c81f9b8ac3c5cde9",
+        "gitBlob": "ebd3001081ccfcafa6d291b14a07383392d699ed",
+        "decodedSamples48k": 5517000,
+        "quietAtBothEdges": [
+          100967,
+          518544
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g035/media/audio/practice-groups/test-10/t10-g035.ogg",
+        "sha256": "0edae31b60d7ec1f5a4fe16a5df9bcf790ae232459f198faaf88b523c69d08ce",
+        "gitBlob": "2b7350b1d136d3f1815ae0dc9f0595ff5995a4f6",
+        "decodedSamples48k": 2849400,
+        "quietAtBothEdges": [
+          100584,
+          112438
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g038/media/audio/formal-groups/test-10/t10-g038.ogg",
+        "sha256": "0d8f27674d5ac7b24aad8d047ef7275d75f3d130564c1f8187fac0e0d7b7c8fc",
+        "gitBlob": "2ce19a96a5914df02945d2d06248f1a50e1f4033",
+        "decodedSamples48k": 5586720,
+        "quietAtBothEdges": [
+          100967,
+          519140
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g038/media/audio/practice-groups/test-10/t10-g038.ogg",
+        "sha256": "c45d8cdf5dca05c5bf072b1c16341cba519d912deff20a182a3a5ad52c4bedcc",
+        "gitBlob": "3f0c66590d9b9f9be01afbdf8c7a17872dca846a",
+        "decodedSamples48k": 3170400,
+        "quietAtBothEdges": [
+          100370,
+          134397
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g041/media/audio/formal-groups/test-10/t10-g041.ogg",
+        "sha256": "9876e4052e6e93c7b00f4fa94afdc84cd2086db82ca1fe6f2073acb8a0e4dea6",
+        "gitBlob": "e5f5e921920878d0f072993b7ca04d66769dc31d",
+        "decodedSamples48k": 5754120,
+        "quietAtBothEdges": [
+          100967,
+          518694
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g041/media/audio/practice-groups/test-10/t10-g041.ogg",
+        "sha256": "5edf058ce4023f6bc8fe9164ca87dbede127ad0ccb15f1bd702cc1c758802be8",
+        "gitBlob": "531c3afeb3cffbf4680e9a082fb58a1c56f1038b",
+        "decodedSamples48k": 3229800,
+        "quietAtBothEdges": [
+          103575,
+          135695
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g044/media/audio/formal-groups/test-10/t10-g044.ogg",
+        "sha256": "892db262e1e6ec20a9c148e5aa4fd4be19638c150b825b83b6de486c5d000472",
+        "gitBlob": "562697c7d67f398d26680eec7477de31b8fe87fb",
+        "decodedSamples48k": 5623899,
+        "quietAtBothEdges": [
+          101028,
+          518520
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g044/media/audio/practice-groups/test-10/t10-g044.ogg",
+        "sha256": "770a1ef17b8101a22c5108e06a12d7dab6d25ec1c595ede8142a7a1369f656a8",
+        "gitBlob": "f65fd6e362c5f0a2bb594584e1a77704466cffef",
+        "decodedSamples48k": 3254027,
+        "quietAtBothEdges": [
+          98368,
+          133500
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g047/media/audio/formal-groups/test-10/t10-g047.ogg",
+        "sha256": "79114eeb653c5876f144c4a3ad068302bc248e99dd35e54da3eb1d7aa1f14b69",
+        "gitBlob": "e41de94f3510c16903f626ee5f0c26faa9317839",
+        "decodedSamples48k": 5540872,
+        "quietAtBothEdges": [
+          100963,
+          518460
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g047/media/audio/practice-groups/test-10/t10-g047.ogg",
+        "sha256": "fc917bba0987cc9ed50ed9363e302749e2e6eb824fd50d5fe69b55cf61535029",
+        "gitBlob": "10ce6d9c9d5b904dcb03db7446c135fbbc40d7bf",
+        "decodedSamples48k": 3298200,
+        "quietAtBothEdges": [
+          102240,
+          136376
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g050/media/audio/formal-groups/test-10/t10-g050.ogg",
+        "sha256": "b32e09261e68ecf59fae2cca217ab4e1fe04d40fffa58d14f3bd33599e2998a7",
+        "gitBlob": "83e37b67971188ba7e80be69a1e0469667e193e9",
+        "decodedSamples48k": 5107522,
+        "quietAtBothEdges": [
+          100432,
+          519011
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g050/media/audio/practice-groups/test-10/t10-g050.ogg",
+        "sha256": "93fb6a9d773cd6f50ec6a04975390846a1aa68f91d83ac13d637d8561682c350",
+        "gitBlob": "c47571acba343bf032107c619dd272a29d3a89a7",
+        "decodedSamples48k": 2992800,
+        "quietAtBothEdges": [
+          100432,
+          135737
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g056/media/audio/formal-groups/test-10/t10-g056.ogg",
+        "sha256": "f9978cba13ba0397ef1c9ca4fde1f5e4bd553ea2761c431bbca665e6129653ef",
+        "gitBlob": "15ab8855d0ddd4091635540abf7603c4b48bb49b",
+        "decodedSamples48k": 5794905,
+        "quietAtBothEdges": [
+          99732,
+          518539
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g056/media/audio/practice-groups/test-10/t10-g056.ogg",
+        "sha256": "33b175c2f7579c4d691db9ff7fc036541263ab81b5f4321b704ff3c5d3ee90b7",
+        "gitBlob": "475a2b696ff6b91fc0ef9fefce39a93ae3be5b52",
+        "decodedSamples48k": 3726120,
+        "quietAtBothEdges": [
+          99732,
+          134079
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g059/media/audio/formal-groups/test-10/t10-g059.ogg",
+        "sha256": "d72d8fa5f1aa8f998b0dcafa7c0685a479b7a941de1de1c774aad454c169e06c",
+        "gitBlob": "dbc4ac34584452cff20247f72cde2063341abcd1",
+        "decodedSamples48k": 5502041,
+        "quietAtBothEdges": [
+          98954,
+          518565
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g059/media/audio/practice-groups/test-10/t10-g059.ogg",
+        "sha256": "f742ad15efd8c572ef2208829694d5066cd220750997bd6336dc37e852ee7fe3",
+        "gitBlob": "fc1fa1a0c3528ed7eec43b375a0882df31e5c553",
+        "decodedSamples48k": 3474000,
+        "quietAtBothEdges": [
+          98954,
+          134593
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g071/media/audio/formal-groups/test-10/t10-g071.ogg",
+        "sha256": "47ea0a39d30045616d57f8ca3c877b53291e6e9f34757c3997e4d07b9965589e",
+        "gitBlob": "e0a8cf8d30a31062414083a64a21c421aff4abbf",
+        "decodedSamples48k": 6977568,
+        "quietAtBothEdges": [
+          105292,
+          518532
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g071/media/audio/practice-groups/test-10/t10-g071.ogg",
+        "sha256": "4347074c606b543f8c7923ce7a49d8754c4531917806ffc45289c27d2ca3713b",
+        "gitBlob": "a0b1b09ebc9dd99981d5d5d324f826f5fa968800",
+        "decodedSamples48k": 3376800,
+        "quietAtBothEdges": [
+          100943,
+          135542
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g074/media/audio/formal-groups/test-10/t10-g074.ogg",
+        "sha256": "7a7afabe5685fdfe765ada28c9ebbac6c1c32e11bd958c46cbc607000f5d20fd",
+        "gitBlob": "206817385e3d87223523923dc2c9a81ff6252314",
+        "decodedSamples48k": 5745614,
+        "quietAtBothEdges": [
+          100967,
+          518574
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g074/media/audio/practice-groups/test-10/t10-g074.ogg",
+        "sha256": "4c96c0775b2ec4efbb0817ccc8a8e08a68dec5c35e02009a95a993a7e7937799",
+        "gitBlob": "82046e9574629fe0a1e39229724cbaa79b087033",
+        "decodedSamples48k": 3341294,
+        "quietAtBothEdges": [
+          98919,
+          136103
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g077/media/audio/formal-groups/test-10/t10-g077.ogg",
+        "sha256": "7fa34f032bb22bcfc3ff83a330880cf00ad54e03ffa01c46f4733dd6bd70c6f7",
+        "gitBlob": "ce162250b319e18ccaf3986c91275e3e39e627eb",
+        "decodedSamples48k": 6050280,
+        "quietAtBothEdges": [
+          100963,
+          518540
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g077/media/audio/practice-groups/test-10/t10-g077.ogg",
+        "sha256": "d24127386f8d4bbc6375b3a89e9f604763f1e2238286f63872c19eae53837b96",
+        "gitBlob": "c6b969a0441e5eea239d1c2a49f2a4d49745c485",
+        "decodedSamples48k": 3238200,
+        "quietAtBothEdges": [
+          100575,
+          136516
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g080/media/audio/formal-groups/test-10/t10-g080.ogg",
+        "sha256": "5c042c87b07fd94ebe611b247c09b5610477c75de7afbfb81ccf4bca7522ab68",
+        "gitBlob": "3278971cd173c189da0cf4b31bdf306c3aced595",
+        "decodedSamples48k": 8295960,
+        "quietAtBothEdges": [
+          100956,
+          518580
+        ]
+      },
+      {
+        "path": "authoring/test-10/groups/t10-g080/media/audio/practice-groups/test-10/t10-g080.ogg",
+        "sha256": "a489ab15176e298e0c31fe13514c1db1b6d9916cb049cc3b53966f773f282593",
+        "gitBlob": "e5510a9a2fbd151a62ecfd6c590868902337d94e",
+        "decodedSamples48k": 5181000,
+        "quietAtBothEdges": [
+          102298,
+          135725
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q001/media/audio/formal-groups/test-10/t10-g001.ogg",
+        "sha256": "5690a6379fc2fb1c735599b44f8e635ef3778e85bad3038869c64d5b0f68c1f6",
+        "gitBlob": "dcdd3c08bb1f117e6ae7fbb93f2b37e618cc7f62",
+        "decodedSamples48k": 4643362,
+        "quietAtBothEdges": [
+          106652,
+          519573
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q001/media/audio/practice-groups/test-10/t10-g001.ogg",
+        "sha256": "65302b9386f96d3a3936f7c50c56d6b644fdee40aed244ac741ac5c3701e6d73",
+        "gitBlob": "2bb66f2de642bb7e5fa4d751a3c24aa927a63602",
+        "decodedSamples48k": 1413120,
+        "quietAtBothEdges": [
+          100879,
+          135575
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q002/media/audio/formal-groups/test-10/t10-g002.ogg",
+        "sha256": "1f73b9ad0fae10338cb487f12552f9a31dd9266145f89f6368f0dbc18aa1acda",
+        "gitBlob": "df65eb9b14f8fc40866a39678524ac8be8b532e5",
+        "decodedSamples48k": 1667018,
+        "quietAtBothEdges": [
+          97207,
+          519647
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q002/media/audio/practice-groups/test-10/t10-g002.ogg",
+        "sha256": "fe5fec5a1162b45976b34895e51ed070a6ab2114af4f4618431b5632495a0aef",
+        "gitBlob": "8fa9a25e961379d1a6a53f652bcd9d0488048626",
+        "decodedSamples48k": 1225920,
+        "quietAtBothEdges": [
+          97794,
+          135648
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q003/media/audio/formal-groups/test-10/t10-g003.ogg",
+        "sha256": "dcbd9452eaf8a38b9c0d8e271dbc65c77ddd2e9fb54dfe09b0ecd7cf4d386553",
+        "gitBlob": "5711ac539ad1677e60660616b6203c66c2eeb8c3",
+        "decodedSamples48k": 1910188,
+        "quietAtBothEdges": [
+          97219,
+          520714
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q003/media/audio/practice-groups/test-10/t10-g003.ogg",
+        "sha256": "639b697ba85b704858ce8c2281bc7d00126fe34093e9498943a0e24ec7daaa0d",
+        "gitBlob": "2bb06efd0f818e511cecff2f679c3927647e2c69",
+        "decodedSamples48k": 1469520,
+        "quietAtBothEdges": [
+          100879,
+          136824
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q004/media/audio/formal-groups/test-10/t10-g004.ogg",
+        "sha256": "3380dbe1dd90357675b4a01b2f7aa3f41797487451d55dafe761e2a79eb1722c",
+        "gitBlob": "f9b361d2eae91eb9722d042ceed129330ffd6a79",
+        "decodedSamples48k": 1769634,
+        "quietAtBothEdges": [
+          97037,
+          521649
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q004/media/audio/practice-groups/test-10/t10-g004.ogg",
+        "sha256": "dc4213cfd0967314350a523b011f112d4070ef9f13a6e246990d538e7f06bd60",
+        "gitBlob": "7e3d79fc7a8806b696d2d6227b6d6077a58ada6a",
+        "decodedSamples48k": 1330320,
+        "quietAtBothEdges": [
+          101294,
+          137737
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q005/media/audio/formal-groups/test-10/t10-g005.ogg",
+        "sha256": "b38c5b77752440ea814c84761c1313caa90880be01b0807c7749eb2411f50f9a",
+        "gitBlob": "66d39c6ab8cb397ed95182dcdf75cc50b71763bd",
+        "decodedSamples48k": 1848360,
+        "quietAtBothEdges": [
+          100217,
+          519574
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q005/media/audio/practice-groups/test-10/t10-g005.ogg",
+        "sha256": "9bbe453d05b2ff90d41bf7defeb5198a279269504c5c61f2032e7f7dd0798850",
+        "gitBlob": "11298e3d39e1ee10e3fe944eb74e3cb0401d87df",
+        "decodedSamples48k": 1377000,
+        "quietAtBothEdges": [
+          100270,
+          135574
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q006/media/audio/formal-groups/test-10/t10-g006.ogg",
+        "sha256": "2b5f52587f12fe44bedce2390085228c958fecfa2bca91d4ffd17d5edf114cbd",
+        "gitBlob": "6bbc85c24924661a3071903550b99fe3e9fe7023",
+        "decodedSamples48k": 2010600,
+        "quietAtBothEdges": [
+          100216,
+          519094
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q006/media/audio/practice-groups/test-10/t10-g006.ogg",
+        "sha256": "fc37de73f05f31f2981423a1b8e1319ca70f4fa07d1b8fd0b72a610acfea849d",
+        "gitBlob": "7be6011b24022f223c1edc48d40e8ace3553692c",
+        "decodedSamples48k": 1537800,
+        "quietAtBothEdges": [
+          99638,
+          135095
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q007/media/audio/formal-groups/test-10/t10-g007.ogg",
+        "sha256": "44b2cc1d4d870de96814e96a265b6a614161ef1f961ef6988c5f47bee468262e",
+        "gitBlob": "cb088788251f10b63e208c719e905bab195dfbb1",
+        "decodedSamples48k": 2064690,
+        "quietAtBothEdges": [
+          202598,
+          520360
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q007/media/audio/practice-groups/test-10/t10-g007.ogg",
+        "sha256": "3c818542632a448134d23fe4b5d3c1f0bc418c7c9be98c78508041ada3ecc4f9",
+        "gitBlob": "a470325fddcd5e1a06914d8e995f199d1914fc4e",
+        "decodedSamples48k": 826800,
+        "quietAtBothEdges": [
+          100553,
+          136360
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q008/media/audio/formal-groups/test-10/t10-g008.ogg",
+        "sha256": "60f3d2878141965d1bb0b9c616fbdfd8213fbe3cc8943782d30fbe3c825f5080",
+        "gitBlob": "b70defbea1c20da00e0eeb26f4adcdfc7485ddfc",
+        "decodedSamples48k": 1305552,
+        "quietAtBothEdges": [
+          96965,
+          518700
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q008/media/audio/practice-groups/test-10/t10-g008.ogg",
+        "sha256": "94af3cf0659aae760215d97a9ad27a8c65744e555c3dcc995507746622569003",
+        "gitBlob": "9915f96e3bc1de5af24f822639544a384470ac30",
+        "decodedSamples48k": 865200,
+        "quietAtBothEdges": [
+          100509,
+          134700
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q009/media/audio/formal-groups/test-10/t10-g009.ogg",
+        "sha256": "a5e7c7e4606e3e4767f91a2e5ca16673982465e39111ab62034776eed3a6ec0a",
+        "gitBlob": "8a14355a5076d7890e56d47afe90ecf81e8f2744",
+        "decodedSamples48k": 1376446,
+        "quietAtBothEdges": [
+          97162,
+          519596
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q009/media/audio/practice-groups/test-10/t10-g009.ogg",
+        "sha256": "19f5409c220e7ea8c4996c6292779eec4dc46b98c6027a64ce6a8699c498ccfa",
+        "gitBlob": "d13f2f49c862ceb77b14c38a35db3acc644f6ffd",
+        "decodedSamples48k": 936000,
+        "quietAtBothEdges": [
+          100924,
+          135601
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q010/media/audio/formal-groups/test-10/t10-g010.ogg",
+        "sha256": "959756396a4d32bdc146cdacbdfd47ca3b73bb0d75d704b6ce5e43970753b03b",
+        "gitBlob": "ce6c55503d5b420b96d6d0861f3c318df9f25852",
+        "decodedSamples48k": 1352440,
+        "quietAtBothEdges": [
+          97088,
+          521373
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q010/media/audio/practice-groups/test-10/t10-g010.ogg",
+        "sha256": "280d66cbd1d91781ee5c319d0d7ba432d4faf99ed21d9c5309c2787eab692657",
+        "gitBlob": "6834e8e4cf679d3bbf2f4f76009c0bdc3eaf640f",
+        "decodedSamples48k": 912000,
+        "quietAtBothEdges": [
+          100698,
+          136891
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q011/media/audio/formal-groups/test-10/t10-g011.ogg",
+        "sha256": "0a8960ee75c09aa8d5aa21a237731e990e6070e63dac82d00b42d1110b9d041f",
+        "gitBlob": "af9a132ad17ab0b456c652693ea80fd38e7156f7",
+        "decodedSamples48k": 1353546,
+        "quietAtBothEdges": [
+          97146,
+          519284
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q011/media/audio/practice-groups/test-10/t10-g011.ogg",
+        "sha256": "840764529fb736fb1142279d09e6e71de6901a9b679099e4e2a249319237fd03",
+        "gitBlob": "09effea0dec5d78774034b77d2386e7040d64592",
+        "decodedSamples48k": 907200,
+        "quietAtBothEdges": [
+          101270,
+          135284
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q012/media/audio/formal-groups/test-10/t10-g012.ogg",
+        "sha256": "e787b13c0a6f78ff9d79ea4829c229b8aeceff1a03149a809d0ce5efc6a354a8",
+        "gitBlob": "434ad993195c6c0d7a5b348faeb0c3e13c377b96",
+        "decodedSamples48k": 1298684,
+        "quietAtBothEdges": [
+          96844,
+          518104
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q012/media/audio/practice-groups/test-10/t10-g012.ogg",
+        "sha256": "4ad36681b5451fca7506b7a69ac6cfb7c0414b917b767d52d367caf54a456874",
+        "gitBlob": "ce5d77829669373b590148fd90c24dbc07a64ad3",
+        "decodedSamples48k": 852600,
+        "quietAtBothEdges": [
+          99724,
+          134104
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q013/media/audio/formal-groups/test-10/t10-g013.ogg",
+        "sha256": "d2a2f1ff939ae30b9da4baf0e2af7776973fd7fe4b59dc2da68a6ee17d73dff3",
+        "gitBlob": "d340fa5fae5892a8d01db530bdfbaa2c11de0299",
+        "decodedSamples48k": 1374324,
+        "quietAtBothEdges": [
+          97096,
+          518696
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q013/media/audio/practice-groups/test-10/t10-g013.ogg",
+        "sha256": "8817bc9103cc3bdb9cdcd5a6cea559da22e625cefe9c04076251ee908c9e7734",
+        "gitBlob": "9a6b08f3d9f7f0f4e86994ac17cb5792098e6971",
+        "decodedSamples48k": 921600,
+        "quietAtBothEdges": [
+          100874,
+          135647
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q014/media/audio/formal-groups/test-10/t10-g014.ogg",
+        "sha256": "cc477e71bb2e70d802f06a7393b548471c5760de972b983fe780be4675c451d7",
+        "gitBlob": "c05c0c75b62ee8ec88b7be24afbb6b3732efe03e",
+        "decodedSamples48k": 1410184,
+        "quietAtBothEdges": [
+          97123,
+          519600
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q014/media/audio/practice-groups/test-10/t10-g014.ogg",
+        "sha256": "1ccd2f057b9889ef76650c321b56444a0b3196702e0cb55455f3a3bc7f9c0324",
+        "gitBlob": "895066b5d5d96fb98cbc6e54d45b0ae7b3b5a7e8",
+        "decodedSamples48k": 961200,
+        "quietAtBothEdges": [
+          99939,
+          135418
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q015/media/audio/formal-groups/test-10/t10-g015.ogg",
+        "sha256": "66fba4f97f82db7f03945a504ba7019fcb8220526c66be9d26c7f303d8b6358c",
+        "gitBlob": "9fd015e0046cf10c267e04d75c072e85a2256599",
+        "decodedSamples48k": 1374456,
+        "quietAtBothEdges": [
+          96972,
+          520055
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q015/media/audio/practice-groups/test-10/t10-g015.ogg",
+        "sha256": "06c764cc380405a67a368a8174555c758df338f87ce4b355604b384df7d8405f",
+        "gitBlob": "ea368b6256725d9dd59cd6b148ce3534452f8dc8",
+        "decodedSamples48k": 925800,
+        "quietAtBothEdges": [
+          100241,
+          135942
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q016/media/audio/formal-groups/test-10/t10-g016.ogg",
+        "sha256": "dcfd6e72310af81d5573a280f0bc4ac26d1696c0366e3acef1ba101cddb9d7af",
+        "gitBlob": "71a2a519185e466d5b14be4b1e5200a6874a4274",
+        "decodedSamples48k": 1371578,
+        "quietAtBothEdges": [
+          97086,
+          520507
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q016/media/audio/practice-groups/test-10/t10-g016.ogg",
+        "sha256": "77ff35c0214c77ba0880f53dc4bcb124be97687f370892862aee6161d8d9b5dc",
+        "gitBlob": "2ffed2db4da0d8453da59bfe27be2d90579df785",
+        "decodedSamples48k": 921000,
+        "quietAtBothEdges": [
+          99943,
+          136554
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q017/media/audio/formal-groups/test-10/t10-g017.ogg",
+        "sha256": "08d54109ffad27cfd5945e6f88dc34dceb83b2b42acb864db053afbbbe8fbcc7",
+        "gitBlob": "dbeb883ff65ee4278d0dee372aca6cff3d05d385",
+        "decodedSamples48k": 1441092,
+        "quietAtBothEdges": [
+          96740,
+          518847
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q017/media/audio/practice-groups/test-10/t10-g017.ogg",
+        "sha256": "fb58730278c46112017540c55a47b4cac649442840d476bab87752543f7576ea",
+        "gitBlob": "5d2d814b71164fcbe3467822185f4f763d5761d9",
+        "decodedSamples48k": 987600,
+        "quietAtBothEdges": [
+          100981,
+          135414
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q018/media/audio/formal-groups/test-10/t10-g018.ogg",
+        "sha256": "bad6a27d7377b1efaa2770317095fe6373e2f485c925cc532164d12d90e9ac2b",
+        "gitBlob": "bf99a21018a5da845755a335defca4b1b41ada8b",
+        "decodedSamples48k": 1306228,
+        "quietAtBothEdges": [
+          97181,
+          519300
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q018/media/audio/practice-groups/test-10/t10-g018.ogg",
+        "sha256": "e61bae677b448f76de146ac3c909755b3b4de44ea300e299a9a957977505cebb",
+        "gitBlob": "97225d38bc0302b927ff1dafd21a5dcca6f3f691",
+        "decodedSamples48k": 858600,
+        "quietAtBothEdges": [
+          100598,
+          135300
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q019/media/audio/formal-groups/test-10/t10-g019.ogg",
+        "sha256": "8b6b9f9aecec6c18b75b2be30d41df1de9128e7ba97940741891c7ae1bb37c30",
+        "gitBlob": "66c5c716487222d977e015315fba6a7f30232047",
+        "decodedSamples48k": 1493268,
+        "quietAtBothEdges": [
+          96986,
+          519622
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q019/media/audio/practice-groups/test-10/t10-g019.ogg",
+        "sha256": "47e2e4a3cef5d9e348ec35e2cd8295b5029d92cea5e0d121eb18eb775dfc864a",
+        "gitBlob": "63eca97544373b4f01e2df7d38f1520424631975",
+        "decodedSamples48k": 1042080,
+        "quietAtBothEdges": [
+          101071,
+          135632
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q020/media/audio/formal-groups/test-10/t10-g020.ogg",
+        "sha256": "3b07c84101f4d5aa3bb04a6d2f1245ce2d5349da7157c41a5194adcf924b4cf1",
+        "gitBlob": "aa627319c5450e643d7acbd4ad4e12a6385bb302",
+        "decodedSamples48k": 1484180,
+        "quietAtBothEdges": [
+          96786,
+          520588
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q020/media/audio/practice-groups/test-10/t10-g020.ogg",
+        "sha256": "4aab0f19f9f28679bedb463e4d85062fbbf44432ebb35107700f62fed91a747f",
+        "gitBlob": "2ab939175db34ab6b298ba6c2ae97fb3c389cd30",
+        "decodedSamples48k": 1036920,
+        "quietAtBothEdges": [
+          99674,
+          136616
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q021/media/audio/formal-groups/test-10/t10-g021.ogg",
+        "sha256": "59e2cdf9035a5e918a6e9fce8174be14ea4b05af6fc6de2bde506e9ce7b3cbdb",
+        "gitBlob": "ffe79190e92c58ee3acd3aa040c1f6abf17e878e",
+        "decodedSamples48k": 1399798,
+        "quietAtBothEdges": [
+          96980,
+          519580
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q021/media/audio/practice-groups/test-10/t10-g021.ogg",
+        "sha256": "73ebc0999e687987bb03c38f37f80d1946796d5403697ae96212fa53ce5057cf",
+        "gitBlob": "042f16792bb03db13c6a445e559eb4503c99dc19",
+        "decodedSamples48k": 945600,
+        "quietAtBothEdges": [
+          100708,
+          135580
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q022/media/audio/formal-groups/test-10/t10-g022.ogg",
+        "sha256": "c805022507b91f1c17212357d824576ac57de6ee637591cc7864046f64f64dd3",
+        "gitBlob": "e5d209a7bd7a7b91887c78a8c9ffecbe5f610afa",
+        "decodedSamples48k": 1561090,
+        "quietAtBothEdges": [
+          96739,
+          519466
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q022/media/audio/practice-groups/test-10/t10-g022.ogg",
+        "sha256": "15e528deee4f291cd61efd3b6e5a18e655b5e109e132a89ff412f7fbb2d135e6",
+        "gitBlob": "e53f8e56465974a98ac788f8d2c48a439d98f514",
+        "decodedSamples48k": 1107000,
+        "quietAtBothEdges": [
+          99812,
+          135466
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q023/media/audio/formal-groups/test-10/t10-g023.ogg",
+        "sha256": "df1553242048c95447a7ded1a76bc1da6146cb24b0b969091ac3a8b6611e8df8",
+        "gitBlob": "039f47bbe15250201b469ac536fb981229577ec7",
+        "decodedSamples48k": 1697480,
+        "quietAtBothEdges": [
+          97227,
+          521224
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q023/media/audio/practice-groups/test-10/t10-g023.ogg",
+        "sha256": "d14e7594f723c779348398e36dfcabba4f76090fbfa59460b03d39f637c07342",
+        "gitBlob": "31d0873cfb73e8f86d086e65e0e9a8702e188bce",
+        "decodedSamples48k": 1239600,
+        "quietAtBothEdges": [
+          99636,
+          137223
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q024/media/audio/formal-groups/test-10/t10-g024.ogg",
+        "sha256": "2c3ebb30d460d2721df01b767fa2c9473e46847c2afee26434e2db7a8a2a58ba",
+        "gitBlob": "981feb24e4e880481cc3af9eec3a89710dd9c39f",
+        "decodedSamples48k": 1526214,
+        "quietAtBothEdges": [
+          96880,
+          519517
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q024/media/audio/practice-groups/test-10/t10-g024.ogg",
+        "sha256": "fd83d9652d1aed58edde1b1be1c3eed225ca01dd1cbb36e1f2fd64a72d88130f",
+        "gitBlob": "329c179b81cc3719e571dae6b23e0899e7118437",
+        "decodedSamples48k": 1068600,
+        "quietAtBothEdges": [
+          100793,
+          135517
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q025/media/audio/formal-groups/test-10/t10-g025.ogg",
+        "sha256": "c00ef963a866679547f9c5174c83b6a4517374449e6b4385f9ae5a189c8907cc",
+        "gitBlob": "24c5f1437071366318f7fd8a2ec915ce12da201e",
+        "decodedSamples48k": 1351002,
+        "quietAtBothEdges": [
+          96750,
+          519125
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q025/media/audio/practice-groups/test-10/t10-g025.ogg",
+        "sha256": "948b7956d5fce357f746dc4c78c62092a3176b79a03f5b8d793ab9640eee7ad7",
+        "gitBlob": "9d109f7a45e8d6de041bd285b274960271801b08",
+        "decodedSamples48k": 893400,
+        "quietAtBothEdges": [
+          100735,
+          135256
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q026/media/audio/formal-groups/test-10/t10-g026.ogg",
+        "sha256": "af4921784b6be8517d67d321292f4df3020e8d8917d6babad9655c6dd37a0127",
+        "gitBlob": "39fd575898eaf01962770c73c39c2725fed50f5b",
+        "decodedSamples48k": 1520746,
+        "quietAtBothEdges": [
+          96671,
+          519654
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q026/media/audio/practice-groups/test-10/t10-g026.ogg",
+        "sha256": "f41f41ca9c9ccf6f4f0b2ad202cad09ed783b15d201c5e1051949daf7158077a",
+        "gitBlob": "a4185e15c1e39679defc7a7a59af49784d7937be",
+        "decodedSamples48k": 1063200,
+        "quietAtBothEdges": [
+          100839,
+          134697
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q027/media/audio/formal-groups/test-10/t10-g027.ogg",
+        "sha256": "3108ade2fee1fcdcf3f8bcfc16bcbc2c18d32a9165d9e53c0f8d826b594353a6",
+        "gitBlob": "0e13675aa26bdb1b2e1fd12c88f1760b9696cbc2",
+        "decodedSamples48k": 1813972,
+        "quietAtBothEdges": [
+          97058,
+          520311
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q027/media/audio/practice-groups/test-10/t10-g027.ogg",
+        "sha256": "3832d020f41fb283c2ee80d19cca6464a14cadad697d77719f12242996c5fd52",
+        "gitBlob": "753d715a3bb863fb41de4babc5bb2b99afa6ff09",
+        "decodedSamples48k": 1354800,
+        "quietAtBothEdges": [
+          100151,
+          136439
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q028/media/audio/formal-groups/test-10/t10-g028.ogg",
+        "sha256": "1888bfdecd76e9ba8a5e6bd3dc0cb09ea5f75187a3f63695c21f79da4224c084",
+        "gitBlob": "bb1cb07ee8e459ed088e0b3b6a8fd2421c74cb26",
+        "decodedSamples48k": 1793242,
+        "quietAtBothEdges": [
+          96712,
+          519837
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q028/media/audio/practice-groups/test-10/t10-g028.ogg",
+        "sha256": "b94d30d46ae373bbf4af968041e2bde72f68289ff5e8ab528208afd154b8703f",
+        "gitBlob": "fff46d867574f07782e3fc02edaaa5767d97afdb",
+        "decodedSamples48k": 1338600,
+        "quietAtBothEdges": [
+          101001,
+          135142
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q029/media/audio/formal-groups/test-10/t10-g029.ogg",
+        "sha256": "799e10d36002551e00e8d371a8de7f99d3fbe25850cbdfa17a42ef920d18ac4d",
+        "gitBlob": "8cd05b1a451beec297f0f2e802021e1de72691cb",
+        "decodedSamples48k": 1481482,
+        "quietAtBothEdges": [
+          97238,
+          521465
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q029/media/audio/practice-groups/test-10/t10-g029.ogg",
+        "sha256": "cf015a14a05aaea452f8d5fa283e20644e9d890539f02a29b2965ae9ff7c3bf2",
+        "gitBlob": "d759a6be913310b704c12a17063c85cd4c85ad8c",
+        "decodedSamples48k": 1026000,
+        "quietAtBothEdges": [
+          99685,
+          137478
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q030/media/audio/formal-groups/test-10/t10-g030.ogg",
+        "sha256": "2f092361dafa3b2b27dadf4cfa0b53a1133b39e969914a247cb0cae7a693e0a2",
+        "gitBlob": "e175f0df6376e6ccf671fc4369bcf433710cc361",
+        "decodedSamples48k": 1691568,
+        "quietAtBothEdges": [
+          97032,
+          519585
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q030/media/audio/practice-groups/test-10/t10-g030.ogg",
+        "sha256": "e8cc0ccdfb0e96b6436fa05025f922c188e75b4966bc2ef07d8a9eec428e504a",
+        "gitBlob": "adf68623e98fc4712265d774280bc7711a68cea6",
+        "decodedSamples48k": 1248000,
+        "quietAtBothEdges": [
+          100829,
+          135588
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q031/media/audio/formal-groups/test-10/t10-g031.ogg",
+        "sha256": "9efb853ed0284d4169a86722c7e0810f42ad09c8e247bcc69a67769814da2db4",
+        "gitBlob": "40ca2ee33888d6d8361ae75e409cd8880bd6c3e4",
+        "decodedSamples48k": 1749744,
+        "quietAtBothEdges": [
+          97016,
+          520435
+        ]
+      },
+      {
+        "path": "authoring/test-10/questions/Q031/media/audio/practice-groups/test-10/t10-g031.ogg",
+        "sha256": "ececddbbd25f9f40811ed5a6f0da76f8e5cf4e714da290caf502a59bf65ac163",
+        "gitBlob": "4967445469597e7122bef699c17d75f2114989c2",
+        "decodedSamples48k": 1296600,
+        "quietAtBothEdges": [
+          101202,
+          136436
+        ]
+      }
+    ]
+  }
+}
