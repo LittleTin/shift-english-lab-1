@@ -562,7 +562,13 @@ async function startSync(full=false){
    if(current()){
     if(runFull&&!cursor)syncLastFull=now();
     setSyncStatus(conflicts?'Some records conflict. Both copies were kept.':invalid?'Some cloud records could not be read. Other eligible history synced.':skips?'Synced eligible records. Incomplete or oversized records stayed on this device.':cursor?'This batch synced. Choose Sync Now to continue.':'Completed history is synced.');
-    if(changed&&['home','review','stats'].includes(route)&&!busy&&allowPassiveRepaint())render();
+    if(changed&&route==='review'&&!busy){
+     const cancelled=()=>!current()||route!=='review'||busy;
+     // A new account record can refer to a pack that was not needed when the list first opened.
+     // Hydrate it before repainting. Don't steal a user's focus or replace an older usable list on failure.
+     try{if(await loadListPacks('review',cancelled)&&!cancelled()&&allowPassiveRepaint())render()}
+     catch(error){if(!cancelled())notify(error.message||'Could not load newly synced questions. Reopen Review Mistakes to retry.')}
+    }else if(changed&&['home','stats'].includes(route)&&!busy&&allowPassiveRepaint())render();
    }
   }catch(error){if(inWorkspace())setSyncStatus(storageMode!=='indexeddb'?'Local saving failed. Export a backup before switching accounts.':accountMessage(error))}
  })();
@@ -1146,30 +1152,32 @@ const ACCENTS={"en-US":"American English","en-GB":"British English","en-CA":"Can
 function accentMatches(q,accent){if(accent==='all')return true;const speakers=G.get(q.groupId)?.audioSpeakers;return q.part<5&&Array.isArray(speakers)&&speakers.length>0&&speakers.every(v=>v?.locale===accent)}
 function practicePage(){return heading('Practice at your own pace.','Choose a question type, topic, and difficulty. Related questions stay together.','PRACTICE BY TOPIC')+'<section class="panel"><h2>Set up this practice session</h2><div class="filters"><div class="field"><label for="filter-section">Practice section</label><select id="filter-section">'+selectOptions({reading:'Reading Practice',listening:'Listening Practice'},filters.section,'Reading + Listening')+'</select></div><div class="field"><label for="filter-part">Question type</label><select id="filter-part">'+selectOptions(Object.fromEntries(Object.entries(PARTS).map(([k,v])=>[k,'Part '+k+' · '+v])),filters.part,'All question types')+'</select></div><div class="field"><label for="filter-accent">Listening accent focus</label><select id="filter-accent">'+selectOptions(ACCENTS,filters.accent,'Any accent (including mixed)')+'</select></div><div class="field"><label for="filter-topic">Topic</label><select id="filter-topic">'+selectOptions(TOPICS,filters.topic,'All topics')+'</select></div><div class="field"><label for="filter-difficulty">Difficulty</label><select id="filter-difficulty">'+selectOptions(DIFFICULTY,filters.difficulty,'All difficulties')+'</select></div><div class="field"><label for="filter-count">Target question count</label><select id="filter-count">'+[10,20,40,100].map(n=>'<option value="'+n+'" '+(filters.count===n?'selected':'')+'>'+n+' questions approximately</option>').join('')+'</select></div></div><label class="check-row"><input type="checkbox" id="filter-unseen" '+(filters.unseen?'checked':'')+'>Prioritize questions not yet answered</label><p class="hint">Passages and conversations are selected as complete groups, so the question count may vary. If a topic or difficulty does not apply to every question in a group, that group is skipped. Prioritizing unanswered questions tries new groups first without splitting them. An accent filter includes only groups whose voices all have that accent label. Mixed and unlabeled groups are excluded; a shortfall is shown rather than filled with other accents. Labels describe synthetic voice models, not official accent certification. Submit the session to see your score and explanations.</p><div class="btn-row" style="margin-top:24px">'+btn('Start This Practice '+icon('arrow'),'start-filtered','primary')+'</div></section><div class="topics-row">'+Object.entries(TOPICS).map(([id,label])=>'<button class="topic-card" data-action="topic" data-topic="'+id+'">'+icon(topicIcon(id))+'<b>'+label+'</b><small>Choose this topic</small></button>').join('')+'</div>'}
 async function withBusy(fn){if(busy||guestSubmitPending||guestBackupApplying)return;busy=true;try{await fn()}catch(e){console.error(e);notify(e.message||'Something went wrong. Please try again.')}finally{busy=false}}
-function canUseLocalListPacks(){return !syncOwner&&authRestoreStatus!=='waiting'&&authRestoreStatus!=='checking'}
+function canUseTargetedListPacks(){return authRestoreStatus!=='waiting'&&authRestoreStatus!=='checking'}
 async function loadListPacks(dest,cancelled=()=>false){
  const review=dest==='review';
  const currentUnloaded=()=>(review?Object.keys(state.stats).filter(id=>state.stats[id].wrong>0||state.stats[id].needsReview):Object.keys(state.stars).filter(id=>state.stars[id])).filter(id=>!Q.has(id));
- if(canUseLocalListPacks()){
+ const attempted=new Set();
+ while(canUseTargetedListPacks()){
+  if(cancelled())return false;
+  const missing=currentUnloaded();
+  if(!missing.length)return true;
   const needed=new Set();
   let reliable=true;
-  for(const id of currentUnloaded()){
+  for(const id of missing){
    const p=/^t([0-9]{2,})-q(00[1-9]|0[1-9][0-9]|1[0-9]{2}|200)(?:-[rv][1-9][0-9]*)?$/.exec(id);
    const testId=p&&'test-'+p[1],recorded=Object.hasOwn(state.stats,id)?state.stats[id].testId:null;
-   if(!testId||!officialEntry(testId)||(recorded&&recorded!==testId)){reliable=false;break}
+   if(!testId||!officialEntry(testId)||(recorded&&recorded!==testId)||attempted.has(testId)){reliable=false;break}
    needed.add(testId);
   }
-  if(reliable){
-   for(const id of needed){if(cancelled())return false;await loadTest(id)}
-   if(canUseLocalListPacks()&&currentUnloaded().length===0)return !cancelled();
-  }
+  if(!reliable)break;
+  for(const id of needed){if(cancelled())return false;attempted.add(id);await loadTest(id)}
  }
  for(const t of allTests()){if(cancelled())return false;await loadTest(t.id)}
  return !cancelled()
 }
 async function navigate(dest){if(route==='quiz'||route==='answer-review'){stopAudio();await persist()}mobileNav=false;route=dest;syncListeningCountdown(state.active);if(listening())void persist();activeTranscript=null;listLimit=40;if(['review','favorites'].includes(dest)){
  const hasRecords=dest==='review'?Object.values(state.stats).some(item=>item.needsReview||item.wrong>0):Object.values(state.stars).some(Boolean);
- // Keep account hydration and every saved/history filter on the existing path.
+ // Render only after the active account or guest list has its referenced questions.
  if(syncOwner||authRestoreStatus==='waiting'||authRestoreStatus==='checking'||hasRecords){
   shell('<section class="panel"><p role="status">Loading your learning records…</p>'+btn('Back to Home','nav-home')+'</section>');
   document.getElementById('main')?.focus({preventScroll:true});
