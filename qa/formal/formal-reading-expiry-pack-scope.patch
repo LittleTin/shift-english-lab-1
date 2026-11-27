@@ -1,0 +1,18 @@
+--- a/assets/app.js
++++ b/assets/app.js
+@@ -1456,7 +1456,14 @@
+    if(pending.listening&&s.questionIds.some(id=>sessionQuestion(id,s)?.part>=5)){
+     await enterReading();formalExpiryNotices.delete(s);
+    }else{
+-    await loadAll();await finishSession(true);
++    // Only this session's packs and original question versions belong in its score.
++    if(s.reservedPackConflict)throw new Error('This saved session used a custom pack with an official test ID. Your saved answers are kept, but its original pack is not available to resume.');
++    for(const id of new Set(s.testIds||[])){
++     await loadTest(id);
++     if(state.active!==s)return;
++    }
++    if(!pinnedFor(s))await prepareResume(s);
++    if(state.active===s)await finishSession(true);
+    }
+   }catch(e){pending.transitioning=false;throw e;}
+  });
