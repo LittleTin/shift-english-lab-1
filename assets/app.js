@@ -2177,9 +2177,22 @@ async function importBackup(file){
 }
 async function importPack(file){if(file.size>20*1024*1024)throw new Error('Each additional pack must be smaller than 20 MB, Use one file per test.');const p=validatePack(JSON.parse(await file.text()));if(officialEntry(p.testId))throw new Error('Imported packs cannot overwrite built-in packs. Use a new testId.');await loadAllOfficial();const old=state.importedPacks.find(x=>x.testId===p.testId);const oldQIds=new Set((old?.questions||[]).map(q=>q.id));for(const q of p.questions)if(Q.has(q.id)&&!oldQIds.has(q.id))throw new Error('Question ID already exists:'+q.id);const oldGIds=new Set((old?.groups||[]).map(g=>g.id));for(const g of p.groups)if(G.has(g.id)&&!oldGIds.has(g.id))throw new Error('Groups ID already exists:'+g.id);const commit=async()=>{registerPack(p);unavailableCustom.delete(p.testId);state.importedPacks=state.importedPacks.filter(x=>x.testId!==p.testId);state.importedPacks.push(p);await persist();render();notify('Imported '+p.questions.length+' questions.')};if(old)confirmBox('Update this test pack?','The new file will replace '+p.testId+'.Existing answers and notes are kept. Question ID values must remain unchanged.',commit,'Update Pack');else await commit()}
 async function resume(){const s=state.active;if(!s){notify('There is no unfinished practice session.');return}if(s.reservedPackConflict)throw new Error('This saved session used a custom pack with an official test ID. Your saved answers are kept, but its original pack is not available to resume.');for(const id of s.testIds||[])await loadTest(id);await prepareResume(s);if(restoreListeningTabPoint(s))await persist();route='quiz';mobileNav=false;syncListeningCountdown(s);if(beginReadingClock(s))await persist();render();if(formalClockExpired(s)){beginFormalExpiry(s);return}if(listening(s)){const g=sessionGroup(questionByActive()?.groupId,s);void runFormalGroup(g,{prepareOnly:true})}if(s.mode==='exam'&&!listening(s)&&!s.readingStartsOnReturn&&(formal(s)?s.sectionDeadline:s.deadline)<=now())await finishSession(true)}
+async function loadResultQuestions(r){
+ if(!r||r.questionIds.every(id=>Q.has(id)))return;
+ const first=firstSessionAttempts(r),known=new Set(allTests().map(t=>t.id)),needed=new Set();
+ for(const id of r.questionIds){
+  if(Q.has(id))continue;
+  const attempt=first.get(id),testId=attempt?.testId;
+  if(attempt?.questionId!==id||!known.has(testId))return loadAll();
+  needed.add(testId);
+ }
+ for(const id of needed)await loadTest(id);
+ if(r.questionIds.some(id=>!Q.has(id)))await loadAll();
+}
 async function beginReview(kind){
-await loadAll();let ids;
-if(kind==='result'){const r=lastResult||state.sessions.at(-1);if(!r){notify('There is no completed session available for review.');return}const outcomes=sessionOutcomes(r);ids=r.questionIds.filter(id=>outcomes.get(id)===false)}
+if(kind!=='result')await loadAll();
+let ids;
+if(kind==='result'){const r=lastResult||state.sessions.at(-1);if(!r){notify('There is no completed session available for review.');return}await loadResultQuestions(r);const outcomes=sessionOutcomes(r);ids=r.questionIds.filter(id=>outcomes.get(id)===false)}
 else if(route==='favorites')ids=Object.keys(state.stars).filter(id=>state.stars[id]);
 else ids=Object.keys(state.stats).filter(id=>listFilter==='history'?state.stats[id].wrong>0:listFilter==='due'?state.stats[id].needsReview&&state.stats[id].due<=now():state.stats[id].needsReview);
 if(kind!=='result')ids=ids.filter(matchesListSearch);
@@ -2216,8 +2229,12 @@ async function action(name,el){if(name==='export-unsaved-local-backup'){
  return
 }if(name==='submit-answer')return submitAnswer();if(name==='next-question'){return moveGroup(1)}if(name==='prev-question'){return moveGroup(-1)}if(name==='finish-session')return finishSession();if(name==='question-grid'){questionGrid();return}if(name==='jump'){const s=state.active;if(s){const index=Number(el.dataset.index);if(listening(s)||(formal(s)&&sessionQuestion(s.questionIds[index],s)?.part<5))return;closeModal();stopAudio();s.index=index;s.index=s.questionIds.indexOf(groupQuestions()[0].id);persist();render();window.scrollTo(0,0);if(!document.getElementById('modal').open)document.getElementById('main')?.focus({preventScroll:true})}return}if(name==='finish-from-modal'){closeModal();return finishSession()}if(name==='star'){const id=el.dataset.id;state.stars[id]=!state.stars[id];if(await persist()===false)return;render();notify(state.stars[id]?'Question saved.':'Question removed from saved items.');return}if(name==='toggle-translation'){state.settings.translation=!state.settings.translation;await persist();render();return}if(name==='transcript'){const q=questionByActive(),revealed=state.active?.mode==='practice'&&!!state.active?.submitted?.[q?.id];activeTranscript=!(activeTranscript===null?revealed:activeTranscript);render();return}if(name==='play-audio')return playAudio(el.dataset.group);if(name==='view-explanation'){
  clearTimeout(searchTimeout);
- await loadAll();
- const detail=explanationQueue(el.dataset.id,el.dataset.session);
+ const sessionId=el.dataset.session;
+ if(sessionId){
+  const completed=state.sessions.find(s=>s.id===sessionId&&s.questionIds.includes(el.dataset.id));
+  await loadResultQuestions(completed);
+ }else await loadAll();
+ const detail=explanationQueue(el.dataset.id,sessionId);
  if(!detail){notify('There is no submitted answer record available for this question.');return}
  openExplanation(detail);return
 }if(name==='next-explanation'){
@@ -2226,7 +2243,7 @@ async function action(name,el){if(name==='export-unsaved-local-backup'){
  openExplanation({...d,...d.entries[d.index+1],index:d.index+1});return
 }if(name==='back-review'){
  const detail=reviewDetail;stopAudio();route=detail?.returnTo||'review';reviewDetail=null;render();focusReviewOrigin(detail);return
-}if(name==='open-question'){await loadAll();const q=Q.get(el.dataset.id);if(q)return startSession(relatedQuestions(q),'Group Review');return}if(name==='start-list')return beginReview('list');if(name==='review-result')return beginReview('result');if(name==='more-list'){listLimit+=40;render();return}if(name==='open-result'){await loadAll();lastResult=state.sessions.find(s=>s.id===el.dataset.id);route='result';render();window.scrollTo(0,0);return}if(name==='export-backup')return exportBackup();if(name==='import-backup'){if(syncOwner)return;document.getElementById('backup-input').click();return}if(name==='import-pack'){await loadAll();document.getElementById('pack-input').click();return}if(name==='reset-progress'){if(syncOwner)return;confirmBox('Clear your learning records?',storageMode==='tabstorage'?'This clears this tab’s answers, mistakes, saved questions, notes, and unfinished progress only. Previously shared records are not changed. Export a backup before clearing anything.':'This removes local answers, mistakes, saved questions, notes, and unfinished progress. Imported packs are kept. Export a backup before clearing anything.',async()=>{const imported=state.importedPacks;state={formatVersion:1,settings:{fontScale:1,translation:false},attempts:[],stats:{},stars:{},notes:{},sessions:[],active:null,importedPacks:imported,lastBackup:null};clearNoteDraft();lastResult=null;if(await persist(false,false,'clear')===false)return;render();notify('Learning records cleared.')},'Confirm Clear')}}
+}if(name==='open-question'){if(!(route==='answer-review'&&reviewDetail?.returnTo==='result'&&reviewDetail.questionId===el.dataset.id&&Q.has(el.dataset.id)))await loadAll();const q=Q.get(el.dataset.id);if(q)return startSession(relatedQuestions(q),'Group Review');return}if(name==='start-list')return beginReview('list');if(name==='review-result')return beginReview('result');if(name==='more-list'){listLimit+=40;render();return}if(name==='open-result'){const r=state.sessions.find(s=>s.id===el.dataset.id);await loadResultQuestions(r);lastResult=r;route='result';render();window.scrollTo(0,0);return}if(name==='export-backup')return exportBackup();if(name==='import-backup'){if(syncOwner)return;document.getElementById('backup-input').click();return}if(name==='import-pack'){await loadAll();document.getElementById('pack-input').click();return}if(name==='reset-progress'){if(syncOwner)return;confirmBox('Clear your learning records?',storageMode==='tabstorage'?'This clears this tab’s answers, mistakes, saved questions, notes, and unfinished progress only. Previously shared records are not changed. Export a backup before clearing anything.':'This removes local answers, mistakes, saved questions, notes, and unfinished progress. Imported packs are kept. Export a backup before clearing anything.',async()=>{const imported=state.importedPacks;state={formatVersion:1,settings:{fontScale:1,translation:false},attempts:[],stats:{},stars:{},notes:{},sessions:[],active:null,importedPacks:imported,lastBackup:null};clearNoteDraft();lastResult=null;if(await persist(false,false,'clear')===false)return;render();notify('Learning records cleared.')},'Confirm Clear')}}
 document.addEventListener('click',e=>{const el=e.target.closest('[data-action]');if(!el||el.disabled)return;e.preventDefault();
  const name=el.dataset.action;
  if(name==='nav-home'&&leavePendingList){leavePendingList();return}
