@@ -1963,6 +1963,27 @@ if(moveFocus)document.getElementById('main')?.focus({preventScroll:true})}
 function moveQuestion(delta){return moveGroup(delta)}
 
 async function submitAnswer(){if(!state.active)return;if(state.active.index===state.active.questionIds.length-1)return finishSession();moveQuestion(1)}
+async function scoreExpiredLegacySession(s){
+ if(state.active!==s||formal(s)||s.mode!=='exam'||guestRejectedAutoSubmit===s)return;
+ const here=()=>state.active===s;
+ if(s.contentVersion&&s.contentVersion!==contentVersion()&&!pinnedFor(s))await prepareResume(s);
+ if(!here())return;
+ const complete=()=>s.questionIds.every(id=>{
+  const q=sessionQuestion(id,s);
+  return q&&(!s.answers[id]||q.options.some(o=>o.id===s.answers[id]));
+ });
+ if(!complete()){
+  const known=new Set(allTests().map(t=>t.id)),needed=new Set(s.testIds||[]);
+  if(needed.size&&[...needed].every(id=>known.has(id))){
+   for(const id of needed){if(!here())return;await loadTest(id)}
+  }
+  if(!here())return;
+  if(!complete())await loadAll();
+ }
+ if(!here())return;
+ if(!complete())throw new Error('The original questions could not load. Your unfinished test and answers are kept.');
+ await finishSession(true);
+}
 async function finishSession(force=false){
 if(diagnostic){notify('This session is only for playback diagnostics. Nothing was saved.');return}
 const s=state.active;if(!s||guestSubmitPending||guestBackupApplying||(force&&guestRejectedAutoSubmit===s))return;
@@ -2313,7 +2334,7 @@ setInterval(()=>{
  updateExamClock(left);
  if(listening(s)&&route==='quiz'&&!document.hidden&&performance.now()-countdownFor(s).lastSave>=2000)void persist();
  syncAudioUI();
- if(formal(s)&&formalClockExpired(s)){beginFormalExpiry(s);advanceExpiredFormalPhase()}else if(left<=0&&!busy&&!listening(s))withBusy(async()=>{await loadAll();await finishSession(true)});
+ if(formal(s)&&formalClockExpired(s)){beginFormalExpiry(s);advanceExpiredFormalPhase()}else if(left<=0&&!busy&&!formal(s))void withBusy(()=>scoreExpiredLegacySession(s));
 },1000);
 async function bootDiagnostic(){
  const fail=message=>shell('<section class="panel panel-body"><h1>Playback diagnostic</h1><p>'+esc(message)+'</p></section>');
