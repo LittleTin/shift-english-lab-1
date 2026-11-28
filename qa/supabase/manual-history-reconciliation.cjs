@@ -11,7 +11,7 @@ const watchdog=setTimeout(()=>{console.error('Timed out waiting for synthetic sy
 const fullTrace=[0,2];
 function fixture({full=false,fail=false}={}){
  const rows=[{id:1},{id:2}],trace=[], statuses=[];let enter,release,block=true;const entered=new Promise(r=>enter=r),gate=new Promise(r=>release=r);
- const x={syncOwner:'a',syncEpoch:4,storageMode:'indexeddb',navigator:{onLine:true},syncOnline:null,syncOnlineFull:false,syncPendingFull:null,syncLastFull:full?0:900_000,syncPageCursor:rows.at(-1),
+ const x={syncOwner:'a',syncEpoch:4,storageMode:'indexeddb',navigator:{onLine:true},syncOnline:null,syncOnlineFull:false,syncPendingFull:null,syncFullResume:null,syncLastFull:full?0:900_000,syncPageCursor:rows.at(-1),
   saveQueue:Promise.resolve(),now:()=>1_000_000,state:{sessions:[],attempts:[],stats:{},syncSent:{}},records:{localUnion:()=>({}),safeRows:current=>({...current,conflicts:0,invalid:0,imported:0})},
   syncCore:{getScope:()=>({userId:x.syncOwner}),listCompletedSessions:async({cursor,limit})=>{
    trace.push(cursor?.id??0);if(block){block=false;enter();await gate;if(fail)throw Error('network failed')}
