@@ -1,0 +1,63 @@
+--- a/assets/app.js
++++ b/assets/app.js
+@@ -151,7 +151,7 @@
+ const syncConfigured=!!(records&&syncConfig?.url&&syncConfig?.publishableKey&&/^https?:$/.test(location.protocol));
+ let accountBaseline=null,accountActiveRevision=null,accountActiveConflict=false;
+ const accountActiveWarning='This session could not be saved because it changed in another tab. Back up any unsaved edits, then reload to resume.';
+-let syncOwner=null,syncCore=null,syncOnline=null,syncOnlineFull=false,syncPendingFull=null,syncPasswordOpen=false,syncStatus='',syncPageCursor=null,syncLastFull=0,syncEpoch=0;
++let syncOwner=null,syncCore=null,syncOnline=null,syncOnlineFull=false,syncPendingFull=null,syncPasswordOpen=false,syncStatus='',syncPageCursor=null,syncFullResume=null,syncLastFull=0,syncEpoch=0;
+ const scopedKey=(key,owner=syncOwner)=>records&&owner?records.key(key,owner):key;
+ const accountActionBusy=()=>route!=='data'||diagnostic;
+ const AUTH_TAB_KEY='shift:/shift-english-lab-1/:auth-refresh/v1', LAST_PAGE_TAB_KEY='shift:last-page:v1';
+@@ -312,7 +312,7 @@
+  const previous={state,owner:syncOwner,Q,G,loaded,officialPacks:new Map(officialPacks),
+   archived:new Set(archivedIds),unavailable:new Set(unavailableCustom),lastResult,reviewDetail,resumeEnv,lastExportAt};
+  clearTimeout(checkpointTimer);checkpointTimer=undefined;checkpointLoop=null;checkpointConflict=null;checkpointFeedback='';checkpointSyncAt=0;checkpointSignature='';
+- syncEpoch++;syncPageCursor=null;syncLastFull=0;syncOnline=null;syncOnlineFull=false;syncPendingFull=null;syncStatus='';lastExportAt=0;
++ syncEpoch++;syncPageCursor=null;syncFullResume=null;syncLastFull=0;syncOnline=null;syncOnlineFull=false;syncPendingFull=null;syncStatus='';lastExportAt=0;
+  stopAudio();reviewDetail=null;lastResult=null;resumeEnv=null;noteGeneration++;noteTokens.clear();noteStatuses.clear();
+  state=next;syncOwner=owner;
+  const priorAccount=[accountBaseline,accountActiveRevision,accountActiveConflict];
+@@ -522,14 +522,16 @@
+   syncPendingFull=queued;
+   return queued;
+  }
+- const runFull=full||!syncLastFull||now()-syncLastFull>=15*60000;
++ const scope=syncCore?.getScope();
++ const suspended=syncFullResume;
++ const resumeFull=suspended&&scope&&suspended.scope===scope&&suspended.owner===owner&&suspended.epoch===epoch?suspended:null;
++ const runFull=full||!!resumeFull||!syncLastFull||now()-syncLastFull>=15*60000;
+  const p=(async()=>{
+   const inWorkspace=()=>syncOwner===owner&&syncEpoch===epoch;
+   const current=()=>inWorkspace()&&syncCore?.getScope()?.userId===owner;
+-  const scope=syncCore?.getScope();
+   if(!current()){setSyncStatus('Your sign-in expired. Sign out, then sign in again to resume sync.');return}
+   setSyncStatus('Syncing completed history…');
+-  let conflicts=0,invalid=0,skips=0,changed=false;
++  let conflicts=resumeFull?.conflicts||0,invalid=resumeFull?.invalid||0,skips=0,changed=false;
+   try{
+    await saveQueue;
+    const durable=await readWorkspace(owner);
+@@ -552,7 +554,7 @@
+     state.syncSent={...prior,[s.id]:true};
+     try{await persist(true,true)}catch(error){if(current())state.syncSent=prior;throw error}
+    }
+-   let cursor=runFull?null:syncPageCursor, count=0;
++   let cursor=runFull?(resumeFull?.cursor??null):syncPageCursor, count=0;
+    do{
+     const page=await syncCore.listCompletedSessions({scope,cursor,limit:100});
+     if(!current())return;
+@@ -571,7 +573,12 @@
+     cursor=page.nextCursor;count++;
+    }while(cursor&&count<1000);
+    if(current()){
+-    if(runFull&&!cursor)syncLastFull=now();
++    if(runFull&&syncCore.getScope()===scope){
++     // Continue a capped full scan only in the authenticated workspace that
++     // produced this in-memory cursor. Rows preceding it have been saved.
++     syncFullResume=cursor?{owner,epoch,scope,cursor,conflicts,invalid}:null;
++     if(!cursor)syncLastFull=now();
++    }
+     setSyncStatus(conflicts?'Some records conflict. Both copies were kept.':invalid?'Some cloud records could not be read. Other eligible history synced.':skips?'Synced eligible records. Incomplete or oversized records stayed on this device.':cursor?'This batch synced. Choose Sync Now to continue.':'Completed history is synced.');
+     if(changed&&route==='review'&&!busy){
+      const cancelled=()=>!current()||route!=='review'||busy;
