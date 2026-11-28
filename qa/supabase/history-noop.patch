@@ -1,0 +1,16 @@
+--- a/assets/app.js
++++ b/assets/app.js
+@@ -821,7 +821,12 @@
+ }
+ function applyAccountWrite(stored,before,next,revision,historyOnly,conflicted){
+  const durable=stored||blankWorkspace();
+- if(historyOnly)return {value:{...durable,...records.localUnion(durable,next,normalizeState)}};
++ if(historyOnly){
++  const merged=records.localUnion(durable,next,normalizeState);
++  // The transaction read is already current. Do not rewrite an unchanged history.
++  if(stored&&!merged.sessions&&records.same(durable.syncSent,merged.syncSent))return {};
++  return {value:{...durable,...merged}};
++ }
+  if(!before)throw Error('Account workspace not ready');
+  const activeChanged=!guestEqual(before.active,next.active);
+  const finishing=!!before.active&&!next.active&&next.sessions.some(s=>s.id===before.active.id);
