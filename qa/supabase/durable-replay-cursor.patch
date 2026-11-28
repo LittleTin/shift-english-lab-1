@@ -1,0 +1,16 @@
+--- a/assets/app.js
++++ b/assets/app.js
+@@ -569,7 +569,12 @@
+       throw error
+      }
+     }
+-    if(page.nextCursor)syncPageCursor=page.nextCursor;
++    if(!current()||syncCore.getScope()!==scope)return;
++    if(page.nextCursor){
++     syncPageCursor=page.nextCursor;
++     // On a resumed full scan, retain the latest durable point even if a later page fails.
++     if(resumeFull)syncFullResume={owner,epoch,scope,cursor:page.nextCursor,conflicts,invalid};
++    }
+     cursor=page.nextCursor;count++;
+    }while(cursor&&count<1000);
+    if(current()){
